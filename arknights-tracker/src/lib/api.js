@@ -2,6 +2,7 @@
 
 // Point this to your backend
 const BACKEND_URL = "/api";
+export const API_BASE = "";
 
 /**
  * Proxy fetch to bypass CORS and get gacha logs
