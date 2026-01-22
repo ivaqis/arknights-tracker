@@ -1,0 +1,44 @@
+{
+  "skills": {
+    "basicAttack": {
+      "name": "Protocol α: Breach",
+      "description": "BASIC ATTACK: An attack with up to 4 sequences that deals Electric DMG. As the controlled operator, Final Strike also deals 15 Stagger. DIVE ATTACK: Basic attack performed in mid-air becomes a dive attack that deals Electric DMG to nearby enemies. FINISHER: Basic attack performed near a Staggered enemy becomes a finisher that deals massive Electric DMG and recovers some SP.",
+      "basicAttack": {
+        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+        "finisherAtkMultiplier": "Finisher ATK Multiplier",
+        "diveAtkMultiplier": "Dive ATK Multiplier"
+      }
+    },
+    "battleSkill": {
+      "name": "Protocol ω: Strike",
+      "description": "SKILL DESCRIPTION: Unleashes a bolt of electro-magnetic energy that deals Electric DMG and Electric Infliction icon.pngElectric Infliction to enemies in a small area.",
+      "battleSkill": {
+        "spCost": "SP Cost",
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger"
+      }
+    },
+    "comboSkill": {
+      "name": "Instant Protocol: Chain",
+      "description": "COMBO TRIGGER: When controlled operator performs a Final Strike on any enemy. SKILL DESCRIPTION: Unleashes stored electro-magnetic energy to bombard the target, dealing Electric DMG and forcibly inflicting temporary Electrification icon.pngElectrification.",
+      "comboSkill": {
+        "cooldown": "Cooldown",
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger",
+        "electrifyDuration": "Electrify Duration (s)"
+      }
+    },
+    "ultimate": {
+      "name": "Protocol ε: 70.41K",
+      "description": "SKILL DESCRIPTION: Tele-protocols a massive piece of orbital debris into the battlefield with devastating impact. All enemies in the area of effect suffer massive Electric DMG.",
+      "ultimate": {
+        "ultimateEnergyCost": "Ultimate Energy Cost",
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger"
+      }
+    }
+  }
+}

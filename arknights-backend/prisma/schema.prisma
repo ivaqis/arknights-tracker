@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // Change to "postgresql" for production
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  uid       String   @id // Unique ID derived from the game token/uid
+  updatedAt DateTime @updatedAt
+  stats     UserStat[]
+}
+
+// Aggregated stats per banner type (Beginner, Standard, Special)
+model UserStat {
+  id             String @id @default(uuid())
+  uid            String
+  poolType       String // 'beginner', 'standard', 'special'
+
+  totalPulls     Int    @default(0)
+  
+  // 6-Star Luck
+  avgPity6       Float  @default(0.0) // Lower is better
+  total6Star     Int    @default(0)
+
+  // 5-Star Luck
+  avgPity5       Float  @default(0.0) // Lower is better
+  
+  // 50:50 Logic
+  won5050Count   Int    @default(0)
+  total5050Count Int    @default(0)
+  winRate        Float  @default(0.0)
+
+  user           User   @relation(fields: [uid], references: [uid])
+
+  @@unique([uid, poolType])
+  // Indexes for fast percentile calculation
+  @@index([poolType, totalPulls]) 
+  @@index([poolType, avgPity6])
+  @@index([poolType, winRate])
+}

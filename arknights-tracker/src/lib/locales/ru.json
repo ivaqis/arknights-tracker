@@ -1,0 +1,307 @@
+{
+  "sidebar": {
+    "home": "Главная",
+    "records": "Записи о найме",
+    "events": "Лента событий",
+    "settings": "Настройки",
+    "operators": "Оперативники"
+  },
+  "page": {
+    "title": "Записи о найме",
+    "importBtn": "Импорт",
+    "globalBtn": "Глобальная статистика",
+    "settingsBtn": "Настройки",
+    "totalCost": "Стоимость всех наймов",
+    "openOfficialSource": "Официальный пост",
+    "detailsOfficialSource": "Посмотреть детали на оффициальном сайте",
+    "rating": {
+      "ratingTitle": "Ваш рейтинг",
+      "luckyTotal": "Всего наймов",
+      "luckyMoreThan": "Больше чем у {n}% пользователей",
+      "luckyLessThan": "Меньше чем у {n}% пользователей",
+      "luckyLuckierThan": "Удачливее чем {n}% пользователей Goyfield",
+      "luckyLessLuckierThan": "Менее удачливее чем {n}% пользователей Goyfield",
+      "lucky5050": "Выигранные 50:50",
+      "luckyTitle": "Удача",
+      "lucky6": "Удача",
+      "lucky5": "Удача",
+      "luckyTopPercent": "Топ {n}%",
+      "luckyLowPercent": "Ниже {n}%",
+      "avg": "ср. знач."
+    },
+    "banner": {
+      "total": "Всего наймов",
+      "spent": "Ороберила потрачено",
+      "pity6": "Гарант",
+      "pity5": "Гарант",
+      "details": "Подробнее",
+      "stats": "Статистика",
+      "recent": "Недавние",
+      "recent2": "оперативники",
+      "rarity": "Редкость",
+      "count": "Всего",
+      "percent": "Процент",
+      "avg": "Ср. знач.",
+      "fallBackCharacters": "Пока нет шестизвездочных наймов...",
+      "guarantee": "Гарантированно",
+      "won5050": "Выиграно 50/50",
+      "origeometry": "Ориджеметрий",
+      "pulled": "Выпало",
+      "operators": "оперативников"
+    },
+    "recordsSettings": {
+      "settings": "Настройки",
+      "importXLSX": "Импорт .xlsx",
+      "exportXLSX": "Экспорт .xlsx",
+      "importJSON": "Импорт .json",
+      "exportJSON": "Экспорт .json",
+      "close": "Закрыть"
+    },
+    "bannerTypes": {
+      "bannerHistoryGraph": "История по баннерам",
+      "pieGraph": "Распределение"
+    }
+  },
+  "bannerTypes": {
+    "standard": "Стандартный наем",
+    "special": "Специальный наем",
+    "new-player": "Наем «Новые горизонты»"
+  },
+  "import": {
+    "title": "Импорт записей о найме",
+    "instruction": "Вставьте URL из истории поиска (webview), полученный в игре:",
+    "startBtn": "Начать импорт",
+    "processing": "Загрузка...",
+    "status": {
+      "importing_data": "Связываемся с серверами Gryphline...",
+      "error_invalid_url": "Неверная ссылка. Убедитесь, что это ссылка от Gryphline.",
+      "error_failed": "Ошибка при загрузке. Возможно, токен истек.",
+      "success": "Данные успешно импортированы!"
+    },
+    "description": "Загрузите JSON файл с историей круток.",
+    "format": "(Пока поддерживается только формат Genshin-like API response).",
+    "button": "Выбрать JSON файл",
+    "successMessage": "✓ Данные успешно обновлены! Перейдите на главную для просмотра статистики.",
+    "successAlert": "Успешно импортировано {count} записей!",
+    "newFound": "Найдены новые записи",
+    "dataAnalysys": "Анализ данных...",
+    "saving": "Сохранение..."
+  },
+  "characters": {
+    "endministrator1": "Эндминистратор",
+    "endministrator2": "Эндминистратор",
+    "perlica": "Перлика",
+    "chenQianyu": "Чэнь Цяньюй",
+    "laevatain": "Лэватейн",
+    "yvonne": "Ивонна",
+    "gilberta": "Гилберта",
+    "ardelia": "Арделия",
+    "ember": "Эмбер",
+    "lastRite": "Панихида",
+    "lifeng": "Лифен",
+    "pogranichnik": "Пограничник",
+    "alesh": "Алеш",
+    "arclight": "Арклайт",
+    "avywenna": "Авивенна",
+    "daPan": "Да Пан",
+    "snowshine": "Светоснежка",
+    "wulfgard": "Вульфгард",
+    "xaihi": "Сайхи",
+    "akekuri": "Акэкури",
+    "antal": "Антал",
+    "catcher": "Кэтчер",
+    "estella": "Эстелла",
+    "fluorite": "Флюорит"
+  },
+  "emptyState": {
+    "noData": "Нет записей"
+  },
+  "buttons": {
+    "saveBtn": "Сохранить"
+  },
+  "systemNames": {
+    "total": "Всего",
+    "pull": "Крутка",
+    "operator": "Оператор",
+    "pity": "Гарант",
+    "date": "Дата",
+    "days": "Дней",
+    "startsIn": "Начинается через",
+    "justNow": "Только что",
+    "timeRemaining": "Осталось времени",
+    "banner": "Баннер",
+    "rarity": "Редкость",
+    "status": "Статус",
+    "start": "Начало",
+    "end": "Конец",
+    "ongoing": "Продолжается",
+    "daysActive": "дней активно",
+    "daysAgo": "дней назад",
+    "hoursAgo": "часов назад",
+    "d": "д",
+    "hLeft": "ч осталось",
+    "featuredCharacters": "Представленные операторы"
+  },
+  "status": {
+    "won": "Выигрыш 50/50",
+    "lost": "Проигрыш 50/50",
+    "guaranteed": "Гарант",
+    "active": "Активен",
+    "ended": "Завершен",
+    "upcoming": "Скоро"
+  },
+  "banners": {
+    "special_banner_01": "Первый тест",
+    "special_banner_02": "Тени прошлого",
+    "special_banner_03": "Тени настоящего Аналаиса",
+    "standard_01": "Основной наем",
+    "new_player_01": "Наем «Новые горизонты»"
+  },
+  "pages": {
+    "home": "Главная",
+    "records": "Записи о найме",
+    "events": "Лента событий",
+    "settings": "Настройки",
+    "operators": "Оперативники"
+  },
+  "events": {
+    "voyage_to_the_stars": "Путешествие к звездам",
+    "final_prep_orders": "Финальная подготовка"
+  },
+  "mouths": {
+    "january": "Январь",
+    "february": "Февраль",
+    "march": "Март",
+    "april": "Апрель",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Август",
+    "september": "Сентябрь",
+    "october": "Октябрь",
+    "november": "Ноябрь",
+    "december": "Декабрь"
+  },
+  "months_gen": {
+    "january": "Января",
+    "february": "Февраля",
+    "march": "Марта",
+    "april": "Апреля",
+    "may": "Мая",
+    "june": "Июня",
+    "july": "Июля",
+    "august": "Августа",
+    "september": "Сентября",
+    "october": "Октября",
+    "november": "Ноября",
+    "december": "Декабря"
+  },
+  "timer": {
+    "ongoing_active": "Идет (уже {n} дн.)",
+    "left_d_h": "{d}д {h}ч",
+    "days_ago": "{n} дн. назад",
+    "hours_ago": "{n} ч. назад",
+    "just_now": "Только что",
+    "starts_in_days": "{n} дн.",
+    "d_h": "{d}д {h}ч",
+    "h": "{h}ч",
+    "in_d_h": "через {d}д {h}ч",
+    "in_h": "через {h}ч",
+    "starts_in_d_h": "{d}д {h}ч",
+    "starts_in_hours": "{n}ч",
+    "starts_soon": "Скоро начнется"
+  },
+  "weekdays": {
+    "mon": "ПН",
+    "tue": "ВТ",
+    "wed": "СР",
+    "thu": "ЧТ",
+    "fri": "ПТ",
+    "sat": "СБ",
+    "sun": "ВС"
+  },
+  "elements": {
+    "heat": "Тепло",
+    "cryo": "Крио",
+    "nature": "Природа",
+    "electric": "Электро",
+    "physical": "Физика"
+  },
+  "classes": {
+    "guard": "Страж",
+    "caster": "Заклинатель",
+    "defender": "Защитник",
+    "vanguard": "Авангард",
+    "supporter": "Помощник",
+    "striker": "Штурмовик"
+  },
+  "sort": {
+    "rarity": "Редкость",
+    "class": "Класс",
+    "element": "Элемент",
+    "weapon": "Оружие",
+    "desc": "Убыв.",
+    "asc": "Возр.",
+    "search": "Поиск...",
+    "reset": "Сбросить"
+  },
+  "menu": {
+    "about": "Обзор",
+    "talents": "Таланты",
+    "potentials": "Потенциал",
+    "combatSkills": "Боевые навыки",
+    "artwork": "Арты",
+    "files": "Файлы",
+    "audio": "Аудио"
+  },
+  "bio": {
+    "faction": "Фракция",
+    "race": "Раса",
+    "birth": "Дата рождения"
+  },
+  "stats": {
+    "attributes": "Атрибуты",
+    "mainAttr": "Главный атрибут",
+    "secAttr": "Вторичный атрибут",
+    "str": "Сила",
+    "agi": "Ловкость",
+    "int": "Интелект",
+    "will": "Воля",
+    "baseHp": "Базовое HP",
+    "baseAtk": "Базовое АТК",
+    "baseDef": "Базовая ЗАЩ",
+    "table": "Таблица",
+    "materials": "Материалы",
+    "maxed": "Максимальный уровень",
+    "level": "Уровень"
+  },
+  "bioValues": {
+    "Unknown": "Неизвестно",
+    "endfieldInd": "Компания Endfield",
+    "perro": "Перро",
+    "31-03": "31 марта"
+  },
+  "tags": {
+    "electricInfliction": "Электрическое поражение",
+    "electrify": "Электрификация"
+  },
+  "weapons": {
+    "sword": "Меч",
+    "polearm": "Древковое оружие",
+    "artsUnit": "Модуль исскуств",
+    "greatSword": "Двуречный меч",
+    "handcannon": "Пушка"
+  },
+  "items": {
+    "t_creds": "T-Creds",
+    "protodisk": "Протодиск",
+    "protoset": "Протосет",
+    "protohedron": "Протоэдр",
+    "pinkBolete": "Розовый Болет",
+    "redBolete": "Красный Болет",
+    "rubyBolete": "Рубиновый Болет",
+    "bloodcap": "Кровавик",
+    "metadiastimaPhotoemissionTube": "Трубка МФЭ",
+    "blightedJadeleaf": "Моровый яшмолист"
+  }
+}

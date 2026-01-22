@@ -1,0 +1,296 @@
+{
+  "sidebar": {
+    "home": "Home",
+    "records": "Headhunting Records",
+    "events": "Timeline",
+    "settings": "Settings",
+    "operators": "Operators"
+  },
+  "page": {
+    "title": "Headhunting Records",
+    "importBtn": "Import",
+    "globalBtn": "Global Stats",
+    "settingsBtn": "Settings",
+    "totalCost": "Total Oroberyl Cost",
+    "openOfficialSource": "Official Post",
+    "detailsOfficialSource": "View details on official site",
+    "rating": {
+      "ratingTitle": "Your Rating",
+      "luckyTotal": "Total Pulls",
+      "luckyMoreThan": "More than {n}% users",
+      "luckyLessThan": "Less than {n}% users",
+      "luckyLuckierThan": "Luckier than {n}% of users Goyfield",
+      "luckyLessLuckierThan": "Less lucky than {n}% of users Goyfield",
+      "lucky5050": "Won 50:50",
+      "luckyTitle": "Luck",
+      "lucky6": "Luck",
+      "lucky5": "Luck",
+      "luckyTopPercent": "Top {n}%",
+      "luckyLowPercent": "Bottom {n}%",
+      "avg": "avg"
+    },
+    "banner": {
+      "total": "Total Pulls",
+      "spent": "Oroberyl Spent",
+      "pity6": "Pity",
+      "pity5": "Pity",
+      "details": "Details",
+      "stats": "Statistics",
+      "recent": "Recent",
+      "recent2": "operators",
+      "rarity": "Rarity",
+      "count": "Count",
+      "percent": "Percent",
+      "avg": "Avg.",
+      "fallBackCharacters": "There are no six-star hires yet...",
+      "guarantee": "Guarantee",
+      "won5050": "Won 50/50",
+      "origeometry": "Origeometry",
+      "pulled": "Pulled",
+      "operators": "operators"
+    },
+    "recordsSettings": {
+      "settings": "Settings",
+      "importXLSX": "Import .xlsx",
+      "exportXLSX": "Export .xlsx",
+      "importJSON": "Import .json",
+      "exportJSON": "Export .json",
+      "close": "Close"
+    },
+    "bannerTypes": {
+      "bannerHistoryGraph": "Banners history",
+      "pieGraph": "Distribution"
+    }
+  },
+  "bannerTypes": {
+      "standard": "Standard Headhunting",
+      "special": "Special Headhunting",
+      "new-player": "New Horizons Headhunting"
+  },
+  "import": {
+    "title": "Import Headhunting Records",
+    "description": "Upload a JSON file with your gacha history.",
+    "format": "(Currently only Genshin-like API response format is supported).",
+    "button": "Choose JSON file",
+    "successMessage": "✓ Data successfully updated! Go to the home page to view statistics.",
+    "successAlert": "Successfully imported {count} records!",
+    "newFound": "New records found",
+    "dataAnalysys": "Data analysis...",
+    "saving": "Saving..."
+  },
+  "characters": {
+    "endministrator1": "Endministrator",
+    "endministrator2": "Endministrator",
+    "perlica": "Perlica",
+    "chenQianyu": "Chen Qianyu",
+    "laevatain": "Laevatain",
+    "yvonne": "Yvonne",
+    "gilberta": "Gilberta",
+    "ardelia": "Ardelia",
+    "ember": "Ember",
+    "lastRite": "Last Rite",
+    "lifeng": "Lifeng",
+    "pogranichnik": "Pogranichnik",
+    "alesh": "Alesh",
+    "arclight": "Arclight",
+    "avywenna": "Avywenna",
+    "daPan": "Da Pan",
+    "snowshine": "Snowshine",
+    "wulfgard": "Wulfgard",
+    "xaihi": "Xaihi",
+    "akekuri": "Akekuri",
+    "antal": "Antal",
+    "catcher": "Catcher",
+    "estella": "Estella",
+    "fluorite": "Fluorite"
+  },
+  "emptyState": {
+    "noData": "No entries"
+  },
+  "buttons": {
+    "saveBtn": "Save"
+  },
+  "systemNames": {
+    "total": "Total",
+    "pull": "Pull",
+    "operator": "Operator",
+    "pity": "Pity",
+    "date": "Date",
+    "days": "Days",
+    "startsIn": "Starts In",
+    "justNow": "Just now",
+    "timeRemaining": "Time Remaining",
+    "banner": "Banner",
+    "rarity": "Rarity",
+    "status": "Status",
+    "start": "Start",
+    "end": "End",
+    "ongoing": "Ongoing",
+    "daysActive": "days active",
+    "daysAgo": "days ago",
+    "noMaterialsNeeded": "No materials Needed",
+    "featuredCharacters": "Featured operators"
+  },
+  "status": {
+    "won": "Won 50/50",
+    "lost": "Lost 50/50",
+    "guaranteed": "Guaranteed",
+    "active": "Active",
+    "ended": "Ended",
+    "upcoming": "Upcoming"
+  },
+  "banners": {
+    "special_banner_01": "Scars Of The Forge",
+    "special_banner_02": "The Floaty Messenger",
+    "special_banner_03": "Hues Of Passion",
+    "standard_01": "Basic Headhunting",
+    "new_player_01": "New Horizons Headhunting"
+  },
+  "pages": {
+    "home": "Home",
+    "records": "Records",
+    "events": "Events",
+    "settings": "Settings",
+    "operators": "Operators"
+  },
+  "events": {
+    "voyage_to_the_stars": "Voyage to the Stars",
+    "final_prep_orders": "Final Prep Orders"
+  },
+  "mouths": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "months_gen": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "timer": {
+    "ongoing_active": "Ongoing ({n} days active)",
+    "left_d_h": "{d}d {h}h left",
+    "days_ago": "{n} days ago",
+    "hours_ago": "{n} hours ago",
+    "just_now": "Just now",
+    "starts_in_days": "{n} days",
+    "d_h": "{d}d {h}h",
+    "h": "{h}h",
+    "in_d_h": "in {d}d {h}h",
+    "in_h": "in {h}h",
+    "starts_in_d_h": "{d}d {h}h",
+    "starts_in_hours": "{n}h",
+    "starts_soon": "Starting soon"
+  },
+  "weekdays": {
+    "mon": "MON",
+    "tue": "TUE",
+    "wed": "WED",
+    "thu": "THU",
+    "fri": "FRI",
+    "sat": "SAT",
+    "sun": "SUN"
+  },
+  "elements": {
+    "heat": "Heat",
+    "cryo": "Cryo",
+    "nature": "Nature",
+    "electric": "Electric",
+    "physical": "Physical"
+  },
+  "classes": {
+    "guard": "Guard",
+    "caster": "Caster",
+    "defender": "Defender",
+    "vanguard": "Vanguard",
+    "supporter": "Supporter",
+    "striker": "Striker"
+  },
+  "sort": {
+    "rarity": "Rarity",
+    "class": "Class",
+    "element": "Element",
+    "weapon": "Weapon",
+    "desc": "Desc.",
+    "asc": "Asc.",
+    "search": "Search...",
+    "reset": "Reset"
+  },
+  "menu": {
+    "about": "About",
+    "talents": "Talents",
+    "potentials": "Potentials",
+    "combatSkills": "Combat Skills",
+    "artwork": "Artwork",
+    "files": "Files",
+    "audio": "Audio"
+  },
+  "bio": {
+    "faction": "Faction",
+    "race": "Race",
+    "birth": "Birth Date"
+  },
+  "stats": {
+    "attributes": "Attributes",
+    "mainAttr": "Main Attribute",
+    "secAttr": "Secondary Attribute",
+    "str": "Strength",
+    "agi": "Agility",
+    "int": "Intellect",
+    "will": "Will",
+    "baseHp": "Base HP",
+    "baseAtk": "Base ATK",
+    "baseDef": "Base DEF",
+    "table": "Table",
+    "materials": "Materials",
+    "maxed": "Maxed",
+    "level": "Level"
+  },
+  "bioValues": {
+    "Unknown": "Unknown",
+    "endfieldInd": "Endfield Industries", 
+    "perro": "Perro",
+    "31-03": "March 31"
+  },
+  "tags": {
+    "electricInfliction": "Electric Infliction",
+    "electrify": "Electrify"
+  },  
+  "weapons": {
+    "sword": "Sword",
+    "polearm": "Polearm",
+    "artsUnit": "Arts Unit",
+    "greatSword": "Great Sword",
+    "handcannon": "Handcannon"
+  },
+  "items": {
+    "t_creds": "T-Creds",
+    "protodisk": "Protodisk",
+    "protoset": "Protoset",
+    "protohedron": "Protohedron",
+    "pinkBolete": "Pink Bolete",
+    "redBolete": "Red Bolete",
+    "rubyBolete": "Ruby Bolete",
+    "bloodcap": "Bloodcap",
+    "metadiastimaPhotoemissionTube": "Metadiastima Photoemission Tube",
+    "blightedJadeleaf": "Blighted Jadeleaf"
+  }
+}

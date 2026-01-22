@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Подключаем локальный шрифт SDK_US_Web */
+/* Положи файл шрифта в папку static/fonts/SDK_US_Web.ttf */
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('/fonts/HelveticaNeue-Bold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Основной цвет текста, который ты просил */
+  --color-main: #21272C;
+}
+
+body {
+  /* Noto Sans как основной шрифт везде */
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--color-main);
+  background-color: #F9F9F9;
+}
+
+.font-nums {
+  font-family: 'HelveticaNeue-Bold', 'Noto Sans', sans-serif;
+  font-variant-numeric: tabular-nums; /* Чтобы цифры не прыгали по ширине */
+  font-weight: normal; /* Важно! Чтобы не было мыла */
+}
+
+/* Класс для заголовков */
+.font-sdk {
+  font-family: 'SDK_US_Web', 'Noto Sans', sans-serif; /* Если SDK нет, откатится на Noto */
+  font-weight: normal; /* Заголовки обычно жирные */
+}
