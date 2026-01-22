@@ -310,5 +310,21 @@
   "common": {
     "copy": "Copy",
     "copied": "Copied!"
+  },
+  "global": {
+    "title": "Global Statistics",
+    "selectType": "Select Type",
+    "selectBanner": "Select Banner",
+    "totalObtained": "Total Obtained",
+    "median6": "Median 6★",
+    "totalUsers": "Total Users",
+    "totalPulls": "Total Pulls",
+    "spent": "Spent",
+    "winRate": "Win Rate 50/50",
+    "activity": "Activity (Days)",
+    "rate6": "6★ Rate",
+    "rate5": "5★ Rate",
+    "total": "Total",
+    "pull": "pull"
   }
 }
