@@ -89,6 +89,7 @@
     "urlLabel": "Paste URL",
     "enableGlobalStats": "Send history to global statistics",
     "emptyError": "Insert a link",
+    "statusUpToDate": "Pull history is relevant",
     "scriptInstruction": "Copy the script below, open PowerShell, paste, and press Enter. The URL will be copied automatically"
   },
   "characters": {
