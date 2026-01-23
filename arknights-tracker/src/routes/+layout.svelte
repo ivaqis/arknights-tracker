@@ -3,17 +3,16 @@
     import "../app.css";
     import { onMount } from "svelte";
     import { pullData } from "$lib/stores/pulls";
-    import LanguageSelect from "$lib/components/LanguageSelect.svelte";
+    import { accountStore } from "$lib/stores/accounts";
     import { t } from "$lib/i18n";
     import { page } from "$app/stores";
+    import LanguageSelect from "$lib/components/LanguageSelect.svelte";
     import Icons from "$lib/components/Icons.svelte";
 
     // Состояние открытия мобильного меню
     let isMobileMenuOpen = false;
 
-    onMount(() => {
-        pullData.init();
-    });
+    onMount(() => { });
 
     // Закрываем меню при переходе по ссылкам
     $: if ($page.url.pathname) {
@@ -24,22 +23,43 @@
 </script>
 
 <div class="flex min-h-screen bg-[#F9F9F9]">
-    
     <!-- Mobile Header & Toggle Button -->
     <!-- Показывается только на мобильных (до md) -->
     <div class="md:hidden fixed top-4 right-4 z-[60]">
-        <button 
-            on:click={() => isMobileMenuOpen = !isMobileMenuOpen}
+        <button
+            on:click={() => (isMobileMenuOpen = !isMobileMenuOpen)}
             class="p-2 bg-white rounded-lg shadow-sm border border-gray-100 text-gray-600 hover:text-gray-900"
         >
             <!-- Простая иконка "бургер" / "крестик" -->
             {#if isMobileMenuOpen}
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                    />
                 </svg>
             {:else}
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                    />
                 </svg>
             {/if}
         </button>
@@ -49,9 +69,9 @@
     {#if isMobileMenuOpen}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <!-- svelte-ignore a11y-no-static-element-interactions -->
-        <div 
+        <div
             class="fixed inset-0 bg-black/50 z-60 md:hidden"
-            on:click={() => isMobileMenuOpen = false}
+            on:click={() => (isMobileMenuOpen = false)}
         ></div>
     {/if}
 
@@ -60,17 +80,23 @@
     <aside
         class="
             fixed top-0 bottom-0 left-0
-            w-64 bg-white h-full border-r border-gray-100 flex flex-col justify-between py-6 px-4 
+            w-64 bg-white h-full border-r border-gray-100 flex flex-col justify-between py-6 px-4
             z-50 transition-transform duration-300 ease-in-out
             {isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
             md:translate-x-0
         "
     >
-       <!-- Контент сайдбара тот же самый -->
+        <!-- Контент сайдбара тот же самый -->
         <div>
             <div class="mb-10 pl-2">
                 <h1 class="font-black text-2xl tracking-tighter text-gray-900">
-                    GOY<br />FILED
+                    <a
+                        href="/"
+                        class="block hover:opacity-80 transition-opacity"
+                        aria-label="На главную"
+                    >
+                        <Icons name="siteLogo" class="w-full h-full" />
+                    </a>
                 </h1>
             </div>
 
@@ -78,14 +104,14 @@
                 <!-- Главная -->
                 <a
                     href="/"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group {isCurrent(
+                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group relative {isCurrent(
                         '/',
                     ) && $page.url.pathname === '/'
                         ? 'bg-gray-100 text-gray-900 font-bold'
                         : 'text-gray-500 hover:bg-gray-50 font-medium'}"
                 >
                     <div
-                        class="w-6 h-6 flex justify-center items-center {isCurrent(
+                        class="w-6 h-6 flex justify-center items-center pointer-events-none {isCurrent(
                             '/',
                         ) && $page.url.pathname === '/'
                             ? 'text-gray-900'
@@ -160,17 +186,23 @@
                 </a>
 
                 <!-- Настройки -->
-                <button
-                    on:click={() => alert("Открыть настройки")}
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group text-gray-500 hover:bg-gray-50 font-medium text-left"
+                <a
+                    href="/settings"
+                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group text-left
+    {isCurrent('/settings') && $page.url.pathname === '/settings'
+                        ? 'bg-gray-100 text-gray-900 font-bold'
+                        : 'text-gray-500 hover:bg-gray-50 font-medium'}"
                 >
                     <div
-                        class="w-6 h-6 flex justify-center items-center text-gray-400 group-hover:text-gray-600"
+                        class="w-6 h-6 flex justify-center items-center
+        {isCurrent('/settings') && $page.url.pathname === '/settings'
+                            ? 'text-gray-900'
+                            : 'text-gray-400 group-hover:text-gray-600'}"
                     >
                         <Icons name="settingsMenu" class="w-full h-full" />
                     </div>
                     <span class="text-lg">{$t("sidebar.settings")}</span>
-                </button>
+                </a>
             </nav>
         </div>
 

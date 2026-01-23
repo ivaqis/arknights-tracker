@@ -200,3 +200,58 @@ export function calculateBannerStats(pulls, bannerId) {
         }
     };
 }
+
+/**
+ * ВАЛИДАЦИЯ ЦЕЛОСТНОСТИ АККАУНТА
+ * Проверяет, не пытаемся ли мы загрузить данные от другого аккаунта.
+ * Логика: Если новые крутки попадают во временной диапазон, где у нас УЖЕ есть данные,
+ * но при этом эти новые крутки НЕ являются дубликатами существующих (ID не совпадают),
+ * значит это другой аккаунт.
+ */
+export function validateAccountConsistency(existingPulls, newPulls) {
+    if (!existingPulls.length || !newPulls.length) return;
+
+    // 1. Определяем временные границы НОВЫХ данных
+    // Сортируем новые, чтобы найти min и max время
+    const sortedNew = [...newPulls].sort((a, b) => a.time - b.time);
+    const minNewTime = sortedNew[0].time.getTime();
+    const maxNewTime = sortedNew[sortedNew.length - 1].time.getTime();
+
+    // 2. Ищем существующие крутки, которые попадают в этот диапазон
+    // (плюс/минус небольшая погрешность, если нужно, но пока строго)
+    const overlaps = existingPulls.filter(p => {
+        const t = p.time.getTime();
+        return t >= minNewTime && t <= maxNewTime;
+    });
+
+    // Если нет пересечений по времени, значит данные "до" или "после" текущих.
+    // Это нормально (например, докрутил баннер).
+    if (overlaps.length === 0) return;
+
+    // 3. Если пересечение есть, проверяем "родство".
+    // Хотя бы одна крутка из newPulls должна совпадать по ID с круткой из overlaps.
+    // Если мы загружаем тот же файл или обновленный файл того же аккаунта,
+    // там обязательно будут дубликаты.
+    
+    // Создаем Set из ID существующих круток в этом диапазоне
+    const existingIdsInrange = new Set(overlaps.map(p => p.id));
+
+    let hasMatch = false;
+    for (const p of sortedNew) {
+        if (existingIdsInrange.has(p.id)) {
+            hasMatch = true;
+            break;
+        }
+    }
+
+    // 4. ВЕРДИКТ
+    // У нас есть данные за этот период, но ни одна новая крутка не совпала с существующими.
+    // Значит, это история другого игрока за то же время.
+    if (!hasMatch) {
+        const startDate = new Date(minNewTime).toLocaleDateString();
+        const endDate = new Date(maxNewTime).toLocaleDateString();
+        throw new Error(
+            `Account Mismatch! You already have history between ${startDate} and ${endDate}, but the imported data differs completely. Please check if you selected the correct account.`
+        );
+    }
+}

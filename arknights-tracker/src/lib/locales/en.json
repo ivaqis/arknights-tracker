@@ -327,5 +327,33 @@
     "rate5": "5★ Rate",
     "total": "Total",
     "pull": "pull"
+  },
+  "settings": {
+    "title": "Settings",
+    "account": {
+      "title": "Select Account",
+      "add": "Add",
+      "clear": "Clear",
+      "delete": "Delete",
+      "defaultName": "Account"
+    },
+    "cloud": {
+      "title": "Cloud Synchronization",
+      "description": "Goyfield syncs data with Google Drive to save pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only work with its own files.",
+      "btn": "Sign in with Google Drive"
+    },
+    "backup": {
+      "title": "Backup",
+      "description": "Backups contain data for all accounts. When importing a backup, don't forget to create an additional backup, as all current data will be deleted.",
+      "export": "Export Data",
+      "import": "Import Data"
+    },
+    "sources": {
+      "title": "Sources"
+    },
+    "feedback": {
+      "title": "Feedback",
+      "telegram": "Telegram"
+    }
   }
 }
