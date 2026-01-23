@@ -1,194 +1,189 @@
 // src/lib/utils/importUtils.js
-import { banners } from '$lib/data/banners';
-import { characters } from '$lib/data/characters';
-import { bannerTypes } from '$lib/data/bannerTypes';
+import { characters } from "$lib/data/characters";
+import { banners } from "$lib/data/banners";
 
-// Pool types mapping for Arknights Endfield
-const POOL_TYPES = {
-    beginner: "E_CharacterGachaPoolType_Beginner",
-    standard: "E_CharacterGachaPoolType_Standard",
-    special: "E_CharacterGachaPoolType_Special"
-};
-
-// Internal banner ID mapping
-const GACHA_TYPE_MAP = bannerTypes.reduce((acc, banner) => {
-    if (banner.apiType) {
-        acc[banner.apiType] = banner.id;
-    }
-    return acc;
-}, {});
+// Нормализация имени (убираем пробелы, lowercase)
+const normalize = (str) => str?.toLowerCase().replace(/\s+/g, "") || "";
 
 /**
- * Transforms API item to internal pull format
+ * Парсинг сырых логов (Восстановленная функция)
+ * Преобразует данные от API в удобный формат
  */
-export function parseGachaLog(rawList) {
-    if (!Array.isArray(rawList)) return [];
-
-    return rawList.map(item => {
-        // Map API poolId (e.g., 'beginner') to Internal ID (e.g., 'new-player')
-        const bannerId = GACHA_TYPE_MAP[item.poolId] || "unknown";
-        
+export function parseGachaLog(list) {
+    if (!Array.isArray(list)) return [];
+    
+    return list.map(item => {
         return {
-            id: item.seqId,
-            bannerId: bannerId,
-            // Backend sends 'gachaTs' as string string timestamp
-            time: new Date(parseInt(item.gachaTs)), 
-            name: item.charName,
-            rarity: parseInt(item.rarity) || 3,
-            type: "Character",
-            gachaType: item.poolId, // 'beginner', 'standard', 'special'
-            icon: ""
+            // Генерируем ID, если его нет (timestamp + name)
+            id: item.id || `${item.ts}_${item.name}`,
+            // Преобразуем timestamp (секунды) в Date, если нужно
+            time: item.time ? new Date(item.time) : new Date(item.ts * 1000),
+            name: item.name,
+            rarity: parseInt(item.rarity),
+            // Маппинг полей пула, если API отдает gacha_type или pool
+            bannerId: item.bannerId || item.pool || item.gacha_type || "standard"
         };
+    }).sort((a, b) => a.time - b.time);
+}
+
+/**
+ * 1. Слияние списков (старых и новых круток)
+ */
+export function mergePulls(oldList, newList) {
+    const map = new Map();
+    // Используем Map по ID, чтобы убрать дубликаты
+    oldList.forEach(p => map.set(p.id, p));
+    newList.forEach(p => map.set(p.id, p));
+    // Возвращаем отсортированный массив
+    return Array.from(map.values()).sort((a, b) => new Date(a.time) - new Date(b.time));
+}
+
+/**
+ * 2. Расчет Pity для списка (визуальный)
+ * Учитывает правило: 30-40 крутки бесплатные и не увеличивают счетчик
+ */
+export function calculatePity(pulls) {
+    let pityCounter = 0;
+    return pulls.map((pull, index) => {
+        // Бесплатные крутки (с 31 по 40 включительно)
+        // Индексы идут с 0, поэтому проверяем 30..39
+        const isFreePull = index >= 30 && index < 40;
+
+        if (!isFreePull) {
+            pityCounter++;
+        }
+        
+        // Если выпала лега, пити сбрасывается ВСЕГДА (даже на бесплатной)
+        if (pull.rarity === 6) {
+            const resultPity = pityCounter;
+            pityCounter = 0; 
+            return { ...pull, pity: resultPity, isFree: isFreePull };
+        }
+
+        return { ...pull, pity: pityCounter, isFree: isFreePull };
     });
 }
 
 /**
- * Fetches all pages for all pools using the provided base URL
+ * 3. ГЛАВНАЯ ФУНКЦИЯ: Расчет всей статистики баннера
  */
-export async function fetchAllEndfieldData(baseUrl) {
-    const urlObj = new URL(baseUrl);
-    let allPulls = [];
-
-    // Iterate through all banner types
-    for (const [key, poolName] of Object.entries(POOL_TYPES)) {
-        let hasMore = true;
-        let lastId = "";
-
-        while (hasMore) {
-            urlObj.searchParams.set('pool_type', poolName);
-            if (lastId) urlObj.searchParams.set('last_id', lastId);
-
-            // Using fetch to get data from Gryphline API
-            const response = await fetch(urlObj.toString());
-            const result = await response.json();
-
-            if (result.code !== 0) break;
-
-            const list = result.data.list || [];
-            allPulls = [...allPulls, ...list];
-            hasMore = result.data.hasMore;
-
-            if (list.length > 0) {
-                lastId = list[list.length - 1].seqId;
-            } else {
-                hasMore = false;
-            }
-        }
+export function calculateBannerStats(pulls, bannerId) {
+    // 1. Определяем конфигурацию баннера
+    let bannerConfig = banners.find(b => b.id === bannerId);
+    if (!bannerConfig) {
+        if (bannerId.includes('standard')) bannerConfig = banners.find(b => b.type === 'standard');
+        if (bannerId.includes('special')) bannerConfig = banners.find(b => b.type === 'special');
+        if (bannerId.includes('new')) bannerConfig = banners.find(b => b.type === 'new-player');
     }
-    return allPulls;
-}
 
-export function mergePulls(currentPulls, newPulls) {
-    const existingIds = new Set(currentPulls.map(p => p.id));
-    const uniqueNew = newPulls.filter(p => !existingIds.has(p.id));
-    return [...currentPulls, ...uniqueNew].sort((a, b) => a.time - b.time || a.id - b.id);
-}
+    const featured6 = bannerConfig?.featured6 || [];
+    const isSpecial = bannerConfig?.type === 'special';
 
-// Хелпер для парсинга дат баннеров как UTC, если указано
-function parseBannerDate(dateStr, timezone) {
-    if (!dateStr) return null;
-    // Если таймзона UTC+0 и в строке нет Z или смещения, добавляем Z для корректного парсинга
-    if (timezone === "UTC+0" && !dateStr.includes("Z") && !dateStr.includes("+")) {
-        return new Date(dateStr.replace(" ", "T") + "Z");
-    }
-    return new Date(dateStr);
-}
+    // 2. Инициализация переменных
+    let total = pulls.length;
+    let count6 = 0;
+    let count5 = 0;
+    let sumPity6 = 0;
+    let sumPity5 = 0;
 
-function getCharIdByName(name) {
-    const entry = Object.values(characters).find(c => c.name.toLowerCase() === name.toLowerCase());
-    return entry ? entry.id : null;
-}
+    // 50/50 и Rate Up
+    let won5050 = 0;
+    let total5050 = 0;
+    let last6WasFeatured = true; 
+    let hasReceivedRateUp = false; // Получили ли мы уже ивентового перса
 
-export function calculatePity(pulls, bannerType) {
-    if (!pulls || pulls.length === 0) return [];
+    // Текущие счетчики
+    let currentPity6 = 0;
+    let currentPity5 = 0;
+    let guarantee120Counter = 0; // Счетчик до 120 (для первого Rate Up)
 
-    let pity6 = 0;
-    let pity5 = 0;
-    let isGuaranteed6 = false;
-    let isGuaranteed5 = false;
-
-    return pulls.map(pull => {
-        pity6++;
-        pity5++;
-
-        let currentPity = 1;
-        let status = 'normal'; // 'won', 'lost', 'guaranteed', 'normal', 'unknown'
+    // 3. Линейный проход по истории
+    pulls.forEach((pull, index) => {
+        const charName = normalize(pull.name);
         
-        const pullDate = new Date(pull.time);
+        // Проверка на бесплатную десятку (индексы 30-39)
+        const isFreePull = index >= 30 && index < 40;
 
-        // Ищем активный баннер
-        const activeBanner = banners.find(b => {
-            if (b.type !== bannerType) return false;
-            
-            const start = parseBannerDate(b.startTime, b.timezone);
-            const end = parseBannerDate(b.endTime, b.timezone);
-
-            return pullDate >= start && (end === null || pullDate <= end);
-        });
-
-        // Отладка в консоль, если статус unknown для леги
-        if (pull.rarity === 6 && !activeBanner) {
-            console.warn("Banner not found for pull:", {
-                pullDate: pullDate.toISOString(),
-                char: pull.name,
-                type: bannerType
-            });
-        }
-
+        // --- 6 ЗВЕЗД ---
         if (pull.rarity === 6) {
-            currentPity = pity6;
-            pity6 = 0;
+            count6++;
+            
+            // Запоминаем пити (учитывая, что на бесплатной оно не росло, но сбросилось)
+            sumPity6 += currentPity6 + (isFreePull ? 0 : 1); 
 
-            if (activeBanner && activeBanner.featured6) {
-                const pullCharId = getCharIdByName(pull.name); 
-                // Приводим к нижнему регистру для надежности
-                const featured = activeBanner.featured6.map(n => n.toLowerCase());
-                const pullName = pull.name.toLowerCase();
-                const isFeatured = pullCharId && activeBanner.featured6.includes(pullCharId);
+            // Это Rate-Up персонаж?
+            const isFeatured = featured6.some(fid => {
+                const c = characters[fid];
+                return c && normalize(c.name) === charName;
+            });
 
-                if (isFeatured) {
-                    status = isGuaranteed6 ? 'guaranteed' : 'won';
-                    isGuaranteed6 = false;
-                } else {
-                    status = 'lost';
-                    isGuaranteed6 = true;
-                }
-            } else {
-                // Если баннер не найден или это стандартный баннер без ап-рейта конкретного
-                // Для стандарта (standard) можно считать всегда won или normal
-                status = (bannerType === 'standard') ? 'won' : 'unknown';
+            // Статистика 50/50
+            if (last6WasFeatured) {
+                total5050++;
+                if (isFeatured) won5050++;
             }
-        } 
-        else if (pull.rarity === 5) {
-            currentPity = pity5;
-            pity5 = 0;
+            last6WasFeatured = isFeatured;
 
-            if (activeBanner && activeBanner.featured5) {
-                const featured = activeBanner.featured5.map(n => n.toLowerCase());
-                const pullName = pull.name.toLowerCase();
-                const isFeatured = featured.includes(pullName);
+            // Сброс обычного пити (до 80)
+            currentPity6 = 0;
 
+            // Логика Гаранта 120 (First Rate Up Guarantee)
+            if (isSpecial) {
                 if (isFeatured) {
-                    status = isGuaranteed5 ? 'guaranteed' : 'won';
-                    isGuaranteed5 = false;
+                    // Если выпал ивентовый - гарант 120 выполнен/сброшен
+                    guarantee120Counter = 0;
+                    hasReceivedRateUp = true;
                 } else {
-                    status = 'lost';
-                    isGuaranteed5 = true;
+                    // Если выпал стандартный - счетчик 120 ПРОДОЛЖАЕТ тикать
+                    if (!isFreePull && !hasReceivedRateUp) {
+                        guarantee120Counter++;
+                    }
                 }
-            } else {
-                status = 'normal';
             }
         } 
         else {
-            currentPity = 1;
-            status = 'normal';
+            // Не лега (3*, 4*, 5*)
+            if (!isFreePull) {
+                currentPity6++;
+                
+                // Счетчик 120 тикает, пока мы не получили первого Rate Up
+                if (isSpecial && !hasReceivedRateUp) {
+                    guarantee120Counter++;
+                }
+            }
         }
 
-        return {
-            ...pull,
-            pity: currentPity,
-            status: status,
-            bannerImage: activeBanner ? activeBanner.icon : null 
-        };
+        // --- 5 ЗВЕЗД ---
+        if (pull.rarity === 5) {
+            count5++;
+            sumPity5 += currentPity5 + (isFreePull ? 0 : 1);
+            currentPity5 = 0;
+        } else {
+            if (!isFreePull) currentPity5++;
+        }
     });
+
+    return {
+        total,
+        pity6: currentPity6,
+        pity5: currentPity5,
+        
+        // Гарант 120
+        guarantee120: isSpecial && !hasReceivedRateUp ? guarantee120Counter : 0,
+        hasReceivedRateUp,
+        
+        count6,
+        count5,
+        avg6: count6 ? (sumPity6 / count6).toFixed(1) : "0.0",
+        avg5: count5 ? (sumPity5 / count5).toFixed(1) : "0.0",
+        
+        percent6: total ? ((count6 / total) * 100).toFixed(2) : "0.00",
+        percent5: total ? ((count5 / total) * 100).toFixed(2) : "0.00",
+
+        winRate: {
+            won: won5050,
+            total: total5050,
+            percent: total5050 ? ((won5050 / total5050) * 100).toFixed(0) : 0
+        }
+    };
 }

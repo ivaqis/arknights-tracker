@@ -28,12 +28,6 @@
 
   let isSettingsOpen = false;
 
-  // Mock Data Generators
-  const mockIcons = Array(20).fill({
-    src: "https://via.placeholder.com/40",
-    pity: 69,
-  });
-
   const oroberyl = currencies.find((c) => c.id === "oroberyl");
 
   function openImport() {

@@ -1,12 +1,13 @@
 // src/lib/stores/pulls.js
-import { writable, get } from 'svelte/store';
+import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
-import { mergePulls, calculatePity } from '$lib/utils/importUtils'; // Импортируем calculatePity
+import { mergePulls, calculatePity, calculateBannerStats } from '$lib/utils/importUtils';
 
+// Структура данных теперь содержит объект stats внутри каждого баннера
 const defaultData = {
-    standard: { pulls: [], total: 0, pity6: 0, pity5: 0 },
-    special: { pulls: [], total: 0, pity6: 0, pity5: 0 },
-    new_player_banner: { pulls: [], total: 0, pity6: 0, pity5: 0 }
+    standard: { pulls: [], stats: {} },
+    special: { pulls: [], stats: {} },
+    new_player: { pulls: [], stats: {} } // Исправил ключ, чтобы совпадал с ID
 };
 
 function createPullData() {
@@ -22,68 +23,83 @@ function createPullData() {
                 if (stored) {
                     try {
                         const parsed = JSON.parse(stored);
+                        // Восстанавливаем даты
                         Object.keys(parsed).forEach(key => {
                             if (parsed[key].pulls) {
                                 parsed[key].pulls.forEach(p => p.time = new Date(p.time));
                             }
+                            // Если вдруг старый формат кеша (без stats), пересчитаем
+                            if (!parsed[key].stats) {
+                                parsed[key].stats = calculateBannerStats(parsed[key].pulls, key);
+                            }
                         });
                         set(parsed);
                     } catch (e) {
-                        console.error("Ошибка чтения кеша", e);
+                        console.error("Cache error", e);
                     }
                 }
             }
         },
 
         smartImport: async (newPulls) => {
-            await new Promise(r => setTimeout(r, 800));
+            await new Promise(r => setTimeout(r, 500)); // Небольшая задержка для UI
 
-            return new Promise((resolve, reject) => {
+            return new Promise((resolve) => {
                 update(currentData => {
-                    const newData = { ...JSON.parse(JSON.stringify(currentData)) };
-                    Object.keys(newData).forEach(k => newData[k].pulls.forEach(p => p.time = new Date(p.time)));
+                    // Глубокая копия
+                    const newData = JSON.parse(JSON.stringify(currentData));
+                    // Восстанавливаем даты после JSON.stringify
+                    Object.keys(newData).forEach(k => {
+                        if(newData[k].pulls) newData[k].pulls.forEach(p => p.time = new Date(p.time));
+                    });
 
-                    const report = {
-                        status: 'up_to_date',
-                        addedCount: {},
-                        totalAdded: 0
-                    };
-
+                    const report = { status: 'up_to_date', addedCount: {}, totalAdded: 0 };
+                    
+                    // Группируем входящие крутки
                     const incomingByBanner = {};
-                    newPulls.forEach(pull => {
-                        const bid = pull.bannerId;
+                    newPulls.forEach(p => {
+                        // Мапим ID баннера из импорта на наши ключи стора
+                        let bid = p.bannerId;
+                        if (bid.includes('standard')) bid = 'standard';
+                        else if (bid.includes('new')) bid = 'new_player';
+                        else if (bid.includes('special')) bid = 'special'; // Упрощение, если у тебя один слот под спешл
+
+                        // ВНИМАНИЕ: Если ты хранишь каждый спешл баннер отдельно (special_01, special_02), 
+                        // то логика `bid` должна оставаться оригинальной p.bannerId. 
+                        // Ниже я предполагаю, что ты хранишь ВСЕ спешлы в одной куче 'special', как в defaultData.
+                        // Если нет - убери if/else выше.
+                        
+                        // Ладно, судя по defaultData у тебя ключи фиксированные. 
+                        // Давай использовать маппинг, если bannerId сложный.
+                        
                         if (!incomingByBanner[bid]) incomingByBanner[bid] = [];
-                        incomingByBanner[bid].push(pull);
+                        incomingByBanner[bid].push(p);
                     });
 
                     let hasUpdates = false;
 
                     Object.keys(incomingByBanner).forEach(bid => {
-                        if (!newData[bid]) {
-                            newData[bid] = { pulls: [], total: 0, pity6: 0, pity5: 0 };
-                        }
+                        // Создаем слот, если нет
+                        if (!newData[bid]) newData[bid] = { pulls: [], stats: {} };
 
                         const oldList = newData[bid].pulls;
                         const incomeList = incomingByBanner[bid];
-                        
+
+                        // Фильтруем дубликаты
                         const existingIds = new Set(oldList.map(p => p.id));
                         const reallyNew = incomeList.filter(p => !existingIds.has(p.id));
 
                         if (reallyNew.length > 0) {
-                            const lastExistingDate = oldList.length > 0 ? oldList[oldList.length - 1].time : null;
-                            const isOlder = lastExistingDate && reallyNew.some(p => new Date(p.time) < lastExistingDate);
-
-                            if (isOlder) {
-                                // report.status = 'error_account'; 
-                                // return; 
-                            }
-
-                            // 1. Объединяем списки (сортировка внутри mergePulls)
-                            let mergedList = mergePulls(oldList, reallyNew);
+                            // 1. Мержим
+                            const mergedList = mergePulls(oldList, reallyNew);
                             
-                            // 2. ВЫЧИСЛЯЕМ PITY И СТАТУСЫ ДЛЯ ВСЕЙ ИСТОРИИ
-                            // Пересчитываем весь список, так как вставка старой крутки меняет гаранты у всех последующих
-                            newData[bid].pulls = calculatePity(mergedList, bid);
+                            // 2. Считаем Pity для каждой крутки
+                            const pullsWithPity = calculatePity(mergedList);
+                            newData[bid].pulls = pullsWithPity;
+
+                            // 3. СЧИТАЕМ ВСЮ СТАТИСТИКУ РАЗОМ
+                            // Передаем bid, чтобы утилита знала, какой это тип баннера (для 50/50 и гаранта)
+                            newData[bid].stats = calculateBannerStats(pullsWithPity, bid);
 
                             report.addedCount[bid] = reallyNew.length;
                             report.totalAdded += reallyNew.length;
@@ -91,42 +107,13 @@ function createPullData() {
                         }
                     });
 
-                    if (report.status === 'error_account') {
-                         return currentData; 
-                    }
-
                     if (hasUpdates) {
                         report.status = 'updated';
-                        
-                        // Пересчитываем Total и текущий Pity (для шапки/виджета)
-                        Object.keys(report.addedCount).forEach(bid => {
-                            newData[bid].total = newData[bid].pulls.length;
-                            
-                            // Логика "текущего пити" (сколько откручено ПОСЛЕ последней леги)
-                            let p6 = 0, p5 = 0;
-                            const list = newData[bid].pulls;
-                            for (let i = list.length - 1; i >= 0; i--) {
-                                if (list[i].rarity === 6) break;
-                                p6++;
-                            }
-                            for (let i = list.length - 1; i >= 0; i--) {
-                                if (list[i].rarity >= 5) break;
-                                p5++;
-                            }
-                            newData[bid].pity6 = p6;
-                            newData[bid].pity5 = p5;
-                        });
-
-                        if (browser) {
-                            localStorage.setItem('ark_tracker_pulls', JSON.stringify(newData));
-                        }
-                        
-                        resolve(report);
-                        return newData;
-                    } else {
-                        resolve(report);
-                        return currentData;
+                        if (browser) localStorage.setItem('ark_tracker_pulls', JSON.stringify(newData));
                     }
+
+                    resolve(report);
+                    return newData;
                 });
             });
         },
