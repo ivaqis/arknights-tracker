@@ -7,56 +7,44 @@ const normalize = (str) => {
     return str.toLowerCase().replace(/\s+/g, "");
 };
 
-/**
- * ОПРЕДЕЛЕНИЕ ТИПА БАННЕРА
- * Здесь мы решаем, куда положить крутку.
- */
 export function getInternalBannerType(rawId) {
-    // Если ID нет, считаем стандартом
     if (rawId === undefined || rawId === null) return 'standard';
-    
     const id = String(rawId).toLowerCase().trim();
 
-    // === ОТЛАДКА: СМОТРИ СЮДА В КОНСОЛИ ===
-    // Мы увидим, какой ID пришел и куда мы его определили
-    // =======================================
-
-    // 1. Баннер новичка
-    // Обычно это ID '2', но может быть 'new', 'beginner', '100'...
+    // 1. Новичок
     if (id === '2' || id.includes('new') || id.includes('beginner') || id.includes('novice')) {
         return 'new-player';
     }
-
-    // 2. Стандартный баннер
-    // Обычно '1', 'standard', 'permanent'
+    // 2. Стандарт
     if (id === '1' || id.includes('standard') || id.includes('permanent')) {
         return 'standard';
     }
-
-    // 3. Если это не 1 и не 2 — скорее всего это Спешл (Ивент)
-    // ID '3', '4', 'limit', 'special' и т.д.
+    // 3. Спешл
     return 'special';
 }
 
 export function parseGachaLog(list) {
     if (!Array.isArray(list)) return [];
     
+    // Сортировка
     const sortedList = [...list].sort((a, b) => (a.ts || 0) - (b.ts || 0));
 
     return sortedList.map((item, i) => {
-        // Достаем сырой ID баннера
-        const rawBannerId = item.bannerId || item.pool || item.gacha_type;
-        
-        // Определяем наш внутренний тип
+        // === ОТЛАДКА: ВЫВОДИМ ПОЛНЫЙ ОБЪЕКТ ПЕРВОЙ КРУТКИ ===
+        if (i === 0) {
+            console.log("🔥 FULL ITEM DATA:", JSON.stringify(item, null, 2));
+        }
+        // =====================================================
+
+        // Попытка найти ID баннера (добавил poolId и gachaId на всякий случай)
+        const rawBannerId = item.bannerId || item.pool || item.gacha_type || item.poolId || item.gachaId;
         const internalId = getInternalBannerType(rawBannerId);
 
-        // !!! ЛОГ ДЛЯ ОТЛАДКИ !!!
-        if (i < 5) { // Выведем только первые 5 круток, чтобы не спамить
-            console.log(`[DEBUG IMPORTER] Item Name: ${item.name}, Raw Banner ID: "${rawBannerId}", Result Type: "${internalId}"`);
-        }
-
-        const rawName = item.name || item.character || item.chars || "Unknown";
-        const rarity = Number(item.rarity || item.rank || 3);
+        // Попытка найти Имя (добавил item_name)
+        const rawName = item.name || item.character || item.chars || item.item_name || "Unknown";
+        
+        // Попытка найти Редкость (добавил rank_type)
+        const rarity = Number(item.rarity || item.rank || item.rank_type || 3);
         
         const uniqueId = item.id || `${item.ts}_${rawName}_${i}`;
         
@@ -65,12 +53,13 @@ export function parseGachaLog(list) {
             time: item.time ? new Date(item.time) : new Date((item.ts || 0) * 1000),
             name: rawName,
             rarity: isNaN(rarity) ? 3 : rarity,
-            bannerId: internalId // <-- Сюда пишется результат
+            bannerId: internalId 
         };
     }).sort((a, b) => a.time - b.time);
 }
 
-// ... ОСТАЛЬНЫЕ ФУНКЦИИ БЕЗ ИЗМЕНЕНИЙ ...
+// ... ОСТАЛЬНЫЕ ФУНКЦИИ (ОСТАВЛЯЕМ КАК БЫЛИ) ...
+
 export function mergePulls(oldList, newList) {
     const map = new Map();
     oldList.forEach(p => map.set(p.id, p));
@@ -79,10 +68,12 @@ export function mergePulls(oldList, newList) {
 }
 
 export function calculatePity(pulls, bannerId) {
+    // ВАЖНО: bannerId здесь уже должен быть 'special', 'standard' или 'new-player'
     const isSpecial = bannerId?.includes('special');
     let pityCounter = 0;
     
     return pulls.map((pull, index) => {
+        // Правило 30-40 работает только для Special
         const isFreePull = isSpecial && (index >= 30 && index < 40);
 
         if (!isFreePull) pityCounter++;
@@ -98,7 +89,6 @@ export function calculatePity(pulls, bannerId) {
 }
 
 export function calculateBannerStats(pulls, bannerId) {
-    // Ищем конфиг
     let bannerConfig = banners.find(b => b.id === bannerId);
     if (!bannerConfig) {
          if (bannerId.includes('new')) bannerConfig = banners.find(b => b.type === 'new-player');
@@ -107,7 +97,7 @@ export function calculateBannerStats(pulls, bannerId) {
     }
 
     const featured6 = bannerConfig?.featured6 || [];
-    // Проверка isSpecial должна быть строгой. Если это стандарт или новичок - false.
+    // Строгая проверка типа для логики гарантов
     const isSpecial = bannerId.includes('special');
 
     let total = pulls.length;
@@ -125,6 +115,7 @@ export function calculateBannerStats(pulls, bannerId) {
 
     pulls.forEach((pull, index) => {
         const charName = normalize(pull.name);
+        // Правило 30-40
         const isFreePull = isSpecial && (index >= 30 && index < 40);
 
         if (pull.rarity === 6) {
