@@ -642,9 +642,7 @@
             <!-- Тело таблицы -->
             <div>
                 {#if totalCount === 0}
-                    <div
-                        class="h-64 flex flex-col items-center justify-center text-gray-400"
-                    >
+                    <div class="h-64 flex flex-col items-center justify-center text-gray-400">
                         <Icon name="noData" class="w-4 h-4" />
                         <p class="text-sm">
                             {$t("emptyState.noData") || "Нет данных"}
@@ -652,28 +650,22 @@
                     </div>
                 {:else}
                     {#each tableData as row, index}
-                        <!-- ИСПРАВЛЕНИЕ: const объявлен прямо внутри each -->
                         {@const currentBanner = getBannerForPull(
                             row.time,
                             bannerType,
                         )}
                         {@const charData = charMap[normalize(row.name)]}
 
-                        <!-- СТРОКА -->
                         <div
                             class="grid gap-2 items-center px-4 py-2 text-sm border-b border-gray-50 last:border-0 hover:bg-gray-50 transition relative"
                             style="grid-template-columns: 40px 40px minmax(140px, 1fr) 60px 130px 80px; background: {getRowBackground(
                                 row.rarity,
                             )}"
                         >
-                            <!-- 1. Номер -->
-                            <div
-                                class="font-nums text-gray-400 text-xs text-center justify-center flex items-center"
-                            >
+                            <div class="font-nums text-gray-400 text-xs text-center justify-center flex items-center">
                                 {totalCount - index}
                             </div>
 
-                            <!-- 2. Редкость -->
                             <div
                                 class="text-lg flex items-center justify-center font-nums"
                                 style="color: {getRarityColor(row.rarity)}"
@@ -681,17 +673,13 @@
                                 {row.rarity}
                             </div>
 
-                            <!-- 3. Оперативник -->
                             <div class="flex items-center min-w-0 pr-2">
-                                <div
-                                    class="relative inline-flex items-center max-w-full"
-                                >
+                                <div class="relative inline-flex items-center max-w-full">
+                                    
                                     <div class="relative z-10 flex-shrink-0">
                                         <div
                                             class="w-10 h-10 rounded-full overflow-hidden border-2 bg-white shadow-sm relative group"
-                                            style="border-color: {getRarityColor(
-                                                row.rarity,
-                                            )}"
+                                            style="border-color: {getRarityColor(row.rarity)}"
                                         >
                                             {#if charData?.icon}
                                                 <img
@@ -701,46 +689,33 @@
                                                     loading="lazy"
                                                 />
                                             {:else}
-                                                <div
-                                                    class="w-full h-full flex items-center justify-center text-xs text-gray-400 font-bold bg-gray-50"
-                                                >
-                                                    {row.name
-                                                        ? row.name
-                                                              .charAt(0)
-                                                              .toUpperCase()
-                                                        : "?"}
+                                                <div class="w-full h-full flex items-center justify-center text-xs text-gray-400 font-bold bg-gray-50">
+                                                    {row.name ? row.name.charAt(0).toUpperCase() : "?"}
                                                 </div>
                                             {/if}
                                         </div>
 
                                         {#if row.isNew}
-                                            <div
-                                                class="absolute -top-1 -right-1 bg-[#D84C38] text-white text-[9px] font-bold px-1 rounded-sm shadow-md border border-white z-20 pointer-events-none"
-                                            >
-                                                {$t("systemNames.new")}
+                                            <div class="absolute -top-1 -right-1 bg-[#D84C38] text-white text-[9px] font-bold px-1 rounded-sm shadow-md border border-white z-20 pointer-events-none">
+                                                NEW
                                             </div>
                                         {/if}
                                     </div>
 
                                     <div
                                         class="relative bg-transparent -ml-5 pl-7 pr-3 rounded-r-full border-y-2 border-r-2 border-l-0 min-w-0 max-w-[150px] bg-white/50"
-                                        style="border-color: {getRarityColor(
-                                            row.rarity,
-                                        )}; height: 40px; display: flex; align-items: center;"
+                                        style="border-color: {getRarityColor(row.rarity)}; height: 40px; display: flex; align-items: center;"
                                     >
                                         <span
                                             class="text-gray-800 text-sm font-medium leading-none block w-full pt-[1px] z-10 truncate"
                                             title={row.name}
                                         >
-                                            {$t(
-                                                `characters.${charData?.id || normalize(row.name)}`,
-                                            ) || row.name}
+                                            {$t(`characters.${charData?.id || normalize(row.name)}`) || row.name}
                                         </span>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- 4. Pity & Status -->
                             <div
                                 class="flex items-center justify-center font-nums text-base gap-1"
                                 style="color: {getRarityColor(row.rarity)}"
@@ -751,76 +726,48 @@
                                     {#if row.status === "won"}
                                         {#if bannerType !== "standard" && bannerType !== "new-player"}
                                             <Tooltip textKey="status.won">
-                                                <span
-                                                    class="ml-1 flex-shrink-0 inline-flex"
-                                                >
-                                                    <Icon
-                                                        name="star"
-                                                        class="w-4 h-4"
-                                                    />
+                                                <span class="ml-1 flex-shrink-0 inline-flex">
+                                                    <Icon name="star" class="w-4 h-4" />
                                                 </span>
                                             </Tooltip>
                                         {/if}
                                     {:else if row.status === "lost"}
                                         <Tooltip textKey="status.lost">
-                                            <span
-                                                class="ml-1 flex-shrink-0 inline-flex"
-                                            >
-                                                <Icon
-                                                    name="lost"
-                                                    class="w-4 h-4"
-                                                />
+                                            <span class="ml-1 flex-shrink-0 inline-flex">
+                                                <Icon name="lost" class="w-4 h-4" />
                                             </span>
                                         </Tooltip>
                                     {:else if row.status === "guaranteed"}
                                         <Tooltip textKey="status.guaranteed">
-                                            <span
-                                                class="ml-1 flex-shrink-0 inline-flex"
-                                            >
-                                                <Icon
-                                                    name="guaranteed"
-                                                    class="w-4 h-4"
-                                                />
+                                            <span class="ml-1 flex-shrink-0 inline-flex">
+                                                <Icon name="guaranteed" class="w-4 h-4" />
                                             </span>
                                         </Tooltip>
                                     {/if}
                                 {/if}
                             </div>
 
-                            <!-- 5. Дата -->
-                            <div
-                                class="text-gray-500 font-nums text-xs whitespace-nowrap"
-                            >
+                            <div class="text-gray-500 font-nums text-xs whitespace-nowrap">
                                 {new Date(row.time).toLocaleString("ru-RU")}
                             </div>
 
-                            <!-- 6. Баннер -->
                             <div class="flex justify-end">
                                 {#if currentBanner}
                                     <button
                                         class="group relative h-10 w-20 rounded shadow-sm border border-gray-200 overflow-hidden hover:ring-2 hover:ring-[#D0926E] transition-all focus:outline-none"
-                                        on:click={() =>
-                                            (selectedBanner = currentBanner)}
-                                        title={$t(
-                                            `banners.${currentBanner.id}`,
-                                        ) || currentBanner.name}
+                                        on:click={() => (selectedBanner = currentBanner)}
+                                        title={$t(`banners.${currentBanner.id}`) || currentBanner.name}
                                     >
                                         <img
                                             src={currentBanner.miniIcon}
                                             alt={currentBanner.name}
                                             class="h-full w-full object-cover transition-transform group-hover:scale-110"
                                         />
-                                        <div
-                                            class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
-                                        ></div>
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                                     </button>
                                 {:else}
-                                    <div
-                                        class="h-6 w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center"
-                                    >
-                                        <span class="text-[10px] text-gray-300"
-                                            >-</span
-                                        >
+                                    <div class="h-6 w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center">
+                                        <span class="text-[10px] text-gray-300">-</span>
                                     </div>
                                 {/if}
                             </div>
