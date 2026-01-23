@@ -11,6 +11,7 @@
   import Icon from "$lib/components/Icons.svelte";
   import OperatorCard from "$lib/components/OperatorCard.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
+  import Images from "$lib/components/Images.svelte";
 
   // Входные данные: объект баннера
   export let banner = null;
@@ -204,7 +205,9 @@
       const lookupKey = normalize(p.name);
       const charData = charMap[lookupKey];
       return {
-        src: charData?.icon || "/images/avatars/default_6star.png",
+        // We don't need 'src' here anymore because <Images> handles it,
+        // but we MUST pass the ID.
+        id: charData?.id || p.id || normalize(p.name),
         pity: p.pity || "?",
         name: p.name,
       };
@@ -254,6 +257,13 @@
       hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
     };
   })();
+
+  // Determine variant for Images component
+  // If type is 'web' or 'ingame', it's an event -> check 'events' folder
+  // Otherwise it's a banner -> check 'banners' folder
+  $: imageVariant = (banner?.type === 'web' || banner?.type === 'ingame') 
+      ? 'event-icon' 
+      : 'banner-icon';
 </script>
 
 <!-- РАЗМЕТКА -->
@@ -280,10 +290,12 @@
 
       <!-- Картинка -->
       <div class="aspect-[21/9] w-full relative bg-gray-100 group">
-        <img
-          src={banner.icon}
-          alt={banner.name}
-          class="w-full h-full object-cover"
+        <Images 
+            item={banner} 
+            variant={imageVariant} 
+            className="w-full h-full transition-transform duration-700 group-hover:scale-105"
+            alt={banner.name}
+            style="object-fit: cover;"
         />
         <div
           class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
@@ -565,12 +577,12 @@
                         class="relative w-12 h-12 rounded-full bg-gray-100 border-2 border-[#D0926E]
                            hover:scale-110 transition-transform cursor-pointer shadow-sm"
                       >
-                        <!-- Character image -->
                         <div class="w-full h-full overflow-hidden rounded-full">
-                          <img
-                            src={icon.src}
+                          <Images
+                            id={icon.id}
+                            variant="operator-icon"
+                            size="100%"
                             alt={icon.name}
-                            class="w-full h-full object-cover transform scale-110"
                           />
                         </div>
 

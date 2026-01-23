@@ -15,6 +15,7 @@
     import ItemCard from "$lib/components/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
     import SkillCard from "$lib/components/SkillCard.svelte";
+    import Images from "$lib/components/Images.svelte";
 
     // Скиллы
     // Получаем данные значений скиллов (из charDetails.skills)
@@ -261,11 +262,18 @@
             : 'opacity-100'}"
     >
         <!-- Сдвигаем вправо (translate-x), так как меню слева занимает место -->
-        <img
+        <!--<img
             src={char.splashArt}
             alt="Splash"
             class="h-[110%] max-w-none object-cover opacity-20 lg:opacity-100 mask-image-gradient"
-        />
+        />-->
+        <div class="h-[110%] max-w-none object-cover opacity-100 lg:opacity-100 mask-image-gradient">
+            <Images
+                id={char.id}
+                variant="operator-splash"
+                size="100%"
+            />
+        </div>
         <!-- Градиент, чтобы текст читался (опционально) -->
         <div
             class="absolute inset-0 bg-gradient-to-r from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10"

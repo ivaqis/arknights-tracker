@@ -475,8 +475,8 @@
                                 class="font-bold text-gray-900 flex items-center gap-2 font-nums text-xl"
                             >
                                 <Images
-                                    item={oroberyl}
-                                    category="currencies"
+                                    id="oroberyl"
+                                    variant="currency"
                                     size={25}
                                 />
                                 {spent}

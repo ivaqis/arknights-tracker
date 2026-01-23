@@ -8,6 +8,7 @@
     import { banners } from "$lib/data/banners.js";
     import Icon from "$lib/components/Icons.svelte";
     import BannerModal from "$lib/components/BannerModal.svelte";
+    import Images from "$lib/components/Images.svelte";
 
     const TIMEZONES = {
         local: { name: "Local", offset: 0 },
@@ -44,6 +45,29 @@
         if (!clickedBadge && !clickedMenu) {
             showTimezoneMenu = false;
         }
+    }
+
+    /**
+     * Determines which image folder to use based on the item type.
+     * Must be top-level in <script> to be used in HTML.
+     */
+    function getVariant(item) {
+        if (!item) return "event-icon";
+
+        // Check if it's a banner based on specific fields or types
+        // 'banner' type is added in the allEvents map logic
+        if (
+            item.featured6 ||
+            item.type === "banner" ||
+            item.type === "standard" ||
+            item.type === "new-player" ||
+            item.type === "special"
+        ) {
+            return "banner-icon";
+        }
+
+        // Default for events (web, ingame, etc.)
+        return "event-icon";
     }
 
     onMount(() => {
@@ -384,22 +408,25 @@
                             on:click={() => openEvent(event)}
                             class="relative w-full h-full flex items-center overflow-hidden rounded shadow-sm hover:ring-2 ring-offset-1 ring-offset-transparent transition-all text-left"
                             style="
-                                background-color: {event.color};
-                                border-right: 4px solid {event.color};
-                            "
+        background-color: {event.color};
+        border-right: 4px solid {event.color};
+    "
                         >
                             <div
-                                class="absolute top-0 right-0 bottom-0 w-[250px] z-0 bg-cover opacity-90 transition-transform group-hover:scale-105"
-                                style="
-                                    background-image: url('{event.icon}');
-                                    background-size: 120%;
-                                    background-position: right {event.iconPosition !==
-                                undefined
-                                    ? event.iconPosition
-                                    : 50}%;
-                                    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
-                                    "
-                            ></div>
+                                class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform group-hover:scale-105"
+                            >
+                                <Images
+                                    item={event}
+                                    variant={getVariant(event)}
+                                    className="w-full h-full"
+                                    style="
+                object-position: right {event.iconPosition || 50}%;
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
+                mask-image: linear-gradient(to right, transparent 0%, black 50%);
+            "
+                                />
+                            </div>
+
                             <div
                                 class="absolute inset-0 z-10"
                                 style="background: linear-gradient(90deg, {event.color} 35%, {event.color}D9 50%, transparent 100%);"
@@ -419,33 +446,23 @@
                                         >
                                     </div>
                                 {/if}
+
                                 <div class="h-6 w-[2px] bg-white/60"></div>
+
                                 <div
                                     class="flex flex-col justify-center min-w-0"
                                 >
                                     <span
                                         class="text-white font-bold text-sm leading-tight truncate drop-shadow-md"
                                     >
-                                        {event.title
-                                            ? $t(event.title)
-                                            : event.name || event.id}
+                                        {getEventName(event)}
                                     </span>
                                     <span
                                         class="text-white/80 text-[10px] uppercase font-bold tracking-wider"
                                     >
-                                        <!-- 1. День -->
                                         {new Date(event.startTime).getDate()}
-                                        <!-- 2. Пробел (необязательно, если стили отступают) -->
-
-                                        <!-- 3. Месяц (берем из months_gen) -->
                                         {$t(
-                                            `months_gen.${new Date(
-                                                event.startTime,
-                                            )
-                                                .toLocaleString("en-US", {
-                                                    month: "long",
-                                                })
-                                                .toLowerCase()}`,
+                                            `months_gen.${new Date(event.startTime).toLocaleString("en-US", { month: "long" }).toLowerCase()}`,
                                         )}
                                     </span>
                                 </div>

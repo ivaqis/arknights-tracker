@@ -95,7 +95,7 @@
       </h3>
 
       <div class="text-3xl font-black text-gray-900 flex items-center gap-2 font-nums">
-        <Images item={oroberyl} category="currencies" size={32} />
+        <Images id="oroberyl" variant="currency" size={32} />
         {(totalPulls * 500).toLocaleString("ru-RU")}
       </div>
 

@@ -1,8 +1,6 @@
 // src/lib/data/banners.js
 
-// Обернуть переводом на все языки
-
-// Featured используют characterId из characters.js
+// Wrap with translation for all languages
 
 export const banners = [
   {
@@ -16,8 +14,9 @@ export const banners = [
     featured5: ["wulfgard", "snowshine", "fluorite"],
     isServerTime: false,
     timezone: "UTC+0",
-    icon: "https://i.ibb.co/m5czHM8m/basic-headhunting.png",
-    miniIcon: "https://i.ibb.co/V0j4hGty/basic-headhunting.png",
+    // Changed: Use filename (utility handles .png default)
+    icon: "basic-headhunting.png",
+    miniIcon: "basic-headhunting.png",
     url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
     layer: 3,
     color: "#CCCCCC",
@@ -34,8 +33,8 @@ export const banners = [
     featured5: ["wulfgard", "snowshine", "fluorite"],
     isServerTime: false,
     timezone: "UTC+0",
-    icon: "https://i.ibb.co/VRwSyrj/new-horizons-headhunting.png",
-    miniIcon: "https://i.ibb.co/5Xfw1MLT/new-horizons-headhunting.png",
+    icon: "new-horizons-headhunting.png",
+    miniIcon: "new-horizons-headhunting.png",
     url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
     layer: 4,
     color: "#00CC99",
@@ -52,8 +51,8 @@ export const banners = [
     featured5: [],
     isServerTime: true, 
     timezone: "UTC+0",
-    icon: "https://i.ibb.co/4RdDGD8S/laevatain-banner.png",
-    miniIcon: "https://i.ibb.co/zVkLVk4P/laevatain-banner.png",
+    icon: "laevatain-banner.png",
+    miniIcon: "laevatain-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
     layer: 2,
     color: "#FF6600",
@@ -70,8 +69,8 @@ export const banners = [
     featured5: [],
     isServerTime: true, 
     timezone: "UTC+0",
-    icon: "https://i.ibb.co/nskgx1NR/gilberta-banner.png",
-    miniIcon: "https://i.ibb.co/kgSZ6THW/gilberta-banner.png",
+    icon: "gilberta-banner.png",
+    miniIcon: "gilberta-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
     layer: 2,
     color: "#c2cc3cff",
@@ -88,12 +87,11 @@ export const banners = [
     featured5: [],
     isServerTime: true, 
     timezone: "UTC+0",
-    icon: "https://i.ibb.co/qTcLkhj/yvonne-banner.png",
-    miniIcon: "https://i.ibb.co/VcWqJhtQ/yvonne-banner.png",
+    icon: "yvonne-banner.png",
+    miniIcon: "yvonne-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
     layer: 2,
     color: "#FF33CC",
     iconPosition: 25
   }
 ];
-
