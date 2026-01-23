@@ -246,6 +246,10 @@
           </div>
         {/each}
       </div>
+      {:else}
+      <div class="text-sm text-gray-400 italic">
+        {$t("page.banner.fallBackCharacters")}
+      </div>
     {/if}
   </div>
 </div>

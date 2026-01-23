@@ -384,7 +384,7 @@
                                         >
                                             <span
                                                 class="text-gray-700 font-medium"
-                                                >{$t(`banners.${bannerId}`) ||
+                                                >{$t(`bannerTypes.${bannerId}`) ||
                                                     bannerId}</span
                                             >
                                             <span
