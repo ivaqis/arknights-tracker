@@ -692,22 +692,16 @@
                                     
                                     <div class="relative z-10 flex-shrink-0">
                                         <div
-                                            class="w-10 h-10 rounded-full overflow-hidden border-2 bg-white shadow-sm relative group"
-                                            style="border-color: {getRarityColor(row.rarity)}"
-                                        >
-                                            {#if charData?.icon}
-                                                <img
-                                                    src={charData.icon}
+                                                class="w-10 h-10 rounded-full overflow-hidden border-2 bg-white shadow-sm relative group"
+                                                style="border-color: {getRarityColor(row.rarity)}"
+                                            >
+                                                <Images 
+                                                    id={charData?.id || normalize(row.name)} 
+                                                    variant="operator-icon"
                                                     alt={row.name}
-                                                    class="w-full h-full object-cover transform scale-110"
-                                                    loading="lazy"
+                                                    className="w-full h-full object-cover transform scale-110"
                                                 />
-                                            {:else}
-                                                <div class="w-full h-full flex items-center justify-center text-xs text-gray-400 font-bold bg-gray-50">
-                                                    {row.name ? row.name.charAt(0).toUpperCase() : "?"}
-                                                </div>
-                                            {/if}
-                                        </div>
+                                            </div>
 
                                         {#if row.isNew}
                                             <div class="absolute -top-1 -right-1 bg-[#D84C38]/85 text-white text-[8px] leading-none font-bold px-1.5 py-0.5 rounded-md z-20 pointer-events-none backdrop-blur-[1px]">
@@ -772,11 +766,13 @@
                                         on:click={() => (selectedBanner = currentBanner)}
                                         title={$t(`banners.${currentBanner.id}`) || currentBanner.name}
                                     >
-                                        <img
-                                            src={currentBanner.miniIcon}
+                                        <Images
+                                            item={currentBanner}
+                                            variant="banner-mini"
                                             alt={currentBanner.name}
-                                            class="h-full w-full object-cover transition-transform group-hover:scale-110"
+                                            className="h-full w-full object-cover transition-transform group-hover:scale-110"
                                         />
+                                        
                                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
                                     </button>
                                 {:else}
