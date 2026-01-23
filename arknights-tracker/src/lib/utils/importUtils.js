@@ -2,58 +2,69 @@
 import { characters } from "$lib/data/characters";
 import { banners } from "$lib/data/banners";
 
-// Нормализация имени (убираем пробелы, lowercase)
-const normalize = (str) => str?.toLowerCase().replace(/\s+/g, "") || "";
+// Безопасная нормализация (защита от undefined)
+const normalize = (str) => {
+    if (!str || typeof str !== 'string') return "";
+    return str.toLowerCase().replace(/\s+/g, "");
+};
 
 /**
- * Парсинг сырых логов (Восстановленная функция)
- * Преобразует данные от API в удобный формат
+ * Парсинг сырых логов
  */
 export function parseGachaLog(list) {
     if (!Array.isArray(list)) return [];
     
-    return list.map(item => {
+    // Сортируем входящий список по времени, чтобы индексы были стабильными
+    const sortedList = [...list].sort((a, b) => (a.ts || 0) - (b.ts || 0));
+
+    return sortedList.map((item, i) => {
+        // Защита от отсутствующего ID:
+        // Используем timestamp + name + index, чтобы избежать дублей в одной десятке
+        const uniqueId = item.id || `${item.ts}_${item.name}_${i}`;
+        
         return {
-            // Генерируем ID, если его нет (timestamp + name)
-            id: item.id || `${item.ts}_${item.name}`,
-            // Преобразуем timestamp (секунды) в Date, если нужно
-            time: item.time ? new Date(item.time) : new Date(item.ts * 1000),
-            name: item.name,
-            rarity: parseInt(item.rarity),
-            // Маппинг полей пула, если API отдает gacha_type или pool
+            id: uniqueId,
+            // Если time нет, конвертируем ts
+            time: item.time ? new Date(item.time) : new Date((item.ts || 0) * 1000),
+            name: item.name || "Unknown",
+            rarity: Number(item.rarity) || 3, // Защита от NaN
             bannerId: item.bannerId || item.pool || item.gacha_type || "standard"
         };
     }).sort((a, b) => a.time - b.time);
 }
 
 /**
- * 1. Слияние списков (старых и новых круток)
+ * 1. Слияние списков
  */
 export function mergePulls(oldList, newList) {
     const map = new Map();
-    // Используем Map по ID, чтобы убрать дубликаты
+    // oldList уже имеет правильные ID, сохраняем их
     oldList.forEach(p => map.set(p.id, p));
+    // newList перезаписывает или добавляет новые
     newList.forEach(p => map.set(p.id, p));
-    // Возвращаем отсортированный массив
+    
     return Array.from(map.values()).sort((a, b) => new Date(a.time) - new Date(b.time));
 }
 
 /**
- * 2. Расчет Pity для списка (визуальный)
- * Учитывает правило: 30-40 крутки бесплатные и не увеличивают счетчик
+ * 2. Расчет Pity (визуальный для списков)
  */
-export function calculatePity(pulls) {
+export function calculatePity(pulls, bannerId) {
+    // Определяем тип баннера для списка
+    // (bannerId передается из стора, например 'special', 'standard')
+    const isSpecial = bannerId?.includes('special');
+
     let pityCounter = 0;
+    
     return pulls.map((pull, index) => {
-        // Бесплатные крутки (с 31 по 40 включительно)
-        // Индексы идут с 0, поэтому проверяем 30..39
-        const isFreePull = index >= 30 && index < 40;
+        // Правило: 30-40 крутки бесплатные ТОЛЬКО на специальном баннере
+        const isFreePull = isSpecial && (index >= 30 && index < 40);
 
         if (!isFreePull) {
             pityCounter++;
         }
         
-        // Если выпала лега, пити сбрасывается ВСЕГДА (даже на бесплатной)
+        // Лега сбрасывает пити всегда
         if (pull.rarity === 6) {
             const resultPity = pityCounter;
             pityCounter = 0; 
@@ -65,76 +76,70 @@ export function calculatePity(pulls) {
 }
 
 /**
- * 3. ГЛАВНАЯ ФУНКЦИЯ: Расчет всей статистики баннера
+ * 3. ГЛАВНАЯ ФУНКЦИЯ: Расчет статистики
  */
 export function calculateBannerStats(pulls, bannerId) {
-    // 1. Определяем конфигурацию баннера
+    // 1. Конфиг
     let bannerConfig = banners.find(b => b.id === bannerId);
     if (!bannerConfig) {
         if (bannerId.includes('standard')) bannerConfig = banners.find(b => b.type === 'standard');
-        if (bannerId.includes('special')) bannerConfig = banners.find(b => b.type === 'special');
-        if (bannerId.includes('new')) bannerConfig = banners.find(b => b.type === 'new-player');
+        else if (bannerId.includes('special')) bannerConfig = banners.find(b => b.type === 'special');
+        else if (bannerId.includes('new')) bannerConfig = banners.find(b => b.type === 'new-player');
     }
 
     const featured6 = bannerConfig?.featured6 || [];
-    const isSpecial = bannerConfig?.type === 'special';
+    // Важно: проверяем именно конфиг, либо сам ID ключа стора
+    const isSpecial = bannerConfig?.type === 'special' || bannerId.includes('special');
 
-    // 2. Инициализация переменных
+    // 2. Инициализация
     let total = pulls.length;
     let count6 = 0;
     let count5 = 0;
     let sumPity6 = 0;
     let sumPity5 = 0;
 
-    // 50/50 и Rate Up
     let won5050 = 0;
     let total5050 = 0;
     let last6WasFeatured = true; 
-    let hasReceivedRateUp = false; // Получили ли мы уже ивентового перса
+    let hasReceivedRateUp = false;
 
-    // Текущие счетчики
     let currentPity6 = 0;
     let currentPity5 = 0;
-    let guarantee120Counter = 0; // Счетчик до 120 (для первого Rate Up)
+    let guarantee120Counter = 0;
 
-    // 3. Линейный проход по истории
+    // 3. Проход
     pulls.forEach((pull, index) => {
         const charName = normalize(pull.name);
         
-        // Проверка на бесплатную десятку (индексы 30-39)
-        const isFreePull = index >= 30 && index < 40;
+        // [FIX] Бесплатные ТОЛЬКО для special
+        const isFreePull = isSpecial && (index >= 30 && index < 40);
 
         // --- 6 ЗВЕЗД ---
         if (pull.rarity === 6) {
             count6++;
-            
-            // Запоминаем пити (учитывая, что на бесплатной оно не росло, но сбросилось)
             sumPity6 += currentPity6 + (isFreePull ? 0 : 1); 
 
-            // Это Rate-Up персонаж?
+            // Featured check
             const isFeatured = featured6.some(fid => {
                 const c = characters[fid];
                 return c && normalize(c.name) === charName;
             });
 
-            // Статистика 50/50
+            // 50/50
             if (last6WasFeatured) {
                 total5050++;
                 if (isFeatured) won5050++;
             }
             last6WasFeatured = isFeatured;
 
-            // Сброс обычного пити (до 80)
-            currentPity6 = 0;
+            currentPity6 = 0; // Сброс обычного пити
 
-            // Логика Гаранта 120 (First Rate Up Guarantee)
+            // 120 Guarantee Logic
             if (isSpecial) {
                 if (isFeatured) {
-                    // Если выпал ивентовый - гарант 120 выполнен/сброшен
                     guarantee120Counter = 0;
                     hasReceivedRateUp = true;
                 } else {
-                    // Если выпал стандартный - счетчик 120 ПРОДОЛЖАЕТ тикать
                     if (!isFreePull && !hasReceivedRateUp) {
                         guarantee120Counter++;
                     }
@@ -142,11 +147,9 @@ export function calculateBannerStats(pulls, bannerId) {
             }
         } 
         else {
-            // Не лега (3*, 4*, 5*)
+            // Не лега
             if (!isFreePull) {
                 currentPity6++;
-                
-                // Счетчик 120 тикает, пока мы не получили первого Rate Up
                 if (isSpecial && !hasReceivedRateUp) {
                     guarantee120Counter++;
                 }
@@ -167,19 +170,14 @@ export function calculateBannerStats(pulls, bannerId) {
         total,
         pity6: currentPity6,
         pity5: currentPity5,
-        
-        // Гарант 120
         guarantee120: isSpecial && !hasReceivedRateUp ? guarantee120Counter : 0,
         hasReceivedRateUp,
-        
         count6,
         count5,
         avg6: count6 ? (sumPity6 / count6).toFixed(1) : "0.0",
         avg5: count5 ? (sumPity5 / count5).toFixed(1) : "0.0",
-        
         percent6: total ? ((count6 / total) * 100).toFixed(2) : "0.00",
         percent5: total ? ((count5 / total) * 100).toFixed(2) : "0.00",
-
         winRate: {
             won: won5050,
             total: total5050,
