@@ -18,7 +18,7 @@ export const banners = [
     icon: "basic-headhunting.png",
     miniIcon: "basic-headhunting.png",
     url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
-    layer: 3,
+    layer: null,
     color: "#CCCCCC",
     iconPosition: 50
   },
@@ -36,7 +36,7 @@ export const banners = [
     icon: "new-horizons-headhunting.png",
     miniIcon: "new-horizons-headhunting.png",
     url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
-    layer: 4,
+    layer: null,
     color: "#00CC99",
     iconPosition: 50
   },
@@ -51,12 +51,12 @@ export const banners = [
     featured5: [],
     isServerTime: true, 
     timezone: "UTC+0",
-    icon: "laevatain-banner.png",
+    icon: "laevatain-banner.jpg",
     miniIcon: "laevatain-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 2,
+    layer: 4,
     color: "#FF6600",
-    iconPosition: 20
+    iconPosition: 25
   },
   {
     id: "special_banner_02",
@@ -72,7 +72,7 @@ export const banners = [
     icon: "gilberta-banner.png",
     miniIcon: "gilberta-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 2,
+    layer: 4,
     color: "#c2cc3cff",
     iconPosition: 20
   },
@@ -90,8 +90,26 @@ export const banners = [
     icon: "yvonne-banner.png",
     miniIcon: "yvonne-banner.png",
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 2,
+    layer: 4,
     color: "#FF33CC",
     iconPosition: 25
+  },
+  {
+    id: "weapon_banner_01",
+    name: "Smelting Forge Issue",
+    type: "weapon",
+    startTime: "2026-01-22 03:00:00",
+    endTime: "2026-03-16 11:59:59",
+    gameVersion: "0.2.0",
+    featured6: [],
+    featured5: [],
+    isServerTime: true, 
+    timezone: "UTC+0",
+    icon: "weapon_banner_01.jpg",
+    miniIcon: "weapon_banner_01.jpg",
+    url: "https://x.com/AKEndfield/status/2013838974239023147",
+    layer: 5,
+    color: "#e44e25",
+    iconPosition: 50
   }
 ];
