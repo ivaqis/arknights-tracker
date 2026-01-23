@@ -7,12 +7,15 @@ const normalize = (str) => {
     return str.toLowerCase().replace(/\s+/g, "");
 };
 
+/**
+ * ОПРЕДЕЛЕНИЕ ТИПА БАННЕРА
+ */
 export function getInternalBannerType(rawId) {
-    if (rawId === undefined || rawId === null) return 'standard';
+    if (!rawId) return 'standard';
     const id = String(rawId).toLowerCase().trim();
 
-    // 1. Новичок
-    if (id === '2' || id.includes('new') || id.includes('beginner') || id.includes('novice')) {
+    // 1. Новичок (beginner)
+    if (id === '2' || id.includes('beginner') || id.includes('new') || id.includes('novice')) {
         return 'new-player';
     }
     // 2. Стандарт
@@ -23,39 +26,53 @@ export function getInternalBannerType(rawId) {
     return 'special';
 }
 
+/**
+ * ПАРСИНГ ЛОГОВ С ВАЛИДАЦИЕЙ
+ * Если формат кривой — выбрасывает ошибку, и импорт отменяется.
+ */
 export function parseGachaLog(list) {
-    if (!Array.isArray(list)) return [];
-    
-    // Сортировка
-    const sortedList = [...list].sort((a, b) => (a.ts || 0) - (b.ts || 0));
+    if (!Array.isArray(list)) throw new Error("Invalid data: expected an array");
+    if (list.length === 0) throw new Error("No data found in the list");
 
-    return sortedList.map((item, i) => {
-        // === ОТЛАДКА: ВЫВОДИМ ПОЛНЫЙ ОБЪЕКТ ПЕРВОЙ КРУТКИ ===
-        if (i === 0) {
-            console.log("🔥 FULL ITEM DATA:", JSON.stringify(item, null, 2));
-        }
-        // =====================================================
+    // Временный массив для проверки
+    const result = list.map((item, i) => {
+        // 1. Поиск ИМЕНИ (Добавил charName из твоего лога)
+        const rawName = item.name || item.charName || item.character || item.item_name;
+        
+        // 2. Поиск РЕДКОСТИ
+        const rarity = Number(item.rarity || item.rank || item.rank_type);
 
-        // Попытка найти ID баннера (добавил poolId и gachaId на всякий случай)
-        const rawBannerId = item.bannerId || item.pool || item.gacha_type || item.poolId || item.gachaId;
+        // 3. Поиск ВРЕМЕНИ (Добавил gachaTs из твоего лога)
+        let dateObj;
+        if (item.time) dateObj = new Date(item.time);
+        else if (item.gachaTs) dateObj = new Date(Number(item.gachaTs)); // Миллисекунды (как в логе)
+        else if (item.ts) dateObj = new Date(item.ts * 1000); // Секунды
+        
+        // 4. Поиск ID БАННЕРА (Добавил poolId)
+        const rawBannerId = item.bannerId || item.poolId || item.pool || item.gacha_type;
+
+        // === ВАЛИДАЦИЯ: Если чего-то нет, отменяем весь импорт ===
+        if (!rawName) throw new Error(`Item #${i + 1} is missing a name (charName).`);
+        if (!rarity || isNaN(rarity)) throw new Error(`Item #${i + 1} (${rawName}) has invalid rarity.`);
+        if (!dateObj || isNaN(dateObj.getTime())) throw new Error(`Item #${i + 1} (${rawName}) has invalid date.`);
+
+        // Определяем наш внутренний тип (standard / special / new-player)
         const internalId = getInternalBannerType(rawBannerId);
 
-        // Попытка найти Имя (добавил item_name)
-        const rawName = item.name || item.character || item.chars || item.item_name || "Unknown";
-        
-        // Попытка найти Редкость (добавил rank_type)
-        const rarity = Number(item.rarity || item.rank || item.rank_type || 3);
-        
-        const uniqueId = item.id || `${item.ts}_${rawName}_${i}`;
-        
+        // Генерируем уникальный ID
+        const uniqueId = item.id || `${dateObj.getTime()}_${rawName}_${i}`;
+
         return {
             id: uniqueId,
-            time: item.time ? new Date(item.time) : new Date((item.ts || 0) * 1000),
+            time: dateObj,
             name: rawName,
-            rarity: isNaN(rarity) ? 3 : rarity,
-            bannerId: internalId 
+            rarity: rarity,
+            bannerId: internalId
         };
-    }).sort((a, b) => a.time - b.time);
+    });
+
+    // Сортируем только если всё прошло успешно
+    return result.sort((a, b) => a.time - b.time);
 }
 
 // ... ОСТАЛЬНЫЕ ФУНКЦИИ (ОСТАВЛЯЕМ КАК БЫЛИ) ...
@@ -68,7 +85,6 @@ export function mergePulls(oldList, newList) {
 }
 
 export function calculatePity(pulls, bannerId) {
-    // ВАЖНО: bannerId здесь уже должен быть 'special', 'standard' или 'new-player'
     const isSpecial = bannerId?.includes('special');
     let pityCounter = 0;
     
@@ -97,7 +113,6 @@ export function calculateBannerStats(pulls, bannerId) {
     }
 
     const featured6 = bannerConfig?.featured6 || [];
-    // Строгая проверка типа для логики гарантов
     const isSpecial = bannerId.includes('special');
 
     let total = pulls.length;
@@ -115,7 +130,6 @@ export function calculateBannerStats(pulls, bannerId) {
 
     pulls.forEach((pull, index) => {
         const charName = normalize(pull.name);
-        // Правило 30-40
         const isFreePull = isSpecial && (index >= 30 && index < 40);
 
         if (pull.rarity === 6) {

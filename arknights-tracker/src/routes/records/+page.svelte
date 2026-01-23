@@ -37,9 +37,6 @@
   function openGlobal() {
     goto("/records/global");
   }
-
-  console.log('currencies:', currencies);
-    console.log('oroberyl:', currencies.find(c => c.id === 'oroberyl'));
 </script>
 
 <SettingsModal
