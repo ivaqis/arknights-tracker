@@ -128,22 +128,25 @@
         <div class="h-px flex-1 bg-gray-100"></div>
     </div>
 
-    <div class="bg-gray-50 rounded-lg p-3 flex items-center gap-6 text-sm">
-            <div>
-                <span class="text-gray-500 text-xs block">{$t("page.banner.total")}</span>
-                <span class="font-bold text-gray-800 font-nums text-lg">{total}</span>
-            </div>
-            
-            {#if !isNewPlayer}
-            <div>
-                <span class="text-gray-500 text-xs block">{$t("page.banner.spent")}</span>
-                <div class="flex items-center gap-1">
-                    <Images id="oroberyl" variant="currency" size={16} />
-                    <span class="font-bold text-gray-800 font-nums">{spent}</span>
-                </div>
-            </div>
-            {/if}
+    <div class="bg-gray-50 rounded-lg p-3 flex items-center justify-between w-full">
+    
+    <div class="flex-1 flex flex-col items-center justify-center">
+        <span class="text-gray-500 text-xs block mb-0.5">{$t("page.banner.total")}</span>
+        <span class="font-bold text-gray-800 font-nums text-lg leading-none">{total}</span>
     </div>
+
+    {#if !isNewPlayer}
+        <div class="w-px h-8 bg-gray-300 mx-2"></div>
+
+        <div class="flex-1 flex flex-col items-center justify-center">
+            <span class="text-gray-500 text-xs block mb-0.5">{$t("page.banner.spent")}</span>
+            <div class="flex items-center gap-1.5">
+                <Images id="oroberyl" variant="currency" size={18} />
+                <span class="font-bold text-gray-800 font-nums text-lg leading-none">{spent}</span>
+            </div>
+        </div>
+    {/if}
+</div>
 
     <div>
         <div class="grid grid-cols-4 text-xs text-gray-500 mb-1 font-medium">

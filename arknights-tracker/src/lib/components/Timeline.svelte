@@ -233,27 +233,29 @@
     function getEventName(event) {
         if (!event) return "Unknown Event";
 
-        // Если есть готовое имя - используем его
-        if (event.name) return event.name;
-
-        // Если есть title и это ключ перевода (начинается с "events." или "banners.")
+        // 1. Сценарий для ИВЕНТОВ (у них есть title = ключ перевода)
         if (event.title && typeof event.title === "string") {
-            try {
-                const translated = $t(event.title);
-                // Если перевод найден и он отличается от ключа
-                if (translated && translated !== event.title) {
-                    return translated;
-                }
-                // Иначе возвращаем сам ключ
-                return event.title;
-            } catch (error) {
-                console.warn("Translation error for:", event.title, error);
-                return event.title;
+            const translated = $t(event.title);
+            // Если перевод отличается от ключа — значит, перевод есть
+            if (translated && translated !== event.title) {
+                return translated;
             }
         }
 
-        // Fallback на id
-        return event.id || "Unknown Event";
+        // 2. Сценарий для БАННЕРОВ (у них есть id, пробуем ключ banners.ID)
+        if (event.id) {
+            const bannerKey = `banners.${event.id}`;
+            const bannerTranslated = $t(bannerKey);
+            
+            // Если перевод нашелся
+            if (bannerTranslated && bannerTranslated !== bannerKey) {
+                return bannerTranslated;
+            }
+        }
+
+        // 3. FALLBACK: Если переводов нет, возвращаем хардкодное имя или ID
+        // (Это сработает, если в json файлах перевода пусто)
+        return event.name || event.title || event.id || "Unknown Event";
     }
 </script>
 
@@ -393,115 +395,98 @@
                 style="padding-top: {HEADER_HEIGHT_PX}px;"
             >
                 {#each displayEvents as event}
-                    <div
-                        class="absolute transition-all group"
-                        style="
-                            left: {getPositionX(event.startTime)}px;
-                            width: {getWidth(event.startTime, event.endTime)}px;
-                            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) +
-                            HEADER_HEIGHT_PX}px; 
-                            height: {ROW_HEIGHT}px;
-                            z-index: 20;
-                        "
-                    >
-                        <button
-                            on:click={() => openEvent(event)}
-                            class="relative w-full h-full flex items-center overflow-hidden rounded shadow-sm hover:ring-2 ring-offset-1 ring-offset-transparent transition-all text-left"
-                            style="
-        background-color: {event.color};
-        border-right: 4px solid {event.color};
-    "
-                        >
-                            <div
-                                class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform group-hover:scale-105"
-                            >
-                                <Images
-                                    item={event}
-                                    variant={getVariant(event)}
-                                    className="w-full h-full"
-                                    style="
-                object-position: right {event.iconPosition || 50}%;
-                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
-                mask-image: linear-gradient(to right, transparent 0%, black 50%);
-            "
-                                />
-                            </div>
-
-                            <div
-                                class="absolute inset-0 z-10"
-                                style="background: linear-gradient(90deg, {event.color} 35%, {event.color}D9 50%, transparent 100%);"
-                            ></div>
-
-                            <div
-                                class="relative z-20 flex items-center gap-3 px-3 w-full h-full"
-                            >
-                                {#if event.type === "web"}
-                                    <div
-                                        class="flex items-center gap-1.5 bg-black/20 rounded px-2 py-1 text-white shrink-0"
-                                    >
-                                        <Icon name="link" class="w-4 h-4" />
-                                        <span
-                                            class="text-xs font-bold uppercase"
-                                            >Web</span
-                                        >
-                                    </div>
-                                {/if}
-
-                                <div class="h-6 w-[2px] bg-white/60"></div>
-
-                                <div
-                                    class="flex flex-col justify-center min-w-0"
-                                >
-                                    <span
-                                        class="text-white font-bold text-sm leading-tight truncate drop-shadow-md"
-                                    >
-                                        {getEventName(event)}
-                                    </span>
-                                    <span
-                                        class="text-white/80 text-[10px] uppercase font-bold tracking-wider"
-                                    >
-                                        {new Date(event.startTime).getDate()}
-                                        {$t(
-                                            `months_gen.${new Date(event.startTime).toLocaleString("en-US", { month: "long" }).toLowerCase()}`,
-                                        )}
-                                    </span>
-                                </div>
-                            </div>
-                        </button>
-
-                        <!-- Бейдж для активных событий (осталось времени) -->
-                        {#if now >= convertTime(event.startTime, selectedTimezone) && getRemainingTime(event.endTime, $t)}
-                            <div
-                                class="absolute left-full top-1/2 -translate-y-1/2 ml-3 whitespace-nowrap z-30 flex items-center"
-                            >
-                                <span
-                                    class="text-xs font-bold text-green-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-green-200"
-                                >
-                                    {getRemainingTime(event.endTime, $t)}
-                                </span>
-                                <div
-                                    class="absolute -left-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"
-                                ></div>
-                            </div>
-                        {/if}
-
-                        <!-- Бейдж для будущих событий (начнется через) -->
-                        {#if now < convertTime(event.startTime, selectedTimezone) && getTimeUntilStart(event.startTime, $t)}
-                            <div
-                                class="absolute right-full top-1/2 -translate-y-1/2 mr-3 whitespace-nowrap z-30 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto"
-                            >
-                                <span
-                                    class="text-xs font-bold text-blue-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-blue-200"
-                                >
-                                    {getTimeUntilStart(event.startTime, $t)}
-                                </span>
-                                <div
-                                    class="absolute -right-1 w-2 h-2 bg-blue-500 rounded-full"
-                                ></div>
-                            </div>
-                        {/if}
+    <div
+        class="absolute transition-all group"
+        style="
+            left: {getPositionX(event.startTime)}px;
+            width: {getWidth(event.startTime, event.endTime)}px;
+            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) + HEADER_HEIGHT_PX}px; 
+            height: {ROW_HEIGHT}px;
+            z-index: 20;
+        "
+    >
+        <button
+            on:click={() => openEvent(event)}
+            class="relative block w-full h-full text-left focus:outline-none"
+        >
+            <div 
+                class="absolute inset-0 overflow-hidden rounded shadow-sm hover:ring-2 ring-offset-1 ring-offset-transparent transition-all"
+                style="
+                    background-color: {event.color};
+                    border-right: 4px solid {event.color};
+                "
+            >
+                <div
+                    class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform group-hover:scale-105"
+                >
+                    <Images
+                        item={event}
+                        variant={getVariant(event)}
+                        className="w-full h-full"
+                        style={`
+                            object-position: right ${event.iconPosition || 50}%;
+                            /* Твоя маска прозрачности для картинки */
+                            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
+                            mask-image: linear-gradient(to right, transparent 0%, black 50%);
+                        `}
+                    />
                     </div>
-                {/each}
+
+                <div
+                    class="absolute inset-0 z-10"
+                    style="background: linear-gradient(90deg, {event.color} 35%, {event.color}D9 50%, transparent 100%);"
+                ></div>
+            </div>
+
+            <div class="relative z-20 h-full w-full pointer-events-none">
+                <div 
+                    class="sticky left-0 inline-flex items-center gap-3 px-3 h-full max-w-full pointer-events-auto"
+                >
+                    {#if event.type === "web"}
+                        <div
+                            class="flex items-center gap-1.5 bg-black/20 rounded px-2 py-1 text-white shrink-0"
+                        >
+                            <Icon name="link" class="w-4 h-4" />
+                            <span class="text-xs font-bold uppercase">Web</span>
+                        </div>
+                    {/if}
+
+                    <div class="h-6 w-[2px] bg-white/60 shrink-0"></div>
+
+                    <div class="flex flex-col justify-center min-w-0">
+                        <span class="text-white font-bold text-sm leading-tight truncate drop-shadow-md">
+                            {getEventName(event)}
+                        </span>
+                        <span class="text-white/80 text-[10px] uppercase font-bold tracking-wider">
+                            {new Date(event.startTime).getDate()}
+                            {$t(
+                                `months_gen.${new Date(event.startTime).toLocaleString("en-US", { month: "long" }).toLowerCase()}`
+                            )}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+        {#if now >= convertTime(event.startTime, selectedTimezone) && getRemainingTime(event.endTime, $t)}
+            <div class="absolute left-full top-1/2 -translate-y-1/2 ml-3 whitespace-nowrap z-30 flex items-center">
+                <span class="text-xs font-bold text-green-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-green-200">
+                    {getRemainingTime(event.endTime, $t)}
+                </span>
+                <div class="absolute -left-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            </div>
+        {/if}
+
+        {#if now < convertTime(event.startTime, selectedTimezone) && getTimeUntilStart(event.startTime, $t)}
+            <div class="absolute right-full top-1/2 -translate-y-1/2 mr-3 whitespace-nowrap z-30 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto">
+                <span class="text-xs font-bold text-blue-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-blue-200">
+                    {getTimeUntilStart(event.startTime, $t)}
+                </span>
+                <div class="absolute -right-1 w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        {/if}
+    </div>
+{/each}
             </div>
         </div>
     </div>

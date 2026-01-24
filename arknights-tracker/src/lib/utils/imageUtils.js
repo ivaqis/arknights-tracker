@@ -1,45 +1,56 @@
 // src/lib/utils/imageUtils.js
 
+// 1. Импортируем данные (Svelte сам поймет путь через $lib)
+import { currencies } from '$lib/data/items/currencies';
+import { progression } from '$lib/data/items/progression';
+
+// 2. Вспомогательная функция, чтобы получить ID
+// Она работает и если там объекты [{id: 'lmd'}], и если просто строки ['lmd']
+const extractIds = (list) => {
+    if (!list) return [];
+    return list.map(item => (typeof item === 'string' ? item : item.id));
+};
+
+// 3. Создаем списки ID для проверки
+// Используем Set для мгновенного поиска, но можно и обычный includes
+const CURRENCY_IDS = extractIds(currencies);
+const PROGRESSION_IDS = extractIds(progression);
+
+
 export function normalizeId(str) {
     if (!str) return "";
-    // If it is a URL, return as is (don't strip characters)
     if (str.toString().startsWith("http")) return str;
-    
-    // Keep letters, numbers, _, -, and . (for file extensions)
     return str.toString().replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
 }
 
-/**
- * Path logic.
- * 1. If it's a URL, use it.
- * 2. If it has an image extension (.jpg), use it.
- * 3. Default to .png
- */
 export function getImagePath(idOrName, variant = 'operator-icon') {
     if (!idOrName) return "";
-
-    // 1. Check if it is an external URL (Fix for Banners)
-    if (idOrName.toString().startsWith("http")) {
-        return idOrName;
-    }
+    if (idOrName.toString().startsWith("http")) return idOrName;
 
     const name = normalizeId(idOrName);
-
-    // 2. Check for existing extension (Fix for Events jpg)
-    // RegExp checks for .png, .jpg, .jpeg, .webp at the end of string
-    const withExt = (n) => {
-        if (/\.(png|jpg|jpeg|webp|gif)$/i.test(n)) {
-            return n;
-        }
-        return `${n}.png`;
-    };
+    const withExt = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.png`;
 
     switch (variant) {
         case 'operator-splash':
             return `/images/operators/splash/${withExt(name)}`;
         
         case 'item':
-            return `/images/items/${withExt(name)}`;
+            // --- ТЕПЕРЬ ПРОВЕРЯЕМ ПО ИМПОРТИРОВАННЫМ СПИСКАМ ---
+            
+            // 1. Если есть в валютах -> папка currencies
+            if (CURRENCY_IDS.includes(name)) {
+                return `/images/items/currencies/${withExt(name)}`;
+            }
+
+            // 2. Если есть в материалах -> папка progression
+            if (PROGRESSION_IDS.includes(name)) {
+                return `/images/items/progression/${withExt(name)}`;
+            }
+
+            // 3. Если нигде не нашли, но запросили 'item' —
+            // скорее всего это материал (progression) или лежит в корне items
+            // Давай по дефолту кидать в progression, так как там больше всего предметов
+            return `/images/items/progression/${withExt(name)}`;
         
         case 'currency':
             return `/images/items/currencies/${withExt(name)}`;

@@ -495,7 +495,7 @@
                                                 <Tooltip textKey="status.won"><Icon name="star" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
                                             {/if}
                                         {:else if row.status === "lost"}
-                                            <Tooltip textKey="status.lost"><Icon name="lost" class="w-4 h-4 text-gray-400" /></Tooltip>
+                                            <Tooltip textKey="status.lost"><Icon name="lost" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
                                         {:else if row.status === "guaranteed"}
                                             <Tooltip textKey="status.guaranteed"><Icon name="guaranteed" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
                                         {/if}

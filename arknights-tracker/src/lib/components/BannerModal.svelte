@@ -149,8 +149,11 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
         <div class="absolute bottom-0 left-0 right-0 p-5">
           <h3 class="text-white font-bold text-2xl leading-tight drop-shadow-lg mb-1">
-            {banner.name || (banner.title ? $t(banner.title) : null) || $t(`banners.${banner.id}`) || banner.id}
-          </h3>
+    {$t(`banners.${banner.id}`) !== `banners.${banner.id}` 
+        ? $t(`banners.${banner.id}`) 
+        : (banner.name || banner.id)
+    }
+</h3>
           <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/10 shadow-sm {isActive ? 'bg-green-500/20 text-green-300' : ''} {isEnded ? 'bg-gray-500/40 text-gray-300' : ''} {isUpcoming ? 'bg-blue-500/20 text-blue-300' : ''}">
             <span class="w-1.5 h-1.5 rounded-full {isActive ? 'bg-green-400 animate-pulse' : isEnded ? 'bg-gray-400' : 'bg-blue-400'}"></span>
             {#if isActive}{$t("status.active") || "Active"}{:else if isEnded}{$t("status.ended") || "Ended"}{:else}{$t("status.upcoming") || "Upcoming"}{/if}
