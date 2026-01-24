@@ -19,10 +19,7 @@
     let isGlobalStatsEnabled = true;
 
     const ALLOWED_DOMAINS = [
-        "ak.hypergryph.com",
-        "endfield.gryphline.com",
-        "web-api.hg-game.com",
-        "gs.hg-game.com"
+        "ef-webview.gryphline.com"
     ];
 
     // Состояние ошибки валидации (пустое поле)
