@@ -6,6 +6,7 @@
     import { browser } from "$app/environment";
     import { rawEvents } from "$lib/data/timeline.js";
     import { banners } from "$lib/data/banners.js";
+
     import Icon from "$lib/components/Icons.svelte";
     import BannerModal from "$lib/components/BannerModal.svelte";
     import Images from "$lib/components/Images.svelte";

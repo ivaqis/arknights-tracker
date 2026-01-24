@@ -69,7 +69,7 @@
   },
   "import": {
     "title": "Импорт записей о найме",
-    "instruction": "Вставьте URL из истории поиска (webview), полученный в игре:",
+    "instruction": "Вставьте URL из истории поиска, полученный в игре:",
     "step1": "Запустите Arknights Endfield и откройте историю круток (Gacha Records).",
     "step2_pre": "Скопируйте скрипт ниже, запустите ",
     "step2_ps": "PowerShell",

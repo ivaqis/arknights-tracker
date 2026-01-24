@@ -69,6 +69,7 @@
   },
   "import": {
     "title": "Import Headhunting Records",
+    "instruction": "Paste the URL from the search history obtained in the game:",
     "step1": "Launch Arknights Endfield and open Gacha Records.",
     "step2_pre": "Copy the script below, launch ",
     "step2_ps": "PowerShell",
@@ -77,6 +78,14 @@
     "script_details": "More about the script",
     "step3": "Paste the received link below",
     "placeholder": "https://ef-webview.gryphline.com/...",
+    "startBtn": "Start import",
+    "processing": "Loading...",
+    "status": {
+      "importing_data": "Connecting to Gryphline servers...",
+      "error_invalid_url": "Invalid link. Make sure it's a link from Gryphline.",
+      "error_failed": "Error loading. The token may have expired.",
+      "success": "Data successfully imported!"
+    },
     "description": "Upload a JSON file with your gacha history.",
     "format": "(Currently only Genshin-like API response format is supported).",
     "button": "Choose JSON file",
@@ -142,6 +151,9 @@
     "ongoing": "Ongoing",
     "daysActive": "days active",
     "daysAgo": "days ago",
+    "hoursAgo": "hours ago",
+    "d": "d",
+    "hLeft": "h left",
     "noMaterialsNeeded": "No materials Needed",
     "featuredCharacters": "Featured operators",
     "new": "New"
@@ -171,7 +183,9 @@
   },
   "events": {
     "voyage_to_the_stars": "Voyage to the Stars",
-    "final_prep_orders": "Final Prep Orders"
+    "final_prep_orders": "Final Prep Orders",
+    "awakaningSignIn": "Awakening Sign-In Event",
+    "etchspaceSalvage": "Etchspace Salvage"
   },
   "mouths": {
     "january": "January",
@@ -376,7 +390,9 @@
       "add": "Add",
       "clear": "Clear",
       "delete": "Delete",
-      "defaultName": "Account"
+      "defaultName": "Account",
+      "deleteModalTitle": "Delete account?",
+      "deleteModalDesc": "You are about to delete the account «{name}» and all its data. This action cannot be undone."
     },
     "cloud": {
       "title": "Cloud Synchronization",
@@ -395,6 +411,21 @@
     "feedback": {
       "title": "Feedback",
       "telegram": "Telegram"
+    }
+  },
+  "home": {
+    "promocodes": "Promo codes",
+    "rewards": "Rewards",
+    "duration": "Duration",
+    "current_banners": "Current banners",
+    "disclaimer": "Goyfield.moe is a fan tracker and database. It is not affiliated with or associated with ©Gryphline. All files are the property of their respective owners.",
+    "go_to_tracker": "Go to tracker",
+    "days": "d.",
+    "hours": "h.",
+    "until": "Untill",
+    "copied": "Copied!",
+    "conditions": {
+      "onlyPc": "Only available on PC"
     }
   }
 }

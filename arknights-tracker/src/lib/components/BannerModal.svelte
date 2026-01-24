@@ -3,12 +3,13 @@
   import { t } from "$lib/i18n";
   import { pullData } from "$lib/stores/pulls";
   import { replaceState } from "$app/navigation";
+  import { characters } from "$lib/data/characters";
   
   import Icon from "$lib/components/Icons.svelte";
   import OperatorCard from "$lib/components/OperatorCard.svelte";
   import Images from "$lib/components/Images.svelte";
-  import BannerStats from "$lib/components/BannerStats.svelte"; 
-  import { characters } from "$lib/data/characters";
+  import BannerStats from "$lib/components/BannerStats.svelte";
+  import Button from "$lib/components/Button.svelte";
 
   export let banner = null;
   const dispatch = createEventDispatcher();
