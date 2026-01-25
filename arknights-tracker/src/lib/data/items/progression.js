@@ -172,5 +172,10 @@ export const progression = [
         id: "wulingstone",
         name: "Wulingstone",
         rarity: 5
+    },
+    {
+        id: "vitrodendra",
+        name: "Vitrodendra",
+        rarity: 4
     }
 ]

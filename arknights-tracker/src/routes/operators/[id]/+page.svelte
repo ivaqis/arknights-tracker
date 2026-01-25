@@ -2,28 +2,21 @@
     import { page } from "$app/stores";
     import { t } from "$lib/i18n"; // Убрал goto, если не используется
     import { currentLocale } from "$lib/stores/locale";
-
-    // Данные предметов
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
-    // Данные персонажей (общие)
     import { characters } from "$lib/data/characters.js";
 
-    // Компоненты
     import Icon from "$lib/components/Icons.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import ItemCard from "$lib/components/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
     import SkillCard from "$lib/components/SkillCard.svelte";
     import Images from "$lib/components/Images.svelte";
+    import TalentCard from "$lib/components/TalentCard.svelte";
 
-    // Скиллы
-    // Получаем данные значений скиллов (из charDetails.skills)
     $: skillsValuesData = charDetails.skills || {};
-    // Список ключей скиллов, которые мы хотим отобразить
     const skillKeys = ["basicAttack", "battleSkill", "comboSkill", "ultimate"];
 
-    // Локализация
     const localeModulesEn = import.meta.glob(
         "$lib/locales/en/characters/*.json",
         { eager: true },
@@ -33,66 +26,71 @@
         { eager: true },
     );
     $: charLocale = (() => {
-        // Определяем папку языка (en или ru)
-        // Если локаль не ru, берем en (фоллбек)
         const lang = $currentLocale === "ru" ? "ru" : "en";
-
         const path = `/src/lib/locales/${lang}/characters/${id}.json`;
-
-        // Выбираем правильный набор модулей
         const modules = lang === "ru" ? localeModulesRu : localeModulesEn;
-
-        // Возвращаем дефолтный экспорт или пустой объект
         return modules[path]?.default || {};
     })();
     $: skillsLocale = charLocale.skills || {};
 
-    // 1. БАЗОВЫЕ ДАННЫЕ
     $: id = $page.params.id;
     $: char = Object.values(characters).find((c) => c.id === id) || {};
 
-    const dataModules = import.meta.glob("$lib/data/charactersData/*.json", {
-        eager: true,
-    });
+    const dataModules = import.meta.glob(
+        "/src/lib/data/charactersData/*.json",
+        {
+            eager: true,
+        },
+    );
 
-    // ДЕТАЛЬНЫЕ ДАННЫЕ (ИЗ JSON)
-    // Используем || {}, чтобы не было ошибок при загрузке
     $: charDetails = (() => {
-        // Формируем путь, как он выглядит для Vite
-        // Важно: путь должен совпадать буква в букву с тем, где лежат файлы
-        const path = `/src/lib/data/charactersData/${id}.json`;
+        if (!id) return {};
 
-        const mod = dataModules[path];
+        // 1. Посмотрим, какие файлы вообще нашлись
+        // console.log("Loaded files:", Object.keys(dataModules));
+
+        // Ищем ключ
+        const foundKey = Object.keys(dataModules).find((k) =>
+            k.endsWith(`/${id}.json`),
+        );
+
+        // 2. Посмотрим, нашли ли мы файл для текущего ID
+        // console.log(`Searching for ID: ${id}, Found Key:`, foundKey);
+
+        const mod = foundKey ? dataModules[foundKey] : null;
+
         if (mod) {
-            return mod.default || mod; // JSON контент
+            // 3. Ура, файл есть. Возвращаем.
+            return mod.default || mod;
         }
+
+        console.warn(`Character data not found for ID: ${id}`);
         return {};
     })();
 
-    // ЕДИНАЯ БАЗА ПРЕДМЕТОВ
     $: itemsDb = [...(progression || []), ...(currencies || [])];
 
-    // МАТЕРИАЛЫ
     $: charMaterials = charDetails.materials || {};
 
-    // 2. СТАТЫ (ТЕПЕРЬ РЕАКТИВНЫЕ)
-    // Мы формируем объект charStats на основе загруженных данных (charDetails)
-    // Если данных нет, подставляем нули/дефолт, чтобы сайт не падал
     $: charStats = {
-        mainAttribute: charDetails.mainAttribute || "int",
-        secondaryAttribute: charDetails.secondaryAttribute || "will",
+        mainAttribute: charDetails.mainAttribute,
+        secondaryAttribute: charDetails.secondaryAttribute, // Проверь, нет ли опечатки в JSON (secondaary)
+
+        // Тут оставляем массивы как есть
         hp: charDetails.hp || [0, 0, 0],
         atk: charDetails.atk || [0, 0, 0],
         def: charDetails.def || [0, 0, 0],
+
         attributes: {
-            str: charDetails.str?.[0] || 0,
-            agi: charDetails.agi?.[0] || 0,
-            int: charDetails.int?.[0] || 0,
-            will: charDetails.will?.[0] || 0,
+            // ИСПРАВЛЕНИЕ: Убираем ?.[0].
+            // Теперь мы храним весь массив [9, 10, 11...], а не только число 9.
+            str: charDetails.str || [],
+            agi: charDetails.agi || [],
+            int: charDetails.int || [],
+            will: charDetails.will || [],
         },
     };
 
-    // Хелпер для редкости (звезды)
     function getRarityColor(rarity) {
         if (rarity === 6) return "#F4700C";
         if (rarity === 5) return "#F9B90C";
@@ -100,16 +98,13 @@
         return "#888";
     }
 
-    // Реактивная переменная, чтобы использовать в HTML
     $: rarityColor = getRarityColor(char.rarity || 1);
 
-    // 3. СОСТОЯНИЕ UI
-    let activeTab = "about"; // Текущая вкладка меню
-    let maxLevel = 99;
-    let level = maxLevel; // Дефолт = 99
-    let isTotalMode = true; // Кнопка Total
+    let activeTab = "about";
+    let maxLevel = 90;
+    let level = maxLevel;
+    let isTotalMode = true;
 
-    // Меню навигации слева
     const menuItems = [
         { id: "about", label: "menu.about" },
         { id: "talents", label: "menu.talents" },
@@ -120,9 +115,8 @@
         { id: "audio", label: "menu.audio" },
     ];
 
-    // Хелпер для интерполяции статов (HP/ATK)
     function calculateStat(statArray, currentLvl) {
-        if (!statArray || statArray.length === 0) return "-";
+        if (!statArray || statArray.length === 0) return "0";
         const min = parseFloat(statArray[0]);
         const max = parseFloat(statArray[statArray.length - 1]);
         if (currentLvl === 1) return Math.round(min);
@@ -131,7 +125,6 @@
         return Math.round(min + (max - min) * percent);
     }
 
-    // Хелпер стилей атрибутов
     function getAttrStyles(attrName) {
         if (attrName === charStats.mainAttribute) {
             return {
@@ -151,7 +144,6 @@
         };
     }
 
-    // 4. ЛОГИКА ПОДСЧЕТА МАТЕРИАЛОВ
     $: neededMaterials = (() => {
         if (!charMaterials || Object.keys(charMaterials).length === 0)
             return [];
@@ -159,25 +151,17 @@
         const required = {};
         let phasesNeeded = [];
 
-        // Пороги возвышения
         const t1 = { cap: 20, key: "ascention1" };
         const t2 = { cap: 40, key: "ascention2" };
         const t3 = { cap: 60, key: "ascention3" };
         const t4 = { cap: 80, key: "ascention4" };
 
         if (isTotalMode) {
-            // РЕЖИМ TOTAL: Накопительный итог "С нуля до Цели"
-            // Если цель >= 40, значит мы должны были купить asc1
             if (level >= t1.cap) phasesNeeded.push(t1.key);
             if (level >= t2.cap) phasesNeeded.push(t2.key);
             if (level >= t3.cap) phasesNeeded.push(t3.key);
             if (level >= t4.cap) phasesNeeded.push(t4.key);
-
-            // Если level = 1, ни одно условие не сработает -> массив пуст. Это верно, затрат 0.
         } else {
-            // РЕЖИМ SINGLE: Материалы конкретного этапа
-            // Показываем то, что актуально для диапазона, где стоит слайдер
-
             if (level <= 20) {
                 phasesNeeded.push(t1.key);
             } else if (level <= 40) {
@@ -185,7 +169,6 @@
             } else if (level <= 60) {
                 phasesNeeded.push(t3.key);
             } else {
-                // Все что выше 80 (включая 90-99) требует последнего возвышения
                 phasesNeeded.push(t4.key);
             }
         }
@@ -218,7 +201,6 @@
             });
     })();
 
-    // отслеживание Shift
     let shiftPressed = false;
 
     function handleKeydown(e) {
@@ -229,22 +211,50 @@
         if (e.key === "Shift") shiftPressed = false;
     }
 
-    // Обработчик изменения слайдера
     function handleInput(e) {
         let val = parseInt(e.target.value);
 
         if (shiftPressed) {
-            // Округляем до ближайшего десятка
-            // Math.round(44/10)*10 -> 4.4 -> 4 -> 40
-            // Math.round(46/10)*10 -> 4.6 -> 5 -> 50
             val = Math.round(val / 10) * 10;
-
-            // Защита границ (чтобы не улететь в 0 или 100, если макс 99)
             if (val < 1) val = 1; // Или 1, если мин 1
             if (val > maxLevel) val = maxLevel;
         }
 
         level = val;
+    }
+
+    let showStatsTable = false;
+
+    async function copyStatsTable() {
+        // 1. Заголовки (Убрали DEF)
+        const headers = [
+            $t("stats.level") || "Level",
+            "HP", "ATK", /* DEF удален */ "STR", "AGI", "INT", "WILL"
+        ];
+        
+        // 2. Сбор данных
+        let textData = headers.join("\t") + "\n";
+
+        for (let i = 1; i <= 90; i++) {
+            const row = [
+                i,
+                calculateStat(charStats.hp, i),
+                calculateStat(charStats.atk, i),
+                // calculateStat(charStats.def, i), // Удалено
+                calculateStat(charStats.attributes.str, i),
+                calculateStat(charStats.attributes.agi, i),
+                calculateStat(charStats.attributes.int, i),
+                calculateStat(charStats.attributes.will, i)
+            ];
+            textData += row.join("\t") + "\n";
+        }
+
+        try {
+            await navigator.clipboard.writeText(textData);
+            console.log("Stats copied to clipboard"); 
+        } catch (err) {
+            console.error("Failed to copy", err);
+        }
     }
 </script>
 
@@ -254,25 +264,16 @@
     class="min-h-screen bg-[#F9F9F9] relative overflow-hidden flex flex-col p-8"
 >
     <!-- === ФОНОВЫЙ SPLASH ART (По центру) === -->
-    <!-- fixed или absolute, чтобы был под контентом, но над фоном -->
     <div
         class="fixed inset-0 flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 {activeTab ===
         'about'
             ? 'opacity-100'
-            : 'opacity-100'}"
+            : 'opacity-60'}"
     >
-        <!-- Сдвигаем вправо (translate-x), так как меню слева занимает место -->
-        <!--<img
-            src={char.splashArt}
-            alt="Splash"
-            class="h-[110%] max-w-none object-cover opacity-20 lg:opacity-100 mask-image-gradient"
-        />-->
-        <div class="h-[110%] max-w-none object-cover opacity-100 lg:opacity-100 mask-image-gradient">
-            <Images
-                id={char.id}
-                variant="operator-splash"
-                size="100%"
-            />
+        <div
+            class="h-[110%] max-w-none object-cover opacity-100 lg:opacity-100 mask-image-gradient"
+        >
+            <Images id={char.id} variant="operator-splash" size="100%" />
         </div>
         <!-- Градиент, чтобы текст читался (опционально) -->
         <div
@@ -483,14 +484,16 @@
                     <div
                         class="bg-[#333] rounded h-[36px] flex items-center justify-between px-4 text-white shadow-sm"
                     >
-                        <span class="font-bold text-sm"
-                            >{$t("stats.attributes") || "Attributes"}</span
-                        >
+                        <span class="font-bold text-sm">
+                            {$t("stats.attributes") || "Attributes"}
+                        </span>
+
                         <button
+                            on:click={() => (showStatsTable = true)}
                             class="flex items-center gap-2 text-sm font-normal text-gray-300 hover:text-white transition-colors"
                         >
                             <div class="w-[1px] h-4 bg-gray-500 mx-1"></div>
-                            {$t("stats.table") || "Table"}
+                            <span>{$t("stats.table") || "Table"}</span>
                         </button>
                     </div>
 
@@ -533,7 +536,10 @@
                                 <span
                                     class="text-2xl font-sdk font-bold text-[#21272C]"
                                 >
-                                    {charStats.attributes[attr]}
+                                    {calculateStat(
+                                        charStats.attributes[attr],
+                                        level,
+                                    )}
                                 </span>
                             </div>
                         {/each}
@@ -660,7 +666,7 @@
             {:else if activeTab === "skills"}
                 <!-- === ВКЛАДКА SKILLS (Новый контент) === -->
 
-                <div class="flex flex-col gap-6 animate-fadeIn w-full">
+                <div class="flex flex-col gap-5 animate-fadeIn w-full">
                     <h2
                         class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
                     >
@@ -681,6 +687,96 @@
                         {/if}
                     {/each}
                 </div>
+            {:else if activeTab === "talents"}
+                <div class="flex flex-col gap-5 animate-fadeIn">
+                    <section>
+                        {#if skillsLocale?.indicator || charMaterials?.indicator}
+                            <h2
+                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                            >
+                                {$t("menu.indicators") || "Indicators"}
+                            </h2>
+                            <TalentCard
+                                charId={id}
+                                type="indicator"
+                                dataKey="indicator"
+                                maxLevels={4}
+                                materials={charMaterials?.indicator}
+                                localizedData={skillsLocale?.indicator}
+                            />
+                        {/if}
+                    </section>
+
+                    <section>
+                        {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
+                            <h2
+                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                            >
+                                {$t("menu.talents") || "Talents"}
+                            </h2>
+                        {/if}
+
+                        <div class="flex flex-col gap-4">
+                            {#if skillsLocale?.talent1 || charMaterials?.talent1}
+                                <TalentCard
+                                    charId={id}
+                                    type="talent"
+                                    dataKey="talent1"
+                                    maxLevels={2}
+                                    materials={charMaterials?.talent1}
+                                    localizedData={skillsLocale?.talent1}
+                                />
+                            {/if}
+
+                            {#if skillsLocale?.talent2 || charMaterials?.talent2}
+                                <TalentCard
+                                    charId={id}
+                                    type="talent"
+                                    dataKey="talent2"
+                                    maxLevels={2}
+                                    materials={charMaterials?.talent2}
+                                    localizedData={skillsLocale?.talent2}
+                                />
+                            {/if}
+                        </div>
+                    </section>
+
+                    <section>
+                        {#if skillsLocale?.baseSkill1 || charMaterials?.baseSkill1 || skillsLocale?.baseSkill2 || charMaterials?.baseSkill2}
+                            <h2
+                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                            >
+                                {$t("menu.baseSkills") || "Base Skills"}
+                            </h2>
+                        {/if}
+
+                        <div class="flex flex-col gap-4">
+                            {#if skillsLocale?.baseSkill1 || charMaterials?.baseSkill1}
+                                <TalentCard
+                                    charId={id}
+                                    type="base"
+                                    index={0}
+                                    dataKey="baseSkill1"
+                                    maxLevels={2}
+                                    materials={charMaterials?.baseSkill1}
+                                    localizedData={skillsLocale?.baseSkill1}
+                                />
+                            {/if}
+
+                            {#if skillsLocale?.baseSkill2 || charMaterials?.baseSkill2}
+                                <TalentCard
+                                    charId={id}
+                                    type="base"
+                                    index={1}
+                                    dataKey="baseSkill2"
+                                    maxLevels={2}
+                                    materials={charMaterials?.baseSkill2}
+                                    localizedData={skillsLocale?.baseSkill2}
+                                />
+                            {/if}
+                        </div>
+                    </section>
+                </div>
             {:else}
                 <!-- Заглушка для других вкладок -->
                 <div class="text-white opacity-50 text-xl font-bold mt-10">
@@ -690,6 +786,99 @@
         </div>
     </div>
 </div>
+
+{#if showStatsTable}
+    <div 
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn outline-none"
+        on:click={(e) => {
+            // "Нормальная" проверка: кликнули ли мы по самому фону?
+            if (e.target === e.currentTarget) {
+                showStatsTable = false;
+            }
+        }}
+        on:keydown={(e) => { 
+            if (e.key === 'Escape') showStatsTable = false; 
+        }}
+    >
+        <div 
+            class="bg-white rounded-xl w-full max-w-4xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden cursor-auto"
+        >
+            <div class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white shrink-0">
+                <h3 class="font-bold text-lg">
+                    {$t("stats.attributesTable") || "Attributes Table (1-90)"}
+                </h3>
+                
+                <div class="flex items-center gap-3">
+                    <button 
+                        on:click={copyStatsTable}
+                        class="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded transition-colors text-sm font-bold border border-white/20"
+                    >
+                        <Icon name="copy" class="w-4 h-4" />
+                        {$t("common.copy") || "Copy"}
+                    </button>
+
+                    <button 
+                        on:click={() => showStatsTable = false}
+                        class="p-1.5 hover:bg-white/10 rounded-full transition-colors"
+                    >
+                        <Icon name="close" class="w-6 h-6" /> 
+                    </button>
+                </div>
+            </div>
+
+            <div class="overflow-auto custom-scrollbar bg-white p-0">
+                <table class="w-full text-center border-collapse">
+                    <thead class="bg-gray-100 font-bold sticky top-0 z-10 shadow-sm text-sm">
+                        <tr>
+                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.level") || "Level"}</th>
+                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.baseHp") || "Base HP"}</th>
+                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.baseAtk") || "Base ATK"}</th>
+
+                            {#each ["str", "agi", "int", "will"] as attr}
+                                {@const isMain = attr === charStats.mainAttribute}
+                                {@const isSec = attr === charStats.secondaryAttribute}
+                                
+                                <th class="py-3 px-2 border-b align-middle">
+                                    <div class="flex justify-center w-full">
+                                        <Tooltip 
+                                            text={$t(isMain ? "stats.mainAttr" : isSec ? "stats.secAttr" : "")}
+                                        >
+                                            <div class="
+                                                px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider
+                                                {isMain ? 'bg-[#FFEE00] text-[#21272C] shadow-sm' : ''}
+                                                {isSec ? 'bg-[#3B3B3B] text-white shadow-sm' : ''}
+                                                {!isMain && !isSec ? 'text-gray-600' : ''}
+                                            ">
+                                                {$t(`stats.${attr}`) || attr}
+                                            </div>
+                                        </Tooltip>
+                                    </div>
+                                </th>
+                            {/each}
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm font-nums text-gray-800">
+                        {#each Array(90) as _, i}
+                            {@const lvl = i + 1}
+                            <tr class="hover:bg-yellow-50 transition-colors border-b border-gray-50 even:bg-gray-50/50">
+                                <td class="py-2 px-2 font-bold text-gray-400 bg-gray-50/50">{lvl}</td>
+                                <td class="py-2 px-2 font-bold">{calculateStat(charStats.hp, lvl)}</td>
+                                <td class="py-2 px-2 font-bold">{calculateStat(charStats.atk, lvl)}</td>
+                                <td class="py-2 px-2">{calculateStat(charStats.attributes.str, lvl)}</td>
+                                <td class="py-2 px-2">{calculateStat(charStats.attributes.agi, lvl)}</td>
+                                <td class="py-2 px-2">{calculateStat(charStats.attributes.int, lvl)}</td>
+                                <td class="py-2 px-2">{calculateStat(charStats.attributes.will, lvl)}</td>
+                            </tr>
+                        {/each}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{/if}
 
 <style>
     /* Маска для плавного исчезновения ног персонажа */

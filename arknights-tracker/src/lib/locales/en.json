@@ -271,7 +271,9 @@
     "combatSkills": "Combat Skills",
     "artwork": "Artwork",
     "files": "Files",
-    "audio": "Audio"
+    "audio": "Audio",
+    "indicators": "Indicators",
+    "baseSkills": "Factory Skills"
   },
   "bio": {
     "faction": "Faction",
@@ -292,7 +294,8 @@
     "table": "Table",
     "materials": "Materials",
     "maxed": "Maxed",
-    "level": "Level"
+    "level": "Level",
+    "attributesTable": "Attributes table"
   },
   "bioValues": {
     "Unknown": "Unknown",
@@ -361,7 +364,8 @@
     "auronyx": "Auronyx",
     "umbronyx": "Umbronyx",
     "igneosite": "Igneosite",
-    "wulingstone": "Wulingstone"
+    "wulingstone": "Wulingstone",
+    "vitrodendra": "Vitrodendra"
   },
   "common": {
     "copy": "Copy",
@@ -390,8 +394,10 @@
       "add": "Add",
       "clear": "Clear",
       "delete": "Delete",
+      "deleteAccount": "Delete Account",
       "defaultName": "Account",
       "deleteModalTitle": "Delete account?",
+      "cancel": "Cancel",
       "deleteModalDesc": "You are about to delete the account «{name}» and all its data. This action cannot be undone."
     },
     "cloud": {
@@ -426,6 +432,7 @@
     "copied": "Copied!",
     "conditions": {
       "onlyPc": "Only available on PC"
-    }
+    },
+    "noActiveCodes": "No active codes"
   }
 }

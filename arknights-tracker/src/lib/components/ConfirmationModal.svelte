@@ -1,13 +1,13 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { fade, scale } from "svelte/transition";
+  import { t } from "$lib/i18n";
   import Button from "$lib/components/Button.svelte";
 
   export let isOpen = false;
-  export let title = "Are you sure?";
+  export let title = "";
   export let description = "";
-  export let confirmText = "Confirm";
-  export let cancelText = "Cancel";
+  export let confirmText = "";
   export let isDestructive = false; // Если true, кнопка будет красной (если Button поддерживает)
 
   const dispatch = createEventDispatcher();
@@ -52,13 +52,13 @@
       <div class="flex gap-3 justify-end">
         <div class="w-auto">
           <Button variant="round" color="white" onClick={onClose}>
-            {cancelText}
+            {$t("settings.account.cancel")}
           </Button>
         </div>
         <div class="w-auto">
           <Button
             variant="round"
-            color={isDestructive ? "black" : "yellow"}
+            color={isDestructive ? "red" : "yellow"}
             onClick={onConfirm}
           >
             {confirmText}

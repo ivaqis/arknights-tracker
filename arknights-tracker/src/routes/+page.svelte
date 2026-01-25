@@ -20,36 +20,34 @@
   const allItems = [...currencies, ...progression];
 
   function getRarityStyle(id) {
-        // Находим предмет в базе
-        const item = allItems.find(i => i.id === id);
-        
-        // Если не нашли или рарити нет — считаем, что это обычный (3★ или ниже)
-        const rarity = item?.rarity || 3;
+    // Находим предмет в базе
+    const item = allItems.find((i) => i.id === id);
 
-        // Arknights цвета:
-        // 5 = Золотой (Легендарный)
-        // 4 = Фиолетовый (Эпический)
-        // 3 = Синий (Редкий)
-        // 1-2 = Серый/Зеленый (Обычный)
+    // Если не нашли или рарити нет — считаем, что это обычный (3★ или ниже)
+    const rarity = item?.rarity || 3;
 
-        switch (rarity) {
-            case 5:
-            case 6: // На всякий случай, если будут 6★ предметы
-                return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500";
-            
-            case 4:
-                return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500";
-            
-            case 3:
-                return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500";
-            
-            default:
-                // Серый для 1-2 рарити
-                return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400";
-        }
+    // Arknights цвета:
+    // 5 = Золотой (Легендарный)
+    // 4 = Фиолетовый (Эпический)
+    // 3 = Синий (Редкий)
+    // 1-2 = Серый/Зеленый (Обычный)
+
+    switch (rarity) {
+      case 5:
+      case 6: // На всякий случай, если будут 6★ предметы
+        return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500";
+
+      case 4:
+        return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500";
+
+      case 3:
+        return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500";
+
+      default:
+        // Серый для 1-2 рарити
+        return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400";
     }
-
-    
+  }
 
   // Фильтруем и сортируем активные баннеры
   $: activeBanners = banners
@@ -116,30 +114,30 @@
   }
 
   function sortRewards(rewards) {
-        return [...rewards].sort((a, b) => {
-            // 1. Находим объекты предметов в нашей базе (allItems)
-            const itemA = allItems.find(i => i.id === a.id);
-            const itemB = allItems.find(i => i.id === b.id);
+    return [...rewards].sort((a, b) => {
+      // 1. Находим объекты предметов в нашей базе (allItems)
+      const itemA = allItems.find((i) => i.id === a.id);
+      const itemB = allItems.find((i) => i.id === b.id);
 
-            // 2. Получаем рарити (если не нашли, считаем 0)
-            const rarityA = itemA?.rarity || 0;
-            const rarityB = itemB?.rarity || 0;
+      // 2. Получаем рарити (если не нашли, считаем 0)
+      const rarityA = itemA?.rarity || 0;
+      const rarityB = itemB?.rarity || 0;
 
-            // 3. Сравнение по РЕДКОСТИ (от большего к меньшему)
-            if (rarityB !== rarityA) {
-                return rarityB - rarityA;
-            }
+      // 3. Сравнение по РЕДКОСТИ (от большего к меньшему)
+      if (rarityB !== rarityA) {
+        return rarityB - rarityA;
+      }
 
-            // 4. (Дополнительно) Если редкость одинаковая — сортируем по КОЛИЧЕСТВУ
-            // Например: 2000 LMD будут выше, чем 5 каких-то карт опыта той же редкости
-            if (b.count !== a.count) {
-                return b.count - a.count;
-            }
-            
-            // 5. Если и это одинаковое — оставляем как есть
-            return 0;
-        });
-    }
+      // 4. (Дополнительно) Если редкость одинаковая — сортируем по КОЛИЧЕСТВУ
+      // Например: 2000 LMD будут выше, чем 5 каких-то карт опыта той же редкости
+      if (b.count !== a.count) {
+        return b.count - a.count;
+      }
+
+      // 5. Если и это одинаковое — оставляем как есть
+      return 0;
+    });
+  }
 
   let copiedCode = null;
   async function copyCode(code) {
@@ -180,10 +178,10 @@
 
   <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
     <div
-      class="lg:col-span-5 bg-white/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-100 overflow-hidden flex flex-col h-full max-h-[500px]"
+      class="lg:col-span-5 bg-white/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col h-full max-h-[500px]"
     >
       <div
-        class="grid grid-cols-12 bg-gray-50 border-b border-gray-200 py-3 px-4 text-xs font-bold text-gray-500"
+        class="grid grid-cols-12 bg-white border-b border-gray-200 py-3 px-4 text-xs font-bold text-gray-700"
       >
         <div class="col-span-5">{$t("home.promocodes")}</div>
         <div class="col-span-4">{$t("home.rewards")}</div>
@@ -193,7 +191,7 @@
       <div class="overflow-y-auto custom-scrollbar flex-1 p-2">
         {#if activePromocodes.length === 0}
           <div class="text-center py-10 text-gray-400 text-sm">
-            No active codes
+            {$t("home.noActiveCodes")}
           </div>
         {:else}
           {#each activePromocodes as promo}
@@ -258,26 +256,27 @@
               </div>
 
               <div class="col-span-4 flex flex-wrap gap-2 items-center">
-    {#each sortRewards(promo.rewards) as reward}
-        <Tooltip text={$t(`items.${reward.id}`)}>
-            
-            <div 
-                class="flex items-center rounded-full px-2 py-0.5 border transition-colors {getRarityStyle(reward.id)}"
-            >
-                <span class="text-xs font-bold mr-1">
-                    {reward.count}
-                </span>
+                {#each sortRewards(promo.rewards) as reward}
+                  <Tooltip text={$t(`items.${reward.id}`)}>
+                    <div
+                      class="flex items-center rounded-full px-2 py-0.5 border transition-colors {getRarityStyle(
+                        reward.id,
+                      )}"
+                    >
+                      <span class="text-xs font-bold mr-1">
+                        {reward.count}
+                      </span>
 
-                <Images
-                    id={reward.id}
-                    variant="item"
-                    size={20}
-                    className="object-contain"
-                />
-            </div>
-        </Tooltip>
-    {/each}
-</div>
+                      <Images
+                        id={reward.id}
+                        variant="item"
+                        size={20}
+                        className="object-contain"
+                      />
+                    </div>
+                  </Tooltip>
+                {/each}
+              </div>
 
               <div class="col-span-3 text-right">
                 <span class="text-xs font-medium text-gray-500 block">

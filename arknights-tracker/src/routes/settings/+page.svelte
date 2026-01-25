@@ -268,7 +268,7 @@
                 </Button>
                 <Button
                     variant="roundSmall"
-                    color="white"
+                    color="red"
                     onClick={openClearModal}
                 >
                     <div class="flex items-center gap-2 px-2 text-red-500">
@@ -280,7 +280,7 @@
                 {#if $accounts.length > 1}
                     <Button
                         variant="roundSmall"
-                        color="white"
+                        color="red"
                         onClick={openDeleteModal}
                     >
                         <div class="flex items-center gap-2 px-2 text-red-500">
@@ -383,8 +383,8 @@
 <ConfirmationModal
     isOpen={showClearModal}
     title={$t("settings.account.clear") + "?"}
-    description="This will permanently delete all pull history for the current account. This action cannot be undone."
-    confirmText="Yes, clear data"
+    description={$t("settings.account.clearDescription")}
+    confirmText={$t("settings.account.yesClear")}
     isDestructive={true}
     on:confirm={confirmClear}
     on:close={() => (showClearModal = false)}
@@ -397,7 +397,7 @@
         "{name}",
         accountToDeleteName,
     )}
-    confirmText="Delete Account"
+    confirmText={$t("settings.account.deleteAccount")}
     isDestructive={true}
     on:confirm={confirmDelete}
     on:close={() => (showDeleteModal = false)}
