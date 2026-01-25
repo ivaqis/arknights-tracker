@@ -25,7 +25,7 @@ app.use(express.json({ limit: '10mb' }));
 const GAME_API_URL = 'https://ef-webview.gryphline.com/api/record/char';
 
 const POOL_TYPES = [
-    "E_CharacterGachaPoolType_New-player",
+    "E_CharacterGachaPoolType_Beginner",
     "E_CharacterGachaPoolType_Standard",
     "E_CharacterGachaPoolType_Special"
 ];
@@ -149,7 +149,7 @@ app.post('/api/import', async (req, res) => {
 });
 
 function mapPoolTypeToShort(longType) {
-    if (longType.includes('New-player')) return 'new-player';
+    if (longType.includes('Beginner')) return 'new-player';
     if (longType.includes('Standard')) return 'standard';
     if (longType.includes('Special')) return 'special';
     return 'unknown';
@@ -223,7 +223,7 @@ function calculateMath(pulls, bannerId) {
     let bannerConfig = BANNERS.find(b => b.id === bannerId);
     // Fallback логика поиска
     if (!bannerConfig) {
-         if (bannerId.includes('new')) bannerConfig = BANNERS.find(b => b.type === 'new-player');
+         if (bannerId.includes('new')) bannerConfig = BANNERS.find(b => b.type === 'beginner');
          else if (bannerId.includes('special')) bannerConfig = BANNERS.find(b => b.type === 'special');
          else bannerConfig = BANNERS.find(b => b.type === 'standard');
     }
