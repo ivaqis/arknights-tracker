@@ -3,18 +3,16 @@
   import { pullData } from "$lib/stores/pulls";
   import { bannerTypes } from "$lib/data/bannerTypes";
   import { fetchGlobalStats } from "$lib/api";
-  import { browser } from "$app/environment"; // <--- IMPORT THIS
+  import { browser } from "$app/environment";
   import Button from "./Button.svelte";
   import Icon from "./Icons.svelte";
 
-  // Config tabs
   $: ratingTabs = [...bannerTypes]
     .filter((b) => b.showInRating)
     .sort((a, b) => a.order - b.order);
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
 
-  // --- LOCAL STAT CALCULATION ---
   $: currentStats = $pullData[activeTab] || {
     pulls: [],
     total: 0,
@@ -38,38 +36,23 @@
     return (totalPulls / fiveStars.length).toFixed(1);
   })();
 
-  // --- GLOBAL RANKING DATA ---
   let rankTotal = null;
   let rankLuck6 = null;
   let rank5050 = null;
   let rankLuck5 = null;
 
-  // --- FIX: Run fetch ONLY in browser ---
   $: if (browser && activeTab) {
     loadRankings(activeTab);
   }
 
   async function loadRankings(poolId) {
-    rankTotal = null; rankLuck6 = null; rank5050 = null;
-
-    // Читаем UID из localStorage
+    rankTotal = null;
     const uid = localStorage.getItem("user_uid");
-
-    // Если пользователь еще ни разу не импортировал, uid не будет
-    if (!uid) {
-        // Можно тут ничего не делать, тогда будет "---"
-        // Или console.log("Сначала сделайте импорт");
-        return; 
-    }
-    
-    if (!poolId) return;
-
+    if (!uid) return;
     const data = await fetchGlobalStats(uid, poolId);
 
-    if (data && data.found) {
-      rankTotal = data.rankTotal;
-      rankLuck6 = data.rankLuck6;
-      rank5050 = data.rank5050;
+    if (data) {
+      console.log("Server Stats:", data);
     }
   }
 

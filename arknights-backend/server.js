@@ -3,6 +3,7 @@ const cors = require('cors');
 const axios = require('axios');
 const { PrismaClient } = require('@prisma/client');
 const { URL, URLSearchParams } = require('url');
+const BANNERS = require('./banners.js');
 
 const app = express();
 let prisma;
@@ -35,12 +36,9 @@ app.post('/api/import', async (req, res) => {
     const { rawUrl, saveStats } = req.body;
     const startTime = Date.now();
     const parsedUrl = new URL(rawUrl);
-    // Проверка домена
     if (!parsedUrl.hostname.endsWith('hg-game.com') && !parsedUrl.hostname.endsWith('gryphline.com')) {
          return res.status(400).json({ error: "Invalid domain" });
     }
-
-    
 
     try {
         const parsedUrl = new URL(rawUrl);
@@ -67,7 +65,6 @@ app.post('/api/import', async (req, res) => {
                     token, lang, server_id: serverId, pool_type: poolType
                 });
 
-                // [FIX] ИСПРАВЛЕНО: используем seq_id вместо last_id
                 if (lastId) {
                     params.append('seq_id', lastId);
                 }
@@ -86,7 +83,6 @@ app.post('/api/import', async (req, res) => {
 
                     const list = result.data?.list || [];
 
-                    // Фильтруем дубликаты (защита на случай странностей API)
                     const newItems = list.filter(item => !visitedIds.has(item.seqId));
 
                     if (list.length > 0 && newItems.length === 0) {
@@ -111,7 +107,6 @@ app.post('/api/import', async (req, res) => {
                         hasMore = false;
                     }
                     else if (list.length > 0) {
-                        // Берем seqId последнего элемента, чтобы запросить следующую страницу
                         lastId = list[list.length - 1].seqId;
                     } else {
                         hasMore = false;
@@ -133,7 +128,6 @@ app.post('/api/import', async (req, res) => {
         console.log(`\n--- Import Finished ---`);
         console.log(`Total unique pulls: ${allPulls.length}`);
 
-        // Сохранение статистики (если БД подключена)
         if (saveStats && prisma && allPulls.length > 0) {
             const pseudoUid = "u_" + token.substring(0, 15);
             updateGlobalStatsBatch(pseudoUid, allPulls)
@@ -165,23 +159,17 @@ async function updateGlobalStatsBatch(uid, allPulls) {
     if (!prisma) return;
 
     try {
-        // 1. Убеждаемся, что пользователь существует
         await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
-        // 2. Группируем и определяем Banner ID
         const pullsToInsert = allPulls.map(p => {
-            // API игры отдает время в секундах, JS работает в миллисекундах
             const pullTimeMs = p.timestamp * 1000; 
             
-            // Ищем подходящий баннер
-            // Условие: Тип совпадает И время крутки попадает в интервал баннера
             const matchedBanner = BANNERS.find(b => 
-                b.type === p.poolId && // 'special' === 'special'
+                b.type === p.poolId && 
                 pullTimeMs >= b.startTime &&
                 (!b.endTime || pullTimeMs <= b.endTime)
             );
 
-            // Если нашли - берем ID баннера, если нет - оставляем просто тип пула (fallback)
             const realBannerId = matchedBanner ? matchedBanner.id : p.poolId;
 
             return {
@@ -189,17 +177,14 @@ async function updateGlobalStatsBatch(uid, allPulls) {
                 uid: uid,
                 name: p.name,
                 rarity: p.rarity,
-                time: new Date(pullTimeMs), // Для Prisma Date object
+                time: new Date(pullTimeMs),
                 poolId: p.poolId, 
-                bannerId: realBannerId, // <--- ВОТ ЗДЕСЬ ТЕПЕРЬ БУДЕТ "special_banner_01"
+                bannerId: realBannerId,
                 pity: 0, 
                 isGuaranteed: false 
             };
         });
-        
-        // 
 
-        // 3. Массовая вставка (Цикл для SQLite)
         for (const pull of pullsToInsert) {
             await prisma.pull.upsert({
                 where: { id: pull.id },
@@ -208,10 +193,6 @@ async function updateGlobalStatsBatch(uid, allPulls) {
             });
         }
         
-        // 4. Обновляем статистику пользователя... (код без изменений)
-        const pools = ['beginner', 'standard', 'special'];
-        // ... твой код обновления статистики ...
-        
         console.log(`[DB] Saved ${pullsToInsert.length} pulls for ${uid}`);
 
     } catch (e) {
@@ -219,7 +200,7 @@ async function updateGlobalStatsBatch(uid, allPulls) {
     }
 }
 
-app.get('/api/global/stats', async (req, res) => {
+app.get('/api/rankings/data', async (req, res) => {
     try {
         const { bannerId } = req.query;
 
@@ -227,38 +208,35 @@ app.get('/api/global/stats', async (req, res) => {
             return res.status(400).json({ code: 1, message: "Banner ID is required" });
         }
 
-        // 1. Общее количество круток на этом баннере
         const totalPulls = await prisma.pull.count({
             where: { bannerId: bannerId }
         });
 
-        // 2. Количество пользователей (уникальные uid)
-        // Prisma пока не умеет делать count(distinct) легко в sqlite/mysql одинаково,
-        // но группировка работает надежно
-        const uniqueUsers = await prisma.pull.groupBy({
+        const uniqueUsersGroup = await prisma.pull.groupBy({
             by: ['uid'],
             where: { bannerId: bannerId },
         });
-        const totalUsers = uniqueUsers.length;
+        const totalUsers = uniqueUsersGroup.length;
 
-        // 3. Статистика по редкости (6★ и 5★)
         const rarityStats = await prisma.pull.groupBy({
             by: ['rarity'],
             where: { bannerId: bannerId },
             _count: { rarity: true }
         });
 
-        const count6 = rarityStats.find(r => r.rarity === 6)?._count.rarity || 0;
-        const count5 = rarityStats.find(r => r.rarity === 5)?._count.rarity || 0;
+        const getCount = (r) => {
+            const found = rarityStats.find(item => item.rarity === r);
+            return found && found._count ? found._count.rarity : 0;
+        };
 
-        // 4. Медиана 6★ (берем все 6★ и их pity)
-        // Это может быть тяжело, если круток миллионы, но для тысяч пойдет
+        const count6 = getCount(6);
+        const count5 = getCount(5);
+
         const pulls6 = await prisma.pull.findMany({
             where: { bannerId: bannerId, rarity: 6 },
             select: { pity: true, name: true }
         });
 
-        // Считаем медиану
         const pities = pulls6.map(p => p.pity).sort((a, b) => a - b);
         let median6 = 0;
         if (pities.length > 0) {
@@ -266,15 +244,6 @@ app.get('/api/global/stats', async (req, res) => {
             median6 = pities.length % 2 !== 0 ? pities[mid] : (pities[mid - 1] + pities[mid]) / 2;
         }
 
-        // 5. Featured статистика (Только если передан featuredName)
-        // Мы можем получить имя персонажа из списка featured6 в баннере на фронте, 
-        // но серверу лучше знать имя. Для простоты, посчитаем просто % выпадения Rate UP
-        // (сложный расчет 50/50 требует истории, сделаем упрощенный: сколько featured среди всех 6*)
-        
-        // Для этого нам нужно знать, кто featured. 
-        // Вариант А: Фронт передает имя. Вариант Б: Просто возвращаем список 6* имен и фронт считает.
-        // Выберем Вариант Б для гибкости.
-        
         const sixStarNames = {};
         pulls6.forEach(p => {
             sixStarNames[p.name] = (sixStarNames[p.name] || 0) + 1;
@@ -288,7 +257,7 @@ app.get('/api/global/stats', async (req, res) => {
                 median6,
                 count6,
                 count5,
-                sixStarNames // Фронт сам решит, кто тут featured и посчитает winrate
+                sixStarNames
             }
         });
 

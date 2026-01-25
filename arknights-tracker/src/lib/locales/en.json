@@ -404,7 +404,7 @@
     },
     "cloud": {
       "title": "Cloud Synchronization",
-      "description": "Goyfield syncs data with Google Drive to save your pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only access its own files.",
+      "description": "Goyfield syncs data with Google to save your pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only access its own files.",
       "btn": "Sign in with Google Drive",
       "connected": "Connected",
       "disconnected": "Disconnected",
