@@ -1,39 +1,99 @@
 <script>
     import { t } from "$lib/i18n";
-    import { get } from "svelte/store"; // <--- ВАЖНО: Добавлен импорт get
+    import { get } from "svelte/store";
+    import { onMount } from "svelte";
+    import { accountStore } from "$lib/stores/accounts";
+    import { pullData } from "$lib/stores/pulls";
+    import { analytics } from "$lib/firebase";
+    import { logEvent } from "firebase/analytics";
     import Select from "$lib/components/Select.svelte";
     import Icon from "$lib/components/Icons.svelte";
     import Button from "$lib/components/Button.svelte";
     import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
+    import SyncModal from "$lib/components/SyncModal.svelte";
 
-    import { accountStore } from "$lib/stores/accounts";
-    import { pullData } from "$lib/stores/pulls";
+    let isEmailVisible = false;
+    let emailTimer;
+
+    function handleEmailClick() {
+        isEmailVisible = !isEmailVisible;
+        if (isEmailVisible) clearTimeout(emailTimer); // Если открыли вручную, сбрасываем старый таймер
+    }
+
+    function handleEmailLeave() {
+        if (isEmailVisible) {
+            // Запускаем таймер на 1.5 секунды при уходе мышки
+            emailTimer = setTimeout(() => {
+                isEmailVisible = false;
+            }, 1500);
+        }
+    }
+
+    function handleEmailEnter() {
+        // Если вернули мышку на почту до того, как она исчезла — отменяем таймер
+        clearTimeout(emailTimer);
+    }
+
+    function trackClick() {
+        if (analytics) {
+            logEvent(analytics, "button_click");
+        }
+    }
+
+    import {
+        user,
+        login,
+        logout,
+        syncStatus,
+        checkSync,
+        uploadLocalData,
+        initAuth,
+    } from "$lib/stores/cloudStore";
 
     const { accounts, selectedId } = accountStore;
 
-    // --- Логика JSON Бэкапа (FULL SYSTEM) ---
+    onMount(() => {
+        initAuth();
+    });
+
+    function handleSync() {
+        if ($syncStatus === "synced" || $syncStatus === "local_newer") {
+            uploadLocalData();
+        } else {
+            checkSync($user);
+        }
+    }
+
+    let lastSyncDate = "";
+    $: if ($syncStatus && typeof window !== "undefined") {
+        const ts = parseInt(localStorage.getItem("ark_last_sync") || "0");
+        lastSyncDate = ts > 0 ? new Date(ts).toLocaleString() : "-";
+    }
+
+    $: maskedName = $user?.displayName
+        ? $user.displayName.substring(
+              0,
+              Math.ceil($user.displayName.length / 2),
+          ) + "***"
+        : "";
+
     let fileInputJson;
 
-    // ЭКСПОРТ ВСЕХ АККАУНТОВ
     function handleExportBackup() {
-        // 1. Берем список всех аккаунтов
         const currentAccounts = get(accounts);
         const currentSelectedId = get(selectedId);
 
-        // 2. Формируем структуру полного бэкапа
         const fullBackup = {
-            type: "ark_tracker_full_backup", // Маркер типа файла
+            type: "ark_tracker_full_backup",
             version: 1,
             timestamp: new Date().toISOString(),
             meta: {
                 accounts: currentAccounts,
                 selectedId: currentSelectedId,
             },
-            // Здесь будут лежать данные круток: { "acc_id": { ...данные... }, "acc_id_2": ... }
             data: {},
         };
 
-        // 3. Проходимся по каждому аккаунту и достаем его данные из LocalStorage
         currentAccounts.forEach((acc) => {
             const key = `ark_tracker_data_${acc.id}`;
             const rawData = localStorage.getItem(key);
@@ -45,18 +105,15 @@
                         `Error exporting data for account ${acc.id}`,
                         e,
                     );
-                    // Если данные битые, сохраняем пустую структуру, чтобы не ломать JSON
                     fullBackup.data[acc.id] = {
                         standard: { pulls: [], stats: {} },
                     };
                 }
             } else {
-                // Если данных нет (новый акк), пишем null или пустой объект
                 fullBackup.data[acc.id] = null;
             }
         });
 
-        // 4. Скачиваем
         const dataStr =
             "data:text/json;charset=utf-8," +
             encodeURIComponent(JSON.stringify(fullBackup, null, 2));
@@ -79,14 +136,14 @@
 
     // ИМПОРТ (Умное определение типа)
     function handleFileChangeJson(event) {
+        // ... (Твой код импорта без изменений) ...
         const file = event.target.files[0];
         if (!file) return;
 
-        // 1. ЗАЩИТА: Проверка размера файла (например, макс 10MB)
-        const MAX_SIZE = 10 * 1024 * 1024; // 10MB
+        const MAX_SIZE = 10 * 1024 * 1024;
         if (file.size > MAX_SIZE) {
             alert("File is too large! Maximum allowed size is 10MB.");
-            event.target.value = ""; // Сброс инпута
+            event.target.value = "";
             return;
         }
 
@@ -94,15 +151,10 @@
         reader.onload = async (e) => {
             try {
                 const json = JSON.parse(e.target.result);
-
-                // Базовая валидация: это должен быть не null и объект
-                if (!json || typeof json !== "object") {
+                if (!json || typeof json !== "object")
                     throw new Error("Invalid JSON structure: not an object");
-                }
 
-                // ==================================================
-                // СЦЕНАРИЙ 1: Полный бэкап (ark_tracker_full_backup)
-                // ==================================================
+                // СЦЕНАРИЙ 1: Полный бэкап
                 if (
                     json.type === "ark_tracker_full_backup" &&
                     json.data &&
@@ -112,38 +164,26 @@
                         !confirm(
                             "This is a Full System Backup.\n\nWARNING: Restoring it will COMPLETELY OVERWRITE all current accounts and pull history on this device.\n\nAre you sure you want to continue?",
                         )
-                    ) {
+                    )
                         return;
-                    }
 
                     try {
-                        // 1. Очищаем текущие данные (опционально, но надежнее) для избежания конфликтов
-                        // (localStorage.clear() тут опасно, лучше перезаписывать точечно)
-
-                        // 2. Восстанавливаем данные круток в LocalStorage
                         Object.entries(json.data).forEach(
                             ([accId, accData]) => {
-                                if (accData) {
+                                if (accData)
                                     localStorage.setItem(
                                         `ark_tracker_data_${accId}`,
                                         JSON.stringify(accData),
                                     );
-                                }
                             },
                         );
-
-                        // 3. Восстанавливаем мета-данные аккаунтов (store + LS)
                         accountStore.accounts.set(json.meta.accounts);
-
-                        // 4. Восстанавливаем выбранный ID
-                        if (json.meta.selectedId) {
+                        if (json.meta.selectedId)
                             accountStore.selectAccount(json.meta.selectedId);
-                        }
 
                         alert(
                             "✓ Full system backup restored successfully! The page will now reload.",
                         );
-                        // Перезагрузка обязательна, чтобы stores перечитали чистый LS
                         window.location.reload();
                     } catch (err) {
                         console.error("Full Backup Restore Error:", err);
@@ -153,19 +193,13 @@
                         );
                     }
                 }
-
-                // ==================================================
-                // СЦЕНАРИЙ 2: Обычный импорт данных (UGE/старый формат)
-                // ==================================================
+                // СЦЕНАРИЙ 2: Обычный импорт данных
                 else {
-                    // Эвристика: ищем признаки данных круток
-                    // Обычно это объект с ключами баннеров или массив (если старый формат UGE)
                     const isPullData =
                         json.standard ||
                         json.special ||
-                        json["wish-counter-standard-pool"] || // Поддержка старых ключей
+                        json["wish-counter-standard-pool"] ||
                         Array.isArray(json);
-
                     if (isPullData) {
                         if (
                             confirm(
@@ -173,7 +207,6 @@
                             )
                         ) {
                             try {
-                                // Используем smartImport из стора (он должен уметь мержить)
                                 await pullData.smartImport(json);
                                 alert(
                                     "✓ Pulls imported into current account successfully!",
@@ -194,16 +227,11 @@
                 alert("✗ Error parsing JSON file: " + error.message);
             }
         };
-
-        reader.onerror = () => {
-            alert("✗ Error reading file");
-        };
-
+        reader.onerror = () => alert("✗ Error reading file");
         reader.readAsText(file);
-        event.target.value = ""; // Сброс инпута, чтобы можно было загрузить тот же файл
+        event.target.value = "";
     }
 
-    // ... (Остальной код страницы без изменений) ...
     $: accountOptions = $accounts.map((acc) => ({
         value: acc.id,
         label: acc.name,
@@ -217,7 +245,6 @@
     let showClearModal = false;
     let showDeleteModal = false;
     let accountToDeleteName = "";
-
     function handleAccountChange(e) {
         accountStore.selectAccount(e.detail);
     }
@@ -233,16 +260,31 @@
         accountToDeleteName = acc ? acc.name : "Account";
         showDeleteModal = true;
     }
-    function confirmClear() {
-        accountStore.clearCurrentData();
-        showClearModal = false;
+    async function confirmClear() { 
+        accountStore.clearCurrentData(); 
+        showClearModal = false; 
+        
+        // АВТО-СИНХРОНИЗАЦИЯ: Сразу чистим и в облаке
+        if ($user) {
+            console.log("Auto-syncing after clear...");
+            await uploadLocalData(); 
+        }
     }
-    function confirmDelete() {
-        accountStore.deleteAccount($selectedId);
-        showDeleteModal = false;
+    async function confirmDelete() { 
+        accountStore.deleteAccount($selectedId); 
+        showDeleteModal = false; 
+        
+        // АВТО-СИНХРОНИЗАЦИЯ: Сразу удаляем из облака
+        if ($user) {
+            console.log("Auto-syncing after delete...");
+            await uploadLocalData();
+        }
     }
+
     const noop = () => {};
 </script>
+
+<SyncModal />
 
 <div class="max-w-[1000px] w-full pb-20">
     <h1 class="font-sdk text-5xl font-black text-[#21272C] mb-8">
@@ -307,24 +349,162 @@
         <h2 class="font-sdk text-2xl font-bold text-[#21272C] mb-4">
             {$t("settings.cloud.title")}
         </h2>
+
         <div
-            class="bg-gray-100 rounded-xl p-5 mb-5 flex items-start gap-4 text-gray-600 text-sm leading-relaxed"
+            class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col gap-4"
         >
-            <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-5 h-5 text-gray-400" />
-            </div>
-            <p>{$t("settings.cloud.description")}</p>
-        </div>
-        <div class="w-[340px]">
-            <Button variant="black2" onClick={noop}>
-                <div
-                    slot="icon"
-                    class="flex items-center justify-center w-6 h-6"
-                >
-                    <Icon name="googleDrive" class="w-6 h-6" />
+            <div class="flex items-center justify-between flex-wrap gap-2">
+                <div class="flex items-center gap-2 font-bold text-[#21272C]">
+                    <Icon name="google" class="w-10 h-10 text-white" />
+
+                    {$t("settings.cloud.integration")}
                 </div>
-                {$t("settings.cloud.btn")}
-            </Button>
+
+                <div class="flex items-center gap-2">
+                    {#if $user}
+                        <div
+                            class="flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full text-[10px] font-bold border border-green-200 uppercase tracking-wider"
+                        >
+                            <div
+                                class="w-1.5 h-1.5 rounded-full bg-green-500"
+                            ></div>
+                            {$t("settings.cloud.connected")}
+                        </div>
+                    {:else}
+                        <div
+                            class="flex items-center gap-2 px-3 py-1 bg-gray-100 text-gray-500 rounded-full text-[10px] font-bold uppercase tracking-wider"
+                        >
+                            {$t("settings.cloud.disconnected")}
+                        </div>
+                    {/if}
+
+                    {#if $user}
+                        {#if $syncStatus === "synced"}
+                            <div
+                                class="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-[10px] font-bold border border-blue-200 uppercase tracking-wider"
+                            >
+                                <Icon name="check" class="w-3 h-3" />
+                                {$t("settings.cloud.synced")}
+                            </div>
+                        {:else}
+                            <div
+                                class="flex items-center gap-2 px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-[10px] font-bold border border-orange-200 uppercase tracking-wider"
+                            >
+                                <Icon
+                                    name="refresh"
+                                    class="w-3 h-3 animate-spin"
+                                />
+                                {$t("settings.cloud.notSynced")}
+                            </div>
+                        {/if}
+                    {/if}
+                </div>
+            </div>
+
+            <div class="h-px bg-gray-100 w-full"></div>
+
+            {#if !$user}
+                <div
+                    class="flex items-start gap-4 text-gray-600 text-sm leading-relaxed mb-2"
+                >
+                    <div class="mt-0.5 flex-shrink-0">
+                        <Icon name="info" class="w-5 h-5 text-gray-400" />
+                    </div>
+                    <p>{$t("settings.cloud.description")}</p>
+                </div>
+
+                <button
+                    on:click={login}
+                    class="flex items-center justify-center gap-3 w-full py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-all font-bold text-gray-700 bg-white"
+                >
+                    <Icon name="google" class="w-5 h-5" />
+                    {$t("settings.cloud.signIn")}
+                </button>
+            {:else}
+                <div
+                    class="flex items-center justify-between gap-4 bg-[#F8F9FA] p-3 rounded-lg border border-gray-200"
+                >
+                    <div class="flex items-center gap-4 overflow-hidden">
+                        {#if $user.photoURL}
+                            <img
+                                src={$user.photoURL}
+                                alt="Avatar"
+                                class="w-10 h-10 rounded-full border border-white shadow-sm shrink-0"
+                            />
+                        {:else}
+                            <div
+                                class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
+                            >
+                                {$user.displayName ? $user.displayName[0] : "U"}
+                            </div>
+                        {/if}
+
+                        <div class="flex flex-col min-w-0">
+                            <span
+                                class="font-bold text-[#21272C] text-sm truncate"
+                                title={$user.displayName}
+                            >
+                                {maskedName}
+                            </span>
+                            <button
+                                on:click={handleEmailClick}
+                                on:mouseleave={handleEmailLeave}
+                                on:mouseenter={handleEmailEnter}
+                                class="text-xs text-gray-400 text-left transition-all duration-300 select-none
+                                {isEmailVisible
+                                    ? 'blur-none cursor-text'
+                                    : 'blur-[4px] cursor-pointer hover:bg-gray-200 rounded px-1 -ml-1'}"
+                                title={isEmailVisible
+                                    ? "Click to hide"
+                                    : "Click to show email"}
+                            >
+                                {$user.email}
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-right shrink-0">
+                        <div
+                            class="text-[10px] font-bold text-gray-400 uppercase tracking-wider"
+                        >
+                            {$t("settings.cloud.lastSync")}
+                        </div>
+                        <div class="text-xs font-mono text-[#21272C]">
+                            {lastSyncDate}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 mt-2">
+                    {#if $syncStatus !== "synced"}
+                        <button
+                            on:click={handleSync}
+                            disabled={$syncStatus === "checking"}
+                            class="flex-1 flex items-center justify-center gap-2 py-2 bg-[#21272C] text-white rounded hover:bg-[#333] transition-all font-bold text-sm relative overflow-hidden group disabled:opacity-70 disabled:cursor-not-allowed"
+                        >
+                            {#if $syncStatus === "checking"}
+                                <Icon
+                                    name="loading"
+                                    class="w-4 h-4 animate-spin"
+                                />
+                            {:else}
+                                <Icon name="upload" class="w-4 h-4" />
+                                {$t("settings.cloud.uploadBtn")}
+                            {/if}
+                        </button>
+                    {/if}
+
+                    <button
+                        on:click={logout}
+                        class="px-4 py-2 border border-red-200 text-red-600 rounded hover:bg-red-50 font-bold text-sm transition-colors {$syncStatus ===
+                        'synced'
+                            ? 'w-full'
+                            : ''}"
+                    >
+                        {$t("settings.cloud.logout")}
+                    </button>
+                </div>
+            {/if}
         </div>
     </section>
 
@@ -350,13 +530,12 @@
         />
 
         <div class="flex flex-wrap gap-4">
-            <Button variant="round" color="white" onClick={handleExportBackup}>
-                {$t("settings.backup.export")}
-            </Button>
-
-            <Button variant="round" color="white" onClick={handleImportBackup}>
-                {$t("settings.backup.import")}
-            </Button>
+            <Button variant="round" color="white" onClick={handleExportBackup}
+                >{$t("settings.backup.export")}</Button
+            >
+            <Button variant="round" color="white" onClick={handleImportBackup}
+                >{$t("settings.backup.import")}</Button
+            >
         </div>
     </section>
 
@@ -389,7 +568,6 @@
     on:confirm={confirmClear}
     on:close={() => (showClearModal = false)}
 />
-
 <ConfirmationModal
     isOpen={showDeleteModal}
     title={$t("settings.account.deleteModalTitle")}

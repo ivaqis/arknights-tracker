@@ -63,9 +63,9 @@
     }
   },
   "bannerTypes": {
-      "standard": "Standard Headhunting",
-      "special": "Special Headhunting",
-      "new-player": "New Horizons Headhunting"
+    "standard": "Standard Headhunting",
+    "special": "Special Headhunting",
+    "new-player": "New Horizons Headhunting"
   },
   "import": {
     "title": "Import Headhunting Records",
@@ -299,14 +299,14 @@
   },
   "bioValues": {
     "Unknown": "Unknown",
-    "endfieldInd": "Endfield Industries", 
+    "endfieldInd": "Endfield Industries",
     "perro": "Perro",
     "31-03": "March 31"
   },
   "tags": {
     "electricInfliction": "Electric Infliction",
     "electrify": "Electrify"
-  },  
+  },
   "weapons": {
     "sword": "Sword",
     "polearm": "Polearm",
@@ -398,12 +398,34 @@
       "defaultName": "Account",
       "deleteModalTitle": "Delete account?",
       "cancel": "Cancel",
+      "yesClear": "Yes, clear data",
+      "clearDescription": "This will permanently delete all pull history for the current account. This action cannot be undone.",
       "deleteModalDesc": "You are about to delete the account «{name}» and all its data. This action cannot be undone."
     },
     "cloud": {
       "title": "Cloud Synchronization",
-      "description": "Goyfield syncs data with Google Drive to save pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only work with its own files.",
-      "btn": "Sign in with Google Drive"
+      "description": "Goyfield syncs data with Google Drive to save your pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only access its own files.",
+      "btn": "Sign in with Google Drive",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "synced": "Synced",
+      "notSynced": "Not Synced",
+      "lastSync": "Last Sync:",
+      "newerData": "Newer Data",
+      "uploadBtn": "Upload to Cloud",
+      "downloadBtn": "Download from Cloud",
+      "checkBtn": "Check Updates",
+      "signIn": "Sign in with Google",
+      "logout": "Logout",
+      "syncConflict": "Cloud Sync Conflict",
+      "attention": "Attention",
+      "thisDevice": "This Device",
+      "googleCloud": "Google Cloud",
+      "totalPulls": "Total Pulls",
+      "cloudNewerAlert": "Cloud data is newer. Do you want to <b>download</b> it and overwrite your local data?",
+      "cancel": "Cancel",
+      "never": "Не производилась",
+      "integration": "Google Integration"
     },
     "backup": {
       "title": "Backup",

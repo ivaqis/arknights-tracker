@@ -20,6 +20,7 @@
 		"vite": "^7.2.6"
 	},
 	"dependencies": {
+		"firebase": "^12.8.0",
 		"xlsx": "^0.18.5"
 	}
 }
