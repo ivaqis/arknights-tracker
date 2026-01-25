@@ -3,41 +3,43 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite" // Change to "postgresql" for production
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
-  uid       String   @id // Unique ID derived from the game token/uid
+  uid       String   @id
   updatedAt DateTime @updatedAt
-  stats     UserStat[]
+  stats     UserBannerStat[]
 }
 
-// Aggregated stats per banner type (Beginner, Standard, Special)
-model UserStat {
-  id             String @id @default(uuid())
-  uid            String
-  poolType       String // 'beginner', 'standard', 'special'
-
-  totalPulls     Int    @default(0)
+// Храним ТОЛЬКО итоговые цифры для рейтинга
+model UserBannerStat {
+  uid        String
+  bannerId   String // 'standard', 'special', 'special_banner_01' и т.д.
   
-  // 6-Star Luck
-  avgPity6       Float  @default(0.0) // Lower is better
-  total6Star     Int    @default(0)
+  // Общие
+  totalPulls Int @default(0)
+  lastUpdate DateTime @default(now())
 
-  // 5-Star Luck
-  avgPity5       Float  @default(0.0) // Lower is better
+  // Удача (6 звезд)
+  total6     Int @default(0)
+  sumPity6   Int @default(0) // Сумма пити всех 6* (для расчета среднего: sumPity6 / total6)
   
-  // 50:50 Logic
-  won5050Count   Int    @default(0)
-  total5050Count Int    @default(0)
-  winRate        Float  @default(0.0)
+  // Удача (5 звезд)
+  total5     Int @default(0)
+  sumPity5   Int @default(0)
 
-  user           User   @relation(fields: [uid], references: [uid])
+  // 50 на 50
+  won5050    Int @default(0) // Сколько раз выиграл
+  total5050  Int @default(0) // Сколько раз был шанс 50/50 (выпал 6*, когда не было гаранта)
 
-  @@unique([uid, poolType])
-  // Indexes for fast percentile calculation
-  @@index([poolType, totalPulls]) 
-  @@index([poolType, avgPity6])
-  @@index([poolType, winRate])
+  user       User @relation(fields: [uid], references: [uid])
+
+  // Составной ключ: у юзера может быть только 1 статистика для конкретного баннера
+  @@id([uid, bannerId])
+  
+  // Индексы для быстрого построения топов
+  @@index([bannerId, totalPulls]) 
+  @@index([bannerId, sumPity6])
 }
