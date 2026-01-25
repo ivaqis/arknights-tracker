@@ -25,17 +25,23 @@ export async function proxyImport(urlInput, saveStats = true) {
  */
 export async function fetchGlobalStats(uid, poolId) {
     try {
-        // [FIX] Изменили stats на rankings/data чтобы обойти AdBlock
-        const res = await fetch(`${API_BASE}/rankings/data?bannerId=${poolId}&uid=${uid}`);
+        const url = `${API_BASE}/rankings/data?bannerId=${poolId}&uid=${uid}`;
+        console.log("Fetching stats from:", url); // Лог для проверки URL
+
+        const res = await fetch(url);
         
-        if (!res.ok) throw new Error("API Error");
+        // ЕСЛИ ОШИБКА - ЧИТАЕМ ЕЁ ТЕКСТ
+        if (!res.ok) {
+            const errText = await res.text();
+            console.error(`SERVER ERROR (${res.status}):`, errText);
+            throw new Error(`Server responded with ${res.status}: ${errText}`);
+        }
         
         const json = await res.json();
-        if (json.code !== 0) return null;
+        return json.data;
 
-        return json.data; // Тут нужно будет переделать логику рангов, если бэк не возвращает их
     } catch (e) {
-        console.error("Fetch stats failed:", e);
+        console.error("Fetch stats CRITICAL FAIL:", e);
         return null;
     }
 }
