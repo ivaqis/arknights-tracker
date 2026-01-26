@@ -260,20 +260,20 @@
         accountToDeleteName = acc ? acc.name : "Account";
         showDeleteModal = true;
     }
-    async function confirmClear() { 
-        accountStore.clearCurrentData(); 
-        showClearModal = false; 
-        
+    async function confirmClear() {
+        accountStore.clearCurrentData();
+        showClearModal = false;
+
         // АВТО-СИНХРОНИЗАЦИЯ: Сразу чистим и в облаке
         if ($user) {
             console.log("Auto-syncing after clear...");
-            await uploadLocalData(); 
+            await uploadLocalData();
         }
     }
-    async function confirmDelete() { 
-        accountStore.deleteAccount($selectedId); 
-        showDeleteModal = false; 
-        
+    async function confirmDelete() {
+        accountStore.deleteAccount($selectedId);
+        showDeleteModal = false;
+
         // АВТО-СИНХРОНИЗАЦИЯ: Сразу удаляем из облака
         if ($user) {
             console.log("Auto-syncing after delete...");
@@ -551,10 +551,19 @@
             {$t("settings.feedback.title")}
         </h2>
         <div class="w-48">
-            <Button variant="black2" onClick={noop}>
-                <div slot="icon"><Icon name="telegram" class="w-6 h-6" /></div>
-                {$t("settings.feedback.telegram")}
-            </Button>
+            <a
+                href="https://t.me/ivawa73"
+                target="_blank"
+                rel="noreferrer"
+                class="no-underline"
+            >
+                <Button variant="black2">
+                    <div slot="icon">
+                        <Icon name="telegram" class="w-6 h-6" />
+                    </div>
+                    {$t("settings.feedback.telegram")}
+                </Button>
+            </a>
         </div>
     </section>
 </div>

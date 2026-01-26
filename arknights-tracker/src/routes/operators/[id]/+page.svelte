@@ -46,16 +46,10 @@
     $: charDetails = (() => {
         if (!id) return {};
 
-        // 1. Посмотрим, какие файлы вообще нашлись
-        // console.log("Loaded files:", Object.keys(dataModules));
-
         // Ищем ключ
         const foundKey = Object.keys(dataModules).find((k) =>
             k.endsWith(`/${id}.json`),
         );
-
-        // 2. Посмотрим, нашли ли мы файл для текущего ID
-        // console.log(`Searching for ID: ${id}, Found Key:`, foundKey);
 
         const mod = foundKey ? dataModules[foundKey] : null;
 

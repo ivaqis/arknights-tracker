@@ -5,6 +5,25 @@ const { PrismaClient } = require('@prisma/client');
 const { URL, URLSearchParams } = require('url');
 const { BANNERS } = require('./banners');
 
+const crypto = require('crypto');
+
+function generateStableUid(pulls) {
+    if (!pulls || pulls.length === 0) return null;
+
+    // 1. Сортируем крутки по времени (от старых к новым), чтобы найти самые первые
+    // Важно копировать массив [...], чтобы не сломать порядок в основном потоке
+    const sorted = [...pulls].sort((a, b) => a.timestamp - b.timestamp || a.seqId - b.seqId);
+
+    // 2. Берем первые 3 крутки (или все, если их меньше 3)
+    // Этого достаточно для уникальности (время + имя + баннер)
+    const fingerprintData = sorted.slice(0, 3).map(p =>
+        `${p.timestamp}_${p.poolId}_${p.name}`
+    ).join('|');
+
+    // 3. Создаем MD5 хеш от этой строки
+    return 'u_' + crypto.createHash('md5').update(fingerprintData).digest('hex');
+}
+
 const app = express();
 let prisma;
 try {
@@ -37,7 +56,7 @@ app.post('/api/import', async (req, res) => {
     const startTime = Date.now();
     const parsedUrl = new URL(rawUrl);
     if (!parsedUrl.hostname.endsWith('hg-game.com') && !parsedUrl.hostname.endsWith('gryphline.com')) {
-         return res.status(400).json({ error: "Invalid domain" });
+        return res.status(400).json({ error: "Invalid domain" });
     }
 
     try {
@@ -125,20 +144,28 @@ app.post('/api/import', async (req, res) => {
 
         const pseudoUid = "u_" + token.substring(0, 15);
 
-        console.log(`\n--- Import Finished ---`);
-        console.log(`Total unique pulls: ${allPulls.length}`);
+        console.log(`--- Import Finished. Total: ${allPulls.length} ---`);
 
-        if (saveStats && prisma && allPulls.length > 0) {
-            const pseudoUid = "u_" + token.substring(0, 15);
-            updateAggregatedStats(pseudoUid, allPulls)
-                .catch(e => console.error("Stats update failed:", e.message));
+        // [FIX] Генерируем стабильный UID на основе истории круток
+        const stableUid = generateStableUid(allPulls);
+
+        if (!stableUid) {
+            return res.status(400).json({ error: "No pulls found to generate UID" });
+        }
+
+        console.log(`User Stable UID: ${stableUid}`);
+
+        // Сохраняем статистику (используем stableUid вместо токена)
+        if (prisma && allPulls.length > 0) {
+            // Ждем выполнения, чтобы убедиться, что всё ок
+            await updateAggregatedStats(stableUid, allPulls);
         }
 
         res.json({
             code: 0,
             data: {
                 list: allPulls,
-                uid: pseudoUid
+                uid: stableUid // Отправляем стабильный ID на фронт
             }
         });
 
@@ -166,10 +193,10 @@ async function updateAggregatedStats(uid, allPulls) {
 
     allPulls.forEach(p => {
         const pullTimeMs = p.timestamp * 1000;
-        
+
         // Определяем Banner ID
-        const matchedBanner = BANNERS.find(b => 
-            b.type === p.poolId && 
+        const matchedBanner = BANNERS.find(b =>
+            b.type === p.poolId &&
             pullTimeMs >= b.startTime &&
             (!b.endTime || pullTimeMs <= b.endTime)
         );
@@ -210,7 +237,7 @@ async function updateAggregatedStats(uid, allPulls) {
             }
         });
     }
-    
+
     console.log(`[Stats] Updated stats for user ${uid} across ${Object.keys(pullsByBanner).length} banners.`);
 }
 
@@ -223,16 +250,16 @@ function calculateMath(pulls, bannerId) {
     let bannerConfig = BANNERS.find(b => b.id === bannerId);
     // Fallback логика поиска
     if (!bannerConfig) {
-         if (bannerId.includes('new')) bannerConfig = BANNERS.find(b => b.type === 'beginner');
-         else if (bannerId.includes('special')) bannerConfig = BANNERS.find(b => b.type === 'special');
-         else bannerConfig = BANNERS.find(b => b.type === 'standard');
+        if (bannerId.includes('new')) bannerConfig = BANNERS.find(b => b.type === 'beginner');
+        else if (bannerId.includes('special')) bannerConfig = BANNERS.find(b => b.type === 'special');
+        else bannerConfig = BANNERS.find(b => b.type === 'standard');
     }
 
     // Если список персонажей есть в конфиге (нужно добавить их в banners.js!), используем
     // Для примера считаем, что мы не знаем featured, если их нет в конфиге.
     // *Совет: Добавь featured6: ["Name1", "Name2"] в banners.js*
     const featured6 = (bannerConfig && bannerConfig.featured6) ? bannerConfig.featured6 : [];
-    
+
     // Нормализация имени (убираем пробелы, lowerCase)
     const normalize = s => s ? s.toLowerCase().replace(/\s+/g, "") : "";
     const normFeatured = featured6.map(normalize);
@@ -249,10 +276,10 @@ function calculateMath(pulls, bannerId) {
 
     pulls.forEach((p, idx) => {
         pityCounter++;
-        
+
         // Хардкод для Special баннеров (Arknights): первые 10 круток не считаются в Pity статистики? 
         // Или наоборот. Тут простая логика:
-        
+
         if (p.rarity === 6) {
             stats.total6++;
             stats.sumPity6 += pityCounter;
@@ -294,10 +321,10 @@ app.get('/api/rankings/data', async (req, res) => {
         // Для оптимизации можно не тащить все поля, а только нужные для сортировки
         const allStats = await prisma.userBannerStat.findMany({
             where: { bannerId },
-            select: { 
-                uid: true, 
-                totalPulls: true, 
-                sumPity6: true, 
+            select: {
+                uid: true,
+                totalPulls: true,
+                sumPity6: true,
                 total6: true,
                 won5050: true,
                 total5050: true
@@ -317,16 +344,16 @@ app.get('/api/rankings/data', async (req, res) => {
 
         // 3. Ищем текущего юзера
         const myStat = usersWithAvg.find(u => u.uid === uid);
-        
+
         if (!myStat) {
-             // Данных по этому юзеру нет, отдаем общую стату
-             return res.json({ code: 0, data: { found: false, totalUsers: allStats.length } });
+            // Данных по этому юзеру нет, отдаем общую стату
+            return res.json({ code: 0, data: { found: false, totalUsers: allStats.length } });
         }
 
         // 4. Считаем Ранги (Percentile)
         // Функция расчета: Сколько людей ХУЖЕ меня?
         // Rank 99% = я лучше 99% людей (топ 1). Rank 1% = я лох.
-        
+
         // -- Luck Rank (Меньше пити = лучше) --
         // Сортируем: от маленького пити к большому. Исключаем тех, у кого 0 лег.
         const validLuckUsers = usersWithAvg.filter(u => u.total6 > 0).sort((a, b) => a.avg6 - b.avg6);
@@ -344,14 +371,14 @@ app.get('/api/rankings/data', async (req, res) => {
         // -- Total Pulls Rank (Больше = выше) --
         const sortedTotal = [...usersWithAvg].sort((a, b) => b.totalPulls - a.totalPulls);
         const myTotalIndex = sortedTotal.findIndex(u => u.uid === uid);
-        const rankTotal = ( (sortedTotal.length - 1 - myTotalIndex) / sortedTotal.length * 100 ).toFixed(0);
+        const rankTotal = ((sortedTotal.length - 1 - myTotalIndex) / sortedTotal.length * 100).toFixed(0);
 
         // -- 50/50 Rank (Больше = выше) --
         const valid5050 = usersWithAvg.filter(u => u.total5050 > 0).sort((a, b) => b.winRate - a.winRate);
         const my5050Index = valid5050.findIndex(u => u.uid === uid);
         let rank5050 = null;
         if (my5050Index !== -1) {
-            rank5050 = ( (valid5050.length - 1 - my5050Index) / valid5050.length * 100 ).toFixed(0);
+            rank5050 = ((valid5050.length - 1 - my5050Index) / valid5050.length * 100).toFixed(0);
         }
 
         res.json({
@@ -362,7 +389,7 @@ app.get('/api/rankings/data', async (req, res) => {
                 rankTotal,  // "Вы крутили больше, чем X% игроков"
                 rankLuck6,  // "Вы удачливее, чем X% игроков"
                 rank5050,   // "Вы выигрываете 50/50 чаще, чем X% игроков"
-                
+
                 // Сырые данные тоже можно вернуть
                 myStats: {
                     total: myStat.totalPulls,

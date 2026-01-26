@@ -192,7 +192,6 @@ function createPullStore() {
 
                             // Авто-синхронизация
                             if (get(user)) {
-                                console.log("Auto-uploading new pulls...");
                                 uploadLocalData(); 
                             }
 

@@ -50,10 +50,6 @@
     const uid = localStorage.getItem("user_uid");
     if (!uid) return;
     const data = await fetchGlobalStats(uid, poolId);
-
-    if (data) {
-      console.log("Server Stats:", data);
-    }
   }
 
   function formatVal(val) {

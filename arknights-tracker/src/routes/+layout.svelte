@@ -22,6 +22,12 @@
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
 </script>
 
+<svelte:head>
+  <title>Arknights Tracker & Statistics | Goyfield</title>
+  <meta name="description" content="Track your Arknights pulls, analyze drop rates, calculate 6-star luck, and view global pull statistics. Import your gacha history easily.">
+  <meta name="keywords" content="Arknights, Gacha Tracker, Pull History, Statistics, Arknights Global">
+</svelte:head>
+
 <div class="flex min-h-screen bg-[#F9F9F9]">
     <!-- Mobile Header & Toggle Button -->
     <!-- Показывается только на мобильных (до md) -->
