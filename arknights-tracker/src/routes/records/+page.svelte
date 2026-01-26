@@ -31,8 +31,6 @@
     },
     { total: 0, billable: 0 }
   );
-
-  // Extract values for cleaner usage in HTML
   $: totalPulls = pullsStats.total;
   $: billablePulls = pullsStats.billable;
 
@@ -41,7 +39,7 @@
     .sort((a, b) => a.order - b.order);
 
   let userLuck6 = 15; // Placeholder
-  let userLuck5 = 50; // Placeholder
+  let userLuck5 = 50;
 
   let isSettingsOpen = false;
 
@@ -61,13 +59,14 @@
   onClose={() => (isSettingsOpen = false)}
 />
 
-<div class="max-w-[1600px] justify-start">
-  <div class="inline-flex mb-8 gap-4 content-center items-center">
-    <h2 class="font-sdk text-5xl tracking-wide text-[#21272C]">
+<div class="max-w-[1600px]">
+  <div class="flex flex-col md:flex-row mb-8 gap-4 md:items-center">
+    
+    <h2 class="font-sdk text-5xl tracking-wide text-[#21272C] mb-2 md:mb-0">
       {$t("page.title")}
     </h2>
 
-    <div class="w-48">
+    <div class="w-full md:w-48">
       <SquareButton variant="yellow" onClick={openImport}>
         <div slot="icon">
           <Icon name="import" style="width: 30px; height: 30px;" />
@@ -76,7 +75,7 @@
       </SquareButton>
     </div>
 
-    <div class="w-80">
+    <div class="w-full md:w-80">
       <SquareButton variant="black2" onClick={openGlobal}>
         <div slot="icon">
           <Icon name="globe" style="width: 30px; height: 30px;" />
@@ -85,7 +84,7 @@
       </SquareButton>
     </div>
 
-    <div class="w-64">
+    <div class="w-full md:w-64">
       <SquareButton variant="black2" onClick={() => (isSettingsOpen = true)}>
         <div slot="icon">
           <Icon name="settings" style="width: 30px; height: 30px;" />
@@ -109,13 +108,13 @@
         {$t("page.totalCost")}
       </h3>
 
-      <div class="text-3xl font-black text-gray-900 flex items-center gap-2 font-nums">
+      <div class="text-3xl font-black text-[#21272C] flex items-center gap-2 font-nums">
         <Images id="oroberyl" variant="currency" size={32} />
         {(billablePulls * 500).toLocaleString("ru-RU")}
       </div>
 
-      <div class="text-xs text-gray-400 mt-2 font-medium">
-        ≈ {((billablePulls * 500) / 75).toFixed(0)} {$t("page.banner.origeometry")}
+      <div class="text-xs text-gray-400 mt-2 font-medium flex items-center">
+        ≈ <Images id="origeometry" variant="currency" size={20} /> {((billablePulls * 500) / 75).toFixed(0)}  {$t("page.banner.origeometry")}
       </div>
     </div>
   </div>

@@ -112,7 +112,7 @@
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums">
+        <div class="text-2xl font-black text-[#21272C] font-nums">
           {rank5050 !== null ? `Top ${100 - rank5050}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
@@ -123,7 +123,7 @@
 
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-gray-700 flex items-center gap-1">
+        <div class="font-medium text-[#21272C] flex items-center gap-1">
           {$t("page.rating.lucky6")}
           6 <Icon name="star" class="w-4 h-4" />
         </div>
@@ -146,7 +146,7 @@
 
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-gray-700 flex items-center gap-1">
+        <div class="font-medium text-[#21272C] flex items-center gap-1">
           {$t("page.rating.lucky5")}
           5 <Icon name="star" class="w-4 h-4" />
         </div>
@@ -155,7 +155,7 @@
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums">
+        <div class="text-2xl font-black text-[#21272C] font-nums">
           {$t("page.rating.luckyTopPercent", { n: rankLuck5 || "..." })}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">

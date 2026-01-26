@@ -16,47 +16,38 @@
         utc7: { name: "UTC-7", offset: -7 },
         utc8: { name: "UTC+8", offset: 8 },
     };
-
     let selectedTimezone = "local";
-
     let showTimezoneMenu = false;
-
-    // Объединяем события и баннеры
     const allEvents = [
-        ...rawEvents.map((e) => ({ ...e, type: e.type || "ingame" })),
+        ...rawEvents.map((e) => ({
+            ...e,
+            originalType: e.type,
+            type: e.type || "ingame",
+        })),
         ...banners
-            .filter((b) => b.endTime !== null) // Убираем баннеры без даты окончания
-            .map((b) => ({ ...b, type: "banner" })),
+            .filter((b) => b.endTime !== null)
+            .map((b) => ({
+                ...b,
+                originalType: b.type,
+                type: "banner",
+            })),
     ];
 
-    // Сортируем по дате начала
     allEvents.sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
-
-    // Используем вместо rawEvents
     allEvents.sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
     const displayEvents = allEvents;
 
     function handleClickOutside(event) {
         if (!showTimezoneMenu) return;
-
-        // Проверяем, что клик был НЕ по бейджу и НЕ по меню
         const clickedBadge = event.target.closest("[data-timezone-badge]");
         const clickedMenu = event.target.closest("[data-timezone-menu]");
-
         if (!clickedBadge && !clickedMenu) {
             showTimezoneMenu = false;
         }
     }
 
-    /**
-     * Determines which image folder to use based on the item type.
-     * Must be top-level in <script> to be used in HTML.
-     */
     function getVariant(item) {
         if (!item) return "event-icon";
-
-        // Check if it's a banner based on specific fields or types
-        // 'banner' type is added in the allEvents map logic
         if (
             item.featured6 ||
             item.type === "banner" ||
@@ -66,8 +57,6 @@
         ) {
             return "banner-icon";
         }
-
-        // Default for events (web, ingame, etc.)
         return "event-icon";
     }
 
@@ -88,7 +77,6 @@
         if (browser) document.removeEventListener("click", handleClickOutside);
     });
 
-    // Конвертация времени
     function convertTime(dateStr, targetTz) {
         const date = new Date(dateStr);
         if (targetTz === "local") return date;
@@ -98,13 +86,13 @@
         return new Date(utc + 3600000 * offset);
     }
 
-    // --- КОНФИГУРАЦИЯ ---
-    const DAY_WIDTH = 60;
+    const DAY_WIDTH = 35;
     const ROW_HEIGHT = 50;
-    const GAP_HEIGHT = 15;
-    const HEADER_HEIGHT_PX = 90; // Отступ для событий, чтобы не наезжали на хедер
+    const GAP_HEIGHT = 8;
+    const HEADER_HEIGHT_PX = 80;
+    const EVENT_TOP_OFFSET = 20;
+    const TIMELINE_HEIGHT = "65vh";
 
-    // --- ЛОГИКА ---
     let now = new Date();
     let timerInterval;
 
@@ -147,16 +135,12 @@
         );
     }
 
-    // Сколько времени осталось до конца ивента
     function getRemainingTime(endStr, t) {
         const end = convertTime(endStr, selectedTimezone);
         const diff = end - now;
         if (diff <= 0) return null;
-
         const d = Math.floor(diff / (1000 * 60 * 60 * 24));
         const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-        // Используем t('ключ', {переменные})
         if (d > 0) return t("timer.d_h", { d, h });
         return t("timer.h", { h });
     }
@@ -178,16 +162,10 @@
 
     function formatCurrentTime(date, timezone) {
         const adjustedDate = convertTime(date.toISOString(), timezone);
-
-        // День (01-31)
         const dd = String(adjustedDate.getDate()).padStart(2, "0");
-
-        // Ключ дня недели (mon, tue...) для i18n
         const dayKey = adjustedDate
             .toLocaleString("en-US", { weekday: "short" })
             .toLowerCase();
-
-        // Время (HH:MM:SS)
         const hh = String(adjustedDate.getHours()).padStart(2, "0");
         const mm = String(adjustedDate.getMinutes()).padStart(2, "0");
         const ss = String(adjustedDate.getSeconds()).padStart(2, "0");
@@ -196,7 +174,6 @@
         return { dd, dayKey, time };
     }
 
-    // --- СИНХРОНИЗАЦИЯ СКРОЛЛА ---
     let headerContainer;
     let bodyContainer;
     let scrollLeft = 0;
@@ -204,7 +181,7 @@
     function handleScroll() {
         if (headerContainer && bodyContainer) {
             headerContainer.scrollLeft = bodyContainer.scrollLeft;
-            scrollLeft = bodyContainer.scrollLeft; // <- новая строка
+            scrollLeft = bodyContainer.scrollLeft;
         }
     }
 
@@ -227,41 +204,62 @@
     function openEvent(event) {
         bannerForModal = {
             ...event,
-            name: getEventName(event), // Используем безопасную функцию
+            name: getEventName(event),
         };
     }
 
     function getEventName(event) {
         if (!event) return "Unknown Event";
-
-        // 1. Сценарий для ИВЕНТОВ (у них есть title = ключ перевода)
         if (event.title && typeof event.title === "string") {
             const translated = $t(event.title);
-            // Если перевод отличается от ключа — значит, перевод есть
             if (translated && translated !== event.title) {
                 return translated;
             }
         }
-
-        // 2. Сценарий для БАННЕРОВ (у них есть id, пробуем ключ banners.ID)
         if (event.id) {
             const bannerKey = `banners.${event.id}`;
             const bannerTranslated = $t(bannerKey);
-            
-            // Если перевод нашелся
+
             if (bannerTranslated && bannerTranslated !== bannerKey) {
                 return bannerTranslated;
             }
         }
-
-        // 3. FALLBACK: Если переводов нет, возвращаем хардкодное имя или ID
-        // (Это сработает, если в json файлах перевода пусто)
         return event.name || event.title || event.id || "Unknown Event";
+    }
+
+    function getEventBadge(event) {
+        const origType = (event.originalType || "").toLowerCase();
+        if (event.type === "web") {
+            return { icon: "link", label: "Web", bg: "bg-black/20" };
+        }
+        if (
+            event.type === "banner" ||
+            event.type === "standard" ||
+            event.type === "special" ||
+            event.type === "new-player"
+        ) {
+            if (origType === "weapon") {
+                return {
+                    icon: "atkEvent",
+                    label: "Arsenal Issue",
+                    bg: "bg-purple-900/40",
+                };
+            }
+            return {
+                icon: "headhunting",
+                label: "Headhunting",
+                bg: "bg-blue-900/40",
+            };
+        }
+        return {
+            icon: "event",
+            label: "Limited Event",
+            bg: "bg-orange-600/60",
+        };
     }
 </script>
 
-<div class="w-full flex flex-col h-[85vh] relative">
-    <!-- МЕНЮ ТАЙМЗОНЫ (ПОВЕРХ ВСЕГО) -->
+<div class="w-full flex flex-col relative" style="height: {TIMELINE_HEIGHT};">
     {#if showTimezoneMenu}
         <div
             data-timezone-menu
@@ -291,10 +289,8 @@
             {/each}
         </div>
     {/if}
-    <!-- 1. ХЕДЕР (Z-40: ПЕРЕКРЫВАЕТ ЛИНИИ) -->
-    <!-- top-2 left-0 right-0: фиксируем, но без px-2, чтобы ширина совпадала с телом -->
+    <!-- 1. ХЕДЕР -->
     <div class="absolute top-2 left-0 right-0 z-40 pointer-events-none">
-        <!-- Черная капсула -->
         <div
             class="bg-[#21272C] text-white rounded-2xl shadow-lg border border-gray-700 overflow-hidden pointer-events-auto"
         >
@@ -344,13 +340,10 @@
                     <!-- ДНИ -->
                     <div class="flex h-8 text-gray-400 text-xs">
                         {#each days as day}
-                            <!-- ДАТЫ НА ЛИНИИ -->
                             <div
                                 class="relative flex-shrink-0"
                                 style="width: {DAY_WIDTH}px;"
                             >
-                                <!-- absolute left-0: прижимаем к началу ячейки (к линии) -->
-                                <!-- -translate-x-1/2: сдвигаем влево на 50%, чтобы центр цифры был на линии -->
                                 <span
                                     class="absolute left-0 top-1/2 -translate-y-1/2 transform -translate-x-1/2 bg-[#21272C] px-1"
                                 >
@@ -365,18 +358,14 @@
     </div>
 
     <!-- 2. ТЕЛО (СЕТКА + ЛИНИЯ + СОБЫТИЯ) -->
-    <!-- Убрали лишние padding. border-transparent нужен для компенсации borders хедера, если они есть -->
     <div
         bind:this={bodyContainer}
         on:scroll={handleScroll}
         class="overflow-x-auto custom-scrollbar flex-grow relative"
     >
         <div class="relative h-full" style="width: {totalWidth}px;">
-            <!-- СЕТКА (Z-0: САМЫЙ НИЗ) -->
-            <!-- top-0: Начинается с верха, уходит ПОД хедер -->
             <div class="absolute inset-0 top-0 pointer-events-none z-0 flex">
                 {#each days as day}
-                    <!-- border-l (слева) - совпадает с позицией цифры дня -->
                     <div
                         class="border-l mt-5 border-gray-300/40 h-full flex-shrink-0"
                         style="width: {DAY_WIDTH}px;"
@@ -384,110 +373,142 @@
                 {/each}
             </div>
 
-            <!-- ЖЕЛТАЯ ЛИНИЯ (Z-30: НИЖЕ ХЕДЕРА, НО ВЫШЕ СЕТКИ) -->
             <div
                 class="absolute top-0 bottom-0 w-[4px] bg-[#FACC15] z-30 mt-5 pointer-events-none transition-all duration-1000 ease-linear transform -translate-x-1/2"
                 style="left: {currentTimeX}px;"
             ></div>
 
-            <!-- СОБЫТИЯ (Z-20: НИЖЕ ЛИНИИ) -->
             <div
                 class="relative px-0"
                 style="padding-top: {HEADER_HEIGHT_PX}px;"
             >
                 {#each displayEvents as event}
-    <div
-        class="absolute transition-all group"
-        style="
+                    {@const badge = getEventBadge(event)}
+
+                    <div
+                        class="absolute transition-all group"
+                        style="
             left: {getPositionX(event.startTime)}px;
             width: {getWidth(event.startTime, event.endTime)}px;
-            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) + HEADER_HEIGHT_PX}px; 
+            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) +
+                            HEADER_HEIGHT_PX +
+                            EVENT_TOP_OFFSET}px; 
             height: {ROW_HEIGHT}px;
             z-index: 20;
         "
-    >
-        <button
-            on:click={() => openEvent(event)}
-            class="relative block w-full h-full text-left focus:outline-none"
-        >
-            <div 
-                class="absolute inset-0 overflow-hidden rounded shadow-sm hover:ring-2 ring-offset-1 ring-offset-transparent transition-all"
-                style="
+                    >
+                        <button
+                            on:click={() => openEvent(event)}
+                            class="relative block w-full h-full text-left focus:outline-none"
+                        >
+                            <div
+                                class="absolute inset-0 overflow-hidden rounded shadow-sm hover:ring-1 ring-offset-1 ring-offset-transparent transition-all"
+                                style="
                     background-color: {event.color};
                     border-right: 4px solid {event.color};
                 "
-            >
-                <div
-                    class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform group-hover:scale-105"
-                >
-                    <Images
-                        item={event}
-                        variant={getVariant(event)}
-                        className="w-full h-full"
-                        style={`
+                            >
+                                <div
+                                    class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform group-hover:scale-105"
+                                >
+                                    <Images
+                                        item={event}
+                                        variant={getVariant(event)}
+                                        className="w-full h-full"
+                                        style={`
                             object-position: right ${event.iconPosition || 50}%;
-                            /* Твоя маска прозрачности для картинки */
                             -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%);
                             mask-image: linear-gradient(to right, transparent 0%, black 50%);
                         `}
-                    />
+                                    />
+                                </div>
+
+                                <div
+                                    class="absolute inset-0 z-10"
+                                    style="background: linear-gradient(90deg, {event.color} 35%, {event.color}D9 50%, transparent 100%);"
+                                ></div>
+                            </div>
+
+                            <div
+                                class="relative z-20 h-full w-full pointer-events-none"
+                            >
+                                <div
+                                    class="sticky left-0 inline-flex items-center gap-3 px-3 h-full max-w-full pointer-events-auto"
+                                >
+                                    {#if badge}
+                                        <div
+                                            class="flex items-center gap-1.5 rounded px-2 py-0.5 text-white shrink-0 shadow-sm border border-white/10 {badge.bg}"
+                                        >
+                                            <Icon
+                                                name={badge.icon}
+                                                class="w-3.5 h-3.5"
+                                            />
+                                            <span
+                                                class="text-[10px] font-bold uppercase tracking-wide opacity-90"
+                                            >
+                                                {badge.label}
+                                            </span>
+                                        </div>
+                                    {/if}
+
+                                    <div
+                                        class="h-6 w-[2px] bg-white/60 shrink-0 opacity-50"
+                                    ></div>
+
+                                    <div
+                                        class="flex flex-col justify-center min-w-0"
+                                    >
+                                        <span
+                                            class="text-white font-bold text-sm leading-tight truncate drop-shadow-md"
+                                        >
+                                            {getEventName(event)}
+                                        </span>
+                                        <span
+                                            class="text-white/80 text-[10px] uppercase font-bold tracking-wider"
+                                        >
+                                            {new Date(
+                                                event.startTime,
+                                            ).getDate()}
+                                            {$t(
+                                                `months_gen.${new Date(event.startTime).toLocaleString("en-US", { month: "long" }).toLowerCase()}`,
+                                            )}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+
+                        {#if now >= convertTime(event.startTime, selectedTimezone) && getRemainingTime(event.endTime, $t)}
+                            <div
+                                class="absolute left-full top-1/2 -translate-y-1/2 ml-3 whitespace-nowrap z-30 flex items-center"
+                            >
+                                <span
+                                    class="text-xs font-bold text-green-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-green-200"
+                                >
+                                    {getRemainingTime(event.endTime, $t)}
+                                </span>
+                                <div
+                                    class="absolute -left-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                                ></div>
+                            </div>
+                        {/if}
+
+                        {#if now < convertTime(event.startTime, selectedTimezone) && getTimeUntilStart(event.startTime, $t)}
+                            <div
+                                class="absolute right-full top-1/2 -translate-y-1/2 mr-3 whitespace-nowrap z-30 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto"
+                            >
+                                <span
+                                    class="text-xs font-bold text-blue-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-blue-200"
+                                >
+                                    {getTimeUntilStart(event.startTime, $t)}
+                                </span>
+                                <div
+                                    class="absolute -right-1 w-2 h-2 bg-blue-500 rounded-full"
+                                ></div>
+                            </div>
+                        {/if}
                     </div>
-
-                <div
-                    class="absolute inset-0 z-10"
-                    style="background: linear-gradient(90deg, {event.color} 35%, {event.color}D9 50%, transparent 100%);"
-                ></div>
-            </div>
-
-            <div class="relative z-20 h-full w-full pointer-events-none">
-                <div 
-                    class="sticky left-0 inline-flex items-center gap-3 px-3 h-full max-w-full pointer-events-auto"
-                >
-                    {#if event.type === "web"}
-                        <div
-                            class="flex items-center gap-1.5 bg-black/20 rounded px-2 py-1 text-white shrink-0"
-                        >
-                            <Icon name="link" class="w-4 h-4" />
-                            <span class="text-xs font-bold uppercase">Web</span>
-                        </div>
-                    {/if}
-
-                    <div class="h-6 w-[2px] bg-white/60 shrink-0"></div>
-
-                    <div class="flex flex-col justify-center min-w-0">
-                        <span class="text-white font-bold text-sm leading-tight truncate drop-shadow-md">
-                            {getEventName(event)}
-                        </span>
-                        <span class="text-white/80 text-[10px] uppercase font-bold tracking-wider">
-                            {new Date(event.startTime).getDate()}
-                            {$t(
-                                `months_gen.${new Date(event.startTime).toLocaleString("en-US", { month: "long" }).toLowerCase()}`
-                            )}
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </button>
-
-        {#if now >= convertTime(event.startTime, selectedTimezone) && getRemainingTime(event.endTime, $t)}
-            <div class="absolute left-full top-1/2 -translate-y-1/2 ml-3 whitespace-nowrap z-30 flex items-center">
-                <span class="text-xs font-bold text-green-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-green-200">
-                    {getRemainingTime(event.endTime, $t)}
-                </span>
-                <div class="absolute -left-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            </div>
-        {/if}
-
-        {#if now < convertTime(event.startTime, selectedTimezone) && getTimeUntilStart(event.startTime, $t)}
-            <div class="absolute right-full top-1/2 -translate-y-1/2 mr-3 whitespace-nowrap z-30 flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto">
-                <span class="text-xs font-bold text-blue-600 bg-white/80 px-2 py-1 rounded shadow-sm backdrop-blur-sm border border-blue-200">
-                    {getTimeUntilStart(event.startTime, $t)}
-                </span>
-                <div class="absolute -right-1 w-2 h-2 bg-blue-500 rounded-full"></div>
-            </div>
-        {/if}
-    </div>
-{/each}
+                {/each}
             </div>
         </div>
     </div>

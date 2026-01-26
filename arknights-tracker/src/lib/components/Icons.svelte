@@ -299,26 +299,17 @@
     </svg>
 {:else if name === "timeline"}
     <svg
-        class={$$props.class}
+            class={$$props.class}
         style={$$props.style}
-        width="25"
-        height="28"
-        viewBox="0 0 25 28"
+        width="27"
+        height="24"
+        viewBox="0 0 27 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <path d="M5.5 6.5H1.5V25H5.5" stroke="currentColor" stroke-width="3" />
         <path
-            d="M10 26V6.5L19 12.5H23.5V19H19L10 26Z"
+            d="M9 3.42871H18V0H22.5V3.42871H27V24H0V3.42871H4.5V0H9V3.42871ZM21.5 18.5V23.207L26.207 18.5H21.5ZM4.5 16H21.375V12.5713H4.5V16ZM4.5 10.2861H15.75V6.85742H4.5V10.2861Z"
             fill="currentColor"
-            stroke="currentColor"
-        />
-        <rect width="2" height="2" fill="currentColor" />
-        <rect x="5" width="2" height="2" fill="currentColor" />
-        <path
-            d="M20 26V23H23L20 26Z"
-            fill="currentColor"
-            stroke="currentColor"
         />
     </svg>
 {:else if name === "main"}
@@ -2014,6 +2005,81 @@
         <path
             d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
             fill="#EA4335"
+        />
+    </svg>
+{:else if name == "headhunting"}
+    <svg
+        width="10"
+        height="10"
+        viewBox="0 0 20 21"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <line
+            y1="10.3438"
+            x2="20"
+            y2="10.3438"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <line
+            x1="3.62136"
+            y1="1.17277"
+            x2="16.6214"
+            y2="19.1728"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+        <path
+            d="M10 10.5781L16.2566 1.41587"
+            stroke="currentColor"
+            stroke-width="4"
+        />
+    </svg>
+{:else if name == "event"}
+    <svg
+        width="12"
+        height="12"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g clip-path="url(#clip0_1702_80878)">
+            <path
+                d="M8.0026 3.76018V8.0026L12 8M14.6693 8.0026C14.6693 11.6845 11.6845 14.6693 8.0026 14.6693C4.32071 14.6693 1.33594 11.6845 1.33594 8.0026C1.33594 4.32071 4.32071 1.33594 8.0026 1.33594C11.6845 1.33594 14.6693 4.32071 14.6693 8.0026Z"
+                stroke="currentColor"
+                stroke-width="2"
+            />
+        </g>
+        <defs>
+            <clipPath id="clip0_1702_80878">
+                <rect width="16" height="16" fill="currentColor" />
+            </clipPath>
+        </defs>
+    </svg>
+{:else if name == "atkEvent"}
+    <svg
+        width="10"
+        height="10"
+        viewBox="0 0 22 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M18.48 0C13.4933 5.11064 2.64 15.84 2.64 15.84L6.16 19.36L22 3.52V0H18.48Z"
+            fill="white"
+        />
+        <path
+            d="M2.64 17.6L9.61656e-07 20.24L1.76 22L4.4 19.36L2.64 17.6Z"
+            fill="white"
+        />
+        <path
+            d="M1.53873e-07 3.52C5.11064 8.50667 15.84 19.36 15.84 19.36L19.36 15.84L3.52 5.62938e-07L0 7.16811e-07L1.53873e-07 3.52Z"
+            fill="white"
+        />
+        <path
+            d="M17.6 19.36L20.24 22L22 20.24L19.36 17.6L17.6 19.36Z"
+            fill="white"
         />
     </svg>
 {/if}

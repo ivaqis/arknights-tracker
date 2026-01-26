@@ -66,6 +66,9 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'skill-icon':
             return `/images/operators/skills/${withExt(name)}`;
+
+        case 'operator-preview':
+            return `/images/operators/preview/${withExt(name)}`;
             
         case 'operator-icon':
         default:

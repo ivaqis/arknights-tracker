@@ -23,9 +23,13 @@
 </script>
 
 <svelte:head>
-  <title>Arknights Tracker & Statistics | Goyfield</title>
-  <meta name="description" content="Track your Arknights pulls, analyze drop rates, calculate 6-star luck, and view global pull statistics. Import your gacha history easily. Отслеживайте свои крутки в Arknights Endfield, просматривайте шансы выпадения. Импортируйте свою историю гача.">
-  <meta name="keywords" content="Arknights, Gacha Tracker, Pull History, Statistics, Аркнайтс, История круток, История гачи, Статистика">
+  <title>{$t("seo.title")}</title>
+  
+  <meta name="description" content={$t("seo.description")}>
+  <meta name="keywords" content={$t("seo.keywords")}>
+  
+  <meta property="og:title" content={$t("seo.title")} />
+  <meta property="og:description" content={$t("seo.description")} />
 </svelte:head>
 
 <div class="flex min-h-screen bg-[#F9F9F9]">

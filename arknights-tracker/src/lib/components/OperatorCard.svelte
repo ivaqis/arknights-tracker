@@ -77,7 +77,7 @@
        <div class="absolute inset-0 bottom-[21%] rounded-t-[4px] overflow-hidden bg-[#f0f0f0]">
             <Images
                 id={operator.id}
-                variant="operator-icon"
+                variant="operator-preview"
                 size="100%"
                 alt={operator.name}
                 className="w-full h-full object-cover"

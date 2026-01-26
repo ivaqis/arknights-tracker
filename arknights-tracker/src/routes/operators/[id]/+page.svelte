@@ -271,7 +271,7 @@
         </div>
         <!-- Градиент, чтобы текст читался (опционально) -->
         <div
-            class="absolute inset-0 bg-gradient-to-r from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10"
+            class="absolute inset-0 bg-gradient-to-r from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-40"
         ></div>
     </div>
 
@@ -653,7 +653,7 @@
                     >
                         <div class="w-8 h-8 rounded bg-gray-200"></div>
                         <span class="text-xs text-gray-400 font-bold uppercase"
-                            >XP Items (Coming Soon)</span
+                            >XP wip</span
                         >
                     </div>
                 </div>
@@ -773,7 +773,7 @@
                 </div>
             {:else}
                 <!-- Заглушка для других вкладок -->
-                <div class="text-white opacity-50 text-xl font-bold mt-10">
+                <div class="text-white text-xl font-bold mt-10">
                     WIP: {activeTab} section
                 </div>
             {/if}

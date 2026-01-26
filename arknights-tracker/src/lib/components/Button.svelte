@@ -83,7 +83,7 @@
     {variant === 'round' ? 'rounded-full border-2 bg-white h-12 px-6' : ''}
     {variant === 'roundSmall' ? 'rounded-full border-2 bg-white h-8 px-4 text-xs font-bold' : ''}
 
-    {!isRound && variant !== 'menuButton' ? 'w-full h-14 rounded-r-sm' : ''}
+    {!isRound && variant !== 'menuButton' ? 'w-full h-14 rounded-r-md' : ''}
 
     {variant === 'menuButton' ? 'w-full h-12 rounded-r-md bg-[#2A2A2A] border-none' : ''}
 

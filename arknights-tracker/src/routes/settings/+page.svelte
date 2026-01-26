@@ -351,7 +351,7 @@
         </h2>
 
         <div
-            class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col gap-4"
+            class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm flex flex-col gap-4 max-w-[500pt]"
         >
             <div class="flex items-center justify-between flex-wrap gap-2">
                 <div class="flex items-center gap-2 font-bold text-[#21272C]">
