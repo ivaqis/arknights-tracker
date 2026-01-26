@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Goyfeild | Трекер круток для Arknights Endfield ",
+    "title": "Goyfield: Трекер круток для Arknights Endfield",
     "description": "Track your Arknights Endfield pulls",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators"
   },
@@ -104,7 +104,16 @@
     "enableGlobalStats": "Включить историю в глобальную статистику",
     "emptyError": "Введите ссылку",
     "statusUpToDate": "История круток актуальна",
-    "scriptInstruction": "Скопируйте скрипт ниже, запустите PowerShell, вставьте и нажмите Enter. Ссылка скопируется автоматически"
+    "scriptInstruction": "Скопируйте скрипт ниже, запустите PowerShell, вставьте и нажмите Enter. Ссылка скопируется автоматически",
+    "tab_new": "Новый импорт",
+    "tab_saved": "Сохраненные",
+    "save_token_label": "Кешировать токен",
+    "save_token_desc": "Сохраняет ссылку в браузере для быстрого доступа в будущем.",
+    "token_name_label": "Название аккаунта",
+    "token_name_placeholder": "Напр. Main (69696969)",
+    "no_saved_tokens": "Нет сохраненных токенов",
+    "select_token": "Выбрать",
+    "delete_confirm": "Удалить этот токен из памяти?"
   },
   "characters": {
     "endministrator1": "Эндминистратор",
