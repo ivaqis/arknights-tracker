@@ -299,7 +299,7 @@
     </svg>
 {:else if name === "timeline"}
     <svg
-            class={$$props.class}
+        class={$$props.class}
         style={$$props.style}
         width="27"
         height="24"
@@ -2082,4 +2082,31 @@
             fill="white"
         />
     </svg>
+{:else if name == "save"}
+    <svg
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M34 42V26H14V42M14 6V16H30M38 42H10C8.93913 42 6 42 6 42C6 42 6 39.0609 6 38V10C6 8.93913 6.00029 6.0006 6.00029 6.0006C6.00029 6.0006 8.93913 6 10 6H32L42 16V38C42 39.0609 42 42 42 42C42 42 39.0609 42 38 42Z"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linejoin="round"
+        />
+    </svg>
+{:else if name == "chevronRight"}
+<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.75 0.664062L8.75 9.66406L0.75 18.6641" stroke="black" stroke-width="2"/>
+</svg>
+
+
+{:else if name == "chevronLeft"}
+<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.33594 18.6641L1.33594 9.66406L9.33594 0.664063" stroke="black" stroke-width="2"/>
+</svg>
+
+
 {/if}

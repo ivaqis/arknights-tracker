@@ -313,7 +313,7 @@
       <div
         role="button"
         tabindex="0"
-        class="relative w-full aspect-[21/9] bg-gray-200 rounded-xl overflow-hidden shadow-2xl group cursor-pointer border border-white/50 outline-none focus:ring-4 focus:ring-[#FACC15]"
+        class="relative w-full aspect-[21/9] bg-gray-200 rounded-xl overflow-hidden shadow-2xl group cursor-pointer border border-white/50 outline-none focus:ring-4 focus:ring-[#FACC15] select-none"
         on:click={() => (selectedBanner = activeBanners[currentBannerIndex])}
         on:keydown={(e) =>
           (e.key === "Enter" || e.key === " ") &&
@@ -328,10 +328,33 @@
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity"
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none"
               ></div>
             </div>
           {/key}
+
+          <button
+            type="button"
+            class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
+            on:click|stopPropagation={() => {
+              currentBannerIndex =
+                (currentBannerIndex - 1 + activeBanners.length) %
+                activeBanners.length;
+            }}
+          >
+            <Icon name="chevronLeft" style="width: 24px; height: 24px;" />
+          </button>
+
+          <button
+            type="button"
+            class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
+            on:click|stopPropagation={() => {
+              currentBannerIndex =
+                (currentBannerIndex + 1) % activeBanners.length;
+            }}
+          >
+            <Icon name="chevronRight" style="width: 24px; height: 24px;" />
+          </button>
         {:else}
           <div
             class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold tracking-widest"

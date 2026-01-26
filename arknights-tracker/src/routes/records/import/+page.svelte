@@ -311,11 +311,17 @@
                         {:else}
                             <div class="grid gap-3">
                                 {#each savedTokens as token, i}
-                                    <button 
+                                    <div 
                                         class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
-                                        on:click={() => selectToken(token)}
                                     >
-                                        <div class="pl-2">
+                                        <button
+                                            type="button"
+                                            class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
+                                            aria-label="Select {token.name}"
+                                            on:click={() => selectToken(token)}
+                                        ></button>
+
+                                        <div class="pl-2 relative z-10 pointer-events-none">
                                             <div class="flex items-center gap-2">
                                                 <div class="font-bold text-[#21272C] text-lg font-sdk">{token.name}</div>
                                             </div>
@@ -327,20 +333,21 @@
                                             </div>
                                         </div>
 
-                                        <div class="flex items-center gap-4 z-10">
+                                        <div class="flex items-center gap-4 z-20 relative pointer-events-none">
                                             <span class="text-xs font-bold text-[#21272C] bg-[#FFE145] px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-all transform translate-x-4 group-hover:translate-x-0">
                                                 {$t("import.select_token")}
                                             </span>
                                             
-                                            <div 
-                                                class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors"
+                                            <button 
+                                                type="button"
+                                                class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
                                                 title="Delete"
                                                 on:click|stopPropagation={() => deleteToken(i)}
                                             >
                                                 <Icon name="close" style="width: 18px; height: 18px;" />
-                                            </div>
+                                            </button>
                                         </div>
-                                    </button>
+                                    </div>
                                 {/each}
                             </div>
                         {/if}
