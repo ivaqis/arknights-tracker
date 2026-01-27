@@ -14,11 +14,11 @@
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
 
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
+  // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Запасной вариант) ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
   
-  // Безопасное получение локальных данных
+  // Парсим локальные данные
   $: localTotal = localStats.total || 0;
   $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
   $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
@@ -26,43 +26,51 @@
 
   let serverData = null;
 
-  // --- ДАННЫЕ ДЛЯ ОТОБРАЖЕНИЯ (Сервер > Локальные) ---
+  // --- ДАННЫЕ С СЕРВЕРА (С конвертацией типов) ---
+  // Если serverData пришел, берем оттуда. Если нет - локальные.
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
   
-  // Парсим строки "80.0" в числа для корректного отображения
+  // Важно: parseFloat, так как API отдает строки "80.0"
   $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
   $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
 
-  // --- РЕЙТИНГИ (Парсим в числа) ---
-  // Хелпер для парсинга, превращает "67" -> 67, null -> null
+  // --- РАНГИ (Топ X%) ---
+  // Хелпер: превращает "73" -> 73. Если null -> null.
   const parseRank = (val) => {
     if (val === null || val === undefined) return null;
     const num = parseFloat(val);
     return isNaN(num) ? null : num;
-  }
+  };
 
   $: rankTotal = parseRank(serverData?.rankTotal);
   $: rankLuck6 = parseRank(serverData?.rankLuck6);
   $: rank5050 = parseRank(serverData?.rank5050);
-  // rankLuck5 нет в API, поэтому он всегда будет null, если не добавить его на бэкенде
+  // rankLuck5 нет в API, поэтому он всегда null (показуха)
   $: rankLuck5 = parseRank(serverData?.rankLuck5); 
 
   // --- ЗАГРУЗКА ---
+  // Следим за изменением activeTab
   $: if (browser && activeTab) {
     loadRankings(activeTab);
   }
 
   async function loadRankings(poolId) {
-    serverData = null; // Сброс перед загрузкой
+    serverData = null; // Сбрасываем, чтобы было видно загрузку (или старые данные)
     const uid = localStorage.getItem("user_uid");
-    if (!uid) return;
+    
+    if (!uid) {
+        console.warn("No UID found locally");
+        return;
+    }
 
     try {
       const response = await fetchGlobalStats(uid, poolId);
-      console.log("Rankings response:", response); // Дебаг в консоль
-
+      
       if (response && response.code === 0 && response.data) {
+        console.log("✅ Stats Loaded:", response.data);
         serverData = response.data;
+      } else {
+        console.warn("Stats response empty or error:", response);
       }
     } catch (e) {
       console.error("Failed to load rankings:", e);

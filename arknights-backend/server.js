@@ -253,69 +253,77 @@ async function updateAggregatedStats(uid, allPulls) {
 
 // Математика подсчета (аналог того, что у тебя на фронте, но упрощено для БД)
 function calculateMath(pulls, bannerId) {
-    // Сортируем по времени
-    pulls.sort((a, b) => a.time - b.time || a.seqId - b.seqId);
+    // 1. Сортируем: сначала старые, потом новые
+    pulls.sort((a, b) => a.time - b.time || a.seqId.localeCompare(b.seqId));
 
-    // Находим конфиг баннера для Featured списка
+    // 2. Ищем конфиг баннера (для 50/50)
     let bannerConfig = BANNERS.find(b => b.id === bannerId);
-    // Fallback логика поиска
     if (!bannerConfig) {
+        // Fallback маппинг
         if (bannerId.includes('new')) bannerConfig = BANNERS.find(b => b.type === 'beginner');
         else if (bannerId.includes('special')) bannerConfig = BANNERS.find(b => b.type === 'special');
         else bannerConfig = BANNERS.find(b => b.type === 'standard');
     }
 
-    // Если список персонажей есть в конфиге (нужно добавить их в banners.js!), используем
-    // Для примера считаем, что мы не знаем featured, если их нет в конфиге.
-    // *Совет: Добавь featured6: ["Name1", "Name2"] в banners.js*
+    // Подготовка списка Featured (для 50/50)
     const featured6 = (bannerConfig && bannerConfig.featured6) ? bannerConfig.featured6 : [];
-
-    // Нормализация имени (убираем пробелы, lowerCase)
-    const normalize = s => s ? s.toLowerCase().replace(/\s+/g, "") : "";
+    const normalize = s => s ? s.toLowerCase().replace(/[^a-z0-9]/g, "") : ""; // Жесткая нормализация
     const normFeatured = featured6.map(normalize);
 
     let stats = {
         totalPulls: pulls.length,
-        total6: 0, sumPity6: 0,
-        total5: 0, sumPity5: 0,
-        won5050: 0, total5050: 0
+        total6: 0, 
+        sumPity6: 0,
+        total5: 0, 
+        sumPity5: 0, // Если нужно
+        won5050: 0, 
+        total5050: 0
     };
 
     let pityCounter = 0;
-    let last6WasFeatured = true; // По дефолту считаем, что пред. был ивентовый (гаранта нет)
+    // Важно: Предполагаем, что прошлый гарант был "выигран", чтобы первая лега считалась как 50/50
+    // Или наоборот, ставим true, чтобы считать, что гаранта нет. Обычно ставят true.
+    let last6WasFeatured = true; 
 
-    pulls.forEach((p, idx) => {
-        pityCounter++;
+    pulls.forEach((p) => {
+        const isFree = p.isFree || false; // Проверяем флаг
+        
+        // Увеличиваем пити ТОЛЬКО если крутка ПЛАТНАЯ
+        if (!isFree) {
+            pityCounter++;
+        }
 
-        // Хардкод для Special баннеров (Arknights): первые 10 круток не считаются в Pity статистики? 
-        // Или наоборот. Тут простая логика:
-
-        if (p.rarity === 6) {
+        // --- ОБРАБОТКА 6* (ЛЕГА) ---
+        if (p.rarity === 6) { // Внимание: В Endfield (как в AK) 6* имеет rarity=5 в коде? Проверь это! Обычно 0-5 (где 5 это топ).
             stats.total6++;
+            
+            // Если лега выпала на бесплатной крутке, какой у нее пити?
+            // Обычно считают текущий накопившийся.
             stats.sumPity6 += pityCounter;
 
             // Логика 50/50
-            // Работает, только если мы знаем список Featured персонажей!
             if (normFeatured.length > 0) {
                 const charName = normalize(p.name);
                 const isFeatured = normFeatured.includes(charName);
 
-                // Если прошлый был ивентовый (или это первая лега), то сейчас 50/50
+                // Если предыдущая лега была ивентовой (или это самая первая), 
+                // значит сейчас у нас ситуация 50/50
                 if (last6WasFeatured) {
                     stats.total5050++;
                     if (isFeatured) stats.won5050++;
                 }
+                
+                // Запоминаем статус текущей леги для следующего раза
                 last6WasFeatured = isFeatured;
             }
 
+            // Сброс гаранта после выпадения
             pityCounter = 0;
         }
-
-        if (p.rarity === 5) {
-            // Для 5* пити считаем отдельно, но тут упростим:
-            // Если нужна точная статистика по 5* пити, надо вести отдельный каунтер
+        
+        // --- ОБРАБОТКА 5* (Эпик) ---
+        else if (p.rarity === 5) { // Rarity 4 = 5 звезд
             stats.total5++;
-            // stats.sumPity5 += ... (нужен отдельный pityCounter5)
         }
     });
 
