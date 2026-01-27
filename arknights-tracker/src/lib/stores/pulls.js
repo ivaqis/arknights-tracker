@@ -14,18 +14,18 @@ function createPullStore() {
     // 1. Инициализируем стор дефолтными данными.
     // Это безопасно для сервера (SSR), так как мы не лезем в localStorage сразу.
     const { subscribe, set, update } = writable(JSON.parse(JSON.stringify(defaultData)));
-    
+
     let currentAccountId = null;
 
     // === ХЕЛПЕРЫ ===
-    
+
     const resetStore = () => {
         set(JSON.parse(JSON.stringify(defaultData)));
     };
 
     const restoreDatesAndStats = (data) => {
         if (!data || typeof data !== 'object') return;
-        
+
         Object.keys(data).forEach(key => {
             if (data[key] && Array.isArray(data[key].pulls)) {
                 data[key].pulls.forEach(p => {
@@ -48,13 +48,13 @@ function createPullStore() {
     };
 
     // === ОСНОВНАЯ ЛОГИКА ЗАГРУЗКИ ===
-    
+
     const loadDataForAccount = (id) => {
         if (!browser) return; // СТРОГАЯ ЗАЩИТА ОТ SSR
-        
+
         currentAccountId = id;
         const storageKey = `ark_tracker_data_${id}`;
-        
+
         try {
             const stored = localStorage.getItem(storageKey);
 
@@ -66,13 +66,13 @@ function createPullStore() {
             } else {
                 // Сценарий 2: Данных нет, проверяем миграцию (legacy)
                 const legacyData = localStorage.getItem('ark_tracker_pulls');
-                
+
                 if (legacyData && id === 'main') {
                     console.log("Migrating legacy data to Main account...");
                     const parsedLegacy = JSON.parse(legacyData);
                     restoreDatesAndStats(parsedLegacy);
                     set(parsedLegacy);
-                    
+
                     // Сохраняем в новый формат и чистим старый
                     saveDataToStorage(id, parsedLegacy);
                     localStorage.removeItem('ark_tracker_pulls');
@@ -88,7 +88,7 @@ function createPullStore() {
     };
 
     // === ПОДПИСКИ (ТОЛЬКО В БРАУЗЕРЕ) ===
-    
+
     if (browser) {
         // Подписываемся на смену аккаунта
         accountStore.selectedId.subscribe(id => {
@@ -128,8 +128,8 @@ function createPullStore() {
 
                         // 1. ВАЛИДАЦИЯ КОНСИСТЕНТНОСТИ
                         const allCurrentPulls = [
-                            ...(newData.standard?.pulls || []), 
-                            ...(newData.special?.pulls || []), 
+                            ...(newData.standard?.pulls || []),
+                            ...(newData.special?.pulls || []),
                             ...(newData["new-player"]?.pulls || [])
                         ];
 
@@ -141,7 +141,7 @@ function createPullStore() {
                         // 2. Группировка входящих данных
                         const incomingByBanner = {};
                         newPulls.forEach(p => {
-                            const bid = p.bannerId || 'standard'; 
+                            const bid = p.bannerId || 'standard';
                             if (!incomingByBanner[bid]) incomingByBanner[bid] = [];
                             incomingByBanner[bid].push(p);
                         });
@@ -152,8 +152,18 @@ function createPullStore() {
                         Object.keys(incomingByBanner).forEach(bid => {
                             // Определяем ключ (standard, special, new-player или кастомный event)
                             // Если баннера нет в структуре, кидаем в standard (или создаем новый ключ, если твоя логика это позволяет)
-                            const targetKey = newData[bid] ? bid : 'standard';
-                            
+                            let targetKey = bid;
+
+                            // Проверка: это известный ключ или оружие?
+                            const isKnownKey = newData[bid] || bid === 'standard' || bid === 'special' || bid === 'new-player';
+                            const isWeaponKey = bid.includes('weapon') || bid.includes('wepon') || bid.includes('constant');
+
+                            if (!isKnownKey && !isWeaponKey) {
+                                // Если это какой-то совсем левый ID (не оружие и не стандартный), 
+                                // тогда ладно, кидаем в стандарт как fallback.
+                                targetKey = 'standard';
+                            }
+
                             if (!newData[targetKey]) {
                                 newData[targetKey] = { pulls: [], stats: {} };
                             }
@@ -185,21 +195,21 @@ function createPullStore() {
                         if (hasUpdates) {
                             report.status = 'updated';
                             saveDataToStorage(currentAccountId, newData);
-                            
+
                             // --- ДОБАВЬ ЭТУ СТРОКУ (Обновляем время локально) ---
                             if (browser) localStorage.setItem("ark_last_sync", Date.now().toString());
                             // ----------------------------------------------------
 
                             // Авто-синхронизация
                             if (get(user)) {
-                                uploadLocalData(); 
+                                uploadLocalData();
                             }
 
                             resolve(report);
                             return newData;
                         } else {
                             resolve(report);
-                            return currentData; 
+                            return currentData;
                         }
 
                     } catch (error) {
