@@ -14,12 +14,12 @@
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
 
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Запасной вариант) ---
+  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
   $: localTotal = localStats.total || 0;
   
-  // Парсим локальные данные (float)
+  // Парсим локальные данные
   $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
   $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
   $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
@@ -28,8 +28,6 @@
   let serverData = null;
 
   // --- КОНВЕРТАЦИЯ ДЛЯ ОТОБРАЖЕНИЯ ---
-  // Если пришли данные с сервера — берем их. Если нет — локальные.
-  
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
   
   $: displayAvg6 = serverData?.myStats?.avg6 
@@ -40,7 +38,7 @@
       ? parseFloat(serverData.myStats.winRate) 
       : localWinRate;
 
-  // --- ПАРСИНГ РАНГОВ (Строки -> Числа) ---
+  // --- ПАРСИНГ РАНГОВ ---
   const safeParse = (val) => {
       if (val === null || val === undefined) return null;
       const num = parseFloat(val);
@@ -63,20 +61,32 @@
     const uid = localStorage.getItem("user_uid");
     if (!uid) return;
 
-    serverData = null; // Сброс для обновления UI
+    serverData = null; 
 
     try {
       const response = await fetchGlobalStats(uid, poolId);
       
-      // Тихий лог в консоль F12 (не на экран)
-      if (response && response.code === 0 && response.data) {
-        console.log(`✅ RatingCard: Stats Loaded for ${poolId}`, response.data);
-        serverData = response.data;
-      } else {
-        console.warn(`⚠️ RatingCard: No data or error for ${poolId}`, response);
-      }
+      console.log("API Response Raw:", response);
+
+      // [FIX] Умная проверка структуры ответа
+      if (response) {
+        // Вариант 1: Пришел полный пакет { code: 0, data: {...} }
+        if (response.code === 0 && response.data) {
+            console.log("✅ Data Loaded (Type A)");
+            serverData = response.data;
+        } 
+        // Вариант 2: Пришли сразу данные { found: true, myStats: {...} } (Твой случай)
+        else if (response.found === true || response.myStats) {
+            console.log("✅ Data Loaded (Type B - Direct)");
+            serverData = response;
+        }
+        // Вариант 3: Ошибка
+        else {
+            console.warn("⚠️ Unknown data format:", response);
+        }
+      } 
     } catch (e) {
-      console.error("❌ RatingCard: Fetch Failed", e);
+      console.error("❌ Fetch Failed", e);
     }
   }
 
