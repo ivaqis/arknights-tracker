@@ -141,13 +141,11 @@ async function handleUrlImport() {
         try {
             const response = await proxyImport(urlInput, isGlobalStatsEnabled);
             
-            // Если код 0 и есть список — ВСЁ ОТЛИЧНО
             if (response.code === 0 && response.data?.list) {
                 
-                // ПРОВЕРКА НА НЕСОВПАДЕНИЕ АККАУНТА (UID Check)
                 const importedUid = response.data.uid;
                 const currentUid = localStorage.getItem("user_uid");
-
+                /*
                 if (currentUid && importedUid && currentUid !== importedUid) {
                     let allTimestamps = [];
                     Object.values($pullData).forEach(pool => {
@@ -165,19 +163,16 @@ async function handleUrlImport() {
                         });
                         throw new Error(msg);
                     }
-                }
+                }*/
 
-                // СОХРАНЕНИЕ ТОКЕНА
                 if (isSaveTokenEnabled && tokenName.trim()) {
                     saveTokenToStorage(tokenName.trim(), urlInput);
                 }
 
-                // ОБНОВЛЕНИЕ UID
                 if (importedUid) {
                     localStorage.setItem("user_uid", importedUid);
                 }
 
-                // ПАРСИНГ И ИМПОРТ
                 const rawData = response.data.list;
                 const cleanPulls = parseGachaLog(rawData);
                 pendingData = cleanPulls;
@@ -186,15 +181,10 @@ async function handleUrlImport() {
                 previewReport = report;
 
             } else {
-                // [FIX] ВОТ ТУТ БЫЛА ПРОБЛЕМА
-                // Раньше тут всегда писалось "No pulls found".
-                // Теперь мы смотрим, вернул ли сервер текст ошибки.
                 
                 if (response.error || response.message || response.msg) {
-                    // Если сервер сказал "Token expired" или еще что-то
                     errorMsg = response.error || response.message || response.msg;
                 } else {
-                    // Если сервер молчит, но список пуст
                     errorMsg = $t("import.noData") || "No pulls found or Link Expired.";
                 }
             }
