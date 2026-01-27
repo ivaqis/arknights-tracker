@@ -14,39 +14,38 @@
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
 
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Считаем прямо в браузере) ---
+  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
-
-  // Берем готовые статы из стора (они там уже посчитаны)
   $: localStats = localStore.stats || {};
-
+  
+  // Безопасное получение локальных данных
   $: localTotal = localStats.total || 0;
-  $: localAvg6 = localStats.avg6 || "0.0";
-  $: localAvg5 = localStats.avg5 || "0.0";
+  $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
+  $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
+  $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
 
-  // Для 50/50 берем из локальной статистики
-  $: localWinRate = localStats.winRate?.percent || "0";
-  $: localTotal5050 = localStats.winRate?.total || 0;
-  $: localWon5050 = localStats.winRate?.won || 0;
+  let serverData = null;
 
-  // --- СЕРВЕРНЫЕ ДАННЫЕ (Приходят асинхронно) ---
-  let serverData = null; // Здесь будет лежать ответ API
-
-  // --- ИТОГОВЫЕ ПЕРЕМЕННЫЕ ДЛЯ ОТОБРАЖЕНИЯ ---
-  // Логика: Если сервер ответил данными, берем их. Если нет — показываем локальные.
-
+  // --- ДАННЫЕ ДЛЯ ОТОБРАЖЕНИЯ (Сервер > Локальные) ---
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
-  $: displayAvg6 = serverData?.myStats?.avg6 ?? localAvg6;
-  $: displayAvg5 = "---"; // API обычно не возвращает avg5 для рейтинга, но если вернет - добавь сюда
+  
+  // Парсим строки "80.0" в числа для корректного отображения
+  $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
+  $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
 
-  // 50/50: Сервер может вернуть winRate просто числом/строкой
-  $: displayWinRate = serverData?.myStats?.winRate ?? localWinRate;
+  // --- РЕЙТИНГИ (Парсим в числа) ---
+  // Хелпер для парсинга, превращает "67" -> 67, null -> null
+  const parseRank = (val) => {
+    if (val === null || val === undefined) return null;
+    const num = parseFloat(val);
+    return isNaN(num) ? null : num;
+  }
 
-  // Рейтинги (Top X%) - они есть только на сервере
-  $: rankTotal = serverData?.rankTotal ?? null;
-  $: rankLuck6 = serverData?.rankLuck6 ?? null;
-  $: rank5050 = serverData?.rank5050 ?? null;
-  $: rankLuck5 = serverData?.rankLuck5 ?? null;
+  $: rankTotal = parseRank(serverData?.rankTotal);
+  $: rankLuck6 = parseRank(serverData?.rankLuck6);
+  $: rank5050 = parseRank(serverData?.rank5050);
+  // rankLuck5 нет в API, поэтому он всегда будет null, если не добавить его на бэкенде
+  $: rankLuck5 = parseRank(serverData?.rankLuck5); 
 
   // --- ЗАГРУЗКА ---
   $: if (browser && activeTab) {
@@ -60,6 +59,8 @@
 
     try {
       const response = await fetchGlobalStats(uid, poolId);
+      console.log("Rankings response:", response); // Дебаг в консоль
+
       if (response && response.code === 0 && response.data) {
         serverData = response.data;
       }
@@ -69,7 +70,7 @@
   }
 
   function formatVal(val) {
-    return val !== null && val !== undefined ? val : "---";
+    return val !== null && val !== undefined && !isNaN(val) ? val : "---";
   }
 </script>
 
@@ -86,13 +87,13 @@
         </div>
         <div class="text-xs text-gray-400 mt-1">
           {$t("page.rating.luckyMoreThan", {
-            n: rankTotal !== null ? rankTotal : "...",
+            n: rankTotal !== null ? rankTotal : "..."
           })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-gray-900 font-nums">
-          {rankTotal !== null ? `Top ${100 - rankTotal}%` : "..."}
+            {rankTotal !== null ? `Top ${(100 - rankTotal).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {displayTotal > 0 ? displayTotal.toLocaleString("ru-RU") : "---"}
@@ -107,13 +108,13 @@
         </div>
         <div class="text-xs text-gray-400 mt-1">
           {$t("page.rating.luckyLuckierThan", {
-            n: rank5050 !== null ? rank5050 : "...",
+            n: rank5050 !== null ? rank5050 : "..."
           })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-[#21272C] font-nums">
-          {rank5050 !== null ? `Top ${100 - rank5050}%` : "..."}
+          {rank5050 !== null ? `Top ${(100 - rank5050).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayWinRate)}%
@@ -129,13 +130,13 @@
         </div>
         <div class="text-xs text-gray-400 mt-1">
           {$t("page.rating.luckyLuckierThan", {
-            n: rankLuck6 !== null ? rankLuck6 : "...",
+            n: rankLuck6 !== null ? rankLuck6 : "..."
           })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-gray-900 font-nums">
-          {rankLuck6 !== null ? `Top ${100 - rankLuck6}%` : "..."}
+          {rankLuck6 !== null ? `Top ${(100 - rankLuck6).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayAvg6)}
@@ -151,12 +152,12 @@
           5 <Icon name="star" class="w-4 h-4" />
         </div>
         <div class="text-xs text-gray-400 mt-1">
-          {$t("page.rating.luckyLessLuckierThan", { n: rankLuck5 || "..." })}
+            {$t("page.rating.luckyLessLuckierThan", { n: rankLuck5 !== null ? rankLuck5 : "..." })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-[#21272C] font-nums">
-          {$t("page.rating.luckyTopPercent", { n: rankLuck5 || "..." })}
+            {rankLuck5 !== null ? `Top ${(100 - rankLuck5).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(localAvg5)}
