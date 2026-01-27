@@ -109,7 +109,7 @@
     "tab_new": "New import",
     "tab_saved": "Saved tokens",
     "save_token_label": "Cache token",
-    "save_token_desc": "Saves the link in browser for quick future access.",
+    "save_token_desc": "Saves the link in browser for quick future access. Token life aproximatly 5-7 days",
     "token_name_label": "Account name",
     "token_name_placeholder": "e.g. Main (69696969)",
     "no_saved_tokens": "No saved tokens found",
