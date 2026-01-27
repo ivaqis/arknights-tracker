@@ -7,7 +7,7 @@
   import Button from "./Button.svelte";
   import Icon from "./Icons.svelte";
 
-  // --- НАСТРОЙКА ТАБОВ ---
+  // --- ТАБЫ ---
   $: ratingTabs = [...bannerTypes]
     .filter((b) => b.showInRating)
     .sort((a, b) => a.order - b.order);
@@ -17,63 +17,66 @@
   // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Запасной вариант) ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
-  
-  // Парсим локальные данные
   $: localTotal = localStats.total || 0;
+  
+  // Парсим локальные данные (float)
   $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
   $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
   $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
 
+  // --- ДАННЫЕ С СЕРВЕРА ---
   let serverData = null;
 
-  // --- ДАННЫЕ С СЕРВЕРА (С конвертацией типов) ---
-  // Если serverData пришел, берем оттуда. Если нет - локальные.
+  // --- КОНВЕРТАЦИЯ ДЛЯ ОТОБРАЖЕНИЯ ---
+  // Если пришли данные с сервера — берем их. Если нет — локальные.
+  
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
   
-  // Важно: parseFloat, так как API отдает строки "80.0"
-  $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
-  $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
+  $: displayAvg6 = serverData?.myStats?.avg6 
+      ? parseFloat(serverData.myStats.avg6) 
+      : localAvg6;
 
-  // --- РАНГИ (Топ X%) ---
-  // Хелпер: превращает "73" -> 73. Если null -> null.
-  const parseRank = (val) => {
-    if (val === null || val === undefined) return null;
-    const num = parseFloat(val);
-    return isNaN(num) ? null : num;
+  $: displayWinRate = serverData?.myStats?.winRate 
+      ? parseFloat(serverData.myStats.winRate) 
+      : localWinRate;
+
+  // --- ПАРСИНГ РАНГОВ (Строки -> Числа) ---
+  const safeParse = (val) => {
+      if (val === null || val === undefined) return null;
+      const num = parseFloat(val);
+      return isNaN(num) ? null : num;
   };
 
-  $: rankTotal = parseRank(serverData?.rankTotal);
-  $: rankLuck6 = parseRank(serverData?.rankLuck6);
-  $: rank5050 = parseRank(serverData?.rank5050);
-  // rankLuck5 нет в API, поэтому он всегда null (показуха)
-  $: rankLuck5 = parseRank(serverData?.rankLuck5); 
+  $: rankTotal = safeParse(serverData?.rankTotal);
+  $: rankLuck6 = safeParse(serverData?.rankLuck6);
+  $: rank5050 = safeParse(serverData?.rank5050);
+  $: rankLuck5 = safeParse(serverData?.rankLuck5);
 
   // --- ЗАГРУЗКА ---
-  // Следим за изменением activeTab
   $: if (browser && activeTab) {
     loadRankings(activeTab);
   }
 
   async function loadRankings(poolId) {
-    serverData = null; // Сбрасываем, чтобы было видно загрузку (или старые данные)
-    const uid = localStorage.getItem("user_uid");
+    if (!browser) return;
     
-    if (!uid) {
-        console.warn("No UID found locally");
-        return;
-    }
+    const uid = localStorage.getItem("user_uid");
+    if (!uid) return;
+
+    serverData = null; // Сброс для обновления UI
 
     try {
       const response = await fetchGlobalStats(uid, poolId);
       
+      // Тихий лог в консоль F12 (не на экран)
       if (response && response.code === 0 && response.data) {
-        console.log("✅ Stats Loaded:", response.data);
+        console.log(`✅ RatingCard: Stats Loaded for ${poolId}`, response.data);
         serverData = response.data;
       } else {
-        console.warn("Stats response empty or error:", response);
+        console.warn(`⚠️ RatingCard: No data or error for ${poolId}`, response);
       }
     } catch (e) {
-      console.error("Failed to load rankings:", e);
+      console.error("❌ RatingCard: Fetch Failed", e);
     }
   }
 
@@ -90,18 +93,14 @@
   <div class="space-y-6">
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-gray-700">
-          {$t("page.rating.luckyTotal")}
-        </div>
+        <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
         <div class="text-xs text-gray-400 mt-1">
-          {$t("page.rating.luckyMoreThan", {
-            n: rankTotal !== null ? rankTotal : "..."
-          })}
+          {$t("page.rating.luckyMoreThan", { n: rankTotal ?? "..." })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-gray-900 font-nums">
-            {rankTotal !== null ? `Top ${(100 - rankTotal).toFixed(0)}%` : "..."}
+          {rankTotal !== null ? `Top ${(100 - rankTotal).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {displayTotal > 0 ? displayTotal.toLocaleString("ru-RU") : "---"}
@@ -111,13 +110,9 @@
 
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-gray-700">
-          {$t("page.rating.lucky5050")}
-        </div>
+        <div class="font-medium text-gray-700">{$t("page.rating.lucky5050")}</div>
         <div class="text-xs text-gray-400 mt-1">
-          {$t("page.rating.luckyLuckierThan", {
-            n: rank5050 !== null ? rank5050 : "..."
-          })}
+          {$t("page.rating.luckyLuckierThan", { n: rank5050 ?? "..." })}
         </div>
       </div>
       <div class="text-right">
@@ -133,13 +128,10 @@
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-[#21272C] flex items-center gap-1">
-          {$t("page.rating.lucky6")}
-          6 <Icon name="star" class="w-4 h-4" />
+          {$t("page.rating.lucky6")} 6 <Icon name="star" class="w-4 h-4" />
         </div>
         <div class="text-xs text-gray-400 mt-1">
-          {$t("page.rating.luckyLuckierThan", {
-            n: rankLuck6 !== null ? rankLuck6 : "..."
-          })}
+          {$t("page.rating.luckyLuckierThan", { n: rankLuck6 ?? "..." })}
         </div>
       </div>
       <div class="text-right">
@@ -147,8 +139,7 @@
           {rankLuck6 !== null ? `Top ${(100 - rankLuck6).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
-          {formatVal(displayAvg6)}
-          {$t("page.rating.avg")}
+          {formatVal(displayAvg6)} {$t("page.rating.avg")}
         </div>
       </div>
     </div>
@@ -156,20 +147,18 @@
     <div class="flex justify-between items-end border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-[#21272C] flex items-center gap-1">
-          {$t("page.rating.lucky5")}
-          5 <Icon name="star" class="w-4 h-4" />
+          {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />
         </div>
         <div class="text-xs text-gray-400 mt-1">
-            {$t("page.rating.luckyLessLuckierThan", { n: rankLuck5 !== null ? rankLuck5 : "..." })}
+          {$t("page.rating.luckyLessLuckierThan", { n: rankLuck5 ?? "..." })}
         </div>
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-[#21272C] font-nums">
-            {rankLuck5 !== null ? `Top ${(100 - rankLuck5).toFixed(0)}%` : "..."}
+          {rankLuck5 !== null ? `Top ${(100 - rankLuck5).toFixed(0)}%` : "..."}
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
-          {formatVal(localAvg5)}
-          {$t("page.rating.avg")}
+          {formatVal(localAvg5)} {$t("page.rating.avg")}
         </div>
       </div>
     </div>
@@ -179,9 +168,7 @@
         <Button
           variant="roundSmall"
           color={activeTab === tab.id ? "black" : "gray"}
-          className={activeTab === tab.id
-            ? "shadow-md"
-            : "opacity-70 hover:opacity-100"}
+          className={activeTab === tab.id ? "shadow-md" : "opacity-70 hover:opacity-100"}
           onClick={() => (activeTab = tab.id)}
         >
           {$t(tab.i18nKey)}
