@@ -153,8 +153,7 @@ app.post('/api/import', async (req, res) => {
                         let finalPoolId;
 
                         if (isWeaponScan) {
-                            const rawId = item.poolId || item.bannerId;
-                            finalPoolId = mapPoolTypeToShort(rawId); 
+                            finalPoolId = item.poolId || item.bannerId; 
                         } else {
                             finalPoolId = mapPoolTypeToShort(poolType);
                         }

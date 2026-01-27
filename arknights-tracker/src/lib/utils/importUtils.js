@@ -18,31 +18,33 @@ export function getInternalBannerType(rawId) {
     if (!rawId) return 'standard';
     const id = String(rawId).toLowerCase().trim();
 
-    // 1. ОРУЖИЕ (Возвращаем ОРИГИНАЛЬНЫЙ ID, чтобы разделить гаранты)
-    if (id.includes('weapon') || id.includes('wepon') || id.includes('constant')) {
-        // Мы возвращаем "сырой" ID (например, weponbox_1_0_1), 
-        // чтобы статистика считалась для каждого баннера отдельно.
+    // 1. ОРУЖИЕ
+    // Добавили проверку на 'weap' и 'constant'
+    if (id.includes('weapon') || id.includes('wepon') || id.includes('weap') || id.includes('constant')) {
+        // Возвращаем как есть, чтобы работали раздельные гаранты
         return rawId; 
     }
 
-    // 2. ПЕРСОНАЖИ (Объединяем, так как гарант общий)
+    // 2. ПЕРСОНАЖИ
     if (id === '2' || id.includes('beginner') || id.includes('new') || id.includes('novice')) {
         return 'new-player';
     }
     
+    // ВАЖНО: Эта проверка срабатывала раньше для 'weap-standard', теперь не будет
     if (id === '1' || id.includes('standard') || id.includes('permanent')) {
         return 'standard';
     }
 
-    // Fallback для персонажей
     return 'special';
 }
 
-// Хелпер для определения категории (нужен для UI, чтобы понять в какую вкладку сунуть этот ID)
+// Хелпер для UI (чтобы понять, в какую вкладку сунуть этот странный ID)
 export function getWeaponCategory(bannerId) {
     const id = String(bannerId).toLowerCase();
+    // Сюда попадут weaponbox_constant_1, weaponbox_constant_2...
     if (id.includes('constant') || id.includes('standard')) return 'weap-standard';
-    if (id.includes('weapon') || id.includes('wepon')) return 'weap-special';
+    // Сюда попадут ивентовые пушки
+    if (id.includes('weapon') || id.includes('wepon') || id.includes('weap')) return 'weap-special';
     return 'other';
 }
 
