@@ -201,11 +201,8 @@ async function handleUrlImport() {
 
         } catch (err) {
             console.error("Import Error:", err);
-            
-            // [FIX] Улучшенная обработка ошибок в catch
-            // Если ошибка содержит текст про "No pulls found" (от бэкенда)
             if (err.message && (err.message.includes("No pulls found") || err.message.includes("generate UID"))) {
-                 errorMsg = "История пуста или ссылка устарела. UID не найден.";
+                 errorMsg = $t("import.errHistoryEmpty") || "No pulls found or Link Expired.";
             } else {
                  errorMsg = err.message || "Unknown Error";
             }

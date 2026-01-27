@@ -1,7 +1,7 @@
 {
   "error_account_mismatch": "Ошибка: Несовпадение аккаунта! У вас уже есть история с {startDate} по {endDate}. Пожалуйста, убедитесь, что выбран правильный аккаунт.",
   "seo": {
-    "title": "Goyfield: Arknights Endfield Pull Tracker",
+    "title": "Goyfield - Трекер круток для Arknights Endfield",
     "description": "Отслеживайте свои крутки в Arknights Endfield",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники"
   },
@@ -114,7 +114,8 @@
     "token_name_placeholder": "Напр. Main (69696969)",
     "no_saved_tokens": "Нет сохраненных токенов",
     "select_token": "Выбрать",
-    "delete_confirm": "Удалить этот токен из памяти?"
+    "delete_confirm": "Удалить этот токен из памяти?",
+    "errHistoryEmpty": "История пуста или ссылка устарела. UID не найден."
   },
   "characters": {
     "endministrator1": "Эндминистратор",

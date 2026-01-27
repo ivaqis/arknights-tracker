@@ -10,17 +10,27 @@ const crypto = require('crypto');
 function generateStableUid(pulls) {
     if (!pulls || pulls.length === 0) return null;
 
-    // 1. Сортируем крутки по времени (от старых к новым), чтобы найти самые первые
-    // Важно копировать массив [...], чтобы не сломать порядок в основном потоке
+    // ВАРИАНТ 1 (Правильный): Ищем настоящий UID в данных
+    // Пробегаем по списку и ищем любую запись, где есть поле uid
+    const itemWithUid = pulls.find(p => p.uid && p.uid !== "" && p.uid !== "0");
+    
+    if (itemWithUid) {
+        // Возвращаем реальный UID игрока (обычно это цифры, но приводим к строке)
+        return itemWithUid.uid.toString();
+    }
+
+    // ВАРИАНТ 2 (Запасной): Если вдруг разработчики скрыли UID (маловероятно)
+    // Генерируем хеш, но берем больше данных, чтобы избежать коллизий
+    console.warn("⚠️ Real UID not found in pulls! Falling back to hash.");
+    
+    // Сортируем
     const sorted = [...pulls].sort((a, b) => a.timestamp - b.timestamp || a.seqId - b.seqId);
 
-    // 2. Берем первые 3 крутки (или все, если их меньше 3)
-    // Этого достаточно для уникальности (время + имя + баннер)
-    const fingerprintData = sorted.slice(0, 3).map(p =>
-        `${p.timestamp}_${p.poolId}_${p.name}`
+    // Берем первые 10 круток (вместо 3), шанс совпадения ниже
+    const fingerprintData = sorted.slice(0, 10).map(p => 
+        `${p.timestamp}_${p.poolId}_${p.name}_${p.rarity}`
     ).join('|');
 
-    // 3. Создаем MD5 хеш от этой строки
     return 'u_' + crypto.createHash('md5').update(fingerprintData).digest('hex');
 }
 
