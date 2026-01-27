@@ -99,10 +99,10 @@
     {#each homeBanners as b}
       <BannerCard bannerId={b.id} titleKey={b.i18nKey} />
     {/each}
-
+<!--
     <div class="xl:col-span-1">
       <RatingCard {userLuck6} {userLuck5} {totalPulls} />
-    </div>
+    </div>-->
 
     <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 min-w-[320px]">
       <h3 class="text-xl font-bold mb-4 font-sdk text-[#21272C]">
