@@ -91,10 +91,9 @@ app.post('/api/import', async (req, res) => {
             let lastId = "";
             let pageCount = 1;
 
-            // [NEW] Логика для оружия
+            // Объявляем переменную
             const isWeaponScan = poolType === 'WEAPON_FETCH_ALL';
             
-            // Выбираем URL
             const currentApiUrl = isWeaponScan 
                 ? 'https://ef-webview.gryphline.com/api/record/weapon'
                 : 'https://ef-webview.gryphline.com/api/record/char';
@@ -106,7 +105,6 @@ app.post('/api/import', async (req, res) => {
                     token, lang, server_id: serverId
                 });
 
-                // [ВАЖНО] pool_type добавляем только для персонажей. Оружие качаем всё скопом.
                 if (!isWeaponScan) {
                     params.append('pool_type', poolType);
                 }
@@ -131,44 +129,40 @@ app.post('/api/import', async (req, res) => {
                     }
 
                     const list = result.data?.list || [];
+                    
+                    // [ИСПРАВЛЕНИЕ ЗДЕСЬ] Используем isWeaponScan
                     const newItems = list.filter(item => {
-                        const uniqueKey = (isWeapon ? 'w_' : 'c_') + item.seqId;
+                        const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                         return !visitedIds.has(uniqueKey);
                     });
 
                     if (list.length > 0 && newItems.length === 0) {
-                        // Если все дубликаты - останавливаем страницу
                         hasMore = false;
                         break;
                     }
 
                     console.log(`  -> Page ${pageCount}: Received ${list.length} items. New: ${newItems.length}`);
 
+                    // [И ТУТ ТОЖЕ]
                     newItems.forEach(item => {
-                        const uniqueKey = (isWeapon ? 'w_' : 'c_') + item.seqId;
+                        const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                         visitedIds.add(uniqueKey);
                     });
 
-                    // [NEW] Обработка и Нормализация
                     const listWithMeta = newItems.map(item => {
                         let finalPoolId;
 
                         if (isWeaponScan) {
-                            // Для оружия берем категорию из самого предмета (poolId/bannerId)
-                            // Пример: item.poolId = "weaponbox_constant_2"
                             const rawId = item.poolId || item.bannerId;
                             finalPoolId = mapPoolTypeToShort(rawId); 
                         } else {
-                            // Для персонажей берем из типа запроса
                             finalPoolId = mapPoolTypeToShort(poolType);
                         }
 
                         return {
                             ...item,
-                            // Единое поле name
                             name: item.name || item.charName || item.weaponName, 
                             poolId: finalPoolId,
-                            // Сохраняем тип сущности
                             itemType: isWeaponScan ? 'weapon' : 'character'
                         };
                     });
