@@ -1,10 +1,11 @@
 // src/lib/utils/importUtils.js
 import { characters } from "$lib/data/characters";
+import { weapons } from "$lib/data/weapons";
 import { banners } from "$lib/data/banners";
 
 const normalize = (str) => {
     if (!str || typeof str !== 'string') return "";
-    return str.toLowerCase().replace(/\s+/g, "");
+    return str.toLowerCase().replace(/[^a-z0-9]/g, ""); // [Fix] Более надежная нормализация
 };
 
 // Сортировка: Время -> seqId
@@ -160,6 +161,7 @@ export function calculatePity(pulls, bannerId) {
 }
 
 export function calculateBannerStats(pulls, bannerId) {
+    // 1. Ищем конфиг баннера
     let bannerConfig = banners.find(b => b.id === bannerId);
     if (!bannerConfig) {
          if (bannerId.includes('new')) bannerConfig = banners.find(b => b.type === 'new-player');
@@ -168,7 +170,16 @@ export function calculateBannerStats(pulls, bannerId) {
     }
 
     const featured6 = bannerConfig?.featured6 || [];
-    const isSpecial = bannerId.includes('special');
+    
+    // Определяем типы баннеров
+    // Ивентовое оружие: есть 'weapon'/'wepon', но НЕТ 'constant'
+    const isEventWeapon = (bannerId.includes('weap') || bannerId.includes('wepon')) && !bannerId.includes('constant');
+    
+    // Ивентовый персонаж: есть 'special' (и это не оружие)
+    const isEventChar = bannerId.includes('special') && !isEventWeapon;
+    
+    // Общий флаг "Есть ли механика гаранта?"
+    const hasGuaranteeSystem = isEventChar || isEventWeapon;
 
     let total = pulls.length;
     let count6 = 0;
@@ -184,16 +195,22 @@ export function calculateBannerStats(pulls, bannerId) {
     let guarantee120 = 0; 
 
     pulls.forEach((pull, index) => {
-        const charName = normalize(pull.name);
-        const isFreePull = isSpecial && (index >= 30 && index < 40);
+        const itemName = normalize(pull.name);
+        // Бесплатные крутки новичка обычно не сбивают счетчики, но тут зависит от игры.
+        // Оставим проверку isSpecial для флага freePull, чтобы на стандарте не ломалось.
+        const isFreePull = hasGuaranteeSystem && (index >= 30 && index < 40);
 
         if (pull.rarity === 6) {
             count6++;
             sumPity6 += currentPity6 + (isFreePull ? 0 : 1); 
 
+            // Проверяем на Rate-Up
             const isFeatured = featured6.some(fid => {
                 const c = characters[fid];
-                return c && normalize(c.name) === charName;
+                if (c && normalize(c.name) === itemName) return true;
+                const w = weapons[fid];
+                if (w && normalize(w.name) === itemName) return true;
+                return false;
             });
 
             if (last6WasFeatured) {
@@ -203,18 +220,42 @@ export function calculateBannerStats(pulls, bannerId) {
             last6WasFeatured = isFeatured;
             currentPity6 = 0;
 
-            if (isSpecial) {
+            // --- ЛОГИКА ГАРАНТА (RATE-UP) ---
+            if (hasGuaranteeSystem) {
                 if (isFeatured) {
+                    // Выиграли Rate-Up -> Сброс
                     guarantee120 = 0;
-                    hasReceivedRateUp = true;
+                    // Для оружия ставим галочку "Получено", чтобы остановить счетчик навсегда
+                    // Для персонажей тоже ставим (для UI), но счетчик продолжит работать (см. ниже)
+                    hasReceivedRateUp = true; 
                 } else {
-                    if (!isFreePull && !hasReceivedRateUp) guarantee120++;
+                    // Проиграли 50/50
+                    if (!isFreePull) {
+                        // [FIX] Логика счетчика:
+                        // Если это Персонаж -> Всегда увеличиваем (циклично)
+                        // Если это Оружие -> Увеличиваем ТОЛЬКО если еще не получали (1 раз)
+                        if (isEventChar) {
+                             guarantee120++;
+                        } else if (isEventWeapon && !hasReceivedRateUp) {
+                             guarantee120++;
+                        }
+                    }
                 }
             }
         } else {
+            // Если выпало 3/4/5*
             if (!isFreePull) {
                 currentPity6++;
-                if (isSpecial && !hasReceivedRateUp) guarantee120++;
+                
+                // Инкремент гаранта за пустую крутку
+                if (hasGuaranteeSystem) {
+                    // [FIX] Та же логика: Персонаж всегда копит, Оружие только до первого получения
+                    if (isEventChar) {
+                         guarantee120++;
+                    } else if (isEventWeapon && !hasReceivedRateUp) {
+                         guarantee120++;
+                    }
+                }
             }
         }
 
@@ -231,7 +272,9 @@ export function calculateBannerStats(pulls, bannerId) {
         total,
         pity6: currentPity6,
         pity5: currentPity5,
-        guarantee120: isSpecial && !hasReceivedRateUp ? guarantee120 : 0,
+        // Возвращаем гарант только если система активна.
+        // Для Стандартного оружия (weapon_constant) hasGuaranteeSystem = false, поэтому вернется 0.
+        guarantee120: hasGuaranteeSystem ? guarantee120 : 0,
         hasReceivedRateUp,
         count6,
         count5,

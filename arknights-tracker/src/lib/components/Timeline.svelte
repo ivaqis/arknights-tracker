@@ -19,23 +19,47 @@
     let selectedTimezone = "local";
     let showTimezoneMenu = false;
     const allEvents = [
-        ...rawEvents.map((e) => ({
-            ...e,
-            originalType: e.type,
-            type: e.type || "ingame",
+    ...rawEvents.map((e) => ({
+        ...e,
+        originalType: e.type,
+        type: e.type || "ingame",
+    })),
+    ...banners
+        .filter((b) => b.endTime !== null)
+        .map((b) => ({
+            ...b,
+            originalType: b.type,
+            type: "banner",
+            // Убеждаемся, что свойство showOnMain пробросилось (оно есть в ...b, но на всякий случай)
+            showOnMain: b.showOnMain 
         })),
-        ...banners
-            .filter((b) => b.endTime !== null)
-            .map((b) => ({
-                ...b,
-                originalType: b.type,
-                type: "banner",
-            })),
-    ];
+];
 
-    allEvents.sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
-    allEvents.sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
-    const displayEvents = allEvents;
+// 2. [FIX] СОРТИРОВКА: Главные баннеры отправляем В КОНЕЦ (чтобы они были поверх остальных)
+allEvents.sort((a, b) => {
+    const timeA = new Date(a.startTime).getTime();
+    const timeB = new Date(b.startTime).getTime();
+
+    // А. Сначала по времени
+    if (timeA !== timeB) {
+        return timeA - timeB;
+    }
+
+    // Б. Если время совпадает:
+    const mainA = !!a.showOnMain;
+    const mainB = !!b.showOnMain;
+
+    if (mainA !== mainB) {
+        // Было: return mainA ? -1 : 1; (Главный первый)
+        // Стало: return mainA ? 1 : -1; (Главный последний -> рисуется поверх)
+        return mainA ? 1 : -1; 
+    }
+
+    // В. Если оба не главные, можно сортировать по алфавиту или ID для стабильности
+    return (a.id || "").localeCompare(b.id || "");
+});
+
+const displayEvents = allEvents;
 
     function handleClickOutside(event) {
         if (!showTimezoneMenu) return;

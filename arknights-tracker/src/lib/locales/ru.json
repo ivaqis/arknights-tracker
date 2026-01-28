@@ -49,11 +49,13 @@
       "percent": "Процент",
       "avg": "Ср. знач.",
       "fallBackCharacters": "Пока нет шестизвездочных наймов...",
-      "guarantee": "Гарантированно",
+      "guarantee_rateup": "Гарантированно",
       "won5050": "Выиграно 50/50",
       "origeometry": "Ориджеметрий",
       "pulled": "Выпало",
-      "operators": "оперативников"
+      "operators": "оперативников",
+      "recent_weapons": "оружие",
+      "featuredWeapons": "Представленные оружия"
     },
     "recordsSettings": {
       "settings": "Настройки",
@@ -71,7 +73,17 @@
   "bannerTypes": {
     "standard": "Стандартный наем",
     "special": "Специальный наем",
-    "new-player": "Наем «Новые горизонты»"
+    "new-player": "Наем «Новые горизонты»",
+    "weponbox_1_0_1": "Плавильная закалка",
+    "weponbox_1_0_2": "Гарантированная Доставка",
+    "weponbox_1_0_3": "Артистичная Тиранка",
+    "weaponbox_constant_1": "Крепкий лед",
+    "weaponbox_constant_2": "Космический голос",
+    "weaponbox_constant_3": "Дальняя экспедиция",
+    "weaponbox_constant_4": "Высокий пик",
+    "weaponbox_constant_5": "Громовой раскат",
+    "weapStandard": "Стандартные поставки",
+    "weapSpecial": "Специальные поставки"
   },
   "import": {
     "title": "Импорт записей о найме",
@@ -189,11 +201,15 @@
     "standard_01": "Основной наем",
     "new_player_01": "Наем «Новые горизонты»",
     "weponbox_1_0_1": "Плавильная закалка",
+    "weponbox_1_0_2": "Гарантированная Доставка",
+    "weponbox_1_0_3": "Артистичная Тиранка",
     "weaponbox_constant_1": "Крепкий лед",
     "weaponbox_constant_2": "Космический голос",
     "weaponbox_constant_3": "Дальняя экспедиция",
     "weaponbox_constant_4": "Высокий пик",
-    "weaponbox_constant_5": "Громкий раскат"
+    "weaponbox_constant_5": "Громовой раскат",
+    "weapStandard": "Стандартные поставки",
+    "weapSpecial": "Специальные поставки"
   },
   "pages": {
     "home": "Главная",

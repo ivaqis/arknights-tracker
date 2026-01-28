@@ -1,6 +1,7 @@
 <script>
   import { t } from "$lib/i18n";
   import { characters } from "$lib/data/characters";
+  import { weapons } from "$lib/data/weapons";
   import Icon from "$lib/components/Icons.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
   import Images from "$lib/components/Images.svelte";
@@ -10,6 +11,14 @@
 
   $: isSpecial = banner?.type === "special";
   $: isNewPlayer = banner?.type === "new-player" || banner?.type === "new_player";
+  
+  // Определяем, оружейный ли это баннер
+  $: isWeaponBanner = banner?.type === 'weapon' || banner?.id?.includes('weap') || banner?.id?.includes('wepon');
+  
+  // Есть ли Rate-Up (для отображения 50/50). 
+  // Это Special (персы) ИЛИ Оружие (но не Constant/Standard)
+  $: hasRateUp = isSpecial || (isWeaponBanner && !banner?.id?.includes('constant'));
+
   $: featured6List = banner?.featured6 || [];
   $: featured5List = banner?.featured5 || [];
 
@@ -18,11 +27,11 @@
 
   $: count6 = pulls.filter((p) => p.rarity === 6).length;
   $: count5 = pulls.filter((p) => p.rarity === 5).length;
-
   const normalize = (str) => str?.toLowerCase().replace(/\s+/g, "") || "";
-  const charMap = Object.values(characters).reduce((acc, char) => {
-    if (char.name) acc[normalize(char.name)] = char;
-    acc[normalize(char.id)] = char;
+  const itemMap = { ...characters, ...weapons };
+  const lookupMap = Object.values(itemMap).reduce((acc, item) => {
+    if (item.name) acc[normalize(item.name)] = item;
+    acc[normalize(item.id)] = item;
     return acc;
   }, {});
 
@@ -33,24 +42,16 @@
       
       let sum = 0;
       let count = 0;
-      let logValues = [];
 
       targetPulls.forEach(p => {
-          // Берем realPity (из модалки). Если null (Free) - пропускаем.
           let val = p.realPity; 
-          
           if (typeof val === 'number') {
               sum += val;
               count++;
-              logValues.push(val);
           }
       });
       
       const result = count > 0 ? (sum / count).toFixed(1) : "0.0";
-      
-      // Лог для проверки
-      console.log(`[Stats] ${banner?.id} Rarity ${targetRarity}: Sum=${sum}, Count=${count}, Avg=${result}`);
-      
       return result;
   }
 
@@ -59,7 +60,7 @@
 
   // --- WINRATE ---
   function calculateWinRate(rarity, featuredList) {
-    if (featuredList.length === 0) return { won: 0, total: 0, percent: 0 };
+    if (!featuredList || featuredList.length === 0) return { won: 0, total: 0, percent: 0 };
     const sorted = [...pulls].sort((a, b) => new Date(a.time) - new Date(b.time));
     let won = 0;
     let totalRate = 0;
@@ -68,9 +69,10 @@
     for (const pull of sorted) {
       if (pull.rarity === rarity) {
         const normName = normalize(pull.name);
+        // [FIX] Ищем в lookupMap, чтобы работало и для оружия
         const isFeatured = featuredList.some((fid) => {
-           const fChar = characters[fid];
-           return fChar && normalize(fChar.name) === normName;
+           const fItem = itemMap[fid];
+           return fItem && normalize(fItem.name) === normName;
         });
         if (lastWasFeatured) {
           totalRate++;
@@ -101,11 +103,16 @@
     .slice(0, 6)
     .map((p) => {
       const lookupKey = normalize(p.name);
-      const charData = charMap[lookupKey];
+      const itemData = lookupMap[lookupKey];
+      const itemId = itemData?.id || normalize(p.name);
+      // Проверяем, оружие ли это (есть ли ID в базе weapons)
+      const isWeapon = itemData ? !!weapons[itemData.id] : isWeaponBanner; 
+
       return {
-        id: charData?.id || normalize(p.name),
+        id: itemId,
         pity: (typeof p.realPity === 'number') ? p.realPity : (p.pity || "?"),
         name: p.name,
+        isWeapon: isWeapon
       };
     });
 
@@ -117,6 +124,14 @@
     if (pity > 50 && pity <= 70) return "#C55E2F";
     if (pity > 70 && pity <= 80) return "#9A3404";
     return "#21272C";
+  }
+
+  function getWeaponBg(rarity) {
+        // Здесь rarity всегда 6, т.к. список icons фильтрует только 6*
+        // Но оставим полную функцию на будущее
+        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]"; 
+        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
+        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
   }
 </script>
 
@@ -135,7 +150,7 @@
         <span class="font-bold text-gray-800 font-nums text-lg leading-none">{total}</span>
     </div>
 
-    {#if !isNewPlayer}
+    {#if !isNewPlayer && !isWeaponBanner}
         <div class="w-px h-8 bg-gray-300 mx-2"></div>
 
         <div class="flex-1 flex flex-col items-center justify-center">
@@ -174,7 +189,7 @@
                     </div>
                 </div>
 
-                {#if isSpecial && row.winRate.total > 0}
+                {#if hasRateUp && row.winRate.total > 0 && (row.label === "6" || !isWeaponBanner)}
                     <div class="grid grid-cols-4 text-sm items-center py-1">
                         <div class="text-gray-600 text-xs pl-6">
                             {$t("page.banner.won5050")}
@@ -198,25 +213,37 @@
                 <span>{$t("page.banner.pulled")}</span>
                 <span>6</span>
                 <Icon name="star" class="w-3 h-3" />
-                <span>{$t("page.banner.operators")}</span>
+                <span>{$t(isWeaponBanner ? "page.banner.recent_weapons" : "page.banner.operators")}</span>
             </h4>
 
             <div class="flex flex-wrap gap-2">
                 {#each icons as icon}
-                    <Tooltip text={$t(`characters.${icon.id}`) || icon.name}>
-                        <div class="relative w-12 h-12 rounded-full bg-gray-100 border-2 border-[#D0926E] hover:scale-110 transition-transform cursor-pointer shadow-sm">
-                            <div class="w-full h-full overflow-hidden rounded-full">
+                    <Tooltip text={$t(icon.isWeapon ? `weaponsList.${icon.id}` : `characters.${icon.id}`) || icon.name}>
+                        <div class="relative w-12 h-12 rounded-full cursor-pointer shadow-sm hover:scale-110 transition-transform">
+                            <div class="w-full h-full overflow-hidden rounded-full border-2 
+                                {icon.isWeapon 
+                                    ? `border-[#ff6600] ${getWeaponBg(6)}` 
+                                    : 'border-[#D0926E] bg-gray-100'}"
+                            >
                                 <Images
                                     id={icon.id}
-                                    variant="operator-icon"
+                                    variant={icon.isWeapon ? "weapon-icon" : "operator-icon"}
                                     size="100%"
                                     alt={icon.name}
+                                    className={icon.isWeapon ? "scale-125" : ""}
                                 />
                             </div>
-                            <div class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none" style="font-size: 0.85rem; min-width: 1.7rem;">
-                                <div class="absolute inset-0 rounded opacity-75" style="background-color: {getPityColor(icon.pity)};"></div>
-                                <span class="relative text-white z-10">{icon.pity}</span>
-                            </div>
+                            
+                            {#if icon.isWeapon}
+                                <div class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center bg-[#eec71b] text-[#21272C]" style="font-size: 0.85rem; min-width: 1.7rem;">
+                                    {icon.pity}
+                                </div>
+                            {:else}
+                                <div class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center" style="font-size: 0.85rem; min-width: 1.7rem;">
+                                    <div class="absolute inset-0 rounded opacity-75" style="background-color: {getPityColor(icon.pity)};"></div>
+                                    <span class="relative text-white z-10">{icon.pity}</span>
+                                </div>
+                            {/if}
                         </div>
                     </Tooltip>
                 {/each}

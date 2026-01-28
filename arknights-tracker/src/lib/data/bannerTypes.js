@@ -38,14 +38,16 @@ export const bannerTypes = [
     id: "weap-special",
     apiType: "weap-special", 
     i18nKey: "bannerTypes.weapSpecial", // Не забудь добавить в en.json/ru.json
-    order: 4, 
+    order: 4,
+    showOnHome: true,
     showInRating: true 
   },
   { 
     id: "weap-standard", 
     apiType: "weap-standard", 
     i18nKey: "bannerTypes.weapStandard", // Не забудь добавить в en.json/ru.json
-    order: 5, 
+    order: 5,
+    showOnHome: true,
     showInRating: true 
   }
 ];

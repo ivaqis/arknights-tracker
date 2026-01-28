@@ -56,13 +56,11 @@
       const end = b.endTime ? new Date(b.endTime) : new Date(9999, 11, 31);
       const isTime = now >= start && now <= end;
 
-      // Исключаем стандартные и для новичков
-      // Проверь точно, как называются типы в твоем banners.js (beginner или new-player)
-      const isHiddenType = ["standard", "new-player", "beginner"].includes(
-        b.type,
-      );
+      // [ИЗМЕНЕНО] Убрали проверку типов (standard/new-player), 
+      // теперь проверяем только флаг showOnMain
+      const isShownOnMain = b.showOnMain === true;
 
-      return isTime && !isHiddenType;
+      return isTime && isShownOnMain;
     })
     .sort((a, b) => {
       // Приоритет сортировки: Special -> Weapon -> Остальные

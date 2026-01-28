@@ -39,9 +39,9 @@ export const rawEvents = [
       icon: "ev3-v1.0.jpg",
       url: "",
       color: "#e6369a",
-      layer: 2,
+      layer: 3,
       type: "inGame", 
-      iconPosition: 40
+      iconPosition: 7
     },
     {
       id: "ev4-v1.0",
@@ -53,7 +53,7 @@ export const rawEvents = [
       icon: "ev4-v1.0.jpg",
       url: "",
       color: "#680d15",
-      layer: 3,
+      layer: 4,
       type: "inGame", 
       iconPosition: 40
     },
@@ -67,8 +67,8 @@ export const rawEvents = [
       icon: "ev5-v1.0.jpg",
       url: "https://act.skport.com/endfield/recordBook",
       color: "#e9d11c",
-      layer: 6,
+      layer: 2,
       type: "web", 
-      iconPosition: 40
+      iconPosition: 54
     }
 ];

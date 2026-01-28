@@ -3,6 +3,7 @@
   import { t } from "$lib/i18n";
   import { pullData } from "$lib/stores/pulls";
   import { bannerTypes } from "$lib/data/bannerTypes";
+  import { banners } from "$lib/data/banners";
   import { currencies } from "$lib/data/items/currencies.js";
   import BannerCard from "$lib/components/BannerCard.svelte";
   import SettingsModal from "$lib/components/SettingsModal.svelte";
@@ -11,28 +12,37 @@
   import Icon from "$lib/components/Icons.svelte";
   import Images from "$lib/components/Images.svelte";
 
-  // [FIX] Updated calculation logic
-  // We use reduce on entries to check the banner ID (key)
   $: pullsStats = Object.entries($pullData).reduce(
     (acc, [key, banner]) => {
       if (!banner || typeof banner !== "object") return acc;
 
       const count = banner.stats?.total || banner.pulls?.length || 0;
+      
+      // 1. Определяем тип
+      const bannerConfig = banners.find(b => b.id === key);
+      const type = bannerConfig ? bannerConfig.type : "";
+      
+      const isNewPlayer = type === 'new-player' || key.includes("new-player") || key.includes("new_player");
+      const isWeapon = type === 'weapon' || key.includes('weap') || key.includes('wepon');
 
-      // 1. Absolute total (for RatingCard / User Stats)
+      // 1. Абсолютный тотал (просто количество круток для статистики)
       acc.total += count;
 
-      // 2. Billable total (Excluding 'new_player' for cost calculation)
-      if (!key.includes("new-player")) {
-        acc.billable += count;
+      // 2. Billable (Стоимость)
+      // Исключаем новичка И Исключаем оружие (везде)
+      if (!isNewPlayer && !isWeapon) {
+          acc.billable += count;     // Для Ороберила
+          acc.billableChar += count; // Для Оригеометрии (суть та же)
       }
 
       return acc;
     },
-    { total: 0, billable: 0 }
+    { total: 0, billable: 0, billableChar: 0 }
   );
+
   $: totalPulls = pullsStats.total;
-  $: billablePulls = pullsStats.billable;
+  $: billablePulls = pullsStats.billable;      
+  $: charPullsOnly = pullsStats.billableChar;
 
   $: homeBanners = [...bannerTypes]
     .filter((b) => b.showOnHome)
@@ -115,7 +125,7 @@
       </div>
 
       <div class="text-xs text-gray-400 mt-2 font-medium flex items-center">
-        ≈ <Images id="origeometry" variant="currency" size={20} /> {((billablePulls * 500) / 75).toFixed(0)}  {$t("page.banner.origeometry")}
+        ≈ <Images id="origeometry" variant="currency" size={20} /> {((charPullsOnly * 500) / 75).toFixed(0)}  {$t("page.banner.origeometry")}
       </div>
     </div>
   </div>
