@@ -56,5 +56,19 @@ export const rawEvents = [
       layer: 3,
       type: "inGame", 
       iconPosition: 40
+    },
+    {
+      id: "ev5-v1.0",
+      title: "events.workLogbook",
+      startTime: "2026-01-28 00:00:00",
+      endTime: "2026-02-28 11:59:59",
+      gameversion: "global",
+      timezone: "UTC+8",
+      icon: "ev5-v1.0.jpg",
+      url: "https://act.skport.com/endfield/recordBook",
+      color: "#e9d11c",
+      layer: 6,
+      type: "web", 
+      iconPosition: 40
     }
 ];
