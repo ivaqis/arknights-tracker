@@ -64,139 +64,158 @@ const POOL_TYPES = [
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
-app.post('/api/import', async (req, res) => {
-    const { rawUrl, saveStats } = req.body;
-    const startTime = Date.now();
+async function fetchGameData(token, lang, serverId) {
+    let collectedPulls = [];
+    const visitedIds = new Set();
     
-    // Валидация домена
+    console.log(`\n--- Starting Scan on SERVER ID: ${serverId} ---`);
+
+    for (const poolType of POOL_TYPES) {
+        let hasMore = true;
+        let lastId = "";
+        let pageCount = 1;
+
+        const isWeaponScan = poolType === 'WEAPON_FETCH_ALL';
+        
+        const currentApiUrl = isWeaponScan 
+            ? 'https://ef-webview.gryphline.com/api/record/weapon'
+            : 'https://ef-webview.gryphline.com/api/record/char';
+
+        console.log(`[Pool] Scanning: ${isWeaponScan ? 'WEAPONS (All)' : mapPoolTypeToShort(poolType)}`);
+
+        while (hasMore) {
+            const params = new URLSearchParams({
+                token, lang, server_id: serverId
+            });
+
+            if (!isWeaponScan) {
+                params.append('pool_type', poolType);
+            }
+
+            if (lastId) params.append('seq_id', lastId);
+
+            try {
+                const response = await axios.get(`${currentApiUrl}?${params.toString()}`, {
+                    timeout: 5000,
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                        'Accept': 'application/json'
+                    }
+                });
+
+                const result = response.data;
+                
+                // Если сервер пустой или не тот, API часто отдает не 0, а ошибку
+                if (result.code !== 0) {
+                    console.warn(`⚠️ Game API Error (Server ${serverId}): ${result.code} - ${result.msg}`);
+                    hasMore = false; 
+                    break; 
+                }
+
+                const list = result.data?.list || [];
+                
+                // Фильтрация дублей
+                const newItems = list.filter(item => {
+                    const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
+                    return !visitedIds.has(uniqueKey);
+                });
+
+                if (list.length > 0 && newItems.length === 0) {
+                    hasMore = false;
+                    break;
+                }
+
+                console.log(`  -> Page ${pageCount}: Received ${list.length} items. New: ${newItems.length}`);
+
+                newItems.forEach(item => {
+                    const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
+                    visitedIds.add(uniqueKey);
+                });
+
+                // Приводим данные к общему виду
+                const listWithMeta = newItems.map(item => {
+                    let finalPoolId;
+                    if (isWeaponScan) {
+                        finalPoolId = item.poolId || item.bannerId; 
+                    } else {
+                        finalPoolId = mapPoolTypeToShort(poolType);
+                    }
+
+                    return {
+                        ...item,
+                        name: item.name || item.charName || item.weaponName, 
+                        poolId: finalPoolId,
+                        itemType: isWeaponScan ? 'weapon' : 'character'
+                    };
+                });
+
+                collectedPulls = [...collectedPulls, ...listWithMeta];
+                
+                // Пагинация
+                hasMore = result.data?.hasMore;
+                if (newItems.length === 0) hasMore = false;
+                else if (list.length > 0) lastId = list[list.length - 1].seqId;
+                else hasMore = false;
+
+                pageCount++;
+                if (pageCount > 50) hasMore = false;
+                await sleep(100);
+
+            } catch (err) {
+                console.error(`  -> Network/API Error on Server ${serverId}: ${err.message}`);
+                hasMore = false;
+            }
+        }
+    }
+    return collectedPulls;
+}
+
+app.post('/api/import', async (req, res) => {
+    const { rawUrl } = req.body;
+    
     try {
         const parsedUrl = new URL(rawUrl);
         if (!parsedUrl.hostname.endsWith('hg-game.com') && !parsedUrl.hostname.endsWith('gryphline.com')) {
             return res.status(400).json({ error: "Invalid domain" });
         }
         
-        const token = parsedUrl.searchParams.get('token');
+        // [FIX 1] Читаем и token, и u8_token (для оружия)
+        const token = parsedUrl.searchParams.get('token') || parsedUrl.searchParams.get('u8_token');
         const lang = parsedUrl.searchParams.get('lang') || 'en-us';
-        const serverId = parsedUrl.searchParams.get('server_id') || '3';
+        
+        // Берем сервер из ссылки или по умолчанию 3
+        let targetServerId = parsedUrl.searchParams.get('server_id') || '3';
 
-        if (!token) return res.status(400).json({ error: "No token found" });
+        if (!token) return res.status(400).json({ error: "No token found in URL" });
 
         console.log(`\n--- New Import Request ---`);
 
-        let allPulls = [];
-        const visitedIds = new Set();
+        // [FIX 2] Попытка №1: Скачиваем с текущего сервера
+        let allPulls = await fetchGameData(token, lang, targetServerId);
 
-        for (const poolType of POOL_TYPES) {
-            let hasMore = true;
-            let lastId = "";
-            let pageCount = 1;
-
-            // Объявляем переменную
-            const isWeaponScan = poolType === 'WEAPON_FETCH_ALL';
-            
-            const currentApiUrl = isWeaponScan 
-                ? 'https://ef-webview.gryphline.com/api/record/weapon'
-                : 'https://ef-webview.gryphline.com/api/record/char';
-
-            console.log(`\n[Pool] Scanning: ${isWeaponScan ? 'WEAPONS (All)' : mapPoolTypeToShort(poolType)}`);
-
-            while (hasMore) {
-                const params = new URLSearchParams({
-                    token, lang, server_id: serverId
-                });
-
-                if (!isWeaponScan) {
-                    params.append('pool_type', poolType);
-                }
-
-                if (lastId) params.append('seq_id', lastId);
-
-                try {
-                    const response = await axios.get(`${currentApiUrl}?${params.toString()}`, {
-                        timeout: 5000,
-                        headers: {
-                            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                            'Accept': 'application/json'
-                        }
-                    });
-
-                    const result = response.data;
-                    
-                    if (result.code !== 0) {
-                        console.warn(`⚠️ Game API Error: ${result.code} - ${result.msg}`);
-                        hasMore = false; 
-                        break; 
-                    }
-
-                    const list = result.data?.list || [];
-                    
-                    // [ИСПРАВЛЕНИЕ ЗДЕСЬ] Используем isWeaponScan
-                    const newItems = list.filter(item => {
-                        const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
-                        return !visitedIds.has(uniqueKey);
-                    });
-
-                    if (list.length > 0 && newItems.length === 0) {
-                        hasMore = false;
-                        break;
-                    }
-
-                    console.log(`  -> Page ${pageCount}: Received ${list.length} items. New: ${newItems.length}`);
-
-                    // [И ТУТ ТОЖЕ]
-                    newItems.forEach(item => {
-                        const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
-                        visitedIds.add(uniqueKey);
-                    });
-
-                    const listWithMeta = newItems.map(item => {
-                        let finalPoolId;
-
-                        if (isWeaponScan) {
-                            finalPoolId = item.poolId || item.bannerId; 
-                        } else {
-                            finalPoolId = mapPoolTypeToShort(poolType);
-                        }
-
-                        return {
-                            ...item,
-                            name: item.name || item.charName || item.weaponName, 
-                            poolId: finalPoolId,
-                            itemType: isWeaponScan ? 'weapon' : 'character'
-                        };
-                    });
-
-                    allPulls = [...allPulls, ...listWithMeta];
-                    
-                    hasMore = result.data?.hasMore;
-                    if (newItems.length === 0) hasMore = false;
-                    else if (list.length > 0) lastId = list[list.length - 1].seqId;
-                    else hasMore = false;
-
-                    pageCount++;
-                    if (pageCount > 50) hasMore = false;
-                    await sleep(100);
-
-                } catch (err) {
-                    console.error(`  -> Network/API Error: ${err.message}`);
-                    hasMore = false;
-                }
-            }
+        // [FIX 3] Попытка №2: Если ничего не нашли и сервер был 3, пробуем сервер 2
+        if (allPulls.length === 0 && targetServerId === '3') {
+            console.log("\n⚠️ No data found on Server 3. Retrying on Server 2...");
+            targetServerId = '2'; 
+            allPulls = await fetchGameData(token, lang, targetServerId);
         }
 
         console.log(`--- Import Finished. Total: ${allPulls.length} ---`);
 
-        // Генерация UID
+        if (allPulls.length === 0) {
+            return res.status(400).json({ error: "No pulls found (checked servers 3 and 2)" });
+        }
+
+        // Дальше стандартная логика (UID, сохранение)
         const stableUid = generateStableUid(allPulls);
 
         if (!stableUid) {
-            return res.status(400).json({ error: "No pulls found to generate UID" });
+            return res.status(400).json({ error: "Unable to generate UID from pulls" });
         }
 
         console.log(`User Stable UID: ${stableUid}`);
 
-        // Сохранение статистики
-        if (prisma && allPulls.length > 0) {
+        if (prisma) {
             await updateAggregatedStats(stableUid, allPulls);
         }
 

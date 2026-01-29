@@ -89,17 +89,17 @@
 </script>
 
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
-    <!-- Header -->
     <div class="flex items-center gap-4 mb-8">
-        <h2
-            class="font-sdk text-5xl tracking-wide text-[#21272C] flex items-center gap-3"
-        >
+    <h2 class="font-sdk text-[#21272C] flex items-start gap-0 md:flex-row md:items-center md:gap-3">
+        <span class="text-3xl md:text-5xl tracking-wide">
             {$t("pages.operators") || "Operators"}
-            <span class="text-gray-400 text-3xl font-normal">
-                / {filteredOperators.length}
-            </span>
-        </h2>
-    </div>
+        </span>
+        
+        <span class="text-gray-400 text-xl pl-3 md:text-3xl font-normal">
+            / {filteredOperators.length}
+        </span>
+    </h2>
+</div>
 
     <!-- Toolbar (В контейнере, чтобы не разъезжался) -->
     <div class="w-full xl:w-[70%] px-8 mb-4">

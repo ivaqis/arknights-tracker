@@ -303,21 +303,26 @@
         {$t("settings.title")}
     </h1>
 
+    <h1 class="font-sdk text-5xl font-black text-[#21272C] mb-8">
+        {$t("settings.title")}
+    </h1>
+
     <section class="mb-10">
-        <div class="flex items-center gap-4 mb-4">
-            <h2 class="font-sdk text-2xl font-bold text-[#21272C]">
+        <div class="flex flex-col items-start gap-4 mb-4 md:flex-row md:items-center">
+            
+            <h2 class="font-sdk text-2xl font-bold text-[#21272C] whitespace-nowrap">
                 {$t("settings.account.title")}
             </h2>
-            <div class="flex gap-2 items-center">
+            
+            <div class="flex gap-2 items-center flex-wrap">
                 <Button
                     variant="roundSmall"
                     color="white"
                     onClick={handleAddAccount}
                 >
                     <div class="flex items-center gap-2 px-2">
-                        <Icon name="plus" class="w-4 h-4" /><span
-                            >{$t("settings.account.add")}</span
-                        >
+                        <Icon name="plus" class="w-4 h-4" />
+                        <span>{$t("settings.account.add")}</span>
                     </div>
                 </Button>
                 <Button
@@ -326,9 +331,8 @@
                     onClick={openClearModal}
                 >
                     <div class="flex items-center gap-2 px-2 text-red-500">
-                        <Icon name="trash" class="w-4 h-4" /><span
-                            >{$t("settings.account.clear")}</span
-                        >
+                        <Icon name="trash" class="w-4 h-4" />
+                        <span>{$t("settings.account.clear")}</span>
                     </div>
                 </Button>
                 {#if $accounts.length > 1}
@@ -338,14 +342,14 @@
                         onClick={openDeleteModal}
                     >
                         <div class="flex items-center gap-2 px-2 text-red-500">
-                            <Icon name="close" class="w-4 h-4" /><span
-                                >{$t("settings.account.delete")}</span
-                            >
+                            <Icon name="close" class="w-4 h-4" />
+                            <span>{$t("settings.account.delete")}</span>
                         </div>
                     </Button>
                 {/if}
             </div>
         </div>
+
         <div class="w-80">
             <Select
                 options={accountOptions}

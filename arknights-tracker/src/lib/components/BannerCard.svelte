@@ -355,7 +355,9 @@
 
   <div>
     <h4 class="font-bold text-sm mb-3 text-[#21272C] flex items-center gap-1">
-      <span>{$t("page.banner.recent")}</span>
+      <span>
+        {$t(isWeaponCard ? "page.banner.recentWeap" : "page.banner.recent")}
+      </span>
       <span>6</span>
       <Icon name="star" class="w-4 h-4" />
       <span
