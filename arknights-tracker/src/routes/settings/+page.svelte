@@ -56,7 +56,11 @@
     const { accounts, selectedId } = accountStore;
 
     function handleVisibilityChange() {
-        if (document.visibilityState === 'visible' && $user && $syncStatus !== 'checking') {
+        if (
+            document.visibilityState === "visible" &&
+            $user &&
+            $syncStatus !== "checking"
+        ) {
             console.log("Tab active, checking cloud...");
             checkSync($user);
         }
@@ -218,6 +222,30 @@
                         ) {
                             try {
                                 await pullData.smartImport(json);
+                                const currentPulls = get(pullData); // Берем свежие данные
+                                let totalNew = 0;
+                                if (currentPulls) {
+                                    [
+                                        "standard",
+                                        "special",
+                                        "new-player",
+                                    ].forEach((cat) => {
+                                        if (currentPulls[cat]?.pulls)
+                                            totalNew +=
+                                                currentPulls[cat].pulls.length;
+                                    });
+                                }
+
+                                if ($user) {
+                                    // Удаляем игнор
+                                    if (typeof window !== "undefined")
+                                        localStorage.removeItem(
+                                            "ark_ignore_cloud_ts",
+                                        );
+
+                                    // Передаем новое количество, чтобы чекер не смотрел на старый диск
+                                    checkSync($user, totalNew);
+                                }
                                 alert(
                                     "✓ Pulls imported into current account successfully!",
                                 );
@@ -291,14 +319,14 @@
 
     async function handleForceSync() {
         // 1. Очищаем "память" (игнор). Теперь SyncModal будет считать, что он видит эти данные впервые.
-        if (typeof window !== 'undefined') {
+        if (typeof window !== "undefined") {
             localStorage.removeItem("ark_ignore_cloud_ts");
         }
-        
+
         // 2. Ставим статус "проверка", чтобы визуально интерфейс отреагировал
         syncStatus.set("checking");
-        
-        // 3. Небольшая задержка (50мс), чтобы Svelte успел удалить запись из localStorage 
+
+        // 3. Небольшая задержка (50мс), чтобы Svelte успел удалить запись из localStorage
         // перед тем, как checkSync вернет результат.
         setTimeout(() => {
             checkSync($user);
