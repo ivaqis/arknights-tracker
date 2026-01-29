@@ -2,7 +2,7 @@
   "error_account_mismatch": "Error: Account Mismatch! You already have history between {startDate} and {endDate}. Please check if you selected the correct account.",
   "seo": {
     "title": "Goyfield - Arknights Endfield Pull Tracker",
-    "description": "Track your Arknights Endfield pulls",
+    "description": "Advanced Wish Tracker for Arknights: Endfield. Track your pull history, calculate pity counters, and predict your next guaranteed operator or weapon.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники"
   },
   "sidebar": {
@@ -49,6 +49,7 @@
       "percent": "Percent",
       "avg": "Avg.",
       "fallBackCharacters": "There are no six-star hires yet...",
+      "fallBackWeapons": "There are no six-star excanges yet...",
       "guarantee_rateup": "Guarantee",
       "won5050": "Won 50/50",
       "origeometry": "Origeometry",
@@ -331,7 +332,10 @@
     "materials": "Materials",
     "maxed": "Maxed",
     "level": "Level",
-    "attributesTable": "Attributes table"
+    "attributesTable": "Attributes table",
+    "selector": "Selector",
+    "bonus_copy": "Bonus copy",
+    "guaranteed": "Guaranteed"
   },
   "bioValues": {
     "Unknown": "Unknown",
@@ -460,7 +464,7 @@
       "totalPulls": "Total Pulls",
       "cloudNewerAlert": "Cloud data is newer. Do you want to <b>download</b> it and overwrite your local data?",
       "cancel": "Cancel",
-      "never": "Не производилась",
+      "never": "Never",
       "integration": "Google Integration"
     },
     "backup": {
@@ -475,7 +479,7 @@
     "feedback": {
       "title": "Feedback",
       "telegram": "Telegram",
-      "text": "The site is still under construction, so there may be bugs, incorrect display of twists, and other issues. If you find a bug, please report it on Telegram."
+      "text": "The site is still under construction, so there may be bugs, incorrect display of pulls, and other issues. If you find a bug, please report it on Telegram."
     }
   },
   "home": {
@@ -501,7 +505,7 @@
     "chivalricVirtues": "Chivalric Virtues",
     "oblivion": "Oblivion",
     "detonationUnit": "Detonation Unit",
-    "opusEtchFigure": "Opus Etch Figure",
+    "opusEtchFigure": "Opus: Etch Figure",
     "dreamsOfTheStarryBeach": "Dreams of the Starry Beach",
     "clannibal": "Clannibal",
     "wedge": "Wedge",

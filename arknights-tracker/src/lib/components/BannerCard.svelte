@@ -154,8 +154,8 @@
         isWeapon,
       };
     });
-    
-  $: currentMaxPity = isWeaponCard ? 40 : (bannerId.includes("new") ? 40 : 80); 
+
+  $: currentMaxPity = isWeaponCard ? 40 : bannerId.includes("new") ? 40 : 80;
   function getPityColor(pity) {
     // Считаем процент от текущего максимума (40 или 80)
     const p = (pity / currentMaxPity) * 100;
@@ -185,6 +185,16 @@
     const b = banners.find((x) => x.id === id);
     // [FIX] Добавил /miniIcon/ в путь, так как файлы лежат в подпапке
     return b ? `/images/banners/miniIcon/${b.miniIcon}` : null;
+  }
+
+  $: mileage = stats.mileage || { show: false, current: 0, max: 0, label: "" };
+
+  // Хелпер для названия строки
+  function getMileageLabel(label) {
+     if (label === 'selector_6') return $t('stats.selector') || "Selector";
+     if (label === 'guaranteed_6') return $t('stats.guaranteed') || "Guaranteed";
+     if (label === 'bonus_copy_6') return $t('stats.bonus_copy') || "Bonus Copy";
+     return label;
   }
 </script>
 
@@ -257,12 +267,20 @@
       </span>
     </div>
 
-    {#if // Условие 1: Это не Стандартное оружие (нет 'constant')
-    !bannerId.includes("constant") && // Условие 2: Это Специальный баннер (перс) ИЛИ Ивентовое оружие
-      (bannerId.includes("special") || (isWeaponCard && !bannerId.includes("constant"))) && // Условие 3: Поведение скрытия
-      // Если Оружие -> Скрываем, когда получили (hasReceivedRateUp)
-      // Если Персонаж -> Показываем всегда (игнорируем hasReceivedRateUp, так как гарант цикличен)
-      (isWeaponCard ? !hasReceivedRateUp : true)}
+    {#if mileage.show}
+       <div class="flex justify-between items-center">
+          <div class="flex items-center gap-1 text-gray-600">
+            <span class="font-bold">6</span>
+            <Icon name="star" class="w-4 h-4" />
+            <span>{getMileageLabel(mileage.label)}</span>
+          </div>
+          <span class="font-bold text-xl font-nums text-[#21272C]">
+            {mileage.current}<span class="text-sm text-gray-400">/{mileage.max}</span>
+          </span>
+       </div>
+    {/if}
+
+    {#if isWeaponCard && !bannerId.includes("constant") && !hasReceivedRateUp}
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-1 text-gray-600">
           <span class="font-bold">6</span>
@@ -270,9 +288,7 @@
           <span>{$t("page.banner.guarantee_rateup")}</span>
         </div>
         <span class="font-bold text-xl font-nums text-[#21272C]">
-          {guaranteeProgress}<span class="text-sm text-gray-400"
-            >/{maxGuaranteed}</span
-          >
+          {guaranteeProgress}<span class="text-sm text-gray-400">/{maxGuaranteed}</span>
         </span>
       </div>
     {/if}
@@ -354,47 +370,56 @@
         {#each icons as icon}
           <div class="inline-flex">
             <Tooltip text={$t(icon.translationKey) || icon.name}>
-              <div class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110
-    {icon.isWeapon ? '' : 'rounded-full border-2 border-[#D0926E] bg-gray-100 shadow-sm'}"
->
-    <div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center
-        {icon.isWeapon ? 'border-[2px] border-[#ff6600] bg-gradient-to-t from-[#591C00] to-[#BD896E] shadow-sm' : ''}"
-    >
-        <div class="w-full h-full {icon.isWeapon ? 'scale-[1.45]' : ''} transition-transform">
-            <Images
-                id={icon.id}
-                variant={icon.isWeapon ? "weapon-icon" : "operator-icon"}
-                size="100%"
-                alt={icon.name}
-            />
-        </div>
-    </div>
+              <div
+                class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110
+    {icon.isWeapon
+                  ? ''
+                  : 'rounded-full border-2 border-[#D0926E] bg-gray-100 shadow-sm'}"
+              >
+                <div
+                  class="w-full h-full rounded-full overflow-hidden flex items-center justify-center
+        {icon.isWeapon
+                    ? 'border-[2px] border-[#ff6600] bg-gradient-to-t from-[#591C00] to-[#BD896E] shadow-sm'
+                    : ''}"
+                >
+                  <div
+                    class="w-full h-full {icon.isWeapon
+                      ? 'scale-[1.45]'
+                      : ''} transition-transform"
+                  >
+                    <Images
+                      id={icon.id}
+                      variant={icon.isWeapon ? "weapon-icon" : "operator-icon"}
+                      size="100%"
+                      alt={icon.name}
+                    />
+                  </div>
+                </div>
 
-    <div
-        class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center"
-        style="font-size: 0.85rem; min-width: 1.7rem;"
-    >
-        <div
-            class="absolute inset-0 rounded opacity-90"
-            style="background-color: {getPityColor(icon.pity)};"
-        ></div>
+                <div
+                  class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center"
+                  style="font-size: 0.85rem; min-width: 1.7rem;"
+                >
+                  <div
+                    class="absolute inset-0 rounded opacity-90"
+                    style="background-color: {getPityColor(icon.pity)};"
+                  ></div>
 
-        <span 
-            class="relative text-white z-10" 
-            title="{icon.pity} / {currentMaxPity}"
-        >
-            {icon.pity}
-        </span>
-    </div>
-
-</div>
+                  <span
+                    class="relative text-white z-10"
+                    title="{icon.pity} / {currentMaxPity}"
+                  >
+                    {icon.pity}
+                  </span>
+                </div>
+              </div>
             </Tooltip>
           </div>
         {/each}
       </div>
     {:else}
       <div class="text-sm text-gray-400 italic">
-        {$t("page.banner.fallBackCharacters")}
+        {$t(isWeaponCard ? "page.banner.fallBackWeapons" : "page.banner.fallBackCharacters")}
       </div>
     {/if}
   </div>

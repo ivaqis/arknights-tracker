@@ -245,7 +245,6 @@
 
         try {
             await navigator.clipboard.writeText(textData);
-            console.log("Stats copied to clipboard"); 
         } catch (err) {
             console.error("Failed to copy", err);
         }

@@ -171,15 +171,14 @@ export function calculateBannerStats(pulls, bannerId) {
 
     const featured6 = bannerConfig?.featured6 || [];
     
-    // [FIX] Определяем типы баннеров
-    // Убираем проверку !includes('constant'), чтобы считать гарант для ВСЕХ пушек
+    // Определяем типы
     const isWeapon = bannerId.includes('weap') || bannerId.includes('wepon');
-    
-    // Ивентовый персонаж: есть 'special' (и это не оружие)
+    // Ивентовый персонаж (не оружие и содержит special)
     const isEventChar = bannerId.includes('special') && !isWeapon;
+    // Стандартный баннер
+    const isStandardChar = bannerId === 'standard' || (bannerId.includes('standard') && !isWeapon);
     
-    // Общий флаг "Есть ли механика гаранта?"
-    // Теперь true для любого оружия
+    // Гарант 50/50 (для оружия и спец. персов)
     const hasGuaranteeSystem = isEventChar || isWeapon;
 
     let total = pulls.length;
@@ -190,21 +189,37 @@ export function calculateBannerStats(pulls, bannerId) {
     let won5050 = 0;
     let total5050 = 0;
     let last6WasFeatured = true; 
-    let hasReceivedRateUp = false;
+    let hasReceivedRateUp = false; // Для оружия: получили целевую пушку
     let currentPity6 = 0;
     let currentPity5 = 0;
-    let guarantee120 = 0; 
+    
+    // [FIX] Переменная для счетчика гаранта ОРУЖИЯ (старая система: 0/80, сброс при выигрыше)
+    let weaponGuaranteeCount = 0; 
+
+    // [FIX] Переменная для "Mileage" (Накопительный счетчик без сброса)
+    // Сюда НЕ попадают бесплатные крутки (30-40)
+    let validMileageTotal = 0;
 
     pulls.forEach((pull, index) => {
         const itemName = normalize(pull.name);
-        // Бесплатные крутки новичка обычно не сбивают счетчики
-        const isFreePull = isEventChar && (index >= 30 && index < 40);
+        
+        // [FIX] Бесплатные крутки (30-39)
+        // Влияют на то, засчитывать ли крутку в Mileage и Pity
+        const isFreePullIndex = (index >= 30 && index < 40);
+        // Для Спец. Персонажей это действительно бесплатно
+        const isFreePull = isEventChar && isFreePullIndex;
+
+        // [FIX] Считаем валидные крутки для накопительной системы (120/240/300)
+        // Если это бесплатная крутка на спец. баннере — она НЕ увеличивает счетчик.
+        if (!isFreePull) {
+            validMileageTotal++;
+        }
 
         if (pull.rarity === 6) {
             count6++;
             sumPity6 += currentPity6 + (isFreePull ? 0 : 1); 
 
-            // Проверяем на Rate-Up
+            // Проверка Rate-Up
             const isFeatured = featured6.some(fid => {
                 const c = characters[fid];
                 if (c && normalize(c.name) === itemName) return true;
@@ -220,37 +235,24 @@ export function calculateBannerStats(pulls, bannerId) {
             last6WasFeatured = isFeatured;
             currentPity6 = 0;
 
-            // --- ЛОГИКА ГАРАНТА (RATE-UP) ---
-            if (hasGuaranteeSystem) {
+            // --- ЛОГИКА ГАРАНТА ДЛЯ ОРУЖИЯ (Сброс при получении) ---
+            if (isWeapon) {
                 if (isFeatured) {
-                    // Выиграли Rate-Up -> Сброс
-                    guarantee120 = 0;
-                    hasReceivedRateUp = true; 
+                    weaponGuaranteeCount = 0;
+                    hasReceivedRateUp = true;
                 } else {
-                    // Проиграли 50/50
-                    if (!isFreePull) {
-                        // [FIX] Используем isWeapon вместо isEventWeapon
-                        if (isEventChar) {
-                             guarantee120++;
-                        } else if (isWeapon && !hasReceivedRateUp) {
-                             guarantee120++;
-                        }
-                    }
+                    if (!isFreePull && !hasReceivedRateUp) weaponGuaranteeCount++;
                 }
             }
+
         } else {
             // Если выпало 3/4/5*
             if (!isFreePull) {
                 currentPity6++;
                 
-                // Инкремент гаранта за пустую крутку
-                if (hasGuaranteeSystem) {
-                    // [FIX] Используем isWeapon вместо isEventWeapon
-                    if (isEventChar) {
-                         guarantee120++;
-                    } else if (isWeapon && !hasReceivedRateUp) {
-                         guarantee120++;
-                    }
+                // Инкремент гаранта оружия за пустую крутку
+                if (isWeapon && !hasReceivedRateUp) {
+                    weaponGuaranteeCount++;
                 }
             }
         }
@@ -264,12 +266,62 @@ export function calculateBannerStats(pulls, bannerId) {
         }
     });
 
+    // ============================================================
+    // [FIX] ЛОГИКА MILEAGE (Накопительные награды)
+    // Используем validMileageTotal (без бесплатных круток)
+    // ============================================================
+    let mileage = {
+        show: false,
+        current: 0,
+        max: 0,
+        label: ""
+    };
+
+    if (isStandardChar) {
+        // Селектор: Показывать, пока меньше 300
+        if (validMileageTotal < 300) {
+            mileage = {
+                show: true,
+                current: validMileageTotal,
+                max: 300,
+                label: "selector_6"
+            };
+        }
+    } 
+    else if (isEventChar) {
+        // Спец. Персонаж
+        // 1. Если меньше 120 валидных круток -> Гарант
+        if (validMileageTotal < 120) {
+            mileage = {
+                show: true,
+                current: validMileageTotal,
+                max: 120,
+                label: "guaranteed_6"
+            };
+        } 
+        // 2. Если 120 и больше -> Бонусная копия (каждые 240)
+        else {
+            // [FIX] Логика: Счетчик идет от 0 до 240, потом опять от 0.
+            // Но пользователь хочет видеть "все крутки". 
+            // 120 % 240 = 120. 239 % 240 = 239. 241 % 240 = 1.
+            const cycle = 240;
+            
+            mileage = {
+                show: true,
+                current: validMileageTotal % cycle,
+                max: cycle,
+                label: "bonus_copy_6"
+            };
+        }
+    }
+
     return {
         total,
         pity6: currentPity6,
         pity5: currentPity5,
-        // Теперь вернет число, даже если это 'weaponbox_constant'
-        guarantee120: hasGuaranteeSystem ? guarantee120 : 0,
+        mileage, // Объект для персонажей
+        // Для оружия возвращаем старый счетчик (до 80) в поле guarantee120 (для совместимости с UI)
+        guarantee120: isWeapon ? weaponGuaranteeCount : 0, 
         hasReceivedRateUp,
         count6,
         count5,

@@ -28,11 +28,6 @@
         if (isSupported(code)) {
             $currentLocale = code;
             isOpen = false;
-        } else {
-            // Можно добавить уведомление, что язык пока не готов
-            console.log(`Language ${code} is not fully supported yet.`);
-            // Но визуально мы можем его выбрать, если хочешь,
-            // или просто ничего не делать. Сейчас ничего не делаем.
         }
     }
 

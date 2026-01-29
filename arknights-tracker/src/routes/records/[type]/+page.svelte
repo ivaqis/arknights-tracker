@@ -23,10 +23,37 @@
     $: stats = bannerData.stats || {};
     $: isNewPlayer = bannerType === "new-player" || bannerType === "new_player";
     $: isSpecialBanner = bannerType === "special";
-    
+
+    $: mileage = stats.mileage || {
+        show: false,
+        current: 0,
+        max: 0,
+        label: "",
+    };
+
+    // [NEW] Прогресс гаранта оружия (теперь он лежит в guarantee120, но только для оружия)
+    $: weaponGuaranteeProgress = stats.guarantee120 || 0;
+    $: hasReceivedRateUp = stats.hasReceivedRateUp || false;
+
+    // [NEW] Хелпер для определения типа оружия (стандартное или нет)
+    $: isStandardWeapon = bannerType.includes("constant");
+
+    // [NEW] Функция перевода лейблов (копия из BannerCard)
+    function getMileageLabel(label) {
+        if (label === "selector_6") return $t("stats.selector") || "Selector";
+        if (label === "guaranteed_6")
+            return $t("stats.guaranteed") || "Guaranteed";
+        if (label === "bonus_copy_6")
+            return $t("stats.bonus_copy") || "Bonus Copy";
+        return label;
+    }
+
     // Определяем типы
-    $: isWeaponType = bannerType.includes('weap') || bannerType.includes('wepon');
-    $: hasRateUp = bannerType === "special" || (isWeaponType && !bannerType.includes('constant'));
+    $: isWeaponType =
+        bannerType.includes("weap") || bannerType.includes("wepon");
+    $: hasRateUp =
+        bannerType === "special" ||
+        (isWeaponType && !bannerType.includes("constant"));
     $: maxPity6 = isNewPlayer ? 40 : 80;
 
     $: statsBannerStub = {
@@ -80,22 +107,33 @@
         const pType = pageType.toLowerCase(); // ID страницы (например weaponbox_constant_3)
 
         // 1. Фильтры типов (как было)
-        const isWeaponPage = pType.includes('weap') || pType.includes('wepon');
-        const isNewPlayerPage = pType.includes('new-player') || pType.includes('new_player');
-        const isStandardPage = (pType.includes('standard') || pType.includes('constant')) && !isNewPlayerPage;
+        const isWeaponPage = pType.includes("weap") || pType.includes("wepon");
+        const isNewPlayerPage =
+            pType.includes("new-player") || pType.includes("new_player");
+        const isStandardPage =
+            (pType.includes("standard") || pType.includes("constant")) &&
+            !isNewPlayerPage;
 
-        const candidates = banners.filter(b => {
+        const candidates = banners.filter((b) => {
             const bId = (b.id || "").toLowerCase();
             const bType = (b.type || "").toLowerCase();
 
-            const isBannerWeapon = bType === 'weapon' || bId.includes('weap') || bId.includes('wepon');
+            const isBannerWeapon =
+                bType === "weapon" ||
+                bId.includes("weap") ||
+                bId.includes("wepon");
             if (isWeaponPage !== isBannerWeapon) return false;
 
-            const isBannerNewPlayer = bType === 'new-player' || bId.includes('new_player');
+            const isBannerNewPlayer =
+                bType === "new-player" || bId.includes("new_player");
             if (isNewPlayerPage) return isBannerNewPlayer;
             if (isBannerNewPlayer) return false;
 
-            const isBannerStandard = bType === 'standard' || bType === 'constant' || bId.includes('constant') || bId.includes('standard');
+            const isBannerStandard =
+                bType === "standard" ||
+                bType === "constant" ||
+                bId.includes("constant") ||
+                bId.includes("standard");
             if (isStandardPage) return isBannerStandard;
             return !isBannerStandard;
         });
@@ -108,41 +146,48 @@
         });
 
         // --- ЛОГИКА ВЫБОРА ---
-        
+
         // Если найдено много баннеров (твой случай с 5 пушками)
         if (matches.length > 1) {
-            
             // ШАГ 1: Пытаемся найти по уникальному 6* оружию
             if (itemName) {
                 const normName = normalize(itemName);
                 const itemObj = lookupMap[normName];
                 const searchId = itemObj ? itemObj.id : normName;
 
-                const exactMatch = matches.find(b => {
+                const exactMatch = matches.find((b) => {
                     if (!b.featured6) return false;
                     // Проверяем, есть ли этот предмет в featured6
-                    return b.featured6.some(fid => {
+                    return b.featured6.some((fid) => {
                         const nFid = normalize(fid);
                         const nSearch = normalize(searchId);
-                        return nFid === nSearch || nFid.includes(nSearch) || nSearch.includes(nFid);
+                        return (
+                            nFid === nSearch ||
+                            nFid.includes(nSearch) ||
+                            nSearch.includes(nFid)
+                        );
                     });
                 });
                 // Если выпала лега из конкретного баннера - показываем его
                 if (exactMatch) return exactMatch;
             }
 
-            // ШАГ 2 (FIX): Если точного предмета нет (это 3-4*), 
+            // ШАГ 2 (FIX): Если точного предмета нет (это 3-4*),
             // проверяем, находимся ли мы прямо сейчас на странице одного из этих баннеров?
             // pageType = "weaponbox_constant_3", и этот ID есть в matches
-            const contextMatch = matches.find(b => b.id === pageType);
+            const contextMatch = matches.find((b) => b.id === pageType);
             if (contextMatch) {
                 return contextMatch;
             }
 
             // ШАГ 3: Сортировка по умолчанию (если мы на странице "Все", а не конкретного)
             matches.sort((a, b) => {
-                const durationA = (new Date(a.endTime || '2099-01-01').getTime()) - new Date(a.startTime).getTime();
-                const durationB = (new Date(b.endTime || '2099-01-01').getTime()) - new Date(b.startTime).getTime();
+                const durationA =
+                    new Date(a.endTime || "2099-01-01").getTime() -
+                    new Date(a.startTime).getTime();
+                const durationB =
+                    new Date(b.endTime || "2099-01-01").getTime() -
+                    new Date(b.startTime).getTime();
                 if (durationA !== durationB) return durationA - durationB;
                 return new Date(b.startTime) - new Date(a.startTime);
             });
@@ -331,43 +376,43 @@
 
     // [NEW] Хелпер для получения пути к картинке баннера (как в BannerCard)
     function getBannerImage(id) {
-    const b = banners.find(x => x.id === id);
-    if (!b) return null;
+        const b = banners.find((x) => x.id === id);
+        if (!b) return null;
 
-    // --- 1. СПЕЦИФИЧЕСКИЕ ИСПРАВЛЕНИЯ (HARDCODE) ---
-    
-    // Исправление для Лаватейн (у тебя файл .jpg)
-    if (id === 'laevatain-banner') {
-        return '/images/banners/miniIcon/laevatain-banner.jpg';
-    }
+        // --- 1. СПЕЦИФИЧЕСКИЕ ИСПРАВЛЕНИЯ (HARDCODE) ---
 
-    // Исправление для Стандартного Оружия
-    // Если ID баннера содержит 'constant' (например 'weapon_constant_01')
-    // А файлы называются 'weaponbox_constant_1.png'
-    if (id.includes('constant')) {
-        // Извлекаем цифру из ID (01 -> 1)
-        const num = id.replace(/[^0-9]/g, ''); 
-        const cleanNum = parseInt(num, 10); // Убираем ведущий ноль
-        return `/images/banners/miniIcon/weaponbox_constant_${cleanNum}.png`;
-    }
+        // Исправление для Лаватейн (у тебя файл .jpg)
+        if (id === "laevatain-banner") {
+            return "/images/banners/miniIcon/laevatain-banner.jpg";
+        }
 
-    // Исправление для Ивентового Оружия
-    // Если это оружие, но не стандарт (например 'weponbox_1_0_1')
-    // Ставим общую заглушку weapon_01.png, которая есть у тебя в папке
-    if (id.includes('wepon') || id.includes('weapon')) {
-        return '/images/banners/miniIcon/weapon_01.png';
-    }
+        // Исправление для Стандартного Оружия
+        // Если ID баннера содержит 'constant' (например 'weapon_constant_01')
+        // А файлы называются 'weaponbox_constant_1.png'
+        if (id.includes("constant")) {
+            // Извлекаем цифру из ID (01 -> 1)
+            const num = id.replace(/[^0-9]/g, "");
+            const cleanNum = parseInt(num, 10); // Убираем ведущий ноль
+            return `/images/banners/miniIcon/weaponbox_constant_${cleanNum}.png`;
+        }
 
-    // --- 2. ОБЫЧНАЯ ЛОГИКА ---
-    
-    // Если в конфиге banners.js уже прописано точное имя файла
-    if (b.miniIcon) {
-        return `/images/banners/miniIcon/${b.miniIcon}`;
+        // Исправление для Ивентового Оружия
+        // Если это оружие, но не стандарт (например 'weponbox_1_0_1')
+        // Ставим общую заглушку weapon_01.png, которая есть у тебя в папке
+        if (id.includes("wepon") || id.includes("weapon")) {
+            return "/images/banners/miniIcon/weapon_01.png";
+        }
+
+        // --- 2. ОБЫЧНАЯ ЛОГИКА ---
+
+        // Если в конфиге banners.js уже прописано точное имя файла
+        if (b.miniIcon) {
+            return `/images/banners/miniIcon/${b.miniIcon}`;
+        }
+
+        // Fallback: Пробуем найти по ID + .png
+        return `/images/banners/miniIcon/${b.id}.png`;
     }
-    
-    // Fallback: Пробуем найти по ID + .png
-    return `/images/banners/miniIcon/${b.id}.png`; 
-  }
 </script>
 
 <div class="max-w-[1600px] justify-start min-h-screen">
@@ -410,89 +455,75 @@
                     class="bg-white rounded-xl shadow-sm border border-gray-100 p-5"
                 >
                     <div class="space-y-3">
-                        <div class="flex justify-between items-center">
-                            <span class="text-gray-600"
-                                >{$t("page.banner.total")}</span
-                            >
-                            <span
-                                class="font-bold text-xl font-nums text-[#21272C]"
-                            >
-                                {totalCount}
-                            </span>
-                        </div>
+    <div class="flex justify-between items-center">
+        <span class="text-gray-600">{$t("page.banner.total")}</span>
+        <span class="font-bold text-xl font-nums text-[#21272C]">
+            {totalCount}
+        </span>
+    </div>
 
-                        {#if !isNewPlayer && !isWeaponType}
-                            <div class="flex justify-between items-center">
-                                <span class="text-gray-600"
-                                    >{$t("page.banner.spent")}</span
-                                >
-                                <span
-                                    class="font-bold text-gray-900 flex items-center gap-2 font-nums text-xl"
-                                >
-                                    <Images
-                                        id="oroberyl"
-                                        variant="currency"
-                                        size={25}
-                                    />
-                                    {spent}
-                                </span>
-                            </div>
-                        {/if}
+    {#if !isNewPlayer && !isWeaponType}
+        <div class="flex justify-between items-center">
+            <span class="text-gray-600">{$t("page.banner.spent")}</span>
+            <span class="font-bold text-gray-900 flex items-center gap-2 font-nums text-xl">
+                <Images
+                    id="oroberyl"
+                    variant="currency"
+                    size={25}
+                />
+                {spent}
+            </span>
+        </div>
+    {/if}
 
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center gap-1 text-gray-600">
-                                <span class="font-bold">6</span>
-                                <Icon name="star" class="w-4 h-4" />
-                                <span>{$t("page.banner.pity6")}</span>
-                            </div>
-                            <span
-                                class="font-bold text-xl font-nums text-[#21272C]"
-                            >
-                                {currentPity6}<span
-                                    class="text-sm text-gray-400"
-                                    >/{maxPity6}</span
-                                >
-                            </span>
-                        </div>
+    <div class="flex justify-between items-center">
+        <div class="flex items-center gap-1 text-gray-600">
+            <span class="font-bold">6</span>
+            <Icon name="star" class="w-4 h-4" />
+            <span>{$t("page.banner.pity6")}</span>
+        </div>
+        <span class="font-bold text-xl font-nums text-[#21272C]">
+            {currentPity6}<span class="text-sm text-gray-400">/{maxPity6}</span>
+        </span>
+    </div>
 
-                        {#if hasRateUp}
-                            <div class="flex justify-between items-center">
-                                <div
-                                    class="flex items-center gap-1 text-gray-600"
-                                >
-                                    <span class="font-bold">6</span>
-                                    <Icon name="star" class="w-4 h-4" />
-                                    <span
-                                        >{$t(
-                                            "page.banner.guarantee_rateup",
-                                        )}</span
-                                    >
-                                </div>
-                                <span
-                                    class="font-bold text-xl font-nums text-[#21272C]"
-                                >
-                                    {progress120}<span
-                                        class="text-sm text-gray-400">/120</span
-                                    >
-                                </span>
-                            </div>
-                        {/if}
+    {#if mileage.show}
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-1 text-gray-600">
+                <span class="font-bold">6</span>
+                <Icon name="star" class="w-4 h-4" />
+                <span>{getMileageLabel(mileage.label)}</span>
+            </div>
+            <span class="font-bold text-xl font-nums text-[#21272C]">
+                {mileage.current}<span class="text-sm text-gray-400">/{mileage.max}</span>
+            </span>
+        </div>
+    {/if}
 
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center gap-1 text-gray-600">
-                                <span class="font-bold">5</span>
-                                <Icon name="star" class="w-4 h-4" />
-                                <span>{$t("page.banner.pity5")}</span>
-                            </div>
-                            <span
-                                class="font-bold text-xl font-nums text-[#21272C]"
-                            >
-                                {currentPity5}<span
-                                    class="text-sm text-gray-400">/10</span
-                                >
-                            </span>
-                        </div>
-                    </div>
+    {#if isWeaponType && !hasReceivedRateUp}
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-1 text-gray-600">
+                <span class="font-bold">6</span>
+                <Icon name="star" class="w-4 h-4" />
+                <span>{$t("page.banner.guarantee_rateup")}</span>
+            </div>
+            <span class="font-bold text-xl font-nums text-[#21272C]">
+                {weaponGuaranteeProgress}<span class="text-sm text-gray-400">/80</span>
+            </span>
+        </div>
+    {/if}
+
+    <div class="flex justify-between items-center">
+        <div class="flex items-center gap-1 text-gray-600">
+            <span class="font-bold">5</span>
+            <Icon name="star" class="w-4 h-4" />
+            <span>{$t("page.banner.pity5")}</span>
+        </div>
+        <span class="font-bold text-xl font-nums text-[#21272C]">
+            {currentPity5}<span class="text-sm text-gray-400">/10</span>
+        </span>
+    </div>
+</div>
                 </div>
 
                 <div
@@ -618,13 +649,18 @@
                     </div>
                 {:else}
                     {#each tableData as row, index}
-                        {@const currentBanner = getBannerForPull(row.time, bannerType, row.name)}
-                        
+                        {@const currentBanner = getBannerForPull(
+                            row.time,
+                            bannerType,
+                            row.name,
+                        )}
+
                         {@const itemData = lookupMap[normalize(row.name)]}
                         {@const itemId = itemData?.id || normalize(row.name)}
                         {@const isWeapon =
                             (itemData && !!weapons[itemData.id]) ||
-                            row.type === "weapon" || isWeaponType}
+                            row.type === "weapon" ||
+                            isWeaponType}
                         {@const bracketColor = row.isFree
                             ? "#5DBE5A"
                             : "#D0926E"}
@@ -748,17 +784,32 @@
 
                                     {#if row.rarity >= 5 && row.status && row.status !== "normal" && !row.isFree}
                                         {#if row.rarity === 6 || !isWeapon}
-                                            
                                             {#if row.status === "won"}
-                                                {#if !bannerType.includes('standard') && !bannerType.includes('new')}
-                                                    <Tooltip textKey="status.won"><Icon name="star" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
+                                                {#if !bannerType.includes("standard") && !bannerType.includes("new")}
+                                                    <Tooltip
+                                                        textKey="status.won"
+                                                        ><Icon
+                                                            name="star"
+                                                            class="w-4 h-4 text-[#D0926E]"
+                                                        /></Tooltip
+                                                    >
                                                 {/if}
                                             {:else if row.status === "lost"}
-                                                <Tooltip textKey="status.lost"><Icon name="lost" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
+                                                <Tooltip textKey="status.lost"
+                                                    ><Icon
+                                                        name="lost"
+                                                        class="w-4 h-4 text-[#D0926E]"
+                                                    /></Tooltip
+                                                >
                                             {:else if row.status === "guaranteed"}
-                                                <Tooltip textKey="status.guaranteed"><Icon name="guaranteed" class="w-4 h-4 text-[#D0926E]" /></Tooltip>
+                                                <Tooltip
+                                                    textKey="status.guaranteed"
+                                                    ><Icon
+                                                        name="guaranteed"
+                                                        class="w-4 h-4 text-[#D0926E]"
+                                                    /></Tooltip
+                                                >
                                             {/if}
-                                            
                                         {/if}
                                     {/if}
                                 </div>
@@ -771,21 +822,40 @@
 
                                 <div class="flex justify-end">
                                     {#if currentBanner}
-                                        <button class="group relative h-10 w-20 rounded shadow-sm border border-gray-200 overflow-hidden hover:ring-2 hover:ring-[#D0926E] transition-all focus:outline-none bg-gray-100"
-                                                on:click={() => (selectedBanner = currentBanner)}
-                                                title={$t(`banners.${currentBanner.id}`) || currentBanner.name}>
-                                            
-                                            <img 
-                                                src={getBannerImage(currentBanner.id) || "/images/banners/unknown.jpg"} 
-                                                alt={currentBanner.name} 
+                                        <button
+                                            class="group relative h-10 w-20 rounded shadow-sm border border-gray-200 overflow-hidden hover:ring-2 hover:ring-[#D0926E] transition-all focus:outline-none bg-gray-100"
+                                            on:click={() =>
+                                                (selectedBanner =
+                                                    currentBanner)}
+                                            title={$t(
+                                                `banners.${currentBanner.id}`,
+                                            ) || currentBanner.name}
+                                        >
+                                            <img
+                                                src={getBannerImage(
+                                                    currentBanner.id,
+                                                ) ||
+                                                    "/images/banners/unknown.jpg"}
+                                                alt={currentBanner.name}
                                                 class="h-full w-full object-cover transition-transform group-hover:scale-110"
-                                                on:error={(e) => e.target.style.display = 'none'} 
+                                                on:error={(e) =>
+                                                    (e.target.style.display =
+                                                        "none")}
                                             />
-                                            
-                                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+
+                                            <div
+                                                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
+                                            ></div>
                                         </button>
                                     {:else}
-                                        <div class="h-6 w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center"><span class="text-[10px] text-gray-300">-</span></div>
+                                        <div
+                                            class="h-6 w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center"
+                                        >
+                                            <span
+                                                class="text-[10px] text-gray-300"
+                                                >-</span
+                                            >
+                                        </div>
                                     {/if}
                                 </div>
                             </div>
@@ -797,7 +867,8 @@
     </div>
 </div>
 <!-- Модалка Баннера -->
-<BannerModal 
-    banner={selectedBanner} 
-    pageContext={bannerType}  on:close={() => (selectedBanner = null)} 
+<BannerModal
+    banner={selectedBanner}
+    pageContext={bannerType}
+    on:close={() => (selectedBanner = null)}
 />

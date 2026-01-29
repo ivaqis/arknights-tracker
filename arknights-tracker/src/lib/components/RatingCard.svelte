@@ -73,12 +73,10 @@
       if (response) {
         // Вариант 1: Пришел полный пакет { code: 0, data: {...} }
         if (response.code === 0 && response.data) {
-            console.log("✅ Data Loaded (Type A)");
             serverData = response.data;
         } 
         // Вариант 2: Пришли сразу данные { found: true, myStats: {...} } (Твой случай)
         else if (response.found === true || response.myStats) {
-            console.log("✅ Data Loaded (Type B - Direct)");
             serverData = response;
         }
         // Вариант 3: Ошибка

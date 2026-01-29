@@ -280,7 +280,6 @@
 
         // АВТО-СИНХРОНИЗАЦИЯ: Сразу чистим и в облаке
         if ($user) {
-            console.log("Auto-syncing after clear...");
             await uploadLocalData();
         }
     }
@@ -290,7 +289,6 @@
 
         // АВТО-СИНХРОНИЗАЦИЯ: Сразу удаляем из облака
         if ($user) {
-            console.log("Auto-syncing after delete...");
             await uploadLocalData();
         }
     }

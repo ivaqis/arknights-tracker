@@ -2,7 +2,7 @@
   "error_account_mismatch": "Ошибка: Несовпадение аккаунта! У вас уже есть история с {startDate} по {endDate}. Пожалуйста, убедитесь, что выбран правильный аккаунт.",
   "seo": {
     "title": "Goyfield - Трекер круток для Arknights Endfield",
-    "description": "Отслеживайте свои крутки в Arknights Endfield",
+    "description": "Отслеживайте свои крутки в Arknights Endfield. Отслеживайте статистику, считайте гарант и анализируйте свою удачу.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники"
   },
   "sidebar": {
@@ -49,6 +49,7 @@
       "percent": "Процент",
       "avg": "Ср. знач.",
       "fallBackCharacters": "Пока нет шестизвездочных наймов...",
+      "fallBackWeapons": "Пока нет шестизвездочных поставок...",
       "guarantee_rateup": "Гарантированно",
       "won5050": "Выиграно 50/50",
       "origeometry": "Ориджеметрий",
@@ -333,7 +334,10 @@
     "materials": "Материалы",
     "maxed": "Максимальный уровень",
     "level": "Уровень",
-    "attributesTable": "Таблица атрибутов"
+    "attributesTable": "Таблица атрибутов",
+    "selector": "Селектор",
+    "bonus_copy": "Бонусная копия",
+    "guaranteed": "Гарантированно"
   },
   "bioValues": {
     "Unknown": "Неизвестно",
@@ -462,6 +466,7 @@
       "totalPulls": "Всего круток",
       "cloudNewerAlert": "Данные в облаке новее. Вы хотите <b>скачать</b> их и перезаписать локальные данные?",
       "cancel": "Отмена",
+      "never": "Не производилась",
       "integration": "Интеграция с Google"
     },
     "backup": {
