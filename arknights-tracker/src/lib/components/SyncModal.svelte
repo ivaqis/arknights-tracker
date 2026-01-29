@@ -1,6 +1,7 @@
 <script>
     import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore";
     import { accountStore } from "$lib/stores/accounts";
+    import { pullData } from "$lib/stores/pulls";
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icons.svelte";
     import { t } from "$lib/i18n";
@@ -9,14 +10,35 @@
 
     function getAllLocalPullsCount() {
         if (typeof window === 'undefined') return 0;
+        
+        let total = 0;
         let accounts = [];
-        try { if ($accountStore && $accountStore.accounts) accounts = $accountStore.accounts; } catch(e) {}
+        let currentId = 'main';
+
+        // 1. Берем аккаунты из стора
+        try { 
+            if ($accountStore && $accountStore.accounts) {
+                accounts = $accountStore.accounts; 
+                currentId = $accountStore.selectedId;
+            }
+        } catch(e) {}
+
         if (!accounts.length) {
             try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) accounts = JSON.parse(raw).accounts; } catch(e) {}
         }
         if (!accounts || !accounts.length) accounts = [{id: 'main'}];
-        let total = 0;
+
+        // 2. Считаем
         accounts.forEach(acc => {
+            // Если активный аккаунт - берем из $pullData (СВЕЖАК!)
+            if (acc.id === currentId && $pullData) {
+                ['standard', 'special', 'new-player'].forEach(cat => { 
+                    if ($pullData[cat]?.pulls) total += $pullData[cat].pulls.length; 
+                });
+                return;
+            }
+
+            // Иначе с диска
             const raw = localStorage.getItem(`ark_tracker_data_${acc.id}`);
             if (raw) {
                 try {
