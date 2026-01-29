@@ -65,33 +65,30 @@ const POOL_TYPES = [
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function fetchGameData(token, lang, serverId) {
-    let collectedPulls = [];
-    const visitedIds = new Set();
-    
-    console.log(`\n--- Starting Scan on SERVER ID: ${serverId} ---`);
+    console.log(`\n--- Starting PARALLEL Scan on SERVER ID: ${serverId} ---`);
 
-    for (const poolType of POOL_TYPES) {
+    // Внутренняя функция для скачивания конкретного типа пула
+    const fetchPool = async (poolType) => {
+        let poolPulls = [];
+        const visitedIds = new Set();
         let hasMore = true;
         let lastId = "";
         let pageCount = 1;
 
         const isWeaponScan = poolType === 'WEAPON_FETCH_ALL';
-        
         const currentApiUrl = isWeaponScan 
             ? 'https://ef-webview.gryphline.com/api/record/weapon'
             : 'https://ef-webview.gryphline.com/api/record/char';
 
-        console.log(`[Pool] Scanning: ${isWeaponScan ? 'WEAPONS (All)' : mapPoolTypeToShort(poolType)}`);
+        const poolLabel = isWeaponScan ? 'WEAPONS' : mapPoolTypeToShort(poolType);
+        // console.log(`[Start] ${poolLabel}`); // Можно включить для отладки
 
         while (hasMore) {
-            const params = new URLSearchParams({
-                token, lang, server_id: serverId
-            });
+            const params = new URLSearchParams({ token, lang, server_id: serverId });
 
             if (!isWeaponScan) {
                 params.append('pool_type', poolType);
             }
-
             if (lastId) params.append('seq_id', lastId);
 
             try {
@@ -105,16 +102,15 @@ async function fetchGameData(token, lang, serverId) {
 
                 const result = response.data;
                 
-                // Если сервер пустой или не тот, API часто отдает не 0, а ошибку
                 if (result.code !== 0) {
-                    console.warn(`⚠️ Game API Error (Server ${serverId}): ${result.code} - ${result.msg}`);
+                    // Игнорируем ошибки (часто значит, что в этом пуле просто нет круток)
                     hasMore = false; 
                     break; 
                 }
 
                 const list = result.data?.list || [];
                 
-                // Фильтрация дублей
+                // Фильтрация дублей внутри текущего пула
                 const newItems = list.filter(item => {
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                     return !visitedIds.has(uniqueKey);
@@ -125,14 +121,13 @@ async function fetchGameData(token, lang, serverId) {
                     break;
                 }
 
-                console.log(`  -> Page ${pageCount}: Received ${list.length} items. New: ${newItems.length}`);
+                // console.log(`[${poolLabel}] Page ${pageCount}: +${newItems.length} items`);
 
                 newItems.forEach(item => {
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                     visitedIds.add(uniqueKey);
                 });
 
-                // Приводим данные к общему виду
                 const listWithMeta = newItems.map(item => {
                     let finalPoolId;
                     if (isWeaponScan) {
@@ -149,25 +144,40 @@ async function fetchGameData(token, lang, serverId) {
                     };
                 });
 
-                collectedPulls = [...collectedPulls, ...listWithMeta];
+                poolPulls = [...poolPulls, ...listWithMeta];
                 
-                // Пагинация
                 hasMore = result.data?.hasMore;
                 if (newItems.length === 0) hasMore = false;
                 else if (list.length > 0) lastId = list[list.length - 1].seqId;
                 else hasMore = false;
 
                 pageCount++;
-                if (pageCount > 50) hasMore = false;
-                await sleep(100);
+                if (pageCount > 50) hasMore = false; 
+
+                // Небольшая задержка, чтобы не DDoS-ить API слишком сильно
+                await sleep(50); 
 
             } catch (err) {
-                console.error(`  -> Network/API Error on Server ${serverId}: ${err.message}`);
+                console.error(`Error scanning ${poolLabel}: ${err.message}`);
                 hasMore = false;
             }
         }
+        return poolPulls;
+    };
+
+    // ЗАПУСКАЕМ ВСЕ ПУЛЫ ОДНОВРЕМЕННО
+    // Promise.all ждет, пока выполнятся все 4 запроса
+    try {
+        const results = await Promise.all(POOL_TYPES.map(type => fetchPool(type)));
+        
+        // Объединяем результаты всех потоков в один массив (flat)
+        const allPulls = results.flat();
+        
+        return allPulls;
+    } catch (e) {
+        console.error("Parallel fetch failed", e);
+        return [];
     }
-    return collectedPulls;
 }
 
 app.post('/api/import', async (req, res) => {
