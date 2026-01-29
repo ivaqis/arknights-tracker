@@ -4,25 +4,54 @@ import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { logEvent } from "firebase/analytics";
 import { accountStore } from "$lib/stores/accounts"; 
+import { pullData } from "$lib/stores/pulls"; // <--- ДОБАВЬ ЭТОТ ИМПОРТ
 
 // Состояние
 export const user = writable(null);
 export const syncStatus = writable("idle"); 
 export const cloudDataBuffer = writable(null);
 
-// === ХЕЛПЕР: Подсчет локальных данных ===
+// === ХЕЛПЕР: Умный подсчет (Память + Диск) ===
 function countAllLocalPulls() {
     if (typeof window === 'undefined') return 0;
-    let accounts = [];
-    try {
-        const raw = localStorage.getItem("ark_tracker_accounts");
-        if (raw) accounts = JSON.parse(raw).accounts;
-    } catch (e) { console.warn("LS read error", e); }
     
+    let total = 0;
+    let accounts = [];
+    let currentId = 'main';
+
+    // 1. Пытаемся взять список аккаунтов из Стора (самый свежий)
+    try {
+        const storeAccs = get(accountStore.accounts);
+        if (storeAccs && storeAccs.length > 0) {
+            accounts = storeAccs;
+            currentId = get(accountStore.selectedId);
+        } else {
+            throw new Error("Store empty");
+        }
+    } catch (e) {
+        // Фоллбэк на localStorage
+        try {
+            const raw = localStorage.getItem("ark_tracker_accounts");
+            if (raw) accounts = JSON.parse(raw).accounts;
+        } catch (err) {}
+    }
+
     if (!accounts || accounts.length === 0) accounts = [{id: 'main'}];
 
-    let total = 0;
+    // 2. Считаем крутки
     accounts.forEach(acc => {
+        // ГЛАВНЫЙ ФИКС: Если это текущий аккаунт, берем данные из pullData (это то, что на экране!)
+        if (acc.id === currentId) {
+            const currentPulls = get(pullData);
+            if (currentPulls) {
+                ['standard', 'special', 'new-player'].forEach(cat => {
+                    if (currentPulls[cat]?.pulls) total += currentPulls[cat].pulls.length;
+                });
+                return; // Переходим к следующему аккаунту
+            }
+        }
+
+        // Иначе читаем с диска
         const raw = localStorage.getItem(`ark_tracker_data_${acc.id}`);
         if (raw) {
             try {
@@ -33,6 +62,7 @@ function countAllLocalPulls() {
             } catch (e) {}
         }
     });
+
     return total;
 }
 
@@ -61,13 +91,15 @@ export async function logout() {
 }
 
 // 3. ПРОВЕРКА СИНХРОНИЗАЦИИ
-export async function checkSync(currentUser) {
+export async function checkSync(currentUser, overrideLocalTotal = null) {
     if (!currentUser) return;
     syncStatus.set("checking");
 
     try {
         const localLastUpdated = parseInt(localStorage.getItem("ark_last_sync") || "0");
-        const localTotal = countAllLocalPulls();
+        
+        // Если передали вручную - берем его, иначе считаем Умным способом
+        let localTotal = overrideLocalTotal !== null ? overrideLocalTotal : countAllLocalPulls();
 
         const userRef = doc(db, "users", currentUser.uid);
         const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 5000));
@@ -93,22 +125,19 @@ export async function checkSync(currentUser) {
             }
 
             // 2. РАЗЛИЧИЯ
-
-            // ЛОКАЛЬНО БОЛЬШЕ -> Ставим local_newer
             if (localTotal > cloudTotal) {
                 console.log("📈 Local is NEWER (more pulls). Asking user...");
                 setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "local_newer");
                 return;
             }
 
-            // В ОБЛАКЕ БОЛЬШЕ -> Ставим conflict_cloud_newer
             if (cloudTotal > localTotal) {
                  console.log("☁️ Cloud is NEWER (more pulls). Asking user...");
                  setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
                  return;
             }
 
-            // ПОРОВНУ, НО ВРЕМЯ РАЗНОЕ
+            // Время
             const diff = cloudLastUpdated - localLastUpdated;
             if (Math.abs(diff) > 10000) {
                  if (diff > 0) {
@@ -122,7 +151,7 @@ export async function checkSync(currentUser) {
             syncStatus.set("synced");
 
         } else {
-            // В облаке пусто (новый юзер) -> Предлагаем загрузить локальные
+            // Новый юзер
             syncStatus.set("local_newer");
         }
     } catch (e) {
@@ -185,6 +214,7 @@ export async function uploadLocalData() {
     console.log("🚀 Starting Upload...");
 
     try {
+        // [FIX] При Upload тоже берем данные из Стора, чтобы не загрузить старье с диска
         let accounts = [];
         let selectedId = 'main';
 
@@ -213,12 +243,30 @@ export async function uploadLocalData() {
         let sixStars = 0;
 
         accounts.forEach(acc => {
+            // Если аккаунт активный - берем из Store
+            if (acc.id === selectedId) {
+                const currentData = get(pullData);
+                if (currentData) {
+                    fullBackup.data[acc.id] = currentData;
+                    console.log(`✅ Packed (Memory): ${acc.name}`);
+                    ['standard', 'special', 'new-player'].forEach(cat => {
+                        const list = currentData[cat]?.pulls || [];
+                        totalPulls += list.length;
+                        sixStars += list.filter(p => p.rarity === 6).length;
+                    });
+                    return;
+                }
+            }
+
+            // Иначе с диска
             const key = `ark_tracker_data_${acc.id}`;
             const rawData = localStorage.getItem(key);
             
             if (rawData) {
                 const parsed = JSON.parse(rawData);
                 fullBackup.data[acc.id] = parsed;
+                console.log(`✅ Packed (Disk): ${acc.name}`);
+
                 ['standard', 'special', 'new-player'].forEach(cat => {
                     const list = parsed[cat]?.pulls || [];
                     totalPulls += list.length;
