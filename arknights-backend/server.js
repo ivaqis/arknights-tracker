@@ -8,28 +8,13 @@ const crypto = require('crypto');
 
 function generateStableUid(pulls) {
     if (!pulls || pulls.length === 0) return null;
-
-    // ВАРИАНТ 1 (Правильный): Ищем настоящий UID в данных
-    // Пробегаем по списку и ищем любую запись, где есть поле uid
     const itemWithUid = pulls.find(p => p.uid && p.uid !== "" && p.uid !== "0");
-    
-    if (itemWithUid) {
-        // Возвращаем реальный UID игрока (обычно это цифры, но приводим к строке)
-        return itemWithUid.uid.toString();
-    }
+    if (itemWithUid) return itemWithUid.uid.toString();
 
-    // ВАРИАНТ 2 (Запасной): Если вдруг разработчики скрыли UID (маловероятно)
-    // Генерируем хеш, но берем больше данных, чтобы избежать коллизий
-    console.warn("⚠️ Real UID not found in pulls! Falling back to hash.");
-    
-    // Сортируем
-    const sorted = [...pulls].sort((a, b) => a.timestamp - b.timestamp || a.seqId - b.seqId);
-
-    // Берем первые 10 круток (вместо 3), шанс совпадения ниже
+    const sorted = [...pulls].sort((a, b) => a.timestamp - b.timestamp || Number(a.seqId || 0) - Number(b.seqId || 0));
     const fingerprintData = sorted.slice(0, 10).map(p => 
         `${p.timestamp}_${p.poolId}_${p.name}_${p.rarity}`
     ).join('|');
-
     return 'u_' + crypto.createHash('md5').update(fingerprintData).digest('hex');
 }
 
@@ -277,19 +262,15 @@ async function updateAggregatedStats(uid, allPulls) {
 
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
-    // Группируем крутки по "ЧИСТЫМ" категориям (standard, special, weap-standard...)
     const pullsByCategory = {};
 
     allPulls.forEach(p => {
         const pullTimeMs = p.timestamp * 1000;
-        // ВОТ ЗДЕСЬ МАГИЯ: превращаем weaponbox_constant_1 -> weap-standard
-        const category = normalizeBannerId(p.poolId); 
-
+        const category = normalizeBannerId(p.poolId);
         if (!pullsByCategory[category]) pullsByCategory[category] = [];
         pullsByCategory[category].push({ ...p, time: pullTimeMs });
     });
 
-    // Считаем стату и пишем в БД
     for (const [category, pulls] of Object.entries(pullsByCategory)) {
         const stats = calculateMath(pulls, category);
 
@@ -323,8 +304,12 @@ async function updateAggregatedStats(uid, allPulls) {
 
 // Математика подсчета (аналог того, что у тебя на фронте, но упрощено для БД)
 function calculateMath(pulls, categoryId) {
-    // Сортировка: Время -> seqId
-    pulls.sort((a, b) => a.time - b.time || (a.seqId || "").localeCompare(b.seqId || ""));
+    // [FIX 1] Сортировка seqId как ЧИСЛА, а не строки. Это чинит расчет Pity.
+    pulls.sort((a, b) => {
+        const timeDiff = a.time - b.time;
+        if (timeDiff !== 0) return timeDiff;
+        return Number(a.seqId || 0) - Number(b.seqId || 0);
+    });
 
     const isWeapon = categoryId.includes('weap');
     
@@ -340,46 +325,45 @@ function calculateMath(pulls, categoryId) {
     let last6WasFeatured = true; 
 
     pulls.forEach((pull) => {
-        // Проверяем флаг бесплатной крутки (если есть в базе)
         const isFree = pull.isFree === true || String(pull.isFree) === "true";
         const itemName = normalize(pull.name);
 
-        // --- ЛЕГИ (6*) ---
+        // --- 6 ЗВЕЗД ---
         if (pull.rarity === 6) {
             stats.total6++;
+            // Pity = сколько крутили ДО + эта крутка (1)
             stats.sumPity6 += currentPity6 + 1;
 
-            // Логика 50/50: Ищем конфиг баннера по времени крутки
-            const matchedBanner = BANNERS.find(b => 
-                // Либо ID совпадает, либо это баннер той же категории во время крутки
-                (b.type === pull.poolId || normalizeBannerId(b.type) === categoryId) &&
-                pull.time >= b.startTime && 
-                (!b.endTime || pull.time <= b.endTime)
-            );
+            // [FIX 2] Логика 50/50
+            // Ищем баннер, который был активен в момент крутки
+            const matchedBanner = BANNERS.find(b => {
+                // Проверяем тип (либо совпадение ID, либо совпадение нормализованной категории)
+                const typeMatch = b.type === pull.poolId || normalizeBannerId(b.type) === categoryId;
+                // Проверяем время
+                const timeMatch = pull.time >= b.startTime && (!b.endTime || pull.time <= b.endTime);
+                return typeMatch && timeMatch;
+            });
 
-            // Если нашли конфиг и список rate-up персонажей
             if (matchedBanner && matchedBanner.featured6 && matchedBanner.featured6.length > 0) {
                 const normFeatured = matchedBanner.featured6.map(normalize);
                 const isFeatured = normFeatured.includes(itemName);
 
-                // Если прошлый был гарантом (или это первая лега), значит был шанс 50/50
                 if (last6WasFeatured) {
                     stats.total5050++;
                     if (isFeatured) stats.won5050++;
                 }
                 last6WasFeatured = isFeatured;
             } else {
-                // Если конфига нет (например, Стандарт), не считаем 50/50, но сбрасываем флаг
+                // Если баннер не найден в конфиге (например Стандарт), сбрасываем серию
                 last6WasFeatured = true; 
             }
 
             currentPity6 = 0;
         } else {
-            // Если не лега, увеличиваем пити (если не бесплатно)
             if (!isFree) currentPity6++;
         }
 
-        // --- ЭПИКИ (5*) ---
+        // --- 5 ЗВЕЗД ---
         if (pull.rarity === 5) {
             stats.total5++;
             stats.sumPity5 += currentPity5 + 1;
@@ -402,34 +386,34 @@ function normalizeBannerId(rawId) {
     if (!rawId) return 'special';
     const lower = rawId.toLowerCase();
 
-    // Если уже чисто - возвращаем как есть
-    if (['weap-standard', 'weap-special', 'standard', 'special', 'new-player'].includes(lower)) {
-        return lower;
-    }
+    // Чистые категории
+    if (lower === 'weap-standard') return 'weap-standard';
+    if (lower === 'weap-special') return 'weap-special';
+    if (lower === 'standard') return 'standard';
+    if (lower === 'special') return 'special';
+    if (lower === 'new-player') return 'new-player';
 
-    // ОРУЖИЕ (ловим weapon, wepon, constant)
+    // Грязные ID (Оружие)
     if (lower.includes('weapon') || lower.includes('wepon') || lower.includes('weap')) {
         if (lower.includes('constant') || lower.includes('standard')) return 'weap-standard';
         return 'weap-special';
     }
 
-    // ПЕРСОНАЖИ
+    // Персонажи
     if (lower.includes('new') || lower.includes('beginner')) return 'new-player';
     if (lower.includes('standard')) return 'standard';
     
-    // Всё остальное (ивенты с ID типа pool_1024) -> special
     return 'special';
 }
 
-app.get('/api/rankings/data', async (req, res) => {
+pp.get('/api/rankings/data', async (req, res) => {
     try {
         const { bannerId, uid } = req.query;
         if (!bannerId) return res.status(400).json({ code: 1, message: "Banner ID required" });
 
-        // Нормализуем запрос (на случай, если фронт пришлет что-то странное)
         const targetCategory = normalizeBannerId(bannerId);
 
-        // 1. Загружаем статистику ТОЛЬКО по нужной категории
+        // 1. Загружаем статистику
         const allStats = await prisma.userBannerStat.findMany({
             where: { bannerId: targetCategory },
             select: {
@@ -437,6 +421,8 @@ app.get('/api/rankings/data', async (req, res) => {
                 totalPulls: true,
                 total6: true,
                 sumPity6: true,
+                total5: true, 
+                sumPity5: true, // [FIX] Добавили поля для 5*
                 won5050: true,
                 total5050: true
             }
@@ -446,29 +432,36 @@ app.get('/api/rankings/data', async (req, res) => {
             return res.json({ code: 0, data: { found: false, totalUsers: 0 } });
         }
 
-        // 2. Считаем средние значения
+        // 2. Считаем средние
         const usersWithAvg = allStats.map(s => ({
             ...s,
             avg6: s.total6 > 0 ? s.sumPity6 / s.total6 : 0,
+            avg5: s.total5 > 0 ? s.sumPity5 / s.total5 : 0, // [FIX] Считаем среднее для 5*
             winRate: s.total5050 > 0 ? (s.won5050 / s.total5050) * 100 : 0
         }));
 
-        // 3. Ищем себя
         const myStat = usersWithAvg.find(u => u.uid === uid);
 
         if (!myStat) {
             return res.json({ code: 0, data: { found: false, totalUsers: allStats.length } });
         }
 
-        // 4. Считаем Перцентили (Ранги)
-        // Логика: (Сколько людей хуже меня / Всего людей) * 100
+        // 3. Ранги (Percentile)
         
         // Luck 6
-        const validLuckUsers = usersWithAvg.filter(u => u.total6 > 0).sort((a, b) => a.avg6 - b.avg6);
-        const myLuckIndex = validLuckUsers.findIndex(u => u.uid === uid);
+        const validLuck6 = usersWithAvg.filter(u => u.total6 > 0).sort((a, b) => a.avg6 - b.avg6);
+        const myLuck6Index = validLuck6.findIndex(u => u.uid === uid);
         let rankLuck6 = null;
-        if (myLuckIndex !== -1) {
-            rankLuck6 = ((validLuckUsers.length - 1 - myLuckIndex) / validLuckUsers.length * 100);
+        if (myLuck6Index !== -1) {
+            rankLuck6 = ((validLuck6.length - 1 - myLuck6Index) / validLuck6.length * 100);
+        }
+
+        // [FIX] Luck 5 (Добавлена логика)
+        const validLuck5 = usersWithAvg.filter(u => u.total5 > 0).sort((a, b) => a.avg5 - b.avg5);
+        const myLuck5Index = validLuck5.findIndex(u => u.uid === uid);
+        let rankLuck5 = null;
+        if (myLuck5Index !== -1) {
+            rankLuck5 = ((validLuck5.length - 1 - myLuck5Index) / validLuck5.length * 100);
         }
 
         // Total Pulls
@@ -491,11 +484,12 @@ app.get('/api/rankings/data', async (req, res) => {
                 totalUsers: allStats.length,
                 rankTotal,
                 rankLuck6,
-                rankLuck5: null, 
+                rankLuck5, // [FIX] Теперь возвращаем ранг 5*
                 rank5050,
                 myStats: {
                     total: myStat.totalPulls,
                     avg6: myStat.avg6.toFixed(1),
+                    avg5: myStat.avg5.toFixed(1), // [FIX] Возвращаем значение 5*
                     winRate: myStat.winRate.toFixed(1)
                 }
             }
