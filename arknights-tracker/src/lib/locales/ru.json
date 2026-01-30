@@ -33,7 +33,8 @@
       "lucky5": "Удача",
       "luckyTopPercent": "Топ {n}%",
       "luckyLowPercent": "Ниже {n}%",
-      "avg": "ср. знач."
+      "avg": "ср. знач.",
+      "top": "Топ"
     },
     "banner": {
       "total": "Всего наймов",

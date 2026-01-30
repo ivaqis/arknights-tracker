@@ -107,7 +107,7 @@
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-gray-900 font-nums">
-           Top {getTopRank(rankTotal)}%
+           {$t("page.rating.top")} {getTopRank(rankTotal)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {displayTotal > 0 ? displayTotal.toLocaleString("ru-RU") : "---"}
@@ -124,7 +124,7 @@
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-[#21272C] font-nums">
-           Top {getTopRank(rank5050)}%
+           {$t("page.rating.top")} {getTopRank(rank5050)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayWinRate)}%
@@ -143,7 +143,7 @@
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-gray-900 font-nums">
-           Top {getTopRank(rankLuck6)}%
+           {$t("page.rating.top")} {getTopRank(rankLuck6)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayAvg6)} <span class="text-gray-400 font-normal">avg</span>
@@ -166,7 +166,7 @@
       </div>
       <div class="text-right">
         <div class="text-2xl font-black text-[#21272C] font-nums">
-           Top {getTopRank(rankLuck5)}%
+           {$t("page.rating.top")} {getTopRank(rankLuck5)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(localAvg5)} <span class="text-gray-400 font-normal">avg</span>

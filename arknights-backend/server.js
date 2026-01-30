@@ -390,6 +390,27 @@ function calculateMath(pulls, bannerId) {
     return stats;
 }
 
+function normalizeBannerId(rawId) {
+    const lower = rawId.toLowerCase();
+
+    // 1. ОРУЖИЕ
+    if (lower.includes('weap') || lower.includes('weapon')) {
+        if (lower.includes('special') || lower.includes('event') || lower.includes('limited')) return 'weap-special';
+        return 'weap-standard'; // Всё остальное оружие — стандарт
+    }
+
+    // 2. НОВИЧОК
+    if (lower.includes('new') || lower.includes('beginner')) return 'new-player';
+
+    // 3. СТАНДАРТ (Персонажи)
+    // Если явно стандарт или не содержит спец-слов
+    if (lower.includes('standard')) return 'standard';
+
+    // 4. СПЕЦИАЛЬНЫЙ (Ивент)
+    // По умолчанию всё остальное кидаем в спешл (обычно это ивенты с уникальными ID)
+    return 'special';
+}
+
 app.get('/api/rankings/data', async (req, res) => {
     try {
         const { bannerId, uid } = req.query;
