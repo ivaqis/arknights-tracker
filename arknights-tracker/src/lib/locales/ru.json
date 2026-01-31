@@ -133,7 +133,15 @@
     "no_saved_tokens": "Нет сохраненных токенов",
     "select_token": "Выбрать",
     "delete_confirm": "Удалить этот токен из памяти?",
-    "errHistoryEmpty": "История пуста или ссылка устарела. UID не найден."
+    "errHistoryEmpty": "История пуста или ссылка устарела. UID не найден.",
+    "tab_pc": "PC",
+    "tab_pc_manual": "PC (Вручную)",
+    "tab_android": "Android (wip)",
+    "tab_ios": "iOS (wip)",
+    "wip": "В разработке",
+    "manual_text_pre": "Перейдите к файлу",
+    "manual_text_mid": ", промотайте в самый низ и найдите ссылку вида",
+    "manual_text_post": "и скопируйте ее."
   },
   "characters": {
     "endministrator1": "Эндминистратор",

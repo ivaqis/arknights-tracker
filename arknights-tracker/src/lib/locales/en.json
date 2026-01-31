@@ -131,7 +131,15 @@
     "no_saved_tokens": "No saved tokens found",
     "select_token": "Select",
     "delete_confirm": "Delete this token from memory?",
-    "errHistoryEmpty": "The history is empty or the link is outdated. UID not found."
+    "errHistoryEmpty": "The history is empty or the link is outdated. UID not found.",
+    "tab_pc": "PC",
+    "tab_pc_manual": "PC Manual",
+    "tab_android": "Android (wip)",
+    "tab_ios": "iOS (wip)",
+    "wip": "Work in Progress",
+    "manual_text_pre": "Go to file",
+    "manual_text_mid": ", scroll to the very bottom and find a link like",
+    "manual_text_post": "and copy it."
   },
   "characters": {
     "endministrator1": "Endministrator",

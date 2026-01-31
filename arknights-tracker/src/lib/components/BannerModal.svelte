@@ -249,11 +249,11 @@
         </div>
 
         {#if banner.url}
-             <a href={banner.url} target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between px-4 py-3 rounded-xl border border-gray-200 hover:border-[#D0926E] hover:bg-[#fff9f5] transition-all duration-200">
+             <a href={banner.url} target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between px-4 py-3 rounded-xl border border-gray-200 hover:border-[#E9CF49] hover:bg-[#fff9f5] transition-all duration-200">
                 <div class="flex items-center gap-3">
-                   <div class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#D0926E]/10 flex items-center justify-center text-gray-500 group-hover:text-[#D0926E] transition-colors"><Icon name="sendToLink" class="w-4 h-4" /></div>
+                   <div class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 group-hover:text-[#D4BE48] transition-colors"><Icon name="sendToLink" class="w-4 h-4" /></div>
                    <div class="flex flex-col">
-                       <span class="font-bold text-sm text-gray-900 group-hover:text-[#D0926E] transition-colors">{$t("page.openOfficialSource")}</span>
+                       <span class="font-bold text-sm text-gray-900 group-hover:text-[#E9CF49] transition-colors">{$t("page.openOfficialSource")}</span>
                        <span class="text-xs text-gray-400">{$t("page.detailsOfficialSource")}</span>
                    </div>
                 </div>

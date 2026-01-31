@@ -100,30 +100,32 @@
 
   <div class="space-y-6">
     
-    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
-      <div>
-        <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
-        <div class="text-xs text-gray-400 mt-1">
-           {#if rankTotal !== null}
-              {#if rankTotal < 50}
-                 {$t("page.rating.luckyLessThan", { n: getComparisonValue(rankTotal) })}
-              {:else}
-                 {$t("page.rating.luckyMoreThan", { n: getComparisonValue(rankTotal) })}
-              {/if}
-           {:else}
-              ---
-           {/if}
+    {#if activeTab !== 'new-player'}
+      <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+        <div>
+          <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
+          <div class="text-xs text-gray-400 mt-1">
+             {#if rankTotal !== null}
+                {#if rankTotal < 50}
+                   {$t("page.rating.luckyLessThan", { n: getComparisonValue(rankTotal) })}
+                {:else}
+                   {$t("page.rating.luckyMoreThan", { n: getComparisonValue(rankTotal) })}
+                {/if}
+             {:else}
+                ---
+             {/if}
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
+             {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
+          </div>
+          <div class="text-sm font-bold text-gray-900 font-nums">
+            {displayTotal.toLocaleString("ru-RU")}
+          </div>
         </div>
       </div>
-      <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
-           {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
-        </div>
-        <div class="text-sm font-bold text-gray-900 font-nums">
-          {displayTotal.toLocaleString("ru-RU")}
-        </div>
-      </div>
-    </div>
+    {/if}
 
     {#if activeTab !== 'standard' && activeTab !== 'new-player'}
       <div class="flex justify-between items-center border-b border-gray-100 pb-4">

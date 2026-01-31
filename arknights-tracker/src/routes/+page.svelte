@@ -13,24 +13,15 @@
   import BannerModal from "$lib/components/BannerModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
 
-  // --- ЛОГИКА БАННЕРОВ ---
   let now = new Date();
   let timer;
 
   const allItems = [...currencies, ...progression];
 
   function getRarityStyle(id) {
-    // Находим предмет в базе
     const item = allItems.find((i) => i.id === id);
 
-    // Если не нашли или рарити нет — считаем, что это обычный (3★ или ниже)
     const rarity = item?.rarity || 3;
-
-    // Arknights цвета:
-    // 5 = Золотой (Легендарный)
-    // 4 = Фиолетовый (Эпический)
-    // 3 = Синий (Редкий)
-    // 1-2 = Серый/Зеленый (Обычный)
 
     switch (rarity) {
       case 5:
@@ -55,15 +46,11 @@
       const start = new Date(b.startTime);
       const end = b.endTime ? new Date(b.endTime) : new Date(9999, 11, 31);
       const isTime = now >= start && now <= end;
-
-      // [ИЗМЕНЕНО] Убрали проверку типов (standard/new-player), 
-      // теперь проверяем только флаг showOnMain
       const isShownOnMain = b.showOnMain === true;
 
       return isTime && isShownOnMain;
     })
     .sort((a, b) => {
-      // Приоритет сортировки: Special -> Weapon -> Остальные
       const priority = { special: 1, weapon: 2 };
       const pA = priority[a.type] || 99;
       const pB = priority[b.type] || 99;
@@ -105,7 +92,6 @@
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
     const dateOptions = { month: "short", day: "numeric" };
-    // Используем undefined для авто-выбора языка
     const endDateFormatted = end.toLocaleDateString(undefined, dateOptions);
 
     return `${$t("home.until")} ${endDateFormatted} (${days > 0 ? days + " " + $t("home.days") : ""} ${hours} ${$t("home.hours")})`;
@@ -113,26 +99,20 @@
 
   function sortRewards(rewards) {
     return [...rewards].sort((a, b) => {
-      // 1. Находим объекты предметов в нашей базе (allItems)
       const itemA = allItems.find((i) => i.id === a.id);
       const itemB = allItems.find((i) => i.id === b.id);
 
-      // 2. Получаем рарити (если не нашли, считаем 0)
       const rarityA = itemA?.rarity || 0;
       const rarityB = itemB?.rarity || 0;
 
-      // 3. Сравнение по РЕДКОСТИ (от большего к меньшему)
       if (rarityB !== rarityA) {
         return rarityB - rarityA;
       }
 
-      // 4. (Дополнительно) Если редкость одинаковая — сортируем по КОЛИЧЕСТВУ
-      // Например: 2000 LMD будут выше, чем 5 каких-то карт опыта той же редкости
       if (b.count !== a.count) {
         return b.count - a.count;
       }
 
-      // 5. Если и это одинаковое — оставляем как есть
       return 0;
     });
   }
