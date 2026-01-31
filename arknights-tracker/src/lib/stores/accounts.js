@@ -110,6 +110,27 @@ function createAccountStore() {
                  // Диспатчим событие для обновления pulls.js
                  window.dispatchEvent(new CustomEvent('ark_tracker_clear_data', { detail: { id: current } }));
              }
+        },
+
+        setServerUid: (serverUid) => {
+            const currentSelected = get(selectedId);
+            accounts.update(list => {
+                return list.map(acc => {
+                    if (acc.id === currentSelected) {
+                        // Добавляем/Обновляем поле serverUid у текущего аккаунта
+                        return { ...acc, serverUid: serverUid };
+                    }
+                    return acc;
+                });
+            });
+        },
+
+        // === [НОВОЕ] Получение Server UID текущего аккаунта ===
+        getCurrentServerUid: () => {
+             const currentSelected = get(selectedId);
+             const list = get(accounts);
+             const acc = list.find(a => a.id === currentSelected);
+             return acc ? acc.serverUid : null;
         }
     };
 }
