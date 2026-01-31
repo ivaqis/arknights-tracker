@@ -94,93 +94,100 @@
     }
 
     async function handleUrlImport() {
-    errorMsg = "";
-    isInputError = false;
+        errorMsg = "";
+        isInputError = false;
 
-    // 1. ВАЛИДАЦИЯ ПУСТОТЫ
-    if (!urlInput || !urlInput.trim()) {
-        isInputError = true;
-        errorMsg = $t("import.emptyError") || "Link is required";
-        return;
-    }
-
-    // Проверка имени (если включено сохранение)
-    if (isSaveTokenEnabled && !tokenName.trim()) {
-        const alreadyExists = savedTokens.some(t => t.url === urlInput);
-        if (!alreadyExists) {
+        // 1. ВАЛИДАЦИЯ ПУСТОТЫ
+        if (!urlInput || !urlInput.trim()) {
             isInputError = true;
-            errorMsg = "Token name is required for saving.";
+            errorMsg = $t("import.emptyError") || "Link is required";
             return;
         }
-    }
 
-    // 2. ВАЛИДАЦИЯ ДОМЕНА
-    try {
-        const parsedUrl = new URL(urlInput);
-        if (parsedUrl.protocol !== "https:") {
-            errorMsg = "Only HTTPS links are allowed.";
-            return;
-        }
-        const isAllowed = ALLOWED_DOMAINS.some(domain => 
-            parsedUrl.hostname === domain || parsedUrl.hostname.endsWith("." + domain)
-        );
-        if (!isAllowed) {
-            errorMsg = "Invalid game link. Domain not supported.";
-            return;
-        }
-    } catch (e) {
-        isInputError = true;
-        errorMsg = "Invalid URL format.";
-        return;
-    }
-
-    isLoading = true;
-    previewReport = null;
-    pendingData = null;
-
-    try {
-        const response = await proxyImport(urlInput, isGlobalStatsEnabled);
-        
-        if (response.code === 0 && response.data?.list) {
-            
-            const importedUid = response.data.uid;
-            
-            // [FIX] Сохраняем стабильный UID, который прислал сервер
-            if (importedUid) {
-                localStorage.setItem("user_uid", importedUid);
-                currentUid.set(importedUid); // Обновляем Svelte Store, чтобы компоненты узнали об изменении
+        // Проверка имени (если включено сохранение)
+        if (isSaveTokenEnabled && !tokenName.trim()) {
+            const alreadyExists = savedTokens.some((t) => t.url === urlInput);
+            if (!alreadyExists) {
+                isInputError = true;
+                errorMsg = "Token name is required for saving.";
+                return;
             }
+        }
 
-            if (isSaveTokenEnabled && tokenName.trim()) {
-                saveTokenToStorage(tokenName.trim(), urlInput);
+        // 2. ВАЛИДАЦИЯ ДОМЕНА
+        try {
+            const parsedUrl = new URL(urlInput);
+            if (parsedUrl.protocol !== "https:") {
+                errorMsg = "Only HTTPS links are allowed.";
+                return;
             }
+            const isAllowed = ALLOWED_DOMAINS.some(
+                (domain) =>
+                    parsedUrl.hostname === domain ||
+                    parsedUrl.hostname.endsWith("." + domain),
+            );
+            if (!isAllowed) {
+                errorMsg = "Invalid game link. Domain not supported.";
+                return;
+            }
+        } catch (e) {
+            isInputError = true;
+            errorMsg = "Invalid URL format.";
+            return;
+        }
 
-            const rawData = response.data.list;
-            const cleanPulls = parseGachaLog(rawData);
-            pendingData = cleanPulls;
-            
-            const report = await pullData.smartImport(cleanPulls, true);
-            previewReport = report;
+        isLoading = true;
+        previewReport = null;
+        pendingData = null;
 
-        } else {
-            if (response.error || response.message || response.msg) {
-                errorMsg = response.error || response.message || response.msg;
+        try {
+            const response = await proxyImport(urlInput, isGlobalStatsEnabled);
+
+            if (response.code === 0 && response.data?.list) {
+                const importedUid = response.data.uid;
+
+                if (importedUid) {
+                    console.log("Saving Stable UID:", importedUid);
+                    localStorage.setItem("user_uid", importedUid);
+                }
+
+                if (isSaveTokenEnabled && tokenName.trim()) {
+                    saveTokenToStorage(tokenName.trim(), urlInput);
+                }
+
+                const rawData = response.data.list;
+                const cleanPulls = parseGachaLog(rawData);
+                pendingData = cleanPulls;
+
+                const report = await pullData.smartImport(cleanPulls, true);
+                previewReport = report;
             } else {
-                errorMsg = $t("import.noData") || "No pulls found or Link Expired.";
+                if (response.error || response.message || response.msg) {
+                    errorMsg =
+                        response.error || response.message || response.msg;
+                } else {
+                    errorMsg =
+                        $t("import.noData") ||
+                        "No pulls found or Link Expired.";
+                }
             }
+        } catch (err) {
+            console.error("Import Error:", err);
+            if (
+                err.message &&
+                (err.message.includes("No pulls found") ||
+                    err.message.includes("generate UID"))
+            ) {
+                errorMsg =
+                    $t("import.errHistoryEmpty") ||
+                    "No pulls found or Link Expired.";
+            } else {
+                errorMsg = err.message || "Unknown Error";
+            }
+        } finally {
+            isLoading = false;
         }
-
-    } catch (err) {
-        console.error("Import Error:", err);
-        if (err.message && (err.message.includes("No pulls found") || err.message.includes("generate UID"))) {
-             errorMsg = $t("import.errHistoryEmpty") || "No pulls found or Link Expired.";
-        } else {
-             errorMsg = err.message || "Unknown Error";
-        }
-    } finally {
-        isLoading = false;
     }
-}
 
     async function confirmSave() {
         if (!pendingData) return;

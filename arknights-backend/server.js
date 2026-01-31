@@ -256,9 +256,9 @@ function mapPoolTypeToShort(longType) {
     return 'unknown';
 }
 
-// [ЗАМЕНИТЬ ЦЕЛИКОМ]
 async function updateAggregatedStats(uid, allPulls) {
     if (!allPulls.length) return;
+
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
     const pullsByCategory = {};
@@ -271,22 +271,24 @@ async function updateAggregatedStats(uid, allPulls) {
             pullTimeMs = Number(p.timestamp) * 1000;
         } else if (p.ts) {
             pullTimeMs = Number(p.ts) * 1000;
+        } else if (p.time) {
+             pullTimeMs = new Date(p.time).getTime();
         }
 
-        if (isNaN(pullTimeMs) || pullTimeMs === 0) {
-            console.warn(`⚠️ Invalid timestamp for item ${p.name || 'unknown'}. Using Date.now()`);
+        if (!pullTimeMs || isNaN(pullTimeMs)) {
+            console.warn(`⚠️ Invalid timestamp for item ${p.name}. Using Date.now()`);
             pullTimeMs = Date.now();
         }
 
         const category = normalizeBannerId(p.poolId);
         
         if (!pullsByCategory[category]) pullsByCategory[category] = [];
-        // Важно: передаем исправленное time
         pullsByCategory[category].push({ ...p, time: pullTimeMs });
     });
 
     for (const [category, pulls] of Object.entries(pullsByCategory)) {
         const stats = calculateMath(pulls, category);
+
         await prisma.userBannerStat.upsert({
             where: { uid_bannerId: { uid, bannerId: category } },
             update: {
@@ -300,21 +302,22 @@ async function updateAggregatedStats(uid, allPulls) {
                 lastUpdate: new Date()
             },
             create: {
-                uid, bannerId: category,
+                uid,
+                bannerId: category,
                 totalPulls: stats.totalPulls,
-                total6: stats.total6, sumPity6: stats.sumPity6,
-                total5: stats.total5, sumPity5: stats.sumPity5,
-                won5050: stats.won5050, total5050: stats.total5050
+                total6: stats.total6,
+                sumPity6: stats.sumPity6,
+                total5: stats.total5,
+                sumPity5: stats.sumPity5,
+                won5050: stats.won5050,
+                total5050: stats.total5050
             }
         });
     }
     console.log(`[Stats] Updated for ${uid}: ${Object.keys(pullsByCategory).join(', ')}`);
 }
 
-// Математика подсчета (аналог того, что у тебя на фронте, но упрощено для БД)
-// --- ЗАМЕНИТЬ ЭТУ ФУНКЦИЮ ЦЕЛИКОМ ---
 function calculateMath(pulls, categoryId) {
-    // 1. Сортировка (Время -> seqId)
     pulls.sort((a, b) => {
         const tA = Number(a.time); 
         const tB = Number(b.time);
@@ -335,18 +338,16 @@ function calculateMath(pulls, categoryId) {
     let currentPity5 = 0;
     let last6WasFeatured = true; 
 
-    pulls.forEach((pull) => {
+    pulls.forEach((pull, index) => {
         const isFree = pull.isFree === true || String(pull.isFree) === "true";
         const itemName = normalize(pull.name);
 
-        // --- 6 ЗВЕЗД ---
         if (pull.rarity === 6) {
             stats.total6++;
-            stats.sumPity6 += currentPity6 + 1;
+            stats.sumPity6 += currentPity6 + (isFree ? 0 : 1);
 
-            // Поиск баннера для 50/50
             const matchedBanner = BANNERS.find(b => {
-                const typeMatch = b.type === pull.poolId || normalizeBannerId(b.type) === categoryId;
+                const typeMatch = b.id === pull.poolId || normalizeBannerId(b.type) === categoryId;
                 const timeMatch = pull.time >= b.startTime && (!b.endTime || pull.time <= b.endTime);
                 return typeMatch && timeMatch;
             });
@@ -368,10 +369,9 @@ function calculateMath(pulls, categoryId) {
             if (!isFree) currentPity6++;
         }
 
-        // --- 5 ЗВЕЗД ---
         if (pull.rarity === 5) {
             stats.total5++;
-            stats.sumPity5 += currentPity5 + 1;
+            stats.sumPity5 += currentPity5 + (isFree ? 0 : 1);
             currentPity5 = 0;
         } else {
             if (!isFree) currentPity5++;
