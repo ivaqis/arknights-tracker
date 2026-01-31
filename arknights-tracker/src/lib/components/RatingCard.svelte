@@ -15,14 +15,11 @@
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
   
-  // Для оружия тоже будем пытаться показать данные (пусть сервер решает, есть они или нет)
-  $: isWeaponTab = activeTab.includes("weap");
-
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
+  // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Фолбэк) ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
-  $: localTotal = localStats.total || 0;
   
+  $: localTotal = localStore.pulls?.length || 0;
   $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
   $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
   $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
@@ -30,6 +27,7 @@
   // --- ДАННЫЕ С СЕРВЕРА ---
   let serverData = null;
 
+  // Если серверных данных нет, используем локальные (или 0)
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
   
   $: displayAvg6 = serverData?.myStats?.avg6 
@@ -40,7 +38,7 @@
       ? parseFloat(serverData.myStats.winRate) 
       : localWinRate;
 
-  // --- ПАРСИНГ ---
+  // --- ПАРСИНГ РАНГОВ ---
   const safeParse = (val) => {
       if (val === null || val === undefined) return null;
       const num = parseFloat(val);
@@ -52,53 +50,49 @@
   $: rank5050 = safeParse(serverData?.rank5050);
   $: rankLuck5 = safeParse(serverData?.rankLuck5);
 
-  // --- ХЕЛПЕРЫ (Возвращают "..." если null) ---
-
-  const getPercentile = (rank) => {
-      if (rank === null) return "---";
-      return rank.toFixed(0); 
-  };
-
+  // --- ХЕЛПЕРЫ ---
+  // [FIX] Возвращаем "---" если null, чтобы текст рендерился всегда
+  const getPercentile = (rank) => rank !== null ? rank.toFixed(0) : "---";
+  
   const getRankValue = (rank) => {
       if (rank === null) return "---";
-      // Если больше 50%, считаем обратное (Топ). Иначе оставляем как есть (Ниже).
       return (rank > 50 ? (100 - rank) : rank).toFixed(0);
   };
 
   const getRankLabel = (rank) => {
-      if (rank === null) return "page.rating.top"; // Дефолт
+      if (rank === null) return "page.rating.top";
       return rank > 50 ? "page.rating.top" : "page.rating.bottom";
   };
 
-  const getTopRank = (rank) => {
-      if (rank === null) return "---";
-      return (100 - rank).toFixed(0);
-  };
+  function formatVal(val) {
+    return val !== null && val !== undefined && !isNaN(val) ? val : "0";
+  }
 
   // --- ЗАГРУЗКА ---
-  $: if (browser && activeTab && $currentUid) {
-      loadRankings(activeTab, $currentUid);
+  $: if (browser && activeTab) {
+      if ($currentUid) {
+          loadRankings(activeTab, $currentUid);
+      } else {
+          serverData = null; // Очистка при смене аккаунта
+      }
   }
 
-  async function loadRankings(poolId) {
-    if (!browser) return;
-    const uid = localStorage.getItem("user_uid");
-    if (!uid) return;
-
+  async function loadRankings(poolId, uid) {
+    if (!browser || !uid) return;
     serverData = null; 
-
     try {
       const response = await fetchGlobalStats(uid, poolId);
+      if (uid !== $currentUid) return; // Защита от гонки запросов
+
       if (response && (response.code === 0 || response.found)) {
          serverData = response.data || response;
-      } 
+      } else {
+         serverData = null;
+      }
     } catch (e) {
       console.error("Fetch Failed", e);
+      serverData = null;
     }
-  }
-
-  function formatVal(val) {
-    return val !== null && val !== undefined && !isNaN(val) ? val : "---";
   }
 </script>
 
@@ -109,94 +103,78 @@
 
   <div class="space-y-6">
     
-    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
-        <div class="text-xs text-gray-400 mt-1 h-4">
-          {#if rankTotal !== null}
-             {$t("page.rating.luckyMoreThan", { n: getPercentile(rankTotal) })}
-          {/if}
+        <div class="text-xs text-gray-400 mt-1">
+           {$t("page.rating.luckyMoreThan", { n: getPercentile(rankTotal) })}
         </div>
       </div>
       <div class="text-right">
-        {#if rankTotal !== null}
-            <div class="text-2xl font-black text-gray-900 font-nums">
-               {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
-            </div>
-        {/if}
+        <div class="text-2xl font-black text-gray-900 font-nums">
+           {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
+        </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {displayTotal.toLocaleString("ru-RU")}
         </div>
       </div>
     </div>
 
-    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-gray-700">{$t("page.rating.lucky5050")}</div>
-        <div class="text-xs text-gray-400 mt-1 h-4">
-          {#if rank5050 !== null}
-            {$t("page.rating.luckyLuckierThan", { n: getPercentile(rank5050) })}
-          {/if}
+        <div class="text-xs text-gray-400 mt-1">
+           {$t("page.rating.luckyLuckierThan", { n: getPercentile(rank5050) })}
         </div>
       </div>
       <div class="text-right">
-        {#if rank5050 !== null}
-            <div class="text-2xl font-black text-[#21272C] font-nums">
-               {$t(getRankLabel(rank5050))} {getRankValue(rank5050)}%
-            </div>
-        {/if}
+        <div class="text-2xl font-black text-[#21272C] font-nums">
+           {$t(getRankLabel(rank5050))} {getRankValue(rank5050)}%
+        </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayWinRate)}%
         </div>
       </div>
     </div>
 
-    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-[#21272C] flex items-center gap-1">
           {$t("page.rating.lucky6")} 6 <Icon name="star" class="w-4 h-4" />
         </div>
-        <div class="text-xs text-gray-400 mt-1 h-4">
-          {#if rankLuck6 !== null}
-             {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck6) })}
-          {/if}
+        <div class="text-xs text-gray-400 mt-1">
+           {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck6) })}
         </div>
       </div>
       <div class="text-right">
-        {#if rankLuck6 !== null}
-            <div class="text-2xl font-black text-gray-900 font-nums">
-               {$t(getRankLabel(rankLuck6))} {getRankValue(rankLuck6)}%
-            </div>
-        {/if}
+        <div class="text-2xl font-black text-gray-900 font-nums">
+           {$t(getRankLabel(rankLuck6))} {getRankValue(rankLuck6)}%
+        </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
           {formatVal(displayAvg6)} <span class="text-gray-400 font-normal">avg</span>
         </div>
       </div>
     </div>
 
-    <div class="flex justify-between items-end border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
       <div>
         <div class="font-medium text-[#21272C] flex items-center gap-1">
           {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />
         </div>
-        <div class="text-xs text-gray-400 mt-1 h-4">
-           {#if rankLuck5 !== null}
-              {#if rankLuck5 < 50}
-                 {$t("page.rating.luckyLessLuckierThan", { n: getRankValue(rankLuck5) })}
-              {:else}
-                 {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck5) })}
-              {/if}
+        <div class="text-xs text-gray-400 mt-1">
+           {#if rankLuck5 !== null && rankLuck5 < 50}
+              {$t("page.rating.luckyLessLuckierThan", { n: getRankValue(rankLuck5) })}
+           {:else}
+              {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck5) })}
            {/if}
         </div>
       </div>
       <div class="text-right">
-        {#if rankLuck5 !== null}
-            <div class="text-2xl font-black text-[#21272C] font-nums">
-               {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
-            </div>
-        {/if}
+        <div class="text-2xl font-black text-[#21272C] font-nums">
+           {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
+        </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
-           {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="text-gray-400 font-normal">avg</span>
+          {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="text-gray-400 font-normal">avg</span>
         </div>
       </div>
     </div>
