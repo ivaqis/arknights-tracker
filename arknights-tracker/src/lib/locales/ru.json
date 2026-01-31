@@ -23,8 +23,8 @@
     "rating": {
       "ratingTitle": "Ваш рейтинг",
       "luckyTotal": "Всего наймов",
-      "luckyMoreThan": "Больше чем у {n}% пользователей",
-      "luckyLessThan": "Меньше чем у {n}% пользователей",
+      "luckyMoreThan": "Больше чем у {n}% пользователей Goyfield",
+      "luckyLessThan": "Меньше чем у {n}% пользователей Goyfield",
       "luckyLuckierThan": "Удачливее чем {n}% пользователей Goyfield",
       "luckyLessLuckierThan": "Менее удачливее чем {n}% пользователей Goyfield",
       "lucky5050": "Выигранные 50:50",

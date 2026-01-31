@@ -15,7 +15,7 @@
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
   
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ (Фолбэк) ---
+  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
   
@@ -27,18 +27,11 @@
   // --- ДАННЫЕ С СЕРВЕРА ---
   let serverData = null;
 
-  // Если серверных данных нет, используем локальные (или 0)
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
-  
-  $: displayAvg6 = serverData?.myStats?.avg6 
-      ? parseFloat(serverData.myStats.avg6) 
-      : localAvg6;
+  $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
+  $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
 
-  $: displayWinRate = serverData?.myStats?.winRate 
-      ? parseFloat(serverData.myStats.winRate) 
-      : localWinRate;
-
-  // --- ПАРСИНГ РАНГОВ ---
+  // --- ПАРСИНГ ---
   const safeParse = (val) => {
       if (val === null || val === undefined) return null;
       const num = parseFloat(val);
@@ -51,17 +44,28 @@
   $: rankLuck5 = safeParse(serverData?.rankLuck5);
 
   // --- ХЕЛПЕРЫ ---
-  // [FIX] Возвращаем "---" если null, чтобы текст рендерился всегда
-  const getPercentile = (rank) => rank !== null ? rank.toFixed(0) : "---";
-  
+
+  // 1. Для "Топ X%" (значение справа)
+  // Если ранг 90 -> Топ 10%. Если ранг 10 -> Ниже 10%.
   const getRankValue = (rank) => {
       if (rank === null) return "---";
       return (rank > 50 ? (100 - rank) : rank).toFixed(0);
   };
 
+  // 2. Для выбора слова "Топ" или "Ниже"
   const getRankLabel = (rank) => {
       if (rank === null) return "page.rating.top";
       return rank > 50 ? "page.rating.top" : "page.rating.bottom";
+  };
+
+  // 3. [FIX] Для текста "Больше/Меньше чем..." (значение слева)
+  // Если ты крут (ранг 90), ты лучше 90%.
+  // Если ты слаб (ранг 10), ты хуже (100-10) = 90%.
+  const getComparisonValue = (rank) => {
+      if (rank === null) return "---";
+      // Если ранг > 50 (верхняя половина), возвращаем как есть (Лучше чем 90%).
+      // Если ранг <= 50 (нижняя половина), возвращаем инверсию (Хуже чем 90%).
+      return (rank > 50 ? rank : (100 - rank)).toFixed(0);
   };
 
   function formatVal(val) {
@@ -73,7 +77,7 @@
       if ($currentUid) {
           loadRankings(activeTab, $currentUid);
       } else {
-          serverData = null; // Очистка при смене аккаунта
+          serverData = null; 
       }
   }
 
@@ -82,7 +86,7 @@
     serverData = null; 
     try {
       const response = await fetchGlobalStats(uid, poolId);
-      if (uid !== $currentUid) return; // Защита от гонки запросов
+      if (uid !== $currentUid) return; 
 
       if (response && (response.code === 0 || response.found)) {
          serverData = response.data || response;
@@ -107,11 +111,19 @@
       <div>
         <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
         <div class="text-xs text-gray-400 mt-1">
-           {$t("page.rating.luckyMoreThan", { n: getPercentile(rankTotal) })}
+           {#if rankTotal !== null}
+              {#if rankTotal < 50}
+                 {$t("page.rating.luckyLessThan", { n: getComparisonValue(rankTotal) })}
+              {:else}
+                 {$t("page.rating.luckyMoreThan", { n: getComparisonValue(rankTotal) })}
+              {/if}
+           {:else}
+              ---
+           {/if}
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums">
+        <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
            {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
@@ -124,11 +136,19 @@
       <div>
         <div class="font-medium text-gray-700">{$t("page.rating.lucky5050")}</div>
         <div class="text-xs text-gray-400 mt-1">
-           {$t("page.rating.luckyLuckierThan", { n: getPercentile(rank5050) })}
+           {#if rank5050 !== null}
+              {#if rank5050 < 50}
+                 {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rank5050) })}
+              {:else}
+                 {$t("page.rating.luckyLuckierThan", { n: getComparisonValue(rank5050) })}
+              {/if}
+           {:else}
+              ---
+           {/if}
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-[#21272C] font-nums">
+        <div class="text-2xl font-black text-[#21272C] font-nums whitespace-nowrap">
            {$t(getRankLabel(rank5050))} {getRankValue(rank5050)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
@@ -143,11 +163,19 @@
           {$t("page.rating.lucky6")} 6 <Icon name="star" class="w-4 h-4" />
         </div>
         <div class="text-xs text-gray-400 mt-1">
-           {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck6) })}
+           {#if rankLuck6 !== null}
+              {#if rankLuck6 < 50}
+                 {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rankLuck6) })}
+              {:else}
+                 {$t("page.rating.luckyLuckierThan", { n: getComparisonValue(rankLuck6) })}
+              {/if}
+           {:else}
+              ---
+           {/if}
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums">
+        <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
            {$t(getRankLabel(rankLuck6))} {getRankValue(rankLuck6)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
@@ -162,15 +190,19 @@
           {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />
         </div>
         <div class="text-xs text-gray-400 mt-1">
-           {#if rankLuck5 !== null && rankLuck5 < 50}
-              {$t("page.rating.luckyLessLuckierThan", { n: getRankValue(rankLuck5) })}
+           {#if rankLuck5 !== null}
+              {#if rankLuck5 < 50}
+                 {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rankLuck5) })}
+              {:else}
+                 {$t("page.rating.luckyLuckierThan", { n: getComparisonValue(rankLuck5) })}
+              {/if}
            {:else}
-              {$t("page.rating.luckyLuckierThan", { n: getPercentile(rankLuck5) })}
+              ---
            {/if}
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-[#21272C] font-nums">
+        <div class="text-2xl font-black text-[#21272C] font-nums whitespace-nowrap">
            {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
         </div>
         <div class="text-sm font-bold text-gray-900 font-nums">
