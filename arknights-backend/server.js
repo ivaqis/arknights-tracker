@@ -259,11 +259,9 @@ function mapPoolTypeToShort(longType) {
 // [ЗАМЕНИТЬ ЦЕЛИКОМ]
 async function updateAggregatedStats(uid, allPulls) {
     if (!allPulls.length) return;
-
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
     const pullsByCategory = {};
-
     allPulls.forEach(p => {
         const pullTimeMs = p.timestamp * 1000;
         const category = normalizeBannerId(p.poolId);
@@ -273,7 +271,6 @@ async function updateAggregatedStats(uid, allPulls) {
 
     for (const [category, pulls] of Object.entries(pullsByCategory)) {
         const stats = calculateMath(pulls, category);
-
         await prisma.userBannerStat.upsert({
             where: { uid_bannerId: { uid, bannerId: category } },
             update: {
@@ -287,15 +284,11 @@ async function updateAggregatedStats(uid, allPulls) {
                 lastUpdate: new Date()
             },
             create: {
-                uid,
-                bannerId: category,
+                uid, bannerId: category,
                 totalPulls: stats.totalPulls,
-                total6: stats.total6,
-                sumPity6: stats.sumPity6,
-                total5: stats.total5,
-                sumPity5: stats.sumPity5,
-                won5050: stats.won5050,
-                total5050: stats.total5050
+                total6: stats.total6, sumPity6: stats.sumPity6,
+                total5: stats.total5, sumPity5: stats.sumPity5,
+                won5050: stats.won5050, total5050: stats.total5050
             }
         });
     }
@@ -304,15 +297,13 @@ async function updateAggregatedStats(uid, allPulls) {
 
 // Математика подсчета (аналог того, что у тебя на фронте, но упрощено для БД)
 function calculateMath(pulls, categoryId) {
-    // [FIX 1] Сортировка seqId как ЧИСЛА, а не строки. Это чинит расчет Pity.
+    // [FIX] Сортируем seqId как числа. Это чинит "Avg 6: 25.5" -> "Avg 6: 60"
     pulls.sort((a, b) => {
         const timeDiff = a.time - b.time;
         if (timeDiff !== 0) return timeDiff;
         return Number(a.seqId || 0) - Number(b.seqId || 0);
     });
 
-    const isWeapon = categoryId.includes('weap');
-    
     let stats = {
         totalPulls: pulls.length,
         total6: 0, sumPity6: 0,
@@ -328,20 +319,20 @@ function calculateMath(pulls, categoryId) {
         const isFree = pull.isFree === true || String(pull.isFree) === "true";
         const itemName = normalize(pull.name);
 
-        // --- 6 ЗВЕЗД ---
         if (pull.rarity === 6) {
             stats.total6++;
-            // Pity = сколько крутили ДО + эта крутка (1)
             stats.sumPity6 += currentPity6 + 1;
 
-            // [FIX 2] Логика 50/50
-            // Ищем баннер, который был активен в момент крутки
+            // [FIX] Улучшенный поиск баннера для 50/50
             const matchedBanner = BANNERS.find(b => {
-                // Проверяем тип (либо совпадение ID, либо совпадение нормализованной категории)
-                const typeMatch = b.type === pull.poolId || normalizeBannerId(b.type) === categoryId;
-                // Проверяем время
+                // 1. Совпадает ID (самое точное, например weponbox_1_0_1)
+                const idMatch = b.id === pull.poolId;
+                // 2. Совпадает категория
+                const typeMatch = normalizeBannerId(b.type) === categoryId;
+                // 3. Совпадает время
                 const timeMatch = pull.time >= b.startTime && (!b.endTime || pull.time <= b.endTime);
-                return typeMatch && timeMatch;
+                
+                return (idMatch || typeMatch) && timeMatch;
             });
 
             if (matchedBanner && matchedBanner.featured6 && matchedBanner.featured6.length > 0) {
@@ -354,16 +345,13 @@ function calculateMath(pulls, categoryId) {
                 }
                 last6WasFeatured = isFeatured;
             } else {
-                // Если баннер не найден в конфиге (например Стандарт), сбрасываем серию
                 last6WasFeatured = true; 
             }
-
             currentPity6 = 0;
         } else {
             if (!isFree) currentPity6++;
         }
 
-        // --- 5 ЗВЕЗД ---
         if (pull.rarity === 5) {
             stats.total5++;
             stats.sumPity5 += currentPity5 + 1;
@@ -385,24 +373,15 @@ const normalize = (str) => {
 function normalizeBannerId(rawId) {
     if (!rawId) return 'special';
     const lower = rawId.toLowerCase();
+    
+    if (['weap-standard', 'weap-special', 'standard', 'special', 'new-player'].includes(lower)) return lower;
 
-    // Чистые категории
-    if (lower === 'weap-standard') return 'weap-standard';
-    if (lower === 'weap-special') return 'weap-special';
-    if (lower === 'standard') return 'standard';
-    if (lower === 'special') return 'special';
-    if (lower === 'new-player') return 'new-player';
-
-    // Грязные ID (Оружие)
     if (lower.includes('weapon') || lower.includes('wepon') || lower.includes('weap')) {
         if (lower.includes('constant') || lower.includes('standard')) return 'weap-standard';
         return 'weap-special';
     }
-
-    // Персонажи
     if (lower.includes('new') || lower.includes('beginner')) return 'new-player';
     if (lower.includes('standard')) return 'standard';
-    
     return 'special';
 }
 
@@ -413,42 +392,32 @@ app.get('/api/rankings/data', async (req, res) => {
 
         const targetCategory = normalizeBannerId(bannerId);
 
-        // 1. Загружаем статистику
         const allStats = await prisma.userBannerStat.findMany({
             where: { bannerId: targetCategory },
             select: {
                 uid: true,
                 totalPulls: true,
-                total6: true,
-                sumPity6: true,
-                total5: true, 
-                sumPity5: true, // [FIX] Добавили поля для 5*
-                won5050: true,
-                total5050: true
+                total6: true, sumPity6: true,
+                total5: true, sumPity5: true,
+                won5050: true, total5050: true
             }
         });
 
-        if (allStats.length === 0) {
-            return res.json({ code: 0, data: { found: false, totalUsers: 0 } });
-        }
+        if (allStats.length === 0) return res.json({ code: 0, data: { found: false, totalUsers: 0 } });
 
-        // 2. Считаем средние
         const usersWithAvg = allStats.map(s => ({
             ...s,
             avg6: s.total6 > 0 ? s.sumPity6 / s.total6 : 0,
-            avg5: s.total5 > 0 ? s.sumPity5 / s.total5 : 0, // [FIX] Считаем среднее для 5*
+            avg5: s.total5 > 0 ? s.sumPity5 / s.total5 : 0,
             winRate: s.total5050 > 0 ? (s.won5050 / s.total5050) * 100 : 0
         }));
 
         const myStat = usersWithAvg.find(u => u.uid === uid);
+        if (!myStat) return res.json({ code: 0, data: { found: false, totalUsers: allStats.length } });
 
-        if (!myStat) {
-            return res.json({ code: 0, data: { found: false, totalUsers: allStats.length } });
-        }
-
-        // 3. Ранги (Percentile)
+        // CALCULATE RANKS (Percentile: 100 = Best, 0 = Worst)
         
-        // Luck 6
+        // Luck 6 (Lower avg is better)
         const validLuck6 = usersWithAvg.filter(u => u.total6 > 0).sort((a, b) => a.avg6 - b.avg6);
         const myLuck6Index = validLuck6.findIndex(u => u.uid === uid);
         let rankLuck6 = null;
@@ -456,7 +425,7 @@ app.get('/api/rankings/data', async (req, res) => {
             rankLuck6 = ((validLuck6.length - 1 - myLuck6Index) / validLuck6.length * 100);
         }
 
-        // [FIX] Luck 5 (Добавлена логика)
+        // Luck 5
         const validLuck5 = usersWithAvg.filter(u => u.total5 > 0).sort((a, b) => a.avg5 - b.avg5);
         const myLuck5Index = validLuck5.findIndex(u => u.uid === uid);
         let rankLuck5 = null;
@@ -464,12 +433,12 @@ app.get('/api/rankings/data', async (req, res) => {
             rankLuck5 = ((validLuck5.length - 1 - myLuck5Index) / validLuck5.length * 100);
         }
 
-        // Total Pulls
+        // Total Pulls (Higher is better for "Top X%")
         const sortedTotal = [...usersWithAvg].sort((a, b) => b.totalPulls - a.totalPulls);
         const myTotalIndex = sortedTotal.findIndex(u => u.uid === uid);
         const rankTotal = ((sortedTotal.length - 1 - myTotalIndex) / sortedTotal.length * 100);
 
-        // 50/50 Wins
+        // 50/50 Wins (Higher % is better)
         const valid5050 = usersWithAvg.filter(u => u.total5050 > 0).sort((a, b) => b.winRate - a.winRate);
         const my5050Index = valid5050.findIndex(u => u.uid === uid);
         let rank5050 = null;
@@ -484,12 +453,12 @@ app.get('/api/rankings/data', async (req, res) => {
                 totalUsers: allStats.length,
                 rankTotal,
                 rankLuck6,
-                rankLuck5, // [FIX] Теперь возвращаем ранг 5*
+                rankLuck5,
                 rank5050,
                 myStats: {
                     total: myStat.totalPulls,
                     avg6: myStat.avg6.toFixed(1),
-                    avg5: myStat.avg5.toFixed(1), // [FIX] Возвращаем значение 5*
+                    avg5: myStat.avg5.toFixed(1),
                     winRate: myStat.winRate.toFixed(1)
                 }
             }

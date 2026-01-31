@@ -1,4 +1,6 @@
-// --- КОПИЯ ДАННЫХ С ФРОНТА (без изменений внутри массива) ---
+// banners.js
+
+// Точная копия твоего конфига с фронта
 const rawBanners = [
   {
     id: "standard_01",
@@ -6,18 +8,7 @@ const rawBanners = [
     type: "standard",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.1.0",
     featured6: ["ardelia", "pogranichnik", "lastRite", "ember", "lifeng"],
-    featured5: [],
-    isServerTime: false,
-    timezone: "UTC+0",
-    icon: "basic-headhunting.png",
-    miniIcon: "basic-headhunting.png",
-    url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
-    layer: null,
-    color: "#CCCCCC",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "new_player_01",
@@ -25,18 +16,7 @@ const rawBanners = [
     type: "new-player",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.1.0",
     featured6: ["ardelia", "pogranichnik", "lastRite", "ember", "lifeng"],
-    featured5: [],
-    isServerTime: false,
-    timezone: "UTC+0",
-    icon: "new-horizons-headhunting.png",
-    miniIcon: "new-horizons-headhunting.png",
-    url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
-    layer: null,
-    color: "#00CC99",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "special_banner_01", 
@@ -44,18 +24,7 @@ const rawBanners = [
     type: "special",
     startTime: "2026-01-22 03:00:00",
     endTime: "2026-02-07 11:59:59",
-    gameVersion: "0.1.0",
     featured6: ["laevatain"], 
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "laevatain-banner.jpg",
-    miniIcon: "laevatain-banner.png",
-    url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 5,
-    color: "#FF6600",
-    iconPosition: 25,
-    showOnMain: true
   },
   {
     id: "special_banner_02",
@@ -63,18 +32,7 @@ const rawBanners = [
     type: "special",
     startTime: "2026-02-07 12:00:00",
     endTime: "2026-02-24 11:59:59",
-    gameVersion: "0.2.0",
     featured6: ["gilberta"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "gilberta-banner.png",
-    miniIcon: "gilberta-banner.png",
-    url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 5,
-    color: "#c2cc3cff",
-    iconPosition: 20,
-    showOnMain: false
   },
   {
     id: "special_banner_03",
@@ -82,18 +40,7 @@ const rawBanners = [
     type: "special",
     startTime: "2026-02-24 12:00:00",
     endTime: "2026-03-16 11:59:59",
-    gameVersion: "0.2.0",
     featured6: ["yvonne"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "yvonne-banner.png",
-    miniIcon: "yvonne-banner.png",
-    url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
-    layer: 5,
-    color: "#FF33CC",
-    iconPosition: 25,
-    showOnMain: false
   },
   {
     id: "weponbox_1_0_1",
@@ -101,18 +48,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: "2026-03-16 11:59:59",
-    gameVersion: "0.2.0",
     featured6: ["forgebornScathe"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_banner_01.jpg",
-    miniIcon: "weapon_banner_01.jpg",
-    url: "https://x.com/AKEndfield/status/2013838974239023147",
-    layer: 6,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: true
   },
   {
     id: "weaponbox_constant_1",
@@ -120,18 +56,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.2.0",
     featured6: ["khravengger"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_constant_01.png",
-    miniIcon: "weapon_constant_01.png",
-    url: "",
-    layer: 7,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weaponbox_constant_2",
@@ -139,18 +64,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.2.0",
     featured6: ["dreamsOfTheStarryBeach"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_constant_02.png",
-    miniIcon: "weapon_constant_02.png",
-    url: "",
-    layer: 7,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weaponbox_constant_3",
@@ -158,18 +72,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.2.0",
     featured6: ["neverRest"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_constant_03.png",
-    miniIcon: "weapon_constant_03.png",
-    url: "",
-    layer: 7,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weaponbox_constant_4",
@@ -177,18 +80,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.2.0",
     featured6: ["mountainBearer"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_constant_04.png",
-    miniIcon: "weapon_constant_04.png",
-    url: "",
-    layer: 7,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weaponbox_constant_5",
@@ -196,18 +88,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: null,
-    gameVersion: "0.2.0",
     featured6: ["thunderberge"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_constant_05.png",
-    miniIcon: "weapon_constant_05.png",
-    url: "",
-    layer: 7,
-    color: "#e44e25",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weponbox_1_0_2",
@@ -215,18 +96,7 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-02-07 12:00:00",
     endTime: "2026-03-16 11:59:59",
-    gameVersion: "0.2.0",
     featured6: ["deliveryGuaranteed"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_banner_02.jpg",
-    miniIcon: "weapon_banner_02.jpg",
-    url: "",
-    layer: 7,
-    color: "#858585",
-    iconPosition: 50,
-    showOnMain: false
   },
   {
     id: "weponbox_1_0_3",
@@ -234,29 +104,16 @@ const rawBanners = [
     type: "weapon",
     startTime: "2026-02-24 12:00:00",
     endTime: "2026-03-16 11:59:59",
-    gameVersion: "0.2.0",
     featured6: ["artzyTyrannical"],
-    featured5: [],
-    isServerTime: true, 
-    timezone: "UTC+0",
-    icon: "weapon_banner_03.jpg",
-    miniIcon: "weapon_banner_03.jpg",
-    url: "",
-    layer: 8,
-    color: "#b336a2",
-    iconPosition: 50,
-    showOnMain: false
   }
 ];
 
-// --- АДАПТАЦИЯ ДЛЯ БЭКЕНДА ---
-// Превращаем строковые даты в Timestamp (числа), чтобы server.js мог их сравнивать
+// --- ПРЕВРАЩАЕМ ДАТЫ В ЧИСЛА ДЛЯ NODE.JS ---
 const BANNERS = rawBanners.map(b => ({
     ...b,
-    // Добавляем " UTC", чтобы Node.js точно понял, что это UTC время
-    startTime: new Date(b.startTime + " UTC").getTime(),
-    endTime: b.endTime ? new Date(b.endTime + " UTC").getTime() : null
+    // Добавляем UTC, чтобы серверное время не сдвигало даты
+    startTime: new Date(b.startTime.endsWith("Z") ? b.startTime : b.startTime + " UTC").getTime(),
+    endTime: b.endTime ? new Date(b.endTime.endsWith("Z") ? b.endTime : b.endTime + " UTC").getTime() : null
 }));
 
-// Экспортируем в формате Node.js
 module.exports = { BANNERS };
