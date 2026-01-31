@@ -20,12 +20,11 @@
 
     function handleEmailClick() {
         isEmailVisible = !isEmailVisible;
-        if (isEmailVisible) clearTimeout(emailTimer); // Если открыли вручную, сбрасываем старый таймер
+        if (isEmailVisible) clearTimeout(emailTimer);
     }
 
     function handleEmailLeave() {
         if (isEmailVisible) {
-            // Запускаем таймер на 1.5 секунды при уходе мышки
             emailTimer = setTimeout(() => {
                 isEmailVisible = false;
             }, 1500);
@@ -33,7 +32,6 @@
     }
 
     function handleEmailEnter() {
-        // Если вернули мышку на почту до того, как она исчезла — отменяем таймер
         clearTimeout(emailTimer);
     }
 
@@ -143,14 +141,11 @@
         downloadAnchorNode.remove();
     }
 
-    // Импорт (Триггер)
     function handleImportBackup() {
         fileInputJson.click();
     }
 
-    // ИМПОРТ (Умное определение типа)
     function handleFileChangeJson(event) {
-        // ... (Твой код импорта без изменений) ...
         const file = event.target.files[0];
         if (!file) return;
 
@@ -168,7 +163,6 @@
                 if (!json || typeof json !== "object")
                     throw new Error("Invalid JSON structure: not an object");
 
-                // СЦЕНАРИЙ 1: Полный бэкап
                 if (
                     json.type === "ark_tracker_full_backup" &&
                     json.data &&
@@ -206,9 +200,7 @@
                                 err.message,
                         );
                     }
-                }
-                // СЦЕНАРИЙ 2: Обычный импорт данных
-                else {
+                } else {
                     const isPullData =
                         json.standard ||
                         json.special ||
@@ -221,23 +213,19 @@
                             )
                         ) {
                             try {
-                                // 1. Импорт
                                 await pullData.smartImport(json);
                                 alert(
                                     "✓ Pulls imported into current account successfully!",
                                 );
 
-                                // 2. Получаем свежие данные из памяти
                                 const currentMemData = get(pullData);
 
-                                // 3. Запускаем проверку, передавая ЭТИ ДАННЫЕ
                                 if ($user) {
                                     if (typeof window !== "undefined")
                                         localStorage.removeItem(
                                             "ark_ignore_cloud_ts",
                                         );
 
-                                    // [FIX] Передаем весь объект, а не число!
                                     checkSync($user, currentMemData);
                                 }
                             } catch (err) {
@@ -277,7 +265,6 @@
     function handleAccountChange(e) {
         const newAccountId = e.detail;
         accountStore.selectAccount(newAccountId);
-        currentUid.set(newAccountId);
     }
     function handleAddAccount() {
         accountStore.addAccount();
@@ -309,16 +296,10 @@
     }
 
     async function handleForceSync() {
-        // 1. Очищаем "память" (игнор). Теперь SyncModal будет считать, что он видит эти данные впервые.
         if (typeof window !== "undefined") {
             localStorage.removeItem("ark_ignore_cloud_ts");
         }
-
-        // 2. Ставим статус "проверка", чтобы визуально интерфейс отреагировал
         syncStatus.set("checking");
-
-        // 3. Небольшая задержка (50мс), чтобы Svelte успел удалить запись из localStorage
-        // перед тем, как checkSync вернет результат.
         setTimeout(() => {
             checkSync($user);
         }, 50);
