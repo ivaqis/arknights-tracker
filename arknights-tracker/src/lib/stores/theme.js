@@ -2,27 +2,21 @@
 import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
-// 1. Ставим false (Светлая тема по умолчанию)
-const defaultValue = false;
-
-// 2. Убираем проверку системных настроек (window.matchMedia), 
-// чтобы сайт не становился черным, если у пользователя на ПК темная тема.
-// Теперь он будет темным ТОЛЬКО если пользователь сам нажал кнопку (сохранено в localStorage).
-const initialValue = browser
-    ? localStorage.getItem('theme') === 'dark'
-    : defaultValue;
+// 1. ЖЕСТКО ставим false. Игнорируем localStorage и системные настройки.
+const initialValue = false;
 
 export const isDarkMode = writable(initialValue);
 
-// Подписка для обновления класса на html (чтобы tailwind работал)
+// 2. Эта часть кода принудительно удалит класс 'dark' с html тега при загрузке
 if (browser) {
     isDarkMode.subscribe((value) => {
         if (value) {
             document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
         } else {
+            // Гарантированно удаляем класс, даже если он там застрял
             document.documentElement.classList.remove('dark');
-            localStorage.setItem('theme', 'light');
+            // Можно даже очистить сохранение, чтобы в будущем не мешало
+            localStorage.removeItem('theme'); 
         }
     });
 }
