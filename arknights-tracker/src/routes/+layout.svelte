@@ -27,7 +27,6 @@
     }
 
     $: if (browser) {
-        // Проверяем, что значение загрузилось
         if ($isDarkMode) {
             document.documentElement.classList.add('dark');
             localStorage.setItem('theme', 'dark');

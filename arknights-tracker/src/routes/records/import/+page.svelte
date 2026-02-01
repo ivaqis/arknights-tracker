@@ -1152,7 +1152,7 @@
         {/if}
         {#if previewReport}
             <div
-                class=" p-5 rounded-lg bg-gray-50 border border-gray-200 animate-in fade-in slide-in-from-bottom-2"
+                class="mt-5 p-5 rounded-lg bg-gray-50 border border-gray-200 animate-in fade-in slide-in-from-bottom-2"
             >
                 {#if previewReport.status === "up_to_date"}
                     <div

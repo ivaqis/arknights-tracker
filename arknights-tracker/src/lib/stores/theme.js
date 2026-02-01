@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 import { browser } from '$app/environment';
 
 // По умолчанию false (светлая)
-const defaultValue = false;
+const defaultValue = true;
 
 // Пытаемся получить начальное значение
 const initialValue = browser
