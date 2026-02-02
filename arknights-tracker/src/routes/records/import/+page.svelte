@@ -15,10 +15,8 @@
 
     let platformTab = "pc";
 
-    // --- ВАЖНЫЕ ПЕРЕМЕННЫЕ ---
-    let urlInput = ""; // То, что видит пользователь (Текст в поле)
-    let realImportUrl = ""; // То, что полетит на сервер (Реальная ссылка)
-    // -------------------------
+    let urlInput = "";
+    let realImportUrl = "";
 
     let isLoading = false;
     let previewReport = null;
@@ -35,11 +33,9 @@
 
     let isInputError = false;
 
-    // Скрипты (оставляем как были)
     const powerShellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url.ps1'))}"`;
     const powerShellScript2 = `[regex]::Matches((Get-Content "$env:USERPROFILE\\AppData\\LocalLow\\Gryphline\\Endfield\\sdklogs\\HGWebview.log" -Raw), "https://ef-webview\\.gryphline\\.com[^\\s]+u8_token=[^\\s]+").Value[-1] | Set-Clipboard`;
 
-    // Статистика для превью (добавлено, чтобы не было ошибок в шаблоне)
     $: importSummary = pendingData
         ? pendingData.reduce((acc, pull) => {
               const id = pull.bannerId || "other";
@@ -48,7 +44,6 @@
           }, {})
         : {};
 
-    // Вычисляем импортированные пулы для отображения (если есть)
     $: importedPulls = pendingData || [];
 
     onMount(() => {
@@ -93,7 +88,6 @@
     }
 
     function selectToken(token) {
-        // При выборе сохраненного: показываем URL и используем его
         urlInput = token.url;
         realImportUrl = token.url;
         activeTab = "new";
@@ -101,94 +95,57 @@
         errorMsg = "";
     }
 
-    // === ГЛАВНАЯ ЛОГИКА ОБРАБОТКИ ВВОДА ===
     function handleInputProcessing(e) {
-        // Получаем сырой текст из инпута
         const rawValue = e.target.value;
-
-        // Сбрасываем ошибки
         errorMsg = "";
         isInputError = false;
 
-        // Если пусто - очищаем всё
         if (!rawValue) {
             urlInput = "";
             realImportUrl = "";
             return;
         }
 
-        // 1. Если это уже полная ссылка (начинается на http)
         if (rawValue.trim().startsWith("http")) {
             urlInput = rawValue;
             realImportUrl = rawValue;
             return;
         }
 
-        // 2. Если это токен (JSON или просто длинная строка)
-        // Только если мы на вкладке Android (или если это явно JSON)
         let cleanToken = rawValue.trim();
 
-        // Попытка достать токен из JSON {"token": "..."}
         if (cleanToken.includes("token")) {
             try {
-                // Ищем паттерн "token":"ЗНАЧЕНИЕ"
                 const jsonMatch = cleanToken.match(/"token"\s*:\s*"([^"]+)"/);
                 if (jsonMatch && jsonMatch[1]) {
                     cleanToken = jsonMatch[1];
                 } else {
-                    // Если регулярка не справилась, пробуем JSON.parse
-                    // Убираем лишние кавычки по краям если есть
-                    if (
-                        cleanToken.startsWith("'") ||
-                        cleanToken.startsWith('"')
-                    ) {
-                        cleanToken = cleanToken.slice(1, -1);
+                    if (cleanToken.startsWith("'") || cleanToken.startsWith('"')) {
+                         cleanToken = cleanToken.slice(1, -1);
                     }
                     const obj = JSON.parse(cleanToken);
                     if (obj.token) cleanToken = obj.token;
                 }
             } catch (err) {
-                // Если парсинг упал, пробуем просто очистить от скобок
-                console.log("JSON parse failed, trying raw cleanup");
-                cleanToken = cleanToken
-                    .replace(/^{"token":"/, "")
-                    .replace(/"}$/, "");
+                cleanToken = cleanToken.replace(/^{"token":"/, "").replace(/"}$/, "");
             }
         }
 
-        // Если токен пустой после очистки, выходим
         if (!cleanToken) return;
 
-        // 3. Формируем "виртуальную" ссылку
-        // Кодируем спецсимволы (+, /, =), чтобы они корректно передались в URL
         const encodedToken = encodeURIComponent(cleanToken);
-
-        const baseUrl =
-            "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
-        // Параметры для Android
-        const tail =
-            "&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=3";
-
-        // Сохраняем РЕАЛЬНУЮ ссылку в переменную (ее отправим на бэк)
+        const baseUrl = "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
+        const tail = "&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=3";
+        
         realImportUrl = baseUrl + encodedToken + tail;
-
-        // 4. В поле ввода показываем красивую заглушку
-        // Генерируем рандомный ID для красоты
-        const randomId = Math.random()
-            .toString(36)
-            .substring(2, 10)
-            .toUpperCase();
-        urlInput = `Token_Android#${randomId}`; // Это увидит юзер
-
-        // ВАЖНО: Принудительно обновляем value в DOM, если Svelte затупил
-        e.target.value = urlInput;
+        urlInput = cleanToken;
+        e.target.value = cleanToken;
     }
 
     async function handleUrlImport() {
         errorMsg = "";
         isInputError = false;
 
-        // Используем realImportUrl, если он есть (для Android), иначе то, что в поле
         const urlToSend = realImportUrl || urlInput;
 
         if (!urlToSend || !urlToSend.trim()) {
@@ -198,7 +155,6 @@
         }
 
         if (isSaveTokenEnabled && !tokenName.trim()) {
-            // Проверяем, сохраняем ли мы дубликат
             const alreadyExists = savedTokens.some((t) => t.url === urlToSend);
             if (!alreadyExists) {
                 isInputError = true;
@@ -207,7 +163,6 @@
             }
         }
 
-        // Валидация домена
         try {
             const parsedUrl = new URL(urlToSend);
             if (parsedUrl.protocol !== "https:") {
@@ -300,7 +255,6 @@
         realImportUrl = "";
     }
 
-    // Пустая функция-заглушка, так как мы используем on:input
     function handleInput() {}
 </script>
 
