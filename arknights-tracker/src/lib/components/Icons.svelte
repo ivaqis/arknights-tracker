@@ -224,12 +224,12 @@
     >
         <path
             d="M21 15L21 21L12 21L3 21L3 15"
-            stroke="#21272C"
+            stroke="currentColor"
             stroke-width="2"
         />
         <path
             d="M12 3L12 15M12 15L17 10M12 15L7 10"
-            stroke="#21272C"
+            stroke="currentColor"
             stroke-width="2"
         />
     </svg>
@@ -381,15 +381,42 @@
         />
     </svg>
 {:else if name === "settingsMenu"}
-
-
-    <svg class={$$props.class}
-        style={$$props.style} width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M15.5652 11.5C15.5652 13.433 13.92 15 11.8906 15C9.86123 15 8.21609 13.433 8.21609 11.5C8.21609 9.567 9.86123 8 11.8906 8C13.92 8 15.5652 9.567 15.5652 11.5Z" stroke="currentColor" stroke-width="2.3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z" stroke="currentColor" stroke-width="2.3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z" stroke="currentColor" stroke-width="2.3"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.89062 4.5V1H13.8906V4.5L17.3906 6.60591L20.4841 4.67737L22.3906 7.82268L19.3906 9.5V11.5V13.5L22.3906 15.1774L20.4841 18.3227L17.3906 16.5L13.7971 18.5V22H9.98411V18.3227L6.39062 16.5L3.29712 18.3226L1.39062 15.1773L4.39062 13.5V11.6673V9.76599L1.39062 7.82262L3.29712 4.67732L6.39062 6.60591L9.89062 4.5ZM11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z" stroke="currentColor" stroke-width="2.3"/>
-</svg>
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        width="24"
+        height="23"
+        viewBox="0 0 24 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M15.5652 11.5C15.5652 13.433 13.92 15 11.8906 15C9.86123 15 8.21609 13.433 8.21609 11.5C8.21609 9.567 9.86123 8 11.8906 8C13.92 8 15.5652 9.567 15.5652 11.5Z"
+            stroke="currentColor"
+            stroke-width="2.3"
+        />
+        <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z"
+            stroke="currentColor"
+            stroke-width="2.3"
+        />
+        <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z"
+            stroke="currentColor"
+            stroke-width="2.3"
+        />
+        <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.89062 4.5V1H13.8906V4.5L17.3906 6.60591L20.4841 4.67737L22.3906 7.82268L19.3906 9.5V11.5V13.5L22.3906 15.1774L20.4841 18.3227L17.3906 16.5L13.7971 18.5V22H9.98411V18.3227L6.39062 16.5L3.29712 18.3226L1.39062 15.1773L4.39062 13.5V11.6673V9.76599L1.39062 7.82262L3.29712 4.67732L6.39062 6.60591L9.89062 4.5ZM11.8906 15C13.92 15 15.5652 13.433 15.5652 11.5C15.5652 9.567 13.92 8 11.8906 8C9.86123 8 8.21609 9.567 8.21609 11.5C8.21609 13.433 9.86123 15 11.8906 15Z"
+            stroke="currentColor"
+            stroke-width="2.3"
+        />
+    </svg>
 
     <!-- Flags -->
 {:else if name === "ru"}
@@ -2088,29 +2115,128 @@
         />
     </svg>
 {:else if name == "chevronRight"}
-<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.75 0.664062L8.75 9.66406L0.75 18.6641" stroke="currentColor" stroke-width="2"/>
-</svg>
-
-
+    <svg
+        width="11"
+        height="20"
+        viewBox="0 0 11 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M0.75 0.664062L8.75 9.66406L0.75 18.6641"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+    </svg>
 {:else if name == "chevronLeft"}
-<svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.33594 18.6641L1.33594 9.66406L9.33594 0.664063" stroke="currentColor" stroke-width="2"/>
-</svg>
-
+    <svg
+        width="11"
+        height="20"
+        viewBox="0 0 11 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M9.33594 18.6641L1.33594 9.66406L9.33594 0.664063"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+    </svg>
 {:else if name == "cloud"}
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 14C1 16.7614 3.23858 19 6 19H19C21.2091 19 23 17.2091 23 15C23 12.7909 21.2091 11 19 11C18.6542 11 18.3187 11.0439 17.9987 11.1264C17.9996 11.0843 18 11.0422 18 11C18 7.68629 15.3137 5 12 5C9.38338 5 7.15796 6.67497 6.33746 9.01121C6.22594 9.00378 6.11341 9 6 9C3.23858 9 1 11.2386 1 14Z" stroke="currentColor" stroke-width="2"/>
-</svg>
+    <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M1 14C1 16.7614 3.23858 19 6 19H19C21.2091 19 23 17.2091 23 15C23 12.7909 21.2091 11 19 11C18.6542 11 18.3187 11.0439 17.9987 11.1264C17.9996 11.0843 18 11.0422 18 11C18 7.68629 15.3137 5 12 5C9.38338 5 7.15796 6.67497 6.33746 9.01121C6.22594 9.00378 6.11341 9 6 9C3.23858 9 1 11.2386 1 14Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+    </svg>
 {:else if name == "local"}
-<svg width="22" height="22" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.15 4.15H4.1585M4.15 14.35H4.1585M2.45 0.75H16.05C16.9889 0.75 17.75 1.51112 17.75 2.45V5.85C17.75 6.78888 16.9889 7.55 16.05 7.55H2.45C1.51112 7.55 0.75 6.78888 0.75 5.85V2.45C0.75 1.51112 1.51112 0.75 2.45 0.75ZM2.45 10.95H16.05C16.9889 10.95 17.75 11.7111 17.75 12.65V16.05C17.75 16.9889 16.9889 17.75 16.05 17.75H2.45C1.51112 17.75 0.75 16.9889 0.75 16.05V12.65C0.75 11.7111 1.51112 10.95 2.45 10.95Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+    <svg
+        width="22"
+        height="22"
+        viewBox="0 0 19 19"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M4.15 4.15H4.1585M4.15 14.35H4.1585M2.45 0.75H16.05C16.9889 0.75 17.75 1.51112 17.75 2.45V5.85C17.75 6.78888 16.9889 7.55 16.05 7.55H2.45C1.51112 7.55 0.75 6.78888 0.75 5.85V2.45C0.75 1.51112 1.51112 0.75 2.45 0.75ZM2.45 10.95H16.05C16.9889 10.95 17.75 11.7111 17.75 12.65V16.05C17.75 16.9889 16.9889 17.75 16.05 17.75H2.45C1.51112 17.75 0.75 16.9889 0.75 16.05V12.65C0.75 11.7111 1.51112 10.95 2.45 10.95Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
 {:else if name == "export"}
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 15L21 21L12 21L3 21L3 15" stroke="currentColor" stroke-width="2"/>
-<path d="M12 15L12 3M12 3L7 8M12 3L17 8" stroke="currentColor" stroke-width="2"/>
-</svg>
-
+    <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M21 15L21 21L12 21L3 21L3 15"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M12 15L12 3M12 3L7 8M12 3L17 8"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+    </svg>
+{:else if name == "check"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M4 12L9.5 17.5L20 7" stroke="currentColor" stroke-width="2" />
+    </svg>
+{:else if name == "trash"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        width="10"
+        height="10"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
+{:else if name == "loading"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M16.0013 2.66406V7.9974M16.0013 23.9974V29.3307M6.57464 6.57073L10.348 10.3441M21.6546 21.6507L25.428 25.4241M2.66797 15.9974H8.0013M24.0013 15.9974H29.3346M6.57464 25.4241L10.348 21.6507M21.6546 10.3441L25.428 6.57073"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
 {/if}

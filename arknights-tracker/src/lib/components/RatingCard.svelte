@@ -8,30 +8,23 @@
   import Button from "./Button.svelte";
   import Icon from "./Icons.svelte";
 
-  // --- ТАБЫ ---
   $: ratingTabs = [...bannerTypes]
     .filter((b) => b.showInRating)
     .sort((a, b) => a.order - b.order);
 
   let activeTab = ratingTabs?.[0]?.id ?? "special";
   
-  // --- ЛОКАЛЬНЫЕ ДАННЫЕ ---
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
-  
   $: localTotal = localStore.pulls?.length || 0;
   $: localAvg6 = localStats.avg6 ? parseFloat(localStats.avg6) : 0;
   $: localAvg5 = localStats.avg5 ? parseFloat(localStats.avg5) : 0;
   $: localWinRate = localStats.winRate?.percent ? parseFloat(localStats.winRate.percent) : 0;
-
-  // --- ДАННЫЕ С СЕРВЕРА ---
   let serverData = null;
-
   $: displayTotal = serverData?.myStats?.total ?? localTotal;
   $: displayAvg6 = serverData?.myStats?.avg6 ? parseFloat(serverData.myStats.avg6) : localAvg6;
   $: displayWinRate = serverData?.myStats?.winRate ? parseFloat(serverData.myStats.winRate) : localWinRate;
 
-  // --- ПАРСИНГ ---
   const safeParse = (val) => {
       if (val === null || val === undefined) return null;
       const num = parseFloat(val);
@@ -43,7 +36,6 @@
   $: rank5050 = safeParse(serverData?.rank5050);
   $: rankLuck5 = safeParse(serverData?.rankLuck5);
 
-  // --- ХЕЛПЕРЫ ---
   const getPercentile = (rank) => rank !== null ? rank.toFixed(0) : "---";
   
   const getRankValue = (rank) => {
@@ -94,17 +86,17 @@
 </script>
 
 <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 h-full min-w-[320px]">
-  <h3 class="text-xl font-bold mb-6 font-sdk text-[#21272C]">
+  <h3 class="text-xl font-bold mb-6 dark:text-[#FDFDFD] font-sdk text-[#21272C]">
     {$t("page.rating.ratingTitle")}
   </h3>
 
   <div class="space-y-6">
     
     {#if activeTab !== 'new-player'}
-      <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+      <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4">
         <div>
-          <div class="font-medium text-gray-700">{$t("page.rating.luckyTotal")}</div>
-          <div class="text-xs text-gray-400 mt-1">
+          <div class="font-medium dark:text-[#FDFDFD] text-gray-700">{$t("page.rating.luckyTotal")}</div>
+          <div class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-1">
              {#if rankTotal !== null}
                 {#if rankTotal < 50}
                    {$t("page.rating.luckyLessThan", { n: getComparisonValue(rankTotal) })}
@@ -117,10 +109,10 @@
           </div>
         </div>
         <div class="text-right">
-          <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
+          <div class="text-2xl font-black dark:text-[#FDFDFD] text-gray-900 font-nums whitespace-nowrap">
              {$t(getRankLabel(rankTotal))} {getRankValue(rankTotal)}%
           </div>
-          <div class="text-sm font-bold text-gray-900 font-nums">
+          <div class="text-sm text-gray-400 dark:text-[#B7B6B3] font-semibold">
             {displayTotal.toLocaleString("ru-RU")}
           </div>
         </div>
@@ -128,10 +120,10 @@
     {/if}
 
     {#if activeTab !== 'standard' && activeTab !== 'new-player'}
-      <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+      <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4">
         <div>
-          <div class="font-medium text-gray-700">{$t("page.rating.lucky5050")}</div>
-          <div class="text-xs text-gray-400 mt-1">
+          <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">{$t("page.rating.lucky5050")}</div>
+          <div class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-1">
              {#if rank5050 !== null}
                 {#if rank5050 < 50}
                    {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rank5050) })}
@@ -144,22 +136,22 @@
           </div>
         </div>
         <div class="text-right">
-          <div class="text-2xl font-black text-[#21272C] font-nums whitespace-nowrap">
+          <div class="text-2xl font-black dark:text-[#FDFDFD] text-[#21272C] font-nums whitespace-nowrap">
              {$t(getRankLabel(rank5050))} {getRankValue(rank5050)}%
           </div>
-          <div class="text-sm font-bold text-gray-900 font-nums">
+          <div class="text-sm text-gray-400 dark:text-[#B7B6B3] font-semibold">
             {formatVal(displayWinRate)}%
           </div>
         </div>
       </div>
     {/if}
 
-    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-[#21272C] flex items-center gap-1">
+        <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
           {$t("page.rating.lucky6")} 6 <Icon name="star" class="w-4 h-4" />
         </div>
-        <div class="text-xs text-gray-400 mt-1">
+        <div class="text-xs dark:text-[#B7B6B3] text-gray-400 mt-1">
            {#if rankLuck6 !== null}
               {#if rankLuck6 < 50}
                  {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rankLuck6) })}
@@ -172,21 +164,21 @@
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-gray-900 font-nums whitespace-nowrap">
+        <div class="text-2xl font-black dark:text-[#FDFDFD] text-[#21272C] font-nums whitespace-nowrap">
            {$t(getRankLabel(rankLuck6))} {getRankValue(rankLuck6)}%
         </div>
-        <div class="text-sm font-bold text-gray-900 font-nums">
-          {formatVal(displayAvg6)} <span class="text-gray-400 font-normal">avg</span>
+        <div class="text-sm font-semibold text-gray-400 dark:text-[#B7B6B3]">
+          {formatVal(displayAvg6)} <span class="text-gray-400 dark:text-[#B7B6B3] font-semibold">{$t("page.rating.avg")}</span>
         </div>
       </div>
     </div>
 
-    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+    <div class="flex justify-between items-center dark:border-[#444444] border-b border-gray-100 pb-4">
       <div>
-        <div class="font-medium text-[#21272C] flex items-center gap-1">
+        <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
           {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />
         </div>
-        <div class="text-xs text-gray-400 mt-1">
+        <div class="text-xs dark:text-[#B7B6B3] text-gray-400 mt-1">
            {#if rankLuck5 !== null}
               {#if rankLuck5 < 50}
                  {$t("page.rating.luckyLessLuckierThan", { n: getComparisonValue(rankLuck5) })}
@@ -199,11 +191,11 @@
         </div>
       </div>
       <div class="text-right">
-        <div class="text-2xl font-black text-[#21272C] font-nums whitespace-nowrap">
+        <div class="text-2xl font-black text-[#21272C] dark:text-[#FDFDFD] whitespace-nowrap">
            {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
         </div>
-        <div class="text-sm font-bold text-gray-900 font-nums">
-          {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="text-gray-400 font-normal">avg</span>
+        <div class="text-sm font-semibold dark:text-[#B7B6B3] text-gray-400">
+          {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="text-gray-400 dark:text-[#B7B6B3] font-semibold">{$t("page.rating.avg")}</span>
         </div>
       </div>
     </div>

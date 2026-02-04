@@ -1,11 +1,12 @@
 <script>
     import { createEventDispatcher, onMount } from "svelte";
-    import { t } from "$lib/i18n";
-    import { pullData } from "$lib/stores/pulls";
     import { replaceState } from "$app/navigation";
+    import { pullData } from "$lib/stores/pulls";
     import { characters } from "$lib/data/characters";
     import { weapons } from "$lib/data/weapons";
+    import { banners } from "$lib/data/banners";
     import { browser } from "$app/environment";
+    import { t } from "$lib/i18n";
 
     import Icon from "$lib/components/Icons.svelte";
     import OperatorCard from "$lib/components/OperatorCard.svelte";
@@ -13,22 +14,43 @@
     import BannerStats from "$lib/components/BannerStats.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
 
-    export let bannerId = "";
+    export const bannerId = undefined; 
     export let banner = null;
     export let pageContext = null;
 
     const dispatch = createEventDispatcher();
 
-    // Функция очистки строк для сравнения (удаляет всё кроме букв и цифр)
-    const normalize = (str) => String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    // --- Helpers ---
+    function normalize(str) {
+        return String(str || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+    }
+
+    function formatTime(d) {
+        if (!d) return "";
+        return d.toLocaleString("ru-RU", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+    }
+
+    function getWeaponBg(rarity) {
+        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
+        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
+        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
+    }
+
+    function getRarityColor(rarity) {
+        if (rarity === 6) return "#D0926E";
+        if (rarity === 5) return "#E3BC55";
+        return "#888";
+    }
 
     onMount(() => {
         if (banner && banner.id && typeof window !== "undefined") {
             replaceState(`#banner-${banner.id}`, {});
-        }
-        // Для отладки: посмотрим, что есть в сторе
-        if (browser) {
-            console.log("Store Keys Available:", Object.keys($pullData));
         }
     });
 
@@ -39,7 +61,6 @@
         dispatch("close");
     }
 
-    // --- 1. ОПРЕДЕЛЕНИЕ ТИПА БАННЕРА ---
     $: isEvent =
         banner?.type === "web" ||
         banner?.type === "ingame" ||
@@ -49,13 +70,11 @@
 
     $: imageVariant = isEvent ? "event-icon" : "banner-icon";
 
-    // Усиленная проверка на оружие
     $: isWeaponBanner = (() => {
         if (!banner) return false;
         const id = (banner.id || "").toLowerCase();
         const type = (banner.type || "").toLowerCase();
         const ctx = (pageContext || "").toLowerCase();
-        
         return (
             type === 'weapon' || 
             id.includes('weap') || id.includes('wepon') ||
@@ -63,41 +82,46 @@
         );
     })();
 
-    // --- 2. ПОИСК ДАННЫХ (АГРЕССИВНЫЙ) ---
+    // --- 1. ГИБКИЙ ВЫБОР ДАННЫХ (Fix для оружия) ---
     $: categoryPulls = (() => {
         if (!banner || !$pullData) return [];
-
+        
         let keysToCheck = [];
+        
+        const id = (banner.id || "").toLowerCase();
+        const type = (banner.type || "").toLowerCase();
 
-        // Если это оружие, проверяем ВСЕ возможные варианты написания
         if (isWeaponBanner) {
-            keysToCheck = [
-                'weap-special', // Самый частый вариант
-                'weap-standard',
-                'weapon',       // Иногда так
-                'wepon',        // Из API игры бывает опечатка
-                'wepon-special',
-                'weapon-special'
-            ];
-            // Также добавляем сам ID баннера, вдруг данные сохранены по ID
-            if (banner.id) keysToCheck.unshift(banner.id);
-        } else {
-            // Для персонажей
-            if (banner.id === 'standard') keysToCheck = ['standard'];
-            else if (banner.id?.includes('new')) keysToCheck = ['new-player', 'new'];
-            else keysToCheck = ['special', 'standard'];
-        }
-
-        // Перебираем ключи и ищем первый непустой массив
-        for (const key of keysToCheck) {
-            const store = $pullData[key];
-            if (store && Array.isArray(store.pulls) && store.pulls.length > 0) {
-                // console.log(`[BannerModal] MATCH: Found ${store.pulls.length} pulls in key: "${key}"`);
-                return store.pulls;
+            // Если это Постоянный/Стандартный оружейный
+            if (id.includes('constant') || id.includes('standard') || type === 'weap-standard') {
+                keysToCheck = ['weap-standard', 'weapon-standard', 'wepon-standard', 'standard-weapon'];
+            } 
+            // Иначе считаем это Ивентовым/Специальным оружием
+            else {
+                keysToCheck = ['weap-special', 'weapon-special', 'wepon-special', 'special-weapon', 'weapon', 'wepon'];
+            }
+            
+            // Добавляем ID самого баннера как фоллбэк
+            if (banner.id) keysToCheck.push(banner.id);
+        } 
+        else {
+            // Персонажи (тут строго, чтобы не смешивать)
+            if (id === 'standard' || id.includes('standard') || type === 'standard') {
+                keysToCheck = ['standard'];
+            } else if (id.includes('new') || type === 'new-player') {
+                keysToCheck = ['new-player', 'new'];
+            } else {
+                keysToCheck = ['special'];
             }
         }
 
-        // console.warn(`[BannerModal] NO DATA found for banner ${banner.id}. Checked:`, keysToCheck);
+        // Ищем первый ключ, в котором есть непустой массив
+        for (const key of keysToCheck) {
+            const data = $pullData[key];
+            if (data && Array.isArray(data.pulls) && data.pulls.length > 0) {
+                return data.pulls;
+            }
+        }
         return [];
     })();
 
@@ -115,10 +139,24 @@
             .filter(Boolean);
     })();
 
-    // Список имен для проверки (нормализованный)
-    $: featuredNames = featuredItems.map(i => normalize(i.name));
+    $: featuredList = (() => {
+        if (!banner) return [];
+        return [...(banner.featured6 || []), ...(banner.featured5 || [])];
+    })();
 
-    // --- 3. РАСЧЕТ СТАТИСТИКИ (ЛОКАЛЬНО) ---
+    const checkIsFeatured = (itemName) => {
+        const normItem = normalize(itemName);
+        return featuredList.some(fid => {
+            const c = characters[fid];
+            if (c && normalize(c.name) === normItem) return true;
+            const w = weapons[fid];
+            if (w && normalize(w.name) === normItem) return true;
+            if (normalize(fid) === normItem) return true;
+            return false;
+        });
+    };
+
+    // --- РАСЧЕТ СТАТИСТИКИ ---
     $: bannerData = (() => {
         if (!banner || !categoryPulls.length || isEvent) {
             return { pulls: [], stats: {} };
@@ -127,96 +165,105 @@
         const bStart = new Date(banner.startTime).getTime();
         const bEnd = banner.endTime ? new Date(banner.endTime).getTime() : Infinity;
 
-        // 1. Фильтруем общую кучу круток по датам этого баннера
-        const filtered = categoryPulls.filter((pull) => {
+        // 1. Сортируем ВСЮ историю
+        const fullHistory = [...categoryPulls].sort((a, b) => {
+            const tA = new Date(a.time).getTime();
+            const tB = new Date(b.time).getTime();
+            if (tA !== tB) return tA - tB;
+            return (a.seqId || 0) - (b.seqId || 0);
+        });
+
+        // 2. Рассчитываем PITY
+        let simPity5 = 0;
+        let simPity6 = 0; // На случай отсутствия в базе
+
+        const historyWithPity = fullHistory.map(pull => {
+            const p = { ...pull };
+            const isFree = p.isFree === true || String(p.isFree) === "true";
+
+            // Увеличиваем Pity ТОЛЬКО если крутка платная
+            if (!isFree) {
+                simPity5++;
+                simPity6++;
+            }
+
+            // 6*: Берем из базы, если есть. Иначе наш подсчет
+            p.calculatedPity6 = (p.pity !== undefined && p.pity !== null) ? Number(p.pity) : simPity6;
+            
+            // 5*: Берем наш подсчет
+            p.calculatedPity5 = simPity5;
+
+            // Сброс
+            if (p.rarity === 6) simPity6 = 0;
+            if (p.rarity === 5) simPity5 = 0;
+
+            return p;
+        });
+
+        // 3. Фильтруем по датам
+        // ВАЖНО: Для Оружия мы не проверяем bannerId так строго, как для персонажей,
+        // потому что в базе weapon bannerId часто просто "weapon" или "weap-special", без разделения на ID баннера
+        const filtered = historyWithPity.filter((pull) => {
             const pullTime = new Date(pull.time).getTime();
-            return pullTime >= bStart && pullTime <= bEnd;
+            const timeMatch = pullTime >= bStart && pullTime <= bEnd;
+            
+            // Для Стандарта персонажей добавляем проверку, чтобы не лез Спешл
+            if (!isWeaponBanner && banner.id === 'standard') {
+                return timeMatch && (pull.bannerId === 'standard' || pull.bannerId === '1'); // 1 - часто ID стандарта
+            }
+            
+            return timeMatch;
         });
 
         if (filtered.length === 0) return { pulls: [], stats: {} };
 
-        // 2. Считаем статистику
+        // 4. Итоговый подсчет
         const hardPityLimit = isWeaponBanner ? 80 : 120;
         
-        // Переменные для итерации
-        let p6 = 0, p5 = 0;
-        let rateUpCounter = 0; 
-
-        // Итоговая статистика
         let count6 = 0, count5 = 0;
         let sumPity6 = 0, sumPity5 = 0;
         let total5050 = 0, won5050 = 0;
+        let localRateUpCounter = 0; 
 
-        // Важно: сортируем от старых к новым для правильного подсчета гаранта
-        const sortedForCalc = [...filtered].sort((a, b) => a.time - b.time);
-        
-        const processed = sortedForCalc.map((pull) => {
+        const processed = filtered.map((pull) => {
             const p = { ...pull };
-            const itemName = normalize(p.name);
-            // Если есть флаг isFree, используем, иначе false
             const isFree = p.isFree === true || String(p.isFree) === "true";
-
-            // --- Проверка жесткого гаранта ---
-            let isHardPityTriggered = false;
+            
             if (!isFree) {
-                // Если счетчик был 79, а это 80-я крутка -> это хард пити
-                if (rateUpCounter >= hardPityLimit - 1) {
-                    isHardPityTriggered = true;
-                }
-                rateUpCounter++;
+                if (localRateUpCounter >= hardPityLimit - 1) {}
+                localRateUpCounter++;
             }
+            const isHardPityTriggered = (localRateUpCounter > hardPityLimit);
 
             if (p.rarity === 6) {
                 count6++;
-                
-                // Считаем локальный пити для отображения
-                const currentPity = p6 + 1; 
-                sumPity6 += currentPity;
-                // Если в импорте есть реальный пити, берем его, иначе расчетный
-                p.realPity = p.pity || currentPity; 
-                
-                // Сброс счетчиков редкости
-                p6 = 0; 
-                p5++;
+                sumPity6 += p.calculatedPity6; 
+                p.realPity = p.calculatedPity6;
 
-                // Проверка на ивентовость
-                // Проверяем вхождение имени в список фичеред
-                const isFeatured = featuredNames.includes(itemName);
-
+                const isFeatured = checkIsFeatured(p.name);
                 if (isFeatured) {
-                    // Выиграли ивентовый предмет
-                    // Если это НЕ хард-гарант, то это победа в 50/50
                     if (!isHardPityTriggered) {
                         total5050++;
-                        won5050++; 
+                        won5050++;
                     }
-                    // При выпадении ивента счетчик гаранта сбрасывается
-                    rateUpCounter = 0;
+                    localRateUpCounter = 0;
                 } else {
-                    // Проиграли (выпал стандарт)
-                    // Если это не хард-гарант (хотя на хард-гаранте проиграть нельзя по идее, но для статистики 50/50 считаем)
                     if (!isHardPityTriggered) {
                         total5050++;
                     }
-                    // Счетчик rateUpCounter НЕ сбрасывается, растет дальше до 120/80
                 }
-
-            } else if (p.rarity === 5) {
+            } 
+            else if (p.rarity === 5) {
                 count5++;
-                const currentPity = p5 + 1;
-                sumPity5 += currentPity;
-                p.realPity = p.pity || currentPity;
-                p5 = 0; 
-                p6++;
-                if (!isFree) p5++; // ??? Ошибка в логике инкремента, но для 5* не критично
-            } else {
-                p6++; 
-                p5++;
+                sumPity5 += p.calculatedPity5;
+                p.realPity = p.calculatedPity5;
+            } 
+            else {
                 p.realPity = 1;
             }
 
             return p;
-        }).reverse(); // Разворачиваем: Новые сверху
+        }).reverse(); // Новые сверху
 
         const total = processed.length;
 
@@ -226,8 +273,10 @@
             count5,
             percent6: total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00",
             percent5: total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00",
+            
             avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
             avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
+            
             winRate: { 
                 won: won5050, 
                 total: total5050, 
@@ -241,22 +290,13 @@
     $: bannerPulls = bannerData.pulls;
     $: bannerStats = bannerData.stats;
 
-    // --- 4. ТАЙМЕРЫ ---
+    // --- Time Data ---
     $: now = new Date();
     $: start = banner ? new Date(banner.startTime) : new Date();
     $: end = banner && banner.endTime ? new Date(banner.endTime) : null;
     $: isEnded = end && now > end;
     $: isActive = now >= start && (!end || now <= end);
     $: isUpcoming = now < start;
-
-    const formatTime = (d) =>
-        d.toLocaleString("ru-RU", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-        });
 
     $: diff = (() => {
         if (!banner) return 0;
@@ -273,17 +313,6 @@
               hours: Math.floor((diff / 3600000) % 24),
           }
         : { days: 0, hours: 0 };
-
-    function getWeaponBg(rarity) {
-        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
-        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
-        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
-    }
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#D0926E";
-        if (rarity === 5) return "#E3BC55";
-        return "#888";
-    }
 </script>
 
 {#if banner}
@@ -295,16 +324,16 @@
         on:keydown={(e) => (e.key === "Escape" || e.key === "Enter") && close()}
     >
         <div
-            class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-200 flex flex-col cursor-auto"
+            class="bg-white dark:bg-[#383838]  rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-200 flex flex-col cursor-auto"
         >
             <button
-                class="absolute top-3 right-3 z-20 p-2 bg-black/30 hover:bg-black/50 text-white rounded-full transition-colors backdrop-blur-md cursor-pointer"
+                class="hover:bg-[#FACC15] text-white hover:text-[#21272C] absolute top-3 right-3 z-20 p-2 bg-black/30 text-white rounded-full transition-colors backdrop-blur-md cursor-pointer"
                 on:click={close}
             >
                 <Icon name="close" class="w-5 h-5" />
             </button>
 
-            <div class="aspect-[21/9] w-full relative bg-gray-100">
+            <div class="aspect-[21/9]  w-full relative bg-gray-100">
                 <Images
                     item={banner}
                     variant={imageVariant}
@@ -313,7 +342,7 @@
                     style="object-fit: cover;"
                 />
                 <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
+                    class="absolute  inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"
                 ></div>
                 <div class="absolute bottom-0 left-0 right-0 p-5">
                     <h3
@@ -324,7 +353,7 @@
                             : banner.name || banner.id}
                     </h3>
                     <div
-                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/10 shadow-sm {isActive
+                        class="inline-flex items-center gap-1.5 px-2.5 py-0.5  rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/10 shadow-sm {isActive
                             ? 'bg-green-500/20 text-green-300'
                             : ''} {isEnded
                             ? 'bg-gray-500/40 text-gray-300'
@@ -355,40 +384,40 @@
                     <div class="flex justify-between items-start text-sm">
                         <div class="flex flex-col gap-0.5">
                             <span
-                                class="text-gray-400 text-xs font-bold uppercase tracking-wide"
+                                class="text-gray-400 dark:text-[#B7B6B3] text-xs font-bold uppercase tracking-wide"
                                 >{$t("systemNames.start")}</span
                             >
-                            <span class="font-nums font-medium text-gray-900"
+                            <span class="font-nums font-medium dark:text-[#E0E0E0] text-gray-900"
                                 >{formatTime(start)}</span
                             >
                         </div>
                         <div class="flex flex-col gap-0.5 text-right">
                             <span
-                                class="text-gray-400 text-xs font-bold uppercase tracking-wide"
+                                class="text-gray-400 dark:text-[#B7B6B3] text-xs font-bold uppercase tracking-wide"
                                 >{$t("systemNames.end")}</span
                             >
-                            <span class="font-nums font-medium text-gray-900"
+                            <span class="font-nums font-medium dark:text-[#E0E0E0] text-gray-900"
                                 >{end ? formatTime(end) : "∞"}</span
                             >
                         </div>
                     </div>
 
                     <div
-                        class="p-3 bg-gray-50 rounded-xl border border-gray-100 text-center"
+                        class="p-3 bg-gray-50 rounded-xl border dark:border-[#444444] dark:bg-[#343434] border-gray-100 text-center"
                     >
                         {#if !end}
                             <div class="text-gray-500 text-xs mb-0.5">
                                 {$t("systemNames.status")}
                             </div>
                             <div
-                                class="text-blue-600 font-bold font-nums text-lg leading-none"
+                                class="text-blue-600  font-bold font-nums text-lg leading-none"
                             >
                                 {$t("timer.ongoing_active", {
                                     n: timeData.days,
                                 })}
                             </div>
                         {:else if isActive}
-                            <div class="text-gray-500 text-xs mb-0.5">
+                            <div class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5">
                                 {$t("systemNames.timeRemaining")}
                             </div>
                             <div
@@ -426,17 +455,17 @@
                         href={banner.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="group flex items-center justify-between px-4 py-3 rounded-xl border border-gray-200 hover:border-[#E9CF49] hover:bg-[#fff9f5] transition-all duration-200"
+                        class="group flex items-center justify-between px-4 py-3 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200"
                     >
                         <div class="flex items-center gap-3">
                             <div
-                                class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 group-hover:text-[#D4BE48] transition-colors"
+                                class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
                             >
                                 <Icon name="sendToLink" class="w-4 h-4" />
                             </div>
                             <div class="flex flex-col">
                                 <span
-                                    class="font-bold text-sm text-gray-900 group-hover:text-[#E9CF49] transition-colors"
+                                    class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors"
                                     >{$t("page.openOfficialSource")}</span
                                 >
                                 <span class="text-xs text-gray-400"
@@ -444,10 +473,6 @@
                                 >
                             </div>
                         </div>
-                        <Icon
-                            name="arrow-right"
-                            class="w-4 h-4 text-gray-300 group-hover:text-[#D0926E] -translate-x-1 group-hover:translate-x-0 transition-all"
-                        />
                     </a>
                 {/if}
 
@@ -455,7 +480,7 @@
                     <div class="space-y-3">
                         <div class="flex items-center gap-2">
                             <span
-                                class="text-gray-400 text-[10px] font-bold uppercase tracking-widest"
+                                class="text-gray-400  text-[10px] font-bold uppercase tracking-widest"
                             >
                                 {#if isWeaponBanner}
                                     {$t("page.banner.featuredWeapons") ||
@@ -464,7 +489,7 @@
                                     {$t("systemNames.featuredCharacters")}
                                 {/if}
                             </span>
-                            <div class="h-px flex-1 bg-gray-100"></div>
+                            <div class="h-px flex-1 bg-gray-100 dark:bg-[#444444]"></div>
                         </div>
 
                         <div class="flex flex-wrap gap-2 justify-center">
@@ -497,7 +522,7 @@
                                         </div>
                                     {:else}
                                         <div
-                                            class="w-[90px] h-[90px] rounded-lg border border-gray-100 shadow-sm relative overflow-hidden group cursor-pointer"
+                                            class="w-[90px] h-[90px] rounded-lg border border-gray-100 dark:border-[#444444] shadow-sm relative overflow-hidden group cursor-pointer"
                                         >
                                             <div
                                                 class="scale-[0.6] w-[80px] origin-top-left"

@@ -92,7 +92,7 @@
 
     <aside class="
             fixed top-0 bottom-0 left-0
-            w-64 bg-white dark:bg-[#343434] dark:border-gray-800 h-full border-r border-gray-100 flex flex-col justify-between py-6 px-4
+            w-64 bg-white dark:bg-[#343434] dark:border-[#3F3F3F] h-full border-r border-gray-100 flex flex-col justify-between py-6 px-4
             z-[10000] transition-transform duration-300 ease-in-out shadow-2xl
             {isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
             md:translate-x-0 md:shadow-none md:z-30
@@ -160,6 +160,7 @@
 
         <div class="w-full mt-auto mb-4 flex flex-col items-center gap-6">
             <!--<ThemeSwitch />-->
+            <ThemeSwitch />
             <LanguageSelect />
         </div>
     </aside>

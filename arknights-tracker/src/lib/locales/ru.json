@@ -2,7 +2,7 @@
   "error_account_mismatch": "Ошибка: Несовпадение аккаунта! У вас уже есть история с {startDate} по {endDate}. Пожалуйста, убедитесь, что выбран правильный аккаунт.",
   "seo": {
     "title": "Goyfield - Трекер круток для Arknights Endfield",
-    "description": "Отслеживайте свои крутки в Arknights Endfield. Отслеживайте статистику, считайте гарант и анализируйте свою удачу.",
+    "description": "Отслеживайте свою историю круток в Arknights Endfield. Просматривайте статистику, считайте гарант и анализируйте свою удачу.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники"
   },
   "sidebar": {
@@ -146,7 +146,7 @@
     "tab_ios": "iOS (Бета)",
     "wip": "В разработке",
     "manual_text_pre": "Перейдите к файлу",
-    "manual_text_mid": ", промотайте в самый низ и найдите ссылку вида",
+    "manual_text_mid": " промотайте в самый низ и найдите ссылку вида",
     "manual_text_post": "и скопируйте ее.",
     "android_note": "Приложения вроде ByeByeDPI или активные VPN могут блокировать перехват логов. Если токен не находится, попробуйте переустановить эти приложения.",
     "android_s1": "Скачайте <a href='https://github.com/RikkaApps/Shizuku/releases' target='_blank' class='underline text-blue-600'>Shizuku</a> и <a href='https://github.com/F0x1d/LogFox/releases' target='_blank' class='underline text-blue-600'>LogFox</a> с GitHub.",
@@ -160,7 +160,7 @@
     "android_s6": "Там же в «Настройках» → «UI»: включите «Раскрывать логи». В пункте «Формат логов» выберети все чекбоксы.",
     "android_s7": "На главном экране LogFox нажмите кнопку Play (▶) для старта записи логов.",
     "android_s8": "Зайдите в игру. Откройте Историю круток или Новости (токен также появляется при надписи «Добро пожаловать...» на входе).",
-    "android_s9": "Вернитесь в LogFox, остановите запись. Нажмите лупу и ищите по слову: <span class='font-mono bg-gray-200 px-1 rounded'>\"token\"</span> (с кавычками).",
+    "android_s9": "Вернитесь в LogFox, остановите запись. Нажмите лупу и ищите по слову: <span class='font-mono dark:bg-[#343434] dark:border-[#444444] bg-gray-200 px-1 rounded'>\"token\"</span> (с кавычками).",
     "android_s10": "Найдите запись токена (обычно запись длинная). Скопируйте токен (он находится внутри кавычек и заканчивается на <b>=</b>).",
     "android_s11": "Вставьте полученный токен ниже",
     "ios_step1": "Загрузите приложение <a href='https://apps.apple.com/us/app/stream-network-debug-tool/id1312141691' target='_blank' class='underline text-blue-600'>Stream</a> из App Store.",
@@ -177,7 +177,15 @@
     "ios_step9": "Вернитесь в Stream и нажмите Stop Sniffing.",
     "ios_step10": "Зайдите в Sniff History. Найдите запрос начинающийся на <span class='bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-gray-600 border border-gray-200 select-all break-all whitespace-normal inline-block'>https://ef-webview.gryphline.com</span>",
     "ios_step11": "Откройте его, перейдите во вкладку Request, скопируйте ссылку (начинается с https).",
-    "ios_step12": "Вставьте полученную ссылку ниже"
+    "ios_step12": "Вставьте полученную ссылку ниже",
+    "error_empty": "Требуется ссылка или токен",
+    "error_token_name": "Введите имя для сохранения токена",
+    "error_https": "Разрешены только ссылки HTTPS",
+    "error_domain": "Неверная ссылка. Домен не поддерживается",
+    "error_format": "Неверный формат ссылки или токена",
+    "error_rate_limit": "Слишком много запросов. Пожалуйста, подождите минуту.",
+    "error_no_data": "История не найдена или ссылка устарела",
+    "error_unknown": "Неизвестная ошибка"
   },
   "characters": {
     "endministrator1": "Эндминистратор",

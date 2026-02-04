@@ -331,9 +331,8 @@
                     color="white"
                     onClick={handleAddAccount}
                 >
-                    <div class="flex items-center gap-2 px-2">
-                        <Icon name="plus" class="w-4 h-4" />
-                        <span>{$t("settings.account.add")}</span>
+                    <div class="flex items-center gap-1 px-2">
+                        +<span>{$t("settings.account.add")}</span>
                     </div>
                 </Button>
                 <Button
@@ -341,8 +340,8 @@
                     color="red"
                     onClick={openClearModal}
                 >
-                    <div class="flex items-center gap-2 px-2 text-red-500">
-                        <Icon name="trash" class="w-4 h-4" />
+                    <div class="flex items-center gap-1 px-2 text-red-500">
+                        <Icon name="trash" class="w-3 h-3" />
                         <span>{$t("settings.account.clear")}</span>
                     </div>
                 </Button>
@@ -352,7 +351,7 @@
                         color="red"
                         onClick={openDeleteModal}
                     >
-                        <div class="flex items-center gap-2 px-2 text-red-500">
+                        <div class="flex items-center gap-1 px-2 text-red-500">
                             <Icon name="close" class="w-4 h-4" />
                             <span>{$t("settings.account.delete")}</span>
                         </div>
@@ -431,14 +430,14 @@
                             {#if $user}
                                 {#if $syncStatus === "synced"}
                                     <div
-                                        class="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 dark:bg-[#434548] dark:border-[#444444] dark:text-blue-500 rounded-full text-[10px] font-bold border border-blue-200  uppercase tracking-wider"
+                                        class="flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 dark:bg-[#434548] dark:border-[#444444] dark:text-blue-500 rounded-full text-[10px] font-bold border border-blue-200 uppercase tracking-wider"
                                     >
-                                        <Icon name="check" class="w-3 h-3" />
+                                        <Icon name="check" class="w-4 h-4" />
                                         {$t("settings.cloud.synced")}
                                     </div>
                                 {:else}
                                     <div
-                                        class="flex items-center gap-2 px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-[10px] font-bold border border-orange-200  uppercase tracking-wider"
+                                        class="flex items-center gap-2 px-3 py-1 bg-orange-50 dark:text-orange-400 text-orange-700 dark:bg-[#803E18] dark:border-[#444444] rounded-full text-[10px] font-bold border border-orange-200  uppercase tracking-wider"
                                     >
                                         <Icon
                                             name="refresh"
@@ -536,7 +535,7 @@
                                 <button
                                     on:click={handleForceSync}
                                     disabled={$syncStatus === "checking"}
-                                    class="flex-1 flex items-center justify-center gap-2 py-2 bg-[#21272C] text-white rounded hover:bg-[#333] transition-all font-bold text-sm relative overflow-hidden group disabled:opacity-70 disabled:cursor-not-allowed"
+                                    class="flex-1 flex border dark:border-[#444444] items-center justify-center gap-2 py-2 dark:bg-[#2C2C2C] bg-[#21272C] text-white rounded hover:bg-[#333] transition-all font-bold text-sm relative overflow-hidden group disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
                                     {#if $syncStatus === "checking"}
                                         <Icon
@@ -554,7 +553,7 @@
 
                             <button
                                 on:click={logout}
-                                class="px-4 py-2 border dark:border-[#444444] border-red-200 dark:text-red-500 text-red-600 rounded hover:dark:bg-[#424242] hover:bg-red-50 font-bold text-sm transition-colors
+                                class="px-4 py-2 border dark:border-[#444444] border-red-200 dark:text-red-500 text-red-600 rounded hover:dark:bg-[#5F2121] hover:bg-red-50 font-bold text-sm transition-colors
         {$syncStatus === 'synced' ? 'w-full' : ''}"
                             >
                                 {$t("settings.cloud.logout")}

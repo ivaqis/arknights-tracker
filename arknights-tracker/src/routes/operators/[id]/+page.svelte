@@ -254,7 +254,7 @@
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
 
 <div
-    class="min-h-screen bg-[#F9F9F9] relative overflow-hidden flex flex-col p-8"
+    class="min-h-screen  relative overflow-hidden flex flex-col p-8"
 >
     <!-- === ФОНОВЫЙ SPLASH ART (По центру) === -->
     <div
@@ -440,7 +440,7 @@
         <div class="hidden lg:block pointer-events-none"></div>
 
         <!-- ПРАВАЯ КОЛОНКА -->
-        <div class="flex flex-col gap-1 relative z-10 w-full">
+        <div class="mt-3 flex flex-col gap-1 relative z-10 w-full">
             {#if activeTab === "about"}
                 <!-- Белый контейнер-карточка -->
                 <div

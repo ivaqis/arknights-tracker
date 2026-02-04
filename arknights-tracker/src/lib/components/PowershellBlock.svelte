@@ -11,11 +11,9 @@
     if (!script) return;
 
     try {
-      // Попытка 1: Современный API (работает на localhost и HTTPS)
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(script);
       } else {
-        // Попытка 2: Старый надежный метод (работает везде, даже на HTTP)
         const textArea = document.createElement("textarea");
         textArea.value = script;
         textArea.style.position = "absolute";
@@ -26,7 +24,6 @@
         document.body.removeChild(textArea);
       }
 
-      // Анимация успеха
       isCopied = true;
       if (timeoutId) clearTimeout(timeoutId);
       timeoutId = setTimeout(() => { isCopied = false; }, 2000);
@@ -37,7 +34,7 @@
   }
 </script>
 
-<div class="w-full font-sans shadow-sm rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 my-2">
+<div class="w-full font-sans shadow-sm rounded-lg overflow-hidden border border-gray-200 dark:border-[#444444] my-2">
   <div class="flex items-center justify-between bg-[#2d2d2d] px-4 py-2">
     <div class="flex items-center gap-2">
       <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

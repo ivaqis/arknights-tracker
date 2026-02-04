@@ -101,15 +101,16 @@
   <div
     class="xl:col-span-1 bg-white rounded-xl shadow-sm border dark:bg-[#383838] dark:border-[#444444] border-gray-100 p-4"
   >
-    <h3 class="font-bold text-gray-800 text-start mb-2 dark:text-[#FDFDFD]">
+    <h3 class="text-sm font-bold text-gray-800 text-start mb-2 dark:text-[#FDFDFD]">
       {$t("page.bannerTypes.pieGraph")}
     </h3>
+    
     <div
-      class="relative flex flex-col items-center justify-center group:pie outline-none py-1"
+      class="relative flex flex-col items-center justify-center w-full py-1"
     >
       {#if totalCount > 0}
         <div
-          class="w-40 h-40 rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out relative z-10 {isPieHovered
+          class="w-40 max-w-full aspect-square rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out relative z-10 {isPieHovered
             ? 'scale-105'
             : ''}"
           style="background: {pieGradient};"
@@ -214,7 +215,7 @@
     <div
       class="xl:col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col min-w-0 h-[450px] relative z-0"
     >
-      <h3 class="font-bold text-start text-gray-800 dark:text-[#FDFDFD] mb-2 px-2 flex-shrink-0">
+      <h3 class="font-bold text-sm text-start text-gray-800 dark:text-[#FDFDFD] mb-2 px-2 flex-shrink-0">
         {$t("page.bannerTypes.bannerHistoryGraph")}
       </h3>
 

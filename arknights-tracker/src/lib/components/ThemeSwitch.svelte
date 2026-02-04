@@ -8,7 +8,7 @@
 </script>
 
 <button 
-    class="relative w-[161px] h-[44px] bg-[#303030] rounded-full p-1 cursor-pointer select-none group tap-highlight-transparent border border-gray-600 shadow-inner transition-colors"
+    class="relative w-[161px] h-[44px] bg-[#303030] rounded-full p-1 cursor-pointer select-none group tap-highlight-transparent border border-gray-600  dark:border-[#444444] shadow-inner transition-colors"
     on:click={toggleTheme}
     aria-label="Переключить тему"
     type="button"

@@ -14,16 +14,13 @@
     import Icon from "$lib/components/Icons.svelte";
 
     let platformTab = "pc";
-
     let urlInput = "";
     let realImportUrl = "";
-
     let isLoading = false;
     let previewReport = null;
     let pendingData = null;
     let errorMsg = "";
     let isGlobalStatsEnabled = true;
-
     let activeTab = "new";
     let isSaveTokenEnabled = false;
     let tokenName = "";
@@ -97,6 +94,8 @@
 
     function handleInputProcessing(e) {
         const rawValue = e.target.value;
+
+        // 1. Сразу сбрасываем ошибки при вводе
         errorMsg = "";
         isInputError = false;
 
@@ -106,67 +105,88 @@
             return;
         }
 
+        // 2. Если это ссылка
         if (rawValue.trim().startsWith("http")) {
             urlInput = rawValue;
             realImportUrl = rawValue;
             return;
         }
 
+        // 3. Обработка JSON токена
         let cleanToken = rawValue.trim();
 
         if (cleanToken.includes("token")) {
             try {
+                // Пытаемся найти token внутри JSON
                 const jsonMatch = cleanToken.match(/"token"\s*:\s*"([^"]+)"/);
                 if (jsonMatch && jsonMatch[1]) {
                     cleanToken = jsonMatch[1];
                 } else {
-                    if (cleanToken.startsWith("'") || cleanToken.startsWith('"')) {
-                         cleanToken = cleanToken.slice(1, -1);
+                    // Очистка от кавычек по краям, если юзер скопировал "..."
+                    if (
+                        cleanToken.startsWith("'") ||
+                        cleanToken.startsWith('"')
+                    ) {
+                        cleanToken = cleanToken.slice(1, -1);
                     }
                     const obj = JSON.parse(cleanToken);
                     if (obj.token) cleanToken = obj.token;
                 }
             } catch (err) {
-                cleanToken = cleanToken.replace(/^{"token":"/, "").replace(/"}$/, "");
+                // Если JSON битый, пробуем просто обрезать края
+                cleanToken = cleanToken
+                    .replace(/^{"token":"/, "")
+                    .replace(/"}$/, "");
             }
         }
 
         if (!cleanToken) return;
 
+        // 4. Формируем ссылку для отправки
         const encodedToken = encodeURIComponent(cleanToken);
-        const baseUrl = "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
-        const tail = "&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=3";
-        
+        const baseUrl =
+            "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
+        const tail =
+            "&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=3";
+
         realImportUrl = baseUrl + encodedToken + tail;
+
+        // 5. Показываем юзеру чистый токен (или то, что он ввел)
         urlInput = cleanToken;
+        // ВАЖНО: Обновляем значение в поле, чтобы убрать лишний JSON мусор визуально
         e.target.value = cleanToken;
     }
-
     async function handleUrlImport() {
         errorMsg = "";
         isInputError = false;
 
         const urlToSend = realImportUrl || urlInput;
 
+        // 1. Проверка на пустоту
         if (!urlToSend || !urlToSend.trim()) {
             isInputError = true;
-            errorMsg = $t("import.emptyError") || "Link or Token is required";
+            errorMsg = $t("import.error_empty") || "Link or Token is required";
             return;
         }
 
+        // 2. Проверка имени токена (если сохраняем)
         if (isSaveTokenEnabled && !tokenName.trim()) {
             const alreadyExists = savedTokens.some((t) => t.url === urlToSend);
             if (!alreadyExists) {
                 isInputError = true;
-                errorMsg = "Token name is required for saving.";
+                errorMsg =
+                    $t("import.error_token_name") ||
+                    "Token name is required for saving.";
                 return;
             }
         }
 
+        // 3. Валидация URL/Домена
         try {
             const parsedUrl = new URL(urlToSend);
             if (parsedUrl.protocol !== "https:") {
-                errorMsg = "Only HTTPS links are allowed.";
+                errorMsg =
+                    $t("import.error_https") || "Only HTTPS links are allowed.";
                 return;
             }
             const isAllowed = ALLOWED_DOMAINS.some(
@@ -175,12 +195,14 @@
                     parsedUrl.hostname.endsWith("." + domain),
             );
             if (!isAllowed) {
-                errorMsg = "Invalid game link. Domain not supported.";
+                errorMsg =
+                    $t("import.error_domain") ||
+                    "Invalid game link. Domain not supported.";
                 return;
             }
         } catch (e) {
             isInputError = true;
-            errorMsg = "Invalid URL/Token format.";
+            errorMsg = $t("import.error_format") || "Invalid URL/Token format.";
             return;
         }
 
@@ -209,27 +231,42 @@
                 const report = await pullData.smartImport(cleanPulls, true);
                 previewReport = report;
             } else {
-                if (response.error || response.message || response.msg) {
+                // --- ОБРАБОТКА ОШИБОК ОТ СЕРВЕРА ---
+                const rawError =
+                    response.error ||
+                    response.message ||
+                    response.msg ||
+                    "Unknown error";
+
+                if (rawError.includes("Too many requests")) {
                     errorMsg =
-                        response.error || response.message || response.msg;
-                } else {
+                        $t("import.error_rate_limit") ||
+                        "Too many requests. Please wait a minute.";
+                } else if (rawError.includes("No pulls found")) {
                     errorMsg =
-                        $t("import.noData") ||
+                        $t("import.error_no_data") ||
                         "No pulls found or Link Expired.";
+                } else if (rawError.includes("Invalid domain")) {
+                    errorMsg = $t("import.error_domain") || "Invalid domain.";
+                } else {
+                    errorMsg = rawError;
                 }
             }
         } catch (err) {
             console.error("Import Error:", err);
-            if (
-                err.message &&
-                (err.message.includes("No pulls found") ||
-                    err.message.includes("generate UID"))
+
+            // Проверяем текст ошибки из catch (если сервер вернул 429 или 500 через throw)
+            const msg = err.message || "";
+
+            if (msg.includes("Too many requests") || msg.includes("429")) {
+                errorMsg = $t("import.error_rate_limit");
+            } else if (
+                msg.includes("No pulls found") ||
+                msg.includes("generate UID")
             ) {
-                errorMsg =
-                    $t("import.errHistoryEmpty") ||
-                    "No pulls found or Link Expired.";
+                errorMsg = $t("import.error_no_data");
             } else {
-                errorMsg = err.message || "Unknown Error";
+                errorMsg = msg || $t("import.error_unknown") || "Unknown Error";
             }
         } finally {
             isLoading = false;
@@ -287,14 +324,14 @@
         class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
     >
         <div
-            class="flex items-end gap-0 border-b border-gray-200 w-full mb-8 overflow-x-auto"
+            class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full mb-8 overflow-x-auto"
         >
             {#each [{ id: "pc", label: $t("import.tab_pc") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }] as tab}
                 <button
                     class="px-6 py-3 text-sm font-bold transition-all relative border-b-2 whitespace-nowrap
                     {platformTab === tab.id
-                        ? 'text-[#21272C] border-[#FFE145]'
-                        : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
+                        ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
+                        : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50 hover:dark:bg-[#424242] dark:text-[#B7B6B3]'}"
                     on:click={() => (platformTab = tab.id)}
                 >
                     {tab.label}
@@ -302,26 +339,24 @@
             {/each}
         </div>
 
-        {#if platformTab === "ios"}
-            <div class="ml-2 pt-2">
+        <div class="ml-2 pt-2">
+            {#if platformTab === "ios"}
                 {#each [{ text: $t("import.ios_step1") }, { text: $t("import.ios_step2") }, { text: $t("import.ios_step3"), subList: [$t("import.ios_step3_1"), $t("import.ios_step3_2"), $t("import.ios_step3_3")] }, { text: $t("import.ios_step4") }, { text: $t("import.ios_step5") }, { text: $t("import.ios_step6") }, { text: $t("import.ios_step7") }, { text: $t("import.ios_step8") }, { text: $t("import.ios_step9") }, { text: $t("import.ios_step10") }, { text: $t("import.ios_step11") }] as step, i}
                     <div
-                        class="relative border-l-2 border-gray-200 pb-10 pl-10 last:border-transparent last:pb-0"
+                        class="relative border-l-2 border-gray-200 dark:border-[#7A7A7A] pb-10 pl-10 last:border-transparent last:pb-0"
                     >
                         <div
                             class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
                         >
                             {i + 1}
                         </div>
-
                         <div
-                            class="text-lg text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
+                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl"
                         >
                             {@html step.text}
-
                             {#if step.subList}
                                 <ul
-                                    class="list-disc pl-5 mt-3 space-y-2 text-gray-600 text-base bg-gray-50 p-4 rounded-lg border border-gray-100"
+                                    class="list-disc pl-5 mt-3 space-y-2 text-gray-600 text-base dark:border-[#444444] dark:bg-[#343434] dark:text-[#E0E0E0] bg-gray-50 p-4 rounded-lg border border-gray-100"
                                 >
                                     {#each step.subList as subItem}
                                         <li>{@html subItem}</li>
@@ -338,307 +373,44 @@
                     >
                         12
                     </div>
-
-                    <p class="text-lg text-[#21272C] font-medium mb-4 pt-1">
+                    <p
+                        class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
+                    >
                         {$t("import.ios_step12")}
                     </p>
 
-                    <div class="mb-6">
-                        <div
-                            class="flex items-end gap-0 border-b border-gray-200 w-full max-w-4xl mb-6"
-                        >
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
-                                {activeTab === 'new'
-                                    ? 'text-[#21272C] border-[#FFE145]'
-                                    : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "new")}
-                            >
-                                {$t("import.tab_new")}
-                            </button>
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
-                                {activeTab === 'saved'
-                                    ? 'text-[#21272C] border-[#FFE145]'
-                                    : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "saved")}
-                            >
-                                {$t("import.tab_saved")}
-                                {#if savedTokens.length > 0}
-                                    <span
-                                        class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
-                                        >{savedTokens.length}</span
-                                    >
-                                {/if}
-                            </button>
-                        </div>
-
-                        {#if activeTab === "new"}
-                            <div class="max-w-4xl mb-2 relative group">
-                                <div class="relative">
-                                    <input
-                                        type="text"
-                                        value={urlInput}
-                                        on:input={handleInputProcessing}
-                                        placeholder={platformTab === "android"
-                                            ? $t("import.placeholder_token") ||
-                                              "Paste Token here"
-                                            : $t("import.placeholder_url") ||
-                                              "Paste Link here"}
-                                        class="w-full p-4 bg-gray-50 border-2 border-gray-100 focus:bg-white focus:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400 {isInputError
-                                            ? '!border-red-500 bg-red-50'
-                                            : ''}"
-                                    />
-                                    <div
-                                        class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                    >
-                                        {#if platformTab === "android" && urlInput.startsWith("Token_")}
-                                            <Icon
-                                                name="check"
-                                                style="width: 16px; height: 16px; color: green;"
-                                            />
-                                        {:else}
-                                            <Icon
-                                                name="link"
-                                                style="width: 16px; height: 16px;"
-                                            />
-                                        {/if}
-                                    </div>
-                                </div>
-                                {#if isInputError}<div
-                                        class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold bg-red-50 px-2 py-1 rounded"
-                                    >
-                                        {errorMsg}
-                                    </div>{/if}
-                            </div>
-                        {:else}
-                            <div class="max-w-4xl mb-2 min-h-[100px]">
-                                {#if savedTokens.length === 0}
-                                    <div
-                                        class="flex flex-col items-center justify-center py-6 border-2 border-dashed border-gray-200 rounded-lg text-gray-400"
-                                    >
-                                        <Icon
-                                            name="archive"
-                                            style="width: 32px; height: 32px; opacity: 0.5;"
-                                        /><span class="mt-2 text-sm font-medium"
-                                            >{$t(
-                                                "import.no_saved_tokens",
-                                            )}</span
-                                        >
-                                    </div>
-                                {:else}
-                                    <div class="grid gap-3">
-                                        {#each savedTokens as token, i}
-                                            <div
-                                                class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
-                                            >
-                                                <button
-                                                    type="button"
-                                                    class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
-                                                    on:click={() =>
-                                                        selectToken(token)}
-                                                    aria-label="Select {token.name}"
-                                                ></button>
-                                                <div
-                                                    class="pl-2 relative z-10 pointer-events-none"
-                                                >
-                                                    <div
-                                                        class="font-bold text-[#21272C] text-lg font-sdk"
-                                                    >
-                                                        {token.name}
-                                                    </div>
-                                                    <div
-                                                        class="text-xs text-gray-400 font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
-                                                    >
-                                                        {token.url}
-                                                    </div>
-                                                    <div
-                                                        class="text-[10px] text-gray-400 mt-2 font-medium"
-                                                    >
-                                                        {new Date(
-                                                            token.date,
-                                                        ).toLocaleDateString()}
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="flex items-center gap-4 z-20 relative pointer-events-none"
-                                                >
-                                                    <button
-                                                        type="button"
-                                                        class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
-                                                        on:click|stopPropagation={() =>
-                                                            deleteToken(i)}
-                                                        ><Icon
-                                                            name="close"
-                                                            style="width: 18px; height: 18px;"
-                                                        /></button
-                                                    >
-                                                </div>
-                                            </div>
-                                        {/each}
-                                    </div>
-                                {/if}
-                            </div>
-                        {/if}
-
-                        <div
-                            class="flex flex-col gap-4 mt-2 max-w-4xl items-start"
-                        >
-                            {#if activeTab === "new"}
-                                <div
-                                    class="flex flex-col gap-2 transition-all w-full"
-                                >
-                                    <label
-                                        class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-                                    >
-                                        <div
-                                            class="relative flex items-center mt-0.5"
-                                        >
-                                            <input
-                                                type="checkbox"
-                                                bind:checked={
-                                                    isSaveTokenEnabled
-                                                }
-                                                class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                            />
-                                            <svg
-                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="4"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            >
-                                                <polyline
-                                                    points="20 6 9 17 4 12"
-                                                ></polyline>
-                                            </svg>
-                                        </div>
-
-                                        <div>
-                                            <span
-                                                class="text-gray-700 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                            >
-                                                {$t(
-                                                    platformTab === "android"
-                                                        ? "import.save_label_token"
-                                                        : "import.save_label_url",
-                                                )}
-                                            </span>
-
-                                            {#if isSaveTokenEnabled}
-                                                <div
-                                                    class="text-gray-400 text-xs mt-0.5 max-w-md"
-                                                >
-                                                    {$t(
-                                                        platformTab ===
-                                                            "android"
-                                                            ? "import.save_desc_token"
-                                                            : "import.save_desc_url",
-                                                    )}
-                                                </div>
-                                            {/if}
-                                        </div>
-                                    </label>
-                                    {#if isSaveTokenEnabled}<div
-                                            class="pl-8 mb-2"
-                                        >
-                                            <input
-                                                type="text"
-                                                bind:value={tokenName}
-                                                placeholder={$t(
-                                                    "import.token_name_placeholder",
-                                                )}
-                                                class="w-full md:w-2/3 p-2.5 bg-gray-50 border border-gray-200 focus:bg-white focus:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all"
-                                            />
-                                        </div>{/if}
-                                </div>
-                            {/if}
-                            <label
-                                class="flex items-center gap-3 select-none group cursor-pointer w-fit"
-                            >
-                                <div class="relative flex items-center">
-                                    <input
-                                        type="checkbox"
-                                        bind:checked={isGlobalStatsEnabled}
-                                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                    /><svg
-                                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
-                                </div>
-                                <span
-                                    class="text-gray-600 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                    >{$t("import.enableGlobalStats")}</span
-                                >
-                            </label>
-                            <div class="w-fit mt-4">
-                                <Button
-                                    variant="yellow"
-                                    onClick={handleUrlImport}
-                                    disabled={isLoading}
-                                >
-                                    <div slot="icon">
-                                        {#if isLoading}<div
-                                                class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
-                                            ></div>{:else}<Icon
-                                                name="import"
-                                                style="width: 30px; height: 30px;"
-                                            />{/if}
-                                    </div>
-                                    <span
-                                        >{isLoading
-                                            ? "..."
-                                            : $t("page.importBtn")}</span
-                                    >
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="mb-6"></div>
                 </div>
-            </div>
-        {:else if platformTab === "android"}
-            <div class="ml-2 pt-2">
+            {:else if platformTab === "android"}
                 <div
-                    class="mb-8 p-4 bg-amber-50 border border-amber-200 rounded-lg flex items-start gap-3"
+                    class="mb-8 p-4 bg-amber-50 dark:bg-amber-900/40 border border-amber-200 dark:border-amber-900 rounded-lg flex items-start gap-3"
                 >
-                    <div class="text-amber-500 mt-0.5">
-                        <Icon
-                            name="alert-circle"
-                            style="width: 20px; height: 20px;"
-                        />
+                    <div class="text-amber-900 dark:text-amber-500 mt-0.5">
+                        <Icon name="info" style="width: 20px; height: 20px;" />
                     </div>
-                    <div class="text-sm text-amber-900 leading-relaxed">
+                    <div
+                        class="text-sm text-amber-900 dark:text-amber-500 leading-relaxed"
+                    >
                         {@html $t("import.android_note")}
                     </div>
                 </div>
 
                 {#each [{ text: $t("import.android_s1") }, { text: $t("import.android_s2") }, { text: $t("import.android_s3"), subList: [$t("import.android_s3_sub1"), $t("import.android_s3_sub2"), $t("import.android_s3_sub3")] }, { text: $t("import.android_s4") }, { text: $t("import.android_s5") }, { text: $t("import.android_s6") }, { text: $t("import.android_s7") }, { text: $t("import.android_s8") }, { text: $t("import.android_s9") }, { text: $t("import.android_s10") }] as step, i}
                     <div
-                        class="relative border-l-2 border-gray-200 pb-10 pl-10 last:border-transparent"
+                        class="relative dark:border-[#7A7A7A] border-l-2 border-gray-200 pb-10 pl-10 last:border-transparent"
                     >
                         <div
                             class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
                         >
                             {i + 1}
                         </div>
-
                         <div
-                            class="text-lg text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
+                            class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl"
                         >
                             {@html step.text}
-
                             {#if step.subList}
                                 <ul
-                                    class="list-disc pl-5 mt-3 space-y-2 text-gray-600 text-sm bg-gray-50 p-4 rounded-lg border border-gray-100"
+                                    class="list-disc pl-5 mt-3 space-y-2 dark:text-[#E0E0E0] text-gray-600 text-sm bg-gray-50 dark:bg-[#343434] dark:border-[#444444] p-4 rounded-lg border border-gray-100"
                                 >
                                     {#each step.subList as subItem}
                                         <li>{@html subItem}</li>
@@ -655,287 +427,31 @@
                     >
                         11
                     </div>
-
-                    <p class="text-lg text-[#21272C] font-medium mb-4 pt-1">
+                    <p
+                        class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
+                    >
                         {$t("import.android_s11")}
                     </p>
-
-                    <div class="mb-6">
-                        <div
-                            class="flex items-end gap-0 border-b border-gray-200 w-full max-w-4xl mb-6"
-                        >
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
-                                {activeTab === 'new'
-                                    ? 'text-[#21272C] border-[#FFE145]'
-                                    : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "new")}
-                            >
-                                {$t("import.tab_new")}
-                            </button>
-                            <button
-                                class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
-                                {activeTab === 'saved'
-                                    ? 'text-[#21272C] border-[#FFE145]'
-                                    : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                                on:click={() => (activeTab = "saved")}
-                            >
-                                {$t("import.tab_saved")}
-                                {#if savedTokens.length > 0}
-                                    <span
-                                        class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
-                                        >{savedTokens.length}</span
-                                    >
-                                {/if}
-                            </button>
-                        </div>
-
-                        {#if activeTab === "new"}
-                            <div class="max-w-4xl mb-2 relative group">
-                                <div class="relative">
-                                    <input
-                                        type="text"
-                                        value={urlInput}
-                                        on:input={handleInputProcessing}
-                                        placeholder={platformTab === "android"
-                                            ? $t("import.placeholder_token") ||
-                                              "Paste Token here"
-                                            : $t("import.placeholder_url") ||
-                                              "Paste Link here"}
-                                        class="w-full p-4 bg-gray-50 border-2 border-gray-100 focus:bg-white focus:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400 {isInputError
-                                            ? '!border-red-500 bg-red-50'
-                                            : ''}"
-                                    />
-                                    <div
-                                        class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                    >
-                                        {#if platformTab === "android" && urlInput.startsWith("Token_")}
-                                            <Icon
-                                                name="check"
-                                                style="width: 16px; height: 16px; color: green;"
-                                            />
-                                        {:else}
-                                            <Icon
-                                                name="link"
-                                                style="width: 16px; height: 16px;"
-                                            />
-                                        {/if}
-                                    </div>
-                                </div>
-                                {#if isInputError}<div
-                                        class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold bg-red-50 px-2 py-1 rounded"
-                                    >
-                                        {errorMsg}
-                                    </div>{/if}
-                            </div>
-                        {:else}
-                            <div class="max-w-4xl mb-2 min-h-[100px]">
-                                {#if savedTokens.length === 0}
-                                    <div
-                                        class="flex flex-col items-center justify-center py-6 border-2 border-dashed border-gray-200 rounded-lg text-gray-400"
-                                    >
-                                        <Icon
-                                            name="archive"
-                                            style="width: 32px; height: 32px; opacity: 0.5;"
-                                        /><span class="mt-2 text-sm font-medium"
-                                            >{$t(
-                                                "import.no_saved_tokens",
-                                            )}</span
-                                        >
-                                    </div>
-                                {:else}
-                                    <div class="grid gap-3">
-                                        {#each savedTokens as token, i}
-                                            <div
-                                                class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
-                                            >
-                                                <button
-                                                    type="button"
-                                                    class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
-                                                    on:click={() =>
-                                                        selectToken(token)}
-                                                    aria-label="Select {token.name}"
-                                                ></button>
-                                                <div
-                                                    class="pl-2 relative z-10 pointer-events-none"
-                                                >
-                                                    <div
-                                                        class="font-bold text-[#21272C] text-lg font-sdk"
-                                                    >
-                                                        {token.name}
-                                                    </div>
-                                                    <div
-                                                        class="text-xs text-gray-400 font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
-                                                    >
-                                                        {token.url}
-                                                    </div>
-                                                    <div
-                                                        class="text-[10px] text-gray-400 mt-2 font-medium"
-                                                    >
-                                                        {new Date(
-                                                            token.date,
-                                                        ).toLocaleDateString()}
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="flex items-center gap-4 z-20 relative pointer-events-none"
-                                                >
-                                                    <button
-                                                        type="button"
-                                                        class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
-                                                        on:click|stopPropagation={() =>
-                                                            deleteToken(i)}
-                                                        ><Icon
-                                                            name="close"
-                                                            style="width: 18px; height: 18px;"
-                                                        /></button
-                                                    >
-                                                </div>
-                                            </div>
-                                        {/each}
-                                    </div>
-                                {/if}
-                            </div>
-                        {/if}
-
-                        <div
-                            class="flex flex-col gap-4 mt-2 max-w-4xl items-start"
-                        >
-                            {#if activeTab === "new"}
-                                <div
-                                    class="flex flex-col gap-2 transition-all w-full"
-                                >
-                                    <label
-                                        class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-                                    >
-                                        <div
-                                            class="relative flex items-center mt-0.5"
-                                        >
-                                            <input
-                                                type="checkbox"
-                                                bind:checked={
-                                                    isSaveTokenEnabled
-                                                }
-                                                class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                            />
-                                            <svg
-                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                stroke-width="4"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                            >
-                                                <polyline
-                                                    points="20 6 9 17 4 12"
-                                                ></polyline>
-                                            </svg>
-                                        </div>
-
-                                        <div>
-                                            <span
-                                                class="text-gray-700 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                            >
-                                                {$t(
-                                                    platformTab === "android"
-                                                        ? "import.save_label_token"
-                                                        : "import.save_label_url",
-                                                )}
-                                            </span>
-
-                                            {#if isSaveTokenEnabled}
-                                                <div
-                                                    class="text-gray-400 text-xs mt-0.5 max-w-md"
-                                                >
-                                                    {$t(
-                                                        platformTab ===
-                                                            "android"
-                                                            ? "import.save_desc_token"
-                                                            : "import.save_desc_url",
-                                                    )}
-                                                </div>
-                                            {/if}
-                                        </div>
-                                    </label>
-                                    {#if isSaveTokenEnabled}<div
-                                            class="pl-8 mb-2"
-                                        >
-                                            <input
-                                                type="text"
-                                                bind:value={tokenName}
-                                                placeholder={$t(
-                                                    "import.token_name_placeholder",
-                                                )}
-                                                class="w-full md:w-2/3 p-2.5 bg-gray-50 border border-gray-200 focus:bg-white focus:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all"
-                                            />
-                                        </div>{/if}
-                                </div>
-                            {/if}
-                            <label
-                                class="flex items-center gap-3 select-none group cursor-pointer w-fit"
-                            >
-                                <div class="relative flex items-center">
-                                    <input
-                                        type="checkbox"
-                                        bind:checked={isGlobalStatsEnabled}
-                                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                    /><svg
-                                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="4"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
-                                </div>
-                                <span
-                                    class="text-gray-600 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                    >{$t("import.enableGlobalStats")}</span
-                                >
-                            </label>
-                            <div class="w-fit mt-4">
-                                <Button
-                                    variant="yellow"
-                                    onClick={handleUrlImport}
-                                    disabled={isLoading}
-                                >
-                                    <div slot="icon">
-                                        {#if isLoading}<div
-                                                class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
-                                            ></div>{:else}<Icon
-                                                name="import"
-                                                style="width: 30px; height: 30px;"
-                                            />{/if}
-                                    </div>
-                                    <span
-                                        >{isLoading
-                                            ? "..."
-                                            : $t("page.importBtn")}</span
-                                    >
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        {:else}
-            <div class="ml-2">
-                <div class="relative border-l-2 border-gray-200 pb-10 pl-10">
+            {:else}
+                <div
+                    class="relative border-l-2 dark:border-[#7A7A7A] border-gray-200 pb-10 pl-10"
+                >
                     <div
                         class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
                     >
                         1
                     </div>
-                    <p class="text-lg text-[#21272C] font-medium pt-1">
+                    <p
+                        class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium pt-1"
+                    >
                         {$t("import.step1")}
                     </p>
                 </div>
 
-                <div class="relative border-l-2 border-gray-200 pb-8 pl-10">
+                <div
+                    class="relative border-l-2 dark:border-[#7A7A7A] border-gray-200 pb-8 pl-10"
+                >
                     <div
                         class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
                     >
@@ -944,7 +460,7 @@
 
                     {#if platformTab === "pc"}
                         <div
-                            class="text-lg text-[#21272C] mb-4 pt-1 font-medium leading-relaxed"
+                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] mb-4 pt-1 font-medium leading-relaxed"
                         >
                             {$t("import.step2_pre")}
                             <span class="inline-block">
@@ -953,7 +469,7 @@
                                     class="justify-center"
                                 >
                                     <span
-                                        class="font-bold text-black border-b-2 border-[#FFE145] hover:bg-[#FFE145] transition-colors px-1"
+                                        class="font-bold text-black dark:text-[#E0E0E0] border-b-2 border-[#FFE145] hover:bg-[#FFE145] hover:dark:text-[#373737] transition-colors px-1"
                                     >
                                         {$t("import.step2_ps")}
                                     </span>
@@ -969,15 +485,15 @@
                                 href="https://github.com/ivaqis/arknights-pull-url"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-black transition-colors group"
+                                class="inline-flex items-center gap-1.5 text-sm text-gray-400 dark:text-[#B7B6B3] hover:text-black hover:dark:text-[#E4E4E4] transition-colors group"
                             >
                                 <span
-                                    class="underline decoration-gray-300 group-hover:decoration-black transition-all"
+                                    class="underline decoration-gray-300 dark:decoration-[#B7B6B3] group-hover:decoration-black group-hover:dark:decoration-[#E4E4E4] group-hover:dark:text-[#E4E4E4] transition-all"
                                 >
                                     {$t("import.script_details")}
                                 </span>
                                 <div
-                                    class="text-gray-400 group-hover:text-black transition-colors"
+                                    class="text-gray-400 dark:text-[#B7B6B3] group-hover:text-black group-hover:dark:dark:text-[#E4E4E4] transition-colors"
                                 >
                                     <Icon
                                         name="sendToLink"
@@ -988,7 +504,7 @@
                         </div>
                     {:else if platformTab === "pc2"}
                         <div
-                            class="text-lg text-[#21272C] mb-4 pt-1 font-medium leading-relaxed"
+                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] mb-4 pt-1 font-medium leading-relaxed"
                         >
                             {$t("import.step2_pre")}
                             <span class="inline-block">
@@ -997,7 +513,7 @@
                                     class="justify-center"
                                 >
                                     <span
-                                        class="font-bold text-black border-b-2 border-[#FFE145] hover:bg-[#FFE145] transition-colors px-1"
+                                        class="font-bold text-black dark:text-[#E0E0E0] border-b-2 border-[#FFE145] hover:bg-[#FFE145] hover:dark:text-[#373737] transition-colors px-1"
                                     >
                                         {$t("import.step2_ps")}
                                     </span>
@@ -1010,16 +526,16 @@
                         </div>
                     {:else if platformTab === "pc-manual"}
                         <div
-                            class="text-lg text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
+                            class="text-lg dark:text-[#E0E0E0] text-[#21272C] pt-1 font-medium leading-relaxed max-w-4xl"
                         >
                             {$t("import.manual_text_pre")}
                             <span
-                                class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-gray-600 border border-gray-200 select-all break-all whitespace-normal inline-block my-1"
+                                class="bg-gray-100 px-1.5 py-0.5 rounded dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] text-sm font-mono text-gray-600 border border-gray-200 select-all break-all whitespace-normal inline-block my-1"
                                 >%userprofile%\AppData\LocalLow\Gryphline\Endfield\sdklogs\HGWebview.log</span
                             >
                             {$t("import.manual_text_mid")}
                             <span
-                                class="text-gray-500 italic break-all whitespace-normal block my-2 bg-gray-50 p-2 rounded border border-gray-100 text-sm"
+                                class="text-gray-500 italic break-all dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] whitespace-normal block my-2 bg-gray-50 p-2 rounded border border-gray-100 text-sm"
                                 >"https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=&lt;TOKEN&gt;&platform=Windows..."</span
                             >
                             {$t("import.manual_text_post")}
@@ -1033,321 +549,357 @@
                     >
                         3
                     </div>
-                    <p class="text-lg text-[#21272C] font-medium mb-4 pt-1">
+                    <p
+                        class="text-lg text-[#21272C] dark:text-[#E0E0E0] font-medium mb-4 pt-1"
+                    >
                         {$t("import.step3")}
                     </p>
+                </div>
+            {/if}
 
-                    <div
-                        class="flex items-end gap-0 border-b border-gray-200 w-full max-w-4xl mb-6"
+            <div class="mb-6 {platformTab === 'ios' ? '' : 'pl-10'}">
+                <div
+                    class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-6"
+                >
+                    <button
+                        class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
+                        {activeTab === 'new'
+                            ? 'text-[#21272C] dark:text-[#FDFDFD] border-[#FFE145]'
+                            : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                        on:click={() => (activeTab = "new")}
                     >
-                        <button
-                            class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
-                            {activeTab === 'new'
-                                ? 'text-[#21272C] border-[#FFE145]'
-                                : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                            on:click={() => (activeTab = "new")}
-                        >
-                            {$t("import.tab_new")}
-                        </button>
-                        <button
-                            class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
-                            {activeTab === 'saved'
-                                ? 'text-[#21272C] border-[#FFE145]'
-                                : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50'}"
-                            on:click={() => (activeTab = "saved")}
-                        >
-                            {$t("import.tab_saved")}
-                            {#if savedTokens.length > 0}
-                                <span
-                                    class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
-                                    >{savedTokens.length}</span
-                                >
-                            {/if}
-                        </button>
-                    </div>
+                        {$t("import.tab_new")}
+                    </button>
+                    <button
+                        class="px-6 py-3 text-sm font-bold transition-all relative flex items-center gap-2 border-b-2
+                        {activeTab === 'saved'
+                            ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
+                            : 'text-gray-400 hover:text-gray-600 hover:dark:bg-[#424242] dark:text-[#B7B6B3] border-transparent hover:bg-gray-50'}"
+                        on:click={() => (activeTab = "saved")}
+                    >
+                        {$t("import.tab_saved")}
+                        {#if savedTokens.length > 0}
+                            <span
+                                class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded-full leading-none"
+                                >{savedTokens.length}</span
+                            >
+                        {/if}
+                    </button>
+                </div>
 
-                    {#if activeTab === "new"}
-                        <div class="max-w-4xl mb-2 relative group">
-                            <div class="relative">
-                                <input
-                                    type="text"
-                                    value={urlInput}
-                                    on:input={handleInputProcessing}
-                                    placeholder={platformTab === "android"
-                                        ? $t("import.placeholder_token") ||
-                                          "Paste Token here"
-                                        : $t("import.placeholder_url") ||
-                                          "Paste Link here"}
-                                    class="w-full p-4 bg-gray-50 border-2 border-gray-100 focus:bg-white focus:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400 {isInputError
-                                        ? '!border-red-500 bg-red-50'
-                                        : ''}"
-                                />
-                                <div
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                >
-                                    {#if platformTab === "android" && urlInput.startsWith("Token_")}
-                                        <Icon
-                                            name="check"
-                                            style="width: 16px; height: 16px; color: green;"
-                                        />
-                                    {:else}
-                                        <Icon
-                                            name="link"
-                                            style="width: 16px; height: 16px;"
-                                        />
-                                    {/if}
-                                </div>
-                            </div>
-                            {#if isInputError}<div
-                                    class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold bg-red-50 px-2 py-1 rounded"
-                                >
-                                    {errorMsg}
-                                </div>{/if}
-                        </div>
-                    {:else}
-                        <div class="max-w-4xl mb-2 min-h-[100px]">
-                            {#if savedTokens.length === 0}
-                                <div
-                                    class="flex flex-col items-center justify-center py-6 border-2 border-dashed border-gray-200 rounded-lg text-gray-400"
-                                >
+                {#if activeTab === "new"}
+                    <div class="max-w-4xl mb-6 relative group">
+                        <div class="relative">
+                            <input
+                                type="text"
+                                value={urlInput}
+                                on:input={handleInputProcessing}
+                                placeholder={platformTab === "android"
+                                    ? $t("import.placeholder_token") ||
+                                      "Paste Token here"
+                                    : $t("import.placeholder_url") ||
+                                      "Paste Link here"}
+                                class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
+                {isInputError &&
+                                errorMsg !== $t('import.error_token_name') &&
+                                errorMsg !==
+                                    'Token name is required for saving.'
+                                    ? '!border-red-500 bg-red-50'
+                                    : ''}"
+                            />
+
+                            <div
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
+                            >
+                                {#if platformTab === "android" && urlInput.startsWith("Token_")}
                                     <Icon
-                                        name="archive"
-                                        style="width: 32px; height: 32px; opacity: 0.5;"
-                                    /><span class="mt-2 text-sm font-medium"
-                                        >{$t("import.no_saved_tokens")}</span
+                                        name="check"
+                                        style="width: 16px; height: 16px; color: green;"
+                                    />
+                                {:else}
+                                    <Icon
+                                        name="link"
+                                        style="width: 16px; height: 16px;"
+                                    />
+                                {/if}
+                            </div>
+                        </div>
+
+                        {#if isInputError && errorMsg !== $t("import.error_token_name") && errorMsg !== "Token name is required for saving."}
+                            <div
+                                class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
+                            >
+                                {errorMsg}
+                            </div>
+                        {/if}
+                    </div>
+                {:else}
+                    <div class="max-w-4xl mb-2 min-h-[100px]">
+                        {#if savedTokens.length === 0}
+                            <div
+                                class="flex flex-col items-center justify-center py-6 border-2 dark:border-[#444444] dark:text-[#B7B6B3] border-dashed border-gray-200 rounded-lg text-gray-400"
+                            >
+                                <Icon
+                                    name="archive"
+                                    style="width: 32px; height: 32px; opacity: 0.5;"
+                                />
+                                <span class="mt-2 text-sm font-medium"
+                                    >{$t("import.no_saved_tokens")}</span
+                                >
+                            </div>
+                        {:else}
+                            <div class="grid gap-3">
+                                {#each savedTokens as token, i}
+                                    <div
+                                        class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 dark:bg-[#343434] dark:border-[#444444] hover:border-[#FFE145] hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
                                     >
-                                </div>
-                            {:else}
-                                <div class="grid gap-3">
-                                    {#each savedTokens as token, i}
+                                        <button
+                                            type="button"
+                                            class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
+                                            on:click={() => selectToken(token)}
+                                            aria-label="Select {token.name}"
+                                        ></button>
                                         <div
-                                            class="group relative flex items-center justify-between p-4 bg-white border border-gray-200 hover:border-[#FFE145] hover:shadow-sm transition-all text-left rounded-md overflow-hidden"
+                                            class="pl-2 relative z-10 pointer-events-none"
+                                        >
+                                            <div
+                                                class="font-bold text-[#21272C] dark:text-[#E0E0E0] text-lg font-sdk"
+                                            >
+                                                {token.name}
+                                            </div>
+                                            <div
+                                                class="text-xs text-gray-400 dark:text-[#B7B6B3] font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
+                                            >
+                                                {token.url}
+                                            </div>
+                                            <div
+                                                class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium"
+                                            >
+                                                {new Date(
+                                                    token.date,
+                                                ).toLocaleDateString()}
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center gap-4 z-20 relative pointer-events-none"
                                         >
                                             <button
                                                 type="button"
-                                                class="absolute inset-0 w-full h-full z-0 cursor-pointer focus:outline-none"
-                                                on:click={() =>
-                                                    selectToken(token)}
-                                                aria-label="Select {token.name}"
-                                            ></button>
-                                            <div
-                                                class="pl-2 relative z-10 pointer-events-none"
+                                                class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
+                                                on:click|stopPropagation={() =>
+                                                    deleteToken(i)}
                                             >
-                                                <div
-                                                    class="font-bold text-[#21272C] text-lg font-sdk"
-                                                >
-                                                    {token.name}
-                                                </div>
-                                                <div
-                                                    class="text-xs text-gray-400 font-mono mt-1 truncate max-w-[250px] md:max-w-[400px]"
-                                                >
-                                                    {token.url}
-                                                </div>
-                                                <div
-                                                    class="text-[10px] text-gray-400 mt-2 font-medium"
-                                                >
-                                                    {new Date(
-                                                        token.date,
-                                                    ).toLocaleDateString()}
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="flex items-center gap-4 z-20 relative pointer-events-none"
-                                            >
-                                                <button
-                                                    type="button"
-                                                    class="w-8 h-8 flex items-center justify-center text-gray-300 hover:text-white hover:bg-red-500 rounded transition-colors pointer-events-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-500"
-                                                    on:click|stopPropagation={() =>
-                                                        deleteToken(i)}
-                                                    ><Icon
-                                                        name="close"
-                                                        style="width: 18px; height: 18px;"
-                                                    /></button
-                                                >
-                                            </div>
+                                                <Icon
+                                                    name="close"
+                                                    style="width: 18px; height: 18px;"
+                                                />
+                                            </button>
                                         </div>
-                                    {/each}
+                                    </div>
+                                {/each}
+                            </div>
+                        {/if}
+                    </div>
+                {/if}
+
+                <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
+                    {#if activeTab === "new"}
+                        <div class="flex flex-col gap-2 transition-all w-full">
+                            <label
+                                class="flex items-start gap-3 select-none group cursor-pointer w-fit"
+                            >
+                                <div class="relative flex items-center mt-0.5">
+                                    <input
+                                        type="checkbox"
+                                        bind:checked={isSaveTokenEnabled}
+                                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
+                                    />
+                                    <svg
+                                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="4"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    >
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span
+                                        class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
+                                    >
+                                        {$t(
+                                            platformTab === "android"
+                                                ? "import.save_label_token"
+                                                : "import.save_label_url",
+                                        )}
+                                    </span>
+                                    {#if isSaveTokenEnabled}
+                                        <div
+                                            class="text-gray-400 text-xs mt-0.5 max-w-md"
+                                        >
+                                            {$t(
+                                                platformTab === "android"
+                                                    ? "import.save_desc_token"
+                                                    : "import.save_desc_url",
+                                            )}
+                                        </div>
+                                    {/if}
+                                </div>
+                            </label>
+                            {#if isSaveTokenEnabled}
+                                <div class="pl-8 mb-6 relative">
+                                    <input
+                                        type="text"
+                                        bind:value={tokenName}
+                                        placeholder={$t(
+                                            "import.token_name_placeholder",
+                                        )}
+                                        class="w-full md:w-2/3 p-2.5 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all
+                    {isInputError &&
+                                        (errorMsg ===
+                                            $t('import.error_token_name') ||
+                                            errorMsg ===
+                                                'Token name is required for saving.')
+                                            ? '!border-red-500 bg-red-50'
+                                            : ''}"
+                                    />
+
+                                    {#if isInputError && (errorMsg === $t("import.error_token_name") || errorMsg === "Token name is required for saving.")}
+                                        <div
+                                            class="absolute -bottom-5 left-8 text-red-600 text-xs font-bold px-1 rounded animate-in fade-in slide-in-from-top-1"
+                                        >
+                                            {errorMsg}
+                                        </div>
+                                    {/if}
                                 </div>
                             {/if}
                         </div>
                     {/if}
 
-                    <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new"}
-                            <div
-                                class="flex flex-col gap-2 transition-all w-full"
+                    <label
+                        class="flex items-center gap-3 select-none group cursor-pointer w-fit"
+                    >
+                        <div class="relative flex items-center">
+                            <input
+                                type="checkbox"
+                                bind:checked={isGlobalStatsEnabled}
+                                class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
+                            />
+                            <svg
+                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
                             >
-                                <label
-                                    class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-                                >
-                                    <div
-                                        class="relative flex items-center mt-0.5"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            bind:checked={isSaveTokenEnabled}
-                                            class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                        />
-                                        <svg
-                                            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="4"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <polyline points="20 6 9 17 4 12"
-                                            ></polyline>
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <span
-                                            class="text-gray-700 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                        >
-                                            {$t(
-                                                platformTab === "android"
-                                                    ? "import.save_label_token"
-                                                    : "import.save_label_url",
-                                            )}
-                                        </span>
-
-                                        {#if isSaveTokenEnabled}
-                                            <div
-                                                class="text-gray-400 text-xs mt-0.5 max-w-md"
-                                            >
-                                                {$t(
-                                                    platformTab === "android"
-                                                        ? "import.save_desc_token"
-                                                        : "import.save_desc_url",
-                                                )}
-                                            </div>
-                                        {/if}
-                                    </div>
-                                </label>
-                                {#if isSaveTokenEnabled}<div class="pl-8 mb-2">
-                                        <input
-                                            type="text"
-                                            bind:value={tokenName}
-                                            placeholder={$t(
-                                                "import.token_name_placeholder",
-                                            )}
-                                            class="w-full md:w-2/3 p-2.5 bg-gray-50 border border-gray-200 focus:bg-white focus:border-[#FFE145] rounded-md text-sm outline-none text-[#21272C] transition-all"
-                                        />
-                                    </div>{/if}
-                            </div>
-                        {/if}
-                        <label
-                            class="flex items-center gap-3 select-none group cursor-pointer w-fit"
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <span
+                            class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
                         >
-                            <div class="relative flex items-center">
-                                <input
-                                    type="checkbox"
-                                    bind:checked={isGlobalStatsEnabled}
-                                    class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                /><svg
-                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    ><polyline points="20 6 9 17 4 12"
-                                    ></polyline></svg
-                                >
+                            {$t("import.enableGlobalStats")}
+                        </span>
+                    </label>
+
+                    <div class="w-fit mt-4">
+                        <Button
+                            variant="yellow"
+                            onClick={handleUrlImport}
+                            disabled={isLoading}
+                        >
+                            <div slot="icon">
+                                {#if isLoading}
+                                    <div
+                                        class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
+                                    ></div>
+                                {:else}
+                                    <Icon
+                                        name="import"
+                                        style="width: 30px; height: 30px;"
+                                    />
+                                {/if}
                             </div>
                             <span
-                                class="text-gray-600 group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
-                                >{$t("import.enableGlobalStats")}</span
+                                >{isLoading
+                                    ? "..."
+                                    : $t("page.importBtn")}</span
                             >
-                        </label>
-                        <div class="w-fit mt-4">
-                            <Button
-                                variant="yellow"
-                                onClick={handleUrlImport}
-                                disabled={isLoading}
-                            >
-                                <div slot="icon">
-                                    {#if isLoading}<div
-                                            class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
-                                        ></div>{:else}<Icon
-                                            name="import"
-                                            style="width: 30px; height: 30px;"
-                                        />{/if}
-                                </div>
-                                <span
-                                    >{isLoading
-                                        ? "..."
-                                        : $t("page.importBtn")}</span
-                                >
-                            </Button>
-                        </div>
+                        </Button>
                     </div>
                 </div>
             </div>
-        {/if}
-        {#if errorMsg && !isInputError}
-            <div
-                class="mt-5 p-4 bg-red-50 text-red-600 rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
-            >
-                <Icon name="close" style="width: 20px; height: 20px;" />
-                {errorMsg}
-            </div>
-        {/if}
-        {#if previewReport}
-            <div
-                class="mt-5 p-5 rounded-lg bg-gray-50 border border-gray-200 animate-in fade-in slide-in-from-bottom-2"
-            >
-                {#if previewReport.status === "up_to_date"}
-                    <div
-                        class="flex items-center gap-3 text-green-700 font-bold text-lg"
-                    >
-                        <Icon name="check" style="width: 24px; height: 24px;" />
-                        {$t("import.statusUpToDate")}
-                    </div>
-                {:else if previewReport.status === "updated"}
-                    <h3
-                        class="font-bold text-lg text-[#21272C] mb-4 flex items-center gap-2"
-                    >
-                        <Icon
-                            name="import"
-                            style="width: 20px; height: 20px;"
-                        />
-                        {$t("import.newFound")}
-                        <span class="text-[#D0926E] ml-1"
-                            >+{previewReport.totalAdded}</span
+
+            {#if errorMsg && !isInputError}
+                <div
+                    class="mt-5 p-4 bg-red-50 dark:text-red-300 text-red-600 dark:bg-[#902E2E] dark:border-[#444444] rounded-lg border border-red-100 flex items-center gap-2 animate-in fade-in slide-in-from-top-2"
+                >
+                    <Icon name="close" style="width: 20px; height: 20px;" />
+                    {errorMsg}
+                </div>
+            {/if}
+            {#if previewReport}
+                <div
+                    class="mt-5 p-5 rounded-lg bg-gray-50 dark:bg-[#343434] dark:border-[#444444] border border-gray-200 animate-in fade-in slide-in-from-bottom-2"
+                >
+                    {#if previewReport.status === "up_to_date"}
+                        <div
+                            class="flex items-center gap-3 dark:text-green-500 text-green-600 font-bold text-lg"
                         >
-                    </h3>
-                    <div class="space-y-2 mb-6 ml-1">
-                        {#each Object.entries(previewReport.addedCount) as [bannerId, count]}
-                            <div
-                                class="flex justify-between items-center bg-white p-3 rounded border border-gray-100 shadow-sm max-w-md"
+                            <Icon
+                                name="check"
+                                style="width: 24px; height: 24px;"
+                            />
+                            {$t("import.statusUpToDate")}
+                        </div>
+                    {:else if previewReport.status === "updated"}
+                        <h3
+                            class="font-bold text-lg gap-4 dark:text-[#E0E0E0] text-[#21272C] mb-4 flex items-center gap-2"
+                        >
+                            <Icon
+                                name="import"
+                                style="width: 20px; height: 20px;"
+                            />
+                            {$t("import.newFound")}
+                            <span class="text-[#D0926E] ml-1"
+                                >+{previewReport.totalAdded}</span
                             >
-                                <span class="text-gray-700 font-medium">
-                                    {$t(`bannerTypes.${bannerId}`) || bannerId}
-                                </span>
-                                <span
-                                    class="bg-[#FFE145] text-[#21272C] text-xs font-bold px-2 py-1 rounded-md"
-                                    >+{count}</span
+                        </h3>
+                        <div class="space-y-2 mb-6 ml-1">
+                            {#each Object.entries(previewReport.addedCount) as [bannerId, count]}-->
+                                <div
+                                    class="flex justify-between dark:bg-[#373737] dark:border-[#444444] items-center bg-white p-3 rounded border border-gray-100 shadow-sm max-w-md"
                                 >
-                            </div>
-                        {/each}
-                    </div>
-                    <div class="w-48">
-                        <Button variant="black2" onClick={confirmSave}>
-                            <div slot="icon">
-                                <Icon
-                                    name="save"
-                                    style="width: 20px; height: 20px; stroke: white;"
-                                />
-                            </div>
-                            {$t("buttons.saveBtn") || "Save"}
-                        </Button>
-                    </div>
-                {/if}
-            </div>
-        {/if}
+                                    <span class="text-gray-700 font-medium">
+                                        {$t(`bannerTypes.${bannerId}`) ||
+                                            bannerId}
+                                    </span>
+                                    <span
+                                        class="bg-[#FFE145] text-[#21272C] text-xs font-bold px-2 py-1 rounded-md"
+                                        >+{count}</span
+                                    >
+                                </div>
+                            {/each}
+                        </div>
+                        <div class="w-48">
+                            <Button variant="black2" onClick={confirmSave}>
+                                <div slot="icon">
+                                    <Icon
+                                        name="save"
+                                        style="width: 20px; height: 20px; stroke: white;"
+                                    />
+                                </div>
+                                {$t("buttons.saveBtn") || "Save"}
+                            </Button>
+                        </div>
+                    {/if}
+                </div>
+            {/if}
+        </div>
     </div>
 </div>

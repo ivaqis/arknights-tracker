@@ -5,6 +5,17 @@ const { PrismaClient } = require('@prisma/client');
 const { URL, URLSearchParams } = require('url');
 const { BANNERS } = require('./banners');
 const crypto = require('crypto');
+const rateLimit = require('express-rate-limit');
+
+const importLimiter = rateLimit({
+    windowMs: 60 * 1000, // 1 минута (в миллисекундах)
+    max: 3,
+    message: { 
+        error: "Too many requests. Please wait a minute before trying again." 
+    },
+    standardHeaders: true,
+    legacyHeaders: false,
+});
 
 function generateStableUid(pulls) {
     if (!pulls || pulls.length === 0) return null;
@@ -19,6 +30,7 @@ function generateStableUid(pulls) {
 }
 
 const app = express();
+app.set('trust proxy', 1);
 let prisma;
 try {
     prisma = new PrismaClient();
@@ -38,11 +50,9 @@ app.use(express.json({ limit: '10mb' }));
 const GAME_API_URL = 'https://ef-webview.gryphline.com/api/record/char';
 
 const POOL_TYPES = [
-    // Персонажи
     "E_CharacterGachaPoolType_Beginner",
     "E_CharacterGachaPoolType_Standard",
     "E_CharacterGachaPoolType_Special",
-    // Оружие
     "WEAPON_FETCH_ALL"
 ];
 
@@ -51,7 +61,6 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 async function fetchGameData(token, lang, serverId) {
     console.log(`\n--- Starting PARALLEL Scan on SERVER ID: ${serverId} ---`);
 
-    // Внутренняя функция для скачивания конкретного типа пула
     const fetchPool = async (poolType) => {
         let poolPulls = [];
         const visitedIds = new Set();
@@ -65,7 +74,6 @@ async function fetchGameData(token, lang, serverId) {
             : 'https://ef-webview.gryphline.com/api/record/char';
 
         const poolLabel = isWeaponScan ? 'WEAPONS' : mapPoolTypeToShort(poolType);
-        // console.log(`[Start] ${poolLabel}`); // Можно включить для отладки
 
         while (hasMore) {
             const params = new URLSearchParams({ token, lang, server_id: serverId });
@@ -87,14 +95,12 @@ async function fetchGameData(token, lang, serverId) {
                 const result = response.data;
                 
                 if (result.code !== 0) {
-                    // Игнорируем ошибки (часто значит, что в этом пуле просто нет круток)
                     hasMore = false; 
                     break; 
                 }
 
                 const list = result.data?.list || [];
                 
-                // Фильтрация дублей внутри текущего пула
                 const newItems = list.filter(item => {
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                     return !visitedIds.has(uniqueKey);
@@ -104,8 +110,6 @@ async function fetchGameData(token, lang, serverId) {
                     hasMore = false;
                     break;
                 }
-
-                // console.log(`[${poolLabel}] Page ${pageCount}: +${newItems.length} items`);
 
                 newItems.forEach(item => {
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
@@ -138,7 +142,6 @@ async function fetchGameData(token, lang, serverId) {
                 pageCount++;
                 if (pageCount > 50) hasMore = false; 
 
-                // Небольшая задержка, чтобы не DDoS-ить API слишком сильно
                 await sleep(50); 
 
             } catch (err) {
@@ -149,12 +152,9 @@ async function fetchGameData(token, lang, serverId) {
         return poolPulls;
     };
 
-    // ЗАПУСКАЕМ ВСЕ ПУЛЫ ОДНОВРЕМЕННО
-    // Promise.all ждет, пока выполнятся все 4 запроса
     try {
         const results = await Promise.all(POOL_TYPES.map(type => fetchPool(type)));
         
-        // Объединяем результаты всех потоков в один массив (flat)
         const allPulls = results.flat();
         
         return allPulls;
@@ -164,7 +164,7 @@ async function fetchGameData(token, lang, serverId) {
     }
 }
 
-app.post('/api/import', async (req, res) => {
+app.post('/api/import', importLimiter, async (req, res) => {
     const { rawUrl } = req.body;
     
     try {
@@ -175,10 +175,7 @@ app.post('/api/import', async (req, res) => {
         
         const token = parsedUrl.searchParams.get('token') || parsedUrl.searchParams.get('u8_token');
         
-        // --- ИСПРАВЛЕНИЕ ЗДЕСЬ ---
-        // Игнорируем язык из ссылки, всегда берем английский
         const lang = 'en-us'; 
-        // -------------------------
         
         let targetServerId = parsedUrl.searchParams.get('server_id') || '3';
 
@@ -186,10 +183,8 @@ app.post('/api/import', async (req, res) => {
 
         console.log(`\n--- New Import Request ---`);
 
-        // [FIX 2] Попытка №1: Скачиваем с текущего сервера
         let allPulls = await fetchGameData(token, lang, targetServerId);
 
-        // [FIX 3] Попытка №2: Если ничего не нашли и сервер был 3, пробуем сервер 2
         if (allPulls.length === 0 && targetServerId === '3') {
             console.log("\n⚠️ No data found on Server 3. Retrying on Server 2...");
             targetServerId = '2'; 
@@ -202,7 +197,6 @@ app.post('/api/import', async (req, res) => {
             return res.status(400).json({ error: "No pulls found (checked servers 3 and 2)" });
         }
 
-        // Дальше стандартная логика (UID, сохранение)
         const stableUid = generateStableUid(allPulls);
 
         if (!stableUid) {
@@ -231,25 +225,17 @@ app.post('/api/import', async (req, res) => {
 
 function mapPoolTypeToShort(longType) {
     if (!longType) return 'unknown';
-
-    // 1. ПЕРСОНАЖИ
     if (longType.includes('Character')) {
         if (longType.includes('Beginner')) return 'new-player';
         if (longType.includes('Standard')) return 'standard';
         if (longType.includes('Special')) return 'special';
     }
-    // Если просто стандартные названия без префикса Character
     if (longType.includes('Beginner')) return 'new-player';
     if (longType.includes('Standard') && !longType.includes('Weapon')) return 'standard';
     if (longType.includes('Special') && !longType.includes('Weapon') && !longType.includes('weponbox')) return 'special';
-
-    // 2. ОРУЖИЕ
-    // Типы из конфига или API
     if (longType === 'WEAPON_FETCH_ALL') return 'weapon-all'; // Временный тип
     if (longType.includes('Weapon') && longType.includes('Standard')) return 'weap-standard';
     if (longType.includes('Weapon') && longType.includes('Special')) return 'weap-special';
-
-    // "Сырые" ID из логов оружия
     if (longType.includes('constant')) return 'weap-standard'; // weaponbox_constant_2
     if (longType.includes('weponbox')) return 'weap-special';  // weponbox_1_0_1
 
@@ -318,7 +304,6 @@ async function updateAggregatedStats(uid, allPulls) {
 }
 
 function calculateMath(pulls, categoryId) {
-    // Сортировка от старых к новым
     pulls.sort((a, b) => {
         const tA = Number(a.time); 
         const tB = Number(b.time);
@@ -326,10 +311,8 @@ function calculateMath(pulls, categoryId) {
         return Number(a.seqId || 0) - Number(b.seqId || 0);
     });
 
-    // --- ФИКС: Определение лимитов гаранта ---
     const isWeapon = categoryId.includes('weap') || categoryId.includes('wepon');
     const hardPityLimit = isWeapon ? 80 : 120;
-    // -----------------------------------------
 
     let stats = {
         totalPulls: pulls.length,
@@ -341,24 +324,19 @@ function calculateMath(pulls, categoryId) {
     let currentPity6 = 0;
     let currentPity5 = 0;
     
-    // --- ФИКС: Счетчик жесткого гаранта ---
     let rateUpCounter = 0; 
-    // --------------------------------------
 
     pulls.forEach((pull) => {
         const isFree = pull.isFree === true || String(pull.isFree) === "true";
         const itemName = normalize(pull.name);
 
-        // --- ФИКС: Проверка наступления гаранта перед обработкой леги ---
         let isHardPityTriggered = false;
         if (!isFree) {
-            // Если счетчик достиг 79 (для оружия) или 119 (для перса), текущая крутка — гарант
             if (rateUpCounter >= hardPityLimit - 1) {
                 isHardPityTriggered = true;
             }
             rateUpCounter++;
         }
-        // ---------------------------------------------------------------
 
         if (pull.rarity === 6) {
             stats.total6++;
@@ -366,7 +344,6 @@ function calculateMath(pulls, categoryId) {
 
             const matchedBanner = BANNERS.find(b => {
                 const typeMatch = b.id === pull.poolId || normalizeBannerId(b.type) === categoryId;
-                // Упрощенная проверка времени, считаем что совпадает
                 const timeMatch = true; 
                 return typeMatch && timeMatch;
             });
@@ -374,20 +351,14 @@ function calculateMath(pulls, categoryId) {
             if (matchedBanner && matchedBanner.featured6 && matchedBanner.featured6.length > 0) {
                 const normFeatured = matchedBanner.featured6.map(normalize);
                 const isFeatured = normFeatured.includes(itemName);
-
-                // --- ФИКС: Логика 50/50 ---
-                // Если это НЕ жесткий гарант, то засчитываем в статистику удачи 50/50
                 if (!isHardPityTriggered) {
                     stats.total5050++;
                     if (isFeatured) stats.won5050++;
                 }
 
-                // СБРОС ГАРАНТА: Счетчик обнуляется ТОЛЬКО если выпал ивентовый предмет
                 if (isFeatured) {
                     rateUpCounter = 0;
                 }
-                // Если проиграли 50/50, rateUpCounter продолжает расти дальше до 80/120
-                // ---------------------------
             } 
 
             currentPity6 = 0;

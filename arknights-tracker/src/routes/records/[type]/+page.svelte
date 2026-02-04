@@ -47,7 +47,6 @@
         bannerType.includes("weap") || bannerType.includes("wepon");
     $: hasRateUp = bannerType === "special" || isWeaponType;
     $: maxPity6 = isNewPlayer ? 40 : 80;
-
     $: statsBannerStub = {
         id: "summary",
         type: bannerType,
@@ -56,9 +55,7 @@
     };
 
     const normalize = (str) => str?.toLowerCase().replace(/\s+/g, "") || "";
-
     const itemMap = { ...characters, ...weapons };
-
     const lookupMap = Object.values(itemMap).reduce((acc, item) => {
         if (item.name) acc[normalize(item.name)] = item;
         if (item.id) acc[normalize(item.id)] = item;
@@ -72,50 +69,52 @@
     $: guarantee6 = stats.guarantee120 || 0;
     $: progress120 = stats.guarantee120 || 0;
     $: left120 = Math.max(0, 120 - progress120);
-
+    $: avg6 = stats.avg6 || "0.0";
+    $: avg5 = stats.avg5 || "0.0";
+    $: avg6Max = (isWeaponType || isNewPlayer) ? 40 : 80;
+    $: avg5Max = 10;
+    $: avgMax = 0;
+    $: avg = 0;
     $: statsRows = [
         {
             label: "6",
             count: stats.count6 || 0,
             percent: stats.percent6 || "0.00",
-            avg: stats.avg6 || "0.0",
+            avg: avg6 || "0.0",
             winRate: stats.winRate || { won: 0, total: 0, percent: 0 },
+            avgMax: avg6Max
         },
         {
             label: "5",
             count: stats.count5 || 0,
             percent: stats.percent5 || "0.00",
-            avg: stats.avg5 || "0.0",
+            avg: avg5 || "0.0",
             winRate: { won: 0, total: 0, percent: 0 },
+            avgMax: avg5Max
         },
     ];
 
     function getBannerForPull(pullTime, pageType, itemName = null) {
         const pTime = new Date(pullTime).getTime();
         const pType = pageType.toLowerCase();
-
         const isWeaponPage = pType.includes("weap") || pType.includes("wepon");
         const isNewPlayerPage =
             pType.includes("new-player") || pType.includes("new_player");
         const isStandardPage =
             (pType.includes("standard") || pType.includes("constant")) &&
             !isNewPlayerPage;
-
         const candidates = banners.filter((b) => {
             const bId = (b.id || "").toLowerCase();
             const bType = (b.type || "").toLowerCase();
-
             const isBannerWeapon =
                 bType === "weapon" ||
                 bId.includes("weap") ||
                 bId.includes("wepon");
             if (isWeaponPage !== isBannerWeapon) return false;
-
             const isBannerNewPlayer =
                 bType === "new-player" || bId.includes("new_player");
             if (isNewPlayerPage) return isBannerNewPlayer;
             if (isBannerNewPlayer) return false;
-
             const isBannerStandard =
                 bType === "standard" ||
                 bType === "constant" ||
@@ -136,7 +135,6 @@
                 const normName = normalize(itemName);
                 const itemObj = lookupMap[normName];
                 const searchId = itemObj ? itemObj.id : normName;
-
                 const exactMatch = matches.find((b) => {
                     if (!b.featured6) return false;
                     return b.featured6.some((fid) => {
@@ -185,23 +183,28 @@
 
     $: getRowBackground = (rarity) => {
         if ($isDarkMode) {
-            
             if (rarity === 6) 
                 return "linear-gradient(90deg, transparent 0%, rgba(255, 100, 0, 0.5) 100%)";
-            
             if (rarity === 5) 
                 return "linear-gradient(90deg, transparent 0%, rgba(143, 114, 0, 1) 100%)";
-        
         } else {
             if (rarity === 6)
                 return "linear-gradient(90deg, transparent 0%, rgba(217, 98, 0, 0.27) 100%)";
-            
             if (rarity === 5)
                 return "linear-gradient(90deg, transparent 0%, rgba(255, 211, 89, 0.27) 100%)";
         }
-
         return "transparent";
     };
+
+    function getAvgColor(val, max) {
+        const num = parseFloat(val) || 0;
+        const p = (num / max) * 100;
+        if (p <= 35) return "#5DBE5A";
+        if (p <= 50) return "#3CAF38";
+        if (p <= 65) return "#D4AD3D";
+        if (p <= 80) return "#C55E2F";
+        return "#B03E09";
+    }
 
     const isFeatured = (itemName, banner, rarity) => {
         if (!banner) return false;
@@ -221,18 +224,12 @@
         const sorted = [...rawPulls].sort(
             (a, b) => new Date(a.time) - new Date(b.time),
         );
-
         let p6 = 0,
             p5 = 0;
         let bannerCounts = {};
-        
-        // --- НОВОЕ: Счетчик для отслеживания 120/80 ---
         let rateUpCounter = 0; 
-        // ----------------------------------------------
-
         const isWeapon = bannerType.includes('weap') || bannerType.includes('wepon');
         const hardPityLimit = isWeapon ? 80 : 120;
-
         let processed = sorted.map((pull) => {
             const p = { ...pull };
             const banner = getBannerForPull(p.time, bannerType);
@@ -252,8 +249,6 @@
             }
             p.isFree = isFree;
             bannerCounts[bid]++;
-
-            // Считаем обычный Pity (сброс при любой леге)
             if (!isFree) {
                 if (p.rarity === 6) {
                     p.pity = p6 + 1;
@@ -271,18 +266,13 @@
             } else {
                 p.pity = 1;
             }
-
-            // --- НОВОЕ: Проверка на Hard Pity (80/120) ---
             let isHardPityTriggered = false;
             if (!isFree) {
-                // Если мы на пороге (например, счетчик 79, и это 80-я крутка)
                 if (rateUpCounter >= hardPityLimit - 1) {
                     isHardPityTriggered = true;
                 }
-                // Увеличиваем счетчик (если выпадет ивент, сбросим ниже)
                 rateUpCounter++;
             }
-            // ---------------------------------------------
 
             if (p.rarity >= 5) {
                 if (bannerType === "standard" || bannerType === "new-player") {
@@ -299,21 +289,17 @@
                         const featured = isFeatured(p.name, banner, p.rarity);
                         
                         if (featured) {
-                            // Если выиграли, проверяем, было ли это по жесткому гаранту
                             if (isHardPityTriggered && p.rarity === 6) {
-                                p.status = "guaranteed"; // <--- ТЕПЕРЬ БУДЕТ GUARANTEED
+                                p.status = "guaranteed";
                             } else {
                                 p.status = "won"; 
                             }
-
-                            // СБРОС СЧЕТЧИКА ГАРАНТА при получении ивентового
                             if (p.rarity === 6) {
                                 rateUpCounter = 0;
                             }
 
                         } else {
                             p.status = "lost";
-                            // При проигрыше счетчик rateUpCounter НЕ сбрасывается, он продолжает расти
                         }
                     }
                 }
@@ -324,7 +310,6 @@
             return p;
         });
 
-        // Группировка (без изменений)
         let batches = [];
         let currentBatch = [];
 
@@ -357,10 +342,10 @@
     })();
 
     function getWeaponBg(rarity) {
-        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]"; // Твой цвет для 6*
-        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]"; // Темно-золотой для 5*
-        if (rarity === 4) return "bg-gradient-to-t from-[#1A002E] to-[#9C62F6]"; // Темно-фиолетовый для 4*
-        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]"; // Серый для 3*
+        if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
+        if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";
+        if (rarity === 4) return "bg-gradient-to-t from-[#1A002E] to-[#9C62F6]";
+        return "bg-gradient-to-t from-[#1a1a1a] to-[#666666]";
     }
 
     $: homeBanners = [...bannerTypes]
@@ -373,21 +358,17 @@
         if (id === "laevatain-banner") {
             return "/images/banners/miniIcon/laevatain-banner.jpg";
         }
-
         if (id.includes("constant")) {
             const num = id.replace(/[^0-9]/g, "");
-            const cleanNum = parseInt(num, 10); // Убираем ведущий ноль
+            const cleanNum = parseInt(num, 10);
             return `/images/banners/miniIcon/weaponbox_constant_${cleanNum}.png`;
         }
-
         if (id.includes("wepon") || id.includes("weapon")) {
             return "/images/banners/miniIcon/weapon_01.png";
         }
-
         if (b.miniIcon) {
             return `/images/banners/miniIcon/${b.miniIcon}`;
         }
-
         return `/images/banners/miniIcon/${b.id}.png`;
     }
 </script>
@@ -578,6 +559,7 @@
                                 </div>
                                 <div
                                     class="text-right font-bold font-nums text-[#1D6F42]"
+                                    style="color: {getAvgColor(row.avg, row.avgMax)}"
                                 >
                                     {row.avg}
                                 </div>
@@ -903,7 +885,6 @@
         </div>
     </div>
 </div>
-<!-- Модалка Баннера -->
 <BannerModal
     banner={selectedBanner}
     pageContext={bannerType}

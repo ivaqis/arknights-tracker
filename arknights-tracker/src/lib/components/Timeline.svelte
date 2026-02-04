@@ -1,5 +1,4 @@
 <!-- src/lib/components/Timeline.svelte -->
-<!-- Перевести слово Web-->
 <script>
     import { onMount, onDestroy } from "svelte";
     import { t } from "$lib/i18n";
@@ -30,32 +29,25 @@
             ...b,
             originalType: b.type,
             type: "banner",
-            // Убеждаемся, что свойство showOnMain пробросилось (оно есть в ...b, но на всякий случай)
             showOnMain: b.showOnMain 
         })),
 ];
 
-// 2. [FIX] СОРТИРОВКА: Главные баннеры отправляем В КОНЕЦ (чтобы они были поверх остальных)
 allEvents.sort((a, b) => {
     const timeA = new Date(a.startTime).getTime();
     const timeB = new Date(b.startTime).getTime();
 
-    // А. Сначала по времени
     if (timeA !== timeB) {
         return timeA - timeB;
     }
 
-    // Б. Если время совпадает:
     const mainA = !!a.showOnMain;
     const mainB = !!b.showOnMain;
 
     if (mainA !== mainB) {
-        // Было: return mainA ? -1 : 1; (Главный первый)
-        // Стало: return mainA ? 1 : -1; (Главный последний -> рисуется поверх)
         return mainA ? 1 : -1; 
     }
 
-    // В. Если оба не главные, можно сортировать по алфавиту или ID для стабильности
     return (a.id || "").localeCompare(b.id || "");
 });
 
@@ -287,7 +279,7 @@ const displayEvents = allEvents;
     {#if showTimezoneMenu}
         <div
             data-timezone-menu
-            class="absolute bg-[#21272C] rounded-lg shadow-xl border border-gray-600 py-1 w-[120px] z-[100]"
+            class="absolute bg-[#21272C]  rounded-lg shadow-xl border border-gray-600 py-1 w-[120px] z-[100]"
             style="
         left: {currentTimeX - scrollLeft}px; 
         top: 60px;
@@ -316,7 +308,7 @@ const displayEvents = allEvents;
     <!-- 1. ХЕДЕР -->
     <div class="absolute top-2 left-0 right-0 z-40 pointer-events-none">
         <div
-            class="bg-[#21272C] text-white rounded-2xl shadow-lg border border-gray-700 overflow-hidden pointer-events-auto"
+            class="bg-[#21272C] dark:bg-[#1E1E1E] dark:border-[#3F3F3F] text-white rounded-2xl shadow-lg border border-gray-700 overflow-hidden pointer-events-auto"
         >
             <div
                 bind:this={headerContainer}
@@ -331,7 +323,7 @@ const displayEvents = allEvents;
                                 style="width: {month.daysCount * DAY_WIDTH}px;"
                             >
                                 <span
-                                    class="sticky left-0 px-4 whitespace-nowrap font-bold text-sm z-10 block bg-[#21272C]"
+                                    class="sticky left-0 dark:bg-[#1E1E1E] px-4 whitespace-nowrap font-bold text-sm z-10 block bg-[#21272C]"
                                 >
                                     {$t(
                                         `mouths.${month.date.toLocaleString("en-US", { month: "long" }).toLowerCase()}`,
@@ -369,7 +361,7 @@ const displayEvents = allEvents;
                                 style="width: {DAY_WIDTH}px;"
                             >
                                 <span
-                                    class="absolute left-0 top-1/2 -translate-y-1/2 transform -translate-x-1/2 bg-[#21272C] px-1"
+                                    class="absolute left-0 top-1/2 -translate-y-1/2 transform -translate-x-1/2 bg-[#21272C] dark:bg-[#1E1E1E] px-1"
                                 >
                                     {day.getDate()}
                                 </span>
@@ -391,7 +383,7 @@ const displayEvents = allEvents;
             <div class="absolute inset-0 top-0 pointer-events-none z-0 flex">
                 {#each days as day}
                     <div
-                        class="border-l mt-5 border-gray-300/40 h-full flex-shrink-0"
+                        class="border-l mt-5 border-gray-300/40 dark:border-[#3F3F3F] h-full flex-shrink-0"
                         style="width: {DAY_WIDTH}px;"
                     ></div>
                 {/each}

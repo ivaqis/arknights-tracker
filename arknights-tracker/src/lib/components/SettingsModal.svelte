@@ -2,13 +2,14 @@
   import { t } from "$lib/i18n";
   import { pullData } from "$lib/stores/pulls";
   import * as XLSX from "xlsx";
+  import Icon from "$lib/components/Icons.svelte";
+  import Button from "$lib/components/Button.svelte";
 
   export let isOpen = false;
   export let onClose;
 
   let fileInputExcel;
 
-  // ==================== EXCEL ====================
 
   function exportExcel() {
     let dataToExport;
@@ -114,8 +115,6 @@
         }
 
         if (Object.keys(importedData).length > 0) {
-          // ВАЖНО: Если мы используем новый стор, возможно понадобится .set() или smartImport
-          // Но пока оставим как было в оригинале, предполагая, что у pullData есть метод set
           pullData.set(importedData);
           alert(`✓ Данные Excel успешно загружены!`);
           onClose();
@@ -141,60 +140,55 @@
 
 {#if isOpen}
   <div
-    class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center backdrop-blur-sm transition-opacity"
+    class="fixed inset-0 bg-black/50  z-50 flex items-center justify-center backdrop-blur-sm transition-opacity"
     on:click={onClose}
     on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && onClose()}
     role="button"
     tabindex="0"
   >
     <div
-      class="bg-white rounded-2xl p-8 w-[500px] shadow-2xl transform transition-all scale-100 cursor-default"
+      class="bg-white rounded-2xl p-8 w-[500px] dark:bg-[#383838] dark:border-[#444444] shadow-2xl transform transition-all scale-100 cursor-default"
       on:click|stopPropagation
       on:keydown|stopPropagation
       role="dialog"
       aria-modal="true"
       tabindex="-1"
     >
-      <h2 class="text-2xl font-bold mb-6 text-[#21272C] font-sdk">
+      <h2 class="text-2xl font-bold dark:text-[#FDFDFD] mb-6 text-[#21272C] font-sdk">
         {$t("page.recordsSettings.settings")}
       </h2>
 
       <div class="space-y-6">
-        <div>
+        <div >
           <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 font-sdk">
             Excel
           </h3>
           <div class="grid grid-cols-2 gap-3">
             <button
               on:click={exportExcel}
-              class="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-xl hover:border-[#1D6F42] hover:bg-green-50 transition group bg-white h-24"
+              class="flex flex-col dark:border-[#444444] dark:bg-[#383838] hover:dark:bg-[#373737] items-center justify-center p-4 border border-gray-200 rounded-xl hover:border-[#1D6F42] hover:bg-green-50 transition group bg-white h-24"
             >
-              <div class="mb-2 text-gray-400 group-hover:text-[#1D6F42] transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15L21 21L12 21L3 21L3 15" />
-                  <path d="M12 15L12 3M12 3L7 8M12 3L17 8" />
-                </svg>
+              <div class="mb-2 text-gray-400 group-hover:text-[#1D6F42] dark:text-[#E0E0E0] transition-colors">
+                <Icon name="export" class="w-3 h-3" />
               </div>
-              <div class="font-bold text-[#21272C] text-sm">
+              <div class="font-bold dark:text-[#E0E0E0] text-[#21272C] text-sm">
                 {$t("page.recordsSettings.exportXLSX")}
               </div>
             </button>
-<!--
+            <!--
             <button
               on:click={triggerImportExcel}
               
               class="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-xl hover:border-[#1D6F42] hover:bg-green-50 transition group bg-white h-24"
             >
               <div class="mb-2 text-gray-400 group-hover:text-[#1D6F42] transition-colors">
-                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15L21 21L12 21L3 21L3 15" />
-                  <path d="M12 3L12 15M12 15L17 10M12 15L7 10" />
-                </svg>
+                 <Icon name="import" class="w-3 h-3" />
               </div>
               <div class="font-bold text-[#21272C] text-sm">
                 {$t("page.recordsSettings.importXLSX")}
               </div>
-            </button>-->
+            </button>
+            -->
           </div>
         </div>
       </div>
@@ -208,12 +202,11 @@
       />
 
       <div class="mt-8 flex justify-end">
-        <button
-          on:click={onClose}
-          class="px-5 py-2 text-gray-500 hover:bg-gray-100 rounded-lg transition font-medium"
-        >
-          {$t("page.recordsSettings.close")}
-        </button>
+        <div class="w-auto">
+          <Button variant="round" color="white" onClick={onClose}>
+            {$t("page.recordsSettings.close")}
+          </Button>
+        </div>
       </div>
     </div>
   </div>

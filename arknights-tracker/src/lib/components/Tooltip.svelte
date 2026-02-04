@@ -76,7 +76,6 @@
 
   onDestroy(() => {
     stopFollow();
-    // <--- 2. Оборачиваем удаление слушателей в проверку browser
     if (browser) {
         window.removeEventListener("scroll", updatePos, true);
         window.removeEventListener("resize", updatePos);
@@ -100,7 +99,7 @@
 {#if open && tooltipText}
   <span
     bind:this={tooltipEl}
-    class="fixed px-3 py-1.5 bg-gray-900 text-white text-xs rounded-lg shadow-xl
+    class="fixed px-3 py-1.5 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-xl
            pointer-events-none whitespace-nowrap z-[9999]"
     style="left: {left}px; top: {top}px; transform: translate(-50%, calc(-100% - 8px));"
   >
