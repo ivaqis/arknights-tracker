@@ -317,12 +317,18 @@ async function updateAggregatedStats(uid, allPulls) {
 }
 
 function parseEarliestDate(dateStr) {
-    if (!dateStr) return null;
-    const offset = 8; 
-    const sign = offset >= 0 ? "+" : "-";
-    const pad = (n) => String(Math.abs(n)).padStart(2, '0');
-    const isoStr = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-    return new Date(isoStr);
+    if (!dateStr) return new Date(0);
+    if (dateStr instanceof Date) return dateStr;
+    if (typeof dateStr === 'number') return new Date(dateStr);
+    if (typeof dateStr === 'string') {
+        const offset = 8;
+        const sign = offset >= 0 ? "+" : "-";
+        const pad = (n) => String(Math.abs(n)).padStart(2, '0');
+        const isoStr = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
+        return new Date(isoStr);
+    }
+
+    return new Date(dateStr);
 }
 
 function findBannerConfigByTime(timestamp, categoryContext) {
