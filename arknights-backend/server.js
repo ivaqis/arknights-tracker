@@ -44,6 +44,12 @@ function generatePullId(uid, pull) {
     return `${uid}_${pull.seqId || pull.timestamp}`;
 }
 
+function getServerOffset(serverId) {
+    const sid = String(serverId);
+    if (sid === '3') return -5; 
+    return 8; 
+}
+
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
@@ -218,7 +224,7 @@ app.post('/api/import', importLimiter, async (req, res) => {
         console.log(`User Stable UID: ${stableUid}`);
 
         if (prisma) {
-            await updateAggregatedStats(stableUid, allPulls);
+            await updateAggregatedStats(stableUid, allPulls, usedServerId);
         }
 
         res.json({
@@ -255,7 +261,7 @@ function mapPoolTypeToShort(longType) {
     return 'unknown';
 }
 
-async function updateAggregatedStats(uid, allPulls) {
+async function updateAggregatedStats(uid, allPulls, serverId) {
     if (!allPulls.length) return;
 
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
@@ -286,7 +292,7 @@ async function updateAggregatedStats(uid, allPulls) {
     });
 
     for (const [category, pulls] of Object.entries(pullsByCategory)) {
-        const stats = calculateMath(pulls, category);
+        const stats = calculateMath(pulls, category, serverId);
 
         await prisma.userBannerStat.upsert({
             where: { uid_bannerId: { uid, bannerId: category } },
@@ -313,15 +319,15 @@ async function updateAggregatedStats(uid, allPulls) {
             }
         });
     }
-    console.log(`[Stats] Updated for ${uid}: ${Object.keys(pullsByCategory).join(', ')}`);
+    console.log(`[Stats] Updated for ${uid} on Server ${serverId}: ${Object.keys(pullsByCategory).join(', ')}`);
 }
 
-function parseEarliestDate(dateStr) {
+function parseEarliestDate(dateStr, offset = 8) {
     if (!dateStr) return new Date(0);
     if (dateStr instanceof Date) return dateStr;
     if (typeof dateStr === 'number') return new Date(dateStr);
+    
     if (typeof dateStr === 'string') {
-        const offset = 8;
         const sign = offset >= 0 ? "+" : "-";
         const pad = (n) => String(Math.abs(n)).padStart(2, '0');
         const isoStr = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
@@ -331,7 +337,7 @@ function parseEarliestDate(dateStr) {
     return new Date(dateStr);
 }
 
-function findBannerConfigByTime(timestamp, categoryContext) {
+function findBannerConfigByTime(timestamp, categoryContext, offset = 8) {
     const time = new Date(timestamp).getTime();
     const BUFFER = 4 * 60 * 60 * 1000; 
 
@@ -344,8 +350,8 @@ function findBannerConfigByTime(timestamp, categoryContext) {
     }
 
     const candidates = BANNERS.filter(b => {
-        const start = parseEarliestDate(b.startTime).getTime();
-        const end = b.endTime ? parseEarliestDate(b.endTime).getTime() : Infinity;
+        const start = parseEarliestDate(b.startTime, offset).getTime();
+        const end = b.endTime ? parseEarliestDate(b.endTime, offset).getTime() : Infinity;
         
         if (time < (start - BUFFER) || time > (end + BUFFER)) return false;
 
@@ -363,21 +369,24 @@ function findBannerConfigByTime(timestamp, categoryContext) {
     });
 
     if (candidates.length > 0) {
-        candidates.sort((a, b) => parseEarliestDate(b.startTime).getTime() - parseEarliestDate(a.startTime).getTime());
+        candidates.sort((a, b) => 
+            parseEarliestDate(b.startTime, offset).getTime() - 
+            parseEarliestDate(a.startTime, offset).getTime()
+        );
         return candidates[candidates.length - 1];
     }
 
     return undefined;
 }
 
-function calculateMath(pulls, categoryId) {
+function calculateMath(pulls, categoryId, serverId = '3') {
     pulls.sort((a, b) => {
         const tA = Number(a.time); 
         const tB = Number(b.time);
         if (tA !== tB) return tA - tB;
         return Number(a.seqId || 0) - Number(b.seqId || 0);
     });
-
+    const currentOffset = getServerOffset(serverId);
     const isWeapon = categoryId.includes('weap') || categoryId.includes('wepon');
     const hardPityLimit = isWeapon ? 80 : 120;
 
@@ -406,7 +415,7 @@ function calculateMath(pulls, categoryId) {
         if (pull.rarity === 6) {
             stats.total6++;
             stats.sumPity6 += currentPity6 + (isFree ? 0 : 1);
-            let matchedBanner = findBannerConfigByTime(pull.time, categoryId);
+            let matchedBanner = findBannerConfigByTime(pull.time, categoryId, currentOffset);
             if (!matchedBanner) {
                  matchedBanner = BANNERS.find(b => b.id === pull.poolId);
             }

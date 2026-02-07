@@ -206,7 +206,11 @@
 
                 if (importedUid) {
                     const defaultName = `Doctor_` + importedUid.slice(-4);
-                    accountStore.addAccount(importedUid, defaultName, backendServerId);
+                    accountStore.addAccount(
+                        importedUid,
+                        defaultName,
+                        backendServerId,
+                    );
                 }
 
                 if (isSaveTokenEnabled && tokenName.trim()) {
@@ -217,7 +221,10 @@
                 const cleanPulls = parseGachaLog(rawData);
                 pendingData = cleanPulls;
 
-                const report = await pullData.smartImport(cleanPulls, backendServerId);
+                const report = await pullData.smartImport(
+                    cleanPulls,
+                    backendServerId,
+                );
                 previewReport = report;
             } else {
                 const rawError =
@@ -225,18 +232,22 @@
                     response.message ||
                     response.msg ||
                     "Unknown error";
-                
+
                 const lowerError = String(rawError).toLowerCase();
 
                 if (
-                    response.status === 429 || 
-                    lowerError.includes("too many requests") || 
+                    response.status === 429 ||
+                    lowerError.includes("too many requests") ||
                     lowerError.includes("rate limit") ||
                     lowerError.includes("429")
                 ) {
-                    errorMsg = $t("import.error_rate_limit") || "Too many requests. Please wait a minute.";
+                    errorMsg =
+                        $t("import.error_rate_limit") ||
+                        "Too many requests. Please wait a minute.";
                 } else if (lowerError.includes("no pulls found")) {
-                    errorMsg = $t("import.error_no_data") || "No pulls found or Link Expired.";
+                    errorMsg =
+                        $t("import.error_no_data") ||
+                        "No pulls found or Link Expired.";
                 } else if (lowerError.includes("invalid domain")) {
                     errorMsg = $t("import.error_domain") || "Invalid domain.";
                 } else {
@@ -250,9 +261,9 @@
             const errCode = err.status || err.statusCode || err.code || 0;
 
             if (
-                errCode === 429 || 
-                msg.includes("too many requests") || 
-                msg.includes("rate limit") || 
+                errCode === 429 ||
+                msg.includes("too many requests") ||
+                msg.includes("rate limit") ||
                 msg.includes("429")
             ) {
                 errorMsg = $t("import.error_rate_limit");
@@ -261,10 +272,18 @@
                 msg.includes("generate uid")
             ) {
                 errorMsg = $t("import.error_no_data");
-            } else if (msg.includes("backend connection failed") || msg.includes("fetch")) {
-                errorMsg = $t("import.error_network") || "Network Error / Backend unavailable";
+            } else if (
+                msg.includes("backend connection failed") ||
+                msg.includes("fetch")
+            ) {
+                errorMsg =
+                    $t("import.error_network") ||
+                    "Network Error / Backend unavailable";
             } else {
-                errorMsg = err.message || $t("import.error_unknown") || "Unknown Error";
+                errorMsg =
+                    err.message ||
+                    $t("import.error_unknown") ||
+                    "Unknown Error";
             }
         } finally {
             isLoading = false;
@@ -341,7 +360,7 @@
             {#if platformTab === "ios"}
                 {#each [{ text: $t("import.ios_step1") }, { text: $t("import.ios_step2") }, { text: $t("import.ios_step3"), subList: [$t("import.ios_step3_1"), $t("import.ios_step3_2"), $t("import.ios_step3_3")] }, { text: $t("import.ios_step4") }, { text: $t("import.ios_step5") }, { text: $t("import.ios_step6") }, { text: $t("import.ios_step7") }, { text: $t("import.ios_step8") }, { text: $t("import.ios_step9") }, { text: $t("import.ios_step10") }, { text: $t("import.ios_step11") }] as step, i}
                     <div
-                        class="relative border-l-2 border-gray-200 dark:border-[#FDFD1F]/50  pb-10 pl-10 last:border-transparent last:pb-0"
+                        class="relative border-l-2 border-gray-200 dark:border-[#FDFD1F]/50 pb-10 pl-10 last:border-transparent last:pb-0"
                     >
                         <div
                             class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
@@ -813,9 +832,10 @@
                         >
                             <div slot="icon">
                                 {#if isLoading}
-                                    <div
-                                        class="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin"
-                                    ></div>
+                                    <Icon
+                                        name="refresh"
+                                        class="w-4 h-4 animate-spin text-gray-500 dark:text-[#B7B6B3]"
+                                    />
                                 {:else}
                                     <Icon
                                         name="import"
@@ -873,7 +893,9 @@
                                 <div
                                     class="flex justify-between dark:bg-[#373737] dark:border-[#444444] items-center bg-white p-3 rounded border border-gray-100 shadow-sm max-w-md"
                                 >
-                                    <span class="text-gray-700 dark:text-[#E0E0E0] font-medium">
+                                    <span
+                                        class="text-gray-700 dark:text-[#E0E0E0] font-medium"
+                                    >
                                         {$t(`bannerTypes.${bannerId}`) ||
                                             bannerId}
                                     </span>
