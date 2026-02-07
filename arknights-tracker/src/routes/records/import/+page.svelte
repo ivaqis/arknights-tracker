@@ -830,11 +830,11 @@
                             onClick={handleUrlImport}
                             disabled={isLoading}
                         >
-                            <div slot="icon">
+                            <div slot="icon" class="text-gray-500 dark:text-[#B7B6B3]">
                                 {#if isLoading}
                                     <Icon
                                         name="refresh"
-                                        class="w-4 h-4 animate-spin text-gray-500 dark:text-[#B7B6B3]"
+                                        class="w-4 h-4 animate-spin "
                                     />
                                 {:else}
                                     <Icon

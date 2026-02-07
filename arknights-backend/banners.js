@@ -27,7 +27,7 @@ const rawBanners = [
     featured6: ["laevatain"], 
   },
   {
-    id: "special_banner_02",
+    id: "special_1_0_3",
     name: "The Floaty Messenger",
     type: "special",
     startTime: "2026-02-07 12:00:00",
@@ -35,7 +35,7 @@ const rawBanners = [
     featured6: ["gilberta"],
   },
   {
-    id: "special_banner_03",
+    id: "special_1_0_4",
     name: "Hues Of Passion",
     type: "special",
     startTime: "2026-02-24 12:00:00",
@@ -107,11 +107,5 @@ const rawBanners = [
     featured6: ["artzyTyrannical"],
   }
 ];
-
-const BANNERS = rawBanners.map(b => ({
-    ...b,
-    startTime: new Date(b.startTime.endsWith("Z") ? b.startTime : b.startTime + " UTC").getTime(),
-    endTime: b.endTime ? new Date(b.endTime.endsWith("Z") ? b.endTime : b.endTime + " UTC").getTime() : null
-}));
 
 module.exports = { BANNERS };
