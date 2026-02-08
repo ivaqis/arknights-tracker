@@ -357,11 +357,17 @@ async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
 async function updateAggregatedStats(uid, allPulls, serverId) {
     if (!allPulls.length) return;
 
+    // Обновляем запись пользователя
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
-    // 1. Разбиваем крутки по категориям и приводим типы
-    const pullsByCategory = {};
+    // 1. ГРУППИРОВКА ПО КОНКРЕТНЫМ БАННЕРАМ (Specific Banner ID)
+    const pullsByBanner = {};
+    
+    // Получаем смещение сервера один раз
+    const offset = getServerOffset(serverId);
+
     allPulls.forEach(p => {
+        // Нормализация времени
         let pullTimeMs = 0;
         if (p.gachaTs) pullTimeMs = Number(p.gachaTs);
         else if (p.timestamp) pullTimeMs = Number(p.timestamp) * 1000;
@@ -370,50 +376,55 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         
         if (!pullTimeMs || isNaN(pullTimeMs)) pullTimeMs = Date.now();
 
-        const category = normalizeBannerId(p.poolId);
-        if (!pullsByCategory[category]) pullsByCategory[category] = [];
-        pullsByCategory[category].push({ ...p, time: pullTimeMs });
+        // ВАЖНО: Используем getDistinctBannerId вместо normalizeBannerId
+        // Это найдет 'special_banner_01' вместо 'special' основываясь на времени
+        // p передается как объект, так как getDistinctBannerId ожидает pull.time и pull.poolId
+        const pullWithCorrectTime = { ...p, time: pullTimeMs };
+        const specificBannerId = getDistinctBannerId(pullWithCorrectTime, serverId);
+        
+        if (!pullsByBanner[specificBannerId]) pullsByBanner[specificBannerId] = [];
+        
+        // Сохраняем
+        pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
-    // 2. Обрабатываем каждую категорию
-    for (const [category, rawPulls] of Object.entries(pullsByCategory)) {
+    // 2. Обработка каждой группы (теперь это конкретные баннеры)
+    for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
         
-        // 2.1 Считаем математику (получаем статистику и список с Pity)
-        // ВАЖНО: rawPulls здесь сортируются внутри calculateMath
-        const calculationResult = calculateMath(rawPulls, category, serverId);
+        // 2.1 Считаем математику для этого КОНКРЕТНОГО баннера
+        // calculateMath теперь получит ID типа "special_banner_01"
+        const calculationResult = calculateMath(rawPulls, bannerId, serverId);
         const { stats, enrichedPulls } = calculationResult;
 
-        // 2.2 Получаем дату последней учтенной крутки из БД
+        // 2.2 Получаем данные о последней обработке
         const currentUserStat = await prisma.userBannerStat.findUnique({
-            where: { uid_bannerId: { uid, bannerId: category } }
+            where: { uid_bannerId: { uid, bannerId } }
         });
 
-        // Работаем с BigInt аккуратно (преобразуем в Number для сравнения, если таймстемпы влезают в JS Number, а они влезают)
         const lastTime = Number(currentUserStat?.lastProcessedPullTime || 0);
 
-        // 2.3 Выделяем только НОВЫЕ крутки для Глобала
+        // 2.3 Фильтруем новые крутки
         const newGlobalPulls = enrichedPulls.filter(p => p.time > lastTime);
 
-        // Если это первый раз юзера в этом баннере -> +1 к юзерам
+        // Если юзер впервые крутит ЭТОТ КОНКРЕТНЫЙ баннер -> +1 totalUsers глобально
         if (!currentUserStat && newGlobalPulls.length > 0) {
              await prisma.globalBannerStats.upsert({
-                where: { bannerId: category },
-                create: { bannerId: category, totalUsers: 1 },
+                where: { bannerId },
+                create: { bannerId, totalUsers: 1 },
                 update: { totalUsers: { increment: 1 } }
              });
         }
 
-        // 2.4 Обновляем Глобальную Статистику (если есть новые)
+        // 2.4 Обновляем Глобальную Статистику (Дельта)
         if (newGlobalPulls.length > 0) {
-            await processGlobalDelta(uid, category, newGlobalPulls, serverId);
+            await processGlobalDelta(uid, bannerId, newGlobalPulls, serverId);
         }
 
-        // 2.5 Обновляем Локальную Статистику Юзера (перезапись)
-        // Находим самое позднее время среди всех круток
+        // 2.5 Обновляем Локальную Статистику Юзера
         const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
 
         await prisma.userBannerStat.upsert({
-            where: { uid_bannerId: { uid, bannerId: category } },
+            where: { uid_bannerId: { uid, bannerId } },
             update: {
                 totalPulls: stats.totalPulls,
                 total6: stats.total6,
@@ -423,11 +434,11 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
                 won5050: stats.won5050,
                 total5050: stats.total5050,
                 lastUpdate: new Date(),
-                lastProcessedPullTime: BigInt(maxTimeInBatch) // Сохраняем "Закладку"
+                lastProcessedPullTime: BigInt(maxTimeInBatch)
             },
             create: {
                 uid,
-                bannerId: category,
+                bannerId,
                 totalPulls: stats.totalPulls,
                 total6: stats.total6,
                 sumPity6: stats.sumPity6,
