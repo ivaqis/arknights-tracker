@@ -1,22 +1,17 @@
 <script>
     import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
-    import { onMount } from "svelte";
     
-    // COMPONENTS
     import Select from "$lib/components/Select.svelte";
     import Icon from "$lib/components/Icons.svelte";
     import Images from "$lib/components/Images.svelte"; 
     import Button from "$lib/components/Button.svelte";
 
-    // DATA
     import { characters } from "$lib/data/characters";
     import { currencies } from "$lib/data/items/currencies";
     import { banners } from "$lib/data/banners";
     import { bannerTypes } from "$lib/data/bannerTypes";
-    import { API_BASE } from "$lib/api"; // Убедись, что у тебя есть базовый URL API
-
-    // --- ЛОГИКА ---
+    import { API_BASE } from "$lib/api";
 
     $: typeOptions = bannerTypes.map(bt => ({
         value: bt.id, 
@@ -34,10 +29,10 @@
 
     let selectedBannerId = "";
     
-    // Автовыбор и сброс
     $: if (bannerOptions.length > 0) {
-        const valid = bannerOptions.find(o => o.value === selectedBannerId);
-        if (!valid) selectedBannerId = bannerOptions[0].value;
+        if (!bannerOptions.find(o => o.value === selectedBannerId)) {
+             selectedBannerId = bannerOptions[0].value;
+        }
     } else {
         selectedBannerId = "";
     }
@@ -48,7 +43,6 @@
 
     const oroberyl = currencies.find((c) => c.id === "oroberyl");
 
-    // --- STATE ДАННЫХ ---
     let stats = {
         totalUsers: 0,
         totalPulls: 0,
@@ -58,51 +52,48 @@
         rates: {
             sixStar: { percent: "0.00", count: 0 },
             fiveStar: { percent: "0.00", count: 0 }
-        }
+        },
+        timeline: [],
+        pityDist: []
     };
     let isLoading = false;
 
-    // --- ЗАГРУЗКА С БЭКЕНДА ---
     async function fetchStats(bannerId) {
         if (!bannerId) return;
         isLoading = true;
         try {
-            // Запрос на твой сервер
             const res = await fetch(`${API_BASE}/api/global/stats?bannerId=${bannerId}`);
             const json = await res.json();
             
             if (json.code === 0) {
                 const d = json.data;
+                const total = d.totalPulls || 0;
                 
-                // Считаем проценты
-                const r6 = d.totalPulls > 0 ? (d.count6 / d.totalPulls * 100).toFixed(3) : "0.00";
-                const r5 = d.totalPulls > 0 ? (d.count5 / d.totalPulls * 100).toFixed(3) : "0.00";
-
-                // Считаем WinRate и TotalObtained для featured персонажа
+                const r6 = total > 0 ? (d.total6 / total * 100).toFixed(3) : "0.00";
+                const r5 = total > 0 ? (d.total5 / total * 100).toFixed(3) : "0.00";
+                
                 let obtained = 0;
-                let winRate = 0;
-                
-                if (featuredChar && d.sixStarNames) {
-                    // Ищем имя персонажа в статистике (нужно точное совпадение имен!)
-                    // В базе и в файле characters.js имена должны совпадать
-                    const charName = featuredChar.name; 
-                    obtained = d.sixStarNames[charName] || 0;
-                    
-                    // Winrate: (Featured Count / Total 6* Count) * 100
-                    // Это упрощенная формула. Для честных 50/50 нужна сложная логика гарантов.
-                    winRate = d.count6 > 0 ? (obtained / d.count6 * 100).toFixed(0) : 0;
+                if (featuredChar && d.items6) {
+                    const charStat = d.items6.find(i => i.name === featuredChar.name); 
+                    obtained = charStat ? charStat.count : 0;
                 }
+
+                // Win Rate рассчитываем как Лимитки / (Лимитки + Стандарт)
+                const total5050 = (d.limitedCount + d.lost5050);
+                const winRate = total5050 > 0 ? (d.limitedCount / total5050 * 100).toFixed(0) : 0;
 
                 stats = {
                     totalUsers: d.totalUsers,
                     totalPulls: d.totalPulls,
-                    median6: d.median6,
+                    median6: d.medianPity || 0,
                     winRate5050: winRate,
                     totalObtained: obtained,
                     rates: {
-                        sixStar: { percent: r6, count: d.count6 },
-                        fiveStar: { percent: r5, count: d.count5 }
-                    }
+                        sixStar: { percent: r6, count: d.total6 },
+                        fiveStar: { percent: r5, count: d.total5 }
+                    },
+                    timeline: d.timeline || [],
+                    pityDist: d.pityDistribution || []
                 };
             }
         } catch (e) {
@@ -112,15 +103,29 @@
         }
     }
 
-    // Реактивно запускаем фетч при смене баннера
     $: if (selectedBannerId) {
         fetchStats(selectedBannerId);
     }
 
     const fmt = (num) => num ? num.toLocaleString('ru-RU') : "0";
+
+    function getLinePath(data, width, height) {
+        if (!data || data.length < 2) return "";
+        const counts = data.map(d => d.count);
+        const max = Math.max(...counts, 1);
+        const step = width / (data.length - 1);
+        
+        let d = `M 0 ${height - (counts[0] / max * height)}`;
+        for (let i = 1; i < data.length; i++) {
+            const x = i * step;
+            const y = height - (counts[i] / max * height);
+            d += ` L ${x} ${y}`;
+        }
+        return d;
+    }
 </script>
 
-<div class="max-w-[1600px] justify-start pb-20">
+<div class="w-full max-w-[1800px] px-6 pb-20">
     
     <div class="flex items-center gap-4 mb-8">
         <Button variant="roundSmall" color="white" onClick={() => goto("/records")}>
@@ -128,28 +133,27 @@
                 <path d="M15 18l-6-6 6-6" />
             </svg>
         </Button>
-
-        <h2 class="font-sdk text-5xl tracking-wide text-[#21272C]">
-            {$t("global.title")}
+        <h2 class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
+            {$t("global.title") || "Глобальная статистика"}
         </h2>
     </div>
 
-    <div class="flex flex-col md:flex-row gap-4 mb-8 max-w-2xl">
-        <div class="w-full md:w-1/2">
+    <div class="flex flex-col sm:flex-row gap-4 mb-8 max-w-2xl">
+        <div class="w-full sm:w-1/2">
             <Select 
                 options={typeOptions} 
                 bind:value={selectedType} 
                 variant="white"
-                placeholder={$t("global.selectType")}
+                placeholder={$t("global.selectType") || "Выберите тип"}
             />
         </div>
-        <div class="w-full md:w-1/2">
+        <div class="w-full sm:w-1/2">
             {#key selectedType}
                 <Select 
                     options={bannerOptions} 
                     bind:value={selectedBannerId} 
                     variant="white"
-                    placeholder={$t("global.selectBanner")}
+                    placeholder={$t("global.selectBanner") || "Выберите баннер"}
                 />
             {/key}
         </div>
@@ -157,134 +161,183 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         
-        <div class="lg:col-span-3 space-y-4">
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
             
-            {#if selectedType === 'special' && featuredChar}
-                <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex items-center gap-4 relative overflow-hidden group">
-                    <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#D84C38]"></div>
-                    
-                    <div class="w-16 h-16 bg-gray-100 rounded border border-gray-200 overflow-hidden shrink-0">
-                         <img 
-                            src={featuredChar.icon} 
-                            alt={featuredChar.name} 
-                            class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-500" 
-                         />
-                    </div>
-                    
-                    <div>
-                        <h3 class="font-bold text-lg text-[#21272C] leading-none mb-1">{featuredChar.name}</h3>
-                        <div class="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-1">
-                            {$t("global.totalObtained")}
+            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col justify-between h-[160px] relative overflow-hidden group">
+                <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#D84C38]"></div>
+                
+                {#if featuredChar}
+                    <div class="flex items-start gap-3">
+                        <div class="w-12 h-12 bg-gray-100 dark:bg-[#2C2C2C] dark:border-[#444444] rounded border border-gray-200 overflow-hidden shrink-0">
+                             <Images item={featuredChar} variant="avatar" className="w-full h-full object-cover" />
                         </div>
-                        <div class="font-sdk text-2xl font-bold leading-none text-[#21272C]">
-                            {isLoading ? "..." : fmt(stats.totalObtained)}
+                        <div>
+                            <div class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] leading-tight">{featuredChar.name}</div>
+                            <div class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-1">{$t("global.totalObtained") || "Всего получено"}</div>
+                            <div class="font-nums font-bold text-xl text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalObtained)}</div>
                         </div>
                     </div>
-                </div>
-            {/if}
-
-            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 text-sm">
-                
-                <div class="flex justify-between items-center py-3 border-b border-gray-50">
-                    <span class="font-medium text-gray-600">{$t("global.median6")}</span>
-                    <span class="font-bold font-nums text-[#21272C]">{isLoading ? "..." : stats.median6} {$t("global.pull")}</span>
-                </div>
-                
-                <div class="flex justify-between items-center py-3 border-b border-gray-50">
-                    <span class="font-medium text-gray-600">{$t("global.totalUsers")}</span>
-                    <span class="font-bold font-nums text-[#21272C]">{isLoading ? "..." : fmt(stats.totalUsers)}</span>
-                </div>
-
-                <div class="flex justify-between items-center py-3 border-b border-gray-50">
-                    <span class="font-medium text-gray-600">{$t("global.totalPulls")}</span>
-                    <span class="font-bold font-nums text-[#21272C]">{isLoading ? "..." : fmt(stats.totalPulls)}</span>
-                </div>
-
-                <div class="flex justify-between items-center py-3 border-b border-gray-50">
-                    <span class="font-medium text-gray-600">{$t("global.spent")}</span>
-                    <div class="flex items-center gap-2 font-bold font-nums text-[#21272C]">
-                        <Images item={oroberyl} category="currencies" size={20} />
-                        {isLoading ? "..." : fmt(stats.totalPulls * 500)}
-                    </div>
-                </div>
-
-                {#if selectedType === 'special'}
-                    <div class="flex justify-between items-center py-3 pt-3">
-                        <span class="font-medium text-gray-600">{$t("global.winRate")}</span>
-                        <span class="font-bold font-nums text-[#D0926E]">{isLoading ? "..." : stats.winRate5050}%</span>
+                    <div class="mt-auto">
+                         <div class="text-[10px] text-gray-500 dark:text-[#B7B6B3]">
+                             <span class="font-bold">{stats.winRate5050}%</span> {$t("global.won5050Label") || "игроков выиграли 50/50"}
+                         </div>
+                         <div class="w-full h-1 bg-gray-100 dark:bg-[#444444] rounded-full mt-1 overflow-hidden">
+                             <div class="h-full bg-[#D84C38]" style="width: {stats.winRate5050}%"></div>
+                         </div>
                     </div>
                 {/if}
             </div>
 
-            <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 h-40 flex flex-col justify-between">
-                <div class="text-xs font-bold text-gray-800 uppercase tracking-wide">{$t("global.activity")}</div>
-                <div class="flex-1 w-full flex items-end justify-between px-1 pb-1 pt-2">
-                     <svg viewBox="0 0 100 40" class="w-full h-full overflow-visible" preserveAspectRatio="none">
-                        <path d="M0,35 Q20,15 40,25 T80,10 T100,30" fill="none" stroke="#21272C" stroke-width="2" vector-effect="non-scaling-stroke" />
-                        <path d="M0,35 Q20,15 40,25 T80,10 T100,30 V40 H0 Z" fill="#21272C" fill-opacity="0.05" stroke="none" />
-                        <circle cx="0" cy="35" r="2" fill="#21272C" />
-                        <circle cx="40" cy="25" r="2" fill="#21272C" />
-                        <circle cx="80" cy="10" r="2" fill="#21272C" />
-                        <circle cx="100" cy="30" r="2" fill="#21272C" />
-                     </svg>
+            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center">
+                <div class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3] uppercase mb-2">
+                    {$t("global.percent6") || "Процент 6*"}
+                </div>
+                <div class="text-3xl font-bold font-nums text-[#21272C] dark:text-[#FDFDFD] mb-1">
+                    {stats.rates.sixStar.percent}%
+                </div>
+                <div class="text-[10px] text-gray-400 dark:text-[#888]">
+                    {$t("global.total6") || "Всего 6*"}: <span class="font-nums">{fmt(stats.rates.sixStar.count)}</span>
                 </div>
             </div>
+
+            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center gap-3 text-sm">
+                 <div class="flex justify-between items-center">
+                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.median6") || "Медиана 6*"}</span>
+                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.median6} <span class="text-[10px] font-normal text-gray-400">{$t("global.pullShort") || "кр."}</span></span>
+                 </div>
+                 <div class="flex justify-between items-center">
+                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.totalUsers") || "Всего пользователей"}</span>
+                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalUsers)}</span>
+                 </div>
+                 <div class="flex justify-between items-center">
+                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.totalPulls") || "Всего круток"}</span>
+                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalPulls)}</span>
+                 </div>
+                 <div class="flex justify-between items-center">
+                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.spent") || "Всего оберилла"}</span>
+                    <div class="flex items-center gap-1 font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">
+                        <Images item={oroberyl} category="currencies" size={14} />
+                        {fmt(stats.totalPulls * 500)}
+                    </div>
+                 </div>
+            </div>
+
+            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center">
+                <div class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3] uppercase mb-2">
+                    {$t("global.percent5") || "Процент 5*"}
+                </div>
+                <div class="text-3xl font-bold font-nums text-[#21272C] dark:text-[#FDFDFD] mb-1">
+                    {stats.rates.fiveStar.percent}%
+                </div>
+                <div class="text-[10px] text-gray-400 dark:text-[#888]">
+                    {$t("global.total5") || "Всего 5*"}: <span class="font-nums">{fmt(stats.rates.fiveStar.count)}</span>
+                </div>
+            </div>
+
+            <div class="col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[200px] flex flex-col">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4">{$t("global.pullsPerDay") || "Круток в день"}</div>
+                <div class="flex-1 w-full relative">
+                    {#if stats.timeline.length > 0}
+                        <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible" preserveAspectRatio="none">
+                            <path 
+                                d={getLinePath(stats.timeline, 100, 100)} 
+                                fill="none" 
+                                class="stroke-[#21272C] dark:stroke-[#FDFDFD]" 
+                                stroke-width="2" 
+                                vector-effect="non-scaling-stroke"
+                            />
+                            <path 
+                                d="{getLinePath(stats.timeline, 100, 100)} V 100 H 0 Z" 
+                                class="fill-[#21272C] dark:fill-[#FDFDFD]" 
+                                fill-opacity="0.05" 
+                                stroke="none" 
+                            />
+                            {#each stats.timeline as point, i}
+                                <circle 
+                                    cx={i * (100 / (stats.timeline.length - 1))} 
+                                    cy={100 - (point.count / Math.max(...stats.timeline.map(t=>t.count), 1) * 100)} 
+                                    r="3" 
+                                    class="fill-[#21272C] dark:fill-[#FDFDFD] hover:scale-150 transition-transform cursor-pointer"
+                                >
+                                    <title>{point.date}: {point.count}</title>
+                                </circle>
+                            {/each}
+                        </svg>
+                        <div class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2">
+                             <span>{stats.timeline[0]?.date}</span>
+                             <span>{stats.timeline[stats.timeline.length - 1]?.date}</span>
+                        </div>
+                    {:else}
+                        <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-[#666] text-xs">{$t("global.noData") || "Нет данных"}</div>
+                    {/if}
+                </div>
+            </div>
+
+            <div class="col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[200px] flex flex-col">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4">{$t("global.pityDist") || "6* персонажей за крутку"}</div>
+                <div class="flex-1 w-full relative flex items-end gap-[1px]">
+                     {#if stats.pityDist.length > 0}
+                        {@const maxCount = Math.max(...stats.pityDist.map(p => p.count), 1)}
+                        {#each Array(80) as _, i}
+                            {@const pity = i + 1}
+                            {@const data = stats.pityDist.find(p => p.pity === pity)}
+                            {@const count = data ? data.count : 0}
+                            {@const heightPct = (count / maxCount) * 100}
+                            
+                            <div class="flex-1 bg-gray-100 dark:bg-[#2C2C2C] relative group flex items-end rounded-t-sm overflow-hidden" style="height: 100%;">
+                                {#if count > 0}
+                                    <div 
+                                        class="w-full bg-[#D4BE48] transition-all duration-500" 
+                                        style="height: {heightPct}%;"
+                                    ></div>
+                                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 bg-black text-white text-[10px] px-1 py-0.5 rounded opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap z-10">
+                                        {pity}: {count}
+                                    </div>
+                                {/if}
+                            </div>
+                        {/each}
+                     {:else}
+                        <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-[#666] text-xs">{$t("global.noData") || "Нет данных"}</div>
+                     {/if}
+                </div>
+                <div class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 px-1">
+                    {#each [1, 10, 20, 30, 40, 50, 60, 70, 80] as mark}
+                        <span>{mark}</span>
+                    {/each}
+                </div>
+            </div>
+
         </div>
 
-        <div class="lg:col-span-2 space-y-4">
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 relative overflow-hidden h-fit">
-                <div class="absolute right-0 top-0 p-3 opacity-10">
-                    <Icon name="star" style="width: 60px; height: 60px;" />
-                </div>
-                <div class="text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">
-                    <div class="flex items-center gap-1">
-                        <span>6</span>
-                        <Icon name="star" class="w-3 h-3" />
-                        <span>Rate</span>
-                    </div>
-                </div>
-                <div class="flex items-baseline gap-2 mb-2">
-                    <span class="text-3xl font-bold font-nums text-[#D84C38]">
-                        {isLoading ? "..." : stats.rates.sixStar.percent}%
-                    </span>
-                </div>
-                <div class="text-[10px] font-medium text-gray-400">
-                    {$t("global.total")}: <span class="text-gray-600 font-nums">{isLoading ? "..." : fmt(stats.rates.sixStar.count)}</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 relative overflow-hidden h-fit">
-                <div class="absolute right-0 top-0 p-3 opacity-10">
-                    <Icon name="star" style="width: 60px; height: 60px;" />
-                </div>
-                <div class="text-xs font-bold text-gray-500 mb-1 uppercase tracking-wider">
-                    <div class="flex items-center gap-1">
-                        <span>5</span>
-                        <Icon name="star" class="w-3 h-3" />
-                        <span>Rate</span>
-                    </div>
-                </div>
-                <div class="flex items-baseline gap-2 mb-2">
-                    <span class="text-3xl font-bold font-nums text-[#FFC107]">
-                         {isLoading ? "..." : stats.rates.fiveStar.percent}%
-                    </span>
-                </div>
-                <div class="text-[10px] font-medium text-gray-400">
-                    {$t("global.total")}: <span class="text-gray-600 font-nums">{isLoading ? "..." : fmt(stats.rates.fiveStar.count)}</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="lg:col-span-7">
-            {#if currentBanner}
-                <div class="bg-[#21272C] rounded-xl overflow-hidden shadow-lg h-[600px] relative">
-                    <img 
-                        src={currentBanner.icon} 
-                        alt={currentBanner.name} 
-                        class="absolute inset-0 w-full h-full object-cover"
+        <div class="lg:col-span-7 h-full min-h-[600px] lg:h-auto">
+             {#if currentBanner}
+                <div class="w-full h-full bg-[#111] dark:bg-[#000] rounded-xl overflow-hidden shadow-lg relative">
+                    <Images 
+                        item={currentBanner} 
+                        variant="banner-card"
+                        className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700"
+                        alt={currentBanner.name}
                     />
+                    
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent pointer-events-none"></div>
+                    
+                    <div class="absolute bottom-8 left-8 text-white max-w-md drop-shadow-lg">
+                        <div class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest w-fit mb-4 border border-white/20">
+                            {currentBanner.type}
+                        </div>
+                        <h1 class="text-5xl font-sdk font-bold leading-none mb-2">
+                            {$t(`banners.${currentBanner.id}`) || currentBanner.name}
+                        </h1>
+                        {#if currentBanner.featured6 && currentBanner.featured6.length}
+                             <div class="text-xl opacity-80">{currentBanner.featured6.join(", ")}</div>
+                        {/if}
+                    </div>
                 </div>
-            {/if}
+             {:else}
+                <div class="w-full h-full bg-gray-100 dark:bg-[#2C2C2C] rounded-xl flex items-center justify-center text-gray-400 dark:text-[#666]">
+                    {$t("global.selectBanner") || "Выберите баннер"}
+                </div>
+             {/if}
         </div>
 
     </div>

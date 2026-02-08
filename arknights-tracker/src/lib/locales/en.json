@@ -25,10 +25,10 @@
     "rating": {
       "ratingTitle": "Your Rating",
       "luckyTotal": "Total Pulls",
-      "luckyMoreThan": "More than {n}% users",
-      "luckyLessThan": "Less than {n}% users",
-      "luckyLuckierThan": "Luckier than {n}% of users Goyfield",
-      "luckyLessLuckierThan": "Less lucky than {n}% of users Goyfield",
+      "luckyMoreThan": "More than {n}% of Goyfield users",
+      "luckyLessThan": "Less than {n}% of Goyfield users",
+      "luckyLuckierThan": "Luckier than {n}% of Goyfield users",
+      "luckyLessLuckierThan": "Less lucky than {n}% of Goyfield users",
       "lucky5050": "Won 50:50",
       "luckyTitle": "Luck",
       "lucky6": "Luck",
@@ -254,9 +254,9 @@
     "upcoming": "Upcoming"
   },
   "banners": {
-    "special_banner_01": "Scars Of The Forge",
-    "special_banner_02": "The Floaty Messenger",
-    "special_banner_03": "Hues Of Passion",
+    "special_1_0_1": "Scars Of The Forge",
+    "special_1_0_3": "The Floaty Messenger",
+    "special_1_0_4": "Hues Of Passion",
     "standard_01": "Basic Headhunting",
     "new_player_01": "New Horizons Headhunting",
     "weponbox_1_0_1": "Smelting Forge Issue",

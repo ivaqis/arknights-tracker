@@ -10,8 +10,8 @@ const rateLimit = require('express-rate-limit');
 const importLimiter = rateLimit({
     windowMs: 60 * 1000,
     max: 3,
-    message: { 
-        error: "Too many requests. Please wait a minute before trying again." 
+    message: {
+        error: "Too many requests. Please wait a minute before trying again."
     },
     standardHeaders: true,
     legacyHeaders: false,
@@ -23,7 +23,7 @@ function generateStableUid(pulls) {
     if (itemWithUid) return itemWithUid.uid.toString();
 
     const sorted = [...pulls].sort((a, b) => a.timestamp - b.timestamp || Number(a.seqId || 0) - Number(b.seqId || 0));
-    const fingerprintData = sorted.slice(0, 10).map(p => 
+    const fingerprintData = sorted.slice(0, 10).map(p =>
         `${p.timestamp}_${p.poolId}_${p.name}_${p.rarity}`
     ).join('|');
     return 'u_' + crypto.createHash('md5').update(fingerprintData).digest('hex');
@@ -75,7 +75,7 @@ async function fetchGameData(token, lang, serverId) {
         let pageCount = 1;
 
         const isWeaponScan = poolType === 'WEAPON_FETCH_ALL';
-        const currentApiUrl = isWeaponScan 
+        const currentApiUrl = isWeaponScan
             ? 'https://ef-webview.gryphline.com/api/record/weapon'
             : 'https://ef-webview.gryphline.com/api/record/char';
 
@@ -99,14 +99,14 @@ async function fetchGameData(token, lang, serverId) {
                 });
 
                 const result = response.data;
-                
+
                 if (result.code !== 0) {
-                    hasMore = false; 
-                    break; 
+                    hasMore = false;
+                    break;
                 }
 
                 const list = result.data?.list || [];
-                
+
                 const newItems = list.filter(item => {
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
                     return !visitedIds.has(uniqueKey);
@@ -128,14 +128,14 @@ async function fetchGameData(token, lang, serverId) {
 
                     return {
                         ...item,
-                        name: item.name || item.charName || item.weaponName, 
+                        name: item.name || item.charName || item.weaponName,
                         poolId: finalPoolId,
                         itemType: isWeaponScan ? 'weapon' : 'character'
                     };
                 });
 
                 poolPulls = [...poolPulls, ...listWithMeta];
-                
+
                 hasMore = result.data?.hasMore;
                 if (newItems.length === 0) hasMore = false;
                 else if (list.length > 0) lastId = list[list.length - 1].seqId;
@@ -144,7 +144,7 @@ async function fetchGameData(token, lang, serverId) {
                 pageCount++;
                 if (pageCount > 2000) hasMore = false;
 
-                await sleep(50); 
+                await sleep(50);
 
             } catch (err) {
                 console.error(`Error scanning ${poolLabel}: ${err.message}`);
@@ -156,9 +156,9 @@ async function fetchGameData(token, lang, serverId) {
 
     try {
         const results = await Promise.all(POOL_TYPES.map(type => fetchPool(type)));
-        
+
         const allPulls = results.flat();
-        
+
         return allPulls;
     } catch (e) {
         console.error("Parallel fetch failed", e);
@@ -170,16 +170,16 @@ app.post('/api/import', importLimiter, async (req, res) => {
     const { rawUrl } = req.body;
 
     let usedServerId = null;
-    
+
     try {
         const parsedUrl = new URL(rawUrl);
         if (!parsedUrl.hostname.endsWith('hg-game.com') && !parsedUrl.hostname.endsWith('gryphline.com')) {
             return res.status(400).json({ error: "Invalid domain" });
         }
-        
+
         const token = parsedUrl.searchParams.get('token') || parsedUrl.searchParams.get('u8_token');
         const lang = 'en-us';
-        
+
         if (!token) return res.status(400).json({ error: "No token found in URL" });
         const urlServerId = parsedUrl.searchParams.get('server_id');
         const serverCandidates = new Set();
@@ -190,13 +190,13 @@ app.post('/api/import', importLimiter, async (req, res) => {
         serverCandidates.add('3');
         serverCandidates.add('2');
         console.log(`\n--- New Import Request ---`);
-        
+
         let allPulls = [];
         let usedServerId = null;
         for (const serverId of serverCandidates) {
             console.log(`Checking Server ID: ${serverId}...`);
             const pulls = await fetchGameData(token, lang, serverId);
-            
+
             if (pulls.length > 0) {
                 console.log(`✅ Data found on Server ID: ${serverId}`);
                 allPulls = pulls;
@@ -237,8 +237,8 @@ app.post('/api/import', importLimiter, async (req, res) => {
     } catch (error) {
         console.error("Critical Server Error:", error);
         await logImportError(rawUrl, error, usedServerId);
-        res.status(500).json({ 
-            error: "Internal Server Error", 
+        res.status(500).json({
+            error: "Internal Server Error",
             message: error.message
         });
     }
@@ -292,7 +292,7 @@ async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
 
         if (p.rarity === 6) {
             d_total6++;
-            
+
             if (p.pity) {
                 pityUpdates6[p.pity] = (pityUpdates6[p.pity] || 0) + 1;
             }
@@ -308,7 +308,7 @@ async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
         }
         if (p.rarity === 5) d_total5++;
     });
-    
+
     await prisma.globalBannerStats.upsert({
         where: { bannerId },
         create: {
@@ -318,7 +318,7 @@ async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
             total5: d_total5,
             limitedCount: d_limited,
             lost5050: d_lost,
-            totalUsers: 1 
+            totalUsers: 1
         },
         update: {
             totalPulls: { increment: d_totalPulls },
@@ -362,7 +362,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
 
     // 1. ГРУППИРОВКА ПО КОНКРЕТНЫМ БАННЕРАМ (Specific Banner ID)
     const pullsByBanner = {};
-    
+
     // Получаем смещение сервера один раз
     const offset = getServerOffset(serverId);
 
@@ -373,7 +373,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         else if (p.timestamp) pullTimeMs = Number(p.timestamp) * 1000;
         else if (p.ts) pullTimeMs = Number(p.ts) * 1000;
         else if (p.time) pullTimeMs = new Date(p.time).getTime();
-        
+
         if (!pullTimeMs || isNaN(pullTimeMs)) pullTimeMs = Date.now();
 
         // ВАЖНО: Используем getDistinctBannerId вместо normalizeBannerId
@@ -381,16 +381,16 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         // p передается как объект, так как getDistinctBannerId ожидает pull.time и pull.poolId
         const pullWithCorrectTime = { ...p, time: pullTimeMs };
         const specificBannerId = getDistinctBannerId(pullWithCorrectTime, serverId);
-        
+
         if (!pullsByBanner[specificBannerId]) pullsByBanner[specificBannerId] = [];
-        
+
         // Сохраняем
         pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
     // 2. Обработка каждой группы (теперь это конкретные баннеры)
     for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
-        
+
         // 2.1 Считаем математику для этого КОНКРЕТНОГО баннера
         // calculateMath теперь получит ID типа "special_banner_01"
         const calculationResult = calculateMath(rawPulls, bannerId, serverId);
@@ -408,11 +408,11 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
 
         // Если юзер впервые крутит ЭТОТ КОНКРЕТНЫЙ баннер -> +1 totalUsers глобально
         if (!currentUserStat && newGlobalPulls.length > 0) {
-             await prisma.globalBannerStats.upsert({
+            await prisma.globalBannerStats.upsert({
                 where: { bannerId },
                 create: { bannerId, totalUsers: 1 },
                 update: { totalUsers: { increment: 1 } }
-             });
+            });
         }
 
         // 2.4 Обновляем Глобальную Статистику (Дельта)
@@ -421,7 +421,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         }
 
         // 2.5 Обновляем Локальную Статистику Юзера
-        const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
+        const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time;
 
         await prisma.userBannerStat.upsert({
             where: { uid_bannerId: { uid, bannerId } },
@@ -455,7 +455,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
 
 function parseDateWithServer(dateStr, offset) {
     if (!dateStr) return null;
-    
+
     if (dateStr.includes("Z") || dateStr.includes("+")) return new Date(dateStr);
 
     const sign = offset >= 0 ? "+" : "-";
@@ -466,7 +466,7 @@ function parseDateWithServer(dateStr, offset) {
 
 function findBannerConfigByTime(timestamp, categoryContext, offset) {
     const time = new Date(timestamp).getTime();
-    const BUFFER = 12 * 60 * 60 * 1000; 
+    const BUFFER = 12 * 60 * 60 * 1000;
 
     let targetType = null;
     if (categoryContext) {
@@ -481,20 +481,20 @@ function findBannerConfigByTime(timestamp, categoryContext, offset) {
             const isBannerWeapon = b.type === 'weapon' || (b.id && b.id.includes('weap'));
             if (targetType === 'weapon' && !isBannerWeapon) return false;
             if (targetType !== 'weapon' && isBannerWeapon) return false;
-            
+
             if (targetType === 'standard' && b.type !== 'standard') return false;
             if (targetType === 'special' && b.type !== 'special') return false;
         }
 
         const start = parseDateWithServer(b.startTime, offset).getTime();
         const end = b.endTime ? parseDateWithServer(b.endTime, offset).getTime() : Infinity;
-        
+
         return time >= (start - BUFFER) && time <= (end + BUFFER);
     });
 
     if (candidates.length > 0) {
-        candidates.sort((a, b) => 
-            parseDateWithServer(b.startTime, offset).getTime() - 
+        candidates.sort((a, b) =>
+            parseDateWithServer(b.startTime, offset).getTime() -
             parseDateWithServer(a.startTime, offset).getTime()
         );
         return candidates[0];
@@ -512,62 +512,53 @@ function getDistinctBannerId(pull, serverId) {
     }
     const offset = getServerOffset(serverId);
     const foundBanner = findBannerConfigByTime(pull.time, rawId, offset);
-    
+
     if (foundBanner) return foundBanner.id;
 
     const d = new Date(Number(pull.time));
-    return `gen_${rawId}_${d.getFullYear()}_${d.getMonth()}_w${Math.floor(d.getDate()/7)}`; 
+    return `gen_${rawId}_${d.getFullYear()}_${d.getMonth()}_w${Math.floor(d.getDate() / 7)}`;
 }
 
-// Вставь это в server.js вместо старой calculateMath
-
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // 1. Сортировка по времени (Обязательно)
+    // 1. Сортировка по времени
     pulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
 
     const isWeaponType = categoryId.includes('weap') || categoryId.includes('wepon') || categoryId.includes('constant');
     const hardPityLimit = isWeaponType ? 80 : 120;
 
-    // Временные переменные для статистики
     let total = pulls.length;
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
-    
-    // Счетчики для прохода
+
     let currentPity6 = 0, currentPity5 = 0;
-    let rateUpCounter = 0; 
-    
-    // Для определения 50/50 нам нужен конфиг баннеров. 
-    // Предполагаем, что BANNERS импортирован в начале файла: const { BANNERS } = require('./banners');
-    
-    // Массив, куда мы сложим крутки с добавленными данными (pity, status)
+    let rateUpCounter = 0;
+
+    // --- ИСПРАВЛЕНИЕ: ПОИСК КОНФИГА ---
+    // Ищем конфиг прямо по categoryId (это specific ID, например 'special_banner_01')
+    let bannerConfig = BANNERS.find(b => b.id === categoryId);
+
+    // Если не нашли прямого совпадения, пробуем найти generic (для старых записей)
+    // Но для "Won 50:50" нам критически важен именно featured список
+    const featured6 = bannerConfig?.featured6 || [];
+    const normFeatured = featured6.map(id => normalize(id));
+
+    // --- DEBUG LOG (Удалишь, когда заработает) ---
+    if (featured6.length > 0) {
+        // console.log(`[Math Debug] Banner: ${categoryId}, Featured: [${normFeatured.join(', ')}]`);
+    } else if (categoryId.includes('special') || categoryId.includes('wepon')) {
+        console.warn(`[Math Warning] Banner ${categoryId} has NO featured characters defined! 50/50 will be 0%.`);
+    }
+    // ---------------------------------------------
+
     const enrichedPulls = [];
 
-    // Хелпер для поиска конфига (упрощенный для бэка)
-    const getFeaturedList = (pull) => {
-        // ... (тут можно вставить логику поиска по времени, как на фронте)
-        // Но для скорости на бэке часто достаточно проверить ID
-        const uniqueKey = getDistinctBannerId(pull, serverId);
-        const banner = BANNERS.find(b => b.id === uniqueKey);
-        // Если не нашли по ID, ищем по rawPoolId (для старых)
-        if (banner) return banner.featured6 || [];
-        
-        // Фоллбек логика (если нужно) - пока пустой
-        return [];
-    };
-
     pulls.forEach((pull) => {
-        const p = { ...pull }; // Копия крутки
+        const p = { ...pull };
         const itemName = normalize(p.name);
-        
-        // Логика isFree (как на фронте)
-        // Для простоты на бэке, чтобы не хранить bannerSpecificCounts для всей истории,
-        // можно пропустить isFree или реализовать упрощенно. 
-        // Если критично - нужно считать countInThisBanner. 
-        // Допустим, мы считаем isFree = false для надежности на бэке, или реализуем счетчик:
-        // (Для полной точности код станет сложнее, пока считаем как обычные)
-        const isFreePull = false; 
+
+        // isFree пропускаем для скорости, либо реализуй счетчик countInThisBanner как в updateAggregatedStats
+        const isFreePull = false;
 
         let isHardPityTriggered = false;
 
@@ -580,21 +571,26 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
         if (p.rarity === 6) {
             count6++;
-            
-            // Текущий пити для этой леги
+
             const thisPity = currentPity6 + (isFreePull ? 0 : 1);
             sumPity6 += thisPity;
-            p.pity = thisPity; // ЗАПИСЫВАЕМ ПИТИ В ОБЪЕКТ
+            p.pity = thisPity;
 
-            const featuredList = getFeaturedList(p);
-            // Простая проверка featured
-            const isFeatured = featuredList.some(fid => normalize(fid) === itemName); // Упрощено, на фронте сложнее проверка
+            // --- ПРОВЕРКА НА FEATURED ---
+            // Сравниваем нормализованное имя выпавшего с нормализованным списком
+            const isFeatured = normFeatured.includes(itemName);
 
-            total5050++; 
+            // Для дебага, если стата 0%
+            if (p.rarity === 6 && !isFeatured && (categoryId.includes('special') || isWeaponType)) {
+                // console.log(`[Math Loss] Item: ${itemName} is NOT in [${normFeatured.join(', ')}]`);
+            }
+            // ----------------------------
+
+            total5050++;
 
             if (isFeatured) {
                 if (isHardPityTriggered) {
-                    p.gachaStatus = "guaranteed"; // Для дебага
+                    p.gachaStatus = "guaranteed";
                 } else {
                     won5050++;
                     p.gachaStatus = "won";
@@ -602,13 +598,12 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 rateUpCounter = 0;
             } else {
                 p.gachaStatus = "lost";
-                // rateUpCounter не сбрасывается
             }
 
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
-            p.pity = currentPity6; // Записываем текущий отсчет (1, 2, 3...)
+            p.pity = currentPity6;
         }
 
         if (p.rarity === 5) {
@@ -618,7 +613,7 @@ function calculateMath(pulls, categoryId, serverId = '3') {
         } else {
             if (!isFreePull) currentPity5++;
         }
-        
+
         enrichedPulls.push(p);
     });
 
@@ -640,18 +635,18 @@ const normalize = (str) => {
 function normalizeBannerId(rawId) {
     if (!rawId) return 'standard';
     const id = String(rawId).toLowerCase().trim();
-    
+
     if (id.includes('weapon') || id.includes('wepon') || id.includes('weap')) {
         if (id.includes('constant') || (id.includes('standard') && !id.includes('special'))) {
-             return 'weap-standard';
+            return 'weap-standard';
         }
         return 'weap-special';
     }
-    
+
     if (id === '2' || id.includes('beginner') || id.includes('new') || id.includes('novice')) return 'new-player';
-    
+
     if (id === '1' || id.includes('standard') || id.includes('permanent')) return 'standard';
-    
+
     return 'special';
 }
 
@@ -702,7 +697,14 @@ app.get('/api/rankings/data', async (req, res) => {
         const myTotalIndex = sortedTotal.findIndex(u => u.uid === uid);
         const rankTotal = ((sortedTotal.length - 1 - myTotalIndex) / sortedTotal.length * 100);
 
-        const valid5050 = usersWithAvg.filter(u => u.total5050 > 0).sort((a, b) => b.winRate - a.winRate);
+        const valid5050 = usersWithAvg
+            .filter(u => u.total5050 > 0)
+            .sort((a, b) => {
+                if (b.winRate !== a.winRate) {
+                    return b.winRate - a.winRate;
+                }
+                return b.total5050 - a.total5050;
+            });
         const my5050Index = valid5050.findIndex(u => u.uid === uid);
         let rank5050 = null;
         if (my5050Index !== -1) {
@@ -775,9 +777,9 @@ app.get('/api/global/stats', async (req, res) => {
         });
 
         if (!mainStats) {
-            return res.json({ 
-                totalPulls: 0, totalUsers: 0, 
-                medianPity: 0, 
+            return res.json({
+                totalPulls: 0, totalUsers: 0,
+                medianPity: 0,
                 items6: [], items5: [], items4: [],
                 timeline: [], pityDist: []
             });
@@ -798,7 +800,7 @@ app.get('/api/global/stats', async (req, res) => {
             where: { bannerId, rarity: 6 },
             orderBy: { pity: 'asc' }
         });
-        
+
         let cumulativeCount = 0;
         let medianPity = 0;
         let medianFound = false;
@@ -806,7 +808,7 @@ app.get('/api/global/stats', async (req, res) => {
 
         const pityDist = pityDistRaw.map(p => {
             const chance = mainStats.total6 > 0 ? (p.count / mainStats.total6) * 100 : 0;
-            
+
             cumulativeCount += p.count;
             if (!medianFound && cumulativeCount >= halfTotal6) {
                 medianPity = p.pity;
@@ -826,8 +828,8 @@ app.get('/api/global/stats', async (req, res) => {
         });
 
         const formatItems = (rarity) => {
-            const totalInRarity = rarity === 6 ? mainStats.total6 : rarity === 5 ? mainStats.total5 : 0; 
-            
+            const totalInRarity = rarity === 6 ? mainStats.total6 : rarity === 5 ? mainStats.total5 : 0;
+
             const filtered = itemsRaw.filter(i => i.rarity === rarity);
             const sumCount = filtered.reduce((a, b) => a + b.count, 0) || 1;
             const base = (rarity === 6 || rarity === 5) ? (rarity === 6 ? mainStats.total6 : mainStats.total5) : sumCount;
