@@ -6,6 +6,7 @@
   import { promocodes } from "$lib/data/promocodes.js";
   import { currencies } from "$lib/data/items/currencies";
   import { progression } from "$lib/data/items/progression";
+  import { fade } from "svelte/transition";
 
   import Icon from "$lib/components/Icons.svelte";
   import Images from "$lib/components/Images.svelte";
@@ -15,58 +16,70 @@
 
   let now = new Date();
   let timer;
-  // Добавляем переменную для хранения текущего сервера (по умолчанию 3 - Global)
-  let currentServerId = "3";
+  let currentServerId = "3"; // 3 = Global, 2 = Asia
 
   const allItems = [...currencies, ...progression];
 
+  // --- 1. ЕДИНАЯ ФУНКЦИЯ ПАРСИНГА ДАТЫ (СЕРДЦЕ ЛОГИКИ) ---
+  function parseWithServerOffset(dateStr) {
+    if (!dateStr) return new Date(9999, 11, 31); 
+
+    // Если дата уже содержит "Z" или "+" (значит она абсолютная), не трогаем её
+    if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
+        return new Date(dateStr);
+    }
+
+    const offset = currentServerId === "2" ? 8 : -5;
+    const sign = offset >= 0 ? "+" : "-";
+    const pad = (n) => String(Math.abs(n)).padStart(2, '0');
+    
+    // Превращаем "2026-03-16 11:59:59" -> "2026-03-16T11:59:59-05:00"
+    // .replace(/-/g, '/') - фикс для Safari, если вдруг формат YYYY-MM-DD не зайдет, но ISO надежнее
+    const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
+    return new Date(iso);
+  }
+
+  // --- 2. ЕДИНАЯ ФУНКЦИЯ ФОРМАТИРОВАНИЯ ТАЙМЕРА ---
+  function formatTimeLeft(endTimeStr) {
+      const end = parseWithServerOffset(endTimeStr);
+      const diff = end - now;
+      
+      if (diff <= 0) return null;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      // Используем единые ключи перевода
+      if (days > 0) return $t("timer.left_d_h", { d: days, h: hours });
+      if (hours > 0) return $t("timer.left_h_m", { h: hours, m: minutes });
+      return $t("timer.left_m", { m: minutes });
+  }
+
   function getRarityStyle(id) {
     const item = allItems.find((i) => i.id === id);
-
     const rarity = item?.rarity || 3;
-
     switch (rarity) {
-      case 5:
-      case 6:
-        return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
-      case 4:
-        return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
-      case 3:
-        return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
-      default:
-        return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
+      case 5: case 6: return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
+      case 4: return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
+      case 3: return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
+      default: return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
     }
   }
 
-  // Обновленная логика активных баннеров с учетом часового пояса
+  // --- 3. ОБНОВЛЕННЫЕ БАННЕРЫ ---
   $: activeBanners = banners
     .filter((b) => {
-      // Определяем смещение: Азия (id 2) = +08:00, Глобал (id 3) = -05:00
-      const offset = currentServerId === "2" ? 8 : -5;
-      
-      const parseWithOffset = (dateStr) => {
-          if (!dateStr) return null;
-          const sign = offset >= 0 ? "+" : "-";
-          const pad = (n) => String(Math.abs(n)).padStart(2, '0');
-          // Превращаем "2026-02-07 12:00:00" в ISO с таймзоной: "2026-02-07T12:00:00+08:00"
-          // Это позволяет браузеру корректно сравнить это время с now (которое в локальном времени пользователя)
-          const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
-          return new Date(iso);
-      };
-
-      const start = parseWithOffset(b.startTime);
-      const end = b.endTime ? parseWithOffset(b.endTime) : new Date(9999, 11, 31);
+      const _ = currentServerId; // Реактивность
+      const start = parseWithServerOffset(b.startTime);
+      const end = b.endTime ? parseWithServerOffset(b.endTime) : new Date(9999, 11, 31);
       
       const isTime = now >= start && now <= end;
-      const isShownOnMain = b.showOnMain === true;
-
-      return isTime && isShownOnMain;
+      return isTime && b.showOnMain === true;
     })
     .sort((a, b) => {
       const priority = { special: 1, weapon: 2 };
-      const pA = priority[a.type] || 99;
-      const pB = priority[b.type] || 99;
-      return pA - pB;
+      return (priority[a.type] || 99) - (priority[b.type] || 99);
     });
 
   let currentBannerIndex = 0;
@@ -92,45 +105,43 @@
 
   let selectedBanner = null;
 
-  $: activePromocodes = promocodes.filter((p) => {
-    const end = p.endTime ? new Date(p.endTime) : new Date(9999, 11, 31);
-    return now <= end;
-  });
+  // --- 4. ТАЙМЕР ДЛЯ БАННЕРА (Использует общую функцию) ---
+  $: currentBannerTimeLeft = (() => {
+    const b = activeBanners[currentBannerIndex];
+    if (!b || !b.endTime) return "";
+    return formatTimeLeft(b.endTime) || ""; 
+  })();
+
+  // --- 5. ПРОМОКОДЫ (Тоже используют общую логику) ---
+  $: activePromocodes = (() => {
+      const _ = currentServerId; // Реактивность
+      return promocodes.filter((p) => {
+        const end = parseWithServerOffset(p.endTime);
+        return now <= end;
+      });
+  })();
 
   function getFormattedDate(dateStr) {
-    const end = new Date(dateStr);
+    const end = parseWithServerOffset(dateStr); // <-- ВАЖНО: Тоже с учетом сервера
     const dateOptions = { month: "short", day: "numeric" };
     return end.toLocaleDateString(undefined, dateOptions);
   }
 
-  function getRemainingTime(dateStr) {
-    const end = new Date(dateStr);
-    const diff = end - now;
-    if (diff <= 0) return "";
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    return `(${days > 0 ? days + " " + $t("home.days") : ""} ${hours} ${$t("home.hours")})`;
+  // Функция для отрисовки времени в карточке промокода
+  function getPromoTimeLabel(dateStr) {
+      const text = formatTimeLeft(dateStr);
+      if (!text) return "";
+      return `(${text})`; // Добавляем скобки, как ты хотел
   }
 
   function sortRewards(rewards) {
     return [...rewards].sort((a, b) => {
       const itemA = allItems.find((i) => i.id === a.id);
       const itemB = allItems.find((i) => i.id === b.id);
-
       const rarityA = itemA?.rarity || 0;
       const rarityB = itemB?.rarity || 0;
-
-      if (rarityB !== rarityA) {
-        return rarityB - rarityA;
-      }
-
-      if (b.count !== a.count) {
-        return b.count - a.count;
-      }
-
-      return 0;
+      if (rarityB !== rarityA) return rarityB - rarityA;
+      return b.count - a.count;
     });
   }
 
@@ -140,23 +151,15 @@
       await navigator.clipboard.writeText(code);
       copiedCode = code;
       setTimeout(() => (copiedCode = null), 2000);
-    } catch (err) {
-      console.error("Failed to copy", err);
-    }
+    } catch (err) { console.error(err); }
   }
 
   onMount(() => {
-    // Считываем настройки сервера при загрузке
     if (typeof localStorage !== 'undefined') {
         const savedServer = localStorage.getItem("ark_server_id");
-        if (savedServer) {
-            currentServerId = savedServer;
-        }
+        if (savedServer) currentServerId = savedServer;
     }
-
-    timer = setInterval(() => {
-      now = new Date();
-    }, 1000 * 60);
+    timer = setInterval(() => { now = new Date(); }, 1000 * 60);
     startBannerRotation();
   });
 
@@ -193,8 +196,14 @@
 
       <div class="overflow-y-auto custom-scrollbar flex-1 p-2">
         {#if activePromocodes.length === 0}
-          <div class="text-center py-10 text-gray-400 dark:text-[#FDFDFD] text-sm">
-            {$t("home.noActiveCodes")}
+          <div class="flex flex-col items-center justify-center py-12 text-gray-400 dark:text-[#7A7A7A]">
+            <div class="mb-3 opacity-60">
+                <Icon name="noData" className="w-10 h-10" />
+            </div>
+            
+            <div class="text-sm font-medium">
+                {$t("home.noActiveCodes")}
+            </div>
           </div>
         {:else}
           {#each activePromocodes as promo}
@@ -285,7 +294,7 @@
                   {$t("home.until")} {getFormattedDate(promo.endTime)}
                 </span>
                 <span class="text-[10px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight">
-                  {getRemainingTime(promo.endTime)}
+                  {getPromoTimeLabel(promo.endTime)}
                 </span>
               </div>
             </div>
@@ -329,17 +338,33 @@
       >
         {#if activeBanners.length > 0}
           {#key currentBannerIndex}
-            <div class="absolute inset-0 transition-opacity duration-500">
-              <Images
-                id={activeBanners[currentBannerIndex].icon}
-                variant="banner-icon"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none"
-              ></div>
-            </div>
-          {/key}
+          <div 
+            class="absolute inset-0"
+            in:fade={{ duration: 200 }} 
+            out:fade={{ duration: 200 }}
+          >
+            <Images
+              id={activeBanners[currentBannerIndex].icon}
+              variant="banner-icon"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none"
+            ></div>
+
+            {#if currentBannerTimeLeft}
+                <div class="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 z-20 pointer-events-none">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-lg">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"></span>
+                        <span class="text-xs font-bold text-white font-nums tracking-wide leading-none drop-shadow-md">
+                            {currentBannerTimeLeft}
+                        </span>
+                    </div>
+                </div>
+            {/if}
+          </div>
+        {/key}
 
           <button
             type="button"

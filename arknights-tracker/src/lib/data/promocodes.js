@@ -11,10 +11,9 @@ export const promocodes = [
             { id: "protoprism", count: 5 },
             { id: "tCreds", count: 30 }
         ],
-        startTime: "2024-01-22T00:00:00Z",
+        startTime: "2024-01-22 00:00:00",
         condition: null,
-        endTime: "2026-01-29T23:59:59Z",
-        timezone: "UTC+0",
+        endTime: "2026-01-29 23:59:59",
         url: null,
     },
     {
@@ -28,10 +27,9 @@ export const promocodes = [
             { id: "protoprism", count: 5 },
             { id: "tCreds", count: 30 }
         ],
-        startTime: "2024-01-22T00:00:00Z",
+        startTime: "2024-01-22 00:00:00",
         condition: null,
-        endTime: "2026-01-29T23:59:59Z",
-        timezone: "UTC+0",
+        endTime: "2026-01-29 23:59:59",
         url: null
     },
     {
@@ -42,10 +40,9 @@ export const promocodes = [
             { id: "intermediateCombatRecord", count: 20 },
             { id: "armsInspKit", count: 20 }
         ],
-        startTime: "2024-01-22T00:00:00Z",
+        startTime: "2024-01-22 00:00:00",
         condition: null,
-        endTime: "2026-03-16T11:59:59Z",
-        timezone: "UTC+0",
+        endTime: "2026-03-16 11:59:59",
         url: null
     },
     {
@@ -55,10 +52,9 @@ export const promocodes = [
             { id: "advancedCombatRecord", count: 2 },
             { id: "armsInspKit", count: 2 }
         ],
-        startTime: "2024-01-22T00:00:00Z",
+        startTime: "2024-01-22 00:00:00",
         condition: "home.conditions.onlyPc",
-        endTime: "2026-03-16T11:59:59Z",
-        timezone: "UTC+0",
+        endTime: "2026-03-16 11:59:59",
         url: null
     }
 ];

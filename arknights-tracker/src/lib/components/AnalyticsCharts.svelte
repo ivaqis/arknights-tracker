@@ -1,25 +1,28 @@
 <!-- src/lib/components/AnalyticsCharts.svelte -->
 <script>
   import { t } from "$lib/i18n";
-  import Icon from "$lib/components/Icons.svelte";
   import { banners } from "$lib/data/banners";
+  import Icon from "$lib/components/Icons.svelte";
 
   export let rawPulls = [];
   export let bannerType = "";
 
+  $: isWeapon = bannerType.toLowerCase().includes("weap") || bannerType.toLowerCase().includes("wepon");
+  $: showHistoryGraph = 
+      bannerType !== "standard" && 
+      bannerType !== "new-player" && 
+      !bannerType.includes("new") && 
+      !isWeapon;
   $: totalCount = rawPulls.length;
   $: count4 = rawPulls.filter((p) => p.rarity === 4).length;
   $: count5 = rawPulls.filter((p) => p.rarity === 5).length;
-
   $: pct4 = totalCount > 0 ? (count4 / totalCount) * 100 : 0;
   $: pct5 = totalCount > 0 ? (count5 / totalCount) * 100 : 0;
-
   $: pieGradient = `conic-gradient(
         #9B83BE 0% ${pct4}%, 
         #E3BC55 ${pct4}% ${pct4 + pct5}%, 
         #D0926E ${pct4 + pct5}% 100%
     )`;
-
   $: timelineData = (() => {
     const relevantBanners = banners.filter((b) => b.type === bannerType);
     const grouped = {};
@@ -98,6 +101,7 @@
 </script>
 
 <div class="grid grid-cols-1 xl:grid-cols-3 gap-6 items-start">
+  <!-- Pie Chart -->
   <div
     class="xl:col-span-1 bg-white rounded-xl shadow-sm border dark:bg-[#383838] dark:border-[#444444] border-gray-100 p-4"
   >
@@ -121,8 +125,14 @@
 
         {#if isPieHovered}
           <div
-            class="absolute left-[90%] top-1/2 -translate-y-1/2 ml-2 bg-white/95 dark:bg-[#383838] dark:border-[#444444] backdrop-blur-sm border border-gray-200 rounded-xl p-3 z-50 min-w-[160px] animate-in fade-in slide-in-from-left-2 duration-200 pointer-events-none"
-          >
+          class="absolute 
+                 z-50 min-w-[160px] p-3 rounded-xl border backdrop-blur-sm shadow-xl
+                 bg-white/95 border-gray-200 
+                 dark:bg-[#383838] dark:border-[#444444] 
+                 pointer-events-none animate-in fade-in zoom-in-95 duration-200
+                 left-1/2 -translate-x-1/2 top-[100%] mt-4
+                 xl:left-[85%] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-0 xl:mt-0 xl:ml-2"
+        >
             <div class="space-y-1.5">
               <div class="flex items-center justify-between gap-3 text-xs">
                 <div class="flex items-center gap-1.5 text-[#D0926E] font-bold">
@@ -210,8 +220,8 @@
     </div>
   </div>
 
-  <!-- 2. Bar Chart Widget -->
-  {#if bannerType !== "standard" && bannerType !== "new-player"}
+  <!-- Bar Chart -->
+  {#if showHistoryGraph}
     <div
       class="xl:col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-4 flex flex-col min-w-0 h-[450px] relative z-0"
     >

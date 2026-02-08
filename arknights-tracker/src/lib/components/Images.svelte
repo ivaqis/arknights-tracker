@@ -1,41 +1,67 @@
 <script>
+    import { onMount } from "svelte";
     import { getImagePath } from "$lib/utils/imageUtils";
+    import Icon from "$lib/components/Icons.svelte";
 
     export let item = null; 
     export let id = null;
     export let variant = "operator-icon"; 
     export let alt = "";
-    export let size = "100%"; // Может прийти число 20 или строка "100%"
+    export let size = "100%";
     export let className = ""; 
     export let style = "";
 
     $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
     $: src = getImagePath(rawId, variant);
 
-    function handleError(e) {
-        if (e.target.dataset.hasError) return;
-        e.target.dataset.hasError = "true";
-        
-        // Для отладки можешь раскомментировать:
-        // console.error(`Image failed: ${src}`);
+    let imgElement;
+    let isLoaded = false;
+    let hasError = false;
+    let instantLoad = false;
 
-        if (variant.includes('banner') || variant.includes('event')) {
-             e.target.style.opacity = "0"; 
-        } else {
-             // Дефолтная заглушка
-             e.target.src = "/images/avatars/default_6star.png";
+    onMount(() => {
+        if (imgElement && imgElement.complete) {
+            isLoaded = true;
+            instantLoad = true;
         }
+    });
+
+    function handleLoad() {
+        isLoaded = true;
     }
 
-    // Исправление для size: если число, добавляем 'px', иначе оставляем как есть
+    function handleError(e) {
+        isLoaded = true;
+        hasError = true;
+    }
+
     $: sizeStyle = typeof size === 'number' ? `width: ${size}px; height: ${size}px;` : `width: ${size}; height: ${size};`;
+    
+    $: transitionClasses = instantLoad 
+        ? "" 
+        : "transition-opacity duration-500";
 </script>
 
-<img
-    {src}
-    alt={alt || rawId}
-    loading="lazy"
-    class="{className} object-cover transition-opacity duration-300"
-    style="{sizeStyle} {style}"
-    on:error={handleError}
-/>
+{#if hasError}
+    <div 
+        class="{className} flex items-center justify-center bg-gray-100 dark:bg-[#3d3d3d] text-gray-400 dark:text-[#7A7A7A]"
+        style="{sizeStyle} {style}"
+    >
+        {#if !variant.includes('banner') && !variant.includes('event')}
+             <Icon name="noData" className="w-1/2 h-1/2 opacity-50" />
+        {/if}
+    </div>
+{:else}
+    <img
+        bind:this={imgElement} 
+        {src}
+        alt={alt || rawId}
+        loading="lazy"
+        decoding="async"
+        draggable="false"
+        class="{className} object-cover {transitionClasses} {isLoaded ? 'opacity-100' : 'opacity-0'}"
+        style="{sizeStyle} {style}"
+        on:load={handleLoad}
+        on:error={handleError}
+    />
+{/if}

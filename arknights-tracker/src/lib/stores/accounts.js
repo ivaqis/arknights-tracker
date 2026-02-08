@@ -66,35 +66,61 @@ function createAccountStore() {
         accounts,
         selectedId,
 
+        createEmptyAccount: () => {
+            accounts.update(list => {
+                let maxNum = 0;
+                const regex = /^Account\s+(\d+)$/;
+                
+                list.forEach(a => {
+                    const match = a.name.match(regex);
+                    if (match) {
+                        const num = parseInt(match[1]);
+                        if (num > maxNum) maxNum = num;
+                    }
+                });
+
+                const newName = `Account ${maxNum + 1}`;
+                const newId = generateId();
+                
+                const newAccount = {
+                    id: newId,
+                    name: newName,
+                    serverUid: null,
+                    serverId: '3'
+                };
+
+                selectedId.set(newId);
+                
+                return [...list, newAccount];
+            });
+        },
+
         addAccount: (gameUid, nickname, serverId = null) => {
             const effectiveServerId = serverId || '3';
             const currentSelectedId = get(selectedId);
 
             accounts.update(list => {
                 const existingIndex = list.findIndex(a => a.serverUid === gameUid);
-
                 if (existingIndex >= 0) {
                     const newList = [...list];
                     newList[existingIndex] = { 
                         ...newList[existingIndex], 
-                        serverId: effectiveServerId
+                        serverId: effectiveServerId 
                     };
                     selectedId.set(newList[existingIndex].id);
                     return newList;
                 }
 
                 const currentAccountIndex = list.findIndex(a => a.id === currentSelectedId);
-                
                 if (currentAccountIndex >= 0) {
                     const currentAcc = list[currentAccountIndex];
                     if (!currentAcc.serverUid) {
-                        console.log(`Linking Game UID ${gameUid} to manual account "${currentAcc.name}"`);
-                        
+                        console.log(`Linking Game UID ${gameUid} to existing slot "${currentAcc.name}"`);
                         const newList = [...list];
                         newList[currentAccountIndex] = {
                             ...currentAcc,
                             serverUid: gameUid,
-                            serverId: effectiveServerId
+                            serverId: effectiveServerId,
                         };
                         return newList;
                     }
@@ -103,7 +129,7 @@ function createAccountStore() {
                 const newId = generateId(); 
                 const newList = [...list, { 
                     id: newId, 
-                    name: nickname, 
+                    name: nickname || `Account ${list.length + 1}`,
                     serverId: effectiveServerId,
                     serverUid: gameUid 
                 }];
@@ -127,6 +153,17 @@ function createAccountStore() {
             if (currentSelected === idToDelete) {
                 selectedId.set(newList[0].id);
             }
+        },
+
+        renameAccount: (id, newName) => {
+            accounts.update(list => {
+                return list.map(acc => {
+                    if (acc.id === id) {
+                        return { ...acc, name: newName };
+                    }
+                    return acc;
+                });
+            });
         },
 
         selectAccount: (id) => {

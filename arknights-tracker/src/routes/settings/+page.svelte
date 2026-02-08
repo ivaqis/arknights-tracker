@@ -289,8 +289,8 @@
         if (!currentAcc) return;
         const newName = prompt($t("settings.account.rename_prompt") || "Enter new account name:", currentAcc.name);
         if (newName && newName.trim() !== "") {
-            accountStore.addAccount(currentAcc.id, newName.trim(), currentAcc.serverId);
-        }
+           accountStore.renameAccount(currentAcc.id, newName.trim());
+       }
     }
 
     let currentSelection;
@@ -306,7 +306,7 @@
         accountStore.selectAccount(newAccountId);
     }
     function handleAddAccount() {
-        accountStore.addAccount();
+        accountStore.createEmptyAccount();
     }
     function openClearModal() {
         showClearModal = true;
@@ -350,22 +350,22 @@
     let tempAccountName = "";
 
     function openRenameModal() {
-        console.log("Opening modal...", $selectedId); // <-- ОТЛАДКА
+        console.log("Opening modal...", $selectedId);
         const currentAcc = $accounts.find((a) => a.id === $selectedId);
         
         if (currentAcc) {
-            console.log("Account found:", currentAcc.name); // <-- ОТЛАДКА
+            console.log("Account found:", currentAcc.name);
             tempAccountName = currentAcc.name;
             showRenameModal = true;
         } else {
-            console.error("Account NOT found!"); // <-- Если упадет сюда, значит проблема в ID
+            console.error("Account NOT found!");
         }
     }
 
     function confirmRename() {
         const currentAcc = $accounts.find((a) => a.id === $selectedId);
         if (currentAcc && tempAccountName.trim() !== "") {
-            accountStore.addAccount(currentAcc.id, tempAccountName.trim(), currentAcc.serverId);
+            accountStore.renameAccount(currentAcc.id, tempAccountName.trim());
         }
         showRenameModal = false;
     }
