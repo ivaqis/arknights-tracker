@@ -124,11 +124,7 @@ async function fetchGameData(token, lang, serverId) {
 
                 const listWithMeta = newItems.map(item => {
                     let finalPoolId;
-                    if (isWeaponScan) {
-                        finalPoolId = item.poolId || item.bannerId; 
-                    } else {
-                        finalPoolId = mapPoolTypeToShort(poolType);
-                    }
+                    finalPoolId = item.poolId || item.bannerId || mapPoolTypeToShort(poolType);
 
                     return {
                         ...item,
@@ -378,6 +374,22 @@ function findBannerConfigByTime(timestamp, categoryContext, offset) {
     return undefined;
 }
 
+function getDistinctBannerId(pull, serverId) {
+    const rawId = pull.poolId || 'unknown';
+    const genericIds = ['special', 'standard', 'weapon', 'weap-special', 'weap-standard', 'new-player', 'E_CharacterGachaPoolType_Special'];
+
+    if (!genericIds.includes(rawId) && !rawId.startsWith('E_')) {
+        return rawId;
+    }
+    const offset = getServerOffset(serverId);
+    const foundBanner = findBannerConfigByTime(pull.time, rawId, offset);
+    
+    if (foundBanner) return foundBanner.id;
+
+    const d = new Date(Number(pull.time));
+    return `gen_${rawId}_${d.getFullYear()}_${d.getMonth()}_w${Math.floor(d.getDate()/7)}`; 
+}
+
 function calculateMath(pulls, categoryId, serverId = '3') {
     pulls.sort((a, b) => {
         const tA = Number(a.time); 
@@ -399,58 +411,48 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
     let currentPity6 = 0;
     let currentPity5 = 0;
-    
     let rateUpPityCounter = 0; 
-
+    
     const bannerSpecificCounts = {};
 
     pulls.forEach((pull) => {
-        const pullTime = Number(pull.time);
-        const uniqueBannerKey = pull.poolId || categoryId; 
+        const itemName = normalize(pull.name);
+        const uniqueBannerKey = getDistinctBannerId(pull, serverId);
+        
         if (!bannerSpecificCounts[uniqueBannerKey]) bannerSpecificCounts[uniqueBannerKey] = 0;
         const countInThisBanner = bannerSpecificCounts[uniqueBannerKey];
+        
         const isSpecialCharBanner = categoryId.includes('special') && !isWeapon;
+        
         const isFreePull = isSpecialCharBanner && (countInThisBanner >= 30 && countInThisBanner < 40);
         
         bannerSpecificCounts[uniqueBannerKey]++;
 
         let isHardPityTriggered = false;
-        
         if (!isFreePull) {
-            if (rateUpPityCounter >= hardPityLimit - 1) {
-                isHardPityTriggered = true;
-            }
+            if (rateUpPityCounter >= hardPityLimit - 1) isHardPityTriggered = true;
             rateUpPityCounter++;
         }
 
         if (pull.rarity === 6) {
             stats.total6++;
             stats.sumPity6 += currentPity6 + (isFreePull ? 0 : 1);
-            
-            const itemName = normalize(pull.name);
 
             let matchedBanner = findBannerConfigByTime(pull.time, categoryId, currentOffset);
-            if (!matchedBanner) {
-                 matchedBanner = BANNERS.find(b => b.id === pull.poolId);
-            }
+            if (!matchedBanner) matchedBanner = BANNERS.find(b => b.id === uniqueBannerKey);
 
             let isFeatured = false;
-            if (matchedBanner && matchedBanner.featured6 && matchedBanner.featured6.length > 0) {
+            if (matchedBanner && matchedBanner.featured6) {
                 const normFeatured = matchedBanner.featured6.map(normalize);
                 isFeatured = normFeatured.includes(itemName);
             }
 
             if (!isHardPityTriggered) {
-                stats.total5050++;
-                if (isFeatured) {
-                    stats.won5050++;
-                }
+                stats.total5050++; 
+                if (isFeatured) stats.won5050++;
             }
 
-            if (isFeatured) {
-                rateUpPityCounter = 0;
-            }
-
+            if (isFeatured) rateUpPityCounter = 0;
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
