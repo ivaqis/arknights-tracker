@@ -146,9 +146,9 @@ async function fetchGameData(token, lang, serverId) {
                 else hasMore = false;
 
                 pageCount++;
-                if (pageCount > 50) hasMore = false; 
+                if (pageCount > 2000) hasMore = false;
 
-                await sleep(50); 
+                await sleep(300); 
 
             } catch (err) {
                 console.error(`Error scanning ${poolLabel}: ${err.message}`);
