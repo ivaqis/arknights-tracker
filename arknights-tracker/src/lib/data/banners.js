@@ -1,7 +1,5 @@
 // src/lib/data/banners.js
 
-// Wrap with translation for all languages
-
 export const banners = [
   {
     id: "standard_01",
@@ -14,7 +12,6 @@ export const banners = [
     featured5: [],
     isServerTime: false,
     timezone: "UTC+8",
-    // Changed: Use filename (utility handles .png default)
     icon: "basic-headhunting.png",
     miniIcon: "basic-headhunting.png",
     url: "https://x.com/AKEndfield/status/2012150342780121133?s=20",
@@ -43,7 +40,7 @@ export const banners = [
     showOnMain: false
   },
   {
-    id: "special_banner_01", 
+    id: "special_1_0_1", 
     name: "Scars Of The Forge",
     type: "special",
     startTime: "2026-01-22 00:00:00",
@@ -62,7 +59,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "special_banner_02",
+    id: "special_1_0_3",
     name: "The Floaty Messenger",
     type: "special",
     startTime: "2026-02-07 12:00:00",
@@ -81,7 +78,7 @@ export const banners = [
     showOnMain: true
   },
   {
-    id: "special_banner_03",
+    id: "special_1_0_4",
     name: "Hues Of Passion",
     type: "special",
     startTime: "2026-02-24 12:00:00",

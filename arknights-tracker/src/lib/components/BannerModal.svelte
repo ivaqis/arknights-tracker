@@ -210,8 +210,18 @@
         });
 
         const filtered = historyWithPity.filter((pull) => {
-            if (pull.rawPoolId === banner.id || pull.bannerId === banner.id) {
-                return true;
+            if (pull.rawPoolId === banner.id || pull.bannerId === banner.id) return true;
+            const isGenericType = ['special', 'standard', 'weapon', 'weap-special'].some(t => pull.bannerId?.includes(t));
+            const typesMatch = isWeaponBanner ? pull.type === 'weapon' : pull.type === 'character';
+
+            if (isGenericType && typesMatch) {
+                const accServerId = currentAccount?.serverId || '3'; 
+                const realStartForAccount = parseServerDate(banner.startTime).getTime();
+                const pullTime = new Date(pull.time).getTime();
+                const looseStart = bStart - (24 * 60 * 60 * 1000);
+                const looseEnd = bEnd + (24 * 60 * 60 * 1000);
+                
+                if (pullTime >= looseStart && pullTime <= looseEnd) return true;
             }
 
             const pullTime = new Date(pull.time).getTime();
@@ -221,11 +231,7 @@
                 return timeMatch && (pull.bannerId === 'standard' || pull.bannerId === '1');
             }
             
-            const typeMatch = isWeaponBanner 
-                ? pull.type === 'weapon' 
-                : pull.type === 'character';
-
-            return timeMatch && typeMatch;
+            return timeMatch && typesMatch;
         });
 
         if (filtered.length === 0) return { pulls: [], stats: {} };

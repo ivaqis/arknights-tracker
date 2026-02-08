@@ -18,21 +18,17 @@
 
       const count = banner.stats?.total || banner.pulls?.length || 0;
       
-      // 1. Определяем тип
       const bannerConfig = banners.find(b => b.id === key);
       const type = bannerConfig ? bannerConfig.type : "";
       
       const isNewPlayer = type === 'new-player' || key.includes("new-player") || key.includes("new_player");
       const isWeapon = type === 'weapon' || key.includes('weap') || key.includes('wepon');
 
-      // 1. Абсолютный тотал (просто количество круток для статистики)
       acc.total += count;
 
-      // 2. Billable (Стоимость)
-      // Исключаем новичка И Исключаем оружие (везде)
       if (!isNewPlayer && !isWeapon) {
-          acc.billable += count;     // Для Ороберила
-          acc.billableChar += count; // Для Оригеометрии (суть та же)
+          acc.billable += count; 
+          acc.billableChar += count;
       }
 
       return acc;
