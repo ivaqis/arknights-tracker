@@ -239,35 +239,12 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             if (!historicConfig) historicConfig = findBannerConfigByTime(pull.time, pull.rawPoolId, accountServerId);
             const featuredList = historicConfig?.featured6 || currentViewBanner?.featured6 || [];
 
-            // --- НАЧАЛО ОТЛАДКИ ---
-            const debugName = itemName; // Это нормализованное имя из API
-            console.groupCollapsed(`🔍 Checking 50/50 for: ${pull.name}`);
-            console.log(`Pull Name (Normalized): "${debugName}"`);
-            console.log(`Banner ID: ${uniqueBannerKey}`);
-            console.log(`Featured List from Config:`, featuredList);
-            
             const isFeatured = featuredList.some(fid => {
-                const c = characters[fid]; 
-                const w = weapons[fid];
-                
-                // Логируем попытки сравнения
-                const cName = c ? normalize(c.name) : "null";
-                const wName = w ? normalize(w.name) : "null";
-                const fidNorm = normalize(fid);
-                
-                const matchC = (c && cName === debugName);
-                const matchW = (w && wName === debugName);
-                const matchID = (fidNorm === debugName);
-
-                if (matchC || matchW || matchID) {
-                    console.log(`✅ MATCH FOUND via: ${matchC ? 'Character Name' : matchW ? 'Weapon Name' : 'Direct ID'}`);
-                    return true;
-                }
+                const c = characters[fid]; if (c && normalize(c.name) === itemName) return true;
+                const w = weapons[fid]; if (w && normalize(w.name) === itemName) return true;
+                if (normalize(fid) === itemName) return true;
                 return false;
             });
-            console.log(`Result: ${isFeatured ? "WIN" : "LOSS"}`);
-            console.groupEnd();
-            // --- КОНЕЦ ОТЛАДКИ ---
 
             if (!isHardPityTriggered) {
                 total5050++;
@@ -283,6 +260,14 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
+        }
+
+        if (pull.rarity === 5) {
+            count5++;
+            sumPity5 += currentPity5 + (isFreePull ? 0 : 1);
+            currentPity5 = 0;
+        } else {
+            if (!isFreePull) currentPity5++;
         }
     });
 

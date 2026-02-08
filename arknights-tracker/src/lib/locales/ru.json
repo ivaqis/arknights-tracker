@@ -37,7 +37,8 @@
       "luckyLowPercent": "Ниже {n}%",
       "avg": "ср. знач.",
       "top": "Топ",
-      "bottom": "Ниже"
+      "bottom": "Ниже",
+      "noData": "Нет данных"
     },
     "banner": {
       "total": "Всего наймов",
