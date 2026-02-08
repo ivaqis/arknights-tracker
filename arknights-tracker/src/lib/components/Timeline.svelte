@@ -10,7 +10,7 @@
     import BannerModal from "$lib/components/BannerModal.svelte";
     import Images from "$lib/components/Images.svelte";
 
-    let currentServerId = "3"; // По умолчанию 3 (America/Europe)
+    let currentServerId = "3";
 
     $: serverOffset = currentServerId === "2" ? 8 : -5;
     $: serverName = currentServerId === "2" ? "Asia (UTC+8)" : "Global (UTC-5)";
@@ -277,10 +277,18 @@
 
     let bannerForModal = null;
     function openEvent(event) {
+        const fullBanner = event.id 
+            ? banners.find(b => b.id === event.id) 
+            : null;
+        const baseData = fullBanner || event;
         bannerForModal = {
-            ...event,
-            name: getEventName(event),
+            ...baseData,
+            name: getEventName(baseData),
+            startTime: event.realStartTime ? event.realStartTime.toISOString() : baseData.startTime,
+            endTime: event.realEndTime ? event.realEndTime.toISOString() : baseData.endTime,
         };
+        
+        console.log("Opening modal for:", bannerForModal);
     }
 
     function getEventName(event) {

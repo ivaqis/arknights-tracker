@@ -392,53 +392,59 @@ function calculateMath(pulls, categoryId, serverId = '3') {
         if (tA !== tB) return tA - tB;
         return Number(a.seqId || 0) - Number(b.seqId || 0);
     });
-    const currentOffset = getServerOffset(serverId);
-    const isWeapon = categoryId.includes('weap') || categoryId.includes('wepon');
-    const hardPityLimit = isWeapon ? 80 : 120;
 
+    const currentOffset = getServerOffset(serverId);
+    
     let stats = {
         totalPulls: pulls.length,
         total6: 0, sumPity6: 0,
         total5: 0, sumPity5: 0,
         won5050: 0, total5050: 0
     };
+
     let currentPity6 = 0;
     let currentPity5 = 0;
-    let rateUpCounter = 0; 
+
+    let nextIsGuaranteed = false; 
 
     pulls.forEach((pull) => {
         const isFree = pull.isFree === true || String(pull.isFree) === "true";
         const itemName = normalize(pull.name);
 
-        let isHardPityTriggered = false;
-        if (!isFree) {
-            if (rateUpCounter >= hardPityLimit - 1) {
-                isHardPityTriggered = true;
-            }
-            rateUpCounter++;
-        }
-
         if (pull.rarity === 6) {
             stats.total6++;
-            stats.sumPity6 += currentPity6 + (isFree ? 0 : 1);
+            const pityForThisPull = currentPity6 + (isFree ? 0 : 1);
+            stats.sumPity6 += pityForThisPull;
+
             let matchedBanner = findBannerConfigByTime(pull.time, categoryId, currentOffset);
             if (!matchedBanner) {
                  matchedBanner = BANNERS.find(b => b.id === pull.poolId);
             }
+
             if (matchedBanner && matchedBanner.featured6 && matchedBanner.featured6.length > 0) {
                 const normFeatured = matchedBanner.featured6.map(normalize);
                 const isFeatured = normFeatured.includes(itemName);
                 
-                if (!isHardPityTriggered) {
-                    stats.total5050++;
-                    if (isFeatured) stats.won5050++;
-                }
-
-                if (isFeatured) {
-                    rateUpCounter = 0;
+                if (nextIsGuaranteed) {
+                    if (isFeatured) {
+                        nextIsGuaranteed = false;
+                    } else {
+                        console.warn(`[Math] Got standard char '${itemName}' while guaranteed on banner ${matchedBanner.id}`);
+                    }
+                } else {
+                    stats.total5050++; 
+                    
+                    if (isFeatured) {
+                        stats.won5050++;
+                        nextIsGuaranteed = false;
+                    } else {
+                        nextIsGuaranteed = true;
+                    }
                 }
             } 
+
             currentPity6 = 0;
+
         } else {
             if (!isFree) currentPity6++;
         }
@@ -559,7 +565,7 @@ async function logImportError(url, errorObj, serverId = null) {
 
         await prisma.importError.create({
             data: {
-                url: url || "No URL provided", // Защита от null
+                url: url || "No URL provided",
                 error: errorObj.message || String(errorObj),
                 stack: errorObj.stack || null,
                 serverId: serverId ? String(serverId) : null

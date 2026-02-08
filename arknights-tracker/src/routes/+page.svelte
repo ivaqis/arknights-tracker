@@ -1,6 +1,7 @@
 <script>
   import { onMount, onDestroy } from "svelte";
   import { t } from "$lib/i18n";
+  import { currentLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
@@ -16,15 +17,13 @@
 
   let now = new Date();
   let timer;
-  let currentServerId = "3"; // 3 = Global, 2 = Asia
+  let currentServerId = "3";
 
   const allItems = [...currencies, ...progression];
 
-  // --- 1. ЕДИНАЯ ФУНКЦИЯ ПАРСИНГА ДАТЫ (СЕРДЦЕ ЛОГИКИ) ---
   function parseWithServerOffset(dateStr) {
     if (!dateStr) return new Date(9999, 11, 31); 
 
-    // Если дата уже содержит "Z" или "+" (значит она абсолютная), не трогаем её
     if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
         return new Date(dateStr);
     }
@@ -32,14 +31,10 @@
     const offset = currentServerId === "2" ? 8 : -5;
     const sign = offset >= 0 ? "+" : "-";
     const pad = (n) => String(Math.abs(n)).padStart(2, '0');
-    
-    // Превращаем "2026-03-16 11:59:59" -> "2026-03-16T11:59:59-05:00"
-    // .replace(/-/g, '/') - фикс для Safari, если вдруг формат YYYY-MM-DD не зайдет, но ISO надежнее
     const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
     return new Date(iso);
   }
 
-  // --- 2. ЕДИНАЯ ФУНКЦИЯ ФОРМАТИРОВАНИЯ ТАЙМЕРА ---
   function formatTimeLeft(endTimeStr) {
       const end = parseWithServerOffset(endTimeStr);
       const diff = end - now;
@@ -50,7 +45,6 @@
       const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-      // Используем единые ключи перевода
       if (days > 0) return $t("timer.left_d_h", { d: days, h: hours });
       if (hours > 0) return $t("timer.left_h_m", { h: hours, m: minutes });
       return $t("timer.left_m", { m: minutes });
@@ -67,10 +61,9 @@
     }
   }
 
-  // --- 3. ОБНОВЛЕННЫЕ БАННЕРЫ ---
   $: activeBanners = banners
     .filter((b) => {
-      const _ = currentServerId; // Реактивность
+      const _ = currentServerId;
       const start = parseWithServerOffset(b.startTime);
       const end = b.endTime ? parseWithServerOffset(b.endTime) : new Date(9999, 11, 31);
       
@@ -105,33 +98,30 @@
 
   let selectedBanner = null;
 
-  // --- 4. ТАЙМЕР ДЛЯ БАННЕРА (Использует общую функцию) ---
   $: currentBannerTimeLeft = (() => {
     const b = activeBanners[currentBannerIndex];
     if (!b || !b.endTime) return "";
     return formatTimeLeft(b.endTime) || ""; 
   })();
 
-  // --- 5. ПРОМОКОДЫ (Тоже используют общую логику) ---
   $: activePromocodes = (() => {
-      const _ = currentServerId; // Реактивность
+      const _ = currentServerId;
       return promocodes.filter((p) => {
         const end = parseWithServerOffset(p.endTime);
         return now <= end;
       });
   })();
 
-  function getFormattedDate(dateStr) {
-    const end = parseWithServerOffset(dateStr); // <-- ВАЖНО: Тоже с учетом сервера
+function getFormattedDate(dateStr) {
+    const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
-    return end.toLocaleDateString(undefined, dateOptions);
+    return end.toLocaleDateString($currentLocale, dateOptions);
   }
 
-  // Функция для отрисовки времени в карточке промокода
   function getPromoTimeLabel(dateStr) {
       const text = formatTimeLeft(dateStr);
       if (!text) return "";
-      return `(${text})`; // Добавляем скобки, как ты хотел
+      return `(${text})`;
   }
 
   function sortRewards(rewards) {
