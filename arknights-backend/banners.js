@@ -19,7 +19,7 @@ const BANNERS = [
     featured6: ["ardelia", "pogranichnik", "lastRite", "ember", "lifeng"],
   },
   {
-    id: "special_banner_01", 
+    id: "special_1_0_1", 
     name: "Scars Of The Forge",
     type: "special",
     startTime: "2026-01-22 03:00:00",
