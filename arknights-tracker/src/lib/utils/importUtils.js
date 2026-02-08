@@ -163,12 +163,17 @@ export function calculatePity(pulls, bannerId, accountServerId = null) {
 }
 
 export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
+    // 1. Сортировка по времени (строго как в details)
+    pulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
+
     let currentViewBanner = banners.find(b => b.id === bannerId);
     
-    if (!currentViewBanner && (bannerId.includes('special') || bannerId.includes('weap'))) {
-        const isWeapon = bannerId.includes('weap');
+    // Проверка на опечатку "wepon" + "weap" + "constant"
+    const isWeaponType = bannerId.includes('weap') || bannerId.includes('wepon') || bannerId.includes('constant');
+
+    if (!currentViewBanner && (bannerId.includes('special') || isWeaponType)) {
         const candidates = banners.filter(b => {
-            if (isWeapon) return b.type === 'weapon' || (b.id && b.id.includes('weap'));
+            if (isWeaponType) return b.type === 'weapon' || (b.id && (b.id.includes('weap') || b.id.includes('wepon')));
             return b.type === 'special';
         });
         
@@ -193,14 +198,18 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         mileageEnd = currentViewBanner.endTime ? parseDateWithServer(currentViewBanner.endTime, accountServerId).getTime() : Infinity;
     }
 
-    const hardPityLimit = bannerId.includes('weap') ? 80 : 120;
+    // Лимит строго по типу: Оружие=80, Перс=120
+    const hardPityLimit = isWeaponType ? 80 : 120;
+    
     let total = pulls.length;
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
     let hasReceivedRateUp = false;
     let currentPity6 = 0, currentPity5 = 0;
-    let rateUpPityCounter = 0; 
+    
+    // В деталях используется ТОЛЬКО счетчик. Никаких nextIsGuaranteed.
+    let rateUpCounter = 0; 
     let currentBannerMileage = 0; 
 
     const bannerSpecificCounts = {};
@@ -212,10 +221,18 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
 
         if (!bannerSpecificCounts[uniqueBannerKey]) bannerSpecificCounts[uniqueBannerKey] = 0;
         const countInThisBanner = bannerSpecificCounts[uniqueBannerKey];
-        const isFreePull = (bannerId.includes('special') && !bannerId.includes('weap')) && (countInThisBanner >= 30 && countInThisBanner < 40);
+        const isFreePull = (bannerId.includes('special') && !isWeaponType) && (countInThisBanner >= 30 && countInThisBanner < 40);
         bannerSpecificCounts[uniqueBannerKey]++;
 
+        let isHardPityTriggered = false;
+
         if (!isFreePull) {
+            // Логика триггера как в details: проверяем ДО инкремента
+            if (rateUpCounter >= hardPityLimit - 1) {
+                isHardPityTriggered = true;
+            }
+            rateUpCounter++;
+
             if (bannerId.includes('standard') || bannerId.includes('new')) {
                 currentBannerMileage++;
             } else {
@@ -223,12 +240,6 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
                     currentBannerMileage++;
                 }
             }
-        }
-
-        let isHardPityTriggered = false;
-        if (!isFreePull) {
-            if (rateUpPityCounter >= hardPityLimit - 1) isHardPityTriggered = true;
-            rateUpPityCounter++;
         }
 
         if (pull.rarity === 6) {
@@ -246,17 +257,33 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
                 return false;
             });
 
-            if (!isHardPityTriggered) {
-                total5050++;
-                if (isFeatured) won5050++;
-            }
+            // --- ЛОГИКА 1-В-1 КАК В ТВОИХ ДЕТАЛЯХ ---
+            
+            // 1. Всегда считаем в знаменатель
+            total5050++; 
 
             if (isFeatured) {
-                rateUpPityCounter = 0;
+                if (isHardPityTriggered) {
+                    // В деталях это status="guaranteed". 
+                    // Мы НЕ считаем это выигрышем 50/50.
+                } else {
+                    // В деталях это status="won".
+                    // Даже если до этого был проигрыш, детали считают это "won", если не сработал лимит.
+                    won5050++;
+                }
+                
+                // Счетчик сбрасывается только при featured
+                rateUpCounter = 0;
+
                 if (pullTime >= mileageStart && pullTime <= mileageEnd) {
                     hasReceivedRateUp = true; 
                 }
+            } else {
+                // В деталях это status="lost"
+                // Счетчик НЕ сбрасывается
             }
+            // ----------------------------------------
+
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
@@ -274,7 +301,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     let mileage = { show: false, current: 0, max: 0, label: "" };
     if (bannerId.includes('standard')) {
         if (currentBannerMileage < 300) mileage = { show: true, current: currentBannerMileage, max: 300, label: "selector_6" };
-    } else if (bannerId.includes('special') && !bannerId.includes('weap')) {
+    } else if (bannerId.includes('special') && !isWeaponType) {
         if (hasReceivedRateUp || currentBannerMileage >= 120) {
             mileage = { show: true, current: currentBannerMileage % 240, max: 240, label: "bonus_copy_6" };
         } else {
@@ -284,7 +311,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
 
     return {
         total, pity6: currentPity6, pity5: currentPity5, mileage,
-        guarantee120: hasReceivedRateUp ? 0 : rateUpPityCounter, 
+        guarantee120: hasReceivedRateUp ? 0 : rateUpCounter, 
         hasReceivedRateUp, count6, count5,
         avg6: count6 ? (sumPity6 / count6).toFixed(1) : "0.0",
         avg5: count5 ? (sumPity5 / count5).toFixed(1) : "0.0",
