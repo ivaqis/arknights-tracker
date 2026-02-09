@@ -499,21 +499,16 @@ function getDistinctBannerId(pull, serverId) {
 }
 
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // 1. Сортировка
     pulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
-
     const isWeaponType = categoryId.includes('weap') || categoryId.includes('wepon') || categoryId.includes('constant');
     const hardPityLimit = isWeaponType ? 80 : 120;
-
     let total = pulls.length;
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
-    
-    let currentPity6 = 0, currentPity5 = 0;
+    let currentPity6 = 0;
+    let currentPity5 = 0;
     let rateUpCounter = 0; 
-
-    // Поиск конфига для определения 50/50
     let bannerConfig = BANNERS.find(b => b.id === categoryId);
     if (!bannerConfig) {
         const firstPull = pulls[0];
@@ -530,13 +525,10 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     pulls.forEach((pull, index) => {
         const p = { ...pull };
         const itemName = normalize(p.name);
-        
-        // Логика бесплатных круток (только для ивент персонажей)
         const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
         const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
         let isHardPityTriggered = false;
-
         if (!isFreePull) {
             if (rateUpCounter >= hardPityLimit - 1) {
                 isHardPityTriggered = true;
@@ -544,47 +536,37 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             rateUpCounter++;
         }
 
-        // --- ЛОГИКА 6* ---
         if (p.rarity === 6) {
             count6++;
-            
             const thisPity = currentPity6 + (isFreePull ? 0 : 1);
             sumPity6 += thisPity;
             p.pity = thisPity;
-
             const isFeatured = normFeatured.includes(itemName) || normFeatured.includes(normalize(p.name));
+            total5050++; 
 
             if (isFeatured) {
                 if (isHardPityTriggered) {
                     p.gachaStatus = "guaranteed"; 
-                    // ГАРАНТ: Не считаем в total5050, так как это не "попытка", а неизбежность
                 } else {
                     won5050++;
-                    total5050++; // ПРИБАВЛЯЕМ К ОБЩЕМУ (Это была попытка и она удачная)
                     p.gachaStatus = "won";
                 }
                 rateUpCounter = 0;
             } else {
                 p.gachaStatus = "lost";
-                total5050++; // ПРИБАВЛЯЕМ К ОБЩЕМУ (Это была попытка и она неудачная)
             }
 
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
             p.pity = currentPity6;
-        }
-
-        // --- ЛОГИКА 5* (ИСПРАВЛЕНА) ---
+        }        
         if (p.rarity === 5) {
             count5++;
             const thisPity5 = currentPity5 + (isFreePull ? 0 : 1);
             sumPity5 += thisPity5;
-            
             currentPity5 = 0;
         } else {
-            // Увеличиваем пити 5* на любой другой редкости (6*, 4*, 3*)
-            // Если выпала 6*, это не сбрасывает пити 5*, а увеличивает его
             if (!isFreePull) currentPity5++;
         }
         

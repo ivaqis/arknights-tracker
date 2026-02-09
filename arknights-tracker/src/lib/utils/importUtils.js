@@ -163,12 +163,8 @@ export function calculatePity(pulls, bannerId, accountServerId = null) {
 }
 
 export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
-    // 1. Сортировка по времени (строго как в details)
     pulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
-
     let currentViewBanner = banners.find(b => b.id === bannerId);
-    
-    // Проверка на опечатку "wepon" + "weap" + "constant"
     const isWeaponType = bannerId.includes('weap') || bannerId.includes('wepon') || bannerId.includes('constant');
 
     if (!currentViewBanner && (bannerId.includes('special') || isWeaponType)) {
@@ -198,17 +194,13 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         mileageEnd = currentViewBanner.endTime ? parseDateWithServer(currentViewBanner.endTime, accountServerId).getTime() : Infinity;
     }
 
-    // Лимит строго по типу: Оружие=80, Перс=120
     const hardPityLimit = isWeaponType ? 80 : 120;
-    
     let total = pulls.length;
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
     let hasReceivedRateUp = false;
     let currentPity6 = 0, currentPity5 = 0;
-    
-    // В деталях используется ТОЛЬКО счетчик. Никаких nextIsGuaranteed.
     let rateUpCounter = 0; 
     let currentBannerMileage = 0; 
 
@@ -227,7 +219,6 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         let isHardPityTriggered = false;
 
         if (!isFreePull) {
-            // Логика триггера как в details: проверяем ДО инкремента
             if (rateUpCounter >= hardPityLimit - 1) {
                 isHardPityTriggered = true;
             }
@@ -257,32 +248,20 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
                 return false;
             });
 
-            // --- ЛОГИКА 1-В-1 КАК В ТВОИХ ДЕТАЛЯХ ---
-            
-            // 1. Всегда считаем в знаменатель
             total5050++; 
 
             if (isFeatured) {
                 if (isHardPityTriggered) {
-                    // В деталях это status="guaranteed". 
-                    // Мы НЕ считаем это выигрышем 50/50.
                 } else {
-                    // В деталях это status="won".
-                    // Даже если до этого был проигрыш, детали считают это "won", если не сработал лимит.
                     won5050++;
                 }
-                
-                // Счетчик сбрасывается только при featured
                 rateUpCounter = 0;
 
                 if (pullTime >= mileageStart && pullTime <= mileageEnd) {
                     hasReceivedRateUp = true; 
                 }
             } else {
-                // В деталях это status="lost"
-                // Счетчик НЕ сбрасывается
             }
-            // ----------------------------------------
 
             currentPity6 = 0;
         } else {
