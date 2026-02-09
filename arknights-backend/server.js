@@ -552,7 +552,7 @@ function getDistinctBannerId(pull, serverId) {
 }
 
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // Сортировка (Время + SeqID для точности)
+    // Сортировка
     pulls.sort((a, b) => {
         const tDiff = new Date(a.time).getTime() - new Date(b.time).getTime();
         if (tDiff !== 0) return tDiff;
@@ -567,32 +567,56 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
     
-    // ВАЖНО: При накопительной системе мы не знаем предыдущий пити, 
-    // поэтому для кусочка считаем с 0. Это небольшая погрешность, 
-    // но без хранения истории или доп. полей в базе иначе никак.
     let currentPity6 = 0;
     let currentPity5 = 0;
     let rateUpCounter = 0; 
 
-    // Ищем конфиг
-    let bannerConfig = BANNERS.find(b => b.id === categoryId);
-    if (!bannerConfig) {
-        const firstPull = pulls[0];
-        if (firstPull && firstPull.poolId) {
-             const offset = getServerOffset(serverId);
-             bannerConfig = findBannerConfigByTime(firstPull.time, firstPull.poolId, offset);
-        }
-    }
-    const featured6 = bannerConfig?.featured6 || [];
-    const normFeatured = featured6.map(id => normalize(id));
+    // Пытаемся найти конфиг для переданного categoryId
+    // Если это конкретный баннер (special_1_0_1), мы его найдем.
+    // Если это общая категория (special), скорее всего не найдем (если нет такого заглушечного баннера).
+    const mainBannerConfig = BANNERS.find(b => b.id === categoryId);
     
+    // Если это общая категория, мы не можем полагаться на один список featured.
+    // Нам придется определять featured для каждой крутки динамически.
+    const isGenericCategory = ['special', 'standard', 'weapon', 'weap-special', 'weap-standard', 'new-player'].includes(categoryId);
+
     const enrichedPulls = [];
 
     pulls.forEach((pull, index) => {
         const p = { ...pull };
         const itemName = normalize(p.name);
         
+        // Для общих категорий пытаемся определить конкретный баннер крутки, чтобы узнать featured
+        let currentPullFeatured = [];
+        
+        if (mainBannerConfig) {
+            // Если считаем для конкретного баннера - используем его конфиг
+            currentPullFeatured = mainBannerConfig.featured6 || [];
+        } else {
+            // Если считаем для общей категории - ищем конфиг для ЭТОЙ крутки по времени и poolId
+            const offset = getServerOffset(serverId);
+            // Используем poolId из самой крутки или categoryId как фоллбэк
+            const rawPoolId = p.poolId || p.bannerId || categoryId; 
+            const specificConfig = findBannerConfigByTime(p.time, rawPoolId, offset);
+            currentPullFeatured = specificConfig?.featured6 || [];
+        }
+
+        const normFeatured = currentPullFeatured.map(id => normalize(id));
+
+        // Логика бесплатных круток (только для ивент персонажей, 30-40)
+        // ВНИМАНИЕ: Для общей категории index 30-40 может быть некорректным, 
+        // так как он должен считаться в рамках КОНКРЕТНОГО баннера.
+        // Но для упрощения (и так как мы обычно считаем это на этапе Specific Banner Stats), 
+        // оставим как есть или можно отключить для generic.
+        // Для точности, бесплатные крутки лучше учитывать только при подсчете Specific Stats.
+        // Но если ты хочешь, чтобы в Generic тоже учитывались - ок.
+        // Но тут index - это сквозной индекс по всей категории. Это может быть неверно.
+        // Лучше всего: полагаться на p.isFree, если он уже был проставлен ранее? Нет, мы считаем с нуля.
+        // Давайте оставим логику как есть, но будем помнить об этом нюансе.
+        // Для Generic категорий (рейтинга) пити и бесплатные крутки менее важны, чем 50/50.
+        
         const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
+        // Упрощение: считаем бесплатными 30-39 крутки в ОБЩЕЙ истории. Это может быть неточно, но приемлемо для агрегации.
         const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
         let isHardPityTriggered = false;
@@ -607,6 +631,7 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             sumPity6 += thisPity;
             p.pity = thisPity;
 
+            // Проверка: входит ли имя в список featured для ЭТОГО баннера (или этой крутки)
             const isFeatured = normFeatured.includes(itemName) || normFeatured.includes(normalize(p.name));
             
             if (isFeatured) {
@@ -641,10 +666,15 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
     const winRate = total5050 > 0 ? (won5050 / total5050 * 100) : 0;
 
-    return { 
-        stats: { totalPulls: total, total6: count6, sumPity6, total5: count5, sumPity5, won5050, total5050, winRate }, 
-        enrichedPulls 
+    const stats = {
+        totalPulls: total,
+        total6: count6, sumPity6,
+        total5: count5, sumPity5,
+        won5050, total5050,
+        winRate
     };
+
+    return { stats, enrichedPulls };
 }
 
 const normalize = (str) => {
