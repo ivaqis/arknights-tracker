@@ -271,7 +271,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
     const pullsByBanner = {};
     const offset = getServerOffset(serverId);
 
-    // 1. Группируем крутки по баннерам
+    // --- ЭТАП 1: Подготовка данных ---
     allPulls.forEach(p => {
         let pullTimeMs = 0;
         if (p.gachaTs) pullTimeMs = Number(p.gachaTs);
@@ -288,16 +288,12 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
-    console.log(`\n--- Force Sync (User Overwrite) for ${uid} ---`);
-
+    // --- ЭТАП 2: Обновление КОНКРЕТНЫХ баннеров (для Глобала и Истории) ---
     for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
         
-        // 1. Считаем АБСОЛЮТНО ТОЧНУЮ статистику по файлу импорта
-        // (Если в файле 130 круток, тут будет totalPulls: 130)
-        const calculationResult = calculateMath(rawPulls, bannerId, serverId);
-        const { stats, enrichedPulls } = calculationResult;
+        const { stats, enrichedPulls } = calculateMath(rawPulls, bannerId, serverId);
 
-        // 2. Получаем старые данные (чтобы правильно обновить глобал)
+        // --- Глобальная статистика (Дельта логика) ---
         const oldUserStat = await prisma.userBannerStat.findUnique({
             where: { uid_bannerId: { uid, bannerId } }
         });
@@ -309,10 +305,8 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         const oldTotal5050 = oldUserStat?.total5050 || 0;
         const oldLost = oldTotal5050 - oldWon; 
 
-        // Новые значения (из файла)
         const newLost = stats.total5050 - stats.won5050;
 
-        // 3. Считаем разницу для Глобала
         const d_totalPulls = stats.totalPulls - oldTotalPulls;
         const d_total6 = stats.total6 - oldTotal6;
         const d_total5 = stats.total5 - oldTotal5;
@@ -320,7 +314,6 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         const d_lost = newLost - oldLost;
         const d_users = oldUserStat ? 0 : 1; 
 
-        // 4. Обновляем ГЛОБАЛ (Инкрементально / Дельта)
         if (d_totalPulls !== 0 || d_total6 !== 0 || d_limited !== 0 || d_lost !== 0) {
             await prisma.globalBannerStats.upsert({
                 where: { bannerId },
@@ -344,22 +337,18 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
             });
         }
 
-        // 5. ГРАФИКИ ГЛОБАЛА (Только новые по времени)
+        // Графики
         const lastTime = Number(oldUserStat?.lastProcessedPullTime || 0);
         const newGlobalPulls = enrichedPulls.filter(p => p.time > lastTime);
         if (newGlobalPulls.length > 0) {
             await processGlobalGraphsOnly(bannerId, newGlobalPulls);
         }
 
-        // 6. ОБНОВЛЕНИЕ ЮЗЕРА (ЖЕСТКАЯ ПЕРЕЗАПИСЬ / HARD OVERWRITE)
-        // Мы НЕ используем increment. Мы ставим точное значение из файла.
-        // Было 129? Станет 130. Было криво? Станет ровно.
-        
+        // Запись UserBannerStat (Specific ID)
         const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
         
         await prisma.userBannerStat.upsert({
             where: { uid_bannerId: { uid, bannerId } },
-            // CREATE: Пишем точные значения
             create: {
                 uid, bannerId,
                 totalPulls: stats.totalPulls,
@@ -371,9 +360,8 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
                 total5050: stats.total5050,
                 lastProcessedPullTime: BigInt(maxTimeInBatch)
             },
-            // UPDATE: ПЕРЕЗАПИСЫВАЕМ точными значениями (НЕ increment)
             update: {
-                totalPulls: stats.totalPulls, // <= ВОТ ОНО! Прямая запись.
+                totalPulls: stats.totalPulls,
                 total6: stats.total6,
                 sumPity6: stats.sumPity6,
                 total5: stats.total5,
@@ -385,7 +373,73 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
             }
         });
     }
-    console.log(`[Stats] User Stats Overwritten for ${uid}`);
+
+    // --- ЭТАП 3: Обновление ОБЩИХ категорий (ДЛЯ РЕЙТИНГА) ---
+    // Рейтинг ищет 'special', 'standard' и т.д. Нам нужно собрать их и обновить.
+    
+    console.log(`--- Updating Generic Categories for Rankings (${uid}) ---`);
+    
+    // Группируем ВСЕ крутки по общим категориям
+    const pullsByGeneric = {
+        'special': [],
+        'standard': [],
+        'weap-standard': [],
+        'weap-special': [],
+        'new-player': []
+    };
+
+    allPulls.forEach(p => {
+        // Используем твою функцию normalizeBannerId из server.js
+        const genId = normalizeBannerId(p.poolId || p.bannerId);
+        if (pullsByGeneric[genId]) {
+            // Важно: нужно передавать крутки с правильным временем!
+            let pullTimeMs = 0;
+            if (p.gachaTs) pullTimeMs = Number(p.gachaTs);
+            else if (p.timestamp) pullTimeMs = Number(p.timestamp) * 1000;
+            else if (p.ts) pullTimeMs = Number(p.ts) * 1000;
+            else if (p.time) pullTimeMs = new Date(p.time).getTime();
+            if (!pullTimeMs || isNaN(pullTimeMs)) pullTimeMs = Date.now();
+
+            pullsByGeneric[genId].push({ ...p, time: pullTimeMs });
+        }
+    });
+
+    for (const [genId, pulls] of Object.entries(pullsByGeneric)) {
+        if (!pulls.length) continue;
+
+        // Считаем стату для всей категории (например, всё что 'special')
+        const { stats } = calculateMath(pulls, genId, serverId);
+
+        // Пишем в базу с ID = 'special' (или 'standard' и т.д.)
+        // Именно эту запись читает API рейтинга!
+        await prisma.userBannerStat.upsert({
+            where: { uid_bannerId: { uid, bannerId: genId } },
+            create: {
+                uid, bannerId: genId,
+                totalPulls: stats.totalPulls,
+                total6: stats.total6,
+                sumPity6: stats.sumPity6,
+                total5: stats.total5,
+                sumPity5: stats.sumPity5,
+                won5050: stats.won5050,
+                total5050: stats.total5050,
+                lastProcessedPullTime: 0 // Для общих категорий это поле не так важно
+            },
+            update: {
+                totalPulls: stats.totalPulls, // Жесткая перезапись
+                total6: stats.total6,
+                sumPity6: stats.sumPity6,
+                total5: stats.total5,
+                sumPity5: stats.sumPity5,
+                won5050: stats.won5050,
+                total5050: stats.total5050,
+                lastUpdate: new Date()
+            }
+        });
+        console.log(`   -> Ranked Category [${genId}]: Updated to ${stats.totalPulls} pulls`);
+    }
+
+    console.log(`[Stats] Sync Complete for ${uid}`);
 }
 
 async function processGlobalGraphsOnly(bannerId, newPulls) {
