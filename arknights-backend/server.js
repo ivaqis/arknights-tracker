@@ -552,7 +552,7 @@ function getDistinctBannerId(pull, serverId) {
 }
 
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // 1. Сортировка по времени
+    // 1. Сортировка
     pulls.sort((a, b) => {
         const tDiff = new Date(a.time).getTime() - new Date(b.time).getTime();
         if (tDiff !== 0) return tDiff;
@@ -562,10 +562,14 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     const isWeaponType = categoryId.includes('weap') || categoryId.includes('wepon') || categoryId.includes('constant');
     const hardPityLimit = isWeaponType ? 80 : 120;
 
-    // Определяем, считаем ли мы конкретный баннер или общую свалку (для рейтинга)
-    // Если ID нет в BANNERS, но он похож на 'special', 'weapon' и т.д. -> это общая категория
-    const exactBannerConfig = BANNERS.find(b => b.id === categoryId);
-    const isGenericCalculation = !exactBannerConfig;
+    // Проверяем, считаем ли мы Общую Категорию (где много разных баннеров)
+    // или Конкретный Баннер (где список персонажей фиксирован)
+    const specificBannerConfig = BANNERS.find(b => b.id === categoryId);
+    const isGenericCalculation = !specificBannerConfig; // Если конфига нет по ID, значит это generic (special, weapon...)
+
+    if (pulls.length > 0 && isGenericCalculation) {
+        console.log(`\n[MATH DEBUG] Calculating Generic Category: "${categoryId}" (Pulls: ${pulls.length})`);
+    }
 
     let total = pulls.length;
     let count6 = 0, count5 = 0;
@@ -576,19 +580,15 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     let currentPity5 = 0;
     let rateUpCounter = 0; 
     
-    // Предварительно нормализуем список featured, если это конкретный баннер
-    const fixedFeatured = exactBannerConfig ? exactBannerConfig.featured6.map(id => normalize(id)) : [];
     const offset = getServerOffset(serverId);
-
     const enrichedPulls = [];
 
     pulls.forEach((pull, index) => {
         const p = { ...pull };
         const itemName = normalize(p.name);
         
-        // Логика бесплатных круток (30-40) для ивент персонажей
-        // ВНИМАНИЕ: Для точного подсчета free pulls в общей категории тут может быть погрешность,
-        // но для 50/50 это не критично. Оставляем как есть.
+        // Логика бесплатных круток (30-40)
+        // Для Generic категорий это может быть не совсем точно, но оставляем как есть
         const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
         const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
@@ -604,39 +604,53 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             sumPity6 += thisPity;
             p.pity = thisPity;
 
-            // --- ОПРЕДЕЛЕНИЕ FEATURED (ГЛАВНЫЙ ФИКС) ---
-            let isFeatured = false;
+            // --- ОПРЕДЕЛЕНИЕ: ЭТО ПОБЕДА ИЛИ НЕТ? ---
+            let currentFeaturedList = [];
+            let bannerDebugName = "Unknown";
 
             if (isGenericCalculation) {
-                // Если это Общая Категория (Рейтинг), ищем баннер для ЭТОЙ КРУТКИ
-                // Используем poolId из крутки или пробуем найти по времени
-                const rawPoolId = p.poolId || p.bannerId || categoryId; 
-                const specificConfig = findBannerConfigByTime(p.time, rawPoolId, offset);
+                // Если это Общая категория, ищем, к какому баннеру относилась ЭТА крутка по времени
+                const rawId = p.poolId || p.bannerId || categoryId;
+                const foundConfig = findBannerConfigByTime(p.time, rawId, offset);
                 
-                if (specificConfig && specificConfig.featured6) {
-                    const specificFeatured = specificConfig.featured6.map(n => normalize(n));
-                    // Проверяем имя предмета ИЛИ нормализованное имя предмета
-                    isFeatured = specificFeatured.includes(itemName) || specificFeatured.includes(normalize(p.name));
+                if (foundConfig) {
+                    currentFeaturedList = foundConfig.featured6 || [];
+                    bannerDebugName = foundConfig.id;
                 }
             } else {
-                // Если это Конкретный Баннер - используем фиксированный список
-                isFeatured = fixedFeatured.includes(itemName) || fixedFeatured.includes(normalize(p.name));
+                // Если это Конкретный баннер, берем его список
+                currentFeaturedList = specificBannerConfig.featured6 || [];
+                bannerDebugName = specificBannerConfig.id;
+            }
+
+            const normFeatured = currentFeaturedList.map(n => normalize(n));
+            
+            // Проверка на совпадение (Имя чара ИЛИ Имя как ID)
+            const isFeatured = normFeatured.includes(itemName) || normFeatured.includes(normalize(p.name));
+
+            // ЛОГ ДЛЯ ОТЛАДКИ (Покажет почему 0% или 100%)
+            if (isGenericCalculation) {
+                console.log(`   [6* CHECK] Pull: ${p.name} (${p.time})`);
+                console.log(`       -> Detected Banner: ${bannerDebugName}`);
+                console.log(`       -> Featured List: [${normFeatured.join(', ')}]`);
+                console.log(`       -> Is Match? ${isFeatured} | HardPity? ${isHardPityTriggered}`);
             }
             
-            // --- ЛОГИКА 50/50 ---
             if (isFeatured) {
                 if (isHardPityTriggered) {
                     p.gachaStatus = "guaranteed"; 
-                    // Гарант не идет в зачет 50/50
+                    if (isGenericCalculation) console.log(`       -> Result: GUARANTEED (Ignored in 50/50)`);
                 } else {
                     won5050++;
                     total5050++;
                     p.gachaStatus = "won";
+                    if (isGenericCalculation) console.log(`       -> Result: WIN (+1 Won, +1 Total)`);
                 }
                 rateUpCounter = 0;
             } else {
                 total5050++;
                 p.gachaStatus = "lost";
+                if (isGenericCalculation) console.log(`       -> Result: LOSS (+0 Won, +1 Total)`);
             }
             currentPity6 = 0;
         } else {
@@ -657,14 +671,12 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
     const winRate = total5050 > 0 ? (won5050 / total5050 * 100) : 0;
 
+    if (isGenericCalculation) {
+        console.log(`[MATH END] ${categoryId} -> Won: ${won5050} / Total: ${total5050} = ${winRate.toFixed(1)}%`);
+    }
+
     return { 
-        stats: { 
-            totalPulls: total, 
-            total6: count6, sumPity6, 
-            total5: count5, sumPity5, 
-            won5050, total5050, 
-            winRate 
-        }, 
+        stats: { totalPulls: total, total6: count6, sumPity6, total5: count5, sumPity5, won5050, total5050, winRate }, 
         enrichedPulls 
     };
 }
