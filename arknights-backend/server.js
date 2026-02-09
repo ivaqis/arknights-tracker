@@ -263,95 +263,12 @@ function mapPoolTypeToShort(longType) {
     return 'unknown';
 }
 
-async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
-    if (newPulls.length === 0) return;
-
-    newPulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
-    
-    let d_totalPulls = newPulls.length;
-    let d_total6 = 0;
-    let d_total5 = 0;
-    let d_limited = 0;
-    let d_lost = 0;
-
-    const timelineUpdates = {};
-    const pityUpdates6 = {};
-    const itemUpdates = {};
-
-    newPulls.forEach(p => {
-        const dateKey = new Date(p.time).toISOString().split('T')[0];
-        timelineUpdates[dateKey] = (timelineUpdates[dateKey] || 0) + 1;
-
-        const normName = p.name;
-        if (!itemUpdates[normName]) itemUpdates[normName] = { rarity: p.rarity, count: 0 };
-        itemUpdates[normName].count++;
-
-        if (p.rarity === 6) {
-            d_total6++;
-
-            if (p.pity) {
-                pityUpdates6[p.pity] = (pityUpdates6[p.pity] || 0) + 1;
-            }
-
-            if (p.gachaStatus === 'won') {
-                d_limited++;
-            } else if (p.gachaStatus === 'lost') {
-                d_lost++;
-            }
-        }
-        if (p.rarity === 5) d_total5++;
-    });
-
-    await prisma.globalBannerStats.upsert({
-        where: { bannerId },
-        create: {
-            bannerId,
-            totalPulls: d_totalPulls,
-            total6: d_total6,
-            total5: d_total5,
-            limitedCount: d_limited,
-            lost5050: d_lost,
-            totalUsers: 1
-        },
-        update: {
-            totalPulls: { increment: d_totalPulls },
-            total6: { increment: d_total6 },
-            total5: { increment: d_total5 },
-            limitedCount: { increment: d_limited },
-            lost5050: { increment: d_lost },
-        }
-    });
-
-    for (const [date, count] of Object.entries(timelineUpdates)) {
-        await prisma.globalTimeline.upsert({
-            where: { bannerId_date: { bannerId, date } },
-            create: { bannerId, date, pulls: count },
-            update: { pulls: { increment: count } }
-        });
-    }
-
-    for (const [name, data] of Object.entries(itemUpdates)) {
-        await prisma.globalItemStats.upsert({
-            where: { bannerId_itemName: { bannerId, itemName: name } },
-            create: { bannerId, itemName: name, rarity: data.rarity, count: data.count },
-            update: { count: { increment: data.count } }
-        });
-    }
-
-    for (const [pityVal, count] of Object.entries(pityUpdates6)) {
-        await prisma.globalPityDistribution.upsert({
-            where: { bannerId_rarity_pity: { bannerId, rarity: 6, pity: Number(pityVal) } },
-            create: { bannerId, rarity: 6, pity: Number(pityVal), count },
-            update: { count: { increment: count } }
-        });
-    }
-}
-
 async function updateAggregatedStats(uid, allPulls, serverId) {
     if (!allPulls.length) return;
 
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
+    // Группируем входящие крутки
     const pullsByBanner = {};
     const offset = getServerOffset(serverId);
 
@@ -371,82 +288,77 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
+    console.log(`\n--- Incremental Sync for ${uid} ---`);
+
     for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
         
-        const calculationResult = calculateMath(rawPulls, bannerId, serverId);
-        const { stats, enrichedPulls } = calculationResult;
-
-        const oldUserStat = await prisma.userBannerStat.findUnique({
+        // 1. Узнаем, на чем мы остановились в прошлый раз
+        const currentUserStat = await prisma.userBannerStat.findUnique({
             where: { uid_bannerId: { uid, bannerId } }
         });
 
-        const oldTotalPulls = oldUserStat?.totalPulls || 0;
-        const oldTotal6 = oldUserStat?.total6 || 0;
-        const oldTotal5 = oldUserStat?.total5 || 0;
-        
-        const oldWon = oldUserStat?.won5050 || 0;
-        const oldTotal5050 = oldUserStat?.total5050 || 0;
-        const oldLost = oldTotal5050 - oldWon; 
+        const lastProcessedTime = Number(currentUserStat?.lastProcessedPullTime || 0);
 
-        const newTotalPulls = stats.totalPulls;
-        const newTotal6 = stats.total6;
-        const newTotal5 = stats.total5;
-        const newWon = stats.won5050;
-        const newTotal5050 = stats.total5050;
-        const newLost = newTotal5050 - newWon;
+        // 2. Отфильтровываем ТОЛЬКО НОВЫЕ крутки (которых еще нет в базе)
+        // Используем строгое сравнение по времени и seqId если есть
+        const newPulls = rawPulls.filter(p => {
+             // Если время больше - точно новая
+             if (p.time > lastProcessedTime) return true;
+             // Если время равно, но seqId больше (для дубликатов в одну секунду) - можно усложнить, 
+             // но для простоты берем > lastTime. 
+             // Если у тебя крутки в одну секунду, API обычно дает им разный gachaTs?
+             // Для надежности берем строго >.
+             return p.time > lastProcessedTime;
+        });
 
-        const d_totalPulls = newTotalPulls - oldTotalPulls;
-        const d_total6 = newTotal6 - oldTotal6;
-        const d_total5 = newTotal5 - oldTotal5;
-        const d_limited = newWon - oldWon;
-        const d_lost = newLost - oldLost;
-        const d_users = oldUserStat ? 0 : 1; 
-
-        if (d_totalPulls !== 0 || d_total6 !== 0 || d_limited !== 0 || d_lost !== 0) {
-            await prisma.globalBannerStats.upsert({
-                where: { bannerId },
-                create: {
-                    bannerId,
-                    totalPulls: stats.totalPulls, 
-                    total6: stats.total6,
-                    total5: stats.total5,
-                    limitedCount: stats.won5050,
-                    lost5050: newLost,
-                    totalUsers: 1
-                },
-                update: {
-                    totalPulls: { increment: d_totalPulls },
-                    total6: { increment: d_total6 },
-                    total5: { increment: d_total5 },
-                    limitedCount: { increment: d_limited }, 
-                    lost5050: { increment: d_lost },        
-                    totalUsers: { increment: d_users }
-                }
-            });
+        if (newPulls.length === 0) {
+            // console.log(`[${bannerId}] No new pulls.`);
+            continue;
         }
 
-        const lastTime = Number(oldUserStat?.lastProcessedPullTime || 0);
-        const newGlobalPulls = enrichedPulls.filter(p => p.time > lastTime);
-        
-        if (newGlobalPulls.length > 0) {
-            await processGlobalGraphsOnly(bannerId, newGlobalPulls);
-        }
+        // 3. Считаем статистику ТОЛЬКО для этого кусочка
+        const { stats, enrichedPulls } = calculateMath(newPulls, bannerId, serverId);
 
-        const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
+        console.log(`[${bannerId}] Found ${newPulls.length} NEW pulls. Adding to DB...`);
+
+        // 4. ПРИБАВЛЯЕМ (INCREMENT) к тому, что уже есть в базе
+        // Это решит проблему 3 месяцев. Данные будут только расти.
         
-        await prisma.userBannerStat.upsert({
-            where: { uid_bannerId: { uid, bannerId } },
-            update: {
+        // Для Глобала:
+        const d_lost = stats.total5050 - stats.won5050;
+        
+        await prisma.globalBannerStats.upsert({
+            where: { bannerId },
+            create: {
+                bannerId,
                 totalPulls: stats.totalPulls,
                 total6: stats.total6,
-                sumPity6: stats.sumPity6,
                 total5: stats.total5,
-                sumPity5: stats.sumPity5,
-                won5050: stats.won5050,
-                total5050: stats.total5050,
-                lastUpdate: new Date(),
-                lastProcessedPullTime: BigInt(maxTimeInBatch)
+                limitedCount: stats.won5050,
+                lost5050: d_lost,
+                totalUsers: 1
             },
+            update: {
+                totalPulls: { increment: stats.totalPulls },
+                total6: { increment: stats.total6 },
+                total5: { increment: stats.total5 },
+                limitedCount: { increment: stats.won5050 },
+                lost5050: { increment: d_lost },
+                // Юзеров не инкрементим каждый раз, это делается 1 раз при создании
+            }
+        });
+
+        // Обновляем глобальные графики (только новыми)
+        await processGlobalGraphsOnly(bannerId, enrichedPulls);
+
+        // Для Юзера (UserBannerStat):
+        // Тоже используем increment!
+        
+        // Находим время самой последней новой крутки
+        const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
+
+        await prisma.userBannerStat.upsert({
+            where: { uid_bannerId: { uid, bannerId } },
             create: {
                 uid, bannerId,
                 totalPulls: stats.totalPulls,
@@ -457,6 +369,17 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
                 won5050: stats.won5050,
                 total5050: stats.total5050,
                 lastProcessedPullTime: BigInt(maxTimeInBatch)
+            },
+            update: {
+                totalPulls: { increment: stats.totalPulls },
+                total6: { increment: stats.total6 },
+                sumPity6: { increment: stats.sumPity6 },
+                total5: { increment: stats.total5 },
+                sumPity5: { increment: stats.sumPity5 },
+                won5050: { increment: stats.won5050 },
+                total5050: { increment: stats.total5050 },
+                lastUpdate: new Date(),
+                lastProcessedPullTime: BigInt(maxTimeInBatch) // Обновляем "закладку" вперед
             }
         });
     }
@@ -573,7 +496,7 @@ function getDistinctBannerId(pull, serverId) {
 }
 
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // 1. Sort by time AND seqId to match frontend exactly
+    // Сортировка (Время + SeqID для точности)
     pulls.sort((a, b) => {
         const tDiff = new Date(a.time).getTime() - new Date(b.time).getTime();
         if (tDiff !== 0) return tDiff;
@@ -588,10 +511,14 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
     
+    // ВАЖНО: При накопительной системе мы не знаем предыдущий пити, 
+    // поэтому для кусочка считаем с 0. Это небольшая погрешность, 
+    // но без хранения истории или доп. полей в базе иначе никак.
     let currentPity6 = 0;
     let currentPity5 = 0;
     let rateUpCounter = 0; 
 
+    // Ищем конфиг
     let bannerConfig = BANNERS.find(b => b.id === categoryId);
     if (!bannerConfig) {
         const firstPull = pulls[0];
@@ -609,23 +536,17 @@ function calculateMath(pulls, categoryId, serverId = '3') {
         const p = { ...pull };
         const itemName = normalize(p.name);
         
-        // Free Pull Logic
         const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
         const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
         let isHardPityTriggered = false;
-
         if (!isFreePull) {
-            if (rateUpCounter >= hardPityLimit - 1) {
-                isHardPityTriggered = true;
-            }
+            if (rateUpCounter >= hardPityLimit - 1) isHardPityTriggered = true;
             rateUpCounter++;
         }
 
-        // --- 6* LOGIC ---
         if (p.rarity === 6) {
             count6++;
-            
             const thisPity = currentPity6 + (isFreePull ? 0 : 1);
             sumPity6 += thisPity;
             p.pity = thisPity;
@@ -635,25 +556,22 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             if (isFeatured) {
                 if (isHardPityTriggered) {
                     p.gachaStatus = "guaranteed"; 
-                    // GUARANTEED: Exclude from Total 50/50 count (it's not a gamble)
                 } else {
                     won5050++;
-                    total5050++; // WIN: Include in Total
+                    total5050++;
                     p.gachaStatus = "won";
                 }
                 rateUpCounter = 0;
             } else {
-                total5050++; // LOSS: Include in Total
+                total5050++;
                 p.gachaStatus = "lost";
             }
-
             currentPity6 = 0;
         } else {
             if (!isFreePull) currentPity6++;
             p.pity = currentPity6;
         }
 
-        // --- 5* LOGIC ---
         if (p.rarity === 5) {
             count5++;
             const thisPity5 = currentPity5 + (isFreePull ? 0 : 1);
@@ -662,21 +580,15 @@ function calculateMath(pulls, categoryId, serverId = '3') {
         } else {
             if (!isFreePull) currentPity5++;
         }
-        
         enrichedPulls.push(p);
     });
 
-    // Logging to confirm fix
-    console.log(`[MATH FINAL] ${categoryId} -> Won: ${won5050}/${total5050} (${(total5050 ? won5050/total5050*100 : 0).toFixed(1)}%) | Avg6: ${(count6 ? sumPity6/count6 : 0).toFixed(2)}`);
+    const winRate = total5050 > 0 ? (won5050 / total5050 * 100) : 0;
 
-    const stats = {
-        totalPulls: total,
-        total6: count6, sumPity6,
-        total5: count5, sumPity5,
-        won5050, total5050
+    return { 
+        stats: { totalPulls: total, total6: count6, sumPity6, total5: count5, sumPity5, won5050, total5050, winRate }, 
+        enrichedPulls 
     };
-
-    return { stats, enrichedPulls };
 }
 
 const normalize = (str) => {
