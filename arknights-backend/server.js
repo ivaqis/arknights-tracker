@@ -352,7 +352,6 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
 
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
 
-    // 1. Группируем крутки
     const pullsByBanner = {};
     const offset = getServerOffset(serverId);
 
@@ -372,32 +371,23 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
-    // 2. Обрабатываем каждый баннер
     for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
         
-        // Считаем ПОЛНУЮ статистику по НОВОЙ формуле
         const calculationResult = calculateMath(rawPulls, bannerId, serverId);
         const { stats, enrichedPulls } = calculationResult;
 
-        // Получаем СТАРУЮ статистику из базы
         const oldUserStat = await prisma.userBannerStat.findUnique({
             where: { uid_bannerId: { uid, bannerId } }
         });
 
-        // 3. Вычисляем ДЕЛЬТУ (Разницу) для скалярных значений
-        // Если юзера не было, старые значения считаем по нулям
         const oldTotalPulls = oldUserStat?.totalPulls || 0;
         const oldTotal6 = oldUserStat?.total6 || 0;
         const oldTotal5 = oldUserStat?.total5 || 0;
-        // В базе мы храним won5050 и total5050.
-        // Нам нужно превратить их в limited/lost для Глобала.
-        // Предполагаем, что в UserStat: won5050 = limited, (total5050 - won5050) = lost
-        // (Это приблизительно, если мы хотим точности, лучше хранить limited/lost и в юзере, но пока так)
+        
         const oldWon = oldUserStat?.won5050 || 0;
         const oldTotal5050 = oldUserStat?.total5050 || 0;
         const oldLost = oldTotal5050 - oldWon; 
 
-        // Новые значения
         const newTotalPulls = stats.totalPulls;
         const newTotal6 = stats.total6;
         const newTotal5 = stats.total5;
@@ -405,22 +395,19 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
         const newTotal5050 = stats.total5050;
         const newLost = newTotal5050 - newWon;
 
-        // Разница
         const d_totalPulls = newTotalPulls - oldTotalPulls;
         const d_total6 = newTotal6 - oldTotal6;
         const d_total5 = newTotal5 - oldTotal5;
         const d_limited = newWon - oldWon;
         const d_lost = newLost - oldLost;
-        const d_users = oldUserStat ? 0 : 1; // Если юзер новый, +1
+        const d_users = oldUserStat ? 0 : 1; 
 
-        // 4. Обновляем Глобальные СЧЕТЧИКИ (Главная статистика)
-        // Prisma increment умеет работать с отрицательными числами (вычитать)
-        if (d_totalPulls !== 0 || d_total6 !== 0 || d_limited !== 0) {
+        if (d_totalPulls !== 0 || d_total6 !== 0 || d_limited !== 0 || d_lost !== 0) {
             await prisma.globalBannerStats.upsert({
                 where: { bannerId },
                 create: {
                     bannerId,
-                    totalPulls: stats.totalPulls, // Первый раз - просто записываем
+                    totalPulls: stats.totalPulls, 
                     total6: stats.total6,
                     total5: stats.total5,
                     limitedCount: stats.won5050,
@@ -431,27 +418,20 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
                     totalPulls: { increment: d_totalPulls },
                     total6: { increment: d_total6 },
                     total5: { increment: d_total5 },
-                    limitedCount: { increment: d_limited }, // Само исправится!
-                    lost5050: { increment: d_lost },        // Само исправится!
+                    limitedCount: { increment: d_limited }, 
+                    lost5050: { increment: d_lost },        
                     totalUsers: { increment: d_users }
                 }
             });
         }
 
-        // 5. Обработка ГРАФИКОВ (Timeline, Items, Pity)
-        // Тут дельту считать сложно, поэтому используем старый метод "только новые крутки"
-        // (иначе графики вырастут в небеса)
         const lastTime = Number(oldUserStat?.lastProcessedPullTime || 0);
-        // Берем крутки, которые ВРЕМЕНЕМ позже, чем последний импорт
         const newGlobalPulls = enrichedPulls.filter(p => p.time > lastTime);
         
         if (newGlobalPulls.length > 0) {
-            // Эта функция обновляет ТОЛЬКО графики (Timeline, Items, PityDist)
-            // Мы передаем туда флаг, чтобы она НЕ трогала счетчики (т.к. мы их обновили выше через дельту)
             await processGlobalGraphsOnly(bannerId, newGlobalPulls);
         }
 
-        // 6. Перезаписываем статистику Юзера
         const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time; 
         
         await prisma.userBannerStat.upsert({
@@ -480,7 +460,7 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
             }
         });
     }
-    console.log(`[Stats] Smart Sync Complete for ${uid}`);
+    console.log(`[Stats] Sync Complete for ${uid}`);
 }
 
 async function processGlobalGraphsOnly(bannerId, newPulls) {
