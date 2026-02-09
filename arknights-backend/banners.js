@@ -1,6 +1,5 @@
 // banners.js
 
-// Точная копия твоего конфига с фронта
 const BANNERS = [
   {
     id: "standard_01",

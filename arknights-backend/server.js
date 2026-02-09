@@ -356,18 +356,11 @@ async function processGlobalDelta(uid, bannerId, newPulls, serverId) {
 
 async function updateAggregatedStats(uid, allPulls, serverId) {
     if (!allPulls.length) return;
-
-    // Обновляем запись пользователя
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });
-
-    // 1. ГРУППИРОВКА ПО КОНКРЕТНЫМ БАННЕРАМ (Specific Banner ID)
     const pullsByBanner = {};
-
-    // Получаем смещение сервера один раз
     const offset = getServerOffset(serverId);
 
     allPulls.forEach(p => {
-        // Нормализация времени
         let pullTimeMs = 0;
         if (p.gachaTs) pullTimeMs = Number(p.gachaTs);
         else if (p.timestamp) pullTimeMs = Number(p.timestamp) * 1000;
@@ -376,37 +369,25 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
 
         if (!pullTimeMs || isNaN(pullTimeMs)) pullTimeMs = Date.now();
 
-        // ВАЖНО: Используем getDistinctBannerId вместо normalizeBannerId
-        // Это найдет 'special_banner_01' вместо 'special' основываясь на времени
-        // p передается как объект, так как getDistinctBannerId ожидает pull.time и pull.poolId
         const pullWithCorrectTime = { ...p, time: pullTimeMs };
         const specificBannerId = getDistinctBannerId(pullWithCorrectTime, serverId);
 
         if (!pullsByBanner[specificBannerId]) pullsByBanner[specificBannerId] = [];
 
-        // Сохраняем
         pullsByBanner[specificBannerId].push(pullWithCorrectTime);
     });
 
-    // 2. Обработка каждой группы (теперь это конкретные баннеры)
     for (const [bannerId, rawPulls] of Object.entries(pullsByBanner)) {
-
-        // 2.1 Считаем математику для этого КОНКРЕТНОГО баннера
-        // calculateMath теперь получит ID типа "special_banner_01"
         const calculationResult = calculateMath(rawPulls, bannerId, serverId);
         const { stats, enrichedPulls } = calculationResult;
-
-        // 2.2 Получаем данные о последней обработке
         const currentUserStat = await prisma.userBannerStat.findUnique({
             where: { uid_bannerId: { uid, bannerId } }
         });
 
         const lastTime = Number(currentUserStat?.lastProcessedPullTime || 0);
 
-        // 2.3 Фильтруем новые крутки
         const newGlobalPulls = enrichedPulls.filter(p => p.time > lastTime);
 
-        // Если юзер впервые крутит ЭТОТ КОНКРЕТНЫЙ баннер -> +1 totalUsers глобально
         if (!currentUserStat && newGlobalPulls.length > 0) {
             await prisma.globalBannerStats.upsert({
                 where: { bannerId },
@@ -415,12 +396,10 @@ async function updateAggregatedStats(uid, allPulls, serverId) {
             });
         }
 
-        // 2.4 Обновляем Глобальную Статистику (Дельта)
         if (newGlobalPulls.length > 0) {
             await processGlobalDelta(uid, bannerId, newGlobalPulls, serverId);
         }
 
-        // 2.5 Обновляем Локальную Статистику Юзера
         const maxTimeInBatch = enrichedPulls[enrichedPulls.length - 1].time;
 
         await prisma.userBannerStat.upsert({
@@ -520,7 +499,6 @@ function getDistinctBannerId(pull, serverId) {
 }
 
 function calculateMath(pulls, categoryId, serverId = '3') {
-    // 1. Сортировка по времени
     pulls.sort((a, b) => new Date(a.time).getTime() - new Date(b.time).getTime());
 
     const isWeaponType = categoryId.includes('weap') || categoryId.includes('wepon') || categoryId.includes('constant');
@@ -530,35 +508,41 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
-
+    
     let currentPity6 = 0, currentPity5 = 0;
-    let rateUpCounter = 0;
+    let rateUpCounter = 0; 
 
-    // --- ИСПРАВЛЕНИЕ: ПОИСК КОНФИГА ---
-    // Ищем конфиг прямо по categoryId (это specific ID, например 'special_banner_01')
     let bannerConfig = BANNERS.find(b => b.id === categoryId);
+    
+    if (!bannerConfig) {
+        const firstPull = pulls[0];
+        if (firstPull && firstPull.poolId) {
+             const offset = getServerOffset(serverId);
+             bannerConfig = findBannerConfigByTime(firstPull.time, firstPull.poolId, offset);
+        }
+    }
 
-    // Если не нашли прямого совпадения, пробуем найти generic (для старых записей)
-    // Но для "Won 50:50" нам критически важен именно featured список
     const featured6 = bannerConfig?.featured6 || [];
     const normFeatured = featured6.map(id => normalize(id));
 
-    // --- DEBUG LOG (Удалишь, когда заработает) ---
+    // --- ЛОГИ (Удалишь, когда настроишь) ---
+    console.log(`\n[DEBUG] Calc Math for Banner: "${categoryId}"`);
+    console.log(`[DEBUG] Config Found: ${!!bannerConfig} | Type: ${isWeaponType ? 'Weapon' : 'Char'}`);
     if (featured6.length > 0) {
-        // console.log(`[Math Debug] Banner: ${categoryId}, Featured: [${normFeatured.join(', ')}]`);
-    } else if (categoryId.includes('special') || categoryId.includes('wepon')) {
-        console.warn(`[Math Warning] Banner ${categoryId} has NO featured characters defined! 50/50 will be 0%.`);
+        console.log(`[DEBUG] Featured List: [${featured6.join(', ')}] -> Norm: [${normFeatured.join(', ')}]`);
+    } else {
+        console.log(`[DEBUG] ⚠️ No featured items found for "${categoryId}". 50/50 will be 0/X.`);
     }
-    // ---------------------------------------------
-
+    // ----------------------------------------
+    
     const enrichedPulls = [];
 
-    pulls.forEach((pull) => {
+    pulls.forEach((pull, index) => {
         const p = { ...pull };
         const itemName = normalize(p.name);
-
-        // isFree пропускаем для скорости, либо реализуй счетчик countInThisBanner как в updateAggregatedStats
-        const isFreePull = false;
+        
+        const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
+        const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
         let isHardPityTriggered = false;
 
@@ -571,26 +555,20 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
         if (p.rarity === 6) {
             count6++;
-
+            
             const thisPity = currentPity6 + (isFreePull ? 0 : 1);
             sumPity6 += thisPity;
             p.pity = thisPity;
 
-            // --- ПРОВЕРКА НА FEATURED ---
-            // Сравниваем нормализованное имя выпавшего с нормализованным списком
-            const isFeatured = normFeatured.includes(itemName);
+            const isFeatured = normFeatured.includes(itemName) || normFeatured.includes(normalize(p.name));
 
-            // Для дебага, если стата 0%
-            if (p.rarity === 6 && !isFeatured && (categoryId.includes('special') || isWeaponType)) {
-                // console.log(`[Math Loss] Item: ${itemName} is NOT in [${normFeatured.join(', ')}]`);
-            }
-            // ----------------------------
+            console.log(`[DEBUG 6*] Pull: "${p.name}" (norm: ${itemName}) | Pity: ${thisPity} | Featured? ${isFeatured} | HardPity? ${isHardPityTriggered}`);
 
-            total5050++;
+            total5050++; 
 
             if (isFeatured) {
                 if (isHardPityTriggered) {
-                    p.gachaStatus = "guaranteed";
+                    p.gachaStatus = "guaranteed"; 
                 } else {
                     won5050++;
                     p.gachaStatus = "won";
@@ -608,14 +586,18 @@ function calculateMath(pulls, categoryId, serverId = '3') {
 
         if (p.rarity === 5) {
             count5++;
-            sumPity5 += currentPity5 + (isFreePull ? 0 : 1);
+            const thisPity5 = currentPity5 + (isFreePull ? 0 : 1);
+            sumPity5 += thisPity5;
+            
             currentPity5 = 0;
         } else {
             if (!isFreePull) currentPity5++;
         }
-
+        
         enrichedPulls.push(p);
     });
+
+    console.log(`[DEBUG RESULT] Won: ${won5050}/${total5050} | Avg 5*: ${(count5 ? sumPity5/count5 : 0).toFixed(2)}`);
 
     const stats = {
         totalPulls: total,
@@ -700,10 +682,15 @@ app.get('/api/rankings/data', async (req, res) => {
         const valid5050 = usersWithAvg
             .filter(u => u.total5050 > 0)
             .sort((a, b) => {
-                if (b.winRate !== a.winRate) {
+                if (Math.abs(b.winRate - a.winRate) > 0.001) {
                     return b.winRate - a.winRate;
                 }
-                return b.total5050 - a.total5050;
+
+                if (b.winRate >= 50) {
+                    return b.total5050 - a.total5050;
+                } else {
+                    return a.total5050 - b.total5050;
+                }
             });
         const my5050Index = valid5050.findIndex(u => u.uid === uid);
         let rank5050 = null;
