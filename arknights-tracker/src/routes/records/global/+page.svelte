@@ -18,40 +18,32 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
-    // --- ХЕЛПЕРЫ ---
-    
-    // Хелпер для генерации ID (CamelCase)
     function getItemIconId(name) {
         if (!name) return "";
 
-        // 1. Ручные исключения (если имя с бэка не мапится авто-логикой)
+        // 1. Ручные исключения (Mapping)
         const overrides = {
-            "Endministrator": "endministrator1", // В твоем JSON есть 1 и 2, но бэк скорее всего шлет просто имя
-            "Arlight": "arclight" // На случай опечатки бэка (ты кидал лог с 404 Arlight)
+            "Endministrator": "endministrator1",
+            "Arlight": "arclight",
+            "Arclight": "arclight"
         };
+        
         if (overrides[name]) return overrides[name];
 
         let clean = name.trim();
 
-        // 2. Если это "грязное" имя с бэка типа "objEdgeOfLightness"
         if (clean.startsWith("obj")) {
-            // Убираем obj
             clean = clean.substring(3); 
         }
 
-        // 3. Если в имени есть пробелы ("Chen Qianyu", "Last Rite") -> Делаем CamelCase
         if (clean.includes(" ")) {
             return clean.split(/\s+/).map((word, index) => {
-                // Очищаем от спецсимволов
                 const w = word.replace(/[^a-zA-Z0-9]/g, '');
-                // Первое слово - с маленькой, остальные - с большой
                 if (index === 0) return w.toLowerCase();
                 return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
             }).join('');
         }
 
-        // 4. Если это одно слово ("Perlica", "Ember") или уже CamelCase ("EdgeOfLightness")
-        // Просто делаем первую букву маленькой
         return clean.charAt(0).toLowerCase() + clean.slice(1);
     }
 
@@ -90,8 +82,6 @@
 
     onDestroy(() => clearInterval(timer));
 
-    // --- ЛОГИКА СЕЛЕКТОВ ---
-
     $: sortedBannerTypes = [...bannerTypes].sort((a, b) => {
         if (a.id === 'special') return -1;
         if (b.id === 'special') return 1;
@@ -108,24 +98,20 @@
     $: isSimpleType = selectedType === 'standard' || selectedType === 'new-player';
     $: isWeaponCategory = selectedType.toLowerCase().includes('weap') || selectedType === 'weapon';
 
-    // ФИЛЬТРАЦИЯ БАННЕРОВ
     $: bannerOptions = banners
         .filter(b => {
             const bid = b.id.toLowerCase();
             const bType = b.type.toLowerCase();
             const sType = selectedType.toLowerCase();
 
-            // 1. Логика для Новичка (Beginner)
             if (sType === 'new-player') {
                 return bType === 'new-player' || bid === 'beginner';
             }
 
-            // 2. Логика для Оружия
             if (sType.includes('standard') && sType.includes('weap')) return bid.includes('constant');
             if (sType.includes('special') && sType.includes('weap')) return (bType === 'weapon' || bid.includes('weapon')) && !bid.includes('constant');
             if (sType === 'weapon') return bType === 'weapon' || bid.includes('weapon');
             
-            // 3. Остальное
             return b.type === selectedType;
         })
         .sort((a, b) => new Date(b.startTime) - new Date(a.startTime))
@@ -135,12 +121,9 @@
         }));
 
     let selectedBannerId = "";
-
-    // АВТОВЫБОР БАННЕРА
     $: {
         let foundId = "";
         
-        // 1. Попытка найти beginner/standard напрямую
         if (selectedType === 'new-player') {
              const found = banners.find(b => b.id === 'beginner' || b.type === 'new-player');
              if (found) foundId = found.id;
@@ -149,7 +132,6 @@
             if (found) foundId = found.id;
         } 
         
-        // 2. Если не нашли, ищем через список опций
         if (!foundId && bannerOptions.length > 0) {
             const currentExists = bannerOptions.find(o => o.value === selectedBannerId);
             if (!currentExists) {
@@ -170,8 +152,6 @@
             selectedBannerId = foundId;
         }
     }
-
-    // --- ДАННЫЕ БАННЕРА ---
 
     $: currentBannerRaw = banners.find(b => b.id === selectedBannerId);
     $: currentBanner = currentBannerRaw ? { ...currentBannerRaw, id: currentBannerRaw.id, icon: currentBannerRaw.icon || currentBannerRaw.id } : null;
@@ -206,7 +186,6 @@
 
     $: mainFeatured = !isSimpleType && allFeaturedItems.length === 1 ? allFeaturedItems[0] : null;
 
-    // --- СТАТИСТИКА ---
     const initialStats = {
         totalUsers: 0,
         totalPulls: 0,
@@ -223,14 +202,18 @@
 
     let stats = { ...initialStats };
     let isLoading = false;
-    let hoveredIndex = -1; // Для графика
+    let hoveredIndex = -1;
 
     async function fetchStats(bannerId) {
         stats = { ...initialStats };
+        
         if (!bannerId) return;
+
+        const apiBannerId = bannerId === 'new_player_01' ? 'beginner' : bannerId;
+
         isLoading = true;
         try {
-            const res = await fetch(`${API_BASE}/global/stats?bannerId=${bannerId}`);
+            const res = await fetch(`${API_BASE}/global/stats?bannerId=${apiBannerId}`);
             const json = await res.json();
             
             if (json.code === 0) {
