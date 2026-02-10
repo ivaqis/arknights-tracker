@@ -488,18 +488,29 @@
     "title": "Global Statistics",
     "selectType": "Select Type",
     "selectBanner": "Select Banner",
+    "overview": "Overview",
     "totalObtained": "Total Obtained",
+    "stats": "Stats",
+    "rate": "Rate",
+    "count": "Count",
+    "median": "Median Pity",
     "median6": "Median 6★",
     "totalUsers": "Total Users",
     "totalPulls": "Total Pulls",
-    "spent": "Spent",
-    "winRate": "Win Rate 50/50",
-    "activity": "Activity (Days)",
-    "rate6": "6★ Rate",
-    "rate5": "5★ Rate",
+    "spent": "Oroberyl Spent",
+    "pull": "pulls",
+    "pullsPerDay": "Pulls per Day",
+    "percent6": "6★ Rate",
+    "total6": "Total 6★",
+    "percent5": "5★ Rate",
+    "total5": "Total 5★",
+    "list": "List",
+    "name": "Name",
     "total": "Total",
-    "pull": "pull"
-  },
+    "featuredList": "Featured Items",
+    "pityDist": "Pity Distribution",
+    "noData": "No Data"
+},
   "settings": {
     "title": "Settings",
     "account": {
@@ -652,5 +663,11 @@
     "jiminy12": "Jiminy 12",
     "peco5": "Peco 5",
     "tarr11": "Tarr 11"
+  },
+  "cookies": {
+    "title": "We use cookies",
+    "text": "We use cookies to store your preferences (like theme and language) and analyze site traffic to improve user experience",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }

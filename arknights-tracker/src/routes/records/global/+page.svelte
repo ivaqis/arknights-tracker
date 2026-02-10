@@ -1,11 +1,15 @@
 <script>
+    import { onMount, onDestroy } from "svelte";
     import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
+    import { fade } from "svelte/transition";
     
     import Select from "$lib/components/Select.svelte";
     import Icon from "$lib/components/Icons.svelte";
     import Images from "$lib/components/Images.svelte"; 
     import Button from "$lib/components/Button.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import BannerModal from "$lib/components/BannerModal.svelte"; // Импорт модалки
 
     import { characters } from "$lib/data/characters";
     import { currencies } from "$lib/data/items/currencies";
@@ -13,35 +17,190 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
-    $: typeOptions = bannerTypes.map(bt => ({
+    // --- ЛОГИКА ВРЕМЕНИ И ТАЙМЕРА ---
+    let now = new Date();
+    let timer;
+    // Дефолтный сервер для глобальной статистики (обычно 3 - Global)
+    const currentServerId = "3"; 
+
+    function parseWithServerOffset(dateStr) {
+        if (!dateStr) return null;
+        if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
+            return new Date(dateStr);
+        }
+        const offset = currentServerId === "2" ? 8 : -5;
+        const sign = offset >= 0 ? "+" : "-";
+        const pad = (n) => String(Math.abs(n)).padStart(2, '0');
+        const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
+        return new Date(iso);
+    }
+
+    function formatTimeLeft(endTimeStr) {
+        if (!endTimeStr) return null;
+        const end = parseWithServerOffset(endTimeStr);
+        const diff = end - now;
+        if (diff <= 0) return null;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+        if (days > 0) return $t("timer.left_d_h", { d: days, h: hours }) || `${days}d ${hours}h`;
+        if (hours > 0) return $t("timer.left_h_m", { h: hours, m: minutes }) || `${hours}h ${minutes}m`;
+        return $t("timer.left_m", { m: minutes }) || `${minutes}m`;
+    }
+
+    onMount(() => {
+        timer = setInterval(() => { now = new Date(); }, 1000 * 60);
+    });
+
+    onDestroy(() => {
+        clearInterval(timer);
+    });
+
+    $: sortedBannerTypes = [...bannerTypes].sort((a, b) => {
+        if (a.id === 'special') return -1;
+        if (b.id === 'special') return 1;
+        return a.order - b.order;
+    });
+
+    $: typeOptions = sortedBannerTypes.map(bt => ({
         value: bt.id, 
         label: $t(bt.i18nKey) || bt.name
     }));
 
-    let selectedType = bannerTypes[0]?.id || "special";
+    let selectedType = "special";
+
+    // Проверяем типы более гибко
+    $: isSimpleType = selectedType === 'standard' || selectedType === 'new-player';
+    // Считаем типом "Оружие" всё, что содержит 'weap' в названии типа (weapon, weap-standard и т.д.)
+    $: isWeaponCategory = selectedType.toLowerCase().includes('weap');
 
     $: bannerOptions = banners
-        .filter(b => b.type === selectedType)
+        .filter(b => {
+            const bid = b.id.toLowerCase();
+            const bType = b.type.toLowerCase(); // В твоих данных это всегда "weapon"
+            
+            // Получаем текущий выбранный тип
+            const sType = selectedType;
+
+            // --- ЛОГИКА ДЛЯ ОРУЖИЯ ---
+            
+            // 1. Если выбрали "Стандартные поставки" (Constant)
+            if (sType === 'weapstandard' || sType === 'weap-standard' || sType === 'weapStandard') {
+                // Это должно быть оружие И в ID должно быть слово 'constant'
+                return bType === 'weapon' && bid.includes('constant');
+            }
+            
+            // 2. Если выбрали "Специальные поставки" (Event Weapon)
+            if (sType === 'weapspecial' || sType === 'weap-special' || sType === 'weapSpecial') {
+                // Это должно быть оружие И в ID НЕ должно быть 'constant'
+                return bType === 'weapon' && !bid.includes('constant');
+            }
+
+            // 3. Если вдруг выбран общий тип "weapon"
+            if (sType === 'weapon') {
+                return bType === 'weapon' || bid.includes('weapon');
+            }
+
+            // --- ЛОГИКА ДЛЯ ОСТАЛЬНЫХ (Персонажи) ---
+            // Тут просто сравниваем типы (special, standard, new-player)
+            return b.type === sType;
+        })
+        .sort((a, b) => new Date(b.startTime) - new Date(a.startTime))
         .map(b => ({
             value: b.id,
-            label: b.name
+            label: $t(`banners.${b.id}`) || b.name
         }));
 
     let selectedBannerId = "";
-    
-    $: if (bannerOptions.length > 0) {
-        if (!bannerOptions.find(o => o.value === selectedBannerId)) {
-             selectedBannerId = bannerOptions[0].value;
+
+    // Авто-выбор баннера
+    $: {
+        if (isSimpleType) {
+            const found = banners.find(b => b.type === selectedType);
+            if (found) selectedBannerId = found.id;
+        } else if (bannerOptions.length > 0) {
+            // Проверяем, есть ли текущий выбранный ID в новом списке
+            const currentExists = bannerOptions.find(o => o.value === selectedBannerId);
+            
+            if (!currentExists) {
+                // Ищем АКТИВНЫЙ баннер в текущем отфильтрованном списке
+                const activeOption = bannerOptions.find(option => {
+                    const b = banners.find(x => x.id === option.value);
+                    if (!b) return false;
+                    
+                    const start = parseWithServerOffset(b.startTime);
+                    const end = b.endTime ? parseWithServerOffset(b.endTime) : null;
+                    
+                    // Проверяем, идет ли баннер прямо сейчас
+                    // Если end == null, считаем что он вечный
+                    return start && now >= start && (!end || now <= end);
+                });
+
+                if (activeOption) {
+                    // Если нашли активный — выбираем его
+                    selectedBannerId = activeOption.value;
+                } else {
+                    // Если активных нет — берем самый новый (первый в списке)
+                    selectedBannerId = bannerOptions[0].value;
+                }
+            }
+        } else {
+            selectedBannerId = "";
         }
-    } else {
-        selectedBannerId = "";
     }
 
-    $: currentBanner = banners.find(b => b.id === selectedBannerId);
-    $: featuredCharId = currentBanner?.featured6?.[0];
-    $: featuredChar = featuredCharId ? characters[featuredCharId] : null;
+    // --- ДАННЫЕ БАННЕРА ---
 
-    const oroberyl = currencies.find((c) => c.id === "oroberyl");
+    $: currentBannerRaw = banners.find(b => b.id === selectedBannerId);
+    
+    // Определяем, является ли текущий выбранный баннер оружейным
+    $: currentIsWeapon = currentBannerRaw ? (currentBannerRaw.type === 'weapon' || currentBannerRaw.id.includes('weap')) : false;
+
+    $: currentBanner = currentBannerRaw 
+        ? { 
+            ...currentBannerRaw, 
+            id: currentBannerRaw.id, 
+            icon: currentBannerRaw.icon || currentBannerRaw.id 
+          } 
+        : null;
+
+    // Статусы баннера
+    $: bannerStatus = (() => {
+        if (!currentBanner) return null;
+        const start = parseWithServerOffset(currentBanner.startTime);
+        const end = currentBanner.endTime ? parseWithServerOffset(currentBanner.endTime) : null;
+        if (now < start) return 'upcoming';
+        if (end && now > end) return 'ended';
+        return 'active';
+    })();
+
+    $: timeLeftString = currentBanner ? formatTimeLeft(currentBanner.endTime) : null;
+
+    // 2. ИСПРАВЛЕННЫЙ СПИСОК ПРЕДМЕТОВ (Картинки)
+    $: allFeaturedItems = (() => {
+        if (!currentBanner?.featured6) return [];
+        return currentBanner.featured6.map(id => {
+            const char = characters[id];
+            
+            // Если мы в категории оружия ИЛИ персонаж не найден в базе characters -> это оружие
+            const isWep = isWeaponCategory || !char; 
+            
+            return { 
+                id: id, 
+                // Если персонажа нет, используем ID как имя
+                name: char ? char.name : id, 
+                isWeapon: isWep, 
+                rarity: 6
+            };
+        });
+    })();
+
+    // Показываем большую карточку, если это не Стандарт/Новичок и там всего 1 предмет (персонаж или оружие)
+    $: mainFeatured = !isSimpleType && allFeaturedItems.length === 1 ? allFeaturedItems[0] : null;
+    const oroberyl = currencies.find((c) => c.id === "oroberyl") || { id: "oroberyl" }; // Фолбек
+    // --- СТАТИСТИКА ---
 
     let stats = {
         totalUsers: 0,
@@ -62,7 +221,7 @@
         if (!bannerId) return;
         isLoading = true;
         try {
-            const res = await fetch(`${API_BASE}/api/global/stats?bannerId=${bannerId}`);
+            const res = await fetch(`${API_BASE}/global/stats?bannerId=${bannerId}`);
             const json = await res.json();
             
             if (json.code === 0) {
@@ -73,12 +232,11 @@
                 const r5 = total > 0 ? (d.total5 / total * 100).toFixed(3) : "0.00";
                 
                 let obtained = 0;
-                if (featuredChar && d.items6) {
-                    const charStat = d.items6.find(i => i.name === featuredChar.name); 
+                if (mainFeatured && d.items6) {
+                    const charStat = d.items6.find(i => i.name === mainFeatured.name); 
                     obtained = charStat ? charStat.count : 0;
                 }
 
-                // Win Rate рассчитываем как Лимитки / (Лимитки + Стандарт)
                 const total5050 = (d.limitedCount + d.lost5050);
                 const winRate = total5050 > 0 ? (d.limitedCount / total5050 * 100).toFixed(0) : 0;
 
@@ -89,8 +247,16 @@
                     winRate5050: winRate,
                     totalObtained: obtained,
                     rates: {
-                        sixStar: { percent: r6, count: d.total6 },
-                        fiveStar: { percent: r5, count: d.total5 }
+                        sixStar: { 
+                            percent: r6, 
+                            count: d.total6, 
+                            items: d.items6 || [] // <--- ДОБАВИЛИ ITEMS
+                        },
+                        fiveStar: { 
+                            percent: r5, 
+                            count: d.total5, 
+                            items: d.items5 || [] // <--- ДОБАВИЛИ ITEMS
+                        }
                     },
                     timeline: d.timeline || [],
                     pityDist: d.pityDistribution || []
@@ -123,18 +289,43 @@
         }
         return d;
     }
+
+    // --- МОДАЛКА БАННЕРА ---
+    let isModalOpen = false;
+    function openModal() {
+        if (currentBanner) isModalOpen = true;
+    }
 </script>
+
+{#if isModalOpen && currentBanner}
+    <BannerModal 
+        banner={currentBanner} 
+        pageContext="global" 
+        on:close={() => isModalOpen = false} 
+    />
+{/if}
 
 <div class="w-full max-w-[1800px] px-6 pb-20">
     
     <div class="flex items-center gap-4 mb-8">
-        <Button variant="roundSmall" color="white" onClick={() => goto("/records")}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
-        </Button>
+        <Button
+        variant="roundSmall"
+        color="white"
+        onClick={() => goto("/records")}
+    >
+        <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+        >
+            <path d="M15 18l-6-6 6-6" />
+        </svg>
+    </Button>
         <h2 class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
-            {$t("global.title") || "Глобальная статистика"}
+            {$t("global.title") || "Global Statistics"}
         </h2>
     </div>
 
@@ -143,99 +334,211 @@
             <Select 
                 options={typeOptions} 
                 bind:value={selectedType} 
-                variant="white"
-                placeholder={$t("global.selectType") || "Выберите тип"}
+                variant="black"
+                placeholder={$t("global.selectType") || "Select Type"}
             />
         </div>
-        <div class="w-full sm:w-1/2">
-            {#key selectedType}
-                <Select 
-                    options={bannerOptions} 
-                    bind:value={selectedBannerId} 
-                    variant="white"
-                    placeholder={$t("global.selectBanner") || "Выберите баннер"}
-                />
-            {/key}
-        </div>
+        
+        {#if !isSimpleType}
+            <div class="w-full sm:w-1/2">
+                {#key selectedType}
+                    <Select 
+                        options={bannerOptions} 
+                        bind:value={selectedBannerId} 
+                        variant="black"
+                        placeholder={$t("global.selectBanner") || "Select Banner"}
+                    />
+                {/key}
+            </div>
+        {/if}
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         
-        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+        <div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-4">
             
-            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 flex flex-col justify-between h-[160px] relative overflow-hidden group">
-                <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#D84C38]"></div>
-                
-                {#if featuredChar}
-                    <div class="flex items-start gap-3">
-                        <div class="w-12 h-12 bg-gray-100 dark:bg-[#2C2C2C] dark:border-[#444444] rounded border border-gray-200 overflow-hidden shrink-0">
-                             <Images item={featuredChar} variant="avatar" className="w-full h-full object-cover" />
+            {#if mainFeatured}
+                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 relative overflow-hidden group">
+                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#D84C38]"></div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-16 h-16 bg-gray-100 dark:bg-[#2C2C2C] dark:border-[#444444] rounded-lg border border-gray-200 overflow-hidden shrink-0 shadow-inner flex items-center justify-center">
+                             <Images 
+                                id={mainFeatured.id} 
+                                variant={mainFeatured.isWeapon ? "weapon-icon" : "operator-icon"} 
+                                className="w-full h-full object-cover" 
+                                size="100%"
+                             />
                         </div>
-                        <div>
-                            <div class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] leading-tight">{featuredChar.name}</div>
-                            <div class="text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-1">{$t("global.totalObtained") || "Всего получено"}</div>
-                            <div class="font-nums font-bold text-xl text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalObtained)}</div>
+                        <div class="flex flex-col justify-center h-16">
+                            <div class="font-bold text-base text-[#21272C] dark:text-[#FDFDFD] leading-tight mb-0.5 line-clamp-2">
+                                {$t(mainFeatured.isWeapon ? `weaponsList.${mainFeatured.id}` : `characters.${mainFeatured.id}`) || mainFeatured.name}
+                            </div>
+                            <div class="text-[10px] text-gray-500 dark:text-[#B7B6B3] uppercase tracking-wide">{$t("global.totalObtained") || "Total Obtained"}</div>
+                            <div class="font-nums font-bold text-xl text-[#21272C] dark:text-[#FDFDFD] leading-none mt-0.5">{fmt(stats.totalObtained)}</div>
                         </div>
                     </div>
-                    <div class="mt-auto">
-                         <div class="text-[10px] text-gray-500 dark:text-[#B7B6B3]">
-                             <span class="font-bold">{stats.winRate5050}%</span> {$t("global.won5050Label") || "игроков выиграли 50/50"}
-                         </div>
-                         <div class="w-full h-1 bg-gray-100 dark:bg-[#444444] rounded-full mt-1 overflow-hidden">
-                             <div class="h-full bg-[#D84C38]" style="width: {stats.winRate5050}%"></div>
-                         </div>
-                    </div>
-                {/if}
-            </div>
+                </div>
+            {/if}
 
-            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center">
-                <div class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3] uppercase mb-2">
-                    {$t("global.percent6") || "Процент 6*"}
-                </div>
-                <div class="text-3xl font-bold font-nums text-[#21272C] dark:text-[#FDFDFD] mb-1">
-                    {stats.rates.sixStar.percent}%
-                </div>
-                <div class="text-[10px] text-gray-400 dark:text-[#888]">
-                    {$t("global.total6") || "Всего 6*"}: <span class="font-nums">{fmt(stats.rates.sixStar.count)}</span>
-                </div>
-            </div>
-
-            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center gap-3 text-sm">
-                 <div class="flex justify-between items-center">
-                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.median6") || "Медиана 6*"}</span>
-                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.median6} <span class="text-[10px] font-normal text-gray-400">{$t("global.pullShort") || "кр."}</span></span>
-                 </div>
-                 <div class="flex justify-between items-center">
-                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.totalUsers") || "Всего пользователей"}</span>
-                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalUsers)}</span>
-                 </div>
-                 <div class="flex justify-between items-center">
-                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.totalPulls") || "Всего круток"}</span>
-                    <span class="font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalPulls)}</span>
-                 </div>
-                 <div class="flex justify-between items-center">
-                    <span class="text-gray-500 dark:text-[#B7B6B3] text-xs">{$t("global.spent") || "Всего оберилла"}</span>
-                    <div class="flex items-center gap-1 font-bold font-nums text-[#21272C] dark:text-[#FDFDFD]">
-                        <Images item={oroberyl} category="currencies" size={14} />
-                        {fmt(stats.totalPulls * 500)}
+            {#if (isSimpleType || isWeaponCategory || allFeaturedItems.length > 1) && allFeaturedItems.length > 0}
+                 <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100">
+                    <h3 class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] mb-2">
+                        {$t("global.featuredList") || "Featured Items"}
+                    </h3>
+                    
+                    <div class="flex flex-wrap gap-2">
+                        {#each allFeaturedItems as icon}
+                            <Tooltip text={$t(icon.isWeapon ? `weaponsList.${icon.id}` : `characters.${icon.id}`) || icon.name}>
+                                <div class="w-12 h-12 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg border border-gray-200 dark:border-[#555] overflow-hidden hover:scale-105 transition-transform cursor-pointer shadow-sm relative group">
+                                     <Images
+                                          id={icon.id}
+                                          variant={icon.isWeapon ? "weapon-icon" : "operator-icon"}
+                                          size="100%"
+                                          className="w-full h-full object-cover"
+                                          alt={icon.name}
+                                     />
+                                </div>
+                            </Tooltip>
+                        {/each}
                     </div>
                  </div>
+            {/if}
+
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD]">
+                        {$t("global.overview") || "Overview"}
+                    </h3>
+                </div>
+
+                <div class="space-y-3">
+                     <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.totalUsers") || "Total Users"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalUsers)}</span>
+                     </div>
+                     <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.totalPulls") || "Total Pulls"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.totalPulls)}</span>
+                     </div>
+                     <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.spent") || "Oroberyl Spent"}</span>
+                        <span class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-1.5 font-nums text-lg">
+                            <Images id="oroberyl" variant="currency" size={20} />
+                            {fmt(stats.totalPulls * 500)}
+                        </span>
+                     </div>
+                </div>
             </div>
 
-            <div class="col-span-1 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-4 shadow-sm border border-gray-100 h-[160px] flex flex-col justify-center">
-                <div class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3] uppercase mb-2">
-                    {$t("global.percent5") || "Процент 5*"}
-                </div>
-                <div class="text-3xl font-bold font-nums text-[#21272C] dark:text-[#FDFDFD] mb-1">
-                    {stats.rates.fiveStar.percent}%
-                </div>
-                <div class="text-[10px] text-gray-400 dark:text-[#888]">
-                    {$t("global.total5") || "Всего 5*"}: <span class="font-nums">{fmt(stats.rates.fiveStar.count)}</span>
-                </div>
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100">
+                 <div class="flex justify-between items-center mb-4">
+                     <h3 class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2">
+                        6 <Icon name="star" class="w-5 h-5 text-[#D0926E]" /> {$t("global.stats") || "Stats"}
+                     </h3>
+                 </div>
+                 
+                 <div class="space-y-3">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.rate") || "Rate"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.rates.sixStar.percent}%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.count") || "Count"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.rates.sixStar.count)}</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.median") || "Median Pity"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.median6}</span>
+                    </div>
+                    {#if !isSimpleType && stats.winRate5050 > 0}
+                        <div class="flex justify-between items-center pt-3 mt-1 border-t border-gray-100 dark:border-[#444]">
+                             <span class="text-gray-500 dark:text-[#B7B6B3] text-xs font-medium uppercase tracking-wide">
+                                 {#if isWeaponCategory} Won 25:75 {:else} Won 50:50 {/if}
+                             </span>
+                             <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.winRate5050}%</span>
+                        </div>
+                    {/if}
+                 </div>
             </div>
 
-            <div class="col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[200px] flex flex-col">
-                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4">{$t("global.pullsPerDay") || "Круток в день"}</div>
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100">
+                 <div class="flex justify-between items-center mb-4">
+                     <h3 class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2">
+                        5 <Icon name="star" class="w-5 h-5 text-[#E3BC55]" /> {$t("global.stats") || "Stats"}
+                     </h3>
+                 </div>
+                 <div class="space-y-3">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.rate") || "Rate"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{stats.rates.fiveStar.percent}%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-gray-600 dark:text-[#E4E4E4]">{$t("global.count") || "Count"}</span>
+                        <span class="font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]">{fmt(stats.rates.fiveStar.count)}</span>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+
+        <div class="lg:col-span-8 xl:col-span-8 flex flex-col gap-6">
+            
+            {#if currentBanner}
+                <div
+                    role="button"
+                    tabindex="0"
+                    on:click={openModal}
+                    on:keydown={(e) => (e.key === "Enter" || e.key === " ") && openModal()}
+                    class="relative w-full aspect-[21/9] bg-gray-200 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-2xl group border border-white/50 dark:border-[#444444] select-none cursor-pointer outline-none focus:ring-4 focus:ring-[#FACC15] transition-all"
+                >
+                    {#key currentBanner.id}
+                        <div 
+                            class="absolute inset-0"
+                            in:fade={{ duration: 300 }}
+                        >
+                            <Images 
+                                id={currentBanner.icon || currentBanner.id} 
+                                variant="banner-icon" 
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                alt={currentBanner.name}
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 pointer-events-none"></div>
+                        </div>
+                    {/key}
+                    
+                    {#if bannerStatus}
+                        <div class="absolute bottom-6 left-6 right-6 z-20 pointer-events-none flex flex-col items-start gap-3">
+                            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-black/60 backdrop-blur-md border border-white/20 rounded-full shadow-lg">
+                                <span class="w-2 h-2 rounded-full {bannerStatus === 'active' ? 'bg-[#FACC15] animate-pulse' : bannerStatus === 'upcoming' ? 'bg-blue-400' : 'bg-gray-400'}"></span>
+                                <span class="text-xs font-bold text-white font-nums tracking-wide leading-none uppercase">
+                                    {#if bannerStatus === 'active' && timeLeftString}
+                                        {timeLeftString}
+                                    {:else}
+                                        {$t(`status.${bannerStatus}`) || bannerStatus}
+                                    {/if}
+                                </span>
+                            </div>
+                            <div>
+                                {#if !isSimpleType}
+                                    <div class="text-xs font-bold text-white/70 uppercase tracking-widest mb-1">
+                                        {$t(`bannerTypes.${currentBanner.type}`) || currentBanner.type}
+                                    </div>
+                                {/if}
+                                <h1 class="text-2xl md:text-4xl font-sdk font-bold text-white leading-tight drop-shadow-lg">
+                                    {$t(`banners.${currentBanner.id}`) || currentBanner.name}
+                                </h1>
+                            </div>
+                        </div>
+                    {/if}
+                </div>
+            {:else}
+                 <div class="w-full aspect-[21/9] bg-gray-100 dark:bg-[#2C2C2C] rounded-xl flex items-center justify-center text-gray-400 dark:text-[#666] border border-dashed border-gray-300 dark:border-[#444]">
+                    {$t("global.selectBanner") || "Select Banner"}
+                </div>
+            {/if}
+
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[250px] flex flex-col">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4">{$t("global.pullsPerDay") || "Pulls per Day"}</div>
                 <div class="flex-1 w-full relative">
                     {#if stats.timeline.length > 0}
                         <svg viewBox="0 0 100 100" class="w-full h-full overflow-visible" preserveAspectRatio="none">
@@ -268,13 +571,19 @@
                              <span>{stats.timeline[stats.timeline.length - 1]?.date}</span>
                         </div>
                     {:else}
-                        <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-[#666] text-xs">{$t("global.noData") || "Нет данных"}</div>
+                        <div class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
+                            <Icon name="noData" className="w-8 h-8 mb-2 opacity-50" />
+                            <span class="text-xs">{$t("global.noData") || "No Data"}</span>
+                        </div>
                     {/if}
                 </div>
             </div>
 
-            <div class="col-span-2 bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[200px] flex flex-col">
-                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4">{$t("global.pityDist") || "6* персонажей за крутку"}</div>
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[250px] flex flex-col">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] uppercase mb-4 flex items-center gap-1">
+                    {$t("global.pityDist") || "Pity Distribution"} 
+                    <Icon name="star" class="w-3 h-3 text-[#D0926E]" />
+                </div>
                 <div class="flex-1 w-full relative flex items-end gap-[1px]">
                      {#if stats.pityDist.length > 0}
                         {@const maxCount = Math.max(...stats.pityDist.map(p => p.count), 1)}
@@ -297,7 +606,10 @@
                             </div>
                         {/each}
                      {:else}
-                        <div class="w-full h-full flex items-center justify-center text-gray-300 dark:text-[#666] text-xs">{$t("global.noData") || "Нет данных"}</div>
+                        <div class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
+                            <Icon name="noData" className="w-8 h-8 mb-2 opacity-50" />
+                            <span class="text-xs">{$t("global.noData") || "No Data"}</span>
+                        </div>
                      {/if}
                 </div>
                 <div class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 px-1">
@@ -307,37 +619,138 @@
                 </div>
             </div>
 
-        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <div class="p-4 border-b border-gray-100 dark:border-[#444] flex items-center justify-center gap-2">
+                        <h3 class="font-bold text-[#D0926E] text-lg flex items-center gap-1">
+                            6 <Icon name="star" class="w-4 h-4" /> {$t("global.list") || "List"}
+                        </h3>
+                    </div>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="text-xs text-gray-500 dark:text-[#B7B6B3] uppercase bg-gray-50 dark:bg-[#2C2C2C]">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">{$t("global.name") || "Name"}</th>
+                                    <th class="px-4 py-3 font-bold text-right">{$t("global.total") || "Total"}</th>
+                                    <th class="px-4 py-3 font-bold text-right">%</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 dark:divide-[#444]">
+                                {#if stats.rates.sixStar.items && stats.rates.sixStar.items.length > 0}
+                                    {#each stats.rates.sixStar.items as item, i}
+                                        {@const charId = Object.keys(characters).find(k => characters[k].name === item.name) || item.name}
+                                        {@const isWeaponItem = !characters[charId]}
+                                        
+                                        <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors group">
+                                            <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
+                                                {#if i === 0}
+                                                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#FACC15]"></div>
+                                                {/if}
 
-        <div class="lg:col-span-7 h-full min-h-[600px] lg:h-auto">
-             {#if currentBanner}
-                <div class="w-full h-full bg-[#111] dark:bg-[#000] rounded-xl overflow-hidden shadow-lg relative">
-                    <Images 
-                        item={currentBanner} 
-                        variant="banner-card"
-                        className="absolute inset-0 w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700"
-                        alt={currentBanner.name}
-                    />
-                    
-                    <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent pointer-events-none"></div>
-                    
-                    <div class="absolute bottom-8 left-8 text-white max-w-md drop-shadow-lg">
-                        <div class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest w-fit mb-4 border border-white/20">
-                            {currentBanner.type}
-                        </div>
-                        <h1 class="text-5xl font-sdk font-bold leading-none mb-2">
-                            {$t(`banners.${currentBanner.id}`) || currentBanner.name}
-                        </h1>
-                        {#if currentBanner.featured6 && currentBanner.featured6.length}
-                             <div class="text-xl opacity-80">{currentBanner.featured6.join(", ")}</div>
-                        {/if}
+                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
+                                                     <Images 
+                                                        id={charId} 
+                                                        variant={isWeaponItem ? "weapon-icon" : "avatar"} 
+                                                        className="w-full h-full object-cover transform scale-110" 
+                                                        alt={item.name}
+                                                     />
+                                                </div>
+                                                <span class="truncate max-w-[120px]" title={item.name}>{item.name}</span>
+                                            </td>
+                                            <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
+                                                {fmt(item.count)}
+                                            </td>
+                                            <td class="px-4 py-2 text-right font-nums text-gray-500 dark:text-[#B7B6B3]">
+                                                {item.percent}%
+                                            </td>
+                                        </tr>
+                                    {/each}
+                                {:else}
+                                    <tr>
+                                        <td colspan="3" class="px-4 py-10">
+                                            <div class="flex flex-col items-center justify-center gap-2 text-gray-300 dark:text-[#666]">
+                                                <Icon name="noData" className="w-8 h-8 opacity-50" />
+                                                <span class="text-xs">{$t("global.noData") || "No Data"}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {/if}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-             {:else}
-                <div class="w-full h-full bg-gray-100 dark:bg-[#2C2C2C] rounded-xl flex items-center justify-center text-gray-400 dark:text-[#666]">
-                    {$t("global.selectBanner") || "Выберите баннер"}
+
+                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <div class="p-4 border-b border-gray-100 dark:border-[#444] flex items-center justify-center gap-2">
+                        <h3 class="font-bold text-[#E3BC55] text-lg flex items-center gap-1">
+                            5 <Icon name="star" class="w-4 h-4" /> {$t("global.list") || "List"}
+                        </h3>
+                    </div>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-left">
+                            <thead class="text-xs text-gray-500 dark:text-[#B7B6B3] uppercase bg-gray-50 dark:bg-[#2C2C2C]">
+                                <tr>
+                                    <th class="px-4 py-3 font-bold">{$t("global.name") || "Name"}</th>
+                                    <th class="px-4 py-3 font-bold text-right">{$t("global.total") || "Total"}</th>
+                                    <th class="px-4 py-3 font-bold text-right">%</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 dark:divide-[#444]">
+                                {#if stats.rates.fiveStar.items && stats.rates.fiveStar.items.length > 0}
+                                    {#each stats.rates.fiveStar.items.slice(0, 10) as item, i}
+                                        {@const charId = Object.keys(characters).find(k => characters[k].name === item.name) || item.name}
+                                        {@const isWeaponItem = !characters[charId]}
+
+                                        <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors relative">
+                                            <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
+                                                {#if i === 0}
+                                                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#E3BC55]"></div>
+                                                {/if}
+                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
+                                                     <Images 
+                                                        id={charId} 
+                                                        variant={isWeaponItem ? "weapon-icon" : "avatar"} 
+                                                        className="w-full h-full object-cover transform scale-110" 
+                                                        alt={item.name}
+                                                     />
+                                                </div>
+                                                <span class="truncate max-w-[120px]" title={item.name}>{item.name}</span>
+                                            </td>
+                                            <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
+                                                {fmt(item.count)}
+                                            </td>
+                                            <td class="px-4 py-2 text-right font-nums text-gray-500 dark:text-[#B7B6B3]">
+                                                {item.percent}%
+                                            </td>
+                                        </tr>
+                                    {/each}
+                                    {#if stats.rates.fiveStar.items.length > 10}
+                                        <tr>
+                                            <td colspan="3" class="px-4 py-2 text-center text-xs text-gray-400 italic">
+                                                ... and {stats.rates.fiveStar.items.length - 10} more
+                                            </td>
+                                        </tr>
+                                    {/if}
+                                {:else}
+                                    <tr>
+                                        <td colspan="3" class="px-4 py-10">
+                                            <div class="flex flex-col items-center justify-center gap-2 text-gray-300 dark:text-[#666]">
+                                                <Icon name="noData" className="w-8 h-8 opacity-50" />
+                                                <span class="text-xs">{$t("global.noData") || "No Data"}</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {/if}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-             {/if}
+
+            </div>
+
         </div>
 
     </div>

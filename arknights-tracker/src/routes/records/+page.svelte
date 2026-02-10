@@ -91,7 +91,7 @@
         {$t("page.importBtn")}
       </SquareButton>
     </div>
-    <!--
+
     <div class="w-full md:w-80">
       <SquareButton variant="black2" onClick={openGlobal}>
         <div slot="icon">
@@ -100,7 +100,7 @@
         {$t("page.globalBtn")}
       </SquareButton>
     </div>
-    -->
+
     <div class="w-full md:w-64">
       <SquareButton variant="black2" onClick={() => (isSettingsOpen = true)}>
         <div slot="icon">

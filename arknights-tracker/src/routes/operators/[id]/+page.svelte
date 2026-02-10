@@ -415,7 +415,6 @@
             <!-- 2. НАВИГАЦИЯ (МЕНЮ) -->
             <div class="flex flex-col gap-3 mt-6 w-[240px]">
                 {#each menuItems as item}
-                    <!-- Убираем обертку relative и полоску снаружи, все теперь внутри кнопки -->
 
                     <Button
                         variant="menuButton"
@@ -426,17 +425,12 @@
                             ? 'opacity-60 hover:opacity-100'
                             : 'scale-105'}"
                     >
-                        <!-- Текст внутри кнопки -->
-                        <!-- Button сам поставит его справа снизу -->
                         {$t(item.label) || item.id}
                     </Button>
                 {/each}
             </div>
         </div>
-        <!-- Конец левой колонки -->
-
         <!-- ================= ЦЕНТР (ПУСТОТА ДЛЯ АРТА) ================= -->
-        <!-- Арт уже лежит background-ом, этот блок просто занимает место в гриде -->
         <div class="hidden lg:block pointer-events-none"></div>
 
         <!-- ПРАВАЯ КОЛОНКА -->

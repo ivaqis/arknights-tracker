@@ -8,6 +8,7 @@
     import { fade } from "svelte/transition";
     import { isDarkMode } from "$lib/stores/theme";
     import { browser } from "$app/environment";
+    import CookieConsent from "$lib/components/CookieConsent.svelte";
     import LanguageSelect from "$lib/components/LanguageSelect.svelte";
     import Icons from "$lib/components/Icons.svelte";
     import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
@@ -170,5 +171,7 @@
 
     <main class="md:ml-64 w-full p-4 md:p-8 relative z-0">
         <slot />
+
+        <CookieConsent />
     </main>
 </div>
