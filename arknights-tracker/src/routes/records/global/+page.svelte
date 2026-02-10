@@ -18,44 +18,48 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
-    // --- ХЕЛПЕРЫ ---
-    
-    // УЛУЧШЕННАЯ ФУНКЦИЯ ПОИСКА ID
-    function getItemIconId(name) {
-        if (!name) return "";
-        
-        // 1. Ручные исключения (Mapping)
-        const overrides = {
-            "Endministrator": "endministrator1",
-            "Arlight": "arclight", 
-            "Arclight": "arclight", // Убедись, что в characters.js ключ именно arclight (латиница)
-            
-            // Фикс для твоего оружия
-            "OBJ Edge of Lightness": "objEdgeOfLightness"
-        };
-        
-        if (overrides[name]) return overrides[name];
+    // --- ЛОГИКА НОРМАЛИЗАЦИИ И ПОИСКА (КАК В BannerCard) ---
 
-        let clean = name.trim();
+    const normalize = (str) => str?.toLowerCase().replace(/[^a-z0-9]/g, "") || "";
 
-        // 2. Если имя начинается с OBJ (и не попало в overrides)
-        // Пытаемся сохранить camelCase: "OBJ Weapon Name" -> "objWeaponName"
-        if (clean.startsWith("OBJ ")) {
-            return "obj" + clean.substring(4).split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join('');
+    const itemMap = { ...characters, ...weapons };
+    const charIds = new Set(Object.values(characters).map((c) => c.id));
+    const weaponIds = new Set(Object.values(weapons).map((w) => w.id));
+
+    // Создаем карту поиска: ключи — нормализованные имена и ID, значения — объекты предметов
+    const lookupMap = Object.values(itemMap).reduce((acc, item) => {
+        if (item.name) acc[normalize(item.name)] = item;
+        if (item.id) acc[normalize(item.id)] = item;
+        return acc;
+    }, {});
+
+    // Основная функция для определения ID и Типа по имени
+    function resolveItem(name) {
+        const normName = normalize(name);
+        
+        // 1. Пытаемся найти предмет в базе
+        let itemData = lookupMap[normName];
+        let itemId = itemData ? itemData.id : normName; // Если не нашли, используем нормализованное имя как ID
+        
+        // 2. Определяем тип (Оружие или Персонаж)
+        let isWeapon = false;
+
+        // Если нашли объект в базе, смотрим его свойства
+        if (itemData) {
+            // Если ID есть в списке оружий -> Оружие
+            if (weaponIds.has(itemData.id)) isWeapon = true;
+            // Иначе, если нет в списке персонажей, но есть поле weapon (спорный момент, но надежный) -> Оружие
+            else if (!charIds.has(itemData.id) && itemData.weapon && !itemData.class) isWeapon = true; 
+        } else {
+            // Фолбек: если не нашли в базе, но имя содержит "blade", "sword" и т.д. (опционально)
+            // Но лучше полагаться на контекст вызова. 
+            // В данном случае, если мы не знаем что это, считаем оружием только если явно задано category
         }
 
-        // 3. Стандартная логика для имен с пробелами ("Chen Qianyu" -> "chenQianyu")
-        if (clean.includes(" ")) {
-            return clean.split(/\s+/).map((word, index) => {
-                const w = word.replace(/[^a-zA-Z0-9]/g, '');
-                if (index === 0) return w.toLowerCase();
-                return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-            }).join('');
-        }
-
-        // 4. Одно слово -> с маленькой буквы
-        return clean.charAt(0).toLowerCase() + clean.slice(1);
+        return { id: itemId, isWeapon, name: itemData ? itemData.name : name };
     }
+
+    // --- Остальной код ---
 
     let now = new Date();
     let timer;
@@ -109,22 +113,16 @@
 
     $: isSimpleType = selectedType === 'standard' || selectedType === 'new-player';
     $: isWeaponCategory = selectedType.toLowerCase().includes('weap') || selectedType === 'weapon';
-    
-    // ЛОГИКА МАКСИМАЛЬНОГО ПИТИ (для графика)
-    // 40 для: Оружия ИЛИ Новичка
+
     $: maxPity = (isWeaponCategory || selectedType === 'new-player') ? 40 : 80;
 
-    // ФИЛЬТРАЦИЯ БАННЕРОВ
     $: bannerOptions = banners
         .filter(b => {
             const bid = b.id.toLowerCase();
             const bType = b.type.toLowerCase();
             const sType = selectedType.toLowerCase();
 
-            if (sType === 'new-player') {
-                return bType === 'new-player' || bid === 'beginner';
-            }
-
+            if (sType === 'new-player') return bType === 'new-player' || bid === 'beginner';
             if (sType.includes('standard') && sType.includes('weap')) return bid.includes('constant');
             if (sType.includes('special') && sType.includes('weap')) return (bType === 'weapon' || bid.includes('weapon')) && !bid.includes('constant');
             if (sType === 'weapon') return bType === 'weapon' || bid.includes('weapon');
@@ -139,7 +137,6 @@
 
     let selectedBannerId = "";
 
-    // АВТОВЫБОР БАННЕРА
     $: {
         let foundId = "";
         
@@ -188,22 +185,24 @@
 
     $: timeLeftString = currentBanner ? formatTimeLeft(currentBanner.endTime) : null;
 
+    // Сбор данных для Featured Items (картинок)
     $: allFeaturedItems = (() => {
         if (!currentBanner?.featured6) return [];
         return currentBanner.featured6.map(id => {
-            const char = characters[id];
-            const weapon = weapons[id];
-            const isWep = isWeaponCategory || !!weapon || !char; 
+            // Используем новую логику
+            const { id: resolvedId, isWeapon } = resolveItem(id);
             return { 
-                id: id, 
-                name: (char && char.name) || (weapon && weapon.name) || id, 
-                isWeapon: isWep, 
+                id: resolvedId, 
+                name: lookupMap[normalize(id)]?.name || id, 
+                isWeapon: isWeaponCategory || isWeapon, // Принудительно оружие если категория, иначе авто
                 rarity: 6
             };
         });
     })();
 
     $: mainFeatured = !isSimpleType && allFeaturedItems.length === 1 ? allFeaturedItems[0] : null;
+
+    const oroberyl = currencies.find((c) => c.id === "oroberyl") || { id: "oroberyl" };
 
     // --- СТАТИСТИКА ---
     const initialStats = {
@@ -244,7 +243,7 @@
                 
                 let obtained = 0;
                 if (mainFeatured && d.items6) {
-                    const foundItem = d.items6.find(i => i.name === mainFeatured.name);
+                    const foundItem = d.items6.find(i => normalize(i.name) === normalize(mainFeatured.name));
                     obtained = foundItem ? foundItem.count : 0;
                 }
 
@@ -368,8 +367,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         <div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-4">
             {#if mainFeatured}
-                {@const iconId =
-                    getItemIconId(mainFeatured.name) || mainFeatured.id}
+                {@const resolved = resolveItem(mainFeatured.name)}
 
                 <div
                     class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 relative overflow-hidden group"
@@ -382,10 +380,8 @@
                             class="w-16 h-16 bg-gray-100 dark:bg-[#2C2C2C] dark:border-[#444444] rounded-lg border border-gray-200 overflow-hidden shrink-0 shadow-inner flex items-center justify-center"
                         >
                             <Images
-                                id={iconId}
-                                variant={mainFeatured.isWeapon
-                                    ? "weapon-icon"
-                                    : "operator-icon"}
+                                id={resolved.id} 
+                                variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"}
                                 className="w-full h-full object-cover"
                                 size="100%"
                             />
@@ -394,11 +390,7 @@
                             <div
                                 class="font-bold text-base text-[#21272C] dark:text-[#FDFDFD] leading-tight mb-0.5 line-clamp-2"
                             >
-                                {$t(
-                                    mainFeatured.isWeapon
-                                        ? `weaponsList.${iconId}`
-                                        : `characters.${iconId}`,
-                                ) || mainFeatured.name}
+                                {$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || mainFeatured.name}
                             </div>
                             <div
                                 class="text-[10px] text-gray-500 dark:text-[#B7B6B3] uppercase tracking-wide"
@@ -427,23 +419,14 @@
 
                     <div class="flex flex-wrap gap-2">
                         {#each allFeaturedItems as item}
-                            {@const iconId =
-                                getItemIconId(item.name) || item.id}
-                            <Tooltip
-                                text={$t(
-                                    item.isWeapon
-                                        ? `weaponsList.${iconId}`
-                                        : `characters.${iconId}`,
-                                ) || item.name}
-                            >
+                            {@const resolved = resolveItem(item.name)}
+                            <Tooltip text={$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || item.name}>
                                 <div
                                     class="w-12 h-12 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg border border-gray-200 dark:border-[#555] overflow-hidden hover:scale-105 transition-transform cursor-pointer shadow-sm relative group"
                                 >
                                     <Images
-                                        id={iconId}
-                                        variant={item.isWeapon
-                                            ? "weapon-icon"
-                                            : "operator-icon"}
+                                        id={resolved.id}
+                                          variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"}
                                         size="100%"
                                         className="w-full h-full object-cover"
                                         alt={item.name}
@@ -513,7 +496,7 @@
                     <h3
                         class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1"
                     >
-                        6 <Icon name="star" class="w-5 h-5 text-[#D0926E]" />
+                        6 <Icon name="star" class="w-5 h-5 text-[#21272C] dark:text-[#FDFDFD]" />
                         {$t("global.stats") || "Stats"}
                     </h3>
                 </div>
@@ -573,7 +556,7 @@
                     <h3
                         class="text-lg font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1"
                     >
-                        5 <Icon name="star" class="w-5 h-5 text-[#E3BC55]" />
+                        5 <Icon name="star" class="w-5 h-5 text-[#21272C] dark:text-[#FDFDFD]" />
                         {$t("global.stats") || "Stats"}
                     </h3>
                 </div>
@@ -883,8 +866,7 @@
                             <tbody class="divide-y divide-gray-100 dark:divide-[#444]">
                                 {#if stats.rates.sixStar.items && stats.rates.sixStar.items.length > 0}
                                     {#each stats.rates.sixStar.items as item, i}
-                                        {@const iconId = getItemIconId(item.name)}
-                                        {@const isChar = characters[iconId] !== undefined}
+                                        {@const resolved = resolveItem(item.name)}
                                         
                                         <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors group">
                                             <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
@@ -894,18 +876,16 @@
 
                                                 <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
                                                      <Images 
-                                                        id={iconId} 
-                                                        variant={isChar ? "avatar" : "weapon-icon"} 
+                                                        id={resolved.id} 
+                                                        variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"} 
                                                         className="w-full h-full object-cover transform scale-110" 
                                                         alt={item.name}
                                                      />
                                                 </div>
                                                 
-                                                <Tooltip text={$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}>
-                                                    <span class="truncate max-w-[120px] cursor-help">
-                                                        {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
-                                                    </span>
-                                                </Tooltip>
+                                                <span class="truncate max-w-[120px]" title={item.name}>
+                                                    {$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || item.name}
+                                                </span>
                                             </td>
                                             <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
                                                 {fmt(item.count)}
@@ -949,8 +929,7 @@
                             <tbody class="divide-y divide-gray-100 dark:divide-[#444]">
                                 {#if stats.rates.fiveStar.items && stats.rates.fiveStar.items.length > 0}
                                     {#each stats.rates.fiveStar.items as item, i}
-                                        {@const iconId = getItemIconId(item.name)}
-                                        {@const isChar = characters[iconId] !== undefined}
+                                        {@const resolved = resolveItem(item.name)}
 
                                         <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors relative">
                                             <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
@@ -959,18 +938,15 @@
                                                 {/if}
                                                 <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
                                                      <Images 
-                                                        id={iconId} 
-                                                        variant={isChar ? "avatar" : "weapon-icon"} 
+                                                        id={resolved.id} 
+                                                        variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"} 
                                                         className="w-full h-full object-cover transform scale-110" 
                                                         alt={item.name}
                                                      />
                                                 </div>
-                                                
-                                                <Tooltip text={$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}>
-                                                    <span class="truncate max-w-[120px] cursor-help">
-                                                        {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
-                                                    </span>
-                                                </Tooltip>
+                                                <span class="truncate max-w-[120px]" title={item.name}>
+                                                    {$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || item.name}
+                                                </span>
                                             </td>
                                             <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
                                                 {fmt(item.count)}
