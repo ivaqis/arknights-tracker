@@ -18,24 +18,33 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
+    // --- ХЕЛПЕРЫ ---
+    
+    // УЛУЧШЕННАЯ ФУНКЦИЯ ПОИСКА ID
     function getItemIconId(name) {
         if (!name) return "";
-
+        
         // 1. Ручные исключения (Mapping)
         const overrides = {
             "Endministrator": "endministrator1",
-            "Arlight": "arclight",
-            "Arclight": "arclight"
+            "Arlight": "arclight", 
+            "Arclight": "arclight", // Убедись, что в characters.js ключ именно arclight (латиница)
+            
+            // Фикс для твоего оружия
+            "OBJ Edge of Lightness": "objEdgeOfLightness"
         };
         
         if (overrides[name]) return overrides[name];
 
         let clean = name.trim();
 
-        if (clean.startsWith("obj")) {
-            clean = clean.substring(3); 
+        // 2. Если имя начинается с OBJ (и не попало в overrides)
+        // Пытаемся сохранить camelCase: "OBJ Weapon Name" -> "objWeaponName"
+        if (clean.startsWith("OBJ ")) {
+            return "obj" + clean.substring(4).split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join('');
         }
 
+        // 3. Стандартная логика для имен с пробелами ("Chen Qianyu" -> "chenQianyu")
         if (clean.includes(" ")) {
             return clean.split(/\s+/).map((word, index) => {
                 const w = word.replace(/[^a-zA-Z0-9]/g, '');
@@ -44,6 +53,7 @@
             }).join('');
         }
 
+        // 4. Одно слово -> с маленькой буквы
         return clean.charAt(0).toLowerCase() + clean.slice(1);
     }
 
@@ -82,6 +92,8 @@
 
     onDestroy(() => clearInterval(timer));
 
+    // --- ЛОГИКА СЕЛЕКТОВ ---
+
     $: sortedBannerTypes = [...bannerTypes].sort((a, b) => {
         if (a.id === 'special') return -1;
         if (b.id === 'special') return 1;
@@ -97,7 +109,12 @@
 
     $: isSimpleType = selectedType === 'standard' || selectedType === 'new-player';
     $: isWeaponCategory = selectedType.toLowerCase().includes('weap') || selectedType === 'weapon';
+    
+    // ЛОГИКА МАКСИМАЛЬНОГО ПИТИ (для графика)
+    // 40 для: Оружия ИЛИ Новичка
+    $: maxPity = (isWeaponCategory || selectedType === 'new-player') ? 40 : 80;
 
+    // ФИЛЬТРАЦИЯ БАННЕРОВ
     $: bannerOptions = banners
         .filter(b => {
             const bid = b.id.toLowerCase();
@@ -121,6 +138,8 @@
         }));
 
     let selectedBannerId = "";
+
+    // АВТОВЫБОР БАННЕРА
     $: {
         let foundId = "";
         
@@ -153,6 +172,8 @@
         }
     }
 
+    // --- ДАННЫЕ БАННЕРА ---
+
     $: currentBannerRaw = banners.find(b => b.id === selectedBannerId);
     $: currentBanner = currentBannerRaw ? { ...currentBannerRaw, id: currentBannerRaw.id, icon: currentBannerRaw.icon || currentBannerRaw.id } : null;
 
@@ -172,9 +193,7 @@
         return currentBanner.featured6.map(id => {
             const char = characters[id];
             const weapon = weapons[id];
-            
             const isWep = isWeaponCategory || !!weapon || !char; 
-            
             return { 
                 id: id, 
                 name: (char && char.name) || (weapon && weapon.name) || id, 
@@ -186,6 +205,7 @@
 
     $: mainFeatured = !isSimpleType && allFeaturedItems.length === 1 ? allFeaturedItems[0] : null;
 
+    // --- СТАТИСТИКА ---
     const initialStats = {
         totalUsers: 0,
         totalPulls: 0,
@@ -206,7 +226,6 @@
 
     async function fetchStats(bannerId) {
         stats = { ...initialStats };
-        
         if (!bannerId) return;
 
         const apiBannerId = bannerId === 'new_player_01' ? 'beginner' : bannerId;
@@ -530,7 +549,7 @@
                     {#if !isSimpleType && stats.winRate5050 > 0}
                         <div class="flex justify-between items-center">
                             <span
-                                class="text-sm font-bold text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]"
+                                class="text-sm text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]"
                             >
                                 {#if isWeaponCategory}
                                     {$t("global.won") || "Won"} 25:75
@@ -794,105 +813,51 @@
                 </div>
             </div>
 
-            <div
-                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col z-0"
-            >
-                <div
-                    class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] mb-4 flex items-center gap-0.5"
-                >
-                    {$t("global.pityDist") || "Pity Distribution"}
+            <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col z-0">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] mb-4 flex items-center gap-1">
+                    {$t("global.pityDist") || "Pity Distribution"} 
                     <Icon name="star" class="w-3 h-3 text-[#D0926E]" />
                 </div>
                 <div class="flex-1 w-full relative flex items-end gap-[1px]">
-                    {#if stats.pityDist.length > 0}
-                        {@const maxCount = Math.max(
-                            ...stats.pityDist.map((p) => p.count),
-                            1,
-                        )}
-
-                        {#each Array(isWeaponCategory ? 40 : 80) as _, i}
+                     {#if stats.pityDist.length > 0}
+                        {@const maxCount = Math.max(...stats.pityDist.map(p => p.count), 1)}
+                        
+                        {#each Array(maxPity) as _, i}
                             {@const pity = i + 1}
-                            {@const data = stats.pityDist.find(
-                                (p) => p.pity === pity,
-                            )}
+                            {@const data = stats.pityDist.find(p => p.pity === pity)}
                             {@const count = data ? data.count : 0}
                             {@const percent = data ? data.percent : 0}
                             {@const heightPct = (count / maxCount) * 100}
-
-                            <div
-                                class="flex-1 bg-gray-100 dark:bg-[#2C2C2C] relative group flex items-end rounded-t-sm"
-                                style="height: 100%;"
-                            >
+                            
+                            <div class="flex-1 bg-gray-100 dark:bg-[#2C2C2C] relative group flex items-end rounded-t-sm" style="height: 100%;">
                                 {#if count > 0}
-                                    <div
-                                        class="w-full bg-[#D4BE48] hover:bg-[#FACC15] transition-all duration-200"
+                                    <div 
+                                        class="w-full bg-[#D4BE48] hover:bg-[#FACC15] transition-all duration-200" 
                                         style="height: {heightPct}%;"
                                     ></div>
-
-                                    <div
-                                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 opacity-0 group-hover:opacity-100 pointer-events-none z-50 transition-opacity duration-150"
-                                    >
-                                        <div
-                                            class="bg-black/90 backdrop-blur text-white text-[10px] rounded-md px-2 py-1.5 shadow-xl border border-white/10 whitespace-nowrap"
-                                        >
-                                            <div
-                                                class="font-mono text-gray-300"
-                                            >
-                                                {$t("global.roll") || "Roll"}:
-                                                <span
-                                                    class="text-white font-bold"
-                                                    >{pity}</span
-                                                >
-                                            </div>
-                                            <div
-                                                class="font-mono text-gray-300"
-                                            >
-                                                {$t("global.total") || "Total"}:
-                                                <span
-                                                    class="text-white font-bold"
-                                                    >{count}</span
-                                                >
-                                            </div>
-                                            <div
-                                                class="font-mono text-gray-300"
-                                            >
-                                                {$t("global.percent") ||
-                                                    "Percent"}:
-                                                <span
-                                                    class="text-[#FACC15] font-bold"
-                                                    >{percent}%</span
-                                                >
-                                            </div>
+                                    
+                                    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 opacity-0 group-hover:opacity-100 pointer-events-none z-50 transition-opacity duration-150">
+                                        <div class="bg-black/90 backdrop-blur text-white text-[10px] rounded-md px-2 py-1.5 shadow-xl border border-white/10 whitespace-nowrap">
+                                            <div class="font-mono text-gray-300">{$t("global.roll") || "Roll"}: <span class="text-white font-bold">{pity}</span></div>
+                                            <div class="font-mono text-gray-300">{$t("global.total") || "Total"}: <span class="text-white font-bold">{count}</span></div>
+                                            <div class="font-mono text-gray-300">{$t("global.percent") || "Percent"}: <span class="text-[#FACC15] font-bold">{percent}%</span></div>
                                         </div>
                                     </div>
                                 {/if}
                             </div>
                         {/each}
-                    {:else}
-                        <div
-                            class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]"
-                        >
-                            <Icon
-                                name="noData"
-                                className="w-8 h-8 mb-2 opacity-50"
-                            />
-                            <span class="text-xs"
-                                >{$t("global.noData") || "No Data"}</span
-                            >
+                     {:else}
+                        <div class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
+                            <Icon name="noData" className="w-8 h-8 mb-2 opacity-50" />
+                            <span class="text-xs">{$t("global.noData") || "No Data"}</span>
                         </div>
-                    {/if}
+                     {/if}
                 </div>
-                <div
-                    class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 px-1"
-                >
-                    {#if isWeaponCategory}
-                        <span>1</span><span>10</span><span>20</span><span
-                            >30</span
-                        ><span>40</span>
+                <div class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] mt-2 px-1">
+                    {#if maxPity === 40}
+                        <span>1</span><span>10</span><span>20</span><span>30</span><span>40</span>
                     {:else}
-                        <span>1</span><span>20</span><span>40</span><span
-                            >60</span
-                        ><span>80</span>
+                        <span>1</span><span>20</span><span>40</span><span>60</span><span>80</span>
                     {/if}
                 </div>
             </div>
@@ -920,6 +885,7 @@
                                     {#each stats.rates.sixStar.items as item, i}
                                         {@const iconId = getItemIconId(item.name)}
                                         {@const isChar = characters[iconId] !== undefined}
+                                        
                                         <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors group">
                                             <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
                                                 {#if i === 0}
@@ -935,9 +901,11 @@
                                                      />
                                                 </div>
                                                 
-                                                <span class="truncate max-w-[120px]" title={item.name}>
-                                                    {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
-                                                </span>
+                                                <Tooltip text={$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}>
+                                                    <span class="truncate max-w-[120px] cursor-help">
+                                                        {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
+                                                    </span>
+                                                </Tooltip>
                                             </td>
                                             <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
                                                 {fmt(item.count)}
@@ -997,9 +965,12 @@
                                                         alt={item.name}
                                                      />
                                                 </div>
-                                                <span class="truncate max-w-[120px]" title={item.name}>
-                                                    {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
-                                                </span>
+                                                
+                                                <Tooltip text={$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}>
+                                                    <span class="truncate max-w-[120px] cursor-help">
+                                                        {$t(isChar ? `characters.${iconId}` : `weaponsList.${iconId}`) || item.name}
+                                                    </span>
+                                                </Tooltip>
                                             </td>
                                             <td class="px-4 py-2 text-right font-nums font-bold text-gray-900 dark:text-[#FDFDFD]">
                                                 {fmt(item.count)}
