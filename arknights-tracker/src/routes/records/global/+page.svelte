@@ -535,7 +535,7 @@
                     {#if !isSimpleType && stats.winRate5050 > 0}
                         <div class="flex justify-between items-center">
                             <span
-                                class="text-sm text-lg font-nums text-[#21272C] dark:text-[#FDFDFD]"
+                                class="text-gray-600 dark:text-[#E4E4E4]"
                             >
                                 {#if isWeaponCategory}
                                     {$t("global.won") || "Won"} 25:75
@@ -800,9 +800,9 @@
             </div>
 
             <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col z-0">
-                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] mb-4 flex items-center gap-1">
+                <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] mb-4 flex items-center gap-0.5">
                     {$t("global.pityDist") || "Pity Distribution"} 
-                    <Icon name="star" class="w-3 h-3 text-[#D0926E]" />
+                    <Icon name="star" class="w-3 h-3 text-gray-800 dark:text-[#FDFDFD]" />
                 </div>
                 <div class="flex-1 w-full relative flex items-end gap-[1px]">
                      {#if stats.pityDist.length > 0}
@@ -874,7 +874,7 @@
                                         <tr class="hover:bg-gray-50 dark:hover:bg-[#444] transition-colors group">
                                             <td class="px-4 py-2 font-medium text-gray-900 dark:text-[#FDFDFD] flex items-center gap-3 relative">
                                                 {#if i === 0}
-                                                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#FACC15]"></div>
+                                                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#D84C38]"></div>
                                                 {/if}
 
                                                 <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#D84C38] shrink-0">
