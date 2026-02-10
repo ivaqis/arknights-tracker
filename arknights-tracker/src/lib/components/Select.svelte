@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
+  import Images from "$lib/components/Images.svelte";
 
   export let options = [];
   export let value = "";
@@ -11,7 +12,8 @@
   const dispatch = createEventDispatcher();
   let isOpen = false;
 
-  $: selectedLabel = options.find(o => o.value === value)?.label || placeholder;
+  $: selectedOption = options.find(o => o.value === value);
+  $: selectedLabel = selectedOption?.label || placeholder;
 
   function toggle() {
     isOpen = !isOpen;
@@ -23,7 +25,6 @@
     dispatch('change', option.value);
   }
 
-  // Закрытие при клике снаружи
   function clickOutside(node) {
     const handleClick = event => {
       if (node && !node.contains(event.target) && !event.defaultPrevented) {
@@ -71,7 +72,18 @@
        {@html topoPattern}
     </div>
 
-    <span class="relative z-10 text-lg truncate pr-4">
+    <span class="relative z-10 text-lg truncate pr-4 flex items-center gap-3">
+      {#if selectedOption?.iconId}
+         <div class="w-12 h-8 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
+             <Images 
+                id={selectedOption.iconId} 
+                variant="banner-mini" 
+                size="100%" 
+                className="w-full h-full object-cover"
+                alt={selectedLabel}
+             />
+         </div>
+      {/if}
       {selectedLabel}
     </span>
 
@@ -98,13 +110,24 @@
             <button
               on:click={() => select(option)}
               class="
-                w-full text-left px-4 py-3 text-sm font-medium transition-colors
+                w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3
                 {value === option.value 
                    ? (variant === 'black' ? 'bg-[#505050] text-white' : 'bg-gray-100') 
                    : (variant === 'black' ? 'hover:bg-[#404040]' : 'hover:bg-gray-50')}
               "
             >
-              {option.label}
+              {#if option.iconId}
+                 <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
+                     <Images 
+                        id={option.iconId} 
+                        variant="banner-mini" 
+                        size="100%" 
+                        className="w-full h-full object-cover"
+                        alt={option.label}
+                     />
+                 </div>
+              {/if}
+              <span>{option.label}</span>
             </button>
           </li>
         {/each}

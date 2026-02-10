@@ -132,7 +132,10 @@
         .sort((a, b) => new Date(b.startTime) - new Date(a.startTime))
         .map(b => ({
             value: b.id,
-            label: $t(`banners.${b.id}`) || b.name
+            label: $t(`banners.${b.id}`) || b.name,
+            // ИСПРАВЛЕНО: Берем имя файла из miniIcon и убираем расширение (.png/.jpg)
+            // было: iconId: b.id
+            iconId: b.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : b.id
         }));
 
     let selectedBannerId = "";
@@ -874,7 +877,7 @@
                                                     <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#FACC15]"></div>
                                                 {/if}
 
-                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
+                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#D84C38] shrink-0">
                                                      <Images 
                                                         id={resolved.id} 
                                                         variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"} 
@@ -883,7 +886,7 @@
                                                      />
                                                 </div>
                                                 
-                                                <span class="truncate max-w-[120px]" title={item.name}>
+                                                <span title={item.name}>
                                                     {$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || item.name}
                                                 </span>
                                             </td>
@@ -936,7 +939,8 @@
                                                 {#if i === 0}
                                                     <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#E3BC55]"></div>
                                                 {/if}
-                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border border-gray-200 dark:border-[#555] shrink-0">
+                                                
+                                                <div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#E3BC55] shrink-0">
                                                      <Images 
                                                         id={resolved.id} 
                                                         variant={resolved.isWeapon ? "weapon-icon" : "operator-icon"} 
@@ -944,7 +948,8 @@
                                                         alt={item.name}
                                                      />
                                                 </div>
-                                                <span class="truncate max-w-[120px]" title={item.name}>
+                                                
+                                                <span title={item.name}>
                                                     {$t(resolved.isWeapon ? `weaponsList.${resolved.id}` : `characters.${resolved.id}`) || item.name}
                                                 </span>
                                             </td>
