@@ -14,13 +14,9 @@ const firebaseConfig = {
   measurementId: "G-5VDE9YMJX5"
 };
 
-// Инициализация (Singleton)
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
 export const provider = new GoogleAuthProvider();
-
-// 2. Инициализируем Analytics ТОЛЬКО на клиенте
-// Мы проверяем typeof window. Если это не 'undefined', значит мы в браузере.
 export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;

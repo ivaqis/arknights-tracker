@@ -1,14 +1,10 @@
 // src/lib/api.js
 
-// Point this to your backend
 const BACKEND_URL = "/api";
 export const API_BASE = import.meta.env.PROD 
     ? '/api'
     : 'http://localhost:3001/api';
 
-/**
- * Proxy fetch to bypass CORS and get gacha logs
- */
 export async function proxyImport(urlInput, saveStats = true) {
     const res = await fetch(`${BACKEND_URL}/import`, {
         method: "POST",
@@ -20,9 +16,6 @@ export async function proxyImport(urlInput, saveStats = true) {
     return await res.json();
 }
 
-/**
- * Fetch percentiles for the rating card
- */
 export async function fetchGlobalStats(uid, poolId) {
     try {
         const url = `${API_BASE}/rankings/data?bannerId=${poolId}&uid=${uid}`;
@@ -30,7 +23,6 @@ export async function fetchGlobalStats(uid, poolId) {
 
         const res = await fetch(url);
         
-        // ЕСЛИ ОШИБКА - ЧИТАЕМ ЕЁ ТЕКСТ
         if (!res.ok) {
             const errText = await res.text();
             console.error(`SERVER ERROR (${res.status}):`, errText);

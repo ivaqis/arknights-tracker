@@ -182,7 +182,7 @@
         <div class="flex flex-col justify-center">
           <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">
             {#if activeTab.includes('weap')}
-                Won 25:75 {:else}
+                {$t("page.rating.lucky2575")}{:else}
                 {$t("page.rating.lucky5050")}
             {/if}
           </div>
