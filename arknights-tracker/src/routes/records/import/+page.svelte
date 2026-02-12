@@ -798,7 +798,7 @@
                                   <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D0926E] opacity-75"></span>
                                   <span class="relative inline-flex rounded-full h-3 w-3 bg-[#D0926E]"></span>
                                 </span>
-                                {$t("import.scanning") || "Scanning Servers..."}
+                                {$t("import.processing") || "Scanning Servers..."}
                             {:else}
                                 <Icon name="import" style="width: 20px; height: 20px;" />
                                 {$t("import.newFound")}

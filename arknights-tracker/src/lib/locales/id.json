@@ -101,6 +101,7 @@
   },
   "import": {
     "title": "Impor Catatan Headhunting",
+    "importing": "Mengimpor",
     "instruction": "Tempel URL dari riwayat pencarian yang didapat dari dalam game:",
     "step1": "Jalankan Arknights Endfield dan buka riwayat pull.",
     "step2_pre": "Salin skrip di bawah ini, jalankan ",

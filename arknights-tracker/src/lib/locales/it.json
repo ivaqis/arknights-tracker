@@ -101,6 +101,7 @@
   },
   "import": {
     "title": "Importa Registro Reclutamenti",
+    "importing": "Importazione",
     "instruction": "Incolla l'URL dalla cronologia di ricerca ottenuta nel gioco:",
     "step1": "Avvia Arknights Endfield e apri la cronologia estrazioni (History).",
     "step2_pre": "Copia lo script qui sotto, avvia ",

@@ -101,6 +101,7 @@
   },
   "import": {
     "title": "Import Headhunting Records",
+    "importing": "Importing",
     "instruction": "Paste the URL from the search history obtained in the game:",
     "step1": "Launch Arknights Endfield and open pull history.",
     "step2_pre": "Copy the script below, launch ",

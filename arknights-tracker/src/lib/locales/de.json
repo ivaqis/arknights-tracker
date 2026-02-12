@@ -101,6 +101,7 @@
   },
   "import": {
     "title": "Rekrutierungsverlauf importieren",
+    "importing": "Importieren",
     "instruction": "Füge die URL aus dem im Spiel abgerufenen Verlauf ein:",
     "step1": "Starte Arknights Endfield und öffne den Rekrutierungsverlauf (History).",
     "step2_pre": "Kopiere das untenstehende Skript, starte ",

@@ -101,6 +101,7 @@
   },
   "import": {
     "title": "Importar Historial de Reclutamiento",
+    "importing": "Importando",
     "instruction": "Pega la URL del historial de búsqueda obtenido en el juego:",
     "step1": "Inicia Arknights Endfield y abre el historial de tiradas (History).",
     "step2_pre": "Copia el script de abajo, inicia ",
