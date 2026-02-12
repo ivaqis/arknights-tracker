@@ -98,7 +98,6 @@
         e.target.value = cleanToken;
     }
 
-    // --- ИМПОРТ (LIVE STREAM) ---
     async function handleUrlImport() {
         errorMsg = "";
         isInputError = false;
@@ -121,7 +120,6 @@
         isLoading = true;
         pendingData = null;
         
-        // Инициализация превью
         previewReport = {
             status: "loading",
             totalAdded: 0,
@@ -158,31 +156,29 @@
                         
                         if (msg.type === 'progress') {
                             const { poolId, count } = msg;
-                            
-                            // Обновляем счетчики
-                            const currentCount = previewReport.addedCount[poolId] || 0;
+                            console.log(`Live Import: ${poolId} +${count}`);
+
+                            const currentPoolCount = previewReport.addedCount[poolId] || 0;
                             previewReport.totalAdded += count;
                             
-                            // Создаем новый объект addedCount для реактивности
                             previewReport.addedCount = {
                                 ...previewReport.addedCount,
-                                [poolId]: currentCount + count
+                                [poolId]: currentPoolCount + count
                             };
                             
-                            // ЖЕСТКОЕ ОБНОВЛЕНИЕ для Svelte
-                            previewReport = { ...previewReport };
+                            previewReport = previewReport; 
                             
-                            // ДАЕМ БРАУЗЕРУ ОТРИСОВАТЬ (Фикс Live View)
                             await new Promise(r => setTimeout(r, 0));
                         } 
                         else if (msg.type === 'complete') {
+                            console.log("Import Complete!");
                             await handleImportComplete(msg.data, urlToSend);
                         } 
                         else if (msg.type === 'error') {
                             throw new Error(msg.message);
                         }
                     } catch (e) {
-                        console.error("Stream parse error", e);
+                        console.error("Stream parse error:", e);
                     }
                 }
             }
@@ -201,13 +197,10 @@
         const backendServerId = data.serverId;
 
         if (importedUid) {
-            // Читаем сторы
             const accounts = get(accountStore.accounts);
             const selectedId = get(accountStore.selectedId);
             const currentAcc = accounts.find(a => a.id === selectedId);
 
-            // 1. Проверяем, ПУСТОЙ ли текущий аккаунт (по данным pullData)
-            // Мы должны прочитать текущее состояние pullData, чтобы узнать, есть ли там крутки
             const currentPullData = get(pullData);
             let hasPulls = false;
             
@@ -222,32 +215,30 @@
 
             const isUidMatch = currentAcc && String(currentAcc.serverUid) === String(importedUid);
 
-            // ЛОГИКА ВЫБОРА АККАУНТА
+            const shortUid = importedUid.length > 4 ? importedUid.slice(-4) : importedUid;
+            const newSmartName = `Account ${shortUid}`;
+
             if (!hasPulls || isUidMatch) {
-                // Если аккаунт пустой ИЛИ UID уже совпадает -> Обновляем текущий
                 if (accountStore.updateAccount && currentAcc) {
-                    const newName = (currentAcc.name === 'Main Account' || currentAcc.name.startsWith('Account ') || currentAcc.name === 'Doctor') 
-                        ? `Doctor_${importedUid.slice(-4)}` 
-                        : currentAcc.name;
+                    const shouldRename = currentAcc.name === 'Main Account' || 
+                                         currentAcc.name.startsWith('Account') || 
+                                         currentAcc.name.startsWith('Doctor');
+                    
+                    const nameToSet = shouldRename ? newSmartName : currentAcc.name;
 
                     accountStore.updateAccount(currentAcc.id, { 
                         uid: importedUid, 
                         serverId: backendServerId,
-                        name: newName
+                        name: nameToSet
                     });
-                } else if (!currentAcc.serverUid) {
-                    // Фоллбек, если updateAccount нет, но акк пустой (вряд ли сработает, если метода нет, но на всякий)
-                    // Тут лучше ничего не делать, чем ломать
                 }
             } else {
-                // Если крутки есть и UID другой -> Ищем существующий или создаем новый
                 const existingAccount = accounts.find(a => String(a.serverUid) === String(importedUid));
 
                 if (existingAccount) {
                     accountStore.selectAccount(existingAccount.id);
                 } else {
-                    const defaultName = `Doctor_` + importedUid.slice(-4);
-                    accountStore.addAccount(importedUid, defaultName, backendServerId);
+                    accountStore.addAccount(importedUid, newSmartName, backendServerId);
                 }
             }
         }
@@ -260,25 +251,20 @@
         const cleanPulls = parseGachaLog(rawData);
         pendingData = cleanPulls;
 
-        // Превью без сохранения (commit=false)
         const report = await pullData.smartImport(cleanPulls, backendServerId, false);
         previewReport = report; 
     }
 
-    // --- ИСПРАВЛЕННОЕ СОХРАНЕНИЕ ---
     async function confirmSave() {
         if (!pendingData) return;
         isLoading = true;
         try {
-            // ФИКС: Читаем вложенные сторы отдельно!
-            // get(accountStore) вызвал бы ошибку, т.к. accountStore - это объект.
             const accounts = get(accountStore.accounts);
             const selectedId = get(accountStore.selectedId);
             
             const currentAcc = accounts.find(a => a.id === selectedId);
             const sId = currentAcc?.serverId || '3';
 
-            // Сохраняем по-настоящему (commit=true)
             await pullData.smartImport(pendingData, sId, true);
             
             goto("/records");
