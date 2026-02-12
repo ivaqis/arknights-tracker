@@ -97,12 +97,15 @@
     "weaponbox_constant_4": "Edição Monte Ascendente",
     "weaponbox_constant_5": "Edição Estrondo",
     "weapStandard": "Arma Padrão",
+    "weap-special": "Arma de Evento",
+    "weap-standard": "Arma Padrão",
     "weapSpecial": "Arma de Evento",
     "weapon-all": "Banners de Armas"
   },
   "import": {
     "title": "Importar Histórico de Busca",
     "importing": "Importando...",
+    "waiting_response": "Aguardando resposta...",
     "instruction": "Cole a URL do histórico de busca obtida no jogo:",
     "step1": "Inicie o Arknights Endfield e abra o histórico de tiradas (History).",
     "step2_pre": "Copie o script abaixo, inicie o ",

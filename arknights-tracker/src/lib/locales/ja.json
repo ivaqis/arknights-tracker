@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "轟音発行",
     "weapStandard": "通常武器",
     "weapSpecial": "イベント武器",
+    "weap-standard": "通常武器",
+    "weap-special": "イベント武器",
     "weapon-all": "武器バナー"
   },
   "import": {
     "title": "発掘履歴のインポート",
     "importing": "インポート中...",
+    "waiting_response": "応答を待っています...",
     "instruction": "ゲーム内で取得した履歴ページのURLを貼り付けてください：",
     "step1": "『アークナイツ：エンドフィールド』を起動し、ガチャ履歴を開きます。",
     "step2_pre": "以下のスクリプトをコピーし、",

@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "Edición Estruendo",
     "weapStandard": "Arma Estándar",
     "weapSpecial": "Arma de Evento",
+    "weap-standard": "Arma Estándar",
+    "weap-special": "Arma de Evento",
     "weapon-all": "Banners de armas"
   },
   "import": {
     "title": "Importar Historial de Reclutamiento",
     "importing": "Importando...",
+    "waiting_response": "Esperando respuesta...",
     "instruction": "Pega la URL del historial de búsqueda obtenido en el juego:",
     "step1": "Inicia Arknights Endfield y abre el historial de tiradas (History).",
     "step2_pre": "Copia el script de abajo, inicia ",

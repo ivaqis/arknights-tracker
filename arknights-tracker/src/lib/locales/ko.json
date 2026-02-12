@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "천둥 소리 발행",
     "weapStandard": "통상 무기",
     "weapSpecial": "이벤트 무기",
+    "weap-standard": "통상 무기",
+    "weap-special": "이벤트 무기",
     "weapon-all": "무기 배너"
   },
   "import": {
     "title": "헤드헌팅 기록 가져오기",
     "importing": "가져오는 중...",
+    "waiting_response": "응답 대기 중...",
     "instruction": "게임 내에서 얻은 검색 기록 URL을 붙여넣으세요:",
     "step1": "명일방주: 엔드필드를 실행하고 뽑기 기록(History)을 엽니다.",
     "step2_pre": "아래 스크립트를 복사하고, ",

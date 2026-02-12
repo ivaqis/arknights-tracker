@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "Thunderous Peal Issue",
     "weapStandard": "Standard Weapon",
     "weapSpecial": "Event Weapon",
+    "weap-standard": "Standard Weapon",
+    "weap-special": "Event Weapon",
     "weapon-all": "Weapon Banners"
   },
   "import": {
     "title": "Import Headhunting Records",
     "importing": "Importing...",
+    "waiting_response": "Waiting for response...",
     "instruction": "Paste the URL from the search history obtained in the game:",
     "step1": "Launch Arknights Endfield and open pull history.",
     "step2_pre": "Copy the script below, launch ",

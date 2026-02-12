@@ -882,7 +882,7 @@
                             >
                         </h3>
 
-                        <div class="space-y-2 mb-6 ml-1">
+                        <div class="space-y-2 mb-3 ml-1">
                             {#each Object.entries(previewReport.addedCount) as [bannerId, count]}
                                 <div
                                     class="flex justify-between dark:bg-[#373737] dark:border-[#444444] items-center bg-white p-3 rounded border border-gray-100 shadow-sm max-w-md transition-all duration-300"
@@ -903,7 +903,7 @@
 
                             {#if isLoading && Object.keys(previewReport.addedCount).length === 0}
                                 <div class="text-sm text-gray-500 italic ml-2">
-                                    Waiting for response...
+                                    {$t("import.waiting_response") || "Waiting for response..."}
                                 </div>
                             {/if}
                         </div>

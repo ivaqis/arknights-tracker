@@ -535,7 +535,7 @@
                     {#if !isSimpleType && stats.winRate5050 > 0}
                         <div class="flex justify-between items-center">
                             <span
-                                class="text-gray-600 dark:text-[#E4E4E4]"
+                                class="text-sm text-gray-600 dark:text-[#E4E4E4]"
                             >
                                 {#if isWeaponCategory}
                                     {$t("global.won") || "Won"} 25:75

@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "Edizione Rombo di Tuono",
     "weapStandard": "Arma Standard",
     "weapSpecial": "Arma Evento",
+    "weap-standard": "Arma Standard",
+    "weap-special": "Arma Evento",
     "weapon-all": "Banner Armi"
   },
   "import": {
     "title": "Importa Registro Reclutamenti",
     "importing": "Importazione...",
+    "waiting_response": "In attesa di risposta...",
     "instruction": "Incolla l'URL dalla cronologia di ricerca ottenuta nel gioco:",
     "step1": "Avvia Arknights Endfield e apri la cronologia estrazioni (History).",
     "step2_pre": "Copia lo script qui sotto, avvia ",

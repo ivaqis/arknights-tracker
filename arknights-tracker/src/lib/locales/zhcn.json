@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "雷鸣刊",
     "weapStandard": "标准武器",
     "weapSpecial": "活动武器",
+    "weap-standard": "标准武器",
+    "weap-special": "活动武器",
     "weapon-all": "武器卡池"
   },
   "import": {
     "title": "导入寻访记录",
     "importing": "导入中...",
+    "waiting_response": "等待响应中...",
     "instruction": "粘贴从游戏中获取的查询历史链接：",
     "step1": "启动《明日方舟：终末地》并打开寻访记录页面。",
     "step2_pre": "复制下方的脚本，启动 ",

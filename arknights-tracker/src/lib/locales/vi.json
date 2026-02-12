@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "Ấn phẩm Tiếng Sấm",
     "weapStandard": "Vũ khí Tiêu chuẩn",
     "weapSpecial": "Vũ khí Sự kiện",
+    "weap-standard": "Vũ khí Tiêu chuẩn",
+    "weap-special": "Vũ khí Sự kiện",
     "weapon-all": "Banner Vũ khí"
   },
   "import": {
     "title": "Nhập Hồ sơ Chiêu mộ",
     "importing": "Đang nhập...",
+    "waiting_response": "Đang chờ phản hồi...",
     "instruction": "Dán URL từ lịch sử tìm kiếm lấy trong game:",
     "step1": "Khởi động Arknights Endfield và mở lịch sử chiêu mộ (History).",
     "step2_pre": "Sao chép tập lệnh bên dưới, mở ",

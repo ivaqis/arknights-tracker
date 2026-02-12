@@ -15,17 +15,41 @@
     import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
 
     let isMobileMenuOpen = false;
+    let isCollapsed = false;
 
+    // Закрываем мобильное меню при переходе по ссылке
     $: if ($page.url.pathname) {
         isMobileMenuOpen = false;
     }
 
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
 
+    // Вспомогательная переменная:
+    // Считаем меню "визуально свернутым" только если включен флаг isCollapsed И мы НЕ в мобильном режиме.
+    // На мобилке меню всегда должно выглядеть развернутым (когда оно открыто).
+    $: visuallyCollapsed = isCollapsed && !isMobileMenuOpen;
+
     function handleKeydown(e) {
-        if (e.key === "Escape" || e.key === "Enter" || e.key === " ") {
+        if (e.key === "Escape") {
             isMobileMenuOpen = false;
         }
+    }
+
+    onMount(() => {
+        if (browser) {
+            const storedState = localStorage.getItem("sidebarCollapsed");
+            if (storedState === "true") isCollapsed = true;
+        }
+    });
+
+    function toggleCollapse() {
+        isCollapsed = !isCollapsed;
+        if (browser)
+            localStorage.setItem("sidebarCollapsed", String(isCollapsed));
+    }
+
+    function toggleThemeSmall() {
+        $isDarkMode = !$isDarkMode;
     }
 
     $: if (browser) {
@@ -41,35 +65,29 @@
 
 <svelte:head>
     <title>{$t("seo.title")}</title>
-
     <meta name="description" content={$t("seo.description")} />
     <meta name="keywords" content={$t("seo.keywords")} />
-
     <meta property="og:title" content={$t("seo.title")} />
     <meta property="og:description" content={$t("seo.description")} />
     <meta
         property="og:image"
         content="https://goyfield.moe/images/og-image.jpg"
     />
-
     <link rel="manifest" href="/site.webmanifest" />
-
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Goyfield.moe" />
-
     <link
         rel="icon"
         type="image/png"
         sizes="192x192"
         href="/android-chrome-192x192.png"
     />
+
     <link
         rel="icon"
         type="image/png"
@@ -81,187 +99,232 @@
 <div class="flex min-h-screen bg-[#F9F9F9] dark:bg-[#2C2C2C]">
     {#if isMobileMenuOpen}
         <button
-            transition:fade={{ duration: 200 }}
             class="fixed inset-0 bg-black/60 z-[9999] md:hidden backdrop-blur-sm cursor-pointer w-full h-full border-none p-0 m-0 outline-none block"
             aria-label="Close menu"
             on:click={() => (isMobileMenuOpen = false)}
-            on:keydown={handleKeydown}
         ></button>
     {/if}
 
     <div class="md:hidden fixed top-4 right-4 z-[10001]">
         <button
+            aria-label="Toggle menu"
             on:click|stopPropagation={() =>
                 (isMobileMenuOpen = !isMobileMenuOpen)}
-            class="p-2 bg-white dark:bg-[#2C2C2C] dark:border-[#7A7A7A] dark:text-[#FDFDFD] rounded-lg shadow-md border border-gray-100 text-gray-600 hover:text-gray-900 transition-colors"
-            aria-label="Toggle Menu"
+            class="p-2 bg-white dark:bg-[#2C2C2C] dark:border-[#7A7A7A] dark:text-[#FDFDFD] rounded-lg shadow-md border border-gray-100 text-gray-600"
         >
-            {#if isMobileMenuOpen}
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
-                </svg>
-            {:else}
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
-            {/if}
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                />
+            </svg>
         </button>
     </div>
 
     <aside
         class="
-            fixed top-0 bottom-0 left-0
-            w-64 bg-white dark:bg-[#343434] dark:border-[#3F3F3F] h-full border-r border-gray-100 flex flex-col justify-between py-6 px-4
-            z-[10000] transition-transform duration-300 ease-in-out shadow-2xl
-            {isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} 
-            md:translate-x-0 md:shadow-none md:z-30
+            fixed top-0 bottom-0 left-0 h-full
+            bg-white dark:bg-[#343434] dark:border-[#3F3F3F] border-r border-gray-100
+            flex flex-col justify-between
+            py-8
+            z-[10000] shadow-2xl md:shadow-none
+            
+            {isMobileMenuOpen
+            ? 'translate-x-0 w-64'
+            : '-translate-x-full md:translate-x-0'}
+            {isCollapsed ? 'md:w-20' : 'md:w-64'}
         "
     >
-        <div>
-            <div class="mb-10 pl-2">
-                <h1
-                    class="font-black text-2xl tracking-tighter text-gray-900 dark:text-white"
+        <div class="flex-1 overflow-y-auto overflow-x-hidden">
+            <div
+                class="mb-10 flex items-center min-h-[40px] px-4 {visuallyCollapsed
+                    ? 'justify-center'
+                    : 'justify-between'}"
+            >
+                {#if !visuallyCollapsed}
+                    <div class="pr-1">
+                        <h1
+                            class="font-black text-2xl tracking-tighter text-gray-900 dark:text-white leading-none"
+                        >
+                            <a
+                                href="/"
+                                class="block hover:opacity-80 transition-opacity"
+                            >
+                                <Icons name="siteLogo" class="w-full h-auto" />
+                            </a>
+                        </h1>
+                    </div>
+                {/if}
+
+                <button
+                    on:click={toggleCollapse}
+                    class="hidden md:flex items-center justify-center w-8 h-8 rounded text-gray-400 dark:text-gray-500 hover:text-[#21272C] dark:hover:text-[#FDFDFD] transition-colors group flex-shrink-0"
+                    aria-label={isCollapsed
+                        ? "Expand Sidebar"
+                        : "Collapse Sidebar"}
                 >
-                    <a
-                        href="/"
-                        class="block hover:opacity-80 transition-opacity"
-                        aria-label="На главную"
-                    >
-                        <Icons name="siteLogo" class="w-full h-full" />
-                    </a>
-                </h1>
+                    {#if isCollapsed}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                stroke-linecap="square"
+                                stroke-linejoin="miter"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    {:else}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            stroke-width="2"
+                        >
+                            <path
+                                stroke-linecap="square"
+                                stroke-linejoin="miter"
+                                d="M18 19l-7-7 7-7"
+                            />
+                            <path
+                                stroke-linecap="square"
+                                stroke-linejoin="miter"
+                                d="M11 19l-7-7 7-7"
+                                class="opacity-50"
+                            />
+                        </svg>
+                    {/if}
+                </button>
             </div>
 
-            <nav class="flex flex-col gap-4 mt-8">
-                <a
-                    href="/"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group relative {isCurrent(
-                        '/',
-                    ) && $page.url.pathname === '/'
-                        ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD] font-bold'
-                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737] font-medium'}"
-                >
-                    <div
-                        class="w-6 h-6 flex justify-center items-center pointer-events-none {isCurrent(
-                            '/',
-                        ) && $page.url.pathname === '/'
-                            ? 'text-gray-900 dark:text-white'
-                            : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
+            <nav class="flex flex-col gap-4 px-3">
+                {#each [{ path: "/", label: "sidebar.home", icon: "main" }, { path: "/records", label: "sidebar.records", icon: "records" }, { path: "/operators", label: "sidebar.operators", icon: "operators" }, { path: "/events", label: "sidebar.events", icon: "timeline" }, { path: "/settings", label: "sidebar.settings", icon: "settingsMenu" }] as item}
+                    <a
+                        href={item.path}
+                        class="
+                            flex items-center gap-3 py-3 rounded-lg transition-all group relative min-h-[48px]
+                            {visuallyCollapsed ? 'justify-center px-0' : 'px-3'}
+                            {isCurrent(item.path) &&
+                        (item.path === '/' ? $page.url.pathname === '/' : true)
+                            ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD]'
+                            : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737]'}
+                        "
+                        title={visuallyCollapsed ? $t(item.label) : ""}
                     >
-                        <Icons name="main" class="w-full h-full" />
-                    </div>
-                    <span class="text-lg">{$t("sidebar.home")}</span>
-                </a>
+                        <div
+                            class="w-6 h-6 flex-shrink-0 flex justify-center items-center pointer-events-none {isCurrent(
+                                item.path,
+                            ) &&
+                            (item.path === '/'
+                                ? $page.url.pathname === '/'
+                                : true)
+                                ? 'text-gray-900 dark:text-white'
+                                : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
+                        >
+                            <Icons name={item.icon} class="w-full h-full" />
+                        </div>
 
-                <a
-                    href="/records"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group {isCurrent(
-                        '/records',
-                    )
-                        ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD] font-bold'
-                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737] font-medium'}"
-                >
-                    <div
-                        class="w-6 h-6 flex justify-center items-center {isCurrent(
-                            '/records',
-                        )
-                            ? 'text-gray-900 dark:text-white'
-                            : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
-                    >
-                        <Icons name="records" class="w-full h-full" />
-                    </div>
-                    <span class="text-lg">{$t("sidebar.records")}</span>
-                </a>
-                <a
-                    href="/operators"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group {isCurrent(
-                        '/operators',
-                    )
-                        ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD] font-bold'
-                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737] font-medium'}"
-                >
-                    <div
-                        class="w-6 h-6 flex justify-center items-center {isCurrent(
-                            '/operators',
-                        )
-                            ? 'text-gray-900 dark:text-white'
-                            : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
-                    >
-                        <Icons name="operators" class="w-full h-full" />
-                    </div>
-                    <span class="text-lg">{$t("sidebar.operators")}</span>
-                </a>
-                <a
-                    href="/events"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group {isCurrent(
-                        '/events',
-                    )
-                        ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD] font-bold'
-                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737] font-medium'}"
-                >
-                    <div
-                        class="w-6 h-6 flex justify-center items-center {isCurrent(
-                            '/events',
-                        )
-                            ? 'text-gray-900 dark:text-white'
-                            : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
-                    >
-                        <Icons name="timeline" class="w-full h-full" />
-                    </div>
-                    <span class="text-lg">{$t("sidebar.events")}</span>
-                </a>
-                <a
-                    href="/settings"
-                    class="flex items-center gap-3 w-full px-3 py-3 rounded-lg transition group text-left {isCurrent(
-                        '/settings',
-                    ) && $page.url.pathname === '/settings'
-                        ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-white font-bold'
-                        : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-[#373737] font-medium'}"
-                >
-                    <div
-                        class="w-6 h-6 flex justify-center items-center {isCurrent(
-                            '/settings',
-                        ) && $page.url.pathname === '/settings'
-                            ? 'text-gray-900 dark:text-[#FDFDFD]'
-                            : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
-                    >
-                        <Icons name="settingsMenu" class="w-full h-full" />
-                    </div>
-                    <span class="text-lg">{$t("sidebar.settings")}</span>
-                </a>
+                        {#if !visuallyCollapsed}
+                            <span
+                                class="
+                                    text-lg leading-tight
+                                    {isCurrent(item.path) &&
+                                (item.path === '/'
+                                    ? $page.url.pathname === '/'
+                                    : true)
+                                    ? 'font-bold'
+                                    : 'font-medium'}
+                                "
+                            >
+                                {$t(item.label)}
+                            </span>
+                        {/if}
+
+                        {#if isCurrent(item.path) && (item.path === "/" ? $page.url.pathname === "/" : true)}
+                            <div
+                                class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-[#FFE145] rounded-r"
+                            ></div>
+                        {/if}
+                    </a>
+                {/each}
             </nav>
         </div>
 
-        <div class="w-full mt-auto mb-4 flex flex-col items-center gap-6">
-            <!--<ThemeSwitch />-->
-            <ThemeSwitch />
-            <LanguageSelect />
+        <div class="w-full mt-auto mb-4 flex flex-col items-center gap-6 px-4">
+            {#if !visuallyCollapsed}
+                <div class="w-full flex justify-center">
+                    <ThemeSwitch />
+                </div>
+                <div class="w-full">
+                    <LanguageSelect />
+                </div>
+            {:else}
+                <button
+                    on:click={toggleThemeSmall}
+                    class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-[#FFE145] dark:hover:text-[#FFE145] transition-colors"
+                    title={$isDarkMode
+                        ? $t("sidebar.theme_light")
+                        : $t("sidebar.theme_dark")}
+                >
+                    {#if $isDarkMode}
+                        <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            stroke="none"
+                            ><path
+                                d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                            ></path></svg
+                        >
+                    {:else}
+                        <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            ><circle cx="12" cy="12" r="5" /><path
+                                d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                            /></svg
+                        >
+                    {/if}
+                </button>
+
+                <button
+                    on:click={() => (isCollapsed = false)}
+                    class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-black dark:hover:text-white transition-colors"
+                    title="Change Language"
+                >
+                    <Icons name="globe" style="width:24px; height:24px;" />
+                </button>
+            {/if}
         </div>
     </aside>
 
-    <main class="md:ml-64 w-full p-4 md:p-8 relative z-0">
+    <main
+        class="
+            w-full p-4 md:p-8 relative z-0 transition-all duration-300 ease-in-out
+            ml-0
+            /* На десктопе отступ зависит от свернутости, на мобилке - 0 (меню поверх) */
+            {isCollapsed ? 'md:ml-20' : 'md:ml-64'}
+        "
+    >
         {#key $currentLocale}
             <slot />
         {/key}

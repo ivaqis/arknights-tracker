@@ -98,11 +98,14 @@
     "weaponbox_constant_5": "Terbitan Thunderous Peal",
     "weapStandard": "Senjata Standar",
     "weapSpecial": "Senjata Event",
+    "weap-standard": "Senjata Standar",
+    "weap-special": "Senjata Event",
     "weapon-all": "Banner Senjata"
   },
   "import": {
     "title": "Impor Catatan Headhunting",
     "importing": "Mengimpor...",
+    "waiting_response": "Menunggu respons...",
     "instruction": "Tempel URL dari riwayat pencarian yang didapat dari dalam game:",
     "step1": "Jalankan Arknights Endfield dan buka riwayat pull.",
     "step2_pre": "Salin skrip di bawah ini, jalankan ",
