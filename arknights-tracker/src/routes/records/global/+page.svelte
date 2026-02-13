@@ -19,12 +19,34 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
+    const initialStats = {
+        totalUsers: 0,
+        totalPulls: 0,
+        median6: 0,
+        winRate5050: 0,
+        totalObtained: 0,
+        rates: {
+            sixStar: { percent: "0.00", count: 0, items: [] },
+            fiveStar: { percent: "0.00", count: 0, items: [] },
+        },
+        timeline: [],
+        pityDist: [],
+    };
+
+    let stats = { ...initialStats };
+    
+    export let graphDates = [];
+
+    $: chartData = stats.timeline || [];
+    $: displayDates = graphDates || [];
+
+    let hoveredIndex = -1;
+
     function getSmoothPath(data, width, height) {
-        if (data.length === 0) return "";
+        if (!data || data.length === 0) return "";
         if (data.length === 1) return `M 0,${height} L ${width},${height}`;
 
-        const maxVal = Math.max(...data.map(d => d.count), 1);
-        
+        const maxVal = Math.max(...data.map((d) => d.count), 1);
         const points = data.map((d, i) => {
             const x = (i / (data.length - 1)) * width;
             const y = height - (d.count / maxVal) * height;
@@ -32,7 +54,6 @@
         });
 
         let d = `M ${points[0][0]},${points[0][1]}`;
-
         for (let i = 0; i < points.length - 1; i++) {
             const [x0, y0] = i > 0 ? points[i - 1] : points[0];
             const [x1, y1] = points[i];
@@ -46,7 +67,6 @@
 
             d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${x2},${y2}`;
         }
-
         return d;
     }
 
@@ -84,7 +104,6 @@
                 !itemData.class
             )
                 isWeapon = true;
-        } else {
         }
 
         return { id: itemId, isWeapon, name: itemData ? itemData.name : name };
@@ -275,23 +294,7 @@
         id: "oroberyl",
     };
 
-    const initialStats = {
-        totalUsers: 0,
-        totalPulls: 0,
-        median6: 0,
-        winRate5050: 0,
-        totalObtained: 0,
-        rates: {
-            sixStar: { percent: "0.00", count: 0, items: [] },
-            fiveStar: { percent: "0.00", count: 0, items: [] },
-        },
-        timeline: [],
-        pityDist: [],
-    };
-
-    let stats = { ...initialStats };
     let isLoading = false;
-    let hoveredIndex = -1;
 
     async function fetchStats(bannerId) {
         stats = { ...initialStats };
@@ -769,119 +772,126 @@
             {/if}
             <!-- График круток в день-->
             <div
-                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[240px] flex flex-col relative group"
-                role="figure"
-            >
-                <div class="flex justify-between items-center mb-4 shrink-0 z-10 relative">
-                    <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD]">
-                        {$t("global.pullsPerDay") || "Pulls per Day"}
-                    </div>
-                </div>
+    class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[240px] flex flex-col relative group overflow-visible"
+    role="figure"
+>
+    <div class="flex justify-between items-center mb-4 shrink-0 relative z-10">
+        <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD]">
+            {$t("global.pullsPerDay") || "Pulls per Day"}
+        </div>
+    </div>
 
-                <div class="flex-1 flex flex-col min-h-0 relative">
+    <div class="flex-1 flex flex-col min-h-0 relative">
+        
+        <div class="flex-1 w-full relative min-h-0">
+            
+            {#if chartData.length > 0}
+                {@const maxVal = Math.max(...chartData.map((t) => t.count), 1)}
+                {@const smoothPath = getSmoothPath(chartData, 100, 100)}
+
+                <svg
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                    class="absolute inset-0 w-full h-full block overflow-visible pointer-events-none z-10"
+                >
+                    <defs>
+                        <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#FACC15" stop-opacity="0.4" />
+                            <stop offset="100%" stop-color="#FACC15" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
                     
-                    <div 
-                        class="flex-1 w-full relative min-h-0 z-10"
-                        role="application"
-                        aria-label="Interactive chart showing pulls history"
-                        on:mousemove={(e) => {
-                            if (stats.timeline.length === 0) return;
-                            const rect = e.currentTarget.getBoundingClientRect();
-                            const x = e.clientX - rect.left;
-                            const idx = Math.min(Math.max(0, Math.floor((x / rect.width) * stats.timeline.length)), stats.timeline.length - 1);
-                            hoveredIndex = idx;
-                        }}
-                        on:mouseleave={() => (hoveredIndex = -1)}
-                    >
-                        {#if stats.timeline.length > 0}
-                            {@const maxVal = Math.max(...stats.timeline.map((t) => t.count), 1)}
-                            {@const smoothPath = getSmoothPath(stats.timeline, 100, 100)}
+                    <path
+                        d="{smoothPath} V 100 H 0 Z"
+                        fill="url(#chartGradient)"
+                        stroke="none"
+                    />
+                    <path
+                        d={smoothPath}
+                        fill="none"
+                        stroke="#FACC15"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
 
-                            <svg
-                                viewBox="0 0 100 100"
-                                preserveAspectRatio="none"
-                                class="absolute inset-0 w-full h-full block overflow-visible"
-                            >
-                                <defs>
-                                    <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
-                                        <stop offset="0%" stop-color="#FACC15" stop-opacity="0.4" />
-                                        <stop offset="100%" stop-color="#FACC15" stop-opacity="0" />
-                                    </linearGradient>
-                                    </defs>
-                                
-                                <path
-                                    d="{smoothPath} V 100 H 0 Z"
-                                    fill="url(#chartGradient)"
-                                    stroke="none"
-                                />
-                                
-                                <path
-                                    d={smoothPath}
-                                    fill="none"
-                                    stroke="#FACC15"
-                                    stroke-width="2"
-                                    vector-effect="non-scaling-stroke"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
+                <div
+                    class="absolute inset-0 w-full h-full z-20 cursor-crosshair bg-transparent"
+                    role="application"
+                    aria-label="Interactive chart showing pulls history"
+                    on:mousemove={(e) => {
+                        const rect = e.currentTarget.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        // Защита от деления на ноль и выхода за границы
+                        if (rect.width === 0) return;
+                        const idx = Math.floor((x / rect.width) * chartData.length);
+                        hoveredIndex = Math.min(Math.max(0, idx), chartData.length - 1);
+                    }}
+                    on:mouseleave={() => (hoveredIndex = -1)}
+                ></div>
 
-                            {#if hoveredIndex !== -1}
-                                {@const point = stats.timeline[hoveredIndex]}
-                                {@const leftPos = (hoveredIndex / (stats.timeline.length - 1)) * 100}
-                                {@const topPos = 100 - (point.count / maxVal) * 100}
+                {#if hoveredIndex !== -1 && chartData[hoveredIndex]}
+                    {@const point = chartData[hoveredIndex]}
+                    {@const leftPos = (hoveredIndex / (chartData.length - 1)) * 100}
+                    {@const topPos = 100 - (point.count / maxVal) * 100}
 
-                                <div
-                                    class="absolute top-0 bottom-0 w-px bg-gray-300 dark:bg-gray-600 border-r border-dashed border-gray-400 pointer-events-none"
-                                    style="left: {leftPos}%;"
-                                ></div>
+                    <div class="absolute inset-0 z-30 pointer-events-none">
+                        
+                        <div
+                            class="absolute top-0 bottom-0 w-px bg-gray-300 dark:bg-gray-600 border-r border-dashed border-gray-400"
+                            style="left: {leftPos}%;"
+                        ></div>
 
-                                <div
-                                    class="absolute w-3 h-3 rounded-full border-2 border-white dark:border-[#383838] bg-[#FACC15] pointer-events-none transform -translate-x-1/2 -translate-y-1/2 z-20"
-                                    style="left: {leftPos}%; top: {topPos}%;"
-                                ></div>
+                        <div
+                            class="absolute w-3 h-3 rounded-full border-2 border-white dark:border-[#383838] bg-[#FACC15] transform -translate-x-1/2 -translate-y-1/2"
+                            style="left: {leftPos}%; top: {topPos}%;"
+                        ></div>
 
-                                <div
-                                    class="absolute top-0 pointer-events-none transition-all duration-75 ease-out z-30"
-                                    style="left: {leftPos}%; transform: translateX({leftPos > 60 ? '-105%' : '5%'});"
-                                >
-                                    <div class="bg-white/95 dark:bg-[#2C2C2C]/95 backdrop-blur-sm text-xs rounded-md p-2 shadow-lg border border-black/5 dark:border-white/10 mt-1 min-w-[70px]">
-                                        <div class="text-gray-400 font-medium mb-0.5 text-[10px] uppercase tracking-wide">
-                                            {point.date}
-                                        </div>
-                                        <div class="flex items-center gap-1.5">
-                                            <span class="text-base font-black text-[#21272C] dark:text-[#FDFDFD] font-nums leading-none">
-                                                {point.count}
-                                            </span>
-                                            <span class="text-[#FACC15] font-bold text-[10px] leading-none mt-0.5">
-                                                {(() => {
-                                                    const keySuffix = new Intl.PluralRules($t("global.lang") || 'ru').select(point.count);
-                                                    const fullKey = `global.pull_${keySuffix}`;
-                                                    return $t(fullKey) === fullKey ? $t("global.pull_other") : $t(fullKey);
-                                                })()}
-                                            </span>
-                                        </div>
-                                    </div>
+                        <div
+                            class="absolute top-0 transition-transform duration-75 ease-out"
+                            style="left: {leftPos}%; transform: translateX({leftPos > 60 ? '-105%' : '5%'});"
+                        >
+                            <div class="bg-white/95 dark:bg-[#2C2C2C]/95 backdrop-blur-sm text-xs rounded-md p-2 shadow-lg border border-black/5 dark:border-white/10 mt-1 min-w-[70px]">
+                                <div class="text-gray-400 font-medium mb-0.5 text-[10px] uppercase tracking-wide">
+                                    {point.date}
                                 </div>
-                            {/if}
-
-                        {:else}
-                            <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
-                                <Icon name="noData" className="w-8 h-8 mb-2 opacity-30" />
-                                <span class="text-xs font-medium opacity-50">{$t("global.noData") || "No Data"}</span>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="text-base font-black text-[#21272C] dark:text-[#FDFDFD] font-nums leading-none">
+                                        {point.count}
+                                    </span>
+                                    <span class="text-[#FACC15] font-bold text-[10px] leading-none mt-0.5">
+                                         {(() => {
+                                            const n = point.count;
+                                            // Если есть currentLocale, используем его, иначе фоллбек
+                                            const loc = $currentLocale || 'ru';
+                                            const keySuffix = new Intl.PluralRules(loc).select(n);
+                                            const fullKey = `global.pull_${keySuffix}`;
+                                            return $t(fullKey) === fullKey ? $t("global.pull_other") : $t(fullKey);
+                                        })()}
+                                    </span>
+                                </div>
                             </div>
-                        {/if}
-                    </div>
-
-                    {#if stats.timeline.length > 0}
-                        <div class="h-5 mt-1 flex justify-between items-center text-[9px] font-medium text-gray-400 dark:text-[#787878] select-none border-t border-dashed border-gray-100 dark:border-[#444] pt-1 shrink-0">
-                            {#each graphDates as date}
-                                <span>{date}</span>
-                            {/each}
                         </div>
-                    {/if}
+                    </div>
+                {/if}
+
+            {:else}
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
+                    <Icon name="noData" className="w-8 h-8 mb-2 opacity-30" />
+                    <span class="text-xs font-medium opacity-50">{$t("global.noData") || "No Data"}</span>
                 </div>
-            </div>
+            {/if}
+        </div>
+
+        <div class="h-5 mt-1 flex justify-between items-center text-[9px] font-medium text-gray-400 dark:text-[#787878] select-none border-t border-dashed border-gray-100 dark:border-[#444] pt-1 shrink-0 z-0">
+            {#each displayDates as date}
+                <span>{date}</span>
+            {/each}
+        </div>
+    </div>
+</div>
             <!-- График лег за крутку -->
             <div
                 class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col z-0"
