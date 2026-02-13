@@ -19,6 +19,37 @@
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
 
+    function getSmoothPath(data, width, height) {
+        if (data.length === 0) return "";
+        if (data.length === 1) return `M 0,${height} L ${width},${height}`;
+
+        const maxVal = Math.max(...data.map(d => d.count), 1);
+        
+        const points = data.map((d, i) => {
+            const x = (i / (data.length - 1)) * width;
+            const y = height - (d.count / maxVal) * height;
+            return [x, y];
+        });
+
+        let d = `M ${points[0][0]},${points[0][1]}`;
+
+        for (let i = 0; i < points.length - 1; i++) {
+            const [x0, y0] = i > 0 ? points[i - 1] : points[0];
+            const [x1, y1] = points[i];
+            const [x2, y2] = points[i + 1];
+            const [x3, y3] = i !== points.length - 2 ? points[i + 2] : points[i + 1];
+
+            const cp1x = x1 + (x2 - x0) / 6;
+            const cp1y = y1 + (y2 - y0) / 6;
+            const cp2x = x2 - (x3 - x1) / 6;
+            const cp2y = y2 - (y3 - y1) / 6;
+
+            d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${x2},${y2}`;
+        }
+
+        return d;
+    }
+
     function getPluralKey(count, locale) {
         const rule = new Intl.PluralRules(locale).select(count);
         return `pull_${rule}`;
@@ -738,160 +769,122 @@
             {/if}
             <!-- График круток в день-->
             <div
-                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col relative group"
+                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[240px] flex flex-col relative group overflow-hidden"
                 role="figure"
-                on:mousemove={(e) => {
-                    if (stats.timeline.length === 0) return;
-                    const rect = e.currentTarget.getBoundingClientRect();
-                    // ... (логика mousemove без изменений) ...
-                    const x = e.clientX - rect.left;
-                    const idx = Math.min(
-                        Math.max(
-                            0,
-                            Math.floor(
-                                (x / rect.width) * stats.timeline.length,
-                            ),
-                        ),
-                        stats.timeline.length - 1,
-                    );
-                    hoveredIndex = idx;
-                }}
-                on:mouseleave={() => (hoveredIndex = -1)}
             >
-                <div class="flex justify-between items-center mb-2 shrink-0">
-                    <div
-                        class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD]"
-                    >
+                <div class="flex justify-between items-center mb-4 shrink-0 z-10 relative">
+                    <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] flex items-center gap-2">
+                        <div class="w-2 h-2 rounded-full bg-[#FACC15] shadow-[0_0_8px_rgba(250,204,21,0.6)]"></div>
                         {$t("global.pullsPerDay") || "Pulls per Day"}
                     </div>
                 </div>
 
-                <div class="flex-1 w-full h-full relative min-h-0">
-                    {#if stats.timeline.length > 0}
-                        {@const maxVal = Math.max(
-                            ...stats.timeline.map((t) => t.count),
-                            1,
-                        )}
+                <div class="flex-1 flex flex-col min-h-0 relative">
+                    
+                    <div 
+                        class="flex-1 w-full relative z-10"
+                        role="application"
+                        aria-label="Interactive chart showing pulls history"
+                        on:mousemove={(e) => {
+                            if (stats.timeline.length === 0) return;
+                            const rect = e.currentTarget.getBoundingClientRect();
+                            const x = e.clientX - rect.left;
+                            const idx = Math.min(Math.max(0, Math.floor((x / rect.width) * stats.timeline.length)), stats.timeline.length - 1);
+                            hoveredIndex = idx;
+                        }}
+                        on:mouseleave={() => (hoveredIndex = -1)}
+                    >
+                        {#if stats.timeline.length > 0}
+                            {@const maxVal = Math.max(...stats.timeline.map((t) => t.count), 1)}
+                            {@const smoothPath = getSmoothPath(stats.timeline, 100, 100)}
 
-                        <div class="w-full h-full pb-6 relative">
                             <svg
                                 viewBox="0 0 100 100"
                                 preserveAspectRatio="none"
                                 class="w-full h-full block overflow-visible"
                             >
                                 <defs>
-                                    <linearGradient
-                                        id="chartGradient"
-                                        x1="0"
-                                        x2="0"
-                                        y1="0"
-                                        y2="1"
-                                    >
-                                        <stop
-                                            offset="0%"
-                                            stop-color="#FACC15"
-                                            stop-opacity="0.3"
-                                        />
-                                        <stop
-                                            offset="100%"
-                                            stop-color="#FACC15"
-                                            stop-opacity="0"
-                                        />
+                                    <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#FACC15" stop-opacity="0.4" />
+                                        <stop offset="100%" stop-color="#FACC15" stop-opacity="0" />
                                     </linearGradient>
+                                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                        <feGaussianBlur stdDeviation="2" result="blur" />
+                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                    </filter>
                                 </defs>
+                                
                                 <path
-                                    d="{getLinePath(
-                                        stats.timeline,
-                                        100,
-                                        100,
-                                    )} V 100 H 0 Z"
+                                    d="{smoothPath} V 100 H 0 Z"
                                     fill="url(#chartGradient)"
                                     stroke="none"
                                 />
+                                
                                 <path
-                                    d={getLinePath(stats.timeline, 100, 100)}
+                                    d={smoothPath}
                                     fill="none"
-                                    class="stroke-[#21272C] dark:stroke-[#FDFDFD]"
-                                    stroke-width="0.5"
+                                    stroke="#FACC15"
+                                    stroke-width="2"
                                     vector-effect="non-scaling-stroke"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    filter="url(#glow)"
                                 />
                             </svg>
 
                             {#if hoveredIndex !== -1}
                                 {@const point = stats.timeline[hoveredIndex]}
-                                {@const leftPos =
-                                    (hoveredIndex /
-                                        (stats.timeline.length - 1)) *
-                                    100}
-                                {@const topPos =
-                                    100 - (point.count / maxVal) * 100}
+                                {@const leftPos = (hoveredIndex / (stats.timeline.length - 1)) * 100}
+                                {@const topPos = 100 - (point.count / maxVal) * 100}
 
                                 <div
-                                    class="absolute top-0 bottom-6 w-px bg-gray-300 dark:bg-gray-600 border-r border-dashed border-gray-400 pointer-events-none"
+                                    class="absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#FACC15]/50 to-transparent pointer-events-none"
                                     style="left: {leftPos}%;"
                                 ></div>
 
                                 <div
-                                    class="absolute w-3 h-3 bg-[#FACC15] border-2 border-white dark:border-[#2C2C2C] rounded-full shadow-sm pointer-events-none transform -translate-x-1/2 -translate-y-1/2"
+                                    class="absolute w-4 h-4 rounded-full shadow-[0_0_10px_#FACC15] border-2 border-white dark:border-[#383838] bg-[#FACC15] pointer-events-none transform -translate-x-1/2 -translate-y-1/2 z-20 transition-all duration-75"
                                     style="left: {leftPos}%; top: {topPos}%;"
                                 ></div>
 
                                 <div
-                                    class="absolute top-0 pointer-events-none transition-all duration-75 ease-out z-20"
-                                    style="left: {leftPos}%; transform: translateX({leftPos >
-                                    60
-                                        ? '-100%'
-                                        : '0%'});"
+                                    class="absolute top-0 pointer-events-none transition-all duration-100 ease-out z-30"
+                                    style="left: {leftPos}%; transform: translateX({leftPos > 60 ? '-105%' : '5%'});"
                                 >
-                                    <div
-                                        class="bg-black/90 text-white text-[10px] rounded px-2 py-1.5 shadow-xl backdrop-blur-md border border-white/10 mt-2 ml-2 whitespace-nowrap"
-                                    >
-                                        <div
-                                            class="font-bold mb-0.5 text-gray-400"
-                                        >
+                                    <div class="bg-white/90 dark:bg-black/80 backdrop-blur-md text-xs rounded-lg p-3 shadow-xl border border-white/20 dark:border-white/10 mt-2 min-w-[80px]">
+                                        <div class="text-gray-500 dark:text-gray-400 font-medium mb-1 text-[10px] uppercase tracking-wider">
                                             {point.date}
                                         </div>
-                                        <div
-                                            class="text-sm font-nums font-bold"
-                                        >
-                                            <span class="text-[#FACC15]"
-                                                >{point.count}</span
-                                            >
-
-                                            {(() => {
-                                                const keySuffix =
-                                                    new Intl.PluralRules(
-                                                        $currentLocale,
-                                                    ).select(point.count);
-                                                const fullKey = `global.pull_${keySuffix}`;
-                                                return $t(fullKey) === fullKey
-                                                    ? $t("global.pulls")
-                                                    : $t(fullKey);
-                                            })()}
+                                        <div class="flex items-baseline gap-1">
+                                            <span class="text-xl font-black text-[#21272C] dark:text-[#FDFDFD] font-nums">
+                                                {point.count}
+                                            </span>
+                                            <span class="text-[#FACC15] font-bold text-xs">
+                                                {(() => {
+                                                    // Автоматическое склонение через Intl
+                                                    const keySuffix = new Intl.PluralRules($currentLocale || 'ru').select(point.count);
+                                                    const fullKey = `global.pull_${keySuffix}`;
+                                                    return $t(fullKey) === fullKey ? $t("global.pull_other") : $t(fullKey);
+                                                })()}
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
                             {/if}
 
-                            <div
-                                class="flex justify-between text-[10px] text-gray-400 dark:text-[#B7B6B3] absolute bottom-0 left-0 right-0 pointer-events-none px-1 select-none h-6 items-end"
-                            >
-                                {#each graphDates as date}
-                                    <span>{date}</span>
-                                {/each}
+                        {:else}
+                            <div class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]">
+                                <Icon name="noData" className="w-10 h-10 mb-3 opacity-30" />
+                                <span class="text-sm font-medium opacity-50">{$t("global.noData") || "No Data"}</span>
                             </div>
-                        </div>
-                    {:else}
-                        <div
-                            class="w-full h-full flex flex-col items-center justify-center text-gray-300 dark:text-[#666]"
-                        >
-                            <Icon
-                                name="noData"
-                                className="w-8 h-8 mb-2 opacity-50"
-                            />
-                            <span class="text-xs"
-                                >{$t("global.noData") || "No Data"}</span
-                            >
+                        {/if}
+                    </div>
+
+                    {#if stats.timeline.length > 0}
+                        <div class="h-6 mt-2 flex justify-between items-center text-[10px] font-medium text-gray-400 dark:text-[#787878] select-none border-t border-dashed border-gray-100 dark:border-[#444] pt-2">
+                            {#each graphDates as date}
+                                <span>{date}</span>
+                            {/each}
                         </div>
                     {/if}
                 </div>
