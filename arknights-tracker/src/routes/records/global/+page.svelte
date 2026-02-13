@@ -868,7 +868,7 @@
                                             const loc = $currentLocale || 'ru';
                                             const keySuffix = new Intl.PluralRules(loc).select(n);
                                             const fullKey = `global.pull_${keySuffix}`;
-                                            return $t(fullKey) === fullKey ? $t("global.pull_other") : $t(fullKey);
+                                            return $t(fullKey) === fullKey ? $t("global.pulls") : $t(fullKey);
                                         })()}
                                     </span>
                                 </div>
