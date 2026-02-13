@@ -85,7 +85,8 @@
     }, {});
 
     $: totalCount = stats.total || rawPulls.length || 0;
-    $: spent = (totalCount * 500).toLocaleString("ru-RU");
+    $: billableCount = tableData ? tableData.filter(p => !p.isFree).length : 0;
+    $: spent = (billableCount * 500).toLocaleString("ru-RU");
     $: currentPity6 = stats.pity6 || 0;
     $: currentPity5 = stats.pity5 || 0;
     $: guarantee6 = stats.guarantee120 || 0;

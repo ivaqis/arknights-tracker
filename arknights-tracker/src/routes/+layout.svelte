@@ -21,12 +21,7 @@
     $: if ($page.url.pathname) {
         isMobileMenuOpen = false;
     }
-
     $: isCurrent = (path) => $page.url.pathname.startsWith(path);
-
-    // Вспомогательная переменная:
-    // Считаем меню "визуально свернутым" только если включен флаг isCollapsed И мы НЕ в мобильном режиме.
-    // На мобилке меню всегда должно выглядеть развернутым (когда оно открыто).
     $: visuallyCollapsed = isCollapsed && !isMobileMenuOpen;
 
     function handleKeydown(e) {
@@ -311,7 +306,7 @@
                     class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-black dark:hover:text-white transition-colors"
                     title="Change Language"
                 >
-                    <Icons name="globe" style="width:24px; height:24px;" />
+                    <Icons name="globe" style="width:22px; height:22px;" />
                 </button>
             {/if}
         </div>
@@ -321,7 +316,6 @@
         class="
             w-full p-4 md:p-8 relative z-0 transition-all duration-300 ease-in-out
             ml-0
-            /* На десктопе отступ зависит от свернутости, на мобилке - 0 (меню поверх) */
             {isCollapsed ? 'md:ml-20' : 'md:ml-64'}
         "
     >

@@ -7,45 +7,108 @@
   import { currencies } from "$lib/data/items/currencies.js";
   import BannerCard from "$lib/components/BannerCard.svelte";
   import SettingsModal from "$lib/components/SettingsModal.svelte";
-  import SquareButton from "$lib/components/Button.svelte";
+  import Button from "$lib/components/Button.svelte";
   import RatingCard from "$lib/components/RatingCard.svelte";
   import Icon from "$lib/components/Icons.svelte";
   import Images from "$lib/components/Images.svelte";
 
-  $: pullsStats = Object.entries($pullData).reduce(
-    (acc, [key, banner]) => {
-      if (!banner || typeof banner !== "object") return acc;
+  $: pullsStats = (() => {
+    // 1. Сваливаем ВСЕ крутки в одну кучу, сохраняя информацию, откуда они пришли
+    let allPulls = [];
+    Object.entries($pullData).forEach(([boxId, data]) => {
+      if (!data || !data.pulls) return;
+      data.pulls.forEach(p => {
+        allPulls.push({
+          ...p,
+          // boxId - это 'special', 'standard', 'weapon' (название категории из стора)
+          boxId: boxId, 
+          // Заранее считаем время для быстрой сортировки
+          timeMs: new Date(p.time).getTime() 
+        });
+      });
+    });
 
-      const count = banner.stats?.total || banner.pulls?.length || 0;
+    // 2. Сортируем строго по времени (это критично для счетчика)
+    allPulls.sort((a, b) => a.timeMs - b.timeMs);
+
+    // Переменные для итогов
+    let total = 0;
+    let billable = 0;
+    let billableChar = 0;
+
+    // Счетчик круток для КАЖДОГО КОНКРЕТНОГО баннера (по его уникальному ID)
+    let bannerCounts = {}; 
+
+    // 3. Проходим по всем круткам
+    allPulls.forEach(p => {
+      // --- ГЛАВНАЯ МАГИЯ: Находим, какому именно баннеру принадлежит эта крутка ---
+      // Ищем в конфиге баннеров такой, который подходит по времени и типу
+      const specificBanner = banners.find(b => {
+         const start = new Date(b.startTime).getTime();
+         const end = b.endTime ? new Date(b.endTime).getTime() : 4102444800000; // Далекое будущее
+         
+         // 1. Попадает ли крутка в даты баннера?
+         if (p.timeMs < start || p.timeMs > end) return false;
+
+         // 2. Совпадает ли тип? (Грубая проверка, чтобы не перепутать оружие и чаров)
+         const bType = (b.type || "").toLowerCase();
+         const pBox = p.boxId.toLowerCase();
+
+         if (pBox.includes('special') && bType === 'special') return true;
+         if (pBox.includes('weap') && bType === 'weapon') return true;
+         if (pBox.includes('new') && bType === 'new-player') return true;
+         // Стандартные баннеры могут иметь ID 'constant_x'
+         if (pBox.includes('standard') && (bType === 'standard' || bType === 'constant')) return true;
+         
+         return false;
+      });
+
+      // Если нашли конкретный баннер - берем его ID. 
+      // Если не нашли (например, старый стандарт) - берем имя категории как ID.
+      const bid = specificBanner ? specificBanner.id : p.boxId;
       
-      const bannerConfig = banners.find(b => b.id === key);
-      const type = bannerConfig ? bannerConfig.type : "";
+      // Определяем свойства для оплаты
+      const bType = specificBanner ? specificBanner.type : (p.boxId.includes('weap') ? 'weapon' : 'special');
       
-      const isNewPlayer = type === 'new-player' || key.includes("new-player") || key.includes("new_player");
-      const isWeapon = type === 'weapon' || key.includes('weap') || key.includes('wepon');
+      const isWeapon = bType === 'weapon' || p.boxId.includes('weap') || p.boxId.includes('wepon');
+      const isNewPlayer = bType === 'new-player' || p.boxId.includes('new');
+      // Считаем "Специальным" только если это явно Special Character баннер
+      const isSpecial = bType === 'special' && !isWeapon && !isNewPlayer;
 
-      acc.total += count;
+      // Инициализируем счетчик для ЭТОГО баннера
+      if (!bannerCounts[bid]) bannerCounts[bid] = 0;
 
-      if (!isNewPlayer && !isWeapon) {
-          acc.billable += count; 
-          acc.billableChar += count;
+      // --- ЛОГИКА БЕСПЛАТНОСТИ ---
+      // (Точь-в-точь как в таблице)
+      let isFree = false;
+      if (isSpecial && bannerCounts[bid] >= 30 && bannerCounts[bid] < 40) {
+          isFree = true;
       }
 
-      return acc;
-    },
-    { total: 0, billable: 0, billableChar: 0 }
-  );
+      // Увеличиваем счетчики
+      bannerCounts[bid]++;
+      total++;
+
+      // --- СЧИТАЕМ ДЕНЬГИ ---
+      // Не считаем новичка и оружие
+      if (!isNewPlayer && !isWeapon) {
+          // Если крутка не бесплатная - она стоит денег
+          if (!isFree) {
+              billable++;
+              billableChar++;
+          }
+      }
+    });
+
+    return { total, billable, billableChar };
+  })();
 
   $: totalPulls = pullsStats.total;
   $: billablePulls = pullsStats.billable;      
   $: charPullsOnly = pullsStats.billableChar;
-
   $: homeBanners = [...bannerTypes]
     .filter((b) => b.showOnHome)
     .sort((a, b) => a.order - b.order);
-
-  let userLuck6 = 15; // Placeholder
-  let userLuck5 = 50;
 
   let isSettingsOpen = false;
 
@@ -66,7 +129,6 @@
   $: bSpecialChar = getBanner('special');
   $: bStandardChar = getBanner('standard');
   $: bNewPlayer = getBanner('new-player');
-  
   $: bSpecialWeap = getBanner('weap-special');
   $: bStandardWeap = getBanner('weap-standard');
 </script>
@@ -84,36 +146,36 @@
     </h2>
 
     <div class="w-full md:w-auto">
-      <SquareButton variant="yellow" onClick={openImport}>
+      <Button variant="yellow" onClick={openImport}>
         <div slot="icon">
           <Icon name="import" style="width: 30px; height: 30px;" />
         </div>
         <span class="whitespace-nowrap px-2">
             {$t("page.importBtn")}
         </span>
-      </SquareButton>
+      </Button>
     </div>
 
     <div class="w-full md:w-auto">
-      <SquareButton variant="black2" onClick={openGlobal}>
+      <Button variant="black2" onClick={openGlobal}>
         <div slot="icon">
           <Icon name="globe" style="width: 30px; height: 30px;" />
         </div>
         <span class="whitespace-nowrap px-2">
             {$t("page.globalBtn")}
         </span>
-      </SquareButton>
+      </Button>
     </div>
 
     <div class="w-full md:w-auto">
-      <SquareButton variant="black2" onClick={() => (isSettingsOpen = true)}>
+      <Button variant="black2" onClick={() => (isSettingsOpen = true)}>
         <div slot="icon">
           <Icon name="settings" style="width: 30px; height: 30px;" />
         </div>
         <span class="whitespace-nowrap px-2">
             {$t("page.settingsBtn")}
         </span>
-      </SquareButton>
+      </Button>
     </div>
   </div>
 
@@ -144,7 +206,7 @@
         <BannerCard bannerId={bNewPlayer.id} titleKey={bNewPlayer.i18nKey} />
       {/if}
 
-      <RatingCard {userLuck6} {userLuck5} {totalPulls} />
+      <RatingCard/>
 
       <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 min-w-[320px]">
         <h3 class="text-xl font-bold mb-4 font-sdk text-[#21272C] dark:text-[#FDFDFD]">
@@ -159,6 +221,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>

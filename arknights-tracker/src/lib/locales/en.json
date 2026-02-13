@@ -519,8 +519,9 @@
     "won": "Won",
     "pulls": "pulls",
     "roll": "Roll",
-    "percent": "Percent"
-},
+    "percent": "Percent",
+    "pull_one": "Pull"
+  },
   "settings": {
     "title": "Settings",
     "account": {

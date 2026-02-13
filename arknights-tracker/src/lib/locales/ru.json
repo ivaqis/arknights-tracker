@@ -494,6 +494,10 @@
     "copied": "Скопировано!"
   },
   "global": {
+    "pull_one": "Крутка",
+    "pull_few": "Крутки",
+    "pull_many": "Круток",
+    "pull_other": "Круток",
     "title": "Глобальная статистика",
     "selectType": "Выберите тип",
     "selectBanner": "Выберите баннер",

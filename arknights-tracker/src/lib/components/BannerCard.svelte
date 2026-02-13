@@ -74,7 +74,45 @@
   $: pity5 = stats.pity5 || 0;
   $: guaranteeProgress = stats.guarantee120 || 0;
   $: hasReceivedRateUp = stats.hasReceivedRateUp || false;
-  $: spent = (total * 500).toLocaleString("ru-RU");
+  $: billableCount = (() => {
+    if (isWeaponCard || isNewPlayer) return 0;
+    const sorted = [...pulls].sort((a, b) => new Date(a.time) - new Date(b.time));
+    
+    let billable = 0;
+    let bannerCounts = {};
+
+    sorted.forEach(p => {
+      const pTime = new Date(p.time).getTime();
+      const match = banners.find(b => {
+         const start = new Date(b.startTime).getTime();
+         const end = b.endTime ? new Date(b.endTime).getTime() : 4102444800000;
+         if (pTime < start || pTime > end) return false;
+         const bType = (b.type || "").toLowerCase();
+         if (displayId === 'special' && bType === 'special') return true;
+         if (displayId.includes('standard') && (bType === 'standard' || bType === 'constant')) return true;
+         
+         return false;
+      });
+      const bid = match ? match.id : 'other_' + displayId;
+      const type = match ? match.type : (displayId === 'special' ? 'special' : 'standard');
+
+      if (!bannerCounts[bid]) bannerCounts[bid] = 0;
+      let isFree = false;
+      if (type === 'special' && bannerCounts[bid] >= 30 && bannerCounts[bid] < 40) {
+          isFree = true;
+      }
+
+      bannerCounts[bid]++;
+      
+      if (!isFree) {
+          billable++;
+      }
+    });
+
+    return billable;
+  })();
+
+  $: spent = (billableCount * 500).toLocaleString("ru-RU");
   $: count6 = stats.count6 || 0;
   $: count5 = stats.count5 || 0;
   $: percent6 = stats.percent6 || "0.00";
@@ -451,7 +489,7 @@
                   style="font-size: 0.85rem; min-width: 1.7rem;"
                 >
                   <div
-                    class="absolute inset-0 rounded opacity-90"
+                    class="absolute inset-0 rounded opacity-[0.88]"
                     style="background-color: {getPityColor(icon.pity)};"
                   ></div>
 

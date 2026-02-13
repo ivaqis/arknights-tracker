@@ -22,42 +22,50 @@
   const allItems = [...currencies, ...progression];
 
   function parseWithServerOffset(dateStr) {
-    if (!dateStr) return new Date(9999, 11, 31); 
+    if (!dateStr) return new Date(9999, 11, 31);
 
-    if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
-        return new Date(dateStr);
+    if (
+      dateStr.includes("Z") ||
+      (dateStr.includes("T") && dateStr.includes("+"))
+    ) {
+      return new Date(dateStr);
     }
 
     const offset = currentServerId === "2" ? 8 : -5;
     const sign = offset >= 0 ? "+" : "-";
-    const pad = (n) => String(Math.abs(n)).padStart(2, '0');
+    const pad = (n) => String(Math.abs(n)).padStart(2, "0");
     const iso = dateStr.replace(" ", "T") + `${sign}${pad(offset)}:00`;
     return new Date(iso);
   }
 
   function formatTimeLeft(endTimeStr) {
-      const end = parseWithServerOffset(endTimeStr);
-      const diff = end - now;
-      
-      if (diff <= 0) return null;
+    const end = parseWithServerOffset(endTimeStr);
+    const diff = end - now;
 
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    if (diff <= 0) return null;
 
-      if (days > 0) return $t("timer.left_d_h", { d: days, h: hours });
-      if (hours > 0) return $t("timer.left_h_m", { h: hours, m: minutes });
-      return $t("timer.left_m", { m: minutes });
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+    if (days > 0) return $t("timer.left_d_h", { d: days, h: hours });
+    if (hours > 0) return $t("timer.left_h_m", { h: hours, m: minutes });
+    return $t("timer.left_m", { m: minutes });
   }
 
   function getRarityStyle(id) {
     const item = allItems.find((i) => i.id === id);
     const rarity = item?.rarity || 3;
     switch (rarity) {
-      case 5: case 6: return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
-      case 4: return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
-      case 3: return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
-      default: return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
+      case 5:
+      case 6:
+        return "bg-amber-50 border-amber-300 text-amber-800 hover:border-amber-500 dark:bg-amber-900/40 dark:border-amber-700 dark:text-amber-200 dark:hover:border-amber-400";
+      case 4:
+        return "bg-purple-50 border-purple-300 text-purple-800 hover:border-purple-500 dark:bg-purple-900/40 dark:border-purple-700 dark:text-purple-200 dark:hover:border-purple-400";
+      case 3:
+        return "bg-blue-50 border-blue-300 text-blue-800 hover:border-blue-500 dark:bg-blue-900/40 dark:border-blue-700 dark:text-blue-200 dark:hover:border-blue-400";
+      default:
+        return "bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:border-gray-400";
     }
   }
 
@@ -65,8 +73,10 @@
     .filter((b) => {
       const _ = currentServerId;
       const start = parseWithServerOffset(b.startTime);
-      const end = b.endTime ? parseWithServerOffset(b.endTime) : new Date(9999, 11, 31);
-      
+      const end = b.endTime
+        ? parseWithServerOffset(b.endTime)
+        : new Date(9999, 11, 31);
+
       const isTime = now >= start && now <= end;
       return isTime && b.showOnMain === true;
     })
@@ -101,27 +111,27 @@
   $: currentBannerTimeLeft = (() => {
     const b = activeBanners[currentBannerIndex];
     if (!b || !b.endTime) return "";
-    return formatTimeLeft(b.endTime) || ""; 
+    return formatTimeLeft(b.endTime) || "";
   })();
 
   $: activePromocodes = (() => {
-      const _ = currentServerId;
-      return promocodes.filter((p) => {
-        const end = parseWithServerOffset(p.endTime);
-        return now <= end;
-      });
+    const _ = currentServerId;
+    return promocodes.filter((p) => {
+      const end = parseWithServerOffset(p.endTime);
+      return now <= end;
+    });
   })();
 
-function getFormattedDate(dateStr) {
+  function getFormattedDate(dateStr) {
     const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
     return end.toLocaleDateString($currentLocale, dateOptions);
   }
 
   function getPromoTimeLabel(dateStr) {
-      const text = formatTimeLeft(dateStr);
-      if (!text) return "";
-      return `(${text})`;
+    const text = formatTimeLeft(dateStr);
+    if (!text) return "";
+    return `(${text})`;
   }
 
   function sortRewards(rewards) {
@@ -141,15 +151,19 @@ function getFormattedDate(dateStr) {
       await navigator.clipboard.writeText(code);
       copiedCode = code;
       setTimeout(() => (copiedCode = null), 2000);
-    } catch (err) { console.error(err); }
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   onMount(() => {
-    if (typeof localStorage !== 'undefined') {
-        const savedServer = localStorage.getItem("ark_server_id");
-        if (savedServer) currentServerId = savedServer;
+    if (typeof localStorage !== "undefined") {
+      const savedServer = localStorage.getItem("ark_server_id");
+      if (savedServer) currentServerId = savedServer;
     }
-    timer = setInterval(() => { now = new Date(); }, 1000 * 60);
+    timer = setInterval(() => {
+      now = new Date();
+    }, 1000 * 60);
     startBannerRotation();
   });
 
@@ -181,18 +195,22 @@ function getFormattedDate(dateStr) {
       >
         <div class="w-1/3">{$t("home.promocodes")}</div>
         <div class="flex-1">{$t("home.rewards")}</div>
-        <div class="w-auto text-right whitespace-nowrap">{$t("home.duration")}</div>
+        <div class="w-auto text-right whitespace-nowrap">
+          {$t("home.duration")}
+        </div>
       </div>
 
       <div class="overflow-y-auto custom-scrollbar flex-1 p-2">
         {#if activePromocodes.length === 0}
-          <div class="flex flex-col items-center justify-center py-12 text-gray-400 dark:text-[#7A7A7A]">
+          <div
+            class="flex flex-col items-center justify-center py-12 text-gray-400 dark:text-[#7A7A7A]"
+          >
             <div class="mb-3 opacity-60">
-                <Icon name="noData" className="w-10 h-10" />
+              <Icon name="noData" className="w-10 h-10" />
             </div>
-            
+
             <div class="text-sm font-medium">
-                {$t("home.noActiveCodes")}
+              {$t("home.noActiveCodes")}
             </div>
           </div>
         {:else}
@@ -279,11 +297,18 @@ function getFormattedDate(dateStr) {
                 {/each}
               </div>
 
-              <div class="w-auto text-right shrink-0 pl-2 flex flex-col justify-center">
-                <span class="text-xs font-bold text-gray-700 dark:text-[#E0E0E0] whitespace-nowrap leading-tight">
-                  {$t("home.until")} {getFormattedDate(promo.endTime)}
+              <div
+                class="w-auto text-right shrink-0 pl-2 flex flex-col justify-center"
+              >
+                <span
+                  class="text-xs font-bold text-gray-700 dark:text-[#E0E0E0] whitespace-nowrap leading-tight"
+                >
+                  {$t("home.until")}
+                  {getFormattedDate(promo.endTime)}
                 </span>
-                <span class="text-[10px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight">
+                <span
+                  class="text-[10px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight"
+                >
                   {getPromoTimeLabel(promo.endTime)}
                 </span>
               </div>
@@ -295,7 +320,9 @@ function getFormattedDate(dateStr) {
 
     <div class="lg:col-span-7 flex flex-col gap-4">
       <div class="flex items-center justify-between px-1">
-        <h2 class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2">
+        <h2
+          class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
+        >
           <span class="w-2 h-2 bg-[#FACC15] rounded-full"></span>
           {$t("home.current_banners")}
         </h2>
@@ -322,39 +349,46 @@ function getFormattedDate(dateStr) {
         on:keydown={(e) =>
           (e.key === "Enter" || e.key === " ") &&
           (selectedBanner = activeBanners[currentBannerIndex])}
-        
-        on:mouseenter={stopBannerRotation} 
+        on:mouseenter={stopBannerRotation}
         on:mouseleave={startBannerRotation}
       >
         {#if activeBanners.length > 0}
           {#key currentBannerIndex}
-          <div 
-            class="absolute inset-0"
-            in:fade={{ duration: 200 }} 
-            out:fade={{ duration: 200 }}
-          >
-            <Images
-              id={activeBanners[currentBannerIndex].icon}
-              variant="banner-icon"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-            
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none"
-            ></div>
+              class="absolute inset-0"
+              in:fade={{ duration: 200 }}
+              out:fade={{ duration: 200 }}
+            >
+              <Images
+                id={activeBanners[currentBannerIndex].icon}
+                variant="banner-icon"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
 
-            {#if currentBannerTimeLeft}
-                <div class="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 z-20 pointer-events-none">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-lg">
-                        <span class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"></span>
-                        <span class="text-xs font-bold text-white font-nums tracking-wide leading-none drop-shadow-md">
-                            {currentBannerTimeLeft}
-                        </span>
-                    </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity pointer-events-none"
+              ></div>
+
+              {#if currentBannerTimeLeft}
+                <div
+                  class="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 z-20 pointer-events-none"
+                >
+                  <div
+                    class="inline-flex items-center gap-2 px-3 py-1.5 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-lg"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"
+                    ></span>
+                    <span
+                      class="text-xs font-bold text-white font-nums tracking-wide leading-none drop-shadow-md"
+                    >
+                      {currentBannerTimeLeft}
+                    </span>
+                  </div>
                 </div>
-            {/if}
-          </div>
-        {/key}
+              {/if}
+            </div>
+          {/key}
 
           <button
             type="button"
@@ -408,20 +442,20 @@ function getFormattedDate(dateStr) {
     </Button>
   </div>
   <div class="w-48 flex gap-1 mb-5">
-            <a
-                href="https://discord.gg/6XmrdB6r"
-                target="_blank"
-                rel="noreferrer"
-                class="no-underline"
-            >
-                <Button variant="black2">
-                    <div slot="icon">
-                        <Icon name="discord" class="w-6 h-6" />
-                    </div>
-                    Discord
-                </Button>
-            </a>
+    <a
+      href="https://discord.gg/6XmrdB6r"
+      target="_blank"
+      rel="noreferrer"
+      class="no-underline"
+    >
+      <Button variant="black2">
+        <div slot="icon">
+          <Icon name="discord" class="w-6 h-6" />
         </div>
+        Discord
+      </Button>
+    </a>
+  </div>
 </div>
 
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />
