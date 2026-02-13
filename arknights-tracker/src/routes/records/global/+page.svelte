@@ -769,12 +769,11 @@
             {/if}
             <!-- График круток в день-->
             <div
-                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[240px] flex flex-col relative group overflow-hidden"
+                class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[240px] flex flex-col relative group"
                 role="figure"
             >
                 <div class="flex justify-between items-center mb-4 shrink-0 z-10 relative">
-                    <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] flex items-center gap-2">
-                        <div class="w-2 h-2 rounded-full bg-[#FACC15] shadow-[0_0_8px_rgba(250,204,21,0.6)]"></div>
+                    <div class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD]">
                         {$t("global.pullsPerDay") || "Pulls per Day"}
                     </div>
                 </div>
@@ -782,7 +781,7 @@
                 <div class="flex-1 flex flex-col min-h-0 relative">
                     
                     <div 
-                        class="flex-1 w-full relative min-h-0 z-10 group/chart"
+                        class="flex-1 w-full relative min-h-0 z-10"
                         role="application"
                         aria-label="Interactive chart showing pulls history"
                         on:mousemove={(e) => {
@@ -808,11 +807,7 @@
                                         <stop offset="0%" stop-color="#FACC15" stop-opacity="0.4" />
                                         <stop offset="100%" stop-color="#FACC15" stop-opacity="0" />
                                     </linearGradient>
-                                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                                        <feGaussianBlur stdDeviation="1.5" result="blur" />
-                                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                                    </filter>
-                                </defs>
+                                    </defs>
                                 
                                 <path
                                     d="{smoothPath} V 100 H 0 Z"
@@ -824,11 +819,10 @@
                                     d={smoothPath}
                                     fill="none"
                                     stroke="#FACC15"
-                                    stroke-width="1.5"
+                                    stroke-width="2"
                                     vector-effect="non-scaling-stroke"
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
-                                    filter="url(#glow)"
                                 />
                             </svg>
 
@@ -838,12 +832,12 @@
                                 {@const topPos = 100 - (point.count / maxVal) * 100}
 
                                 <div
-                                    class="absolute top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#FACC15]/60 to-transparent pointer-events-none"
+                                    class="absolute top-0 bottom-0 w-px bg-gray-300 dark:bg-gray-600 border-r border-dashed border-gray-400 pointer-events-none"
                                     style="left: {leftPos}%;"
                                 ></div>
 
                                 <div
-                                    class="absolute w-3 h-3 rounded-full shadow-[0_0_8px_#FACC15] border-[1.5px] border-white dark:border-[#383838] bg-[#FACC15] pointer-events-none transform -translate-x-1/2 -translate-y-1/2 z-20"
+                                    class="absolute w-3 h-3 rounded-full border-2 border-white dark:border-[#383838] bg-[#FACC15] pointer-events-none transform -translate-x-1/2 -translate-y-1/2 z-20"
                                     style="left: {leftPos}%; top: {topPos}%;"
                                 ></div>
 
