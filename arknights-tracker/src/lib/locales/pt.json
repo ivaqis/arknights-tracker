@@ -414,7 +414,9 @@
     "attributesTable": "Tabela de atributos",
     "selector": "Seletor",
     "bonus_copy": "Cópia bônus",
-    "guaranteed": "Garantido"
+    "guaranteed": "Garantido",
+  "arms_offering": "Oferenda de Armas",
+  "featured_guarantee": "Garantido"
   },
   "bioValues": {
     "Unknown": "Desconhecido",

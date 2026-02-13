@@ -123,6 +123,7 @@
   $: isNewPlayer = bannerId.includes("new-player");
   $: maxPity6 = isWeaponCard ? 40 : isNewPlayer ? 40 : 80;
   $: maxGuaranteed = isWeaponCard ? 80 : 120;
+  $: showRateUpGuarantee = isWeaponCard && !bannerId.includes("constant") && !hasReceivedRateUp;
   $: showWinRate = winRate.total > 0 && !isNewPlayer && bannerId !== "standard";
   const normalize = (str) => str?.toLowerCase().replace(/[^a-z0-9]/g, "") || "";
 
@@ -209,6 +210,8 @@
     if (label === "selector_6") return $t("stats.selector") || "Selector";
     if (label === "guaranteed_6") return $t("stats.guaranteed") || "Guaranteed";
     if (label === "bonus_copy_6") return $t("stats.bonus_copy") || "Bonus Copy";
+    if (label === "arms_offering") return $t("stats.arms_offering") || "Arms Offering";
+    if (label === "featured_guarantee") return $t("stats.featured_guarantee") || "Featured Wep.";
     return label;
   }
 </script>
@@ -300,7 +303,7 @@
       </span>
     </div>
 
-    {#if mileage.show}
+    {#if mileage.show && !showRateUpGuarantee}
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
           <span class="font-bold">6</span>
@@ -318,7 +321,7 @@
       </div>
     {/if}
 
-    {#if isWeaponCard && !bannerId.includes("constant") && !hasReceivedRateUp}
+    {#if showRateUpGuarantee}
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
           <span class="font-bold">6</span>

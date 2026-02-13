@@ -414,7 +414,9 @@
     "attributesTable": "ตารางค่าสถานะ",
     "selector": "ตัวเลือก",
     "bonus_copy": "ตัวซ้ำโบนัส",
-    "guaranteed": "การันตี"
+    "guaranteed": "การันตี",
+  "arms_offering": "Arms Offering",
+  "featured_guarantee": "การันตี"
   },
   "bioValues": {
     "Unknown": "ไม่ทราบ",

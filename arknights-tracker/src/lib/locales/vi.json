@@ -414,7 +414,9 @@
     "attributesTable": "Bảng thuộc tính",
     "selector": "Bộ chọn",
     "bonus_copy": "Bản sao thưởng",
-    "guaranteed": "Đảm bảo"
+    "guaranteed": "Đảm bảo",
+    "arms_offering": "Arms Offering",
+    "featured_guarantee": "Đảm bảo"
   },
   "bioValues": {
     "Unknown": "Không rõ",
@@ -485,7 +487,7 @@
     "igneosite": "Viêm Thạch",
     "wulingstone": "Đá Võ Lăng",
     "vitrodendra": "Tinh Cốt"
-},
+  },
   "common": {
     "copy": "Sao chép",
     "copied": "Đã chép!"
@@ -673,7 +675,7 @@
     "jiminy12": "Jiminy 12",
     "peco5": "Peco 5",
     "tarr11": "Tarr 11"
-},
+  },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",
     "text": "Chúng tôi sử dụng cookie để lưu các tùy chọn của bạn (như giao diện và ngôn ngữ) và phân tích lưu lượng truy cập trang web để cải thiện trải nghiệm người dùng",

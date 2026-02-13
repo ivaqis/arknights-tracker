@@ -19,19 +19,13 @@
         banner?.id?.includes("wepon");
     $: hasRateUp = isSpecial || isWeaponBanner;
     $: billableCount = (() => {
-        // Оружие и Новичок = 0
         if (isWeaponBanner || isNewPlayer) return 0;
-        
-        // Сортируем по времени, чтобы правильно найти 30-ю и 40-ю крутку
         const sorted = [...pulls].sort((a, b) => new Date(a.time) - new Date(b.time));
-        
         let count = 0;
         sorted.forEach((p, index) => {
-            // index + 1 - это номер крутки (1, 2, 3...)
             const pullNumber = index + 1;
             
             let isFree = false;
-            // Если Special баннер, то 31..40 бесплатно
             if (isSpecial && pullNumber > 30 && pullNumber <= 40) {
                 isFree = true;
             }
@@ -44,7 +38,6 @@
     })();
 
     $: total = stats.total || 0;
-    // Используем billableCount вместо total
     $: spent = (billableCount * 500).toLocaleString("ru-RU");
     $: count6 = stats.count6 || 0;
     $: count5 = stats.count5 || 0;

@@ -414,7 +414,9 @@
     "attributesTable": "Tabel atribut",
     "selector": "Pemilih",
     "bonus_copy": "Salinan bonus",
-    "guaranteed": "Jaminan"
+    "guaranteed": "Jaminan",
+  "arms_offering": "Persembahan Senjata",
+  "featured_guarantee": "Jaminan"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui",

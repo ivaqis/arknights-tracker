@@ -417,7 +417,9 @@
     "attributesTable": "Таблица атрибутов",
     "selector": "Селектор",
     "bonus_copy": "Бонусная копия",
-    "guaranteed": "Гарантированно"
+    "guaranteed": "Гарантированно",
+    "arms_offering": "Пополнение арсенала",
+    "featured_guarantee": "Гарантированно"
   },
   "bioValues": {
     "Unknown": "Неизвестно",

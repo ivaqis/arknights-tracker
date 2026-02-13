@@ -414,7 +414,9 @@
     "attributesTable": "속성 표",
     "selector": "선택기",
     "bonus_copy": "보너스 사본",
-    "guaranteed": "확정"
+    "guaranteed": "확정",
+  "arms_offering": "무기 봉헌",
+  "featured_guarantee": "확정"
   },
   "bioValues": {
     "Unknown": "알 수 없음",

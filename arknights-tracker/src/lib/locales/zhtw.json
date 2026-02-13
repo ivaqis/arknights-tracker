@@ -414,7 +414,9 @@
     "attributesTable": "屬性表",
     "selector": "選擇器",
     "bonus_copy": "額外副本",
-    "guaranteed": "必出"
+    "guaranteed": "必出",
+  "arms_offering": "武器供奉",
+  "featured_guarantee": "必出"
   },
   "bioValues": {
     "Unknown": "未知",

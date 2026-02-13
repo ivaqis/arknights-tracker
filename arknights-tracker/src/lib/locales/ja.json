@@ -414,7 +414,9 @@
     "attributesTable": "ステータス一覧",
     "selector": "選択",
     "bonus_copy": "ボーナス分",
-    "guaranteed": "確定"
+    "guaranteed": "確定",
+  "arms_offering": "武器奉納",
+  "featured_guarantee": "確定"
   },
   "bioValues": {
     "Unknown": "不明",

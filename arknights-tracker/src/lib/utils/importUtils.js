@@ -279,8 +279,35 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
 
     let mileage = { show: false, current: 0, max: 0, label: "" };
     if (bannerId.includes('standard')) {
-        if (currentBannerMileage < 300) mileage = { show: true, current: currentBannerMileage, max: 300, label: "selector_6" };
-    } else if (bannerId.includes('special') && !isWeaponType) {
+        if (currentBannerMileage < 300) {
+            mileage = { show: true, current: currentBannerMileage, max: 300, label: "selector_6" };
+        }
+    } 
+    else if (isWeaponType) {
+        if (!bannerId.includes('constant')) {
+            if (currentBannerMileage < 100) {
+                mileage = { 
+                    show: true, 
+                    current: currentBannerMileage, 
+                    max: 100, 
+                    label: "arms_offering" 
+                };
+            } else {
+                const offset = currentBannerMileage - 100;
+                const phase = Math.floor(offset / 80);
+                const nextTarget = 100 + (phase + 1) * 80;
+                const isFeaturedNext = phase % 2 === 0;
+
+                mileage = {
+                    show: true,
+                    current: currentBannerMileage,
+                    max: nextTarget,
+                    label: isFeaturedNext ? "featured_guarantee" : "arms_offering"
+                };
+            }
+        }
+    }
+    else if (bannerId.includes('special')) {
         if (hasReceivedRateUp || currentBannerMileage >= 120) {
             mileage = { show: true, current: currentBannerMileage % 240, max: 240, label: "bonus_copy_6" };
         } else {

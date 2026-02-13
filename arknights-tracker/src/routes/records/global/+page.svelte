@@ -897,7 +897,7 @@
                 class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 h-[220px] flex flex-col z-0"
             >
                 <div
-                    class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD] mb-4 flex items-center gap-0.5"
+                    class="text-xs font-bold text-gray-800 dark:text-[#FDFDFD]  mb-4 flex items-center gap-0.5"
                 >
                     {$t("global.pityDist") || "Pity Distribution"}
                     <Icon
