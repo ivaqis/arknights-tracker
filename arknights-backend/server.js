@@ -665,36 +665,28 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 currentPity6 = 0;
             }
 
-            p.pity = thisPity;
+            p.pity = isFreePull ? 1 : currentPity6;
+
+            if (!isFreePull) {
+                count6++;
+                sumPity6 += currentPity6;
+                currentPity6 = 0;
+            }
 
             let currentFeaturedList = [];
-            let bannerDebugName = "Unknown";
-
             if (isGenericCalculation) {
                 const foundConfig = findBannerConfigByTime(p.time, categoryId, offset);
-                if (foundConfig) {
-                    currentFeaturedList = foundConfig.featured6 || [];
-                    bannerDebugName = foundConfig.id;
-                }
+                if (foundConfig) currentFeaturedList = foundConfig.featured6 || [];
             } else {
                 currentFeaturedList = specificBannerConfig.featured6 || [];
-                bannerDebugName = specificBannerConfig.id;
             }
 
-            const normFeatured = currentFeaturedList.map(n => normalize(n));
-            const isFeatured = normFeatured.includes(itemName);
-
-            if (isGenericCalculation) {
-                console.log(`   [6* CHECK] Pull: ${p.name} (${p.time})`);
-                console.log(`       -> Detected Banner: ${bannerDebugName}`);
-                // console.log(`       -> Featured List: [${normFeatured.join(', ')}]`);
-                console.log(`       -> Is Match? ${isFeatured} | HardPity? ${isHardPityTriggered}`);
-            }
+            const isFeatured = currentFeaturedList.map(n => normalize(n)).includes(itemName);
 
             if (!isFreePull) {
                 if (isFeatured) {
                     if (isHardPityTriggered) {
-                        p.gachaStatus = "guaranteed"; 
+                        p.gachaStatus = "guaranteed";
                     } else {
                         won5050++;
                         total5050++;
@@ -709,21 +701,15 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 p.gachaStatus = "free";
             }
 
-        } else {
-            if (!isFreePull) {
-                currentPity6++;
-                currentPity5++;
-            }
-            p.pity = currentPity6;
-        }
-
-        if (p.rarity === 5) {
+        } else if (p.rarity === 5) {
+            p.pity = isFreePull ? 1 : currentPity5;
             if (!isFreePull) {
                 count5++;
-                const thisPity5 = currentPity5;
-                sumPity5 += thisPity5;
+                sumPity5 += currentPity5;
                 currentPity5 = 0;
             }
+        } else {
+            p.pity = 1;
         }
 
         enrichedPulls.push(p);
