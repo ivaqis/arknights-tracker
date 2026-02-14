@@ -239,8 +239,9 @@
                         class="
                             flex items-center gap-3 py-3 rounded-lg group relative min-h-[48px]
                             {ready ? 'transition-all' : ''} 
-                            pl-7 
-                            [.sidebar-closed_&]:pl-0 
+                            
+                            px-3 
+                            [.sidebar-closed_&]:px-0 
                             [.sidebar-closed_&]:justify-center
 
                             {isCurrent(item.path) && (item.path === '/' ? $page.url.pathname === '/' : true)
