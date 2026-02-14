@@ -80,7 +80,7 @@
     $: icons = pulls
         .filter((p) => p.rarity === 6)
         .sort((a, b) => new Date(a.time) - new Date(b.time))
-        .map((p) => {
+        .map((p, index) => {
             const lookupKey = normalize(p.name);
             const itemData = lookupMap[lookupKey];
             const itemId = itemData?.id || normalize(p.name);
@@ -93,6 +93,7 @@
                 pity: typeof p.pity === "number" ? p.pity : "?",
                 name: p.name,
                 isWeapon: isWeaponItem,
+                isFree: p.isFree 
             };
         });
 
@@ -278,21 +279,31 @@
                                     className={icon.isWeapon ? "scale-125" : ""}
                                 />
                             </div>
-                            <div
-                                class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center"
-                                style="font-size: 0.85rem; min-width: 1.7rem;"
-                            >
+
+                            {#if icon.isFree}
                                 <div
-                                    class="absolute inset-0 rounded opacity-90"
-                                    style="background-color: {getPityColor(
-                                        icon.pity,
-                                        icon.isWeapon,
-                                    )};"
-                                ></div>
-                                <span class="relative text-white z-10"
-                                    >{icon.pity}</span
+                                    class="absolute -bottom-1 -right-1 bg-green-500 text-white font-bold rounded px-1 shadow-md z-20 pointer-events-none"
+                                    style="font-size: 0.65rem; min-width: 1.7rem; line-height: 1.2rem; text-align: center;"
                                 >
-                            </div>
+                                    FREE
+                                </div>
+                            {:else}
+                                <div
+                                    class="absolute -bottom-1 -right-1 min-w-7 px-2 py-1 rounded font-nums leading-none font-bold shadow-lg pointer-events-none flex items-center justify-center"
+                                    style="font-size: 0.85rem; min-width: 1.7rem;"
+                                >
+                                    <div
+                                        class="absolute inset-0 rounded opacity-90"
+                                        style="background-color: {getPityColor(
+                                            icon.pity,
+                                            icon.isWeapon,
+                                        )};"
+                                    ></div>
+                                    <span class="relative text-white z-10">
+                                        {icon.pity}
+                                    </span>
+                                </div>
+                            {/if}
                         </div>
                     </Tooltip>
                 {/each}

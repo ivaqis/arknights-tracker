@@ -668,11 +668,17 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             p.pity = thisPity;
 
             let currentFeaturedList = [];
+            let bannerDebugName = "Unknown";
+
             if (isGenericCalculation) {
                 const foundConfig = findBannerConfigByTime(p.time, categoryId, offset);
-                if (foundConfig) currentFeaturedList = foundConfig.featured6 || [];
+                if (foundConfig) {
+                    currentFeaturedList = foundConfig.featured6 || [];
+                    bannerDebugName = foundConfig.id;
+                }
             } else {
                 currentFeaturedList = specificBannerConfig.featured6 || [];
+                bannerDebugName = specificBannerConfig.id;
             }
 
             const normFeatured = currentFeaturedList.map(n => normalize(n));

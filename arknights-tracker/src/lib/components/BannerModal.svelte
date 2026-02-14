@@ -220,7 +220,6 @@
         const historyWithPity = fullHistory.map((pull) => {
             const p = { ...pull };
             const isFree = p.isFree === true || String(p.isFree) === "true";
-
             if (!isFree) {
                 simPity5++;
                 simPity6++;
@@ -229,11 +228,10 @@
             p.calculatedPity6 =
                 p.pity !== undefined && p.pity !== null
                     ? Number(p.pity)
-                    : simPity6;
-            p.calculatedPity5 = simPity5;
-
-            if (p.rarity === 6) simPity6 = 0;
-            if (p.rarity === 5) simPity5 = 0;
+                    : (isFree ? 1 : simPity6);
+            p.calculatedPity5 = isFree ? 1 : simPity5;
+            if (p.rarity === 6 && !isFree) simPity6 = 0;
+            if (p.rarity === 5 && !isFree) simPity5 = 0;
 
             return p;
         });
@@ -244,65 +242,51 @@
 
             const pullTime = new Date(pull.time).getTime();
             const timeMatch = pullTime >= bStart && pullTime <= bEnd;
-
             if (!timeMatch) return false;
 
             const isGenericType = [
-                "special",
-                "standard",
-                "weapon",
-                "weap-special",
-                "weap-standard",
-                "new-player",
+                "special", "standard", "weapon", "weap-special", 
+                "weap-standard", "new-player"
             ].some((t) => pull.bannerId?.includes(t));
+            
             const typesMatch = isWeaponBanner
                 ? pull.type === "weapon"
                 : pull.type === "character";
 
-            if (
-                !isWeaponBanner &&
-                (banner.id === "standard" || banner.id === "1")
-            ) {
+            if (!isWeaponBanner && (banner.id === "standard" || banner.id === "1")) {
                 return pull.bannerId === "standard" || pull.bannerId === "1";
             }
 
-            if (isGenericType && typesMatch) {
-                return true;
-            }
-
-            return false;
+            return isGenericType && typesMatch;
         });
 
         if (filtered.length === 0) return { pulls: [], stats: {} };
 
         const hardPityLimit = isWeaponBanner ? 80 : 120;
-
-        let count6 = 0,
-            count5 = 0;
-        let sumPity6 = 0,
-            sumPity5 = 0;
-        let total5050 = 0,
-            won5050 = 0;
+        let count6 = 0, count5 = 0;
+        let sumPity6 = 0, sumPity5 = 0;
+        let total5050 = 0, won5050 = 0;
         let localRateUpCounter = 0;
 
-        const processed = filtered
-            .map((pull) => {
-                const p = { ...pull };
-                const isFree = p.isFree === true || String(p.isFree) === "true";
+        const processed = filtered.map((pull) => {
+            const p = { ...pull };
+            const isFree = p.isFree === true || String(p.isFree) === "true";
 
+            if (!isFree) {
+                localRateUpCounter++;
+            }
+            const isHardPityTriggered = localRateUpCounter >= hardPityLimit;
+
+            if (p.rarity === 6) {
                 if (!isFree) {
-                    if (localRateUpCounter >= hardPityLimit - 1) {
-                    }
-                    localRateUpCounter++;
-                }
-                const isHardPityTriggered = localRateUpCounter >= hardPityLimit;
-
-                if (p.rarity === 6) {
                     count6++;
                     sumPity6 += p.calculatedPity6;
-                    p.realPity = p.calculatedPity6;
+                }
+                
+                p.realPity = p.calculatedPity6;
+                const isFeatured = checkIsFeatured(p.name);
 
-                    const isFeatured = checkIsFeatured(p.name);
+                if (!isFree) {
                     if (isFeatured) {
                         if (!isHardPityTriggered) {
                             total5050++;
@@ -314,41 +298,38 @@
                             total5050++;
                         }
                     }
-                } else if (p.rarity === 5) {
+                }
+            } else if (p.rarity === 5) {
+                if (!isFree) {
                     count5++;
                     sumPity5 += p.calculatedPity5;
-                    p.realPity = p.calculatedPity5;
-                } else {
-                    p.realPity = 1;
                 }
-
-                return p;
-            })
-            .reverse();
+                p.realPity = p.calculatedPity5;
+            } else {
+                p.realPity = 1;
+            }
+            return p;
+        }).reverse();
 
         const total = processed.length;
 
-        const localStats = {
-            total,
-            count6,
-            count5,
-            percent6: total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00",
-            percent5: total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00",
-
-            avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
-            avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
-
-            winRate: {
-                won: won5050,
-                total: total5050,
-                percent:
-                    total5050 > 0
-                        ? ((won5050 / total5050) * 100).toFixed(0)
-                        : 0,
-            },
+        return { 
+            pulls: processed, 
+            stats: {
+                total,
+                count6,
+                count5,
+                percent6: total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00",
+                percent5: total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00",
+                avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
+                avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
+                winRate: {
+                    won: won5050,
+                    total: total5050,
+                    percent: total5050 > 0 ? ((won5050 / total5050) * 100).toFixed(0) : 0,
+                },
+            } 
         };
-
-        return { pulls: processed, stats: localStats };
     })();
 
     $: bannerPulls = bannerData.pulls;
