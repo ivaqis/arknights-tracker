@@ -665,7 +665,10 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             if (!isFreePull) {
                 count6++;
                 sumPity6 += currentPity6;
+                console.log(`   [6* PAID] ${p.name} | Pity: ${currentPity6} | Total6: ${count6} | Avg: ${(sumPity6/count6).toFixed(1)}`);
                 currentPity6 = 0;
+            } else {
+                console.log(`   [6* FREE] ${p.name} | Ignored in stats | Pity set to 1`);
             }
 
             // Определение баннера для 50/50
@@ -712,6 +715,7 @@ function calculateMath(pulls, categoryId, serverId = '3') {
     });
 
     const winRate = total5050 > 0 ? (won5050 / total5050 * 100) : 0;
+    console.log(`[MATH END] ${categoryId} Result -> Avg6: ${(sumPity6/count6 || 0).toFixed(1)} | WinRate: ${winRate.toFixed(1)}% (Won: ${won5050}/${total5050})`);
 
     return { 
         stats: { 
