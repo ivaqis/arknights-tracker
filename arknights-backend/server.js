@@ -651,20 +651,15 @@ function calculateMath(pulls, categoryId, serverId = '3') {
         const isSpecialCharBanner = categoryId.includes('special') && !isWeaponType;
         const isFreePull = isSpecialCharBanner && (index >= 30 && index < 40);
 
-        let isHardPityTriggered = false;
         if (!isFreePull) {
-            if (rateUpCounter >= hardPityLimit - 1) isHardPityTriggered = true;
+            currentPity6++;
+            currentPity5++;
             rateUpCounter++;
         }
 
-        if (p.rarity === 6) {
-            const thisPity = isFreePull ? 1 : (currentPity6 + 1);
-            if (!isFreePull) {
-                count6++;
-                sumPity6 += thisPity;
-                currentPity6 = 0;
-            }
+        const isHardPityTriggered = rateUpCounter >= hardPityLimit;
 
+        if (p.rarity === 6) {
             p.pity = isFreePull ? 1 : currentPity6;
 
             if (!isFreePull) {
@@ -673,6 +668,7 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 currentPity6 = 0;
             }
 
+            // Определение баннера для 50/50
             let currentFeaturedList = [];
             if (isGenericCalculation) {
                 const foundConfig = findBannerConfigByTime(p.time, categoryId, offset);
