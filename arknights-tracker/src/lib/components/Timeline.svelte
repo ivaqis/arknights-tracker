@@ -164,11 +164,14 @@
     }
 
     const DAY_WIDTH = 35;
-    const ROW_HEIGHT = 44;
+    const ROW_HEIGHT = 43;
     const GAP_HEIGHT = 7;
     const HEADER_HEIGHT_PX = 80;
-    const EVENT_TOP_OFFSET = 8;
-    const TIMELINE_HEIGHT = "80%";
+    const EVENT_TOP_OFFSET = 2;
+    $: isOverflowing = contentHeight > (innerHeight * 0.8);
+    $: TIMELINE_HEIGHT = isOverflowing ? "99%" : "85%";
+
+    let innerHeight;
 
     let now = new Date();
     let timerInterval;
@@ -257,46 +260,63 @@
     let bodyContainer;
     let scrollLeft = 0;
 
-    let isDown = false;
-    let startX;
-    let startY;
-    let scrollLeftState;
-    let scrollTopState;
+    function dragScroll(node) {
+        let isDown = false;
+        let startX;
+        let startY;
+        let scrollLeft;
+        let scrollTop;
 
-    function handleMouseDown(e) {
-        // Если кликнули, начинаем тянуть
-        isDown = true;
-        bodyContainer.style.cursor = 'grabbing';
-        
-        startX = e.pageX - bodyContainer.offsetLeft;
-        startY = e.pageY - bodyContainer.offsetTop;
-        
-        scrollLeftState = bodyContainer.scrollLeft;
-        scrollTopState = bodyContainer.scrollTop;
-    }
+        node.style.cursor = 'grab';
+        node.style.userSelect = 'none';
 
-    function handleMouseLeave() {
-        isDown = false;
-        if (bodyContainer) bodyContainer.style.cursor = 'grab';
-    }
+        const mouseDownHandler = (e) => {
+            if (e.target.closest('button') || e.target.closest('a')) return;
+            
+            isDown = true;
+            node.style.cursor = 'grabbing';
+            startX = e.pageX - node.offsetLeft;
+            startY = e.pageY - node.offsetTop;
+            scrollLeft = node.scrollLeft;
+            scrollTop = node.scrollTop;
+        };
 
-    function handleMouseUp() {
-        isDown = false;
-        if (bodyContainer) bodyContainer.style.cursor = 'grab';
-    }
+        const mouseLeaveHandler = () => {
+            isDown = false;
+            node.style.cursor = 'grab';
+        };
 
-    function handleMouseMove(e) {
-        if (!isDown) return;
-        e.preventDefault(); // Чтобы текст не выделялся пока тянешь
-        
-        const x = e.pageX - bodyContainer.offsetLeft;
-        const y = e.pageY - bodyContainer.offsetTop;
-        
-        const walkX = (x - startX); // Можно умножить на 1.5 для скорости
-        const walkY = (y - startY);
-        
-        bodyContainer.scrollLeft = scrollLeftState - walkX;
-        bodyContainer.scrollTop = scrollTopState - walkY;
+        const mouseUpHandler = () => {
+            isDown = false;
+            node.style.cursor = 'grab';
+        };
+
+        const mouseMoveHandler = (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - node.offsetLeft;
+            const y = e.pageY - node.offsetTop;
+            const walkX = (x - startX);
+            const walkY = (y - startY);
+            node.scrollLeft = scrollLeft - walkX;
+            node.scrollTop = scrollTop - walkY;
+        };
+
+        // Вешаем слушатели
+        node.addEventListener('mousedown', mouseDownHandler);
+        node.addEventListener('mouseleave', mouseLeaveHandler);
+        node.addEventListener('mouseup', mouseUpHandler);
+        node.addEventListener('mousemove', mouseMoveHandler);
+
+        return {
+            destroy() {
+                // Очищаем слушатели при удалении компонента
+                node.removeEventListener('mousedown', mouseDownHandler);
+                node.removeEventListener('mouseleave', mouseLeaveHandler);
+                node.removeEventListener('mouseup', mouseUpHandler);
+                node.removeEventListener('mousemove', mouseMoveHandler);
+            }
+        };
     }
 
     function handleScroll() {
@@ -432,6 +452,8 @@
     }
 </script>
 
+<svelte:window bind:innerHeight />
+
 <div
     class="w-full max-w-full flex flex-col relative overflow-hidden"
     style="height: {TIMELINE_HEIGHT};"
@@ -536,15 +558,13 @@
     <!-- 2. ТЕЛО (СЕТКА + ЛИНИЯ + СОБЫТИЯ) -->
     <div
         bind:this={bodyContainer}
+        
+        use:dragScroll
+        
         on:scroll={handleScroll}
         on:wheel={handleWheel}
         
-        on:mousedown={handleMouseDown}
-        on:mouseleave={handleMouseLeave}
-        on:mouseup={handleMouseUp}
-        on:mousemove={handleMouseMove}
-
-        class="overflow-x-auto overflow-y-auto custom-scrollbar flex-grow relative w-full cursor-grab select-none"
+        class="overflow-x-auto overflow-y-auto custom-scrollbar flex-grow relative w-full outline-none" 
         style="scrollbar-gutter: stable;"
     >
         <div
