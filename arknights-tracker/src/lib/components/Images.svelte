@@ -37,6 +37,12 @@
     }
 
     $: sizeStyle = typeof size === 'number' ? `width: ${size}px; height: ${size}px;` : `width: ${size}; height: ${size};`;
+
+    $: isSmallIcon = variant.includes('icon') && !variant.includes('banner');
+    
+    $: smoothImageStyles = isSmallIcon 
+        ? "image-rendering: auto;" 
+        : "image-rendering: -webkit-optimize-contrast; transform: translateZ(0); backface-visibility: hidden;";
 </script>
 
 {#if hasError}
@@ -57,8 +63,8 @@
             loading="lazy"
             decoding="async"
             draggable="false"
-            class="{className} object-cover {allowTransition ? 'transition-opacity duration-200' : ''} {isVisible ? 'opacity-100' : 'opacity-0'}"
-            style="{sizeStyle} {style}"
+            class="{className} object-cover antialiased {allowTransition ? 'transition-opacity duration-200' : ''} {isVisible ? 'opacity-100' : 'opacity-0'}"
+            style="{smoothImageStyles} {sizeStyle} {style}"
             on:error={handleError}
         />
     {/key}

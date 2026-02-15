@@ -68,7 +68,7 @@
         </div>
     {/if}
 
-    <div class="absolute inset-0 border-[2px] border-white dark:border-white/80 rounded-[6px] z-30 pointer-events-none transition-opacity duration-100 opacity-0 group-hover:opacity-100"></div>
+    <div class="absolute inset-0 border-[2px] border-white dark:border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-100 opacity-0 group-hover:opacity-100"></div>
 
         <div class="
         relative w-full h-full rounded-[6px] overflow-hidden transition-all duration-200

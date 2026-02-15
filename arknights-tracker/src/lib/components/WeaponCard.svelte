@@ -52,7 +52,7 @@
             ></div>
 
             <div
-                class="absolute inset-0 bottom-[6px] p-1.5 flex items-center justify-center z-0"
+                class="absolute inset-0 bottom-[6px] flex items-center justify-center z-0"
             >
                 <Images
                     id={weapon.id}

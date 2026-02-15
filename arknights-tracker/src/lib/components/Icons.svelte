@@ -2252,5 +2252,18 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M93.4148 24.3793L75.7642 59.5256L110.608 59.6671L93.4148 24.3793Z" fill="white" stroke="#FBFFFB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M90.2289 71H153L105.96 106.114L52.7512 144L65 99L29 71H90.2289Z" fill="#FBFFFB" stroke="white" stroke-width="7" stroke-linejoin="round"/>
 </svg>
+{:else if name == "protoPass"}
+<svg width="16" height="12" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.39648 12.75L1.03516 0H7.39355V2.5H5.36328L8.39453 7.75L11.4258 2.5H9.39355V0H15.7578L8.39648 12.75Z" fill="currentColor"/>
+<path d="M0 8.75H4.82932L6 10.7462L0.965863 10.75L0 8.75Z" fill="currentColor"/>
+<path d="M16.8945 8.75H12.0652L10.8945 10.7462H15.8945L16.8945 8.75Z" fill="currentColor"/>
+</svg>
+
+{:else if name == "mail"}
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5H22V19H2V5Z" stroke="currentColor" stroke-width="2"/>
+<path d="M2 6L12 12L22 6" stroke="currentColor" stroke-width="2"/>
+</svg>
+
 
 {/if}

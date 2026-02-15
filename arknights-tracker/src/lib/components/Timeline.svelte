@@ -154,11 +154,11 @@
     }
 
     const DAY_WIDTH = 35;
-    const ROW_HEIGHT = 50;
-    const GAP_HEIGHT = 8;
+    const ROW_HEIGHT = 44;
+    const GAP_HEIGHT = 7;
     const HEADER_HEIGHT_PX = 80;
     const EVENT_TOP_OFFSET = 20;
-    const TIMELINE_HEIGHT = "70vh";
+    const TIMELINE_HEIGHT = "82vh";
 
     let now = new Date();
     let timerInterval;
@@ -324,9 +324,20 @@
 
     function getEventBadge(event) {
         const origType = (event.originalType || "").toLowerCase();
-        if (event.type === "web") {
-            return { icon: "link", label: "Web", bg: "bg-black/20" };
+
+        const glassStyle = "bg-black/30 backdrop-blur-md border border-white/10 shadow-sm";
+
+        if (event.type === "mailEvent") {
+            return { icon: "mail", label: "Mail Event", bg: glassStyle };
         }
+        if (event.type === "protoPass") {
+            return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
+        }
+
+        if (event.type === "web") {
+            return { icon: "link", label: "Web", bg: glassStyle };
+        }
+        
         if (
             event.type === "banner" ||
             event.type === "standard" ||
@@ -337,19 +348,20 @@
                 return {
                     icon: "atkEvent",
                     label: "Arsenal Issue",
-                    bg: "bg-purple-900/40",
+                    bg: glassStyle,
                 };
             }
             return {
                 icon: "headhunting",
                 label: "Headhunting",
-                bg: "bg-blue-900/40",
+                bg: glassStyle,
             };
         }
+        
         return {
             icon: "event",
             label: "Limited Event",
-            bg: "bg-orange-600/60",
+            bg: glassStyle,
         };
     }
 </script>

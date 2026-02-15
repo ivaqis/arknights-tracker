@@ -485,7 +485,7 @@
                                     operator={{ ...resolved, rarity: 6 }}
                                     variant="small"
                                     hideName={true}
-                                    className="w-[70px] h-[70px] shadow-sm border border-gray-100 dark:border-[#444444]"
+                                    className="w-[70px] h-[70px] shadow-sm"
                                 />
                             {/if}
                         </div>
