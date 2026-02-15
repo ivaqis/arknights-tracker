@@ -172,8 +172,8 @@ export const rawEvents = [
   {
     id: "ev12-v1.0",
     title: "events.stepsToSweetSuccess",
-    startTime: "2026-02-15 12:00:00",
-    endTime: "2026-03-04 04:00:00",
+    startTime: "2026-02-16 12:00:00",
+    endTime: "2026-03-07 11:59:59",
     gameversion: "global",
     timezone: "UTC+8",
     icon: "ev12-v1.0.jpg",
@@ -186,15 +186,15 @@ export const rawEvents = [
   {
     id: "ev13-v1.0",
     title: "events.springNoteWarmlyCrafted",
-    startTime: "2026-02-16 12:00:00",
-    endTime: "2026-03-07 11:59:59",
+    startTime: "2026-02-15 12:00:00",
+    endTime: "2026-03-04 04:00:00",
     gameversion: "global",
     timezone: "UTC+8",
     icon: "ev13-v1.0.jpg",
     url: "https://x.com/AKEndfield/status/2022890213773840444?s=20",
     color: "#A91717",
     layer: 11,
-    type: "inGame",
+    type: "web",
     iconPosition: 52
   }
 ];
