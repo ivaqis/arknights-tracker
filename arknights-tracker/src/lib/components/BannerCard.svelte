@@ -288,7 +288,7 @@
     </Button>
   </div>
 
-  <div class="space-y-3 mb-2 px-1">
+  <div class="space-y-2.5 mb-2 px-1">
     <div class="flex justify-between items-center">
       <span class="text-gray-600 dark:text-[#E4E4E4]"
         >{$t("page.banner.total")}</span
@@ -379,7 +379,7 @@
     </div>
   </div>
 
-  <div class="mb-3 mt-1 px-1">
+  <div class="mb-2 mt-1 px-1">
     <h4 class="font-bold text-sm mb-3 text-[#21272C] dark:text-[#FDFDFD]">
       {$t("page.banner.stats")}
     </h4>

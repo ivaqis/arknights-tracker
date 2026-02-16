@@ -1,0 +1,127 @@
+{
+  "skills": {
+    "basicAttack": {
+      "name": "Protocole α : Brèche",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+      }
+    },
+    "battleSkill": {
+      "name": "Protocole ω : Frappe",
+      "description": "Lâche une décharge d'énergie électromagnétique qui inflige des <@ba.pulse>DÉG électriques</> ainsi qu'une <#ba.pulseinflict>altération électrique</> aux ennemis dans une petite zone.",
+      "battleSkill": {
+        "spCost": "Coût de l'activation",
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre"
+      }
+    },
+    "comboSkill": {
+      "name": "Protocole instantané : Chaîne",
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi.\nRelâche l'énergie électromagnétique stockée pour bombarder la cible, lui infligeant des <@ba.pulse>DÉG électriques</> et l'<#ba.conduct>électrifiant</> temporairement.",
+      "comboSkill": {
+        "cooldown": "Refroidissement",
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "electrifyDuration": "Durée d'Électrification (s)"
+      }
+    },
+    "ultimate": {
+      "name": "Protocole ε : 70,41 K",
+      "description": "Téléporte via Protocole un énorme morceau de débris orbital à l'impact dévastateur sur le champ de bataille. Tous les ennemis dans la zone d'effet subissent de lourds <@ba.pulse>DÉG électriques</>.",
+      "ultimate": {
+        "ultimateEnergyCost": "Coût en énergie d'ultime",
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre"
+      }
+    },
+    "indicator": {
+      "name": "Galvanisé",
+      "levels": [
+        "Intelligence de l'opérateur +10.",
+        "Intelligence de l'opérateur +15.",
+        "Intelligence de l'opérateur +15.",
+        "Intelligence de l'opérateur +20."
+      ]
+    },
+    "talent1": {
+      "name": "Protocole d'oblitération",
+      "levels": [
+        "Inflige <@ba.vup>+{dmg:0%}</> de DÉG aux ennemis <@ba.poise>déséquilibrés</>.",
+        "Inflige <@ba.vup>+{dmg:0%}</> de DÉG aux ennemis <@ba.poise>déséquilibrés</>."
+      ]
+    },
+    "talent2": {
+      "name": "Protocole de cycle",
+      "levels": [
+        "Renforce la compétence de combo <@ba.key>Protocole instantané : Chaîne</> : la durée du malus de <#ba.spelldmg>DÉG des Arts subis</> appliqué à l'ennemi par l'<#ba.conduct>Électrification</> de la compétence passe à <@ba.vup>{extra_scaling}</> fois sa valeur d'origine."
+      ]
+    },
+    "baseSkill1": {
+      "name": "Supervision",
+      "levels": [
+        "En l'affectant au Nexus de contrôle, augmente l'amélioration d'humeur de tous les opérateurs de 8 %.",
+        "En l'affectant au Nexus de contrôle, augmente l'amélioration d'humeur de tous les opérateurs de 12 %."
+      ]
+    },
+    "baseSkill2": {
+      "name": "Redistribution de Protocole",
+      "levels": [
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'arme de +20 %.",
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'arme de +30 %."
+      ]
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "name": "Gestion de crise",
+      "description": "Renforce la compétence de combo <@ba.key>Protocole instantané : Chaîne</> : durée d'<#ba.conduct>Électrification</> <@ba.vup>+{duration-1:0%}</>."
+    },
+    "potential2": {
+      "name": "Tactique de négociation",
+      "description": "Renforce l'ultime <@ba.key>Protocole ε : 70,41 K</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>."
+    },
+    "potential3": {
+      "name": "Devoir de supervision",
+      "description": "Lorsque Perlica applique <#ba.conduct>Électrification</> à l'ennemi, elle obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {atk_duration:0} s. Effet cumulable {max_stack:0} fois."
+    },
+    "potential4": {
+      "name": "Accompagnement constant",
+      "description": "Renforce la compétence de combo <@ba.key>Protocole instantané : Chaîne</> : la durée du malus de <#ba.spelldmg>DÉG des Arts subis</> appliqué à l'ennemi par l'<#ba.conduct>Électrification</> de la compétence passe à <@ba.vup>{extra_scaling}</> fois sa valeur d'origine."
+    },
+    "potential5": {
+      "name": "Rentrée contrôlée",
+      "description": "Renforce l'ultime <@ba.key>Protocole ε : 70,41 K</> : taux de coups critiques <@ba.vup>+{crit:0%}</>."
+    }
+  },
+  "files": {
+    "main": "<@profile.key>NOM DE CODE : Perlica \nSEXE : Féminin \nAUTHENTIFICATION : Industries Endfield \nDATE DE NAISSANCE : 16 mars \nRACE : Liberi \n[STATUT D'INFECTION À L'ORIPATHIE] \nNégative, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : Standard \nCAPACITÉS AU COMBAT : Normales \nSENS TACTIQUE : Exceptionnel\nASSIMILATION DES ARTS DE L'ORIGINIUM : Excellente</>",
+    "humanResources": "<@profile.key>Perlica, la superviseuse des Industries Endfield, en est aussi une porte-parole officielle. Ses missions principales consistent notamment à gérer et faire progresser le développement et l'application du Protocole d'originium, tout en supervisant les opérations du Dijiang. \n\nÇa fait longtemps qu'on ne m'a pas demandé si elle mérite vraiment le titre de superviseuse. Ses résultats incontestables ont fait taire tous les doutes, prouvant la véracité des paroles de M3 : « Ce poste existe car Perlica est là, et non l'inverse. » J'ai encore du mal à croire que quelqu'un de si jeune soit capable de porter tout le poids des Industries Endfield sur ses épaules. Pourtant, sous sa direction, l'avenir dont Endfield rêve est chaque jour plus proche. Elle n'est toutefois pas parfaite. Ainsi, étant donné son rôle clé dans la gestion de l'unité d'intervention, elle ne devrait pas constamment risquer sa vie sur le front avec les autres. Elle m'ignore quand je lui en parle, mais je continue à insister pour qu'elle réévalue les risques. \n— Martin Marvin Malen, assistant, division des RH, Industries Endfield</>",
+    "file1": "<@profile.key>Comme de nombreux opérateurs des Industries Endfield, la superviseuse Perlica a survécu, enfant, à une catastrophe, avant de trouver refuge auprès de l'Endministrator et des Industries Endfield. En grandissant, elle a fait preuve d'une incroyable curiosité envers le Techno-Protocole, s'impliquant de plus en plus dans les opérations principales des Industries Endfield sur Talos-II. En moins de deux ans, elle visité des villes et villages sur toute la planète, et développé une compréhension des menaces bien au-delà du commun des mortels. Sa passion pour le Techno-Protocole l'a poussée à rejoindre le centre de R&D, où elle a vite joué un rôle clé dans les remarquables progrès accomplis dans le cadre du développement et de l'application du Techno-Protocole chez les Industries Endfield. C'est donc tout naturellement qu'elle a été nommée « superviseuse », prenant ainsi le commandement du Dijiang, une structure colossale en orbite artificielle au-dessus de Talos-II. \n\nDOCUMENT : un journal qui nécessite un certain niveau d'autorité. \nContrairement à ce que le dossier officiel peut laisser penser, le passé de Perlica n'est pas tout rose. \nIl y a dix ans, vous l'avez sauvée alors que vous vous prépariez pour une expédition et vous lui avez offert votre soutien à un moment où elle était perdue et terrifiée. Pourtant, jamais elle n'aurait pu anticiper que cette même croisade bouleverserait à nouveau le cours de sa vie... en vous arrachant à elle. Durant les années suivantes, la plupart des enfants que vous aviez sauvés sont passés à autre chose, continuant leur vie. C'est le cas de Lycia, qui était pour elle comme une sœur, mais qui a préféré quitter le Dijiang pour vivre sa vie. \nAlors que ses amis partaient les uns après les autres, le poids des responsabilités se faisait plus lourd sur ses épaules, tandis que le développement du Techno-Protocole ne faisait que stagner... \nCela ne l'a pas empêchée de poursuivre sur ce chemin semé d'embûches et de nous convaincre à force d'efforts. Nombreux sont ceux qui l'ont aidée, mais personne ne comprend mieux que moi toute la peine qu'elle s'est donnée et les difficultés qu'elle a surmontées. \nAllez donc lui parler. Elle attend depuis trop longtemps.\n—— Mémo vocal de M3</>",
+    "file2": "<@profile.key>Les autres opérateurs du Dijiang racontent souvent que la superviseuse Perlica semble dotée d'un genre d'aura magique. Tant qu'elle est là, tous les problèmes semblent trouver leur solution. \nC'est pour cette raison que, lorsqu'on m'a dit que j'aurais le privilège d'étudier à ses côtés, j'étais si enthousiaste que je n'en ai plus trouvé le sommeil. Mais la réalité était bien différente. Je n'ai jamais réussi à suivre le rythme, à assumer la charge de travail ou à répondre à ses exigences, au point que j'ai envisagé d'abandonner... sans jamais parvenir à me convaincre de laisser passer une telle chance. \nL'Endministrator devrait bientôt se réveiller et tout le monde est sur les nerfs, même la superviseuse Perlica. Malgré son emploi du temps plein à craquer, elle trouve tout de même le temps de se réunir avec les responsables de chaque service pour s'assurer que tout se passe comme prévu. \nPourtant, chacune de ces réunions semble la mettre mal à l'aise. Existerait-il des choses que même elle ne peut gérer ? Je me sens coupable de ne pas pouvoir l'aider plus. \nElle a remarqué mon air perdu et a tenté de me réconforter, allant jusqu'à partager avec moi des boulettes d'ailette étrangement épicées. Leur goût était si marqué que j'en ai eu les larmes aux yeux. La superviseuse Perlica, elle, me regardait en affichant un sourire satisfait... Mes larmes ont emporté avec elles les inquiétudes du moment. \nEn cet instant, j'ai compris que la superviseuse Perlica... possédait bien cette aura magique. \n— Issu du journal de travail d'une apprentie opératrice qui demande à continuer son apprentissage sous les ordres de la superviseuse Perlica. \n\n[Entrée qu'on n'a pas réussi à supprimer] \n« Elle est venue te voir aussi, Krad, non ? Pour te demander quoi faire pour bien s'entendre avec l'Endministrator qu'elle aime tant ? »\n« Je n'en attendais pas moins des renseignements. Tu n'es même pas à bord du Dijiang, et pourtant t'en sais des choses. Quand elle s'est précipitée pour venir me chercher dans la salle d'entraînement, j'ai cru qu'il s'était passé quelque chose. Mais elle m'a posé cette question avec le plus grand sérieux. Tu parles d'une surprise. » \n« J'ai tellement l'habitude de la voir comme la superviseuse que j'en ai oublié qu'elle n'est pas invincible. J'aime sa maladresse quand elle m'envoie des messages. C'est aussi adorable qu'à l'époque où on était gamins. » \n« Alors, qu'est-ce que tu lui as conseillé ? » \n« Comme toi : rien du tout. Les autres vétérans ont fait pareil. On attend de voir comment ça va tourner. » \n« Mais je parie qu'elle saura parfaitement le dissimuler quand elle reverra l'Endministrator. » \n« Ne t'en fais pas, M3 sera forcément avec elle. Tu crois vraiment qu'on n'aura pas droit à tous les détails ? » \n« T'as raison. Et n'oublie pas qu'on lui a promis que ça resterait confidentiel. Et surtout pas un mot à l'Endministrator. » \n« Détends-toi, Krad. Tu sais bien que je ne suis pas du genre à cracher le morceau. Question de déontologie, tout ça. Enfin, c'est presque dommage de louper cette occasion de voir Perlica bouder, non ? »</>",
+    "file3": "<@profile.key>Qu'importe l'endroit où on la croise à bord du Dijiang, la superviseuse Perlica nous salue toujours calmement avant de se remettre au travail sans attendre. Certains racontent en plaisantant que son apparence de Liberi cache un robot qui exécute à la perfection les directives d'une intelligence supérieure. Ce genre de rumeurs se propage parmi les jeunes opérateurs, mais la superviseuse s'en moque. Il lui arrive même de jouer le jeu pour détendre l'atmosphère et apaiser les tensions entre les membres de l'équipage. \nSi j'en crois le témoignage non officiel de Martin Marvin Malen, après avoir accepté officiellement le poste de superviseuse, Perlica s'est efforcée d'adopter le comportement le plus adapté à ses responsabilités. Mais les émotions et la pression qui s'accumulent nécessitent une échappatoire. Même avant le retour de l'Endministrator, Perlica avait trouvé comment se détendre. « As-tu déjà entendu parler du 'Concours de Création de Carters' ? On raconte qu'à l'origine, c'était une compétition entre un Vampire de génie et un mystérieux mécanicien. Les vétérans du centre de R&D ont importé cet événement séculaire terran à Endfield. Aujourd'hui, les idées folles auxquelles le CCC donne naissance sont à la fois une source d'amusement infinie pour les opérateurs mais aussi d'innovation technologique. Pourtant, rares sont ceux qui se doutent que la superviseuse Perlica est à l'origine de cet événement. Après tout, elle n'y a jamais participé officiellement et garde généralement son avis pour elle. Si elle a rendu son lustre à cet événement, c'est avant tout pour créer une plateforme où elle aurait l'occasion de soulager sa nervosité et de tester les idées qui lui passent par la tête. » \n\nMême si je n'ai pas le droit de me présenter cette année, je ne vais pas pour autant disparaître complètement de la compétition. Après tout, c'est moi qui ai nommé le carter primé « Turboum » ! Quand son créateur m'a soumis l'idée « d'insérer une arme à feu à gravité dans un moteur à accélération », j'ai tout de suite vu son potentiel. On a dû démonter un certain nombre d'armes à feu pour lui donner vie... Hm ? O-Oh non, aucune ne provenait du stock de mon père ! \n— Le champion en titre des concours de création de carter, un prodige en conception d'arme à feu. \n\nCe véhicule vient de remporter la première place dans la grande course souterraine de Néo Tsukushi ! Mais que fait-il sur le Dijiang ?! \n— Un fan de courses. \n\n« Turboum » ? L'arme que possède « Ilyich le torve » ? Perlica, de quel service vient ce petit gars ? \n— Chen Qianyu </>",
+    "file4": "<@profile.key>M3, classe ce document en annexe de la « Directive Zéro », sous scellés. Il ne faut l'appliquer en aucune circonstance. \nJe nomme par la présente Perlica comme « signataire de la Directive Zéro ». \nToutefois, son activation sera entièrement sujette à son consentement personnel. \nSi elle décide au contraire de rester chez les Industries Endfield, tu la conduiras au fondateur en tant qu'exécutrice. \n\nDOCUMENT : un journal nécessitant un certain niveau d'autorité \n« As-tu décidé ? » \n« Ma présence aux Industries Endfield n'a jamais été remise en question, M3. » \n« Très bien. Viens avec moi. Le fondateur veut te voir. » \n... \n« Nous nous rencontrons enfin, superviseuse Perlica. » \n« Su... superviseuse ? Mais, cette apparence... » \n« Nous n'avons plus beaucoup de temps. »</>"
+  },
+  "arts": {
+    "potential1": {
+      "name": "Guide",
+      "author": "STAR影法师",
+      "description": "Lorsque les débris des étoiles bloquent la lumière, elle éclairera calmement votre chemin. Regardez un peu comme elle brille."
+    },
+    "potential3": {
+      "name": "Protocole",
+      "author": "Director Kuzuri",
+      "description": "Elle a enfin pu poser les yeux sur l'objet de son affection et ne souhaite plus rester les bras ballants. Le Protocole n'a jamais eu vocation à devenir des chaînes froides et vides d'émotion."
+    },
+    "potential6": {
+      "name": "L'avenir",
+      "author": "IRple2",
+      "description": "Elle a tissé une toile d'infinies possibilités, détaillées sur les plans. Elles symbolisent le futur qu'elle porte toujours en elle."
+    }
+  }
+}

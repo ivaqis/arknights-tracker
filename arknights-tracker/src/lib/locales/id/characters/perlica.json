@@ -1,0 +1,127 @@
+{
+  "skills": {
+    "basicAttack": {
+      "name": "Protocol α: Breach",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
+      "basicAttack": {
+        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+        "diveAtkMultiplier": "Pengganda ATK Menukik"
+      }
+    },
+    "battleSkill": {
+      "name": "Protocol ω: Strike",
+      "description": "Melepaskan kilatan energi elektromagnetis yang akan menimbulkan <@ba.pulse>Electric DMG</> dan <#ba.pulseinflict>Electric Infliction</> kepada musuh dalam area kecil.",
+      "battleSkill": {
+        "spCost": "Biaya Aktivasi",
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger"
+      }
+    },
+    "comboSkill": {
+      "name": "Instant Protocol: Chain",
+      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh mana pun. \nMelepaskan energi elektromagnetis yang tersimpan untuk membombardir target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa untuk sementara.",
+      "comboSkill": {
+        "cooldown": "Cooldown",
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "electrifyDuration": "Durasi Electrify (dtk)"
+      }
+    },
+    "ultimate": {
+      "name": "Protocol ε: 70.41K",
+      "description": "Melontarkan pecahan orbit sangat besar dengan daya hancur luar biasa melalui teleprotokol ke medan pertarungan. Semua musuh yang berada dalam area efek akan terkena <@ba.pulse>Electric DMG</> sangat besar.",
+      "ultimate": {
+        "ultimateEnergyCost": "Biaya Energi Ultimate",
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger"
+      }
+    },
+    "indicator": {
+      "name": "Forged",
+      "levels": [
+        "Intellect Operator +10.",
+        "Intellect Operator +15.",
+        "Intellect Operator +15.",
+        "Intellect Operator +20."
+      ]
+    },
+    "talent1": {
+      "name": "Obliteration Protocol",
+      "levels": [
+        "DMG Dealt <@ba.vup>+{dmg:0%}</> kepada musuh yang terkena <@ba.poise>Staggered</>.",
+        "DMG Dealt <@ba.vup>+{dmg:0%}</> kepada musuh yang terkena <@ba.poise>Staggered</>."
+      ]
+    },
+    "talent2": {
+      "name": "Cycle Protocol",
+      "levels": [
+        "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Durasi debuff <#ba.spelldmg>Arts DMG Taken</> pada musuh yang diakibatkan oleh <#ba.conduct>Electrification</> dari skill akan meningkat menjadi <@ba.vup>{extra_scaling}</> kali nilai aslinya."
+      ]
+    },
+    "baseSkill1": {
+      "name": "Supervisor",
+      "levels": [
+        "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +8%",
+        "Saat ditugaskan ke Nexus Kontrol, Regen Suasana Hati semua operator akan meningkat sebesar +12%"
+      ]
+    },
+    "baseSkill2": {
+      "name": "Protocol Redistribution",
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP Senjata akan meningkat sebesar +30%"
+      ]
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "name": "Crisis Handling",
+      "description": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Durasi <#ba.conduct>Electrification</> <@ba.vup>+{duration-1:0%}</>."
+    },
+    "potential2": {
+      "name": "Negotiation Tactics",
+      "description": "Ultimate <@ba.key>Protocol ε: 70.41K</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>."
+    },
+    "potential3": {
+      "name": "Supervisory Duties",
+      "description": "Setelah Perlica mengakibatkan <#ba.conduct>Electrification</> kepada musuh, dia akan mendapatkan ATK <@ba.vup>+{atk_up:0%}</> selama {atk_duration:0} dtk. Efek ini bisa mencapai {max_stack:0} tumpuk."
+    },
+    "potential4": {
+      "name": "Constant Guidance",
+      "description": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Durasi debuff <#ba.spelldmg>Arts DMG Taken</> pada musuh yang diakibatkan oleh <#ba.conduct>Electrification</> dari skill akan meningkat menjadi <@ba.vup>{extra_scaling}</> kali nilai aslinya."
+    },
+    "potential5": {
+      "name": "Reentry Control",
+      "description": "Ultimate <@ba.key>Protocol ε: 70.41K</> meningkat: Critical Rate <@ba.vup>+{crit:0%}</>."
+    }
+  },
+  "files": {
+    "main": "<@profile.key>NAMA SANDI: Perlica \nGENDER: Perempuan \nAUTENTIKASI: Endfield Industries \nTANGGAL LAHIR: 16 Maret \nRAS: Liberi \n[STATUS INFEKSI ORIPATI] \nNegatif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Standar \nKEMAMPUAN TEMPUR: Standar \nKECERDASAN TAKTIS: Luar Biasa\nASIMILASI ORIGINIUM ARTS: Sangat Baik</>",
+    "humanResources": "<@profile.key>Perlica, Pengawas Endfield Industries, adalah salah satu juru bicara resmi Endfield. Dia terutama bertanggung jawab mengawasi dan mendorong pengembangan serta penerapan protokol teknologi Protokol-Originium, sekaligus mengelola aktivitas di Dijiang. \n\nSudah lama sekali aku tak dengar ada orang yang mempersoalkan apakah dia pantas menyandang gelar Pengawas. Dia berhasil menepis semua keraguan dengan hasil yang nyata dan membuktikan kebenaran kata-kata M3: “Posisi ini ada berkat Perlica. Bukan sebaliknya.” Aku masih tak percaya orang semuda itu mampu menangani pengelolaan seluruh Endfield Industries. Tapi, berkat kepemimpinannya, masa depan yang ingin dicapai Endfield makin jelas. Walau begitu, bukan berarti dia sempurna dalam menangani semuanya. Misalnya, sebagai tokoh penting dalam pengelolaan Tim Krisis, tak semestinya dia selalu mempertaruhkan nyawanya di garis depan bersama anggota. Walau dia selalu menolak permintaanku, aku akan tetap mendorongnya untuk mempertimbangkan kembali risikonya.” \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries</>",
+    "file1": "<@profile.key>Seperti kebanyakan operator di Endfield Industries, Pengawas Perlica berhasil lolos dari bencana saat masih kecil, lalu berlindung di bawah naungan Endministrator serta Endfield Industries bersama dengan anak-anak lain yang kehilangan keluarga mereka. Selama masa pendidikan dan perkembangannya, dia menunjukkan minat yang luar biasa terhadap Tekno-Protokol, dan lambat laun terlibat dalam operasi dasar Endfield Industries di Talos-II. Dalam kurun waktu kurang dari dua tahun, sepak terjangnya telah menjangkau kota-kota besar dan kecil di seluruh penjuru planet ini, dan wawasannya tentang ancaman yang kita hadapi ternyata jauh melampaui pemahaman orang biasa. Ketertarikannya pada Tekno-Protokol membuatnya bergabung ke Pusat Litbang. Di sana, dia kemudian memegang peran penting dalam menghasilkan terobosan besar dalam pengembangan dan penerapan Tekno-Protokol bagi Endfield Industries. Wajar saja kalau dia kemudian secara resmi ditunjuk sebagai “Pengawas” yang memimpin Dijiang—struktur raksasa yang melayang di orbit stasioner buatan di atas Talos-II. \n\nDOKUMEN: Log yang diakses dengan level otoritas tertentu \nTentu saja, masa lalu Perlica tak selalu semujur yang diberitakan media massa. \nLebih dari satu dekade yang lalu, kau menyelamatkannya selagi menyiapkan ekspedisi, dan memberikan dukungan yang tak pernah padam saat dia masih kebingungan dan ketakutan. Tapi, dia tak pernah menyangka bahwa perang suci yang sama akan mengguncang hidupnya sekali lagi ... dia kehilangan dirimu. Bertahun-tahun kemudian, sebagian besar anak yang kauselamatkan bersamaan dengannya pun melanjutkan hidup baru. Ini termasuk Lycia, yang sudah dianggapnya sebagai saudari, yang akhirnya meninggalkan Dijiang dan memilih menempuh jalan hidupnya sendiri. \nSeiring dengan kepergian teman-temannya, beban tanggung jawab di pundaknya pun makin berat, dan pengembangan Tekno-Protokol berulang kali terkendala .... \nTapi, dengan gigih, dia tetap menempuh jalan yang paling sulit ini, dan berhasil meyakinkan kami melalui tindakannya. Memang benar, dia mendapatkan dukungan dari banyak orang di sepanjang perjalanannya. Tapi, selain aku, tak ada orang lain yang lebih memahami upaya yang sudah diberikannya dan kesulitan yang telah dialaminya. \nSana, mengobrollah dengannya. Dia sudah menunggu terlalu lama.\n ——Memo Audio M3</>",
+    "file2": "<@profile.key>Operator lain di Dijiang sering bilang bahwa Pengawas Perlica sepertinya punya semacam kekuatan magis. Asalkan ada dia, masalah apa pun pasti ada solusinya. \nNah, jadi saat tahu bahwa aku bakal punya kesempatan untuk belajar dengannya, aku sangat senang sampai-sampai tak bisa tidur. Tapi, kenyataan memang sangat menyakitkan. Karena tak mampu mengikuti beban kerjanya yang padat dan standarnya yang tinggi, aku sempat berpikir untuk mundur ... tapi aku tak rela kalau harus kehilangan kesempatan yang sangat berharga ini. \nMenjelang kebangkitan Endministrator yang tinggal hitungan hari, semua orang merasa gelisah—bahkan Pengawas Perlica sekalipun. Walau jadwalnya sangat padat, dia tetap bisa mengatur pertemuan dengan para anggota senior dari setiap departemen untuk memastikan semuanya berjalan lancar. \nNah, tapi setelah setiap pertemuan tertutup yang dadakan itu, dia jadi selalu kelihatan gelisah. Jangan-jangan ada hal yang bahkan tak bisa ditangani olehnya sekalipun? Mau tak mau aku jadi menyalahkan diriku sendiri karena tak bisa berbuat lebih banyak untuk membantu. \nDia menyadari kesedihan yang kurasakan dan berinisiatif menghiburku, bahkan berbagi bakso ikan yang rasanya aneh yang belum pernah kulihat sebelumnya. Aku sampai meneteskan air mata karena cita rasanya sangat kuat, tapi Pengawas Perlica hanya memandangku dengan senyum puas .... Kekhawatiranku pada hari itu lenyap bersama air mataku. \nSaat itu, tiba-tiba aku sadar bahwa Pengawas Perlica ... memang benar-benar punya kekuatan magis. \n—Dari log kerja operator magang, yang masih mengajukan permohonan untuk melanjutkan magang di bawah pimpinan Pengawas Perlica. \n\n[Catatan yang Belum Berhasil Dihapus] \n“Dia menemuimu juga, ‘kan, Krad? Bertanya bagaimana cara agar bisa lebih akrab dengan Endministrator yang sangat disayanginya itu, ‘kan?” \n“Intel ini tak mengagetkan. Kau bahkan tak ada di Dijiang, tapi tetap bisa tahu informasi seperti ini. Tadinya kupikir ada sesuatu yang tak beres saat dia menghambur ke ruang latihan untuk menemuiku. Tapi, dia menanyakan hal itu dengan sangat serius. Aku benar-benar terkejut.” \n“Karena sudah sangat terbiasa melihatnya sebagai Pengawas, aku sampai lupa bahwa dia hanyalah gadis biasa. Tapi, aku suka nada canggungnya saat mengirimkan pesan kepadaku. Dia masih sama menggemaskannya seperti saat kami masih kecil.” \n“Lalu, saran apa yang kauberikan kepadanya?” \n“Sama sepertimu, aku tak bilang apa-apa. Begitu juga dengan yang lainnya. Kita lihat saja nanti jadinya bagaimana.” \n“Tapi, dia pasti akan menutupinya rapat-rapat saat melihat Endministrator lagi.” \n“Tenang saja, M3 pasti akan menemaninya. Kau yakin kita tak bakal tahu setiap detail terakhir dari kejadian itu?” \n“Benar. Dan ingat, kita sudah janji kepadanya bahwa kita akan merahasiakannya. Terutama dari Endministrator.” \n“Tenanglah, Krad. Kau tahulah bahwa aku bakal tutup mulut. Bagaimanapun juga, ada etika profesional. Tapi sejujurnya, sayang sekali kita tak bisa lihat Perlica kecil cemberut gara-gara hal ini, ‘kan?”</>",
+    "file3": "<@profile.key>Di mana pun kita bertemu dengan Pengawas Perlica di Dijiang, dia pasti akan selalu menyapa kita dengan ramah, lalu melanjutkan pekerjaannya. Beberapa orang bercanda bahwa di balik penampilan Liberi-nya, sebenarnya dia adalah sebuah mesin, yang dengan sempurna menjalankan perintah dari suatu kecerdasan yang lebih tinggi. Walau rumor semacam ini menyebar luas di kalangan operator baru, Pengawas sama sekali tak mempermasalahkannya. Malahan, dia kadang-kadang sengaja ikut bercanda untuk mencairkan suasana dan mengurangi ketegangan di antara para kru. \nMenurut catatan tak resmi dari Martin Marvin Malen, setelah resmi menjabat sebagai Pengawas, Perlica berusaha keras untuk bersikap profesional dalam menjalankan tugasnya. Tapi, emosi dan stres yang menumpuk selalu butuh pelampiasan. Bahkan sebelum kembalinya Endministrator, Perlica sudah menemukan cara untuk benar-benar bersantai. “Pernah dengar soal ‘Kontes Kreasi Bak Mesin’? Kabarnya, kontes itu awalnya dimulai sebagai adu kreasi antara genius Vampir dan mekanik misterius. Para senior di Pusat Litbang memperkenalkan ajang Terra kuno ini ke Endfield. Sekarang, berbagai ide liar yang muncul dari KKBM tak hanya mengundang gelak tawa para operator, tapi juga turut mendorong inovasi teknologi kami. Tapi, hanya segelintir orang yang tahu bahwa sosok yang sebenarnya berada di balik ajang di Endfield ini adalah Pengawas Perlica. Lagi pula, dia tak pernah berpartisipasi secara resmi, dan jarang mengemukakan pendapatnya. Sebenarnya, alasannya menghidupkan kembali ajang ini hanyalah untuk menyediakan sarana untuk melampiaskan kepenatannya dan menguji ide-ide aneh di kepalanya.” \n\nNah, walau dilarang bertanding tahun ini, aku tak bakal bilang bahwa aku benar-benar absen. Lagi pula, akulah yang memberi nama “Deru Meraung”, karya yang jadi pemenang penghargaan itu! Saat penciptanya menghampiriku dengan ide “memasukkan senjata api gravitasi ke dalam mesin akselerasi”, aku langsung tahu bahwa benda itu punya potensi. Akhirnya, kami merombak beberapa senjata api yang bagus untuk membuatnya .... Hah? T-tentu saja kami tak menyentuh senjata api berharga milik ayahku! \n—Juara bertahan dari beberapa Kontes Kreasi Bak Mesin, ahli dalam rekayasa senjata api. \n\n Kendaraan ini baru saja meraih juara pertama di Reli Panas Bawah Tanah Neo Tsukushi! Apa sih yang dilakukannya di Dijiang?! \n—Dari penggemar balap. \n\n“Deru Meraung”? Milik “Ilyich, si Tersangka”? Perlica, pendatang baru ini dari departemen apa? \n— Chen Qianyu </>",
+    "file4": "<@profile.key>M3, simpan dokumen ini sebagai lampiran pada “Arahan Zeroth” dengan status rahasia. Dokumen ini tidak boleh digunakan dalam kondisi apa pun. \nDengan ini aku menunjuk Perlica sebagai “Penanda Tangan Arahan Zeroth”. \nTapi, aktivasinya harus disetujui oleh dirinya sendiri. \nJika dia akhirnya memutuskan tetap menjadi anggota Endfield Industries, kau, sebagai pelaksana, harus mengantarnya menemui Pendiri. \n\nDOKUMEN: Log yang diakses dengan level otoritas tertentu \n“Sudah kauputuskan?” \n“Tetap bergabung dengan Endfield Industries tak perlu dipertanyakan lagi, M3.” \n“Baiklah. Ikut aku. Pendiri ingin bertemu denganmu.” \n...... \n“Akhirnya kita bertemu, Pengawas Perlica.” \n“Pe ... Pengawas? Sebentar, penampilanmu—” \n“Waktu kita hampir habis.”</>"
+  },
+  "arts": {
+    "potential1": {
+      "name": "Sang Pemandu",
+      "author": "STAR影法师",
+      "description": "Saat serpihan bintang menghalangi cahaya, dia akan tetap menuntun jalanmu dengan tenang. Lihat bagaimana dia bersinar."
+    },
+    "potential3": {
+      "name": "Protokol",
+      "author": "Director Kuzuri",
+      "description": "Setelah melihat sendiri apa yang dia rindukan, dia tak mau tinggal diam. Protokol seharusnya bukan belenggu dingin tanpa perasaan."
+    },
+    "potential6": {
+      "name": "Masa Depan",
+      "author": "IRple2",
+      "description": "Dia merangkai kemungkinan yang jumlahnya tak terhitung, yang lalu mengukirnya pada cetak biru. Itulah masa depan yang selalu ada dalam hatinya."
+    }
+  }
+}

@@ -624,7 +624,7 @@
                             class="relative block w-full h-full text-left focus:outline-none"
                         >
                             <div
-                                class="absolute inset-0 overflow-hidden shadow-sm group-hover:ring-1 ring-offset-3 ring-white/30 ring-offset-transparent transition-all
+                                class="absolute inset-0 overflow-hidden shadow-sm group-hover:ring-1 ring-offset-3 dark:ring-white/30 ring-gray-400 ring-offset-transparent transition-all
                 {event.connectLeft ? 'rounded-l-none border-l-0' : 'rounded-l'} 
                 {event.connectRight
                                     ? 'rounded-r-none border-r-0'

@@ -1,0 +1,127 @@
+{
+  "skills": {
+    "basicAttack": {
+      "name": "Giao Thức α: Phá Giáp",
+      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi ít Điểm KN.",
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
+        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
+        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
+        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
+        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+      }
+    },
+    "battleSkill": {
+      "name": "Giao Thức ω: Tấn Công",
+      "description": "Phóng một luồng năng lượng điện từ gây <@ba.pulse>ST Điện</> và <#ba.pulseinflict>Nhiễm Điện</> lên kẻ địch trong khu vực nhỏ.",
+      "battleSkill": {
+        "spCost": "Phí Kích Hoạt",
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp"
+      }
+    },
+    "comboSkill": {
+      "name": "Giao Thức Tức Thời: Chuỗi",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi đặc vụ được điều khiển tung <#ba.lastcombo>Kết Liễu</> vào bất kỳ kẻ địch nào. \nGiải phóng năng lượng điện từ tích trữ oanh tạc mục tiêu, gây <@ba.pulse>ST Điện</> và cưỡng bức gây hiệu ứng <#ba.conduct>Điện Hóa</> tạm thời.",
+      "comboSkill": {
+        "cooldown": "Thời gian hồi chiêu",
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "electrifyDuration": "Thời Gian Hiệu Lực Điện Hóa (giây)"
+      }
+    },
+    "ultimate": {
+      "name": "Giao Thức ε: 70.41K",
+      "description": "Giao thức dịch chuyển các mảnh vỡ vệ tinh từ quỹ đạo xuống chiến trường với ảnh hưởng hủy diệt. Toàn bộ kẻ địch trúng phải chịu <@ba.pulse>ST Điện</> cực đại.",
+      "ultimate": {
+        "ultimateEnergyCost": "Phí Năng Lượng Tuyệt Kỹ",
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp"
+      }
+    },
+    "indicator": {
+      "name": "Rèn Luyện",
+      "levels": [
+        "Trí Tuệ Đặc Vụ +10.",
+        "Trí Tuệ Đặc Vụ +15.",
+        "Trí Tuệ Đặc Vụ +15.",
+        "Trí Tuệ Đặc Vụ +20."
+      ]
+    },
+    "talent1": {
+      "name": "Giao Thức Hủy Diệt",
+      "levels": [
+        "ST Gây Ra <@ba.vup>+{dmg:0%}</> với kẻ địch bị <@ba.poise>Suy Sụp</>.",
+        "ST Gây Ra <@ba.vup>+{dmg:0%}</> với kẻ địch bị <@ba.poise>Suy Sụp</>."
+      ]
+    },
+    "talent2": {
+      "name": "Giao Thức Chu Kỳ",
+      "levels": [
+        "KN Liên Hoàn <@ba.key>Giao Thức Tức Thời: Chuỗi</> được nâng cấp: Hiệu lực debuff <#ba.spelldmg>ST Thuật Pháp Phải Chịu</> trên kẻ địch do kỹ năng gây hiệu ứng <#ba.conduct>Điện Hóa</> tăng <@ba.vup>{extra_scaling}</> lần so với ban đầu."
+      ]
+    },
+    "baseSkill1": {
+      "name": "Giám Sát Viên",
+      "levels": [
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các đặc vụ thêm 8%",
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các đặc vụ thêm 12%"
+      ]
+    },
+    "baseSkill2": {
+      "name": "Phân Phối Lại Giao Thức",
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +20%",
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu EXP vũ khí +30%"
+      ]
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "name": "Xử Lý Nguy Cảnh",
+      "description": "KN liên hoàn <@ba.key>Giao Thức Tức Thời: Chuỗi</> được cải thiện: <#ba.conduct>Điện Hóa</> <@ba.vup>+{duration-1:0%}</>."
+    },
+    "potential2": {
+      "name": "Chiến Thuật Đàm Phán",
+      "description": "Tuyệt Kỹ <@ba.key>Giao Thức ε: 70.41K</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>."
+    },
+    "potential3": {
+      "name": "Nhiệm Vụ Giám Sát",
+      "description": "Sau khi Perlica gây <#ba.conduct>Điện Hóa</> lên kẻ địch sẽ được <@ba.vup>+{atk_up:0%}</> Tấn Công trong {atk_duration:0} giây. Hiệu ứng này có thể cộng dồn đến {max_stack:0} tầng."
+    },
+    "potential4": {
+      "name": "Hướng Dẫn Liên Tục",
+      "description": "KN Liên Hoàn <@ba.key>Giao Thức Tức Thời: Chuỗi</> được nâng cấp: Hiệu lực debuff <#ba.spelldmg>ST Thuật Pháp Phải Chịu</> trên kẻ địch do kỹ năng gây hiệu ứng <#ba.conduct>Điện Hóa</> tăng <@ba.vup>{extra_scaling}</> lần so với ban đầu."
+    },
+    "potential5": {
+      "name": "Kiểm Soát Tái Nhập",
+      "description": "Tuyệt Kỹ <@ba.key>Giao Thức ε: 70.41K</> được cải thiện: Tỷ Lệ Bạo Kích <@ba.vup>+{crit:0%}</>."
+    }
+  },
+  "files": {
+    "main": "<@profile.key>MẬT DANH: Perlica \nGIỚI TÍNH: Nữ \nXÁC MINH: Tập Đoàn Endfield \nNGÀY SINH: 16 Tháng 3  \nCHỦNG TỘC: Liberi \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Cơ Bản \nKN CHIẾN ĐẤU: Cơ Bản \nTƯ DUY CHIẾN THUẬT: Nổi Bật\nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc</>",
+    "humanResources": "<@profile.key>Perlica, Giám Sát Viên của Tập Đoàn Endfield, là một trong những người phát ngôn chính thức của Endfield. Cô chịu trách nhiệm chính trong việc giám sát và thúc đẩy việc phát triển và ứng dụng các giao thức công nghệ Giao Thức Originium, đồng thời quản lý hoạt động của Dijiang. \n\nĐã lâu lắm rồi tôi mới nghe ai đó đặt câu hỏi liệu cô ấy có xứng đáng với chức danh Giám Sát Viên hay không. Cô ấy đã dập tắt mọi nghi ngờ bằng những kết quả cụ thể, chứng minh lời của M3 là đúng: \"Vị trí này tồn tại là nhờ Perlica. Đừng hiểu sai thứ tự.\" Tôi vẫn khó có thể tin rằng một người trẻ tuổi như vậy lại có thể hỗ trợ ban quản lý toàn bộ Tập Đoàn Endfield. Tuy nhiên, dưới sự lãnh đạo của cô ấy, tương lai mà Endfield hướng tới ngày càng rõ ràng hơn. Tuy nhiên, cô ấy không phải là người hoàn hảo trong việc xử lý mọi việc. Ví dụ, với tư cách là một nhân vật chủ chốt trong việc quản lý Đội Ứng Phó Nguy Cảnh, cô ấy không nên liên tục mạo hiểm bản thân ở tuyến đầu cùng với các thành viên. Ngay cả khi cô ấy tiếp tục bác bỏ yêu cầu của tôi, tôi vẫn sẽ thúc giục cô ấy đánh giá lại những rủi ro. \n- Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
+    "file1": "<@profile.key>Giống như nhiều đặc vụ khác tại Tập Đoàn Endfield, Giám Sát Viên Perlica đã sống sót sau thảm họa khi còn nhỏ và tìm được nơi nương tựa dưới sự chăm sóc của Endministrator và Tập Đoàn Endfield cùng với những đứa trẻ khác đã mất gia đình. Trong quá trình học tập và trưởng thành, cô bé đã thể hiện sự tò mò đặc biệt đối với Giao thức Công nghệ và dần dần tham gia vào các hoạt động nền tảng của Tập Đoàn Endfield trên Talos-II. Trong vòng chưa đầy hai năm, bước chân của cô bé đã đến các thành phố lớn nhỏ trên khắp hành tinh, và sự hiểu biết của cô bé về những mối đe dọa mà chúng ta phải đối mặt vượt xa những người bình thường. Niềm đam mê với Giao Thức Công Nghệ đã dẫn dắt cô bé đến với Trung Tâm Nghiên Cứu Và Phát Triển, nơi sau này cô bé đóng vai trò chủ chốt trong việc đạt được những đột phá lớn trong việc phát triển và ứng dụng Giao Thức Công Nghệ cho Tập Đoàn Endfield. Tất nhiên, cô bé được chính thức bổ nhiệm làm \"Giám Sát Viên\", nắm quyền điều hành Dijiang - một cấu trúc khổng lồ lơ lửng trên quỹ đạo tĩnh nhân tạo phía trên Talos-II. \n\nTÀI LIỆU: Một bản ghi nhất định yêu cầu đủ cấp đặc quyền \nTất nhiên, quá khứ của Perlica chưa bao giờ luôn may mắn như những gì ghi chép công khai cho thấy. \nHơn một thập kỷ trước, bạn đã cứu cô ấy trong lúc chuẩn bị cho chuyến thám hiểm, luôn ủng hộ cô ấy hết lòng vào lúc cô ấy vẫn còn lạc lõng và sợ hãi. Nhưng cô ấy không bao giờ ngờ rằng cuộc thập tự chinh ấy lại một lần nữa đảo lộn cuộc đời cô ấy... cô ấy đã mất bạn. Trong những năm tháng sau đó, hầu hết những đứa trẻ mà bạn đã cứu cùng cô ấy đều đã có cuộc sống mới. Bao gồm cả Lycia, người mà cô ấy coi như chị em, cuối cùng đã rời khỏi Dijiang và chọn con đường riêng. \nKhi bạn bè dần rời xa, trách nhiệm trên vai cô ngày càng nặng nề hơn, và quá trình phát triển Giao Thức Công Nghệ liên tục gặp phải trở ngại... \nVậy mà cô ấy vẫn kiên trì đi trên con đường khó khăn nhất này, chinh phục chúng tôi bằng hành động của mình. Đúng là cô ấy đã nhận được sự ủng hộ từ nhiều người trên suốt chặng đường, nhưng không ai hiểu rõ hơn tôi những nỗ lực và khó khăn mà cô ấy đã trải qua. \nHãy đến nói chuyện với cô ấy đi. Cô ấy đã chờ đợi quá lâu rồi.\n - Bản Ghi Âm Của M3</>",
+    "file2": "<@profile.key>Những đặc vụ khác trên tàu Dijiang thường nói rằng Giám Sát Viên Perlica dường như sở hữu một năng lực kỳ diệu nào đó. Chỉ cần cô ấy ở bên, mọi vấn đề đều có thể được giải quyết. \nVậy nên khi biết mình sẽ được học cùng cô, tôi đã háo hức đến mức không ngủ được. Nhưng thực tế phũ phàng đã giáng một đòn mạnh vào tôi. Không thể theo kịp khối lượng công việc khổng lồ và những tiêu chuẩn khắt khe của cô, tôi đã nghiêm túc cân nhắc việc bỏ cuộc giữa chừng… nhưng tôi không thể nào từ bỏ một cơ hội quý giá như vậy. \nVới sự thức tỉnh sắp tới của Endministrator, mọi người đều hồi hộp - ngay cả Giám Sát Viên Perlica cũng không ngoại lệ. Mặc dù lịch trình dày đặc, cô vẫn cố gắng sắp xếp các cuộc họp với các thành viên cấp cao từ mọi phòng ban để đảm bảo mọi việc diễn ra suôn sẻ. \nNhưng sau mỗi lần gặp riêng ngẫu hứng như vậy, cô ấy luôn tỏ ra bồn chồn. Chẳng lẽ ngay cả cô ấy cũng không thể xử lý được? Tôi không khỏi tự trách mình vì không thể giúp đỡ nhiều hơn. \nCô ấy nhận ra tôi lạc lõng đến thế nào và chủ động an ủi tôi, thậm chí còn chia sẻ với tôi vài viên thịt vây cá có hương vị lạ mà tôi chưa từng thấy bao giờ. Hương vị đậm đà đến mức khiến tôi rơi nước mắt, vậy mà Giám sát Perlica chỉ nhìn tôi với nụ cười mãn nguyện… Những lo lắng của ngày hôm đó đã tan biến cùng với nước mắt của tôi. \nVào khoảnh khắc đó, tôi đột nhiên nhận ra rằng Giám Sát Viên Perlica… thực sự có loại phép thuật đó. \nTrích từ nhật ký làm việc của một đặc vụ thực tập, người vẫn đang nộp đơn xin tiếp tục theo học nghề dưới sự hướng dẫn của Giám Sát Viên Perlica. \n\n[Bản Ghi Chưa Được Xóa Thành Công] \n\"Cô ấy cũng đến gặp anh phải không, Krad? Cô ấy hỏi làm sao để hòa hợp với Endministrator mà cô ấy rất quan tâm, đúng không?\" \n\"Không ngờ Cơ Quan Tình Báo lại làm thế. Cậu còn chưa đến Dijiang mà vẫn rành rẽ thế này. Lúc cô ấy chạy vào phòng huấn luyện tìm tôi, tôi cứ tưởng có chuyện gì không ổn. Nhưng rồi cô ấy hỏi tôi một cách nghiêm túc. Hoàn toàn bất ngờ.\" \n\"Chắc là tôi đã quá quen với việc cô ấy là Giám Sát Viên đến nỗi suýt quên mất cô ấy không thực sự bất khả chiến bại. Nhưng tôi thích cái giọng điệu ngượng ngùng của cô ấy khi nhắn tin cho tôi. Vẫn đáng yêu như hồi chúng tôi còn bé.\" \n\"Vậy anh đã cho cô ấy lời khuyên gì?\" \n\"Cũng như anh thôi, chẳng có gì cả. Những người già khác cũng làm tương tự. Chúng ta chỉ đang chờ xem chuyện này diễn ra thế nào thôi.\" \n\"Nhưng tôi cá là cô ấy sẽ che giấu nó hoàn hảo khi nhìn thấy Endministrator lần nữa.\" \n\"Đừng lo, M3 chắc chắn sẽ đi cùng cô ấy. Anh thực sự nghĩ chúng ta sẽ không lấy được mọi chi tiết cuối cùng của hiện trường sao?\" \n\"Đúng vậy. Và hãy nhớ rằng, chúng ta đã hứa với cô ấy là sẽ giữ bí mật tuyệt đối. Đặc biệt là với Endministrator.\" \n\"Thư giãn đi, Krad. Anh biết tôi là người cuối cùng lên tiếng mà. Đạo đức nghề nghiệp là vậy. Nhưng thành thật mà nói, thật đáng tiếc khi chúng ta không được thấy Perlica bé nhỏ hờn dỗi vì chuyện này, phải không?\"</>",
+    "file3": "<@profile.key>Dù bạn có tình cờ gặp Giám Sát Viên Perlica ở đâu trên tàu Dijiang, cô ấy luôn bình tĩnh chào đón bạn trước khi quay lại làm việc ngay lập tức. Thậm chí có người còn nói đùa rằng ẩn sau vẻ ngoài Liberi của mình, cô ấy thực chất là một cỗ máy, đang thực hiện hoàn hảo chỉ thị của một trí tuệ siêu việt nào đó. Mặc dù tin đồn này lan truyền rộng rãi trong giới đặc vụ mới, Giám Sát Viên hoàn toàn không bận tâm. Thực tế, đôi khi cô ấy còn cố tình đùa cợt, làm dịu bầu không khí và giúp giảm bớt căng thẳng giữa các thành viên đoàn. \nTheo lời kể không chính thức của Martin Marvin Malen, sau khi chính thức đảm nhận vai trò Giám Sát Viên, Perlica đã buộc mình phải giữ thái độ phù hợp nhất để hoàn thành nhiệm vụ. Nhưng cảm xúc và áp lực tích tụ luôn cần một lối thoát. Ngay cả trước khi Endministrator trở lại, Perlica đã tìm ra cách để thực sự thư giãn. \"Bạn đã nghe nói về 'Cuộc thi Sáng tạo Crankcase' chưa? Họ nói rằng ban đầu nó bắt nguồn từ một cuộc đấu trí sáng tạo giữa một thiên tài Vampire và một thợ máy bí ẩn. Các anh chị khóa trên tại Trung Tâm Nghiên Cứu Và Phát Triển đã mang sự kiện Terra cổ xưa này đến Endfield. Ngày nay, những ý tưởng táo bạo xuất hiện từ CCC không chỉ mang lại tiếng cười cho các đặc vụ mà còn thúc đẩy mạnh mẽ sự đổi mới công nghệ của chúng tôi. Tuy nhiên, rất ít người biết rằng động lực thực sự đằng sau sự kiện này tại Endfield chính là Giám Sát Viên Perlica. Suy cho cùng, cô ấy chưa bao giờ chính thức tham gia và hiếm khi lên tiếng. Thực ra, lý do cô ấy hồi sinh sự kiện này chỉ đơn giản là để tạo ra một nền tảng nơi cô ấy có thể giải tỏa những căng thẳng trong đôi tay và thử nghiệm những ý tưởng kỳ lạ trong đầu.\" \n\nDù năm nay tôi bị cấm thi đấu, tôi cũng không thể nói mình hoàn toàn vắng mặt. Suy cho cùng, chính tôi là người đặt tên cho khẩu súng đoạt giải \"Tiếng Gầm Blast-ma\"! Khi người sáng tạo ra nó đến với tôi với ý tưởng \"nhét một khẩu súng trường trọng lực vào một động cơ tăng tốc\", tôi biết nó có tiềm năng. Nhưng cuối cùng chúng tôi đã phải tháo rời khá nhiều khẩu súng tốt để làm ra nó... Hả? À, tất nhiên là chúng tôi không động đến kho vũ khí quý giá của bố tôi rồi! \nNhà vô địch của nhiều cuộc thi sáng tạo Crankcase, một thần đồng trong lĩnh vực chế tạo vũ khí. \n\n Chiếc xe này vừa giành giải nhất tại cuộc đua Tập Kích Nhiệt Dưới Lòng Đất Neo Tsukushi! Nó đang làm gì ở Dijiang vậy?! \nTừ một người đam mê đua xe. \n\n\"Tiếng Gầm Blast-ma\" ư? Của \"Nghi Phạm Ilyich\" à? Perlica, người mới đến này đến từ bộ phận nào vậy? \n- Chen Qianyu</>",
+    "file4": "<@profile.key>M3, nộp tài liệu này dưới dạng phụ lục của \"Mệnh Lệnh Số 0\" dưới dạng niêm phong. Không được thi hành trong bất kỳ trường hợp nào. \nTôi xin bổ nhiệm Perlica làm \"Người Ký Mệnh Lệnh Số 0\". \nTôi xin bổ nhiệm Perlica làm \"Người Ký Mệnh Lệnh Số 0\". \nNếu cuối cùng cô ấy quyết định ở lại Tập Đoàn Endfield, với tư cách là người thi hành di chúc, bạn sẽ đưa cô ấy đến gặp Người Sáng Lập. \n\nTÀI LIỆU: Một bản ghi nhất định yêu cầu đủ cấp đặc quyền \n\"Cô đã quyết định chưa??\" \n\"Việc tiếp tục gắn bó với Tập Đoàn Endfield chưa bao giờ là vấn đề cả, M3 ạ.\" \n\"Được thôi. Hãy đi với tôi. Người Sáng Lập muốn gặp cô.\"\n...... \n\"Vậy là cuối cùng chúng ta cũng gặp nhau, Giám Sát Viên Perlica.\" \n\"Giám... Giám Sát Viên ư? Đợi đã, vẻ ngoài của cô...\" \n\"Thời gian của chúng ta đang cạn dần.\"</>"
+  },
+  "arts": {
+    "potential1": {
+      "name": "Người Hướng Dẫn",
+      "author": "STAR影法师",
+      "description": "Khi những mảnh vỡ của các vì sao che khuất ánh sáng, cô ấy sẽ bình thản soi sáng con đường của bạn. Hãy xem cô ấy tỏa sáng thế nào."
+    },
+    "potential3": {
+      "name": "Giao Thức",
+      "author": "Director Kuzuri",
+      "description": "Chứng kiến nỗi khao khát của mình được khơi dậy, cô không còn muốn ở lại nữa. Giao Thức không bao giờ có ý định trở thành những ràng buộc lạnh lùng, vô cảm."
+    },
+    "potential6": {
+      "name": "Tương Lai",
+      "author": "IRple2",
+      "description": "Cô đã dệt nên vô vàn khả năng, rồi khắc họa chúng lên bản thiết kế. Chúng chính là tương lai mà cô ấy luôn mang theo bên mình."
+    }
+  }
+}

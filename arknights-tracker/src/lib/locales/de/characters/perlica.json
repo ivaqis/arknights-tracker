@@ -1,0 +1,127 @@
+{
+  "skills": {
+    "basicAttack": {
+      "name": "Protokoll α: Durchbruch",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "basicAttack": {
+        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+      }
+    },
+    "battleSkill": {
+      "name": "Protokoll ω: Schlag",
+      "description": "Entfesselt einen Blitz aus elektromagnetischer Energie, der Gegnern in einem kleinen Bereich <@ba.pulse>Elektrischen SDN</> zufügt und sie mit <#ba.pulseinflict>Elektrik</> belegt.",
+      "battleSkill": {
+        "spCost": "Aktivierungskosten",
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln"
+      }
+    },
+    "comboSkill": {
+      "name": "Sofortprotokoll: Kette",
+      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen beliebigen Gegner ausführt. \nEntfesselt gespeicherte elektromagnetische Energie, um das Ziel zu bombardieren, <@ba.pulse>Elektrischen SDN</> zu verursachen und es vorübergehend mit <#ba.conduct>Elektrifizierung</> zu belegen.",
+      "comboSkill": {
+        "cooldown": "Abkühlung",
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln",
+        "electrifyDuration": "Dauer: Elektrifizieren (Sek.)"
+      }
+    },
+    "ultimate": {
+      "name": "Protokoll ε: 70,41 Tsd.",
+      "description": "Tele-protokolliert ein massives Stück Weltraumschrott auf das Zielgebiet, was einen verheerenden Aufschlag auslöst. Alle Gegner im Wirkungsbereich erleiden massiven <@ba.pulse>Elektrischen SDN</>.",
+      "ultimate": {
+        "ultimateEnergyCost": "Ultimative Energiekosten",
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln"
+      }
+    },
+    "indicator": {
+      "name": "Geschmiedet",
+      "levels": [
+        "Operator-Intellekt +10.",
+        "Operator-Intellekt +15.",
+        "Operator-Intellekt +15.",
+        "Operator-Intellekt +20."
+      ]
+    },
+    "talent1": {
+      "name": "Vernichtungsprotokoll",
+      "levels": [
+        "<@ba.vup>+{dmg:0%}</> verursachter SDN gegen <@ba.poise>Taumelnde</> Gegner.",
+        "<@ba.vup>+{dmg:0%}</> verursachter SDN gegen <@ba.poise>Taumelnde</> Gegner."
+      ]
+    },
+    "talent2": {
+      "name": "Zyklusprotokoll",
+      "levels": [
+        "Kombofertigkeit <@ba.key>Sofortprotokoll: Kette</> verbessert: Die Dauer des Debuffs <#ba.spelldmg>Erlittener Technik-SDN</>, der von der <#ba.conduct>Elektrifizierung</> der Fertigkeit auf den Gegner angewendet wird, erhöht sich auf das <@ba.vup>{extra_scaling}</>-Fache der ursprünglichen Werts."
+      ]
+    },
+    "baseSkill1": {
+      "name": "Aufseherin",
+      "levels": [
+        "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +8 % zu gewähren.",
+        "Dem Kontrollnexus zuweisen, um allen Operatoren Stimmungszunahme +12 % zu gewähren."
+      ]
+    },
+    "baseSkill2": {
+      "name": "Protokoll-Neuverteilung",
+      "levels": [
+        "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+        "Der Herstellungskabine zuweisen, um Waffen-EP-Materialproduktionseffizienz um +30 % zu erhöhen."
+      ]
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "name": "Krisenmanagement",
+      "description": "Kombofertigkeit <@ba.key>Sofortprotokoll: Kette</> verbessert: Dauer von <#ba.conduct>Elektrifizierung</> <@ba.vup>+{duration-1:0%}</>."
+    },
+    "potential2": {
+      "name": "Verhandlungstaktiken",
+      "description": "Ultimative Fertigkeit <@ba.key>Protokoll ε: 70,41 Tsd.</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>."
+    },
+    "potential3": {
+      "name": "Pflichten einer Aufseherin",
+      "description": "Wenn Perlica den Gegner mit <#ba.conduct>Elektrifizierung</> belegt hat, erhält sie für {atk_duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann {max_stack:0}-mal kumuliert werden."
+    },
+    "potential4": {
+      "name": "Ständige Leitung",
+      "description": "Kombofertigkeit <@ba.key>Sofortprotokoll: Kette</> verbessert: Die Dauer des Debuffs <#ba.spelldmg>Erlittener Technik-SDN</>, der von der <#ba.conduct>Elektrifizierung</> der Fertigkeit auf den Gegner angewendet wird, erhöht sich auf das <@ba.vup>{extra_scaling}</>-Fache der ursprünglichen Werts."
+    },
+    "potential5": {
+      "name": "Neuzugangkontrolle",
+      "description": "Ultimative Fertigkeit <@ba.key>Protokoll ε: 70,41 Tsd.</> verbessert: Kritische Rate <@ba.vup>+{crit:0%}</>."
+    }
+  },
+  "files": {
+    "main": "<@profile.key>DECKNAME: Perlica \nGESCHLECHT: Weiblich \nAUTHENTIFIZIERUNG: Endfield Industries \nGEB.: 16. März \nSPEZIES: Liberi \n[ORIPATHIE-INFEKTIONSSTATUS] \nOripathie-negativ, basierend auf ärztlichen Befunden. \n\n[INTEGRIERTE KÖRPERLICHE UNTERSUCHUNG] \nPHYSIOLOGISCHE STÄRKE: Standard \nKAMPFFERTIGKEIT: Standard \nTAKTISCHER SCHARFSINN: Herausragend\nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Ausgezeichnet</>",
+    "humanResources": "<@profile.key>Perlica, Aufseherin von Endfield Industries, ist eine der offiziellen Sprecherinnen von Endfield. Sie ist hauptsächlich für die Überwachung und den Fortschritt der Entwicklung und Anwendung der Protokoll-Originium-Technologie verantwortlich und leitet gleichzeitig die Einsätze der Dijiang. \n\nEs ist lange her, dass ich jemanden daran zweifeln hörte, ob sie den Titel der Aufseherin verdient. Sie hat alle Zweifel mit greifbaren Ergebnissen zerstreut und die Worte von M3 bestätigt: „Diese Position gibt es dank Perlica. Nicht anders herum.“ Ich kann immer noch kaum glauben, dass eine so junge Person in der Lage ist, die Leitung von Endfield Industries zu übernehmen. Doch unter ihrer Führung ist die von Endfield angestrebte Zukunft nur noch klarer geworden. Allerdings ist auch sie nicht in allem fehlerlos. Als Schlüsselfigur in der Leitung des Krisenteams sollte sie sich beispielsweise nicht ständig an vorderster Front in Gefahr begeben. Selbst wenn sie meine Anfragen weiterhin ablehnt, werde ich sie drängen, die Risiken neu zu bewerten. \n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries</>",
+    "file1": "<@profile.key>Wie viele andere Operatoren von Endfield Industries überlebte Aufseherin Perlica als Kind eine Katastrophe und fand zusammen mit anderen Kindern, die ihre Familien verloren hatten, Zuflucht in der Obhut des Endministrators und von Endfield Industries. Während ihrer Ausbildung entwickelte sie eine außergewöhnliche Neugier für Techno-Protokoll und wurde nach und nach in die grundlegenden Abläufe von Endfield Industries auf Talos-II eingebunden. In weniger als zwei Jahren hatte sie große und kleine Städte auf der ganzen Welt besucht, und ihr Verständnis für die Bedrohungen, denen wir ausgesetzt sind, übertraf das von gewöhnlichen Personen bei weitem. Ihre Leidenschaft für Techno-Protokoll führte sie ins F&E-Zentrum, wo sie später maßgeblich an wichtigen Durchbrüchen bei der Entwicklung und Anwendung von Techno-Protokollen für Endfield Industries beteiligt war. Für diese Erfolge wurde sie offiziell zur „Aufseherin“ ernannt und übernahm das Ruder der Dijiang – ein kolossales Schiff in der künstlichen Umlaufbahn über Talos-II. \n\nDOKUMENT: Ein bestimmtes Logbuch, das ein ausreichendes Autoritätslevel erfordert \nNatürlich war Perlicas Vergangenheit nie so glücklich, wie die öffentlichen Aufzeichnungen vermuten lassen. \nVor über einem Jahrzehnt hast du sie bei den Vorbereitungen für die Expedition gerettet und ihr bedingungslose Unterstützung angeboten, als sie noch verloren und voller Angst war. Doch sie hätte nie ahnen können, dass derselbe Kreuzzug ihr Leben bald erneut auf den Kopf stellen würde … sie verlor dich. In den folgenden Jahren begannen die meisten der Kinder, die du mit ihr gerettet hast, ein neues Leben. Dazu gehört auch Lycia, die sie als Schwester betrachtete. Sie verließ schließlich die Dijiang und entschied sich, ihren eigenen Weg zu gehen. \nAls ihre Freunde nach und nach gingen, wurde die Last der Verantwortung auf ihren Schultern immer schwerer, und die Techno-Protokoll-Entwicklung stieß immer wieder auf Hindernisse … \nDennoch blieb sie hartnäckig auf diesem äußerst schwierigen Weg und gewann uns durch ihr Handeln für sich. Es stimmt, dass sie auf ihrem Weg von vielen unterstützt wurde, aber niemand versteht besser als ich, wie viel Mühe sie investiert und welche Entbehrungen sie ertragen hat. \nSprich mit ihr. Sie wartet schon viel zu lange.\n – M3s Audio-Memo</>",
+    "file2": "<@profile.key>Andere Operatoren an Bord der Dijiang sagen oft, dass Aufseherin Perlica eine Art magische Kraft zu besitzen scheint. Solange sie da ist, findet jedes Problem eine Lösung. \nAls ich erfuhr, dass ich das Privileg haben würde, mit ihr zu lernen, war ich so aufgeregt, dass ich nicht schlafen konnte. Doch die Realität traf mich hart. Da ich mit ihrem enormen Arbeitspensum und ihren hohen Ansprüchen nicht Schritt halten konnte, dachte ich ernsthaft darüber nach, zu kündigen … doch ich konnte mich nicht dazu durchringen, eine so wertvolle Gelegenheit aufzugeben. \nDa das erwartete Erwachen des Endministrators unmittelbar bevorsteht, sind alle nervös – selbst Aufseherin Perlica ist da keine Ausnahme. Trotz ihres vollgepackten Terminkalenders schafft sie es, Treffen mit leitenden Mitarbeitern aus allen Abteilungen einzuschieben, um sicherzustellen, dass alles reibungslos abläuft. \nDoch nach jedem dieser spontanen Privattreffen wirkt sie immer verunsichert. Könnte es sein, dass es Dinge gibt, mit denen selbst sie nicht fertig wird? Ich kann nicht anders, als mir selbst die Schuld zu geben, dass ich nicht mehr tun kann, um zu helfen. \nSie bemerkte, wie verloren ich mich fühlte, und ergriff die Initiative, mich zu trösten. Sie teilte sogar ein paar seltsam schmeckende Flössler-Fleischbällchen mit mir, die ich noch nie zuvor gesehen hatte. Der Geschmack war so stark, dass mir die Tränen in die Augen stiegen, doch Aufseherin Perlica beobachtete mich nur mit einem zufriedenen Lächeln … Die Sorgen des Tages wurden zusammen mit meinen Tränen weggespült. \nIn diesem Moment wurde mir plötzlich klar, dass Aufseherin Perlica … wirklich über diese Art von Magie verfügt. \n– Aus dem Arbeitsprotokoll einer angehenden Operatorin, die sich immer noch um die Möglichkeit bewirbt, ihre Ausbildung bei Aufseherin Perlica fortzusetzen. \n\n[Eintrag, der nicht erfolgreich gelöscht wurde] \n„Sie war auch bei dir Krad, oder? Sie hat gefragt, wie sie mit dem Endministrator auskommen soll, der ihr so ​​viel bedeutet, nicht wahr?“ \n„Was anderes hätte ich auch nicht erwartet. Du bist nicht mal auf der Dijiang und trotzdem so gut informiert. Als sie in den Trainingsraum gerannt kam, um mich zu suchen, dachte ich, etwas wäre schiefgelaufen. Aber dann hat sie mich so ernst gefragt. Das hat mich total überrascht.“ \n„Ich habe mich wohl so daran gewöhnt, dass sie die Aufseherin ist, dass ich fast vergessen hätte, dass sie nicht unbesiegbar ist. Aber ich liebe ihren unbeholfenen Ton, wenn sie mir Nachrichten schickt. Immer noch genauso süß wie damals, als wir Kinder waren.“ \n„Und, welchen Rat hast du ihr gegeben?“ \n„Denselben wie dir: gar keinen. Die anderen alten Hasen haben das auch gemacht. Wir warten alle nur ab, wie es ausgeht.“ \n„Aber ich wette, sie wird es perfekt verbergen, wenn sie den Endministrator wiedersieht.“ \n„Keine Sorge, M3 wird auf jeden Fall bei ihr sein. Glaubst du wirklich, wir werden nicht jedes Detail vom Tatort erfahren?“ \n„Stimmt. Und denk dran, wir haben ihr versprochen, das absolut vertraulich zu behandeln. Besonders vor dem Endministrator.“ \n„Bleib ruhig, Krad. Du weißt, ich bin die letzte Person, die irgendwas verraten würde. Berufsethik und so. Aber ehrlich gesagt, ist es fast schade, dass wir die kleine Perlica nicht darüber schmollend sehen werden, oder?“</>",
+    "file3": "<@profile.key>Egal, wo man Aufseherin Perlica an Bord der Dijiang begegnet, sie begrüßt einen stets ruhig und kehrt dann sofort wieder an ihre Arbeit zurück. Manche scherzen sogar, dass sie hinter ihrem Liberi-Erscheinungsbild eine Maschine sein könnte, die die Anweisungen einer höheren Intelligenz perfekt ausführt. Während sich solche Gerüchte unter neueren Operatoren weit verbreiten, stört es die Aufseherin überhaupt nicht. Tatsächlich macht sie gelegentlich absichtlich bei dem Scherz mit, um die Stimmung aufzulockern und die Spannungen innerhalb der Crew abzubauen. \nLaut dem inoffiziellen Bericht von Martin Marvin Malen sah sich Perlica nach ihrer offiziellen Übernahme der Aufseherrolle gezwungen, ein möglichst angemessenes Verhalten an den Tag zu legen, um ihre Pflichten zu erfüllen. Doch angestaute Emotionen und Druck brauchen immer ein Ventil. Schon vor der Rückkehr des Endministrators hatte Perlica einen Weg gefunden, sich wirklich zu entspannen. „Hast du schon mal vom ‚Kurbelgehäuse-Kreativwettbewerb‘ gehört? Es heißt, er begann ursprünglich als kreativer Showdown zwischen einem gewissen Vampirgenie und einem mysteriösen Mechaniker. Die Verantwortlichen des F&E-Zentrums brachten dieses uralte Terra-Event nach Endfield. Heute sorgen die wilden Ideen des KKW nicht nur für viel Gelächter unter den Mitarbeitern, sondern treiben auch unsere technologische Innovation voran. Doch nur wenige wissen, dass die wahre treibende Kraft hinter diesem Event in Endfield Aufseherin Perlica ist. Sie hat nie offiziell teilgenommen und äußert sich selten dazu. In Wahrheit wollte sie dieses Event einfach nur wiederbeleben, um ihre rastlosen Hände zu beschäftigen und ihre seltsamen Ideen zu testen.“ \n\nAuch wenn ich dieses Jahr von der Teilnahme ausgeschlossen wurde, würde ich mich nicht als völlig abwesend bezeichnen. Schließlich bin ich es, die dem preisgekrönten „Kabumm und Brüll“ seinen Namen gegeben hat! Als sein Erfinder mit der Idee zu mir kam, „eine Schwerkraftwaffe in ein Beschleunigungstriebwerk zu stopfen“, wusste ich, dass es Potenzial hatte. Wir haben allerdings einige tolle Schusswaffen auseinandergenommen, damit es funktioniert … Hä? Oh – natürlich haben wir den wertvollen Vorrat meines Vaters nicht angerührt! \n– Der amtierende Champion mehrerer Kurbelgehäuse-Kreativwettbewerbe, ein Wunderkind der Schusswaffentechnik. \n\n Dieses Fahrzeug hat gerade den ersten Platz bei der Neo-Tsukushi-Untergrundrallye belegt! Was macht es auf der Dijiang?! \n– Von einem Rennsport-Enthusiasten. \n\n„Kabumm und Brüll“? Im Besitz von „Iljitsch, dem Verdächtigen“? Perlica, aus welcher Abteilung kommt dieser Neuling? \n– Chen Qianyu </>",
+    "file4": "<@profile.key>M3, leg dieses Dokument unter Verschluss als Anhang zur „Zeroth-Direktive“ ab. Es darf unter keinen Umständen umgesetzt werden. \nHiermit ernenne ich Perlica zur „Unterzeichnerin der Zeroth-Direktive“. \nIhre Aktivierung unterliegt jedoch ausschließlich ihrer persönlichen Zustimmung. \nSollte sie sich letztendlich entscheiden, bei Endfield Industries zu bleiben, bringst du sie als Vollstrecker zum Gründer. \n\nDOKUMENT: Ein bestimmtes Protokoll, das ein ausreichendes Autoritätslevel erfordert. \n„Hast du dich entschieden?“ \n„Bei Endfield Industries zu bleiben, stand nie zur Debatte, M3.“ \n„Sehr gut. Komm mit. Der Gründer möchte dich sehen.“ \n… \n„Endlich lernen wir uns kennen, Aufseherin Perlica.“ \n„A-Aufseherin? Moment, das –“ \n„Uns läuft die Zeit davon.“</>"
+  },
+  "arts": {
+    "potential1": {
+      "name": "Die Anleitung",
+      "author": "STAR影法师",
+      "description": "Wenn die Trümmer der Sterne das Licht verdecken, wird sie in aller Gelassenheit deinen Pfad erhellen. Sieh nur, wie sie leuchtet."
+    },
+    "potential3": {
+      "name": "Das Protokoll",
+      "author": "Director Kuzuri",
+      "description": "Jetzt, wo das Ziel ihrer Sehnsucht vor ihr steht, will sie nicht tatenlos zusehen. Das Protokoll war nie als kalte, gefühllose Kette gedacht."
+    },
+    "potential6": {
+      "name": "Die Zukunft",
+      "author": "IRple2",
+      "description": "Sie webte eine Unendlichkeit an Möglichkeiten, die anschließend in den Bauplänen verewigt wurden. Sie sind die Zukunft, die sie stets mit sich führt."
+    }
+  }
+}

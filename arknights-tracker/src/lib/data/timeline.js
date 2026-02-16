@@ -172,8 +172,8 @@ export const rawEvents = [
   {
     id: "ev12-v1.0",
     title: "events.stepsToSweetSuccess",
-    startTime: "2026-02-16 12:00:00",
-    endTime: "2026-03-07 11:59:59",
+    startTime: "2026-02-16 20:00:00",
+    endTime: "2026-03-07 20:00:00",
     gameversion: "global",
     timezone: "UTC+8",
     icon: "ev12-v1.0.jpg",
