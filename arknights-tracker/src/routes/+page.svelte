@@ -443,7 +443,7 @@
   </div>
   <div class="w-48 flex gap-1 mb-5">
     <a
-      href="https://discord.gg/6XmrdB6r"
+      href="https://discord.gg/nqfuaRbWWn"
       target="_blank"
       rel="noreferrer"
       class="no-underline"

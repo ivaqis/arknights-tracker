@@ -287,17 +287,25 @@
             if (!bannerCounts[bid]) bannerCounts[bid] = 0;
 
             let isFree = false;
-            if (
-                banner &&
-                banner.type === "special" &&
-                !isWeapon &&
-                bannerCounts[bid] >= 30 &&
-                bannerCounts[bid] < 40
-            ) {
-                isFree = true;
-            }
-            p.isFree = isFree;
-            bannerCounts[bid]++;
+
+                if (typeof p.isFree === 'boolean') {
+                    isFree = p.isFree;
+                } 
+                else {
+                    if (
+                        banner &&
+                        banner.type === "special" &&
+                        !isWeapon &&
+                        bannerCounts[bid] >= 30 &&
+                        bannerCounts[bid] < 40
+                    ) {
+                        isFree = true;
+                    }
+                }
+                
+                p.isFree = isFree;
+
+                bannerCounts[bid]++;
             if (!isFree) {
                 if (p.rarity === 6) {
                     p.pity = p6 + 1;

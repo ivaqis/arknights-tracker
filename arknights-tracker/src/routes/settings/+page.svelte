@@ -733,7 +733,7 @@
                 </Button>
             </a>
             <a
-                href="https://discord.gg/6XmrdB6r"
+                href="https://discord.gg/nqfuaRbWWn"
                 target="_blank"
                 rel="noreferrer"
                 class="no-underline"
