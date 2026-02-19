@@ -288,41 +288,40 @@
 
             let isFree = false;
 
-                if (typeof p.isFree === 'boolean') {
-                    isFree = p.isFree;
-                } 
-                else {
-                    if (
-                        banner &&
-                        banner.type === "special" &&
-                        !isWeapon &&
-                        bannerCounts[bid] >= 30 &&
-                        bannerCounts[bid] < 40
-                    ) {
-                        isFree = true;
-                    }
+            if (typeof p.isFree === "boolean") {
+                isFree = p.isFree;
+            } else {
+                if (
+                    banner &&
+                    banner.type === "special" &&
+                    !isWeapon &&
+                    bannerCounts[bid] >= 30 &&
+                    bannerCounts[bid] < 40
+                ) {
+                    isFree = true;
                 }
-                
-                p.isFree = isFree;
+            }
 
-                bannerCounts[bid]++;
+            p.isFree = isFree;
+
+            bannerCounts[bid]++;
             if (!isFree) {
-                if (p.rarity === 6) {
-                    p.pity = p6 + 1;
-                    p6 = 0;
-                    p5++;
-                } else if (p.rarity === 5) {
-                    p.pity = p5 + 1;
-                    p5 = 0;
-                    p6++;
+                    if (p.rarity === 6) {
+                        p.pity = p6 + 1;
+                        p6 = 0;
+                        p5 = 0;
+                    } else if (p.rarity === 5) {
+                        p.pity = p5 + 1;
+                        p5 = 0;
+                        p6++;
+                    } else {
+                        p6++;
+                        p5++;
+                        p.pity = 1;
+                    }
                 } else {
-                    p6++;
-                    p5++;
                     p.pity = 1;
                 }
-            } else {
-                p.pity = 1;
-            }
             let isHardPityTriggered = false;
             if (!isFree) {
                 if (rateUpCounter >= hardPityLimit - 1) {
@@ -485,7 +484,9 @@
         class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_480px] 2xl:grid-cols-[minmax(0,1fr)_680px] gap-6 items-start"
     >
         <!-- СТАТИСТИКА -->
-        <div class="flex mt-11  flex-col gap-6 w-full order-1 xl:order-2 min-w-0">
+        <div
+            class="flex mt-11 flex-col gap-6 w-full order-1 xl:order-2 min-w-0"
+        >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div
                     class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5"

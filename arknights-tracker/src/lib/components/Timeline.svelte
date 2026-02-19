@@ -164,8 +164,8 @@
     }
 
     const DAY_WIDTH = 35;
-    const ROW_HEIGHT = 43;
-    const GAP_HEIGHT = 7;
+    const ROW_HEIGHT = 40;
+    const GAP_HEIGHT = 8;
     const HEADER_HEIGHT_PX = 80;
     const EVENT_TOP_OFFSET = 2;
     $: isOverflowing = contentHeight > (innerHeight * 0.8);

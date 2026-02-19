@@ -59,8 +59,8 @@
         on:click={handleClick}
         on:keydown={(e) => e.key === "Enter" && handleClick()}
     >
-        {#if isHovered}
-        <div class="absolute -inset-[2px] z-40 pointer-events-none transition-all duration-100">
+        {#if isHovered && variant != "small"}
+        <div class="absolute -inset-[3px] z-40 pointer-events-none transition-all duration-100">
             <div class={`absolute top-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tl-md shadow-sm`} style={`border-top-width: ${borderW}; border-left-width: ${borderW};`}></div>
             <div class={`absolute top-0 right-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tr-md shadow-sm`} style={`border-top-width: ${borderW}; border-right-width: ${borderW};`}></div>
             <div class={`absolute bottom-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-bl-md shadow-sm`} style={`border-bottom-width: ${borderW}; border-left-width: ${borderW};`}></div>

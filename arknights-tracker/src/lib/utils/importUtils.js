@@ -227,7 +227,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             const countInThisBanner = bannerSpecificCounts[uniqueBannerKey];
             isFreePull = (bannerId.includes('special') && !isWeaponType) && (countInThisBanner >= 30 && countInThisBanner < 40);
         }
-        
+
         bannerSpecificCounts[uniqueBannerKey]++;
 
         if (isFreePull) {
@@ -265,16 +265,19 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             } else {
                 total5050++;
             }
+            
             currentPity6 = 0;
-        } else {
-            currentPity6++;
-        }
-
-        if (pull.rarity === 5) {
+            currentPity5 = 0;
+            
+        } else if (pull.rarity === 5) {
             count5++;
             sumPity5 += currentPity5 + 1;
+            
             currentPity5 = 0;
+            currentPity6++;
+            
         } else {
+            currentPity6++;
             currentPity5++;
         }
     });

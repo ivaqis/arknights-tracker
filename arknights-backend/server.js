@@ -689,8 +689,10 @@ function calculateMath(pulls, categoryId, serverId = '3') {
             if (!isFreePull) {
                 count6++;
                 sumPity6 += currentPity6;
-                console.log(`   [6* PAID] ${p.name} | Pity: ${currentPity6} | Total6: ${count6} | Avg: ${(sumPity6 / count6).toFixed(1)}`);
+                console.log(`   [6* PAID] ${p.name} | Pity: ${currentPity6} | Total6: ${count6} | Avg: ${(sumPity6/count6).toFixed(1)}`);
+                
                 currentPity6 = 0;
+                currentPity5 = 0;
             } else {
                 console.log(`   [6* FREE] ${p.name} | Ignored in stats | Pity set to 1`);
             }
