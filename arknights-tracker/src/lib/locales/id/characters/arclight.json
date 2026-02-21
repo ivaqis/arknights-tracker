@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Pemulihan SP",
+      "Electric Infliction"
+    ],
+    "behaviourHateTags": [
+      "Asah Pikiran"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hannabit Circuit",
+    "expertTags": [
+      "Perakitan Alat",
+      "Kisah Alam"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Olahraga"
+    ],
+    "raceTag": "Kuranta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agility Operator +10.",
         "Agility Operator +15.",
         "Agility Operator +15.",
         "Agility Operator +20."
@@ -122,7 +146,7 @@
       "author": "またよし",
       "description": "Tak ada badai yang mampu menghentikannya."
     },
-    "potential6": {
+    "potential5": {
       "name": "Simitar Sabit",
       "author": "Z3zz",
       "description": "Dia selalu menyebut dirinya Echoling, tapi orang-orang yang diselamatkannya dari pedang breaker bersikeras memanggilnya Aldertone."

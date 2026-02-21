@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "電磁附著",
+      "導電"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "內向"
+    ],
+    "blocTag": "終末地工業",
+    "expertTags": [
+      "團隊管理",
+      "源石技藝"
+    ],
+    "giftPreferTags": [
+      "谷地·工業嚴選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "創意"
+    ],
+    "raceTag": "黎博利"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員智識能力值提升10。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升20。"
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "一種可見的思念讓她不願駐足，協議從不是冰冷的束縛。"
     },
-    "potential6": {
+    "potential5": {
       "name": "未來",
       "author": "IRple2",
       "description": "藍圖上刻印了她所編織的無限可能，那是她隨身攜帶的未來。"

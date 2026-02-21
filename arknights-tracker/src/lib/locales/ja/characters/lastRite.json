@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大ダメージ",
+      "寒冷付着"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [
+      "社交的"
+    ],
+    "blocTag": "セシュカ",
+    "expertTags": [
+      "戦闘技術",
+      "屈強"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "頭脳",
+      "社会貢献"
+    ],
+    "raceTag": "サルカズ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "筋力が10アップする",
         "筋力が15アップする",
         "筋力が15アップする",
         "筋力が20アップする"
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "果てしない大地が彼女に寄り添って眠り、千年の冬がその呼びかけを静かに待っている。しかし、少女はただ、安らかな眠りに花を手向けたいだけだった。"
     },
-    "potential6": {
+    "potential5": {
       "name": "霜華開く",
       "author": "REM",
       "description": "まだ見つからない答えや乗り越えなければならない壁がたくさんある。それでも託された任務は必ずやり遂げる。皆の笑顔を取り戻すために。"

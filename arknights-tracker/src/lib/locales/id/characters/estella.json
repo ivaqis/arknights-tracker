@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cryo Infliction",
+      "Lift",
+      "PHY Susc."
+    ],
+    "behaviourHateTags": [
+      "Olahraga"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Taktik Medan Pertarungan",
+      "Penyusup"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Seni Rupa",
+      "Asah Pikiran"
+    ],
+    "raceTag": "Feline"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Will Operator +10.",
         "Will Operator +15.",
         "Will Operator +15.",
         "Will Operator +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "“Mau coba sedikit? Oh .... Ini cairan bernutrisi campuran serangga dan ekstrak tanaman. Iya ... rasanya memang sangat unik ....”"
     },
-    "potential6": {
+    "potential5": {
       "name": "Jam Rahasia",
       "author": "かしまき",
       "description": "Ingin berbagi waktu luang berhargamu dengan seseorang?"

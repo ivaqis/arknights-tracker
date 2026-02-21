@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "転倒",
+      "治療",
+      "シールド"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "鉄誓軍",
+    "expertTags": [
+      "戦闘技術",
+      "屈強"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "運動",
+      "科学技術"
+    ],
+    "raceTag": "サンクタ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "筋力が10アップする",
         "筋力が15アップする",
         "筋力が15アップする",
         "筋力が20アップする"
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "遠征は目標に至る過程にすぎない。戦士が目標を前にして倒れることはない。"
     },
-    "potential6": {
+    "potential5": {
       "name": "不落の要塞",
       "author": "MoooFoo",
       "description": "北地には不屈の血と灼熱の鋼で築かれた要塞がある。そこは悪夢ではなく、次なる終着点だ。"

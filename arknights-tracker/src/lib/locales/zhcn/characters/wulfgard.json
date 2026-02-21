@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "灼热附着",
+      "燃烧"
+    ],
+    "behaviourHateTags": [
+      "益智"
+    ],
+    "behaviourUnavailableTags": [
+      "外向"
+    ],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "作战技巧",
+      "潜伏"
+    ],
+    "giftPreferTags": [
+      "谷地·协议严选"
+    ],
+    "hobbyTags": [
+      "自然",
+      "创意"
+    ],
+    "raceTag": "鲁珀"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "他只会在最信任的人面前放下防备，袒露那份弃置在童年的真实秉性。"
     },
-    "potential6": {
+    "potential5": {
       "name": "掠食者一瞥",
       "author": "FE",
       "description": "于狼魂的嘶吼声中，年轻的掠食者踏足属于自己的猎场，他将紧盯每一只猎物，直至把它们猎于铳下。"

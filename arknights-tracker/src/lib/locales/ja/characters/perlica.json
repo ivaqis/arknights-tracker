@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "電磁付着",
+      "感電"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "控えめ"
+    ],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "チーム管理",
+      "アーツ"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "創造性"
+    ],
+    "raceTag": "リーベリ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "知性が10アップする",
         "知性が15アップする",
         "知性が15アップする",
         "知性が20アップする"
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "目に見える想いが彼女を揺り動かす。協約は、決して冷たい束縛ではない。"
     },
-    "potential6": {
+    "potential5": {
       "name": "未来",
       "author": "IRple2",
       "description": "図面には、彼女が紡いだ無限の可能性が描かれている。それは、彼女が携える未来そのものだ。"

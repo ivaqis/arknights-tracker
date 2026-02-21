@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "치유",
+      "부식",
+      "취약"
+    ],
+    "behaviourHateTags": [
+      "문화"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "로도스 아일랜드",
+    "expertTags": [
+      "자연 상식",
+      "모험"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "생활",
+      "자연"
+    ],
+    "raceTag": "카프리니"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 지능 능력치 10 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 20 증가"
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "솜사탕처럼 포근한 분홍 구름에 누우면, 어떤 엉뚱한 생각들이 떠오를까요? 다양한 얼굴의 돌멩이? 아직 아무도 모르는 비밀의 장소? 아니면..."
     },
-    "potential6": {
+    "potential5": {
       "name": "소원",
       "author": "Eteru",
       "description": "차갑고 단단한 바위에 만발한 꽃, 생기와 온기로 가득한 황무지, 그리고 귓가에 맴도는 아름다운 선율... 선배, 이 모든 게 꿈은 아니겠죠?"

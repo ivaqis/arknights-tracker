@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Cryo Infliction",
+      "Amp"
+    ],
+    "behaviourHateTags": [
+      "Olahraga"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel"
+    ],
+    "blocTag": "Cabal of Tranquility",
+    "expertTags": [
+      "Keilmuan",
+      "Teknologi Informasi"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Teknologi",
+      "Asah Pikiran"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Will Operator +10.",
         "Will Operator +15.",
         "Will Operator +15.",
         "Will Operator +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "Hukum, Pertanda, Logika, dan Algoritma—Biarawati yang setia itu menggunakan semuanya."
     },
-    "potential6": {
+    "potential5": {
       "name": "Menatap Veritas",
       "author": "se_eeeee",
       "description": "Jangan takut akan hal yang tak diketahui, dan jangan menolak kekacauan. Itulah prinsip yang membimbing pencariannya akan kebenaran."

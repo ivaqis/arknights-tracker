@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量伤害",
+      "燃烧"
+    ],
+    "behaviourHateTags": [
+      "科技"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "罗德岛",
+    "expertTags": [
+      "源石技艺",
+      "局势分析"
+    ],
+    "giftPreferTags": [
+      "谷地·协议严选"
+    ],
+    "hobbyTags": [
+      "创意",
+      "生活"
+    ],
+    "raceTag": "萨卡兹"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "干员智识能力值提升10。",
         "干员智识能力值提升15。",
         "干员智识能力值提升15。",
         "干员智识能力值提升20。"
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538°C是铁的熔点，而不是她的。当你做好了准备，就靠近一点吧。"
     },
-    "potential6": {
+    "potential5": {
       "name": "熔火之邀",
       "author": "min",
       "description": "陪她走进无忆的长夜，陪她焚尽黑暗的梦魇，陪她点燃映照前路的火焰。"

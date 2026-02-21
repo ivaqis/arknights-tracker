@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cau. de dañ.",
+      "Imp. crio."
+    ],
+    "behaviourHateTags": [
+      "Estilo de vida"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Técnica de combate",
+      "Constitución"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Perfeccionamiento mental",
+      "Caridad"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Fuerza del operador +10.",
         "Fuerza del operador +15.",
         "Fuerza del operador +15.",
         "Fuerza del operador +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Las vastas tierras la abrazaron mientras dormía. Un ciclo eterno de inviernos la aguarda, a su voz. Sin embargo, la niña solo desea ofrecer un ramo en el lugar de su descanso."
     },
-    "potential6": {
+    "potential5": {
       "name": "Primera escarcha en florecer",
       "author": "REM",
       "description": "Ella tiene muchas preguntas sin respuesta y muchas dificultades aún por superar, sin embargo, completará todas tus asignaciones y devolverá la sonrisa a todos."

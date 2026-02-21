@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cau. de dañ.",
+      "Levantar",
+      "Triturar"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Academia Científica Hongshan (A.C.H.)",
+    "expertTags": [
+      "Cocinar",
+      "Ensamblaje de herramientas"
+    ],
+    "giftPreferTags": [
+      "Selección de los Corredores de Wuling"
+    ],
+    "hobbyTags": [
+      "Estilo de vida",
+      "Caridad"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Fuerza del operador +10.",
         "Fuerza del operador +15.",
         "Fuerza del operador +15.",
         "Fuerza del operador +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "¿Quién tiene tanto tiempo, con unas cuantas bestias voladoras como compañía, para descansar en la cima?"
     },
-    "potential6": {
+    "potential5": {
       "name": "Todos los sabores de la vida",
       "author": "黑犬",
       "description": "La vida no es como la cocina, donde puedes preparar todo antes de sumergirlo en el wok. Sin embargo, las cosas que vimos y experimentamos pueden usarse como ingredientes para ofrecer todos los sabores de la vida."

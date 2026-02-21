@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "猛撃",
+      "牽制"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+        "finisherAtkMultiplier": "終撃ダメージ倍率",
+        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
+      },
+      "name": "破壊配列",
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "ダメージ倍率",
+        "stagger": "ブレイク値"
+      },
+      "name": "構成配列",
+      "description": "アーツを発動して前方の一定範囲内の敵を攻撃する。<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "ダメージ倍率",
+        "crystalShatteringDmgMultiplier": "結晶粉砕ダメージ倍率",
+        "stagger": "ブレイク値",
+        "sealDurationS": "封印時間（秒）"
+      },
+      "name": "封印配列",
+      "description": "チーム内の他のオペレーターの連携技でダメージを与えたときに発動可能。\n敵の近くに突進し、<@ba.pd>物理ダメージ</>を与え、<#ba.originium>源石の結晶</>を付与して一定時間封印する。<#ba.physicalstatus>物理異常</>を与えるか<#ba.noguard>クラッシュ</>を付与すると、<#ba.originium>源石の結晶</>が<#ba.consume>消費</>され、追加の<@ba.pd>物理ダメージ</>を与える。"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "ダメージ倍率",
+        "bonusDmgMultiplier": "追加ダメージ倍率",
+        "stagger": "ブレイク値"
+      },
+      "name": "攻撃配列",
+      "description": "アーツを発動して地面を攻撃し、前方の扇形範囲内の敵に高い<@ba.pd>物理ダメージ</>を与える。敵に<#ba.originium>源石の結晶</>がある場合、<#ba.originium>源石の結晶</>を<#ba.consume>消費</>して追加でもう1回<@ba.pd>物理ダメージ</>を与える。"
+    },
+    "indicator": {
+      "levels": [
+        "敏捷が10アップする",
+        "敏捷が15アップする",
+        "敏捷が15アップする",
+        "敏捷が20アップする"
+      ],
+      "name": "遊刃"
+    },
+    "talent1": {
+      "levels": [
+        "敵の<#ba.originium>源石の結晶</>が<#ba.consume>消費</>されると、{duration:0}秒間自身の攻撃力<@ba.vup>+{atk_up:0%}</>（重ね掛け不可）",
+        "敵の<#ba.originium>源石の結晶</>が<#ba.consume>消費</>されると、{duration:0}秒間自身の攻撃力<@ba.vup>+{atk_up:0%}</>（重ね掛け不可）"
+      ],
+      "name": "根源瓦解"
+    },
+    "talent2": {
+      "levels": [
+        "<#ba.originium>源石の結晶</>が付与されている敵の受ける物理ダメージ<@ba.vup>+{dmg:0%}</>",
+        "<#ba.originium>源石の結晶</>が付与されている敵の受ける物理ダメージ<@ba.vup>+{dmg:0%}</>"
+      ],
+      "name": "空間静止"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "戦技<@ba.key>「構成配列」</>で敵の<#ba.originium>源石の結晶</>を<#ba.consume>消費</>するとき、SPが<@ba.vup>{atb_return:0}</><#ba.return>返還</>される",
+      "name": "最後の目覚め"
+    },
+    "potential2": {
+      "description": "素質<@ba.key>「根源瓦解」</>強化：自身が攻撃力UPを獲得するとき、他の味方オペレーターはその半分に相当する攻撃力UP効果を獲得する",
+      "name": "権能映写"
+    },
+    "potential3": {
+      "description": "？？？",
+      "name": "？？？"
+    },
+    "potential4": {
+      "description": "？？？",
+      "name": "？？？"
+    },
+    "potential5": {
+      "description": "？？？",
+      "name": "？？？"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "記憶のグリッド",
+      "author": "狂zip",
+      "description": "最後に記されたのは、短いひと言か、それとも何かの依頼か。記憶は糸のように編み上がり、静かな一手として打たれる。あなたは、もうすべてをわかっている。"
+    },
+    "potential3": {
+      "name": "象限",
+      "author": "廻轉",
+      "description": "あなたは、十字の中心に立っている。"
+    },
+    "potential6": {
+      "name": "掌握",
+      "author": "수줍(Sjoop)",
+      "description": "あなたの手のひらに託された信頼。その最初の破片を歴史と呼び、またの名を文明、生命という。"
+    }
+  }
+}

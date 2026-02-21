@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Quật Ngã",
+      "Hồi Phục HP",
+      "Khiên"
+    ],
+    "behaviourHateTags": [
+      "Phong Cách Sống"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hội Lời Thề Thép",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Hiến pháp"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Thể Thao",
+      "Công Nghệ"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Sức Mạnh Đặc Vụ +10.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "Cuộc thập tự chinh là con đường dẫn đến mục tiêu. Những chiến binh thực thụ sẽ không gục ngã cho đến khi đạt được mục tiêu."
     },
-    "potential6": {
+    "potential5": {
       "name": "Thành Lũy Chưa Bao Giờ Bị Công Phá",
       "author": "MoooFoo",
       "description": "Thép nóng đỏ và máu đặc là gạch và vữa của pháo đài phía bắc. Phương Bắc không phải là cơn ác mộng của cô. Nó chỉ là điểm đến tiếp theo của cô."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Susc. Artes",
+      "Inflição da Natureza",
+      "Levantar"
+    ],
+    "behaviourHateTags": [
+      "Tecnologia"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Aventura",
+      "Artes de Originium"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Moda",
+      "Cultura"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "Ela parou seus passos rápidos e delicados e não estava mais com pressa. Alguém conhecido cruzou seu olhar, e ela parou por um instante."
     },
-    "potential6": {
+    "potential5": {
       "name": "Vamos Deixar o Mundo de Pernas Para o Ar",
       "author": "LM7",
       "description": "Mude sua perspectiva e você verá novas paisagens, sentirá diferentes emoções e se tornará uma nova pessoa. Uau, o mundo parece completamente novo."

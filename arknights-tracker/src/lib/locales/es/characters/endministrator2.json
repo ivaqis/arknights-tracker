@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Triturar",
+      "Con. de mas."
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+      },
+      "name": "Secuencia destructiva",
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo"
+      },
+      "name": "Secuencia constructiva",
+      "description": "Una ráfaga contundente de Artes de Originio que ataca a los enemigos dentro del área de efecto. Inflige <@ba.pd>DAÑ físico</> y aplica <#ba.crush>Triturar</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "crystalShatteringDmgMultiplier": "Multiplicador de DAÑ Quebrar cristales",
+        "stagger": "Tambaleo",
+        "sealDurationS": "Duración Sello (s)"
+      },
+      "name": "Secuencia de sellado",
+      "description": "ACTIVADOR DE COMBO: Cuando otro operador del equipo inflige DAÑ con habilidades de combo. \nSe lanza hacia el enemigo para infligir <@ba.pd>DAÑ físico</> y adherir <#ba.originium>Cristales de Originio</> que lo sellan temporalmente. Aplicar un <#ba.physicalstatus>estado físico</> o <#ba.noguard>Vulnerabilidad</> al enemigo sellado <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige <@ba.pd>DAÑ físico</> adicional."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "bonusDmgMultiplier": "Multiplicador de DAÑ adicional",
+        "stagger": "Tambaleo"
+      },
+      "name": "Secuencia de bombardeo",
+      "description": "Bombardea el suelo con Artes de Originio, inflige <@ba.pd>DAÑ físico</> masivo a todos los enemigos dentro de un área en forma de abanico. Si el enemigo tiene <#ba.originium>Cristales de Originio</> encima, esta habilidad <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige un golpe más de <@ba.pd>DAÑ físico</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidad del operador +10.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +20."
+      ],
+      "name": "Guerrillero"
+    },
+    "talent1": {
+      "levels": [
+        "Cuando los <#ba.originium>Cristales de Originio</> adheridos al enemigo se <#ba.consume>consumen</>, el Endministrator obtiene ATQ <@ba.vup>+{atk_up:0%}</> durante {duration:0} s. Este efecto no se acumula.",
+        "Cuando los <#ba.originium>Cristales de Originio</> adheridos al enemigo se <#ba.consume>consumen</>, el Endministrator obtiene ATQ <@ba.vup>+{atk_up:0%}</> durante {duration:0} s. Este efecto no se acumula."
+      ],
+      "name": "Desintegración de esencia"
+    },
+    "talent2": {
+      "levels": [
+        "Los enemigos con <#ba.originium>Cristales de Originio</> adheridos sufren DAÑ físico recibido <@ba.vup>+{dmg:0%}</>.",
+        "Los enemigos con <#ba.originium>Cristales de Originio</> adheridos sufren DAÑ físico recibido <@ba.vup>+{dmg:0%}</>."
+      ],
+      "name": "Estasis de espacio real"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidad de batalla <@ba.key>Secuencia constructiva</> mejorada: <#ba.consume>Consumir</> <#ba.originium>Cristales de originio</> <#ba.return>devuelve</> <@ba.vup>{atb_return:0}</> PH.",
+      "name": "Despertar final"
+    },
+    "potential2": {
+      "description": "Talento <@ba.key>Desintegración de esencia</> mejorado: Cuando el Endministrator obtiene el incremento de ATQ, otros operadores aliados obtienen la mitad de este incremento de ATQ.",
+      "name": "Imagen de autoridad"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "¿¿¿???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "¿¿¿???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "¿¿¿???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Malla de memoria",
+      "author": "狂zip",
+      "description": "El último registro es un pequeño pasaje o alguna forma de dirección. Los hilos han sido tejidos y las piezas están en su lugar. Tú ya sabías todo esto."
+    },
+    "potential3": {
+      "name": "Cuadrante",
+      "author": "廻轉",
+      "description": "Estás justo en el centro de una encrucijada."
+    },
+    "potential6": {
+      "name": "Comprensión total",
+      "author": "수줍(Sjoop)",
+      "description": "La confianza y la fe se solidificaron en tu palma. El primer fragmento se llama Historia. Su otro nombre es Civilización y Vida."
+    }
+  }
+}

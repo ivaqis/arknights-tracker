@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Đông Cứng",
+      "Bạo kích"
+    ],
+    "behaviourHateTags": [
+      "Thể Thao"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội"
+    ],
+    "blocTag": "Tập Đoàn Endfield",
+    "expertTags": [
+      "Khai Sáng",
+      "Quản Lý Đội"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Thời Trang",
+      "Công Nghệ"
+    ],
+    "raceTag": "Vouivre"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "Trí Tuệ Đặc Vụ +10.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +20."
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "Chụp ảnh tự sướng với Yvonne không cần đèn. Suy cho cùng, cô ấy chính là nguồn sáng rực rỡ nhất."
     },
-    "potential6": {
+    "potential5": {
       "name": "Win-Win!",
       "author": "u介",
       "description": "Những lớp sơn rực rỡ, giai điệu vui tươi và nụ cười mãn nguyện sau chiến thắng... Cô đã ghi lại từng khoảnh khắc hân hoan ấy và giờ đây đang chia sẻ chúng với bạn."

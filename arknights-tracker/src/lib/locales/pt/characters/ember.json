@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Derrubar",
+      "Tratamento PV",
+      "Escudo"
+    ],
+    "behaviourHateTags": [
+      "Estilo de Vida"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Ordem do Juramento de Aço",
+    "expertTags": [
+      "Técnica de Combate",
+      "Constituição"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Esportes",
+      "Tecnologia"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Força do Operador + 10.",
         "Força do Operador + 15.",
         "Força do Operador + 15.",
         "Força do Operador + 20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "A cruzada é o caminho para o objetivo. Os verdadeiros guerreiros não caem até que a meta seja cumprida."
     },
-    "potential6": {
+    "potential5": {
       "name": "O Bastião Nunca Rompido",
       "author": "MoooFoo",
       "description": "Aço incandescente e sangue puro eram os tijolos e a argamassa dos bastiões do norte. O Norte não é o seu pesadelo. É apenas o seu próximo destino."

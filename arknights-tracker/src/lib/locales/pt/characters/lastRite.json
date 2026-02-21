@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Causador de Dano",
+      "Inflição Crio"
+    ],
+    "behaviourHateTags": [
+      "Estilo de Vida"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Técnica de Combate",
+      "Constituição"
+    ],
+    "giftPreferTags": [
+      "Escolha da Indústria do Vale"
+    ],
+    "hobbyTags": [
+      "Aprimoramento da Mente",
+      "Caridade"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Força do Operador + 10.",
         "Força do Operador + 15.",
         "Força do Operador + 15.",
         "Força do Operador + 20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "As vastas terras a abraçaram enquanto ela dormia. Uma eternidade de invernos aguarda seu chamado. No entanto, a garota deseja apenas oferecer um buquê no local de seu descanso."
     },
-    "potential6": {
+    "potential5": {
       "name": "Primeira Rima a Florescer",
       "author": "REM",
       "description": "Ela tem muitas perguntas sem resposta e muitas dificuldades ainda não superadas. Mesmo assim, ela cumprirá todas as suas atribuições e devolverá os sorrisos aos rostos de todos."

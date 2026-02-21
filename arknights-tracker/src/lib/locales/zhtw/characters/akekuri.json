@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "技力回復",
+      "灼熱附著",
+      "連擊"
+    ],
+    "behaviourHateTags": [
+      "藝術"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "終末地工業",
+    "expertTags": [
+      "團隊管理",
+      "烹飪"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "公益",
+      "運動"
+    ],
+    "raceTag": "佩洛"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -38,6 +62,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員敏捷能力值提升10。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升20。"
@@ -113,7 +138,7 @@
       "author": "BBokyo",
       "description": "用行動照亮身邊的人，再把這份光延伸到更遠的地方。"
     },
-    "potential6": {
+    "potential5": {
       "name": "明日新星",
       "author": "Kaneni",
       "description": "她微笑著，像破曉時的風，帶著未曾言說的希望，蘊藏著靜默的勇氣。"

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Naturkumulierung",
+      "Kryokumulierung"
+    ],
+    "behaviourHateTags": [
+      "Kultur"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertiert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Überleben im Freien",
+      "Straßenwissen"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Natur",
+      "Kreativ"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Beweglichkeit +10.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Sie ist nicht nachtragend. Ihre Gegner leben dafür meist nicht lange genug."
     },
-    "potential6": {
+    "potential5": {
       "name": "Grauzonen des Gesetzes",
       "author": "Doppel",
       "description": "Gerechtigkeit wird immer walten. Doch sollte sich die Gerechtigkeit entschließen, zu spät auf den Plan zu treten, erwartet uns eine wahrlich spektakuläre Darbietung."

@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "寒冷付着",
+      "浮遊",
+      "物理脆弱"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "社交的"
+    ],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "戦術",
+      "潜伏"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "芸術",
+      "頭脳"
+    ],
+    "raceTag": "フェリーン"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "意志が10アップする",
         "意志が15アップする",
         "意志が15アップする",
         "意志が20アップする"
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "「飲んでみる？む……これねぇ、虫とか植物のエキスを混ぜた栄養ドリンクなんだぁ。ふぁ……へ～んな味……」"
     },
-    "potential6": {
+    "potential5": {
       "name": "秘密の時間",
       "author": "かしまき",
       "description": "仕事の合間に、ちょっと息抜きしない？"

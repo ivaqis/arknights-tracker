@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abbattimento",
+      "Suscettibilità fisica",
+      "Concatenamento"
+    ],
+    "behaviourHateTags": [
+      "Belle arti"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione"
+    ],
+    "blocTag": "Accademia scientifica di Hongshan (ASH)",
+    "expertTags": [
+      "Agilità",
+      "Conoscenze naturali"
+    ],
+    "giftPreferTags": [
+      "Scelta dei corridori di Wuling"
+    ],
+    "hobbyTags": [
+      "Sport",
+      "Natura"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilità operatore +10.",
         "Agilità operatore +15.",
         "Agilità operatore +15.",
         "Agilità operatore +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "La via dell'addestramento è lunga, ma il suo sguardo arde di determinazione: tu sei l'esempio da seguire."
     },
-    "potential6": {
+    "potential5": {
       "name": "Cuor di gioventù",
       "author": "Eteru",
       "description": "Come un blocco di giada grezza lui resisterà allo scalpello, conservando la purezza del suo cuore."

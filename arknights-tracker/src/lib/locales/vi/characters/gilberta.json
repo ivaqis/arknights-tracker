@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Dễ Bị Thương TP",
+      "Nhiễm Tự Nhiên",
+      "Hất Tung"
+    ],
+    "behaviourHateTags": [
+      "Công Nghệ"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Phiêu lưu",
+      "Thuật Pháp Originium"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Thời Trang",
+      "Văn Hóa"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "Cô dừng bước chân nhanh nhẹn, nhẹ nhàng và không còn vội vã nữa. Ánh mắt cô bắt gặp một bóng người quen thuộc, và cô dừng lại một chút."
     },
-    "potential6": {
+    "potential5": {
       "name": "Hãy Lật Ngược Thế Giới",
       "author": "LM7",
       "description": "Hãy đảo ngược tầm nhìn của bạn và bạn sẽ thấy những góc nhìn khác nhau, trải nghiệm những tâm trạng khác nhau và trở thành một con người khác. Ôi trời, thế giới đã trở nên hoàn toàn mới."

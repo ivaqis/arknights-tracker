@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量伤害",
+      "寒冷附着"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [
+      "外向"
+    ],
+    "blocTag": "塞什卡",
+    "expertTags": [
+      "作战技巧",
+      "身强力壮"
+    ],
+    "giftPreferTags": [
+      "谷地·工业严选"
+    ],
+    "hobbyTags": [
+      "益智",
+      "公益"
+    ],
+    "raceTag": "萨卡兹"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "干员力量能力值提升10。",
         "干员力量能力值提升15。",
         "干员力量能力值提升15。",
         "干员力量能力值提升20。"
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "一片浩瀚土地依偎着她沉眠，千载漫漫寒冬静候着她差遣。不过，少女只想为它的安息献上一束花。"
     },
-    "potential6": {
+    "potential5": {
       "name": "初绽霜花",
       "author": "REM",
       "description": "她还有许多问题等待解答，她还有许多困难需要克服。即便如此，她也一定会完成你给的每一项任务，让更多人找回笑容。"

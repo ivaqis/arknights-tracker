@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Distruzione",
+      "Controllo nemici"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
+      },
+      "name": "Sequenza distruttiva",
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento"
+      },
+      "name": "Sequenza costruttiva",
+      "description": "Una potente esplosione di Arti di Originium che colpisce i nemici nel raggio d'azione. Infligge <@ba.pd>danni fisici</> e applica <#ba.crush>Distruzione</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "crystalShatteringDmgMultiplier": "Moltiplicatore danni Infrangimento dei cristalli",
+        "stagger": "Vacillamento",
+        "sealDurationS": "Durata sigillo (s)"
+      },
+      "name": "Sequenza sigillante",
+      "description": "ATTIVAZIONE COMBO: quando un altro operatore nella squadra infligge danni con abilità combo. \nSi precipita accanto al nemico per infliggere <@ba.pd>danni fisici</> e applica <#ba.originium>cristalli di Originium</> che attivano un sigillo temporaneo. L'applicazione di uno <#ba.physicalstatus>stato fisico</> o di <#ba.noguard>Vulnerabilità</> al nemico sigillato <#ba.consume>consuma</> i <#ba.originium>cristalli di Originium</> infliggendo <@ba.pd>danni fisici</> aggiuntivi."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "bonusDmgMultiplier": "Moltiplicatore danni bonus",
+        "stagger": "Vacillamento"
+      },
+      "name": "Sequenza di bombardamento",
+      "description": "Bombarda il suolo con le Arti di Originium, infliggendo ingenti <@ba.pd>danni fisici</> a tutti i nemici compresi in un'area a ventaglio. Se al nemico sono stati applicati <#ba.originium>cristalli di Originium</>, l'abilità li <#ba.consume>consuma</> e infligge un colpo aggiuntivo che provoca ulteriori <@ba.pd>danni fisici</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilità operatore +10.",
+        "Agilità operatore +15.",
+        "Agilità operatore +15.",
+        "Agilità operatore +20."
+      ],
+      "name": "Destrezza"
+    },
+    "talent1": {
+      "levels": [
+        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula.",
+        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula."
+      ],
+      "name": "Disintegrazione d'essenza"
+    },
+    "talent2": {
+      "levels": [
+        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici.",
+        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici."
+      ],
+      "name": "Stasi dello spazio reale"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Abilità di combattimento <@ba.key>Sequenza costruttiva</> migliorata: <#ba.consume>consumare</> <#ba.originium>cristalli di Originium</> <#ba.return>ripristina</> <@ba.vup>{atb_return:0}</> PA.",
+      "name": "Risveglio finale"
+    },
+    "potential2": {
+      "description": "Talento <@ba.key>Disintegrazione d'essenza</> migliorato: quando l'Endministrator ottiene un potenziamento dell'ATT, gli altri operatori alleati ne ottengono la metà.",
+      "name": "Riflesso d'autorità"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Intreccio di ricordi",
+      "author": "狂zip",
+      "description": "L'ultima annotazione è un breve passaggio, o forse una sorta di direttiva. I fili sono ormai intrecciati e ogni pezzo è al suo posto. Tu sapevi ogni cosa."
+    },
+    "potential3": {
+      "name": "Quadrante",
+      "author": "廻轉",
+      "description": "Ti trovi al centro del crocevia."
+    },
+    "potential6": {
+      "name": "Visione d'insieme",
+      "author": "수줍(Sjoop)",
+      "description": "Speranza e fiducia nel palmo della tua mano. Il primo frammento racchiude in sé l'essenza della storia, della vita e della civiltà."
+    }
+  }
+}

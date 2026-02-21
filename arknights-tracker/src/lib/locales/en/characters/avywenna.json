@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Arts Susc."
+    ],
+    "behaviourHateTags": [
+      "Mind Honing"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Talos-II General Chamber of Commerce (TGCC)",
+    "expertTags": [
+      "Street Wisdom",
+      "Agility"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Fashion"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Will +10.",
         "Operator Will +15.",
         "Operator Will +15.",
         "Operator Will +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "She acquired plenty of memories and nostalgias from all sorts of people, but hardly ever mentioned her own."
     },
-    "potential6": {
+    "potential5": {
       "name": "Mystery Invite",
       "author": "LM7",
       "description": "The journey is uncertain, but the messenger never hesitated when toasting you this invite."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "倒地",
+      "治療",
+      "護盾"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "鐵誓軍",
+    "expertTags": [
+      "作戰技巧",
+      "身強力壯"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "運動",
+      "科技"
+    ],
+    "raceTag": "薩科塔"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員力量能力值提升10。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升20。"
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "征伐只是通向目標的過程，而戰士不會在目標前方倒下。"
     },
-    "potential6": {
+    "potential5": {
       "name": "不落堅城",
       "author": "MoooFoo",
       "description": "堅硬的血和熾熱的鋼在北地築成堡壘。那裡不是她的夢魘，那裡仍是下一個終點。"

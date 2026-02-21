@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Causador de Dano",
+      "Susc. Artes"
+    ],
+    "behaviourHateTags": [
+      "Aprimoramento da Mente"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Câmara Geral de Comércio de Talos-II (CGCT)",
+    "expertTags": [
+      "Sabedoria Urbana",
+      "Agilidade"
+    ],
+    "giftPreferTags": [
+      "Escolha da Indústria do Vale"
+    ],
+    "hobbyTags": [
+      "Estilo de Vida",
+      "Moda"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Vontade do Operador + 10.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Ela adquiriu muitas lembranças e nostalgias de todos os tipos de pessoas, mas quase nunca mencionou as suas próprias."
     },
-    "potential6": {
+    "potential5": {
       "name": "Convite Misterioso",
       "author": "LM7",
       "description": "A jornada é incerta, mas o mensageiro nunca hesitou em enviar esse convite para você via toast."

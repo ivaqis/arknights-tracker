@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "치유",
+      "냉기 부착",
+      "증폭"
+    ],
+    "behaviourHateTags": [
+      "운동"
+    ],
+    "behaviourUnavailableTags": [
+      "외향적"
+    ],
+    "blocTag": "고요한 수도회",
+    "expertTags": [
+      "박학다식",
+      "정보 기술"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "과학기술",
+      "지능 훈련"
+    ],
+    "raceTag": "살카즈"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 의지 능력치 10 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 20 증가"
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "율법, 기호, 논리, 연산. 경건한 수사는 이 모든 것에 몰두합니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "진리를 향한 믿음",
       "author": "se_eeeee",
       "description": "미지를 두려워하지 않고, 혼란을 거부하지 않는 것... 그것이 바로 진리를 탐구하는 자이히의 신조입니다."

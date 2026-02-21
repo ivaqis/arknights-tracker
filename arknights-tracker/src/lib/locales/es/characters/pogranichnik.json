@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Rec. de PH",
+      "Brecha"
+    ],
+    "behaviourHateTags": [
+      "Estilo de vida"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Tácticas de campo de batalla",
+      "Gestión de equipo"
+    ],
+    "giftPreferTags": [
+      "Selección de los Corredores de Wuling"
+    ],
+    "hobbyTags": [
+      "Cultura",
+      "Perfeccionamiento mental"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Voluntad del operador +10.",
         "Voluntad del operador +15.",
         "Voluntad del operador +15.",
         "Voluntad del operador +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Pero no albergaba absolutamente ningún odio hacia el Imperio. Había pasado más de un siglo desde la muerte del “Emperador”, aún así, una nueva formación de guardianes del escudo se levantó tras él."
     },
-    "potential6": {
+    "potential5": {
       "name": "Jaque mate",
       "author": "大明",
       "description": "El humo de la ruina aún persistía. Varios fragmentos, vivos y muertos, se desprendían del pesado cadáver. Su espada servía como sostén de su cuerpo, su juramento de acero y su vigilia. Y entonces, hizo su jugada. Jaque mate."

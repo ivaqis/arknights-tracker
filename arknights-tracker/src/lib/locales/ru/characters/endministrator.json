@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Разгром",
+      "Контроль врагов"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Вы оказались в центре перекрестка."
     },
-    "potential6": {
+    "potential5": {
       "name": "Полное понимание",
       "author": "수줍(Sjoop)",
       "description": "В ваших руках сосредоточено доверие. Его первый осколок — история, второй — жизнь и цивилизация."

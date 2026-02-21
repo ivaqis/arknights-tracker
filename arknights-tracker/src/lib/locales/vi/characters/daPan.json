@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Hất Tung",
+      "Nghiền"
+    ],
+    "behaviourHateTags": [
+      "Thời Trang"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Nấu Ăn",
+      "Lắp Ráp Dụng Cụ"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Người Đưa Tin Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Phong Cách Sống",
+      "Tổ Chức Từ Thiện"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Sức Mạnh Đặc Vụ +10.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "Vậy thì ai có nhiều thời gian rảnh rỗi, làm bạn với một vài con Thú Lông Vũ, để thong thả trên đỉnh núi?"
     },
-    "potential6": {
+    "potential5": {
       "name": "Tất Cả Hương Vị Của Cuộc Sống",
       "author": "黑犬",
       "description": "Cuộc sống không giống như nấu ăn, nơi bạn có thể chuẩn bị mọi thứ trước khi thả chúng vào chảo. Tuy nhiên, những gì chúng ta thấy và trải nghiệm có thể được dùng làm nguyên liệu để tạo nên mọi hương vị của cuộc sống."

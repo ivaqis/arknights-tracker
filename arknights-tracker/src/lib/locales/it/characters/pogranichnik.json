@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Recupero PA",
+      "Sfondamento"
+    ],
+    "behaviourHateTags": [
+      "Stile di vita"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Strategie di combattimento",
+      "Gestione della squadra"
+    ],
+    "giftPreferTags": [
+      "Scelta dei corridori di Wuling"
+    ],
+    "hobbyTags": [
+      "Cultura",
+      "Fortificazione mentale"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Volontà operatore +10.",
         "Volontà operatore +15.",
         "Volontà operatore +15.",
         "Volontà operatore +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Non nutriva il minimo odio verso l'impero. È trascorso oltre un secolo dalla morte del cosiddetto \"imperatore\", eppure dietro di lui si è levata una nuova formazione di Baluardi."
     },
-    "potential6": {
+    "potential5": {
       "name": "Scacco matto",
       "author": "大明",
       "description": "Il fumo delle rovine persisteva nell'aria. Brandelli di vita e di morte si staccavano dal massiccio cadavere. Con la sua lama ha sorretto sé stesso, il suo giuramento d'acciaio e la sua veglia, poi ha fatto la mossa decisiva. Scacco matto."

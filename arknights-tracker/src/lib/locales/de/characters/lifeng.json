@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Niederschlagen",
+      "PHY Anfäll.",
+      "Verbunden"
+    ],
+    "behaviourHateTags": [
+      "Schönen Künste"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert"
+    ],
+    "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
+    "expertTags": [
+      "Beweglichkeit",
+      "Natürliche Hintergrundgeschichte"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Läufern empfohlen"
+    ],
+    "hobbyTags": [
+      "Sport",
+      "Natur"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Beweglichkeit +10.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "Ein langer Weg des Trainings liegt vor ihm, doch das Feuer in seinen Augen lodert, wenn er dich, sein Vorbild, vor sich sieht."
     },
-    "potential6": {
+    "potential5": {
       "name": "Herz der Jugend",
       "author": "Eteru",
       "description": "Wie ein Block natürlich vorkommender Jade wird er die Hiebe ertragen und die Reinheit seines Herzens bewahren."

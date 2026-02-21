@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "냉기 부착",
+      "띄우기",
+      "물리 취약"
+    ],
+    "behaviourHateTags": [
+      "운동"
+    ],
+    "behaviourUnavailableTags": [
+      "외향적"
+    ],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "전략 수립",
+      "잠복"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "예술",
+      "지능 훈련"
+    ],
+    "raceTag": "필라인"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 의지 능력치 10 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 20 증가"
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "\"한번... 맛보실래요? 음... 이건 곤충이랑 식물 추출물을 섞은 영양 음료인데... 맛이 뭐랄까, 되게 신기해요.\""
     },
-    "potential6": {
+    "potential5": {
       "name": "비밀의 시간",
       "author": "かしまき",
       "description": "망중한의 여유를 다른 이와 함께하는 것에 대해 어떻게 생각하세요?"

@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Combust"
+    ],
+    "behaviourHateTags": [
+      "Teknologi"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Originium Arts",
+      "Analisis Situasi"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Kreatif",
+      "Gaya Hidup"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "Intellect Operator +10.",
         "Intellect Operator +15.",
         "Intellect Operator +15.",
         "Intellect Operator +20."
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538°C adalah titik lebur ferrium, bukan dirinya. Dekati saja dia kalau kau memang merasa sudah siap."
     },
-    "potential6": {
+    "potential5": {
       "name": "Undangan ke Leburan Api",
       "author": "min",
       "description": "Temani dia melewati malam-malam panjang tanpa ingatan. Bertarunglah bersamanya dan bakar musuh-musuh gelap yang menghantuinya. Dampingilah saat dia menyalakan api untuk menerangi perjalanan mendatang."

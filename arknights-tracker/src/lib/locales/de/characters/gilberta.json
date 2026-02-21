@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Techniken-Anfäll.",
+      "Naturkumulierung",
+      "Anheben"
+    ],
+    "behaviourHateTags": [
+      "Technologie"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Abenteuer",
+      "Originium-Techniken"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Mode",
+      "Kultur"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "Ihr schnellen, eleganten Schritte hielten inne und die Eile wich aus ihr. Eine bekannte Person hatte ihre Aufmerksamkeit erregt und sie hielt kurz inne."
     },
-    "potential6": {
+    "potential5": {
       "name": "Lasst uns die Welt auf den Kopf stellen!",
       "author": "LM7",
       "description": "Stelle deine Sicht auf den Kopf, um eine andere Perspektive einzunehmen, andere Stimmungen zu erleben und ein anderes Ich zu werden. Oha, die Welt ist nun eine völlig andere."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "비호",
+      "보호",
+      "허약"
+    ],
+    "behaviourHateTags": [
+      "패션"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "도구 제작",
+      "요리"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "생활",
+      "운동"
+    ],
+    "raceTag": "페로"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -126,7 +151,7 @@
       "author": "EXP",
       "description": "임무 시작 전, 카치르는 이미 모든 변수에 대한 열 가지 대비책을 준비해 뒀습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "든든한 지원",
       "author": "かしまき",
       "description": "몸과 마음을 채우는 든든함, 그리고 더할 나위 없는 포만감... 카치르가 있는 팀에서 절대 부족하지 않을 것들입니다."

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nature Inflict",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [
+      "Budaya"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Bertahan Hidup di Alam",
+      "Kearifan Jalanan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Kreatif"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agility Operator +10.",
         "Agility Operator +15.",
         "Agility Operator +15.",
         "Agility Operator +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Dia jarang mendendam. Mana mungkin, kan musuh-musuhnya tak akan bisa bertahan lama."
     },
-    "potential6": {
+    "potential5": {
       "name": "Batasan Abu-Abu Aturan",
       "author": "Doppel",
       "description": "Keadilan akan selalu hadir. Tapi, jika keadilan datang terlambat, pertunjukannya akan makin seru."

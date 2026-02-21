@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Distruzione",
+      "Controllo nemici"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Ti trovi al centro del crocevia."
     },
-    "potential6": {
+    "potential5": {
       "name": "Visione d'insieme",
       "author": "수줍(Sjoop)",
       "description": "Speranza e fiducia nel palmo della tua mano. Il primo frammento racchiude in sé l'essenza della storia, della vita e della civiltà."

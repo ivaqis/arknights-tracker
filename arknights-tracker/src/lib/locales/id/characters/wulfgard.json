@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Heat Infliction",
+      "Combust"
+    ],
+    "behaviourHateTags": [
+      "Asah Pikiran"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Teknik Tempur",
+      "Penyusup"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Kreatif"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Dia hanya menurunkan kewaspadaan saat bersama mereka yang benar-benar dia percayai. Lalu, sifat aslinya yang telah terlupakan sejak kecil pun muncul kembali."
     },
-    "potential6": {
+    "potential5": {
       "name": "Lirikan Pemangsa",
       "author": "FE",
       "description": "Sang pemburu muda melangkah ke wilayah perburuannya, diiringi auman Wolf Spirit. Matanya terpaku pada tiap mangsanya, dan senapannya akan menjatuhkan mereka satu per satu."

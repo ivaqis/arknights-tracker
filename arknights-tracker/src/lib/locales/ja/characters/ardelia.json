@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "治療",
+      "腐食",
+      "脆弱"
+    ],
+    "behaviourHateTags": [
+      "文化"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "ロドス・アイランド",
+    "expertTags": [
+      "自然知識",
+      "冒険"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "自然"
+    ],
+    "raceTag": "キャプリニー"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "知性が10アップする",
         "知性が15アップする",
         "知性が15アップする",
         "知性が20アップする"
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "ふわふわのピンクの雲に寝ころんだら、どんなことを考えるかな？不思議な石？まだ行ったことのない場所、それとも……"
     },
-    "potential6": {
+    "potential5": {
       "name": "願い",
       "author": "Eteru",
       "description": "冷たく硬い岩の上に咲き誇る花、生気と温もりに満ちた荒野、耳元で優しく響く穏やかな旋律……先輩、これ夢じゃないですよね？"

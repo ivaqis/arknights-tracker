@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "アーツ脆弱",
+      "増幅"
+    ],
+    "behaviourHateTags": [
+      "文化"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "道具製造",
+      "情勢分析"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "頭脳",
+      "創造性"
+    ],
+    "raceTag": "サヴラ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "知性が10アップする",
         "知性が15アップする",
         "知性が15アップする",
         "知性が20アップする"
@@ -117,7 +141,7 @@
       "author": "黑犬",
       "description": "「邪魔しないでください。彼は今は源石アーツで火を塵に圧縮する115回目の実験中なんです。」"
     },
-    "potential6": {
+    "potential5": {
       "name": "極みに至る",
       "author": "言犬",
       "description": "学び、悟り、唯一の答えを求めて、果てなき探究の道をただ突き進む。"

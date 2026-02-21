@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "击飞",
+      "失衡"
+    ],
+    "behaviourHateTags": [
+      "科技"
+    ],
+    "behaviourUnavailableTags": [
+      "内向"
+    ],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "博闻强记",
+      "灵光一闪"
+    ],
+    "giftPreferTags": [
+      "武陵·跑者严选"
+    ],
+    "hobbyTags": [
+      "文化",
+      "公益"
+    ],
+    "raceTag": "龙"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -118,7 +143,7 @@
       "author": "Kieed",
       "description": "剑是她对母亲的思念，剑是她选择的道路，剑是她守护你的信念。"
     },
-    "potential6": {
+    "potential5": {
       "name": "龙腾",
       "author": "宇木敦哉",
       "description": "剑出，龙腾，风起，云涌。"

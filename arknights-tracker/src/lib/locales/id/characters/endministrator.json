@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Crush",
+      "Crowd Control"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Kamu berdiri tepat di tengah persimpangan."
     },
-    "potential6": {
+    "potential5": {
       "name": "Tergenggam Sepenuhnya",
       "author": "수줍(Sjoop)",
       "description": "Kepercayaan dan keyakinan menyatu dalam genggamanmu. Fragmen yang pertama bernama sejarah. Nama lainnya adalah Peradaban dan Kehidupan."

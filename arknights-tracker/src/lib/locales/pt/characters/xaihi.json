@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Tratamento PV",
+      "Inflição Crio",
+      "Amp"
+    ],
+    "behaviourHateTags": [
+      "Esportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Cabala da Tranquilidade",
+    "expertTags": [
+      "Erudito",
+      "Tecnologia da Informação"
+    ],
+    "giftPreferTags": [
+      "Escolha da Indústria do Vale"
+    ],
+    "hobbyTags": [
+      "Tecnologia",
+      "Aprimoramento da Mente"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Vontade do Operador + 10.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "Lei, os Sinais, a Lógica e os Algoritmos — O clérigo fiel está totalmente envolvido em todos eles."
     },
-    "potential6": {
+    "potential5": {
       "name": "Encarando Veritas",
       "author": "se_eeeee",
       "description": "Não tema o desconhecido e não rejeite o caos. Esses são os princípios que guiam sua busca pela verdade."

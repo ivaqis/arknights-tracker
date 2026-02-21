@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Lift",
+      "Crush"
+    ],
+    "behaviourHateTags": [
+      "Fashion"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Cooking",
+      "Tool Assembly"
+    ],
+    "giftPreferTags": [
+      "Wuling Runners' Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Charity"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Strength +10.",
         "Operator Strength +15.",
         "Operator Strength +15.",
         "Operator Strength +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "So who has time aplenty, with a few fowlbeasts as company, for idling on the peak?"
     },
-    "potential6": {
+    "potential5": {
       "name": "All the Tastes of Life",
       "author": "黑犬",
       "description": "Life is nothing like cooking where you can prep everything before dunking them into the wok. However, the things we saw and experienced can be used as ingredients to offer all the tastes of life."

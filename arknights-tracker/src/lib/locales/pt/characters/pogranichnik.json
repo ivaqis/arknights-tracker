@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Recuperação de PH",
+      "Romper"
+    ],
+    "behaviourHateTags": [
+      "Estilo de Vida"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Táticas de Campo de Batalha",
+      "Gerenciamento de Equipes"
+    ],
+    "giftPreferTags": [
+      "Escolha dos Corredores de Wuling"
+    ],
+    "hobbyTags": [
+      "Cultura",
+      "Aprimoramento da Mente"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Vontade do Operador + 10.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Mas ele não nutria absolutamente nenhum ódio pelo Império. Mais de um século se passara desde a morte do \"Imperador\", e uma nova formação de escudeiros se ergueu atrás dele."
     },
-    "potential6": {
+    "potential5": {
       "name": "Xeque-Mate",
       "author": "大明",
       "description": "A fumaça da ruína ainda pairava no ar. Inúmeros pedaços, vivos e mortos, se desprendiam do pesado cadáver. Sua lâmina servia de suporte para o corpo, seu juramento de aço e sua vigília — e então ele fez seu movimento. Xeque-mate."

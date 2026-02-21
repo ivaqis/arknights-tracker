@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Recupero PA",
+      "Solidificazione"
+    ],
+    "behaviourHateTags": [
+      "Fortificazione mentale"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Unione dei Sindacati dei Lavoratori di Talos-II",
+    "expertTags": [
+      "Sopravvivenza all'aperto",
+      "Strategie di combattimento"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'industria della Valle"
+    ],
+    "hobbyTags": [
+      "Cultura",
+      "Sport"
+    ],
+    "raceTag": "Anaty"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Forza operatore +10.",
         "Forza operatore +15.",
         "Forza operatore +15.",
         "Forza operatore +20."
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "La vita può essere crudele, ma l'occhio mancante sa cogliere i segreti che essa nasconde."
     },
-    "potential6": {
+    "potential5": {
       "name": "Una lenza da lanciare",
       "author": "w3",
       "description": "\"Qual è il momento più bello, nella pesca?\" \"Il lancio della lenza.\" \"Perché?\" \"Perché lì sono riposte tutte le tue speranze. L'incertezza fa battere forte il cuore.\""

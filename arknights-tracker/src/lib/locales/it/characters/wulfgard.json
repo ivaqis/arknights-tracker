@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Afflizione da fuoco",
+      "Combustione"
+    ],
+    "behaviourHateTags": [
+      "Fortificazione mentale"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Infiltrazione"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Natura",
+      "Creatività"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Si concede di abbassare la guardia soltanto con chi si è davvero conquistato la sua fiducia. Solo allora rivela la sua vera natura, sepolta dai tempi dell'infanzia."
     },
-    "potential6": {
+    "potential5": {
       "name": "Lo sguardo del predatore",
       "author": "FE",
       "description": "Il giovane predatore va a caccia, accompagnato dagli ululati del suo spirito di lupo. Con lo sguardo individua ogni preda, che di fronte alle sue pistole non ha scampo."

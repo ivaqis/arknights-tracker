@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "加護",
+      "治療",
+      "寒冷付着"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "ロドス・アイランド",
+    "expertTags": [
+      "サバイバル",
+      "医療技術"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "運動",
+      "社会貢献"
+    ],
+    "raceTag": "ウルサス"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "筋力が10アップする",
         "筋力が15アップする",
         "筋力が15アップする",
         "筋力が20アップする"
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "雪山の頂にさす眩い日差しのように、その姿はいつも絶望の淵にある人々を温め、希望の道へと導く。"
     },
-    "potential6": {
+    "potential5": {
       "name": "白銀を舞う",
       "author": "LAL!ROLE",
       "description": "雪山を越え、氷原を滑る。彼女は人命救助の道をただひた走る。"

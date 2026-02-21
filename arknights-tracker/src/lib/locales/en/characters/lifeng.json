@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Knock Down",
+      "PHY Susc.",
+      "Link"
+    ],
+    "behaviourHateTags": [
+      "Fine Arts"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing"
+    ],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Agility",
+      "Natural Lore"
+    ],
+    "giftPreferTags": [
+      "Wuling Runners' Choice"
+    ],
+    "hobbyTags": [
+      "Sports",
+      "Nature"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Agility +10.",
         "Operator Agility +15.",
         "Operator Agility +15.",
         "Operator Agility +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "The path of training is long, yet his eyes burn bright as he takes you as his example."
     },
-    "potential6": {
+    "potential5": {
       "name": "Heart of Youth",
       "author": "Eteru",
       "description": "Like a block of natural jade, he will endure the chiseling and retain his purity of heart."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Corrode",
+      "Susceptibility"
+    ],
+    "behaviourHateTags": [
+      "Budaya"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Kisah Alam",
+      "Petualangan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Alam"
+    ],
+    "raceTag": "Caprinae"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Intellect Operator +10.",
         "Intellect Operator +15.",
         "Intellect Operator +15.",
         "Intellect Operator +20."
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "Apa yang dilamunkannya saat berbaring di atas gumpalan awan merah muda yang lembut itu? Batu-batu aneh? Tempat yang belum pernah dikunjungi? Atau ...."
     },
-    "potential6": {
+    "potential5": {
       "name": "Aspirasi",
       "author": "Eteru",
       "description": "Bunga bermekaran di bebatuan yang dingin dan keras ... tanah tandus yang dipenuhi kehidupan dan kehangatan ... dan lagu indah yang bersenandung di telinga kita .... Profesor, ini bukan sekadar mimpi, ‘kan?"

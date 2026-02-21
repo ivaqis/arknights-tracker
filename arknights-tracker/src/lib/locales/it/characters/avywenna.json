@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abilità offensiva",
+      "Suscettibilità alle Arti"
+    ],
+    "behaviourHateTags": [
+      "Fortificazione mentale"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversione"
+    ],
+    "blocTag": "Camera di commercio generale di Talos-II (CCGT)",
+    "expertTags": [
+      "Saggezza di strada",
+      "Agilità"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'industria della Valle"
+    ],
+    "hobbyTags": [
+      "Stile di vita",
+      "Moda"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Volontà operatore +10.",
         "Volontà operatore +15.",
         "Volontà operatore +15.",
         "Volontà operatore +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Ha documentato i ricordi e i rammarichi di moltissime persone, ma difficilmente parla dei propri."
     },
-    "potential6": {
+    "potential5": {
       "name": "Invito misterioso",
       "author": "LM7",
       "description": "Nella vita non c'è niente di certo, eppure la messaggera ti ha mandato quest'invito senza esitazione."

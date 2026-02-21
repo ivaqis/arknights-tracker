@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hất Tung",
+      "Suy Sụp"
+    ],
+    "behaviourHateTags": [
+      "Công Nghệ"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội"
+    ],
+    "blocTag": "Tập Đoàn Endfield",
+    "expertTags": [
+      "Uyên Bác",
+      "Khai Sáng"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Người Đưa Tin Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Văn Hóa",
+      "Tổ Chức Từ Thiện"
+    ],
+    "raceTag": "Long"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -118,7 +143,7 @@
       "author": "Kieed",
       "description": "Thanh kiếm tượng trưng cho nỗi nhớ mẹ, con đường cô lựa chọn và ý chí muốn bảo vệ bạn."
     },
-    "potential6": {
+    "potential5": {
       "name": "Phi Long",
       "author": "宇木敦哉",
       "description": "Lưỡi kiếm đã rút ra. Rồng đã bay lên. Gió đang thổi. Mây đang cuộn trào."

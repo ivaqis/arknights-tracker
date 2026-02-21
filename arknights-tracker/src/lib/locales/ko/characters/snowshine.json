@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "비호",
+      "치유",
+      "냉기 부착"
+    ],
+    "behaviourHateTags": [
+      "운동"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "로도스 아일랜드",
+    "expertTags": [
+      "야외 생존",
+      "의료 기술"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "운동",
+      "공익"
+    ],
+    "raceTag": "우르수스"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "설산 정상에 비치는 눈 부신 햇살처럼, 스노우샤인은 절망에 빠진 이들에게 희망이 되어 혹독한 추위를 넘어 살길을 찾게 해줍니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "눈 위를 가르는 비행",
       "author": "LAL!ROLE",
       "description": "설산을 누비고 빙판 위를 활강하며, 소녀는 언제나 다른 이의 생명을 구하기 위해 전력으로 질주합니다."

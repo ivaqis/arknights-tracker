@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hồi Điểm KN",
+      "Đông Cứng"
+    ],
+    "behaviourHateTags": [
+      "Rèn Luyện Tâm Trí"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Đại Công Đoàn Talos II",
+    "expertTags": [
+      "Sinh Tồn Ngoài Trời",
+      "Chiến Thuật Chiến Trường"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Văn Hóa",
+      "Thể Thao"
+    ],
+    "raceTag": "Anaty"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Sức Mạnh Đặc Vụ +10.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +20."
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "Cuộc đời có thể khiến con người tả tơi, nhưng con mắt đã mất ấy lại nhìn thấu những bí mật ẩn sâu bên dưới."
     },
-    "potential6": {
+    "potential5": {
       "name": "Ngày Thả Cần Câu",
       "author": "w3",
       "description": "\"Khoảnh khắc nào là tuyệt vời nhất khi câu cá?\" \"Khi thả cần câu.\" \"Tại sao?\" \"Bởi vì nó chứa đựng hy vọng của bạn. Sự bất định khiến tim đập nhanh.\""

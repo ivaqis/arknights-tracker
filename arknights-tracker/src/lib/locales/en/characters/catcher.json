@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Protect",
+      "Shield",
+      "Weaken"
+    ],
+    "behaviourHateTags": [
+      "Fashion"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Tool Assembly",
+      "Cooking"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Sports"
+    ],
+    "raceTag": "Perro"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Strength +10.",
         "Operator Strength +15.",
         "Operator Strength +15.",
         "Operator Strength +20."
@@ -126,7 +151,7 @@
       "author": "EXP",
       "description": "Before the start of every mission, he would prep a dozen or so contingent plans for every subsequent situation."
     },
-    "potential6": {
+    "potential5": {
       "name": "Shield to Fall Back On",
       "author": "かしまき",
       "description": "Reassuring sense of security and gastronomic satisfaction — His team is never short on these."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Arts Susc.",
+      "Nature Inflict",
+      "Lift"
+    ],
+    "behaviourHateTags": [
+      "Teknologi"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Petualangan",
+      "Originium Arts"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Fesyen",
+      "Budaya"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "Langkah kakinya yang kecil dan cepat pun melambat. Sosok yang dia kenal menarik perhatiannya, membuatnya berhenti sejenak."
     },
-    "potential6": {
+    "potential5": {
       "name": "Ayo Balikkan Dunia",
       "author": "LM7",
       "description": "Balikkan pandanganmu, kamu pun akan melihat dunia yang berbeda, merasakan suasana hati yang lain, dan menemukan dirimu yang baru. Wah, dunia ini rasanya benar-benar jadi baru."

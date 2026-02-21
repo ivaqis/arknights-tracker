@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Renversement",
+      "Vuln. PHY",
+      "Lien"
+    ],
+    "behaviourHateTags": [
+      "Beaux-arts"
+    ],
+    "behaviourUnavailableTags": [
+      "Sociabilité"
+    ],
+    "blocTag": "Académie des sciences de Hongshan (ASH)",
+    "expertTags": [
+      "Agilité",
+      "Connaissance de la nature"
+    ],
+    "giftPreferTags": [
+      "Sélection des coureurs de Wuling"
+    ],
+    "hobbyTags": [
+      "Sports",
+      "Nature"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilité de l'opérateur +10.",
         "Agilité de l'opérateur +15.",
         "Agilité de l'opérateur +15.",
         "Agilité de l'opérateur +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "La voie de l'entraînement est longue, mais ça n'empêche pas ses yeux de briller d'un éclat vif ; vous êtes un exemple pour lui."
     },
-    "potential6": {
+    "potential5": {
       "name": "Cœur de la jeunesse",
       "author": "Eteru",
       "description": "Tout comme un bloc de jade, il supportera d'être taillé sans rien perdre de sa pureté."

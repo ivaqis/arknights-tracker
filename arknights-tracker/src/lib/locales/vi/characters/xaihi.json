@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hồi Phục HP",
+      "Nhiễm Băng",
+      "Tăng ST"
+    ],
+    "behaviourHateTags": [
+      "Thể Thao"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại"
+    ],
+    "blocTag": "Tu Hội Tĩnh Lặng",
+    "expertTags": [
+      "Uyên Bác",
+      "Công Nghệ Thông Tin"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Công Nghệ",
+      "Rèn Luyện Tâm Trí"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Ý Chí Đặc Vụ +10.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "Luật Pháp, Thánh Tích, Logic và Thuật Toán - Giáo sĩ trung thành hoàn toàn đắm chìm trong tất cả những điều đó."
     },
-    "potential6": {
+    "potential5": {
       "name": "Dõi Mắt Vào Chân Lý",
       "author": "se_eeeee",
       "description": "Đừng sợ điều chưa biết, và đừng chối bỏ sự hỗn loạn. Đó chính là những nguyên lý dẫn lối cô ấy đi tìm chân lý."

@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Crush",
+      "Crowd Control"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "You stand right at the center of the crossroads."
     },
-    "potential6": {
+    "potential5": {
       "name": "Fully Grasped",
       "author": "수줍(Sjoop)",
       "description": "Trust and faith congealed within your palm. The first fragment is named history. Its other name is Civilization and Life."

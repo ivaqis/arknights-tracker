@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cryo Infliction",
+      "Lift",
+      "PHY Susc."
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Battlefield Tactics",
+      "Infiltrator"
+    ],
+    "giftPreferTags": [
+      "Valley Protocol's Choice"
+    ],
+    "hobbyTags": [
+      "Fine Arts",
+      "Mind Honing"
+    ],
+    "raceTag": "Feline"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Will +10.",
         "Operator Will +15.",
         "Operator Will +15.",
         "Operator Will +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "\"How 'bout a sip? Oh... Well, it's a nutritious liquid blend of bugs and plant extracts. Yeah ... the taste is very interesting...\""
     },
-    "potential6": {
+    "potential5": {
       "name": "Secret Hour",
       "author": "かしまき",
       "description": "Mind sharing your hard-earned free time with someone?"

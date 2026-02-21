@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Kryokumulierung",
+      "Anheben",
+      "PHY Anfäll."
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Schlachtfeld-Taktik",
+      "Eindringling"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Schönen Künste",
+      "Gedächtnistraining"
+    ],
+    "raceTag": "Felin"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Wille +10.",
         "Operator-Wille +15.",
         "Operator-Wille +15.",
         "Operator-Wille +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "„Willst du einen Schluck? Oh … Also, dieses nährstoffreiche Getränk besteht aus Insekten und Pflanzenextrakten. Ja … der Geschmack ist sehr interessant …“"
     },
-    "potential6": {
+    "potential5": {
       "name": "Geheime Stunde",
       "author": "かしまき",
       "description": "Hättest du was dagegen, deine hart erarbeitete Freizeit mit jemandem zu teilen?"

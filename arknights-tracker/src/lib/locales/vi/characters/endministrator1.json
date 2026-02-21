@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nghiền",
+      "Chế Ngự Áp Đảo"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
+        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
+        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
+        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
+        "batkSeq5Multiplier": "Hệ Số Nhân Chuỗi Công CB 5",
+        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+      },
+      "name": "Chuỗi Phá Hủy",
+      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi ít Điểm KN."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp"
+      },
+      "name": "Chuỗi Kiến Tạo",
+      "description": "Một vụ nổ mạnh mẽ của Thuật Pháp Originium tấn công kẻ địch trong phạm vi ảnh hưởng. Gây <@ba.pd>ST Vật Lý</> và áp dụng hiệu ứng <#ba.crush>Nghiền</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "crystalShatteringDmgMultiplier": "Hệ Số ST Pha Lê Tan Vỡ",
+        "stagger": "Suy Sụp",
+        "sealDurationS": "Thời Gian Phong Ấn (giây)"
+      },
+      "name": "Chuỗi Phong Ấn",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi đặc vụ khác trong đội gây ST bằng KN liên hoàn. \nLao tới bên cạnh kẻ địch để gây <@ba.pd>ST Vật Lý</> và gắn <#ba.originium>Tinh Thể Originium</> để tạm thời phong ấn chúng. Áp dụng <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.noguard>Trừ Giáp</> lên kẻ địch bị phong ấn sẽ <#ba.consume>tiêu hao</> <#ba.originium>Tinh Thể Originium</> và gây thêm <@ba.pd>ST Vật Lý</>."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Hệ Số ST",
+        "bonusDmgMultiplier": "Hệ Số ST Cộng Thêm",
+        "stagger": "Suy Sụp"
+      },
+      "name": "Chuỗi Oanh Kích",
+      "description": "Bắn phá mặt đất bằng Thuật Pháp Originium, gây <@ba.pd>ST Vật Lý</> cực lớn lên tất cả kẻ địch trong khu vực hình quạt. Nếu kẻ địch có <#ba.originium>Tinh Thể Originium</> trên người, kỹ năng này <#ba.consume>tiêu thụ</> <#ba.originium>Tinh Thể Originium</> và gây thêm 1 đòn <@ba.pd>ST Vật Lý</>."
+    },
+    "indicator": {
+      "levels": [
+        "Nhanh Nhẹn Đặc Vụ +10.",
+        "Nhanh Nhẹn Đặc Vụ +15.",
+        "Nhanh Nhẹn Đặc Vụ +15.",
+        "Nhanh Nhẹn Đặc Vụ +20."
+      ],
+      "name": "Kẻ Đánh Lén"
+    },
+    "talent1": {
+      "levels": [
+        "Khi <#ba.originium>Tinh Thể Originium</> gắn trên kẻ địch bị <#ba.consume>tiêu hao</>, Endministrator nhận Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây. Hiệu ứng này không thể cộng dồn.",
+        "Khi <#ba.originium>Tinh Thể Originium</> gắn trên kẻ địch bị <#ba.consume>tiêu hao</>, Endministrator nhận Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây. Hiệu ứng này không thể cộng dồn."
+      ],
+      "name": "Hủy Hoại Tinh Chất"
+    },
+    "talent2": {
+      "levels": [
+        "Kẻ địch bị gắn <#ba.originium>Tinh Thể Originium</> sẽ có ST Vật Lý Nhận Vào <@ba.vup>+{dmg:0%}</>.",
+        "Kẻ địch bị gắn <#ba.originium>Tinh Thể Originium</> sẽ có ST Vật Lý Nhận Vào <@ba.vup>+{dmg:0%}</>."
+      ],
+      "name": "Đóng Băng Không Gian Thực"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN chiến đấu <@ba.key>Chuỗi Kiến Tạo</> được cải thiện: <#ba.consume>Tiêu hao</> <#ba.originium>Tinh Thể Originium</> <#ba.return>để hồi</> <@ba.vup>{atb_return:0}</> KN.",
+      "name": "Thức Tỉnh Cuối Cùng"
+    },
+    "potential2": {
+      "description": "Tài Năng <@ba.key>Hủy Hoại Tinh Chất</> được cải thiện: Khi Endministrator nhận buff Tấn Công, các đồng minh khác sẽ nhận một nửa hiệu ứng buff Tấn Công này.",
+      "name": "Phản Chiếu Uy Quyền"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Mạng Ký Ức",
+      "author": "狂zip",
+      "description": "Khúc gỗ cuối cùng là một đoạn văn nhỏ, hay một dạng chỉ thị nào đó. Các sợi chỉ đã được đan kết và các mảnh ghép đã vào đúng vị trí. Bạn đã biết tất cả những điều này rồi."
+    },
+    "potential3": {
+      "name": "Phân Vùng",
+      "author": "廻轉",
+      "description": "Bạn đang đứng ngay giữa ngã tư đường."
+    },
+    "potential6": {
+      "name": "Nắm Bắt Hoàn Toàn",
+      "author": "수줍(Sjoop)",
+      "description": "Niềm tin và đức tin lắng đọng trong lòng bàn tay bạn. Mảnh ghép đầu tiên mang tên lịch sử. Mảnh ghép còn lại mang tên Văn minh và Sự sống."
+    }
+  }
+}

@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Cryo Infliction",
+      "Amp"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing"
+    ],
+    "blocTag": "Cabal of Tranquility",
+    "expertTags": [
+      "Erudite",
+      "Information Technology"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Technology",
+      "Mind Honing"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Will +10.",
         "Operator Will +15.",
         "Operator Will +15.",
         "Operator Will +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "The Law, the Signs, the Logic, and the Algorithms — The faithful cleric is fully indulged in all them."
     },
-    "potential6": {
+    "potential5": {
       "name": "Gaze Long into Veritas",
       "author": "se_eeeee",
       "description": "Do not fear the unknown, and do not reject chaos. Such are the tenets that guide her search for truth."

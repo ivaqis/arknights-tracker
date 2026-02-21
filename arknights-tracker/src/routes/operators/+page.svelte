@@ -91,7 +91,7 @@
         </h2>
     </div>
 
-    <div class="w-full xl:w-[70%] px-8 mb-4">
+    <div class="w-full xl:w-[70%] mb-4">
         <DataToolbar
             bind:sortField
             bind:sortDirection
@@ -100,9 +100,9 @@
         />
     </div>
 
-    <div class="w-full xl:w-[70%] pb-8">
+    <div class="w-full xl:w-[80%] pb-8">
         <div
-            class="grid grid-cols-[repeat(auto-fill,120px)] gap-4 justify-center"
+            class="grid grid-cols-[repeat(auto-fill,120px)] gap-4 justify-start"
         >
             {#each filteredOperators as op (op.id)}
                 <div class="flex justify-center">

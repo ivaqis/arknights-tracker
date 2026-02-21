@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "自然附着",
+      "寒冷附着"
+    ],
+    "behaviourHateTags": [
+      "文化"
+    ],
+    "behaviourUnavailableTags": [
+      "内向"
+    ],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "野外生存",
+      "市井交涉"
+    ],
+    "giftPreferTags": [
+      "谷地·协议严选"
+    ],
+    "hobbyTags": [
+      "自然",
+      "创意"
+    ],
+    "raceTag": "斐迪亚"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "干员敏捷能力值提升10。",
         "干员敏捷能力值提升15。",
         "干员敏捷能力值提升15。",
         "干员敏捷能力值提升20。"
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "她从来不记仇，她的仇家向来撑不了很久。"
     },
-    "potential6": {
+    "potential5": {
       "name": "规则边缘",
       "author": "Doppel",
       "description": "正义从不缺席，但如果正义迟到，那可就有乐子看了。"

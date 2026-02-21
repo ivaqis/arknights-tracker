@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "스킬 게이지 회복",
+      "열기 부착",
+      "연타"
+    ],
+    "behaviourHateTags": [
+      "예술"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "조직 관리",
+      "요리"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "공익",
+      "운동"
+    ],
+    "raceTag": "페로"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -38,6 +62,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 민첩 능력치 10 증가",
         "오퍼레이터 민첩 능력치 15 증가",
         "오퍼레이터 민첩 능력치 15 증가",
         "오퍼레이터 민첩 능력치 20 증가"
@@ -113,7 +138,7 @@
       "author": "BBokyo",
       "description": "빛을빛이행동으로 주위에 따스한 온기를 나누고, 그 온기가 더 먼 곳까지 닿게 합니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "명일신성",
       "author": "Kaneni",
       "description": "아케쿠리가 미소 짓습니다. 새벽녘의 바람처럼, 말하지 않아도 전해지는 희망과 고요한 용기를 품은 채."

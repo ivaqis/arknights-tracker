@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Alt. cryogénique",
+      "Soulèvement",
+      "Vuln. PHY"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Sociabilité"
+    ],
+    "blocTag": "Industries Endfield",
+    "expertTags": [
+      "Tactiques de champ de bataille",
+      "Infiltré"
+    ],
+    "giftPreferTags": [
+      "Sélection du Protocole de la Vallée"
+    ],
+    "hobbyTags": [
+      "Beaux-arts",
+      "Accomplissement de soi"
+    ],
+    "raceTag": "Feli"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Volonté de l'opérateur +10.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "« Vous avez soif ? Oh... C'est juste un liquide nutritif dans lequel j'ai mélangé des extraits d'insectes et de plantes. Le goût est... très intéressant... »"
     },
-    "potential6": {
+    "potential5": {
       "name": "Moment secret",
       "author": "かしまき",
       "description": "Ça vous dit de passer un peu de votre temps libre si durement gagné avec quelqu'un ?"

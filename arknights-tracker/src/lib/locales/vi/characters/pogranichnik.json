@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hồi Điểm KN",
+      "Phá Giáp"
+    ],
+    "behaviourHateTags": [
+      "Phong Cách Sống"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Chiến Thuật Chiến Trường",
+      "Quản Lý Đội"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Người Đưa Tin Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Văn Hóa",
+      "Rèn Luyện Tâm Trí"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Ý Chí Đặc Vụ +10.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Nhưng ông hoàn toàn không hề căm ghét Đế Chế. Hơn một thế kỷ đã trôi qua kể từ khi \"Hoàng Đế\" băng hà, vậy mà một đội lính khiên chắn mới lại trỗi dậy phía sau ông."
     },
-    "potential6": {
+    "potential5": {
       "name": "Chiếu Tướng",
       "author": "大明",
       "description": "Khói tàn phá vẫn còn vương vấn. Vô số mảnh vỡ, sống và chết, rơi khỏi thân thể đồ sộ ấy. Thanh kiếm của hắn vừa là điểm tựa, vừa là lời thề bằng thép, vừa là ngọn đèn canh chừng cuối cùng - Rồi hắn ra tay. Chiếu Tướng."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Causador de Dano",
+      "Levantar",
+      "Esmagar"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Academia de Ciências de Hongshan (ACH)",
+    "expertTags": [
+      "Gastronomia",
+      "Montagem de Ferramenta"
+    ],
+    "giftPreferTags": [
+      "Escolha dos Corredores de Wuling"
+    ],
+    "hobbyTags": [
+      "Estilo de Vida",
+      "Caridade"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Força do Operador + 10.",
         "Força do Operador + 15.",
         "Força do Operador + 15.",
         "Força do Operador + 20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "Então, quem tem tempo de sobra, com algumas aves-feras como companhia, para ficar descansando no pico?"
     },
-    "potential6": {
+    "potential5": {
       "name": "Todos os Sabores da Vida",
       "author": "黑犬",
       "description": "A vida não é nada como cozinhar, onde você pode preparar tudo antes de colocar na wok. No entanto, as coisas que vimos e vivenciamos podem ser usadas como ingredientes para oferecer todos os sabores da vida."

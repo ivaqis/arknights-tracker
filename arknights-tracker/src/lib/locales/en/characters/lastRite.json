@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Combat Technique",
+      "Constitution"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Mind Honing",
+      "Charity"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Strength +10.",
         "Operator Strength +15.",
         "Operator Strength +15.",
         "Operator Strength +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "The vast lands embraced her as she slumbered. An eon of winters await her beck and call. However, the girl only wishes to offer a bouquet at the place of its rest."
     },
-    "potential6": {
+    "potential5": {
       "name": "First Rime to Bloom",
       "author": "REM",
       "description": "She has many unanswered questions, and many difficulties not yet overcome. Nevertheless, she will complete all of your assignments and bring back the smiles on everyone's faces."

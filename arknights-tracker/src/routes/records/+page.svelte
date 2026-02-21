@@ -138,7 +138,7 @@
   onClose={() => (isSettingsOpen = false)}
 />
 
-<div class="max-w-[1400px] px-4"> 
+<div class="max-w-[1400px]"> 
   
   <div class="flex flex-col md:flex-row mb-8 gap-4 md:items-center">    
     <h2 class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD] mb-2 md:mb-0">

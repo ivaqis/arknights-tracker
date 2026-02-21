@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Solidify",
+      "Crit"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Epiphany",
+      "Team Management"
+    ],
+    "giftPreferTags": [
+      "Valley Protocol's Choice"
+    ],
+    "hobbyTags": [
+      "Fashion",
+      "Technology"
+    ],
+    "raceTag": "Vouivre"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Intellect +10.",
         "Operator Intellect +15.",
         "Operator Intellect +15.",
         "Operator Intellect +20."
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "No lighting is required when taking a selfie with Yvonne. After all, she is the brightest source of glow."
     },
-    "potential6": {
+    "potential5": {
       "name": "Win-Win!",
       "author": "u介",
       "description": "Bright-colored coatings, an upbeat soundtrack, and a satisfied smile of victory... She has recorded every joyous moment and now she's sharing them with you."

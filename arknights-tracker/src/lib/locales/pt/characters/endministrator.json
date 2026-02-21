@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Esmagar",
+      "Controle de Multidões"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Você está bem no centro do cruzamento."
     },
-    "potential6": {
+    "potential5": {
       "name": "Compreensão Total",
       "author": "수줍(Sjoop)",
       "description": "Confiança e fé cristalizadas na palma da sua mão. O primeiro fragmento se chama história. Seu outro nome é Civilização e Vida."

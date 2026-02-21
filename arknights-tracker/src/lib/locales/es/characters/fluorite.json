@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Imp. de nat.",
+      "Imp. crio."
+    ],
+    "behaviourHateTags": [
+      "Cultura"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Supervivencia al aire libre",
+      "Sabiduría callejera"
+    ],
+    "giftPreferTags": [
+      "Selección del protocolo del Valle"
+    ],
+    "hobbyTags": [
+      "Naturaleza",
+      "Creativo"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilidad del operador +10.",
         "Agilidad del operador +15.",
         "Agilidad del operador +15.",
         "Agilidad del operador +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Ella casi no guarda rencores. Sus enemigos generalmente no duran tanto."
     },
-    "potential6": {
+    "potential5": {
       "name": "Límites grises de las reglas",
       "author": "Doppel",
       "description": "La justicia siempre se sirve. Sin embargo, si la justicia decide llegar tarde, entonces estamos por presenciar un gran espectáculo."

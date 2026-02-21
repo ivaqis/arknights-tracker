@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Bảo Hộ",
+      "Hồi Phục HP",
+      "Nhiễm Băng"
+    ],
+    "behaviourHateTags": [
+      "Thể Thao"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Sinh Tồn Ngoài Trời",
+      "Kỹ Thuật Y Tế"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Thể Thao",
+      "Tổ Chức Từ Thiện"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Sức Mạnh Đặc Vụ +10.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +20."
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "Giống như giọt nắng rực rỡ nhất trên đỉnh núi băng giá, chỉ cần nhìn thấy cô cũng đủ sưởi ấm những ai đang mắc kẹt trong tuyết giá. Cô sẽ dũng cảm đối mặt với cái lạnh giá buốt và dẫn họ tới sự sống."
     },
-    "potential6": {
+    "potential5": {
       "name": "Xẻ Dọc Trời Tuyết",
       "author": "LAL!ROLE",
       "description": "Cô gái lê bước qua những đỉnh núi và mở một lối xuống sườn tuyết. Cô luôn đi thẳng một mạch để cứu những sinh mạng đang lâm nguy."

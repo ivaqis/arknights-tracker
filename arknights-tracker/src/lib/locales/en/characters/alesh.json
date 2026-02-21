@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP Recovery",
+      "Solidify"
+    ],
+    "behaviourHateTags": [
+      "Mind Honing"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "United Workers' Syndicates of Talos II",
+    "expertTags": [
+      "Outdoors Survival",
+      "Battlefield Tactics"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Culture",
+      "Sports"
+    ],
+    "raceTag": "Anaty"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Strength +10.",
         "Operator Strength +15.",
         "Operator Strength +15.",
         "Operator Strength +20."
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "Life can really rough people up, but the missing eye is really good at seeing the secrets hidden beneath it."
     },
-    "potential6": {
+    "potential5": {
       "name": "Rod Casting Day",
       "author": "w3",
       "description": "\"What is the best moment when angling?\" \"When casting the rod.\" \"Why?\" \"Because therein lies your hopes. Uncertainty makes the heart race.\""

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "FP-Wiederherstellung",
+      "Hitzekumulierung",
+      "Verbunden"
+    ],
+    "behaviourHateTags": [
+      "Schönen Künste"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Team-Verwaltung",
+      "Kochen"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Wohltätigkeit",
+      "Sport"
+    ],
+    "raceTag": "Perro"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -38,6 +62,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Beweglichkeit +10.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +15.",
         "Operator-Beweglichkeit +20."
@@ -113,7 +138,7 @@
       "author": "BBokyo",
       "description": "Sei anderen ein Vorbild und bade sie in deinem Licht! Lasse es dann noch heller strahlen und erhelle selbst die entferntesten Orte."
     },
-    "potential6": {
+    "potential5": {
       "name": "Aufgehender Stern von morgen",
       "author": "Kaneni",
       "description": "Wie die Brise der Morgendämmerung wohnte ihrem Lächeln unausgesprochene Hoffnung inne sowie Mut, der still auf seinen Moment wartete."

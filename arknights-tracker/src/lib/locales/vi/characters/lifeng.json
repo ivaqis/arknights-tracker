@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Quật Ngã",
+      "Dễ Bị Thương VL",
+      "Liên Kết"
+    ],
+    "behaviourHateTags": [
+      "Mỹ Thuật"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại"
+    ],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Nhanh Nhẹn",
+      "Tri Thức Thiên Nhiên"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Người Đưa Tin Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Thể Thao",
+      "Tự Nhiên"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Nhanh Nhẹn Đặc Vụ +10.",
         "Nhanh Nhẹn Đặc Vụ +15.",
         "Nhanh Nhẹn Đặc Vụ +15.",
         "Nhanh Nhẹn Đặc Vụ +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "Con đường tu luyện tuy dài, nhưng đôi mắt của anh ấy vẫn sáng ngời khi lấy bạn làm tấm gương."
     },
-    "potential6": {
+    "potential5": {
       "name": "Trái Tim Tuổi Trẻ",
       "author": "Eteru",
       "description": "Như khối ngọc thạch thuần khiết, anh sẽ chịu đựng từng nhát đục mà vẫn giữ được tấm lòng thuần khiết."

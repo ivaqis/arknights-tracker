@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hitzekumulierung",
+      "Verbrennen"
+    ],
+    "behaviourHateTags": [
+      "Gedächtnistraining"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Kampftechnik",
+      "Eindringling"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Natur",
+      "Kreativ"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Er lässt in seiner Wachsamkeit nur in der Gegenwart von Personen nach, die sich sein Vertrauen wirklich verdient haben. Nur dann zeigt er sein wahres Selbst, das schon seit seiner Kindheit verborgen bleibt."
     },
-    "potential6": {
+    "potential5": {
       "name": "Raubtierblick",
       "author": "FE",
       "description": "Der junge Jäger betrat sein eigenes Jagdrevier, als der Wolfgeist aufheulte. Sein Blick haftet auf jeder einzelnen Beute und seine Schusswaffen werden jede davon erlegen."

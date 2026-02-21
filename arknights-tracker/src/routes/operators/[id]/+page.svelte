@@ -1,6 +1,6 @@
 <script>
     import { page } from "$app/stores";
-    import { t } from "$lib/i18n"; // Убрал goto, если не используется
+    import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { progression } from "$lib/data/items/progression.js";
     import { currencies } from "$lib/data/items/currencies.js";
@@ -14,9 +14,6 @@
     import Images from "$lib/components/Images.svelte";
     import TalentCard from "$lib/components/TalentCard.svelte";
 
-    $: skillsValuesData = charDetails.skills || {};
-    const skillKeys = ["basicAttack", "battleSkill", "comboSkill", "ultimate"];
-
     const localeModulesEn = import.meta.glob(
         "$lib/locales/en/characters/*.json",
         { eager: true },
@@ -25,16 +22,19 @@
         "$lib/locales/ru/characters/*.json",
         { eager: true },
     );
+
+    $: id = $page.params.id;
+    $: char = Object.values(characters).find((c) => c.id === id) || {};
+
     $: charLocale = (() => {
         const lang = $currentLocale === "ru" ? "ru" : "en";
         const path = `/src/lib/locales/${lang}/characters/${id}.json`;
         const modules = lang === "ru" ? localeModulesRu : localeModulesEn;
         return modules[path]?.default || {};
     })();
-    $: skillsLocale = charLocale.skills || {};
 
-    $: id = $page.params.id;
-    $: char = Object.values(characters).find((c) => c.id === id) || {};
+    $: skillsLocale = charLocale.skills || {};
+    $: baseInfoLocale = charLocale.baseInfo || {};
 
     const dataModules = import.meta.glob(
         "/src/lib/data/charactersData/*.json",
@@ -45,39 +45,44 @@
 
     $: charDetails = (() => {
         if (!id) return {};
-
-        // Ищем ключ
         const foundKey = Object.keys(dataModules).find((k) =>
             k.endsWith(`/${id}.json`),
         );
-
         const mod = foundKey ? dataModules[foundKey] : null;
-
         if (mod) {
-            // 3. Ура, файл есть. Возвращаем.
             return mod.default || mod;
         }
-
         console.warn(`Character data not found for ID: ${id}`);
         return {};
     })();
+
+    $: skillsValuesData = charDetails.skills || {};
+    const skillKeys = ["basicAttack", "battleSkill", "comboSkill", "ultimate"];
 
     $: itemsDb = [...(progression || []), ...(currencies || [])];
 
     $: charMaterials = charDetails.materials || {};
 
+    function getSkillMaterials(materials, skillKey) {
+        if (!materials) return {};
+        const mapped = { ...materials };
+        for (let i = 2; i <= 12; i++) {
+            const newKey = `${skillKey}Rank${i}`;
+            if (materials[newKey]) {
+                mapped[`skillLevel${i}`] = materials[newKey];
+            }
+        }
+        return mapped;
+    }
+
     $: charStats = {
         mainAttribute: charDetails.mainAttribute,
-        secondaryAttribute: charDetails.secondaryAttribute, // Проверь, нет ли опечатки в JSON (secondaary)
-
-        // Тут оставляем массивы как есть
+        secondaryAttribute: charDetails.secondaryAttribute,
         hp: charDetails.hp || [0, 0, 0],
         atk: charDetails.atk || [0, 0, 0],
         def: charDetails.def || [0, 0, 0],
 
         attributes: {
-            // ИСПРАВЛЕНИЕ: Убираем ?.[0].
-            // Теперь мы храним весь массив [9, 10, 11...], а не только число 9.
             str: charDetails.str || [],
             agi: charDetails.agi || [],
             int: charDetails.int || [],
@@ -97,16 +102,17 @@
     let activeTab = "about";
     let maxLevel = 90;
     let level = maxLevel;
-    let isTotalMode = true;
+    let isTotalMode = false;
+    let isTableCopied = false;
 
     const menuItems = [
         { id: "about", label: "menu.about" },
+        { id: "skills", label: "menu.combatSkills" },
         { id: "talents", label: "menu.talents" },
         { id: "potentials", label: "menu.potentials" },
-        { id: "skills", label: "menu.combatSkills" },
         { id: "artwork", label: "menu.artwork" },
         { id: "files", label: "menu.files" },
-        { id: "audio", label: "menu.audio" },
+        //{ id: "audio", label: "menu.audio" },
     ];
 
     function calculateStat(statArray, currentLvl) {
@@ -199,6 +205,10 @@
 
     function handleKeydown(e) {
         if (e.key === "Shift") shiftPressed = true;
+        if (e.key === "Escape") {
+            selectedArtId = null;
+            showStatsTable = false;
+        }
     }
 
     function handleKeyup(e) {
@@ -210,7 +220,7 @@
 
         if (shiftPressed) {
             val = Math.round(val / 10) * 10;
-            if (val < 1) val = 1; // Или 1, если мин 1
+            if (val < 1) val = 1;
             if (val > maxLevel) val = maxLevel;
         }
 
@@ -218,15 +228,19 @@
     }
 
     let showStatsTable = false;
+    let selectedArtId = null;
 
     async function copyStatsTable() {
-        // 1. Заголовки (Убрали DEF)
         const headers = [
             $t("stats.level") || "Level",
-            "HP", "ATK", /* DEF удален */ "STR", "AGI", "INT", "WILL"
+            "HP",
+            "ATK",
+            "STR",
+            "AGI",
+            "INT",
+            "WILL",
         ];
-        
-        // 2. Сбор данных
+
         let textData = headers.join("\t") + "\n";
 
         for (let i = 1; i <= 90; i++) {
@@ -234,29 +248,98 @@
                 i,
                 calculateStat(charStats.hp, i),
                 calculateStat(charStats.atk, i),
-                // calculateStat(charStats.def, i), // Удалено
                 calculateStat(charStats.attributes.str, i),
                 calculateStat(charStats.attributes.agi, i),
                 calculateStat(charStats.attributes.int, i),
-                calculateStat(charStats.attributes.will, i)
+                calculateStat(charStats.attributes.will, i),
             ];
             textData += row.join("\t") + "\n";
         }
 
         try {
             await navigator.clipboard.writeText(textData);
+
+            isTableCopied = true;
+
+            setTimeout(() => {
+                isTableCopied = false;
+            }, 2000);
         } catch (err) {
             console.error("Failed to copy", err);
         }
+    }
+
+    function parseRichText(text) {
+        if (!text) return "";
+
+        const styles = {
+            "ba.natur": "text-[#4ADE80] font-bold", // Природный
+            "ba.fire": "text-[#F87171] font-bold", // Огненный
+            "ba.cryst": "text-[#67E8F9] font-bold", // Кристаллический
+            "ba.pulse": "text-[#C084FC] font-bold", // Электрический
+            "ba.phy": "text-[#A3A3A3] font-bold", // Физический
+            "ba.poise": "text-[#FBBF24] font-bold", // Ошеломление
+            "ba.vup": "text-[#38BDF8] font-bold", // Повышение
+            "ba.key": "text-[#E3BC55] font-bold", // Ключевые термины
+            "ba.conduct": "text-[#C084FC] font-bold", // Электризация
+            "ba.spelldmg": "text-[#E3BC55] font-bold", // Урон от искусств
+        };
+
+        return text.replace(
+            /<([@#])([^>]+)>([\s\S]*?)<\/>/g,
+            (match, type, tag, content) => {
+                if (tag === "profile.key") return content;
+
+                let styleClass = styles[tag] || "text-[#E3BC55] font-bold";
+
+                if (type === "#") {
+                    styleClass +=
+                        " underline decoration-dashed decoration-current underline-offset-4";
+                }
+
+                return `<span class="${styleClass}">${content}</span>`;
+            },
+        );
+    }
+
+    function interpolateBlackboard(text, bb) {
+        if (!text) return "";
+        if (!bb || Object.keys(bb).length === 0) return text;
+
+        return text.replace(/\{([^}]+)\}/g, (match, content) => {
+            let [expr, format] = content.split(":");
+            let mathStr = expr;
+
+            for (const key in bb) {
+                const regex = new RegExp(`\\b${key}\\b`, "g");
+                mathStr = mathStr.replace(regex, `(${bb[key]})`);
+            }
+
+            if (/[a-zA-Z_]/.test(mathStr)) return match;
+
+            let result = 0;
+            try {
+                result = new Function("return " + mathStr)();
+            } catch (e) {
+                return match;
+            }
+            if (format) {
+                if (format.includes("%")) {
+                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                } else if (format === "0") {
+                    result = Math.round(result);
+                } else {
+                    result = parseFloat(Number(result).toFixed(2));
+                }
+            }
+            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
+        });
     }
 </script>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
 
-<div
-    class="min-h-screen  relative overflow-hidden flex flex-col p-8"
->
-    <!-- === ФОНОВЫЙ SPLASH ART (По центру) === -->
+<div class="min-h-screen relative flex flex-col p-8">
     <div
         class="fixed inset-0 flex items-center justify-center pointer-events-none z-0 transition-opacity duration-500 {activeTab ===
         'about'
@@ -268,24 +351,18 @@
         >
             <Images id={char.id} variant="operator-splash" size="100%" />
         </div>
-        <!-- Градиент, чтобы текст читался (опционально) -->
         <div
             class="absolute inset-0 bg-gradient-to-r dark:from-[#707070] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-40"
         ></div>
     </div>
 
-    <!-- === КОНТЕНТ === -->
     <div
-        class="relative z-20 w-full max-w-[1800px] mx-auto grid grid-cols-1 h-full
-        {activeTab === 'about'
-            ? 'lg:grid-cols-[400px_1fr_360px]'
-            : 'lg:grid-cols-[400px_minmax(0,1fr)_900px]'}"
+        class="relative z-20 w-full max-w-[1600px] mx-auto flex flex-col 2xl:flex-row justify-between gap-8 h-full"
     >
-        <!-- ================= ЛЕВАЯ КОЛОНКА ================= -->
-        <div class="flex flex-col gap-2">
-            <!-- 1. HEADER & INFO -->
+        <div
+            class="flex flex-col gap-6 2xl:sticky 2xl:top-8 2xl:self-start z-30 w-full 2xl:w-[380px] shrink-0"
+        >
             <div class="flex flex-col gap-1">
-                <!-- Кнопка Назад -->
                 <div class="mb-2">
                     <Button
                         variant="roundSmall"
@@ -303,58 +380,54 @@
                     </Button>
                 </div>
 
-                <!-- Имя -->
-                <h1 class="font-sdk text-5xl font-bold text-[#21272C]">
+                <h1
+                    class="font-sdk text-5xl font-bold dark:text-[#FDFDFD] text-[#21272C]"
+                >
                     {$t(`characters.${id}`) || char.name}
                 </h1>
 
-                <!-- Иконки (Class / Element / Rarity) -->
-                <div class="flex items-center gap-4 mt-2">
-                    <!-- Class -->
-                    <Tooltip text={$t(`classes.${char.class}`)}>
-                        <div
-                            class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
-                        >
-                            <Icon
-                                name={char.class}
-                                class="w-10 h-10 text-white"
-                            />
-                        </div>
-                    </Tooltip>
+                <div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mt-2">
+                    
+                    <div class="flex items-center gap-4">
+                        <Tooltip text={$t(`classes.${char.class}`)}>
+                            <div
+                                class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
+                            >
+                                <Icon
+                                    name={char.class}
+                                    class="w-10 h-10 text-white"
+                                />
+                            </div>
+                        </Tooltip>
 
-                    <div class="w-[1px] h-8 bg-gray-300"></div>
+                        <div class="w-[1px] h-8 bg-gray-300"></div>
 
-                    <!-- Element (Уменьшил контейнер до w-10, иконка w-7) -->
-                    <Tooltip text={$t(`elements.${char.element}`)}>
-                        <div
-                            class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
-                        >
-                            <!-- Иконка покрупнее относительно контейнера -->
-                            <Icon
-                                name={char.element}
-                                class="w-7 h-7 text-white"
-                            />
-                        </div>
-                    </Tooltip>
+                        <Tooltip text={$t(`elements.${char.element}`)}>
+                            <div
+                                class="w-10 h-10 rounded flex items-center justify-center shadow-sm"
+                            >
+                                <Icon
+                                    name={char.element}
+                                    class="w-7 h-7 text-white"
+                                />
+                            </div>
+                        </Tooltip>
+                    </div>
 
-                    <div class="w-[1px] h-8 bg-gray-300"></div>
+                    <div class="hidden md:block w-[1px] h-8 bg-gray-300"></div>
 
-                    <!-- Rarity (strokeStar) -->
-                    <div class="flex items-center gap-0.5">
+                    <div class="flex items-center gap-0 -space-x-1">
                         {#each Array(char.rarity || 1) as _}
                             <Icon
                                 name="strokeStar"
-                                class="w-6 h-6"
-                                style="color: {rarityColor}"
+                                class="w-10 h-10"
+                                style="color: {rarityColor}; stroke-opacity: 50%"
                             />
                         {/each}
                     </div>
                 </div>
 
-                <!-- Теги (Оружие + Gameplay Tags) -->
-                <!-- Обновленные стили: без капса, больше скругление (rounded-lg) -->
                 <div class="flex flex-wrap gap-2 mt-2 items-center">
-                    <!-- Оружие -->
                     {#if char.weapon}
                         <div
                             class="flex items-center gap-2 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
@@ -371,8 +444,15 @@
                         </div>
                     {/if}
 
-                    <!-- Gameplay Tags -->
-                    {#if char.tags}
+                    {#if baseInfoLocale.tags && baseInfoLocale.tags.length > 0}
+                        {#each baseInfoLocale.tags as tag}
+                            <div
+                                class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
+                            >
+                                {tag}
+                            </div>
+                        {/each}
+                    {:else if char.tags}
                         {#each char.tags as tag}
                             <div
                                 class="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-xs font-bold tracking-wide text-gray-500 shadow-sm"
@@ -383,39 +463,36 @@
                     {/if}
                 </div>
 
-                <!-- Био Инфо -->
-                <div class="flex flex-col gap-2 mt-4 w-fit">
-                    {#each [{ label: "bio.faction", val: char.faction }, { label: "bio.race", val: char.race }, { label: "bio.birth", val: char.birthDate }] as item}
-                        <!-- Контейнер строки: убрал border с контейнера, чтобы избежать артефактов -->
-                        <!-- Скругление (rounded-lg) и overflow-hidden обрежут внутренние блоки -->
+                <div class="flex flex-col gap-2 mt-3 w-fit">
+                    {#each [{ label: "bio.faction", localizedVal: baseInfoLocale.blocTag, rawVal: char.faction }, { label: "bio.race", localizedVal: baseInfoLocale.raceTag, rawVal: char.race }, { label: "bio.birth", localizedVal: null, rawVal: char.birthDate }] as item}
                         <div
-                            class="flex items-stretch h-[32px] rounded-lg overflow-hidden shadow-sm text-sm border w-full"
+                            class="flex items-stretch h-[32px] rounded-lg overflow-hidden shadow-sm text-sm w-full"
                         >
-                            <!-- Заголовок (Черный) -->
                             <div
                                 class="bg-[#333] text-white px-4 flex items-center justify-center font-bold whitespace-nowrap min-w-[120px]"
                             >
                                 {$t(item.label) || item.label}
                             </div>
-
-                            <!-- Значение (Серый) -->
-                            <!-- w-full и flex-grow заставят его заполнить все место до конца границы -->
                             <div
                                 class="bg-[#E5E5E5] text-[#333] px-4 flex items-center font-medium whitespace-nowrap min-w-[150px] w-full flex-grow"
                             >
-                                {$t(`bioValues.${item.val || "Unknown"}`) ||
-                                    item.val ||
-                                    "-"}
+                                {#if item.localizedVal}
+                                    {item.localizedVal}
+                                {:else}
+                                    {$t(
+                                        `bioValues.${item.rawVal || "Unknown"}`,
+                                    ) ||
+                                        item.rawVal ||
+                                        "-"}
+                                {/if}
                             </div>
                         </div>
                     {/each}
                 </div>
             </div>
 
-            <!-- 2. НАВИГАЦИЯ (МЕНЮ) -->
-            <div class="flex flex-col gap-3 mt-6 w-[240px]">
+            <div class="flex flex-col gap-2 w-full max-w-[240px]">
                 {#each menuItems as item}
-
                     <Button
                         variant="menuButton"
                         active={activeTab === item.id}
@@ -430,26 +507,21 @@
                 {/each}
             </div>
         </div>
-        <!-- ================= ЦЕНТР (ПУСТОТА ДЛЯ АРТА) ================= -->
-        <div class="hidden lg:block pointer-events-none"></div>
 
-        <!-- ПРАВАЯ КОЛОНКА -->
-        <div class="mt-3 flex flex-col gap-1 relative z-10 w-full">
+        <div class="flex flex-col gap-1 relative z-10 w-full flex-1 transition-all duration-300 {activeTab === 'about' ? '2xl:max-w-[400px] 2xl:ml-auto' : '2xl:max-w-[1000px]'}">
             {#if activeTab === "about"}
-                <!-- Белый контейнер-карточка -->
                 <div
-                    class="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-6"
+                    class="bg-white/90 backdrop-blur-sm dark:bg-[#383838] dark:border-[#444444] p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-6"
                 >
-                    <!-- Заголовок + Слайдер -->
                     <div class="flex flex-col gap-2">
                         <div class="flex items-baseline gap-1">
                             <span
-                                class="text-6xl font-sdk font-bold text-[#21272C] leading-none"
+                                class="text-6xl font-sdk font-bold dark:text-[#FDFDFD] text-[#21272C] leading-none"
                             >
                                 {level}
                             </span>
                             <span
-                                class="text-xl font-bold text-gray-400 uppercase"
+                                class="text-xl font-bold text-gray-400 dark:text-[#B7B6B3] uppercase"
                                 >Lv.</span
                             >
                         </div>
@@ -462,14 +534,13 @@
                                 step="1"
                                 value={level}
                                 on:input={handleInput}
-                                class="w-full h-[2px] bg-[#333] appearance-none cursor-pointer accent-[#333]"
+                                class="w-full h-[2px] bg-[#333] dark:bg-[#7A7A7A] dark:accent-[#7A7A7A] appearance-none cursor-pointer accent-[#333]"
                             />
                         </div>
                     </div>
 
-                    <!-- Attributes Header Bar -->
                     <div
-                        class="bg-[#333] rounded h-[36px] flex items-center justify-between px-4 text-white shadow-sm"
+                        class="bg-[#333] rounded h-[36px] flex dark:bg-[#424242] items-center justify-between px-4 text-white shadow-sm"
                     >
                         <span class="font-bold text-sm">
                             {$t("stats.attributes") || "Attributes"}
@@ -480,11 +551,13 @@
                             class="flex items-center gap-2 text-sm font-normal text-gray-300 hover:text-white transition-colors"
                         >
                             <div class="w-[1px] h-4 bg-gray-500 mx-1"></div>
-                            <span>{$t("stats.table") || "Table"}</span>
+                            <span class="flex gap-0.5 items-center"
+                                ><Icon name="table" class="w-4 h-4" />
+                                {$t("stats.table") || "Table"}</span
+                            >
                         </button>
                     </div>
 
-                    <!-- Список Атрибутов -->
                     <div class="flex flex-col gap-3 px-1">
                         {#each ["str", "agi", "int", "will"] as attr}
                             {@const styles = getAttrStyles(attr)}
@@ -504,7 +577,6 @@
                                                   : "",
                                         )}
                                     >
-                                        <!-- Цвет фона и стиль иконки берутся из функции -->
                                         <div
                                             class="w-10 h-10 rounded flex items-center justify-center {styles.bg}"
                                         >
@@ -515,13 +587,13 @@
                                         </div>
                                     </Tooltip>
                                     <span
-                                        class="text-lg font-bold text-[#21272C]"
+                                        class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                     >
                                         {$t(`stats.${attr}`) || attr}
                                     </span>
                                 </div>
                                 <span
-                                    class="text-2xl font-sdk font-bold text-[#21272C]"
+                                    class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                 >
                                     {calculateStat(
                                         charStats.attributes[attr],
@@ -531,7 +603,6 @@
                             </div>
                         {/each}
 
-                        <!-- HP (Цвет bg-[#8F8F8F] как у обычных) -->
                         <div class="flex items-center justify-between h-[40px]">
                             <div class="flex items-center gap-3">
                                 <div
@@ -542,18 +613,18 @@
                                         class="w-6 h-6 text-white"
                                     />
                                 </div>
-                                <span class="text-lg font-bold text-[#21272C]"
+                                <span
+                                    class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                     >{$t("stats.baseHp") || "Base HP"}</span
                                 >
                             </div>
                             <span
-                                class="text-2xl font-sdk font-bold text-[#21272C]"
+                                class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
                             >
                                 {calculateStat(charStats.hp, level)}
                             </span>
                         </div>
 
-                        <!-- ATK (Цвет bg-[#8F8F8F] как у обычных) -->
                         <div class="flex items-center justify-between h-[40px]">
                             <div class="flex items-center gap-3">
                                 <div
@@ -564,12 +635,13 @@
                                         class="w-6 h-6 text-white"
                                     />
                                 </div>
-                                <span class="text-lg font-bold text-[#21272C]"
+                                <span
+                                    class="text-lg font-bold text-[#21272C] dark:text-[#E4E4E4]"
                                     >{$t("stats.baseAtk") || "Base ATK"}</span
                                 >
                             </div>
                             <span
-                                class="text-2xl font-sdk font-bold text-[#21272C]"
+                                class="text-2xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4]"
                             >
                                 {calculateStat(charStats.atk, level)}
                             </span>
@@ -577,55 +649,21 @@
                     </div>
                 </div>
 
-                <!-- === НОВАЯ СЕКЦИЯ: МАТЕРИАЛЫ ВОЗВЫШЕНИЯ === -->
                 <div
-                    class="mt-4 bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 flex flex-col gap-4"
+                    class="mt-4 bg-white/90 backdrop-blur-sm p-6 dark:bg-[#383838] dark:border-[#444444] rounded-2xl shadow-xl border border-white/50 flex flex-col gap-4"
                 >
-                    <!-- Заголовок + Тоггл + Калькулятор -->
                     <div
-                        class="flex justify-between items-center border-b border-gray-100 pb-3"
+                        class="flex justify-between items-center border-b border-gray-100 pb-3 dark:border-[#444444]"
                     >
                         <div class="flex items-center gap-2">
-                            <span class="font-bold text-[#21272C] text-lg">
+                            <span
+                                class="font-bold text-[#21272C] text-lg dark:text-[#FDFDFD]"
+                            >
                                 {$t("stats.materials") || "Materials"}
                             </span>
-
-                            <!-- Переключатель Total -->
-                            <button
-                                class="ml-2 px-3 py-1 rounded-full text-xs font-bold transition-all border
-                            {isTotalMode
-                                    ? 'bg-[#21272C] text-white border-[#21272C]'
-                                    : 'bg-white text-gray-400 border-gray-200 hover:border-gray-400'}"
-                                on:click={() => (isTotalMode = !isTotalMode)}
-                            >
-                                {$t("systemNames.total") || "Total"}
-                            </button>
                         </div>
-
-                        <!-- Кнопка Калькулятора (пока заглушка) -->
-                        <button
-                            class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors text-gray-600"
-                            title="Calculator"
-                        >
-                            <Icon name="calc" class="w-4 h-4" />
-                            <!-- Добавь иконку calc или используй svg -->
-                            <!-- Если нет иконки, просто SVG -->
-                            {#if !$$slots.icon}
-                                <svg
-                                    class="w-4 h-4"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    ><path
-                                        d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z"
-                                    /></svg
-                                >
-                            {/if}
-                        </button>
                     </div>
 
-                    <!-- Грид Предметов -->
                     <div class="flex flex-wrap justify-center gap-4 pt-2">
                         {#if neededMaterials.length > 0}
                             {#each neededMaterials as mat (mat.id)}
@@ -639,23 +677,11 @@
                             </div>
                         {/if}
                     </div>
-
-                    <!-- Плейсхолдер для XP предметов -->
-                    <div
-                        class="mt-2 pt-3 border-t border-gray-100 flex items-center gap-2 opacity-50"
-                    >
-                        <div class="w-8 h-8 rounded bg-gray-200"></div>
-                        <span class="text-xs text-gray-400 font-bold uppercase"
-                            >XP wip</span
-                        >
-                    </div>
                 </div>
             {:else if activeTab === "skills"}
-                <!-- === ВКЛАДКА SKILLS (Новый контент) === -->
-
                 <div class="flex flex-col gap-5 animate-fadeIn w-full">
                     <h2
-                        class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                        class="text-3xl dark:text-[#FDFDFD] mb-1 font-bold text-[#21272C] drop-shadow-sm font-sdk text-left 2xl:text-right"
                     >
                         {$t("menu.combatSkills") || "Combat Skills"}
                     </h2>
@@ -664,10 +690,16 @@
                         {#if skillsValuesData[key]}
                             <div class="w-full flex justify-center">
                                 <SkillCard
+                                    charId={id}
                                     skillKey={key}
+                                    element={char.element}
                                     skillData={skillsLocale[key] || {}}
                                     skillValues={skillsValuesData[key]}
-                                    materialsData={charMaterials}
+                                    weaponType={char.weapon}
+                                    materialsData={getSkillMaterials(
+                                        charMaterials,
+                                        key,
+                                    )}
                                     {itemsDb}
                                 />
                             </div>
@@ -676,10 +708,10 @@
                 </div>
             {:else if activeTab === "talents"}
                 <div class="flex flex-col gap-5 animate-fadeIn">
-                    <section>
-                        {#if skillsLocale?.indicator || charMaterials?.indicator}
+                    {#if skillsLocale?.indicator || charMaterials?.indicator}
+                        <section>
                             <h2
-                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                                class="text-3xl dark:text-[#FDFDFD] mb-2 font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right "
                             >
                                 {$t("menu.indicators") || "Indicators"}
                             </h2>
@@ -689,83 +721,341 @@
                                 dataKey="indicator"
                                 maxLevels={4}
                                 materials={charMaterials?.indicator}
+                                indicatorType={charDetails?.indicatorType}
                                 localizedData={skillsLocale?.indicator}
                             />
-                        {/if}
-                    </section>
+                        </section>
+                    {/if}
 
-                    <section>
-                        {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
+                    {#if skillsLocale?.talent1 || charMaterials?.talent1 || skillsLocale?.talent2 || charMaterials?.talent2}
+                        <section>
                             <h2
-                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                                class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                             >
                                 {$t("menu.talents") || "Talents"}
                             </h2>
+
+                            <div class="flex flex-col gap-4">
+                                {#if skillsLocale?.talent1 || charMaterials?.talent1}
+                                    <TalentCard
+                                        charId={id}
+                                        type="talent"
+                                        dataKey="talent1"
+                                        maxLevels={2}
+                                        materials={charMaterials?.talent1}
+                                        indicatorType={charDetails?.indicatorType}
+                                        localizedData={skillsLocale?.talent1}
+                                        blackboard={charDetails?.blackboard}
+                                    />
+                                {/if}
+
+                                {#if skillsLocale?.talent2 || charMaterials?.talent2}
+                                    <TalentCard
+                                        charId={id}
+                                        type="talent"
+                                        dataKey="talent2"
+                                        maxLevels={2}
+                                        materials={charMaterials?.talent2}
+                                        localizedData={skillsLocale?.talent2}
+                                        indicatorType={charDetails?.indicatorType}
+                                        blackboard={charDetails?.blackboard}
+                                    />
+                                {/if}
+                            </div>
+                        </section>
+                    {/if}
+
+                    {#if charDetails?.facSkills}
+                        {@const fac1 =
+                            charDetails.facSkills.facSkill1_1 ||
+                            charDetails.facSkills.facSkill1_2}
+                        {@const fac2 =
+                            charDetails.facSkills.facSkill2_1 ||
+                            charDetails.facSkills.facSkill2_2}
+                        {@const hasBase1 =
+                            skillsLocale?.baseSkill1 ||
+                            charMaterials?.baseSkill1}
+                        {@const hasBase2 =
+                            skillsLocale?.baseSkill2 ||
+                            charMaterials?.baseSkill2}
+
+                        {#if (fac1 && hasBase1) || (fac2 && hasBase2)}
+                            <section>
+                                <h2
+                                    class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                                >
+                                    {$t("menu.baseSkills") || "Base Skills"}
+                                </h2>
+
+                                <div class="flex flex-col gap-4">
+                                    {#if fac1 && hasBase1}
+                                        <TalentCard
+                                            charId={id}
+                                            type="base"
+                                            index={0}
+                                            dataKey="baseSkill1"
+                                            maxLevels={charDetails.facSkills
+                                                .facSkill1_2
+                                                ? 2
+                                                : 1}
+                                            levelsCount={charDetails.facSkills
+                                                .facSkill1_2
+                                                ? 2
+                                                : 1}
+                                            materials={charMaterials?.baseSkill1}
+                                            localizedData={skillsLocale?.baseSkill1}
+                                            facSkillImage={fac1.name}
+                                            blackboard={charDetails?.blackboard}
+                                            postfixes={[
+                                                charDetails.facSkills
+                                                    .facSkill1_1
+                                                    ?.skillNamePostfix,
+                                                charDetails.facSkills
+                                                    .facSkill1_2
+                                                    ?.skillNamePostfix,
+                                            ].filter(Boolean)}
+                                        />
+                                    {/if}
+
+                                    {#if fac2 && hasBase2}
+                                        <TalentCard
+                                            charId={id}
+                                            type="base"
+                                            index={1}
+                                            dataKey="baseSkill2"
+                                            maxLevels={charDetails.facSkills
+                                                .facSkill2_2
+                                                ? 2
+                                                : 1}
+                                            levelsCount={charDetails.facSkills
+                                                .facSkill2_2
+                                                ? 2
+                                                : 1}
+                                            materials={charMaterials?.baseSkill2}
+                                            localizedData={skillsLocale?.baseSkill2}
+                                            facSkillImage={fac2.name}
+                                            blackboard={charDetails?.blackboard}
+                                            postfixes={[
+                                                charDetails.facSkills
+                                                    .facSkill2_1
+                                                    ?.skillNamePostfix,
+                                                charDetails.facSkills
+                                                    .facSkill2_2
+                                                    ?.skillNamePostfix,
+                                            ].filter(Boolean)}
+                                        />
+                                    {/if}
+                                </div>
+                            </section>
                         {/if}
+                    {/if}
+                </div>
+            {:else if activeTab === "files"}
+                <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                    <h2
+                        class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                    >
+                        {$t("menu.files") || "Files"}
+                    </h2>
 
-                        <div class="flex flex-col gap-4">
-                            {#if skillsLocale?.talent1 || charMaterials?.talent1}
-                                <TalentCard
-                                    charId={id}
-                                    type="talent"
-                                    dataKey="talent1"
-                                    maxLevels={2}
-                                    materials={charMaterials?.talent1}
-                                    localizedData={skillsLocale?.talent1}
-                                />
-                            {/if}
-
-                            {#if skillsLocale?.talent2 || charMaterials?.talent2}
-                                <TalentCard
-                                    charId={id}
-                                    type="talent"
-                                    dataKey="talent2"
-                                    maxLevels={2}
-                                    materials={charMaterials?.talent2}
-                                    localizedData={skillsLocale?.talent2}
-                                />
-                            {/if}
-                        </div>
-                    </section>
-
-                    <section>
-                        {#if skillsLocale?.baseSkill1 || charMaterials?.baseSkill1 || skillsLocale?.baseSkill2 || charMaterials?.baseSkill2}
-                            <h2
-                                class="text-3xl font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-end"
+                    {#if skillsLocale?.files}
+                        {#each Object.entries(skillsLocale.files) as [fileKey, fileContent]}
+                            <div
+                                class="bg-white/90 backdrop-blur-sm p-6 rounded-2xl dark:bg-[#383838] dark:border-[#444444] shadow-xl border border-white/50 flex flex-col gap-3"
                             >
-                                {$t("menu.baseSkills") || "Base Skills"}
-                            </h2>
-                        {/if}
-
-                        <div class="flex flex-col gap-4">
-                            {#if skillsLocale?.baseSkill1 || charMaterials?.baseSkill1}
-                                <TalentCard
-                                    charId={id}
-                                    type="base"
-                                    index={0}
-                                    dataKey="baseSkill1"
-                                    maxLevels={2}
-                                    materials={charMaterials?.baseSkill1}
-                                    localizedData={skillsLocale?.baseSkill1}
-                                />
-                            {/if}
-
-                            {#if skillsLocale?.baseSkill2 || charMaterials?.baseSkill2}
-                                <TalentCard
-                                    charId={id}
-                                    type="base"
-                                    index={1}
-                                    dataKey="baseSkill2"
-                                    maxLevels={2}
-                                    materials={charMaterials?.baseSkill2}
-                                    localizedData={skillsLocale?.baseSkill2}
-                                />
-                            {/if}
+                                <h3
+                                    class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] capitalize border-b border-gray-100 dark:border-[#444444] pb-1"
+                                >
+                                    {fileKey}
+                                </h3>
+                                <div
+                                    class="text-gray-700 dark:text-[#E4E4E4] whitespace-pre-wrap text-sm leading-relaxed font-medium"
+                                >
+                                    {@html parseRichText(fileContent)}
+                                </div>
+                            </div>
+                        {/each}
+                    {:else}
+                        <div class="text-gray-500 text-center italic mt-10">
+                            {$t("global.noData") || "No Data"}
                         </div>
-                    </section>
+                    {/if}
+                </div>
+            {:else if activeTab === "potentials"}
+                <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                    <h2
+                        class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                    >
+                        {$t("menu.potentials") || "Potentials"}
+                    </h2>
+
+                    {#if charLocale?.potentials}
+                        <div class="flex flex-col gap-4">
+                            {#each Object.entries(charLocale.potentials) as [potKey, potData]}
+                                {@const bbData =
+                                    charDetails.blackboard?.[potKey]}
+                                <div
+                                    class="bg-white/90 backdrop-blur-sm p-5 rounded-2xl dark:bg-[#383838] dark:border-[#444444] shadow-xl border border-white/50 flex gap-4 items-start transition-transform"
+                                >
+                                    <div
+                                        class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white font-black text-xl w-12 h-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm border border-white/20 mt-1"
+                                    >
+                                        {potKey.replace("potential", "")}
+                                    </div>
+
+                                    <div class="flex flex-col gap-1 w-full">
+                                        <h3
+                                            class="font-bold text-lg text-[#21272C] dark:text-[#E4E4E4] dark:border-[#444444] border-b border-gray-100 pb-1.5"
+                                        >
+                                            {potData.name}
+                                        </h3>
+                                        <div
+                                            class="text-gray-700 text-sm dark:text-[#E4E4E4] leading-relaxed font-medium mt-1"
+                                        >
+                                            {@html parseRichText(
+                                                interpolateBlackboard(
+                                                    potData.description,
+                                                    bbData,
+                                                ),
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            {/each}
+                        </div>
+                    {:else}
+                        <div class="text-gray-500 text-center italic mt-10">
+                            {$t("global.noData") || "No Data"}
+                        </div>
+                    {/if}
+                </div>
+            {:else if activeTab === "artwork"}
+                <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                    <h2
+                        class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
+                    >
+                        {$t("menu.artwork") || "Artwork"}
+                    </h2>
+
+                    {#if charLocale?.arts}
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {#each Object.entries(charLocale.arts) as [artKey, artData]}
+                                {@const realKey =
+                                    artKey === "potential6"
+                                        ? "potential5"
+                                        : artKey}
+
+                                <div
+                                    class="group flex flex-col shadow-xl rounded-2xl overflow-hidden border border-white/50 bg-white/90 backdrop-blur-sm transition-all hover:shadow-2xl dark:bg-[#383838] dark:border-[#444444]"
+                                >
+                                    <div
+                                        role="button"
+                                        tabindex="0"
+                                        class="relative w-full aspect-[4/3] bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center overflow-hidden cursor-zoom-in outline-none focus:ring-4 focus:ring-gray-300"
+                                        on:click={() =>
+                                            (selectedArtId = `${id}_${realKey}`)}
+                                        on:keydown={(e) =>
+                                            (e.key === "Enter" ||
+                                                e.key === " ") &&
+                                            (selectedArtId = `${id}_${realKey}`)}
+                                    >
+                                        <Images
+                                            id={`${id}_${realKey}`}
+                                            variant="operator-art"
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                            alt={artData.name}
+                                        />
+
+                                        <div
+                                            class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 pointer-events-none"
+                                        ></div>
+
+                                        <div
+                                            class="absolute top-3 left-3 bg-black/60 backdrop-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm z-10 pointer-events-none"
+                                        >
+                                            Phase {realKey.replace(
+                                                "potential",
+                                                "",
+                                            )}
+                                        </div>
+
+                                        <button
+                                            class="absolute top-3 right-3 z-20 flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
+                                            title="Скачать арт"
+                                            on:click|stopPropagation={() => {
+                                                const imageUrl = `/images/operators/arts/${id}_${realKey}.png`;
+                                                const link =
+                                                    document.createElement("a");
+                                                link.href = imageUrl;
+                                                link.download = `${id}_${realKey}.png`;
+                                                document.body.appendChild(link);
+                                                link.click();
+                                                document.body.removeChild(link);
+                                            }}
+                                        >
+                                            <Icon
+                                                name="import"
+                                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
+                                            />
+                                        </button>
+                                    </div>
+
+                                    <div
+                                        class="flex flex-col p-5 h-full dark:bg-[#383838] dark:border-[#444444]"
+                                    >
+                                        <div
+                                            class="flex justify-between items-start gap-4 mb-3"
+                                        >
+                                            <h3
+                                                class="font-bold text-xl text-[#21272C] dark:text-[#E4E4E4] leading-tight line-clamp-2"
+                                            >
+                                                {artData.name}
+                                            </h3>
+                                        </div>
+                                        <p
+                                            class="text-gray-600 text-sm dark:text-[#E4E4E4] leading-relaxed mb-4 flex-grow italic"
+                                        >
+                                            "{artData.description}"
+                                        </p>
+                                        <div
+                                            class="flex items-center gap-2 mt-auto pt-3 border-t border-gray-100 dark:border-[#444444]"
+                                        >
+                                            <div
+                                                class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
+                                            >
+                                                <svg
+                                                    width="12"
+                                                    height="12"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    ><path
+                                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                                                    ></path><circle
+                                                        cx="12"
+                                                        cy="7"
+                                                        r="4"
+                                                    ></circle></svg
+                                                >
+                                            </div>
+                                            <span
+                                                class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
+                                            >
+                                                {artData.author}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {/each}
+                        </div>
+                    {:else}
+                        <div class="text-gray-500 text-center italic mt-10">
+                            {$t("global.noData") || "No Data"}
+                        </div>
+                    {/if}
                 </div>
             {:else}
-                <!-- Заглушка для других вкладок -->
                 <div class="text-white text-xl font-bold mt-10">
                     WIP: {activeTab} section
                 </div>
@@ -775,70 +1065,107 @@
 </div>
 
 {#if showStatsTable}
-    <div 
+    <div
         role="dialog"
         aria-modal="true"
         tabindex="-1"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn outline-none"
+        class="fixed inset-0 z-50 md:ml-[var(--sb-w)] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn outline-none"
         on:click={(e) => {
-            // "Нормальная" проверка: кликнули ли мы по самому фону?
             if (e.target === e.currentTarget) {
                 showStatsTable = false;
             }
         }}
-        on:keydown={(e) => { 
-            if (e.key === 'Escape') showStatsTable = false; 
+        on:keydown={(e) => {
+            if (e.key === "Escape") showStatsTable = false;
         }}
     >
-        <div 
+        <div
             class="bg-white rounded-xl w-full max-w-4xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden cursor-auto"
         >
-            <div class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white shrink-0">
+            <div
+                class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white dark:bg-[#2C2C2C] shrink-0"
+            >
                 <h3 class="font-bold text-lg">
                     {$t("stats.attributesTable") || "Attributes Table (1-90)"}
                 </h3>
-                
                 <div class="flex items-center gap-3">
-                    <button 
+                    <button
                         on:click={copyStatsTable}
-                        class="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded transition-colors text-sm font-bold border border-white/20"
+                        class="flex items-center justify-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 rounded-md transition-colors text-white text-sm font-bold border border-white/20 shrink-0"
                     >
-                        <Icon name="copy" class="w-4 h-4" />
-                        {$t("common.copy") || "Copy"}
+                        {#if isTableCopied}
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#FACC15"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="animate-fadeIn"
+                            >
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        {:else}
+                            <Icon name="copy" class="w-4 h-4" />
+                        {/if}
+                        <span>{$t("common.copy") || "Copy"}</span>
                     </button>
-
-                    <button 
-                        on:click={() => showStatsTable = false}
+                    <button
+                        on:click={() => (showStatsTable = false)}
                         class="p-1.5 hover:bg-white/10 rounded-full transition-colors"
                     >
-                        <Icon name="close" class="w-6 h-6" /> 
+                        <Icon name="close" class="w-6 h-6" />
                     </button>
                 </div>
             </div>
 
             <div class="overflow-auto custom-scrollbar bg-white p-0">
                 <table class="w-full text-center border-collapse">
-                    <thead class="bg-gray-100 font-bold sticky top-0 z-10 shadow-sm text-sm">
+                    <thead
+                        class="bg-gray-100 dark:bg-[#383838] font-bold sticky top-0 z-10 shadow-sm text-sm"
+                    >
                         <tr>
-                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.level") || "Level"}</th>
-                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.baseHp") || "Base HP"}</th>
-                            <th class="py-3 px-2 border-b text-gray-600">{$t("stats.baseAtk") || "Base ATK"}</th>
+                            <th
+                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4]"
+                                >{$t("stats.level") || "Level"}</th
+                            >
+                            <th
+                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4]"
+                                >{$t("stats.baseHp") || "Base HP"}</th
+                            >
+                            <th
+                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4]"
+                                >{$t("stats.baseAtk") || "Base ATK"}</th
+                            >
 
                             {#each ["str", "agi", "int", "will"] as attr}
-                                {@const isMain = attr === charStats.mainAttribute}
-                                {@const isSec = attr === charStats.secondaryAttribute}
-                                
+                                {@const isMain =
+                                    attr === charStats.mainAttribute}
+                                {@const isSec =
+                                    attr === charStats.secondaryAttribute}
+
                                 <th class="py-3 px-2 border-b align-middle">
                                     <div class="flex justify-center w-full">
-                                        <Tooltip 
-                                            text={$t(isMain ? "stats.mainAttr" : isSec ? "stats.secAttr" : "")}
+                                        <Tooltip
+                                            text={$t(
+                                                isMain
+                                                    ? "stats.mainAttr"
+                                                    : isSec
+                                                      ? "stats.secAttr"
+                                                      : "",
+                                            )}
                                         >
-                                            <div class="
-                                                px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider
-                                                {isMain ? 'bg-[#FFEE00] text-[#21272C] shadow-sm' : ''}
-                                                {isSec ? 'bg-[#3B3B3B] text-white shadow-sm' : ''}
-                                                {!isMain && !isSec ? 'text-gray-600' : ''}
-                                            ">
+                                            <div
+                                                class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
+                                                    ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
+                                                    : ''} {isSec
+                                                    ? 'bg-[#3B3B3B] dark:bg-[#343434] text-white shadow-sm'
+                                                    : ''} {!isMain && !isSec
+                                                    ? 'text-gray-600 dark:text-[#E4E4E4]'
+                                                    : ''}"
+                                            >
                                                 {$t(`stats.${attr}`) || attr}
                                             </div>
                                         </Tooltip>
@@ -850,14 +1177,43 @@
                     <tbody class="text-sm font-nums text-gray-800">
                         {#each Array(90) as _, i}
                             {@const lvl = i + 1}
-                            <tr class="hover:bg-yellow-50 transition-colors border-b border-gray-50 even:bg-gray-50/50">
-                                <td class="py-2 px-2 font-bold text-gray-400 bg-gray-50/50">{lvl}</td>
-                                <td class="py-2 px-2 font-bold">{calculateStat(charStats.hp, lvl)}</td>
-                                <td class="py-2 px-2 font-bold">{calculateStat(charStats.atk, lvl)}</td>
-                                <td class="py-2 px-2">{calculateStat(charStats.attributes.str, lvl)}</td>
-                                <td class="py-2 px-2">{calculateStat(charStats.attributes.agi, lvl)}</td>
-                                <td class="py-2 px-2">{calculateStat(charStats.attributes.int, lvl)}</td>
-                                <td class="py-2 px-2">{calculateStat(charStats.attributes.will, lvl)}</td>
+                            <tr
+                                class="hover:bg-yellow-50 transition-colors border-b border-gray-50 even:bg-gray-50/50"
+                            >
+                                <td
+                                    class="py-2 px-2 font-bold text-gray-400 bg-gray-50/50"
+                                    >{lvl}</td
+                                >
+                                <td class="py-2 px-2 font-bold"
+                                    >{calculateStat(charStats.hp, lvl)}</td
+                                >
+                                <td class="py-2 px-2 font-bold"
+                                    >{calculateStat(charStats.atk, lvl)}</td
+                                >
+                                <td class="py-2 px-2"
+                                    >{calculateStat(
+                                        charStats.attributes.str,
+                                        lvl,
+                                    )}</td
+                                >
+                                <td class="py-2 px-2"
+                                    >{calculateStat(
+                                        charStats.attributes.agi,
+                                        lvl,
+                                    )}</td
+                                >
+                                <td class="py-2 px-2"
+                                    >{calculateStat(
+                                        charStats.attributes.int,
+                                        lvl,
+                                    )}</td
+                                >
+                                <td class="py-2 px-2"
+                                    >{calculateStat(
+                                        charStats.attributes.will,
+                                        lvl,
+                                    )}</td
+                                >
                             </tr>
                         {/each}
                     </tbody>
@@ -866,9 +1222,38 @@
         </div>
     </div>
 {/if}
+{#if selectedArtId}
+    <div
+        role="dialog"
+        aria-modal="true"
+        tabindex="-1"
+        class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-10 animate-fadeIn outline-none cursor-zoom-out overflow-hidden"
+        on:click={() => (selectedArtId = null)}
+        on:keydown={(e) =>
+            (e.key === "Enter" || e.key === " ") && (selectedArtId = null)}
+    >
+        <div
+            role="presentation"
+            class="relative max-w-full max-h-full flex items-center justify-center cursor-auto"
+            on:click|stopPropagation
+            on:keydown|stopPropagation
+        >
+            <Images
+                id={selectedArtId}
+                variant="operator-art"
+                className="max-w-full max-h-full object-contain rounded-lg drop-shadow-2xl select-none"
+            />
+            <button
+                class="absolute top-0 right-0 md:top-4 md:right-4 p-3 bg-black/40 hover:bg-black/80 text-white rounded-full transition-colors backdrop-blur-sm z-10"
+                on:click={() => (selectedArtId = null)}
+            >
+                <Icon name="close" class="w-6 h-6" />
+            </button>
+        </div>
+    </div>
+{/if}
 
 <style>
-    /* Маска для плавного исчезновения ног персонажа */
     .mask-image-gradient {
         mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
         -webkit-mask-image: linear-gradient(

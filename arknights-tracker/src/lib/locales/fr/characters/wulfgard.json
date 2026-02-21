@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Altération thermique",
+      "Combustion"
+    ],
+    "behaviourHateTags": [
+      "Accomplissement de soi"
+    ],
+    "behaviourUnavailableTags": [
+      "Sociabilité"
+    ],
+    "blocTag": "Industries Endfield",
+    "expertTags": [
+      "Techniques de combat",
+      "Infiltré"
+    ],
+    "giftPreferTags": [
+      "Sélection du Protocole de la Vallée"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Créativité"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Il ne relâche sa vigilance qu'auprès de ceux qui ont vraiment gagné sa confiance. C'est alors qu'il révélera sa véritable nature, celle qu'il dissimule depuis son enfance."
     },
-    "potential6": {
+    "potential5": {
       "name": "Regard de prédateur",
       "author": "FE",
       "description": "Le jeune prédateur pénètre sur son terrain de chasse personnel sur le hurlement de l'Esprit du loup. Ses yeux fixent chacune des proies ; ses pistolets les abattront l'une après l'autre."

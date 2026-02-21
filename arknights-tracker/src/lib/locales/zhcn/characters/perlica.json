@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "电磁附着",
+      "导电"
+    ],
+    "behaviourHateTags": [
+      "运动"
+    ],
+    "behaviourUnavailableTags": [
+      "内向"
+    ],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "团队管理",
+      "源石技艺"
+    ],
+    "giftPreferTags": [
+      "谷地·工业严选"
+    ],
+    "hobbyTags": [
+      "生活",
+      "创意"
+    ],
+    "raceTag": "黎博利"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "干员智识能力值提升10。",
         "干员智识能力值提升15。",
         "干员智识能力值提升15。",
         "干员智识能力值提升20。"
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "一种可见的思念让她不愿驻足，协议从不是冰冷的束缚。"
     },
-    "potential6": {
+    "potential5": {
       "name": "未来",
       "author": "IRple2",
       "description": "蓝图上刻印了她所编织的无限可能，那是她随身携带的未来。"

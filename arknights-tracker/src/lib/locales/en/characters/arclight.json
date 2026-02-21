@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP Recovery",
+      "Electric Infliction"
+    ],
+    "behaviourHateTags": [
+      "Mind Honing"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hannabit Circuit",
+    "expertTags": [
+      "Tool Assembly",
+      "Natural Lore"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Sports"
+    ],
+    "raceTag": "Kuranta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Agility +10.",
         "Operator Agility +15.",
         "Operator Agility +15.",
         "Operator Agility +20."
@@ -122,7 +146,7 @@
       "author": "またよし",
       "description": "No storms could ever hope to stop her in her tracks."
     },
-    "potential6": {
+    "potential5": {
       "name": "Crescent Scimitar",
       "author": "Z3zz",
       "description": "She always called herself an Echoling, but the many people she saved from breaker blades insisted on addressing her as an Aldertone."

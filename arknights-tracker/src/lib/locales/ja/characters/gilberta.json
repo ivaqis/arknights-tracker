@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "アーツ脆弱",
+      "自然付着",
+      "浮遊"
+    ],
+    "behaviourHateTags": [
+      "科学技術"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "ロドス・アイランド",
+    "expertTags": [
+      "冒険",
+      "アーツ"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "ファッション",
+      "文化"
+    ],
+    "raceTag": "ヴァルポ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "もう軽やかに歩くことも、忙しなく駆け出すこともない。見覚えのある姿を見つけ、ふと足を止めた。"
     },
-    "potential6": {
+    "potential5": {
       "name": "世界をひっくり返す",
       "author": "LM7",
       "description": "視点を変えれば、景色も心、そして自分自身も、きっと違って見える。その瞬間、世界は新しく生まれ変わる。"

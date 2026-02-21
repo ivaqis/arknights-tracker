@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Zertrümmern",
+      "Massenkontrolle"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+      },
+      "name": "Destruktive Sequenz",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln"
+      },
+      "name": "Konstruktive Sequenz",
+      "description": "Eine kraftvolle Originium-Technikexplosion, die Gegner innerhalb des Wirkungsbereichs angreift. Fügt <@ba.pd>Physischen SDN</> und <#ba.crush>Zertrümmern</> zu."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "crystalShatteringDmgMultiplier": "SDN-Multiplikator bei Kristallzersplitterung",
+        "stagger": "Taumeln",
+        "sealDurationS": "Siegeldauer (Sek.)"
+      },
+      "name": "Siegel-Sequenz",
+      "description": "KOMBOAUSLÖSER: Wenn ein anderer Operator im Team SDN mit Kombofertigkeiten verursacht. \nStürmt an die Seite des Gegners, um <@ba.pd>Physischen SDN</> zu verursachen und ihn mit <#ba.originium>Originium-Kristallen</> zu versehen, durch die er temporär versiegelt wird. Wenn dem versiegelten Gegner ein <#ba.physicalstatus>Physischer Zustand</> oder <#ba.noguard>Anfälligkeit</> zugefügt wird, werden die <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> und es wird zusätzlicher <@ba.pd>Physischer SDN</> verursacht."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "bonusDmgMultiplier": "Bonus-SDN-Multiplikator",
+        "stagger": "Taumeln"
+      },
+      "name": "Bombardement-Sequenz",
+      "description": "Bombardiert den Boden mit Originium-Techniken und verursacht massiven <@ba.pd>Physischen SDN</> bei allen Gegnern in einem fächerförmigen Bereich. Wenn der Gegner mit <#ba.originium>Originium-Kristallen</> besetzt ist, <#ba.consume>verbraucht</> diese Fertigkeit diese <#ba.originium>Originium-Kristalle</> und verursacht einen weiteren Treffer mit <@ba.pd>Physischem SDN</>."
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Beweglichkeit +10.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +20."
+      ],
+      "name": "Scharmützler"
+    },
+    "talent1": {
+      "levels": [
+        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden.",
+        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+      ],
+      "name": "Essenz-Zerfall"
+    },
+    "talent2": {
+      "levels": [
+        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>.",
+        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>."
+      ],
+      "name": "Realraum-Stasis"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kampffertigkeit <@ba.key>Konstruktive Sequenz</> verbessert: Der <#ba.consume>Verbrauch</> von <#ba.originium>Originium-Kristallen</> <#ba.return>stellt</> <@ba.vup>{atb_return:0}</> FP <#ba.return>wieder her</>.",
+      "name": "Finales Erwachen"
+    },
+    "potential2": {
+      "description": "Talent <@ba.key>Essenz-Zerfall</> verbessert: Wenn der Endministrator den ANG-Buff erhält, erhalten alle anderen Operatoren die Hälfte dieses ANG-Buffs.",
+      "name": "Reflexion der Autorität"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Erinnerungsgeflecht",
+      "author": "狂zip",
+      "description": "Der letzte Eintrag ist eine kleine Passage oder eine Art Anweisung. Die Fäden wurden gewoben und die Teile sind da, wo sie sein sollen. Du hast das alles gewusst."
+    },
+    "potential3": {
+      "name": "Quadrant",
+      "author": "廻轉",
+      "description": "Du stehst genau in der Mitte der Kreuzung."
+    },
+    "potential6": {
+      "name": "Gänzlich erfasst",
+      "author": "수줍(Sjoop)",
+      "description": "Vertrauen und Glaube gerannen in deiner Hand. Das erste Fragment trägt den Namen „Geschichte“. Das andere nennt sich „Zivilisation und Leben“."
+    }
+  }
+}

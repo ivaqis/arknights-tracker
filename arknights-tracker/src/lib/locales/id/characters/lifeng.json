@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Knock Down",
+      "PHY Susc.",
+      "Link"
+    ],
+    "behaviourHateTags": [
+      "Seni Rupa"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel"
+    ],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Kegesitan",
+      "Kisah Alam"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pelari Wuling"
+    ],
+    "hobbyTags": [
+      "Olahraga",
+      "Alam"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Agility Operator +10.",
         "Agility Operator +15.",
         "Agility Operator +15.",
         "Agility Operator +20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "Latihan memang butuh waktu lama, tapi matanya tetap bersinar terang karena meneladanimu."
     },
-    "potential6": {
+    "potential5": {
       "name": "Jiwa Muda",
       "author": "Eteru",
       "description": "Bagaikan sebongkah giok alami, dia akan bertahan saat dipahat, dan kemurnian hatinya pun tetap terjaga."

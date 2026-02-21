@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "스킬 게이지 회복",
+      "갑옷 파괴"
+    ],
+    "behaviourHateTags": [
+      "생활"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "로도스 아일랜드",
+    "expertTags": [
+      "전략 수립",
+      "조직 관리"
+    ],
+    "giftPreferTags": [
+      "무릉 · 질주자 엄선"
+    ],
+    "hobbyTags": [
+      "문화",
+      "지능 훈련"
+    ],
+    "raceTag": "리베리"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 의지 능력치 10 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 15 증가",
         "오퍼레이터 의지 능력치 20 증가"
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "하지만 그는 제국을 조금도 증오하지 않았습니다. '황제'가 죽고 백여 년이 흐른 뒤, 그는 등 뒤에 방패의 벽을 세웠습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "체크메이트",
       "author": "大明",
       "description": "자욱한 포연 속, 천근 같은 몸으로 삶과 죽음의 수를 둡니다. 땅을 짚은 검날은 철의 서약을, 그리고 모두의 희망을 지탱하고 있습니다. 자, 이제... 체크메이트군요."

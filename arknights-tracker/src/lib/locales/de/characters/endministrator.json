@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Zertrümmern",
+      "Massenkontrolle"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Du stehst genau in der Mitte der Kreuzung."
     },
-    "potential6": {
+    "potential5": {
       "name": "Gänzlich erfasst",
       "author": "수줍(Sjoop)",
       "description": "Vertrauen und Glaube gerannen in deiner Hand. Das erste Fragment trägt den Namen „Geschichte“. Das andere nennt sich „Zivilisation und Leben“."

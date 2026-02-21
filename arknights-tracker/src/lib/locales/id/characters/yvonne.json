@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Solidify",
+      "Crit"
+    ],
+    "behaviourHateTags": [
+      "Olahraga"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Daya Paham",
+      "Pengelolaan Tim"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Fesyen",
+      "Teknologi"
+    ],
+    "raceTag": "Vouivre"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "Intellect Operator +10.",
         "Intellect Operator +15.",
         "Intellect Operator +15.",
         "Intellect Operator +20."
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "Tak perlu pencahayaan apa pun saat selfie bersama Yvonne. Karena dialah sumber cahaya yang paling terang."
     },
-    "potential6": {
+    "potential5": {
       "name": "Sama-sama Untung!",
       "author": "u介",
       "description": "Lapisan berwarna cerah, lagu yang energik, dan senyum puas kemenangan .... Dia merekam setiap momen bahagia dan kini membagikannya denganmu."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Proteger",
+      "Trat. de PV",
+      "Imp. crio."
+    ],
+    "behaviourHateTags": [
+      "Deportes"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Supervivencia al aire libre",
+      "Técnica médica"
+    ],
+    "giftPreferTags": [
+      "Selección del protocolo del Valle"
+    ],
+    "hobbyTags": [
+      "Deportes",
+      "Caridad"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Fuerza del operador +10.",
         "Fuerza del operador +15.",
         "Fuerza del operador +15.",
         "Fuerza del operador +20."
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "Como la gota de sol más brillante sobre las cumbres heladas, su sola presencia trae calor instantáneo a quienes están atrapados en la nieve escarpada. Ella enfrentará el frío glacial y los llevará a la supervivencia."
     },
-    "potential6": {
+    "potential5": {
       "name": "Tallando a través de la nieve",
       "author": "LAL!ROLE",
       "description": "La niña avanzaba con esfuerzo por las cumbres y tallaba un sendero por las empinadas laderas nevadas. Siempre sigue una línea recta para salvar vidas en peligro."

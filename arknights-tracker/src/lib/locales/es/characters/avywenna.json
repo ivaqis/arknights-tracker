@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cau. de dañ.",
+      "Susc. Art."
+    ],
+    "behaviourHateTags": [
+      "Perfeccionamiento mental"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Cámara General de Comercio de Talos-II (C.G.C.T.)",
+    "expertTags": [
+      "Sabiduría callejera",
+      "Agilidad"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Estilo de vida",
+      "Moda"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Voluntad del operador +10.",
         "Voluntad del operador +15.",
         "Voluntad del operador +15.",
         "Voluntad del operador +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Adquirió muchos recuerdos y nostalgias de todo tipo de personas, pero casi nunca habló de los suyos."
     },
-    "potential6": {
+    "potential5": {
       "name": "Invitación al misterio",
       "author": "LM7",
       "description": "El viaje es incierto, pero el mensajero nunca dudó al brindarte esta invitación."

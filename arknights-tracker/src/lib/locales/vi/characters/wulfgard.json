@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nhiễm Nhiệt",
+      "Thiêu Đốt"
+    ],
+    "behaviourHateTags": [
+      "Rèn Luyện Tâm Trí"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại"
+    ],
+    "blocTag": "Tập Đoàn Endfield",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Kẻ Xâm Nhập"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Tự Nhiên",
+      "Sáng Tạo"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Anh chỉ buông lỏng cảnh giác với những ai thực sự xứng đáng với lòng tin của anh. Và rồi anh sẽ bộc lộ bản chất thật sự, bản chất đã bị anh chối bỏ từ thuở ấu thơ."
     },
-    "potential6": {
+    "potential5": {
       "name": "Cái Nhìn Của Kẻ Săn Mồi",
       "author": "FE",
       "description": "Gã săn mồi trẻ tuổi bước vào vùng săn mồi của riêng mình khi Linh Hồn Sói tru lên. Mắt gã dõi theo từng con mồi, và súng của gã sẽ hạ gục từng con một."

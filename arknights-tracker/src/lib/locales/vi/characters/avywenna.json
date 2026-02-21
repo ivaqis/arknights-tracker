@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Dễ Bị Thương TP"
+    ],
+    "behaviourHateTags": [
+      "Rèn Luyện Tâm Trí"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội"
+    ],
+    "blocTag": "Phòng Thương Mại Tổng Hợp Talos-II (TGCC)",
+    "expertTags": [
+      "Trí Tuệ Đường Phố",
+      "Nhanh Nhẹn"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Phong Cách Sống",
+      "Thời Trang"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Ý Chí Đặc Vụ +10.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Cô có rất nhiều kỷ niệm và nỗi nhớ từ đủ loại người, nhưng lại hiếm khi nhắc đến kỷ niệm của riêng mình."
     },
-    "potential6": {
+    "potential5": {
       "name": "Lời Mời Bí Ẩn",
       "author": "LM7",
       "description": "Hành trình không chắc chắn, nhưng liên lạc viên không bao giờ do dự khi đưa ra lời mời này cho bạn."

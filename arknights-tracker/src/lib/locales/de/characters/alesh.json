@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "FP-Wiederherstellung",
+      "Erstarren"
+    ],
+    "behaviourHateTags": [
+      "Gedächtnistraining"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Gewerkschaftsbund von Talos-II",
+    "expertTags": [
+      "Überleben im Freien",
+      "Schlachtfeld-Taktik"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Kultur",
+      "Sport"
+    ],
+    "raceTag": "Anaty"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Stärke +10.",
         "Operator-Stärke +15.",
         "Operator-Stärke +15.",
         "Operator-Stärke +20."
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "Das Leben kann einigen Leuten wirklich zusetzen, aber ein fehlendes Auge ist sehr gut darin, verborgene Geheimnisse zu erkennen."
     },
-    "potential6": {
+    "potential5": {
       "name": "Tag der ausgeworfenen Angelrute",
       "author": "w3",
       "description": "„Was ist der schönste Moment beim Angeln?“ – „Wenn man die Rute auswirft.“ – „Warum?“ – „Weil darin unsere Hoffnungen liegen. Ungewissheit lässt das Herz höher schlagen.“"

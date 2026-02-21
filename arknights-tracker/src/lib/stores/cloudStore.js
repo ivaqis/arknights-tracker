@@ -9,7 +9,6 @@ export const user = writable(null);
 export const syncStatus = writable("idle"); 
 export const cloudDataBuffer = writable(null);
 
-// Простой подсчет с диска (для инициализации)
 function countAllLocalPulls() {
     if (typeof window === 'undefined') return 0;
     let accounts = [];
@@ -47,7 +46,6 @@ export async function logout() {
     if (typeof window !== 'undefined') localStorage.removeItem("ark_last_sync");
 }
 
-// [FIX] checkSync теперь принимает freshSnapshot (объект данных), чтобы считать точно
 export async function checkSync(currentUser, freshSnapshot = null) {
     if (!currentUser) return;
     syncStatus.set("checking");
@@ -55,10 +53,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
     try {
         const localLastUpdated = parseInt(localStorage.getItem("ark_last_sync") || "0");
         
-        // --- УМНЫЙ ПОДСЧЕТ ЛОКАЛЬНЫХ ДАННЫХ ---
         let localTotal = 0;
-        
-        // 1. Получаем аккаунты
         let accounts = [];
         let selectedId = 'main';
         try {
@@ -71,15 +66,12 @@ export async function checkSync(currentUser, freshSnapshot = null) {
         }
         if (!accounts || !accounts.length) accounts = [{id: 'main'}];
 
-        // 2. Считаем
         accounts.forEach(acc => {
-            // Если передан свежий снимок и это текущий аккаунт - берем из него!
             if (acc.id === selectedId && freshSnapshot) {
                 ['standard', 'special', 'new-player'].forEach(cat => {
                     if (freshSnapshot[cat]?.pulls) localTotal += freshSnapshot[cat].pulls.length;
                 });
             } else {
-                // Иначе читаем старое с диска
                 const raw = localStorage.getItem(`ark_tracker_data_${acc.id}`);
                 if (raw) {
                     try {
@@ -89,7 +81,6 @@ export async function checkSync(currentUser, freshSnapshot = null) {
                 }
             }
         });
-        // ---------------------------------------
 
         const userRef = doc(db, "users", currentUser.uid);
         const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 5000));
@@ -188,7 +179,6 @@ export async function uploadLocalData(freshSnapshot = null) {
         let sixStars = 0;
 
         accounts.forEach(acc => {
-            // [ВАЖНО] Используем freshSnapshot для текущего аккаунта
             if (acc.id === selectedId && freshSnapshot) {
                 fullBackup.data[acc.id] = freshSnapshot;
                 console.log(`✅ Packed (Memory): ${acc.name}`);

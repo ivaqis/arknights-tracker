@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nghiền",
+      "Chế Ngự Áp Đảo"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Bạn đang đứng ngay giữa ngã tư đường."
     },
-    "potential6": {
+    "potential5": {
       "name": "Nắm Bắt Hoàn Toàn",
       "author": "수줍(Sjoop)",
       "description": "Niềm tin và đức tin lắng đọng trong lòng bàn tay bạn. Mảnh ghép đầu tiên mang tên lịch sử. Mảnh ghép còn lại mang tên Văn minh và Sự sống."

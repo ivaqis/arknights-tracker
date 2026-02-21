@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Afflizione da ghiaccio",
+      "Sospensione",
+      "Suscettibilità fisica"
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Strategie di combattimento",
+      "Infiltrazione"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Belle arti",
+      "Fortificazione mentale"
+    ],
+    "raceTag": "Felinar"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Volontà operatore +10.",
         "Volontà operatore +15.",
         "Volontà operatore +15.",
         "Volontà operatore +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "\"Ti va un sorso? Oh... beh, è una bevanda nutriente a base di insetti ed estratti vegetali. Sì... ha un sapore interessante...\""
     },
-    "potential6": {
+    "potential5": {
       "name": "Ora segreta",
       "author": "かしまき",
       "description": "Ti secca condividere il tuo prezioso tempo libero con qualcuno?"

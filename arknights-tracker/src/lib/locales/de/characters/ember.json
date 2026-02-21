@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Niederschlagen",
+      "LP-Behandlung",
+      "Schild"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Orden des Stahlschwurs",
+    "expertTags": [
+      "Kampftechnik",
+      "Verfassung"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Sport",
+      "Technologie"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Stärke +10.",
         "Operator-Stärke +15.",
         "Operator-Stärke +15.",
         "Operator-Stärke +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "Der Kreuzzug ist der Weg ans Ziel. Wahre Krieger fallen nicht, bis dieses Ziel erreicht wurde."
     },
-    "potential6": {
+    "potential5": {
       "name": "Die uneinnehmbare Bastion",
       "author": "MoooFoo",
       "description": "Glühender Stahl und dickes Blut waren der Mörtel und die Ziegel der Bastionen des Nordens. Der Norden ist nicht ihr Albtraum. Er ist lediglich ihr nächstes Ziel."

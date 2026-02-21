@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "대량 피해",
+      "연소"
+    ],
+    "behaviourHateTags": [
+      "과학기술"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "로도스 아일랜드",
+    "expertTags": [
+      "오리지늄 아츠",
+      "전황 분석"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "창의",
+      "생활"
+    ],
+    "raceTag": "살카즈"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 지능 능력치 10 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 20 증가"
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538°C는 철의 녹는점이지, 레바테인의 녹는점이 아닙니다. 준비가 되었다면, 조금 더 가까이 다가가 보세요."
     },
-    "potential6": {
+    "potential5": {
       "name": "불꽃의 초대",
       "author": "min",
       "description": "그녀와 함께 기억 없는 긴 밤으로 걸어가 어둠의 악몽을 불태우고, 앞길을 비출 불꽃을 피워주세요."

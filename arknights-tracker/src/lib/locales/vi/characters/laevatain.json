@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Thiêu Đốt"
+    ],
+    "behaviourHateTags": [
+      "Công Nghệ"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Thuật Pháp Originium",
+      "Phân Tích Tình Huống"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Sáng Tạo",
+      "Phong Cách Sống"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "Trí Tuệ Đặc Vụ +10.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +20."
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538°C là nhiệt độ nóng chảy của sắt, không phải của cô ấy. Cứ thoải mái đến gần cô ấy hơn nếu bạn nghĩ mình đã sẵn sàng."
     },
-    "potential6": {
+    "potential5": {
       "name": "Lời Mời Đến Ngọn Lửa Tan Chảy",
       "author": "min",
       "description": "Đồng hành cùng cô qua những đêm dài không ký ức. Chiến đấu cùng cô và thiêu rụi những kẻ thù đen tối, đáng sợ. Sát cánh cùng cô khi cô thắp lên ngọn lửa soi sáng hành trình tương lai."

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量傷害",
+      "法術脆弱"
+    ],
+    "behaviourHateTags": [
+      "益智"
+    ],
+    "behaviourUnavailableTags": [
+      "內向"
+    ],
+    "blocTag": "環塔商會",
+    "expertTags": [
+      "市井交涉",
+      "敏捷"
+    ],
+    "giftPreferTags": [
+      "谷地·工業嚴選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "時尚"
+    ],
+    "raceTag": "卡特斯"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員意志能力值提升10。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升20。"
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "她收集了許多人的思念與回憶，但很少和別人提起自己的那份。"
     },
-    "potential6": {
+    "potential5": {
       "name": "未知邀約",
       "author": "LM7",
       "description": "面對未知的旅程，信使毫不猶豫地向你送出邀約。"

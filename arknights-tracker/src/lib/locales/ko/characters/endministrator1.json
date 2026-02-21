@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "강타",
+      "제어"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "일반 공격 제1단계 배율",
+        "batkSeq2Multiplier": "일반 공격 제2단계 배율",
+        "batkSeq3Multiplier": "일반 공격 제3단계 배율",
+        "batkSeq4Multiplier": "일반 공격 제4단계 배율",
+        "batkSeq5Multiplier": "일반 공격 제5단계 배율",
+        "finisherAtkMultiplier": "처형 공격 배율",
+        "diveAtkMultiplier": "낙하 공격 배율"
+      },
+      "name": "훼손 시퀀스",
+      "description": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.pd>물리 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>{poise:0}</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.pd>물리 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.pd>물리 피해</>를 주고 일정량의 스킬 게이지를 회복합니다."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "피해 배율",
+        "stagger": "불균형치"
+      },
+      "name": "구성 시퀀스",
+      "description": "오리지늄 아츠를 사용해 전방 일정 범위 내의 적을 공격하여 <@ba.pd>물리 피해</>를 주고 <#ba.crush>강타</>합니다."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "피해 배율",
+        "crystalShatteringDmgMultiplier": "결정 파괴 피해 배율",
+        "stagger": "불균형치",
+        "sealDurationS": "봉인 시간(초)"
+      },
+      "name": "봉인 시퀀스",
+      "description": "팀 내 다른 오퍼레이터의 연계 스킬이 피해를 줄 때 사용할 수 있습니다.\n적의 근처로 돌진하여 대상에게 <@ba.pd>물리 피해</>를 주고 <#ba.originium>오리지늄 결정</>을 부착하며 일정 시간 봉인합니다. <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.noguard>방어 불능</> 상태를 부여하면 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하고 추가 <@ba.pd>물리 피해</>를 줍니다."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "피해 배율",
+        "bonusDmgMultiplier": "추가 피해 배율",
+        "stagger": "불균형치"
+      },
+      "name": "폭격 시퀀스",
+      "description": "오리지늄 아츠로 지면을 강타하여, 전방 부채꼴 범위 내의 적에게 대량의 <@ba.pd>물리 피해</>를 줍니다. 적에게 <#ba.originium>오리지늄 결정</>이 부착되어 있을 경우, <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하며 1회에 한하여 추가로 <@ba.pd>물리 피해</>를 줍니다."
+    },
+    "indicator": {
+      "levels": [
+        "오퍼레이터 민첩 능력치 10 증가",
+        "오퍼레이터 민첩 능력치 15 증가",
+        "오퍼레이터 민첩 능력치 15 증가",
+        "오퍼레이터 민첩 능력치 20 증가"
+      ],
+      "name": "능숙"
+    },
+    "talent1": {
+      "levels": [
+        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다.",
+        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다."
+      ],
+      "name": "본질 붕괴"
+    },
+    "talent2": {
+      "levels": [
+        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>",
+        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>"
+      ],
+      "name": "현실 정지"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "배틀 스킬 <@ba.key>구성 시퀀스</>가 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>했을 때, 스킬 게이지를 <@ba.vup>{atb_return:0}</>포인트 <#ba.return>반환</>합니다.",
+      "name": "마지막 각성"
+    },
+    "potential2": {
+      "description": "재능 <@ba.key>'본질 붕괴'</> 효과 강화: 자신이 공격력 증가 효과를 획득할 때, 다른 아군 오퍼레이터가 공격력 증가 효과의 절반을 획득합니다.",
+      "name": "권능 반영"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "기억의 매개체",
+      "author": "狂zip",
+      "description": "마지막으로 기록된 것은 짧은 한마디, 혹은 어떤 의뢰였습니다. 실타래가 얽히듯 선들이 이어지고, 말은 소리 없이 놓입니다. 그리고 당신은 이미 이 모든 흐름을 깨닫고 있습니다."
+    },
+    "potential3": {
+      "name": "사분면",
+      "author": "廻轉",
+      "description": "당신은 십자의 정중앙에 있습니다."
+    },
+    "potential6": {
+      "name": "장악",
+      "author": "수줍(Sjoop)",
+      "description": "응축된 신뢰가 당신의 손안에 있습니다. 그 첫 번째 조각의 이름은 역사, 또 다른 이름은 문명과 생명입니다."
+    }
+  }
+}

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Pemulihan SP",
+      "Heat Infliction",
+      "Link"
+    ],
+    "behaviourHateTags": [
+      "Seni Rupa"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Pengelolaan Tim",
+      "Memasak"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Amal",
+      "Olahraga"
+    ],
+    "raceTag": "Perro"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -38,6 +62,7 @@
     },
     "indicator": {
       "levels": [
+        "Agility Operator +10.",
         "Agility Operator +15.",
         "Agility Operator +15.",
         "Agility Operator +20."
@@ -113,7 +138,7 @@
       "author": "BBokyo",
       "description": "Jadilah panutan dan sinari yang lain! Lalu, teruslah bersinar, terangi juga tempat-tempat yang jauh!"
     },
-    "potential6": {
+    "potential5": {
       "name": "Bintang Baru Masa Depan",
       "author": "Kaneni",
       "description": "Bagai angin pagi, senyumnya menyampaikan harapan yang belum terucap dan membawa keberanian yang masih menanti dalam diam."

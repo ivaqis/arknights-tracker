@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Rec. de PH",
+      "Solidificar"
+    ],
+    "behaviourHateTags": [
+      "Perfeccionamiento mental"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Sindicatos de Trabajadores Unidos de Talos II",
+    "expertTags": [
+      "Supervivencia al aire libre",
+      "Tácticas de campo de batalla"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Cultura",
+      "Deportes"
+    ],
+    "raceTag": "Anaty"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Fuerza del operador +10.",
         "Fuerza del operador +15.",
         "Fuerza del operador +15.",
         "Fuerza del operador +20."
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "La vida puede golpear muy fuerte, pero el ojo vacío es realmente bueno para ver los secretos ocultos debajo de él."
     },
-    "potential6": {
+    "potential5": {
       "name": "Día de lanzamiento de caña",
       "author": "w3",
       "description": "“¿Cuál es el mejor momento al pescar?” “Cuando lanzas la caña.” “¿Por qué?” “Porque ahí están tus esperanzas. La incertidumbre hace latir rápido el corazón.”"

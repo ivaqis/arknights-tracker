@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Suscettibilità alle Arti",
+      "Afflizione da natura",
+      "Sospensione"
+    ],
+    "behaviourHateTags": [
+      "Tecnologia"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Avventura",
+      "Arti di Originium"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Moda",
+      "Cultura"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "La vista di un volto familiare l'ha spinta a mettere da parte la fretta e fermarsi per un po', interrompendo il suo incedere rapido e aggraziato."
     },
-    "potential6": {
+    "potential5": {
       "name": "Ribaltiamo il mondo",
       "author": "LM7",
       "description": "Basta mettersi a testa in giù per vedere cose diverse, provare sensazioni diverse e diventare una persona diversa. Oh, caspita! È un mondo tutto nuovo."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Knock Down",
+      "HP Treatment",
+      "Perisai"
+    ],
+    "behaviourHateTags": [
+      "Gaya Hidup"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Order of Steel Oath",
+    "expertTags": [
+      "Teknik Tempur",
+      "Kondisi Tubuh"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Olahraga",
+      "Teknologi"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Strength Operator +10.",
         "Strength Operator +15.",
         "Strength Operator +15.",
         "Strength Operator +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "Perang suci adalah jalan untuk mencapai tujuan. Prajurit sejati tak akan gugur sebelum target tercapai."
     },
-    "potential6": {
+    "potential5": {
       "name": "Baluarti Tak Tertembus",
       "author": "MoooFoo",
       "description": "Baja panas dan darah padat menjadi bata dan mortar bagi baluarti di utara. Utara bukanlah mimpi buruknya—tempat itu hanyalah tujuan berikutnya."

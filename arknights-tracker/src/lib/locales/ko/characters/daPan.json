@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "대량 피해",
+      "띄우기",
+      "강타"
+    ],
+    "behaviourHateTags": [
+      "패션"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "홍산 과학원",
+    "expertTags": [
+      "요리",
+      "도구 제작"
+    ],
+    "giftPreferTags": [
+      "무릉 · 질주자 엄선"
+    ],
+    "hobbyTags": [
+      "생활",
+      "공익"
+    ],
+    "raceTag": "우르수스"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "한가로운 이 누구인가. 파울비스트 서넛과 어울려 고요한 산중에 앉아 풍류를 즐기네."
     },
-    "potential6": {
+    "potential5": {
       "name": "인간 세상의 백 가지 맛",
       "author": "黑犬",
       "description": "인생은 모든 재료를 갖추고 시작하는 요리가 아닙니다. 하지만 보고 느낀 모든 것들을 재료 삼아, 그것들을 지지고 볶다 보면 희로애락 가득한 맛을 내죠."

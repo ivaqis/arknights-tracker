@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "技力回復",
+      "碎甲"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "羅德島",
+    "expertTags": [
+      "戰場策略",
+      "團隊管理"
+    ],
+    "giftPreferTags": [
+      "武陵·跑者嚴選"
+    ],
+    "hobbyTags": [
+      "文化",
+      "益智"
+    ],
+    "raceTag": "黎博利"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員意志能力值提升10。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升20。"
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "但他絲毫沒有憎恨帝國。「皇帝」死亡的百餘年後，他在身後立起了盾陣。"
     },
-    "potential6": {
+    "potential5": {
       "name": "將軍",
       "author": "大明",
       "description": "硝煙似散非散，千鈞之軀落下生與死的棋子；劍鋒倚地，支撐著鐵誓，亦支撐著守望——此刻，將軍。"

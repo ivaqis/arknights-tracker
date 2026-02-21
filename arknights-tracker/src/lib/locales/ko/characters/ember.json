@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "넘어뜨리기",
+      "치유",
+      "보호"
+    ],
+    "behaviourHateTags": [
+      "생활"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "철의 서약군",
+    "expertTags": [
+      "작전 기술",
+      "체력 단련"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "운동",
+      "과학기술"
+    ],
+    "raceTag": "산크타"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "정벌은 목표를 향한 과정일 뿐, 전사는 목표 앞에서 쓰러지지 않습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "난공불락의 요새",
       "author": "MoooFoo",
       "description": "굳어버린 피와 뜨거운 강철로 북쪽 지역에 요새를 세웠습니다. 그곳은 그녀의 악몽이 아닌, 다음 여정의 최종 목적지입니다."

@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "技力恢复",
+      "冻结"
+    ],
+    "behaviourHateTags": [
+      "益智"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "联盟工团",
+    "expertTags": [
+      "野外生存",
+      "战场策略"
+    ],
+    "giftPreferTags": [
+      "谷地·工业严选"
+    ],
+    "hobbyTags": [
+      "文化",
+      "运动"
+    ],
+    "raceTag": "阿纳缇"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "干员力量能力值提升10。",
         "干员力量能力值提升15。",
         "干员力量能力值提升15。",
         "干员力量能力值提升20。"
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "生活让人遍体鳞伤，但失去的眼睛，反而能看清这底下深藏的秘密。"
     },
-    "potential6": {
+    "potential5": {
       "name": "挥竿日",
       "author": "w3",
       "description": "“钓鳞时哪一刻心情最好？”“挥竿。”“为什么？”“所有的期待都还在前方，未知让人心跳加速。”"

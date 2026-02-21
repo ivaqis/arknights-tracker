@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Lift",
+      "Stagger"
+    ],
+    "behaviourHateTags": [
+      "Technology"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Erudite",
+      "Epiphany"
+    ],
+    "giftPreferTags": [
+      "Wuling Runners' Choice"
+    ],
+    "hobbyTags": [
+      "Culture",
+      "Charity"
+    ],
+    "raceTag": "Lung"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -118,7 +143,7 @@
       "author": "Kieed",
       "description": "The sword is her longing for her mother, the path of her choice, and her will to keep you safe."
     },
-    "potential6": {
+    "potential5": {
       "name": "Soaring Lung",
       "author": "宇木敦哉",
       "description": "The blade is drawn. The lung has soared. The wind is blowing. The clouds are roiling."

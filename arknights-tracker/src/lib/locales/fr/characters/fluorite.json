@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Altération naturelle",
+      "Alt. cryogénique"
+    ],
+    "behaviourHateTags": [
+      "Culture"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversion"
+    ],
+    "blocTag": "Industries Endfield",
+    "expertTags": [
+      "Survie en extérieur",
+      "Savoir des rues"
+    ],
+    "giftPreferTags": [
+      "Sélection du Protocole de la Vallée"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Créativité"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilité de l'opérateur +10.",
         "Agilité de l'opérateur +15.",
         "Agilité de l'opérateur +15.",
         "Agilité de l'opérateur +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Elle n'est pas rancunière. Elle n'en a pas le temps ; ses ennemis périssent trop vite."
     },
-    "potential6": {
+    "potential5": {
       "name": "La zone grise des règles",
       "author": "Doppel",
       "description": "La justice est toujours satisfaite. Mais s'il lui arrive d'être en retard, alors il ne faut pas s'étonner du grand n'importe quoi."

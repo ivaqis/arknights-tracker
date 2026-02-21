@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Inflição da Natureza",
+      "Inflição Crio"
+    ],
+    "behaviourHateTags": [
+      "Cultura"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Sobrevivência na Natureza",
+      "Sabedoria Urbana"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Natureza",
+      "Criativo"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilidade do Operador + 10.",
         "Agilidade do Operador + 15.",
         "Agilidade do Operador + 15.",
         "Agilidade do Operador + 20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Ela dificilmente guarda rancor. Seus inimigos geralmente não duram muito."
     },
-    "potential6": {
+    "potential5": {
       "name": "Limites Cinzentos das Regras",
       "author": "Doppel",
       "description": "A justiça sempre é feita. No entanto, se ela decidir chegar tarde, teremos um grande espetáculo."

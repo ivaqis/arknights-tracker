@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Altération électrique",
+      "Électrification"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversion"
+    ],
+    "blocTag": "Industries Endfield",
+    "expertTags": [
+      "Gestion d'équipe",
+      "Arts de l'originium"
+    ],
+    "giftPreferTags": [
+      "Sélection industrielle de la Vallée"
+    ],
+    "hobbyTags": [
+      "Mode de vie",
+      "Créativité"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelligence de l'opérateur +10.",
         "Intelligence de l'opérateur +15.",
         "Intelligence de l'opérateur +15.",
         "Intelligence de l'opérateur +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Elle a enfin pu poser les yeux sur l'objet de son affection et ne souhaite plus rester les bras ballants. Le Protocole n'a jamais eu vocation à devenir des chaînes froides et vides d'émotion."
     },
-    "potential6": {
+    "potential5": {
       "name": "L'avenir",
       "author": "IRple2",
       "description": "Elle a tissé une toile d'infinies possibilités, détaillées sur les plans. Elles symbolisent le futur qu'elle porte toujours en elle."

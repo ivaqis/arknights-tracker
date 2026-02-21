@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "治疗",
+      "腐蚀",
+      "脆弱"
+    ],
+    "behaviourHateTags": [
+      "文化"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "罗德岛",
+    "expertTags": [
+      "自然学识",
+      "冒险"
+    ],
+    "giftPreferTags": [
+      "谷地·工业严选"
+    ],
+    "hobbyTags": [
+      "生活",
+      "自然"
+    ],
+    "raceTag": "卡普里尼"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "干员智识能力值提升10。",
         "干员智识能力值提升15。",
         "干员智识能力值提升15。",
         "干员智识能力值提升20。"
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "躺在软绵绵的粉色云朵上，会胡思乱想些什么呢？千奇百怪的石头，不曾到过的地方，还是……"
     },
-    "potential6": {
+    "potential5": {
       "name": "心愿",
       "author": "Eteru",
       "description": "冰冷坚硬的岩石上开满了花朵，荒漠充满生机和暖意，悠扬的旋律在耳边哼唱……前辈，这不是梦，对吧？"

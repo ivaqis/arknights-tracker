@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abbattimento",
+      "Cura PS",
+      "Scudo"
+    ],
+    "behaviourHateTags": [
+      "Stile di vita"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Ordine del Giuramento d'acciaio",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Costituzione"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Sport",
+      "Tecnologia"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Forza operatore +10.",
         "Forza operatore +15.",
         "Forza operatore +15.",
         "Forza operatore +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "La crociata è la strada che conduce alla meta. I veri guerrieri non si arrendono finché l'obiettivo non è raggiunto."
     },
-    "potential6": {
+    "potential5": {
       "name": "Il bastione inespugnabile",
       "author": "MoooFoo",
       "description": "Acciaio rovente e sangue rappreso hanno contribuito a innalzare i bastioni settentrionali. Il Nord non è il suo incubo, ma la sua prossima destinazione."

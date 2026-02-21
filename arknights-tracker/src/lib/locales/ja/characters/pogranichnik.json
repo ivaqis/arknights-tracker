@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP回復",
+      "破砕"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "ロドス・アイランド",
+    "expertTags": [
+      "戦術",
+      "チーム管理"
+    ],
+    "giftPreferTags": [
+      "武陵・ランナー厳選"
+    ],
+    "hobbyTags": [
+      "文化",
+      "頭脳"
+    ],
+    "raceTag": "リーベリ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "意志が10アップする",
         "意志が15アップする",
         "意志が15アップする",
         "意志が20アップする"
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "しかし彼は、帝国を微塵も憎んではいなかった。ゆえに、「皇帝」の没後100年余り経った今、盾兵部隊をつくり上げた。"
     },
-    "potential6": {
+    "potential5": {
       "name": "チェックメイト",
       "author": "大明",
       "description": "硝煙立ち込める戦場で、重き覚悟をその身に刻み、生死の駒を打つ。地に突き立てたその剣で、鉄誓を守り、人々の思いを背負って――チェックメイト。"

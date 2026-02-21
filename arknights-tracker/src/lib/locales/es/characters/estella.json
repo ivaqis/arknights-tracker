@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Imp. crio.",
+      "Levantar",
+      "Susc. FÍS."
+    ],
+    "behaviourHateTags": [
+      "Deportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Tácticas de campo de batalla",
+      "Infiltrador"
+    ],
+    "giftPreferTags": [
+      "Selección del protocolo del Valle"
+    ],
+    "hobbyTags": [
+      "Bellas artes",
+      "Perfeccionamiento mental"
+    ],
+    "raceTag": "Felino"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Voluntad del operador +10.",
         "Voluntad del operador +15.",
         "Voluntad del operador +15.",
         "Voluntad del operador +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "¿Qué tal un sorbo? Oh... Bueno, es una mezcla nutritiva de insectos y extractos de plantas. Sí... el sabor es muy interesante..."
     },
-    "potential6": {
+    "potential5": {
       "name": "Hora secreta",
       "author": "かしまき",
       "description": "¿Te importaría compartir con alguien tu tiempo libre que has ganado con esfuerzo?"

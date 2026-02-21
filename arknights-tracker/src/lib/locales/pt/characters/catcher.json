@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Proteger",
+      "Escudo",
+      "Enfraquecer"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Montagem de Ferramenta",
+      "Gastronomia"
+    ],
+    "giftPreferTags": [
+      "Escolha da Indústria do Vale"
+    ],
+    "hobbyTags": [
+      "Estilo de Vida",
+      "Esportes"
+    ],
+    "raceTag": "Perro"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Força do Operador + 10.",
         "Força do Operador + 15.",
         "Força do Operador + 15.",
         "Força do Operador + 20."
@@ -126,7 +151,7 @@
       "author": "EXP",
       "description": "Antes do início de cada missão, ele preparava cerca de uma dúzia de planos de contingência para cada situação subsequente."
     },
-    "potential6": {
+    "potential5": {
       "name": "Escudo de Apoio",
       "author": "かしまき",
       "description": "Sensação reconfortante de segurança e satisfação gastronômica — Algo que nunca faltou para sua equipe."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abilità offensiva",
+      "Sospensione",
+      "Distruzione"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Accademia scientifica di Hongshan (ASH)",
+    "expertTags": [
+      "Cucina",
+      "Assemblaggio strumenti"
+    ],
+    "giftPreferTags": [
+      "Scelta dei corridori di Wuling"
+    ],
+    "hobbyTags": [
+      "Stile di vita",
+      "Beneficenza"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Forza operatore +10.",
         "Forza operatore +15.",
         "Forza operatore +15.",
         "Forza operatore +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "Chi ha il tempo di starsene a oziare in cima a una montagna, con la sola compagnia di qualche crestalone?"
     },
-    "potential6": {
+    "potential5": {
       "name": "I mille sapori della vita",
       "author": "黑犬",
       "description": "La vita non è come la cucina, dove puoi preparare tutto prima di metterlo nel wok. Però possiamo usare ciò che abbiamo visto e vissuto come ingredienti per scoprire tutti i sapori della vita."

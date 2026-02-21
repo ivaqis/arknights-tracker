@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Source de dégâts",
+      "Vuln. aux Arts"
+    ],
+    "behaviourHateTags": [
+      "Accomplissement de soi"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversion"
+    ],
+    "blocTag": "Chambre de commerce générale de Talos-II (CCGT)",
+    "expertTags": [
+      "Savoir des rues",
+      "Agilité"
+    ],
+    "giftPreferTags": [
+      "Sélection industrielle de la Vallée"
+    ],
+    "hobbyTags": [
+      "Mode de vie",
+      "Mode"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Volonté de l'opérateur +10.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Bien des gens ont partagé avec elle leurs souvenirs et leur nostalgie, mais les siens restent rarement évoqués."
     },
-    "potential6": {
+    "potential5": {
       "name": "Invitation mystérieuse",
       "author": "LM7",
       "description": "Le périple est imprévisible, mais la messagère n'a pas hésité un instant à vous envoyer cette invitation."

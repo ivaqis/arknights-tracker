@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Knock Down",
+      "HP Treatment",
+      "Shield"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Order of Steel Oath",
+    "expertTags": [
+      "Combat Technique",
+      "Constitution"
+    ],
+    "giftPreferTags": [
+      "Valley Protocol's Choice"
+    ],
+    "hobbyTags": [
+      "Sports",
+      "Technology"
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Strength +10.",
         "Operator Strength +15.",
         "Operator Strength +15.",
         "Operator Strength +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "The crusade is the path to the objective. True warriors do not fall until the goal has been fulfilled."
     },
-    "potential6": {
+    "potential5": {
       "name": "The Bastion Never Breached",
       "author": "MoooFoo",
       "description": "Red hot steel and solid blood were the brick and mortar of the northern bastions. The North is not her nightmare. It is merely her next destination."

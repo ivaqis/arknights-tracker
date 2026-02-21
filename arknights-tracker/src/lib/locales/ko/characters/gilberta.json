@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "아츠 취약",
+      "자연 부착",
+      "띄우기"
+    ],
+    "behaviourHateTags": [
+      "과학기술"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "로도스 아일랜드",
+    "expertTags": [
+      "모험",
+      "오리지늄 아츠"
+    ],
+    "giftPreferTags": [
+      "협곡 · 프로토콜 엄선"
+    ],
+    "hobbyTags": [
+      "패션",
+      "문화"
+    ],
+    "raceTag": "불포"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "더 이상 가벼운 발걸음도, 바쁜 걸음도 아니었습니다. 그리고 익숙한 뒷모습을 본 순간, 질베르타는 그 자리에 멈췄습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "세상을 뒤흔들겠어!",
       "author": "LM7",
       "description": "시야를 뒤집어 보세요. 다른 풍경, 다른 기분, 다른 자신을 발견하게 될 겁니다. 세상이 완전히 새로워질 거예요."

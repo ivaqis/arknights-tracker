@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "전기 부착",
+      "감전"
+    ],
+    "behaviourHateTags": [
+      "운동"
+    ],
+    "behaviourUnavailableTags": [
+      "내향적"
+    ],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "조직 관리",
+      "오리지늄 아츠"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "생활",
+      "창의"
+    ],
+    "raceTag": "리베리"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 지능 능력치 10 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 15 증가",
         "오퍼레이터 지능 능력치 20 증가"
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "눈에 보이는 그리움은 펠리카의 발길을 붙잡지 못합니다. 프로토콜은 결코 차가운 속박이 아니니까요."
     },
-    "potential6": {
+    "potential5": {
       "name": "미래",
       "author": "IRple2",
       "description": "청사진에는 펠리카가 짜낸 무한한 가능성이 새겨져 있습니다. 그것은 그녀가 항상 휴대하고 다니는 미래입니다."

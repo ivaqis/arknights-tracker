@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Schützen",
+      "Schild",
+      "Schwächen"
+    ],
+    "behaviourHateTags": [
+      "Mode"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Werkzeugmontage",
+      "Kochen"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Sport"
+    ],
+    "raceTag": "Perro"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Stärke +10.",
         "Operator-Stärke +15.",
         "Operator-Stärke +15.",
         "Operator-Stärke +20."
@@ -126,7 +151,7 @@
       "author": "EXP",
       "description": "Ehe er zu einer Mission aufbricht, überlegt er sich stets dutzende Notfallpläne für alle möglichen Situationen."
     },
-    "potential6": {
+    "potential5": {
       "name": "Verlässlicher Schild",
       "author": "かしまき",
       "description": "Ein beruhigendes Gefühl von Sicherheit und gastronomischer Zufriedenheit – seinem Team mangelt es daran niemals."

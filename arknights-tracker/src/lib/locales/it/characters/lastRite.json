@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abilità offensiva",
+      "Afflizione da ghiaccio"
+    ],
+    "behaviourHateTags": [
+      "Stile di vita"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Costituzione"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'industria della Valle"
+    ],
+    "hobbyTags": [
+      "Fortificazione mentale",
+      "Beneficenza"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Forza operatore +10.",
         "Forza operatore +15.",
         "Forza operatore +15.",
         "Forza operatore +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Terre immense hanno cullato il suo sonno. Un inverno infinito l'aspetta, pronto a rispondere al suo comando. Ma la ragazza desidera solamente deporre dei fiori dove esse riposano."
     },
-    "potential6": {
+    "potential5": {
       "name": "Fiori nati dal gelo",
       "author": "REM",
       "description": "Nonostante sia piena di domande senza risposta e abbia molte sfide da superare, porterà a termine qualsiasi compito le assegnerai, riportando il sorriso sui visi di tutti."

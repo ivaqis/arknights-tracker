@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "技力回復",
+      "電磁附著"
+    ],
+    "behaviourHateTags": [
+      "益智"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "眾生長地",
+    "expertTags": [
+      "工具製造",
+      "自然學識"
+    ],
+    "giftPreferTags": [
+      "谷地·工業嚴選"
+    ],
+    "hobbyTags": [
+      "自然",
+      "運動"
+    ],
+    "raceTag": "庫蘭塔"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員敏捷能力值提升10。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升20。"
@@ -122,7 +146,7 @@
       "author": "またよし",
       "description": "無論前方是怎樣的風暴，都無法阻攔她前進的腳步。"
     },
-    "potential6": {
+    "potential5": {
       "name": "弧月旋刃",
       "author": "Z3zz",
       "description": "她始終認為自己只是一名徒從，但許多被她從裂地者刀下救出的人們，依舊會稱呼她一聲「師者」。"

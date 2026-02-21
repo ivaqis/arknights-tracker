@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "대량 피해",
+      "냉기 부착"
+    ],
+    "behaviourHateTags": [
+      "생활"
+    ],
+    "behaviourUnavailableTags": [
+      "외향적"
+    ],
+    "blocTag": "세쉬카",
+    "expertTags": [
+      "작전 기술",
+      "체력 단련"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "지능 훈련",
+      "공익"
+    ],
+    "raceTag": "살카즈"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "드넓은 대지는 그녀의 품에 안겨 잠들고, 천년의 겨울은 그녀의 부름을 숨죽여 기다립니다. 하지만 소녀의 바람은 그저, 그 영원한 안식에 꽃 한 송이 바치는 것뿐이었습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "첫 서리꽃",
       "author": "REM",
       "description": "라스트 라이트에겐 아직 풀어야 할 숙제가, 그리고 넘어야 할 시련이 많이 남아 있습니다. 그럼에도 그녀는 당신이 맡긴 임무를 반드시 완수하여, 더 많은 이들이 미소를 되찾게 할 겁니다."

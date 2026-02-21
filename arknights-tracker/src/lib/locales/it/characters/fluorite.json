@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Afflizione da natura",
+      "Afflizione da ghiaccio"
+    ],
+    "behaviourHateTags": [
+      "Cultura"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversione"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Sopravvivenza all'aperto",
+      "Saggezza di strada"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Natura",
+      "Creatività"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilità operatore +10.",
         "Agilità operatore +15.",
         "Agilità operatore +15.",
         "Agilità operatore +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "Lei non ha bisogno di serbare rancore. I suoi nemici non durano mai tanto a lungo."
     },
-    "potential6": {
+    "potential5": {
       "name": "Al limite delle regole",
       "author": "Doppel",
       "description": "La giustizia arriva sempre. Quando decide di farsi attendere, però... beh, lo spettacolo è assicurato."

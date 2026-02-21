@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量傷害",
+      "凍結",
+      "暴擊"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "內向"
+    ],
+    "blocTag": "終末地工業",
+    "expertTags": [
+      "靈光一閃",
+      "團隊管理"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "時尚",
+      "科技"
+    ],
+    "raceTag": "瓦伊凡"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員智識能力值提升10。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升20。"
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "跟伊馮一起自拍從來不需要什麼閃光燈，畢竟她就是最耀眼的光源。"
     },
-    "potential6": {
+    "potential5": {
       "name": "Win-Win!",
       "author": "u介",
       "description": "亮麗的塗裝、輕快的音樂，還有遊戲獲勝時的笑容……每個開心的時刻，她都記錄了下來，與你共用。"

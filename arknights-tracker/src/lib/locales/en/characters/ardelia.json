@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "HP Treatment",
+      "Corrode",
+      "Susceptibility"
+    ],
+    "behaviourHateTags": [
+      "Culture"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Natural Lore",
+      "Adventure"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Nature"
+    ],
+    "raceTag": "Caprinae"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Intellect +10.",
         "Operator Intellect +15.",
         "Operator Intellect +15.",
         "Operator Intellect +20."
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "What does she fantasize about when lying on a soft, fluffy cloud of pink? Really weird stones? Places she never went? Or..."
     },
-    "potential6": {
+    "potential5": {
       "name": "Aspiration",
       "author": "Eteru",
       "description": "Flowers blooming on cold, hard rocks ... barren lands teeming with life and warmth ... and idyllic songs humming by our ears... Professor, this isn't just a dream, right?"

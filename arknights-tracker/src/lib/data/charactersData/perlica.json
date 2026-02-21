@@ -2,11 +2,11 @@
     "id": "perlica",
     "mainAttribute": "int",
     "secondaryAttribute": "will",
+    "indicatorType": "wisd",
     "str": [
         9,
         10,
         11,
-        12,
         12,
         13,
         14,
@@ -15,27 +15,27 @@
         17,
         18,
         19,
+        19,
         20,
         21,
         22,
         23,
         24,
         25,
-        25,
         26,
-        26,
+        27,
         27,
         28,
         29,
         30,
         31,
         32,
+        32,
         33,
         34,
         35,
         36,
         37,
-        38,
         38,
         39,
         40,
@@ -45,12 +45,12 @@
         44,
         45,
         45,
+        45,
         46,
         47,
         48,
         49,
         50,
-        51,
         51,
         52,
         53,
@@ -59,12 +59,12 @@
         56,
         57,
         58,
+        58,
         59,
         60,
         61,
         62,
         63,
-        64,
         64,
         64,
         65,
@@ -74,20 +74,21 @@
         69,
         70,
         71,
+        71,
         72,
         73,
         74,
         75,
         76,
         77,
-        77,
         78,
         79,
         80,
         81,
         82,
-        82,
         83,
+        83,
+        84,
         84,
         85,
         86,
@@ -95,8 +96,17 @@
         88,
         89,
         90,
-        90,
-        91
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        96,
+        97,
+        98,
+        99,
+        100
     ],
     "agi": [
         9,
@@ -109,7 +119,6 @@
         16,
         17,
         18,
-        18,
         19,
         20,
         21,
@@ -119,7 +128,8 @@
         25,
         26,
         27,
-        27,
+        28,
+        28,
         28,
         29,
         30,
@@ -128,7 +138,6 @@
         33,
         34,
         35,
-        36,
         36,
         37,
         38,
@@ -141,6 +150,7 @@
         45,
         46,
         46,
+        46,
         47,
         48,
         49,
@@ -150,7 +160,6 @@
         53,
         54,
         55,
-        55,
         56,
         57,
         58,
@@ -159,6 +168,7 @@
         61,
         62,
         63,
+        64,
         64,
         65,
         65,
@@ -170,7 +180,6 @@
         71,
         72,
         73,
-        73,
         74,
         75,
         76,
@@ -181,6 +190,7 @@
         81,
         82,
         83,
+        83,
         84,
         84,
         85,
@@ -189,180 +199,6 @@
         88,
         89,
         90,
-        91,
-        92,
-        92,
-        93
-    ],
-    "int": [
-        21,
-        23,
-        24,
-        26,
-        27,
-        29,
-        31,
-        32,
-        34,
-        35,
-        37,
-        38,
-        40,
-        42,
-        43,
-        45,
-        46,
-        48,
-        49,
-        51,
-        51,
-        53,
-        54,
-        56,
-        57,
-        59,
-        60,
-        62,
-        64,
-        65,
-        67,
-        68,
-        70,
-        72,
-        73,
-        75,
-        76,
-        78,
-        79,
-        81,
-        83,
-        83,
-        84,
-        86,
-        87,
-        89,
-        90,
-        92,
-        94,
-        95,
-        97,
-        98,
-        100,
-        101,
-        103,
-        105,
-        106,
-        108,
-        109,
-        111,
-        112,
-        114,
-        114,
-        116,
-        117,
-        119,
-        120,
-        122,
-        123,
-        125,
-        127,
-        128,
-        130,
-        131,
-        133,
-        134,
-        136,
-        138,
-        139,
-        141,
-        142,
-        144,
-        145,
-        145,
-        147,
-        149,
-        150,
-        152,
-        153,
-        155,
-        156,
-        158,
-        160,
-        161
-    ],
-    "will": [
-        13,
-        14,
-        15,
-        16,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        34,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42,
-        43,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        54,
-        55,
-        56,
-        57,
-        57,
-        58,
-        59,
-        60,
-        61,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        79,
-        81,
-        82,
-        83,
-        84,
-        85,
-        86,
-        87,
-        88,
-        89,
         91,
         92,
         93,
@@ -371,20 +207,221 @@
         96,
         97,
         98,
+        99,
+        100,
+        101,
+        101,
+        102
+    ],
+    "int": [
+        22,
+        23,
+        25,
+        26,
+        28,
+        30,
+        31,
+        33,
+        34,
+        36,
+        37,
+        39,
+        41,
+        42,
+        44,
+        45,
+        47,
+        48,
+        50,
+        52,
+        52,
+        53,
+        55,
+        56,
+        58,
+        59,
+        61,
+        63,
+        64,
+        66,
+        67,
+        69,
+        70,
+        72,
+        74,
+        75,
+        77,
+        78,
+        80,
+        81,
+        83,
+        83,
+        85,
+        86,
+        88,
+        89,
+        91,
+        92,
+        94,
+        96,
+        97,
+        99,
+        100,
+        102,
+        103,
+        105,
+        107,
+        108,
+        110,
+        111,
+        113,
+        114,
+        114,
+        116,
+        118,
+        119,
+        121,
+        122,
+        124,
+        126,
+        127,
+        129,
+        130,
+        132,
+        133,
+        135,
+        137,
+        138,
+        140,
+        141,
+        143,
+        144,
+        146,
+        146,
+        148,
+        149,
+        151,
+        152,
+        154,
+        155,
+        157,
+        159,
+        160,
+        162,
+        163,
+        165,
+        166,
+        168,
+        170,
+        171,
+        173,
+        174,
+        176
+    ],
+    "will": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        35,
+        36,
+        37,
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        57,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        77,
+        78,
+        79,
+        80,
+        80,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        96,
+        97,
+        98,
+        99,
         100,
         101,
         102,
         102,
         103,
-        104,
         105,
         106,
         107,
+        108,
         109,
         110,
         111,
         112,
-        113
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        123,
+        124
     ],
     "hp": [
         500,
@@ -480,7 +517,16 @@
         5327,
         5383,
         5439,
-        5495
+        5495,
+        5551,
+        5607,
+        5663,
+        5719,
+        5776,
+        5832,
+        5888,
+        5944,
+        6000
     ],
     "atk": [
         30,
@@ -576,7 +622,16 @@
         294,
         297,
         300,
-        303
+        303,
+        306,
+        309,
+        312,
+        315,
+        318,
+        321,
+        324,
+        327,
+        330
     ],
     "materials": {
         "ascention1": [
@@ -610,7 +665,7 @@
         "ascention3": [
             {
                 "name": "protoset",
-                "amount": 40
+                "amount": 24
             },
             {
                 "name": "rubyBolete",
@@ -618,17 +673,17 @@
             },
             {
                 "name": "tCreds",
-                "amount": 25000
+                "amount": 18000
             }
         ],
         "ascention4": [
             {
                 "name": "protoset",
-                "amount": 75
+                "amount": 36
             },
             {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 56
+                "name": "tachyonScreeningLattice",
+                "amount": 20
             },
             {
                 "name": "bloodcap",
@@ -636,383 +691,7 @@
             },
             {
                 "name": "tCreds",
-                "amount": 225000
-            }
-        ],
-        "skillsRank2": [
-            {
-                "name": "protoprism",
-                "amount": 6
-            },
-            {
-                "name": "kalkodendra",
-                "amount": 1
-            },
-            {
-                "name": "tCreds",
-                "amount": 1000
-            }
-        ],
-        "skillsRank3": [
-            {
-                "name": "protoprism",
-                "amount": 12
-            },
-            {
-                "name": "kalkodendra",
-                "amount": 2
-            },
-            {
-                "name": "tCreds",
-                "amount": 2700
-            }
-        ],
-        "skillsRank4": [
-            {
-                "name": "protoprism",
-                "amount": 16
-            },
-            {
-                "name": "chrysodendra",
-                "amount": 1
-            },
-            {
-                "name": "tCreds",
-                "amount": 3200
-            }
-        ],
-        "skillsRank5": [
-            {
-                "name": "protoprism",
-                "amount": 21
-            },
-            {
-                "name": "chrysodendra",
-                "amount": 1
-            },
-            {
-                "name": "tCreds",
-                "amount": 4200
-            }
-        ],
-        "skillsRank6": [
-            {
-                "name": "protoprism",
-                "amount": 27
-            },
-            {
-                "name": "chrysodendra",
-                "amount": 2
-            },
-            {
-                "name": "tCreds",
-                "amount": 5400
-            }
-        ],
-        "skillsRank7": [
-            {
-                "name": "protohedron",
-                "amount": 7
-            },
-            {
-                "name": "vitrodendra",
-                "amount": 2
-            },
-            {
-                "name": "tCreds",
-                "amount": 8200
-            }
-        ],
-        "skillsRank8": [
-            {
-                "name": "protohedron",
-                "amount": 9
-            },
-            {
-                "name": "vitrodendra",
-                "amount": 1
-            },
-            {
-                "name": "tCreds",
-                "amount": 10500
-            }
-        ],
-        "skillsRank9": [
-            {
-                "name": "protohedron",
-                "amount": 18
-            },
-            {
-                "name": "vitrodendra",
-                "amount": 2
-            },
-            {
-                "name": "tCreds",
-                "amount": 18000
-            }
-        ],
-        "basicAttackRank10": [
-            {
-                "name": "protohedron",
-                "amount": 18
-            },
-            {
-                "name": "tCreds",
-                "amount": 24000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 3
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 8
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 1
-            }
-        ],
-        "basicAttackRank11": [
-            {
-                "name": "protohedron",
-                "amount": 24
-            },
-            {
-                "name": "tCreds",
-                "amount": 30000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 6
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 15
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 2
-            }
-        ],
-        "basicAttackRank12": [
-            {
-                "name": "protohedron",
-                "amount": 54
-            },
-            {
-                "name": "tCreds",
-                "amount": 65000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 12
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 36
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 3
-            }
-        ],
-        "battleSkillRank10": [
-            {
-                "name": "protohedron",
-                "amount": 18
-            },
-            {
-                "name": "tCreds",
-                "amount": 24000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 3
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 8
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 1
-            }
-        ],
-        "battleSkillRank11": [
-            {
-                "name": "protohedron",
-                "amount": 24
-            },
-            {
-                "name": "tCreds",
-                "amount": 30000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 6
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 15
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 2
-            }
-        ],
-        "battleSkillRank12": [
-            {
-                "name": "protohedron",
-                "amount": 54
-            },
-            {
-                "name": "tCreds",
-                "amount": 65000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 12
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 36
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 3
-            }
-        ],
-        "comboSkillRank10": [
-            {
-                "name": "protohedron",
-                "amount": 18
-            },
-            {
-                "name": "tCreds",
-                "amount": 24000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 3
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 8
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 1
-            }
-        ],
-        "comboSkillRank11": [
-            {
-                "name": "protohedron",
-                "amount": 24
-            },
-            {
-                "name": "tCreds",
-                "amount": 30000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 6
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 15
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 2
-            }
-        ],
-        "comboSkillRank12": [
-            {
-                "name": "protohedron",
-                "amount": 54
-            },
-            {
-                "name": "tCreds",
-                "amount": 65000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 12
-            },
-            {
-                "name": "metadiastimaPhotoemissionTube",
-                "amount": 36
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 3
-            }
-        ],
-        "ultimateRank10": [
-            {
-                "name": "protohedron",
-                "amount": 18
-            },
-            {
-                "name": "tCreds",
-                "amount": 24000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 3
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 8
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 1
-            }
-        ],
-        "ultimateRank11": [
-            {
-                "name": "protohedron",
-                "amount": 24
-            },
-            {
-                "name": "tCreds",
-                "amount": 30000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 6
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 15
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 2
-            }
-        ],
-        "ultimateRank12": [
-            {
-                "name": "protohedron",
-                "amount": 54
-            },
-            {
-                "name": "tCreds",
-                "amount": 65000
-            },
-            {
-                "name": "blightedJadeleaf",
-                "amount": 12
-            },
-            {
-                "name": "d96SteelSample4",
-                "amount": 36
-            },
-            {
-                "name": "markOfPerseverance",
-                "amount": 3
+                "amount": 100000
             }
         ],
         "indicator": [
@@ -1089,7 +768,8 @@
                     "name": "tCreds",
                     "amount": 32000
                 }
-            ]
+            ],
+            []
         ],
         "baseSkill1": [
             [
@@ -1134,6 +814,718 @@
                     "amount": 20000
                 }
             ]
+        ],
+        "battleSkillRank2": [
+            {
+                "name": "protoprism",
+                "amount": 6
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 1000
+            }
+        ],
+        "battleSkillRank3": [
+            {
+                "name": "protoprism",
+                "amount": 12
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 2700
+            }
+        ],
+        "battleSkillRank4": [
+            {
+                "name": "protoprism",
+                "amount": 16
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 3200
+            }
+        ],
+        "battleSkillRank5": [
+            {
+                "name": "protoprism",
+                "amount": 21
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 4200
+            }
+        ],
+        "battleSkillRank6": [
+            {
+                "name": "protoprism",
+                "amount": 27
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 5400
+            }
+        ],
+        "battleSkillRank7": [
+            {
+                "name": "protohedron",
+                "amount": 6
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 8200
+            }
+        ],
+        "battleSkillRank8": [
+            {
+                "name": "protohedron",
+                "amount": 8
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 10500
+            }
+        ],
+        "battleSkillRank9": [
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 18000
+            }
+        ],
+        "battleSkillRank10": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 1
+            },
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 6
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 3
+            },
+            {
+                "name": "tCreds",
+                "amount": 24000
+            }
+        ],
+        "battleSkillRank11": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 2
+            },
+            {
+                "name": "protohedron",
+                "amount": 24
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 16
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 6
+            },
+            {
+                "name": "tCreds",
+                "amount": 30000
+            }
+        ],
+        "battleSkillRank12": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 3
+            },
+            {
+                "name": "protohedron",
+                "amount": 50
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 36
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 12
+            },
+            {
+                "name": "tCreds",
+                "amount": 65000
+            }
+        ],
+        "ultimateRank2": [
+            {
+                "name": "protoprism",
+                "amount": 6
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 1000
+            }
+        ],
+        "ultimateRank3": [
+            {
+                "name": "protoprism",
+                "amount": 12
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 2700
+            }
+        ],
+        "ultimateRank4": [
+            {
+                "name": "protoprism",
+                "amount": 16
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 3200
+            }
+        ],
+        "ultimateRank5": [
+            {
+                "name": "protoprism",
+                "amount": 21
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 4200
+            }
+        ],
+        "ultimateRank6": [
+            {
+                "name": "protoprism",
+                "amount": 27
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 5400
+            }
+        ],
+        "ultimateRank7": [
+            {
+                "name": "protohedron",
+                "amount": 6
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 8200
+            }
+        ],
+        "ultimateRank8": [
+            {
+                "name": "protohedron",
+                "amount": 8
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 10500
+            }
+        ],
+        "ultimateRank9": [
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 18000
+            }
+        ],
+        "ultimateRank10": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 1
+            },
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 6
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 3
+            },
+            {
+                "name": "tCreds",
+                "amount": 24000
+            }
+        ],
+        "ultimateRank11": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 2
+            },
+            {
+                "name": "protohedron",
+                "amount": 24
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 16
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 6
+            },
+            {
+                "name": "tCreds",
+                "amount": 30000
+            }
+        ],
+        "ultimateRank12": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 3
+            },
+            {
+                "name": "protohedron",
+                "amount": 50
+            },
+            {
+                "name": "d96SteelSample4",
+                "amount": 36
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 12
+            },
+            {
+                "name": "tCreds",
+                "amount": 65000
+            }
+        ],
+        "comboSkillRank2": [
+            {
+                "name": "protoprism",
+                "amount": 6
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 1000
+            }
+        ],
+        "comboSkillRank3": [
+            {
+                "name": "protoprism",
+                "amount": 12
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 2700
+            }
+        ],
+        "comboSkillRank4": [
+            {
+                "name": "protoprism",
+                "amount": 16
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 3200
+            }
+        ],
+        "comboSkillRank5": [
+            {
+                "name": "protoprism",
+                "amount": 21
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 4200
+            }
+        ],
+        "comboSkillRank6": [
+            {
+                "name": "protoprism",
+                "amount": 27
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 5400
+            }
+        ],
+        "comboSkillRank7": [
+            {
+                "name": "protohedron",
+                "amount": 6
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 8200
+            }
+        ],
+        "comboSkillRank8": [
+            {
+                "name": "protohedron",
+                "amount": 8
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 10500
+            }
+        ],
+        "comboSkillRank9": [
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 18000
+            }
+        ],
+        "comboSkillRank10": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 1
+            },
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 6
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 3
+            },
+            {
+                "name": "tCreds",
+                "amount": 24000
+            }
+        ],
+        "comboSkillRank11": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 2
+            },
+            {
+                "name": "protohedron",
+                "amount": 24
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 16
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 6
+            },
+            {
+                "name": "tCreds",
+                "amount": 30000
+            }
+        ],
+        "comboSkillRank12": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 3
+            },
+            {
+                "name": "protohedron",
+                "amount": 50
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 36
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 12
+            },
+            {
+                "name": "tCreds",
+                "amount": 65000
+            }
+        ],
+        "basicAttackRank2": [
+            {
+                "name": "protoprism",
+                "amount": 6
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 1000
+            }
+        ],
+        "basicAttackRank3": [
+            {
+                "name": "protoprism",
+                "amount": 12
+            },
+            {
+                "name": "kalkodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 2700
+            }
+        ],
+        "basicAttackRank4": [
+            {
+                "name": "protoprism",
+                "amount": 16
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 3200
+            }
+        ],
+        "basicAttackRank5": [
+            {
+                "name": "protoprism",
+                "amount": 21
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 4200
+            }
+        ],
+        "basicAttackRank6": [
+            {
+                "name": "protoprism",
+                "amount": 27
+            },
+            {
+                "name": "chrysodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 5400
+            }
+        ],
+        "basicAttackRank7": [
+            {
+                "name": "protohedron",
+                "amount": 6
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 8200
+            }
+        ],
+        "basicAttackRank8": [
+            {
+                "name": "protohedron",
+                "amount": 8
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 1
+            },
+            {
+                "name": "tCreds",
+                "amount": 10500
+            }
+        ],
+        "basicAttackRank9": [
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "vitrodendra",
+                "amount": 2
+            },
+            {
+                "name": "tCreds",
+                "amount": 18000
+            }
+        ],
+        "basicAttackRank10": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 1
+            },
+            {
+                "name": "protohedron",
+                "amount": 15
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 6
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 3
+            },
+            {
+                "name": "tCreds",
+                "amount": 24000
+            }
+        ],
+        "basicAttackRank11": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 2
+            },
+            {
+                "name": "protohedron",
+                "amount": 24
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 16
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 6
+            },
+            {
+                "name": "tCreds",
+                "amount": 30000
+            }
+        ],
+        "basicAttackRank12": [
+            {
+                "name": "markOfPerseverance",
+                "amount": 3
+            },
+            {
+                "name": "protohedron",
+                "amount": 50
+            },
+            {
+                "name": "metadiastimaPhotoemissionTube",
+                "amount": 36
+            },
+            {
+                "name": "blightedJadeleaf",
+                "amount": 12
+            },
+            {
+                "name": "tCreds",
+                "amount": 65000
+            }
         ]
     },
     "skills": {
@@ -1158,7 +1550,7 @@
             "batkSeq2Multiplier": {
                 "dataType": "percent",
                 "data": [
-                    0.30,
+                    0.3,
                     0.33,
                     0.36,
                     0.39,
@@ -1198,7 +1590,7 @@
                     0.73,
                     0.79,
                     0.85,
-                    0.90,
+                    0.9,
                     0.96,
                     1.02,
                     1.09,
@@ -1209,56 +1601,39 @@
             "finisherAtkMultiplier": {
                 "dataType": "percent",
                 "data": [
-                    4.00,
-                    4.40,
-                    4.80,
-                    5.20,
-                    5.60,
-                    6.00,
-                    6.40,
-                    6.80,
-                    7.20,
-                    7.70,
-                    8.30,
-                    9.00
+                    4.0,
+                    4.4,
+                    4.8,
+                    5.2,
+                    5.6,
+                    6.0,
+                    6.4,
+                    6.8,
+                    7.2,
+                    7.7,
+                    8.3,
+                    9.0
                 ]
             },
             "diveAtkMultiplier": {
                 "dataType": "percent",
                 "data": [
-                    0.80,
+                    0.8,
                     0.88,
                     0.96,
                     1.04,
                     1.12,
-                    1.20,
+                    1.2,
                     1.28,
                     1.36,
                     1.44,
                     1.54,
                     1.66,
-                    1.80
+                    1.8
                 ]
             }
         },
         "battleSkill": {
-            "spCost": {
-                "dataType": "int",
-                "data": [
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100,
-                    100
-                ]
-            },
             "dmgMultiplier": {
                 "dataType": "percent",
                 "data": [
@@ -1270,118 +1645,84 @@
                     2.67,
                     2.85,
                     3.02,
-                    3.20,
+                    3.2,
                     3.42,
                     3.69,
-                    4.00
+                    4.0
                 ]
             },
             "stagger": {
-                "dataType": "int",
+                "dataType": "float",
                 "data": [
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10,
-                    10
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0
                 ]
             }
         },
         "comboSkill": {
-            "cooldown": {
-                "dataType": "int",
-                "data": [
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    20,
-                    19
-                ]
-            },
             "dmgMultiplier": {
                 "dataType": "percent",
                 "data": [
-                    0.80,
+                    0.8,
                     0.88,
                     0.96,
                     1.04,
                     1.12,
-                    1.20,
+                    1.2,
                     1.28,
                     1.36,
                     1.44,
                     1.54,
                     1.66,
-                    1.80
+                    1.8
                 ]
             },
             "stagger": {
-                "dataType": "int",
+                "dataType": "float",
                 "data": [
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00,
-                    10.00
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0,
+                    10.0
                 ]
             },
-            "electrifyDuration": {
-                "dataType": "int",
+            "electrifyDurationS": {
+                "dataType": "float",
                 "data": [
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00,
-                    5.00
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0,
+                    5.0
                 ]
             }
         },
         "ultimate": {
-            "ultimateEnergyCost": {
-                "dataType": "int",
-                "data": [
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80,
-                    80
-                ]
-            },
             "dmgMultiplier": {
                 "dataType": "percent",
                 "data": [
@@ -1393,29 +1734,78 @@
                     6.67,
                     7.11,
                     7.56,
-                    8.00,
+                    8.0,
                     8.56,
                     9.23,
-                    10.00
+                    10.0
                 ]
             },
             "stagger": {
-                "dataType": "int",
+                "dataType": "float",
                 "data": [
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00,
-                    20.00
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0,
+                    20.0
                 ]
             }
+        }
+    },
+    "facSkills": {
+        "facSkill1_1": {
+            "name": "facskill_spaceship_physical_power",
+            "skillNamePostfix": "α"
+        },
+        "facSkill1_2": {
+            "name": "facskill_spaceship_physical_power",
+            "skillNamePostfix": "β"
+        },
+        "facSkill2_1": {
+            "name": "facskill_spaceship_manufacture_efficiency",
+            "skillNamePostfix": "β"
+        },
+        "facSkill2_2": {
+            "name": "facskill_spaceship_manufacture_efficiency",
+            "skillNamePostfix": "γ"
+        }
+    },
+    "blackboard": {
+        "talent1_1": {
+            "dmg": 0.2
+        },
+        "talent1_2": {
+            "dmg": 0.3
+        },
+        "talent2_1": {
+            "talent2": 1
+        },
+        "talent2_2": {
+            "talent2": 1
+        },
+        "potential1": {
+            "duration": 1.75
+        },
+        "potential2": {
+            "costvalue": 0.85
+        },
+        "potential3": {
+            "atk_up": 0.2,
+            "atk_duration": 5,
+            "max_stack": 2
+        },
+        "potential4": {
+            "extra_scaling": 1.33
+        },
+        "potential5": {
+            "crit": 0.3
         }
     }
 }

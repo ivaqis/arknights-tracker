@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "猛击",
+      "控制"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "普攻第一段倍率",
+        "batkSeq2Multiplier": "普攻第二段倍率",
+        "batkSeq3Multiplier": "普攻第三段倍率",
+        "batkSeq4Multiplier": "普攻第四段倍率",
+        "batkSeq5Multiplier": "普攻第五段倍率",
+        "finisherAtkMultiplier": "处决攻击倍率",
+        "diveAtkMultiplier": "下落攻击倍率"
+      },
+      "name": "毁伤序列",
+      "description": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.pd>物理伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n \n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pd>物理伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pd>物理伤害</>并恢复一定技力。"
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "伤害倍率",
+        "stagger": "失衡值"
+      },
+      "name": "构成序列",
+      "description": "使用源石技艺冲击前方一定范围内的敌人，造成<@ba.pd>物理伤害</>和<#ba.crush>猛击</>。"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "伤害倍率",
+        "crystalShatteringDmgMultiplier": "击碎结晶伤害倍率",
+        "stagger": "失衡值",
+        "sealDurationS": "封印时间（秒）"
+      },
+      "name": "锁闭序列",
+      "description": "当小队内其他干员的连携技造成伤害时可以发动。\n冲到敌人身边，对其造成<@ba.pd>物理伤害</>，并附着<#ba.originium>源石结晶</>，在一段时间内将其封印。施加<#ba.physicalstatus>物理异常</>或<#ba.noguard>破防</>会<#ba.consume>消耗</><#ba.originium>源石结晶</>并额外造成<@ba.pd>物理伤害</>。"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "伤害倍率",
+        "bonusDmgMultiplier": "额外伤害倍率",
+        "stagger": "失衡值"
+      },
+      "name": "轰击序列",
+      "description": "使用源石技艺轰击地面，对前方扇形范围内的敌人造成大量<@ba.pd>物理伤害</>。如果敌人身上附着<#ba.originium>源石结晶</>，则<#ba.consume>消耗</><#ba.originium>源石结晶</>并额外造成一次<@ba.pd>物理伤害</>。"
+    },
+    "indicator": {
+      "levels": [
+        "干员敏捷能力值提升10。",
+        "干员敏捷能力值提升15。",
+        "干员敏捷能力值提升15。",
+        "干员敏捷能力值提升20。"
+      ],
+      "name": "游刃"
+    },
+    "talent1": {
+      "levels": [
+        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。",
+        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。"
+      ],
+      "name": "本质瓦解"
+    },
+    "talent2": {
+      "levels": [
+        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。",
+        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。"
+      ],
+      "name": "现实静滞"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "战技<@ba.key>构成序列</><#ba.consume>消耗</><#ba.originium>源石结晶</>时，<#ba.return>返还</><@ba.vup>{atb_return:0}</>点技力。",
+      "name": "最后的苏醒"
+    },
+    "potential2": {
+      "description": "天赋<@ba.key>本质瓦解</>效果加强：自身获得攻击力提升时，其他友方干员获得一半的攻击力提升效果。",
+      "name": "权能映射"
+    },
+    "potential3": {
+      "description": "？？？",
+      "name": "？？？"
+    },
+    "potential4": {
+      "description": "？？？",
+      "name": "？？？"
+    },
+    "potential5": {
+      "description": "？？？",
+      "name": "？？？"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "记忆网纸",
+      "author": "狂zip",
+      "description": "最终被记下的是一小段话语，又或某个委托。线条编织，棋子轻轻落下，您已知晓这一切。"
+    },
+    "potential3": {
+      "name": "象限",
+      "author": "廻轉",
+      "description": "您在十字的正中心。"
+    },
+    "potential6": {
+      "name": "掌握",
+      "author": "수줍(Sjoop)",
+      "description": "所凝聚的信任在您掌中，它的第一枚碎片名为历史，又名为文明与生命。"
+    }
+  }
+}

@@ -380,7 +380,7 @@
         {$t("settings.title")}
     </h1>
 
-    <section class="mb-1">
+    <section class="mb-1 ml-2">
         <div
             class="flex flex-col items-start gap-4 mb-4 md:flex-row md:items-center"
         >
@@ -451,7 +451,7 @@
         </div>
     </section>
 
-    <section class="mb-2">
+    <section class="mb-2 ml-2">
         <div class="mt-4 flex flex-col items-start gap-4">
             <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] whitespace-nowrap">
                 {$t("settings.server.title") || "Select Server"}
@@ -473,7 +473,7 @@
         </div>
     </section>
 
-    <section class="mb-3">
+    <section class="mb-3 ml-2">
         <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
             {$t("settings.cloud.title")}
         </h2>
@@ -667,7 +667,7 @@
         </div>
     </section>
 
-    <section class="mb-4">
+    <section class="mb-4 ml-2">
         <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
             {$t("settings.backup.title")}
         </h2>
@@ -698,14 +698,14 @@
         </div>
     </section>
 
-    <!--<section class="mb-10">
+    <!--<section class="mb-10 ml-2">
         <h2 class="font-sdk text-2xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4">
             {$t("settings.sources.title")}
         </h2>
         <div class="text-gray-400 italic">wip</div>
     </section>-->
 
-    <section class="mb-3">
+    <section class="mb-3 ml-2">
         <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
             {$t("settings.feedback.title")}
         </h2>
@@ -748,7 +748,7 @@
         </div>
     </section>
 
-    <section class="mb-10">
+    <section class="mb-10 ml-2">
         <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
             {$t("settings.donate.title")}
         </h2>

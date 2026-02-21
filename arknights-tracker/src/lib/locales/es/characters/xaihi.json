@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Trat. de PV",
+      "Imp. crio.",
+      "Amplific."
+    ],
+    "behaviourHateTags": [
+      "Deportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Cábala de la Tranquilidad",
+    "expertTags": [
+      "Erudito",
+      "Tecnología de la información"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Tecno.",
+      "Perfeccionamiento mental"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Voluntad del operador +10.",
         "Voluntad del operador +15.",
         "Voluntad del operador +15.",
         "Voluntad del operador +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "La Ley, las señales, la Lógica y los Algoritmos — El fiel clérigo está completamente entregado a todos ellos."
     },
-    "potential6": {
+    "potential5": {
       "name": "Mirada profunda a la verdad",
       "author": "se_eeeee",
       "description": "No temas a lo desconocido, ni rechaces el caos. Tales son los principios que guían su búsqueda de la verdad."

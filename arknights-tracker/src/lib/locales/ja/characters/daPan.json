@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大ダメージ",
+      "浮遊",
+      "猛撃"
+    ],
+    "behaviourHateTags": [
+      "ファッション"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "宏山科学院",
+    "expertTags": [
+      "調理",
+      "道具製造"
+    ],
+    "giftPreferTags": [
+      "武陵・ランナー厳選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "社会貢献"
+    ],
+    "raceTag": "ウルサス"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "筋力が10アップする",
         "筋力が15アップする",
         "筋力が15アップする",
         "筋力が20アップする"
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "世を離れ、三五の羽獣を友とし、空山に座す。"
     },
-    "potential6": {
+    "potential5": {
       "name": "十人十味",
       "author": "黑犬",
       "description": "人生は料理のように、最初から食材を揃えるわけにはいかない。だが、見たこと、感じたことがすべて食材になる。だから、人生は十人十味なんだ。"

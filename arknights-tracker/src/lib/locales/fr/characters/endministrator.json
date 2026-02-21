@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Broyage",
+      "Contrôle de foule"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Vous vous trouvez à la croisée des chemins."
     },
-    "potential6": {
+    "potential5": {
       "name": "Parfaite compréhension",
       "author": "수줍(Sjoop)",
       "description": "La confiance et la foi, figées au creux de votre main. Le premier fragment porte le nom d'histoire. L'autre, celui de civilisation et de vie."

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Подбрасывание",
+      "Ошеломление"
+    ],
+    "behaviourHateTags": [
+      "Технологии"
+    ],
+    "behaviourUnavailableTags": [
+      "Интроверт"
+    ],
+    "blocTag": "Компания Endfield",
+    "expertTags": [
+      "Эрудиция",
+      "Озарение"
+    ],
+    "giftPreferTags": [
+      "Выбор улинских бегунов"
+    ],
+    "hobbyTags": [
+      "Культура",
+      "Филантропия"
+    ],
+    "raceTag": "Лун"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -118,7 +143,7 @@
       "author": "Kieed",
       "description": "Меч символизирует тоску по матери, избранный путь и желание вас уберечь."
     },
-    "potential6": {
+    "potential5": {
       "name": "Парящая лун",
       "author": "宇木敦哉",
       "description": "Клинок в руках. Лун парит. Ветер дует. Облака наступают."

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Inflição Elétrica",
+      "Eletrificar"
+    ],
+    "behaviourHateTags": [
+      "Esportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Gerenciamento de Equipes",
+      "Artes de Originium"
+    ],
+    "giftPreferTags": [
+      "Escolha da Indústria do Vale"
+    ],
+    "hobbyTags": [
+      "Estilo de Vida",
+      "Criativo"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Inteligência do Operador + 10.",
         "Inteligência do Operador + 15.",
         "Inteligência do Operador + 15.",
         "Inteligência do Operador + 20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Tendo testemunhado o foco de seu anseio, ela não deseja mais ficar parada. O Protocolo nunca foi concebido para ser uma amarra fria e insensível."
     },
-    "potential6": {
+    "potential5": {
       "name": "O Futuro",
       "author": "IRple2",
       "description": "Ela teceu uma infinidade de possibilidades que foram então entalhadas nos projetos. Eles são o futuro que ela sempre carrega consigo."

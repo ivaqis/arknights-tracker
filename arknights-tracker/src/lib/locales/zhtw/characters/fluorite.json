@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "自然附著",
+      "寒冷附著"
+    ],
+    "behaviourHateTags": [
+      "文化"
+    ],
+    "behaviourUnavailableTags": [
+      "內向"
+    ],
+    "blocTag": "終末地工業",
+    "expertTags": [
+      "野外生存",
+      "市井交涉"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "自然",
+      "創意"
+    ],
+    "raceTag": "斐迪亞"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員敏捷能力值提升10。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升15。",
         "幹員敏捷能力值提升20。"
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "她從來不記仇，她的仇家向來撐不了多久。"
     },
-    "potential6": {
+    "potential5": {
       "name": "規則邊緣",
       "author": "Doppel",
       "description": "正義從不缺席，但如果正義遲到，那可就有樂子看了。"

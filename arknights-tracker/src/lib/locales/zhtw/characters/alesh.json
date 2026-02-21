@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "技力回復",
+      "凍結"
+    ],
+    "behaviourHateTags": [
+      "益智"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "聯盟工團",
+    "expertTags": [
+      "野外生存",
+      "戰場策略"
+    ],
+    "giftPreferTags": [
+      "谷地·工業嚴選"
+    ],
+    "hobbyTags": [
+      "文化",
+      "運動"
+    ],
+    "raceTag": "阿納緹"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員力量能力值提升10。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升20。"
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "生活讓人遍體鱗傷，但失去的眼睛，反而能看清楚這底下深藏的秘密。"
     },
-    "potential6": {
+    "potential5": {
       "name": "揮竿日",
       "author": "w3",
       "description": "「釣鱗時哪一刻心情最好？」「揮竿。」「為什麼？」「所有的期待都還在前方，未知讓人心跳加速。」"

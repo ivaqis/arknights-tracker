@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量傷害",
+      "燃燒"
+    ],
+    "behaviourHateTags": [
+      "科技"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "羅德島",
+    "expertTags": [
+      "源石技藝",
+      "局勢分析"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "創意",
+      "生活"
+    ],
+    "raceTag": "薩卡茲"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員智識能力值提升10。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升15。",
         "幹員智識能力值提升20。"
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538°C是鐵的熔點，而不是她的。當你做好了準備，就靠近一點吧。"
     },
-    "potential6": {
+    "potential5": {
       "name": "熔火之邀",
       "author": "min",
       "description": "陪她走進無憶的長夜，陪她焚盡黑暗的夢魘，陪她點燃映照前路的火焰。"

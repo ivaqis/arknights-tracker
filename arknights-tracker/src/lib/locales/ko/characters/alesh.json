@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "스킬 게이지 회복",
+      "동결"
+    ],
+    "behaviourHateTags": [
+      "지능 훈련"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "연맹 공단",
+    "expertTags": [
+      "야외 생존",
+      "전략 수립"
+    ],
+    "giftPreferTags": [
+      "협곡 · 공업 엄선"
+    ],
+    "hobbyTags": [
+      "문화",
+      "운동"
+    ],
+    "raceTag": "아나티"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "오퍼레이터 힘 능력치 10 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 15 증가",
         "오퍼레이터 힘 능력치 20 증가"
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "삶은 사람을 만신창이로 만들지만, 잃어버린 눈은 오히려 그 밑에 깊이 감춰진 비밀을 꿰뚫어 봅니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "낚시의 날",
       "author": "w3",
       "description": "\"린수를 낚을 때 언제가 가장 기분 좋아?\" \"낚싯대를 당길 때.\" \"왜?\" \"아직 아무것도 결정되지 않은, 그 찰나의 기대감이 최고거든. 뭐가 딸려 올라올지 모르는 그 두근거림 말이야.\""

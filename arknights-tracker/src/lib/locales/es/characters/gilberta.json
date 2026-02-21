@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Susc. Art.",
+      "Imp. de nat.",
+      "Levantar"
+    ],
+    "behaviourHateTags": [
+      "Tecno."
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Aventura",
+      "Artes de Originio"
+    ],
+    "giftPreferTags": [
+      "Selección del protocolo del Valle"
+    ],
+    "hobbyTags": [
+      "Moda",
+      "Cultura"
+    ],
+    "raceTag": "Vulpo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "Detuvo sus pasos rápidos y delicados, y ya no tenía prisa. Alguien familiar llamó su atención, y se detuvo un momento."
     },
-    "potential6": {
+    "potential5": {
       "name": "Vamos a voltear el mundo",
       "author": "LM7",
       "description": "Gira tus ojos al revés y verás perspectivas diferentes, experimentarás estados de ánimo distintos y te convertirás en un tú diferente. Oh, vaya, el mundo ahora es completamente nuevo."

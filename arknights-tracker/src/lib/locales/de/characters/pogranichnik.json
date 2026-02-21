@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "FP-Wiederherstellung",
+      "Brechen"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Schlachtfeld-Taktik",
+      "Team-Verwaltung"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Läufern empfohlen"
+    ],
+    "hobbyTags": [
+      "Kultur",
+      "Gedächtnistraining"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Wille +10.",
         "Operator-Wille +15.",
         "Operator-Wille +15.",
         "Operator-Wille +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Doch er hegte überhaupt keinen Groll für das Imperium. Seit dem Tod des „Kaisers“ war mehr als ein Jahrhundert vergangen und trotzdem erhob sich hinter ihm eine neue Formation an Schildwächtern."
     },
-    "potential6": {
+    "potential5": {
       "name": "Schachmatt",
       "author": "大明",
       "description": "Der Rauch der Zerstörung lag noch in der Luft. Zahlreiche Stücke – ob lebendig oder tot – fielen vom mächtigen Leichnam. Seine Klinge diente ihm selbst, seinem Stahlschwur und seiner Obacht als Stütze – und dann bewegte er sich. Schachmatt."

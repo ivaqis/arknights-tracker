@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Broyage",
+      "Contrôle de foule"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+      },
+      "name": "Séquence destructrice",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre"
+      },
+      "name": "Séquence constructive",
+      "description": "Une puissante explosion d'Arts de l'originium qui attaque les ennemis dans la zone d'effet. Inflige des <@ba.pd>DÉG physiques</> et applique <#ba.crush>Broyage</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "crystalShatteringDmgMultiplier": "Multiplicateur de DÉG d'éclatement de cristal",
+        "stagger": "Déséquilibre",
+        "sealDurationS": "Durée du sceau (s)"
+      },
+      "name": "Séquence de scellement",
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un autre opérateur de l'équipe inflige des DÉG grâce à une compétence de combo. \nSe précipite vers l'ennemi pour lui infliger des <@ba.pd>DÉG physiques</> et attacher des <#ba.originium>cristaux d'originium</> qui le scellent temporairement. Appliquer un <#ba.physicalstatus>statut physique</> ou <#ba.noguard>Vulnérabilité</> à l'ennemi scellé <#ba.consume>consomme</> les <#ba.originium>cristaux d'originium</> et inflige des <@ba.pd>DÉG physiques</> supplémentaires."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "bonusDmgMultiplier": "Multiplicateur de DÉG bonus",
+        "stagger": "Déséquilibre"
+      },
+      "name": "Séquence de bombardement",
+      "description": "Bombarde le sol d'Arts de l'originium, infligeant de lourds <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone en éventail. Si l'ennemi a des <#ba.originium>cristaux d'originium</> attachés, cette compétence les <#ba.consume>consomme</> et inflige des <@ba.pd>DÉG physiques</> une fois de plus."
+    },
+    "indicator": {
+      "levels": [
+        "Agilité de l'opérateur +10.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +20."
+      ],
+      "name": "Escarmoucheur"
+    },
+    "talent1": {
+      "levels": [
+        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé.",
+        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé."
+      ],
+      "name": "Désintégration d'essence"
+    },
+    "talent2": {
+      "levels": [
+        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques.",
+        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques."
+      ],
+      "name": "Stase d'espace réel"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce la compétence de combat <@ba.key>Séquence constructive</> : <#ba.consume>consommer</> des <#ba.originium>cristaux d'originium</> <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC.",
+      "name": "Ultime éveil"
+    },
+    "potential2": {
+      "description": "Renforce le talent <@ba.key>Désintégration d'essence</> : quand l'Endministrator obtient un bonus d'ATQ, les opérateurs alliés gagnent la moitié de ce bonus d'ATQ.",
+      "name": "Reflet de l'autorité"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Filet mémoriel",
+      "author": "狂zip",
+      "description": "La dernière entrée est un extrait d'un genre de directive. Les fils ont été tissés, les éléments sont en place. Vous aviez connaissance de tout ça."
+    },
+    "potential3": {
+      "name": "Quadrant",
+      "author": "廻轉",
+      "description": "Vous vous trouvez à la croisée des chemins."
+    },
+    "potential6": {
+      "name": "Parfaite compréhension",
+      "author": "수줍(Sjoop)",
+      "description": "La confiance et la foi, figées au creux de votre main. Le premier fragment porte le nom d'histoire. L'autre, celui de civilisation et de vie."
+    }
+  }
+}

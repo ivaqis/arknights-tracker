@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP回復",
+      "電磁付着"
+    ],
+    "behaviourHateTags": [
+      "頭脳"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "衆生長地",
+    "expertTags": [
+      "道具製造",
+      "自然知識"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "自然",
+      "運動"
+    ],
+    "raceTag": "クランタ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "敏捷が10アップする",
         "敏捷が15アップする",
         "敏捷が15アップする",
         "敏捷が20アップする"
@@ -122,7 +146,7 @@
       "author": "またよし",
       "description": "どんな嵐が待ち受けようとも、彼女の歩みは止まらない。"
     },
-    "potential6": {
+    "potential5": {
       "name": "弧月旋刃",
       "author": "Z3zz",
       "description": "本人はただの修響者だと思っているが、ランドブレーカーの魔の手から救われた多くの人々にとっては、彼女は紛れもなく「詩教者」だ。"

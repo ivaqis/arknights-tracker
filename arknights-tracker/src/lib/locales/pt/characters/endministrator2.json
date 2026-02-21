@@ -1,0 +1,128 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Esmagar",
+      "Controle de Multidões"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
+      },
+      "name": "Sequência Destrutiva",
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientação"
+      },
+      "name": "Sequência Construtiva",
+      "description": "Uma poderosa explosão de Artes de Originium que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "crystalShatteringDmgMultiplier": "Multiplicador DNO Fragmentação de Cristal",
+        "stagger": "Desorientação",
+        "sealDurationS": "Duração do Selo (s)"
+      },
+      "name": "Sequência de Vedação",
+      "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <#ba.originium>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado <#ba.consume>consome</> os <#ba.originium>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "bonusDmgMultiplier": "Multiplicador DNO Bônus",
+        "stagger": "Desorientação"
+      },
+      "name": "Sequência de Bombardeio",
+      "description": "Bombardeia o solo com Artes de Originium, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo tiver <#ba.originium>Cristais de Originium</>, essa habilidade <#ba.consume>consumirá</> os <#ba.originium>Cristais de Originium</> e causará mais um acerto de <@ba.pd>DNO Físico</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidade do Operador + 10.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 20."
+      ],
+      "name": "Escaramuçador"
+    },
+    "talent1": {
+      "levels": [
+        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular.",
+        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular."
+      ],
+      "name": "Desintegração da Essência"
+    },
+    "talent2": {
+      "levels": [
+        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>.",
+        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>."
+      ],
+      "name": "Estase do Espaço Real"
+    },
+    "baseSkill1": {
+      "levels": [],
+      "name": ""
+    },
+    "baseSkill2": {
+      "levels": [],
+      "name": ""
+    },
+    "files": {}
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidade de batalha <@ba.key>Sequência Construtiva</> melhorada: <#ba.consume>Consumir</> <#ba.originium>Cristais de Originium</> <#ba.return>retorna</> <@ba.vup>{atb_return:0}</> PH.",
+      "name": "Despertar Final"
+    },
+    "potential2": {
+      "description": "Talento <@ba.key>Desintegração da Essência</> melhorado: quando o Endministrator recebe o benefício de ATQ, os outros operadores aliados recebem metade desse benefício de ATQ.",
+      "name": "Reflexão da Autoridade"
+    },
+    "potential3": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential4": {
+      "description": "???",
+      "name": "???"
+    },
+    "potential5": {
+      "description": "???",
+      "name": "???"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Malha de Memória",
+      "author": "狂zip",
+      "description": "O último log é uma pequena passagem, ou algum tipo de diretriz. Os fios foram tecidos e as peças estão no lugar. Você sabia de tudo isso."
+    },
+    "potential3": {
+      "name": "Quadrante",
+      "author": "廻轉",
+      "description": "Você está bem no centro do cruzamento."
+    },
+    "potential6": {
+      "name": "Compreensão Total",
+      "author": "수줍(Sjoop)",
+      "description": "Confiança e fé cristalizadas na palma da sua mão. O primeiro fragmento se chama história. Seu outro nome é Civilização e Vida."
+    }
+  }
+}

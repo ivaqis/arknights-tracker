@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Lift",
+      "Crush"
+    ],
+    "behaviourHateTags": [
+      "Fesyen"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Memasak",
+      "Perakitan Alat"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pelari Wuling"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Amal"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Strength Operator +10.",
         "Strength Operator +15.",
         "Strength Operator +15.",
         "Strength Operator +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "Siapa yang punya waktu luang, bersama beberapa fowlbeast, untuk bersantai di puncak?"
     },
-    "potential6": {
+    "potential5": {
       "name": "Ragam Rasa Kehidupan",
       "author": "黑犬",
       "description": "Hidup bukanlah seperti memasak yang bisa disiapkan sebelum dimasukkan ke dalam wajan. Tapi, hal-hal yang pernah kita lihat dan alami bisa jadi bahan baku untuk menghadirkan berbagai rasa kehidupan."

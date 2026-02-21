@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Soins",
+      "Corrosion",
+      "Sensibilité"
+    ],
+    "behaviourHateTags": [
+      "Culture"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Connaissance de la nature",
+      "Aventure"
+    ],
+    "giftPreferTags": [
+      "Sélection industrielle de la Vallée"
+    ],
+    "hobbyTags": [
+      "Mode de vie",
+      "Nature"
+    ],
+    "raceTag": "Caprinae"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelligence de l'opérateur +10.",
         "Intelligence de l'opérateur +15.",
         "Intelligence de l'opérateur +15.",
         "Intelligence de l'opérateur +20."
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "À quoi pense-t-elle quand elle s'allonge sur un doux nuage rose ? À des pierres bizarres ? Aux endroits qu'elle n'a pas encore vus ? Ou bien..."
     },
-    "potential6": {
+    "potential5": {
       "name": "Aspirations",
       "author": "Eteru",
       "description": "Des fleurs qui éclosent sur des rochers froids et durs... des terres stériles, mais emplies de vie et de chaleur... des chants idylliques qui murmurent dans nos oreilles... Ce n'est pas un rêve, hein, professeur ?"

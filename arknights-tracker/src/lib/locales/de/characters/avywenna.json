@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Schadensverurs.",
+      "Techniken-Anfäll."
+    ],
+    "behaviourHateTags": [
+      "Gedächtnistraining"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertiert"
+    ],
+    "blocTag": "Talos-II Allgemeine Handelskammer (TAHK)",
+    "expertTags": [
+      "Straßenwissen",
+      "Beweglichkeit"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Mode"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Wille +10.",
         "Operator-Wille +15.",
         "Operator-Wille +15.",
         "Operator-Wille +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Viele Personen haben allerlei Erinnerungen und Sehnsüchte mit ihr geteilt, doch ihre eigenen behält sie stets für sich."
     },
-    "potential6": {
+    "potential5": {
       "name": "Mysteriöse Einladung",
       "author": "LM7",
       "description": "Die Reise ist ungewiss, doch der Bote zögerte nicht, als er dir diese Einladung überreichte."

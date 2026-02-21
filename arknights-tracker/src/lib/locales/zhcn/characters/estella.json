@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "寒冷附着",
+      "击飞",
+      "物理脆弱"
+    ],
+    "behaviourHateTags": [
+      "运动"
+    ],
+    "behaviourUnavailableTags": [
+      "外向"
+    ],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "战场策略",
+      "潜伏"
+    ],
+    "giftPreferTags": [
+      "谷地·协议严选"
+    ],
+    "hobbyTags": [
+      "艺术",
+      "益智"
+    ],
+    "raceTag": "菲林"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "干员意志能力值提升10。",
         "干员意志能力值提升15。",
         "干员意志能力值提升15。",
         "干员意志能力值提升20。"
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "“要尝一下吗？嗯……这是用一些昆虫和植物的提取物混合而成的营养饮料。嗯……很奇妙的味道……”"
     },
-    "potential6": {
+    "potential5": {
       "name": "秘密时间",
       "author": "かしまき",
       "description": "你介意与人分享忙里偷闲的时光吗？"

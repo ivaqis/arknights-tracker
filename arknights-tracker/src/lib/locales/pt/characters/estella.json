@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Inflição Crio",
+      "Levantar",
+      "Susc. FIS"
+    ],
+    "behaviourHateTags": [
+      "Esportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Táticas de Campo de Batalha",
+      "Infiltrador"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Belas Artes",
+      "Aprimoramento da Mente"
+    ],
+    "raceTag": "Felino"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Vontade do Operador + 10.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 15.",
         "Vontade do Operador + 20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "\"Que tal um gole? Ah... Bem, é uma mistura líquida nutritiva de insetos e extratos de plantas. É... o sabor é muito interessante...\""
     },
-    "potential6": {
+    "potential5": {
       "name": "Hora Secreta",
       "author": "かしまき",
       "description": "Você se importaria de compartilhar com alguém seu tempo livre conquistado com muito esforço?"

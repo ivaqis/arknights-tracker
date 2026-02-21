@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "治療",
+      "寒冷付着",
+      "増幅"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "社交的"
+    ],
+    "blocTag": "静語伝道会",
+    "expertTags": [
+      "博識",
+      "情報技術"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "科学技術",
+      "頭脳"
+    ],
+    "raceTag": "サルカズ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "意志が10アップする",
         "意志が15アップする",
         "意志が15アップする",
         "意志が20アップする"
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "法、記号、論理、演算――敬虔な修道士がその思考の渦に溺れている。"
     },
-    "potential6": {
+    "potential5": {
       "name": "真理を求めて",
       "author": "se_eeeee",
       "description": "未知を恐れず、混乱を拒まない――それが、彼女が掲げる真理探究のモットーだ。"

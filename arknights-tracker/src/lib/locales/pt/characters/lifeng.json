@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Derrubar",
+      "Susc. FIS",
+      "Conexão"
+    ],
+    "behaviourHateTags": [
+      "Belas Artes"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Academia de Ciências de Hongshan (ACH)",
+    "expertTags": [
+      "Agilidade",
+      "Conhecimento Natural"
+    ],
+    "giftPreferTags": [
+      "Escolha dos Corredores de Wuling"
+    ],
+    "hobbyTags": [
+      "Esportes",
+      "Natureza"
+    ],
+    "raceTag": "Anasa"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "Agilidade do Operador + 10.",
         "Agilidade do Operador + 15.",
         "Agilidade do Operador + 15.",
         "Agilidade do Operador + 20."
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "O caminho do treinamento é longo, mas seus olhos brilham quando ele toma você como exemplo."
     },
-    "potential6": {
+    "potential5": {
       "name": "Coração da Juventude",
       "author": "Eteru",
       "description": "Como um bloco de jade natural, ele suportará o cinzelamento e manterá sua pureza de coração."

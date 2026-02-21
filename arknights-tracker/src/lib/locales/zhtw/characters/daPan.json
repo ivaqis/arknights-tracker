@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大量傷害",
+      "擊飛",
+      "猛擊"
+    ],
+    "behaviourHateTags": [
+      "時尚"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "宏山科學院",
+    "expertTags": [
+      "烹飪",
+      "工具製造"
+    ],
+    "giftPreferTags": [
+      "武陵·跑者嚴選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "公益"
+    ],
+    "raceTag": "烏薩斯"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員力量能力值提升10。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升15。",
         "幹員力量能力值提升20。"
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "何人無事，伴三五羽獸，宴坐空山。"
     },
-    "potential6": {
+    "potential5": {
       "name": "人間百味",
       "author": "黑犬",
       "description": "生活不像做菜，能把料備全再下鍋。但所見、所感，都能拿來做食材，翻炒出人間百味。"

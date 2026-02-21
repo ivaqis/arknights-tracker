@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Protect",
+      "HP Treatment",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [
+      "Olahraga"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Bertahan Hidup di Alam",
+      "Teknik Medis"
+    ],
+    "giftPreferTags": [
+      "Pilihan Protokol Lembah"
+    ],
+    "hobbyTags": [
+      "Olahraga",
+      "Amal"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Strength Operator +10.",
         "Strength Operator +15.",
         "Strength Operator +15.",
         "Strength Operator +20."
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "Seperti setitik cahaya terang mentari di puncak es, kehadirannya membuat siapa pun yang terjebak salju langsung merasa hangat. Dia akan menghadapi dingin demi kelangsungan hidup mereka."
     },
-    "potential6": {
+    "potential5": {
       "name": "Membelah Salju",
       "author": "LAL!ROLE",
       "description": "Gadis itu menyusuri puncak dan membuka jalan di lereng bersalju. Dia selalu mengambil rute yang langsung menuju mereka yang kesulitan."

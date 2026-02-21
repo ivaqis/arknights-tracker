@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Soins",
+      "Alt. cryogénique",
+      "Amplification"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Sociabilité"
+    ],
+    "blocTag": "Cabale de la Tranquillité",
+    "expertTags": [
+      "Érudit",
+      "Technologie de l'information"
+    ],
+    "giftPreferTags": [
+      "Sélection industrielle de la Vallée"
+    ],
+    "hobbyTags": [
+      "Technologie",
+      "Accomplissement de soi"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Volonté de l'opérateur +10.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "La Loi, les signes, la logique et les algorithmes ; la sœur, dans sa foi, s'y plonge entièrement."
     },
-    "potential6": {
+    "potential5": {
       "name": "Contemplation de Veritas",
       "author": "se_eeeee",
       "description": "N'ayez pas peur de l'inconnu, ne rejetez pas le chaos. Tels sont les principes de sa foi qui la guident vers la vérité."

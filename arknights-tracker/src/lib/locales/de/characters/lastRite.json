@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Schadensverurs.",
+      "Kryokumulierung"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Kampftechnik",
+      "Verfassung"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Gedächtnistraining",
+      "Wohltätigkeit"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Stärke +10.",
         "Operator-Stärke +15.",
         "Operator-Stärke +15.",
         "Operator-Stärke +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Die weiten Lande umarmten sie, während sie schlummerte. Ein Äon von Wintern erwartet sehnsüchtig ihren Ruf. Doch das Mädchen wünscht nichts anderes, als dem Ort seiner Ruhe einen Blumenstrauß darzubieten."
     },
-    "potential6": {
+    "potential5": {
       "name": "Erblühen des ersten Raureifs",
       "author": "REM",
       "description": "Sie stellt sich noch viele Fragen und hat viele Hürden noch nicht überwunden. Nichtsdestotrotz wird sie alle deine Aufgaben erfüllen und allen Menschen dabei helfen, ihr Lächeln zurückzugewinnen."

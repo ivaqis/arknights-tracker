@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "法術脆弱",
+      "自然附著",
+      "擊飛"
+    ],
+    "behaviourHateTags": [
+      "科技"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "羅德島",
+    "expertTags": [
+      "冒險",
+      "源石技藝"
+    ],
+    "giftPreferTags": [
+      "谷地·協議嚴選"
+    ],
+    "hobbyTags": [
+      "時尚",
+      "文化"
+    ],
+    "raceTag": "沃爾珀"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -120,7 +144,7 @@
       "author": "一块二毛一斤",
       "description": "她不再步履輕快，也不再行色匆匆。她看見一個熟悉的身影，她為此駐足。"
     },
-    "potential6": {
+    "potential5": {
       "name": "世界翻轉",
       "author": "LM7",
       "description": "將視野倒轉，你會發現不一樣的景色、不一樣的心情、不一樣的自己。世界變成了嶄新的。"

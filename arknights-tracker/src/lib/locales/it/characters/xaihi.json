@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Cura PS",
+      "Afflizione da ghiaccio",
+      "Amplificazione"
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione"
+    ],
+    "blocTag": "Cabala della Tranquillità",
+    "expertTags": [
+      "Sapiente",
+      "Dipartimento IT"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'industria della Valle"
+    ],
+    "hobbyTags": [
+      "Tecnologia",
+      "Fortificazione mentale"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Volontà operatore +10.",
         "Volontà operatore +15.",
         "Volontà operatore +15.",
         "Volontà operatore +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "La Legge, i Segni, la Logica e gli Algoritmi: la devota chierica si dedica a essi con tutto il cuore."
     },
-    "potential6": {
+    "potential5": {
       "name": "Faccia a faccia con la Veritas",
       "author": "se_eeeee",
       "description": "Non temere l'ignoto, non rinnegare il disordine. Ecco i precetti che guidano la sua ricerca della verità."

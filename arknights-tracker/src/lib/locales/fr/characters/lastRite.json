@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Source de dégâts",
+      "Alt. cryogénique"
+    ],
+    "behaviourHateTags": [
+      "Mode de vie"
+    ],
+    "behaviourUnavailableTags": [
+      "Sociabilité"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Techniques de combat",
+      "Constitution"
+    ],
+    "giftPreferTags": [
+      "Sélection industrielle de la Vallée"
+    ],
+    "hobbyTags": [
+      "Accomplissement de soi",
+      "Charité"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Force de l'opérateur +10.",
         "Force de l'opérateur +15.",
         "Force de l'opérateur +15.",
         "Force de l'opérateur +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Les vastes terres la berçaient dans son sommeil. Des siècles d'hivers attendaient son bon vouloir, mais la jeune fille ne voulait qu'une seule chose : déposer un bouquet là où il repose."
     },
-    "potential6": {
+    "potential5": {
       "name": "Givre fleuri",
       "author": "REM",
       "description": "Il lui reste encore bien des questions sans réponse, et des difficultés qu'elle n'a pas surmontées. Pourtant, ça ne l'empêchera pas d'accomplir toutes vos affectations et de redonner le sourire à tout le monde."

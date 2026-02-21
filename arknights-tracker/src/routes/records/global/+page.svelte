@@ -40,6 +40,7 @@
     export let graphDates = [];
 
     $: chartData = stats.timeline || [];
+    
     $: displayDates = graphDates || [];
 
     let hoveredIndex = -1;

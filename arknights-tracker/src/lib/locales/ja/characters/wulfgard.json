@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "灼熱付着",
+      "燃焼"
+    ],
+    "behaviourHateTags": [
+      "頭脳"
+    ],
+    "behaviourUnavailableTags": [
+      "社交的"
+    ],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "戦闘技術",
+      "潜伏"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "自然",
+      "創造性"
+    ],
+    "raceTag": "ループス"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "彼が警戒を解くのは、心から信じる者の前だけだ。そのときは、幼き日に置いてきた素顔をそっと覗かせる。"
     },
-    "potential6": {
+    "potential5": {
       "name": "追う者の眼差し",
       "author": "FE",
       "description": "狼の魂が咆哮を上げる中、若き捕食者は己の狩場へと足を踏み入れた。獲物を真っ直ぐに見据えるその眼差しは、仕留めるまで食らいついて離れない。"

@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Hồi Điểm KN",
+      "Nhiễm Điện"
+    ],
+    "behaviourHateTags": [
+      "Rèn Luyện Tâm Trí"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Trường Địa Hannabit",
+    "expertTags": [
+      "Lắp Ráp Dụng Cụ",
+      "Tri Thức Thiên Nhiên"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Tự Nhiên",
+      "Thể Thao"
+    ],
+    "raceTag": "Kuranta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Nhanh Nhẹn Đặc Vụ +10.",
         "Nhanh Nhẹn Đặc Vụ +15.",
         "Nhanh Nhẹn Đặc Vụ +15.",
         "Nhanh Nhẹn Đặc Vụ +20."
@@ -122,7 +146,7 @@
       "author": "またよし",
       "description": "Không cơn bão nào có thể ngăn cản được bước chân của cô."
     },
-    "potential6": {
+    "potential5": {
       "name": "Kiếm Liềm Mặt Trăng",
       "author": "Z3zz",
       "description": "Cô luôn tự gọi mình là Tín Đồ, nhưng những người mà cô cứu khỏi lưỡi dao phá hủy đều nhất quyết gọi cô là Đạo Sư."

@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nature Infliction",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [
+      "Culture"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Outdoors Survival",
+      "Street Wisdom"
+    ],
+    "giftPreferTags": [
+      "Valley Protocol's Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Creative"
+    ],
+    "raceTag": "Phidia"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -44,6 +69,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Agility +10.",
         "Operator Agility +15.",
         "Operator Agility +15.",
         "Operator Agility +20."
@@ -120,7 +146,7 @@
       "author": "GHOSTY",
       "description": "She hardly bears grudges. Her enemies usually don't last that long."
     },
-    "potential6": {
+    "potential5": {
       "name": "Gray Fringes of the Rules",
       "author": "Doppel",
       "description": "Justice is always served. However, if justice decides to show up late, then we're in for quite a show."

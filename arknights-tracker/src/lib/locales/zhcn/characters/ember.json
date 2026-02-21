@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "倒地",
+      "治疗",
+      "护盾"
+    ],
+    "behaviourHateTags": [
+      "生活"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "铁誓军",
+    "expertTags": [
+      "作战技巧",
+      "身强力壮"
+    ],
+    "giftPreferTags": [
+      "谷地·协议严选"
+    ],
+    "hobbyTags": [
+      "运动",
+      "科技"
+    ],
+    "raceTag": "萨科塔"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "干员力量能力值提升10。",
         "干员力量能力值提升15。",
         "干员力量能力值提升15。",
         "干员力量能力值提升20。"
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "征伐只是通向目标的过程，而战士不会在目标前方倒下。"
     },
-    "potential6": {
+    "potential5": {
       "name": "不落坚城",
       "author": "MoooFoo",
       "description": "坚硬的血和炽热的钢在北地筑成堡垒。那里不是她的梦魇，那里仍是下一个终点。"

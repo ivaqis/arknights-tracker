@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "猛撃",
+      "牽制"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "あなたは、十字の中心に立っている。"
     },
-    "potential6": {
+    "potential5": {
       "name": "掌握",
       "author": "수줍(Sjoop)",
       "description": "あなたの手のひらに託された信頼。その最初の破片を歴史と呼び、またの名を文明、生命という。"

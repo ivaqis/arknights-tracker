@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Schadensverurs.",
+      "Anheben",
+      "Zertrümmern"
+    ],
+    "behaviourHateTags": [
+      "Mode"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
+    "expertTags": [
+      "Kochen",
+      "Werkzeugmontage"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Läufern empfohlen"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Wohltätigkeit"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -40,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Stärke +10.",
         "Operator-Stärke +15.",
         "Operator-Stärke +15.",
         "Operator-Stärke +20."
@@ -116,7 +141,7 @@
       "author": "E_Volution_",
       "description": "Wer hat Zeit im Überfluss, um mit den Vogelbestien auf dem Gipfel zu verweilen?"
     },
-    "potential6": {
+    "potential5": {
       "name": "Die Aromen des Lebens",
       "author": "黑犬",
       "description": "Das Leben gleicht nicht dem Kochen, wo man alles vorbereiten kann, ehe man es in den Wok wirft. Doch die Erfahrungen und Eindrücke, die wir sammeln, eignen sich genauso gut als Zutaten, aus denen sich die vielfältigen Aromen des Lebens entfalten."

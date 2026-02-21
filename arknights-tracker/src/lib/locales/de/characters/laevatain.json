@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Schadensverurs.",
+      "Verbrennen"
+    ],
+    "behaviourHateTags": [
+      "Technologie"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Originium-Techniken",
+      "Situationsbezogene Analyse"
+    ],
+    "giftPreferTags": [
+      "Vom Tal-Protokoll empfohlen"
+    ],
+    "hobbyTags": [
+      "Kreativ",
+      "Lifestyle"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Intellekt +10.",
         "Operator-Intellekt +15.",
         "Operator-Intellekt +15.",
         "Operator-Intellekt +20."
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1.538 °C ist der Schmelzpunkt von Ferrium, nicht etwa der ihre. Du kannst dich ihr nähern, wenn du glaubst, dass du bereit dafür bist."
     },
-    "potential6": {
+    "potential5": {
       "name": "Willkommen im Schmelzfeuer",
       "author": "min",
       "description": "Begleite sie durch lange Nächte ohne Erinnerungen. Kämpfe mit ihr und verbrenne die finsteren, albtraumhaften Feinde. Stehe an ihrer Seite, während sie Feuer entfacht, die zukünftige Pfade erleuchten."

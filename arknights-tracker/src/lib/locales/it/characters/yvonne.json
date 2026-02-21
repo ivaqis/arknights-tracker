@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abilità offensiva",
+      "Solidificazione",
+      "Critico"
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversione"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Illuminazione",
+      "Gestione della squadra"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Moda",
+      "Tecnologia"
+    ],
+    "raceTag": "Vouivre"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelletto operatore +10.",
         "Intelletto operatore +15.",
         "Intelletto operatore +15.",
         "Intelletto operatore +20."
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "Quando ci si fa un selfie con Yvonne, non serve pensare all'illuminazione. Niente e nessuno brilla quanto lei."
     },
-    "potential6": {
+    "potential5": {
       "name": "Vittoria!",
       "author": "u介",
       "description": "Colori accesi, musica allegra e un sorriso vittorioso... Ogni attimo di gioia che ha registrato, è ben felice di condividerlo con te."

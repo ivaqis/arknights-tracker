@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大ダメージ",
+      "凍結",
+      "会心"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "控えめ"
+    ],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "ひらめき",
+      "チーム管理"
+    ],
+    "giftPreferTags": [
+      "谷地・協約厳選"
+    ],
+    "hobbyTags": [
+      "ファッション",
+      "科学技術"
+    ],
+    "raceTag": "ヴイーヴル"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -53,6 +79,7 @@
     },
     "indicator": {
       "levels": [
+        "知性が10アップする",
         "知性が15アップする",
         "知性が15アップする",
         "知性が20アップする"
@@ -129,7 +156,7 @@
       "author": "Kago",
       "description": "イヴォンヌと自撮りをするのにフラッシュはいらない。彼女自身が光り輝いているからだ。"
     },
-    "potential6": {
+    "potential5": {
       "name": "Win-Win！",
       "author": "u介",
       "description": "カラフルな色に、軽快な音楽、そして勝利の笑顔……そんな楽しい瞬間をすべて記録して分かち合う。"

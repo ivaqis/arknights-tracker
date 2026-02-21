@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "倒地",
+      "物理脆弱",
+      "连击"
+    ],
+    "behaviourHateTags": [
+      "艺术"
+    ],
+    "behaviourUnavailableTags": [
+      "外向"
+    ],
+    "blocTag": "宏山科学院",
+    "expertTags": [
+      "敏捷",
+      "自然学识"
+    ],
+    "giftPreferTags": [
+      "武陵·跑者严选"
+    ],
+    "hobbyTags": [
+      "运动",
+      "自然"
+    ],
+    "raceTag": "阿纳萨"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "干员敏捷能力值提升10。",
         "干员敏捷能力值提升15。",
         "干员敏捷能力值提升15。",
         "干员敏捷能力值提升20。"
@@ -124,7 +151,7 @@
       "author": "某猫monota",
       "description": "修行路漫漫，但他目光如炬，奉你为楷模。"
     },
-    "potential6": {
+    "potential5": {
       "name": "少年心",
       "author": "Eteru",
       "description": "如璞玉，千琢而不晦。"

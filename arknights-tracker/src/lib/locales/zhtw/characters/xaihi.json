@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "治療",
+      "寒冷附著",
+      "增幅"
+    ],
+    "behaviourHateTags": [
+      "運動"
+    ],
+    "behaviourUnavailableTags": [
+      "外向"
+    ],
+    "blocTag": "寂語修會",
+    "expertTags": [
+      "博聞強記",
+      "資訊技術"
+    ],
+    "giftPreferTags": [
+      "谷地·工業嚴選"
+    ],
+    "hobbyTags": [
+      "科技",
+      "益智"
+    ],
+    "raceTag": "薩卡茲"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "幹員意志能力值提升10。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升15。",
         "幹員意志能力值提升20。"
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "律法、符號、邏輯、演算，虔誠的修士沉溺其中。"
     },
-    "potential6": {
+    "potential5": {
       "name": "凝望真理",
       "author": "se_eeeee",
       "description": "不要恐懼未知，不要拒絕混亂——這即是她探究真理的信條。"

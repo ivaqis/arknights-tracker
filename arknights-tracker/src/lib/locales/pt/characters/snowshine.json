@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Proteger",
+      "Tratamento PV",
+      "Inflição Crio"
+    ],
+    "behaviourHateTags": [
+      "Esportes"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Sobrevivência na Natureza",
+      "Técnica Médica"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Esportes",
+      "Caridade"
+    ],
+    "raceTag": "Ursus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -46,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Força do Operador + 10.",
         "Força do Operador + 15.",
         "Força do Operador + 15.",
         "Força do Operador + 20."
@@ -122,7 +147,7 @@
       "author": "一块二毛一斤",
       "description": "Como a mais brilhante gota de sol no topo dos picos congelados, a simples visão dela traz calor instantâneo àqueles presos na neve íngreme. Ela enfrentará o frio gélido e os salvará."
     },
-    "potential6": {
+    "potential5": {
       "name": "Esculpindo a Neve",
       "author": "LAL!ROLE",
       "description": "A menina caminhou com dificuldade pelos picos e abriu caminho pelas encostas nevadas. Ela está sempre seguindo em linha reta para salvar vidas em perigo."

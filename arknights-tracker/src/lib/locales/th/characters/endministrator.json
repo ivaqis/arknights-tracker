@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "บด",
+      "คุม​ฝูง​ศัตรู"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "คุณ​ยืน​อยู่​ตรง​ศูนย์กลาง​ของ​ทางแยก"
     },
-    "potential6": {
+    "potential5": {
       "name": "ครอบครอง​อย่างแท้จริง",
       "author": "수줍​(Sjoop)",
       "description": "คุณ​กุม​ความเชื่อ​ใจ​และ​ศรัทธา​ไว้​ใน​กำมือ​ ​ส่วน​แรก​มีชื่อ​ว่า​ประวัติศาสตร์​ ​ซึ่ง​มี​อีก​ชื่อ​หนึ่ง​ว่า​อารยธรรม​และ​ชีวิต"

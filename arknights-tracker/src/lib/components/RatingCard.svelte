@@ -14,10 +14,9 @@
   $: currentAccount = $accounts.find(a => a.id === $selectedId);
   $: gameUid = currentAccount?.serverUid; 
 
-  // Добавляем кастомную вкладку "Total" в начало списка
   const totalTab = {
       id: "total",
-      i18nKey: "systemNames.total", // убедись, что ключ есть в переводах
+      i18nKey: "page.rating.totalRaiting",
       order: -1
   };
 
@@ -28,11 +27,7 @@
         .sort((a, b) => a.order - b.order)
   ];
 
-  let activeTab = "total"; // По умолчанию Total
-  
-  // Локальные данные берем из стора. Если activeTab === 'total', 
-  // то локальные данные, скорее всего, не нужны или их нужно суммировать отдельно.
-  // Но для рейтинга важны данные с сервера.
+  let activeTab = "total";
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
   $: localTotal = localStore.pulls?.length || 0;
@@ -83,7 +78,6 @@
 
   $: if (browser && activeTab) {
       if (gameUid) {
-          // Если выбрана вкладка "total", отправляем "all"
           const queryId = activeTab === "total" ? "all" : activeTab;
           loadRankings(queryId, gameUid);
       } else {
@@ -256,11 +250,11 @@
       </div>
       <div class="text-right flex flex-col justify-center h-full">
         {#if rankLuck6 !== null}
-            <div class="text-2xl font-black dark:text-[#FDFDFD] text-[#21272C] font-nums whitespace-nowrap">
+            <div class="text-2xl font-black dark:text-[#D97D48] text-[#D97D48] font-nums whitespace-nowrap">
                {$t(getRankLabel(rankLuck6))} {getRankValue(rankLuck6)}%
             </div>
-            <div class="text-sm font-semibold text-gray-400 dark:text-[#B7B6B3]">
-              {formatVal(displayAvg6)} <span class="text-gray-400 dark:text-[#B7B6B3] font-semibold">{$t("page.rating.avg")}</span>
+            <div class="text-sm font-semibold text-[#D97D48] dark:text-[#D97D48]">
+              {formatVal(displayAvg6)} <span class="text-[#D97D48] dark:text-[#D97D48] font-semibold">{$t("page.rating.avg")}</span>
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
@@ -288,11 +282,11 @@
       </div>
       <div class="text-right flex flex-col justify-center h-full">
         {#if rankLuck5 !== null}
-            <div class="text-2xl font-black text-[#21272C] dark:text-[#FDFDFD] whitespace-nowrap">
+            <div class="text-2xl font-black dark:text-[#E3BC55] text-[#E3BC55] whitespace-nowrap">
                {$t(getRankLabel(rankLuck5))} {getRankValue(rankLuck5)}%
             </div>
-            <div class="text-sm font-semibold dark:text-[#B7B6B3] text-gray-400">
-              {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="text-gray-400 dark:text-[#B7B6B3] font-semibold">{$t("page.rating.avg")}</span>
+            <div class="text-sm font-semibold dark:text-[#E3BC55] text-[#E3BC55]">
+              {formatVal(serverData?.myStats?.avg5 ?? localAvg5)} <span class="dark:text-[#E3BC55] text-[#E3BC55] font-semibold">{$t("page.rating.avg")}</span>
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
@@ -308,7 +302,9 @@
         <Button
           variant="roundSmall"
           color={activeTab === tab.id ? "black" : "gray"}
-          className={activeTab === tab.id ? "shadow-md" : "opacity-70 hover:opacity-100"}
+          className={
+            (activeTab === tab.id ? "shadow-md " : "opacity-70 hover:opacity-100 ")
+          }
           onClick={() => (activeTab = tab.id)}
         >
           {$t(tab.i18nKey) || tab.id}

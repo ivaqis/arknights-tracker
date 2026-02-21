@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nhiễm Điện",
+      "Điện Hóa"
+    ],
+    "behaviourHateTags": [
+      "Thể Thao"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội"
+    ],
+    "blocTag": "Tập Đoàn Endfield",
+    "expertTags": [
+      "Quản Lý Đội",
+      "Thuật Pháp Originium"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Phong Cách Sống",
+      "Sáng Tạo"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Trí Tuệ Đặc Vụ +10.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +15.",
         "Trí Tuệ Đặc Vụ +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Chứng kiến nỗi khao khát của mình được khơi dậy, cô không còn muốn ở lại nữa. Giao Thức không bao giờ có ý định trở thành những ràng buộc lạnh lùng, vô cảm."
     },
-    "potential6": {
+    "potential5": {
       "name": "Tương Lai",
       "author": "IRple2",
       "description": "Cô đã dệt nên vô vàn khả năng, rồi khắc họa chúng lên bản thiết kế. Chúng chính là tương lai mà cô ấy luôn mang theo bên mình."

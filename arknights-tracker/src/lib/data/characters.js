@@ -1,8 +1,5 @@
 // src/lib/data/characters.js
 
-// Заменить картинки на свои
-// Фильтры по rarity, element, class, новизне
-
 export const characters = {
   endministrator: {
     id: "endministrator2",
@@ -11,9 +8,6 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/endministrator2.f0bbf4fa.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/endministrator2.1ec20a16.png",
-    tags: []
   },
   endministrator2: {
     id: "endministrator1",
@@ -22,8 +16,6 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/endministrator1.3efd4769.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/endministrator1.ec409283.png",
   },
   perlica: {
     id: "perlica",
@@ -32,13 +24,6 @@ export const characters = {
     element: "electric",
     class: "caster",
     weapon: "artsUnit",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/perlica.871dcf57.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/perlica.b24be972.png",
-    tags: [
-      "electricInfliction", "electrify"
-    ],
-    faction: "endfieldInd", 
-    race: "perro",
     birthDate: "31-03"
   },
   chenQianyu: {
@@ -48,8 +33,6 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/chen.5c7b5e46.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/chen.2a091fd4.png",
   },
   laevatain: {
     id: "laevatain",
@@ -58,8 +41,6 @@ export const characters = {
     element: "heat",
     class: "striker",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/laevatain.20075757.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/laevatain.d0ca2837.png",
   },
   yvonne: {
     id: "yvonne",
@@ -68,8 +49,6 @@ export const characters = {
     element: "cryo",
     class: "striker",
     weapon: "handcannon",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/yvonne.c93412e1.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/yvonne.a74396e6.png",
   },
   gilberta: {
     id: "gilberta",
@@ -78,8 +57,6 @@ export const characters = {
     element: "nature",
     class: "supporter",
     weapon: "artsUnit",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/gilberta.07ff3560.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/gilberta.92aa17d4.png",
   },
   ardelia: {
     id: "ardelia",
@@ -88,8 +65,6 @@ export const characters = {
     element: "nature",
     class: "supporter",
     weapon: "artsUnit",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/ardelia.b46cd31c.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/ardelia.36d836c7.png",
   },
   ember: {
     id: "ember",
@@ -98,8 +73,6 @@ export const characters = {
     element: "heat",
     class: "defender",
     weapon: "greatSword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/ember.235ca9f1.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/ember.4f967a14.png",
   },
   lastRite: {
     id: "lastRite",
@@ -108,8 +81,6 @@ export const characters = {
     element: "cryo",
     class: "striker",
     weapon: "greatSword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/lastrite.8560c002.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/lastrite.c66bd542.png",
   },
   lifeng: {
     id: "lifeng",
@@ -118,8 +89,6 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "polearm",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/lifeng.41ae5d06.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/lifeng.7253579c.png",
   },
   pogranichnik: {
     id: "pogranichnik",
@@ -128,8 +97,6 @@ export const characters = {
     element: "physical",
     class: "vanguard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/pogranichnik.73f7bcf6.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/pogranichnik.6983f122.png",
   },
   alesh: {
     id: "alesh",
@@ -138,8 +105,6 @@ export const characters = {
     element: "cryo",
     class: "vanguard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/alesh.ca99268b.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/alesh.bfe6a583.png",
   },
   arсlight: {
     id: "arclight",
@@ -148,8 +113,6 @@ export const characters = {
     element: "electric",
     class: "vanguard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/arclight.0b402b3e.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/arclight.f1d9853c.png",
   },
   avywenna: {
     id: "avywenna",
@@ -158,8 +121,6 @@ export const characters = {
     element: "electric",
     class: "striker",
     weapon: "polearm",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/avywenna.36c72367.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/avywenna.3346feee.png",
   },
   daPan: {
     id: "daPan",
@@ -168,8 +129,6 @@ export const characters = {
     element: "physical",
     class: "striker",
     weapon: "greatSword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/dapan.7b5afdec.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/dapan.6118e704.png",
   },
   snowshine: {
     id: "snowshine",
@@ -178,8 +137,6 @@ export const characters = {
     element: "cryo",
     class: "defender",
     weapon: "greatSword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/snowshine.844ed0a4.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/snowshine.1f6d3a0e.png",
   },
   wulfgard: {
     id: "wulfgard",
@@ -188,8 +145,6 @@ export const characters = {
     element: "heat",
     class: "caster",
     weapon: "handcannon",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/wulfgard.b9d580b2.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/wulfgard.53a6686b.png",
   },
   xaihi: {
     id: "xaihi",
@@ -198,8 +153,6 @@ export const characters = {
     element: "cryo",
     class: "supporter",
     weapon: "artsUnit",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/xaihi.9c949014.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/xaihi.43d608d9.png",
   },
   akekuri: {
     id: "akekuri",
@@ -208,8 +161,6 @@ export const characters = {
     element: "heat",
     class: "vanguard",
     weapon: "sword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/akekuri.3df4a3dc.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/akekuri.8678d37f.png",
   },
   antal: {
     id: "antal",
@@ -218,8 +169,6 @@ export const characters = {
     element: "electric",
     class: "supporter",
     weapon: "artsUnit",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/antal.78d45318.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/antal.51fa71d3.png",
   },
   catcher: {
     id: "catcher",
@@ -228,8 +177,6 @@ export const characters = {
     element: "physical",
     class: "defender",
     weapon: "greatSword",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/catcher.68b395f9.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/catcher.3812760d.png",
   },
   estella: {
     id: "estella",
@@ -238,8 +185,6 @@ export const characters = {
     element: "cryo",
     class: "guard",
     weapon: "polearm",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/estella.b761d517.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/estella.fbad0dc2.png",
   },
   fluorite: {
     id: "fluorite",
@@ -248,7 +193,5 @@ export const characters = {
     element: "nature",
     class: "caster",
     weapon: "handcannon",
-    icon: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/fluorite.b83d45cf.png",
-    splashArt: "https://web-static.hg-cdn.com/endfield/official-v4/_next/static/media/fluorite.9071d26e.png",
   }
 };

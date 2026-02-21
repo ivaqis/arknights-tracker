@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Trat. de PV",
+      "Corroer",
+      "Suscep."
+    ],
+    "behaviourHateTags": [
+      "Cultura"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Conocimiento natural",
+      "Aventura"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Estilo de vida",
+      "Naturaleza"
+    ],
+    "raceTag": "Caprinae"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelecto del operador +10.",
         "Intelecto del operador +15.",
         "Intelecto del operador +15.",
         "Intelecto del operador +20."
@@ -118,7 +143,7 @@
       "author": "宇木敦哉",
       "description": "¿En qué fantasea cuando está recostada sobre una suave y esponjosa nube rosa? ¿Piedras realmente extrañas? ¿Lugares a los que nunca ha ido? O..."
     },
-    "potential6": {
+    "potential5": {
       "name": "Aspiración",
       "author": "Eteru",
       "description": "Flores floreciendo sobre rocas frías y duras... Tierras áridas rebosantes de vida y calor... Y canciones idílicas susurrando en nuestros oídos... Profesor, esto no es solo un sueño, ¿verdad?"

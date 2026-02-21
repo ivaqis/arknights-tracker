@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Imp. elec.",
+      "Electrificar"
+    ],
+    "behaviourHateTags": [
+      "Deportes"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Gestión de equipo",
+      "Artes de Originio"
+    ],
+    "giftPreferTags": [
+      "Selección de la Industria del Valle"
+    ],
+    "hobbyTags": [
+      "Estilo de vida",
+      "Creativo"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelecto del operador +10.",
         "Intelecto del operador +15.",
         "Intelecto del operador +15.",
         "Intelecto del operador +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Al ser testigo del centro de su anhelo, ya no desea quedarse quieta. El Protocolo nunca fue pensado para fungir como ataduras frías e insensibles."
     },
-    "potential6": {
+    "potential5": {
       "name": "El futuro",
       "author": "IRple2",
       "description": "Tejió una infinidad de posibilidades que luego fueron grabadas en los planos. Son el futuro que siempre lleva consigo."

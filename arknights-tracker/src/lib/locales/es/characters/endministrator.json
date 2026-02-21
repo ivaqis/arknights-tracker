@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Triturar",
+      "Con. de mas."
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "Estás justo en el centro de una encrucijada."
     },
-    "potential6": {
+    "potential5": {
       "name": "Comprensión total",
       "author": "수줍(Sjoop)",
       "description": "La confianza y la fe se solidificaron en tu palma. El primer fragmento se llama Historia. Su otro nombre es Civilización y Vida."

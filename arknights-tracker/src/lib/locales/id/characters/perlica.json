@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Electric Infliction",
+      "Electrify"
+    ],
+    "behaviourHateTags": [
+      "Olahraga"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Pengelolaan Tim",
+      "Originium Arts"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Kreatif"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Intellect Operator +10.",
         "Intellect Operator +15.",
         "Intellect Operator +15.",
         "Intellect Operator +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Setelah melihat sendiri apa yang dia rindukan, dia tak mau tinggal diam. Protokol seharusnya bukan belenggu dingin tanpa perasaan."
     },
-    "potential6": {
+    "potential5": {
       "name": "Masa Depan",
       "author": "IRple2",
       "description": "Dia merangkai kemungkinan yang jumlahnya tak terhitung, yang lalu mengukirnya pada cetak biru. Itulah masa depan yang selalu ada dalam hatinya."

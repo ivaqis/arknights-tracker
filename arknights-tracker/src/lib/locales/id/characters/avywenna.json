@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Arts Susc."
+    ],
+    "behaviourHateTags": [
+      "Asah Pikiran"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Talos-II General Chamber of Commerce (TGCC)",
+    "expertTags": [
+      "Kearifan Jalanan",
+      "Kegesitan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Gaya Hidup",
+      "Fesyen"
+    ],
+    "raceTag": "Cautus"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "Will Operator +10.",
         "Will Operator +15.",
         "Will Operator +15.",
         "Will Operator +20."
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "Dia mengoleksi banyak kenangan dan nostalgia dari berbagai orang, tapi kisahnya sendiri hampir tak pernah dibahas."
     },
-    "potential6": {
+    "potential5": {
       "name": "Undangan Misteri",
       "author": "LM7",
       "description": "Perjalanan ini penuh ketidakpastian, tapi sang kurir tak pernah ragu saat menyampaikan roti panggang berisi undangan ini kepadamu."

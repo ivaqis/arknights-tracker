@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP回復",
+      "凍結"
+    ],
+    "behaviourHateTags": [
+      "頭脳"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "工業団連盟",
+    "expertTags": [
+      "サバイバル",
+      "戦術"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "文化",
+      "運動"
+    ],
+    "raceTag": "アナティ"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "筋力が10アップする",
         "筋力が15アップする",
         "筋力が15アップする",
         "筋力が20アップする"
@@ -126,7 +150,7 @@
       "author": "叶木森山",
       "description": "生きていると人は傷だらけになる。しかし目を失ったほうが、むしろその下に隠れている秘密がよく見えることもある。"
     },
-    "potential6": {
+    "potential5": {
       "name": "釣り日和",
       "author": "w3",
       "description": "「鱗獣釣りで一番アガる瞬間？」「竿を振るときだな、ブンってよ。」「なんでかって？」「お楽しみがまだこれからってことだろ？何が起こるかわかんねー感覚がワクワクするんだ。」"

@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Nhiễm Băng",
+      "Hất Tung",
+      "Dễ Bị Thương VL"
+    ],
+    "behaviourHateTags": [
+      "Thể Thao"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại"
+    ],
+    "blocTag": "Tập Đoàn Endfield",
+    "expertTags": [
+      "Chiến Thuật Chiến Trường",
+      "Kẻ Xâm Nhập"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Giao Thức Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Mỹ Thuật",
+      "Rèn Luyện Tâm Trí"
+    ],
+    "raceTag": "Feline"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Ý Chí Đặc Vụ +10.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +15.",
         "Ý Chí Đặc Vụ +20."
@@ -117,7 +144,7 @@
       "author": "余音RinA",
       "description": "\"Uống một ngụm nhé? À... À, đó là hỗn hợp chất lỏng bổ dưỡng từ côn trùng và chiết xuất thực vật. Ừm... hương vị rất thú vị...\""
     },
-    "potential6": {
+    "potential5": {
       "name": "Khoảnh Khắc Bí Mật",
       "author": "かしまき",
       "description": "Bạn có muốn chia sẻ thời gian rảnh rỗi khó kiếm được của mình với ai đó không?"

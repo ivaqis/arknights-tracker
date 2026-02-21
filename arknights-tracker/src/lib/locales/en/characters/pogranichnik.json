@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "SP Recovery",
+      "Breach"
+    ],
+    "behaviourHateTags": [
+      "Lifestyle"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Battlefield Tactics",
+      "Team Management"
+    ],
+    "giftPreferTags": [
+      "Wuling Runners' Choice"
+    ],
+    "hobbyTags": [
+      "Culture",
+      "Mind Honing"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Will +10.",
         "Operator Will +15.",
         "Operator Will +15.",
         "Operator Will +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "But he bore absolutely no hatred for the Empire. More than a century had passed since the \"Emperor\" died, yet a new formation of shieldguards rose behind him."
     },
-    "potential6": {
+    "potential5": {
       "name": "Checkmate",
       "author": "大明",
       "description": "The smoke of ruin still lingered. Numerous pieces, living and dead, fell off the ponderous corpse. His blade served as the support of his body, his steel oath, and his vigil — And then he made his move. Checkmate."

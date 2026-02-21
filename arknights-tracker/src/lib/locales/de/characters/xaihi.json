@@ -1,4 +1,30 @@
 {
+  "baseInfo": {
+    "tags": [
+      "LP-Behandlung",
+      "Kryokumulierung",
+      "Verstärken"
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert"
+    ],
+    "blocTag": "Orden der Stille",
+    "expertTags": [
+      "Gebildet",
+      "Informationstechnologie"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Technologie",
+      "Gedächtnistraining"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +71,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Wille +10.",
         "Operator-Wille +15.",
         "Operator-Wille +15.",
         "Operator-Wille +20."
@@ -121,7 +148,7 @@
       "author": "原野香久山",
       "description": "Das Gesetz, die Zeichen, die Logik und die Algorithmen – ein Priester von wahrem Glauben gibt sich ihnen allen vollständig hin."
     },
-    "potential6": {
+    "potential5": {
       "name": "Langer Blick ins Veritas",
       "author": "se_eeeee",
       "description": "Fürchte nicht das Unbekannte und verweigere dich nicht dem Chaos. Dies sind die Prinzipien, die sie auf ihrer Suche nach der Wahrheit leiten."

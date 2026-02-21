@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Pemulihan SP",
+      "Breach"
+    ],
+    "behaviourHateTags": [
+      "Gaya Hidup"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Taktik Medan Pertarungan",
+      "Pengelolaan Tim"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pelari Wuling"
+    ],
+    "hobbyTags": [
+      "Budaya",
+      "Asah Pikiran"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Will Operator +10.",
         "Will Operator +15.",
         "Will Operator +15.",
         "Will Operator +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Tapi, dia sama sekali tak membenci Kekaisaran. Sudah lebih dari seabad sejak sang “Kaisar” wafat, tapi barisan shieldguard baru masih berdiri di belakangnya."
     },
-    "potential6": {
+    "potential5": {
       "name": "Sekakmat",
       "author": "大明",
       "description": "Asap kehancuran masih tersisa. Bidak demi bidak, yang hidup ataupun yang mati, terlepas dari jasad berat itu. Pedangnya menumpu tubuhnya, sumpahnya yang sekeras baja, dan kesiagaannya—Lalu, dia pun melangkah. Sekakmat."

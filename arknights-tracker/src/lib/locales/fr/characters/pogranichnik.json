@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Récupération de PC",
+      "Brèche"
+    ],
+    "behaviourHateTags": [
+      "Mode de vie"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Tactiques de champ de bataille",
+      "Gestion d'équipe"
+    ],
+    "giftPreferTags": [
+      "Sélection des coureurs de Wuling"
+    ],
+    "hobbyTags": [
+      "Culture",
+      "Accomplissement de soi"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -61,6 +84,7 @@
     },
     "indicator": {
       "levels": [
+        "Volonté de l'opérateur +10.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +15.",
         "Volonté de l'opérateur +20."
@@ -137,7 +161,7 @@
       "author": "Kala",
       "description": "Il ne haïssait pas l'empire. Plus d'un siècle s'était écoulé depuis que « l'empereur » s'était éteint, et pourtant une nouvelle formation d'égides s'élevait derrière lui."
     },
-    "potential6": {
+    "potential5": {
       "name": "Échec et mat",
       "author": "大明",
       "description": "Les ruines étaient encore fumantes. De nombreuses pièces, vivantes et mortes, tombaient du lourd cadavre. Sa lame soutenait son corps, son serment d'acier, sa veille. Et le voilà qui bouge. Échec et mat."

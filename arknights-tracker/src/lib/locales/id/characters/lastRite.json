@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Damage Dealer",
+      "Cryo Infliction"
+    ],
+    "behaviourHateTags": [
+      "Gaya Hidup"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Teknik Tempur",
+      "Kondisi Tubuh"
+    ],
+    "giftPreferTags": [
+      "Pilihan Industri Lembah"
+    ],
+    "hobbyTags": [
+      "Asah Pikiran",
+      "Amal"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Strength Operator +10.",
         "Strength Operator +15.",
         "Strength Operator +15.",
         "Strength Operator +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Hamparan luas merengkuhnya saat dia tertidur. Ribuan musim dingin menanti isyarat darinya. Tapi, gadis itu hanya ingin meletakkan seikat bunga di tempat peristirahatan terakhirnya."
     },
-    "potential6": {
+    "potential5": {
       "name": "Mekarnya Bunga Es Pertama",
       "author": "REM",
       "description": "Dia masih punya banyak pertanyaan dan banyak kesulitan yang belum teratasi. Tapi, dia akan menyelesaikan setiap tugas darimu dan membantu agar lebih banyak orang bisa tersenyum kembali."

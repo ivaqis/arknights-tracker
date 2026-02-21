@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Heat Infliction",
+      "Combust"
+    ],
+    "behaviourHateTags": [
+      "Mind Honing"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Combat Technique",
+      "Infiltrator"
+    ],
+    "giftPreferTags": [
+      "Valley Protocol's Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Creative"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "He only relaxes his vigilance with those who have truly earned his trust. And then he'll reveal his true nature, one that has been abandoned in his childhood."
     },
-    "potential6": {
+    "potential5": {
       "name": "Predator's Glance",
       "author": "FE",
       "description": "The young predator stepped into his personal hunting ground as the Wolf Spirit howled. His eyes are on every single prey, and his guns will bring every single one of them down."

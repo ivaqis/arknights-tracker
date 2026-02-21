@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Techniken-Anfäll.",
+      "Verstärken"
+    ],
+    "behaviourHateTags": [
+      "Kultur"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Werkzeugmontage",
+      "Situationsbezogene Analyse"
+    ],
+    "giftPreferTags": [
+      "Von der Tal-Industrie empfohlen"
+    ],
+    "hobbyTags": [
+      "Gedächtnistraining",
+      "Kreativ"
+    ],
+    "raceTag": "Savra"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -41,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator-Intellekt +10.",
         "Operator-Intellekt +15.",
         "Operator-Intellekt +15.",
         "Operator-Intellekt +20."
@@ -117,7 +141,7 @@
       "author": "黑犬",
       "description": "„Unterbrich ihn jetzt nicht. Das ist sein 115ter Versuch, Feuer durch den Einsatz von Originium-Techniken zu Asche zu komprimieren.“"
     },
-    "potential6": {
+    "potential5": {
       "name": "Ein neuer Zenit",
       "author": "言犬",
       "description": "Er lernt. Er erlangt Erleuchtung. Er befindet sich auf einem endlosen Pfad zur einzig richtigen Antwort."

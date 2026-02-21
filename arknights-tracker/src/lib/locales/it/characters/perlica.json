@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Afflizione da elettricità",
+      "Elettrificazione"
+    ],
+    "behaviourHateTags": [
+      "Sport"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversione"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Gestione della squadra",
+      "Arti di Originium"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'industria della Valle"
+    ],
+    "hobbyTags": [
+      "Stile di vita",
+      "Creatività"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelletto operatore +10.",
         "Intelletto operatore +15.",
         "Intelletto operatore +15.",
         "Intelletto operatore +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Ora che il suo sogno è a portata di mano, non vuole più starsene a guardare. Il protocollo non deve per forza essere un vincolo freddo e insensibile."
     },
-    "potential6": {
+    "potential5": {
       "name": "Il futuro",
       "author": "IRple2",
       "description": "Ha costruito un intreccio di possibilità senza fine, per poi imprimerle su carta. Sono il futuro che porta sempre con sé."

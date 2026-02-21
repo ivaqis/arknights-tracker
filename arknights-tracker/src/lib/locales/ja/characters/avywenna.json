@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "大ダメージ",
+      "アーツ脆弱"
+    ],
+    "behaviourHateTags": [
+      "頭脳"
+    ],
+    "behaviourUnavailableTags": [
+      "控えめ"
+    ],
+    "blocTag": "環タロ商会",
+    "expertTags": [
+      "交渉術",
+      "俊敏"
+    ],
+    "giftPreferTags": [
+      "谷地・工業厳選"
+    ],
+    "hobbyTags": [
+      "生活",
+      "ファッション"
+    ],
+    "raceTag": "コータス"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -45,6 +70,7 @@
     },
     "indicator": {
       "levels": [
+        "意志が10アップする",
         "意志が15アップする",
         "意志が15アップする",
         "意志が20アップする"
@@ -121,7 +147,7 @@
       "author": "umo_yszx",
       "description": "彼女は他人の想いや記憶をたくさん集めてきたが、自分のことは心に秘めたままだ。"
     },
-    "potential6": {
+    "potential5": {
       "name": "未知へのお誘い",
       "author": "LM7",
       "description": "未知なる旅路へ、トランスポーターは迷いなくあなたを誘う。"

@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Abilità offensiva",
+      "Combustione"
+    ],
+    "behaviourHateTags": [
+      "Tecnologia"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Arti di Originium",
+      "Analisi della situazione"
+    ],
+    "giftPreferTags": [
+      "Scelta del protocollo della Valle"
+    ],
+    "hobbyTags": [
+      "Creatività",
+      "Stile di vita"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "Intelletto operatore +10.",
         "Intelletto operatore +15.",
         "Intelletto operatore +15.",
         "Intelletto operatore +20."
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538 °C è il punto di fusione del ferrium, non il suo. Avvicinati pure a lei, se credi di essere all'altezza."
     },
-    "potential6": {
+    "potential5": {
       "name": "Invito nel fuoco rovente",
       "author": "min",
       "description": "Stai al suo fianco nelle lunghe notti prive di ricordi. Combattete insieme per incenerire i nemici oscuri e terrificanti. Resta con lei mentre accende un fuoco per illuminare i viaggi che verranno."

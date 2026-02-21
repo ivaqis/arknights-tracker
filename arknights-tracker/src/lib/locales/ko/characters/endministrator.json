@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "강타",
+      "제어"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "당신은 십자의 정중앙에 있습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "장악",
       "author": "수줍(Sjoop)",
       "description": "응축된 신뢰가 당신의 손안에 있습니다. 그 첫 번째 조각의 이름은 역사, 또 다른 이름은 문명과 생명입니다."

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "庇护",
+      "护盾",
+      "虚弱"
+    ],
+    "behaviourHateTags": [
+      "时尚"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "工具制造",
+      "烹饪"
+    ],
+    "giftPreferTags": [
+      "谷地·工业严选"
+    ],
+    "hobbyTags": [
+      "生活",
+      "运动"
+    ],
+    "raceTag": "佩洛"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -50,6 +74,7 @@
     },
     "indicator": {
       "levels": [
+        "干员力量能力值提升10。",
         "干员力量能力值提升15。",
         "干员力量能力值提升15。",
         "干员力量能力值提升20。"
@@ -126,7 +151,7 @@
       "author": "EXP",
       "description": "在任务开始之前，他已经为后续的每种情况都准备了十种应急方案。"
     },
-    "potential6": {
+    "potential5": {
       "name": "坚实后盾",
       "author": "かしまき",
       "description": "令人放心的安全感与让人满足的饱腹感——永远是他所在的队伍里最不会缺乏的东西。"

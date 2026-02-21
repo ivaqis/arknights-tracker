@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Electric Infliction",
+      "Electrify"
+    ],
+    "behaviourHateTags": [
+      "Sports"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Team Management",
+      "Originium Arts"
+    ],
+    "giftPreferTags": [
+      "Valley Industry's Choice"
+    ],
+    "hobbyTags": [
+      "Lifestyle",
+      "Creative"
+    ],
+    "raceTag": "Liberi"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -39,6 +64,7 @@
     },
     "indicator": {
       "levels": [
+        "Operator Intellect +10.",
         "Operator Intellect +15.",
         "Operator Intellect +15.",
         "Operator Intellect +20."
@@ -115,7 +141,7 @@
       "author": "Director Kuzuri",
       "description": "Having witnessed the focus of her longing, she no longer wishes to stay put. The Protocol was never meant to be cold, unfeeling bindings."
     },
-    "potential6": {
+    "potential5": {
       "name": "The Future",
       "author": "IRple2",
       "description": "She wove an infinity of possibilities that were then etched upon the blueprints. They are the future that she always carries with her."

@@ -1,4 +1,27 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Causador de Dano",
+      "Combustão"
+    ],
+    "behaviourHateTags": [
+      "Tecnologia"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Rhodes Island",
+    "expertTags": [
+      "Artes de Originium",
+      "Análise Situacional"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Criativo",
+      "Estilo de Vida"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -57,6 +80,7 @@
     },
     "indicator": {
       "levels": [
+        "Inteligência do Operador + 10.",
         "Inteligência do Operador + 15.",
         "Inteligência do Operador + 15.",
         "Inteligência do Operador + 20."
@@ -133,7 +157,7 @@
       "author": "嘴広コウ",
       "description": "1538 °C é o ponto de fusão do ferrium, não o dela. Sinta-se à vontade para se aproximar dela se achar que está pronto."
     },
-    "potential6": {
+    "potential5": {
       "name": "Um Convite Para o Fogo Fundente",
       "author": "min",
       "description": "Acompanhe-a pelas longas noites sem lembranças. Lute ao lado dela e queime os inimigos sombrios e assustadores. Permaneça com ela enquanto acende chamas que iluminam as jornadas do amanhã."

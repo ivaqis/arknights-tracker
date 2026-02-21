@@ -1,4 +1,17 @@
 {
+  "baseInfo": {
+    "tags": [
+      "猛擊",
+      "控制"
+    ],
+    "behaviourHateTags": [],
+    "behaviourUnavailableTags": [],
+    "blocTag": "",
+    "expertTags": [],
+    "giftPreferTags": [],
+    "hobbyTags": [],
+    "raceTag": ""
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -106,7 +119,7 @@
       "author": "廻轉",
       "description": "您在十字的正中心。"
     },
-    "potential6": {
+    "potential5": {
       "name": "掌握",
       "author": "수줍(Sjoop)",
       "description": "所凝聚的信任在您掌中，它的第一枚碎片名為歷史，又名為文明與生命。"

@@ -1,4 +1,28 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Derribar",
+      "Trat. de PV",
+      "Escudo"
+    ],
+    "behaviourHateTags": [
+      "Estilo de vida"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Orden del juramento de acero",
+    "expertTags": [
+      "Técnica de combate",
+      "Constitución"
+    ],
+    "giftPreferTags": [
+      "Selección del protocolo del Valle"
+    ],
+    "hobbyTags": [
+      "Deportes",
+      "Tecno."
+    ],
+    "raceTag": "Sankta"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -43,6 +67,7 @@
     },
     "indicator": {
       "levels": [
+        "Fuerza del operador +10.",
         "Fuerza del operador +15.",
         "Fuerza del operador +15.",
         "Fuerza del operador +20."
@@ -119,7 +144,7 @@
       "author": "へいろー",
       "description": "La cruzada es el camino hacia el objetivo. Los verdaderos guerreros no caen hasta que la meta se ha cumplido."
     },
-    "potential6": {
+    "potential5": {
       "name": "El bastión inquebrantable",
       "author": "MoooFoo",
       "description": "El acero al rojo vivo y la sangre sólida fueron el ladrillo y la argamasa de los bastiones del norte. El norte no es su pesadilla. Es simplemente su siguiente destino."

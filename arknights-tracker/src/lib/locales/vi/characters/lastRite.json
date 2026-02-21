@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Chủ Công",
+      "Nhiễm Băng"
+    ],
+    "behaviourHateTags": [
+      "Phong Cách Sống"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Hiến pháp"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Công Nghiệp Thung Lũng"
+    ],
+    "hobbyTags": [
+      "Rèn Luyện Tâm Trí",
+      "Tổ Chức Từ Thiện"
+    ],
+    "raceTag": "Sarkaz"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -48,6 +73,7 @@
     },
     "indicator": {
       "levels": [
+        "Sức Mạnh Đặc Vụ +10.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +15.",
         "Sức Mạnh Đặc Vụ +20."
@@ -124,7 +150,7 @@
       "author": "Cenm0",
       "description": "Những vùng đất rộng lớn ôm lấy cô khi cô chìm vào giấc ngủ. Một mùa đông dài vô tận đang chờ đợi cô. Tuy nhiên, cô gái chỉ muốn dâng tặng một bó hoa tại nơi nó yên nghỉ."
     },
-    "potential6": {
+    "potential5": {
       "name": "Sương Giá Đầu Tiên Nở Hoa",
       "author": "REM",
       "description": "Cô ấy vẫn còn nhiều câu hỏi chưa có lời đáp, và nhiều khó khăn chưa thể vượt qua. Nhưng dù thế nào, cô vẫn sẽ hoàn thành mọi nhiệm vụ được giao và mang nụ cười trở lại trên gương mặt của tất cả mọi người."

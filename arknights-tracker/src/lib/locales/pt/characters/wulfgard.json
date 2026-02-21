@@ -1,4 +1,29 @@
 {
+  "baseInfo": {
+    "tags": [
+      "Inflição Térmica",
+      "Combustão"
+    ],
+    "behaviourHateTags": [
+      "Aprimoramento da Mente"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido"
+    ],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "Técnica de Combate",
+      "Infiltrador"
+    ],
+    "giftPreferTags": [
+      "Escolha do Protocolo do Vale"
+    ],
+    "hobbyTags": [
+      "Natureza",
+      "Criativo"
+    ],
+    "raceTag": "Lupo"
+  },
   "skills": {
     "basicAttack": {
       "basicAttack": {
@@ -117,7 +142,7 @@
       "author": "MeanWhile",
       "description": "Ele só relaxa a vigilância com aqueles que realmente conquistaram sua confiança. E então ele revelará sua verdadeira natureza, aquela que foi abandonada em sua infância."
     },
-    "potential6": {
+    "potential5": {
       "name": "Olhar do Predador",
       "author": "FE",
       "description": "O jovem predador entrou em seu território de caça pessoal enquanto o Espírito do Lobo uivava. Seus olhos estão em cada presa, e suas armas derrubarão cada uma delas."
