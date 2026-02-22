@@ -428,9 +428,25 @@
   },
   "bioValues": {
     "Unknown": "Unknown",
-    "endfieldInd": "Endfield Industries",
-    "perro": "Perro",
-    "31-03": "March 31"
+    "31-03": "March 31",
+    "18-08": "August 18",
+    "09-05": "May 9",
+    "28-11": "November 28",
+    "18-10": "October 18",
+    "10-04": "April 10",
+    "12-11": "November 12",
+    "16-07": "July 16",
+    "23-07": "July 23 ",
+    "01-09": "September 1",
+    "03-01": "January 3",
+    "25-10": "October 25",
+    "19-05": "May 19",
+    "19-12": "December 19",
+    "16-11": "November 16",
+    "16-05": "May 16",
+    "16-08": "August 16",
+    "09-04": "April 9",
+    "21-06": "June 21"
   },
   "tags": {
     "electricInfliction": "Electric Infliction",

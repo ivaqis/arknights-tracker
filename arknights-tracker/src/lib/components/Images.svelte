@@ -4,7 +4,7 @@
 
     export let item = null; 
     export let id = null;
-    export let variant = "operator-icon"; 
+    export let variant = ""; 
     export let alt = "";
     export let size = "100%";
     export let className = ""; 
@@ -14,7 +14,6 @@
     $: src = getImagePath(rawId, variant);
 
     let hasError = false;
-    
 
     let isVisible = false;
     let allowTransition = false;

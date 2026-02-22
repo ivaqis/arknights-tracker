@@ -1,6 +1,7 @@
 <script>
     import { t } from "$lib/i18n";
     import { goto } from "$app/navigation";
+    import { pullData } from "$lib/stores/pulls";
     import Icon from "$lib/components/Icons.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Images from "$lib/components/Images.svelte";
@@ -8,6 +9,37 @@
     export let operator = {};
     export let variant = "default"; // "default" | "small"
     export let className = ""; 
+
+    $: totalPulls = (() => {
+        if (!$pullData) return 0;
+        let count = 0;
+        
+        Object.entries($pullData).forEach(([bannerName, banner]) => {
+            const pulls = banner?.pulls || [];
+            
+            const matches = pulls.filter(p => 
+                p.id === operator.id || 
+                p.name === operator.id || 
+                p.itemId === operator.id || 
+                (p.name && operator.name && p.name.toLowerCase() === operator.name.toLowerCase())
+            );
+            
+            count += matches.length;
+        });
+        
+        return count;
+    })();
+
+    $: constCount = totalPulls > 0 ? Math.min(5, totalPulls - 1) : 0;
+    $: isMaxPot = constCount === 5;
+
+    const potPaths = [
+        "M35.3769 14.521L43.8763 14.4792L10.06 39.0583L2.11523 38.4865L35.3769 14.521Z",
+        "M20.1176 23.9788L22.9078 15.9502L34.827 56.0203L31.6429 63.3215L20.1176 23.9788Z",
+        "M24.2399 42.7944L17.3306 37.8443L59.1357 37.7639L65.2359 42.8858L24.2399 42.7944Z",
+        "M44.879 41.6553L38.1667 46.8695L49.9912 6.77135L56.6378 2.38173L44.879 41.6553Z",
+        "M49.8633 25.9639L52.5508 34.0273L18.6602 9.55078L16.7285 1.82324L49.8633 25.9639Z"
+    ];
 
     let isHovered = false;
 
@@ -116,6 +148,8 @@
                 {/if}
             </div>
 
+            
+
             {#if variant === "default"}
                 <div class="absolute bottom-[24px] w-full flex justify-center items-center gap-[-2px] z-20">
                     {#each Array(safeRarity) as _}
@@ -151,6 +185,26 @@
                     </div>
                     <div class="absolute bottom-0 left-0 w-full h-[7px]" style:background-color={rarityColor}></div>
                 </div>
+                <div class="absolute top-1 right-1.5 z-20 pointer-events-none drop-shadow-md shadow-black">
+                <svg 
+                    width={variant === 'small' ? '18' : '34'} 
+                    height={variant === 'small' ? '18' : '34'} 
+                    viewBox="0 0 68 66" 
+                    fill="none" 
+                    class="transition-all  duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : 'drop-shadow-sm'}"
+                >
+                    {#each potPaths as d, i}
+                        {@const isActive = i < constCount}
+                        <path 
+                            {d} 
+                            fill={isActive ? "#FEDE28" : "black"} 
+                            stroke={isMaxPot ? "white" : (isActive ? "#E5D32B" : "white")} 
+                            stroke-width="1.5"
+                            class="transition-colors duration-300"
+                        />
+                    {/each}
+                </svg>
+            </div>
             {/if}
 
             {#if variant === "small" && !hideName}

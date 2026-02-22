@@ -14,23 +14,37 @@
     import Images from "$lib/components/Images.svelte";
     import TalentCard from "$lib/components/TalentCard.svelte";
 
-    const localeModulesEn = import.meta.glob(
-        "$lib/locales/en/characters/*.json",
-        { eager: true },
-    );
-    const localeModulesRu = import.meta.glob(
-        "$lib/locales/ru/characters/*.json",
-        { eager: true },
-    );
+    const localeModules = {
+        de: import.meta.glob("$lib/locales/de/characters/*.json", { eager: true }),
+        en: import.meta.glob("$lib/locales/en/characters/*.json", { eager: true }),
+        es: import.meta.glob("$lib/locales/es/characters/*.json", { eager: true }),
+        fr: import.meta.glob("$lib/locales/fr/characters/*.json", { eager: true }),
+        id: import.meta.glob("$lib/locales/id/characters/*.json", { eager: true }),
+        it: import.meta.glob("$lib/locales/it/characters/*.json", { eager: true }),
+        ja: import.meta.glob("$lib/locales/ja/characters/*.json", { eager: true }),
+        ko: import.meta.glob("$lib/locales/ko/characters/*.json", { eager: true }),
+        pt: import.meta.glob("$lib/locales/pt/characters/*.json", { eager: true }),
+        ru: import.meta.glob("$lib/locales/ru/characters/*.json", { eager: true }),
+        th: import.meta.glob("$lib/locales/th/characters/*.json", { eager: true }),
+        vi: import.meta.glob("$lib/locales/vi/characters/*.json", { eager: true }),
+        zhcn: import.meta.glob("$lib/locales/zhcn/characters/*.json", { eager: true }),
+        zhtw: import.meta.glob("$lib/locales/zhtw/characters/*.json", { eager: true })
+    };
 
     $: id = $page.params.id;
     $: char = Object.values(characters).find((c) => c.id === id) || {};
 
     $: charLocale = (() => {
-        const lang = $currentLocale === "ru" ? "ru" : "en";
+        const lang = $currentLocale || "en"; 
         const path = `/src/lib/locales/${lang}/characters/${id}.json`;
-        const modules = lang === "ru" ? localeModulesRu : localeModulesEn;
-        return modules[path]?.default || {};
+        const modules = localeModules[lang] || localeModules["en"];
+        let data = modules[path]?.default;
+        if (!data && lang !== "en") {
+            const fallbackPath = `/src/lib/locales/en/characters/${id}.json`;
+            data = localeModules["en"][fallbackPath]?.default;
+        }
+
+        return data || {};
     })();
 
     $: skillsLocale = charLocale.skills || {};
@@ -1244,7 +1258,7 @@
                 className="max-w-full max-h-full object-contain rounded-lg drop-shadow-2xl select-none"
             />
             <button
-                class="absolute top-0 right-0 md:top-4 md:right-4 p-3 bg-black/40 hover:bg-black/80 text-white rounded-full transition-colors backdrop-blur-sm z-10"
+                class="absolute top-0 right-0 md:top-4 md:right-4 p-3 bg-black/40 hover:bg-[#FFD800] text-white rounded-full transition-colors backdrop-blur-sm z-10"
                 on:click={() => (selectedArtId = null)}
             >
                 <Icon name="close" class="w-6 h-6" />
