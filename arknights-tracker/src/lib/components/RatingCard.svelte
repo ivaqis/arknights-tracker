@@ -103,7 +103,7 @@
 </script>
 
 <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 h-full min-w-[320px]">
-  <div class="flex justify-between items-center mb-6 relative z-20">
+  <div class="flex justify-between items-center mb-4 relative z-20">
     <h3 class="text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]">
       {$t("page.rating.ratingTitle")}
     </h3>
@@ -297,7 +297,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-2 mt-4 pt-2">
+    <div class="flex flex-wrap gap-2 mt-2">
       {#each ratingTabs as tab}
         <Button
           variant="roundSmall"

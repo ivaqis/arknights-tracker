@@ -13,86 +13,55 @@
   import Images from "$lib/components/Images.svelte";
 
   $: pullsStats = (() => {
-    // 1. Сваливаем ВСЕ крутки в одну кучу, сохраняя информацию, откуда они пришли
     let allPulls = [];
     Object.entries($pullData).forEach(([boxId, data]) => {
       if (!data || !data.pulls) return;
       data.pulls.forEach(p => {
         allPulls.push({
           ...p,
-          // boxId - это 'special', 'standard', 'weapon' (название категории из стора)
           boxId: boxId, 
-          // Заранее считаем время для быстрой сортировки
           timeMs: new Date(p.time).getTime() 
         });
       });
     });
 
-    // 2. Сортируем строго по времени (это критично для счетчика)
     allPulls.sort((a, b) => a.timeMs - b.timeMs);
 
-    // Переменные для итогов
     let total = 0;
     let billable = 0;
     let billableChar = 0;
-
-    // Счетчик круток для КАЖДОГО КОНКРЕТНОГО баннера (по его уникальному ID)
     let bannerCounts = {}; 
 
-    // 3. Проходим по всем круткам
     allPulls.forEach(p => {
-      // --- ГЛАВНАЯ МАГИЯ: Находим, какому именно баннеру принадлежит эта крутка ---
-      // Ищем в конфиге баннеров такой, который подходит по времени и типу
       const specificBanner = banners.find(b => {
          const start = new Date(b.startTime).getTime();
-         const end = b.endTime ? new Date(b.endTime).getTime() : 4102444800000; // Далекое будущее
-         
-         // 1. Попадает ли крутка в даты баннера?
+         const end = b.endTime ? new Date(b.endTime).getTime() : 4102444800000;
          if (p.timeMs < start || p.timeMs > end) return false;
-
-         // 2. Совпадает ли тип? (Грубая проверка, чтобы не перепутать оружие и чаров)
          const bType = (b.type || "").toLowerCase();
          const pBox = p.boxId.toLowerCase();
-
          if (pBox.includes('special') && bType === 'special') return true;
          if (pBox.includes('weap') && bType === 'weapon') return true;
          if (pBox.includes('new') && bType === 'new-player') return true;
-         // Стандартные баннеры могут иметь ID 'constant_x'
          if (pBox.includes('standard') && (bType === 'standard' || bType === 'constant')) return true;
          
          return false;
       });
 
-      // Если нашли конкретный баннер - берем его ID. 
-      // Если не нашли (например, старый стандарт) - берем имя категории как ID.
       const bid = specificBanner ? specificBanner.id : p.boxId;
-      
-      // Определяем свойства для оплаты
       const bType = specificBanner ? specificBanner.type : (p.boxId.includes('weap') ? 'weapon' : 'special');
-      
       const isWeapon = bType === 'weapon' || p.boxId.includes('weap') || p.boxId.includes('wepon');
       const isNewPlayer = bType === 'new-player' || p.boxId.includes('new');
-      // Считаем "Специальным" только если это явно Special Character баннер
       const isSpecial = bType === 'special' && !isWeapon && !isNewPlayer;
-
-      // Инициализируем счетчик для ЭТОГО баннера
       if (!bannerCounts[bid]) bannerCounts[bid] = 0;
-
-      // --- ЛОГИКА БЕСПЛАТНОСТИ ---
-      // (Точь-в-точь как в таблице)
       let isFree = false;
       if (isSpecial && bannerCounts[bid] >= 30 && bannerCounts[bid] < 40) {
           isFree = true;
       }
 
-      // Увеличиваем счетчики
       bannerCounts[bid]++;
       total++;
 
-      // --- СЧИТАЕМ ДЕНЬГИ ---
-      // Не считаем новичка и оружие
       if (!isNewPlayer && !isWeapon) {
-          // Если крутка не бесплатная - она стоит денег
           if (!isFree) {
               billable++;
               billableChar++;
@@ -145,7 +114,7 @@
       {$t("page.title")}
     </h2>
 
-    <div class="w-full md:w-auto">
+    <div class="w-full md:w-auto ">
       <Button variant="yellow" onClick={openImport}>
         <div slot="icon">
           <Icon name="import" style="width: 30px; height: 30px;" />

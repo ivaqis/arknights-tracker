@@ -8,7 +8,8 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    birthDate: ""
+    birthDate: "",
+    isNew: false
   },
   endministrator2: {
     id: "endministrator1",
@@ -17,7 +18,8 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    birthDate: ""
+    birthDate: "",
+    isNew: false
   },
   perlica: {
     id: "perlica",
@@ -26,7 +28,8 @@ export const characters = {
     element: "electric",
     class: "caster",
     weapon: "artsUnit",
-    birthDate: "31-03"
+    birthDate: "31-03",
+    isNew: false
   },
   chenQianyu: {
     id: "chenQianyu",
@@ -35,7 +38,8 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    birthDate: "18-08"
+    birthDate: "18-08",
+    isNew: false
   },
   laevatain: {
     id: "laevatain",
@@ -44,7 +48,8 @@ export const characters = {
     element: "heat",
     class: "striker",
     weapon: "sword",
-    birthDate: ""
+    birthDate: "",
+    isNew: false
   },
   yvonne: {
     id: "yvonne",
@@ -53,7 +58,8 @@ export const characters = {
     element: "cryo",
     class: "striker",
     weapon: "handcannon",
-    birthDate: "09-05"
+    birthDate: "09-05",
+    isNew: true
   },
   gilberta: {
     id: "gilberta",
@@ -62,7 +68,8 @@ export const characters = {
     element: "nature",
     class: "supporter",
     weapon: "artsUnit",
-    birthDate: "28-11"
+    birthDate: "28-11",
+    isNew: true
   },
   ardelia: {
     id: "ardelia",
@@ -71,7 +78,8 @@ export const characters = {
     element: "nature",
     class: "supporter",
     weapon: "artsUnit",
-    birthDate: "18-10"
+    birthDate: "18-10",
+    isNew: false
   },
   ember: {
     id: "ember",
@@ -80,7 +88,8 @@ export const characters = {
     element: "heat",
     class: "defender",
     weapon: "greatSword",
-    birthDate: "10-04"
+    birthDate: "10-04",
+    isNew: false
   },
   lastRite: {
     id: "lastRite",
@@ -89,7 +98,8 @@ export const characters = {
     element: "cryo",
     class: "striker",
     weapon: "greatSword",
-    birthDate: "12-11"
+    birthDate: "12-11",
+    isNew: false
   },
   lifeng: {
     id: "lifeng",
@@ -98,7 +108,8 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "polearm",
-    birthDate: "16-07"
+    birthDate: "16-07",
+    isNew: false
   },
   pogranichnik: {
     id: "pogranichnik",
@@ -107,7 +118,8 @@ export const characters = {
     element: "physical",
     class: "vanguard",
     weapon: "sword",
-    birthDate: "23-07"
+    birthDate: "23-07",
+    isNew: false
   },
   alesh: {
     id: "alesh",
@@ -116,7 +128,8 @@ export const characters = {
     element: "cryo",
     class: "vanguard",
     weapon: "sword",
-    birthDate: "01-09"
+    birthDate: "01-09",
+    isNew: false
   },
   arсlight: {
     id: "arclight",
@@ -125,7 +138,8 @@ export const characters = {
     element: "electric",
     class: "vanguard",
     weapon: "sword",
-    birthDate: "03-01"
+    birthDate: "03-01",
+    isNew: false
   },
   avywenna: {
     id: "avywenna",
@@ -134,7 +148,8 @@ export const characters = {
     element: "electric",
     class: "striker",
     weapon: "polearm",
-    birthDate: "25-10"
+    birthDate: "25-10",
+    isNew: false
   },
   daPan: {
     id: "daPan",
@@ -143,7 +158,8 @@ export const characters = {
     element: "physical",
     class: "striker",
     weapon: "greatSword",
-    birthDate: "19-05"
+    birthDate: "19-05",
+    isNew: false
   },
   snowshine: {
     id: "snowshine",
@@ -152,7 +168,8 @@ export const characters = {
     element: "cryo",
     class: "defender",
     weapon: "greatSword",
-    birthDate: "19-12"
+    birthDate: "19-12",
+    isNew: false
   },
   wulfgard: {
     id: "wulfgard",
@@ -161,7 +178,8 @@ export const characters = {
     element: "heat",
     class: "caster",
     weapon: "handcannon",
-    birthDate: "16-11"
+    birthDate: "16-11",
+    isNew: false
   },
   xaihi: {
     id: "xaihi",
@@ -170,7 +188,8 @@ export const characters = {
     element: "cryo",
     class: "supporter",
     weapon: "artsUnit",
-    birthDate: "16-05"
+    birthDate: "16-05",
+    isNew: false
   },
   akekuri: {
     id: "akekuri",
@@ -179,7 +198,8 @@ export const characters = {
     element: "heat",
     class: "vanguard",
     weapon: "sword",
-    birthDate: "31-03"
+    birthDate: "31-03",
+    isNew: false
   },
   antal: {
     id: "antal",
@@ -188,7 +208,8 @@ export const characters = {
     element: "electric",
     class: "supporter",
     weapon: "artsUnit",
-    birthDate: "10-04"
+    birthDate: "10-04",
+    isNew: false
   },
   catcher: {
     id: "catcher",
@@ -197,7 +218,8 @@ export const characters = {
     element: "physical",
     class: "defender",
     weapon: "greatSword",
-    birthDate: "16-08"
+    birthDate: "16-08",
+    isNew: false
   },
   estella: {
     id: "estella",
@@ -206,7 +228,8 @@ export const characters = {
     element: "cryo",
     class: "guard",
     weapon: "polearm",
-    birthDate: "09-04"
+    birthDate: "09-04",
+    isNew: false
   },
   fluorite: {
     id: "fluorite",

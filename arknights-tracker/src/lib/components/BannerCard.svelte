@@ -246,33 +246,35 @@
 >
   {#if availableSubBanners.length > 1}
     <div
-      class="flex gap-2 overflow-x-auto pb-3 pt-1 mb-1 scrollbar-hide -mx-1 px-1"
+      class="flex gap-1 overflow-x-auto pb-1 pt-1 banners-scroll -mx-1 px-0.5 snap-x"
     >
       {#each availableSubBanners as bId}
-        <Tooltip text={$t(`banners.${bId}`) || bId}>
-          <button
-            class="group relative h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none
+        <div class="shrink-0">
+          <Tooltip text={$t(`banners.${bId}`) || bId}>
+            <button
+              class="group relative h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none
                     {selectedSubBannerId === bId
-              ? 'ring-2 ring-[#e44e25] border-[#e44e25] dark:border-[#7A7A7A]'
-              : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-70 hover:opacity-100'}"
-            on:click={() => (selectedSubBannerId = bId)}
-          >
-            <Images
-              id={bId}
-              variant="banner-mini"
-              alt={bId}
-              className="h-full w-full object-cover transition-transform group-hover:scale-110"
-            />
-            <div
-              class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
-            ></div>
-          </button>
-        </Tooltip>
+                ? 'ring-2 ring-[#e44e25] border-[#e44e25] dark:border-[#7A7A7A]'
+                : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-60 hover:opacity-100'}"
+              on:click={() => (selectedSubBannerId = bId)}
+            >
+              <Images
+                id={bId}
+                variant="banner-mini"
+                alt={bId}
+                className="h-full w-full object-cover transition-transform group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
+              ></div>
+            </button>
+          </Tooltip>
+        </div>
       {/each}
     </div>
   {/if}
 
-  <div class="flex justify-between items-start mb-4">
+  <div class="flex justify-between items-start mb-3 pt-1">
     <h3
       class="text-xl font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] w-2/3 leading-tight"
     >
@@ -552,3 +554,25 @@
     {/if}
   </div>
 </div>
+<style>
+  .banners-scroll::-webkit-scrollbar {
+    height: 6px; 
+  }
+  .banners-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .banners-scroll::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+  }
+  .banners-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af;
+  }
+  
+  :global(.dark) .banners-scroll::-webkit-scrollbar-thumb {
+    background-color: #525252;
+  }
+  :global(.dark) .banners-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #737373;
+  }
+</style>

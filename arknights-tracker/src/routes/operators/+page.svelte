@@ -102,11 +102,11 @@
 
     <div class="w-full xl:w-[80%] pb-8">
         <div
-            class="grid grid-cols-[repeat(auto-fill,120px)] gap-4 justify-start"
+            class="grid grid-cols-[repeat(auto-fill,120px)] gap-4 justify-center md:justify-start"
         >
             {#each filteredOperators as op (op.id)}
                 <div class="flex justify-center">
-                    <OperatorCard operator={op} />
+                    <OperatorCard operator={op} isNew={op.isNew} />
                 </div>
             {/each}
         </div>

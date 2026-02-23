@@ -171,7 +171,7 @@
                     : 'justify-between'}"
             >
                 {#if !visuallyCollapsed}
-                    <div class="pr-1 [.sidebar-closed_&]:hidden">
+                    <div class="pr-1">
                         <h1
                             class="font-black text-2xl tracking-tighter text-gray-900 dark:text-white leading-none"
                         >
@@ -240,9 +240,7 @@
                             flex items-center gap-3 py-3 rounded-lg group relative min-h-[48px]
                             {ready ? 'transition-all' : ''} 
                             
-                            px-3 
-                            [.sidebar-closed_&]:px-0 
-                            [.sidebar-closed_&]:justify-center
+                            {visuallyCollapsed ? 'px-0 justify-center' : 'px-3'}
 
                             {isCurrent(item.path) && (item.path === '/' ? $page.url.pathname === '/' : true)
                                 ? 'bg-gray-100 dark:bg-[#424242] text-gray-900 dark:text-[#FDFDFD]'
@@ -266,7 +264,7 @@
                         {#if !visuallyCollapsed}
                             <span
                                 class="
-                                    text-lg leading-tight [.sidebar-closed_&]:hidden
+                                    text-lg leading-tight
                                     {isCurrent(item.path) &&
                                 (item.path === '/'
                                     ? $page.url.pathname === '/'
@@ -291,7 +289,7 @@
 
         <div class="w-full mt-auto mb-4 flex flex-col items-center gap-6 px-4">
             {#if !visuallyCollapsed}
-            <div class="w-full flex justify-center flex-col gap-6 [.sidebar-closed_&]:hidden">
+            <div class="w-full flex justify-center flex-col gap-6">
                 <div class="w-full flex justify-center">
                     <ThemeSwitch />
                 </div>

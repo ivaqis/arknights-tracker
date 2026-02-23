@@ -209,7 +209,7 @@
                     </div>
                 {/each}
             {:else}
-                <div class="w-full text-center py-4 bg-gray-50 rounded border border-dashed border-gray-200">
+                <div class="w-full text-center dark:bg-[#343434] py-4 bg-gray-50 rounded border border-gray-200 dark:border-[#444444]">
                     <span class="text-xs text-gray-400 italic">
                         {$t("systemNames.noMaterialsNeeded") || "No materials needed"}
                     </span>

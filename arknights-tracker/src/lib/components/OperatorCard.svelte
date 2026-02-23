@@ -9,9 +9,10 @@
     import Images from "$lib/components/Images.svelte";
 
     export let operator = {};
-    export let variant = "default"; //small default
+    export let variant = "default"; // "small" | "default"
     export let className = ""; 
     export let isNew = false; 
+    export let hideName = false;
 
     $: gachaPulls = (() => {
         if (!$pullData) return 0;
@@ -33,10 +34,12 @@
     $: currentAccountId = $selectedId;
     $: isAlwaysOwned = operator.id === "endministrator1" || operator.id === "endministrator2";
     $: basePot = gachaPulls > 0 ? Math.min(5, gachaPulls - 1) : (isAlwaysOwned ? 0 : -1);
+    
     $: accountPots = $manualPotentials[currentAccountId] || {};
     $: currentPot = accountPots[operator.id] !== undefined 
         ? (isAlwaysOwned ? Math.max(0, accountPots[operator.id]) : accountPots[operator.id]) 
         : basePot;
+    
     $: manualPot = accountPots[operator.id];
     $: actualPulls = manualPot !== undefined ? manualPot + 1 : gachaPulls; 
     $: hasOperator = currentPot >= 0;
@@ -50,10 +53,6 @@
         "M44.879 41.6553L38.1667 46.8695L49.9912 6.77135L56.6378 2.38173L44.879 41.6553Z",
         "M49.8633 25.9639L52.5508 34.0273L18.6602 9.55078L16.7285 1.82324L49.8633 25.9639Z"
     ];
-
-    let isHovered = false;
-
-    export let hideName = false;
 
     function getRarityColor(rarity) {
         if (rarity === 6) return "#F4700C";
@@ -94,33 +93,31 @@
 {#if operator && operator.id}
     <div
         class={rootClass}
-        on:mouseenter={() => (isHovered = true)}
-        on:mouseleave={() => (isHovered = false)}
         role="button"
         tabindex="0"
         on:click={handleClick}
         on:keydown={(e) => e.key === "Enter" && handleClick()}
     >
-        {#if isHovered && variant != "small"}
-        <div class="absolute -inset-[3px] z-40 pointer-events-none transition-all duration-100">
-            <div class={`absolute top-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tl-md shadow-sm`} style={`border-top-width: ${borderW}; border-left-width: ${borderW};`}></div>
-            <div class={`absolute top-0 right-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tr-md shadow-sm`} style={`border-top-width: ${borderW}; border-right-width: ${borderW};`}></div>
-            <div class={`absolute bottom-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-bl-md shadow-sm`} style={`border-bottom-width: ${borderW}; border-left-width: ${borderW};`}></div>
-            <div class={`absolute bottom-0 right-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-br-md shadow-sm`} style={`border-bottom-width: ${borderW}; border-right-width: ${borderW};`}></div>
-        </div>
-    {/if}
+        {#if variant !== "small"}
+            <div class="absolute -inset-[3px] z-40 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100">
+                <div class={`absolute top-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tl-md shadow-sm`} style={`border-top-width: ${borderW}; border-left-width: ${borderW};`}></div>
+                <div class={`absolute top-0 right-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-tr-md shadow-sm`} style={`border-top-width: ${borderW}; border-right-width: ${borderW};`}></div>
+                <div class={`absolute bottom-0 left-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-bl-md shadow-sm`} style={`border-bottom-width: ${borderW}; border-left-width: ${borderW};`}></div>
+                <div class={`absolute bottom-0 right-0 ${cornerSize} border-[#FFF593] dark:border-[#FFD700] rounded-br-md shadow-sm`} style={`border-bottom-width: ${borderW}; border-right-width: ${borderW};`}></div>
+            </div>
+        {/if}
 
-    <div class="absolute inset-0 border-[2px] border-white dark:border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-100 opacity-0 group-hover:opacity-100"></div>
+        <div class="absolute inset-0 border-[2px] border-white dark:border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-100 opacity-0 group-hover:opacity-100"></div>
 
         <div class="
-        relative w-full h-full rounded-[6px] overflow-hidden transition-all duration-200
-        shadow-sm dark:shadow-sm
-        group-hover:shadow-md dark:group-hover:shadow-md
-        bg-gradient-to-b from-gray-50 to-gray-200 
-        group-hover:from-white group-hover:to-gray-100
-        dark:bg-[#2C2C2C] dark:bg-none
-        dark:group-hover:bg-[#353535]
-    ">
+            relative w-full h-full rounded-[6px] overflow-hidden transition-all duration-200
+            shadow-sm dark:shadow-sm
+            group-hover:shadow-md dark:group-hover:shadow-md
+            bg-gradient-to-b from-gray-50 to-gray-200 
+            group-hover:from-white group-hover:to-gray-100
+            dark:bg-[#2C2C2C] dark:bg-none
+            dark:group-hover:bg-[#353535]
+        ">
             
             <div class="absolute inset-0 {variant === 'default' ? 'bottom-[21%]' : 'bottom-0'}">
                 <Images
@@ -128,14 +125,8 @@
                     variant="operator-preview"
                     size="100%"
                     alt={operator.name}
-                    className="w-full h-full object-cover transition-all duration-300 {!hasOperator ? 'brightness-50 grayscale-[50%]' : ''}"
+                    className="w-full h-full object-cover transition-all duration-300 {!hasOperator && variant === 'default' ? 'brightness-50 grayscale-[50%]' : ''}"
                 />
-                
-                {#if isNew && hasOperator}
-                    <div class="absolute top-1 left-1 bg-red-500 text-white text-[9px] font-black px-1.5 py-0.5 rounded shadow-sm z-30 tracking-wider">
-                        NEW
-                    </div>
-                {/if}
 
                 {#if variant === "small" && !hideName}
                     <div class="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
@@ -163,8 +154,6 @@
                     </div>
                 {/if}
             </div>
-
-            
 
             {#if variant === "default"}
                 <div class="absolute bottom-[24px] w-full flex justify-center items-center gap-[-2px] z-20">
@@ -201,9 +190,10 @@
                     </div>
                     <div class="absolute bottom-0 left-0 w-full h-[7px]" style:background-color={rarityColor}></div>
                 </div>
+
                 {#if hasOperator}
-                <div class="absolute top-1 right-1.5 z-20 pointer-events-none drop-shadow-md shadow-black">
-                <svg 
+                    <div class="absolute top-1 right-1.5 z-20 pointer-events-none drop-shadow-md shadow-black">
+                        <svg 
                             width={variant === 'small' ? '18' : '34'} 
                             height={variant === 'small' ? '18' : '34'} 
                             viewBox="0 0 68 66" 
@@ -221,8 +211,8 @@
                                 />
                             {/each}
                         </svg>
-            </div>
-            {/if}
+                    </div>
+                {/if}
             {/if}
 
             {#if variant === "small" && !hideName}
@@ -232,6 +222,21 @@
                      </div>
                      <div class="h-[2px] w-full rounded-full opacity-90 shrink-0 shadow-sm" style:background-color={rarityColor}></div>
                  </div>
+            {/if}
+            {#if isNew && variant !== 'small'}
+                <div class="absolute right-0 mt-1 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm">
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    
+                    <div class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center">
+                        <div class="absolute left-[-4px] w-[8px] top-0 bottom-0"></div>
+                        
+                        <span class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase">
+                            NEW
+                        </span>
+                    </div>
+                </div>
             {/if}
         </div>
     </div>

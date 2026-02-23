@@ -86,7 +86,7 @@
                     class="absolute bottom-[8px] left-0 right-0 z-30 pointer-events-none flex justify-center px-1"
                 >
                     <div
-                        class="text-white text-[9px] font-bold text-center leading-none line-clamp-1 drop-shadow-md opacity-90"
+                        class="text-white text-[9px] mb-1 font-bold text-center leading-none line-clamp-1 drop-shadow-md opacity-90"
                     >
                         {$t(`weaponsList.${nameKey}`) || weapon.name}
                     </div>

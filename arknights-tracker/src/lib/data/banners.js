@@ -93,7 +93,7 @@ export const banners = [
     url: "https://x.com/AKEndfield/status/2012151008873582825?s=20",
     layer: 12,
     color: "#FF33CC",
-    iconPosition: 25,
+    iconPosition: 35,
     showOnMain: true
   },
   {

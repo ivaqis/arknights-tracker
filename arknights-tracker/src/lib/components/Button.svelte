@@ -71,7 +71,9 @@
   class="
     group relative flex items-center justify-center overflow-hidden transition-all active:scale-95
     {className}
-    {variant === 'round' ? 'rounded-full border-2 bg-white dark:bg-[#383838] h-12 px-6' : ''}
+    {variant === 'round'
+    ? 'rounded-full border-2 bg-white dark:bg-[#383838] h-12 px-6'
+    : ''}
     {variant === 'roundSmall'
     ? 'rounded-full border-2 bg-white dark:bg-[#383838] h-8 px-4 text-xs font-bold'
     : ''}
@@ -97,16 +99,22 @@
   {:else if variant === "black"}
     <div class="absolute inset-0 bg-[#3A3A3A] z-0"></div>
     <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#888888] z-20"></div>
-    <div class="absolute inset-0 z-0 pointer-events-none mix-blend-overlay dark:opacity-[0.2]">
+    <div
+      class="absolute inset-0 z-0 pointer-events-none mix-blend-overlay dark:opacity-[0.2]"
+    >
       {@html topo2Pattern}
     </div>
   {:else if isRound}
-    <div class="absolute right-0 top-0 bottom-0 w-3/4 z-0 pointer-events-none mask-linear-fade flex justify-end overflow-hidden rounded-r-full dark:opacity-[0.2]">
+    <div
+      class="absolute right-0 top-0 bottom-0 w-3/4 z-0 pointer-events-none mask-linear-fade flex justify-end overflow-hidden rounded-r-full dark:opacity-[0.2]"
+    >
       {@html roundBgPattern}
     </div>
   {:else if variant === "menuButton"}
     <div class="absolute inset-0 bg-[#2A2A2A] z-0"></div>
-    <div class="absolute right-0 top-0 bottom-0 w-3/4 z-0 pointer-events-none mask-linear-fade flex justify-end overflow-hidden rounded-r-full dark:opacity-[0.2]">
+    <div
+      class="absolute right-0 top-0 bottom-0 w-3/4 z-0 pointer-events-none mask-linear-fade flex justify-end overflow-hidden rounded-r-full dark:opacity-[0.2]"
+    >
       {@html topo2Pattern}
     </div>
     <div class="absolute left-0 top-0 bottom-0 w-[5px] bg-[#666] z-20"></div>
@@ -130,9 +138,9 @@
       </span>
     </div>
   {:else}
-    <div class="relative z-10 flex items-center w-full h-full pl-6 pr-4">
+    <div class="relative z-10 flex items-center w-full h-full pl-5 pr-3">
       <div
-        class="flex items-center justify-center w-8 h-8 mr-4 {variant ===
+        class="flex items-center justify-center w-8 h-8 mr-3  {variant ===
         'yellow'
           ? 'text-[#21272C]'
           : 'text-white'}"
@@ -140,12 +148,12 @@
         <slot name="icon" />
       </div>
       <div
-        class="h-6 w-px mx-2 {variant === 'yellow'
+        class="h-6 w-px mx-0.5 {variant === 'yellow'
           ? 'bg-[#21272C]/30'
           : 'bg-white/30'}"
       ></div>
       <span
-        class="ml-2 text-lg font-normal {variant === 'yellow'
+        class="ml-3 text-lg font-normal {variant === 'yellow'
           ? 'text-[#21272C]'
           : 'text-white'}"
       >
