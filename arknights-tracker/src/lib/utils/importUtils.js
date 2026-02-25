@@ -259,11 +259,19 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             });
 
             if (isFeatured) {
-                if (!isHardPityTriggered) { won5050++; total5050++; }
+                if (!isHardPityTriggered) { 
+                    won5050++; 
+                    total5050++; 
+                    pull.status = "won";
+                } else {
+                    pull.status = "guaranteed";
+                    pull.isGuaranteed = true;
+                }
                 rateUpCounter = 0;
                 if (pullTime >= mileageStart && pullTime <= mileageEnd) hasReceivedRateUp = true;
             } else {
                 total5050++;
+                pull.status = "lost";
             }
             
             currentPity6 = 0;

@@ -164,13 +164,11 @@
     .sort((a, b) => new Date(a.time) - new Date(b.time))
     .map((p) => {
       const normName = normalize(p.name);
-
       let itemId = normName;
       const itemData = lookupMap[normName];
       if (itemData?.id) itemId = itemData.id;
 
       let isWeapon = false;
-
       if (p.type === "weapon") {
         isWeapon = true;
       } else if (p.type === "character") {
@@ -194,6 +192,7 @@
         translationKey,
         isWeapon,
         isFree: p.isFree,
+        isGuaranteed: p.isGuaranteed || p.status === "guaranteed", 
       };
     });
 
@@ -486,7 +485,8 @@
     {#if icons.length > 0}
       <div class="flex flex-wrap gap-3 overflow-visible justify-start">
         {#each icons as icon}
-          <div class="inline-flex">
+          <div class="relative inline-flex">
+            
             <Tooltip text={$t(icon.translationKey) || icon.name}>
               <div
                 class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110
@@ -501,9 +501,7 @@
                     : ''}"
                 >
                   <div
-                    class="w-full h-full {icon.isWeapon
-                      ? 'scale-[1.45]'
-                      : ''} transition-transform"
+                    class="w-full h-full {icon.isWeapon ? 'scale-[1.45]' : ''} transition-transform"
                   >
                     <Images
                       id={icon.id}
@@ -540,6 +538,18 @@
                 {/if}
               </div>
             </Tooltip>
+
+            {#if icon.isGuaranteed}
+              <div class="absolute -top-0.5 -right-0.5 z-[50] pointer-events-auto">
+                <Tooltip textKey="status.guaranteed">
+                  <Icon
+                    name="guaranteed"
+                    class="w-5 h-5 stroke-[1.1px] text-[#D0926E] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)] hover:scale-110 transition-transform"
+                  />
+                </Tooltip>
+              </div>
+            {/if}
+
           </div>
         {/each}
       </div>

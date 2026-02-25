@@ -69,7 +69,7 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "28-11",
-    isNew: true
+    isNew: false
   },
   ardelia: {
     id: "ardelia",
