@@ -187,6 +187,9 @@
 
     $: bannerOptions = banners
         .filter((b) => {
+            const start = parseWithServerOffset(b.startTime);
+            if (start && start > now) return false;
+
             const bid = b.id.toLowerCase();
             const bType = b.type.toLowerCase();
             const sType = selectedType.toLowerCase();
