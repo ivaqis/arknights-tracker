@@ -395,70 +395,57 @@
             {/each}
         </div>
 
-        <div
-            class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm"
-        >
-            <div class="flex items-start gap-4">
-                <div class="mt-0.5 text-[#FACC15] shrink-0">
-                    <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                    </svg>
-                </div>
-                <div class="flex-1">
-                    <h3
-                        class="text-gray-800 dark:text-[#E0E0E0] font-bold text-sm uppercase tracking-wider mb-2"
-                    >
-                        {$t("import.faq_security_title") ||
-                            "FAQ: Безопасность аккаунта"}
-                    </h3>
+        <div class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm">
+    <div class="flex items-start gap-4">
+        <div class="mt-0.5 text-[#FACC15] shrink-0">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+        <div class="flex-1">
+            <h3 class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2">
+                {$t("import.faq_security_title") || "FAQ: Безопасность аккаунта"}
+            </h3>
 
-                    <p
-                        class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed mb-2"
-                    >
-                        {@html $t("import.faq_security_desc1") ||
-                            "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
-                    </p>
+            <div class="mb-4">
+                <h4 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm">
+                    {$t("import.faq_q1") || "Опасно ли использовать скрипты?"}
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed">
+                    {@html $t("import.faq_security_desc1") || "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
+                </p>
+            </div>
 
-                    <p
-                        class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed mb-4"
-                    >
-                        {@html $t("import.faq_security_desc2") ||
-                            '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
-                    </p>
+            <div class="mb-4">
+                <h4 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm">
+                    {$t("import.faq_q2") || "Опасен ли Goyfield.moe?"}
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed">
+                    {@html $t("import.faq_security_desc2") || '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
+                </p>
+            </div>
 
-                    <div
-                        class="bg-red-50 dark:bg-red-500/10 rounded-lg p-3 border border-red-100 dark:border-red-500/20"
-                    >
-                        <p
-                            class="text-xs font-bold text-red-600 dark:text-red-400 flex items-start gap-2 m-0"
-                        >
-                            <span class="text-base leading-none text-red-600 dark:text-red-400">
-                                <Icon name=warning />
-                            </span>
-                            <span>
-                                {@html $t(
-                                    "import.faq_security_warning",
-                                ).replace(
-                                    "{link}",
-                                    "https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/",
-                                ) ||
-                                    `Если вы пользовались сайтом <strong>Endfieldrecords</strong>, то немедленно поменяйте пароль в игре и проследуйте <a href="#" target="_blank" class="underline">гайду на Reddit</a> для проверки своего компьютера.`}
-                            </span>
-                        </p>
-                    </div>
-                </div>
+            <div class="mb-5 text-sm text-gray-500 dark:text-[#999] bg-gray-50 dark:bg-[#2C2C2C] border-l-2 border-[#FACC15] p-3 rounded-r-lg">
+                <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{$t("import.note") || "Note"}:</span> 
+                {@html $t("import.faq_security_desc3") || "Для запуска скриптов PowerShell <strong>не требуется</strong> запуск PowerShell с правами администратора."}
+            </div>
+
+            <div class="bg-red-50 dark:bg-red-500/10 rounded-lg p-3 border border-red-100 dark:border-red-500/20">
+                <p class="text-xs font-bold text-red-600 dark:text-red-400 flex items-start gap-2 m-0">
+                    <span class="text-base leading-none text-red-600 dark:text-red-400 mt-0.5">
+                        <Icon name="warning" class="w-4 h-4" />
+                    </span>
+                    <span class="leading-relaxed">
+                        {@html $t("import.faq_security_warning").replace(
+                            "{link}",
+                            "https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/"
+                        ) || `Если вы пользовались сайтом <strong>Endfieldrecords</strong>, то немедленно поменяйте пароль в игре и проследуйте <a href="https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/" target="_blank" class="underline">гайду на Reddit</a> для проверки своего компьютера.`}
+                    </span>
+                </p>
             </div>
         </div>
+    </div>
+</div>
         {#if platformTab === "android"}
             <div
                 class="mb-4 p-4 bg-yellow-50 dark:bg-yellow-600/30 border border-yellow-100 dark:border-yellow-500/20 rounded-lg flex items-start gap-3 transition-colors"
