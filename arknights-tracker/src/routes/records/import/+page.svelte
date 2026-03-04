@@ -395,6 +395,88 @@
             {/each}
         </div>
 
+        <div
+            class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm"
+        >
+            <div class="flex items-start gap-4">
+                <div class="mt-0.5 text-[#FACC15] shrink-0">
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <h3
+                        class="text-gray-800 dark:text-[#E0E0E0] font-bold text-sm uppercase tracking-wider mb-2"
+                    >
+                        {$t("import.faq_security_title") ||
+                            "FAQ: Безопасность аккаунта"}
+                    </h3>
+
+                    <p
+                        class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed mb-2"
+                    >
+                        {@html $t("import.faq_security_desc1") ||
+                            "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
+                    </p>
+
+                    <p
+                        class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed mb-4"
+                    >
+                        {@html $t("import.faq_security_desc2") ||
+                            '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
+                    </p>
+
+                    <div
+                        class="bg-red-50 dark:bg-red-500/10 rounded-lg p-3 border border-red-100 dark:border-red-500/20"
+                    >
+                        <p
+                            class="text-xs font-bold text-red-600 dark:text-red-400 flex items-start gap-2 m-0"
+                        >
+                            <span class="text-base leading-none text-red-600 dark:text-red-400">
+                                <Icon name=warning />
+                            </span>
+                            <span>
+                                {@html $t(
+                                    "import.faq_security_warning",
+                                ).replace(
+                                    "{link}",
+                                    "https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/",
+                                ) ||
+                                    `Если вы пользовались сайтом <strong>Endfieldrecords</strong>, то немедленно поменяйте пароль в игре и проследуйте <a href="#" target="_blank" class="underline">гайду на Reddit</a> для проверки своего компьютера.`}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {#if platformTab === "android"}
+            <div
+                class="mb-4 p-4 bg-yellow-50 dark:bg-yellow-600/30 border border-yellow-100 dark:border-yellow-500/20 rounded-lg flex items-start gap-3 transition-colors"
+            >
+                <div
+                    class="text-yellow-600 dark:text-yellow-400 mt-0.5 flex-shrink-0"
+                >
+                    <Icon name="info" style="width: 20px; height: 20px;" />
+                </div>
+
+                <div
+                    class="text-sm text-red-900 dark:text-red-100 leading-relaxed font-medium"
+                >
+                    {@html $t("import.android_note")}
+                </div>
+            </div>
+        {/if}
+
         <div class="ml-2 pt-2">
             {#if platformTab === "ios"}
                 {#each [{ text: $t("import.ios_step1") }, { text: $t("import.ios_step2") }, { text: $t("import.ios_step3"), subList: [$t("import.ios_step3_1"), $t("import.ios_step3_2"), $t("import.ios_step3_3")] }, { text: $t("import.ios_step4") }, { text: $t("import.ios_step5") }, { text: $t("import.ios_step6") }, { text: $t("import.ios_step7") }, { text: $t("import.ios_step8") }, { text: $t("import.ios_step9") }, { text: $t("import.ios_step10") }, { text: $t("import.ios_step11") }] as step, i}
@@ -438,22 +520,6 @@
                     <div class="mb-6"></div>
                 </div>
             {:else if platformTab === "android"}
-                <div
-                    class="mb-8 p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/50 rounded-lg flex items-start gap-3 transition-colors"
-                >
-                    <div
-                        class="text-red-500 dark:text-red-400 mt-0.5 flex-shrink-0"
-                    >
-                        <Icon name="info" style="width: 20px; height: 20px;" />
-                    </div>
-
-                    <div
-                        class="text-sm text-red-900 dark:text-red-100 leading-relaxed font-medium"
-                    >
-                        {@html $t("import.android_note")}
-                    </div>
-                </div>
-
                 {#each [{ text: $t("import.android_s1") }, { text: $t("import.android_s2") }, { text: $t("import.android_s3"), subList: [$t("import.android_s3_sub1"), $t("import.android_s3_sub2"), $t("import.android_s3_sub3")] }, { text: $t("import.android_s4") }, { text: $t("import.android_s5") }, { text: $t("import.android_s6") }, { text: $t("import.android_s7") }, { text: $t("import.android_s8") }, { text: $t("import.android_s9") }, { text: $t("import.android_s10") }] as step, i}
                     <div
                         class="relative dark:border-[#FDFD1F]/50 border-l-2 border-gray-200 pb-10 pl-10 last:border-transparent"
@@ -1007,6 +1073,16 @@
         </div>
     </div>
 </div>
+<ConfirmationModal
+    isOpen={isDeleteModalOpen}
+    title={$t("import.delete_token_title") || "Delete Token"}
+    description={$t("import.delete_confirm") ||
+        "Are you sure you want to delete this saved token?"}
+    confirmText={$t("settings.account.delete") || "Delete"}
+    isDestructive={true}
+    on:confirm={confirmDeleteToken}
+    on:close={cancelDeleteToken}
+/>
 
 <style>
     .custom-tab-scroll {
@@ -1042,12 +1118,3 @@
         background-color: #525252;
     }
 </style>
-<ConfirmationModal
-    isOpen={isDeleteModalOpen}
-    title={$t("import.delete_token_title") || "Delete Token"}
-    description={$t("import.delete_confirm") || "Are you sure you want to delete this saved token?"}
-    confirmText={$t("settings.account.delete") || "Delete"}
-    isDestructive={true}
-    on:confirm={confirmDeleteToken}
-    on:close={cancelDeleteToken}
-/>

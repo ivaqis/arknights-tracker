@@ -2414,4 +2414,32 @@
             stroke-width="2"
         />
     </svg>
+{:else if name == "warning"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g clip-path="url(#clip0_2098_80896)">
+            <path
+                d="M1.7666 21L12 3.94433L22.2334 21L1.7666 21Z"
+                stroke="currentColor"
+                stroke-width="2"
+            />
+            <path
+                d="M12 10L12 15M12 18L12 16.5"
+                stroke="currentColor"
+                stroke-width="2"
+            />
+        </g>
+        <defs>
+            <clipPath id="clip0_2098_80896">
+                <rect width="24" height="24" fill="currentColor" />
+            </clipPath>
+        </defs>
+    </svg>
 {/if}

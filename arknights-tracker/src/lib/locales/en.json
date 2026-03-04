@@ -127,6 +127,10 @@
       "error_failed": "Error loading. The token may have expired.",
       "success": "Data successfully imported!"
     },
+    "faq_security_title": "FAQ: Account Security",
+"faq_security_desc1": "Sharing authorization tokens with third-party sites and executing PowerShell scripts always carries risks.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong> never saves your personal information, such as tokens and links. Your token is processed solely to fetch pulls and is never saved. If you have any concerns about the PowerShell script, use the \"PC 2\" method, which retrieves the token using built-in PowerShell tools via regex.",
+"faq_security_warning": "If you used the <strong>Endfieldrecords</strong> site, change your in-game password immediately and follow the <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit guide</a> to check your computer.",
     "description": "Upload a JSON file with your gacha history.",
     "format": "(Currently only Genshin-like API response format is supported).",
     "button": "Choose JSON file",

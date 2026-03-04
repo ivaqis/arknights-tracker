@@ -127,6 +127,10 @@
       "error_failed": "Ladefehler. Der Token ist möglicherweise abgelaufen.",
       "success": "Daten erfolgreich importiert!"
     },
+    "faq_security_title": "FAQ: Kontosicherheit",
+"faq_security_desc1": "Die Weitergabe von Autorisierungs-Token an Drittanbieter-Websites und die Ausführung von PowerShell-Skripten bergen immer Risiken.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong> speichert niemals Ihre persönlichen Daten wie Token und Links. Ihr Token wird nur verarbeitet, um Züge abzurufen, und wird niemals gespeichert. Wenn Sie Bedenken bezüglich des PowerShell-Skripts haben, verwenden Sie die Methode „PC 2“, die das Token mit integrierten PowerShell-Tools über Regex abruft.",
+"faq_security_warning": "Wenn Sie die Website <strong>Endfieldrecords</strong> genutzt haben, ändern Sie sofort Ihr In-Game-Passwort und folgen Sie der <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit-Anleitung</a>, um Ihren Computer zu überprüfen.",
     "description": "Lade eine JSON-Datei mit deinem Gacha-Verlauf hoch.",
     "format": "(Derzeit wird nur das Genshin-ähnliche API-Antwortformat unterstützt).",
     "button": "JSON-Datei auswählen",

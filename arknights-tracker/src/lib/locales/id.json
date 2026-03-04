@@ -127,6 +127,10 @@
       "error_failed": "Gagal memuat. Token mungkin sudah kedaluwarsa.",
       "success": "Data berhasil diimpor!"
     },
+    "faq_security_title": "FAQ: Keamanan Akun",
+"faq_security_desc1": "Berbagi token otorisasi dengan situs pihak ketiga dan mengeksekusi skrip PowerShell selalu membawa risiko.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong> tidak pernah menyimpan informasi pribadi Anda, seperti token dan tautan. Token Anda hanya diproses untuk mengambil data dan tidak pernah disimpan. Jika Anda memiliki kekhawatiran tentang skrip PowerShell, gunakan metode \"PC 2\", yang mengambil token menggunakan alat bawaan PowerShell melalui regex.",
+"faq_security_warning": "Jika Anda pernah menggunakan situs <strong>Endfieldrecords</strong>, segera ganti kata sandi dalam game Anda dan ikuti <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">panduan Reddit</a> untuk memeriksa komputer Anda.",
     "description": "Unggah file JSON dengan riwayat gacha Anda.",
     "format": "(Saat ini hanya format respons API seperti Genshin yang didukung).",
     "button": "Pilih file JSON",

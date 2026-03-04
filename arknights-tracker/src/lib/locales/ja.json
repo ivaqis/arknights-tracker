@@ -127,6 +127,10 @@
       "error_failed": "読み込みエラー。トークンの有効期限が切れている可能性があります。",
       "success": "データのインポートに成功しました！"
     },
+    "faq_security_title": "FAQ: アカウントのセキュリティ",
+"faq_security_desc1": "サードパーティのサイトと認証トークンを共有したり、PowerShellスクリプトを実行したりすることには常にリスクが伴います。",
+"faq_security_desc2": "<strong>Goyfield.moe</strong>は、トークンやリンクなどの個人情報を一切保存しません。トークンは履歴の取得にのみ処理され、保存されることはありません。PowerShellスクリプトに懸念がある場合は、正規表現を介してPowerShellの組み込みツールでトークンを取得する「PC 2」メソッドを使用してください。",
+"faq_security_warning": "<strong>Endfieldrecords</strong>のサイトを使用したことがある場合は、すぐにゲーム内のパスワードを変更し、<a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Redditのガイド</a>に従ってコンピュータを確認してください。",
     "description": "ガチャ履歴を含むJSONファイルをアップロードしてください。",
     "format": "（現在は原神のようなAPIレスポンス形式のみサポートしています）。",
     "button": "JSONファイルを選択",

@@ -127,6 +127,10 @@
       "error_failed": "Lỗi tải dữ liệu. Token có thể đã hết hạn.",
       "success": "Nhập dữ liệu thành công!"
     },
+    "faq_security_title": "FAQ: Bảo mật tài khoản",
+"faq_security_desc1": "Việc chia sẻ token xác thực với các trang web của bên thứ ba và thực thi tập lệnh PowerShell luôn tiềm ẩn rủi ro.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong> không bao giờ lưu thông tin cá nhân của bạn, chẳng hạn như token và liên kết. Token của bạn chỉ được xử lý để lấy dữ liệu và không bao giờ được lưu. Nếu bạn có bất kỳ lo ngại nào về tập lệnh PowerShell, hãy sử dụng phương pháp \"PC 2\", phương pháp này sẽ lấy token bằng các công cụ tích hợp sẵn của PowerShell thông qua regex.",
+"faq_security_warning": "Nếu bạn đã sử dụng trang web <strong>Endfieldrecords</strong>, hãy đổi mật khẩu trong game ngay lập tức và làm theo <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">hướng dẫn trên Reddit</a> để kiểm tra máy tính của bạn.",
     "description": "Tải lên tệp JSON chứa lịch sử gacha của bạn.",
     "format": "(Hiện tại chỉ hỗ trợ định dạng phản hồi API kiểu Genshin).",
     "button": "Chọn tệp JSON",

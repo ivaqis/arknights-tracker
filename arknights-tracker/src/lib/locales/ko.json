@@ -127,6 +127,10 @@
       "error_failed": "로드 오류. 토큰이 만료되었을 수 있습니다.",
       "success": "데이터를 성공적으로 가져왔습니다!"
     },
+    "faq_security_title": "FAQ: 계정 보안",
+"faq_security_desc1": "타사 사이트와 인증 토큰을 공유하고 PowerShell 스크립트를 실행하는 것은 항상 위험을 수반합니다.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong>는 토큰 및 링크와 같은 개인 정보를 절대 저장하지 않습니다. 귀하의 토큰은 뽑기 기록을 가져오는 데에만 처리되며 절대 저장되지 않습니다. PowerShell 스크립트가 우려되는 경우 정규식을 통해 PowerShell 내장 도구로 토큰을 가져오는 \"PC 2\" 방법을 사용하세요.",
+"faq_security_warning": "<strong>Endfieldrecords</strong> 사이트를 이용하신 경우, 즉시 게임 내 비밀번호를 변경하고 <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit 가이드</a>에 따라 컴퓨터를 점검하시기 바랍니다.",
     "description": "가챠 기록이 담긴 JSON 파일을 업로드하세요.",
     "format": "(현재는 원신 API 응답 형식만 지원합니다).",
     "button": "JSON 파일 선택",

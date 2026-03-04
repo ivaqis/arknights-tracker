@@ -127,6 +127,10 @@
       "error_failed": "載入失敗。Token 可能已過期。",
       "success": "資料匯入成功！"
     },
+    "faq_security_title": "FAQ: 帳號安全",
+"faq_security_desc1": "與第三方網站共用授權權杖和執行PowerShell腳本始終存在風險。",
+"faq_security_desc2": "<strong>Goyfield.moe</strong>從不保存您的權杖和連結等個人資訊。您的權杖僅用於獲取抽卡紀錄，絕不會被保存。如果您對PowerShell腳本有任何疑慮，請使用「PC 2」方法，該方法透過正規表示式使用PowerShell內建工具獲取權杖。",
+"faq_security_warning": "如果您使用過<strong>Endfieldrecords</strong>網站，請立即更改遊戲內密碼，並按照<a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit指南</a>檢查您的電腦。",
     "description": "上傳包含您抽卡記錄的 JSON 檔案。",
     "format": "（目前僅支援類似原神 API 回應格式）。",
     "button": "選擇 JSON 檔案",

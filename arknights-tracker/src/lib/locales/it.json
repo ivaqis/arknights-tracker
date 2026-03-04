@@ -127,6 +127,10 @@
       "error_failed": "Errore di caricamento. Il token potrebbe essere scaduto.",
       "success": "Dati importati con successo!"
     },
+    "faq_security_title": "FAQ: Sicurezza dell'account",
+"faq_security_desc1": "La condivisione di token di autorizzazione con siti di terze parti e l'esecuzione di script PowerShell comportano sempre dei rischi.",
+"faq_security_desc2": "<strong>Goyfield.moe</strong> non salva mai le tue informazioni personali, come token e link. Il tuo token viene elaborato solo per recuperare i tiri e non viene mai salvato. Se hai dubbi sullo script PowerShell, utilizza il metodo \"PC 2\", che recupera il token utilizzando gli strumenti integrati di PowerShell tramite regex.",
+"faq_security_warning": "Se hai utilizzato il sito <strong>Endfieldrecords</strong>, cambia immediatamente la tua password di gioco e segui la <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">guida su Reddit</a> per controllare il tuo computer.",
     "description": "Carica un file JSON con la tua cronologia gacha.",
     "format": "(Attualmente è supportato solo il formato di risposta API simile a Genshin).",
     "button": "Scegli file JSON",
