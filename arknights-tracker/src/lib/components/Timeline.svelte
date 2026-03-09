@@ -1,6 +1,6 @@
 <!-- src/lib/components/Timeline.svelte -->
 <script>
-    import { onMount, onDestroy } from "svelte";
+    import { onMount, onDestroy, tick } from "svelte";
     import { t } from "$lib/i18n";
     import { browser } from "$app/environment";
     import { rawEvents } from "$lib/data/timeline.js";
@@ -31,31 +31,46 @@
         server: { name: serverName, offset: serverOffset },
     };
 
-    let selectedTimezone = "local";
-    let showTimezoneMenu = false;
+    let showServerTime = false;
+    let isReadyForAnimation = false;
+    $: selectedTimezone = showServerTime ? "server" : "local";
 
-    $: allEvents = [serverOffset, ...rawEvents]
-        .slice(1)
-        .map((e) => ({
-            ...e,
-            originalType: e.type,
-            type: e.type || "ingame",
-            realStartTime: parseServerDate(e.startTime),
-            realEndTime: e.endTime ? parseServerDate(e.endTime) : null,
-        }))
-        .concat(
-            banners
-                .filter((b) => b.endTime !== null)
-                .map((b) => ({
+    $: allEvents = (() => {
+        const isAsia = currentServerId === "2";
+
+        const mappedEvents = rawEvents.map((e) => {
+            const startStr = isAsia && e.startTimeAsia ? e.startTimeAsia : e.startTime;
+            const endStr = isAsia && e.endTimeAsia ? e.endTimeAsia : e.endTime;
+            
+            return {
+                ...e,
+                originalType: e.type,
+                type: e.type || "ingame",
+                realStartTime: parseServerDate(startStr),
+                realEndTime: endStr ? parseServerDate(endStr) : null,
+            };
+        });
+
+        const mappedBanners = banners
+            .filter((b) => {
+                const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
+                return endStr !== null;
+            })
+            .map((b) => {
+                const startStr = isAsia && b.startTimeAsia ? b.startTimeAsia : b.startTime;
+                const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
+
+                return {
                     ...b,
                     originalType: b.type,
                     type: "banner",
                     showOnMain: b.showOnMain,
-                    realStartTime: parseServerDate(b.startTime), // И здесь
-                    realEndTime: b.endTime ? parseServerDate(b.endTime) : null,
-                })),
-        )
-        .sort((a, b) => {
+                    realStartTime: parseServerDate(startStr),
+                    realEndTime: endStr ? parseServerDate(endStr) : null,
+                };
+            });
+
+        return [...mappedEvents, ...mappedBanners].sort((a, b) => {
             const timeA = a.realStartTime ? a.realStartTime.getTime() : 0;
             const timeB = b.realStartTime ? b.realStartTime.getTime() : 0;
 
@@ -67,12 +82,14 @@
 
             return (a.id || "").localeCompare(b.id || "");
         });
+    })();
 
     let processedEvents = [];
     let separatorLines = [];
     let maxLayerIndex = 0;
 
     $: {
+        const currentTz = selectedTimezone;
         const maxGapMs = 2 * 60 * 60 * 1000;
         const groupedByLayer = {};
         const tempEvents = allEvents.map((e) => ({
@@ -103,7 +120,7 @@
                     current.connectRight = true;
                     next.connectLeft = true;
 
-                    const posX = getPositionX(current.realEndTime);
+                    const posX = getPositionX(current.realEndTime, currentTz);
 
                     lines.push({
                         left: posX,
@@ -197,16 +214,16 @@
 
     const totalWidth = days.length * DAY_WIDTH;
 
-    function getPositionX(dateInput) {
-        const displayDate = convertTime(dateInput, selectedTimezone);
+    function getPositionX(dateInput, tz = selectedTimezone) {
+        const displayDate = convertTime(dateInput, tz);
         const diffTime = displayDate.getTime() - startDate.getTime();
         return (diffTime / (1000 * 60 * 60 * 24)) * DAY_WIDTH;
     }
 
-    function getWidth(startInput, endInput) {
+    function getWidth(startInput, endInput, tz = selectedTimezone) {
         if (!startInput || !endInput) return DAY_WIDTH;
-        const start = convertTime(startInput, selectedTimezone);
-        const end = convertTime(endInput, selectedTimezone);
+        const start = convertTime(startInput, tz);
+        const end = convertTime(endInput, tz);
         const diff = end - start;
         return Math.max(
             (diff / (1000 * 60 * 60 * 24)) * DAY_WIDTH,
@@ -237,21 +254,38 @@
         return t("timer.starts_in_m", { m: Math.max(1, m) });
     }
 
-    $: currentTimeX = getPositionX(now);
+    $: currentTimeX = getPositionX(now, selectedTimezone);
     $: currentTimeData = formatCurrentTime(now, selectedTimezone);
 
     function formatCurrentTime(date, timezoneKey) {
-        const adjustedDate = convertTime(date, timezoneKey);
-        const dd = String(adjustedDate.getDate()).padStart(2, "0");
-        const dayKey = adjustedDate
-            .toLocaleString("en-US", { weekday: "short" })
-            .toLowerCase();
-        const hh = String(adjustedDate.getHours()).padStart(2, "0");
-        const mm = String(adjustedDate.getMinutes()).padStart(2, "0");
-        const ss = String(adjustedDate.getSeconds()).padStart(2, "0");
-        const time = `${hh}:${mm}:${ss}`;
+        let adjustedDate = date;
 
-        return { dd, dayKey, time };
+        if (timezoneKey === "server") {
+            const shiftedMs = date.getTime() + (serverOffset * 3600000);
+            adjustedDate = new Date(shiftedMs);
+            
+            const dd = String(adjustedDate.getUTCDate()).padStart(2, "0");
+            const dayKey = adjustedDate
+                .toLocaleString("en-US", { weekday: "short", timeZone: "UTC" })
+                .toLowerCase();
+            const hh = String(adjustedDate.getUTCHours()).padStart(2, "0");
+            const mm = String(adjustedDate.getUTCMinutes()).padStart(2, "0");
+            const ss = String(adjustedDate.getUTCSeconds()).padStart(2, "0");
+            const time = `${hh}:${mm}:${ss}`;
+
+            return { dd, dayKey, time };
+        } else {
+            const dd = String(adjustedDate.getDate()).padStart(2, "0");
+            const dayKey = adjustedDate
+                .toLocaleString("en-US", { weekday: "short" })
+                .toLowerCase();
+            const hh = String(adjustedDate.getHours()).padStart(2, "0");
+            const mm = String(adjustedDate.getMinutes()).padStart(2, "0");
+            const ss = String(adjustedDate.getSeconds()).padStart(2, "0");
+            const time = `${hh}:${mm}:${ss}`;
+
+            return { dd, dayKey, time };
+        }
     }
 
     let headerContainer;
@@ -393,16 +427,26 @@
     onMount(() => {
         if (browser) {
             currentServerId = localStorage.getItem("ark_server_id") || "3";
-
+            
+            const savedTimePref = localStorage.getItem("show_server_time");
+            if (savedTimePref !== null) {
+                showServerTime = savedTimePref === "true";
+            }
+            
             setTimeout(() => {
                 if (bodyContainer) {
                     bodyContainer.scrollLeft = currentTimeX - 300;
                 }
             }, 100);
 
+            setTimeout(() => {
+                isReadyForAnimation = true;
+            }, 500);
+
             timerInterval = setInterval(() => {
                 now = new Date();
             }, 1000);
+            
             document.addEventListener("click", handleClickOutside);
         }
     });
@@ -518,35 +562,6 @@
     class="w-full max-w-full flex flex-col relative overflow-hidden"
     style="height: {TIMELINE_HEIGHT};"
 >
-    {#if showTimezoneMenu}
-        <div
-            data-timezone-menu
-            class="absolute bg-[#21272C] rounded-lg shadow-xl border border-gray-600 py-1 w-[120px] z-[100]"
-            style="
-        left: {currentTimeX - scrollLeft}px; 
-        top: 60px;
-        transform: translateX(-50%);
-    "
-        >
-            {#each Object.entries(TIMEZONES) as [key, tz]}
-                <button
-                    on:click={() => {
-                        selectedTimezone = key;
-                        showTimezoneMenu = false;
-                    }}
-                    class="w-full px-2 py-1.5 text-left text-xs transition-colors {selectedTimezone ===
-                    key
-                        ? 'bg-[#FACC15] text-[#21272C] font-bold'
-                        : 'text-gray-300 hover:bg-gray-700'}"
-                >
-                    {tz.name}
-                    {#if selectedTimezone === key}
-                        <span class="float-right text-[10px]">✓</span>
-                    {/if}
-                </button>
-            {/each}
-        </div>
-    {/if}
     <!-- 1. ХЕДЕР -->
     <div
         class="absolute left-0 right-0 z-40 pointer-events-none overflow-hidden max-w-full"
@@ -582,7 +597,9 @@
                     >
                         <div
                             class="relative pointer-events-auto"
-                            style="transform: translateX({currentTimeX}px) translateX(-50%); transition: transform 1000ms linear;"
+                            style="transform: translateX({currentTimeX}px) translateX(-50%); transition: {isReadyForAnimation
+                                ? 'transform 200ms linear'
+                                : 'none'};"
                         >
                             <button
                                 data-timezone-badge
@@ -640,8 +657,10 @@
             </div>
 
             <div
-                class="absolute top-0 bottom-0 w-[4px] bg-[#FACC15] z-30 mt-1 pointer-events-none transition-all duration-1000 ease-linear transform -translate-x-1/2"
-                style="left: {currentTimeX}px;"
+                class="absolute top-0 bottom-0 w-[4px] bg-[#FACC15] z-30 mt-1 pointer-events-none transform -translate-x-1/2"
+                style="left: {currentTimeX}px; transition: {isReadyForAnimation
+                    ? 'left 200ms linear'
+                    : 'none'};"
             ></div>
 
             <div
@@ -667,16 +686,21 @@
                     {@const badge = getEventBadge(event)}
 
                     <div
-                        class="absolute transition-all group"
+                        class="absolute group"
                         style="
-            left: {getPositionX(event.realStartTime)}px;
-            width: {getWidth(event.realStartTime, event.realEndTime)}px;
-            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) +
+        left: {getPositionX(event.realStartTime, selectedTimezone)}px;
+        width: {getWidth(
+                            event.realStartTime,
+                            event.realEndTime,
+                            selectedTimezone,
+                        )}px;
+        top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) +
                             HEADER_HEIGHT_PX +
                             EVENT_TOP_OFFSET}px; 
-            height: {ROW_HEIGHT}px;
-            z-index: 20;
-        "
+        height: {ROW_HEIGHT}px;
+        z-index: 20;
+        transition: left 200ms ease, width 200ms ease;
+    "
                     >
                         <button
                             on:click={() => openEvent(event)}

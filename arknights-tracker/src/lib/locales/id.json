@@ -14,6 +14,12 @@
     "theme_dark": "Gelap",
     "theme_light": "Terang"
   },
+  "footer": {
+    "devResources": "Sumber Daya Pengembang",
+    "officialResources": "Sumber Daya Resmi",
+    "privacyPolicy": "Kebijakan Privasi",
+    "specialThanks": "Ucapan Terima Kasih"
+  },
   "page": {
     "title": "Catatan Headhunting",
     "importBtn": "Impor",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "Pilih server",
-      "hint": "Server yang dipilih mempengaruhi tampilan waktu di situs web"
+      "hint": "Server yang dipilih mempengaruhi tampilan waktu di situs web",
+      "show_server_time": "Tampilkan waktu server",
+      "show_server_time_desc": "Gunakan waktu server (Global: UTC-5 / Asia: UTC+8) untuk jadwal banner dan event alih-alih waktu lokal perangkat."
     },
     "cloud": {
       "title": "Sinkronisasi Cloud",

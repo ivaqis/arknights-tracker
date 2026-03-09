@@ -5,6 +5,21 @@
     "description": "Advanced Wish Tracker for Arknights: Endfield. Track your pull history, calculate pity counters, and predict your next guaranteed operator or weapon.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд мое, Гойфилд, Goyfield"
   },
+  "privacy": {
+    "title": "Privacy Policy",
+    "analytics_title": "Privacy & Analytics",
+    "analytics_text1": "We use Firebase Analytics (Google Analytics) to collect traffic and performance metrics to improve Goyfield.moe.",
+    "analytics_text2": "Goyfield.moe uses localStorage technology to store your user preferences (e.g., selected server, theme, language) and pull history data locally on your device.",
+    "tracker_title": "Pull Tracker",
+    "tracker_text1": "By default, all imported pull data is saved locally on your device. Your import link (containing a temporary token) is sent to the Goyfield.moe backend server solely to connect with the official game API and retrieve your history. The link itself, tokens, or any personal account data are not shared with third parties and are not stored on the server in plain text.",
+    "tracker_text2": "In the event of a system error during import, the link may be temporarily saved in the administrator logs to identify and fix bugs.",
+    "global_title": "Global Statistics",
+    "global_text": "When you import your history, certain anonymized information about your pulls (item type, rarity, time, banner) is saved on our server. This data is linked to an anonymous generated identifier (UID) and is used to power the \"Global Statistics\" section.",
+    "cloud_title": "Cloud Sync",
+    "cloud_text1": "Goyfield.moe provides the option to link your Google account to create cloud backups of your pull data. Your username and email address are displayed solely within the settings interface and are not shared with third parties.",
+    "cloud_text2": "Unlike local storage, when using this feature, your pull data is securely stored in our cloud database (Firebase). You can sign out of your account at any time via Settings.",
+    "close": "Close"
+  },
   "sidebar": {
     "home": "Home",
     "records": "Headhunting Records",
@@ -13,6 +28,12 @@
     "operators": "Operators",
     "theme_dark": "Dark",
     "theme_light": "Light"
+  },
+  "footer": {
+    "devResources": "Developer Resources",
+    "officialResources": "Official Resources",
+    "privacyPolicy": "Privacy Policy",
+    "specialThanks": "Special Thanks"
   },
   "page": {
     "title": "Headhunting Records",
@@ -320,7 +341,16 @@
     "delverOfTheCryptic": "Delver of the Cryptic",
     "spectralSplendorTrialSignIn": "Spectral Splendor Sign-In",
     "sanityDiscount": "Sanity Discount",
-    "qingboRising": "Qingbo Rising Sign-In"
+    "qingboRising": "Qingbo Rising Sign-In",
+    "quietlyFlowsTheSpring": "Quietly Flows the Spring",
+    "supplyExplorationDay": "Supply Exploration Day",
+    "cleanseAndRise": "Cleanse and Rise",
+    "survivalTraning": "Survival Traning",
+    "searingScars": "Umbral Monument «Searing Scars»",
+    "scorchMask": "Umbral Monument «Scorch Mask»",
+    "etchspaceSalvageZone4": "Etchspace Salvage «Aberrant Zone 4»",
+    "gentlyFlowsQinbo": "Gently Flows Qinbo Sign-In",
+    "pearlOfThePack": "Pearl of the Pack Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -589,7 +619,9 @@
     },
     "server": {
       "title": "Select server",
-      "hint": "The selected server affects the time display on the website"
+      "hint": "The selected server affects the time display on the website",
+      "show_server_time": "Display server time",
+      "show_server_time_desc": "Use server time (Global: UTC-5 / Asia: UTC+8) for banner and event schedules instead of the device's local time"
     },
     "cloud": {
       "title": "Cloud Synchronization",

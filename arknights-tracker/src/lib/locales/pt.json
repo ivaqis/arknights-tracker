@@ -14,6 +14,12 @@
     "theme_dark": "Escuro",
     "theme_light": "Claro"
   },
+  "footer": {
+    "devResources": "Recursos do Desenvolvedor",
+    "officialResources": "Recursos Oficiais",
+    "privacyPolicy": "Política de Privacidade",
+    "specialThanks": "Agradecimentos Especiais"
+  },
   "page": {
     "title": "Registros de Busca",
     "importBtn": "Importar",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "Selecionar servidor",
-      "hint": "O servidor selecionado afeta a exibição da hora no site"
+      "hint": "O servidor selecionado afeta a exibição da hora no site",
+      "show_server_time": "Exibir hora do servidor",
+      "show_server_time_desc": "Use a hora do servidor (Global: UTC-5 / Ásia: UTC+8) para horários de banners e eventos em vez da hora local do dispositivo."
     },
     "cloud": {
       "title": "Sincronização na Nuvem",

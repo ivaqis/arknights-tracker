@@ -14,15 +14,32 @@ const sortPulls = (a, b) => {
     return (a.seqId || 0) - (b.seqId || 0);
 };
 
-function getServerOffset(specificServerId) {
+// 1. Единая функция для определения ID сервера (с фоллбеком на localStorage)
+function resolveServerId(specificServerId) {
     let sid = specificServerId;
-
     if (!sid && typeof window !== 'undefined') {
         sid = localStorage.getItem("ark_server_id");
     }
-    if (String(sid) === "2") return 8; 
-    
+    return String(sid);
+}
+
+// 2. Используем resolveServerId
+function getServerOffset(specificServerId) {
+    const sid = resolveServerId(specificServerId);
+    if (sid === "2") return 8; 
     return -5; 
+}
+
+// 3. НОВЫЙ ПОМОЩНИК: Умное извлечение правильных дат баннера
+function getBannerDates(banner, specificServerId) {
+    if (!banner) return { startStr: null, endStr: null };
+    const sid = resolveServerId(specificServerId);
+    const isAsia = sid === "2";
+    
+    const startStr = (isAsia && banner.startTimeAsia) ? banner.startTimeAsia : banner.startTime;
+    const endStr = (isAsia && banner.endTimeAsia) ? banner.endTimeAsia : banner.endTime;
+    
+    return { startStr, endStr };
 }
 
 function parseDateWithServer(dateStr, serverId) {
@@ -49,8 +66,10 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
     }
 
     const candidates = banners.filter(b => {
-        const start = parseDateWithServer(b.startTime, serverId).getTime();
-        const end = b.endTime ? parseDateWithServer(b.endTime, serverId).getTime() : Infinity;
+        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ
+        const dates = getBannerDates(b, serverId);
+        const start = parseDateWithServer(dates.startStr, serverId).getTime();
+        const end = dates.endStr ? parseDateWithServer(dates.endStr, serverId).getTime() : Infinity;
         
         if (time < (start - BUFFER) || time > (end + BUFFER)) return false;
 
@@ -69,8 +88,9 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
 
     if (candidates.length > 0) {
         candidates.sort((a, b) => 
-            parseDateWithServer(b.startTime, serverId).getTime() - 
-            parseDateWithServer(a.startTime, serverId).getTime()
+            // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ СОРТИРОВКИ
+            parseDateWithServer(getBannerDates(b, serverId).startStr, serverId).getTime() - 
+            parseDateWithServer(getBannerDates(a, serverId).startStr, serverId).getTime()
         );
         return candidates[0];
     }
@@ -122,7 +142,7 @@ export function parseGachaLog(list) {
         else if (item.time) dateObj = new Date(item.time);
         else dateObj = new Date(0);
         
-        const rawBannerId = item.bannerId || item.poolId || item.pool || item.gacha_type;
+        const rawBannerId = item.bannerId || item.poolId || item.gacha_type;
         const internalId = getInternalBannerType(rawBannerId);
         const itemType = item.weaponName ? 'weapon' : 'character';
         let uniqueId = item.id || (seqId !== 0 ? `${dateObj.getTime()}_${rawName}_${seqId}` : `${dateObj.getTime()}_${rawName}_idx${i}`);
@@ -180,14 +200,15 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             return b.type === 'special';
         });
         
+        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ ПОИСКА АКТИВНОГО БАННЕРА
         candidates.sort((a, b) => 
-            parseDateWithServer(b.startTime, accountServerId).getTime() - 
-            parseDateWithServer(a.startTime, accountServerId).getTime()
+            parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() - 
+            parseDateWithServer(getBannerDates(a, accountServerId).startStr, accountServerId).getTime()
         );
         
         const lastPullTime = pulls.length > 0 ? pulls[pulls.length - 1].time.getTime() : Date.now();
         const activeBanner = candidates.find(b => 
-            parseDateWithServer(b.startTime, accountServerId).getTime() <= lastPullTime
+            parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() <= lastPullTime
         );
         
         if (activeBanner) currentViewBanner = activeBanner;
@@ -197,8 +218,10 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     let mileageStart = 0;
     let mileageEnd = 0;
     if (currentViewBanner) {
-        mileageStart = parseDateWithServer(currentViewBanner.startTime, accountServerId).getTime();
-        mileageEnd = currentViewBanner.endTime ? parseDateWithServer(currentViewBanner.endTime, accountServerId).getTime() : Infinity;
+        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ МАЙЛИДЖА (MILEAGE)
+        const dates = getBannerDates(currentViewBanner, accountServerId);
+        mileageStart = parseDateWithServer(dates.startStr, accountServerId).getTime();
+        mileageEnd = dates.endStr ? parseDateWithServer(dates.endStr, accountServerId).getTime() : Infinity;
     }
 
     const hardPityLimit = isWeaponType ? 80 : 120;

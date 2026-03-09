@@ -14,6 +14,12 @@
     "theme_dark": "Tối",
     "theme_light": "Sáng"
   },
+  "footer": {
+    "devResources": "Tài nguyên nhà phát triển",
+    "officialResources": "Tài nguyên chính thức",
+    "privacyPolicy": "Chính sách bảo mật",
+    "specialThanks": "Lời cảm ơn đặc biệt"
+  },
   "page": {
     "title": "Hồ sơ Chiêu mộ",
     "importBtn": "Nhập dữ liệu",
@@ -571,7 +577,9 @@
     },
     "server": {
       "title": "Chọn máy chủ",
-      "hint": "Máy chủ được chọn ảnh hưởng đến việc hiển thị thời gian trên trang web"
+      "hint": "Máy chủ được chọn ảnh hưởng đến việc hiển thị thời gian trên trang web",
+      "show_server_time": "Hiển thị giờ máy chủ",
+      "show_server_time_desc": "Sử dụng giờ máy chủ (Global: UTC-5 / Châu Á: UTC+8) cho lịch trình banner và sự kiện thay vì giờ địa phương của thiết bị."
     },
     "cloud": {
       "title": "Đồng bộ Đám mây",

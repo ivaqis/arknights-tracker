@@ -40,8 +40,18 @@
 
     $: currentAccount = $accounts.find((a) => a.id === $selectedId);
     $: currentServerId = currentAccount?.serverId || "3";
+    
+    $: isAsia = String(currentServerId) === "2";
+    
     $: serverOffset =
         currentServerId === "2" || currentServerId === "1" ? 8 : -5;
+
+    function getBannerDates(b) {
+        if (!b) return { startStr: null, endStr: null };
+        const startStr = isAsia && b.startTimeAsia ? b.startTimeAsia : b.startTime;
+        const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
+        return { startStr, endStr };
+    }
 
     function parseServerDate(dateStr) {
         if (!dateStr) return null;
@@ -160,9 +170,10 @@
         });
 
         let matches = candidates.filter((b) => {
-            const start = parseServerDate(b.startTime).getTime();
-            const end = b.endTime
-                ? parseServerDate(b.endTime).getTime()
+            const dates = getBannerDates(b);
+            const start = parseServerDate(dates.startStr).getTime();
+            const end = dates.endStr
+                ? parseServerDate(dates.endStr).getTime()
                 : Infinity;
 
             return pTime >= start && pTime <= end;
@@ -192,31 +203,38 @@
             if (contextMatch) return contextMatch;
 
             matches.sort((a, b) => {
+                const datesA = getBannerDates(a);
+                const datesB = getBannerDates(b);
+
                 const durationA =
-                    (a.endTime
-                        ? parseServerDate(a.endTime).getTime()
+                    (datesA.endStr
+                        ? parseServerDate(datesA.endStr).getTime()
                         : 4102444800000) -
-                    parseServerDate(a.startTime).getTime();
+                    parseServerDate(datesA.startStr).getTime();
                 const durationB =
-                    (b.endTime
-                        ? parseServerDate(b.endTime).getTime()
+                    (datesB.endStr
+                        ? parseServerDate(datesB.endStr).getTime()
                         : 4102444800000) -
-                    parseServerDate(b.startTime).getTime();
+                    parseServerDate(datesB.startStr).getTime();
 
                 if (durationA !== durationB) return durationA - durationB;
                 return (
-                    parseServerDate(b.startTime) - parseServerDate(a.startTime)
+                    parseServerDate(datesB.startStr) - parseServerDate(datesA.startStr)
                 );
             });
             return matches[0];
         }
 
         const pastBanners = candidates
-            .filter((b) => parseServerDate(b.startTime).getTime() <= pTime)
-            .sort(
-                (a, b) =>
-                    parseServerDate(b.startTime) - parseServerDate(a.startTime),
-            );
+            .filter((b) => {
+                const dates = getBannerDates(b);
+                return parseServerDate(dates.startStr).getTime() <= pTime;
+            })
+            .sort((a, b) => {
+                const datesA = getBannerDates(a);
+                const datesB = getBannerDates(b);
+                return parseServerDate(datesB.startStr) - parseServerDate(datesA.startStr);
+            });
 
         return pastBanners[0];
     }

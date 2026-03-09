@@ -14,6 +14,12 @@
     "theme_dark": "Scuro",
     "theme_light": "Chiaro"
   },
+  "footer": {
+    "devResources": "Risorse per sviluppatori",
+    "officialResources": "Risorse ufficiali",
+    "privacyPolicy": "Informativa sulla privacy",
+    "specialThanks": "Ringraziamenti speciali"
+  },
   "page": {
     "title": "Registro Reclutamenti",
     "importBtn": "Importa",
@@ -571,7 +577,9 @@
     },
     "server": {
       "title": "Seleziona server",
-      "hint": "Il server selezionato influenza la visualizzazione dell'ora sul sito web"
+      "hint": "Il server selezionato influenza la visualizzazione dell'ora sul sito web",
+      "show_server_time": "Mostra l'ora del server",
+      "show_server_time_desc": "Usa l'ora del server (Global: UTC-5 / Asia: UTC+8) per i programmi dei banner e degli eventi invece dell'ora locale del dispositivo."
     },
     "cloud": {
       "title": "Sincronizzazione Cloud",

@@ -7,6 +7,8 @@ const { BANNERS } = require('./banners');
 const crypto = require('crypto');
 const rateLimit = require('express-rate-limit');
 
+require('dotenv').config();
+
 const importLimiter = rateLimit({
     windowMs: 60 * 1000,
     max: 3,
@@ -48,6 +50,16 @@ function getServerOffset(serverId) {
     const sid = String(serverId);
     if (sid === '2') return 8;
     return -5;
+}
+
+function getBannerDates(banner, serverId) {
+    if (!banner) return { startStr: null, endStr: null };
+    const isAsia = String(serverId) === '2';
+    
+    const startStr = (isAsia && banner.startTimeAsia) ? banner.startTimeAsia : banner.startTime;
+    const endStr = (isAsia && banner.endTimeAsia) ? banner.endTimeAsia : banner.endTime;
+    
+    return { startStr, endStr };
 }
 
 app.use(cors());
@@ -560,9 +572,11 @@ function parseDateWithServer(dateStr, offset) {
     return new Date(isoStr);
 }
 
-function findBannerConfigByTime(timestamp, categoryContext, offset) {
+function findBannerConfigByTime(timestamp, categoryContext, serverId) {
     const time = new Date(timestamp).getTime();
     const BUFFER = 12 * 60 * 60 * 1000;
+    
+    const offset = getServerOffset(serverId);
 
     let targetType = null;
     let isWeaponStandard = false;
@@ -584,8 +598,10 @@ function findBannerConfigByTime(timestamp, categoryContext, offset) {
     }
 
     const candidates = BANNERS.filter(b => {
-        const start = parseDateWithServer(b.startTime, offset).getTime();
-        const end = b.endTime ? parseDateWithServer(b.endTime, offset).getTime() : Infinity;
+        const dates = getBannerDates(b, serverId);
+        
+        const start = parseDateWithServer(dates.startStr, offset).getTime();
+        const end = dates.endStr ? parseDateWithServer(dates.endStr, offset).getTime() : Infinity;
         if (time < (start - BUFFER) || time > (end + BUFFER)) return false;
 
         if (targetType) {
@@ -609,8 +625,8 @@ function findBannerConfigByTime(timestamp, categoryContext, offset) {
 
     if (candidates.length > 0) {
         candidates.sort((a, b) =>
-            parseDateWithServer(b.startTime, offset).getTime() -
-            parseDateWithServer(a.startTime, offset).getTime()
+            parseDateWithServer(getBannerDates(b, serverId).startStr, offset).getTime() -
+            parseDateWithServer(getBannerDates(a, serverId).startStr, offset).getTime()
         );
         return candidates[0];
     }
@@ -625,8 +641,8 @@ function getDistinctBannerId(pull, serverId) {
     if (!genericIds.includes(rawId) && !rawId.startsWith('E_')) {
         return rawId;
     }
-    const offset = getServerOffset(serverId);
-    const foundBanner = findBannerConfigByTime(pull.time, rawId, offset);
+    
+    const foundBanner = findBannerConfigByTime(pull.time, rawId, serverId);
 
     if (foundBanner) return foundBanner.id;
 
@@ -695,8 +711,10 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 const timeMs = new Date(p.time).getTime();
                 
                 const candidates = BANNERS.filter(b => {
-                    const start = parseDateWithServer(b.startTime, offset).getTime();
-                    const end = b.endTime ? parseDateWithServer(b.endTime, offset).getTime() : Infinity;
+                    const dates = getBannerDates(b, serverId);
+                    
+                    const start = parseDateWithServer(dates.startStr, offset).getTime();
+                    const end = dates.endStr ? parseDateWithServer(dates.endStr, offset).getTime() : Infinity;
                     if (timeMs < start || timeMs > end) return false;
 
                     if (categoryId === 'weap-standard') return b.type === 'weapon' && (b.id.includes('constant') || b.id.includes('standard'));
@@ -712,7 +730,10 @@ function calculateMath(pulls, categoryId, serverId = '3') {
                 );
 
                 if (!bestBanner && candidates.length > 0) {
-                    candidates.sort((a, b) => parseDateWithServer(b.startTime, offset).getTime() - parseDateWithServer(a.startTime, offset).getTime());
+                    candidates.sort((a, b) => 
+                        parseDateWithServer(getBannerDates(b, serverId).startStr, offset).getTime() - 
+                        parseDateWithServer(getBannerDates(a, serverId).startStr, offset).getTime()
+                    );
                     bestBanner = candidates[0];
                 }
 
@@ -911,8 +932,14 @@ async function logImportError(url, errorObj, serverId = null) {
     }
 }
 
+const ADMIN_SECRET = process.env.ADMIN_SECRET || 'super_secret_fallback_key_123';
+
 app.get('/api/admin/errors', async (req, res) => {
-    if (req.headers['x-admin-secret'] !== 'florest555') return res.sendStatus(403);
+    const secret = process.env.ADMIN_SECRET;
+    
+    if (!secret || req.headers['x-admin-secret'] !== secret) {
+        return res.sendStatus(403);
+    }
 
     try {
         const errors = await prisma.importError.findMany({

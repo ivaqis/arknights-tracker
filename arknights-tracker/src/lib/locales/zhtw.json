@@ -14,6 +14,12 @@
     "theme_dark": "深色",
     "theme_light": "淺色"
   },
+  "footer": {
+    "devResources": "開發者資源",
+    "officialResources": "官方資源",
+    "privacyPolicy": "隱私權政策",
+    "specialThanks": "特別感謝"
+  },
   "page": {
     "title": "尋訪記錄檔案",
     "importBtn": "匯入資料",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "選擇伺服器",
-      "hint": "選擇的伺服器會影響網站上的時間顯示"
+      "hint": "選擇的伺服器會影響網站上的時間顯示",
+      "show_server_time": "顯示伺服器時間",
+      "show_server_time_desc": "使用伺服器時間（國際服：UTC-5 / 亞服：UTC+8）來顯示尋訪和活動日程，而不是裝置的本地時間。"
     },
     "cloud": {
       "title": "雲端同步",

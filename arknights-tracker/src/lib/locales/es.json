@@ -14,6 +14,12 @@
     "theme_dark": "Oscuro",
     "theme_light": "Claro"
   },
+  "footer": {
+    "devResources": "Recursos del desarrollador",
+    "officialResources": "Recursos oficiales",
+    "privacyPolicy": "Política de privacidad",
+    "specialThanks": "Agradecimientos especiales"
+  },
   "page": {
     "title": "Registros de Reclutamiento",
     "importBtn": "Importar",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "Seleccionar servidor",
-      "hint": "El servidor seleccionado afecta la visualización de la hora en el sitio web"
+      "hint": "El servidor seleccionado afecta la visualización de la hora en el sitio web",
+      "show_server_time": "Mostrar hora del servidor",
+      "show_server_time_desc": "Usar la hora del servidor (Global: UTC-5 / Asia: UTC+8) para los horarios de banners y eventos en lugar de la hora local del dispositivo."
     },
     "cloud": {
       "title": "Sincronización en la Nube",

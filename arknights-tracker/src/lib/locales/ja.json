@@ -14,6 +14,12 @@
     "theme_dark": "ダーク",
     "theme_light": "ライト"
   },
+  "footer": {
+    "devResources": "開発者リソース",
+    "officialResources": "公式リソース",
+    "privacyPolicy": "プライバシーポリシー",
+    "specialThanks": "スペシャルサンクス"
+  },
   "page": {
     "title": "人材発掘",
     "importBtn": "インポート",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "サーバー選択",
-      "hint": "選択したサーバーはウェブサイト上の時間表示に影響します"
+      "hint": "選択したサーバーはウェブサイト上の時間表示に影響します",
+      "show_server_time": "サーバー時間を表示",
+      "show_server_time_desc": "デバイスのローカル時間の代わりに、サーバー時間（グローバル: UTC-5 / アジア: UTC+8）をバナーやイベントのスケジュールに使用します。"
     },
     "cloud": {
       "title": "クラウド同期",

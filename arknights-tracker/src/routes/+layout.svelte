@@ -18,8 +18,10 @@
     import Icons from "$lib/components/Icons.svelte";
     import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
     import SyncModal from "$lib/components/SyncModal.svelte";
+    import PrivacyModal from "$lib/components/PrivacyModal.svelte";
 
     let isMobileMenuOpen = false;
+    let isPrivacyModalOpen = false;
     let isCollapsed = browser
         ? localStorage.getItem("sidebarCollapsed") === "true"
         : false;
@@ -170,7 +172,7 @@
             aria-label="Toggle menu"
             on:click|stopPropagation={() =>
                 (isMobileMenuOpen = !isMobileMenuOpen)}
-            class="p-2 bg-white dark:bg-[#2C2C2C] dark:border-[#7A7A7A] dark:text-[#FDFDFD] rounded-lg shadow-md border border-gray-100 text-gray-600"
+            class="p-2 bg-base text-primary border border-line rounded-lg shadow-md"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -420,13 +422,79 @@
             {ready ? 'transition-all duration-300 ease-in-out' : ''}
             
             md:ml-[var(--sb-w)]
+            flex flex-col min-h-screen
         "
     >
-        {#key $currentLocale}
-            <slot />
-        {/key}
+        <div class="flex-1">
+            {#key $currentLocale}
+                <slot />
+            {/key}
+        </div>
+
+        {#if $page.url.pathname !== '/'}
+            <footer class="mt-20 w-full max-w-[1600px] pb-4">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-[2px] h-7 bg-gray-400 dark:bg-gray-300 rounded-full"></div>
+                    <p class="text-sm text-gray-700 dark:text-[#E0E0E0] leading-snug">
+                        {$t("home.disclaimer")}
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:items-start gap-6 md:gap-10">
+                    
+                    <div class="flex flex-col gap-3 min-w-[180px]">
+                        <span class="text-gray-900 dark:text-[#FDFDFD] text-[15px] font-medium">
+                            {$t("footer.devResources")}
+                        </span>
+                        <div class="flex items-center gap-4 mt-1">
+                            <a href="https://discord.gg/nqfuaRbWWn " target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="Discord">
+                                <Icons name="discrodBig" class="h-[22px] w-auto" />
+                            </a>
+                            <a href="https://github.com/ivaqis/arknights-tracker" target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="GitHub">
+                                <Icons name="gitHubBig" class="h-[22px] w-auto" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-px min-h-[60px] bg-gray-300 dark:bg-[#444444]"></div>
+
+                    <div class="flex flex-col gap-3 min-w-[200px]">
+                        <span class="text-gray-900 dark:text-[#FDFDFD] text-[15px] font-medium">
+                            {$t("footer.officialResources")}
+                        </span>
+                        <div class="flex items-center gap-4 mt-1">
+                            <a href="https://x.com/AKEndfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="X (Twitter)">
+                                <Icons name="twitter" class="h-[22px] w-auto" />
+                            </a>
+                            <a href="https://www.skport.com" target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="Skport">
+                                <Icons name="skport" class="h-[22px] w-auto" />
+                            </a>
+                            <a href="https://discord.gg/akendfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="Official Discord">
+                                <Icons name="discord" class="h-[22px] w-auto" />
+                            </a>
+                            <a href="https://www.youtube.com/@arknightsendfieldEN" target="_blank" rel="noopener noreferrer" class="text-[#21272C] hover:opacity-70 dark:text-white transition-opacity" title="Official Discord">
+                                <Icons name="youtube" class="h-[22px] w-auto" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-px min-h-[60px] bg-gray-300 dark:bg-[#444444]"></div>
+
+                    <div class="flex flex-col gap-3">
+                        <button on:click={() => isPrivacyModalOpen = true} class="text-left text-[15px] text-gray-700 hover:text-black dark:text-[#E0E0E0] dark:hover:text-white transition-colors">
+                            {$t("footer.privacyPolicy")}
+                        </button>
+                        <!--<button class="text-left text-[15px] text-gray-700 hover:text-black dark:text-[#E0E0E0] dark:hover:text-white transition-colors">
+                            {$t("footer.specialThanks")}
+                        </button>-->
+                    </div>
+
+                </div>
+            </footer>
+        {/if}
 
         <CookieConsent />
+        <PrivacyModal isOpen={isPrivacyModalOpen} on:close={() => isPrivacyModalOpen = false} />
     </main>
 </div>
 {:else}

@@ -1,6 +1,7 @@
 <script>
     import { t } from "$lib/i18n";
     import { get } from "svelte/store";
+    import { browser } from "$app/environment";
     import { onMount } from "svelte";
     import { accountStore } from "$lib/stores/accounts";
     import { pullData } from "$lib/stores/pulls";
@@ -69,8 +70,15 @@
 
     const serverOptions = [
         { value: "3", label: "Americas/Europe" },
-        { value: "2", label: "Asia" }
+        { value: "2", label: "Asia" },
     ];
+
+    let showServerTime = false;
+    let isInitialized = false;
+
+    $: if (isInitialized && browser) {
+        localStorage.setItem("show_server_time", showServerTime.toString());
+    }
 
     onMount(() => {
         initAuth();
@@ -82,12 +90,19 @@
                 localStorage.setItem("ark_server_id", "3");
             }
         }
+        if (browser) {
+            const savedTimePref = localStorage.getItem("show_server_time");
+            if (savedTimePref !== null) {
+                showServerTime = savedTimePref === "true";
+            }
+            isInitialized = true;
+        }
     });
 
     function handleServerChange(e) {
         const newServerId = e.detail;
         currentServerId = newServerId;
-        
+
         if (typeof window !== "undefined") {
             localStorage.setItem("ark_server_id", newServerId);
         }
@@ -287,10 +302,13 @@
     function handleRenameAccount() {
         const currentAcc = $accounts.find((a) => a.id === $selectedId);
         if (!currentAcc) return;
-        const newName = prompt($t("settings.account.rename_prompt") || "Enter new account name:", currentAcc.name);
+        const newName = prompt(
+            $t("settings.account.rename_prompt") || "Enter new account name:",
+            currentAcc.name,
+        );
         if (newName && newName.trim() !== "") {
-           accountStore.renameAccount(currentAcc.id, newName.trim());
-       }
+            accountStore.renameAccount(currentAcc.id, newName.trim());
+        }
     }
 
     let currentSelection;
@@ -352,7 +370,7 @@
     function openRenameModal() {
         console.log("Opening modal...", $selectedId);
         const currentAcc = $accounts.find((a) => a.id === $selectedId);
-        
+
         if (currentAcc) {
             console.log("Account found:", currentAcc.name);
             tempAccountName = currentAcc.name;
@@ -372,7 +390,9 @@
 </script>
 
 <div class="max-w-[1000px] w-full pb-20">
-    <h1 class="font-sdk dark:text-[#FDFDFD] text-5xl font-black text-[#21272C] mb-8">
+    <h1
+        class="font-sdk dark:text-[#FDFDFD] text-5xl font-black text-[#21272C] mb-8"
+    >
         {$t("settings.title")}
     </h1>
 
@@ -433,13 +453,15 @@
             </div>
 
             <Tooltip text={$t("settings.account.rename") || "Rename account"}>
-                <Button 
-                    variant="roundSmall" 
-                    color="white" 
+                <Button
+                    variant="roundSmall"
+                    color="white"
                     onClick={openRenameModal}
                     className="w-10 h-10 flex items-center justify-center !p-0"
                 >
-                    <div class="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors">
+                    <div
+                        class="text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
+                    >
                         <Icon name="pen" class="w-4 h-4" />
                     </div>
                 </Button>
@@ -448,8 +470,10 @@
     </section>
 
     <section class="mb-2 ml-2">
-        <div class="mt-4 flex flex-col items-start gap-4">
-            <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] whitespace-nowrap">
+        <div class="mt-4 flex flex-col items-start gap-2">
+            <h2
+                class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] whitespace-nowrap"
+            >
                 {$t("settings.server.title") || "Select Server"}
             </h2>
 
@@ -462,15 +486,50 @@
                     placeholder="Select server..."
                 />
             </div>
-            
+
             <p class="text-xs text-gray-500 dark:text-[#787878] max-w-md">
-                {$t("settings.server.hint") || "Changing the server affects import links and data fetching."}
+                {$t("settings.server.hint") ||
+                    "Changing the server affects import links and data fetching."}
+            </p>
+
+            <label
+                class="flex items-start gap-3 select-none group cursor-pointer w-fit"
+            >
+                <div class="relative flex items-center mt-0.5">
+                    <input
+                        type="checkbox"
+                        bind:checked={showServerTime}
+                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-line bg-surface checked:border-accent checked:bg-accent transition-all"
+                    />
+                    <svg
+                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-base">
+                        {$t("settings.server.show_server_time")}
+                    </span>
+                </div>
+            </label>
+
+            <p class="text-xs text-gray-500 dark:text-[#787878] max-w-md">
+                {$t("settings.server.show_server_time_desc")}
             </p>
         </div>
     </section>
 
     <section class="mb-3 ml-2">
-        <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
+        <h2
+            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
+        >
             {$t("settings.cloud.title")}
         </h2>
 
@@ -535,7 +594,7 @@
                                     </div>
                                 {:else}
                                     <div
-                                        class="flex items-center gap-2 px-3 py-1 bg-orange-50 dark:text-orange-400 text-orange-700 dark:bg-[#803E18] dark:border-[#444444] rounded-full text-[10px] font-bold border border-orange-200  uppercase tracking-wider"
+                                        class="flex items-center gap-2 px-3 py-1 bg-orange-50 dark:text-orange-400 text-orange-700 dark:bg-[#803E18] dark:border-[#444444] rounded-full text-[10px] font-bold border border-orange-200 uppercase tracking-wider"
                                     >
                                         <Icon
                                             name="loading"
@@ -548,7 +607,9 @@
                         </div>
                     </div>
 
-                    <div class="h-px bg-gray-100 w-full dark:bg-[#444444] my-4"></div>
+                    <div
+                        class="h-px bg-gray-100 w-full dark:bg-[#444444] my-4"
+                    ></div>
 
                     {#if !$user}
                         <div
@@ -585,7 +646,7 @@
                                     />
                                 {:else}
                                     <div
-                                        class="w-10 h-10 rounded-full bg-gray-300  flex items-center justify-center text-white font-bold text-lg shrink-0"
+                                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
                                     >
                                         {$user.displayName
                                             ? $user.displayName[0]
@@ -622,7 +683,9 @@
                                 >
                                     {$t("settings.cloud.lastSync")}
                                 </div>
-                                <div class="text-xs dark:text-[#E0E0E0] font-mono text-[#21272C]">
+                                <div
+                                    class="text-xs dark:text-[#E0E0E0] font-mono text-[#21272C]"
+                                >
                                     {lastSyncDate}
                                 </div>
                             </div>
@@ -664,7 +727,9 @@
     </section>
 
     <section class="mb-4 ml-2">
-        <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
+        <h2
+            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
+        >
             {$t("settings.backup.title")}
         </h2>
         <div
@@ -702,7 +767,9 @@
     </section>-->
 
     <section class="mb-3 ml-2">
-        <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
+        <h2
+            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
+        >
             {$t("settings.feedback.title")}
         </h2>
         <div
@@ -745,7 +812,9 @@
     </section>
 
     <section class="mb-10 ml-2">
-        <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4">
+        <h2
+            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
+        >
             {$t("settings.donate.title")}
         </h2>
         <div class="w-48 flex gap-3">
@@ -803,11 +872,13 @@
 <ConfirmationModal
     isOpen={showRenameModal}
     title={$t("settings.account.rename") || "Rename Account"}
-    description={$t("settings.account.rename_desc") || "Enter a new name for this account:"}
+    description={$t("settings.account.rename_desc") ||
+        "Enter a new name for this account:"}
     confirmText={$t("settings.account.save") || "Save"}
     enableInput={true}
     bind:value={tempAccountName}
     on:confirm={confirmRename}
-    confirmColor="green"  on:confirm={confirmRename}
+    confirmColor="green"
+    on:confirm={confirmRename}
     on:close={() => (showRenameModal = false)}
 />

@@ -14,6 +14,12 @@
     "theme_dark": "深色",
     "theme_light": "浅色"
   },
+  "footer": {
+    "devResources": "开发者资源",
+    "officialResources": "官方资源",
+    "privacyPolicy": "隐私政策",
+    "specialThanks": "特别鸣谢"
+  },
   "page": {
     "title": "寻访记录档案",
     "importBtn": "导入数据",
@@ -571,7 +577,9 @@
     },
     "server": {
       "title": "选择服务器",
-      "hint": "选择的服务器会影响网站上的时间显示"
+      "hint": "选择的服务器会影响网站上的时间显示",
+      "show_server_time": "显示服务器时间",
+      "show_server_time_desc": "使用服务器时间（国际服：UTC-5 / 亚服：UTC+8）来显示寻访和活动日程，而不是设备的本地时间。"
     },
     "cloud": {
       "title": "云同步",

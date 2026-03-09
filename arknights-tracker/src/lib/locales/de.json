@@ -14,6 +14,12 @@
     "theme_dark": "Dunkel",
     "theme_light": "Hell"
   },
+  "footer": {
+    "devResources": "Entwickler-Ressourcen",
+    "officialResources": "Offizielle Ressourcen",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "specialThanks": "Besonderer Dank"
+  },
   "page": {
     "title": "Rekrutierung",
     "importBtn": "Importieren",
@@ -133,7 +139,8 @@
     "faq_q2": "Ist Goyfield.moe gefährlich?",
     "note": "Hinweis",
     "faq_security_desc1": "Die Weitergabe von Autorisierungs-Token an Drittanbieter-Websites und die Ausführung von PowerShell-Skripten bergen immer Risiken.",
-"faq_security_desc2": "<strong>Goyfield.moe</strong> speichert niemals Ihre persönlichen Daten wie Token und Links. Ihr Token wird nur verarbeitet, um Züge abzurufen, und wird niemals gespeichert. Wenn Sie Bedenken bezüglich des PowerShell-Skripts haben, verwenden Sie die Methode „PC 2“, die das Token mit integrierten PowerShell-Tools über Regex abruft. Das Import-Skript ist Open Source und wird auf GitHub gehostet; Sie können es anhand der Commit-Historie oder mithilfe von KI überprüfen.",    "faq_security_warning": "Wenn Sie die Website <strong>Endfieldrecords</strong> genutzt haben, ändern Sie sofort Ihr In-Game-Passwort und folgen Sie der <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit-Anleitung</a>, um Ihren Computer zu überprüfen.",
+    "faq_security_desc2": "<strong>Goyfield.moe</strong> speichert niemals Ihre persönlichen Daten wie Token und Links. Ihr Token wird nur verarbeitet, um Züge abzurufen, und wird niemals gespeichert. Wenn Sie Bedenken bezüglich des PowerShell-Skripts haben, verwenden Sie die Methode „PC 2“, die das Token mit integrierten PowerShell-Tools über Regex abruft. Das Import-Skript ist Open Source und wird auf GitHub gehostet; Sie können es anhand der Commit-Historie oder mithilfe von KI überprüfen.",
+    "faq_security_warning": "Wenn Sie die Website <strong>Endfieldrecords</strong> genutzt haben, ändern Sie sofort Ihr In-Game-Passwort und folgen Sie der <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit-Anleitung</a>, um Ihren Computer zu überprüfen.",
     "description": "Lade eine JSON-Datei mit deinem Gacha-Verlauf hoch.",
     "format": "(Derzeit wird nur das Genshin-ähnliche API-Antwortformat unterstützt).",
     "button": "JSON-Datei auswählen",
@@ -571,7 +578,9 @@
     },
     "server": {
       "title": "Server wählen",
-      "hint": "Der gewählte Server beeinflusst die Zeitanzeige auf der Website"
+      "hint": "Der gewählte Server beeinflusst die Zeitanzeige auf der Website",
+      "show_server_time": "Serverzeit anzeigen",
+      "show_server_time_desc": "Verwende die Serverzeit (Global: UTC-5 / Asien: UTC+8) für Banner- und Event-Zeitpläne anstelle der lokalen Gerätezeit."
     },
     "cloud": {
       "title": "Cloud-Synchronisierung",

@@ -14,6 +14,12 @@
     "theme_dark": "Sombre",
     "theme_light": "Clair"
   },
+  "footer": {
+    "devResources": "Ressources développeur",
+    "officialResources": "Ressources officielles",
+    "privacyPolicy": "Politique de confidentialité",
+    "specialThanks": "Remerciements spéciaux"
+  },
   "page": {
     "title": "Dossiers de Recrutement",
     "importBtn": "Importer",
@@ -572,7 +578,9 @@
     },
     "server": {
       "title": "Choisir serveur",
-      "hint": "Le serveur sélectionné affecte l'affichage de l'heure sur le site"
+      "hint": "Le serveur sélectionné affecte l'affichage de l'heure sur le site",
+      "show_server_time": "Afficher l'heure du serveur",
+      "show_server_time_desc": "Utiliser l'heure du serveur (Global : UTC-5 / Asie : UTC+8) pour les horaires des bannières et des événements au lieu de l'heure locale de l'appareil."
     },
     "cloud": {
       "title": "Synchro Cloud",

@@ -39,6 +39,7 @@ const BANNERS = [
     type: "special",
     startTime: "2026-02-24 12:00:00",
     endTime: "2026-03-11 09:00:00",
+    endTimeAsia: "2026-03-11 22:00:00",
     featured6: ["yvonne"],
   },
   {
@@ -47,6 +48,7 @@ const BANNERS = [
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
     endTime: "2026-03-11 09:00:00",
+    endTimeAsia: "2026-03-11 22:00:00",
     featured6: ["forgebornScathe"],
   },
   {
@@ -104,6 +106,42 @@ const BANNERS = [
     startTime: "2026-02-24 12:00:00",
     endTime: "2026-04-25 11:59:59",
     featured6: ["artzyTyrannical", "Artzy Tyrannical"],
+  },
+  {
+    id: "special_1_1_1",
+    name: "River's Daughter",
+    type: "special",
+    startTime: "2026-03-11 23:00:00",
+    endTime: "2026-03-29 11:59:59",
+    startTimeAsia: "2026-03-12 12:00:00",
+    endTimeAsia: "2026-03-29 11:59:59",
+    featured6: ["tantan", "Tan Tan"],
+  },
+  {
+    id: "special_1_1_2",
+    name: "Wolf Pearl",
+    type: "special",
+    startTime: "2026-03-29 12:00:00",
+    endTime: "2026-04-16 09:00:00",
+    featured6: ["rossi", "Rossi"],
+  },
+  {
+    id: "weponbox_1_1_1",
+    name: "Brigand's Calling",
+    type: "weapon",
+    startTime: "2026-03-11 23:00:00",
+    endTime: "2026-05-04 11:59:59",
+    startTimeAsia: "2026-03-12 12:00:00",
+    endTimeAsia: "2026-05-04 11:59:59",
+    featured6: ["brigandsCalling", "Brigand's Calling"],
+  },
+  {
+    id: "weponbox_1_1_2",
+    name: "Lupine Scarlet",
+    type: "weapon",
+    startTime: "2026-03-29 12:00:00",
+    endTime: "2026-05-22 11:59:59",
+    featured6: ["lupineScarlet", "Lupine Scarlet"],
   }
 ];
 

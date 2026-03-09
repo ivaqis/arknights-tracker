@@ -24,11 +24,12 @@
 
     const { accounts, selectedId } = accountStore;
 
-    $: currentAccount = $accounts.find((a) => a.id === $selectedId);
-    $: currentServerId = currentAccount?.serverId || "3";
+    let currentServerId = "3";
+    
+    $: isAsia = currentServerId === "2";
+    $: serverOffset = currentServerId === "2" || currentServerId === "1" ? 8 : -5;
 
-    $: serverOffset =
-        currentServerId === "2" || currentServerId === "1" ? 8 : -5;
+    let showServerTime = false;
 
     function parseServerDate(dateStr) {
         if (!dateStr) return null;
@@ -49,6 +50,18 @@
                 replaceState(`#banner-${banner.id}`, {});
             }
         }
+        if (browser) {
+            currentServerId = localStorage.getItem("ark_server_id") || "3";
+
+            const savedTimePref = localStorage.getItem("show_server_time");
+            if (savedTimePref !== null) {
+                showServerTime = savedTimePref === "true";
+            }
+
+            if (banner && banner.id) {
+                replaceState(`#banner-${banner.id}`, {});
+            }
+        }
     });
 
     function normalize(str) {
@@ -59,6 +72,21 @@
 
     function formatTime(d) {
         if (!d) return "";
+
+        if (showServerTime) {
+            const shiftedMs = d.getTime() + (serverOffset * 3600000);
+            const shiftedDate = new Date(shiftedMs);
+            
+            return shiftedDate.toLocaleString("ru-RU", {
+                timeZone: "UTC",
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+            });
+        }
+
         return d.toLocaleString("ru-RU", {
             day: "2-digit",
             month: "2-digit",
@@ -195,9 +223,11 @@
         });
     };
 
-    $: realStart = banner ? parseServerDate(banner.startTime) : new Date();
-    $: realEnd =
-        banner && banner.endTime ? parseServerDate(banner.endTime) : null;
+    $: startStr = (banner && isAsia && banner.startTimeAsia) ? banner.startTimeAsia : banner?.startTime;
+    $: endStr = (banner && isAsia && banner.endTimeAsia) ? banner.endTimeAsia : banner?.endTime;
+
+    $: realStart = startStr ? parseServerDate(startStr) : new Date();
+    $: realEnd = endStr ? parseServerDate(endStr) : null;
 
     $: bannerData = (() => {
         if (!banner || !categoryPulls.length || isEvent) {

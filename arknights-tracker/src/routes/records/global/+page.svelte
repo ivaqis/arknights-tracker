@@ -499,7 +499,7 @@
                             class="flex flex-col justify-center min-h-[70px] flex-1"
                         >
                             <div
-                                class="font-bold text-base text-[#21272C] dark:text-[#FDFDFD] leading-tight mb-1 line-clamp-2"
+                                class="font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight mb-1 line-clamp-2"
                             >
                                 {$t(
                                     resolved.isWeapon
