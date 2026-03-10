@@ -404,7 +404,7 @@
                 <Icon name="close" class="w-5 h-5" />
             </button>
 
-            <div class="aspect-[21/9] w-full relative bg-gray-100">
+            <div class="aspect-[32/9] w-full relative bg-gray-100">
                 <Images
                     item={banner}
                     variant={imageVariant}

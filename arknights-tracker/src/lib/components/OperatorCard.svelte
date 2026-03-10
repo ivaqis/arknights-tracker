@@ -10,8 +10,8 @@
 
     export let operator = {};
     export let variant = "default"; // "small" | "default"
-    export let className = ""; 
-    export let isNew = false; 
+    export let className = "";
+    export let isNew = false;
     export let hideName = false;
 
     $: gachaPulls = (() => {
@@ -192,7 +192,7 @@
                                 height={variant === 'small' ? '18' : '34'} 
                                 viewBox="0 0 68 66" 
                                 fill="none" 
-                                class="transition-all  duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : 'drop-shadow-sm'}"
+                                class="transition-all cursor-pointer duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : 'drop-shadow-sm'}"
                             >
                                 {#each potPaths as d, i}
                                     {@const isActive = i < constCount}

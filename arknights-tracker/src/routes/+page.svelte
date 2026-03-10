@@ -441,6 +441,7 @@
       {$t("home.go_to_tracker")}
     </Button>
   </div>
+  <!--
   <div class="w-48 flex gap-1 mb-5">
     <a
       href="https://discord.gg/nqfuaRbWWn"
@@ -455,7 +456,7 @@
         Discord
       </Button>
     </a>
-  </div>
+  </div>-->
 </div>
 
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />

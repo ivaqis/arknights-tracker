@@ -12,6 +12,7 @@
     export let weapon = {};
     export let variant = "default"; // "default" | "small"
     export let className = "";
+    export let isNew = false;
     export let hideName = false;
 
     $: safeWeaponType = weapon.type || weapon.weapon;
@@ -71,6 +72,32 @@
         "M44.879 41.6553L38.1667 46.8695L49.9912 6.77135L56.6378 2.38173L44.879 41.6553Z",
         "M49.8633 25.9639L52.5508 34.0273L18.6602 9.55078L16.7285 1.82324L49.8633 25.9639Z"
     ];
+
+    function tooltipOnlyOnOverflow(node, text) {
+        const checkOverflow = () => {
+            requestAnimationFrame(() => {
+                if (node.scrollWidth > node.clientWidth) {
+                    node.parentElement.style.pointerEvents = 'auto';
+                } else {
+                    node.parentElement.style.pointerEvents = 'none';
+                }
+            });
+        };
+
+        const observer = new ResizeObserver(checkOverflow);
+        observer.observe(node);
+        
+        checkOverflow();
+
+        return {
+            update() {
+                checkOverflow();
+            },
+            destroy() {
+                observer.disconnect();
+            }
+        };
+    }
 </script>
 
 {#if weapon && weapon.id}
@@ -105,9 +132,9 @@
             </div>
 
             {#if safeWeaponType && variant !== 'small'}
-                <div class="absolute top-1 left-1 z-20 pointer-events-auto filter">
+                <div class="absolute top-1 left-1 z-20 pointer-events-auto filter ">
                     <Tooltip text={$t(`weapons.${safeWeaponType}`) || safeWeaponType}>
-                        <div class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center shadow-inner
+                        <div class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center shadow-inner cursor-pointer
                             {variant === 'small' ? 'w-4 h-4 p-0.5' : 'w-5 h-5 p-0.5'}">
                             <Icon name={safeWeaponType} class="w-full h-full text-white/90" />
                         </div>
@@ -123,7 +150,7 @@
                             height="22" 
                             viewBox="0 0 68 66" 
                             fill="none" 
-                            class="transition-all duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : 'drop-shadow-sm'}"
+                            class="transition-all cursor-pointer duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : 'drop-shadow-sm'}"
                         >
                             {#each potPaths as d, i}
                                 {@const isActive = i < constCount}
@@ -162,12 +189,33 @@
             </div>
             {#if !hideName}
                 <div
-                    class="absolute bottom-[8px] left-0 right-0 z-30 pointer-events-none flex justify-center px-1"
+                    class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-1"
                 >
-                    <div
-                        class="text-white text-[9px] mb-1 font-bold text-center leading-none line-clamp-1 drop-shadow-md opacity-90"
+                    <Tooltip
+                        text={$t(`weaponsList.${nameKey}`) || weapon.name}
+                        class="flex justify-center w-full"
                     >
-                        {$t(`weaponsList.${nameKey}`) || weapon.name}
+                        <span
+                            use:tooltipOnlyOnOverflow={$t(`weaponsList.${nameKey}`) || weapon.name}
+                            class="text-white text-[11px] mb-1 font-bold text-center leading-none truncate drop-shadow-md opacity-90 w-full block cursor-pointer"
+                        >
+                            {$t(`weaponsList.${nameKey}`) || weapon.name}
+                        </span>
+                    </Tooltip>
+                </div>
+            {/if}
+            {#if isNew && variant !== 'small'}
+                <div class="absolute right-0 mr-[-3px] top-[16px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm">
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    
+                    <div class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center">
+                        <div class="absolute left-[-4px] w-[8px] top-0 bottom-0"></div>
+                        
+                        <span class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase">
+                            NEW
+                        </span>
                     </div>
                 </div>
             {/if}

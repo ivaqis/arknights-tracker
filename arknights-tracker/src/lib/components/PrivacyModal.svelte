@@ -15,7 +15,7 @@
 </script>
 
 {#if isOpen}
-  <div class="fixed inset-0 z-[10000] flex items-center justify-center p-4">
+  <div class="fixed inset-0 z-[10000] flex items-center justify-center p-4 md:ml-[var(--sb-w)]">
     <div 
       class="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default outline-none"
       transition:fade={{ duration: 200 }}

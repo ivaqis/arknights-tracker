@@ -127,7 +127,7 @@
         <div class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-4 justify-start">
             {#each filteredWeapons as wp (wp.id)}
                 <div class="flex justify-center">
-                    <WeaponCard weapon={wp} />
+                    <WeaponCard weapon={wp} isNew={wp.isNew}/>
                 </div>
             {/each}
         </div>

@@ -257,7 +257,8 @@ export const weapons = {
     "id": "artzyTyrannical",
     "name": "Artzy Tyrannical",
     "rarity": 6,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "isNew": true
   },
   "objRazorhorn": {
     "id": "objRazorhorn",

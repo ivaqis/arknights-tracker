@@ -601,8 +601,8 @@
     "server": {
       "title": "Выберите сервер",
       "hint": "Выбранный сервер влияет на отображение времени на сайте",
-      "show_server_time": "Display server time",
-      "show_server_time_desc": "Use server time (Global: UTC-5 / Asia: UTC+8) for banner and event schedules instead of the device's local time"
+      "show_server_time": "Отображать время сервера",
+"show_server_time_desc": "Использовать время сервера (Global: UTC-5 / Asia: UTC+8) для расписания баннеров и ивентов вместо локального времени устройства"
     },
     "cloud": {
       "title": "Синхронизация с облаком",
