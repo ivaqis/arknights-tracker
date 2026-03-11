@@ -38,8 +38,8 @@ const BANNERS = [
     name: "Hues Of Passion",
     type: "special",
     startTime: "2026-02-24 12:00:00",
-    endTime: "2026-03-11 09:00:00",
-    endTimeAsia: "2026-03-11 22:00:00",
+    endTime: "2026-03-11 17:00:00",
+    endTimeAsia: "2026-03-12 06:00:00",
     featured6: ["yvonne"],
   },
   {
@@ -47,8 +47,8 @@ const BANNERS = [
     name: "Smelting Forge Issue",
     type: "weapon",
     startTime: "2026-01-22 03:00:00",
-    endTime: "2026-03-11 09:00:00",
-    endTimeAsia: "2026-03-11 22:00:00",
+    endTime: "2026-03-11 17:00:00",
+    endTimeAsia: "2026-03-12 06:00:00",
     featured6: ["forgebornScathe"],
   },
   {

@@ -916,7 +916,7 @@
                                                 class="flex items-center gap-1.5"
                                             >
                                                 <span
-                                                    class="text-base font-black text-[#21272C] dark:text-[#FDFDFD] font-nums leading-none"
+                                                    class="font-black text-[#21272C] dark:text-[#FDFDFD] font-nums leading-none"
                                                 >
                                                     {point.count}
                                                 </span>
