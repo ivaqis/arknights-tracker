@@ -312,7 +312,7 @@
                                     skillData[key] ||
                                     key.replace(/([A-Z])/g, " $1").trim()}
                             </span>
-                            <span class="font-nums font-bold text-[#21272C] dark:text-[#E4E4E4] text-base">
+                            <span class="font-nums font-bold text-[#21272C] dark:text-[#E4E4E4]">
                                 {getValue(key, level)}
                             </span>
                         </div>

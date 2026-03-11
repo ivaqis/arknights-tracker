@@ -14,6 +14,8 @@
     "theme_dark": "Tối",
     "theme_light": "Sáng"
   },
+  "maintenance_title": "Bảo trì",
+  "maintenance_desc": "Hiện tại đang có công tác kỹ thuật để cập nhật trang web. Vui lòng quay lại sau một chút!",
   "footer": {
     "devResources": "Tài nguyên nhà phát triển",
     "officialResources": "Tài nguyên chính thức",
@@ -634,6 +636,7 @@
   },
   "home": {
     "promocodes": "Mã khuyến mãi",
+    "go_back": "Quay lại",
     "rewards": "Phần thưởng",
     "duration": "Thời hạn",
     "current_banners": "Banner hiện tại",

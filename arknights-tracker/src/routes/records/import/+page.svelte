@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, onDestroy } from "svelte";
     import { user, checkSync } from "$lib/stores/cloudStore";
     import { get } from "svelte/store";
     import { t } from "$lib/i18n";
@@ -28,6 +28,20 @@
     let isSaveTokenEnabled = false;
     let tokenName = "";
     let savedTokens = [];
+    let isMaintenance = false;
+    let timerInterval;
+
+    //Maintanance
+    const maintenanceStartTime = new Date("2026-03-11T17:00:00-05:00").getTime();
+
+    function checkMaintenanceStatus() {
+        const now = Date.now();
+        if (now >= maintenanceStartTime) {
+            isMaintenance = true;
+        } else {
+            isMaintenance = false;
+        }
+    }
 
     const ALLOWED_DOMAINS = ["ef-webview.gryphline.com"];
     let isInputError = false;
@@ -37,6 +51,14 @@
 
     onMount(() => {
         loadSavedTokens();
+        checkMaintenanceStatus();
+        timerInterval = setInterval(() => {
+            checkMaintenanceStatus();
+        }, 1000);
+    });
+
+    onDestroy(() => {
+        if (timerInterval) clearInterval(timerInterval);
     });
 
     function loadSavedTokens() {
@@ -376,6 +398,8 @@
         </h2>
     </div>
 
+    {#if !isMaintenance}
+
     <div
         class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
     >
@@ -395,57 +419,98 @@
             {/each}
         </div>
 
-        <div class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm">
-    <div class="flex items-start gap-4">
-        <div class="mt-0.5 text-[#FACC15] shrink-0">
-            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+        <div
+            class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm"
+        >
+            <div class="flex items-start gap-4">
+                <div class="mt-0.5 text-[#FACC15] shrink-0">
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                    </svg>
+                </div>
+                <div class="flex-1">
+                    <h3
+                        class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2"
+                    >
+                        {$t("import.faq_security_title") ||
+                            "FAQ: Безопасность аккаунта"}
+                    </h3>
+
+                    <div class="mb-4">
+                        <h4
+                            class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
+                        >
+                            {$t("import.faq_q1") ||
+                                "Опасно ли использовать скрипты?"}
+                        </h4>
+                        <p
+                            class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
+                        >
+                            {@html $t("import.faq_security_desc1") ||
+                                "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4
+                            class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
+                        >
+                            {$t("import.faq_q2") || "Опасен ли Goyfield.moe?"}
+                        </h4>
+                        <p
+                            class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
+                        >
+                            {@html $t("import.faq_security_desc2") ||
+                                '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
+                        </p>
+                    </div>
+
+                    <div
+                        class="mb-5 text-sm text-gray-500 dark:text-[#999] bg-gray-50 dark:bg-[#2C2C2C] border-l-2 border-[#FACC15] p-3 rounded-r-lg"
+                    >
+                        <span
+                            class="font-bold text-gray-700 dark:text-[#E0E0E0]"
+                            >{$t("import.note") || "Note"}:</span
+                        >
+                        {@html $t("import.faq_security_desc3") ||
+                            "Для запуска скриптов PowerShell <strong>не требуется</strong> запуск PowerShell с правами администратора."}
+                    </div>
+
+                    <div
+                        class="bg-red-50 dark:bg-red-500/10 rounded-lg p-3 border border-red-100 dark:border-red-500/20"
+                    >
+                        <p
+                            class="text-xs font-bold text-red-600 dark:text-red-400 flex items-start gap-2 m-0"
+                        >
+                            <span
+                                class="text-base leading-none text-red-600 dark:text-red-400 mt-0.5"
+                            >
+                                <Icon name="warning" class="w-4 h-4" />
+                            </span>
+                            <span class="leading-relaxed">
+                                {@html $t(
+                                    "import.faq_security_warning",
+                                ).replace(
+                                    "{link}",
+                                    "https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/",
+                                ) ||
+                                    `Если вы пользовались сайтом <strong>Endfieldrecords</strong>, то немедленно поменяйте пароль в игре и проследуйте <a href="https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/" target="_blank" class="underline">гайду на Reddit</a> для проверки своего компьютера.`}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex-1">
-            <h3 class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2">
-                {$t("import.faq_security_title") || "FAQ: Безопасность аккаунта"}
-            </h3>
-
-            <div class="mb-4">
-                <h4 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm">
-                    {$t("import.faq_q1") || "Опасно ли использовать скрипты?"}
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed">
-                    {@html $t("import.faq_security_desc1") || "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
-                </p>
-            </div>
-
-            <div class="mb-4">
-                <h4 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm">
-                    {$t("import.faq_q2") || "Опасен ли Goyfield.moe?"}
-                </h4>
-                <p class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed">
-                    {@html $t("import.faq_security_desc2") || '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
-                </p>
-            </div>
-
-            <div class="mb-5 text-sm text-gray-500 dark:text-[#999] bg-gray-50 dark:bg-[#2C2C2C] border-l-2 border-[#FACC15] p-3 rounded-r-lg">
-                <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{$t("import.note") || "Note"}:</span> 
-                {@html $t("import.faq_security_desc3") || "Для запуска скриптов PowerShell <strong>не требуется</strong> запуск PowerShell с правами администратора."}
-            </div>
-
-            <div class="bg-red-50 dark:bg-red-500/10 rounded-lg p-3 border border-red-100 dark:border-red-500/20">
-                <p class="text-xs font-bold text-red-600 dark:text-red-400 flex items-start gap-2 m-0">
-                    <span class="text-base leading-none text-red-600 dark:text-red-400 mt-0.5">
-                        <Icon name="warning" class="w-4 h-4" />
-                    </span>
-                    <span class="leading-relaxed">
-                        {@html $t("import.faq_security_warning").replace(
-                            "{link}",
-                            "https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/"
-                        ) || `Если вы пользовались сайтом <strong>Endfieldrecords</strong>, то немедленно поменяйте пароль в игре и проследуйте <a href="https://www.reddit.com/r/Endfield/comments/1rjx5v6/endfieldrecords_dot_com_pull_tracker_malware/" target="_blank" class="underline">гайду на Reddit</a> для проверки своего компьютера.`}
-                    </span>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
         {#if platformTab === "android"}
             <div
                 class="mb-4 p-4 bg-yellow-50 dark:bg-yellow-600/30 border border-yellow-100 dark:border-yellow-500/20 rounded-lg flex items-start gap-3 transition-colors"
@@ -1059,6 +1124,34 @@
             {/if}
         </div>
     </div>
+
+    {:else}
+
+    <div class="min-h-[60vh] w-full flex flex-col items-center justify-center px-4 sm:px-8 font-sans">
+        <div class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] p-8 max-w-md w-full text-center flex flex-col items-center animate-fade-in">
+            
+            <div class="w-16 h-16 mb-5 text-[#FACC15] flex items-center justify-center bg-yellow-50 dark:bg-[#4a4220] rounded-full shadow-inner">
+                <Icon name="settings" class="w-9 h-9 animate-[spin_4s_linear_infinite]" />
+            </div>
+
+            <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-3">
+                {$t("maintenance_title")}
+            </h2>
+            
+            <p class="text-sm text-gray-500 dark:text-[#B7B6B3] leading-relaxed">
+                {$t("maintenance_desc")}
+            </p>
+
+            <button 
+                on:click={() => window.location.href = '/records'}
+                class="mt-6 px-6 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-[#2C2C2C] dark:hover:bg-[#1E1E1E] text-gray-700 dark:text-[#E0E0E0] text-sm font-bold rounded-lg transition-colors"
+            >
+                {$t("home.go_back") || "На главную"}
+            </button>
+        </div>
+    </div>
+
+{/if}
 </div>
 <ConfirmationModal
     isOpen={isDeleteModalOpen}

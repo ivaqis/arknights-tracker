@@ -14,6 +14,8 @@
     "theme_dark": "ダーク",
     "theme_light": "ライト"
   },
+  "maintenance_title": "メンテナンス中",
+  "maintenance_desc": "現在、サイト更新のための技術的な作業を行っています。後でもう一度アクセスしてください！",
   "footer": {
     "devResources": "開発者リソース",
     "officialResources": "公式リソース",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "プロモーションコード",
+    "go_back": "戻る",
     "rewards": "報酬",
     "duration": "期間",
     "current_banners": "現在のバナー",

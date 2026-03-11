@@ -457,7 +457,7 @@
                     <div class="relative pot-dropdown-container">
                         <button 
                             on:click={() => isPotDropdownOpen = !isPotDropdownOpen}
-                            class="flex h-[40px] items-center gap-3 bg-white dark:bg-[#4A4A4A] text-[13px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-50 dark:hover:bg-[#555] transition-colors shadow-sm"
+                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[13px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-50 dark:hover:bg-[#555] transition-colors shadow-sm"
                         >
                             <span class="font-medium text-gray-500 dark:text-gray-300 font-sans">{tOrFallback("menu.potentials", "Потенциал")}</span>
                             <span class="font-medium text-[#21272C] dark:text-white">{previewPot}</span>

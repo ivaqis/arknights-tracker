@@ -10,6 +10,10 @@ const defaultData = {
     "new-player": { pulls: [], stats: {} }
 };
 
+const nameFixes = {
+    "Prominent Edge": "Contingent Measure"
+};
+
 function createPullStore() {
     const { subscribe, set, update } = writable(JSON.parse(JSON.stringify(defaultData)));
 
@@ -33,7 +37,7 @@ function createPullStore() {
                 });
                 data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
                 if (serverId) {
-                     data[key].pulls = calculatePity(data[key].pulls, key, serverId);
+                    data[key].pulls = calculatePity(data[key].pulls, key, serverId);
                 }
             }
         });
@@ -69,8 +73,8 @@ function createPullStore() {
                 if (legacyData && id === 'main') {
                     console.log("Migrating legacy data to Main account...");
                     const parsedLegacy = JSON.parse(legacyData);
-                     restoreDatesAndStats(parsedLegacy, serverId);
-                     set(parsedLegacy);
+                    restoreDatesAndStats(parsedLegacy, serverId);
+                    set(parsedLegacy);
 
                     saveDataToStorage(id, parsedLegacy);
                     localStorage.removeItem('ark_tracker_pulls');
@@ -88,10 +92,10 @@ function createPullStore() {
     if (browser) {
         accountStore.selectedId.subscribe(id => {
             if (id) {
-                const allAccounts = get(accountStore.accounts); 
+                const allAccounts = get(accountStore.accounts);
                 const currentAcc = allAccounts.find(a => a.id === id);
                 const sId = currentAcc?.serverId || '3';
-                
+
                 loadDataForAccount(id, sId);
             }
         });
@@ -110,8 +114,8 @@ function createPullStore() {
             if (!browser) return;
 
             newPulls.forEach(p => {
-                if (p.name === "Prominent Edge") {
-                    p.name = "Contingent Measure";
+                if (nameFixes[p.name]) {
+                    p.name = nameFixes[p.name];
                 }
             });
 
@@ -165,7 +169,7 @@ function createPullStore() {
 
                             if (reallyNew.length > 0) {
                                 const mergedList = mergePulls(oldList, reallyNew);
-                                
+
                                 const pullsWithPity = calculatePity(mergedList, targetKey, serverId);
                                 newData[targetKey].pulls = pullsWithPity;
                                 newData[targetKey].stats = calculateBannerStats(pullsWithPity, targetKey, serverId);
@@ -178,7 +182,7 @@ function createPullStore() {
 
                         if (hasUpdates) {
                             report.status = 'updated';
-                            
+
                             if (commit) {
                                 saveDataToStorage(currentAccountId, newData);
                                 if (browser) localStorage.setItem("ark_last_sync", Date.now().toString());

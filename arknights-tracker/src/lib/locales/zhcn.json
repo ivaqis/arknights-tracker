@@ -14,6 +14,8 @@
     "theme_dark": "深色",
     "theme_light": "浅色"
   },
+  "maintenance_title": "系统维护中",
+  "maintenance_desc": "目前正在进行网站更新的技术维护工作。请稍后再试！",
   "footer": {
     "devResources": "开发者资源",
     "officialResources": "官方资源",
@@ -634,6 +636,7 @@
   },
   "home": {
     "promocodes": "兑换码",
+    "go_back": "返回",
     "rewards": "奖励",
     "duration": "持续时间",
     "current_banners": "当前卡池",

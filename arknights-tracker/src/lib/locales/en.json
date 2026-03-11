@@ -20,6 +20,8 @@
     "cloud_text2": "Unlike local storage, when using this feature, your pull data is securely stored in our cloud database (Firebase). You can sign out of your account at any time via Settings.",
     "close": "Close"
   },
+  "maintenance_title": "Maintenance",
+  "maintenance_desc": "Technical work to update the site is currently underway. Please check back a little later!",
   "sidebar": {
     "home": "Home",
     "records": "Headhunting Records",
@@ -677,6 +679,7 @@
   },
   "home": {
     "promocodes": "Promo codes",
+    "go_back": "Back",
     "rewards": "Rewards",
     "duration": "Duration",
     "current_banners": "Current banners",

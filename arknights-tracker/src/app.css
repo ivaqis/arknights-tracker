@@ -30,6 +30,47 @@
     --color-border: #444444;
     --color-accent: #FFE145;
   }
+
+  * {
+    scrollbar-width: thin; 
+    scrollbar-color: #90969d transparent; 
+  }
+
+  .dark * {
+    scrollbar-color: #464646 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #50555a;
+    border-radius: 10px;
+    border: 2px solid transparent; 
+    background-clip: padding-box;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+  }
+
+  .dark *::-webkit-scrollbar-thumb {
+    background-color: #525252;
+  }
+
+  .dark *::-webkit-scrollbar-thumb:hover {
+    background-color: #737373;
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
 
 :root {
@@ -52,3 +93,17 @@ body {
   font-family: 'Noto Sans';
   font-weight: 800;
 }
+
+html {
+    scrollbar-width: auto; 
+  }
+
+  /* Для Chrome/Safari: делаем скролл окна шире (14px) */
+  html::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  /* Делаем сам ползунок чуть толще, чтобы было удобно хватать */
+  html::-webkit-scrollbar-thumb {
+    border: 3px solid transparent; 
+  }

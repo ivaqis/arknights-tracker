@@ -14,6 +14,8 @@
     "theme_dark": "Gelap",
     "theme_light": "Terang"
   },
+  "maintenance_title": "Pemeliharaan",
+  "maintenance_desc": "Pekerjaan teknis untuk memperbarui situs saat ini sedang berlangsung. Silakan periksa kembali nanti!",
   "footer": {
     "devResources": "Sumber Daya Pengembang",
     "officialResources": "Sumber Daya Resmi",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "Kode Promo",
+    "go_back": "Kembali",
     "rewards": "Hadiah",
     "duration": "Durasi",
     "current_banners": "Banner Saat Ini",

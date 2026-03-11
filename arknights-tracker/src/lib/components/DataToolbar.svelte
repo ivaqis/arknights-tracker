@@ -124,7 +124,7 @@
     <div class="relative">
         <button
             type="button"
-            class="h-[40px] dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
+            class="h-[40px] dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
             on:click|stopPropagation={toggleSortDropdown}
         >
             <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
@@ -152,7 +152,7 @@
 
     <button
         type="button"
-        class="h-[40px] px-4 bg-gray-100 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors cursor-pointer"
+        class="h-[40px] px-4 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors cursor-pointer"
         on:click={toggleSortDirection}
     >
         <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 pointer-events-none">
@@ -169,7 +169,7 @@
         <button
             type="button"
             aria-label="Filters"
-            class="h-[40px] w-[40px] dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] hover:dark:bg-[#373737] flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-gray-800 text-white hover:bg-gray-700' : 'text-gray-800'}"
+            class="h-[40px] w-[40px] dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] hover:dark:bg-[#373737] flex items-center justify-center bg-gray-200 hover:bg-gray-200 rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-gray-800 text-white hover:bg-gray-700' : 'text-gray-800'}"
             on:click|stopPropagation={toggleFilterDropdown}
         >
             <Icon name="filter" class="w-4 h-4 text-current pointer-events-none" />
@@ -319,7 +319,7 @@
         <input
             type="text"
             bind:value={searchQuery}
-            class="w-full h-[40px] dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-100 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
+            class="w-full h-[40px] dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
             placeholder={$t("sort.search") || "Search..."}
         />
 

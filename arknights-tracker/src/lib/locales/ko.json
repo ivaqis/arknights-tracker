@@ -14,6 +14,8 @@
     "theme_dark": "다크",
     "theme_light": "라이트"
   },
+  "maintenance_title": "점검 중",
+  "maintenance_desc": "현재 사이트 업데이트를 위한 기술 점검이 진행 중입니다. 잠시 후 다시 확인해 주세요!",
   "footer": {
     "devResources": "개발자 리소스",
     "officialResources": "공식 리소스",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "프로모션 코드",
+    "go_back": "뒤로",
     "rewards": "보상",
     "duration": "기간",
     "current_banners": "진행 중인 배너",

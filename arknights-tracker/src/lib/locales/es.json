@@ -14,6 +14,8 @@
     "theme_dark": "Oscuro",
     "theme_light": "Claro"
   },
+  "maintenance_title": "Mantenimiento",
+  "maintenance_desc": "En este momento se están realizando trabajos técnicos para actualizar el sitio. ¡Por favor, vuelve un poco más tarde!",
   "footer": {
     "devResources": "Recursos del desarrollador",
     "officialResources": "Recursos oficiales",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "Códigos promocionales",
+    "go_back": "Atrás",
     "rewards": "Recompensas",
     "duration": "Duración",
     "current_banners": "Banners actuales",

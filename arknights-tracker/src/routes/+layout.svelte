@@ -447,10 +447,10 @@
                             {$t("footer.devResources")}
                         </span>
                         <div class="flex items-center gap-4 mt-1">
-                            <a href="https://discord.gg/nqfuaRbWWn " target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="Discord">
+                            <a href="https://discord.gg/nqfuaRbWWn " target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="Discord">
                                 <Icons name="discrodBig" class="h-[22px] w-auto" />
                             </a>
-                            <a href="https://github.com/ivaqis/arknights-tracker" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="GitHub">
+                            <a href="https://github.com/ivaqis/arknights-tracker" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="GitHub">
                                 <Icons name="gitHubBig" class="h-[22px] w-auto" />
                             </a>
                         </div>
@@ -463,16 +463,16 @@
                             {$t("footer.officialResources")}
                         </span>
                         <div class="flex items-center gap-4 mt-1">
-                            <a href="https://x.com/AKEndfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="X (Twitter)">
+                            <a href="https://x.com/AKEndfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="X (Twitter)">
                                 <Icons name="twitter" class="h-[22px] w-auto" />
                             </a>
-                            <a href="https://www.skport.com" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="Skport">
+                            <a href="https://www.skport.com" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="Skport">
                                 <Icons name="skport" class="h-[22px] w-auto" />
                             </a>
-                            <a href="https://discord.gg/akendfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="Official Discord">
+                            <a href="https://discord.gg/akendfield" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="Official Discord">
                                 <Icons name="discord" class="h-[22px] w-auto" />
                             </a>
-                            <a href="https://www.youtube.com/@arknightsendfieldEN" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/80 hover:opacity-70 dark:text-white/80 transition-opacity" title="Official YouTube">
+                            <a href="https://www.youtube.com/@arknightsendfieldEN" target="_blank" rel="noopener noreferrer" class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity" title="Official YouTube">
                                 <Icons name="youtube" class="h-[22px] w-auto" />
                             </a>
                         </div>

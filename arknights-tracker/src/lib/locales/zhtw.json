@@ -14,6 +14,8 @@
     "theme_dark": "深色",
     "theme_light": "淺色"
   },
+  "maintenance_title": "系統維護中",
+  "maintenance_desc": "目前正在進行網站更新的技術維護工作。請稍後再試！",
   "footer": {
     "devResources": "開發者資源",
     "officialResources": "官方資源",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "兌換碼",
+    "go_back": "返回",
     "rewards": "獎勵",
     "duration": "持續時間",
     "current_banners": "當前卡池",

@@ -14,6 +14,8 @@
     "theme_dark": "Dunkel",
     "theme_light": "Hell"
   },
+  "maintenance_title": "Wartungsarbeiten",
+  "maintenance_desc": "Derzeit finden technische Arbeiten zur Aktualisierung der Website statt. Bitte schauen Sie später noch einmal vorbei!",
   "footer": {
     "devResources": "Entwickler-Ressourcen",
     "officialResources": "Offizielle Ressourcen",
@@ -635,6 +637,7 @@
   },
   "home": {
     "promocodes": "Promocodes",
+    "go_back": "Zurück",
     "rewards": "Belohnungen",
     "duration": "Dauer",
     "current_banners": "Aktuelle Banner",
