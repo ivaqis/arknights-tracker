@@ -26,6 +26,10 @@ function createPullStore() {
             if (data[key] && Array.isArray(data[key].pulls)) {
                 data[key].pulls.forEach(p => {
                     if (p.time) p.time = new Date(p.time);
+
+                    if (p.name === "Prominent Edge") {
+                        p.name = "Contingent Measure";
+                    }
                 });
                 data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
                 if (serverId) {
@@ -104,6 +108,12 @@ function createPullStore() {
         update,
         smartImport: async (newPulls, serverId = '3', commit = true) => {
             if (!browser) return;
+
+            newPulls.forEach(p => {
+                if (p.name === "Prominent Edge") {
+                    p.name = "Contingent Measure";
+                }
+            });
 
             await new Promise(r => setTimeout(r, 100));
 

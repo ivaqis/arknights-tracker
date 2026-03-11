@@ -230,7 +230,7 @@ function createAccountStore() {
                  if (browser) localStorage.removeItem("user_uid");
 
                  window.dispatchEvent(new CustomEvent('ark_tracker_clear_data', { detail: { id: current } }));
-                 console.log("✅ Аккаунт полностью очищен.");
+                 console.log("Аккаунт полностью очищен.");
              }
         }
     };

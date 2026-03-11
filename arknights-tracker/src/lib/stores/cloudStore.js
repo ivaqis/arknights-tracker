@@ -188,7 +188,7 @@ export async function uploadLocalData(freshSnapshot = null) {
         accounts.forEach(acc => {
             if (acc.id === selectedId && freshSnapshot) {
                 fullBackup.data[acc.id] = freshSnapshot;
-                console.log(`✅ Packed (Memory): ${acc.name}`);
+                console.log(`Packed (Memory): ${acc.name}`);
                 ['standard', 'special', 'new-player'].forEach(cat => {
                     const list = freshSnapshot[cat]?.pulls || [];
                     totalPulls += list.length;
@@ -199,7 +199,7 @@ export async function uploadLocalData(freshSnapshot = null) {
                 if (rawData) {
                     const parsed = JSON.parse(rawData);
                     fullBackup.data[acc.id] = parsed;
-                    console.log(`✅ Packed (Disk): ${acc.name}`);
+                    console.log(`Packed (Disk): ${acc.name}`);
                     ['standard', 'special', 'new-player'].forEach(cat => {
                         const list = parsed[cat]?.pulls || [];
                         totalPulls += list.length;
@@ -211,7 +211,7 @@ export async function uploadLocalData(freshSnapshot = null) {
             }
         });
 
-        console.log(`📦 Payload ready. Total: ${totalPulls}`);
+        console.log(`Payload ready. Total: ${totalPulls}`);
 
         const jsonString = JSON.stringify(fullBackup);
         const userRef = doc(db, "users", currentUser.uid);

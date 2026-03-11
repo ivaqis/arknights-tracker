@@ -14,7 +14,6 @@ const sortPulls = (a, b) => {
     return (a.seqId || 0) - (b.seqId || 0);
 };
 
-// 1. Единая функция для определения ID сервера (с фоллбеком на localStorage)
 function resolveServerId(specificServerId) {
     let sid = specificServerId;
     if (!sid && typeof window !== 'undefined') {
@@ -23,14 +22,12 @@ function resolveServerId(specificServerId) {
     return String(sid);
 }
 
-// 2. Используем resolveServerId
 function getServerOffset(specificServerId) {
     const sid = resolveServerId(specificServerId);
     if (sid === "2") return 8; 
     return -5; 
 }
 
-// 3. НОВЫЙ ПОМОЩНИК: Умное извлечение правильных дат баннера
 function getBannerDates(banner, specificServerId) {
     if (!banner) return { startStr: null, endStr: null };
     const sid = resolveServerId(specificServerId);
@@ -66,7 +63,6 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
     }
 
     const candidates = banners.filter(b => {
-        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ
         const dates = getBannerDates(b, serverId);
         const start = parseDateWithServer(dates.startStr, serverId).getTime();
         const end = dates.endStr ? parseDateWithServer(dates.endStr, serverId).getTime() : Infinity;
@@ -88,7 +84,6 @@ function findBannerConfigByTime(timestamp, categoryContext, serverId) {
 
     if (candidates.length > 0) {
         candidates.sort((a, b) => 
-            // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ СОРТИРОВКИ
             parseDateWithServer(getBannerDates(b, serverId).startStr, serverId).getTime() - 
             parseDateWithServer(getBannerDates(a, serverId).startStr, serverId).getTime()
         );
@@ -200,7 +195,6 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
             return b.type === 'special';
         });
         
-        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ ПОИСКА АКТИВНОГО БАННЕРА
         candidates.sort((a, b) => 
             parseDateWithServer(getBannerDates(b, accountServerId).startStr, accountServerId).getTime() - 
             parseDateWithServer(getBannerDates(a, accountServerId).startStr, accountServerId).getTime()
@@ -218,7 +212,6 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     let mileageStart = 0;
     let mileageEnd = 0;
     if (currentViewBanner) {
-        // ИСПОЛЬЗУЕМ УМНЫЕ ДАТЫ ДЛЯ МАЙЛИДЖА (MILEAGE)
         const dates = getBannerDates(currentViewBanner, accountServerId);
         mileageStart = parseDateWithServer(dates.startStr, accountServerId).getTime();
         mileageEnd = dates.endStr ? parseDateWithServer(dates.endStr, accountServerId).getTime() : Infinity;
