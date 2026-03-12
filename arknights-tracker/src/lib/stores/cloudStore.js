@@ -1,20 +1,45 @@
 import { writable, get } from "svelte/store";
-import { auth, db, provider, analytics } from "$lib/firebase"; 
+import { auth, db, provider, analytics } from "$lib/firebase";
 import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { logEvent } from "firebase/analytics";
-import { accountStore } from "$lib/stores/accounts"; 
+import { accountStore } from "$lib/stores/accounts";
 
 export const user = writable(null);
-export const syncStatus = writable("idle"); 
+export const syncStatus = writable("idle");
 export const cloudDataBuffer = writable(null);
 export const justSynced = writable(false);
+
+function compressDataForCloud(fullBackup) {
+    const compressed = { meta: fullBackup.meta, data: {} };
+
+    Object.entries(fullBackup.data).forEach(([accId, accData]) => {
+        compressed.data[accId] = {};
+
+        ['standard', 'special', 'new-player'].forEach(cat => {
+            if (accData[cat]?.pulls) {
+                compressed.data[accId][cat] = {
+                    pulls: accData[cat].pulls.map(p => ({
+                        n: p.name,
+                        t: p.time ? new Date(p.time).getTime() : p.timestamp,
+                        r: p.rarity,
+                        p: p.pity,
+                        s: p.seqId,
+                        g: p.gachaStatus,
+                        id: p.id
+                    }))
+                };
+            }
+        });
+    });
+    return compressed;
+}
 
 function countAllLocalPulls() {
     if (typeof window === 'undefined') return 0;
     let accounts = [];
-    try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) accounts = JSON.parse(raw).accounts; } catch(e) {}
-    if (!accounts || !accounts.length) accounts = [{id: 'main'}];
+    try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) accounts = JSON.parse(raw).accounts; } catch (e) { }
+    if (!accounts || !accounts.length) accounts = [{ id: 'main' }];
     let total = 0;
     accounts.forEach(acc => {
         const raw = localStorage.getItem(`ark_tracker_data_${acc.id}`);
@@ -22,7 +47,7 @@ function countAllLocalPulls() {
             try {
                 const data = JSON.parse(raw);
                 ['standard', 'special', 'new-player'].forEach(cat => { if (data[cat]?.pulls) total += data[cat].pulls.length; });
-            } catch (e) {}
+            } catch (e) { }
         }
     });
     return total;
@@ -53,19 +78,19 @@ export async function checkSync(currentUser, freshSnapshot = null) {
 
     try {
         const localLastUpdated = parseInt(localStorage.getItem("ark_last_sync") || "0");
-        
+
         let localTotal = 0;
         let accounts = [];
         let selectedId = 'main';
         try {
             if (accountStore.accounts) accounts = get(accountStore.accounts);
             if (accountStore.selectedId) selectedId = get(accountStore.selectedId);
-        } catch (e) {}
-        
+        } catch (e) { }
+
         if (!accounts || !accounts.length) {
-             try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) { const p = JSON.parse(raw); accounts = p.accounts; selectedId = p.selectedId; } } catch(e) {}
+            try { const raw = localStorage.getItem("ark_tracker_accounts"); if (raw) { const p = JSON.parse(raw); accounts = p.accounts; selectedId = p.selectedId; } } catch (e) { }
         }
-        if (!accounts || !accounts.length) accounts = [{id: 'main'}];
+        if (!accounts || !accounts.length) accounts = [{ id: 'main' }];
 
         accounts.forEach(acc => {
             if (acc.id === selectedId && freshSnapshot) {
@@ -78,7 +103,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
                     try {
                         const data = JSON.parse(raw);
                         ['standard', 'special', 'new-player'].forEach(cat => { if (data[cat]?.pulls) localTotal += data[cat].pulls.length; });
-                    } catch (e) {}
+                    } catch (e) { }
                 }
             }
         });
@@ -92,7 +117,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
             const cloudLastUpdated = cloudData.lastUpdated?.toMillis() || 0;
             const cloudTotal = cloudData.stats?.totalPulls || 0;
             let cloudFullBackup = null;
-            try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) {}
+            try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) { }
 
             console.log(`📊 Check: Local(${localTotal}) vs Cloud(${cloudTotal}).`);
 
@@ -112,14 +137,14 @@ export async function checkSync(currentUser, freshSnapshot = null) {
                 return;
             }
             if (cloudTotal > localTotal) {
-                 setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
-                 return;
+                setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
+                return;
             }
             const diff = cloudLastUpdated - localLastUpdated;
             if (Math.abs(diff) > 10000) {
-                 if (diff > 0) setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
-                 else setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "local_newer");
-                 return;
+                if (diff > 0) setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
+                else setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "local_newer");
+                return;
             }
             syncStatus.set("synced");
         } else {
@@ -146,18 +171,35 @@ export function applyCloudData() {
             try {
                 if (accountStore.accounts) accountStore.accounts.set(meta.accounts);
                 if (accountStore.selectAccount && meta.selectedId) accountStore.selectAccount(meta.selectedId);
-            } catch(err) {}
+            } catch (err) { }
         }
         if (data) {
             Object.entries(data).forEach(([accId, accData]) => {
-                localStorage.setItem(`ark_tracker_data_${accId}`, JSON.stringify(accData));
+                const restoredAccData = {};
+                
+                Object.entries(accData).forEach(([cat, content]) => {
+                    restoredAccData[cat] = {
+                        pulls: (content.pulls || []).map(p => ({
+                            name: p.n,
+                            time: new Date(p.t),
+                            rarity: p.r,
+                            pity: p.p,
+                            seqId: p.s,
+                            gachaStatus: p.g,
+                            id: p.id
+                        })),
+                        stats: {}
+                    };
+                });
+
+                localStorage.setItem(`ark_tracker_data_${accId}`, JSON.stringify(restoredAccData));
             });
         }
         localStorage.setItem("ark_last_sync", buffer.timestamp.toString());
         syncStatus.set("synced");
         cloudDataBuffer.set(null);
         sessionStorage.setItem("show_sync_toast", "true");
-        window.location.reload(); 
+        window.location.reload();
     } catch (e) { console.error("Restore failed", e); }
 }
 
@@ -173,12 +215,12 @@ export async function uploadLocalData(freshSnapshot = null) {
         try {
             if (accountStore.accounts) accounts = get(accountStore.accounts);
             if (accountStore.selectedId) selectedId = get(accountStore.selectedId);
-        } catch (e) {}
+        } catch (e) { }
 
         if (!accounts || !accounts.length) {
             const raw = localStorage.getItem("ark_tracker_accounts");
             if (raw) { const p = JSON.parse(raw); accounts = p.accounts; selectedId = p.selectedId; }
-            else { accounts = [{id: 'main', name: 'Main'}]; }
+            else { accounts = [{ id: 'main', name: 'Main' }]; }
         }
 
         const fullBackup = { meta: { accounts, selectedId }, data: {} };
@@ -206,16 +248,30 @@ export async function uploadLocalData(freshSnapshot = null) {
                         sixStars += list.filter(p => p.rarity === 6).length;
                     });
                 } else {
-                    fullBackup.data[acc.id] = { standard: {pulls:[]}, special: {pulls:[]}, "new-player": {pulls:[]} };
+                    fullBackup.data[acc.id] = { standard: { pulls: [] }, special: { pulls: [] }, "new-player": { pulls: [] } };
                 }
             }
         });
 
         console.log(`Payload ready. Total: ${totalPulls}`);
 
-        const jsonString = JSON.stringify(fullBackup);
+        const compressedBackup = compressDataForCloud(fullBackup);
+        const jsonString = JSON.stringify(compressedBackup);
+
+        let sizeInBytes = 0;
+        if (typeof window !== 'undefined') {
+            sizeInBytes = new Blob([jsonString]).size;
+            console.log(`📦 Compressed size: ${(sizeInBytes / 1024).toFixed(2)} KB`);
+        } else {
+            sizeInBytes = Buffer.byteLength(jsonString, 'utf8');
+        }
+
+        if (sizeInBytes > 1048487) {
+            throw new Error("Data too large even after compression.");
+        }
+
         const userRef = doc(db, "users", currentUser.uid);
-        
+
         await setDoc(userRef, {
             displayName: currentUser.displayName,
             photoURL: currentUser.photoURL,
@@ -234,3 +290,4 @@ export async function uploadLocalData(freshSnapshot = null) {
         syncStatus.set("error");
     }
 }
+

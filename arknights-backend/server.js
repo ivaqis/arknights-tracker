@@ -34,10 +34,15 @@ function generateStableUid(pulls) {
 const app = express();
 app.set('trust proxy', 1);
 let prisma;
-try {
-    prisma = new PrismaClient();
-} catch (e) {
-    console.warn("Prisma Client not initialized.");
+if (process.env.DATABASE_URL) {
+    try {
+        prisma = new PrismaClient();
+        console.log("Database connection initialized.");
+    } catch (e) {
+        console.warn("Prisma Client failed to initialize:", e.message);
+    }
+} else {
+    console.log("Running in Local Mode. Stats will not be saved.");
 }
 
 const PORT = 3001;
@@ -329,6 +334,7 @@ function mapPoolTypeToShort(longType) {
 }
 
 async function updateAggregatedStats(uid, allPulls, serverId) {
+    if (!prisma) return;
     if (!allPulls.length) return;
 
     await prisma.user.upsert({ where: { uid }, update: {}, create: { uid } });

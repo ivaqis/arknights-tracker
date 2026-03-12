@@ -2,7 +2,7 @@
   "error_account_mismatch": "Error: Account Mismatch! You already have history between {startDate} and {endDate}. Please check if you selected the correct account.",
   "seo": {
     "title": "Goyfield - Arknights Endfield Pull Tracker",
-    "description": "Advanced Wish Tracker for Arknights: Endfield. Track your pull history, calculate pity counters, and predict your next guaranteed operator or weapon.",
+    "description": "Advanced Pull Tracker for Arknights: Endfield. Track your pull history, calculate pity counters, and predict your next guaranteed operator or weapon.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Аркнайтс Эндфилд, Аркнайтс, Трекер гачи, История круток, Оперативники, Гойфилд мое, Гойфилд, Goyfield"
   },
   "privacy": {

@@ -2,7 +2,7 @@
 
 export const API_BASE = import.meta.env.PROD 
     ? '/api'
-    : 'https://goyfield.moe/api';
+    : 'http://localhost:3001/api';
 
 export async function fetchGlobalStats(uid, poolId) {
     try {
