@@ -5,7 +5,7 @@
       "Nhiễm Điện"
     ],
     "behaviourHateTags": [
-      "Rèn Luyện Tâm Trí"
+      "Rèn Luyện Tư Duy"
     ],
     "behaviourUnavailableTags": [],
     "blocTag": "Trường Địa Hannabit",
@@ -25,16 +25,16 @@
   "skills": {
     "basicAttack": {
       "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
-        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
-        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
-        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
-        "batkSeq5Multiplier": "Hệ Số Nhân Chuỗi Công CB 5",
-        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
       },
       "name": "Tìm và Săn",
-      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi ít Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
     },
     "battleSkill": {
       "battleSkill": {
@@ -46,7 +46,7 @@
         "spRecovery": "Hồi Điểm KN"
       },
       "name": "Vòng Cung Bão Táp",
-      "description": "Lập tức dịch chuyển đến bên cạnh kẻ địch để thi triển 2 nhát chém gây một chút <@ba.pd>ST Vật Lý</>. Nếu kẻ địch đang bị <#ba.conduct>Điện Hóa</>, <#ba.consume>tiêu hao</> phản ứng <#ba.conduct>Điện Hóa</> để tung thêm một đòn gây <@ba.pulse>ST Điện</> và hồi một ít Điểm KN."
+      "description": "Lập tức dịch chuyển đến bên cạnh kẻ địch để thi triển 2 nhát chém gây một phần <@ba.pd>ST Vật Lý</>. Nếu kẻ địch đang bị <#ba.conduct>Điện Hóa</>, <#ba.consume>giải trừ</> phản ứng <#ba.conduct>Điện Hóa</> để tung đòn tấn công bổ sung gây <@ba.pulse>ST Điện</> và hồi một phần Điểm KN."
     },
     "comboSkill": {
       "comboSkill": {
@@ -55,7 +55,7 @@
         "stagger": "Suy Sụp"
       },
       "name": "Tiếng Sấm Dồn",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.conduct>Điện Hóa</> hoặc sau khi <#ba.conduct>Điện Hóa</> của kẻ địch bị <#ba.consume>tiêu hao</>. \nDịch chuyển tức thời về phía kẻ địch và tung ra một loạt đòn chém, gây <@ba.pd>ST Vật Lý</> và hồi một ít Điểm KN."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.conduct>Điện Hóa</> hoặc sau khi <#ba.conduct>Điện Hóa</> của kẻ địch bị <#ba.consume>tiêu hao</>. \nDịch chuyển tức thời về phía kẻ địch và tung ra một loạt đòn chém, gây <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
     },
     "ultimate": {
       "ultimate": {
@@ -69,10 +69,10 @@
     },
     "indicator": {
       "levels": [
-        "Nhanh Nhẹn Đặc Vụ +10.",
-        "Nhanh Nhẹn Đặc Vụ +15.",
-        "Nhanh Nhẹn Đặc Vụ +15.",
-        "Nhanh Nhẹn Đặc Vụ +20."
+        "Nhanh Nhẹn Cán Viên +10.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +20."
       ],
       "name": "Kẻ Đánh Lén"
     },
@@ -99,17 +99,17 @@
     },
     "baseSkill2": {
       "levels": [
-        "Khi phân công vào Phòng Tiếp Khách, cấp cho các đặc vụ một lượng nhỏ Tăng Xác Suất Manh Mối 6: Trường Địa Hannabit (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
-        "Khi phân công vào Phòng Tiếp Khách, cấp cho các đặc vụ Tăng Xác Suất Manh Mối 6: Trường Địa Hannabit (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)"
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên một lượng nhỏ Tăng Xác Suất Manh Mối 6: Trường Địa Hannabit (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên Tăng Xác Suất Manh Mối 6: Trường Địa Hannabit (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)"
       ],
       "name": "Truyền Thống Ca Dao"
     },
     "files": {
       "main": "<@profile.key>MẬT DANH: Arclight \nGIỚI TÍNH: Nữ \nXÁC MINH: Trường Địa Hannabit \nNGÀY SINH: 3 Tháng 1 \nCHỦNG TỘC: Kuranta \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nDương tính với Oripathy (đã nhiễm), theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Xuất Sắc \nKN CHIẾN ĐẤU: Cơ Bản \nTƯ DUY CHIẾN THUẬT: Thường \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc</>",
-      "humanResources": "<@profile.key>Arclight là một Kẻ Tầm Ca đến từ Trường Địa Hannabit, gia nhập Tập Đoàn Endfield với tư cách là đặc vụ hiện trường nhờ sự tiến cử của Đạo Sư Orisha. Arclight cũng hỗ trợ các hoạt động khác nhau của Endfield, đồng thời đảm nhận bảo trì và sửa chữa cho các loại máy móc và phương tiện của Tập Đoàn Endfield. \n\nVới Arclight, xe mô tô không chỉ đơn thuần là phương tiện di chuyển. Cô xem chúng là bạn đồng hành \"cùng trưởng thành\" với mình. Mỗi lần tháo rời hoặc sửa chữa và cải tiến phương tiện không chỉ đơn giản là phục hồi, mà còn là quá trình tái sinh và biến đổi. Có lẽ chính nhu cầu bảo vệ cả máy móc lẫn sự sống đã giúp Arclight có được sự thấu hiểu sâu sắc về cơ khí và thẩm mỹ. \nNgoài ra, vì Arclight đến từ Trường Địa Hannabit nên cô luôn sẵn lòng chia sẻ kiến thức với những ai cần đến. Dù cô hay dùng lời lẽ mang đầy tính ẩn dụ, nhưng chúng phản ánh sự hiểu biết độc đáo và sâu sắc về nơi hoang vu. \n, Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
-      "file1": "<@profile.key>Tên thật của Đặc Vụ Arclight là Ekut. Mỗi khi có người hỏi có phải cô đến từ Trường Địa Hannabit hay không, Arclight luôn đáp: \"Tôi đi theo Đạo Sư Orisha, mỗi Kẻ Tầm Ca đều là chủ nhân của chính mình.\" \nĐặc Vụ Arclight có một niềm đam mê khó tả với xe mô tô. Kỹ Sư Kho Vũ Khí Semyon thường trao đổi với Arclight về chiếc xe của cô ấy, và đây là những lời anh nói: \n\"Lúc đầu tôi nghĩ đó là một chiếc xe quân sự tùy chỉnh bị rò rỉ ra thị trường dân sự. Tôi không thể tin nổi khi phát hiện nó là một kiệt tác kỹ thuật do chính Arclight tự tay lắp ráp và tinh chỉnh. Tôi đã nghiên cứu kỹ chiếc mô tô sau khi nhận được sự đồng ý của cô ấy. Động cơ sử dụng Originium là một công nghệ lỗi thời từ mười năm trước của Tập Đoàn Mieszko. Bộ truyền động được sản xuất bởi Triglava Armoury. Nhãn trên hệ thống treo đã bị mài mòn, nhưng theo cấu trúc tôi đoán nó đến từ Trung tâm Hỗ trợ Northmarch. Thành phần ấn tượng nhất chính là khung sườn, toàn bộ đều được làm thủ công, từng mối hàn đạt đến độ chi tiết tuyệt đối. Khung xe gần như liền mạch, không hề có sự gượng gạo. Đáng kinh ngạc hơn nữa, đây không chỉ đơn thuần là một chiếc xe lắp ráp mà là sự tích hợp tinh túy và độc đáo từ các nhà sản xuất linh kiện khác nhau. Chỉ có người sở hữu trình độ kỹ thuật thượng thừa mới đạt được điều này. Toàn bộ chiếc xe là sự cân bằng gần như hoàn hảo giữa sức mạnh, độ bền và khả năng điều khiển.\" \nDù mọi người công nhận khả năng kỹ thuật tuyệt vời của Đặc Vụ Arclight, không ít người cũng nhận xét rằng: Cô đối xử với người khác khá lạnh lùng và thường nói chuyện khó hiểu. Ngay cả Đặc Vụ Semyon cũng chia sẻ rằng Arclight rất ít nói. Có lẽ những trải nghiệm đặc biệt của Đặc Vụ Arclight khiến người khác cảm thấy cô thờ ơ, không thân thiện trong ấn tượng đầu tiên. Tuy nhiên, những ai hiểu cô đều biết cô là người lý trí và thấu đáo. Những người thường xuyên trò chuyện với Arclight thậm chí còn nghe cô buông lời như đùa giỡn. Dĩ nhiên là Đặc Vụ Arclight chỉ đang thẳng thắn bày tỏ suy nghĩ của mình chứ không hề có ý chọc cười bất kỳ ai. \nMột số nhận xét nói rằng, sự khó hiểu trong giao tiếp chủ yếu đến từ việc ngôn ngữ của Arclight bị ảnh hưởng bởi phong cách diễn đạt đặc trưng của Trường Địa Hannabit. Arclight có xu hướng sử dụng các dạng ẩn dụ từ thiên nhiên, như dùng tính khí của Quái Thú Chở Hàng để mô tả về hỏng hóc cơ khí, hay dùng từ sương sớm để diễn tả sự lưỡng lự của ai đó. Những người quen thẳng thắn có thể sẽ cảm thấy khó tiếp cận với cách nói chuyện và mạch suy nghĩ của Arclight. Nhưng những ai biết lắng nghe sẽ thấy rõ lập luận sắc bén và hành động kiên định nơi cô. Kẻ Tầm Ca của Trường Địa Hannabit có cách nhìn thế giới và phương thức hành động rất độc đáo. Muốn hiểu được Arclight, bạn cũng phải học cách lắng nghe thế giới qua lời kể của cô. </>",
+      "humanResources": "<@profile.key>Arclight là một Kẻ Tầm Ca đến từ Trường Địa Hannabit, gia nhập Tập Đoàn Endfield với tư cách là cán viên hiện trường nhờ sự tiến cử của Đạo Sư Orisha. Arclight cũng hỗ trợ các hoạt động khác nhau của Endfield, đồng thời đảm nhận bảo trì và sửa chữa cho các loại máy móc và phương tiện của Tập Đoàn Endfield. \n\nVới Arclight, xe mô tô không chỉ đơn thuần là phương tiện di chuyển. Cô xem chúng là bạn đồng hành \"cùng trưởng thành\" với mình. Mỗi lần tháo rời hoặc sửa chữa và cải tiến phương tiện không chỉ đơn giản là phục hồi, mà còn là quá trình tái sinh và biến đổi. Có lẽ chính nhu cầu bảo vệ cả máy móc lẫn sự sống đã giúp Arclight có được sự thấu hiểu sâu sắc về cơ khí và thẩm mỹ. \nNgoài ra, vì Arclight đến từ Trường Địa Hannabit nên cô luôn sẵn lòng chia sẻ kiến thức với những ai cần đến. Dù cô hay dùng lời lẽ mang đầy tính ẩn dụ, nhưng chúng phản ánh sự hiểu biết độc đáo và sâu sắc về nơi hoang vu. \n, Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
+      "file1": "<@profile.key>Tên thật của Cán Viên Arclight là Ekut. Mỗi khi có người hỏi có phải cô đến từ Trường Địa Hannabit hay không, Arclight luôn đáp: \"Tôi đi theo Đạo Sư Orisha, mỗi Kẻ Tầm Ca đều là chủ nhân của chính mình.\" \nCán Viên Arclight có một niềm đam mê khó tả với xe mô tô. Kỹ Sư Kho Vũ Khí Semyon thường trao đổi với Arclight về chiếc xe của cô ấy, và đây là những lời anh nói: \n\"Lúc đầu tôi nghĩ đó là một chiếc xe quân sự tùy chỉnh bị rò rỉ ra thị trường dân sự. Tôi không thể tin nổi khi phát hiện nó là một kiệt tác kỹ thuật do chính Arclight tự tay lắp ráp và tinh chỉnh. Tôi đã nghiên cứu kỹ chiếc mô tô sau khi nhận được sự đồng ý của cô ấy. Động cơ sử dụng Originium là một công nghệ lỗi thời từ mười năm trước của Tập Đoàn Mieszko. Bộ truyền động được sản xuất bởi Triglava Armoury. Nhãn trên hệ thống treo đã bị mài mòn, nhưng theo cấu trúc tôi đoán nó đến từ Trung tâm Hỗ trợ Northmarch. Thành phần ấn tượng nhất chính là khung sườn, toàn bộ đều được làm thủ công, từng mối hàn đạt đến độ chi tiết tuyệt đối. Khung xe gần như liền mạch, không hề có sự gượng gạo. Đáng kinh ngạc hơn nữa, đây không chỉ đơn thuần là một chiếc xe lắp ráp mà là sự tích hợp tinh túy và độc đáo từ các nhà sản xuất linh kiện khác nhau. Chỉ có người sở hữu trình độ kỹ thuật thượng thừa mới đạt được điều này. Toàn bộ chiếc xe là sự cân bằng gần như hoàn hảo giữa sức mạnh, độ bền và khả năng điều khiển.\" \nDù mọi người công nhận khả năng kỹ thuật tuyệt vời của Cán Viên Arclight, không ít người cũng nhận xét rằng: Cô đối xử với người khác khá lạnh lùng và thường nói chuyện khó hiểu. Ngay cả Cán Viên Semyon cũng chia sẻ rằng Arclight rất ít nói. Có lẽ những trải nghiệm đặc biệt của Cán Viên Arclight khiến người khác cảm thấy cô thờ ơ, không thân thiện trong ấn tượng đầu tiên. Tuy nhiên, những ai hiểu cô đều biết cô là người lý trí và thấu đáo. Những người thường xuyên trò chuyện với Arclight thậm chí còn nghe cô buông lời như đùa giỡn. Dĩ nhiên là Cán Viên Arclight chỉ đang thẳng thắn bày tỏ suy nghĩ của mình chứ không hề có ý chọc cười bất kỳ ai. \nMột số nhận xét nói rằng, sự khó hiểu trong giao tiếp chủ yếu đến từ việc ngôn ngữ của Arclight bị ảnh hưởng bởi phong cách diễn đạt đặc trưng của Trường Địa Hannabit. Arclight có xu hướng sử dụng các dạng ẩn dụ từ thiên nhiên, như dùng tính khí của Quái Thú Chở Hàng để mô tả về hỏng hóc cơ khí, hay dùng từ sương sớm để diễn tả sự lưỡng lự của ai đó. Những người quen thẳng thắn có thể sẽ cảm thấy khó tiếp cận với cách nói chuyện và mạch suy nghĩ của Arclight. Nhưng những ai biết lắng nghe sẽ thấy rõ lập luận sắc bén và hành động kiên định nơi cô. Kẻ Tầm Ca của Trường Địa Hannabit có cách nhìn thế giới và phương thức hành động rất độc đáo. Muốn hiểu được Arclight, bạn cũng phải học cách lắng nghe thế giới qua lời kể của cô. </>",
       "file2": "<@profile.key>Tôi vẫn nhớ lần đầu tiên gặp Ekut. Các Tiếng Ca Săn Mồi tuần tra đưa cô bé về trại, khi ấy cô gần như sắp tắt thở. Không ai hiểu được vì sao một đứa trẻ như vậy lại lang thang một mình giữa nơi hoang vu suốt nhiều tháng trời, chịu đựng khắc nghiệt đói khát suýt nữa đã giết chết cô. Để điều trị vết thương ở tay phải, chúng tôi buộc phải nối lại dây thần kinh bằng mạch điện. Dĩ nhiên rồi, không cần lo lắng về nguy cơ từ cánh tay phải của cô ấy đâu. Chúng tôi đã thiết kế riêng một đôi găng cách điện để cô có thể sống bình thường như bao người. \nTôi đặt tên cô là Ekut, theo tên loài Quái Thú Chở Hàng thông minh và mạnh mẽ trong Ca Dao. Tôi hy vọng cô bé sẽ lớn lên cứng cáp, có thể vượt qua gió sương như loài Quái Thú Chở Hàng ấy. Con bé đã làm được, thậm chí vượt xa kỳ vọng của tôi. \nNhưng Ekut lớn lên cùng một trách nhiệm quá nặng nề. Có lẽ vì lần vượt qua cái chết đầu tiên, hay do cái tên mang theo ý chí mãnh liệt như Ca Dao ấy. Khi bước sang tuổi mười lăm, Ekut bắt đầu Tìm Khúc và lang bạt khắp nơi hoang vu. Kẻ Tầm Ca ấy làm mọi cách để cứu giúp các thôn làng đang lâm nguy, ngay cả khi thử thách vượt quá sức mình. \nTôi vẫn nhớ cơn bão năm đó. Trong một chiến dịch cứu nạn, Ekut một mình lao vào giữa cơn giông bão. Chúng tôi đã nghĩ rằng cô bé sẽ không quay lại. Nhưng đúng lúc mọi hy vọng dường như tiêu tan, một tia chớp xé toạc bầu trời. Như chính luồng sáng ấy, cô xé qua cơn giận dữ của thiên nhiên và phóng lên chiếc xe chở hàng cuối cùng. Từ khoảnh khắc đó, nơi hoang vu bắt đầu gọi tên cô là Arclight. Cái tên ấy đã được ghi vào Ca Dao của biết bao Kẻ Tầm Ca. Cô bé ấy lấy một cái tên từ câu hát, rồi đem trả lại bài ca một cái tên mới. \nTôi không ngạc nhiên khi Arclight nói rằng cô muốn tìm kiếm câu trả lời từ Endfield. Thật ra điều đó làm tôi nhớ lại chính lựa chọn của mình năm xưa. Tôi từng đi xa đến những vòm trời đầy sao, nơi tôi cảm nhận được hợp xướng của hy vọng và lòng can đảm từ thành phố nổi. \nNhững ký ức ấy tưởng chừng đã thuộc về đời trước. Nhưng tôi tin rằng, chừng nào sao vẫn còn sáng trên bầu trời, thì Văn Minh sẽ lại được hợp nhất. Tôi cũng tin rằng Arclight sẽ sóng vai cùng những lời thề và cái tên được ghi vào Ca Dao sẽ tìm được câu trả lời mà cô thực sự kiếm tìm. \nThư Tiến Cử gửi Tập Đoàn Endfield, viết bởi Đạo Sư Orisha</>",
-      "file3": "<@profile.key>Một đội quân Landbreaker khổng lồ đã bao vây một ngôi làng nơi hoang vu. Lũ Landbreaker ấy chuẩn bị mở một cuộc tổng công kích. Sự tuyệt vọng lan truyền như dịch bệnh giữa các đặc vụ Endfield đóng quân và dân làng địa phương. \nĐó chính là lúc họ nhìn thấy cô ấy. Arclight của Trường Địa Hannabit, Kẻ Tầm Ca đơn độc cưỡi mô tô gầm rú lao vào thị trấn. \nCô xé tan tuyến sau của đội quân Landbreaker, lập tức giành quyền kiểm soát tình hình mà không một chút do dự. Dưới sự dẫn dắt của cô, người dân dựng tuyến phòng thủ bằng xe chở hàng và vật liệu thu nhặt được. Người già và trẻ nhỏ được sơ tán lên đồi. Bất cứ ai còn khả năng làm việc đều tham gia đào hào, lắp đặt các đơn vị phòng ngự Originium đơn giản. Mọi hành động đều diễn ra bình thản, trật tự. Cô di chuyển như thể chính cô là một phần của nơi hoang vu. \nĐêm trước cuộc tấn công của Landbreaker, sấm vang vọng từ xa. Gió mùa như thường lệ kéo đến, mưa lớn trút xuống suốt cả một đêm, tạo nên một dòng suối mới chảy xuyên qua vùng đất. Có lẽ Arclight đã ghi nhớ từng ngóc ngách của nơi hoang vu này. Dòng nước chảy xuyên qua những con hào mà Arclight đã chỉ đạo đào, trở thành hào nước tự nhiên bảo vệ toàn bộ ngôi làng. Lũ lụt cũng quét qua doanh trại của lũ Landbreaker, khiến đội hình tấn công của chúng bị phá vỡ. \nLũ Landbreaker không chịu rút lui tay trắng. Chúng cố vượt qua hào nước, tiếp tục công phá tuyến phòng thủ, nhưng mọi đợt tấn công đều bị đẩy lùi bởi Arclight, các nhân viên Endfield và chính người dân làng. Cuối cùng, bọn cướp ấy buộc phải tháo chạy trong đêm mưa tầm tã. \nKhi mây đen mưa gió rút khỏi nơi hoang vu, Arclight tìm đến đặc vụ Endfield đang gửi báo cáo cho Dijiang. Cô giơ lá thư tiến cử lên trời và nói: \"Tiếng rung của lớp đất hoang dã đã dẫn ta đến đây. Giờ thì xin hãy dẫn ta đến Endfield.\"</>",
+      "file3": "<@profile.key>Một đội quân Landbreaker khổng lồ đã bao vây một ngôi làng nơi hoang vu. Lũ Landbreaker ấy chuẩn bị mở một cuộc tổng công kích. Sự tuyệt vọng lan truyền như dịch bệnh giữa các cán viên Endfield đóng quân và dân làng địa phương. \nĐó chính là lúc họ nhìn thấy cô ấy. Arclight của Trường Địa Hannabit, Kẻ Tầm Ca đơn độc cưỡi mô tô gầm rú lao vào thị trấn. \nCô xé tan tuyến sau của đội quân Landbreaker, lập tức giành quyền kiểm soát tình hình mà không một chút do dự. Dưới sự dẫn dắt của cô, người dân dựng tuyến phòng thủ bằng xe chở hàng và vật liệu thu nhặt được. Người già và trẻ nhỏ được sơ tán lên đồi. Bất cứ ai còn khả năng làm việc đều tham gia đào hào, lắp đặt các đơn vị phòng ngự Originium đơn giản. Mọi hành động đều diễn ra bình thản, trật tự. Cô di chuyển như thể chính cô là một phần của nơi hoang vu. \nĐêm trước cuộc tấn công của Landbreaker, sấm vang vọng từ xa. Gió mùa như thường lệ kéo đến, mưa lớn trút xuống suốt cả một đêm, tạo nên một dòng suối mới chảy xuyên qua vùng đất. Có lẽ Arclight đã ghi nhớ từng ngóc ngách của nơi hoang vu này. Dòng nước chảy xuyên qua những con hào mà Arclight đã chỉ đạo đào, trở thành hào nước tự nhiên bảo vệ toàn bộ ngôi làng. Lũ lụt cũng quét qua doanh trại của lũ Landbreaker, khiến đội hình tấn công của chúng bị phá vỡ. \nLũ Landbreaker không chịu rút lui tay trắng. Chúng cố vượt qua hào nước, tiếp tục công phá tuyến phòng thủ, nhưng mọi đợt tấn công đều bị đẩy lùi bởi Arclight, các nhân viên Endfield và chính người dân làng. Cuối cùng, bọn cướp ấy buộc phải tháo chạy trong đêm mưa tầm tã. \nKhi mây đen mưa gió rút khỏi nơi hoang vu, Arclight tìm đến cán viên Endfield đang gửi báo cáo cho Dijiang. Cô giơ lá thư tiến cử lên trời và nói: \"Tiếng rung của lớp đất hoang dã đã dẫn ta đến đây. Giờ thì xin hãy dẫn ta đến Endfield.\"</>",
       "file4": "<@profile.key>Khi xưa cỏ non rung rinh, đồng xanh sông sâu nước chảy lấp lánh. \nNay xương đất rã rời, \nmưa rơi tầm tã dưới gầm trời xám xịt. \nXương trắng phơi nơi hoang vu, gió thổi đầy bụi tro âm u. \nChẳng một bài Ca Dao nào của Kẻ Tầm Ca có thể giấu nổi cơn giận hay nỗi u uất. \nTựa như loài quái thú chở hàng què quặt, ta chạy trốn cơn sóng đen đang cuộn xoáy và nhấn chìm. \nTrường Địa Hannabit nơi đâu, đất lành cho vạn vật sinh trưởng? \nLối ta đi nhuốm bụi phủ chông gai. \nTrường Địa Hannabit nơi đâu, đất lành cho vạn vật sinh trưởng? \nThành phố trôi nổi từng thả neo và gieo hy vọng vào cõi đất. \nCòn ta theo đuổi những vì sao lặng lẽ, khởi hành một chuyến đi mới. \nTrường Địa Hannabit, hãy đưa ta đến tận cùng ranh giới. \nNơi gió chưa từng ngừng thổi, nơi ta chưa hề dừng chân. \n— Ca Dao của Arclight</>"
     }
   },
@@ -123,7 +123,7 @@
       "name": "Đấu Sĩ Tốc Độ"
     },
     "potential3": {
-      "description": "Tài Năng <@ba.key>Lãng Khách Hoang Địa</> được cải thiện: Hiệu ứng Tăng ST tăng đến <@ba.vup>{pulse_up:0.0}</> lần so với ban đầu.",
+      "description": "Thiên Phú <@ba.key>Lãng Khách Hoang Địa</> được cải thiện: Hiệu ứng Tăng ST tăng đến <@ba.vup>{pulse_up:0.0}</> lần so với ban đầu.",
       "name": "\"Ca Dao\""
     },
     "potential4": {
@@ -131,7 +131,7 @@
       "name": "Lời Dạy Của Đạo Sư"
     },
     "potential5": {
-      "description": "Tài Năng <@ba.key>Lãng Khách Hoang Địa</> được cải thiện: Điều kiện kích hoạt được giảm xuống còn <@ba.vup>{count:0}</> lần.",
+      "description": "Thiên Phú <@ba.key>Lãng Khách Hoang Địa</> được cải thiện: Điều kiện kích hoạt được giảm xuống còn <@ba.vup>{count:0}</> lần.",
       "name": "Kẻ Phục Vụ Hoang Địa"
     }
   },
@@ -149,7 +149,7 @@
     "potential5": {
       "name": "Kiếm Liềm Mặt Trăng",
       "author": "Z3zz",
-      "description": "Cô luôn tự gọi mình là Tín Đồ, nhưng những người mà cô cứu khỏi lưỡi dao phá hủy đều nhất quyết gọi cô là Đạo Sư."
+      "description": "Cô luôn tự gọi mình là Tín Đồ, nhưng những người mà cô cứu khỏi lưỡi dao của lũ breaker đều nhất quyết gọi cô là Đạo Sư."
     }
   }
 }

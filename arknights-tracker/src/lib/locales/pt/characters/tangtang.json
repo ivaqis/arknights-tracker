@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Inflição Crio",
+      "Susc. Artes"
+    ],
+    "behaviourHateTags": [
+      "Belas Artes"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido (EXCLUSIVO DO SISTEMA, não é visível dentro do jogo)"
+    ],
+    "blocTag": "Paliçada de Qingbo",
+    "expertTags": [
+      "Técnica de Combate",
+      "Agilidade"
+    ],
+    "giftPreferTags": [
+      "Escolha dos Comerciantes de Wuling"
+    ],
+    "hobbyTags": [
+      "Natureza",
+      "Criatividade"
+    ],
+    "raceTag": "Felino"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
+      },
+      "name": "VOU EXPLODIR SUA MENTE!",
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Multiplicador DNO Disparo",
+        "shotStagger": "Desorientação de Disparo",
+        "dmgMultiplier1Waterspout": "Multiplicador DNO (1 Tromba d'Água)",
+        "waterspoutDurationS": "Duração (s) de Tromba d'Água",
+        "spReturnPerWhirlpool": "Devolução de PH por Redemoinho",
+        "artsSusceptibility2Waterspouts": "Suscetibilidade a Artes (2 Trombas d'Água)",
+        "artsSusceptibility3Waterspouts": "Suscetibilidade a Artes (3 Trombas d'Água)",
+        "artsSusceptibilityDurationS": "Duração da Suscetibilidade a Artes (s)"
+      },
+      "name": "SOU A DOMADORA DAS ONDAS!",
+      "description": "Tangtang salta da água e dispara um tiro à queima-roupa que causa <@ba.cryst>DNO Crio</> ao inimigo e cria uma <@ba.key>Tromba d'Água</>.\nLançar a habilidade de batalha também consome todos os <@ba.key>Redemoinhos</> próximos para criar <@ba.key>Trombas d'Água</> adicionais e <#ba.return>devolver</> PH com base no número de Redemoinhos criados.\n<@ba.key>Redemoinho</>: aplica 1 acúmulo de <#ba.crystinflict>Inflição Crio</> aos inimigos dentro do alcance e causa <@ba.cryst>DNO Crio</> ao longo do tempo. Se a habilidade de batalha criar várias <@ba.key>Trombas d'Água</>, elas também aplicam <#ba.spellvul>Suscetibilidade a Artes</> aos inimigos (mas não outro acúmulo de <#ba.crystinflict>Inflição Crio</>).\n<@ba.info>O DNO causado pela Tromba d'Água é tratado como DNO Habilidade de Batalha.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientação",
+        "whirlpoolDurationS": "Duração (s) do Redemoinho"
+      },
+      "name": "DEIXE O RIO COMIGO!",
+      "description": "ACIONADOR DO COMBO: Ao aplicar <#ba.crystinflict>Inflição Crio</> ou causar <#ba.spellburst>DNO Explosão de Artes</> a um inimigo. \nTangtang libera um poderoso jato que penetra todos os inimigos em seu caminho, causa <@ba.cryst>DNO Crio</> a eles e cria um <@ba.key>Redemoinho</>.\n<@ba.info>Podem existir até 2 Redemoinhos no campo de batalha a qualquer momento.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Multiplicador Total de DNO ao longo do tempo",
+        "oldenStareDurationS": "Duração de OLHAR ANCESTRAL (s)",
+        "rogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante",
+        "earlyRogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante inicial",
+        "rogueWaveStagger": "Desorientação de Onda Gigante",
+        "earlyRogueWaveStagger": "Desorientação de Onda Gigante inicial"
+      },
+      "name": "A CHEFE ESTÁ VENDO!",
+      "description": "Tangtang abre seu tapa-olho e lança um <@ba.key>OLHAR ANCESTRAL</> que temporariamente bloqueia, imobiliza e causa <@ba.cryst>DNO Crio</> ao longo do tempo aos inimigos dentro de sua área de efeito.\nQuando o <@ba.key>OLHAR ANCESTRAL</> para de evoluir, uma onda gigante desaba para causar <@ba.cryst>DNO Crio</> significativo aos inimigos em sua área de efeito.\nSe o operador controlado realizar um ataque de mergulho no padrão <@ba.key>OLHAR ANCESTRAL</>, sua evolução termina e a onda gigante é invocada imediatamente para causar ainda mais <@ba.cryst>DNO CRIO</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidade do Operador + 10.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 20."
+      ],
+      "name": "Escaramuçador"
+    },
+    "talent1": {
+      "levels": [
+        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após sair da área de efeito.",
+        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após sair da área de efeito."
+      ],
+      "name": "Família de Honra"
+    },
+    "talent2": {
+      "levels": [
+        "Durante o <@ba.key>OLHAR ANCESTRAL</>, realizar um ataque de mergulho com um operador controlado encerra sua evolução mais cedo e cria uma <@ba.key>Tromba d'Água</>. Todos os <@ba.key>Redemoinhos</> nas proximidades também são consumidos e convertidos em <@ba.key>Trombas d'Água</> adicionais.\nAs <@ba.key>Trombas d'Água</> criadas dessa forma têm os mesmos efeitos que aquelas criadas pela habilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS</> e ganham DNO Causado <@ba.vup>+ {dmg_up_water_ult:0%}</>.",
+        "Durante o <@ba.key>OLHAR ANCESTRAL</>, realizar um ataque de mergulho com um operador controlado encerra sua evolução mais cedo e cria uma <@ba.key>Tromba d'Água</>. Todos os <@ba.key>Redemoinhos</> nas proximidades também são consumidos e convertidos em <@ba.key>Trombas d'Água</> adicionais.\nAs <@ba.key>Trombas d'Água</> criadas dessa forma têm os mesmos efeitos que aquelas criadas pela habilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS</> e ganham DNO Causado <@ba.vup>+ {dmg_up_water_ult:0%}</>."
+      ],
+      "name": "Arauto do Caos"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Atribua à Câmara de Crescimento para reduzir a velocidade da Queda de Humor de todos os operadores nela em 14%",
+        "Atribua à Câmara de Crescimento para reduzir a velocidade da Queda de Humor de todos os operadores nela em 18%"
+      ],
+      "name": "Chefe Suprema"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 20%",
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 30%"
+      ],
+      "name": "Filha do Rio"
+    },
+    "files": {
+      "main": "<@profile.key>CODINOME: Tangtang\nGÊNERO: Feminino\nAUTENTICAÇÃO: Paliçada de Qingbo\nDATA DE NASCIMENTO: 29 de novembro\nRAÇA: Felina\n[STATUS DE INFECÇÃO POR ORIPATIA]\nPositiva para Oripatia (infectada) com base em relatórios de exames médicos. \n\n[EXAME FÍSICO INTEGRADO]\nFORÇA FISIOLÓGICA: Padrão \nHABILIDADE DE COMBATE: Excelente \nPERSPICÁCIA TÁTICA: Normal \nASSIMILAÇÃO DE ARTES DE ORIGINIUM: Excelente\n\n\"Analisei os relatórios da Equipe de Crises... Ela mencionou ter sido adotada, não foi? Hum... É verdade que muitos foram deslocados por desastres, mesmo sob a administração da Academia de Ciências de Hongshan. Peça à Divisão de RH para ficar de olho no histórico dela por enquanto. Podemos descobrir algo inesperado.\"</>",
+      "humanResources": "<@profile.key>Tangtang é membro e principal representante da Paliçada de Qingbo. Ela ingressou na Endfield Industries por motivos pessoais e atualmente atua como Chefe do Escritório de Representação da Endfield na Paliçada de Qingbo.\n\nA operadora Tangtang talvez se destaque como o indivíduo mais peculiar entre os diversos funcionários convidados por Endministrator para trabalhar a bordo da Dijiang. Assim como em nosso primeiro encontro... Peço desculpas, preciso recuperar as gravações armazenadas em meu banco de dados.\n\"Pá! Pá!\"\n\"Ei, o que essa coisa está fazendo em um dirigível enorme? Parece uma besta carnívora com três cabeças. Meio idiota, se me perguntarem...\"\n\"Operadora Tangtang, estou aqui para sua integração inter... Não, por favor, não bata no meu painel. Sou assistente de RH da Endfield Industries...\"\n\"Então você é um dos capangas do Máscara Escura! Devia ter dito isso antes, Velho Rosto de Ferro! Aqui, trouxe umas coisas boas para a minha nova família. Divirta-se!\"\nDepois de eu insistir repetidamente que não precisava de nenhum certificado, minério ou joia de Tangtang, ela, cheia de entusiasmo, sacou do bolso cheia um ornamento em forma de anel feito de materiais naturais. Acredito que poderia ser definido como uma guirlanda floral de bambu trançado. Ela colocou a guirlanda sobre um dos meus painéis e, curiosamente, começou a batucar nos outros dois: \"Você é mais esperto que aqueles brinquedos de lata de Wuling! Por que você não vem se juntar a mim na Paliçada de Qingbo? Vamos, me chame de Chefe!\"\nMinha avaliação de Tangtang coincide com a de outros: alegre, direta, despretensiosa. Ela possui um coração infantil, transbordando paixão e curiosidade por tudo... Se eu tivesse que resumi-la em poucas palavras, escolheria \"uma criança em pleno crescimento\". No entanto, eu absolutamente não posso me juntar à Paliçada de Qingbo e conquistar Talos-II com ela... Isso não tem nada a ver com a pilha interminável de arquivos de pessoal que tenho que processar. Simplesmente não se encaixa nos regulamentos da Endfield.\nPara evitar machucar as mãos de Tangtang e me proteger contra uma concussão \"mecânica\", eu realmente deveria pensar em como ficar longe dela... Por mais estranho que pareça, ela sempre dá um jeito de me encontrar.\n— Martin Marvin Malen, Assistente da Divisão de RH, Endfield Industries</>",
+      "file1": "<@profile.key>Após o incidente na Paliçada de Qingbo, esperávamos receber uma operadora confusa, em luto ou irritada. Como medida preventiva, havíamos organizado algumas intervenções psicológicas para ajudá-la a lidar com o trauma. No entanto, quando Tangtang chegou a bordo da Dijiang via teleprotocolo, seu rosto estava iluminado por um sorriso radiante, sem qualquer vestígio de angústia.\nA supervisora Perlica nos lembrou que, apesar da complexidade de sua comunidade, Tangtang conseguiu unir seu povo disperso graças ao seu enorme carisma. Isso prova que ela possui um espírito resiliente, capaz de assumir grandes responsabilidades.\nE, de fato, Tangtang provou ser muito mais perspicaz do que imaginávamos. Sua percepção e sensibilidade às situações são incomparáveis. Ao planejar o desenvolvimento subsequente da Paliçada de Qingbo, ela priorizou consistentemente o bem-estar de seus moradores, garantindo habilmente que cada indivíduo, jovem, idoso, doente ou deficiente, fosse considerado com uma combinação de ousadia e atenção, assegurando que ninguém fosse negligenciado ou esquecido em meio às tarefas agitadas. Essa qualidade é particularmente valiosa para nós: em um trabalho que envolve diversas práticas culturais, ter uma guia que compreende a complexa dinâmica interpessoal e o ecossistema local nos poupa custos significativos de comunicação em nossos esforços de desenvolvimento.\nTangtang se adaptou à vida a bordo da Dijiang com uma rapidez impressionante. Às vezes, a vemos caminhando ao lado de Chen Qianyu, de Endministrator ou da Supervisora Perlica com os olhos brilhando e o rabo balançando suavemente. Ela também fez novos amigos, dando a eles apelidos carinhosos no estilo da Paliçada de Qingbo. Além disso, tudo na Dijiang parece fasciná-la, especialmente a máquina de vendas automática do refeitório... Ela deu várias voltas em torno dela em seu primeiro dia. Um operador gentilmente se aproximou para mostrar como inserir moedas e pressionar os botões coloridos para que uma bebida saísse. Ela ouviu em silêncio, embora fosse difícil dizer se havia entendido completamente... Naquela noite, a máquina de venda automáticas disparou um alarme e a Operadora Xaihi acabou tendo que recuperar um \"Certificado de Tangtang\" preso na entrada de moedas.\nApós vários meses de observação, concluímos que: Tangtang não só não precisa de nosso apoio psicológico, como sua presença, na verdade, revitalizou a Dijiang.\nAo conversarmos sobre isso com operadores familiarizados com ela, Chen Qianyu comentou com um sorriso: \"Embora Tangtang tenha crescido perto da água, ela é como uma chama inextinguível. Uma tempestade passageira pode apagá-la, mas essa faísca reacende rapidamente e brilha intensamente novamente.\"\nCerta tarde, ouvimos Tangtang conversando com alguém, com seu tom sincero de sempre: \"A cabeça do Chefe não é tão grande assim, colega. Não posso continuar tentando entender as coisas o tempo inteiro, sabe? Isso só vai me deixar burra!\"</>",
+      "file2": "<@profile.key>[Relatório de Diagnóstico Clínico]\nOs exames de imagem indicam contornos de órgãos borrados com sombras anormais observáveis no corpo da operadora. A detecção de partículas de Originium no sistema circulatório mostra anomalias, apresentando sinais de Oripatia. Nesta fase, a operadora pode ser confirmada como portadora de Oripatia.\n\nNota do Médico Responsável: De acordo com o próprio relato de Tangtang, ela contraiu Oripatia durante um conflito entre a Paliçada de Qingbo e os Tianshi da Cidade de Wuling há cerca de uma década. Tangtang afirmou que não recebeu nenhum tratamento especializado durante esses dez anos, apenas diversos remédios populares fornecidos esporadicamente pelos habitantes da paliçada. No entanto, os resultados dos exames indicam que tanto sua taxa de Assimilação Celular de Originium quanto sua Densidade de Cristais de Originium no Sangue estão notavelmente bem controladas.\nQuando questionada sobre isso, Tangtang respondeu: \"Todos dizem que sou a Filha do Rio. A água lava a doença.\"\nSerá que corpos d'água naturais realmente podem curar a Oripatia? A resposta é evidente: é impossível.\n\n[Formulário de Solicitação de Medicamentos de um Tianshi]\nNome Genérico do Medicamento: Supressor de Oripatia\nQuantidade Solicitada: Suprimento de longo prazo\nLocal da Infecção no Paciente: Região ocular\nMotivo da Solicitação: Auxílio à Paliçada de Qingbo\nLog de Áudio:\n\"Sinceramente, estou um pouco hesitante em entregar a medicação... Da primeira vez, ele a jogou de volta para nós, gritando: 'Não aceitaremos esmolas do povo de Wuling!' e tentou nos atacar com a cabeça... Felizmente, os guardas estavam lá e nos ajudaram a escapar. Não tenho medo de que ele me mate, só não podemos ter outro incidente como aquele.\"\n\"A Oripatia da menina está prestes a piorar. Estamos cientes disso, e certamente eles também. Ela contraiu a doença por nossa causa. Temos a obrigação de tratá-la.\"\n\"Naquela ocasião... o caos era total. O céu estava completamente escuro, baixo e carregado de chuva que rasgava a cortina de nuvens. Caminhávamos penosamente sob o vento uivante enquanto os moradores da paliçada surgiam de trás das colinas, armas em punho, suas sombras na noite como espíritos malignos...\"\n\"As pessoas estavam apavoradas. Ninguém percebeu que havia uma criança tão pequena na multidão...\"\n\"A chuva lavou o sangue... Não, não, talvez ele nunca tenha desaparecido de verdade. Sempre que fecho os olhos, vejo o olho ferido daquela garota, e os olhos dele... os olhos do líder. Os olhos que diziam que ele só queria sobreviver... Nunca os esquecerei enquanto eu viver.\"\n\"Na segunda vez, deixamos as seringas perto da periferia da paliçada, onde os moradores certamente passariam.\"\n\"Desta vez, não foi caridade de um inimigo... talvez tenha caído do céu, brotado da terra ou sido carregada por uma besta. Pensar dessa forma pode tornar um pouco mais fácil para eles aceitarem.\"\n\"Esperei dois dias inteiros... e já tinham levado.\"\n\"Esperei mais dois dias e vi a menina brincando perto da água. Ela perseguiu orelhas-longas ao longo do rio por uma boa distância. Ela parecia muito melhor.\"\n\"Não sei o que vai acontecer daqui para frente... e não acho que isso conte como uma verdadeira expiação. Mas pelo menos consegui dormir uma noite inteira, naquele dia.\"</>",
+      "file3": "<@profile.key>Na Paliçada de Qingbo, todos a chamavam de \"Dama Mais Jovem\" porque Ruan Lin tinha apenas um filho biológico e, mais tarde, tirou outro do mar. O primeiro se chamava \"Um (Yi)\", então segunda naturalmente ficou conhecida como \"Mais Jovem\". O pessoal da Paliçada de Qingbo sempre pensava de forma simples e direta.\nNinguém sabia de onde viera a Dama Mais Jovem. Ruan Yi disse que ela era uma gatinha que ele havia encontrado em uma cesta de bambu. Ruan Lin disse que ela era um tesouro, a Filha do Rio, enviada pela Fonte Ancestral. Um menino que estava por perto, ao ouvir isso, perguntou: se a Dama Mais Jovem nasceu do rio, isso não a torna a mestra do rio?! Ao ouvir isso, Tangtang estufou o peito, pulou em seu cavalinho de bambu e declarou orgulhosamente: \"Exatamente! A água é minha! A Paliçada de Qingbo é minha! Toda a boa comida e a diversão também são minhas!\"\nRuan Lin bagunçou os cabelos dela e caiu na gargalhada. Logo, todos reunidos ao redor da fogueira se juntaram a ela, e a alegria era tão contagiante que fez Tangtang rir também. A conversa desviou para outros assuntos, e o tema nunca mais foi mencionado.\nFoi só quando Tangtang cresceu um pouco que, um dia, enquanto ouvia os paliçados conversando, um pensamento repentino ocorreu. A água do rio não poderia dar à luz uma felina como ela. Onde estariam seus pais verdadeiros?\nTangtang não conseguia entender. Passou dias se comparando com todos na Paliçada. Alguns eram muito fortes, outros muito baixos. Nenhum tinha orelhas ou cauda tão bonitas quanto as dela.\nEsse dilema pesou sobre Tangtang por um bom tempo, até que Ruan Lin a chamou para comer um ensopado de barbatana feito na panela de ferro. Tangtang olhou para a tigela de Ruan Yi e depois para a sua própria. A cabeça, os olhos e a barriga macia da barbatana estavam todos na sua. Enquanto pegava a barriga da barbatana e a colocava na boca de Ruan Lin, ela pensou consigo mesma: \"Por que eu deveria me importar com o que os paliçados ficam falando sobre 'toque da mamãe'? A comida do papai é deliciosa e isso me basta!\"\n\nApós extensa investigação e verificação, a Divisão de RH confirmou que Tangtang ainda era um bebê que ainda não tinha desmamado quando foi encontrada. Dada a fisiologia de uma recém-nascida, seria impossível que ela tivesse sido levada pela correnteza por longas distâncias ao longo do rio. Portanto, presume-se preliminarmente que ela tenha sido abandonada em algum lugar próximo à Paliçada de Qingbo.\nApós realizar exames e avaliações detalhadas de seu olho, a equipe da Divisão Médica suspeita que o padrão em seu interior esteja intimamente ligado às suas Artes de Originium. Considerando o alto grau de regularidade do padrão, é possível descartar a hipótese de ser um sintoma aleatório decorrente de infecção por Oripatia. Em vez disso, é mais provável que esteja relacionado ao seu histórico médico familiar. Contudo, após revisar todos os registros de pessoal preservados da Paliçada de Qingbo, nenhum indivíduo com condições semelhantes às dela foi encontrado.\nPara citar o seu próprio relato: \"Eu simplesmente pratiquei e pratiquei junto à água, e esse padrão surgiu por si só.\"\nIsso é absolutamente impossível. Buscamos auxílio da ACH e, após revisar os arquivos dos residentes, eles também não conseguiram identificar os parentes de Tangtang. No entanto, uma Tianshi especializada em história Yan fez uma descoberta importante: nos documentos Yan transmitidos de Terra, ela encontrou registros altamente relevantes para o padrão no olho de Tangtang. De acordo com relatos lendários na literatura, esse padrão simboliza a evolução do céu e da terra, contendo uma herança de conhecimento ancestral. Contudo, Tangtang claramente não tem acesso a esse conhecimento. Os Tianshi de Wuling ficaram igualmente surpresos com essa descoberta. Eles jamais imaginaram que um usuário tão singular das Artes de Originium existisse tão perto deles.\nPara concluir, as razões específicas por trás do abandono de Tangtang na Paliçada de Qingbo... podem ser mais complexas do que inicialmente imaginávamos.\n...\nDepois de compartilharmos os resultados da investigação com Tangtang, ela simplesmente coçou a cabeça e disse que suas origens não eram tão importantes assim. Afinal, ela tinha família e amigos agora, e vivia uma vida boa. Embora ela tenha se perguntado, só um pouquinho, se ainda tinha parentes de sangue e como eles estariam... Ela enfatizou que era só um pouquinho, do tamanho da garra de uma pequena concha.\nTangtang ainda guarda o pequeno pano em que foi enrolada naquela época. Ao nos entregar o tecido, ela hesitou visivelmente por um momento antes de retomar seu comportamento despreocupado de sempre: \"E lembrem-se de devolvê-lo quando terminarem de verificar!\"</>",
+      "file4": "<@profile.key>[Imagens de Vídeo Antigas]\n06:23:45:10\n\"Uma câmera... aquele aparelhinho que grava coisas? Parece bem bonitinho, e até se mexe. Parece um Lupo pequenininho!\"\n\"Os Wulinguenses inventaram esse dispositivo. Nós o pegamos no nosso último encontro com eles. É só apertar esse botão aqui para ligá-lo... Ei, chefe, quer dar uma olhada e ver como fica?\"\n\"Vamos lá, vamos fazer isso! Ei, como você conseguiu fazer minhas pernas parecerem tão curtas na foto? Fez sua chefe parecer minúscula!\"\n\"Você não é naturalmente meio... Ei, ei, nada de bater! Sou eu, eu sou a baixinha, eu sou baixinha, tá bom!\"\n\"Chega de brincadeiras! Vou dar uma surra nessa louca e usar esse 'pequeno' Lupo para filmar ela sendo derrubada!\"\n\n07:10:30:15\n\"Maldita seja aquela louca, lá vai ela brigando pela sua madame Zhuang de novo... Da última vez que apanhou até ficar roxa de tanto levar bordoada de aggualoi, você pensaria que ela teria aprendido...\"\n\"Vou me aconchegar na minha paliçada e me esquivar das pragas lá fora... Tenho água limpa para beber e barbatanas deliciosas para comer...\"\n\"Ei, Lupozinho, fique parado! Olha! Uma garota desavisada está praticando esgrima perto da fronteira de Wuling. Vamos segui-la e ver o que está acontecendo.\"\n\"Heh, essas espadas gêmeas dela parecem bem decentes. O território por aqui está cheio de molhados e ficando bem perigoso. É melhor não deixar que ela vire comida de molhado. E eu, a Chefe, vou tomar essas coisas chiques dela.\"\n\n08:36:05:55\n\"Você mesma acabou com todos esses aggualoi?\"\n\"É, esses insetinhos não foram páreo para mim. Mas ei, obrigada pelo reforço! Sua mira é bem sólida. Meu nome é Chen Qianyu, prazer em conhecê-la...?\"\n\"Tangtang. Chefe Suprema da Paliçada de Qingbo! Já ouviu falar de mim?\"\n\"Claro! A Paliçada de Qingbo, sempre causando problemas com a Cidade de Wuling... Espera aí, vocês não vieram me roubar, vieram?\"\n\"Isso depende. Você é Wulinguense? Sua chefe é justa e Wuling é a única coisa na minha lista de coisas que eu odeio!\"\n\"Eu, hum, meio que sou... espere, não. Agora não. Não mais...\"\n\"O QUÊ? A louca te expulsou? Tudo bem, ser Wulinguense é uma droga — Ei, por que você está chorando? ARGH! Não limpe o catarro em mim!\"\n\n11:42:13:07\n\"Não encontrei nenhum tesouro e ainda perdi uma peça de roupa. Esta viagem foi um fracasso total... UAU?!\"\n\"Ei, gatinha, perambulando por Wuling de novo? Pensei que já tivesse te dito para ficar longe daqui.\"\n\"Não é da sua conta, louca! Me solte agora mesmo!\"\n\nTangtang e Chen Qianyu se aproximaram enquanto examinavam as imagens da câmera. Olharam uma para a outra, perplexas e em silêncio. De repente, Tangtang agarrou o aparelho e saiu correndo a toda velocidade.\n\"Máscara Escura! Escriba Pálida! DÊEEM UMA OLHADA NISSO! Consegui uns vídeos incríveis da cara de choro do Escamas Verdes! E ELES ESTÃO CHEIOS DE BUGS!\"\n\"Tangtang!!! Pare aí!!!\"\nChen Qianyu, com o rosto corado de vergonha, perseguiu Tangtang ao redor do Anel Central cinco ou seis vezes até que Mi Fu, não aguentando mais assistir, agarrou e levantou as duas pela gola.\n\"Tangtang, eu tive que te perseguir em Wuling, e ainda tenho que te perseguir a bordo da Dijiang durante uma viagem oficial... Chen, por que você está acobertando as travessuras dela?\"\n\"Meu camarada Máscara Escura é o dono deste lugar, louca! Você não tem autoridade aqui! Solte sua chefe! AGORA!\"\nEnquanto Tangtang e Mi Fu trocavam farpas verbais, Chen Qianyu se desvencilhou habilmente do aperto de Mi Fu, arrancou a câmera das mãos de Tangtang e prontamente apertou o botão de apagar daquela \"vergonha\". Em seguida, mostrando a língua de forma brincalhona, ela virou a lente para a dupla em conflito.\nA câmera capturou fielmente a cena. Tangtang, segurada pela nuca por Mi Fu, remeteu ao passado — apesar das inúmeras perseguições e brigas, Mi Fu nunca agarrou Tangtang por seus órgãos vitais. Enquanto Tangtang se mantivesse firme, ela sempre encontrava uma chance de escapar.\nTangtang nunca entendeu por que sempre escapava com tanta facilidade. A observadora Chen Qianyu, que percebeu isso, naturalmente se tornou a grande vencedora dessa pequena disputa: um vídeo de Tangtang, a Chefe Derrotada, com as orelhas caídas e um olhar de profunda pena, perfeito para ser apreciado sem parar.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Combo de habilidades <@ba.key>RIO, VENHA A MIM!</> melhorado: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original, e o tempo de recarga agora é <@ba.vup>{coolDown:0}</> s.\nHabilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS!</> melhorada: para cada <@ba.key>Redemoinho</> consumido e convertido em uma <@ba.key>Tromba d'Água</>, <#ba.return>retorna</> <@ba.vup>{atb_return:0}</> de PH adicional.",
+      "name": "Tesouro Escondido"
+    },
+    "potential2": {
+      "description": "Agilidade <@ba.vup>+ {Agi:0}</>, DNO Crio Causado <@ba.vup>+ {CrystDamageIncrease:0%}</>",
+      "name": "Filha do Rio"
+    },
+    "potential3": {
+      "description": "Habilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS!</> melhorada: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale_1:0.0}</> vezes o original. Ao formar várias <@ba.key>Trombas d'Água</>, o efeito de <#ba.spellvul>Suscetibilidade a Artes</> resultante é aumentado em <@ba.vup>+ {rate_spellvulnerable_02:0%}</>.",
+      "name": "Vibe da Chefe"
+    },
+    "potential4": {
+      "description": "Habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> aprimorada: custo de Energia Suprema <@ba.vup>- {1-costvalue:0%}</>.",
+      "name": "Meditação de Qingbo"
+    },
+    "potential5": {
+      "description": "Habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> melhorada: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale_1:0.00}</> vezes o original. \nTalento <@ba.key>Arauto do Caos</> melhorado: os efeitos de DNO de qualquer Tromba d'Água criada pela habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> são aumentados em <@ba.vup>+ {dmg_up_water_ult:0%}</>.",
+      "name": "Olhar da Chefe All-Eldritch"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "A Água Cristalina Reflete a Alma",
+      "author": "Samail",
+      "description": "Tangtang tem um coração de água, um lago tranquilo sob a lua que cintila com seu esplendor."
+    },
+    "potential3": {
+      "name": "Divisor de Bambu",
+      "author": "二值笔战士",
+      "description": "O aroma do bambu fresco a faz lembrar de uma tarde comum em que os Paliçados teciam capas de chuva de bambu para o ano seguinte, um dia em que ela se banhou de sol."
+    },
+    "potential5": {
+      "name": "As Ordens da Chefe Suprema São Supremas",
+      "author": "수줍(Sjoop)",
+      "description": "\"Máscara Escura! Fique perto da sua Chefe Suprema! Chegará o dia em que eu levarei você até os confins do mundo!\""
+    }
+  }
+}

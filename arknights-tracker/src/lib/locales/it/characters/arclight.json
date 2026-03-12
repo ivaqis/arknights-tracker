@@ -123,7 +123,7 @@
       "name": "Combattente veloce"
     },
     "potential3": {
-      "description": "Talento <@ba.key>Sopravvissuta errante</> migliorato: l'effetto di potenziamento aumenta di <@ba.vup>{pulse_up:0.0}</> volte rispetto all'originale.",
+      "description": "Talento <@ba.key>Sopravvissuta errante</> migliorato: l'effetto di potenziamento aumenta a <@ba.vup>{pulse_up:0.0}</> volte rispetto all'originale.",
       "name": "\"Hanna\""
     },
     "potential4": {

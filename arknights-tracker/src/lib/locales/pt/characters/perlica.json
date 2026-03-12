@@ -8,7 +8,7 @@
       "Esportes"
     ],
     "behaviourUnavailableTags": [
-      "Introvertido"
+      "Introvertido (EXCLUSIVO DO SISTEMA, não é visível dentro do jogo)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -20,7 +20,7 @@
     ],
     "hobbyTags": [
       "Estilo de Vida",
-      "Criativo"
+      "Criatividade"
     ],
     "raceTag": "Liberi"
   },
@@ -122,7 +122,7 @@
       "name": "Tarefas de Supervisão"
     },
     "potential4": {
-      "description": "Combo de habilidades <@ba.key>Protocolo Instantâneo: Cadeia</> melhorado: a duração do benefício de <#ba.spelldmg>DNO Artes Recebido</> no inimigo aplicado pela <#ba.conduct>Eletrificação</> da habilidade é aumentada para <@ba.vup>{extra_scaling}</> vezes o valor original.",
+      "description": "Combo de habilidades <@ba.key>Protocolo Instantâneo: Cadeia</> melhorado: os efeitos do benefício de <#ba.spelldmg>DNO Artes Recebido</> no inimigo aplicado pela <#ba.conduct>Eletrificação</> da habilidade são aumentados para <@ba.vup>{extra_scaling}</> vezes o valor original.",
       "name": "Orientação Constante"
     },
     "potential5": {

@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Industries Endfield",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Inconnue"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "Déséquilibre"
       },
       "name": "Séquence constructive",
-      "description": "Une puissante explosion d'Arts de l'originium qui attaque les ennemis dans la zone d'effet. Inflige des <@ba.pd>DÉG physiques</> et applique <#ba.crush>Broyage</>."
+      "description": "Une puissante explosion de <@ba.key>cristaux d'originium</> qui attaque les ennemis dans la zone d'effet. Inflige des <@ba.pd>DÉG physiques</> et applique <#ba.crush>Broyage</>."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "Durée du sceau (s)"
       },
       "name": "Séquence de scellement",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un autre opérateur de l'équipe inflige des DÉG grâce à une compétence de combo. \nSe précipite vers l'ennemi pour lui infliger des <@ba.pd>DÉG physiques</> et attacher des <#ba.originium>cristaux d'originium</> qui le scellent temporairement. Appliquer un <#ba.physicalstatus>statut physique</> ou <#ba.noguard>Vulnérabilité</> à l'ennemi scellé <#ba.consume>consomme</> les <#ba.originium>cristaux d'originium</> et inflige des <@ba.pd>DÉG physiques</> supplémentaires."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un autre opérateur de l'équipe inflige des DÉG grâce à une compétence de combo. \nSe précipite vers l'ennemi pour lui infliger des <@ba.pd>DÉG physiques</> et attacher des <@ba.key>cristaux d'originium</> qui le scellent temporairement. Appliquer un <#ba.physicalstatus>statut physique</> ou <#ba.noguard>Vulnérabilité</> à l'ennemi scellé fait éclater les <@ba.key>cristaux d'originium</> et inflige des <@ba.pd>DÉG physiques</> supplémentaires."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "Déséquilibre"
       },
       "name": "Séquence de bombardement",
-      "description": "Bombarde le sol d'Arts de l'originium, infligeant de lourds <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone en éventail. Si l'ennemi a des <#ba.originium>cristaux d'originium</> attachés, cette compétence les <#ba.consume>consomme</> et inflige des <@ba.pd>DÉG physiques</> une fois de plus."
+      "description": "Bombarde le sol de <@ba.key>cristaux d'originium</>, infligeant de lourds <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone en éventail. Si l'ennemi a déjà des <@ba.key>cristaux d'originium</> attachés à lui, cette compétence les brise et inflige des <@ba.pd>DÉG physiques</> une fois de plus."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé.",
-        "Lorsque les <#ba.originium>cristaux d'originium</> attachés à l'ennemi sont <#ba.consume>consommés</>, l'Endministrator obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration:0} s. L'effet ne peut pas être cumulé."
+        "Toucher au moins 2 cibles avec une compétence de combat ou un ultime réduit le temps de recharge de la compétence de combo de {0,0:0.0} s.",
+        "Toucher au moins 2 cibles avec une compétence de combat ou un ultime réduit le temps de recharge de la compétence de combo de {0,0:0.0} s."
       ],
       "name": "Désintégration d'essence"
     },
     "talent2": {
       "levels": [
-        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques.",
-        "Les ennemis sur lesquels des <#ba.originium>cristaux d'originium</> ont été attachés subissent <@ba.vup>+{dmg:0%}</> de DÉG physiques."
+        "Les ennemis scellés par des <#ba.originium>cristaux d'originium</> subissent <@ba.vup>{0,0:0%}</> de DÉG physiques supplémentaires.",
+        "Les ennemis scellés par des <#ba.originium>cristaux d'originium</> subissent <@ba.vup>{0,0:0%}</> de DÉG physiques supplémentaires."
       ],
       "name": "Stase d'espace réel"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>NOM DE CODE : Endministrator\nSEXE : ■■\nAUTHENTIFICATION : ■■\nDATE DE NAISSANCE : ■■\nRACE : ■■\n\nVous ne vous souvenez de rien.\nVotre mémoire est en lambeaux, tels des rêves réduits en poussière, disparaissant à la moindre pensée.\nIl arrive que cela vous perturbe, ou vous mette mal à l'aise, mais cela vous offre un moment de calme pendant lequel vous pouvez vous poser et réfléchir.\nLa plupart du temps, cependant, vous ne pouvez vous permettre de douter. Vous vous contentez de faire confiance à ceux qui vous entourent, et vous allez de l'avant.\nPeut-être avez-vous dissimulé ces souvenirs, rien qu'un moment...\nAinsi, vous ne vous souvenez de rien.</>",
+      "humanResources": "<@profile.key>Vous avez vécu toute l'histoire de Talos-II...</>",
+      "file1": "<@profile.key>Mais... qu'allez-vous faire de son avenir ?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "Renforce la compétence de combat <@ba.key>Séquence constructive</> : <#ba.consume>consommer</> des <#ba.originium>cristaux d'originium</> <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC.",
+      "description": "",
       "name": "Ultime éveil"
     },
     "potential2": {
-      "description": "Renforce le talent <@ba.key>Désintégration d'essence</> : quand l'Endministrator obtient un bonus d'ATQ, les opérateurs alliés gagnent la moitié de ce bonus d'ATQ.",
+      "description": "",
       "name": "Reflet de l'autorité"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Afflizione da ghiaccio",
+      "Suscettibilità alle Arti"
+    ],
+    "behaviourHateTags": [
+      "Belle arti"
+    ],
+    "behaviourUnavailableTags": [
+      "Introversione (SOLO SISTEMA, non visibile nel gioco)"
+    ],
+    "blocTag": "Palizzata di Qingbo",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Agilità"
+    ],
+    "giftPreferTags": [
+      "Scelta dei mercanti di Wuling"
+    ],
+    "hobbyTags": [
+      "Natura",
+      "Creatività"
+    ],
+    "raceTag": "Felinar"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
+      },
+      "name": "TI FARÒ PERDERE LA TESTA!",
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Moltiplicatore danni colpo di pistola",
+        "shotStagger": "Vacillamento da tiro",
+        "dmgMultiplier1Waterspout": "Moltiplicatore danni (1 tromba d'acqua)",
+        "waterspoutDurationS": "Durata tromba d'acqua (s)",
+        "spReturnPerWhirlpool": "Restituzione PA per vortice",
+        "artsSusceptibility2Waterspouts": "Suscettibilità alle Arti (2 trombe d'acqua)",
+        "artsSusceptibility3Waterspouts": "Suscettibilità alle Arti (3 trombe d'acqua)",
+        "artsSusceptibilityDurationS": "Durata Suscettibilità alle Arti (s)"
+      },
+      "name": "SULLA CRESTA DELL'ONDA!",
+      "description": "Tangtang salta fuori dall'acqua e attacca il nemico a distanza ravvicinata, infliggendo <@ba.cryst>danni da ghiaccio</> e creando una <@ba.key>tromba d'acqua</>.\nUtilizzare l'abilità di combattimento consuma anche tutti i <@ba.key>vortici</> nelle vicinanze per creare ulteriori <@ba.key>trombe d'acqua</> e <#ba.return>ripristinare</> una parte di PA, in base al numero di trombe d'acqua generate.\n<@ba.key>Tromba d'acqua</>: applica 1 accumulo di <#ba.crystinflict>Afflizione da ghiaccio</> ai nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi. Se l'abilità di combattimento genera molteplici <@ba.key>trombe d'acqua</>, queste applicano anche <#ba.spellvul>Suscettibilità alle Arti</> ai nemici (ma non un ulteriore accumulo di <#ba.crystinflict>Afflizione da ghiaccio</>).\n<@ba.info>I danni inflitti dalla tromba d'acqua sono considerati danni da abilità di combattimento.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento",
+        "whirlpoolDurationS": "Durata vortice (s)"
+      },
+      "name": "FIUME, A ME!",
+      "description": "ATTIVAZIONE COMBO: quando si applica <#ba.crystinflict>Afflizione da ghiaccio</> o si infliggono <#ba.spellburst>danni da Esplosione delle Arti</> a un nemico.\nTangtang scatena un getto potente che attraversa tutti i nemici nel suo percorso, infligge <@ba.cryst>danni da ghiaccio</> e crea un <@ba.key>vortice</>.\n<@ba.info>Possono esserci fino a 2 vortici in contemporanea sul campo di battaglia.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Moltiplicatore totale danni progressivi",
+        "oldenStareDurationS": "Durata SGUARDO ANTICO (s)",
+        "rogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala",
+        "earlyRogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala precoce",
+        "rogueWaveStagger": "Vacillamento da onda anomala",
+        "earlyRogueWaveStagger": "Vacillamento da onda anomala precoce"
+      },
+      "name": "LA CAPA TI VEDE!",
+      "description": "Tangtang solleva la benda e scatena dall'occhio uno <@ba.key>SGUARDO ANTICO</>, che blocca e immobilizza temporaneamente i nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi.\nQuando lo <@ba.key>SGUARDO ANTICO</> termina la sua evoluzione, un'onda anomala si abbatte sui nemici nel raggio d'azione, infliggendo ingenti <@ba.cryst>danni da ghiaccio</>.\nSe l'operatore controllato esegue un attacco dall'alto all'interno dello schema dello <@ba.key>SGUARDO ANTICO</>, l'evoluzione viene interrotta e compare subito l'onda anomala, che infligge <@ba.cryst>danni da ghiaccio</> ancora più ingenti."
+    },
+    "indicator": {
+      "levels": [
+        "Agilità operatore +10.",
+        "Agilità operatore +15.",
+        "Agilità operatore +15.",
+        "Agilità operatore +20."
+      ],
+      "name": "Destrezza"
+    },
+    "talent1": {
+      "levels": [
+        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{1-ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione.",
+        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{1-ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione."
+      ],
+      "name": "Famiglia d'onore"
+    },
+    "talent2": {
+      "levels": [
+        "Durante <@ba.key>SGUARDO ANTICO</>, eseguire un attacco dall'alto con l'operatore controllato termina in anticipo l'evoluzione e crea una <@ba.key>tromba d'acqua</>. Tutti i <@ba.key>vortici</> nelle vicinanze vengono consumati e convertiti in altre <@ba.key>trombe d'acqua</>.\nLe <@ba.key>trombe d'acqua</> create in questo modo hanno gli stessi effetti di quelle create dall'abilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> infliggono <@ba.vup>+{dmg_up_water_ult:0%}</> di danni.",
+        "Durante <@ba.key>SGUARDO ANTICO</>, eseguire un attacco dall'alto con l'operatore controllato termina in anticipo l'evoluzione e crea una <@ba.key>tromba d'acqua</>. Tutti i <@ba.key>vortici</> nelle vicinanze vengono consumati e convertiti in altre <@ba.key>trombe d'acqua</>.\nLe <@ba.key>trombe d'acqua</> create in questo modo hanno gli stessi effetti di quelle create dall'abilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> infliggono <@ba.vup>+{dmg_up_water_ult:0%}</> di danni."
+      ],
+      "name": "Istigatrice di rivolte"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assegna alla camera di coltivazione per rallentare del 14% il calo dell'umore di tutti gli operatori al suo interno.",
+        "Assegna alla camera di coltivazione per rallentare del 18% il calo dell'umore di tutti gli operatori al suo interno."
+      ],
+      "name": "Capa suprema"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assegna alla camera di coltivazione per aumentare del 20% la velocità di crescita delle piante in vitro.",
+        "Assegna alla camera di coltivazione per aumentare del 30% la velocità di crescita delle piante in vitro."
+      ],
+      "name": "Figlia del fiume"
+    },
+    "files": {
+      "main": "<@profile.key>NOME IN CODICE: Tangtang\nGENERE: F\nAFFILIAZIONE: Palizzata di Qingbo\nDATA DI NASCITA: 29 novembre\nRAZZA: Felinar\n[STATO ORIPATIA]\nI referti medici confermano la positività all'Oripatia (infetta).\n\n[RISULTATI DELL'ESAME FISICO]\nFORZA FISICA: Normale\nABILITÀ DI COMBATTIMENTO: Eccellenti \nACUME TATTICO: Normale \nASSIMILAZIONE DELLE ARTI DI ORIGINIUM: Eccellente\n\n\"Ho esaminato i rapporti della squadra anti-crisi... Dice di essere stata adottata, giusto? Mmh... In effetti, perfino sotto l'egida dell'Accademia scientifica di Hongshan, molti sono rimasti senza casa a causa di disastri e calamità. Direi di chiedere alle risorse umane di effettuare delle verifiche sul suo passato. Potrebbero emergere risvolti inattesi.\"</>",
+      "humanResources": "<@profile.key>Tangtang è un membro della Palizzata di Qingbo, nonché la sua prima rappresentante. Si è unita alla Endfield Industries per motivi personali e attualmente funge da principale intermediaria tra la Endfield e la Palizzata.\n\nL'operatrice Tangtang è forse la figura più singolare nell'eterogeneo gruppo di collaboratori che l'Endministrator ha invitato a bordo della Dijiang, qualcosa che ho avuto modo di confermare personalmente durante il nostro primo incontro... Un momento, devo recuperare il filmato dal mio database:\n\"Bam! Bam!\"\n\"Ehi, che ci fa questo coso su una mega nave volante? Sembra una bestia feroce di ferro a tre teste. Che idiozia...\"\n\"Operatrice Tangtang, sono qui per il tuo colloquio di orient... Ti prego di smettere di percuotere il mio pannello. Sono un assistente alle risorse umane della Endfield Industries...\"\n\"Quindi fai parte della banda di Voltoscuro! Potevi dirlo prima, faccia di ferro! Ecco, ho portato un po' di bella roba per la mia nuova famiglia. Non fare complimenti!\"\nDopo averla ripetutamente rassicurata del fatto che non avevo bisogno di certificati di Tangtang, minerali o gioielli, Tangtang ha allegramente tirato fuori dalla tasca un ornamento di forma circolare fatto di materiali naturali. Ritengo che potrebbe definirsi una ghirlanda floreale di bambù. Ha appoggiato la ghirlanda a mo' di corona su uno dei miei pannelli, per poi cominciare a picchiettare con sguardo curioso sugli altri due: \"Sei molto più affilato di quei barattoli di latta che ci sono a Wuling! Perché non vieni con me alla Palizzata di Qingbo? Dai, puoi chiamarmi capa!\"\nLa mia valutazione di Tangtang coincide con quelle altrui: vivace, diretta, senza pretese. Ha l'animo di una bambina, colmo di entusiasmo e curiosità verso ogni cosa... Se dovessi descriverla in poche parole, la definirei \"una giovane fanciulla nel bel mezzo della crescita\". Tuttavia, non posso in alcun modo unirmi alla Palizzata di Qingbo e conquistare Talos-II insieme a lei... E non a causa dell'enorme pila di fascicoli in attesa di elaborazione di cui devo occuparmi. Semplicemente, ciò contravverrebbe ai regolamenti della Endfield.\nPer non ferire le mani di Tangtang ed evitarmi una \"commozione meccanica\", devo trovare il modo di starle alla larga... Stranamente, però, finisce sempre per trovarmi.\n- Martin Marvin Malen, assistente alle risorse umane, Endfield Industries</>",
+      "file1": "<@profile.key>Dopo l'incidente alla Palizzata di Qingbo, ci aspettavamo di accogliere tra le nostre fila un'operatrice confusa, addolorata e piena di rabbia. Abbiamo quindi predisposto una serie di misure di sostegno psicologico per aiutarla a elaborare il trauma. Eppure, quando Tangtang è sbarcata sulla Dijiang tramite tele-protocollo, il suo volto si è aperto in un sorriso radioso, senza il minimo cenno d'angoscia.\nLa supervisora Perlica ci ha ricordato che, nonostante le complessità del luogo da cui proviene, con il suo carisma Tangtang è riuscita a unire un popolo frammentato, il che è prova di grande resilienza e sottolinea la sua capacità di sopportare il peso della responsabilità.\nIn effetti, Tangtang si è rivelata decisamente più perspicace del previsto. Possiede una consapevolezza e una sensibilità straordinarie. Nella pianificazione della prossima fase di sviluppo della Palizzata di Qingbo, ha inevitabilmente messo al primo posto il benessere dei suoi abitanti, assicurandosi di valutare attentamente le esigenze di tutti, inclusi giovani, anziani, malati e disabili, affinché nessuno venisse trascurato o dimenticato in questo periodo frenetico. Si tratta di una qualità particolarmente preziosa ai nostri occhi: quando entrano in gioco culture diverse, la presenza di una figura di riferimento capace di comprendere le complesse dinamiche interpersonali locali e l'ecosistema del posto è fondamentale per ridurre costi di comunicazione e oneri operativi.\nTangtang si è adattata alla vita sulla Dijiang con una rapidità straordinaria. Talvolta la si vede camminare al fianco di Chen Qianyu, dell'Endministrator o della supervisora Perlica con gli occhi che brillano e la coda che ondeggia. Si è anche fatta dei nuovi amici, a cui ha subito affibbiato soprannomi affettuosi nello stile tipico della Palizzata di Qingbo. Tutto sulla Dijiang sembra affascinarla nel profondo, soprattutto il distributore automatico in mensa... Quand'è arrivata l'ha esaminato con estrema attenzione. Un operatore si è gentilmente offerto di mostrarle come inserire le monete e premere i pulsanti colorati per far cadere le bevande. Lei ha ascoltato in silenzio, senza però dare conferma di aver effettivamente capito... Quella sera l'allarme del distributore è scattato e l'operatrice Xaihi ha dovuto estrarre un \"certificato di Tangtang\" che si era incastrato nella gettoniera.\nDopo diversi mesi di attenta osservazione, siamo giunti alla seguente conclusione: non solo Tangtang non ha alcun bisogno di supporto psicologico, ma la sua presenza ha avuto un effetto rivitalizzante su tutta la Dijiang.\nQuando abbiamo interpellato gli operatori a lei più vicini, Chen Qianyu ha risposto con un sorriso: \"Tangtang è cresciuta vicino all'acqua, ma l'immagine che meglio la rappresenta è quella di una fiamma inestinguibile. Un temporale di passaggio può anche farla vacillare, ma la scintilla fa presto a riaccendersi, pronta ad ardere più intensamente che mai\".\nUn pomeriggio, mentre parlava con qualcuno, abbiamo sentito Tangtang esclamare con la sua solita schiettezza: \"La testa della capa non è mica così grande, ragazzino. Se sforzo troppo il cervello finirò per diventare stupida!\"</>",
+      "file2": "<@profile.key>[Relazione clinico-diagnostica]\nL'esame radiologico evidenzia organi dai contorni indistinti e ombre atipiche all'interno del corpo dell'operatrice. La presenza di particelle di Originium nel sistema circolatorio è associata ad anomalie che fanno pensare all'Oripatia. I risultati attuali consentono di confermare che l'operatrice è in effetti positiva all'Oripatia.\n\nNota del medico curante: Tangtang afferma di aver contratto l'Oripatia dieci anni fa, durante un conflitto tra la Palizzata di Qingbo e i Tianshi di Wuling City, e di non aver ricevuto alcun trattamento specializzato in questo periodo, se non qualche rimedio popolare fornito occasionalmente dagli abitanti della Palizzata. Tuttavia, i risultati degli esami indicano che sia il tasso di assimilazione cellulare dell'Originium che la densità di cristalli di Originium nel sangue sono perfettamente sotto controllo.\nInterrogata in merito, Tangtang ha risposto: \"Tutti dicono che sono la figlia del fiume. L'acqua lava via la malattia.\"\nChe un semplice corso d'acqua possa realmente curare l'Oripatia? La risposta è ovvia: è impossibile.\n\n[Modulo di richiesta farmaci compilato da un Tianshi]\nNome generico del farmaco: Inibitore di Oripatia\nQuantità richiesta: Fornitura a lungo termine\nSito di infezione: Regione oculare\nMotivo della richiesta: Fornire assistenza alla Palizzata di Qingbo\nRegistrazione audio:\n\"In tutta sincerità, sono un po' titubante all'idea di andare a consegnare questi farmaci... La prima volta, il ragazzo ce li ha rilanciati addosso urlando: 'Non accettiamo la carità da quelli di Wuling!' e ci si è lanciato contro di testa... Per fortuna c'erano delle guardie che ci hanno aiutati a scappare. Non temo per la mia vita, è solo che non possiamo permetterci un altro incidente simile.\"\n\"L'Oripatia della ragazza è sul punto di peggiorare, e loro lo sanno quanto noi. Ha contratto la malattia a causa nostra. Abbiamo l'obbligo di fornirle delle cure adeguate.\"\n\"A quel tempo... regnava il caos. Il cielo era denso e nero come la pece, reso pesante dalla pioggia che squarciava la cortina di nuvole. Arrancavamo contro il vento ululante mentre gli abitanti della Palizzata sbucavano da dietro le colline e ci venivano incontro con le armi in pugno, proiettando ombre che nella notte sembravano spiriti maligni...\"\n\"Erano tutti terrorizzati. Nessuno si era accorto della bambina in mezzo alla folla...\"\n\"Alla fine la pioggia ha lavato via il sangue... No, forse non ci è mai riuscita davvero. Quando cerco di dormire rivedo l'occhio ferito di quella bambina e lo sguardo di lui... del loro capo. Quelli che dicevano che voleva solamente sopravvivere... Non li dimenticherò mai, finché avrò vita.\"\n\"La seconda volta abbiamo lasciato le siringhe ai margini della Palizzata, dove gli abitanti le avrebbero senz'altro notate.\"\n\"Questa volta non era un atto di carità da parte del nemico... potevano essere cadute dal cielo, spuntate dalla terra o trasportate lì da una creatura selvatica. Vederla in quest'ottica rende il boccone meno amaro.\"\n\"Ho aspettato per due giorni interi... e le hanno prese.\"\n\"Dopo altri due giorni ho visto la ragazzina che giocava e inseguiva i lungorecchi lungo il fiume. Sembrava stare molto meglio.\"\n\"Non so cosa succederà d'ora in poi... e non credo si possa definire una vera redenzione. Ma almeno quel giorno sono riuscito a dormire.\"</>",
+      "file3": "<@profile.key>Tutti la chiamavano \"Giovinetta\" alla Palizzata di Qingbo perché Ruan Lin aveva già un figlio suo quando l'aveva trovata nel fiume. Poiché il primo si chiamava Yi, che significa \"uno\", aveva senso che il soprannome della seconda sottolineasse il suo essere più piccola. Gli abitanti della Palizzata di Qingbo ragionano in maniera semplice e diretta.\nNessuno sapeva da dove venisse la Giovinetta. Secondo Ruan Yi, era una gattina trovata in un cesto di bambù. Per Ruan Lin era invece un tesoro, la figlia del fiume mandata dalla fonte ancestrale. Sentendo quelle parole, un ragazzino domandò: \"Se la Giovinetta è nata dal fiume, allora significa che è la padrona del fiume?!\" A quel punto Tangtang gonfiò il petto, montò con un balzo sul suo cavallino di bambù e dichiarò orgogliosamente: \"Proprio così! L'acqua appartiene a me! La Palizzata di Qingbo appartiene a me! E anche tutto il buon cibo e il divertimento!\"\nRuan Lin le scompigliò affettuosamente i capelli e scoppiò in una risata fragorosa, alla quale ben presto si unirono tutti i presenti radunati intorno al fuoco, con un'allegria talmente contagiosa che anche Tangtang si mise a ridacchiare. Poi si cambiò discorso e l'argomento non fu più toccato.\nFu solo qualche anno dopo che Tangtang, mentre ascoltava gli abitanti che parlavano, fu attraversata da un pensiero improvviso. L'acqua del fiume non avrebbe certo potuto partorire una Felinar come lei. Dov'erano i suoi veri genitori?\nTangtang non riusciva a trovare una risposta. Passava le giornate a cercare somiglianze con i vari abitanti della Palizzata. Alcuni erano di costituzione troppo robusta, altri troppo bassi. Nessuno aveva delle orecchie o una coda belle come le sue.\nIl dubbio gravò sulla mente di Tangtang per un bel po', finché un giorno Ruan Lin non la chiamò per mangiare insieme della zuppa di pinna. Tangtang lanciò un'occhiata alla ciotola di Ruan Yi e poi alla propria. La testa, gli occhi e le interiora della pinna erano tutti nella sua ciotola. Mentre prendeva le interiora e le ficcava in bocca a Ruan Lin, pensò: \"Che m'importa di tutti quei discorsi che fanno gli altri sul fatto che 'la mamma è sempre la mamma'? La cucina di papà è deliziosa e a me basta questo!\"\n\nDopo un'indagine approfondita, le risorse umane hanno verificato che Tangtang era ancora una lattante quando fu trovata. Data la fisiologia dei neonati, sarebbe stato impossibile per lei sopravvivere a lungo alla deriva nel fiume. Di conseguenza, l'ipotesi preliminare è che sia stata abbandonata nelle vicinanze della Palizzata di Qingbo.\nDopo un'attenta analisi, il personale della Divisione medica ha ipotizzato che il disegno all'interno del suo occhio sia intrinsecamente legato alle sue Arti di Originium. La marcata regolarità delle linee esclude che si tratti di un effetto casuale dell'Oripatia. L'ipotesi più verosimile è che sia collegato alla sua anamnesi familiare. Tuttavia, dopo aver esaminato i vecchi registri relativi alla Palizzata di Qingbo, non sono stati trovati individui che presentassero una condizione analoga.\nLe sue testuali parole sono state: \"Mi sono solo allenata un sacco vicino all'acqua e il disegno è comparso così, da solo.\"\nCiò è semplicemente impossibile. Abbiamo chiesto aiuto all'ASH, che dopo aver esaminato gli archivi sui residenti ha altresì fallito nell'identificare i parenti di Tangtang. Una Tianshi specializzata nella storia di Yan ha però fatto una scoperta: in alcuni documenti yanesi tramandati da Terra ha trovato dei registri strettamente collegati al disegno nell'occhio di Tangtang. Secondo alcune leggende, tale disegno simboleggia l'evoluzione di cielo e terra e racchiude un patrimonio di conoscenze antichissime. Eppure risulta chiaro che Tangtang non ha accesso a tali conoscenze. Anche i Tianshi di Wuling sono rimasti sconvolti dalla scoperta. Non riescono a capacitarsi del fatto che un'utilizzatrice delle Arti di Originium così singolare sia stata sotto il loro naso tanto a lungo.\nIn conclusione, i reali motivi dell'abbandono di Tangtang alla Palizzata di Qingbo... potrebbero rivelarsi più complessi di quanto inizialmente previsto.\n...\nDopo aver condiviso i risultati della nostra indagine con Tangtang, lei si è limitata a grattarsi la testa e dire che le sue origini non sono poi così importanti. Dopotutto, ora ha una famiglia, degli amici e una vita appagante. Anche se una piccola parte di lei si chiede se abbia ancora dei parenti in vita e come se la passino... ha sottolineato che si tratta di una parte microscopica, grande quanto un artiglio di bestiaguscio.\nTangtang conserva ancora la piccola fascia in cui era avvolta quando fu trovata. Mentre ce la consegnava ha esitato per un istante prima di ritrovare il suo solito atteggiamento spensierato: \"E ricordatevi di ridarmela quando avrete finito di controllarla!\"</>",
+      "file4": "<@profile.key>[Vecchie riprese video]\n06:23:45:10\n\"Una telecamera... quell'affare che registra le cose? È carina, e si muove pure. Somiglia a un piccolo Lupo!\"\n\"Questo congegno se lo sono inventato i wulinghiani. Gliel'abbiamo fregato durante l'ultimo scontro. Per accenderla, basta schiacciare questo pulsante qui... Ehi, capa, vuoi provare e vedere com'è?\"\n\"Sì, dai! Ehi, come hai fatto a far sembrare le mie gambe così corte? Così la tua capa sembra una piccoletta!\"\n\"Beh, in realtà tu sei un po' ba... Ehi, non mi picchiare! Sono io quello basso, sono io!\"\n\"Con te non gioco più! Ora vado a prendere a cazzotti la squilibrata e userò questa Lupetta per riprendere la sua disfatta!\"\n\n07:10:30:15\n\"Accidenti a quella squilibrata, è di nuovo andata a combattere per la sua amata padrona Zhuang... L'ultima volta gli insettoidi l'hanno conciata per le feste, eppure non impara mai...\"\n\"Mi metterò comoda nella mia bella Palizzata e mi risparmierò tutte le contaminerie del mondo esterno... Ho acqua pulita da bere e una deliziosa pinna da mangiare...\"\n\"Ehi, Lupetta, stai un po' ferma! Guarda lì! C'è una sprovveduta che si allena con la spada vicino al confine di Wuling. Seguiamola e vediamo che succede.\"\n\"Eh eh, quelle spade gemelle non sembrano affatto male. Qui è pieno di insettoidi e la situazione si fa pericolosa. Meglio evitare che la riducano in poltiglia. E poi io, la capa, le prenderò quelle belle spade!\"\n\n08:36:05:55\n\"Hai fatto fuori tutti questi bastardoidi da sola?\"\n\"Sì! Non avevano scampo. Però grazie dell'aiuto! Ci sai fare con le pistole. Mi chiamo Chen Qianyu, e tu sei...?\"\n\"Tangtang. Capa suprema della Palizzata di Qingbo! Hai sentito parlare di me?\"\n\"Ma certo! La Palizzata di Qingbo, sempre a cercare guai con Wuling City... Aspetta, non sei qui per derubarmi, vero?\"\n\"Dipende. Sei una wulinghiana? Sono una capa equa, e Wuling è l'unica cosa che detesto!\"\n\"Io, ehm, in teoria lo sarei... Aspetta, no. Non ora. Non più...\"\n\"COSA? La squilibrata ti ha cacciata via? Tranquilla, i wulinghiani sono tutti contaminati nella testa... Ehi, perché piangi? ARGH! Non pulirti il moccolo su di me!\"\n\n11:42:13:07\n\"Non ho rimediato alcun tesoro e ho perfino perso un indumento. Questa spedizione è un disastro completo... MA CHE?!\"\n\"Ehi, zampettina, ancora a bighellonare per Wuling? Ti avevo detto di non farti più vedere.\"\n\"Fatti gli affari tuoi, squilibrata! Lasciami andare immediatamente!\"\n\nChine sul filmato, Tangtang e Chen Qianyu si sono guardate a vicenda in un silenzio smarrito. Poi, all'improvviso, Tangtang ha preso la telecamera ed è schizzata via come un fulmine.\n\"Voltoscuro! Biancascriba! GUARDATE QUI! Ho un filmato incredibile di Verdiscaglie che piange a dirotto! È BRUTTA FORTE!\"\n\"Tangtang!!! Fermati immediatamente!!!\"\nChen Qianyu, rossa per l'imbarazzo, ha inseguito Tangtang per tutto l'anello centrale della Dijiang per cinque o sei volte prima che Mi Fu, non potendone più, le sollevasse entrambe da terra per il colletto.\n\"Tangtang, dovevo rincorrerti a Wuling e mi tocca farlo anche sulla Dijiang in occasione di una visita ufficiale... Chen, perché le dai corda?\"\n\"Questa nave appartiene a Voltoscuro, brutta squilibrata! Qui non hai nessuna autorità! Lascia andare la tua capa! SUBITO!\"\nMentre Tangtang e Mi Fu erano prese a scambiarsi parole poco cortesi, Chen Qianyu si è liberata agilmente dalla presa di Mi Fu, ha strappato la telecamera dalle mani di Tangtang e ha cancellato il filmato incriminato. Dopodiché, facendo scherzosamente la linguaccia, ha rivolto l'obiettivo verso le due litiganti.\nLa telecamera ha registrato fedelmente la scena. Tangtang, tenuta per la collottola da Mi Fu, si è ricordata che, nonostante gli infiniti scontri e inseguimenti, Mi Fu non l'ha mai afferrata in punti realmente vulnerabili. Le bastava calmare la mente per trovare il modo di scappare.\nTangtang non ha mai capito perché riuscisse a cavarsela sempre così facilmente. L'attenta spettatrice Chen Qianyu è naturalmente uscita vincitrice da questa piccola zuffa con la sua ripresa di Tangtang, la capa derelitta, con le orecchie basse e l'espressione affranta. Un filmato da riguardare ancora e ancora...</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Abilità combo <@ba.key>FIUME, A ME!</> migliorata: il moltiplicatore danni è aumentato a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale, e ora il tempo di recupero è di <@ba.vup>{coolDown:0}</> s.\nAbilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> migliorata: per ogni <@ba.key>vortice</> consumato e convertito in una <@ba.key>tromba d'acqua</>, <#ba.return>ripristina</> <@ba.vup>{atb_return:0}</> PA extra.",
+      "name": "Accumulatrice"
+    },
+    "potential2": {
+      "description": "Agilità <@ba.vup>+{Agi:0}</>, danni da ghiaccio inflitti <@ba.vup>+{CrystDamageIncrease:0%}</>.",
+      "name": "Figlia del fiume"
+    },
+    "potential3": {
+      "description": "Abilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> migliorata: il moltiplicatore danni è aumentato a <@ba.vup>{atk_scale_1:0.0}</> volte rispetto all'originale. Gli effetti della <#ba.spellvul>Suscettibilità alle Arti</> applicati durante la creazione di più <@ba.key>trombe d'acqua</> sono aumentati di un <@ba.vup>{rate_spellvulnerable_02:0%}</>.",
+      "name": "Presenza autoritaria"
+    },
+    "potential4": {
+      "description": "Abilità suprema <@ba.key>LA CAPA TI VEDE!</> migliorata: <@ba.vup>-{1-costvalue:0%}</> al costo di energia suprema.",
+      "name": "Meditazione di Qingbo"
+    },
+    "potential5": {
+      "description": "Abilità suprema <@ba.key>LA CAPA TI VEDE!</> migliorata: il moltiplicatore danni è aumentato a <@ba.vup>{atk_scale_1:0.00}</> volte rispetto all'originale. \nTalento <@ba.key>Istigatrice di rivolte</> migliorato: gli effetti dei danni di ogni tromba d'acqua creata dall'abilità suprema <@ba.key>LA CAPA TI VEDE!</> sono aumentati di un <@ba.vup>{dmg_up_water_ult:0%}</>.",
+      "name": "Sguardo arcano della capa"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "L'anima si riflette nell'acqua pura",
+      "author": "Samail",
+      "description": "Tangtang ha un cuore d'acqua, immobile al chiaro di luna che scintilla del suo splendore."
+    },
+    "potential3": {
+      "name": "Spaccabambù",
+      "author": "二值笔战士",
+      "description": "L'aroma del bambù fresco le ricorda un pomeriggio qualunque in cui gli abitanti della Palizzata si sono messi a tessere fibre di bambù per confezionare impermeabili per l'anno nuovo. Quel giorno, ha fatto il pieno di sole."
+    },
+    "potential5": {
+      "name": "Gli ordini della capa suprema sono supremi",
+      "author": "수줍(Sjoop)",
+      "description": "\"Voltoscuro! Resta con la tua capa suprema! Verrà il giorno in cui ti porterò ai confini del mondo!\""
+    }
+  }
+}

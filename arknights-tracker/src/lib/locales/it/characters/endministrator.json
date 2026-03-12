@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Ignoto"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "Vacillamento"
       },
       "name": "Sequenza costruttiva",
-      "description": "Una potente esplosione di Arti di Originium che colpisce i nemici nel raggio d'azione. Infligge <@ba.pd>danni fisici</> e applica <#ba.crush>Distruzione</>."
+      "description": "Una potente esplosione di <@ba.key>cristalli di Originium</> che colpisce i nemici nel raggio d'azione. Infligge <@ba.pd>danni fisici</> e applica <#ba.crush>Distruzione</>."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "Durata sigillo (s)"
       },
       "name": "Sequenza sigillante",
-      "description": "ATTIVAZIONE COMBO: quando un altro operatore nella squadra infligge danni con abilità combo. \nSi precipita accanto al nemico per infliggere <@ba.pd>danni fisici</> e applica <#ba.originium>cristalli di Originium</> che attivano un sigillo temporaneo. L'applicazione di uno <#ba.physicalstatus>stato fisico</> o di <#ba.noguard>Vulnerabilità</> al nemico sigillato <#ba.consume>consuma</> i <#ba.originium>cristalli di Originium</> infliggendo <@ba.pd>danni fisici</> aggiuntivi."
+      "description": "ATTIVAZIONE COMBO: quando un altro operatore nella squadra infligge danni con abilità combo. \nSi precipita accanto al nemico per infliggere <@ba.pd>danni fisici</> e applica <@ba.key>cristalli di Originium</> che attivano un sigillo temporaneo. L'applicazione di uno <#ba.physicalstatus>stato fisico</> o di <#ba.noguard>Vulnerabilità</> al nemico sigillato infrange i <@ba.key>cristalli di Originium</> infliggendo <@ba.pd>danni fisici</> aggiuntivi."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "Vacillamento"
       },
       "name": "Sequenza di bombardamento",
-      "description": "Bombarda il suolo con le Arti di Originium, infliggendo ingenti <@ba.pd>danni fisici</> a tutti i nemici compresi in un'area a ventaglio. Se al nemico sono stati applicati <#ba.originium>cristalli di Originium</>, l'abilità li <#ba.consume>consuma</> e infligge un colpo aggiuntivo che provoca ulteriori <@ba.pd>danni fisici</>."
+      "description": "Bombarda il terreno con i <@ba.key>cristalli di Originium</>, infliggendo ingenti <@ba.pd>danni fisici</> a tutti i nemici compresi in un'area a ventaglio. Se al bersaglio sono stati applicati <@ba.key>cristalli di Originium</>, i <@ba.key>cristalli di Originium</> vengono infranti e parte un ulteriore colpo che infligge <@ba.pd>danni fisici</>."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula.",
-        "Quando i <#ba.originium>cristalli di Originium</> applicati al nemico sono <#ba.consume>consumati</>, l'Endministrator ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration:0} s. Questo effetto non si accumula."
+        "Colpire almeno 2 bersagli con l'abilità di combattimento o l'abilità suprema riduce il tempo di recupero dell'abilità combo di {0,0:0.0} s.",
+        "Colpire almeno 2 bersagli con l'abilità di combattimento o l'abilità suprema riduce il tempo di recupero dell'abilità combo di {0,0:0.0} s."
       ],
       "name": "Disintegrazione d'essenza"
     },
     "talent2": {
       "levels": [
-        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici.",
-        "I nemici a cui sono stati applicati <#ba.originium>cristalli di Originium</> subiscono <@ba.vup>+{dmg:0%}</> di danni fisici."
+        "I nemici sigillati dai <#ba.originium>cristalli di Originium</> subiscono +<@ba.vup>{0,0:0%}</> di danni fisici.",
+        "I nemici sigillati dai <#ba.originium>cristalli di Originium</> subiscono +<@ba.vup>{0,0:0%}</> di danni fisici."
       ],
       "name": "Stasi dello spazio reale"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>NOME IN CODICE: Endministrator \nGENERE: ■■ \nAFFILIAZIONE: ■■ \nDATA DI NASCITA: ■■ \nRAZZA: ■■ \n\nNon ricordi nulla. \nGli echi del tuo passato sono ridotti in frantumi e come sabbia ti scivolano tra le dita al minimo accenno di un pensiero. \nTalvolta, questo ti fa provare un senso di inquietudine, altre una sensazione di disagio, eppure ti dona sempre un momento di calma per respirare e riflettere. \nLa maggior parte delle volte, però, non puoi permetterti di nutrire dei dubbi. Devi solo fidarti di chi ti sta accanto e proseguire per la tua strada. \nForse hai riposto i tuoi ricordi in qualche angolo remoto della tua mente, anche se solo momentaneamente... \nE, per questo, non ricordi nulla. </>",
+      "humanResources": "<@profile.key>Hai vissuto l'intera storia di Talos-II...</>",
+      "file1": "<@profile.key>Ma... in che modo influenzerai il suo futuro?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "Abilità di combattimento <@ba.key>Sequenza costruttiva</> migliorata: <#ba.consume>consumare</> <#ba.originium>cristalli di Originium</> <#ba.return>ripristina</> <@ba.vup>{atb_return:0}</> PA.",
+      "description": "",
       "name": "Risveglio finale"
     },
     "potential2": {
-      "description": "Talento <@ba.key>Disintegrazione d'essenza</> migliorato: quando l'Endministrator ottiene un potenziamento dell'ATT, gli altri operatori alleati ne ottengono la metà.",
+      "description": "",
       "name": "Riflesso d'autorità"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

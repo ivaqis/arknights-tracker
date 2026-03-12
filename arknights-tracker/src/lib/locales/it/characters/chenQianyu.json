@@ -8,7 +8,7 @@
       "Tecnologia"
     ],
     "behaviourUnavailableTags": [
-      "Introversione"
+      "Introversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -120,7 +120,7 @@
       "name": "Arti marziali ereditate"
     },
     "potential3": {
-      "description": "Abilità di combattimento <@ba.key>Colpo ascendente</>, abilità combo <@ba.key>Volo verso le stelle</> e abilità suprema <@ba.key>Burrasca tagliente</> migliorate: il moltiplicatore danni aumenta di <@ba.vup>{atk_scale1:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità di combattimento <@ba.key>Colpo ascendente</>, abilità combo <@ba.key>Volo verso le stelle</> e abilità suprema <@ba.key>Burrasca tagliente</> migliorate: il moltiplicatore danni aumenta a <@ba.vup>{atk_scale1:0.0}</> volte rispetto all'originale.",
       "name": "Spadamante con due lame"
     },
     "potential4": {
@@ -128,7 +128,7 @@
       "name": "Chi Xiao improvvisata"
     },
     "potential5": {
-      "description": "Abilità combo <@ba.key>Volo verso le stelle</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s.",
+      "description": "Abilità combo <@ba.key>Volo verso le stelle</> migliorata: ora il tempo di recupero è di <@ba.vup>{coolDown:0}</> s.",
       "name": "Legame col mondo"
     }
   },

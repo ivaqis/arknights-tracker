@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nhiễm Băng",
+      "Dễ Bị Thương TP"
+    ],
+    "behaviourHateTags": [
+      "Mỹ Thuật"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Nội (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
+    ],
+    "blocTag": "Trại Thanh Ba",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Nhanh Nhẹn"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Thương Nhân Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Tự Nhiên",
+      "Sáng Tạo"
+    ],
+    "raceTag": "Feline"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+      },
+      "name": "CHOÁNG VÁNG",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Hệ Số ST Đòn Bắn",
+        "shotStagger": "Suy Sụp Do Cú Bắn",
+        "dmgMultiplier1Waterspout": "Hệ Số ST (1 Lốc Nước)",
+        "waterspoutDurationS": "Hiệu Lực Lốc Nước (giây)",
+        "spReturnPerWhirlpool": "Hồi Điểm KN mỗi Xoáy Nước",
+        "artsSusceptibility2Waterspouts": "Yếu Hóa Thuật Pháp (2 Lốc Nước)",
+        "artsSusceptibility3Waterspouts": "Yếu Hóa Thuật Pháp (3 Lốc Nước)",
+        "artsSusceptibilityDurationS": "Hiệu Lực Yếu Hóa TP (giây)"
+      },
+      "name": "Cưỡi Sóng Cuốn Triều",
+      "description": "Tangtang nhảy lên từ mặt nước và bắn một phát trực diện gây <@ba.cryst>ST Băng</> lên kẻ địch và tạo ra <@ba.key>Lốc Nước</>.\nThi triển KN chiến đấu cũng tiêu thụ toàn bộ <@ba.key>Xoáy Nước</> lân cận để tạo thêm các <@ba.key>Lốc Nước</> bổ sung và <#ba.return>hồi lại</> một lượng điểm KN dựa trên số lượng Lốc Nước được tạo ra.\n<@ba.key>Lốc Nước</>: Áp dụng 1 cộng dồn <#ba.crystinflict>Nhiễm Băng</> lên kẻ địch trong phạm vi và gây <@ba.cryst>ST Băng</> theo thời gian. Nếu kỹ năng tạo ra nhiều <@ba.key>Lốc Nước</>, chúng cũng sẽ áp dụng <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên kẻ địch (nhưng không thêm cộng dồn <#ba.crystinflict>Nhiễm Băng</>).\n<@ba.info>ST Gây Ra bởi Lốc Nước được tính là ST Kỹ Năng Chiến Đấu.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "whirlpoolDurationS": "Hiệu Lực Xoáy Nước (giây)"
+      },
+      "name": "DÒNG NƯỚC TRỢ SỨC",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi gây <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.spellburst>ST Bùng Nổ Thuật Pháp</> lên kẻ địch.\nTangtang phóng một luồng khí phản lực mạnh mẽ, xuyên qua mọi kẻ địch trên đường đi, gây <@ba.cryst>ST Băng</> và tạo ra một <@ba.key>Xoáy Nước</>.\n<@ba.info>Có thể tồn tại tối đa 2 Xoáy Nước trên chiến trường cùng lúc.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Tổng Hệ Số ST Theo Thời Gian",
+        "oldenStareDurationS": "Hiệu Lực CỔ VĂN CHI NHÃN (giây)",
+        "rogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ",
+        "earlyRogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ Sơ Khai",
+        "rogueWaveStagger": "Suy Sụp do Sóng Dữ",
+        "earlyRogueWaveStagger": "Suy Sụp do Sóng Dữ Sơ Khai"
+      },
+      "name": "THỦ LĨNH TRỪNG MẮT",
+      "description": "Tangtang mở miếng che mắt và phóng <@ba.key>CỔ VĂN CHI NHÃN</> từ mắt mình để tạm thời khóa, làm bất động và gây <@ba.cryst>ST Băng</> theo thời gian cho kẻ địch trong khu vực ảnh hưởng.\nKhi <@ba.key>CỔ VĂN CHI NHÃN</> ngừng biến hóa, sóng dữ sập xuống và gây một lượng lớn <@ba.cryst>ST Băng</> cho kẻ địch trong khu vực ảnh hưởng.\nNếu cán viên đang điều khiển thực hiện đòn bổ nhào theo hoa văn <@ba.key>CỔ VĂN CHI NHÃN</> thì kỹ năng sẽ ngừng biến hóa và lập tức tung sóng dữ để gây thêm nhiều <@ba.cryst>ST Băng</> hơn nữa."
+    },
+    "indicator": {
+      "levels": [
+        "Nhanh Nhẹn Cán Viên +10.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +20."
+      ],
+      "name": "Kẻ Đánh Lén"
+    },
+    "talent1": {
+      "levels": [
+        "Khi ở trong bán kính <@ba.vup>{range_talent1buff:0}</> mét của một <@ba.key>Xoáy Nước</>, cán viên đồng minh sẽ được cộng <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Tăng Tốc</> trong khi kẻ địch phải chịu <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Làm Chậm</>. Hiệu ứng này tiếp tục có hiệu lực trong {duration_talent1buff:0} giây sau khi rời khỏi phạm vi hiệu lực.",
+        "Khi ở trong bán kính <@ba.vup>{range_talent1buff:0}</> mét của một <@ba.key>Xoáy Nước</>, cán viên đồng minh sẽ được cộng <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Tăng Tốc</> trong khi kẻ địch phải chịu <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Làm Chậm</>. Hiệu ứng này tiếp tục có hiệu lực trong {duration_talent1buff:0} giây sau khi rời khỏi phạm vi hiệu lực."
+      ],
+      "name": "Huyết Tộc Danh Dự"
+    },
+    "talent2": {
+      "levels": [
+        "Trong khi thi triển <@ba.key>CỔ VĂN CHI NHÃN</>, thực hiện đòn bổ nhào bằng cán viên đang điều khiển sẽ không thể biến hóa đúng thời hạn và tạo ra một <@ba.key>Lốc Nước</>. Tất cả <@ba.key>Xoáy Nước</> cũng sẽ bị giải trừ và chuyển hóa thành <@ba.key>Lốc Nước</> khác.\n<@ba.key>Lốc Nước</> được tạo ra theo cách này có hiệu ứng giống với Lốc Nước tạo ra bằng KN chiến đấu <@ba.key>Cưỡi Sóng Cuốn Triều</> và được <@ba.vup>+{dmg_up_water_ult:0%}</> ST Gây Ra.",
+        "Trong khi thi triển <@ba.key>CỔ VĂN CHI NHÃN</>, thực hiện đòn bổ nhào bằng cán viên đang điều khiển sẽ không thể biến hóa đúng thời hạn và tạo ra một <@ba.key>Lốc Nước</>. Tất cả <@ba.key>Xoáy Nước</> cũng sẽ bị giải trừ và chuyển hóa thành <@ba.key>Lốc Nước</> khác.\n<@ba.key>Lốc Nước</> được tạo ra theo cách này có hiệu ứng giống với Lốc Nước tạo ra bằng KN chiến đấu <@ba.key>Cưỡi Sóng Cuốn Triều</> và được <@ba.vup>+{dmg_up_water_ult:0%}</> ST Gây Ra."
+      ],
+      "name": "Gieo Loạn"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó đi 14%",
+        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó đi 18%"
+      ],
+      "name": "Thủ Lĩnh Tối Cao"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 30%"
+      ],
+      "name": "Con Gái Của Dòng Sông"
+    },
+    "files": {
+      "main": "<@profile.key>MẬT DANH: Tangtang\nGIỚI TÍNH: Nữ\nXÁC MINH: Trại Thanh Ba\nNGÀY SINH: 29 Tháng 11\nCHỦNG TỘC: Feline\n[TÌNH TRẠNG NHIỄM ORIPATHY]\nDương tính với Oripathy (nhiễm bệnh), theo báo cáo khám sức khỏe.\n\n[KHÁM SỨC KHỎE TỔNG HỢP]\nTHỂ CHẤT: Cơ Bản\nKN CHIẾN ĐẤU: Xuất Sắc \nTƯ DUY CHIẾN THUẬT: Bình thường \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc\n\n\"Tôi đã xem báo cáo của Đội Ứng Phó Nguy Cảnh... Cô bé nói là được nhận nuôi đúng không? Hừm... Đúng là đã có nhiều người bị ly tán do thảm họa dù Học Viện Khoa Học Hongshan đã đứng ra quản lý. Tạm thời cứ để Bộ Phận HR kiểm tra lai lịch của cô bé. Biết đâu lại phát hiện thấy điều gì đó bất ngờ thì sao.\"</>",
+      "humanResources": "<@profile.key>Tangtang là thành viên kiêm đại diện chính cho Trại Thanh Ba. Cô bé gia nhập Tập Đoàn Endfield vì lý do cá nhân và hiện đang giữ chức Trưởng Phòng Liên Lạc Trại Thanh Ba tại Endfield.\n\nCán Viên Tangtang có lẽ là nhân vật nổi bật nhất trong đội ngũ nhân sự mà Endministrator chiêu mộ trên khắp Dijiang. Y như cuộc gặp đầu tiên của chúng tôi vậy... Xin lỗi, tôi cần truy xuất đoạn ghi hình được lưu trong cơ sở dữ liệu:\n\"Bịch! Bịch!\"\n\"Ê, cái thứ gì thế này mà dám ở trên một con phi thuyền to đùng vậy? Nhìn giống con thú ngà sắt ba đầu… Trông ngu ngơ thật...\"\n\"Cán Viên Tangtang, tôi đến để tiến hành buổi phỏng vấn tiếp nhận nhân... Không, đừng gõ vào bảng của tôi. Tôi là trợ lý nhân sự từ Tập Đoàn Endfield...\"\n\"Vậy ra ông thuộc đội của Darkmask à! Lẽ ra phải nói vậy sớm hơn chứ, Lão Mặt Sắt! Đây, mấy món xịn tôi mang cho Dân Trại mới đấy. Cứ dùng thoải mái!\"\nSau khi tôi nhiều lần khẳng định rằng mình không cần Chứng Nhận Tangtang, quặng hay trang sức nào cả, Tangtang vẫn vô cùng hào hứng rút từ túi ra một món trang sức hình vòng, làm từ vật liệu tự nhiên. Tôi cho rằng nó có thể được gọi là vòng hoa tre đan. Cô bé đặt chiếc vòng lên bảng điều khiển của tôi, rồi tò mò gõ nhẹ vào hai cái còn lại: \"Ông sắc bén hơn mấy món đồ thiếc Võ Lăng kia nhiều! Hay là theo ta về Trại Thanh Ba đi? Nào, gọi ta là Thủ Lĩnh đi!\"\nĐánh giá của tôi về Tangtang trùng khớp với nhận định của những người khác: vui vẻ, thẳng thắn, không màu mè. Cô mang trong mình một trái tim trẻ thơ, tràn đầy nhiệt huyết và tò mò trước mọi thứ trên đời... Nếu phải tóm gọn trong vài từ, tôi sẽ gọi Tangtang là \"đứa trẻ đang lớn dở\". Thế nhưng tôi không thể gia nhập Trại Thanh Ba và cùng cô bé chinh phục Talos-II. Điều này hoàn toàn không liên quan đến chồng hồ sơ nhân sự bất tận đang chờ tôi xử lý, chỉ đơn giản là không phù hợp với quy định của Endfield.\nĐể tránh làm tổn thương đôi tay của Tangtang, đồng thời cũng để bản thân không phải chịu vụ \"chấn động cơ khí\" nào nữa, có lẽ tôi nên nghiêm túc cân nhắc việc né xa cô bé... Thật lạ là cô bé lúc nào cũng tìm ra tôi.\n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
+      "file1": "<@profile.key>Sau sự cố tại Trại Thanh Ba, ban đầu chúng tôi nghĩ sẽ tiếp đón một cán viên mang tâm trạng hoang mang, đau buồn hoặc phẫn nộ. Để phòng hờ, chúng tôi đã sắp xếp một vài biện pháp can thiệp tâm lý để giúp cô bé vượt qua sang chấn. Thế nhưng, khi Tangtang đến Dijiang qua giao thức dịch chuyển, gương mặt cô lại rạng rỡ kèm một nụ cười tươi rói, không hề có dấu hiệu u uất hay tổn thương tinh thần.\nGiám Sát Viên Perlica nhắc chúng tôi rằng, dù trong tộc vô cùng rối ren, Tangtang vẫn có thể dùng sức hút cá nhân của mình để quy tụ những con người đang tản mác. Điều này chứng tỏ cô bé có một tinh thần kiên cường, đủ khả năng gánh vác trách nhiệm lớn lao.\nVà quả thật, Tangtang còn nhạy bén hơn nhiều so với những gì chúng tôi từng hình dung. Cô bé có khả năng quan sát và cảm nhận tình huống không ai sánh kịp. Khi lên kế hoạch phát triển tiếp theo cho Trại Thanh Ba, cô bé luôn đặt quyền lợi của tộc nhân lên hàng đầu, khéo léo cân bằng giữa tính quyết đoán và chu đáo để đảm bảo mọi người từ trẻ nhỏ, người già, người bệnh cho đến người khuyết tật đều được quan tâm đầy đủ, không ai bị bỏ sót hay lãng quên giữa bộn bề công việc. Phẩm chất này đặc biệt đáng quý với chúng tôi: trong bối cảnh có nhiều văn hóa khác nhau, nếu có một người dẫn dắt am hiểu các mối quan hệ xã hội phức tạp và hệ sinh thái địa phương, chúng tôi sẽ có thể tiết kiệm chi phí giao tiếp đáng kể trong quá trình phát triển.\nTangtang thích nghi với cuộc sống ở Dijiang nhanh một cách đáng kinh ngạc. Đôi khi, chúng tôi thấy cô rảo bước bên cạnh Endministrator, Chen Qianyu hoặc Giám Sát Viên Perlica với đôi mắt lấp lánh, đuôi khẽ đung đưa. Cô bé cũng đã kết giao với vài người bạn mới, đặt cho họ những biệt danh thân mật theo phong cách của Trại Thanh Ba. Hơn nữa, dường như mọi điều ở Dijiang đều khiến cô tò mò, nhất là chiếc máy bán hàng tự động trong căn tin... Ngay ngày đầu tiên, cô đã đi vòng quanh nó không biết bao nhiêu lần. Thế rồi, một cán viên tốt bụng bước tới, chỉ cho cô cách bỏ xu và bấm các nút màu để một lon nước lăn ra ngoài. Cô im lặng lắng nghe, chẳng biết liệu có thực sự hiểu hết hay không... Tối hôm đó, chiếc máy bán hàng tự động kích hoạt báo động, để rồi khiến Cán Viên Xaihi phải ra tay lấy \"Chứng Nhận Tangtang\" kẹt trong khe bỏ xu.\nSau vài tháng quan sát, chúng tôi đi đến kết luận rằng, không những không cần bất kỳ sự hỗ trợ tâm lý nào từ phía chúng tôi, sự hiện diện của Tangtang còn thực sự thổi một luồng sinh khí mới vào Dijiang.\nKhi trao đổi điều này với những cán viên quen biết cô ấy, Chen Qianyu mỉm cười nhận xét: \"Dù lớn lên bên dòng nước, nhưng Tangtang giống một ngọn lửa không bao giờ tắt. Gió bão quét qua có thể làm nó dịu xuống, nhưng tia lửa sẽ nhanh chóng bùng lên và cháy rực trở lại.\"\nMột buổi chiều nọ, chúng tôi vô tình nghe thấy Tangtang trò chuyện với ai đó, giọng vẫn thẳng thắn như thường lệ: \"Đầu của Thủ Lĩnh đâu có to đến vậy, nhóc à. Chị không thể ngừng tò mò được em ạ. Nghĩ nhiều chỉ làm chị ngốc đi thôi!\"</>",
+      "file2": "<@profile.key>[Báo Cáo Chẩn Đoán Lâm Sàng]\nKết quả chụp chiếu cho thấy rìa cơ quan mờ, đồng thời xuất hiện các vùng bóng bất thường trong cơ thể cán viên. Việc phát hiện hạt Originium trong hệ tuần hoàn cho thấy các dấu hiệu dị thường, có biểu hiện nhiễm Oripathy. Ở giai đoạn này, có thể xác nhận cán viên dương tính với Oripathy.\n\nGhi Chú Của Bác Sĩ Điều Trị: Theo lời kể của chính Tangtang, cô bị nhiễm Oripathy trong một cuộc xung đột giữa Trại Thanh Ba và Thiên Sư của Thành Phố Võ Lăng hơn mười năm trước. Tangtang cho biết, trong suốt mười năm qua, cô không hề được điều trị chuyên biệt mà chỉ thi thoảng dùng các bài thuốc dân gian do cư dân trong trại cung cấp. Tuy nhiên, kết quả kiểm tra cho thấy tỷ lệ đồng hóa Originium ở cấp tế bào, cũng như mật độ tinh thể Originium trong máu của cô, đều được kiểm soát ở mức đáng kinh ngạc.\nKhi được hỏi về điều này, Tangtang đáp: \"Mọi người đều nói tôi là Con Gái Của Dòng Sông. Nước rửa trôi tật bệnh đi.\"\nLiệu các thủy vực tự nhiên thật sự có khả năng chữa Oripathy không? Câu trả lời đã quá rõ ràng: không thể.\n\n[Mẫu Đơn Xin Thuốc từ một Thiên Sư]\nTên Thuốc Gốc: Thuốc Ức Chế Oripathy\nSố Lượng Yêu Cầu: Cấp thuốc lâu dài\nVị Trí Nhiễm Của Bệnh Nhân: Vùng mắt\nLý Do Xin Thuốc: Hỗ trợ Trại Thanh Ba\nNhật Ký Âm Thanh:\n\"Thú thực là tôi hơi ngại về việc cấp thuốc... Lần thứ nhất, ông ta ném thuốc về phía chúng tôi và hét to: \"Chúng tôi không nhận bố thí từ dân Võ Lăng!\" sau đó cố dùng đầu húc chúng tôi... May nhờ đội cảnh vệ can thiệp kịp thời mà chúng tôi thoát được. Tôi không sợ ông ấy giết mình, chỉ là chúng tôi không được để xảy ra thêm một vụ việc như vậy nữa.\n\"Tình trạng Oripathy của con bé đang trở nặng. Chúng tôi biết và chắc chắn là họ cũng biết. Vì chúng tôi mà con bé bị nhiễm. Chúng tôi có nghĩa vụ chữa trị cho nó.\n\"Hồi đó… mọi thứ thực sự hỗn loạn. Bầu trời đen kịt, sầm sập đến ngột ngạt, cơn mưa xé toạc màn mây. Chúng tôi lê bước trong tiếng gió gào thét, khi những cư dân trong trại bất ngờ xông ra sau các ngọn đồi, tay cầm vũ khí, bóng dáng họ trong đêm tối tựa như những ác linh...\n\"Mọi người đều hoảng loạn. Không ai nhận ra giữa đám đông ấy lại có một đứa bé nhỏ đến vậy...\n\"Mưa rửa trôi vết máu… Không, không, có lẽ nó chưa bao giờ thực sự biến mất. Mỗi khi nhắm mắt lại, tôi vẫn nhìn thấy con mắt bị thương của con bé, và cả đôi mắt của hắn… thủ lĩnh. Nó nói rằng hắn chỉ muốn sống thôi... Tôi sẽ không bao giờ quên đôi mắt ấy cho đến hết cuộc đời này.\n\"Lần thứ hai, chúng tôi để ống tiêm ở rìa ngoài Trại Thanh Ba, nơi mà chắc chắn cư dân có đi ngang qua.\n\"Lần này thì không phải là sự bố thí từ kẻ thù... có lẽ là rơi từ trên trời xuống, mọc từ dưới đất lên, hay là có con thú nào đó mang tới. Nghĩ vậy, có lẽ họ sẽ dễ chấp nhận hơn.\n\"Tôi chờ trọn hai ngày... và rồi người ta lấy đi.\n\"Tôi lại chờ thêm hai ngày nữa, rồi nhìn thấy cô bé chơi đùa bên bờ sông. Nó đuổi theo lũ tai dài dọc con sông được một quãng khá xa. Trông cô bé khá hơn nhiều rồi.\n\"Tôi không biết từ đây mọi chuyện sẽ đi về đâu... và cũng không nghĩ đây được coi là sự chuộc tội thực sự. Nhưng ít nhất thì tôi cũng đã có một đêm an giấc vào ngày hôm đó.\"</>",
+      "file3": "<@profile.key>Ở Trại Thanh Ba, mọi người đều gọi cô bé là \"Nhị Tiểu Thư\" vì Ruan Lin chỉ có một người con ruột, sau đó lại vớt thêm một nhóc từ dưới sông lên. Người con cả tên là \"Nhất\", vậy nên đứa sau đương nhiên thành \"Nhị\". Người Trại Thanh Ba xưa nay suy nghĩ rất đơn thuần và trực tính.\nKhông ai thực sự biết Nhị Tiểu Thư đến từ đâu. Ruan Yi nói rằng cô bé là con mèo con trong chiếc giỏ tre mà ông nhặt được. Còn Ruan Lin thì bảo cô là một báu vật, là Con Gái Của Dòng Sông do Suối Tiền Nhân ban tặng. Một cậu bé đứng gần đó nghe vậy liền hỏi, nếu Nhị Tiểu Thư được sinh ra từ dòng sông, vậy chẳng phải cô ấy chính là chủ nhân của nó sao?! Nghe thế, Tangtang ưỡn ngực lên, nhảy phắt lên con ngựa tre của mình và hãnh diện tuyên bố: \"Chính xác! Dòng sông là của ta! Trại Thanh Ba là của ta! Đồ ăn ngon với trò vui cũng đều là của ta hết!\"\nRuan Lin xoa đầu cô bé, rồi bật cười sảng khoái. Chẳng bao lâu, mọi người quây quần bên đống lửa cũng bật cười theo, niềm vui lan tỏa khiến Tangtang cũng cười khúc khích. Câu chuyện chuyển sang các chủ đề khác và người ta không còn nhắc lại chuyện đó nữa.\nMãi đến khi Tangtang lớn hơn một chút, ngày nọ, trong lúc nghe Dân Trại trò chuyện, một ý nghĩ bỗng lóe lên trong đầu cô. Nước sông làm sao sinh ra được một Feline như cô chứ. Vậy cha mẹ thật sự của cô là ai?\nTangtang không sao hiểu nổi. Suốt nhiều ngày liền, cô so sánh bản thân với từng người trong Trại. Người thì quá vạm vỡ, người thì quá thấp bé. Không một ai có đôi tai hay cái đuôi đẹp như của cô.\nNỗi băn khoăn ấy đè nặng trong lòng Tangtang suốt một thời gian dài, cho đến khi Ruan Lin gọi cô lại ăn món cá hầm trong nồi sắt. Tangtang liếc sang bát của Ruan Yi, rồi lại nhìn xuống bát của mình. Đầu, mắt và miếng bụng mềm nhất đều nằm trong bát của cô. Tangtang gắp miếng bụng cá, đút thẳng vào miệng Ruan Lin, trong lòng nghĩ thầm: \"Mặc kệ họ lải nhải mấy chuyện về \"hơi ấm của mẹ\" đi. Ba nấu ăn ngon thế này là đủ rồi!\"\n\nSau quá trình điều tra và xác minh kéo dài, Bộ Phận HR xác nhận rằng Tangtang vẫn còn là một đứa bé miệng còn hơi sữa khi được phát hiện. Xét theo sinh lý của trẻ sơ sinh, gần như không có khả năng cô bé có thể trôi dạt xa dọc theo dòng sông. Vì vậy, bước đầu có thể suy đoán rằng cô đã bị bỏ lại ở khu vực gần Trại Thanh Ba.\nSau khi tiến hành kiểm tra và đánh giá chi tiết về đôi mắt của Tangtang, người ở Bộ Phận Y Tế nghi rằng hoa văn trong mắt có mối liên hệ chặt chẽ với Thuật Pháp Originium của cô. Do cấu trúc hoa văn mang tính quy luật rất cao, có thể loại trừ khả năng đây là triệu chứng ngẫu nhiên do nhiễm Oripathy. Thay vào đó, nhiều khả năng nó có liên quan đến gia hệ bệnh sử của cô. Tuy nhiên, sau khi rà soát toàn bộ hồ sơ nhân sự còn lưu tại Trại Thanh Ba, không phát hiện thấy bất kỳ người nào có tình trạng tương đồng với cô.\nTheo lời tự thuật của chính Tangtang: \"Ta cứ luyện mãi bên dòng sống, rồi thì hoa văn ấy tự nhiên xuất hiện.\"\nĐiều này tuyệt đối không thể xảy ra. Chúng tôi đã cầu viện tới Học Viện, sau khi đối chiếu tư liệu cư dân, phía họ cũng không thể xác định được bất kỳ thân quyến nào của Tangtang. Tuy nhiên, một vị Thiên Sư chuyên nghiên cứu lịch sử Viêm Quốc đã đạt được bước đột phá: trong văn hiến Viêm Quốc truyền lại từ Terra, bà phát hiện các ghi chép có mức độ liên hệ cực cao với hoa văn trong mắt của Tangtang. Theo các truyền thuyết được chép trong điển tịch, hoa văn này tượng trưng cho diễn hóa của thiên địa, hàm chứa sự kế thừa tri thức cổ xưa. Thế nhưng, rõ ràng Tangtang không hề có điều kiện tiếp cận loại tri thức ấy. Các Thiên Sư của Võ Lăng cũng không khỏi chấn động trước phát hiện này. Họ chưa từng nghĩ rằng ngay trong tầm kiểm soát của mình lại có một người sử dụng được Thuật Pháp Originium độc nhất như vậy.\nTựu chung lại, lý do cụ thể khiến Tangtang bị bỏ lại ở Trại Thanh Ba... có lẽ phức tạp hơn nhiều so với những gì chúng tôi từng giả định ban đầu.\n...\nSau khi thông báo kết quả điều tra cho Tangtang, cô chỉ gãi đầu, nói rằng lai lịch của mình cũng chẳng quan trọng đến thế. Dù sao thì hiện tại cô đã có gia đình, có bạn bè và đang sống rất tốt. Chỉ là, cô cũng hơi tò mò một chút, không biết mình còn có huyết thân hay không, và nếu có thì họ đang sống ra sao... Cô nhấn mạnh là chỉ tò mò một chút thôi, cỡ móng vuốt của một con quái vỏ sò nhỏ xíu vậy.\nTangtang vẫn luôn giữ mảnh vải bọc nhỏ mà cô được quấn trong đó năm xưa. Khi trao mảnh vải cho chúng tôi để kiểm tra, cô khẽ do dự trong chốc lát, rồi nhanh chóng trở lại vẻ vô tư thường ngày: \"Xem xong nhớ trả ta đấy!\"</>",
+      "file4": "<@profile.key>[Đoạn Ghi Hình Cũ]\n06:23:45:10\n\"Một cái camera... món đồ có thể ghi hình ấy hả? Trông khá dễ thương, còn biết di chuyển nữa. Nhìn như một bé Lupo nhỏ xinh vậy!\"\n\"Người Võ Lăng nghĩ ra cái đồ này. Chúng tôi thu được cái này trong lần chạm trán trước với chúng. Chỉ cần bấm nút này là khởi động được thôi... Này, Thủ Lĩnh, muốn thử bấm chụp xem trông thế nào không?\"\n\"Thôi nào, làm đi chứ! Ê, chụp kiểu gì mà chân ta trông ngắn thế hả? Làm đại ca của ngươi nhìn bé xíu luôn!\"\n\"Thì vốn dĩ đại cá trông... Ê ê, đừng đánh mà! Là em! Em mới là người thấp, em thấp ạ, được chưa!\"\n\"Không chơi với ngươi nữa! Ta sẽ đi cho mụ điên đó một trận ra trò, rồi dùng cái Lupo nhỏ này quay lại cảnh mụ bị đánh nằm bẹp luôn!\"\n\n07:10:30:15\n\"Đúng là mụ điên, lại lao ra đánh nhau vì sếp tổng Zhuang rồi... Lần trước bị bọn quỷ nước đập cho bầm dập thế mà vẫn chưa chừa à...\n\"Thôi thì ta cứ chui về trại cho yên thân, tránh xa mớ rắc rối ngoài kia vậy... Có nước sạch để uống, có cá ngon để ăn…\n\"Này, Lupo nhỏ, đứng yên nào! Nhìn đi! Có cô ngốc nào đó đang luyện kiếm gần biên giới Vũ Lăng đó. Theo sau xem có chuyện gì nào.\n\"Hừm, cặp song kiếm kia trông cũng ra gì đấy chứ. Vùng này quái nhiều quá, dạo này nguy hiểm thật. Tốt nhất đừng để cô ta biến thành mồi cho bọn quái. Còn ta, Thủ Lĩnh, sẽ lấy hết đồ đẹp của cô ta.\"\n\n08:36:05:55\n\"Cô tự mình hạ hết mấy con quái này à?\"\n\"Đúng, lũ nhỏ đó không là gì với tôi đâu. Nhưng mà cảm ơn đã hỗ trợ! Kỹ năng bắn súng của cô cũng khá đấy. Tôi là Chen Qianyu, rất vui được gặp cô...?\"\n\"Tangtang. Thủ Lĩnh Tối Cao của Trại Thanh Ba! Cô có nghe tên ta bao giờ chưa?\"\n\"Tất nhiên rồi! Trại Thanh Ba, mấy tên hay gây rắc rối với Thành Phố Vũ Lăng... Chờ đã, cô không định cướp tôi chứ?\"\n\"Còn tùy. Cô là người Vũ Lăng à? Thủ Lĩnh của cô và Vũ Lăng là thứ duy nhất ta ghét!\"\n\"Tôi… à, trước thì có… khoan, không. Giờ thì không…\"\n\"CÁI GÌ? Mụ điên đó đá cô ra ngoài à? Không sao, làm người Vũ Lăng thật chán chết... Này, sao cậu lại khóc thế? ARGH! Đừng lau nước mũi lên tôi chứ!\"\n\n11:42:13:07\n\"Chẳng thu được bảo vật gì, còn mất toi bộ quần áo. Chuyến này đúng là thảm họa... ÔI?!?\"\n\"Này, mèo con, lại lảng vảng gần Vũ Lăng à? Tưởng ta đã bảo người tránh chỗ này rồi cơ mà.\"\n\"Không phải việc của mụ, mụ điên! Thả ta ra ngay!\"\n\nTangtang và Chen Qianyu cúi sát lại, xem lại đoạn ghi hình. Cả hai nhìn nhau, vừa bối rối vừa im lặng. Đột nhiên, Tangtang giật lấy thiết bị và phóng như bay—\n\"Darkmask! Thư Sinh Mặt Trắng! XEM CÁI NÀY NÈ! Ta có mấy đoạn siêu ngầu về Tiểu Thanh Long mít ướt kìa! NOM NGỐ NGỐ LẮM!\"\n\"Tangtang!!! Đứng lại ngay!!!\"\nChen Qianyu, đỏ mặt vì xấu hổ, đuổi Tangtang vòng quanh Khoang Trung Tâm năm sáu lần, cho đến khi Mi Fu không chịu nổi nữa, túm lấy cổ áo cả hai đứa và nhấc bổng lên.\n\"Tangtang, ta phải đuổi ngươi ở Vũ Lăng, giờ lại còn phải đuổi ở Dijiang trong chuyến du hành này nữa... Chen, sao cô lại tiếp tay cho con bé nghịch ngợm này vậy?\"\n\"Darkmask Trại của ta sở hữu nơi này, mụ điên ạ! Mụ không có quyền gì ở đây! Thả Thủ Lĩnh của tôi ra! NGAY!\"\nTrong lúc Tangtang và Mi Fu cãi nhau chí chóe, Chen Qianyu khéo léo thoát khỏi tay Mi Fu, giật lấy camera từ tay Tangtang và ngay lập tức bấm nút xóa \"nỗi xấu hổ\" đó. Rồi Tangtang lè lưỡi nghịch ngợm, đưa ống kính về phía cặp đôi đang cãi nhau.\nCamera ghi hết lại toàn bộ cảnh đó. Tangtang, bị Mi Fu túm gáy, bỗng nhớ lại quá khứ... Dù bị đuổi bắt vô số lần, Mi Fu chưa bao giờ túm vào điểm yếu của Tangtang. Miễn là xoay sở được một chút, Tangtang luôn tìm được cơ hội trốn thoát.\nTangtang chẳng bao giờ hiểu tại sao mình lúc nào cũng trơn tuột đi dễ dàng đến vậy. Còn Chen Qianyu người quan sát, tất nhiên trở thành người chiến thắng trong vụ này: một đoạn video Tangtang – Thủ Lĩnh Bại Trận, tai rũ xuống, vẻ mặt cực kỳ đáng thương hại, xem đi xem lại mà vẫn không thể ngừng cười.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN liên hoàn <@ba.key>DÒNG NƯỚC TRỢ SỨC!</> được cải thiện: Hệ Số ST tăng lên gấp <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu và thời gian hồi chiêu giờ là <@ba.vup>{coolDown:0}</> giây.\nKN chiến đấu <@ba.key>Cưỡi Sóng Cuốn Triều</> được cải thiện: Cứ mỗi <@ba.key>Xoáy Nước</> được giải trừ và chuyển hóa thành <@ba.key>Lốc Nước</> sẽ <#ba.return>hoàn</> <@ba.vup>{atb_return:0}</> thêm điểm KN.",
+      "name": "Kho Dự Trữ"
+    },
+    "potential2": {
+      "description": "Nhanh Nhẹn <@ba.vup>+{Agi:0}</>, ST Băng gây ra <@ba.vup>+{CrystDamageIncrease:0%}</>",
+      "name": "Con Gái Của Dòng Sông"
+    },
+    "potential3": {
+      "description": "KN chiến đấu <@ba.key>Cưỡi Sóng Cuốn Triều</> được cải thiện: Hệ Số ST được tăng lên gấp <@ba.vup>{atk_scale_1:0.0}</> lần so với ban đầu. Khi tạo nhiều <@ba.key>Lốc Nước</>, hiệu ứng <#ba.spellvul>Yếu Hóa Thuật Pháp</> sẽ được <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "name": "Phong Thái Thủ Lĩnh"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>THỦ LĨNH TRỪNG MẮT</> được cải thiện: Năng Lượng Tuyệt Kỹ cần dùng <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Thiền Thanh Ba"
+    },
+    "potential5": {
+      "description": "Tuyệt kỹ <@ba.key>THỦ LĨNH TRỪNG MẮT</> được cải thiện: Hệ Số ST được tăng lên <@ba.vup>{atk_scale_1:0.00}</> lần so với ban đầu. \nTài năng <@ba.key>Kẻ Gây Sóng Gió</> được cải thiện: hiệu ứng ST của bất kỳ Lốc Nước tạo ra bởi tuyệt kỹ <@ba.key>THỦ LĨNH TRỪNG MẮT</> được tăng thêm <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+      "name": "Ma Nhãn của Thủ Lĩnh"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Nước Trong Phản Chiếu Tâm Hồn",
+      "author": "Samail",
+      "description": "Tangtang mang trong mình trái tim trong veo như nước, tĩnh lặng như hồ dưới ánh trăng và tỏa sáng rực rỡ."
+    },
+    "potential3": {
+      "name": "Máy Bổ Tre",
+      "author": "二值笔战士",
+      "description": "Mùi hương của tre tươi gợi cho cô nhớ về một buổi chiều bình thường khi những Dân Trại dệt áo mưa bằng tre cho năm tới, một ngày mà cô được tắm mình dưới ánh nắng mặt trời."
+    },
+    "potential5": {
+      "name": "Mệnh Lệnh của Thủ Lĩnh Tối Cao Là Tối Thượng",
+      "author": "수줍(Sjoop)",
+      "description": "\"Darkmask! Bám sát Thủ Lĩnh Tối Cao của ngươi đi! Rồi sẽ có ngày ta đưa ngươi đến tận cùng thế giới!\""
+    }
+  }
+}

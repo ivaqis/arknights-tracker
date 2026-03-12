@@ -8,7 +8,7 @@
       "Sport"
     ],
     "behaviourUnavailableTags": [
-      "Introversione"
+      "Introversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -122,7 +122,7 @@
       "name": "Doveri di supervisione"
     },
     "potential4": {
-      "description": "Abilità combo <@ba.key>Protocollo istantaneo: concatenazione</> migliorata: la durata dell'effetto negativo che aumenta i <#ba.spelldmg>danni da Arti subiti</> applicato da <#ba.conduct>Elettrificazione</> si estende di <@ba.vup>{extra_scaling}</> volte rispetto all'originale.",
+      "description": "Abilità combo <@ba.key>Protocollo istantaneo: concatenazione</> migliorata: l'incremento dei <#ba.spelldmg>danni da Arti subiti</> dal nemico applicato da <#ba.conduct>Elettrificazione</> aumenta a <@ba.vup>{extra_scaling}</> volte rispetto all'originale.",
       "name": "Sostegno ininterrotto"
     },
     "potential5": {

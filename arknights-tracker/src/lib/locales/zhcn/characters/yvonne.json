@@ -9,7 +9,7 @@
       "运动"
     ],
     "behaviourUnavailableTags": [
-      "内向"
+      "内向（系统用游戏中不可见）"
     ],
     "blocTag": "终末地工业",
     "expertTags": [
@@ -67,15 +67,15 @@
       "ultimate": {
         "durationS": "持续时间（秒）",
         "batkDmgMultiplier": "普通攻击伤害倍率",
-        "poweredAtkDmgMultiplier": "强力攻击伤害倍率",
+        "enhancedFinalStrikeDmgMultiplier": "强力攻击伤害倍率",
         "additionalAtkDmgMultiplier": "额外攻击伤害倍率",
-        "enhancedAtkStagger": "强力攻击失衡值",
+        "enhancedFinalStrikeStagger": "强力攻击失衡值",
         "maxStacks": "最大叠加层数",
         "criticalRateBoostPerStack": "每层暴击率增加",
         "criticalDmgBoostAtMaxStacks": "满层暴击伤害增加"
       },
       "name": "冷冻射手",
-      "description": "立即部署小嘀嗒进行辅助，并切换至主控干员。\n在接下来一定时间内，伊冯的普通攻击会得到<@ba.key>强化</>，每次普通攻击都会增加自己的暴击率。当叠加至最大层数后，自身暴击伤害增加。持续时间结束前的最后一次普通攻击会变为<#ba.lastcombo>重击</>，造成大量<@ba.cryst>寒冷伤害</>。\n如果敌人处于<#ba.frozen>冻结</>状态，额外造成一次<@ba.cryst>寒冷伤害</>后，<#ba.consume>消耗</>其<#ba.frozen>冻结</>状态。"
+      "description": "立即部署小嘀嗒进行辅助，并切换至主控干员。\n在接下来一定时间内，伊冯的普通攻击会得到<@ba.key>强化</>，每次普通攻击都会增加自己的暴击率。当叠加至最大层数后，自身暴击伤害增加。持续时间结束前的最后一次强力攻击会变为<#ba.lastcombo>重击</>，造成大量<@ba.cryst>寒冷伤害</>。\n如果敌人处于<#ba.frozen>冻结</>状态，额外造成一次<@ba.cryst>寒冷伤害</>后，<#ba.consume>消耗</>其<#ba.frozen>冻结</>状态。"
     },
     "indicator": {
       "levels": [
@@ -137,7 +137,7 @@
       "name": "嘀嗒充能"
     },
     "potential4": {
-      "description": "战技<@ba.key>冰冰弹·β型</>的首次爆炸仅命中单个敌人时，<#ba.return>返还</><@ba.vup>{atb_return:0}</>点技力。",
+      "description": "战技<@ba.key>冰冰弹·β型</>的爆炸仅命中单个敌人时，<#ba.return>返还</><@ba.vup>{atb_return:0}</>点技力。",
       "name": "叛逆心情"
     },
     "potential5": {

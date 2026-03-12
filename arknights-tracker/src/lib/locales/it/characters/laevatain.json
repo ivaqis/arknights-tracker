@@ -126,7 +126,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Abilità di combattimento <@ba.key>Fuoco quiescente</> migliorata: il moltiplicatore di attacco aggiuntivo aumenta di <@ba.vup>{ratio:0.0}</> volte rispetto all'originale, e i colpi a segno <#ba.return>ripristinano</> <@ba.vup>{atb:0}</> PA.",
+      "description": "Abilità di combattimento <@ba.key>Fuoco quiescente</> migliorata: il moltiplicatore di attacco aggiuntivo aumenta a <@ba.vup>{ratio:0.0}</> volte rispetto all'originale, e i colpi a segno <#ba.return>ripristinano</> <@ba.vup>{atb:0}</> PA.",
       "name": "Cuore della Fiamma di scioglimento"
     },
     "potential2": {
@@ -134,7 +134,7 @@
       "name": "All'inseguimento dei ricordi"
     },
     "potential3": {
-      "description": "Abilità di combattimento <@ba.key>Fuoco quiescente</> migliorata: la durata della <#ba.burning>Combustione</> applicata dall'abilità aumenta di un <@ba.vup>{duration-1:0%}</>. I danni causati dalla <#ba.burning>Combustione</> applicata tramite le abilità aumentano di <@ba.vup>{extra_scaling:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità di combattimento <@ba.key>Fuoco quiescente</> migliorata: la durata della <#ba.burning>Combustione</> applicata dall'abilità aumenta di un <@ba.vup>{duration-1:0%}</>. I danni causati dalla <#ba.burning>Combustione</> applicata tramite le abilità aumentano a <@ba.vup>{extra_scaling:0.0}</> volte rispetto all'originale.",
       "name": "Frammenti del passato"
     },
     "potential4": {
@@ -142,7 +142,7 @@
       "name": "Potere dei gelati"
     },
     "potential5": {
-      "description": "Abilità suprema <@ba.key>Crepuscolo</> migliorata: il moltiplicatore danni dell'attacco base ottimizzato aumenta di <@ba.vup>{ratio:0.0}</> volte rispetto all'originale; ogni nemico sconfitto da Laevatain prolunga la durata dell'abilità suprema di <@ba.vup>{extend_duration:0}</> s (massimo <@ba.vup>+{max_duration:0}</> s).",
+      "description": "Abilità suprema <@ba.key>Crepuscolo</> migliorata: il moltiplicatore danni dell'attacco base ottimizzato aumenta a <@ba.vup>{ratio:0.0}</> volte rispetto all'originale; ogni nemico sconfitto da Laevatain prolunga la durata dell'abilità suprema di <@ba.vup>{extend_duration:0}</> s (massimo <@ba.vup>+{max_duration:0}</> s).",
       "name": "Prova dell'esistenza"
     }
   },

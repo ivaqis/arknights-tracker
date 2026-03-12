@@ -2099,14 +2099,16 @@
             "heal_max_hp": 0.05,
             "shelter": 0.9,
             "duration": 4,
-            "cd": 120
+            "cd": 120,
+            "shelter_real": 0.1
         },
         "talent2_2": {
             "hp_threshold": 0.4,
             "heal_max_hp": 0.05,
             "shelter": 0.9,
             "duration": 8,
-            "cd": 120
+            "cd": 120,
+            "shelter_real": 0.1
         },
         "potential1": {
             "atb": 20,

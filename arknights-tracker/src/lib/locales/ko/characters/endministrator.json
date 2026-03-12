@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "미공개"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "불균형치"
       },
       "name": "구성 시퀀스",
-      "description": "오리지늄 아츠를 사용해 전방 일정 범위 내의 적을 공격하여 <@ba.pd>물리 피해</>를 주고 <#ba.crush>강타</>합니다."
+      "description": "<@ba.key>오리지늄 결정</>을 사용해 전방 일정 범위 내의 적을 공격하여 <@ba.pd>물리 피해</>를 주고 <#ba.crush>강타</>합니다."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "봉인 시간(초)"
       },
       "name": "봉인 시퀀스",
-      "description": "팀 내 다른 오퍼레이터의 연계 스킬이 피해를 줄 때 사용할 수 있습니다.\n적의 근처로 돌진하여 대상에게 <@ba.pd>물리 피해</>를 주고 <#ba.originium>오리지늄 결정</>을 부착하며 일정 시간 봉인합니다. <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.noguard>방어 불능</> 상태를 부여하면 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하고 추가 <@ba.pd>물리 피해</>를 줍니다."
+      "description": "팀 내 다른 오퍼레이터의 연계 스킬이 피해를 줄 때 사용할 수 있습니다.\n적의 근처로 돌진하여 대상에게 <@ba.pd>물리 피해</>를 주고 <@ba.key>오리지늄 결정</>을 부착하며 일정 시간 봉인합니다. <#ba.physicalstatus>물리 이상</> 효과와 <#ba.noguard>방어 불능</> 상태를 부여하면 <@ba.key>오리지늄 결정</>을 파괴하고 추가 <@ba.pd>물리 피해</>를 줍니다."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "불균형치"
       },
       "name": "폭격 시퀀스",
-      "description": "오리지늄 아츠로 지면을 강타하여, 전방 부채꼴 범위 내의 적에게 대량의 <@ba.pd>물리 피해</>를 줍니다. 적에게 <#ba.originium>오리지늄 결정</>이 부착되어 있을 경우, <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하며 1회에 한하여 추가로 <@ba.pd>물리 피해</>를 줍니다."
+      "description": "<@ba.key>오리지늄 결정</>으로 지면을 강타하여 전방 부채꼴 범위 내의 적에게 대량의 <@ba.pd>물리 피해</>를 줍니다. 적에게 <@ba.key>오리지늄 결정</>이 부착되어 있을 경우, <@ba.key>오리지늄 결정</>을 파괴하며 1회에 한하여 추가로 <@ba.pd>물리 피해</>를 줍니다."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다.",
-        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다."
+        "배틀 스킬과 궁극기가 2개 이상의 목표에 명중한 후, 연계 스킬의 쿨타임이 {0,0:0.0}초 감소합니다.",
+        "배틀 스킬과 궁극기가 2개 이상의 목표에 명중한 후, 연계 스킬의 쿨타임이 {0,0:0.0}초 감소합니다."
       ],
       "name": "본질 붕괴"
     },
     "talent2": {
       "levels": [
-        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>",
-        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>"
+        "<#ba.originium>오리지늄 결정</>에 의해 봉인된 적은 <@ba.vup>{0,0:0%}</>만큼의 추가 물리 피해를 받습니다.",
+        "<#ba.originium>오리지늄 결정</>에 의해 봉인된 적은 <@ba.vup>{0,0:0%}</>만큼의 추가 물리 피해를 받습니다."
       ],
       "name": "현실 정지"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>[코드네임] 관리자\n[성별] ■■\n[신분 인증] ■■\n[생일] ■■\n[종족] ■■\n\n아무것도 기억나지 않는다.\n기억은 마치 부서진 꿈처럼, 어느 순간 떠오르려는 찰나에 흔적도 없이 사라져 버린다.\n그로 인해 때때로 초조하고 불안하지만, 동시에 생각할 여유도 생긴다.\n하지만 대부분의 순간, 다른 생각을 할 겨를이 없다. 그저 눈앞의 사람들을 믿고, 앞으로 나아갈 뿐이다.\n어쩌면 기억은 잠시 뒤로 미뤄둔 것일지도 모른다...\n...그래서, 아무것도 기억해 내지 못한다.</>",
+      "humanResources": "<@profile.key>과거의 삶은 탈로스 II의 지금까지의 역사를 관통해 왔다...</>",
+      "file1": "<@profile.key>...그럼, 미래는?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "배틀 스킬 <@ba.key>구성 시퀀스</>가 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>했을 때, 스킬 게이지를 <@ba.vup>{atb_return:0}</>포인트 <#ba.return>반환</>합니다.",
+      "description": "",
       "name": "마지막 각성"
     },
     "potential2": {
-      "description": "재능 <@ba.key>'본질 붕괴'</> 효과 강화: 자신이 공격력 증가 효과를 획득할 때, 다른 아군 오퍼레이터가 공격력 증가 효과의 절반을 획득합니다.",
+      "description": "",
       "name": "권능 반영"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

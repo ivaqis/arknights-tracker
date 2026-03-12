@@ -9,7 +9,7 @@
       "Beaux-arts"
     ],
     "behaviourUnavailableTags": [
-      "Sociabilité"
+      "Extraverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
     ],
     "blocTag": "Académie des sciences de Hongshan (ASH)",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire"
       },
       "name": "Cœur inébranlable",
-      "description": "Invoque une forme qui lance une frappe Vajra immuable, infligeant des <@ba.pd>DÉG physiques</> et <#ba.knockdown>renversant</> tous les ennemis dans une large zone d'effet, puis attire les ennemis vers le centre de la zone. Au bout d'un moment, les ennemis se trouvant encore dans la zone d'effet de la frappe Vajra subiront une autre vague de lourds <@ba.pd>DÉG physiques</> et un <#ba.knockdown>Renversement</>.\nSi la compétence <#ba.consume>consomme</> un <#ba.combo>Lien</>, inflige de lourds <@ba.pd>DÉG physiques</> supplémentaires."
+      "description": ""
     },
     "indicator": {
       "levels": [

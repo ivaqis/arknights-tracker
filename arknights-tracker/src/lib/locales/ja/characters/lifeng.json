@@ -9,7 +9,7 @@
       "芸術"
     ],
     "behaviourUnavailableTags": [
-      "社交的"
+      "社交的（システム用）"
     ],
     "blocTag": "宏山科学院",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "追加ブレイク値"
       },
       "name": "不動心",
-      "description": "化身を放ち、不動杵で前方の地面に重い打撃を放つ。広範囲の敵に<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与え、すべての敵を中心に引き寄せる。一定時間後、打撃範囲内の敵に再度高い<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。\n必殺技発動時に<#ba.combo>リンク</>状態を<#ba.consume>消費</>した場合、追加で高い<@ba.pd>物理ダメージ</>を与える。"
+      "description": ""
     },
     "indicator": {
       "levels": [

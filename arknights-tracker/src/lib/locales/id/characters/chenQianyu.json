@@ -8,7 +8,7 @@
       "Teknologi"
     ],
     "behaviourUnavailableTags": [
-      "Introvert"
+      "Introvert (SISTEM SAJA, tidak terlihat dalam game)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -128,7 +128,7 @@
       "name": "Improvised Chi Xiao"
     },
     "potential5": {
-      "description": "Skill kombo <@ba.key>Soar to the Stars</> meningkat: Durasi cooldown <@ba.vup>{coolDown:0}</> dtk.",
+      "description": "Skill kombo <@ba.key>Soar to the Stars</> meningkat: Durasi cooldown menjadi <@ba.vup>{coolDown:0}</> dtk.",
       "name": "Bonded with the World"
     }
   },

@@ -117,8 +117,8 @@
       "name": "Acima das Nuvens"
     },
     "potential2": {
-      "description": "Habilidade suprema <@ba.key>Cajado Arcano: Campo de Gravidade</> melhorada: quando um inimigo é afetado pelo <@ba.key>Campo de Gravidade Anômalo</> da habilidade suprema, cada acúmulo de <#ba.noguard>Vulnerabilidade</> multiplica o efeito de <#ba.spellvul>Suscetibilidade a Artes</>. Na finalização dos efeitos, o alvo é tratado como tendo 1 acúmulo adicional de <#ba.noguard>Vulnerabilidade</> (máximo de 4 acúmulos).",
-      "name": "Andarilho do Vento"
+      "description": "Habilidade suprema <@ba.key>Cajado Arcano: Campo de Gravidade</> melhorada: quando um inimigo é afetado pelo <@ba.key>Campo de Gravidade Anômalo</> da habilidade suprema, duplica o aumento de <#ba.spellvul>Suscetibilidade a Artes</> por acúmulo de <#ba.noguard>Vulnerabilidade</>. Após o término desse efeito, o alvo é tratado como tendo 1 acúmulo adicional de <#ba.noguard>Vulnerabilidade</> (máximo de 4 acúmulos no total).",
+      "name": "Andarilha do Vento"
     },
     "potential3": {
       "description": "Talento <@ba.key>Canção do Mensageiro</> melhorado: Eficiência de Ganho Supremo <@ba.vup>+ {add:0%}</>.",
@@ -129,8 +129,8 @@
       "name": "Danças com as Nuvens"
     },
     "potential5": {
-      "description": "Combo de habilidades <@ba.key>Cajado Arcano: Deslocamento da Matriz</> melhorado: duração do Tempo de Recarga <@ba.vup>{coolDown:0}</>s. O Multiplicador DNO é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original.",
-      "name": "Correspondência Especial"
+      "description": "Combo de habilidades <@ba.key>Cajado Arcano: Deslocamento da Matriz</> melhorado: duração do Tempo de Recarga <@ba.vup>{coolDown:0}</> s. O Multiplicador DNO é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original.",
+      "name": "Correio Especial"
     }
   },
   "arts": {

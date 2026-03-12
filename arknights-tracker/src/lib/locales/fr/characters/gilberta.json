@@ -117,7 +117,7 @@
       "name": "Par-delà les nuages"
     },
     "potential2": {
-      "description": "Renforce l'ultime <@ba.key>Bâton arcanique : Champ gravitationnel</> : quand un ennemi est affecté par le <@ba.key>champ de gravité anormal</> de l'ultime, chaque cumul de <#ba.noguard>Vulnérabilité</> multiplie l'effet de la <#ba.spellvul>sensibilité aux Arts</>. Au terme des effets, la cible est traitée comme ayant 1 cumul de <#ba.noguard>Vulnérabilité</> supplémentaire (cumuls max. : 4).",
+      "description": "Renforce l'ultime <@ba.key>Bâton arcanique : Champ gravitationnel</> : quand un ennemi est affecté par le <@ba.key>champ de gravité anormal</> de l'ultime, l'augmentation de la <#ba.spellvul>sensibilité aux Arts<#ba.noguard> par cumul de </>Vulnérabilité</> est doublée. Au terme des effets, la cible est traitée comme ayant 1 cumul de <#ba.noguard>Vulnérabilité</> supplémentaire (cumuls max. : 4).",
       "name": "Marcheuse du vent"
     },
     "potential3": {

@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Cryo Infliction",
+      "Arts Susc."
+    ],
+    "behaviourHateTags": [
+      "Seni Rupa"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert (SISTEM SAJA, tidak terlihat dalam game)"
+    ],
+    "blocTag": "Kampung Benteng Qingbo",
+    "expertTags": [
+      "Teknik Tempur",
+      "Kegesitan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Pedagang Wuling"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Kreatif"
+    ],
+    "raceTag": "Feline"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+        "diveAtkMultiplier": "Pengganda ATK Menukik"
+      },
+      "name": "I’LL BLOW YOUR MIND!",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Pengganda DMG Tembakan",
+        "shotStagger": "Stagger Tembakan",
+        "dmgMultiplier1Waterspout": "Pengganda DMG (1 Topan Air)",
+        "waterspoutDurationS": "Durasi Topan Air (dtk)",
+        "spReturnPerWhirlpool": "Pengembalian SP per Pusaran Air",
+        "artsSusceptibility2Waterspouts": "Arts Susceptibility (2 Topan Air)",
+        "artsSusceptibility3Waterspouts": "Arts Susceptibility (3 Topan Air)",
+        "artsSusceptibilityDurationS": "Durasi Arts Susceptibility (dtk)"
+      },
+      "name": "IMA WAVERIDAAH!",
+      "description": "Tangtang akan melompat keluar dari air dan menembak dari jarak dekat sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh dan memunculkan <@ba.key>Topan Air</>.\nPenggunaan skill tarung ini juga akan memakai semua <@ba.key>Pusaran Air</> di sekitar untuk memunculkan <@ba.key>Topan Air</> lagi dan <#ba.return>mengembalikan</> sejumlah SP berdasarkan jumlah Topan Air yang muncul.\n<@ba.key>Topan Air</>: Mengakibatkan 1 tumpuk <#ba.crystinflict>Cryo Infliction</> kepada musuh dalam jangkauan dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time. Jika skill tarung ini memunculkan beberapa <@ba.key>Topan Air</>, topan itu juga akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> kepada musuh (tapi tidak mengakibatkan tumpukan <#ba.crystinflict>Cryo Infliction</> lagi).\n<@ba.info>DMG yang ditimbulkan oleh Topan Air akan dianggap sebagai DMG Skill Tarung.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "whirlpoolDurationS": "Durasi Pusaran Air (dtk)"
+      },
+      "name": "RIVER, TO ME!",
+      "description": "PEMICU KOMBO: Saat mengakibatkan <#ba.crystinflict>Cryo Infliction</> atau menimbulkan <#ba.spellburst>Arts Burst DMG</> kepada musuh.\nTangtang akan melepaskan arus semburan kuat yang akan menembus semua musuh di lintasannya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka dan memunculkan <@ba.key>Pusaran Air</>.\n<@ba.info>Maksimum 2 Pusaran Air bisa ada sekaligus di medan pertarungan.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Pengganda Total DMG Over Time",
+        "oldenStareDurationS": "Durasi TATAPAN MASA LALU (dtk)",
+        "rogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas",
+        "earlyRogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas Dini",
+        "rogueWaveStagger": "Stagger Gelombang Ganas",
+        "earlyRogueWaveStagger": "Stagger Gelombang Ganas Dini"
+      },
+      "name": "DA CHIEF SEES YOU!",
+      "description": "Tangtang akan membuka penutup matanya dan melepaskan <@ba.key>TATAPAN MASA LALU</> dari matanya, yang akan mengunci, melumpuhkan, dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time untuk sementara kepada musuh dalam area efeknya.\nSaat <@ba.key>TATAPAN MASA LALU</> berhenti berubah, gelombang ganas akan muncul dan menghantam sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh di area efeknya.\nJika operator terkontrol melancarkan serangan menukik dalam pola <@ba.key>TATAPAN MASA LALU</>, evolusinya akan berakhir, dan gelombang ganas akan langsung muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> yang lebih besar lagi."
+    },
+    "indicator": {
+      "levels": [
+        "Agility Operator +10.",
+        "Agility Operator +15.",
+        "Agility Operator +15.",
+        "Agility Operator +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek.",
+        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek."
+      ],
+      "name": "Fam of Honor"
+    },
+    "talent2": {
+      "levels": [
+        "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+        "Selama durasi <@ba.key>TATAPAN MASA LALU</>, jika melancarkan serangan menukik bersama operator terkontrol, evolusinya akan berakhir lebih awal dan akan memunculkan <@ba.key>Topan Air</>. Semua <@ba.key>Pusaran Air</> di sekitar juga akan dipakai dan diubah menjadi <@ba.key>Topan Air</> lagi.\n<@ba.key>Topan Air</> yang dihasilkan dengan cara ini akan punya efek yang sama dengan Topan Air yang dihasilkan oleh skill tarung <@ba.key>IMA WAVERIDAAH!</> dan akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up_water_ult:0%}</>."
+      ],
+      "name": "Riot Bringer"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
+      ],
+      "name": "Ketua Agung"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +30%"
+      ],
+      "name": "River’s Daughter"
+    },
+    "files": {
+      "main": "<@profile.key>NAMA SANDI: Tangtang\nGENDER: Perempuan\nAUTENTIKASI: Kampung Benteng Qingbo\nTANGGAL LAHIR: 29 November\nRAS: Feline\n[STATUS INFEKSI ORIPATI]\nPositif Oripati (terinfeksi), berdasarkan laporan pemeriksaan medis.\n\n[PEMERIKSAAN FISIK TERPADU]\nKEKUATAN FISIOLOGIS: Standar\nKEMAMPUAN TEMPUR: Sangat Baik \nKECERDASAN TAKTIS: Normal \nASIMILASI ORIGINIUM ARTS: Sangat Baik\n\n“Aku sudah baca laporan Tim Krisis .... Dia pernah bilang bahwa dia anak angkat, ‘kan? Hmm .... Memang banyak orang tergusur akibat bencana, bahkan di bawah pengawasan Hongshan Academy of Sciences. Minta Divisi SDM untuk terus memantau riwayat keluarganya. Siapa tahu kita bisa menemukan sesuatu yang tak terduga.”</>",
+      "humanResources": "<@profile.key>Tangtang adalah anggota sekaligus perwakilan utama Kampung Benteng Qingbo. Dia bergabung dengan Endfield Industries karena alasan pribadi dan kini menjabat sebagai Kepala Kantor Naradamping Kampung Benteng Qingbo di Endfield.\n\nOperator Tangtang mungkin adalah sosok paling unik di antara para personel yang diundang Endministrator ke Dijiang. Seperti saat pertemuan pertama kami .... Maaf, aku perlu mengambil rekaman videonya di basis dataku:\n“Plak! Plak!”\n“Eh, kenapa benda ini ada di pesawat udara besar? Seperti tuskbeast taring besi berkepala tiga. Menurutku, kelihatannya bodoh sih ....”\n“Operator Tangtang, aku kemari untuk wawancara orientasimu—Jangan, tolong jangan tepuk panelku. Aku asisten personel dari Endfield Industries ....”\n“Oh, jadi kau anak buahnya Topeng Gelap! Bilang dari tadi dong, Muka Besi Tua! Nih, aku punya barang bagus untuk Geng baruku. Ambil saja sepuasmu!”\nSetelah berkali-kali kutegaskan bahwa aku tak butuh Sertifikat Tangtang, bijih, atau perhiasan apa pun, Tangtang tetap bersemangat mengeluarkan sebuah hiasan berbentuk cincin dengan material alami dari sakunya. Sepertinya itu mahkota bunga anyaman bambu. Lalu, dia mengalungkan hiasan itu di salah satu panelku, kemudian mengetuk dua panel lainnya sambil berkata, “Kau jauh lebih pintar dari semua mainan kaleng di Wuling itu! Mau ikut aku ke Kampung Benteng Qingbo? Ayolah, panggil aku Ketua!”\nPenilaianku tentang Tangtang sama seperti yang lainnya: ceria, terus terang, apa adanya. Hatinya polos, penuh hasrat dan rasa ingin tahu .... Kalau harus mendeskripsikannya, aku akan bilang dia adalah “anak yang sedang tumbuh besar.” Tapi, aku sama sekali tak bisa ikut menaklukkan Talos-II bersama Tangtang di Kampung Benteng Qingbo .... Bukan karena tumpukan berkas personel tiada akhir yang harus kuurus. Ini soal kebijakan Endfield.\nSupaya tangan Tangtang tak terluka dan agar aku tak kena benturan “mekanis”, sebaiknya aku cari cara untuk menghindarinya .... Anehnya, dia selalu bisa menemukanku.\n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries</>",
+      "file1": "<@profile.key>Setelah insiden di Kampung Benteng Qingbo, awalnya kami mengira akan menerima operator yang sedang kebingungan, berduka, atau marah. Kami pun sudah menyiapkan sejumlah langkah intervensi psikologis untuk meringankan traumanya. Tapi, saat Tangtang tiba di Dijiang lewat teleprotokol, wajahnya berseri-seri, tak nampak sedikit pun duka di sana.\nPengawas Perlica mengingatkan kami bahwa, terlepas dari kompleksitas komunitasnya, Tangtang mampu menghimpun kembali orang-orangnya yang tercerai-berai dengan karismanya. Ini membuktikan dia punya jiwa yang tangguh dan mampu memikul tanggung jawab besar.\nTangtang ternyata memang jauh lebih peka dari yang kami kira. Kepedulian dan kepekaannya pada berbagai situasi memang tiada tanding. Saat merencanakan pengembangan Kampung Benteng Qingbo selanjutnya, dia selalu mengutamakan kesejahteraan warganya, memastikan setiap individu, baik tua, muda, sakit, maupun difabel, tetap diperhitungkan—dengan berani tapi juga penuh perhatian, tak ada yang terlewat atau terlupa walau tugas sedang menumpuk. Sifat ini sangat berharga bagi upaya pengembangan kita: dalam pekerjaan lintas budaya, punya pemandu yang memahami dinamika sosial dan ekosistem setempat jelas akan menghemat banyak biaya komunikasi.\nTangtang cepat beradaptasi dengan kehidupan di Dijiang. Kadang kami melihatnya berjalan bersama Chen Qianyu, Endministrator, atau Pengawas Perlica, matanya berbinar, ekornya bergoyang pelan. Dia juga dapat teman-teman baru, dan memberi mereka nama panggilan khas Kampung Benteng Qingbo. Selain itu, hampir semua hal di Dijiang membuatnya penasaran, terutama mesin penjual minuman otomatis di kantin .... Pada hari pertama, dia beberapa kali mengelilingi mesin itu. Seorang operator akhirnya datang dan menunjukkan cara memasukkan koin serta menekan tombol warna-warninya agar minumannya keluar. Tangtang mendengarkan dengan tenang, walau sulit ditebak apakah dia benar-benar paham .... Sore harinya, alarm mesin itu tiba-tiba berbunyi, dan Operator Xaihi harus menarik “Sertifikat Tangtang” yang tersangkut di lubang koinnya.\nSetelah beberapa bulan pengamatan, kesimpulan kami: Tangtang bukan hanya tidak butuh dukungan psikologis, kehadirannya justru mendatangkan energi baru bagi Dijiang.\nSaat kami berdiskusi dengan operator yang akrab dengannya, Chen Qianyu tersenyum dan berkata, “Walau Tangtang tumbuh di tepi air, dia itu seperti nyala api yang tak pernah padam. Badai sesaat mungkin bisa sedikit melemahkannya, tapi percikannya akan segera menyala terang lagi.”\nSuatu sore, kami mendengar Tangtang mengobrol dengan seseorang, suaranya tetap polos seperti biasa, “Kepala Ketua tak sebesar itu, Dik. Aku tak bisa terus-menerus berpikir keras, nanti bisa jadi bodoh!”</>",
+      "file2": "<@profile.key>[Laporan Diagnosis Klinis]\nPindaian menunjukkan kontur organ yang buram dengan bayangan abnormal pada tubuh operator. Ditemukan partikel Originium dalam sistem peredaran darah yang menunjukkan anomali, ciri khas Oripati. Pada tahap ini, operator bisa dipastikan positif Oripati.\n\nCatatan Dokter Penanggung Jawab: Berdasarkan pengakuan Tangtang sendiri, dia tertular Oripati saat konflik antara Kampung Benteng Qingbo dan Tianshi dari Kota Wuling sepuluh tahun lalu. Selama sepuluh tahun itu, Tangtang tidak pernah mendapatkan penanganan khusus—hanya ramuan tradisional yang sesekali diberikan oleh warga kampung. Walau begitu, hasil pemeriksaan menunjukkan laju Asimilasi Sel-Originium dan Kepadatan Kristal Originium dalam Darahnya terkontrol dengan sangat baik.\nSaat ditanya lebih lanjut, Tangtang menjawab, “Semua orang bilang aku ini Putri Sungai. Air akan membasuh penyakitku.”\nApakah sungai benar-benar bisa menyembuhkan Oripati? Tentu saja tidak.\n\n[Formulir Permohonan Obat dari seorang Tianshi]\nNama Obat Generik: Supresan Oripati\nJumlah yang Diminta: Persediaan jangka panjang\nLokasi Infeksi Pasien: Area mata\nAlasan Pengajuan: Membantu Kampung Benteng Qingbo\nLog Audio:\n“Terus terang, aku agak ragu saat akan mengantarkan obat .... Yang pertama kali, dia melemparnya ke arah kami sambil berteriak, ‘Kami tak butuh bantuan orang Wuling!’ dan berniat menyeruduk kami dengan kepalanya .... Untung ada para opsir yang menghalangi. Aku bukannya takut dia akan menghabisiku, tapi kami tak bisa biarkan kejadian seperti itu terulang.”\n“Oripati gadis itu sudah memburuk. Kami menyadarinya, dan pasti mereka juga sadar. Dia tertular karena kami. Kami wajib memberinya pengobatan.”\n“Saat itu ... situasinya benar-benar kacau. Langit gelap, awan menggantung rendah, dan terbelah oleh hujan deras. Kami berjalan melawan angin kencang, sementara warga kampung menyerbu dari perbukitan dengan membawa senjata, bayangan mereka di malam hari seperti arwah jahat ....”\n“Orang-orang ketakutan. Tak ada yang sadar di tengah kerumunan itu ada bocah sekecil itu ....”\n“Hujan membasuh semua darah .... Tidak, mungkin darahnya tak pernah benar-benar hilang. Setiap kali memejamkan mata, aku melihat luka di mata gadis itu, dan ... mata pemimpinnya. Mata yang menyiratkan bahwa dia hanya ingin bertahan hidup .... Aku tak akan pernah melupakannya.”\n“Kedua kalinya, kami meninggalkan alat suntiknya di pinggiran Kampung Benteng Qingbo, di jalur yang pasti dilewati warga kampung.”\n“Kali ini, bukan bantuan dari lawan ... bisa saja bantuan itu jatuh dari langit, tumbuh dari bumi, atau dibawa binatang. Kalau dipikir seperti itu, mungkin mereka bisa lebih mudah menerimanya.”\n“Aku menunggu selama dua hari ... dan alat itu diambil.”\n“Aku menunggu dua hari lagi, dan melihat gadis itu bermain di tepi air. Dia mengejar kuping panjang di sepanjang pinggir sungai hingga cukup jauh. Kelihatannya dia sudah jauh lebih baik.”\n“Aku tak tahu apa yang akan terjadi selanjutnya ... dan rasanya ini pun belum bisa disebut sebagai penebusan. Tapi, setidaknya malam itu, untuk pertama kalinya, aku bisa tidur nyenyak.”</>",
+      "file3": "<@profile.key>Semua orang di Kampung Benteng Qingbo memanggilnya “Nona Adik” karena Ruan Lin hanya punya satu anak kandung, lalu suatu hari dia mengambil satu anak lagi dari sungai. Anak yang pertama diberi nama “Yi” (Sulung), jadi wajar saja yang kedua dijuluki “Nona Adik”. Cara berpikir warga Kampung Benteng Qingbo memang selalu sederhana dan lugas.\nTak ada yang tahu asal Nona Adik. Ruan Yi bilang dia itu anak kucing di dalam keranjang bambu yang ditemukannya. Di lain pihak, Ruan Lin bilang, dia adalah harta karun, Putri Sungai yang dikirimkan oleh Mata Air Leluhur. Seorang bocah yang mendengar ini langsung bertanya, kalau Nona Adik lahir dari sungai, bukankah artinya dia ini penguasa sungai?! Mendengar itu, Tangtang langsung membusungkan dada, melompat ke atas kuda-kudaan bambunya, dan berseru dengan bangga, “Tepat sekali! Perairan ini milikku! Kampung Benteng Qingbo milikku! Semua makanan enak dan keseruan ini juga milikku!”\nRuan Lin mengacak-acak rambutnya dan tertawa terbahak-bahak. Tak lama, semua orang di sekitar api unggun pun ikut tertawa, hingga akhirnya Tangtang pun ikut tertawa. Percakapan pun beralih ke topik lain, dan soal ini tak pernah dibahas lagi.\nBarulah saat Tangtang tumbuh lebih besar, saat suatu hari dia mendengarkan orang-orang Kampung mengobrol, sebuah pemikiran terlintas di benaknya. Air sungai tak mungkin melahirkan Feline seperti dirinya. Lalu, di mana orang tua kandungnya?\nTangtang tak bisa memahaminya. Selama berhari-hari, dia membandingkan dirinya dengan semua orang di Kampung. Ada yang terlalu kekar, ada yang terlalu pendek. Tak satu pun punya telinga dan ekor seindah miliknya.\nKegalauan ini membebani Tangtang cukup lama, sampai akhirnya Ruan Lin memanggilnya untuk menikmati semur ikan. Tangtang melirik ke mangkuk Ruan Yi, lalu ke mangkuknya sendiri. Bagian kepala, mata, dan perut lembut ikannya ada di mangkuknya. Sambil mengambil daging perut ikan dan menyuapkannya ke mulut Ruan Lin, dia berpikir dalam hati, “Kenapa aku harus peduli dengan omongan orang Kampung soal ‘sentuhan ibu’? Masakan Ayah enak kok, itu saja sudah cukup!”\n\nSetelah penyelidikan dan verifikasi menyeluruh, Divisi SDM mengonfirmasi bahwa Tangtang masih bayi yang belum disapih saat ditemukan. Mengingat kondisi fisik bayi baru lahir, dia tak mungkin hanyut terlalu jauh di sungai. Karena itu, ada dugaan kuat bahwa dia ditinggalkan di dekat Kampung Benteng Qingbo.\nSetelah pemeriksaan dan evaluasi mendetail atas matanya, personel Divisi Medis menduga pola di matanya berkaitan erat dengan Originium Arts miliknya. Jika melihat keteraturan polanya yang tinggi, bisa dipastikan itu bukan gejala tak menentu akibat infeksi Oripati. Sebaliknya, pola itu lebih berkaitan dengan riwayat kesehatan keluarganya. Tapi, setelah meninjau semua catatan personel Kampung Benteng Qingbo, tak ada satu pun individu yang mengalami kondisi seperti Tangtang.\nMengutip ceritanya sendiri, “Aku cuma latihan terus di dekat air, tiba-tiba polanya muncul sendiri.”\nTentu saja hal ini tidak mungkin. Kami meminta bantuan HAS, dan setelah meninjau arsip penduduk, mereka juga tidak bisa mengidentifikasi kerabat Tangtang. Tapi, seorang Tianshi yang ahli di bidang sejarah Yan menemukan terobosan: dalam dokumen Yan yang diwariskan dari Terra, dia menemukan catatan yang sangat relevan dengan pola di mata Tangtang. Menurut legenda dalam literatur, pola ini melambangkan evolusi langit dan bumi serta berisi warisan pengetahuan kuno. Tapi, Tangtang jelas tak mungkin mempelajari hal semacam itu. Bahkan para Tianshi Wuling pun heran dengan temuan ini. Mereka tak pernah membayangkan ada pengguna Originium Arts seunik itu begitu dekat dengan mereka.\nKesimpulannya, alasan sebenarnya di balik kenapa Tangtang ditinggalkan di Kampung Benteng Qingbo ... mungkin jauh lebih rumit dari yang kami duga.\n...\nSetelah hasil penyelidikan ini kami sampaikan ke Tangtang, dia cuma menggaruk kepala dan bilang asal-usulnya tak terlalu penting. Toh sekarang dia punya keluarga dan teman, serta hidup dengan baik. Tapi, dia juga agak penasaran—apa dia masih punya saudara sedarah, dan bagaimana kabar mereka .... Tapi dia menekankan, rasa penasarannya benar-benar kecil, kira-kira sebesar cakar shellbeast kecil.\nTangtang masih menyimpan kain bedong kecil yang membungkusnya dulu. Saat menyerahkannya kepada kami, dia tampak agak ragu sejenak sebelum kembali ceria seperti biasa, “Kalau sudah selesai diperiksa, jangan lupa kembalikan, ya!”</>",
+      "file4": "<@profile.key>[Rekaman Video Lama]\n06.23.45.10\n“Kamera ... alat untuk merekam, ya? Bentuknya lucu juga, bahkan bisa bergerak. Mirip Lupo kecil!”\n“Alat ini buatan orang Wuling. Kami dapat ini saat bentrok sebelumnya dengan mereka. Tinggal pencet tombol ini agar menyala .... Hei, Ketua, mau coba foto dan lihat hasilnya?”\n“Ayolah, coba saja! Eh, kok kakiku bisa jadi pendek sekali? Bos jadi keliatan kerdil!”\n“Memang kau kan aslinya agak—Hei, hei, jangan pukul! Ya ampun, akulah yang pendek, aku, oke!”\n“Aku tak mau main denganmu lagi! Aku mau hajar perempuan gila itu dan pakai Lupo kecil ini untuk merekam kekalahannya!”\n\n07.10.30.15\n“Sialan perempuan gila itu, malah bertarung lagi untuk si Zhuang, bos besarnya .... Padahal kemarin sudah babak belur karena riak, masih saja belum kapok ....”\n“Mending aku santai-santai di kampung aja, jauh dari masalah .... Ada air bersih untuk minum, ada ikan enak untuk dimakan ....”\n“Hei, Lupo kecil, diam dulu! Lihat tuh! Ada cewek bingung sedang latihan pedang di dekat perbatasan Wuling. Ayo kita ikuti, lihat dia mau ngapain.”\n“Heh, pedang kembarnya keren juga. Tapi daerah situ penuh riak dan sangat bahaya. Jangan sampai dia jadi umpan riak. Aku, sebagai Ketua, akan ambil barang keren miliknya!”\n\n08.36.05.55\n“Kau mengalahkan semua riak ini sendirian?”\n“Yap, monster pengganggu begini sih tak sulit bagiku. Tapi, makasih bantuannya, ya! Tembakanmu keren. Namaku Chen Qianyu, salam kenal ...?”\n“Tangtang. Ketua Agung Kampung Benteng Qingbo! Pernah dengar namaku?”\n“Tentu saja! Kampung Benteng Qingbo, yang selalu mengajak ribut Kota Wuling .... Eh, jangan-jangan kau mau merampokku, ya?”\n“Tergantung. Kau orang Wuling? Ketuamu menyebalkan dan Wuling satu-satunya hal yang kubenci!”\n“Aku ... sebenarnya sih iya ... eh, bukan. Sekarang sudah tidak lagi ....”\n“APA?! Perempuan gila itu mengusirmu? Tak apa-apa, jadi orang Wuling itu tidak enak—Eh, kok nangis? AAAH! Jangan seka ingus pakai bajuku, dong!”\n\n11.42.13.07\n“Tidak dapat harta, malah bajuku hilang sepotong. Perjalanan ini merugikan .... HAAH?!”\n“Hei, Kucing Kecil, keluyuran di Wuling lagi? Sudah kubilang jangan datang ke sini.”\n“Bukan urusanmu, Perempuan Gila! Lepaskan aku sekarang juga!”\n\nTangtang dan Chen Qianyu duduk berdekatan, menonton hasil rekaman kamera. Mereka saling lihat, bingung dan hening. Tiba-tiba, Tangtang meraih alat itu dan langsung kabur sekencang-kencangnya—\n“Topeng Gelap! Juru Tulis Pucat! LIHAT NIH! Aku punya video keren saat Sisik Hijau lagi nangis! MUKANYA LUCU BANGET!”\n“Tangtang!!! Berhenti kau!!!”\nChen Qianyu, dengan wajah merah karena malu, terus mengejar Tangtang sampai lima atau enam putaran di Ring Pusat sebelum akhirnya Mi Fu, yang merasa tidak tega, menarik kerah baju mereka berdua.\n“Tangtang, aku sudah mengejarmu keliling Wuling, sekarang aku harus mengejarmu juga di Dijiang saat bekerja .... Chen, kenapa kau membiarkan kenakalannya?”\n“Topeng Gelap, teman Gengku itu yang punya tempat ini, Perempuan Gila! Kau tak punya kuasa di sini! Lepaskan Ketuamu! SEKARANG JUGA!”\nSaat Tangtang dan Mi Fu sibuk berdebat, Chen Qianyu diam-diam berhasil lolos dari genggaman Mi Fu, merebut kameranya dari tangan Tangtang, dan langsung memencet tombol hapus untuk melenyapkan “aib” itu. Lalu, sambil menjulurkan lidah, dia mengarahkan kamera ke dua orang yang sedang ribut itu.\nKamera andal itu merekam semuanya. Tangtang, yang kerah bajunya dicengkeram Mi Fu, langsung teringat masa lalu—Walau sering kejar-kejaran dan bertengkar, Mi Fu tak pernah benar-benar menyakiti Tangtang. Asalkan Tangtang tak bertingkah, dia selalu punya celah untuk kabur.\nTangtang sendiri tak paham kenapa dia selalu bisa lolos dengan mudah. Chen Qianyu yang cermat akhirnya jadi pemenang adu iseng kali ini: dapat video Tangtang si Ketua Kalah, telinga terkulai, wajah menyedihkan, yang bisa ditonton berulang kali.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Skill kombo <@ba.key>RIVER, TO ME!</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya, dan cooldown-nya menjadi <@ba.vup>{coolDown:0}</> dtk.\nSkill tarung <@ba.key>IMA WAVERIDAAH!</> meningkat: Setiap kali ada <@ba.key>Pusaran Air</> yang dipakai dan diubah menjadi <@ba.key>Topan Air</>, <@ba.vup>{atb_return:0}</> SP akan <#ba.return>dikembalikan</> lagi.",
+      "name": "Reserve Hoard"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Cryo DMG Dealt <@ba.vup>+{CrystDamageIncrease:0%}</>",
+      "name": "River’s Daughter"
+    },
+    "potential3": {
+      "description": "Skill tarung <@ba.key>IMA WAVERIDAAH!</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale_1:0.0}</> kali nilai aslinya. Saat memunculkan <@ba.key>Topan Air</>, <#ba.spellvul>Arts Susceptibility</> yang dihasilkannya akan meningkat sebesar <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "name": "Chiefly Vibe"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>DA CHIEF SEES YOU!</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Qingbo Meditation"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>DA CHIEF SEES YOU!</> meningkat: Pengganda DMG akan meningkat menjadi <@ba.vup>{atk_scale_1:0.00}</> kali nilai aslinya. \nTalent <@ba.key>Riot Bringer</> meningkat: Efek DMG dari Topan Air mana saja yang dimunculkan oleh ultimate <@ba.key>DA CHIEF SEES YOU!</> akan meningkat sebesar <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+      "name": "Chief’s All-Eldritch Gaze"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Air Jernih, Cerminan Jiwa",
+      "author": "Samail",
+      "description": "Hati Tangtang bagaikan air, sebuah kolam tenang di bawah bulan yang berkilauan dengan keindahannya."
+    },
+    "potential3": {
+      "name": "Pembelah Bambu",
+      "author": "二值笔战士",
+      "description": "Aroma bambu segar mengingatkannya pada suatu sore biasa saat orang-orang Kampung Benteng membuat jas hujan bambu untuk tahun berikutnya, hari saat dia berjemur di bawah sinar matahari."
+    },
+    "potential5": {
+      "name": "Perintah Ketua Agung Tak Boleh Dibantah",
+      "author": "수줍(Sjoop)",
+      "description": "“Topeng Gelap! Jangan jauh-jauh dari Ketua Agungmu! Suatu hari nanti, akan kubawa kau ke ujung dunia!”"
+    }
+  }
+}

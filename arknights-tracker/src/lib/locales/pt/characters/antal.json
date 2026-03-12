@@ -18,7 +18,7 @@
     ],
     "hobbyTags": [
       "Aprimoramento da Mente",
-      "Criativo"
+      "Criatividade"
     ],
     "raceTag": "Savra"
   },
@@ -90,7 +90,7 @@
         "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de arma + 10%",
         "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de arma + 20%"
       ],
-      "name": "Unidade de Artes Experimentais"
+      "name": "Unidade de Artes Experimental"
     },
     "baseSkill2": {
       "levels": [

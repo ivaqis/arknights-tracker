@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Imp. crio.",
+      "Susc. Art."
+    ],
+    "behaviourHateTags": [
+      "Bellas artes"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertido (SOLO SISTEMA, no visible dentro del juego)"
+    ],
+    "blocTag": "Empalizada de Qingbo",
+    "expertTags": [
+      "Técnica de combate",
+      "Agilidad"
+    ],
+    "giftPreferTags": [
+      "Selección de los comerciantes de Wuling"
+    ],
+    "hobbyTags": [
+      "Naturaleza",
+      "Creatividad"
+    ],
+    "raceTag": "Felino"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+      },
+      "name": "¡TE VOY A VOLAR LA CABEZA!",
+      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nEl ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo en estado Tambaleado se convierte en un remate que inflige <@ba.cryst>DAÑ criogénico</> masivo y recupera algunos PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Multiplicador de DAÑ de disparo",
+        "shotStagger": "Tambaleo por disparo",
+        "dmgMultiplier1Waterspout": "Multiplicador de DAÑ (1 Tromba marina)",
+        "waterspoutDurationS": "Duración de Tromba marina (s)",
+        "spReturnPerWhirlpool": "Retorno de PH por Remolino",
+        "artsSusceptibility2Waterspouts": "Susceptibilidad a Artes (2 Trombas marinas)",
+        "artsSusceptibility3Waterspouts": "Susceptibilidad a Artes (3 Trombas marinas)",
+        "artsSusceptibilityDurationS": "Duración de Susceptibilidad a Artes (s)"
+      },
+      "name": "¡SOY UNA JINETE DE LAS OLAS!",
+      "description": "Tangtang salta fuera del agua y dispara a quemarropa, lo que inflige <@ba.cryst>DAÑ criogénico</> al enemigo y crea una <@ba.key>Tromba marina</>.\nAl lanzar la habilidad de batalla, también consume todos los <@ba.key>Remolinos</> cercanos para crear <@ba.key>Trombas marinas</> adicionales y <#ba.return>regresa</> cierta cantidad de PH según el número de Trombas marinas creadas.\n<@ba.key>Tromba marina</>: aplica 1 acumulación de <#ba.crystinflict>Imposición criogénica</> a los enemigos dentro del alcance e inflige <@ba.cryst>DAÑ criogénico</> continuo. Si la habilidad de batalla crea varias <@ba.key>Trombas marinas</>, estos también aplican <#ba.spellvul>Susceptibilidad a Artes</> a los enemigos (pero no otra acumulación de <#ba.crystinflict>Imposición criogénica</>).\n<@ba.info>El DAÑ infligido por la Tromba marina se considera DAÑ de habilidad de batalla.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo",
+        "whirlpoolDurationS": "Duración de Remolino (s)"
+      },
+      "name": "¡RÍO, VEN A MÍ!",
+      "description": "ACTIVADOR DE COMBO: Al aplicar <#ba.crystinflict>Imposición criogénica</> o infligir <#ba.spellburst>DAÑ por Ráfaga de artes</> a un enemigo.\nTangtang desata un potente chorro que atraviesa a todos los enemigos en su trayectoria, les inflige <@ba.cryst>DAÑ criogénico</> y crea un <@ba.key>Remolino</>.\n<@ba.info>Pueden existir hasta 2 Remolinos en el campo de batalla al mismo tiempo.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Multiplicador total de tiempo de DAÑ continuo",
+        "oldenStareDurationS": "Duración de MIRADA ANCESTRAL (s)",
+        "rogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera",
+        "earlyRogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera temprana",
+        "rogueWaveStagger": "Tambaleo por Ola traicionera",
+        "earlyRogueWaveStagger": "Tambaleo por Ola traicionera temprana"
+      },
+      "name": "¡LA JEFA TE TIENE EN LA MIRA!",
+      "description": "Tangtang abre su parche y desata una <@ba.key>MIRADA ANCESTRAL</> desde su ojo que bloquea temporalmente, inmoviliza e inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos dentro de su área de efecto.\nCuando <@ba.key>MIRADA ANCESTRAL</> deja de evolucionar, una ola traicionera se desploma para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en su área de efecto.\nSi el operador controlado realiza un ataque de inmersión en el patrón de <@ba.key>MIRADA ANCESTRAL</>, su evolución termina y la ola traicionera se invoca de inmediato para infligir todavía más <@ba.cryst>DAÑ criogénico</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidad del operador +10.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +20."
+      ],
+      "name": "Guerrillero"
+    },
+    "talent1": {
+      "levels": [
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0}s tras salir del área de efecto.",
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0}s tras salir del área de efecto."
+      ],
+      "name": "Familia de honor"
+    },
+    "talent2": {
+      "levels": [
+        "Durante <@ba.key>MIRADA ANCESTRAL</>, realizar un ataque en inmersión con el operador controlado termina su evolución antes de tiempo y crea una <@ba.key>Tromba marina</>. Todos los <@ba.key>Remolinos</> cercanos también se consumen y se convierten en <@ba.key>Trombas marinas</> adicionales.\n<@ba.key>Las Trombas marinas</> creadas de esta forma tienen los mismos efectos que los creados por la habilidad de batalla <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> y obtienen DAÑ infligido <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+        "Durante <@ba.key>MIRADA ANCESTRAL</>, realizar un ataque en inmersión con el operador controlado termina su evolución antes de tiempo y crea una <@ba.key>Tromba marina</>. Todos los <@ba.key>Remolinos</> cercanos también se consumen y se convierten en <@ba.key>Trombas marinas</> adicionales.\n<@ba.key>Las Trombas marinas</> creadas de esta forma tienen los mismos efectos que los creados por la habilidad de batalla <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> y obtienen DAÑ infligido <@ba.vup>+{dmg_up_water_ult:0%}</>."
+      ],
+      "name": "Provocadora de disturbios"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asignar a Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+        "Asignar a Cámara de crecimiento para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %"
+      ],
+      "name": "Jefa Suprema"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar a Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +20 %",
+        "Asignar a Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +30 %"
+      ],
+      "name": "Hija del río"
+    },
+    "files": {
+      "main": "<@profile.key>NOMBRE CLAVE: Tangtang\nGÉNERO: Femenino\nAUTENTICACIÓN: Empalizada de Qingbo\nFecha de nacimiento: 29 de noviembre\nRAZA: Felina\n[ESTADO DE INFECCIÓN POR ORIPATÍA]\nOripatía positiva (infectada), según informes de examen médico.\n\n[EXAMEN FÍSICO INTEGRAL]\nFUERZA FISIOLÓGICA: Estándar\nHABILIDAD DE COMBATE: Excelente \nPERICIA TÁCTICA: Normal \nASIMILACIÓN DE ARTES DE ORIGINIO: Excelente\n\n“Revisé los reportes del Equipo de Crisis... Mencionó que la adoptaron, ¿no? Hmm... Es cierto que muchos han sido desplazados por desastres, incluso bajo la administración de la Academia Científica Hongshan. Por ahora, haz que la División de RR. HH. mantenga vigilado su historial. Podríamos descubrir algo inesperado.”</>",
+      "humanResources": "<@profile.key>Tangtang es miembro y principal representante de la Empalizada de Qingbo. Se unió a Endfield Industries por motivos personales y actualmente se desempeña como Jefa de la Oficina de Representación de la Empalizada de Qingbo de Endfield.\n\nLa operadora Tangtang es quizá la persona más singular entre el diverso personal que el Endministrator ha invitado a bordo de la Dijiang. Tal como en nuestro primer encuentro... Disculpen, necesito recuperar el material grabado que está almacenado en mi base de datos:\n“¡Paf! ¡Paf!”\n“Oye, ¿y esta cosa qué hace en una aeronave tan grande? Parece una Bestia colmilluda de hierro de tres cabezas. Medio tonta, si me preguntas...”\n“Operadora Tangtang, vengo por su entrevista de inducci — No, por favor no golpee mi panel. Soy una asistente del personal de Endfield Industries...”\n“¡Entonces eres del grupo de Máscara oscura! ¡Hubieras dicho eso antes, Viejo cara de hierro! Mira, traje unas cosas buenas para mi nueva Familia. ¡Date gusto!”\nDespués de insistir repetidamente en que no necesitaba Certificados Tangtang, minerales ni joyería, Tangtang sacó con entusiasmo de su bolsillo un adorno en forma de aro, hecho con materiales naturales. Creo que podría definirse como una corona floral de bambú tejido. Colocó la corona sobre uno de mis paneles y luego, con curiosidad, empezó a golpear los otros dos: “¡Eres más filoso que esos juguetes de hojalata de Wuling! ¿Por qué no vienes conmigo a la Empalizada de Qingbo? ¡Ándale, dime Jefa!”\nMi evaluación de Tangtang coincide con la de los demás: alegre, directa, sin pretensiones. Posee un corazón infantil, rebosante de pasión y curiosidad por todo... Si tuviera que resumirla en pocas palabras, elegiría: “una niña en pleno crecimiento”. Sin embargo, definitivamente no puedo unirme a la Empalizada de Qingbo y conquistar Talos-II con ella... Esto no tiene nada que ver con la interminable pila de expedientes de personal que tengo que procesar. Simplemente no encaja del todo con las regulaciones de Endfield.\nPara evitar lastimar las manos de Tangtang y para evitar que yo sufra una conmoción “mecánica”, de verdad debería considerar cómo mantenerme fuera de su camino... Y, curiosamente, siempre se las arregla para encontrarme.\n— Martin Marvin Malen, Asistente, División de RR. HH., Endfield Industries</>",
+      "file1": "<@profile.key>Tras el incidente de la Empalizada de Qingbo, al principio esperábamos recibir a una operadora confundida, afligida o enojada. Como preparación, habíamos dispuesto algunas medidas de intervención psicológica para ayudar a aliviar su trauma. Sin embargo, cuando Tangtang llegó a bordo de la Dijiang vía teleprotocolo, su rostro estaba iluminado por una sonrisa radiante, sin la menor sombra de angustia.\nLa Supervisora Perlica nos recordó que, pese a la complejidad de su comunidad, Tangtang logró reunir a su gente dispersa con su propio carisma. Esto demuestra que posee un espíritu resiliente capaz de cargar con una responsabilidad considerable.\nY, en efecto, Tangtang resultó ser mucho más perceptiva de lo que habíamos imaginado. Su consciencia y sensibilidad ante las situaciones no tienen comparación. Al planear el desarrollo posterior de la Empalizada de Qingbo, priorizó de forma constante el bienestar de sus residentes, asegurándose con habilidad — con una mezcla de audacia y atención — de que cada persona, joven, anciana, enferma o con discapacidad, fuera tomada en cuenta, garantizando que nadie sería pasado por alto ni olvidado en medio de las tareas. Esta cualidad es particularmente valiosa para nosotros: en trabajos que involucran prácticas culturales diversas, contar con una guía que comprenda la compleja dinámica interpersonal local y el ecosistema nos ahorra costos de comunicación significativos en nuestros esfuerzos de desarrollo.\nTangtang se ha adaptado a la vida a bordo de la Dijiang con una rapidez notable. A veces la vemos caminando junto a Chen Qianyu, el Endministrator o la Supervisora Perlica, con los ojos brillantes y la cola balanceándose suavemente. También ha hecho nuevas amistades, poniéndoles apodos cariñosos al estilo de la Empalizada de Qingbo. Además, todo en la Dijiang parece fascinarle, especialmente la máquina expendedora del comedor... Le dio vueltas varias veces en su primer día. Una operadora tuvo la amabilidad de explicarle cómo insertar monedas y presionar los botones de colores para que saliera una bebida rodando. Ella escuchó en silencio, aunque era difícil saber si entendió del todo... Esa noche, la máquina expendedora activó una alarma y la operadora Xaihi terminó teniendo que sacar un “Certificado Tangtang” atorado en la ranura de monedas.\nTras varios meses de observación, nuestra conclusión es la siguiente: no solo Tangtang no requiere apoyo psicológico de nuestra parte, sino que su presencia, de hecho, ha llenado a la Dijiang de una vitalidad renovada.\nCuando lo comentamos con operadoras que la conocen, Chen Qianyu observó con una sonrisa: “Aunque Tangtang creció junto al agua, es más bien como una llama inextinguible. Una tormenta pasajera puede apagarla un poco, pero esa chispa se reenciende rápido y vuelve a arder con fuerza.”\nUna tarde, escuchamos a Tangtang platicando con alguien, con ese tono suyo, tan franco como siempre: “La cabeza de la Jefa no es tan grande, mocoso. No puedo estar intentando entenderlo todo. ¡Solo me hace ver poco inteligente!”</>",
+      "file2": "<@profile.key>[Informe de diagnóstico clínico]\nLos estudios de imagen indican contornos de órganos borrosos, con sombras anormales observables dentro del cuerpo de la operadora. La detección de partículas de Originio en el sistema circulatorio muestra anomalías, presentando signos de Oripatía. En esta etapa, puede confirmarse que la operadora es positiva para Oripatía.\n\nNota del médico tratante: Según el propio testimonio de Tangtang, contrajo oripatía durante un conflicto entre la Empalizada de Qingbo y los Tianshi de la Ciudad de Wuling hace una década. Tangtang declaró que no recibió tratamiento especializado durante estos diez años; solo diversos remedios populares que los residentes de la empalizada le proporcionaron de manera esporádica. Sin embargo, los resultados del examen indican que tanto su tasa de asimilación celular de Originio como la densidad de cristales de Originio en la sangre están notablemente bien controladas.\nAl ser interrogada al respecto, Tangtang respondió: “Todos dicen que soy la Hija del Río. El agua se lleva la enfermedad.”\n¿Podrían los cuerpos de agua naturales realmente curar la Oripatía? La respuesta es evidente: es imposible.\n\n[Formulario de solicitud de medicamento de un Tianshi]\nNombre genérico del medicamento: Supresor de Oripatía\nCantidad solicitada: Suministro a largo plazo\nSitio de infección del paciente: Región ocular\nMotivo de la solicitud: Apoyar a la Empalizada de Qingbo\nRegistro de audio:\n“Honestamente, me da un poco de cosa entregar el medicamento... La primera vez, nos lo arrojó de vuelta, gritando: ‘¡No aceptaremos limosnas de la gente de Wuling!’ e intentó embestirnos con la cabeza... Por suerte, los guardias estuvieron ahí y nos ayudaron a escapar. No me da miedo que me mate; es solo que no podemos tener otro incidente así.”\n“La Oripatía de la niña está a punto de empeorar. Lo sabemos, y seguro ellos también. La contrajo por nuestra culpa. Tenemos la obligación de tratarla.”\n“En ese entonces... fue un caos total. El cielo estaba completamente negro, bajo, y pesado, con la lluvia desgarrando el telón de nubes. Avanzábamos a duras penas en medio del viento aullante, mientras los residentes de la empalizada salían de detrás de las colinas con armas en mano; sus sombras en la noche parecían espíritus malévolos...”\n“La gente estaba aterrada. Nadie notó que había una criatura tan pequeña en la multitud...”\n“La lluvia lavó la sangre... No, no... quizá en realidad nunca se fue. Cada vez que cierro los ojos, veo el ojo herido de esa niña y los suyos... los ojos del líder. Los que decían que solo quería sobrevivir... No los olvidaré mientras viva.”\n“La segunda vez, dejamos las jeringas cerca de las afueras de la Empalizada de Qingbo, por donde los residentes seguro pasarían.”\n“Esta vez, no era caridad de un enemigo... quizá cayó del cielo, brotó de la tierra o lo cargó una bestia. Pensarlo así podría hacer que les fuera un poco más fácil aceptarlo.”\n“Esperé dos días completos... y se lo llevaron.”\n“Esperé otros dos días y vi a la niña jugando junto al agua. Persiguió a unos orejilarga por el río durante un buen tramo. Se veía mucho mejor.”\n“No sé qué pasará de aquí en adelante... y no creo que esto cuente como una verdadera expiación. Pero al menos esa noche pude dormir bien.”</>",
+      "file3": "<@profile.key>En la Empalizada de Qingbo, todos la llamaban “Younger Dame” porque Ruan Lin solo tenía una hija propia y después sacó a otra del agua. A la primera la llamó “Uno (Yi)”, así que la segunda, naturalmente, se volvió la “Younger”. La gente de la Empalizada de Qingbo siempre pensó de formas simples y directas.\nNadie sabía de dónde había salido la Younger Dame. Ruan Yi decía que era una gatita en una canasta de bambú que él recogió. Ruan Lin decía que era un tesoro: la Hija del Río enviada por el Manantial Ancestral. Un niño que estaba cerca, al oír eso, preguntó: si la Younger Dame nació del río, ¡¿eso no la hacía dueña del río?! Al oírlo, Tangtang sacó pecho, se subió de un salto a su caballito de bambú y declaró con orgullo: “¡Exacto! ¡El agua es mía! ¡La Empalizada de Qingbo es mía! ¡Y toda la comida rica y la diversión también son mías!”\nRuan Lin le revolvió el cabello y soltó una carcajada. Pronto, todos los reunidos alrededor del fuego se sumaron, con una alegría tan contagiosa que hizo que Tangtang también soltara risitas. La conversación se fue hacia otros temas y el asunto nunca se volvió a mencionar.\nNo fue sino hasta que Tangtang creció un poco que, un día, mientras escuchaba hablar a la gente de la Empalizada, algo se le vino a la mente de golpe. El agua del río no podía dar a luz a una felina como ella. ¿Dónde estaban sus verdaderos padres?\nTangtang no lograba entenderlo. Pasó días comparándose con todos en la Empalizada. Algunos eran demasiado robustos, otros demasiado bajitos. Ni uno solo tenía unas orejas o una cola tan bonitas como las suyas.\nEste dilema pesó sobre Tangtang durante bastante tiempo, hasta que Ruan Lin la llamó para comer fin estofado en olla de hierro. Tangtang miró el plato de Ruan Yi y luego el suyo. La cabeza, los ojos y el vientre tierno del fin estaban todos en el suyo. Mientras arrancaba el vientre del fin y se lo metía a Ruan Lin en la boca, pensó para sí: “¿Por qué me importa lo que la gente de la Empalizada dice y dice sobre el ‘toque de mamá’? ¡La comida de papá está bien rica y con eso me basta!”\n\nTras una investigación y verificación exhaustivas, la División de RR. HH. confirmó que Tangtang aún era una bebé lactante cuando la encontraron. Dada la fisiología de un recién nacido, habría sido imposible que ella hubiera derivado muy lejos río abajo. Por lo tanto, se infiere de manera preliminar que fue abandonada en algún lugar cercano a la Empalizada de Qingbo.\nTras realizar exámenes y evaluaciones detalladas de su ojo, el personal de la División médica sospecha que el patrón en su interior está estrechamente vinculado a sus Artes de Originio. Dado el alto grado de regularidad del patrón, puede descartarse que sea un síntoma aleatorio derivado de la infección por Oripatía. En cambio, es más probable que esté relacionado con su historial médico familiar. Sin embargo, tras revisar todos los registros de personal preservados de la Empalizada de Qingbo, no se encontraron individuos con condiciones similares a las suyas.\nPara citar su propio testimonio: “Solo practiqué y practiqué junto al agua, y este patrón apareció solito.”\nEsto es absolutamente imposible. Solicitamos ayuda a la A.C.H., y tras revisar archivos de residentes, tampoco pudieron identificar a los parientes de Tangtang. Sin embargo, una Tianshi especializada en historia de Yan logró un avance: dentro de los documentos de Yan transmitidos desde Terra, descubrió registros altamente relevantes para el patrón en el ojo de Tangtang. Según relatos legendarios en la literatura, este patrón simboliza la evolución del cielo y la tierra, y contiene una herencia de conocimiento antiguo. Sin embargo, es evidente que Tangtang no tiene acceso a ese tipo de aprendizaje. Los Tianshi de Wuling quedaron igual de asombrados con este hallazgo. Nunca imaginaron que una usuaria de Artes de Originio tan única existiera tan cerca de ellos.\nEn conclusión, las razones específicas detrás del abandono de Tangtang en la Empalizada de Qingbo... podrían ser más complejas de lo que asumimos al inicio,\n...\nDespués de compartirle los hallazgos de la investigación a Tangtang, ella solo se rascó la cabeza y dijo que sus orígenes no eran tan importantes. Al final, ya tenía familia y amistades, y vivía bien. Aunque sí se preguntaba, solo un poquito, si aún tenía parientes consanguíneos, y cómo les estaría yendo... Enfatizó que era solo un poquito, del tamaño de la garrita de una bestia acorazada pequeña.\nTangtang aún conserva la pequeña mantita con la que la envolvieron en ese entonces. Al entregarnos la tela, vaciló visiblemente un instante antes de volver a su actitud despreocupada de siempre: “¡Y acuérdense de regresármela cuando terminen de revisarla!”</>",
+      "file4": "<@profile.key>[Video antiguo]\n06:23:45:10\n“¿Una cámara... el aparatito que graba cosas? Se ve bien tierna, y hasta se puede mover. ¡Parece un Lupo chiquito!”\n“Los wulinguenses inventaron este aparato. Lo agarramos en nuestro último encontronazo con ellos. Solo hay que apretar este botón para encenderla... Oiga, Jefa, ¿quiere hacer una toma y ver cómo sale?”\n“¡Bien, hagámoslo! Oye, ¿cómo le hiciste para que en la toma me vea con las piernas tan cortas? ¡Hace que tu jefa se vea chiquita!”\n“¿Pues no es que tú de por sí estás medio...? — Oye, oye, ¡sin golpear! Soy yo, soy de baja estatura, ¡yo soy de baja estatura, ya!”\n“¡Ya no juego contigo! ¡Voy a darle una paliza a esa vieja loca y voy a usar este Lupo chiquito para grabarla cuando caiga de cara!”\n\n07:10:30:15\n“Maldita vieja loca, otra vez se fue a pelear por su gran señora Zhuang... La última vez los salpicadores la dejaron toda golpeada; ya debería aprender...”\n“Yo mejor me quedo a gusto en mi empalizada y esquivo toda esa plaga allá afuera... Tengo agua pura para tomar y fin bien rico para comer...”\n“Oye, Lupo chiquito, ¡no te muevas! ¡Mira! Una chica bien perdida está practicando con la espada cerca de la frontera de Wuling. Vamos a seguirla a ver qué pasa.”\n“Je, esas dos espadas suyas se ven bastante bien. En esta zona hay demasiados salpicadores y se está poniendo bien peligroso. Mejor que no termine de comida para salpicadores. Y yo, la Jefa, le voy a quitar esas cosas bonitas de encima.”\n\n08:36:05:55\n“¿Tú sola acabaste con todos estos salpicadores?”\n“Sip, estos bichitos no fueron rival para mí. Pero bueno, ¡gracias por el apoyo! Tu tiro es bastante sólido. Soy Chen Qianyu, mucho gusto...”\n“Tangtang. ¡Jefa Suprema de la Empalizada de Qingbo! ¿Has oído hablar de mí?”\n“¡Claro! La Empalizada de Qingbo, los que siempre andan peleándose con la Ciudad de Wuling... A ver, ¿no vienes a asaltarme, verdad?”\n“Depende. ¿Eres wulinguense? Tu jefa es justa y Wuling es lo único que está en mi lista de odio.”\n“Yo... eh... como que sí... espera, no. Ya no. No ahora... Ya no...”\n“¿¡QUÉ!? ¿La vieja loca te corrió? No pasa nada, ser wulinguense apesta a plaga — Oye, ¿por qué estás llorando? ¡ARGH! ¡No te limpies los mocos en mí!”\n\n11:42:13:07\n“No conseguí tesoro y hasta perdí una prenda. Este viaje fue un desastre... ¡¿WOAH?!”\n“Oye, gatita, ¿otra vez merodeando por Wuling? Juraría que te dije que evitaras este lugar.”\n“¡No es asunto tuyo, vieja loca! ¡Suéltame ahora mismo!”\n\nTangtang y Chen Qianyu se juntaron para revisar el metraje de la cámara. Se miraron, desconcertadas y en silencio. De pronto, Tangtang arrebató el aparato y salió disparada a toda velocidad —\n“¡Máscara oscura! ¡Escriba pálida! ¡VEAN ESTO! ¡Tengo unos videos buenísimos de la cara llorona de Escamas verdes! ¡Y ESTÁN BIEN LINDOS!”\n“¡¡¡Tangtang!!! ¡Detente ahí!”\nChen Qianyu, con la cara roja de vergüenza, persiguió a Tangtang alrededor del Anillo Central cinco o seis veces, hasta que Mi Fu — incapaz de seguir mirando — las agarró a las dos por el cuello de la ropa y las levantó.\n“Tangtang, tuve que corretearte en Wuling y todavía tengo que corretearte a bordo del Dijiang durante un viaje oficial... Chen, ¿por qué le sigues el juego a sus travesuras?”\n“¡Mi amigui, Máscara oscura, es dueño de este lugar, vieja loca! ¡Aquí no tienes autoridad! ¡Suelta a tu jefa! ¡AHORA!”\nMientras Tangtang y Mi Fu se lanzaban insultos, Chen Qianyu se zafó con facilidad del agarre de Mi Fu, le arrebató la cámara a Tangtang y de inmediato presionó el botón de borrar en ese pedazo de “vergüenza”. Luego, sacando la lengua de forma juguetona, volteó el lente hacia el dúo que seguía discutiendo.\nLa cámara captó la escena con fidelidad. Tangtang, sostenida por Mi Fu de la nuca, evocó el pasado — Pese a las incontables persecuciones y peleas, Mi Fu nunca sujetó a Tangtang por sus puntos vitales. Mientras Tangtang se comportara, siempre podía encontrar una oportunidad para escapar.\nTangtang nunca entendió por qué siempre se zafaba con tanta facilidad. La observadora Chen Qianyu, que se dio cuenta de esto, naturalmente terminó ganando el premio de este pequeño altercado: un video de Tangtang, la Jefa Derrotada, con las orejas caídas y una cara completamente lamentable; uno que puede disfrutarse una y otra vez.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidad de combo: <@ba.key>¡RÍO, VEN A MÍ!</> mejorada: el Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale:0.0}</> veces el valor original; y el tiempo de reutilización ahora es de <@ba.vup>{coolDown:0}</> s.\nHabilidad de batalla: <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: por cada <@ba.key>Remolino</> consumido y convertido en una <@ba.key>Tromba marina</>, <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> PH adicionales.",
+      "name": "Alijo de reserva"
+    },
+    "potential2": {
+      "description": "Agilidad <@ba.vup>+{Agi:0}</>, DAÑ criogénico infligido <@ba.vup>+{CrystDamageIncrease:0%}</>",
+      "name": "Hija del río"
+    },
+    "potential3": {
+      "description": "Habilidad de batalla <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: el Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale_1:0.0}</> veces el valor original. Al formar varios <@ba.key>Trombas marinas</>, el efecto resultante de <#ba.spellvul>Susceptibilidad a Artes</> aumenta en <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "name": "Vibra de jefa"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>¡LA JEFA TE TIENE EN LA MIRA!</> mejorada: Costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Meditación de Qingbo"
+    },
+    "potential5": {
+      "description": "Máxima <@ba.key>¡LA JEFA TE TIENE EN LA MIRA!</> mejorada: El Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale_1:0.00}</> veces el original. \nTalento <@ba.key>Provocadora de disturbios</> mejorado: Los efectos del DAÑ de cualquier Tromba marina creada por la máxima <@ba.key>¡LA JEFA TE TIENE EN LA MIRA!</> aumentan en <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+      "name": "La mirada arcana de la Jefa"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "El agua cristalina refleja el alma",
+      "author": "Samail",
+      "description": "Tangtang tiene un corazón de agua: un estanque quieto bajo la luna que brilla con su esplendor."
+    },
+    "potential3": {
+      "name": "Divisor de bambú",
+      "author": "二值笔战士",
+      "description": "El aroma del bambú fresco le recuerda una tarde cualquiera en la que los Empalizadores tejían impermeables de bambú para el año venidero, un día en el que ella disfrutaba del sol."
+    },
+    "potential5": {
+      "name": "La palabra de la Jefa Suprema es absoluta",
+      "author": "수줍(Sjoop)",
+      "description": "“¡Máscara oscura! ¡Quédate cerca de tu Jefa Suprema! ¡Llegará el día en que te lleve al borde del mundo!”"
+    }
+  }
+}

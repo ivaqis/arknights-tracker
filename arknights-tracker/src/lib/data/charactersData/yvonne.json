@@ -1902,7 +1902,7 @@
                     0.2
                 ]
             },
-            "poweredAtkDmgMultiplier": {
+            "enhancedFinalStrikeDmgMultiplier": {
                 "dataType": "percent",
                 "data": [
                     1.33,
@@ -1936,7 +1936,7 @@
                     6.0
                 ]
             },
-            "enhancedAtkStagger": {
+            "enhancedFinalStrikeStagger": {
                 "dataType": "float",
                 "data": [
                     20.0,

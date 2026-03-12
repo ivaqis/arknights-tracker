@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Unter Verschluss"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "Taumeln"
       },
       "name": "Konstruktive Sequenz",
-      "description": "Eine kraftvolle Originium-Technikexplosion, die Gegner innerhalb des Wirkungsbereichs angreift. Fügt <@ba.pd>Physischen SDN</> und <#ba.crush>Zertrümmern</> zu."
+      "description": "Eine kraftvolle <@ba.key>Originium-Kristall</>-Explosion, die Gegner innerhalb des Wirkungsbereichs angreift. Fügt <@ba.pd>Physischen SDN</> und <#ba.crush>Zertrümmern</> zu."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "Siegeldauer (Sek.)"
       },
       "name": "Siegel-Sequenz",
-      "description": "KOMBOAUSLÖSER: Wenn ein anderer Operator im Team SDN mit Kombofertigkeiten verursacht. \nStürmt an die Seite des Gegners, um <@ba.pd>Physischen SDN</> zu verursachen und ihn mit <#ba.originium>Originium-Kristallen</> zu versehen, durch die er temporär versiegelt wird. Wenn dem versiegelten Gegner ein <#ba.physicalstatus>Physischer Zustand</> oder <#ba.noguard>Anfälligkeit</> zugefügt wird, werden die <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> und es wird zusätzlicher <@ba.pd>Physischer SDN</> verursacht."
+      "description": "KOMBOAUSLÖSER: Wenn ein anderer Operator im Team SDN mit Kombofertigkeiten verursacht. \nStürmt an die Seite des Gegners, um <@ba.pd>Physischen SDN</> zu verursachen und ihn mit <@ba.key>Originium-Kristallen</> zu versehen, durch die er temporär versiegelt wird. Wenn dem versiegelten Gegner ein <#ba.physicalstatus>Physischer Zustand</> oder <#ba.noguard>Anfälligkeit</> zugefügt wird, zersplittern die <@ba.key>Originium-Kristalle</> und es wird zusätzlicher <@ba.pd>Physischer SDN</> verursacht."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "Taumeln"
       },
       "name": "Bombardement-Sequenz",
-      "description": "Bombardiert den Boden mit Originium-Techniken und verursacht massiven <@ba.pd>Physischen SDN</> bei allen Gegnern in einem fächerförmigen Bereich. Wenn der Gegner mit <#ba.originium>Originium-Kristallen</> besetzt ist, <#ba.consume>verbraucht</> diese Fertigkeit diese <#ba.originium>Originium-Kristalle</> und verursacht einen weiteren Treffer mit <@ba.pd>Physischem SDN</>."
+      "description": "Bombardiert den Boden mit <@ba.key>Originium-Kristallen</> und verursacht massiven <@ba.pd>Physischen SDN</> in allen Gegnern in einem fächerförmigen Bereich. Falls der Gegner bereits <@ba.key>Originium-Kristalle</> hat, zerstört diese Fertigkeit die <@ba.key>Originium-Kristalle</> und verursacht einen weiteren Treffer mit <@ba.pd>Physischem SDN</>."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden.",
-        "Wenn die am Gegner befestigten <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> werden, erhält der Endministrator für {duration:0} Sek. ANG <@ba.vup>+{atk_up:0%}</>. Dieser Effekt kann nicht kumuliert werden."
+        "Triffst du mindestens 2 Ziele mit der Kampffertigkeit oder der Ultimativen Fertigkeit, wird die Abklingzeit der Kombofertigkeit um {0,0:0.0} Sek. reduziert.",
+        "Triffst du mindestens 2 Ziele mit der Kampffertigkeit oder der Ultimativen Fertigkeit, wird die Abklingzeit der Kombofertigkeit um {0,0:0.0} Sek. reduziert."
       ],
       "name": "Essenz-Zerfall"
     },
     "talent2": {
       "levels": [
-        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>.",
-        "Gegner mit <#ba.originium>Originium-Kristallen</> erleiden Physischen SDN <@ba.vup>+{dmg:0%}</>."
+        "Durch <#ba.originium>Originium-Kristalle</> versiegelte Gegner erleiden zusätzlich <@ba.vup>{0,0:0%}</> Physischen SDN.",
+        "Durch <#ba.originium>Originium-Kristalle</> versiegelte Gegner erleiden zusätzlich <@ba.vup>{0,0:0%}</> Physischen SDN."
       ],
       "name": "Realraum-Stasis"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>DECKNAME: Endministrator \nGESCHLECHT: ■■ \nAUTHENTIFIZIERUNG: ■■ \nGEB.: ■■ \nSPEZIES: ■■ \n\nDu erinnerst dich an nichts. \nDeine Erinnerungen sind zersprungen, wie Träume, die zu Staub zermalmt wurden und beim leisesten Gedanken verschwinden. \nManchmal beunruhigt dich das, manchmal ist dir dabei mulmig. Und doch findest du dadurch einen ruhigen Moment, in dem du atmen und nachdenken kannst. \nMeistens hast du allerdings keine Zeit für Zweifel. Du vertraust einfach nur deinen Vorgängern und gehst weiter. \nVielleicht hast du deine Erinnerungen irgendwo verstaut, wenn auch nur für einen kurzen Moment … \n… und so erinnerst du dich an nichts. </>",
+      "humanResources": "<@profile.key>Du warst Zeuge der gesamten Geschichte von Talos-II …</>",
+      "file1": "<@profile.key>Aber … wie wirst du seine Zukunft gestalten?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "Kampffertigkeit <@ba.key>Konstruktive Sequenz</> verbessert: Der <#ba.consume>Verbrauch</> von <#ba.originium>Originium-Kristallen</> <#ba.return>stellt</> <@ba.vup>{atb_return:0}</> FP <#ba.return>wieder her</>.",
+      "description": "",
       "name": "Finales Erwachen"
     },
     "potential2": {
-      "description": "Talent <@ba.key>Essenz-Zerfall</> verbessert: Wenn der Endministrator den ANG-Buff erhält, erhalten alle anderen Operatoren die Hälfte dieses ANG-Buffs.",
+      "description": "",
       "name": "Reflexion der Autorität"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

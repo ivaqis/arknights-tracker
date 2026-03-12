@@ -63,7 +63,7 @@
         "durationS": "Duration (s)"
       },
       "name": "Wooly Party",
-      "description": "Ardelia enters a mobile channeling state and summons the aid of Mr. Dolly. Multiple copies of Mr. Dolly are thrown in random directions. Each copy deals <@ba.natur>Nature DMG</>. Each enemy can only take 1 damaging hit every {interval:0.0}s."
+      "description": "Ardelia enters a mobile channeling state and summons the aid of Mr. Dolly. Multiple copies of Mr. Dolly are thrown in random directions. Each copy deals <@ba.natur>Nature DMG</> when hitting the enemy. Each enemy can only take 1 damaging hit every {interval:0.0}s."
     },
     "indicator": {
       "levels": [

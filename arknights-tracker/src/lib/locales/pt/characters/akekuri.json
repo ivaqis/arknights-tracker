@@ -12,7 +12,7 @@
     "blocTag": "Endfield Industries",
     "expertTags": [
       "Gerenciamento de Equipes",
-      "Gastronomia"
+      "Culinária"
     ],
     "giftPreferTags": [
       "Escolha do Protocolo do Vale"
@@ -91,8 +91,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Atribua à Sala da Recepção para reduzir a velocidade da Queda de Humor de todos os operadores em 10%",
-        "Atribua à Sala da Recepção para reduzir a velocidade da Queda de Humor de todos os operadores em 14%"
+        "Atribua à Sala da Recepção para reduzir a velocidade da Queda de Humor de todos os operadores em em 14%",
+        "Atribua à Sala da Recepção para reduzir a velocidade da Queda de Humor de todos os operadores em em 18%"
       ],
       "name": "Quebra-Gelo"
     },
@@ -120,7 +120,7 @@
     },
     "potential4": {
       "description": "Habilidade suprema <@ba.key>ESQUADRÃO! VENHAM COMIGO!</> melhorada: custo da Energia Suprema <@ba.vup>- {1-costValue:0%}</>.",
-      "name": "Status Super Perfeito"
+      "name": "Status Superperfeito"
     },
     "potential5": {
       "description": "Talento <@ba.key>Permanecer na Zona</> melhorado: mesmo quando a habilidade suprema <@ba.key>ESQUADRÃO! VENHAM COMIGO!</> termina, o benefício de <#ba.combo>Conexão</> persiste por <@ba.vup>{potential_5_duration:0}</>s.",

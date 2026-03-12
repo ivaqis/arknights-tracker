@@ -1,8 +1,8 @@
 {
   "baseInfo": {
     "tags": [
-      "Techniken-Anfäll.",
-      "Naturkumulierung",
+      "Techniken-Empf.",
+      "Natur",
       "Anheben"
     ],
     "behaviourHateTags": [
@@ -60,7 +60,7 @@
         "fieldDurationS": "Felddauer (Sek.)",
         "slowEffect": "Verlangsamen-Effekt",
         "baseArtsSusceptibility": "Grundlegende Technik-Empfänglichkeit",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Anstieg der Technik-Empfänglichkeit pro Anfällig-Kumulierung"
+        "artsSusceptibilityIncreasePerVulnerabilityStack": "Anstieg der Technik-Empfänglichkeit pro Anfälligkeit-Kumulierung"
       },
       "name": "Arkanstab: Schwerkraftfeld",
       "description": "Erzeugt ein <@ba.key>Anomales Schwerkraftfeld</>, das 1 Treffer <@ba.natur>Natur-SDN</> verursacht und Gegner, die sich in diesem Feld befinden, mit <#ba.naturalinflict>Natur belegt</>. Gegner im <@ba.key>Anomalen Schwerkraftfeld</> erleiden außerdem <#ba.slow>Verlangsamung</> und <#ba.spellvul>Technik-Empfänglichkeit</>. Der Effekt von <#ba.spellvul>Technik-Empfänglichkeit</> erhöht sich mit jeder aktiven <#ba.noguard>Anfälligkeit</>-Kumulierung des Ziels. \n<@ba.info>Wenn ein Ziel im Schwerkraftfeld Angehoben wird, bleibt dieser Zustand bestehen, solange das Schwerkraftfeld existiert.</>"
@@ -84,7 +84,7 @@
     "talent2": {
       "levels": [
         "Kampffertigkeit <@ba.key>Arkanstab: Schwerkraftmodus</> und Kombofertigkeit <@ba.key>Arkanstab: Matrixverschiebung</> verbessert. Werden mindestens 2 Gegner mit der Kombofertigkeit oder der letzten Sequenz der Kampffertigkeit getroffen, regeneriert der gesteuerte Operator <@ba.heal>[{heal_const:0} + Intellekt × {heal_scale:0.00}]</> LP.\n<@ba.info>Fehlen dem gesteuerten Operator keine LP, werden stattdessen die LP des Teammitglieds mit den niedrigsten LP wiederhergestellt.</>",
-        "Kampffertigkeit <@ba.key>Arkanstab: Schwerkraftmodus</> und Kombofertigkeit <@ba.key>Arkanstab: Matrixverschiebung</> verbessert. Werden mindestens 2 Gegner mit der Kombofertigkeit oder der letzten Sequenz der Kampffertigkeit getroffen, regeneriert der gesteuerte Operator <@ba.heal>[{heal_const:0} + Intellekt × {heal_scale:0.00}]</> LP.\n<@ba.info>Fehlen dem gesteuerten Operator keine LP, werden stattdessen die LP des Teammitglieds mit den niedrigsten LP wiederhergestellt.</>"
+        "Kampffertigkeit <@ba.key>Arkanstab: Schwerkraftmodus</> und Kombofertigkeit <@ba.key>Arkanstab: Matrixverschiebung</> verbessert: Werden mindestens 2 Gegner mit der Kombofertigkeit oder der letzten Sequenz der Kampffertigkeit getroffen, regeneriert der gesteuerte Operator <@ba.heal>[{heal_const:0} + Intellekt × {heal_scale:0.00}]</> LP.\n<@ba.info>Fehlen dem gesteuerten Operator keine LP, werden stattdessen die LP des Teammitglieds mit den niedrigsten LP wiederhergestellt.</>"
       ],
       "name": "Verspätete Antwort"
     },
@@ -117,7 +117,7 @@
       "name": "Über den Wolken"
     },
     "potential2": {
-      "description": "Ultimative Fertigkeit <@ba.key>Arkanstab: Schwerkraftfeld</> verbessert: Wenn ein Gegner vom <@ba.key>Anomalen Schwerkraftfeld</> der Ultimativen Fertigkeit betroffen ist, multipliziert jede Kumulierung <#ba.noguard>Anfälligkeit</> den Effekt von <#ba.spellvul>Technik-Empfänglichkeit</>. Bei der Finalisierung des Effekts wird das Ziel so behandelt, als hätte es 1 zusätzliche Kumulierung <#ba.noguard>Anfälligkeit</> (max. 4 Kumulierungen).",
+      "description": "Ultimative Fertigkeit <@ba.key>Arkanstab: Schwerkraftfeld</> verbessert: Wenn ein Gegner vom <@ba.key>Anomalen Schwerkraftfeld</> der Ultimativen Fertigkeit betroffen ist, verdoppelt sich der Anstieg der <#ba.spellvul>Technik-Empfänglichkeit</> pro <#ba.noguard>Anfälligkeit</>-Kumulierung. Bei der Finalisierung dieses Effekts wird das Ziel so behandelt, als hätte es 1 zusätzliche Kumulierung <#ba.noguard>Anfälligkeit</> (insgesamt max. 4 Kumulierungen).",
       "name": "Windgängerin"
     },
     "potential3": {

@@ -3,7 +3,7 @@
     "tags": [
       "Hồi Phục HP",
       "Ăn Mòn",
-      "Dễ Bị Thương"
+      "Yếu Hóa"
     ],
     "behaviourHateTags": [
       "Văn Hóa"
@@ -26,25 +26,25 @@
   "skills": {
     "basicAttack": {
       "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
-        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
-        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
-        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
-        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
       },
-      "name": "Lời Thì Thầm Của Đá",
-      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi ít Điểm KN."
+      "name": "Sơn Thạch Thầm Thì",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN."
     },
     "battleSkill": {
       "battleSkill": {
         "dmgMultiplier": "Hệ Số ST",
         "stagger": "Suy Sụp",
-        "susceptibility": "Dễ Bị Thương",
-        "susceptibilityDurationS": "Thời Gian Dễ Bị Thương (giây)"
+        "susceptibility": "Yếu Hóa",
+        "susceptibilityDurationS": "Thời Gian Yếu Hóa (giây)"
       },
       "name": "Dolly Xung Phong",
-      "description": "Cưỡi Ngài Dolly húc thẳng vào mục tiêu gây <@ba.natur>ST Tự Nhiên</>. Nếu mục tiêu đang có <#ba.corrupt>Ăn Mòn</>, thì <#ba.consume>tiêu hao</> <#ba.corrupt>Ăn Mòn</> và gây hiệu ứng <#ba.physicalvul>Dễ Bị Thương Vật Lý</> và <#ba.spellvul>Dễ Bị Thương Thuật Pháp</> lên mục tiêu."
+      "description": "Cưỡi Ngài Dolly húc thẳng vào mục tiêu gây <@ba.natur>ST Tự Nhiên</>. Nếu mục tiêu đang có <#ba.corrupt>Ăn Mòn</>, thì <#ba.consume>tiêu hao</> <#ba.corrupt>Ăn Mòn</> và gây hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</> và <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên mục tiêu."
     },
     "comboSkill": {
       "comboSkill": {
@@ -54,7 +54,7 @@
         "corrodeDurationS": "Thời Gian Hiệu Lực Ăn Mòn (giây)"
       },
       "name": "Cột Bộc Phát",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi đặc vụ được điều khiển tung <#ba.lastcombo>Kết Liễu</> vào kẻ địch đang <@ba.key>không có</> điểm cộng dồn <#ba.noguard>Trừ Giáp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> nào. \nBắn một Đám Mây Núi Lửa tự dẫn vào mục tiêu, gây <@ba.natur>ST Tự Nhiên</> khi áp sát. Đám Mây Núi Lửa phát nổ trễ, gây một nửa <@ba.natur>ST Tự Nhiên</> và cưỡng bức gây <#ba.corrupt>Ăn Mòn</> tạm thời lên kẻ địch lân cận."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển tung <#ba.lastcombo>Đòn Dứt Điểm</> vào kẻ địch đang <@ba.key>không có</> điểm cộng dồn <#ba.noguard>Trừ Giáp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> nào. \nBắn một Đám Mây Núi Lửa tự dẫn vào mục tiêu, gây <@ba.natur>ST Tự Nhiên</> khi áp sát. Đám Mây Núi Lửa phát nổ trễ, gây một nửa <@ba.natur>ST Tự Nhiên</> và cưỡng bức gây <#ba.corrupt>Ăn Mòn</> tạm thời lên kẻ địch lân cận."
     },
     "ultimate": {
       "ultimate": {
@@ -63,21 +63,21 @@
         "durationS": "Thời Gian Hiệu Lực (giây)"
       },
       "name": "Tiệc Len",
-      "description": "Ardelia nhập trạng thái tụ lực di động và gọi Ngài Dolly trợ chiến. Nhiều bản sao Ngài Dolly được ném ngẫu nhiên, mỗi bản sao gây <@ba.natur>ST Tự Nhiên</>. Mỗi kẻ địch chỉ nhận 1 lần ST mỗi {interval:0.0} giây."
+      "description": "Ardelia nhập trạng thái tụ lực di động và gọi Ngài Dolly trợ chiến. Nhiều bản sao Ngài Dolly được ném ngẫu nhiên, mỗi bản sao gây <@ba.natur>ST Tự Nhiên</> khi trúng kẻ địch. Mỗi kẻ địch chỉ nhận 1 lần ST mỗi {interval:0.0} giây."
     },
     "indicator": {
       "levels": [
-        "Trí Tuệ Đặc Vụ +10.",
-        "Trí Tuệ Đặc Vụ +15.",
-        "Trí Tuệ Đặc Vụ +15.",
-        "Trí Tuệ Đặc Vụ +20."
+        "Trí Tuệ Cán Viên +10.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +20."
       ],
       "name": "Nhạy Bén"
     },
     "talent1": {
       "levels": [
-        "KN chiến đấu <@ba.key>Dolly Xung Phong</> tạo ra {sheep_num:0} <@ba.key>Bóng của Ngài Dolly</> sau khi tấn công kẻ địch. Các bản sao của Ngài Dolly bị tuyệt kỹ <@ba.key>Tiệc Len</> đánh tan vỡ cũng có {effect_prob:0%} cơ hội tạo ra <@ba.key>Bóng của Ngài Dolly</> khi rơi xuống đất. Khi đặc vụ được điều khiển chạm vào <@ba.key>Bóng của Ngài Dolly</>, Ardelia sẽ hồi phục HP cho đặc vụ đó bằng <@ba.heal>[{heal_value:0} + Ý Chí×{heal_scale:0.00}]</>.\n<@ba.info>Nếu đặc vụ được điều khiển đã đạt HP tối đa thì sẽ hồi phục HP cho đồng đội có phần trăm HP thấp nhất.</>\n<@ba.info>Bóng của Ngài Dolly có hiệu lực trong 10 giây và tối đa 10 bóng có thể tồn tại trên chiến trường.</>",
-        "KN chiến đấu <@ba.key>Dolly Xung Phong</> tạo ra {sheep_num:0} <@ba.key>Bóng của Ngài Dolly</> sau khi tấn công kẻ địch. Các bản sao của Ngài Dolly bị tuyệt kỹ <@ba.key>Tiệc Len</> đánh tan vỡ cũng có {effect_prob:0%} cơ hội tạo ra <@ba.key>Bóng của Ngài Dolly</> khi rơi xuống đất. Khi đặc vụ được điều khiển chạm vào <@ba.key>Bóng của Ngài Dolly</>, Ardelia sẽ hồi phục HP cho đặc vụ đó bằng <@ba.heal>[{heal_value:0} + Ý Chí×{heal_scale:0.00}]</>.\n<@ba.info>Nếu đặc vụ được điều khiển đã đạt HP tối đa thì sẽ hồi phục HP cho đồng đội có phần trăm HP thấp nhất.</>\n<@ba.info>Bóng của Ngài Dolly có hiệu lực trong 10 giây và tối đa 10 bóng có thể tồn tại trên chiến trường.</>"
+        "KN chiến đấu <@ba.key>Dolly Xung Phong</> tạo ra {sheep_num:0} <@ba.key>Bóng của Ngài Dolly</> sau khi tấn công kẻ địch. Các bản sao của Ngài Dolly bị tuyệt kỹ <@ba.key>Tiệc Len</> đánh tan vỡ cũng có {effect_prob:0%} cơ hội tạo ra <@ba.key>Bóng của Ngài Dolly</> khi rơi xuống đất. Khi cán viên đang điều khiển chạm vào <@ba.key>Bóng của Ngài Dolly</>, Ardelia sẽ hồi phục HP cho cán viên đó bằng <@ba.heal>[{heal_value:0} + Ý Chí×{heal_scale:0.00}]</>.\n<@ba.info>Nếu cán viên đang điều khiển đã đạt HP tối đa thì sẽ hồi phục HP cho đồng đội có phần trăm HP thấp nhất.</>\n<@ba.info>Bóng của Ngài Dolly có hiệu lực trong 10 giây và tối đa 10 bóng có thể tồn tại trên chiến trường.</>",
+        "KN chiến đấu <@ba.key>Dolly Xung Phong</> tạo ra {sheep_num:0} <@ba.key>Bóng của Ngài Dolly</> sau khi tấn công kẻ địch. Các bản sao của Ngài Dolly bị tuyệt kỹ <@ba.key>Tiệc Len</> đánh tan vỡ cũng có {effect_prob:0%} cơ hội tạo ra <@ba.key>Bóng của Ngài Dolly</> khi rơi xuống đất. Khi cán viên đang điều khiển chạm vào <@ba.key>Bóng của Ngài Dolly</>, Ardelia sẽ hồi phục HP cho cán viên đó bằng <@ba.heal>[{heal_value:0} + Ý Chí×{heal_scale:0.00}]</>.\n<@ba.info>Nếu cán viên đang điều khiển đã đạt HP tối đa thì sẽ hồi phục HP cho đồng đội có phần trăm HP thấp nhất.</>\n<@ba.info>Bóng của Ngài Dolly có hiệu lực trong 10 giây và tối đa 10 bóng có thể tồn tại trên chiến trường.</>"
       ],
       "name": "Sự Hiện Diện Thân Thiện"
     },
@@ -89,15 +89,15 @@
     },
     "baseSkill1": {
       "levels": [
-        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của đặc vụ +20%",
-        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của đặc vụ +30%"
+        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +20%",
+        "Khi phân công vào Phòng Tiếp Khách, hiệu suất thu thập manh mối của cán viên +30%"
       ],
       "name": "Giai Thoại Vùng Đất"
     },
     "baseSkill2": {
       "levels": [
-        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả các đặc vụ đi 14%",
-        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả đặc vụ đi 18%"
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả các cán viên đi 14%",
+        "Khi phân công vào Phòng Tiếp Khách, làm chậm mức Giảm Tâm Trạng của tất cả cán viên đi 18%"
       ],
       "name": "Trò Chơi Của Ngài Dolly"
     },
@@ -112,11 +112,11 @@
   },
   "potentials": {
     "potential1": {
-      "description": "KN chiến đấu <@ba.key>Dolly Xung Phong</> được cải thiện: <#ba.consume>Tiêu hao</> <#ba.corrupt>Ăn Mòn</> hiện tại sẽ gây <#ba.physicalvul>Dễ Bị Thương Vật Lý</> và <#ba.spellvul>Dễ Bị Thương Thuật Pháp</> với hiệu ứng <@ba.vup>+{rate_vul_base:0%}</>.",
+      "description": "KN chiến đấu <@ba.key>Dolly Xung Phong</> được cải thiện: <#ba.consume>Tiêu hao</> <#ba.corrupt>Ăn Mòn</> hiện tại sẽ gây <#ba.physicalvul>Yếu Hóa Vật Lý</> và <#ba.spellvul>Yếu Hóa Thuật Pháp</> với hiệu ứng <@ba.vup>+{rate_vul_base:0%}</>.",
       "name": "Thiên Đường Dolly"
     },
     "potential2": {
-      "description": "Tài Năng <@ba.key>Sự Hiện Diện Thân Thiện</> được cải thiện: Khi đặc vụ được điều khiển chạm vào <@ba.key>Bóng Của Ngài Dolly</>, Ardelia cũng sẽ hồi phục cho đặc vụ đồng minh khác có tỷ lệ HP thấp nhất một lượng bằng nửa hiệu ứng điều trị.",
+      "description": "Thiên Phú <@ba.key>Sự Hiện Diện Thân Thiện</> được cải thiện: Khi cán viên đang điều khiển chạm vào <@ba.key>Bóng Của Ngài Dolly</>, Ardelia cũng sẽ hồi phục cho cán viên đồng minh khác có tỷ lệ HP thấp nhất một lượng bằng nửa hiệu ứng điều trị.",
       "name": "Phần Thưởng Trò Chơi"
     },
     "potential3": {

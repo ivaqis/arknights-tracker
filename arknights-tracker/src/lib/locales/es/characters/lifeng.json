@@ -9,7 +9,7 @@
       "Bellas artes"
     ],
     "behaviourUnavailableTags": [
-      "Extrovertido"
+      "Extrovertido (SOLO SISTEMA, no visible dentro del juego)"
     ],
     "blocTag": "Academia Científica Hongshan (A.C.H.)",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "Tambaleo de ATQ adicional"
       },
       "name": "Corazón inmóvil",
-      "description": "Desata un aspecto que golpea un Vajra inmóvil para infligir <@ba.pd>DAÑ físico</> y <#ba.knockdown>Derribar</> a todos los enemigos en un área de efecto amplia; luego, los enemigos son atraídos hacia el centro del área. Después de un momento, los enemigos que sigan dentro del área de efecto del golpe de vajra sufrirán más <@ba.pd>DAÑ físico</> masivo y <#ba.knockdown>Derribar</>. \nSi la habilidad <#ba.consume>consume</> un <#ba.combo>Enlace</>, inflige <@ba.pd>DAÑ físico</> masivo adicional."
+      "description": ""
     },
     "indicator": {
       "levels": [

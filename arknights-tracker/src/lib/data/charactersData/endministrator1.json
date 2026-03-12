@@ -1786,16 +1786,21 @@
     "facSkills": {},
     "blackboard": {
         "potential1": {
-            "atk_scale": 1.15
+            "atb_return": 50
         },
         "potential2": {
-            "atk_scale_trigger": 1.75,
-            "originum_ult_break_scale": 1.75
+            "ratio": 0.5
         },
         "potential3": {
-            "costvalue": 0.9
+            "atk_scale": 1.3
         },
-        "potential4": {},
-        "potential5": {}
+        "potential4": {
+            "MaxHp": 0.1,
+            "EtherDamageTakenScalar": -0.1,
+            "Agi": 25
+        },
+        "potential5": {
+            "cd_minus": 2
+        }
     }
 }

@@ -8,7 +8,7 @@
       "Tecnologia"
     ],
     "behaviourUnavailableTags": [
-      "Introvertido"
+      "Introvertido (EXCLUSIVO DO SISTEMA, não é visível dentro do jogo)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -78,7 +78,7 @@
         "Após atingir um inimigo com suas habilidades, Chen ganha ATQ <@ba.vup>+ {atk:0%}</> por {duration:0} s. Esse efeito pode atingir {max_stack:0} acúmulos.",
         "Após atingir um inimigo com suas habilidades, Chen ganha ATQ <@ba.vup>+ {atk:0%}</> por {duration:0} s. Esse efeito pode atingir {max_stack:0} acúmulos."
       ],
-      "name": "Borda Cortante"
+      "name": "Lâmina Cortante"
     },
     "talent2": {
       "levels": [
@@ -128,7 +128,7 @@
       "name": "Chi Xiao Improvisado"
     },
     "potential5": {
-      "description": "Combo de habilidades <@ba.key>Voar Até as Estrelas</> melhorada: duração do Tempo de Recarga <@ba.vup>{coolDown:0}</> s.",
+      "description": "Combo de habilidades <@ba.key>Voar Até as Estrelas</> melhorado: a duração do Tempo de Recarga agora é <@ba.vup>{coolDown:0}</> s.",
       "name": "Ligado com o Mundo"
     }
   },

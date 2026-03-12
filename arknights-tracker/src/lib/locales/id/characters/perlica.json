@@ -8,7 +8,7 @@
       "Olahraga"
     ],
     "behaviourUnavailableTags": [
-      "Introvert"
+      "Introvert (SISTEM SAJA, tidak terlihat dalam game)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -122,7 +122,7 @@
       "name": "Supervisory Duties"
     },
     "potential4": {
-      "description": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Durasi debuff <#ba.spelldmg>Arts DMG Taken</> pada musuh yang diakibatkan oleh <#ba.conduct>Electrification</> dari skill akan meningkat menjadi <@ba.vup>{extra_scaling}</> kali nilai aslinya.",
+      "description": "Skill kombo <@ba.key>Instant Protocol: Chain</> meningkat: Efek debuff <#ba.spelldmg>Arts DMG Taken</> pada musuh yang diakibatkan oleh <#ba.conduct>Electrification</> dari skill akan meningkat menjadi <@ba.vup>{extra_scaling}</> kali nilai aslinya.",
       "name": "Constant Guidance"
     },
     "potential5": {

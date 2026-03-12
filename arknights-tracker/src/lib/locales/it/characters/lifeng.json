@@ -9,7 +9,7 @@
       "Belle arti"
     ],
     "behaviourUnavailableTags": [
-      "Estroversione"
+      "Estroversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Accademia scientifica di Hongshan (ASH)",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "Vacillamento ATT aggiuntivo"
       },
       "name": "Cuore inamovibile",
-      "description": "Sguinzaglia un avatar che abbatte un Vajra l'Inamovibile infliggendo <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici in un grande raggio d'azione, quindi li attira verso il centro dell'area. Dopo un po' di tempo, i nemici che si trovano ancora all'interno del raggio d'azione del colpo di Vajra subiscono ancora <@ba.pd>danni fisici</> ingenti e <#ba.knockdown>Abbattimento</>. \nSe l'abilità <#ba.consume>consuma</> un <#ba.combo>Concatenamento</>, infligge ingenti <@ba.pd>danni fisici</> extra."
+      "description": ""
     },
     "indicator": {
       "levels": [

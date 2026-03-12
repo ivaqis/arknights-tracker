@@ -1,14 +1,14 @@
 {
   "baseInfo": {
     "tags": [
-      "Hitzekumulierung",
+      "Hitze",
       "Verbrennen"
     ],
     "behaviourHateTags": [
       "Gedächtnistraining"
     ],
     "behaviourUnavailableTags": [
-      "Extrovertiert"
+      "Extrovertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -20,7 +20,7 @@
     ],
     "hobbyTags": [
       "Natur",
-      "Kreativ"
+      "Kreatives"
     ],
     "raceTag": "Lupo"
   },

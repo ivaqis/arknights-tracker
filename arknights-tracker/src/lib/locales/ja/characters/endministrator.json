@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "エンドフィールド工業",
+    "expertTags": [
+      "？？？"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "？？？"
+    ],
+    "raceTag": "未公開"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "ブレイク値"
       },
       "name": "構成配列",
-      "description": "アーツを発動して前方の一定範囲内の敵を攻撃する。<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。"
+      "description": "<@ba.key>源石結晶</>で前方の一定範囲内の敵を攻撃し、<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。"
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "封印時間（秒）"
       },
       "name": "封印配列",
-      "description": "チーム内の他のオペレーターの連携技でダメージを与えたときに発動可能。\n敵の近くに突進し、<@ba.pd>物理ダメージ</>を与え、<#ba.originium>源石の結晶</>を付与して一定時間封印する。<#ba.physicalstatus>物理異常</>を与えるか<#ba.noguard>クラッシュ</>を付与すると、<#ba.originium>源石の結晶</>が<#ba.consume>消費</>され、追加の<@ba.pd>物理ダメージ</>を与える。"
+      "description": "チーム内の他のオペレーターの連携技でダメージを与えたときに発動可能。\n敵の近くに突進し、<@ba.pd>物理ダメージ</>を与え、<@ba.key>源石結晶</>を付与して一定時間封印する。<#ba.physicalstatus>物理異常</>か<#ba.noguard>クラッシュ</>を付与すると、<@ba.key>源石結晶</>を粉砕し、追加の<@ba.pd>物理ダメージ</>を与える。"
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "ブレイク値"
       },
       "name": "攻撃配列",
-      "description": "アーツを発動して地面を攻撃し、前方の扇形範囲内の敵に高い<@ba.pd>物理ダメージ</>を与える。敵に<#ba.originium>源石の結晶</>がある場合、<#ba.originium>源石の結晶</>を<#ba.consume>消費</>して追加でもう1回<@ba.pd>物理ダメージ</>を与える。"
+      "description": "<@ba.key>源石結晶</>で地面を攻撃し、前方の扇形範囲内の敵に高い<@ba.pd>物理ダメージ</>を与える。敵に<@ba.key>源石結晶</>がある場合、<@ba.key>源石結晶</>を粉砕して追加でもう1回<@ba.pd>物理ダメージ</>を与える。"
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "敵の<#ba.originium>源石の結晶</>が<#ba.consume>消費</>されると、{duration:0}秒間自身の攻撃力<@ba.vup>+{atk_up:0%}</>（重ね掛け不可）",
-        "敵の<#ba.originium>源石の結晶</>が<#ba.consume>消費</>されると、{duration:0}秒間自身の攻撃力<@ba.vup>+{atk_up:0%}</>（重ね掛け不可）"
+        "戦技と必殺技が2体以上の敵に命中すると、連携技のCD時間を{0,0:0.0}秒回復する",
+        "戦技と必殺技が2体以上の敵に命中すると、連携技のCD時間を{0,0:0.0}秒回復する"
       ],
       "name": "根源瓦解"
     },
     "talent2": {
       "levels": [
-        "<#ba.originium>源石の結晶</>が付与されている敵の受ける物理ダメージ<@ba.vup>+{dmg:0%}</>",
-        "<#ba.originium>源石の結晶</>が付与されている敵の受ける物理ダメージ<@ba.vup>+{dmg:0%}</>"
+        "<#ba.originium>源石結晶</>で封印されている敵は、さらに<@ba.vup>{0,0:0%}</>の物理ダメージを受ける",
+        "<#ba.originium>源石結晶</>で封印されている敵は、さらに<@ba.vup>{0,0:0%}</>の物理ダメージを受ける"
       ],
       "name": "空間静止"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>【コードネーム】管理人\n【性別】■■\n【身分証明】■■\n【誕生日】■■\n【種族】■■\n\n何も思い出せない。\n記憶は砕け散った夢のようで、思い出そうとすれば、跡形もなく消えてしまう。\n焦燥に駆られ、不安がよぎる……けれど、同時に少しだけ考える余裕も与えてくれる。\nしかし、大抵は考える時間なんてない。目の前の人を信じて、ただ前に進めばいい。\n記憶を、頭の中から追いやってしまったのかもしれない……\n……だから、何も思い出せない。</>",
+      "humanResources": "<@profile.key>これまでの人生は、タロⅡの歴史そのものだ……</>",
+      "file1": "<@profile.key>……なら、未来は？</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "戦技<@ba.key>「構成配列」</>で敵の<#ba.originium>源石の結晶</>を<#ba.consume>消費</>するとき、SPが<@ba.vup>{atb_return:0}</><#ba.return>返還</>される",
+      "description": "",
       "name": "最後の目覚め"
     },
     "potential2": {
-      "description": "素質<@ba.key>「根源瓦解」</>強化：自身が攻撃力UPを獲得するとき、他の味方オペレーターはその半分に相当する攻撃力UP効果を獲得する",
+      "description": "",
       "name": "権能映写"
     },
     "potential3": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     },
     "potential4": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     },
     "potential5": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     }
   },

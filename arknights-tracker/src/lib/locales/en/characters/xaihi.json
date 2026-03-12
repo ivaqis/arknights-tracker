@@ -9,7 +9,7 @@
       "Sports"
     ],
     "behaviourUnavailableTags": [
-      "Outgoing"
+      "Outgoing (SYSTEM ONLY, not visible in-game)"
     ],
     "blocTag": "Cabal of Tranquility",
     "expertTags": [
@@ -80,8 +80,8 @@
     },
     "talent1": {
       "levels": [
-        "Combo skill <@ba.key>Stress Testing</> improved: Hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.frozen>Solidification</> also causes the enemy to take <@ba.cryst>Cryo DMG Dealt</> <@ba.vup>+{cryst_up:0%}</> for <@ba.vup>{duration:0}</>s. This effect cannot stack.",
-        "Combo skill <@ba.key>Stress Testing</> improved: Hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.frozen>Solidification</> also causes the enemy to take <@ba.cryst>Cryo DMG Dealt</> <@ba.vup>+{cryst_up:0%}</> for <@ba.vup>{duration:0}</>s. This effect cannot stack."
+        "Combo skill <@ba.key>Stress Testing</> improved: Hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.frozen>Solidification</> also causes the enemy to suffer <@ba.cryst>Cryo DMG Taken</> <@ba.vup>+{cryst_up:0%}</> for <@ba.vup>{duration:0}</>s. This effect cannot stack.",
+        "Combo skill <@ba.key>Stress Testing</> improved: Hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.frozen>Solidification</> also causes the enemy to suffer <@ba.cryst>Cryo DMG Taken</> <@ba.vup>+{cryst_up:0%}</> for <@ba.vup>{duration:0}</>s. This effect cannot stack."
       ],
       "name": "Execute Process"
     },

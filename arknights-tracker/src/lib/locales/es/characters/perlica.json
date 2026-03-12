@@ -8,7 +8,7 @@
       "Deportes"
     ],
     "behaviourUnavailableTags": [
-      "Introvertido"
+      "Introvertido (SOLO SISTEMA, no visible dentro del juego)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -20,7 +20,7 @@
     ],
     "hobbyTags": [
       "Estilo de vida",
-      "Creativo"
+      "Creatividad"
     ],
     "raceTag": "Liberi"
   },
@@ -122,7 +122,7 @@
       "name": "Labores de supervisión"
     },
     "potential4": {
-      "description": "Habilidad de combo <@ba.key>Protocolo instantáneo: Cadena</> mejorada: La duración de la penalización de <#ba.spelldmg>DAÑ por artes recibido</> en el enemigo aplicado por la <#ba.conduct>Electrificación</> de la habilidad aumenta <@ba.vup>{extra_scaling}</> veces la original.",
+      "description": "Habilidad de combo <@ba.key>Protocolo instantáneo: Cadena</> mejorada: La duración de la penalización de <#ba.spelldmg>DAÑ por artes recibido</> en el enemigo aplicado por la <#ba.conduct>Electrificación</> de la habilidad se incrementa <@ba.vup>{extra_scaling}</> veces la original.",
       "name": "Orientación constante"
     },
     "potential5": {

@@ -63,7 +63,7 @@
         "durationS": "Durée (s)"
       },
       "name": "Assemblée laineuse",
-      "description": "Ardelia entre dans un état de canalisation mobile et invoque l'aide de M. Dolly. Plusieurs doubles de M. Dolly sont jetés dans des directions aléatoires. Chaque double inflige des <@ba.natur>DÉG naturels</>. Chaque ennemi ne peut subir qu'un coup toutes les {interval:0.0} seconde(s)."
+      "description": "Ardelia entre dans un état de canalisation mobile et invoque l'aide de M. Dolly. Plusieurs doubles de M. Dolly sont jetés dans des directions aléatoires. Chaque double inflige des <@ba.natur>DÉG naturels</> en frappant l'ennemi. Chaque ennemi ne peut subir qu'un coup toutes les {interval:0.0} seconde(s)."
     },
     "indicator": {
       "levels": [

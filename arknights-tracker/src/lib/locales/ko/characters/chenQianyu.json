@@ -8,7 +8,7 @@
       "과학기술"
     ],
     "behaviourUnavailableTags": [
-      "내향적"
+      "내향적 (시스템용, 게임에서 표시되지 않음.)"
     ],
     "blocTag": "엔드필드 공업",
     "expertTags": [
@@ -16,7 +16,7 @@
       "창의적인 생각"
     ],
     "giftPreferTags": [
-      "무릉 · 질주자 엄선"
+      "무릉 · 러너 엄선"
     ],
     "hobbyTags": [
       "문화",
@@ -136,17 +136,17 @@
     "potential1": {
       "name": "협객의 흔적",
       "author": "ALZiMi",
-      "description": "용과 검만 있으면, 천하 어디든 갈 수 있습니다."
+      "description": "용과 검이 함께라면 난 어디든 갈 수 있어!"
     },
     "potential3": {
       "name": "검의 속삭임",
       "author": "Kieed",
-      "description": "검은 어머니를 향한 그리움, 검은 그녀가 선택한 길, 검은 당신을 지키는 신념입니다."
+      "description": "검은... 엄마를 향한 그리움이자, 내가 스스로 선택한 길이야. 그리고... 날 다시 일어서게 만드는 신념이지."
     },
     "potential5": {
       "name": "용의 비상",
       "author": "宇木敦哉",
-      "description": "검을 뽑으니, 용이 비상하고, 바람이 구름이 용솟음칩니다."
+      "description": "검 한 자루가 세상을 가를 때, 용이 구름을 뚫고 솟아올라 재앙의 바람과 먹구름이 몰려드는 전장을 구하리라...!"
     }
   }
 }

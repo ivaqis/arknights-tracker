@@ -8,7 +8,7 @@
       "Fortificazione mentale"
     ],
     "behaviourUnavailableTags": [
-      "Introversione"
+      "Introversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Camera di commercio generale di Talos-II (CCGT)",
     "expertTags": [
@@ -132,7 +132,7 @@
       "name": "Esperta"
     },
     "potential5": {
-      "description": "Quando le <@ba.key>Tuonolance</> o le <@ba.key>Tuonolance EX</> recuperate colpiscono un nemico <#ba.pulsevul>Suscettibile all'elettricità</>, il moltiplicatore danni aumenta di <@ba.vup>{atk_scale_lance:0.00}</> volte rispetto all'originale.",
+      "description": "Quando le <@ba.key>Tuonolance</> o le <@ba.key>Tuonolance EX</> recuperate colpiscono un nemico <#ba.pulsevul>Suscettibile all'elettricità</>, il moltiplicatore danni aumenta a <@ba.vup>{atk_scale_lance:0.00}</> volte rispetto all'originale.",
       "name": "Bastone e carota"
     }
   },

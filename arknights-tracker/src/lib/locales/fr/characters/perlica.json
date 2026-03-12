@@ -8,7 +8,7 @@
       "Sports"
     ],
     "behaviourUnavailableTags": [
-      "Introversion"
+      "Introverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
     ],
     "blocTag": "Industries Endfield",
     "expertTags": [
@@ -122,7 +122,7 @@
       "name": "Devoir de supervision"
     },
     "potential4": {
-      "description": "Renforce la compétence de combo <@ba.key>Protocole instantané : Chaîne</> : la durée du malus de <#ba.spelldmg>DÉG des Arts subis</> appliqué à l'ennemi par l'<#ba.conduct>Électrification</> de la compétence passe à <@ba.vup>{extra_scaling}</> fois sa valeur d'origine.",
+      "description": "Renforce la compétence de combo <@ba.key>Protocole instantané : Chaîne</> : les effets du malus de <#ba.spelldmg>DÉG des Arts subis</> appliqués à l'ennemi par l'<#ba.conduct>Électrification</> de la compétence passent à <@ba.vup>{extra_scaling}</> fois sa valeur d'origine.",
       "name": "Accompagnement constant"
     },
     "potential5": {

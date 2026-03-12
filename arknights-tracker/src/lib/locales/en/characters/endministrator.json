@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Undisclosed"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "Stagger"
       },
       "name": "Constructive Sequence",
-      "description": "A forceful burst of Originium Arts that attacks enemies within the area of effect. Deals <@ba.pd>Physical DMG</> and applies <#ba.crush>Crush</>."
+      "description": "A forceful burst of <@ba.key>Originium Crystals</> that attacks enemies within the area of effect. Deals <@ba.pd>Physical DMG</> and applies <#ba.crush>Crush</>."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "Seal Duration (s)"
       },
       "name": "Sealing Sequence",
-      "description": "COMBO TRIGGER: When another operator in the team deals DMG with combo skills. \nRushes to the enemy's side to deal <@ba.pd>Physical DMG</> and attach <#ba.originium>Originium Crystals</> that temporarily seal them. Applying <#ba.physicalstatus>Physical Status</> or <#ba.noguard>Vulnerability</> to the sealed enemy <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals additional <@ba.pd>Physical DMG</>."
+      "description": "COMBO TRIGGER: When another operator in the team deals DMG with combo skills. \nRushes to the enemy's side to deal <@ba.pd>Physical DMG</> and attach <@ba.key>Originium Crystals</> that temporarily seal them. Applying <#ba.physicalstatus>Physical Status</> or <#ba.noguard>Vulnerability</> to the sealed enemy shatters the <@ba.key>Originium Crystals</> and deals additional <@ba.pd>Physical DMG</>."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "Stagger"
       },
       "name": "Bombardment Sequence",
-      "description": "Bombards the ground with Originium Arts, dealing massive <@ba.pd>Physical DMG</> to all enemies within a fan-shaped area. If the enemy has <#ba.originium>Originium Crystals</> on them, this skill <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals one more hit of <@ba.pd>Physical DMG</>."
+      "description": "Bombards the ground with <@ba.key>Originium Crystals</>, dealing massive <@ba.pd>Physical DMG</> to all enemies within a fan-shaped area. If the enemy already has <@ba.key>Originium Crystals</> on them, this skill shatters the <@ba.key>Originium Crystals</> and deals 1 more hit of <@ba.pd>Physical DMG</>."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "When the <#ba.originium>Originium Crystals</> attached to the enemy are <#ba.consume>consumed</>, the Endministrator gains ATK <@ba.vup>+{atk_up:0%}</> for {duration:0}s. This effect cannot stack.",
-        "When the <#ba.originium>Originium Crystals</> attached to the enemy are <#ba.consume>consumed</>, the Endministrator gains ATK <@ba.vup>+{atk_up:0%}</> for {duration:0}s. This effect cannot stack."
+        "Hitting at least 2 targets with the battle skill or ultimate shortens combo skill cooldown by {0,0:0.0}s.",
+        "Hitting at least 2 targets with the battle skill or ultimate shortens combo skill cooldown by {0,0:0.0}s."
       ],
       "name": "Essence Disintegration"
     },
     "talent2": {
       "levels": [
-        "Enemies with attached <#ba.originium>Originium Crystals</> suffer Physical DMG Taken <@ba.vup>+{dmg:0%}</>.",
-        "Enemies with attached <#ba.originium>Originium Crystals</> suffer Physical DMG Taken <@ba.vup>+{dmg:0%}</>."
+        "Enemies sealed by <#ba.originium>Originium crystals</> take <@ba.vup>{0,0:0%}</> more Physical DMG.",
+        "Enemies sealed by <#ba.originium>Originium crystals</> take <@ba.vup>{0,0:0%}</> more Physical DMG."
       ],
       "name": "Realspace Stasis"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>CODENAME: Endministrator \nGENDER: ■■ \nAUTHENTICATION: ■■ \nDOB: ■■ \nRACE: ■■ \n\nYou remember nothing. \nYour memories lie in fragments, like dreams crushed to dust, disappearing at the slightest thought. \nSometimes it makes you unsettled, sometimes uneasy, yet it grants you a quiet moment to breathe and think. \nMost of the time, however, there is no pause for doubt. You simply just trust those before you and press on. \nPerhaps you have tucked your past memories away, even if just for a little while... \n...and so, you remember nothing. </>",
+      "humanResources": "<@profile.key>You have lived through all of Talos-II's history...</>",
+      "file1": "<@profile.key>But ... what will you make of its future?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "Battle skill <@ba.key>Constructive Sequence</> improved: <#ba.consume>Consuming</> <#ba.originium>Originium Crystals</> <#ba.return>returns</> <@ba.vup>{atb_return:0}</> SP.",
+      "description": "",
       "name": "Final Awakening"
     },
     "potential2": {
-      "description": "Talent <@ba.key>Essence Disintegration</> improved: When the Endministrator gains the ATK buff, other allied operators gain half of this ATK buff.",
+      "description": "",
       "name": "Reflection of Authority"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

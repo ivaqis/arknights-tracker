@@ -8,7 +8,7 @@
       "Stile di vita"
     ],
     "behaviourUnavailableTags": [
-      "Estroversione"
+      "Estroversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Seš'qa",
     "expertTags": [
@@ -127,7 +127,7 @@
       "name": "Arsenale dello zero assoluto"
     },
     "potential3": {
-      "description": "Abilità combo <@ba.key>Divoratrice dell'inverno</> e abilità suprema <@ba.key>Servizi di sorveglianza</> migliorate: il moltiplicatore danni aumenta di <@ba.vup>{atk_scale2:0.00}</> volte rispetto all'originale.",
+      "description": "Abilità combo <@ba.key>Divoratrice dell'inverno</> e abilità suprema <@ba.key>Servizi di sorveglianza</> migliorate: il moltiplicatore danni aumenta a <@ba.vup>{atk_scale2:0.00}</> volte rispetto all'originale.",
       "name": "Signora dell'inverno"
     },
     "potential4": {
@@ -135,7 +135,7 @@
       "name": "Risveglio sincero"
     },
     "potential5": {
-      "description": "Abilità di combattimento <@ba.key>Lascito esoterico di Seš'qa</> migliorata: la quantità di PA <#ba.return>ripristinata</> aumenta di un ulteriore <@ba.vup>{atb:0}</>; il moltiplicatore ATT aggiuntivo del miraggio aumenta di <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità di combattimento <@ba.key>Lascito esoterico di Seš'qa</> migliorata: la quantità di PA <#ba.return>ripristinata</> aumenta di un ulteriore <@ba.vup>{atb:0}</>; il moltiplicatore ATT aggiuntivo del miraggio aumenta a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale.",
       "name": "L'inverno sta tornando"
     }
   },

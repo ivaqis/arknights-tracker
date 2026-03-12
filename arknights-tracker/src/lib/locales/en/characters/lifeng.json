@@ -9,7 +9,7 @@
       "Fine Arts"
     ],
     "behaviourUnavailableTags": [
-      "Outgoing"
+      "Outgoing (SYSTEM ONLY, not visible in-game)"
     ],
     "blocTag": "Hongshan Academy of Sciences (HAS)",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "Additional ATK Stagger"
       },
       "name": "Heart of the Unmoving",
-      "description": "Unleashes an aspect that slams an Immovable Vajra to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in a large area of effect, then enemies are drawn toward the center of the area. After a while, enemies still within the vajra slam area of effect will suffer another massive <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</>. \nIf the skill <#ba.consume>consumes</> a <#ba.combo>Link</>, it deals additional massive <@ba.pd>Physical DMG</>."
+      "description": ""
     },
     "indicator": {
       "levels": [

@@ -8,7 +8,7 @@
       "Стиль жизни"
     ],
     "behaviourUnavailableTags": [
-      "Экстраверт"
+      "Экстраверт (СИСТЕМНОЕ СООБЩЕНИЕ, не отображается в игре)"
     ],
     "blocTag": "Сеш’ка",
     "expertTags": [
@@ -50,7 +50,7 @@
     "comboSkill": {
       "comboSkill": {
         "iceShardDmgMultiplier": "Множитель УРН ледяного осколка",
-        "slashBaseDmgMultiplier": "Базовый множитель УРН рубящего удара",
+        "slashBaseDmgMultiplier": "Множитель базового УРН рубящего удара",
         "slashStagger": "Ошеломление рубящего удара",
         "bonusDmgMultiplierPerInflictionStack": "Множитель бонусного УРН за заряд поражения",
         "baseUltimateEnergyGain": "Базовое накопление суперэнергии",

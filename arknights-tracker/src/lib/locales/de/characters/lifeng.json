@@ -6,14 +6,14 @@
       "Verbunden"
     ],
     "behaviourHateTags": [
-      "Schönen Künste"
+      "Schöne Künste"
     ],
     "behaviourUnavailableTags": [
-      "Extrovertiert"
+      "Extrovertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
     ],
     "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
     "expertTags": [
-      "Beweglichkeit",
+      "Beweglich-\nkeit",
       "Natürliche Hintergrundgeschichte"
     ],
     "giftPreferTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "Zusätzliches ANG-Taumeln"
       },
       "name": "Herz des Regungslosen",
-      "description": "Entfesselt einen Aspekt, der einen Unbeweglichen-Vajra-Schlag ausführt, um allen Gegnern in einem großen Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen und dann alle Gegner in die Mitte des Bereichs zu ziehen. Nach einer Weile erleiden Gegner, die sich noch im Wirkungsbereich des Vajra-Schlags befinden, erneut massiven <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</>. \nFalls die Fertigkeit eine <#ba.combo>Verbunden</>-Kumulierung <#ba.consume>verbraucht</>, wird ein weiterer Treffer ausgeführt, der massiven <@ba.pd>Physischen SDN</> verursacht."
+      "description": ""
     },
     "indicator": {
       "levels": [

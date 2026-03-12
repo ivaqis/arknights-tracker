@@ -9,7 +9,7 @@
       "Sport"
     ],
     "behaviourUnavailableTags": [
-      "Estroversione"
+      "Estroversione (SOLO SISTEMA, non visibile nel gioco)"
     ],
     "blocTag": "Cabala della Tranquillità",
     "expertTags": [
@@ -87,8 +87,8 @@
     },
     "talent2": {
       "levels": [
-        "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'abilità suprema <#ba.dispel>annulla</> <#ba.crystonchar>Afflizione da ghiaccio</> e <#ba.frozenonchar>Solidificazione</> dall'intera squadra.",
-        "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'abilità suprema <#ba.dispel>annulla</> <#ba.crystonchar>Afflizione da ghiaccio</> e <#ba.frozenonchar>Solidificazione</> dall'intera squadra."
+        "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'abilità suprema <#ba.dispel>dissolve</> <#ba.crystonchar>Afflizione da ghiaccio</> e <#ba.frozenonchar>Solidificazione</> dall'intera squadra.",
+        "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'abilità suprema <#ba.dispel>dissolve</> <#ba.crystonchar>Afflizione da ghiaccio</> e <#ba.frozenonchar>Solidificazione</> dall'intera squadra."
       ],
       "name": "Protocollo di congelamento"
     },
@@ -133,7 +133,7 @@
       "name": "Rilascio graduale"
     },
     "potential5": {
-      "description": "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'effetto di <#ba.enhance>Amplificazione</> aumenta di <@ba.vup>{atk_up:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità suprema <@ba.key>Sovraccarico energetico</> migliorata: l'effetto di <#ba.enhance>Amplificazione</> aumenta a <@ba.vup>{atk_up:0.0}</> volte rispetto all'originale.",
       "name": "Ricorsività controllata"
     }
   },

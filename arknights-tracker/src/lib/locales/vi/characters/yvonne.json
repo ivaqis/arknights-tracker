@@ -9,7 +9,7 @@
       "Thể Thao"
     ],
     "behaviourUnavailableTags": [
-      "Hướng Nội"
+      "Hướng Nội (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
     ],
     "blocTag": "Tập Đoàn Endfield",
     "expertTags": [
@@ -28,22 +28,22 @@
   "skills": {
     "basicAttack": {
       "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
-        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
-        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
-        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
-        "batkSeq5Multiplier": "Hệ Số Nhân Chuỗi Công CB 5",
-        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
       },
       "name": "Kích Hoạt Nồng Nhiệt",
-      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi ít Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN."
     },
     "battleSkill": {
       "battleSkill": {
         "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
         "dmgMultiplierOfSolidificationApplied": "Hệ Số ST của Hiệu Ứng Đông Cứng",
-        "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm Theo Số Cộng Dồn Nhiễm",
+        "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm/Tầng Nhiễm",
         "stagger": "Suy Sụp",
         "ultimateEnergyFromSolidificationApplied": "Năng Lượng Tuyệt Kỹ từ Hiệu Ứng Đông Cứng",
         "additionalUltimateEnergyGainPerInflictionStack": "Tăng Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm"
@@ -61,35 +61,35 @@
         "additionalUltimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ Bổ Sung"
       },
       "name": "Thiết Bị Đóng Băng υ37",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi đặc vụ được điều khiển khi tung <#ba.lastcombo>Kết Liễu</> vào kẻ địch đang <#ba.frozen>Đông Cứng</>. \nLập tức triển khai Băng Bé Bỏng cạnh mục tiêu. Trong thời gian có hiệu lực, Băng Bé Bỏng liên tục phóng năng lượng để tấn công kẻ địch gần đó, gây <@ba.cryst>ST Băng</> và <@ba.key>kéo</> kẻ địch về phía nó. Sau khi Băng Bé Bỏng hết hiệu lực, nó phát nổ để gây <#ba.frozen>Đông Cứng</> và gây <@ba.cryst>ST Băng</> lên kẻ địch gần đó.\nSau khi KN liên hoàn thành công đánh trúng kẻ địch, Yvonne sẽ được cộng thêm Năng Lượng Tuyệt Kỹ. Hiệu ứng Tăng Năng Lượng Tuyệt Kỹ này chỉ có thể kích hoạt 1 lần, ngay cả khi kỹ năng trúng nhiều kẻ địch."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển khi tung <#ba.lastcombo>Đòn Dứt Điểm</> vào kẻ địch đang <#ba.frozen>Đông Cứng</>.\nLập tức triển khai Băng Bé Bỏng cạnh mục tiêu. Trong thời gian có hiệu lực, Băng Bé Bỏng liên tục phóng năng lượng để tấn công kẻ địch gần đó, gây <@ba.cryst>ST Băng</> và <@ba.key>kéo</> kẻ địch về phía nó. Sau khi Băng Bé Bỏng hết hiệu lực, nó phát nổ để gây <#ba.frozen>Đông Cứng</> và gây <@ba.cryst>ST Băng</> lên kẻ địch gần đó.\nSau khi KN liên hoàn thành công đánh trúng kẻ địch, Yvonne sẽ được cộng thêm Năng Lượng Tuyệt Kỹ. Hiệu ứng Tăng Năng Lượng Tuyệt Kỹ này chỉ có thể kích hoạt 1 lần, ngay cả khi kỹ năng trúng nhiều kẻ địch."
     },
     "ultimate": {
       "ultimate": {
         "durationS": "Thời Gian Hiệu Lực (giây)",
-        "batkDmgMultiplier": "Hệ Số ST Công CB",
-        "poweredAtkDmgMultiplier": "Hệ Số ST Tăng Cường Tấn Công",
+        "batkDmgMultiplier": "Hệ Số ST Đòn Đánh Thường",
+        "enhancedFinalStrikeDmgMultiplier": "Hệ Số ST Đòn Dứt Điểm Cường Hóa",
         "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
-        "enhancedAtkStagger": "Cường Hóa Suy Sụp do Tấn Công",
+        "enhancedFinalStrikeStagger": "Cường Hóa Suy Sụp Do Đòn Dứt Điểm",
         "maxStacks": "Số Lần Cộng Dồn Tối Đa",
         "criticalRateBoostPerStack": "Tăng Tỷ Lệ Bạo Kích/Tầng",
         "criticalDmgBoostAtMaxStacks": "Tăng ST Bạo Kích khi đạt Số Tầng Tối Đa"
       },
       "name": "Xạ Thủ Băng Tuyết",
-      "description": "Kỹ năng này lập tức triển khai robot hỗ trợ Tink-a-Bella và biến Yvonne thành đặc vụ được điều khiển.\nTạm thời <@ba.key>cường hóa</> Công CB của Yvonne. Mỗi chuỗi Công CB thực hiện sẽ cộng 1 tầng buff Tỷ Lệ Bạo Kích. Sau khi số tầng đạt mức tối đa, Yvonne cũng nhận buff ST Bạo Kích. Khi kỹ năng sắp kết thúc, đòn Công CB cuối cùng của Yvonne sẽ trở thành <#ba.lastcombo>Kết Liễu</> gây <@ba.cryst>ST Băng</> cực lớn.\nNếu kẻ địch đang <#ba.frozen>Đông Cứng</>, Yvonne sẽ thực hiện tấn công bổ sung' để gây <@ba.cryst>ST Băng</> và sau đó <#ba.consume>tiêu hao</> hiệu ứng <#ba.frozen>Đông Cứng</> của kẻ địch."
+      "description": "Kỹ năng này lập tức triển khai người máy hỗ trợ Tink-a-Bella và biến Yvonne thành cán viên đang điều khiển.\nTạm thời <@ba.key>cường hóa</> Đòn Đánh Thường của Yvonne. Mỗi chuỗi Đòn Đánh Thường cường hóa thực hiện sẽ cộng 1 tầng buff Tỷ Lệ Bạo Kích. Sau khi số tầng đạt mức tối đa, Yvonne cũng nhận buff ST Bạo Kích. Khi kỹ năng sắp kết thúc, đòn Đòn Đánh Thường cường hóa cuối cùng của Yvonne sẽ trở thành đòn cường hóa <#ba.lastcombo>Đòn Dứt Điểm</> gây <@ba.cryst>ST Băng</> lớn.\nNếu kẻ địch đang <#ba.frozen>Đông Cứng</>, Yvonne sẽ thực hiện tấn công bổ sung để gây <@ba.cryst>ST Băng</> và sau đó <#ba.consume>giải trừ</> hiệu ứng <#ba.frozen>Đông Cứng</> của kẻ địch."
     },
     "indicator": {
       "levels": [
-        "Trí Tuệ Đặc Vụ +10.",
-        "Trí Tuệ Đặc Vụ +15.",
-        "Trí Tuệ Đặc Vụ +15.",
-        "Trí Tuệ Đặc Vụ +20."
+        "Trí Tuệ Cán Viên +10.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +15.",
+        "Trí Tuệ Cán Viên +20."
       ],
       "name": "Nhạy Bén"
     },
     "talent1": {
       "levels": [
-        "KN chiến đấu <@ba.key>Bom β</> được nâng cấp: Sau khi gây hiệu ứng <#ba.frozen>Đông Cứng</>, đòn Công CB tiếp theo sẽ trở thành <#ba.lastcombo>Đòn Kết Liễu</>.",
-        "KN chiến đấu <@ba.key>Brr-Brr-Bom β</> được cải thiện: Sau khi áp dụng <#ba.frozen>Đông Cứng</>, đòn Công CB tiếp theo sẽ trực tiếp chuyển thành <#ba.lastcombo>Đòn Kết Liễu</> với ST Gây Ra <@ba.vup>+{dmg_up:0%}</>."
+        "KN chiến đấu <@ba.key>Bom β</> được nâng cấp: Sau khi gây hiệu ứng <#ba.frozen>Đông Cứng</>, Đòn Đánh Thường tiếp theo sẽ trở thành <#ba.lastcombo>Đòn Dứt Điểm</>.",
+        "KN chiến đấu <@ba.key>Brr-Brr-Bom β</> được cải thiện: Sau khi áp dụng <#ba.frozen>Đông Cứng</>, Đòn Đánh Thường tiếp theo sẽ trực tiếp chuyển thành <#ba.lastcombo>Đòn Dứt Điểm</> với ST Gây Ra <@ba.vup>+{dmg_up:0%}</>."
       ],
       "name": "Bão Công Nghệ"
     },
@@ -109,14 +109,14 @@
     },
     "baseSkill2": {
       "levels": [
-        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các đặc vụ trong đó xuống 14%",
-        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các đặc vụ trong đó xuống 18%"
+        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 14%",
+        "Khi phân công vào Buồng Phát Triển, làm chậm Giảm Tâm Trạng của tất cả các cán viên trong đó xuống 18%"
       ],
       "name": "Người Sành Điệu"
     },
     "files": {
       "main": "<@profile.key>MẬT DANH: Yvonne \nGIỚI TÍNH: Nữ \nXÁC MINH: Tập Đoàn Endfield \nNGÀY SINH: 9 Tháng 5 \nCHỦNG TỘC: Vouivre \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Cơ Bản \nKN CHIẾN ĐẤU: Thường \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc</>",
-      "humanResources": "<@profile.key>Đặc Vụ Yvonne được Crowe của Công Đoàn giới thiệu cho ông Andre. Cô ấy gia nhập Bộ Phận Chuyên Gia Kỹ Thuật của Tập Đoàn Endfield thông qua kênh \"Tuyển Dụng Tài Năng Đặc Biệt\". Hiện Yvonne đang dẫn dắt nhiều dự án nghiên cứu về Æther, Nhiễm Khuẩn và Robot Thanh Tẩy Tự Động Xuyên Æther liên quan đến hai lĩnh vực trên. Với năng lực nghiên cứu khoa học xuất sắc, cô đã nhận được khoản trợ cấp và nguồn lực bổ sung để hỗ trợ các đề tài nghiên cứu độc lập. \n\nTrong quá trình điều tra lý lịch, nhiều người miêu tả Yvonne là một kỹ sư mang dấu ấn \"nổi loạn\" rõ rệt. Tuy nhiên tôi hoàn toàn phản đối nhận định này. À mà điều này không liên quan gì đến những miếng nhãn dán laser cô ấy dán trên khung máy của tôi cả. \nTheo ý kiến của tôi, vấn đề cốt lõi nằm ở việc phần lớn mọi người không thể theo kịp tốc độ tư duy của cô ấy. Kết quả là bề ngoài sẽ giống như cô ấy gặp vấn đề về phối hợp nhóm. Ngoài ra, Yvonne khá tự tin với phong cách cá nhân mà cô đã định hình cho mình sau nhiều năm nghiên cứu khoa học... Những lần vi phạm của cô ấy chưa bao giờ là cố ý. Đó thường là phản xạ bản năng khi có ai hoặc điều gì đó cố gắng can thiệp vào lối suy nghĩ hoặc cách thể hiện của cô ấy. \nTuy nhiên, những bộ trang phục rực rỡ, các mảng graffiti phóng khoáng, và các thiết kế khung máy phức tạp nhưng cực kỳ thực dụng đều là những phương thức thể hiện mà cô luôn duy trì, trong một thế giới đầy rẫy luật lệ và giới hạn, những người giữ vững bản sắc của mình sẽ luôn trở nên khác biệt. May mắn thay, Endfield không phải là nơi bị chi phối bởi những quy tắc cứng nhắc. Tầm nhìn của chúng ta là thay đổi thế giới này, chứ không phải duy trì nguyên trạng bằng cách bám chặt luật lệ. \nHơn nữa, khi mọi người gọi Yvonne là \"kẻ nổi loạn\", họ thường nói điều đó với một nụ cười\n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
+      "humanResources": "<@profile.key>Cán Viên Yvonne được Crowe của Công Đoàn giới thiệu cho ông Andre. Cô ấy gia nhập Đội Chuyên Viên Kỹ Thuật của Tập Đoàn Endfield thông qua kênh \"Tuyển Dụng Thiên Phú Đặc Biệt\". Hiện Yvonne đang dẫn dắt nhiều dự án nghiên cứu về Æther, Nhiễm Khuẩn và Robot Thanh Tẩy Tự Động Xuyên Æther liên quan đến hai lĩnh vực trên. Với năng lực nghiên cứu khoa học xuất sắc, cô đã nhận được khoản trợ cấp và nguồn lực bổ sung để hỗ trợ các đề tài nghiên cứu độc lập. \n\nTrong quá trình điều tra lý lịch, nhiều người miêu tả Yvonne là một kỹ sư mang dấu ấn \"nổi loạn\" rõ rệt. Tuy nhiên tôi hoàn toàn phản đối nhận định này. À mà điều này không liên quan gì đến những miếng nhãn dán laser cô ấy dán trên khung máy của tôi cả. \nTheo ý kiến của tôi, vấn đề cốt lõi nằm ở việc phần lớn mọi người không thể theo kịp tốc độ tư duy của cô ấy. Kết quả là bề ngoài sẽ giống như cô ấy gặp vấn đề về phối hợp nhóm. Ngoài ra, Yvonne khá tự tin với phong cách cá nhân mà cô đã định hình cho mình sau nhiều năm nghiên cứu khoa học... Những lần vi phạm của cô ấy chưa bao giờ là cố ý. Đó thường là phản xạ bản năng khi có ai hoặc điều gì đó cố gắng can thiệp vào lối suy nghĩ hoặc cách thể hiện của cô ấy. \nTuy nhiên, những bộ trang phục rực rỡ, các mảng graffiti phóng khoáng, và các thiết kế khung máy phức tạp nhưng cực kỳ thực dụng đều là những phương thức thể hiện mà cô luôn duy trì, trong một thế giới đầy rẫy luật lệ và giới hạn, những người giữ vững bản sắc của mình sẽ luôn trở nên khác biệt. May mắn thay, Endfield không phải là nơi bị chi phối bởi những quy tắc cứng nhắc. Tầm nhìn của chúng ta là thay đổi thế giới này, chứ không phải duy trì nguyên trạng bằng cách bám chặt luật lệ. \nHơn nữa, khi mọi người gọi Yvonne là \"kẻ nổi loạn\", họ thường nói điều đó với một nụ cười\n— Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
       "file1": "<@profile.key>TÀI LIỆU: Danh sách vật phẩm thất lạc \nMột túi laser dẻo, in hình graffiti mặt cười lớn thân thiện, bên trong có một túi nhỏ đựng hạt thơm. \nMột lọ sơn móng tay, chứa sắc tố nhạy cảm với môi trường, thay đổi màu sắc tùy theo nồng độ Æther xung quanh. \nMột món đồ chơi trẻ em được ghép từ ốc vít, trang bị bánh răng, trục và các chi tiết cơ khí khác. Hình dáng gợi nhớ đến một cấu trúc lục giác quen thuộc và được phủ lớp sơn màu tươi sáng. \nMột bộ thẻ laser lưu niệm, đây có vẻ là phần thưởng đặc biệt dành cho những người chiến thắng sự kiện Phòng Thủ Thành Trì Talos-II lần thứ nhất. Mặt sau các thẻ in chân dung của một Vouivre. \nMột máy đếm Æther thu nhỏ, thiết bị này có hình dạng như một chiếc vòng cổ. Được tích hợp thuật toán chưa công bố và có độ nhạy cao hơn hẳn các sản phẩm hiện có trên thị trường. \nNửa hộp bánh su kem (vị hoa kiều mạch cay), món ăn vặt thịnh hành trên thị trường với hương vị khá đặc biệt (GHI CHÚ: Một nửa hộp tương tự được thấy trên bàn của Giám Sát Viên Perlica). \nMột bộ tua vít Kỹ Sư Giỏi phiên bản hồng anh đào đặc biệt, được bảo quản tốt và không rỉ sét. \nNguyệt San MARTHE số mới nhất vừa phát hành hôm nay. Tạp chí thời trang này giới thiệu các bộ trang phục thời thượng nhất ở Talos-II (khoảng hai tuần trước tôi nghĩ đã thấy Yvonne mặc bộ đồ xuất hiện trên bìa tạp chí này... Nếu cô ấy luôn dẫn đầu xu hướng, có lẽ nào cô chính là Nhà Thiết Kế Bóng Tối huyền thoại?)\nTIN NHẮN: Yvonne, tôi biết thử nghiệm nguyên mẫu là quan trọng nhưng hãy nhớ đến nhận lại đồ thất lạc của mình. </>",
       "file2": "<@profile.key>TÀI LIỆU: Điều tra về vụ cháy \nTÓM TẮT VỤ VIỆC: Vào tối ngày hôm qua, một đám cháy bùng phát tại phòng đọc sách tầng hai của một căn hộ nằm ở ranh giới giữa ngoại ô và khu trung tâm. Phần lớn đồ nội thất và quần áo phong cách cổ điển đã bị hư hỏng. Ngay lập tức đám cháy được khống chế trong phạm vi ngôi nhà. Không có ghi nhận bất kỳ thương vong nào, bộ sưu tập sách trong thư viện không bị ảnh hưởng. \n\n1. Điều tra tại hiện trường \nCửa sổ thư viện bị khóa từ bên trong, ổ khóa không có dấu hiệu hư hại. Thu thập được hai bộ dấu vân tay. Có dấu chân của người làm vườn phụ trách cắt tỉa cây ở gần khu vườn. Đám cháy bắt đầu từ chiếc tủ áo chạm khắc. \n\n2. Kiểm tra dữ liệu giám sát \nVào khoảng 2000 giờ tối cùng ngày, chủ nhà và con gái trò chuyện khá lâu trong phòng khách. Sau đó vào 2100 giờ, cả hai cùng đi vào phòng đọc sách. \n\n3. Lời khai của nhân chứng \nChủ nhà: \"Thật sự xin lỗi vì đã làm phiền ngài phải tới tận đây... Nhưng mọi thứ đều đã được kiểm soát, người ta phải đốt phòng đọc sách mỗi vài thế kỷ một lần.\" \nVợ của chủ nhà: \"Chồng tôi chuẩn bị căn phòng đó từ trước khi con bé ra đời. Ông ấy muốn nó kế thừa văn hóa, văn học và nghệ thuật cổ, cũng như gieo mầm những giá trị ấy trên vùng đất mới. Tôi hy vọng nó có thể lập một nhóm nghiên cứu phục hưng văn hóa... Sự cố lần này thật đáng tiếc.\" \nCon gái của chủ nhà: \"Ờm... Chúng tôi thực ra đã áp dụng kiểm soát chính xác nên hầu như không bị thiệt hại gì cả! Vậy tại sao lại bị điều tra?\" \nGia sư: \"Tôi không còn đưa được chỉ dẫn nào hữu ích cho tiểu thư nữa. Ba lê và lễ nghi không khiến cô ấy hứng thú, cô ấy chỉ chịu chơi piano. Kể cả sức mạnh của trăm con Quái Thú Chở Hàng cũng không ép được cô ấy làm điều mình không thích... Giờ thì cô ấy đang dạy tôi sáng tác nhạc Neo-Talosian, cũng khá thú vị. À, tôi cũng đang học sửa đồ điện tử từ cô ấy nữa. Theo tôi nghĩ thì cô ấy có tố chất của một kỹ sư.\" \n\n4. Xử lý sau sự cố \nSau khi xác minh các bằng chứng, chúng tôi kết luận đây là hành vi đốt cháy có kế hoạch trong phạm vi cá nhân. Chủ nhà đã bị khiển trách và phạt tiền. Vụ việc không cần phải báo cáo lên ban quản lý cộng đồng. \n\n5. Lời khai bổ sung từ chủ nhà \n\"'Được thôi,' tôi nói, 'nếu con đã chọn được con đường của mình thì ta cũng đốt luôn mấy thứ không cần thiết đó.' Lúc ấy nó nhìn tôi thật lâu. Khi cả hai nhận ra chẳng ai đùa thì nó lập tức reo lên. Nó nói gì đó về việc tạo một màn pháo hoa khổng lồ và lấy ra mấy thứ máy móc mà nó chế... Có lẽ gọi là thiết bị bay không người lái, dù sao thì mấy thứ đó có thể phun lửa và băng.\" \n\"Tôi cùng nó nhìn thư viện bốc cháy. Ngọn lửa cam sáng nhấp nháy sau khe cửa. Tôi nghe tiếng kệ gỗ nổ lách tách, bùng nổ và rồi vỡ ra khi ngọn lửa nuốt trọn.\" \n\"Thú thật là tôi cũng có chút đau lòng. Số sách này tuy không phải cổ vật nhưng tôi đã tốn không ít tiền để sưu tầm... Nhưng đành chịu thôi, đó là cái giá tôi phải trả cho nhiều năm bắt nó làm trái ý mình. Tôi buộc phải thể hiện lập trường.\" \n\"Nhưng rồi hai con drone đó bay vo ve ra và mang theo số sách. Nó cười khúc khích và bảo rằng chúng ta chỉ đơn giản là khác \"gu\" thôi, không cần thiết phải phá hủy. Nó còn nói rằng việc nó thích văn học Làn Sóng Talos-II Mới không có nghĩa là nó ghét những câu chuyện xưa. Thậm chí nó còn bảo đã thuộc lòng những câu chuyện ấy.\" \n\"Tôi nói gì rồi nhỉ...? Xin lỗi. Tôi mải nhớ lại mùi hương của ngọn lửa ấy. À đúng rồi...\" \n\"Tôi nói với con bé, 'Chúng ta có thể biến chỗ này thành một xưởng chế tạo đàng hoàng. Mà nếu có thời gian thì con làm cho ta một con drone nhé, loại có thể châm xì gà ấy.'\" </>",
       "file3": "<@profile.key>\"Một nhóm thương nhân sống trên hành tinh thứ tư mà Kỹ Sư Bé Nhỏ ghé thăm. Họ gán số cho mỗi ngôi sao, rồi khóa các con số đó trong két sắt...\" \n\"Nhiều học giả sống trên hành tinh thứ sáu được Kỹ Sư Bé Nhỏ ghé thăm... Kỹ Sư Bé Nhỏ nhìn thấy cặp kính dày cộp của họ bèn lập tức bỏ chạy.\" \n\"Kỹ Sư Bé Nhỏ nói lời tạm biệt Cự Thú Khổng Lồ của Ngành Công Nghiệp. Cậu hét vào thung lũng núi: \"Hãy làm bạn nhé! TÔI CÔ ĐƠN LẮM!\" Nhưng núi chỉ đáp lại bằng tiếng vọng của tiếng vọng của tiếng vọng...\" \n\"Và cuối cùng, Kỹ Sư Bé Nhỏ gục xuống trong cát trắng... Rồi, ờm, đúng rồi! Vèo một cái, cậu bật dậy phủi sạch cát trên người. Sau đó cậu vẫy tay chào bạn bè, mọc ra một đôi cánh lấp lánh rồi bay về phía những vì sao!\" \n\n\"Có lẽ câu chuyện này được viết bởi một tác giả đến từ Ga... đúng nơi quê hương của ta trước kia. Truyện Terran thật thú vị, miễn là không phải lịch sử! Được rồi, lũ nhóc nghịch ngợm, hôm nay đến đây thôi. Lần sau, chúng ta sẽ...\" \n\"Cô Yvonne...\" \n\"Ồ... Trông con buồn quá, con làm sao thế?\" \n\"Kỹ Sư Bé Nhỏ chắc là buồn bã lắm... Cậu ấy không thể tìm thấy nhà mình ở đâu cả! Cậu ấy cũng không có bạn bè, thật cô độc làm sao...\" \n\"Với lại sao cậu ấy lại bay đi thế ạ? Có phải... có phải là vì cậu bị Aggeloi nuốt chửng không ạ?! Người lớn cứ nói dối con chuyện này suốt...\" \nYvonne chớp mắt vài lần rồi lấy từ túi áo ra một món đồ chơi ghép từ linh kiện kim loại. Thứ nhỏ bé đó trông khá giống Tata, lấp lánh dưới ánh mặt trời như những hạt bụi kim cương. \n\"Kỹ Sư Bé Nhỏ chỉ là không tìm được người bạn đồng hành phù hợp, nhưng điều đó không có nghĩa là cậu ấy cô đơn! Nhìn này! Đây là người bạn đầu tiên mà cậu ấy tự chế tạo. Cậu ấy còn tạo ra nhiều đồng đội thú vị khác nữa. Có người làm kem, có người bắn pháo hoa... Tất cả đều là những người bạn trung thành! Và rồi...\" \n\nYvonne ngẩng đầu nhìn theo luồng ánh sáng. Mây chầm chậm trôi trên nền trời xanh lam đồng nhất. Cô tưởng tượng ra Dijiang đang thong dong bay trên quỹ đạo cao tít phía trên bầu trời. Yvonne hạ ánh mắt nhìn lũ trẻ của Thung Lũng IV, khuôn mặt chúng sáng bừng hy vọng mong chờ những câu chuyện mới. Hình bóng con tàu, đôi cánh lấp lánh của Kỹ Sư Bé Nhỏ, ánh sao xa xôi cách nửa tỉ năm ánh sáng và một thế giới rực rỡ hài hòa lướt qua võng mạc cô. \nYvonne cảm thấy nhẹ nhõm. Nhịp kể chuyện trở nên nhanh và vui tươi hơn. \n\"Và cuối cùng, chẳng hề có bóng tối như con tưởng tượng! Cậu Kỹ Sư Bé Nhỏ rời đi vì đã kết thêm nhiều bạn mới, nhận được lời mời từ những vì sao sáng nhất và có một nơi ở mới! Nào, giờ lau khô nước mắt đi đã, cô sẽ thưởng thêm cho con một câu chuyện về Endministrator nhé! Ừm... Thế con muốn nghe chuyện nào? Chuyện Endministrator đập vỡ mặt trời, hay chuyện Endministrator biến một tinh thể Originium thành một triệu binh lính?\" \n\"Đập vỡ mặt trời... và một triệu binh lính?! Endmin ngầu quá! Những chuyện này có thật không ạ?\"\n\"Hừm. Chuyện này có thật không...? Chắc cô sẽ hỏi thẳng vị anh hùng đó sau buổi này!\" </>",
@@ -133,11 +133,11 @@
       "name": "Tuyệt Tác Hoàn Mỹ"
     },
     "potential3": {
-      "description": "Tài năng <@ba.key>Điểm Đóng Băng</> được cải thiện: Khi đối đầu với kẻ địch có hiệu ứng <@ba.cryst>Nhiễm Băng</>, ST Bạo Kích Gây Ra <@ba.vup>+{inflict_up:0%}</>; hiệu ứng này cũng được nhân đôi khi đối đầu với kẻ địch có hiệu ứng <@ba.cryst>Đông Cứng</>.",
+      "description": "Thiên phú <@ba.key>Điểm Đóng Băng</> được cải thiện: Khi đối đầu với kẻ địch có hiệu ứng <@ba.cryst>Nhiễm Băng</>, ST Bạo Kích Gây Ra <@ba.vup>+{inflict_up:0%}</>; hiệu ứng này cũng được nhân đôi khi đối đầu với kẻ địch có hiệu ứng <@ba.cryst>Đông Cứng</>.",
       "name": "Sức Mạnh Cơ Khí"
     },
     "potential4": {
-      "description": "KN chiến đấu <@ba.key>Brr-Brr-Bom β</> được cải thiện: Nếu lần nổ đầu tiên chỉ trúng một kẻ địch, sẽ <#ba.return>hồi phục</> <@ba.vup>{atb_return:0}</> KN.",
+      "description": "KN chiến đấu <@ba.key>Brr-Brr-Bom β</> được cải thiện: Nếu vụ nổ chỉ trúng một kẻ địch, sẽ <#ba.return>hồi</> <@ba.vup>{atb_return:0}</> KN.",
       "name": "Tâm Lý Nổi Loạn"
     },
     "potential5": {

@@ -110,7 +110,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Abilità suprema <@ba.key>Momento ultraperformante</> migliorata: gli effetti di <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> aumentando di <@ba.vup>{rate:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità suprema <@ba.key>Momento ultraperformante</> migliorata: gli effetti di <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> aumentano a <@ba.vup>{rate:0.0}</> volte rispetto all'originale.",
       "name": "Talento per le Arti"
     },
     "potential2": {

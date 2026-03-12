@@ -9,7 +9,7 @@
       "Sport"
     ],
     "behaviourUnavailableTags": [
-      "Introvertiert"
+      "Introvertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -67,15 +67,15 @@
       "ultimate": {
         "durationS": "Dauer (Sek.)",
         "batkDmgMultiplier": "STD-ANG-SDN-Multiplikator",
-        "poweredAtkDmgMultiplier": "SDN-Multiplikator für mächtiger ANG",
+        "enhancedFinalStrikeDmgMultiplier": "Verbesserter SDN-Multiplikator bei Abschlussangriff",
         "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
-        "enhancedAtkStagger": "Verbessertes ANG-Taumeln",
+        "enhancedFinalStrikeStagger": "Verbessertes Taumeln bei Abschlussangriff",
         "maxStacks": "Max. Kumulierungen",
         "criticalRateBoostPerStack": "Kritische-Rate-Boost pro Kumulierung",
         "criticalDmgBoostAtMaxStacks": "Kritischer-SDN-Boost bei max. Kumulierungen"
       },
       "name": "Kryo-Pistolero",
-      "description": "Setzt sofort den Unterstützungsbot Nas-E-Weis ein und macht Yvonne zur gesteuerten Operatorin.\n<@ba.key>Verbessert</> für kurze Zeit Yvonnes Standardangriff (STD-ANG). Jede STD-ANG-Sequenz gewährt eine Kumulierung des Kritische-Rate-Buffs. Mit max. Kumulierungen erhält Yvonne außerdem einen Buff für ihren Kritischen Schaden. Wenn die Fertigkeit fast abläuft, wird Yvonnes letzter STD-ANG zu einem <#ba.lastcombo>Abschlussangriff</>, der massiven <@ba.cryst>Kryo-SDN</> zufügt.\nWenn der Gegner <#ba.frozen>Erstarrt</> ist, führt Yvonne einen zusätzlichen Angriff aus, der <@ba.cryst>Kryo-SDN</> verursacht und dann die <#ba.frozen>Erstarrung</> des Gegners <#ba.consume>verbraucht</>."
+      "description": "Setzt sofort den Unterstützungsbot Nas-E-Weis ein und macht Yvonne zur gesteuerten Operatorin.\n<@ba.key>Verbessert</> für kurze Zeit Yvonnes Standardangriff (STD-ANG). Jede verbesserte STD-ANG-Sequenz gewährt eine Kumulierung des Kritische-Rate-Buffs. Mit max. Kumulierungen erhält Yvonne außerdem einen Buff für ihren Kritischen SDN. Wenn die Fertigkeit fast abläuft, wird Yvonnes letzter verbesserter STD-ANG zu einem verbesserten <#ba.lastcombo>Abschlussangriff</>, der massiven <@ba.cryst>Kryo-SDN</> zufügt.\nWenn der Gegner <#ba.frozen>Erstarrt</> ist, führt Yvonne einen zusätzlichen Angriff aus, der <@ba.cryst>Kryo-SDN</> verursacht und dann die <#ba.frozen>Erstarrung</> des Gegners <#ba.consume>verbraucht</>."
     },
     "indicator": {
       "levels": [
@@ -109,8 +109,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Der Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
-        "Der Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
       ],
       "name": "Modeikone"
     },
@@ -137,7 +137,7 @@
       "name": "Energie-Basteln"
     },
     "potential4": {
-      "description": "Kampffertigkeit <@ba.key>Bibber-Bombe β</> verbessert: Wenn die erste Explosion nur einen Gegner trifft, werden <@ba.vup>{atb_return:0}</> FP <#ba.return>zurückerstattet</>.",
+      "description": "Kampffertigkeit <@ba.key>Bibber-Bombe β</> verbessert: Wenn die Explosion nur einen Gegner trifft, werden <@ba.vup>{atb_return:0}</> FP <#ba.return>zurückerstattet</>.",
       "name": "Rebellische Stimmung"
     },
     "potential5": {

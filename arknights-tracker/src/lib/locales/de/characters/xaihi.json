@@ -2,14 +2,14 @@
   "baseInfo": {
     "tags": [
       "LP-Behandlung",
-      "Kryokumulierung",
+      "Kryo",
       "Verstärken"
     ],
     "behaviourHateTags": [
       "Sport"
     ],
     "behaviourUnavailableTags": [
-      "Extrovertiert"
+      "Extrovertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
     ],
     "blocTag": "Orden der Stille",
     "expertTags": [

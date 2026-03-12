@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Kryo",
+      "Techniken-Empf."
+    ],
+    "behaviourHateTags": [
+      "Schöne Künste"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
+    ],
+    "blocTag": "Qingbo-Palisade",
+    "expertTags": [
+      "Kampftechnik",
+      "Beweglich-\nkeit"
+    ],
+    "giftPreferTags": [
+      "Von Händlern aus Wuling empfohlen"
+    ],
+    "hobbyTags": [
+      "Natur",
+      "Kreatives"
+    ],
+    "raceTag": "Felin"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+      },
+      "name": "ICH HAU DICH AUS DEN LATSCHEN!",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Schießen-SDN-Multiplikator",
+        "shotStagger": "Schuss-Taumeln",
+        "dmgMultiplier1Waterspout": "SDN-Multiplikator (1 Wasserhose)",
+        "waterspoutDurationS": "Dauer: Wasserhose (Sek.)",
+        "spReturnPerWhirlpool": "FP-Rückerstattung pro Strudel",
+        "artsSusceptibility2Waterspouts": "Technik-Empfänglichkeit (2 Wasserhosen)",
+        "artsSusceptibility3Waterspouts": "Technik-Empfänglichkeit (3 Wasserhosen)",
+        "artsSusceptibilityDurationS": "Dauer der Technik-Empfänglichkeit (Sek.)"
+      },
+      "name": "ICH REITE DIE WELLEEEN!",
+      "description": "Tangtang springt aus dem Wasser und feuert aus nächster Nähe einen Schuss ab, der dem Gegner <@ba.cryst>Kryo-SDN</> zufügt und eine <@ba.key>Wasserhose</> erzeugt.\nDas Wirken der Kampffertigkeit verbraucht auch alle <@ba.key>Strudel</> in der Nähe, um zusätzliche <@ba.key>Wasserhosen</> zu erzeugen und auf Basis der Anzahl der erzeugten Wasserhosen FP zu <#ba.return>erstatten</>.\n<@ba.key>Wasserhose</>: Belegt Gegner in Reichweite mit 1 Kumulierung <#ba.crystinflict>Kryo</> und verursacht kontinuierlichen <@ba.cryst>Kryo-SDN</>. Wenn die Kampffertigkeit mehrere <@ba.key>Wasserhosen</> erzeugt, wenden diese auf Gegner zusätzlich <#ba.spellvul>Technik-Empfänglichkeit</> an (allerdings keine weitere Kumulierung <#ba.crystinflict>Kryo</>).\n<@ba.info>Von der Wasserhose verursachter SDN wird als Kampffertigkeits-SDN gewertet.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln",
+        "whirlpoolDurationS": "Dauer: Strudel (Sek.)"
+      },
+      "name": "FLUSS, ZU MIR!",
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.crystinflict>Kryo</> belegt ist oder ihm <#ba.spellburst>Technikexplosion-SDN</> zugefügt wird.\nTangtang verschießt einen mächtigen Strahl, der alle Gegner in seinem Pfad durchdringt, ihnen <@ba.cryst>Kryo-SDN</> zufügt und einen <@ba.key>Strudel</> erzeugt.\n<@ba.info>Es können bis zu 2 Strudel gleichzeitig auf dem Schlachtfeld existieren.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Gesamtmultiplikator für Kontinuierlichen SDN",
+        "oldenStareDurationS": "Dauer: ALTES STARREN (Sek.)",
+        "rogueWaveDmgMultiplier": "Kaventsmann-SDN-Multiplikator",
+        "earlyRogueWaveDmgMultiplier": "Früher Kaventsmann-SDN-Multiplikator",
+        "rogueWaveStagger": "Kaventsmann-Taumeln",
+        "earlyRogueWaveStagger": "Frühes Kaventsmann-Taumeln"
+      },
+      "name": "DER HÄUPTLING SIEHT DICH!",
+      "description": "Tangtang hebt ihre Augenklappe und verschießt aus ihrem Auge ein <@ba.key>ALTES STARREN</>, das Gegner im Wirkungsbereich bewegungsunfähig macht und ihnen kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt.\nEndet die Entwicklung des <@ba.key>ALTEN STARRENS</>, bricht ein Kaventsmann über den Wirkungsbereich herein und fügt allen Gegnern innerhalb des Bereichs massiven <@ba.cryst>Kryo-SDN</> zu.\nWenn der gesteuerte Operator innerhalb des <@ba.key>ALTES STARREN</>-Musters einen Sturzangriff ausführt, endet die Entwicklung vorzeitig und der Kaventsmann wird sofort heraufbeschworen, damit sie noch mehr <@ba.cryst>Kryo-SDN</> verursacht."
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Beweglichkeit +10.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +20."
+      ],
+      "name": "Scharmützler"
+    },
+    "talent1": {
+      "levels": [
+        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch für {duration_talent1buff:0} Sek. an.",
+        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch für {duration_talent1buff:0} Sek. an."
+      ],
+      "name": "Ehrenfamilie"
+    },
+    "talent2": {
+      "levels": [
+        "Wenn du während <@ba.key>ALTES STARREN</> mit dem gesteuerten Operator einen Sturzangriff ausführst, endet dessen Entwicklung vorzeitig und es entsteht eine <@ba.key>Wasserhose</>. Alle <@ba.key>Strudel</> in der Nähe werden verbraucht und in zusätzliche <@ba.key>Wasserhosen</> umgewandelt.\nDie auf diese Weise erzeugten <@ba.key>Wasserhosen</> haben dieselbe Wirkung wie solche, die durch die Kampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> erzeugt wurden, und erhalten SDN <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+        "Wenn du während <@ba.key>ALTES STARREN</> mit dem gesteuerten Operator einen Sturzangriff ausführst, endet dessen Entwicklung vorzeitig und es entsteht eine <@ba.key>Wasserhose</>. Alle <@ba.key>Strudel</> in der Nähe werden verbraucht und in zusätzliche <@ba.key>Wasserhosen</> umgewandelt.\nDie auf diese Weise erzeugten <@ba.key>Wasserhosen</> haben dieselbe Wirkung wie solche, die durch die Kampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> erzeugt wurden, und erhalten SDN <@ba.vup>+{dmg_up_water_ult:0%}</>."
+      ],
+      "name": "Unruhestifter"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
+      ],
+      "name": "Oberhäuptling"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +30 % zu erhöhen."
+      ],
+      "name": "Tochter des Flusses"
+    },
+    "files": {
+      "main": "<@profile.key>DECKNAME: Tangtang\nGESCHLECHT: Weiblich\nAUTHENTIFIZIERUNG: Qingbo-Palisade\nGEB.: 29. November\nSPEZIES: Felin\n[ORIPATHIE-INFEKTIONSSTATUS]\nOripathie-positiv (infiziert), basierend auf ärztlichen Befunden.\n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG]\nPHYSIOLOGISCHE STÄRKE: Standard\nKAMPFFERTIGKEIT: Ausgezeichnet \nTAKTISCHER SCHARFSINN: Normal \nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Ausgezeichnet\n\n„Ich habe mir die Berichte des Krisenteams angesehen. Sie hat erwähnt, dass sie adoptiert wurde, oder? Hmmm … Es stimmt schon, dass viele aufgrund von Katastrophen ihre Familie verloren haben, selbst unter der Obhut der Hongshan-Akademie der Wissenschaften. Die Personalabteilung soll ihre Vorgeschichte unter die Lupe nehmen. Vielleicht erleben wir eine Überraschung.“</>",
+      "humanResources": "<@profile.key>Tangtang ist ein Mitglied und eine führende Stimme der Qingbo-Palisade. Sie hat sich Endfield Industries aus persönlichen Gründen angeschlossen und leitet aktuell die Abteilung, die sich um die Verbindungen zur Qingbo-Palisade kümmert.\n\nOperatorin Tangtang sticht aus dem diversen Personal, das der Endministrator auf die Dijiang eingeladen hat, am meisten hervor. Ich erinnere mich noch an unser erstes Treffen … Verzeihung, ich muss die Aufzeichnung erst von meiner Datenbank abrufen:\n„Klopf! Klopf!“\n„Hey, was macht das Ding hier auf einem großen Schiff? Sieht aus, wie ein dreiköpfiges Eisen-Reißbiest. Irgendwie dumm, wenn man mich fragt …“\n„Operatorin Tangtang, ich bin hier für das Aufnahmegesp… Nein, bitte klopf nicht auf mein Bedienfeld. Ich arbeite für die Personalabteilung von Endfield Industries.“\n„Du gehörst also zur Crew von Finstermaske! Das hättest du früher sagen sollen, altes Eisengesicht! Hier, ich hab was Gutes für meine neue Familie mitgebracht. Bedien dich!“\nNachdem ich wiederholt darauf bestanden hatte, dass ich keinen Bedarf für Tangtang-Zertis, Erze und Juwelen hatte, zog Tangtang begeistert ein ringförmiges Ornament aus natürlichen Materialien aus der Tasche. So etwas in der Art wie ein geflochtener Bambusblumenkranz. Sie legte den Kranz auf eins meiner Bedienfelder und klopfte dann neugierig auf die anderen beiden: „Du bist klüger als dieses Blechspielzeug aus Wuling! Begleite mich doch zur Qingbo-Palisade. Ab sofort bin ich dein Häuptling!“\nMeine Einschätzung in Sachen Tangtang deckt sich mit der ihrer Kollegen: Sie ist fröhlich, geradeheraus und stellt keine Ansprüche. Sie hat ein kindliches Herz voller Leidenschaft und Neugier für alles. Müsste ich ihren Charakter mit wenigen Worten zusammenfassen, würde ich sagen, sie sei ein Kind, das im Begriff ist, erwachsen zu werden. Ich kann mich der Qingbo-Palisade jedoch auf keinen Fall anschließen und Talos-II mit ihr erobern. Das hat nichts mit dem endlosen Stapel an Personalakten zu tun, die ich noch durchgehen muss. Die Unternehmung passt einfach nicht ganz zu den Vorschriften von Endfield.\nUm Verletzungen an Tangtangs Händen zu vermeiden und mir eine „mechanische“ Gehirnerschütterung zu ersparen, muss ich wirklich versuchen, ihr aus dem Weg zu gehen. Seltsamerweise findet sie mich immer wieder.\n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries</>",
+      "file1": "<@profile.key>Nach dem Vorfall bei der Qingbo-Palisade hatten wir mit einer verwirrten, trauernden oder wütenden Operatorin gerechnet. Deshalb hatten wir dafür gesorgt, ihr Trauma gegebenenfalls mit einer psychologischen Intervention zu verringern. Doch als Tangtang via Tele-Protokoll an Bord der Dijiang ankam, strahlte sie uns breit lächelnd an und schien sich pudelwohl zu fühlen.\nAufseherin Perlica erinnerte uns daran, dass Tangtang es trotz der Komplexität ihrer Umgebung geschafft hatte, ihre in alle Winde verstreuten Mitbürger nur durch ihr Charisma zusammenzuführen. Das ist ein Zeichen für ihre Belastbarkeit, aufgrund derer sie erhebliche Verantwortung übernehmen kann.\nUnd tatsächlich erwies sich Tangtang als überraschend aufmerksam. Niemand kann ihr in Sachen Bewusstsein und Fingerspitzengefühl das Wasser reichen. Da sie die weitere Entwicklung der Qingbo-Palisade plante, priorisierte sie das Wohlbefinden der Bewohner, wobei sie gekonnt sicherstellte, dass jedes Individuum, ob jung oder alt, krank oder gesund miteinbezogen wurde. Niemand wurde inmitten der geschäftigen Aufgaben übersehen oder vergessen. Diese Eigenschaft ist besonders wertvoll für uns: Bei der Arbeit mit unterschiedlichen kulturellen Gepflogenheiten benötigen wir eine Führung, die die komplexen örtlichen zwischenmenschlichen Dynamiken und Ökosysteme versteht, was uns bei unseren Entwicklungsbemühungen einiges an Kommunikationskosten erspart.\nTangtang hat sich erstaunlich schnell an das Leben an Bord der Dijiang angepasst. Manchmal sieht man sie an der Seite von Chen Qianyu, dem Endministrator oder Aufseherin Perlica entlangspazieren, mit glänzenden Augen und leicht schwingendem Schwanz. Außerdem hat sie ein paar neue Freunde gewonnen und bestückt sie mit liebevollen Spitznamen im Stil der Qingbo-Palisade. Außerdem scheint sie alles an der Dijiang zu faszinieren, insbesondere der Vorratsautomat in der Kantine. An ihrem ersten Tag umkreiste sie ihn mehrere Male. Ein Operator zeigte ihr netterweise, wie man Münzen einwirft und die bunten Knöpfe drückt, damit er ein Getränk ausspuckt. Sie hörte ruhig zu, obwohl man nicht so recht erkennen konnte, ob sie das auch gänzlich verstanden hatte. An diesem Abend löste der Vorratsautomat einen Alarm aus und Operatorin Xaihi musste schließlich ein festsitzendes „Tangtang-Zerti“ aus dem Münzeinwurf befreien.\nNach monatelanger Beobachtung sind wir zu dem Schluss gekommen, dass Tangtang nicht nur keine psychologische Unterstützung benötigt, ihre Anwesenheit hat der Dijiang tatsächlich neues Leben eingehaucht.\nAls wir dies mit Operatoren in ihrem Umfeld besprachen, meinte Chen Qianyu mit einem Lächeln: „Tangtang ist zwar am Wasser aufgewachsen, sie ist aber eher wie eine unauslöschbare Flamme. Ein vorbeiziehender Sturm trübt es zwar ein wenig, aber der Funke entzündet sich schnell wieder und brennt genauso hell wie zuvor.“\nAn einem Nachmittag haben wir gehört, wie Tangtang mit jemandem sprach, ihr Ton so aufrichtig wie eh und je: „Der Kopf des Häuptlings ist nicht so groß. Ich muss aufhören, Dingen auf den Grund gehen zu wollen, weißt du? Da werde ich nur dumm davon!“</>",
+      "file2": "<@profile.key>[Klinische Diagnose]\nOrgankonturen auf Röntgenbildern sind verschwommen, mit unnatürlichen sichtbaren Schatten im Körper der Operatorin. Originium-Partikel innerhalb des Kreislaufsystems weisen Anomalien auf, Anzeichen von Oripathie. In diesem Stadium kann die Operatorin als oripathie-positiv bestätigt werden.\n\nAnmerkung des anwesenden Arztes: Nach Tangtangs eigenen Angaben hat sie sich während eines Konflikts zwischen der Qingbo-Palisade und den Tianshi von Wuling City mit Oripathie infiziert. Laut ihr hat sie in diesen zehn Jahren keine spezielle Behandlung genossen, nur die verschiedenen Hausmittel, die ihr die Palisadenbewohner gelegentlich verabreicht haben. Die Untersuchungsergebnisse weisen jedoch darauf hin, dass die Originium-Assimilationsrate der Zellen und die Dichte der Originum-Kristalle im Blut außerordentlich gut kontrolliert sind.\nNachfragen diesbezüglich beantwortetet Tangtang mit „Alle meinen, ich sei die Tochter des Flusses. Das Wasser wäscht die Krankheit weg.“\nKönnten natürliche Gewässer wirklich Oripathie heilen? Die Antwort liegt auf der Hand: Das ist unmöglich.\n\n[Medikamentenantrag von einem Tianshi]\nArt des Medikaments: Oripathie-Hemmer\nAngeforderte Menge: Langfristige Behandlung\nInfizierter Bereich: Augenregion\nGrund für Antrag: Hilfe für Qingbo-Palisade\nAudio-Logbuch:\n„Ehrlich, ich liefere das Medikament nur ungern aus. Das erste Mal hat er uns sofort damit beworfen, wobei er schrie, dass sie keine Almosen aus Wuling bräuchten, und er versuchte, uns mit seinem Kopf zu rammen. Zum Glück war das Wachpersonal vor Ort und hat bei der Flucht geholfen. Ich glaube nicht, dass er mich töten wird, aber so ein Vorfall darf sich nicht wiederholen.\nDie Oripathie des Mädchens droht sich zu verschlechtern. Wir wissen das und sie sicher auch. Sie hat sich unseretwegen damit infiziert. Wir schulden ihr die Behandlung.“\n„Es war das pure Chaos. Der Himmel war pechschwarz, die Wolken niedrig und schwer und der Regen riss die Wolkendecke entzwei. Wir stemmten uns gegen den heulenden Wind, als die Palisadenbewohner von hinter den Hügeln hervorstürmten, mit gezogenen Waffen, ihre Schatten in der Nacht wie böse Geister …\nDie Leute hatten panische Angst. Niemand bemerkte das Kind in der Menge …\nDer Regen wusch das Blut weg … oder vielleicht ging es auch niemals wirklich weg. Wann immer ich die Augen schließe, sehe ich das verletzte Auge des Mädchens und seine … die Augen des Anführers. Die sagten, dass er einfach nur überleben wollte … Ich werde sie mein Leben lang nicht vergessen.“\n„Das zweite Mal haben wir die Spritzen in der Nähe der Palisadengrenze liegen gelassen, wo die Bewohner sicherlich vorbeikommen mussten.\nDiesmal waren sie keine Almosen von einem Feind. Vielleicht fielen sie vom Himmel wuchsen aus der Erde oder ein Tier brachte sie vorbei. Auf diese Weise würden sie das Medikament vielleicht etwas leichter akzeptieren können.\nIch habe zwei ganze Tage gewartet … und sie wurden mitgenommen.\nIch habe zwei weitere Tage gewartet und gesehen, wie das Mädchen am Wasser spielte. Es jagte Langohren eine beachtliche Strecke den Fluss entlang. Es schien ihm viel besser zu gehen.\nIch weiß nicht, was jetzt passieren wird … und ich glaube nicht, dass ich wirklich für meine Sünden gebüßt habe. Aber wenigstens konnte ich an jenem Tag die ganze Nacht durchschlafen.“</>",
+      "file3": "<@profile.key>Alle Bewohner der Qingbo-Palisade nannten sie die „Junge Dame“, weil Ruan Lin selbst nur ein Kind hatte und später eins aus dem Wasser fischte. Das erste hieß „Eins (Yi)“, deshalb wurde aus dem zweiten natürlich das „junge“. Die Bewohner der Qingbo-Palisade mochten es gerne einfach und unkompliziert.\nNiemand wusste, wo die Junge Dame herkam. Ruan Yi meinte, sie wäre ein Kätzchen in einem Bambuskorb gewesen, den er mitgenommen hatte. Ruan Lin meinte, sie sei ein Schatz, die Tochter des Flusses, gesendet von der Ahnenquelle. Ein Junge in der Nähe hörte das und fragte, ob sie nicht die Meisterin des Flusses sei, wo sie doch aus dem Fluss geboren worden war. Als Tangtang das hörte, schnaubte sie, sprang auf ihr Steckenpferd aus Bambus und erklärte stolz: „Genau! Das Wasser gehört mir! Die Qingbo-Palisade gehört mir! All das gute Essen und der Spaß gehören auch mir!“\nRuan Lin wuschelte ihr durch die Haare und brach in schallendes Gelächter aus. Bald schon lachten alle mit, die um das Feuer saßen. Ihr Frohsinn war so ansteckend, dass auch Tangtang mitkicherte. Das Gespräch wandte sich anderen Dingen zu und die Angelegenheit kam nie wieder zur Sprache.\nErst als Tangtang älter war, ertappte sie sich dabei, wie sie darüber nachgrübelte, dass Flusswasser keine Felin wie sie gebären konnte. Wo waren ihre echten Eltern?\nTangtang konnte sich keinen Reim darauf machen. Sie verglich sich tagelang mit allen in der Palisade. Manche waren zu grob gebaut, andere zu klein. Und niemand hatte einen Schwanz oder Ohren, die so schön waren wie ihre.\nDieses Dilemma beschäftigte Tangtang ziemlich lange, bis Ruan Lin sie zum Abendessen einlud. Es gab gekochten Flössler und Tangtang blickte auf Ruan Yis Schüssel, dann auf ihre eigene. Der Kopf, die Augen und der weiche Bauch des Flösslers, die ganzen leckeren Teile waren in ihrer Schüssel gelandet. Als sie den Bauch auf den Löffel schob und ihn in Ruan Lins Mund stopfte, dachte sie sich: „Was kümmert mich das Gejammere der Palisadeure, was kümmert mich die … Mutterliebe? Papa kocht großartig und das reicht mir!“\n\nDie umfassenden Ermittlungen der Personalabteilung bestätigten, dass Tangtang zum Zeitpunkt ihres Fundes noch nicht abgestillt war. Die Physiologie eines Neugeborenen würde nicht zulassen, dass sie weite Strecken auf dem Fluss treiben würde. Deshalb nimmt man an, dass sie irgendwo in der Nähe der Qingbo-Palisade ausgesetzt worden war.\nNach genauen Untersuchungen ihres Auges vermutet das Personal der Behandlungsabteilung, dass das Muster in ihm eng verbunden mit ihren Originium-Techniken ist. Da das Muster äußerst regelmäßig ist, kann es sich dabei nicht um ein zufälliges Symptom der Oripathie-Infektion handeln. Es wurden jedoch alle Personalakten der Qingbo-Palisade überprüft und kein weiteres Individuum mit einer ähnlichen Auffälligkeit gefunden.\nSie selbst sagt dazu: „Ich habe einfach am Wasser geübt und geübt und plötzlich war das Muster da.“\nDas ist absolut unmöglich. Wir haben die HAW konsultiert und die dortigen Experten haben die Bewohnerakten überprüft. Allerdings konnten sie ebenfalls keine Verwandten von Tangtang identifizieren. Eine auf die Geschichte Yans spezialisierter Tianshi hat jedoch bei den von Terra überlieferten Yan-Dokumenten einen Durchbruch erreicht. Sie entdeckte Aufzeichnungen, die höchst relevant für das Muster in Tangtangs Auge sind. Legenden zufolge symbolisiert das Muster die Evolution von Himmel und Erde. Es enthält vererbtes uraltes Wissen. Wobei Tangtang trotzdem wohl keinen Zugriff darauf hat. Die Tianshi von Wuling waren gleichermaßen erstaunt über diese Entdeckung. Sie hatten nicht damit gerechnet, dass sie solch eine einzigartige Nutzerin der Originium-Techniken in Reichweite hatten.\nDaraus lässt sich schließen, dass der Grund, weshalb Tangtang an der Qingbo-Palisade ausgesetzt wurde, komplexer ist als ursprünglich angenommen.\n…\nNachdem wir Tangtang alles erzählt hatten, was bei den Ermittlungen rausgekommen war, kratzte sie sich nur am Kopf und meinte, dass ihre Wurzeln nicht so wichtig wären. Schließlich hätte sie jetzt Freunde und Familie und würde ein gutes Leben leben. Obwohl sie sich ein ganz klein wenig fragen würde, ob sie doch noch irgendwo Blutsverwandte hätte und wie es ihnen ginge. Sie meinte, dass sie das wirklich nur ein ganz klein wenig beschäftige, so klein wie die Klaue einer Schildbestie.\nTangtang ist immer noch in Besitz der Stoffwindel, in die sie damals eingewickelt war. Als sie sie uns überreichte, zögerte sie merklich für einen Augenblick, bevor der fröhliche Ausdruck in ihre Augen zurückkehrte. „Und vergesst nicht, sie mir nach eurer Untersuchung zurückzugeben!“</>",
+      "file4": "<@profile.key>[Alte Videoaufnahme]\n06:23:45:10\n„Eine Kamera … die Spielerei, mit der man Sachen aufnehmen kann? Sieht ganz schön süß aus und bewegt sich sogar. Wie ein kleiner Lupo!“\n„Die Wulinger haben sich dieses Ding einfallen lassen. Wir haben es bei unserer letzten Begegnung mit ihnen geklaut. Man muss nur diesen Knopf hier drücken, dann nimmt es auf. Hey, Häuptling, willst du das mal ausprobieren?“\n„Na gut, legen wir los! Hey! Wie hast du es geschafft, dass meine Beine in der Aufnahme so kurz aussehen? Dein Häuptling sieht winzig aus!“\n„Bist du nicht einfach etwas … Hey, hey, nicht schlagen! Ich bin klein, nicht du! Ich!“\n„Mit dir spiel ich nicht mehr! Ich verhaue diese Verrückte und nehme mit diesem kleinen Lupo auf, wie sie k. o. geht.“\n\n07:10:30:15\n„Zum Teufel mit dieser Verrückten! Ist schon wieder weg, um für ihre große Zhuang zu kämpfen. Letztes Mal wurde sie von Planschis grün und blau geschlagen, man sollte meinen, dass sie mal daraus lernen würde …\nIch mach es mir einfach in meiner Palisade gemütlich und gehe der Verderbnis draußen aus dem Weg. Gibt sauberes Wasser zu trinken und leckeren Flössler zu essen …\nHey, kleiner Lupo, halt still! Schau! Da trainiert ein dummes Mädchen in der Nähe der Grenze zu Wuling mit dem Schwert. Schleichen wir uns an und finden heraus, was es so macht.\nWow! Ihre Zwillingsschwerter sehen ganz schön gut aus. Hier gibt es zu viele Planschis und es wird langsam ziemlich gefährlich. Ich sorge lieber dafür, dass sie nicht als Planschifutter endet. Und ich, der Häuptling, erleichtere sie um ihre schicken Sachen.“\n\n08:36:05:55\n„Du hast all die Planschis selbst erledigt?“\n„Jupp. Die kleinen Dämloide waren ein Klacks für mich. Aber hey, danke für die Rückenstärkung! Du bist ganz schön treffsicher. Ich heiße Chen Qianyu. Schön, dich kennenzulernen, …?“\n„Tangtang. Oberhäuptling der Qingbo-Palisade! Hast du schon von mir gehört?“\n„Natürlich! Die Qingbo-Palisade, das sind doch die, die sich immer mit Wuling City anlegen. Warte mal! Du bist doch nicht hier, um mich zu überfallen, oder?“\n„Kommt darauf an. Bist du aus Wuling City? Dein Oberhäuptling ist fair und nur Wuling steht auf meiner Hassliste.“\n„Ich, äh, da komme ich irgendwie her … Warte, nein! Nicht jetzt. Jetzt nicht mehr.“\n„WAS? Hat dich die Verrückte rausgeworfen? Schon gut, aus Wuling zu sein, ist ohnehin doo… Hey! Warum heulst du? ARGH! Wisch deinen Popel nicht an mir ab!“\n\n11:42:13:07\n„Hab keinen Schatz gefunden und sogar ein Kleidungsstück verloren. Das Unterfangen ist ein totaler Reinfa… WOAH?!\n„Hey, kleines Samtpfötchen, treibst du dich schon wieder in der Gegend von Wuling herum? Ich dachte, ich hätte dir gesagt, dass du dich von hier fernhalten sollst.“\n„Das geht dich gar nichts an, du Verrückte! Lass mich sofort los!“\n\nTangtang und Chen Qianyu standen dicht beisammen, als sie sich die Videoaufnahme ansahen. Sie schwiegen und warfen sich einen verwirrten Blick zu. Plötzlich schnappte sich Tangtang die Kamera und raste davon.\n„Finstermaske! Blasse Schreiberin! SEHT EUCH DAS AN! Ich habe tolle Aufnahmen, wie Grünschuppe heult! UND ES IST POTTHÄSSLICH!“\n„Tangtang!!! Halt!!!\nChen Qianyu lief rot an, so peinlich war ihr die Sache. Sie verfolgte Tangtang fünf oder sechs Runden um den Zentralring, bis Mi Fu das Ganze nicht länger mitansehen konnte und beide am Halsband schnappte und hochhob.\n„Tangtang, ich musste dir in Wuling nachjagen und jetzt muss ich dir auf der Dijiang während einer offiziellen Dienstreise auch noch nachjagen. Chen, warum machst du bei so einem Blödsinn mit?“\n„Das hier gehört einem Familienmitglied von mir, der Finstermaske! Hier hast du nichts zu sagen! Lass unseren Häuptling los! SOFORT!“\nWährend sich Tangtang und Mi Fu einen verbalen Schlagabtausch lieferten, wand sich Chen Qianyu geschickt aus Mi Fus Griff, entriss Tangtang die Kamera und löschte sofort diese „peinliche“ Aufzeichnung. Dann zeigte sie allen fröhlich die Zunge und richtete die Kamera auf das keifende Paar.\nDie Kamera nahm die Szene originalgetreu auf. Tangtang, wie sie von Mi Fu am Nacken hochgehalten wurde, erinnerte sie an die Vergangenheit: Trotz der ewigen Verfolgungsjagden und Raufereien hatte Mi Fu Tangtang bislang niemals so unbarmherzig festgehalten. Solange sich Tangtang etwas bemühte, konnte sie immer irgendwie entkommen.\nTangtang konnte sich nie erklären, warum sie sich immer so leicht verdrücken konnte. Die aufmerksame Chen Qianyu, die das mitansah, wurde natürlich zur Gewinnerin dieses kleinen Streits: Sie erhielt ein Video von Tangtang, dem besiegten Häuptling, mit hängenden Ohren und mitleiderregendem Gesicht. Ein Video, das man nicht oft genug ansehen konnte.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kombofertigkeit <@ba.key>FLUSS, ZU MIR!</> verbessert: SDN-Multiplikator auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts erhöht und die Abklingzeit ist jetzt <@ba.vup>{coolDown:0}</> Sek.\nKampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> verbessert: Für jeden verbrauchten und in eine <@ba.key>Wasserhose</> verwandelten <@ba.key>Strudel</> werden zusätzliche <@ba.vup>{atb_return:0}</> FP <#ba.return>erstattet</>.",
+      "name": "Reservehort"
+    },
+    "potential2": {
+      "description": "Beweglichkeit <@ba.vup>+{Agi:0}</>, Verursachter Kryo-SDN <@ba.vup>+{CrystDamageIncrease:0%}</>.",
+      "name": "Tochter des Flusses"
+    },
+    "potential3": {
+      "description": "Kampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> verbessert: SDN-Multiplikator auf das <@ba.vup>{atk_scale_1:0.0}</>-Fache des Originalwerts erhöht. Werden mehrere <@ba.key>Wasserhosen</> erzeugt, erhöht sich der daraus resultierende Effekt <#ba.spellvul>Technik-Empfänglichkeit</> um <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "name": "Häuptlingsaura"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>DER HÄUPTLING SIEHT DICH!</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Qingbo-Meditation"
+    },
+    "potential5": {
+      "description": "Ultimative Fertigkeit <@ba.key>DER HÄUPTLING SIEHT DICH!</> verbessert: SDN-Multiplikator wird auf das <@ba.vup>{atk_scale_1:0.00}</>-Fache des ursprünglichen Werts erhöht. \nTalent <@ba.key>Unruhestifter</> verbessert: Die SDN-Effekte aller von der Ultimativen Fertigkeit <@ba.key>DER HÄUPTLING SIEHT DICH!</> erzeugten Wasserhosen werden um <@ba.vup>+{dmg_up_water_ult:0%}</> erhöht.",
+      "name": "Der gänzlich unheimliche Blick des Häuptlings"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Reines Wasser spiegelt die Seele",
+      "author": "Samail",
+      "description": "Tangtang hat ein Herz aus Wasser, einem ruhigen Teich unter dem Mond, der in seiner Pracht schimmert."
+    },
+    "potential3": {
+      "name": "Bambusspalter",
+      "author": "二值笔战士",
+      "description": "Das Aroma von frischem Bambus erinnert sie an einen gewöhnlichen Nachmittag, als die Palisadeure Regenmäntel für das kommende Jahr webten. Ein Tag, an dem sie die Sonne aus vollen Zügen genoss."
+    },
+    "potential5": {
+      "name": "Befehle des Oberhäuptlings sind zu befolgen",
+      "author": "수줍(Sjoop)",
+      "description": "„Finstermaske! Bleib in der Nähe des Oberhäuptlings! Der Tag wird kommen, an dem ich dich an den Rand der Welt mitnehme!“"
+    }
+  }
+}

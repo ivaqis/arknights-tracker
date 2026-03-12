@@ -9,7 +9,7 @@
       "藝術"
     ],
     "behaviourUnavailableTags": [
-      "外向"
+      "外向（系統用遊戲中不可見）"
     ],
     "blocTag": "宏山科學院",
     "expertTags": [
@@ -70,7 +70,7 @@
         "additionalAtkStagger": "追加失衡值"
       },
       "name": "不動心",
-      "description": "施放身外身，使用不動杵重砸前方地面，使大範圍內的所有敵人受到<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>，然後將所有敵人聚集至中心。一段時間後，使仍然留在砸地範圍內的所有敵人再次受到大量<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>。\n若該技能<#ba.consume>消耗</>了<#ba.combo>連擊</>，則會追加大量<@ba.pd>物理傷害</>。"
+      "description": ""
     },
     "indicator": {
       "levels": [

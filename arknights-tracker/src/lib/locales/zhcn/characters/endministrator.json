@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "未公开"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "失衡值"
       },
       "name": "构成序列",
-      "description": "使用源石技艺冲击前方一定范围内的敌人，造成<@ba.pd>物理伤害</>和<#ba.crush>猛击</>。"
+      "description": "使用<@ba.key>源石结晶</>冲击前方一定范围内的敌人，造成<@ba.pd>物理伤害</>和<#ba.crush>猛击</>。"
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "封印时间（秒）"
       },
       "name": "锁闭序列",
-      "description": "当小队内其他干员的连携技造成伤害时可以发动。\n冲到敌人身边，对其造成<@ba.pd>物理伤害</>，并附着<#ba.originium>源石结晶</>，在一段时间内将其封印。施加<#ba.physicalstatus>物理异常</>或<#ba.noguard>破防</>会<#ba.consume>消耗</><#ba.originium>源石结晶</>并额外造成<@ba.pd>物理伤害</>。"
+      "description": "当小队内其他干员的连携技造成伤害时可以发动。\n冲到敌人身边，对其造成<@ba.pd>物理伤害</>，并附着<@ba.key>源石结晶</>，在一段时间内将其封印。施加<#ba.physicalstatus>物理异常</>和<#ba.noguard>破防</>会击碎<@ba.key>源石结晶</>并额外造成<@ba.pd>物理伤害</>。"
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "失衡值"
       },
       "name": "轰击序列",
-      "description": "使用源石技艺轰击地面，对前方扇形范围内的敌人造成大量<@ba.pd>物理伤害</>。如果敌人身上附着<#ba.originium>源石结晶</>，则<#ba.consume>消耗</><#ba.originium>源石结晶</>并额外造成一次<@ba.pd>物理伤害</>。"
+      "description": "使用<@ba.key>源石结晶</>轰击地面，对前方扇形范围内的敌人造成大量<@ba.pd>物理伤害</>。如果敌人身上附着<@ba.key>源石结晶</>，则击碎<@ba.key>源石结晶</>并额外造成一次<@ba.pd>物理伤害</>。"
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。",
-        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。"
+        "战技和终结技命中至少2个目标后，连携技的冷却时间恢复{0,0:0.0}秒。",
+        "战技和终结技命中至少2个目标后，连携技的冷却时间恢复{0,0:0.0}秒。"
       ],
       "name": "本质瓦解"
     },
     "talent2": {
       "levels": [
-        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。",
-        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。"
+        "被<#ba.originium>源石结晶</>封印的敌人还会受到<@ba.vup>{0,0:0%}</>的额外物理伤害。",
+        "被<#ba.originium>源石结晶</>封印的敌人还会受到<@ba.vup>{0,0:0%}</>的额外物理伤害。"
       ],
       "name": "现实静滞"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>【代号】管理员\n【性别】■■\n【身份认证】■■\n【生日】■■\n【种族】■■\n\n你什么都回忆不起来。\n记忆像是被揉碎的梦境，只等随便某个念头兴起，便无影无踪。\n这让你偶尔焦躁，偶尔担忧，也让你有了一些空间思考。\n但更多时候，你无暇多想，你选择相信眼前的人，只需前行。\n也许记忆已经被你短暂地抛诸脑后……\n……所以，你什么都回忆不起来。</>",
+      "humanResources": "<@profile.key>你过去的生命贯穿了塔卫二至今的历史……</>",
+      "file1": "<@profile.key>……那么，未来呢？</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "战技<@ba.key>构成序列</><#ba.consume>消耗</><#ba.originium>源石结晶</>时，<#ba.return>返还</><@ba.vup>{atb_return:0}</>点技力。",
+      "description": "",
       "name": "最后的苏醒"
     },
     "potential2": {
-      "description": "天赋<@ba.key>本质瓦解</>效果加强：自身获得攻击力提升时，其他友方干员获得一半的攻击力提升效果。",
+      "description": "",
       "name": "权能映射"
     },
     "potential3": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     },
     "potential4": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     },
     "potential5": {
-      "description": "？？？",
+      "description": "",
       "name": "？？？"
     }
   },

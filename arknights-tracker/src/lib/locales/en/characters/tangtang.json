@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Cryo Infliction",
+      "Arts Susc."
+    ],
+    "behaviourHateTags": [
+      "Fine Arts"
+    ],
+    "behaviourUnavailableTags": [
+      "Introvert (SYSTEM ONLY, not visible in-game)"
+    ],
+    "blocTag": "Qingbo Stockade",
+    "expertTags": [
+      "Combat Technique",
+      "Agility"
+    ],
+    "giftPreferTags": [
+      "Wuling Merchants' Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Creative"
+    ],
+    "raceTag": "Feline"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+        "finisherAtkMultiplier": "Finisher ATK Multiplier",
+        "diveAtkMultiplier": "Dive ATK Multiplier"
+      },
+      "name": "I'LL BLOW YOUR MIND!",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Shooting DMG Multiplier",
+        "shotStagger": "Shot Stagger",
+        "dmgMultiplier1Waterspout": "DMG Multiplier (1 Waterspout)",
+        "waterspoutDurationS": "Waterspout Duration (s)",
+        "spReturnPerWhirlpool": "SP Return per Whirlpool",
+        "artsSusceptibility2Waterspouts": "Arts Susceptibility (2 Waterspouts)",
+        "artsSusceptibility3Waterspouts": "Arts Susceptibility (3 Waterspouts)",
+        "artsSusceptibilityDurationS": "Arts Susceptibility Duration (s)"
+      },
+      "name": "IMA WAVERIDAAH!",
+      "description": "Tangtang jumps out from the water and fires a point-blank shot that deals <@ba.cryst>Cryo DMG</> to the enemy and creates a <@ba.key>Waterspout</>.\nCasting the battle skill also consumes all nearby <@ba.key>Whirlpools</> to create additional <@ba.key>Waterspouts</> and <#ba.return>return</> some SP based on the number of Waterspouts created.\n<@ba.key>Waterspout</>: Applies 1 stack of <#ba.crystinflict>Cryo Infliction</> on enemies within range and deals <@ba.cryst>Cryo DMG</> over time. If the battle skill creates multiple <@ba.key>Waterspouts</>, they also apply <#ba.spellvul>Arts Susceptibility</> to enemies (but not another stack of <#ba.crystinflict>Cryo Infliction</>).\n<@ba.info>DMG dealt by the Waterspout is treated as Battle Skill DMG.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger",
+        "whirlpoolDurationS": "Whirlpool Duration (s)"
+      },
+      "name": "RIVER, TO ME!",
+      "description": "COMBO TRIGGER: When applying <#ba.crystinflict>Cryo Infliction</> or dealing <#ba.spellburst>Arts Burst DMG</> to an enemy.\nTangtang unleashes a powerful jet stream that penetrates all enemies in its path, deals <@ba.cryst>Cryo DMG</> to them, and creates a <@ba.key>Whirlpool</>.\n<@ba.info>Up to 2 Whirlpools can exist in the battlefield at any time.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "DMG Over Time Total Multiplier",
+        "oldenStareDurationS": "OLDEN STARE Duration (s)",
+        "rogueWaveDmgMultiplier": "Rogue Wave DMG Multiplier",
+        "earlyRogueWaveDmgMultiplier": "Early Rogue Wave DMG Multiplier",
+        "rogueWaveStagger": "Rogue Wave Stagger",
+        "earlyRogueWaveStagger": "Early Rogue Wave Stagger"
+      },
+      "name": "DA CHIEF SEES YOU!",
+      "description": "Tangtang opens her eyepatch and unleashes an <@ba.key>OLDEN STARE</> from her eye that temporarily locks down, immobilizes, and deals <@ba.cryst>Cryo DMG</> over time to enemies within its area of effect.\nWhen the <@ba.key>OLDEN STARE</> stops evolving, a rogue wave comes crashing down to deal massive <@ba.cryst>Cryo DMG</> to enemies in its area of effect.\nIf the controlled operator performs a dive attack in the <@ba.key>OLDEN STARE</> pattern, its evolution ends and the rogue wave is summoned immediately to deal even more <@ba.cryst>Cryo DMG</>."
+    },
+    "indicator": {
+      "levels": [
+        "Operator Agility +10.",
+        "Operator Agility +15.",
+        "Operator Agility +15.",
+        "Operator Agility +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect.",
+        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect."
+      ],
+      "name": "Fam of Honor"
+    },
+    "talent2": {
+      "levels": [
+        "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+        "During <@ba.key>OLDEN STARE</>, performing a dive attack with the controlled operator ends its evolution early and creates a <@ba.key>Waterspout</>. All nearby <@ba.key>Whirlpools</> are also consumed and converted into additional <@ba.key>Waterspouts</>.\n<@ba.key>Waterspouts</> created this way have the same effects as those created by the battle skill <@ba.key>IMA WAVERIDAAH!</> and gain DMG Dealt <@ba.vup>+{dmg_up_water_ult:0%}</>."
+      ],
+      "name": "Riot Bringer"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Growth Chamber to slow Mood Drop of all operators in it by 14%",
+        "Assign to Growth Chamber to slow Mood Drop of all operators in it by 18%"
+      ],
+      "name": "Supreme Chief"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Growth Chamber to grant vitrified plant growth rate +20%",
+        "Assign to Growth Chamber to grant vitrified plant growth rate +30%"
+      ],
+      "name": "River's Daughter"
+    },
+    "files": {
+      "main": "<@profile.key>CODENAME: Tangtang\nGENDER: Female\nAUTHENTICATION: Qingbo Stockade\nDOB: November 29\nRACE: Feline\n[ORIPATHY INFECTION STATUS]\nOripathy positive (infected), based on medical examination reports.\n\n[INTEGRATED PHYSICAL EXAMINATION]\nPHYSIOLOGICAL STRENGTH: Standard\nCOMBAT SKILL: Excellent \nTACTICAL ACUMEN: Normal \nORIGINIUM ARTS ASSIMILATION: Excellent\n\n\"I reviewed the Crisis Team's reports... She mentioned being adopted, didn't she? Hmm... It's true that many have been displaced by disasters, even under the administration of the Hongshan Academy of Sciences. Have the HR Division keep an eye on her background for now. We might uncover something unexpected.\"</>",
+      "humanResources": "<@profile.key>Tangtang is a member and primary representative of Qingbo Stockade. She joined Endfield Industries for personal reasons and is currently serving as Head of Endfield's Qingbo Stockade Liaison Office.\n\nOperator Tangtang stands as perhaps the most distinctive individual among the diverse personnel the Endministrator has invited aboard Dijiang. Much like our first meeting... Apologies, I need to retrieve the recorded footage stored in my database:\n\"Thwack! Thwack!\"\n\"Hey, what's this thing doing on a big airship? Looks like a three-headed iron tuskbeast. Kinda dumb if you ask me...\"\n\"Operator Tangtang, I'm here for your onboarding inter— No, please don't slap my panel. I'm a personnel assistant from Endfield Industries...\"\n\"So you're one of Darkmask's crew! You should've said so sooner, Old Iron-face! Here, I've got some good stuff I brought for my new Fam. Go crazy!\"\nAfter I repeatedly insisted I had no need for any Tangtang Certs, ores, or jewelry, Tangtang enthusiastically pulled a ring-shaped ornament made from natural materials from her pocket. I believe it could be defined as a woven bamboo floral wreath. She placed the wreath over one of my panels, then curiously began tapping the other two: \"You're sharper than those Wuling tin toys! Why don't you come join me in Qingbo Stockade? Come on, call me Chief!\"\nMy assessment of Tangtang aligns with others': cheerful, straightforward, unpretentious. She possesses a childlike heart, brimming with passion and curiosity toward everything... If I had to summarize her in a few words, I'd choose \"a child in the midst of growing up.\" However, I absolutely cannot join Qingbo Stockade and conquer Talos-II with her... This has nothing to do with the endless stack of personnel files I have to process. It just doesn't quite align with Endfield's regulations.\nTo avoid injuring Tangtang's hands and to prevent myself from suffering \"mechanical\" concussion, I really should consider how to stay out of her way... Strangely enough, she always manages to find me.\n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries</>",
+      "file1": "<@profile.key>After the Qingbo Stockade incident, we initially expected to receive a confused, grieving, or angry operator. In preparation, we had arranged some psychological intervention measures to help ease her trauma. Yet, when Tangtang arrived aboard the Dijiang via tele-protocol, her face was lit with a bright smile, not a shadow of distress in sight.\nSupervisor Perlica reminded us that despite the complexity of her community, Tangtang managed to rally her scattered people with her own charisma. This proves she possesses a resilient spirit capable of bearing significant responsibility.\nAnd indeed, Tangtang proved far more perceptive than we had imagined. Her awareness and sensitivity to situations are second to none. In planning the subsequent development of Qingbo Stockade, she consistently prioritized the welfare of its residents, skillfully ensuring that every individual, young, old, sick, or disabled, was accounted for with a blend of boldness and attentiveness, guaranteeing no one would be overlooked or forgotten amidst the busy tasks. This quality is particularly valuable to us: in work involving diverse cultural practices, having a guide who understands the complex local interpersonal dynamics and ecosystem saves us significant communication costs in our development efforts.\nTangtang has adapted to life aboard Dijiang remarkably quickly. At times, we see her walking alongside Chen Qianyu, the Endministrator, or Supervisor Perlica, her eyes sparkling, tail swaying gently. She's also made some new friends, giving them affectionate nicknames in the style of Qingbo Stockade. Moreover, everything about Dijiang seems to fascinate her, especially the canteen's vending machine... She circled it several times on her first day. An operator kindly stepped forward to show her how to insert coins and press the colored buttons to get a drink to roll out. She listened quietly, though it was hard to tell if she fully understood... That evening, the vending machine triggered an alarm, and Operator Xaihi ended up having to retrieve a stuck \"Tangtang Cert\" from the coin slot.\nAfter several months of observation, our conclusion is that: not only does Tangtang not require psychological support from us, but her presence has, in fact, infused Dijiang with renewed vitality.\nWhen we discussed this with operators familiar with her, Chen Qianyu remarked with a smile, \"Though Tangtang grew up by the water, she's more like an unquenchable flame. A passing storm might dampen it, but that spark quickly reignites and burns bright again.\"\nOne afternoon, we overheard Tangtang chatting with someone, her tone as candid as ever: \"The Chief's head isn't that big, kiddo. I can't keep trying to figure things out, you know. It'll just make me dumb!\"</>",
+      "file2": "<@profile.key>[Clinical Diagnosis Report]\nImaging scans indicate blurred organ contours with observable abnormal shadows within the operator's body. Detection of Originium particles within the circulatory system shows anomalies, presenting signs of Oripathy. At this stage, the operator can be confirmed as an Oripathy-positive.\n\nAttending Physician's Note: According to Tangtang's own account, she contracted Oripathy during a conflict between Qingbo Stockade and the Tianshi of Wuling City a decade ago. Tangtang stated she received no specialized treatment over these ten years, only various folk remedies provided sporadically by the stockade residents. However, examination results indicate that both her Cell-Originium Assimilation rate and Blood Originium-Crystal Density are remarkably well-controlled.\nWhen questioned about this, Tangtang replied, \"Everyone says I'm the River's Daughter. The water washes the sickness away.\"\nCould natural bodies of water truly cure Oripathy? The answer is evident: it's impossible.\n\n[Medication Application Form from a Tianshi]\nGeneric Medication Name: Oripathy Suppressant\nQuantity Requested: Long-term supply\nInfection Site of Patient: Ocular region\nReason for Application: Aiding Qingbo Stockade\nAudio Log:\n\"Honestly, I'm a little hesitant about delivering the medication... The first time, he threw it right back at us, shouting, 'We won't take handouts from Wuling people!' and tried to charge at us with his head... Thankfully, the watchguards were there and helped us escape. I'm not afraid he'd kill me, it's just that we can't have another incident like that.\n\"The girl's Oripathy is on the verge of worsening. We're aware of it, and surely they are too. She contracted it because of us. We have an obligation to treat her.\n\"Back then ... it was sheer chaos. The sky was pitch black, low, and heavy with rain tearing through the curtain of clouds. We trudged through the howling wind as the stockade residents charged out from behind the hills, weapons in hand, their shadows in the night like malevolent spirits...\n\"People were terrified. No one noticed there was such a young child in the crowd...\n\"The rain washed away the blood... No, no, perhaps it never truly vanished. Whenever I close my eyes, I see that girl's wounded eye, and his ... the leader's eyes. The ones that said he just wanted to survive... I will never forget them for as long as I live.\n\"The second time, we left the syringes near the outskirts of Qingbo Stockade, where the residents were sure to pass by.\n\"This time, it wasn't charity from an enemy ... maybe it fell from the sky, grew from the earth, or was carried by a beast. Thinking of it that way might make it a little easier for them to accept.\n\"I waited two whole days ... and it was taken.\n\"I waited two more days and saw the girl playing by the water. She chased long-ears along the river for quite a distance. She seemed much better.\n\"I don't know what will happen from here on out ... and I don't think this counts as true atonement. But I had a full night's rest, at least for that day.\"</>",
+      "file3": "<@profile.key>Everyone called her \"Younger Dame\" at Qingbo Stockade because Ruan Lin had only one child of his own, and later plucked another out of the water. The first was named \"One (Yi),\" so the second naturally became \"Younger\". The folks of Qingbo Stockade always thought in simple, straightforward ways.\nNo one knew where Younger Dame came from. Ruan Yi said she was a kitten in a bamboo basket that he picked up. Ruan Lin said she was a treasure, the River's Daughter sent by the Ancestral Spring. A young boy nearby, hearing this, asked, if Younger Dame was born of the river, didn't that make her the river's master?! Upon hearing this, Tangtang puffed out her chest, leaped onto her bamboo hobbyhorse, and declared proudly: \"Exactly! The water is mine! Qingbo Stockade is mine! All the good food and fun are mine too!\"\nRuan Lin ruffled her hair and burst into hearty laughter. Soon, everyone gathered around the fire joined in, their mirth contagious enough to make Tangtang giggle along. The conversation drifted to other things, and the matter was never brought up again.\nIt wasn't until Tangtang grew a little older that one day, as she listened to the Stockaders talking, a thought suddenly struck her. River water couldn't give birth to a Feline like her. Where were her real parents?\nTangtang couldn't make sense of it. She spent days comparing herself to everyone in the Stockade. Some were too sturdy, others too short. Not a single one had ears or a tail as beautiful as hers.\nThis dilemma weighed on Tangtang for quite some time, until Ruan Lin called her over for ironpot stewed fin. Tangtang glanced at Ruan Yi's bowl, then at her own. The head, eyes, and tender belly of the fin were all in hers. As she picked out the fin belly and stuffed it into Ruan Lin's mouth, she thought to herself: \"Why should I care about what the Stockaders yammer about 'mommy's touch'? Dad's cooking is delish and that's enough for me!\"\n\nAfter extensive investigation and verification, the HR Division confirmed that Tangtang was still an unweaned babe when she was found. Given the physiologies of a newborn, it would have been impossible for her to drift far along the river. Therefore, it is preliminarily inferred that she was abandoned somewhere close to Qingbo Stockade.\nAfter conducting detailed examinations and evaluations of her eye, Medical Division personnel suspect that the pattern within it is closely linked to her Originium Arts. Given the pattern's high degree of regularity, it can be ruled out as a random symptom arising from Oripathy infection. Instead, it is more likely related to her familial medical history. However, after reviewing all preserved personnel records of Qingbo Stockade, no individuals with similar conditions to hers were found.\nTo quote her own account: \"I just practiced and practiced by the water, and this pattern appeared by itself.\"\nThis is absolutely impossible. We sought assistance from HAS, and after reviewing resident archives, they were likewise unable to identify Tangtang's relatives. However, a Tianshi specializing in Yan history made a breakthrough: within the Yan documents passed down from Terra, she discovered records highly relevant to the pattern in Tangtang's eye. According to legendary accounts in the literature, this pattern symbolizes the evolution of heaven and earth, containing ancient knowledge inheritance. Yet Tangtang clearly lacks access to such learning. The Tianshi of Wuling were equally astonished by this discovery. They had never imagined that such a unique user of Originium Arts existed right within their reach.\nIn conclusion, the specific reasons behind Tangtang's abandonment in Qingbo Stockade ... may be more complex than we initially assumed.\n...\nAfter we shared the investigation findings with Tangtang, she simply scratched her head and said her origins weren't all that important. After all, she had family and friends now, living a good life. Though she did wonder, just a little, if she still has blood relatives, and how they might be faring ... She emphasized it was just a little, about the size of a small shellbeast's claw.\nTangtang still keeps the small swaddling cloth she was wrapped in back then. When handing the fabric over to us, she noticeably hesitated for a moment before returning to her usual carefree demeanor: \"And remember to give it back once you're done checking!\"</>",
+      "file4": "<@profile.key>[Old Video Footage]\n06:23:45:10\n\"A camera ... the gimmick that records stuff? Looks pretty cute, and it can even move. Looks like a little Lupo!\"\n\"The Wulingers came up with this gadget. We snagged it during our last run-in with 'em. Just gotta hit this button here to fire it up... Hey, Chief, wanna take a shot and see how it looks?\"\n\"Come on, let's do it! Hey, how'd you manage to make my legs look so short in the shot? Makes your boss look tiny!\"\n\"Ain't you just naturally kinda— Hey hey, no hitting! It's me, I'm the short one, I'm short okay!\"\n\"Not playing with you anymore! I'm gonna wallop that mad woman and use this 'lil' Lupo to record her getting knocked flat!\"\n\n07:10:30:15\n\"Damn that mad woman, off fighting for her big madam Zhuang again... Last time she got beaten black and blue by splatters, you'd think she'd learn...\n\"I'll just cozy up in my stockade and dodge the blightery out there... Got clean water to drink and delicious fin to eat...\n\"Hey, lil' Lupo, hold still! Look! Some clueless girl's practicing swordplay near the Wuling border. Let's tail her and see what's up.\n\"Heh, those twin swords of hers look pretty decent. The local turf has too many splatters and getting pretty dangerous. Better not let her end up as splatter-chow. And I the Chief shall take her fancy stuff off her hands.\"\n\n08:36:05:55\n\"You took out all these splatters yourself?\"\n\"Yep, these little buggers were no match for me. But hey, thanks for the backup! Your gunplay's pretty solid. I'm Chen Qianyu, and nice meeting you...?\"\n\"Tangtang. Supreme Chief of Qingbo Stockade! Ever heard of me?\"\n\"Of course! Qingbo Stockade, the ones always stirring up trouble with Wuling City... Hold up, you're not here to rob me, are you?\"\n\"That depends. Are you a Wulinger? Your Chief is just and Wuling is the only thing on my hate list!\"\n\"I, uh, kinda am ... wait, no. Not now. Not anymore...\"\n\"WHAT? Did mad woman kick you out? It's fine, being a Wulinger sucks blight — Hey, why are you crying? ARGH! Don't wipe your snot on me!\"\n\n11:42:13:07\n\"Didn't score any treasure, and even lost a piece of clothing. This trip's a total bust... WOAH?!\"\n\"Hey, little kitty, loitering around Wuling again? Thought I told you to skip this place.\"\n\"None of your business, mad woman! Let me go right now!\"\n\nTangtang and Chen Qianyu huddled close as they examined the camera footage. They looked each other, bewildered and quiet. Suddenly, Tangtang snatched the device and bolted off at full speed—\n\"Darkmask! Pale Scribe! TAKE A LOOK AT THIS! I got some awesome vids of Green Scales' crying face! AND THEY'RE BUGGLY!\"\n\"Tangtang!!! Stop right there!!!\"\nChen Qianyu, face flushed with embarrassment, chased Tangtang around the Central Ring five or six times until Mi Fu, unable to watch any longer, grabbed and lifted both of them by the collar.\n\"Tangtang, I had to chase you down in Wuling, and I still have to chase you down aboard Dijiang during an official trip... Chen, why are you enabling her mischief?\"\n\"My fellow Fam Darkmask owns this place, mad woman! You got no authority here! Let your Chief go! NOW!\"\nWhile Tangtang and Mi Fu traded verbal blows, Chen Qianyu smoothly slipped free from Mi Fu's grip, snatched the camera from Tangtang's hands, and promptly pressed the delete button on that piece of \"shame.\" Then, sticking her tongue out playfully, she turned the lens toward the bickering duo.\nThe camera faithfully captured the scene. Tangtang, held by the scruff of her neck by Mi Fu, hearkened back to the past — Despite the countless chases and scuffles, Mi Fu never grabbed Tangtang by her vitals. As long as Tangtang got her act together, she could always find a chance to escape.\nTangtang never figured out why she always slipped away so easily. The observant Chen Qianyu who saw this naturally became the prize-winner of this little tussle: a video of Tangtang the Defeated Chief with drooping ears and utterly pitiful looks, one that can be enjoyed over and over again.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Combo skill <@ba.key>RIVER, TO ME!</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale:0.0}</> times of the original, and cooldown is now <@ba.vup>{coolDown:0}</>s.\nBattle skill <@ba.key>IMA WAVERIDAAH!</> improved: For every <@ba.key>Whirlpool</> consumed and converted into a <@ba.key>Waterspout</>, <#ba.return>return</> <@ba.vup>{atb_return:0}</> additional SP.",
+      "name": "Reserve Hoard"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Cryo DMG Dealt <@ba.vup>+{CrystDamageIncrease:0%}</>",
+      "name": "River's Daughter"
+    },
+    "potential3": {
+      "description": "Battle skill <@ba.key>IMA WAVERIDAAH!</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale_1:0.0}</> times the original. When forming multiple <@ba.key>Waterspouts</>, the resulting <#ba.spellvul>Arts Susceptibility</> effect is increased by <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "name": "Chiefly Vibe"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>DA CHIEF SEES YOU!</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Qingbo Meditation"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>DA CHIEF SEES YOU!</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale_1:0.00}</> times the original. \nTalent <@ba.key>Riot Bringer</> improved: DMG effects of any Waterspout created by the ultimate <@ba.key>DA CHIEF SEES YOU!</> are increased by <@ba.vup>+{dmg_up_water_ult:0%}</>.",
+      "name": "Chief's All-Eldritch Gaze"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Pristine Water Mirrors the Soul",
+      "author": "Samail",
+      "description": "Tangtang has a heart of water, a still pond under the moon that shimmers with its splendor."
+    },
+    "potential3": {
+      "name": "Bamboo Splitter",
+      "author": "二值笔战士",
+      "description": "The aroma of fresh bamboo reminds her of an ordinary afternoon when the Stockaders wove bamboo raincoats for the coming year, a day when she basked in the sun."
+    },
+    "potential5": {
+      "name": "Supreme Chief's Orders are Supreme",
+      "author": "수줍(Sjoop)",
+      "description": "\"Darkmask! Stay close to your Supreme Chief! A day will come when I take you to the world's edge!\""
+    }
+  }
+}

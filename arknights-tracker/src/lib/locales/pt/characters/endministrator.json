@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Não divulgado"
   },
   "skills": {
     "basicAttack": {
@@ -32,7 +36,7 @@
         "stagger": "Desorientação"
       },
       "name": "Sequência Construtiva",
-      "description": "Uma poderosa explosão de Artes de Originium que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>."
+      "description": "Uma explosão forçada de <@ba.key>Cristais de Originium</> que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>."
     },
     "comboSkill": {
       "comboSkill": {
@@ -42,7 +46,7 @@
         "sealDurationS": "Duração do Selo (s)"
       },
       "name": "Sequência de Vedação",
-      "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <#ba.originium>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado <#ba.consume>consome</> os <#ba.originium>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional."
+      "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <@ba.key>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado fragmenta os <@ba.key>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional."
     },
     "ultimate": {
       "ultimate": {
@@ -51,7 +55,7 @@
         "stagger": "Desorientação"
       },
       "name": "Sequência de Bombardeio",
-      "description": "Bombardeia o solo com Artes de Originium, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo tiver <#ba.originium>Cristais de Originium</>, essa habilidade <#ba.consume>consumirá</> os <#ba.originium>Cristais de Originium</> e causará mais um acerto de <@ba.pd>DNO Físico</>."
+      "description": "Bombardeia o solo com <@ba.key>Cristais de Originium</>, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo já tiver <@ba.key>Cristais de Originium</>, essa habilidade fragmentará os <@ba.key>Cristais de Originium</> e causará mais 1 acerto de <@ba.pd>DNO Físico</>."
     },
     "indicator": {
       "levels": [
@@ -64,15 +68,15 @@
     },
     "talent1": {
       "levels": [
-        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular.",
-        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular."
+        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s.",
+        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s."
       ],
       "name": "Desintegração da Essência"
     },
     "talent2": {
       "levels": [
-        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>.",
-        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>."
+        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico.",
+        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico."
       ],
       "name": "Estase do Espaço Real"
     },
@@ -84,27 +88,31 @@
       "levels": [],
       "name": ""
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>CODINOME: Endministrator \nGÊNERO: ■■ \nAUTENTICAÇÃO: ■■ \nDATA DE NASCIMENTO: ■■ \nRAÇA: ■■ \n\nVocê não se lembra de nada. \nSuas memórias estão em pedaços, como sonhos reduzidos a pó, desaparecendo ao menor pensamento. \nÀs vezes, isso deixa você impaciente, às vezes, desconfortável, mas ainda assim proporciona a você um momento de silêncio para respirar e pensar. \nNa maioria das vezes, porém, não há pausa para dúvidas. Você simplesmente confia em quem está diante de você e segue em frente. \nTalvez você tenha escondido suas memórias do passado, mesmo que por pouco tempo... \n...e, por isso, não se lembra de nada. </>",
+      "humanResources": "<@profile.key>Você viveu por toda a história de Talos-II...</>",
+      "file1": "<@profile.key>Mas... o que você fará com seu futuro?</>"
+    }
   },
   "potentials": {
     "potential1": {
-      "description": "Habilidade de batalha <@ba.key>Sequência Construtiva</> melhorada: <#ba.consume>Consumir</> <#ba.originium>Cristais de Originium</> <#ba.return>retorna</> <@ba.vup>{atb_return:0}</> PH.",
+      "description": "",
       "name": "Despertar Final"
     },
     "potential2": {
-      "description": "Talento <@ba.key>Desintegração da Essência</> melhorado: quando o Endministrator recebe o benefício de ATQ, os outros operadores aliados recebem metade desse benefício de ATQ.",
+      "description": "",
       "name": "Reflexão da Autoridade"
     },
     "potential3": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential4": {
-      "description": "???",
+      "description": "",
       "name": "???"
     },
     "potential5": {
-      "description": "???",
+      "description": "",
       "name": "???"
     }
   },

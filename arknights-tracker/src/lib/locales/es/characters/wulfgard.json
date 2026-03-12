@@ -5,10 +5,10 @@
       "Combustir"
     ],
     "behaviourHateTags": [
-      "Perfeccionamiento mental"
+      "Entrenamiento mental"
     ],
     "behaviourUnavailableTags": [
-      "Extrovertido"
+      "Extrovertido (SOLO SISTEMA, no visible dentro del juego)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -20,7 +20,7 @@
     ],
     "hobbyTags": [
       "Naturaleza",
-      "Creativo"
+      "Creatividad"
     ],
     "raceTag": "Lupo"
   },
@@ -61,7 +61,7 @@
         "stagger": "Tambaleo"
       },
       "name": "Furia de los lobos",
-      "description": "Dispara una barrera rápida de disparos y libera la <@ba.key>Furia de los lobos</> para atacar a los enemigos cercanos, infligiendo 5 golpes de <@ba.fire>DAÑ por calor</> y aplicando <#ba.burning>Combustión</> forzada."
+      "description": "Dispara una descarga rápida de disparos y libera la <@ba.key>Furia de los lobos</> para atacar a los enemigos cercanos, infligiendo 5 golpes de <@ba.fire>DAÑ por calor</> y aplicando <#ba.burning>Combustión</> forzada."
     },
     "indicator": {
       "levels": [
@@ -74,8 +74,8 @@
     },
     "talent1": {
       "levels": [
-        "Cada vez que Wulfgard aplica <#ba.burning>Combustión</>, obtiene <@ba.key>Colmillos abrasadores</> durante {duration:0}s. Este efecto no se puede acumular. Colmillos abrasadores: Mientras está activo, Wulfgard obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{add:0%}</>.",
-        "Cada vez que Wulfgard aplica <#ba.burning>Combustión</>, obtiene <@ba.key>Colmillos abrasadores</> durante {duration:0}s. Este efecto no se puede acumular. Colmillos abrasadores: Mientras está activo, Wulfgard obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{add:0%}</>."
+        "Cada vez que Wulfgard aplica <#ba.burning>Combustión</>, obtiene <@ba.key>Colmillos abrasadores</> durante {duration:0} s. Este efecto no se puede acumular. Colmillos abrasadores: Mientras está activo, Wulfgard obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{add:0%}</>.",
+        "Cada vez que Wulfgard aplica <#ba.burning>Combustión</>, obtiene <@ba.key>Colmillos abrasadores</> durante {duration:0} s. Este efecto no se puede acumular. Colmillos abrasadores: Mientras está activo, Wulfgard obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{add:0%}</>."
       ],
       "name": "Colmillos ardientes"
     },
@@ -101,7 +101,7 @@
       "name": "Talento para las tierras salvajes"
     },
     "files": {
-      "main": "<@profile.key>NOMBRE CLAVE: Wulfgard \nGÉNERO: Masculino \nAUTENTICACIÓN: La manada \nFecha de nacimiento: 16 de noviembre \nRAZA: Lupo\n[ESTADO DE INFECCIÓN POR ORIPATÍA] \nOripatía positiva (infectado), según informes de examen médico. \n\n[EXAMEN FÍSICO INTEGRAL] \nFUERZA FISIOLÓGICA: Excelente \nHABILIDAD DE COMBATE: Excelente \nPERICIA TÁCTICA: Estándar \nASIMILACIÓN DE ARTES DE ORIGINIO: Estándar \n\nEl modo de vida de los Rompesuelos ha dejado su marca en Wulfgard. Cada cicatriz es evidencia de pruebas pasadas. Aunque el dolor no parece pesarle ahora, puede que no siempre sea así. Debe aprender a abordar las misiones con mayor consideración por su propia vida — o, cuando menos, a confiar más en sus compañeros en lugar de lanzarse solo cada vez.</>",
+      "main": "<@profile.key>NOMBRE CLAVE: Wulfgard \nGÉNERO: Masculino \nAUTENTICACIÓN: La manada \nFecha de nacimiento: 16 de noviembre\nRAZA: Lupo\n[ESTADO DE INFECCIÓN POR ORIPATÍA]\nOripatía positiva (infectado), según informes de examen médico.\n\n[EXAMEN FÍSICO INTEGRAL]\nFUERZA FISIOLÓGICA: Excelente\nHABILIDAD DE COMBATE: Excelente\nPERICIA TÁCTICA: Estándar\nASIMILACIÓN DE ARTES DE ORIGINIO: Estándar\n\nEl modo de vida de los Rompesuelos ha dejado su marca en Wulfgard. Cada cicatriz es evidencia de pruebas pasadas. Aunque el dolor no parece pesarle ahora, puede que no siempre sea así. Debe aprender a abordar las misiones con mayor consideración por su propia vida — o, cuando menos, a confiar más en sus compañeros en lugar de lanzarse solo cada vez.</>",
       "humanResources": "<@profile.key>El operador Wulfgard, de nombre completo Catello Wulfgard Luppino, proviene de un clan Rompesuelos conocido como La Manada. Como su representante designado, estableció una asociación con Endfield Industries. Recomendado por la supervisora Perlica, se incorporó a la División de tecnología especializada y ahora sirve en el Equipo de Crisis. \n\nWulfgard posee habilidades de observación y adaptabilidad excepcionales. Hasta donde sé, puede desenvolverse con facilidad en la mayoría de los entornos de alto riesgo. \nPrefiere claramente operar solo y destaca en operaciones encubiertas. Sin embargo, parece reacio a involucrarse en asuntos interpersonales, por lo que en misiones que requieran trabajo en equipo se recomienda darle la mayor autonomía posible. \nCabe destacar que los informes de prueba muestran que Wulfgard rinde extremadamente bien tanto en resistencia física como en velocidad de reacción. Es diestro con las armas de fuego, hábil en el combate cuerpo a cuerpo y tiene el talento de convertir cualquier objeto (incluso una pluma) en un arma. \nQuizá su tiempo en las tierras salvajes ha aguzado sus instintos: Wulfgard tiene un agudo sentido del peligro y una comprensión profunda de cómo interactuar con los habitantes de la frontera, especialmente cuando se trata de asuntos Rompesuelos. Creo que cualquiera que haya hecho equipo con él estaría de acuerdo. \n— Martin Marvin Malen, Asistente, División de RR. HH., Endfield Industries</>",
       "file1": "<@profile.key>Cuando Wulfgard llegó por primera vez a Endfield, su trasfondo Rompesuelos levantó más de una ceja. Algunos operadores sospechaban que tenía motivos ocultos. Pero con los años descubrieron que detrás del exterior frío y la lengua afilada había alguien con quien sorprendentemente era fácil llevarse bien. \nSiempre es puntual, eficiente, responsable y minucioso con la limpieza. En muchos sentidos, marca todas las casillas del “compañero ideal.” Por desgracia, no parece disfrutar trabajar con otros. Cada vez que se le pide presentar un informe, solicita en su lugar ser asignado a operaciones en solitario. \nPor otro lado, Wulfgard nunca ha sido tímido para compartir sus ideas sobre modificaciones de armas, lo que ha causado dolores de cabeza a los Ingenieros de Arsenal de Endfield. Muchos operadores conocieron a Wulfgard durante alguna de las sesiones regulares de prueba de nuevas armas, donde lo veían ajustar con calma un arma justo frente a su diseñador y luego decir: “Así funciona mejor.” Esto a menudo dejaba a los ingenieros al borde de perder la compostura. \nAunque eso le valió un lugar en la lista de “no bienvenidos” del equipo del Arsenal, a Wulfgard no le importó. Siguió modificando cada arma nueva que recibía hasta que se sentía correcta para él. \n\n“Los cazadores experimentados siempre eligen sus mejores herramientas de caza o las modifican hasta que se vuelven las mejores.”</>",
       "file2": "<@profile.key>En una época en que la mayoría de los Rompesuelos son vistos como “destructores del orden”, La Manada destaca como una anomalía. Valoran el orden y mantienen una actitud pacífica hacia la Franja de la civilización. Aún hoy, se aferran a ciertas tradiciones antiguas, como fuertes lazos familiares y un profundo respeto por la unidad. \nEsa misma diferencia solo alimentó la histórica enemistad entre ellos y sus rivales, los Rompehuesos. Hace más de diez años, los Rompehuesos asestaron una emboscada brutal, desbaratando a La Manada cuando estaba en su punto más débil — justo después de la muerte de su Alfarión. \nWulfgard y su hermana menor sobrevivieron al ataque, pero se negaron a hablar de lo que realmente ocurrió. \nWulfgard dejó La Manada unos años después de su ceremonia de mayoría de edad, manteniéndose en contacto solo con unos cuantos amigos de confianza y con su hermana. \nNadie supo nunca por qué se fue. Se mantuvo en silencio, igual que con el ataque. \nTiempo después, se acercó a Endfield y propuso una asociación. Con el tiempo, se unió a la División de tecnología especializada como operador. \nAlguien le preguntó una vez por qué eligió Endfield. \nAl principio guardó silencio. Luego, con una honestidad desconcertante, respondió: \n“Quiero otro futuro para La Manada... y Endfield tiene la posibilidad de hacerlo realidad.” \nWulfgard habló con franqueza de las dificultades de La Manada. Su determinación firme y su intención honesta le abrieron puertas. \nAsí que tuvo todo el sentido que se convirtiera en operador. Como él mismo dijo, tenía un deber — demostrar el valor de La Manada y retribuir la confianza que Endfield depositó en él. \nDesde entonces, se ha convertido en una presencia silenciosa pero confiable en muchas misiones difíciles y peligrosas. \nLos operadores que antes tenían un profundo prejuicio contra los Rompesuelos empezaron a cambiar su visión — gracias a Wulfgard. \nLuego, las opiniones volvieron a cambiar tras la llegada de su hermana — la operadora Rossi. Pero esa es una historia para otra ocasión...</>",

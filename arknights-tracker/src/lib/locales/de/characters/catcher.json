@@ -104,8 +104,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Der Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
-        "Der Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 14 % zu verlangsamen.",
+        "Wachstumskammer zuweisen, um Stimmungsverlust aller Operatoren in der Kammer um 18 % zu verlangsamen."
       ],
       "name": "Wohlüberlegter Ansatz"
     },

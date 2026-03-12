@@ -1,14 +1,14 @@
 {
   "baseInfo": {
     "tags": [
-      "Elektr. Kumulierung",
+      "Elektrik",
       "Elektrifizieren"
     ],
     "behaviourHateTags": [
       "Sport"
     ],
     "behaviourUnavailableTags": [
-      "Introvertiert"
+      "Introvertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -20,7 +20,7 @@
     ],
     "hobbyTags": [
       "Lifestyle",
-      "Kreativ"
+      "Kreatives"
     ],
     "raceTag": "Liberi"
   },
@@ -122,7 +122,7 @@
       "name": "Pflichten einer Aufseherin"
     },
     "potential4": {
-      "description": "Kombofertigkeit <@ba.key>Sofortprotokoll: Kette</> verbessert: Die Dauer des Debuffs <#ba.spelldmg>Erlittener Technik-SDN</>, der von der <#ba.conduct>Elektrifizierung</> der Fertigkeit auf den Gegner angewendet wird, erhöht sich auf das <@ba.vup>{extra_scaling}</>-Fache der ursprünglichen Werts.",
+      "description": "Kombofertigkeit <@ba.key>Sofortprotokoll: Kette</> verbessert: Die Wirkung des durch die <#ba.conduct>Elektrifizierung</> der Fertigkeit auf den Gegner angewendeten Debuffs <#ba.spelldmg>Erlittener Technik-SDN</> erhöht sich auf das <@ba.vup>{extra_scaling}</>-Fache der ursprünglichen Werts.",
       "name": "Ständige Leitung"
     },
     "potential5": {
@@ -132,7 +132,7 @@
   },
   "arts": {
     "potential1": {
-      "name": "Die Anleitung",
+      "name": "Der Leitstern",
       "author": "STAR影法师",
       "description": "Wenn die Trümmer der Sterne das Licht verdecken, wird sie in aller Gelassenheit deinen Pfad erhellen. Sieh nur, wie sie leuchtet."
     },

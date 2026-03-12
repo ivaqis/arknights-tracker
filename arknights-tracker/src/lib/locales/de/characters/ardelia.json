@@ -63,7 +63,7 @@
         "durationS": "Dauer (Sek.)"
       },
       "name": "Wollparty",
-      "description": "Ardelia versetzt sich in einen Kanalisierungszustand, ruft Herrn Dolly zu Hilfe und schleudert mehrere Kopien von Herrn Dolly in willkürliche Richtungen. Jede Kopie verursacht <@ba.natur>Natur-SDN</>. Jeder Gegner kann nur alle {interval:0.0} Sek. 1-mal von einer Kopie getroffen werden."
+      "description": "Ardelia versetzt sich in einen Kanalisierungszustand, ruft Herrn Dolly zu Hilfe und schleudert mehrere Kopien von Herrn Dolly in willkürliche Richtungen. Jede Kopie verursacht <@ba.natur>Natur-SDN</>, wenn sie den Gegner trifft. Jeder Gegner kann nur alle {interval:0.0} Sek. 1-mal von einer Kopie getroffen werden."
     },
     "indicator": {
       "levels": [

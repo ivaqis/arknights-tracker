@@ -59,7 +59,7 @@
         "heatAmp": "열기 증폭 효과",
         "durationS": "지속 시간(초)"
       },
-      "name": "오버클럭 타임",
+      "name": "오버클록 타임",
       "description": "팀 전체에게 일정 시간 동안 <#ba.pulseenhance>전기 증폭</>과 <#ba.fireenhance>열기 증폭</>을 부여합니다."
     },
     "indicator": {
@@ -73,8 +73,8 @@
     },
     "talent1": {
       "levels": [
-        "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[{healvalue:0}+힘×{multiplier:0.0}]</>포인트의 회복시킵니다. <@ba.vup>{cd:0}</>초 동안 최대 1회만 회복시킵니다.",
-        "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[{healvalue:0}+힘×{multiplier:0.0}]</>포인트의 회복시킵니다. <@ba.vup>{cd:0}</>초 동안 최대 1회만 회복시킵니다."
+        "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[{healvalue:0}+힘×{multiplier:0.0}]</>포인트 회복시킵니다. 매 오퍼레이터마다 <@ba.vup>{cd:0}</>초 동안 최대 1회만 회복시킵니다.",
+        "<#ba.enhance>증폭</> 상태의 팀원이 스킬 피해를 준 후, 안탈이 해당 오퍼레이터의 생명력을 <@ba.heal>[{healvalue:0}+힘×{multiplier:0.0}]</>포인트 회복시킵니다. 매 오퍼레이터마다 <@ba.vup>{cd:0}</>초 동안 최대 1회만 회복시킵니다."
       ],
       "name": "즉흥적인 천재성"
     },
@@ -110,11 +110,11 @@
   },
   "potentials": {
     "potential1": {
-      "description": "궁극기 <@ba.key>오버클럭 타임</>이 제공하는 <#ba.pulseenhance>전기 증폭</>과 <#ba.fireenhance>열기 증폭</>의 효과가 기존의 <@ba.vup>{rate:0.0}</>배로 증가합니다.",
+      "description": "궁극기 <@ba.key>오버클록 타임</>이 제공하는 <#ba.pulseenhance>전기 증폭</>과 <#ba.fireenhance>열기 증폭</>의 효과가 기존의 <@ba.vup>{rate:0.0}</>배로 증가합니다.",
       "name": "아츠 적성"
     },
     "potential2": {
-      "description": "궁극기 <@ba.key>오버클럭 타임</>의 사용에 필요한 궁극기 에너지 <@ba.vup>-{1-costvalue:0%}</>",
+      "description": "궁극기 <@ba.key>오버클록 타임</>의 사용에 필요한 궁극기 에너지 <@ba.vup>-{1-costvalue:0%}</>",
       "name": "자동화 개량"
     },
     "potential3": {
@@ -134,17 +134,17 @@
     "potential1": {
       "name": "의지와 취향",
       "author": "REM",
-      "description": "안탈에게 있어 오리지늄 아츠의 비밀은 세상 만물 중 평생을 바쳐 탐구할 가치가 있는 것입니다."
+      "description": "오리지늄 아츠... 상당히 신비로운 존재라고 생각합니다. 제 평생을 다 바쳐서 연구해도 아깝지 않을 만큼 말이죠."
     },
     "potential3": {
       "name": "전념",
       "author": "黑犬",
-      "description": "\"방해하지 마세요. 저 친구, 지금 오리지늄 아츠로 불꽃을 먼지 크기만큼 압축하는 실험에 벌써 115번째 도전하는 중이거든요.\""
+      "description": "아, 지금은 좀 바쁩니다. 오리지늄 아츠로 불꽃을 먼지 크기까지 압축하는 실험을 총 115번째 하고 있거든요. 다음에 연락드리죠."
     },
     "potential5": {
       "name": "극치",
       "author": "言犬",
-      "description": "안탈은 배우고 깨달으며, 끝없는 탐구 속에서 단 하나의 해답을 향해 나아가고 있습니다."
+      "description": "배움과 깨달음... 끝없는 탐구 속에서 바라볼 수 있는 단 하나의 해답이죠."
     }
   }
 }

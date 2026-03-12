@@ -117,7 +117,7 @@
       "name": "Above the Clouds"
     },
     "potential2": {
-      "description": "Ultimate <@ba.key>Arcane Staff: Gravity Field</> improved: When an enemy is affected by the <@ba.key>Anomalous Gravity Field</> of the ultimate, each stack of <#ba.noguard>Vulnerability</> multiplies the effect of <#ba.spellvul>Arts Susceptibility</>. When finalizing the effects, the target is treated as having 1 additional stack of <#ba.noguard>Vulnerability</> (maxes out at 4 stacks).",
+      "description": "Ultimate <@ba.key>Arcane Staff: Gravity Field</> improved: When an enemy is affected by the <@ba.key>Anomalous Gravity Field</> of the ultimate, double the <#ba.spellvul>Arts Susceptibility</> increase per <#ba.noguard>Vulnerability</> stack. When finalizing this effect, the target is treated as having 1 additional stack of <#ba.noguard>Vulnerability</> (total stacks max out at 4).",
       "name": "Wind Walker"
     },
     "potential3": {

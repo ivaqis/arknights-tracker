@@ -1,0 +1,161 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Alt. cryogénique",
+      "Vuln. aux Arts"
+    ],
+    "behaviourHateTags": [
+      "Beaux-arts"
+    ],
+    "behaviourUnavailableTags": [
+      "Introverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
+    ],
+    "blocTag": "Palanque de Qingbo",
+    "expertTags": [
+      "Techniques de combat",
+      "Agilité"
+    ],
+    "giftPreferTags": [
+      "Sélection des marchands de Wuling"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Créativité"
+    ],
+    "raceTag": "Feli"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+      },
+      "name": "TU NE VAS PAS T'EN REMETTRE !",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "shootingDmgMultiplier": "Multiplicateur de DÉG de tir",
+        "shotStagger": "Déséquilibre de tir",
+        "dmgMultiplier1Waterspout": "Multiplicateur de DÉG (1 trombe)",
+        "waterspoutDurationS": "Durée de trombe (s)",
+        "spReturnPerWhirlpool": "Restitution de PC par tourbillon",
+        "artsSusceptibility2Waterspouts": "Sensibilité aux Arts (2 trombes)",
+        "artsSusceptibility3Waterspouts": "Sensibilité aux Arts (3 trombes)",
+        "artsSusceptibilityDurationS": "Durée de sensibilité aux Arts (s)"
+      },
+      "name": "JE SURFE SUR LA VAAAGUE !",
+      "description": "Tangtang bondit hors de l'eau et tire à bout portant pour infliger des <@ba.cryst>DÉG cryogéniques</> à l'ennemi et créer une <@ba.key>trombe</>.\nLancer la compétence de combat consomme aussi tous les <@ba.key>tourbillons</> à proximité pour créer d'autres <@ba.key>trombes</> et <#ba.return>restaure</> quelques PC en fonction du nombre de trombes créées.\n<@ba.key>Trombe</> : applique 1 cumul d'<#ba.crystinflict>altération cryogénique</> aux ennemis à portée, et inflige des <@ba.cryst>DÉG cryogéniques</> continus. Si la compétence de combat crée plusieurs <@ba.key>trombes</>, ces dernières appliquent aussi une <#ba.spellvul>sensibilité aux Arts</> aux ennemis (mais pas d'autre cumul d'<#ba.crystinflict>altération cryogénique</>).\n<@ba.info>Les DÉG infligés par la trombe sont considérés comme des DÉG de compétence de combat.</>"
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "whirlpoolDurationS": "Durée de tourbillon (s)"
+      },
+      "name": "RIVIÈRE, VIENS À MOI !",
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime d'une <#ba.crystinflict>altération cryogénique</> ou qu'il subit des <#ba.spellburst>DÉG d'explosion des Arts</>.\nTangtang libère un jet d'eau puissant qui transperce tous les ennemis sur son passage en leur infligeant des <@ba.cryst>DÉG cryogéniques</> et crée un <@ba.key>tourbillon</>.\n<@ba.info>Jusqu'à 2 tourbillons peuvent coexister sur le champ de bataille.</>"
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgOverTimeTotalMultiplier": "Multiplicateur total de DÉG continus",
+        "oldenStareDurationS": "Durée de REGARD ANCIEN (s)",
+        "rogueWaveDmgMultiplier": "Multiplicateur de DÉG de Vague déferlante",
+        "earlyRogueWaveDmgMultiplier": "Multiplicateur de DÉG de Vague déferlante anticipée",
+        "rogueWaveStagger": "Déséquilibre de Vague déferlante",
+        "earlyRogueWaveStagger": "Déséquilibre de Vague déferlante anticipée"
+      },
+      "name": "LA CHEFFE TE VOIT !",
+      "description": "Tangtang lève son cache-œil et se sert de cet œil pour libérer un <@ba.key>REGARD ANCIEN</> qui immobilise temporairement les ennemis dans la zone d'effet et leur inflige des <@ba.cryst>DÉG cryogéniques</> continus.\nLorsque l'évolution du <@ba.key>REGARD ANCIEN</> cesse, une vague déferlante frappe violemment les ennemis dans la zone d'effet en leur infligeant des <@ba.cryst>DÉG cryogéniques</>.\nSi l'opérateur contrôlé exécute une attaque plongeante dans le motif du <@ba.key>REGARD ANCIEN</>, cela fait cesser son évolution et invoque immédiatement la vague déferlante pour infliger davantage de <@ba.cryst>DÉG cryogéniques</>."
+    },
+    "indicator": {
+      "levels": [
+        "Agilité de l'opérateur +10.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +20."
+      ],
+      "name": "Escarmoucheur"
+    },
+    "talent1": {
+      "levels": [
+        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{1-ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet.",
+        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{1-ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet."
+      ],
+      "name": "Famille honorable"
+    },
+    "talent2": {
+      "levels": [
+        "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+{dmg_up_water_ult:0%}</> de DÉG.",
+        "Pendant le <@ba.key>REGARD ANCIEN</>, quand l'opérateur contrôlé exécute une attaque plongeante, cela fait cesser précocement son évolution et crée une <@ba.key>trombe</>. Tous les <@ba.key>tourbillons</> à proximité sont aussi consommés pour être transformés en <@ba.key>trombes</> supplémentaires. Les \n<@ba.key>trombes</> ainsi créées ont les mêmes effets que ceux de la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> et infligent <@ba.vup>+{dmg_up_water_ult:0%}</> de DÉG."
+      ],
+      "name": "Héraut des émeutes"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 14 %.",
+        "En l'affectant à la chambre de culture, ralentit la baisse d'humeur de tous les opérateurs qui s'y trouvent de 18 %."
+      ],
+      "name": "Cheffe suprême"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 20 %.",
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 30 %."
+      ],
+      "name": "Fille de la rivière"
+    },
+    "files": {
+      "main": "<@profile.key>NOM DE CODE : Tangtang\nSEXE : Féminin\nAUTHENTIFICATION : Palanque de Qingbo\nDATE DE NAISSANCE : 29 novembre\nRACE : Feli\n[STATUT D'INFECTION À L'ORIPATHIE]\nPositif (infectée), d'après les rapports médicaux.\n\n[EXAMEN PHYSIQUE INTÉGRÉ]\nVIGUEUR PHYSIOLOGIQUE : Standard\nCAPACITÉS AU COMBAT : Excellentes\nSENS TACTIQUE : Normal\nASSIMILATION DES ARTS DE L'ORIGINIUM : Excellente\n\n\"J'ai consulté les rapports de l'unité d'intervention... Elle a mentionné avoir été adoptée, c'est bien ça ? Hmm... Il est vrai que nombre de personnes ont été déplacées suite aux catastrophes, même sous l'administration de l'Académie des sciences de Hongshan. Dites à la division des RH d'enquêter sur son passé pour l'instant. Nous pourrions avoir des surprises.\"</>",
+      "humanResources": "<@profile.key>Tangtang est membre et principale représentante de la palanque de Qingbo. Elle rejoint les Industries Endfield pour des raisons personnelles et occupe depuis le poste de cheffe du bureau de liaison des Industries Endfield à la palanque de Qingbo.\n\nL'opératrice Tangtang est sans doute la figure la plus marquante parmi les nombreux membres du personnel que l'Endministrator a invités à bord du Dijiang. Tout comme lors de notre première rencontre... Pardonnez-moi, je dois retrouver les vidéos enregistrées dans ma base de données :\n« Clac ! Clac ! Clac ! »\n« Hé mais, qu'est-ce que cette chose fait sur un gros dirigeable ? On dirait un hyenard en fer à trois têtes. C'est ridicule, je trouve... »\n« Opératrice Tangtang, Je m'occupe de votre intégra... Ne tapez pas sur mon panneau, je vous prie. Je suis un assistant personnel des Industries Endfield... »\n« Alors tu fais partie de l'équipe de Masque noir ! Fallait le dire, Vieux masque de fer ! Tiens, j'ai apporté de bonnes petites choses à ma nouvelle famille. Fais-toi plaisir ! »\nAprès avoir insisté à plusieurs reprises sur le fait que je n'avais besoin d'aucun certif de Tangtang, minerai ou bijou, Tangtang s'est empressée de sortir de sa poche une parure circulaire fabriquée à partir de matériaux naturels. Je le décrirais comme une couronne florale tissée en bambou. Elle a posé cette parure sur l'un de mes panneaux, puis s'est mise à taper curieusement sur les deux autres : « Tu es bien plus intelligent que ces pantins métalliques de Wuling ! Ça te dirait de me rejoindre à la palanque de Qingbo ? Allez, tu peux m'appeler cheffe ! »\nMes impressions sur Tangtang sont les mêmes que celles des autres. Elle est joyeuse, franche et modeste. Elle a une âme d'enfant, passionnée et curieuse de tout... Pour la résumer en quelques mots, je dirais que c'est une enfant en pleine croissance. Cependant, je suis dans l'impossibilité de rejoindre la palanque de Qingbo et de conquérir Talos-II à ses côtés... Cela n'a rien à voir avec la montagne de dossiers du personnel que je dois traiter. Ce n'est juste pas conforme aux régulations d'Endfield.\nPour éviter qu'elle se blesse aux mains et m'épargner une « commotion mécanique », je ferais mieux de m'en éloigner... Mais curieusement, elle arrive toujours à me mettre la main dessus.\n— Martin Marvin Malen, Assistant, division des RH, Industries Endfield</>",
+      "file1": "<@profile.key>Après l'incident survenu à la palanque de Qingbo, nous nous attendions à recevoir une opératrice déboussolée, en deuil ou en colère. À titre préventif, nous avions organisé une cellule de soutien psychologique pour l'aider à surmonter son traumatisme. Mais, lorsque Tangtang est montée à bord du Dijiang par le Télé-Protocole, un sourire radieux illuminait son visage, ne laissant transparaître aucun signe de détresse.\nLa superviseuse Perlica nous a rappelé que malgré la complexité de sa communauté, Tangtang était parvenue à rassembler son peuple désuni grâce à son charisme. Cela montre qu'elle fait preuve d'une grande résilience et qu'elle est capable d'assumer de lourdes responsabilités.\nPar ailleurs, Tangtang s'est montrée bien plus perspicace que nous l'avions imaginé. Sa réactivité et sa sensibilité face aux situations sont sans pareilles. Lors de la planification du développement de la palanque de Qingbo, elle privilégiait systématiquement le bien-être des résidents. Audacieuse et attentive, elle a veillé à ce que chaque individu, qu'il soit jeune, âgé, malade ou handicapé, trouve sa place, afin que personne ne soit laissé pour compte ou oublié dans le tourbillon des tâches quotidiennes. Nous apprécions tout particulièrement cette qualité, car, lorsque nous intervenons dans des contextes culturels variés, pouvoir compter sur une guide qui comprend la complexité locale des dynamiques interpersonnelles et de l'écosystème nous permet de réduire considérablement les coûts de communication liés à nos efforts de développement.\nTangtang s'est adaptée à la vie à bord du Dijiang incroyablement vite. On la voit parfois marcher aux côtés de Chen Qianyu, de l'Endministrator ou bien de la superviseuse Perlica, avec le regard qui brille et la queue qui se balance légèrement. Elle s'est aussi fait de nouveaux amis à qui elle donne des surnoms affectueux comme ils le font à la palanque de Qingbo. En plus, elle a l'air fascinée par tout ce qu'il y a à bord du Dijiang, particulièrement le distributeur automatique de la cantine... Son premier jour, elle en a fait plusieurs fois le tour, jusqu'à ce qu'un opérateur vienne gentiment lui montrer comment insérer des pièces dans la machine et appuyer sur les boutons colorés pour en faire tomber qu'une boisson. Elle l'a écouté calmement, mais difficile de savoir si elle avait parfaitement compris... Le soir même, l'alarme du distributeur s'est déclenchée et l'opératrice Xaihi a dû récupérer un certif de Tangtang coincé dans la fente de la machine.\nAprès plusieurs mois d'observation, nous avons conclu que Tangtang n'avait pas besoin de soutien psychologique de notre part. En revanche, sa présence a, d'une certaine manière, redonné un nouveau souffle au Dijiang.\nNous en discutions avec des opérateurs qui la connaissent bien lorsque Chen Qianyu, le sourire aux lèvres, nous a dit : « Tangtang a grandi au bord de l'eau, mais elle tient davantage d'une flamme inextinguible. Si une tempête passagère peut l'éteindre, l'étincelle renaît rapidement pour briller à nouveau de mille feux. »\nUn après-midi, nous avons entendu Tangtang, aussi franche que d'habitude, discuter avec quelqu'un : « La cheffe n'a pas une si grosse tête, petit. Je ne vais pas passer mon temps à essayer de comprendre les choses, tu sais. Ça va finir par me rendre bête ! »</>",
+      "file2": "<@profile.key>[Rapport de diagnostic clinique]\nLes résultats de l'imagerie révèlent les contours flous des organes de l'opératrice ainsi que la présence d'ombres anormales visibles dans son corps. La détection de particules d'originium dans son système vasculaire révèle des anomalies, indiquant des signes d'oripathie. À ce stade, l'opératrice est positive à l'oripathie.\n\nNote du médecin traitant : Selon Tangtang, elle a contracté la maladie il y a dix ans, lors d'un conflit entre la palanque de Qingbo et les Tianshi de la ville de Wuling. Tangtang déclare n'avoir jamais reçu de traitement spécial pendant ces dix années, mais uniquement des remèdes traditionnels administrés de manière sporadique par les habitants de la palanque. Pourtant, les résultats des examens indiquent que le taux d'assimilation des cellules d'originium et la densité des cristaux d'originium dans son sang sont très bien contrôlés.\nLorsque nous l'avons interrogé sur ce sujet, Tangtang a répondu : « Tout le monde dit que je suis la fille de la rivière. L'eau élimine la maladie. »\nLes étendues d'eau naturelles pourraient-elles vraiment guérir l'oripathie ? De toute évidence, c'est impossible.\n\n[Formulaire de demande de médicaments d'un Tianshi]\nNom du médicament générique : Inhibiteur d'oripathie\nQSP : Long terme\nLocalisation de l'infection chez la patiente : Région oculaire\nRaison de la demande : Aide à la palanque de Qingbo\nJournal audio :\n« Pour être honnête, j'hésite un peu à lui livrer les médicaments... La première fois, il nous les a jetés à la figure en criant : \"Pas question d'accepter de l'aide de la part de Wuling !\" et il a même essayé de nous charger avec sa tête... Heureusement que les gardes étaient là et qu'ils nous ont aidés à nous échapper. Ce n'est pas que j'ai peur qu'il me tue, c'est juste qu'on ne peut pas se permettre qu'un tel incident se reproduise. »\n« L'oripathie de la fille est en train de s'aggraver. Nous le savons, et eux aussi. Elle a contracté la maladie par notre faute. C'est notre devoir de la soigner. »\n« À l'époque... c'était le chaos total. Le ciel était complètement noir, pesant au-dessus de nos têtes, alors qu'une pluie torrentielle s'abattait sur nous. Nous peinions à avancer contre le vent hurlant lorsque les habitants de la palanque ont surgi de derrière les collines, armes à la main. Leurs silhouettes dans la nuit ressemblaient à des esprits malveillants... »\n« Tout le monde était terrifié. Personne n'avait remarqué qu'une si jeune enfant se trouvait dans la foule... »\n« La pluie a fait disparaître le sang... Ou, non, peut-être qu'il n'a jamais disparu. Chaque fois que je ferme les yeux, je vois cette fille blessée à l'œil et le regard du chef... Le regard qui disait qu'il voulait juste survivre... Je ne les oublierai jamais, aussi longtemps que je vivrai. »\n« La deuxième fois, nous avons laissé des seringues à la lisière de la palanque de Qingbo, où les habitants passaient inévitablement. »\n« Cette fois-ci, ce n'était pas l'aide d'un ennemi... peut-être étaient-ce un don du ciel, ou de la terre, ou peut-être qu'une bête les transportait. Ce sera peut-être plus facile pour eux de les accepter de cette manière. »\n« J'ai attendu deux jours entiers... et ils les ont pris. »\n« Deux jours plus tard, j'ai vu la petite fille jouer près de l'eau. Elle courait après les longauris le long de la rivière sur une longue distance. Elle avait l'air d'aller bien mieux. »\n« J'ignore ce qui nous attend à présent, et je sais que cet acte est loin d'être une véritable réparation, mais, au moins, j'ai pu passer une bonne nuit de sommeil ce jour-là. »</>",
+      "file3": "<@profile.key>Tout le monde l'appelait \"Petite dame\" à la palanque de Qingbo, car Ruan Lin n'avait qu'un enfant, puis en avait sauvé une autre de la noyade. On appelait le premier \"Petit bonhomme\", alors son deuxième enfant est naturellement devenu \"Petite dame\". Les habitants de la palanque ont toujours eu une façon de penser simple et directe.\nNul ne savait d'où la Petite dame venait. Ruan Yi disait qu'il avait trouvé ce petit chaton dans un panier en bambou qu'il avait ramassé. Ruan Lin disait que c'était un trésor envoyé par la source ancestrale, la fille de la Rivière. « Si la Petite dame est née de la rivière, ça ne devrait pas plutôt être la maîtresse de la rivière ?! », demanda un jeune garçon qui écoutait la conversation. Tangtang, qui avait entendu la question, bomba le torse, sauta sur son cheval à bascule en bambou et s'exclama : « C'est vrai, ça ! L'eau est à moi ! La palanque de Qingbo est à moi ! Tout ce qu'il y a de bon à manger et d'amusant est à moi aussi ! »\nRuan Lin éclata de rire en ébouriffant les cheveux de Tangtang. Rapidement, toutes les personnes réunies autour du feu se mirent à rire. Leur gaieté était si contagieuse que Tangtang rit aux éclats à son tour. Puis, la conversation glissa vers d'autres sujets et personne n'aborda plus ce sujet.\nCe n'est que plus tard, lorsque Tangtang avait un peu grandi et qu'elle écoutait la conversation de palanquiens, qu'une réflexion lui vint soudainement à l'esprit. C'était impossible que l'eau de la rivière puisse donner vie à une Feli comme elle. Où étaient ses parents biologiques ?\nTangtang avait du mal à comprendre. Elle passa des jours à se comparer aux habitants de la palanque. Certains étaient trop imposants, d'autres trop petits. Aucun n'avait des oreilles ou une queue aussi belles qu'elle.\nCette question tourmenta Tangtang un long moment, jusqu'au jour où Ruan Lin l'invita à manger des ailettes mijotées à la marmite. Tangtang jeta un œil au bol de Ruan Yi, puis au sien. La tête, les yeux et la poitrine tendres de l'ailette étaient dans son bol. « Qu'est-ce que ça peut me faire que les palanquiens jacassent sur \"l'amour maternel\" ? Les plats de papa sont délicieux et ça me suffit ! », se dit-elle en prenant une bouchée de poitrine d'ailette qu'elle fit manger à Ruan Lin.\n\nÀ l'issue d'une enquête et de vérifications approfondies, la division des RH confirme que Tangtang n'était encore qu'un nouveau-né non sevré lorsqu'elle a été trouvée. D'après les caractéristiques physiologiques d'un nouveau-né, il lui aurait été impossible de dériver aussi loin sur la rivière. Nous pouvons donc en déduire qu'elle a été abandonnée quelque part près de la palanque de Qingbo.\nAprès avoir réalisé des examens approfondis et évalué son œil, le service médical soupçonne que le motif que l'on y voit est étroitement lié à ses Arts de l'originium. Le motif est d'une régularité si élevée qu'il ne peut s'agir d'un symptôme aléatoire résultant d'une infection à l'oripathie. Il est plus probable qu'il soit lié à ses antécédents médicaux familiaux. Néanmoins, l'examen de l'ensemble des dossiers du personnel conservés à la palanque de Qingbo n'a révélé aucun cas similaire au sien.\nPour la citer, « [elle s'est] entraînée, encore et encore, près de la rivière, et ce motif est apparu tout seul ».\nC'est tout bonnement impossible. Nous avons sollicité l'aide de l'ASH. Malheureusement, leurs archives locales ne nous ont pas non plus permis d'identifier les proches de Tangtang. Cependant, une Tianshi experte en histoire de Yan a fait une grande découverte. En parcourant les documents yanais transmis par Terra, elle a pu retrouver des archives faisant directement référence au motif présent dans l'œil de Tangtang. Selon certaines légendes transmises par la littérature, ce motif représente l'évolution du ciel et de la terre, et renferme un savoir ancestral. Toutefois, Tangtang ignore manifestement ce savoir. Les Tianshi de Wuling étaient tout aussi surpris par cette découverte. Ils n'auraient jamais imaginé avoir en leur sein une personne capable d'utiliser les arts de l'Originium de manière aussi unique.\nPour conclure, les raisons précises pour lesquelles Tangtang a été abandonnée à la palanque de Qingbo sont sans doute plus complexes qu'il n'y paraît...\n...\nLorsque nous lui avons fait part de nos découvertes, elle s'est gratté la tête et a répondu que ses origines n'avaient pas vraiment d'importance. Après tout, elle avait une famille et des amis, maintenant. Elle était heureuse. Cela dit, elle se demandait tout de même, un petit peu, si elle avait encore de la famille biologique et comment ils allaient... en insistant sur le fait que ce « un petit peu » était de la taille d'une griffe de coquillère.\nTangtang possède encore la petite couverture dans laquelle elle était enveloppée bébé. Elle semblait un peu hésitante avant de nous la confier, mais elle s'est vite ressaisie et a repris son air insouciant habituel avant de nous dire : « N'oubliez pas de me la rendre quand vous aurez fini de l'examiner ! »</>",
+      "file4": "<@profile.key>[Archive vidéo]\n06:23:45:10\n« Une caméra... ce bidule qui enregistre des trucs ? C'est mignon, je trouve, et ça bouge en plus. On dirait un petit Lupo ! »\n« Les habitants de Wuling ont créé ce gadget. On l'a chopé la dernière fois qu'on les a affrontés. Faut juste appuyer sur ce bouton pour l'allumer... Hé, cheffe, tu veux essayer pour voir ? »\n« Allez, c'est parti ! Hé, comment tu as fait pour que j'aie l'air aussi courte sur pattes dans la vidéo ? J'ai l'impression d'être minuscule ! »\n« Ben, c'est pas comme si tu l'étais pas à la b... Hé, hé, me frappe pas ! C'est moi qui suis minuscule, c'est bon, OK ! »\n« Je joue plus avec toi ! Je vais mettre une raclée à cette folle furieuse et me servir de ce petit Lupo pour enregistrer le K.O. que je vais lui mettre ! »\n\n07:10:30:15\n« Maudite soit cette folle, à aller se battre encore une fois pour sa grande Zhuang... La dernière fois, des éclabousseurs l'ont battue jusqu'au sang. On pourrait croire qu'elle en a tiré une leçon. Mais non... »\n« Moi je vais rester tranquille dans ma palanque et esquiver cette gangrènerie... J'ai de l'eau salubre et de délicieuses ailettes à manger... »\n« Hé, petit Lupo, arrête de bouger ! Regarde ! Y'a une inconsciente qui s'entraîne à l'épée à la frontière de Wuling. Suivons-la pour voir ce qui se passe. »\n« Hé, ses deux épées sont plutôt sympas. Le coin grouille d'éclabousseurs, ça devient dangereux. Mieux vaut l'empêcher de finir en bouillie. Et moi, la cheffe, je prendrai ses petits joujoux. »\n\n08:36:05:55\n« C'est vous qui avez tué tous ces éclabousseurs ? »\n« Exactement, ces vermines ne faisaient pas le poids. Mais, merci de m'avoir aidée ! T'es plutôt douée en tir. Je suis Chen Qianyu, enchantée... ? »\n« Tangtang. Cheffe suprême de la palanque de Qingbo ! Vous avez déjà entendu parler de moi ? »\n« Bien sûr ! La palanque de Qingbo, ceux qui cherchent toujours des noises à la ville de Wuling... Attends, t'es pas là pour me voler, j'espère ? »\n« Ça dépend. Vous êtes de Wuling ? Je suis une cheffe juste et Wuling est la seule chose qui figure dans ma liste noire ! »\n« Je le suis, euh, en quelque sorte... enfin, non. Plus maintenant. »\n« QUOI ? La folle furieuse vous a renié ? C'est pas grave, c'est vraiment la plaie d'être de Wuling... Hé, mais pourquoi vous pleurez ? BEURK ! Vous mouchez pas sur mes vêtements ! »\n\n11:42:13:07\n« Je n'ai pas trouvé de trésors et, en plus, j'ai perdu un vêtement. Ce voyage est une cata... OUAH !? »\n« Bah alors, petit chaton, tu traînes encore autour de Wuling ? Je croyais t'avoir déjà dit de t'éloigner d'ici. »\n« C'est pas tes oignons, la folle ! Laisse-moi partir ! »\n\nTangtang et Chen Qianyu étaient blotties l'une contre l'autre tandis qu'elles scrutaient la vidéo. Elles se dévisagèrent, perplexes et silencieuses. Soudain, Tangtang saisit l'appareil et s'enfuit à toute vitesse...\n« Masque noir ! Scribe pâle ! REGARDEZ ÇA ! J'ai des vidéos incroyables d'Écailles vertes en pleurs ! ET C'EST PAS BEAU À VOIR ! »\n« Tangtang !!! Arrête-toi immédiatement !!! »\nChen Qianyu, rouge de honte, s'est mise à poursuivre Tangtang autour de l'espace central au moins cinq fois avant que Mi Fu, ne pouvant plus supporter ce spectacle, ne les attrape toutes les deux par le col pour les arrêter.\n« Tangtang, j'ai dû te poursuivre à Wuling, et je dois encore te poursuivre à bord du Dijiang lors d'un voyage officiel... Chen, pourquoi encouragez-vous ses bêtises ? »\n« Cet endroit appartient à mon cher Masque noir, la folle ! Tu n'as aucun droit ! Lâche ta cheffe ! IMMÉDIATEMENT ! »\nTandis que Tangtang et Mi Fu s'échangeaient des noms d'oiseau, Chen Qianyu se libéra discrètement de l'emprise de Mi Fu, arracha la caméra des mains de Tangtang, puis s'empressa de supprimer cette « honte » en appuyant sur un bouton. Ensuite, elle tira la langue d'un air espiègle, puis braqua l'objectif sur le duo se chamaillait.\nLa caméra immortalisa fidèlement la scène. Tangtang, que Mi Fu tenait par le col, se souvint du passé... De toutes les fois où Mi Fu la poursuivait ou que les deux se bagarraient, c'était la première fois que Mi Fu parvenait à attraper Tangtang par ses points vitaux. Tant qu'elle était concentrée, Tangtang arrivait toujours à s'échapper.\nElle ne s'était jamais demandé pourquoi elle parvenait à fuir si facilement. Chen Qianyu, qui n'avait rien manqué de la scène, remporta la victoire avec une vidéo de Tangtang, la cheffe vaincue, les oreilles tombantes et l'air dépité, que personne ne se lasse de regarder.</>"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce la compétence de combo <@ba.key>RIVIÈRE, VIENS À MOI !</> : le multiplicateur de DÉG est multiplié par <@ba.vup>{atk_scale:0.0}</> et le temps de recharge est désormais de <@ba.vup>{coolDown:0}</> s.\nRenforce la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> : pour chaque <@ba.key>tourbillon</> consommé et transformé en <@ba.key>trombe</>, <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC supplémentaires.",
+      "name": "Réserve secrète"
+    },
+    "potential2": {
+      "description": "Agilité <@ba.vup>+{Agi:0}</>, <@ba.vup>+{CrystDamageIncrease:0%} de DÉG cryogéniques infligés</>.",
+      "name": "Fille de la rivière"
+    },
+    "potential3": {
+      "description": "Renforce la compétence de combat <@ba.key>JE SURFE SUR LA VAAAGUE !</> : le multiplicateur de DÉG passe à <@ba.vup>{atk_scale_1:0.0}</> fois sa valeur d'origine. Lors de la création de plusieurs <@ba.key>trombes</>, l'effet de <#ba.spellvul>sensibilité aux Arts</> augmente de <@ba.vup>{rate_spellvulnerable_02:0%}</>.",
+      "name": "Aura de cheffe"
+    },
+    "potential4": {
+      "description": "Renforce l'ultime <@ba.key>LA CHEFFE TE VOIT !</> : coût de l'énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Méditation de Qingbo"
+    },
+    "potential5": {
+      "description": "Renforce l'ultime <@ba.key>LA CHEFFE TE VOIT !</> : le multiplicateur de DÉG passe à <@ba.vup>{atk_scale_1:0.00}</> fois sa valeur d'origine. \nAmélioration du talent <@ba.key>Héraut des émeutes</> : les dégâts des trombes infligés par l'ultime <@ba.key>LA CHEFFE TE VOIT !</> augmentent de <@ba.vup>{dmg_up_water_ult:0%}</>.",
+      "name": "Regard surnaturel de cheffe"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "L'eau cristalline est le reflet de l'âme",
+      "author": "Samail",
+      "description": "Le cœur de Tangtang est fait d'eau, tel un étang paisible au clair de lune qui scintille de mille feux."
+    },
+    "potential3": {
+      "name": "Séparateur de bambou",
+      "author": "二值笔战士",
+      "description": "Le parfum du bambou frais lui rappelle le jour où, un après-midi ordinaire de farniente au soleil, les palanquiens tissaient des imperméables en bambou pour l'année à venir."
+    },
+    "potential5": {
+      "name": "Les ordres de la cheffe suprême sont sacrés",
+      "author": "수줍(Sjoop)",
+      "description": "« Masque noir ! Ne vous éloignez pas de votre cheffe suprême ! Un jour viendra, je vous emmènerai au bout du monde ! »"
+    }
+  }
+}

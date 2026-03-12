@@ -9,7 +9,7 @@
       "Sports"
     ],
     "behaviourUnavailableTags": [
-      "Introversion"
+      "Introverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
     ],
     "blocTag": "Industries Endfield",
     "expertTags": [
@@ -67,15 +67,15 @@
       "ultimate": {
         "durationS": "Durée (s)",
         "batkDmgMultiplier": "Multiplicateur de DÉG d'ATQ-B",
-        "poweredAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ renforcée",
+        "enhancedFinalStrikeDmgMultiplier": "Multiplicateur de DÉG de Coup final amélioré",
         "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
-        "enhancedAtkStagger": "Déséquilibre après l'ATQ améliorée",
+        "enhancedFinalStrikeStagger": "Déséquilibre de Coup final amélioré",
         "maxStacks": "Cumuls max.",
         "criticalRateBoostPerStack": "Taux de coups critiques accru par cumul",
         "criticalDmgBoostAtMaxStacks": "DÉG critiques accrus aux cumuls max."
       },
       "name": "Pistolet à cryodécharge",
-      "description": "Déploie immédiatement le robot de soutien Clochette et fait d'Yvonne l'opératrice contrôlée.\n<@ba.key>Améliore</> temporairement l'attaque de base (ATQ-B) d'Yvonne. Chaque séquence d'ATQ-B exécutée confère un cumul de bonus de taux de coups critiques. Une fois la quantité maximale de cumuls atteinte, Yvonne gagne également un bonus de DÉG critiques. Lorsque la compétence est sur le point de s'achever, la dernière ATQ-B d'Yvonne devient un <#ba.lastcombo>Coup final</> qui inflige de lourds <@ba.cryst>DÉG cryogéniques</>.\nSi l'ennemi est <#ba.frozen>solidifié</>, Yvonne exécute une attaque supplémentaire qui inflige des <@ba.cryst>DÉG cryogéniques</>, puis <#ba.consume>consomme</> la <#ba.frozen>Solidification</> de l'ennemi."
+      "description": "Déploie immédiatement le robot de soutien Clochette et fait d'Yvonne l'opératrice contrôlée.\n<@ba.key>Améliore</> temporairement l'attaque de base (ATQ-B) d'Yvonne. Chaque séquence d'ATQ-B améliorée exécutée confère un cumul de bonus de taux de coups critiques. Une fois la quantité maximale de cumuls atteinte, Yvonne gagne également un bonus de DÉG critiques. Lorsque la compétence est sur le point de s'achever, la dernière ATQ-B améliorée d'Yvonne devient un <#ba.lastcombo>Coup final</> amélioré qui inflige de lourds <@ba.cryst>DÉG cryogéniques</>.\nSi l'ennemi est <#ba.frozen>solidifié</>, Yvonne exécute une attaque supplémentaire qui inflige des <@ba.cryst>DÉG cryogéniques</>, puis <#ba.consume>consomme</> la <#ba.frozen>Solidification</> de l'ennemi."
     },
     "indicator": {
       "levels": [
@@ -137,7 +137,7 @@
       "name": "Pouvoir de Clochette"
     },
     "potential4": {
-      "description": "Renforce la compétence de combat <@ba.key>Bombe brr-brr β</> : si la première explosion ne touche qu'un seul ennemi, <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC.",
+      "description": "Renforce la compétence de combat <@ba.key>Bombe brr-brr β</> : si l'explosion ne touche qu'un seul ennemi, <#ba.return>restaure</> <@ba.vup>{atb_return:0}</> PC.",
       "name": "Humeur rebelle"
     },
     "potential5": {

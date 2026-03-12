@@ -51,7 +51,7 @@
         "spRecoveryPerSeq": "Rec. de PH por SEC"
       },
       "name": "Rayo y ráfaga",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo entra en tambaleo o golpea un <#ba.poiseknot>Nodo de tambaleo</>. \nRealiza un desplazamiento de regreso con 2 secuencias de estocadas; cada secuencia inflige <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo está Tambaleado o golpea un <#ba.poiseknot>Nodo de tambaleo</>. \nRealiza un desplazamiento de regreso con 2 secuencias de estocadas; cada secuencia inflige <@ba.pd>DAÑ físico</> y recupera algunos PH."
     },
     "ultimate": {
       "ultimate": {
@@ -91,8 +91,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 10 %",
-        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %"
+        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 14 %",
+        "Asignar a la Sala de recepción para reducir la disminución del Estado de ánimo de todos los operadores en ella un 18 %"
       ],
       "name": "Rompehielos"
     },

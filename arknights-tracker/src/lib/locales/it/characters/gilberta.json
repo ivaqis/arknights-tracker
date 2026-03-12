@@ -117,7 +117,7 @@
       "name": "Oltre le nuvole"
     },
     "potential2": {
-      "description": "Abilità suprema <@ba.key>Bastone arcano: campo gravitazionale</> migliorata: quando un nemico è affetto dal <@ba.key>campo gravitazionale anomalo</> dell'abilità suprema, ogni accumulo di <#ba.noguard>Vulnerabilità</> moltiplica l'effetto della <#ba.spellvul>Suscettibilità alle Arti</>. Durante il calcolo finale degli effetti, il bersaglio è considerato come se avesse 1 accumulo aggiuntivo di <#ba.noguard>Vulnerabilità</> (massimo 4 accumuli).",
+      "description": "Abilità suprema <@ba.key>Bastone arcano: campo gravitazionale</> migliorata: quando un nemico è affetto dal <@ba.key>campo gravitazionale anomalo</> dell'abilità suprema, raddoppia l'aumento della <#ba.spellvul>Suscettibilità alle Arti</> per accumulo di <#ba.noguard>Vulnerabilità</>. Durante la finalizzazione dell'effetto, il bersaglio è considerato come se avesse 1 accumulo aggiuntivo di <#ba.noguard>Vulnerabilità</> (massimo 4 accumuli).",
       "name": "Camminatrice del vento"
     },
     "potential3": {
@@ -129,7 +129,7 @@
       "name": "Danzatrice del cielo"
     },
     "potential5": {
-      "description": "Abilità combo <@ba.key>Bastone arcano: distorsione quantica</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s; il moltiplicatore danni aumenta di <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale.",
+      "description": "Abilità combo <@ba.key>Bastone arcano: distorsione quantica</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s; il moltiplicatore danni aumenta a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale.",
       "name": "Posta speciale"
     }
   },

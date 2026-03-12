@@ -8,7 +8,7 @@
       "Sports"
     ],
     "behaviourUnavailableTags": [
-      "Introvert"
+      "Introvert (SYSTEM ONLY, not visible in-game)"
     ],
     "blocTag": "Endfield Industries",
     "expertTags": [
@@ -122,7 +122,7 @@
       "name": "Supervisory Duties"
     },
     "potential4": {
-      "description": "Combo skill <@ba.key>Instant Protocol: Chain</> improved: Duration of the <#ba.spelldmg>Arts DMG Taken</> debuff on the enemy applied by the skill's <#ba.conduct>Electrification</> is increased to <@ba.vup>{extra_scaling}</> times the original.",
+      "description": "Combo skill <@ba.key>Instant Protocol: Chain</> improved: The <#ba.spelldmg>Arts DMG Taken</> debuff effects on the enemy applied by the skill's <#ba.conduct>Electrification</> are increased to <@ba.vup>{extra_scaling}</> times the original.",
       "name": "Constant Guidance"
     },
     "potential5": {

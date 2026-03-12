@@ -8,7 +8,7 @@
       "문화"
     ],
     "behaviourUnavailableTags": [
-      "내향적"
+      "내향적 (시스템용, 게임에서 표시되지 않음.)"
     ],
     "blocTag": "엔드필드 공업",
     "expertTags": [
@@ -131,7 +131,7 @@
       "name": "혼란 유발자"
     },
     "potential5": {
-      "description": "적에게 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.naturalinflict>자연 부착</>을 부여할 때마다, 연계 스킬 <@ba.key>특별 보너스</>의 쿨타임 <@ba.vup>-{reduce:0}</>초. 해당 효과는 1초마다 최대 1회만 발동합니다.",
+      "description": "적이 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.naturalinflict>자연 부착</>을 부여받을 때마다, 연계 스킬 <@ba.key>특별 보너스</>의 쿨타임 <@ba.vup>-{reduce:0}</>초. 해당 효과는 1초마다 최대 1회만 발동합니다.",
       "name": "혼돈의 쾌락"
     }
   },
@@ -139,17 +139,17 @@
     "potential1": {
       "name": "말썽꾸러기",
       "author": "Kaneni",
-      "description": "플루라이트에게 당신의 생각을 들키지 마세요... 아, 어쩌면 이미 늦었을지도 모르겠네요."
+      "description": "거기... 지금 무슨 생각 하고 있는 거야? 방금 뭐 다른 생각 했지? 누굴 속여."
     },
     "potential3": {
       "name": "행동파",
       "author": "GHOSTY",
-      "description": "플루라이트는 원한을 품지 않습니다. 어차피 그녀의 원수들은 오래 살아남지 못하니까요."
+      "description": "난 원한 같은 쓸데없는 감정을 낭비하진 않아. 어차피 내 마음에 안 드는 녀석들은 오래 못 살아남을 거거든."
     },
     "potential5": {
       "name": "규칙의 경계선",
       "author": "Doppel",
-      "description": "정의는 '결석'하지 않죠, 하지만 정의가 지각한다면, 그건 꽤 볼만하겠네요."
+      "description": "정의라는 건 항상 날 귀찮게 해. 어떤 못된 학생처럼 결석하진 않거든. 하지만... 만약 정의가 지각하게 된다면 어떨까? 재밌을 것 같지 않아?"
     }
   }
 }

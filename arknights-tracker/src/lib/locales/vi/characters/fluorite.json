@@ -8,12 +8,12 @@
       "Văn Hóa"
     ],
     "behaviourUnavailableTags": [
-      "Hướng Nội"
+      "Hướng Nội (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
     ],
     "blocTag": "Tập Đoàn Endfield",
     "expertTags": [
       "Sinh Tồn Ngoài Trời",
-      "Trí Tuệ Đường Phố"
+      "Sành Sỏi Mùi Đời"
     ],
     "giftPreferTags": [
       "Lựa Chọn Của Giao Thức Thung Lũng"
@@ -27,15 +27,15 @@
   "skills": {
     "basicAttack": {
       "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Nhân Chuỗi Công CB 1",
-        "batkSeq2Multiplier": "Hệ Số Nhân Chuỗi Công CB 2",
-        "batkSeq3Multiplier": "Hệ Số Nhân Chuỗi Công CB 3",
-        "batkSeq4Multiplier": "Hệ Số Nhân Chuỗi Công CB 4",
-        "finisherAtkMultiplier": "Hệ Số Nhân Tấn Công Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Nhân Tấn Công Lặn"
+        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
       },
       "name": "Đòn Gun Kata Đặc Trưng",
-      "description": "CÔNG CB: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với đặc vụ được điều khiển, <#ba.lastcombo>Kết Liễu</> cũng gây <@ba.poise>{attack_poise:0}</> Suy Sụp. \n\nTẤN CÔNG LẶN: \nCông CB thi triển trên không trở thành tấn công lặn gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nCông CB thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi ít Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{attack_poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN."
     },
     "battleSkill": {
       "battleSkill": {
@@ -64,15 +64,15 @@
         "battleSkillDmgBoost": "Tăng ST KN Chiến Đấu",
         "stagger": "Suy Sụp"
       },
-      "name": "Bậc Thầy Chơi Khăm",
+      "name": "Đỉnh Cao Chơi Khăm",
       "description": "Fluorite lướt theo cung rồi xả đạn nhanh vào mục tiêu trong cung lướt, gây 4 chuỗi <@ba.natur>ST Tự Nhiên</>. Nếu mục tiêu đang dính <@ba.key>Thuốc Nổ Tự Chế</>, kỹ năng kích nổ ngay, tăng ST và bán kính nổ.\nNếu chuỗi ST cuối cùng trúng mục tiêu có ít nhất 2 tầng <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.naturalinflict>Nhiễm Tự Nhiên</> thì tiếp tục áp dụng hiệu ứng <#ba.spellinflict>Nhiễm Thuật Pháp</> đó."
     },
     "indicator": {
       "levels": [
-        "Nhanh Nhẹn Đặc Vụ +10.",
-        "Nhanh Nhẹn Đặc Vụ +15.",
-        "Nhanh Nhẹn Đặc Vụ +15.",
-        "Nhanh Nhẹn Đặc Vụ +20."
+        "Nhanh Nhẹn Cán Viên +10.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +15.",
+        "Nhanh Nhẹn Cán Viên +20."
       ],
       "name": "Kẻ Đánh Lén"
     },
@@ -99,18 +99,18 @@
     },
     "baseSkill2": {
       "levels": [
-        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các đặc vụ thêm 12%",
-        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các đặc vụ thêm 16%"
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 12%",
+        "Khi phân công vào Trung Tâm Kiểm Soát, tăng Tái Tạo Tâm Trạng của tất cả các cán viên thêm 16%"
       ],
       "name": "Đọc Vị Cảm Xúc"
     },
     "files": {
       "main": "<@profile.key>MẬT DANH: Fluorite \nGIỚI TÍNH: Nữ \nXÁC MINH: Tập Đoàn Endfield \nNGÀY SINH: 21 Tháng 6 \nCHỦNG TỘC: Phidia \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nDương tính với Oripathy (đã nhiễm), theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Cơ Bản \nKN CHIẾN ĐẤU: Xuất Sắc \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Thường \n\nChúng tôi nhắc nhở cô Fluorite coi việc tham gia khám sức khỏe định kỳ là nghĩa vụ chính thức và bắt buộc. Nếu cô ấy còn viện lý do vắng mặt, chúng tôi sẽ phải báo cáo trực tiếp lên cô Akekuri. </>",
-      "humanResources": "<@profile.key>Đặc Vụ Fluorite từng kêu gọi người dân địa phương đứng lên phản kháng một tổ chức tội phạm và hỗ trợ một đội tác chiến Endfield thoát khỏi hiểm cảnh. Nhờ vậy, Đặc Vụ Akekuri đã tiến cử Fluorite gia nhập Tập Đoàn Endfield. Hiện cô là thành viên Đội Tác Chiến Z7. Không có hồ sơ tội phạm mới nào của đặc vụ được ghi nhận kể từ thời điểm đó. \n\nCần đặc biệt lưu ý Fluorite trong môi trường giao tiếp xã hội. Những \"mối thù cá nhân\" của \"cô ấy thường không nghiêm trọng như người ta nghĩ nhưng những cuộc trò chuyện với cô có thể sẽ chuyển hướng bất ngờ. May thay, Fluorite không từ chối việc lắng nghe. Vì Endfield đánh giá cao năng lực chiến đấu của đặc vụ nên sự khác biệt này của cô ấy cũng không quá khó xử lý. \nTuy nhiên, trong buổi phỏng vấn cô ấy đã chủ động trả lời hết toàn bộ danh sách câu hỏi trước khi tôi kịp chính thức nêu lên. Thậm chí còn bật cười ngay trước khi tôi hoàn thành phần đối đáp. Tình huống này nằm ngoài dự liệu thuật toán của tôi. Vì vậy, bản phỏng vấn đã được bổ sung vào kho nghiên cứu tình huống đặc thù để phân tích sâu thêm. \n, Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
+      "humanResources": "<@profile.key>Cán Viên Fluorite từng kêu gọi người dân địa phương đứng lên phản kháng một tổ chức tội phạm và hỗ trợ một đội tác chiến Endfield thoát khỏi hiểm cảnh. Nhờ vậy, Cán Viên Akekuri đã tiến cử Fluorite gia nhập Tập Đoàn Endfield. Hiện cô là thành viên Đội Tác Chiến Z7. Không có hồ sơ tội phạm mới nào của cán viên được ghi nhận kể từ thời điểm đó. \n\nCần đặc biệt lưu ý Fluorite trong môi trường giao tiếp xã hội. Những \"mối thù cá nhân\" của \"cô ấy thường không nghiêm trọng như người ta nghĩ nhưng những cuộc trò chuyện với cô có thể sẽ chuyển hướng bất ngờ. May thay, Fluorite không hề ngại lắng nghe. Vì Endfield đánh giá cao năng lực chiến đấu của cán viên nên sự khác biệt này của cô ấy cũng không quá khó xử lý. \nTuy nhiên, trong buổi phỏng vấn cô ấy đã chủ động trả lời hết toàn bộ danh sách câu hỏi trước khi tôi kịp chính thức nêu lên. Thậm chí còn bật cười ngay trước khi tôi hoàn thành phần đối đáp. Tình huống này nằm ngoài dự liệu thuật toán của tôi. Vì vậy, bản phỏng vấn đã được bổ sung vào kho nghiên cứu tình huống đặc thù để phân tích sâu thêm. \n, Martin Marvin Malen, Trợ Lý, Bộ Phận HR, Tập Đoàn Endfield</>",
       "file1": "<@profile.key>Theo lời của bản thân Fluorite, Thuật Pháp Originium của cô chỉ tập trung vào việc tạo ra các loại dung dịch biến hình có khả năng bám dính. Nhưng nếu điều này hoàn toàn đúng (mà cá nhân tôi cảm thấy không phải), thì kỹ năng xã hội gây tổn thương của cô chỉ có thể giải thích bằng \"kinh nghiệm phong phú\", bởi cô ấy có khả năng siêu đỉnh trong việc nắm bắt điểm yếu thông tin của người khác. Hơn nữa, Fluorite lại sẵn sàng phơi bày những thông tin như vậy mà không chút do dự, mặc cho kết quả kiểm tra đồng hóa Thuật Pháp vốn được công khai, vẫn có người tin rằng Fluorite sở hữu năng lực \"tiên đoán\" bí mật. \n\"Cứ thử tưởng tượng xem. Cậu suýt trượt môn thể chất, vừa bị giáo viên mắng cho một trận. Trên đường về ký túc, gặp Fluorite đi ngang hành lang, cô ấy bỗng buông một câu: 'Ừ thì cũng chẳng trách được… bánh sandwich nửa đêm ngon thế cơ mà'... Thật là bực mình! Được rồi, tôi biết mình không nên ăn khuya nhưng việc gì cô ấy phải nói thẳng ra chứ?\" \nMột thành viên Đội Tác Chiến Z7 từng phàn nàn như vậy, nhưng thay vì nhận được lời an ủi, người đó chỉ nhận lại những ánh mắt \"biết thừa\" từ đồng đội như ngầm đáp lại lời cậu ấy rằng \"Tôi hiểu mà\". Thành thực mà nói thì Fluorite không cố ý gây sự và hiếm khi lên tiếng trong các cuộc đối thoại. Nhưng sự hồn nhiên đi kèm với giọng điệu gay gắt quá mức của cô ấy khiến nhiều người thấy khó chịu trong không ít tình huống. Khi vấn đề được nhắc thẳng, Fluorite chỉ trả lời một cách đơn giản và chân thành: \n\"Cậu muốn tôi đi xin lỗi à?\" </>",
-      "file2": "<@profile.key>Verana. Bí danh: Tay Đôi, Kẻ tám chuyện, Đụng-Là-Trụng, Trầu Không Rễ. Nữ. Chủng tộc Phidia. Tóc xanh. \nTừng là tay cơ bắp lực lưỡng của Kẻ nghiện rượu, sau đó là đám Chân tật; từng là thành viên nhóm xạ thủ của Lupos Đói Khát; thành viên danh dự của Công Ty Vết Sẹo (tên bị gạch bỏ để tránh bị trả thù); xạ thủ hàng đầu làm việc cho Logan \"Cổ Kỳ Cục\". Nhiều tin đồn nói rằng Verana đã vào làm cho một công ty an ninh hợp pháp sau khi rời khỏi giới ngầm. \nVerana cực kỳ thành thạo các loại vũ khí bằng tay như súng ngắn, dao ném, nỏ tay. Cô nàng nổi tiếng với tốc độ rút súng chớp nhoáng, sự xảo quyệt và thói quen gài bẫy. Hãy đề phòng bất cứ vật gì cô ta cầm. Đừng tin bất kỳ lời nào cô ta nói (nhấn mạnh là bất kỳ lời nào). Đừng đối đầu trực tiếp ở ngoài nơi hoang vu, cực kỳ nguy hiểm đấy. \nTRUY NÃ VÌ TỘI: Gây rối trật tự công cộng, trộm đồ tiếp tế của băng nhóm, phản bội, kích động xung đột ở thị trấn Ốc Vít Oriron, phá nát cơ nghiệp của Logan \"Cổ Kỳ Cục\" đồng thời đánh gục và làm tàn phế mọi đàn em tay chân của hắn. Đã xác minh thêm thông tin là chính Verana từng tung một cú đá hiểm vào hạ bộ của một phát ngôn viên trong sự kiện công khai rồi bỏ trốn. \nTRUNG GIAN: Đến quán rượu Con Đường Không Hồi Kết để gặp Bald Brown. Thanh toán khi giao hàng, thanh toán bằng tiền cũ không có số seri liên tiếp. Cũng chấp nhận một số bộ phận cơ thể. 30% cho tay và chân. 50% cho đầu lưỡi. \nTIỀN THƯỞNG: 300.000 T-Cred \nCẬP NHẬT: 450.000 T-Cred \nCẬP NHẬT: 800.000 T-Cred (Yêu cầu của bên treo thưởng: Trả thêm 200.000 T-Cred nếu bắt sống!) \nCẬP NHẬT: 1.200.000 T-Cred \n\n(Chữ viết tay nguệch ngoạc) Kẻ phát ngôn kia \"chắc chắn\" là Powell. Hắn đáng bị như vậy. \n\nGhi chú SOW: Sau nhiều lần kiên trì thuyết phục, Đặc Vụ Fluorite đã tự nguyện nộp lại tờ đơn truy nã này. Đến nay chưa tìm thấy bản sao nào có chữ viết tay của cô. Bộ Phận HR đã trực tiếp làm việc với Đặc Vụ Fluorite về vụ tấn công phát ngôn viên trong sự kiện công cộng. Nếu cần xem lại hồ sơ liên quan, vui lòng liên hệ trực tiếp với chúng tôi. \nPhát ngôn viên Powell không chịu thương tổn nghiêm trọng nào nhưng hình ảnh công khai của anh ta đã bị hủy hoại nặng nề. Một phần vì phản ứng đau đớn thái quá và mất thể diện, phần khác vì thái độ mỉa mai độc địa của Fluorite sau vụ việc hoàn toàn trái ngược với hình tượng cô từng xây dựng. Các cuộc điều tra của chúng tôi tiếp tục tiết lộ rằng các hoạt động chính trị ban đầu của Phát ngôn viên Powell chủ yếu tập trung ở một số thành phố tự do gần tiền tuyến. Hồ sơ cho thấy anh ta thường xuyên tiếp xúc với các thủ lĩnh của nhiều tổ chức tội phạm nhỏ, ví dụ điển hình là Logan \"Cổ Kỳ Cục\", kẻ từng thống trị thị trấn Ốc Vít Oriron, nghi ngờ tham gia buôn bán nông sản phi pháp và sử dụng lao động khổ sai trong môi trường nguy hại. Logan đã từng nhiều lần ban phát lợi ích tài chính cho Powell để đổi lấy sự bảo hộ. \nHành động cuối cùng của Đặc Vụ Fluorite tại Ốc Vít Oriron đã phơi bày mối thù cá nhân của cô với Powell, kẻ từng ngấm ngầm che chở tội phạm địa phương. Sau khi kiểm tra dữ liệu giám sát, xác nhận Fluorite đã đeo mặt nạ khi ra tay. Hồ sơ phạm tội của Powell đã được chuyển lên Phòng Thương Mại Tổng Hợp. Sự việc hiện tại sẽ không bùng phát thêm rắc rối truyền thông nào. </>",
+      "file2": "<@profile.key>Verana. Bí danh: Tay Đôi, Kẻ tám chuyện, Đụng-Là-Trụng, Trầu Không Rễ. Nữ. Chủng tộc Phidia. Tóc xanh. \nTừng là tay cơ bắp lực lưỡng của Kẻ nghiện rượu, sau đó là đám Chân tật; từng là thành viên nhóm xạ thủ của Lupos Đói Khát; thành viên danh dự của Công Ty Vết Sẹo (tên bị gạch bỏ để tránh bị trả thù); xạ thủ hàng đầu làm việc cho Logan \"Cổ Kỳ Cục\". Nhiều tin đồn nói rằng Verana đã vào làm cho một công ty an ninh hợp pháp sau khi rời khỏi giới ngầm. \nVerana cực kỳ thành thạo các loại vũ khí bằng tay như súng ngắn, dao ném, nỏ tay. Cô nàng nổi tiếng với tốc độ rút súng chớp nhoáng, sự xảo quyệt và thói quen gài bẫy. Hãy đề phòng bất cứ vật gì cô ta cầm. Đừng tin bất kỳ lời nào cô ta nói (nhấn mạnh là bất kỳ lời nào). Đừng đối đầu trực tiếp ở ngoài nơi hoang vu, cực kỳ nguy hiểm đấy. \nTRUY NÃ VÌ TỘI: Gây rối trật tự công cộng, trộm đồ tiếp tế của băng nhóm, phản bội, kích động xung đột ở thị trấn Ốc Vít Oriron, phá nát cơ nghiệp của Logan \"Cổ Kỳ Cục\" đồng thời đánh gục và làm tàn phế mọi đàn em tay chân của hắn. Đã xác minh thêm thông tin là chính Verana từng tung một cú đá hiểm vào hạ bộ của một phát ngôn viên trong sự kiện công khai rồi bỏ trốn. \nTRUNG GIAN: Đến quán rượu Con Đường Không Hồi Kết để gặp Bald Brown. Thanh toán khi giao hàng, thanh toán bằng tiền cũ không có số seri liên tiếp. Cũng chấp nhận một số bộ phận cơ thể. 30% cho tay và chân. 50% cho đầu lưỡi. \nTIỀN THƯỞNG: 300.000 T-Cred \nCẬP NHẬT: 450.000 T-Cred \nCẬP NHẬT: 800.000 T-Cred (Yêu cầu của bên treo thưởng: Trả thêm 200.000 T-Cred nếu bắt sống!) \nCẬP NHẬT: 1.200.000 T-Cred \n\n(Chữ viết tay nguệch ngoạc) Kẻ phát ngôn kia \"chắc chắn\" là Powell. Hắn đáng bị như vậy. \n\nGhi chú SOW: Sau nhiều lần kiên trì thuyết phục, Cán Viên Fluorite đã tự nguyện nộp lại tờ đơn truy nã này. Đến nay chưa tìm thấy bản sao nào có chữ viết tay của cô. Bộ Phận HR đã trực tiếp làm việc với Cán Viên Fluorite về vụ tấn công phát ngôn viên trong sự kiện công cộng. Nếu cần xem lại hồ sơ liên quan, vui lòng liên hệ trực tiếp với chúng tôi. \nPhát ngôn viên Powell không chịu thương tổn nghiêm trọng nào nhưng hình ảnh công khai của anh ta đã bị hủy hoại nặng nề. Một phần vì phản ứng đau đớn thái quá và mất thể diện trước cơn đau dữ dội, phần khác vì đã bộc lộ thái độ đầy ác ý (khi tìm thấy Fluorite), trái ngược hoàn toàn với hình tượng anh ta từng xây dựng. Các cuộc điều tra của chúng tôi tiếp tục tiết lộ rằng các hoạt động chính trị ban đầu của Phát ngôn viên Powell chủ yếu tập trung ở một số thành phố tự do gần tiền tuyến. Hồ sơ cho thấy anh ta thường xuyên tiếp xúc với các thủ lĩnh của nhiều tổ chức tội phạm nhỏ, ví dụ điển hình là Logan \"Cổ Kỳ Cục\", kẻ từng thống trị thị trấn Ốc Vít Oriron, nghi ngờ tham gia buôn bán nông sản phi pháp và sử dụng lao động khổ sai trong môi trường nguy hại. Logan đã từng nhiều lần ban phát lợi ích tài chính cho Powell để đổi lấy sự bảo hộ. \nHành động cuối cùng của Cán Viên Fluorite tại Ốc Vít Oriron đã phơi bày mối thù cá nhân của cô với Powell, kẻ từng ngấm ngầm che chở tội phạm địa phương. Sau khi kiểm tra dữ liệu giám sát, xác nhận Fluorite đã đeo mặt nạ khi ra tay. Hồ sơ phạm tội của Powell đã được chuyển lên Phòng Thương Mại Tổng Hợp Talos-II. Sự việc hiện tại sẽ không bùng phát thêm rắc rối truyền thông nào. </>",
       "file3": "<@profile.key>\"Vấn đề là những thị trấn và ngôi làng đó đã hoàn toàn bị bỏ hoang. Dọc theo con đường mà chính Fluorite từng mô tả, ngài sẽ nhận ra cô ấy giống như một kẻ nhặt xác, cứ lượn từ thị trấn hấp hối này sang thị trấn khác. Mỗi khi một 'cái xác' mới xuất hiện, cô ấy lại giang cánh mà 'bay đến'...\" \n\"Tôi không hề nghi ngờ động cơ của cô ấy. Những kẻ lang bạt đó không phải là nguyên nhân khiến các thị trấn suy tàn. Người dân chỉ có thể tìm được nơi định cư kém lý tưởng, những chỗ chỉ nhận được lượng hỗ trợ và tài nguyên hạn chế từ vùng rìa. Nếu một thành phố trung tâm rơi vào khủng hoảng, thì sự gián đoạn nguồn cung tiếp tế có thể gây ra một phản ứng dây chuyền có khả năng giết chết mọi thị trấn dọc theo tuyến đường.\" \n\"Cái chết bắt đầu từ những điểm xa xôi nhất, mắt xích yếu nhất trong chuỗi. Dòng người tị nạn sẽ trôi theo làn sóng sụp đổ ấy, cho đến khi hoặc tìm thấy một thị trấn mới đủ ổn định để neo lại, hoặc tan biến hoàn toàn giữa nơi hoang vu, giống như một thị trấn nào đó ngoài kia… Người ta thậm chí còn đặt riêng một cái tên để miêu tả hiện tượng này.\" \n\"Chừng nào các mắt xích nối giữa những thành phố của chúng ta vẫn còn mong manh và rời rạc, thì sự bế tắc ấy sẽ không bao giờ chấm dứt. Khủng hoảng sinh ra đặc quyền, và đặc quyền lại là mảnh đất màu mỡ cho tội ác. Khi chúng t vượt quá ngưỡng, nền Văn Minh này sẽ không còn là ngôi nhà mà trở thành ách gông cùn do những kẻ độc quyền xiết chặt vào cổ của nô lệ mình.\" \n\"Chúng ta phải nắm giữ được sức mạnh có thể ngăn chặn điều đó.\" </>",
-      "file4": "<@profile.key>Mẹ à, con đã nghe tin tức về các cô chú của mình: \nGordon, Alloycarrot, tài xế xe tải. \nElsa, Khối Đại Đoàn Kết, có vẻ là đang làm thu ngân ở một cửa hàng tạp hóa. \nAndalusia, thành phố tự do Neo Tsukushi. Nhà báo. \nWilliam Lớn, thị trấn Ốc Vít Oriron (đã bỏ hoang), đã qua đời trong một vụ tai nạn đường sắt. \nKarakurt. Con chỉ biết cô ấy từng đi Morospolis. Lần cuối được nhìn thấy cô ấy là gần Thung Lũng V. \nEbby. Vẫn chưa tìm thấy. \nCavill. Vẫn chưa tìm thấy. \n\"Chân Dài\". Hiện đang thụ án. Ở Hongshan họ đối xử với tù nhân cũng khá ổn. \nAldan. Từng gây sự với con rồi bỏ chạy. Con không định tìm hắn nữa. Đồ rác rưởi. \n... \nVerana, bây giờ mẹ cũng có thể gọi con là \"Fluorite\". Con đã chạm đến bầu trời, nơi này cũng thú vị, có lẽ con sẽ ở lại một thời gian. \nNếu ai đó tìm thấy lá thư này và coi bản thân là một người tử tế, xin hãy chuyển nó cho Tập Đoàn Endfield hoặc thiêu nó ngay tại vùng tiền tuyến. Xin đa tạ. \n—Một mảnh giấy nhàu nát được gấp nhiều lần. Khi đặc vụ Vận Chuyển trao trả nó cho Fluorite, người ta thoáng thấy một nét dịu dàng hiếm hoi ánh lên trong đôi mắt cô. </>"
+      "file4": "<@profile.key>Mẹ à, con đã nghe tin tức về các cô chú của mình: \nGordon, Alloycarrot, tài xế xe tải. \nElsa, Khối Đại Đoàn Kết, có vẻ là đang làm thu ngân ở một cửa hàng tạp hóa. \nAndalusia, thành phố tự do Neo Tsukushi. Nhà báo. \nWilliam Lớn, thị trấn Ốc Vít Oriron (đã bỏ hoang), đã qua đời trong một vụ tai nạn đường sắt. \nKarakurt. Con chỉ biết cô ấy từng đi Morospolis. Lần cuối được nhìn thấy cô ấy là gần Thung Lũng V. \nEbby. Vẫn chưa tìm thấy. \nCavill. Vẫn chưa tìm thấy. \n\"Chân Dài\". Hiện đang thụ án. Ở Hongshan họ đối xử với tù nhân cũng khá ổn. \nAldan. Từng gây sự với con rồi bỏ chạy. Con không định tìm hắn nữa. Đồ rác rưởi. \n... \nVerana, bây giờ mẹ cũng có thể gọi con là \"Fluorite\". Con đã chạm đến bầu trời, nơi này cũng thú vị, có lẽ con sẽ ở lại một thời gian. \nNếu ai đó tìm thấy lá thư này và coi bản thân là một người tử tế, xin hãy chuyển nó cho Tập Đoàn Endfield hoặc thiêu nó ngay tại vùng tiền tuyến. Xin đa tạ. \n—Một mảnh giấy nhàu nát được gấp nhiều lần. Khi cán viên Vận Chuyển trao trả nó cho Fluorite, người ta thoáng thấy một nét dịu dàng hiếm hoi ánh lên trong đôi mắt cô. </>"
     }
   },
   "potentials": {
@@ -119,7 +119,7 @@
       "name": "Thợ Rèn Mười Ngón"
     },
     "potential2": {
-      "description": "Tài Năng <@ba.key>Không Thể Đoán Được</> được cải thiện: Tỷ lệ bỏ qua ST Thuật Pháp <@ba.vup>+{probability:0%}</>.",
+      "description": "Thiên Phú <@ba.key>Không Thể Đoán Được</> được cải thiện: Tỷ lệ bỏ qua ST Thuật Pháp <@ba.vup>+{probability:0%}</>.",
       "name": "Kỹ Thuật Đọc Tâm"
     },
     "potential3": {
@@ -127,12 +127,12 @@
       "name": "Gấp Ba Bất Ngờ"
     },
     "potential4": {
-      "description": "Tuyệt Kỹ <@ba.key>Bậc Thầy Chơi Khăm</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "description": "Tuyệt Kỹ <@ba.key>Đỉnh Cao Chơi Khăm</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
       "name": "Bậc Thầy Chơi Khăm"
     },
     "potential5": {
       "description": "KN liên hoàn <@ba.key>Quà Miễn Phí</> được cải thiện: Bất cứ khi nào <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.naturalinflict>Nhiễm Tự Nhiên</> được thi triển lên kẻ địch, thời gian hồi chiêu sẽ giảm còn <@ba.vup>{reduce:0}</> giây. Hiệu ứng được kích hoạt một lần sau mỗi 1 giây.",
-      "name": "Kẻ Thèm Khát Hỗn Loạn"
+      "name": "Thèm Khát Hỗn Loạn"
     }
   },
   "arts": {

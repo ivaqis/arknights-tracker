@@ -91,8 +91,8 @@
     },
     "baseSkill2": {
       "levels": [
-        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 10%",
-        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%"
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 14%",
+        "Saat ditugaskan ke Ruang Resepsionis, Penurunan Suasana Hati semua operator di dalamnya akan melambat sebesar 18%"
       ],
       "name": "Icebreaker"
     },

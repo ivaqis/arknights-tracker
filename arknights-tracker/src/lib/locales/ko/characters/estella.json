@@ -9,7 +9,7 @@
       "운동"
     ],
     "behaviourUnavailableTags": [
-      "외향적"
+      "외향적 (시스템용, 게임에서 표시되지 않음.)"
     ],
     "blocTag": "엔드필드 공업",
     "expertTags": [
@@ -113,7 +113,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "연계 스킬 <@ba.key>디스토션</>이 부여하는 <#ba.physicalvul>물리취약</> 지속 시간 <@ba.vup>+{rate_plus:0}</>초",
+      "description": "연계 스킬 <@ba.key>디스토션</>이 부여하는 <#ba.physicalvul>물리 취약</> 지속 시간 <@ba.vup>+{rate_plus:0}</>초",
       "name": "습관성 지각"
     },
     "potential2": {
@@ -137,17 +137,17 @@
     "potential1": {
       "name": "간헐적 사색",
       "author": "またよし",
-      "description": "잠시 시간을 내어, 저 이슬 한 방울이 언제 떨어질지 생각해 보세요."
+      "description": "저기에 맺힌 이슬 한 방울이... 언제 떨어질지 궁금하지 않으신가요?"
     },
     "potential3": {
       "name": "공유욕",
       "author": "余音RinA",
-      "description": "\"한번... 맛보실래요? 음... 이건 곤충이랑 식물 추출물을 섞은 영양 음료인데... 맛이 뭐랄까, 되게 신기해요.\""
+      "description": "한번 맛보실래요? 음... 이건 곤충이랑 식물 추출물을 섞은 영양 음료예요. 맛이 뭐랄까... 되게 신기해서요..."
     },
     "potential5": {
       "name": "비밀의 시간",
       "author": "かしまき",
-      "description": "망중한의 여유를 다른 이와 함께하는 것에 대해 어떻게 생각하세요?"
+      "description": "이런 여유... 정말 오랜만인 것 같아요. 좋아하는 사람들이랑 같이 이런 여유를 느낄 수 있다면... 정말 좋지 않을까요?"
     }
   }
 }

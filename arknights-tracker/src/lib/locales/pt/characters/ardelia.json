@@ -63,7 +63,7 @@
         "durationS": "Duração (s)"
       },
       "name": "Festa da Lã",
-      "description": "Ardelia entra em um estado de canalização móvel e invoca a ajuda do Sr. Dolly. Várias cópias do Sr. Dolly são arremessadas em direções aleatórias. Cada cópia causa <@ba.natur>DNO Natureza</>. Cada inimigo só pode receber 1 golpe causador de danos a cada {interval:0.0} s."
+      "description": "Ardelia entra em um estado de canalização móvel e invoca a ajuda do Sr. Dolly. Várias cópias do Sr. Dolly são arremessadas em direções aleatórias. Cada cópia causa <@ba.natur>DNO Natureza</>. Cada inimigo só pode receber 1 golpe causador de danos a cada {interval:0.0}s."
     },
     "indicator": {
       "levels": [
