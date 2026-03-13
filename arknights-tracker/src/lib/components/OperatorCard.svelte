@@ -67,6 +67,7 @@
 
     let nameElement;
     let isTruncated = false;
+    let isHovered = false;
 
     function checkTruncation() {
         if (nameElement) {

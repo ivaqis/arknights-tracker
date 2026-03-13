@@ -49,6 +49,8 @@
         
         lang = lang || "en";
 
+        const safeLang = lang.toLowerCase().replace('-', '');
+
         const dataPath = `/src/lib/data/charactersData/${targetId}.json`;
         if (dataModules[dataPath]) {
             const mod = await dataModules[dataPath]();
@@ -58,12 +60,12 @@
             charDetails = {};
         }
 
-        const localePath = `/src/lib/locales/${lang}/characters/${targetId}.json`;
+        const localePath = `/src/lib/locales/${safeLang}/characters/${targetId}.json`;
         const fallbackPath = `/src/lib/locales/en/characters/${targetId}.json`;
         
-        let localeLoader = localeModules[lang]?.[localePath];
+        let localeLoader = localeModules[safeLang]?.[localePath];
         
-        if (!localeLoader && lang !== "en") {
+        if (!localeLoader && safeLang !== "en") {
             localeLoader = localeModules["en"]?.[fallbackPath];
         }
 

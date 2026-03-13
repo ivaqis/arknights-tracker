@@ -388,7 +388,7 @@
 
 {#if banner}
     <div
-        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-in fade-in duration-200 cursor-default"
+        class="fixed inset-0 md:ml-[var(--sb-w)] bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-in fade-in duration-200 cursor-default"
         role="button"
         tabindex="0"
         on:click|self={close}

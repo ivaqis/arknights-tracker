@@ -91,7 +91,7 @@
 </script>
 
 {#if showModal}
-    <div class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn">
+    <div class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn">
         <div class="bg-white dark:bg-[#383838] rounded-xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col">
             
             <div class="px-6 py-5 border-b border-gray-100 dark:border-[#444444] flex justify-between items-center bg-gray-50 dark:bg-[#343434]">

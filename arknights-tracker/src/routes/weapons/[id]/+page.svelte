@@ -52,6 +52,8 @@
         
         lang = lang || "en";
 
+        const safeLang = lang.toLowerCase().replace('-', '');
+
         const dataPath = `/src/lib/data/weaponsData/${targetId}.json`;
         if (dataModules[dataPath]) {
             const mod = await dataModules[dataPath]();
@@ -60,12 +62,13 @@
             console.warn(`Weapon data not found for ID: ${targetId}`);
             weaponData = {};
         }
-        const localePath = `/src/lib/locales/${lang}/weapons.json`;
+
+        const localePath = `/src/lib/locales/${safeLang}/weapons.json`;
         const fallbackPath = `/src/lib/locales/en/weapons.json`;
         
-        let localeLoader = localeModules[lang]?.[localePath];
+        let localeLoader = localeModules[safeLang]?.[localePath];
         
-        if (!localeLoader && lang !== "en") {
+        if (!localeLoader && safeLang !== "en") {
             localeLoader = localeModules["en"]?.[fallbackPath];
         }
 

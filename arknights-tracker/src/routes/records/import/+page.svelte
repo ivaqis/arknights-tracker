@@ -25,6 +25,7 @@
     let errorMsg = "";
     let isGlobalStatsEnabled = true;
     let activeTab = "new";
+    let selectedServer = "3";
     let isSaveTokenEnabled = false;
     let tokenName = "";
     let savedTokens = [];
@@ -159,17 +160,20 @@
             }
         }
         if (!cleanToken) return;
-
         const encodedToken = encodeURIComponent(decodeURIComponent(cleanToken));
-
-        const baseUrl =
-            "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
-        const tail =
-            "&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=3";
-        
-        realImportUrl = baseUrl + encodedToken + tail;
         urlInput = cleanToken;
         e.target.value = cleanToken;
+    }
+
+    $: if (urlInput) {
+        if (!urlInput.startsWith("http")) {
+            const encodedToken = encodeURIComponent(decodeURIComponent(urlInput));
+            const baseUrl = "https://ef-webview.gryphline.com/page/gacha_weapon?pool_id=weaponbox_constant_2&u8_token=";
+            const tail = `&platform=Android&channel=6&subChannel=6&lang=ru-ru&server=${selectedServer}`;
+            realImportUrl = baseUrl + encodedToken + tail;
+        } else {
+            realImportUrl = urlInput;
+        }
     }
 
     async function handleUrlImport() {
@@ -683,7 +687,7 @@
                             <a
                                 href="https://game.skport.com/endfield/sign-in"
                                 target="_blank"
-                                class="text-[#D0926E] underline"
+                                class="text-blue-600 underline"
                                 >game.skport.com</a
                             >
                         </div>
@@ -769,16 +773,32 @@
 
                     {#if activeTab === "new"}
                         <div class="max-w-4xl mb-6 relative group">
+                            
+                            {#if platformTab === "android" || platformTab === "pc-web"}
+                                <div class="flex gap-2 mb-3 p-1 bg-gray-100 dark:bg-[#2C2C2C] rounded-lg w-fit transition-all">
+                                    <button
+                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer === '3' ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                        on:click={() => selectedServer = "3"}
+                                    >
+                                        Americas / Europe
+                                    </button>
+                                    <button
+                                        class="px-4 py-1.5 text-sm font-bold rounded-md transition-colors {selectedServer === '2' ? 'bg-white dark:bg-[#444] text-[#21272C] dark:text-white shadow-sm' : 'text-gray-500 hover:text-gray-700 dark:text-gray-400'}"
+                                        on:click={() => selectedServer = "2"}
+                                    >
+                                        Asia
+                                    </button>
+                                </div>
+                            {/if}
+
                             <div class="relative">
                                 <input
                                     type="text"
                                     value={urlInput}
                                     on:input={handleInputProcessing}
-                                    placeholder={platformTab === "android"
-                                        ? $t("import.placeholder_token") ||
-                                          "Paste Token here"
-                                        : $t("import.placeholder_url") ||
-                                          "Paste Link here"}
+                                    placeholder={(platformTab === "android" || platformTab === "pc-web")
+                                        ? $t("import.placeholder_token") || "Paste Token here"
+                                        : $t("import.placeholder_url") || "Paste Link here"}
                                     class="w-full p-4 bg-gray-50 border-2 border-gray-100 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-md outline-none transition-all font-mono text-xs md:text-sm text-gray-700 placeholder-gray-400
                 {isInputError &&
                                     errorMsg !==
@@ -789,31 +809,19 @@
                                         : ''}"
                                 />
 
-                                <div
-                                    class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none"
-                                >
-                                    {#if platformTab === "android" && urlInput.startsWith("Token_")}
-                                        <Icon
-                                            name="check"
-                                            style="width: 16px; height: 16px; color: green;"
-                                        />
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-300 pointer-events-none">
+                                    {#if (platformTab === "android" || platformTab === "pc-web") && urlInput && !urlInput.startsWith("http")}
+                                        <Icon name="check" style="width: 16px; height: 16px; color: green;" />
                                     {:else}
-                                        <div
-                                            class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg"
-                                        >
-                                            <Icon
-                                                name="link"
-                                                style="width: 16px; height: 16px;"
-                                            />
+                                        <div class="bg-gray-50/90 dark:bg-[#343434]/80 p-1 rounded-lg">
+                                            <Icon name="link" style="width: 16px; height: 16px;" />
                                         </div>
                                     {/if}
                                 </div>
                             </div>
 
                             {#if isInputError && errorMsg !== $t("import.error_token_name") && errorMsg !== "Token name is required for saving."}
-                                <div
-                                    class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1"
-                                >
+                                <div class="absolute -bottom-6 left-0 text-red-600 text-xs font-bold px-2 py-1 rounded animate-in fade-in slide-in-from-top-1">
                                     {errorMsg}
                                 </div>
                             {/if}
@@ -921,7 +929,7 @@
                                             class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
                                         >
                                             {$t(
-                                                platformTab === "android"
+                                                (platformTab === "android" || platformTab === "pc-web")
                                                     ? "import.save_label_token"
                                                     : "import.save_label_url",
                                             )}
@@ -931,7 +939,7 @@
                                                 class="text-gray-400 text-xs mt-0.5 max-w-md"
                                             >
                                                 {$t(
-                                                    platformTab === "android"
+                                                    (platformTab === "android" || platformTab === "pc-web")
                                                         ? "import.save_desc_token"
                                                         : "import.save_desc_url",
                                                 )}
