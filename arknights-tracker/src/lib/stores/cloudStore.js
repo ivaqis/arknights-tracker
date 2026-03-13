@@ -15,11 +15,10 @@ function compressDataForCloud(fullBackup) {
 
     Object.entries(fullBackup.data).forEach(([accId, accData]) => {
         compressed.data[accId] = {};
-
-        ['standard', 'special', 'new-player'].forEach(cat => {
-            if (accData[cat]?.pulls) {
+        Object.entries(accData).forEach(([cat, catData]) => {
+            if (catData?.pulls) {
                 compressed.data[accId][cat] = {
-                    pulls: accData[cat].pulls.map(p => ({
+                    pulls: catData.pulls.map(p => ({
                         n: p.name,
                         t: p.time ? new Date(p.time).getTime() : p.timestamp,
                         r: p.rarity,
@@ -46,7 +45,9 @@ function countAllLocalPulls() {
         if (raw) {
             try {
                 const data = JSON.parse(raw);
-                ['standard', 'special', 'new-player'].forEach(cat => { if (data[cat]?.pulls) total += data[cat].pulls.length; });
+                Object.values(data).forEach(catData => {
+                    if (catData?.pulls) total += catData.pulls.length;
+                });
             } catch (e) { }
         }
     });
@@ -94,15 +95,17 @@ export async function checkSync(currentUser, freshSnapshot = null) {
 
         accounts.forEach(acc => {
             if (acc.id === selectedId && freshSnapshot) {
-                ['standard', 'special', 'new-player'].forEach(cat => {
-                    if (freshSnapshot[cat]?.pulls) localTotal += freshSnapshot[cat].pulls.length;
+                Object.values(freshSnapshot).forEach(catData => {
+                    if (catData?.pulls) localTotal += catData.pulls.length;
                 });
             } else {
                 const raw = localStorage.getItem(`ark_tracker_data_${acc.id}`);
                 if (raw) {
                     try {
                         const data = JSON.parse(raw);
-                        ['standard', 'special', 'new-player'].forEach(cat => { if (data[cat]?.pulls) localTotal += data[cat].pulls.length; });
+                        Object.values(data).forEach(catData => {
+                            if (catData?.pulls) localTotal += catData.pulls.length;
+                        });
                     } catch (e) { }
                 }
             }
@@ -231,8 +234,8 @@ export async function uploadLocalData(freshSnapshot = null) {
             if (acc.id === selectedId && freshSnapshot) {
                 fullBackup.data[acc.id] = freshSnapshot;
                 console.log(`Packed (Memory): ${acc.name}`);
-                ['standard', 'special', 'new-player'].forEach(cat => {
-                    const list = freshSnapshot[cat]?.pulls || [];
+                Object.values(freshSnapshot).forEach(catData => {
+                    const list = catData?.pulls || [];
                     totalPulls += list.length;
                     sixStars += list.filter(p => p.rarity === 6).length;
                 });
@@ -242,13 +245,13 @@ export async function uploadLocalData(freshSnapshot = null) {
                     const parsed = JSON.parse(rawData);
                     fullBackup.data[acc.id] = parsed;
                     console.log(`Packed (Disk): ${acc.name}`);
-                    ['standard', 'special', 'new-player'].forEach(cat => {
-                        const list = parsed[cat]?.pulls || [];
+                    Object.values(parsed).forEach(catData => {
+                        const list = catData?.pulls || [];
                         totalPulls += list.length;
                         sixStars += list.filter(p => p.rarity === 6).length;
                     });
                 } else {
-                    fullBackup.data[acc.id] = { standard: { pulls: [] }, special: { pulls: [] }, "new-player": { pulls: [] } };
+                    fullBackup.data[acc.id] = {};
                 }
             }
         });
