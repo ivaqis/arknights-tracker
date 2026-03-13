@@ -187,18 +187,18 @@ export function applyCloudData() {
                 Object.entries(accData).forEach(([cat, content]) => {
                     restoredAccData[cat] = {
                         pulls: (content.pulls || []).map(p => ({
-                            name: p.n,
-                            time: new Date(p.t),
-                            timestamp: p.t,
-                            rarity: p.r,
-                            pity: p.p,
-                            seqId: p.s,
-                            gachaStatus: p.g,
+                            name: p.n ?? p.name,
+                            time: p.t ? new Date(p.t) : new Date(p.time || p.timestamp),
+                            timestamp: p.t ?? (p.timestamp ?? p.time),
+                            rarity: p.r ?? p.rarity,
+                            pity: p.p ?? p.pity,
+                            seqId: p.s ?? p.seqId,
+                            gachaStatus: p.g ?? p.gachaStatus,
                             id: p.id,
-                            poolId: p.pid,
-                            itemType: p.it,
-                            bannerId: p.b,
-                            isFree: p.f
+                            poolId: p.pid ?? p.poolId,
+                            itemType: p.it ?? p.itemType,
+                            bannerId: p.b ?? p.bannerId,
+                            isFree: p.f ?? p.isFree
                         })),
                         stats: {}
                     };
