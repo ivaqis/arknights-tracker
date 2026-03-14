@@ -787,43 +787,34 @@
                             </div>
                         </button>
 
-                        {#if now >= event.realStartTime && getRemainingTime(event.realEndTime, $t)}
-                            <div
-                                class="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none"
-                            >
-                                <div
-                                    class="flex items-center gap-1.5 rounded px-2 py-0.5 shrink-0 shadow-sm border border-green-400/30 bg-black/50"
-                                >
-                                    <span
-                                        class="text-[10px] font-bold uppercase tracking-wide text-green-300 shadow-sm"
-                                    >
-                                        {getRemainingTime(
-                                            event.realEndTime,
-                                            $t,
-                                        )}
+                        {#if event.isPermanent}
+                            <div class="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none">
+                                <div class="flex items-center gap-1.5 rounded px-2 py-0.5 shrink-0 shadow-sm border border-gray-400/30 bg-black/50">
+                                    <span class="text-[10px] font-bold uppercase tracking-wide text-gray-300 shadow-sm">
+                                        {$t("timer.permanent") || "Permanent"}
                                     </span>
                                 </div>
                             </div>
-                        {/if}
+                        {:else}
+                            {#if now >= event.realStartTime && getRemainingTime(event.realEndTime, $t)}
+                                <div class="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none">
+                                    <div class="flex items-center gap-1.5 rounded px-2 py-0.5 shrink-0 shadow-sm border border-green-400/30 bg-black/50">
+                                        <span class="text-[10px] font-bold uppercase tracking-wide text-green-300 shadow-sm">
+                                            {getRemainingTime(event.realEndTime, $t)}
+                                        </span>
+                                    </div>
+                                </div>
+                            {/if}
 
-                        {#if now < event.realStartTime && getTimeUntilStart(event.realStartTime, $t)}
-                            <div
-                                class="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none
-        opacity-0 group-hover:opacity-100 transition-opacity"
-                            >
-                                <div
-                                    class="flex items-center gap-1.5 rounded px-2 py-0.5 shrink-0 shadow-sm border border-blue-400/30 bg-black/50"
-                                >
-                                    <span
-                                        class="text-[10px] font-bold uppercase tracking-wide text-blue-300 shadow-sm"
-                                    >
-                                        {getTimeUntilStart(
-                                            event.realStartTime,
-                                            $t,
-                                        )}
-                                    </span>
+                            {#if now < event.realStartTime && getTimeUntilStart(event.realStartTime, $t)}
+                                <div class="absolute right-2 top-1/2 -translate-y-1/2 z-30 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div class="flex items-center gap-1.5 rounded px-2 py-0.5 shrink-0 shadow-sm border border-blue-400/30 bg-black/50">
+                                        <span class="text-[10px] font-bold uppercase tracking-wide text-blue-300 shadow-sm">
+                                            {getTimeUntilStart(event.realStartTime, $t)}
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
+                            {/if}
                         {/if}
                     </div>
                 {/each}

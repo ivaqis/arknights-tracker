@@ -484,26 +484,14 @@
             >
                 <div class="flex items-start gap-4">
                     <div class="mt-0.5 text-[#FACC15] shrink-0">
-                        <svg
-                            class="w-6 h-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                        </svg>
+                        <Icon name="info" class="w-6 h-6" />
                     </div>
                     <div class="flex-1">
                         <h3
                             class="text-gray-800 dark:text-[#E0E0E0] font-bold text-base uppercase tracking-wider mb-4 border-b border-gray-100 dark:border-[#444] pb-2"
                         >
                             {$t("import.faq_security_title") ||
-                                "FAQ: Безопасность аккаунта"}
+                                "FAQ: Account Security"}
                         </h3>
 
                         <div class="mb-4">
@@ -511,13 +499,13 @@
                                 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
                             >
                                 {$t("import.faq_q1") ||
-                                    "Опасно ли использовать скрипты?"}
+                                    "Is it dangerous to use scripts?"}
                             </h4>
                             <p
                                 class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
                             >
                                 {@html $t("import.faq_security_desc1") ||
-                                    "Передача токенов авторизации сторонним сайтам и выполнение PowerShell скриптов всегда несет риски."}
+                                    "Sharing authorization tokens with third-party sites and executing scripts always carries risks."}
                             </p>
                         </div>
 
@@ -526,13 +514,13 @@
                                 class="font-bold text-[#21272C] dark:text-[#FDFDFD] mb-1 text-sm"
                             >
                                 {$t("import.faq_q2") ||
-                                    "Опасен ли Goyfield.moe?"}
+                                    "Is Goyfield.moe dangerous?"}
                             </h4>
                             <p
                                 class="text-sm text-gray-600 dark:text-[#B7B6B3] leading-relaxed"
                             >
                                 {@html $t("import.faq_security_desc2") ||
-                                    '<strong>Goyfield.moe</strong> никогда не сохраняет вашу личную информацию, такую как токены и ссылки. Ваш токен обрабатывается только для получения наймов и никогда не сохраняется. Если у вас есть какие-либо беспокойства на счет PowerShell скрипта, используйте метод "PC 2", который получает токен встроенными средствами PowerShell через regex.'}
+                                    'Goyfield.moe never saves your personal information, such as tokens and links. Your token is only processed to retrieve pulls and is never saved. If you have any concerns about the scripts, you can inspect them personally. If you are concerned about sending your token to the site backend server, you can deploy the site locally following the instructions on GitHub, as this is an open-source project.'}
                             </p>
                         </div>
 

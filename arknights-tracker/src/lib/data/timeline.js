@@ -73,7 +73,8 @@ export const rawEvents = [
     color: "#680d15",
     layer: 4,
     type: "inGame",
-    iconPosition: 40
+    iconPosition: 40,
+    isPermanent: true
   },
   {
     id: "ev5-v1.0",
@@ -122,7 +123,8 @@ export const rawEvents = [
     color: "#1D1D1D",
     layer: 5,
     type: "inGame",
-    iconPosition: 52
+    iconPosition: 52,
+    isPermanent: true
   },
   {
     id: "ev9-v1.0",
@@ -135,7 +137,8 @@ export const rawEvents = [
     color: "#4b4b4b",
     layer: 6,
     type: "inGame",
-    iconPosition: 52
+    iconPosition: 52,
+    isPermanent: true
   },
   {
     id: "ev10-v1.0",
@@ -197,7 +200,8 @@ export const rawEvents = [
     color: "#359abe",
     layer: 7,
     type: "inGame",
-    iconPosition: 52
+    iconPosition: 52,
+    isPermanent: true
   },
   {
     id: "ev16-v1.0",
@@ -256,7 +260,7 @@ export const rawEvents = [
     startTime: "2026-03-29 12:00:00",
     endTime: "2026-04-19 04:00:00",
     icon: "ev3-v1.1.jpg",
-    url: "https://x.com/AKEndfield/status/2029859543446900826?s=20",
+    url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#34D73C",
     layer: 9,
     type: "inGame",
@@ -268,7 +272,7 @@ export const rawEvents = [
     startTime: "2026-04-09 12:00:00",
     endTime: "2026-04-30 04:00:00",
     icon: "ev4-v1.1.jpg",
-    url: "https://x.com/AKEndfield/status/2029859543446900826?s=20",
+    url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#404042",
     layer: 11,
     type: "inGame",
@@ -280,7 +284,7 @@ export const rawEvents = [
     startTime: "2026-03-22 12:00:00",
     endTime: "2026-03-29 04:00:00",
     icon: "ev16-v1.0.jpg",
-    url: "https://x.com/AKEndfield/status/2029859543446900826?s=20",
+    url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#d4cc2f",
     layer: 7,
     type: "inGame",
@@ -290,9 +294,10 @@ export const rawEvents = [
     id: "ev6-v1.1",
     title: "events.sanityDiscount",
     startTime: "2026-04-10 12:00:00",
-    endTime: "2026-04-17 04:00:00",
+    endTime: "2026-04-16 17:00:00",
+    endTimeAsia: "2026-04-17 04:00:00",
     icon: "ev16-v1.0.jpg",
-    url: "https://x.com/AKEndfield/status/2029859543446900826?s=20",
+    url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#d4cc2f",
     layer: 7,
     type: "inGame",
@@ -308,7 +313,8 @@ export const rawEvents = [
     color: "#359abe",
     layer: 8,
     type: "inGame",
-    iconPosition: 52
+    iconPosition: 52,
+    isPermanent: true
   },
   {
     id: "ev8-v1.1",
@@ -316,7 +322,7 @@ export const rawEvents = [
     startTime: "2026-03-26 12:00:00",
     endTime: "2026-04-19 04:00:00",
     icon: "ev8-v1.0.jpg",
-    url: "https://x.com/AKEndfield/status/2020799844705874051?s=20",
+    url: "https://x.com/AKEndfield/status/2030478615604056413?s=20",
     color: "#1D1D1D",
     layer: 5,
     type: "inGame",
@@ -328,7 +334,7 @@ export const rawEvents = [
     startTime: "2026-03-26 12:00:00",
     endTime: "2026-04-10 04:00:00",
     icon: "ev8-v1.0.jpg",
-    url: "https://x.com/AKEndfield/status/2020799844705874051?s=20",
+    url: "https://x.com/AKEndfield/status/2030478615604056413?s=20",
     color: "#4b4b4b",
     layer: 6,
     type: "inGame",
@@ -345,7 +351,8 @@ export const rawEvents = [
     color: "#680d15",
     layer: 4,
     type: "inGame",
-    iconPosition: 40
+    iconPosition: 40,
+    isPermanent: true
   },
   {
     id: "ev11-v1.1",
@@ -365,12 +372,25 @@ export const rawEvents = [
     id: "ev12-v1.1",
     title: "events.pearlOfThePack",
     startTime: "2026-03-29 12:00:00",
-    endTime: "2026-04-16 09:00:00",
+    endTime: "2026-04-16 17:00:00",
     icon: "ev12-v1.1.jpg",
     url: "https://x.com/AKEndfield/status/2030478615604056413?s=20",
     color: "#820815",
     layer: 3,
     type: "signIn",
     iconPosition: 40
+  },
+  {
+    id: "ev13-v1.1",
+    title: "events.protoPass",
+    startTime: "2026-03-11 23:00:00",
+    startTimeAsia: "2026-03-12 12:00:00",
+    endTime: "2026-04-16 17:00:00",
+    icon: "ev13-v1.1.jpg",
+    url: "https://x.com/AKEndfield/status/2031203400894108139?s=20",
+    color: "#3bc5c5",
+    layer: 16,
+    type: "protoPass",
+    iconPosition: 72
   }
 ];

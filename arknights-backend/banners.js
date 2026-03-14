@@ -104,7 +104,7 @@ const BANNERS = [
     name: "Graffiti Issue",
     type: "weapon",
     startTime: "2026-02-24 12:00:00",
-    endTime: "2026-04-25 11:59:59",
+    endTime: "2026-04-16 17:00:00",
     featured6: ["artzyTyrannical", "Artzy Tyrannical"],
   },
   {
@@ -122,7 +122,7 @@ const BANNERS = [
     name: "Wolf Pearl",
     type: "special",
     startTime: "2026-03-29 12:00:00",
-    endTime: "2026-04-16 09:00:00",
+    endTime: "2026-04-16 17:00:00",
     featured6: ["rossi", "Rossi"],
   },
   {
