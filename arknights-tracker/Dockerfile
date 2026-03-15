@@ -7,9 +7,6 @@ RUN npm ci
 
 COPY . .
 
-ARG VITE_API_BASE
-ENV VITE_API_BASE=$VITE_API_BASE
-
 RUN npm run build
 
 FROM node:20-slim
@@ -22,9 +19,12 @@ ENV HOST=0.0.0.0
 
 COPY --from=build /app/build ./build
 COPY --from=build /app/package*.json ./
+COPY entrypoint.sh /app/entrypoint.sh
 
 RUN npm ci --omit=dev
+RUN chmod +x /app/entrypoint.sh
 
 EXPOSE 3000
 
+ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["node", "build"]

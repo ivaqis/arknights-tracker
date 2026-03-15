@@ -22,10 +22,8 @@ jobs:
         include:
           - image: arknights-backend
             context: ./arknights-backend
-            build_args: ""
           - image: arknights-tracker
             context: ./arknights-tracker
-            build_args: "VITE_API_BASE=http://localhost:3001/api"
 
     steps:
       - name: Checkout
@@ -67,4 +65,3 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          build-args: ${{ matrix.build_args }}

@@ -29,8 +29,8 @@ services:
   frontend:
     build:
       context: ./arknights-tracker
-      args:
-        VITE_API_BASE: "http://localhost:3001/api"
+    environment:
+      PUBLIC_API_BASE: "http://localhost:3001/api"
     ports:
       - "3000:3000"
     depends_on:
