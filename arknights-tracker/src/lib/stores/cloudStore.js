@@ -26,8 +26,9 @@ function compressDataForCloud(fullBackup) {
                         s: p.seqId,
                         g: p.gachaStatus,
                         id: p.id,
-                        pid: p.poolId,
-                        it: p.itemType,
+                        rpid: p.rawPoolId,
+                        type: p.type ?? p.itemType,
+                        isNew: p.isNew,
                         b: p.bannerId,
                         f: p.isFree
                     }))
@@ -195,8 +196,9 @@ export function applyCloudData() {
                             seqId: p.s ?? p.seqId,
                             gachaStatus: p.g ?? p.gachaStatus,
                             id: p.id,
-                            poolId: p.pid ?? p.poolId,
-                            itemType: p.it ?? p.itemType,
+                            rawPoolId: p.rpid ?? p.rawPoolId ?? p.pid ?? p.poolId,
+                            type: p.type ?? p.it ?? p.itemType,
+                            isNew: p.isNew ?? false,
                             bannerId: p.b ?? p.bannerId,
                             isFree: p.f ?? p.isFree
                         })),

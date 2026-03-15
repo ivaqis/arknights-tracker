@@ -35,10 +35,12 @@ function createPullStore() {
                         p.name = "Contingent Measure";
                     }
                 });
-                data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
+                
                 if (serverId) {
                     data[key].pulls = calculatePity(data[key].pulls, key, serverId);
                 }
+                
+                data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
             }
         });
     };
