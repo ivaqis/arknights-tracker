@@ -1,4 +1,10 @@
 node_modules
 npm-debug.log
-*.log
+Dockerfile
+.git
+.github
 .env
+.env.*
+*.db
+*.db-journal
+coverage

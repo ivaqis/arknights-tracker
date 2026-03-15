@@ -1,6 +1,11 @@
 node_modules
 npm-debug.log
-*.log
+Dockerfile
+.git
+.github
+.env
+.env.*
 .svelte-kit
 build
-.env
+dist
+coverage
