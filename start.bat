@@ -7,6 +7,17 @@ echo      Launch Goyfield.moe locally
 echo ==========================================
 echo.
 
+echo [0/3] Checking Node.js version...
+node -e "if(parseInt(process.versions.node.split('.')[0])<20)process.exit(1);" >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [ERROR] Node.js is not installed or version is too old!
+    echo Goyfield.moe requires Node.js version 20 or higher.
+    echo Please go to https://nodejs.org/ and install the latest LTS version.
+    echo.
+    pause
+    exit /b
+)
+
 echo [1/3] Installing/Checking modules...
 cd arknights-backend
 call npm install --quiet
@@ -28,4 +39,6 @@ echo.
 timeout /t 5 >nul
 start http://localhost:5173
 
-npm run dev
+call npm run dev
+
+pause

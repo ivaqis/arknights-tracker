@@ -35,10 +35,12 @@ function createPullStore() {
                         p.name = "Contingent Measure";
                     }
                 });
-                data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
+                
                 if (serverId) {
                     data[key].pulls = calculatePity(data[key].pulls, key, serverId);
                 }
+                
+                data[key].stats = calculateBannerStats(data[key].pulls, key, serverId);
             }
         });
     };
@@ -164,10 +166,20 @@ function createPullStore() {
                             const oldList = newData[targetKey].pulls;
                             const incomeList = incomingByBanner[bid];
 
+                            let hasEnriched = false;
+                            oldList.forEach(oldP => {
+                                const freshP = incomeList.find(p => p.id === oldP.id);
+                                if (freshP) {
+                                    if (!oldP.rawPoolId && freshP.rawPoolId) { oldP.rawPoolId = freshP.rawPoolId; hasEnriched = true; }
+                                    if (!oldP.type && freshP.type) { oldP.type = freshP.type; hasEnriched = true; }
+                                    if (oldP.isNew === undefined && freshP.isNew !== undefined) { oldP.isNew = freshP.isNew; hasEnriched = true; }
+                                }
+                            });
+
                             const existingIds = new Set(oldList.map(p => p.id));
                             const reallyNew = incomeList.filter(p => !existingIds.has(p.id));
 
-                            if (reallyNew.length > 0) {
+                            if (reallyNew.length > 0 || hasEnriched) {
                                 const mergedList = mergePulls(oldList, reallyNew);
 
                                 const pullsWithPity = calculatePity(mergedList, targetKey, serverId);
