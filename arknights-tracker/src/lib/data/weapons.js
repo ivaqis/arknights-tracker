@@ -5,387 +5,699 @@ export const weapons = {
     "id": "industry01",
     "name": "Industry 0.1",
     "rarity": 4,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_atk",
+      "tactic"
+    ]
   },
   "exemplar": {
     "id": "exemplar",
     "name": "Exemplar",
     "rarity": 6,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_main",
+      "attr_atk",
+      "tactic"
+    ]
   },
   "longRoad": {
     "id": "longRoad",
     "name": "Long Road",
     "rarity": 4,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_str",
+      "attr_magicdam",
+      "combo"
+    ]
   },
   "formerFinery": {
     "id": "formerFinery",
     "name": "Former Finery",
     "rarity": 6,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_will",
+      "attr_hp",
+      "keyword"
+    ]
   },
   "thunderberge": {
     "id": "thunderberge",
     "name": "Thunderberge",
     "rarity": 6,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_hp",
+      "heal"
+    ]
   },
   "opusEtchFigure": {
     "id": "opusEtchFigure",
     "name": "Opus: Etch Figure",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_naturaldam",
+      "tactic"
+    ]
   },
   "chivalricVirtues": {
     "id": "chivalricVirtues",
     "name": "Chivalric Virtues",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_hp",
+      "heal"
+    ]
   },
   "sunderedPrince": {
     "id": "sunderedPrince",
     "name": "Sundered Prince",
     "rarity": 6,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_crirate",
+      "smash"
+    ]
   },
   "peco5": {
     "id": "peco5",
     "name": "Peco 5",
     "rarity": 3,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
   },
   "quencher": {
     "id": "quencher",
     "name": "Quencher",
     "rarity": 4,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_will",
+      "attr_hp",
+      "smash"
+    ]
   },
   "darhoff7": {
     "id": "darhoff7",
     "name": "Darhoff 7",
     "rarity": 3,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
   },
   "seekerOfDarkLung": {
     "id": "seekerOfDarkLung",
     "name": "Seeker of Dark Lung",
     "rarity": 5,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_usp",
+      "burst"
+    ]
   },
   "finishingCall": {
     "id": "finishingCall",
     "name": "Finishing Call",
     "rarity": 5,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_hp",
+      "heal"
+    ]
   },
   "khravengger": {
     "id": "khravengger",
     "name": "Khravengger",
     "rarity": 6,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_atk",
+      "burst"
+    ]
   },
   "ancientCanal": {
     "id": "ancientCanal",
     "name": "Ancient Canal",
     "rarity": 5,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_physpell",
+      "break"
+    ]
   },
   "howlingGuard": {
     "id": "howlingGuard",
     "name": "Howling Guard",
     "rarity": 4,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_wisd",
+      "attr_atk",
+      "tactic"
+    ]
   },
   "objHeavyBurden": {
     "id": "objHeavyBurden",
     "name": "OBJ Heavy Burden",
     "rarity": 5,
-    "weapon": "greatSword"
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_hp",
+      "keyword"
+    ]
   },
   "wedge": {
     "id": "wedge",
     "name": "Wedge",
     "rarity": 6,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "attr_crirate",
+      "magabn"
+    ]
   },
   "objVelocitous": {
     "id": "objVelocitous",
     "name": "OBJ Velocitous",
     "rarity": 5,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_usp",
+      "burst"
+    ]
   },
   "hypernovaAuto": {
     "id": "hypernovaAuto",
     "name": "Hypernova Auto",
     "rarity": 4,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_magicdam",
+      "spirit"
+    ]
   },
   "tarr11": {
     "id": "tarr11",
     "name": "Tarr 11",
     "rarity": 3,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
   },
   "jiminy12": {
     "id": "jiminy12",
     "name": "Jiminy 12",
     "rarity": 3,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
   },
   "fluorescentRoc": {
     "id": "fluorescentRoc",
     "name": "Fluorescent Roc",
     "rarity": 4,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tactic"
+    ]
   },
   "wildWanderer": {
     "id": "wildWanderer",
     "name": "Wild Wanderer",
     "rarity": 5,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_pulsedam",
+      "magabn"
+    ]
   },
   "pathfindersBeacon": {
     "id": "pathfindersBeacon",
     "name": "Pathfinder's Beacon",
     "rarity": 4,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "spirit"
+    ]
   },
   "stanzaOfMemorials": {
     "id": "stanzaOfMemorials",
     "name": "Stanza of Memorials",
     "rarity": 5,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_atk",
+      "ult"
+    ]
   },
   "objRazorhorn": {
     "id": "objRazorhorn",
     "name": "OBJ Razorhorn",
     "rarity": 5,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_phydam",
+      "magabn"
+    ]
   },
   "monaihe": {
     "id": "monaihe",
     "name": "Monaihe",
     "rarity": 5,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_usp",
+      "spirit"
+    ]
   },
   "deliveryGuaranteed": {
     "id": "deliveryGuaranteed",
     "name": "Delivery Guaranteed",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_usp",
+      "combo"
+    ]
   },
   "detonationUnit": {
     "id": "detonationUnit",
     "name": "Detonation Unit",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_main",
+      "attr_physpell",
+      "burst"
+    ]
   },
   "freedomToProselytize": {
     "id": "freedomToProselytize",
     "name": "Freedom to Proselytize",
     "rarity": 5,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_heal",
+      "heal"
+    ]
   },
   "oblivion": {
     "id": "oblivion",
     "name": "Oblivion",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_magicdam",
+      "ult"
+    ]
   },
   "dreamsOfTheStarryBeach": {
     "id": "dreamsOfTheStarryBeach",
     "name": "Dreams of the Starry Beach",
     "rarity": 6,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_heal",
+      "magabn"
+    ]
   },
   "objArtsIdentifier": {
     "id": "objArtsIdentifier",
     "name": "OBJ Arts Identifier",
     "rarity": 5,
-    "weapon": "artsUnit"
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_physpell",
+      "combo"
+    ]
   },
   "chimericJustice": {
     "id": "chimericJustice",
     "name": "Chimeric Justice",
     "rarity": 5,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_str",
+      "attr_usp",
+      "break"
+    ]
   },
   "cohesiveTraction": {
     "id": "cohesiveTraction",
     "name": "Cohesive Traction",
     "rarity": 5,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_pulsedam",
+      "tactic"
+    ]
   },
   "aggeloslayer": {
     "id": "aggeloslayer",
     "name": "Aggeloslayer",
     "rarity": 4,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_magicdam",
+      "tactic"
+    ]
   },
   "opero77": {
     "id": "opero77",
     "name": "Opero 77",
     "rarity": 3,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
   },
   "valiant": {
     "id": "valiant",
     "name": "Valiant",
     "rarity": 6,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "phyabn"
+    ]
   },
   "opusTheLiving": {
     "id": "opusTheLiving",
     "name": "Opus: The Living",
     "rarity": 5,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_magicdam",
+      "magabn"
+    ]
   },
   "artzyTyrannical": {
     "id": "artzyTyrannical",
     "name": "Artzy Tyrannical",
     "rarity": 6,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_wisd",
+      "attr_crirate",
+      "crit"
+    ]
   },
   "twelveQuestions": {
     "id": "twelveQuestions",
     "name": "Twelve Questions",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "magabn"
+    ]
   },
   "jet": {
     "id": "jet",
     "name": "JET",
     "rarity": 6,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_main",
+      "attr_atk",
+      "tactic"
+    ]
   },
   "mountainBearer": {
     "id": "mountainBearer",
     "name": "Mountain Bearer",
     "rarity": 6,
-    "weapon": "polearm"
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "keyword"
+    ]
   },
   "grandVision": {
     "id": "grandVision",
     "name": "Grand Vision",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "magabn"
+    ]
   },
   "rationalFarewell": {
     "id": "rationalFarewell",
     "name": "Rational Farewell",
     "rarity": 5,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_str",
+      "attr_firedam",
+      "combo"
+    ]
   },
   "navigator": {
     "id": "navigator",
     "name": "Navigator",
     "rarity": 6,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_wisd",
+      "attr_icedam",
+      "magabn"
+    ]
   },
   "homeLonging": {
     "id": "homeLonging",
     "name": "Home Longing",
     "rarity": 6,
     "weapon": "handcannon",
-    "isNew": true
+    "skills": [
+      "attr_agi",
+      "attr_icedam",
+      "tactic"
+    ]
   },
   "brigandsCalling": {
     "id": "brigandsCalling",
     "name": "Brigand's Calling",
     "rarity": 6,
     "weapon": "handcannon",
-    "isNew": true
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "burst"
+    ]
   },
   "clannibal": {
     "id": "clannibal",
     "name": "Clannibal",
     "rarity": 6,
-    "weapon": "handcannon"
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "attr_magicdam",
+      "magabn"
+    ]
   },
   "thermiteCutter": {
     "id": "thermiteCutter",
     "name": "Thermite Cutter",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tacafter"
+    ]
   },
   "sunderingSteel": {
     "id": "sunderingSteel",
     "name": "Sundering Steel",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "phyabn"
+    ]
   },
   "forgebornScathe": {
     "id": "forgebornScathe",
     "name": "Forgeborn Scathe",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_atk",
+      "ult"
+    ]
   },
   "fortmaker": {
     "id": "fortmaker",
     "name": "Fortmaker",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_usp",
+      "spirit"
+    ]
   },
   "waveTide": {
     "id": "waveTide",
     "name": "Wave Tide",
     "rarity": 4,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_atk",
+      "combo"
+    ]
   },
   "umbralTorch": {
     "id": "umbralTorch",
     "name": "Umbral Torch",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
+      "attr_firedam",
+      "magabn"
+    ]
   },
   "rapidAscent": {
     "id": "rapidAscent",
     "name": "Rapid Ascent",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_crirate",
+      "ult"
+    ]
   },
   "eminentRepute": {
     "id": "eminentRepute",
     "name": "Eminent Repute",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_phydam",
+      "break"
+    ]
   },
   "whiteNightNova": {
     "id": "whiteNightNova",
     "name": "White Night Nova",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_physpell",
+      "magabn"
+    ]
   },
   "aspirant": {
     "id": "aspirant",
     "name": "Aspirant",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "ult"
+    ]
   },
   "neverRest": {
     "id": "neverRest",
     "name": "Never Rest",
     "rarity": 6,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tacafter"
+    ]
   },
   "gloriousMemory": {
     "id": "gloriousMemory",
     "name": "Glorious Memory",
     "rarity": 6,
     "weapon": "sword",
-    "isNew": true
+    "skills": [
+      "attr_agi",
+      "attr_crirate",
+      "ult"
+    ]
   },
   "objEdgeOfLightness": {
     "id": "objEdgeOfLightness",
     "name": "OBJ Edge of Lightness",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "tacafter"
+    ]
   },
   "finchaser30": {
     "id": "finchaser30",
     "name": "Finchaser 3.0",
     "rarity": 5,
-    "weapon": "sword"
+    "weapon": "sword",
+    "skills": [
+      "attr_str",
+      "attr_icedam",
+      "tactic"
+    ]
   }
 };

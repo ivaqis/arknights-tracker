@@ -141,7 +141,8 @@
     "faq_q2": "Goyfield.moe est-il dangereux ?",
     "note": "Note",
     "faq_security_desc1": "Le partage de jetons d'autorisation avec des sites tiers et l'exécution de scripts comportent toujours des risques.",
-"faq_security_desc2": "Goyfield.moe n'enregistre jamais vos informations personnelles, telles que les jetons et les liens. Votre jeton est uniquement traité pour récupérer les tirages et n'est jamais sauvegardé. Si vous avez des inquiétudes concernant les scripts, vous pouvez les inspecter personnellement. Si l'envoi de votre jeton au serveur backend du site vous inquiète, vous pouvez déployer le site localement en suivant les instructions sur GitHub, car il s'agit d'un projet open-source.",    "faq_security_warning": "Si vous avez utilisé le site <strong>Endfieldrecords</strong>, changez immédiatement votre mot de passe en jeu et suivez le <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">guide Reddit</a> pour vérifier votre ordinateur.",
+    "faq_security_desc2": "Goyfield.moe n'enregistre jamais vos informations personnelles, telles que les jetons et les liens. Votre jeton est uniquement traité pour récupérer les tirages et n'est jamais sauvegardé. Si vous avez des inquiétudes concernant les scripts, vous pouvez les inspecter personnellement. Si l'envoi de votre jeton au serveur backend du site vous inquiète, vous pouvez déployer le site localement en suivant les instructions sur GitHub, car il s'agit d'un projet open-source.",
+    "faq_security_warning": "Si vous avez utilisé le site <strong>Endfieldrecords</strong>, changez immédiatement votre mot de passe en jeu et suivez le <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">guide Reddit</a> pour vérifier votre ordinateur.",
     "description": "Téléchargez un fichier JSON avec votre historique de gacha.",
     "format": "(Actuellement, seul le format de réponse API type Genshin est supporté).",
     "button": "Choisir le fichier JSON",
@@ -396,7 +397,12 @@
     "search": "Rechercher...",
     "reset": "RàZ",
     "type": "Type",
-    "ownedOnly": "Seulement possédés"
+    "ownedOnly": "Seulement possédés",
+    "attribute1": "Attribut 1",
+    "attribute2": "Attribut 2",
+    "attribute3": "Attribut 3",
+    "title": "Trier",
+    "filters": "Filtres"
   },
   "menu": {
     "about": "À propos",
@@ -637,7 +643,7 @@
     "noActiveCodes": "Aucun code actif",
     "noActiveBanners": "Aucune bannière active"
   },
-    "characters": {
+  "characters": {
     "catcher": "Catcher",
     "endministrator1": "Endministrator",
     "endministrator2": "Endministrator",
@@ -736,5 +742,38 @@
     "text": "Nous utilisons des cookies pour sauvegarder vos préférences (comme le thème et la langue) et analyser le trafic du site pour améliorer l'expérience utilisateur",
     "accept": "Accepter",
     "decline": "Refuser"
+  },
+  "skills": {
+    "attr_agi": "Agilité accrue",
+    "attr_atk": "Attaque accrue",
+    "attr_firedam": "DÉG thermiques accrus",
+    "attr_wisd": "Intelligence accrue",
+    "attr_crirate": "CRIT accru",
+    "attr_heal": "Efficacité des soins accrue",
+    "attr_hp": "PV accrus",
+    "attr_usp": "Gain d'ultime accru",
+    "tacafter": "Flux",
+    "attr_icedam": "DÉG-C accrus",
+    "magabn": "Altération",
+    "attr_magicdam": "DÉG des Arts accrus",
+    "attr_naturaldam": "DÉG naturels accrus",
+    "burst": "Détonation",
+    "attr_main": "Trait principal accru",
+    "attr_phydam": "DÉG physiques accrus",
+    "attr_physpell": "Intensité des Arts accrue",
+    "attr_pulsedam": "DÉG électriques accrus",
+    "attr_str": "Force accrue",
+    "spirit": "Inspiration",
+    "tactic": "Suppression",
+    "attr_will": "Volonté accrue",
+    "ult": "Crépuscule",
+    "break": "Brutalité",
+    "combo": "Poursuite",
+    "crit": "Fracture",
+    "force": "Assaut",
+    "heal": "Cure",
+    "keyword": "Efficacité",
+    "phyabn": "Combativité",
+    "smash": "Broyage"
   }
 }

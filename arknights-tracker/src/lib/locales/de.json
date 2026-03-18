@@ -141,7 +141,8 @@
     "faq_q2": "Ist Goyfield.moe gefährlich?",
     "note": "Hinweis",
     "faq_security_desc1": "Die Weitergabe von Autorisierungs-Token an Drittanbieter-Websites und die Ausführung von Skripten bergen immer Risiken.",
-"faq_security_desc2": "Goyfield.moe speichert niemals Ihre persönlichen Daten wie Token und Links. Ihr Token wird nur verarbeitet, um Ziehungen abzurufen, und wird niemals gespeichert. Wenn Sie Bedenken bezüglich der Skripte haben, können Sie diese persönlich überprüfen. Wenn Sie Bedenken haben, Ihr Token an den Backend-Server der Website zu senden, können Sie die Website gemäß den Anweisungen auf GitHub lokal bereitstellen, da es sich um ein Open-Source-Projekt handelt.",    "faq_security_warning": "Wenn Sie die Website <strong>Endfieldrecords</strong> genutzt haben, ändern Sie sofort Ihr In-Game-Passwort und folgen Sie der <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit-Anleitung</a>, um Ihren Computer zu überprüfen.",
+    "faq_security_desc2": "Goyfield.moe speichert niemals Ihre persönlichen Daten wie Token und Links. Ihr Token wird nur verarbeitet, um Ziehungen abzurufen, und wird niemals gespeichert. Wenn Sie Bedenken bezüglich der Skripte haben, können Sie diese persönlich überprüfen. Wenn Sie Bedenken haben, Ihr Token an den Backend-Server der Website zu senden, können Sie die Website gemäß den Anweisungen auf GitHub lokal bereitstellen, da es sich um ein Open-Source-Projekt handelt.",
+    "faq_security_warning": "Wenn Sie die Website <strong>Endfieldrecords</strong> genutzt haben, ändern Sie sofort Ihr In-Game-Passwort und folgen Sie der <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit-Anleitung</a>, um Ihren Computer zu überprüfen.",
     "description": "Lade eine JSON-Datei mit deinem Gacha-Verlauf hoch.",
     "format": "(Derzeit wird nur das Genshin-ähnliche API-Antwortformat unterstützt).",
     "button": "JSON-Datei auswählen",
@@ -396,7 +397,12 @@
     "search": "Suchen...",
     "reset": "Zurücksetzen",
     "type": "Typ",
-    "ownedOnly": "Nur im Besitz"
+    "ownedOnly": "Nur im Besitz",
+    "attribute1": "Attribut 1",
+    "attribute2": "Attribut 2",
+    "attribute3": "Attribut 3",
+    "title": "Sortieren",
+    "filters": "Filter"
   },
   "menu": {
     "about": "Über",
@@ -637,7 +643,7 @@
     "noActiveCodes": "Keine aktiven Codes",
     "noActiveBanners": "Keine aktiven Banner"
   },
-    "characters": {
+  "characters": {
     "catcher": "Catcher",
     "endministrator1": "Endministrator",
     "endministrator2": "Endministrator",
@@ -736,5 +742,38 @@
     "text": "Wir verwenden Cookies, um deine Einstellungen (wie Design und Sprache) zu speichern und den Website-Traffic zu analysieren, um das Nutzererlebnis zu verbessern.",
     "accept": "Akzeptieren",
     "decline": "Ablehnen"
+  },
+  "skills": {
+    "attr_agi": "Beweg.-Boost",
+    "attr_atk": "Angriff-Boost",
+    "attr_firedam": "Hitze-SDN-Boost",
+    "attr_wisd": "Int.-Boost",
+    "attr_crirate": "Kritische-Rate-Boost",
+    "attr_heal": "Behandlungseffizienz-Boost",
+    "attr_hp": "LP-Boost",
+    "attr_usp": "Ultimative-Steigerung-Boost",
+    "tacafter": "Strömung",
+    "attr_icedam": "Kryo-SDN-Boost",
+    "magabn": "Zufügen",
+    "attr_magicdam": "Technik-SDN-Boost",
+    "attr_naturaldam": "Natur-SDN-Boost",
+    "burst": "Zünden",
+    "attr_main": "Hauptattribut-Boost",
+    "attr_phydam": "Physischer-SDN-Boost",
+    "attr_physpell": "Technik-Intensitäts-Boost",
+    "attr_pulsedam": "Elektrischer-SDN-Boost",
+    "attr_str": "Stär.-Boost",
+    "spirit": "Inspirierend",
+    "tactic": "Unterdrückung",
+    "attr_will": "Wille-Boost",
+    "ult": "Abenddämmerung",
+    "break": "Brutalität",
+    "combo": "Verfolgung",
+    "crit": "Bruch",
+    "force": "Sturmangriff",
+    "heal": "Pharmakon",
+    "keyword": "Wirksamkeit",
+    "phyabn": "Kämpferisch",
+    "smash": "Brecher"
   }
 }

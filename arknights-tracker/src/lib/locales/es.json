@@ -141,7 +141,8 @@
     "faq_q2": "¿Es peligroso Goyfield.moe?",
     "note": "Nota",
     "faq_security_desc1": "Compartir tokens de autorización con sitios de terceros y ejecutar scripts de siempre conlleva riesgos.",
-"faq_security_desc2": "Goyfield.moe nunca guarda tu información personal, como tokens y enlaces. Tu token solo se procesa para recuperar tiradas y nunca se guarda. Si tienes alguna inquietud sobre los scripts, puedes inspeccionarlos personalmente. Si te preocupa enviar tu token al servidor backend del sitio, puedes implementar el sitio localmente siguiendo las instrucciones en GitHub, ya que este es un proyecto de código abierto.",    "faq_security_warning": "Si ha utilizado el sitio <strong>Endfieldrecords</strong>, cambie su contraseña del juego inmediatamente y siga la <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">guía de Reddit</a> para revisar su computadora.",
+    "faq_security_desc2": "Goyfield.moe nunca guarda tu información personal, como tokens y enlaces. Tu token solo se procesa para recuperar tiradas y nunca se guarda. Si tienes alguna inquietud sobre los scripts, puedes inspeccionarlos personalmente. Si te preocupa enviar tu token al servidor backend del sitio, puedes implementar el sitio localmente siguiendo las instrucciones en GitHub, ya que este es un proyecto de código abierto.",
+    "faq_security_warning": "Si ha utilizado el sitio <strong>Endfieldrecords</strong>, cambie su contraseña del juego inmediatamente y siga la <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">guía de Reddit</a> para revisar su computadora.",
     "description": "Sube un archivo JSON con tu historial de gacha.",
     "format": "(Actualmente solo se soporta el formato de respuesta API tipo Genshin).",
     "button": "Elegir archivo JSON",
@@ -396,7 +397,12 @@
     "search": "Buscar...",
     "reset": "Restablecer",
     "type": "Tipo",
-    "ownedOnly": "Solo obtenidos"
+    "ownedOnly": "Solo obtenidos",
+    "attribute1": "Atributo 1",
+    "attribute2": "Atributo 2",
+    "attribute3": "Atributo 3",
+    "title": "Ordenar",
+    "filters": "Filtros"
   },
   "menu": {
     "about": "Acerca de",
@@ -637,7 +643,7 @@
     "noActiveCodes": "Sin códigos activos",
     "noActiveBanners": "No hay Banners Activos"
   },
-    "characters": {
+  "characters": {
     "catcher": "Catcher",
     "endministrator1": "Endministrator",
     "endministrator2": "Endministrator",
@@ -736,5 +742,38 @@
     "text": "Usamos cookies para guardar tus preferencias (como tema e idioma) y analizar el tráfico del sitio para mejorar la experiencia de usuario",
     "accept": "Aceptar",
     "decline": "Rechazar"
+  },
+  "skills": {
+    "attr_agi": "Refuerzo de agilidad",
+    "attr_atk": "Refuerzo de ataque",
+    "attr_firedam": "Refuerzo de DAÑ por calor",
+    "attr_wisd": "Refuerzo de intelecto",
+    "attr_crirate": "Refuerzo de índice crít.",
+    "attr_heal": "Refuerzo de efic. del trat.",
+    "attr_hp": "Refuerzo de PV",
+    "attr_usp": "Refuerzo de ganancia máx.",
+    "tacafter": "Flujo",
+    "attr_icedam": "Refuerzo de DAÑ crio.",
+    "magabn": "Imposición",
+    "attr_magicdam": "Refuerzo de DAÑ por Artes",
+    "attr_naturaldam": "Refuerzo de DAÑ por natur.",
+    "burst": "Detonación",
+    "attr_main": "Refuerzo de atributo ppal.",
+    "attr_phydam": "Refuerzo de DAÑ físico",
+    "attr_physpell": "Refuerzo de intensidad de Artes",
+    "attr_pulsedam": "Refuerzo de DAÑ eléc.",
+    "attr_str": "Refuerzo de fuerza",
+    "spirit": "Inspirador",
+    "tactic": "Supresión",
+    "attr_will": "Refuerzo de voluntad",
+    "ult": "Crepúsculo",
+    "break": "Brutalidad",
+    "combo": "Persecución",
+    "crit": "Fractura",
+    "force": "Asalto",
+    "heal": "Medicante",
+    "keyword": "Eficacia",
+    "phyabn": "Combativo",
+    "smash": "Triturador"
   }
 }

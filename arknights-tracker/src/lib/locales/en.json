@@ -158,7 +158,8 @@
     "faq_q2": "Is Goyfield.moe dangerous?",
     "note": "Note",
     "faq_security_desc1": "Sharing authorization tokens with third-party sites and executing scripts always carries risks.",
-"faq_security_desc2": "Goyfield.moe never saves your personal information, such as tokens and links. Your token is only processed to retrieve pulls and is never saved. If you have any concerns about the scripts, you can inspect them personally. If you are concerned about sending your token to the site's backend server, you can deploy the site locally following the instructions on GitHub, as this is an open-source project.",    "faq_security_warning": "If you used the <strong>Endfieldrecords</strong> site, change your in-game password immediately and follow the <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit guide</a> to check your computer.",
+    "faq_security_desc2": "Goyfield.moe never saves your personal information, such as tokens and links. Your token is only processed to retrieve pulls and is never saved. If you have any concerns about the scripts, you can inspect them personally. If you are concerned about sending your token to the site's backend server, you can deploy the site locally following the instructions on GitHub, as this is an open-source project.",
+    "faq_security_warning": "If you used the <strong>Endfieldrecords</strong> site, change your in-game password immediately and follow the <a href=\"{link}\" target=\"_blank\" class=\"underline hover:text-red-500\">Reddit guide</a> to check your computer.",
     "description": "Upload a JSON file with your gacha history.",
     "format": "(Currently only Genshin-like API response format is supported).",
     "button": "Choose JSON file",
@@ -421,7 +422,12 @@
     "search": "Search...",
     "reset": "Reset",
     "type": "Type",
-    "ownedOnly": "Owned Only"
+    "ownedOnly": "Owned Only",
+    "attribute1": "Attribute 1",
+    "attribute2": "Attribute 2",
+    "attribute3": "Attribute 3",
+    "title": "Sort",
+    "filters": "Filters"
   },
   "menu": {
     "about": "About",
@@ -679,7 +685,7 @@
     "noActiveCodes": "No active codes",
     "noActiveBanners": "No Active Banners"
   },
-    "characters": {
+  "characters": {
     "catcher": "Catcher",
     "endministrator1": "Endministrator",
     "endministrator2": "Endministrator",
@@ -778,5 +784,38 @@
     "text": "We use cookies to store your preferences (like theme and language) and analyze site traffic to improve user experience",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "skills": {
+    "attr_agi": "Agility Boost",
+    "attr_atk": "Attack Boost",
+    "attr_firedam": "Heat DMG Boost",
+    "attr_wisd": "Intellect Boost",
+    "attr_crirate": "Critical Rate Boost",
+    "attr_heal": "Treatment Efficiency Boost",
+    "attr_hp": "HP Boost",
+    "attr_usp": "Ultimate Gain Boost",
+    "tacafter": "Flow",
+    "attr_icedam": "Cryo DMG Boost",
+    "magabn": "Infliction",
+    "attr_magicdam": "Arts DMG Boost",
+    "attr_naturaldam": "Nature DMG Boost",
+    "burst": "Detonate",
+    "attr_main": "Main Attribute Boost",
+    "attr_phydam": "Physical DMG Boost",
+    "attr_physpell": "Arts Intensity Boost",
+    "attr_pulsedam": "Electric DMG Boost",
+    "attr_str": "Strength Boost",
+    "spirit": "Inspiring",
+    "tactic": "Suppression",
+    "attr_will": "Will Boost",
+    "ult": "Twilight",
+    "break": "Brutality",
+    "combo": "Pursuit",
+    "crit": "Fracture",
+    "force": "Assault",
+    "heal": "Medicant",
+    "keyword": "Efficacy",
+    "phyabn": "Combative",
+    "smash": "Crusher"
   }
 }

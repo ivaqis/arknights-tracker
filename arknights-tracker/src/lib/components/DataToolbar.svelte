@@ -6,7 +6,18 @@
     export let sortField = "rarity";
     export let sortDirection = "desc";
     export let searchQuery = "";
-    export let showOwnedOnly = false; // <-- НОВАЯ ПЕРЕМЕННАЯ
+    export let showOwnedOnly = false;
+
+    const attr1Skills = ["attr_agi", "attr_str", "attr_will", "attr_wisd", "attr_main"];
+    const attr2Skills = [
+        "attr_atk", "attr_firedam", "attr_crirate", "attr_heal", "attr_hp", 
+        "attr_usp", "attr_icedam", "attr_magicdam", "attr_naturaldam", 
+        "attr_phydam", "attr_physpell", "attr_pulsedam"
+    ];
+    const attr3Skills = [
+        "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
+        "combo", "crit", "force", "heal", "keyword", "phyabn", "smash"
+    ];
 
     $: filterOptions = {
         rarity: mode === "weapons" ? [6, 5, 4, 3] : [6, 5, 4],
@@ -14,11 +25,17 @@
         element: ["cryo", "physical", "nature", "heat", "electric"],
         weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
         type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        attr1: attr1Skills,
+        attr2: attr2Skills,
+        attr3: attr3Skills
     };
 
     export let filters = mode === "weapons" ? {
         rarity: [6, 5, 4, 3],
-        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"]
+        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        attr1: [...attr1Skills],
+        attr2: [...attr2Skills],
+        attr3: [...attr3Skills]
     } : {
         rarity: [6, 5, 4],
         class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
@@ -87,14 +104,26 @@
     }
 
     $: isFilterActive = mode === "weapons" 
-        ? (filters.rarity?.length !== filterOptions.rarity.length || filters.type?.length !== filterOptions.type.length || showOwnedOnly)
-        : (filters.rarity?.length !== filterOptions.rarity.length || filters.class?.length !== filterOptions.class.length || filters.element?.length !== filterOptions.element.length || filters.weapon?.length !== filterOptions.weapon.length || showOwnedOnly);
+        ? (filters.rarity?.length !== filterOptions.rarity.length || 
+           filters.type?.length !== filterOptions.type.length || 
+           filters.attr1?.length !== filterOptions.attr1.length || 
+           filters.attr2?.length !== filterOptions.attr2.length || 
+           filters.attr3?.length !== filterOptions.attr3.length || 
+           showOwnedOnly)
+        : (filters.rarity?.length !== filterOptions.rarity.length || 
+           filters.class?.length !== filterOptions.class.length || 
+           filters.element?.length !== filterOptions.element.length || 
+           filters.weapon?.length !== filterOptions.weapon.length || 
+           showOwnedOnly);
 
     function resetFilters() {
         if (mode === "weapons") {
             filters = {
                 rarity: [...filterOptions.rarity],
                 type: [...filterOptions.type],
+                attr1: [...filterOptions.attr1],
+                attr2: [...filterOptions.attr2],
+                attr3: [...filterOptions.attr3],
             };
         } else {
             filters = {
@@ -104,7 +133,7 @@
                 weapon: [...filterOptions.weapon],
             };
         }
-        showOwnedOnly = false; // <-- СБРАСЫВАЕМ И СВИТЧ ТОЖЕ
+        showOwnedOnly = false;
         isFilterOpen = false;
     }
 
@@ -128,7 +157,7 @@
             on:click|stopPropagation={toggleSortDropdown}
         >
             <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
-                {$t(`sort.${sortField}`) || sortField}
+                {$t("sort.title") || "Sort"}
             </span>
             <svg class="w-4 h-4 text-gray-500 transition-transform {isSortDropdownOpen ? 'rotate-180' : ''}" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -169,15 +198,18 @@
         <button
             type="button"
             aria-label="Filters"
-            class="h-[40px] w-[40px] dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] hover:dark:bg-[#373737] flex items-center justify-center bg-gray-200 hover:bg-gray-200 rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-gray-800 text-white hover:bg-gray-700' : 'text-gray-800'}"
+            class="h-[40px] px-4 gap-2 dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] hover:dark:bg-[#373737] flex items-center justify-center bg-gray-200 hover:bg-gray-200 rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-gray-800 text-white hover:bg-gray-700' : 'text-gray-800'}"
             on:click|stopPropagation={toggleFilterDropdown}
         >
             <Icon name="filter" class="w-4 h-4 text-current pointer-events-none" />
+            <span class="text-sm font-medium pointer-events-none">
+                {$t("sort.filters") || "Filters"}
+            </span>
         </button>
 
         {#if isFilterOpen}
             <div
-                class="dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-2xl shadow-2xl border border-gray-200 p-5 flex flex-col gap-6 z-40 outline-none absolute top-[48px] left-1/2 -translate-x-1/2 w-[calc(100vw-2rem)] max-w-[350px] sm:left-1/2 sm:-translate-x-1/2 sm:w-[500px] sm:max-w-[calc(100vw-2rem)]"
+                class="dark:bg-[#383838] dark:border-[#444444] bg-[#F2F2F2] rounded-2xl shadow-2xl border border-gray-200 p-5 flex flex-col gap-6 z-40 outline-none absolute top-[48px] left-1/2 -translate-x-1/2 w-[calc(100vw-2rem)] max-w-[350px] sm:left-1/2 sm:-translate-x-1/2 sm:w-[500px] sm:max-w-[calc(100vw-2rem)] max-h-[80vh] overflow-y-auto"
                 role="dialog" aria-modal="true" tabindex="-1"
                 on:click|stopPropagation
                 on:keydown|stopPropagation
@@ -258,7 +290,7 @@
                     </div>
                 {/if}
 
-                    {#if mode === 'operators'}
+                {#if mode === 'operators'}
                     <div>
                         <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("weapon")}>
                             {$t("sort.weapon") || "Weapon"}
@@ -296,6 +328,57 @@
                                         <Icon name={wep} class="w-3.5 h-3.5 text-white" />
                                     </div>
                                     <span class="text-xs font-bold capitalize pointer-events-none">{$t(`weapons.${wep}`) || wep}</span>
+                                </button>
+                            {/each}
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr1")}>
+                            {$t("sort.attribute1") || "Атрибут 1"}
+                        </button>
+                        <div class="flex flex-wrap gap-2">
+                            {#each filterOptions.attr1 as skill}
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr1', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    on:click={() => toggleFilterItem("attr1", skill)}
+                                >
+                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
+                                </button>
+                            {/each}
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr2")}>
+                            {$t("sort.attribute2") || "Атрибут 2"}
+                        </button>
+                        <div class="flex flex-wrap gap-2">
+                            {#each filterOptions.attr2 as skill}
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr2', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    on:click={() => toggleFilterItem("attr2", skill)}
+                                >
+                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
+                                </button>
+                            {/each}
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr3")}>
+                            {$t("sort.attribute3") || "Атрибут 3"}
+                        </button>
+                        <div class="flex flex-wrap gap-2">
+                            {#each filterOptions.attr3 as skill}
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr3', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    on:click={() => toggleFilterItem("attr3", skill)}
+                                >
+                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
                                 </button>
                             {/each}
                         </div>
