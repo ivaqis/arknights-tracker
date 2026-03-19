@@ -797,7 +797,8 @@
 
     <!-- Elements -->
 {:else if name === "cryo"}
-    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1492_81857)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -815,7 +816,8 @@
         </defs>
     </svg>
 {:else if name === "nature"}
-    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1492_81836)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -833,7 +835,8 @@
         </defs>
     </svg>
 {:else if name === "electric"}
-    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1492_81984)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -851,7 +854,8 @@
         </defs>
     </svg>
 {:else if name === "heat"}
-    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1492_81823)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -873,7 +877,8 @@
         </defs>
     </svg>
 {:else if name === "physical"}
-    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1492_81850)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -2569,4 +2574,34 @@
             </clipPath>
         </defs>
     </svg>
+{:else if name == "crirate"}
+<svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 12H2L12.5 22.5V46L24 34.5H45.5L35 24V1L24 12Z" fill="white"/>
+<path d="M37.5 11V20.5L47 11H37.5Z" fill="white"/>
+<path d="M34.5 37L25 37L34.5 46.5L34.5 37Z" fill="white"/>
+<path d="M9.5 34.5L9.5 25L0 34.5L9.5 34.5Z" fill="white"/>
+<path d="M12 9.5L21.5 9.5L12 0L12 9.5Z" fill="white"/>
+</svg>
+{:else if name == "usp"}
+<svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 33 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.5 13L21.5 24L32.5 35V48.5H0V35L11 24L0 13V0H32.5V13ZM9 37.5H23L16 30.5L9 37.5Z" fill="white"/>
+</svg>
+
+{:else if name == "heal"}
+<svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="18" width="13" height="48" fill="white"/>
+<rect x="41.5703" y="6" width="13" height="48" transform="rotate(60 41.5703 6)" fill="white"/>
+<rect x="48.0703" y="30" width="13" height="48" transform="rotate(120 48.0703 30)" fill="white"/>
+</svg>
+
+{:else if name == "magicdam"}
+<svg class={$$props.class}
+        style={$$props.style} viewBox="0 0 39 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M29.5 15L32 11.5L39 21L34.5 26.5L36 28.5L29.5 39L27 36.5L20.5 46.5L14.5 37L10.5 41.5L4 31.5L7 26.5L0 18.5L10 5.5L12 10.5L19 0L29.5 15ZM18.7773 15.3086L12.2773 22.0967L11.6348 22.7676L12.2568 23.457L18.7568 30.6699L19.5 31.4941L20.2432 30.6699L26.7432 23.457L27.3652 22.7676L26.7227 22.0967L20.2227 15.3086L19.5 14.5537L18.7773 15.3086ZM24.6338 22.8076L19.5 28.5049L14.3652 22.8076L19.5 17.4453L24.6338 22.8076Z" fill="white"/>
+<path d="M29 6.5L32 10L35 6.5L32 3L29 6.5Z" fill="white"/>
+</svg>
+
 {/if}

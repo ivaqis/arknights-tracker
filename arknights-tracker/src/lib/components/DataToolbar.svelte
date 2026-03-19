@@ -8,11 +8,46 @@
     export let searchQuery = "";
     export let showOwnedOnly = false;
 
+    const skillIcons = {
+        "attr_atk": "atk",
+        "attr_hp": "hp",
+        "attr_agi": "agi",
+        "attr_str": "str",
+        "attr_wisd": "int",
+        "attr_will": "will",
+        "attr_firedam": "heat",
+        "attr_icedam": "cryo",
+        "attr_naturaldam": "nature",
+        "attr_phydam": "physical",
+        "attr_pulsedam": "electric",
+        "attr_crirate": "crirate",
+        "attr_usp": "usp",
+        "attr_heal": "heal",
+        "attr_physpell": "magicdam",
+    };
+
+    const elementColors = {
+        "attr_firedam": "text-[#FE633D]",
+        "attr_icedam": "text-[#22C6D0]",
+        "attr_naturaldam": "text-[#AFCD47] dark:text-[#C3E354]",
+        "attr_pulsedam": "text-[#FEC001]",
+        "attr_phydam": "text-slate-500 dark:text-slate-300" 
+    };
+
     const attr1Skills = ["attr_agi", "attr_str", "attr_will", "attr_wisd", "attr_main"];
     const attr2Skills = [
-        "attr_atk", "attr_firedam", "attr_crirate", "attr_heal", "attr_hp", 
-        "attr_usp", "attr_icedam", "attr_magicdam", "attr_naturaldam", 
-        "attr_phydam", "attr_physpell", "attr_pulsedam"
+        "attr_firedam",    // Heat
+        "attr_icedam",     // Cryo
+        "attr_naturaldam", // Nature
+        "attr_phydam",     // Physical
+        "attr_pulsedam",   // Electric
+        "attr_magicdam",   // Arts
+        "attr_atk",        // Attack
+        "attr_crirate",    // Crit Rate
+        "attr_heal",       // Healing
+        "attr_hp",         // HP
+        "attr_physpell",   // Arts Intensity
+        "attr_usp"         // Ultimate Gain
     ];
     const attr3Skills = [
         "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
@@ -153,7 +188,7 @@
     <div class="relative">
         <button
             type="button"
-            class="h-[40px] dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
+            class="h-[40px] dark:bg-[#383838] dark:border dark:border-[#444444] hover:dark:bg-[#373737] px-4 bg-gray-200 hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors min-w-[140px] justify-between cursor-pointer select-none"
             on:click|stopPropagation={toggleSortDropdown}
         >
             <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 capitalize pointer-events-none">
@@ -165,11 +200,11 @@
         </button>
 
         {#if isSortDropdownOpen}
-            <div class="dark:bg-[#383838] dark:border-[#444444] absolute top-[48px] left-0 w-full bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-1 flex flex-col z-40">
+            <div class="dark:bg-[#383838]  dark:border-[#444444] absolute top-[48px] left-0 w-full bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden py-1 flex flex-col z-40">
                 {#each sortOptions as option}
                     <button
                         type="button"
-                        class="px-4 py-2.5 text-left text-sm hover:bg-gray-50 hover:dark:bg-[#424242] transition-colors capitalize cursor-pointer {sortField === option ? 'text-black font-bold bg-gray-50 dark:text-[#E0E0E0] dark:bg-[#424242]' : 'text-gray-600 dark:text-[#B7B6B3]'}"
+                        class="px-4 py-2.5 text-left  text-sm hover:bg-gray-50 hover:dark:bg-[#424242] transition-colors capitalize cursor-pointer {sortField === option ? 'text-black font-bold bg-gray-50 dark:text-[#E0E0E0] dark:bg-[#424242]' : 'text-gray-600 dark:text-[#B7B6B3]'}"
                         on:click|stopPropagation={() => setSortField(option)}
                     >
                         {$t(`sort.${option}`) || option}
@@ -181,7 +216,7 @@
 
     <button
         type="button"
-        class="h-[40px] px-4 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors cursor-pointer"
+        class="h-[40px] px-4 bg-gray-200 dark:border dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] hover:bg-gray-200 rounded-full flex items-center gap-2 transition-colors cursor-pointer"
         on:click={toggleSortDirection}
     >
         <span class="text-sm font-medium dark:text-[#E0E0E0] text-gray-700 pointer-events-none">
@@ -198,11 +233,11 @@
         <button
             type="button"
             aria-label="Filters"
-            class="h-[40px] px-4 gap-2 dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] hover:dark:bg-[#373737] flex items-center justify-center bg-gray-200 hover:bg-gray-200 rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-gray-800 text-white hover:bg-gray-700' : 'text-gray-800'}"
+            class="h-[40px] px-4 gap-2 flex items-center justify-center rounded-full transition-colors cursor-pointer {isFilterActive ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]' : 'bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'}"
             on:click|stopPropagation={toggleFilterDropdown}
         >
             <Icon name="filter" class="w-4 h-4 text-current pointer-events-none" />
-            <span class="text-sm font-medium pointer-events-none">
+            <span class="text-sm pointer-events-none">
                 {$t("sort.filters") || "Filters"}
             </span>
         </button>
@@ -341,9 +376,14 @@
                             {#each filterOptions.attr1 as skill}
                                 <button
                                     type="button"
-                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr1', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {isSelected('attr1', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
                                     on:click={() => toggleFilterItem("attr1", skill)}
                                 >
+                                    {#if skillIcons[skill]}
+                                        <div class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none">
+                                            <Icon name={skillIcons[skill]} class="w-3 h-3 text-white pointer-events-none" />
+                                        </div>
+                                    {/if}
                                     <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
                                 </button>
                             {/each}
@@ -352,16 +392,34 @@
 
                     <div>
                         <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr2")}>
-                            {$t("sort.attribute2") || "Атрибут 2"}
+                            {$t("sort.attribute2") || "Attribute 2"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.attr2 as skill}
                                 <button
                                     type="button"
-                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr2', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {isSelected('attr2', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
                                     on:click={() => toggleFilterItem("attr2", skill)}
                                 >
-                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
+                                    {#if skillIcons[skill]}
+                                        {#if elementColors[skill]}
+                                            <Icon 
+                                                name={skillIcons[skill]} 
+                                                class="w-4 h-4 pointer-events-none {elementColors[skill]}" 
+                                            />
+                                        {:else}
+                                            <div class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none">
+                                                <Icon 
+                                                    name={skillIcons[skill]} 
+                                                    class="w-3 h-3 text-white pointer-events-none" 
+                                                />
+                                            </div>
+                                        {/if}
+                                    {/if}
+                                    
+                                    <span class="text-xs font-bold pointer-events-none {elementColors[skill] || 'text-current'}">
+                                        {$t(`skills.${skill}`) || skill}
+                                    </span>
                                 </button>
                             {/each}
                         </div>
@@ -369,15 +427,18 @@
 
                     <div>
                         <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr3")}>
-                            {$t("sort.attribute3") || "Атрибут 3"}
+                            {$t("sort.attribute3") || "Attribute 3"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.attr3 as skill}
                                 <button
                                     type="button"
-                                    class="h-[32px] px-3 rounded flex items-center justify-center border transition-all cursor-pointer {isSelected('attr3', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
+                                    class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {isSelected('attr3', skill) ? 'bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444]' : 'bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878]'}"
                                     on:click={() => toggleFilterItem("attr3", skill)}
                                 >
+                                    {#if skillIcons[skill]}
+                                        <Icon name={skillIcons[skill]} class="w-4 h-4 text-current pointer-events-none" />
+                                    {/if}
                                     <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
                                 </button>
                             {/each}
@@ -402,7 +463,7 @@
         <input
             type="text"
             bind:value={searchQuery}
-            class="w-full h-[40px] dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
+            class="w-full h-[40px] dark:border-[#444444] dark:border dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
             placeholder={$t("sort.search") || "Search..."}
         />
 
