@@ -41,7 +41,6 @@
 
     $: filteredWeapons = allWeapons
         .filter((wp) => {
-            // 1. Фильтр по наличию
             if (showOwnedOnly) {
                 const activeId = $selectedId;
                 const manualPots = $manualPotentials[activeId] || {}; 
@@ -65,7 +64,6 @@
                 if (finalPot < 0) return false;
             }
 
-            // 2. Поиск по строке
             const locName = ($t(`weaponsList.${wp.id}`) || "").toLowerCase();
             const query = searchQuery.toLowerCase().trim();
             const baseName = (wp.name || "").toLowerCase();
@@ -79,14 +77,9 @@
 
             if (!matchesSearch) return false;
             
-            // 3. Базовые фильтры
             const matchesRarity = filters.rarity.length === 0 || filters.rarity.includes(wp.rarity);
             const wpType = wp.type || wp.weapon;
             const matchesType = filters.type.length === 0 || (wpType && filters.type.some(w => w.toLowerCase() === wpType.toLowerCase()));
-
-            // 4. НОВЫЕ ФИЛЬТРЫ СКИЛЛОВ
-            // Если длина фильтра равна количеству всех скиллов в группе - значит фильтр "неактивен", пропускаем всё.
-            // Иначе - проверяем, есть ли у оружия хотя бы один скилл из выбранных в фильтре.
             const passesAttr1 = filters.attr1.length === attr1Skills.length || 
                 (wp.skills && wp.skills.some(skill => filters.attr1.includes(skill)));
 
@@ -117,7 +110,6 @@
     $: if (searchQuery !== undefined || filters || sortField || sortDirection || showOwnedOnly) {
         displayLimit = 40;
     }
-    // Здесь мы формируем список из 40 элементов для первой отрисовки
     $: displayedWeapons = filteredWeapons.slice(0, displayLimit);
 
     function infiniteScroll(node) {

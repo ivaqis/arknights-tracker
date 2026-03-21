@@ -287,7 +287,7 @@ export const rawEvents = [
     url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#d4cc2f",
     layer: 7,
-    type: "inGame",
+    type: "mailEvent",
     iconPosition: 40
   },
   {
@@ -300,7 +300,7 @@ export const rawEvents = [
     url: "https://x.com/AKEndfield/status/2029044162058706986?s=20",
     color: "#d4cc2f",
     layer: 7,
-    type: "inGame",
+    type: "mailEvent",
     iconPosition: 40
   },
   {

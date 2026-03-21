@@ -14,6 +14,9 @@
     export let className = "";
     export let isNew = false;
     export let hideName = false;
+    export let hidePot = true;
+    
+    export let asLink = true; 
 
     $: safeWeaponType = weapon.type || weapon.weapon;
 
@@ -31,6 +34,7 @@
     $: safeRarity = weapon?.rarity || 1;
     $: rarityColor = getRarityColor(safeRarity);
     $: nameKey = weapon.id || weapon.name?.toLowerCase().replace(/\s+/g, "");
+    
     $: rootClass =
         variant === "small"
             ? `relative flex flex-col cursor-pointer select-none group flex-shrink-0 ${className || "w-[80px] h-[80px]"}`
@@ -67,6 +71,7 @@
     $: constCount = hasWeapon ? currentPot : 0;
     $: isMaxPot = constCount >= 5;
 
+
     const potPaths = [
         "M35.3769 14.521L43.8763 14.4792L10.06 39.0583L2.11523 38.4865L35.3769 14.521Z",
         "M20.1176 23.9788L22.9078 15.9502L34.827 56.0203L31.6429 63.3215L20.1176 23.9788Z",
@@ -91,7 +96,6 @@
 
         const observer = new ResizeObserver(checkOverflow);
         observer.observe(node);
-
         checkOverflow();
 
         return {
@@ -106,85 +110,48 @@
 </script>
 
 {#if weapon && weapon.id}
-    <a
-        href={`/weapons/${weapon.id}`}
-        class="{rootClass} block no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
+    <svelte:element
+        this={asLink ? "a" : "div"}
+        href={asLink ? `/weapons/${weapon.id}` : undefined}
+        class="{rootClass} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}
     >
-        <div
-            class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
-        ></div>
+        <div class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"></div>
 
-        <div
-            class="
-            relative w-full h-full rounded-[6px] overflow-hidden
-            shadow-sm dark:shadow-sm
-            bg-white dark:bg-[#2a2a2a]
-        "
-        >
-            <div
-                class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a]"
-            ></div>
+        <div class="relative w-full h-full rounded-[6px] overflow-hidden shadow-sm dark:shadow-sm bg-white dark:bg-[#2a2a2a]">
+            
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-200 dark:from-[#3a3a3a] dark:to-[#1a1a1a]"></div>
 
-            <div
-                class="absolute inset-0 bottom-[6px] flex items-center justify-center z-0"
-            >
+            <div class="absolute inset-0 bottom-[6px] flex items-center justify-center z-0">
                 <Images
                     id={weapon.id}
                     variant="weapon-icon"
-                    className="w-full h-full object-contain drop-shadow-md blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300 {!hasWeapon
-                        ? 'brightness-50 grayscale-[50%]'
-                        : ''}"
+                    className="w-full h-full object-contain drop-shadow-md blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300 {!hasWeapon ? 'brightness-50 grayscale-[50%]' : ''}"
                     alt={weapon.name}
                 />
             </div>
 
             {#if safeWeaponType && variant !== "small"}
-                <div
-                    class="absolute top-1 left-1 z-20 pointer-events-auto filter"
-                >
-                    <Tooltip
-                        text={$t(`weapons.${safeWeaponType}`) || safeWeaponType}
-                    >
-                        <div
-                            class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center shadow-inner cursor-pointer
-                            {variant === 'small'
-                                ? 'w-4 h-4 p-0.5'
-                                : 'w-5 h-5 p-0.5'}"
-                        >
-                            <Icon
-                                name={safeWeaponType}
-                                class="w-full h-full text-white/90"
-                            />
+                <div class="absolute top-1 left-1 z-20 pointer-events-auto filter">
+                    <Tooltip text={$t(`weapons.${safeWeaponType}`) || safeWeaponType}>
+                        <div class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center shadow-inner cursor-pointer {variant === 'small' ? 'w-4 h-4 p-0.5' : 'w-5 h-5 p-0.5'}">
+                            <Icon name={safeWeaponType} class="w-full h-full text-white/90" />
                         </div>
                     </Tooltip>
                 </div>
             {/if}
 
-            {#if hasWeapon && variant !== "small"}
-                <div
-                    class="absolute z-20 right-1 top-1 pointer-events-auto drop-shadow-md blur-[0.2px] shadow-black"
-                >
+            {#if hasWeapon && variant !== "small" && hidePot}
+                <div class="absolute z-20 right-1 top-1 pointer-events-auto drop-shadow-md blur-[0.2px] shadow-black">
                     <Tooltip text={`P${currentPot}`} class="">
-                        <svg
-                            viewBox="0 0 66 65"
-                            fill="none"
-                            class="w-7 h-7 transition-all cursor-pointer duration-300 {isMaxPot
-                                ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]'
-                                : ''}"
-                            style="shape-rendering: geometricPrecision;"
-                        >
+                        <svg viewBox="0 0 66 65" fill="none" class="w-7 h-7 transition-all cursor-pointer duration-300 {isMaxPot ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]' : ''}" style="shape-rendering: geometricPrecision;">
                             {#each potPaths as d, i}
                                 {@const isActive = i < constCount}
                                 <path
                                     {d}
                                     fill={isActive ? "#FEDE28" : "black"}
-                                    stroke={isMaxPot
-                                        ? "white"
-                                        : isActive
-                                          ? "#E5D32B"
-                                          : "white"}
+                                    stroke={isMaxPot ? "white" : isActive ? "#E5D32B" : "white"}
                                     stroke-width="1.5"
                                     stroke-linejoin="round"
                                     class="transition-colors duration-300"
@@ -196,75 +163,37 @@
             {/if}
 
             {#if !hideName}
-                <div
-                    class="absolute bottom-[6px] left-0 right-0 h-[30px] z-10 pointer-events-none bg-gradient-to-t from-black/50 to-transparent"
-                ></div>
+                <div class="absolute bottom-[6px] left-0 right-0 h-[30px] z-10 pointer-events-none bg-gradient-to-t from-black/50 to-transparent"></div>
             {/if}
-            <div
-                class="absolute bottom-0 left-0 w-full h-[6px] z-20"
-                style:background-color={rarityColor}
-            >
-                <div
-                    class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
-                    style="
-                        --dot-color: {rarityColor};
-                        background-image: radial-gradient(var(--dot-color) 30%, transparent 35%);
-                        background-size: 4px 4px;
-                        mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);
-                        -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);
-                    "
+            
+            <div class="absolute bottom-0 left-0 w-full h-[6px] z-20" style:background-color={rarityColor}>
+                <div class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
+                    style="--dot-color: {rarityColor}; background-image: radial-gradient(var(--dot-color) 30%, transparent 35%); background-size: 4px 4px; mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);"
                 ></div>
             </div>
+
             {#if !hideName}
-                <div
-                    class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5"
-                >
-                    <Tooltip
-                        text={$t(`weaponsList.${nameKey}`) || weapon.name}
-                        class="flex justify-center w-full"
-                    >
-                        <span
-                            use:tooltipOnlyOnOverflow={$t(
-                                `weaponsList.${nameKey}`,
-                            ) || weapon.name}
-                            class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 drop-shadow-md opacity-90 w-full block cursor-pointer"
-                        >
+                <div class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5">
+                    <Tooltip text={$t(`weaponsList.${nameKey}`) || weapon.name} class="flex justify-center w-full">
+                        <span use:tooltipOnlyOnOverflow={$t(`weaponsList.${nameKey}`) || weapon.name} class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 drop-shadow-md opacity-90 w-full block cursor-pointer">
                             {$t(`weaponsList.${nameKey}`) || weapon.name}
                         </span>
                     </Tooltip>
                 </div>
             {/if}
+
             {#if isNew && variant !== "small"}
-                <div
-                    class="absolute right-0 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm"
-                >
-                    <div
-                        class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
-                    ></div>
-
-                    <div
-                        class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
-                    ></div>
-
-                    <div
-                        class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center"
-                    >
-                        <div
-                            class="absolute left-[-4px] w-[8px] top-0 bottom-0"
-                        ></div>
-
-                        <span
-                            class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
-                        >
-                            NEW
-                        </span>
+                <div class="absolute right-0 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm">
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
+                    <div class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center">
+                        <div class="absolute left-[-4px] w-[8px] top-0 bottom-0"></div>
+                        <span class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase">NEW</span>
                     </div>
                 </div>
             {/if}
-            <div
-                class="absolute bottom-0 left-0 w-full h-[6px] z-10"
-                style:background-color={rarityColor}
-            ></div>
+            
+            <div class="absolute bottom-0 left-0 w-full h-[6px] z-10" style:background-color={rarityColor}></div>
         </div>
-    </a>
+    </svelte:element>
 {/if}

@@ -797,8 +797,13 @@
 
     <!-- Elements -->
 {:else if name === "cryo"}
-    <svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g clip-path="url(#clip0_1492_81857)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -816,8 +821,13 @@
         </defs>
     </svg>
 {:else if name === "nature"}
-    <svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g clip-path="url(#clip0_1492_81836)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -835,8 +845,13 @@
         </defs>
     </svg>
 {:else if name === "electric"}
-    <svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g clip-path="url(#clip0_1492_81984)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -854,8 +869,13 @@
         </defs>
     </svg>
 {:else if name === "heat"}
-    <svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g clip-path="url(#clip0_1492_81823)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -877,8 +897,13 @@
         </defs>
     </svg>
 {:else if name === "physical"}
-    <svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <g clip-path="url(#clip0_1492_81850)">
             <path
                 d="M0 0C6.6 0 13.2 0 20 0C20 6.6 20 13.2 20 20C13.4 20 6.8 20 0 20C0 13.4 0 6.8 0 0Z"
@@ -2575,33 +2600,150 @@
         </defs>
     </svg>
 {:else if name == "crirate"}
-<svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 12H2L12.5 22.5V46L24 34.5H45.5L35 24V1L24 12Z" fill="white"/>
-<path d="M37.5 11V20.5L47 11H37.5Z" fill="white"/>
-<path d="M34.5 37L25 37L34.5 46.5L34.5 37Z" fill="white"/>
-<path d="M9.5 34.5L9.5 25L0 34.5L9.5 34.5Z" fill="white"/>
-<path d="M12 9.5L21.5 9.5L12 0L12 9.5Z" fill="white"/>
-</svg>
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 50 50"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M24 12H2L12.5 22.5V46L24 34.5H45.5L35 24V1L24 12Z"
+            fill="white"
+        />
+        <path d="M37.5 11V20.5L47 11H37.5Z" fill="white" />
+        <path d="M34.5 37L25 37L34.5 46.5L34.5 37Z" fill="white" />
+        <path d="M9.5 34.5L9.5 25L0 34.5L9.5 34.5Z" fill="white" />
+        <path d="M12 9.5L21.5 9.5L12 0L12 9.5Z" fill="white" />
+    </svg>
 {:else if name == "usp"}
-<svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 33 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M32.5 13L21.5 24L32.5 35V48.5H0V35L11 24L0 13V0H32.5V13ZM9 37.5H23L16 30.5L9 37.5Z" fill="white"/>
-</svg>
-
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 33 49"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M32.5 13L21.5 24L32.5 35V48.5H0V35L11 24L0 13V0H32.5V13ZM9 37.5H23L16 30.5L9 37.5Z"
+            fill="white"
+        />
+    </svg>
 {:else if name == "heal"}
-<svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="18" width="13" height="48" fill="white"/>
-<rect x="41.5703" y="6" width="13" height="48" transform="rotate(60 41.5703 6)" fill="white"/>
-<rect x="48.0703" y="30" width="13" height="48" transform="rotate(120 48.0703 30)" fill="white"/>
-</svg>
-
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 49 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <rect x="18" width="13" height="48" fill="white" />
+        <rect
+            x="41.5703"
+            y="6"
+            width="13"
+            height="48"
+            transform="rotate(60 41.5703 6)"
+            fill="white"
+        />
+        <rect
+            x="48.0703"
+            y="30"
+            width="13"
+            height="48"
+            transform="rotate(120 48.0703 30)"
+            fill="white"
+        />
+    </svg>
 {:else if name == "magicdam"}
-<svg class={$$props.class}
-        style={$$props.style} viewBox="0 0 39 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M29.5 15L32 11.5L39 21L34.5 26.5L36 28.5L29.5 39L27 36.5L20.5 46.5L14.5 37L10.5 41.5L4 31.5L7 26.5L0 18.5L10 5.5L12 10.5L19 0L29.5 15ZM18.7773 15.3086L12.2773 22.0967L11.6348 22.7676L12.2568 23.457L18.7568 30.6699L19.5 31.4941L20.2432 30.6699L26.7432 23.457L27.3652 22.7676L26.7227 22.0967L20.2227 15.3086L19.5 14.5537L18.7773 15.3086ZM24.6338 22.8076L19.5 28.5049L14.3652 22.8076L19.5 17.4453L24.6338 22.8076Z" fill="white"/>
-<path d="M29 6.5L32 10L35 6.5L32 3L29 6.5Z" fill="white"/>
-</svg>
-
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 39 47"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M29.5 15L32 11.5L39 21L34.5 26.5L36 28.5L29.5 39L27 36.5L20.5 46.5L14.5 37L10.5 41.5L4 31.5L7 26.5L0 18.5L10 5.5L12 10.5L19 0L29.5 15ZM18.7773 15.3086L12.2773 22.0967L11.6348 22.7676L12.2568 23.457L18.7568 30.6699L19.5 31.4941L20.2432 30.6699L26.7432 23.457L27.3652 22.7676L26.7227 22.0967L20.2227 15.3086L19.5 14.5537L18.7773 15.3086ZM24.6338 22.8076L19.5 28.5049L14.3652 22.8076L19.5 17.4453L24.6338 22.8076Z"
+            fill="white"
+        />
+        <path d="M29 6.5L32 10L35 6.5L32 3L29 6.5Z" fill="white" />
+    </svg>
+{:else if name == "essence"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 95 95"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M47.5 0C73.7335 0 95 21.2665 95 47.5C95 73.7335 73.7335 95 47.5 95C21.2665 95 0 73.7335 0 47.5C0 21.2665 21.2665 0 47.5 0ZM46.5 78C38.4919 78 32 81.134 32 85C32 88.866 38.4919 92 46.5 92C54.5081 92 61 88.866 61 85C61 81.134 54.5081 78 46.5 78ZM76.5371 19.2246C66.2451 7.50352 52.3277 2.89645 45.4512 8.93457C38.5749 14.9727 41.3432 29.3689 51.6348 41.0898C61.9267 52.8109 75.8451 57.418 82.7217 51.3799C89.5981 45.3417 86.829 30.9456 76.5371 19.2246Z"
+            fill="currentColor"
+        />
+        <ellipse
+            cx="47"
+            cy="82.5"
+            rx="4.5"
+            ry="8"
+            transform="rotate(-90 47 82.5)"
+            fill="currentColor"
+        />
+        <ellipse
+            cx="60.9482"
+            cy="35.2705"
+            rx="9.93126"
+            ry="16.8656"
+            transform="rotate(-45 60.9482 35.2705)"
+            fill="currentColor"
+        />
+    </svg>
+{:else if name == "wuling"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 42 33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M21 23C32.598 23 42 25.2386 42 28C42 30.7614 32.598 33 21 33C9.40202 33 0 30.7614 0 28C0 25.2386 9.40202 23 21 23ZM9 24V30H15V24H9Z"
+            fill="currentColor"
+        />
+        <rect x="9" y="16" width="6" height="8" fill="currentColor" />
+        <rect x="19" y="14" width="6" height="10" fill="currentColor" />
+        <rect x="19" width="6" height="12" fill="currentColor" />
+        <rect x="9" y="2" width="6" height="12" fill="currentColor" />
+        <path
+            d="M31.8657 6.66007L31.8657 11.0038L26.0019 16L26.0019 11.5026L31.8657 6.66007Z"
+            fill="currentColor"
+        />
+    </svg>
+{:else if name == "theBase"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 43 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M43 18H21.1923H1C1 11.3726 10.402 6 22 6C33.598 6 43 11.3726 43 18Z"
+            fill="currentColor"
+        />
+        <path
+            d="M25 7H12.0192H0C0 3.13401 5.59644 0 12.5 0C19.4036 0 25 3.13401 25 7Z"
+            fill="currentColor"
+        />
+    </svg>
+{:else if name == "favorite"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        ><path
+            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+        /></svg
+    >
 {/if}
