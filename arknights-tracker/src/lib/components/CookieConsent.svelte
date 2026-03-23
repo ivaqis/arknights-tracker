@@ -53,7 +53,7 @@
         </Button>
         <Button 
           variant="round" 
-          className="text-xs px-4 py-2 bg-black text-white dark:bg-white dark:text-black"
+          className="text-xs px-4 py-2"
           onClick={accept}
         >
           {$t("cookies.accept") || "Accept"}

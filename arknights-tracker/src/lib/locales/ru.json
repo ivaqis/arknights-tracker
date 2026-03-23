@@ -485,8 +485,8 @@
   "weapons": {
     "sword": "Меч",
     "polearm": "Древковое оружие",
-    "artsUnit": "Модуль исскуств",
-    "greatSword": "Двуречный меч",
+    "artsUnit": "Модуль искусств",
+    "greatSword": "Двуручный меч",
     "handcannon": "Пушка"
   },
   "items": {

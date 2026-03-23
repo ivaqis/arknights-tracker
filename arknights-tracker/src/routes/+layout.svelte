@@ -298,7 +298,7 @@
                 </div>
 
                 <nav class="flex flex-col gap-4 px-3">
-                    {#each [{ path: "/", label: "sidebar.home", icon: "main" }, { path: "/records", label: "sidebar.records", icon: "records" }, { path: "/operators", label: "sidebar.operators", icon: "operators" }, { path: "/weapons", label: "pages.weapons", icon: "weapons" }, { path: "/events", label: "sidebar.events", icon: "timeline" }, { path: "/settings", label: "sidebar.settings", icon: "settingsMenu" }] as item}
+                    {#each [{ path: "/", label: "sidebar.home", icon: "main" }, { path: "/records", label: "sidebar.records", icon: "records" }, { path: "/operators", label: "sidebar.operators", icon: "operators" }, { path: "/weapons", label: "pages.weapons", icon: "weapons" }, { path: "/essences", label: "pages.essences", icon: "essence" }, { path: "/events", label: "sidebar.events", icon: "timeline" }, { path: "/settings", label: "sidebar.settings", icon: "settingsMenu" }] as item}
                         <a
                             href={item.path}
                             class="

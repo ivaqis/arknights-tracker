@@ -3,6 +3,7 @@
 export const locations = {
   "world_energy_point01_7": {
     "id": "world_energy_point01_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_1&p=2100460006",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -24,6 +25,7 @@ export const locations = {
   },
   "world_energy_point05_7": {
     "id": "world_energy_point05_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=WL&s=WL_2&p=22800760005",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
@@ -45,6 +47,7 @@ export const locations = {
   },
   "world_energy_point02_7": {
     "id": "world_energy_point02_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_5&p=3400270005",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -70,6 +73,7 @@ export const locations = {
   },
   "world_energy_point06_7": {
     "id": "world_energy_point06_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=WL&s=WL_3&p=23300220007",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -93,6 +97,7 @@ export const locations = {
   },
   "world_energy_point04_7": {
     "id": "world_energy_point04_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_7&p=2800200042",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -118,6 +123,7 @@ export const locations = {
   },
   "world_energy_point03_7": {
     "id": "world_energy_point03_7",
+    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_6&p=3500180008",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
