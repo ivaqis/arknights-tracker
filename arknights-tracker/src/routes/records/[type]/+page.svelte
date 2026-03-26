@@ -293,16 +293,20 @@
         let p6 = 0,
             p5 = 0;
         let bannerCounts = {};
-        let rateUpCounter = 0;
+        
+        let rateUpCounters = {}; 
+        
         const isWeapon =
             bannerType.includes("weap") || bannerType.includes("wepon");
         const hardPityLimit = isWeapon ? 80 : 120;
+        
         let processed = sorted.map((pull) => {
             const p = { ...pull };
             const banner = getBannerForPull(p.time, bannerType);
             const bid = banner ? banner.id : "other";
 
             if (!bannerCounts[bid]) bannerCounts[bid] = 0;
+            if (rateUpCounters[bid] === undefined) rateUpCounters[bid] = 0; 
 
             let isFree = false;
 
@@ -340,12 +344,13 @@
                 } else {
                     p.pity = 1;
                 }
+                
             let isHardPityTriggered = false;
             if (!isFree) {
-                if (rateUpCounter >= hardPityLimit - 1) {
+                if (rateUpCounters[bid] >= hardPityLimit - 1) {
                     isHardPityTriggered = true;
                 }
-                rateUpCounter++;
+                rateUpCounters[bid]++;
             }
 
             if (p.rarity >= 5) {
@@ -369,7 +374,7 @@
                                 p.status = "won";
                             }
                             if (p.rarity === 6) {
-                                rateUpCounter = 0;
+                                rateUpCounters[bid] = 0;
                             }
                         } else {
                             p.status = "lost";
@@ -412,6 +417,7 @@
 
         return processed.reverse();
     })();
+
     function getWeaponBg(rarity) {
         if (rarity === 6) return "bg-gradient-to-t from-[#591C00] to-[#BD896E]";
         if (rarity === 5) return "bg-gradient-to-t from-[#261E00] to-[#E3BC55]";

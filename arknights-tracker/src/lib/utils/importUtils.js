@@ -224,10 +224,10 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     let won5050 = 0, total5050 = 0;
     let hasReceivedRateUp = false;
     let currentPity6 = 0, currentPity5 = 0;
-    let rateUpCounter = 0; 
     let currentBannerMileage = 0; 
 
     const bannerSpecificCounts = {};
+    const rateUpCounters = {}; 
 
     pulls.forEach((pull) => {
         const itemName = normalize(pull.name);
@@ -235,6 +235,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         const uniqueBannerKey = getDistinctBannerId(pull, accountServerId);
 
         if (!bannerSpecificCounts[uniqueBannerKey]) bannerSpecificCounts[uniqueBannerKey] = 0;
+        if (rateUpCounters[uniqueBannerKey] === undefined) rateUpCounters[uniqueBannerKey] = 0;
 
         let isFreePull = false;
         if (typeof pull.isFree === 'boolean') {
@@ -251,8 +252,8 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         }
 
         let isHardPityTriggered = false;
-        if (rateUpCounter >= hardPityLimit - 1) isHardPityTriggered = true;
-        rateUpCounter++;
+        if (rateUpCounters[uniqueBannerKey] >= hardPityLimit - 1) isHardPityTriggered = true;
+        rateUpCounters[uniqueBannerKey]++;
 
         if (bannerId.includes('standard') || bannerId.includes('new')) {
             currentBannerMileage++;
@@ -283,7 +284,7 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
                     pull.status = "guaranteed";
                     pull.isGuaranteed = true;
                 }
-                rateUpCounter = 0;
+                rateUpCounters[uniqueBannerKey] = 0;
                 if (pullTime >= mileageStart && pullTime <= mileageEnd) hasReceivedRateUp = true;
             } else {
                 total5050++;
@@ -344,9 +345,16 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
         }
     }
 
+    let activeRateUpCounter = 0;
+    if (currentViewBanner && rateUpCounters[currentViewBanner.id] !== undefined) {
+        activeRateUpCounter = rateUpCounters[currentViewBanner.id];
+    } else if (rateUpCounters[bannerId] !== undefined) {
+        activeRateUpCounter = rateUpCounters[bannerId];
+    }
+
     return {
         total, pity6: currentPity6, pity5: currentPity5, mileage,
-        guarantee120: hasReceivedRateUp ? 0 : rateUpCounter, 
+        guarantee120: hasReceivedRateUp ? 0 : activeRateUpCounter, 
         hasReceivedRateUp, count6, count5,
         avg6: count6 ? (sumPity6 / count6).toFixed(1) : "0.0",
         avg5: count5 ? (sumPity5 / count5).toFixed(1) : "0.0",
