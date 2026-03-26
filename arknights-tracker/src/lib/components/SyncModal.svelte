@@ -1,10 +1,30 @@
 <script>
     import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore";
     import { accountStore } from "$lib/stores/accounts";
-    import { pullData } from "$lib/stores/pulls"; 
+    import { pullData } from "$lib/stores/pulls";
+    import { t } from "$lib/i18n";
+
+    import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icons.svelte";
-    import { t } from "$lib/i18n";
+
+    let showClearModal = false;
+
+    function confirmClear() {
+        if (typeof window !== 'undefined') {
+            let currentId = 'main';
+            try { 
+                if ($accountStore && $accountStore.selectedId) {
+                    currentId = $accountStore.selectedId;
+                }
+            } catch(e) {}
+            
+            localStorage.removeItem(`ark_tracker_data_${currentId}`);
+            localStorage.removeItem("ark_last_sync");
+            showClearModal = false;
+            window.location.reload();
+        }
+    }
 
     const formatDate = (ts) => ts === 0 ? "Never" : new Date(ts).toLocaleString();
 
@@ -174,7 +194,20 @@
                  {/if}
             </div>
 
+            <div class="px-6 pb-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-t border-gray-100 dark:border-[#444] pt-4">
+                <span class="text-xs text-gray-500 dark:text-[#787878]">
+                    {$t("settings.cloud.syncNotWorking") || "Синхронизация не работает?"}
+                </span>
+                <button 
+                    type="button"
+                    class="text-xs font-bold text-red-500 hover:text-red-600 dark:hover:text-red-400 transition-colors underline decoration-dashed underline-offset-4 outline-none"
+                    on:click={() => showClearModal = true}
+                >
+                    {$t("settings.cloud.clearAccountData") || "Очистить данные аккаунта"}
+                </button>
+            </div>
             <div class="p-4 bg-gray-50 dark:bg-[#343434] border-t border-gray-100 dark:border-[#444444] flex justify-end gap-3">
+
                 <Button variant="black2" onClick={handleLeftButton}>
                     <div slot="icon">
                         {#if $syncStatus === "local_newer"}
@@ -198,3 +231,13 @@
         </div>
     </div>
 {/if}
+
+<ConfirmationModal
+    isOpen={showClearModal}
+    title={($t("settings.account.clear") || "Очистить данные") + "?"}
+    description={$t("settings.account.clearDescription") || "Вы уверены? Локальные данные будут удалены. Убедитесь, что у вас есть копия в облаке."}
+    confirmText={$t("settings.account.yesClear") || "Удалить"}
+    isDestructive={true}
+    on:confirm={confirmClear}
+    on:close={() => (showClearModal = false)}
+/>

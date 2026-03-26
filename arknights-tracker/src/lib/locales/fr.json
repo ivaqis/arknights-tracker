@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "Synchro Cloud",
+      "syncNotWorking": "La synchronisation ne fonctionne pas ?",
+      "clearAccountData": "Effacer les données du compte",
       "sync_toast": "Données synchronisées avec succès",
       "description": "Goyfield synchronise les données avec Google pour sauvegarder votre historique. Si la synchro est désactivée, vider le cache ou réinstaller le navigateur effacera tout. Goyfield n'accède qu'à ses propres fichiers.",
       "btn": "Se connecter avec Google",

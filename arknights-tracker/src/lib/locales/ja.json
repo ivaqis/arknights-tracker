@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "クラウド同期",
+      "syncNotWorking": "同期が機能しませんか？",
+      "clearAccountData": "アカウントデータを消去",
       "sync_toast": "データの同期が完了しました",
       "description": "GoyfieldはGoogleと同期してガチャ履歴を保存します。同期が無効の場合、キャッシュのクリアやブラウザの再インストールで全てのデータが消えます。Goyfieldは自身のファイルにのみアクセス可能です。",
       "btn": "Googleでログイン",
@@ -928,5 +930,5 @@
     "ifLock": "固定する場合",
     "addAttr1": "属性 1 を追加",
     "attrAlreadySelected": "同時に周回できます"
-}
+  }
 }

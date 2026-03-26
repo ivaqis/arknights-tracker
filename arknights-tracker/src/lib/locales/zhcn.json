@@ -579,6 +579,8 @@
     },
     "cloud": {
       "title": "云同步",
+      "syncNotWorking": "同步无法正常工作？",
+      "clearAccountData": "清除账户数据",
       "sync_toast": "数据同步成功",
       "description": "Goyfield 与 Google 同步以保存您的寻访记录。如果禁用同步，清除缓存或重新安装浏览器将删除所有数据。Goyfield 只能访问其自己的文件。",
       "btn": "使用 Google 登录",

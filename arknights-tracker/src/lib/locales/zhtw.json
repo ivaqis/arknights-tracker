@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "雲端同步",
+      "syncNotWorking": "同步無法正常運作？",
+      "clearAccountData": "清除帳戶資料",
       "sync_toast": "資料同步成功",
       "description": "Goyfield 與 Google 同步以儲存您的尋訪記錄。如果停用同步，清除快取或重新安裝瀏覽器將刪除所有資料。Goyfield 只能存取其自己的檔案。",
       "btn": "使用 Google 登入",
@@ -627,7 +629,7 @@
     },
     "donate": {
       "title": "贊助項目",
-        "description": "感謝使用 Goyfield.moe！不要指望我在 Boosty 和 Patreon 上發布什麼內容，但你的贊助將幫助支付伺服器費用，讓這個項目繼續活下去。"
+      "description": "感謝使用 Goyfield.moe！不要指望我在 Boosty 和 Patreon 上發布什麼內容，但你的贊助將幫助支付伺服器費用，讓這個項目繼續活下去。"
     }
   },
   "home": {
@@ -928,5 +930,5 @@
     "ifLock": "如果鎖定",
     "addAttr1": "添加屬性 1",
     "attrAlreadySelected": "將同時刷取"
-}
+  }
 }

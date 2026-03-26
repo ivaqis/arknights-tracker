@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "Sincronización en la Nube",
+      "syncNotWorking": "¿La sincronización no funciona?",
+      "clearAccountData": "Borrar datos de la cuenta",
       "sync_toast": "Datos sincronizados con éxito",
       "description": "Goyfield sincroniza datos con Google para guardar tu historial. Si la sincronización está desactivada, limpiar caché o reinstalar el navegador borrará todos los datos. Goyfield solo puede acceder a sus propios archivos.",
       "btn": "Iniciar sesión con Google",

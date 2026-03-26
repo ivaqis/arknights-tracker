@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "Sinkronisasi Cloud",
+      "syncNotWorking": "Sinkronisasi tidak berfungsi?",
+      "clearAccountData": "Hapus data akun",
       "sync_toast": "Data berhasil disinkronkan",
       "description": "Goyfield menyinkronkan data dengan Google untuk menyimpan riwayat pull Anda. Jika sinkronisasi dimatikan, membersihkan cache atau menginstal ulang browser akan menghapus semua data pull. Goyfield hanya dapat mengakses filenya sendiri.",
       "btn": "Masuk dengan Google",

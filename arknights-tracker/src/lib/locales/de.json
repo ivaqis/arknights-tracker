@@ -580,6 +580,8 @@
     },
     "cloud": {
       "title": "Cloud-Synchronisierung",
+      "syncNotWorking": "Synchronisation funktioniert nicht?",
+      "clearAccountData": "Kontodaten löschen",
       "sync_toast": "Daten erfolgreich synchronisiert",
       "description": "Goyfield synchronisiert Daten mit Google, um deinen Verlauf zu sichern. Wenn die Synchronisierung deaktiviert ist, werden beim Löschen des Caches oder bei Neuinstallation des Browsers alle Daten gelöscht. Goyfield kann nur auf seine eigenen Dateien zugreifen.",
       "btn": "Mit Google anmelden",
@@ -928,5 +930,5 @@
     "ifLock": "Wenn du sperrst",
     "addAttr1": "Füge Attribut 1 hinzu",
     "attrAlreadySelected": "Wird gleichzeitig gefarmt"
-}
+  }
 }

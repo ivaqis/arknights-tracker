@@ -27,21 +27,29 @@
     const relevantBanners = banners.filter((b) => b.type === bannerType);
     const grouped = {};
     const sortedPulls = [...rawPulls].sort(
-      (a, b) => new Date(a.time) - new Date(b.time),
+      (a, b) => new Date(a.time).getTime() - new Date(b.time).getTime(),
     );
 
     sortedPulls.forEach((p) => {
       const pullTime = new Date(p.time).getTime();
-      const matchedBanner = relevantBanners.find((b) => {
-        const start = new Date(b.startTime).getTime();
-        const end = b.endTime ? new Date(b.endTime).getTime() : Infinity;
-        return pullTime >= start && pullTime <= end;
-      });
+      let matchedBanner = banners.find((b) => b.id === p.rawPoolId);
+      if (!matchedBanner) {
+          matchedBanner = relevantBanners.find((b) => {
+            const start = new Date(b.startTime).getTime();
+            const end = b.endTime ? new Date(b.endTime).getTime() : Infinity;
+            return pullTime >= start && pullTime <= end;
+          });
+      }
 
-      const bannerId = matchedBanner
-        ? matchedBanner.id
-        : p.bannerId || "Unknown";
-      const displayName = matchedBanner ? matchedBanner.name : bannerId;
+      let bannerId = matchedBanner ? matchedBanner.id : (p.rawPoolId || p.bannerId || "Unknown");
+      let displayName = matchedBanner ? matchedBanner.name : bannerId;
+      const genericIds = ['special', 'standard', 'weapon', 'new-player', 'unknown'];
+      if (genericIds.includes(bannerId.toLowerCase())) {
+        const d = new Date(p.time);
+        const month = String(d.getMonth() + 1).padStart(2, '0');
+        bannerId = `generic_${p.bannerId}_${d.getFullYear()}_${month}`;
+        displayName = `Unknown ${p.bannerId} (${month}.${d.getFullYear()})`;
+      }
 
       if (!grouped[bannerId]) {
         grouped[bannerId] = {
@@ -51,9 +59,10 @@
           c6: 0,
           c5: 0,
           c4: 0,
-          startTime: matchedBanner ? matchedBanner.startTime : 0,
+          startTime: matchedBanner ? matchedBanner.startTime : p.time,
         };
       }
+      
       grouped[bannerId].total++;
       if (p.rarity === 6) grouped[bannerId].c6++;
       else if (p.rarity === 5) grouped[bannerId].c5++;
@@ -61,13 +70,9 @@
     });
 
     return Object.values(grouped).sort((a, b) => {
-      if (a.startTime && b.startTime) {
-        return new Date(a.startTime) - new Date(b.startTime);
-      }
-      return 0;
+      return new Date(a.startTime).getTime() - new Date(b.startTime).getTime();
     });
   })();
-
   $: maxBarValue =
     timelineData.length > 0
       ? Math.ceil(Math.max(...timelineData.map((d) => d.total)) / 10) * 10

@@ -622,6 +622,8 @@
     },
     "cloud": {
       "title": "Cloud Synchronization",
+      "syncNotWorking": "Sync not working?",
+      "clearAccountData": "Clear account data",
       "sync_toast": "Data synced successfully",
       "description": "Goyfield syncs data with Google to save your pull history. If sync is disabled, clearing cache or reinstalling the browser will delete all pull data. Goyfield can only access its own files.",
       "btn": "Sign in with Google",
