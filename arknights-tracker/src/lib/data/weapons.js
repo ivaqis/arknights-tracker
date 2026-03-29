@@ -720,6 +720,7 @@ export const weapons = {
       "attr_agi",
       "attr_crirate",
       "crit"
-    ]
+    ],
+    "isNew": true
   }
 };
