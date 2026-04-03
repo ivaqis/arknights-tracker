@@ -4,11 +4,15 @@
     import { pullData } from "$lib/stores/pulls";
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
-    import { onMount } from 'svelte'; //Убрать
+    //import { onMount } from 'svelte'; //Убрать
+    import { equipmentFilters, equipmentSearch, equipmentManual } from '$lib/stores/filterStore';
 
     import WeaponCard from "$lib/components/WeaponCard.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";
     import Icon from "$lib/components/Icons.svelte";
+
+    $: filters = $equipmentFilters;
+    $: searchQuery = $equipmentSearch;
 
     const allEquipment = Object.entries(equipment || {}).map(([id, data]) => ({
         id,
@@ -32,25 +36,18 @@
         stats: []
     };
 
-    onMount(() => {
-        const allEquip = Object.values(equipment);
-        
-        // Собираем все уникальные паки (исключаем undefined/null)
-        const packs = [...new Set(allEquip.map(e => e.pack).filter(Boolean))];
-        
-        // Собираем все уникальные статы
-        const stats = [...new Set(allEquip.flatMap(e => e.displayAttr?.map(a => a.attrType)).filter(Boolean))];
-
-        console.log("=== СКОПИРУЙ ЭТО ===");
-        console.log("const hardcodedPacks =", JSON.stringify(packs));
-        console.log("const hardcodedStats =", JSON.stringify(stats));
-        console.log("====================");
-    });
+   // onMount(() => {
+   //     const allEquip = Object.values(equipment);
+   //     const packs = [...new Set(allEquip.map(e => e.pack).filter(Boolean))];
+   //     const stats = [...new Set(allEquip.flatMap(e => e.displayAttr?.map(a => a.attrType)).filter(Boolean))];
+   //     console.log("const hardcodedPacks =", JSON.stringify(packs));
+   //     console.log("const hardcodedStats =", JSON.stringify(stats));
+   // });
 
     const { selectedId } = accountStore;
-
-    $: filteredEquipment = allEquipment
-        .filter((eq) => {
+    
+    $: filteredEquipment = (() => {
+        const baseFiltered = [...allEquipment].filter((eq) => {
             if (showOwnedOnly) {
                 const activeId = $selectedId;
                 const manualPots = $manualPotentials[activeId] || {}; 
@@ -69,33 +66,69 @@
             const matchesPart = filters.partType.length === 0 || filters.partType.includes(itemPartType);
             const itemPack = eq.pack || "none";
             const matchesPack = filters.pack.length === 0 || filters.pack.includes(itemPack);
-            const eqStats = (eq.displayAttr || []).map(a => a.attrType);
+            const eqStats = (eq.equipAttr || eq.displayAttr || []).map(a => a.attrType);
             const passesStats = filters.stats.length === 0 || filters.stats.some(stat => eqStats.includes(stat));
-
             return matchesRarity && matchesPart && matchesPack && passesStats;
-        })
-        .sort((a, b) => {
-            if (sortField === "rarity") {
-                const rarityA = a.rarity || 1;
-                const rarityB = b.rarity || 1;
-                let rarityDiff = sortDirection === "asc" ? rarityA - rarityB : rarityB - rarityA;
-                if (rarityDiff === 0) {
-                    const partA = a.partType !== undefined ? a.partType : 0;
-                    const partB = b.partType !== undefined ? b.partType : 0;
-                    let partDiff = partA - partB;
-                    
-                    if (partDiff === 0) return (a.id || "").localeCompare(b.id || "");
-                    return partDiff;
-                }
-                return rarityDiff;
-            }
-            
-            let valA = a[sortField] || "";
-            let valB = b[sortField] || "";
-            return sortDirection === "asc" 
-                ? String(valA).localeCompare(String(valB)) 
-                : String(valB).localeCompare(String(valA));
         });
+
+        const withSet = [];
+        const withoutSet = [];
+
+        baseFiltered.forEach((eq) => {
+            const p = eq.pack;
+            if (p && typeof p === 'string' && p.trim() !== '' && p.trim().toLowerCase() !== 'none') {
+                withSet.push(eq);
+            } else {
+                withoutSet.push(eq);
+            }
+        });
+        const sortLogic = (a, b) => {
+            let diff = 0;
+            if (sortField === "rarity") {
+                const rarityA = a.rarity !== undefined ? a.rarity : 1;
+                const rarityB = b.rarity !== undefined ? b.rarity : 1;
+                diff = rarityA - rarityB;
+            } 
+            else if (sortField === "level") {
+                const lvlA = a.level !== undefined ? a.level : 1;
+                const lvlB = b.level !== undefined ? b.level : 1;
+                diff = lvlA - lvlB;
+            } 
+            else if (sortField === "partType") {
+                const partA = a.partType !== undefined ? a.partType : 0;
+                const partB = b.partType !== undefined ? b.partType : 0;
+                diff = partA - partB;
+            } 
+            else if (sortField === "pack") {
+                const packA = String(a.pack || "none").toLowerCase();
+                const packB = String(b.pack || "none").toLowerCase();
+                diff = packA.localeCompare(packB);
+            } 
+            else {
+                let valA = a[sortField] || "";
+                let valB = b[sortField] || "";
+                diff = String(valA).localeCompare(String(valB));
+            }
+
+            if (diff === 0) {
+                const partA = a.partType !== undefined ? a.partType : 0;
+                const partB = b.partType !== undefined ? b.partType : 0;
+                diff = partA - partB;
+                
+                if (diff === 0) {
+                    diff = (a.id || "").localeCompare(b.id || "");
+                }
+                
+                return diff;
+            }
+
+            return sortDirection === "asc" ? diff : -diff;
+        };
+
+        withSet.sort(sortLogic);
+        withoutSet.sort(sortLogic);
+        return [...withSet, ...withoutSet];
+    })();
 
     $: groupedEquipment = filteredEquipment.reduce((groups, eq) => {
         const packKey = eq.pack || "none";
@@ -109,6 +142,11 @@
         items,
         maxRarity: Math.max(...items.map(i => i.rarity || 1))
     })).sort((a, b) => {
+        const isNoneA = a.pack === "none" || a.pack === "";
+        const isNoneB = b.pack === "none" || b.pack === "";
+        
+        if (isNoneA && !isNoneB) return 1;
+        if (!isNoneA && isNoneB) return -1;
         if (sortDirection === "desc") {
             return b.maxRarity - a.maxRarity || a.pack.localeCompare(b.pack);
         }
@@ -147,8 +185,9 @@
         <DataToolbar
             bind:sortField
             bind:sortDirection
-            bind:searchQuery
-            bind:filters
+            bind:filters={$equipmentFilters} 
+            bind:searchQuery={$equipmentSearch} 
+            bind:manualMode={$equipmentManual}
             bind:showOwnedOnly
             mode="equipment"
             {availablePacks} 

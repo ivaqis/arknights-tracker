@@ -437,6 +437,9 @@
   },
   "stats": {
     "attributes": "Atributos",
+    "goodMatch": "Buena coincidencia",
+    "standardMatch": "Coincidencia estándar",
+    "artificing": "Elaboración de equipamiento",
     "coolDown": "Tiempo de reutilización",
     "mainAttr": "Atributo Principal",
     "secAttr": "Atributo Secundario",

@@ -4,10 +4,15 @@
     import { pullData } from "$lib/stores/pulls";
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
+    import { weaponFilters, weaponSearch, weaponManual, weaponOwnedOnly } from '$lib/stores/filterStore';
 
     import WeaponCard from "$lib/components/WeaponCard.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";
     import Icon from "$lib/components/Icons.svelte";
+
+    $: filters = $weaponFilters;
+    $: searchQuery = $weaponSearch;
+    $: showOwnedOnly = $weaponOwnedOnly;
 
     const allWeapons = Object.values(weapons || {}).filter(
         (wp) => wp && wp.id
@@ -146,9 +151,10 @@
         <DataToolbar
             bind:sortField
             bind:sortDirection
-            bind:searchQuery
-            bind:filters
-            bind:showOwnedOnly
+            bind:filters={$weaponFilters} 
+            bind:searchQuery={$weaponSearch} 
+            bind:manualMode={$weaponManual}
+            bind:showOwnedOnly={$weaponOwnedOnly}
             mode="weapons" 
         />
     </div>

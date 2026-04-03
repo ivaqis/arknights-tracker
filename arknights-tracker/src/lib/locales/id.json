@@ -437,6 +437,9 @@
   },
   "stats": {
     "attributes": "Atribut",
+    "goodMatch": "Pasangan Bagus",
+    "standardMatch": "Pasangan Standar",
+    "artificing": "Penyempurnaan Gear",
     "coolDown": "Cooldown",
     "mainAttr": "Atribut Utama",
     "secAttr": "Atribut Sekunder",

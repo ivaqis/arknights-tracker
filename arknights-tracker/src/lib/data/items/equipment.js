@@ -29,7 +29,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          46.3274
+          46.3273721859878
         ]
       }
     ],
@@ -64,10 +64,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          46.3274,
-          46.3274,
-          46.3274,
-          46.3274
+          46.3273721859878,
+          46.3273721859878,
+          46.3273721859878,
+          46.3273721859878
         ]
       }
     ],
@@ -111,7 +111,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          46.3274
+          46.3273721859878
         ]
       }
     ],
@@ -146,10 +146,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          46.3274,
-          46.3274,
-          46.3274,
-          46.3274
+          46.3273721859878,
+          46.3273721859878,
+          46.3273721859878,
+          46.3273721859878
         ]
       }
     ],
@@ -193,7 +193,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          77.2123
+          77.21228697664634
         ]
       }
     ],
@@ -228,10 +228,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          77.2123,
-          77.2123,
-          77.2123,
-          77.2123
+          77.21228697664634,
+          77.21228697664634,
+          77.21228697664634,
+          77.21228697664634
         ]
       }
     ],
@@ -275,7 +275,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          77.2123
+          77.21228697664634
         ]
       }
     ],
@@ -310,10 +310,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          77.2123,
-          77.2123,
-          77.2123,
-          77.2123
+          77.21228697664634,
+          77.21228697664634,
+          77.21228697664634,
+          77.21228697664634
         ]
       }
     ],
@@ -357,7 +357,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          125.3764
+          125.3763938565117
         ]
       }
     ],
@@ -392,10 +392,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          125.3764,
-          125.3764,
-          125.3764,
-          125.3764
+          125.3763938565117,
+          125.3763938565117,
+          125.3763938565117,
+          125.3763938565117
         ]
       }
     ],
@@ -439,7 +439,7 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          125.3764
+          125.3763938565117
         ]
       }
     ],
@@ -474,10 +474,10 @@ export const equipment = {
       {
         "attrType": "MaxHp",
         "values": [
-          125.3764,
-          125.3764,
-          125.3764,
-          125.3764
+          125.3763938565117,
+          125.3763938565117,
+          125.3763938565117,
+          125.3763938565117
         ]
       }
     ],
@@ -503,7 +503,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -521,7 +521,7 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          11.7167
+          11.716709215321123
         ]
       }
     ],
@@ -529,10 +529,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -556,10 +556,10 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          11.7167,
-          11.7167,
-          11.7167,
-          11.7167
+          11.716709215321123,
+          11.716709215321123,
+          11.716709215321123,
+          11.716709215321123
         ]
       }
     ],
@@ -585,7 +585,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -603,7 +603,7 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          11.7167
+          11.716709215321123
         ]
       }
     ],
@@ -611,10 +611,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -638,10 +638,10 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          11.7167,
-          11.7167,
-          11.7167,
-          11.7167
+          11.716709215321123,
+          11.716709215321123,
+          11.716709215321123,
+          11.716709215321123
         ]
       }
     ],
@@ -667,7 +667,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -693,10 +693,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -749,7 +749,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -775,10 +775,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -1263,7 +1263,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -1281,7 +1281,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.9611
+          0.9610764055742431
         ]
       }
     ],
@@ -1289,10 +1289,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -1316,55 +1316,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.9611,
-          0.9611,
-          0.9611,
-          0.9611
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       }
     ],
@@ -1406,7 +1406,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.9251
+          0.9250693802035153
         ]
       }
     ],
@@ -1432,55 +1432,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       }
     ],
@@ -1522,7 +1522,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.9251
+          0.9250693802035153
         ]
       }
     ],
@@ -1548,55 +1548,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.9251,
-          0.9251,
-          0.9251,
-          0.9251
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153,
+          0.9250693802035153
         ]
       }
     ],
@@ -1644,7 +1644,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.9368
+          0.936768149882904
         ]
       }
     ],
@@ -1679,55 +1679,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.9368,
-          0.9368,
-          0.9368,
-          0.9368
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904,
+          0.936768149882904
         ]
       }
     ],
@@ -1757,7 +1757,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          22.4
+          22.400000000000002
         ]
       },
       {
@@ -1783,10 +1783,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          22.4,
-          22.4,
-          22.4,
-          22.4
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
@@ -2071,7 +2071,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2091,10 +2091,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2138,7 +2138,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2158,10 +2158,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2205,7 +2205,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2225,10 +2225,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2272,7 +2272,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2292,10 +2292,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2339,7 +2339,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -2365,10 +2365,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -2421,7 +2421,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -2447,10 +2447,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -2521,7 +2521,7 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          16.1877
+          16.187704477740866
         ]
       }
     ],
@@ -2556,17 +2556,17 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          16.1877,
-          16.1877,
-          16.1877,
-          16.1877
+          16.187704477740866,
+          16.187704477740866,
+          16.187704477740866,
+          16.187704477740866
         ]
       }
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -2589,7 +2589,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2609,10 +2609,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2636,8 +2636,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -2660,7 +2660,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2680,10 +2680,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2707,8 +2707,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -2731,7 +2731,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -2749,7 +2749,7 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.0972
+          0.09722222222222222
         ]
       }
     ],
@@ -2757,10 +2757,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -2784,17 +2784,17 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.0972,
-          0.0972,
-          0.0972,
-          0.0972
+          0.09722222222222222,
+          0.09722222222222222,
+          0.09722222222222222,
+          0.09722222222222222
         ]
       }
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -2880,7 +2880,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -2903,7 +2903,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2923,10 +2923,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -2951,7 +2951,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -2974,7 +2974,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -2994,10 +2994,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3022,7 +3022,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -3045,7 +3045,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -3063,7 +3063,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.9195
+          0.9195402298850576
         ]
       }
     ],
@@ -3071,10 +3071,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -3098,62 +3098,62 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.9195,
-          0.9195,
-          0.9195,
-          0.9195
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576,
+          0.9195402298850576
         ]
       }
     ],
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -3239,7 +3239,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -3262,7 +3262,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -3282,10 +3282,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3310,7 +3310,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -3333,7 +3333,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -3353,10 +3353,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3381,7 +3381,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -3404,7 +3404,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -3430,10 +3430,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -3467,7 +3467,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -3508,7 +3508,7 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          16.1877
+          16.187704477740866
         ]
       }
     ],
@@ -3543,17 +3543,17 @@ export const equipment = {
       {
         "attrType": "Atk",
         "values": [
-          16.1877,
-          16.1877,
-          16.1877,
-          16.1877
+          16.187704477740866,
+          16.187704477740866,
+          16.187704477740866,
+          16.187704477740866
         ]
       }
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -3576,7 +3576,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -3596,10 +3596,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3623,8 +3623,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -3647,7 +3647,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -3659,7 +3659,7 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.1167
+          0.11666666666666667
         ]
       }
     ],
@@ -3667,10 +3667,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3685,26 +3685,26 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.1167,
-          0.1167,
-          0.1167,
-          0.1167
+          0.11666666666666667,
+          0.11666666666666667,
+          0.11666666666666667,
+          0.11666666666666667
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.1167,
-          0.1167,
-          0.1167,
-          0.1167
+          0.11666666666666667,
+          0.11666666666666667,
+          0.11666666666666667,
+          0.11666666666666667
         ]
       }
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -3727,7 +3727,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          10.8
+          10.799999999999999
         ]
       },
       {
@@ -3747,10 +3747,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          10.8,
-          10.8,
-          10.8,
-          10.8
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
@@ -3774,8 +3774,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -3798,7 +3798,7 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21.6
+          21.599999999999998
         ]
       },
       {
@@ -3816,7 +3816,7 @@ export const equipment = {
       {
         "attrType": "SpellDamageIncrease",
         "values": [
-          0.0921
+          0.09210526315789473
         ]
       }
     ],
@@ -3824,10 +3824,10 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21.6,
-          21.6,
-          21.6,
-          21.6
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
         ]
       },
       {
@@ -3851,44 +3851,44 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.0921,
-          0.0921,
-          0.0921,
-          0.0921
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.0921,
-          0.0921,
-          0.0921,
-          0.0921
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
         ]
       },
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.0921,
-          0.0921,
-          0.0921,
-          0.0921
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.0921,
-          0.0921,
-          0.0921,
-          0.0921
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
         ]
       }
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4087,7 +4087,7 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.8651
+          0.8650519031141869
         ]
       }
     ],
@@ -4113,55 +4113,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.8651,
-          0.8651,
-          0.8651,
-          0.8651
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869,
+          0.8650519031141869
         ]
       }
     ],
@@ -4266,7 +4266,7 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1857
+          0.18571428571428572
         ]
       }
     ],
@@ -4292,10 +4292,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1857,
-          0.1857,
-          0.1857,
-          0.1857
+          0.18571428571428572,
+          0.18571428571428572,
+          0.18571428571428572,
+          0.18571428571428572
         ]
       }
     ],
@@ -4488,7 +4488,7 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1548
+          0.15476190476190477
         ]
       }
     ],
@@ -4523,10 +4523,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1548,
-          0.1548,
-          0.1548,
-          0.1548
+          0.15476190476190477,
+          0.15476190476190477,
+          0.15476190476190477,
+          0.15476190476190477
         ]
       }
     ],
@@ -4614,8 +4614,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4700,8 +4700,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4786,8 +4786,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4872,8 +4872,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4958,8 +4958,8 @@ export const equipment = {
     ],
     "blackboard": {
       "agi_up": 50,
-      "hp_ratio": 0.8,
-      "phy_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -5000,7 +5000,7 @@ export const equipment = {
       {
         "attrType": "AllSkillDamageIncrease",
         "values": [
-          0.098
+          0.09799999999999999
         ]
       }
     ],
@@ -5035,34 +5035,34 @@ export const equipment = {
       {
         "attrType": "NormalSkillEfficiency",
         "values": [
-          0.098,
-          0.098,
-          0.098,
-          0.098
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.098,
-          0.098,
-          0.098,
-          0.098
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.098,
-          0.098,
-          0.098,
-          0.098
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999
         ]
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5147,8 +5147,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5233,8 +5233,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5319,8 +5319,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5362,7 +5362,7 @@ export const equipment = {
       {
         "attrType": "AllSkillDamageIncrease",
         "values": [
-          0.196
+          0.19599999999999998
         ]
       }
     ],
@@ -5397,34 +5397,34 @@ export const equipment = {
       {
         "attrType": "NormalSkillEfficiency",
         "values": [
-          0.196,
-          0.196,
-          0.196,
-          0.196
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.196,
-          0.196,
-          0.196,
-          0.196
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.196,
-          0.196,
-          0.196,
-          0.196
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998,
+          0.19599999999999998
         ]
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5509,8 +5509,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5595,8 +5595,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5681,8 +5681,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5767,8 +5767,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5853,8 +5853,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -5939,8 +5939,8 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "dmg_up": 0.24,
-      "atk_up": 0.05,
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
       "duration": 15
     },
     "materials": [
@@ -6027,7 +6027,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -6113,7 +6113,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -6199,7 +6199,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -6285,7 +6285,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -6371,7 +6371,7 @@ export const equipment = {
     "blackboard": {
       "str_up": 50,
       "hp_ratio": 0.5,
-      "dmg_taken_down": 0.7
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -6412,7 +6412,7 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.1837
+          0.18375
         ]
       }
     ],
@@ -6447,15 +6447,15 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.1837,
-          0.1837,
-          0.1837,
-          0.1837
+          0.18375,
+          0.18375,
+          0.18375,
+          0.18375
         ]
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6540,7 +6540,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6625,7 +6625,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6667,7 +6667,7 @@ export const equipment = {
       {
         "attrType": "Sub",
         "values": [
-          0.147
+          0.14701266544257816
         ]
       }
     ],
@@ -6702,15 +6702,15 @@ export const equipment = {
       {
         "attrType": "Attr_0",
         "values": [
-          0.147,
-          0.147,
-          0.147,
-          0.147
+          0.14701266544257816,
+          0.14701266544257816,
+          0.14701266544257816,
+          0.14701266544257816
         ]
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6795,7 +6795,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6880,7 +6880,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "ultimate_gain_up": 0.2,
+      "ultimate_gain_up": 0.20000000298023224,
       "atb_recover": 50
     },
     "materials": [
@@ -6967,7 +6967,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -7053,7 +7053,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -7139,7 +7139,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -7225,7 +7225,7 @@ export const equipment = {
     "blackboard": {
       "will_up": 50,
       "hp_ratio": 0.5,
-      "heal_up": 0.3
+      "heal_up": 0.30000001192092896
     },
     "materials": [
       {
@@ -7266,7 +7266,7 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.098
+          0.09799999999999999
         ]
       }
     ],
@@ -7301,17 +7301,17 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.098,
-          0.098,
-          0.098,
-          0.098
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999,
+          0.09799999999999999
         ]
       }
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -7396,8 +7396,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -7482,8 +7482,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -7553,8 +7553,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -7639,8 +7639,8 @@ export const equipment = {
     ],
     "blackboard": {
       "wisd_up": 50,
-      "hp_ratio": 0.8,
-      "spell_dmg_up": 0.2
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -7680,9 +7680,9 @@ export const equipment = {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
           0.144,
-          0.1584,
-          0.1728,
-          0.1872
+          0.15839999914169312,
+          0.1728000044822693,
+          0.18719999492168427
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7711,7 +7711,7 @@ export const equipment = {
         "values": [
           0.144,
           0.1584,
-          0.1728,
+          0.17279999999999998,
           0.1872
         ]
       }
@@ -7754,10 +7754,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1286,
-          0.1414,
-          0.1543,
-          0.1671
+          0.12857142857142856,
+          0.14142857491970062,
+          0.1542857140302658,
+          0.167142853140831
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7784,10 +7784,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1286,
-          0.1414,
-          0.1543,
-          0.1671
+          0.12857142857142856,
+          0.14142857142857143,
+          0.15428571428571428,
+          0.16714285714285712
         ]
       }
     ],
@@ -7829,10 +7829,10 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155253410339,
+          0.7941550016403198,
+          0.7807620167732239
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7859,55 +7859,55 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.8224,
-          0.808,
-          0.7942,
-          0.7808
+          0.8223684210526316,
+          0.8080155138978669,
+          0.7941550190597205,
+          0.7807620237351656
         ]
       }
     ],
@@ -7949,10 +7949,10 @@ export const equipment = {
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.432,
-          0.4752,
-          0.5184,
-          0.5616
+          0.43199999999999994,
+          0.47519999742507935,
+          0.5184000134468079,
+          0.5616000294685364
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -7979,9 +7979,9 @@ export const equipment = {
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.432,
-          0.4752,
-          0.5184,
+          0.43199999999999994,
+          0.47519999999999996,
+          0.5183999999999999,
           0.5616
         ]
       }
@@ -8024,10 +8024,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2571,
-          0.2829,
-          0.3086,
-          0.3343
+          0.2571428571428571,
+          0.28285714983940125,
+          0.3085714280605316,
+          0.334285706281662
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8054,10 +8054,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2571,
-          0.2829,
-          0.3086,
-          0.3343
+          0.2571428571428571,
+          0.28285714285714286,
+          0.30857142857142855,
+          0.33428571428571424
         ]
       }
     ],
@@ -8099,10 +8099,10 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.108,
-          0.1188,
-          0.1296,
-          0.1404
+          0.10799999999999998,
+          0.11879999935626984,
+          0.12960000336170197,
+          0.1404000073671341
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8129,9 +8129,9 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.108,
-          0.1188,
-          0.1296,
+          0.10799999999999998,
+          0.11879999999999999,
+          0.12959999999999997,
           0.1404
         ]
       }
@@ -8175,9 +8175,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.45,
-          0.495,
-          0.54,
-          0.585
+          0.4950000047683716,
+          0.5400000214576721,
+          0.5849999785423279
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8205,9 +8205,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.45,
-          0.495,
+          0.49500000000000005,
           0.54,
-          0.585
+          0.5850000000000001
         ]
       }
     ],
@@ -8250,9 +8250,9 @@ export const equipment = {
         "attrType": "AllSkillDamageIncrease",
         "values": [
           0.24,
-          0.264,
-          0.288,
-          0.312
+          0.2639999985694885,
+          0.2879999876022339,
+          0.31200000643730164
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8352,10 +8352,10 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.2587,
-          0.2846,
-          0.3105,
-          0.3364
+          0.25875,
+          0.28462499380111694,
+          0.31049999594688416,
+          0.33637499809265137
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8391,16 +8391,16 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.2587,
-          0.2846,
-          0.3105,
-          0.3364
+          0.25875,
+          0.284625,
+          0.31049999999999994,
+          0.336375
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8451,9 +8451,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8491,14 +8491,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8549,9 +8549,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8589,14 +8589,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8646,10 +8646,10 @@ export const equipment = {
       {
         "attrType": "Sub",
         "values": [
-          0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.1035089175054887,
+          0.11385980993509293,
+          0.12421070039272308,
+          0.13456159830093384
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8685,16 +8685,16 @@ export const equipment = {
       {
         "attrType": "Attr_0",
         "values": [
-          0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.1035089175054887,
+          0.11385980925603757,
+          0.12421070100658643,
+          0.1345615927571353
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8744,10 +8744,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8783,16 +8783,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8843,9 +8843,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8883,14 +8883,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -8940,10 +8940,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -8979,25 +8979,25 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9038,9 +9038,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5692,
-          0.621,
-          0.6727
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9068,15 +9068,15 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5693,
-          0.621,
-          0.6727
+          0.56925,
+          0.6209999999999999,
+          0.67275
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9126,10 +9126,10 @@ export const equipment = {
       {
         "attrType": "Sub",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9165,16 +9165,16 @@ export const equipment = {
       {
         "attrType": "Attr_0",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.2070178350109774,
+          0.22771961851207514,
+          0.24842140201317287,
+          0.2691231855142706
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9214,10 +9214,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9244,16 +9244,16 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9304,9 +9304,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.345,
-          0.3795,
-          0.414,
-          0.4485
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9345,13 +9345,13 @@ export const equipment = {
           0.345,
           0.3795,
           0.414,
-          0.4485
+          0.44849999999999995
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9402,9 +9402,9 @@ export const equipment = {
         "attrType": "AllSkillDamageIncrease",
         "values": [
           0.23,
-          0.253,
-          0.276,
-          0.299
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9441,33 +9441,33 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.85,
-      "dmg_up": 0.16,
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -9517,10 +9517,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.115,
-          0.1265,
-          0.138,
-          0.1495
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9556,16 +9556,16 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -9615,10 +9615,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9654,16 +9654,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -9714,9 +9714,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9754,14 +9754,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -9811,10 +9811,10 @@ export const equipment = {
       {
         "attrType": "AllSkillDamageIncrease",
         "values": [
-          0.138,
-          0.1518,
-          0.1656,
-          0.1794
+          0.13799999999999998,
+          0.1518000066280365,
+          0.1656000018119812,
+          0.1793999969959259
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9850,34 +9850,34 @@ export const equipment = {
       {
         "attrType": "NormalSkillEfficiency",
         "values": [
-          0.138,
+          0.13799999999999998,
           0.1518,
-          0.1656,
-          0.1794
+          0.16559999999999997,
+          0.17939999999999998
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.138,
+          0.13799999999999998,
           0.1518,
-          0.1656,
-          0.1794
+          0.16559999999999997,
+          0.17939999999999998
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.138,
+          0.13799999999999998,
           0.1518,
-          0.1656,
-          0.1794
+          0.16559999999999997,
+          0.17939999999999998
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -9927,10 +9927,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -9966,16 +9966,16 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10026,9 +10026,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5692,
-          0.621,
-          0.6727
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10065,15 +10065,15 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5693,
-          0.621,
-          0.6727
+          0.56925,
+          0.6209999999999999,
+          0.67275
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10124,9 +10124,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10164,14 +10164,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10222,9 +10222,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10262,14 +10262,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10319,10 +10319,10 @@ export const equipment = {
       {
         "attrType": "AllSkillDamageIncrease",
         "values": [
-          0.276,
-          0.3036,
-          0.3312,
-          0.3588
+          0.27599999999999997,
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10358,34 +10358,34 @@ export const equipment = {
       {
         "attrType": "NormalSkillEfficiency",
         "values": [
-          0.276,
+          0.27599999999999997,
           0.3036,
-          0.3312,
-          0.3588
+          0.33119999999999994,
+          0.35879999999999995
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.276,
+          0.27599999999999997,
           0.3036,
-          0.3312,
-          0.3588
+          0.33119999999999994,
+          0.35879999999999995
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
-          0.276,
+          0.27599999999999997,
           0.3036,
-          0.3312,
-          0.3588
+          0.33119999999999994,
+          0.35879999999999995
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10436,9 +10436,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.345,
-          0.3795,
-          0.414,
-          0.4485
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10477,13 +10477,13 @@ export const equipment = {
           0.345,
           0.3795,
           0.414,
-          0.4485
+          0.44849999999999995
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10534,9 +10534,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.345,
-          0.3795,
-          0.414,
-          0.4485
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10575,13 +10575,13 @@ export const equipment = {
           0.345,
           0.3795,
           0.414,
-          0.4485
+          0.44849999999999995
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.2,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
       "max_stack": 3
     },
     "materials": [
@@ -10631,10 +10631,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10670,16 +10670,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -10730,9 +10730,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10770,14 +10770,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -10828,9 +10828,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10868,14 +10868,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -10925,10 +10925,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -10964,16 +10964,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11023,10 +11023,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.115,
-          0.1265,
-          0.138,
-          0.1495
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11062,25 +11062,25 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11131,9 +11131,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11171,14 +11171,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11229,9 +11229,9 @@ export const equipment = {
         "attrType": "AttrDamageToBrokenUnitIncrease",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11269,14 +11269,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11327,9 +11327,9 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1138,
-          0.1242,
-          0.1346
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11366,15 +11366,15 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11425,9 +11425,9 @@ export const equipment = {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11465,14 +11465,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11523,9 +11523,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11563,14 +11563,14 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11620,10 +11620,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11659,25 +11659,25 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11727,10 +11727,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11766,25 +11766,25 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15,
-      "dmg_up": 0.3,
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
       "max_stack": 2
     },
     "materials": [
@@ -11834,10 +11834,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11873,17 +11873,17 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "skill_dmg_up": 0.2,
+      "skill_dmg_up": 0.20000000298023224,
       "stack_cond": 2,
-      "spell_dmg_up": 0.35,
+      "spell_dmg_up": 0.3499999940395355,
       "duration": 15
     },
     "materials": [
@@ -11933,10 +11933,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -11972,26 +11972,26 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "skill_dmg_up": 0.2,
+      "skill_dmg_up": 0.20000000298023224,
       "stack_cond": 2,
-      "spell_dmg_up": 0.35,
+      "spell_dmg_up": 0.3499999940395355,
       "duration": 15
     },
     "materials": [
@@ -12041,10 +12041,10 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.276,
-          0.3036,
-          0.3312,
-          0.3588
+          0.27599999999999997,
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12080,17 +12080,17 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.276,
+          0.27599999999999997,
           0.3036,
-          0.3312,
-          0.3588
+          0.33119999999999994,
+          0.35879999999999995
         ]
       }
     ],
     "blackboard": {
-      "skill_dmg_up": 0.2,
+      "skill_dmg_up": 0.20000000298023224,
       "stack_cond": 2,
-      "spell_dmg_up": 0.35,
+      "spell_dmg_up": 0.3499999940395355,
       "duration": 15
     },
     "materials": [
@@ -12140,10 +12140,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12179,26 +12179,26 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
     "blackboard": {
-      "skill_dmg_up": 0.2,
+      "skill_dmg_up": 0.20000000298023224,
       "stack_cond": 2,
-      "spell_dmg_up": 0.35,
+      "spell_dmg_up": 0.3499999940395355,
       "duration": 15
     },
     "materials": [
@@ -12249,9 +12249,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12295,11 +12295,11 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12348,10 +12348,10 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.138,
-          0.1518,
-          0.1656,
-          0.1794
+          0.13799999999999998,
+          0.1518000066280365,
+          0.1656000018119812,
+          0.1793999969959259
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12387,19 +12387,19 @@ export const equipment = {
       {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.138,
+          0.13799999999999998,
           0.1518,
-          0.1656,
-          0.1794
+          0.16559999999999997,
+          0.17939999999999998
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12448,10 +12448,10 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.0517,
-          0.0569,
-          0.0621,
-          0.0673
+          0.05175,
+          0.05692499876022339,
+          0.06210000067949295,
+          0.06727500259876251
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12487,19 +12487,19 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.0517,
-          0.0569,
-          0.0621,
-          0.0673
+          0.05175,
+          0.056925,
+          0.062099999999999995,
+          0.067275
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12549,9 +12549,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12589,17 +12589,17 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12648,10 +12648,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12687,19 +12687,19 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12748,10 +12748,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12787,28 +12787,28 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12858,9 +12858,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12898,17 +12898,17 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -12958,9 +12958,9 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1138,
-          0.1242,
-          0.1346
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12997,18 +12997,18 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13057,10 +13057,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13096,28 +13096,28 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13167,9 +13167,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13207,17 +13207,17 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13267,9 +13267,9 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1138,
-          0.1242,
-          0.1346
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13306,18 +13306,18 @@ export const equipment = {
         "attrType": "CriticalRate",
         "values": [
           0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13367,9 +13367,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.345,
-          0.3795,
-          0.414,
-          0.4485
+          0.37950000166893005,
+          0.414000004529953,
+          0.44850000739097595
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13408,16 +13408,16 @@ export const equipment = {
           0.345,
           0.3795,
           0.414,
-          0.4485
+          0.44849999999999995
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13467,9 +13467,9 @@ export const equipment = {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
           0.23,
-          0.253,
-          0.276,
-          0.299
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13506,18 +13506,18 @@ export const equipment = {
         "attrType": "NormalAttackDamageIncrease",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13566,10 +13566,10 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.0862,
-          0.0949,
-          0.1035,
-          0.1121
+          0.08625,
+          0.09487500041723251,
+          0.10350000113248825,
+          0.11212500184774399
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13605,19 +13605,19 @@ export const equipment = {
       {
         "attrType": "CriticalRate",
         "values": [
-          0.0862,
-          0.0949,
+          0.08625,
+          0.094875,
           0.1035,
-          0.1121
+          0.11212499999999999
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13666,10 +13666,10 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.4313,
-          0.4744,
-          0.5175,
-          0.5606
+          0.43125,
+          0.47437500953674316,
+          0.5174999833106995,
+          0.5606250166893005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13705,19 +13705,19 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.4313,
-          0.4744,
+          0.43125,
+          0.47437500000000005,
           0.5175,
-          0.5606
+          0.560625
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05,
+      "crit_up": 0.05000000074505806,
       "duration": 5,
-      "atk_up": 0.05,
+      "atk_up": 0.05000000074505806,
       "max_stack": 5,
-      "crit_up2": 0.05
+      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -13766,10 +13766,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.115,
-          0.1265,
-          0.138,
-          0.1495
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13805,18 +13805,18 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       }
@@ -13875,10 +13875,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.115,
-          0.1265,
-          0.138,
-          0.1495
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13914,18 +13914,18 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.115,
+          0.11499999999999999,
           0.1265,
-          0.138,
+          0.13799999999999998,
           0.1495
         ]
       }
@@ -13985,9 +13985,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14075,9 +14075,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14106,7 +14106,7 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
@@ -14166,9 +14166,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14266,9 +14266,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           34.5,
-          37.95,
-          41.4,
-          44.85
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14365,10 +14365,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14404,19 +14404,19 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
@@ -14474,10 +14474,10 @@ export const equipment = {
       {
         "attrType": "FireAndNaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14513,19 +14513,19 @@ export const equipment = {
       {
         "attrType": "FireDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "NaturalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
@@ -14584,9 +14584,9 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.1138,
-          0.1242,
-          0.1346
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14623,17 +14623,17 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -14683,9 +14683,9 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.1138,
-          0.1242,
-          0.1346
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14722,17 +14722,17 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1035,
-          0.1139,
-          0.1242,
-          0.1346
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -14781,10 +14781,10 @@ export const equipment = {
       {
         "attrType": "AllDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312666893005,
+          0.8010253310203552,
+          0.7879599928855896
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14820,63 +14820,63 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       },
       {
         "attrType": "FireDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       },
       {
         "attrType": "PulseDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       },
       {
         "attrType": "CrystDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       },
       {
         "attrType": "NaturalDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       },
       {
         "attrType": "EtherDamageTakenScalar",
         "values": [
-          0.8285,
-          0.8145,
-          0.801,
-          0.788
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -14916,9 +14916,9 @@ export const equipment = {
         "attrType": "MaxHp",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -14947,16 +14947,16 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15005,10 +15005,10 @@ export const equipment = {
       {
         "attrType": "Main",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15044,18 +15044,18 @@ export const equipment = {
       {
         "attrType": "Attr_0",
         "values": [
-          0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.2070178350109774,
+          0.22771961851207514,
+          0.24842140201317287,
+          0.2691231855142706
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15095,9 +15095,9 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15126,16 +15126,16 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15185,9 +15185,9 @@ export const equipment = {
         "attrType": "MaxHp",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15225,16 +15225,16 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15283,10 +15283,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15322,18 +15322,18 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15383,9 +15383,9 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1725,
-          0.1898,
-          0.207,
-          0.2243
+          0.18975000083446503,
+          0.2070000022649765,
+          0.22425000369548798
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15422,17 +15422,17 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.1725,
-          0.1898,
+          0.18975,
           0.207,
-          0.2242
+          0.22424999999999998
         ]
       }
     ],
     "blackboard": {
-      "heal_up": 0.2,
+      "heal_up": 0.20000000298023224,
       "duration": 10,
-      "dmg_taken_down": 0.85,
-      "dmg_taken_down2": 0.7
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
       {
@@ -15481,10 +15481,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15520,15 +15520,15 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.1232,
-          0.1355,
-          0.1479,
-          0.1602
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -15581,9 +15581,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15627,7 +15627,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -15670,9 +15670,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15707,7 +15707,7 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -15759,10 +15759,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15798,15 +15798,15 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -15858,10 +15858,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15897,15 +15897,15 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -15957,10 +15957,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15996,15 +15996,15 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -16056,10 +16056,10 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.4313,
-          0.4744,
-          0.5175,
-          0.5606
+          0.43125,
+          0.47437500953674316,
+          0.5174999833106995,
+          0.5606250166893005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16095,15 +16095,15 @@ export const equipment = {
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
-          0.4313,
-          0.4744,
+          0.43125,
+          0.47437500000000005,
           0.5175,
-          0.5606
+          0.560625
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.2,
+      "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
       "duration": 15
@@ -16156,9 +16156,9 @@ export const equipment = {
         "attrType": "AttrDamageToBrokenUnitIncrease",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16196,18 +16196,18 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16257,10 +16257,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16296,20 +16296,20 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16360,9 +16360,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16406,12 +16406,12 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16461,10 +16461,10 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
-          0.253,
-          0.276,
-          0.299
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16500,20 +16500,20 @@ export const equipment = {
       {
         "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.23,
+          0.22999999999999998,
           0.253,
-          0.276,
+          0.27599999999999997,
           0.299
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16564,9 +16564,9 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.414,
-          0.4554,
-          0.4968,
-          0.5382
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16604,18 +16604,18 @@ export const equipment = {
         "values": [
           0.414,
           0.4554,
-          0.4968,
+          0.49679999999999996,
           0.5382
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16666,9 +16666,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           34.5,
-          37.95,
-          41.4,
-          44.85
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16712,12 +16712,12 @@ export const equipment = {
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16768,9 +16768,9 @@ export const equipment = {
         "attrType": "AllSkillDamageIncrease",
         "values": [
           0.23,
-          0.253,
-          0.276,
-          0.299
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16807,37 +16807,37 @@ export const equipment = {
         "attrType": "NormalSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       },
       {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       },
       {
         "attrType": "ComboSkillEfficiency",
         "values": [
           0.23,
-          0.253,
+          0.25300000000000006,
           0.276,
-          0.299
+          0.29900000000000004
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.08,
-      "phy_dmg_up": 0.08,
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
       "duration": 15,
       "max_stack": 4,
       "stack_cond": 4,
-      "phy_dmg_up2": 0.16,
+      "phy_dmg_up2": 0.1599999964237213,
       "duration2": 10
     },
     "materials": [
@@ -16888,9 +16888,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16988,9 +16988,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17078,9 +17078,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           41.4,
-          45.54,
-          49.68,
-          53.82
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17159,9 +17159,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5692,
-          0.621,
-          0.6727
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17189,9 +17189,9 @@ export const equipment = {
         "attrType": "UltimateSkillEfficiency",
         "values": [
           0.5175,
-          0.5693,
-          0.621,
-          0.6727
+          0.56925,
+          0.6209999999999999,
+          0.67275
         ]
       }
     ],
@@ -17249,10 +17249,10 @@ export const equipment = {
       {
         "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
-          0.23,
-          0.2492
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17288,19 +17288,19 @@ export const equipment = {
       {
         "attrType": "CrystDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       },
       {
         "attrType": "PulseDamageIncrease",
         "values": [
-          0.1917,
-          0.2108,
+          0.19166666666666668,
+          0.21083333333333337,
           0.23,
-          0.2492
+          0.2491666666666667
         ]
       }
     ],
@@ -17359,9 +17359,9 @@ export const equipment = {
         "attrType": "OriginiumArts",
         "values": [
           20.7,
-          22.77,
-          24.84,
-          26.91
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17406,7 +17406,7 @@ export const equipment = {
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -17456,10 +17456,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2464,
-          0.2711,
-          0.2957,
-          0.3204
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17495,16 +17495,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2464,
-          0.2711,
-          0.2957,
-          0.3204
+          0.2464285714285714,
+          0.2710714285714286,
+          0.2957142857142857,
+          0.32035714285714284
         ]
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -17555,9 +17555,9 @@ export const equipment = {
         "attrType": "HealOutputIncrease",
         "values": [
           0.207,
-          0.2277,
-          0.2484,
-          0.2691
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17595,14 +17595,14 @@ export const equipment = {
         "values": [
           0.207,
           0.2277,
-          0.2484,
+          0.24839999999999998,
           0.2691
         ]
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -17652,10 +17652,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2464,
-          0.2711,
-          0.2957,
-          0.3204
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17691,16 +17691,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2464,
-          0.2711,
-          0.2957,
-          0.3204
+          0.2464285714285714,
+          0.2710714285714286,
+          0.2957142857142857,
+          0.32035714285714284
         ]
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -17750,10 +17750,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17789,16 +17789,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
         ]
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -17848,10 +17848,10 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -17887,16 +17887,16 @@ export const equipment = {
       {
         "attrType": "UltimateSpGainScalar",
         "values": [
-          0.2054,
-          0.2259,
-          0.2464,
-          0.267
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
         ]
       }
     ],
     "blackboard": {
       "hp_up": 1000,
-      "dmg_up": 0.16,
+      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [

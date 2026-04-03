@@ -437,6 +437,9 @@
   },
   "stats": {
     "attributes": "Atributos",
+    "goodMatch": "Boa Correspondência",
+    "standardMatch": "Correspondência Padrão",
+    "artificing": "Aprimoramento de Equipamentos",
     "coolDown": "Tempo de Recarga",
     "mainAttr": "Atributo Principal",
     "secAttr": "Atributo Secundário",

@@ -437,7 +437,7 @@
                         <div class="w-[2px] h-6 bg-gray-300 dark:bg-[#555] rounded"></div>
                         <div class="flex -space-x-1">
                             {#each Array(weaponBase.rarity || 5) as _}
-                                <Icon name="strokeStar" class="w-8 h-8" style="color: {rarityColor}; stroke-opacity: 100%;" />
+                                <Icon name="strokeStar" class="w-9 h-9" style="color: {rarityColor}; stroke-opacity: 100%;" />
                             {/each}
                         </div>
                     </div>

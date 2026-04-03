@@ -9,6 +9,7 @@
     import ItemCard from "$lib/components/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
     import Images from "$lib/components/Images.svelte";
+    import WeaponCard from "$lib/components/WeaponCard.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -184,9 +185,9 @@
                     } else if (val === 0 || !val) {
                         row.push("-");
                     } else if (Math.abs(val) > 0 && Math.abs(val) < 1) {
-                        row.push(`${+(val * 100).toFixed(1)}%`);
+                        row.push(`${val * 100}%`);
                     } else {
-                        row.push(`${(val % 1 !== 0) ? val.toFixed(1) : val}`);
+                        row.push(`${val}`);
                     }
                 });
                 textData += row.join("\t") + "\n";
@@ -196,13 +197,49 @@
         try {
             await navigator.clipboard.writeText(textData);
             isTableCopied = true;
-            setTimeout(() => {
-                isTableCopied = false;
-            }, 2000);
+            setTimeout(() => { isTableCopied = false; }, 2000);
         } catch (err) {
             console.error("Failed to copy table: ", err);
         }
     }
+
+    $: artificingMatches = (() => {
+        if (equipData.rarity !== 5) return [];
+        if (!equipData.displayAttr) return [];
+        const pool = Object.entries(equipment).map(([eId, data]) => ({ id: eId, ...data }));
+        const targetAttrs = equipData.displayAttr.filter(a => a.attrType.toLowerCase() !== 'def');
+        return targetAttrs.map(targetAttr => {
+            const targetValues = targetAttr.values.filter(v => v !== undefined && v !== null);
+            const targetMax = targetValues.length > 0 ? Math.max(...targetValues.map(Math.abs)) : 0;
+            const matches = pool.filter(food => {
+                if (food.partType !== equipData.partType) return false;
+                if (food.rarity !== 5) return false;
+                const foodAttrs = food.displayAttr || [];
+                const foodAttrIndex = foodAttrs.findIndex(a => a.attrType === targetAttr.attrType);
+                if (foodAttrIndex === -1) return false;
+                const foodAttr = foodAttrs[foodAttrIndex];
+                const foodValues = foodAttr.values.filter(v => v !== undefined && v !== null);
+                const foodMax = foodValues.length > 0 ? Math.max(...foodValues.map(Math.abs)) : 0;
+                if (foodMax < targetMax) return false;
+
+                return true;
+            }).map(food => {
+                const foodAttrs = food.displayAttr || [];
+                const foodNonDefAttrs = foodAttrs.filter(a => a.attrType.toLowerCase() !== 'def');
+                const isGoodMatch = foodNonDefAttrs.length > 0 && foodNonDefAttrs[0].attrType === targetAttr.attrType;
+                return { ...food, isGoodMatch };
+            }).sort((a, b) => {
+                if (a.isGoodMatch && !b.isGoodMatch) return -1;
+                if (!a.isGoodMatch && b.isGoodMatch) return 1;
+                return a.id.localeCompare(b.id);
+            });
+
+            return {
+                attrType: targetAttr.attrType,
+                matches
+            };
+        });
+    })();
 </script>
 
 <div class="min-h-screen p-4 md:p-8 font-sans transition-colors">
@@ -228,9 +265,9 @@
     <div
         class="w-full max-w-[1500px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8 items-start"
     >
-        <div
-            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
-        >
+        <div class="col-span-1 xl:col-span-7 flex flex-col gap-6">
+        
+        <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors shadow-sm">
             <div
                 class="relative min-h-[190px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
             >
@@ -328,7 +365,7 @@
                             >
                                 <Icon
                                     name={partTypeStr}
-                                    class="w-5 h-5 text-white"
+                                    class="w-7 h-7 text-white"
                                 />
                             </div>
                         </Tooltip>
@@ -339,7 +376,7 @@
                             {#each Array(rarity || 1) as _}
                                 <Icon
                                     name="strokeStar"
-                                    class="w-7 h-7"
+                                    class="w-9 h-9"
                                     style="color: {rarityColor}; stroke-opacity: 100%;"
                                 />
                             {/each}
@@ -364,6 +401,7 @@
             </div>
 
             <div class="px-6 py-2">
+            <div class="overflow-x-auto custom-scrollbar pb-2">
                 <table class="w-full text-left border-collapse">
                     <thead>
                         <tr class="border-b border-gray-200 dark:border-[#444]">
@@ -427,19 +465,15 @@
 
                                     {#each tiers as valIndex}
                                         {@const val = attr.values[valIndex]}
-                                        <td
-                                            class="py-2 px-1 text-center font-nums text-[#21272C] dark:text-white"
-                                        >
+                                        <td class="py-2 px-1 text-center font-nums text-[#21272C] dark:text-white">
                                             {#if isDef && valIndex > 0}
                                                 -
                                             {:else if val === 0 || !val}
                                                 -
                                             {:else if Math.abs(val) > 0 && Math.abs(val) < 1}
-                                                {+(val * 100).toFixed(1)}%
+                                                {Math.round(val * 1000) / 10}%
                                             {:else}
-                                                {val % 1 !== 0
-                                                    ? val.toFixed(1)
-                                                    : val}
+                                                {Math.round(val * 10) / 10}
                                             {/if}
                                         </td>
                                     {/each}
@@ -448,6 +482,7 @@
                         {/if}
                     </tbody>
                 </table>
+                </div>
             </div>
 
             <div class="px-6 pb-5 flex flex-col gap-1">
@@ -455,7 +490,7 @@
                 <div class="flex items-center justify-between pl-1">
                     <div>
                         {#if equipLocale.setBonus && pack !== "none"}
-                            <h3 class="text-sm font-medium text-gray-500 dark:text-[#888] tracking-wide">
+                            <h3 class="text-sm font-bold text-gray-500 dark:text-[#888] ">
                                 {tOrFallback(`packs.${pack}`, pack)}
                             </h3>
                         {/if}
@@ -502,6 +537,82 @@
                     </div>
                 {/if}
             </div>
+            
+        </div>
+        {#if artificingMatches.length > 0 && artificingMatches.some(group => group.matches.length > 0)}
+                <div class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors shadow-sm">
+                    <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3">
+                        {tOrFallback("stats.artificing", "Artificing")}
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 items-start">
+                        {#each artificingMatches as attrGroup}
+                            <div class="flex flex-col gap-3">
+                                
+                                <div class="flex items-center gap-2 pb-1 border-b border-gray-100 dark:border-[#383838] min-h-[48px]">
+                                    <div class="w-7 h-7 bg-gray-100 dark:bg-[#333] rounded flex items-center justify-center shrink-0">
+                                        <Icon name={attrGroup.attrType.toLowerCase() === 'maxhp' ? 'hp' : attrGroup.attrType.toLowerCase()} class="w-5 h-5 text-gray-600 dark:text-gray-300" />
+                                    </div>
+                                    <span class="font-medium text-[15px] text-[#21272C] dark:text-white/90 leading-tight">
+                                        {tOrFallback(`equipSkills.${attrGroup.attrType}`, attrGroup.attrType)}
+                                    </span>
+                                </div>
+                                
+                                <div class="flex flex-col gap-2">
+                                    {#each attrGroup.matches as match}
+                                        <div class="flex items-center gap-3 p-1.5 rounded-xl border transition-all 
+                                            {match.isGoodMatch 
+                                                ? 'bg-[#F9B90C]/5 border-[#F9B90C]/30 hover:bg-[#F9B90C]/15 hover:border-[#F9B90C]/50 dark:bg-[#F9B90C]/10 dark:border-[#F9B90C]/30 dark:hover:bg-[#F9B90C]/20 dark:hover:border-[#F9B90C]/50' 
+                                                : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 dark:bg-[#333]/30 dark:border-[#444] dark:hover:bg-[#333]/60 dark:hover:border-[#666]'}">
+                                            
+                                            <WeaponCard 
+                                                weapon={match} 
+                                                variant="small" 
+                                                className="w-[47px] h-[47px]" 
+                                                isEquipment={true} 
+                                                hidePot={true} 
+                                                hideName={true} 
+                                                hideRarity={true}
+                                                disableHover={true} 
+                                            />
+                                            
+                                            <div class="flex flex-col gap-0.5">
+                                                <span class="text-[13px] font-medium text-gray-800 dark:text-gray-200 leading-tight">
+                                                    {tOrFallback(`equipment.${match.id}`, match.name || match.id)}
+                                                </span>
+                                                
+                                                <div class="flex items-center gap-2 mt-0.5">
+                                                    {#if match.isGoodMatch}
+                                                        <span class="text-[11px] font-medium text-[#F9B90C] leading-none">
+                                                            {tOrFallback("stats.goodMatch", "Good Match")}
+                                                        </span>
+                                                    {:else}
+                                                        <span class="text-[11px] font-medium text-gray-400 dark:text-[#888] leading-none">
+                                                            {tOrFallback("stats.standardMatch", "Standard Match")} 
+                                                        </span>
+                                                    {/if}
+
+                                                    {#if match.id === id}
+                                                        <span class="px-1.5 py-[2px] rounded bg-[#26BAFB]/10 border border-[#26BAFB]/20 text-[#26BAFB] text-[9px] font-bold uppercase leading-none shadow-sm">
+                                                            {tOrFallback("common.same", "Same")}
+                                                        </span>
+                                                    {/if}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {/each}
+
+                                    {#if attrGroup.matches.length === 0}
+                                        <div class="text-center py-4 text-gray-400 text-[13px] italic bg-gray-50/50 dark:bg-[#333]/20 rounded-xl border border-transparent dark:border-[#444]/50">
+                                            {tOrFallback("page.rating.noData", "No data")}
+                                        </div>
+                                    {/if}
+                                </div>
+                            </div>
+                        {/each}
+                    </div>
+                </div>
+            {/if}
         </div>
 
         <div class="col-span-1 xl:col-span-5 flex flex-col gap-6">
@@ -511,7 +622,7 @@
                 <h2
                     class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                 >
-                    {tOrFallback("stats.materials", "Материалы для создания")}
+                    {tOrFallback("stats.materials", "Materials")}
                 </h2>
                 <div class="flex flex-wrap gap-4 pt-1">
                     {#if neededMaterials.length > 0}
@@ -524,12 +635,13 @@
                         >
                             {tOrFallback(
                                 "systemNames.noMaterialsNeeded",
-                                "Материалы не требуются",
+                                "No materials needed",
                             )}
                         </div>
                     {/if}
                 </div>
             </div>
+            
         </div>
     </div>
 </div>

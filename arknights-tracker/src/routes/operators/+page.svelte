@@ -5,10 +5,15 @@
     import { pullData } from "$lib/stores/pulls";
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
+    import { operatorFilters, operatorSearch, operatorManual, operatorOwnedOnly } from '$lib/stores/filterStore';
 
     import OperatorCard from "$lib/components/OperatorCard.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";
     import Icon from "$lib/components/Icons.svelte";
+
+    $: filters = $operatorFilters;
+    $: searchQuery = $operatorSearch;
+    $: showOwnedOnly = $operatorOwnedOnly;
 
     const allOperators = Object.values(characters || {}).filter(
         (op) => op && op.id,
@@ -124,9 +129,10 @@
         <DataToolbar
             bind:sortField
             bind:sortDirection
-            bind:searchQuery
-            bind:filters
-            bind:showOwnedOnly
+            bind:filters={$operatorFilters} 
+            bind:searchQuery={$operatorSearch} 
+            bind:manualMode={$operatorManual}
+            bind:showOwnedOnly={$operatorOwnedOnly}
         />
     </div>
 

@@ -6,6 +6,7 @@
     import { locations } from "$lib/data/locations.js";
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
+    import { weaponFilters, weaponSearch, weaponManual } from '$lib/stores/filterStore';
 
     import WeaponCard from "$lib/components/WeaponCard.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";
@@ -13,6 +14,9 @@
     import Images from "$lib/components/Images.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Button from "$lib/components/Button.svelte";
+
+    $: filters = $weaponFilters;
+    $: searchQuery = $weaponSearch;
 
     const allWeapons = Object.values(weapons || {}).filter((wp) => wp && wp.id);
 
@@ -808,8 +812,9 @@
                 <DataToolbar
                     bind:sortField
                     bind:sortDirection
-                    bind:searchQuery
-                    bind:filters
+                    bind:filters={$weaponFilters} 
+                    bind:searchQuery={$weaponSearch} 
+                    bind:manualMode={$weaponManual}
                     bind:showOwnedOnly
                     mode="weapons"
                 />

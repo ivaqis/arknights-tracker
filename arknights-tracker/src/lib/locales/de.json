@@ -437,6 +437,9 @@
   },
   "stats": {
     "attributes": "Attribute",
+    "goodMatch": "Gute Übereinstimmung",
+    "standardMatch": "Normale Übereinstimmung",
+    "artificing": "Ausrüstungsveredelung",
     "coolDown": "Abklingzeit",
     "mainAttr": "Hauptattribut",
     "secAttr": "Sekundärattribut",

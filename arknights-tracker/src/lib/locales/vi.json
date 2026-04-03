@@ -436,6 +436,9 @@
   },
   "stats": {
     "attributes": "Thuộc tính",
+    "goodMatch": "Ghép Trận Anh Tài",
+    "standardMatch": "Ghép Trận Tiêu Chuẩn",
+    "artificing": "Chế Tác Trang Bị",
     "coolDown": "Thời gian hồi chiêu",
     "mainAttr": "Thuộc tính Chính",
     "secAttr": "Thuộc tính Phụ",

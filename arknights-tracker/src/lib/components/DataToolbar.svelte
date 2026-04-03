@@ -117,7 +117,7 @@
 
     $: sortOptions =
         mode === "equipment"
-            ? ["rarity"]
+            ? ["rarity"] //, "level", "partType", "pack"
             : mode === "weapons"
             ? ["rarity", "type"]
             : ["rarity", "class", "element", "weapon"];
@@ -145,7 +145,12 @@
     }
 
     let dirtyGroups = {};
-    let manualMode = {};
+    export let manualMode = { 
+        rarity: false, class: false, element: false, 
+        weapon: false, type: false, attr1: false, 
+        attr2: false, attr3: false, partType: false, 
+        pack: false, stats: false 
+    };
 
     function toggleFilterGroup(groupKey) {
         filters = { ...filters, [groupKey]: [...filterOptions[groupKey]] };

@@ -18,6 +18,7 @@
     export let hideDarkness = false;
     export let asLink = true;
     export let isEquipment = false;
+    export let hideRarity = false;
 
     $: localeCategory = isEquipment ? "equipment" : "weaponsList";
     $: itemUrl = isEquipment
@@ -174,14 +175,14 @@
                 <div
                     class="absolute top-1 {isEquipment
                         ? 'right-1'
-                        : 'left-1'} z-20 pointer-events-auto filter"
+                        : 'left-1'} z-20 pointer-events-auto filter flex flex-col items-center gap-0.5"
                 >
                     <Tooltip text={topLeftTooltip}>
                         <div
                             class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center cursor-pointer {variant ===
                             'small'
                                 ? 'w-4 h-4 p-0.5'
-                                : 'w-5 h-5 p-0.5'}"
+                                : 'w-5 h-5 p-0.5'} shadow-sm"
                         >
                             <Icon
                                 name={topLeftIcon}
@@ -189,6 +190,15 @@
                             />
                         </div>
                     </Tooltip>
+
+                    {#if isEquipment && weapon.level !== undefined}
+                        <span
+                            class="text-[10px] font-black text-white leading-none tracking-tight font-nums mt-1"
+                            style="text-shadow: 1px 1px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 0 2px 2px rgba(0,0,0,0.8);"
+                        >
+                            {weapon.level}
+                        </span>
+                    {/if}
                 </div>
             {/if}
 
@@ -251,31 +261,27 @@
                     class="absolute bottom-[6px] left-0 right-0 h-[30px] z-10 pointer-events-none bg-gradient-to-t from-black/50 to-transparent"
                 ></div>
             {/if}
-
-            <div
-                class="absolute bottom-0 left-0 w-full h-[6px] z-20"
-                style:background-color={rarityColor}
-            >
+            {#if !hideRarity}
                 <div
-                    class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
-                    style="--dot-color: {rarityColor}; background-image: radial-gradient(var(--dot-color) 30%, transparent 35%); background-size: 4px 4px; mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);"
-                ></div>
-            </div>
+                    class="absolute bottom-0 left-0 w-full h-[6px] z-20"
+                    style:background-color={rarityColor}
+                >
+                    <div
+                        class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
+                        style="--dot-color: {rarityColor}; background-image: radial-gradient(var(--dot-color) 30%, transparent 35%); background-size: 4px 4px; mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);"
+                    ></div>
+                </div>
+            {/if}
 
             {#if !hideName}
                 <div
                     class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5"
                 >
-                    <Tooltip
-                        text={$t(`${localeCategory}.${nameKey}`) || weapon.name}
-                        class="flex justify-center w-full"
+                    <span
+                        class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 drop-shadow-md opacity-90 w-full block cursor-pointer"
                     >
-                        <span
-                            class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 drop-shadow-md opacity-90 w-full block cursor-pointer"
-                        >
-                            {$t(`${localeCategory}.${nameKey}`) || weapon.name}
-                        </span>
-                    </Tooltip>
+                        {$t(`${localeCategory}.${nameKey}`) || weapon.name}
+                    </span>
                 </div>
             {/if}
 
@@ -302,11 +308,11 @@
                     </div>
                 </div>
             {/if}
-
-            <div
-                class="absolute bottom-0 left-0 w-full h-[6px] z-10"
-                style:background-color={rarityColor}
-            ></div>
+            {#if !hideRarity}
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[6px] z-10"
+                    style:background-color={rarityColor}
+                ></div>{/if}
         </div>
     </svelte:element>
 {/if}

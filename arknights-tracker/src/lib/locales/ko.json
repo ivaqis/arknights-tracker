@@ -437,6 +437,9 @@
   },
   "stats": {
     "attributes": "속성",
+    "goodMatch": "양호 조합",
+    "standardMatch": "표준 조합",
+    "artificing": "장비 정밀 단조",
     "coolDown": "쿨타임",
     "mainAttr": "주 속성",
     "secAttr": "보조 속성",

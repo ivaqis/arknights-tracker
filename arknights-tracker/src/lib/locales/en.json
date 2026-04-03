@@ -460,6 +460,9 @@
   },
   "stats": {
     "attributes": "Attributes",
+    "goodMatch": "Good Match",
+    "standardMatch": "Standard Match",
+    "artificing": "Gear Artificing",
     "coolDown": "Cooldown",
     "mainAttr": "Main Attribute",
     "secAttr": "Secondary Attribute",
