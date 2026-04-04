@@ -8,7 +8,6 @@
     export let searchQuery = "";
     export let showOwnedOnly = false;
     export let availablePacks = [];
-    export let availableStats = [];
     export let groupMode = true;
 
     const skillIcons = {
@@ -75,10 +74,47 @@
         "smash",
     ];
 
-    const hardcodedStats = ["Def","Str","Agi","Wisd","Will","Atk","CriticalRate","UltimateSpGainScalar","OriginiumArts","Sub","Main","NormalSkillEfficiency","ComboSkillEfficiency","UltimateSkillEfficiency","SpellDamageIncrease","AllSkillDamageIncrease","PhysicalDamageIncrease","AttrDamageToBrokenUnitIncrease","NormalAttackDamageIncrease","CrystAndPulseDamageIncrease","FireAndNaturalDamageIncrease","MaxHp","AllDamageTakenScalar","HealOutputIncrease"]
+    const hardcodedStats = [
+        "Def",
+        "Str",
+        "Agi",
+        "Wisd",
+        "Will",
+        "Atk",
+        "CriticalRate",
+        "UltimateSpGainScalar",
+        "OriginiumArts",
+        "Sub",
+        "Main",
+        "NormalSkillEfficiency",
+        "ComboSkillEfficiency",
+        "UltimateSkillEfficiency",
+        "SpellDamageIncrease",
+        "AllSkillDamageIncrease",
+        "PhysicalDamageIncrease",
+        "AttrDamageToBrokenUnitIncrease",
+        "NormalAttackDamageIncrease",
+        "CrystAndPulseDamageIncrease",
+        "FireAndNaturalDamageIncrease",
+        "MaxHp",
+        "AllDamageTakenScalar",
+        "HealOutputIncrease",
+    ];
     $: filterOptions = {
-        rarity: mode === "equipment" ? [5, 4, 3, 2, 1] : mode === "weapons" ? [6, 5, 4, 3] : [6, 5, 4],
-        class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
+        rarity:
+            mode === "equipment"
+                ? [5, 4, 3, 2, 1]
+                : mode === "weapons"
+                  ? [6, 5, 4, 3]
+                  : [6, 5, 4],
+        class: [
+            "guard",
+            "vanguard",
+            "caster",
+            "defender",
+            "supporter",
+            "striker",
+        ],
         element: ["cryo", "physical", "nature", "heat", "electric"],
         weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
         type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
@@ -87,7 +123,7 @@
         attr3: attr3Skills,
         partType: [0, 1, 2], // 0 = body, 1 = hand, 2 = edc
         pack: ["none", ...(availablePacks || [])],
-        stats: hardcodedStats.filter(s => s.toLowerCase() !== "def")
+        stats: hardcodedStats.filter((s) => s.toLowerCase() !== "def"),
     };
 
     export let filters = (() => {
@@ -95,13 +131,24 @@
             return {
                 rarity: [5, 4, 3, 2, 1],
                 partType: [0, 1, 2],
-                pack: [], 
-                stats: []
+                pack: [],
+                stats: {
+                    any: [],
+                    1: [],
+                    2: [],
+                    3: [],
+                },
             };
         } else if (mode === "weapons") {
             return {
                 rarity: [6, 5, 4, 3],
-                type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+                type: [
+                    "sword",
+                    "polearm",
+                    "artsUnit",
+                    "greatSword",
+                    "handcannon",
+                ],
                 attr1: [...attr1Skills],
                 attr2: [...attr2Skills],
                 attr3: [...attr3Skills],
@@ -109,9 +156,22 @@
         } else {
             return {
                 rarity: [6, 5, 4],
-                class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
+                class: [
+                    "guard",
+                    "vanguard",
+                    "caster",
+                    "defender",
+                    "supporter",
+                    "striker",
+                ],
                 element: ["cryo", "physical", "nature", "heat", "electric"],
-                weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+                weapon: [
+                    "sword",
+                    "polearm",
+                    "artsUnit",
+                    "greatSword",
+                    "handcannon",
+                ],
             };
         }
     })();
@@ -120,11 +180,12 @@
         mode === "equipment"
             ? ["rarity"] //, "level", "partType", "pack"
             : mode === "weapons"
-            ? ["rarity", "type"]
-            : ["rarity", "class", "element", "weapon"];
+              ? ["rarity", "type"]
+              : ["rarity", "class", "element", "weapon"];
 
     let isFilterOpen = false;
     let isSortDropdownOpen = false;
+    let activeStatTab = "any";
 
     function toggleSortDirection() {
         sortDirection = sortDirection === "desc" ? "asc" : "desc";
@@ -146,15 +207,27 @@
     }
 
     let dirtyGroups = {};
-    export let manualMode = { 
-        rarity: false, class: false, element: false, 
-        weapon: false, type: false, attr1: false, 
-        attr2: false, attr3: false, partType: false, 
-        pack: false, stats: false 
+    export let manualMode = {
+        rarity: false,
+        class: false,
+        element: false,
+        weapon: false,
+        type: false,
+        attr1: false,
+        attr2: false,
+        attr3: false,
+        partType: false,
+        pack: false,
+        stats: false,
     };
 
     function toggleFilterGroup(groupKey) {
-        filters = { ...filters, [groupKey]: [...filterOptions[groupKey]] };
+        if (groupKey === "stats" && mode === "equipment") {
+            filters = { ...filters, stats: { any: [], 1: [], 2: [], 3: [] } };
+            activeStatTab = "any";
+        } else {
+            filters = { ...filters, [groupKey]: [...filterOptions[groupKey]] };
+        }
         manualMode = { ...manualMode, [groupKey]: false };
     }
 
@@ -197,23 +270,41 @@
 
     $: isFilterActive =
         mode === "equipment"
-            ? filters.rarity?.length !== filterOptions.rarity.length || manualMode.rarity ||
-              filters.partType?.length !== filterOptions.partType.length || manualMode.partType ||
-              (filters.pack?.length > 0 && filters.pack?.length !== filterOptions.pack.length) || manualMode.pack ||
-              (filters.stats?.length > 0 && filters.stats?.length !== filterOptions.stats.length) || manualMode.stats ||
+            ? filters.rarity?.length !== filterOptions.rarity.length ||
+              manualMode.rarity ||
+              filters.partType?.length !== filterOptions.partType.length ||
+              manualMode.partType ||
+              (filters.pack?.length > 0 &&
+                  filters.pack?.length !== filterOptions.pack.length) ||
+              manualMode.pack ||
+              (filters.stats &&
+                  (filters.stats.any?.length > 0 ||
+                      filters.stats[1]?.length > 0 ||
+                      filters.stats[2]?.length > 0 ||
+                      filters.stats[3]?.length > 0)) ||
+              manualMode.stats ||
               showOwnedOnly
             : mode === "weapons"
-            ? filters.rarity?.length !== filterOptions.rarity.length || manualMode.rarity ||
-              filters.type?.length !== filterOptions.type.length || manualMode.type ||
-              filters.attr1?.length !== filterOptions.attr1.length || manualMode.attr1 ||
-              filters.attr2?.length !== filterOptions.attr2.length || manualMode.attr2 ||
-              filters.attr3?.length !== filterOptions.attr3.length || manualMode.attr3 ||
-              showOwnedOnly
-            : filters.rarity?.length !== filterOptions.rarity.length || manualMode.rarity ||
-              filters.class?.length !== filterOptions.class.length || manualMode.class ||
-              filters.element?.length !== filterOptions.element.length || manualMode.element ||
-              filters.weapon?.length !== filterOptions.weapon.length || manualMode.weapon ||
-              showOwnedOnly;
+              ? filters.rarity?.length !== filterOptions.rarity.length ||
+                manualMode.rarity ||
+                filters.type?.length !== filterOptions.type.length ||
+                manualMode.type ||
+                filters.attr1?.length !== filterOptions.attr1.length ||
+                manualMode.attr1 ||
+                filters.attr2?.length !== filterOptions.attr2.length ||
+                manualMode.attr2 ||
+                filters.attr3?.length !== filterOptions.attr3.length ||
+                manualMode.attr3 ||
+                showOwnedOnly
+              : filters.rarity?.length !== filterOptions.rarity.length ||
+                manualMode.rarity ||
+                filters.class?.length !== filterOptions.class.length ||
+                manualMode.class ||
+                filters.element?.length !== filterOptions.element.length ||
+                manualMode.element ||
+                filters.weapon?.length !== filterOptions.weapon.length ||
+                manualMode.weapon ||
+                showOwnedOnly;
 
     function resetFilters() {
         manualMode = {};
@@ -222,8 +313,9 @@
                 rarity: [...filterOptions.rarity],
                 partType: [...filterOptions.partType],
                 pack: [],
-                stats: []
+                stats: { any: [], 1: [], 2: [], 3: [] },
             };
+            activeStatTab = "any";
         } else if (mode === "weapons") {
             filters = {
                 rarity: [...filterOptions.rarity],
@@ -269,12 +361,28 @@
         return "bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878] hover:opacity-100 hover:bg-gray-50 hover:dark:bg-[#424242]";
     };
 
-    $: statGroups = mode === "equipment" && filterOptions.stats ? [
-        filterOptions.stats.slice(0, 10),
-        filterOptions.stats.slice(10, 15),
-        filterOptions.stats.slice(15, 20),
-        filterOptions.stats.slice(20)
-    ] : [];
+    $: statGroups =
+        mode === "equipment" && filterOptions.stats
+            ? [
+                  filterOptions.stats.slice(0, 10),
+                  filterOptions.stats.slice(10, 15),
+                  filterOptions.stats.slice(15, 20),
+                  filterOptions.stats.slice(20),
+              ]
+            : [];
+
+    $: getStatClass = (stat, tab) => {
+        const currentArr = filters.stats[tab] || [];
+        const isSel = currentArr.includes(stat);
+        const hasAnySelected = currentArr.length > 0;
+        if (isSel) {
+            return "border-[#F9B90C] bg-[#F9B90C]/10 text-[#F9B90C]";
+        }
+        if (!hasAnySelected) {
+            return "bg-gray-300 border-gray-400 text-black dark:text-[#E0E0E0] dark:bg-[#424242] dark:border-[#444444] hover:bg-gray-200 hover:dark:bg-[#4a4a4a]";
+        }
+        return "bg-white dark:bg-[#383838] border-gray-200 text-gray-400 opacity-60 dark:border-[#444444] dark:text-[#787878] hover:opacity-100 hover:bg-gray-50 hover:dark:bg-[#424242]";
+    };
 </script>
 
 <svelte:window on:click={closeAll} />
@@ -351,22 +459,60 @@
     </button>
 
     <div class="relative">
-        <button
-            type="button"
-            aria-label="Filters"
-            class="h-[40px] px-4 gap-2 flex items-center justify-center rounded-full transition-colors cursor-pointer {isFilterActive
-                ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]'
-                : 'bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'}"
-            on:click|stopPropagation={toggleFilterDropdown}
+        <div
+            class="flex items-center h-[40px] rounded-full transition-colors {isFilterActive
+                ? 'bg-[#F9B90C] text-black dark:bg-[#F9B90C] dark:text-black shadow-sm'
+                : 'bg-gray-200 text-gray-800 dark:bg-[#383838] dark:text-[#E0E0E0] dark:border-[#444444] dark:border'}"
         >
-            <Icon
-                name="filter"
-                class="w-4 h-4 text-current pointer-events-none"
-            />
-            <span class="text-sm pointer-events-none">
-                {$t("sort.filters") || "Filters"}
-            </span>
-        </button>
+            <button
+                type="button"
+                aria-label="Filters"
+                class="flex items-center gap-2 h-full pl-4 {isFilterActive
+                    ? 'pr-3 rounded-l-full hover:bg-[#E5AA0B] dark:hover:bg-[#E5AA0B]'
+                    : 'pr-4 rounded-full hover:bg-gray-300 hover:dark:bg-[#373737]'}"
+                on:click|stopPropagation={toggleFilterDropdown}
+            >
+                <Icon
+                    name="filter"
+                    class="w-4 h-4 text-current pointer-events-none"
+                />
+                <span class="text-sm pointer-events-none">
+                    {$t("sort.filters") || "Filters"}
+                </span>
+            </button>
+
+            {#if isFilterActive}
+                <div
+                    class="w-[1px] h-4 bg-black/20 shrink-0 pointer-events-none"
+                ></div>
+
+                <div
+                    class="flex items-center justify-center px-2 h-full rounded-r-full"
+                >
+                    <button
+                        type="button"
+                        aria-label="Clear filters"
+                        class="flex items-center justify-center w-[22px] h-[22px] rounded-full bg-black/10 hover:bg-black/25 dark:bg-black/15 dark:hover:bg-black/30 transition-colors cursor-pointer"
+                        on:click|stopPropagation={resetFilters}
+                        title={$t("sort.reset") || "Reset filters"}
+                    >
+                        <svg
+                            class="w-[10px] h-[10px] text-black/80"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="3"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+            {/if}
+        </div>
 
         {#if isFilterOpen}
             <div
@@ -379,21 +525,29 @@
             >
                 <div class="flex justify-between">
                     {#if mode !== "equipment"}
-                    <div class="flex items-center gap-3">
-                        <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
-                            {$t("sort.ownedOnly") || "Owned Only"}
-                        </span>
-                        <button
-                            type="button"
-                            role="switch"
-                            aria-label="switch"
-                            aria-checked={showOwnedOnly}
-                            class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {showOwnedOnly ? 'bg-[#F9B90C]' : 'bg-gray-200 dark:bg-[#555]'}"
-                            on:click={toggleOwnedOnly}
-                        >
-                            <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform {showOwnedOnly ? 'translate-x-6' : 'translate-x-1'} shadow-sm"></span>
-                        </button>
-                    </div>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800"
+                            >
+                                {$t("sort.ownedOnly") || "Owned Only"}
+                            </span>
+                            <button
+                                type="button"
+                                role="switch"
+                                aria-label="switch"
+                                aria-checked={showOwnedOnly}
+                                class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {showOwnedOnly
+                                    ? 'bg-[#F9B90C]'
+                                    : 'bg-gray-200 dark:bg-[#555]'}"
+                                on:click={toggleOwnedOnly}
+                            >
+                                <span
+                                    class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform {showOwnedOnly
+                                        ? 'translate-x-6'
+                                        : 'translate-x-1'} shadow-sm"
+                                ></span>
+                            </button>
+                        </div>
                     {/if}
                     <div class="flex justify-end">
                         <button
@@ -407,18 +561,30 @@
                 </div>
 
                 <div>
-                    <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("rarity")}>
+                    <button
+                        type="button"
+                        class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                        on:click={() => toggleFilterGroup("rarity")}
+                    >
                         {$t("sort.rarity") || "Rarity"}
                     </button>
                     <div class="flex flex-wrap gap-2">
                         {#each filterOptions.rarity as rar}
                             <button
                                 type="button"
-                                class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('rarity', rar)}"
+                                class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                    'rarity',
+                                    rar,
+                                )}"
                                 on:click={() => toggleFilterItem("rarity", rar)}
                             >
-                                <span class="font-bold pointer-events-none">{rar}</span>
-                                <Icon name="star" class="w-3 h-3 text-current pointer-events-none" />
+                                <span class="font-bold pointer-events-none"
+                                    >{rar}</span
+                                >
+                                <Icon
+                                    name="star"
+                                    class="w-3 h-3 text-current pointer-events-none"
+                                />
                             </button>
                         {/each}
                     </div>
@@ -426,40 +592,106 @@
 
                 {#if mode === "operators"}
                     <div>
-                        <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("class")}>
+                        <button
+                            type="button"
+                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("class")}
+                        >
                             {$t("sort.class") || "Class"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.class as cls}
-                                <button type="button" class="h-[32px] px-2 pr-3 rounded flex items-center gap-2 border transition-all cursor-pointer {getFilterClass('class', cls)}" on:click={() => toggleFilterItem("class", cls)}>
-                                    <div class="w-5 h-5 bg-[#2A2A2A] rounded flex items-center justify-center pointer-events-none"><Icon name={cls} class="w-3.5 h-3.5 text-white" /></div>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`classes.${cls}`) || cls}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-2 pr-3 rounded flex items-center gap-2 border transition-all cursor-pointer {getFilterClass(
+                                        'class',
+                                        cls,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("class", cls)}
+                                >
+                                    <div
+                                        class="w-5 h-5 bg-[#2A2A2A] rounded flex items-center justify-center pointer-events-none"
+                                    >
+                                        <Icon
+                                            name={cls}
+                                            class="w-3.5 h-3.5 text-white"
+                                        />
+                                    </div>
+                                    <span
+                                        class="text-xs font-bold capitalize pointer-events-none"
+                                        >{$t(`classes.${cls}`) || cls}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("element")}>
+                        <button
+                            type="button"
+                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("element")}
+                        >
                             {$t("sort.element") || "Element"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.element as elm}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('element', elm)}" on:click={() => toggleFilterItem("element", elm)}>
-                                    <div class="w-5 h-5 flex items-center justify-center pointer-events-none"><Icon name={elm} class="w-full h-full text-current" /></div>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`elements.${elm}`) || elm}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'element',
+                                        elm,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("element", elm)}
+                                >
+                                    <div
+                                        class="w-5 h-5 flex items-center justify-center pointer-events-none"
+                                    >
+                                        <Icon
+                                            name={elm}
+                                            class="w-full h-full text-current"
+                                        />
+                                    </div>
+                                    <span
+                                        class="text-xs font-bold capitalize pointer-events-none"
+                                        >{$t(`elements.${elm}`) || elm}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("weapon")}>
+                        <button
+                            type="button"
+                            class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("weapon")}
+                        >
                             {$t("sort.weapon") || "Weapon"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.weapon as wep}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('weapon', wep)}" on:click={() => toggleFilterItem("weapon", wep)}>
-                                    <div class="w-5 h-5 flex items-center justify-center pointer-events-none bg-[#2A2A2A] rounded-[4px]"><Icon name={wep} class="w-3.5 h-3.5 text-white" /></div>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`weapons.${wep}`) || wep}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'weapon',
+                                        wep,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("weapon", wep)}
+                                >
+                                    <div
+                                        class="w-5 h-5 flex items-center justify-center pointer-events-none bg-[#2A2A2A] rounded-[4px]"
+                                    >
+                                        <Icon
+                                            name={wep}
+                                            class="w-3.5 h-3.5 text-white"
+                                        />
+                                    </div>
+                                    <span
+                                        class="text-xs font-bold capitalize pointer-events-none"
+                                        >{$t(`weapons.${wep}`) || wep}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
@@ -468,46 +700,117 @@
 
                 {#if mode === "weapons"}
                     <div>
-                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("type")}>
+                        <button
+                            type="button"
+                            class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("type")}
+                        >
                             {$t("sort.type") || "Type"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.type as wep}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('type', wep)}" on:click={() => toggleFilterItem("type", wep)}>
-                                    <div class="w-5 h-5 flex items-center justify-center pointer-events-none bg-[#2A2A2A] rounded-[4px]"><Icon name={wep} class="w-3.5 h-3.5 text-white" /></div>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`weapons.${wep}`) || wep}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'type',
+                                        wep,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("type", wep)}
+                                >
+                                    <div
+                                        class="w-5 h-5 flex items-center justify-center pointer-events-none bg-[#2A2A2A] rounded-[4px]"
+                                    >
+                                        <Icon
+                                            name={wep}
+                                            class="w-3.5 h-3.5 text-white"
+                                        />
+                                    </div>
+                                    <span
+                                        class="text-xs font-bold capitalize pointer-events-none"
+                                        >{$t(`weapons.${wep}`) || wep}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr1")}>{$t("sort.attribute1") || "Attribute 1"}</button>
+                        <button
+                            type="button"
+                            class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("attr1")}
+                            >{$t("sort.attribute1") || "Attribute 1"}</button
+                        >
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.attr1 as skill}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('attr1', skill)}" on:click={() => toggleFilterItem("attr1", skill)}>
-                                    {#if skillIcons[skill]}<div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"><Icon name={skillIcons[skill]} class="w-3 h-3 text-white pointer-events-none" /></div>{/if}
-                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'attr1',
+                                        skill,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("attr1", skill)}
+                                >
+                                    {#if skillIcons[skill]}<div
+                                            class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
+                                        >
+                                            <Icon
+                                                name={skillIcons[skill]}
+                                                class="w-3 h-3 text-white pointer-events-none"
+                                            />
+                                        </div>{/if}
+                                    <span
+                                        class="text-xs font-bold pointer-events-none"
+                                        >{$t(`skills.${skill}`) || skill}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr2")}>
+                        <button
+                            type="button"
+                            class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("attr2")}
+                        >
                             {$t("sort.attribute2") || "Attribute 2"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.attr2 as skill}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('attr2', skill)}" on:click={() => toggleFilterItem("attr2", skill)}>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'attr2',
+                                        skill,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("attr2", skill)}
+                                >
                                     {#if skillIcons[skill]}
                                         {#if elementColors[skill]}
-                                            <Icon name={skillIcons[skill]} class="w-4 h-4 pointer-events-none {elementColors[skill]}" />
+                                            <Icon
+                                                name={skillIcons[skill]}
+                                                class="w-4 h-4 pointer-events-none {elementColors[
+                                                    skill
+                                                ]}"
+                                            />
                                         {:else}
-                                            <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none">
-                                                <Icon name={skillIcons[skill]} class="w-3 h-3 text-white pointer-events-none" />
+                                            <div
+                                                class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
+                                            >
+                                                <Icon
+                                                    name={skillIcons[skill]}
+                                                    class="w-3 h-3 text-white pointer-events-none"
+                                                />
                                             </div>
                                         {/if}
                                     {/if}
-                                    <span class="text-xs font-bold pointer-events-none {elementColors[skill] || 'text-current'}">
+                                    <span
+                                        class="text-xs font-bold pointer-events-none {elementColors[
+                                            skill
+                                        ] || 'text-current'}"
+                                    >
                                         {$t(`skills.${skill}`) || skill}
                                     </span>
                                 </button>
@@ -515,12 +818,31 @@
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("attr3")}>{$t("sort.attribute3") || "Attribute 3"}</button>
+                        <button
+                            type="button"
+                            class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("attr3")}
+                            >{$t("sort.attribute3") || "Attribute 3"}</button
+                        >
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.attr3 as skill}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('attr3', skill)}" on:click={() => toggleFilterItem("attr3", skill)}>
-                                    {#if skillIcons[skill]}<Icon name={skillIcons[skill]} class="w-4 h-4 text-current pointer-events-none" />{/if}
-                                    <span class="text-xs font-bold pointer-events-none">{$t(`skills.${skill}`) || skill}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'attr3',
+                                        skill,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("attr3", skill)}
+                                >
+                                    {#if skillIcons[skill]}<Icon
+                                            name={skillIcons[skill]}
+                                            class="w-4 h-4 text-current pointer-events-none"
+                                        />{/if}
+                                    <span
+                                        class="text-xs font-bold pointer-events-none"
+                                        >{$t(`skills.${skill}`) || skill}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
@@ -529,50 +851,139 @@
 
                 {#if mode === "equipment"}
                     <div>
-                        <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("partType")}>
-                            {$t("sort.slot") || "Slot"}
+                        <button
+                            type="button"
+                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("stats")}
+                        >
+                            {$t("sort.stats") || "Attributes"}
                         </button>
-                        <div class="flex flex-wrap gap-2">
-                            {#each filterOptions.partType as pt}
-                                {@const ptName = pt === 0 ? "body" : pt === 1 ? "hand" : "edc"}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('partType', pt)}" on:click={() => toggleFilterItem("partType", pt)}>
-                                    <div class="w-5 h-5 flex items-center justify-center pointer-events-none bg-[#2A2A2A] rounded-[4px]"><Icon name={ptName} class="w-3.5 h-3.5 text-white" /></div>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`equipmentTypes.${ptName}`) || ptName}</span>
+
+                        <div
+                            class="flex items-center gap-1 bg-gray-100 dark:bg-[#2C2C2C] p-1 rounded-lg mb-3 w-fit"
+                        >
+                            {#each [{ id: "any", label: $t("essencesPage.anyAttr") }, { id: 1, label: $t("essencesPage.attr1") }, { id: 2, label: $t("essencesPage.attr2") }, { id: 3, label: $t("essencesPage.attr3") }] as tab}
+                                {@const hasItems =
+                                    filters.stats[tab.id] &&
+                                    filters.stats[tab.id].length > 0}
+                                {@const isActive = activeStatTab === tab.id}
+
+                                <button
+                                    type="button"
+                                    class="flex items-center gap-1.5 px-3 py-1.5 rounded-md font-bold transition-all text-xs
+                                    {isActive
+                                        ? 'bg-white dark:bg-[#444] shadow-sm text-[#21272C] dark:text-white'
+                                        : 'hover:bg-gray-200 dark:hover:bg-[#333]'} 
+                                    {!isActive && hasItems
+                                        ? 'text-[#F9B90C]'
+                                        : ''} 
+                                    {!isActive && !hasItems
+                                        ? 'text-gray-500 dark:text-gray-400'
+                                        : ''}"
+                                    on:click={() => (activeStatTab = tab.id)}
+                                >
+                                    {tab.label}
+
+                                    {#if hasItems}
+                                        <div
+                                            class="w-1.5 h-1.5 rounded-full bg-[#F9B90C] {isActive
+                                                ? 'shadow-[0_0_6px_rgba(249,185,12,0.6)]'
+                                                : ''}"
+                                        ></div>
+                                    {/if}
                                 </button>
                             {/each}
                         </div>
-                    </div>
-                    <div>
-                        <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("stats")}>
-                            {$t("sort.stats") || "Attributes"}
-                        </button>
-                        
+
                         <div class="flex flex-col gap-2.5">
                             {#each statGroups as group, index}
-                                <div class="flex flex-wrap gap-2 {index < statGroups.length - 1 ? 'pb-2.5 border-b border-gray-200/60 dark:border-[#444]/50' : ''}">
-                                    
+                                <div
+                                    class="flex flex-wrap gap-2 {index <
+                                    statGroups.length - 1
+                                        ? 'pb-2.5 border-b border-gray-200/60 dark:border-[#444]/50'
+                                        : ''}"
+                                >
                                     {#each group as stat}
-                                        {@const statIcon = stat.toLowerCase() === 'maxhp' ? 'hp' : stat.toLowerCase()}
-                                        <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('stats', stat)}" on:click={() => toggleFilterItem("stats", stat)}>
-                                            <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none">
-                                                <Icon name={statIcon} class="w-3 h-3 text-white pointer-events-none" />
+                                        {@const statIcon =
+                                            stat.toLowerCase() === "maxhp"
+                                                ? "hp"
+                                                : stat.toLowerCase()}
+                                        <button
+                                            type="button"
+                                            class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getStatClass(
+                                                stat,
+                                                activeStatTab,
+                                            )}"
+                                            on:click={() => {
+                                                manualMode.stats = true;
+                                                let newStats = {
+                                                    ...filters.stats,
+                                                };
+                                                if (activeStatTab === "any") {
+                                                    newStats[1] = [];
+                                                    newStats[2] = [];
+                                                    newStats[3] = [];
+                                                } else {
+                                                    newStats.any = [];
+                                                }
+                                                const currentArr =
+                                                    newStats[activeStatTab];
+                                                if (currentArr.includes(stat)) {
+                                                    newStats[activeStatTab] =
+                                                        currentArr.filter(
+                                                            (s) => s !== stat,
+                                                        );
+                                                } else {
+                                                    newStats[activeStatTab] = [
+                                                        ...currentArr,
+                                                        stat,
+                                                    ];
+                                                }
+                                                filters.stats = newStats;
+                                            }}
+                                        >
+                                            <div
+                                                class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
+                                            >
+                                                <Icon
+                                                    name={statIcon}
+                                                    class="w-3 h-3 text-white pointer-events-none"
+                                                />
                                             </div>
-                                            <span class="text-xs font-bold pointer-events-none">{$t(`equipSkills.${stat}`) || stat}</span>
+                                            <span
+                                                class="text-xs font-bold pointer-events-none"
+                                                >{$t(`equipSkills.${stat}`) ||
+                                                    stat}</span
+                                            >
                                         </button>
                                     {/each}
-
                                 </div>
                             {/each}
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70" on:click={() => toggleFilterGroup("pack")}>
+                        <button
+                            type="button"
+                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                            on:click={() => toggleFilterGroup("pack")}
+                        >
                             {$t("sort.pack") || "Set / Pack"}
                         </button>
                         <div class="flex flex-wrap gap-2">
                             {#each filterOptions.pack as pack}
-                                <button type="button" class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass('pack', pack)}" on:click={() => toggleFilterItem("pack", pack)}>
-                                    <span class="text-xs font-bold capitalize pointer-events-none">{$t(`packs.${pack}`) || pack}</span>
+                                <button
+                                    type="button"
+                                    class="h-[32px] px-3 rounded flex items-center gap-1 border transition-all cursor-pointer {getFilterClass(
+                                        'pack',
+                                        pack,
+                                    )}"
+                                    on:click={() =>
+                                        toggleFilterItem("pack", pack)}
+                                >
+                                    <span
+                                        class="text-xs font-bold capitalize pointer-events-none"
+                                        >{$t(`packs.${pack}`) || pack}</span
+                                    >
                                 </button>
                             {/each}
                         </div>
@@ -583,67 +994,74 @@
     </div>
 
     <div class="flex-grow max-w-[400px] relative">
-    <div class="relative flex-grow">
-        <div
-            class="absolute left-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-500 pointer-events-none"
+        <div class="relative flex-grow">
+            <div
+                class="absolute left-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-500 pointer-events-none"
+            >
+                <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    ></path></svg
+                >
+            </div>
+
+            <input
+                type="text"
+                bind:value={searchQuery}
+                class="w-full h-[40px] dark:border-[#444444] dark:border dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
+                placeholder={$t("sort.search") || "Search..."}
+            />
+
+            {#if searchQuery}
+                <button
+                    type="button"
+                    aria-label="Clear search"
+                    class="absolute right-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-400 hover:text-gray-600 cursor-pointer"
+                    on:click={clearSearch}
+                >
+                    <svg
+                        class="w-4 h-4 pointer-events-none"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        ><path
+                            fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd"
+                        /></svg
+                    >
+                </button>
+            {/if}
+        </div>
+    </div>
+    {#if mode === "equipment"}
+        <button
+            type="button"
+            class="h-[40px] w-[40px] flex shrink-0 items-center justify-center rounded-full transition-colors cursor-pointer {groupMode
+                ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]'
+                : 'bg-gray-200 text-gray-400 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#787878] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'}"
+            on:click={() => (groupMode = !groupMode)}
+            title="Toggle Grouping"
         >
             <svg
-                class="w-4 h-4"
+                class="w-5 h-5 pointer-events-none"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                ><path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                ></path></svg
+                xmlns="http://www.w3.org/2000/svg"
             >
-        </div>
-
-        <input
-            type="text"
-            bind:value={searchQuery}
-            class="w-full h-[40px] dark:border-[#444444] dark:border dark:text-[#E0E0E0] dark:placeholder-[#E0E0E0] pl-10 pr-8 bg-gray-200 dark:bg-[#383838] dark:border-[#444444] hover:dark:bg-[#373737] rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all placeholder-gray-500 text-gray-900"
-            placeholder={$t("sort.search") || "Search..."}
-        />
-
-        {#if searchQuery}
-            <button
-                type="button"
-                aria-label="Clear search"
-                class="absolute right-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-400 hover:text-gray-600 cursor-pointer"
-                on:click={clearSearch}
-            >
-                <svg
-                    class="w-4 h-4 pointer-events-none"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    ><path
-                        fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                        clip-rule="evenodd"
-                    /></svg
-                >
-            </button>
-        {/if}
-        </div>
-
-    </div>
-            {#if mode === "equipment"}
-            <button
-                type="button"
-                class="h-[40px] w-[40px] flex shrink-0 items-center justify-center rounded-full transition-colors cursor-pointer {groupMode ? 'bg-[#F9B90C] text-black hover:bg-[#E5AA0B] dark:bg-[#F9B90C] dark:text-black dark:hover:bg-[#E5AA0B]' : 'bg-gray-200 text-gray-400 hover:bg-gray-300 dark:bg-[#383838] dark:text-[#787878] dark:border-[#444444] dark:border hover:dark:bg-[#373737]'}"
-                on:click={() => groupMode = !groupMode}
-                title="Toggle Grouping"
-            >
-                <svg class="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    {#if groupMode}
-                        <Icon name="list" />
-                    {:else}
-                        <Icon name="grid" />
-                    {/if}
-                </svg>
-            </button>
-        {/if}
+                {#if groupMode}
+                    <Icon name="list" />
+                {:else}
+                    <Icon name="grid" />
+                {/if}
+            </svg>
+        </button>
+    {/if}
 </div>

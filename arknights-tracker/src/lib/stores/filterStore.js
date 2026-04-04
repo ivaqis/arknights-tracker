@@ -28,7 +28,12 @@ const initialEquipmentFilters = {
     rarity: [5, 4, 3, 2, 1],
     partType: [0, 1, 2], 
     pack: [],
-    stats: []
+    stats: {
+        any: [],
+        1: [],
+        2: [],
+        3: []
+    }
 };
 
 const initialWeaponFilters = {

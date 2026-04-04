@@ -42,23 +42,23 @@
         "Will",
         "Atk",
         "CriticalRate",
-        "MaxHp",
-        "AllDamageTakenScalar",
+        "UltimateSpGainScalar",
+        "OriginiumArts",
+        "Sub",
+        "Main",
         "NormalSkillEfficiency",
         "ComboSkillEfficiency",
-        "PhysicalDamageIncrease",
-        "HealOutputIncrease",
-        "CrystAndPulseDamageIncrease",
-        "SpellDamageIncrease",
-        "UltimateSpGainScalar",
         "UltimateSkillEfficiency",
+        "SpellDamageIncrease",
         "AllSkillDamageIncrease",
+        "PhysicalDamageIncrease",
         "AttrDamageToBrokenUnitIncrease",
-        "Sub",
-        "OriginiumArts",
         "NormalAttackDamageIncrease",
+        "CrystAndPulseDamageIncrease",
         "FireAndNaturalDamageIncrease",
-        "Main",
+        "MaxHp",
+        "AllDamageTakenScalar",
+        "HealOutputIncrease",
     ];
 
     // 0 - body, 1 - hand, 2 - edc
@@ -66,7 +66,12 @@
         rarity: [5, 4, 3, 2, 1],
         partType: [0, 1, 2],
         pack: [],
-        stats: [],
+        stats: {
+            any: [],
+            1: [],
+            2: [],
+            3: [],
+        },
     };
 
     // onMount(() => {
@@ -83,25 +88,49 @@
         const baseFiltered = [...allEquipment].filter((eq) => {
             if (showOwnedOnly) {
                 const activeId = $selectedId;
-                const manualPots = $manualPotentials[activeId] || {}; 
-                const finalPot = manualPots[eq.id] !== undefined ? manualPots[eq.id] : -1;
+                const manualPots = $manualPotentials[activeId] || {};
+                const finalPot =
+                    manualPots[eq.id] !== undefined ? manualPots[eq.id] : -1;
                 if (finalPot < 0) return false;
             }
 
             const locName = ($t(`equipment.${eq.id}`) || "").toLowerCase();
             const query = searchQuery.toLowerCase().trim();
             const idName = (eq.id || "").toLowerCase();
-            const matchesSearch = !query || locName.includes(query) || idName.includes(query);
+            const matchesSearch =
+                !query || locName.includes(query) || idName.includes(query);
             if (!matchesSearch) return false;
             const itemRarity = eq.rarity || 1;
-            const matchesRarity = filters.rarity.length === 0 || filters.rarity.includes(itemRarity);
+            const matchesRarity =
+                filters.rarity.length === 0 ||
+                filters.rarity.includes(itemRarity);
             const itemPartType = eq.partType !== undefined ? eq.partType : 0;
-            const matchesPart = filters.partType.length === 0 || filters.partType.includes(itemPartType);
+            const matchesPart =
+                filters.partType.length === 0 ||
+                filters.partType.includes(itemPartType);
             const itemPack = eq.pack || "none";
-            const matchesPack = filters.pack.length === 0 || filters.pack.includes(itemPack);
-            const eqStats = (eq.equipAttr || eq.displayAttr || []).map(a => a.attrType);
-            const passesStats = filters.stats.length === 0 || filters.stats.some(stat => eqStats.includes(stat));
-            return matchesRarity && matchesPart && matchesPack && passesStats;
+            const matchesPack =
+                filters.pack.length === 0 || filters.pack.includes(itemPack);
+            const allItemAttributes = [
+                ...(eq.equipAttr || []),
+                ...(eq.displayAttr || []),
+            ].map((a) => String(a.attrType || "").toLowerCase());
+            const passesAny =
+                filters.stats.any.length === 0 ||
+                filters.stats.any.some((stat) =>
+                    allItemAttributes.includes(String(stat).toLowerCase()),
+                );
+            if (!passesAny) return false;
+            for (let i = 1; i <= 3; i++) {
+                const required = filters.stats[i];
+                if (required && required.length > 0) {
+                    const statAtThisPos = allItemAttributes[i]; 
+                    if (!statAtThisPos || !required.map(s => String(s).toLowerCase()).includes(statAtThisPos)) {
+                        return false;
+                    }
+                }
+            }
+            return matchesRarity && matchesPart && matchesPack;
         });
 
         const sortLogic = (a, b) => {
@@ -110,23 +139,19 @@
                 const rarityA = a.rarity !== undefined ? a.rarity : 1;
                 const rarityB = b.rarity !== undefined ? b.rarity : 1;
                 diff = rarityA - rarityB;
-            } 
-            else if (sortField === "level") {
+            } else if (sortField === "level") {
                 const lvlA = a.level !== undefined ? a.level : 1;
                 const lvlB = b.level !== undefined ? b.level : 1;
                 diff = lvlA - lvlB;
-            } 
-            else if (sortField === "partType") {
+            } else if (sortField === "partType") {
                 const partA = a.partType !== undefined ? a.partType : 0;
                 const partB = b.partType !== undefined ? b.partType : 0;
                 diff = partA - partB;
-            } 
-            else if (sortField === "pack") {
+            } else if (sortField === "pack") {
                 const packA = String(a.pack || "none").toLowerCase();
                 const packB = String(b.pack || "none").toLowerCase();
                 diff = packA.localeCompare(packB);
-            } 
-            else {
+            } else {
                 let valA = a[sortField] || "";
                 let valB = b[sortField] || "";
                 diff = String(valA).localeCompare(String(valB));
@@ -136,7 +161,7 @@
                 const partA = a.partType !== undefined ? a.partType : 0;
                 const partB = b.partType !== undefined ? b.partType : 0;
                 diff = partA - partB;
-                
+
                 if (diff === 0) {
                     diff = (a.id || "").localeCompare(b.id || "");
                 }
@@ -177,65 +202,51 @@
         });
 
     let displayLimit = 4;
-    let flatDisplayLimit = 100;
-    let resetTrigger = 0;
+    let flatDisplayLimit = 60;
 
-    $: if (searchQuery !== undefined || filters || sortField || sortDirection || showOwnedOnly || isGrouped) {
+    $: {
+        const _trigger = [
+            searchQuery,
+            filters,
+            sortField,
+            sortDirection,
+            showOwnedOnly,
+            isGrouped,
+        ];
         displayLimit = 4;
-        flatDisplayLimit = 100;
-        resetTrigger++;
+        flatDisplayLimit = 60;
+        setTimeout(checkScroll, 50);
     }
+
     $: displayedGroups = groupedArray.slice(0, displayLimit);
     $: displayedFlat = filteredEquipment.slice(0, flatDisplayLimit);
-    function infiniteScroll(node) {
-        function loadMore() {
-            let changed = false;
-            if (isGrouped) {
-                if (displayLimit < groupedArray.length) {
-                    displayLimit += 5;
-                    changed = true;
-                }
-            } else {
-                if (flatDisplayLimit < filteredEquipment.length) {
-                    flatDisplayLimit += 50;
-                    changed = true;
-                }
-            }
-            return changed;
+
+    function loadMore() {
+        let changed = false;
+        if (isGrouped && displayLimit < groupedArray.length) {
+            displayLimit += 4;
+            changed = true;
+        } else if (!isGrouped && flatDisplayLimit < filteredEquipment.length) {
+            flatDisplayLimit += 40;
+            changed = true;
         }
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                if (entries[0].isIntersecting) {
-                    loadMore();
-                }
-            },
-            {
-                rootMargin: "800px",
-                threshold: 0,
-            },
-        );
-
-        observer.observe(node);
-
-        function checkAndFill() {
-            if (!node) return;
-            const rect = node.getBoundingClientRect();
-            if (rect.top < window.innerHeight + 800) {
-                const didLoad = loadMore();
-                if (didLoad) {
-                    setTimeout(checkAndFill, 50);
-                }
-            }
+        if (changed) {
+            setTimeout(checkScroll, 50);
         }
-        setTimeout(checkAndFill, 100);
-        return {
-            destroy() {
-                observer.disconnect();
-            },
-        };
+    }
+
+    function checkScroll() {
+        if (typeof window === "undefined" || typeof document === "undefined")
+            return;
+        const currentScroll = window.innerHeight + window.scrollY;
+        const totalHeight = document.body.offsetHeight;
+        if (totalHeight - currentScroll < 1000) {
+            loadMore();
+        }
     }
 </script>
+
+<svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
 
 <div class="max-w-[100%] max-h-[100%] justify-start min-h-screen">
     <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
@@ -301,18 +312,15 @@
             </div>
         {/if}
 
-        {#key resetTrigger}
-            {#if (isGrouped && displayLimit < groupedArray.length) || (!isGrouped && flatDisplayLimit < filteredEquipment.length)}
-                <div
-                    use:infiniteScroll
-                    class="w-full h-24 mt-4 flex items-center justify-center opacity-50"
-                >
-                    <div class="w-8 h-8 animate-spin dark:text-white">
-                        <Icon name="loading" class="w-8 h-8 opacity-100" />
-                    </div>
+        {#if (isGrouped && displayLimit < groupedArray.length) || (!isGrouped && flatDisplayLimit < filteredEquipment.length)}
+            <div
+                class="w-full h-24 mt-4 flex items-center justify-center opacity-50"
+            >
+                <div class="w-8 h-8 animate-spin dark:text-white">
+                    <Icon name="loading" class="w-8 h-8 opacity-100" />
                 </div>
-            {/if}
-        {/key}
+            </div>
+        {/if}
 
         {#if filteredEquipment.length === 0}
             <div

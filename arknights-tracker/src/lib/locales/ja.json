@@ -439,6 +439,7 @@
     "attributes": "ステータス",
     "goodMatch": "高適合",
     "standardMatch": "標準",
+    "recommended": "おすすめ",
     "artificing": "精密加工",
     "coolDown": "クールタイム",
     "mainAttr": "メイン属性",
