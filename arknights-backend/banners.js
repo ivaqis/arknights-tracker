@@ -166,7 +166,7 @@ const BANNERS = [
   {
     id: "special_1_2_2",
     name: "Fest of Brilliance",
-    type: "special",
+    type: "festOfBrilliance",
     startTime: "2026-05-14 12:00:00",
     endTime: "2026-06-05 04:00:00",
     featured6: ["pogranichnik", "laevatain", "gilberta", "ardelia"],
