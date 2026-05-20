@@ -1,47 +1,47 @@
 export const miners = {
     "miner_1": {
         "id": "miner_1",
-        "mineable": [
-            {
+        "mineable": {
+            "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
                 "miningTimeMs": 3000
             }
-        ]
+        }
     },
     "miner_2": {
         "id": "miner_2",
-        "mineable": [
-            {
+        "mineable": {
+            "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
                 "miningTimeMs": 3000
             },
-            {
+            "item_quartz_sand": {
                 "miningItemId": "item_quartz_sand",
                 "miningTimeMs": 3000
             }
-        ]
+        }
     },
     "miner_3": {
         "id": "miner_3",
-        "mineable": [
-            {
+        "mineable": {
+            "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
                 "miningTimeMs": 3000
             },
-            {
+            "item_quartz_sand": {
                 "miningItemId": "item_quartz_sand",
                 "miningTimeMs": 3000
             },
-            {
+            "item_iron_ore": {
                 "miningItemId": "item_iron_ore",
                 "miningTimeMs": 3000
             }
-        ]
+        }
     },
     "miner_4": {
         "id": "miner_4",
-        "mineable": [
-            {
+        "mineable": {
+            "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
                 "miningTimeMs": 3000,
                 "consumeItem": {
@@ -49,7 +49,7 @@ export const miners = {
                     "count": 1
                 }
             },
-            {
+            "item_quartz_sand": {
                 "miningItemId": "item_quartz_sand",
                 "miningTimeMs": 3000,
                 "consumeItem": {
@@ -57,7 +57,7 @@ export const miners = {
                     "count": 1
                 }
             },
-            {
+            "item_iron_ore": {
                 "miningItemId": "item_iron_ore",
                 "miningTimeMs": 3000,
                 "consumeItem": {
@@ -65,7 +65,7 @@ export const miners = {
                     "count": 1
                 }
             },
-            {
+            "item_copper_ore": {
                 "miningItemId": "item_copper_ore",
                 "miningTimeMs": 3000,
                 "consumeItem": {
@@ -73,6 +73,6 @@ export const miners = {
                     "count": 1
                 }
             }
-        ]
+        }
     }
 }
