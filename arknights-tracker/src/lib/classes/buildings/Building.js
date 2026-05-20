@@ -37,19 +37,19 @@ export class Building {
     }
 
     static getBuilding(buildingId) {
-        if (!this.isBuilding(buildingId)) return null;
-
         let buildingObj = buildings[buildingId];
+
+        if (!buildingObj) return null;
 
         return new Building(buildingObj);
     }
 
     static getBuildingFromItemId(itemId) {
-        if (!this.isItemBuilding(itemId)) return null;
+        let buildingId = Building.getBuildingIdFromItemId(itemId);
 
-        let buildingId = this.getBuildingIdFromItemId(itemId);
+        if (!buildingId) return null;
 
-        return this.getBuilding(buildingId);
+        return Building.getBuilding(buildingId);
     }
 
     static getBuildingIdFromItemId(itemId) {
