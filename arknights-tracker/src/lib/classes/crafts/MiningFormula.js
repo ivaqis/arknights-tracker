@@ -1,4 +1,4 @@
-export class Mining {
+export class MiningFormula {
     _minerId;
     _minableObj;
 

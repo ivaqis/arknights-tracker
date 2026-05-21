@@ -1,6 +1,6 @@
 import {Building} from "$lib/classes/buildings/Building.js";
 import {miners} from "$lib/data/buildings/miners.js";
-import {Mining} from "$lib/classes/crafts/Mining.js";
+import {MiningFormula} from "$lib/classes/crafts/MiningFormula.js";
 
 export class Miner extends Building {
     _minerObj;
@@ -23,12 +23,12 @@ export class Miner extends Building {
         return this._minerObj.mineable.hasOwnProperty(itemId);
     }
 
-    getMining(itemId) {
+    getMiningFormula(itemId) {
         let mineableObj = this._minerObj.mineable[itemId];
 
         if (!mineableObj) return null;
 
-        return new Mining(this.id, mineableObj);
+        return new MiningFormula(this.id, mineableObj);
     }
 
     static getMiner(buildingId) {
