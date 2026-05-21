@@ -32,7 +32,7 @@ export class Crafter extends Building {
     getModeNameByGroupId(groupId) {
         return this.modeList
             .find((mode) => mode.formulaGroupId === groupId)
-            ?.modeName;
+            ?.modeName ?? null;
     }
 
     hasGroup(groupId) {
