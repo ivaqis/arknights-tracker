@@ -36,9 +36,9 @@ export class MiningFormula {
     }
 
     static getMiningFormula(miner, mineableItemId) {
-        if (!miner.isMineable(mineableItemId)) return null;
+        let mineableObj = miner.getMineableObj(mineableItemId);
 
-        let mineableObj = miner._minerObj.mineable[mineableItemId];
+        if (!mineableObj) return null;
 
         return new MiningFormula(miner, mineableObj)
     }
