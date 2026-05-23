@@ -24,6 +24,10 @@ export class Item {
         return this._itemObj.groupId;
     }
 
+    get iconId() {
+        return this._itemObj.iconId;
+    }
+
     isFuel() {
         return Fuel.isFuel(this.id);
     }

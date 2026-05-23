@@ -26,6 +26,10 @@ export class Building {
         return this._buildingObj.itemId;
     }
 
+    get iconId() {
+        return this._buildingObj.iconId;
+    }
+
     isCrafter() {
         return this.type === "crafter";
     }
