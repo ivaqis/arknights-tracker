@@ -42,6 +42,12 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
         case 'currency':
             return `/images/items/currencies/${withExt(name)}`;
 
+        case 'building-icon':
+            return `/images/buildings/${withExt(name)}`;
+
+        case 'item-icon':
+            return `/images/items/items/${withExt(name)}`;
+
         case 'banner-icon':
             return `/images/banners/icon/${withExt(name)}`;
 
