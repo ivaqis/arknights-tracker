@@ -1,9 +1,5 @@
 import {buildings} from "$lib/data/buildings/buildings.js";
 import {itemId2BuildingId} from "$lib/data/buildings/itemId2BuildingId.js";
-import {Crafter} from "$lib/classes/buildings/Crafter.js";
-import {Miner} from "$lib/classes/buildings/Miner.js";
-import {Pump} from "$lib/classes/buildings/Pump.js";
-import {PowerStation} from "$lib/classes/buildings/PowerStation.js";
 
 export class Building {
     _buildingObj;
@@ -44,22 +40,6 @@ export class Building {
 
     isPowerStation() {
         return this.type === "powerStation";
-    }
-
-    toCrafter() {
-        return Crafter.getCrafterFromBuilding(this);
-    }
-
-    toMiner() {
-        return Miner.getMinerFromBuilding(this);
-    }
-
-    toPump() {
-        return Pump.getPumpFromBuilding(this);
-    }
-
-    toPowerStation() {
-        return PowerStation.getPowerStationFromBuilding(this);
     }
 
     static getBuilding(buildingId) {
