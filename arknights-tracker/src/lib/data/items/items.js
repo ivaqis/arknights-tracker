@@ -2295,4 +2295,4 @@ export const items = {
         "groupId": "usable",
         "subGroupId": "powder"
     }
-}
+};
