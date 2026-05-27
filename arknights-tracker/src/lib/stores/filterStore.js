@@ -101,7 +101,7 @@ const initialItemFilters = {
 const initialManualMode = {
     rarity: false, partType: false, pack: false, stats: false,
     class: false, element: false, weapon: false, type: false, attr1: false, attr2: false, attr3: false,
-    itemGroup: false
+    itemSubGroups: false
 };
 
 export const equipmentFilters = writable({ ...initialEquipmentFilters });
