@@ -129,6 +129,14 @@
     $: if (!shiftPressed) {
         targetLevel = level;
     }
+
+    function setMinAll() {
+        level = 1;
+    }
+
+    function setMaxAll() {
+        level = maxLevel;
+    }
 </script>
 
 <svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
@@ -283,10 +291,26 @@
                     </div>
                 </div>
 
-                <div class="px-6 pt-5 pb-5 bg-white dark:bg-[#383838] flex items-center gap-4 border-t border-gray-200 dark:border-[#444]">
-                    <div class="bg-gray-200 dark:bg-[#4A4A4A] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0 {level === 100 ? 'w-[95px]' : 'w-[75px]'}">
-                        <span class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none">{level}</span>
-                        <span class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest">LV.</span>
+                <div class="px-6 pt-5 pb-5 bg-white dark:bg-[#383838] flex flex-col md:flex-row items-start md:items-center gap-5 md:gap-4 border-t border-gray-200 dark:border-[#444] transition-colors">
+                    <div class="flex items-center gap-1 shrink-0 w-full md:w-auto justify-between md:justify-start">
+                        <div class="flex items-center gap-1.5">
+                            <div class="flex flex-col gap-1 shrink-0 h-full justify-center">
+                                <button
+                                    on:click={setMaxAll}
+                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm cursor-pointer"
+                                    >MAX</button
+                                >
+                                <button
+                                    on:click={setMinAll}
+                                    class="text-[9px] font-bold px-2.5 py-[4px] bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] rounded text-gray-700 hover:text-black dark:text-gray-200 uppercase leading-none transition-colors border border-gray-200 dark:border-transparent shadow-sm cursor-pointer"
+                                    >MIN</button
+                                >
+                            </div>
+                            <div class="bg-gray-200 dark:bg-[#4A4A4A] rounded-md px-3 py-1.5 flex items-baseline gap-1 shadow-sm shrink-0 {level === 100 ? 'w-[95px]' : 'w-[75px]'}">
+                                <span class="text-[28px] font-bold text-[#21272C] dark:text-white font-nums leading-none">{level}</span>
+                                <span class="text-[11px] font-bold text-gray-500 dark:text-gray-300 uppercase tracking-widest">LV.</span>
+                            </div>
+                        </div>
                     </div>
                     <input 
                         type="range" min="1" max={maxLevel} step="1" value={targetLevel}

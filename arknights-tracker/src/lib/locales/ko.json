@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "홈",
     "records": "헤드헌팅 기록",
-    "events": "타임라인",
+    "events": "이벤트",
     "settings": "설정",
     "operators": "오퍼레이터",
     "theme_dark": "다크",
@@ -326,6 +326,14 @@
     "enemies": "적"
   },
   "events": {
+    "type": {
+      "signIn": "출석 이벤트",
+      "inGame": "인게임 이벤트",
+      "inGamePermanent": "상시 이벤트",
+      "web": "웹 이벤트",
+      "mailEvent": "우편 이벤트",
+      "protoPass": "프로토패스"
+    },
     "voyage_to_the_stars": "별을 향한 항해",
     "final_prep_orders": "최종 준비 명령",
     "awakaningSignIn": "각성 출석 이벤트",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "탁류 구현",
     "monumentalEtchingCorruptingSurge": "기억의 흔적 · 불결한 흐름",
     "partyTogetherPastryTower": "「함께하는 기쁨」 - 「이 순간을 즐기며」",
-    "sanitySupply": "이성 보급"
+    "sanitySupply": "이성 보급",
+    "risingTideOfWuling": "무릉의 밀물 출석"
   },
   "mouths": {
     "january": "1월",
@@ -861,7 +870,7 @@
     "discordJoin": "Discord 참여",
     "docsTitle": "Goyfield DEV 문서",
     "docsAuthor": "by @beetwooo_",
-    "goToTimeline": "이벤트 타임라인으로"
+    "goToTimeline": "이벤트로"
   },
   "characters": {
     "catcher": "카치르",

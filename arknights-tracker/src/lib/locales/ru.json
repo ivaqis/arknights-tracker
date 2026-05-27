@@ -28,7 +28,7 @@
   "sidebar": {
     "home": "Главная",
     "records": "Записи о найме",
-    "events": "Лента событий",
+    "events": "События",
     "settings": "Настройки",
     "operators": "Оперативники",
     "theme_dark": "Темная",
@@ -334,7 +334,7 @@
   "pages": {
     "home": "Главная",
     "records": "Записи о найме",
-    "events": "Лента событий",
+    "events": "События",
     "settings": "Настройки",
     "operators": "Оперативники",
     "weapons": "Оружие",
@@ -345,6 +345,14 @@
     "enemies": "Враги"
   },
   "events": {
+    "type": {
+      "signIn": "События входа",
+      "inGame": "Игровые события",
+      "inGamePermanent": "Постоянные события",
+      "web": "Веб-события",
+      "mailEvent": "Почтовые события",
+      "protoPass": "Протопропуск"
+    },
     "voyage_to_the_stars": "Путешествие к звездам",
     "final_prep_orders": "Финальная подготовка",
     "awakaningSignIn": "Событие входа «Пробуждение» для новичков",
@@ -387,7 +395,8 @@
     "umbralMonumentTurbidityManifest": "Образ помутнения",
     "monumentalEtchingCorruptingSurge": "Памятные знаки: Разрушающий прилив",
     "partyTogetherPastryTower": "[Вечеринка] – [Сладкая башня]",
-    "sanitySupply": "Поставка рассудка"
+    "sanitySupply": "Поставка рассудка",
+    "risingTideOfWuling": "Вход «Прилив Улина»"
   },
   "mouths": {
     "january": "Январь",
@@ -885,7 +894,7 @@
     "discordJoin": "Присоединиться к Discord",
     "docsTitle": "Документация Goyfield DEV",
     "docsAuthor": "by @beetwooo_",
-    "goToTimeline": "Перейти в ленту событий"
+    "goToTimeline": "Перейти к событиям"
   },
   "characters": {
     "catcher": "Кэтчер",

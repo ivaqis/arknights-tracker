@@ -195,7 +195,7 @@
       </div>
     {/if}
 
-    {#if activeTab !== 'standard' && activeTab !== 'new-player'}
+    {#if activeTab !== 'standard' && activeTab !== 'new-player' && activeTab !== 'joint'}
       <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4 h-[72px]">
         <div class="flex flex-col justify-center">
           <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">

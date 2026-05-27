@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Home",
     "records": "Registro Reclutamenti",
-    "events": "Timeline",
+    "events": "Eventi",
     "settings": "Impostazioni",
     "operators": "Operatori",
     "theme_dark": "Scuro",
@@ -326,6 +326,14 @@
     "enemies": "Nemici"
   },
   "events": {
+    "type": {
+      "signIn": "Eventi di accesso",
+      "inGame": "Eventi in-game",
+      "inGamePermanent": "Eventi permanenti",
+      "web": "Eventi web",
+      "mailEvent": "Eventi di posta",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Viaggio verso le Stelle",
     "final_prep_orders": "Ordini di Preparazione Finale",
     "awakaningSignIn": "Evento di Accesso Risveglio",
@@ -367,7 +375,9 @@
     "umbralMonumentTurbidityManifest": "Manifesto di torbidità",
     "monumentalEtchingCorruptingSurge": "Incisione monumentale: Ondata corruttrice",
     "partyTogetherPastryTower": "Festa in compagnia - Torre di dolci",
-    "sanitySupply": "Fornitura di Lucidità"
+    "sanitySupply": "Fornitura di Lucidità",
+    "qingboRising": "Ascesa di Qingbo",
+    "risingTideOfWuling": "Accesso: Marea montante di Wuling"
   },
   "mouths": {
     "january": "Gennaio",
@@ -860,7 +870,7 @@
     "discordJoin": "Unisciti a Discord",
     "docsTitle": "Documentazione Goyfield DEV",
     "docsAuthor": "di @beetwooo_",
-    "goToTimeline": "Vai alla cronologia"
+    "goToTimeline": "Vai agli Eventi"
   },
   "characters": {
     "catcher": "Catcher",

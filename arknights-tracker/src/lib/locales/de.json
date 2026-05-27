@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Home",
     "records": "Rekrutierung",
-    "events": "Zeitlinie",
+    "events": "Events",
     "settings": "Einstellungen",
     "operators": "Operator",
     "theme_dark": "Dunkel",
@@ -326,6 +326,14 @@
     "enemies": "Feinde"
   },
   "events": {
+    "type": {
+      "signIn": "Anmelde-Events",
+      "inGame": "In-Game-Events",
+      "inGamePermanent": "Permanente Events",
+      "web": "Web-Events",
+      "mailEvent": "Mail-Events",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Reise zu den Sternen",
     "final_prep_orders": "Letzte Vorbereitungsbefehle",
     "awakaningSignIn": "Erwachen Login-Event",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "Trübungsverzeichnis",
     "monumentalEtchingCorruptingSurge": "Monumentales Ätzen: Unheilsflut",
     "partyTogetherPastryTower": "[Gemeinsam feiern] – [Gebäckturm]",
-    "sanitySupply": "Verstandsversorgung"
+    "sanitySupply": "Verstandsversorgung",
+    "risingTideOfWuling": "Anmeldung: Flut von Wuling"
   },
   "mouths": {
     "january": "Januar",
@@ -861,7 +870,7 @@
     "discordJoin": "Discord beitreten",
     "docsTitle": "Goyfield DEV Dokumentation",
     "docsAuthor": "von @beetwooo_",
-    "goToTimeline": "Zur Event-Timeline"
+    "goToTimeline": "Zu den Events"
   },
   "characters": {
     "catcher": "Catcher",

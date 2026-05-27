@@ -28,7 +28,7 @@
   "sidebar": {
     "home": "Home",
     "records": "Headhunting Records",
-    "events": "Timeline",
+    "events": "Events",
     "settings": "Settings",
     "operators": "Operators",
     "theme_dark": "Dark",
@@ -335,7 +335,7 @@
   "pages": {
     "home": "Home",
     "records": "Records",
-    "events": "Timeline",
+    "events": "Events",
     "settings": "Settings",
     "operators": "Operators",
     "weapons": "Weapons",
@@ -346,6 +346,14 @@
     "enemies": "Enemies"
   },
   "events": {
+    "type": {
+      "signIn": "Sign-in Events",
+      "inGame": "In-game Events",
+      "inGamePermanent": "Permanent Events",
+      "web": "Web Events",
+      "mailEvent": "Mail Events",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Voyage to the Stars",
     "final_prep_orders": "Final Prep Orders",
     "awakaningSignIn": "Awakening Sign-In Event",
@@ -884,7 +892,7 @@
     "discordJoin": "Join Discord Server",
     "docsTitle": "Goyfield DEV Documentation",
     "docsAuthor": "by @beetwooo_",
-    "goToTimeline": "Go to event timeline"
+    "goToTimeline": "Go to events"
   },
   "characters": {
     "catcher": "Catcher",

@@ -38,7 +38,7 @@ let prisma = null;
 if (process.env.DATABASE_URL) {
     try {
         const tempPrisma = new PrismaClient();
-        
+
         if (tempPrisma.user && tempPrisma.userBannerStat && tempPrisma.importError && tempPrisma.globalBannerStats) {
             prisma = tempPrisma;
             console.log("Database connection initialized and all models found.");
@@ -89,7 +89,7 @@ const POOL_TYPES = [
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
-async function fetchGameData(token, lang, serverId, onProgress, lastPullTimes) { 
+async function fetchGameData(token, lang, serverId, onProgress, lastPullTimes) {
     console.log(`\n--- Starting PARALLEL Scan on SERVER ID: ${serverId} ---`);
     let isTokenInvalid = false;
 
@@ -158,7 +158,7 @@ async function fetchGameData(token, lang, serverId, onProgress, lastPullTimes) {
                     else if (item.time) itemTime = new Date(item.time).getTime();
                     if (safeCutoffTime > 0 && itemTime > 0 && itemTime <= safeCutoffTime) {
                         reachedKnownData = true;
-                        return false; 
+                        return false;
                     }
 
                     const uniqueKey = (isWeaponScan ? 'w_' : 'c_') + item.seqId;
@@ -171,7 +171,7 @@ async function fetchGameData(token, lang, serverId, onProgress, lastPullTimes) {
                 }
                 if (reachedKnownData) {
                     console.log(`[Optimization] Reached known history in ${poolLabel}. Stopping pagination.`);
-                    hasMore = false; 
+                    hasMore = false;
                 } else {
                     hasMore = result.data?.hasMore;
                 }
@@ -356,7 +356,7 @@ app.post('/api/import', importLimiter, async (req, res) => {
 
 app.post('/api/sync-history', async (req, res) => {
     const { uid, serverId, pulls } = req.body;
-    
+
     if (!uid || !pulls || !Array.isArray(pulls)) {
         return res.status(400).json({ type: 'error', message: "Invalid data format" });
     }
@@ -427,7 +427,7 @@ async function updateAggregatedStats(uid, allPulls, serverId, overwrite = false)
 
         if (overwrite) {
             enrichedPulls.forEach(p => trulyNewPullIds.add(String(p.seqId || p.time)));
-            
+
             const newLost = stats.total5050 - stats.won5050;
             const oldTotalPulls = oldUserStat?.totalPulls || 0;
             const oldTotal6 = oldUserStat?.total6 || 0;
@@ -460,16 +460,16 @@ async function updateAggregatedStats(uid, allPulls, serverId, overwrite = false)
 
             await prisma.userBannerStat.upsert({
                 where: { uid_bannerId: { uid, bannerId } },
-                create: { 
-                    uid, bannerId, 
-                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6, 
+                create: {
+                    uid, bannerId,
+                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6,
                     total5: stats.total5, sumPity5: stats.sumPity5, won5050: stats.won5050, total5050: stats.total5050,
-                    lastProcessedPullTime: BigInt(maxTimeInBatch) 
+                    lastProcessedPullTime: BigInt(maxTimeInBatch)
                 },
-                update: { 
-                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6, 
+                update: {
+                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6,
                     total5: stats.total5, sumPity5: stats.sumPity5, won5050: stats.won5050, total5050: stats.total5050,
-                    lastUpdate: new Date(), lastProcessedPullTime: BigInt(maxTimeInBatch) 
+                    lastUpdate: new Date(), lastProcessedPullTime: BigInt(maxTimeInBatch)
                 }
             });
         } else {
@@ -509,7 +509,7 @@ async function updateAggregatedStats(uid, allPulls, serverId, overwrite = false)
 
     console.log(`--- Updating Generic Categories for Rankings (${uid}) ---`);
 
-    const pullsByGeneric = { 'special': [], 'standard': [], 'weap-standard': [], 'weap-special': [], 'new-player': [] };
+    const pullsByGeneric = { 'special': [], 'standard': [], 'weap-standard': [], 'weap-special': [], 'new-player': [], 'joint': [] };
     allPulls.forEach(p => {
         const genId = normalizeBannerId(p.poolId || p.bannerId);
         if (pullsByGeneric[genId]) {
@@ -538,16 +538,16 @@ async function updateAggregatedStats(uid, allPulls, serverId, overwrite = false)
             const maxTimeGen = enrichedPulls[enrichedPulls.length - 1].time;
             await prisma.userBannerStat.upsert({
                 where: { uid_bannerId: { uid, bannerId: genId } },
-                create: { 
-                    uid, bannerId: genId, 
-                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6, 
+                create: {
+                    uid, bannerId: genId,
+                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6,
                     total5: stats.total5, sumPity5: stats.sumPity5, won5050: stats.won5050, total5050: stats.total5050,
-                    lastProcessedPullTime: BigInt(maxTimeGen) 
+                    lastProcessedPullTime: BigInt(maxTimeGen)
                 },
-                update: { 
-                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6, 
+                update: {
+                    totalPulls: stats.totalPulls, total6: stats.total6, sumPity6: stats.sumPity6,
                     total5: stats.total5, sumPity5: stats.sumPity5, won5050: stats.won5050, total5050: stats.total5050,
-                    lastUpdate: new Date(), lastProcessedPullTime: BigInt(maxTimeGen) 
+                    lastUpdate: new Date(), lastProcessedPullTime: BigInt(maxTimeGen)
                 }
             });
             console.log(`   -> Ranked Category [${genId}]: Overwritten +${stats.totalPulls} pulls`);
@@ -742,7 +742,7 @@ function calculateMath(pulls, categoryId, serverId = '3', startPity6 = 0, startP
     let count6 = 0, count5 = 0;
     let sumPity6 = 0, sumPity5 = 0;
     let won5050 = 0, total5050 = 0;
-    let currentPity5 = startPity5; 
+    let currentPity5 = startPity5;
 
     pulls.forEach((p) => {
         const isFreePull = p.isFree === true || String(p.isFree) === "true";
@@ -751,7 +751,7 @@ function calculateMath(pulls, categoryId, serverId = '3', startPity6 = 0, startP
             currentPity5++;
             if (p.rarity === 6) {
                 count6++;
-                sumPity6 += Number(p.pity || 1); 
+                sumPity6 += Number(p.pity || 1);
 
                 const pullStatus = p.status || p.gachaStatus;
                 if (pullStatus === "won") {
@@ -760,11 +760,11 @@ function calculateMath(pulls, categoryId, serverId = '3', startPity6 = 0, startP
                 } else if (pullStatus === "lost") {
                     total5050++;
                 }
-                currentPity5 = 0; 
-                
+                currentPity5 = 0;
+
             } else if (p.rarity === 5) {
                 count5++;
-                sumPity5 += currentPity5; 
+                sumPity5 += currentPity5;
                 currentPity5 = 0;
             }
         }
@@ -783,7 +783,7 @@ function calculateMath(pulls, categoryId, serverId = '3', startPity6 = 0, startP
             total5050,
             winRate
         },
-        enrichedPulls: pulls 
+        enrichedPulls: pulls
     };
 }
 

@@ -298,23 +298,12 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
-                <nav class="flex flex-col gap-3 px-3">
-                    {#each [
-                        { path: "/", label: "sidebar.home", icon: "mainPage" },
-                        { path: "/records", label: "sidebar.records", icon: "records" },
-                        { path: "/events", label: "sidebar.events", icon: "timeline" },
-                        { path: "/history", label: "pages.bannerHistory", icon: "history" },
-                        { path: "/settings", label: "sidebar.settings", icon: "settings" },
-                        { type: "divider" },
-                        { path: "/changelog", label: "pages.changelog", icon: "changelog" },
-                        { path: "/operators", label: "sidebar.operators", icon: "operators" },
-                        { path: "/weapons", label: "pages.weapons", icon: "weapons" },
-                        { path: "/essences", label: "pages.essences", icon: "essence" },
-                        { path: "/enemies", label: "pages.enemies", icon: "hongshan" },
-                        { path: "/equipment", label: "pages.equipment", icon: "edc" }
-                    ] as item}
+                <nav class="flex flex-col gap-2 px-3">
+                    {#each [{ path: "/", label: "sidebar.home", icon: "mainPage" }, { path: "/records", label: "sidebar.records", icon: "records" }, { path: "/events", label: "sidebar.events", icon: "timeline" }, { path: "/history", label: "pages.bannerHistory", icon: "history" }, { type: "divider" }, { path: "/changelog", label: "pages.changelog", icon: "changelog" }, { path: "/operators", label: "sidebar.operators", icon: "operators" }, { path: "/weapons", label: "pages.weapons", icon: "weapons" }, { path: "/essences", label: "pages.essences", icon: "essence" }, { path: "/enemies", label: "pages.enemies", icon: "hongshan" }, { path: "/equipment", label: "pages.equipment", icon: "edc" }, { type: "divider" }, { path: "/settings", label: "sidebar.settings", icon: "settings" }] as item}
                         {#if item.type === "divider"}
-                            <div class="h-px bg-gray-200 dark:bg-[#444444] my-1 mx-2"></div>
+                            <div
+                                class="h-px bg-gray-200 dark:bg-[#444444] my-1 mx-2"
+                            ></div>
                         {:else}
                             <a
                                 href={item.path}
@@ -322,7 +311,9 @@
                                 flex items-center gap-3 py-3 rounded-lg group relative min-h-[48px]
                                 {ready ? 'transition-all' : ''} 
                                 
-                                {visuallyCollapsed ? 'px-0 justify-center' : 'px-3'}
+                                {visuallyCollapsed
+                                    ? 'px-0 justify-center'
+                                    : 'px-3'}
 
                                 {isCurrent(item.path) &&
                                 (item.path === '/'
@@ -343,7 +334,10 @@
                                         ? 'text-gray-900 dark:text-white'
                                         : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
                                 >
-                                    <Icons name={item.icon} class="w-full h-full" />
+                                    <Icons
+                                        name={item.icon}
+                                        class="w-full h-full"
+                                    />
                                 </div>
 
                                 {#if !visuallyCollapsed}
@@ -478,7 +472,9 @@
 
             {#if $page.url.pathname !== "/"}
                 <footer class="mt-20 w-full max-w-[1600px] z-10 pb-4">
-                    <div class="flex gap-3 mb-8 max-w-[550px] md:max-w-[1600px]">
+                    <div
+                        class="flex gap-3 mb-8 max-w-[550px] md:max-w-[1600px]"
+                    >
                         <div
                             class="w-[2px] shrink-0 bg-gray-400 dark:bg-gray-300 rounded-full"
                         ></div>

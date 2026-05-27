@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Início",
     "records": "Histórico de Buscas",
-    "events": "Linha do Tempo",
+    "events": "Eventos",
     "settings": "Configurações",
     "operators": "Operadores",
     "theme_dark": "Escuro",
@@ -326,6 +326,14 @@
     "enemies": "Inimigos"
   },
   "events": {
+    "type": {
+      "signIn": "Eventos de login",
+      "inGame": "Eventos de jogo",
+      "inGamePermanent": "Eventos permanentes",
+      "web": "Eventos web",
+      "mailEvent": "Eventos de correio",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Viagem às Estrelas",
     "final_prep_orders": "Ordens de Preparação Final",
     "awakaningSignIn": "Evento de Login Despertar",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "Manifesto de Turbidez",
     "monumentalEtchingCorruptingSurge": "Entalhe Monumental: Surto de Corrupção",
     "partyTogetherPastryTower": "[Encontro Festivo] - [Torre de Bolo]",
-    "sanitySupply": "Suprimento de Sanidade"
+    "sanitySupply": "Suprimento de Sanidade",
+    "risingTideOfWuling": "Login: Maré Alta de Wuling"
   },
   "mouths": {
     "january": "Janeiro",
@@ -861,7 +870,7 @@
     "discordJoin": "Entrar no Discord",
     "docsTitle": "Documentação Goyfield DEV",
     "docsAuthor": "por @beetwooo_",
-    "goToTimeline": "Ir para a linha do tempo"
+    "goToTimeline": "Ir para Eventos"
   },
   "characters": {
     "catcher": "Catcher",

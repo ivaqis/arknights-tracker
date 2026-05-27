@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "ホーム",
     "records": "人材発掘",
-    "events": "タイムライン",
+    "events": "イベント",
     "settings": "設定",
     "operators": "オペレーター",
     "theme_dark": "ダーク",
@@ -326,6 +326,14 @@
     "enemies": "敵"
   },
   "events": {
+    "type": {
+      "signIn": "ログインイベント",
+      "inGame": "ゲーム内イベント",
+      "inGamePermanent": "常設イベント",
+      "web": "ウェブイベント",
+      "mailEvent": "メールイベント",
+      "protoPass": "プロトパス"
+    },
     "voyage_to_the_stars": "星々への航海",
     "final_prep_orders": "最終準備指令",
     "awakaningSignIn": "覚醒ログインボーナス",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "濁流具現",
     "monumentalEtchingCorruptingSurge": "記憶の痕・毒流",
     "partyTogetherPastryTower": "「祝典を共に」 - 「祝宴の時」",
-    "sanitySupply": "理性補給"
+    "sanitySupply": "理性補給",
+    "risingTideOfWuling": "武陵の満ち潮ログイン"
   },
   "mouths": {
     "january": "1月",
@@ -861,7 +870,7 @@
     "discordJoin": "Discordに参加",
     "docsTitle": "Goyfield DEV ドキュメント",
     "docsAuthor": "by @beetwooo_",
-    "goToTimeline": "イベントタイムラインへ"
+    "goToTimeline": "イベントへ"
   },
   "characters": {
     "catcher": "キャッチャー",

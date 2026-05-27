@@ -10,10 +10,12 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icons.svelte";
 
+    import { changelogData } from "$lib/data/versions.js";
+
     export let weapon = {};
     export let variant = "default"; // "default" | "small"
     export let className = "";
-    export let isNew = false;
+    export let isNew = undefined;
     export let hideName = false;
     export let hidePot = true;
     export let hideDarkness = false;
@@ -22,11 +24,38 @@
     export let isEnemy = false;
     export let hideRarity = false;
 
-    $: localeCategory = isEnemy ? "enemies" : (isEquipment ? "equipment" : "weaponsList");
+    $: computedIsNew =
+        isNew !== undefined
+            ? isNew
+            : (() => {
+                  if (!weapon || !weapon.id) return false;
+                  const latest = [...changelogData].sort((a, b) =>
+                      b.version.localeCompare(a.version, undefined, {
+                          numeric: true,
+                      }),
+                  )[0];
+                  if (isEquipment) {
+                      return latest?.equipment?.includes(weapon.id) || false;
+                  } else {
+                      return latest?.weapons?.includes(weapon.id) || false;
+                  }
+              })();
+
+    $: localeCategory = isEnemy
+        ? "enemies"
+        : isEquipment
+          ? "equipment"
+          : "weaponsList";
     $: itemUrl = isEnemy
         ? `/enemies/${weapon.id}`
-        : (isEquipment ? `/equipment/${weapon.id}` : `/weapons/${weapon.id}`);
-    $: imageVariant = isEnemy ? "enemy-icon" : (isEquipment ? "equipment" : "weapon-icon");
+        : isEquipment
+          ? `/equipment/${weapon.id}`
+          : `/weapons/${weapon.id}`;
+    $: imageVariant = isEnemy
+        ? "enemy-icon"
+        : isEquipment
+          ? "equipment"
+          : "weapon-icon";
 
     $: safeWeaponType = weapon.type || weapon.weapon;
     $: equipType =
@@ -110,7 +139,8 @@
         }
         return true;
     })();
-    $: shouldDarken = !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
+    $: shouldDarken =
+        !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
 
     const potPaths = [
         "M35.3769 14.521L43.8763 14.4792L10.06 39.0583L2.11523 38.4865L35.3769 14.521Z",
@@ -173,11 +203,10 @@
                 "
             ></div>
 
-           <div
+            <div
                 class="absolute inset-0 flex items-center justify-center z-0 {hideRarity
                     ? ''
-                    : 'bottom-[6px]'
-                }"
+                    : 'bottom-[6px]'}"
             >
                 <Images
                     id={weapon.id}
@@ -304,9 +333,9 @@
                 </div>
             {/if}
 
-            {#if isNew && variant !== "small"}
+            {#if computedIsNew && variant !== "small"}
                 <div
-                    class="absolute right-0 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none"
+                    class="absolute right-0 mr-[-3px] top-[42px] h-[16px] flex items-stretch z-30 pointer-events-none"
                 >
                     <div
                         class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"

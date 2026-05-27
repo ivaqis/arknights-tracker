@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Trang chủ",
     "records": "Hồ sơ Chiêu mộ",
-    "events": "Dòng thời gian",
+    "events": "Sự kiện",
     "settings": "Cài đặt",
     "operators": "Đặc vụ",
     "theme_dark": "Tối",
@@ -326,6 +326,14 @@
     "enemies": "Kẻ thù"
   },
   "events": {
+    "type": {
+      "signIn": "Sự kiện điểm danh",
+      "inGame": "Sự kiện trong game",
+      "inGamePermanent": "Sự kiện vĩnh viễn",
+      "web": "Sự kiện web",
+      "mailEvent": "Sự kiện thư",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Hành Trình Tới Các Vì Sao",
     "final_prep_orders": "Mệnh Lệnh Chuẩn Bị Cuối Cùng",
     "awakaningSignIn": "Điểm Danh Thức Tỉnh",
@@ -367,7 +375,9 @@
     "umbralMonumentTurbidityManifest": "Sương Đục Hiện Thể",
     "monumentalEtchingCorruptingSurge": "Văn Khắc Kỷ Niệm: Triều Dâng Ma Hóa",
     "partyTogetherPastryTower": "[Cùng Mở Tiệc] - [Tháp Bánh Ngọt]",
-    "sanitySupply": "Tiếp Tế Tỉnh Táo"
+    "sanitySupply": "Tiếp Tế Tỉnh Táo",
+    "qingboRising": "Qingbo Trỗi Dậy",
+    "risingTideOfWuling": "Điểm danh Thủy Triều Dâng Wuling"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -860,7 +870,7 @@
     "discordJoin": "Tham gia Discord",
     "docsTitle": "Tài liệu Goyfield DEV",
     "docsAuthor": "bởi @beetwooo_",
-    "goToTimeline": "Đến dòng thời gian sự kiện"
+    "goToTimeline": "Đến sự kiện"
   },
   "characters": {
     "catcher": "Catcher",

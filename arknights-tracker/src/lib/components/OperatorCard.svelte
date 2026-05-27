@@ -10,11 +10,23 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Images from "$lib/components/Images.svelte";
 
+    import { changelogData } from "$lib/data/versions.js";
+
     export let operator = {};
     export let variant = "default"; // "small" | "default"
     export let className = "";
-    export let isNew = false;
+    export let isNew = undefined;
     export let hideName = false;
+
+    $: computedIsNew = isNew !== undefined
+        ? isNew
+        : (() => {
+            if (!operator || !operator.id) return false;
+            const latest = [...changelogData].sort((a, b) =>
+                b.version.localeCompare(a.version, undefined, { numeric: true })
+            )[0];
+            return latest?.characters?.includes(operator.id) || false;
+        })();
 
     $: gachaPulls = (() => {
         if (!$pullData) return 0;
@@ -233,7 +245,7 @@
                      <div class="h-[2px] w-full rounded-full opacity-90 shrink-0 shadow-sm" style:background-color={rarityColor}></div>
                  </div>
             {/if}
-            {#if isNew && variant !== 'small'}
+            {#if computedIsNew && variant !== 'small'}
                 <div class="absolute right-0 mt-1 mr-[-3px] top-[38px] h-[16px] flex items-stretch z-30 pointer-events-none drop-shadow-sm select-none">
                     <div class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"></div>
                     

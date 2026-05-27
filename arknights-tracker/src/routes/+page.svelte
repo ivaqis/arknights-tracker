@@ -26,7 +26,10 @@
 
   function parseWithServerOffset(dateStr) {
     if (!dateStr) return new Date(9999, 11, 31);
-    if (dateStr.includes("Z") || (dateStr.includes("T") && dateStr.includes("+"))) {
+    if (
+      dateStr.includes("Z") ||
+      (dateStr.includes("T") && dateStr.includes("+"))
+    ) {
       return new Date(dateStr);
     }
     const offset = currentServerId === "2" ? 8 : -5;
@@ -68,10 +71,13 @@
     .filter((b) => {
       if (b.type === "inGamePermanent") return false;
       const isAsia = currentServerId === "2";
-      const startStr = isAsia && b.startTimeAsia ? b.startTimeAsia : b.startTime;
+      const startStr =
+        isAsia && b.startTimeAsia ? b.startTimeAsia : b.startTime;
       const endStr = isAsia && b.endTimeAsia ? b.endTimeAsia : b.endTime;
       const start = parseWithServerOffset(startStr);
-      const end = endStr ? parseWithServerOffset(endStr) : new Date(9999, 11, 31);
+      const end = endStr
+        ? parseWithServerOffset(endStr)
+        : new Date(9999, 11, 31);
       return now >= start && now <= end && b.showOnMain === true;
     })
     .sort((a, b) => {
@@ -82,12 +88,18 @@
   $: activeEvents = rawEvents
     .filter((e) => {
       const start = parseWithServerOffset(e.startTime);
-      const end = e.endTime ? parseWithServerOffset(e.endTime) : new Date(9999, 11, 31);
+      const end = e.endTime
+        ? parseWithServerOffset(e.endTime)
+        : new Date(9999, 11, 31);
       return now >= start && now <= end;
     })
     .sort((a, b) => {
-      const endA = a.endTime ? parseWithServerOffset(a.endTime).getTime() : Infinity;
-      const endB = b.endTime ? parseWithServerOffset(b.endTime).getTime() : Infinity;
+      const endA = a.endTime
+        ? parseWithServerOffset(a.endTime).getTime()
+        : Infinity;
+      const endB = b.endTime
+        ? parseWithServerOffset(b.endTime).getTime()
+        : Infinity;
       return endA - endB;
     });
 
@@ -141,7 +153,8 @@
     const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
     if (showServerTime) {
-      const timeZone = currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
+      const timeZone =
+        currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
       return end.toLocaleString($currentLocale, { ...dateOptions, timeZone });
     }
     return end.toLocaleString($currentLocale, dateOptions);
@@ -196,26 +209,38 @@
 
   function getEventBadge(event) {
     const origType = (event.originalType || "").toLowerCase();
-    const glassStyle = "bg-black/40 backdrop-blur-md border border-white/10 shadow-sm";
+    const glassStyle =
+      "bg-black/40 backdrop-blur-md border border-white/10 shadow-sm";
 
-    if (event.type === "mailEvent") return { icon: "mail", label: "Mail Event", bg: glassStyle };
-    if (event.type === "protoPass") return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
-    if (event.type === "web") return { icon: "link", label: "Web", bg: glassStyle };
-    if (event.type === "signIn") return { icon: "signIn", label: "Sign-In", bg: glassStyle };
-    if (event.type === "inGamePermanent") return { icon: "permanent", label: "Permanent Event", bg: glassStyle };
+    if (event.type === "mailEvent")
+      return { icon: "mail", label: "Mail Event", bg: glassStyle };
+    if (event.type === "protoPass")
+      return { icon: "protoPass", label: "Proto Pass", bg: glassStyle };
+    if (event.type === "web")
+      return { icon: "link", label: "Web", bg: glassStyle };
+    if (event.type === "signIn")
+      return { icon: "signIn", label: "Sign-In", bg: glassStyle };
+    if (event.type === "inGamePermanent")
+      return { icon: "permanent", label: "Permanent Event", bg: glassStyle };
 
-    if (event.type === "banner" || event.type === "standard" || event.type === "special" || event.type === "new-player") {
-      if (origType === "weapon") return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
+    if (
+      event.type === "banner" ||
+      event.type === "standard" ||
+      event.type === "special" ||
+      event.type === "new-player"
+    ) {
+      if (origType === "weapon")
+        return { icon: "atkEvent", label: "Arsenal Issue", bg: glassStyle };
       return { icon: "headhunting", label: "Headhunting", bg: glassStyle };
     }
 
     return { icon: "event", label: "Limited Event", bg: glassStyle };
   }
   $: eventsWithBadges = activeEvents
-    .map(e => ({ 
-      ...e, 
+    .map((e) => ({
+      ...e,
       badge: getEventBadge(e),
-      name: $t(e.title) !== e.title ? $t(e.title) : e.title 
+      name: $t(e.title) !== e.title ? $t(e.title) : e.title,
     }))
     .sort((a, b) => {
       const isAPerm = a.type === "inGamePermanent";
@@ -232,19 +257,24 @@
     });
 </script>
 
-<div class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]">
-
-  <div class="mb-6 transition-opacity hover:opacity-80 flex justify-center w-full">
+<div
+  class="min-h-screen w-full relative flex flex-col items-center py-10 px-4 sm:px-8 font-sans text-[#21272C] dark:text-[#FDFDFD]"
+>
+  <div
+    class="mb-6 transition-opacity hover:opacity-80 flex justify-center w-full"
+  >
     <Icon name="siteLogo2" className="h-16 w-auto" />
   </div>
 
-  <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-4 items-start">
-    
+  <div
+    class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-4 items-start"
+  >
     <div class="flex flex-col gap-6 lg:col-span-2 w-full">
-      
       <div class="flex flex-col gap-3">
         <div class="flex items-center justify-between px-1">
-          <h2 class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2">
+          <h2
+            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
+          >
             <span class="w-2 h-2 bg-[#FACC15] rounded-full"></span>
             {$t("home.current_banners")}
           </h2>
@@ -253,7 +283,10 @@
               <button
                 aria-label="Switch to banner {i + 1}"
                 on:click={() => setBanner(i)}
-                class="w-6 h-1 rounded-full transition-all duration-300 {currentBannerIndex === i ? 'bg-[#21272C] dark:bg-[#FDFDFD]' : 'bg-gray-300 dark:bg-[#444]'}"
+                class="w-6 h-1 rounded-full transition-all duration-300 {currentBannerIndex ===
+                i
+                  ? 'bg-[#21272C] dark:bg-[#FDFDFD]'
+                  : 'bg-gray-300 dark:bg-[#444]'}"
               ></button>
             {/each}
           </div>
@@ -264,20 +297,42 @@
           tabindex="0"
           class="relative w-full aspect-[21/9] bg-gray-200 dark:bg-[#1E1E1E] rounded-xl overflow-hidden shadow-sm group cursor-pointer border border-white/50 dark:border-[#444444] outline-none focus:ring-4 focus:ring-[#FACC15] select-none"
           on:click={() => (selectedBanner = activeBanners[currentBannerIndex])}
-          on:keydown={(e) => (e.key === "Enter" || e.key === " ") && (selectedBanner = activeBanners[currentBannerIndex])}
+          on:keydown={(e) =>
+            (e.key === "Enter" || e.key === " ") &&
+            (selectedBanner = activeBanners[currentBannerIndex])}
           on:mouseenter={stopBannerRotation}
           on:mouseleave={startBannerRotation}
         >
           {#if activeBanners.length > 0}
             {#key currentBannerIndex}
-              <div class="absolute inset-0" in:fade={{ duration: 200 }} out:fade={{ duration: 200 }}>
-                <Images id={activeBanners[currentBannerIndex].icon} variant="banner-icon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+              <div
+                class="absolute inset-0"
+                in:fade={{ duration: 200 }}
+                out:fade={{ duration: 200 }}
+              >
+                <Images
+                  id={activeBanners[currentBannerIndex].icon}
+                  interactive={true}
+                  variant="banner-icon"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 pointer-events-none"
+                ></div>
                 {#if currentBannerTimeLeft}
-                  <div class="absolute bottom-3 left-3 z-20 pointer-events-none">
-                    <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-md">
-                      <span class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"></span>
-                      <span class="text-[11px] font-bold text-white font-nums leading-none">{currentBannerTimeLeft}</span>
+                  <div
+                    class="absolute bottom-3 left-3 z-20 pointer-events-none"
+                  >
+                    <div
+                      class="inline-flex items-center gap-2 px-2.5 py-1 bg-black/40 backdrop-blur-md border border-white/20 rounded-full shadow-md"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full bg-[#FACC15] animate-pulse"
+                      ></span>
+                      <span
+                        class="text-[11px] font-bold text-white font-nums leading-none"
+                        >{currentBannerTimeLeft}</span
+                      >
                     </div>
                   </div>
                 {/if}
@@ -287,7 +342,9 @@
               type="button"
               class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
               on:click|stopPropagation={() => {
-                currentBannerIndex = (currentBannerIndex - 1 + activeBanners.length) % activeBanners.length;
+                currentBannerIndex =
+                  (currentBannerIndex - 1 + activeBanners.length) %
+                  activeBanners.length;
               }}
             >
               <Icon name="chevronLeft" style="width: 24px; height: 24px;" />
@@ -296,28 +353,34 @@
               type="button"
               class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/30 hover:bg-[#FACC15] text-white hover:text-[#21272C] backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 hover:scale-110"
               on:click|stopPropagation={() => {
-                currentBannerIndex = (currentBannerIndex + 1) % activeBanners.length;
+                currentBannerIndex =
+                  (currentBannerIndex + 1) % activeBanners.length;
               }}
             >
               <Icon name="chevronRight" style="width: 24px; height: 24px;" />
             </button>
           {:else}
-            <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs">
+            <div
+              class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold text-xs"
+            >
               {$t("home.noActiveBanners")}
             </div>
           {/if}
         </div>
       </div>
 
-      <div class="bg-white dark:bg-[#383838] rounded-xl gap-1 p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col min-h-[300px]">
-        
+      <div
+        class="bg-white dark:bg-[#383838] rounded-xl gap-1 p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col min-h-[300px]"
+      >
         <div class="flex items-center justify-between mb-2">
-          <h3 class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2">
+          <h3
+            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2"
+          >
             <span class="w-2 h-2 bg-green-400 rounded-full"></span>
             {$t("home.activeEvents") || "Текущие события"}
           </h3>
-          <button 
-            on:click={() => goto('/events')} 
+          <button
+            on:click={() => goto("/events")}
             class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2"
           >
             {$t("home.goToTimeline") || "Перейти в ленту событий"}
@@ -325,22 +388,28 @@
           </button>
         </div>
 
-        <div class="flex flex-col gap-1.5 overflow-y-auto max-h-[400px] pr-1 py-1 custom-scrollbar">
+        <div
+          class="flex flex-col gap-1.5 overflow-y-auto max-h-[400px] pr-1 py-1 custom-scrollbar"
+        >
           {#if activeEvents.length === 0}
-            <div class="flex flex-col items-center justify-center py-12 text-gray-400 text-sm italic">
+            <div
+              class="flex flex-col items-center justify-center py-12 text-gray-400 text-sm italic"
+            >
               {$t("home.noActiveEvents")}
             </div>
           {:else}
-            {#each eventsWithBadges as event, i (event.id + '_' + i)}
+            {#each eventsWithBadges as event, i (event.id + "_" + i)}
               <div
                 role="button"
                 tabindex="0"
                 class="hover:dark:border-white/20 hover:border-1 relative flex items-center p-0 mx-0.5 rounded-lg border-2 border-gray-100 dark:border-[#444] cursor-pointer group outline-none focus:ring-2 focus:ring-[#FACC15] transition-all select-none overflow-hidden shadow-sm hover:shadow-md h-15 shrink-0"
                 style="background-color: {event.color || '#383838'};"
                 on:click={() => (selectedBanner = event)}
-                on:keydown={(e) => (e.key === "Enter" || e.key === " ") && (selectedBanner = event)}
+                on:keydown={(e) =>
+                  (e.key === "Enter" || e.key === " ") &&
+                  (selectedBanner = event)}
               >
-                <div class="absolute top-0  right-0 bottom-0 w-[200px] z-0 ">
+                <div class="absolute top-0 right-0 bottom-0 w-[200px] z-0">
                   <Images
                     id={event.icon || event.id}
                     variant="event-icon"
@@ -355,20 +424,33 @@
 
                 <div
                   class="absolute inset-0 z-10 rounded-lg"
-                  style="background: linear-gradient(90deg, {event.color || '#383838'} 35%, {event.color || '#383838'}D9 55%, transparent 100%);"
+                  style="background: linear-gradient(90deg, {event.color ||
+                    '#383838'} 35%, {event.color ||
+                    '#383838'}D9 55%, transparent 100%);"
                 ></div>
 
-                <div class="absolute inset-0 z-10 bg-gradient-to-r from-black/60 via-black/20 to-transparent pointer-events-none"></div>
+                <div
+                  class="absolute inset-0 z-10 bg-gradient-to-r from-black/60 via-black/20 to-transparent pointer-events-none"
+                ></div>
 
-                <div class="relative z-20 flex-1  min-w-0 px-4 py-2 pointer-events-none flex flex-col justify-center gap-1">
+                <div
+                  class="relative z-20 flex-1 min-w-0 px-4 py-2 pointer-events-none flex flex-col justify-center gap-1"
+                >
                   <div class="flex">
                     {#if event.badge}
-                      <div class="flex items-center  gap-1.5 rounded px-1.5 py-0.5 text-white w-fit">
-                        <Icon name={event.badge.icon} class="w-3.5 h-3.5 opacity-90" />
+                      <div
+                        class="flex items-center gap-1.5 rounded px-1.5 py-0.5 text-white w-fit"
+                      >
+                        <Icon
+                          name={event.badge.icon}
+                          class="w-3.5 h-3.5 opacity-90"
+                        />
                       </div>
                     {/if}
-                    
-                    <div class="font-bold text-[13px]  text-white truncate w-full drop-shadow-md">
+
+                    <div
+                      class="font-bold text-[13px] text-white truncate w-full drop-shadow-md"
+                    >
                       {$t(event.title) || event.title}
                     </div>
                   </div>
@@ -376,10 +458,22 @@
                     {@const diff = parseWithServerOffset(event.endTime) - now}
                     {@const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24))}
                     {@const isEndingSoon = daysLeft <= 3 && daysLeft >= 0}
-                    
-                    <div class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {isEndingSoon ? 'border-orange-500/50' : 'border-white/20'} rounded-full shadow-md w-fit">
-                      <span class="w-1.5 h-1.5 rounded-full {isEndingSoon ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]' : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"></span>
-                      <span class="text-[10px] font-bold {isEndingSoon ? 'text-orange-300' : 'text-white'} font-nums leading-none">
+
+                    <div
+                      class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-black/40 backdrop-blur-md border {isEndingSoon
+                        ? 'border-orange-500/50'
+                        : 'border-white/20'} rounded-full shadow-md w-fit"
+                    >
+                      <span
+                        class="w-1.5 h-1.5 rounded-full {isEndingSoon
+                          ? 'bg-orange-500 shadow-[0_0_4px_#fb923c]'
+                          : 'bg-green-400 shadow-[0_0_4px_#4ade80]'} animate-pulse"
+                      ></span>
+                      <span
+                        class="text-[10px] font-bold {isEndingSoon
+                          ? 'text-orange-300'
+                          : 'text-white'} font-nums leading-none"
+                      >
                         {formatTimeLeft(event.endTime)}
                       </span>
                     </div>
@@ -393,74 +487,137 @@
     </div>
 
     <div class="flex flex-col gap-6 lg:col-span-1 w-full">
-      
-      <div class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] overflow-hidden flex flex-col h-[400px] w-full">
-        <div class="flex items-center gap-2 bg-white border-b border-gray-200 dark:border-[#444444] dark:bg-[#424242] py-3 px-4 text-xs font-bold text-gray-700 dark:text-[#FDFDFD]">
+      <div
+        class="bg-white/80 dark:bg-[#383838]/80 backdrop-blur-md rounded-xl shadow-sm border border-gray-100 dark:border-[#444444] overflow-hidden flex flex-col h-[400px] w-full"
+      >
+        <div
+          class="flex items-center gap-2 bg-white border-b border-gray-200 dark:border-[#444444] dark:bg-[#424242] py-3 px-4 text-xs font-bold text-gray-700 dark:text-[#FDFDFD]"
+        >
           <div class="w-1/3">{$t("home.promocodes")}</div>
-          <div class="flex-1 opacity-0 md:opacity-100">{$t("home.rewards")}</div>
-          <div class="w-auto text-right whitespace-nowrap opacity-0 md:opacity-100">{$t("home.duration")}</div>
+          <div class="flex-1 opacity-0 md:opacity-100">
+            {$t("home.rewards")}
+          </div>
+          <div
+            class="w-auto text-right whitespace-nowrap opacity-0 md:opacity-100"
+          >
+            {$t("home.duration")}
+          </div>
         </div>
 
         <div class="overflow-y-auto custom-scrollbar flex-1 p-2">
           {#if activePromocodes.length === 0}
-            <div class="flex flex-col items-center justify-center py-20 text-gray-400 dark:text-[#7A7A7A]">
-              <div class="mb-3 opacity-60"><Icon name="noData" class="w-10 h-10" /></div>
+            <div
+              class="flex flex-col items-center justify-center py-20 text-gray-400 dark:text-[#7A7A7A]"
+            >
+              <div class="mb-3 opacity-60">
+                <Icon name="noData" class="w-10 h-10" />
+              </div>
               <div class="text-sm font-medium">{$t("home.noActiveCodes")}</div>
             </div>
           {:else}
             {#each activePromocodes as promo}
-              <div class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group">
+              <div
+                class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
+              >
                 <div class="w-full md:w-auto md:max-w-[50%] shrink-0">
                   <div class="flex items-center gap-2">
                     <div class="min-w-0 shrink-1">
                       {#if promo.url}
-                        <a href={promo.url} target="_blank" class="block font-mono font-bold text-sm text-[#21272C] dark:text-white hover:text-[#FACC15] transition-colors whitespace-nowrap underline decoration-gray-300 underline-offset-2 hover:decoration-[#FACC15]">{promo.code}</a>
+                        <a
+                          href={promo.url}
+                          target="_blank"
+                          class="block font-mono font-bold text-sm text-[#21272C] dark:text-white hover:text-[#FACC15] transition-colors whitespace-nowrap underline decoration-gray-300 underline-offset-2 hover:decoration-[#FACC15]"
+                          >{promo.code}</a
+                        >
                       {:else}
-                        <span class="block font-mono font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] whitespace-nowrap select-all">{promo.code}</span>
+                        <span
+                          class="block font-mono font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] whitespace-nowrap select-all"
+                          >{promo.code}</span
+                        >
                       {/if}
                     </div>
-                    <button on:click={() => copyCode(promo.code)} class="flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 hover:dark:bg-[#373737] text-gray-400 hover:text-[#21272C] hover:dark:text-[#B7B6B3] transition-colors shrink-0">
+                    <button
+                      on:click={() => copyCode(promo.code)}
+                      class="flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 hover:dark:bg-[#373737] text-gray-400 hover:text-[#21272C] hover:dark:text-[#B7B6B3] transition-colors shrink-0"
+                    >
                       {#if copiedCode === promo.code}
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FACC15" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#FACC15"
+                          stroke-width="3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          ><polyline points="20 6 9 17 4 12"></polyline></svg
+                        >
                       {:else}
                         <Icon name="copy" class="w-3.5 h-3.5" />
                       {/if}
                     </button>
                     {#if promo.condition}
                       <Tooltip text={$t(promo.condition)}>
-                        <div class="text-[#FACC15] hover:text-yellow-600 transition-colors flex items-center justify-center p-1 shrink-0"><Icon name="info" class="w-3 h-3" /></div>
+                        <div
+                          class="text-[#FACC15] hover:text-yellow-600 transition-colors flex items-center justify-center p-1 shrink-0"
+                        >
+                          <Icon name="info" class="w-3 h-3" />
+                        </div>
                       </Tooltip>
                     {/if}
                   </div>
                 </div>
 
-                <div class="flex-1 flex flex-wrap gap-1.5 items-center min-w-0 py-1 md:py-0">
+                <div
+                  class="flex-1 flex flex-wrap gap-1.5 items-center min-w-0 py-1 md:py-0"
+                >
                   {#each sortRewards(promo.rewards) as reward}
                     <Tooltip text={$t(`items.${reward.id}`)}>
-                      <div class="flex items-center rounded-full px-2 py-0.5 border text-[11px] transition-colors {getRarityStyle(reward.id)}">
+                      <div
+                        class="flex items-center rounded-full px-2 py-0.5 border text-[11px] transition-colors {getRarityStyle(
+                          reward.id,
+                        )}"
+                      >
                         <span class="font-bold mr-1">{reward.count}</span>
-                        <Images id={reward.id} variant="item" size={16} className="object-contain" />
+                        <Images
+                          id={reward.id}
+                          variant="item"
+                          size={16}
+                          className="object-contain"
+                        />
                       </div>
                     </Tooltip>
                   {/each}
                 </div>
 
-                <div class="w-full md:w-auto text-left md:text-right shrink-0 md:pl-2 flex flex-row md:flex-col items-center md:items-end justify-start md:justify-center gap-2 md:gap-0 mt-1 md:mt-0">
+                <div
+                  class="w-full md:w-auto text-left md:text-right shrink-0 md:pl-2 flex flex-row md:flex-col items-center md:items-end justify-start md:justify-center gap-2 md:gap-0 mt-1 md:mt-0"
+                >
                   {#if promo.displayEndTime === null}
                     <Tooltip text={$t("timer.permanent")}>
-                      <div class="flex items-center justify-center p-1 text-gray-400 hover:text-[#FACC15] transition-colors">
+                      <div
+                        class="flex items-center justify-center p-1 text-gray-400 hover:text-[#FACC15] transition-colors"
+                      >
                         <Icon name="permanent" class="w-3.5 h-3.5" />
                       </div>
                     </Tooltip>
                   {:else if promo.displayEndTime === "N/A"}
                     <Tooltip text={$t("global.noData")}>
-                      <div class="text-[10px] font-bold text-gray-400 hover:text-[#FACC15] transition-colors cursor-default p-1">
+                      <div
+                        class="text-[10px] font-bold text-gray-400 hover:text-[#FACC15] transition-colors cursor-default p-1"
+                      >
                         N/A
                       </div>
                     </Tooltip>
                   {:else}
-                    <span class="text-[11px] font-bold text-gray-600 dark:text-[#E0E0E0] whitespace-nowrap leading-tight">{getFormattedDate(promo.displayEndTime)}</span>
-                    <span class="text-[9px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight">{getPromoTimeLabel(promo.displayEndTime)}</span>
+                    <span
+                      class="text-[11px] font-bold text-gray-600 dark:text-[#E0E0E0] whitespace-nowrap leading-tight"
+                      >{getFormattedDate(promo.displayEndTime)}</span
+                    >
+                    <span
+                      class="text-[9px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight"
+                      >{getPromoTimeLabel(promo.displayEndTime)}</span
+                    >
                   {/if}
                 </div>
               </div>
@@ -468,50 +625,84 @@
           {/if}
         </div>
       </div>
-        <div class="grid gap-3">
-          <a href="https://discord.gg/nqfuaRbWWn" target="_blank" rel="noreferrer" class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group">
-            <div class="flex items-center gap-3">
-              <Icon name="discord" class="w-6 h-6" />
-              <span class="font-bold text-sm">{$t("home.discordJoin")}</span>
-            </div>
-            <Icon name="sendToLink" class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity" />
-          </a>
+      <div class="grid gap-3">
+        <a
+          href="https://discord.gg/nqfuaRbWWn"
+          target="_blank"
+          rel="noreferrer"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#5865F2] hover:bg-[#4752C4] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+        >
+          <div class="flex items-center gap-3">
+            <Icon name="discord" class="w-6 h-6" />
+            <span class="font-bold text-sm">{$t("home.discordJoin")}</span>
+          </div>
+          <Icon
+            name="sendToLink"
+            class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
+          />
+        </a>
 
-          <a
-            href="https://goyfield-developers.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center justify-between p-3 bg-white dark:bg-[#383838] rounded-xl border border-gray-100 dark:border-[#444444] shadow-sm hover:border-[#FACC15] dark:hover:border-[#FACC15] transition-all group"
-          >
-            <div class="flex items-center gap-3">
-              <div class="rounded-lg overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="/logo-goyfield-dev.png" class="w-10 h-10 object-contain" alt="Dev Docs" />
-              </div>
-              <div class="flex flex-col min-w-0">
-                <span class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15] transition-colors truncate">
-                  {$t("home.docsTitle")}
-                </span>
-                <span class="text-xs text-gray-400 truncate">
-                  {$t("home.docsAuthor")}
-                </span>
-              </div>
+        <a
+          href="https://goyfield-developers.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between p-3 bg-white dark:bg-[#383838] rounded-xl border border-gray-100 dark:border-[#444444] shadow-sm hover:border-[#FACC15] dark:hover:border-[#FACC15] transition-all group"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
+            >
+              <img
+                src="/logo-goyfield-dev.png"
+                class="w-10 h-10 object-contain"
+                alt="Dev Docs"
+              />
             </div>
-            <Icon name="sendToLink" class="w-4 h-4 text-gray-400 group-hover:text-[#FACC15] transition-colors shrink-0" />
-          </a>
-
-          <button on:click={() => isSupportOpen = true} class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group">
-            <div class="flex items-center gap-2">
-              <Images id="origeometry" variant="item" size={32} className="object-contain" />
-              <span class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15]">{$t("footer.supportProject")}</span>
-            </div>
-          </button>
-
-          <div class="flex mt-2">
-            <div class="w-[2px] shrink-0 bg-gray-200 dark:bg-[#B7B6B3] rounded-full"></div>
-            <div class="text-[11px] text-gray-400 dark:text-[#B7B6B3] text-justify leading-relaxed pl-3">
-              {$t("home.disclaimer")}
+            <div class="flex flex-col min-w-0">
+              <span
+                class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15] transition-colors truncate"
+              >
+                {$t("home.docsTitle")}
+              </span>
+              <span class="text-xs text-gray-400 truncate">
+                {$t("home.docsAuthor")}
+              </span>
             </div>
           </div>
+          <Icon
+            name="sendToLink"
+            class="w-4 h-4 text-gray-400 group-hover:text-[#FACC15] transition-colors shrink-0"
+          />
+        </a>
+
+        <button
+          on:click={() => (isSupportOpen = true)}
+          class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group"
+        >
+          <div class="flex items-center gap-2">
+            <Images
+              id="origeometry"
+              variant="item"
+              size={32}
+              className="object-contain"
+            />
+            <span
+              class="font-bold text-sm text-[#21272C] dark:text-[#FDFDFD] group-hover:text-[#FACC15]"
+              >{$t("footer.supportProject")}</span
+            >
+          </div>
+        </button>
+
+        <div class="flex mt-2">
+          <div
+            class="w-[2px] shrink-0 bg-gray-200 dark:bg-[#B7B6B3] rounded-full"
+          ></div>
+          <div
+            class="text-[11px] text-gray-400 dark:text-[#B7B6B3] text-justify leading-relaxed pl-3"
+          >
+            {$t("home.disclaimer")}
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -555,11 +746,15 @@
         <Icon name="close" class="w-6 h-6" />
       </button>
 
-      <h2 class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-2 text-center">
+      <h2
+        class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-2 text-center"
+      >
         {$t("settings.donate.title")}
       </h2>
 
-      <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 text-center leading-relaxed">
+      <p
+        class="text-sm text-gray-500 dark:text-gray-400 mb-6 text-center leading-relaxed"
+      >
         {$t("settings.donate.description")}
       </p>
 
@@ -603,7 +798,7 @@
     background: transparent;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }
 </style>

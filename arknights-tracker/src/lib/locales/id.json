@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Beranda",
     "records": "Riwayat Headhunting",
-    "events": "Linimasa",
+    "events": "Event",
     "settings": "Pengaturan",
     "operators": "Operator",
     "theme_dark": "Gelap",
@@ -326,6 +326,14 @@
     "enemies": "Musuh"
   },
   "events": {
+    "type": {
+      "signIn": "Event Login",
+      "inGame": "Event Game",
+      "inGamePermanent": "Event Permanen",
+      "web": "Event Web",
+      "mailEvent": "Event Surat",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Voyage to the Stars",
     "final_prep_orders": "Final Prep Orders",
     "awakaningSignIn": "Event Sign-In Awakening",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "Manifestasi Kekeruhan",
     "monumentalEtchingCorruptingSurge": "Pengukiran Monumental: Gelombang Kerusakan",
     "partyTogetherPastryTower": "[Pesta Bersama] - [Menara Pastri]",
-    "sanitySupply": "Pasokan Sanity"
+    "sanitySupply": "Pasokan Sanity",
+    "risingTideOfWuling": "Login: Pasang Surut Wuling"
   },
   "mouths": {
     "january": "Januari",
@@ -861,7 +870,7 @@
     "discordJoin": "Bergabung dengan Discord",
     "docsTitle": "Dokumentasi Goyfield DEV",
     "docsAuthor": "oleh @beetwooo_",
-    "goToTimeline": "Ke linimasa acara"
+    "goToTimeline": "Ke Event"
   },
   "characters": {
     "catcher": "Catcher",

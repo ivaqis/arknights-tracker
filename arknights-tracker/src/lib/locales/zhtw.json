@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "首頁",
     "records": "尋訪記錄",
-    "events": "時間軸",
+    "events": "活動",
     "settings": "設定",
     "operators": "幹員",
     "theme_dark": "深色",
@@ -326,6 +326,14 @@
     "enemies": "敵人"
   },
   "events": {
+    "type": {
+      "signIn": "簽到活動",
+      "inGame": "遊戲內活動",
+      "inGamePermanent": "常駐活動",
+      "web": "網頁活動",
+      "mailEvent": "郵件活動",
+      "protoPass": "協議通行證"
+    },
     "voyage_to_the_stars": "星際之旅",
     "final_prep_orders": "最終整備令",
     "awakaningSignIn": "覺醒簽到活動",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "濁流具現",
     "monumentalEtchingCorruptingSurge": "豐碑留名·穢流",
     "partyTogetherPastryTower": "「共賀慶典」 - 「此時歡宴」",
-    "sanitySupply": "理智補給"
+    "sanitySupply": "理智補給",
+    "risingTideOfWuling": "武陵潮生簽到"
   },
   "mouths": {
     "january": "一月",
@@ -861,7 +870,7 @@
     "discordJoin": "加入 Discord",
     "docsTitle": "Goyfield DEV 文件",
     "docsAuthor": "作者 @beetwooo_",
-    "goToTimeline": "前往活動時間軸"
+    "goToTimeline": "前往活動"
   },
   "characters": {
     "catcher": "卡契爾",

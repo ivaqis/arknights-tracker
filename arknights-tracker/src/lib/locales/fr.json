@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "Accueil",
     "records": "Historique Recrutement",
-    "events": "Chronologie",
+    "events": "Événements",
     "settings": "Paramètres",
     "operators": "Opérateurs",
     "theme_dark": "Sombre",
@@ -326,6 +326,14 @@
     "enemies": "Ennemis"
   },
   "events": {
+    "type": {
+      "signIn": "Événements de connexion",
+      "inGame": "Événements en jeu",
+      "inGamePermanent": "Événements permanents",
+      "web": "Événements web",
+      "mailEvent": "Événements de messagerie",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Voyage vers les Étoiles",
     "final_prep_orders": "Ordres de Préparation Finale",
     "awakaningSignIn": "Connexion de l'Éveil",
@@ -368,7 +376,8 @@
     "umbralMonumentTurbidityManifest": "Manifeste de la Turbidité",
     "monumentalEtchingCorruptingSurge": "Gravure monumentale : vague de corruption",
     "partyTogetherPastryTower": "[Réjouissances] - [Pièce montée]",
-    "sanitySupply": "Approvisionnement en lucidité"
+    "sanitySupply": "Approvisionnement en lucidité",
+    "risingTideOfWuling": "Connexion : Marée montante de Wuling"
   },
   "mouths": {
     "january": "Janvier",
@@ -861,7 +870,7 @@
     "discordJoin": "Rejoindre Discord",
     "docsTitle": "Documentation Goyfield DEV",
     "docsAuthor": "par @beetwooo_",
-    "goToTimeline": "Aller à la chronologie"
+    "goToTimeline": "Aller aux Événements"
   },
   "characters": {
     "catcher": "Catcher",

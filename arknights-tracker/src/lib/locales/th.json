@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "หน้าแรก",
     "records": "ประวัติการเฟ้นหา",
-    "events": "ไทม์ไลน์",
+    "events": "กิจกรรม",
     "settings": "การตั้งค่า",
     "operators": "โอเปอเรเตอร์",
     "theme_dark": "มืด",
@@ -326,6 +326,14 @@
     "enemies": "ศัตรู"
   },
   "events": {
+    "type": {
+      "signIn": "กิจกรรมเช็คอิน",
+      "inGame": "กิจกรรมในเกม",
+      "inGamePermanent": "กิจกรรมถาวร",
+      "web": "กิจกรรมเว็บ",
+      "mailEvent": "กิจกรรมจดหมาย",
+      "protoPass": "โปรโตพาส"
+    },
     "voyage_to_the_stars": "การเดินทางสู่ดวงดาว",
     "final_prep_orders": "คำสั่งเตรียมการขั้นสุดท้าย",
     "awakaningSignIn": "กิจกรรมเช็คอินการตื่นรู้",
@@ -367,7 +375,9 @@
     "umbralMonumentTurbidityManifest": "ภูต​สำแดง​สับสน",
     "monumentalEtchingCorruptingSurge": "การแกะสลัก​อนุสรณ์​: กระแส​เสื่อมโทรม​ปะทุ",
     "partyTogetherPastryTower": "[ปาร์ตี้ไปด้วยกัน] - [หอคอยขนมหวาน]",
-    "sanitySupply": "เสบียง​ค่า​สติ"
+    "sanitySupply": "เสบียง​ค่า​สติ",
+    "qingboRising": "เช็คอิน ชิงปัวรุ่งอรุณ",
+    "risingTideOfWuling": "เช็คอิน น้ำขึ้นที่อู่หลิง"
   },
   "mouths": {
     "january": "มกราคม",
@@ -860,7 +870,7 @@
     "discordJoin": "เข้าร่วม Discord",
     "docsTitle": "เอกสาร Goyfield DEV",
     "docsAuthor": "โดย @beetwooo_",
-    "goToTimeline": "ไปที่ไทม์ไลน์กิจกรรม"
+    "goToTimeline": "ไปที่กิจกรรม"
   },
   "characters": {
     "catcher": "แคท​เชอร์",

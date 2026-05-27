@@ -8,7 +8,7 @@
   "sidebar": {
     "home": "Inicio",
     "records": "Historial de Reclutamiento",
-    "events": "Cronología",
+    "events": "Eventos",
     "settings": "Ajustes",
     "operators": "Operadores",
     "theme_dark": "Oscuro",
@@ -325,6 +325,14 @@
     "enemies": "Enemigos"
   },
   "events": {
+    "type": {
+      "signIn": "Eventos de inicio de sesión",
+      "inGame": "Eventos en el juego",
+      "inGamePermanent": "Eventos permanentes",
+      "web": "Eventos web",
+      "mailEvent": "Eventos de correo",
+      "protoPass": "ProtoPass"
+    },
     "voyage_to_the_stars": "Viaje a las Estrellas",
     "final_prep_orders": "Órdenes de Preparación Final",
     "awakaningSignIn": "Evento de Inicio de Sesión: Despertar",
@@ -861,7 +869,7 @@
     "discordJoin": "Unirse a Discord",
     "docsTitle": "Documentación Goyfield DEV",
     "docsAuthor": "por @beetwooo_",
-    "goToTimeline": "Ir a la línea de tiempo"
+    "goToTimeline": "Ir a Eventos"
   },
   "characters": {
     "catcher": "Catcher",

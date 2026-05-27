@@ -11,7 +11,7 @@
   "sidebar": {
     "home": "首页",
     "records": "寻访记录",
-    "events": "时间轴",
+    "events": "活动",
     "settings": "设置",
     "operators": "干员",
     "theme_dark": "深色",
@@ -326,6 +326,14 @@
     "enemies": "敌人"
   },
   "events": {
+    "type": {
+      "signIn": "签到活动",
+      "inGame": "游戏内活动",
+      "inGamePermanent": "常驻活动",
+      "web": "网页活动",
+      "mailEvent": "邮件活动",
+      "protoPass": "协议通行证"
+    },
     "voyage_to_the_stars": "星际之旅",
     "final_prep_orders": "最终整备令",
     "awakaningSignIn": "觉醒签到活动",
@@ -367,7 +375,9 @@
     "umbralMonumentTurbidityManifest": "浊流具现",
     "monumentalEtchingCorruptingSurge": "丰碑留名·秽流",
     "partyTogetherPastryTower": "「共贺庆典」 - 「此时欢宴」",
-    "sanitySupply": "理智补给"
+    "sanitySupply": "理智补给",
+    "qingboRising": "清波将起",
+    "risingTideOfWuling": "武陵潮生签到"
   },
   "mouths": {
     "january": "一月",
@@ -860,7 +870,7 @@
     "discordJoin": "加入 Discord",
     "docsTitle": "Goyfield DEV 文档",
     "docsAuthor": "作者 @beetwooo_",
-    "goToTimeline": "前往活动时间轴"
+    "goToTimeline": "前往活动"
   },
   "characters": {
     "catcher": "卡契尔",

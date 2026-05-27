@@ -413,7 +413,9 @@
                     interactive={true}
                     variant={imageVariant}
                     className="w-full h-full"
-                    alt={banner.name}
+                    alt={isEvent && banner.title
+                        ? ($t(banner.title) !== banner.title ? $t(banner.title) : banner.name || banner.title)
+                        : banner.name}
                     style="object-fit: cover;"
                 />
                 <div
@@ -423,9 +425,15 @@
                     <h3
                         class="text-white font-bold text-2xl leading-tight drop-shadow-lg mb-1"
                     >
-                        {$t(`banners.${banner.id}`) !== `banners.${banner.id}`
-                            ? $t(`banners.${banner.id}`)
-                            : banner.name || banner.id}
+                        {#if isEvent && banner.title}
+                            {$t(banner.title) !== banner.title
+                                ? $t(banner.title)
+                                : banner.name || banner.title || banner.id}
+                        {:else}
+                            {$t(`banners.${banner.id}`) !== `banners.${banner.id}`
+                                ? $t(`banners.${banner.id}`)
+                                : banner.name || banner.id}
+                        {/if}
                     </h3>
                     <div
                         class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/10 shadow-sm {isActive
