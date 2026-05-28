@@ -298,7 +298,7 @@
                 </button>
             </div>
             <div class="flex-1 overflow-y-auto overflow-x-hidden">
-                <nav class="flex flex-col gap-3 px-3">
+                <nav class="flex flex-col gap-2 px-3">
                     {#each [
                         { path: "/", label: "sidebar.home", icon: "mainPage" },
                         { path: "/records", label: "sidebar.records", icon: "records" },
