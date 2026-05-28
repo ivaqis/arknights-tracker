@@ -304,11 +304,6 @@
                 </div>
             {/if}
 
-            {#if !hideName}
-                <div
-                    class="absolute bottom-[6px] left-0 right-0 h-[30px] z-10 pointer-events-none bg-gradient-to-t from-black/50 to-transparent"
-                ></div>
-            {/if}
             {#if !hideRarity}
                 <div
                     class="absolute bottom-0 left-0 w-full h-[6px] z-20"
@@ -326,7 +321,8 @@
                     class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5"
                 >
                     <span
-                        class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 drop-shadow-md opacity-90 w-full block cursor-pointer"
+                        class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 w-full block cursor-pointer"
+                        style="text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 1px 1px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.8);"
                     >
                         {$t(`${localeCategory}.${nameKey}`) || weapon.name}
                     </span>
