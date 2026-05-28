@@ -142,7 +142,7 @@ const BANNERS = [
     name: "Lupine Scarlet",
     type: "weapon",
     startTime: "2026-03-29 12:00:00",
-    endTime: "2026-06-05 04:00:00",
+    endTime: "2026-06-23 04:00:00",
     featured6: ["lupineScarlet", "Lupine Scarlet"],
   },
   {
@@ -160,7 +160,7 @@ const BANNERS = [
     type: "weapon",
     startTime: "2026-04-16 22:00:00",
     startTimeAsia: "2026-04-17 11:00:00",
-    endTime: "2026-06-05 04:00:00",
+    endTime: "2026-07-12 04:00:00",
     featured6: ["loneBarge", "Lone Barge"],
   },
   {
@@ -168,7 +168,8 @@ const BANNERS = [
     name: "Fest of Brilliance",
     type: "joint",
     startTime: "2026-05-14 12:00:00",
-    endTime: "2026-06-05 04:00:00",
+    endTime: "2026-06-04 04:00:00",
+    endTimeAsia: "2026-06-05 06:00:00",
     featured6: ["pogranichnik", "laevatain", "gilberta", "ardelia"],
   },
   {
@@ -176,7 +177,8 @@ const BANNERS = [
     name: "Smelting Fire Issue",
     type: "weapon",
     startTime: "2026-05-14 12:00:00",
-    endTime: "2026-06-05 04:00:00", 
+    endTime: "2026-06-04 04:00:00",
+    endTimeAsia: "2026-06-05 06:00:00",
     featured6: ["forgebornScathe"],
   },
   {
@@ -184,7 +186,8 @@ const BANNERS = [
     name: "Swift Walker Issue",
     type: "weapon",
     startTime: "2026-05-14 12:00:00",
-    endTime: "2026-06-05 04:00:00", 
+    endTime: "2026-06-04 04:00:00",
+    endTimeAsia: "2026-06-05 06:00:00",
     featured6: ["deliveryGuaranteed"],
   }
 ];
