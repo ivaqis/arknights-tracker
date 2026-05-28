@@ -133,12 +133,12 @@ function createPullStore() {
 
                         const report = { status: 'up_to_date', addedCount: {}, totalAdded: 0 };
 
-                        const allCurrentPulls = [
-                            ...(newData.standard?.pulls || []),
-                            ...(newData.special?.pulls || []),
-                            ...(newData["new-player"]?.pulls || []),
-                            ...(newData.joint?.pulls || [])
-                        ];
+                        const allCurrentPulls = [];
+                        Object.entries(newData).forEach(([key, val]) => {
+                            if (val && Array.isArray(val.pulls)) {
+                                allCurrentPulls.push(...val.pulls);
+                            }
+                        });
 
                         if (allCurrentPulls.length > 0) {
                             validateAccountConsistency(allCurrentPulls, newPulls, isRecoveryEnabled);
