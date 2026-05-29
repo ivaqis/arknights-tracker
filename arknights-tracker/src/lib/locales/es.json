@@ -237,7 +237,10 @@
     "error_unknown": "Error Desconocido",
     "error_network": "Bad Gateway (Error de Red)",
     "error_invalid_token": "El token es inválido o ha expirado. Por favor, inicie sesión en el juego y genere un nuevo enlace.",
-    "error_account_mismatch": "¡La cuenta no coincide! Ya tienes historial entre {start} y {end}, pero los datos importados son totalmente distintos. Revisa si seleccionaste la cuenta correcta."
+    "error_account_mismatch": "¡La cuenta no coincide! Ya tienes historial entre {start} y {end}, pero los datos importados son totalmente distintos. Revisa si seleccionaste la cuenta correcta.",
+    "recoveryStats": "Recuperación de registros",
+    "recoveryTooltip": "Marcar esta casilla forzará la recuperación del historial de tiradas si es aplicable. Esto puede ayudar en caso de pérdida parcial de registros.",
+    "error_account_mismatch_recovery": "¡Discrepancia de cuentas! No se encontraron registros coincidentes incluso en el modo de recuperación. Por favor, comprueba si has seleccionado la cuenta correcta."
   },
   "emptyState": {
     "noData": "Sin entradas"

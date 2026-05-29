@@ -5,6 +5,7 @@
   import Icon from "$lib/components/Icons.svelte";
   import Button from "$lib/components/Button.svelte";
   import { banners } from "$lib/data/banners";
+  import { addNotification } from "$lib/stores";
 
   export let isOpen = false;
   export let onClose;
@@ -193,8 +194,6 @@
     }
   }
 
-  let notification = null
-
   function importExcel(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -270,23 +269,19 @@
           const report = await pullData.smartImport(allPullsToImport, serverId, true);
 
           if (report.totalAdded > 0) {
-            notification = { type: 'success', key: 'importSuccess', count: report.totalAdded };
+            addNotification('success', $t('page.recordsSettings.importSuccess', { n: report.totalAdded }));
             setTimeout(() => {
-              notification = null;
               onClose();
             }, 2500);
           } else {
-            notification = { type: 'warning', key: 'importDuplicate' };
-            setTimeout(() => notification = null, 4000);
+            addNotification('warning', $t('page.recordsSettings.importDuplicate'));
           }
         } catch (error) {
           console.error(error);
-          notification = { type: 'error', key: 'importError' };
-          setTimeout(() => notification = null, 4000);
+          addNotification('error', $t('page.recordsSettings.importError'));
         }
       } else {
-        notification = { type: 'error', key: 'importNoData' };
-        setTimeout(() => notification = null, 4000);
+        addNotification('error', $t('page.recordsSettings.importNoData'));
       }
     };
     reader.readAsArrayBuffer(file);
@@ -314,24 +309,7 @@
       aria-modal="true"
       tabindex="-1"
     >
-      {#if notification}
-        <div class="mb-4 p-3 rounded-xl border text-sm font-bold flex items-center gap-2 transition-all shadow-sm
-          {notification.type === 'success' ? 'bg-green-50 border-green-200 text-green-700 dark:bg-green-950/30 dark:border-green-900/50 dark:text-green-400' : ''}
-          {notification.type === 'warning' ? 'bg-amber-50 border-amber-200 text-amber-700 dark:bg-amber-950/30 dark:border-amber-900/50 dark:text-amber-400' : ''}
-          {notification.type === 'error' ? 'bg-red-50 border-red-200 text-red-700 dark:bg-red-950/30 dark:border-red-900/50 dark:text-red-400' : ''}"
-        >
-          {#if notification.type === 'success'}
-            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-            {$t(`page.recordsSettings.${notification.key}`, { n: notification.count })}
-          {:else if notification.type === 'warning'}
-            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-            {$t(`page.recordsSettings.${notification.key}`)}
-          {:else}
-            <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-            {$t(`page.recordsSettings.${notification.key}`)}
-          {/if}
-        </div>
-      {/if}
+
       <h2 class="text-2xl font-bold dark:text-[#FDFDFD] mb-6 text-[#21272C] font-sdk">
         {$t("page.recordsSettings.settings")}
       </h2>

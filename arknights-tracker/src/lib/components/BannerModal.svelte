@@ -8,7 +8,7 @@
     import { banners } from "$lib/data/banners";
     import { browser } from "$app/environment";
     import { t } from "$lib/i18n";
-    import { currentLocale } from '$lib/stores/locale';
+    import { currentLocale } from "$lib/stores/locale";
 
     import Icon from "$lib/components/Icons.svelte";
     import OperatorCard from "$lib/components/OperatorCard.svelte";
@@ -26,9 +26,10 @@
     const { accounts, selectedId } = accountStore;
 
     let currentServerId = "3";
-    
+
     $: isAsia = currentServerId === "2";
-    $: serverOffset = currentServerId === "2" || currentServerId === "1" ? 8 : -5;
+    $: serverOffset =
+        currentServerId === "2" || currentServerId === "1" ? 8 : -5;
 
     let showServerTime = false;
 
@@ -77,9 +78,9 @@
         const activeLocale = loc || "ru";
 
         if (showServerTime) {
-            const shiftedMs = d.getTime() + (serverOffset * 3600000);
+            const shiftedMs = d.getTime() + serverOffset * 3600000;
             const shiftedDate = new Date(shiftedMs);
-            
+
             return shiftedDate.toLocaleString(activeLocale, {
                 timeZone: "UTC",
                 day: "numeric",
@@ -93,7 +94,9 @@
         return d.toLocaleString(activeLocale, {
             day: "numeric",
             month: "long",
-            year: "numeric"
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
         });
     }
 
@@ -226,8 +229,14 @@
         });
     };
 
-    $: startStr = (banner && isAsia && banner.startTimeAsia) ? banner.startTimeAsia : banner?.startTime;
-    $: endStr = (banner && isAsia && banner.endTimeAsia) ? banner.endTimeAsia : banner?.endTime;
+    $: startStr =
+        banner && isAsia && banner.startTimeAsia
+            ? banner.startTimeAsia
+            : banner?.startTime;
+    $: endStr =
+        banner && isAsia && banner.endTimeAsia
+            ? banner.endTimeAsia
+            : banner?.endTime;
 
     $: realStart = startStr ? parseServerDate(startStr) : new Date();
     $: realEnd = endStr ? parseServerDate(endStr) : null;
@@ -261,7 +270,9 @@
             p.calculatedPity6 =
                 p.pity !== undefined && p.pity !== null
                     ? Number(p.pity)
-                    : (isFree ? 1 : simPity6);
+                    : isFree
+                      ? 1
+                      : simPity6;
             p.calculatedPity5 = isFree ? 1 : simPity5;
             if (p.rarity === 6 && !isFree) simPity6 = 0;
             if (p.rarity === 5 && !isFree) simPity5 = 0;
@@ -278,15 +289,23 @@
             if (!timeMatch) return false;
 
             const isGenericType = [
-                "special", "standard", "weapon", "weap-special", 
-                "weap-standard", "new-player", "joint"
+                "special",
+                "standard",
+                "weapon",
+                "weap-special",
+                "weap-standard",
+                "new-player",
+                "joint",
             ].some((t) => pull.bannerId?.includes(t));
-            
+
             const typesMatch = isWeaponBanner
                 ? pull.type === "weapon"
                 : pull.type === "character";
 
-            if (!isWeaponBanner && (banner.id === "standard" || banner.id === "1")) {
+            if (
+                !isWeaponBanner &&
+                (banner.id === "standard" || banner.id === "1")
+            ) {
                 return pull.bannerId === "standard" || pull.bannerId === "1";
             }
 
@@ -294,74 +313,85 @@
         });
 
         if (filtered.length === 0) return { pulls: [], stats: {} };
-        const isJointBanner = banner?.type === "joint" || banner?.id?.includes("joint");
-        const hardPityLimit = (isWeaponBanner || isJointBanner) ? 80 : 120;
-        let count6 = 0, count5 = 0;
-        let sumPity6 = 0, sumPity5 = 0;
-        let total5050 = 0, won5050 = 0;
+        const isJointBanner =
+            banner?.type === "joint" || banner?.id?.includes("joint");
+        const hardPityLimit = isWeaponBanner || isJointBanner ? 80 : 120;
+        let count6 = 0,
+            count5 = 0;
+        let sumPity6 = 0,
+            sumPity5 = 0;
+        let total5050 = 0,
+            won5050 = 0;
         let localRateUpCounter = 0;
 
-        const processed = filtered.map((pull) => {
-            const p = { ...pull };
-            const isFree = p.isFree === true || String(p.isFree) === "true";
+        const processed = filtered
+            .map((pull) => {
+                const p = { ...pull };
+                const isFree = p.isFree === true || String(p.isFree) === "true";
 
-            if (!isFree) {
-                localRateUpCounter++;
-            }
-            const isHardPityTriggered = localRateUpCounter >= hardPityLimit;
-
-            if (p.rarity === 6) {
                 if (!isFree) {
-                    count6++;
-                    sumPity6 += p.calculatedPity6;
+                    localRateUpCounter++;
                 }
-                
-                p.realPity = p.calculatedPity6;
-                const isFeatured = checkIsFeatured(p.name);
+                const isHardPityTriggered = localRateUpCounter >= hardPityLimit;
 
-                if (!isFree) {
-                    if (isFeatured) {
-                        if (!isHardPityTriggered) {
-                            total5050++;
-                            won5050++;
-                        }
-                        localRateUpCounter = 0;
-                    } else {
-                        if (!isHardPityTriggered) {
-                            total5050++;
+                if (p.rarity === 6) {
+                    if (!isFree) {
+                        count6++;
+                        sumPity6 += p.calculatedPity6;
+                    }
+
+                    p.realPity = p.calculatedPity6;
+                    const isFeatured = checkIsFeatured(p.name);
+
+                    if (!isFree) {
+                        if (isFeatured) {
+                            if (!isHardPityTriggered) {
+                                total5050++;
+                                won5050++;
+                            }
+                            localRateUpCounter = 0;
+                        } else {
+                            if (!isHardPityTriggered) {
+                                total5050++;
+                            }
                         }
                     }
+                } else if (p.rarity === 5) {
+                    if (!isFree) {
+                        count5++;
+                        sumPity5 += p.calculatedPity5;
+                    }
+                    p.realPity = p.calculatedPity5;
+                } else {
+                    p.realPity = 1;
                 }
-            } else if (p.rarity === 5) {
-                if (!isFree) {
-                    count5++;
-                    sumPity5 += p.calculatedPity5;
-                }
-                p.realPity = p.calculatedPity5;
-            } else {
-                p.realPity = 1;
-            }
-            return p;
-        }).reverse();
+                return p;
+            })
+            .reverse();
 
         const total = processed.length;
 
-        return { 
-            pulls: processed, 
+        return {
+            pulls: processed,
             stats: {
                 total,
                 count6,
                 count5,
-                percent6: total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00",
-                percent5: total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00",
+                percent6:
+                    total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00",
+                percent5:
+                    total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00",
                 avg6: count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0",
                 avg5: count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0",
                 winRate: {
                     won: won5050,
                     total: total5050,
-                    percent: total5050 > 0 ? ((won5050 / total5050) * 100).toFixed(0) : 0,
+                    percent:
+                        total5050 > 0
+                            ? ((won5050 / total5050) * 100).toFixed(0)
+                            : 0,
                 },
-            } 
+            },
         };
     })();
 
@@ -414,7 +444,9 @@
                     variant={imageVariant}
                     className="w-full h-full"
                     alt={isEvent && banner.title
-                        ? ($t(banner.title) !== banner.title ? $t(banner.title) : banner.name || banner.title)
+                        ? $t(banner.title) !== banner.title
+                            ? $t(banner.title)
+                            : banner.name || banner.title
                         : banner.name}
                     style="object-fit: cover;"
                 />
@@ -430,7 +462,8 @@
                                 ? $t(banner.title)
                                 : banner.name || banner.title || banner.id}
                         {:else}
-                            {$t(`banners.${banner.id}`) !== `banners.${banner.id}`
+                            {$t(`banners.${banner.id}`) !==
+                            `banners.${banner.id}`
                                 ? $t(`banners.${banner.id}`)
                                 : banner.name || banner.id}
                         {/if}
@@ -482,7 +515,9 @@
                             >
                             <span
                                 class="font-nums font-medium dark:text-[#E0E0E0] text-gray-900"
-                                >{banner.isPermanent || !realEnd ? "∞" : formatTime(realEnd, $currentLocale)}</span
+                                >{banner.isPermanent || !realEnd
+                                    ? "∞"
+                                    : formatTime(realEnd, $currentLocale)}</span
                             >
                         </div>
                     </div>
@@ -491,7 +526,9 @@
                         class="p-3 bg-gray-50 rounded-xl border dark:border-[#444444] dark:bg-[#343434] border-gray-100 text-center"
                     >
                         {#if !realEnd}
-                            <div class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5">
+                            <div
+                                class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5"
+                            >
                                 {$t("systemNames.status")}
                             </div>
                             <div
@@ -502,7 +539,9 @@
                                 })}
                             </div>
                         {:else if isUpcoming}
-                            <div class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5">
+                            <div
+                                class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5"
+                            >
                                 {$t("systemNames.startsIn")}
                             </div>
                             <div
@@ -527,10 +566,14 @@
                                 {/if}
                             </div>
                         {:else if banner.isPermanent}
-                            <div class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5">
+                            <div
+                                class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5"
+                            >
                                 {$t("systemNames.status")}
                             </div>
-                            <div class="text-gray-500 dark:text-gray-400 font-bold font-nums text-lg leading-none uppercase tracking-wide">
+                            <div
+                                class="text-gray-500 dark:text-gray-400 font-bold font-nums text-lg leading-none uppercase tracking-wide"
+                            >
                                 {$t("timer.permanent") || "Permanent"}
                             </div>
                         {:else if isActive}
@@ -560,7 +603,9 @@
                                 {/if}
                             </div>
                         {:else if isEnded}
-                            <div class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5">
+                            <div
+                                class="text-gray-500 dark:text-[#B7B6B3] text-xs mb-0.5"
+                            >
                                 {$t("status.ended") || "Ended"}
                             </div>
                             <div
@@ -571,33 +616,33 @@
                         {/if}
                     </div>
                     {#if banner.url}
-                    <a
-                        href={banner.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="group flex items-center justify-between px-4 py-3 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200"
-                    >
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
-                            >
-                                <Icon name="sendToLink" class="w-4 h-4" />
-                            </div>
-                            <div class="flex flex-col">
-                                <span
-                                    class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors"
-                                    >{$t("page.openOfficialSource")}</span
+                        <a
+                            href={banner.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="group flex items-center justify-between px-4 py-3 rounded-xl border dark:border-[#444444] border-gray-200 hover:border-[#E9CF49] hover:dark:border-[#77776A] hover:dark:bg-[#4E4E45] hover:bg-[#fff9f5] transition-all duration-200"
+                        >
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-gray-100 group-hover:bg-[#E9CF49]/10 flex items-center justify-center text-gray-500 dark:text-[#E0E0E0] dark:bg-[#2C2C2C] group-hover:text-[#D4BE48] transition-colors"
                                 >
-                                <span class="text-xs text-gray-400"
-                                    >{$t("page.detailsOfficialSource")}</span
-                                >
+                                    <Icon name="sendToLink" class="w-4 h-4" />
+                                </div>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-bold text-sm text-gray-900 dark:text-[#FDFDFD] group-hover:text-[#E9CF49] transition-colors"
+                                        >{$t("page.openOfficialSource")}</span
+                                    >
+                                    <span class="text-xs text-gray-400"
+                                        >{$t(
+                                            "page.detailsOfficialSource",
+                                        )}</span
+                                    >
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                {/if}
+                        </a>
+                    {/if}
                 </div>
-
-                
 
                 {#if featuredItems.length > 0}
                     <div class="space-y-3">

@@ -258,7 +258,10 @@
     "error_unknown": "Unknown Error",
     "error_network": "Bad Gateway",
     "error_invalid_token": "Token is invalid or expired. Please log into the game and generate a new link.",
-    "error_account_mismatch": "Account Mismatch! You already have history between {start} and {end}, but the imported data differs completely. Please check if you selected the correct account."
+    "error_account_mismatch": "Account Mismatch! You already have history between {start} and {end}, but the imported data differs completely. Please check if you selected the correct account.",
+    "recoveryStats": "Record Recovery",
+    "recoveryTooltip": "Checking this box will force recovery of pull history if applicable. This can help in case of partial loss of pull records.",
+    "error_account_mismatch_recovery": "Account Mismatch! No matching records found even in recovery mode. Please check if you selected the correct account."
   },
   "emptyState": {
     "noData": "No entries"

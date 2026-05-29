@@ -2,7 +2,7 @@
 
 import { writable, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency } from '$lib/utils/importUtils';
+import { mergePulls, calculatePity, calculateBannerStats, validateAccountConsistency, findLCSMatches } from '$lib/utils/importUtils';
 import { accountStore } from './accounts';
 import { uploadLocalData, user } from "$lib/stores/cloudStore";
 
@@ -114,7 +114,7 @@ function createPullStore() {
         subscribe,
         set,
         update,
-        smartImport: async (newPulls, serverId = '3', commit = true) => {
+        smartImport: async (newPulls, serverId = '3', commit = true, isRecoveryEnabled = false) => {
             if (!browser) return;
 
             newPulls.forEach(p => {
@@ -133,15 +133,15 @@ function createPullStore() {
 
                         const report = { status: 'up_to_date', addedCount: {}, totalAdded: 0 };
 
-                        const allCurrentPulls = [
-                            ...(newData.standard?.pulls || []),
-                            ...(newData.special?.pulls || []),
-                            ...(newData["new-player"]?.pulls || []),
-                            ...(newData.joint?.pulls || [])
-                        ];
+                        const allCurrentPulls = [];
+                        Object.entries(newData).forEach(([key, val]) => {
+                            if (val && Array.isArray(val.pulls)) {
+                                allCurrentPulls.push(...val.pulls);
+                            }
+                        });
 
                         if (allCurrentPulls.length > 0) {
-                            validateAccountConsistency(allCurrentPulls, newPulls);
+                            validateAccountConsistency(allCurrentPulls, newPulls, isRecoveryEnabled);
                         }
 
                         const incomingByBanner = {};
@@ -169,7 +169,22 @@ function createPullStore() {
                             const oldList = newData[targetKey].pulls;
                             const incomeList = incomingByBanner[bid];
 
-                            let hasEnriched = false;
+                            let hasEnriched = isRecoveryEnabled;
+                            if (isRecoveryEnabled) {
+                                const matches = findLCSMatches(oldList, incomeList);
+                                matches.forEach(m => {
+                                    const oldP = m.oldPull;
+                                    const newP = m.newPull;
+                                    oldP.id = newP.id;
+                                    oldP.time = newP.time;
+                                    oldP.seqId = newP.seqId;
+                                    oldP.rawPoolId = newP.rawPoolId;
+                                    oldP.isNew = newP.isNew;
+                                    oldP.isFree = newP.isFree;
+                                    oldP.type = newP.type;
+                                });
+                            }
+
                             oldList.forEach(oldP => {
                                 const freshP = incomeList.find(p => p.id === oldP.id);
                                 if (freshP) {

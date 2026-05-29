@@ -25,6 +25,7 @@
     let errorMsg = "";
     let isGlobalStatsEnabled = true;
     let isOverwriteEnabled = false;
+    let isRecoveryEnabled = false;
     let activeTab = "new";
     let selectedServer = "3";
     let isSaveTokenEnabled = false;
@@ -214,11 +215,11 @@
         pendingData = null;
         let lastPullTimes = {};
         const currentPullData = get(pullData);
-        if (currentPullData && !isOverwriteEnabled) { 
+        if (currentPullData && !isOverwriteEnabled && !isRecoveryEnabled) {
             Object.entries(currentPullData).forEach(([catId, cat]) => {
                 let maxTimeForCat = 0;
                 if (cat.pulls && Array.isArray(cat.pulls)) {
-                    cat.pulls.forEach(p => {
+                    cat.pulls.forEach((p) => {
                         const t = new Date(p.time).getTime();
                         if (t > maxTimeForCat) maxTimeForCat = t;
                     });
@@ -240,7 +241,7 @@
                 body: JSON.stringify({
                     rawUrl: urlToSend,
                     overwrite: isOverwriteEnabled,
-                    lastPullTimes
+                    lastPullTimes,
                 }),
             });
 
@@ -281,7 +282,8 @@
 
                     if (msg.type === "progress") {
                         const { poolId, count } = msg;
-                        const currentPoolCount = previewReport.addedCount[poolId] || 0;
+                        const currentPoolCount =
+                            previewReport.addedCount[poolId] || 0;
                         previewReport.totalAdded += count;
 
                         previewReport.addedCount = {
@@ -298,13 +300,24 @@
                         const backendMsg = msg.message || "";
 
                         if (backendMsg.includes("Token is invalid")) {
-                            errorMsg = $t("import.error_invalid_token") || "Token is invalid or expired.";
+                            errorMsg =
+                                $t("import.error_invalid_token") ||
+                                "Token is invalid or expired.";
                         } else if (backendMsg.includes("Invalid domain")) {
-                            errorMsg = $t("import.error_domain") || "Invalid game link. Domain not supported";
-                        } else if (backendMsg.includes("No pulls found") || backendMsg.includes("expired")) {
-                            errorMsg = $t("import.error_no_data") || "No pulls found or Link Expired";
+                            errorMsg =
+                                $t("import.error_domain") ||
+                                "Invalid game link. Domain not supported";
+                        } else if (
+                            backendMsg.includes("No pulls found") ||
+                            backendMsg.includes("expired")
+                        ) {
+                            errorMsg =
+                                $t("import.error_no_data") ||
+                                "No pulls found or Link Expired";
                         } else if (backendMsg.includes("No token found")) {
-                            errorMsg = $t("import.error_format") || "Invalid URL/Token format";
+                            errorMsg =
+                                $t("import.error_format") ||
+                                "Invalid URL/Token format";
                         } else {
                             errorMsg = backendMsg;
                         }
@@ -328,7 +341,10 @@
             ) {
                 errorMsg = $t("import.error_network") || "Bad Gateway";
             } else {
-                errorMsg = err.message || $t("import.error_unknown") || "Unknown Error";
+                errorMsg =
+                    err.message ||
+                    $t("import.error_unknown") ||
+                    "Unknown Error";
             }
 
             previewReport = null;
@@ -348,22 +364,34 @@
 
             if (currentAcc) {
                 if (accountStore.updateAccount) {
-                    const shortUid = importedUid.length > 4 ? importedUid.slice(-4) : importedUid;
-                    const shouldRename = 
-                        currentAcc.name === "Main Account" || 
-                        currentAcc.name.startsWith("Account") || 
+                    const shortUid =
+                        importedUid.length > 4
+                            ? importedUid.slice(-4)
+                            : importedUid;
+                    const shouldRename =
+                        currentAcc.name === "Main Account" ||
+                        currentAcc.name.startsWith("Account") ||
                         currentAcc.name.startsWith("Doctor");
 
                     accountStore.updateAccount(currentAcc.id, {
                         uid: importedUid,
                         serverId: backendServerId,
-                        name: shouldRename ? `Account ${shortUid}` : currentAcc.name,
+                        name: shouldRename
+                            ? `Account ${shortUid}`
+                            : currentAcc.name,
                     });
                 }
             } else {
                 if (accountStore.addAccount) {
-                    const shortUid = importedUid.length > 4 ? importedUid.slice(-4) : importedUid;
-                    accountStore.addAccount(importedUid, `Account ${shortUid}`, backendServerId);
+                    const shortUid =
+                        importedUid.length > 4
+                            ? importedUid.slice(-4)
+                            : importedUid;
+                    accountStore.addAccount(
+                        importedUid,
+                        `Account ${shortUid}`,
+                        backendServerId,
+                    );
                 }
             }
         }
@@ -379,6 +407,7 @@
             cleanPulls,
             backendServerId,
             false,
+            isRecoveryEnabled,
         );
         pendingData = cleanPulls;
         previewReport = report;
@@ -397,7 +426,12 @@
             if (uid && typeof window !== "undefined") {
                 localStorage.setItem("ark_active_uid", uid);
             }
-            await pullData.smartImport(pendingData, sId, true);
+            await pullData.smartImport(
+                pendingData,
+                sId,
+                true,
+                isRecoveryEnabled,
+            );
 
             if (uid) {
                 const currentLocalData = get(pullData);
@@ -910,7 +944,8 @@
                                     on:input={handleInputProcessing}
                                     placeholder={platformTab === "android" ||
                                     platformTab === "pc-web" ||
-                                    platformTab === "pc2" || platformTab === "pc3"
+                                    platformTab === "pc2" ||
+                                    platformTab === "pc3"
                                         ? $t("import.placeholder_token") ||
                                           "Paste Token here"
                                         : $t("import.placeholder_url") ||
@@ -1059,7 +1094,8 @@
                                             {$t(
                                                 platformTab === "android" ||
                                                     platformTab === "pc-web" ||
-                                                    platformTab === "pc2" || platformTab === "pc3"
+                                                    platformTab === "pc2" ||
+                                                    platformTab === "pc3"
                                                     ? "import.save_label_token"
                                                     : "import.save_label_url",
                                             )}
@@ -1072,7 +1108,8 @@
                                                     platformTab === "android" ||
                                                         platformTab ===
                                                             "pc-web" ||
-                                                        platformTab === "pc2" || platformTab === "pc3"
+                                                        platformTab === "pc2" ||
+                                                        platformTab === "pc3"
                                                         ? "import.save_desc_token"
                                                         : "import.save_desc_url",
                                                 )}
@@ -1177,6 +1214,45 @@
                                 class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
                             >
                                 {$t("import.enableGlobalStats")}
+                            </span>
+                        </label>
+
+                        <label
+                            class="flex items-center gap-3 select-none group cursor-pointer w-fit"
+                        >
+                            <div class="relative flex items-center">
+                                <input
+                                    type="checkbox"
+                                    bind:checked={isRecoveryEnabled}
+                                    class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-red-500 checked:bg-red-500 transition-all"
+                                />
+                                <svg
+                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="4"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                            </div>
+                            <span
+                                class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
+                            >
+                                {$t("import.recoveryStats") ||
+                                    "Восстановление записей"}
+                                <Tooltip
+                                    text={$t("import.recoveryTooltip") ||
+                                        "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
+                                >
+                                    <span
+                                        class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
+                                    >
+                                        <Icon name="info" class="m-1 w-4 h-4" />
+                                    </span>
+                                </Tooltip>
                             </span>
                         </label>
 

@@ -238,7 +238,10 @@
     "error_no_data": "Aucun tirage trouvé ou Lien Expiré",
     "error_unknown": "Erreur Inconnue",
     "error_network": "Bad Gateway (Erreur Réseau)",
-    "error_account_mismatch": "Incohérence de compte ! Vous avez déjà un historique entre {start} et {end}, mais les données importées diffèrent totalement. Vérifiez le compte sélectionné."
+    "error_account_mismatch": "Incohérence de compte ! Vous avez déjà un historique entre {start} et {end}, mais les données importées diffèrent totalement. Vérifiez le compte sélectionné.",
+    "recoveryStats": "Récupération des dossiers",
+    "recoveryTooltip": "Cocher cette case forcera la récupération de l'historique des recrutements si applicable. Cela peut aider en cas de perte partielle des enregistrements.",
+    "error_account_mismatch_recovery": "Incohérence de compte ! Aucun enregistrement correspondant trouvé, même en mode de récupération. Veuillez vérifier si vous avez sélectionné le bon compte."
   },
   "emptyState": {
     "noData": "Aucune entrée"

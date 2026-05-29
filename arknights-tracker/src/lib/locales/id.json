@@ -238,7 +238,10 @@
     "error_no_data": "Tidak ada pull ditemukan atau Tautan Kedaluwarsa",
     "error_unknown": "Kesalahan Tidak Diketahui",
     "error_network": "Bad Gateway (Masalah Jaringan)",
-    "error_account_mismatch": "Akun Tidak Cocok! Anda sudah memiliki riwayat antara {start} dan {end}, tetapi data yang diimpor berbeda total. Mohon periksa apakah Anda memilih akun yang benar."
+    "error_account_mismatch": "Akun Tidak Cocok! Anda sudah memiliki riwayat antara {start} dan {end}, tetapi data yang diimpor berbeda total. Mohon periksa apakah Anda memilih akun yang benar.",
+    "recoveryStats": "Pemulihan Catatan",
+    "recoveryTooltip": "Mencentang kotak ini akan memaksa pemulihan riwayat tarikan jika memungkinkan. Ini dapat membantu jika sebagian catatan tarikan hilang.",
+    "error_account_mismatch_recovery": "Ketidakcocokan Akun! Tidak ada catatan yang cocok ditemukan bahkan dalam mode pemulihan. Silakan periksa apakah Anda memilih akun yang benar."
   },
   "emptyState": {
     "noData": "Tidak ada entri"

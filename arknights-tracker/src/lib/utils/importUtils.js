@@ -386,8 +386,70 @@ export function calculateBannerStats(pulls, bannerId, accountServerId = null) {
     };
 }
 
-export function validateAccountConsistency(existingPulls, newPulls) {
+export function findLCSMatches(existingPulls, newPulls) {
+    if (!existingPulls.length || !newPulls.length) return [];
+    
+    const sortedExisting = [...existingPulls].sort(sortPulls);
+    const sortedNew = [...newPulls].sort(sortPulls);
+    
+    const n = sortedExisting.length;
+    const m = sortedNew.length;
+    
+    const dp = Array.from({ length: n + 1 }, () => new Int32Array(m + 1));
+    
+    const getWeight = (p) => {
+        if (p.rarity === 6) return 100;
+        if (p.rarity === 5) return 10;
+        if (p.rarity === 4) return 2;
+        return 1;
+    };
+    
+    const norm = (s) => String(s || '').toLowerCase().trim();
+    const isSameType = (a, b) => !a.type || !b.type || a.type === b.type;
+    
+    for (let i = 1; i <= n; i++) {
+        const oldP = sortedExisting[i - 1];
+        const oldWeight = getWeight(oldP);
+        for (let j = 1; j <= m; j++) {
+            const newP = sortedNew[j - 1];
+            if (norm(oldP.name) === norm(newP.name) && isSameType(oldP, newP)) {
+                dp[i][j] = dp[i - 1][j - 1] + oldWeight;
+            } else {
+                dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    
+    let i = n, j = m;
+    const matches = [];
+    while (i > 0 && j > 0) {
+        const oldP = sortedExisting[i - 1];
+        const newP = sortedNew[j - 1];
+        if (norm(oldP.name) === norm(newP.name) && isSameType(oldP, newP)) {
+            matches.push({ oldPull: oldP, newPull: newP });
+            i--;
+            j--;
+        } else if (dp[i - 1][j] >= dp[i][j - 1]) {
+            i--;
+        } else {
+            j--;
+        }
+    }
+    return matches.reverse();
+}
+
+export function validateAccountConsistency(existingPulls, newPulls, isRecoveryEnabled = false) {
     if (!existingPulls.length || !newPulls.length) return;
+    
+    if (isRecoveryEnabled) {
+        const matches = findLCSMatches(existingPulls, newPulls);
+        if (matches.length === 0) {
+            const $t = get(t);
+            throw new Error($t("import.error_account_mismatch_recovery") || "Account Mismatch! No matching records found even in recovery mode. Please check if you selected the correct account.");
+        }
+        return;
+    }
+    
     const sortedNew = [...newPulls].sort((a, b) => a.time - b.time);
     const minNewTime = sortedNew[0].time.getTime();
     const maxNewTime = sortedNew[sortedNew.length - 1].time.getTime();

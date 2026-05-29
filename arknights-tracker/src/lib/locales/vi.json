@@ -238,7 +238,10 @@
     "error_no_data": "Không tìm thấy lượt quay nào hoặc Liên kết hết hạn",
     "error_unknown": "Lỗi không xác định",
     "error_network": "Bad Gateway (Lỗi mạng)",
-    "error_account_mismatch": "Tài khoản không khớp! Bạn đã có lịch sử giữa {start} và {end}, nhưng dữ liệu nhập vào khác hoàn toàn. Vui lòng kiểm tra lại tài khoản đã chọn."
+    "error_account_mismatch": "Tài khoản không khớp! Bạn đã có lịch sử giữa {start} và {end}, nhưng dữ liệu nhập vào khác hoàn toàn. Vui lòng kiểm tra lại tài khoản đã chọn.",
+    "recoveryStats": "Khôi phục hồ sơ",
+    "recoveryTooltip": "Chọn hộp này sẽ bắt buộc khôi phục lịch sử chiêu mộ nếu có thể. Điều này có thể giúp ích trong trường hợp mất một phần hồ sơ chiêu mộ.",
+    "error_account_mismatch_recovery": "Tài khoản không khớp! Không tìm thấy hồ sơ khớp ngay cả trong chế độ khôi phục. Vui lòng kiểm tra xem bạn đã chọn đúng tài khoản chưa."
   },
   "emptyState": {
     "noData": "Không có dữ liệu"

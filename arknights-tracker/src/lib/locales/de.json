@@ -238,7 +238,10 @@
     "error_no_data": "Keine Ziehungen gefunden oder Link abgelaufen",
     "error_unknown": "Unbekannter Fehler",
     "error_network": "Bad Gateway (Verbindungsfehler)",
-    "error_account_mismatch": "Konto stimmt nicht überein! Du hast bereits einen Verlauf zwischen {start} und {end}, aber die importierten Daten unterscheiden sich komplett. Bitte überprüfe, ob du das richtige Konto gewählt hast."
+    "error_account_mismatch": "Konto stimmt nicht überein! Du hast bereits einen Verlauf zwischen {start} und {end}, aber die importierten Daten unterscheiden sich komplett. Bitte überprüfe, ob du das richtige Konto gewählt hast.",
+    "recoveryStats": "Verlaufswiederherstellung",
+    "recoveryTooltip": "Das Aktivieren dieses Kontrollkästchens erzwingt die Wiederherstellung des Rekrutierungsverlaufs, falls zutreffend. Dies kann bei partiellem Verlust von Rekrutierungsdaten helfen.",
+    "error_account_mismatch_recovery": "Konto-Mismatch! Selbst im Wiederherstellungsmodus wurden keine übereinstimmenden Daten gefunden. Bitte überprüfe, ob das richtige Konto ausgewählt ist."
   },
   "emptyState": {
     "noData": "Keine Einträge"

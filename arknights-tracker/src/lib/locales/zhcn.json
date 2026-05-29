@@ -238,7 +238,10 @@
     "error_no_data": "未找到寻访记录或链接已过期",
     "error_unknown": "未知错误",
     "error_network": "Bad Gateway (网络错误)",
-    "error_account_mismatch": "账号不匹配！您已经拥有 {start} 至 {end} 的记录，但导入的数据完全不同。请检查是否选择了正确的账号。"
+    "error_account_mismatch": "账号不匹配！您已经拥有 {start} 至 {end} 的记录，但导入的数据完全不同。请检查是否选择了正确的账号。",
+    "recoveryStats": "记录恢复",
+    "recoveryTooltip": "勾选此框将强制恢复寻访记录（如果适用）。这有助于解决部分寻访记录丢失的问题。",
+    "error_account_mismatch_recovery": "账号不匹配！即使在恢复模式下也找不到匹配的的记录。请检查是否选择了正确的账号。"
   },
   "emptyState": {
     "noData": "无记录"

@@ -238,7 +238,10 @@
     "error_no_data": "Nessuna estrazione trovata o Link Scaduto",
     "error_unknown": "Errore Sconosciuto",
     "error_network": "Bad Gateway (Errore di Rete)",
-    "error_account_mismatch": "Account non corrispondente! Hai già una cronologia tra {start} e {end}, ma i dati importati sono completamente diversi. Controlla di aver selezionato l'account corretto."
+    "error_account_mismatch": "Account non corrispondente! Hai già una cronologia tra {start} e {end}, ma i dati importati sono completamente diversi. Controlla di aver selezionato l'account corretto.",
+    "recoveryStats": "Ripristino dei record",
+    "recoveryTooltip": "Selezionando questa casella si forzerà il ripristino della cronologia dei reclutamenti, se applicabile. Questo può aiutare in caso di perdita parziale dei record.",
+    "error_account_mismatch_recovery": "Mancata corrispondenza dell'account! Nessun record corrispondente trovato anche in modalità di ripristino. Verifica se hai selezionato l'account corretto."
   },
   "emptyState": {
     "noData": "Nessuna voce"

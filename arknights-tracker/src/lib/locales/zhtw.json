@@ -238,7 +238,10 @@
     "error_no_data": "未找到尋訪記錄或連結已過期",
     "error_unknown": "未知錯誤",
     "error_network": "Bad Gateway (網路錯誤)",
-    "error_account_mismatch": "帳號不符！您已經擁有 {start} 至 {end} 的記錄，但匯入的資料完全不同。請檢查是否選擇了正確的帳號。"
+    "error_account_mismatch": "帳號不符！您已經擁有 {start} 至 {end} 的記錄，但匯入的資料完全不同。請檢查是否選擇了正確的帳號。",
+    "recoveryStats": "記錄恢復",
+    "recoveryTooltip": "勾選此框將強制恢復尋訪記錄（如果適用）。這有助於解決部分尋訪記錄丟失的問題。",
+    "error_account_mismatch_recovery": "帳號不匹配！即使在恢復模式下也找不到匹配的的記錄。請檢查是否選擇了正確的帳號。"
   },
   "emptyState": {
     "noData": "無記錄"
