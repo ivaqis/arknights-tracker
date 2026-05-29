@@ -7,7 +7,7 @@
 
 </script>
 
-<div class="flex flex-row h-10 pl-2 gap-2 w-full items-center rounded-[6px] bg-[#2f2f2f] dark:bg-[#1f1f1f]">
+<div class="flex flex-row min-h-10 pl-2 gap-2 w-full items-center rounded-[6px] bg-[#2f2f2f] dark:bg-[#1f1f1f]">
 
     {#if (iconId && iconVariant)}
         <div class="flex justify-center items-center h-8 w-8">

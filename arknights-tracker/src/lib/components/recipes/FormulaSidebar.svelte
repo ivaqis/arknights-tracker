@@ -77,13 +77,13 @@
 
 </script>
 
-<div class="min-w-[400px] overflow-auto sticky top-10 h-[95vh]
+<div class="min-w-[400px] overflow-auto h-full
     bg-white dark:bg-[#383838] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors">
 
-    {#if (currentItemId)}
+    {#if (item)}
         <div class="flex flex-col justify-start w-full h-full">
 
-            <div class="relative flex pl-6 pr-6 pt-3 pb-3 min-h-16 overflow-hidden border-b border-gray-200 dark:border-[#444]">
+            <div class="flex items-center pl-6 pr-6 pt-3 pb-3 min-h-16 overflow-hidden border-b border-gray-200 dark:border-[#444]">
                 <h2 class="font-sdk text-xl md:text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] leading-tight drop-shadow-sm">
                     {$t(`itemNames.${currentItemId}`)}
                 </h2>
@@ -105,6 +105,7 @@
 
                             <Formula
                                 formula={HubCraft.getHubCraft(craftId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -119,6 +120,7 @@
 
                             <Formula
                                 formula={ManualCraft.getManualCraft(craftId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -133,6 +135,7 @@
 
                             <Formula
                                 formula={Miner.getMiner(minerId).getMiningFormula(currentItemId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -147,6 +150,7 @@
 
                             <Formula
                                 formula={Pump.getPump(pumpId).getPumpingFormula(currentItemId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -164,6 +168,7 @@
 
                                     <Formula
                                         formula={MachineCraft.getMachineCraft(craftId)}
+                                        highlightItemId={currentItemId}
                                     />
 
                                 {/each}
@@ -189,6 +194,7 @@
 
                             <Formula
                                 formula={HubCraft.getHubCraft(craftId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -203,6 +209,7 @@
 
                             <Formula
                                 formula={ManualCraft.getManualCraft(craftId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -220,6 +227,7 @@
 
                                     <Formula
                                         formula={MachineCraft.getMachineCraft(craftId)}
+                                        highlightItemId={currentItemId}
                                     />
 
                                 {/each}
@@ -245,6 +253,7 @@
 
                                 <Formula
                                     formula={MachineCraft.getMachineCraft(craftId)}
+                                    highlightItemId={currentItemId}
                                 />
 
                             {/each}
@@ -263,6 +272,7 @@
 
                             <Formula
                                 formula={miner.getMiningFormula(itemId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}
@@ -279,6 +289,7 @@
 
                             <Formula
                                 formula={pump.getPumpingFormula(itemId)}
+                                highlightItemId={currentItemId}
                             />
 
                         {/each}

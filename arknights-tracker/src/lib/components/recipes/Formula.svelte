@@ -4,6 +4,7 @@
     import Icons from "$lib/components/Icons.svelte";
 
     export let formula;
+    export let highlightItemId = "";
 
     $: mode = formula.formulaType;
 
@@ -50,7 +51,7 @@
     
 </script>
 
-<div class="flex flex-row gap-3 h-[60px] w-[500px]">
+<div class="flex flex-row gap-3 h-[60px] w-full">
 
     <div class="flex flex-row gap-2">
 
@@ -65,7 +66,12 @@
                     </div>
                 {/if}
 
-                <ItemStackCard itemId={itemId} amount={count} size="micro"/>
+                <ItemStackCard
+                    itemId={itemId}
+                    amount={count}
+                    size="micro"
+                    highlight={highlightItemId === itemId}
+                />
             {/each}
 
         {:else if (mode === "miningFormula")}
@@ -78,7 +84,12 @@
                         </span>
                 </div>
 
-                <ItemStackCard itemId={itemId} amount={count} size="micro"/>
+                <ItemStackCard
+                    itemId={itemId}
+                    amount={count}
+                    size="micro"
+                    highlight={highlightItemId === itemId}
+                />
             {/each}
         {:else if (mode === "pumpingFormula")}
             <ResourcePointCard itemId={resourceItemId} resourcePoint="liquid" size="micro"/>
@@ -90,7 +101,12 @@
                         </span>
                 </div>
 
-                <ItemStackCard itemId={itemId} amount={count} size="micro"/>
+                <ItemStackCard
+                    itemId={itemId}
+                    amount={count}
+                    size="micro"
+                    highlight={highlightItemId === itemId}
+                />
             {/each}
         {/if}
 
@@ -116,7 +132,12 @@
                 </div>
             {/if}
 
-            <ItemStackCard itemId={itemId} amount={count} size="micro"/>
+            <ItemStackCard
+                itemId={itemId}
+                amount={count}
+                size="micro"
+                highlight={highlightItemId === itemId}
+            />
         {/each}
 
     </div>

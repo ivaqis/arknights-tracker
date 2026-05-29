@@ -11,6 +11,7 @@
     export let size = "default"; // "default" | "small" | "micro"
 
     export let showAmount = true;
+    export let highlight = false;
 
     $: item = Item.getItem(itemId);
 
@@ -45,12 +46,14 @@
         }
     })();
 
+    $: highlightRing = highlight ? "ring-2 ring-[#F9B90C]" : "";
+
     let isHovered = false;
     $: rarityColor = getRarityColor(item?.rarity ?? 1);
 </script>
 
 <div
-    class="relative flex flex-col cursor-pointer select-none group flex-shrink-0 {boxSize} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
+    class="relative flex flex-col cursor-pointer select-none group flex-shrink-0 {boxSize} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px] {highlightRing}"
     role="presentation"
     on:mouseenter={() => (isHovered = true)}
     on:mouseleave={() => (isHovered = false)}

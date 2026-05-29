@@ -219,7 +219,7 @@
 </script>
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen flex flex-col xl:flex-row">
-    <div class="w-full xl:w-[70%]">
+    <div class="w-full xl:w-[calc(100%-max(470px,30%))] mr-6">
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
             <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
                 {$t("pages.recipes") || "Recipes"}
@@ -296,7 +296,7 @@
         </div>
     </div>
 
-    <div class="w-full xl:w-[30%] pb-8 pt-2 pl-6 sticky">
+    <div class="w-full xl:w-[max(470px,30%)] h-[95vh] pt-2 sticky">
         <FormulaSidebar currentItemId={selectedItemId} />
     </div>
 </div>
