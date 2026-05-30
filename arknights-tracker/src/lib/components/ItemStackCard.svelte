@@ -19,7 +19,14 @@
 
     $: item = Item.getItem(itemId);
 
-    $: tooltipText ??= showTooltip && item ? $t(`itemNames.${itemId}`) : "";
+    let tooltipFinalText;
+
+    $: {
+        if (showTooltip) {
+            if (tooltipText) tooltipFinalText = tooltipText;
+            else if (item) tooltipFinalText = $t(`itemNames.${itemId}`);
+        }
+    }
 
     let isFullBottle;
     let fullBottle;
@@ -59,7 +66,7 @@
 </script>
 
 <Tooltip
-    text={tooltipText}
+    text={tooltipFinalText}
 >
 
     <div
