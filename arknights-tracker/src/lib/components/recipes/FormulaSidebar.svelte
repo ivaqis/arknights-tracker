@@ -77,7 +77,7 @@
 
 </script>
 
-<div class="min-w-[400px] overflow-auto h-full
+<div class="flex overflow-auto h-full w-full
     bg-white dark:bg-[#383838] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors">
 
     {#if (item)}
@@ -303,7 +303,7 @@
 
     {:else}
 
-        <div class="flex flex-col justify-center items-center w-full h-full">
+        <div class="flex-1 flex flex-col justify-center items-center">
             <Icons name="noData" class="w-16 h-16" />
         </div>
 
