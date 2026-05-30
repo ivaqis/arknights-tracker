@@ -444,7 +444,7 @@
                 });
 
                 console.log(
-                    `Sending ${allLocalPulls.length} pulls on backend for syncing...`,
+                    `[Ratings] Sending ${allLocalPulls.length} pulls on backend for syncing...`,
                 );
 
                 await fetch(`${API_BASE}/sync-history`, {

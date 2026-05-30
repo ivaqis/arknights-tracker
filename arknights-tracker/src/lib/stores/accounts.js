@@ -120,7 +120,7 @@ function createAccountStore() {
                 if (currentAccountIndex >= 0) {
                     const currentAcc = list[currentAccountIndex];
                     if (!currentAcc.serverUid) {
-                        console.log(`Linking Game UID ${gameUid} to existing slot "${currentAcc.name}"`);
+                        console.log(`[Accounts] Linking Game UID ${gameUid} to existing slot "${currentAcc.name}"`);
                         const newList = [...list];
                         newList[currentAccountIndex] = {
                             ...currentAcc,
@@ -231,7 +231,7 @@ function createAccountStore() {
                  if (browser) localStorage.removeItem("user_uid");
 
                  window.dispatchEvent(new CustomEvent('ark_tracker_clear_data', { detail: { id: current } }));
-                 console.log("Аккаунт полностью очищен.");
+                 console.log("[Accounts] Account fully cleared.");
              }
         }
     };

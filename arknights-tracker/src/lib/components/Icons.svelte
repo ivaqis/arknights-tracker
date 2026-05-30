@@ -3211,7 +3211,7 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <path d="M37 10H30V6H14V10H7V0H37V10Z" fill="currentColor" />
+        <path d="M37 11H7V0H37V11ZM14 6V10.4004H30V6H14Z" fill="currentColor" />
         <path
             d="M44 38H0V10H44V38ZM9 16L12 19V22H9L6 19H5V27H14L20.5 33.5L23.5 30.5L17 24V15H9V16Z"
             fill="currentColor"

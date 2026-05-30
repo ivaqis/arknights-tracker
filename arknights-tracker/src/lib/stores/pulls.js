@@ -76,7 +76,6 @@ function createPullStore() {
                 const legacyData = localStorage.getItem('ark_tracker_pulls');
 
                 if (legacyData && id === 'main') {
-                    console.log("Migrating legacy data to Main account...");
                     const parsedLegacy = JSON.parse(legacyData);
                     restoreDatesAndStats(parsedLegacy, serverId);
                     set(parsedLegacy);

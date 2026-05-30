@@ -129,7 +129,7 @@ export async function checkSync(currentUser, freshSnapshot = null) {
             let cloudFullBackup = null;
             try { cloudFullBackup = JSON.parse(cloudData.jsonData); } catch (e) { }
 
-            console.log(`📊 Check: Local(${localTotal}) vs Cloud(${cloudTotal}).`);
+            console.log(`[Firebase] Check: Local(${localTotal}) vs Cloud(${cloudTotal}).`);
 
             if (localTotal === 0 && cloudTotal === 0) {
                 syncStatus.set("synced");
@@ -223,7 +223,7 @@ export async function uploadLocalData(freshSnapshot = null) {
     const currentUser = get(user);
     if (!currentUser || typeof window === 'undefined') return;
 
-    console.log("🚀 Starting Upload...");
+    console.log("[Firebase] Starting Upload...");
 
     try {
         let accounts = [];
@@ -246,7 +246,7 @@ export async function uploadLocalData(freshSnapshot = null) {
         accounts.forEach(acc => {
             if (acc.id === selectedId && freshSnapshot) {
                 fullBackup.data[acc.id] = freshSnapshot;
-                console.log(`Packed (Memory): ${acc.name}`);
+                console.log(`[Firebase] Packed (Memory): ${acc.name}`);
                 Object.values(freshSnapshot).forEach(catData => {
                     const list = catData?.pulls || [];
                     totalPulls += list.length;
@@ -257,7 +257,7 @@ export async function uploadLocalData(freshSnapshot = null) {
                 if (rawData) {
                     const parsed = JSON.parse(rawData);
                     fullBackup.data[acc.id] = parsed;
-                    console.log(`Packed (Disk): ${acc.name}`);
+                    console.log(`[Firebase] Packed (Disk): ${acc.name}`);
                     Object.values(parsed).forEach(catData => {
                         const list = catData?.pulls || [];
                         totalPulls += list.length;
@@ -269,7 +269,7 @@ export async function uploadLocalData(freshSnapshot = null) {
             }
         });
 
-        console.log(`Payload ready. Total: ${totalPulls}`);
+        console.log(`[Firebase] Payload ready. Total: ${totalPulls}`);
 
         const compressedBackup = compressDataForCloud(fullBackup);
         const jsonString = JSON.stringify(compressedBackup);
@@ -277,13 +277,13 @@ export async function uploadLocalData(freshSnapshot = null) {
         let sizeInBytes = 0;
         if (typeof window !== 'undefined') {
             sizeInBytes = new Blob([jsonString]).size;
-            console.log(`📦 Compressed size: ${(sizeInBytes / 1024).toFixed(2)} KB`);
+            console.log(`[Firebase] Compressed size: ${(sizeInBytes / 1024).toFixed(2)} KB`);
         } else {
             sizeInBytes = Buffer.byteLength(jsonString, 'utf8');
         }
 
         if (sizeInBytes > 1048487) {
-            throw new Error("Data too large even after compression.");
+            throw new Error("[Firebase] Data too large even after compression.");
         }
 
         const userRef = doc(db, "users", currentUser.uid);
@@ -302,7 +302,7 @@ export async function uploadLocalData(freshSnapshot = null) {
         if (analytics) logEvent(analytics, 'sync_upload', { total: totalPulls });
 
     } catch (e) {
-        console.error("🔥 Upload error", e);
+        console.error("[Firebase] Upload error", e);
         syncStatus.set("error");
     }
 }

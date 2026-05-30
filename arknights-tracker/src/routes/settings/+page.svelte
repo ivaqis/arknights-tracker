@@ -376,15 +376,14 @@
     let tempAccountName = "";
 
     function openRenameModal() {
-        console.log("Opening modal...", $selectedId);
         const currentAcc = $accounts.find((a) => a.id === $selectedId);
 
         if (currentAcc) {
-            console.log("Account found:", currentAcc.name);
+            console.log("[Accounts] Account found:", currentAcc.name);
             tempAccountName = currentAcc.name;
             showRenameModal = true;
         } else {
-            console.error("Account NOT found!");
+            console.error("[Accounts] Account NOT found!");
         }
     }
 
