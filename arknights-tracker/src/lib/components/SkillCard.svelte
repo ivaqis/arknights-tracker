@@ -37,15 +37,6 @@
         return `${charId}_${skillKey}`;
     })();
 
-    $: console.log(
-        "Key:",
-        skillKey,
-        "Weapon:",
-        weaponType,
-        "Result ID:",
-        skillImageId,
-    );
-
     let level = 12;
     let isTableMode = false;
 
