@@ -1,18 +1,17 @@
 <script>
     import {Item} from "$lib/classes/items/Item.js";
     import Images from "$lib/components/Images.svelte";
+    import {ResourcePoint} from "$lib/classes/items/ResourcePoint.js";
 
     export let itemId = "";
 
-    export let resourcePoint = ""; // "miner" | "liquid"
-
     export let size = "default"; // "default" | "small" | "micro"
 
-    $: item = Item.getItem(itemId);
+    $: resourcePoint = ResourcePoint.getResourcePointFromItemId(itemId);
+    $: item = resourcePoint?.getItem();
+
     $: iconId = item?.iconId;
-    $: resourceIconId = resourcePoint === "miner" ? "item_icon_bg_miner"
-            : resourcePoint === "liquid" ? "item_icon_bg_liquid"
-            : "item_icon_bg_miner";
+    $: resourceIconId = resourcePoint?.bgIconId;
 
     let boxSize = (() => {
         switch (size) {

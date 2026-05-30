@@ -76,7 +76,11 @@
             {/each}
 
         {:else if (mode === "miningFormula")}
-            <ResourcePointCard itemId={resourceItemId} resourcePoint="miner" size="micro"/>
+
+            <ResourcePointCard
+                itemId={resourceItemId}
+                size="micro"
+            />
 
             {#each ingredients as {count, itemId}}
                 <div class="flex items-center justify-center">
@@ -93,8 +97,13 @@
                     showTooltip={true}
                 />
             {/each}
+
         {:else if (mode === "pumpingFormula")}
-            <ResourcePointCard itemId={resourceItemId} resourcePoint="liquid" size="micro"/>
+
+            <ResourcePointCard
+                itemId={resourceItemId}
+                size="micro"
+            />
 
             {#each ingredients as {count, itemId}}
                 <div class="flex items-center justify-center">
@@ -111,6 +120,7 @@
                     showTooltip={true}
                 />
             {/each}
+
         {/if}
 
     </div>
@@ -121,7 +131,10 @@
                 {`${craftTimeMs / 1000}s`}
             </span>
         {/if}
-        <Icons name="doubleArrows" class="text-[#21272C] dark:text-[#FDFDFD] w-full"/>
+        <Icons
+            name="doubleArrows"
+            class="text-[#21272C] dark:text-[#FDFDFD] w-full"
+        />
     </div>
 
     <div class="flex flex-row gap-2">
