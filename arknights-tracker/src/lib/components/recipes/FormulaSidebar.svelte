@@ -21,6 +21,7 @@
     import {PowerStation} from "$lib/classes/buildings/PowerStation.js";
     import {PowerStationSearcher} from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
     import {PowerFormula} from "$lib/classes/crafts/PowerFormula.js";
+    import {Fuel} from "$lib/classes/items/Fuel.js";
 
     export let currentItemId = "";
 
@@ -83,6 +84,9 @@
         || !(manualCraftSearchResultAsIncome?.isEmpty() ?? true)
         || !(hubCraftSearchResultAsIncome?.isEmpty() ?? true)
         || !(powerStationSearchResult?.isEmpty() ?? true);
+
+    $: sortedEnableFuelIds = [...(powerStation?.enableFuelIds ?? [])]
+        .sort((a, b) => Fuel.getFuel(a).powerProvide - Fuel.getFuel(b).powerProvide);
 
 </script>
 
@@ -336,7 +340,7 @@
 
                         <SidebarSectorLabel text={$t("formulaSidebar.sector.availableFunctions")} />
 
-                        {#each powerStation.enableFuelIds as itemId}
+                        {#each sortedEnableFuelIds as itemId}
                             <Formula
                                 formula={PowerFormula.getPowerFormulaFromId(buildingId, itemId)}
                             />
