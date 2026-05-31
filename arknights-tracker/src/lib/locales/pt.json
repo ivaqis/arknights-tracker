@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "Núcleo de Automação",
       "manual": "Confecção"
+    },
+    "items": {
+      "power": "Energia"
     }
   },
   "resourcePointNames": {

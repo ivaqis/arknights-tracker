@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "แกน​หลัก​อัตโนมัติ",
       "manual": "การ​สร้าง"
+    },
+    "items": {
+      "power": "พลังงาน"
     }
   },
   "resourcePointNames": {

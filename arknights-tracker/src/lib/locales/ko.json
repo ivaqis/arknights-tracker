@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "프로토콜 코어",
       "manual": "간편 제작"
+    },
+    "items": {
+      "power": "발전"
     }
   },
   "resourcePointNames": {

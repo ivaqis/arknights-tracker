@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "Nucleo di automazione",
       "manual": "Creazione"
+    },
+    "items": {
+      "power": "Elettricità"
     }
   },
   "resourcePointNames": {

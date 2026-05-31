@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "協議核心",
       "manual": "簡易製作"
+    },
+    "items": {
+      "power": "發電"
     }
   },
   "resourcePointNames": {

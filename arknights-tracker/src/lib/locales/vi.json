@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "Lõi Tự Động Hóa",
       "manual": "Chế Tạo"
+    },
+    "items": {
+      "power": "Phát Điện"
     }
   },
   "resourcePointNames": {

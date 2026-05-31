@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "协议核心",
       "manual": "简易制作"
+    },
+    "items": {
+      "power": "发电"
     }
   },
   "resourcePointNames": {

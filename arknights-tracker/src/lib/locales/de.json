@@ -1901,6 +1901,9 @@
     "craftSource": {
       "hub": "Automationskern",
       "manual": "Herstellen"
+    },
+    "items": {
+      "power": "Energie"
     }
   },
   "resourcePointNames": {

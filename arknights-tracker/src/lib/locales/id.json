@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "Automasi Canggih",
       "manual": "Crafting"
+    },
+    "items": {
+      "power": "Daya"
     }
   },
   "resourcePointNames": {

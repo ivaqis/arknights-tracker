@@ -1964,6 +1964,9 @@
     "craftSource": {
       "hub": "Блок автоматизации",
       "manual": "Создание"
+    },
+    "items": {
+      "power": "Энергия"
     }
   },
   "resourcePointNames": {

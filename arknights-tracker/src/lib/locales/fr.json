@@ -1902,6 +1902,9 @@
     "craftSource": {
       "hub": "Noyau d'automatisation",
       "manual": "Fabrication"
+    },
+    "items": {
+      "power": "Énergie"
     }
   },
   "resourcePointNames": {

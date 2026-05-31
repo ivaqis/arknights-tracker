@@ -1962,6 +1962,9 @@
     "craftSource": {
       "hub": "Automation-Core",
       "manual": "Crafting"
+    },
+    "items": {
+      "power": "Power"
     }
   },
   "resourcePointNames": {
