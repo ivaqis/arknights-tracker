@@ -785,6 +785,22 @@
             Tribute
           </Button>
         </a>
+        <a
+          href="https://patreon.com/ivawa?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+          target="_blank"
+          rel="noreferrer"
+          class="no-underline block"
+      >
+          <Button
+              variant="black2"
+              className="w-full justify-center"
+          >
+              <div slot="icon">
+                  <Icon name="patreon" class="w-5 h-5" />
+              </div>
+              Patreon
+          </Button>
+        </a>
       </div>
     </div>
   </div>

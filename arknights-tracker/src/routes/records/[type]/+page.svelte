@@ -972,7 +972,7 @@
                                                             </Tooltip>
                                                         {:else if row.status === "guaranteed"}
                                                             <Tooltip
-                                                                textKey="status.guaranteed"
+                                                                textKey="{`${$t("status.guaranteed")} ${isWeapon ? "80" : "120"}`}"
                                                             >
                                                                 <Icon
                                                                     name="guaranteed"

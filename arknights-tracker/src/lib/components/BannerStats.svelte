@@ -311,7 +311,7 @@
 
                         {#if icon.isGuaranteed}
                              <div class="absolute -top-0.5 -right-0.5 z-[50] pointer-events-auto">
-                                <Tooltip textKey="status.guaranteed">
+                                <Tooltip textKey="{`${$t("status.guaranteed")} ${icon.isWeapon ? "80" : "120"}`}">
                                     <Icon
                                         name="guaranteed"
                                         class="w-5 h-5 stroke-[1.1px] text-[#D0926E] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)] hover:scale-110 transition-transform"
