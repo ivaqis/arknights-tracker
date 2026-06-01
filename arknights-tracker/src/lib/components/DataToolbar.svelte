@@ -435,6 +435,7 @@
             filters = {
                 rarity: [...filterOptions.rarity],
                 itemSubGroups: [...filterOptions.itemSubGroups],
+                factoryEvents: [...filterOptions.factoryEvents],
             }
         } else if (mode === "equipment") {
             filters = {

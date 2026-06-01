@@ -21,7 +21,7 @@
     $: filteredItems = (() => {
         const baseFiltered = [...allItems].filter((item) => {
             const query = searchQuery.toLowerCase().trim();
-            const localizedName = ($t(`items.${item.id}`) || "").toLowerCase();
+            const localizedName = ($t(`itemNames.${item.id}`) || "").toLowerCase();
             const idStr = (item.id || "").toLowerCase();
 
             const matchesSearch = !query || localizedName.includes(query) || idStr.includes(query);
@@ -248,9 +248,21 @@
 
                 <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-5 justify-start">
                     {#each displayedItems as item}
-                        <div class="flex justify-center">
+                        <button
+                            tabindex="0"
+                            class="relative w-[110px] h-[110px] rounded-[6px] cursor-pointer text-left aspect-square transition-all duration-300"
+                            on:click|preventDefault|stopPropagation={() => selectItem(item.id)}
+                        >
+
                             <ItemCard item={item} />
-                        </div>
+
+                            {#if isSelectedItem(item.id)}
+                                <div
+                                    class="absolute inset-[-3px] border-[3px] border-[#F9B90C] rounded-[9px] z-30 pointer-events-none"
+                                ></div>
+                            {/if}
+
+                        </button>
                     {/each}
                 </div>
 
