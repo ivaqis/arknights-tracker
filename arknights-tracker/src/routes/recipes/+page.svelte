@@ -21,7 +21,7 @@
     $: filteredItems = (() => {
         const baseFiltered = [...allItems].filter((item) => {
             const query = searchQuery.toLowerCase().trim();
-            const localizedName = ($t(`items.${item.id}`) || "").toLowerCase();
+            const localizedName = ($t(`itemNames.${item.id}`) || "").toLowerCase();
             const idStr = (item.id || "").toLowerCase();
 
             const matchesSearch = !query || localizedName.includes(query) || idStr.includes(query);
