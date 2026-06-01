@@ -228,7 +228,7 @@
     }
 </script>
 
-<div class="max-w-[100%] max-h-[100%] min-h-screen flex flex-col xl:flex-row">
+<div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
     <div class="w-full xl:w-[calc(100%-max(470px,30%))] mr-6">
         <div class="flex items-baseline flex-wrap gap-2 md:gap-3 mb-8 font-sdk">
             <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
