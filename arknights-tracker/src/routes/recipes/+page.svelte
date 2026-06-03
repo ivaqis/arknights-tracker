@@ -282,7 +282,7 @@
         <BottomSheet
             bind:isOpen={isBottomSheetOpen}
         >
-            <div class="w-full min-h-[50vh] h-full xl:w-[max(470px,30%)] xl:h-[95vh] sticky top-8">
+            <div class="w-full min-h-[50vh] h-full xl:h-[95vh] sticky top-8">
                 <FormulaSidebar currentItemId={selectedItemId} />
             </div>
         </BottomSheet>
