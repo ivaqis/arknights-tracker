@@ -286,6 +286,7 @@
                 <FormulaSidebar
                     currentItemId={selectedItemId}
                     mode="recipes"
+                    itemsAsLink={true}
                 />
             </div>
         </BottomSheet>

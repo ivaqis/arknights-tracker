@@ -10,12 +10,14 @@
     export let itemId = "";
     export let amount = 0;
     export let tooltipText;
+    export let url;
 
     export let size = "default"; // "default" | "small" | "micro"
 
     export let showAmount = true;
     export let highlight = false;
     export let showTooltip = false;
+    export let asLink = false;
 
     $: item = Item.getItem(itemId);
 
@@ -72,9 +74,11 @@
     text={tooltipFinalText}
 >
 
-    <div
+    <svelte:element
+        this={asLink ? "a" : "div"}
+        href={asLink ? url : undefined}
+        role={asLink ? "link" : "presentation"}
         class="relative flex flex-col cursor-pointer select-none group flex-shrink-0 {boxSize} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px] {highlightRing}"
-        role="presentation"
         on:mouseenter={() => (isHovered = true)}
         on:mouseleave={() => (isHovered = false)}
     >
@@ -155,6 +159,6 @@
             </div>
         {/if}
 
-    </div>
+    </svelte:element>
 
 </Tooltip>

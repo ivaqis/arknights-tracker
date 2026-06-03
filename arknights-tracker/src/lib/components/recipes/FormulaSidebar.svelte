@@ -22,11 +22,14 @@
     import {PowerStationSearcher} from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
     import {PowerFormula} from "$lib/classes/crafts/PowerFormula.js";
     import {Fuel} from "$lib/classes/items/Fuel.js";
+    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
     export let currentItemId = ""; // only if mode is "recipes" or "tree"
     export let currentBuildingId = ""; // only if mode is "building"
     export let currentFormulas; // only if mode is "tree"
     export let isHeadItem = false; // only if mode is "tree"
+
+    export let itemsAsLink = false;
 
     export let mode = ""; // "recipes" | "tree" | "building"
 
@@ -171,6 +174,7 @@
                             <Formula
                                 formula={formula}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
 
@@ -196,6 +200,7 @@
                             <Formula
                                 formula={HubCraft.getHubCraft(craftId)}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
                         {/each}
@@ -212,6 +217,7 @@
                             <Formula
                                 formula={ManualCraft.getManualCraft(craftId)}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
                         {/each}
@@ -228,6 +234,7 @@
                                 <Formula
                                     formula={Miner.getMiner(minerId).getMiningFormula(item.id)}
                                     highlightItemId={item.id}
+                                    itemsAsLink={itemsAsLink}
                                 />
 
                             {/if}
@@ -245,6 +252,7 @@
                                 <Formula
                                     formula={Pump.getPump(pumpId).getPumpingFormula(item.id)}
                                     highlightItemId={item.id}
+                                    itemsAsLink={itemsAsLink}
                                 />
 
                             {/if}
@@ -264,6 +272,7 @@
                                     <Formula
                                         formula={MachineCraft.getMachineCraft(craftId)}
                                         highlightItemId={item.id}
+                                        itemsAsLink={itemsAsLink}
                                     />
 
                                 {/each}
@@ -291,6 +300,7 @@
                             <Formula
                                 formula={HubCraft.getHubCraft(craftId)}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
                         {/each}
@@ -307,6 +317,7 @@
                             <Formula
                                 formula={ManualCraft.getManualCraft(craftId)}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
                         {/each}
@@ -325,6 +336,7 @@
                                     <Formula
                                         formula={MachineCraft.getMachineCraft(craftId)}
                                         highlightItemId={item.id}
+                                        itemsAsLink={itemsAsLink}
                                     />
 
                                 {/each}
@@ -343,6 +355,7 @@
                             <Formula
                                 formula={PowerFormula.getPowerFormulaFromId(powerStationId, item.id)}
                                 highlightItemId={item.id}
+                                itemsAsLink={itemsAsLink}
                             />
 
                         {/each}
@@ -368,6 +381,7 @@
                                 <Formula
                                     formula={MachineCraft.getMachineCraft(craftId)}
                                     highlightItemId={item.id}
+                                    itemsAsLink={itemsAsLink}
                                 />
 
                             {/each}
@@ -387,6 +401,7 @@
                                 <Formula
                                     formula={miner.getMiningFormula(itemId)}
                                     highlightItemId={item.id}
+                                    itemsAsLink={itemsAsLink}
                                 />
                             {/if}
                         {/each}
@@ -404,6 +419,7 @@
                                 <Formula
                                     formula={pump.getPumpingFormula(itemId)}
                                     highlightItemId={item.id}
+                                    itemsAsLink={itemsAsLink}
                                 />
                             {/if}
                         {/each}
@@ -419,6 +435,7 @@
                         {#each sortedEnableFuelIds as itemId}
                             <Formula
                                 formula={PowerFormula.getPowerFormulaFromId(buildingId, itemId)}
+                                itemsAsLink={itemsAsLink}
                             />
                         {/each}
 
@@ -429,7 +446,7 @@
 
             <div class="flex-shrink-0 flex items-center justify-center h-20 pl-6 pr-6 pt-4 pb-4 border-t border-gray-200 dark:border-[#444]">
                 <a
-                    href="recipes/tree"
+                    href="/recipes/tree?{getRecipeTreeLinkParameters(item.id)}"
                     class="h-full w-full flex items-center justify-center rounded-2xl bg-[#F9B90C] hover:bg-[#FFC01E]"
                 >
                     <span class="font-sdk text-xl text-[#21272C] dark:text-[#21272C]">

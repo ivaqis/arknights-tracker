@@ -3,9 +3,12 @@
     import ResourcePointCard from "$lib/components/recipes/ResourcePointCard.svelte";
     import Icons from "$lib/components/Icons.svelte";
     import FuelEnergyCard from "$lib/components/recipes/FuelEnergyCard.svelte";
+    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
     export let formula;
     export let highlightItemId = "";
+
+    export let itemsAsLink = false;
 
     $: mode = formula.formulaType;
 
@@ -85,6 +88,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -109,6 +114,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -133,6 +140,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -169,6 +178,8 @@
                 size="micro"
                 highlight={highlightItemId === itemId}
                 showTooltip={true}
+                asLink={itemsAsLink}
+                url="/recipes/tree?{getRecipeTreeLinkParameters(itemId, formula)}"
             />
         {/each}
 
