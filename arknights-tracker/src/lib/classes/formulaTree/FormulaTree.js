@@ -70,6 +70,8 @@ export class FormulaTree {
 
         const stack = [startNode];
 
+        this._itemsInTree[startNode.itemId] -= 1;
+
         while (stack.length > 0) {
             let node = stack.pop();
             let item = Item.getItem(node.itemId);
@@ -78,7 +80,7 @@ export class FormulaTree {
                 node.formula = this._getFirstFormula(item);
             }
 
-            if (this.getItemUseCount(item.id) >= 2) {
+            if (this.getItemUseCount(item.id) >= 1) {
                 continue;
             }
             this._addItemToUsedItemList(item.id);
@@ -104,7 +106,22 @@ export class FormulaTree {
 
                     node.addChildNode(childNode);
                 }
+
+                let childNodes = node.getChildNodesCopy();
+
+                while (childNodes.length > 0) {
+                    stack.push(childNodes.pop());
+                }
             }
+
+            // console.log(this.getItemUseCount(item.id))
+            // if (this.getItemUseCount(item.id) <= 1) {
+            //     let childNodes = node.getChildNodesCopy();
+            //
+            //     while (childNodes.length > 0) {
+            //         stack.push(childNodes.pop());
+            //     }
+            // }
         }
 
         this.updateNodePositions();
@@ -155,7 +172,7 @@ export class FormulaTree {
     }
 
     getIterator() {
-        return this.startNode.getIterator();
+        return this.startNode?.getIterator() ?? [];
     }
 
     getItemUseCount(itemId) {
