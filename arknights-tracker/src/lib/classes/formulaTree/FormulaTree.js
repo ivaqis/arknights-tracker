@@ -17,7 +17,7 @@ export class FormulaTree {
     _minerSearcher = new MinerSearcher();
     _pumpSearcher = new PumpSearcher();
 
-    _itemsInTree = new Set();
+    _itemsInTree = {};
 
     /**
      * @type {Node}
@@ -67,7 +67,9 @@ export class FormulaTree {
                 node.formula = this._getFirstFormula(item);
             }
 
-            if (this._isItemUsed(item.id)) continue;
+            if (this.getItemUseCount(item.id) >= 2) {
+                continue;
+            }
             this._addItemToUsedItemList(item.id);
 
             let formula = node.formula;
@@ -122,6 +124,7 @@ export class FormulaTree {
                 let childNode = childNodes.pop();
 
                 childNode._selfChildIndex = childNodes.length;
+                stack.push(childNode);
             }
 
             if (node.parentNode) {
@@ -135,16 +138,20 @@ export class FormulaTree {
         return this.startNode.getIterator();
     }
 
+    getItemUseCount(itemId) {
+        return this._itemsInTree[itemId] ?? 0;
+    }
+
     _clearUsedItemList() {
-        this._itemsInTree.clear();
+        this._itemsInTree = {};
     }
 
     _addItemToUsedItemList(itemId) {
-        this._itemsInTree.add(itemId);
+        this._itemsInTree[itemId] = this.getItemUseCount(itemId) + 1;
     }
 
     _isItemUsed(itemId) {
-        return this._itemsInTree.has(itemId);
+        return this._itemsInTree[itemId] > 0;
     }
 
     /**

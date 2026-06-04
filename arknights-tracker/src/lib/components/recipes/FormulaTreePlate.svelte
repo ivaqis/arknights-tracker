@@ -8,7 +8,7 @@
         startFormula
     } = $props();
 
-    const tree = new FormulaTree();
+    const tree = $state(new FormulaTree());
 
     let startItem = $derived(Item.getItem(startItemId));
 
@@ -16,10 +16,13 @@
         tree.setStartNode(startItem.id, startFormula);
     });
 
+    let nodes = $derived([...tree.getIterator()]);
+
+
 </script>
 
 <DragPlate>
-    <div class="h-20 w-20 bg-gray-600">
+    <div class="min-h-20 min-w-20 bg-gray-600">
 
     </div>
 </DragPlate>
