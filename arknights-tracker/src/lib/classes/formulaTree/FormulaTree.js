@@ -21,15 +21,27 @@ export class FormulaTree {
 
     _startNode;
 
+    constructor() {
+
+    }
+
     /**
      *
-     * @param {Item} startItem
+     * @returns {Node}
+     */
+    get startNode() {
+        return this._startNode;
+    }
+
+    /**
+     *
+     * @param {string} startItemId
      * @param {MachineCraft|ManualCraft|HubCraft|MiningFormula|PumpingFormula} startFormula
      */
-    constructor(startItem, startFormula = null) {
+    setStartNode(startItemId, startFormula = null) {
         this._startNode = new Node(
             startFormula,
-            startItem.id,
+            startItemId,
             null
         );
 
@@ -118,31 +130,37 @@ export class FormulaTree {
      * @private
      */
     _getFirstFormula(item) {
-        let functionList;
+        let formula;
+
+        formula = this._getFirstMiningFormula(item.id);
+
+        if (formula) return formula;
 
         if (item.subGroupId === "nature_liquid") {
-            functionList = [
-                this._getFirstMiningFormula,
-                this._getFirstPumpingFormula,
-                this._getFirstMachineCraft,
-                this._getFirstManualCraft,
-                this._getFirstHubCraft
-            ];
-        } else {
-            functionList = [
-                this._getFirstMiningFormula,
-                this._getFirstMachineCraft,
-                this._getFirstPumpingFormula,
-                this._getFirstManualCraft,
-                this._getFirstHubCraft
-            ];
-        }
+            formula = this._getFirstPumpingFormula(item.id);
 
-        for (let func of functionList) {
-            let formula = func(item.id);
+            if (formula) return formula;
+
+            formula = this._getFirstMachineCraft(item.id);
+
+            if (formula) return formula;
+        } else {
+            formula = this._getFirstMachineCraft(item.id);
+
+            if (formula) return formula;
+
+            formula = this._getFirstPumpingFormula(item.id);
 
             if (formula) return formula;
         }
+
+        formula = this._getFirstManualCraft(item.id);
+
+        if (formula) return formula;
+
+        formula = this._getFirstHubCraft(item.id);
+
+        if (formula) return formula;
 
         return null;
     }
