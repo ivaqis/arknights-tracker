@@ -12,13 +12,13 @@ export function getRecipeTreeLinkParameters(itemId, formula = null) {
     let formulaType = formula.formulaType;
 
     if (formulaType === "machineCraft" || formulaType === "manualCraft" || formulaType === "hubCraft") {
-        return `itemId=${formula.id}&type=${formulaType}&formulaId=${formula.id}`;
+        return `itemId=${itemId}&type=${formulaType}&formulaId=${formula.id}`;
     }
     if (formulaType === "miningFormula") {
-        return `itemId=${formula.id}&type=${formulaType}&buildingId=${formula.minerId}`;
+        return `itemId=${itemId}&type=${formulaType}&buildingId=${formula.minerId}`;
     }
     if (formulaType === "pumpingFormula") {
-        return `itemId=${formula.id}&type=${formulaType}&buildingId=${formula.pumpId}`;
+        return `itemId=${itemId}&type=${formulaType}&buildingId=${formula.pumpId}`;
     }
 
     return null;
