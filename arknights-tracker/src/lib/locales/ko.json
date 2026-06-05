@@ -1886,7 +1886,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "작은 설탕 그림",
     "item_wgslime_1_hsmob_1_grass_2_1": "드래곤 버블 채소 젤리",
     "item_wgslime_1_wgthorns_1_1": "신비한 탄산음료",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "기름 폭발 볶음"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "기름 폭발 볶음",
+    "item_drop_agdisk_1": "전도 초상석",
+    "item_drop_agshield_1": "천연 결정 덩어리",
+    "item_drop_hsbear_1": "하울러비스트의 털 묶음",
+    "item_drop_hsmino_1": "청파죽령",
+    "item_drop_hstiger_1": "레이커비스트의 긴 털",
+    "item_drop_hvybow_1": "대형 안개의 쇠뇌",
+    "item_drop_lbroshan_1": "파괴자의 권갑",
+    "item_drop_lbtough_1": "산산조각 난 도끼날",
+    "item_drop_sandb_1": "큰 도끼뿔",
+    "item_drop_wgabyss_1": "속성 발효주"
   },
   "buildingNames": {
     "component_mc_1": "부품 가공기",

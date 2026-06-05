@@ -1886,7 +1886,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Lukisan Gula Mini",
     "item_wgslime_1_hsmob_1_grass_2_1": "Jeli Sayur Lung Gembul",
     "item_wgslime_1_wgthorns_1_1": "Soda Misteri",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Gorengan Dobel Renyah"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Gorengan Dobel Renyah",
+    "item_drop_agdisk_1": "Batu Effigy Konduktans",
+    "item_drop_agshield_1": "Batangan Chrysopolis Alami",
+    "item_drop_hsbear_1": "Jalinan Bulu Howlerbeast",
+    "item_drop_hsmino_1": "Lonceng Bambu Qingbo",
+    "item_drop_hstiger_1": "Bulu Panjang Rakerbeast",
+    "item_drop_hvybow_1": "Ballista Berbalut Kabut",
+    "item_drop_lbroshan_1": "Gauntlet Siegeknuckle",
+    "item_drop_lbtough_1": "Bilah Kapak Pecah",
+    "item_drop_sandb_1": "Tanduk Kapak",
+    "item_drop_wgabyss_1": "Vintage Instan"
   },
   "buildingNames": {
     "component_mc_1": "Unit Pengepas",

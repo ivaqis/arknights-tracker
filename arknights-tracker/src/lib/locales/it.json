@@ -1886,7 +1886,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Mini dipinto zuccherino",
     "item_wgslime_1_hsmob_1_grass_2_1": "Verdure cicciodrago in gelatina",
     "item_wgslime_1_wgthorns_1_1": "Bibita misteriosa",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Croccodoppio in padella"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Croccodoppio in padella",
+    "item_drop_agdisk_1": "Pietra effigie conduttiva",
+    "item_drop_agshield_1": "Lingotto di chrysopolis naturale",
+    "item_drop_hsbear_1": "Treccia di bestia urlatrice",
+    "item_drop_hsmino_1": "Campanelli di bambù di Qingbo",
+    "item_drop_hstiger_1": "Lungomanto di rastrobestia",
+    "item_drop_hvybow_1": "Balestra infusa di foschia",
+    "item_drop_lbroshan_1": "Coprimani di noccassalto",
+    "item_drop_lbtough_1": "Lama d'ascia infranta",
+    "item_drop_sandb_1": "Cornoscure",
+    "item_drop_wgabyss_1": "Spirito istantaneo"
   },
   "buildingNames": {
     "component_mc_1": "Unità di adattamento",

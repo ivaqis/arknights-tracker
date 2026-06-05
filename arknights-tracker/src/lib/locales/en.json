@@ -1957,7 +1957,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Mini Sugar Painting",
     "item_wgslime_1_hsmob_1_grass_2_1": "Chubby Lung Jellied Greens",
     "item_wgslime_1_wgthorns_1_1": "Mystery Soda",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Pan-Fried Double Crisp"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Pan-Fried Double Crisp",
+    "item_drop_agdisk_1": "Conductive Effigy Stone",
+    "item_drop_agshield_1": "Natural Chrysopolis Ingot",
+    "item_drop_hsbear_1": "Howlerbeast Braid",
+    "item_drop_hsmino_1": "Qingbo Bamboo Chimes",
+    "item_drop_hstiger_1": "Rakerbeast Longfur",
+    "item_drop_hvybow_1": "Haze-Soaked Ballista",
+    "item_drop_lbroshan_1": "Siegeknuckles Gauntlets",
+    "item_drop_lbtough_1": "Shattered Axe Blade",
+    "item_drop_sandb_1": "Axehorn",
+    "item_drop_wgabyss_1": "Instant Vintage"
   },
   "buildingNames": {
     "component_mc_1": "Fitting Unit",

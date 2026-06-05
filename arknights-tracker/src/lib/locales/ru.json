@@ -1948,7 +1948,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Карамельная картинка",
     "item_wgslime_1_hsmob_1_grass_2_1": "Овощное желе «Пухлик-лун»",
     "item_wgslime_1_wgthorns_1_1": "Загадочная газировка",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Двойная жареная хрустяшка"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Двойная жареная хрустяшка",
+    "item_drop_agdisk_1": "Проводящий камень пугала",
+    "item_drop_agshield_1": "Слиток натурального хризополиса",
+    "item_drop_hsbear_1": "Косичка воющего зверя",
+    "item_drop_hsmino_1": "Бамбуковая подвеска из Циньбо",
+    "item_drop_hstiger_1": "Шерсть хитрого зверя",
+    "item_drop_hvybow_1": "Тенепламенная баллиста",
+    "item_drop_lbroshan_1": "Рукавицы осадного кастетчика",
+    "item_drop_lbtough_1": "Расколотое лезвие топора",
+    "item_drop_sandb_1": "Рог-секира",
+    "item_drop_wgabyss_1": "Скороброженка"
   },
   "buildingNames": {
     "component_mc_1": "Модуль штамповки",

@@ -1886,7 +1886,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Tranh Đường Nhỏ",
     "item_wgslime_1_hsmob_1_grass_2_1": "Thạch Rau Xanh Chubby Lung",
     "item_wgslime_1_wgthorns_1_1": "Nước Ngọt Bí Ẩn",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Siêu Giòn Áp Chảo"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Siêu Giòn Áp Chảo",
+    "item_drop_agdisk_1": "Đá Điêu Khắc Quái Tượng",
+    "item_drop_agshield_1": "Thỏi Chrysopolis Tự Nhiên",
+    "item_drop_hsbear_1": "Bím Tóc Quái Gầm Rú",
+    "item_drop_hsmino_1": "Chuông Gió Trại Thanh Ba",
+    "item_drop_hstiger_1": "Lông Dài Quái Cào",
+    "item_drop_hvybow_1": "Nỏ Bắn Đá Tẩm Sương Mù",
+    "item_drop_lbroshan_1": "Giáp Tay Công Thành",
+    "item_drop_lbtough_1": "Lưỡi Rìu Vỡ Nát",
+    "item_drop_sandb_1": "Sừng Rìu",
+    "item_drop_wgabyss_1": "Rượu Cổ Điển Tức Thời"
   },
   "buildingNames": {
     "component_mc_1": "Máy Lắp Ráp",

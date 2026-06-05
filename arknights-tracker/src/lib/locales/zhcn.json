@@ -1886,7 +1886,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "小糖画",
     "item_wgslime_1_hsmob_1_grass_2_1": "龙泡泡蔬菜冻",
     "item_wgslime_1_wgthorns_1_1": "神秘气泡饮料",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "油爆“双脆”"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "油爆“双脆”",
+    "item_drop_agdisk_1": "导能肖像石",
+    "item_drop_agshield_1": "天然晶城锭",
+    "item_drop_hsbear_1": "咆兽的辫束",
+    "item_drop_hsmino_1": "清波竹铃",
+    "item_drop_hstiger_1": "彪兽的长绒",
+    "item_drop_hvybow_1": "浸雾大弩",
+    "item_drop_lbroshan_1": "破城者拳甲",
+    "item_drop_lbtough_1": "崩碎斧刃",
+    "item_drop_sandb_1": "大斧角",
+    "item_drop_wgabyss_1": "速成陈酿"
   },
   "buildingNames": {
     "component_mc_1": "配件机",
