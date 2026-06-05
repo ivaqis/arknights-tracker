@@ -47,6 +47,24 @@
         return `${y}-${m}-${d}`;
     }
 
+    function formatBannerDate(dateStr, locale) {
+        if (!dateStr) return "";
+        const parsed = new Date(dateStr.replace(" ", "T"));
+        if (isNaN(parsed.getTime())) return "";
+        try {
+            return new Intl.DateTimeFormat(locale, {
+                day: "2-digit",
+                month: "2-digit",
+                year: "2-digit"
+            }).format(parsed);
+        } catch (e) {
+            const y = String(parsed.getFullYear()).slice(-2);
+            const m = String(parsed.getMonth() + 1).padStart(2, '0');
+            const d = String(parsed.getDate()).padStart(2, '0');
+            return `${d}.${m}.${y}`;
+        }
+    }
+
     $: chartData = (() => {
         const rawTimeline = stats.timeline || [];
         if (!rawTimeline.length || !currentBanner) return rawTimeline;
@@ -229,11 +247,16 @@
             return b.type === selectedType;
         })
         .sort((a, b) => new Date(b.startTime) - new Date(a.startTime))
-        .map((b) => ({
-            value: b.id,
-            label: $t(`banners.${b.id}`) || b.name,
-            iconId: b.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : b.id,
-        }));
+        .map((b) => {
+            const startFormatted = formatBannerDate(b.startTime, $currentLocale);
+            const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentLocale) : ($t("permanent") || "Permanent");
+            return {
+                value: b.id,
+                label: $t(`banners.${b.id}`) || b.name,
+                subLabel: `${startFormatted} - ${endFormatted}`,
+                iconId: b.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : b.id,
+            };
+        });
 
     let selectedBannerId = "";
 

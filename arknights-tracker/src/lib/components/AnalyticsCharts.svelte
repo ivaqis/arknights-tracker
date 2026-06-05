@@ -3,15 +3,18 @@
   import { banners } from "$lib/data/banners";
   import Icon from "$lib/components/Icons.svelte";
 
+  import { getWeaponCategory } from "$lib/utils/importUtils";
+
   export let rawPulls = [];
   export let bannerType = "";
 
   $: isWeapon = bannerType.toLowerCase().includes("weap") || bannerType.toLowerCase().includes("wepon");
   $: showHistoryGraph = 
-      bannerType !== "standard" && 
+      (bannerType !== "standard" && 
       bannerType !== "new-player" && 
       !bannerType.includes("new") && 
-      !isWeapon;
+      !isWeapon) || 
+      (bannerType === "weap-special" || bannerType === "weap-standard");
   $: totalCount = rawPulls.length;
   $: count4 = rawPulls.filter((p) => p.rarity === 4).length;
   $: count5 = rawPulls.filter((p) => p.rarity === 5).length;
@@ -23,7 +26,12 @@
         #D0926E ${pct4 + pct5}% 100%
     )`;
   $: timelineData = (() => {
-    const relevantBanners = banners.filter((b) => b.type === bannerType);
+    const relevantBanners = banners.filter((b) => {
+      if (bannerType === "weap-special" || bannerType === "weap-standard") {
+        return getWeaponCategory(b.id) === bannerType;
+      }
+      return b.type === bannerType;
+    });
     const grouped = {};
     const sortedPulls = [...rawPulls].sort(
       (a, b) => new Date(a.time).getTime() - new Date(b.time).getTime(),

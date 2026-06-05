@@ -11,6 +11,7 @@
     import { currencies } from "$lib/data/items/currencies";
     import { isDarkMode } from "$lib/stores/theme";
     import { onMount } from "svelte";
+    import { getWeaponCategory } from "$lib/utils/importUtils";
 
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icons.svelte";
@@ -21,7 +22,107 @@
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;
-    $: bannerData = $pullData[bannerType] || { pulls: [], stats: {} };
+    $: isAllWeaponCategory = bannerType === "weap-special" || bannerType === "weap-standard";
+    $: bannerData = (() => {
+        if (isAllWeaponCategory) {
+            const subBannerIds = Object.keys($pullData).filter(
+                (key) => getWeaponCategory(key) === bannerType
+            );
+            
+            let combinedPulls = [];
+            subBannerIds.forEach(id => {
+                const store = $pullData[id];
+                if (store && Array.isArray(store.pulls)) {
+                    combinedPulls = [...combinedPulls, ...store.pulls];
+                }
+            });
+            
+            combinedPulls.sort((a, b) => {
+                const tDiff = new Date(a.time).getTime() - new Date(b.time).getTime();
+                if (tDiff !== 0) return tDiff;
+                return (Number(a.seqId) || 0) - (Number(b.seqId) || 0);
+            });
+
+            const total = combinedPulls.length;
+            const pulls6 = combinedPulls.filter(p => p.rarity === 6);
+            const pulls5 = combinedPulls.filter(p => p.rarity === 5);
+            
+            const count6 = pulls6.length;
+            const count5 = pulls5.length;
+            const percent6 = total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00";
+            const percent5 = total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00";
+            let sumPity6 = 0;
+            let sumPity5 = 0;
+            let p6Counters = {};
+            let p5Counters = {};
+
+            combinedPulls.forEach(p => {
+                const banner = getBannerForPull(p, bannerType);
+                const bid = banner ? banner.id : "other";
+
+                if (!p6Counters[bid]) p6Counters[bid] = 0;
+                if (!p5Counters[bid]) p5Counters[bid] = 0;
+
+                if (p.isFree) return;
+                
+                if (p.rarity === 6) {
+                    sumPity6 += p6Counters[bid] + 1;
+                    p6Counters[bid] = 0;
+                    p5Counters[bid] = 0;
+                } else if (p.rarity === 5) {
+                    sumPity5 += p5Counters[bid] + 1;
+                    p5Counters[bid] = 0;
+                    p6Counters[bid]++;
+                } else {
+                    p6Counters[bid]++;
+                    p5Counters[bid]++;
+                }
+            });
+
+            const avg6 = count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0";
+            const avg5 = count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0";
+
+            let won = 0;
+            let total5050 = 0;
+            pulls6.forEach(p => {
+                const status = p.status || p.gachaStatus;
+                if (status === "won") {
+                    won++;
+                    total5050++;
+                } else if (status === "lost") {
+                    total5050++;
+                }
+            });
+            const winRatePercent = total5050 > 0 ? Math.round((won / total5050) * 100) : 0;
+            const winRate = { won, total: total5050, percent: winRatePercent };
+
+            return {
+                pulls: combinedPulls,
+                stats: {
+                    total,
+                    count6,
+                    count5,
+                    percent6,
+                    percent5,
+                    avg6,
+                    avg5,
+                    winRate,
+                    pity6: 0,
+                    pity5: 0,
+                    guarantee120: 0,
+                    hasReceivedRateUp: true,
+                    mileage: {
+                        show: false,
+                        current: 0,
+                        max: 0,
+                        label: ""
+                    }
+                }
+            };
+        } else {
+            return $pullData[bannerType] || { pulls: [], stats: {} };
+        }
+    })();
     $: rawPulls = bannerData.pulls || [];
     $: stats = bannerData.stats || {};
     $: isNewPlayer = bannerType === "new-player" || bannerType === "new_player";
@@ -135,7 +236,20 @@
         },
     ];
 
-    function getBannerForPull(pullTime, pageType, itemName = null) {
+    function getBannerForPull(pull, pageType) {
+        if (!pull) return null;
+
+        const rawId = pull.rawPoolId || pull.bannerId;
+        if (rawId) {
+            const genericIds = ["special", "standard", "weapon", "weap-special", "weap-standard", "new-player", "joint", "other", "unknown"];
+            if (!genericIds.includes(rawId.toLowerCase())) {
+                const exactMatch = banners.find((b) => b.id === rawId);
+                if (exactMatch) return exactMatch;
+            }
+        }
+
+        const pullTime = pull.time;
+        const itemName = pull.name;
         const pTime = new Date(pullTime).getTime();
 
         const pType = pageType.toLowerCase();
@@ -297,6 +411,8 @@
         );
         let p6 = 0,
             p5 = 0;
+        let p6Counters = {};
+        let p5Counters = {};
         let bannerCounts = {};
 
         let rateUpCounters = {};
@@ -308,7 +424,7 @@
         let processed = sorted.map((pull, i) => {
             const p = { ...pull };
             p.pullNumber = i + 1;
-            const banner = getBannerForPull(p.time, bannerType);
+            const banner = getBannerForPull(p, bannerType);
             const bid = banner ? banner.id : "other";
 
             if (!bannerCounts[bid]) bannerCounts[bid] = 0;
@@ -335,16 +451,38 @@
             bannerCounts[bid]++;
             if (!isFree) {
                 if (p.rarity === 6) {
-                    p.pity = p6 + 1;
-                    p6 = 0;
-                    p5 = 0;
+                    if (isWeapon) {
+                        if (!p6Counters[bid]) p6Counters[bid] = 0;
+                        p.pity = p6Counters[bid] + 1;
+                        p6Counters[bid] = 0;
+                        p5Counters[bid] = 0;
+                    } else {
+                        p.pity = p6 + 1;
+                        p6 = 0;
+                        p5 = 0;
+                    }
                 } else if (p.rarity === 5) {
-                    p.pity = p5 + 1;
-                    p5 = 0;
-                    p6++;
+                    if (isWeapon) {
+                        if (!p5Counters[bid]) p5Counters[bid] = 0;
+                        if (!p6Counters[bid]) p6Counters[bid] = 0;
+                        p.pity = p5Counters[bid] + 1;
+                        p5Counters[bid] = 0;
+                        p6Counters[bid]++;
+                    } else {
+                        p.pity = p5 + 1;
+                        p5 = 0;
+                        p6++;
+                    }
                 } else {
-                    p6++;
-                    p5++;
+                    if (isWeapon) {
+                        if (!p6Counters[bid]) p6Counters[bid] = 0;
+                        if (!p5Counters[bid]) p5Counters[bid] = 0;
+                        p6Counters[bid]++;
+                        p5Counters[bid]++;
+                    } else {
+                        p6++;
+                        p5++;
+                    }
                     p.pity = 1;
                 }
             } else {
@@ -549,86 +687,88 @@
                             </div>
                         {/if}
 
-                        <div class="flex justify-between items-center">
-                            <div
-                                class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                            >
-                                <span class="font-bold">6</span>
-                                <Icon name="star" class="w-4 h-4" />
-                                <span>{$t("page.banner.pity6")}</span>
-                            </div>
-                            <span
-                                class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-                            >
-                                {currentPity6}<span
-                                    class="text-sm text-gray-400 dark:text-[#787878]"
-                                    >/{maxPity6}</span
-                                >
-                            </span>
-                        </div>
-
-                        {#if mileage.show}
+                        {#if !isAllWeaponCategory}
                             <div class="flex justify-between items-center">
                                 <div
                                     class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
                                 >
                                     <span class="font-bold">6</span>
                                     <Icon name="star" class="w-4 h-4" />
-                                    <span>{getMileageLabel(mileage.label)}</span
-                                    >
+                                    <span>{$t("page.banner.pity6")}</span>
                                 </div>
                                 <span
                                     class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
                                 >
-                                    {mileage.current}<span
+                                    {currentPity6}<span
                                         class="text-sm text-gray-400 dark:text-[#787878]"
-                                        >/{mileage.max}</span
+                                        >/{maxPity6}</span
                                     >
                                 </span>
                             </div>
-                        {/if}
 
-                        {#if isWeaponType && !hasReceivedRateUp}
-                            <div class="flex justify-between items-center">
-                                <div
-                                    class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                                >
-                                    <span class="font-bold">6</span>
-                                    <Icon name="star" class="w-4 h-4" />
+                            {#if mileage.show}
+                                <div class="flex justify-between items-center">
+                                    <div
+                                        class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
+                                    >
+                                        <span class="font-bold">6</span>
+                                        <Icon name="star" class="w-4 h-4" />
+                                        <span>{getMileageLabel(mileage.label)}</span
+                                        >
+                                    </div>
                                     <span
-                                        >{$t(
-                                            "page.banner.guarantee_rateup",
-                                        )}</span
+                                        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
                                     >
+                                        {mileage.current}<span
+                                            class="text-sm text-gray-400 dark:text-[#787878]"
+                                            >/{mileage.max}</span
+                                        >
+                                    </span>
+                                </div>
+                            {/if}
+
+                            {#if isWeaponType && !hasReceivedRateUp}
+                                <div class="flex justify-between items-center">
+                                    <div
+                                        class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
+                                    >
+                                        <span class="font-bold">6</span>
+                                        <Icon name="star" class="w-4 h-4" />
+                                        <span
+                                            >{$t(
+                                                "page.banner.guarantee_rateup",
+                                            )}</span
+                                        >
+                                    </div>
+                                    <span
+                                        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
+                                    >
+                                        {weaponGuaranteeProgress}<span
+                                            class="text-sm text-gray-400 dark:text-[#787878]"
+                                            >/80</span
+                                        >
+                                    </span>
+                                </div>
+                            {/if}
+
+                            <div class="flex justify-between items-center">
+                                <div
+                                    class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
+                                >
+                                    <span class="font-bold">5</span>
+                                    <Icon name="star" class="w-4 h-4" />
+                                    <span>{$t("page.banner.pity5")}</span>
                                 </div>
                                 <span
                                     class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
                                 >
-                                    {weaponGuaranteeProgress}<span
+                                    {currentPity5}<span
                                         class="text-sm text-gray-400 dark:text-[#787878]"
-                                        >/80</span
+                                        >/10</span
                                     >
                                 </span>
                             </div>
                         {/if}
-
-                        <div class="flex justify-between items-center">
-                            <div
-                                class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                            >
-                                <span class="font-bold">5</span>
-                                <Icon name="star" class="w-4 h-4" />
-                                <span>{$t("page.banner.pity5")}</span>
-                            </div>
-                            <span
-                                class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-                            >
-                                {currentPity5}<span
-                                    class="text-sm text-gray-400 dark:text-[#787878]"
-                                    >/10</span
-                                >
-                            </span>
-                        </div>
                     </div>
                 </div>
 
@@ -800,9 +940,8 @@
                             {:else}
                                 {#each filteredTableData as row, index}
                                     {@const currentBanner = getBannerForPull(
-                                        row.time,
+                                        row,
                                         bannerType,
-                                        row.name,
                                     )}
 
                                     {@const itemData =
@@ -947,7 +1086,7 @@
                                                 {#if row.rarity >= 5 && row.status && row.status !== "normal" && !row.isFree}
                                                     {#if row.rarity === 6 || !isWeapon}
                                                         {#if row.status === "won"}
-                                                            {#if !bannerType.includes("standard") && !bannerType.includes("new")}
+                                                            {#if isWeaponType || (!bannerType.includes("standard") && !bannerType.includes("new"))}
                                                                 <Tooltip
                                                                     textKey={isWeaponType
                                                                         ? "status.wonWeapon"
@@ -970,7 +1109,7 @@
                                                                     class="w-4 h-4 text-[#D0926E]"
                                                                 />
                                                             </Tooltip>
-                                                        {:else if row.status === "guaranteed"}
+                                                        {:else if row.status === "guaranteed" && !isAllWeaponCategory}
                                                             <Tooltip
                                                                 textKey="{`${$t("status.guaranteed")} ${isWeapon ? "80" : "120"}`}"
                                                             >

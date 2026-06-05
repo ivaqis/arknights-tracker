@@ -1,7 +1,9 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
+
   import Images from "$lib/components/Images.svelte";
+  import Icons from "$lib/components/Icons.svelte";
 
   export let options = [];
   export let value = "";
@@ -84,13 +86,20 @@
              />
          </div>
       {/if}
-      {selectedLabel}
+      {#if selectedOption?.subLabel}
+        <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
+          <span class="truncate leading-tight">{selectedLabel}</span>
+          <span class="text-xs font-mono tracking-tight mt-0.5 opacity-60 {variant === 'black' ? 'text-gray-300' : 'text-gray-500'}">
+            {selectedOption.subLabel}
+          </span>
+        </div>
+      {:else}
+        {selectedLabel}
+      {/if}
     </span>
 
     <div class="relative z-10 transition-transform duration-300 {isOpen ? 'rotate-180' : ''}">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M6 9l6 6 6-6"/>
-      </svg>
+      <Icons name="arrowDown" class="w-3.5 h-3.5" />
     </div>
     
     </button>
@@ -127,7 +136,16 @@
                      />
                  </div>
               {/if}
-              <span>{option.label}</span>
+              {#if option.subLabel}
+                <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
+                  <span class="truncate leading-tight">{option.label}</span>
+                  <span class="text-[11px] font-mono tracking-tight mt-0.5 opacity-60 {variant === 'black' ? 'text-gray-300' : 'text-gray-500'}">
+                    {option.subLabel}
+                  </span>
+                </div>
+              {:else}
+                <span>{option.label}</span>
+              {/if}
             </button>
           </li>
         {/each}

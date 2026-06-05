@@ -280,7 +280,8 @@
     "operators": "Operator",
     "versions": "Versi",
     "sortByRelease": "Berdasarkan rilis",
-    "sortByWait": "Berdasarkan hari tanpa rerun"
+    "sortByWait": "Berdasarkan hari tanpa rerun",
+    "allBanners": "Semua Banner"
   },
   "status": {
     "won": "Menang 50:50",

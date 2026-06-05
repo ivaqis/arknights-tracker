@@ -280,7 +280,8 @@
     "operators": "오퍼레이터",
     "versions": "버전",
     "sortByRelease": "출시일순",
-    "sortByWait": "복각 대기일순"
+    "sortByWait": "복각 대기일순",
+    "allBanners": "모든 배너"
   },
   "status": {
     "won": "승리 50:50",

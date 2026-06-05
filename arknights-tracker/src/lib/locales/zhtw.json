@@ -280,7 +280,8 @@
     "operators": "幹員",
     "versions": "版本",
     "sortByRelease": "按實裝順序",
-    "sortByWait": "按未復刻天數"
+    "sortByWait": "按未復刻天數",
+    "allBanners": "所有卡池"
   },
   "status": {
     "won": "勝出 50:50",

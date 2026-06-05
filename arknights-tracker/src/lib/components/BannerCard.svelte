@@ -12,6 +12,8 @@
   import Images from "$lib/components/Images.svelte";
   import Icon from "$lib/components/Icons.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
+  import { slide } from "svelte/transition";
+  import { currentLocale } from "$lib/stores/locale";
 
   export let bannerId;
   export let titleKey;
@@ -21,20 +23,26 @@
   let selectedSubBannerId = "";
   $: isWeaponCard = bannerId.includes("weap");
 
-  $: availableSubBanners = Object.keys($pullData)
-    .filter((key) => {
-      if (!isWeaponCard) return key === bannerId;
-      return getWeaponCategory(key) === bannerId;
-    })
-    .sort((a, b) => {
-      const banA = banners.find((x) => x.id === a);
-      const banB = banners.find((x) => x.id === b);
-      if (!banA) return 1;
-      if (!banB) return -1;
-      return (
-        new Date(banB.startTime).getTime() - new Date(banA.startTime).getTime()
-      );
-    });
+  $: availableSubBanners = (() => {
+    const list = Object.keys($pullData)
+      .filter((key) => {
+        if (!isWeaponCard) return key === bannerId;
+        return getWeaponCategory(key) === bannerId;
+      })
+      .sort((a, b) => {
+        const banA = banners.find((x) => x.id === a);
+        const banB = banners.find((x) => x.id === b);
+        if (!banA) return 1;
+        if (!banB) return -1;
+        return (
+          new Date(banB.startTime).getTime() - new Date(banA.startTime).getTime()
+        );
+      });
+    if (isWeaponCard && list.length > 1) {
+      return ["all", ...list];
+    }
+    return list;
+  })();
 
   $: if (availableSubBanners.length > 0) {
     const storageKey = `ark_selected_sub_${bannerId}`;
@@ -65,18 +73,122 @@
   }
 
   $: displayId = isWeaponCard ? selectedSubBannerId : bannerId;
+  $: isAllBannersSelected = selectedSubBannerId === "all";
 
   $: displayTitle =
     isWeaponCard && selectedSubBannerId
-      ? $t(`banners.${selectedSubBannerId}`) !==
-        `banners.${selectedSubBannerId}`
-        ? $t(`banners.${selectedSubBannerId}`)
-        : $t(titleKey)
+      ? selectedSubBannerId === "all"
+        ? $t("systemNames.allBanners")
+        : $t(`banners.${selectedSubBannerId}`) !==
+          `banners.${selectedSubBannerId}`
+          ? $t(`banners.${selectedSubBannerId}`)
+          : $t(titleKey)
       : $t(titleKey);
+
+  $: titleParts = (() => {
+    if (!displayTitle) return { start: "", last: "" };
+    const words = displayTitle.trim().split(" ");
+    if (words.length <= 1) return { start: "", last: displayTitle };
+    const last = words.pop();
+    const start = words.join(" ") + " ";
+    return { start, last };
+  })();
+
   $: avg6Max = isWeaponCard || bannerId.includes("new") ? 40 : 80;
-  $: bannerStore = $pullData[displayId] || { pulls: [], stats: {} };
-  $: stats = bannerStore.stats || {};
-  $: pulls = bannerStore.pulls || [];
+
+  $: subBannerIds = Object.keys($pullData).filter((key) => {
+    if (!isWeaponCard) return key === bannerId;
+    return getWeaponCategory(key) === bannerId;
+  });
+
+  $: aggregatedData = (() => {
+    if (selectedSubBannerId === "all") {
+      let combinedPulls = [];
+      subBannerIds.forEach(id => {
+        const store = $pullData[id];
+        if (store && Array.isArray(store.pulls)) {
+          combinedPulls = [...combinedPulls, ...store.pulls.map(pull => ({ ...pull, cardBannerId: id }))];
+        }
+      });
+      combinedPulls.sort((a, b) => {
+        const tDiff = new Date(a.time).getTime() - new Date(b.time).getTime();
+        if (tDiff !== 0) return tDiff;
+        return (Number(a.seqId) || 0) - (Number(b.seqId) || 0);
+      });
+
+      const total = combinedPulls.length;
+      const pulls6 = combinedPulls.filter(p => p.rarity === 6);
+      const pulls5 = combinedPulls.filter(p => p.rarity === 5);
+      
+      const count6 = pulls6.length;
+      const count5 = pulls5.length;
+      const percent6 = total > 0 ? ((count6 / total) * 100).toFixed(2) : "0.00";
+      const percent5 = total > 0 ? ((count5 / total) * 100).toFixed(2) : "0.00";
+      
+      let sumPity6 = 0;
+      let sumPity5 = 0;
+      let p6Counters = {};
+      let p5Counters = {};
+
+      combinedPulls.forEach(p => {
+        const bid = p.cardBannerId || "other";
+
+        if (!p6Counters[bid]) p6Counters[bid] = 0;
+        if (!p5Counters[bid]) p5Counters[bid] = 0;
+
+        if (p.isFree) return;
+        
+        if (p.rarity === 6) {
+          sumPity6 += p6Counters[bid] + 1;
+          p6Counters[bid] = 0;
+          p5Counters[bid] = 0;
+        } else if (p.rarity === 5) {
+          sumPity5 += p5Counters[bid] + 1;
+          p5Counters[bid] = 0;
+          p6Counters[bid]++;
+        } else {
+          p6Counters[bid]++;
+          p5Counters[bid]++;
+        }
+      });
+
+      const avg6 = count6 > 0 ? (sumPity6 / count6).toFixed(1) : "0.0";
+      const avg5 = count5 > 0 ? (sumPity5 / count5).toFixed(1) : "0.0";
+
+      let won = 0;
+      let total5050 = 0;
+      pulls6.forEach(p => {
+        const status = p.status || p.gachaStatus;
+        if (status === "won") {
+          won++;
+          total5050++;
+        } else if (status === "lost") {
+          total5050++;
+        }
+      });
+      const winRatePercent = total5050 > 0 ? Math.round((won / total5050) * 100) : 0;
+      const winRate = { won, total: total5050, percent: winRatePercent };
+
+      return {
+        pulls: combinedPulls,
+        stats: {
+          total,
+          count6,
+          count5,
+          percent6,
+          percent5,
+          avg6,
+          avg5,
+          winRate,
+        }
+      };
+    } else {
+      return $pullData[displayId] || { pulls: [], stats: {} };
+    }
+  })();
+
+  $: stats = aggregatedData.stats || {};
+  $: pulls = aggregatedData.pulls || [];
   $: total = stats.total || 0;
   $: pity6 = stats.pity6 || 0;
   $: pity5 = stats.pity5 || 0;
@@ -170,7 +282,8 @@
   }
 
   function goToDetails() {
-    goto(`/records/${displayId}`);
+    const targetId = displayId === "all" ? bannerId : displayId;
+    goto(`/records/${targetId}`);
   }
 
   function getBannerImage(id) {
@@ -190,6 +303,68 @@
       return $t("stats.featured_guarantee") || "Featured Wep.";
     return label;
   }
+
+  let isDropdownOpen = false;
+
+  function toggleDropdown() {
+    if (isWeaponCard && availableSubBanners.length > 1) {
+      isDropdownOpen = !isDropdownOpen;
+    }
+  }
+
+  function clickOutside(node) {
+    const handleClick = event => {
+      if (node && !node.contains(event.target) && !event.defaultPrevented) {
+        isDropdownOpen = false;
+      }
+    };
+    document.addEventListener('click', handleClick, true);
+    return {
+      destroy() {
+        document.removeEventListener('click', handleClick, true);
+      }
+    };
+  }
+
+  function formatBannerDate(dateStr, locale) {
+    if (!dateStr) return "";
+    const parsed = new Date(dateStr.replace(" ", "T"));
+    if (isNaN(parsed.getTime())) return "";
+    try {
+      return new Intl.DateTimeFormat(locale, {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit"
+      }).format(parsed);
+    } catch (e) {
+      const y = String(parsed.getFullYear()).slice(-2);
+      const m = String(parsed.getMonth() + 1).padStart(2, '0');
+      const d = String(parsed.getDate()).padStart(2, '0');
+      return `${d}.${m}.${y}`;
+    }
+  }
+
+  $: dropdownOptions = availableSubBanners.map((bId) => {
+    if (bId === "all") {
+      return {
+        value: "all",
+        label: $t("systemNames.allBanners"),
+        subLabel: "",
+        iconId: "",
+      };
+    }
+    const b = banners.find((x) => x.id === bId);
+    const label = b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : bId;
+    const startFormatted = b ? formatBannerDate(b.startTime, $currentLocale) : "";
+    const endFormatted = b ? (b.endTime ? formatBannerDate(b.endTime, $currentLocale) : ($t("permanent") || "Permanent")) : "";
+    const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
+    return {
+      value: bId,
+      label,
+      subLabel,
+      iconId: b?.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : bId,
+    };
+  });
 </script>
 
 <div
@@ -201,23 +376,30 @@
     >
       {#each availableSubBanners as bId}
         <div class="shrink-0">
-          <Tooltip text={$t(`banners.${bId}`) || bId}>
+          <Tooltip text={bId === "all" ? $t("systemNames.allBanners") : ($t(`banners.${bId}`) || bId)}>
             <button
-              class="group relative h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none
+              class="group relative {bId === "all" ? "px-2" : ""} h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none flex items-center justify-center
                     {selectedSubBannerId === bId
-                ? 'ring-2 ring-[#e44e25] border-[#e44e25] dark:border-[#7A7A7A]'
-                : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-60 hover:opacity-100'}"
+                ? 'ring-2 ring-[#e44e25] border-[#e44e25] bg-transparent text-[#e44e25] dark:text-[#e44e25]'
+                : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-60 hover:opacity-100 bg-gray-50 dark:bg-[#2e2e2e] text-[#21272C] dark:text-[#FDFDFD]'}"
               on:click={() => (selectedSubBannerId = bId)}
             >
-              <Images
-                id={bId}
-                variant="banner-mini"
-                alt={bId}
-                className="h-full w-full object-cover transition-transform group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
-              ></div>
+              {#if bId === "all"}
+                <div class="flex flex-col items-center justify-center gap-1 font-bold text-[10px] uppercase">
+                  <Icon name="list" class="w-4 h-4" />
+                  <span>ALL</span>
+                </div>
+              {:else}
+                <Images
+                  id={bId}
+                  variant="banner-mini"
+                  alt={bId}
+                  className="h-full w-full object-cover transition-transform group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors"
+                ></div>
+              {/if}
             </button>
           </Tooltip>
         </div>
@@ -225,12 +407,20 @@
     </div>
   {/if}
 
-  <div class="flex justify-between items-start mb-3 pt-1">
-    <h3
-      class="text-xl font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] w-2/3 leading-tight"
-    >
-      {displayTitle}
-    </h3>
+  <div class="flex justify-between items-start mb-3 pt-1 relative" use:clickOutside>
+    <div class="w-2/3 min-w-0">
+      <button
+        class="w-full text-left font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xl leading-tight select-none transition-opacity
+               {isWeaponCard && availableSubBanners.length > 1 ? 'hover:opacity-85 cursor-pointer' : 'cursor-default'}"
+        on:click={toggleDropdown}
+      >
+        {#if isWeaponCard && availableSubBanners.length > 1}
+          {titleParts.start}<span class="whitespace-nowrap">{titleParts.last}<span class="inline-flex items-center align-middle ml-1.5 transition-transform duration-200 {isDropdownOpen ? 'rotate-180' : ''}"><Icon name="arrowDown" class="w-3.5 h-3.5 text-gray-700 dark:text-[#FDFDFD]" /></span></span>
+        {:else}
+          {displayTitle}
+        {/if}
+      </button>
+    </div>
     <Button
       variant="roundSmall"
       color="gray"
@@ -238,6 +428,62 @@
     >
       {$t("page.banner.details")}
     </Button>
+
+    {#if isDropdownOpen && dropdownOptions.length > 1}
+      <div 
+        transition:slide={{ duration: 200 }}
+        class="
+          absolute left-0 top-full mt-1.5 z-50 
+          w-72 shadow-xl border overflow-hidden rounded-md
+          bg-white dark:bg-[#363636] border-gray-100 dark:border-[#454545] text-[#21272C] dark:text-white
+        "
+      >
+        <ul class="max-h-60 overflow-y-auto custom-scrollbar">
+          {#each dropdownOptions as option}
+            <li>
+              <button
+                on:click={() => {
+                  selectedSubBannerId = option.value;
+                  isDropdownOpen = false;
+                }}
+                class="
+                  w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3
+                  {selectedSubBannerId === option.value 
+                     ? 'bg-gray-100 dark:bg-[#505050] text-[#e44e25] dark:text-yellow-400' 
+                     : 'hover:bg-gray-50 dark:hover:bg-[#404040]'}
+                "
+              >
+                {#if option.value === "all"}
+                   <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-gray-200 dark:border-[#555] flex items-center justify-center bg-gray-50 dark:bg-[#2e2e2e] text-gray-500 dark:text-[#B7B6B3]">
+                       <Icon name="list" class="w-3.5 h-3.5" />
+                   </div>
+                {:else}
+                   {#if option.iconId}
+                      <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
+                          <Images 
+                             id={option.iconId} 
+                             variant="banner-mini" 
+                             size="100%" 
+                             className="w-full h-full object-cover"
+                             alt={option.label}
+                          />
+                      </div>
+                   {/if}
+                {/if}
+                <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
+                  <span class="truncate leading-tight">{option.label}</span>
+                  {#if option.subLabel}
+                    <span class="text-[11px] font-mono tracking-tight mt-0.5 opacity-60 text-gray-500 dark:text-gray-300">
+                      {option.subLabel}
+                    </span>
+                  {/if}
+                </div>
+              </button>
+            </li>
+          {/each}
+        </ul>
+      </div>
+    {/if}
   </div>
 
   <div class="space-y-2.5 mb-2 px-1">
@@ -265,70 +511,72 @@
       </div>
     {/if}
 
-    <div class="flex justify-between items-center">
-      <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
-        <span class="font-bold">6</span>
-        <Icon name="star" class="w-4 h-4" />
-        <span>{$t("page.banner.pity6")}</span>
-      </div>
-      <span
-        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-      >
-        {pity6}<span class="text-sm text-gray-400 dark:text-[#B7B6B3]"
-          >/{maxPity6}</span
-        >
-      </span>
-    </div>
-
-    {#if mileage.show && !showRateUpGuarantee}
+    {#if !isAllBannersSelected}
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
           <span class="font-bold">6</span>
           <Icon name="star" class="w-4 h-4" />
-          <span>{getMileageLabel(mileage.label)}</span>
+          <span>{$t("page.banner.pity6")}</span>
         </div>
         <span
           class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
         >
-          {mileage.current}<span
-            class="text-sm text-gray-400 dark:text-[#B7B6B3]"
-            >/{mileage.max}</span
+          {pity6}<span class="text-sm text-gray-400 dark:text-[#B7B6B3]"
+            >/{maxPity6}</span
           >
         </span>
       </div>
-    {/if}
 
-    {#if showRateUpGuarantee}
+      {#if mileage.show && !showRateUpGuarantee}
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
+            <span class="font-bold">6</span>
+            <Icon name="star" class="w-4 h-4" />
+            <span>{getMileageLabel(mileage.label)}</span>
+          </div>
+          <span
+            class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
+          >
+            {mileage.current}<span
+              class="text-sm text-gray-400 dark:text-[#B7B6B3]"
+              >/{mileage.max}</span
+            >
+          </span>
+        </div>
+      {/if}
+
+      {#if showRateUpGuarantee}
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
+            <span class="font-bold">6</span>
+            <Icon name="star" class="w-4 h-4" />
+            <span>{$t("page.banner.guarantee_rateup")}</span>
+          </div>
+          <span
+            class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
+          >
+            {guaranteeProgress}<span
+              class="text-sm text-gray-400 dark:text-[#B7B6B3]"
+              >/{maxGuaranteed}</span
+            >
+          </span>
+        </div>
+      {/if}
+
       <div class="flex justify-between items-center">
         <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
-          <span class="font-bold">6</span>
+          <span class="font-bold">5</span>
           <Icon name="star" class="w-4 h-4" />
-          <span>{$t("page.banner.guarantee_rateup")}</span>
+          <span>{$t("page.banner.pity5")}</span>
         </div>
         <span
           class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
         >
-          {guaranteeProgress}<span
-            class="text-sm text-gray-400 dark:text-[#B7B6B3]"
-            >/{maxGuaranteed}</span
+          {pity5}<span class="text-sm text-gray-400 dark:text-[#B7B6B3]">/10</span
           >
         </span>
       </div>
     {/if}
-
-    <div class="flex justify-between items-center">
-      <div class="flex items-center gap-1 text-gray-600 dark:text-[#E4E4E4]">
-        <span class="font-bold">5</span>
-        <Icon name="star" class="w-4 h-4" />
-        <span>{$t("page.banner.pity5")}</span>
-      </div>
-      <span
-        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-      >
-        {pity5}<span class="text-sm text-gray-400 dark:text-[#B7B6B3]">/10</span
-        >
-      </span>
-    </div>
   </div>
 
   <div class="mb-2 mt-1 px-1">
@@ -535,5 +783,19 @@
   }
   :global(.dark) .banners-scroll::-webkit-scrollbar-thumb:hover {
     background-color: #737373;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5);
+    border-radius: 3px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(156, 163, 175, 0.7);
   }
 </style>

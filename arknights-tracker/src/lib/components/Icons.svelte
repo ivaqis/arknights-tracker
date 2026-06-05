@@ -2551,22 +2551,6 @@
             fill="currentColor"
         />
     </svg>
-{:else if name == "arrowDown"}
-    <svg
-        class={$$props.class}
-        style={$$props.style}
-        width="20"
-        height="11"
-        viewBox="0 0 20 11"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            d="M18.6641 0.75L9.66406 8.75L0.664063 0.749999"
-            stroke="currentColor"
-            stroke-width="2"
-        />
-    </svg>
 {:else if name == "warning"}
     <svg
         class={$$props.class}
@@ -3200,8 +3184,14 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
-        <path d="M15 7.5L3.75 13.9952L3.75 1.00481L15 7.5Z" fill="currentColor" />
-        <path d="M26 7.5L14.75 13.9952L14.75 1.00481L26 7.5Z" fill="currentColor" />
+        <path
+            d="M15 7.5L3.75 13.9952L3.75 1.00481L15 7.5Z"
+            fill="currentColor"
+        />
+        <path
+            d="M26 7.5L14.75 13.9952L14.75 1.00481L26 7.5Z"
+            fill="currentColor"
+        />
     </svg>
 {:else if name == "recepies"}
     <svg
@@ -3293,5 +3283,15 @@
             stroke="currentColor"
             stroke-width="2"
         />
+    </svg>
+{:else if name == "arrowDown"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M2 7L12 17L22 7" fill="currentColor" />
     </svg>
 {/if}

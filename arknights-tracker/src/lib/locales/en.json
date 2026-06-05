@@ -300,7 +300,8 @@
     "operators": "Operators",
     "versions": "Versions",
     "sortByRelease": "By release date",
-    "sortByWait": "By days without rerun"
+    "sortByWait": "By days without rerun",
+    "allBanners": "All Banners"
   },
   "status": {
     "won": "Won 50:50",

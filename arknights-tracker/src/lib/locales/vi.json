@@ -280,7 +280,8 @@
     "operators": "Toán tử",
     "versions": "Phiên bản",
     "sortByRelease": "Theo ngày phát hành",
-    "sortByWait": "Theo số ngày không có rerun"
+    "sortByWait": "Theo số ngày không có rerun",
+    "allBanners": "Tất cả Banner"
   },
   "status": {
     "won": "Thắng 50:50",

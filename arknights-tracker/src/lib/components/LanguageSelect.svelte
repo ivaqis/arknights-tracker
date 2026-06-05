@@ -43,50 +43,48 @@
 
 <div class="relative w-full text-white font-sans select-none"
 bind:this={selectContainer}>
-{#if isOpen}
-    <div
-        transition:slide={{ duration: 200 }}
-        class="absolute bottom-full mb-2 w-full bg-[#2A2A2A] border border-gray-700 dark:border-[#303030] rounded-md overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto custom-scrollbar"
-    >
-        {#each languages as lang}
-            <button
-                class="w-full text-left px-4 py-3 hover:bg-white/10 transition-colors flex items-center justify-between
-                {lang.code === $currentLocale
-                    ? 'text-yellow-400 bg-white/5'
-                    : 'text-gray-300'}
-                {!isSupported(lang.code)
-                    ? 'opacity-50 cursor-not-allowed'
-                    : ''}"
-                on:click={() => selectLanguage(lang.code)}
-            >
-                <div class="flex items-center gap-3">
-                    <div class="w-5 h-5 flex-shrink-0 content-center">
-                        <Icons name={lang.code} class="w-full h-full" />
+    {#if isOpen}
+        <div
+            transition:slide={{ duration: 200 }}
+            class="absolute bottom-full mb-2 w-full bg-[#2A2A2A] border border-gray-700 dark:border-[#303030] rounded-md overflow-hidden shadow-xl z-50 max-h-60 overflow-y-auto custom-scrollbar"
+        >
+            {#each languages as lang}
+                <button
+                    class="w-full text-left px-4 py-3 hover:bg-white/10 transition-colors flex items-center justify-between
+                    {lang.code === $currentLocale
+                        ? 'text-yellow-400 bg-white/5'
+                        : 'text-gray-300'}
+                    {!isSupported(lang.code)
+                        ? 'opacity-50 cursor-not-allowed'
+                        : ''}"
+                    on:click={() => selectLanguage(lang.code)}
+                >
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 flex-shrink-0 content-center">
+                            <Icons name={lang.code} class="w-full h-full" />
+                        </div>
+                        
+                        <span>{lang.label}</span>
                     </div>
-                    
-                    <span>{lang.label}</span>
-                </div>
-
-                {#if lang.code === $currentLocale}
-                    <svg
-                        class="w-4 h-4 ml-2 flex-shrink-0"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"
-                        ></path>
-                    </svg>
-                {/if}
-            </button>
-        {/each}
-    </div>
-{/if}
-
+                    {#if lang.code === $currentLocale}
+                        <svg
+                            class="w-4 h-4 ml-2 flex-shrink-0"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"
+                            ></path>
+                        </svg>
+                    {/if}
+                </button>
+            {/each}
+        </div>
+    {/if}
 
     <button
         on:click={toggle}
@@ -112,18 +110,7 @@ bind:this={selectContainer}>
                     ? 'rotate-180'
                     : ''}"
             >
-                <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                >
-                    <polyline points="18 15 12 9 6 15"></polyline>
-                </svg>
+                <Icons name="arrowDown" class="w-3.5 h-3.5" />
             </div>
         </div>
     </button>

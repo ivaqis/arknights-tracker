@@ -3,6 +3,7 @@
 export const locations = {
   "world_energy_point01_7": {
     "id": "world_energy_point01_7",
+    "url": "https://oem.re/?x=0WwOSAV",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -24,6 +25,7 @@ export const locations = {
   },
   "world_energy_point02_7": {
     "id": "world_energy_point02_7",
+    "url": "https://oem.re/?x=0g7ZqBS",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -49,6 +51,7 @@ export const locations = {
   },
   "world_energy_point03_7": {
     "id": "world_energy_point03_7",
+    "url": "https://oem.re/?x=0A9tw1J",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -74,6 +77,7 @@ export const locations = {
   },
   "world_energy_point04_7": {
     "id": "world_energy_point04_7",
+    "url": "https://oem.re/?x=0ydAtdz",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -120,7 +124,8 @@ export const locations = {
   },
   "world_energy_point06_7": {
     "id": "world_energy_point06_7",
-    "region": "theBase",
+    "url": "https://oem.re/?x=075pl3M",
+    "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
       "eny_0054_hsmino",
@@ -143,7 +148,7 @@ export const locations = {
   },
   "world_energy_point07_7": {
     "id": "world_energy_point07_7",
-    "url": "https://oem.re/?f=%7E1h&r=WL&s=WL_4&p=23400290001",
+    "url": "https://oem.re/?x=06afupq",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
@@ -167,7 +172,7 @@ export const locations = {
   },
   "world_energy_point08_7": {
     "id": "world_energy_point08_7",
-    "url": "https://oem.re/?f=%7E1h&r=WL&s=WL_5&p=23200120005",
+    "url": "https://oem.re/?x=0vhwryk",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
@@ -191,6 +196,7 @@ export const locations = {
   },
   "world_energy_point09_7": {
     "id": "world_energy_point09_7",
+    "url": "https://oem.re/?x=0w92kR2",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [

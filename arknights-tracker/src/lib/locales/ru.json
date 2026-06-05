@@ -297,7 +297,8 @@
     "operators": "Оперативники",
     "versions": "Версий",
     "sortByRelease": "По релизам",
-    "sortByWait": "По числу дней без рерана"
+    "sortByWait": "По числу дней без рерана",
+    "allBanners": "Все баннеры"
   },
   "status": {
     "won": "Выигрыш 50:50",

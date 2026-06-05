@@ -280,7 +280,8 @@
     "operators": "Operadores",
     "versions": "Versões",
     "sortByRelease": "Por lançamento",
-    "sortByWait": "Por dias sem rerun"
+    "sortByWait": "Por dias sem rerun",
+    "allBanners": "Todos os Banners"
   },
   "status": {
     "won": "Ganho 50:50",
