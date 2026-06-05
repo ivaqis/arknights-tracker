@@ -127,7 +127,7 @@
       "name": "Mezcla especial"
     },
     "potential5": {
-      "description": "Habilidad de batalla <@ba.key>¡GIRA EL WOK!</> mejorada: Si la habilidad golpea a un solo enemigo, aplica 1 acumulación más de <#ba.noguard>Vulnerabilidad</> al objetivo. El efecto solo se activa una vez cada {potential_5_interval:0} s.",
+      "description": "Habilidad de batalla <@ba.key>¡GIRA EL WOK!</> mejorada: Si la habilidad golpea a un solo enemigo, aplica 1 acumulación más de <#ba.noguard>Vulnerabilidad</> al objetivo. Este efecto solo puede activarse una vez cada {potential_5_interval:0} s.",
       "name": "Enciéndelo"
     }
   },
@@ -140,7 +140,7 @@
     "potential3": {
       "name": "Descansando en la Cumbre",
       "author": "E_Volution_",
-      "description": "¿Quién tiene tanto tiempo, con unas cuantas bestias voladoras como compañía, para descansar en la cima?"
+      "description": "¿Quién tiene tanto tiempo, con unas cuantas bestias voladoras como compañía, descansando en la cumbre?"
     },
     "potential5": {
       "name": "Todos los sabores de la vida",

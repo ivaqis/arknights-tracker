@@ -83,105 +83,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.2529999911785126,
-          0.2759999930858612,
-          0.29899999499320984
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
-        ]
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.20000000298023224,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "level": 10,
     "partType": 0,
@@ -261,163 +162,6 @@ export const equipment = {
       {
         "name": "wood",
         "amount": 2
-      }
-    ]
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "level": 36,
-    "partType": 2,
-    "rarity": 3,
-    "pack": "suit_str01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.21
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          10.799999999999999,
-          10.799999999999999,
-          10.799999999999999,
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.21,
-          0.21,
-          0.21,
-          0.21
-        ]
-      }
-    ],
-    "blackboard": {
-      "str_up": 50,
-      "hp_ratio": 0.5,
-      "dmg_taken_down": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_agi01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          23,
-          23,
-          23,
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.147,
-          0.147,
-          0.147,
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "agi_up": 50,
-      "hp_ratio": 0.800000011920929,
-      "phy_dmg_up": 0.20000000298023224
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
       }
     ]
   },
@@ -503,119 +247,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "level": 36,
-    "partType": 1,
-    "rarity": 3,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21.599999999999998
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          33
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          22
-        ]
-      },
-      {
-        "attrType": "SpellDamageIncrease",
-        "values": [
-          0.09210526315789473
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21.599999999999998,
-          21.599999999999998,
-          21.599999999999998,
-          21.599999999999998
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          33,
-          33,
-          33,
-          33
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          22,
-          22,
-          22,
-          22
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473
-        ]
-      },
-      {
-        "attrType": "FireDamageIncrease",
-        "values": [
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473
-        ]
-      },
-      {
-        "attrType": "NaturalDamageIncrease",
-        "values": [
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473,
-          0.09210526315789473
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.800000011920929,
-      "spell_dmg_up": 0.20000000298023224
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "level": 10,
     "partType": 1,
@@ -695,104 +326,6 @@ export const equipment = {
       {
         "name": "wood",
         "amount": 2
-      }
-    ]
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.20000000298023224,
-      "max_stack": 3
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
       }
     ]
   },
@@ -878,150 +411,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312666893005,
-          0.8010253310203552,
-          0.7879599928855896
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "PhysicalDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      },
-      {
-        "attrType": "FireDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      },
-      {
-        "attrType": "PulseDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      },
-      {
-        "attrType": "CrystDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      },
-      {
-        "attrType": "NaturalDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      },
-      {
-        "attrType": "EtherDamageTakenScalar",
-        "values": [
-          0.828500414250207,
-          0.8145312372729494,
-          0.8010253123998718,
-          0.7879599716334411
-        ]
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.20000000298023224,
-      "duration": 10,
-      "dmg_taken_down": 0.8500000238418579,
-      "dmg_taken_down2": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "level": 20,
     "partType": 0,
@@ -1089,58 +478,6 @@ export const equipment = {
           125.3763938565117,
           125.3763938565117,
           125.3763938565117
-        ]
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
-    ]
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "level": 20,
-    "partType": 2,
-    "rarity": 2,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          6
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.132
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          6,
-          6,
-          6,
-          6
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.132,
-          0.132,
-          0.132,
-          0.132
         ]
       }
     ],
@@ -1484,222 +821,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "level": 28,
-    "partType": 0,
-    "rarity": 2,
-    "pack": "suit_stragi01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          22.400000000000002
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          30
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          30
-        ]
-      },
-      {
-        "attrType": "AllDamageTakenScalar",
-        "values": [
-          0.9610764055742431
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          22.400000000000002,
-          22.400000000000002,
-          22.400000000000002,
-          22.400000000000002
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          30,
-          30,
-          30,
-          30
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          30,
-          30,
-          30,
-          30
-        ]
-      },
-      {
-        "attrType": "PhysicalDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      },
-      {
-        "attrType": "FireDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      },
-      {
-        "attrType": "PulseDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      },
-      {
-        "attrType": "CrystDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      },
-      {
-        "attrType": "NaturalDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      },
-      {
-        "attrType": "EtherDamageTakenScalar",
-        "values": [
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431,
-          0.9610764055742431
-        ]
-      }
-    ],
-    "blackboard": {
-      "hp_up": 500,
-      "hp_add": 100,
-      "cd": 5
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
-    ]
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "level": 50,
-    "partType": 0,
-    "rarity": 4,
-    "pack": "suit_usp01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          41
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.18375
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          40,
-          40,
-          40,
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61,
-          61,
-          61,
-          61
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          41,
-          41,
-          41,
-          41
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.18375,
-          0.18375,
-          0.18375,
-          0.18375
-        ]
-      }
-    ],
-    "blackboard": {
-      "ultimate_gain_up": 0.20000000298023224,
-      "atb_recover": 50
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "level": 20,
     "partType": 2,
@@ -1737,6 +858,58 @@ export const equipment = {
           0.066,
           0.066,
           0.066
+        ]
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 20
+      },
+      {
+        "name": "amethystComponent",
+        "amount": 5
+      }
+    ]
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "level": 20,
+    "partType": 2,
+    "rarity": 2,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          6
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.132
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.132,
+          0.132,
+          0.132,
+          0.132
         ]
       }
     ],
@@ -1831,106 +1004,6 @@ export const equipment = {
       {
         "name": "amethystComponent",
         "amount": 5
-      }
-    ]
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_fire_natr01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95000076293945,
-          41.400001525878906,
-          44.849998474121094
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
-        ]
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "fire_dmg_up": 0.5,
-      "duration": 10,
-      "nature_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
       }
     ]
   },
@@ -2180,112 +1253,134 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_fire_natr01",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "level": 28,
+    "partType": 0,
+    "rarity": 2,
+    "pack": "suit_stragi01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          22.400000000000002
         ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Str",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          30
+        ]
       },
       {
-        "attrType": "FireAndNaturalDamageIncrease",
+        "attrType": "Agi",
         "values": [
-          0.19166666666666668,
-          0.2108333259820938,
-          0.23000000417232513,
-          0.24916666746139526
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          30
+        ]
+      },
+      {
+        "attrType": "AllDamageTakenScalar",
+        "values": [
+          0.9610764055742431
+        ]
       }
     ],
     "equipAttr": [
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002,
+          22.400000000000002
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          43,
-          47,
-          51,
-          55
+          30,
+          30,
+          30,
+          30
         ]
       },
       {
-        "attrType": "FireDamageIncrease",
+        "attrType": "Agi",
         "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
+          30,
+          30,
+          30,
+          30
         ]
       },
       {
-        "attrType": "NaturalDamageIncrease",
+        "attrType": "PhysicalDamageTakenScalar",
         "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
+        ]
+      },
+      {
+        "attrType": "FireDamageTakenScalar",
+        "values": [
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
+        ]
+      },
+      {
+        "attrType": "PulseDamageTakenScalar",
+        "values": [
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
+        ]
+      },
+      {
+        "attrType": "CrystDamageTakenScalar",
+        "values": [
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
+        ]
+      },
+      {
+        "attrType": "NaturalDamageTakenScalar",
+        "values": [
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
+        ]
+      },
+      {
+        "attrType": "EtherDamageTakenScalar",
+        "values": [
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431,
+          0.9610764055742431
         ]
       }
     ],
     "blackboard": {
-      "phy_spell_up": 30,
-      "fire_dmg_up": 0.5,
-      "duration": 10,
-      "nature_dmg_up": 0.5,
-      "duration2": 10
+      "hp_up": 500,
+      "hp_add": 100,
+      "cd": 5
     },
     "materials": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "name": "valleyStockBill",
+        "amount": 160
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "name": "amethystComponent",
+        "amount": 20
       }
     ]
   },
@@ -2402,114 +1497,6 @@ export const equipment = {
       {
         "name": "amethystComponent",
         "amount": 20
-      }
-    ]
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.2108333259820938,
-          0.23000000417232513,
-          0.24916666746139526
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.20000000298023224,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.3499999940395355,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
       }
     ]
   },
@@ -2760,73 +1747,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          31
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.18571428571428572
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          31,
-          31,
-          31,
-          31
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.18571428571428572,
-          0.18571428571428572,
-          0.18571428571428572,
-          0.18571428571428572
-        ]
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "level": 28,
     "partType": 0,
@@ -2913,104 +1833,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.2070178350109774,
-          0.22771961987018585,
-          0.24842140078544617,
-          0.2691231966018677
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "Attr_0",
-        "values": [
-          0.2070178350109774,
-          0.22771961851207514,
-          0.24842140201317287,
-          0.2691231855142706
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "level": 28,
     "partType": 2,
@@ -3082,106 +1904,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.13799999999999998,
-          0.1518000066280365,
-          0.1656000018119812,
-          0.1793999969959259
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "NormalAttackDamageIncrease",
-        "values": [
-          0.13799999999999998,
-          0.1518,
-          0.16559999999999997,
-          0.17939999999999998
-        ]
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "level": 28,
     "partType": 2,
@@ -3250,114 +1972,6 @@ export const equipment = {
       {
         "name": "amethystComponent",
         "amount": 20
-      }
-    ]
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_expend_spell01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.2108333259820938,
-          0.23000000417232513,
-          0.24916666746139526
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.10000000149011612,
-      "spell_dmg_up": 0.15000000596046448,
-      "duration": 25,
-      "max_stack": 3
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
       }
     ]
   },
@@ -3447,105 +2061,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285671710968,
-          0.24642856419086456,
-          0.26696428656578064
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285714285715,
-          0.2464285714285714,
-          0.2669642857142857
-        ]
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.20000000298023224,
-      "duration": 10,
-      "dmg_taken_down": 0.8500000238418579,
-      "dmg_taken_down2": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "level": 36,
     "partType": 2,
@@ -3609,104 +2124,6 @@ export const equipment = {
       },
       {
         "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AttrDamageToBrokenUnitIncrease",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "AttrDamageToBrokenUnitIncrease",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.30000001192092896,
-      "max_stack": 2
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -3778,105 +2195,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1035,
-          0.11384999752044678,
-          0.1242000013589859,
-          0.13455000519752502
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1035,
-          0.11385,
-          0.12419999999999999,
-          0.13455
-        ]
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.20000000298023224,
-      "duration": 10,
-      "dmg_taken_down": 0.8500000238418579,
-      "dmg_taken_down2": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "level": 36,
     "partType": 2,
@@ -3940,159 +2258,6 @@ export const equipment = {
       },
       {
         "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "level": 50,
-    "partType": 1,
-    "rarity": 4,
-    "pack": "",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          30
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          49
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.13
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          30,
-          30,
-          30,
-          30
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          49,
-          49,
-          49,
-          49
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          32,
-          32,
-          32,
-          32
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.13,
-          0.13,
-          0.13,
-          0.13
-        ]
-      }
-    ],
-    "blackboard": {},
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          29
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.175
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          29,
-          29,
-          29,
-          29
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.175,
-          0.175,
-          0.175,
-          0.175
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.800000011920929,
-      "spell_dmg_up": 0.20000000298023224
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
         "amount": 50
       }
     ]
@@ -4246,104 +2411,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.22769999504089355,
-          0.2484000027179718,
-          0.26910001039505005
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.24839999999999998,
-          0.2691
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "level": 36,
     "partType": 1,
@@ -4422,86 +2489,6 @@ export const equipment = {
       },
       {
         "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ]
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.20000000298023224,
-      "duration": 10,
-      "dmg_taken_down": 0.8500000238418579,
-      "dmg_taken_down2": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -4651,77 +2638,6 @@ export const equipment = {
       "agi_up": 50,
       "hp_ratio": 0.800000011920929,
       "phy_dmg_up": 0.20000000298023224
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "level": 36,
-    "partType": 2,
-    "rarity": 3,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.105
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          10.799999999999999,
-          10.799999999999999,
-          10.799999999999999,
-          10.799999999999999
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.105,
-          0.105,
-          0.105,
-          0.105
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.800000011920929,
-      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
@@ -4891,104 +2807,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_body_04": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.1035089175054887,
-          0.11385980993509293,
-          0.12421070039272308,
-          0.13456159830093384
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "Attr_0",
-        "values": [
-          0.1035089175054887,
-          0.11385980925603757,
-          0.12421070100658643,
-          0.1345615927571353
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t2_suit_str01_body_01": {
     "level": 36,
     "partType": 0,
@@ -5146,217 +2964,73 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atb01",
+  "item_equip_t2_suit_str01_edc_02": {
+    "level": 36,
+    "partType": 2,
+    "rarity": 3,
+    "pack": "suit_str01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          10.799999999999999
         ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Str",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          21
+        ]
       },
       {
-        "attrType": "AllSkillDamageIncrease",
+        "attrType": "MaxHp",
         "values": [
-          0.23,
-          0.2529999911785126,
-          0.2759999930858612,
-          0.29899999499320984
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.21
+        ]
       }
     ],
     "equipAttr": [
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          43,
-          47,
-          51,
-          55
+          21,
+          21,
+          21,
+          21
         ]
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "MaxHp",
         "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
+          0.21,
+          0.21,
+          0.21,
+          0.21
         ]
       }
     ],
     "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
+      "str_up": 50,
+      "hp_ratio": 0.5,
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
-        "name": "wulingStockBill",
-        "amount": 16000
+        "name": "valleyStockBill",
+        "amount": 1200
       },
       {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_heal01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1035,
-          0.11384999752044678,
-          0.1242000013589859,
-          0.13455000519752502
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.1035,
-          0.11385,
-          0.12419999999999999,
-          0.13455
-        ]
-      }
-    ],
-    "blackboard": {
-      "heal_up": 0.20000000298023224,
-      "duration": 10,
-      "dmg_taken_down": 0.8500000238418579,
-      "dmg_taken_down2": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
+        "name": "ferriumComponent",
         "amount": 50
       }
     ]
@@ -5806,85 +3480,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.5692499876022339,
-          0.6209999918937683,
-          0.6727499961853027
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.6209999999999999,
-          0.67275
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "level": 36,
     "partType": 0,
@@ -5952,6 +3547,77 @@ export const equipment = {
           16.187704477740866,
           16.187704477740866,
           16.187704477740866
+        ]
+      }
+    ],
+    "blackboard": {
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 1200
+      },
+      {
+        "name": "ferriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "level": 36,
+    "partType": 2,
+    "rarity": 3,
+    "pack": "suit_wisd01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          10.799999999999999
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.105
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999,
+          10.799999999999999
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.105,
+          0.105,
+          0.105,
+          0.105
         ]
       }
     ],
@@ -6103,6 +3769,119 @@ export const equipment = {
           0.0525,
           0.0525,
           0.0525
+        ]
+      }
+    ],
+    "blackboard": {
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 1200
+      },
+      {
+        "name": "ferriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "level": 36,
+    "partType": 1,
+    "rarity": 3,
+    "pack": "suit_wisd01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21.599999999999998
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          33
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          22
+        ]
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.09210526315789473
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998,
+          21.599999999999998
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          33,
+          33,
+          33,
+          33
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          22,
+          22,
+          22,
+          22
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
+        ]
+      },
+      {
+        "attrType": "FireDamageIncrease",
+        "values": [
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
+        ]
+      },
+      {
+        "attrType": "NaturalDamageIncrease",
+        "values": [
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473,
+          0.09210526315789473
         ]
       }
     ],
@@ -6286,104 +4065,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.30000001192092896,
-      "max_stack": 2
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "level": 50,
     "partType": 2,
@@ -6496,106 +4177,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.22769999504089355,
-          0.2484000027179718,
-          0.26910001039505005
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.207,
-          0.2277,
-          0.24839999999999998,
-          0.2691
-        ]
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "level": 50,
     "partType": 2,
@@ -6648,6 +4229,73 @@ export const equipment = {
           0.312,
           0.312,
           0.312
+        ]
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          31
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.18571428571428572
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          31,
+          31,
+          31,
+          31
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.18571428571428572,
+          0.18571428571428572,
+          0.18571428571428572,
+          0.18571428571428572
         ]
       }
     ],
@@ -6730,104 +4378,84 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_poise01",
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "level": 50,
+    "partType": 1,
+    "rarity": 4,
+    "pack": "",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          30
         ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Wisd",
         "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          49
+        ]
       },
       {
         "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          32
+        ]
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "Atk",
         "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.13
+        ]
       }
     ],
     "equipAttr": [
       {
         "attrType": "Def",
         "values": [
-          21,
-          21,
-          21,
-          21
+          30,
+          30,
+          30,
+          30
         ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Wisd",
         "values": [
-          32,
-          35,
-          38,
-          41
+          49,
+          49,
+          49,
+          49
         ]
       },
       {
         "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
+          32,
+          32,
+          32,
+          32
         ]
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "Atk",
         "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
+          0.13,
+          0.13,
+          0.13,
+          0.13
         ]
       }
     ],
-    "blackboard": {
-      "atk_up": 0.07999999821186066,
-      "phy_dmg_up": 0.07999999821186066,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.1599999964237213,
-      "duration2": 10
-    },
+    "blackboard": {},
     "materials": [
       {
-        "name": "wulingStockBill",
-        "amount": 16000
+        "name": "valleyStockBill",
+        "amount": 9600
       },
       {
-        "name": "cupriumComponent",
+        "name": "crystonComponent",
         "amount": 50
       }
     ]
@@ -6914,285 +4542,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "level": 50,
-    "partType": 0,
-    "rarity": 4,
-    "pack": "suit_str01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41
-        ]
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          40,
-          40,
-          40,
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61,
-          61,
-          61,
-          61
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          41,
-          41,
-          41
-        ]
-      },
-      {
-        "attrType": "MaxHp",
-        "values": [
-          0.147,
-          0.147,
-          0.147,
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "str_up": 50,
-      "hp_ratio": 0.5,
-      "dmg_taken_down": 0.699999988079071
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_wisd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          23,
-          23,
-          23,
-          23
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Atk",
-        "values": [
-          0.147,
-          0.147,
-          0.147,
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "wisd_up": 50,
-      "hp_ratio": 0.800000011920929,
-      "spell_dmg_up": 0.20000000298023224
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.2529999911785126,
-          0.2759999930858612,
-          0.29899999499320984
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "level": 50,
     "partType": 0,
@@ -7275,173 +4624,6 @@ export const equipment = {
       },
       {
         "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "level": 50,
-    "partType": 0,
-    "rarity": 4,
-    "pack": "suit_atk01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          40
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          61
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.147
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          40,
-          40,
-          40,
-          40
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          61,
-          61,
-          61,
-          61
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          41,
-          41,
-          41
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.147,
-          0.147,
-          0.147,
-          0.147
-        ]
-      }
-    ],
-    "blackboard": {
-      "dmg_up": 0.23999999463558197,
-      "atk_up": 0.05000000074505806,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.540000915527344,
-          49.68000030517578,
-          53.81999969482422
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ]
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -7618,6 +4800,92 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_agi01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.147
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          23,
+          23,
+          23,
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Atk",
+        "values": [
+          0.147,
+          0.147,
+          0.147,
+          0.147
+        ]
+      }
+    ],
+    "blackboard": {
+      "agi_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "phy_dmg_up": 0.20000000298023224
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "level": 50,
     "partType": 1,
@@ -7700,104 +4968,6 @@ export const equipment = {
       },
       {
         "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_usp02_body_01": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.770000457763672,
-          24.84000015258789,
-          26.90999984741211
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ]
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -7887,6 +5057,92 @@ export const equipment = {
           0.09799999999999999,
           0.09799999999999999,
           0.09799999999999999
+        ]
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.23999999463558197,
+      "atk_up": 0.05000000074505806,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "level": 50,
+    "partType": 0,
+    "rarity": 4,
+    "pack": "suit_atk01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          40
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          61
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41
+        ]
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.147
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          61,
+          61,
+          61,
+          61
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          41,
+          41,
+          41
+        ]
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.147,
+          0.147,
+          0.147,
+          0.147
         ]
       }
     ],
@@ -8078,204 +5334,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_atk02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553571701049805,
-          0.14785714447498322,
-          0.16017857193946838
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.1355357142857143,
-          0.14785714285714285,
-          0.16017857142857142
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.20000000298023224,
-      "max_stack": 3
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.13553571701049805,
-          0.14785714447498322,
-          0.16017857193946838
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.1232142857142857,
-          0.1355357142857143,
-          0.14785714285714285,
-          0.16017857142857142
-        ]
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "level": 50,
     "partType": 2,
@@ -8376,113 +5434,6 @@ export const equipment = {
       },
       {
         "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.2108333259820938,
-          0.23000000417232513,
-          0.24916666746139526
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.19166666666666668,
-          0.21083333333333337,
-          0.23,
-          0.2491666666666667
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.30000001192092896,
-      "max_stack": 2
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
         "amount": 50
       }
     ]
@@ -8659,91 +5610,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_usp01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          29.4
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          23,
-          23,
-          23,
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          29.4,
-          29.4,
-          29.4,
-          29.4
-        ]
-      }
-    ],
-    "blackboard": {
-      "ultimate_gain_up": 0.20000000298023224,
-      "atb_recover": 50
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "level": 50,
     "partType": 2,
@@ -8818,176 +5684,6 @@ export const equipment = {
       "dmg_up": 0.23999999463558197,
       "atk_up": 0.05000000074505806,
       "duration": 15
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "level": 50,
-    "partType": 0,
-    "rarity": 4,
-    "pack": "suit_usp01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.0875
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          40,
-          40,
-          40,
-          40
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          61,
-          61,
-          61,
-          61
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          41,
-          41,
-          41
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.0875,
-          0.0875,
-          0.0875,
-          0.0875
-        ]
-      }
-    ],
-    "blackboard": {
-      "ultimate_gain_up": 0.20000000298023224,
-      "atb_recover": 50
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_usp01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Sub",
-        "values": [
-          0.14701266544257816
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          23,
-          23,
-          23,
-          23
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Attr_0",
-        "values": [
-          0.14701266544257816,
-          0.14701266544257816,
-          0.14701266544257816,
-          0.14701266544257816
-        ]
-      }
-    ],
-    "blackboard": {
-      "ultimate_gain_up": 0.20000000298023224,
-      "atb_recover": 50
     },
     "materials": [
       {
@@ -9086,91 +5782,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "level": 50,
-    "partType": 2,
-    "rarity": 4,
-    "pack": "suit_usp01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.3675
-        ]
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          23,
-          23,
-          23,
-          23
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          15,
-          15,
-          15,
-          15
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.3675,
-          0.3675,
-          0.3675,
-          0.3675
-        ]
-      }
-    ],
-    "blackboard": {
-      "ultimate_gain_up": 0.20000000298023224,
-      "atb_recover": 50
-    },
-    "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "level": 50,
     "partType": 2,
@@ -9257,104 +5868,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_atb01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285671710968,
-          0.24642856419086456,
-          0.26696428656578064
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285714285715,
-          0.2464285714285714,
-          0.2669642857142857
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "level": 50,
     "partType": 1,
@@ -9429,6 +5942,92 @@ export const equipment = {
       "dmg_up": 0.23999999463558197,
       "atk_up": 0.05000000074505806,
       "duration": 15
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "level": 50,
+    "partType": 0,
+    "rarity": 4,
+    "pack": "suit_str01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41
+        ]
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.147
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61,
+          61,
+          61,
+          61
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          41,
+          41,
+          41
+        ]
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.147,
+          0.147,
+          0.147,
+          0.147
+        ]
+      }
+    ],
+    "blackboard": {
+      "str_up": 50,
+      "hp_ratio": 0.5,
+      "dmg_taken_down": 0.699999988079071
     },
     "materials": [
       {
@@ -9699,104 +6298,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.2710714340209961,
-          0.29571428894996643,
-          0.32035714387893677
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.2464285714285714,
-          0.2710714285714286,
-          0.2957142857142857,
-          0.32035714285714284
-        ]
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "level": 50,
     "partType": 1,
@@ -9871,6 +6372,431 @@ export const equipment = {
       "str_up": 50,
       "hp_ratio": 0.5,
       "dmg_taken_down": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "level": 50,
+    "partType": 0,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.18375
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61,
+          61,
+          61,
+          61
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41,
+          41,
+          41,
+          41
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.18375,
+          0.18375,
+          0.18375,
+          0.18375
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "level": 50,
+    "partType": 0,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.0875
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          40,
+          40,
+          40,
+          40
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          61,
+          61,
+          61,
+          61
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          41,
+          41,
+          41
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.0875,
+          0.0875,
+          0.0875,
+          0.0875
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.3675
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          23,
+          23,
+          23,
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.3675,
+          0.3675,
+          0.3675,
+          0.3675
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.14701266544257816
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          23,
+          23,
+          23,
+          23
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Attr_0",
+        "values": [
+          0.14701266544257816,
+          0.14701266544257816,
+          0.14701266544257816,
+          0.14701266544257816
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_usp01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          29.4
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          23,
+          23,
+          23,
+          23
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          29.4,
+          29.4,
+          29.4,
+          29.4
+        ]
+      }
+    ],
+    "blackboard": {
+      "ultimate_gain_up": 0.20000000298023224,
+      "atb_recover": 50
     },
     "materials": [
       {
@@ -10226,114 +7152,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_burst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CrystAndPulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.2529999911785126,
-          0.2759999930858612,
-          0.29899999499320984
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "CrystDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
-        ]
-      },
-      {
-        "attrType": "PulseDamageIncrease",
-        "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
-        ]
-      }
-    ],
-    "blackboard": {
-      "skill_dmg_up": 0.20000000298023224,
-      "stack_cond": 2,
-      "spell_dmg_up": 0.3499999940395355,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "level": 50,
     "partType": 1,
@@ -10592,104 +7410,159 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_poise01",
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_wisd01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          23
         ]
       },
       {
         "attrType": "Agi",
         "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
+          15
+        ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Atk",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95000076293945,
-          41.400001525878906,
-          44.849998474121094
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
+          0.147
+        ]
       }
     ],
     "equipAttr": [
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          23,
+          23,
+          23,
+          23
         ]
       },
       {
         "attrType": "Agi",
         "values": [
-          65,
-          71,
-          78,
-          84
+          15,
+          15,
+          15,
+          15
         ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Atk",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          34.5,
-          37.95,
-          41.4,
-          44.85
+          0.147,
+          0.147,
+          0.147,
+          0.147
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.07999999821186066,
-      "phy_dmg_up": 0.07999999821186066,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.1599999964237213,
-      "duration2": 10
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "name": "valleyStockBill",
+        "amount": 9600
       },
       {
-        "name": "xiraniteComponent",
+        "name": "crystonComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "level": 50,
+    "partType": 2,
+    "rarity": 4,
+    "pack": "suit_wisd01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          29
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.175
+        ]
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          15,
+          15,
+          15,
+          15
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          29,
+          29,
+          29,
+          29
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.175,
+          0.175,
+          0.175,
+          0.175
+        ]
+      }
+    ],
+    "blackboard": {
+      "wisd_up": 50,
+      "hp_ratio": 0.800000011920929,
+      "spell_dmg_up": 0.20000000298023224
+    },
+    "materials": [
+      {
+        "name": "valleyStockBill",
+        "amount": 9600
+      },
+      {
+        "name": "crystonComponent",
         "amount": 50
       }
     ]
@@ -10844,87 +7717,6 @@ export const equipment = {
       }
     ],
     "blackboard": {},
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.5692499876022339,
-          0.6209999918937683,
-          0.6727499961853027
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.5175,
-          0.56925,
-          0.6209999999999999,
-          0.67275
-        ]
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
     "materials": [
       {
         "name": "wulingStockBill",
@@ -11281,104 +8073,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "level": 70,
-    "partType": 1,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285671710968,
-          0.24642856419086456,
-          0.26696428656578064
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "UltimateSpGainScalar",
-        "values": [
-          0.20535714285714285,
-          0.22589285714285715,
-          0.2464285714285714,
-          0.2669642857142857
-        ]
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.1599999964237213,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "level": 70,
     "partType": 2,
@@ -11443,104 +8137,6 @@ export const equipment = {
       }
     ],
     "blackboard": {},
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.30000001192092896,
-      "max_stack": 2
-    },
     "materials": [
       {
         "name": "wulingStockBill",
@@ -11627,105 +8223,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.770000457763672,
-          24.84000015258789,
-          26.90999984741211
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ]
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.20000000298023224,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "level": 70,
     "partType": 1,
@@ -11808,86 +8305,6 @@ export const equipment = {
       }
     ],
     "blackboard": {},
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.540000915527344,
-          49.68000030517578,
-          53.81999969482422
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          41,
-          45,
-          49,
-          53
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ]
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.20000000298023224,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
     "materials": [
       {
         "name": "wulingStockBill",
@@ -11997,46 +8414,46 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atk02_edc_01": {
+  "item_equip_t4_suit_atb01_body_02": {
     "level": 70,
-    "partType": 2,
+    "partType": 0,
     "rarity": 5,
-    "pack": "suit_atk02",
+    "pack": "suit_atb01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          56
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          32,
-          35,
-          38,
-          41
+          87,
+          95,
+          104,
+          113
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Will",
+        "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
+          58,
+          63,
+          69,
+          75
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "PhysicalDamageIncrease",
+        "attrType": "NormalSkillEfficiency",
         "values": [
-          0.22999999999999998,
-          0.2529999911785126,
-          0.2759999930858612,
-          0.29899999499320984
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -12045,44 +8462,44 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21,
-          21,
-          21,
-          21
+          56,
+          56,
+          56,
+          56
         ]
       },
       {
         "attrType": "Str",
         "values": [
-          32,
-          35,
-          38,
-          41
+          87,
+          95,
+          104,
+          113
         ]
       },
       {
-        "attrType": "Will",
+        "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
+          58,
+          63,
+          69,
+          75
         ]
       },
       {
-        "attrType": "PhysicalDamageIncrease",
+        "attrType": "NormalSkillEfficiency",
         "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
+          0.207,
+          0.2277,
+          0.24839999999999998,
+          0.2691
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.20000000298023224,
-      "max_stack": 3
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
     },
     "materials": [
       {
@@ -12174,6 +8591,104 @@ export const equipment = {
           0.2277,
           0.24839999999999998,
           0.2691
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.1035089175054887,
+          0.11385980993509293,
+          0.12421070039272308,
+          0.13456159830093384
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "Attr_0",
+        "values": [
+          0.1035089175054887,
+          0.11385980925603757,
+          0.12421070100658643,
+          0.1345615927571353
         ]
       }
     ],
@@ -12389,6 +8904,192 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.56925,
+          0.6209999999999999,
+          0.67275
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "level": 70,
     "partType": 2,
@@ -12483,6 +9184,183 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "Attr_0",
+        "values": [
+          0.2070178350109774,
+          0.22771961851207514,
+          0.24842140201317287,
+          0.2691231855142706
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
         "amount": 50
       }
     ]
@@ -12585,9 +9463,9 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_atb01_edc_05": {
+  "item_equip_t4_suit_atb01_hand_02": {
     "level": 70,
-    "partType": 2,
+    "partType": 1,
     "rarity": 5,
     "pack": "suit_atb01",
     "displayAttr": [
@@ -12595,23 +9473,33 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          42
         ]
       },
       {
         "attrType": "Will",
         "values": [
-          41,
-          45,
-          49,
-          53
+          65,
+          71,
+          78,
+          84
         ],
-        "enhanceGuaranteeTimes": "SingleAttrPity"
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "PhysicalDamageIncrease",
+        "attrType": "Str",
         "values": [
-          0.22999999999999998,
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
           0.2529999911785126,
           0.2759999930858612,
           0.29899999499320984
@@ -12623,28 +9511,55 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21,
-          21,
-          21,
-          21
+          42,
+          42,
+          42,
+          42
         ]
       },
       {
         "attrType": "Will",
         "values": [
-          41,
-          45,
-          49,
-          53
+          65,
+          71,
+          78,
+          84
         ]
       },
       {
-        "attrType": "PhysicalDamageIncrease",
+        "attrType": "Str",
         "values": [
-          0.22999999999999998,
-          0.253,
-          0.27599999999999997,
-          0.299
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
+        ]
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
         ]
       }
     ],
@@ -12660,6 +9575,104 @@ export const equipment = {
       },
       {
         "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_atb01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
         "amount": 50
       }
     ]
@@ -12758,6 +9771,104 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_atk02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -12976,11 +10087,11 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_phy01_edc_04": {
+  "item_equip_t4_suit_atk02_edc_01": {
     "level": 70,
     "partType": 2,
     "rarity": 5,
-    "pack": "suit_phy01",
+    "pack": "suit_atk02",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -12990,7 +10101,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Agi",
+        "attrType": "Str",
         "values": [
           32,
           35,
@@ -13000,7 +10111,7 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Str",
+        "attrType": "Will",
         "values": [
           21,
           23,
@@ -13010,12 +10121,12 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSkillEfficiency",
+        "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.5175,
-          0.5692499876022339,
-          0.6209999918937683,
-          0.6727499961853027
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13031,7 +10142,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Agi",
+        "attrType": "Str",
         "values": [
           32,
           35,
@@ -13040,7 +10151,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Str",
+        "attrType": "Will",
         "values": [
           21,
           23,
@@ -13049,28 +10160,27 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "UltimateSkillEfficiency",
+        "attrType": "PhysicalDamageIncrease",
         "values": [
-          0.5175,
-          0.56925,
-          0.6209999999999999,
-          0.67275
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
         ]
       }
     ],
     "blackboard": {
-      "poise_up": 0.20000000298023224,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
     },
     "materials": [
       {
         "name": "wulingStockBill",
-        "amount": 25000
+        "amount": 8000
       },
       {
-        "name": "hetoniteComponent",
+        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -13173,46 +10283,46 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_criti01_hand_03": {
+  "item_equip_t4_suit_atk02_edc_03": {
     "level": 70,
-    "partType": 1,
+    "partType": 2,
     "rarity": 5,
-    "pack": "suit_criti01",
+    "pack": "suit_atk02",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          21
         ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Wisd",
         "values": [
-          65,
-          71,
-          78,
-          84
+          21,
+          23,
+          25,
+          27
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Will",
+        "attrType": "ComboSkillEfficiency",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.08625,
-          0.09487500041723251,
-          0.10350000113248825,
-          0.11212500184774399
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -13221,54 +10331,52 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
         ]
       },
       {
         "attrType": "Wisd",
         "values": [
-          65,
-          71,
-          78,
-          84
+          21,
+          23,
+          25,
+          27
         ]
       },
       {
-        "attrType": "Will",
+        "attrType": "ComboSkillEfficiency",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ]
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.08625,
-          0.094875,
-          0.1035,
-          0.11212499999999999
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.20000000298023224,
+      "max_stack": 3
     },
     "materials": [
       {
         "name": "wulingStockBill",
-        "amount": 8000
+        "amount": 16000
       },
       {
-        "name": "xiraniteComponent",
+        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -13367,105 +10475,6 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_combo_cd01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.540000915527344,
-          49.68000030517578,
-          53.81999969482422
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          41.4,
-          45.54,
-          49.68,
-          53.82
-        ]
-      }
-    ],
-    "blackboard": {
-      "comboskill_cooldown": 0.8500000238418579,
-      "spell_up": 0.20000000298023224,
-      "duration": 15,
-      "max_stack": 2
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
         "amount": 50
       }
     ]
@@ -13770,204 +10779,6 @@ export const equipment = {
       "atk_up": 0.15000000596046448,
       "dmg_up": 0.20000000298023224,
       "max_stack": 3
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_attri01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.15000000596046448,
-      "dmg_up": 0.30000001192092896,
-      "max_stack": 2
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_criti01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.05175,
-          0.05692499876022339,
-          0.06210000067949295,
-          0.06727500259876251
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "CriticalRate",
-        "values": [
-          0.05175,
-          0.056925,
-          0.062099999999999995,
-          0.067275
-        ]
-      }
-    ],
-    "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
     },
     "materials": [
       {
@@ -14479,7 +11290,203 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_attri01_edc_07": {
+  "item_equip_t4_suit_attri01_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
     "level": 70,
     "partType": 2,
     "rarity": 5,
@@ -14513,7 +11520,7 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "AttrDamageToBrokenUnitIncrease",
         "values": [
           0.414,
           0.4553999900817871,
@@ -14552,7 +11559,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "AttrDamageToBrokenUnitIncrease",
         "values": [
           0.414,
           0.4554,
@@ -14569,10 +11576,10 @@ export const equipment = {
     "materials": [
       {
         "name": "wulingStockBill",
-        "amount": 16000
+        "amount": 8000
       },
       {
-        "name": "cupriumComponent",
+        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -14671,6 +11678,202 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -14782,105 +11985,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_phy01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1264999955892563,
-          0.1379999965429306,
-          0.14949999749660492
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Str",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "PhysicalDamageIncrease",
-        "values": [
-          0.11499999999999999,
-          0.1265,
-          0.13799999999999998,
-          0.1495
-        ]
-      }
-    ],
-    "blackboard": {
-      "poise_up": 0.20000000298023224,
-      "atk_scale": 2.5,
-      "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "level": 70,
     "partType": 1,
@@ -14988,6 +12092,113 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_attri01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.15000000596046448,
+      "dmg_up": 0.30000001192092896,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_burst01_body_01": {
     "level": 70,
     "partType": 0,
@@ -15087,43 +12298,43 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_poise01_hand_02": {
+  "item_equip_t4_suit_burst01_edc_01": {
     "level": 70,
-    "partType": 1,
+    "partType": 2,
     "rarity": 5,
-    "pack": "suit_poise01",
+    "pack": "suit_burst01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          21
         ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Will",
         "values": [
-          65,
-          71,
-          78,
-          84
+          21,
+          23,
+          25,
+          27
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Agi",
+        "attrType": "CrystAndPulseDamageIncrease",
         "values": [
-          43,
-          47,
-          51,
-          55
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "AllSkillDamageIncrease",
-        "values": [
-          0.23,
+          0.22999999999999998,
           0.2529999911785126,
           0.2759999930858612,
           0.29899999499320984
@@ -15135,74 +12346,62 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
         ]
       },
       {
         "attrType": "Will",
         "values": [
-          65,
-          71,
-          78,
-          84
+          21,
+          23,
+          25,
+          27
         ]
       },
       {
-        "attrType": "Agi",
+        "attrType": "CrystDamageIncrease",
         "values": [
-          43,
-          47,
-          51,
-          55
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
         ]
       },
       {
-        "attrType": "NormalSkillEfficiency",
+        "attrType": "PulseDamageIncrease",
         "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
-        ]
-      },
-      {
-        "attrType": "UltimateSkillEfficiency",
-        "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
-        ]
-      },
-      {
-        "attrType": "ComboSkillEfficiency",
-        "values": [
-          0.23,
-          0.25300000000000006,
-          0.276,
-          0.29900000000000004
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
         ]
       }
     ],
     "blackboard": {
-      "atk_up": 0.07999999821186066,
-      "phy_dmg_up": 0.07999999821186066,
-      "duration": 15,
-      "max_stack": 4,
-      "stack_cond": 4,
-      "phy_dmg_up2": 0.1599999964237213,
-      "duration2": 10
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
     },
     "materials": [
       {
         "name": "wulingStockBill",
-        "amount": 16000
+        "amount": 8000
       },
       {
-        "name": "cupriumComponent",
+        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -15286,6 +12485,114 @@ export const equipment = {
           0.3036,
           0.33119999999999994,
           0.35879999999999995
+        ]
+      }
+    ],
+    "blackboard": {
+      "skill_dmg_up": 0.20000000298023224,
+      "stack_cond": 2,
+      "spell_dmg_up": 0.3499999940395355,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_burst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
         ]
       }
     ],
@@ -15711,46 +13018,46 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_criti01_hand_04": {
+  "item_equip_t4_suit_combo_cd01_edc_03": {
     "level": 70,
-    "partType": 1,
+    "partType": 2,
     "rarity": 5,
-    "pack": "suit_criti01",
+    "pack": "suit_combo_cd01",
     "displayAttr": [
       {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          42
+          21
         ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Wisd",
         "values": [
-          43,
-          47,
-          51,
-          55
+          32,
+          35,
+          38,
+          41
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "UltimateSkillEfficiency",
+        "attrType": "Will",
         "values": [
-          0.43125,
-          0.47437500953674316,
-          0.5174999833106995,
-          0.5606250166893005
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -15759,54 +13066,152 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          42,
-          42,
-          42,
-          42
-        ]
-      },
-      {
-        "attrType": "Agi",
-        "values": [
-          65,
-          71,
-          78,
-          84
+          21,
+          21,
+          21,
+          21
         ]
       },
       {
         "attrType": "Wisd",
         "values": [
-          43,
-          47,
-          51,
-          55
+          32,
+          35,
+          38,
+          41
         ]
       },
       {
-        "attrType": "UltimateSkillEfficiency",
+        "attrType": "Will",
         "values": [
-          0.43125,
-          0.47437500000000005,
-          0.5175,
-          0.560625
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.54,
+          49.68,
+          53.82
         ]
       }
     ],
     "blackboard": {
-      "crit_up": 0.05000000074505806,
-      "duration": 5,
-      "atk_up": 0.05000000074505806,
-      "max_stack": 5,
-      "crit_up2": 0.05000000074505806
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
     },
     "materials": [
       {
         "name": "wulingStockBill",
-        "amount": 16000
+        "amount": 25000
       },
       {
-        "name": "cupriumComponent",
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_combo_cd01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "comboskill_cooldown": 0.8500000238418579,
+      "spell_up": 0.20000000298023224,
+      "duration": 15,
+      "max_stack": 2
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
         "amount": 50
       }
     ]
@@ -16127,9 +13532,9 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_criti01_edc_03": {
+  "item_equip_t4_suit_criti01_body_02": {
     "level": 70,
-    "partType": 2,
+    "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
     "displayAttr": [
@@ -16137,36 +13542,36 @@ export const equipment = {
         "attrType": "Def",
         "enhanceGuaranteeTimes": "",
         "values": [
-          21
+          56
         ]
       },
       {
         "attrType": "Wisd",
         "values": [
-          32,
-          35,
-          38,
-          41
+          87,
+          95,
+          104,
+          113
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
         "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
+          58,
+          63,
+          69,
+          75
         ],
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "CriticalRate",
+        "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.1035,
-          0.11384999752044678,
-          0.1242000013589859,
-          0.13455000519752502
+          0.13799999999999998,
+          0.1518000066280365,
+          0.1656000018119812,
+          0.1793999969959259
         ],
         "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
@@ -16175,37 +13580,37 @@ export const equipment = {
       {
         "attrType": "Def",
         "values": [
-          21,
-          21,
-          21,
-          21
+          56,
+          56,
+          56,
+          56
         ]
       },
       {
         "attrType": "Wisd",
         "values": [
-          32,
-          35,
-          38,
-          41
+          87,
+          95,
+          104,
+          113
         ]
       },
       {
         "attrType": "Agi",
         "values": [
-          21,
-          23,
-          25,
-          27
+          58,
+          63,
+          69,
+          75
         ]
       },
       {
-        "attrType": "CriticalRate",
+        "attrType": "NormalAttackDamageIncrease",
         "values": [
-          0.1035,
-          0.11385,
-          0.12419999999999999,
-          0.13455
+          0.13799999999999998,
+          0.1518,
+          0.16559999999999997,
+          0.17939999999999998
         ]
       }
     ],
@@ -16223,6 +13628,306 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.05175,
+          0.05692499876022339,
+          0.06210000067949295,
+          0.06727500259876251
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.05175,
+          0.056925,
+          0.062099999999999995,
+          0.067275
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.207,
+          0.2277,
+          0.24839999999999998,
+          0.2691
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.1355357142857143,
+          0.14785714285714285,
+          0.16017857142857142
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -16415,6 +14120,106 @@ export const equipment = {
           0.4554,
           0.49679999999999996,
           0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.1035,
+          0.11385,
+          0.12419999999999999,
+          0.13455
         ]
       }
     ],
@@ -16845,105 +14650,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_expend_spell01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4553999900817871,
-          0.4968000054359436,
-          0.5382000207901001
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "NormalSkillEfficiency",
-        "values": [
-          0.414,
-          0.4554,
-          0.49679999999999996,
-          0.5382
-        ]
-      }
-    ],
-    "blackboard": {
-      "atk_up": 0.10000000149011612,
-      "spell_dmg_up": 0.15000000596046448,
-      "duration": 25,
-      "max_stack": 3
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "level": 70,
     "partType": 1,
@@ -17044,6 +14750,800 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.08625,
+          0.09487500041723251,
+          0.10350000113248825,
+          0.11212500184774399
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "CriticalRate",
+        "values": [
+          0.08625,
+          0.094875,
+          0.1035,
+          0.11212499999999999
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_criti01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.43125,
+          0.47437500953674316,
+          0.5174999833106995,
+          0.5606250166893005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.43125,
+          0.47437500000000005,
+          0.5175,
+          0.560625
+        ]
+      }
+    ],
+    "blackboard": {
+      "crit_up": 0.05000000074505806,
+      "duration": 5,
+      "atk_up": 0.05000000074505806,
+      "max_stack": 5,
+      "crit_up2": 0.05000000074505806
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1265,
+          0.13799999999999998,
+          0.1495
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.77,
+          24.84,
+          26.91
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95,
+          41.4,
+          44.85
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_crush_fracture",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95,
+          41.4,
+          44.85
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up_perstack": 0.05999999865889549,
+      "special_multi": 1.5,
+      "duration": 20
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "level": 70,
     "partType": 0,
@@ -17132,6 +15632,213 @@ export const equipment = {
           0.1265,
           0.13799999999999998,
           0.1495
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.10000000149011612,
+      "spell_dmg_up": 0.15000000596046448,
+      "duration": 25,
+      "max_stack": 3
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_expend_spell01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.10000000149011612,
+      "spell_dmg_up": 0.15000000596046448,
+      "duration": 25,
+      "max_stack": 3
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_expend_spell01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
         ]
       }
     ],
@@ -17551,106 +16258,6 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "level": 70,
-    "partType": 0,
-    "rarity": 5,
-    "pack": "suit_pulse_cryst01",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.770000457763672,
-          24.84000015258789,
-          26.90999984741211
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          56,
-          56,
-          56,
-          56
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          87,
-          95,
-          104,
-          113
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          58,
-          63,
-          69,
-          75
-        ]
-      },
-      {
-        "attrType": "OriginiumArts",
-        "values": [
-          20.7,
-          22.77,
-          24.84,
-          26.91
-        ]
-      }
-    ],
-    "blackboard": {
-      "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
-      "duration": 10,
-      "cryst_dmg_up": 0.5,
-      "duration2": 10
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "level": 70,
     "partType": 2,
@@ -17751,11 +16358,11 @@ export const equipment = {
       }
     ]
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+  "item_equip_t4_suit_fire_natr01_hand_01": {
     "level": 70,
     "partType": 1,
     "rarity": 5,
-    "pack": "suit_pulse_cryst01",
+    "pack": "suit_fire_natr01",
     "displayAttr": [
       {
         "attrType": "Def",
@@ -17765,7 +16372,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Will",
+        "attrType": "Str",
         "values": [
           65,
           71,
@@ -17775,7 +16382,7 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Will",
         "values": [
           43,
           47,
@@ -17785,7 +16392,107 @@ export const equipment = {
         "enhanceGuaranteeTimes": "DoubleAttrPity"
       },
       {
-        "attrType": "CrystAndPulseDamageIncrease",
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95,
+          41.4,
+          44.85
+        ]
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "fire_dmg_up": 0.5,
+      "duration": 10,
+      "nature_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_fire_natr01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
         "values": [
           0.19166666666666668,
           0.2108333259820938,
@@ -17806,7 +16513,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Will",
+        "attrType": "Wisd",
         "values": [
           65,
           71,
@@ -17815,7 +16522,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "Wisd",
+        "attrType": "Str",
         "values": [
           43,
           47,
@@ -17824,7 +16531,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "CrystDamageIncrease",
+        "attrType": "FireDamageIncrease",
         "values": [
           0.19166666666666668,
           0.21083333333333337,
@@ -17833,7 +16540,7 @@ export const equipment = {
         ]
       },
       {
-        "attrType": "PulseDamageIncrease",
+        "attrType": "NaturalDamageIncrease",
         "values": [
           0.19166666666666668,
           0.21083333333333337,
@@ -17844,9 +16551,9 @@ export const equipment = {
     ],
     "blackboard": {
       "phy_spell_up": 30,
-      "pulse_dmg_up": 0.5,
+      "fire_dmg_up": 0.5,
       "duration": 10,
-      "cryst_dmg_up": 0.5,
+      "nature_dmg_up": 0.5,
       "duration2": 10
     },
     "materials": [
@@ -17965,6 +16672,428 @@ export const equipment = {
       },
       {
         "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1035,
+          0.11385,
+          0.12419999999999999,
+          0.13455
+        ]
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1035,
+          0.11384999752044678,
+          0.1242000013589859,
+          0.13455000519752502
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.1035,
+          0.11385,
+          0.12419999999999999,
+          0.13455
+        ]
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312666893005,
+          0.8010253310203552,
+          0.7879599928855896
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      },
+      {
+        "attrType": "FireDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      },
+      {
+        "attrType": "PulseDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      },
+      {
+        "attrType": "CrystDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      },
+      {
+        "attrType": "NaturalDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      },
+      {
+        "attrType": "EtherDamageTakenScalar",
+        "values": [
+          0.828500414250207,
+          0.8145312372729494,
+          0.8010253123998718,
+          0.7879599716334411
+        ]
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "MaxHp",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
         "amount": 50
       }
     ]
@@ -18247,6 +17376,105 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
+        ]
+      }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "level": 70,
     "partType": 1,
@@ -18445,6 +17673,383 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.77,
+          24.84,
+          26.91
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1265,
+          0.13799999999999998,
+          0.1495
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1264999955892563,
+          0.1379999965429306,
+          0.14949999749660492
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.11499999999999999,
+          0.1265,
+          0.13799999999999998,
+          0.1495
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.54,
+          49.68,
+          53.82
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "level": 70,
     "partType": 2,
@@ -18544,6 +18149,204 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "PhysicalDamageIncrease",
+        "values": [
+          0.22999999999999998,
+          0.253,
+          0.27599999999999997,
+          0.299
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_phy01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.56925,
+          0.6209999999999999,
+          0.67275
+        ]
+      }
+    ],
+    "blackboard": {
+      "poise_up": 0.20000000298023224,
+      "atk_scale": 2.5,
+      "poise": 10,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 25000
+      },
+      {
+        "name": "hetoniteComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_phy01_hand_01": {
     "level": 70,
     "partType": 1,
@@ -18630,104 +18433,6 @@ export const equipment = {
       "poise_up": 0.20000000298023224,
       "atk_scale": 2.5,
       "poise": 10,
-      "duration": 15
-    },
-    "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
-    ]
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "level": 70,
-    "partType": 2,
-    "rarity": 5,
-    "pack": "suit_usp02",
-    "displayAttr": [
-      {
-        "attrType": "Def",
-        "enhanceGuaranteeTimes": "",
-        "values": [
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ],
-        "enhanceGuaranteeTimes": "DoubleAttrPity"
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.207,
-          0.22769999504089355,
-          0.2484000027179718,
-          0.26910001039505005
-        ],
-        "enhanceGuaranteeTimes": "ExtraAttrPity"
-      }
-    ],
-    "equipAttr": [
-      {
-        "attrType": "Def",
-        "values": [
-          21,
-          21,
-          21,
-          21
-        ]
-      },
-      {
-        "attrType": "Wisd",
-        "values": [
-          32,
-          35,
-          38,
-          41
-        ]
-      },
-      {
-        "attrType": "Will",
-        "values": [
-          21,
-          23,
-          25,
-          27
-        ]
-      },
-      {
-        "attrType": "HealOutputIncrease",
-        "values": [
-          0.207,
-          0.2277,
-          0.24839999999999998,
-          0.2691
-        ]
-      }
-    ],
-    "blackboard": {
-      "hp_up": 1000,
-      "dmg_up": 0.1599999964237213,
       "duration": 15
     },
     "materials": [
@@ -19347,6 +19052,430 @@ export const equipment = {
       }
     ]
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4553999900817871,
+          0.4968000054359436,
+          0.5382000207901001
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.414,
+          0.4554,
+          0.49679999999999996,
+          0.5382
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95000076293945,
+          41.400001525878906,
+          44.849998474121094
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          34.5,
+          37.95,
+          41.4,
+          44.85
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_poise01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.23,
+          0.2529999911785126,
+          0.2759999930858612,
+          0.29899999499320984
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
+        ]
+      },
+      {
+        "attrType": "ComboSkillEfficiency",
+        "values": [
+          0.23,
+          0.25300000000000006,
+          0.276,
+          0.29900000000000004
+        ]
+      }
+    ],
+    "blackboard": {
+      "atk_up": 0.07999999821186066,
+      "phy_dmg_up": 0.07999999821186066,
+      "duration": 15,
+      "max_stack": 4,
+      "stack_cond": 4,
+      "phy_dmg_up2": 0.1599999964237213,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.77,
+          24.84,
+          26.91
+        ]
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "level": 70,
     "partType": 2,
@@ -19443,6 +19572,571 @@ export const equipment = {
       },
       {
         "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.540000915527344,
+          49.68000030517578,
+          53.81999969482422
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          41.4,
+          45.54,
+          49.68,
+          53.82
+        ]
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.5692499876022339,
+          0.6209999918937683,
+          0.6727499961853027
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ]
+      },
+      {
+        "attrType": "UltimateSkillEfficiency",
+        "values": [
+          0.5175,
+          0.56925,
+          0.6209999999999999,
+          0.67275
+        ]
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 16000
+      },
+      {
+        "name": "cupriumComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_pulse_cryst01",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "CrystAndPulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "CrystDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      },
+      {
+        "attrType": "PulseDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.21083333333333337,
+          0.23,
+          0.2491666666666667
+        ]
+      }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "pulse_dmg_up": 0.5,
+      "duration": 10,
+      "cryst_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "level": 70,
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.770000457763672,
+          24.84000015258789,
+          26.90999984741211
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          56,
+          56,
+          56,
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ]
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          20.7,
+          22.77,
+          24.84,
+          26.91
+        ]
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714340209961,
+          0.29571428894996643,
+          0.32035714387893677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Str",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.2464285714285714,
+          0.2710714285714286,
+          0.2957142857142857,
+          0.32035714285714284
+        ]
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "level": 70,
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.207,
+          0.22769999504089355,
+          0.2484000027179718,
+          0.26910001039505005
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          21,
+          21,
+          21,
+          21
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ]
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.207,
+          0.2277,
+          0.24839999999999998,
+          0.2691
+        ]
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
         "amount": 50
       }
     ]
@@ -19610,6 +20304,104 @@ export const equipment = {
       },
       {
         "attrType": "Str",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ]
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285714285715,
+          0.2464285714285714,
+          0.2669642857142857
+        ]
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      {
+        "name": "wulingStockBill",
+        "amount": 8000
+      },
+      {
+        "name": "xiraniteComponent",
+        "amount": 50
+      }
+    ]
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "level": 70,
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "equipAttr": [
+      {
+        "attrType": "Def",
+        "values": [
+          42,
+          42,
+          42,
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ]
+      },
+      {
+        "attrType": "Will",
         "values": [
           43,
           47,

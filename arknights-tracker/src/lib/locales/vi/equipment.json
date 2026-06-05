@@ -5,29 +5,11 @@
     "decoDesc": "Bộ giáp cơ bản với kết cấu đơn giản. \nKhiến mọi người an tâm vượt xa khả năng Phòng Thủ thực tế của nó.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "name": "Hỏa Thạch Kiếm Sĩ",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu. \nĐá lửa về cơ bản sẽ ép xung và làm cạn kiệt nguồn năng lượng dự trữ của hệ thống áo giáp của Kiếm Sĩ. Nó chỉ phát sáng khi người đeo chạm trán với cái chết.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "name": "PPE Cơ Bản",
     "description": "Được chế tạo tạm thời và không vượt qua quy trình xác minh và xác nhận sản phẩm cuối cùng (V&V) của Tập Đoàn Endfield. Trang bị này chỉ cung cấp khả năng phòng thủ hạn chế.",
     "decoDesc": "Bộ giáp cơ bản với kết cấu đơn giản. \nKhiến mọi người an tâm vượt xa khả năng Phòng Thủ thực tế của nó.",
     "setBonus": ""
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "name": "Đèn Pin LLV Bọc Thép",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một chiếc đèn điện cầm tay chắc chắn. \nChiếc gai nhọn ở đầu kia cũng có thể dùng để bẻ gãy xương những người từ chối nói.",
-    "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "name": "Con Quay LLV Cơ Động T1",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một món đồ chơi phức tạp. \nKết quả từ một cuộc thăm dò đáng tin cho thấy khoảng 20% liên lạc viên sẽ biến món đồ chơi giải tỏa căng thẳng này thành một thiết bị theo dõi tự định hướng.",
-    "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "name": "Giáp Tay Cơ Bản",
@@ -35,23 +17,11 @@
     "decoDesc": "Bộ giáp cơ bản với kết cấu đơn giản. \nKhiến mọi người an tâm vượt xa khả năng Phòng Thủ thực tế của nó.",
     "setBonus": ""
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "Găng Tay Cách Điện Mordvolt",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một trang bị thiết yếu cho các hoạt động trong môi trường đặc biệt. \nTất cả các kỹ sư thực hiện sửa chữa điện tại các địa điểm bùng phát Nhiễm Khuẩn phải mặc PPE chuyên dụng để tránh thương tích do các vụ nổ phóng điện bất thường gây ra.",
-    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "name": "Găng Tay Cơ Bản",
     "description": "Được chế tạo tạm thời và không vượt qua quy trình xác minh và xác nhận sản phẩm cuối cùng (V&V) của Tập Đoàn Endfield. Trang bị này chỉ cung cấp khả năng phòng thủ hạn chế.",
     "decoDesc": "Bộ giáp cơ bản với kết cấu đơn giản. \nKhiến mọi người an tâm vượt xa khả năng Phòng Thủ thực tế của nó.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "name": "Radar Yinglung Loại 50 T2",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nKhi sự tối ưu hóa cuối cùng hoàn tất, anh ấy viết thêm vài chữ bên cạnh bản vẽ: \"Dù trời long đất lở, nhưng tôi sẽ chiến thắng và trở thành người thắng cuộc.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "name": "Giáp Thợ Mỏ",
@@ -59,20 +29,8 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "name": "Đầu Nối LYNX",
-    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. \nMột linh kiện kết nối do Rhodes Island phát triển để hiệu chuẩn dữ liệu. Nó có thể được kết nối với nhiều hệ thống hỗ trợ sức khỏe khác nhau để thực hiện nhiều dạng chăm sóc sức khỏe khẩn cấp.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "name": "Đồ Bảo Hộ Thợ Mỏ",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
-    "setBonus": ""
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "name": "Lõi Nén Khẩn Cấp",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
@@ -101,20 +59,14 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "name": "Giáp Khu Phức Hợp Nặng",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun nhưng có khả năng bảo vệ mạnh mẽ. \nSau khi gắn các tấm giáp dày hơn và nặng hơn vào bộ đồ, bộ giáp có thể sẽ trở thành mục tiêu của những khẩu súng mạnh.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch sẽ hồi <@ba.heal>{hp_add}</> HP. Thời gian hồi để kích hoạt lại hiệu ứng: {cd} giây."
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "name": "Giáp Hạng Nặng Thảm Họa",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNó được trang bị hệ thống kích thích vi điện có tác dụng giảm mệt mỏi cho người đeo một cách hiệu quả. Các thành viên đội đặc biệt hài lòng với thiết kế nhỏ nhắn đầy sức sống này.",
-    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "name": "Máy Liên Lạc Khẩn Cấp",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
+    "setBonus": ""
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "name": "Lõi Nén Khẩn Cấp",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
@@ -124,12 +76,6 @@
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "name": "Găng Tay Kháng Lửa",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có khả năng kháng lửa ưu việt. \nĐại Công Đoàn và Tập Đoàn Endfield đã hợp tác phát triển dòng sản phẩm PPE Kháng Lửa để khám phá môi trường có nhiệt độ cao.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "name": "Găng Cổ Tay Thợ Mỏ",
@@ -149,23 +95,17 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "name": "Giáp Tay Kháng Lửa",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "name": "Giáp Khu Phức Hợp Nặng",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có khả năng chống cháy tuyệt vời. \n\"Suỵt, im lặng đi. Bạn có thể làm nó tỉnh dậy đấy.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+    "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun nhưng có khả năng bảo vệ mạnh mẽ. \nSau khi gắn các tấm giáp dày hơn và nặng hơn vào bộ đồ, bộ giáp có thể sẽ trở thành mục tiêu của những khẩu súng mạnh.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch sẽ hồi <@ba.heal>{hp_add}</> HP. Thời gian hồi để kích hoạt lại hiệu ứng: {cd} giây."
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "name": "Đĩa Khu Phức Hợp Nặng",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun nhưng có khả năng bảo vệ mạnh mẽ. \nViệc nâng cao hiệu suất phòng thủ cũng dẫn đến việc tăng trọng lượng đáng kể, và đây cũng là vấn đề lớn nhất của trang bị này.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch sẽ hồi <@ba.heal>{hp_add}</> HP. Thời gian hồi để kích hoạt lại hiệu ứng: {cd} giây."
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "name": "Giáp Tay Triều Xung",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị do Cục Kiếm Sĩ Hongshan thiết kế dành cho những người làm việc gần Triều Nhiễm Khuẩn. \nĐây là một câu hỏi về Triều Nhiễm Khuẩn: Sự sụp đổ của các con đập cổ có bắt đầu từ bên trong không?",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "name": "Đĩa Khu Phức Hợp Hợp Kim",
@@ -179,23 +119,11 @@
     "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun nhưng có khả năng bảo vệ mạnh mẽ. \nChỉ có hai cấu trúc hỗ trợ phức tạp được sử dụng để chịu đựng 40% trọng lượng của vũ khí. Đây là thiết kế thông minh.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch sẽ hồi <@ba.heal>{hp_add}</> HP. Thời gian hồi để kích hoạt lại hiệu ứng: {cd} giây."
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "Lõi Nén Thợ Mỏ T1",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
-    "setBonus": ""
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "name": "Giáp Khu Phức Hợp Nhẹ",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun, cung cấp khả năng bảo vệ ánh sáng. \nĐây là sản phẩm phụ được tạo ra trong quá trình chạy thử nghiệm trên nhiều dây chuyền sản xuất hỗn hợp tại nhiều cơ sở của Nhà Máy Khu Phức Hợp.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch, chỉ số Tấn Công <@ba.vup>+{atk_up}</> trong <@ba.vup>{duration}</> giây."
-  },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "name": "Ống O2 Phụ Tiền Tuyến T1",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Ống oxy Hiệp Đồng Tiên Phong tiêu chuẩn đảm bảo ít nhất 4 giờ hoạt động dưới nước khắc nghiệt nhờ công nghệ tuần hoàn oxy. Phiên bản nâng cấp còn kéo dài thời gian này lên đến 6 giờ.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "name": "Đĩa Khu Phức Hợp Nhẹ",
@@ -203,23 +131,11 @@
     "decoDesc": "Trang bị có cấu trúc đơn giản và dạng mô-đun, cung cấp khả năng bảo vệ nhẹ. \nTính năng nổi bật nhất của trang bị Khu Phức Hợp này là nó cho phép các tấm giáp được gắn linh hoạt vào bộ đồ.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch, chỉ số Tấn Công <@ba.vup>+{atk_up}</> trong <@ba.vup>{duration}</> giây."
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "name": "Đồ Bảo Hộ An Ninh MI",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "name": "Đĩa Khu Phức Hợp Gốm Sứ",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Thiết bị có cấu trúc đơn giản và dạng mô-đun nhưng có khả năng bảo vệ nhẹ. \n\"Mình rất muốn tin vào công nghệ của chúng ta, nhưng cái này cảm giác hơi mỏng manh quá\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch, chỉ số Tấn Công <@ba.vup>+{atk_up}</> trong <@ba.vup>{duration}</> giây."
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "name": "Găng Xiranflow",
-    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị thử nghiệm được đề xuất làm tiêu chuẩn cho Cảnh Vệ của Võ Lăng.\n\"Ý là đôi găng này sẽ... Gì cơ...? Tôi có thể chạm vào máy móc Xiranite để nạp năng lượng cho mấy cái này sao? Không phải mấy lời đồn nhảm về nhiễm khuẩn đâu, đúng chứ…?\"",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra</> cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "name": "Găng Tay Chiến Thuật Khu Phức Hợp",
@@ -227,23 +143,11 @@
     "decoDesc": "Trang bị có cấu trúc đơn giản và dạng mô-đun, cung cấp khả năng bảo vệ nhẹ. \nMặc dù chúng không mang lại khả năng phòng thủ tốt nhất nhưng ít nhất chúng cũng dễ mặc.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho Người Trang Bị. \nSau khi người trang bị đánh bại kẻ địch, chỉ số Tấn Công <@ba.vup>+{atk_up}</> trong <@ba.vup>{duration}</> giây."
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "name": "Găng Tay LYNX",
-    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phiên bản nặng hơn của trang bị ưa thích của các nhân viên y tế. \nRhodes Island vẫn quen trang bị PPE bằng các mô-đun giám sát Oripathy.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "name": "Turbin Thợ Mỏ",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "name": "Mặt Nạ Bonekrusha",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. Chiếc mặt nạ là biểu tượng của sự cuồng tín. Nhưng chỉ niềm tin thôi không đủ để giữ ai sống sót trong môi trường Nhiễm Khuẩn. Dù treo trên thắt lưng hay đeo trên mặt, chiếc mặt nạ này cũng chỉ là một mảnh gỗ mỏng manh.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "name": "Bánh Lái Thợ Mỏ",
@@ -251,29 +155,11 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "name": "Giáp Hạng Nặng LYNX",
-    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phiên bản nặng hơn của trang bị ưa thích của các nhân viên y tế. Mọi người thường gọi những chiến binh mặc Giáp Thân LYNX là \"Bộ Cứu Thương Di Động\". Những vật dụng cứu sinh này thường nhét đầy mọi túi và ngăn đựng áo giáp của họ với vật tư y tế khẩn cấp.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "name": "Lõi Nén Thợ Mỏ",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "Găng Tay Thợ Mỏ T2",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
-    "setBonus": ""
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "Pin Cách Điện Mordvolt T1",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Pin cực kỳ bền bỉ. \nTrong Talos-II, công việc sửa chữa khẩn cấp trong điều kiện nhiễm khuẩn là một công việc cực kỳ nguy hiểm. Do đó, công nhân phải trải qua khóa đào tạo nghiêm ngặt theo các tiêu chuẩn đặc biệt trước khi được phép sử dụng pin trong những môi trường như vậy.",
-    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "name": "Máy Liên Lạc Thợ Mỏ",
@@ -287,23 +173,11 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "name": "Giáp Tiền Tuyến T1",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "name": "Găng Tay Thợ Mỏ T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "name": "Đầu Nối LYNX T2",
-    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. \nMột linh kiện kết nối do Rhodes Island phát triển để hiệu chuẩn dữ liệu. Cho phép kết nối với nhiều hệ thống hỗ trợ sức khỏe khác nhau để thực hiện nhiều dạng chăm sóc sức khỏe khẩn cấp.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t2_suit_agi01_body_01": {
     "name": "Áo Khoác LLV Cơ Động",
@@ -317,12 +191,6 @@
     "decoDesc": "Một món đồ chơi phức tạp. \nKết quả từ một cuộc thăm dò đáng tin cho thấy khoảng 20% liên lạc viên sẽ biến món đồ chơi giải tỏa căng thẳng này thành một thiết bị theo dõi tự định hướng.",
     "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "name": "Cờ Lê Cách Điện Mordvolt",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một chiếc cờ lê với lớp phủ bảo vệ đặc biệt. \nNó cũng có thể được sử dụng như một vũ khí khi cần thiết. Nó hoàn toàn có khả năng nghiền nát và phá hủy tứ chi của Aggeloi.",
-    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "name": "Đèn Pin LLV Cơ Động",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
@@ -334,12 +202,6 @@
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một đôi găng tay bảo vệ mà các liên lạc viên thích dùng. \nLiên lạc viên cũng chiến đấu trên đấu trường để giết thời gian.",
     "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_body_04": {
-    "name": "Giáp Tiền Tuyến T3",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t2_suit_str01_body_01": {
     "name": "Áo Khoác LLV Bọc Thép",
@@ -353,17 +215,11 @@
     "decoDesc": "Một món đồ chơi phức tạp. \nKết quả từ một cuộc thăm dò đáng tin cậy cho thấy khoảng 80% liên lạc viên sẽ biến đổi món đồ chơi này thành một quả lựu đạn phi tiêu thu nhỏ.",
     "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "name": "Găng Tay Sợi Tiền Tuyến",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Mẫu găng tay chiến đấu dưới nước thuộc dòng giáp Hiệp Đồng Tiên Phong. Công nghệ dệt sợi đặc biệt mang lại cho những chiếc găng tay này chức năng tuần hoàn oxy.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "name": "Giáp Thân LYNX",
-    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. Mọi người thường gọi những chiến binh mặc Giáp Thân LYNX là \"Bộ Cứu Thương Di Động\". Những vật dụng cứu sinh này thường nhét đầy mọi túi và ngăn đựng áo giáp của họ với vật tư y tế khẩn cấp.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
+  "item_equip_t2_suit_str01_edc_02": {
+    "name": "Đèn Pin LLV Bọc Thép",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một chiếc đèn điện cầm tay chắc chắn. \nChiếc gai nhọn ở đầu kia cũng có thể dùng để bẻ gãy xương những người từ chối nói.",
+    "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
   },
   "item_equip_t2_suit_str01_hand_01": {
     "name": "Găng Tay LLV Bọc Thép",
@@ -395,16 +251,16 @@
     "decoDesc": "Một cặp găng tay cứng cáp. \nChúng ta vẫn chưa phát triển được bộ đồ PPE có khả năng kháng Nhiễm Khuẩn thực sự. Hầu hết các giải pháp PPE và bảo vệ trên thị trường chỉ có thể ứng phó với các thảm họa thứ cấp của sự kiện Nhiễm Khuẩn.",
     "setBonus": "Hiệu ứng bộ 3 món: Ý Chí Của Người trang bị <@ba.vup>+{will_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, Hiệu Ứng Trị Liệu <@ba.vup>+{heal_up:0%}</>."
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "name": "Máy Phân Tích Tiền Tuyến",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Một công cụ phân tích mức đe dọa thuộc dòng sản phẩm hỗ trợ Hiệp Đồng Tiên Phong. Máy phân tích sử dụng công nghệ nhận dạng hình ảnh để cung cấp cho người dùng khả năng phân tích mối đe dọa cơ bản từ các sinh vật lạ.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "name": "Áo Cách Điện Mordvolt",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Một trang bị thiết yếu cho các hoạt động trong môi trường đặc biệt. \nSự cố Nhiễm Khuẩn nghiêm trọng thường gây ra các sự cố điện và mạch điện bất thường. Công nhân được phân công sửa chữa phải chú ý đến chúng.",
+    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "name": "Cờ Lê Cách Điện Mordvolt",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một chiếc cờ lê với lớp phủ bảo vệ đặc biệt. \nNó cũng có thể được sử dụng như một vũ khí khi cần thiết. Nó hoàn toàn có khả năng nghiền nát và phá hủy tứ chi của Aggeloi.",
     "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t2_suit_wisd01_edc_02": {
@@ -419,6 +275,12 @@
     "decoDesc": "Pin cực kỳ bền bỉ. \nTrong Talos-II, công việc sửa chữa khẩn cấp trong điều kiện nhiễm khuẩn là một công việc cực kỳ nguy hiểm. Do đó, công nhân phải trải qua khóa đào tạo nghiêm ngặt theo các tiêu chuẩn đặc biệt trước khi được phép sử dụng pin trong những môi trường như vậy.",
     "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "name": "Găng Tay Cách Điện Mordvolt",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một trang bị thiết yếu cho các hoạt động trong môi trường đặc biệt. \nTất cả các kỹ sư thực hiện sửa chữa điện tại các địa điểm bùng phát Nhiễm Khuẩn phải mặc PPE chuyên dụng để tránh thương tích do các vụ nổ phóng điện bất thường gây ra.",
+    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
   "item_equip_t3_parts_tundra01_body_01": {
     "name": "Giáp Thợ Mỏ T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
@@ -431,26 +293,20 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "name": "Tượng Bonekrusha T1",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một món đồ trang sức gần như không có mục đích thực tế nào. Tuy nhiên, nhà thiết kế khẳng định nó có thể tạo ra sự phấn khích và hưng phấn.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "name": "Turbin Thợ Mỏ T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "name": "Đồ Bảo Hộ An Ninh MI T2",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "name": "Bánh Lái Thợ Mỏ T1",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
+    "setBonus": ""
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "name": "Lõi Nén Thợ Mỏ T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
@@ -461,11 +317,11 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "name": "Đồng Hồ Æthertech",
-    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Thiết bị bảo hộ thử nghiệm hạng nhẹ. \n\"Một số người dùng nghi ngờ sản phẩm của chúng tôi gây ra tác dụng đột biến gen. Những cáo buộc này hoàn toàn vô căn cứ.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "name": "Găng Tay Thợ Mỏ T2",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
+    "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "name": "Găng Tay Chiến Đấu Thợ Mỏ T1",
@@ -473,41 +329,11 @@
     "decoDesc": "Trang bị bảo hộ cho hoạt động khai thác. \nTiêu Chuẩn An Toàn và Bảo Vệ Của Thung Lũng IV quy định rằng các yêu cầu tối thiểu đối với bảo hộ lao động phải bao gồm lớp bảo vệ 2 lớp (i) lớp đệm mềm và (ii) lớp bảo vệ cứng, chắc chắn.",
     "setBonus": ""
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "name": "Áo Khoác LLV Bọc Thép T1",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một chiếc áo khoác mà bất kỳ liên lạc viên nào cũng muốn khoác lên. \nXe địa hình là phương tiện di chuyển rẻ và hiệu quả trên Talos-II. Liên lạc viên thường trang bị cho những chiếc xe đạp này nhiều phụ kiện và mô-đun khác nhau.",
-    "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "Cờ Lê Cách Điện Mordvolt T2",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một chiếc cờ lê với lớp phủ bảo vệ đặc biệt. \nNó cũng có thể được sử dụng như một vũ khí khi cần thiết. Nó hoàn toàn có khả năng nghiền nát và phá hủy tứ chi của Aggeloi.",
-    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "name": "Máy Liên Lạc Tiền Tuyến T1",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Một thiết bị liên lạc hạng nặng. Để đảm bảo chất lượng tín hiệu tại các địa điểm khai quật ngầm phức tạp, Máy Liên Lạc Tiền Tuyến được thiết kế chỉ với tính năng truyền tín hiệu.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "name": "Áo Khoác LLV Cơ Động T1",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một chiếc áo khoác mà bất kỳ liên lạc viên nào cũng muốn khoác lên. \nNhững Liên lạc viên làm việc trong và gần khu vực Thung Lũng IV thường sơn xe theo họa tiết giống cây cối. Họ hy vọng cảnh tượng những loài thực vật hùng vĩ từng bảo vệ vùng đất này có thể mang lại sức mạnh cho mọi người.",
     "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "name": "Giáp Hạng Nặng Aburrey T1",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một bộ giáp mới được cải tiến cho môi trường làm việc ở Mỏ Đá Aburrey. \nMột mô hình chiến đấu của Giáp Hạng Nặng Aburrey. So với kiểu dáng tiêu chuẩn, bộ giáp này được trang bị thêm nhiều cổng kết nối vũ khí đặc biệt tương thích với súng phun lửa, súng phóng lựu và các trang bị khác.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "name": "Máy Hiệu Chuẩn Sóng Xung",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có thiết kế mới lạ. \nNó tìm kiếm những \"giá trị ngoại lệ vàng\" ẩn giấu kỹ giữa đại dương dữ liệu vô tận rồi xóa sổ chúng.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "name": "Đèn Pin LLV Cơ Động T1",
@@ -521,22 +347,28 @@
     "decoDesc": "Một chiếc đèn điện cầm tay chắc chắn. \nChiếc gai nhọn ở đầu kia cũng có thể dùng để đập vỡ các hộp hoặc thùng chứa cũ.",
     "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "name": "Con Quay LLV Cơ Động T1",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một món đồ chơi phức tạp. \nKết quả từ một cuộc thăm dò đáng tin cho thấy khoảng 20% liên lạc viên sẽ biến món đồ chơi giải tỏa căng thẳng này thành một thiết bị theo dõi tự định hướng.",
+    "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "name": "Găng Đấm Bốc LLV Cơ Động T1",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một đôi găng tay bảo vệ mà các liên lạc viên thích dùng. \nLiên lạc viên cũng chiến đấu trên đấu trường để giết thời gian.",
     "setBonus": "Hiệu ứng bộ 3 món: Nhanh Nhẹn Của Người trang bị <@ba.vup>+{agi_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.pd>ST Vật Lý</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "name": "Giáp Xiranite Vĩnh Cửu",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Di sản của một Thiên Sư \"điên\". \nHầu hết mọi người sẽ thấy khó mà liên hệ giữa công việc bếp núc và Xiranite. Thế nhưng, một cư dân Võ Lăng đặc biệt lại thường nảy ra cảm hứng thiết kế mỗi khi dùng bữa tại nhà hàng.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_atk01_body_01": {
     "name": "Giáp Hạng Nặng Aburrey",
     "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một bộ giáp mới được cải tiến cho môi trường làm việc ở Mỏ Đá Aburrey. \nViệc khai quật di vật của tiền nhân có thể là một quá trình phức tạp và có những điều không như mong đợi. Trang bị sử dụng trong quá trình này phải có đầy đủ tính năng bảo vệ, cơ động cũng như tấn công.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "name": "Giáp Hạng Nặng Aburrey T1",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một bộ giáp mới được cải tiến cho môi trường làm việc ở Mỏ Đá Aburrey. \nMột mô hình chiến đấu của Giáp Hạng Nặng Aburrey. So với kiểu dáng tiêu chuẩn, bộ giáp này được trang bị thêm nhiều cổng kết nối vũ khí đặc biệt tương thích với súng phun lửa, súng phóng lựu và các trang bị khác.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
   },
   "item_equip_t3_suit_atk01_body_03": {
@@ -551,29 +383,11 @@
     "decoDesc": "Một bộ giáp mới được cải tiến cho môi trường làm việc ở Mỏ Đá Aburrey. \n\"Dừng lại! DỪNG LẠI! Ai đó! Hãy triệu tập Tu Hội Tĩnh Lặng!\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "name": "Giáp Hạng Nặng Yinglung Loại 50 T1",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nRất ít người biết rằng nhà thiết kế giáp thực ra là một người lính dự bị, người suýt chút nữa đã vượt qua kỳ kiểm tra tuyển chọn ĐĐNY. Suýt chút nữa.",
-    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "name": "Giáp An Ninh MI T1",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nLần đầu tiên được sử dụng trong quân đội loài người chiến đấu ở Mặt Trận Aggeloid.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "name": "Đèn UV Aburrey",
     "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \nCác kỹ sư đã làm việc suốt đêm để áp dụng các biện pháp sửa đổi khi công việc tại Mỏ Đá Aburrey đột nhiên liên quan đến việc khai quật và đào bới. Chiếc giáp này hiện có tính năng bảo vệ thị lực và thính giác.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "name": "Găng Bonekrusha",
-    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. \nKhông phải người sống ở vùng hoang địa nào cũng trở thành Landbreaker, nhưng không ai có thể thoát khỏi sự ràng buộc của thiên nhiên hoang dã.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "name": "Chip Âm Thanh Aburrey",
@@ -587,29 +401,11 @@
     "decoDesc": "Một loại trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \nKhi khám phá những điều chưa biết, việc cách âm và bảo vệ thính giác đầy đủ là vô cùng quan trọng. Con chip này có thể giúp người đeo xác định xem họ có đang bị ảo giác thính giác hay không.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "name": "Bộ Lọc Thảm Họa",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNhững bộ lọc này được thiết kế để sử dụng cùng Mặt Nạ Thảm Họa, và có thể dễ dàng cắm vào hoặc tháo ra.",
-    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "name": "Đèn Pin Aburrey",
     "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \n\"Nó nằm sâu trong đá, và tôi cứ tưởng mình vừa đào được vài thanh thép trong bê tông. Nhưng... nhưng tôi nghĩ tôi nghe thấy nó nói chuyện với tôi...\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "name": "Giáp Hạng Nặng Thảm Họa T1",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNó được trang bị hệ thống kích thích vi điện có tác dụng giảm mệt mỏi cho người đeo một cách hiệu quả. Các thành viên đội đặc biệt hài lòng với thiết kế nhỏ nhắn đầy sức sống này.",
-    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "name": "Hộp Băng Y Tế Thảm Họa T1",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nMặc dù căn bệnh Oripathy có thể được kiểm soát và điều trị hiệu quả bằng Talos-II, người dùng vẫn được khuyến cáo nên đeo đồ bảo hộ hô hấp cơ bản.",
-    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "name": "Chip Cảm Biến Aburrey",
@@ -617,29 +413,23 @@
     "decoDesc": "Trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \nTheo các kỹ sư, những phiên bản tiếp theo của bộ giáp này sẽ tập trung vào khả năng tự động hóa hoàn toàn. Ngay cả khi người trang bị mất khả năng chiến đấu, bộ giáp vẫn có thể đưa người trang bị đến nơi an toàn.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "name": "Hộp Băng Y Tế Thảm Họa",
-    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nMặc dù căn bệnh Oripathy có thể được kiểm soát và điều trị hiệu quả bằng Talos-II, người dùng vẫn được khuyến cáo nên đeo đồ bảo hộ hô hấp cơ bản.",
-    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "name": "Chip Cảm Biến Aburrey T1",
     "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \nTheo các kỹ sư, những phiên bản tiếp theo của bộ giáp này sẽ tập trung vào khả năng tự động hóa hoàn toàn. Ngay cả khi người trang bị mất khả năng chiến đấu, bộ giáp vẫn có thể đưa người trang bị đến nơi an toàn.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "name": "Găng Tay Sợi Tiền Tuyến T1",
-    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Mẫu găng tay chiến đấu dưới nước thuộc dòng giáp Hiệp Đồng Tiên Phong. Công nghệ dệt sợi đặc biệt mang lại cho những chiếc găng tay này chức năng tuần hoàn oxy.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "name": "Giáp Tay Aburrey",
     "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị bảo vệ mới được cải tiến cho môi trường làm việc của Mỏ Đá Aburrey. \nBảo vệ tay được kết nối với bộ áo giáp bảo vệ. Gần 100 cảm biến vi mô gồm 6 loại khác nhau được trang bị ở đầu ngón tay để giúp người đeo xác định chính xác những gì họ thực sự chạm vào, ngay cả khi họ hoàn toàn mất thị lực.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị. \nKhi người trang bị thi triển KN chiến đấu, KN liên hoàn hoặc tuyệt kỹ, chỉ số Tấn Công <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Buff từ mỗi loại kỹ năng trong ba loại trên được tính riêng và không được cộng dồn."
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "name": "Áo Khoác LLV Bọc Thép T1",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một chiếc áo khoác mà bất kỳ liên lạc viên nào cũng muốn khoác lên. \nXe địa hình là phương tiện di chuyển rẻ và hiệu quả trên Talos-II. Liên lạc viên thường trang bị cho những chiếc xe đạp này nhiều phụ kiện và mô-đun khác nhau.",
+    "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
   },
   "item_equip_t3_suit_str01_edc_01": {
     "name": "Con Quay LLV Bọc Thép T1",
@@ -659,17 +449,41 @@
     "decoDesc": "Một đôi găng tay mà bất kỳ liên lạc viên nào cũng muốn đeo. \nHầu hết liên lạc viên sẽ lắp đặt hệ thống thoát hiểm dễ sử dụng trên xe của họ để đối phó với những bùng phát Nhiễm Khuẩn bất ngờ.",
     "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "name": "Lõi Năng Lượng Xiranite Vĩnh Cửu",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Di sản của một Thiên Sư \"điên\". \n... Ông ta từng đi trên đường với một bát lớn Đậu Phụ Hầm trong Nước Trúc, và tuyên bố rằng ông vừa pha chế ra thế hệ tiếp theo của công nghệ làm lạnh dựa trên Xiranite.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "name": "Găng Tay LLV Bọc Thép T2",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một đôi găng tay mà bất kỳ liên lạc viên nào cũng muốn đeo. \nHầu hết liên lạc viên sẽ lắp đặt hệ thống thoát hiểm dễ sử dụng trên xe của họ để đối phó với những bùng phát Nhiễm Khuẩn bất ngờ.",
     "setBonus": "Hiệu ứng bộ 3 món: Sức Mạnh Của Người trang bị <@ba.vup>+{str_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, người mặc sẽ nhận được <@ba.vup>{1-dmg_taken_down:0%}</> Giảm ST đối với mọi loại ST."
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "name": "Giáp Hạng Nặng Thảm Họa",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNó được trang bị hệ thống kích thích vi điện có tác dụng giảm mệt mỏi cho người đeo một cách hiệu quả. Các thành viên đội đặc biệt hài lòng với thiết kế nhỏ nhắn đầy sức sống này.",
+    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "name": "Giáp Hạng Nặng Thảm Họa T1",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNó được trang bị hệ thống kích thích vi điện có tác dụng giảm mệt mỏi cho người đeo một cách hiệu quả. Các thành viên đội đặc biệt hài lòng với thiết kế nhỏ nhắn đầy sức sống này.",
+    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "name": "Hộp Băng Y Tế Thảm Họa",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nMặc dù căn bệnh Oripathy có thể được kiểm soát và điều trị hiệu quả bằng Talos-II, người dùng vẫn được khuyến cáo nên đeo đồ bảo hộ hô hấp cơ bản.",
+    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "name": "Hộp Băng Y Tế Thảm Họa T1",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nMặc dù căn bệnh Oripathy có thể được kiểm soát và điều trị hiệu quả bằng Talos-II, người dùng vẫn được khuyến cáo nên đeo đồ bảo hộ hô hấp cơ bản.",
+    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "name": "Bộ Lọc Thảm Họa",
+    "description": "Do Triglava Armoury thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phần của bộ giáp khung ngoài được trang bị bởi những người trồng pha lê tại Công Viên Khoa Học Originium. \nNhững bộ lọc này được thiết kế để sử dụng cùng Mặt Nạ Thảm Họa, và có thể dễ dàng cắm vào hoặc tháo ra.",
+    "setBonus": "Hiệu ứng bộ 3 món: Hiệu Quả Nhận Tuyệt Kỹ của Người trang bị <@ba.vup>+{ultimate_gain_up:0%}</>.\nNgười trang bị sẽ tung KN chiến đấu, <#ba.return>hồi lại</> <@ba.vup>{atb_recover:0}</> Điểm KN. Hiệu ứng chỉ kích hoạt 1 lần mỗi trận."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Găng Tay Thảm Họa",
@@ -695,12 +509,6 @@
     "decoDesc": "Một chiếc cờ lê được thiết kế tinh tế với đường nét mượt mà. \n\"Rất tiện lợi để đập đầu.\" - Từ một công nhân giấu tên",
     "setBonus": "Hiệu ứng bộ 3 món: Ý Chí Của Người trang bị <@ba.vup>+{will_up}</>. \nKhi HP của người trang bị dưới {hp_ratio:0%}, Hiệu Ứng Trị Liệu <@ba.vup>+{heal_up:0%}</>."
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "name": "Ống O2 Sông Treo",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị cho những người làm việc gần Triều Nhiễm Khuẩn do Cục Kiếm Sĩ Hongshan thiết kế. \nMột chút tuyệt vọng về Triều Nhiễm Khuẩn: những dòng chảy đục ngầu của sự bí ẩn đã tràn ngập khắp vùng đất.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "name": "Găng Tay Kháng Mordvolt T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
@@ -719,11 +527,17 @@
     "decoDesc": "Một trang bị thiết yếu cho các hoạt động trong môi trường đặc biệt. \nSự cố Nhiễm Khuẩn nghiêm trọng thường gây ra các sự cố điện và mạch điện bất thường. Công nhân được phân công sửa chữa phải chú ý đến chúng.",
     "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "name": "Găng Tay Æthertech",
-    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị bảo vệ thử nghiệm hạng nhẹ. \n\"Luôn mang thêm lớp đệm bảo hộ khi sử dụng sản phẩm của chúng tôi. Nếu bạn gặp phải ảo giác về thính giác hoặc thị giác, hãy NGAY LẬP TỨC tháo sản phẩm ra và ăn chút gì đó.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "name": "Cờ Lê Cách Điện Mordvolt T2",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một chiếc cờ lê với lớp phủ bảo vệ đặc biệt. \nNó cũng có thể được sử dụng như một vũ khí khi cần thiết. Nó hoàn toàn có khả năng nghiền nát và phá hủy tứ chi của Aggeloi.",
+    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "name": "Pin Cách Điện Mordvolt T1",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Pin cực kỳ bền bỉ. \nTrong Talos-II, công việc sửa chữa khẩn cấp trong điều kiện nhiễm khuẩn là một công việc cực kỳ nguy hiểm. Do đó, công nhân phải trải qua khóa đào tạo nghiêm ngặt theo các tiêu chuẩn đặc biệt trước khi được phép sử dụng pin trong những môi trường như vậy.",
+    "setBonus": "Hiệu ứng bộ 3 món: Trí Tuệ Của Người trang bị <@ba.vup>+{wisd_up}</>. \nKhi HP của người trang bị trên {hp_ratio:0%}, <@ba.key>ST Thuật Pháp</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "name": "Găng Tay Cách Điện Mordvolt T1",
@@ -736,12 +550,6 @@
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Mảnh trang bị này là minh chứng cho chặng đường gian nan phía trước. \"Nhiệm vụ vẫn chưa hoàn thành nên hành trình vẫn chưa kết thúc.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "name": "Lõi Sóng Xung Xâm Nhập",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có thiết kế mới lạ. \nSự hỗ trợ từ Tu Hội Tĩnh Lặng đã giúp Lõi Sóng Xung Xâm Nhập có khả năng vượt qua hầu hết mọi tường lửa của thiết bị đầu cuối.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "name": "Giáp Giải Nguy",
@@ -767,23 +575,11 @@
     "decoDesc": "Mảnh trang bị này là minh chứng cho chặng đường gian nan phía trước. \"Nhiệm vụ vẫn chưa hoàn thành nên hành trình vẫn chưa kết thúc.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "name": "Găng Tay Xiranite Vĩnh Cửu T1",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Di sản của một Thiên Sư \"điên\".\n... Ngày tháng trôi qua, vị Thiên Sư điên đó bắt đầu từ chối bất kỳ loại thức ăn nào mà \"không khơi gợi cảm hứng\". Sau khi chỉ còn da bọc xương, ông ta sớm biến mất vào vùng đất hoang dã để tìm kiếm \"Xiranite ngon miệng\".",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "name": "Ấn Giải Nguy T1",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Mảnh trang bị này là minh chứng cho chặng đường gian nan phía trước. \"Nhiệm vụ vẫn chưa hoàn thành nên hành trình vẫn chưa kết thúc.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "name": "Tượng Bonekrusha",
-    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một món đồ trang sức gần như không có mục đích thực tế nào. Tuy nhiên, nhà thiết kế khẳng định nó có thể tạo ra sự phấn khích và hưng phấn.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "name": "Găng Tay Giải Nguy",
@@ -791,23 +587,11 @@
     "decoDesc": "Mảnh trang bị này là minh chứng cho chặng đường gian nan phía trước. \"Nhiệm vụ vẫn chưa hoàn thành nên hành trình vẫn chưa kết thúc.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "name": "Giáp Kiếm Sĩ Hạng Nặng",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu. \nThiên Sư lấy \"sức chứa cỡ hẻm núi\" làm ý tưởng thiết kế, thực sự đạt được khả năng \"hấp thu và triệt tiêu\" các đòn tấn công dựa trên năng lượng.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "name": "Găng Tay Giải Nguy",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Mảnh trang bị này là minh chứng cho chặng đường gian nan phía trước. \"Nhiệm vụ vẫn chưa hoàn thành nên hành trình vẫn chưa kết thúc.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "name": "Đèn Tín Hiệu NAV Kiếm Sĩ",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Một trong những sản phẩm do Cục Kiếm Sĩ Hongshan quảng cáo từ thời đầu. \nHầu hết các môi trường bị Nhiễm Khuẩn đều vô cùng nguy hiểm. Chỉ cần sai một ly có thể đi cả dặm, giống như những gì đã xảy ra với Võ Lăng nhiều năm trước.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
   },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "Giáp Tiền Tuyến",
@@ -815,14 +599,20 @@
     "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "name": "Radar Yinglung Loại 50",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nKhi sự tối ưu hóa cuối cùng hoàn tất, anh ấy viết thêm vài chữ bên cạnh bản thiết kế: \"Dù trời long đất lở, nhưng tôi sẽ chiến thắng và trở thành người thắng cuộc.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
+  "item_equip_t4_suit_atb01_body_02": {
+    "name": "Giáp Tiền Tuyến T1",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_atb01_body_03": {
     "name": "Giáp Tiền Tuyến T2",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "name": "Giáp Tiền Tuyến T3",
     "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
     "decoDesc": "Mẫu khung nặng của dòng Giáp Hiệp Đồng Tiên Phong. Thiết bị này cũng được trang bị khung xương ngoài nhân tạo để hỗ trợ pháo hạng nặng gắn trên vai.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
@@ -839,9 +629,33 @@
     "decoDesc": "Một thiết bị liên lạc hạng nặng. Để đảm bảo chất lượng tín hiệu tại các địa điểm khai quật ngầm phức tạp, Máy Liên Lạc Tiền Tuyến được thiết kế chỉ với tính năng truyền tín hiệu.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "name": "Máy Liên Lạc Tiền Tuyến T1",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Một thiết bị liên lạc hạng nặng. Để đảm bảo chất lượng tín hiệu tại các địa điểm khai quật ngầm phức tạp, Máy Liên Lạc Tiền Tuyến được thiết kế chỉ với tính năng truyền tín hiệu.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "name": "Máy Phân Tích Tiền Tuyến",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Một công cụ phân tích mức đe dọa thuộc dòng sản phẩm hỗ trợ Hiệp Đồng Tiên Phong. Máy phân tích sử dụng công nghệ nhận dạng hình ảnh để cung cấp cho người dùng khả năng phân tích mối đe dọa cơ bản từ các sinh vật lạ.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "name": "Ống O2 Phụ Tiền Tuyến",
     "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Ống oxy Hiệp Đồng Tiên Phong tiêu chuẩn đảm bảo ít nhất 4 giờ hoạt động dưới nước khắc nghiệt nhờ công nghệ tuần hoàn oxy. Phiên bản nâng cấp còn kéo dài thời gian này lên đến 6 giờ.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "name": "Dây Tiếp O2 Tiền Tuyến",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Ống dẫn oxy Hiệp Đồng Tiên Phong đảm bảo ít nhất 4 giờ hoạt động dưới nước khắc nghiệt nhờ công nghệ tuần hoàn oxy.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "name": "Ống O2 Phụ Tiền Tuyến T1",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Ống oxy Hiệp Đồng Tiên Phong tiêu chuẩn đảm bảo ít nhất 4 giờ hoạt động dưới nước khắc nghiệt nhờ công nghệ tuần hoàn oxy. Phiên bản nâng cấp còn kéo dài thời gian này lên đến 6 giờ.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
@@ -851,14 +665,26 @@
     "decoDesc": "Mục tiêu của trang bị Hiệp Đồng Tiên Phong là cung cấp cho một đội hình gồm 3 đến 5 chiến binh khả năng trực tiếp giao chiến và tiêu diệt Tổ Chức Aggeloid nhỏ hơn.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "name": "Dây Tiếp O2 Tiền Tuyến",
+  "item_equip_t4_suit_atb01_hand_02": {
+    "name": "Găng Tay Sợi Tiền Tuyến",
     "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Ống dẫn oxy Hiệp Đồng Tiên Phong đảm bảo ít nhất 4 giờ hoạt động dưới nước khắc nghiệt nhờ công nghệ tuần hoàn oxy.",
+    "decoDesc": "Mẫu găng tay chiến đấu dưới nước thuộc dòng giáp Hiệp Đồng Tiên Phong. Công nghệ dệt sợi đặc biệt mang lại cho những chiếc găng tay này chức năng tuần hoàn oxy.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "name": "Găng Tay Sợi Tiền Tuyến T1",
+    "description": "Do Trung Tâm Hỗ Trợ Northmarch thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Mẫu găng tay chiến đấu dưới nước thuộc dòng giáp Hiệp Đồng Tiên Phong. Công nghệ dệt sợi đặc biệt mang lại cho những chiếc găng tay này chức năng tuần hoàn oxy.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn cho Người Trang Bị.\nSau khi người trang bị tung kỹ năng giúp hồi Điểm KN, ST của cả đội sẽ được <@ba.vup>+{dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Giáp Hạng Nặng Yinglung Loại 50",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nRất ít người biết rằng nhà thiết kế giáp thực ra là một người lính dự bị, người suýt chút nữa đã vượt qua kỳ kiểm tra tuyển chọn ĐĐNY. Suýt chút nữa.",
+    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "name": "Giáp Hạng Nặng Yinglung Loại 50 T1",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nRất ít người biết rằng nhà thiết kế giáp thực ra là một người lính dự bị, người suýt chút nữa đã vượt qua kỳ kiểm tra tuyển chọn ĐĐNY. Suýt chút nữa.",
     "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
@@ -875,11 +701,11 @@
     "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nRất ít người biết rằng nhà thiết kế giáp thực ra là một người lính dự bị, người suýt chút nữa đã vượt qua kỳ kiểm tra tuyển chọn ĐĐNY. Suýt chút nữa.",
     "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
   },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "name": "Dao Găm Kiếm Sĩ",
-    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tung ra thị trường vào thời kỳ đầu.\nMột lưỡi dao chiến thuật cực kỳ sắc bén và thuộc phiên bản đầu tiên đại diện cho kỹ thuật sản xuất vũ khí của Cục Kiếm Sĩ Hongshan. Có thể khẳng định trang bị này đã đặt nền móng vững chắc cho dòng Yinglung về sau.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  "item_equip_t4_suit_atk02_edc_01": {
+    "name": "Radar Yinglung Loại 50",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nKhi sự tối ưu hóa cuối cùng hoàn tất, anh ấy viết thêm vài chữ bên cạnh bản thiết kế: \"Dù trời long đất lở, nhưng tôi sẽ chiến thắng và trở thành người thắng cuộc.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Radar Yinglung Loại 50 T1",
@@ -887,23 +713,17 @@
     "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nKhi sự tối ưu hóa cuối cùng hoàn tất, anh ấy viết thêm vài chữ bên cạnh bản vẽ: \"Dù trời long đất lở, nhưng tôi sẽ chiến thắng và trở thành người thắng cuộc.\"",
     "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
   },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "name": "Vòng Tay An Ninh MI T1",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nCó các Đơn Vị Thuật Pháp thu nhỏ để kiểm soát bạo loạn và khả năng dẫn điện tuyệt vời.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  "item_equip_t4_suit_atk02_edc_03": {
+    "name": "Radar Yinglung Loại 50 T2",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \nKhi sự tối ưu hóa cuối cùng hoàn tất, anh ấy viết thêm vài chữ bên cạnh bản vẽ: \"Dù trời long đất lở, nhưng tôi sẽ chiến thắng và trở thành người thắng cuộc.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Dao Găm Yinglung Loại 50",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \n\"Khi chứng kiến những khuôn mặt quen thuộc từng cùng tôi luyện tập, giờ đang gánh vác trọng trách và bảo vệ các vị trí then chốt, tôi… như một kẻ thua trận chạy trốn khỏi chiến trường ác liệt. Tôi cảm thấy mình như một kẻ đào ngũ.\"",
     "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "name": "Thùng Rượu Thanh Ba",
-    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị tiết kiệm chi phí, được chế tạo dựa theo cổ thư tìm thấy tại Trại Thanh Ba.\nMột thùng nhỏ có lõi lọc dễ dàng vệ sinh. Không rõ vì sao mà trang ghi chép về thiết bị lọc nước đã bị xé khỏi cổ thư. Do đó, linh kiện thùng bị thiếu được thay bằng lõi lọc hiện đại.",
-    "setBonus": "Hiệu ứng bộ 3 món: người trang bị được <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn.\nKhi người trang bị tung KN liên hoàn sẽ được <@ba.vup>+{spell_up:0%}</> ST Kỹ Năng Gây Ra (đối với mọi kỹ năng) trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "name": "Dao Găm Yinglung Loại 50 T1",
@@ -922,18 +742,6 @@
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Phiên bản dân dụng của trang bị Đội Đặc Nhiệm Yinglung. Dù bị khuyết một bộ phận năng lượng quan trọng lại giúp cải thiện khả năng tương thích với người dùng phổ thông. \n\"Tôi không hề ghen tị với quyền năng được ban bởi tôi chẳng hề xứng đáng nhận nó. Thực ra, tôi nên là bộ xương nâng đỡ cho chúng.\"",
     "setBonus": "Hiệu ứng bộ 3 món: Đòn Tấn Công Của Người trang bị <@ba.vup>+{atk_up:0%}</>. \nKhi bất kỳ cán viên nào trong đội sử dụng KN chiến đấu, người trang bị sẽ nhận được 1 lần <@ba.key>Lưỡi Kiếm Của Yinglung</> tăng ST <@ba.vup>+{dmg_up:0%}</> cho KN liên hoàn tiếp theo của người mặc. <@ba.key>Lưỡi Kiếm Của Yinglung</> có thể cộng dồn {max_stack:0} lần."
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "name": "Tượng Bonekrusha T2",
-    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Món đồ thủ công hầu như không có công dụng thiết thực. Tuy nhiên, người thiết kế lại khẳng định rằng nó thực sự có thể kích thích sự hứng thú của người sử dụng.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "name": "Đồ Bảo Hộ An Ninh MI T1",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_attri01_body_01": {
     "name": "Giáp Hạng Nặng Bonekrusha",
@@ -965,8 +773,20 @@
     "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. \nBộ giáp hạng nặng này không chỉ giúp phòng thủ tốt, những kẻ lang thang nơi hoang địa còn xem nó như biểu tượng cho lối sống tàn bạo và không khoan nhượng.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "name": "Mặt Nạ Bonekrusha T2",
+  "item_equip_t4_suit_attri01_edc_02": {
+    "name": "Tượng Bonekrusha T2",
+    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Món đồ thủ công hầu như không có công dụng thiết thực. Tuy nhiên, người thiết kế lại khẳng định rằng nó thực sự có thể kích thích sự hứng thú của người sử dụng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "name": "Tượng Bonekrusha",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một món đồ trang sức gần như không có mục đích thực tế nào. Tuy nhiên, nhà thiết kế khẳng định nó có thể tạo ra sự phấn khích và hưng phấn.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "name": "Mặt Nạ Bonekrusha",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. Chiếc mặt nạ là biểu tượng của sự cuồng tín. Nhưng chỉ niềm tin thôi không đủ để giữ ai sống sót trong môi trường Nhiễm Khuẩn. Dù treo trên thắt lưng hay đeo trên mặt, chiếc mặt nạ này cũng chỉ là một mảnh gỗ mỏng manh.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
@@ -977,22 +797,34 @@
     "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. Chiếc mặt nạ là biểu tượng của sự cuồng tín. Nhưng chỉ niềm tin thôi không đủ để giữ ai sống sót trong môi trường Nhiễm Khuẩn. Dù treo trên thắt lưng hay đeo trên mặt, chiếc mặt nạ này cũng chỉ là một mảnh gỗ mỏng manh.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "name": "Tượng Bonekrusha T1",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một món đồ trang sức gần như không có mục đích thực tế nào. Tuy nhiên, nhà thiết kế khẳng định nó có thể tạo ra sự phấn khích và hưng phấn.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "name": "Mặt Nạ Bonekrusha T2",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. Chiếc mặt nạ là biểu tượng của sự cuồng tín. Nhưng chỉ niềm tin thôi không đủ để giữ ai sống sót trong môi trường Nhiễm Khuẩn. Dù treo trên thắt lưng hay đeo trên mặt, chiếc mặt nạ này cũng chỉ là một mảnh gỗ mỏng manh.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
+  },
   "item_equip_t4_suit_attri01_hand_01": {
     "name": "Băng Cổ Tay Bonekrusha",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. \nKhông phải ai sống ở vùng hoang địa cũng trở thành Landbreaker, nhưng không ai thoát khỏi nỗi ám ảnh từ hoang địa.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "name": "Giáp Kiếm Sĩ Hạng Nặng T1",
-    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tung ra thị trường vào thời kỳ đầu.\nThiên Sư đã vận dụng triết lý thiết kế \"Tâm Không Cốc Tịch\" để trang bị cho bộ Giáp Kiếm Sĩ Hạng Nặng này khả năng thiết thực là \"chống đòn công kích năng lượng\".",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "name": "Băng Cổ Tay Bonekrusha T1",
     "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. \nKhông phải ai sống ở vùng hoang địa cũng trở thành Landbreaker, nhưng không ai thoát khỏi nỗi ám ảnh từ hoang địa.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "name": "Găng Bonekrusha",
+    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có thiết kế lấy cảm hứng từ Tộc Bonekrusher. \nKhông phải người sống ở vùng hoang địa nào cũng trở thành Landbreaker, nhưng không ai có thể thoát khỏi sự ràng buộc của thiên nhiên hoang dã.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nKhi người trang bị thi triển KN liên hoàn sẽ nhận được 1 tầng <@ba.key>Đập Vỡ Xương</> giúp <@ba.vup>+{dmg_up:0%}</> lượng ST Gây Ra từ KN chiến đấu tiếp theo. Kỹ năng <@ba.key>Đập Vỡ Xương</> có thể cộng dồn {max_stack:0} tầng."
   },
   "item_equip_t4_suit_burst01_body_01": {
@@ -1001,16 +833,22 @@
     "decoDesc": "Trang bị do Cục Kiếm Sĩ Hongshan thiết kế dành cho những người làm việc gần Triều Nhiễm Khuẩn. \nĐây là một phần ký ức về Triều Nhiễm Khuẩn: Những đợt sóng vô cảm luôn từ chối khái niệm về sự sống.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "name": "Găng Tay Nhẹ Æthertech",
-    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Trang bị bảo vệ thử nghiệm hạng nhẹ. \n\"Luôn mang thêm lớp đệm bảo hộ khi sử dụng sản phẩm của chúng tôi. Nếu bạn gặp phải ảo giác về thính giác hoặc thị giác, hãy NGAY LẬP TỨC tháo sản phẩm ra và ăn chút gì đó.\"",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  "item_equip_t4_suit_burst01_edc_01": {
+    "name": "Ống O2 Sông Treo",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị cho những người làm việc gần Triều Nhiễm Khuẩn do Cục Kiếm Sĩ Hongshan thiết kế. \nMột chút tuyệt vọng về Triều Nhiễm Khuẩn: những dòng chảy đục ngầu của sự bí ẩn đã tràn ngập khắp vùng đất.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "name": "Đuốc Cắt U Ám",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Trang bị do Cục Kiếm Sĩ Hongshan thiết kế dành cho những người làm việc gần Triều Nhiễm Khuẩn. \nĐây là một chút lo lắng về Triều Nhiễm Khuẩn: Khi nào thì tai họa đang rình rập mới lộ diện?",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "name": "Giáp Tay Triều Xung",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị do Cục Kiếm Sĩ Hongshan thiết kế dành cho những người làm việc gần Triều Nhiễm Khuẩn. \nĐây là một câu hỏi về Triều Nhiễm Khuẩn: Sự sụp đổ của các con đập cổ có bắt đầu từ bên trong không?",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{skill_dmg_up:0%}</> ST Kỹ Năng cho Người Trang Bị.\nSau khi người trang bị gây <@ba.key>{stack_cond}</> hoặc gây thêm tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> lên kẻ địch, <@ba.key>ST Thuật Pháp Gây Ra</> của người trang bị sẽ <@ba.vup>+{spell_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1037,11 +875,17 @@
     "decoDesc": "Trang bị tiết kiệm chi phí, được chế tạo dựa theo cổ thư tìm thấy tại Trại Thanh Ba.\nMột lưỡi dao ngắn được vót sắc từ tre. Trông có vẻ tầm thường, nhưng chiếc dao này có thể tỉa bỏ mầm của Grovenymph một cách hoàn hảo mà không làm tổn hại đến sinh linh bé nhỏ ấy.",
     "setBonus": "Hiệu ứng bộ 3 món: người trang bị được <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn.\nKhi người trang bị tung KN liên hoàn sẽ được <@ba.vup>+{spell_up:0%}</> ST Kỹ Năng Gây Ra (đối với mọi kỹ năng) trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
   },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "name": "Găng Tay An Ninh MI t1",
-    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \nGăng tay này cũng có thể được sử dụng như một vũ khí. Quy trình kiểm định sản phẩm bao gồm đánh giá về \"hiệu quả trong việc phá hủy các bộ phận của Aggeloid\".",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "name": "Thùng Rượu Thanh Ba",
+    "description": "Do Endfield thiết kế sau khi tham khảo kỹ thuật chế tác thủ công của vùng hoang địa và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị tiết kiệm chi phí, được chế tạo dựa theo cổ thư tìm thấy tại Trại Thanh Ba.\nMột thùng nhỏ có lõi lọc dễ dàng vệ sinh. Không rõ vì sao mà trang ghi chép về thiết bị lọc nước đã bị xé khỏi cổ thư. Do đó, linh kiện thùng bị thiếu được thay bằng lõi lọc hiện đại.",
+    "setBonus": "Hiệu ứng bộ 3 món: người trang bị được <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn.\nKhi người trang bị tung KN liên hoàn sẽ được <@ba.vup>+{spell_up:0%}</> ST Kỹ Năng Gây Ra (đối với mọi kỹ năng) trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "name": "Bộ Định Vị Thanh Ba T1",
+    "description": "Do Endfield thiết kế sau khi tham khảo các kỹ thuật thủ công vùng hoang địa, và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị tiết kiệm chi phí, được chế tạo dựa theo cổ thư tìm thấy tại Trại Thanh Ba.\nMột thiết bị đơn giản tích hợp chức năng dò mạch nước ngầm và la bàn từ tính. Theo ghi chép, vật dụng này đã lập nhiều công trạng trong những năm đầu của Trại Thanh Ba.",
+    "setBonus": "Hiệu ứng bộ 3 món: người trang bị được <@ba.vup>+{1-comboskill_cooldown:0%}</> Giảm Thời Gian Hồi KN Liên Hoàn.\nKhi người trang bị tung KN liên hoàn sẽ được <@ba.vup>+{spell_up:0%}</> ST Kỹ Năng Gây Ra (đối với mọi kỹ năng) trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "name": "Giáp Tay Thanh Ba",
@@ -1061,10 +905,28 @@
     "decoDesc": "Trang bị của dòng An Ninh MI. \nLần đầu tiên được sử dụng trong quân đội loài người chiến đấu ở Mặt Trận Aggeloid.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "name": "Bộ Công Cụ An Ninh MI",
+  "item_equip_t4_suit_criti01_body_02": {
+    "name": "Đồ Bảo Hộ An Ninh MI",
     "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
-    "decoDesc": "Trang bị của dòng An Ninh MI. \n\"Cảm ơn, thưa sĩ quan! Tôi thề đây sẽ là lần cuối cùng tôi gọi cảnh sát trong tháng này vì quên chìa khóa! TÔI HỨA!\"",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "name": "Đồ Bảo Hộ An Ninh MI T1",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "name": "Đồ Bảo Hộ An Ninh MI T2",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nKhi chiến tranh kết thúc, Tập Đoàn Mieszko đã điều chỉnh dây chuyền sản xuất và áp dụng các biện pháp giảm trọng lượng hiệu quả, từ đó giành được các hợp đồng cung cấp thiết bị cho lực lượng an ninh đô thị.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "name": "Giáp An Ninh MI T1",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nLần đầu tiên được sử dụng trong quân đội loài người chiến đấu ở Mặt Trận Aggeloid.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_criti01_edc_01": {
@@ -1077,6 +939,12 @@
     "name": "Kính Ngắm An Ninh MI",
     "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
     "decoDesc": "Trang bị của dòng An Ninh MI. \nNgười ta thường buôn lậu sản phẩm của Tập Đoàn Mieszko vào vùng hoang địa. Một số sát thủ Landbreaker coi Kính Ngắm An Ninh MI là một phụ kiện hàng đầu.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "name": "Bộ Công Cụ An Ninh MI",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \n\"Cảm ơn, thưa sĩ quan! Tôi thề đây sẽ là lần cuối cùng tôi gọi cảnh sát trong tháng này vì quên chìa khóa! TÔI HỨA!\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_criti01_edc_04": {
@@ -1103,23 +971,77 @@
     "decoDesc": "Trang bị của dòng An Ninh MI. \nGăng tay này cũng có thể được sử dụng như một vũ khí. Quy trình kiểm định sản phẩm bao gồm đánh giá về \"hiệu quả trong việc phá hủy các bộ phận của Aggeloid\".",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "name": "Gậy Xiranflow",
-    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Một vũ khí thử nghiệm được đề xuất làm tiêu chuẩn cho Cảnh Vệ của Võ Lăng.\nMột cây gậy nhẹ… Đừng nghi ngờ sức mạnh khống chế của nó. Khi cần, nó có thể đánh gãy xương dã thú.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra</> cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "name": "Vòng Tay An Ninh MI",
     "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
     "decoDesc": "Trang bị của dòng An Ninh MI. \nCó các Đơn Vị Thuật Pháp thu nhỏ để kiểm soát bạo loạn và khả năng dẫn điện tuyệt vời.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "name": "Vòng Tay An Ninh MI T1",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nCó các Đơn Vị Thuật Pháp thu nhỏ để kiểm soát bạo loạn và khả năng dẫn điện tuyệt vời.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "name": "Găng Tay An Ninh MI t1",
+    "description": "Do Tập Đoàn Mieszko thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người sử dụng.",
+    "decoDesc": "Trang bị của dòng An Ninh MI. \nGăng tay này cũng có thể được sử dụng như một vũ khí. Quy trình kiểm định sản phẩm bao gồm đánh giá về \"hiệu quả trong việc phá hủy các bộ phận của Aggeloid\".",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{crit_up:0%}</> Tỷ Lệ Bạo Kích cho Người Trang Bị. \nSau khi người trang bị tung đòn bạo kích, chỉ số Tấn Công sẽ được <@ba.vup>+{atk_up:0%}</> trong {duration} giây. Hiệu ứng này có thế cộng dồn {max_stack:0} tầng. Khi đạt số tầng tối đa, Tỷ Lệ Bạo Kích sẽ được <@ba.vup>+{crit_up2:0%}</>. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "name": "Giáp Lão luyện",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nThiết kế của nó vẫn còn mang dấu vết từ Cuộc Chiến Aggeloi. Nặng nề, thô ráp, nhưng hữu dụng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "name": "Giáp Lão Luyện T1",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nThiết kế của nó vẫn còn mang dấu vết từ Cuộc Chiến Aggeloi. Nặng nề, thô ráp, nhưng hữu dụng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "name": "Dao Đẩy Lão Luyện",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nMột lưỡi dao đẩy sắc bén có thể được gắn vào giáp vai hoặc giáp tay, tùy theo phong cách chiến đấu mà người mặc ưa chuộng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "name": "Dao Đẩy Lão Luyện T1",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nMột lưỡi dao đẩy sắc bén có thể được gắn vào giáp vai hoặc giáp tay, tùy theo phong cách chiến đấu mà người mặc ưa chuộng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "name": "Găng Lão Luyện",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nChức năng hỗ trợ của đôi giáp tay này chưa thật sự lý tưởng. Có những tài nguyên từ quá khứ mà chúng ta không thể tái tạo. Điều đó đồng nghĩa các Thiên Sư của chúng ta phải tìm ra phương án thay thế.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "name": "Găng Lão Luyện T1",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trang bị phòng hộ đa năng được Cục Kiếm Sĩ Hongshan phát triển sau khi nghiên cứu những tài liệu thiết kế công nghệ thất truyền. \nChức năng hỗ trợ của đôi giáp tay này chưa thật sự lý tưởng. Có những tài nguyên từ quá khứ mà chúng ta không thể tái tạo. Điều đó đồng nghĩa các Thiên Sư của chúng ta phải tìm ra phương án thay thế.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho người trang bị.\nSau khi người trang bị áp dụng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</>, <@ba.pd>ST Vật Lý Gây Ra</> sẽ được <@ba.vup>+[{phy_dmg_up_perstack:0%} × số cộng dồn <#ba.noguard>Trừ Giáp</> <#ba.consume>đã tiêu hao</> bởi Trạng Thái Vật Lý]</> (tối đa +) trong {duration} giây. Nếu mục tiêu đã có <#ba.physicalvul>Yếu Hóa Vật Lý</>, <@ba.poise>Suy Sụp</> hoặc gắn <#ba.originium>Tinh Thể Originium</>, tăng hiệu quả buff và giới hạn buff kể trên lên <@ba.vup>{special_multi:0.0}</> lần. Hiệu ứng này không thể cộng dồn."
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "name": "Giáp Nhẹ Xiranflow",
     "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị thử nghiệm được đề xuất làm tiêu chuẩn cho Cảnh Vệ của Võ Lăng.\nKhi việc sản xuất hàng loạt Xiranite được đảm bảo, nhiều dự án nghiên cứu và phát triển trang bị Xiranite từng bị đình chỉ đã được khởi động trở lại đúng tiến độ.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra</> cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</></> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "name": "Gậy Xiranflow",
+    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một vũ khí thử nghiệm được đề xuất làm tiêu chuẩn cho Cảnh Vệ của Võ Lăng.\nMột cây gậy nhẹ… Đừng nghi ngờ sức mạnh khống chế của nó. Khi cần, nó có thể đánh gãy xương dã thú.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</></> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "name": "Găng Xiranflow",
+    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị thử nghiệm được đề xuất làm tiêu chuẩn cho Cảnh Vệ của Võ Lăng.\n\"Ý là đôi găng này sẽ... Gì cơ...? Tôi có thể chạm vào máy móc Xiranite để nạp năng lượng cho mấy cái này sao? Không phải mấy lời đồn nhảm về nhiễm khuẩn đâu, đúng chứ…?\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nMỗi lần <#ba.consume>giải trừ</> <#ba.conduct>Điện Hóa</> hoặc <#ba.corrupt>Ăn Mòn</>, người trang bị nhận số tầng buff bằng với <#ba.statuslevel>Cấp Trạng Thái</> của Phản Ứng Thuật Pháp được giải trừ, trong đó mỗi tầng sẽ giúp <@ba.vup>+{spell_dmg_up:0%}</></> <@ba.pulse>ST Điện Gây Ra</> và <@ba.natur>ST Tự Nhiên Gây Ra cho người trang bị trong {duration} giây. Hiệu ứng này có thể cộng dồn đến {max_stack} tầng. Hiệu lực của mỗi tầng được tính riêng."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Giáp Khung Ngoài Kháng Lửa",
@@ -1145,29 +1067,53 @@
     "decoDesc": "Trang bị có khả năng chống cháy tuyệt vời. \nNhiệt độ cực cao không đáng sợ. Tuy nhiên, hãy cảnh giác nếu nhiệt độ đột nhiên thay đổi khó hiểu.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "name": "Giáp Gây Nhiễu Sóng Xung",
-    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có thiết kế mới lạ. \nHầu hết mọi người đều không hiểu tại sao Tập Đoàn Endfield lại phát triển một bộ đồ Phòng Thủ để chiến đấu với chiến tranh kỹ thuật số.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "name": "Hộp Năng Lượng Kháng Lửa",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị có khả năng chống cháy tuyệt vời. \n\"Có người đã nghe thấy một bài hát ở chính ngọn núi lửa đó.\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "name": "Găng Tay Sóng Xung",
+  "item_equip_t4_suit_fire_natr01_hand_01": {
+    "name": "Găng Tay Kháng Lửa",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
-    "decoDesc": "Trang bị có thiết kế mới lạ. \nHầu hết mọi người đều không hiểu tại sao Tập Đoàn Endfield lại bổ sung lớp cách nhiệt tốt hơn cho dòng sản phẩm PPE dòng Sóng Xung của họ.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+    "decoDesc": "Trang bị có khả năng kháng lửa ưu việt. \nĐại Công Đoàn và Tập Đoàn Endfield đã hợp tác phát triển dòng sản phẩm PPE Kháng Lửa để khám phá môi trường có nhiệt độ cao.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "name": "Giáp Tay Kháng Lửa",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có khả năng chống cháy tuyệt vời. \n\"Suỵt, im lặng đi. Bạn có thể làm nó tỉnh dậy đấy.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "name": "Giáp Tay Kháng Lửa T1",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị có khả năng chống cháy tuyệt vời. \n\"Suỵt, im lặng đi. Bạn có thể làm nó tỉnh dậy đấy.\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.burning>Thiêu Đốt</>, <@ba.fire>ST Nhiệt</><@ba.vup> sẽ được +{fire_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.corrupt>Ăn Mòn</>, <@ba.natur>ST Tự Nhiên</><@ba.vup> sẽ được +{nature_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "name": "Giáp Hạng Nặng LYNX",
+    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phiên bản nặng hơn của trang bị ưa thích của các nhân viên y tế. Mọi người thường gọi những chiến binh mặc Giáp Thân LYNX là \"Bộ Cứu Thương Di Động\". Những vật dụng cứu sinh này thường nhét đầy mọi túi và ngăn đựng áo giáp của họ với vật tư y tế khẩn cấp.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "name": "Giáp Thân LYNX",
+    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. Mọi người thường gọi những chiến binh mặc Giáp Thân LYNX là \"Bộ Cứu Thương Di Động\". Những vật dụng cứu sinh này thường nhét đầy mọi túi và ngăn đựng áo giáp của họ với vật tư y tế khẩn cấp.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "name": "Đầu Nối LYNX",
+    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. \nMột linh kiện kết nối do Rhodes Island phát triển để hiệu chuẩn dữ liệu. Nó có thể được kết nối với nhiều hệ thống hỗ trợ sức khỏe khác nhau để thực hiện nhiều dạng chăm sóc sức khỏe khẩn cấp.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "name": "Đầu Nối LYNX T2",
+    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. \nMột linh kiện kết nối do Rhodes Island phát triển để hiệu chuẩn dữ liệu. Cho phép kết nối với nhiều hệ thống hỗ trợ sức khỏe khác nhau để thực hiện nhiều dạng chăm sóc sức khỏe khẩn cấp.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "name": "Tấm Ván LYNX",
@@ -1187,6 +1133,12 @@
     "decoDesc": "Trang bị được các nhân viên y tế ưa chuộng. \nMột linh kiện kết nối do Rhodes Island phát triển để hiệu chuẩn dữ liệu. Nó có thể được kết nối với nhiều hệ thống hỗ trợ sức khỏe khác nhau để thực hiện nhiều dạng chăm sóc sức khỏe khẩn cấp.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "name": "Găng Tay LYNX",
+    "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một phiên bản nặng hơn của trang bị ưa thích của các nhân viên y tế. \nRhodes Island vẫn quen trang bị PPE bằng các mô-đun giám sát Oripathy.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{heal_up:0%}</> Hiệu Quả Điều Trị HP cho Người Trang Bị. \nSau khi người trang bị hồi HP cho mục tiêu đồng minh, chỉ số Giảm ST của mục tiêu được tăng <@ba.vup>{1-dmg_taken_down:0%}</> đối với mọi loại ST trong {duration} giây. Nếu lượng hồi phục vượt quá HP Tối Đa của mục tiêu, chỉ số Giảm ST của mục tiêu sẽ được tăng <@ba.vup>{1-dmg_taken_down2:0%}</> đối với mọi loại ST. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "Giáp Tay LYNX",
     "description": "Do Rhodes Island thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
@@ -1199,10 +1151,46 @@
     "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu.\nTrang đầu tiên của bản thiết kế vũ khí này được trang trí bằng dòng chữ: \"Kiếm thuật dành cho chiến binh đơn độc.\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "name": "Giáp Kiếm Sĩ Hạng Nặng",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu. \nThiên Sư lấy \"sức chứa cỡ hẻm núi\" làm ý tưởng thiết kế, thực sự đạt được khả năng \"hấp thu và triệt tiêu\" các đòn tấn công dựa trên năng lượng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "name": "Giáp Kiếm Sĩ Hạng Nặng T1",
+    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tung ra thị trường vào thời kỳ đầu.\nThiên Sư đã vận dụng triết lý thiết kế \"Tâm Không Cốc Tịch\" để trang bị cho bộ Giáp Kiếm Sĩ Hạng Nặng này khả năng thiết thực là \"chống đòn công kích năng lượng\".",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "name": "Giáp Sợi Kiếm Sĩ",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu.\nTrang đầu tiên của bản vẽ vũ khí này được trang trí bằng dòng chữ: \"Kẻ dũng cảm tiến về phương Bắc.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "name": "Đèn Tín Hiệu NAV Kiếm Sĩ",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trong những sản phẩm do Cục Kiếm Sĩ Hongshan quảng cáo từ thời đầu. \nHầu hết các môi trường bị Nhiễm Khuẩn đều vô cùng nguy hiểm. Chỉ cần sai một ly có thể đi cả dặm, giống như những gì đã xảy ra với Võ Lăng nhiều năm trước.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Vi Lọc Kiếm Sĩ",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một trong những sản phẩm do Cục Kiếm Sĩ Hongshan quảng cáo từ thời đầu. \n\"Chỉ cần một làn khói nhỏ trong môi trường bị Nhiễm Khuẩn cũng có thể giết chết bạn, vì vậy hãy đeo mặt nạ phòng độc đúng cách!\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "name": "Hỏa Thạch Kiếm Sĩ",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu. \nĐá lửa về cơ bản sẽ ép xung và làm cạn kiệt nguồn năng lượng dự trữ của hệ thống áo giáp của Kiếm Sĩ. Nó chỉ phát sáng khi người đeo chạm trán với cái chết.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "name": "Dao Găm Kiếm Sĩ",
+    "description": "Do Cục Kiếm Sĩ Hongshan thiết kế và lắp ráp tại Nhà Máy Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tung ra thị trường vào thời kỳ đầu.\nMột lưỡi dao chiến thuật cực kỳ sắc bén và thuộc phiên bản đầu tiên đại diện cho kỹ thuật sản xuất vũ khí của Cục Kiếm Sĩ Hongshan. Có thể khẳng định trang bị này đã đặt nền móng vững chắc cho dòng Yinglung về sau.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
   },
   "item_equip_t4_suit_phy01_hand_01": {
@@ -1210,12 +1198,6 @@
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Một trong những sản phẩm được Cục Kiếm Sĩ Hongshan tiếp thị vào những ngày đầu. \nCuối năm. Mang lưỡi kiếm của tôi về phương Nam. Ngọn núi mọc chín đầu và gầm rú không ngừng. Một ngày tốt lành.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{poise_up:0%}</> Thưởng Hiệu Quả Suy Sụp cho Người Trang Bị.\nSau khi người trang bị gây <#ba.physicalstatus>Trạng Thái Vật Lý</>, đồng thời sẽ thực hiện 1 đòn có lực Tấn Công bằng {atk_scale:0%} ST Vật Lý và [<@ba.poise>{poise}</> Suy Sụp]. Thời gian hồi để kích hoạt lại hiệu ứng: {duration} giây."
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "name": "Lõi Năng Lượng Xiranite Vĩnh Cửu T1",
-    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
-    "decoDesc": "Di sản của một Thiên Sư \"điên\". \n... Ông ta từng đi trên đường với một bát lớn Đậu Phụ Hầm trong Nước Trúc, và tuyên bố rằng ông vừa pha chế ra thế hệ tiếp theo của công nghệ làm lạnh dựa trên Xiranite.",
-    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Giáp Tay TAC Kiếm Sĩ",
@@ -1253,11 +1235,71 @@
     "decoDesc": "Trang bị bảo vệ thử nghiệm hạng nhẹ. \n\"Hãy luôn giữ bộ ổn định hoạt động, cảm ơn. Việc này sẽ ngăn bạn bay vọt lên trời như một quả bóng bay bị tuột dây khi thông số dao động.\"",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "name": "Đồng Hồ Æthertech",
+    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Thiết bị bảo hộ thử nghiệm hạng nhẹ. \n\"Một số người dùng nghi ngờ sản phẩm của chúng tôi gây ra tác dụng đột biến gen. Những cáo buộc này hoàn toàn vô căn cứ.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "name": "Găng Tay Æthertech",
+    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị bảo vệ thử nghiệm hạng nhẹ. \n\"Luôn mang thêm lớp đệm bảo hộ khi sử dụng sản phẩm của chúng tôi. Nếu bạn gặp phải ảo giác về thính giác hoặc thị giác, hãy NGAY LẬP TỨC tháo sản phẩm ra và ăn chút gì đó.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "name": "Găng Tay Nhẹ Æthertech",
+    "description": "Do Phòng Thí Nghiệm Æthertech Di Động thiết kế và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Trang bị bảo vệ thử nghiệm hạng nhẹ. \n\"Luôn mang thêm lớp đệm bảo hộ khi sử dụng sản phẩm của chúng tôi. Nếu bạn gặp phải ảo giác về thính giác hoặc thị giác, hãy NGAY LẬP TỨC tháo sản phẩm ra và ăn chút gì đó.\"",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{atk_up:0%}</> Tấn Công cho Người Trang Bị. \nSau khi người trang bị gây <#ba.noguard>Trừ Giáp</>, <@ba.pd>ST Vật Lý</> sẽ được <@ba.vup>+{phy_dmg_up:0%}</> trong {duration} giây. Hiệu ứng này có thể cộng dồn {max_stack:0} lần. Nếu mục tiêu đã có {stack_cond:0} tầng <#ba.noguard>Trừ Giáp</>, ST Vật Lý của người trang bị sẽ được <@ba.vup>+{phy_dmg_up2:0%}</> trong {duration2} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "name": "Giáp Gây Nhiễu Sóng Xung",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có thiết kế mới lạ. \nHầu hết mọi người đều không hiểu tại sao Tập Đoàn Endfield lại phát triển một bộ đồ Phòng Thủ để chiến đấu với chiến tranh kỹ thuật số.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "name": "Kim Dò Sóng Xung",
     "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
     "decoDesc": "Trang bị có thiết kế mới lạ. \nCó thể tìm thấy dấu vết của những người đã mất tích trong màn sương lạnh lẽo và tăm tối.",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "name": "Máy Hiệu Chuẩn Sóng Xung",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có thiết kế mới lạ. \nNó tìm kiếm những \"giá trị ngoại lệ vàng\" ẩn giấu kỹ giữa đại dương dữ liệu vô tận rồi xóa sổ chúng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "name": "Lõi Sóng Xung Xâm Nhập",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có thiết kế mới lạ. \nSự hỗ trợ từ Tu Hội Tĩnh Lặng đã giúp Lõi Sóng Xung Xâm Nhập có khả năng vượt qua hầu hết mọi tường lửa của thiết bị đầu cuối.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "name": "Găng Tay Sóng Xung",
+    "description": "Do Tập Đoàn Endfield thiết kế riêng và lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu cho người trang bị.",
+    "decoDesc": "Trang bị có thiết kế mới lạ. \nHầu hết mọi người đều không hiểu tại sao Tập Đoàn Endfield lại bổ sung lớp cách nhiệt tốt hơn cho dòng sản phẩm PPE dòng Sóng Xung của họ.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{phy_spell_up:0}</> Công Phép cho Người Trang Bị. \nSau khi người trang bị gây <#ba.conduct>Điện Hóa</>, <@ba.pulse>ST Điện</> sẽ được<@ba.vup> +{pulse_dmg_up:0%}</> trong {duration} giây. Sau khi người trang bị gây <#ba.frozen>Đông Cứng</>, <@ba.cryst>ST Băng</><@ba.vup> sẽ được +{cryst_dmg_up:0%}</> trong {duration2} giây. Các hiệu ứng nêu trên không thể cộng dồn."
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "name": "Giáp Xiranite Vĩnh Cửu",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Di sản của một Thiên Sư \"điên\". \nHầu hết mọi người sẽ thấy khó mà liên hệ giữa công việc bếp núc và Xiranite. Thế nhưng, một cư dân Võ Lăng đặc biệt lại thường nảy ra cảm hứng thiết kế mỗi khi dùng bữa tại nhà hàng.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "name": "Lõi Năng Lượng Xiranite Vĩnh Cửu",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Di sản của một Thiên Sư \"điên\". \n... Ông ta từng đi trên đường với một bát lớn Đậu Phụ Hầm trong Nước Trúc, và tuyên bố rằng ông vừa pha chế ra thế hệ tiếp theo của công nghệ làm lạnh dựa trên Xiranite.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "name": "Lõi Năng Lượng Xiranite Vĩnh Cửu T1",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Di sản của một Thiên Sư \"điên\". \n... Ông ta từng đi trên đường với một bát lớn Đậu Phụ Hầm trong Nước Trúc, và tuyên bố rằng ông vừa pha chế ra thế hệ tiếp theo của công nghệ làm lạnh dựa trên Xiranite.",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Giáp Phụ Xiranite Vĩnh Cửu",
@@ -1267,6 +1309,12 @@
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Găng Tay Xiranite Vĩnh Cửu",
+    "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
+    "decoDesc": "Di sản của một Thiên Sư \"điên\".\n... Ngày tháng trôi qua, vị Thiên Sư điên đó bắt đầu từ chối bất kỳ loại thức ăn nào mà \"không khơi gợi cảm hứng\". Sau khi chỉ còn da bọc xương, ông ta sớm biến mất vào vùng đất hoang dã để tìm kiếm \"Xiranite ngon miệng\".",
+    "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "name": "Găng Tay Xiranite Vĩnh Cửu T1",
     "description": "Do các Cục Kiếm Sĩ Hongshan thiết kế và được lắp ráp tại Khu Phức Hợp. Trang bị này cải thiện khả năng chiến đấu của người sử dụng.",
     "decoDesc": "Di sản của một Thiên Sư \"điên\".\n... Ngày tháng trôi qua, vị Thiên Sư điên đó bắt đầu từ chối bất kỳ loại thức ăn nào mà \"không khơi gợi cảm hứng\". Sau khi chỉ còn da bọc xương, ông ta sớm biến mất vào vùng đất hoang dã để tìm kiếm \"Xiranite ngon miệng\".",
     "setBonus": "Hiệu ứng bộ 3 món: <@ba.vup>+{hp_up}</> HP cho người trang bị.\nSau khi người trang bị gây <#ba.enhance>Tăng ST</>, <#ba.guard>Bảo Hộ</>, <#ba.vulnerable>Yếu Hóa</> hoặc <#ba.weak>Suy Yếu</>, đồng đội khác sẽ được <@ba.vup>+{dmg_up:0%}</> ST gây ra trong {duration} giây. Hiệu ứng này không thể cộng dồn."

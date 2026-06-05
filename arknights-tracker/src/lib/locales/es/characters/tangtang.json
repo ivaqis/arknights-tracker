@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0}s tras salir del área de efecto.",
-        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0}s tras salir del área de efecto."
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</> metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto.",
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</> metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto."
       ],
       "name": "Familia de honor"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Habilidad de combo: <@ba.key>¡RÍO, VEN A MÍ!</> mejorada: el Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale:0.0}</> veces el valor original; y el tiempo de reutilización ahora es de <@ba.vup>{coolDown:0}</> s.\nHabilidad de batalla: <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: por cada <@ba.key>Remolino</> consumido y convertido en una <@ba.key>Tromba marina</>, <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> PH adicionales.",
+      "description": "Habilidad de combo: <@ba.key>¡RÍO, VEN A MÍ!</> mejorada: el Multiplicador de DAÑ aumenta <@ba.vup>{atk_scale:0.0}</> veces el original. Duración del tiempo de reutilización: <@ba.vup>{coolDown:0}</> s.\nHabilidad de batalla: <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: por cada <@ba.key>Remolino</> consumido y convertido en una <@ba.key>Tromba marina</>, <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> PH adicionales.",
       "name": "Alijo de reserva"
     },
     "potential2": {
@@ -130,7 +130,7 @@
       "name": "Hija del río"
     },
     "potential3": {
-      "description": "Habilidad de batalla <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: el Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale_1:0.0}</> veces el valor original. Al formar varios <@ba.key>Trombas marinas</>, el efecto resultante de <#ba.spellvul>Susceptibilidad a Artes</> aumenta en <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
+      "description": "Habilidad de batalla <@ba.key>¡SOY UNA JINETE DE LAS OLAS!</> mejorada: el Multiplicador de DAÑ aumenta a <@ba.vup>{atk_scale_1:0.0}</> veces el valor original. Al formar múltiples <@ba.key>Trombas marinas</>, el efecto resultante de <#ba.spellvul>Susceptibilidad a Artes</> aumenta en <@ba.vup>+{rate_spellvulnerable_02:0%}</>.",
       "name": "Vibra de jefa"
     },
     "potential4": {

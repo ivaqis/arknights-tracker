@@ -48,7 +48,7 @@
       "comboSkill": {
         "dmgMultiplierPerSeq": "1段ごとのダメージ倍率",
         "staggerPerSeq": "1段ごとのブレイク値",
-        "spRecoveryPerSeq": "1段ごとのSP回復",
+        "spRecoveryPerSeq": "1段ごとのSP回復量",
         "ultimateEnergyGain": "必殺チャージ回復量"
       },
       "name": "突撃一閃",

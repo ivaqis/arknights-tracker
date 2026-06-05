@@ -69,7 +69,7 @@
         "duringUltimateBatkSeq3Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-3-Multiplikator"
       },
       "name": "Zerstörerisches Unwetter",
-      "description": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie wird schwerer unterbrochen;\ndie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das {combo_cd_rate:0}-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> auf ein verfügbares Ziel verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erstellt garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist)."
+      "description": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie kann schwerer unterbrochen werden;\nDie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das {combo_cd_rate:0}-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erschafft, sofern es ein Ziel gibt, garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist)."
     },
     "indicator": {
       "levels": [
@@ -89,8 +89,8 @@
     },
     "talent2": {
       "levels": [
-        "Erhält eine Chance von <@ba.vup>{base_rate:0%}</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+{sword_rate:0%}</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>{heal:0%}</> max. LP her. Der LP-Wiederherstellungseffekt wird nur einmal alle <@ba.vup>{duration:0}</> Sek. ausgelöst.",
-        "Erhält eine Chance von <@ba.vup>{base_rate:0%}</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+{sword_rate:0%}</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>{heal:0%}</> max. LP her. Der LP-Wiederherstellungseffekt wird nur einmal alle <@ba.vup>{duration:0}</> Sek. ausgelöst."
+        "Erhält eine Chance von <@ba.vup>{base_rate:0%}</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+{sword_rate:0%}</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>{heal:0%}</> max. LP her. Der LP-Wiederherstellungseffekt kann nur einmal alle <@ba.vup>{duration:0}</> Sek. ausgelöst werden.",
+        "Erhält eine Chance von <@ba.vup>{base_rate:0%}</> auf Immunität gegen erlittenen SDN, wobei sich diese Chance mit jeder <@ba.key>Spaltklinge</> in der Nähe um <@ba.vup>+{sword_rate:0%}</> erhöht.\nNachdem SDN-Immunität ausgelöst wurde, stellt Zhuang Fangyi auch wieder <@ba.heal>{heal:0%}</> max. LP her. Der LP-Wiederherstellungseffekt kann nur einmal alle <@ba.vup>{duration:0}</> Sek. ausgelöst werden."
       ],
       "name": "Vom Himmel auserkoren"
     },
@@ -135,7 +135,7 @@
       "name": "Absolute Haltung"
     },
     "potential5": {
-      "description": "<@ba.vup>Während der <@ba.key>Avatar der Wahrheit</>-Verwandlung ignoriert der durch Zhuang Fangyi verursachte SDN {100*ignore_pulse_resist:0}</> der <@ba.pulse>Elektrischen Resistenz</> des Gegners.",
+      "description": "Während der <@ba.key>Avatar der Wahrheit</>-Verwandlung ignoriert der durch Zhuang Fangyi verursachte SDN <@ba.vup>{100*ignore_pulse_resist:0}</> der <@ba.pulse>Elektrischen Resistenz</> des Gegners.",
       "name": "Sturm der Wandlung"
     }
   },

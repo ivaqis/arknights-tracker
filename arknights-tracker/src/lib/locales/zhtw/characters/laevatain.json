@@ -89,9 +89,9 @@
     },
     "talent1": {
       "levels": [
-        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會吸收周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每吸收一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>",
-        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會吸收周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每吸收一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>",
-        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會吸收周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每吸收一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>"
+        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會<#ba.absorb>吸收</>周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每<#ba.absorb>吸收</>一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>",
+        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會<#ba.absorb>吸收</>周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每<#ba.absorb>吸收</>一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>",
+        "主控幹員<#ba.lastcombo>重擊</>或處決命中後，萊萬汀會<#ba.absorb>吸收</>周圍敵人的<#ba.fireinflict>灼熱附著</>。\n每<#ba.absorb>吸收</>一層<#ba.fireinflict>灼熱附著</>，自身獲得一層<@ba.key>熔火</>，最多疊加{max_stack:0}層。\n達到{max_stack:0}層後，萊萬汀造成的傷害無視敵人<@ba.vup>{100*ignore_fire_resist:0}</>點<@ba.fire>灼熱抗性</>，持續{ignore_fire_resist_duration:0}秒。\n<@ba.info>附近敵人被擊敗時，身上的灼熱附著也會被吸收。</>"
       ],
       "name": "灼心"
     },

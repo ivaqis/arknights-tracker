@@ -12,28 +12,6 @@ export const weapons = {
       "tactic"
     ]
   },
-  "rapidAscent": {
-    "id": "rapidAscent",
-    "name": "Rapid Ascent",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_main",
-      "attr_crirate",
-      "ult"
-    ]
-  },
-  "aspirant": {
-    "id": "aspirant",
-    "name": "Aspirant",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "ult"
-    ]
-  },
   "exemplar": {
     "id": "exemplar",
     "name": "Exemplar",
@@ -43,39 +21,6 @@ export const weapons = {
       "attr_main",
       "attr_atk",
       "tactic"
-    ]
-  },
-  "deliveryGuaranteed": {
-    "id": "deliveryGuaranteed",
-    "name": "Delivery Guaranteed",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_will",
-      "attr_usp",
-      "combo"
-    ]
-  },
-  "artzyTyrannical": {
-    "id": "artzyTyrannical",
-    "name": "Artzy Tyrannical",
-    "rarity": 6,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_wisd",
-      "attr_crirate",
-      "crit"
-    ]
-  },
-  "neverRest": {
-    "id": "neverRest",
-    "name": "Never Rest",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_will",
-      "attr_atk",
-      "tacafter"
     ]
   },
   "formerFinery": {
@@ -89,17 +34,6 @@ export const weapons = {
       "keyword"
     ]
   },
-  "whiteNightNova": {
-    "id": "whiteNightNova",
-    "name": "White Night Nova",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_main",
-      "attr_physpell",
-      "magabn"
-    ]
-  },
   "thunderberge": {
     "id": "thunderberge",
     "name": "Thunderberge",
@@ -109,17 +43,6 @@ export const weapons = {
       "attr_str",
       "attr_hp",
       "heal"
-    ]
-  },
-  "objEdgeOfLightness": {
-    "id": "objEdgeOfLightness",
-    "name": "OBJ Edge of Lightness",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_atk",
-      "tacafter"
     ]
   },
   "sunderedPrince": {
@@ -133,17 +56,6 @@ export const weapons = {
       "smash"
     ]
   },
-  "twelveQuestions": {
-    "id": "twelveQuestions",
-    "name": "Twelve Questions",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_atk",
-      "magabn"
-    ]
-  },
   "quencher": {
     "id": "quencher",
     "name": "Quencher",
@@ -155,17 +67,6 @@ export const weapons = {
       "smash"
     ]
   },
-  "gloriousMemory": {
-    "id": "gloriousMemory",
-    "name": "Glorious Memory",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_crirate",
-      "ult"
-    ]
-  },
   "darhoff7": {
     "id": "darhoff7",
     "name": "Darhoff 7",
@@ -174,28 +75,6 @@ export const weapons = {
     "skills": [
       "attr_main",
       "force"
-    ]
-  },
-  "aggeloslayer": {
-    "id": "aggeloslayer",
-    "name": "Aggeloslayer",
-    "rarity": 4,
-    "weapon": "polearm",
-    "skills": [
-      "attr_will",
-      "attr_magicdam",
-      "tactic"
-    ]
-  },
-  "rationalFarewell": {
-    "id": "rationalFarewell",
-    "name": "Rational Farewell",
-    "rarity": 5,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_str",
-      "attr_firedam",
-      "combo"
     ]
   },
   "seekerOfDarkLung": {
@@ -231,28 +110,6 @@ export const weapons = {
       "burst"
     ]
   },
-  "detonationUnit": {
-    "id": "detonationUnit",
-    "name": "Detonation Unit",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_main",
-      "attr_physpell",
-      "burst"
-    ]
-  },
-  "sunderingSteel": {
-    "id": "sunderingSteel",
-    "name": "Sundering Steel",
-    "rarity": 5,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "phyabn"
-    ]
-  },
   "ancientCanal": {
     "id": "ancientCanal",
     "name": "Ancient Canal",
@@ -262,28 +119,6 @@ export const weapons = {
       "attr_str",
       "attr_physpell",
       "break"
-    ]
-  },
-  "chivalricVirtues": {
-    "id": "chivalricVirtues",
-    "name": "Chivalric Virtues",
-    "rarity": 6,
-    "weapon": "artsUnit",
-    "skills": [
-      "attr_will",
-      "attr_hp",
-      "heal"
-    ]
-  },
-  "forgebornScathe": {
-    "id": "forgebornScathe",
-    "name": "Forgeborn Scathe",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_wisd",
-      "attr_atk",
-      "ult"
     ]
   },
   "objHeavyBurden": {
@@ -297,14 +132,26 @@ export const weapons = {
       "keyword"
     ]
   },
-  "tarr11": {
-    "id": "tarr11",
-    "name": "Tarr 11",
-    "rarity": 3,
-    "weapon": "sword",
+  "phantomPain": {
+    "id": "phantomPain",
+    "name": "Phantom Pain",
+    "rarity": 6,
+    "weapon": "greatSword",
     "skills": [
-      "attr_main",
-      "force"
+      "attr_str",
+      "attr_physpell",
+      "tactic"
+    ]
+  },
+  "amaranthineTassel": {
+    "id": "amaranthineTassel",
+    "name": "Amaranthine Tassel",
+    "rarity": 6,
+    "weapon": "greatSword",
+    "skills": [
+      "attr_str",
+      "attr_atk",
+      "phyabn"
     ]
   },
   "hypernovaAuto": {
@@ -316,17 +163,6 @@ export const weapons = {
       "attr_wisd",
       "attr_magicdam",
       "spirit"
-    ]
-  },
-  "eminentRepute": {
-    "id": "eminentRepute",
-    "name": "Eminent Repute",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_main",
-      "attr_phydam",
-      "break"
     ]
   },
   "jiminy12": {
@@ -359,28 +195,6 @@ export const weapons = {
       "attr_wisd",
       "attr_pulsedam",
       "magabn"
-    ]
-  },
-  "valiant": {
-    "id": "valiant",
-    "name": "Valiant",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "phyabn"
-    ]
-  },
-  "mountainBearer": {
-    "id": "mountainBearer",
-    "name": "Mountain Bearer",
-    "rarity": 6,
-    "weapon": "polearm",
-    "skills": [
-      "attr_agi",
-      "attr_phydam",
-      "keyword"
     ]
   },
   "stanzaOfMemorials": {
@@ -416,6 +230,17 @@ export const weapons = {
       "spirit"
     ]
   },
+  "detonationUnit": {
+    "id": "detonationUnit",
+    "name": "Detonation Unit",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_main",
+      "attr_physpell",
+      "burst"
+    ]
+  },
   "oblivion": {
     "id": "oblivion",
     "name": "Oblivion",
@@ -425,6 +250,28 @@ export const weapons = {
       "attr_wisd",
       "attr_magicdam",
       "ult"
+    ]
+  },
+  "chivalricVirtues": {
+    "id": "chivalricVirtues",
+    "name": "Chivalric Virtues",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_hp",
+      "heal"
+    ]
+  },
+  "deliveryGuaranteed": {
+    "id": "deliveryGuaranteed",
+    "name": "Delivery Guaranteed",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_will",
+      "attr_usp",
+      "combo"
     ]
   },
   "freedomToProselytize": {
@@ -460,28 +307,6 @@ export const weapons = {
       "combo"
     ]
   },
-  "objRazorhorn": {
-    "id": "objRazorhorn",
-    "name": "OBJ Razorhorn",
-    "rarity": 5,
-    "weapon": "polearm",
-    "skills": [
-      "attr_will",
-      "attr_phydam",
-      "magabn"
-    ]
-  },
-  "wedge": {
-    "id": "wedge",
-    "name": "Wedge",
-    "rarity": 6,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_main",
-      "attr_crirate",
-      "magabn"
-    ]
-  },
   "loneBarge": {
     "id": "loneBarge",
     "name": "Lone Barge",
@@ -491,18 +316,6 @@ export const weapons = {
       "attr_will",
       "attr_atk",
       "tactic"
-    ],
-    "isNew": true
-  },
-  "clannibal": {
-    "id": "clannibal",
-    "name": "Clannibal",
-    "rarity": 6,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_main",
-      "attr_magicdam",
-      "magabn"
     ]
   },
   "flickersInTheMist": {
@@ -514,8 +327,7 @@ export const weapons = {
       "attr_will",
       "attr_pulsedam",
       "keyword"
-    ],
-    "isNew": true
+    ]
   },
   "pathfindersBeacon": {
     "id": "pathfindersBeacon",
@@ -526,17 +338,6 @@ export const weapons = {
       "attr_agi",
       "attr_atk",
       "spirit"
-    ]
-  },
-  "homeLonging": {
-    "id": "homeLonging",
-    "name": "Home Longing",
-    "rarity": 6,
-    "weapon": "handcannon",
-    "skills": [
-      "attr_agi",
-      "attr_icedam",
-      "tactic"
     ]
   },
   "chimericJustice": {
@@ -561,6 +362,28 @@ export const weapons = {
       "tactic"
     ]
   },
+  "beaconOfDuty": {
+    "id": "beaconOfDuty",
+    "name": "Beacon of Duty",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_usp",
+      "keyword"
+    ]
+  },
+  "aggeloslayer": {
+    "id": "aggeloslayer",
+    "name": "Aggeloslayer",
+    "rarity": 4,
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_magicdam",
+      "tactic"
+    ]
+  },
   "opero77": {
     "id": "opero77",
     "name": "Opero 77",
@@ -569,6 +392,17 @@ export const weapons = {
     "skills": [
       "attr_main",
       "force"
+    ]
+  },
+  "valiant": {
+    "id": "valiant",
+    "name": "Valiant",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "phyabn"
     ]
   },
   "jet": {
@@ -580,6 +414,28 @@ export const weapons = {
       "attr_main",
       "attr_atk",
       "tactic"
+    ]
+  },
+  "mountainBearer": {
+    "id": "mountainBearer",
+    "name": "Mountain Bearer",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "keyword"
+    ]
+  },
+  "objRazorhorn": {
+    "id": "objRazorhorn",
+    "name": "OBJ Razorhorn",
+    "rarity": 5,
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_phydam",
+      "magabn"
     ]
   },
   "peco5": {
@@ -603,17 +459,6 @@ export const weapons = {
       "tactic"
     ]
   },
-  "lupineScarlet": {
-    "id": "lupineScarlet",
-    "name": "Lupine Scarlet",
-    "rarity": 6,
-    "weapon": "sword",
-    "skills": [
-      "attr_agi",
-      "attr_crirate",
-      "crit"
-    ]
-  },
   "longRoad": {
     "id": "longRoad",
     "name": "Long Road",
@@ -625,15 +470,15 @@ export const weapons = {
       "combo"
     ]
   },
-  "thermiteCutter": {
-    "id": "thermiteCutter",
-    "name": "Thermite Cutter",
-    "rarity": 6,
-    "weapon": "sword",
+  "rationalFarewell": {
+    "id": "rationalFarewell",
+    "name": "Rational Farewell",
+    "rarity": 5,
+    "weapon": "handcannon",
     "skills": [
-      "attr_will",
-      "attr_atk",
-      "tacafter"
+      "attr_str",
+      "attr_firedam",
+      "combo"
     ]
   },
   "navigator": {
@@ -658,6 +503,50 @@ export const weapons = {
       "magabn"
     ]
   },
+  "homeLonging": {
+    "id": "homeLonging",
+    "name": "Home Longing",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_agi",
+      "attr_icedam",
+      "tactic"
+    ]
+  },
+  "wedge": {
+    "id": "wedge",
+    "name": "Wedge",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "attr_crirate",
+      "magabn"
+    ]
+  },
+  "clannibal": {
+    "id": "clannibal",
+    "name": "Clannibal",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_main",
+      "attr_magicdam",
+      "magabn"
+    ]
+  },
+  "artzyTyrannical": {
+    "id": "artzyTyrannical",
+    "name": "Artzy Tyrannical",
+    "rarity": 6,
+    "weapon": "handcannon",
+    "skills": [
+      "attr_wisd",
+      "attr_crirate",
+      "crit"
+    ]
+  },
   "brigandsCalling": {
     "id": "brigandsCalling",
     "name": "Brigand's Calling",
@@ -680,15 +569,36 @@ export const weapons = {
       "burst"
     ]
   },
-  "grandVision": {
-    "id": "grandVision",
-    "name": "Grand Vision",
-    "rarity": 6,
+  "tarr11": {
+    "id": "tarr11",
+    "name": "Tarr 11",
+    "rarity": 3,
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "force"
+    ]
+  },
+  "sunderingSteel": {
+    "id": "sunderingSteel",
+    "name": "Sundering Steel",
+    "rarity": 5,
     "weapon": "sword",
     "skills": [
       "attr_agi",
+      "attr_phydam",
+      "phyabn"
+    ]
+  },
+  "forgebornScathe": {
+    "id": "forgebornScathe",
+    "name": "Forgeborn Scathe",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_wisd",
       "attr_atk",
-      "magabn"
+      "ult"
     ]
   },
   "fortmaker": {
@@ -735,6 +645,105 @@ export const weapons = {
       "magabn"
     ]
   },
+  "rapidAscent": {
+    "id": "rapidAscent",
+    "name": "Rapid Ascent",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_crirate",
+      "ult"
+    ]
+  },
+  "thermiteCutter": {
+    "id": "thermiteCutter",
+    "name": "Thermite Cutter",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tacafter"
+    ]
+  },
+  "eminentRepute": {
+    "id": "eminentRepute",
+    "name": "Eminent Repute",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_phydam",
+      "break"
+    ]
+  },
+  "whiteNightNova": {
+    "id": "whiteNightNova",
+    "name": "White Night Nova",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_physpell",
+      "magabn"
+    ]
+  },
+  "aspirant": {
+    "id": "aspirant",
+    "name": "Aspirant",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_phydam",
+      "ult"
+    ]
+  },
+  "neverRest": {
+    "id": "neverRest",
+    "name": "Never Rest",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_will",
+      "attr_atk",
+      "tacafter"
+    ]
+  },
+  "gloriousMemory": {
+    "id": "gloriousMemory",
+    "name": "Glorious Memory",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_crirate",
+      "ult"
+    ]
+  },
+  "twelveQuestions": {
+    "id": "twelveQuestions",
+    "name": "Twelve Questions",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "magabn"
+    ]
+  },
+  "objEdgeOfLightness": {
+    "id": "objEdgeOfLightness",
+    "name": "OBJ Edge of Lightness",
+    "rarity": 5,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "tacafter"
+    ]
+  },
   "finchaser30": {
     "id": "finchaser30",
     "name": "Finchaser 3.0",
@@ -744,6 +753,28 @@ export const weapons = {
       "attr_str",
       "attr_icedam",
       "tactic"
+    ]
+  },
+  "grandVision": {
+    "id": "grandVision",
+    "name": "Grand Vision",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_atk",
+      "magabn"
+    ]
+  },
+  "lupineScarlet": {
+    "id": "lupineScarlet",
+    "name": "Lupine Scarlet",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_agi",
+      "attr_crirate",
+      "crit"
     ]
   }
 };

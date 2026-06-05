@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Ultimative Fertigkeit <@ba.key>TRUPP! ZU MIR!</> verbessert: Solange die Ultimative Fertigkeit aktiv ist, gewährt sie <#ba.combo>Verbunden</>."
+        "Ultimative Fertigkeit <@ba.key>TRUPP! ZU MIR!</> verbessert: Solange die Ultimative Fertigkeit aktiv ist, gewährt sie einen <#ba.combo>Verbunden</>-Buff."
       ],
       "name": "In der Zone bleiben"
     },

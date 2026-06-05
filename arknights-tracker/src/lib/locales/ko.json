@@ -741,7 +741,9 @@
     "hetoniteComponent": "혁동 장비 부품",
     "hetoniteSolution": "혁동 용액",
     "precipitationAcid": "산성 침적물",
-    "liquidHeavyXiranite": "액화 중식양"
+    "liquidHeavyXiranite": "액화 중식양",
+    "centuryRind": "백년 숙성 진피",
+    "caudalGoldscale": "꼬리 금갑"
   },
   "common": {
     "copy": "복사",
@@ -925,7 +927,9 @@
     "pogranichnik": "포그라니치니크",
     "rossi": "로시",
     "zhuangfy": "장방이",
-    "zhuangFangyi": "장방이"
+    "zhuangFangyi": "장방이",
+    "miFu": "미브",
+    "mifu": "미브"
   },
   "weaponsList": {
     "industry01": "공업 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "린수를 찾아서 3.0",
     "lupineScarlet": "늑대의 혈흔",
     "loneBarge": "고독한 나룻배",
-    "flickersInTheMist": "안개 속 불빛"
+    "flickersInTheMist": "안개 속 불빛",
+    "phantomPain": "환상통",
+    "amaranthineTassel": "적영",
+    "beaconOfDuty": "등불의 사명"
   },
   "cookies": {
     "title": "쿠키 사용 안내",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "고위 에너지 응집점 · 수돈",
     "world_energy_point08_3": "에너지 응집점 · 실험 구역",
     "world_energy_point08_2": "에너지 응집점 · 실험 구역",
-    "world_energy_point08_6": "고위 에너지 응집점 · 실험 구역"
+    "world_energy_point08_6": "고위 에너지 응집점 · 실험 구역",
+    "world_energy_point09_1": "에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_2": "에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_3": "에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_4": "고위 에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_5": "고위 에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_6": "고위 에너지 응집점 · 장검 골짜기",
+    "world_energy_point09_7": "고위 에너지 응집점 · 장검 골짜기"
   },
   "enemies": {
     "eny_0007_mimicw": "터널링 니드웜",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "'본 크러셔' 네파리스",
     "eny_0095_ethillu": "잔영",
     "eny_0079_nefarp2": "'정복자' 네파리스",
-    "eny_0082_hsbear": "천고"
+    "eny_0082_hsbear": "천고",
+    "eny_0112_jzmonk": "록하울러",
+    "eny_0113_jzogre": "무장 맹글러",
+    "eny_0114_jzmking": "거대한 록하울러"
   },
   "essencesPage": {
     "optimizer": "파밍 최적화",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "청파 보호 장갑",
     "item_equip_t4_suit_expend_spell01_edc_02": "식양의 흐름 단봉",
     "item_equip_t4_suit_expend_spell01_body_02": "식양의 흐름 경갑",
-    "item_equip_t4_suit_phy01_hand_03": "검술사 전술 금속 장갑 · I"
+    "item_equip_t4_suit_phy01_hand_03": "검술사 전술 금속 장갑 · I",
+    "item_equip_t4_suit_combo_cd01_edc_04": "청파 위치 지정기 · I",
+    "item_equip_t4_suit_crush_fracture_body_01": "고검의 잔향 장갑",
+    "item_equip_t4_suit_crush_fracture_body_02": "고검의 잔향 장갑 · I",
+    "item_equip_t4_suit_crush_fracture_edc_01": "고검의 잔향 단검",
+    "item_equip_t4_suit_crush_fracture_edc_02": "고검의 잔향 단검 · I",
+    "item_equip_t4_suit_crush_fracture_hand_01": "고검의 잔향 금속 장갑",
+    "item_equip_t4_suit_crush_fracture_hand_02": "고검의 잔향 금속 장갑 · I",
+    "item_equip_t4_suit_phy01_body_04": "검술사 섬유 방어구"
   },
   "packs": {
     "none": "세트 없음",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "침식 차단",
     "suit_wisdwill01": "통합 경량형 모델",
     "suit_combo_cd01": "청파",
-    "suit_expend_spell01": "식양의 흐름"
+    "suit_expend_spell01": "식양의 흐름",
+    "suit_crush_fracture": "고검의 잔향"
   },
   "equipmentTypes": {
     "body": "방어구",
@@ -1887,11 +1913,11 @@
     "pump_1": "양수기",
     "pump_2": "내산성 양수기 II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "기본 모드",
     "liquid": "액체 모드"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "획득 방법",
       "using": "사용 가능 조합 공식",

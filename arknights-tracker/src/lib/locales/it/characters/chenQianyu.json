@@ -129,7 +129,7 @@
       "name": "Chi Xiao improvvisata"
     },
     "potential5": {
-      "description": "Abilità combo <@ba.key>Volo verso le stelle</> migliorata: ora il tempo di recupero è di <@ba.vup>{coolDown:0}</> s.",
+      "description": "Abilità combo <@ba.key>Volo verso le stelle</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s.",
       "name": "Legame col mondo"
     }
   },

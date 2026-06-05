@@ -48,7 +48,7 @@
         "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante abilità suprema: moltiplicatore danni bonus per livello di stato di Elettrificazione consumato"
       },
       "name": "Mantra della separazione",
-      "description": "<#ba.consume>Consuma</> l'<#ba.conduct>Elettrificazione</> del bersaglio per aumentare il moltiplicatore danni di questa abilità di combattimento e creare <@ba.key>Lame fendenti</> pari al <#ba.statuslevel>livello di stato</> dell'<#ba.conduct>Elettrificazione</> <#ba.consume>consumata</> <@ba.key> +1</>. Se sul campo di battaglia sono presenti meno di {free_sword_limit:0} <@ba.key>Lame fendenti</>, Mantra della separazione può comunque creare 1 <@ba.key>Lama fendente</> anche se non <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> dei bersagli.\nSuccessivamente, Zhuang Fangyi convoglia tutte le <@ba.key>Lame fendenti</> nelle vicinanze e scatena Colpi di tuono contro il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e conferendo energia suprema bonus. Il Colpo di tuono finale infligge {final_rate:0} volte i danni.\n<@ba.info>Un solo uso dell'abilità di combattimento crea al massimo {max_conduct_sword:0} Lame fendenti.</>"
+      "description": "<#ba.consume>Consuma</> l'<#ba.conduct>Elettrificazione</> del bersaglio per aumentare il moltiplicatore danni di questa abilità di combattimento e creare <@ba.key>Lame fendenti</> pari al <#ba.statuslevel>livello di stato</> dell'<#ba.conduct>Elettrificazione</> <#ba.consume>consumata</> <@ba.key>+1</>. Se sul campo di battaglia sono presenti meno di {free_sword_limit:0} <@ba.key>Lame fendenti</>, Mantra della separazione può comunque creare 1 <@ba.key>Lama fendente</> anche se non <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> dei bersagli.\nSuccessivamente, Zhuang Fangyi convoglia tutte le <@ba.key>Lame fendenti</> nelle vicinanze e scatena Colpi di tuono contro il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e conferendo energia suprema bonus. Il Colpo di tuono finale infligge {final_rate:0} volte i danni.\n<@ba.info>Un solo uso dell'abilità di combattimento crea al massimo {max_conduct_sword:0} Lame fendenti.</>"
     },
     "comboSkill": {
       "comboSkill": {
@@ -69,7 +69,7 @@
         "duringUltimateBatkSeq3Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 3"
       },
       "name": "Tempesta devastante",
-      "description": "Si trasforma nell'<@ba.key>Empireo della verità</>, che fornisce i seguenti potenziamenti.\nGli attacchi base di Zhuang Fangyi vengono potenziati ed è più difficile interrompere le sue azioni.\nL'abilità di combattimento <@ba.key>Mantra della separazione</> ottiene un moltiplicatore danni più alto e un raggio d'azione maggiore, e il Colpo di tuono finale applica anche <#ba.pulseinflict>Afflizione da elettricità</> al bersaglio colpito.\nL'abilità combo <@ba.key>Soffio della trasformazione</> ottiene un moltiplicatore danni più alto, il tempo di recupero diventa {combo_cd_rate:0} volte più veloce e gli effetti vengono applicati ai nemici in un piccolo raggio d'azione.\nIl primo uso dell'abilità di combattimento <@ba.key>Mantra della separazione</> su un bersaglio disponibile non consuma PA né <#ba.conduct>Elettrificazione</>, e crea 3 <@ba.key>Lame fendenti</> anche se il bersaglio non è affetto da <#ba.conduct>Elettrificazione</>."
+      "description": "Si trasforma nell'<@ba.key>Empireo della verità</>, che fornisce i seguenti potenziamenti.\nGli attacchi base di Zhuang Fangyi vengono potenziati ed è più difficile interrompere le sue azioni.\nL'abilità di combattimento <@ba.key>Mantra della separazione</> ottiene un moltiplicatore danni più alto e un raggio d'azione maggiore, e il Colpo di tuono finale applica anche <#ba.pulseinflict>Afflizione da elettricità</> al bersaglio colpito.\nL'abilità combo <@ba.key>Soffio della trasformazione</> ottiene un moltiplicatore danni più alto, il tempo di recupero diventa {combo_cd_rate:0} volte più veloce e gli effetti vengono applicati ai nemici in un piccolo raggio d'azione.\nIl primo uso dell'abilità di combattimento <@ba.key>Mantra della separazione</> non consuma PA né <#ba.conduct>Elettrificazione</> e, se c'è un bersaglio disponibile, l'abilità di combattimento crea 3 <@ba.key>Lame fendenti</> anche se il bersaglio non è affetto da <#ba.conduct>Elettrificazione</>."
     },
     "indicator": {
       "levels": [
@@ -89,8 +89,8 @@
     },
     "talent2": {
       "levels": [
-        "Ottiene un <@ba.vup>{base_rate:0%}</> di probabilità di diventare immune ai danni subiti. Ogni <@ba.key>Lama fendente</> nelle vicinanze aumenta ulteriormente questa probabilità di un <@ba.vup>{sword_rate:0%}</>.\nQuando l'immunità ai danni si attiva, la salute di Zhuang Fangyi viene ripristinata di un <@ba.heal>{heal:0%}</> dei suoi PS massimi. L'effetto di ripristino dei PS si attiva solo una volta ogni <@ba.vup>{duration:0}</> s.",
-        "Ottiene un <@ba.vup>{base_rate:0%}</> di probabilità di diventare immune ai danni subiti. Ogni <@ba.key>Lama fendente</> nelle vicinanze aumenta ulteriormente questa probabilità di un <@ba.vup>{sword_rate:0%}</>.\nQuando l'immunità ai danni si attiva, la salute di Zhuang Fangyi viene ripristinata di un <@ba.heal>{heal:0%}</> dei suoi PS massimi. L'effetto di ripristino dei PS si attiva solo una volta ogni <@ba.vup>{duration:0}</> s."
+        "Ottiene un <@ba.vup>{base_rate:0%}</> di probabilità di diventare immune ai danni subiti. Ogni <@ba.key>Lama fendente</> nelle vicinanze aumenta ulteriormente questa probabilità di un <@ba.vup>{sword_rate:0%}</>.\nQuando l'immunità ai danni si attiva, la salute di Zhuang Fangyi viene ripristinata di un <@ba.heal>{heal:0%}</> dei suoi PS massimi. L'effetto di ripristino dei PS può attivarsi solo una volta ogni <@ba.vup>{duration:0}</> s.",
+        "Ottiene un <@ba.vup>{base_rate:0%}</> di probabilità di diventare immune ai danni subiti. Ogni <@ba.key>Lama fendente</> nelle vicinanze aumenta ulteriormente questa probabilità di un <@ba.vup>{sword_rate:0%}</>.\nQuando l'immunità ai danni si attiva, la salute di Zhuang Fangyi viene ripristinata di un <@ba.heal>{heal:0%}</> dei suoi PS massimi. L'effetto di ripristino dei PS può attivarsi solo una volta ogni <@ba.vup>{duration:0}</> s."
       ],
       "name": "Deciso dal cielo"
     },
@@ -135,7 +135,7 @@
       "name": "Compostezza assoluta"
     },
     "potential5": {
-      "description": "<@ba.vup>Quando si trasforma nell'<@ba.key>Empireo della verità</>, i danni inflitti da Zhuang Fangyi ignorano un {100*ignore_pulse_resist:0}</> di <@ba.pulse>resistenza all'elettricità</> del nemico.",
+      "description": "Quando si trasforma nell'<@ba.key>Empireo della verità</>, i danni inflitti da Zhuang Fangyi ignorano un <@ba.vup>{100*ignore_pulse_resist:0}</> di <@ba.pulse>resistenza all'elettricità</> del nemico.",
       "name": "Tempesta della trasformazione"
     }
   },

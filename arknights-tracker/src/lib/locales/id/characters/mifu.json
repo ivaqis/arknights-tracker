@@ -1,0 +1,153 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Crush",
+      "PHY Susc."
+    ],
+    "behaviourHateTags": [
+      "Fesyen"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Kondisi Tubuh",
+      "Teknik Tempur"
+    ],
+    "giftPreferTags": [
+      "Pilihan Swordmancer Wuling"
+    ],
+    "hobbyTags": [
+      "Olahraga",
+      "Gaya Hidup"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+        "diveAtkMultiplier": "Pengganda ATK Menukik",
+        "finisherAtkMultiplier": "Pengganda ATK Penuntas"
+      },
+      "name": "Fistmancer of Blades",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "cloudtrapperDmgMultiplier": "Pengganda DMG Cloudtrapper",
+        "trailAndMangleDmgMultiplier": "Pengganda DMG Trail and Mangle",
+        "trailAndMangleStagger": "Trail and Mangle Stagger",
+        "worldSplitterDmgMultiplier": "Pengganda DMG World Splitter",
+        "worldSplitterStagger": "World Splitter Stagger"
+      },
+      "name": "Qingbo Triplex",
+      "description": "Terus gunakan skill tarung Mi Fu untuk mengeluarkan 3 gerakan berbeda. Skill tarung yang digunakan pertama adalah <@ba.key>Cloudtrapper</>.\n<@ba.key>GERAKAN 1 - Cloudtrapper</>: Butuh <@ba.vup>100</> SP dan akan <#ba.return>mengembalikan</><@ba.vup> 50</> Poin Skill setelah digunakan; Mi Fu akan menembakkan rantai pengait dari gauntlet miliknya yang akan menimbulkan <@ba.pd>Physical DMG</> kepada target dan musuh di sekitarnya, lalu berusaha menarik target dan musuh di sekitar ke arahnya. Setelah melancarkan GERAKAN 1, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>.\n<@ba.key>GERAKAN 2 - Trail and Mangle</>: Butuh <@ba.vup>50</> SP; Mi Fu akan melepaskan rentetan pukulan yang akan menimbulkan <@ba.pd>Physical DMG</>, sedangkan pukulan terakhir akan mengakibatkan <#ba.crush>Crush</>. Jika Crush ini <#ba.consume>memakai</> setidaknya 3 tumpuk <#ba.noguard>Vulnerability</> dari satu target, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>World Splitter</>.\n<@ba.key>GERAKAN 3 - World Splitter</>: Butuh <@ba.vup>50</> SP; Mi Fu akan menimbulkan <@ba.pd>Physical DMG</> yang sangat besar ke area tertentu; DMG ini tidak dianggap sebagai DMG skill tarung, melainkan sebagai <#ba.crush>Crush</> DMG."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "physicalSusceptibility": "Phy Suscept",
+        "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)",
+        "ultimateEnergyGain": "Perolehan Energi Ultimate"
+      },
+      "name": "Fists of No Regrets",
+      "description": "PEMICU KOMBO: Saat musuh terkena 3 tumpuk <#ba.noguard>Vulnerability</> atau lebih.\nMi Fu akan melepaskan pukulan uppercut kuat kepada musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</> untuk sementara. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger"
+      },
+      "name": "Pile of No Mercy",
+      "description": "Setelah peningkatan kekuatan sesaat, Mi Fu akan melejit ke depan untuk mengakibatkan <#ba.airborne>Lift</> secara paksa kepada target hingga melayang, lalu membanting target itu sehingga akan menimbulkan <@ba.pd>Physical DMG</>. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>."
+    },
+    "indicator": {
+      "levels": [
+        "Strength Operator +10.",
+        "Strength Operator +15.",
+        "Strength Operator +15.",
+        "Strength Operator +20."
+      ],
+      "name": "Forged"
+    },
+    "talent1": {
+      "levels": [
+        "Gerakan skill tarung <@ba.key>World Splitter</> meningkat: Saat menghantam target yang terkena <#ba.physicalvul>Physical Susceptibility</> atau <@ba.poise>Staggered</>, Pengganda DMG akan meningkat menjadi <@ba.vup>{crushmultiadd_talent+1}</> kali nilai aslinya.",
+        "Gerakan skill tarung <@ba.key>World Splitter</> meningkat: Saat menghantam target yang terkena <#ba.physicalvul>Physical Susceptibility</> atau <@ba.poise>Staggered</>, Pengganda DMG akan meningkat menjadi <@ba.vup>{crushmultiadd_talent+1}</> kali nilai aslinya."
+      ],
+      "name": "Stern Crackdown"
+    },
+    "talent2": {
+      "levels": [
+        "Skill kombo meningkat: Penggunaan kombo akan menghasilkan <#ba.shield>perisai</> dengan <@ba.vup>{talent_shield_hppercent:0%}</> HP maks dan durasi {talent_shield_duration} dtk. Selagi perisai masih aktif, Mi Fu menjadi lebih sulit disela.\nEfek ini hanya bisa diaktifkan satu kali setiap {talent_shield_cd} dtk.",
+        "Skill kombo meningkat: Penggunaan kombo akan menghasilkan <#ba.shield>perisai</> dengan <@ba.vup>{talent_shield_hppercent:0%}</> HP maks dan durasi {talent_shield_duration} dtk. Selagi perisai masih aktif, Mi Fu menjadi lebih sulit disela.\nEfek ini hanya bisa diaktifkan satu kali setiap {talent_shield_cd} dtk."
+      ],
+      "name": "Vigilant Fury"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan sedikit Peningkatan Peluang Petunjuk 3: HAS (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)",
+        "Saat ditugaskan ke Ruang Resepsionis, operator akan mendapatkan Peningkatan Peluang Petunjuk 3: HAS (aktif saat ditugaskan; efek yang tipenya sama tidak bisa ditumpuk)"
+      ],
+      "name": "Secret Informants"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan material fungi akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan material fungi akan meningkat sebesar +30%"
+      ],
+      "name": "Esoteric Tisane"
+    },
+    "files": {
+      "main": "NAMA SANDI: Mi Fu \nGENDER: Perempuan \nAUTENTIKASI: Hongshan Academy of Sciences \nTANGGAL LAHIR: 9 Juli \nRAS: Sarkaz \n[STATUS INFEKSI ORIPATI] \nPositif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Sangat Baik \nKEMAMPUAN TEMPUR: Sangat Baik \nKECERDASAN TAKTIS: Standar \nASIMILASI ORIGINIUM ARTS: Standar",
+      "humanResources": "Mi Fu adalah Kapten Opsir dari Distrik Pengembangan Sains Wuling di bawah Hongshan Academy of Sciences (HAS). Saat ini, dia adalah tamu dalam rangka pertukaran di Endfield Industries. Divisi Teknologi Spesialis bertanggung jawab atas penyambutannya. \n\nKapten Mi Fu mengaku bahwa tujuan kunjungannya adalah untuk bertemu beberapa teman lama dari Endfield. Tapi, sejak kedatangannya, sudah jelas bahwa dia terus mengamati dan menilai setiap operator berdasarkan kemampuan tempur mereka. Dalam beberapa kesempatan, dia dengan lirih mengucapkan kata-kata ini kepada operator yang ditemuinya, “Tertarik latih tanding denganku, tidak?” Saat Mi Fu melihat kabin latihan kita, alisnya terangkat dan dia langsung tertarik. Setelah mencoba fasilitas yang tersedia, dia berkata, “Kalau tahu tempat ini menawarkan pertarungan sehebat ini, aku sudah datang sejak dulu!” Setelah itu, dia langsung memperpanjang durasi kunjungannya hingga beberapa hari lagi. Apa pun itu, kami berharap kunjungan pertukarannya di Endfield akan menjadi pengalaman yang sebisa mungkin memperkaya sekaligus menyenangkan. \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "DOKUMEN: Catatan Promosi SDM Distrik Pengembangan Sains Wuling \nNAMA: Mi Fu \nWILAYAH ASAL: Wuling \nPENGALAMAN KERJA: 3 tahun \nJABATAN SAAT INI: Opsir Wuling \nUSULAN PROMOSI: Kapten Opsir Wuling \n\nCURRICULUM VITAE & LATAR BELAKANG: \nMi Fu adalah mantan penduduk Kampung Benteng Qingbo yang kemudian direkrut oleh Distrik Pengembangan Sains Wuling, dan diangkat sebagai opsir setelah selesainya pembangunan Kota Wuling. Sejak menjabat, dia terus bekerja di garis depan, menunjukkan pengetahuan luas mengenai masalah keamanan di dalam Kota Wuling dan wilayah sekitarnya, serta ketegasan dan kecepatan dalam menangani berbagai keadaan darurat dan beragam kasus. Mi Fu berkomitmen pada Kota Wuling, tidak menoleransi bentuk kenakalan atau kejahatan apa pun, dan selalu bertindak dengan sangat adil. Reputasinya baik, dia mampu memberikan efek jera yang efektif, dan menjadi sosok panutan bagi khalayak umum. \n\nKELEBIHAN: \nKemampuan tempur luar biasa. Kondisi fisik dan daya tahan mengesankan. Mampu menangani ancaman berisiko tinggi. \nTegas dan terampil dalam menjalankan perintah. Mampu mengambil keputusan yang tepat saat menghadapi situasi yang kompleks. \nPeduli dan mampu membimbing anak buahnya. Mampu membentuk tim yang solid dan kompak. \nMemiliki reputasi baik di kalangan masyarakat dan telah mendapatkan kepercayaan serta dukungan mereka. Ulasan publik mencakup: “Agak blak-blakan, tapi selalu adil.” \n\nHAL-HAL YANG PERLU DITINGKATKAN: \nTerlalu bersemangat dalam menggunakan kekuatan. Cenderung mengandalkan tindakan fisik dalam mengatasi berbagai situasi. Kurang mematuhi prosedur. \nAgak lemah dalam tugas-tugas administratif, misalnya penyusunan laporan. Keterampilan administrasinya terbatas. \nEmosinya mudah terpancing. Kurang sabar dalam berkomunikasi. Rentan terlibat konflik dengan orang lain. \nMemberikan kepercayaan berlebihan kepada orang yang sudah dikenal. Keputusan yang diambilnya mungkin dipengaruhi oleh hubungan pribadi dan emosi. \n\nPENILAIAN KESELURUHAN: \nMi Fu menunjukkan hasil yang luar biasa dalam tugas patroli dan penegakan hukum. Dengan keberhasilannya meredam berbagai keadaan darurat, dia adalah petugas yang menjanjikan dan bisa diandalkan untuk tugas lapangan. Tapi, dia cenderung menggunakan pendekatan frontal yang kurang halus, pemahaman proseduralnya lemah, dan berisiko melanggar rantai komando yang semestinya. Walau begitu, masyarakat sangat puas dengan kinerja Mi Fu. Kandidat ini telah memberikan kontribusi positif walau tidak luput dari kesalahan. Perlu bimbingan lebih lanjut serta penguatan pengendalian diri. \n\nPENDAPAT PENINJAU: \nMi Fu punya sifat yang berapi-api dan semangat besar dalam menegakkan keadilan. Walaupun dia sering bertindak di luar prosedur, tindakannya tidak pernah didasari niat buruk. Dia mengayunkan tinjunya bukan untuk dirinya sendiri, tapi demi keselamatan orang lain. Kesan keras yang terpancar darinya hanyalah akibat dari sikapnya yang lugas. Ketidaksesuaian dengan prosedur dan kekurangan dalam pekerjaan administratif hanya menutupi, bukan menghilangkan, ketelitiannya terhadap detail. Dia mungkin agak lemah dalam aspek-aspek tersebut, tapi justru di situlah pulalah letak keunggulannya. \nAku bersedia menjamin karakter dan reputasinya yang baik, serta merekomendasikannya untuk dipromosikan menjadi Kapten Opsir Kota Wuling karena di sana dia akan menjadi pilar utama keamanan publik kota itu. Aku juga akan secara pribadi mengawasi dan membimbing Mi Fu dalam pekerjaannya sehari-hari. \n\nPENINJAU: Zhuang Fangyi \n19 Oktober, Tahun 145",
+      "file2": "Hmph. Perempuan gila itu! Aku benar-benar tumbuh besar bareng dia dan sering banget ngasih dia pukulan telak. Kami tak saling suka, tapi aku suka bikin dia babak belur dan dia juga berusaha balas. Dulu, si Mimi Sableng itu memang benar-benar sableng, tapi ya sudahlah. Aku tak takut dia. Pokoknya, dia lalu kabur ke Wuling, dapat lencana, bahkan dipromosikan jadi “Kapten Opsir”. Dikiranya itu memberinya hak untuk pasang muka jutek yang menyebalkan. Ya, terserah, deh. Dia mau melotot dengan muka kecut itu seharian juga boleh. Aku tahu apa yang ada di balik tampang opsir bodohnya itu. Perempuan gila. Itulah dia! \nKalau aku bertarung lagi dengannya, mungkin hasilnya bakalan seri. Tapi lihat saja nanti. Ketua Agung pasti akhirnya bakal menang. Memangnya kenapa kalau lengannya lebih besar? Jangan lupa! Aku selalu lebih cepat, lebih cerdas, dan lebih lincah. Aku bakal bikin dia babak belur. \nIya, dan soal penyerbuan kami ke Wuling, perempuan gila itu masalah besar. Geng sudah merencanakan semuanya, tapi kami selalu saja bertemu dia di depot, gudang, dan tempat persembunyian. Seolah-olah dia sudah menunggu kami. Kami sudah bertarung dengan baik, tapi Mimi punya anak buah yang beringas, dan banyak anggota kami dijebloskan ke penjara. Parahnya lagi, dia juga berusaha melemahkan bisnis Kampung Benteng kami dengan memberikan perlakuan sangat baik kepada anggota Geng yang tertangkap. Beberapa dari kami akhirnya malah memutuskan tinggal di Wuling karena makanan dan kehidupan di sana lebih baik. \nLihat saja! Aku bakal kalahkan perempuan gila itu habis-habisan. Sendirian. Paham? Tunggu saja, dasar perempuan gila! Ketua Agung akan datang ke kota dan mendudukkanmu di kursi bayi! \n— Tangtang, Ketua Agung Kampung Benteng Qingbo \n\nIya, Geng. Mi Fu-lah yang memasukkanku ke penjara. Aku sedang angkut hasil rampasan besar bareng Geng, tahu-tahu dia muncul di hadapan kami. Kakiku langsung lemas. Lalu dia sempat memukuliku sedikit, tapi tak terlalu parah. Pokoknya, dia tanya, Eh, mau tinggal di kota untuk sementara?” Begini ya, saat itu pandanganku sudah tak jelas dan kepalaku seperti dikelilingi bintang-bintang. Aku tak ingat aku mengangguk atau tidak, tapi dia benar-benar menyeretku ke kota. \nAwalnya kukira, wah, aku bakal langsung masuk neraka! Tapi kemudian aku dapat pekerjaan di kota, tempat tinggal, dan makanan enak. Lalu aku sadar, si Mimi Gila itu sebenarnya memberi kami pilihan. Mukanya memang galak dan cara bicaranya seperti sedang nagih utang, tapi mungkin Mimi sudah berusaha mati-matian untuk mencarikan pekerjaan yang layak bagi sebagian dari kami. \nOh iya, kau tahu kan, simpanan barang rampasan di kebun yang selama ini kami curi dari orang Wuling itu sebenarnya persediaan tambahan dari kota. Aku sempat bingung kenapa harus repot bawa alat-alat lama dan usang ke sana. Ternyata itu memang untuk Kampung Benteng. Orang-orang bilang si Mimi Gila itu sangat keras terhadap Geng Kampung Benteng, tapi sebenarnya dia selalu membantu dan peduli dengan caranya sendiri yang terselubung. \n— Anonim, saat ini menjadi warga Wuling (dulunya warga Kampung Benteng)",
+      "file3": "DOKUMEN: Studi Seni Bela Diri Qingbo (Cuplikan) \nAsal-usul Seni Bela Diri Qingbo adalah dari sebuah desa yang dikenal dengan nama Kampung Benteng Qingbo di wilayah Wuling. Ini adalah tradisi yang dipraktikkan oleh warga Kampung Benteng. Tapi, kumpulan teknik bertarung ini begitu esoteris sehingga tidak tercatat dalam Adendum Kodeks Bela Diri. \nUntuk memahami keunikan Seni Bela Diri Qingbo, kita perlu mempelajari sejarah Kampung Benteng Qingbo. Menjelang Perang Hina dan beberapa tahun setelahnya, sekelompok pengungsi Yan yang ingin menjauh dari konflik antarfaksi dan peperangan menempuh perjalanan ke wilayah yang kini dikenal sebagai Wuling modern. Celah Raksasa (CR) Wuling memang menjadi ancaman, tapi juga berfungsi untuk menghalangi serangan dan serbuan musuh. Para pengungsi itu pun memutuskan untuk menetap dan membangun sebuah desa yang kemudian berkembang menjadi Kampung Benteng Qingbo. Menurut beberapa sumber, para penghuni Kampung Benteng ini adalah penduduk asli Wuling. \nDari sudut pandang ini, Kampung Benteng Qingbo tampak seperti tempat perlindungan yang damai, tapi anggapan tersebut tidaklah benar. CR Wuling menghasilkan lingkungan yang sangat berbahaya dengan banyaknya Aggelos yang berkeliaran, binatang buas yang mengerikan, serta aktivitas retakan yang sering terjadi. Warga Kampung Benteng terus-menerus bertarung melawan “musuh” dari luar ini, dan pertarungan sengit tersebut secara bertahap melahirkan berbagai teknik bertarung khas Kampung Benteng Qingbo. Latihan teknik-teknik ini tidak hanya memperkuat tubuh, tapi juga meningkatkan kendali atas Originium Arts yang ada dalam diri mereka. Beberapa gerakan dan keterampilan juga menonjolkan ciri khas wilayah Qingbo. \nSalah satu contohnya adalah teknik terkenal “Langkah Gejolak Mata Air” yang membuat praktisi bela diri bisa berjalan santai di atas sungai yang mengalir sambil meninggalkan arus deras di belakangnya. Awalnya aku mengira ini adalah bentuk sihir yang memanipulasi air secara mental. Ternyata, teknik langkah ini adalah teknik Originium Arts yang memusatkan energi Arts ke ujung kaki, lalu menyalurkannya ke air dengan presisi luar biasa untuk menciptakan getaran resonansi. Contoh lainnya adalah “Lompat Lintas Daun Bambu” yang secara harfiah merupakan teknik lompatan dengan menggunakan daun bambu yang rapuh sebagai pijakan. Teknik ini memanfaatkan penerapan “denyut kecil yang tangguh” dari Originium Arts pada daun bambu yang tampak rapuh. Tingkat ketelitian dan kendali seperti ini, jika diasah dengan baik, bisa melepaskan serangan “Tinju Gelombang” yang mengerikan tapi nyaris tanpa harus melakukan gerakan. \nKapten Opsir Mi Fu dari Distrik Pengembangan Sains Wuling adalah salah satu praktisi Seni Bela Diri Qingbo. Dia menggambarkan “Tinju Gelombang” sebagai “sambaran petir”. Saat menyerang musuh, praktisi harus memperlakukan tubuhnya seperti “meriam tangan”, melesat seperti Lung yang terbang, dan menghantam seperti sambaran petir. Penulis sendiri sudah pernah menyaksikan Kapten Mi Fu beraksi dalam sebuah misi untuk memusnahkan Aggelos. Dia menyerang dengan kekuatan sedemikian rupa sehingga gerakannya setara dengan Lei Fa (Arts Guntur) Tianshi. \nSelain seni bela diri mereka yang kuat, warga Kampung Benteng juga mengembangkan tradisi kompetisi bela diri yang unik. Selama bertahun-tahun, semua praktisi bela diri di Kampung Benteng Qingbo saling menantang untuk menentukan siapa yang terbaik. Pada hari Aduan Arena, setiap penghuni Kampung Benteng, tanpa memandang usia ataupun jenis kelamin, akan berkumpul untuk menyaksikan pertarungan dan mendukung jagoan mereka. Kapten Mi Fu sendiri pernah menjadi juara tak terkalahkan di Kampung Benteng, sebelum akhirnya bergabung dengan Wuling. Sayangnya, arena Kampung Benteng sedang menjalani perbaikan besar akibat kerusakan baru-baru ini saat penulis menulis bagian ini. Karena tidak bisa berkunjung langsung ke lokasi, aku hanya bisa meminta Kapten Mi Fu untuk mengirimkan foto atau data gambar jika arenanya sudah selesai diperbaiki. \nKepada Kapten Mi Fu, aku pernah menyampaikan keinginanku untuk mewawancarai Grand Master Seni Bela Diri Qingbo, sang “Penjinak Sungai”. Tapi, Kapten mengatakan bahwa sang Grand Master telah menjadi pertapa dan bahkan dia sendiri tidak tahu ke mana perginya sang Grand Master. Kapten juga menunjukkan sebuah kartu pos dari Senior Master-nya yang menceritakan perjalanan mereka. Selama lebih dari satu jam, sang Grand Master sempat terpukau oleh dua anak yang sedang bertarung di sebuah gang di Sentrapolis. Sebelum pergi, pria tua itu berdesah sambil berkata, “Seumur hidup aku berlatih, tapi tetap saja aku iri kepada anak-anak ini. Mereka bertarung sesuka hati dan tetap berteman setelahnya. Pemandangan yang indah.” \nAkhirnya, aku mengajukan usulan kepada Kapten Mi Fu untuk menata dan menyusun informasi terkait Seni Bela Diri Qingbo, lalu memasukkannya ke dalam Lanjutan Adendum Kodeks Bela Diri. Kapten dengan senang hati menyetujui dan menyatakan bahwa dia ingin lebih banyak orang bisa melindungi Wuling dengan tinju mereka. Jika saat itu tiba, dia bisa meninggalkan tempat ini (Wuling) dan kembali berusaha mewujudkan keinginan hidupnya untuk bertarung kapan pun dia mau.",
+      "file4": "“Endmin! Tolong bantu aku mengalihkan perhatian Mi Fu selama sehari!” Sudah larut malam, Yan Ning tiba-tiba menemui Endministrator karena ada urusan yang sangat mendesak. \nKata Yan Ning, dia melihat sebuah surat tersegel yang akan dikirimkan kepada Mi Fu saat sedang membersihkan meja Zhuang Fangyi. Karena itu, dia mengambil inisiatif untuk mengirimkannya ke barak opsir. \nTapi, dia langsung sadar bahwa surat itu tidak seharusnya langsung dikirimkan. Dalam kata-kata Yan Ning sendiri, “Kalau Mi Fu membaca surat itu sebelum waktu yang dimaksudkan oleh Fangyi, bisa celaka jadinya! Tolong alihkan perhatian Mi Fu sementara aku mencegat pengiriman surat itu!” \nKarena itulah, Endministrator menggunakan alasan “audit langsung” dan menemani Mi Fu sepanjang giliran tugas hariannya. \nTugas Mi Fu bermula saat fajar, saat seorang pedagang keliling yang dikepung oleh Aggelos meminta bantuan. Kapten Mi kemudian menghabiskan seluruh paginya dengan melatih para opsir baru tanpa ampun. Sore harinya, dia harus menjadi penengah dalam perselisihan antara para pemilik toko di Jalan Lebar Fangxing, dilanjutkan dengan pertemuan tak terduga dengan “Ketua Agung” di hutan bambu .... Tinjunya tak pernah beristirahat, tapi tetap efektif seperti biasanya. \nGiliran tugasnya yang tanpa henti akhirnya selesai saat matahari terbenam dan malam pun tiba. Tapi, Endministrator tetap berada di sana karena Yan Ning belum berhasil mencegat atau mengambil surat itu. \nKembali ke barak opsir, Mi Fu menyalakan lampu meja dan mulai mengisi berkas prosedur serta catatan di bawah cahaya kuning yang hangat. Angin di luar terdengar seperti siulan lirih. Dia tiba-tiba meletakkan penanya dan keluar, tapi tidak melihat apa pun selain daun-daun yang tertiup angin. Hari itu, sang Kapten merasa agak gelisah. \nMi Fu kembali ke mejanya dan menutup berkas-berkas kasus. Dari sakunya, dia mengeluarkan sebuah surat dari Kantor Pilar Utama, kusut dan basah oleh keringat. Dia sudah menandatangani dan menerimanya saat pagi hari, tapi belum sempat membacanya. \n\nDOKUMEN: Surat yang Seharusnya Tidak Dikirimkan \nMi Fu: \nSaat kau membaca surat ini, kemungkinan besar aku sudah dalam perjalanan. Kalau aku tak kembali, kupasrahkan kepadamu untuk menangani seluruh urusan keamanan publik dan administrasi Kota Wuling. \nKau telah mendampingi Wuling dalam setiap langkahnya. Kau sudah ada sejak tempat ini masih berupa lokasi konstruksi sederhana di tengah alam liar hingga menjadi kota yang dihiasi bangunan indah dan jalanan yang tertata rapi. Kau bekerja keras bersama para pekerja bangunan, berjaga pada malam hari, dan menjauhkan masalah dengan tinjumu. Aku tahu ikatanmu dengan Wuling sangat dalam, dan karena itulah aku mempercayakan tanggung jawab besar ini kepadamu. \nKau tak pernah menghindar dari tugas atau tanggung jawab. Itulah kelebihanmu. Tapi, kau kurang sabaran dan cenderung keras kepala. Aku paham itu memang sudah sifatmu, tapi tugas menjaga sebuah kota bukanlah sekadar mengalahkan musuh dan menang dalam pertarungan. Tugas ini butuh kecermatan dan kesadaran. Pertimbangan dan tindakan yang didasari kehati-hatian bukanlah tanda kelemahan, melainkan langkah untuk menjamin keberhasilan dan memberiku ketenangan. \nAda juga masalah Kampung Benteng Qingbo. Ini selalu membuatmu tegang. Bertemu sesama warga Kampung Benteng seolah memicu emosimu, tapi aku tahu selama ini kau berusaha bertindak dengan belas kasih. Mungkin sebagian orang tak tahu kebenarannya, tapi aku bisa melihatnya dengan jelas. Kau tak perlu malu gara-gara itu. Kau berhak menjadi teman Tangtang tanpa harus menutup-nutupinya. \nOh ya, ingat tidak saat aku menyarankanmu berlatih kaligrafi? Awalnya aku berharap itu bisa meningkatkan kesabaranmu, tapi tulisanmu ternyata sama tegas dan kerasnya seperti tinjumu, dan punya keindahannya sendiri. Pelajaran itu sudah tak diperlukan lagi, tapi tentu saja, kalau kamu suka kaligrafi dan punya waktu luang, mintalah saran dari Tianshi Ge. Tak perlu membawakan Tangyou Baba untuknya. Kondisi kesehatannya sudah tak memungkinkan untuk menikmati makanan itu lagi. \nKau sering bilang bahwa kau sudah cukup makan manis seumur hidup dan tak ingin melihatnya lagi karena rasa manis sekarang membuatmu muak. Tap, menurutku tak seperti itu. Tak perlu menghindari apa yang kausukai. Tugas kerja memang berat dan melelahkan. Jarang ada kesempatan untuk menyenangkan diri sendiri, padahal kesenangan kecil sebaiknya tetap dijaga. Sesekali menikmati kesenangan seperti ini, kurasa tak ada ruginya. \nTerakhir, aku ingin menyampaikan beberapa hal pribadi kepadamu. Yang paling ingin kuberikan kepadamu bukanlah kota ini, melainkan dirimu sendiri. Dulu, saat pertama kali bertemu denganmu, kau adalah gadis muda yang tatapan matanya seakan dipenuhi api. Dalam sekejap, kau langsung menyerangku dengan tinju yang siap menghantam. Tapi, waktu berlalu. Kau kini memikul tanggung jawab yang lebih besar, tinjumu menjadi makin tanpa ampun, dan kerutan di wajahmu tak pernah mereda. Sudah lama aku tak melihat dirimu yang sebenarnya. \nJadi ingatlah, kalau suatu hari nanti kau merasa tak bahagia dan pekerjaanmu terasa menjadi beban, tinggalkan saja. Jangan merasa terikat kepada siapa pun, dan abaikan saja apa kata orang lain. Pergilah ke mana pun kau mau. Kembali ke Kampung Benteng atau menjelajahi Talos-II. Kau bahkan bisa memilih untuk tak melakukan apa-apa. Kau tidak berutang apa pun kepada Wuling, dan karena itu kau seharusnya bisa bebas. \nJaga dirimu baik-baik, ya. Tersenyum dan tertawalah kalau sudah saatnya. \n\nZhuang Fangyi"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Skill kombo <@ba.key>Fists of No Regrets</> meningkat: Durasi cooldown kini menjadi <@ba.vup>{cooldown}</> dtk. Efek <#ba.physicalvul>Physical Susceptibility</> yang diakibatkan oleh skill ini akan meningkat lagi sebesar <@ba.vup>+{extra_effect:0%}</> dan durasinya bertambah <@ba.vup>+{extra_time:0}</> dtk.",
+      "name": "Restless Watch"
+    },
+    "potential2": {
+      "description": "Strength <@ba.vup>+{Str:0}</>, Intensitas Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Kinesthesia of Harmony"
+    },
+    "potential3": {
+      "description": "Talent <@ba.key>Vigilant Fury</> meningkat: Durasi <#ba.shield>perisai</> <@ba.vup>+{talent_shield_duration}</> dtk. Cooldown aktivasi <#ba.shield>perisai</> menjadi <@ba.vup>{talent_shield_cd}</> dtk. Setiap kali perisai aktif, Mi Fu akan mendapatkan ATK <@ba.vup>+{potential_addattack_effect:0%}</> selama {potential_addattack_duration} dtk.",
+      "name": "Complete Warmup"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Pile of No Mercy</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Qi Thrice-Refined"
+    },
+    "potential5": {
+      "description": "Skill tarung meningkat: Pengganda DMG dari gerakan <@ba.key>Cloudtrapper</>, <@ba.key>Trail and Mangle</>, dan <@ba.key>World Splitter</> meningkat menjadi <@ba.vup>{atk_scale}</> kali nilai aslinya. Ultimate <@ba.key>Pile of No Mercy</> meningkat: Stagger yang Ditimbulkan <@ba.vup>+{poise2}</>.\n<@ba.info>Buff Pengganda DMG Skill Tarung bisa ditumpuk dengan talent Stern Crackdown.</>",
+      "name": "Pugilist of the Stockade"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Seteguk Saja",
+      "author": "Cenm0",
+      "description": "Ia tak mau membiarkan kebiasaannya mengganggu tugasnya, jadi ia mengganti minuman berkualitas dengan minuman fungsional."
+    },
+    "potential3": {
+      "name": "Istirahat Pribadi",
+      "author": "u介",
+      "description": "Perwujudan keadilan yang tegas pun perlu bersantai. Yang penting jangan beri tahu siapa-siapa."
+    },
+    "potential5": {
+      "name": "Bersulang untuk Kebahagiaan",
+      "author": "萃_SUIKA",
+      "description": "Ini malam yang singkat, jadi mari bersulang dan minum untuk kebahagiaan."
+    }
+  }
+}

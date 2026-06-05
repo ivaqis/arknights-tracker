@@ -5,29 +5,11 @@
     "decoDesc": "Armadura básica com estruturas simples. \nOferece às pessoas uma paz de espírito que excede em muito seus reais recursos defensivos.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "name": "Pederneira do Espadeiro",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros. \nEssencialmente, a pederneira acelera e esgota as reservas de energia do sistema de armadura do Espadeiro. Ela só brilha de verdade quando o usuário está à beira da morte.",
-    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "name": "EPI Básico",
     "description": "Produzido provisoriamente e reprovado no processo final de verificação e validação (V&V) de produtos da Endfield Industries. Esse equipamento oferece apenas defesa limitada.",
     "decoDesc": "Armadura básica com estruturas simples. \nOferece às pessoas uma paz de espírito que excede em muito seus reais recursos defensivos.",
     "setBonus": ""
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "name": "Lanterna do MSGR Blindado",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Uma lanterna elétrica portátil e resistente. \nA ponta afiada na outra ponta também pode ser usada para quebrar os ossos daqueles que se recusarem a falar.",
-    "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "name": "Giro do MSGR Itinerante T1",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Um fidget toy intrincado. \nResultados de uma pesquisa confiável revelaram que cerca de 20% dos mensageiros transformaram esse brinquedo para alívio de estresse em um rastreador auto-orientado.",
-    "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "name": "Manoplas Básicas",
@@ -35,23 +17,11 @@
     "decoDesc": "Armadura básica com estruturas simples. \nOferece às pessoas uma paz de espírito que excede em muito seus reais recursos defensivos.",
     "setBonus": ""
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "Luvas de Isolamento de Mordvolt",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Um equipamento essencial para operações em ambientes especiais. \nTodos os engenheiros que realizam reparos elétricos em locais de ruptura da Praga devem usar EPI especializado para evitar ferimentos causados por explosões anômalas de descarga elétrica.",
-    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "name": "Luvas Básicas",
     "description": "Produzido provisoriamente e reprovado no processo final de verificação e validação (V&V) de produtos da Endfield Industries. Esse equipamento oferece apenas defesa limitada.",
     "decoDesc": "Armadura básica com estruturas simples. \nOferece às pessoas uma paz de espírito que excede em muito seus reais recursos defensivos.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "name": "Radar de Yinglung Tipo 50 T2",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nQuando as otimizações foram finalmente concluídas, ele acrescentou algumas palavras ao lado dos projetos: \"Céus e terra podem se despedaçar, mas eu prevalecerei e emergirei como vencedor.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "name": "Armadura de Mineiro",
@@ -59,20 +29,8 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "name": "Conector LYNX",
-    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O equipamento preferido dos médicos. \nUm componente conector desenvolvido pela Rhodes Island para calibração de dados. Pode ser conectado a diferentes sistemas de suporte à saúde para realizar diversas formas de atendimento médico de emergência.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "name": "Macacão de Mineiro",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
-    "setBonus": ""
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "name": "Núcleo de Compressão de Emergência",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
@@ -101,20 +59,14 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "name": "Armadura Pesada do CAI",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção pesada. \nApós a fixação de placas de blindagem mais grossas e pesadas no traje, a armadura provavelmente acabaria sendo colocada em locais onde se tornaria alvo de armas potentes.",
-    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele restaura <@ba.heal>{hp_add}</> de PV. Tempo de recarga do gatilho do efeito: {cd} s."
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "name": "Armadura Pesada para Catástrofes",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEle é equipado com um sistema de microestimulação elétrica que reduz de forma eficaz a fadiga do usuário. Os membros da equipe estão extremamente satisfeitos com esse pequeno detalhe de design \"revigorante\".",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "name": "Comunicador de Emergência",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
+    "setBonus": ""
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "name": "Núcleo de Compressão de Emergência",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
@@ -124,12 +76,6 @@
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "name": "Luvas Hot Work",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento com excelente classificação de resistência ao fogo. \nO STUT e a Endfield Industries desenvolveram em conjunto os EPIs Hot Work para explorar ambientes de alta temperatura.",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "name": "Pulsos de Mineiro",
@@ -149,23 +95,17 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "name": "Manoplas Hot Work",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "name": "Armadura Pesada do CAI",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Shh, quieto. Você pode acordá-lo.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+    "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção pesada. \nApós a fixação de placas de blindagem mais grossas e pesadas no traje, a armadura provavelmente acabaria sendo colocada em locais onde se tornaria alvo de armas potentes.",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele restaura <@ba.heal>{hp_add}</> de PV. Tempo de recarga do gatilho do efeito: {cd} s."
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "name": "Placa Pesada do CAI",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção pesada. \nAumentar o desempenho de defesa também leva a grandes aumentos de peso, o que também é o maior problema com esse equipamento.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele restaura <@ba.heal>{hp_add}</> de PV. Tempo de recarga do gatilho do efeito: {cd} s."
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "name": "Manoplas Maré Alta",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nEsta é uma pergunta sobre a Maré de Praga: o colapso de barragens antigas começa de dentro?",
-    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "name": "Placa Metálica do CAI",
@@ -179,23 +119,11 @@
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção pesada. \nApenas duas estruturas de suporte complexas são usadas para ajudar a suportar 40% do peso do armamento. Design inteligente.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele restaura <@ba.heal>{hp_add}</> de PV. Tempo de recarga do gatilho do efeito: {cd} s."
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "Núcleo de Compressão de Mineiro T1",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
-    "setBonus": ""
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "name": "Armadura Leve do CAI",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção leve. \nFoi um subproduto criado durante um teste de diversas linhas de produção mistas envolvendo diversas instalações da Fábrica do CAI.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele ganha ATQ <@ba.vup>+ {atk_up}</> por <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "name": "Tubo de O2 Extra Frontiers T1",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pela Fábrica do CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "A amarração de oxigênio do padrão Frontiersmate garante pelo menos 4 horas de operações subaquáticas pesadas graças à sua tecnologia de ciclagem de oxigênio. A versão atualizada estende essa duração para 6 horas.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "name": "Placa Leve do CAI",
@@ -203,23 +131,11 @@
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção leve. \nA maior característica desse equipamento do CAI é permitir que placas de blindagem sejam fixadas de forma flexível ao traje.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele ganha ATQ <@ba.vup>+ {atk_up}</> por <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "name": "Macacão MI Security",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "name": "Placa Cerâmica do CAI",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção leve. \n\"Eu adoraria acreditar na nossa tecnologia, mas isso parece um pouco leve demais...\"",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele ganha ATQ <@ba.vup>+ {atk_up}</> por <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "name": "Luvas do Fluxo de Xiranita",
-    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Equipamento experimental proposto como equipamento padrão para os Patrulheiros de Wuling.\n\"Você está dizendo que essas luvas vão ser... O quê...? Eu posso tocar em máquinas de Xiranita para carregar essas belezuras? Isso não é alguma baboseira da Praga, certo...?\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado </> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. O número máximo de acúmulos de benefícios é {max_stack}. A duração de cada acúmulo é contada separadamente."
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "name": "Luvas Táticas do CAI",
@@ -227,23 +143,11 @@
     "decoDesc": "Equipamento estruturalmente simples e modular que oferece proteção leve. \nEmbora não ofereça a melhor defesa, pelo menos é fácil de colocar.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>. \nApós o usuário derrotar um inimigo, ele ganha ATQ <@ba.vup>+ {atk_up}</> por <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "name": "Luvas LYNX",
-    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma versão mais pesada do equipamento preferido dos médicos. \nA Rhodes Island ainda tem a tradição de fornecer seus EPIs com módulos de monitoramento de Oripatia.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "name": "Turbina de Mineiro",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "name": "Máscara dos Quebra-Ossos",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Equipamento com designs inspirados no Clã Quebra-Ossos. \nA máscara é um símbolo de fanatismo. Contudo, a fé sozinha não manterá ninguém vivo em um ambiente Contaminado. Não importa se está pendurada em um cinto ou usada no rosto. Esta máscara é apenas um pedaço de madeira frágil.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "name": "Roda Motriz de Mineiro",
@@ -251,29 +155,11 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "name": "Armadura Pesada LYNX",
-    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma versão mais pesada do equipamento preferido dos médicos. \nAs pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "name": "Núcleo de Compressão de Mineiro",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "Luvas de Mineiro T2",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
-    "setBonus": ""
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "Bateria de Isolamento de Mordvolt T1",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma bateria extremamente durável. \nEm Talos-II, trabalhos de reparo de emergência em condições de Contaminação são extremamente perigosos. Portanto, os trabalhadores devem passar por um treinamento rigoroso com base em padrões especiais antes de serem autorizados a usar baterias nesses ambientes.",
-    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "name": "Comunicador de Mineiro",
@@ -287,23 +173,11 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "name": "Armadura Frontiers T1",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "name": "Luvas de Mineiro T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "name": "Conector LYNX T2",
-    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O equipamento preferido dos médicos. \nUm componente conector desenvolvido pela Rhodes Island para calibração de dados. Pode ser conectado a diferentes sistemas de suporte à saúde para realizar diversas formas de atendimento médico de emergência.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
   },
   "item_equip_t2_suit_agi01_body_01": {
     "name": "Casaco do MSGR Itinerante",
@@ -317,12 +191,6 @@
     "decoDesc": "Um fidget toy intrincado. \nResultados de uma pesquisa confiável revelaram que cerca de 20% dos mensageiros transformaram esse brinquedo para alívio de estresse em um rastreador auto-orientado.",
     "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "name": "Chave de Isolamento de Mordvolt",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma chave com revestimento protetor especial. \nTambém pode ser usada como arma quando necessário. É totalmente capaz de esmagar e pulverizar membros dos Aggeloi.",
-    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "name": "Lanterna do MSGR Itinerante",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
@@ -334,12 +202,6 @@
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Um par de luvas que os mensageiros adoram usar. \nOs mensageiros também passavam seu tempo lutando na arena.",
     "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_body_04": {
-    "name": "Armadura Frontiers T3",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t2_suit_str01_body_01": {
     "name": "Casaco do MSGR Blindado",
@@ -353,17 +215,11 @@
     "decoDesc": "Um fidget toy intrincado. \nResultados de uma pesquisa confiável revelaram que cerca de 80% dos mensageiros modificariam esse brinquedo para transformá-lo em uma granada de dardos em miniatura.",
     "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "name": "Luvas de Fibra Frontiers",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O modelo de combate subaquático da série de armaduras Frontiersmate. Uma tecnologia especial de tecelagem de fibras confere a estas luvas a função de ciclagem de oxigênio.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "name": "Couraça LYNX",
-    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O equipamento preferido dos médicos. \nAs pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  "item_equip_t2_suit_str01_edc_02": {
+    "name": "Lanterna do MSGR Blindado",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Uma lanterna elétrica portátil e resistente. \nA ponta afiada na outra ponta também pode ser usada para quebrar os ossos daqueles que se recusarem a falar.",
+    "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
   },
   "item_equip_t2_suit_str01_hand_01": {
     "name": "Luvas do MSGR Blindado",
@@ -395,16 +251,16 @@
     "decoDesc": "Um par de luvas muito resistentes. \nAinda não desenvolvemos EPIs com verdadeira resistência à Praga. A maioria dos trajes EPIs e soluções de proteção em uso só consegue lidar com desastres secundários de eventos da Praga.",
     "setBonus": "Efeito do conjunto de 3 peças: Vontade do Usuário <@ba.vup>+ {will_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, Efeito de Tratamento <@ba.vup>+ {heal_up:0%}</>."
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "name": "Analisador Frontiers",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Um analisador de nível de ameaça da série de apoio Frontiersmate. O analisador utiliza tecnologia de reconhecimento visual para fornecer aos usuários uma análise básica de ameaças representadas por criaturas desconhecidas.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "name": "Traje de Isolamento de Mordvolt",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Um equipamento essencial para operações em ambientes especiais. \nEventos graves da Praga frequentemente causam falhas elétricas e de circuitos anormais. Os profissionais atribuídos a trabalhos de reparo devem estar atentos a elas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "name": "Chave de Isolamento de Mordvolt",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma chave com revestimento protetor especial. \nTambém pode ser usada como arma quando necessário. É totalmente capaz de esmagar e pulverizar membros dos Aggeloi.",
     "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
   "item_equip_t2_suit_wisd01_edc_02": {
@@ -419,6 +275,12 @@
     "decoDesc": "Uma bateria extremamente durável. \nEm Talos-II, trabalhos de reparo de emergência em condições de Contaminação são extremamente perigosos. Portanto, os trabalhadores devem passar por um treinamento rigoroso com base em padrões especiais antes de serem autorizados a usar baterias nesses ambientes.",
     "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "name": "Luvas de Isolamento de Mordvolt",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Um equipamento essencial para operações em ambientes especiais. \nTodos os engenheiros que realizam reparos elétricos em locais de ruptura da Praga devem usar EPI especializado para evitar ferimentos causados por explosões anômalas de descarga elétrica.",
+    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
+  },
   "item_equip_t3_parts_tundra01_body_01": {
     "name": "Armadura de Mineiro T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
@@ -431,26 +293,20 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "name": "Boneco dos Quebra-Ossos T1",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Uma bugiganga sem nenhuma utilidade prática. O designer, no entanto, afirma que ele pode induzir excitação e euforia.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "name": "Turbina de Mineiro T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "name": "Macacão MI Security T2",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "name": "Roda Motriz de Mineiro T1",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
+    "setBonus": ""
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "name": "Núcleo de Compressão de Mineiro T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
@@ -461,11 +317,11 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "name": "Relógio Æthertech",
-    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção experimental leve. \n\"Alguns usuários suspeitam que nossos produtos exercem efeitos hemomutagênicos. Essas alegações não passam de acusações infundadas.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "name": "Luvas de Mineiro T2",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
+    "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "name": "Punhos de Mineiro T1",
@@ -473,41 +329,11 @@
     "decoDesc": "Equipamento de proteção para operações de mineração. \nAs Normas de Segurança e Proteção de Vale IV determinam que os requisitos mínimos de segurança no trabalho devem englobar uma proteção em 2 camadas: (i) uma camada macia e amortecedora e (ii) uma proteção rígida.",
     "setBonus": ""
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "name": "Casaco do MSGR Blindado T1",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Um casaco que qualquer mensageiro adoraria usar. \nScramblers são meios de transporte baratos e eficazes em Talos-II. Os mensageiros costumavam equipar essas motos com diferentes mods e módulos.",
-    "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "Chave de Isolamento de Mordvolt T2",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma chave com revestimento protetor especial. \nTambém pode ser usada como arma quando necessário. É totalmente capaz de esmagar e pulverizar membros dos Aggeloi.",
-    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "name": "Comunicador Frontiers T1",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Um dispositivo de comunicação robusto. Para garantir a qualidade do sinal em escavações subterrâneas complexas, o Comunicador Frontiers foi projetado com apenas o recurso de envio de sinal.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "name": "Casaco do MSGR Itinerante T1",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Um casaco que qualquer mensageiro adoraria usar. \nMensageiros que trabalham na região de Vale IV e arredores costumam pintar seus veículos com padrões que lembram árvores. Eles esperam que a visão dessas plantas majestosas que outrora protegeram essa terra possa trazer força às pessoas.",
     "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "name": "Armadura Pesada de Aburrey T1",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Uma nova armadura de proteção modificada para o ambiente de trabalho da Pedreira de Aburrey. \nUm modelo de combate da Armadura Pesada de Aburrey. Comparado ao modelo padrão, esse traje possui portas de conexão de armas adicionais, altamente compatíveis com lança-chamas, lançadores de granadas e outros dispositivos.",
-    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "name": "Calibrador Pulser Labs",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento com design inovador. \nEle pesquisa o infinito oceano de dados em busca de \"valores atípicos\" bem escondidos e depois os apaga.",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "name": "Lanterna do MSGR Itinerante T1",
@@ -521,22 +347,28 @@
     "decoDesc": "Uma lanterna elétrica portátil e resistente. \nA ponta afiada na outra extremidade também pode ser usada para arrombar caixotes ou recipientes velhos.",
     "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "name": "Giro do MSGR Itinerante T1",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Um fidget toy intrincado. \nResultados de uma pesquisa confiável revelaram que cerca de 20% dos mensageiros transformaram esse brinquedo para alívio de estresse em um rastreador auto-orientado.",
+    "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "name": "Punhos do MSGR Itinerante T1",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Um par de luvas que os mensageiros adoram usar. \nOs mensageiros também passavam seu tempo lutando na arena.",
     "setBonus": "Efeito do conjunto de 3 peças: Agilidade do Usuário <@ba.vup>+ {agi_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "name": "Armadura de Xiranita Eterna",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "O legado de um Tianshi \"louco\". \nA maioria teria dificuldade em estabelecer uma conexão entre o trabalho na cozinha e Xiranita. No entanto, um morador de Wuling realmente se inspira em design ao jantar em um restaurante.",
-    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_atk01_body_01": {
     "name": "Armadura Pesada de Aburrey",
     "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Uma nova armadura protetora modificada para o ambiente de trabalho da Pedreira de Aburrey. \nA escavação de relíquias de Precursor pode ser um processo bastante complexo, repleto de mudanças inesperadas. O equipamento utilizado durante a escavação deve oferecer proteção, destreza e recursos ofensivos suficientes.",
+    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "name": "Armadura Pesada de Aburrey T1",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma nova armadura de proteção modificada para o ambiente de trabalho da Pedreira de Aburrey. \nUm modelo de combate da Armadura Pesada de Aburrey. Comparado ao modelo padrão, esse traje possui portas de conexão de armas adicionais, altamente compatíveis com lança-chamas, lançadores de granadas e outros dispositivos.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
   },
   "item_equip_t3_suit_atk01_body_03": {
@@ -551,29 +383,11 @@
     "decoDesc": "Uma nova armadura de proteção modificada para o ambiente de trabalho da Pedreira de Aburrey. \n\"Pare! PARE! Alguém! Chame a Cabala da Tranquilidade!\"",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "name": "Armadura Pesada de Yinglung Tipo 50 T1",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nPoucas pessoas sabem que o projetista da armadura é, na verdade, um reservista que quase passou no teste de seleção da FTEY. Quase.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "name": "Armadura MI Security T1",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento da série MI Security. \nEle entrou em serviço pela primeira vez com exércitos humanos lutando na Frente Aggeloide.",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "name": "Lâmpada UV de Aburrey",
     "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Novos equipamentos de proteção modificados para se adequarem ao ambiente de trabalho da Pedreira de Aburrey. \nOs engenheiros trabalharam a noite toda para implementar modificações quando o trabalho na Pedreira de Aburrey, de repente, passou a envolver escavações. Essa armadura agora oferece proteção para os olhos e ouvidos.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "name": "Luvas de Quebra-Ossos",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Equipamento com design inspirado no Clã Quebra-Ossos. \nNem todo habitante das terras selvagens se torna um Invasor de Terras, mas ninguém jamais conseguiria escapar dos grilhões da natureza selvagem.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "name": "Chip Auditivo de Aburrey",
@@ -587,29 +401,11 @@
     "decoDesc": "Um novo equipamento de proteção modificado para o ambiente de trabalho da Pedreira de Aburrey. \nAo explorar o desconhecido, o isolamento acústico adequado e a proteção auditiva são extremamente importantes. Esse chip pode ajudar o usuário a determinar efetivamente se está sofrendo de alucinações auditivas.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "name": "Filtro para Catástrofes",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEsses filtros foram desenvolvidos para funcionar com a Máscara para Catástrofes e podem ser facilmente conectados ou desconectados.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "name": "Lanterna de Aburrey",
     "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Novo equipamento de proteção modificado para se adequar ao ambiente de trabalho da Pedreira de Aburrey. \n\"Estava incrustado na rocha, e pensei que tinha acabado de retirar algumas barras de reforço do concreto. Mas... mas acho que o ouvi falando comigo...\"",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "name": "Armadura Pesada para Catástrofes T1",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEle é equipado com um sistema de microestimulação elétrica que reduz de forma eficaz a fadiga do usuário. Os membros da equipe estão extremamente satisfeitos com esse pequeno detalhe de design \"revigorante\".",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "name": "Cartucho de Gaze para Catástrofes T1",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Parte de um traje exoesquelético utilizado por produtores de cristais no Parque Científico de Originium. \nEmbora Oripatia possa ser controlada e tratada de forma eficaz em Talos-II, os usuários ainda são aconselhados a usar proteção respiratória básica.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "name": "Chip do Sensor de Aburrey",
@@ -617,29 +413,23 @@
     "decoDesc": "Novos equipamentos de proteção modificados para se adequarem ao ambiente de trabalho da Pedreira de Aburrey. \nDe acordo com os engenheiros, futuras iterações dessa armadura se concentrarão em automação completa. O objetivo é evacuar o usuário para um local seguro, mesmo que ele esteja incapacitado.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "name": "Cartucho de Gaze para Catástrofes",
-    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Parte de um traje exoesquelético utilizado por produtores de cristais no Parque Científico de Originium. \nEmbora Oripatia possa ser controlada e tratada de forma eficaz em Talos-II, os usuários ainda são aconselhados a usar proteção respiratória básica.",
-    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "name": "Chip do Sensor de Aburrey T1",
     "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Novos equipamentos de proteção modificados para se adequarem ao ambiente de trabalho da Pedreira de Aburrey. \nDe acordo com os engenheiros, futuras iterações dessa armadura se concentrarão em automação completa. O objetivo é evacuar o usuário para um local seguro, mesmo que ele esteja incapacitado.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "name": "Luvas de Fibra Frontiers T1",
-    "description": "Projetado pela Base de Apoio de Northmarch e montado pela Fábrica do CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "O modelo de combate subaquático da série de armaduras Frontiersmate. Uma tecnologia especial de tecelagem de fibras confere a estas luvas a função de ciclagem de oxigênio.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "name": "Manoplas de Aburrey",
     "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamentos de proteção inovadores, modificados para o ambiente de trabalho da Pedreira de Aburrey. \nProteção para as mãos integrada ao traje de armadura protetora. As pontas dos dedos contam com quase 100 microssensores de 6 tipos diferentes, ajudando quem o utiliza a identificar com precisão o que foi tocado, mesmo após perder a visão.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade do Usuário <@ba.vup>+ {dmg_up:0%}</>. \nQuando o usuário lança uma habilidade de batalha, um combo de habilidades ou uma habilidade suprema, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. O bônus de cada um dos três tipos de habilidade é único e não se acumula em si mesmo."
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "name": "Casaco do MSGR Blindado T1",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Um casaco que qualquer mensageiro adoraria usar. \nScramblers são meios de transporte baratos e eficazes em Talos-II. Os mensageiros costumavam equipar essas motos com diferentes mods e módulos.",
+    "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
   },
   "item_equip_t3_suit_str01_edc_01": {
     "name": "Giro do MSGR Blindado T1",
@@ -659,17 +449,41 @@
     "decoDesc": "Um par de luvas que qualquer mensageiro adoraria usar. \nA maioria dos mensageiros instala sistemas de ejeção de salvamento fáceis de usar em seus veículos para lidar com rupturas inesperadas da Praga.",
     "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "name": "Núcleo de Energia de Xiranita Eterna",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "O legado de um Tianshi \"louco\". \n...Certa vez, ele andou pelas ruas com uma grande tigela de tofu cozido em caldo de bambu e afirmou que inventou a próxima geração de tecnologia de refrigeração baseada em Xiranita.",
-    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "name": "Luvas do MSGR Blindado T2",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Um par de luvas que qualquer mensageiro adoraria usar. \nA maioria dos mensageiros instala sistemas de ejeção de salvamento fáceis de usar em seus veículos para lidar com rupturas inesperadas da Praga.",
     "setBonus": "Efeito do conjunto de 3 peças: Força do Usuário <@ba.vup>+ {str_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, o usuário ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO."
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "name": "Armadura Pesada para Catástrofes",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEle é equipado com um sistema de microestimulação elétrica que reduz de forma eficaz a fadiga do usuário. Os membros da equipe estão extremamente satisfeitos com esse pequeno detalhe de design \"revigorante\".",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "name": "Armadura Pesada para Catástrofes T1",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEle é equipado com um sistema de microestimulação elétrica que reduz de forma eficaz a fadiga do usuário. Os membros da equipe estão extremamente satisfeitos com esse pequeno detalhe de design \"revigorante\".",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "name": "Cartucho de Gaze para Catástrofes",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Parte de um traje exoesquelético utilizado por produtores de cristais no Parque Científico de Originium. \nEmbora Oripatia possa ser controlada e tratada de forma eficaz em Talos-II, os usuários ainda são aconselhados a usar proteção respiratória básica.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "name": "Cartucho de Gaze para Catástrofes T1",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Parte de um traje exoesquelético utilizado por produtores de cristais no Parque Científico de Originium. \nEmbora Oripatia possa ser controlada e tratada de forma eficaz em Talos-II, os usuários ainda são aconselhados a usar proteção respiratória básica.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "name": "Filtro para Catástrofes",
+    "description": "Projetado pela Triglava Armoury e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Parte de um traje exoesquelético utilizado por cultivadores de cristais no Parque Científico de Originium. \nEsses filtros foram desenvolvidos para funcionar com a Máscara para Catástrofes e podem ser facilmente conectados ou desconectados.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência de Ganho Supremo do Usuário <@ba.vup>+{ultimate_gain_up:0%}</>.\nO usuário conjura uma habilidade de batalha, a ação <#ba.return>retorna</> <@ba.vup>{atb_recover:0}</> de PH. Esse efeito só é acionado 1 vez por batalha."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Luvas para Catástrofes",
@@ -695,12 +509,6 @@
     "decoDesc": "Uma chave com design elegante e contornos suaves. \n\"Muito útil para bater em cabeças!\" — Um trabalhador que preferiu permanecer anônimo",
     "setBonus": "Efeito do conjunto de 3 peças: Vontade do Usuário <@ba.vup>+ {will_up}</>. \nQuando PV do usuário está abaixo de {hp_ratio:0%}, Efeito de Tratamento <@ba.vup>+ {heal_up:0%}</>."
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "name": "Tubo de O2 Hanging River",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nIsso é uma pitada de desespero em relação à Maré de Praga: as correntes turvas do desconhecido levaram embora toda a terra.",
-    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "name": "Luvas Resistentes de Mordvolt T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
@@ -719,11 +527,17 @@
     "decoDesc": "Um equipamento essencial para operações em ambientes especiais. \nEventos graves da Praga frequentemente causam falhas elétricas e de circuitos anormais. Os profissionais atribuídos a trabalhos de reparo devem estar atentos a elas.",
     "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "name": "Luvas Æthertech",
-    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção experimental leve. \n\"Sempre use proteção extra ao utilizar nossos produtos. Se você tiver alguma alucinação auditiva ou visual, REMOVA nossos produtos IMEDIATAMENTE e coma alguma coisa.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "name": "Chave de Isolamento de Mordvolt T2",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma chave com revestimento protetor especial. \nTambém pode ser usada como arma quando necessário. É totalmente capaz de esmagar e pulverizar membros dos Aggeloi.",
+    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "name": "Bateria de Isolamento de Mordvolt T1",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma bateria extremamente durável. \nEm Talos-II, trabalhos de reparo de emergência em condições de Contaminação são extremamente perigosos. Portanto, os trabalhadores devem passar por um treinamento rigoroso com base em padrões especiais antes de serem autorizados a usar baterias nesses ambientes.",
+    "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "name": "Luvas de Isolamento de Mordvolt T1",
@@ -736,12 +550,6 @@
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "name": "Núcleo de Invasão Pulser Labs",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamentos com designs inovadores. \nA ajuda da Cabala da Tranquilidade concedeu ao Núcleo de Invasão Pulser Labs a capacidade de romper a maioria dos firewalls de terminais.",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "name": "Armadura do Redentor",
@@ -767,23 +575,11 @@
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "name": "Luvas de Xiranita Eterna T1",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Herança de um Tianshi \"louco\". \n...Dias se passaram e o enlouquecido Tianshi começou a rejeitar qualquer alimento que \"falhasse em trazer inspiração\". Após ser reduzido a pele e ossos, ele logo desapareceu nas terras selvagens em busca da \"saborosa Xiranita\".",
-    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "name": "Selo do Redentor T1",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "name": "Boneco dos Quebra-Ossos",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Uma bugiganga sem nenhuma utilidade prática. O designer, no entanto, afirma que ele pode induzir excitação e euforia.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "name": "Luvas do Redentor",
@@ -791,23 +587,11 @@
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "name": "Armadura Pesada do Espadeiro",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros. \nOs Tianshi adotaram uma \"capacidade do tamanho de um desfiladeiro\" como conceito de design e literalmente alcançaram a \"absorção e neutralização\" de ataques baseados em energia.",
-    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "name": "Mãos do Redentor",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "name": "Sinalizador NAV do Espadeiro",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Um dos produtos comercializados pelo Bureau dos Espadeiros em seus primórdios. \nA maioria dos ambientes contaminados pela Praga são extremamente perigosos. Um único passo em falso pode levar a um caminho errado sem volta — exatamente como aconteceu com Wuling há tantos anos.",
-    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
   },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "Armadura Frontiers",
@@ -815,14 +599,20 @@
     "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "name": "Radar de Yinglung Tipo 50",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nQuando as otimizações foram finalmente concluídas, ele acrescentou algumas palavras ao lado dos projetos: \"Céus e terra podem se despedaçar, mas eu prevalecerei e emergirei como vencedor.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
+  "item_equip_t4_suit_atb01_body_02": {
+    "name": "Armadura Frontiers T1",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_atb01_body_03": {
     "name": "Armadura Frontiers T2",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "name": "Armadura Frontiers T3",
     "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "O modelo de estrutura pesada da série Frontiersmate Armor. Esse equipamento também é equipado com uma exospina artificial para ajudar a suportar canhões pesados montados no ombro.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
@@ -839,9 +629,33 @@
     "decoDesc": "Um dispositivo de comunicação robusto. Para garantir a qualidade do sinal em escavações subterrâneas complexas, o Comunicador Frontiers foi projetado com apenas o recurso de envio de sinal.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "name": "Comunicador Frontiers T1",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Um dispositivo de comunicação robusto. Para garantir a qualidade do sinal em escavações subterrâneas complexas, o Comunicador Frontiers foi projetado com apenas o recurso de envio de sinal.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "name": "Analisador Frontiers",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Um analisador de nível de ameaça da série de apoio Frontiersmate. O analisador utiliza tecnologia de reconhecimento visual para fornecer aos usuários uma análise básica de ameaças representadas por criaturas desconhecidas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "name": "Tubo de O2 Extra Frontiers",
     "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O tubo de oxigênio do padrão Frontiersmate garante pelo menos 4 horas de operações subaquáticas pesadas graças à sua tecnologia de ciclagem de oxigênio.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "name": "Tubo de O2 Frontiers",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O tubo de oxigênio do padrão Frontiersmate garante pelo menos 4 horas de operações subaquáticas pesadas graças à sua tecnologia de ciclagem de oxigênio.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "name": "Tubo de O2 Extra Frontiers T1",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pela Fábrica do CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "A amarração de oxigênio do padrão Frontiersmate garante pelo menos 4 horas de operações subaquáticas pesadas graças à sua tecnologia de ciclagem de oxigênio. A versão atualizada estende essa duração para 6 horas.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
@@ -851,14 +665,26 @@
     "decoDesc": "O objetivo do equipamento Frontiersmate é dar a um esquadrão de 3 a 5 combatentes a capacidade de atacar e eliminar diretamente hostes Aggeloides menores.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "name": "Tubo de O2 Frontiers",
+  "item_equip_t4_suit_atb01_hand_02": {
+    "name": "Luvas de Fibra Frontiers",
     "description": "Projetado pela Base de Apoio de Northmarch e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "A amarração de oxigênio do padrão Frontiersmate garante pelo menos 4 horas de operações subaquáticas pesadas graças à sua tecnologia de ciclagem de oxigênio.",
+    "decoDesc": "O modelo de combate subaquático da série de armaduras Frontiersmate. Uma tecnologia especial de tecelagem de fibras confere a estas luvas a função de ciclagem de oxigênio.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "name": "Luvas de Fibra Frontiers T1",
+    "description": "Projetado pela Base de Apoio de Northmarch e montado pela Fábrica do CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O modelo de combate subaquático da série de armaduras Frontiersmate. Uma tecnologia especial de tecelagem de fibras confere a estas luvas a função de ciclagem de oxigênio.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>. \nApós a habilidade do usuário recuperar PH, a equipe ganha DNO <@ba.vup>+ {dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Armadura Pesada de Yinglung Tipo 50",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nPoucas pessoas sabem que o projetista da armadura é, na verdade, um reservista que quase passou no teste de seleção da FTEY. Quase.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "name": "Armadura Pesada de Yinglung Tipo 50 T1",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nPoucas pessoas sabem que o projetista da armadura é, na verdade, um reservista que quase passou no teste de seleção da FTEY. Quase.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
@@ -875,11 +701,11 @@
     "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nPoucas pessoas sabem que o projetista da armadura é, na verdade, um reservista que quase passou no teste de seleção da FTEY. Quase.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
   },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "name": "Adaga do Espadeiro",
-    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros.\nUma lâmina tática extremamente afiada, e um dos primeiros exemplares da técnica de produção de armas da HS.Swords. Sem dúvida, este equipamento estabeleceu a base para a subsequente série Yinglung.",
-    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  "item_equip_t4_suit_atk02_edc_01": {
+    "name": "Radar de Yinglung Tipo 50",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nQuando as otimizações foram finalmente concluídas, ele acrescentou algumas palavras ao lado dos projetos: \"Céus e terra podem se despedaçar, mas eu prevalecerei e emergirei como vencedor.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Radar de Yinglung Tipo 50 T1",
@@ -887,23 +713,17 @@
     "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nQuando as otimizações foram finalmente concluídas, ele acrescentou algumas palavras ao lado dos projetos: \"Céus e terra podem se despedaçar, mas eu prevalecerei e emergirei como vencedor.\"",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
   },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "name": "EPI para as Mãos MI Security T1",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento da série MI Security. \nPossui Unidades de Arte miniaturizadas para controle de distúrbios e excelente condutividade energética.",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  "item_equip_t4_suit_atk02_edc_03": {
+    "name": "Radar de Yinglung Tipo 50 T2",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \nQuando as otimizações foram finalmente concluídas, ele acrescentou algumas palavras ao lado dos projetos: \"Céus e terra podem se despedaçar, mas eu prevalecerei e emergirei como vencedor.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Faca de Yinglung Tipo 50",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \n\"Quando vi rostos conhecidos, com quem treinei, desempenhando papéis cruciais e protegendo locais importantes, senti-me... como um perdedor derrotado fugindo de um campo de batalha terrível. Senti-me como um desertor.\"",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "name": "Tonel de Qingbo",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Equipamento muito econômico, criado com base em antigos pergaminhos e livros encontrados na Paliçada de Qingbo.\nUm pequeno tonel com um núcleo de filtro fácil de limpar. A página sobre purificadores de água foi arrancada dos livros antigos por razões desconhecidas. É por isso que o componente do tonel que faltava foi substituído por um núcleo de filtro moderno.",
-    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>.\nQuando o usuário conjura um combo de habilidades, ganha DNO Habilidade Causado <@ba.vup>+{spell_up:0%}</> (para cada habilidade) por {duration} s. Esse efeito pode atingir {max_stack} acúmulos. A duração de cada acúmulo é contada separadamente."
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "name": "Faca de Yinglung Tipo 50 T1",
@@ -922,18 +742,6 @@
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Uma versão civil do equipamento da Força-Tarefa Especial de Yinglung. A ausência de um componente de energia crucial melhorou sua compatibilidade com usuários comuns. \n\"Não invejo o poder concedido, pois estou longe de merecê-lo. Na verdade, eu deveria ser a espinha dorsal que lhes oferece apoio.\"",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando qualquer operador da equipe lança uma habilidade de batalha, o usuário ganha 1 acúmulo de <@ba.key>Lâmina de Yinglung</> que concede DNO <@ba.vup>+ {dmg_up:0%}</> ao próximo combo de habilidades do usuário. A <@ba.key>Lâmina de Yinglung</> pode se acumular {max_stack:0} vez(es)."
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "name": "Boneco dos Quebra-Ossos T2",
-    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
-    "decoDesc": "Um objeto artesanal com pouca utilidade prática. O criador, no entanto, afirma que ele pode realmente estimular a empolgação de quem o usa.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "name": "Macacão MI Security T1",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_attri01_body_01": {
     "name": "Armadura Pesada dos Quebra-Ossos",
@@ -965,8 +773,20 @@
     "decoDesc": "Equipamento com design inspirado no Clã Quebra-Ossos. \nEssa armadura pesada não só fornece proteção decente, como os andarilhos das terras selvagens também a consideram um símbolo de um estilo de vida brutal e implacável.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "name": "Máscara dos Quebra-Ossos T2",
+  "item_equip_t4_suit_attri01_edc_02": {
+    "name": "Boneco dos Quebra-Ossos T2",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Um objeto artesanal com pouca utilidade prática. O criador, no entanto, afirma que ele pode realmente estimular a empolgação de quem o usa.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "name": "Boneco dos Quebra-Ossos",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Uma bugiganga sem nenhuma utilidade prática. O designer, no entanto, afirma que ele pode induzir excitação e euforia.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "name": "Máscara dos Quebra-Ossos",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Equipamento com designs inspirados no Clã Quebra-Ossos. \nA máscara é um símbolo de fanatismo. Contudo, a fé sozinha não manterá ninguém vivo em um ambiente Contaminado. Não importa se está pendurada em um cinto ou usada no rosto. Esta máscara é apenas um pedaço de madeira frágil.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
@@ -977,21 +797,33 @@
     "decoDesc": "Equipamento com designs inspirados no Clã Quebra-Ossos. \nA máscara é um símbolo de fanatismo. Contudo, a fé sozinha não manterá ninguém vivo em um ambiente Contaminado. Não importa se está pendurada em um cinto ou usada no rosto. Esta máscara é apenas um pedaço de madeira frágil.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "name": "Boneco dos Quebra-Ossos T1",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Uma bugiganga sem nenhuma utilidade prática. O designer, no entanto, afirma que ele pode induzir excitação e euforia.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "name": "Máscara dos Quebra-Ossos T2",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Equipamento com designs inspirados no Clã Quebra-Ossos. \nA máscara é um símbolo de fanatismo. Contudo, a fé sozinha não manterá ninguém vivo em um ambiente Contaminado. Não importa se está pendurada em um cinto ou usada no rosto. Esta máscara é apenas um pedaço de madeira frágil.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
+  },
   "item_equip_t4_suit_attri01_hand_01": {
     "name": "Pulseira dos Quebra-Ossos",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Equipamento com design inspirado no Clã Quebra-Ossos. \nNem todo habitante das terras selvagens se torna um Invasor de Terras, mas ninguém jamais conseguiria escapar dos grilhões da natureza selvagem.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "name": "Armadura Pesada do Espadeiro T1",
-    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros.\nOs Tianshi adotaram a abordagem de design \"Mente Vazia e Vale Aberto\" para dotar esta Armadura Pesada do Espadeiro com recursos reais de \"negação de ataques de energia\".",
-    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "name": "Pulseira dos Quebra-Ossos T1",
     "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pelo CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Equipamento com design inspirado no Clã Quebra-Ossos. \nNem todo habitante das terras selvagens se torna um Invasor de Terras, mas ninguém jamais conseguiria escapar dos grilhões da natureza selvagem.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "name": "Luvas de Quebra-Ossos",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
     "decoDesc": "Equipamento com design inspirado no Clã Quebra-Ossos. \nNem todo habitante das terras selvagens se torna um Invasor de Terras, mas ninguém jamais conseguiria escapar dos grilhões da natureza selvagem.",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nQuando o usuário conjura um combo de habilidades, ele ganha 1 acúmulo de <@ba.key>Golpe Quebrador de Ossos</> que concede o DNO Causado pela próxima habilidade de batalha <@ba.vup>+ {dmg_up:0%}</>. O <@ba.key>Golpe Quebrador de Ossos</> pode se acumular {max_stack:0} vezes."
   },
@@ -1001,16 +833,22 @@
     "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nEssa é uma lembrança sobre a Maré de Praga: as ondas insensíveis sempre rejeitaram a noção de vida.",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "name": "Luvas Leves Æthertech",
-    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento de proteção experimental leve. \n\"Sempre use proteção extra ao utilizar nossos produtos. Se você tiver alguma alucinação auditiva ou visual, REMOVA nossos produtos IMEDIATAMENTE e coma alguma coisa.\"",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  "item_equip_t4_suit_burst01_edc_01": {
+    "name": "Tubo de O2 Hanging River",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nIsso é uma pitada de desespero em relação à Maré de Praga: as correntes turvas do desconhecido levaram embora toda a terra.",
+    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "name": "Maçarico de Corte Turvo",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nIsto é um toque de medo em relação à Maré de Praga: quando a calamidade iminente se fará visível?",
+    "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "name": "Manoplas Maré Alta",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Equipamento projetado pelo Bureau dos Espadeiros para aqueles que trabalham perto da Maré de Praga. \nEsta é uma pergunta sobre a Maré de Praga: o colapso de barragens antigas começa de dentro?",
     "setBonus": "Efeito do conjunto de 3 peças: DNO Habilidade Causado do usuário <@ba.vup>+ {skill_dmg_up:0%}</>.\nApós o usuário aplicar <@ba.key>{stack_cond}</> ou mais acúmulos de <#ba.spellinflict>Inflição de Artes</> ao inimigo, o usuário ganha <@ba.key>DNO Artes Causado</> <@ba.vup>+ {spell_dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1037,11 +875,17 @@
     "decoDesc": "Equipamento muito econômico, criado com base em antigos pergaminhos e livros encontrados na Paliçada de Qingbo.\nUma pequena lâmina de corte feita com a afiação de bambu. Parece bem simples, mas este cortador consegue remover os brotos de uma ninfa do bosque sem machucar o bichinho.",
     "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>.\nQuando o usuário conjura um combo de habilidades, ganha DNO Habilidade Causado <@ba.vup>+{spell_up:0%}</> (para cada habilidade) por {duration} s. Esse efeito pode atingir {max_stack} acúmulos. A duração de cada acúmulo é contada separadamente."
   },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "name": "Luvas MI Security T1",
-    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento da série MI Security. \nEssas luvas também podem ser usadas como arma. A validação do produto inclui uma avaliação da \"eficácia em esmagar apêndices dos Aggeloides\".",
-    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "name": "Tonel de Qingbo",
+    "description": "Projetado pela Endfield com base em técnicas artesanais das terras selvagens e montado pela Fábrica do CAI, esse equipamento aprimora as habilidades de combate do portador.",
+    "decoDesc": "Equipamento muito econômico, criado com base em antigos pergaminhos e livros encontrados na Paliçada de Qingbo.\nUm pequeno tonel com um núcleo de filtro fácil de limpar. A página sobre purificadores de água foi arrancada dos livros antigos por razões desconhecidas. É por isso que o componente do tonel que faltava foi substituído por um núcleo de filtro moderno.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>.\nQuando o usuário conjura um combo de habilidades, ganha DNO Habilidade Causado <@ba.vup>+{spell_up:0%}</> (para cada habilidade) por {duration} s. Esse efeito pode atingir {max_stack} acúmulos. A duração de cada acúmulo é contada separadamente."
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "name": "Kit de Posicionamento de Qingbo T1",
+    "description": "Projetado pela Endfield com base em técnicas artesanais de construção em terras selvagens e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Equipamento muito econômico, criado com base em antigos pergaminhos e livros encontrados na Paliçada de Qingbo.\nUm dispositivo simples que integra as funções de descobridor de aquíferos e bússolas magnéticas. Segundo os registros, este aparelho teve grande utilidade durante os primeiros anos da Paliçada de Qingbo.",
+    "setBonus": "Efeito do conjunto de 3 peças: Redução do Tempo de Recarga do Combo de Habilidades do usuário <@ba.vup>+ {1-comboskill_cooldown:0%}</>.\nQuando o usuário conjura um combo de habilidades, ganha DNO Habilidade Causado <@ba.vup>+{spell_up:0%}</> (para cada habilidade) por {duration} s. Esse efeito pode atingir {max_stack} acúmulos. A duração de cada acúmulo é contada separadamente."
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "name": "Manoplas de Qingbo",
@@ -1061,10 +905,28 @@
     "decoDesc": "Equipamento da série MI Security. \nEle entrou em serviço pela primeira vez com exércitos humanos lutando na Frente Aggeloide.",
     "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "name": "Kit de Ferramentas MI Security",
+  "item_equip_t4_suit_criti01_body_02": {
+    "name": "Macacão MI Security",
     "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento da série MI Security. \n\"Valeu, policial! Juro que esta será a última vez que vou chamar a polícia neste mês por esquecer minhas chaves! PROMETO!\"",
+    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "name": "Macacão MI Security T1",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "name": "Macacão MI Security T2",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamentos da série MI Security. \nCom o fim da guerra, a Mieszko Industries ajustou suas linhas de produção e implementou medidas eficazes de redução de peso. Assim, adquiriu contratos de fornecimento de equipamentos para as forças de segurança urbanas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "name": "Armadura MI Security T1",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento da série MI Security. \nEle entrou em serviço pela primeira vez com exércitos humanos lutando na Frente Aggeloide.",
     "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_criti01_edc_01": {
@@ -1077,6 +939,12 @@
     "name": "Luneta MI Security",
     "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento da série MI Security. \nAs pessoas costumam contrabandear produtos da Mieszko Industries para as terras selvagens. Alguns assassinos Invasores de Terras tratam a Luneta MI Security como um acessório de primeira linha.",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "name": "Kit de Ferramentas MI Security",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento da série MI Security. \n\"Valeu, policial! Juro que esta será a última vez que vou chamar a polícia neste mês por esquecer minhas chaves! PROMETO!\"",
     "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_criti01_edc_04": {
@@ -1103,23 +971,77 @@
     "decoDesc": "Equipamento da série MI Security. \nEssas luvas também podem ser usadas como arma. A validação do produto inclui uma avaliação da \"eficácia em esmagar apêndices dos Aggeloides\".",
     "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "name": "Bastão do Fluxo de Xiranita",
-    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "Uma arma experimental proposta como equipamento padrão para os Patrulheiros de Wuling.\nUm bastão leve... Não duvide do seu poder de parada. Ele pode quebrar os ossos de uma fera quando necessário.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado </> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. O número máximo de acúmulos de benefícios é {max_stack}. A duração de cada acúmulo é contada separadamente."
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "name": "EPI para as Mãos MI Security",
     "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento da série MI Security. \nPossui Unidades de Arte miniaturizadas para controle de distúrbios e excelente condutividade energética.",
     "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "name": "EPI para as Mãos MI Security T1",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento da série MI Security. \nPossui Unidades de Arte miniaturizadas para controle de distúrbios e excelente condutividade energética.",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "name": "Luvas MI Security T1",
+    "description": "Projetado pela Mieszko Industries e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento da série MI Security. \nEssas luvas também podem ser usadas como arma. A validação do produto inclui uma avaliação da \"eficácia em esmagar apêndices dos Aggeloides\".",
+    "setBonus": "Efeito do conjunto de 3 peças: Taxa de Críticos do Usuário <@ba.vup>+ {crit_up:0%}</>. \nApós o usuário realizar um acerto crítico, ele ganha ATQ <@ba.vup>+ {atk_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. No número máximo de acúmulos, concede Taxa de Críticos adicional <@ba.vup>+ {crit_up2:0%}</>. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "name": "Armadura de Borda Grisalha",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nÉ possível perceber sinais de influência da Guerra dos Aggeloi no design. Pesado e grosseiro, mas também eficaz.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "name": "Armadura de Borda Grisalha T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nÉ possível perceber sinais de influência da Guerra dos Aggeloi no design. Pesado e grosseiro, mas também eficaz.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "name": "Canivete de Borda Grisalha",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nUm canivete bastante afiado que pode ser fixado em ombreiras ou manoplas, dependendo do estilo de combate preferido do usuário.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "name": "Canivete de Borda Grisalha T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nUm canivete bastante afiado que pode ser fixado em ombreiras ou manoplas, dependendo do estilo de combate preferido do usuário.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "name": "Manoplas de Borda Grisalha",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nAs funções de apoio oferecidas por este par de manoplas são um pouco aquém do ideal. Existem recursos do passado que não conseguimos replicar com precisão. Isso significa que nossos Tianshi precisam pensar em alternativas.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "name": "Manoplas de Borda Grisalha T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um equipamento de defesa multifuncional desenvolvido pela Hongshan Swordmancers mediante o estudo de documentos de projetos tecnológicos perdidos. \nAs funções de apoio oferecidas por este par de manoplas são um pouco aquém do ideal. Existem recursos do passado que não conseguimos replicar com precisão. Isso significa que nossos Tianshi precisam pensar em alternativas.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+{atk_up:0%}</>.\nQuando o usuário aplica <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</>, ganha <@ba.pd>DNO Físico Causado</> <@ba.vup>+ [{phy_dmg_up_perstack:0%} × Número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo]</> por {duration} s. Se o alvo já tiver <#ba.physicalvul>Suscetibilidade Física</>, estiver <@ba.poise>Desorientado</> ou tiver <#ba.originium>Cristais de Originium</> anexados, o benefício acima é aumentado para <@ba.vup>{special_multi:0.0}</> vezes. Esse benefício não pode se acumular."
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "name": "Armadura Leve do Fluxo de Xiranita",
     "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Equipamento experimental proposto como equipamento padrão para os Patrulheiros de Wuling.\nCom a produção em massa de Xiranita garantida, muitos projetos de P&D de equipamentos Xiranita que estavam paralisados foram retomados.",
-    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>. \nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado </> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. O número máximo de acúmulos de benefícios é {max_stack}. A duração de cada acúmulo é contada separadamente."
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>.\nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado</> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. Número máximo de acúmulos de benefícios: {max_stack}. A duração de cada acúmulo é contada separadamente."
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "name": "Bastão do Fluxo de Xiranita",
+    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Uma arma experimental proposta como equipamento padrão para os Patrulheiros de Wuling.\nUm bastão leve... Não duvide do seu poder de parada. Ele pode quebrar os ossos de uma fera quando necessário.",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>.\nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado</> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. Número máximo de acúmulos de benefícios: {max_stack}. A duração de cada acúmulo é contada separadamente."
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "name": "Luvas do Fluxo de Xiranita",
+    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Equipamento experimental proposto como equipamento padrão para os Patrulheiros de Wuling.\n\"Você está dizendo que essas luvas vão ser... O quê...? Eu posso tocar em máquinas de Xiranita para carregar essas belezuras? Isso não é alguma baboseira da Praga, certo...?\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do usuário <@ba.vup>+ {atk_up:0%}</>.\nSempre que o usuário <#ba.consume>consome</> <#ba.conduct>Eletrificação</> ou <#ba.corrupt>Corrosão</>, ganha um número de acúmulos de benefícios igual ao <#ba.statuslevel>Nível de Status</> da Reação de Artes consumida, onde cada acúmulo de benefício concede <@ba.pulse>DNO Elétrico Causado</> e <@ba.natur>DNO Natureza Causado</> <@ba.vup>+{spell_dmg_up:0%}</> por {duration} s. Número máximo de acúmulos de benefícios: {max_stack}. A duração de cada acúmulo é contada separadamente."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Exoesqueleto Hot Work",
@@ -1145,29 +1067,53 @@
     "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \nCalor extremo não é assustador. No entanto, desconfie se um local sofrer uma mudança repentina de temperatura inexplicável.",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "name": "Traje Disruptor Pulser Labs",
-    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento com design inovador. \nA maioria não conseguiu entender por que a Endfield Industries desenvolveu um traje defensivo para lutar uma guerra digital.",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "name": "Cartucho de Energia Hot Work",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Alguém ouviu uma música naquele mesmo vulcão.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "name": "Luvas Pulser Labs",
+  "item_equip_t4_suit_fire_natr01_hand_01": {
+    "name": "Luvas Hot Work",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
-    "decoDesc": "Equipamento com design inovador. \nA maioria não conseguiu entender por que a Endfield Industries adicionou um isolamento térmico melhor aos seus EPIs da série Pulser Labs.",
-    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+    "decoDesc": "Equipamento com excelente classificação de resistência ao fogo. \nO STUT e a Endfield Industries desenvolveram em conjunto os EPIs Hot Work para explorar ambientes de alta temperatura.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "name": "Manoplas Hot Work",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Shh, quieto. Você pode acordá-lo.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "name": "Manoplas Hot Work T1",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Shh, quieto. Você pode acordá-lo.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "name": "Armadura Pesada LYNX",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma versão mais pesada do equipamento preferido dos médicos. \nAs pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "name": "Couraça LYNX",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O equipamento preferido dos médicos. \nAs pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "name": "Conector LYNX",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O equipamento preferido dos médicos. \nUm componente conector desenvolvido pela Rhodes Island para calibração de dados. Pode ser conectado a diferentes sistemas de suporte à saúde para realizar diversas formas de atendimento médico de emergência.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "name": "Conector LYNX T2",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "O equipamento preferido dos médicos. \nUm componente conector desenvolvido pela Rhodes Island para calibração de dados. Pode ser conectado a diferentes sistemas de suporte à saúde para realizar diversas formas de atendimento médico de emergência.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "name": "Placa LYNX",
@@ -1187,6 +1133,12 @@
     "decoDesc": "O equipamento preferido dos médicos. \nUm componente conector desenvolvido pela Rhodes Island para calibração de dados. Pode ser conectado a diferentes sistemas de suporte à saúde para realizar diversas formas de atendimento médico de emergência.",
     "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "name": "Luvas LYNX",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Uma versão mais pesada do equipamento preferido dos médicos. \nA Rhodes Island ainda tem a tradição de fornecer seus EPIs com módulos de monitoramento de Oripatia.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "Manoplas LYNX",
     "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
@@ -1199,10 +1151,46 @@
     "decoDesc": "Um dos produtos comercializados pelo Bureau dos Espadeiros em seus primórdios.\nA primeira página dos projeto desta arma traz a seguinte inscrição: \"Esgrima para o guerreiro solitário.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "name": "Armadura Pesada do Espadeiro",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros. \nOs Tianshi adotaram uma \"capacidade do tamanho de um desfiladeiro\" como conceito de design e literalmente alcançaram a \"absorção e neutralização\" de ataques baseados em energia.",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "name": "Armadura Pesada do Espadeiro T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros.\nOs Tianshi adotaram uma abordagem de design definida pelo conceito de \"mente aberta como um vale\" para dotar esta Armadura Pesada do Espadeiro com recursos reais de \"negação de ataques de energia\".",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "name": "Armadura de Fibra do Espadeiro",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros.\nA primeira página do projeto desta arma traz a seguinte inscrição: \"Os bravos marcham para o norte.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "name": "Sinalizador NAV do Espadeiro",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Um dos produtos comercializados pelo Bureau dos Espadeiros em seus primórdios. \nA maioria dos ambientes contaminados pela Praga são extremamente perigosos. Um único passo em falso pode levar a um caminho errado sem volta — exatamente como aconteceu com Wuling há tantos anos.",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Microfiltro do Espadeiro",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Um dos produtos comercializados pelo Bureau dos Espadeiros em seus primórdios. \n\"Até mesmo uma única baforada de fumaça em um ambiente contaminado pela Praga pode ser fatal, então use seus respiradores corretamente!\"",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "name": "Pederneira do Espadeiro",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros. \nEssencialmente, a pederneira acelera e esgota as reservas de energia do sistema de armadura do Espadeiro. Ela só brilha de verdade quando o usuário está à beira da morte.",
+    "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "name": "Adaga do Espadeiro",
+    "description": "Projetado pela Hongshan Swordmancers e montado pela Fábrica do CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros.\nUma lâmina tática extremamente afiada, e um dos primeiros exemplares da técnica de produção de armas da HS.Swords. Sem dúvida, este equipamento estabeleceu a base para a subsequente série Yinglung.",
     "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_01": {
@@ -1210,12 +1198,6 @@
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Um dos primeiros produtos comercializados pelo Bureau dos Espadeiros. \n\"Fim do ano. Trouxe minha lâmina para o sul. A montanha cresceu nove cabeças e rugiu incessantemente. Um dia auspicioso.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Bônus de Eficiência de Desorientação <@ba.vup>+ {poise_up:0%}</>. \nApós o usuário aplicar um <#ba.physicalstatus>Status Físico</>, o usuário também realiza 1 acerto que causa {atk_scale:0%} ATQ de DNO Físico [<@ba.poise>{poise}</> Desorientação]. Tempo de recarga do gatilho do efeito: {duration} s."
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "name": "Núcleo de Energia de Xiranita Eterna T1",
-    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
-    "decoDesc": "O legado de um Tianshi \"louco\". \n...Certa vez, ele andou pelas ruas com uma grande tigela de tofu cozido em caldo de bambu e afirmou que inventou a próxima geração de tecnologia de refrigeração baseada em Xiranita.",
-    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Manoplas Táticas do Espadeiro",
@@ -1253,11 +1235,71 @@
     "decoDesc": "Equipamento de proteção experimental leve. \n\"Mantenha o estabilizador ligado o tempo todo, obrigado. Isso evitará que você suba aos céus como um balão desgovernado durante flutuações de parâmetros.\"",
     "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "name": "Relógio Æthertech",
+    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção experimental leve. \n\"Alguns usuários suspeitam que nossos produtos exercem efeitos hemomutagênicos. Essas alegações não passam de acusações infundadas.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "name": "Luvas Æthertech",
+    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção experimental leve. \n\"Sempre use proteção extra ao utilizar nossos produtos. Se você tiver alguma alucinação auditiva ou visual, REMOVA nossos produtos IMEDIATAMENTE e coma alguma coisa.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "name": "Luvas Leves Æthertech",
+    "description": "Projetado pela Portable Æthertech Labs e montado pelo CAI, esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento de proteção experimental leve. \n\"Sempre use proteção extra ao utilizar nossos produtos. Se você tiver alguma alucinação auditiva ou visual, REMOVA nossos produtos IMEDIATAMENTE e coma alguma coisa.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: ATQ do Usuário <@ba.vup>+ {atk_up:0%}</>. \nApós o usuário aplicar <#ba.noguard>Vulnerabilidade</>, ele ganha <@ba.pd>DNO Físico</> <@ba.vup>+ {phy_dmg_up:0%}</> por {duration} s. Esse efeito pode atingir {max_stack:0} acúmulos. Se o alvo já tiver {stack_cond:0} acúmulo(s) de <#ba.noguard>Vulnerabilidade</>, o usuário ganhará um DNO Físico adicional <@ba.vup>+ {phy_dmg_up2:0%}</> por {duration2} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "name": "Traje Disruptor Pulser Labs",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento com design inovador. \nA maioria não conseguiu entender por que a Endfield Industries desenvolveu um traje defensivo para lutar uma guerra digital.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "name": "Sonda Pulser Labs",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "Equipamento com designs inovadores. \nEle consegue encontrar vestígios de pessoas perdidas nas névoas escuras e gélidas.",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "name": "Calibrador Pulser Labs",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento com design inovador. \nEle pesquisa o infinito oceano de dados em busca de \"valores atípicos\" bem escondidos e depois os apaga.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "name": "Núcleo de Invasão Pulser Labs",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamentos com designs inovadores. \nA ajuda da Cabala da Tranquilidade concedeu ao Núcleo de Invasão Pulser Labs a capacidade de romper a maioria dos firewalls de terminais.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "name": "Luvas Pulser Labs",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
+    "decoDesc": "Equipamento com design inovador. \nA maioria não conseguiu entender por que a Endfield Industries adicionou um isolamento térmico melhor aos seus EPIs da série Pulser Labs.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.conduct>Eletrificação</>, ele ganha <@ba.pulse>DNO Elétrico</><@ba.vup> + {pulse_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.frozen>Solidificação</>, ele ganha <@ba.cryst>DNO Crio</><@ba.vup> +{cryst_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "name": "Armadura de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \nA maioria teria dificuldade em estabelecer uma conexão entre o trabalho na cozinha e Xiranita. No entanto, um morador de Wuling realmente se inspira em design ao jantar em um restaurante.",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "name": "Núcleo de Energia de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \n...Certa vez, ele andou pelas ruas com uma grande tigela de tofu cozido em caldo de bambu e afirmou que inventou a próxima geração de tecnologia de refrigeração baseada em Xiranita.",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "name": "Núcleo de Energia de Xiranita Eterna T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \n...Certa vez, ele andou pelas ruas com uma grande tigela de tofu cozido em caldo de bambu e afirmou que inventou a próxima geração de tecnologia de refrigeração baseada em Xiranita.",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Braço Auxiliar de Xiranita Eterna",
@@ -1267,6 +1309,12 @@
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Luvas de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
+    "decoDesc": "Herança de um Tianshi \"louco\". \n...Dias se passaram e o enlouquecido Tianshi começou a rejeitar qualquer alimento que \"falhasse em trazer inspiração\". Após ser reduzido a pele e ossos, ele logo desapareceu nas terras selvagens em busca da \"saborosa Xiranita\".",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "name": "Luvas de Xiranita Eterna T1",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Herança de um Tianshi \"louco\". \n...Dias se passaram e o enlouquecido Tianshi começou a rejeitar qualquer alimento que \"falhasse em trazer inspiração\". Após ser reduzido a pele e ossos, ele logo desapareceu nas terras selvagens em busca da \"saborosa Xiranita\".",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."

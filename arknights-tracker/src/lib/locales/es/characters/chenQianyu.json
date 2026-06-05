@@ -129,7 +129,7 @@
       "name": "Chi Xiao improvisado"
     },
     "potential5": {
-      "description": "Habilidad de combo <@ba.key>Remontar a las estrellas</> mejorada: la duración del tiempo de reutilización ahora es de <@ba.vup>{coolDown:0}</> s.",
+      "description": "Habilidad de combo <@ba.key>Remontar a las estrellas</> mejorada: duración del tiempo de reutilización <@ba.vup>{coolDown:0}</> s.",
       "name": "Vinculada con el mundo"
     }
   },

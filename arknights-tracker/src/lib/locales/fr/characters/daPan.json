@@ -127,7 +127,7 @@
       "name": "Mélange spécial"
     },
     "potential5": {
-      "description": "Renforce la compétence de combat <@ba.key>WOK DANS TA FACE !</> : si la compétence touche un seul ennemi, applique 1 cumul supplémentaire de <#ba.noguard>Vulnérabilité</> sur la cible. L'effet se déclenche toutes les {potential_5_interval:0} s.",
+      "description": "Renforce la compétence de combat <@ba.key>WOK DANS TA FACE !</> : si la compétence touche un seul ennemi, applique 1 cumul supplémentaire de <#ba.noguard>Vulnérabilité</> sur la cible. L'effet ne peut se déclencher qu'une fois toutes les {potential_5_interval:0} s.",
       "name": "À feu vif"
     }
   },

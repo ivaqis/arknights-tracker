@@ -741,7 +741,9 @@
     "hetoniteComponent": "Hetonit-Komponente",
     "hetoniteSolution": "Hetonit-Lösung",
     "precipitationAcid": "Niederschlagssäure",
-    "liquidHeavyXiranite": "Flüssiges Schweres Xiranit"
+    "liquidHeavyXiranite": "Flüssiges Schweres Xiranit",
+    "centuryRind": "Jahrhundertschale",
+    "caudalGoldscale": "Goldene Schwanzschuppe"
   },
   "common": {
     "copy": "Kopieren",
@@ -924,7 +926,9 @@
     "tangtang": "Tangtang",
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industrie 0.1",
@@ -994,7 +998,10 @@
     "finchaser30": "Flösslerjäger 3.0",
     "lupineScarlet": "Scharlachroter Wolf",
     "loneBarge": "Einsame Barke",
-    "flickersInTheMist": "Schimmer im Nebel"
+    "flickersInTheMist": "Schimmer im Nebel",
+    "phantomPain": "Phantomschmerz",
+    "amaranthineTassel": "Amaranthfarbene Quaste",
+    "beaconOfDuty": "Leuchtfeuer der Pflicht"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",
@@ -1091,7 +1098,14 @@
     "world_energy_point07_4": "Schweres Energie-Alluvium: Grenzstein",
     "world_energy_point08_3": "Energie-Alluvium: Testzone",
     "world_energy_point08_2": "Energie-Alluvium: Testzone",
-    "world_energy_point08_6": "Schweres Energie-Alluvium: Testzone"
+    "world_energy_point08_6": "Schweres Energie-Alluvium: Testzone",
+    "world_energy_point09_1": "Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_2": "Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_3": "Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_4": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_5": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_6": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point09_7": "Schweres Energie-Alluvium: Tal des Schwertverlieses"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunnel-Nidwurm",
@@ -1165,7 +1179,10 @@
     "eny_0078_nefarp1": "Nefarith, „Knochenbrecherin“",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, „Eroberin“",
-    "eny_0082_hsbear": "Himmelstrommler"
+    "eny_0082_hsbear": "Himmelstrommler",
+    "eny_0112_jzmonk": "Felsenheuler",
+    "eny_0113_jzogre": "Gepanzerte Fetzbestie",
+    "eny_0114_jzmking": "Klippenheuler"
   },
   "essencesPage": {
     "optimizer": "Farming-Optimierer",
@@ -1413,7 +1430,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Qingbo-Handschuhe",
     "item_equip_t4_suit_expend_spell01_edc_02": "Xiranfluss-Schlagstock",
     "item_equip_t4_suit_expend_spell01_body_02": "Leichte Xiranfluss-Rüstung",
-    "item_equip_t4_suit_phy01_hand_03": "Taktische Schwertkämpfer-Fingerhandschuhe S1"
+    "item_equip_t4_suit_phy01_hand_03": "Taktische Schwertkämpfer-Fingerhandschuhe S1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Qingbo-Positionsbestimmungskit S1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Graukant-Rüstung",
+    "item_equip_t4_suit_crush_fracture_body_02": "Graukant-Rüstung S1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Graukant-Druckmesser",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Graukant-Druckmesser S1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Graukant-Fingerhandschuhe",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Graukant-Fingerhandschuhe S1",
+    "item_equip_t4_suit_phy01_body_04": "Faserverstärkte Schwertkämpfer-Rüstung"
   },
   "packs": {
     "none": "Ohne Set",
@@ -1461,7 +1486,8 @@
     "suit_wisd01": "Mordvolt-Isolierung",
     "suit_wisdwill01": "AIK (Leicht)",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Xiranfluss"
+    "suit_expend_spell01": "Xiranfluss",
+    "suit_crush_fracture": "Graukant"
   },
   "equipmentTypes": {
     "body": "Rüstung",
@@ -1886,11 +1912,11 @@
     "pump_1": "Flüssigkeitspumpe",
     "pump_2": "Säurefeste Pumpe Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "STD-Modus",
     "liquid": "Flüssigkeitsmodus"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Quelle",
       "using": "Anwendbare Formeln",

@@ -741,7 +741,9 @@
     "hetoniteComponent": "ส่วนประกอบ​เฮ​โท​ไนต์",
     "hetoniteSolution": "สารละลาย​เฮ​โท​ไนต์",
     "precipitationAcid": "กรด​ตกตะกอน",
-    "liquidHeavyXiranite": "ซี​เรน​ไนต์​หนัก​แบบ​เหลว"
+    "liquidHeavyXiranite": "ซี​เรน​ไนต์​หนัก​แบบ​เหลว",
+    "centuryRind": "เปลือก​ร้อย​ปี",
+    "caudalGoldscale": "เกล็ด​ทอง​ส่วน​หาง"
   },
   "common": {
     "copy": "คัดลอก",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "รอส​ซี",
     "zhuangfy": "จวง​ฟาง​อี้",
-    "zhuangFangyi": "จวง​ฟาง​อี้"
+    "zhuangFangyi": "จวง​ฟาง​อี้",
+    "miFu": "หมี่​ฟู่",
+    "mifu": "หมี่​ฟู่"
   },
   "weaponsList": {
     "industry01": "อิน​ดัส​ทรี​ 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "ฟิน​เช​ส​เซอร์​ 3.0",
     "lupineScarlet": "สีชา​ด​แห่ง​หมาป่า",
     "loneBarge": "ตะลุย​เดี่ยว",
-    "flickersInTheMist": "แสง​ริบหรี่​ใน​ม่าน​หมอก"
+    "flickersInTheMist": "แสง​ริบหรี่​ใน​ม่าน​หมอก",
+    "phantomPain": "ความเจ็บปวด​ลวง",
+    "amaranthineTassel": "อมา​รัน​ไธ​น์​ ทาส​เซล",
+    "beaconOfDuty": "คบเพลิง​แห่ง​หน้าที่"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: หิน​นำทาง",
     "world_energy_point08_3": "อัล​ลู​เวีย​ม​พลังงาน​: เขต​ทดสอบ",
     "world_energy_point08_2": "อัล​ลู​เวีย​ม​พลังงาน​: เขต​ทดสอบ",
-    "world_energy_point08_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ทดสอบ"
+    "world_energy_point08_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ทดสอบ",
+    "world_energy_point09_1": "อัล​ลู​เวีย​ม​พลังงาน​: เดล​คลัง​ดาบ",
+    "world_energy_point09_2": "อัล​ลู​เวีย​ม​พลังงาน​: เดล​คลัง​ดาบ",
+    "world_energy_point09_3": "อัล​ลู​เวีย​ม​พลังงาน​: เดล​คลัง​ดาบ",
+    "world_energy_point09_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
+    "world_energy_point09_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
+    "world_energy_point09_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
+    "world_energy_point09_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ"
   },
   "enemies": {
     "eny_0007_mimicw": "นิด​เ​วิ​ร์​ม​ใต้พิภพ",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "เน​ฟา​ริธ​, \"โบน​ค​รัช​เชอร์​\"",
     "eny_0095_ethillu": "เงา​มายา",
     "eny_0079_nefarp2": "เน​ฟา​ริธ​, \"ผู้พิชิต​\"",
-    "eny_0082_hsbear": "มือ​กลอง​นภา"
+    "eny_0082_hsbear": "มือ​กลอง​นภา",
+    "eny_0112_jzmonk": "ร็อค​ฮา​ว​เลอร์",
+    "eny_0113_jzogre": "แมง​เกลอ​ร์​บี​ส​ต์​หุ้ม​เกราะ",
+    "eny_0114_jzmking": "เคร​ก​ฮา​ว​เลอร์"
   },
   "essencesPage": {
     "optimizer": "เครื่องมือเพิ่มประสิทธิภาพการฟาร์ม",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "ถุงมือ​ชิง​ป๋อ",
     "item_equip_t4_suit_expend_spell01_edc_02": "กระบอง​ซี​เรน​โฟลว์",
     "item_equip_t4_suit_expend_spell01_body_02": "เกราะ​เบา​ซี​เรน​โฟลว์",
-    "item_equip_t4_suit_phy01_hand_03": "ถุงมือ​เกราะ​ยุทธวิธี​นัก​ดาบ​เวท​ T1"
+    "item_equip_t4_suit_phy01_hand_03": "ถุงมือ​เกราะ​ยุทธวิธี​นัก​ดาบ​เวท​ T1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "ชุด​ระบุ​พิกัด​ชิง​ป๋อ​ T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "เกราะ​ Grizzled Edge",
+    "item_equip_t4_suit_crush_fracture_body_02": "เกราะ​ Grizzled Edge T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "มีด​สั้น​ Grizzled Edge",
+    "item_equip_t4_suit_crush_fracture_edc_02": "มีด​สั้น​ Grizzled Edge T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "ถุงมือ​ Grizzled Edge",
+    "item_equip_t4_suit_crush_fracture_hand_02": "ถุงมือ​ Grizzled Edge T1",
+    "item_equip_t4_suit_phy01_body_04": "เกราะ​ไฟเบอร์​นัก​ดาบ​เวท"
   },
   "packs": {
     "none": "ยัง​ไม่ได้​กำหนด",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "ฉนวน​มอร์​ด​โวลต์",
     "suit_wisdwill01": "AIC งาน​เบา",
     "suit_combo_cd01": "ชิง​ป๋อ",
-    "suit_expend_spell01": "ซี​เรน​โฟลว์"
+    "suit_expend_spell01": "ซี​เรน​โฟลว์",
+    "suit_crush_fracture": "กริซ​เซิล​เอ​ด​จ์"
   },
   "equipmentTypes": {
     "body": "เกราะ",
@@ -1887,11 +1913,11 @@
     "pump_1": "ปั๊ม​ของเหลว",
     "pump_2": "ปั๊ม​ทน​กรด​ Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "โหม​ด​ STD",
     "liquid": "โหม​ด​ของเหลว"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "ที่มา",
       "using": "สูตร​ที่​เกี่ยวข้อง",

@@ -1,0 +1,153 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Broyage",
+      "Vuln. PHY"
+    ],
+    "behaviourHateTags": [
+      "Mode"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Académie des sciences de Hongshan (ASH)",
+    "expertTags": [
+      "Constitution",
+      "Techniques de combat"
+    ],
+    "giftPreferTags": [
+      "Sélection des spadamanciens de Wuling"
+    ],
+    "hobbyTags": [
+      "Sports",
+      "Mode de vie"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal"
+      },
+      "name": "Manumancienne aux épées",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "cloudtrapperDmgMultiplier": "Multiplicateur de DÉG d'Attrape-nuages",
+        "trailAndMangleDmgMultiplier": "Multiplicateur de DÉG de Piste broyante",
+        "trailAndMangleStagger": "Déséquilibre de Piste broyante",
+        "worldSplitterDmgMultiplier": "Multiplicateur de DÉG de Fissure planétaire",
+        "worldSplitterStagger": "Déséquilibre de Fissure planétaire"
+      },
+      "name": "Triplex de Qingbo",
+      "description": "Continuez à utiliser la compétence de combat de Mi Fu afin qu'elle libère 3 attaques différentes. La première compétence de combat est <@ba.key>Attrape-nuages</>.\n<@ba.key>ATTAQUE 1 - Attrape-nuages</> : coûte <@ba.vup>100</> PC et <#ba.return>restaure</><@ba.vup> 50</> PC après le lancement. Mi Fu lance un grappin avec ses gants de boxe, qui inflige des <@ba.pd>DÉG physiques</> à la cible et aux ennemis à proximité, puis tente de les attirer à elle. Après avoir lancé l'ATTAQUE 1, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.\n<@ba.key>ATTAQUE 2 - Piste broyante</> : coûte <@ba.vup>50</> PC. Mi Fu lance une tempête de coups qui infligent des <@ba.pd>DÉG physiques</>. Le dernier coup applique <#ba.crush>Broyage</>. Si ce Broyage <#ba.consume>consomme</> au moins 3 cumuls de <#ba.noguard>Vulnérabilité</> d'une cible unique, alors la compétence de combat suivante est temporairement remplacée par <@ba.key>Fissure planétaire</>.\n<@ba.key>ATTAQUE 3 - Fissure planétaire</> : coûte <@ba.vup>50</> PC. Mi Fu inflige de gros <@ba.pd>DÉG physiques</> sur une zone donnée. Ces DÉG ne comptent pas comme des DÉG de compétence de combat, mais comme des DÉG de <#ba.crush>Broyage</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "physicalSusceptibility": "Sensibilité physique",
+        "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)",
+        "ultimateEnergyGain": "Gain d'énergie d'ultime"
+      },
+      "name": "Poings sans regrets",
+      "description": "DÉCLENCHEMENT DE COMBO : quand un ennemi possède un minimum de 3 cumuls de <#ba.noguard>Vulnérabilité</>.\nMi Fu lance un uppercut dévastateur qui inflige des <@ba.pd>DÉG physiques</> et applique une <#ba.physicalvul>sensibilité physique</> temporaire à l'ennemi. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre"
+      },
+      "name": "Pas la moindre pitié",
+      "description": "Après une courte montée en puissance, Mi Fu se propulse vers l'avant pour <#ba.airborne>soulever</> une cible dans les airs avant de l'écraser pour lui infliger des <@ba.pd>DÉG physiques</>. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>."
+    },
+    "indicator": {
+      "levels": [
+        "Force de l'opérateur +10.",
+        "Force de l'opérateur +15.",
+        "Force de l'opérateur +15.",
+        "Force de l'opérateur +20."
+      ],
+      "name": "Galvanisation"
+    },
+    "talent1": {
+      "levels": [
+        "Renforce la compétence de combat <@ba.key>Fissure planétaire</> : quand l'attaque touche une cible dotée d'une <#ba.physicalvul>sensibilité physique</> ou <@ba.poise>déséquilibrée</>, le multiplicateur de DÉG passe à <@ba.vup>{crushmultiadd_talent+1}</> fois sa valeur d'origine.",
+        "Renforce la compétence de combat <@ba.key>Fissure planétaire</> : quand l'attaque touche une cible dotée d'une <#ba.physicalvul>sensibilité physique</> ou <@ba.poise>déséquilibrée</>, le multiplicateur de DÉG passe à <@ba.vup>{crushmultiadd_talent+1}</> fois sa valeur d'origine."
+      ],
+      "name": "Répression sévère"
+    },
+    "talent2": {
+      "levels": [
+        "Renforce la compétence de combo : lancer le combo crée un <#ba.shield>bouclier</> doté de <@ba.vup>{talent_shield_hppercent:0%}</> de PV max. pour une durée de {talent_shield_duration} s. Tant que le bouclier est actif, il devient plus difficile d'interrompre Mi Fu.\nCet effet ne se déclenche qu'une fois toutes les {talent_shield_cd} s.",
+        "Renforce la compétence de combo : lancer le combo crée un <#ba.shield>bouclier</> doté de <@ba.vup>{talent_shield_hppercent:0%}</> de PV max. pour une durée de {talent_shield_duration} s. Tant que le bouclier est actif, il devient plus difficile d'interrompre Mi Fu.\nCet effet ne se déclenche qu'une fois toutes les {talent_shield_cd} s."
+      ],
+      "name": "Fureur vigilante"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la salle de réception, augmente légèrement les chances que les opérateurs obtiennent l'indice 3 : ASH (s'active à l'affectation ; les effets d'un même type ne peuvent être cumulés)",
+        "En l'affectant à la salle de réception, augmente les chances que les opérateurs obtiennent l'indice 3 : ASH (s'active à l'affectation ; les effets d'un même type ne peuvent être cumulés)"
+      ],
+      "name": "Informateur secret"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la chambre de culture, augmente le taux de croissance de la matière fongique de 20 %.",
+        "En l'affectant à la chambre de culture, augmente le taux de croissance de la matière fongique de 30 %."
+      ],
+      "name": "Tisane ésotérique"
+    },
+    "files": {
+      "main": "NOM DE CODE : Mi Fu \nSEXE : Féminin \nAUTHENTIFICATION : Académie des sciences de Hongshan \nDATE DE NAISSANCE : 9 juillet \nRACE : Sarkaz \n[STATUT D'INFECTION À L'ORIPATHIE] \nPositive, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : Excellente \nCAPACITÉS AU COMBAT : Excellentes \nSENS TACTIQUE : Standard \nASSIMILATION DES ARTS DE L'ORIGINIUM : Standard",
+      "humanResources": "Mi Fu est la capitaine des sentinelles du district de développement scientifique de Wuling, appartenant à l'Académie des sciences de Hongshan. Elle découvre actuellement les Industries Endfield dans le cadre d'un programme d'échange. La division technologique spécialisée est chargée de la recevoir. \n\nLa capitaine Mi Fu prétendait qu'elle venait simplement voir de vieux amis d'Endfield, mais depuis son arrivée, il est devenu évident qu'elle étudie et évalue chaque opérateur d'après ses performances au combat. En diverses occasions, elle a murmuré ces mots aux opérateurs qu'elle croisait : « Ça t'intéresse, de t'entraîner contre moi ? » Lorsque Mi Fu a vu nos cabines d'entraînement, elle a haussé un sourcil et a montré un intérêt immédiat. Après avoir testé les installations, elle a dit : « Je serais venue des années plus tôt si j'avais su que cet endroit proposait des combats aussi exceptionnels ! » Elle a aussitôt prolongé la durée de sa visite de plusieurs jours. Quoi qu'il en soit, nous espérons que sa présence à Endfield sera aussi enrichissante et divertissante que possible. \n— Martin Marvin Malen, assistant, division des RH, Industries Endfield",
+      "file1": "DOCUMENT : RH - Archives de promotion du district de développement scientifique de Wuling \nNOM : Mi Fu \nRÉGION D'ORIGINE : Wuling \nEXPÉRIENCE PROFESSIONNELLE : 3 ans \nPOSTE ACTUEL : Sentinelle de Wuling \nPROMOTION PROPOSÉE : Capitaine des sentinelles de Wuling \n\nCV ET HISTORIQUE : \nMi Fu vivait à la palanque de Qingbo. Elle a été recrutée par le district de développement scientifique de Wuling et est devenue une sentinelle une fois la construction de la ville de Wuling achevée. Depuis qu'elle a accepté ce poste, elle a toujours été en première ligne, démontrant sa connaissance approfondie des problèmes de sécurité de la ville de Wuling et des régions périphériques, mais aussi sa résolution et son enthousiasme lorsqu'il a fallu gérer des urgences et s'occuper de différentes affaires. Mi Fu est dévouée à la ville de Wuling, n'a aucune tolérance pour toute forme de délinquance ou de criminalité, et agit toujours avec un sens aigu de la justice. Elle a bonne réputation, présente un effet dissuasif certain et est vue comme fédératrice par le public. \n\nFORCES : \nPerformances martiales exceptionnelles. Capacités physiques et force morale impressionnantes. Capable de gérer les menaces présentant un risque élevé. \nDouée pour prendre des décisions et exécuter les ordres. Capable de faire le bon choix lorsqu'elle est face à des situations complexes. \nAttentionnée et bienveillante vis-à-vis de ses subalternes. Capable de former une équipe forte et solidaire. \nBonne réputation auprès de la population, dont elle a gagné la confiance et le soutien. Les remarques du public pointent cependant qu'elle est « un peu rude mais toujours juste. » \n\nDOMAINES À AMÉLIORER : \nVolonté excessive de recourir à la force. Tendance à employer des mesures physiques pour résoudre diverses situations. Manque de connaissance des procédures. \nLéger désavantage en termes de travail de bureau, tel que la rédaction de rapports. Compétences administratives limitées. \nTempérament vif. Manque de patience dans sa communication. Sujette aux conflits. \nAccorde une confiance disproportionnée à ses proches. Sa capacité de prise de décision pourrait être affectée par ses relations personnelles et ses émotions. \n\nÉVALUATION GÉNÉRALE : \nMi Fu a obtenu d'excellents résultats en patrouille et en maintien de l'ordre. Ayant géré avec succès de nombreuses urgences, elle est un agent prometteur sur qui nous pouvons compter pour le travail sur le terrain. Cependant, elle est encline à utiliser des approches brutales et manquant de finesse. Elle fait peu de cas des procédures et risque d'aller à l'encontre de sa hiérarchie. Néanmoins, le public est très satisfait des performances de Mi Fu. Cette candidate a apporté des contributions positives, quoique non dépourvues d'erreurs. Des directives et un renforcement supplémentaires de son autodiscipline seront nécessaires. \n\nOPINION DE L'EXAMINATRICE : \nMi Fu a un tempérament fougueux et se passionne grandement pour le principe de la justice. Bien qu'elle agisse souvent de façon intempestive, elle n'a jamais l'intention de mal agir. Ce n'est pas pour elle-même qu'elle brandit ses poings, mais pour la sécurité de la population. Sa dureté est une simple conséquence de son caractère direct. Ses éventuels écarts de la procédure et son manque de rigueur administrative cachent une très grande attention aux détails et non l'absence de cette dernière. Elle peut sembler en deçà des attentes dans ces domaines, mais c'est pourtant là qu'elle excelle. \nJe suis prête à me porter garante de sa personnalité et de sa bonne conduite et recommande sa promotion au poste de capitaine des sentinelles de la ville de Wuling, où elle deviendra la pierre angulaire de la sécurité publique de la ville. Je la superviserai également en personne et la conseillerai dans ses tâches quotidiennes. \n\nEXAMINATRICE : Zhuang Fangyi \n19 octobre, an 145",
+      "file2": "Pff. Cette folle ! On a grandi ensemble et je lui ai mis pas mal de raclées. On s'aimait pas beaucoup, mais j'aimais bien la couvrir de bleus et elle tentait de faire pareil. Mimi la folle était sacrément dingue à l'époque, mais bon, j'avais pas peur d'elle. De toute façon, elle a fini par s'enfuir dans la ville de Wuling, elle s'est dégoté un badge et elle a même été promotionnée « capitaine des sentinelles ». Elle croyait que ça lui donnerait le droit de prendre un air supérieur. Ouais, bien sûr. Elle peut me regarder de haut à longueur de journée si elle veut, moi je sais ce qu'il y a sous sa stupide carapace de sentinelle. Il y a la folle, et personne d'autre ! \nSi on s'affrontait encore, je pense que ça se terminerait sur une égalité. Mais vous verrez. La cheffe suprême finira par gagner. Elle a de plus gros bras, et alors ? J'ai toujours été plus rapide, plus maline et plus esquiveuse. Oubliez pas ça ! Je vais la démolir. \nOuais, et à propos de nos pillages de provisions à Wuling, cette folle nous pose de sacrés problèmes. La famille avait absolument tout prévu, mais on n'arrêtait pas de tomber sur elle dans l'entrepôt et dans nos cachettes. Comme si elle était là à nous attendre. On s'est bien battus, mais Mimi a une méchante équipe et elle a envoyé un paquet d'entre nous au trou. Pire encore, elle a même essayé de nuire aux affaires de la palanque en traitant super bien les membres de la famille qu'elle avait capturés. Certains ont décidé de rester à Wuling parce que la bouffe et le niveau de vie sont meilleurs. \nVous verrez ! Je vais la mettre au clou bien comme il faut, cette folle. Et je ferai ça toute seule, OK ? Attends de voir un peu, sale folle ! La cheffe suprême arrive en ville et elle va te reléguer dans le siège bébé ! \n— Tangtang, cheffe suprême de la palanque de Qingbo \n\nEh ouais, la famille. Mi Fu m'a mis en prison. Je transportais un sacré butin quand elle a déboulé devant nous. J'ai eu les jambes en coton dans la seconde. Ensuite, elle m'a un peu dérouillé mais c'était pas si terrible. Bref, elle a demandé : « Tu veux rester en ville un moment ? » Écoute, mec, je voyais trente-six chandelles, et je les voyais en double... J'avais pas encore décidé si y fallait que je dise oui ou non qu'elle me traînait déjà en ville. \nAu début je me suis dit, mec, je vais aller droit en enfer ! Mais après, j'ai trouvé un boulot en ville, un toit et un lit, et de quoi bien manger. Et puis j'ai appris que Mimi la folle nous laissait le choix. Elle avait cet air pas sympa et elle parlait comme si on lui devait du fric, mais Mimi avait probablement dû pelleter un sacré paquet de fumier de burdo pour essayer de trouver des boulots corrects pour la famille. \nOh, oui, t'en as entendu parler. Les caches de butin dans les bois, les trucs qu'on piquait aux Wulingis, c'était des surplus de provisions de la ville, en fait. Je me suis demandé pourquoi on transportait tous ces vieux outils obsolètes à cet endroit. Il se trouve que c'était pour la palanque. Les gens disent que Mimi la folle est super dure avec la famille de la palanque, mais en fait, elle nous aide constamment et elle s'occupe de nous avec l'air de pas y toucher. \n— Témoignage anonyme d'un Wulingi (autrefois palanquien)",
+      "file3": "DOCUMENT : Une étude des arts martiaux de Qingbo (extrait) \nLes origines des arts martiaux de Qingbo remontent au village connu sous le nom de palanque de Qingbo, dans la région de Wuling. C'est une pratique traditionnelle des palanquiens. Cependant, cet ensemble de techniques de combat est tellement ésotérique qu'il n'a pas été conservé dans l'Annexe du Codex martial. \nPour comprendre les particularités des arts martiaux de Qingbo, il faut étudier l'histoire de la palanque de Qingbo. Pendant la période précédant la Guerre humiliante et les années qui l'ont suivie, un groupe de réfugiés yanais déterminés à s'éloigner des conflits et des guerres des factions a voyagé jusqu'à cette région connue aujourd'hui sous le nom de Wuling. La faille immense (FI) de Wuling présentait une menace, mais servait également de barrière contre les pillages et les attaques. Les réfugiés ont donc décidé de s'installer et de construire un village, qui finit par devenir la palanque de Qingbo. D'après certains témoignages, ces palanquiens étaient les premiers habitants de Wuling. \nSous cet angle, la palanque de Qingbo peut donner l'impression d'un paisible sanctuaire, mais la vérité est tout autre. La FI de Wuling a créé un environnement extrêmement hostile, avec de grands nombres d'Aggeloi en liberté, des bêtes sauvages féroces et une activité soutenue de la faille. Les palanquiens n'ont cessé de se battre contre ces « ennemis » de l'extérieur et ces combats intenses ont petit à petit donné naissance à diverses techniques de combat propres à la palanque de Qingbo. S'entraîner à maîtriser ces techniques renforce non seulement le corps mais aussi le contrôle des Arts de l'originium innés. Une partie de ces mouvements et de ces compétences met également en lumière les particularités de la zone de Qingbo. \nPar exemple, la célèbre « Foulée de la source affluante » permet aux combattants de se déplacer sans effort dans la rivière en ne laissant que des courants agités dans leur sillage. Initialement, j'ai pris cela pour une forme de sorcellerie qui permettait de manipuler mentalement l'écoulement de l'eau. Mais la Foulée est en réalité une technique des Arts de l'originium qui concentre l'énergie des Arts sur la pointe des pieds, puis la canalise dans l'eau avec une incroyable précision afin de générer des vibrations résonnantes. Nous pouvons également prendre comme exemple la « Cabriole sur feuilles de bambou », qui est littéralement de la voltimancie prenant appui sur de fragiles feuilles de bambou. Cette technique nécessite d'appliquer un « fragment d'impulsion souple » issu des Arts de l'originium sur ces feuilles si frêles d'apparence. Un tel niveau de finesse et de contrôle, une fois correctement maîtrisé, permet de lancer un terrifiant « Coup pulsatoire » en ne bougeant quasiment pas. \nLa capitaine Mi Fu du district de développement scientifique de Wuling s'avère pratiquer les arts martiaux de Qingbo. Elle a décrit le « Coup pulsatoire » comme un « coup de tonnerre ». En attaquant un ennemi, le combattant doit traiter son corps comme un « canon portatif », s'élancer comme un Lung en vol et s'abattre comme la foudre. Votre humble serviteur a personnellement été témoin de la démonstration de cette technique par la capitaine Mi Fu pendant une mission d'éradication des Aggeloi. Elle les a frappés avec une telle force que ses mouvements s'apparentaient à ceux des Lei Fa (les Arts de la foudre) des Tianshi. \nOutre leurs puissants arts martiaux, les palanquiens ont également développé une tradition unique de compétition martiale. Pendant de nombreuses années, tous les combattants de la palanque de Qingbo se sont défiés avec entrain pour déterminer qui était le meilleur d'entre eux. Le jour du Combat dans l'arène, tous les palanquiens, quel que soit leur âge, se rassemblent pour voir les combats et encourager leurs favoris. La capitaine Mi Fu elle-même était la championne incontestée de la palanque avant de rejoindre Wuling. Malheureusement, l'arène de la palanque était en réparations à la suite d'énormes dégâts au moment d'écrire ces lignes. Privé de l'occasion de visiter l'endroit moi-même, j'ai dû me contenter de demander à la capitaine Mi Fu de m'envoyer des photographies ou d'autres données visuelles de l'arène réparée. \nUn jour, j'ai exprimé auprès de la capitaine Mi Fu mon souhait d'interviewer le Grand maître des arts martiaux de Qingbo, le « Dompteur de rivière » en personne. Cependant, la capitaine m'a expliqué que le Grand maître était devenu un ermite et qu'elle ne savait même pas où il se trouvait. Elle m'a montré une carte portale envoyée par son Maître supérieur, qui lui parlait de leurs voyages. L'attention du Grand maître s'était fixée, pendant plus d'une heure, sur deux enfants qui se battaient dans une ruelle de la Ceinture civilisée. Avant de partir, le vieil homme a soupiré et a dit : « Je me suis entraîné toute ma vie, mais j'envie quand même ces enfants. Ils combattent quand ils le veulent et restent amis malgré tout. C'est vraiment beau à voir. » \nFinalement, j'ai proposé à la capitaine Mi Fu de compiler et d'organiser les informations liées aux arts martiaux de Qingbo afin de les ajouter à la Suite de l'Annexe du Codex martial. La capitaine a accepté avec joie et a exprimé son souhait de voir davantage de gens protéger Wuling grâce à leurs poings. Lorsque cela arrivera, elle pourra quitter cet endroit (Wuling) et tenter de réaliser à nouveau son rêve de toujours : combattre où et quand elle le souhaite.",
+      "file4": "« Endmin ! Je vous en prie, faites en sorte que Mi Fu soit occupée pendant toute une journée ! » Il était tard le soir quand l'Endministrator reçut la visite impromptue de Yan Ning pour une affaire extrêmement urgente. \nYan Ning lui dit qu'elle avait vu une lettre cachetée envoyée à Mi Fu pendant qu'elle rangeait le bureau de Zhuang Fangyi. Elle avait donc décidé de la faire suivre aux baraquements des sentinelles. \nMais elle avait rapidement appris que cette lettre ne devait pas être remise tout de suite. D'après Yan Ning : « Si Mi Fu lit cette lettre avant le moment prévu par Fangyi, les choses pourraient vraiment mal tourner ! S'il vous plaît, occupez Mi Fu pendant que j'intercepte la livraison de cette lettre ! » \nAinsi, l'Endministrator prétexta une « inspection surprise » et tint compagnie à Mi Fu pendant tout son service de jour. \nCela commença très tôt le matin, lorsqu'un marchand ambulant encerclé par des Aggeloi appela à l'aide. La capitaine Mi passa ensuite toute la matinée à entraîner sans ménagement les nouvelles sentinelles. Dans l'après-midi, elle dut arbitrer des différends entre des propriétaires de magasins de l'avenue Fangxing avant de rencontrer fortuitement la « cheffe suprême » dans la bambouseraie... Les poings de Mi Fu ne se reposaient jamais, mais ils étaient toujours aussi efficaces. \nCette journée rythmée se termina au coucher du soleil. L'Endministrator ne la quitta pourtant pas, car Yan Ning n'avait pas encore intercepté et récupéré la lettre. \nDe retour aux baraquements des sentinelles, Mi Fu alluma la lampe de son bureau et commença à remplir les formulaires et procédures de rigueur sous sa chaude lueur jaune. Dehors, le vent émettait des sifflements. Elle posa soudain son stylo et sortit, mais elle ne vit rien sinon des feuilles portées par la brise. La capitaine avait ressenti une certaine agitation tout au long de la journée. \nMi Fu revint à son bureau et referma les dossiers. Elle sortit de sa poche une lettre du bureau du pilier principal, sale et imbibée de sueur. Elle avait signé et l'avait acceptée tôt le matin, mais n'avait pas trouvé le temps de la lire. \n\nDOCUMENT : Une lettre qui ne doit pas être remise \nMi Fu, \nJe suis probablement déjà en route le temps que vous lisiez cette lettre. Dans l'éventualité où je ne rentrerais pas, je compte sur vous pour vous occuper de toutes les affaires de sécurité publique et d'administration dans la ville de Wuling. \nVous avez accompagné Wuling à chaque étape. Vous étiez là quand ce n'était encore qu'un simple site de construction en pleine nature et vous êtes restée jusqu'à ce que cela devienne une ville faite de beaux bâtiments et de rues bien ordonnées. Vous avez peiné avec l'équipe de construction, assuré la garde de nuit et repoussé les ennuis grâce à vos poings. Je sais que vous êtes profondément attachée à Wuling, c'est pourquoi je vous confie cette lourde tâche. \nVous n'avez jamais fui votre devoir ou vos responsabilités. C'est votre force. Mais vous manquez de patience et faites preuve d'obstination. Je sais que cela fait partie de votre caractère, mais défendre une ville va au-delà du fait de combattre des ennemis et de remporter des victoires. Cela nécessite du tact et de l'attention. Peser le pour et le contre ou agir avec prudence ne sont pas des preuves de faiblesse, ce sont des mesures prises pour garantir le succès et me permettre d'avoir l'esprit tranquille. \nIl y a également le sujet de la palanque de Qingbo, qui vous crispe et vous tend systématiquement. Rencontrer les palanquiens semble mettre chez vous le feu aux poudres, mais je sais que vous vous efforcez d'agir avec bienveillance. Certaines personnes ne connaissent peut-être pas la vérité, mais je la vois clairement. Il n'y a rien dont vous devez avoir honte. Vous avez entièrement le droit d'être amie avec Tangtang, sans ressentir le besoin de le cacher. \nVous souvenez-vous quand je vous ai conseillé de vous entraîner à la calligraphie ? Au début, j'espérais que cela développe votre patience, mais vos mots se sont avérés aussi rudes et inflexibles que vos poings, revêtant en cela une beauté qui leur est propre. Ces leçons ne sont plus nécessaires, mais bien évidemment, si vous appréciez la calligraphie et que vous avez du temps libre, allez demander conseil au Tianshi Ge. Inutile de lui apporter des boulettes de riz frites. Sa santé ne lui autorise plus ce genre de régime. \nVous avez souvent dit que vous aviez mangé suffisamment de sucreries pour le reste de votre vie et que vous ne vouliez plus en voir, car les douceurs vous donnent désormais la nausée. Mais je pense le contraire. Vous ne devriez pas fuir ce que vous aimez. Le devoir est une chose pesante et usante. Les occasions de trouver le bonheur sont rares, et il est bon d'avoir de petits plaisirs à sa disposition. Une sucrerie ou deux de temps à autre ne peuvent pas faire de mal. \nEnfin, j'ai quelques mots à vous dire, à titre personnel. Ce que je voulais vous offrir avant tout, ce n'était pas cette ville, mais vous-même. Vous étiez une jeune fille au regard intense lorsque je vous ai rencontrée. En un instant, vous m'avez foncé dessus, votre poing prêt à s'abattre sur moi. Mais les années ont passé. Vous avez assumé de plus grandes responsabilités, vos poings sont devenus implacables et vos froncements de sourcils n'ont jamais cessé. Cela fait bien longtemps que je n'ai plus vu la personne que vous êtes réellement. \nAlors souvenez-vous : si un jour vient où vous êtes malheureuse et où le travail devient un labeur, restez-en là. Ne vous sentez pas redevable envers quiconque et ignorez simplement ce que disent les autres. Allez où vous le souhaitez. Retournez à la palanque ou parcourez Talos-II. Vous pouvez même choisir de ne rien faire. Vous ne devez rien à Wuling, ainsi vous devriez être libre. \nPrenez soin de vous. Souriez et riez quand le moment sera venu. \n\nZhuang Fangyi"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce la compétence de combo <@ba.key>Poings sans regrets</> : le temps de recharge est désormais de <@ba.vup>{cooldown}</> s. L'effet de <#ba.physicalvul>sensibilité physique</> appliqué par la compétence augmente encore de <@ba.vup>{extra_effect:0%}</> pendant <@ba.vup>+{extra_time:0}</> s.",
+      "name": "Surveillance permanente"
+    },
+    "potential2": {
+      "description": "Octroie <@ba.vup>+{Str:0}</> points de Force et <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</> points d'intensité des Arts.",
+      "name": "Kinesthésie harmonieuse"
+    },
+    "potential3": {
+      "description": "Renforce le talent <@ba.key>Fureur vigilante</> : durée du <#ba.shield>bouclier</> <@ba.vup>+{talent_shield_duration}</> s et temps de recharge de son déclenchement de <@ba.vup>{talent_shield_cd}</> s. Chaque fois que le bouclier se déclenche, Mi Fu obtient <@ba.vup>+{potential_addattack_effect:0%}</> d'ATQ pendant {potential_addattack_duration} s.",
+      "name": "Échauffement complet"
+    },
+    "potential4": {
+      "description": "Renforce l'ultime <@ba.key>Pas la moindre pitié</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Triple raffinage du chi"
+    },
+    "potential5": {
+      "description": "Renforce la compétence de combat : les multiplicateurs de DÉG des attaques <@ba.key>Attrape-nuages</>, <@ba.key>Piste broyante</> et <@ba.key>Fissure planétaire</> passent à <@ba.vup>{atk_scale}</> fois leur valeur d'origine. Renforce l'ultime <@ba.key>Pas la moindre pitié</> : déséquilibre infligé <@ba.vup>+{poise2}</>.\n<@ba.info>Le bonus de multiplicateur de DÉG de la compétence de combat peut se cumuler avec le talent Répression sévère.</>",
+      "name": "Pugiliste de la palanque"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Juste une lampée",
+      "author": "Cenm0",
+      "description": "Ne souhaitant pas faillir à son devoir à cause de son penchant, elle a remplacé la bière par des boissons énergisantes."
+    },
+    "potential3": {
+      "name": "Quiétude solitaire",
+      "author": "u介",
+      "description": "Même l'incarnation de la justice doit se détendre. Mais surtout, ne le dites à personne."
+    },
+    "potential5": {
+      "name": "Ode à la joie",
+      "author": "萃_SUIKA",
+      "description": "La nuit est courte, alors levons notre verre à la joie."
+    }
+  }
+}

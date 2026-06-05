@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Ganancia de Energía máxima"
       },
       "name": "Corte de luna llena",
-      "description": "ACTIVADOR DE COMBO: Cuando <#ba.crush>Triturar</> o <#ba.fracture>Brecha</> <#ba.consume>consume</> acumulación(es) de <#ba.noguard>Vulnerabilidad</> del enemigo. \nRealiza una cantidad de secuencias de cortes (hasta 3) según el número máximo de acumulaciones de <#ba.noguard>Vulnerabilidad</> <#ba.consume>consumidas</>, infligiendo <@ba.pd>DAÑ físico</> y recuperando algo de PH. Cada tajo inflige más DAÑ y otorga mejor recuperación de PH. \n<@ba.info>Consumir 4 acumulaciones de Vulnerabilidad mejora la tercera secuencia de tajos.</>"
+      "description": "ACTIVADOR DE COMBO: Cuando <#ba.crush>Triturar</> o <#ba.fracture>Brecha</> <#ba.consume>consume</> acumulación(es) de <#ba.noguard>Vulnerabilidad</> del enemigo. \nRealiza una cantidad de secuencias de cortes (hasta 3) según la cantidad Máx. de acumulaciones de <#ba.noguard>Vulnerabilidad</> <#ba.consume>consumidas</> de un enemigo, inflige <@ba.pd>DAÑ físico</> y recupera algunos PH. Cada tajo inflige más DAÑ y otorga mejor recuperación de PH. \n<@ba.info>Consumir 4 acumulaciones de Vulnerabilidad mejora la tercera secuencia de cortes.</>"
     },
     "ultimate": {
       "ultimate": {
@@ -101,8 +101,8 @@
     },
     "talent2": {
       "levels": [
-        "Máxima <@ba.key>Estandarte de Guardia del escudo, adelante</>, mejorada: Cualquier operador que active los efectos subsecuentes de la máxima también obtiene <@ba.key>Moral ferviente</> durante <@ba.vup>{duration:0}</> s. \n<@ba.info>Requiere activar el talento: El banner viviente.</>",
-        "Máxima <@ba.key>Estandarte de Guardia del escudo, adelante</>, mejorada: Cualquier operador que active los efectos subsecuentes de la máxima también obtiene <@ba.key>Moral ferviente</> durante <@ba.vup>{duration:0}</> s. \n<@ba.info>Requiere activar el talento: El banner viviente.</>"
+        "Máxima <@ba.key>Estandarte de Guardia del escudo, adelante</>, mejorada: Cualquier operador que active los efectos subsecuentes de la máxima también obtiene <@ba.key>Moral ferviente</> durante <@ba.vup>{duration:0}</> s. \n<@ba.info>Requiere activar el talento: El estandarte viviente.</>",
+        "Máxima <@ba.key>Estandarte de Guardia del escudo, adelante</>, mejorada: Cualquier operador que active los efectos subsecuentes de la máxima también obtiene <@ba.key>Moral ferviente</> durante <@ba.vup>{duration:0}</> s. \n<@ba.info>Requiere activar el talento: El estandarte viviente.</>"
       ],
       "name": "Instrucción táctica"
     },
@@ -139,7 +139,7 @@
       "name": "“Avanzar”"
     },
     "potential3": {
-      "description": "Talento <@ba.key>El banner viviente</> mejorado: La cantidad de Recuperación de PH necesaria para obtener <@ba.key>Moral ferviente</> se reduce a <@ba.vup>{atb_gain:0}</>. Límite Máx. de acumulaciones de <@ba.key>Moral ferviente</> en uno mismo <@ba.vup>+{max_stack_owner-3}</>.",
+      "description": "Talento <@ba.key>El estandarte viviente</> mejorado: La cantidad de Recuperación de PH necesaria para obtener <@ba.key>Moral ferviente</> se reduce a <@ba.vup>{atb_gain:0}</>. Límite Máx. de acumulaciones de <@ba.key>Moral ferviente</> en uno mismo <@ba.vup>+{max_stack_owner-3}</>.",
       "name": "Cuando el estandarte ondea"
     },
     "potential4": {

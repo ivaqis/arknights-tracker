@@ -36,6 +36,9 @@
                   )[0];
                   if (isEquipment) {
                       return latest?.equipment?.includes(weapon.id) || false;
+                  }
+                  if (isEnemy) {
+                      return latest?.enemies?.includes(weapon.id) || false;
                   } else {
                       return latest?.weapons?.includes(weapon.id) || false;
                   }

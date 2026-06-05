@@ -71,7 +71,7 @@
         "weaknessDurationS": "Durata Debolezza (s)"
       },
       "name": "Aggressione da manuale",
-      "description": "Brandisce lo spadone per eseguire due fendenti consecutivi che infliggono <@ba.pd>danni fisici</> e applicano <#ba.weak>Indebolimento</>, seguiti da un potente colpo dall'alto che infligge ingenti <@ba.pd>danni fisici</> e applica <#ba.knockdown>Abbattimento</> a tutti i nemici nell'area d'effetto."
+      "description": "Brandisce lo spadone per eseguire due fendenti consecutivi che infliggono <@ba.pd>danni fisici</> e applicano <#ba.weak>Debolezza</>, seguiti da un potente colpo dall'alto che infligge ingenti <@ba.pd>danni fisici</> e applica <#ba.knockdown>Abbattimento</> a tutti i nemici nell'area d'effetto."
     },
     "indicator": {
       "levels": [

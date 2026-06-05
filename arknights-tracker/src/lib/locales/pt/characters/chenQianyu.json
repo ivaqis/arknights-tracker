@@ -93,7 +93,7 @@
         "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de arma + 10%",
         "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de arma + 20%"
       ],
-      "name": "Crítico de Lâminas"
+      "name": "Crítica de Lâminas"
     },
     "baseSkill2": {
       "levels": [
@@ -129,7 +129,7 @@
       "name": "Chi Xiao Improvisado"
     },
     "potential5": {
-      "description": "Combo de habilidades <@ba.key>Voar Até as Estrelas</> melhorado: a duração do Tempo de Recarga agora é <@ba.vup>{coolDown:0}</> s.",
+      "description": "Combo de habilidades <@ba.key>Voar Até as Estrelas</> melhorado: a duração do Tempo de Recarga é <@ba.vup>{coolDown:0}</> s.",
       "name": "Ligado com o Mundo"
     }
   },

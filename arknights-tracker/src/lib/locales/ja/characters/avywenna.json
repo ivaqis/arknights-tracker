@@ -121,7 +121,7 @@
       "name": "ダブル・ダウン"
     },
     "potential2": {
-      "description": "<@ba.key>雷槍</>、<@ba.key>強雷槍</>の持続時間<@ba.vup>+{potential_2:0}</>秒",
+      "description": "<@ba.key>雷槍</>、<@ba.key>強雷槍</>の存在する時間<@ba.vup>+{potential_2:0}</>秒",
       "name": "圧強め"
     },
     "potential3": {

@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Kampffertigkeit <@ba.key>Dolly-Rausch</> verbessert: Wird der zusätzliche Effekt ausgelöst, während ein Gegner mit <#ba.corrupt>Korrosion</> in der Nähe ist, wird die Kampffertigkeit gleich nochmal gewirkt. \n<@ba.info>Dieser Effekt wird nur einmal pro aktivem Wirken der Kampffertigkeit ausgelöst.</>"
+        "Kampffertigkeit <@ba.key>Dolly-Rausch</> verbessert: Wird der zusätzliche Effekt ausgelöst, während ein Gegner mit <#ba.corrupt>Korrosion</> in der Nähe ist, wird die Kampffertigkeit gleich noch mal gewirkt. \n<@ba.info>Dieser Effekt kann nur einmal pro aktivem Wirken der Kampffertigkeit ausgelöst werden.</>"
       ],
       "name": "Berggipfel-Surfer"
     },

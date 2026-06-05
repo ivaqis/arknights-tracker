@@ -3,7 +3,6 @@
 export const locations = {
   "world_energy_point01_7": {
     "id": "world_energy_point01_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_1&p=2100460006",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -23,31 +22,8 @@ export const locations = {
       60
     ]
   },
-  "world_energy_point05_7": {
-    "id": "world_energy_point05_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=WL&s=WL_2&p=22800760005",
-    "region": "wuling",
-    "costStamina": 80,
-    "enemyIds": [
-      "eny_0091_wgshoal",
-      "eny_0089_wgreflec",
-      "eny_0106_wgthorns2",
-      "eny_0088_wgthorns",
-      "eny_0105_wgslime2",
-      "eny_0087_wgslime"
-    ],
-    "enemyLevels": [
-      60,
-      60,
-      60,
-      60,
-      60,
-      60
-    ]
-  },
   "world_energy_point02_7": {
     "id": "world_energy_point02_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_5&p=3400270005",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -71,59 +47,8 @@ export const locations = {
       60
     ]
   },
-  "world_energy_point06_7": {
-    "id": "world_energy_point06_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=WL&s=WL_3&p=23300220007",
-    "region": "wuling",
-    "costStamina": 80,
-    "enemyIds": [
-      "eny_0054_hsmino",
-      "eny_0085_hsrogue",
-      "eny_0055_hscrane",
-      "eny_0103_hshunt2",
-      "eny_0084_hshunt",
-      "eny_0096_hsmob2",
-      "eny_0053_hsmob"
-    ],
-    "enemyLevels": [
-      60,
-      60,
-      60,
-      60,
-      60,
-      60,
-      60
-    ]
-  },
-  "world_energy_point04_7": {
-    "id": "world_energy_point04_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_7&p=2800200042",
-    "region": "theBase",
-    "costStamina": 80,
-    "enemyIds": [
-      "eny_0048_hvybow",
-      "eny_0018_lbtough",
-      "eny_0074_lbshield",
-      "eny_0049_rogue",
-      "eny_0066_lbhunt2",
-      "eny_0065_lbmob2",
-      "eny_0059_erhound",
-      "eny_0050_hound"
-    ],
-    "enemyLevels": [
-      60,
-      60,
-      60,
-      60,
-      60,
-      60,
-      60,
-      60
-    ]
-  },
   "world_energy_point03_7": {
     "id": "world_energy_point03_7",
-    "url": "https://opendfieldmap.org/?f=qgI&r=VL&s=VL_6&p=3500180008",
     "region": "theBase",
     "costStamina": 80,
     "enemyIds": [
@@ -147,13 +72,82 @@ export const locations = {
       60
     ]
   },
+  "world_energy_point04_7": {
+    "id": "world_energy_point04_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0048_hvybow",
+      "eny_0018_lbtough",
+      "eny_0074_lbshield",
+      "eny_0049_rogue",
+      "eny_0066_lbhunt2",
+      "eny_0065_lbmob2",
+      "eny_0059_erhound",
+      "eny_0050_hound"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
+  },
+  "world_energy_point05_7": {
+    "id": "world_energy_point05_7",
+    "region": "wuling",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0091_wgshoal",
+      "eny_0089_wgreflec",
+      "eny_0106_wgthorns2",
+      "eny_0088_wgthorns",
+      "eny_0105_wgslime2",
+      "eny_0087_wgslime"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
+  },
+  "world_energy_point06_7": {
+    "id": "world_energy_point06_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0054_hsmino",
+      "eny_0085_hsrogue",
+      "eny_0055_hscrane",
+      "eny_0103_hshunt2",
+      "eny_0084_hshunt",
+      "eny_0096_hsmob2",
+      "eny_0053_hsmob"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
+  },
   "world_energy_point07_7": {
     "id": "world_energy_point07_7",
     "url": "https://oem.re/?f=%7E1h&r=WL&s=WL_4&p=23400290001",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
-      "eny_0090_wgabyss",
+      "eny_0090_wgabyss_sluggish",
       "eny_0107_wgshoal2_sluggish",
       "eny_0089_wgreflec",
       "eny_0106_wgthorns2",
@@ -187,6 +181,27 @@ export const locations = {
     ],
     "enemyLevels": [
       60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
+  },
+  "world_energy_point09_7": {
+    "id": "world_energy_point09_7",
+    "region": "wuling",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0113_jzogre",
+      "eny_0055_hscrane",
+      "eny_0085_hsrogue",
+      "eny_0053_hsmob",
+      "eny_0084_hshunt",
+      "eny_0112_jzmonk"
+    ],
+    "enemyLevels": [
       60,
       60,
       60,

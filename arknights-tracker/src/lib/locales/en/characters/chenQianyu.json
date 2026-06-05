@@ -129,7 +129,7 @@
       "name": "Improvised Chi Xiao"
     },
     "potential5": {
-      "description": "Combo skill <@ba.key>Soar to the Stars</> improved: Length of cooldown is now <@ba.vup>{coolDown:0}</>s.",
+      "description": "Combo skill <@ba.key>Soar to the Stars</> improved: Length of cooldown <@ba.vup>{coolDown:0}</>s.",
       "name": "Bonded with the World"
     }
   },

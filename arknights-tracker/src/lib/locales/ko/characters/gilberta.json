@@ -64,7 +64,7 @@
         "artsSusceptibilityIncreasePerVulnerabilityStack": "방어 불능이 중첩될 때마다 증가하는 아츠 취약 효과"
       },
       "name": "아케인 스태프 · 중력장",
-      "description": "<@ba.key>중력 혼란 구역</>을 생성하여, 구역 내의 적에게 즉시 1회의 <@ba.natur>자연 피해</>를 주고 <#ba.naturalinflict>자연 부착</>을 부여합니다. <@ba.key>중력 혼란 구역</>의 목표에 <#ba.slow>감속</>과 <#ba.spellvul>아츠 취약</>을 부여합니다. 목표가 <#ba.noguard>방어 불능</> 상태일 경우, <#ba.spellvul>아츠 취약</> 효과는 <#ba.noguard>방어 불능</> 스택 수치에 따라 추가 증가합니다.\n<@ba.info>구역 내 목표가 띄우기 상태일 경우, 구역 효과가 종료될 때까지 띄우기 상태를 유지합니다.</>"
+      "description": "<@ba.key>중력 혼란 구역</>을 생성하여, 구역 내의 적에게 즉시 1회의 <@ba.natur>자연 피해</>를 주고 <#ba.naturalinflict>자연 부착</>을 부여합니다. <@ba.key>중력 혼란 구역</>의 목표에 <#ba.slow>감속</>과 <#ba.spellvul>아츠 취약</>을 부여합니다. 목표가 <#ba.noguard>방어 불능</> 상태일 경우, <#ba.spellvul>아츠 취약</> 효과는 <#ba.noguard>방어 불능</> 스택 수치에 따라 추가로 증가합니다.\n<@ba.info>구역 내 목표가 띄우기 상태일 경우, 구역 효과가 종료될 때까지 띄우기 상태를 유지합니다.</>"
     },
     "indicator": {
       "levels": [

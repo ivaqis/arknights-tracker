@@ -248,8 +248,7 @@ export const characters = {
     element: "cryo",
     class: "caster",
     weapon: "handcannon",
-    birthDate: "21-06",
-    isNew: false
+    birthDate: "21-06"
   },
   rossi: {
     id: "rossi",
@@ -258,8 +257,7 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    birthDate: "10-03",
-    isNew: false
+    birthDate: "10-03"
   },
   zhuangfy: {
     id: "zhuangfy",
@@ -268,7 +266,15 @@ export const characters = {
     element: "electric",
     class: "striker",
     weapon: "artsUnit",
-    birthDate: "07-08",
-    isNew: true
+    birthDate: "07-08"
+  },
+  mifu: {
+    id: "mifu",
+    name: "Mi Fu",
+    rarity: 6,
+    element: "physical",
+    class: "guard",
+    weapon: "greatSword",
+    birthDate: "09-07"
   }
 };

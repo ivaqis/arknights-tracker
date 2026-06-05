@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Habilidade de batalha <@ba.key>Corrida de Dolly</> melhorada: acionar o efeito adicional enquanto um inimigo com <#ba.corrupt>Corrosão</> está por perto conjura imediatamente a habilidade de batalha novamente. \n<@ba.info>Esse efeito só é acionado uma vez por conjuração de habilidade de batalha ativa.</>"
+        "Habilidade de batalha <@ba.key>Corrida de Dolly</> melhorada: acionar o efeito adicional enquanto um inimigo com <#ba.corrupt>Corrosão</> está por perto conjura imediatamente a habilidade de batalha novamente. \n<@ba.info>Esse efeito só pode ser acionado uma vez por conjuração de habilidade de batalha ativa.</>"
       ],
       "name": "Surfista de Picos Montanhosos"
     },

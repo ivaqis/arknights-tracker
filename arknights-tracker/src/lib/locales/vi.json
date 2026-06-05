@@ -741,7 +741,9 @@
     "hetoniteComponent": "Linh Kiện Huyết Đồng",
     "hetoniteSolution": "Dung Dịch Huyết Đồng",
     "precipitationAcid": "Axit Lắng Đọng",
-    "liquidHeavyXiranite": "Xiranite Nặng Hóa Lỏng"
+    "liquidHeavyXiranite": "Xiranite Nặng Hóa Lỏng",
+    "centuryRind": "Trần Bì Trăm Năm",
+    "caudalGoldscale": "Vảy Đuôi Hoàng Kim"
   },
   "common": {
     "copy": "Sao chép",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Công Nghiệp 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "Thợ Săn Cá 3.0",
     "lupineScarlet": "Lupine Scarlet",
     "loneBarge": "Thuyền Đơn Độc",
-    "flickersInTheMist": "Đốm Sáng giữa Màn Sương"
+    "flickersInTheMist": "Đốm Sáng giữa Màn Sương",
+    "phantomPain": "Cơn Đau Ảo",
+    "amaranthineTassel": "Dải Tua Bất Diệt",
+    "beaconOfDuty": "Ngọn Đuốc Trách Nhiệm"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "Năng Lượng Bồi Tích Dữ Dội: Đá Ranh Giới",
     "world_energy_point08_3": "Năng Lượng Bồi Tích: Khu Thử Nghiệm",
     "world_energy_point08_2": "Năng Lượng Bồi Tích: Khu Thử Nghiệm",
-    "world_energy_point08_6": "Năng Lượng Bồi Tích Dữ Dội: Khu Thử Nghiệm"
+    "world_energy_point08_6": "Năng Lượng Bồi Tích Dữ Dội: Khu Thử Nghiệm",
+    "world_energy_point09_1": "Năng Lượng Bồi Tích: Cốc Tàng Kiếm",
+    "world_energy_point09_2": "Năng Lượng Bồi Tích: Cốc Tàng Kiếm",
+    "world_energy_point09_3": "Năng Lượng Bồi Tích: Cốc Tàng Kiếm",
+    "world_energy_point09_4": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
+    "world_energy_point09_5": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
+    "world_energy_point09_6": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
+    "world_energy_point09_7": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Đào Hầm",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "Nefarith, \"Bonekrusher\"",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, \"Kẻ Chinh Phục\"",
-    "eny_0082_hsbear": "Người Gõ Trống Trời"
+    "eny_0082_hsbear": "Người Gõ Trống Trời",
+    "eny_0112_jzmonk": "Rockhowler",
+    "eny_0113_jzogre": "Gấu Nanh Dài Thiết Giáp",
+    "eny_0114_jzmking": "Craghowler"
   },
   "essencesPage": {
     "optimizer": "Tối ưu hóa Cày cuốc",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Găng Thanh Ba",
     "item_equip_t4_suit_expend_spell01_edc_02": "Gậy Xiranflow",
     "item_equip_t4_suit_expend_spell01_body_02": "Giáp Nhẹ Xiranflow",
-    "item_equip_t4_suit_phy01_hand_03": "Giáp Tay TAC Kiếm Sĩ T1"
+    "item_equip_t4_suit_phy01_hand_03": "Giáp Tay TAC Kiếm Sĩ T1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Bộ Định Vị Thanh Ba T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Giáp Lão luyện",
+    "item_equip_t4_suit_crush_fracture_body_02": "Giáp Lão Luyện T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Dao Đẩy Lão Luyện",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Dao Đẩy Lão Luyện T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Găng Lão Luyện",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Găng Lão Luyện T1",
+    "item_equip_t4_suit_phy01_body_04": "Giáp Sợi Kiếm Sĩ"
   },
   "packs": {
     "none": "Không Theo Bộ",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "Cách Điện Mordvolt",
     "suit_wisdwill01": "Khu Phức Hợp Nhẹ",
     "suit_combo_cd01": "Thanh Ba",
-    "suit_expend_spell01": "Xiranflow"
+    "suit_expend_spell01": "Xiranflow",
+    "suit_crush_fracture": "Lão Luyện"
   },
   "equipmentTypes": {
     "body": "Giáp",
@@ -1887,11 +1913,11 @@
     "pump_1": "Máy Bơm Chất Lỏng",
     "pump_2": "Máy Bơm Chống Ăn Mòn Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Chế Độ STD",
     "liquid": "Chế Độ Lỏng"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Nguồn",
       "using": "Công Thức Áp Dụng",

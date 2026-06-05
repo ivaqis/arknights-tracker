@@ -69,7 +69,7 @@
         "duringUltimateBatkSeq3Multiplier": "Saat Ultimate: Pengganda BATK SEQ 3"
       },
       "name": "Smiting Tempest",
-      "description": "Berubah menjadi <@ba.key>Empyrean of Truth</> yang memberikan penguatan ini:\nserangan dasar Zhuang Fangyi akan diperkuat dan aksinya akan lebih sulit dihentikan;\nSkill tarung <@ba.key>Mantra of Sundering</> akan mendapatkan pengganda DMG yang lebih besar dan jangkauan efek yang lebih tinggi, dan Sambaran Guntur terakhir juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada target yang terkena.\nSkill kombo <@ba.key>Breath of Transformation</> akan mendapatkan pengganda DMG yang lebih besar, cooldown akan menjadi {combo_cd_rate:0} kali lebih cepat, dan efek akan diakibatkan kepada musuh dalam area kecil.\nPenggunaan pertama skill tarung <@ba.key>Mantra of Sundering</> kepada target yang tersedia tidak akan memakai SP atau <#ba.conduct>Electrification</>, dan dijamin akan memunculkan 3 <@ba.key>Sunderblade</> walau target tidak terkena <#ba.conduct>Electrification</>."
+      "description": "Berubah menjadi <@ba.key>Empyrean of Truth</> yang memberikan penguatan ini:\nserangan dasar Zhuang Fangyi akan diperkuat dan aksinya akan lebih sulit disela;\nSkill tarung <@ba.key>Mantra of Sundering</> akan mendapatkan pengganda DMG yang lebih besar dan jangkauan efek yang lebih tinggi, dan Sambaran Guntur terakhir juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada target yang terkena.\nSkill kombo <@ba.key>Breath of Transformation</> akan mendapatkan pengganda DMG yang lebih besar, cooldown akan menjadi {combo_cd_rate:0} kali lebih cepat, dan efek akan diakibatkan kepada musuh dalam area kecil.\nPenggunaan pertama skill tarung <@ba.key>Mantra of Sundering</> tidak akan memakai SP atau <#ba.conduct>Electrification</>, dan jika ada target yang tersedia, dijamin akan memunculkan 3 <@ba.key>Sunderblade</> walau target tidak terkena <#ba.conduct>Electrification</>."
     },
     "indicator": {
       "levels": [
@@ -89,8 +89,8 @@
     },
     "talent2": {
       "levels": [
-        "Mendapatkan peluang sebesar <@ba.vup>{base_rate:0%}</> untuk kebal terhadap DMG yang diterima, dan setiap <@ba.key>Sunderblade</> di sekitar akan meningkatkan peluang ini lagi sebesar <@ba.vup>+{sword_rate:0%}</>.\nSetelah DMG Immunity aktif, HP Zhuang Fangyi juga akan pulih sebesar<@ba.heal>{heal:0%}</> HP Maks. Efek pemulihan HP ini hanya aktif satu kali setiap <@ba.vup>{duration:0}</> dtk.",
-        "Mendapatkan peluang sebesar <@ba.vup>{base_rate:0%}</> untuk kebal terhadap DMG yang diterima, dan setiap <@ba.key>Sunderblade</> di sekitar akan meningkatkan peluang ini lagi sebesar <@ba.vup>+{sword_rate:0%}</>.\nSetelah DMG Immunity aktif, HP Zhuang Fangyi juga akan pulih sebesar<@ba.heal>{heal:0%}</> HP Maks. Efek pemulihan HP ini hanya aktif satu kali setiap <@ba.vup>{duration:0}</> dtk."
+        "Mendapatkan peluang sebesar <@ba.vup>{base_rate:0%}</> untuk kebal terhadap DMG yang diterima, dan setiap <@ba.key>Sunderblade</> di sekitar akan meningkatkan peluang ini lagi sebesar <@ba.vup>+{sword_rate:0%}</>.\nSetelah DMG Immunity aktif, HP Zhuang Fangyi juga akan pulih hingga <@ba.heal>{heal:0%}</> HP Maks. Efek pemulihan HP ini hanya bisa diaktifkan satu kali setiap <@ba.vup>{duration:0}</> dtk.",
+        "Mendapatkan peluang sebesar <@ba.vup>{base_rate:0%}</> untuk kebal terhadap DMG yang diterima, dan setiap <@ba.key>Sunderblade</> di sekitar akan meningkatkan peluang ini lagi sebesar <@ba.vup>+{sword_rate:0%}</>.\nSetelah DMG Immunity aktif, HP Zhuang Fangyi juga akan pulih hingga <@ba.heal>{heal:0%}</> HP Maks. Efek pemulihan HP ini hanya bisa diaktifkan satu kali setiap <@ba.vup>{duration:0}</> dtk."
       ],
       "name": "Ordained by Heaven"
     },
@@ -135,7 +135,7 @@
       "name": "Absolute Composure"
     },
     "potential5": {
-      "description": "<@ba.vup>Saat transformasi <@ba.key>Empyrean of Truth</>, DMG yang ditimbulkan oleh Zhuang Fangyi akan mengabaikan {100*ignore_pulse_resist:0}</> <@ba.pulse>Resistansi Electric</> musuh.",
+      "description": "Saat transformasi <@ba.key>Empyrean of Truth</>, DMG yang ditimbulkan oleh Zhuang Fangyi akan mengabaikan <@ba.vup>{100*ignore_pulse_resist:0}</> <@ba.pulse>Resistansi Electric</> musuh.",
       "name": "Storm of Transformation"
     }
   },

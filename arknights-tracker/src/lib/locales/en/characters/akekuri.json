@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Ultimate <@ba.key>SQUAD! ON ME!</> improved: When ultimate is active, gains <#ba.combo>Link</>."
+        "Ultimate <@ba.key>SQUAD! ON ME!</> improved: When ultimate is active, grants a <#ba.combo>Link</> buff."
       ],
       "name": "Staying in the Zone"
     },

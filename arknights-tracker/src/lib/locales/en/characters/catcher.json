@@ -71,7 +71,7 @@
         "weaknessDurationS": "Weakness Duration (s)"
       },
       "name": "Textbook Assault",
-      "description": "Swings the greatsword to perform 2 consecutive slashes to deal <@ba.pd>Physical DMG</> and apply <#ba.weak>Weaken</>, followed by a powerful downward slam that deals massive <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies within the area of effect."
+      "description": "Swings the greatsword to perform 2 consecutive slashes to deal <@ba.pd>Physical DMG</> and apply <#ba.weak>Weakness</>, followed by a powerful downward slam that deals massive <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies within the area of effect."
     },
     "indicator": {
       "levels": [

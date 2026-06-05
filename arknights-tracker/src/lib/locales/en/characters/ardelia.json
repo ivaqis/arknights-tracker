@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Battle skill <@ba.key>Dolly Rush</> improved: Triggering the additional effect while an enemy with <#ba.corrupt>Corrosion</> is nearby immediately casts the battle skill again. \n<@ba.info>This effect only triggers once per active battle skill casting.</>"
+        "Battle skill <@ba.key>Dolly Rush</> improved: Triggering the additional effect while an enemy with <#ba.corrupt>Corrosion</> is nearby immediately casts the battle skill again. \n<@ba.info>This effect can only trigger once per active battle skill casting.</>"
       ],
       "name": "Mountainpeak Surfer"
     },

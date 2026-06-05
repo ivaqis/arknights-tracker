@@ -130,6 +130,7 @@
     "weponbox_1_1_1": "Brigand's Calling",
     "weponbox_1_1_2": "Lupine Scarlet",
     "weponbox_1_2_1": "Drifting Raft Issue",
+    "weponbox_1_3_1": "Scarlet Know Issue",
     "special_1_1_1": "River's Daughter",
     "weaponbox_constant_1": "Solid Ice Issue",
     "weaponbox_constant_2": "Cosmic Voice Issue",
@@ -318,6 +319,7 @@
     "special_1_1_1": "River's Daughter",
     "special_1_1_2": "Wolf Pearl",
     "special_1_2_1": "Thunder of Renewal",
+    "special_1_3_1": "Fists of No Regrets",
     "standard_01": "Basic Headhunting",
     "new_player_01": "New Horizons Headhunting",
     "weponbox_1_0_1": "Smelting Forge Issue",
@@ -326,6 +328,7 @@
     "weponbox_1_1_1": "Brigand's Calling",
     "weponbox_1_1_2": "Lupine Scarlet",
     "weponbox_1_2_1": "Drifting Raft Issue",
+    "weponbox_1_3_1": "Scarlet Know Issue",
     "weaponbox_constant_1": "Solid Ice Issue",
     "weaponbox_constant_2": "Cosmic Voice Issue",
     "weaponbox_constant_3": "Far Expedition Issue",
@@ -402,7 +405,15 @@
     "monumentalEtchingCorruptingSurge": "Monumental Etching: Corrupting Surge",
     "partyTogetherPastryTower": "[Party Together] - [Pastry Tower]",
     "sanitySupply": "Sanity Supply",
-    "curiosAndMyths": "[Curios and Myths] Sign-In"
+    "curiosAndMyths": "[Curios and Myths] Sign-In",
+    "oneWithHerFistsSignIn": "One with Her Fists Sign-In",
+    "protocolPassViridianMont": "Protocol Pass: Viridian Mont",
+    "carlyFairytaleOfTheWuling": "Carly's Fairytale of the Wuling",
+    "trialAlgorithmics": "Trial Algorithmics",
+    "trialOfSwordmancy": "Trial of Swordmancy",
+    "contingencyContract": "Contingency Contract",
+    "contingencyReadiness": "Contingency Readiness",
+    "seatchForSwordVaultDale": "Search for Sword Vault Dale"
   },
   "mouths": {
     "january": "January",
@@ -800,7 +811,9 @@
     "hetoniteComponent": "Hetonite Component",
     "hetoniteSolution": "Hetonite Solution",
     "precipitationAcid": "Precipitation Acid",
-    "liquidHeavyXiranite": "Liquid Heavy Xiranite"
+    "liquidHeavyXiranite": "Liquid Heavy Xiranite",
+    "centuryRind": "Century Rind",
+    "caudalGoldscale": "Caudal Goldscale"
   },
   "common": {
     "copy": "Copy",
@@ -985,7 +998,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -1055,7 +1070,10 @@
     "finchaser30": "Finchaser 3.0",
     "lupineScarlet": "Lupine Scarlet",
     "loneBarge": "Lone Barge",
-    "flickersInTheMist": "Flickers in the Mist"
+    "flickersInTheMist": "Flickers in the Mist",
+    "phantomPain": "Phantom Pain",
+    "amaranthineTassel": "Amaranthine Tassel",
+    "beaconOfDuty": "Beacon of Duty"
   },
   "cookies": {
     "title": "We use cookies",
@@ -1152,7 +1170,14 @@
     "world_energy_point07_4": "Severe Energy Alluvium: Marker Stone",
     "world_energy_point08_3": "Energy Alluvium: Test Area",
     "world_energy_point08_2": "Energy Alluvium: Test Area",
-    "world_energy_point08_6": "Severe Energy Alluvium: Test Area"
+    "world_energy_point08_6": "Severe Energy Alluvium: Test Area",
+    "world_energy_point09_1": "Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_2": "Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_3": "Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_4": "Severe Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_5": "Severe Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_6": "Severe Energy Alluvium: Sword Vault Dale",
+    "world_energy_point09_7": "Severe Energy Alluvium: Sword Vault Dale"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunneling Nidwyrm",
@@ -1226,7 +1251,10 @@
     "eny_0078_nefarp1": "Nefarith, \"Bonekrusher\"",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, \"Conqueror\"",
-    "eny_0082_hsbear": "Skydrummer"
+    "eny_0082_hsbear": "Skydrummer",
+    "eny_0112_jzmonk": "Rockhowler",
+    "eny_0113_jzogre": "Armored Manglerbeast",
+    "eny_0114_jzmking": "Craghowler"
   },
   "essencesPage": {
     "optimizer": "Farming Optimizer",
@@ -1474,7 +1502,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Qingbo Gloves",
     "item_equip_t4_suit_expend_spell01_edc_02": "Xiranflow Baton",
     "item_equip_t4_suit_expend_spell01_body_02": "Xiranflow Light Armor",
-    "item_equip_t4_suit_phy01_hand_03": "Swordmancer TAC Gauntlets T1"
+    "item_equip_t4_suit_phy01_hand_03": "Swordmancer TAC Gauntlets T1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Qingbo Positioning Kit T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Grizzled Edge Armor",
+    "item_equip_t4_suit_crush_fracture_body_02": "Grizzled Edge Armor T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Grizzled Edge Push Knife",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Grizzled Edge Push Knife T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Grizzled Edge Gauntlets",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Grizzled Edge Gauntlets T1",
+    "item_equip_t4_suit_phy01_body_04": "Swordmancer Fiber Armor"
   },
   "packs": {
     "none": "Non-Set",
@@ -1522,7 +1558,8 @@
     "suit_wisd01": "Mordvolt Insulation",
     "suit_wisdwill01": "AIC Light",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Xiranflow"
+    "suit_expend_spell01": "Xiranflow",
+    "suit_crush_fracture": "Grizzled Edge"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1947,11 +1984,11 @@
     "pump_1": "Fluid Pump",
     "pump_2": "Acid Resistant Pump Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "STD Mode",
     "liquid": "Fluid Mode"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Source",
       "using": "Applicable Formulas",

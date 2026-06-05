@@ -71,7 +71,7 @@
         "weaknessDurationS": "Duração de Fraqueza (s)"
       },
       "name": "Referência de Assalto",
-      "description": "Balança a espada de duas mãos para aplicar 2 golpes cortantes consecutivos que causam <@ba.pd>DNO Físico</> e aplicam <#ba.weak>Enfraquecer</>, seguidos por um poderoso golpe para baixo que causa <@ba.pd>DNO Físico</> significativo e aplica <#ba.knockdown>Derrubar</> a todos os inimigos na área de efeito."
+      "description": "Balança a espada de duas mãos para aplicar 2 golpes cortantes consecutivos que causam <@ba.pd>DNO Físico</> e aplicam <#ba.weak>Fraqueza</>, seguidos por um poderoso golpe para baixo que causa <@ba.pd>DNO Físico</> significativo e aplica <#ba.knockdown>Derrubar</> a todos os inimigos na área de efeito."
     },
     "indicator": {
       "levels": [

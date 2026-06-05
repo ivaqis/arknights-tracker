@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Renforce l'ultime <@ba.key>ESCOUADE ! AVEC MOI !</> : tant que l'ultime est actif, octroie <#ba.combo>Lien</>."
+        "Renforce l'ultime <@ba.key>ESCOUADE ! AVEC MOI !</> : tant que l'ultime est actif, octroie bonus de <#ba.combo>Lien</>."
       ],
       "name": "Concentration totale"
     },

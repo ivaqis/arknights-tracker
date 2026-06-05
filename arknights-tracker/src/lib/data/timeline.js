@@ -860,5 +860,20 @@ export const rawEvents = [
     type: "protoPass",
     iconPosition: 50,
     version: "1.3"
+  },
+  {
+    id: "ev10-v1.3",
+    title: "events.oneWithHerFistsSignIn",
+    name: "",
+    startTime: "2026-06-04 22:00:00",
+    startTimeAsia: "2026-06-05 11:00:00",
+    endTime: "2026-06-26 11:59:59",
+    icon: "ev10-v1.3.jpg",
+    url: "",
+    color: "#bb2362",
+    layer: 4,
+    type: "signIn",
+    iconPosition: 17,
+    version: "1.3"
   }
 ];

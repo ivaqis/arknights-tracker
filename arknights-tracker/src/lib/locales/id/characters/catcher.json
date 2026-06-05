@@ -71,7 +71,7 @@
         "weaknessDurationS": "Durasi Weakness (dtk)"
       },
       "name": "Textbook Assault",
-      "description": "Mengayunkan pedang besar untuk melancarkan 2 tebasan beruntun sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.weak>Weaken</>, lalu menghantam kuat ke bawah sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek."
+      "description": "Mengayunkan pedang besar untuk melancarkan 2 tebasan beruntun sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.weak>Weakness</>, lalu menghantam kuat ke bawah sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek."
     },
     "indicator": {
       "levels": [

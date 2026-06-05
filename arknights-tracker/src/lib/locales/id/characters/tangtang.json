@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Skill kombo <@ba.key>RIVER, TO ME!</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya, dan cooldown-nya menjadi <@ba.vup>{coolDown:0}</> dtk.\nSkill tarung <@ba.key>IMA WAVERIDAAH!</> meningkat: Setiap kali ada <@ba.key>Pusaran Air</> yang dipakai dan diubah menjadi <@ba.key>Topan Air</>, <@ba.vup>{atb_return:0}</> SP akan <#ba.return>dikembalikan</> lagi.",
+      "description": "Skill kombo <@ba.key>RIVER, TO ME!</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya. Durasi cooldown menjadi <@ba.vup>{coolDown:0}</> dtk.\nSkill tarung <@ba.key>IMA WAVERIDAAH!</> meningkat: Setiap kali ada <@ba.key>Pusaran Air</> yang dipakai dan diubah menjadi <@ba.key>Topan Air</>, <@ba.vup>{atb_return:0}</> SP akan <#ba.return>dikembalikan</> lagi.",
       "name": "Reserve Hoard"
     },
     "potential2": {

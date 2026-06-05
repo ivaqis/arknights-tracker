@@ -2,7 +2,7 @@
   "baseInfo": {
     "tags": [
       "Cau. de dañ.",
-      "Combustir"
+      "Combustionar"
     ],
     "behaviourHateTags": [
       "Tecnología"
@@ -89,16 +89,16 @@
     },
     "talent1": {
       "levels": [
-        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain absorbe la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> absorbida otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0}s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>",
-        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain absorbe la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> absorbida otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0}s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>",
-        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain absorbe la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> absorbida otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0}s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>"
+        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain <#ba.absorb>absorbe</> la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> <#ba.absorb>absorbida</> otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0} s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>",
+        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain <#ba.absorb>absorbe</> la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> <#ba.absorb>absorbida</> otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0} s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>",
+        "Después de que el <#ba.lastcombo>Golpe final</> o el Remate del operador controlado golpea al enemigo, Laevatain <#ba.absorb>absorbe</> la <#ba.fireinflict>Imposición de calor</> de los enemigos cercanos. \nCada acumulación de <#ba.fireinflict>Imposición de calor</> <#ba.absorb>absorbida</> otorga a Laevatain 1 acumulación de <@ba.key>Fusión de llamas</> (acumulaciones Máx: {max_stack:0}). \nDespués de conseguir {max_stack:0} acumulaciones, el DAÑ infligido por Laevatain ignora <@ba.vup>{100*ignore_fire_resist:0}</> de la <@ba.fire>Resistencia al calor</> del enemigo durante {ignore_fire_resist_duration:0} s. \n<@ba.info>Laevatain también absorbe la Imposición de calor de enemigos derrotados cercanos.</>"
       ],
       "name": "Corazón abrasador"
     },
     "talent2": {
       "levels": [
-        "Cuando los PV bajan por debajo de {hp_threshold:0%}, obtiene <@ba.vup>{shelter:0%}</> <#ba.guard>Protección</> y restaura <@ba.heal>{heal_max_hp:0%}</> PV Máx. por segundo durante <@ba.vup>{duration:0}</>s. Este efecto se activa una vez cada {cd:0}s.",
-        "Cuando los PV bajan por debajo de {hp_threshold:0%}, obtiene <@ba.vup>{shelter:0%}</> <#ba.guard>Protección</> y restaura <@ba.heal>{heal_max_hp:0%}</> PV Máx. por segundo durante <@ba.vup>{duration:0}</>s. Este efecto se activa una vez cada {cd:0}s."
+        "Cuando los PV bajan por debajo de {hp_threshold:0%}, obtiene <@ba.vup>{shelter:0%}</> <#ba.guard>Protección</> y restaura <@ba.heal>{heal_max_hp:0%}</> PV Máx. por segundo durante <@ba.vup>{duration:0}</> s. Este efecto solo puede activarse una vez cada {cd:0} s.",
+        "Cuando los PV bajan por debajo de {hp_threshold:0%}, obtiene <@ba.vup>{shelter:0%}</> <#ba.guard>Protección</> y restaura <@ba.heal>{heal_max_hp:0%}</> PV Máx. por segundo durante <@ba.vup>{duration:0}</> s. Este efecto solo puede activarse una vez cada {cd:0} s."
       ],
       "name": "Reignición"
     },

@@ -89,9 +89,9 @@
     },
     "talent1": {
       "levels": [
-        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を吸収する\n吸収した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>",
-        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を吸収する\n吸収した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>",
-        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を吸収する\n吸収した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>"
+        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を<#ba.absorb>吸収</>する\n<#ba.absorb>吸収</>した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>",
+        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を<#ba.absorb>吸収</>する\n<#ba.absorb>吸収</>した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>",
+        "操作中のオペレーターの<#ba.lastcombo>重攻撃</>または終撃が敵に命中すると、レーヴァテインは周囲の敵から<#ba.fireinflict>灼熱付着</>を<#ba.absorb>吸収</>する\n<#ba.absorb>吸収</>した<#ba.fireinflict>灼熱付着</>1段階につき、<@ba.key>劫火</>を1段階獲得する（最大{max_stack:0}段階）\n{max_stack:0}段階に到達すると、レーヴァテインは{ignore_fire_resist_duration:0}秒間敵の<@ba.fire>灼熱耐性</>を<@ba.vup>{100*ignore_fire_resist:0}</>無視してダメージを与える\n<@ba.info>敵が近くで倒されるとき、その灼熱付着も吸収する</>"
       ],
       "name": "灼熱の心"
     },

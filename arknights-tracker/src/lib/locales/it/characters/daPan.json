@@ -127,7 +127,7 @@
       "name": "Ricetta speciale"
     },
     "potential5": {
-      "description": "Abilità di combattimento <@ba.key>GIRA QUEL WOK!</> migliorata: se l'abilità colpisce un solo nemico, applica 1 accumulo di <#ba.noguard>Vulnerabilità</> aggiuntivo. L'effetto si attiva una sola volta ogni {potential_5_interval:0} s.",
+      "description": "Abilità di combattimento <@ba.key>GIRA QUEL WOK!</> migliorata: se l'abilità colpisce un solo nemico, applica 1 accumulo di <#ba.noguard>Vulnerabilità</> aggiuntivo. L'effetto può attivarsi una sola volta ogni {potential_5_interval:0} s.",
       "name": "A tutto fuoco"
     }
   },

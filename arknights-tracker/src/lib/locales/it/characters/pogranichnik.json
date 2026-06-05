@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Incremento energia suprema"
       },
       "name": "Fendente della luna piena",
-      "description": "ATTIVAZIONE COMBO: quando <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</> <#ba.consume>consumano</> gli accumuli di <#ba.noguard>Vulnerabilità</> del nemico. \nEsegue sequenze di fendenti (fino a 3) in base al numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</>, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Ogni fendente infligge più danni e ripristina più PA. \n<@ba.info>Consumare 4 accumuli di Vulnerabilità potenzia la terza sequenza di fendenti.</>"
+      "description": "ATTIVAZIONE COMBO: quando <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</> <#ba.consume>consumano</> gli accumuli di <#ba.noguard>Vulnerabilità</> del nemico. \nEsegue sequenze di fendenti (fino a 3) in base al numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Ogni fendente infligge più danni e ripristina più PA. \n<@ba.info>Consumare 4 accumuli di Vulnerabilità potenzia la terza sequenza di fendenti.</>"
     },
     "ultimate": {
       "ultimate": {
