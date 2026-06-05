@@ -1561,7 +1561,7 @@
   "itemNames": {
     "item_port_battle_cannon_1": "Tháp Lựu Đạn",
     "item_port_battle_cannon_2": "Tháp Lựu Đạn HE",
-    "item_port_battle_debuff_1": "Nhà Máy Ngâm Axit Mk I",
+    "item_port_battle_debuff_1": "Bình Axit Mk I",
     "item_port_battle_fog_1": "Khí Mê-tan Mk I",
     "item_port_battle_frost_1": "Tháp LN",
     "item_port_battle_jet_1": "Tháp Đại Hồng Thủy",
@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "Cơm Chiên Võ Lăng",
     "item_corp4_grass2_1": "Cơm Chiên Rau Củ",
     "item_dog_1_slimeml_1_1": "Món Hầm Tổng Hợp",
-    "item_dog_hsmob_corp_1": "Mì Thịt Kho",
+    "item_dog_hsmob_corp_1": "Mì Thịt Kho của Dì Tian",
     "item_erhound_1_agmelee_1_moss_1_1": "Hoa Hỏa Sương",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "Thuốc Vang Vọng",
     "item_firebat_1_agrange_1_1": "Lò Đốt Ăn Được",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "Giáp Tay Công Thành",
     "item_drop_lbtough_1": "Lưỡi Rìu Vỡ Nát",
     "item_drop_sandb_1": "Sừng Rìu",
-    "item_drop_wgabyss_1": "Rượu Cổ Điển Tức Thời"
+    "item_drop_wgabyss_1": "Rượu Cổ Điển Tức Thời",
+    "item_drop_jzmonk_1": "Trần Bì Trăm Năm",
+    "item_drop_jzogre_1": "Vảy Đuôi Hoàng Kim",
+    "item_corp4_spc": "Khẩu Phần Đặc Biệt Rhodes Island",
+    "item_jzmonk_1_hsmob_1_1": "Trần Bì Trộn Măng"
   },
   "buildingNames": {
     "component_mc_1": "Máy Lắp Ráp",

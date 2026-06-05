@@ -1831,7 +1831,7 @@
     "item_bottled_food_1": "ส้ม​ซิ​โตร​มก​ระ​ป๋อง​ [C]",
     "item_bottled_food_2": "ส้ม​ซิ​โตร​มก​ระ​ป๋อง​ [B]",
     "item_bottled_food_3": "ส้ม​ซิ​โตร​มก​ระ​ป๋อง​ [A]",
-    "item_bottled_food_4": "เครื่องดื่ม​ดอก​หญ้า​ไหม",
+    "item_bottled_food_4": "เครื่องดื่ม​หญ้า​ไหม",
     "item_bottled_food_5": "ชา​หญ้า​ไหม",
     "item_bottled_grass1spc_1": "ชา​สมุนไพร​ดอก​หญ้า​ไหม",
     "item_bottled_grass1spc_2": "น้ำต้ม​สมุนไพร​หญ้า​ไหม",
@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "ข้าวผัด​อู่​หลิง",
     "item_corp4_grass2_1": "ข้าวผัด​สวน",
     "item_dog_1_slimeml_1_1": "สตู​ว์​แห่ง​การ​พบ​เจอ",
-    "item_dog_hsmob_corp_1": "บะหมี่​เนื้อ​ตุ๋น",
+    "item_dog_hsmob_corp_1": "บะหมี่​เนื้อ​ตุ๋น​สูตร​พิเศษ​ของ​ป้า​เ​ถี​ยน",
     "item_erhound_1_agmelee_1_moss_1_1": "ดอก​เพลิง​หมอก",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "ยา​รักษา​สะท้อน​เสียง",
     "item_firebat_1_agrange_1_1": "เดน​ส​แ​ท็​ค​กิน​ได้",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "ถุงมือ​เกราะ​หมัด​แห่ง​ป้อมปราการ",
     "item_drop_lbtough_1": "ใบ​ขวาน​ที่​แตกสลาย",
     "item_drop_sandb_1": "ขวาน​เขา",
-    "item_drop_wgabyss_1": "ไวน์​วิน​เท​จ​สำเร็จรูป"
+    "item_drop_wgabyss_1": "ไวน์​วิน​เท​จ​สำเร็จรูป",
+    "item_drop_jzmonk_1": "เปลือก​ร้อย​ปี",
+    "item_drop_jzogre_1": "เกล็ด​ทอง​ส่วน​หาง",
+    "item_corp4_spc": "เสบียง​พิเศษ​โรด​ส์​ไอ​แลนด์",
+    "item_jzmonk_1_hsmob_1_1": "หน่อไม้​รส​เปลือก​ส้ม"
   },
   "buildingNames": {
     "component_mc_1": "ยู​นิต​พิมพ์​แบบ",

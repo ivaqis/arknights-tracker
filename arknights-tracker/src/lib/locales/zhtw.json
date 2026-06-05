@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "武陵炒飯",
     "item_corp4_grass2_1": "錦素炒飯",
     "item_dog_1_slimeml_1_1": "燉肉會議",
-    "item_dog_hsmob_corp_1": "爛肉麵",
+    "item_dog_hsmob_corp_1": "田家特色爛肉麵",
     "item_erhound_1_agmelee_1_moss_1_1": "霧火之花",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "迴響秘劑",
     "item_firebat_1_agrange_1_1": "可食用巢雕",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "破城者拳甲",
     "item_drop_lbtough_1": "崩碎斧刃",
     "item_drop_sandb_1": "大斧角",
-    "item_drop_wgabyss_1": "速成陳釀"
+    "item_drop_wgabyss_1": "速成陳釀",
+    "item_drop_jzmonk_1": "百年陳皮",
+    "item_drop_jzogre_1": "尾尖金甲",
+    "item_corp4_spc": "羅德島特製口糧",
+    "item_jzmonk_1_hsmob_1_1": "陳皮拌筍"
   },
   "buildingNames": {
     "component_mc_1": "配件機",

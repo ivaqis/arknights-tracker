@@ -1687,7 +1687,7 @@
     "item_activity_xiranite_enr_cmpt": "Pièce en xiranite lourde expérimentale",
     "item_activity_xiranite_enr_hulu": "Gourde de jade en xiranite",
     "item_activity_xiranite_enr_tool": "Atomiseur Xiran-Hue expérimental",
-    "item_activity_xiranite_hulu": "Gourde de xiranite",
+    "item_activity_xiranite_hulu": "Gourde en xiranite",
     "item_carbon_enr": "Carbone stabilisé",
     "item_carbon_enr_powder": "Poudre de carbone dense",
     "item_carbon_mtl": "Carbone",
@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "Riz frit de Wuling",
     "item_corp4_grass2_1": "Riz frit du potager",
     "item_dog_1_slimeml_1_1": "Ragoût composé",
-    "item_dog_hsmob_corp_1": "Nouilles à la viande braisée",
+    "item_dog_hsmob_corp_1": "Nouilles à la viande braisée de Tian",
     "item_erhound_1_agmelee_1_moss_1_1": "Fleur d'ignibrume",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "Remède résonnant",
     "item_firebat_1_agrange_1_1": "Flambe comestible",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "Gantelets de phalange de siège",
     "item_drop_lbtough_1": "Lame de hache brisée",
     "item_drop_sandb_1": "Corne de brute",
-    "item_drop_wgabyss_1": "Millésime instantané"
+    "item_drop_wgabyss_1": "Millésime instantané",
+    "item_drop_jzmonk_1": "Écorce centenaire",
+    "item_drop_jzogre_1": "Écaille d'or caudale",
+    "item_corp4_spc": "Ration spéciale de Rhodes Island",
+    "item_jzmonk_1_hsmob_1_1": "Pousses au goût de zeste"
   },
   "buildingNames": {
     "component_mc_1": "Unité d'ajustage",

@@ -1484,5 +1484,47 @@ export const manualCrafts = {
                 "itemId": "item_wgslime_1_wgthorns_1_1"
             }
         ]
+    },
+    "hdwk_corp4_spc": {
+        "id": "hdwk_corp4_spc",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_wgslime_1"
+            },
+            {
+                "count": 2,
+                "itemId": "item_plant_sp_4"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_dog_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_corp4_spc"
+            }
+        ]
+    },
+    "hdwk_jzmonk_1_hsmob_1_1": {
+        "id": "hdwk_jzmonk_1_hsmob_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_jzmonk_1"
+            },
+            {
+                "count": 2,
+                "itemId": "item_drop_hsmob_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_jzmonk_1_hsmob_1_1"
+            }
+        ]
     }
-}
+};

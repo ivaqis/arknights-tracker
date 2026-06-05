@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "武陵チャーハン",
     "item_corp4_grass2_1": "野菜たっぷりチャーハン",
     "item_dog_1_slimeml_1_1": "豪快肉煮込み",
-    "item_dog_hsmob_corp_1": "爛肉麺",
+    "item_dog_hsmob_corp_1": "テンの名物爛肉麺",
     "item_erhound_1_agmelee_1_moss_1_1": "霧火の花",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "回響の秘薬",
     "item_firebat_1_agrange_1_1": "巣彫風味ソース",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "攻城者のガントレット",
     "item_drop_lbtough_1": "崩砕の斧",
     "item_drop_sandb_1": "斧甲獣の角",
-    "item_drop_wgabyss_1": "即席熟成酒"
+    "item_drop_wgabyss_1": "即席熟成酒",
+    "item_drop_jzmonk_1": "百年陳皮",
+    "item_drop_jzogre_1": "尾先の金鱗",
+    "item_corp4_spc": "ロドス特製レーション",
+    "item_jzmonk_1_hsmob_1_1": "陳皮と筍の和え物"
   },
   "buildingNames": {
     "component_mc_1": "組立機",

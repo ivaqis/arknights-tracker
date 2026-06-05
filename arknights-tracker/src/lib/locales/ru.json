@@ -1654,7 +1654,7 @@
     "item_port_miner_1": "Портативная ориджиниевая установка",
     "item_port_miner_2": "Добывающая ЭУ",
     "item_port_miner_3": "Добывающая ЭУ Mk II",
-    "item_port_miner_4": "Добывающая гидроустановка",
+    "item_port_miner_4": "Добывающая гидроуст.",
     "item_port_mix_pool_1": "Камера реактора",
     "item_port_mix_pool_2": "Расширенная камера",
     "item_port_planter_1": "Модуль посадки",
@@ -1917,7 +1917,7 @@
     "item_corp4_animal_1": "Жареный рис по-улински",
     "item_corp4_grass2_1": "Садовый жареный рис",
     "item_dog_1_slimeml_1_1": "Сборное рагу",
-    "item_dog_hsmob_corp_1": "Лапша с тушеным мясом",
+    "item_dog_hsmob_corp_1": "Особая лапша с тушеным мясом от тети Тянь",
     "item_erhound_1_agmelee_1_moss_1_1": "Цветок тенепламени",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "Памятное средство",
     "item_firebat_1_agrange_1_1": "Съедобная гнилотруба",
@@ -1958,7 +1958,11 @@
     "item_drop_lbroshan_1": "Рукавицы осадного кастетчика",
     "item_drop_lbtough_1": "Расколотое лезвие топора",
     "item_drop_sandb_1": "Рог-секира",
-    "item_drop_wgabyss_1": "Скороброженка"
+    "item_drop_wgabyss_1": "Скороброженка",
+    "item_drop_jzmonk_1": "Вековая кожура",
+    "item_drop_jzogre_1": "Золотая хвостовая чешуя",
+    "item_corp4_spc": "Особый паек «Родос Айленд»",
+    "item_jzmonk_1_hsmob_1_1": "Побеги со вкусом кожуры"
   },
   "buildingNames": {
     "component_mc_1": "Модуль штамповки",

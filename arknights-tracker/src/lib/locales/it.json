@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "Riso fritto di Wuling",
     "item_corp4_grass2_1": "Riso fritto all'ortolana",
     "item_dog_1_slimeml_1_1": "Stufato misto",
-    "item_dog_hsmob_corp_1": "Noodle con carne brasata",
+    "item_dog_hsmob_corp_1": "Noodle con carne brasata di Tian",
     "item_erhound_1_agmelee_1_moss_1_1": "Germoglio di brumafiamma",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "Rimedio echeggiante",
     "item_firebat_1_agrange_1_1": "Catasta commestibile",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "Coprimani di noccassalto",
     "item_drop_lbtough_1": "Lama d'ascia infranta",
     "item_drop_sandb_1": "Cornoscure",
-    "item_drop_wgabyss_1": "Spirito istantaneo"
+    "item_drop_wgabyss_1": "Spirito istantaneo",
+    "item_drop_jzmonk_1": "Scorza secolare",
+    "item_drop_jzogre_1": "Scaglia caudale dorata",
+    "item_corp4_spc": "Razione speciale della Rhodes Island",
+    "item_jzmonk_1_hsmob_1_1": "Germogli alla scorza"
   },
   "buildingNames": {
     "component_mc_1": "Unità di adattamento",

@@ -2364,5 +2364,33 @@ export const items = {
         "rarity": 5,
         "groupId": "gatherable",
         "subGroupId": "gatherable_drop"
+    },
+    "item_drop_jzmonk_1": {
+        "id": "item_drop_jzmonk_1",
+        "iconId": "item_drop_jzmonk_1",
+        "rarity": 1,
+        "groupId": "gatherable",
+        "subGroupId": "gatherable_drop"
+    },
+    "item_drop_jzogre_1": {
+        "id": "item_drop_jzogre_1",
+        "iconId": "item_drop_jzogre_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "subGroupId": "gatherable_drop"
+    },
+    "item_corp4_spc": {
+        "id": "item_corp4_spc",
+        "iconId": "item_corp4_spc",
+        "rarity": 5,
+        "groupId": "usable",
+        "subGroupId": "usable_other"
+    },
+    "item_jzmonk_1_hsmob_1_1": {
+        "id": "item_jzmonk_1_hsmob_1_1",
+        "iconId": "item_jzmonk_1_hsmob_1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "subGroupId": "usable_other"
     }
 };

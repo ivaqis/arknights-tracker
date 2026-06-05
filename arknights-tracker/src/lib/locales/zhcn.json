@@ -1855,7 +1855,7 @@
     "item_corp4_animal_1": "武陵炒饭",
     "item_corp4_grass2_1": "锦素炒饭",
     "item_dog_1_slimeml_1_1": "炖肉会议",
-    "item_dog_hsmob_corp_1": "烂肉面",
+    "item_dog_hsmob_corp_1": "田家特色烂肉面",
     "item_erhound_1_agmelee_1_moss_1_1": "雾火之花",
     "item_ethillu_1_wgslime_1_wgthorns_1_1": "回响秘剂",
     "item_firebat_1_agrange_1_1": "可食用巢雕",
@@ -1896,7 +1896,11 @@
     "item_drop_lbroshan_1": "破城者拳甲",
     "item_drop_lbtough_1": "崩碎斧刃",
     "item_drop_sandb_1": "大斧角",
-    "item_drop_wgabyss_1": "速成陈酿"
+    "item_drop_wgabyss_1": "速成陈酿",
+    "item_drop_jzmonk_1": "百年陈皮",
+    "item_drop_jzogre_1": "尾尖金甲",
+    "item_corp4_spc": "罗德岛特制口粮",
+    "item_jzmonk_1_hsmob_1_1": "陈皮拌笋"
   },
   "buildingNames": {
     "component_mc_1": "配件机",
