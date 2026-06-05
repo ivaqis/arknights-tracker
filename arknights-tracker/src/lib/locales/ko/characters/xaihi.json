@@ -81,8 +81,8 @@
     },
     "talent1": {
       "levels": [
-        "연계 스킬 <@ba.key>스트레스 테스트</>가 적에게 명중했을 때, 목표가 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.frozen>동결</> 상태일 경우, 받는 <@ba.cryst>냉기 피해</><@ba.vup> +{cryst_up:0%}</>, <@ba.vup>{duration:0}</>초 동안 지속. 해당 효과는 중첩되지 않습니다.",
-        "연계 스킬 <@ba.key>스트레스 테스트</>가 적에게 명중했을 때, 목표가 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.frozen>동결</> 상태일 경우, 받는 <@ba.cryst>냉기 피해</><@ba.vup> +{cryst_up:0%}</>, <@ba.vup>{duration:0}</>초 동안 지속. 해당 효과는 중첩되지 않습니다."
+        "연계 스킬 <@ba.key>스트레스 테스트</>가 적에게 명중했을 때, 만약 목표가 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.frozen>동결</> 상태일 경우, 받는 <@ba.cryst>냉기 피해</> <@ba.vup>+{cryst_up:0%}</>, <@ba.vup>{duration:0}</>초 동안 지속. 해당 효과는 중첩되지 않습니다.",
+        "연계 스킬 <@ba.key>스트레스 테스트</>가 적에게 명중했을 때, 만약 목표가 <#ba.crystinflict>냉기 부착</> 혹은 <#ba.frozen>동결</> 상태일 경우, 받는 <@ba.cryst>냉기 피해</> <@ba.vup>+{cryst_up:0%}</>, <@ba.vup>{duration:0}</>초 동안 지속. 해당 효과는 중첩되지 않습니다."
       ],
       "name": "가동 프로세스"
     },

@@ -741,7 +741,9 @@
     "hetoniteComponent": "赫銅裝備原件",
     "hetoniteSolution": "赫銅溶液",
     "precipitationAcid": "沉積酸",
-    "liquidHeavyXiranite": "液化重息壤"
+    "liquidHeavyXiranite": "液化重息壤",
+    "centuryRind": "百年陳皮",
+    "caudalGoldscale": "尾尖金甲"
   },
   "common": {
     "copy": "複製",
@@ -925,7 +927,9 @@
     "pogranichnik": "駿衛",
     "rossi": "洛西",
     "zhuangfy": "莊方宜",
-    "zhuangFangyi": "莊方宜"
+    "zhuangFangyi": "莊方宜",
+    "miFu": "弭弗",
+    "mifu": "弭弗"
   },
   "weaponsList": {
     "industry01": "工業零點一",
@@ -995,7 +999,10 @@
     "finchaser30": "逐鱗3.0",
     "lupineScarlet": "狼之緋",
     "loneBarge": "孤舟",
-    "flickersInTheMist": "霧中微光"
+    "flickersInTheMist": "霧中微光",
+    "phantomPain": "幻想苦痛",
+    "amaranthineTassel": "赤纓",
+    "beaconOfDuty": "燈火使命"
   },
   "cookies": {
     "title": "我們使用 Cookie",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "重度能量淤積點·首墩",
     "world_energy_point08_3": "能量淤積點·實驗園區",
     "world_energy_point08_2": "能量淤積點·實驗園區",
-    "world_energy_point08_6": "重度能量淤積點·實驗園區"
+    "world_energy_point08_6": "重度能量淤積點·實驗園區",
+    "world_energy_point09_1": "能量淤積點·藏劍谷",
+    "world_energy_point09_2": "能量淤積點·藏劍谷",
+    "world_energy_point09_3": "能量淤積點·藏劍谷",
+    "world_energy_point09_4": "重度能量淤積點·藏劍谷",
+    "world_energy_point09_5": "重度能量淤積點·藏劍谷",
+    "world_energy_point09_6": "重度能量淤積點·藏劍谷",
+    "world_energy_point09_7": "重度能量淤積點·藏劍谷"
   },
   "enemies": {
     "eny_0007_mimicw": "潛地虯獸",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "聶菲斯，「碾骨」",
     "eny_0095_ethillu": "表象",
     "eny_0079_nefarp2": "聶菲斯，「征服者」",
-    "eny_0082_hsbear": "天鼓"
+    "eny_0082_hsbear": "天鼓",
+    "eny_0112_jzmonk": "山犼獸",
+    "eny_0113_jzogre": "披甲裂獸",
+    "eny_0114_jzmking": "巨山犼獸"
   },
   "essencesPage": {
     "optimizer": "刷取優化器",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "清波護手",
     "item_equip_t4_suit_expend_spell01_edc_02": "壤流短棍",
     "item_equip_t4_suit_expend_spell01_body_02": "壤流輕甲",
-    "item_equip_t4_suit_phy01_hand_03": "點劍戰術手甲·壹型"
+    "item_equip_t4_suit_phy01_hand_03": "點劍戰術手甲·壹型",
+    "item_equip_t4_suit_combo_cd01_edc_04": "清波定位儀·壹型",
+    "item_equip_t4_suit_crush_fracture_body_01": "舊鋒裝甲",
+    "item_equip_t4_suit_crush_fracture_body_02": "舊鋒裝甲·壹型",
+    "item_equip_t4_suit_crush_fracture_edc_01": "舊鋒刺刃",
+    "item_equip_t4_suit_crush_fracture_edc_02": "舊鋒刺刃·壹型",
+    "item_equip_t4_suit_crush_fracture_hand_01": "舊鋒手甲",
+    "item_equip_t4_suit_crush_fracture_hand_02": "舊鋒手甲·壹型",
+    "item_equip_t4_suit_phy01_body_04": "點劍纖維護甲"
   },
   "packs": {
     "none": "無套裝",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "蝕電絕緣",
     "suit_wisdwill01": "整合輕型",
     "suit_combo_cd01": "清波",
-    "suit_expend_spell01": "壤流"
+    "suit_expend_spell01": "壤流",
+    "suit_crush_fracture": "舊鋒"
   },
   "equipmentTypes": {
     "body": "護甲",
@@ -1897,11 +1923,11 @@
     "pump_1": "水泵",
     "pump_2": "二型耐酸水泵"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "基礎模式",
     "liquid": "液體模式"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "獲得方式",
       "using": "參與配方",

@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Skill tarung <@ba.key>Dolly Rush</> meningkat: Jika berhasil mengaktifkan efek tambahan saat ada musuh yang terkena <#ba.corrupt>Corrosion</> di sekitarnya, skill tarung ini langsung digunakan lagi. \n<@ba.info>Efek ini hanya bisa aktif satu kali per penggunaan skill tarung aktif.</>"
+        "Skill tarung <@ba.key>Dolly Rush</> meningkat: Jika berhasil mengaktifkan efek tambahan saat ada musuh yang terkena <#ba.corrupt>Corrosion</> di sekitarnya, skill tarung ini langsung digunakan lagi. \n<@ba.info>Efek ini hanya bisa diaktifkan satu kali per penggunaan skill tarung aktif.</>"
       ],
       "name": "Mountainpeak Surfer"
     },

@@ -7,15 +7,6 @@
       "Meide den Giftspeichel. Bei Kontakt erleidet der Operator kontinuierlich Natur-SDN."
     ]
   },
-  "eny_0049_rogue": {
-    "name": "Knochenbrecher-Eindringling",
-    "nickname": "Knochenbrecher-Eindringling",
-    "description": "Ein mit Nahkampfwaffen ausgerüsteter Landbrecher. Eindringlinge sind extrem wendige und fähige Kämpfer, die mit zwei Waffen gleichzeitig kämpfen. Mit denen ist wahrlich nicht zu spaßen.",
-    "abilities": [
-      "Eine äußerst bewegliche Gegnerin, die den Standardangriffen der Operatoren ausweicht. Greift sie jedoch an, kann sie nicht ausweichen.",
-      "Kann Wurfpfeile werfen und zusätzliche Angriffe gegen getroffene Operatoren ausführen. Den Wurfpfeilen auszuweichen, bietet möglicherweise eine gute Chance zum Gegenangriff."
-    ]
-  },
   "eny_0018_lbtough": {
     "name": "Knochenbrecher-Henker",
     "nickname": "Knochenbrecher-Henker",
@@ -25,36 +16,12 @@
       "Den aufgeladenen Doppelaxt-Hieben auszuweichen, wird nicht einfach sein. Versuche, ihn stattdessen zu unterbrechen."
     ]
   },
-  "eny_0088_wgthorns": {
-    "name": "Hedron",
-    "nickname": "Hedron",
-    "description": "Der „Diaphaistagran“ (Archiv-ID: ARM315) ist ein flüssigkeitsbasiertes Muster, das projizieren kann. Es hat eine komplexe, aber symmetrische Geometrie. Seine Angriffe können jeder Oberfläche, mit der sie in Kontakt kommen, Hitze entziehen.",
-    "abilities": [
-      "Die Projektile dieses Gegners belegen Operatoren bei einem Treffer mit Kryo."
-    ]
-  },
   "eny_0021_agmelee": {
     "name": "Ramme",
     "nickname": "Ramme",
     "description": "Die „Kriosson“ (Archiv-ID: ACL071) zählt zu den am frühesten dokumentierten und häufigsten anzutreffenden Formen der Aggeloi. Bei ihrem Angriff rammt sie die Opfer mit ihren Hörnern.",
     "abilities": [
       "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
-  "eny_0039_agcanno": {
-    "name": "Wächter",
-    "nickname": "Wächter",
-    "description": "Der „Phrourossaron“ (ARS316) stellt wohl den Versuch der Aggeloi dar, die Form und Angriffsmuster der menschlichen Wächterwaffen nachzuahmen. Der Wächter ist trotz seiner massiven Reichweite ein festsitzender Organismus.",
-    "abilities": [
-      "Dieser Gegner hat einen mächtigen Angriff mit extrem großer Reichweite. Weiche seiner Bombardierung aus, um weiterzukommen."
-    ]
-  },
-  "eny_0107_wgshoal2": {
-    "name": "Gezeitenwanderer δ",
-    "nickname": "Gezeitenwanderer δ",
-    "description": "Der „Genesklydan-Dinedon“ (Archiv-ID: AGM321δ) ist eine energetisierte Variante von AGM321. Seine Grundmaterie befindet sich in stetem, turbulentem Fluss. Das erklärt auch seine besonders schreckliche Form, wenn man ihm nachts begegnet.",
-    "abilities": [
-      "Greift mit Fähigkeiten an, die mit Kryo belegen und belegt getroffene Operatoren mit Erstarrung."
     ]
   },
   "eny_0023_aghornb": {
@@ -82,23 +49,6 @@
       "Wenn du dich diesem Gegner näherst, beschwört er zum Schutz Steinsäulen um sich herum."
     ]
   },
-  "eny_0060_lbmad": {
-    "name": "Nebelfeuer-Klaue",
-    "nickname": "Nebelfeuer-Klaue",
-    "description": "Ein durch das Nebelfeuer mutierter Landbrecher-Kämpfer. Die Tatsache, dass er Nebelfeuer absorbiert hat, ist alles andere als ein Segen. Diese Plünderer sind grauenhaft entstellt.",
-    "abilities": [
-      "Weiche dem knirschenden Angriff aus, damit der Gegner zu Boden stürzt."
-    ]
-  },
-  "eny_0078_nefarp1": {
-    "name": "Nefarith, „Knochenbrecherin“",
-    "nickname": "Nefarith, „Knochenbrecherin“",
-    "description": "Dank Nefarith wurde „Knochenbrecher“ im Zivilisationsgürtel zum Inbegriff des Schreckens. Ihr brutaler Eroberungsfeldzug ist noch nicht beendet, und ihre wahren Ziele wurden noch nicht enthüllt.",
-    "abilities": [
-      "Entfesselt Æther-Energiewellen, denen man nicht ausweichen kann. Benutze Zhuang Fangyis Xiranit, um in die Luft zu springen und ihnen komplett auszuweichen.",
-      "Springt in große Höhe, um einen Angriff aufzuladen. Nutze Xiranit, um diese gegnerische Attacke zu unterbrechen, in die Luft zu springen und dann einen Sturzangriff auszuführen, der einen Blitzschlag beschwört."
-    ]
-  },
   "eny_0029_lbmob": {
     "name": "Knochenbrecher-Plünderer",
     "nickname": "Knochenbrecher-Plünderer",
@@ -115,12 +65,12 @@
       "Dieser Gegner hat keine Spezialfähigkeiten."
     ]
   },
-  "eny_0095_ethillu": {
-    "name": "Æthillu",
-    "nickname": "Æthillu",
-    "description": "Ein Phantom, das Ardashirs Ruf gefolgt ist. Es ist eine Manifestation der Zerstörung, eine Ablagerung des unausweichlichen Verfalls.",
+  "eny_0039_agcanno": {
+    "name": "Wächter",
+    "nickname": "Wächter",
+    "description": "Der „Phrourossaron“ (ARS316) stellt wohl den Versuch der Aggeloi dar, die Form und Angriffsmuster der menschlichen Wächterwaffen nachzuahmen. Der Wächter ist trotz seiner massiven Reichweite ein festsitzender Organismus.",
     "abilities": [
-      "Dieser Gegner verfügt über eine starke Wiederbelebungsfähigkeit. In der wiederbelebten Form hat er eine größere Angriffsreichweite. Zudem kann er sich selbst sprengen, um massiven SDN zu verursachen."
+      "Dieser Gegner hat einen mächtigen Angriff mit extrem großer Reichweite. Weiche seiner Bombardierung aus, um weiterzukommen."
     ]
   },
   "eny_0045_agtrinit": {
@@ -134,22 +84,6 @@
       "TÄUSCHUNGSFORM: Wechselt in den Tarnmodus, um aus der Ferne ein Sperrfeuer aus Geschossen abzufeuern oder deine Operatoren aus dem Hinterhalt anzugreifen. Brich den Tarnmodus, um starkes Taumeln zu verursachen."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Ramme α",
-    "nickname": "Ramme α",
-    "description": "Die „Kriosson Anavon“ (Archiv-ID: ACL071α) ist eine energetisierte Variante von ACL071. Das charakteristische hellrote Aussehen ist dem übermäßigen Energiegehalt des Wesens geschuldet, wodurch es stärker und schneller als die Standardvariante ist.",
-    "abilities": [
-      "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
-  "eny_0065_lbmob2": {
-    "name": "Elite-Plünderer",
-    "nickname": "Elite-Plünderer",
-    "description": "Ein Elite-Landbrecher, der im Nahkampf geübt ist. Er wird durch Dämpfe verstärkt, die als Nebelfeuer bekannt sind. Dieser besondere LB verfügt über bessere Ausrüstung, bessere Stärke und bessere Kampffertigkeiten.",
-    "abilities": [
-      "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
   "eny_0046_lbshamman": {
     "name": "Knochenbrecher-Pyromant",
     "nickname": "Knochenbrecher-Pyromant",
@@ -158,22 +92,6 @@
       "Dieser Gegner verfügt über mächtige Fernkampfangriffe, die Hitze-SDN verursachen, ist jedoch nicht sehr beweglich.",
       "Dieser Gegner lässt Nebelfeuer aus dem Boden schießen und verursacht Hitze-SDN. Versuche, dem Angriff auszuweichen.",
       "Teleportiert sich sofort weit weg, sobald Gegner zu nahe kommen."
-    ]
-  },
-  "eny_0052_palesent": {
-    "name": "Marmor-Aggelomoirai",
-    "nickname": "Marmor-Aggelomoirai",
-    "description": "KEINE FRÜHEREN AUFZEICHNUNGEN. Aufgrund der Art und Weise ihres Körperbaus wurde sie als Aggelos kategorisiert. Ihr äußeres Erscheinungsbild ähnelt das von Nefarith. Dieses Wesen scheint instabil zu sein, obwohl es im Kern hohe Energiewerte aufweist.",
-    "abilities": [
-      "Die erweckte Marmor-Aggelomoirai kann zahlreiche Ankhors aus dem Universum herbeirufen, die das Land bombardieren. Weiche diesen Angriffen aus und finde eine Möglichkeit, Vergeltung zu üben."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Schlammlawine",
-    "nickname": "Schlammlawine",
-    "description": "Die „Tholeroygran“ (Archiv-ID: ACM311) ist das erste je entdeckte Muster, das auf Flüssigkeit basiert. Die Morphologie des Halos ist instabil, die interne Temperatur ist meist niedriger als die der einzelnen Materialien.",
-    "abilities": [
-      "Dieser Gegner ist wie der Blitz bei dir! Seine Angriffe belegen Operatoren bei einem Treffer mit Kryo."
     ]
   },
   "eny_0047_firebat": {
@@ -193,21 +111,21 @@
       "Obwohl dieser Gegner mit einer riesigen Balliste bewaffnet ist, ist er auch ein talentierter Nahkämpfer."
     ]
   },
+  "eny_0049_rogue": {
+    "name": "Knochenbrecher-Eindringling",
+    "nickname": "Knochenbrecher-Eindringling",
+    "description": "Ein mit Nahkampfwaffen ausgerüsteter Landbrecher. Eindringlinge sind extrem wendige und fähige Kämpfer, die mit zwei Waffen gleichzeitig kämpfen. Mit denen ist wahrlich nicht zu spaßen.",
+    "abilities": [
+      "Eine äußerst bewegliche Gegnerin, die den Standardangriffen der Operatoren ausweicht. Greift sie jedoch an, kann sie nicht ausweichen.",
+      "Kann Wurfpfeile werfen und zusätzliche Angriffe gegen getroffene Operatoren ausführen. Den Wurfpfeilen auszuweichen, bietet möglicherweise eine gute Chance zum Gegenangriff."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Knochenbrecher-Reißbestie",
     "nickname": "Knochenbrecher-Reißbestie",
     "description": "Eine kleine Kriegsbestie, die von den Landbrechern kontrolliert wird. Reißbestien sind viel blutdürstiger und wilder als ihre ungezähmten Artgenossen in freier Wildbahn. Sie folgen den Landbrechern, die sie gezähmt haben, mit bedingungsloser Loyalität.",
     "abilities": [
       "Dieser Gegner ist beweglich, kann aber durch mehrere Treffer überwältigt werden."
-    ]
-  },
-  "eny_0068_lbtough2": {
-    "name": "Elite-Henker",
-    "nickname": "Elite-Henker",
-    "description": "Ein Elite-Landbrecher von der Sorte Rohling. Er wird durch Dämpfe verstärkt, die als Nebelfeuer bekannt sind. Dieser besondere LB ist ein absoluter Riese und mit einer großen Axt bewaffnet. Für gewöhnlich führen derartige Eliten plündernde Knochenbrecher-Banden an.",
-    "abilities": [
-      "Sein Greifangriff verursacht massiven SDN. Wenn ein Operator gegriffen wird, verwende die Fertigkeit eines anderen Operators, um ihn zu unterbrechen und den gegriffenen Operator zu befreien.",
-      "Den aufgeladenen Doppelaxt-Hieben auszuweichen, wird nicht einfach sein. Versuche, ihn stattdessen zu unterbrechen."
     ]
   },
   "eny_0051_rodin": {
@@ -219,56 +137,20 @@
       "Bufft sich selbst mit der Macht der Denstacks. Achte auf seine Feuerstrahlen und weiche ihnen aus."
     ]
   },
-  "eny_0076_agfly": {
-    "name": "Falschflügel",
-    "nickname": "Falschflügel",
-    "description": "Der „Psuthopteron“ (Archiv-ID: ARA07C) ist flugfähig, was allerdings nicht auf seiner Morphologie beruht. Dieses Muster wurde ursprünglich als Biomimikry angesehen, heute gilt es jedoch als Konsens, dass es sich wohl um eine Nachahmung terranischer Luftfahrzeuge handelt.",
+  "eny_0052_palesent": {
+    "name": "Marmor-Aggelomoirai",
+    "nickname": "Marmor-Aggelomoirai",
+    "description": "KEINE FRÜHEREN AUFZEICHNUNGEN. Aufgrund der Art und Weise ihres Körperbaus wurde sie als Aggelos kategorisiert. Ihr äußeres Erscheinungsbild ähnelt das von Nefarith. Dieses Wesen scheint instabil zu sein, obwohl es im Kern hohe Energiewerte aufweist.",
     "abilities": [
-      "Erzeugt kleine Wirbelwinde, die Operatoren außerdem verlangsamen."
-    ]
-  },
-  "eny_0079_nefarp2": {
-    "name": "Nefarith, „Eroberin“",
-    "nickname": "Nefarith, „Eroberin“",
-    "description": "Die innere Eigenwahrnehmung der Eroberin. Sie macht keinen Hehl aus ihrem Wunsch, die Zivilisation auszulöschen.",
-    "abilities": [
-      "Wird mithilfe eines Æther-Schilds konstant geschützt, der den vom Gegner verursachten SDN stark reduziert. Deaktiviere den Schild vorübergehend, indem du die Aufladung des Gegners unterbrichst.",
-      "Zerreißt das Raum-Zeit-Gefüge, um deine Operatoren bewegungsunfähig zu machen. Versuche möglichst, diese Fertigkeit zu unterbrechen.",
-      "Setzt deine Operatoren mit einem Ankhor fest. Greife den Ankhor an, um sie zu befreien."
-    ]
-  },
-  "eny_0089_wgreflec": {
-    "name": "Prisma",
-    "nickname": "Prisma",
-    "description": "Das „Prismastagran“ (Archiv-ID: ASM316) ist eine Nicht-Modell-Variante von ARM315. Es kann andere Aggeloi in der Nähe beschützen und ist sehr schwer zu treffen, weil es sich oft mit ARM315 umgibt.",
-    "abilities": [
-      "Dieser Gegner kann seine Verbündeten in der Nähe enorm stärken, um deren Leistung zu verbessern."
+      "Die erweckte Marmor-Aggelomoirai kann zahlreiche Ankhors aus dem Universum herbeirufen, die das Land bombardieren. Weiche diesen Angriffen aus und finde eine Möglichkeit, Vergeltung zu üben."
     ]
   },
   "eny_0053_hsmob": {
     "name": "Wege-Plünderer",
     "nickname": "Wege-Plünderer",
-    "description": "Ein bewaffneter Verbrecher, der sein Unwesen in Wuling City treibt. Für gewöhnlich würden Wege-Plünderer ihre illegalen Straßensperren aufbauen oder illegale Waren schmuggeln. Für die Strafverfolgungskräfte von Hongshan steht das Beenden dieses Brigantentums an oberster Stelle.",
+    "description": "Ein bewaffneter Verbrecher, der sein Unwesen in Wuling City treibt. Für gewöhnlich würden Wege-Plünderer ihre illegalen Straßensperren aufbauen oder illegale Waren schmuggeln. Für die Strafverfolgungskräfte von Hongshan steht das Beenden dieses Brigantentums an oberster Stelle.",
     "abilities": [
       "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
-  "eny_0083_hstiger": {
-    "name": "Gefleckte Wüstlingsbestie",
-    "nickname": "Gefleckte Wüstlingsbestie",
-    "description": "Eine Wüstlingsbestie, die in der Wildnis aufgewachsen ist. Diese Spitzenprädatoren sind auf Talos-II endemisch. Sie können weit springen und ihre Beute mit rasiermesserscharfen Klauen angreifen.",
-    "abilities": [
-      "Eine bewegliche Bestie, die mit ihren Klauen und ihrem Schwanz angreift. Versuche, ihr auszuweichen.",
-      "Raserei: Der ANG der Bestie steigt und sie nutzt ihre Aufladefertigkeiten häufiger. Bringst du sie zum Taumeln, beendet das ihre Raserei."
-    ]
-  },
-  "eny_0098_sandb2": {
-    "name": "Gepanzerte Nebelfeuer-Axtbestie",
-    "nickname": "Gepanzerte Nebelfeuer-Axtbestie",
-    "description": "Eine durch das Nebelfeuer mutierte Gepanzerte Axtbestie. Die Kreatur ist extrem aggressiv geworden, wurde fast in einen rasenden Wahnsinn getrieben. Sei äußerst vorsichtig, wenn du nicht von ihrer „Großaxt“ in zwei Hälften gespalten werden willst. ",
-    "abilities": [
-      "Eine rasende Gepanzerte Axtbestie verscheucht Gegner mit ihren enormen Hörnern aus ihrem Revier. Lass dich nicht von ihr rammen!",
-      "Der Gegner verübt verschiedene großflächige Bereichsangriffe. Unterbrich ihn, wenn er in Raserei verfällt."
     ]
   },
   "eny_0054_hsmino": {
@@ -288,14 +170,6 @@
       "Versprüht störenden Rauch. Operatoren, die im Rauch gefangen sind, haben eine eingeschränkte Sicht, haben ein langsameres Bewegungstempo und können nicht ausweichen.",
       "Dieser Gegner ist ein eher schlechter Kämpfer. Versuche, ihn zuerst auszuschalten.",
       "Versprüht grünen Rauch, der andere Gegner heilt."
-    ]
-  },
-  "eny_0108_slbomb2": {
-    "name": "Flammennebel-Originium-Schnecke",
-    "nickname": "Flammennebel-Originium-Schnecke",
-    "description": "Eine wilde Kreatur, die mit Originium infiziert wurde und eine extrem hohe Körpertemperatur aufweist. Der mit Originium-Staub aufgeladene Rückenpanzer weist eine höhere Aktivität auf.",
-    "abilities": [
-      "Dieser Gegner sprengt sich selbst in die Luft, sobald seine LP zur Neige gehen. Die Explosion bedeckt getroffene Operatoren mit instabilem Material. Erleidet der Operator SDN, explodiert er."
     ]
   },
   "eny_0057_dog": {
@@ -324,6 +198,14 @@
       "Weniger intelligent, dafür wilder als gewöhnliche Reißbiester. Weiche dem Sprungangriff aus, damit es zu Boden stürzt."
     ]
   },
+  "eny_0060_lbmad": {
+    "name": "Nebelfeuer-Klaue",
+    "nickname": "Nebelfeuer-Klaue",
+    "description": "Ein durch das Nebelfeuer mutierter Landbrecher-Kämpfer. Die Tatsache, dass er Nebelfeuer absorbiert hat, ist alles andere als ein Segen. Diese Plünderer sind grauenhaft entstellt.",
+    "abilities": [
+      "Weiche dem knirschenden Angriff aus, damit der Gegner zu Boden stürzt."
+    ]
+  },
   "eny_0061_palecore": {
     "name": "Marmor-Aggelomoirai",
     "nickname": "Marmor-Aggelomoirai",
@@ -341,28 +223,26 @@
       "Einige Marmor-Gliedmaßen verstehen sich darauf, Fernkampfgegner anzugreifen, indem sie ihre Spitzen in Verderbnismaterial verwandeln, das geworfen werden kann."
     ]
   },
-  "eny_0075_lbroshan": {
-    "name": "Knochenbrecher-Belagerungsfaust",
-    "nickname": "Knochenbrecher-Belagerungsfaust",
-    "description": "Ein Landbrecher-Kämpfer, der mit schweren explosiven Fingerhandschuhen ausgerüstet ist. Solche Kämpfer sind das Rückgrat der Knochenbrecher-Horden. Die Fingerhandschuhe der Belagerungsfaust dienen als tragbare Waffen gegen befestigte Stellungen.",
+  "eny_0063_agmelee2": {
+    "name": "Ramme α",
+    "nickname": "Ramme α",
+    "description": "Die „Kriosson Anavon“ (Archiv-ID: ACL071α) ist eine energetisierte Variante von ACL071. Das charakteristische hellrote Aussehen ist dem übermäßigen Energiegehalt des Wesens geschuldet, wodurch es stärker und schneller als die Standardvariante ist.",
     "abilities": [
-      "Ein unermüdlicher Gegner. Nachdem er unterbrochen wurde, wird er es wahrscheinlich erneut versuchen.",
-      "Dieser Gegner nutzt seinen Panzerhandschuh, um reaktive Panzerschuppen zu verstreuen. Achte auf einen gewissen Sicherheitsabstand, vor allem, falls du versehentlich auf eine getreten bist.",
-      "Dieser Gegner wird versuchen, Panzerschuppen vom Boden aufzusammeln, um wieder in Form zu kommen. Nach erfolgreicher Bergung führt er einen heftigen Angriff aus."
-    ]
-  },
-  "eny_0091_wgshoal": {
-    "name": "Gezeitenwanderer",
-    "nickname": "Gezeitenwanderer",
-    "description": "Der „Genesklydan“ (Archiv-ID: AGM321) weist einen humanoiden Kopf und humanoide Beine auf. Seit der Entdeckung dieses Musters ist die Ähnlichkeit mit Menschen zu einer ungeschriebenen Regel für die Einschätzung des Bedrohungslevels von Aggeloi geworden.",
-    "abilities": [
-      "Greift mit Fähigkeiten an, die mit Kryo belegen und belegt getroffene Operatoren mit Erstarrung."
+      "Dieser Gegner hat keine Spezialfähigkeiten."
     ]
   },
   "eny_0064_agrange2": {
     "name": "Skorpio α",
     "nickname": "Skorpio α",
     "description": "Die „Kentron Anavon“ (Archiv-ID: ARL121α) ist eine energetisierte Variante von ARL121. Die höhere Energiedichte des Wesens verleiht ihm eine größere Feuerkraft, wobei die Energieeffizienz des Feuermechanismus niedrig bleibt.",
+    "abilities": [
+      "Dieser Gegner hat keine Spezialfähigkeiten."
+    ]
+  },
+  "eny_0065_lbmob2": {
+    "name": "Elite-Plünderer",
+    "nickname": "Elite-Plünderer",
+    "description": "Ein Elite-Landbrecher, der im Nahkampf geübt ist. Er wird durch Dämpfe verstärkt, die als Nebelfeuer bekannt sind. Dieser besondere LB verfügt über bessere Ausrüstung, bessere Stärke und bessere Kampffertigkeiten.",
     "abilities": [
       "Dieser Gegner hat keine Spezialfähigkeiten."
     ]
@@ -375,24 +255,6 @@
       "Dieser Gegner hat keine Spezialfähigkeiten."
     ]
   },
-  "eny_0077_agshield": {
-    "name": "Laufender Chrysopolis",
-    "nickname": "Laufender Chrysopolis",
-    "description": "Der „Thureoron“ (Archiv-ID: ACL156) ist ein Muster, dessen Halo durch ein schildähnliches Gebilde geschützt wird. Sei gewarnt: Dieser Aggelos kann Energie manipulieren, um Ziele aus der Ferne an sich heranzuziehen.",
-    "abilities": [
-      "Der Laufende Chrysopolis hat zwei Zustände: Normal und Bastion.",
-      "Normalzustand: Er verfügt über die Fähigkeit, Operatoren aus der Ferne zu sich heranzuziehen.",
-      "Bastion: Er wirft alle Angriffe von vorne und von der Seite auf den Angreifer zurück, seine Rückseite ist dafür umso ungeschützter."
-    ]
-  },
-  "eny_0094_hsfly": {
-    "name": "Wasserlampe",
-    "nickname": "Wasserlampe",
-    "description": "Ein wilder Gliederfüßer, der in aquatischen Umgebungen lebt. Die Wasserlampe sondert ein schwaches Leuchten ab, ihr Körper enthält Reizstoffe, die allergische Reaktionen und sogar Verbrennungen hervorrufen können. Es ist also Vorsicht geboten.",
-    "abilities": [
-      "Ein Gegner, der Säure speit, die er in seinem Schädel gespeichert hat. Die VERT der von diesem Angriff getroffenen Operatoren wird reduziert. Der Gegner ist nicht besonders gefährlich, aber man sollte dennoch Vorsicht walten lassen."
-    ]
-  },
   "eny_0067_hound2": {
     "name": "Elite-Reißbestie",
     "nickname": "Elite-Reißbestie",
@@ -401,20 +263,21 @@
       "Flink und agil. Wird fortwährend versuchen, sich dem Ziel zu nähern und es anzugreifen."
     ]
   },
+  "eny_0068_lbtough2": {
+    "name": "Elite-Henker",
+    "nickname": "Elite-Henker",
+    "description": "Ein Elite-Landbrecher von der Sorte Rohling. Er wird durch Dämpfe verstärkt, die als Nebelfeuer bekannt sind. Dieser besondere LB ist ein absoluter Riese und mit einer großen Axt bewaffnet. Für gewöhnlich führen derartige Eliten plündernde Knochenbrecher-Banden an.",
+    "abilities": [
+      "Sein Greifangriff verursacht massiven SDN. Wenn ein Operator gegriffen wird, verwende die Fertigkeit eines anderen Operators, um ihn zu unterbrechen und den gegriffenen Operator zu befreien.",
+      "Den aufgeladenen Doppelaxt-Hieben auszuweichen, wird nicht einfach sein. Versuche, ihn stattdessen zu unterbrechen."
+    ]
+  },
   "eny_0069_aghornb2": {
     "name": "Schwere Ramme α",
     "nickname": "Schwere Ramme α",
     "description": "Die „Thrylissoron Anavon“ (Archiv-ID: ACL072α) ist eine energetisierte Variante von ACL072. Das hohe Energievolumen hatte keinen Einfluss auf ihre Entscheidungsfähigkeit. Dieses Wesen ist extrem gefährlich.",
     "abilities": [
       "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
-  "eny_0092_slbomb": {
-    "name": "Feuernebel-Originium-Schnecke",
-    "nickname": "Feuernebel-Originium-Schnecke",
-    "description": "Eine wilde Kreatur, die mit aktivem Originium-Staub infiziert wurde und eine extrem hohe Körpertemperatur aufweist. Die Schnecke explodiert, wenn sie kurz vor dem Tod steht, wobei ihre gesamte Umgebung mit säurehaltigen, kochenden Körperflüssigkeiten sowie aktivem Originium-Staub überzogen wird.",
-    "abilities": [
-      "Dieser Gegner sprengt sich selbst in die Luft, sobald seine LP zur Neige gehen. Die Explosion bedeckt getroffene Operatoren mit instabilem Material. Erleidet der Operator SDN, explodiert er."
     ]
   },
   "eny_0070_agscorp2": {
@@ -443,14 +306,6 @@
       "Ein Gegner, der in Gruppen auftaucht. Achte auf ihre rasiermesserscharfen vorderen Gliedmaßen."
     ]
   },
-  "eny_0104_hsrogue2": {
-    "name": "Zerstörerische Bö",
-    "nickname": "Zerstörerische Bö",
-    "description": "Ein mit einer exotischen Waffe ausgerüsteter Verbrecher. Weil die Wolkenstelzer im Umgang mit Hakenklingen so geschickt sind, behaupten die Leute, dass sie die Wolken in perfekte Würfel zerteilen könnten.",
-    "abilities": [
-      "Setzt Kettenhaken ein, um verbündete Operatoren anzugreifen. Gefesselte Operatoren werden Betäubt, bis sie befreit werden."
-    ]
-  },
   "eny_0073_slimerg": {
     "name": "Säure-Originium-Schnecke",
     "nickname": "Säure-Originium-Schnecke",
@@ -459,20 +314,59 @@
       "Ein scheuer Gegner, der sich in seine Schale zurückzieht, um sich zu schützen. Außerdem verschießt er blindlings Originium-Kristalle, um seine Gegner einzuschüchtern."
     ]
   },
-  "eny_0093_hshog": {
-    "name": "Federbiest",
-    "nickname": "Federbiest",
-    "description": "Ein wildes Federbiest, das auf Talos-II vorkommt. Wenn es seine Federn ausfährt und sich auf dem Boden herumrollt, wird es so zerstörerisch wie eine umherwirbelnde Kettensäge.",
-    "abilities": [
-      "Raserei: Der ANG der Bestie steigt und sie nutzt ihre Aufladefertigkeiten häufiger. Bringst du sie zum Taumeln, beendet das ihre Raserei."
-    ]
-  },
   "eny_0074_lbshield": {
     "name": "Knochenbrecher-Vorhut",
     "nickname": "Knochenbrecher-Vorhut",
     "description": "Ein Knochenbrecher-Kämpfer, der mit Speeren und Schilden bewaffnet ist. Die Ausrüstung ist zwar krude zusammengeschustert, doch die Vorhut hat eine Kampftechnik entwickelt, die Angriff und Verteidigung vereint. Im Kampf gegen diesen Gegner ist Vorsicht geboten.",
     "abilities": [
       "Der Gegner blockiert sämtliche Angriffe, außer, wenn er selbst angreift. Bringe ihn zum Taumeln, um seinen Schild zu zerstören."
+    ]
+  },
+  "eny_0075_lbroshan": {
+    "name": "Knochenbrecher-Belagerungsfaust",
+    "nickname": "Knochenbrecher-Belagerungsfaust",
+    "description": "Ein Landbrecher-Kämpfer, der mit schweren explosiven Fingerhandschuhen ausgerüstet ist. Solche Kämpfer sind das Rückgrat der Knochenbrecher-Horden. Die Fingerhandschuhe der Belagerungsfaust dienen als tragbare Waffen gegen befestigte Stellungen.",
+    "abilities": [
+      "Ein unermüdlicher Gegner. Nachdem er unterbrochen wurde, wird er es wahrscheinlich erneut versuchen.",
+      "Dieser Gegner nutzt seinen Panzerhandschuh, um reaktive Panzerschuppen zu verstreuen. Achte auf einen gewissen Sicherheitsabstand, vor allem, falls du versehentlich auf eine getreten bist.",
+      "Dieser Gegner wird versuchen, Panzerschuppen vom Boden aufzusammeln, um wieder in Form zu kommen. Nach erfolgreicher Bergung führt er einen heftigen Angriff aus."
+    ]
+  },
+  "eny_0076_agfly": {
+    "name": "Falschflügel",
+    "nickname": "Falschflügel",
+    "description": "Der „Psuthopteron“ (Archiv-ID: ARA07C) ist flugfähig, was allerdings nicht auf seiner Morphologie beruht. Dieses Muster wurde ursprünglich als Biomimikry angesehen, heute gilt es jedoch als Konsens, dass es sich wohl um eine Nachahmung terranischer Luftfahrzeuge handelt.",
+    "abilities": [
+      "Erzeugt kleine Wirbelwinde, die Operatoren außerdem verlangsamen."
+    ]
+  },
+  "eny_0077_agshield": {
+    "name": "Laufender Chrysopolis",
+    "nickname": "Laufender Chrysopolis",
+    "description": "Der „Thureoron“ (Archiv-ID: ACL156) ist ein Muster, dessen Halo durch ein schildähnliches Gebilde geschützt wird. Sei gewarnt: Dieser Aggelos kann Energie manipulieren, um Ziele aus der Ferne an sich heranzuziehen.",
+    "abilities": [
+      "Der Laufende Chrysopolis hat zwei Zustände: Normal und Bastion.",
+      "Normalzustand: Er verfügt über die Fähigkeit, Operatoren aus der Ferne zu sich heranzuziehen.",
+      "Bastion: Er wirft alle Angriffe von vorne und von der Seite auf den Angreifer zurück, seine Rückseite ist dafür umso ungeschützter."
+    ]
+  },
+  "eny_0078_nefarp1": {
+    "name": "Nefarith, „Knochenbrecherin“",
+    "nickname": "Nefarith, „Knochenbrecherin“",
+    "description": "Dank Nefarith wurde „Knochenbrecher“ im Zivilisationsgürtel zum Inbegriff des Schreckens. Ihr brutaler Eroberungsfeldzug ist noch nicht beendet, und ihre wahren Ziele wurden noch nicht enthüllt.",
+    "abilities": [
+      "Entfesselt Æther-Energiewellen, denen man nicht ausweichen kann. Benutze Zhuang Fangyis Xiranit, um in die Luft zu springen und ihnen komplett auszuweichen.",
+      "Springt in große Höhe, um einen Angriff aufzuladen. Nutze Xiranit, um diese gegnerische Attacke zu unterbrechen, in die Luft zu springen und dann einen Sturzangriff auszuführen, der einen Blitzschlag beschwört."
+    ]
+  },
+  "eny_0079_nefarp2": {
+    "name": "Nefarith, „Eroberin“",
+    "nickname": "Nefarith, „Eroberin“",
+    "description": "Die innere Eigenwahrnehmung der Eroberin. Sie macht keinen Hehl aus ihrem Wunsch, die Zivilisation auszulöschen.",
+    "abilities": [
+      "Wird mithilfe eines Æther-Schilds konstant geschützt, der den vom Gegner verursachten SDN stark reduziert. Deaktiviere den Schild vorübergehend, indem du die Aufladung des Gegners unterbrichst.",
+      "Zerreißt das Raum-Zeit-Gefüge, um deine Operatoren bewegungsunfähig zu machen. Versuche möglichst, diese Fertigkeit zu unterbrechen.",
+      "Setzt deine Operatoren mit einem Ankhor fest. Greife den Ankhor an, um sie zu befreien."
     ]
   },
   "eny_0080_reaper": {
@@ -492,20 +386,21 @@
       "Xiranit-Energie bündelt sich auf dem Schlachtfeld und unterstützt dich. Berühre die Xiranit-Energie im richtigen Moment, um sie zu aktivieren und Ruan Yis Fertigkeiten zu unterdrücken."
     ]
   },
-  "eny_0099_slimeml2": {
-    "name": "Brutales Zangenbiest",
-    "nickname": "Brutales Zangenbiest",
-    "description": "Eine wilde Kreatur, die mit Originium infiziert wurde. Das gewaltige Ungeheuer besitzt mehrere Originium-Cluster, die eine höhere Aktivität aufweisen. Außerdem besitzt die Kreatur einen dickeren Panzer als ihre gewöhnlichen Verwandten.",
-    "abilities": [
-      "Ein Gegner, der in Gruppen auftaucht. Achte auf ihre rasiermesserscharfen vorderen Gliedmaßen."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Himmelstrommler",
     "nickname": "Himmelstrommler",
     "description": "Eine auf Talos-II heimische und in der Wildnis aufgewachsene Heulerbestie. Über die harten Membranen an Kopf und Hals stößt sie ein mächtiges Geheul aus, das die Berge und Wälder erbeben lässt.",
     "abilities": [
       "Ein niedriger LP-Wert löst beim Gegner den Zustand „Raserei“ aus. In diesem Zustand führt der Gegner häufiger seine aufgeladenen Angriffe aus, verursacht mehr SDN und erhält den Buff SDN-Reduzierung. Unterbrich den Gegner rechtzeitig, um den Zustand „Raserei“ zu beenden."
+    ]
+  },
+  "eny_0083_hstiger": {
+    "name": "Gefleckte Wüstlingsbestie",
+    "nickname": "Gefleckte Wüstlingsbestie",
+    "description": "Eine Wüstlingsbestie, die in der Wildnis aufgewachsen ist. Diese Spitzenprädatoren sind auf Talos-II endemisch. Sie können weit springen und ihre Beute mit rasiermesserscharfen Klauen angreifen.",
+    "abilities": [
+      "Eine bewegliche Bestie, die mit ihren Klauen und ihrem Schwanz angreift. Versuche, ihr auszuweichen.",
+      "Raserei: Der ANG der Bestie steigt und sie nutzt ihre Aufladefertigkeiten häufiger. Bringst du sie zum Taumeln, beendet das ihre Raserei."
     ]
   },
   "eny_0084_hshunt": {
@@ -516,20 +411,36 @@
       "Feuert die verschiedensten Pfeile ab und wirft Bomben, um Gegner aus der Ferne zu schikanieren."
     ]
   },
-  "eny_0096_hsmob2": {
-    "name": "Wegelagerer",
-    "nickname": "Wegelagerer",
-    "description": "Ein bewaffneter Verbrecher, der sein Unwesen in den Wuling-Gebieten treibt. Wegelagerer errichten illegale Straßensperren oder schmuggeln illegale Waren. Manchmal überfallen sie auch Reisende.",
-    "abilities": [
-      "Dieser Gegner hat keine Spezialfähigkeiten."
-    ]
-  },
   "eny_0085_hsrogue": {
     "name": "Nimbus-Klinge",
     "nickname": "Nimbus-Klinge",
     "description": "Ein mit einer seltsamen Waffe ausgerüsteter Verbrecher. Wenn der Wolkenstelzer seine merkwürdige Laterne leid ist, zieht er einfach seine kurze Klinge und stürzt sich in den Nahkampf.",
     "abilities": [
       "Setzt Kettenhaken ein, um verbündete Operatoren anzugreifen. Gefesselte Operatoren werden Betäubt, bis sie befreit werden."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Schlammlawine",
+    "nickname": "Schlammlawine",
+    "description": "Die „Tholeroygran“ (Archiv-ID: ACM311) ist das erste je entdeckte Muster, das auf Flüssigkeit basiert. Die Morphologie des Halos ist instabil, die interne Temperatur ist meist niedriger als die der einzelnen Materialien.",
+    "abilities": [
+      "Dieser Gegner ist wie der Blitz bei dir! Seine Angriffe belegen Operatoren bei einem Treffer mit Kryo."
+    ]
+  },
+  "eny_0088_wgthorns": {
+    "name": "Hedron",
+    "nickname": "Hedron",
+    "description": "Der „Diaphaistagran“ (Archiv-ID: ARM315) ist ein flüssigkeitsbasiertes Muster, das projizieren kann. Es hat eine komplexe, aber symmetrische Geometrie. Seine Angriffe können jeder Oberfläche, mit der sie in Kontakt kommen, Hitze entziehen.",
+    "abilities": [
+      "Die Projektile dieses Gegners belegen Operatoren bei einem Treffer mit Kryo."
+    ]
+  },
+  "eny_0089_wgreflec": {
+    "name": "Prisma",
+    "nickname": "Prisma",
+    "description": "Das „Prismastagran“ (Archiv-ID: ASM316) ist eine Nicht-Modell-Variante von ARM315. Es kann andere Aggeloi in der Nähe beschützen und ist sehr schwer zu treffen, weil es sich oft mit ARM315 umgibt.",
+    "abilities": [
+      "Dieser Gegner kann seine Verbündeten in der Nähe enorm stärken, um deren Leistung zu verbessern."
     ]
   },
   "eny_0090_wgabyss": {
@@ -543,6 +454,54 @@
       "Im Fernkampfzustand erleidet er mehr Hitze-SDN, dafür wird der SDN durch andere Elemente maßgeblich reduziert."
     ]
   },
+  "eny_0091_wgshoal": {
+    "name": "Gezeitenwanderer",
+    "nickname": "Gezeitenwanderer",
+    "description": "Der „Genesklydan“ (Archiv-ID: AGM321) weist einen humanoiden Kopf und humanoide Beine auf. Seit der Entdeckung dieses Musters ist die Ähnlichkeit mit Menschen zu einer ungeschriebenen Regel für die Einschätzung des Bedrohungslevels von Aggeloi geworden.",
+    "abilities": [
+      "Greift mit Fähigkeiten an, die mit Kryo belegen und belegt getroffene Operatoren mit Erstarrung."
+    ]
+  },
+  "eny_0092_slbomb": {
+    "name": "Feuernebel-Originium-Schnecke",
+    "nickname": "Feuernebel-Originium-Schnecke",
+    "description": "Eine wilde Kreatur, die mit aktivem Originium-Staub infiziert wurde und eine extrem hohe Körpertemperatur aufweist. Die Schnecke explodiert, wenn sie kurz vor dem Tod steht, wobei ihre gesamte Umgebung mit säurehaltigen, kochenden Körperflüssigkeiten sowie aktivem Originium-Staub überzogen wird.",
+    "abilities": [
+      "Dieser Gegner sprengt sich selbst in die Luft, sobald seine LP zur Neige gehen. Die Explosion bedeckt getroffene Operatoren mit instabilem Material. Erleidet der Operator SDN, explodiert es."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Federbiest",
+    "nickname": "Federbiest",
+    "description": "Ein wildes Federbiest, das auf Talos-II vorkommt. Wenn es seine Federn ausfährt und sich auf dem Boden herumrollt, wird es so zerstörerisch wie eine umherwirbelnde Kettensäge.",
+    "abilities": [
+      "Raserei: Der ANG der Bestie steigt und sie nutzt ihre Aufladefertigkeiten häufiger. Bringst du sie zum Taumeln, beendet das ihre Raserei."
+    ]
+  },
+  "eny_0094_hsfly": {
+    "name": "Wasserlampe",
+    "nickname": "Wasserlampe",
+    "description": "Ein wilder Gliederfüßer, der in aquatischen Umgebungen lebt. Die Wasserlampe sondert ein schwaches Leuchten ab, ihr Körper enthält Reizstoffe, die allergische Reaktionen und sogar Verbrennungen hervorrufen können. Es ist also Vorsicht geboten.",
+    "abilities": [
+      "Ein Gegner, der Säure speit, die er in seinem Schädel gespeichert hat. Die VERT der von diesem Angriff getroffenen Operatoren wird reduziert. Der Gegner ist nicht besonders gefährlich, aber man sollte dennoch Vorsicht walten lassen."
+    ]
+  },
+  "eny_0095_ethillu": {
+    "name": "Æthillu",
+    "nickname": "Æthillu",
+    "description": "Ein Phantom, das Ardashirs Ruf gefolgt ist. Es ist eine Manifestation der Zerstörung, eine Ablagerung des unausweichlichen Verfalls.",
+    "abilities": [
+      "Dieser Gegner verfügt über eine starke Wiederbelebungsfähigkeit. In der wiederbelebten Form hat er eine größere Angriffsreichweite. Zudem kann er sich selbst sprengen, um massiven SDN zu verursachen."
+    ]
+  },
+  "eny_0096_hsmob2": {
+    "name": "Wegelagerer",
+    "nickname": "Wegelagerer",
+    "description": "Ein bewaffneter Verbrecher, der sein Unwesen in den Wuling-Gebieten treibt. Wegelagerer errichten illegale Straßensperren oder schmuggeln illegale Waren. Manchmal überfallen sie auch Reisende.",
+    "abilities": [
+      "Dieser Gegner hat keine Spezialfähigkeiten."
+    ]
+  },
   "eny_0097_hsmino2": {
     "name": "Wolkenvernichter",
     "nickname": "Wolkenvernichter",
@@ -550,6 +509,23 @@
     "abilities": [
       "Verwendet den schweren Raketenwerfer als Nahkampfwaffe. Setzt für Fernkampfangriffe auch Feuerwerkskörper ein. Wenn du von seinen Hörnern gerammt und angehoben wirst, könnte das ein spektakuläres Feuerwerk auslösen!",
       "Versuche nicht, ihm in den Rücken zu fallen. Er kann kräftig auskeilen!"
+    ]
+  },
+  "eny_0098_sandb2": {
+    "name": "Gepanzerte Nebelfeuer-Axtbestie",
+    "nickname": "Gepanzerte Nebelfeuer-Axtbestie",
+    "description": "Eine durch das Nebelfeuer mutierte Gepanzerte Axtbestie. Die Kreatur ist extrem aggressiv geworden, wurde fast in einen rasenden Wahnsinn getrieben. Sei äußerst vorsichtig, wenn du nicht von ihrer „Großaxt“ in zwei Hälften gespalten werden willst. ",
+    "abilities": [
+      "Eine rasende Gepanzerte Axtbestie verscheucht Gegner mit ihren enormen Hörnern aus ihrem Revier. Lass dich nicht von ihr rammen!",
+      "Der Gegner verübt verschiedene großflächige Bereichsangriffe. Unterbrich ihn, wenn er in Raserei verfällt."
+    ]
+  },
+  "eny_0099_slimeml2": {
+    "name": "Brutales Zangenbiest",
+    "nickname": "Brutales Zangenbiest",
+    "description": "Eine wilde Kreatur, die mit Originium infiziert wurde. Das gewaltige Ungeheuer besitzt mehrere Originium-Cluster, die eine höhere Aktivität aufweisen. Außerdem besitzt die Kreatur einen dickeren Panzer als ihre gewöhnlichen Verwandten.",
+    "abilities": [
+      "Ein Gegner, der in Gruppen auftaucht. Achte auf ihre rasiermesserscharfen vorderen Gliedmaßen."
     ]
   },
   "eny_0100_slimerg2": {
@@ -585,6 +561,14 @@
       "Feuert die verschiedensten Pfeile ab und wirft Bomben, um Gegner aus der Ferne zu schikanieren."
     ]
   },
+  "eny_0104_hsrogue2": {
+    "name": "Zerstörerische Bö",
+    "nickname": "Zerstörerische Bö",
+    "description": "Ein mit einer exotischen Waffe ausgerüsteter Verbrecher. Weil die Wolkenstelzer im Umgang mit Hakenklingen so geschickt sind, behaupten die Leute, dass sie die Wolken in perfekte Würfel zerteilen könnten.",
+    "abilities": [
+      "Setzt Kettenhaken ein, um verbündete Operatoren anzugreifen. Gefesselte Operatoren werden Betäubt, bis sie befreit werden."
+    ]
+  },
   "eny_0105_wgslime2": {
     "name": "Schlammlawine δ",
     "nickname": "Schlammlawine δ",
@@ -601,6 +585,22 @@
       "Die Projektile dieses Gegners belegen Operatoren bei einem Treffer mit Kryo."
     ]
   },
+  "eny_0107_wgshoal2": {
+    "name": "Gezeitenwanderer δ",
+    "nickname": "Gezeitenwanderer δ",
+    "description": "Der „Genesklydan-Dinedon“ (Archiv-ID: AGM321δ) ist eine energetisierte Variante von AGM321. Seine Grundmaterie befindet sich in stetem, turbulentem Fluss. Das erklärt auch seine besonders schreckliche Form, wenn man ihm nachts begegnet.",
+    "abilities": [
+      "Greift mit Fähigkeiten an, die mit Kryo belegen und belegt getroffene Operatoren mit Erstarrung."
+    ]
+  },
+  "eny_0108_slbomb2": {
+    "name": "Flammennebel-Originium-Schnecke",
+    "nickname": "Flammennebel-Originium-Schnecke",
+    "description": "Eine wilde Kreatur, die mit Originium infiziert wurde und eine extrem hohe Körpertemperatur aufweist. Der mit Originium-Staub aufgeladene Rückenpanzer weist eine höhere Aktivität auf.",
+    "abilities": [
+      "Dieser Gegner sprengt sich selbst in die Luft, sobald seine LP zur Neige gehen. Die Explosion bedeckt getroffene Operatoren mit instabilem Material. Erleidet der Operator SDN, explodiert es."
+    ]
+  },
   "eny_0109_hshog2": {
     "name": "Aufgeladenes Federbiest",
     "nickname": "Aufgeladenes Federbiest",
@@ -608,6 +608,34 @@
     "abilities": [
       "Dieser Gegner lädt sich auf und bläht seinen Bauch auf, um superheiße Lava zu speien. Unterbrich ihn während des Aufladens, um ihn ordentlich zum Taumeln zu bringen.",
       "Raserei: Der ANG der Bestie steigt und sie nutzt ihre Aufladefertigkeiten häufiger. Bringst du sie zum Taumeln, beendet das ihre Raserei."
+    ]
+  },
+  "eny_0112_jzmonk": {
+    "name": "Felsenheuler",
+    "nickname": "Felsenheuler",
+    "description": "Felsenheuler können in der Wildnis leben. Diese intelligenten, schelmischen Kreaturen bereiten oft „Fallen“ und „Gefahren“ für unglückliche Reisende vor. Sie scheinen Menschen gern dabei zuzusehen, wie sie sich über ihre Streiche beklagen. Bitte hab Geduld, wenn du dich um sie kümmerst.",
+    "abilities": [
+      "Dieser Gegnertyp streift für gewöhnlich in Rudeln umher. Jeder Operator und Felsenheuler, der auf weggeworfene Bananenschalen tritt, rutscht aus und stürzt."
+    ]
+  },
+  "eny_0113_jzogre": {
+    "name": "Gepanzerte Fetzbestie",
+    "nickname": "Gepanzerte Fetzbestie",
+    "description": "Eine Variante der Fetzbestie, die sich nur auf Talos-II entwickelt hat. Diese einzigartigen Fetzbestien sind mit äußerst dicken Schuppen gepanzert und leben in einer mutualistischen Symbiose mit Felsenheulern. Die erstere Art bietet ein Bollwerk aus Muskelkraft, während die letztere scharfe Sinne aufweist und vor Eindringlingen warnt.",
+    "abilities": [
+      "Der Felsenheuler, der auf der Gepanzerten Fetzbestie reitet, kann Bananenschalen werfen. Wenn die Gepanzerte Fetzbestie während eines Ansturms auf Bananenschalen tritt, rutscht sie aus und stürzt.",
+      "In ihrer eingerollten Verteidigungshaltung sind die Hände ihre Schwachstelle. Durchbrich die Handposition, um die Verteidigungshaltung zu beenden, und belege die Bestie mit Niederschlag.",
+      "Lässt Felsenheuler fallen, wenn sie niedergeschlagen wird. Greife die Felsenheuler an, um noch mehr SDN zu verursachen."
+    ]
+  },
+  "eny_0114_jzmking": {
+    "name": "Klippenheuler",
+    "nickname": "Klippenheuler",
+    "description": "Klippenheuler sind die dominierenden Mitglieder der Felsenheuler-Gemeinschaften. Diese Bestien kämpfen so lange gegeneinander, bis der stärkste von ihnen als Alphatier hervorgeht. Es steht außer Frage, dass solche Individuen den Kampf auf eine Weise gemeistert haben, von der ihre Artgenossen nur träumen könnten.",
+    "abilities": [
+      "Im Zustand „Raserei“ fängt der Klippenheuler an, die Ruinen zu zerstören. Gelockerte Felsen stürzen aufs Schlachtfeld hinab und fügen getroffenen Operatoren SDN zu.",
+      "Der Klippenheuler kann die Säulen innerhalb der Ruinen effektiv nutzen und sich dadurch eine enorme Angriffsreichweite verschaffen.",
+      "Der Klippenheuler wird einen Rückzug vortäuschen und plötzlich gewaltige Felsen schleudern, um ahnungslose Gegner anzugreifen."
     ]
   }
 }

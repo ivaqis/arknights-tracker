@@ -7,15 +7,6 @@
       "Avoid the poisonous spit. Stepping on it will deal continuous Nature DMG to the operator."
     ]
   },
-  "eny_0049_rogue": {
-    "name": "Bonekrusher Infiltrator",
-    "nickname": "Bonekrusher Infiltrator",
-    "description": "A Landbreaker armed with melee weapons. Infiltrators are extremely agile and capable combatants who fight with two weapons at once. They are not to be trifled with.",
-    "abilities": [
-      "A very agile enemy and capable of dodging the operators' basic attacks. However, when she attacks, she won't be able to dodge.",
-      "Can throw darts and perform additional attacks on operators hit by the darts. Dodging the darts might offer a good chance to counterattack."
-    ]
-  },
   "eny_0018_lbtough": {
     "name": "Bonekrusher Executioner",
     "nickname": "Bonekrusher Executioner",
@@ -25,36 +16,12 @@
       "Dodging the charged double axe swings will not be easy. Try to interrupt him instead."
     ]
   },
-  "eny_0088_wgthorns": {
-    "name": "Hedron",
-    "nickname": "Hedron",
-    "description": "The \"Diaphaistagran\" (archive ID: ARM315) is a fluid-based pattern with energy projecting capabilities. Its shape is that of a complex yet symmetrical geometry. Its attacks can also sap heat from any surface they come in contact with.",
-    "abilities": [
-      "The projectiles it launches apply Cryo Infliction to operators upon hit."
-    ]
-  },
   "eny_0021_agmelee": {
     "name": "Ram",
     "nickname": "Ram",
     "description": "The \"Kriosson\" (archive ID: ACL071) is amongst the earliest recorded form of the Aggeloi and the most commonly encountered. It attacks by ramming its victims with its horns.",
     "abilities": [
       "This enemy has no special abilities."
-    ]
-  },
-  "eny_0039_agcanno": {
-    "name": "Sentinel",
-    "nickname": "Sentinel",
-    "description": "The \"Phrourossaron\" (ARS316) is a suspected Aggeloid attempt at mimicking the shape and attack patterns of humanity's sentry guns. Despite its massive range, the Sentinel is a sessile organism.",
-    "abilities": [
-      "This enemy has a powerful attack with extremely long range. Dodge its bombardment to progress."
-    ]
-  },
-  "eny_0107_wgshoal2": {
-    "name": "Tidewalker δ",
-    "nickname": "Tidewalker δ",
-    "description": "The \"Genesklydan Dinedon\" (archive ID: AGM321δ) is an energized variant of AGM321. Its constituent matter is in a constant, turbulent flow. This also explains its particularly terrifying form when it appears at night.",
-    "abilities": [
-      "Attacks with abilities that apply Cryo Infliction, and applies Solidification to operators it hits."
     ]
   },
   "eny_0023_aghornb": {
@@ -82,23 +49,6 @@
       "When approached, this enemy will summon stone pillars around itself for protection."
     ]
   },
-  "eny_0060_lbmad": {
-    "name": "Hazefyre Claw",
-    "nickname": "Hazefyre Claw",
-    "description": "A Landbreaker combatant corrupted by hazefyre. Absorbing hazefyre should not be regarded as a fortunate blessing. These raiders have become horribly twisted versions of their former selves.",
-    "abilities": [
-      "Dodge its gnashing attack to make it fall to the ground."
-    ]
-  },
-  "eny_0078_nefarp1": {
-    "name": "Nefarith, \"Bonekrusher\"",
-    "nickname": "Nefarith, \"Bonekrusher\"",
-    "description": "Thanks to Nefarith, the \"Bonekrushers\" became a byword for terror in the Civilization Band. Her brutal conquest has not yet ended, and her true ambitions have not yet been revealed.",
-    "abilities": [
-      "Unleashes Æther energy waves that cannot be dodged. Use Zhuang Fangyi's Xiranite to leap into mid-air and avoid it completely.",
-      "Leaps to great heights to charge-up for an attack. To interrupt this enemy move, use Xiranite to jump into the air, then perform a dive attack to summon a lightning strike."
-    ]
-  },
   "eny_0029_lbmob": {
     "name": "Bonekrusher Raider",
     "nickname": "Bonekrusher Raider",
@@ -115,12 +65,12 @@
       "This enemy has no special abilities."
     ]
   },
-  "eny_0095_ethillu": {
-    "name": "Æthillu",
-    "nickname": "Æthillu",
-    "description": "A phantom that answered Ardashir's call. It is a manifestation of destruction, a sedimentation of ancient senescence.",
+  "eny_0039_agcanno": {
+    "name": "Sentinel",
+    "nickname": "Sentinel",
+    "description": "The \"Phrourossaron\" (ARS316) is a suspected Aggeloid attempt at mimicking the shape and attack patterns of humanity's sentry guns. Despite its massive range, the Sentinel is a sessile organism.",
     "abilities": [
-      "This enemy has a powerful revival ability. The revived form has a longer attack range. It can also detonate itself to deal massive DMG."
+      "This enemy has a powerful attack with extremely long range. Dodge its bombardment to progress."
     ]
   },
   "eny_0045_agtrinit": {
@@ -134,22 +84,6 @@
       "TRICKERY FORM: Enters stealth to unleash barrages of projectiles from afar or ambush your operators. Break its stealth mode to apply high Stagger to it."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Ram α",
-    "nickname": "Ram α",
-    "description": "The \"Kriosson Anavon\" (archive ID: ACL071α) is an energized variant of ACL071. The entity's excessive energy content gives it a characteristic bright red appearance and makes it stronger and faster than the standard variant.",
-    "abilities": [
-      "This enemy has no special abilities."
-    ]
-  },
-  "eny_0065_lbmob2": {
-    "name": "Elite Raider",
-    "nickname": "Elite Raider",
-    "description": "An elite Landbreaker melee combatant enhanced by fumes known as hazefyre. This particular LB has better gear, strength, and battle skills.",
-    "abilities": [
-      "This enemy has no special abilities."
-    ]
-  },
   "eny_0046_lbshamman": {
     "name": "Bonekrusher Pyromancer",
     "nickname": "Bonekrusher Pyromancer",
@@ -158,22 +92,6 @@
       "This enemy has powerful ranged attacks that deal Heat DMG, but it has poor mobility.",
       "This enemy causes hazefyre to erupt from the ground to deal Heat DMG. Try to dodge the attack.",
       "Instantly teleports somewhere far away when opponents get too close."
-    ]
-  },
-  "eny_0052_palesent": {
-    "name": "Marble Aggelomoirai",
-    "nickname": "Marble Aggelomoirai",
-    "description": "NO PREVIOUS RECORDS. This has been categorized as an Aggelos due to the nature of its formation. Its outward appearance mimics that of Nefarith. Despite its high core energy readings, the entity seems to be rather unstable.",
-    "abilities": [
-      "The awakened Marble Aggelomoirai can summon countless Ankhors from the universe to bombard the land. Dodge these attacks to find a way to retaliate."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Mudflow",
-    "nickname": "Mudflow",
-    "description": "The \"Tholeroygran\" (archive ID: ACM311) is the first fluid-based pattern to be discovered. The morphology of the halo is unstable and the internal temperature is typically lower than its constituent materials.",
-    "abilities": [
-      "This enemy can quickly close the distance from afar. Its attacks can apply Cryo Infliction to operators upon hit."
     ]
   },
   "eny_0047_firebat": {
@@ -193,21 +111,21 @@
       "Despite being armed with a giant ballista, this enemy is also a skilled melee combatant."
     ]
   },
+  "eny_0049_rogue": {
+    "name": "Bonekrusher Infiltrator",
+    "nickname": "Bonekrusher Infiltrator",
+    "description": "A Landbreaker armed with melee weapons. Infiltrators are extremely agile and capable combatants who fight with two weapons at once. They are not to be trifled with.",
+    "abilities": [
+      "A very agile enemy and capable of dodging the operators' basic attacks. However, when she attacks, she won't be able to dodge.",
+      "Can throw darts and perform additional attacks on operators hit by the darts. Dodging the darts might offer a good chance to counterattack."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Bonekrusher Ripptusk",
     "nickname": "Bonekrusher Ripptusk",
     "description": "A small warbeast controlled by the Landbreakers. Ripptusks are far more bloodthirsty and ferocious than their untamed wilderness kin. They are absolutely loyal to the Landbreakers who tamed them.",
     "abilities": [
       "This enemy is agile but can be overwhelmed when taking multiple hits."
-    ]
-  },
-  "eny_0068_lbtough2": {
-    "name": "Elite Executioner",
-    "nickname": "Elite Executioner",
-    "description": "An elite Landbreaker brute enhanced by fumes known as hazefyre. This particular LB is a towering giant armed with a great axe. Such elites are usually seen leading Bonekrusher raiding mobs.",
-    "abilities": [
-      "His grab attack deals massive DMG. If an operator is grabbed, use another operator's skill to interrupt him and free the grabbed operator.",
-      "Dodging the charged double axe swings will not be easy. Try to interrupt him instead."
     ]
   },
   "eny_0051_rodin": {
@@ -219,30 +137,12 @@
       "Buffs himself with the power of denstacks. Watch and evade his jets of fire."
     ]
   },
-  "eny_0076_agfly": {
-    "name": "Falsewings",
-    "nickname": "Falsewings",
-    "description": "The \"Psuthopteron\" (archive ID: ARA07C) has flight capabilities that are wholly unrelated to its morphology. This pattern was originally regarded as biomimicry. However, the modern consensus believes it was a mimic of Terran flying vehicles.",
+  "eny_0052_palesent": {
+    "name": "Marble Aggelomoirai",
+    "nickname": "Marble Aggelomoirai",
+    "description": "NO PREVIOUS RECORDS. This has been categorized as an Aggelos due to the nature of its formation. Its outward appearance mimics that of Nefarith. Despite its high core energy readings, the entity seems to be rather unstable.",
     "abilities": [
-      "Launches small whirlwinds that can also slow down operators."
-    ]
-  },
-  "eny_0079_nefarp2": {
-    "name": "Nefarith, \"Conqueror\"",
-    "nickname": "Nefarith, \"Conqueror\"",
-    "description": "The Conqueror's inner perception of herself. She does not hide her desire to lay waste to Civilization.",
-    "abilities": [
-      "Constantly protected by an Æther shield that greatly reduces the DMG taken by the enemy. Interrupt the enemy's charge-up to temporarily disable the shield.",
-      "Tears the fabric of spacetime to immobilize your operators. Try to interrupt this skill if you can.",
-      "Traps your operators with an Ankhor. Attack the Ankhor to free them."
-    ]
-  },
-  "eny_0089_wgreflec": {
-    "name": "Prism",
-    "nickname": "Prism",
-    "description": "The \"Prismastagran\" (archive ID: ASM316) is a non-model variant of ARM315. It is capable of protecting nearby Aggeloi, and is very difficult to hit as it often surrounds itself with ARM315 entities.",
-    "abilities": [
-      "This enemy can greatly strengthen nearby allies to improve their capabilities."
+      "The awakened Marble Aggelomoirai can summon countless Ankhors from the universe to bombard the land. Dodge these attacks to find a way to retaliate."
     ]
   },
   "eny_0053_hsmob": {
@@ -251,24 +151,6 @@
     "description": "An armed criminal active in the jurisdiction of Wuling City. Road Plunderers would usually set up illegal road barricades or engage in the smuggling of illegal goods. Eliminating these brigands is a top priority for the law enforcement forces of Hongshan.",
     "abilities": [
       "This enemy has no special abilities."
-    ]
-  },
-  "eny_0083_hstiger": {
-    "name": "Spotted Rakerbeast",
-    "nickname": "Spotted Rakerbeast",
-    "description": "A rakerbeast that grew up in the wilderness. These apex predators are endemic to Talos-II. They can leap great distances and attack their prey with razor sharp claws.",
-    "abilities": [
-      "An agile beast that attacks with its claws and tail. Try to dodge.",
-      "Enraged State: When Enraged, the beast has increased ATK and uses its charge up skills more often. Applying Staggered to it ends the Enraged state."
-    ]
-  },
-  "eny_0098_sandb2": {
-    "name": "Hazefyre Axe Armorbeast",
-    "nickname": "Hazefyre Axe Armorbeast",
-    "description": "An axe armorbeast corrupted by hazefyre. The creature has become extremely aggressive, having been driven into a state of rabid insanity. Approach with caution if you do not intend to be split in half by its \"great axe\".",
-    "abilities": [
-      "A raging Axe Armorbeast will use its massive horns to chase out enemies intruding its territories. Watch out for its ramming charge.",
-      "The enemy will perform various large area attacks. Interrupt it when it becomes Enraged."
     ]
   },
   "eny_0054_hsmino": {
@@ -290,14 +172,6 @@
       "Spews green smoke that heals other enemies."
     ]
   },
-  "eny_0108_slbomb2": {
-    "name": "Blazemist Originium Slug",
-    "nickname": "Blazemist Originium Slug",
-    "description": "A wild creature infected by Originium with extremely high body temperatures. Its dorsal carapace is imbued with Originium dust with higher levels of activity.",
-    "abilities": [
-      "This enemy detonates self at low HP. The detonation applies an unstable material on the operator it hits. If the operator takes DMG, the material will explode."
-    ]
-  },
   "eny_0057_dog": {
     "name": "Wild Tuskbeast",
     "nickname": "Wild Tuskbeast",
@@ -313,7 +187,7 @@
     "abilities": [
       "This enemy has powerful slam attacks but rotates slowly during casting. This is the best time to go behind it and attack.",
       "The enemy can reassemble its body in various forms and move quickly across the battlefield.",
-      "The enemy will attempt to trap the operators! Quick interruption will counter her."
+      "The enemy will attempt to trap the operators! Quick interruption will counter it."
     ]
   },
   "eny_0059_erhound": {
@@ -322,6 +196,14 @@
     "description": "A tuskbeast corrupted by hazefyre. These small aberrations usually move in packs and can pose a serious threat, even to fully armed field teams.",
     "abilities": [
       "Less intelligent but more ferocious than common tuskbeasts. Dodge its pounce attack to make it fall to the ground."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Hazefyre Claw",
+    "nickname": "Hazefyre Claw",
+    "description": "A Landbreaker combatant corrupted by hazefyre. Absorbing hazefyre should not be regarded as a fortunate blessing. These raiders have become horribly twisted versions of their former selves.",
+    "abilities": [
+      "Dodge its gnashing attack to make it fall to the ground."
     ]
   },
   "eny_0061_palecore": {
@@ -341,28 +223,26 @@
       "Some Marble Appendages are skilled at attacking ranged opponents by converting their tips into Blight material that can be thrown."
     ]
   },
-  "eny_0075_lbroshan": {
-    "name": "Bonekrusher Siegeknuckles",
-    "nickname": "Bonekrusher Siegeknuckles",
-    "description": "A Landbreaker combatant equipped with heavy explosive gauntlets. These serve as the mainstay of Bonekrusher mobs. A Siegeknuckles's gauntlets serve as portable weapons for taking down fortified positions.",
+  "eny_0063_agmelee2": {
+    "name": "Ram α",
+    "nickname": "Ram α",
+    "description": "The \"Kriosson Anavon\" (archive ID: ACL071α) is an energized variant of ACL071. The entity's excessive energy content gives it a characteristic bright red appearance and makes it stronger and faster than the standard variant.",
     "abilities": [
-      "A relentless enemy. Even after being interrupted, he is likely going to try attacking again.",
-      "This enemy uses his armored sleeve to scatter reactive armor scales. Keep a safe distance, especially when accidentally stepping on it.",
-      "This enemy will try to retrieve armor scales from the ground to get back to form, and will launch a powerful attack upon successful retrieval."
-    ]
-  },
-  "eny_0091_wgshoal": {
-    "name": "Tidewalker",
-    "nickname": "Tidewalker",
-    "description": "The \"Genesklydan\" (archive ID: AGM321) exhibits humanoid head and legs. Ever since the discovery of this particular pattern, human resemblance became an unspoken rule for assessing Aggeloid threat levels.",
-    "abilities": [
-      "Attacks with abilities that apply Cryo Infliction, and applies Solidification to operators it hits."
+      "This enemy has no special abilities."
     ]
   },
   "eny_0064_agrange2": {
     "name": "Sting α",
     "nickname": "Sting α",
     "description": "The \"Kentron Anavon\" (archive ID: ARL121α) is an energized variant of ARL121. The entity's higher energy density gives it greater firepower. The energy efficiency of its firing mechanism remains low.",
+    "abilities": [
+      "This enemy has no special abilities."
+    ]
+  },
+  "eny_0065_lbmob2": {
+    "name": "Elite Raider",
+    "nickname": "Elite Raider",
+    "description": "An elite Landbreaker melee combatant enhanced by fumes known as hazefyre. This particular LB has better gear, strength, and battle skills.",
     "abilities": [
       "This enemy has no special abilities."
     ]
@@ -375,24 +255,6 @@
       "This enemy has no special abilities."
     ]
   },
-  "eny_0077_agshield": {
-    "name": "Walking Chrysopolis",
-    "nickname": "Walking Chrysopolis",
-    "description": "The \"Thureoron\" (archive ID: ACL156) is a pattern furnished with a shield-like structure that protects its halo. Be warned. This Aggelos can manipulate energy to drag distant targets towards itself.",
-    "abilities": [
-      "The Walking Chrysopolis has two states: Normal and Bastion.",
-      "Normal State: This has the ability to pull in operators from afar.",
-      "Bastion State: All incoming attacks on its front or sides will be reflected, but this also exposes a weak point on its back."
-    ]
-  },
-  "eny_0094_hsfly": {
-    "name": "Waterlamp",
-    "nickname": "Waterlamp",
-    "description": "A wild arthropod that lives in aquatic environments. The waterlamp gives off a faint glow and its body fluids contain irritants that may induce allergic reactions and even burns. Be careful when tackling this creature.",
-    "abilities": [
-      "An enemy that spews acids stored in its head. Operators hit by this attack will suffer reduced DEF. Though not very threatening, care should be taken in any case."
-    ]
-  },
   "eny_0067_hound2": {
     "name": "Elite Ripptusk",
     "nickname": "Elite Ripptusk",
@@ -401,20 +263,21 @@
       "Nimble and agile. Will keep trying to approach and attack its target."
     ]
   },
+  "eny_0068_lbtough2": {
+    "name": "Elite Executioner",
+    "nickname": "Elite Executioner",
+    "description": "An elite Landbreaker brute enhanced by fumes known as hazefyre. This particular LB is a towering giant armed with a great axe. Such elites are usually seen leading Bonekrusher raiding mobs.",
+    "abilities": [
+      "His grab attack deals massive DMG. If an operator is grabbed, use another operator's skill to interrupt him and free the grabbed operator.",
+      "Dodging the charged double axe swings will not be easy. Try to interrupt him instead."
+    ]
+  },
   "eny_0069_aghornb2": {
     "name": "Heavy Ram α",
     "nickname": "Heavy Ram α",
     "description": "The \"Thrylissoron Anavon\" (archive ID: ACL072α) is an energized variant of ACL072. Its high energy contents did not affect its decision-making abilities. This entity is extremely dangerous.",
     "abilities": [
       "This enemy has no special abilities."
-    ]
-  },
-  "eny_0092_slbomb": {
-    "name": "Firemist Originium Slug",
-    "nickname": "Firemist Originium Slug",
-    "description": "A wild creature infected by Originium with extremely high body temperatures. This slug explodes when near death, covering everything nearby with acidic body fluids at boiling temperatures as well as active Originium dust.",
-    "abilities": [
-      "This enemy detonates self at low HP. The detonation applies an unstable material on the operator it hits. If the operator takes DMG, the material will explode."
     ]
   },
   "eny_0070_agscorp2": {
@@ -443,14 +306,6 @@
       "An enemy that shows up in groups. Watch out for their razor sharp forward appendages."
     ]
   },
-  "eny_0104_hsrogue2": {
-    "name": "Breaking Gust",
-    "nickname": "Breaking Gust",
-    "description": "A criminal armed with an exotic weapon. Such Cloud Stalkers are so skilled in hooked blades people claim they could slice and dice the very clouds into perfect cubes.",
-    "abilities": [
-      "Uses chain hooks to attack allied operators. Chained operators will be Stunned unless freed."
-    ]
-  },
   "eny_0073_slimerg": {
     "name": "Acid Originium Slug",
     "nickname": "Acid Originium Slug",
@@ -459,20 +314,59 @@
       "A timid enemy that retreats into its shell to protect itself. It will also mindlessly fire Originium crystals from its body to intimidate its opponents."
     ]
   },
-  "eny_0093_hshog": {
-    "name": "Quillbeast",
-    "nickname": "Quillbeast",
-    "description": "A wild quillbeast indigenous to Talos-II. When it raises its quills and starts rolling around, it becomes as destructive as a spinning chainsaw.",
-    "abilities": [
-      "Enraged State: When Enraged, the beast has increased ATK and uses its charge up skills more often. Applying Staggered to it ends the Enraged state."
-    ]
-  },
   "eny_0074_lbshield": {
     "name": "Bonekrusher Vanguard",
     "nickname": "Bonekrusher Vanguard",
     "description": "A Bonekrusher combatant armed with spears and shields. Though armed with weapons crudely cobbled together, the vanguard has developed a combat technique that unites attack and defense. Practice caution when fighting this foe.",
     "abilities": [
       "This enemy will block all incoming attacks unless he is attacking. Stagger him to shatter his shield."
+    ]
+  },
+  "eny_0075_lbroshan": {
+    "name": "Bonekrusher Siegeknuckles",
+    "nickname": "Bonekrusher Siegeknuckles",
+    "description": "A Landbreaker combatant equipped with heavy explosive gauntlets. These serve as the mainstay of Bonekrusher mobs. A Siegeknuckles's gauntlets serve as portable weapons for taking down fortified positions.",
+    "abilities": [
+      "A relentless enemy. Even after being interrupted, he is likely going to try attacking again.",
+      "This enemy uses his armored sleeve to scatter reactive armor scales. Keep a safe distance, especially when accidentally stepping on it.",
+      "This enemy will try to retrieve armor scales from the ground to get back to form, and will launch a powerful attack upon successful retrieval."
+    ]
+  },
+  "eny_0076_agfly": {
+    "name": "Falsewings",
+    "nickname": "Falsewings",
+    "description": "The \"Psuthopteron\" (archive ID: ARA07C) has flight capabilities that are wholly unrelated to its morphology. This pattern was originally regarded as biomimicry. However, the modern consensus believes it was a mimic of Terran flying vehicles.",
+    "abilities": [
+      "Launches small whirlwinds that can also slow down operators."
+    ]
+  },
+  "eny_0077_agshield": {
+    "name": "Walking Chrysopolis",
+    "nickname": "Walking Chrysopolis",
+    "description": "The \"Thureoron\" (archive ID: ACL156) is a pattern furnished with a shield-like structure that protects its halo. Be warned. This Aggelos can manipulate energy to drag distant targets towards itself.",
+    "abilities": [
+      "The Walking Chrysopolis has two states: Normal and Bastion.",
+      "Normal State: This has the ability to pull in operators from afar.",
+      "Bastion State: All incoming attacks on its front or sides will be reflected, but this also exposes a weak point on its back."
+    ]
+  },
+  "eny_0078_nefarp1": {
+    "name": "Nefarith, \"Bonekrusher\"",
+    "nickname": "Nefarith, \"Bonekrusher\"",
+    "description": "Thanks to Nefarith, the \"Bonekrushers\" became a byword for terror in the Civilization Band. Her brutal conquest has not yet ended, and her true ambitions have not yet been revealed.",
+    "abilities": [
+      "Unleashes Æther energy waves that cannot be dodged. Use Zhuang Fangyi's Xiranite to leap into mid-air and avoid it completely.",
+      "Leaps to great heights to charge-up for an attack. To interrupt this enemy move, use Xiranite to jump into the air, then perform a dive attack to summon a lightning strike."
+    ]
+  },
+  "eny_0079_nefarp2": {
+    "name": "Nefarith, \"Conqueror\"",
+    "nickname": "Nefarith, \"Conqueror\"",
+    "description": "The Conqueror's inner perception of herself. She does not hide her desire to lay waste to Civilization.",
+    "abilities": [
+      "Constantly protected by an Æther shield that greatly reduces the DMG taken by the enemy. Interrupt the enemy's charge-up to temporarily disable the shield.",
+      "Tears the fabric of spacetime to immobilize your operators. Try to interrupt this skill if you can.",
+      "Traps your operators with an Ankhor. Attack the Ankhor to free them."
     ]
   },
   "eny_0080_reaper": {
@@ -492,20 +386,21 @@
       "Xiranite Energy will coalesce and appear in the battlefield to offer support. Touch the Xiranite Energy at the right timing to activate it and suppress Ruan Yi."
     ]
   },
-  "eny_0099_slimeml2": {
-    "name": "Brutal Pincerbeast",
-    "nickname": "Brutal Pincerbeast",
-    "description": "A wild creature infected by Originium. The giant beast carries numerous clusters of Originium that exhibit higher levels of activity. It also sports a thicker carapace than its ordinary counterparts.",
-    "abilities": [
-      "An enemy that shows up in groups. Watch out for their razor sharp forward appendages."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Skydrummer",
     "nickname": "Skydrummer",
     "description": "A howlerbeast that grew up in the wilderness. This beast is indigenous to Talos-II. Strong membranes on its head and neck allow it to unleash powerful howling loud enough to shake the hills and forests.",
     "abilities": [
       "Low HP triggers the enemy's Enraged state. During this state, the enemy performs its charge-up attacks more often, deals more DMG, and gains DMG Reduction. Interrupt the enemy in time to end the Enraged state."
+    ]
+  },
+  "eny_0083_hstiger": {
+    "name": "Spotted Rakerbeast",
+    "nickname": "Spotted Rakerbeast",
+    "description": "A rakerbeast that grew up in the wilderness. These apex predators are endemic to Talos-II. They can leap great distances and attack their prey with razor sharp claws.",
+    "abilities": [
+      "An agile beast that attacks with its claws and tail. Try to dodge.",
+      "Enraged State: When Enraged, the beast has increased ATK and uses its charge up skills more often. Applying Staggered to it ends the Enraged state."
     ]
   },
   "eny_0084_hshunt": {
@@ -516,20 +411,36 @@
       "Fires all sorts of arrows and throws bombs to harass their opponents from range."
     ]
   },
-  "eny_0096_hsmob2": {
-    "name": "Highway Reaver",
-    "nickname": "Highway Reaver",
-    "description": "An armed criminal active in Wuling territories. They would usually set up illegal road barricades or engage in the smuggling of illegal goods. Some of them would even attack travelers.",
-    "abilities": [
-      "This enemy has no special abilities."
-    ]
-  },
   "eny_0085_hsrogue": {
     "name": "Nimbus Razor",
     "nickname": "Nimbus Razor",
     "description": "A criminal armed with a strange weapon. When the Cloud Stalker is tired of using the strange lantern, he would draw his short blade and engage in melee combat.",
     "abilities": [
       "Uses chain hooks to attack allied operators. Chained operators will be Stunned unless freed."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Mudflow",
+    "nickname": "Mudflow",
+    "description": "The \"Tholeroygran\" (archive ID: ACM311) is the first fluid-based pattern to be discovered. The morphology of the halo is unstable and the internal temperature is typically lower than its constituent materials.",
+    "abilities": [
+      "This enemy can quickly close the distance from afar. Its attacks can apply Cryo Infliction to operators upon hit."
+    ]
+  },
+  "eny_0088_wgthorns": {
+    "name": "Hedron",
+    "nickname": "Hedron",
+    "description": "The \"Diaphaistagran\" (archive ID: ARM315) is a fluid-based pattern with energy projecting capabilities. Its shape is that of a complex yet symmetrical geometry. Its attacks can also sap heat from any surface they come in contact with.",
+    "abilities": [
+      "The projectiles it launches apply Cryo Infliction to operators upon hit."
+    ]
+  },
+  "eny_0089_wgreflec": {
+    "name": "Prism",
+    "nickname": "Prism",
+    "description": "The \"Prismastagran\" (archive ID: ASM316) is a non-model variant of ARM315. It is capable of protecting nearby Aggeloi, and is very difficult to hit as it often surrounds itself with ARM315 entities.",
+    "abilities": [
+      "This enemy can greatly strengthen nearby allies to improve their capabilities."
     ]
   },
   "eny_0090_wgabyss": {
@@ -543,6 +454,54 @@
       "The ranged state suffers more Heat DMG, but has significant DMG Reduction against other elements."
     ]
   },
+  "eny_0091_wgshoal": {
+    "name": "Tidewalker",
+    "nickname": "Tidewalker",
+    "description": "The \"Genesklydan\" (archive ID: AGM321) exhibits humanoid head and legs. Ever since the discovery of this particular pattern, human resemblance became an unspoken rule for assessing Aggeloid threat levels.",
+    "abilities": [
+      "Attacks with abilities that apply Cryo Infliction, and applies Solidification to operators it hits."
+    ]
+  },
+  "eny_0092_slbomb": {
+    "name": "Firemist Originium Slug",
+    "nickname": "Firemist Originium Slug",
+    "description": "A wild creature infected by Originium with extremely high body temperatures. This slug explodes when near death, covering everything nearby with acidic body fluids at boiling temperatures as well as active Originium dust.",
+    "abilities": [
+      "This enemy self-detonates at low HP. The detonation applies an unstable material on the operator it hits. If the operator takes DMG, the material will explode."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Quillbeast",
+    "nickname": "Quillbeast",
+    "description": "A wild quillbeast indigenous to Talos-II. When it raises its quills and starts rolling around, it becomes as destructive as a spinning chainsaw.",
+    "abilities": [
+      "Enraged State: When Enraged, the beast has increased ATK and uses its charge up skills more often. Applying Staggered to it ends the Enraged state."
+    ]
+  },
+  "eny_0094_hsfly": {
+    "name": "Waterlamp",
+    "nickname": "Waterlamp",
+    "description": "A wild arthropod that lives in aquatic environments. The waterlamp gives off a faint glow and its body fluids contain irritants that may induce allergic reactions and even burns. Be careful when tackling this creature.",
+    "abilities": [
+      "An enemy that spews acids stored in its head. Operators hit by this attack will suffer reduced DEF. Though not very threatening, care should be taken in any case."
+    ]
+  },
+  "eny_0095_ethillu": {
+    "name": "Æthillu",
+    "nickname": "Æthillu",
+    "description": "A phantom that answered Ardashir's call. It is a manifestation of destruction, a sedimentation of ancient senescence.",
+    "abilities": [
+      "This enemy has a powerful revival ability. The revived form has a longer attack range. It can also detonate itself to deal massive DMG."
+    ]
+  },
+  "eny_0096_hsmob2": {
+    "name": "Highway Reaver",
+    "nickname": "Highway Reaver",
+    "description": "An armed criminal active in Wuling territories. They would usually set up illegal road barricades or engage in the smuggling of illegal goods. Some of them would even attack travelers.",
+    "abilities": [
+      "This enemy has no special abilities."
+    ]
+  },
   "eny_0097_hsmino2": {
     "name": "Cloud Obliterator",
     "nickname": "Cloud Obliterator",
@@ -550,6 +509,23 @@
     "abilities": [
       "Uses the heavy rocket launcher as a melee weapon. Also shoots fireworks for its ranged attacks. Getting rammed and lifted by its horns might set off some super fireworks!",
       "Don't try to backstab it. It has a powerful hind kick!"
+    ]
+  },
+  "eny_0098_sandb2": {
+    "name": "Hazefyre Axe Armorbeast",
+    "nickname": "Hazefyre Axe Armorbeast",
+    "description": "An axe armorbeast corrupted by hazefyre. The creature has become extremely aggressive, having been driven into a state of rabid insanity. Approach with caution if you do not intend to be split in half by its \"great axe\".",
+    "abilities": [
+      "A raging Axe Armorbeast will use its massive horns to chase out enemies intruding its territories. Watch out for its ramming charge.",
+      "The enemy will perform various large area attacks. Interrupt it when it becomes Enraged."
+    ]
+  },
+  "eny_0099_slimeml2": {
+    "name": "Brutal Pincerbeast",
+    "nickname": "Brutal Pincerbeast",
+    "description": "A wild creature infected by Originium. The giant beast carries numerous clusters of Originium that exhibit higher levels of activity. It also sports a thicker carapace than its ordinary counterparts.",
+    "abilities": [
+      "An enemy that shows up in groups. Watch out for their razor sharp forward appendages."
     ]
   },
   "eny_0100_slimerg2": {
@@ -585,6 +561,14 @@
       "Fires all sorts of arrows and throws bombs to harass their opponents from range."
     ]
   },
+  "eny_0104_hsrogue2": {
+    "name": "Breaking Gust",
+    "nickname": "Breaking Gust",
+    "description": "A criminal armed with an exotic weapon. Such Cloud Stalkers are so skilled in hooked blades people claim they could slice and dice the very clouds into perfect cubes.",
+    "abilities": [
+      "Uses chain hooks to attack allied operators. Chained operators will be Stunned unless freed."
+    ]
+  },
   "eny_0105_wgslime2": {
     "name": "Mudflow δ",
     "nickname": "Mudflow δ",
@@ -601,6 +585,22 @@
       "The projectiles it launches apply Cryo Infliction to operators upon hit."
     ]
   },
+  "eny_0107_wgshoal2": {
+    "name": "Tidewalker δ",
+    "nickname": "Tidewalker δ",
+    "description": "The \"Genesklydan Dinedon\" (archive ID: AGM321δ) is an energized variant of AGM321. Its constituent matter is in a constant, turbulent flow. This also explains its particularly terrifying form when it appears at night.",
+    "abilities": [
+      "Attacks with abilities that apply Cryo Infliction, and applies Solidification to operators it hits."
+    ]
+  },
+  "eny_0108_slbomb2": {
+    "name": "Blazemist Originium Slug",
+    "nickname": "Blazemist Originium Slug",
+    "description": "A wild creature infected by Originium with extremely high body temperatures. Its dorsal carapace is imbued with Originium dust with higher levels of activity.",
+    "abilities": [
+      "This enemy self-detonates at low HP. The detonation applies an unstable material on the operator it hits. If the operator takes DMG, the material will explode."
+    ]
+  },
   "eny_0109_hshog2": {
     "name": "Imbued Quillbeast",
     "nickname": "Imbued Quillbeast",
@@ -608,6 +608,34 @@
     "abilities": [
       "This enemy will charge up and inflate its abdomen to spew superhot lava from its body. Interrupt it during charge up to deal massive Stagger to it.",
       "Enraged State: When Enraged, the beast has increased ATK and uses its charge up skills more often. Applying Staggered to it ends the Enraged state."
+    ]
+  },
+  "eny_0112_jzmonk": {
+    "name": "Rockhowler",
+    "nickname": "Rockhowler",
+    "description": "Rockhowlers can live in the natural wilderness. These intelligent yet mischievous creatures often prepare \"traps\" and \"dangers\" for hapless travelers. They seem to enjoy the sight of humans frustrated by their antics. Please deal with them patiently.",
+    "abilities": [
+      "This enemy typically roams around in packs. Any operator or Rockhowler that steps on discarded banana peels will slip and fall."
+    ]
+  },
+  "eny_0113_jzogre": {
+    "name": "Armored Manglerbeast",
+    "nickname": "Armored Manglerbeast",
+    "description": "A variant of manglerbeasts that evolved specifically on Talos-II. These unique manglers are armored in extremely thick scales and share a mutualistic symbiosis with rockhowlers. The former species provides the bulwark and muscle while the latter offers keen senses and warns against trespassers.",
+    "abilities": [
+      "The Rockhowler riding on the Armored Manglerbeast's back can throw banana peels. If the Armored Manglerbeast steps on banana peels while performing a charging attack, it will slip and fall.",
+      "When curled into its defensive pose, only its hands remain exposed as weak spots. Break the hands to end the defensive pose and apply knock down to the beast.",
+      "Drops Rockhowlers when knocked down. Attack the Rockhowlers to deal even more DMG."
+    ]
+  },
+  "eny_0114_jzmking": {
+    "name": "Craghowler",
+    "nickname": "Craghowler",
+    "description": "Craghowlers are the dominant members of rockhowler communities. These beasts will fight each other countless times before the strongest champion emerges as the leading craghowler. There is no question that such individuals have mastered combat in ways that their kin could only dream of.",
+    "abilities": [
+      "When enraged, the Craghowler will start breaking the ruins. Loosened rocks will fall into the battlefield and deal DMG to operators hit by them.",
+      "The Craghowler can use the pillars within the ruins to great effect and give itself a huge attack range.",
+      "The Craghowler will feign a retreat, and suddenly throw huge rocks to attack unsuspecting enemies."
     ]
   }
 }

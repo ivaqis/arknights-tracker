@@ -80,7 +80,7 @@
         "Ao lutar no campo de batalha, todos os guardas, conjuradores e apoiadores aliados ganham Eficiência de Ganho Supremo <@ba.vup>+ {add:0%}</>.",
         "Ao lutar no campo de batalha, todos os guardas, conjuradores e apoiadores aliados ganham Eficiência de Ganho Supremo <@ba.vup>+ {add:0%}</>."
       ],
-      "name": "Canção do Mensageiro"
+      "name": "Canção da Mensageira"
     },
     "talent2": {
       "levels": [
@@ -122,7 +122,7 @@
       "name": "Andarilha do Vento"
     },
     "potential3": {
-      "description": "Talento <@ba.key>Canção do Mensageiro</> melhorado: Eficiência de Ganho Supremo <@ba.vup>+ {add:0%}</>.",
+      "description": "Talento <@ba.key>Canção da Mensageira</> melhorado: Eficiência de Ganho Supremo <@ba.vup>+ {add:0%}</>.",
       "name": "Passos Rápidos e Suaves"
     },
     "potential4": {

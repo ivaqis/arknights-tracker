@@ -127,7 +127,7 @@
       "name": "Special Blend"
     },
     "potential5": {
-      "description": "Battle skill <@ba.key>FLIP DA WOK!</> improved: If the skill hits only one enemy, apply 1 more stack of <#ba.noguard>Vulnerability</> on the target. Effect only triggers once every {potential_5_interval:0}s.",
+      "description": "Battle skill <@ba.key>FLIP DA WOK!</> improved: If the skill hits only one enemy, apply 1 more stack of <#ba.noguard>Vulnerability</> on the target. This effect can only trigger once every {potential_5_interval:0}s.",
       "name": "Fire it Up"
     }
   },

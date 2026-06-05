@@ -71,7 +71,7 @@
         "weaknessDurationS": "Durée de Faiblesse (s)"
       },
       "name": "Assaut classique",
-      "description": "Manie l'espadon pour assener 2 coups consécutifs afin d'infliger des <@ba.pd>DÉG physiques</> et d'appliquer <#ba.weak>Affaiblissement</>, puis effectue un puissant écrasement qui inflige d'importants <@ba.pd>DÉG physiques</> et <#ba.knockdown>renverse</> tous les ennemis qui se trouvent dans la zone d'effet."
+      "description": "Manie l'espadon pour assener 2 coups consécutifs afin d'infliger des <@ba.pd>DÉG physiques</> et d'appliquer <#ba.weak>Faiblesse</>, puis effectue un puissant écrasement qui inflige d'importants <@ba.pd>DÉG physiques</> et <#ba.knockdown>renverse</> tous les ennemis qui se trouvent dans la zone d'effet."
     },
     "indicator": {
       "levels": [

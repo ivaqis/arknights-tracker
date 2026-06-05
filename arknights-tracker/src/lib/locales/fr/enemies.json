@@ -7,15 +7,6 @@
       "Évitez ses crachats empoisonnés. Marcher dessus infligera des DÉG naturels continus à l'opérateur."
     ]
   },
-  "eny_0049_rogue": {
-    "name": "Infiltré Broyeur d'os",
-    "nickname": "Infiltré Broyeur d'os",
-    "description": "Un Brise-Terre équipé d'armes de corps-à-corps. Les infiltrés sont des combattants extrêmement agiles et doués, qui manient deux armes à la fois. Il ne faut pas les prendre à la légère.",
-    "abilities": [
-      "Une ennemie très agile et capable d'esquiver les attaques de base des opérateurs. Elle ne peut plus esquiver lorsqu'elle lance une attaque.",
-      "Cet ennemi peut tirer des fléchettes et lancer des attaques supplémentaires sur les opérateurs touchés. Esquiver ces fléchettes peut offrir une occasion de contre-attaquer."
-    ]
-  },
   "eny_0018_lbtough": {
     "name": "Exécuteur Broyeur d'os",
     "nickname": "Exécuteur Broyeur d'os",
@@ -25,36 +16,12 @@
       "Difficile d'esquiver le double coup de hache chargé. Essayez plutôt de l'interrompre."
     ]
   },
-  "eny_0088_wgthorns": {
-    "name": "Hédron",
-    "nickname": "Hédron",
-    "description": "Le « diaphaïstagran » (ID d'archive : ARM315) est un modèle à base fluide capable de projeter de l'énergie. La géométrie de son agencement est complexe mais symétrique. Ses attaques peuvent également aspirer la chaleur de toute surface avec laquelle il entre en contact.",
-    "abilities": [
-      "Ses projectiles infligent une altération cryogénique s'ils touchent les opérateurs."
-    ]
-  },
   "eny_0021_agmelee": {
     "name": "Bélier",
     "nickname": "Bélier",
     "description": "Le « kriosson » (ID d'archive : ACL071), une des premières formes d'Aggeloi découvertes, est celle qu'on croise le plus souvent. Il attaque ses victimes en les chargeant avec ses cornes.",
     "abilities": [
       "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
-  "eny_0039_agcanno": {
-    "name": "Sentinelle",
-    "nickname": "Sentinelle",
-    "description": "Certains pensent que le « phrourossaron » (ARS316) est une tentative aggeloïde d'imitation de la forme et des attaques des mitrailleuses humaines. Malgré son incroyable portée, la sentinelle est un organisme sessile, elle nécessite donc un support fixe.",
-    "abilities": [
-      "Cet ennemi possède une attaque puissante à très longue portée. Esquivez son bombardement pour avancer."
-    ]
-  },
-  "eny_0107_wgshoal2": {
-    "name": "Brise-marée δ",
-    "nickname": "Brise-marée δ",
-    "description": "Le « dinedon génesklydan » (ID d'archive : AGM321δ) est une variante énergisée de l'AGM321. La matière qui le constitue tourbillonne sans cesse dans un flux agité. Cela explique la forme particulièrement effrayante qu'il adopte la nuit.",
-    "abilities": [
-      "Attaque à l'aide de capacités qui infligent des altérations cryogéniques et applique Solidification aux opérateurs qu'il touche."
     ]
   },
   "eny_0023_aghornb": {
@@ -82,23 +49,6 @@
       "Lorsque vous l'approchez, cet ennemi invoque des piliers de pierre autour de lui pour se protéger."
     ]
   },
-  "eny_0060_lbmad": {
-    "name": "Griffe d'ignibrume",
-    "nickname": "Griffe d'ignibrume",
-    "description": "Un combattant Brise-Terre corrompu par l'ignibrume. Être capable d'absorber l'ignibrume est loin d'être une bénédiction. Ces pillards sont des versions horriblement déformées de ce qu'ils étaient à l'origine.",
-    "abilities": [
-      "Esquivez ses attaques mordantes pour qu'elle s'écrase au sol."
-    ]
-  },
-  "eny_0078_nefarp1": {
-    "name": "Nefarith, « Broyeuse d'os »",
-    "nickname": "Nefarith, « Broyeuse d'os »",
-    "description": "Grâce à Nefarith, le simple fait de prononcer les mots « Broyeurs d'os » sème la terreur dans la Ceinture civilisée. Sa conquête impitoyable n'est pas encore terminée, et elle n'a pas encore révélé ses véritables ambitions.",
-    "abilities": [
-      "Projette des vagues d'énergie æthérique qui ne peuvent pas être esquivées. Utilisez la xiranite de Zhuang Fangyi pour sauter à mi-hauteur et les éviter totalement.",
-      "Bondit vers le ciel pour charger son attaque. Pour interrompre cette compétence, utilisez de la xiranite afin de vous propulser dans les airs et d'exécuter une attaque plongeante qui foudroiera l'ennemi."
-    ]
-  },
   "eny_0029_lbmob": {
     "name": "Pillard Broyeur d'os",
     "nickname": "Pillard Broyeur d'os",
@@ -115,12 +65,12 @@
       "Cet ennemi n'a aucune capacité spéciale."
     ]
   },
-  "eny_0095_ethillu": {
-    "name": "Æthillu",
-    "nickname": "Æthillu",
-    "description": "Un fantôme ayant répondu à l'appel d'Ardashir. Il incarne la destruction, les sédiments de la sénescence du passé.",
+  "eny_0039_agcanno": {
+    "name": "Sentinelle",
+    "nickname": "Sentinelle",
+    "description": "Certains pensent que le « phrourossaron » (ARS316) est une tentative aggeloïde d'imitation de la forme et des attaques des mitrailleuses humaines. Malgré son incroyable portée, la sentinelle est un organisme sessile, elle nécessite donc un support fixe.",
     "abilities": [
-      "Cet ennemi a une forte capacité à revenir à la vie. Sa forme ranimée bénéficie d'une portée d'attaque accrue. Il peut également se faire exploser pour infliger de lourds DÉG."
+      "Cet ennemi possède une attaque puissante à très longue portée. Esquivez son bombardement pour avancer."
     ]
   },
   "eny_0045_agtrinit": {
@@ -134,22 +84,6 @@
       "FORME DE TROMPERIE : devient furtif pour lancer des rafales de projectiles à distance ou tendre une embuscade à vos opérateurs. Brisez sa furtivité pour lui infliger un important Déséquilibre."
     ]
   },
-  "eny_0063_agmelee2": {
-    "name": "Bélier α",
-    "nickname": "Bélier α",
-    "description": "Le « kriosson anavon » (ID d'archive : ACL071α) est une variante énergisée de l'ACL071. Le surplus d'énergie de cette créature lui donne ce rouge vif caractéristique, tout en le rendant plus fort et plus rapide que la version standard.",
-    "abilities": [
-      "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
-  "eny_0065_lbmob2": {
-    "name": "Pillard d'élite",
-    "nickname": "Pillard d'élite",
-    "description": "Un Brise-Terre de corps-à-corps d'élite, renforcé par les fumées connues sous le nom d'ignibrume. Ce BT possède un meilleur équipement, une force accrue et des compétences de combat supérieures.",
-    "abilities": [
-      "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
   "eny_0046_lbshamman": {
     "name": "Pyromancien Broyeur d'os",
     "nickname": "Pyromancien Broyeur d'os",
@@ -158,22 +92,6 @@
       "Cet ennemi porte de puissantes attaques à distance qui infligent des DÉG thermiques, mais sa capacité de mouvement est limitée.",
       "Cet ennemi fait surgir de l'ignibrume du sol pour infliger des DÉG thermiques. Essayez d'esquiver cette attaque.",
       "Téléportez-vous au loin dès que l'ennemi est trop près de vous."
-    ]
-  },
-  "eny_0052_palesent": {
-    "name": "Aggelomoires de marbre",
-    "nickname": "Aggelomoires de marbre",
-    "description": "AUCUNE ARCHIVE EXISTANTE. Cette créature est considérée comme un Aggelos en raison de la nature de sa formation. Son apparence imite celle de Nefarith. Malgré les relevés énergétiques élevés de son noyau, cette créature semble assez instable.",
-    "abilities": [
-      "Les Aggelomoires de marbre éveillées peuvent invoquer d'innombrables Ankhors depuis l'univers pour bombarder les environs. Esquivez ces attaques et trouvez un moyen de riposter."
-    ]
-  },
-  "eny_0087_wgslime": {
-    "name": "Coulifange",
-    "nickname": "Coulifange",
-    "description": "Le « tholéroygran » (ID d'archive : ACM311) est le premier modèle à base fluide qu'on a découvert. La morphologie de son halo est instable et sa température interne est fondamentalement plus basse que les matériaux qui le constituent.",
-    "abilities": [
-      "L'ennemi peut rapidement réduire la distance. Ses attaques infligent une altération cryogénique si elles touchent les opérateurs."
     ]
   },
   "eny_0047_firebat": {
@@ -193,21 +111,21 @@
       "Bien qu'il soit armé d'une baliste géante, cet ennemi n'en reste pas moins un excellent combattant au corps-à-corps."
     ]
   },
+  "eny_0049_rogue": {
+    "name": "Infiltré Broyeur d'os",
+    "nickname": "Infiltré Broyeur d'os",
+    "description": "Un Brise-Terre équipé d'armes de corps-à-corps. Les infiltrés sont des combattants extrêmement agiles et doués, qui manient deux armes à la fois. Il ne faut pas les prendre à la légère.",
+    "abilities": [
+      "Une ennemie très agile et capable d'esquiver les attaques de base des opérateurs. Elle ne peut plus esquiver lorsqu'elle lance une attaque.",
+      "Cet ennemi peut tirer des fléchettes et lancer des attaques supplémentaires sur les opérateurs touchés. Esquiver ces fléchettes peut offrir une occasion de contre-attaquer."
+    ]
+  },
   "eny_0050_hound": {
     "name": "Lycarne Broyeur d'os",
     "nickname": "Lycarne Broyeur d'os",
     "description": "Une petite bête de guerre contrôlée par les Brise-Terres. Les lycarnes sont bien plus féroces et assoiffées de sang que leurs congénères non apprivoisés. Elles sont extrêmement loyales aux Brise-Terres qui les ont apprivoisées.",
     "abilities": [
       "Cet ennemi est agile mais peut être débordé lorsqu'il subit des attaques multiples."
-    ]
-  },
-  "eny_0068_lbtough2": {
-    "name": "Exécuteur d'élite",
-    "nickname": "Exécuteur d'élite",
-    "description": "Une brute Brise-Terre d'élite, renforcée par les fumées connues sous le nom d'ignibrume. Ce BT est un géant armé d'une hache lourde. On peut généralement voir ces élites mener des groupes de pillards Broyeurs d'os.",
-    "abilities": [
-      "Ses attaques infligent de lourds DÉG. Si un opérateur est saisi, utilisez la compétence d'un autre opérateur pour l'interrompre et le libérer.",
-      "Difficile d'esquiver le double coup de hache chargé. Essayez plutôt de l'interrompre."
     ]
   },
   "eny_0051_rodin": {
@@ -219,30 +137,12 @@
       "Cet ennemi s'octroie des bonus grâce à la puissance des flambes. Observez-le et évitez ses jets de flammes."
     ]
   },
-  "eny_0076_agfly": {
-    "name": "Illusailes",
-    "nickname": "Illusailes",
-    "description": "Le « psuthoptéron » (ID d'archive : ARA07C) possède des capacités de vol qui ne sont absolument pas liées à sa morphologie. Cela était considéré à l'origine comme du biomimétisme, mais d'après un consensus moderne, ce serait plutôt une imitation des véhicules volants de Terra.",
+  "eny_0052_palesent": {
+    "name": "Aggelomoires de marbre",
+    "nickname": "Aggelomoires de marbre",
+    "description": "AUCUNE ARCHIVE EXISTANTE. Cette créature est considérée comme un Aggelos en raison de la nature de sa formation. Son apparence imite celle de Nefarith. Malgré les relevés énergétiques élevés de son noyau, cette créature semble assez instable.",
     "abilities": [
-      "Lance de petits tourbillons qui peuvent aussi ralentir les opérateurs."
-    ]
-  },
-  "eny_0079_nefarp2": {
-    "name": "Nefarith, « Conquérante »",
-    "nickname": "Nefarith, « Conquérante »",
-    "description": "La façon dont la conquérante se voit, en elle-même. Elle ne cache pas son désir d'annihiler la civilisation.",
-    "abilities": [
-      "Constamment protégée par un bouclier æthérique qui réduit fortement les DÉG subis. Interrompez la charge ennemie pour désactiver temporairement ce bouclier.",
-      "Déchire la trame de l'espace-temps pour immobiliser vos opérateurs. Faites votre possible pour interrompre cette compétence.",
-      "Utilise un Ankhor pour piéger vos opérateurs. Attaquez l'Ankhor pour les libérer."
-    ]
-  },
-  "eny_0089_wgreflec": {
-    "name": "Prisme",
-    "nickname": "Prisme",
-    "description": "Le « prismastagran » (ID d'archive : ASM316) est une variante sans modèle de l'ARM315. Il est capable de protéger les Aggeloi à proximité et s'entoure souvent d'entités ARM315, ce qui le rend très difficile à toucher.",
-    "abilities": [
-      "Cet ennemi peut grandement renforcer ses alliés afin d'améliorer leurs capacités."
+      "Les Aggelomoires de marbre éveillées peuvent invoquer d'innombrables Ankhors depuis l'univers pour bombarder les environs. Esquivez ces attaques et trouvez un moyen de riposter."
     ]
   },
   "eny_0053_hsmob": {
@@ -251,24 +151,6 @@
     "description": "Un criminel armé qui sévit dans la juridiction de la ville de Wuling. Les écumeurs des routes installent généralement des barrages routiers illégaux ou font passer des marchandises de contrebande. Éliminer ces brigands est une priorité absolue pour les forces de maintien de l'ordre de Hongshan.",
     "abilities": [
       "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
-  "eny_0083_hstiger": {
-    "name": "Ratisseur tacheté",
-    "nickname": "Ratisseur tacheté",
-    "description": "Un ratisseur né dans les terres sauvages. Ces superprédateurs vivent exclusivement sur Talos-II. Ils peuvent sauter sur de longues distances et lacérer leurs proies de leurs griffes acérées.",
-    "abilities": [
-      "Une créature agile qui attaque avec ses griffes et sa queue. Essayez de l'esquiver.",
-      "État enragé : une fois enragée, la créature gagne en ATQ et utilise des compétences chargées plus souvent. Déséquilibrez-la pour mettre fin à l'état enragé."
-    ]
-  },
-  "eny_0098_sandb2": {
-    "name": "Cuirabrute à hache d'ignibrume",
-    "nickname": "Cuirabrute à hache d'ignibrume",
-    "description": "Une cuirabrute à hache corrompue par l'ignibrume. Cette créature est plongée dans une rage folle qui la rend extrêmement agressive. À approcher avec prudence si vous voulez éviter d'être coupé en deux par sa hache lourde.",
-    "abilities": [
-      "Le cuirabrute à hache enragé utilise ses énormes cornes pour repousser les ennemis qui pénètrent sur son territoire. Attention à sa charge.",
-      "L'ennemi exécute plusieurs attaques sur de vastes zones. Interrompez-le dès qu'il devient enragé."
     ]
   },
   "eny_0054_hsmino": {
@@ -290,14 +172,6 @@
       "Cet ennemi crache une fumée verte pour soigner les autres ennemis."
     ]
   },
-  "eny_0108_slbomb2": {
-    "name": "Limace d'originium brumeflamme",
-    "nickname": "Limace d'originium brumeflamme",
-    "description": "Une créature sauvage infectée par l'originium et dont le corps atteint des températures extrêmes. Sa carapace dorsale est imprégnée de poussière d'originium aux niveaux d'activité élevés.",
-    "abilities": [
-      "L'ennemi se fait exploser s'il lui reste peu de PV. La détonation applique une matière instable aux opérateurs touchés. Si l'opérateur subit des DÉG, la matière explose."
-    ]
-  },
   "eny_0057_dog": {
     "name": "Hyenard sauvage",
     "nickname": "Hyenard sauvage",
@@ -313,7 +187,7 @@
     "abilities": [
       "Cet ennemi est doté de puissantes attaques écrasantes, mais il tourne lentement sur lui-même pendant leur lancement. C'est le meilleur moment pour passer dans son dos et l'attaquer.",
       "Cet ennemi peut remodeler son corps de diverses façons et se déplace rapidement sur le champ de bataille.",
-      "L'ennemi va tenter de piéger les opérateurs ! Faites une interruption rapide pour la contrer."
+      "L'ennemi va tenter de piéger les opérateurs ! Interrompez-le rapidement pour le contrer."
     ]
   },
   "eny_0059_erhound": {
@@ -322,6 +196,14 @@
     "description": "Un hyenard corrompu par l'ignibrume. Ces petites aberrations se déplacent généralement en meute et constituent une grave menace, même pour les équipes de terrain lourdement armées.",
     "abilities": [
       "Moins intelligente, mais plus féroce que les hyenards ordinaires. Esquivez ses attaques sautées pour que la créature s'écrase au sol."
+    ]
+  },
+  "eny_0060_lbmad": {
+    "name": "Griffe d'ignibrume",
+    "nickname": "Griffe d'ignibrume",
+    "description": "Un combattant Brise-Terre corrompu par l'ignibrume. Être capable d'absorber l'ignibrume est loin d'être une bénédiction. Ces pillards sont des versions horriblement déformées de ce qu'ils étaient à l'origine.",
+    "abilities": [
+      "Esquivez ses attaques mordantes pour qu'elle s'écrase au sol."
     ]
   },
   "eny_0061_palecore": {
@@ -341,28 +223,26 @@
       "Certains appendices de marbre sont très doués pour attaquer leurs adversaires à distance en changeant leurs extrémités en matériau de Gangrène qu'ils peuvent projeter."
     ]
   },
-  "eny_0075_lbroshan": {
-    "name": "Phalange de siège Broyeur d'os",
-    "nickname": "Phalange de siège Broyeur d'os",
-    "description": "Un combattant Brise-Terre équipé de gantelets explosifs lourds. Ils sont le pivot des hordes de Broyeurs d'os. Les gantelets d'une phalange de siège servent d'armes portatives permettant d'abattre les positions fortifiées.",
+  "eny_0063_agmelee2": {
+    "name": "Bélier α",
+    "nickname": "Bélier α",
+    "description": "Le « kriosson anavon » (ID d'archive : ACL071α) est une variante énergisée de l'ACL071. Le surplus d'énergie de cette créature lui donne ce rouge vif caractéristique, tout en le rendant plus fort et plus rapide que la version standard.",
     "abilities": [
-      "Un ennemi acharné. Même si vous l'interrompez, il y a de fortes chances qu'il attaque de nouveau.",
-      "Cet ennemi utilise sa manche cuirassée pour disperser des écailles d'armure réactives. Restez à distance et évitez de marcher dessus.",
-      "L'ennemi va tenter de ramasser les écailles d'armure au sol pour retrouver sa forme d'origine et lancera une attaque puissante s'il y parvient."
-    ]
-  },
-  "eny_0091_wgshoal": {
-    "name": "Brise-marée",
-    "nickname": "Brise-marée",
-    "description": "Le « génesklydan » (ID d'archive : AGM321) arbore une tête et des jambes humaines. Depuis la découverte de ce modèle particulier, la ressemblance avec les humains est devenue une règle officieuse pour estimer les niveaux de menace aggeloïdes.",
-    "abilities": [
-      "Attaque à l'aide de capacités qui infligent des altérations cryogéniques et applique Solidification aux opérateurs qu'il touche."
+      "Cet ennemi n'a aucune capacité spéciale."
     ]
   },
   "eny_0064_agrange2": {
     "name": "Dard α",
     "nickname": "Dard α",
     "description": "Le « kentron anavon » (ID d'archive : ARL121α) est une variante énergisée de l'ARL121. La densité énergétique supérieure de cette créature lui octroie une plus grande puissance de feu. L'efficacité énergétique de son mécanisme de tir reste relativement faible.",
+    "abilities": [
+      "Cet ennemi n'a aucune capacité spéciale."
+    ]
+  },
+  "eny_0065_lbmob2": {
+    "name": "Pillard d'élite",
+    "nickname": "Pillard d'élite",
+    "description": "Un Brise-Terre de corps-à-corps d'élite, renforcé par les fumées connues sous le nom d'ignibrume. Ce BT possède un meilleur équipement, une force accrue et des compétences de combat supérieures.",
     "abilities": [
       "Cet ennemi n'a aucune capacité spéciale."
     ]
@@ -375,24 +255,6 @@
       "Cet ennemi n'a aucune capacité spéciale."
     ]
   },
-  "eny_0077_agshield": {
-    "name": "Chrysopolis ambulant",
-    "nickname": "Chrysopolis ambulant",
-    "description": "Le « thuréoron » (ID d'archive : ACL156) est un modèle équipé d'une structure de type bouclier qui protège son halo. Restez sur vos gardes. Cet Aggelos peut manipuler l'énergie pour attirer à lui des cibles distantes.",
-    "abilities": [
-      "Le chrysopolis ambulant possède deux états : normal et bastion.",
-      "État normal : il peut attirer les opérateurs vers lui depuis la distance.",
-      "État bastion : toutes les attaques envoyées sur ses flancs ou sa face avant sont déviées, un point faible est exposé dans son dos."
-    ]
-  },
-  "eny_0094_hsfly": {
-    "name": "Aqualampe",
-    "nickname": "Aqualampe",
-    "description": "Un arthropode sauvage qui vit dans des environnements aquatiques. L'aqualampe dégage une faible lueur et ses fluides corporels contiennent des substances irritantes qui peuvent provoquer des réactions allergiques et même des brûlures. Faites attention en vous attaquant à cette créature.",
-    "abilities": [
-      "Un ennemi qui crache de l'acide stocké dans sa tête. Les opérateurs touchés par l'acide voient leur DÉF réduite. La menace est faible, mais ne doit pas être ignorée."
-    ]
-  },
   "eny_0067_hound2": {
     "name": "Lycarne d'élite",
     "nickname": "Lycarne d'élite",
@@ -401,20 +263,21 @@
       "Agile et vif. Il tentera sans cesse d'approcher sa cible et de l'attaquer."
     ]
   },
+  "eny_0068_lbtough2": {
+    "name": "Exécuteur d'élite",
+    "nickname": "Exécuteur d'élite",
+    "description": "Une brute Brise-Terre d'élite, renforcée par les fumées connues sous le nom d'ignibrume. Ce BT est un géant armé d'une hache lourde. On peut généralement voir ces élites mener des groupes de pillards Broyeurs d'os.",
+    "abilities": [
+      "Ses attaques infligent de lourds DÉG. Si un opérateur est saisi, utilisez la compétence d'un autre opérateur pour l'interrompre et le libérer.",
+      "Difficile d'esquiver le double coup de hache chargé. Essayez plutôt de l'interrompre."
+    ]
+  },
   "eny_0069_aghornb2": {
     "name": "Bélier lourd α",
     "nickname": "Bélier lourd α",
     "description": "Le « thrylissoron anavon » (ID d'archive : ACL072α) est une variante énergisée de l'ACL072. Son énergie supérieure n'affecte pas ses capacités de prise de décision. Cette créature est extrêmement dangereuse.",
     "abilities": [
       "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
-  "eny_0092_slbomb": {
-    "name": "Limace d'originium de brumefeu",
-    "nickname": "Limace d'originium de brumefeu",
-    "description": "Une créature sauvage infectée par l'originium et dont le corps atteint des températures extrêmes. Cette limace explose lorsqu'elle est sur le point de mourir, couvrant tout ce qui l'entoure avec ses fluides corporels acides en ébullition et de la poussière d'originium active.",
-    "abilities": [
-      "L'ennemi se fait exploser s'il lui reste peu de PV. La détonation applique une matière instable aux opérateurs touchés. Si l'opérateur subit des DÉG, la matière explose."
     ]
   },
   "eny_0070_agscorp2": {
@@ -443,14 +306,6 @@
       "Cet ennemi apparaît toujours en groupe. Méfiez-vous de leurs appendices avant tranchants."
     ]
   },
-  "eny_0104_hsrogue2": {
-    "name": "Bourrasque dévastatrice",
-    "nickname": "Bourrasque dévastatrice",
-    "description": "Un criminel équipé d'une arme exotique. Ce type de traque-nuées est si habile avec sa lame recourbée que les gens estiment qu'il pourrait découper les nuages en cubes parfaitement réguliers.",
-    "abilities": [
-      "Utilise des crochets à chaîne pour attaquer les opérateurs alliés. Les opérateurs enchaînés seront étourdis jusqu'à ce qu'ils soient libérés."
-    ]
-  },
   "eny_0073_slimerg": {
     "name": "Limace d'originium acide",
     "nickname": "Limace d'originium acide",
@@ -459,20 +314,59 @@
       "Un ennemi timide qui se retire dans sa coquille pour se protéger. Il projette des cristaux d'originium ici ou là pour intimider ses adversaires."
     ]
   },
-  "eny_0093_hshog": {
-    "name": "Bêtaplume",
-    "nickname": "Bêtaplume",
-    "description": "Une bêtaplume indigène de Talos-II. Lorsqu'elle dresse ses plumes et commence à rouler sur elle-même, elle devient aussi destructrice qu'une tronçonneuse mobile.",
-    "abilities": [
-      "État enragé : une fois enragée, la créature gagne en ATQ et utilise des compétences chargées plus souvent. Déséquilibrez-la pour mettre fin à l'état enragé."
-    ]
-  },
   "eny_0074_lbshield": {
     "name": "Avant-garde Broyeur d'os",
     "nickname": "Avant-garde Broyeur d'os",
     "description": "Un combattant Broyeur d'os armé de lances et de boucliers. Bien qu'il manie des armes assemblées de façon sommaire, l'avant-garde a développé une technique de combat qui combine attaque et défense. Soyez très prudents lorsque vous affrontez cet ennemi.",
     "abilities": [
       "L'ennemi bloque toutes les attaques, sauf s'il est lui-même en train d'attaquer. Déséquilibrez-le pour détruire son bouclier."
+    ]
+  },
+  "eny_0075_lbroshan": {
+    "name": "Phalange de siège Broyeur d'os",
+    "nickname": "Phalange de siège Broyeur d'os",
+    "description": "Un combattant Brise-Terre équipé de gantelets explosifs lourds. Ils sont le pivot des hordes de Broyeurs d'os. Les gantelets d'une phalange de siège servent d'armes portatives permettant d'abattre les positions fortifiées.",
+    "abilities": [
+      "Un ennemi acharné. Même si vous l'interrompez, il y a de fortes chances qu'il attaque de nouveau.",
+      "Cet ennemi utilise sa manche cuirassée pour disperser des écailles d'armure réactives. Restez à distance et évitez de marcher dessus.",
+      "L'ennemi va tenter de ramasser les écailles d'armure au sol pour retrouver sa forme d'origine et lancera une attaque puissante s'il y parvient."
+    ]
+  },
+  "eny_0076_agfly": {
+    "name": "Illusailes",
+    "nickname": "Illusailes",
+    "description": "Le « psuthoptéron » (ID d'archive : ARA07C) possède des capacités de vol qui ne sont absolument pas liées à sa morphologie. Cela était considéré à l'origine comme du biomimétisme, mais d'après un consensus moderne, ce serait plutôt une imitation des véhicules volants de Terra.",
+    "abilities": [
+      "Lance de petits tourbillons qui peuvent aussi ralentir les opérateurs."
+    ]
+  },
+  "eny_0077_agshield": {
+    "name": "Chrysopolis ambulant",
+    "nickname": "Chrysopolis ambulant",
+    "description": "Le « thuréoron » (ID d'archive : ACL156) est un modèle équipé d'une structure de type bouclier qui protège son halo. Restez sur vos gardes. Cet Aggelos peut manipuler l'énergie pour attirer à lui des cibles distantes.",
+    "abilities": [
+      "Le chrysopolis ambulant possède deux états : normal et bastion.",
+      "État normal : il peut attirer les opérateurs vers lui depuis la distance.",
+      "État bastion : toutes les attaques envoyées sur ses flancs ou sa face avant sont déviées, un point faible est exposé dans son dos."
+    ]
+  },
+  "eny_0078_nefarp1": {
+    "name": "Nefarith, « Broyeuse d'os »",
+    "nickname": "Nefarith, « Broyeuse d'os »",
+    "description": "Grâce à Nefarith, le simple fait de prononcer les mots « Broyeurs d'os » sème la terreur dans la Ceinture civilisée. Sa conquête impitoyable n'est pas encore terminée, et elle n'a pas encore révélé ses véritables ambitions.",
+    "abilities": [
+      "Projette des vagues d'énergie æthérique qui ne peuvent pas être esquivées. Utilisez la xiranite de Zhuang Fangyi pour sauter à mi-hauteur et les éviter totalement.",
+      "Bondit vers le ciel pour charger son attaque. Pour interrompre cette compétence, utilisez de la xiranite afin de vous propulser dans les airs et d'exécuter une attaque plongeante qui foudroiera l'ennemi."
+    ]
+  },
+  "eny_0079_nefarp2": {
+    "name": "Nefarith, « Conquérante »",
+    "nickname": "Nefarith, « Conquérante »",
+    "description": "La façon dont la conquérante se voit, en elle-même. Elle ne cache pas son désir d'annihiler la civilisation.",
+    "abilities": [
+      "Constamment protégée par un bouclier æthérique qui réduit fortement les DÉG subis. Interrompez la charge ennemie pour désactiver temporairement ce bouclier.",
+      "Déchire la trame de l'espace-temps pour immobiliser vos opérateurs. Faites votre possible pour interrompre cette compétence.",
+      "Utilise un Ankhor pour piéger vos opérateurs. Attaquez l'Ankhor pour les libérer."
     ]
   },
   "eny_0080_reaper": {
@@ -492,20 +386,21 @@
       "L'énergie de xiranite s'agrègera et apparaîtra sur le champ de bataille pour vous apporter son soutien. Touchez l'énergie de xiranite au bon moment pour l'activer et inhiber Ruan Yi."
     ]
   },
-  "eny_0099_slimeml2": {
-    "name": "Tenailleur brutal",
-    "nickname": "Tenailleur brutal",
-    "description": "Une créature sauvage infectée par l'originium. Cette bête géante transporte de nombreux blocs d'originium présentant des niveaux élevés d'activité. Il possède également une carapace plus épaisse que sa version d'origine.",
-    "abilities": [
-      "Cet ennemi apparaît toujours en groupe. Méfiez-vous de leurs appendices avant tranchants."
-    ]
-  },
   "eny_0082_hsbear": {
     "name": "Frappeciel",
     "nickname": "Frappeciel",
     "description": "Le hurleur, qui évolue dans les terres sauvages, est une créature indigène de Talos-II. Les puissantes membranes qu'il porte sur la tête et sur la nuque lui permettent d'émettre un hurlement suffisamment fort pour ébranler les collines et les forêts.",
     "abilities": [
       "L'ennemi entre dans un état enragé quand ses PV sont bas. Dans cet état, il lance plus souvent des attaques chargées, inflige plus de DÉG et bénéficie d'une réduction des DÉG. Interrompez l'ennemi au bon moment pour mettre fin à cet état enragé."
+    ]
+  },
+  "eny_0083_hstiger": {
+    "name": "Ratisseur tacheté",
+    "nickname": "Ratisseur tacheté",
+    "description": "Un ratisseur né dans les terres sauvages. Ces superprédateurs vivent exclusivement sur Talos-II. Ils peuvent sauter sur de longues distances et lacérer leurs proies de leurs griffes acérées.",
+    "abilities": [
+      "Une créature agile qui attaque avec ses griffes et sa queue. Essayez de l'esquiver.",
+      "État enragé : une fois enragée, la créature gagne en ATQ et utilise des compétences chargées plus souvent. Déséquilibrez-la pour mettre fin à l'état enragé."
     ]
   },
   "eny_0084_hshunt": {
@@ -516,20 +411,36 @@
       "Projette toutes sortes de flèches et lance des bombes pour harceler ses adversaires à distance."
     ]
   },
-  "eny_0096_hsmob2": {
-    "name": "Saccageur des routes",
-    "nickname": "Saccageur des routes",
-    "description": "Un criminel armé qui sévit sur le territoire de Wuling. Les saccageurs des routes installent généralement des barrages routiers illégaux ou font passer des marchandises de contrebande. Certains attaquent même les voyageurs.",
-    "abilities": [
-      "Cet ennemi n'a aucune capacité spéciale."
-    ]
-  },
   "eny_0085_hsrogue": {
     "name": "Tranche-nimbus",
     "nickname": "Tranche-nimbus",
     "description": "Un criminel équipé d'une arme étrange. Lorsque le traque-nuées en a assez d'utiliser sa lanterne étrange, il sort sa petite arme blanche pour se lancer dans un combat au corps-à-corps.",
     "abilities": [
       "Utilise des crochets à chaîne pour attaquer les opérateurs alliés. Les opérateurs enchaînés seront étourdis jusqu'à ce qu'ils soient libérés."
+    ]
+  },
+  "eny_0087_wgslime": {
+    "name": "Coulifange",
+    "nickname": "Coulifange",
+    "description": "Le « tholéroygran » (ID d'archive : ACM311) est le premier modèle à base fluide qu'on a découvert. La morphologie de son halo est instable et sa température interne est fondamentalement plus basse que les matériaux qui le constituent.",
+    "abilities": [
+      "L'ennemi peut rapidement réduire la distance. Ses attaques infligent une altération cryogénique si elles touchent les opérateurs."
+    ]
+  },
+  "eny_0088_wgthorns": {
+    "name": "Hédron",
+    "nickname": "Hédron",
+    "description": "Le « diaphaïstagran » (ID d'archive : ARM315) est un modèle à base fluide capable de projeter de l'énergie. La géométrie de son agencement est complexe mais symétrique. Ses attaques peuvent également aspirer la chaleur de toute surface avec laquelle il entre en contact.",
+    "abilities": [
+      "Ses projectiles infligent une altération cryogénique s'ils touchent les opérateurs."
+    ]
+  },
+  "eny_0089_wgreflec": {
+    "name": "Prisme",
+    "nickname": "Prisme",
+    "description": "Le « prismastagran » (ID d'archive : ASM316) est une variante sans modèle de l'ARM315. Il est capable de protéger les Aggeloi à proximité et s'entoure souvent d'entités ARM315, ce qui le rend très difficile à toucher.",
+    "abilities": [
+      "Cet ennemi peut grandement renforcer ses alliés afin d'améliorer leurs capacités."
     ]
   },
   "eny_0090_wgabyss": {
@@ -543,6 +454,54 @@
       "Il est plus sensible aux DÉG thermiques à distance, mais possède une réduction des DÉG massive contre les autres éléments."
     ]
   },
+  "eny_0091_wgshoal": {
+    "name": "Brise-marée",
+    "nickname": "Brise-marée",
+    "description": "Le « génesklydan » (ID d'archive : AGM321) arbore une tête et des jambes humaines. Depuis la découverte de ce modèle particulier, la ressemblance avec les humains est devenue une règle officieuse pour estimer les niveaux de menace aggeloïdes.",
+    "abilities": [
+      "Attaque à l'aide de capacités qui infligent des altérations cryogéniques et applique Solidification aux opérateurs qu'il touche."
+    ]
+  },
+  "eny_0092_slbomb": {
+    "name": "Limace d'originium de brumefeu",
+    "nickname": "Limace d'originium de brumefeu",
+    "description": "Une créature sauvage infectée par l'originium et dont le corps atteint des températures extrêmes. Cette limace explose lorsqu'elle est sur le point de mourir, couvrant tout ce qui l'entoure avec ses fluides corporels acides en ébullition et de la poussière d'originium active.",
+    "abilities": [
+      "L'ennemi se fait exploser s'il lui reste peu de PV. La détonation applique une matière instable aux opérateurs touchés. Si l'opérateur subit des DÉG, cette matière explose."
+    ]
+  },
+  "eny_0093_hshog": {
+    "name": "Bêtaplume",
+    "nickname": "Bêtaplume",
+    "description": "Une bêtaplume indigène de Talos-II. Lorsqu'elle dresse ses plumes et commence à rouler sur elle-même, elle devient aussi destructrice qu'une tronçonneuse mobile.",
+    "abilities": [
+      "État enragé : une fois enragée, la créature gagne en ATQ et utilise des compétences chargées plus souvent. Déséquilibrez-la pour mettre fin à l'état enragé."
+    ]
+  },
+  "eny_0094_hsfly": {
+    "name": "Aqualampe",
+    "nickname": "Aqualampe",
+    "description": "Un arthropode sauvage qui vit dans des environnements aquatiques. L'aqualampe dégage une faible lueur et ses fluides corporels contiennent des substances irritantes qui peuvent provoquer des réactions allergiques et même des brûlures. Faites attention en vous attaquant à cette créature.",
+    "abilities": [
+      "Un ennemi qui crache de l'acide stocké dans sa tête. Les opérateurs touchés par l'acide voient leur DÉF réduite. La menace est faible, mais ne doit pas être ignorée."
+    ]
+  },
+  "eny_0095_ethillu": {
+    "name": "Æthillu",
+    "nickname": "Æthillu",
+    "description": "Un fantôme ayant répondu à l'appel d'Ardashir. Il incarne la destruction, les sédiments de la sénescence du passé.",
+    "abilities": [
+      "Cet ennemi a une forte capacité à revenir à la vie. Sa forme ranimée bénéficie d'une portée d'attaque accrue. Il peut également se faire exploser pour infliger de lourds DÉG."
+    ]
+  },
+  "eny_0096_hsmob2": {
+    "name": "Saccageur des routes",
+    "nickname": "Saccageur des routes",
+    "description": "Un criminel armé qui sévit sur le territoire de Wuling. Les saccageurs des routes installent généralement des barrages routiers illégaux ou font passer des marchandises de contrebande. Certains attaquent même les voyageurs.",
+    "abilities": [
+      "Cet ennemi n'a aucune capacité spéciale."
+    ]
+  },
   "eny_0097_hsmino2": {
     "name": "Brise-nuées",
     "nickname": "Brise-nuées",
@@ -550,6 +509,23 @@
     "abilities": [
       "Cet ennemi se sert d'un lance-roquettes lourd comme arme de corps-à-corps et tire des feux d'artifice pour attaquer à distance. Si vous vous faites éperonner et soulever par ses cornes, vous risquez d'en voir de toutes les couleurs !",
       "Ne tentez pas de le poignarder dans le dos. Sa ruade est dévastatrice !"
+    ]
+  },
+  "eny_0098_sandb2": {
+    "name": "Cuirabrute à hache d'ignibrume",
+    "nickname": "Cuirabrute à hache d'ignibrume",
+    "description": "Une cuirabrute à hache corrompue par l'ignibrume. Cette créature est plongée dans une rage folle qui la rend extrêmement agressive. À approcher avec prudence si vous voulez éviter d'être coupé en deux par sa hache lourde.",
+    "abilities": [
+      "Le cuirabrute à hache enragé utilise ses énormes cornes pour repousser les ennemis qui pénètrent sur son territoire. Attention à sa charge.",
+      "L'ennemi exécute plusieurs attaques sur de vastes zones. Interrompez-le dès qu'il devient enragé."
+    ]
+  },
+  "eny_0099_slimeml2": {
+    "name": "Tenailleur brutal",
+    "nickname": "Tenailleur brutal",
+    "description": "Une créature sauvage infectée par l'originium. Cette bête géante transporte de nombreux blocs d'originium présentant des niveaux élevés d'activité. Il possède également une carapace plus épaisse que sa version d'origine.",
+    "abilities": [
+      "Cet ennemi apparaît toujours en groupe. Méfiez-vous de leurs appendices avant tranchants."
     ]
   },
   "eny_0100_slimerg2": {
@@ -585,6 +561,14 @@
       "Projette toutes sortes de flèches et lance des bombes pour harceler ses adversaires à distance."
     ]
   },
+  "eny_0104_hsrogue2": {
+    "name": "Bourrasque dévastatrice",
+    "nickname": "Bourrasque dévastatrice",
+    "description": "Un criminel équipé d'une arme exotique. Ce type de traque-nuées est si habile avec sa lame recourbée que les gens estiment qu'il pourrait découper les nuages en cubes parfaitement réguliers.",
+    "abilities": [
+      "Utilise des crochets à chaîne pour attaquer les opérateurs alliés. Les opérateurs enchaînés seront étourdis jusqu'à ce qu'ils soient libérés."
+    ]
+  },
   "eny_0105_wgslime2": {
     "name": "Coulifange δ",
     "nickname": "Coulifange δ",
@@ -601,6 +585,22 @@
       "Ses projectiles infligent une altération cryogénique s'ils touchent les opérateurs."
     ]
   },
+  "eny_0107_wgshoal2": {
+    "name": "Brise-marée δ",
+    "nickname": "Brise-marée δ",
+    "description": "Le « dinedon génesklydan » (ID d'archive : AGM321δ) est une variante énergisée de l'AGM321. La matière qui le constitue tourbillonne sans cesse dans un flux agité. Cela explique la forme particulièrement effrayante qu'il adopte la nuit.",
+    "abilities": [
+      "Attaque à l'aide de capacités qui infligent des altérations cryogéniques et applique Solidification aux opérateurs qu'il touche."
+    ]
+  },
+  "eny_0108_slbomb2": {
+    "name": "Limace d'originium brumeflamme",
+    "nickname": "Limace d'originium brumeflamme",
+    "description": "Une créature sauvage infectée par l'originium et dont le corps atteint des températures extrêmes. Sa carapace dorsale est imprégnée de poussière d'originium aux niveaux d'activité élevés.",
+    "abilities": [
+      "L'ennemi se fait exploser s'il lui reste peu de PV. La détonation applique une matière instable aux opérateurs touchés. Si l'opérateur subit des DÉG, cette matière explose."
+    ]
+  },
   "eny_0109_hshog2": {
     "name": "Bêtaplume imprégnée",
     "nickname": "Bêtaplume imprégnée",
@@ -608,6 +608,34 @@
     "abilities": [
       "L'ennemi charge et gonfle son abdomen pour cracher une lave brûlante stockée dans son corps. Interrompez-le pendant sa charge et tentez de le déséquilibrer.",
       "État enragé : une fois enragée, la créature gagne en ATQ et utilise des compétences chargées plus souvent. Déséquilibrez-la pour mettre fin à l'état enragé."
+    ]
+  },
+  "eny_0112_jzmonk": {
+    "name": "Hurleroc",
+    "nickname": "Hurleroc",
+    "description": "Les hurlerocs peuvent vivre à l'état sauvage. Ces créatures intelligentes et espiègles préparent souvent des « pièges » et des « dangers » à l'attention des voyageurs malchanceux. Elles semblent apprécier le spectacle des humains frustrés par leurs pitreries. Faites preuve de patience !",
+    "abilities": [
+      "Cet ennemi se déplace généralement en meute. Un opérateur ou hurleroc qui marche sur les peaux de banane éparpillées au sol glisse et tombe."
+    ]
+  },
+  "eny_0113_jzogre": {
+    "name": "Ours à dents de sabre cuirassé",
+    "nickname": "Ours à dents de sabre cuirassé",
+    "description": "Variante d'ours à dents de sabre qui a évolué spécifiquement sur Talos-II. Ces ours uniques sont dotés d'une armure d'écailles extrêmement épaisses et ils vivent en symbiose avec les hurlerocs. Les ours protègent le groupe grâce à leur force, tandis que les hurlerocs utilisent leurs sens affûtés pour détecter les intrus.",
+    "abilities": [
+      "Le hurleroc qui chevauche l'ours à dents de sabre cuirassé peut lancer des peaux de banane. Si sa monture marche dessus en chargeant, elle glissera et s'étalera par terre.",
+      "Lorsqu'il se place en position de défense, son point faible se situe au niveau des mains. Visez ses mains pour interrompre la posture défensive et renverser la bête.",
+      "Lance des hurlerocs quand il est renversé. Attaquez les hurlerocs pour infliger plus de DÉG."
+    ]
+  },
+  "eny_0114_jzmking": {
+    "name": "Hurlepic",
+    "nickname": "Hurlepic",
+    "description": "Les hurlepics sont les membres dominants des communautés de hurlerocs. Ces créatures s'affrontent continuellement jusqu'à ce qu'un champion émerge et devienne le hurlepic alpha. Une chose est sûre : ces individus atteignent un niveau de maîtrise du combat dont leurs congénères ne peuvent que rêver.",
+    "abilities": [
+      "Une fois enragé, le hurlepic s'en prend aux ruines. Les pierres qui se détachent tombent sur le champ de bataille et infligent des DÉG aux opérateurs qui les reçoivent.",
+      "Le hurlepic peut utiliser les colonnes des ruines à son avantage et élargir sa portée d'attaque.",
+      "Le hurlepic fait semblant de battre en retraite, puis lance d'énormes rochers en direction des ennemis qui ne se doutent de rien."
     ]
   }
 }

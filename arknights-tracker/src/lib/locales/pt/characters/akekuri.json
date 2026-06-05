@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Habilidade suprema <@ba.key>ESQUADRÃO! VENHAM COMIGO!</> melhorada: quando a habilidade suprema está ativa, ganha <#ba.combo>Conexão</>."
+        "Habilidade suprema <@ba.key>ESQUADRÃO! VENHAM COMIGO!</> melhorada: quando a habilidade suprema está ativa, concede um benefício de <#ba.combo>Conexão</>."
       ],
       "name": "Permanecer na Zona"
     },

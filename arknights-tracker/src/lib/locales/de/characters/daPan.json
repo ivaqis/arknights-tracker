@@ -127,7 +127,7 @@
       "name": "Besondere Mischung"
     },
     "potential5": {
-      "description": "Kampffertigkeit <@ba.key>GUT WENDEN!</> verbessert: Trifft die Fertigkeit nur einen Gegner, wird das Ziel mit 1 weiteren Kumulierung <#ba.noguard>Anfälligkeit</> belegt. Der Effekt wird nur einmal alle {potential_5_interval:0} Sek. ausgelöst.",
+      "description": "Kampffertigkeit <@ba.key>GUT WENDEN!</> verbessert: Trifft die Fertigkeit nur einen Gegner, wird das Ziel mit 1 weiteren Kumulierung <#ba.noguard>Anfälligkeit</> belegt. Dieser Effekt kann nur einmal alle {potential_5_interval:0} Sek. ausgelöst werden.",
       "name": "Einheizen"
     }
   },

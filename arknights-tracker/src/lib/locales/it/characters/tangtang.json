@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Abilità combo <@ba.key>FIUME, A ME!</> migliorata: il moltiplicatore danni è aumentato a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale, e ora il tempo di recupero è di <@ba.vup>{coolDown:0}</> s.\nAbilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> migliorata: per ogni <@ba.key>vortice</> consumato e convertito in una <@ba.key>tromba d'acqua</>, <#ba.return>ripristina</> <@ba.vup>{atb_return:0}</> PA extra.",
+      "description": "Abilità combo <@ba.key>FIUME, A ME!</> migliorata: il moltiplicatore danni è aumentato a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale. Tempo di recupero <@ba.vup>{coolDown:0}</> s.\nAbilità di combattimento <@ba.key>SULLA CRESTA DELL'ONDA!</> migliorata: per ogni <@ba.key>vortice</> consumato e convertito in una <@ba.key>tromba d'acqua</>, <#ba.return>ripristina</> <@ba.vup>{atb_return:0}</> PA extra.",
       "name": "Accumulatrice"
     },
     "potential2": {

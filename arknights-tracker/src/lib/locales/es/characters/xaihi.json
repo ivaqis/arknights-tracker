@@ -118,7 +118,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "La<#ba.spellenhance>Amp de artes</> otorgada por el <@ba.key>Cristal auxiliar</> aumenta en <@ba.vup>{atk_up:0%}</>.",
+      "description": "La <#ba.spellenhance>Amp de artes</> otorgada por el <@ba.key>Cristal auxiliar</> aumenta en <@ba.vup>{atk_up:0%}</>.",
       "name": "Ejecución dinámica"
     },
     "potential2": {

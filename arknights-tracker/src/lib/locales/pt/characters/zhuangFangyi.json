@@ -69,7 +69,7 @@
         "duringUltimateBatkSeq3Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB"
       },
       "name": "Tempestade Devastadora",
-      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> em um alvo disponível não consome PH nem <#ba.conduct>Eletrificação</> e tem a garantia de criar 3 <@ba.key>Lâminas Separadoras</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>."
+      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> não consome PH nem <#ba.conduct>Eletrificação</> e, se houver um alvo disponível, a habilidade de batalha tem a garantia de criar 3 <@ba.key>Lâminas Relampejantes</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>."
     },
     "indicator": {
       "levels": [
@@ -89,8 +89,8 @@
     },
     "talent2": {
       "levels": [
-        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+{sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s.",
-        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+{sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s."
+        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+ {sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s.",
+        "Ganha <@ba.vup>{base_rate:0%}</> de chance de imunidade contra DNO recebido, e cada <@ba.key>Lâmina Relampejante</> por perto aumenta essa chance em <@ba.vup>+ {sword_rate:0%}</>.\nApós a Imunidade a DNO ser ativada, Zhuang Fangyi também é restaurada para <@ba.heal>{heal:0%}</> de PV Máximo. O efeito de restauração de PV só é acionado uma vez a cada <@ba.vup>{duration:0}</> s."
       ],
       "name": "Ordenado pelo Paraíso"
     },
@@ -127,7 +127,7 @@
       "name": "Precisão nos Detalhes"
     },
     "potential3": {
-      "description": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: após <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</>, a habilidade de batalha <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> de PH. Duração da <@ba.key>Lâmina Separadora</> <@ba.vup>+ {sword_duration:0}</> s.",
+      "description": "Habilidade de batalha <@ba.key>Mantra da Ruptura</> aprimorada: após <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</>, a habilidade de batalha <#ba.return>restaura</> <@ba.vup>{atb_return:0}</> de PH. Duração da <@ba.key>Lâmina Relampejante</> <@ba.vup>+ {sword_duration:0}</> s.",
       "name": "Sentido e Resposta"
     },
     "potential4": {
@@ -135,7 +135,7 @@
       "name": "Serenidade Absoluta"
     },
     "potential5": {
-      "description": "<@ba.vup>Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora {100*ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
+      "description": "Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora <@ba.vup>{100*ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
       "name": "Tempestade de Transformação"
     }
   },

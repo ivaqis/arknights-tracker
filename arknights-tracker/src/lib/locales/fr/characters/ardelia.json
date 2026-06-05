@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Renforce la compétence de combat <@ba.key>Charge de Dolly</> : déclencher l'effet supplémentaire quand un ennemi victime de <#ba.corrupt>Corrosion</> est à proximité relance immédiatement cette compétence de combat. \n<@ba.info>Cet effet ne se déclenche qu'une fois par lancement de compétence de combat actif.</>"
+        "Renforce la compétence de combat <@ba.key>Charge de Dolly</> : déclencher l'effet supplémentaire quand un ennemi victime de <#ba.corrupt>Corrosion</> est à proximité relance immédiatement cette compétence de combat. \n<@ba.info>L'effet ne peut se déclencher qu'une fois par lancement de compétence de combat actif.</>"
       ],
       "name": "Surfeuse des sommets"
     },

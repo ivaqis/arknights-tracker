@@ -59,7 +59,7 @@
         "ultimateEnergyGain": "必殺チャージ回復量"
       },
       "name": "穴釣り術",
-      "description": "近くの目標の<#ba.spellstatus>アーツ異常</>または<#ba.originium>源石結晶</>が<#ba.consume>消費</>されたときに発動可能。\n敵の足元に穴を開けて鱗獣を釣り上げる。<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。一定確率で<@ba.key>珍鱗</>を釣り上げ、ダメージが大幅にアップし、SPをさらに回復する。"
+      "description": "周囲の目標の<#ba.spellstatus>アーツ異常</>または<#ba.originium>源石結晶</>が<#ba.consume>消費</>されたときに発動可能。\n敵の足元に穴を開けて鱗獣を釣り上げる。<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。一定確率で<@ba.key>珍鱗</>を釣り上げ、ダメージが大幅にアップし、SPをさらに回復する。"
     },
     "ultimate": {
       "ultimate": {

@@ -5,6 +5,7 @@
     import { equipment } from "$lib/data/items/equipment.js";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
+    import { enemies } from "$lib/data/enemies.js";
     import { banners } from "$lib/data/banners.js";
     import { rawEvents } from "$lib/data/timeline.js";
 
@@ -37,6 +38,7 @@
         characters: [],
         weapons: [],
         equipment: [],
+        enemies: [],
     };
 
     $: displayCharacters = (currentVersionData.characters || []).map((id) => ({
@@ -52,6 +54,11 @@
     $: displayEquipment = (currentVersionData.equipment || []).map((id) => ({
         id,
         ...equipment[id],
+    }));
+
+    $: displayEnemies = (currentVersionData.enemies || []).map((id) => ({
+        id,
+        ...enemies[id],
     }));
 
     $: displayBanners = banners
@@ -181,7 +188,7 @@
                 </h3>
 
                 <div
-                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 justify-start mb-3"
+                    class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-5 justify-start"
                 >
                     {#each displayBanners as banner (banner.id)}
                         <div class="flex flex-col gap-2">
@@ -320,6 +327,26 @@
                                     </div>
                                 {/each}
                             </div>
+                        </div>
+                    {/each}
+                </div>
+            </div>
+        {/if}
+
+        {#if displayEnemies.length > 0}
+            <div class="flex flex-col gap-4 animate-fadeIn">
+                <h3
+                    class="text-2xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk flex items-center gap-2 mt-4"
+                >
+                    {$t("pages.enemies") || "Enemies"}
+                </h3>
+
+                <div
+                    class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-4 justify-start"
+                >
+                    {#each displayEnemies as eny (eny.id)}
+                        <div class="flex justify-center transition-transform">
+                            <WeaponCard weapon={eny} isNew={false} isEnemy={true} />
                         </div>
                     {/each}
                 </div>

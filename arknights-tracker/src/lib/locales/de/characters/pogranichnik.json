@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
       },
       "name": "Vollmondhieb",
-      "description": "KOMBOAUSLÖSER: Wenn <#ba.crush>Zertrümmern</> oder <#ba.fracture>Brechen</> die <#ba.noguard>Anfälligkeit</>-Kumulierung(en) eines Gegners <#ba.consume>verbraucht</>. \nFührt bis zu 3 Sequenz-Hiebangriffe aus, basierend auf der max. Anzahl der <#ba.consume>verbrauchten</> <#ba.noguard>Anfälligkeit</>-Kumulierungen, die <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen. Jeder Hieb verursacht mehr SDN und stellt mehr FP wieder her. \n<@ba.info>Wenn 4 Anfälligkeit-Kumulierungen verbraucht werden, wird der 3. Sequenz-Hiebangriff verbessert.</>"
+      "description": "KOMBOAUSLÖSER: Wenn <#ba.crush>Zertrümmern</> oder <#ba.fracture>Brechen</> die <#ba.noguard>Anfälligkeit</>-Kumulierung(en) eines Gegners <#ba.consume>verbraucht</>. \nFührt bis zu 3 Sequenz-Hiebangriffe aus, basierend auf der max. Anzahl der von einem Gegner <#ba.consume>verbrauchten</> <#ba.noguard>Anfälligkeit</>-Kumulierungen, die <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen. Jeder Hieb verursacht mehr SDN und stellt mehr FP wieder her. \n<@ba.info>Wenn 4 Anfälligkeit-Kumulierungen verbraucht werden, wird der 3. Sequenz-Hiebangriff verbessert.</>"
     },
     "ultimate": {
       "ultimate": {

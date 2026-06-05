@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Gain d'énergie d'ultime"
       },
       "name": "Entaille lunaire",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'effet de <#ba.crush>Broyage</> ou de <#ba.fracture>Brèche</> <#ba.consume>consomme</> les cumuls de <#ba.noguard>Vulnérabilité</> de l'ennemi. \nExécute plusieurs séquences d'entailles (jusqu'à un maximum de 3) en fonction de la quantité maximale de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommée</>. Celles-ci infligent des <@ba.pd>DÉG physiques</> et restaurent quelques PC. Chaque entaille inflige davantage de DÉG et permet de récupérer plus de PC. \n<@ba.info>Consommer 4 cumuls de Vulnérabilité augmente les effets de la 3e séquence d'entailles.</>"
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'effet de <#ba.crush>Broyage</> ou de <#ba.fracture>Brèche</> <#ba.consume>consomme</> les cumuls de <#ba.noguard>Vulnérabilité</> de l'ennemi. \nExécute plusieurs séquences d'entailles (jusqu'à un maximum de 3) en fonction de la quantité maximale de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommée</> sur un ennemi. Celles-ci infligent des <@ba.pd>DÉG physiques</> et restaurent quelques PC. Chaque entaille inflige davantage de DÉG et permet de récupérer plus de PC. \n<@ba.info>Consommer 4 cumuls de Vulnérabilité augmente les effets de la 3e séquence d'entailles.</>"
     },
     "ultimate": {
       "ultimate": {

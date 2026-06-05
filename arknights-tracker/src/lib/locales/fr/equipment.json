@@ -5,29 +5,11 @@
     "decoDesc": "Une armure de base à la structure simple. \nOffre une tranquillité d'esprit qui surpasse largement ses capacités défensives réelles.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "name": "Silex de spadamancien",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nFondamentalement, le silex surcharge et vide les réserves d'énergie de l'armure du spadamancien. Il ne brille que lorsque son porteur est en danger de mort.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "name": "EPI de base",
     "description": "Conçu à titre provisoire, et n'ayant pas passé l'étape de vérification et de validation (V&V) des Industries Endfield, cet équipement n'offre qu'une protection limitée.",
     "decoDesc": "Une armure de base à la structure simple. \nOffre une tranquillité d'esprit qui surpasse largement ses capacités défensives réelles.",
     "setBonus": ""
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "name": "Lampe torche de MSGR cuirassé",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une solide lampe électrique portable.\nLa pointe acérée à l'autre bout peut aussi être utilisée pour briser les os de ceux qui refusent de parler.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "name": "Gyro de MSGR itinérant G1",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un jouet anti-stress complexe.\nUne étude fiable a révélé que près de 20 % des messagers modifieraient ce jouet anti-stress pour en faire un pisteur à orientation automatique.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "name": "Gantelets de base",
@@ -35,23 +17,11 @@
     "decoDesc": "Une armure de base à la structure simple. \nOffre une tranquillité d'esprit qui surpasse largement ses capacités défensives réelles.",
     "setBonus": ""
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "Gants isolants de Mordvolt",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'équipement primordiale pour les opérations en environnement spécial.\nTous les ingénieurs chargés des réparations électriques sur les sites de déchirure de Gangrène doivent porter un EPI spécialisé pour éviter les blessures provoquées par les anomalies et les décharges électriques.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "name": "Gants de base",
     "description": "Conçu à titre provisoire, et n'ayant pas passé l'étape de vérification et de validation (V&V) des Industries Endfield, cet équipement n'offre qu'une protection limitée.",
     "decoDesc": "Une armure de base à la structure simple. \nOffre une tranquillité d'esprit qui surpasse largement ses capacités défensives réelles.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "name": "Radar de Yinglung type 50 G2",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\nLorsque les optimisations ont été terminées, il a ajouté quelques mots à côté des plans : « Les cieux et la terre pourraient tomber en morceaux, je l'emporterais et j'en sortirais vainqueur. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "name": "Armure de mineur",
@@ -59,20 +29,8 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "name": "Connecteur LYNX",
-    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "L'équipement favori des médecins. \nUn composant de connexion développé par Rhodes Island pour le calibrage des données. Il peut être connecté à différents systèmes de soutien médical afin de procéder à divers soins médicaux d'urgence.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "name": "Combinaison de mineur",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
-    "setBonus": ""
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "name": "Noyau de compression d'urgence",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
@@ -101,20 +59,14 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "name": "Armure lourde du GIA",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Cet équipement simple et modulable offre une protection importante.\nUne fois dotée de plaques de blindage plus lourdes et plus épaisses, cette armure est vouée à être utilisée dans des endroits où elle sera la cible de puissantes armes à feu.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il restaure <@ba.heal>{hp_add}</> PV. Temps de recharge de l'effet : {cd} s."
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "name": "Armure lourde de catastrophe",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "name": "Communicateur d'urgence",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
+    "setBonus": ""
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "name": "Noyau de compression d'urgence",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
@@ -124,12 +76,6 @@
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "name": "Gants haute température",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement qui possède une excellente résistance au feu.\nLe STUT et les Industries Endfield ont conjointement développé l'équipement de protection individuel haute température pour explorer les environnements à température extrême.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "name": "Protège-poignets de mineur",
@@ -149,23 +95,17 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "name": "Gantelets haute température",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "name": "Armure lourde du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Chut, moins de bruit. Tu risquerais de le réveiller. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
+    "decoDesc": "Cet équipement simple et modulable offre une protection importante.\nUne fois dotée de plaques de blindage plus lourdes et plus épaisses, cette armure est vouée à être utilisée dans des endroits où elle sera la cible de puissantes armes à feu.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il restaure <@ba.heal>{hp_add}</> PV. Temps de recharge de l'effet : {cd} s."
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "name": "Blindage lourd du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cet équipement simple et modulable offre une protection importante.\nSes performances de défense accrues augmentent considérablement son poids, ce qui s'avère le plus gros inconvénient de cet équipement.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il restaure <@ba.heal>{hp_add}</> PV. Temps de recharge de l'effet : {cd} s."
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "name": "Gantelets de raz-de-marée",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une question à propos de la Marée gangrénée : l'effondrement des anciens barrages part-il de l'intérieur ?",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "name": "Blindage en alliage du GIA",
@@ -179,23 +119,11 @@
     "decoDesc": "Cet équipement simple et modulable offre une protection importante.\nDeux structures complexes sont utilisées pour supporter 40 % du poids de l'arme. Voilà un design particulièrement astucieux.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il restaure <@ba.heal>{hp_add}</> PV. Temps de recharge de l'effet : {cd} s."
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "Noyau de compression de mineur G1",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
-    "setBonus": ""
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "name": "Armure légère du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cet équipement simple et modulable offre une protection légère.\nC'était un sous-produit né d'un test d'association de différentes lignes de production provenant de diverses installations de l'usine du GIA.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il gagne <@ba.vup>+{atk_up}</> d'ATQ pendant <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "name": "Tube à O2 supplémentaire des Confins G1",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Le tube à oxygène standard de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène. La version améliorée fait passer cette durée à 6 heures.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "name": "Blindage léger du GIA",
@@ -203,23 +131,11 @@
     "decoDesc": "Cet équipement simple et modulable offre une protection légère. \nCet équipement du GIA a pour principal avantage de permettre d'attacher facilement des plaques de blindage à l'armure.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il gagne <@ba.vup>+{atk_up}</> d'ATQ pendant <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "name": "Combinaison d'IM Sécurité",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "name": "Blindage en céramique du GIA",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cet équipement simple et modulable offre une protection légère. \n« J'aimerais beaucoup croire en notre technologie, mais ça m'a l'air un peu trop léger... »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il gagne <@ba.vup>+{atk_up}</> d'ATQ pendant <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "name": "Gants à Xiranflux",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un objet expérimental qui sert d'équipement standard pour les sentinelles de Wuling.\n« Vous voulez dire que ces gants vont... Hein ? Je peux juste toucher les machines en xiranite pour charger ces grosses brutes ? Ce n'était pas du n'importe quoi... ? »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Cet effet peut octroyer jusqu'à un maximum de {max_stack} cumuls bonus. La durée de chaque cumul est décomptée séparément."
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "name": "Gants tactiques du GIA",
@@ -227,23 +143,11 @@
     "decoDesc": "Cet équipement simple et modulable offre une protection légère.\nBien qu'ils n'offrent pas une protection à toute épreuve, ils ont au moins l'avantage d'être faciles à porter.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV. \nLorsque le porteur élimine un ennemi, il gagne <@ba.vup>+{atk_up}</> d'ATQ pendant <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "name": "Gants LYNX",
-    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une version plus lourde de l'équipement favori des médecins. \nRhodes Island a toujours pour tradition d'équiper leurs EPI de modules d'évaluation de l'oripathie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "name": "Turbine de mineur",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "name": "Masque de Broyeur d'os",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os.\nLe masque symbolise le fanatisme. Pourtant, la foi seule est bien incapable de maintenir une personne en vie dans un environnement gangréné. Peu importe qu'il soit porté à la ceinture ou sur le visage, ce masque n'est qu'un bout de bois fragile.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "name": "Roue motrice de mineur",
@@ -251,29 +155,11 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "name": "Armure lourde LYNX",
-    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une version plus lourde de l'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "name": "Noyau de compression de mineur",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "Gants de mineur G2",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
-    "setBonus": ""
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "Batterie isolante de Mordvolt G1",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une batterie extrêmement durable.\nSur Talos-II, les réparations d'urgence dans des environnements gangrénés sont un travail terriblement dangereux. Les ouvriers doivent donc suivre un entraînement strict basé sur des normes spéciales avant d'être autorisés à utiliser des batteries dans ce genre de conditions.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "name": "Communicateur de mineur",
@@ -287,23 +173,11 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "name": "Armure des Confins G1",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "name": "Gants de mineur G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "name": "Connecteur LYNX G2",
-    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "L'équipement favori des médecins. \nUn composant de connexion développé par Rhodes Island pour le calibrage des données. Il peut être connecté à différents systèmes de soutien médical afin de procéder à divers soins médicaux d'urgence.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
   "item_equip_t2_suit_agi01_body_01": {
     "name": "Veste de MSGR itinérant",
@@ -317,12 +191,6 @@
     "decoDesc": "Un jouet anti-stress complexe.\nUne étude fiable a révélé que près de 20 % des messagers modifieraient ce jouet anti-stress pour en faire un pisteur à orientation automatique.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "name": "Clé isolante de Mordvolt",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une clé dotée d'un revêtement protecteur spécial.\nElle peut aussi être utilisée comme arme, si nécessaire, car elle est tout à fait capable d'écraser et de pulvériser des membres d'Aggeloi.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "name": "Lampe torche de MSGR itinérant",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
@@ -334,12 +202,6 @@
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une paire de gants qui plairait à n'importe quel messager. \nLes messagers allaient également se battre dans l'arène pendant leur temps libre.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
-  },
-  "item_equip_t4_suit_atb01_body_04": {
-    "name": "Armure des Confins G3",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t2_suit_str01_body_01": {
     "name": "Veste de MSGR cuirassé",
@@ -353,17 +215,11 @@
     "decoDesc": "Un jouet anti-stress complexe.\nUne étude fiable a révélé que près de 80 % des messagers modifieraient ce jouet pour en faire une grenade à fléchettes miniature.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "name": "Gants en fibres des Confins",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un modèle de combat sous-marin issu de l'ensemble d'armures des confinards. Une technologie de tissage spéciale permet à ces gants de recycler l'oxygène.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "name": "Cuirasse LYNX",
-    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "L'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  "item_equip_t2_suit_str01_edc_02": {
+    "name": "Lampe torche de MSGR cuirassé",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une solide lampe électrique portable.\nLa pointe acérée à l'autre bout peut aussi être utilisée pour briser les os de ceux qui refusent de parler.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
   },
   "item_equip_t2_suit_str01_hand_01": {
     "name": "Gants de MSGR cuirassé",
@@ -395,16 +251,16 @@
     "decoDesc": "Une paire de gants robuste.\nNous devons encore concevoir des combinaisons EPI qui résistent vraiment à la Gangrène. La plupart des EPI et des protections en service ne supportent que des manifestations de Gangrène de deuxième catégorie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{will_up}</> de Volonté. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, <@ba.vup>+{heal_up:0%}</> aux soins."
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "name": "Analyseur des Confins",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un analyseur de niveau de menace issu de l'ensemble de soutien des confinards. Il utilise une technologie de reconnaissance visuelle qui analyse sommairement les créatures inconnues pour indiquer à son utilisateur leur niveau de menace.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "name": "Veste isolante de Mordvolt",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Une pièce d'équipement primordiale pour les opérations en environnement spécial. \nLes graves épisodes de Gangrène provoquent souvent d'importantes anomalies électriques et pannes des circuits. Les ouvriers affectés aux réparations doivent y être très attentifs.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "name": "Clé isolante de Mordvolt",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une clé dotée d'un revêtement protecteur spécial.\nElle peut aussi être utilisée comme arme, si nécessaire, car elle est tout à fait capable d'écraser et de pulvériser des membres d'Aggeloi.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
   "item_equip_t2_suit_wisd01_edc_02": {
@@ -419,6 +275,12 @@
     "decoDesc": "Une batterie extrêmement durable.\nSur Talos-II, les réparations d'urgence dans des environnements gangrénés sont un travail terriblement dangereux. Les ouvriers doivent donc suivre un entraînement strict basé sur des normes spéciales avant d'être autorisés à utiliser des batteries dans ce genre de conditions.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "name": "Gants isolants de Mordvolt",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'équipement primordiale pour les opérations en environnement spécial.\nTous les ingénieurs chargés des réparations électriques sur les sites de déchirure de Gangrène doivent porter un EPI spécialisé pour éviter les blessures provoquées par les anomalies et les décharges électriques.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
+  },
   "item_equip_t3_parts_tundra01_body_01": {
     "name": "Armure de mineur G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -431,26 +293,20 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "name": "Figurine de Broyeur d'os G1",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un bibelot dont l'utilité pratique est quasiment nulle. Son concepteur prétend cependant qu'il peut être source d'excitation et d'euphorie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "name": "Turbine de mineur G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "name": "Combinaison d'IM Sécurité G2",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "name": "Roue motrice de mineur G1",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
+    "setBonus": ""
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "name": "Noyau de compression de mineur G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
@@ -461,11 +317,11 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "name": "Montre Æthertech",
-    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Certains utilisateurs soupçonnent nos produits d'avoir des effets hémomutagènes. Ces accusations sont sans fondement. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "name": "Gants de mineur G2",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
+    "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "name": "Poings de mineur G1",
@@ -473,41 +329,11 @@
     "decoDesc": "Un équipement de protection pour les opérations d'extraction.\nLes Normes de protection et de sécurité de la Vallée-IV stipulent que les exigences minimales de protection professionnelle doivent inclure un module de protection à deux couches comprenant : a) une couche matelassée et douce ; b) une protection rigide et solide.",
     "setBonus": ""
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "name": "Veste de MSGR cuirassé G1",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une veste qui plairait à n'importe quel messager.\nLes tout-terrain sont des modes de transport efficaces et bon marché sur Talos-II. Les messagers équipent souvent ces motos de différents mods et modules.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "Clé isolante de Mordvolt G2",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une clé dotée d'un revêtement protecteur spécial.\nElle peut aussi être utilisée comme arme, si nécessaire, car elle est tout à fait capable d'écraser et de pulvériser des membres d'Aggeloi.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "name": "Communicateur des Confins G1",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un dispositif de communication lourd. Afin de garantir une qualité de signal optimale dans le dédale des zones d'extraction souterraines, le communicateur des Confins est conçu uniquement pour envoyer des messages.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "name": "Veste de MSGR itinérant G1",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une veste qui plairait à n'importe quel messager.\nLes messagers qui travaillent dans la Vallée-IV et ses environs décorent souvent leur véhicule avec des motifs arborés. Ils espèrent qu'en voyant ces plantes majestueuses qui protégeaient autrefois ces terres, les gens y puiseront de la force.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "name": "Armure lourde d'Aburrey G1",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une armure novatrice adaptée à l'environnement de la carrière d'Aburrey.\nUn modèle de combat issu de l'armure lourde d'Aburrey. Contrairement à la version standard, elle intègre des ports de connexion pour de nouvelles armes, compatibles notamment avec les lance-flammes, les lance-grenades et autres engins d'artillerie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "name": "Étalonneur de Pulser Labs",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement au style novateur.\nIl parcourt l'infinité de cet océan de données à la recherche des « aberrations dorées » si bien cachées, puis les fait totalement disparaître.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "name": "Lampe torche de MSGR itinérant G1",
@@ -521,22 +347,28 @@
     "decoDesc": "Une solide lampe électrique portable.\nLa pointe acérée à l'autre bout peut aussi être utilisée pour forcer de vieilles caisses et conteneurs.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "name": "Gyro de MSGR itinérant G1",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un jouet anti-stress complexe.\nUne étude fiable a révélé que près de 20 % des messagers modifieraient ce jouet anti-stress pour en faire un pisteur à orientation automatique.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "name": "Poings de MSGR itinérant G1",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une paire de gants qui plairait à n'importe quel messager. \nLes messagers allaient également se battre dans l'arène pendant leur temps libre.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{agi_up}</> d'Agilité. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</>."
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "name": "Armure en xiranite éternelle",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "L'héritage d'un Tianshi « fou ».\nLa plupart des gens ne voient pas de lien entre les ustensiles de cuisine et la xiranite. Mais un certain habitant de Wuling trouve son inspiration en matière de design en dînant au restaurant.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_atk01_body_01": {
     "name": "Armure lourde d'Aburrey",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une armure novatrice adaptée à l'environnement de la carrière d'Aburrey.\nL'excavation de reliques des Précurseurs est un processus complexe qui peut réserver des surprises. L'équipement utilisé à cet effet doit offrir suffisamment de protection et de dextérité, mais il doit également être doté de capacités offensives.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "name": "Armure lourde d'Aburrey G1",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une armure novatrice adaptée à l'environnement de la carrière d'Aburrey.\nUn modèle de combat issu de l'armure lourde d'Aburrey. Contrairement à la version standard, elle intègre des ports de connexion pour de nouvelles armes, compatibles notamment avec les lance-flammes, les lance-grenades et autres engins d'artillerie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
   },
   "item_equip_t3_suit_atk01_body_03": {
@@ -551,29 +383,11 @@
     "decoDesc": "Une armure novatrice adaptée à l'environnement de la carrière d'Aburrey.\n« Stop ! STOP ! Que quelqu'un appelle la Cabale de la Tranquillité ! »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "name": "Armure lourde de Yinglung type 50 G1",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base. \nTrès peu de gens savent que le concepteur de cette armure est en fait un réserviste qui a failli passer le test de sélection de Yinglung. Seulement failli.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "name": "Armure d'IM Sécurité G1",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nIl a servi pour la première fois aux armées humaines sur le Front aggeloïde.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "name": "Lampe à UV d'Aburrey",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection novateur adapté à l'environnement de la carrière d'Aburrey. \nLorsqu'il a soudain fallu creuser et miner la carrière d'Aburrey, les ingénieurs ont travaillé toute la nuit pour y ajouter des mods. Cette armure protège désormais les yeux et les oreilles.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "name": "Gants de broyeur",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os. \nCe n'est pas parce qu'on vit dans les terres sauvages qu'on devient nécessairement un Brise-Terre, mais personne ne peut échapper aux liens avec la nature.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "name": "Puce auditive d'Aburrey",
@@ -587,29 +401,11 @@
     "decoDesc": "Une pièce d'équipement de protection novateur adapté à l'environnement de la carrière d'Aburrey. \nLorsqu'on explore l'inconnu, il est essentiel d'être doté d'un équipement offrant à la fois une bonne isolation acoustique et une protection auditive. Cette puce permet à celui qui la porte de déterminer s'il souffre d'hallucinations auditives.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "name": "Filtre de catastrophe",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium. \nCes filtres, compatibles avec le masque de catastrophe, peuvent être branchés ou débranchés facilement.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "name": "Lampe torche d'Aburrey",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement novateur adapté à l'environnement de la carrière d'Aburrey.\n« Cet objet était incrusté dans la pierre, et j'ai cru que j'avais déterré une simple armature pour béton. Mais... je crois que je l'ai entendu me parler... »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "name": "Armure lourde de catastrophe G1",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "name": "Cartouche de gaze de catastrophe G1",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "name": "Puce de capteur d'Aburrey",
@@ -617,29 +413,23 @@
     "decoDesc": "Un équipement de protection novateur adapté à l'environnement de la carrière d'Aburrey.\nÀ en croire les ingénieurs, les futures itérations de cette armure seront axées sur une automatisation complète. L'objectif est de pouvoir évacuer son porteur et le mettre à l'abri, même s'il est immobilisé.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "name": "Cartouche de gaze de catastrophe",
-    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "name": "Puce de capteur d'Aburrey G1",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection novateur adapté à l'environnement de la carrière d'Aburrey.\nÀ en croire les ingénieurs, les futures itérations de cette armure seront axées sur une automatisation complète. L'objectif est de pouvoir évacuer son porteur et le mettre à l'abri, même s'il est immobilisé.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "name": "Gants en fibres des Confins G1",
-    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un modèle de combat sous-marin issu de l'ensemble d'armures des confinards. Une technologie de tissage spéciale permet à ces gants de recycler l'oxygène.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "name": "Gantelets d'Aburrey",
     "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de protection novateur adapté à l'environnement de la carrière d'Aburrey.\nProtection pour les mains liée à l'armure. Leur extrémité est dotée d'un total de presque 100 microcapteurs de 6 types différents, permettant ainsi aux personnes qui en sont équipées de déterminer ce qu'elles viennent de toucher, quand bien même elles auraient perdu la vue.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG de compétence. \nLorsque le porteur utilise une compétence de combat, une compétence de combo ou un ultime, il gagne <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Le bonus dépend du type de compétence et ne se cumule pas."
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "name": "Veste de MSGR cuirassé G1",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une veste qui plairait à n'importe quel messager.\nLes tout-terrain sont des modes de transport efficaces et bon marché sur Talos-II. Les messagers équipent souvent ces motos de différents mods et modules.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
   },
   "item_equip_t3_suit_str01_edc_01": {
     "name": "Gyro de MSGR cuirassé G1",
@@ -659,17 +449,41 @@
     "decoDesc": "Une paire de gants qui plairait à n'importe quel messager.\nLa plupart des messagers installaient des systèmes d'éjection rapide sur leur véhicule pour échapper à des déchirures de Gangrène inattendues et se sauver la vie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "name": "Noyau d'énergie en xiranite éternelle",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "name": "Gants de MSGR cuirassé G2",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Une paire de gants qui plairait à n'importe quel messager.\nLa plupart des messagers installaient des systèmes d'éjection rapide sur leur véhicule pour échapper à des déchirures de Gangrène inattendues et se sauver la vie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{str_up}</> de Force. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG."
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "name": "Armure lourde de catastrophe",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "name": "Armure lourde de catastrophe G1",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nCette armure est dotée d'un système de stimulation microélectrique qui réduit de manière significative la fatigue de celui qui la porte. Les membres de l’équipe sont très satisfaits de cette création revigorante.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "name": "Cartouche de gaze de catastrophe",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "name": "Cartouche de gaze de catastrophe G1",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium.\nBien que sur Talos-II, l'oripathie puisse être contrôlée et traitée, il est quand même conseillé aux utilisateurs de porter une protection respiratoire de base.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "name": "Filtre de catastrophe",
+    "description": "Conçu par l'Armurerie de Triglava et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une pièce d'exosquelette équipée par les producteurs de cristaux au parc des sciences de l'originium. \nCes filtres, compatibles avec le masque de catastrophe, peuvent être branchés ou débranchés facilement.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime.\nLe porteur <#ba.return>récupère</> <@ba.vup>{atb_recover:0}</> PC en utilisant une compétence de combat. L'effet ne se déclenche qu'une seule fois par combat."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Gants de catastrophe",
@@ -695,12 +509,6 @@
     "decoDesc": "Une clé aux contours lisses, conçue avec raffinement.\n« Plutôt pratique pour casser des têtes. » – Un ouvrier qui souhaitait rester anonyme",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{will_up}</> de Volonté. \nLorsque les PV du porteur sont inférieurs à {hp_ratio:0%}, <@ba.vup>+{heal_up:0%}</> aux soins."
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "name": "Tube à O2 de la rivière suspendue",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une pointe de désespoir vis-à-vis de la Marée gangrénée : les courants troubles de l'inconnu ont submergé les terres.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "name": "Gants résistants de Mordvolt G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -719,11 +527,17 @@
     "decoDesc": "Une pièce d'équipement primordiale pour les opérations en environnement spécial. \nLes graves épisodes de Gangrène provoquent souvent d'importantes anomalies électriques et pannes des circuits. Les ouvriers affectés aux réparations doivent y être très attentifs.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "name": "Gants Æthertech",
-    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "name": "Clé isolante de Mordvolt G2",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une clé dotée d'un revêtement protecteur spécial.\nElle peut aussi être utilisée comme arme, si nécessaire, car elle est tout à fait capable d'écraser et de pulvériser des membres d'Aggeloi.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "name": "Batterie isolante de Mordvolt G1",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une batterie extrêmement durable.\nSur Talos-II, les réparations d'urgence dans des environnements gangrénés sont un travail terriblement dangereux. Les ouvriers doivent donc suivre un entraînement strict basé sur des normes spéciales avant d'être autorisés à utiliser des batteries dans ce genre de conditions.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "name": "Gants isolants de Mordvolt G1",
@@ -736,12 +550,6 @@
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "name": "Noyau invasif de Pulser Labs",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement au style novateur.\nL'aide de la Cabale de la Tranquillité a conféré au noyau invasif de Pulser Labs la capacité de franchir la plupart des pare-feux de terminaux.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "name": "Armure de rédempteur",
@@ -767,23 +575,11 @@
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
     "setBonus": ""
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "name": "Gants en xiranite éternelle G1",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "name": "Sceau de rédempteur G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "name": "Figurine de Broyeur d'os",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un bibelot dont l'utilité pratique est quasiment nulle. Son concepteur prétend cependant qu'il peut être source d'excitation et d'euphorie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "name": "Gants de rédempteur",
@@ -791,23 +587,11 @@
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "name": "Armure lourde de spadamancien",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept de « capacité gargantuesque » et sont parvenus à « absorber et neutraliser » les attaques basées sur l'énergie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "name": "Mains de rédempteur",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "name": "Balise NAV de spadamancien",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLa plupart des environnements gangrénés sont extrêmement dangereux. Le moindre faux pas peut mener vers une voie sans issue, comme ce fut le cas pour Wuling il y a de nombreuses années.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "Armure des Confins",
@@ -815,14 +599,20 @@
     "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "name": "Radar de Yinglung type 50",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\nLorsque les optimisations ont été terminées, il a ajouté quelques mots à côté des plans : « Les cieux et la terre pourraient tomber en morceaux, je l'emporterais et j'en sortirais vainqueur. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
+  "item_equip_t4_suit_atb01_body_02": {
+    "name": "Armure des Confins G1",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_atb01_body_03": {
     "name": "Armure des Confins G2",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "name": "Armure des Confins G3",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "La version à châssis lourd de l'armure qui fait partie de l'ensemble des confinards. Cette combinaison est également équipée d'une exo-colonne artificielle pour supporter le poids des canons d'épaule.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
@@ -839,9 +629,33 @@
     "decoDesc": "Un dispositif de communication lourd. Afin de garantir une qualité de signal optimale dans le dédale des zones d'extraction souterraines, le communicateur des Confins est conçu uniquement pour envoyer des messages.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "name": "Communicateur des Confins G1",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un dispositif de communication lourd. Afin de garantir une qualité de signal optimale dans le dédale des zones d'extraction souterraines, le communicateur des Confins est conçu uniquement pour envoyer des messages.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "name": "Analyseur des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un analyseur de niveau de menace issu de l'ensemble de soutien des confinards. Il utilise une technologie de reconnaissance visuelle qui analyse sommairement les créatures inconnues pour indiquer à son utilisateur leur niveau de menace.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "name": "Tube à O2 supplémentaire des Confins",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Le tube à oxygène standard de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène. La version améliorée fait passer cette durée à 6 heures.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "name": "Tube à O2 des Confins",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Le tube à oxygène de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "name": "Tube à O2 supplémentaire des Confins G1",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Le tube à oxygène standard de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène. La version améliorée fait passer cette durée à 6 heures.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
@@ -851,14 +665,26 @@
     "decoDesc": "Le but de l'équipement des confinards est de permettre à une escouade de 3 à 5 combattants de donner l'assaut pour exterminer de petits amas aggeloïdes.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "name": "Sangle à O2 des Confins",
+  "item_equip_t4_suit_atb01_hand_02": {
+    "name": "Gants en fibres des Confins",
     "description": "Conçu par le centre d'assistance de Marchenord et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Le tube à oxygène de l'ensemble des confinards garantit au moins 4 heures de dur labeur dans les profondeurs sous-marines grâce à sa technologie de recyclage de l'oxygène.",
+    "decoDesc": "Un modèle de combat sous-marin issu de l'ensemble d'armures des confinards. Une technologie de tissage spéciale permet à ces gants de recycler l'oxygène.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "name": "Gants en fibres des Confins G1",
+    "description": "Conçu par le centre d'assistance de Marchenord et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un modèle de combat sous-marin issu de l'ensemble d'armures des confinards. Une technologie de tissage spéciale permet à ces gants de recycler l'oxygène.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo.\nLorsque le porteur récupère des PC grâce à une compétence, l'équipe inflige <@ba.vup>+{dmg_up:0%}</> de DÉG pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Armure lourde de Yinglung type 50",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base. \nTrès peu de gens savent que le concepteur de cette armure est en fait un réserviste qui a failli passer le test de sélection de Yinglung. Seulement failli.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "name": "Armure lourde de Yinglung type 50 G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base. \nTrès peu de gens savent que le concepteur de cette armure est en fait un réserviste qui a failli passer le test de sélection de Yinglung. Seulement failli.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
@@ -875,11 +701,11 @@
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base. \nTrès peu de gens savent que le concepteur de cette armure est en fait un réserviste qui a failli passer le test de sélection de Yinglung. Seulement failli.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "name": "Dague de spadamancien",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "L'un des produits vendus par le bureau des spadamanciens à ses débuts.\nUne lame tactique extrêmement affûtée, et l'une des premières armes produites selon les techniques des spadamanciens de Hongshan. Cet équipement a indubitablement posé de solides bases pour la série Yinglung qui sortira ensuite.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  "item_equip_t4_suit_atk02_edc_01": {
+    "name": "Radar de Yinglung type 50",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\nLorsque les optimisations ont été terminées, il a ajouté quelques mots à côté des plans : « Les cieux et la terre pourraient tomber en morceaux, je l'emporterais et j'en sortirais vainqueur. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Radar de Yinglung type 50 G1",
@@ -887,11 +713,11 @@
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\nLorsque les optimisations ont été terminées, il a ajouté quelques mots à côté des plans : « Les cieux et la terre pourraient tomber en morceaux, je l'emporterais et j'en sortirais vainqueur. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "name": "EPI pour mains d'IM Sécurité G1",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nÉquipé d'unités des Arts miniaturisées à des fins de contrôle des foules et d'une excellente conductivité de l'énergie.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  "item_equip_t4_suit_atk02_edc_03": {
+    "name": "Radar de Yinglung type 50 G2",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\nLorsque les optimisations ont été terminées, il a ajouté quelques mots à côté des plans : « Les cieux et la terre pourraient tomber en morceaux, je l'emporterais et j'en sortirais vainqueur. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Poignard de Yinglung type 50",
@@ -899,14 +725,8 @@
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\n« Quand j'ai vu les visages familiers que j'ai autrefois entraînés à jouer des rôles cruciaux et à protéger des sites clés, je me suis senti... comme le vaincu qui fuit un terrible champ de bataille. J'ai eu la sensation d'être un déserteur. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "name": "Tonneau de Qingbo",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement très économique créé en s'inspirant de parchemins et de livres anciens trouvés à la palanque de Qingbo.\nUn petit tonneau doté d'un filtre interne simple à nettoyer. La page consacrée aux purificateurs d'eau des anciens livres a été arrachée pour une raison mystérieuse ; c'est pour cela que le composant manquant a été remplacé par un filtre moderne.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo. \nLorsque le porteur lance une compétence de combo, il gagne <@ba.vup>+{spell_up:0%}</> de DÉG de compétence (pour chaque compétence) pendant {duration} s. Cet effet peut être cumulé {max_stack} fois. La durée de chaque cumul est décomptée séparément."
-  },
   "item_equip_t4_suit_atk02_edc_05": {
-    "name": "Poignard G1 de Yinglung type 50",
+    "name": "Poignard de Yinglung type 50 G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\n« Quand j'ai vu les visages familiers que j'ai autrefois entraînés à jouer des rôles cruciaux et à protéger des sites clés, je me suis senti... comme le vaincu qui fuit un terrible champ de bataille. J'ai eu la sensation d'être un déserteur. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
@@ -918,22 +738,10 @@
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
   },
   "item_equip_t4_suit_atk02_hand_02": {
-    "name": "Gants G1 de Yinglung type 50",
+    "name": "Gants de Yinglung type 50 G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Une version civile de l'équipement des Forces spéciales de Yinglung. L'absence d'un composant énergétique essentiel a finalement amélioré sa compatibilité avec les usagers de base.\n« Je n'envie pas le pouvoir conféré car je suis loin de le mériter. En fait, je devrais être le squelette qui le soutient. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsqu'un opérateur de l'équipe utilise une compétence de combat, le porteur gagne 1 cumul de <@ba.key>Tranchant de Yinglung</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à sa prochaine compétence de combo. <@ba.key>Tranchant de Yinglung</> peut être cumulé {max_stack:0} fois."
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "name": "Figurine de broyeur G2",
-    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un objet artisanal peu utile. Cela n'empêche pas son concepteur de prétendre qu'il a la capacité de stimuler l'enthousiasme du porteur.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "name": "Combinaison d'IM Sécurité G1",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_attri01_body_01": {
     "name": "Armure lourde de Broyeur d'os",
@@ -965,8 +773,20 @@
     "decoDesc": "Un équipement dont le style est inspiré par le clan des Broyeurs d'os.\nCette armure lourde ne se contente pas d'offrir une bonne protection : pour ceux qui arpentent les terres sauvages, elle incarne un mode de vie brutal et sans merci.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "name": "Masque de Broyeur d'os G2",
+  "item_equip_t4_suit_attri01_edc_02": {
+    "name": "Figurine de Broyeur d'os G2",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un objet artisanal peu utile. Cela n'empêche pas son concepteur de prétendre qu'il a la capacité de stimuler l'enthousiasme du porteur.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "name": "Figurine de Broyeur d'os",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un bibelot dont l'utilité pratique est quasiment nulle. Son concepteur prétend cependant qu'il peut être source d'excitation et d'euphorie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "name": "Masque de Broyeur d'os",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os.\nLe masque symbolise le fanatisme. Pourtant, la foi seule est bien incapable de maintenir une personne en vie dans un environnement gangréné. Peu importe qu'il soit porté à la ceinture ou sur le visage, ce masque n'est qu'un bout de bois fragile.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
@@ -977,21 +797,33 @@
     "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os.\nLe masque symbolise le fanatisme. Pourtant, la foi seule est bien incapable de maintenir une personne en vie dans un environnement gangréné. Peu importe qu'il soit porté à la ceinture ou sur le visage, ce masque n'est qu'un bout de bois fragile.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "name": "Figurine de Broyeur d'os G1",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un bibelot dont l'utilité pratique est quasiment nulle. Son concepteur prétend cependant qu'il peut être source d'excitation et d'euphorie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "name": "Masque de Broyeur d'os G2",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os.\nLe masque symbolise le fanatisme. Pourtant, la foi seule est bien incapable de maintenir une personne en vie dans un environnement gangréné. Peu importe qu'il soit porté à la ceinture ou sur le visage, ce masque n'est qu'un bout de bois fragile.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
+  },
   "item_equip_t4_suit_attri01_hand_01": {
     "name": "Bracelet de Broyeur d'os",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os. \nCe n'est pas parce qu'on vit dans les terres sauvages qu'on devient nécessairement un Brise-Terre, mais personne ne peut échapper aux liens avec la nature.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "name": "Armure lourde de spadamancien G1",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept « esprit vide et vallée ouverte » pour concevoir cette armure lourde de spadamancien et sont parvenus à la doter de la capacité à « neutraliser l'énergie ».",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "name": "Bracelet de Broyeur d'os G1",
     "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os. \nCe n'est pas parce qu'on vit dans les terres sauvages qu'on devient nécessairement un Brise-Terre, mais personne ne peut échapper aux liens avec la nature.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "name": "Gants de Broyeur d'os",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement dont le style s'inspire du clan des Broyeurs d'os. \nCe n'est pas parce qu'on vit dans les terres sauvages qu'on devient nécessairement un Brise-Terre, mais personne ne peut échapper aux liens avec la nature.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur lance une compétence de combo, il gagne un cumul de <@ba.key>Coup broyeur d'os</> qui confère <@ba.vup>+{dmg_up:0%}</> de DÉG à la compétence de combat suivante. <@ba.key>Coup broyeur d'os</> peut être cumulé {max_stack:0} fois."
   },
@@ -1001,16 +833,22 @@
     "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est un fragment de souvenir à propos de la Marée gangrénée : les crues insensibles ont toujours rejeté la notion de vie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "name": "Gants légers Æthertech",
-    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  "item_equip_t4_suit_burst01_edc_01": {
+    "name": "Tube à O2 de la rivière suspendue",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une pointe de désespoir vis-à-vis de la Marée gangrénée : les courants troubles de l'inconnu ont submergé les terres.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "name": "Chalumeau trouble",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une pointe d'inquiétude vis-à-vis de la Marée gangrénée : quand la calamité en surplomb se révèlera-t-elle ?",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "name": "Gantelets de raz-de-marée",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement conçu par le Bureau des spadamanciens pour ceux qui travaillent près de la Marée gangrénée.\nC'est une question à propos de la Marée gangrénée : l'effondrement des anciens barrages part-il de l'intérieur ?",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{skill_dmg_up:0%}</> de DÉG de compétence.\nLorsque le porteur applique <@ba.key>{stack_cond}</> cumul(s) ou plus d'<#ba.spellinflict>altération des Arts</> à l'ennemi, il inflige <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</> pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1037,11 +875,17 @@
     "decoDesc": "Un équipement très économique créé en s'inspirant de parchemins et de livres anciens trouvés à la palanque de Qingbo.\nUne lame courte créée en affûtant des bambous. Elle n'en a pas l'air, mais elle est capable de couper la partie supérieure d'une nymphe sylvestre sans lui faire de mal.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo. \nLorsque le porteur lance une compétence de combo, il gagne <@ba.vup>+{spell_up:0%}</> de DÉG de compétence (pour chaque compétence) pendant {duration} s. Cet effet peut être cumulé {max_stack} fois. La durée de chaque cumul est décomptée séparément."
   },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "name": "Gants d'IM Sécurité G1",
-    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nCes gants peuvent également servir d'arme. La validation du produit inclut un test « d'efficacité d'écrasement des appendices aggeloïdes. »",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "name": "Tonneau de Qingbo",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par l'usine du GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement très économique créé en s'inspirant de parchemins et de livres anciens trouvés à la palanque de Qingbo.\nUn petit tonneau doté d'un filtre interne simple à nettoyer. La page consacrée aux purificateurs d'eau des anciens livres a été arrachée pour une raison mystérieuse ; c'est pour cela que le composant manquant a été remplacé par un filtre moderne.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo. \nLorsque le porteur lance une compétence de combo, il gagne <@ba.vup>+{spell_up:0%}</> de DÉG de compétence (pour chaque compétence) pendant {duration} s. Cet effet peut être cumulé {max_stack} fois. La durée de chaque cumul est décomptée séparément."
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "name": "Kit de placement de Qingbo G1",
+    "description": "Inspiré par les techniques d'artisanat des terres sauvages, conçu par les Industries Endfield et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement très économique créé en s'inspirant de parchemins et de livres anciens trouvés à la palanque de Qingbo.\nUn dispositif simple, qui combine les fonctions d'une baguette de sourcier et d'une boussole magnétique. À en croire les archives, ce gadget a fait des merveilles durant les années qui ont suivi la création de la palanque de Qingbo.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{1-comboskill_cooldown:0%}</> de réduction du temps de recharge de compétence de combo. \nLorsque le porteur lance une compétence de combo, il gagne <@ba.vup>+{spell_up:0%}</> de DÉG de compétence (pour chaque compétence) pendant {duration} s. Cet effet peut être cumulé {max_stack} fois. La durée de chaque cumul est décomptée séparément."
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "name": "Gantelets de Qingbo",
@@ -1061,10 +905,28 @@
     "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nIl a servi pour la première fois aux armées humaines sur le Front aggeloïde.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "name": "Trousse à outils d'IM Sécurité",
+  "item_equip_t4_suit_criti01_body_02": {
+    "name": "Combinaison d'IM Sécurité",
     "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\n« Merci, officier ! Je vous promets que c'est la dernière fois ce mois-ci que j'appelle la police juste parce que j'ai oublié mes clés ! PROMIS ! »",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "name": "Combinaison d'IM Sécurité G1",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "name": "Combinaison d'IM Sécurité G2",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nÀ la fin de la guerre, les Industries Mieszko ont modifié leurs lignes de production et réduit efficacement le poids de leurs produits. Ils ont ainsi pu décrocher des contrats d'approvisionnement auprès des forces de sécurité urbaines.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "name": "Armure d'IM Sécurité G1",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité. \nIl a servi pour la première fois aux armées humaines sur le Front aggeloïde.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_criti01_edc_01": {
@@ -1077,6 +939,12 @@
     "name": "Scanner d'IM Sécurité",
     "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nLa contrebande des Industries Mieszko était monnaie courante dans les terres sauvages. Pour certains assassins des Brise-Terres, le scanner d'IM Sécurité constitue un accessoire de tout premier ordre.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "name": "Trousse à outils d'IM Sécurité",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\n« Merci, officier ! Je vous promets que c'est la dernière fois ce mois-ci que j'appelle la police juste parce que j'ai oublié mes clés ! PROMIS ! »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_criti01_edc_04": {
@@ -1103,23 +971,77 @@
     "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nCes gants peuvent également servir d'arme. La validation du produit inclut un test « d'efficacité d'écrasement des appendices aggeloïdes. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "name": "Bâton à Xiranflux",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un objet expérimental qui sert d'équipement standard pour les sentinelles de Wuling.\nUn bâton léger... Mais ne doutez pas de son efficacité ; il est tout à fait capable de briser des os si nécessaire.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Cet effet peut octroyer jusqu'à un maximum de {max_stack} cumuls bonus. La durée de chaque cumul est décomptée séparément."
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "name": "EPI pour mains d'IM Sécurité",
     "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nÉquipé d'unités des Arts miniaturisées à des fins de contrôle des foules et d'une excellente conductivité de l'énergie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "name": "EPI pour mains d'IM Sécurité G1",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nÉquipé d'unités des Arts miniaturisées à des fins de contrôle des foules et d'une excellente conductivité de l'énergie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "name": "Gants d'IM Sécurité G1",
+    "description": "Conçu par les Industries Mieszko et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de l'ensemble IM Sécurité.\nCes gants peuvent également servir d'arme. La validation du produit inclut un test « d'efficacité d'écrasement des appendices aggeloïdes. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{crit_up:0%}</> de taux de coups critiques. \nLorsque le porteur inflige un coup critique, il obtient <@ba.vup>+{atk_up:0%}</> d'ATQ pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Si les cumuls max. sont atteints, augmente le taux de coups critiques de <@ba.vup>+{crit_up2:0%}</>. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "name": "Armure Fil émoussé",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nL'influence de la Guerre des Aggeloi est évidente. L'armure est lourde, grossière, mais efficace.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "name": "Armure Fil émoussé G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nL'influence de la Guerre des Aggeloi est évidente. L'armure est lourde, grossière, mais efficace.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "name": "Poignard à propulsion Fil émoussé",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nCe poignard à propulsion particulièrement tranchant peut être attaché aux épaulières ou aux gantelets, selon le style de combat de la personne qui le manie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "name": "Poignard à propulsion Fil émoussé G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nCe poignard à propulsion particulièrement tranchant peut être attaché aux épaulières ou aux gantelets, selon le style de combat de la personne qui le manie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "name": "Gantelets Fil émoussé",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nLes fonctions de soutien de cette paire de gantelets sont loin d'être idéales. Certaines ressources du passé n'ont pas pu être répliquées. Nos Tianshi vont donc devoir imaginer des alternatives.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "name": "Gantelets Fil émoussé G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Les spadamanciens de Hongshan ont conçu cet équipement défensif polyvalent après avoir étudié d'anciens documents de conception. \nLes fonctions de soutien de cette paire de gantelets sont loin d'être idéales. Certaines ressources du passé n'ont pas pu être répliquées. Nos Tianshi vont donc devoir imaginer des alternatives.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur applique <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</>, les <@ba.pd>DÉG physiques infligés</> augmentent de <@ba.vup>[{phy_dmg_up_perstack:0%} × nombre max. de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommés</> sur un ennemi]</> pendant {duration} s. Si la cible a déjà une <#ba.physicalvul>sensibilité physique</>, est <@ba.poise>déséquilibrée</> ou porte des <#ba.originium>cristaux d'originium</>, ce bonus est multiplié par <@ba.vup>{special_multi:0.0}</>. Ce bonus ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "name": "Armure légère à Xiranflux",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un objet expérimental qui sert d'équipement standard pour les sentinelles de Wuling.\nMaintenant que la production de masse de xiranite est assurée, de nombreux projets de R&D sur l'équipement en xiranite, qui avaient été laissés de côté, sont de nouveau d'actualité.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Cet effet peut octroyer jusqu'à un maximum de {max_stack} cumuls bonus. La durée de chaque cumul est décomptée séparément."
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Nombre max. de cumuls bonus : {max_stack}. La durée de chaque cumul est décomptée séparément."
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "name": "Bâton à Xiranflux",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un objet expérimental qui sert d'équipement standard pour les sentinelles de Wuling.\nUn bâton léger... Mais ne doutez pas de son efficacité ; il est tout à fait capable de briser des os si nécessaire.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Nombre max. de cumuls bonus : {max_stack}. La durée de chaque cumul est décomptée séparément."
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "name": "Gants à Xiranflux",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un objet expérimental qui sert d'équipement standard pour les sentinelles de Wuling.\n« Vous voulez dire que ces gants vont... Hein ? Je peux juste toucher les machines en xiranite pour charger ces grosses brutes ? Ce n'était pas du n'importe quoi... ? »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ.\nLorsque le porteur <#ba.consume>consomme</> une <#ba.conduct>Électrification</> ou une <#ba.corrupt>Corrosion</>, il bénéficie d'un nombre de cumuls bonus équivalent au <#ba.statuslevel>niveau du statut</> de la réaction aux Arts consommée, chaque cumul lui conférant <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.pulse>dégâts électriques infligés</> et de <@ba.natur>dégâts naturels infligés</> pendant {duration} s. Nombre max. de cumuls bonus : {max_stack}. La durée de chaque cumul est décomptée séparément."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Exosquelette haute température",
@@ -1145,29 +1067,53 @@
     "decoDesc": "Un équipement qui possède une excellente résistance au feu.\nUne chaleur extrême n'est pas si terrifiante. Faites cependant attention si un endroit connaît soudain un inexplicable changement de température.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "name": "Combi disruptive de Pulser Labs",
-    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement au style novateur.\nPeu de gens ont vraiment compris pourquoi les Industries Endfield avaient développé une combinaison défensive pour la guerre numérique.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "name": "Cartouche d'alimentation haute température",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Quelqu'un a entendu une chanson provenant de ce volcan. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "name": "Gants de Pulser Labs",
+  "item_equip_t4_suit_fire_natr01_hand_01": {
+    "name": "Gants haute température",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "Un équipement au style novateur.\nIl a été globalement difficile de comprendre pourquoi les Industries Endfield avaient ajouté une meilleure isolation thermique à leur ensemble d'EPI Pulser Labs.",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+    "decoDesc": "Un équipement qui possède une excellente résistance au feu.\nLe STUT et les Industries Endfield ont conjointement développé l'équipement de protection individuel haute température pour explorer les environnements à température extrême.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "name": "Gantelets haute température",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Chut, moins de bruit. Tu risquerais de le réveiller. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "name": "Gantelets haute température G1",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Chut, moins de bruit. Tu risquerais de le réveiller. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "name": "Armure lourde LYNX",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une version plus lourde de l'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "name": "Cuirasse LYNX",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "L'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "name": "Connecteur LYNX",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "L'équipement favori des médecins. \nUn composant de connexion développé par Rhodes Island pour le calibrage des données. Il peut être connecté à différents systèmes de soutien médical afin de procéder à divers soins médicaux d'urgence.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "name": "Connecteur LYNX G2",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "L'équipement favori des médecins. \nUn composant de connexion développé par Rhodes Island pour le calibrage des données. Il peut être connecté à différents systèmes de soutien médical afin de procéder à divers soins médicaux d'urgence.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "name": "Plaque LYNX",
@@ -1187,6 +1133,12 @@
     "decoDesc": "L'équipement favori des médecins. \nUn composant de connexion développé par Rhodes Island pour le calibrage des données. Il peut être connecté à différents systèmes de soutien médical afin de procéder à divers soins médicaux d'urgence.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "name": "Gants LYNX",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "Une version plus lourde de l'équipement favori des médecins. \nRhodes Island a toujours pour tradition d'équiper leurs EPI de modules d'évaluation de l'oripathie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "Gantelets LYNX",
     "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
@@ -1199,10 +1151,46 @@
     "decoDesc": "Un des produits initialement commercialisés par le bureau des spadamanciens.\nLa première page de ces modèles d'armes est agrémentée de ces mots : « La spadamancie pour guerrier solitaire. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "name": "Armure lourde de spadamancien",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept de « capacité gargantuesque » et sont parvenus à « absorber et neutraliser » les attaques basées sur l'énergie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "name": "Armure lourde de spadamancien G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLes Tianshi se sont basés sur le concept « esprit vide et vallée ouverte » pour concevoir cette armure lourde de spadamancien et sont parvenus à la doter de la capacité à « neutraliser l'énergie ».",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "name": "Armure en fibres de spadamancien",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'un des produits initialement commercialisés par le bureau des spadamanciens.\nLa première page des plans de cette arme est agrémentée de ces mots : « Les braves partent vers le Nord. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "name": "Balise NAV de spadamancien",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nLa plupart des environnements gangrénés sont extrêmement dangereux. Le moindre faux pas peut mener vers une voie sans issue, comme ce fut le cas pour Wuling il y a de nombreuses années.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Microfiltre de spadamancien",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\n« Une bouffée de fumée dans un environnement gangréné peut vous tuer, alors portez votre respirateur correctement ! »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "name": "Silex de spadamancien",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\nFondamentalement, le silex surcharge et vide les réserves d'énergie de l'armure du spadamancien. Il ne brille que lorsque son porteur est en danger de mort.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "name": "Dague de spadamancien",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par l'usine du GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'un des produits vendus par le bureau des spadamanciens à ses débuts.\nUne lame tactique extrêmement affûtée, et l'une des premières armes produites selon les techniques des spadamanciens de Hongshan. Cet équipement a indubitablement posé de solides bases pour la série Yinglung qui sortira ensuite.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_01": {
@@ -1210,12 +1198,6 @@
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un des produits initialement commercialisés par le Bureau des spadamanciens.\n« Fin de l'année. J'ai mené ma lame vers le sud. Neuf têtes ont poussé sur la montagne, et elle rugit sans cesse. Un jour propice. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{poise_up:0%}</> de bonus d'efficacité de Déséquilibre.\nLorsque le porteur applique un <#ba.physicalstatus>statut physique</>, il porte également 1 coup qui inflige {atk_scale:0%} de son ATQ en DÉG physiques, ainsi que [Déséquilibre <@ba.poise>{poise}</> fois]. Temps de recharge de l'effet : {duration} s."
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "name": "Noyau d'énergie en xiranite éternelle G1",
-    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
-    "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
-    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Gantelets TAC de spadamancien",
@@ -1253,11 +1235,71 @@
     "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez ce stabilisateur en permanence, je vous prie. Cela vous empêchera d'être projeté dans les airs comme un ballon de baudruche percé à cause d'une simple fluctuation des paramètres. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "name": "Montre Æthertech",
+    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Certains utilisateurs soupçonnent nos produits d'avoir des effets hémomutagènes. Ces accusations sont sans fondement. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "name": "Gants Æthertech",
+    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "name": "Gants légers Æthertech",
+    "description": "Conçu par les Laboratoires Æthertech portatifs et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "De l'équipement de protection ultra-léger expérimental.\n« Portez toujours une couche de rembourrage supplémentaire en utilisant nos produits. Si vous souffrez d'hallucinations auditives ou visuelles, veuillez RETIRER nos produits IMMÉDIATEMENT et vous alimenter. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{atk_up:0%}</> d'ATQ. \nLorsque le porteur applique <#ba.noguard>Vulnérabilité</>, il inflige <@ba.vup>+{phy_dmg_up:0%}</> de <@ba.pd>DÉG physiques</> pendant {duration} s. Cet effet peut être cumulé {max_stack:0} fois. Lorsque la cible a déjà {stack_cond:0} cumul(s) de <#ba.noguard>Vulnérabilité</>, le porteur inflige <@ba.vup>+{phy_dmg_up2:0%}</> de DÉG physiques supplémentaires pendant {duration2} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "name": "Combi disruptive de Pulser Labs",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement au style novateur.\nPeu de gens ont vraiment compris pourquoi les Industries Endfield avaient développé une combinaison défensive pour la guerre numérique.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "name": "Sonde de Pulser Labs",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Un équipement au style novateur. \nIl est capable de détecter les traces des personnes disparues dans les brumes sombres et glaciales.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "name": "Étalonneur de Pulser Labs",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement au style novateur.\nIl parcourt l'infinité de cet océan de données à la recherche des « aberrations dorées » si bien cachées, puis les fait totalement disparaître.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "name": "Noyau invasif de Pulser Labs",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement au style novateur.\nL'aide de la Cabale de la Tranquillité a conféré au noyau invasif de Pulser Labs la capacité de franchir la plupart des pare-feux de terminaux.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "name": "Gants de Pulser Labs",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement au style novateur.\nIl a été globalement difficile de comprendre pourquoi les Industries Endfield avaient ajouté une meilleure isolation thermique à leur ensemble d'EPI Pulser Labs.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.conduct>Électrification</>, il inflige <@ba.vup>+{pulse_dmg_up:0%}</> de <@ba.pulse>DÉG électriques</> pendant {duration} s. Lorsque le porteur applique <#ba.frozen>Solidification</>, il inflige <@ba.vup>+{cryst_dmg_up:0%}</> de <@ba.cryst>DÉG cryogéniques</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "name": "Armure en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ».\nLa plupart des gens ne voient pas de lien entre les ustensiles de cuisine et la xiranite. Mais un certain habitant de Wuling trouve son inspiration en matière de design en dînant au restaurant.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "name": "Noyau d'énergie en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "name": "Noyau d'énergie en xiranite éternelle G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ».\nUn jour, il a parcouru les rues avec un grand bol de tofu mijoté dans de la rosée de bambou et a prétendu qu'il venait de concocter la prochaine génération de réfrigérateurs à base de xiranite...",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Bras auxiliaire en xiranite éternelle",
@@ -1267,6 +1309,12 @@
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Gants en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "name": "Gants en xiranite éternelle G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."

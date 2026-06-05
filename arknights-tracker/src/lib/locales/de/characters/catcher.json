@@ -71,7 +71,7 @@
         "weaknessDurationS": "Schwäche-Dauer (Sek.)"
       },
       "name": "Lehrbuchangriff",
-      "description": "Der Operator schwingt das Großschwert und führt 2 aufeinanderfolgende Hiebe aus, die <@ba.pd>Physischen SDN</> verursachen und getroffene Gegner mit <#ba.weak>Geschwächt</> belegen. Anschließend führt der Operator einen schweren Schlag aus, der massiven <@ba.pd>Physischen SDN</> verursacht und alle Gegner im Wirkungsbereich mit <#ba.knockdown>Niederschlag</> belegt."
+      "description": "Der Operator schwingt das Großschwert und führt 2 aufeinanderfolgende Hiebe aus, die <@ba.pd>Physischen SDN</> verursachen und getroffene Gegner mit <#ba.weak>Schwäche</> belegen. Anschließend führt der Operator einen schweren Schlag aus, der massiven <@ba.pd>Physischen SDN</> verursacht und alle Gegner im Wirkungsbereich mit <#ba.knockdown>Niederschlag</> belegt."
     },
     "indicator": {
       "levels": [

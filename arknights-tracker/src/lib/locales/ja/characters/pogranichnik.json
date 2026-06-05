@@ -75,10 +75,10 @@
         "advanceDmgMultiplier": "進軍ダメージ倍率",
         "advanceStagger": "進軍ブレイク値",
         "harassDmgMultiplier": "撹乱ダメージ倍率",
-        "harassSpRecovery": "撹乱のSP回復",
+        "harassSpRecovery": "撹乱のSP回復量",
         "decisiveAssaultDmgMultiplier": "勝決ダメージ倍率",
         "decisiveAssaultStagger": "勝決ブレイク値",
-        "decisiveAssaultSpRecovery": "勝決のSP回復"
+        "decisiveAssaultSpRecovery": "勝決のSP回復量"
       },
       "name": "盾兵旗隊、進め",
       "description": "目標の敵を中心に、4体の盾兵を召喚する。盾兵は目標に向かって進軍し、進軍途中の敵を押し出して<@ba.pd>物理ダメージ</>を与え、同時に<@ba.key>鉄誓</>を5回分獲得する。敵が<#ba.physicalstatus>物理異常</>またはポグラニチニクの連携技ダメージを受けると、<@ba.key>鉄誓</>を1回消費して盾兵を1体召喚する。盾兵は敵を撹乱し、<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。消費した<@ba.key>鉄誓</>が最後の1回の場合、盾兵4体が勝決を発動し、高い<@ba.pd>物理ダメージ</>を与え、SPを大量に回復する。"

@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Abilità di combattimento <@ba.key>Impeto di Dolly</> migliorata: se si attiva l'effetto aggiuntivo mentre un nemico con <#ba.corrupt>Corrosione</> è nelle vicinanze, l'abilità di combattimento viene subito riutilizzata.\n<@ba.info>Questo effetto si attiva una sola volta per ogni uso attivo dell'abilità di combattimento.</>"
+        "Abilità di combattimento <@ba.key>Impeto di Dolly</> migliorata: se si attiva l'effetto aggiuntivo mentre un nemico con <#ba.corrupt>Corrosione</> è nelle vicinanze, l'abilità di combattimento viene subito riutilizzata.\n<@ba.info>Questo effetto può attivarsi una sola volta per ogni uso attivo dell'abilità di combattimento.</>"
       ],
       "name": "Brezza della vetta"
     },

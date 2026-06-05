@@ -85,7 +85,7 @@
     },
     "talent2": {
       "levels": [
-        "Habilidad de batalla <@ba.key>Embestida de Dolly</> mejorada: Activar el efecto adicional mientras un enemigo con <#ba.corrupt>Corrosión</> está cerca lanza de inmediato la habilidad de batalla de nuevo. \n<@ba.info>Este efecto solo se activa una vez por cada lanzamiento activo de la habilidad de batalla.</>"
+        "Habilidad de batalla <@ba.key>Embestida de Dolly</> mejorada: Activar el efecto adicional mientras un enemigo con <#ba.corrupt>Corrosión</> está cerca lanza de inmediato la habilidad de batalla de nuevo. \n<@ba.info>Este efecto solo puede activarse una vez por cada ejecución de habilidad de batalla activa.</>"
       ],
       "name": "Surfista de cumbres"
     },

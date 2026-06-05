@@ -127,7 +127,7 @@
       "name": "Special Blend"
     },
     "potential5": {
-      "description": "Skill tarung <@ba.key>FLIP DA WOK!</> meningkat: Jika skill hanya menghantam satu musuh, 1 tumpuk <#ba.noguard>Vulnerability</> lagi akan diakibatkan kepada target. Efek hanya bisa diaktifkan satu kali setiap {potential_5_interval:0} dtk.",
+      "description": "Skill tarung <@ba.key>FLIP DA WOK!</> meningkat: Jika skill hanya menghantam satu musuh, 1 tumpuk <#ba.noguard>Vulnerability</> lagi akan diakibatkan kepada target. Efek ini hanya bisa diaktifkan satu kali setiap {potential_5_interval:0} dtk.",
       "name": "Fire It Up"
     }
   },

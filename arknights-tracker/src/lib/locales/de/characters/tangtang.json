@@ -2,7 +2,7 @@
   "baseInfo": {
     "tags": [
       "Kryo",
-      "Techniken-Empf."
+      "Technik-Empf."
     ],
     "behaviourHateTags": [
       "Schöne Künste"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Kombofertigkeit <@ba.key>FLUSS, ZU MIR!</> verbessert: SDN-Multiplikator auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts erhöht und die Abklingzeit ist jetzt <@ba.vup>{coolDown:0}</> Sek.\nKampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> verbessert: Für jeden verbrauchten und in eine <@ba.key>Wasserhose</> verwandelten <@ba.key>Strudel</> werden zusätzliche <@ba.vup>{atb_return:0}</> FP <#ba.return>erstattet</>.",
+      "description": "Kombofertigkeit <@ba.key>FLUSS, ZU MIR!</> verbessert: SDN-Multiplikator auf das <@ba.vup>{atk_scale:0.0}</>-Fache des ursprünglichen Werts erhöht. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek.\nKampffertigkeit <@ba.key>ICH REITE DIE WELLEEEN!</> verbessert: Für jeden verbrauchten und in eine <@ba.key>Wasserhose</> verwandelten <@ba.key>Strudel</> werden zusätzliche <@ba.vup>{atb_return:0}</> FP <#ba.return>erstattet</>.",
       "name": "Reservehort"
     },
     "potential2": {

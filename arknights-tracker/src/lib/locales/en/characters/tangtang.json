@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Combo skill <@ba.key>RIVER, TO ME!</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale:0.0}</> times of the original, and cooldown is now <@ba.vup>{coolDown:0}</>s.\nBattle skill <@ba.key>IMA WAVERIDAAH!</> improved: For every <@ba.key>Whirlpool</> consumed and converted into a <@ba.key>Waterspout</>, <#ba.return>return</> <@ba.vup>{atb_return:0}</> additional SP.",
+      "description": "Combo skill <@ba.key>RIVER, TO ME!</> improved: DMG Multiplier is increased to <@ba.vup>{atk_scale:0.0}</> times of the original. Length of cooldown <@ba.vup>{coolDown:0}</>s.\nBattle skill <@ba.key>IMA WAVERIDAAH!</> improved: For every <@ba.key>Whirlpool</> consumed and converted into a <@ba.key>Waterspout</>, <#ba.return>return</> <@ba.vup>{atb_return:0}</> additional SP.",
       "name": "Reserve Hoard"
     },
     "potential2": {

@@ -741,7 +741,9 @@
     "hetoniteComponent": "Componente de Hetonita",
     "hetoniteSolution": "Solução de Hetonita",
     "precipitationAcid": "Ácido de Precipitação",
-    "liquidHeavyXiranite": "Xiranita Pesada Líquida"
+    "liquidHeavyXiranite": "Xiranita Pesada Líquida",
+    "centuryRind": "Casca Secular",
+    "caudalGoldscale": "Escama Dourada Caudal"
   },
   "common": {
     "copy": "Copiar",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Indústria 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "Caça-Barbatanas 3.0",
     "lupineScarlet": "Lobo Escarlate",
     "loneBarge": "Barcaça Solitária",
-    "flickersInTheMist": "Brilhos na Névoa"
+    "flickersInTheMist": "Brilhos na Névoa",
+    "phantomPain": "Dor Fantasma",
+    "amaranthineTassel": "Borla de Amarantina",
+    "beaconOfDuty": "Sinalizador do Dever"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "Aluvião de Energia Severo: Pedra de Marcação",
     "world_energy_point08_3": "Aluvião de Energia: Área de Testes",
     "world_energy_point08_2": "Aluvião de Energia: Área de Testes",
-    "world_energy_point08_6": "Aluvião de Energia Severo: Área de Teste"
+    "world_energy_point08_6": "Aluvião de Energia Severo: Área de Teste",
+    "world_energy_point09_1": "Aluvião de Energia: Vale do Cofre de Espadas",
+    "world_energy_point09_2": "Aluvião de Energia: Vale do Cofre de Espadas",
+    "world_energy_point09_3": "Aluvião de Energia: Vale do Cofre de Espadas",
+    "world_energy_point09_4": "Aluvião de Energia Severo: Vale do Cofre de Espadas",
+    "world_energy_point09_5": "Aluvião de Energia Severo: Vale do Cofre de Espadas",
+    "world_energy_point09_6": "Aluvião de Energia Severo: Vale do Cofre de Espadas",
+    "world_energy_point09_7": "Aluvião de Energia Severo: Vale do Cofre de Espadas"
   },
   "enemies": {
     "eny_0007_mimicw": "Verminídeo Escavador de Túneis",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "Nefarith, \"Quebra-Ossos\"",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, \"Conquistadora\"",
-    "eny_0082_hsbear": "Retumbador Celeste"
+    "eny_0082_hsbear": "Retumbador Celeste",
+    "eny_0112_jzmonk": "Uivante Montanhês",
+    "eny_0113_jzogre": "Besta Mutiladora Encouraçada",
+    "eny_0114_jzmking": "Uivante dos Penhascos"
   },
   "essencesPage": {
     "optimizer": "Otimizador de Farm",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Luvas de Qingbo",
     "item_equip_t4_suit_expend_spell01_edc_02": "Bastão do Fluxo de Xiranita",
     "item_equip_t4_suit_expend_spell01_body_02": "Armadura Leve do Fluxo de Xiranita",
-    "item_equip_t4_suit_phy01_hand_03": "Manoplas Táticas do Espadeiro T1"
+    "item_equip_t4_suit_phy01_hand_03": "Manoplas Táticas do Espadeiro T1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Kit de Posicionamento de Qingbo T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Armadura de Borda Grisalha",
+    "item_equip_t4_suit_crush_fracture_body_02": "Armadura de Borda Grisalha T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Canivete de Borda Grisalha",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Canivete de Borda Grisalha T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Manoplas de Borda Grisalha",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Manoplas de Borda Grisalha T1",
+    "item_equip_t4_suit_phy01_body_04": "Armadura de Fibra do Espadeiro"
   },
   "packs": {
     "none": "Não Definido",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "Isolamento de Mordvolt",
     "suit_wisdwill01": "Leve do CAI",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Fluxo de Xiranita"
+    "suit_expend_spell01": "Fluxo de Xiranita",
+    "suit_crush_fracture": "Borda Grisalha"
   },
   "equipmentTypes": {
     "body": "Armadura",
@@ -1897,11 +1923,11 @@
     "pump_1": "Bomba de Fluido",
     "pump_2": "Bomba Resistente a Ácido Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Modo PDR",
     "liquid": "Modo de Fluido"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Origem",
       "using": "Fórmulas Aplicáveis",

@@ -741,7 +741,9 @@
     "hetoniteComponent": "Composant en hétonite",
     "hetoniteSolution": "Solution d'hétonite",
     "precipitationAcid": "Acide de précipitation",
-    "liquidHeavyXiranite": "Xiranite lourde liquide"
+    "liquidHeavyXiranite": "Xiranite lourde liquide",
+    "centuryRind": "Écorce centenaire",
+    "caudalGoldscale": "Écaille d'or caudale"
   },
   "common": {
     "copy": "Copier",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industrie 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "Chassailettes 3.0",
     "lupineScarlet": "Lupin écarlate",
     "loneBarge": "Barge solitaire",
-    "flickersInTheMist": "Faible lueur dans la brume"
+    "flickersInTheMist": "Faible lueur dans la brume",
+    "phantomPain": "Douleur fantôme",
+    "amaranthineTassel": "Accessoire amaranthe",
+    "beaconOfDuty": "Symbole du devoir"
   },
   "cookies": {
     "title": "Nous utilisons des cookies",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "Alluvion d'énergie intense : Pierre de marquage",
     "world_energy_point08_3": "Alluvion d'énergie : zone de test",
     "world_energy_point08_2": "Alluvion d'énergie : zone de test",
-    "world_energy_point08_6": "Alluvion d'énergie intense : zone de test"
+    "world_energy_point08_6": "Alluvion d'énergie intense : zone de test",
+    "world_energy_point09_1": "Alluvion d'énergie : Val du caveau des lames",
+    "world_energy_point09_2": "Alluvion d'énergie : Val du caveau des lames",
+    "world_energy_point09_3": "Alluvion d'énergie : Val du caveau des lames",
+    "world_energy_point09_4": "Alluvion d'énergie intense : Val du caveau des lames",
+    "world_energy_point09_5": "Alluvion d'énergie intense : Val du caveau des lames",
+    "world_energy_point09_6": "Alluvion d'énergie intense : Val du caveau des lames",
+    "world_energy_point09_7": "Alluvion d'énergie intense : Val du caveau des lames"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm tunnelier",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "Nefarith, « Broyeuse d'os »",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, « Conquérante »",
-    "eny_0082_hsbear": "Frappeciel"
+    "eny_0082_hsbear": "Frappeciel",
+    "eny_0112_jzmonk": "Hurleroc",
+    "eny_0113_jzogre": "Ours à dents de sabre cuirassé",
+    "eny_0114_jzmking": "Hurlepic"
   },
   "essencesPage": {
     "optimizer": "Optimiseur de farm",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Gants de Qingbo",
     "item_equip_t4_suit_expend_spell01_edc_02": "Bâton à Xiranflux",
     "item_equip_t4_suit_expend_spell01_body_02": "Armure légère à Xiranflux",
-    "item_equip_t4_suit_phy01_hand_03": "Gantelets TAC de spadamancien G1"
+    "item_equip_t4_suit_phy01_hand_03": "Gantelets TAC de spadamancien G1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Kit de placement de Qingbo G1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Armure Fil émoussé",
+    "item_equip_t4_suit_crush_fracture_body_02": "Armure Fil émoussé G1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Poignard à propulsion Fil émoussé",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Poignard à propulsion Fil émoussé G1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Gantelets Fil émoussé",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Gantelets Fil émoussé G1",
+    "item_equip_t4_suit_phy01_body_04": "Armure en fibres de spadamancien"
   },
   "packs": {
     "none": "Unique",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "Isolation de Mordvolt",
     "suit_wisdwill01": "Équipement léger du GIA",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Xiranflux"
+    "suit_expend_spell01": "Xiranflux",
+    "suit_crush_fracture": "Fil émoussé"
   },
   "equipmentTypes": {
     "body": "Armure",
@@ -1897,11 +1923,11 @@
     "pump_1": "Pompe à fluide",
     "pump_2": "Pompe résistante à l'acide V2"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Mode STD",
     "liquid": "Mode Fluide"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Source",
       "using": "Formules applicables",

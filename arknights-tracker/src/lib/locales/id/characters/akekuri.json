@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Ultimate <@ba.key>SQUAD! ON ME!</> meningkat: Saat ultimate aktif, <#ba.combo>Link</> akan didapatkan."
+        "Ultimate <@ba.key>SQUAD! ON ME!</> meningkat: Saat aktif, ultimate ini akan memberikan buff <#ba.combo>Link</>."
       ],
       "name": "Staying in the Zone"
     },

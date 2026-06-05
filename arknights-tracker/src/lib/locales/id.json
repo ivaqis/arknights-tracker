@@ -741,7 +741,9 @@
     "hetoniteComponent": "Komponen Hetonite",
     "hetoniteSolution": "Larutan Hetonite",
     "precipitationAcid": "Asam Peluruh",
-    "liquidHeavyXiranite": "Xiranite Berat Cair"
+    "liquidHeavyXiranite": "Xiranite Berat Cair",
+    "centuryRind": "Kulit Buah Seabad",
+    "caudalGoldscale": "Sisik Emas Kaudal"
   },
   "common": {
     "copy": "Salin",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "Finchaser 3.0",
     "lupineScarlet": "Lupine Scarlet",
     "loneBarge": "Lone Barge",
-    "flickersInTheMist": "Flickers in the Mist"
+    "flickersInTheMist": "Flickers in the Mist",
+    "phantomPain": "Phantom Pain",
+    "amaranthineTassel": "Amaranthine Tassel",
+    "beaconOfDuty": "Beacon of Duty"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "Aluvium Energi Parah: Batu Penanda",
     "world_energy_point08_3": "Aluvium Energi: Area Uji Coba",
     "world_energy_point08_2": "Aluvium Energi: Area Uji Coba",
-    "world_energy_point08_6": "Aluvium Energi Parah: Area Uji Coba"
+    "world_energy_point08_6": "Aluvium Energi Parah: Area Uji Coba",
+    "world_energy_point09_1": "Aluvium Energi: Lembah Benteng Pedang",
+    "world_energy_point09_2": "Aluvium Energi: Lembah Benteng Pedang",
+    "world_energy_point09_3": "Aluvium Energi: Lembah Benteng Pedang",
+    "world_energy_point09_4": "Aluvium Energi Parah: Lembah Benteng Pedang",
+    "world_energy_point09_5": "Aluvium Energi Parah: Lembah Benteng Pedang",
+    "world_energy_point09_6": "Aluvium Energi Parah: Lembah Benteng Pedang",
+    "world_energy_point09_7": "Aluvium Energi Parah: Lembah Benteng Pedang"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Penggali",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "Nefarith, “Bonekrusher”",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, “sang Penakluk”",
-    "eny_0082_hsbear": "Skydrummer"
+    "eny_0082_hsbear": "Skydrummer",
+    "eny_0112_jzmonk": "Rockhowler",
+    "eny_0113_jzogre": "Manglerbeast Berarmor",
+    "eny_0114_jzmking": "Craghowler"
   },
   "essencesPage": {
     "optimizer": "Pengoptimal Farming",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Sarung Tangan Qingbo",
     "item_equip_t4_suit_expend_spell01_edc_02": "Pentungan Xiranflow",
     "item_equip_t4_suit_expend_spell01_body_02": "Armor Ringan Xiranflow",
-    "item_equip_t4_suit_phy01_hand_03": "Gauntlet TAC Swordmancer T1"
+    "item_equip_t4_suit_phy01_hand_03": "Gauntlet TAC Swordmancer T1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Kit Deteksi Posisi Qingbo T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Armor Tepian Serabut",
+    "item_equip_t4_suit_crush_fracture_body_02": "Armor Tepian Serabut T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Pisau Tinju Tepian Serabut",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Pisau Tinju Tepian Serabut T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Gauntlet Tepian Serabut",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Gauntlet Tepian Serabut T1",
+    "item_equip_t4_suit_phy01_body_04": "Armor Serat Swordmancer"
   },
   "packs": {
     "none": "Nonset",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "Insulasi Mordvolt",
     "suit_wisdwill01": "AIC Ringan",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Xiranflow"
+    "suit_expend_spell01": "Xiranflow",
+    "suit_crush_fracture": "Tepian Serabut"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1897,11 +1923,11 @@
     "pump_1": "Pompa Cairan",
     "pump_2": "Pompa Tahan Asam Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Mode STD",
     "liquid": "Mode Cairan"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Sumber",
       "using": "Formula yang Bisa Diterapkan",

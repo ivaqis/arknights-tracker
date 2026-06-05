@@ -741,7 +741,9 @@
     "hetoniteComponent": "緋銅装備部品",
     "hetoniteSolution": "緋銅溶液",
     "precipitationAcid": "沈殿酸",
-    "liquidHeavyXiranite": "液化重息壌"
+    "liquidHeavyXiranite": "液化重息壌",
+    "centuryRind": "百年陳皮",
+    "caudalGoldscale": "尾先の金鱗"
   },
   "common": {
     "copy": "コピー",
@@ -925,7 +927,9 @@
     "pogranichnik": "ポグラニチニク",
     "rossi": "ロッシ",
     "zhuangfy": "ゾアン・ファンイ",
-    "zhuangFangyi": "ゾアン・ファンイ"
+    "zhuangFangyi": "ゾアン・ファンイ",
+    "miFu": "ミ・フ",
+    "mifu": "ミ・フ"
   },
   "weaponsList": {
     "industry01": "工業零点一",
@@ -995,7 +999,10 @@
     "finchaser30": "フィンチェイサー3.0",
     "lupineScarlet": "狼緋",
     "loneBarge": "孤舟",
-    "flickersInTheMist": "朧光"
+    "flickersInTheMist": "朧光",
+    "phantomPain": "ファントムペイン",
+    "amaranthineTassel": "赤纓",
+    "beaconOfDuty": "灯火の使命"
   },
   "cookies": {
     "title": "クッキーを使用しています",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "重度超域活性点・首礎",
     "world_energy_point08_3": "超域活性点・実験区域",
     "world_energy_point08_2": "超域活性点・実験区域",
-    "world_energy_point08_6": "重度超域活性点・実験区域"
+    "world_energy_point08_6": "重度超域活性点・実験区域",
+    "world_energy_point09_1": "超域活性点・蔵剣谷",
+    "world_energy_point09_2": "超域活性点・蔵剣谷",
+    "world_energy_point09_3": "超域活性点・蔵剣谷",
+    "world_energy_point09_4": "重度超域活性点・蔵剣谷",
+    "world_energy_point09_5": "重度超域活性点・蔵剣谷",
+    "world_energy_point09_6": "重度超域活性点・蔵剣谷",
+    "world_energy_point09_7": "重度超域活性点・蔵剣谷"
   },
   "enemies": {
     "eny_0007_mimicw": "潜地蛟獣",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "「ボーンクラッシャー」ネファリス",
     "eny_0095_ethillu": "イーサルー",
     "eny_0079_nefarp2": "「征服者」ネファリス",
-    "eny_0082_hsbear": "天鼓"
+    "eny_0082_hsbear": "天鼓",
+    "eny_0112_jzmonk": "山吼獣",
+    "eny_0113_jzogre": "鎧裂獣",
+    "eny_0114_jzmking": "大山吼獣"
   },
   "essencesPage": {
     "optimizer": "育成オプティマイザー",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "清波プロテクター",
     "item_equip_t4_suit_expend_spell01_edc_02": "壌流棍棒",
     "item_equip_t4_suit_expend_spell01_body_02": "壌流軽防具",
-    "item_equip_t4_suit_phy01_hand_03": "宏山点剣ガントレットⅠ"
+    "item_equip_t4_suit_phy01_hand_03": "宏山点剣ガントレットⅠ",
+    "item_equip_t4_suit_combo_cd01_edc_04": "清波探知器具Ⅰ",
+    "item_equip_t4_suit_crush_fracture_body_01": "旧鋒防具",
+    "item_equip_t4_suit_crush_fracture_body_02": "旧鋒防具Ⅰ",
+    "item_equip_t4_suit_crush_fracture_edc_01": "旧鋒ナイフ",
+    "item_equip_t4_suit_crush_fracture_edc_02": "旧鋒ナイフⅠ",
+    "item_equip_t4_suit_crush_fracture_hand_01": "旧鋒ガントレット",
+    "item_equip_t4_suit_crush_fracture_hand_02": "旧鋒ガントレットⅠ",
+    "item_equip_t4_suit_phy01_body_04": "宏山点剣繊維防具"
   },
   "packs": {
     "none": "セットなし",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "蝕電遮断",
     "suit_wisdwill01": "集成軽量",
     "suit_combo_cd01": "清波",
-    "suit_expend_spell01": "壌流"
+    "suit_expend_spell01": "壌流",
+    "suit_crush_fracture": "旧鋒"
   },
   "equipmentTypes": {
     "body": "胴",
@@ -1897,11 +1923,11 @@
     "pump_1": "液体ポンプ",
     "pump_2": "耐酸性液体ポンプⅡ"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "基礎モード",
     "liquid": "液体対応モード"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "入手方法",
       "using": "レシピ",

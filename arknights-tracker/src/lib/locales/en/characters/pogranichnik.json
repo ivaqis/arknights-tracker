@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Ultimate Energy Gain"
       },
       "name": "Full Moon Slash",
-      "description": "COMBO TRIGGER: When <#ba.crush>Crush</> or <#ba.fracture>Breach</> <#ba.consume>consumes</> the enemy's <#ba.noguard>Vulnerability</> stack(s). \nPerforms a number of slash sequences (up to 3) based on the max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</>, dealing <@ba.pd>Physical DMG</> and recovering some SP. Each slash deals more DMG and gives better SP recovery. \n<@ba.info>Consuming 4 stacks of Vulnerability enhances the 3rd slash sequence.</>"
+      "description": "COMBO TRIGGER: When <#ba.crush>Crush</> or <#ba.fracture>Breach</> <#ba.consume>consumes</> the enemy's <#ba.noguard>Vulnerability</> stack(s). \nPerforms a number of slash sequences (up to 3) based on the max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy, dealing <@ba.pd>Physical DMG</> and recovering some SP. Each slash deals more DMG and gives better SP recovery. \n<@ba.info>Consuming 4 stacks of Vulnerability enhances the 3rd slash sequence.</>"
     },
     "ultimate": {
       "ultimate": {

@@ -55,7 +55,7 @@
         "ultimateEnergyGain": "必殺チャージ回復量"
       },
       "name": "イラプション・コラム",
-      "description": "操作中のオペレーターが<#ba.noguard>クラッシュ</>または<#ba.spellinflict>アーツ付着</>状態<@ba.key>でない</>敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n敵に火山雲を放ち、接近後に<@ba.natur>自然ダメージ</>を与える。火山雲は敵を追尾し、そのあと爆発する。周囲の他の敵には、そのダメージの半分の<@ba.natur>自然ダメージ</>を与え、強制的に短時間<#ba.corrupt>腐食</>状態にする。"
+      "description": "操作中のオペレーターが<#ba.noguard>クラッシュ</>または<#ba.spellinflict>アーツ付着</>状態<@ba.key>でない</>敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n敵に火山雲を放ち、接近後に<@ba.natur>自然ダメージ</>を与える。火山雲は敵を追尾し、一定時間後に爆発する。周囲の他の敵には、そのダメージの半分の<@ba.natur>自然ダメージ</>を与え、強制的に短時間<#ba.corrupt>腐食</>状態にする。"
     },
     "ultimate": {
       "ultimate": {

@@ -5,29 +5,11 @@
     "decoDesc": "Basic armor with simple structures. \nGives people a peace of mind that far exceeds its actual defensive capabilities.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "name": "Swordmancer Flint",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nThe flint essentially overclocks and depletes the energy reserves of the Swordmancer armor system. It only shines when the wearer brushes against death itself.",
-    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "name": "Basic PPE",
     "description": "Provisionally made and failed the final product verification and validation (V&V) process of Endfield Industries. This equipment offers only limited defense.",
     "decoDesc": "Basic armor with simple structures. \nGives people a peace of mind that far exceeds its actual defensive capabilities.",
     "setBonus": ""
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "name": "Armored MSGR Flashlight",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A sturdy hand-held electric lamp. \nThe sharp spike on the other end can also be used to break the bones of those who refuse to talk.",
-    "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "name": "Roving MSGR Gyro T1",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "An intricate fidget toy. \nResults from a trustworthy poll revealed that about 20% of messengers have modified this stress-relief toy into a self-orienting tracker.",
-    "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "name": "Basic Gauntlets",
@@ -35,23 +17,11 @@
     "decoDesc": "Basic armor with simple structures. \nGives people a peace of mind that far exceeds its actual defensive capabilities.",
     "setBonus": ""
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "Mordvolt Insulation Gloves",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A piece of equipment essential for special environment operations. \nAll engineers making electrical repairs at Blight rupture sites must wear specialized PPE to avoid injuries caused by anomalous bursts of electrical discharge.",
-    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "name": "Basic Gloves",
     "description": "Provisionally made and failed the final product verification and validation (V&V) process of Endfield Industries. This equipment offers only limited defense.",
     "decoDesc": "Basic armor with simple structures. \nGives people a peace of mind that far exceeds its actual defensive capabilities.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "name": "Type 50 Yinglung Radar T2",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nWhen the optimizations were finally complete, he added a few words next to the blueprints: \"Heavens and earth may break asunder, but I shall prevail and emerge the victor.\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "name": "Miner Armor",
@@ -59,20 +29,8 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "name": "LYNX Connector",
-    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The medics' preferred equipment. \nA connector component developed by Rhodes Island for data calibration. It can be connected to different health support systems to complete various forms of emergency medical care.",
-    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "name": "Miner Overalls",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
-    "setBonus": ""
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "name": "Emergency Compression Core",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
@@ -101,20 +59,14 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "name": "AIC Heavy Armor",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Structurally simple and modular equipment that offers heavy protection. \nAfter attaching thicker and heavier armor plates onto the suit, the armor would likely end up at places where it becomes the target of powerful guns.",
-    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer restores <@ba.heal>{hp_add}</> HP. Effect trigger cooldown: {cd}s."
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "name": "Catastrophe Heavy Armor",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nIt is furnished with a micro-electrical stimulation system that effectively reduces the wearer's fatigue. The crew mates are exceptionally pleased with this \"invigorating\" mini design feature.",
-    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "name": "Emergency Comm",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
+    "setBonus": ""
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "name": "Emergency Compression Core",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
@@ -124,12 +76,6 @@
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "name": "Hot Work Gloves",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment that features excellent fire resistance rating. \nUWST and Endfield Industries jointly developed the Hot Work PPE to explore high temperature environments.",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "name": "Miner Wrists",
@@ -149,23 +95,17 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "name": "Hot Work Gauntlets",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "name": "AIC Heavy Armor",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment that features excellent fire resistance rating. \n\"Shh, quiet. You might wake it up.\"",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+    "decoDesc": "Structurally simple and modular equipment that offers heavy protection. \nAfter attaching thicker and heavier armor plates onto the suit, the armor would likely end up at places where it becomes the target of powerful guns.",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer restores <@ba.heal>{hp_add}</> HP. Effect trigger cooldown: {cd}s."
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "name": "AIC Heavy Plate",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Structurally simple and modular equipment that offers heavy protection. \nRaising defense performance also leads to massive increases in weight, which also happens to be the biggest issue with this equipment.",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer restores <@ba.heal>{hp_add}</> HP. Effect trigger cooldown: {cd}s."
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "name": "Tide Surge Gauntlets",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a question about the Blight Tide: Do the collapse of ancient dams start from within?",
-    "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "name": "AIC Alloy Plate",
@@ -179,23 +119,11 @@
     "decoDesc": "Structurally simple and modular equipment that offers heavy protection. \nJust two intricate supporting structures are used to help bear 40% of weaponry weight. This is smart design.",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer restores <@ba.heal>{hp_add}</> HP. Effect trigger cooldown: {cd}s."
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "Miner Compression Core T1",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
-    "setBonus": ""
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "name": "AIC Light Armor",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Structurally simple and modular equipment that offers light protection. \nIt was a byproduct created during a test run of several mixed production lines involving various AIC Factory facilities.",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer gains ATK <@ba.vup>+{atk_up}</> for <@ba.vup>{duration}</>s."
-  },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "name": "Frontiers Extra O2 Tube T1",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The standard Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology. The upgraded version further extends this duration to 6 hours.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "name": "AIC Light Plate",
@@ -203,23 +131,11 @@
     "decoDesc": "Structurally simple and modular equipment that offers light protection. \nThe biggest feature of this AIC gear is that it allows armor plates to be flexibly attached to the suit.",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer gains ATK <@ba.vup>+{atk_up}</> for <@ba.vup>{duration}</>s."
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "name": "MI Security Overalls",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "name": "AIC Ceramic Plate",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Structurally simple and modular equipment that offers light protection. \n\"I'd love to believe in our technology, but this feels a little too light...\"",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer gains ATK <@ba.vup>+{atk_up}</> for <@ba.vup>{duration}</>s."
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "name": "Xiranflow Gloves",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Experimental equipment proposed as standard gear for the Wuling Watchguards.\n\"Are you saying that these gloves will be... Wha...? I can touch Xiranite machines to charge these bruisers? That wasn't blight nonsense, right...?\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. The number of buff stacks maxes out at {max_stack} stacks. Duration of each stack is counted separately."
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "name": "AIC Tactical Gloves",
@@ -227,23 +143,11 @@
     "decoDesc": "Structurally simple and modular equipment that offers light protection. \nAlthough they do not offer the best defenses, at least they are easy to wear.",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>. \nAfter the wearer defeats an enemy, the wearer gains ATK <@ba.vup>+{atk_up}</> for <@ba.vup>{duration}</>s."
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "name": "LYNX Gloves",
-    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A heavier version of the medics' preferred equipment. \nRhodes Island still has a tradition of furnishing their PPE with Oripathy monitoring modules.",
-    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "name": "Miner Turbine",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "name": "Bonekrusha Mask",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nThe mask is a symbol of fanaticism. Yet faith alone will not keep anyone alive in a Blighted environment. It does not matter if it is dangling from a belt or being worn on the face. This mask is just a piece of flimsy wood.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "name": "Miner Drive Wheel",
@@ -251,29 +155,11 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "name": "LYNX Heavy Armor",
-    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A heavier version of the medics' preferred equipment. \nPeople usually refer to combatants wearing the LYNX Cuirass as \"Walking Medkits\". These lifesavers often stuff every pocket and holder of their armor with emergency medical supplies.",
-    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "name": "Miner Compression Core",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "Miner Gloves T2",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
-    "setBonus": ""
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "Mordvolt Insulation Battery T1",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "An extremely durable battery. \nIn Talos-II, emergency repair work in Blighted conditions is an extremely dangerous job. Hence, workers must undergo strict training based on special standards before they are allowed to use batteries in such environments.",
-    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "name": "Miner Comm",
@@ -287,23 +173,11 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "name": "Frontiers Armor T1",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "name": "Miner Gloves T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "name": "LYNX Connector T2",
-    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The medics' preferred equipment. \nA connector component developed by Rhodes Island for data calibration. It can be connected to different health support systems to complete various forms of emergency medical care.",
-    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
   },
   "item_equip_t2_suit_agi01_body_01": {
     "name": "Roving MSGR Jacket",
@@ -317,12 +191,6 @@
     "decoDesc": "An intricate fidget toy. \nResults from a trustworthy poll revealed that about 20% of messengers have modified this stress-relief toy into a self-orienting tracker.",
     "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "name": "Mordvolt Insulation Wrench",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A wrench with special protective coating. \nThis can also be used as a weapon when necessary. It is fully capable of crushing and pulverizing Aggelos limbs.",
-    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "name": "Roving MSGR Flashlight",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -334,12 +202,6 @@
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A pair of gloves that messengers love to use. \nMessengers would also pass their time by fighting in the arena.",
     "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_body_04": {
-    "name": "Frontiers Armor T3",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t2_suit_str01_body_01": {
     "name": "Armored MSGR Jacket",
@@ -353,17 +215,11 @@
     "decoDesc": "An intricate fidget toy. \nResults from a trustworthy poll revealed that about 80% of messengers would modify this toy into a miniature dart grenade.",
     "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "name": "Frontiers Fiber Gloves",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The underwater combat model of the Frontiersmate Armor series. Special fiber weaving technology gave these gloves oxygen cycling functions.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "name": "LYNX Cuirass",
-    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The medics' preferred equipment. \nPeople usually refer to combatants wearing the LYNX Cuirass as \"Walking Medkits\". These lifesavers often stuff every pocket and holder of their armor with emergency medical supplies.",
-    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
+  "item_equip_t2_suit_str01_edc_02": {
+    "name": "Armored MSGR Flashlight",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A sturdy hand-held electric lamp. \nThe sharp spike on the other end can also be used to break the bones of those who refuse to talk.",
+    "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
   },
   "item_equip_t2_suit_str01_hand_01": {
     "name": "Armored MSGR Gloves",
@@ -395,16 +251,16 @@
     "decoDesc": "A pair of very sturdy gloves. \nWe have yet to develop PPE suits with true Blight resistance. Most PPE and protective solutions in service could only cope with secondary disasters of Blight events.",
     "setBonus": "3-piece set effect: Wearer's Will <@ba.vup>+{will_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, Treatment Effect <@ba.vup>+{heal_up:0%}</>."
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "name": "Frontiers Analyzer",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A threat level analyzer from the Frontiersmate Support series. The analyzer uses visual recognition technology to give users a basic threat analysis of unknown creatures.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "name": "Mordvolt Insulation Vest",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A piece of equipment essential for special environment operations. \nSevere Blight events often cause anomalous electrical and circuitry failures. Workers assigned to repair work must watch out for them.",
+    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "name": "Mordvolt Insulation Wrench",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A wrench with special protective coating. \nThis can also be used as a weapon when necessary. It is fully capable of crushing and pulverizing Aggelos limbs.",
     "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t2_suit_wisd01_edc_02": {
@@ -419,6 +275,12 @@
     "decoDesc": "An extremely durable battery. \nIn Talos-II, emergency repair work in Blighted conditions is an extremely dangerous job. Hence, workers must undergo strict training based on special standards before they are allowed to use batteries in such environments.",
     "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "name": "Mordvolt Insulation Gloves",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A piece of equipment essential for special environment operations. \nAll engineers making electrical repairs at Blight rupture sites must wear specialized PPE to avoid injuries caused by anomalous bursts of electrical discharge.",
+    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
   "item_equip_t3_parts_tundra01_body_01": {
     "name": "Miner Armor T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -431,26 +293,20 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "name": "Bonekrusha Figurine T1",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A trinket with hardly any practical purpose. The designer, however, claims that it can induce excitement and euphoria.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "name": "Miner Turbine T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "name": "MI Security Overalls T2",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "name": "Miner Drive Wheel T1",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
+    "setBonus": ""
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "name": "Miner Compression Core T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
@@ -461,11 +317,11 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "name": "Æthertech Watch",
-    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Lightweight experimental protective equipment. \n\"Some users suspect our products to exert hemo-mutagenic effects. These claims are nothing but baseless accusations.\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "name": "Miner Gloves T2",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
+    "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "name": "Miner Fists T1",
@@ -473,41 +329,11 @@
     "decoDesc": "Protective equipment for mining operations. \nValley IV Safety and Protection Standards dictate that minimum requirements for work protection must comprise a 2-layered protection of (i) a soft, cushioning layer and (ii) hard, rigid protection.",
     "setBonus": ""
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "name": "Armored MSGR Jacket T1",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A jacket that any messenger would love to wear. \nScramblers are cheap and effective modes of transport on Talos-II. Messengers would often outfit these bikes with different mods and modules.",
-    "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "Mordvolt Insulation Wrench T2",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A wrench with special protective coating. \nThis can also be used as a weapon when necessary. It is fully capable of crushing and pulverizing Aggelos limbs.",
-    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "name": "Frontiers Comm T1",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A heavy communication device. To ensure signal quality in complex subterranean excavation sites, the Frontiers Comm is designed with just the signal sending feature.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "name": "Roving MSGR Jacket T1",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A jacket that any messenger would love to wear. \nMessengers working in and near the Valley IV region will often give their vehicles paintjobs with tree-like patterns. They hope the sight of these majestic plants that once protected this land can bring people strength.",
     "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "name": "Aburrey Heavy Armor T1",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A suit of novel protective armor modified for the work environment of the Aburrey Quarry. \nA combat model of the Aburrey Heavy Armor. When compared to the standard model, this suit features additional weapon connection ports highly compatible with flamethrowers, grenade launchers, and other ordnance.",
-    "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "name": "Pulser Labs Calibrator",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with novel designs. \nIt searches the endless ocean of data for the well-hidden \"golden outliers\", and then erases them from existence.",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "name": "Roving MSGR Flashlight T1",
@@ -521,22 +347,28 @@
     "decoDesc": "A sturdy hand-held electric lamp. \nThe sharp spike on the other end can also be used to break open old boxes or containers.",
     "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "name": "Roving MSGR Gyro T1",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "An intricate fidget toy. \nResults from a trustworthy poll revealed that about 20% of messengers have modified this stress-relief toy into a self-orienting tracker.",
+    "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "name": "Roving MSGR Fists T1",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A pair of gloves that messengers love to use. \nMessengers would also pass their time by fighting in the arena.",
     "setBonus": "3-piece set effect: Wearer's Agility <@ba.vup>+{agi_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "name": "Eternal Xiranite Armor",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Legacy of a \"mad\" Tianshi. \nMost would struggle to establish a connection between kitchen work and Xiranite. However, a particular Wuling resident actually derives design inspirations when dining at a restaurant.",
-    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t3_suit_atk01_body_01": {
     "name": "Aburrey Heavy Armor",
     "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A suit of novel protective armor modified for the work environment of the Aburrey Quarry. \nExcavation of Precursor relics can be a rather convoluted process filled with unexpected changes. Equipment used during excavation must offer sufficient protection, dexterity, as well as offensive capabilities.",
+    "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "name": "Aburrey Heavy Armor T1",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A suit of novel protective armor modified for the work environment of the Aburrey Quarry. \nA combat model of the Aburrey Heavy Armor. When compared to the standard model, this suit features additional weapon connection ports highly compatible with flamethrowers, grenade launchers, and other ordnance.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
   },
   "item_equip_t3_suit_atk01_body_03": {
@@ -551,29 +383,11 @@
     "decoDesc": "A suit of novel protective armor modified for the work environment of the Aburrey Quarry. \n\"Stop! STOP! Someone! Call the Cabal of Tranquility!\"",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "name": "Type 50 Yinglung Heavy Armor T1",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nVery few people know that the armor designer is actually a reservist who almost passed the YSTF screening test. Almost.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "name": "MI Security Armor T1",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nIt first saw service with human armies fighting at the Aggeloid Front.",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "name": "Aburrey UV Lamp",
     "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Novel protective equipment modified to suit the work environment of the Aburrey Quarry. \nThe engineers worked through the night to slap on mods when work at Aburrey Quarry suddenly involved excavation and digging. This armor now features eyesight and hearing protection.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "name": "Bonekrusha Gloves",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nNot every wildlander becomes a Landbreaker, but no one could ever escape the bindings of the wild.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "name": "Aburrey Auditory Chip",
@@ -587,29 +401,11 @@
     "decoDesc": "A piece of novel protective equipment modified for the work environment of the Aburrey Quarry. \nWhen exploring the unknown, proper sound insulation and hearing protection are extremely important. This chip can effectively help the wearer determine if they are suffering from auditory hallucinations.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "name": "Catastrophe Filter",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nThese filters are designed to work with the Catastrophe Mask, and can be easily plugged or unplugged.",
-    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "name": "Aburrey Flashlight",
     "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Novel protective equipment modified to suit the work environment of the Aburrey Quarry. \n\"It was embedded in the rock, and I thought I just dug out some rebars in the concrete. But ... but I think I heard it talking to me...\"",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "name": "Catastrophe Heavy Armor T1",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nIt is furnished with a micro-electrical stimulation system that effectively reduces the wearer's fatigue. The crew mates are exceptionally pleased with this \"invigorating\" mini design feature.",
-    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "name": "Catastrophe Gauze Cartridge T1",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nAlthough Oripathy can be effectively controlled and treated in Talos-II, users are still advised to wear basic respiratory protection.",
-    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "name": "Aburrey Sensor Chip",
@@ -617,29 +413,23 @@
     "decoDesc": "Novel protective equipment modified to suit the work environment of the Aburrey Quarry. \nAccording to the engineers, future iterations of this armor will focus on full automation. The aim is to evacuate the wearer to safety, even if the wearer has been incapacitated.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "name": "Catastrophe Gauze Cartridge",
-    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nAlthough Oripathy can be effectively controlled and treated in Talos-II, users are still advised to wear basic respiratory protection.",
-    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "name": "Aburrey Sensor Chip T1",
     "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Novel protective equipment modified to suit the work environment of the Aburrey Quarry. \nAccording to the engineers, future iterations of this armor will focus on full automation. The aim is to evacuate the wearer to safety, even if the wearer has been incapacitated.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "name": "Frontiers Fiber Gloves T1",
-    "description": "Designed by Northmarch Support Hub and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The underwater combat model of the Frontiersmate Armor series. Special fiber weaving technology gave these gloves oxygen cycling functions.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "name": "Aburrey Gauntlets",
     "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Novel protective equipment modified for the work environment of the Aburrey Quarry. \nHand protection linked to the protective armor suit. The fingertips have been furnished with nearly 100 micro-sensors of 6 different types to help wearers accurately determine what they actually touched — even after losing their sight.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG <@ba.vup>+{dmg_up:0%}</>. \nWhen the wearer casts a battle skill, combo skill, or ultimate, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. The buff from each of the three skill types is unique and does not stack with itself."
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "name": "Armored MSGR Jacket T1",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A jacket that any messenger would love to wear. \nScramblers are cheap and effective modes of transport on Talos-II. Messengers would often outfit these bikes with different mods and modules.",
+    "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
   },
   "item_equip_t3_suit_str01_edc_01": {
     "name": "Armored MSGR Gyro T1",
@@ -659,17 +449,41 @@
     "decoDesc": "A pair of gloves that any messenger would love to wear. \nMost messengers would install easy-to-use lifesaving ejection systems on their vehicles to contend with unexpected Blight ruptures.",
     "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "name": "Eternal Xiranite Power Core",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...He once walked the streets with a large bowl of Tofu Stewed in Bamboo Dew, and claimed that he just concocted the next generation of Xiranite-based refrigeration technology.",
-    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "name": "Armored MSGR Gloves T2",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "A pair of gloves that any messenger would love to wear. \nMost messengers would install easy-to-use lifesaving ejection systems on their vehicles to contend with unexpected Blight ruptures.",
     "setBonus": "3-piece set effect: Wearer's Strength <@ba.vup>+{str_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, the wearer gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG."
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "name": "Catastrophe Heavy Armor",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nIt is furnished with a micro-electrical stimulation system that effectively reduces the wearer's fatigue. The crew mates are exceptionally pleased with this \"invigorating\" mini design feature.",
+    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "name": "Catastrophe Heavy Armor T1",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nIt is furnished with a micro-electrical stimulation system that effectively reduces the wearer's fatigue. The crew mates are exceptionally pleased with this \"invigorating\" mini design feature.",
+    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "name": "Catastrophe Gauze Cartridge",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nAlthough Oripathy can be effectively controlled and treated in Talos-II, users are still advised to wear basic respiratory protection.",
+    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "name": "Catastrophe Gauze Cartridge T1",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nAlthough Oripathy can be effectively controlled and treated in Talos-II, users are still advised to wear basic respiratory protection.",
+    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "name": "Catastrophe Filter",
+    "description": "Designed by Triglava Armoury and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Part of an exoskeleton suit equipped by crystal growers at the Originium Science Park. \nThese filters are designed to work with the Catastrophe Mask, and can be easily plugged or unplugged.",
+    "setBonus": "3-piece set effect: Wearer's Ultimate Gain Efficiency <@ba.vup>+{ultimate_gain_up:0%}</>.\nThe wearer casts a battle skill, the action <#ba.return>returns</> <@ba.vup>{atb_recover:0}</> SP. This effect only triggers 1 time per battle."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Catastrophe Gloves",
@@ -695,12 +509,6 @@
     "decoDesc": "An elegantly designed wrench with smooth outlines. \n\"Pretty handy for bonking heads!\" — A worker who wished to remain anonymous",
     "setBonus": "3-piece set effect: Wearer's Will <@ba.vup>+{will_up}</>. \nWhen the wearer's HP is below {hp_ratio:0%}, Treatment Effect <@ba.vup>+{heal_up:0%}</>."
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "name": "Hanging River O2 Tube",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a dash of despair regarding the Blight Tide: The turbid currents of the unknown have washed all over the land.",
-    "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "name": "Mordvolt Resistant Gloves T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -719,11 +527,17 @@
     "decoDesc": "A piece of equipment essential for special environment operations. \nSevere Blight events often cause anomalous electrical and circuitry failures. Workers assigned to repair work must watch out for them.",
     "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "name": "Æthertech Gloves",
-    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Lightweight experimental protective equipment. \n\"Always wear extra padding when using our products. If you experience any auditory or visual hallucinations, please TAKE OFF our products IMMEDIATELY and consume some food.\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "name": "Mordvolt Insulation Wrench T2",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A wrench with special protective coating. \nThis can also be used as a weapon when necessary. It is fully capable of crushing and pulverizing Aggelos limbs.",
+    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "name": "Mordvolt Insulation Battery T1",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "An extremely durable battery. \nIn Talos-II, emergency repair work in Blighted conditions is an extremely dangerous job. Hence, workers must undergo strict training based on special standards before they are allowed to use batteries in such environments.",
+    "setBonus": "3-piece set effect: Wearer's Intellect <@ba.vup>+{wisd_up}</>. \nWhen the wearer's HP is above {hp_ratio:0%}, <@ba.key>Arts DMG</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "name": "Mordvolt Insulation Gloves T1",
@@ -736,12 +550,6 @@
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "This piece of gear is the byword for the difficult road ahead. \"The quest is not yet finished, and so the journey is not yet complete.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "name": "Pulser Labs Invasion Core",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with novel designs. \nAssistance from the Cabal of Tranquility granted the Pulser Labs Invasion Core capabilities of breaching most terminal firewalls.",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "name": "Redeemer Armor",
@@ -767,23 +575,11 @@
     "decoDesc": "This piece of gear is the byword for the difficult road ahead. \"The quest is not yet finished, and so the journey is not yet complete.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "name": "Eternal Xiranite Gloves T1",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...Days passed and the mad Tianshi began to reject any food that \"fail to deliver inspirations\". After being reduced to skin and bones, he soon disappeared into the wildlands in pursuit of \"palatable Xiranite\".",
-    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "name": "Redeemer Seal T1",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "This piece of gear is the byword for the difficult road ahead. \"The quest is not yet finished, and so the journey is not yet complete.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "name": "Bonekrusha Figurine",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A trinket with hardly any practical purpose. The designer, however, claims that it can induce excitement and euphoria.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "name": "Redeemer Gloves",
@@ -791,23 +587,11 @@
     "decoDesc": "This piece of gear is the byword for the difficult road ahead. \"The quest is not yet finished, and so the journey is not yet complete.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "name": "Swordmancer Heavy Armor",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nThe Tianshi took \"gorge-sized capacity\" as their design concept and literally achieved \"absorption and neutralization\" of energy-based attacks.",
-    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "name": "Redeemer Hands",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "This piece of gear is the byword for the difficult road ahead. \"The quest is not yet finished, and so the journey is not yet complete.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "name": "Swordmancer NAV Beacon",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nMost Blighted environments are extremely dangerous. A single misstep might lead to an erroneous path with no return — just like what happened to Wuling all those years ago.",
-    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
   },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "Frontiers Armor",
@@ -815,14 +599,20 @@
     "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "name": "Type 50 Yinglung Radar",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nWhen the optimizations were finally complete, he added a few words next to the blueprints: \"Heavens and earth may break asunder, but I shall prevail and emerge the victor.\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
+  "item_equip_t4_suit_atb01_body_02": {
+    "name": "Frontiers Armor T1",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_atb01_body_03": {
     "name": "Frontiers Armor T2",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "name": "Frontiers Armor T3",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "The heavy frame model of the Frontiersmate Armor series. This equipment is also furnished with an artificial exospine to help support shoulder-mounted heavy cannons.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
@@ -839,9 +629,33 @@
     "decoDesc": "A heavy communication device. To ensure signal quality in complex subterranean excavation sites, the Frontiers Comm is designed with just the signal sending feature.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "name": "Frontiers Comm T1",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A heavy communication device. To ensure signal quality in complex subterranean excavation sites, the Frontiers Comm is designed with just the signal sending feature.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "name": "Frontiers Analyzer",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A threat level analyzer from the Frontiersmate Support series. The analyzer uses visual recognition technology to give users a basic threat analysis of unknown creatures.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "name": "Frontiers Extra O2 Tube",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The standard Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology. The upgraded version further extends this duration to 6 hours.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "name": "Frontiers O2 Tube",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "name": "Frontiers Extra O2 Tube T1",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "The standard Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology. The upgraded version further extends this duration to 6 hours.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
@@ -851,14 +665,26 @@
     "decoDesc": "The goal of Frontiersmate equipment is to give a squad of 3 to 5 combatants the ability to directly engage and terminate smaller Aggeloid hosts.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "name": "Frontiers O2 Tube",
+  "item_equip_t4_suit_atb01_hand_02": {
+    "name": "Frontiers Fiber Gloves",
     "description": "Designed by Northmarch Support Hub and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "The Frontiersmate oxygen tube guarantees at least 4 hours of heavy duty underwater operations thanks to its oxygen cycler technology.",
+    "decoDesc": "The underwater combat model of the Frontiersmate Armor series. Special fiber weaving technology gave these gloves oxygen cycling functions.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "name": "Frontiers Fiber Gloves T1",
+    "description": "Designed by Northmarch Support Hub and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The underwater combat model of the Frontiersmate Armor series. Special fiber weaving technology gave these gloves oxygen cycling functions.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nAfter the wearer's skill recovers SP, the team gains DMG <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Type 50 Yinglung Heavy Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nVery few people know that the armor designer is actually a reservist who almost passed the YSTF screening test. Almost.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "name": "Type 50 Yinglung Heavy Armor T1",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nVery few people know that the armor designer is actually a reservist who almost passed the YSTF screening test. Almost.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
@@ -875,11 +701,11 @@
     "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nVery few people know that the armor designer is actually a reservist who almost passed the YSTF screening test. Almost.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
   },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "name": "Swordmancer Dagger",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nAn extremely sharp tactical blade, and one of the earliest iterations of HS.Swords weaponry production technique. There is no doubt that this equipment has laid down solid foundations for the subsequent Yinglung-series.",
-    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  "item_equip_t4_suit_atk02_edc_01": {
+    "name": "Type 50 Yinglung Radar",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nWhen the optimizations were finally complete, he added a few words next to the blueprints: \"Heavens and earth may break asunder, but I shall prevail and emerge the victor.\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Type 50 Yinglung Radar T1",
@@ -887,23 +713,17 @@
     "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nWhen the optimizations were finally complete, he added a few words next to the blueprints: \"Heavens and earth may break asunder, but I shall prevail and emerge the victor.\"",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
   },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "name": "MI Security Hands PPE T1",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nFeatures miniaturized Arts Units for riot control and excellent energy conductance.",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  "item_equip_t4_suit_atk02_edc_03": {
+    "name": "Type 50 Yinglung Radar T2",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \nWhen the optimizations were finally complete, he added a few words next to the blueprints: \"Heavens and earth may break asunder, but I shall prevail and emerge the victor.\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Type 50 Yinglung Knife",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \n\"When I saw familiar faces whom I once trained with carrying out crucial roles and protecting key locations, I felt ... like a defeated loser fleeing a terrible battlefield. I felt like a deserter.\"",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "name": "Qingbo Cask",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Very economic equipment, created according to ancient scrolls and books found in Qingbo Stockade.\nA small cask with an easy-to-clean filter core. The page about water purifiers was torn out of the ancient books for reasons unknown. This is why the missing cask component is replaced with a modern filter core.",
-    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nWhen the wearer casts a combo skill, the wearer gains Skill DMG Dealt <@ba.vup>+{spell_up:0%}</> (for every skill) for {duration}s. This effect can reach {max_stack} stacks. Duration of each stack is counted separately."
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "name": "Type 50 Yinglung Knife T1",
@@ -922,18 +742,6 @@
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "A civilian version of Yinglung Special Task Force equipment. The lack of a crucial power component actually improved its compatibility with general users. \n\"I don't envy the power bestowed as I'm far from deserving of it. In fact, I should be the bones that offer them support.\"",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen any operator in the team casts a battle skill, the wearer gains 1 stack of <@ba.key>Yinglung's Edge</> that gives DMG <@ba.vup>+{dmg_up:0%}</> to the wearer's next combo skill. <@ba.key>Yinglung's Edge</> can stack {max_stack:0} time(s)."
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "name": "Bonekrusha Figurine T2",
-    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "A handicraft with little useful purposes. The designer, however, claims that it can really stimulate the wielder's excitement.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "name": "MI Security Overalls T1",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
   "item_equip_t4_suit_attri01_body_01": {
     "name": "Bonekrusha Heavy Armor",
@@ -965,8 +773,20 @@
     "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nThis heavy suit of armor not only provides decent protection, wildland roamers also regard it as a symbol for a brutal and merciless way of life.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "name": "Bonekrusha Mask T2",
+  "item_equip_t4_suit_attri01_edc_02": {
+    "name": "Bonekrusha Figurine T2",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A handicraft with little useful purposes. The designer, however, claims that it can really stimulate the wielder's excitement.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "name": "Bonekrusha Figurine",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A trinket with hardly any practical purpose. The designer, however, claims that it can induce excitement and euphoria.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "name": "Bonekrusha Mask",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nThe mask is a symbol of fanaticism. Yet faith alone will not keep anyone alive in a Blighted environment. It does not matter if it is dangling from a belt or being worn on the face. This mask is just a piece of flimsy wood.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
@@ -977,21 +797,33 @@
     "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nThe mask is a symbol of fanaticism. Yet faith alone will not keep anyone alive in a Blighted environment. It does not matter if it is dangling from a belt or being worn on the face. This mask is just a piece of flimsy wood.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "name": "Bonekrusha Figurine T1",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A trinket with hardly any practical purpose. The designer, however, claims that it can induce excitement and euphoria.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "name": "Bonekrusha Mask T2",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nThe mask is a symbol of fanaticism. Yet faith alone will not keep anyone alive in a Blighted environment. It does not matter if it is dangling from a belt or being worn on the face. This mask is just a piece of flimsy wood.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
+  },
   "item_equip_t4_suit_attri01_hand_01": {
     "name": "Bonekrusha Wristband",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nNot every wildlander becomes a Landbreaker, but no one could ever escape the bindings of the wild.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "name": "Swordmancer Heavy Armor T1",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nThe Tianshi adopted the \"Empty Mind and Open Valley\" design approach to furnish this suit of Swordmancer Heavy Armor with actual \"energy attack denial\" capabilities.",
-    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "name": "Bonekrusha Wristband T1",
     "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nNot every wildlander becomes a Landbreaker, but no one could ever escape the bindings of the wild.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "name": "Bonekrusha Gloves",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment with designs inspired by the Bonekrusher Clan. \nNot every wildlander becomes a Landbreaker, but no one could ever escape the bindings of the wild.",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nWhen the wearer casts a combo skill, the wearer gains 1 stack of <@ba.key>Bonekrushing Smash</> that grants the wearer's next battle skill DMG Dealt <@ba.vup>+{dmg_up:0%}</>. <@ba.key>Bonekrushing Smash</> can stack {max_stack:0} time(s)."
   },
@@ -1001,16 +833,22 @@
     "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a piece of memory about the Blight Tide: The unfeeling surges have always rejected the notion of life.",
     "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "name": "Æthertech Light Gloves",
-    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Lightweight experimental protective equipment. \n\"Always wear extra padding when using our products. If you experience any auditory or visual hallucinations, please TAKE OFF our products IMMEDIATELY and consume some food.\"",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  "item_equip_t4_suit_burst01_edc_01": {
+    "name": "Hanging River O2 Tube",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a dash of despair regarding the Blight Tide: The turbid currents of the unknown have washed all over the land.",
+    "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "name": "Turbid Cutting Torch",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a touch of fear regarding the Blight Tide: When will the overhanging calamity make itself seen?",
+    "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "name": "Tide Surge Gauntlets",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Equipment designed by the Bureau of Swordmancers for those working near the Blight Tide. \nThis is a question about the Blight Tide: Do the collapse of ancient dams start from within?",
     "setBonus": "3-piece set effect: Wearer's Skill DMG Dealt <@ba.vup>+{skill_dmg_up:0%}</>.\nAfter the wearer applies <@ba.key>{stack_cond}</> or more stacks of <#ba.spellinflict>Arts Infliction</> on the enemy, the wearer gains <@ba.key>Arts DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1037,11 +875,17 @@
     "decoDesc": "Very economic equipment, created according to ancient scrolls and books found in Qingbo Stockade.\nA short cutting blade made by sharpening bamboo. Looks really mid, but this cutter can perfectly desprout a grovenymph without hurting the little critter.",
     "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nWhen the wearer casts a combo skill, the wearer gains Skill DMG Dealt <@ba.vup>+{spell_up:0%}</> (for every skill) for {duration}s. This effect can reach {max_stack} stacks. Duration of each stack is counted separately."
   },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "name": "MI Security Gloves T1",
-    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \nThese gloves can also be used as a weapon. Product validation includes an assessment for \"effectiveness in smashing Aggeloid appendages\".",
-    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "name": "Qingbo Cask",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC Factory. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Very economic equipment, created according to ancient scrolls and books found in Qingbo Stockade.\nA small cask with an easy-to-clean filter core. The page about water purifiers was torn out of the ancient books for reasons unknown. This is why the missing cask component is replaced with a modern filter core.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nWhen the wearer casts a combo skill, the wearer gains Skill DMG Dealt <@ba.vup>+{spell_up:0%}</> (for every skill) for {duration}s. This effect can reach {max_stack} stacks. Duration of each stack is counted separately."
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "name": "Qingbo Positioning Kit T1",
+    "description": "Designed by Endfield after referencing wildland handcrafting techniques, and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Very economic equipment, created according to ancient scrolls and books found in Qingbo Stockade.\nA simple device that integrates the functions of aquifer dowsers and magnetic compasses. According to records, this gadget achieved great deeds during the early years of Qingbo Stockade.",
+    "setBonus": "3-piece set effect: Wearer's Combo Skill Cooldown Reduction <@ba.vup>+{1-comboskill_cooldown:0%}</>.\nWhen the wearer casts a combo skill, the wearer gains Skill DMG Dealt <@ba.vup>+{spell_up:0%}</> (for every skill) for {duration}s. This effect can reach {max_stack} stacks. Duration of each stack is counted separately."
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "name": "Qingbo Gauntlets",
@@ -1061,10 +905,28 @@
     "decoDesc": "Equipment from the MI Security series. \nIt first saw service with human armies fighting at the Aggeloid Front.",
     "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "name": "MI Security Toolkit",
+  "item_equip_t4_suit_criti01_body_02": {
+    "name": "MI Security Overalls",
     "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment from the MI Security series. \n\"Thanks, officer! I swear this'll be the last time I'm calling the police this month for forgetting my keys! PROMISE!\"",
+    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "name": "MI Security Overalls T1",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "name": "MI Security Overalls T2",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \nWhen the war ended, Mieszko Industries adjusted their production lines and added effective weight-reduction measures. They thus acquired equipment-supply contracts for urban security forces.",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "name": "MI Security Armor T1",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \nIt first saw service with human armies fighting at the Aggeloid Front.",
     "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
   "item_equip_t4_suit_criti01_edc_01": {
@@ -1077,6 +939,12 @@
     "name": "MI Security Scope",
     "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment from the MI Security series. \nPeople often smuggle Mieszko Industries products to the wildlands. Some Landbreaker assassins treat the MI Security Scope as a top-tier accessory.",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "name": "MI Security Toolkit",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \n\"Thanks, officer! I swear this'll be the last time I'm calling the police this month for forgetting my keys! PROMISE!\"",
     "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
   "item_equip_t4_suit_criti01_edc_04": {
@@ -1103,23 +971,77 @@
     "decoDesc": "Equipment from the MI Security series. \nThese gloves can also be used as a weapon. Product validation includes an assessment for \"effectiveness in smashing Aggeloid appendages\".",
     "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "name": "Xiranflow Baton",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "An experimental weapon proposed as standard gear for the Wuling Watchguards.\nA lightweight baton... Do not doubt its stopping power. It can break a beast's bones when necessary.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. The number of buff stacks maxes out at {max_stack} stacks. Duration of each stack is counted separately."
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "name": "MI Security Hands PPE",
     "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment from the MI Security series. \nFeatures miniaturized Arts Units for riot control and excellent energy conductance.",
     "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "name": "MI Security Hands PPE T1",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \nFeatures miniaturized Arts Units for riot control and excellent energy conductance.",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "name": "MI Security Gloves T1",
+    "description": "Designed by Mieszko Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment from the MI Security series. \nThese gloves can also be used as a weapon. Product validation includes an assessment for \"effectiveness in smashing Aggeloid appendages\".",
+    "setBonus": "3-piece set effect: Wearer's Critical Rate <@ba.vup>+{crit_up:0%}</>. \nAfter the wearer scores a critical hit, the wearer gains ATK <@ba.vup>+{atk_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. At max stacks, grant an additional Critical Rate <@ba.vup>+{crit_up2:0%}</>. This effect cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "name": "Grizzled Edge Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers by studying lost tech design documents. \nOne can see signs of the Aggeloi War in its design. Heavy, coarse, but also effective.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "name": "Grizzled Edge Armor T1",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers by studying lost tech design documents. \nOne can see signs of the Aggeloi War in its design. Heavy, coarse, but also effective.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "name": "Grizzled Edge Push Knife",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers by studying lost tech design documents. \nA sharp push knife can be attached to the pauldrons or gauntlets, depending on the wearer's preferred style of combat.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "name": "Grizzled Edge Push Knife T1",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers by studying lost tech design documents. \nA sharp push knife can be attached to the pauldrons or gauntlets, depending on the wearer's preferred style of combat.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "name": "Grizzled Edge Gauntlets",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers through the study of lost tech design documents. \nThe supporting functions provided by this pair of gauntlets are slightly less than ideal. There are resources from the past that we could not replicate. This means our Tianshi must think of alternatives.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "name": "Grizzled Edge Gauntlets T1",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "A multi-functional piece of defensive equipment developed by Hongshan Swordmancers through the study of lost tech design documents. \nThe supporting functions provided by this pair of gauntlets are slightly less than ideal. There are resources from the past that we could not replicate. This means our Tianshi must think of alternatives.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhen the wearer applies <#ba.crush>Crush</> or <#ba.fracture>Breach</>, the wearer gains <@ba.pd>Physical DMG Dealt</> <@ba.vup>+[{phy_dmg_up_perstack:0%} × Max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy]</> for {duration}s. If the target already has <#ba.physicalvul>Physical Susceptibility</>, is <@ba.poise>Staggered</>, or has attached <#ba.originium>Originium Crystals</>, increase the aforementioned buff to <@ba.vup>{special_multi:0.0}</> times. This buff cannot stack."
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "name": "Xiranflow Light Armor",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "Experimental equipment proposed as standard gear for the Wuling Watchguards.\nWith Xiranite mass production guaranteed, many shelved Xiranite equipment R&D projects were moved back on schedule.",
-    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. The number of buff stacks maxes out at {max_stack} stacks. Duration of each stack is counted separately."
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. Max number of buff stacks: {max_stack}. Duration of each stack is counted separately."
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "name": "Xiranflow Baton",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "An experimental weapon proposed as standard gear for the Wuling Watchguards.\nA lightweight baton... Do not doubt its stopping power. It can break a beast's bones when necessary.",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. Max number of buff stacks: {max_stack}. Duration of each stack is counted separately."
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "name": "Xiranflow Gloves",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Experimental equipment proposed as standard gear for the Wuling Watchguards.\n\"Are you saying that these gloves will be... Wha...? I can touch Xiranite machines to charge these bruisers? That wasn't blight nonsense, right...?\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>.\nWhenever the wearer <#ba.consume>consumes</> <#ba.conduct>Electrification</> or <#ba.corrupt>Corrosion</>, the wearer gains a number of buff stacks equal to the <#ba.statuslevel>Status Level</> of the Arts Reaction consumed, with each buff stack giving <@ba.pulse>Electric DMG Dealt</> and <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> for {duration}s. Max number of buff stacks: {max_stack}. Duration of each stack is counted separately."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Hot Work Exoskeleton",
@@ -1145,29 +1067,53 @@
     "decoDesc": "Equipment that features excellent fire resistance rating. \nExtreme heat is not terrifying. However, be wary if a place suddenly experiences an inexplicable change in temperature.",
     "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "name": "Pulser Labs Disruptor Suit",
-    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with novel designs. \nMost could not understand why Endfield Industries developed a defensive suit for fighting digital warfare.",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "name": "Hot Work Power Cartridge",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment that features excellent fire resistance rating. \n\"Someone heard a song at that very volcano.\"",
     "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "name": "Pulser Labs Gloves",
+  "item_equip_t4_suit_fire_natr01_hand_01": {
+    "name": "Hot Work Gloves",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
-    "decoDesc": "Equipment with novel designs. \nMost could not understand why Endfield Industries added better thermal insulation for their Pulser Labs series PPE.",
-    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+    "decoDesc": "Equipment that features excellent fire resistance rating. \nUWST and Endfield Industries jointly developed the Hot Work PPE to explore high temperature environments.",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "name": "Hot Work Gauntlets",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment that features excellent fire resistance rating. \n\"Shh, quiet. You might wake it up.\"",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "name": "Hot Work Gauntlets T1",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment that features excellent fire resistance rating. \n\"Shh, quiet. You might wake it up.\"",
     "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.burning>Combustion</>, the wearer gains <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.corrupt>Corrosion</>, the wearer gains <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "name": "LYNX Heavy Armor",
+    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A heavier version of the medics' preferred equipment. \nPeople usually refer to combatants wearing the LYNX Cuirass as \"Walking Medkits\". These lifesavers often stuff every pocket and holder of their armor with emergency medical supplies.",
+    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "name": "LYNX Cuirass",
+    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The medics' preferred equipment. \nPeople usually refer to combatants wearing the LYNX Cuirass as \"Walking Medkits\". These lifesavers often stuff every pocket and holder of their armor with emergency medical supplies.",
+    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "name": "LYNX Connector",
+    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The medics' preferred equipment. \nA connector component developed by Rhodes Island for data calibration. It can be connected to different health support systems to complete various forms of emergency medical care.",
+    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "name": "LYNX Connector T2",
+    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "The medics' preferred equipment. \nA connector component developed by Rhodes Island for data calibration. It can be connected to different health support systems to complete various forms of emergency medical care.",
+    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "name": "LYNX Slab",
@@ -1187,6 +1133,12 @@
     "decoDesc": "The medics' preferred equipment. \nA connector component developed by Rhodes Island for data calibration. It can be connected to different health support systems to complete various forms of emergency medical care.",
     "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "name": "LYNX Gloves",
+    "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "A heavier version of the medics' preferred equipment. \nRhodes Island still has a tradition of furnishing their PPE with Oripathy monitoring modules.",
+    "setBonus": "3-piece set effect: Wearer's HP Treatment Efficiency <@ba.vup>+{heal_up:0%}</>. \nAfter the wearer gives HP treatment to an allied target, that target also gains <@ba.vup>{1-dmg_taken_down:0%}</> DMG Reduction against all types of DMG for {duration}s. If the said treatment exceeds the target's Max HP, the target gains <@ba.vup>{1-dmg_taken_down2:0%}</> DMG Reduction against all types of DMG. The aforementioned effects cannot stack."
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "LYNX Gauntlets",
     "description": "Designed by Rhodes Island and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
@@ -1199,10 +1151,46 @@
     "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nThe first page of this weapon's blueprints is embellished with these words: \"Swordmancy for the lone warrior.\"",
     "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "name": "Swordmancer Heavy Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nThe Tianshi took \"gorge-sized capacity\" as their design concept and literally achieved \"absorption and neutralization\" of energy-based attacks.",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "name": "Swordmancer Heavy Armor T1",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nThe Tianshi adopted the \"Empty Mind and Open Valley\" design approach to furnish this suit of Swordmancer Heavy Armor with actual \"energy attack denial\" capabilities.",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "name": "Swordmancer Fiber Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nThe first page of this weapon's blueprints is embellished with these words: \"The brave march north.\"",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "name": "Swordmancer NAV Beacon",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nMost Blighted environments are extremely dangerous. A single misstep might lead to an erroneous path with no return — just like what happened to Wuling all those years ago.",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Swordmancer Micro Filter",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \n\"Even a single whiff of smoke in a Blighted environment can kill you, so wear your respirators properly!\"",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "name": "Swordmancer Flint",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \nThe flint essentially overclocks and depletes the energy reserves of the Swordmancer armor system. It only shines when the wearer brushes against death itself.",
+    "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "name": "Swordmancer Dagger",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC Factory. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days.\nAn extremely sharp tactical blade, and one of the earliest iterations of HS.Swords weaponry production technique. There is no doubt that this equipment has laid down solid foundations for the subsequent Yinglung-series.",
     "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
   },
   "item_equip_t4_suit_phy01_hand_01": {
@@ -1210,12 +1198,6 @@
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "One of the products marketed by the Bureau of Swordmancers in its early days. \n\"Year's end. Brought my blade south. The mountain grew nine heads and roared incessantly. An auspicious day.\"",
     "setBonus": "3-piece set effect: Wearer's Stagger Efficiency Bonus <@ba.vup>+{poise_up:0%}</>.\nAfter the wearer applies a <#ba.physicalstatus>Physical Status</>, the wearer also performs 1 hit that deals {atk_scale:0%} ATK of Physical DMG and [<@ba.poise>{poise}</> Stagger]. Effect trigger cooldown: {duration}s."
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "name": "Eternal Xiranite Power Core T1",
-    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
-    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...He once walked the streets with a large bowl of Tofu Stewed in Bamboo Dew, and claimed that he just concocted the next generation of Xiranite-based refrigeration technology.",
-    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Swordmancer TAC Gauntlets",
@@ -1253,11 +1235,71 @@
     "decoDesc": "Lightweight experimental protective equipment. \n\"Keep the stabilizer on at all times, thank you. This will prevent you from soaring to the skies like an untethered balloon during parameter fluctuations.\"",
     "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "name": "Æthertech Watch",
+    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Lightweight experimental protective equipment. \n\"Some users suspect our products to exert hemo-mutagenic effects. These claims are nothing but baseless accusations.\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "name": "Æthertech Gloves",
+    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Lightweight experimental protective equipment. \n\"Always wear extra padding when using our products. If you experience any auditory or visual hallucinations, please TAKE OFF our products IMMEDIATELY and consume some food.\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "name": "Æthertech Light Gloves",
+    "description": "Designed by Portable Æthertech Labs and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Lightweight experimental protective equipment. \n\"Always wear extra padding when using our products. If you experience any auditory or visual hallucinations, please TAKE OFF our products IMMEDIATELY and consume some food.\"",
+    "setBonus": "3-piece set effect: Wearer's ATK <@ba.vup>+{atk_up:0%}</>. \nAfter the wearer applies <#ba.noguard>Vulnerability</>, the wearer gains <@ba.pd>Physical DMG</> <@ba.vup>+{phy_dmg_up:0%}</> for {duration}s. This effect can reach {max_stack:0} stacks. If the target already has {stack_cond:0} stack(s) of <#ba.noguard>Vulnerability</>, the wearer gains an additional Physical DMG <@ba.vup>+{phy_dmg_up2:0%}</> for {duration2}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "name": "Pulser Labs Disruptor Suit",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with novel designs. \nMost could not understand why Endfield Industries developed a defensive suit for fighting digital warfare.",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "name": "Pulser Labs Probe",
     "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
     "decoDesc": "Equipment with novel designs. \nIt can find traces of the lost in the dark frigid mists.",
     "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "name": "Pulser Labs Calibrator",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with novel designs. \nIt searches the endless ocean of data for the well-hidden \"golden outliers\", and then erases them from existence.",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "name": "Pulser Labs Invasion Core",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with novel designs. \nAssistance from the Cabal of Tranquility granted the Pulser Labs Invasion Core capabilities of breaching most terminal firewalls.",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "name": "Pulser Labs Gloves",
+    "description": "Independently designed by Endfield Industries and assembled by the AIC. This equipment improves the wearer's combat capabilities.",
+    "decoDesc": "Equipment with novel designs. \nMost could not understand why Endfield Industries added better thermal insulation for their Pulser Labs series PPE.",
+    "setBonus": "3-piece set effect: Wearer's Arts Intensity <@ba.vup>+{phy_spell_up:0}</>. \nAfter the wearer applies <#ba.conduct>Electrification</>, the wearer gains <@ba.pulse>Electric DMG</><@ba.vup> +{pulse_dmg_up:0%}</> for {duration}s. After the wearer applies <#ba.frozen>Solidification</>, the wearer gains <@ba.cryst>Cryo DMG</><@ba.vup> +{cryst_dmg_up:0%}</> for {duration2}s. The aforementioned effects cannot stack."
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "name": "Eternal Xiranite Armor",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Legacy of a \"mad\" Tianshi. \nMost would struggle to establish a connection between kitchen work and Xiranite. However, a particular Wuling resident actually derives design inspirations when dining at a restaurant.",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "name": "Eternal Xiranite Power Core",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...He once walked the streets with a large bowl of Tofu Stewed in Bamboo Dew, and claimed that he just concocted the next generation of Xiranite-based refrigeration technology.",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "name": "Eternal Xiranite Power Core T1",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...He once walked the streets with a large bowl of Tofu Stewed in Bamboo Dew, and claimed that he just concocted the next generation of Xiranite-based refrigeration technology.",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Eternal Xiranite Auxiliary Arm",
@@ -1267,6 +1309,12 @@
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Eternal Xiranite Gloves",
+    "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
+    "decoDesc": "Legacy of a \"mad\" Tianshi. \n...Days passed and the mad Tianshi began to reject any food that \"fail to deliver inspirations\". After being reduced to skin and bones, he soon disappeared into the wildlands in pursuit of \"palatable Xiranite\".",
+    "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "name": "Eternal Xiranite Gloves T1",
     "description": "Designed by Hongshan Swordmancers and assembled by the AIC. This equipment can improve the wearer's combat capabilities.",
     "decoDesc": "Legacy of a \"mad\" Tianshi. \n...Days passed and the mad Tianshi began to reject any food that \"fail to deliver inspirations\". After being reduced to skin and bones, he soon disappeared into the wildlands in pursuit of \"palatable Xiranite\".",
     "setBonus": "3-piece set effect: Wearer's HP <@ba.vup>+{hp_up}</>.\nAfter the wearer applies <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, or <#ba.weak>Weakened</>, other teammates gain DMG Dealt <@ba.vup>+{dmg_up:0%}</> for {duration}s. This effect cannot stack."

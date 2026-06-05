@@ -48,7 +48,7 @@
         "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante la máxima: Multiplicador de DAÑ adicional por Nivel de estado de Electrificación consumida"
       },
       "name": "Mantra de Ruptura",
-      "description": "<#ba.consume>Consume</> la <#ba.conduct>Electrificación</> del objetivo para aumentar el Multiplicador de DAÑ de esta habilidad de batalla y crear [<#ba.statuslevel>Nivel de estado</> de la <#ba.conduct>Electrificación</> <#ba.consume>consumida</> <@ba.key>+1</>] <@ba.key>Hojas de Ruptura</>. Si el campo de batalla tiene menos de {free_sword_limit:0} <@ba.key>Hojas de Ruptura</>, Mantra de Ruptura puede crear 1 <@ba.key>Hoja de Ruptura</>, incluso si no <#ba.consume>consume</> ninguna carga de <#ba.conduct>Electrificación</> del objetivo.\nZhuang Fangyi canaliza todas las <@ba.key>Hojas de Ruptura</> cercanas para desatar Golpes de trueno sucesivos contra el objetivo, lo que inflige <@ba.pulse>DAÑ Eléctrico</> y otorga Energía máxima adicional, por lo que el Golpe de trueno final inflige un DAÑ {final_rate:0} veces mayor.\n<@ba.info>Un lanzamiento único de habilidad de batalla solo puede crear una cantidad máxima de {max_conduct_sword:0} Hojas de Ruptura.</>"
+      "description": "<#ba.consume>Consume</> la <#ba.conduct>Electrificación</> del objetivo para aumentar el Multiplicador de DAÑ de esta habilidad de batalla y crear [<#ba.statuslevel>Nivel de estado</> de la <#ba.conduct>Electrificación</> <#ba.consume>consumida</> <@ba.key>+1</>] <@ba.key>Hojas de Ruptura</>. Si el campo de batalla tiene menos de {free_sword_limit:0} <@ba.key>Hojas de Ruptura</>, Mantra de Ruptura puede crear 1 <@ba.key>Hoja de Ruptura</>, incluso si no <#ba.consume>consume</> ninguna carga de <#ba.conduct>Electrificación</> del objetivo.\nZhuang Fangyi canaliza todas las <@ba.key>Hojas de Ruptura</> cercanas para desatar Golpes de trueno sucesivos sobre el objetivo, infligiendo <@ba.pulse>DAÑ Eléctrico</> y otorgando Energía máxima adicional. El Golpe de trueno final inflige un daño {final_rate:0} veces mayor.\n<@ba.info>Un solo uso de la habilidad de batalla solo puede crear un Máx. de {max_conduct_sword:0} Hojas de Ruptura</>."
     },
     "comboSkill": {
       "comboSkill": {
@@ -59,7 +59,7 @@
         "duringUltimateDmgMultiplier": "Durante la máxima: Multiplicador de DAÑ"
       },
       "name": "Aliento de transformación",
-      "description": "ACTIVADOR DE COMBO: cuando el <#ba.lastcombo>Golpe final</> o el remate del operador controlado impacta a un enemigo con <#ba.pulseinflict>Imposición eléctrica</>.\nZhuang Fangyi crea una Matriz de Xiranbomba que ataca al enemigo e inflige <@ba.pulse>DAÑ Eléctrico</>. Si la Matriz impacta a un enemigo que tiene acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, <#ba.consume>consumirá</> esas acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, aplicará <#ba.conduct>Electrificación</> a la fuerza y otorgará Energía máxima en función de la cantidad de acumulaciones <#ba.consume>consumidas</>.\nSi <#ba.conduct>Electrificación</> se aplica a la fuerza a un enemigo que ya tiene <#ba.conduct>Electrificación</>, aplicará <#ba.statuslevel>Nivel de estado</> +1 a la <#ba.conduct>Electrificación</> del enemigo."
+      "description": "ACTIVADOR DE COMBO: cuando el <#ba.lastcombo>Golpe final</> o el remate del operador controlado impacta a un enemigo con <#ba.pulseinflict>Imposición eléctrica</>.\nZhuang Fangyi crea una Matriz de Xiranbomba que ataca al enemigo e inflige <@ba.pulse>DAÑ Eléctrico</>. Si la Matriz impacta a un enemigo que tiene acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, <#ba.consume>consumirá</> esas acumulaciones de <#ba.pulseinflict>Imposición eléctrica</>, aplicará <#ba.conduct>Electrificación</> a la fuerza y otorgará Energía máxima en función de la cantidad de acumulaciones <#ba.consume>consumidas</>.\nSi <#ba.conduct>Electrificación</> se aplica a la fuerza a un enemigo que ya tiene <#ba.conduct>Electrificación</>, aplicará <#ba.statuslevel>Nivel de estado</> +1 a la <#ba.conduct>Electrificación</> del enemigo."
     },
     "ultimate": {
       "ultimate": {
@@ -69,7 +69,7 @@
         "duringUltimateBatkSeq3Multiplier": "Durante la máxima: Multiplicador ATQB SEC 3"
       },
       "name": "Tempestad fulminante",
-      "description": "Se transforma en <@ba.key>Empíreo de la verdad</>, lo que otorga las siguientes mejoras:\nLos ataques básicos de Zhuang Fangyi se potencian y sus acciones son más difíciles de interrumpir;\nLa habilidad de batalla <@ba.key>Mantra de Ruptura</> obtiene un mayor multiplicador de DAÑ y un alcance de efecto aumentado, y el Golpe de trueno final también aplica <#ba.pulseinflict>Imposición eléctrica</> al objetivo impactado.\nLa habilidad de combo <@ba.key>Aliento de transformación</> obtiene un mayor multiplicador de DAÑ, su enfriamiento se vuelve {combo_cd_rate:0} veces más rápido y sus efectos se aplican a enemigos en un área pequeña.\nEl primer uso de la habilidad de batalla <@ba.key>Mantra de Ruptura</> en un objetivo disponible no consume PH ni <#ba.conduct>Electrificación</>, y garantiza la creación de 3 <@ba.key>Hojas de Ruptura</> incluso si el objetivo no tiene <#ba.conduct>Electrificación</>."
+      "description": "Se transforma en <@ba.key>Empíreo de la verdad</>, lo que otorga las siguientes mejoras:\nLos ataques básicos de Zhuang Fangyi se potencian y sus acciones son más difíciles de interrumpir;\nLa habilidad de batalla <@ba.key>Mantra de Ruptura</> obtiene un mayor multiplicador de DAÑ y un alcance de efecto aumentado, y el Golpe de trueno final también aplica <#ba.pulseinflict>Imposición eléctrica</> al objetivo impactado.\nLa habilidad de combo <@ba.key>Aliento de transformación</> obtiene un mayor multiplicador de DAÑ, su tiempo de reutilización se vuelve {combo_cd_rate:0} veces más rápido y sus efectos se aplican a enemigos en un área pequeña.\nEl primer uso de la habilidad de batalla <@ba.key>Mantra de Ruptura</> no consume PH ni <#ba.conduct>Electrificación</>, y, si el objeto está disponible, la habilidad de batalla tiene garantizada la creación de 3 <@ba.key>Hojas de Ruptura</> incluso si el objetivo no tiene <#ba.conduct>Electrificación</>."
     },
     "indicator": {
       "levels": [
@@ -89,8 +89,8 @@
     },
     "talent2": {
       "levels": [
-        "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>{base_rate:0%}</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>{sword_rate:0%}</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>{heal:0%}</> de los PV Máx. El efecto de restauración de PV solo se activa una vez cada <@ba.vup>{duration:0}</> s.",
-        "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>{base_rate:0%}</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>{sword_rate:0%}</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>{heal:0%}</> de los PV Máx. El efecto de restauración de PV solo se activa una vez cada <@ba.vup>{duration:0}</> s."
+        "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>{base_rate:0%}</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>{sword_rate:0%}</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>{heal:0%}</> de los PV Máx. El efecto de recuperación de los PV solo puede activarse una vez cada <@ba.vup>{duration:0}</> s.",
+        "Obtiene una probabilidad de inmunidad al DAÑ recibido del <@ba.vup>{base_rate:0%}</>; cada <@ba.key>Hoja de Ruptura</> cercana aumenta esta probabilidad un <@ba.vup>{sword_rate:0%}</>.\nDespués de que se activa la inmunidad al DAÑ, Zhuang Fangyi también restaura un <@ba.heal>{heal:0%}</> de los PV Máx. El efecto de recuperación de los PV solo puede activarse una vez cada <@ba.vup>{duration:0}</> s."
       ],
       "name": "Mandato del Cielo"
     },
@@ -135,7 +135,7 @@
       "name": "Serenidad absoluta"
     },
     "potential5": {
-      "description": "<@ba.vup>Durante la transformación <@ba.key>Empíreo de la Verdad</>, el DAÑ infligido por Zhuang Fangyi ignora {100*ignore_pulse_resist:0}</> de la <@ba.pulse>Resistencia eléctrica</> del enemigo.",
+      "description": "Durante la transformación <@ba.key>Empíreo de la verdad</>, el DAÑ infligido por Zhuang Fangyi ignora <@ba.vup>{100*ignore_pulse_resist:0}</> de la <@ba.pulse>Resistencia eléctrica</> del enemigo.",
       "name": "Tormenta de transformación"
     }
   },

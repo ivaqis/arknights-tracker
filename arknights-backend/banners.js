@@ -198,7 +198,7 @@ const BANNERS = [
     startTime: "2026-06-04 22:00:00",
     startTimeAsia: "2026-06-05 11:00:00",
     endTime: "2026-06-26 11:59:59",
-    featured6: ["miFu", "MiFu"],
+    featured6: ["miFu", "MiFu", "mifu"],
   },
   {
     id: "special_1_3_2",
@@ -210,7 +210,7 @@ const BANNERS = [
     featured6: ["camille"],
   },
   {
-    id: "weapon_1_3_1",
+    id: "weponbox_1_3_1",
     name: "Scarlet Knot Issue",
     type: "weapon",
     startTime: "2026-06-04 22:00:00",
@@ -219,7 +219,7 @@ const BANNERS = [
     featured6: ["amaranthineTassel"],
   },
   {
-    id: "weapon_1_3_2",
+    id: "weponbox_1_3_2",
     name: "Crimson Hued Issue",
     type: "weapon",
     startTime: "2026-06-26 12:00:00",

@@ -61,7 +61,7 @@
         "dmgMultiplier": "SDN-Multiplikator",
         "stagger": "Taumeln",
         "ultimateEnergyGainWhenHitting1Enemy": "Ultimativer Energieerhalt bei Treffer an 1 Gegner",
-        "ultimateEnergyGainWhenHitting2Enemies": "Ultimativer Energieerhalt bei Treffer an 2 Gegner",
+        "ultimateEnergyGainWhenHitting2Enemies": "Ultimativer Energieerhalt bei Treffer an 2 Gegnern",
         "ultimateEnergyGainWhenHitting3Enemies": "Ultimativer Energieerhalt bei Treffer an 3 Gegnern"
       },
       "name": "Schäumende Wut",
@@ -76,7 +76,7 @@
         "enhancedBatkSeq4Multiplier": "Verbesserter STD-ANG-SEQ-4-Multiplikator"
       },
       "name": "Abenddämmerung",
-      "description": "Laevatain beschwört ihr Sviga Lævi herauf und wird zum gesteuerten Operator. \nFür einen bestimmte Zeit sind ihre Standardangriff (STD-ANG) verbessert und das Sviga Lævi greift gemeinsam mit ihr an, wobei jeder Angriff <@ba.fire>Hitze-SDN</> verursacht. Die 3. STD-ANG-Sequenz verursacht außerdem <#ba.fireinflict>Hitze</>.\n<@ba.info>Die Wirkung der Kampffertigkeit „Schwelendes Feuer“ oder der Kombofertigkeit „Schäumende Wut“ verringert die Dauer der Ultimativen Fertigkeit „Abenddämmerung“ nicht.</>"
+      "description": "Laevatain beschwört ihr Sviga Lævi herauf und wird zum gesteuerten Operator. \nFür eine bestimmte Zeit sind ihre Standardangriff (STD-ANG) verbessert und das Sviga Lævi greift gemeinsam mit ihr an, wobei jeder Angriff <@ba.fire>Hitze-SDN</> verursacht. Die 3. STD-ANG-Sequenz verursacht außerdem <#ba.fireinflict>Hitze</>.\n<@ba.info>Die Wirkung der Kampffertigkeit „Schwelendes Feuer“ oder der Kombofertigkeit „Schäumende Wut“ verringert die Dauer der Ultimativen Fertigkeit „Abenddämmerung“ nicht.</>"
     },
     "indicator": {
       "levels": [
@@ -89,16 +89,16 @@
     },
     "talent1": {
       "levels": [
-        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, absorbiert Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede absorbierte Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>",
-        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, absorbiert Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede absorbierte Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>",
-        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, absorbiert Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede absorbierte Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>"
+        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, <#ba.absorb>absorbiert</> Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede <#ba.absorb>absorbierte</> Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>",
+        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, <#ba.absorb>absorbiert</> Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede <#ba.absorb>absorbierte</> Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>",
+        "Nachdem der <#ba.lastcombo>Abschlussangriff</> oder der Wuchtschlag des gesteuerten Operators den Gegner getroffen hat, <#ba.absorb>absorbiert</> Laevatain <#ba.fireinflict>Hitze</> von umliegenden Gegnern. \nJede <#ba.absorb>absorbierte</> Kumulierung <#ba.fireinflict>Hitze</> verleiht Laevatain 1 Kumulierung <@ba.key>Schmelzende Flamme</> (max. Kumulierungen: {max_stack:0}). \nNach {max_stack:0} Kumulierungen ignoriert der von Laevatain verursachte SDN {ignore_fire_resist_duration:0} Sek. lang <@ba.vup>{100*ignore_fire_resist:0}</> <@ba.fire>Hitzeresistenz</> des Gegners. \n<@ba.info>Laevatain absorbiert außerdem Hitze von umliegenden Gegnern, die besiegt wurden.</>"
       ],
       "name": "Sengendes Herz"
     },
     "talent2": {
       "levels": [
-        "Wenn die LP unter {hp_threshold:0%} fallen, gewährt dies <@ba.vup>{shelter:0%}</> <#ba.guard>Schutz</> und es werden <@ba.vup>{duration:0}</> Sek. lang <@ba.heal>{heal_max_hp:0%}</> der Max. LP pro Sekunde wiederhergestellt. Dieser Effekt wird nur einmal im Abstand von {cd:0} Sek. ausgelöst.",
-        "Wenn die LP unter {hp_threshold:0%} fallen, gewährt dies <@ba.vup>{shelter:0%}</> <#ba.guard>Schutz</> und es werden <@ba.vup>{duration:0}</> Sek. lang <@ba.heal>{heal_max_hp:0%}</> der Max. LP pro Sekunde wiederhergestellt. Dieser Effekt wird nur einmal im Abstand von {cd:0} Sek. ausgelöst."
+        "Wenn die LP unter {hp_threshold:0%} fallen, gewährt dies <@ba.vup>{shelter:0%}</> <#ba.guard>Schutz</>, und es werden <@ba.vup>{duration:0}</> Sek. lang <@ba.heal>{heal_max_hp:0%}</> der max. LP pro Sekunde wiederhergestellt. Dieser Effekt kann nur einmal alle {cd:0} Sek. ausgelöst werden.",
+        "Wenn die LP unter {hp_threshold:0%} fallen, gewährt dies <@ba.vup>{shelter:0%}</> <#ba.guard>Schutz</>, und es werden <@ba.vup>{duration:0}</> Sek. lang <@ba.heal>{heal_max_hp:0%}</> der max. LP pro Sekunde wiederhergestellt. Dieser Effekt kann nur einmal alle {cd:0} Sek. ausgelöst werden."
       ],
       "name": "Rückzündung"
     },

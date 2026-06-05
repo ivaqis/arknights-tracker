@@ -79,7 +79,7 @@
     },
     "talent2": {
       "levels": [
-        "Máxima <@ba.key>¡ESCUADRÓN! ¡A MÍ!</> mejorada: Cuando la máxima está activa, todo el equipo obtiene <#ba.combo>Enlace</>."
+        "Máxima <@ba.key>¡ESCUADRÓN! ¡A MÍ!</> mejorada: Cuando la máxima está activa, otorga un incremento de <#ba.combo>Enlace</>."
       ],
       "name": "Mantenerse en la zona"
     },

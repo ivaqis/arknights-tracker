@@ -67,7 +67,7 @@
         "ultimateEnergyGain": "Perolehan Energi Ultimate"
       },
       "name": "Full Moon Slash",
-      "description": "PEMICU KOMBO: Saat <#ba.crush>Crush</> atau <#ba.fracture>Breach</> <#ba.consume>memakai</> tumpukan <#ba.noguard>Vulnerability</> musuh. \nMelancarkan sejumlah tebasan (maks 3 kali) sesuai jumlah maksimum tumpukan <#ba.noguard>Vulnerability</> yang <#ba.consume>dipakai</> sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP. Setiap tebasan akan menimbulkan DMG lebih besar dan memberikan pemulihan SP yang lebih baik. \n<@ba.info>Jika 4 tumpuk Vulnerability dipakai, tebasan ke-3 akan diperkuat.</>"
+      "description": "PEMICU KOMBO: Saat <#ba.crush>Crush</> atau <#ba.fracture>Breach</> <#ba.consume>memakai</> tumpukan <#ba.noguard>Vulnerability</> musuh. \nMelancarkan sejumlah tebasan (maks 3 kali) sesuai jumlah maksimum tumpukan <#ba.noguard>Vulnerability</> yang <#ba.consume>dipakai</> dari satu musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP. Setiap tebasan akan menimbulkan DMG lebih besar dan memberikan pemulihan SP yang lebih baik. \n<@ba.info>Jika 4 tumpuk Vulnerability dipakai, tebasan ke-3 akan diperkuat.</>"
     },
     "ultimate": {
       "ultimate": {

@@ -95,7 +95,7 @@
         "Durante o <@ba.key>OLHAR ANCESTRAL</>, realizar um ataque de mergulho com um operador controlado encerra sua evolução mais cedo e cria uma <@ba.key>Tromba d'Água</>. Todos os <@ba.key>Redemoinhos</> nas proximidades também são consumidos e convertidos em <@ba.key>Trombas d'Água</> adicionais.\nAs <@ba.key>Trombas d'Água</> criadas dessa forma têm os mesmos efeitos que aquelas criadas pela habilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS</> e ganham DNO Causado <@ba.vup>+ {dmg_up_water_ult:0%}</>.",
         "Durante o <@ba.key>OLHAR ANCESTRAL</>, realizar um ataque de mergulho com um operador controlado encerra sua evolução mais cedo e cria uma <@ba.key>Tromba d'Água</>. Todos os <@ba.key>Redemoinhos</> nas proximidades também são consumidos e convertidos em <@ba.key>Trombas d'Água</> adicionais.\nAs <@ba.key>Trombas d'Água</> criadas dessa forma têm os mesmos efeitos que aquelas criadas pela habilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS</> e ganham DNO Causado <@ba.vup>+ {dmg_up_water_ult:0%}</>."
       ],
-      "name": "Arauto do Caos"
+      "name": "Arauta do Caos"
     },
     "baseSkill1": {
       "levels": [
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Combo de habilidades <@ba.key>RIO, VENHA A MIM!</> melhorado: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original, e o tempo de recarga agora é <@ba.vup>{coolDown:0}</> s.\nHabilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS!</> melhorada: para cada <@ba.key>Redemoinho</> consumido e convertido em uma <@ba.key>Tromba d'Água</>, <#ba.return>retorna</> <@ba.vup>{atb_return:0}</> de PH adicional.",
+      "description": "Combo de habilidades <@ba.key>DEIXE O RIO COMIGO!</> melhorado: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original. Duração do tempo de recarga: <@ba.vup>{coolDown:0}</> s.\nHabilidade de batalha <@ba.key>SOU A DOMADORA DAS ONDAS!</> melhorada: para cada <@ba.key>Redemoinho</> consumido e convertido em uma <@ba.key>Tromba d'Água</>, <#ba.return>retorna</> <@ba.vup>{atb_return:0}</> de PH adicional.",
       "name": "Tesouro Escondido"
     },
     "potential2": {
@@ -138,7 +138,7 @@
       "name": "Meditação de Qingbo"
     },
     "potential5": {
-      "description": "Habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> melhorada: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale_1:0.00}</> vezes o original. \nTalento <@ba.key>Arauto do Caos</> melhorado: os efeitos de DNO de qualquer Tromba d'Água criada pela habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> são aumentados em <@ba.vup>+ {dmg_up_water_ult:0%}</>.",
+      "description": "Habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> melhorada: o Multiplicador DNO é aumentado para <@ba.vup>{atk_scale_1:0.00}</> vezes o original. \nTalento <@ba.key>Arauta do Caos</> melhorado: os efeitos de DNO de qualquer Tromba d'Água criada pela habilidade suprema <@ba.key>A CHEFE ESTÁ VENDO!</> são aumentados em <@ba.vup>+ {dmg_up_water_ult:0%}</>.",
       "name": "Olhar da Chefe All-Eldritch"
     }
   },
@@ -149,7 +149,7 @@
       "description": "Tangtang tem um coração de água, um lago tranquilo sob a lua que cintila com seu esplendor."
     },
     "potential3": {
-      "name": "Divisor de Bambu",
+      "name": "Cortadora de Bambu",
       "author": "二值笔战士",
       "description": "O aroma do bambu fresco a faz lembrar de uma tarde comum em que os Paliçados teciam capas de chuva de bambu para o ano seguinte, um dia em que ela se banhou de sol."
     },

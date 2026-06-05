@@ -741,7 +741,9 @@
     "hetoniteComponent": "Componente di etonite",
     "hetoniteSolution": "Soluzione di etonite",
     "precipitationAcid": "Acido per precipitazione",
-    "liquidHeavyXiranite": "Xiranite pesante liquida"
+    "liquidHeavyXiranite": "Xiranite pesante liquida",
+    "centuryRind": "Scorza secolare",
+    "caudalGoldscale": "Scaglia caudale dorata"
   },
   "common": {
     "copy": "Copia",
@@ -925,7 +927,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -995,7 +999,10 @@
     "finchaser30": "Predatrice 3.0",
     "lupineScarlet": "Lupino scarlatto",
     "loneBarge": "Chiatta solitaria",
-    "flickersInTheMist": "Scintille nella nebbia"
+    "flickersInTheMist": "Scintille nella nebbia",
+    "phantomPain": "Dolore fantasma",
+    "amaranthineTassel": "Nappa amaranto",
+    "beaconOfDuty": "Faro del dovere"
   },
   "cookies": {
     "title": "Utilizziamo i cookie",
@@ -1092,7 +1099,14 @@
     "world_energy_point07_4": "Sedimento energetico ostico: pietra di demarcazione",
     "world_energy_point08_3": "Sedimento energetico: Area dei test",
     "world_energy_point08_2": "Sedimento energetico: Area dei test",
-    "world_energy_point08_6": "Sedimento energetico ostico: Area dei test"
+    "world_energy_point08_6": "Sedimento energetico ostico: Area dei test",
+    "world_energy_point09_1": "Sedimento energetico: Valletta di Voltaspada",
+    "world_energy_point09_2": "Sedimento energetico: Valletta di Voltaspada",
+    "world_energy_point09_3": "Sedimento energetico: Valletta di Voltaspada",
+    "world_energy_point09_4": "Sedimento energetico ostico: Valletta di Voltaspada",
+    "world_energy_point09_5": "Sedimento energetico ostico: Valletta di Voltaspada",
+    "world_energy_point09_6": "Sedimento energetico ostico: Valletta di Voltaspada",
+    "world_energy_point09_7": "Sedimento energetico ostico: Valletta di Voltaspada"
   },
   "enemies": {
     "eny_0007_mimicw": "Drago delle sabbie",
@@ -1166,7 +1180,10 @@
     "eny_0078_nefarp1": "Nefarith, \"Spacca-Ossa\"",
     "eny_0095_ethillu": "Æthillu",
     "eny_0079_nefarp2": "Nefarith, \"Conquistatrice\"",
-    "eny_0082_hsbear": "Batticielo"
+    "eny_0082_hsbear": "Batticielo",
+    "eny_0112_jzmonk": "Ulularocce",
+    "eny_0113_jzogre": "Orso dai denti a sciabola corazzato",
+    "eny_0114_jzmking": "Ulularupi"
   },
   "essencesPage": {
     "optimizer": "Ottimizzatore farming",
@@ -1414,7 +1431,15 @@
     "item_equip_t4_suit_combo_cd01_hand_02": "Guanti di Qingbo",
     "item_equip_t4_suit_expend_spell01_edc_02": "Manganello Xiranflow",
     "item_equip_t4_suit_expend_spell01_body_02": "Armatura leggera Xiranflow",
-    "item_equip_t4_suit_phy01_hand_03": "Coprimani tattici da spadamante O1"
+    "item_equip_t4_suit_phy01_hand_03": "Coprimani tattici da spadamante O1",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Kit di localizzazione di Qingbo O1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Armatura dal bordo grigio",
+    "item_equip_t4_suit_crush_fracture_body_02": "Armatura dal bordo grigio O1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Pugnale a scatto dal bordo grigio",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Pugnale a scatto dal bordo grigio O1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Coprimani dal bordo grigio",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Coprimani dal bordo grigio O1",
+    "item_equip_t4_suit_phy01_body_04": "Armatura in fibra da spadamante"
   },
   "packs": {
     "none": "Senza set",
@@ -1462,7 +1487,8 @@
     "suit_wisd01": "Isolante Elettroshock",
     "suit_wisdwill01": "Leggera SIA",
     "suit_combo_cd01": "Qingbo",
-    "suit_expend_spell01": "Xiranflow"
+    "suit_expend_spell01": "Xiranflow",
+    "suit_crush_fracture": "Bordo grigio"
   },
   "equipmentTypes": {
     "body": "Armatura",
@@ -1897,11 +1923,11 @@
     "pump_1": "Pompa per liquidi",
     "pump_2": "Pompa anti-corrosione v2"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Modalità standard",
     "liquid": "Modalità liquidi"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Fonte",
       "using": "Formule applicabili",

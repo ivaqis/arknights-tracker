@@ -1,0 +1,153 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nghiền",
+      "Yếu Hóa V.Lý"
+    ],
+    "behaviourHateTags": [
+      "Thời Trang"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Hiến pháp",
+      "Kỹ Thuật Chiến Đấu"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn của Kiếm Sĩ Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Thể Thao",
+      "Phong Cách Sống"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu"
+      },
+      "name": "Kiếm Hình Quyền Ý",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành đòn kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm Kỹ Năng."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "cloudtrapperDmgMultiplier": "Hệ Số ST Kẻ Bắt Mây",
+        "trailAndMangleDmgMultiplier": "Hệ Số ST Truy Dấu Và Nghiền Nát",
+        "trailAndMangleStagger": "Suy Sụp Truy Dấu Và Nghiền Nát",
+        "worldSplitterDmgMultiplier": "Hệ Số ST Phân Định Thế Thái",
+        "worldSplitterStagger": "Suy Sụp Phân Định Thế Thái"
+      },
+      "name": "Thanh Ba Tam Dịch",
+      "description": "Liên tục thi triển KN chiến đấu của Mi Fu để tung ra 3 đòn khác nhau. Lần thi triển KN chiến đấu đầu tiên là <@ba.key>Kẻ Bắt Mây</>.\n<@ba.key>ĐÒN 1 - Kẻ Bẫy Mây</>: Tiêu hao <@ba.vup>100</> Điểm Kỹ Năng và <#ba.return>hoàn trả</><@ba.vup> 50</> Điểm Kỹ Năng sau khi thi triển; Mi Fu bắn một sợi xích móc từ găng tay, gây <@ba.pd>ST Vật Lý</> lên mục tiêu và kẻ địch xung quanh, sau đó cố kéo mục tiêu và kẻ địch gần đó về phía cô. Sau khi thi triển ĐÒN 1, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>.\n<@ba.key>ĐÒN 2 - Truy Dấu Và Nghiền Nát</>: Tiêu hao <@ba.vup>50</> Điểm Kỹ Năng; Mi Fu tung ra một loạt đòn quyền, gây <@ba.pd>ST Vật Lý</>, với cú đấm cuối cùng áp dụng <#ba.crush>Nghiền</>. Nếu Nghiền này <#ba.consume>tiêu hao</> ít nhất 3 cộng dồn <#ba.noguard>Trừ Giáp</> từ một mục tiêu, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Phân Định Thế Thái</>.\n<@ba.key>ĐÒN 3 - Phân Định Thế Thái</>: Tiêu hao <@ba.vup>50</> Điểm Kỹ Năng; Mi Fu gây lượng lớn <@ba.pd>ST Vật Lý</> lên một khu vực chỉ định; ST này không được tính là ST Kỹ Năng Chiến Đấu, mà được tính là ST <#ba.crush>Nghiền</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "physicalSusceptibility": "Yếu Hóa Vật Lý",
+        "physicalSusceptibilityDurationS": "Thời Gian Yếu Hóa Vật Lý (giây)",
+        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+      },
+      "name": "Cú Đấm Bất Hận",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch có 3 hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>.\nMi Fu tung một cú móc hàm, gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.physicalvul>Yếu Hóa Vật Lý</> tạm thời. Sau khi thi triển kỹ năng này, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp"
+      },
+      "name": "Tuyệt Tâm",
+      "description": "Sau một thoáng tụ lực, Mi Fu lao về phía trước, cưỡng chế <#ba.airborne>Hất Tung</> một mục tiêu lên không trung, rồi quật mục tiêu đó, gây <@ba.pd>ST Vật Lý</>. Sau khi thi triển kỹ năng này, KN chiến đấu tiếp theo sẽ tạm thời được thay thế bằng <@ba.key>Truy Dấu Và Nghiền Nát</>."
+    },
+    "indicator": {
+      "levels": [
+        "Sức Mạnh Cán Viên +10.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +15.",
+        "Sức Mạnh Cán Viên +20."
+      ],
+      "name": "Rèn Giũa"
+    },
+    "talent1": {
+      "levels": [
+        "Chiêu KN Chiến Đấu <@ba.key>Phân Định Thế Thái</> được cường hóa: Khi đánh trúng mục tiêu đang chịu <#ba.physicalvul>Yếu Hóa Vật Lý</> hoặc <@ba.poise>Suy Sụp</>, hệ số ST được tăng lên gấp <@ba.vup>{crushmultiadd_talent+1}</> lần ban đầu.",
+        "Chiêu KN Chiến Đấu <@ba.key>Phân Định Thế Thái</> được cường hóa: Khi đánh trúng mục tiêu đang chịu <#ba.physicalvul>Yếu Hóa Vật Lý</> hoặc <@ba.poise>Suy Sụp</>, hệ số ST được tăng lên gấp <@ba.vup>{crushmultiadd_talent+1}</> lần ban đầu."
+      ],
+      "name": "Trấn Áp Nghiêm Trừng"
+    },
+    "talent2": {
+      "levels": [
+        "KN liên hoàn được cường hóa: Khi thi triển liên hoàn, tạo một <#ba.shield>khiên</> có giá trị bằng <@ba.vup>{talent_shield_hppercent:0%}</> HP Tối Đa, có hiệu lực trong {talent_shield_duration} giây. Khi khiên còn hiệu lực, Mi Fu khó bị gián đoạn hơn.\nHiệu ứng này chỉ có thể kích hoạt mỗi {talent_shield_cd} giây một lần.",
+        "KN liên hoàn được cường hóa: Khi thi triển liên hoàn, tạo một <#ba.shield>khiên</> có giá trị bằng <@ba.vup>{talent_shield_hppercent:0%}</> HP Tối Đa, có hiệu lực trong {talent_shield_duration} giây. Khi khiên còn hiệu lực, Mi Fu khó bị gián đoạn hơn.\nHiệu ứng này chỉ có thể kích hoạt mỗi {talent_shield_cd} giây một lần."
+      ],
+      "name": "Thịnh Nộ Không Ngơi"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên một lượng nhỏ Tăng Xác Suất Manh Mối 3: Học Viện (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)",
+        "Khi phân công vào Phòng Tiếp Khách, cấp cho các cán viên Tăng Xác Suất Manh Mối 3: Học Viện (kích hoạt khi được phân công; không thể cộng dồn các hiệu ứng cùng loại)"
+      ],
+      "name": "Người Chỉ Điểm Bí Mật"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng vật chất nấm thêm 30%"
+      ],
+      "name": "Thảo Dược Tăng Trưởng"
+    },
+    "files": {
+      "main": "MẬT DANH: Mi Fu \nGIỚI TÍNH: Nữ \nXÁC MINH: Học Viện Khoa Học Hongshan \nNGÀY SINH: 9 Tháng 7 \nCHỦNG TỘC: Sarkaz \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nDương tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Xuất Sắc \nKN CHIẾN ĐẤU: Xuất Sắc \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Cơ Bản",
+      "humanResources": "Mi Fu hiện là Đội Trưởng Cảnh Vệ của Quận Phát Triển Khoa Học Võ Lăng, trực thuộc Học viện Khoa học Hongshan. Hiện cô đang có chuyến thăm trao đổi tại Tập Đoàn Endfield, và Đội Chuyên Viên Kỹ Thuật là đơn vị phụ trách tiếp đón. \n\nĐội Trưởng Mi Fu nói rằng mục đích của chuyến đi này chỉ là để gặp lại vài người bạn cũ ở Endfield. Thế nhưng, kể từ sau khi đặt chân đến đây, ai cũng có thể nhận ra cô vẫn luôn âm thầm quan sát và đánh giá từng cán viên dựa trên năng lực chiến đấu của họ. Đã không ít lần, cô ghé sát bên những cán viên tình cờ bắt gặp rồi khẽ buông một câu: \"Có hứng đấu với tôi một trận không?\". Khi Mi Fu nhìn thấy các cabin huấn luyện, cô chỉ khẽ nhướng mày, nhưng sự hứng thú đã hiện rõ tức thì. Sau khi tự mình trải nghiệm các hạng mục mà cơ sở này cung cấp, cô thẳng thắn bày tỏ: \"Biết chỗ này có những trận đấu ra hồn đến vậy thì tôi đã tới từ lâu rồi!\" Rồi ngay sau đó, cô lập tức kéo dài thời gian lưu lại thêm vài ngày nữa. Dù sao đi nữa, chúng tôi vẫn hy vọng chuyến thăm trao đổi của cô tại Endfield sẽ vừa hữu ích, vừa đủ thú vị để xứng với kỳ vọng. \n- Martin Marvin Malen, Trợ lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "TÀI LIỆU: Hồ Sơ Thăng Bậc Nhân Sự của Quận Phát Triển Khoa Học Võ Lăng \nHỌ TÊN: Mi Fu \nQUÊ QUÁN: Võ Lăng \nKINH NGHIỆM CÔNG TÁC: 3 năm \nCHỨC VỤ HIỆN TẠI: Cảnh Vệ Võ Lăng \nCHỨC VỤ ĐỀ XUẤT THĂNG BẬC: Đội Trưởng Cảnh Vệ Võ Lăng \n\nLÝ LỊCH & BỐI CẢNH \nMi Fu vốn là dân Trại Thanh Ba, về sau được Quận Phát Triển Khoa Học Võ Lăng tuyển mộ và được bổ nhiệm làm cảnh vệ sau khi Thành Phố Võ Lăng hoàn tất xây dựng. Kể từ khi đảm nhiệm chức vụ này, cô luôn hoạt động nơi tuyến đầu, thể hiện sự am hiểu sâu rộng đối với các sự cố, vấn đề an ninh tại Thành Phố Võ Lăng và những khu vực lân cận, đồng thời cho thấy tính quyết đoán và sự nhanh nhạy trong việc xử lý nhiều loại tình huống khẩn cấp cũng như các vụ việc phát sinh. \n\nMi Fu hết lòng tận tụy với Thành Phố Võ Lăng, tuyệt đối không dung thứ cho bất kỳ hành vi lệch chuẩn hay phạm pháp nào, và luôn hành động với tinh thần công chính nghiêm khắc. Cô có danh tiếng tốt, tạo được sức răn đe hiệu quả, đồng thời là điểm tựa tinh thần đáng tin cậy đối với người dân. \nƯU ĐIỂM: \nNăng lực chiến đấu xuất chúng. Thể chất và sức bền đều nổi bật. Có khả năng xử lý các mối đe dọa có độ rủi ro cao. \nQuyết đoán, thành thạo trong việc thi hành mệnh lệnh. Có thể đưa ra phán đoán chính xác khi đối diện với những tình huống phức tạp. \nQuan tâm và biết chăm lo cho cấp dưới. Có khả năng xây dựng một tập thể gắn kết và vững mạnh. Có uy tín tốt trong dân chúng, nhận được sự tín nhiệm và ủng hộ rộng rãi. Nhận xét từ công chúng bao gồm: \"Thẳng như ruột ngựa nhưng lúc nào cũng công bằng\". \n\nMẶT CẦN CẢI THIỆN: \nCó xu hướng quá sốt sắng trong việc sử dụng vũ lực. Thường nghiêng về các biện pháp mang tính thể chất khi giải quyết nhiều loại tình huống. Nhận thức về quy trình còn hạn chế. \nCòn yếu ở các công việc hành chính, chẳng hạn như soạn thảo báo cáo. Năng lực quản trị còn ở mức giới hạn. \nTính khí nóng nảy, thiếu kiên nhẫn trong giao tiếp. Dễ phát sinh xung đột với người khác. \nĐặt niềm tin quá mức vào những người quen thân. Việc ra quyết định có thể bị ảnh hưởng bởi quan hệ cá nhân và cảm xúc. \n\nĐÁNH GIÁ TỔNG THỂ: \nMi Fu đã đạt được những thành tích đáng ghi nhận trong công tác tuần tra và chấp pháp. Nhờ từng thành công trong việc khống chế nhiều tình huống khẩn cấp, cô là một nhân sự đầy triển vọng và đáng tin cậy trong công việc thực địa. Tuy nhiên, cô có khuynh hướng sử dụng các biện pháp trực diện, thiếu độ mềm dẻo cần thiết, nhận thức về quy trình còn yếu, và tồn tại nguy cơ vi phạm trình tự chỉ huy. Dẫu vậy, mức độ hài lòng của người dân đối với hiệu quả công tác của Mi Fu ở mức rất cao. Ứng viên đã có nhiều đóng góp tích cực, dù sai sót không phải không có. Trong tương lai, cô vẫn cần được chỉ dẫn thêm và rèn luyện mạnh hơn về khả năng tự kiềm chế. \n\nÝ KIẾN CỦA NGƯỜI ĐÁNH GIÁ: \nMi Fu có khí chất nóng như lửa và niềm nhiệt thành mãnh liệt đối với việc giữ gìn công lý. Dù cô thường hành động vượt trước khuôn khổ, những hành động ấy chưa từng xuất phát từ ác ý. Cô vung nắm đấm không phải vì bản thân mình, mà vì sự an toàn của người dân. Sự cứng rắn chẳng qua chỉ là hệ quả của một tính cách thẳng thắn. Những lần không tuân thủ đúng quy trình hay sự thiếu trọn vẹn trong công việc giấy tờ chỉ che khuất, chứ không thể phủ nhận sự tỉ mỉ trong cho công việc. Có những phương diện quả thực còn thiếu sót, nhưng cũng chính ở đó lại bộc lộ những phẩm chất nổi bật của mình. \nTôi sẵn lòng đứng ra bảo chứng cho phẩm hạnh và tư cách của cô, đồng thời tiến cử cô cho vị trí Đội Trưởng Cảnh Vệ của Thành Phố Võ Lăng, nơi cô sẽ trở thành trụ cột của công tác an ninh công cộng nơi đây. Tôi cũng sẽ đích thân giám sát và chỉ dẫn Mi Fu trong công việc thường nhật của cô. \n\nNGƯỜI ĐÁNH GIÁ: Zhuang Fangyi \nNgày 19 tháng 10, năm 145",
+      "file2": "Hừ. Bà điên đó! Tôi lớn lên cùng chị ấy, với lại cũng từng cho chị ấy ăn đòn nhớ đời không ít lần. Bọn tôi chẳng ưa gì nhau, nhưng tôi khoái nhất là làm cho người chị ta tím bầm lên, còn chị thì cũng cố trả đũa lại. Hồi đó Mimi Điên đúng là điên thật, nhưng thôi. Cóc sợ đấy. Dù sao thì về sau chị ta cũng chạy đến Võ Lăng, kiếm được cho mình cái phù hiệu, rồi còn được thăng chức thành cái kiểu \"Đội Trưởng Cảnh Vệ\" gì đó nữa. Thế là tưởng mình có quyền vác cái bản mặt chảnh chọe ngu ngốc ấy ra dọa người. Ừ, thì kệ xác chị. Chị ta có lườm bằng cái bộ mặt thối đó cả ngày cũng được. Tôi biết rõ dưới lớp da cảnh vệ ngu ngốc ấy là cái gì. Một bà điên. Chính xác là thế! \nNếu giờ tôi lại đánh nhau với chị ta, chắc cũng chỉ hòa thôi. Nhưng rồi mà xem. Thủ Lĩnh Tối Cao sớm muộn gì cũng thắng. Chị ta có tay to hơn thì đã sao? Đừng có quên nhé! Xưa nay tôi vẫn nhanh hơn, lanh hơn, với né đòn giỏi hơn nhiều. Tôi sẽ cho chị ta biết thế nào là tan tác thật sự. \nÀ, còn vụ mấy phi vụ ở Võ Lăng nữa, bà điên đó đúng là một cục phiền phức to tổ chảng. Cả Dân Trại đã tính toán hết nước hết cái rồi, thế mà cứ liên tục đụng mặt ở kho hàng với mấy chỗ ẩn nấp. Cứ như thể chị ta đã đứng đó chờ sẵn bọn tôi rồi ấy. Bọn tôi cũng đánh trả ra trò đấy, nhưng Mimi kéo theo cả một đám dữ dằn, quẳng khối đứa vào xà lim. Tệ hơn nữa là chị ta còn phá chuyện làm ăn của Trại bằng cách... đối xử với Dân Trại bị bắt tử tế quá mức. Thành ra có mấy đứa ở lại luôn Võ Lăng, vì đồ ăn với chỗ ở bên đó còn ngon lành hơn. \nCứ chờ đi! Rồi tôi sẽ xử đẹp bà điên đó cho coi. Một mình tôi thôi. Nghe rõ chưa? Cứ đợi đấy nhé, bà điên! Thủ Lĩnh Tối Cao sắp vào thành rồi, rồi sẽ tống bà xuống ghế trẻ con luôn! \n- Tangtang, Thủ Lĩnh Tối Cao của Trại Thanh Ba \n\nỜ đấy, Dân Trại. Mi Fu tống tôi vô tù thật. Hồi đó tôi đang vác đống chiến lợi phẩm béo bở cùng anh em thì tự nhiên bà ấy chặn ngay trước mặt. Hai chân tôi nhũn ra như bún tại chỗ. Rồi bả đập tôi một trận, mà nói thật thì cũng không đến nỗi nào. Xong bả hỏi: \"Muốn ở lại trong thành một thời gian không?\" Nghe này, lúc đó tôi hoa cả mắt, đầu đầy sao rồi. Tôi cũng chẳng biết mình có gật đầu hay không nữa, nhưng bả lôi tôi về thành thật. \nBan đầu tôi còn nghĩ, thôi xong, kiểu này là đi thẳng xuống địa ngục rồi! Ai ngờ về sau tôi lại có việc làm trong thành, có chỗ ở đàng hoàng, có giường ngủ, lại còn được ăn ngon. Rồi tôi mới biết là Mimi Điên thật ra vẫn cho bọn tôi lựa chọn. Mặt bả thì lúc nào cũng dữ chằn chặn, nói chuyện nghe như thể tôi đang nợ tiền bả ấy, nhưng chắc Mimi cũng phải lội qua cả đống rắc rối mới xoay được cho mấy đứa Dân Trại tụi tôi mấy công việc tử tế. \nÀ đúng rồi, bạn biết không, mấy kho đồ ở trong khu rừng mà bọn tôi cứ tưởng là chiến lợi phẩm chôm được của dân Võ Lăng, thật ra lại là vật tư dư được chuyển từ trong thành ra. Lúc đầu tôi cũng chẳng hiểu sao phải cất công chở mấy món đồ cũ kỹ, lỗi thời tới tận chỗ đó làm gì. Về sau mới biết, đống đó vốn là để cho Trại. Người ta cứ bảo Mimi Điên nghiêm khắc với đám Dân ở Trại lắm, nhưng thật ra vẫn luôn âm thầm giúp đỡ, âm thầm quan tâm theo cái cách rất riêng của bả. \n- Khuyết danh, hiện là công dân Võ Lăng (cựu Dân Trại Thanh Ba)",
+      "file3": "TÀI LIỆU: Nghiên Cứu Về Võ Học Thanh Ba (Trích Đoạn) \nNguồn gốc của Võ Học Thanh Ba có thể được truy lần về ngôi làng mang tên Trại Thanh Ba tại vùng Võ Lăng. Đây là một truyền thống võ học được lưu truyền trong cộng đồng cư dân của Trại. Tuy nhiên, hệ thống kỹ pháp này lại quá mức bí truyền, đến mức không được ghi chép trong phần Phụ lục của Võ Thư. \nMuốn hiểu được những nét độc đáo của Võ Học Thanh Ba, trước hết phải tìm hiểu lịch sử của Trại Thanh Ba. Trong giai đoạn trước Chiến Tranh Nhục Nhã và suốt vài năm sau đó, một nhóm người Viêm chạy nạn, quyết tâm tách mình khỏi các cuộc tranh đoạt phe phái và binh đao, đã di chuyển đến nơi về sau trở thành vùng Võ Lăng ngày nay. Khe Nứt Cực Lớn Võ Lăng (KNCL) vừa là mối đe dọa, vừa là bức bình phong tự nhiên ngăn chặn các cuộc tập kích và xâm nhập từ bên ngoài. Vì vậy, những người tị nạn ấy đã quyết định dừng chân, dựng nên một ngôi làng, và về sau ngôi làng ấy dần phát triển thành Trại Thanh Ba. Theo một số ghi chép, chính những cư dân Trại này mới là những người cư ngụ đầu tiên của Võ Lăng. \nThoạt nhìn từ góc độ ấy, Trại Thanh Ba dường như là một chốn yên bình để nương náu. Nhưng giả định này cách xa sự thật. KNCL Võ Lăng đã tạo ra một môi trường khắc nghiệt đến cùng cực, nơi Aggeloi lang thang khắp nơi, dã thú hung hãn rình rập, còn các hiện tượng nứt gãy thì diễn ra với liên tục. Cư dân Trại từ lâu đã không ngừng chiến đấu chống lại những \"kẻ địch\" đến từ bên ngoài, và chính những trận chiến khốc liệt ấy đã dần hình thành nên một loạt kỹ thuật chiến đấu chỉ riêng Trại Thanh Ba mới có. Việc tu luyện những kỹ pháp ấy không chỉ giúp rèn luyện thân thể, mà còn nâng cao khả năng kiểm soát Thuật Pháp Originium bẩm sinh của người sử dụng. Một số chiêu thức và kỹ nghệ trong đó cũng thể hiện rất rõ đặc sắc riêng có của vùng Thanh Ba. \nMột ví dụ tiêu biểu là chiêu thức trứ danh mang tên \"Bộ Pháp Xuân Triều\", cho phép người luyện võ ung dung bước trên dòng nước chảy xiết, đồng thời để lại phía sau những lớp sóng cuộn dậy. Ban đầu, tôi từng lầm tưởng đây là một dạng vu thuật thao túng dòng nước bằng tinh thần. Nhưng trên thực tế, bộ pháp này là một kỹ nghệ Thuật Pháp Originium, tập trung năng lượng Thuật Pháp vào đầu bàn chân, rồi với độ chính xác kinh người dẫn truyền nó vào mặt nước để tạo ra dao động cộng hưởng. Một ví dụ khác là \"Trúc Diệp Phi Hành\", về bản chất đúng là thuật phi thân lấy những chiếc lá tre mỏng manh làm điểm tựa. Kỹ pháp này đòi hỏi người sử dụng phải gia trì lên những chiếc lá tưởng chừng mong manh ấy một \"mạch xung bền dẻo\" của Thuật Pháp Originium. Mức độ tinh vi và khả năng kiểm soát như vậy, nếu được mài giũa đến nơi đến chốn, hoàn toàn có thể bộc phát thành một đòn \"Xung Quyền\" đáng sợ chỉ với động tác tối thiểu. \nĐội Trưởng Cảnh Vệ Mi Fu của Quận Phát Triển Khoa Học Võ Lăng chính là người tu tập Võ Học Thanh Ba. Cô mô tả \"Xung Quyền\" như một \"tia sét\". Khi tấn công kẻ địch, võ giả phải xem thân thể mình như một chiếc \"súng lục\", vút lên như một con Long phi thiên, rồi giáng xuống như một luồng lôi kích. Bản thân người viết đã từng tận mắt chứng kiến Đội Trưởng Mi Fu ra tay trong một nhiệm vụ tiêu diệt Aggeloi. Lực đạo trong từng đòn đánh của cô mạnh đến mức những chiêu thức ấy gần như sánh ngang với Thiên Sư Lei Fa (Lôi Thuật). \nBên cạnh nền võ học cường mãnh, cư dân Trại còn gây dựng nên một truyền thống tỷ võ hết sức đặc sắc. Trong suốt nhiều năm, các võ giả của Trại Thanh Ba luôn háo hức thách đấu lẫn nhau để phân định ai mới là người mạnh nhất. Vào ngày Võ Đài Quyết Chiến, toàn thể cư dân Trại, bất kể nam nữ hay tuổi tác, đều tụ hội để chứng kiến các trận đấu và cổ vũ cho đối thủ mình yêu thích. Bản thân Đội Trưởng Mi Fu, trước khi gia nhập Võ Lăng, từng là quán quân không ai có thể tranh cãi của Trại. Đáng tiếc thay, vào thời điểm người viết soạn thảo phần này, đấu trường của Trại đang trải qua một đợt tu sửa quy mô lớn do những hư hại gần đây. Mất đi cơ hội đến tận nơi khảo sát, tôi chỉ còn cách nhờ Đội Trưởng Mi Fu gửi cho mình ảnh chụp hoặc các dữ liệu hình ảnh khác của đấu trường sau khi được sửa chữa. \nTôi từng bày tỏ với Đội Trưởng Mi Fu mong muốn được phỏng vấn Đại Tông Sư của Võ Học Thanh Ba, chính là vị \"Đại Sư Thuần Sông\" lừng danh ấy. Tuy nhiên, Đội Trưởng cho biết vị Đại Tông Sư này đã quy ẩn, đến cả cô cũng không biết ông đã đi đâu. Cô còn cho tôi xem một tấm bưu thiếp do Cao Thủ của mình gửi về, kể đôi điều về chuyến hành cước của họ. Nghe nói Đại Tông Sư đã đứng lại hơn một giờ đồng hồ chỉ để chăm chú nhìn hai đứa trẻ đánh nhau trong một con hẻm nào đó giữa Vành Đai Văn Minh. Trước khi rời đi, lão nhân thở dài mà nói: \"Ta khổ luyện cả đời, vậy mà vẫn thấy ganh tị với lũ trẻ này. Chúng đánh nhau khi muốn, rồi sau đó vẫn làm bạn được với nhau. Thật là một cảnh tượng đẹp.\" \nSau cùng, tôi đã đề xuất với Đội Trưởng Mi Fu việc hệ thống hóa và biên soạn các tư liệu liên quan đến Võ Học Thanh Ba, để đưa chúng vào phần Tiếp biên cho Phụ lục Võ Thư. Đội trưởng vui vẻ đồng ý, đồng thời bày tỏ rằng cô vẫn luôn mong có thêm nhiều người có thể dùng chính nắm đấm của mình để bảo vệ Võ Lăng. Đến ngày điều đó trở thành hiện thực, có lẽ cô sẽ có thể rời khỏi nơi này, rời khỏi Võ Lăng, để một lần nữa theo đuổi khát vọng đã ôm giữ suốt đời: được chiến đấu bất cứ khi nào mình muốn.",
+      "file4": "\"Endmin! Xin hãy giúp tôi giữ chân Mi Fu một ngày!\" Đêm đã khuya khi Yan Ning bất ngờ tìm đến Endministrator, nhờ cậy một việc gấp đến mức gần như không thể chậm trễ thêm. \nTheo lời Yan Ning, trong lúc dọn dẹp bàn làm việc của Zhuang Fangyi, cô đã nhìn thấy một lá thư niêm phong đề tên Mi Fu. Nghĩ rằng đó là thư cần chuyển đi, cô liền tự mình mang gửi đến doanh trại Cảnh Vệ. \nChỉ đến ngay sau đó, cô mới hốt hoảng nhận ra bức thư ấy chưa thể trao đến tay người nhận vào lúc này. Nói theo lời cô thì: \"Nếu Mi Fu đọc lá thư đó trước dự định của Fangyi thì mọi chuyện sẽ tệ lắm! Xin hãy giữ em ấy bận tay bận chân trong lúc tôi chặn đường lá thư!\" \nVà thế là, Endministrator lấy cớ \"kiểm tra hiện trường\" để kề bên Mi Fu suốt trọn một ca trực thường nhật của cô. \nMọi chuyện bắt đầu từ tảng sáng, khi một thương nhân lữ hành bị Aggeloi vây khốn cất tiếng cầu cứu. Cả buổi sáng hôm ấy, Đội Trưởng Mi gần như không chút nương tay trong việc huấn luyện lứa cảnh vệ mới. Đến chiều, cô lại phải đứng ra phân xử những tranh chấp giữa các chủ tiệm trên Đại Lộ Phương Hưng, rồi sau đó còn bất ngờ chạm mặt \"Thủ Lĩnh Tối Cao\" tại rừng trúc... Nắm đấm của Mi Fu chưa phút nào được nghỉ, nhưng vẫn đầy uy lực như thường lệ. \nCa trực xáo động ấy rốt cuộc cũng khép lại khi mặt trời đã lặn hẳn, nhường chỗ cho màn đêm. Thế nhưng Endministrator vẫn chưa rời đi, bởi Yan Ning vẫn chưa thể chặn lại hoặc thu hồi lá thư. \nTrở về doanh trại Cảnh Vệ, Mi Fu bật chiếc đèn bàn và bắt đầu điền các loại hồ sơ, thủ tục dưới thứ ánh vàng ấm áp của ngọn đèn. Gió bên ngoài rít lên từng hồi. Cô bất chợt đặt bút xuống rồi bước ra ngoài, nhưng thứ duy nhất đập vào mắt chỉ là những chiếc lá rời bị cơn gió cuốn đi. Suốt cả ngày hôm ấy, trong lòng vị Đội Trưởng vẫn luôn thấp thỏm một cách khó hiểu. \nMi Fu quay lại bàn làm việc, khép tập hồ sơ vụ án lại. Từ trong túi, cô lấy ra một bức thư từ Trụ Sở Cột Chính, tờ giấy đã nhăn nhúm và thấm đẫm mồ hôi. Cô đã ký nhận nó từ sáng sớm, nhưng mãi vẫn không có thời gian để mở ra đọc. \n\nTÀI LIỆU: Một Lá Thư Vốn Không Được Định Để Gửi Đi \nMi Fu: \nCó lẽ đến lúc em đọc được lá thư này, chị đã lên đường rồi. Nếu chẳng may không thể quay về, chị muốn giao phó cho em việc cáng đáng toàn bộ công tác an ninh công cộng và hành chính của Thành Phố Võ Lăng. \nEm đã đồng hành cùng Võ Lăng qua từng chặng đường. Em có mặt từ khi nơi này còn chỉ là một công trường đơn sơ giữa chốn hoang dã, và cũng là người ở lại cho đến ngày nó trở thành một thành phố với những tòa nhà đẹp đẽ cùng những con đường ngay lối. Em từng lao lực cùng đội xây dựng, từng thức đêm canh gác, từng dùng chính nắm đấm của mình để chặn đứng mọi phiền toái. Chị biết mối ràng buộc của em với Võ Lăng sâu nặng đến nhường nào, và cũng chính vì thế, mới dám giao cho em trọng trách nặng nề này. \nEm chưa từng lùi bước trước bổn phận hay trách nhiệm. Đó là điểm mạnh của em. Nhưng tính khí của em lại thiếu kiên nhẫn, quá đỗi cố chấp. Đó là một phần con người em, nhưng việc bảo vệ một thành phố không chỉ là đánh lui kẻ địch hay giành lấy chiến thắng. Nó đòi hỏi sự mềm dẻo và tỉnh táo. Cân nhắc cho thấu đáo, hành động một cách thận trọng. Đó không phải là dấu hiệu của yếu đuối, mà là phương cách để bảo đảm thành công, cũng là để khiến chị được an lòng. \nCòn có cả chuyện của Trại Thanh Ba nữa. Mỗi lần nhắc đến, em lại như bị kéo căng đến cực hạn. Chỉ cần chạm mặt người cùng Trại là ngòi nổ trong em dường như lập tức bén lửa, nhưng em vẫn luôn cố gắng hành xử với lòng khoan dung. Có lẽ người khác không nhìn thấy, nhưng chị thì thấy rất rõ. Điều đó chẳng có gì phải xấu hổ cả. Em hoàn toàn có quyền làm bạn với Tangtang mà không cần phải giấu giếm điều ấy. \nVà còn nhớ khi chị từng khuyên em luyện thư pháp không? Lúc đầu, chị chỉ mong việc ấy có thể giúp em học thêm đôi phần nhẫn nại. Nào ngờ nét chữ của em rốt cuộc cũng nghiêm cứng và quyết liệt chẳng khác gì nắm đấm của em, rồi từ đó tự thành lấy một vẻ đẹp rất riêng. Những buổi học ấy giờ đã không còn cần thiết nữa. Dù vậy, nếu em vẫn thấy thư pháp là một điều thú vị, lại có chút thời gian nhàn rỗi, thì hãy đến tìm Thiên Sư Ge xin chỉ giáo. Không cần mang Bánh Trôi Đường đến cho anh ấy đâu. Sức khỏe của anh giờ không còn cho phép dùng món đó nữa rồi. \nEm vẫn thường nói rằng mình đã ăn đủ đồ ngọt cho cả một đời, và từ nay chẳng muốn nhìn thấy chúng thêm lần nào nữa, bởi vị ngọt giờ chỉ khiến em thấy khó chịu. Nhưng chị lại không nghĩ vậy. Không cần phải trốn tránh điều mình yêu thích. Bổn phận vốn nặng nề và mệt mỏi. Niềm vui thuộc về riêng bản thân vốn đã hiếm hoi, nên đôi chút nuông chiều nhỏ nhoi cũng nên được giữ lại. Thỉnh thoảng một hai miếng, hẳn sẽ chẳng hại gì. \nSau cùng, còn vài lời muốn nói riêng với em. Điều chị thực lòng mong trao lại cho em nhất không phải là thành phố này, mà là chính em. Ngày đầu tiên gặp em, em vẫn chỉ là một cô gái trẻ với ánh mắt rực lửa. Chỉ trong chớp mắt, em đã lao thẳng về phía chị, nắm đấm giương cao như sẵn sàng ra đòn. Thế nhưng năm tháng đã trôi qua. Em gánh trên vai ngày một nhiều trách nhiệm hơn, nắm đấm của em ngày một tàn nhẫn hơn, còn những nếp nhăn cau có trên mặt thì chưa từng dịu xuống. Đã lâu rồi không còn được nhìn thấy con người thật sự của em nữa. \nVì vậy, hãy nhớ lấy: nếu rồi sẽ có một ngày em thấy mình không còn vui nữa, nếu công việc chỉ còn là một gánh nặng, thì cứ để mặc nó ở đó. Đừng cảm thấy mình mắc nợ bất kỳ ai, cũng đừng bận tâm người khác sẽ nói gì. Hãy đi đến bất cứ nơi nào em muốn. Quay về Trại cũng được, đi khắp Talos-II cũng được. Thậm chí, em cũng có thể chọn chẳng làm gì cả. Em vốn không nợ Võ Lăng điều gì, và bởi vậy, em đáng được tự do. \nHãy chăm sóc tốt cho bản thân. Đến lúc thích hợp, hãy cứ mỉm cười, cứ bật cười. \n\nZhuang Fangyi"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN liên hoàn <@ba.key>Cú Đấm Bất Hận</> được cường hóa: Thời gian hồi chiêu giờ sẽ là <@ba.vup>{cooldown}</> giây. Hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</> được áp dụng bởi kỹ năng sẽ tăng lên thêm <@ba.vup>+{extra_effect:0%}</> và có <@ba.vup>+{extra_time:0}</> giây hiệu lực.",
+      "name": "Tuần Tra Không Ngơi"
+    },
+    "potential2": {
+      "description": "Sức Mạnh <@ba.vup>+{Str:0}</>, Công Phép <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Cảm Nhận Chuyển Động Hài Hòa"
+    },
+    "potential3": {
+      "description": "Thiên Phú <@ba.key>Thịnh Nộ Không Ngơi</> được cường hóa: Thời gian hiệu lực <#ba.shield>Khiên</> <@ba.vup>+{talent_shield_duration}</> giây. Thời gian hồi chiêu kích hoạt <#ba.shield>Khiên</> là <@ba.vup>{talent_shield_cd}</> giây. Mỗi lần khiên được kích hoạt, Mi Fu nhận Tấn Công <@ba.vup>+{potential_addattack_effect:0%}</> trong {potential_addattack_duration} giây.",
+      "name": "Khởi Động Hoàn Tất"
+    },
+    "potential4": {
+      "description": "Tuyệt kỹ <@ba.key>Tuyệt Tâm</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Chân Khí Tam Luyện"
+    },
+    "potential5": {
+      "description": "KN chiến đấu được cường hóa: Hệ Số ST của các chiêu <@ba.key>Kẻ Bắt Mây</>, <@ba.key>Truy Dấu Và Nghiền Nát</> & <@ba.key>Phân Định Thế Thái</> được tăng lên gấp <@ba.vup>{atk_scale}</> lần so với ban đầu. Tuyệt Kỹ <@ba.key>Tuyệt Tâm</> được cải thiện: Suy Sụp Gây Ra <@ba.vup>+{poise2}</>.\n<@ba.info>Buff Hệ Số ST KN Chiến Đấu được cộng dồn với thiên phú Trấn Áp Nghiêm Trừng.</>",
+      "name": "Quyền Sư Của Sơn Trại"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Chỉ Một Ngụm",
+      "author": "Cenm0",
+      "description": "Cô không để thói quen ấy cản trở nhiệm vụ của mình, nên đã thay thứ trà hảo hạng bằng những thức uống công năng."
+    },
+    "potential3": {
+      "name": "Khoảng Lặng Riêng",
+      "author": "u介",
+      "description": "Ngay cả hiện thân nghiêm khắc của công lý cũng cần có lúc thư giãn. Chỉ là đừng kể với ai."
+    },
+    "potential5": {
+      "name": "Nâng Ly Chúc Mừng",
+      "author": "萃_SUIKA",
+      "description": "Đêm ngắn chẳng tày gang, hãy cùng nâng chén uống mừng niềm vui."
+    }
+  }
+}

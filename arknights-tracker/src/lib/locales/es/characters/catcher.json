@@ -71,7 +71,7 @@
         "weaknessDurationS": "Duración (s) de debilidad"
       },
       "name": "Asalto de manual",
-      "description": "Blandiendo la gran espada realiza 2 tajos consecutivos para infligir <@ba.pd>DAÑ físico</> y aplicar <#ba.weak>Debilitar</>, seguido de un poderoso golpe descendente que inflige <@ba.pd>DAÑ físico</> masivo y aplica <#ba.knockdown>Derribar</> a todos los enemigos dentro del área de efecto."
+      "description": "Balancea la gran espada para realizar 2 cortes consecutivos que infligen <@ba.pd>DAÑ físico</> y aplican <#ba.weak>Debilidad</>, seguidos de un poderoso golpe descendente que inflige una gran cantidad de <@ba.pd>DAÑ físico</> y aplica <#ba.knockdown>Derribar</> a todos los enemigos dentro del área de efecto."
     },
     "indicator": {
       "levels": [

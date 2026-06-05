@@ -1,0 +1,153 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Triturar",
+      "Susc. FÍS."
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [],
+    "blocTag": "Academia Científica Hongshan (A.C.H.)",
+    "expertTags": [
+      "Constitución",
+      "Técnica de combate"
+    ],
+    "giftPreferTags": [
+      "Selección de los Espadachines de Wuling"
+    ],
+    "hobbyTags": [
+      "Deportes",
+      "Estilo de vida"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión",
+        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate"
+      },
+      "name": "Puñomante de cuchillas",
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "cloudtrapperDmgMultiplier": "Multiplicador de DAÑ de Atrapanubes",
+        "trailAndMangleDmgMultiplier": "Multiplicador de DAÑ de Rastrear y destrozar",
+        "trailAndMangleStagger": "Tambaleo por Rastrear y destrozar",
+        "worldSplitterDmgMultiplier": "Multiplicador de DAÑ de Divisora de mundos",
+        "worldSplitterStagger": "Tambaleo por Divisora de mundos"
+      },
+      "name": "Tríplex de Qingbo",
+      "description": "Sigue lanzando la habilidad de batalla de Mi Fu para desatar 3 movimientos diferentes. El primer lanzamiento de habilidad de batalla es <@ba.key>Atrapanubes</>.\n<@ba.key>MOVIMIENTO 1: - Atrapanubes</>: Cuesta <@ba.vup>100</> PH y <#ba.return>devuelve</><@ba.vup> 50</> PH después de lanzarse; Mi Fu dispara una cadena de agarre desde sus guanteletes que inflige <@ba.pd>DAÑ físico</> al objetivo y a los enemigos cercanos, luego intenta atraer al objetivo y a los enemigos cercanos hacia ella. Después de lanzar el MOVIMIENTO 1, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Rastrear y destrozar</>.\n<@ba.key>MOVIMIENTO 2: - Rastrear y destrozar</>: Cuesta <@ba.vup>50</> PH; Mi Fu desata una ráfaga de puñetazos que inflige <@ba.pd>DAÑ físico</>, y el golpe final aplica <#ba.crush>Triturar</>. Si este Triturar <#ba.consume>consume</> al menos 3 acumulaciones de <#ba.noguard>Vulnerabilidad</> de un solo objetivo, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Divisora de mundos</>.\n<@ba.key>MOVIMIENTO 3: - Divisora de mundos</>: Cuesta <@ba.vup>50</> PH; Mi Fu inflige <@ba.pd>DAÑ físico</> masivo en un área especificada; este DAÑ no se considera DAÑ de habilidad de batalla, sino DAÑ de <#ba.crush>Triturar</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo",
+        "physicalSusceptibility": "Susceptibilidad física",
+        "physicalSusceptibilityDurationS": "Duración de Susceptibilidad física (s)",
+        "ultimateEnergyGain": "Ganancia de Energía máxima"
+      },
+      "name": "Puños sin arrepentimientos",
+      "description": "ACTIVACIÓN DE COMBO: Cuando un enemigo tiene 3 o más acumulaciones de <#ba.noguard>Vulnerabilidad</>.\nMi Fu desata un devastador gancho contra el enemigo, inflige <@ba.pd>DAÑ físico</> y aplica <#ba.physicalvul>Susceptibilidad física</> temporal. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo"
+      },
+      "name": "Pila del desalmado",
+      "description": "Tras una breve carga de poder, Mi Fu se desplaza hacia adelante para <#ba.airborne>Levantar</> a un objetivo por la fuerza en el aire, luego azota a dicho objetivo para infligir <@ba.pd>DAÑ físico</>. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>."
+    },
+    "indicator": {
+      "levels": [
+        "Fuerza del operador +10.",
+        "Fuerza del operador +15.",
+        "Fuerza del operador +15.",
+        "Fuerza del operador +20."
+      ],
+      "name": "Forjado"
+    },
+    "talent1": {
+      "levels": [
+        "Movimiento de habilidad de batalla <@ba.key>Divisora de mundos</> mejorada: Al golpear a un objetivo con <#ba.physicalvul>Susceptibilidad física</> o <@ba.poise>Tambaleado</>, el Multiplicador de DAÑ aumenta <@ba.vup>{crushmultiadd_talent+1}</> veces el original.",
+        "Movimiento de habilidad de batalla <@ba.key>Divisora de mundos</> mejorada: Al golpear a un objetivo con <#ba.physicalvul>Susceptibilidad física</> o <@ba.poise>Tambaleado</>, el Multiplicador de DAÑ aumenta <@ba.vup>{crushmultiadd_talent+1}</> veces el original."
+      ],
+      "name": "Castigo severo"
+    },
+    "talent2": {
+      "levels": [
+        "Habilidad de combo mejorada: Al lanzar el combo, se crea un <#ba.shield>escudo</> con <@ba.vup>{talent_shield_hppercent:0%}</> de PV Máx. y una duración de {talent_shield_duration} s. Mientras el escudo esté activo, será más difícil interrumpir a Mi Fu.\nEste efecto solo puede activarse una vez cada {talent_shield_cd} s.",
+        "Habilidad de combo mejorada: Al lanzar el combo, se crea un <#ba.shield>escudo</> con <@ba.vup>{talent_shield_hppercent:0%}</> de PV Máx. y una duración de {talent_shield_duration} s. Mientras el escudo esté activo, será más difícil interrumpir a Mi Fu.\nEste efecto solo puede activarse una vez cada {talent_shield_cd} s."
+      ],
+      "name": "Furia vigilante"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asígnalo a la Sala de recepción para otorgar a los operadores un pequeño Aumento de probabilidad de Pista 3: A.C.H. (se activa tras la asignación; los efectos del mismo tipo no se pueden acumular)",
+        "Asígnalo a la Sala de recepción para otorgar a los operadores Aumento de probabilidad de Pista 3: A.C.H. (se activa tras la asignación; los efectos del mismo tipo no se pueden acumular)"
+      ],
+      "name": "Informantes secretos"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de materia fúngica del +20 %",
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de materia fúngica del +30 %"
+      ],
+      "name": "Tisana esotérica"
+    },
+    "files": {
+      "main": "NOMBRE CLAVE: Mi Fu \nGÉNERO: Femenino \nAUTENTICACIÓN: Academia Científica Hongshan \nFecha de nacimiento: 9 de julio \nRAZA: Sarkaz \n[ESTADO DE INFECCIÓN POR ORIPATÍA] \nOripatía positiva, según informes de examen médico. \n\n[EXAMEN FÍSICO INTEGRAL] \nFUERZA FISIOLÓGICA: Excelente \nHABILIDAD DE COMBATE: Excelente \nPERICIA TÁCTICA: Estándar \nASIMILACIÓN DE ARTES DE ORIGINIO: Estándar",
+      "humanResources": "Mi Fu es la capitana de los vigilantes del Distrito de Desarrollo Científico de Wuling, perteneciente a la Academia Científica Hongshan (A.C.H). Actualmente es una visitante de intercambio en Endfield Industries. La División de tecnología especializada se encarga de su recepción. \n\nLa Capitana Mi Fu afirmó que el propósito de su visita era ver a algunos viejos amigos de Endfield. Pero desde su llegada, se ha vuelto evidente que ha estado estudiando y juzgando a cada operador por su destreza en combate. En varias ocasiones, les dijo en voz baja estas palabras a operadores con los que se cruzó: “¿Te interesa entrenar conmigo?” Cuando Mi Fu vio nuestras cabinas de entrenamiento, alzó una ceja y se interesó de inmediato. Después de probar las instalaciones ofrecidas, expresó: “¡Habría venido hace muchísimo si hubiera sabido que este lugar ofrecía peleas tan buenas como estas!” E inmediatamente extendió la duración de su visita por unos días más. En cualquier caso, esperamos que su visita de intercambio a Endfield sea lo más enriquecedora y entretenida posible. \n— Martin Marvin Malen, asistente, División de RR. HH., Endfield Industries",
+      "file1": "DOCUMENTO: Registros de ascenso de RR. HH. del Distrito de Desarrollo Científico de Wuling \nNOMBRE: Mi Fu \nREGIÓN DE ORIGEN: Wuling \nEXPERIENCIA LABORAL: 3 años \nPUESTO ACTUAL: Vigilante de Wuling \nASCENSO PROPUESTO: Capitana Vigilante de Wuling \n\nCURRÍCULUM Y ANTECEDENTES: \nMi Fu era Residente de la empalizada de Qingbo y más tarde fue reclutada por el Distrito de Desarrollo Científico de Wuling, donde fue nombrada vigilante tras la finalización de la Ciudad de Wuling. Desde que asumió el cargo, ha trabajado constantemente en el frente, demostrando amplios conocimientos sobre cuestiones de seguridad dentro de la Ciudad de Wuling y las regiones periféricas, así como decisión y rapidez al atender diversas emergencias y casos. Mi Fu está comprometida con la Ciudad de Wuling, tiene tolerancia cero ante cualquier forma de delincuencia o criminalidad y siempre actúa con estricta justicia. Tiene buena reputación, ejerce una disuasión efectiva y sirve como punto de referencia para el público en general. \n\nFORTALEZAS: \nDestreza de combate excepcional. Condición física y fortaleza impresionantes. Capaz de manejar amenazas de alto riesgo. \nDecisiva y hábil para ejecutar órdenes. Capaz de tomar las decisiones correctas ante situaciones complejas. \nAtenta y protectora con quienes trabajan bajo su mando. Capaz de formar un equipo sólido y cohesionado. \nBuena reputación entre la población general y se ha ganado su confianza y apoyo. Entre las opiniones del público figura: “Un poco brusca, pero siempre justa”. \n\nÁREAS A MEJORAR: \nExceso de ímpetu al recurrir a la fuerza. Tendencia a emplear medidas físicas al resolver diversas situaciones. Falta de rigor en el procedimiento. \nLigera desventaja en trabajo administrativo, como la redacción de informes. Habilidades administrativas limitadas. \nDe temperamento explosivo. Carece de paciencia para comunicarse. Propensa a conflictos con otros. \nDeposita una confianza desmedida en personas cercanas. La toma de decisiones puede verse afectada por relaciones personales y emociones. \n\nEVALUACIÓN GENERAL: \nMi Fu ha logrado resultados notables en labores de patrullaje y aplicación de la ley. Habiendo sofocado con éxito múltiples emergencias, es una oficial prometedora en la que se puede confiar para el trabajo de campo. Sin embargo, tiende a enfoques bruscos y poco refinados, tiene escaso rigor en el procedimiento y corre el riesgo de violar la cadena de mando adecuada. No obstante, el público en general está muy satisfecho con el desempeño de Mi Fu. La candidata ha hecho aportes positivos, aunque no han faltado errores. Será necesario brindarle más orientación y fortalecer su autocontrol. \n\nOPINIONES DEL/DE LOS EVALUADOR(ES): \nMi Fu tiene un temperamento indomable y una gran vocación por hacer justicia. Aunque a menudo actúa por su cuenta, sus acciones nunca tienen malas intenciones. Levanta los puños no por sí misma, sino por la seguridad de la gente. Su aparente dureza es simplemente resultado de su franqueza. Los episodios de incumplimiento en el procedimiento y la falta de perfección administrativa solo ocultan, no anulan, su atención minuciosa al detalle. Puede quedarse corta en esas áreas, pero también son donde más destaca. \nEstoy dispuesto a dar fe de su carácter y buena reputación, y a recomendar su ascenso a Capitana vigilante de la Ciudad de Wuling, donde se convertirá en un pilar de la seguridad pública de la ciudad. También supervisaré y guiaré personalmente a Mi Fu en su trabajo diario. \n\nEVALUADOR(ES): Zhuang Fangyi \n19 de octubre, año 145",
+      "file2": "Hmph. ¡Esa loca! De hecho crecí con ella y le acomodé sus buenas palizas muchas veces. No nos caemos bien, pero a mí me gusta dejarle moretones bien feos y ella trataba de devolvérmelos. Mimi la loca sí estaba bien loca en ese entonces, pero bueno. No le tengo miedo. Como sea, luego se largó a Wuling, se consiguió una placa e incluso la ascen-dieron a “Capitana vigilante”. Ella creyó que eso le daba derecho a poner esa cara de asco cada que me ve. Sí, como sea. Puede ponerse esa mirada de pocos amigos todo el día. Yo sé lo que hay debajo de su estúpida fachada de vigilante. Una mujer loca. ¡Eso es lo que es! \nSi vuelvo a pelear con ella, probablemente terminaremos en un empate. Pero ya verán. La Jefa suprema va a ganar al final. ¿Y qué si tiene los brazos más grandes? ¡No se les olvide! Yo siempre he sido más rápida, más lista y más escurridiza. La voy a hacer pedazos. \nSí, y sobre nuestras incursiones en Wuling, esa loca es un verdadero dolor de cabeza. La Fam tenía todo planeado, pero no parábamos de toparnos con ella en el depósito, el almacén y los escondites. Como si ya nos estuviera esperando. Dimos buena pelea, pero Mimi tiene una pandilla peligrosa y mandó a muchos de los nuestros a prisión. Y peor aún, también intentó arruinar nuestro negocio en la Empalizada tratando demasiado bien a la Fam capturada. Algunos en la Fam decidieron quedarse en Wuling porque la comida y la vida allí son mejores. \n¡Ya verán! Voy a hacer añicos a esa loca de verdad. Yo sola. ¿Entendido? ¡Ya verás, loca! ¡La Jefa suprema viene al pueblo y te va a poner en tu lugar! \n— Tangtang, Jefa suprema de la Empalizada de Qingbo \n\nSí, Fam. Mi Fu me mandó directo a la cárcel. Llevábamos un buen botín con la Fam cuando de repente se nos apareció en el camino. Las piernas se me hicieron gelatina al instante. Luego me dio una paliza, pero tampoco fue para tanto. Como sea, me preguntó: “¿Quieres quedarte un rato en el pueblo?” ​Mira, viejo, yo estaba viendo doble y veía estrellitas por todos lados. No supe si asentí o no, pero de verdad me arrastró hasta el pueblo. \nAl principio yo estaba de que, lo juro, ¡viejo, me están llevando al infierno! Pero luego conseguí un trabajo en el pueblo, techo, cama y hasta buena comida. Después entendí que Mimi la loca sí nos estaba dando opciones. Tiene esa cara de pocos amigos y habla como si yo le debiera dinero, pero Mimi probablemente tuvo que abrirse paso entre un montón de porquería bien peligrosa para conseguirles trabajos decentes a los de la Fam. \nAh, sí, ya oyeron, los escondites de botín en la arboleda que les hemos venido robando a los Wulinguenses en realidad son suministros extra del pueblo. Yo sí estaba algo confundida de por qué molestarse en llevar herramientas viejas y obsoletas a ese lugar. Resultó que eran para la Empalizada. La gente dice que Mimi la loca es durísima con la Fam de la Empalizada, pero en realidad siempre está ayudando y preocupándose a su manera sin que se note. \n— Anónimo, ciudadano actual de Wuling (antiguo Residente de la empalizada de Qingbo)",
+      "file3": "DOCUMENTO: Un estudio sobre las artes marciales de Qingbo (extracto) \nLos orígenes de las Artes marciales de Qingbo pueden rastrearse hasta la aldea conocida como Empalizada de Qingbo, en la región de Wuling. Es una tradición practicada por los Residentes de la empalizada. Sin embargo, esta colección de técnicas de combate es tan esotérica que no fue registrada en el Apéndice del Códice marcial. \nHay que estudiar la historia de la Empalizada de Qingbo para entender las características únicas de las Artes marciales de Qingbo. Durante la antesala de la Guerra de la humillación y los años que le siguieron, un grupo de refugiados yaneses decidido a alejarse de los conflictos y la guerra viajó a lo que se convertiría en la moderna región de Wuling. La Grieta gigantesca de Wuling (GG) representaba una amenaza, pero también brindaba una barrera contra incursiones y ataques hostiles. Así, los refugiados decidieron asentarse y construir una aldea que finalmente creció hasta convertirse en la Empalizada de Qingbo. Según algunos, estos Empalizadores fueron los habitantes originales de Wuling. \nDesde esta perspectiva, la Empalizada de Qingbo parece ser un santuario pacífico, pero esa suposición está muy lejos de la verdad. La GG de Wuling ha creado un entorno muy hostil, con grandes cantidades de Aggeloi errantes, bestias salvajes temibles y actividad de grietas frecuente. Los Empalizadores han estado luchando constantemente contra estos “enemigos” externos, y esas batallas intensas dieron origen gradualmente a varias técnicas de combate únicas de la Empalizada de Qingbo. El entrenamiento en estas técnicas no solo fortalece el cuerpo, sino que también incrementa el control sobre las Artes de Originio innatas. Algunos de los movimientos y habilidades también resaltan las características únicas del área de Qingbo. \nUn ejemplo es el famoso “Paso del manantial impetuoso”, que permite a los artistas marciales caminar sin esfuerzo sobre un río en corriente mientras dejan remolinos turbulentos a su paso. Al principio lo confundí con una forma de hechicería que manipula mentalmente el agua en movimiento. Pero el Paso resulta ser una técnica de Artes de Originio que concentra energía de Artes en las puntas de los pies y luego la canaliza al agua con una precisión increíble para generar vibraciones resonantes. Otro ejemplo es “Paseo sobre hojas de bambú”, que literalmente es una técnica de salto usando frágiles hojas de bambú como apoyo. La técnica consiste en aplicar una “mínima porción de pulso resiliente” de Artes de Originio sobre hojas de bambú de apariencia frágil. Ese nivel de fineza y control, si se perfecciona adecuadamente, podría desatar una aterradora ráfaga de “Golpe de impulso” con muy poco movimiento. \nLa Capitana vigilante Mi Fu, del Distrito de Desarrollo Científico de Wuling, resulta ser practicante de las Artes marciales de Qingbo. Ella describió el “Golpe de impulso” como “un relámpago”. Al atacar al enemigo, el artista marcial debe tratar el cuerpo como un “cañón de mano”, elevarse como un Lung volador y descender como un rayo fulminante. Este humilde autor ha sido testigo personal de la Capitana Mi Fu en acción durante una misión para erradicar a los Aggeloi. Los golpeó con tanta fuerza que sus movimientos parecían comparables con los del Tianshi Lei Fa (Artes del Trueno). \nAdemás de sus poderosas artes marciales, los Empalizadores también establecieron una tradición única de competencia marcial. Durante muchos años, todos los artistas marciales de la Empalizada de Qingbo se desafiaron con entusiasmo entre sí para ver quién era el mejor. El día del Duelo en la arena, cada Empalizador, sin importar género o edad, se reunía para presenciar las peleas y apoyar a sus contendientes favoritos. La propia Capitana Mi Fu era una campeona indiscutible de la Empalizada antes de unirse a Wuling. Desafortunadamente, la arena de la Empalizada estaba en reparaciones mayores por daños recientes cuando el autor redactó esta sección. Privado de la oportunidad de visitar el sitio en persona, solo pude pedirle a la Capitana Mi Fu que me enviara fotografías u otros datos de imagen de la arena reparada. \nEn una ocasión le expresé a la Capitana Mi Fu mi deseo de entrevistar al Gran maestro de las Artes marciales de Qingbo, el mismísimo “Domarríos”. Sin embargo, la capitana me dijo que el Gran maestro se convirtió en ermitaño y que ni siquiera ella sabía adónde se había ido. La capitana también me mostró una postal enviada por su Maestro superior que hablaba de sus viajes. La atención del Gran maestro quedó atrapada, durante más de una hora, por dos niños peleándose en algún callejón de la Franja de la Civilización. Antes de irse, el anciano suspiró y dijo: “Entrené toda mi vida, pero aun así envidio a estos niños. Pelean cuando quieren y siguen siendo amigos después. Sin duda, una escena hermosa”. \nFinalmente, le presenté a la Capitana Mi Fu una propuesta para organizar y recopilar información relacionada con las Artes marciales de Qingbo, e incluirla en la Continuación del apéndice del Códice marcial. La capitana aceptó con gusto y expresó que su deseo era que más personas protegieran Wuling con sus puños. Cuando eso ocurra, podría dejar ese lugar (Wuling) y retomar su deseo de toda la vida de pelear cuando quisiera.",
+      "file4": "“¡Endmin! ¡Por favor ayúdame a mantener ocupada a Mi Fu durante un día!” Era ya de noche cuando Yan Ning hizo una visita repentina a Endministrator por un asunto extremadamente urgente. \nSegún Yan Ning, vio una carta sellada destinada a Mi Fu mientras limpiaba el escritorio de Zhuang Fangyi. Así que tomó la iniciativa de enviarla por correo al cuartel de los Vigilantes. \nPero pronto descubrió que la carta no estaba destinada a entregarse de inmediato. En palabras de Yan Ning: “¡Si Mi Fu lee la carta antes de la hora prevista por Fangyi, las cosas podrían salir muy mal! ¡Por favor mantén distraída a Mi Fu mientras intercepto la entrega de la carta!” \nY así, Endministrator usó la excusa de una “auditoría en vivo” y acompañó a Mi Fu durante todo su turno diario. \nTodo comenzó al amanecer, cuando un mercader viajero rodeado por los Aggeloi pidió ayuda. La Capitana Mi pasó toda la mañana entrenando sin piedad a los nuevos vigilantes. Por la tarde, tuvo que arbitrar disputas entre los dueños de tiendas de la Avenida Fangxing, seguido de un encuentro inesperado con la “Jefa suprema” en la arboleda de bambú... Los puños de Mi Fu no descansaron ni un instante, pero siguieron siendo tan eficaces como siempre. \nSu agitado turno finalmente terminó cuando el sol por fin se ocultó y cayó la noche. Aun así, Endministrator permaneció allí, ya que Yan Ning todavía no había interceptado ni recuperado la carta. \nDe vuelta en el cuartel de los Vigilantes, Mi Fu encendió la lámpara del escritorio y empezó a llenar archivos y registros procedimentales bajo su cálido resplandor amarillo. El viento afuera silbaba. De pronto bajó la pluma y salió, pero no vio más que hojas sueltas arrastradas por la brisa. La capitana se había sentido particularmente inquieta ese día. \nMi Fu regresó a su escritorio y cerró los expedientes. De su bolsillo sacó una carta de la Oficina principal de pilares, arrugada y empapada de sudor. La había firmado y recibido por la mañana, pero nunca encontró tiempo para leerla. \n\nDOCUMENTO: Una carta no destinada a ser entregada \nMi Fu: \nProbablemente ya vaya en camino para cuando leas esta carta. En caso de que no regrese, contaré contigo para encargarte de todos los asuntos de seguridad pública y administrativos de la Ciudad de Wuling. \nHas acompañado a Wuling en cada paso. Estuviste allí cuando no era más que una simple obra en el Área silvestre y permaneciste hasta que se convirtió en una ciudad de bellos edificios y caminos ordenados. Trabajaste junto a la cuadrilla de construcción, montaste guardia nocturna y mantuviste los problemas a raya con tus puños. Sé que tus lazos con Wuling son profundos, y por eso te encomiendo este deber tan pesado. \nNunca rehuiste el deber ni la responsabilidad. Esa es tu fortaleza. Pero a tu temperamento le falta paciencia y es obstinado. Entiendo que eso forma parte de tu carácter, pero la tarea de defender una ciudad va más allá de combatir enemigos y ganar batallas. Requiere tacto y prudencia. Deliberar y actuar con prudencia no son signos de debilidad, sino medidas para garantizar el éxito y darme tranquilidad. \nTambién está el asunto de la Empalizada de Qingbo. Este asunto te pone rígida y tensa. Encontrarte con otros Empalizadores parece encender tu mecha, pero sé que has estado luchando por actuar con misericordia. Puede que algunas personas no conozcan la verdad, pero yo la veo con claridad. No es nada de lo que debas avergonzarte. Tienes todo el derecho de ser amiga de Tangtang sin sentir la necesidad de mantenerlo en secreto. \n¿Y recuerdas cuando te aconsejé practicar tu caligrafía? Al principio esperaba que eso pudiera mejorar tu paciencia, pero tus trazos resultaron tan severos e inflexibles como tus puños, y asumieron una belleza propia. Las lecciones ya no son necesarias, pero, por supuesto, si disfrutas la caligrafía y tienes tiempo libre, busca consejo del Tianshi Ge. No hace falta llevarle Tangyou Baba. Su salud ya no se los permite en la dieta. \nA menudo decías que ya habías tenido suficientes dulces para toda la vida y que no querías volver a verlos porque ahora lo dulce te cae mal. Pero yo creo lo contrario. No hay necesidad de evitar lo que te gusta. El deber es pesado y agotador. Las oportunidades de felicidad personal son escasas, y conviene conservar pequeños gustos al alcance. Uno o dos pedacitos de vez en cuando no harán daño. \nFinalmente, tengo unas palabras personales que decirte. Lo que más quería darte no es esta ciudad, sino a ti misma. Eras una jovencita de mirada intensa cuando te conocí. En un solo parpadeo te abalanzaste directamente sobre mí con el puño listo para golpear. Pero han pasado los años. Asumiste responsabilidades mayores, tus puños se volvieron más implacables y tus ceños no se relajaron nunca. Hace tiempo que no veo tu verdadero yo. \nAsí que recuerda, si llega un día en que te sientas infeliz y el trabajo se vuelva una carga, entonces simplemente déjalo ahí. No te sientas en deuda con nadie y simplemente ignora lo que digan los demás. Ve a donde quieras. Regresa a la Empalizada o viaja por todo Talos-II. Incluso puedes elegir no hacer nada. No le debes nada a Wuling, y por eso deberías ser libre. \nCuídate. Sonríe y ríe cuando llegue el momento. \n\nZhuang Fangyi"
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidad de combo <@ba.key>Puños sin arrepentimientos</> mejorada: Duración del tiempo de reutilización <@ba.vup>{cooldown}</> s. El efecto de <#ba.physicalvul>Susceptibilidad física</> aplicado por la habilidad aumenta en <@ba.vup>+{extra_effect:0%}</> y tiene una duración de <@ba.vup>+{extra_time:0}</> s.",
+      "name": "Guardia Inquieta"
+    },
+    "potential2": {
+      "description": "Fuerza <@ba.vup>+{Str:0}</>, Intensidad de artes <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Cinestesia de la Armonía"
+    },
+    "potential3": {
+      "description": "Talento <@ba.key>Furia vigilante</> mejorado: duración de <#ba.shield>Escudo</> <@ba.vup>+{talent_shield_duration}</> s. Tiempo de reutilización de activación de <#ba.shield>Escudo</> <@ba.vup>{talent_shield_cd}</> s. Cada vez que se activa el escudo, Mi Fu obtiene ATQ <@ba.vup>+{potential_addattack_effect:0%}</> durante {potential_addattack_duration} s.",
+      "name": "Calentamiento completo"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>Pila del desalmado</> mejorada: El costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Chi refinado tres veces"
+    },
+    "potential5": {
+      "description": "Habilidad de batalla mejorada: Los multiplicadores de DAÑ de los movimientos <@ba.key>Atrapanubes</>, <@ba.key>Rastrear y destrozar</> y <@ba.key>Divisora de mundos</> aumentan <@ba.vup>{atk_scale}</> veces el original. Máxima <@ba.key>Pila del desalmado</> mejorada: Tambaleo infligido <@ba.vup>+{poise2}</>.\n<@ba.info>El incremento del Multiplicador de DAÑ de habilidad de batalla puede acumularse con el talento Castigo severo.</>",
+      "name": "Pugilista de la Empalizada"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Solo un trago",
+      "author": "Cenm0",
+      "description": "No dejaría que su hábito interfiriera con sus deberes, así que reemplazó la buena bebida por bebidas funcionales."
+    },
+    "potential3": {
+      "name": "Descanso privado",
+      "author": "u介",
+      "description": "Incluso la estricta encarnación de la justicia debe relajarse. Solo no se lo digas a nadie."
+    },
+    "potential5": {
+      "name": "Brindis por la alegría",
+      "author": "萃_SUIKA",
+      "description": "La noche es corta, así que brindemos y bebamos por la alegría."
+    }
+  }
+}

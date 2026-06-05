@@ -740,7 +740,9 @@
     "amethystPowder": "Polvo de amatista",
     "aerospaceMaterialIi": "Material aeroespacial II",
     "xircon": "Xirconio",
-    "xiranite": "Xiranita"
+    "xiranite": "Xiranita",
+    "centuryRind": "Corteza centenaria",
+    "caudalGoldscale": "Escama dorada caudal"
   },
   "common": {
     "copy": "Copiar",
@@ -924,7 +926,9 @@
     "pogranichnik": "Pogranichnik",
     "rossi": "Rossi",
     "zhuangfy": "Zhuang Fangyi",
-    "zhuangFangyi": "Zhuang Fangyi"
+    "zhuangFangyi": "Zhuang Fangyi",
+    "miFu": "Mi Fu",
+    "mifu": "Mi Fu"
   },
   "weaponsList": {
     "industry01": "Industria 0.1",
@@ -994,7 +998,10 @@
     "prominentEdge": "Filo prominente",
     "waveTide": "Marea ondulante",
     "umbralTorch": "Antorcha del umbral",
-    "finchaser30": "Cazaletas 3.0"
+    "finchaser30": "Cazaletas 3.0",
+    "phantomPain": "Dolor fantasma",
+    "amaranthineTassel": "Borla amarantina",
+    "beaconOfDuty": "Baliza del deber"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -1091,7 +1098,14 @@
     "world_energy_point07_4": "Aluvión energético severo: Piedra Marcadora",
     "world_energy_point08_3": "Aluvión energético: Área de pruebas",
     "world_energy_point08_2": "Aluvión energético: Área de pruebas",
-    "world_energy_point08_6": "Aluvión energético severo: Área de pruebas"
+    "world_energy_point08_6": "Aluvión energético severo: Área de pruebas",
+    "world_energy_point09_1": "Aluvión energético: Valle Ocultaespadas",
+    "world_energy_point09_2": "Aluvión energético: Valle Ocultaespadas",
+    "world_energy_point09_3": "Aluvión energético: Valle Ocultaespadas",
+    "world_energy_point09_4": "Aluvión energético severo: Valle Ocultaespadas",
+    "world_energy_point09_5": "Aluvión energético severo: Valle Ocultaespadas",
+    "world_energy_point09_6": "Aluvión energético severo: Valle Ocultaespadas",
+    "world_energy_point09_7": "Aluvión energético severo: Valle Ocultaespadas"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Subterráneo",
@@ -1165,7 +1179,10 @@
     "eny_0103_hshunt2": "Viento arrasador",
     "eny_0105_wgslime2": "Flujo de lodo δ",
     "eny_0106_wgthorns2": "Hedron δ",
-    "eny_0109_hshog2": "Bestia pluma imbuida"
+    "eny_0109_hshog2": "Bestia pluma imbuida",
+    "eny_0112_jzmonk": "Aullador de roca",
+    "eny_0113_jzogre": "Bestia mutiladora acorazada",
+    "eny_0114_jzmking": "Aullador del peñasco"
   },
   "essencesPage": {
     "optimizer": "Optimizador de farmeo",
@@ -1413,7 +1430,15 @@
     "item_equip_t4_suit_poise01_edc_03": "Estabilizador de etertecnología T1",
     "item_equip_t4_suit_pulse_cryst01_edc_01": "Sonda de Laboratorios Pulso",
     "item_equip_t4_suit_usp02_edc_03": "Brazo auxiliar de Xiranita eterna",
-    "item_equip_t4_suit_usp02_hand_01": "Guantes de Xiranita eterna"
+    "item_equip_t4_suit_usp02_hand_01": "Guantes de Xiranita eterna",
+    "item_equip_t4_suit_combo_cd01_edc_04": "Kit de posicionamiento de Qingbo T1",
+    "item_equip_t4_suit_crush_fracture_body_01": "Armadura de Filo curtido",
+    "item_equip_t4_suit_crush_fracture_body_02": "Armadura de Filo curtido T1",
+    "item_equip_t4_suit_crush_fracture_edc_01": "Cuchillo de empuje de Filo curtido",
+    "item_equip_t4_suit_crush_fracture_edc_02": "Cuchillo de empuje de Filo curtido T1",
+    "item_equip_t4_suit_crush_fracture_hand_01": "Guanteletes de Filo curtido",
+    "item_equip_t4_suit_crush_fracture_hand_02": "Guanteletes de Filo curtido T1",
+    "item_equip_t4_suit_phy01_body_04": "Armadura de fibra de Espadachín"
   },
   "packs": {
     "none": "No establecido",
@@ -1461,7 +1486,8 @@
     "suit_poise01": "Etertecnología",
     "suit_usp01": "Catástrofe",
     "suit_usp02": "Xiranita eterna",
-    "suit_wisd01": "Aislamiento de Mordvolt"
+    "suit_wisd01": "Aislamiento de Mordvolt",
+    "suit_crush_fracture": "Filo curtido"
   },
   "equipmentTypes": {
     "body": "Armadura",
@@ -1896,11 +1922,11 @@
     "pump_1": "Bomba de fluido",
     "pump_2": "Bomba resistente al ácido Mk II"
   },
-  "buildingModes":{
+  "buildingModes": {
     "normal": "Modo estándar",
     "liquid": "Modo Fluido"
   },
-  "formulaSidebar":{
+  "formulaSidebar": {
     "sector": {
       "source": "Fuente",
       "using": "Fórmulas aplicables",

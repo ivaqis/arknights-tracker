@@ -5,29 +5,11 @@
     "decoDesc": "Armatura di base dalle strutture semplici. \nDà alle persone una sensazione di sicurezza che va ben oltre le sue reali capacità difensive.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_edc_03": {
-    "name": "Pietra focaia da spadamante",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nIn breve, la pietra focaia va in overlocking e prosciuga le riserve energetiche del sistema di armatura da spadamante. Si illumina solo quando chi la tiene è a un passo dalla morte.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
-  },
   "item_equip_t0_parts_tundra01_body_02": {
     "name": "DPI base",
     "description": "Essendo una versione provvisoria, non ha superato il processo di verifica e approvazione (V&A) della Endfield Industries per i prodotti finali. Questo equipaggiamento offre una protezione limitata.",
     "decoDesc": "Armatura di base dalle strutture semplici. \nDà alle persone una sensazione di sicurezza che va ben oltre le sue reali capacità difensive.",
     "setBonus": ""
-  },
-  "item_equip_t2_suit_str01_edc_02": {
-    "name": "Torcia MSGR corazzata",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una torcia elettrica portatile molto resistente. \nLa punta affilata dall'altro lato può essere usata anche per spezzare le ossa di chi si rifiuta di parlare.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
-  },
-  "item_equip_t3_suit_agi01_edc_03": {
-    "name": "Trottola MSGR da viaggio O1",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un complesso giocattolo antistress. \nSecondo un affidabile sondaggio, circa il 20% dei messaggeri ha trasformato questo giocattolo anti-stress in un localizzatore auto-posizionante.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "name": "Coprimani base",
@@ -35,23 +17,11 @@
     "decoDesc": "Armatura di base dalle strutture semplici. \nDà alle persone una sensazione di sicurezza che va ben oltre le sue reali capacità difensive.",
     "setBonus": ""
   },
-  "item_equip_t2_suit_wisd01_hand_01": {
-    "name": "Guanti isolanti Elettroshock",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un equipaggiamento essenziale per le operazioni ambientali speciali. \nTutti gli ingegneri che eseguono riparazioni elettriche nei luoghi affetti da un'eruzione contaminante devono indossare DPI specifici per evitare ferite causate da scariche elettriche anomale.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
-  },
   "item_equip_t0_parts_tundra01_hand_02": {
     "name": "Guanti semplici",
     "description": "Essendo una versione provvisoria, non ha superato il processo di verifica e approvazione (V&A) della Endfield Industries per i prodotti finali. Questo equipaggiamento offre una protezione limitata.",
     "decoDesc": "Armatura di base dalle strutture semplici. \nDà alle persone una sensazione di sicurezza che va ben oltre le sue reali capacità difensive.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_atk02_edc_03": {
-    "name": "Radar Yinglung tipo 50 O2",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \nQuando le ottimizzazioni erano finalmente complete, aggiunse qualche parola accanto ai progetti: \"I cieli e la terra potranno dividersi, ma io prevarrò ed emergerò vittorioso.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "name": "Armatura da minatore",
@@ -59,20 +29,8 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_edc_01": {
-    "name": "Connettore LYNX",
-    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "L'equipaggiamento preferito dai medici. \nUn componente connettivo sviluppato dalla Rhodes Island per la calibrazione dei dati. Si può collegare a vari sistemi di supporto vitale per eseguire numerose operazioni mediche d'emergenza.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
-  },
   "item_equip_t1_parts_tundra01_body_02": {
     "name": "Tenuta da minatore",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
-    "setBonus": ""
-  },
-  "item_equip_t1_parts_tundra01_edc_02": {
-    "name": "Nucleo di compressione di emergenza",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
@@ -101,20 +59,14 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t1_suit_stragi01_body_01": {
-    "name": "Armatura pesante del SIA",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un alto grado di protezione. \nDopo aver annesso piastre più spesse e pesanti alla tuta, l'armatura si posiziona nei punti in cui è presa di mira da armi potenti.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ripristina <@ba.heal>{hp_add}</> PS. Tempo di recupero dell'effetto: {cd} s."
-  },
-  "item_equip_t3_suit_usp01_body_01": {
-    "name": "Armatura pesante catastrofe",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nÈ dotata di un sistema di stimolazione micro-elettrica che riduce in modo efficace l'affaticamento di chi l'indossa. Una funzionalità di micro design particolarmente apprezzata dal personale.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
-  },
   "item_equip_t1_parts_tundra01_edc_01": {
     "name": "Trasmittente di emergenza",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
+    "setBonus": ""
+  },
+  "item_equip_t1_parts_tundra01_edc_02": {
+    "name": "Nucleo di compressione di emergenza",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
@@ -124,12 +76,6 @@
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_fire_natr01_hand_01": {
-    "name": "Guanti anti-calore",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \nI DPI anti-calore sono stati sviluppati congiuntamente dall'USLT e dalla Endfield Industries per esplorare gli ambienti con temperature elevate.",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "name": "Polsiere da minatore",
@@ -149,23 +95,17 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_fire_natr01_hand_02": {
-    "name": "Coprimani anti-calore",
+  "item_equip_t1_suit_stragi01_body_01": {
+    "name": "Armatura pesante del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \n\"Ssst! Silenzio. Potrebbe svegliarsi.\"",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
+    "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un alto grado di protezione. \nDopo aver annesso piastre più spesse e pesanti alla tuta, l'armatura si posiziona nei punti in cui è presa di mira da armi potenti.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ripristina <@ba.heal>{hp_add}</> PS. Tempo di recupero dell'effetto: {cd} s."
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "name": "Armatura a piastre pesante del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un alto grado di protezione. \nAumentare le prestazioni difensive comporta un ingente aumento del peso, ed è proprio il peso il problema principale di questo equipaggiamento.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ripristina <@ba.heal>{hp_add}</> PS. Tempo di recupero dell'effetto: {cd} s."
-  },
-  "item_equip_t4_suit_burst01_hand_01": {
-    "name": "Coprimani dell'alta marea",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesta è una domanda riguardo alla Contaminazione acquatica: il crollo delle antiche dighe inizia dall'interno?",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "name": "Armatura a piastre in lega del SIA",
@@ -179,23 +119,11 @@
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un alto grado di protezione. \nQuesti coprimani vantano due intricate strutture di supporto usate per sostenere il 40% del peso delle armi. Un design a dir poco brillante.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ripristina <@ba.heal>{hp_add}</> PS. Tempo di recupero dell'effetto: {cd} s."
   },
-  "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "Nucleo di compressione da minatore O1",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
-    "setBonus": ""
-  },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "name": "Armatura leggera del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un lieve grado di protezione. \nSi tratta di un prodotto di scarto ottenuto durante il collaudo di alcune linee di produzione composte da varie strutture della fabbrica del SIA.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ottiene <@ba.vup>+{atk_up}</> ATT per <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_atb01_edc_06": {
-    "name": "Tubo di ossigeno extra della frontiera O1",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Il tubo di ossigeno standard della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno. La versione migliorata estende ulteriormente questa durata a sei ore.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "name": "Armatura a piastre leggera del SIA",
@@ -203,23 +131,11 @@
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un lieve grado di protezione. \nLa caratteristica più importante di questo equipaggiamento del SIA è che permette alle piastre dell'armatura di attaccarsi in modo flessibile alla tuta.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ottiene <@ba.vup>+{atk_up}</> ATT per <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_criti01_body_02": {
-    "name": "Tenuta della sicurezza MI",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
-  },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "name": "Armatura a piastre in ceramica del SIA",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un lieve grado di protezione. \n\"Vorrei tanto credere nella nostra tecnologia, ma questa mi sembra un po' troppo leggera...\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ottiene <@ba.vup>+{atk_up}</> ATT per <@ba.vup>{duration}</> s."
-  },
-  "item_equip_t4_suit_expend_spell01_hand_02": {
-    "name": "Guanti Xiranflow",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento sperimentale proposto come attrezzatura d'ordinanza per le guardie di Wuling.\n\"Stai dicendo che questi guanti saranno... Cosa?! Posso toccare i macchinari di xiranite per caricare questi ragazzacci?! Non è una delle tue solite contaminerie, vero?\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</><#ba.conduct> Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Questo effetto può conferire fino a {max_stack} accumuli di potenziamento. Ciascun accumulo ha una sua durata indipendente."
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "name": "Guanti tattici del SIA",
@@ -227,23 +143,11 @@
     "decoDesc": "Equipaggiamento modulare dalla struttura semplice che offre un lieve grado di protezione. \nAnche se non garantiscono la miglior difesa, sono facili da indossare.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> PS. \nQuando il personaggio sconfigge un nemico, ottiene <@ba.vup>+{atk_up}</> ATT per <@ba.vup>{duration}</> s."
   },
-  "item_equip_t4_suit_heal01_hand_01": {
-    "name": "Guanti LYNX",
-    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una versione più pesante dell'equipaggiamento preferito dai medici. \nLa Rhodes Island ancora oggi dota i suoi DPI di moduli di monitoraggio dell'Oripatia.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
-  },
   "item_equip_t2_parts_tundra01_edc_01": {
     "name": "Turbina da minatore",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_04": {
-    "name": "Maschera da Maciulla-Ossa",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nLa maschera è un simbolo di fanatismo. Tuttavia, la sola fede non basta a sopravvivere in una regione contaminata. Non importa se sia appesa a una cintura o indossata: questa maschera è soltanto un pezzo di legno fragile.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "name": "Trazione motrice da minatore",
@@ -251,29 +155,11 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_heal01_body_01": {
-    "name": "Armatura pesante LYNX",
-    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una versione più pesante dell'equipaggiamento preferito dai medici. \nDi solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
-  },
   "item_equip_t2_parts_tundra01_edc_03": {
     "name": "Nucleo di compressione da minatore",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
-  },
-  "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "Guanti da minatore O2",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
-    "setBonus": ""
-  },
-  "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "Batteria isolante Elettroshock O1",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una batteria estremamente durevole. \nA Talos-II, le riparazioni di emergenza in luoghi contaminati sono un lavoro particolarmente pericoloso. Perciò, i lavoratori devono sottoporsi a un rigoroso addestramento sulle normative speciali prima di poter usare le batterie in simili ambienti.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "name": "Trasmittente da minatore",
@@ -287,23 +173,11 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_atb01_body_02": {
-    "name": "Armatura della frontiera O1",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t2_parts_tundra01_hand_02": {
     "name": "Guanti da minatore O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_heal01_edc_02": {
-    "name": "Connettore LYNX O2",
-    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "L'equipaggiamento preferito dai medici. \nUn componente connettivo sviluppato dalla Rhodes Island per la calibrazione dei dati. Si può collegare a vari sistemi di supporto vitale per eseguire numerose operazioni mediche d'emergenza.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
   },
   "item_equip_t2_suit_agi01_body_01": {
     "name": "Giacca MSGR da viaggio",
@@ -317,12 +191,6 @@
     "decoDesc": "Un complesso giocattolo antistress. \nSecondo un affidabile sondaggio, circa il 20% dei messaggeri ha trasformato questo giocattolo anti-stress in un localizzatore auto-posizionante.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
   },
-  "item_equip_t2_suit_wisd01_edc_01": {
-    "name": "Chiave isolante Elettroshock",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una chiave con uno speciale rivestimento protettivo. \nSi può usare anche come arma, quando necessario. È perfettamente in grado di disintegrare e polverizzare gli arti degli Aggeloi.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
-  },
   "item_equip_t2_suit_agi01_edc_02": {
     "name": "Torcia MSGR da viaggio",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
@@ -334,12 +202,6 @@
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un paio di guanti che va forte tra i messaggeri. \nDi tanto in tanto, i messaggeri passano il tempo combattendo nell'arena.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
-  },
-  "item_equip_t4_suit_atb01_body_04": {
-    "name": "Armatura della frontiera O3",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t2_suit_str01_body_01": {
     "name": "Giacca MSGR corazzata",
@@ -353,17 +215,11 @@
     "decoDesc": "Un complesso giocattolo antistress. \nSecondo un affidabile sondaggio, circa l'80% dei messaggeri trasforma questo giocattolo in una granata a dardo in miniatura.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
   },
-  "item_equip_t4_suit_atb01_hand_02": {
-    "name": "Guanti in fibra della frontiera",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Questo modello della linea di armature da frontiera è pensato per il combattimento sottomarino. Grazie a una speciale tecnologia di tessitura delle fibre, questi guanti sono dotati di funzioni di ricircolo dell'ossigeno.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
-  "item_equip_t4_suit_heal01_body_02": {
-    "name": "Corazza LYNX",
-    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "L'equipaggiamento preferito dai medici. \nDi solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
+  "item_equip_t2_suit_str01_edc_02": {
+    "name": "Torcia MSGR corazzata",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una torcia elettrica portatile molto resistente. \nLa punta affilata dall'altro lato può essere usata anche per spezzare le ossa di chi si rifiuta di parlare.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
   },
   "item_equip_t2_suit_str01_hand_01": {
     "name": "Guanti MSGR corazzati",
@@ -395,16 +251,16 @@
     "decoDesc": "Un paio di guanti molto robusti. \nDobbiamo ancora sviluppare indumenti di protezione individuale che siano davvero resistenti alla Contaminazione. Molti DPI e soluzioni protettive riescono a far fronte solo alle conseguenze più lievi degli eventi di Contaminazione.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{will_up}</> Volontà. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, <@ba.vup>+{heal_up:0%}</> di efficacia della Cura."
   },
-  "item_equip_t4_suit_atb01_edc_03": {
-    "name": "Analizzatore della frontiera",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Questo analizzatore fa parte della linea di supporto da frontiera e sfrutta una tecnologia di riconoscimento visivo per fornire un'analisi basilare del livello di pericolosità delle creature sconosciute.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t2_suit_wisd01_body_01": {
     "name": "Gilet isolante Elettroshock",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un equipaggiamento essenziale per le operazioni ambientali speciali. \nGli eventi di Contaminazione più devastanti provocano spesso guasti elettrici e anomalie dei circuiti. I lavoratori assegnati alle riparazioni devono farci attenzione.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
+  },
+  "item_equip_t2_suit_wisd01_edc_01": {
+    "name": "Chiave isolante Elettroshock",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una chiave con uno speciale rivestimento protettivo. \nSi può usare anche come arma, quando necessario. È perfettamente in grado di disintegrare e polverizzare gli arti degli Aggeloi.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
   },
   "item_equip_t2_suit_wisd01_edc_02": {
@@ -419,6 +275,12 @@
     "decoDesc": "Una batteria estremamente durevole. \nA Talos-II, le riparazioni di emergenza in luoghi contaminati sono un lavoro particolarmente pericoloso. Perciò, i lavoratori devono sottoporsi a un rigoroso addestramento sulle normative speciali prima di poter usare le batterie in simili ambienti.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
   },
+  "item_equip_t2_suit_wisd01_hand_01": {
+    "name": "Guanti isolanti Elettroshock",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento essenziale per le operazioni ambientali speciali. \nTutti gli ingegneri che eseguono riparazioni elettriche nei luoghi affetti da un'eruzione contaminante devono indossare DPI specifici per evitare ferite causate da scariche elettriche anomale.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
+  },
   "item_equip_t3_parts_tundra01_body_01": {
     "name": "Armatura da minatore O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
@@ -431,26 +293,20 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_attri01_edc_06": {
-    "name": "Effige da Maciulla-Ossa O1",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un gingillo senza un vero scopo pratico. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia ed entusiasmo.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
-  },
   "item_equip_t3_parts_tundra01_edc_01": {
     "name": "Turbina da minatore O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_criti01_body_04": {
-    "name": "Tenuta della sicurezza MI O2",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
-  },
   "item_equip_t3_parts_tundra01_edc_02": {
     "name": "Trazione motrice da minatore O1",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
+    "setBonus": ""
+  },
+  "item_equip_t3_parts_tundra01_edc_03": {
+    "name": "Nucleo di compressione da minatore O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
@@ -461,11 +317,11 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t4_suit_poise01_edc_04": {
-    "name": "Orologio Æthertech",
-    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Alcuni utenti sostengono che i nostri prodotti provochino effetti emomutageni. Sono accuse assolutamente prive di fondamento.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  "item_equip_t3_parts_tundra01_hand_01": {
+    "name": "Guanti da minatore O2",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
+    "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "name": "Guanti rinforzati da minatore O1",
@@ -473,41 +329,11 @@
     "decoDesc": "Equipaggiamento protettivo per le operazioni di estrazione. \nGli Standard di sicurezza e protezione di Valle IV prevedono, come requisito minimo per la sicurezza sul lavoro, una protezione bistrato composta da: (a) uno strato morbido di attutimento; (b) una protezione dura e rigida.",
     "setBonus": ""
   },
-  "item_equip_t3_suit_str01_body_01": {
-    "name": "Giacca MSGR corazzata O1",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una giacca che qualsiasi messaggero vorrebbe indossare. \nLe moto sono mezzi di trasporto economici ed efficienti su Talos-II. I messaggeri spesso le modificano ed equipaggiano con diversi moduli.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
-  },
-  "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "Chiave isolante Elettroshock O2",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Una chiave con uno speciale rivestimento protettivo. \nSi può usare anche come arma, quando necessario. È perfettamente in grado di disintegrare e polverizzare gli arti degli Aggeloi.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
-  },
-  "item_equip_t4_suit_atb01_edc_02": {
-    "name": "Trasmittente della frontiera O1",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un dispositivo di comunicazione pesante. Questa trasmittente della frontiera è progettata solo per inviare messaggi, in modo da garantire la qualità del segnale anche in complessi siti di scavo sotterranei.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_agi01_body_01": {
     "name": "Giacca MSGR da viaggio O1",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Una giacca che qualsiasi messaggero vorrebbe indossare. \nI messaggeri che lavorano dentro e vicino la regione di Valle IV spesso verniciano i propri veicoli con motivi a forma di albero. Sperano che, vedendo le magnifiche piante che un tempo proteggevano questa terra, la gente si senta rinvigorita.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
-  },
-  "item_equip_t3_suit_atk01_body_02": {
-    "name": "Armatura pesante Aburrey O1",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un'innovativa armatura protettiva, modificata per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nUna versione da combattimento dell'armatura pesante Aburrey. Rispetto al modello standard, questa tuta è dotata di porte di connessione per armi aggiuntive altamente compatibili con lanciafiamme, lanciagranate e altre attrezzature.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_02": {
-    "name": "Calibratore a impulsi",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dal design innovativo. \nSetaccia l'infinito oceano di dati in cerca delle ben nascoste \"anomalie dorate\", per poi spazzarle via per sempre.",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "name": "Torcia MSGR da viaggio O1",
@@ -521,22 +347,28 @@
     "decoDesc": "Una torcia elettrica portatile molto resistente. \nLa punta affilata dall'altro lato può essere usata anche per aprire vecchi scatoloni o contenitori.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
   },
+  "item_equip_t3_suit_agi01_edc_03": {
+    "name": "Trottola MSGR da viaggio O1",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un complesso giocattolo antistress. \nSecondo un affidabile sondaggio, circa il 20% dei messaggeri ha trasformato questo giocattolo anti-stress in un localizzatore auto-posizionante.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
+  },
   "item_equip_t3_suit_agi01_hand_01": {
     "name": "Guanti rinforzati MSGR da viaggio O1",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un paio di guanti che va forte tra i messaggeri. \nDi tanto in tanto, i messaggeri passano il tempo combattendo nell'arena.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{agi_up}</> Agilità. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</>."
   },
-  "item_equip_t4_suit_usp02_body_01": {
-    "name": "Armatura di xiranite eterna",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Pochi riuscirebbero a trovare un collegamento tra le attività culinarie e la xiranite. Eppure, un residente di Wuling in particolare riesce a trarne ispirazione quando pasteggia al ristorante.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_atk01_body_01": {
     "name": "Armatura pesante Aburrey",
     "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un'innovativa armatura protettiva, modificata per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nL'estrazione delle reliquie dei Precursori può rivelarsi un processo alquanto complicato e pieno di cambiamenti inaspettati. L'equipaggiamento utilizzato durante gli scavi deve offrire sufficiente protezione, facilitare i movimenti e garantire capacità di attacco.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
+  },
+  "item_equip_t3_suit_atk01_body_02": {
+    "name": "Armatura pesante Aburrey O1",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un'innovativa armatura protettiva, modificata per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nUna versione da combattimento dell'armatura pesante Aburrey. Rispetto al modello standard, questa tuta è dotata di porte di connessione per armi aggiuntive altamente compatibili con lanciafiamme, lanciagranate e altre attrezzature.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
   },
   "item_equip_t3_suit_atk01_body_03": {
@@ -551,29 +383,11 @@
     "decoDesc": "Un'innovativa armatura protettiva, modificata per adattarsi all'ambiente di lavoro della Cava di Aburrey. \n\"Basta! BASTA! Qualcuno chiami la Cabala della Tranquillità!\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
   },
-  "item_equip_t4_suit_atk02_body_02": {
-    "name": "Armatura pesante Yinglung tipo 50 O1",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità con gli utenti ordinari. \nIn pochi sanno che il progettista dell'armatura è un riservista che ha quasi passato la prova di selezione per la rinomata squadra tattica. Quasi.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
-  },
-  "item_equip_t4_suit_criti01_body_06": {
-    "name": "Armatura della sicurezza MI O1",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nÈ stato impiegato per la prima volta dagli eserciti umani sul fronte aggeloide.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_atk01_edc_01": {
     "name": "Lampada UV Aburrey",
     "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nQuando le operazioni di scavo sono diventate parte integrante del lavoro alla Cava di Aburrey, gli ingegneri hanno lavorato instancabilmente per applicare le dovute modifiche a questo equipaggiamento, che ora è dotato di una protezione per la vista e per l'udito.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
-  },
-  "item_equip_t4_suit_attri01_hand_03": {
-    "name": "Guanti da Maciulla-Ossa",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nAnche se non tutti gli abitanti delle terre selvagge diventano dei Fenditerra, nessuno può sfuggire alla morsa della natura.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "name": "Chip uditivo Aburrey",
@@ -587,29 +401,11 @@
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nQuando si esplora l'ignoto, poter contare su un'adeguata protezione e un efficace isolamento uditivo è di estrema importanza. Questo chip aiuta chi lo indossa a capire se soffre o meno di allucinazioni uditive.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
   },
-  "item_equip_t3_suit_usp01_edc_03": {
-    "name": "Filtro catastrofe",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nQuesti filtri sono progettati per funzionare con la maschera catastrofe e si possono attaccare o staccare in un attimo.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
-  },
   "item_equip_t3_suit_atk01_edc_04": {
     "name": "Torcia Aburrey",
     "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \n\"Era incastonata nella roccia... Pensavo di aver dissotterrato delle spranghe nel cemento. Ma... credo di aver sentito la sua voce...\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
-  },
-  "item_equip_t3_suit_usp01_body_02": {
-    "name": "Armatura pesante catastrofe O1",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nÈ dotata di un sistema di stimolazione micro-elettrica che riduce in modo efficace l'affaticamento di chi l'indossa. Una funzionalità di micro design particolarmente apprezzata dal personale.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
-  },
-  "item_equip_t3_suit_usp01_edc_02": {
-    "name": "Cartuccia di garze catastrofe O1",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nAnche se l'Oripatia può essere controllata e curata in modo efficace su Talos-II, si consiglia di indossare sempre protezioni respiratorie di base.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "name": "Chip sensore Aburrey",
@@ -617,29 +413,23 @@
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nSecondo gli ingegneri, le versioni future di questa armatura saranno completamente automatizzate. Anche se chi la indossa non sarà più in grado di muoversi, l'armatura potrà scortare la persona in un luogo sicuro.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
   },
-  "item_equip_t3_suit_usp01_edc_01": {
-    "name": "Cartuccia di garze catastrofe",
-    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nAnche se l'Oripatia può essere controllata e curata in modo efficace su Talos-II, si consiglia di indossare sempre protezioni respiratorie di base.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
-  },
   "item_equip_t3_suit_atk01_edc_06": {
     "name": "Chip sensore Aburrey O1",
     "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nSecondo gli ingegneri, le versioni future di questa armatura saranno completamente automatizzate. Anche se chi la indossa non sarà più in grado di muoversi, l'armatura potrà scortare la persona in un luogo sicuro.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
   },
-  "item_equip_t4_suit_atb01_hand_03": {
-    "name": "Guanti in fibra della frontiera O1",
-    "description": "Progettato dal Polo di supporto Northmarch e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Questo modello della linea di armature da frontiera è pensato per il combattimento sottomarino. Grazie a una speciale tecnologia di tessitura delle fibre, questi guanti sono dotati di funzioni di ricircolo dell'ossigeno.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_atk01_hand_01": {
     "name": "Coprimani Aburrey",
     "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un innovativo equipaggiamento protettivo, modificato per adattarsi all'ambiente di lavoro della Cava di Aburrey. \nSi tratta di una protezione per le mani collegata all'armatura protettiva. Sulle punte delle dita sono stati installati quasi 100 microsensori di sei diversi tipi; aiutano chi li indossa a determinare con precisione l'oggetto toccato, anche se non può usare il senso della vista.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{dmg_up:0%}</> di danni da abilità. \nQuando il personaggio usa un'abilità di combattimento, un'abilità combo o un'abilità suprema, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Il potenziamento ottenuto da ciascun tipo di abilità è unico e non si accumula con sé stesso."
+  },
+  "item_equip_t3_suit_str01_body_01": {
+    "name": "Giacca MSGR corazzata O1",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una giacca che qualsiasi messaggero vorrebbe indossare. \nLe moto sono mezzi di trasporto economici ed efficienti su Talos-II. I messaggeri spesso le modificano ed equipaggiano con diversi moduli.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
   },
   "item_equip_t3_suit_str01_edc_01": {
     "name": "Trottola MSGR corazzata O1",
@@ -659,17 +449,41 @@
     "decoDesc": "Un paio di guanti che qualsiasi messaggero vorrebbe indossare. \nLa maggior parte dei messaggeri vorrebbe installare sul proprio veicolo dei sistemi di eiezione salvavita per evitare con facilità le eruzioni contaminanti inaspettate.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
   },
-  "item_equip_t4_suit_usp02_edc_01": {
-    "name": "Nucleo energetico di xiranite eterna",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_str01_hand_02": {
     "name": "Guanti MSGR corazzati O2",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Un paio di guanti che qualsiasi messaggero vorrebbe indossare. \nLa maggior parte dei messaggeri vorrebbe installare sul proprio veicolo dei sistemi di eiezione salvavita per evitare con facilità le eruzioni contaminanti inaspettate.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{str_up}</> Forza. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, ottiene un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro tutti i tipi di danni."
+  },
+  "item_equip_t3_suit_usp01_body_01": {
+    "name": "Armatura pesante catastrofe",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nÈ dotata di un sistema di stimolazione micro-elettrica che riduce in modo efficace l'affaticamento di chi l'indossa. Una funzionalità di micro design particolarmente apprezzata dal personale.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
+  },
+  "item_equip_t3_suit_usp01_body_02": {
+    "name": "Armatura pesante catastrofe O1",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nÈ dotata di un sistema di stimolazione micro-elettrica che riduce in modo efficace l'affaticamento di chi l'indossa. Una funzionalità di micro design particolarmente apprezzata dal personale.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
+  },
+  "item_equip_t3_suit_usp01_edc_01": {
+    "name": "Cartuccia di garze catastrofe",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nAnche se l'Oripatia può essere controllata e curata in modo efficace su Talos-II, si consiglia di indossare sempre protezioni respiratorie di base.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
+  },
+  "item_equip_t3_suit_usp01_edc_02": {
+    "name": "Cartuccia di garze catastrofe O1",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nAnche se l'Oripatia può essere controllata e curata in modo efficace su Talos-II, si consiglia di indossare sempre protezioni respiratorie di base.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
+  },
+  "item_equip_t3_suit_usp01_edc_03": {
+    "name": "Filtro catastrofe",
+    "description": "Progettato dalla Triglava Armoury e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Parte di una tuta esoscheletrica usata dai coltivatori di cristalli al Parco scientifico dell'Originium. \nQuesti filtri sono progettati per funzionare con la maschera catastrofe e si possono attaccare o staccare in un attimo.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{ultimate_gain_up:0%}</> di velocità di incremento dell'energia suprema.\nQuando il personaggio usa un'abilità di combattimento, l'azione <#ba.return>ripristina</> <@ba.vup>{atb_recover:0}</> PA. L'effetto si attiva 1 sola volta per battaglia."
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "name": "Guanti catastrofe",
@@ -695,12 +509,6 @@
     "decoDesc": "Una chiave dal design elegante e dalle linee sinuose. \n\"Torna utile anche come arma contundente!\" - Un operaio che ha preferito rimanere anonimo",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{will_up}</> Volontà. \nQuando il personaggio ha meno di un {hp_ratio:0%} di PS, <@ba.vup>+{heal_up:0%}</> di efficacia della Cura."
   },
-  "item_equip_t4_suit_burst01_edc_01": {
-    "name": "Tubo di ossigeno del fiume sospeso",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è uno scatto di disperazione riguardo alla Contaminazione acquatica: le torbide correnti dell'ignoto si sono riversate sulla terraferma.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t3_suit_will01_hand_01": {
     "name": "Guanti resistenti Elettroshock O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
@@ -719,11 +527,17 @@
     "decoDesc": "Un equipaggiamento essenziale per le operazioni ambientali speciali. \nGli eventi di Contaminazione più devastanti provocano spesso guasti elettrici e anomalie dei circuiti. I lavoratori assegnati alle riparazioni devono farci attenzione.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
   },
-  "item_equip_t4_suit_poise01_hand_01": {
-    "name": "Guanti Æthertech",
-    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  "item_equip_t3_suit_wisd01_edc_01": {
+    "name": "Chiave isolante Elettroshock O2",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una chiave con uno speciale rivestimento protettivo. \nSi può usare anche come arma, quando necessario. È perfettamente in grado di disintegrare e polverizzare gli arti degli Aggeloi.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
+  },
+  "item_equip_t3_suit_wisd01_edc_02": {
+    "name": "Batteria isolante Elettroshock O1",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una batteria estremamente durevole. \nA Talos-II, le riparazioni di emergenza in luoghi contaminati sono un lavoro particolarmente pericoloso. Perciò, i lavoratori devono sottoporsi a un rigoroso addestramento sulle normative speciali prima di poter usare le batterie in simili ambienti.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{wisd_up}</> Intelletto. \nQuando il personaggio ha più di un {hp_ratio:0%} di PS, <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</>."
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "name": "Guanti isolanti Elettroshock O1",
@@ -736,12 +550,6 @@
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Questo equipaggiamento richiama alla mente l'ardua strada da percorrere. \"La missione non è ancora compiuta e il viaggio deve ancora giungere al termine.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_pulse_cryst01_edc_03": {
-    "name": "Nucleo di invasione a impulsi",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dal design innovativo. \nGrazie al supporto della Cabala della Tranquillità, è stato creato un nucleo di invasione a impulsi in grado di violare la maggior parte dei firewall dei terminali.",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "name": "Armatura della redenzione",
@@ -767,23 +575,11 @@
     "decoDesc": "Questo equipaggiamento richiama alla mente l'ardua strada da percorrere. \"La missione non è ancora compiuta e il viaggio deve ancora giungere al termine.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_usp02_hand_02": {
-    "name": "Guanti di xiranite eterna O1",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Eredità di un Tianshi \"folle\". \n... I giorni passavano, e il folle Tianshi iniziava a rifiutare qualsiasi cibo che \"non regalasse ispirazione\". Dopo essersi ridotto a pelle e ossa, sparì presto nelle terre selvagge in cerca di \"xiranite appetibile\".",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
-  },
   "item_equip_t4_parts_wuling01_edc_04": {
     "name": "Sigillo della redenzione O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Questo equipaggiamento richiama alla mente l'ardua strada da percorrere. \"La missione non è ancora compiuta e il viaggio deve ancora giungere al termine.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_attri01_edc_03": {
-    "name": "Effige da Maciulla-Ossa",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un gingillo senza un vero scopo pratico. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia ed entusiasmo.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "name": "Guanti della redenzione",
@@ -791,23 +587,11 @@
     "decoDesc": "Questo equipaggiamento richiama alla mente l'ardua strada da percorrere. \"La missione non è ancora compiuta e il viaggio deve ancora giungere al termine.\"",
     "setBonus": ""
   },
-  "item_equip_t4_suit_phy01_body_02": {
-    "name": "Armatura pesante da spadamante",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nPer il design, i Tianshi hanno puntato sul \"grande quanto un burrone\", riuscendo così ad assorbire e neutralizzare gli attacchi a base energetica.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
-  },
   "item_equip_t4_parts_wuling01_hand_02": {
     "name": "Mani della redenzione",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Questo equipaggiamento richiama alla mente l'ardua strada da percorrere. \"La missione non è ancora compiuta e il viaggio deve ancora giungere al termine.\"",
     "setBonus": ""
-  },
-  "item_equip_t4_suit_phy01_edc_01": {
-    "name": "Segnalatore NAV da spadamante",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nMolti ambienti contaminati sono estremamente pericolosi. Basta un passo falso per imboccare una strada sbagliata senza via d'uscita... proprio come è successo a Wuling tanti anni fa.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
   },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "Armatura della frontiera",
@@ -815,14 +599,20 @@
     "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
-  "item_equip_t4_suit_atk02_edc_01": {
-    "name": "Radar Yinglung tipo 50",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \nQuando le ottimizzazioni erano finalmente complete, aggiunse qualche parola accanto ai progetti: \"I cieli e la terra potranno dividersi, ma io prevarrò ed emergerò vittorioso.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
+  "item_equip_t4_suit_atb01_body_02": {
+    "name": "Armatura della frontiera O1",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_atb01_body_03": {
     "name": "Armatura della frontiera O2",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_body_04": {
+    "name": "Armatura della frontiera O3",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Il modello pesante della serie di armature da frontiera. Questo equipaggiamento è corredato di un supporto esterno per la spina dorsale che aiuta a sostenere il peso delle armi a spalla.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
@@ -839,9 +629,33 @@
     "decoDesc": "Un dispositivo di comunicazione pesante. Questa trasmittente della frontiera è progettata solo per inviare messaggi, in modo da garantire la qualità del segnale anche in complessi siti di scavo sotterranei.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_atb01_edc_02": {
+    "name": "Trasmittente della frontiera O1",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un dispositivo di comunicazione pesante. Questa trasmittente della frontiera è progettata solo per inviare messaggi, in modo da garantire la qualità del segnale anche in complessi siti di scavo sotterranei.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_edc_03": {
+    "name": "Analizzatore della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Questo analizzatore fa parte della linea di supporto da frontiera e sfrutta una tecnologia di riconoscimento visivo per fornire un'analisi basilare del livello di pericolosità delle creature sconosciute.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
   "item_equip_t4_suit_atb01_edc_04": {
     "name": "Tubo di ossigeno extra della frontiera",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Il tubo di ossigeno standard della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno. La versione migliorata estende ulteriormente questa durata a sei ore.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_edc_05": {
+    "name": "Tubo di ossigeno della frontiera",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Il tubo di ossigeno della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_edc_06": {
+    "name": "Tubo di ossigeno extra della frontiera O1",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Il tubo di ossigeno standard della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno. La versione migliorata estende ulteriormente questa durata a sei ore.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
@@ -851,14 +665,26 @@
     "decoDesc": "Lo scopo dell'equipaggiamento da frontiera è dare a una squadra composta da tre, quattro o cinque combattenti la possibilità di attaccare direttamente e distruggere piccole ondate aggeloidi.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
-  "item_equip_t4_suit_atb01_edc_05": {
-    "name": "Tubo di ossigeno della frontiera",
+  "item_equip_t4_suit_atb01_hand_02": {
+    "name": "Guanti in fibra della frontiera",
     "description": "Progettato dal Polo di supporto Northmarch e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Il tubo di ossigeno della frontiera garantisce almeno quattro ore di lavoro intenso sott'acqua, grazie alla sua tecnologia di riciclo dell'ossigeno.",
+    "decoDesc": "Questo modello della linea di armature da frontiera è pensato per il combattimento sottomarino. Grazie a una speciale tecnologia di tessitura delle fibre, questi guanti sono dotati di funzioni di ricircolo dell'ossigeno.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_atb01_hand_03": {
+    "name": "Guanti in fibra della frontiera O1",
+    "description": "Progettato dal Polo di supporto Northmarch e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Questo modello della linea di armature da frontiera è pensato per il combattimento sottomarino. Grazie a una speciale tecnologia di tessitura delle fibre, questi guanti sono dotati di funzioni di ricircolo dell'ossigeno.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo. \nQuando l'abilità del personaggio recupera PA, la squadra ottiene <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Armatura pesante Yinglung tipo 50",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità con gli utenti ordinari. \nIn pochi sanno che il progettista dell'armatura è un riservista che ha quasi passato la prova di selezione per la rinomata squadra tattica. Quasi.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
+  },
+  "item_equip_t4_suit_atk02_body_02": {
+    "name": "Armatura pesante Yinglung tipo 50 O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità con gli utenti ordinari. \nIn pochi sanno che il progettista dell'armatura è un riservista che ha quasi passato la prova di selezione per la rinomata squadra tattica. Quasi.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
@@ -875,11 +701,11 @@
     "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità con gli utenti ordinari. \nIn pochi sanno che il progettista dell'armatura è un riservista che ha quasi passato la prova di selezione per la rinomata squadra tattica. Quasi.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
   },
-  "item_equip_t4_suit_phy01_edc_04": {
-    "name": "Pugnale da spadamante",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nUn'arma da taglio tattica estremamente affilata, nonché uno dei primissimi esempi delle eccellenti tecniche di produzione della Spadamanti HS. Questo pugnale ha indubbiamente gettato solide fondamenta per la successiva serie di equipaggiamenti Yinglung.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  "item_equip_t4_suit_atk02_edc_01": {
+    "name": "Radar Yinglung tipo 50",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \nQuando le ottimizzazioni erano finalmente complete, aggiunse qualche parola accanto ai progetti: \"I cieli e la terra potranno dividersi, ma io prevarrò ed emergerò vittorioso.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Radar Yinglung tipo 50 O1",
@@ -887,23 +713,17 @@
     "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \nQuando le ottimizzazioni erano finalmente complete, aggiunse qualche parola accanto ai progetti: \"I cieli e la terra potranno dividersi, ma io prevarrò ed emergerò vittorioso.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
   },
-  "item_equip_t4_suit_criti01_hand_03": {
-    "name": "DPI per mani della sicurezza MI O1",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nIncludono unità delle Arti in miniatura a scopo soppressivo e vantano un'eccellente conduttanza energetica.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  "item_equip_t4_suit_atk02_edc_03": {
+    "name": "Radar Yinglung tipo 50 O2",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \nQuando le ottimizzazioni erano finalmente complete, aggiunse qualche parola accanto ai progetti: \"I cieli e la terra potranno dividersi, ma io prevarrò ed emergerò vittorioso.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Coltello Yinglung tipo 50",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \n\"Quando vedevo volti familiari che un tempo avevo addestrato rivestire ruoli fondamentali e proteggere luoghi cruciali, mi sentivo... come un perdente sconfitto che fugge da un campo di battaglia tremendo. Mi sentivo un disertore.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
-  },
-  "item_equip_t4_suit_combo_cd01_edc_03": {
-    "name": "Barile di Qingbo",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento molto economico, prodotto seguendo i dettami delle pergamene e degli antichi libri trovati nella Palizzata di Qingbo.\nUn piccolo barile con un nucleo filtrante facile da pulire. Per motivi ignoti, la pagina dei libri antichi sui depuratori d'acqua è stata strappata, pertanto il componente mancante del barile è stato sostituito con un nucleo filtrante moderno.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo del personaggio.\nQuando il personaggio usa un'abilità combo, infligge <@ba.vup>+{spell_up:0%}</> di danni da abilità combo (per ogni abilità) per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "name": "Coltello Yinglung tipo 50 O1",
@@ -922,18 +742,6 @@
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Una versione per civili dell'equipaggiamento della squadra tattica d'élite di Yinglung. La mancanza di un componente elettrico fondamentale ha in realtà migliorato la sua compatibilità per gli utenti ordinari. \n\"Non invidio il potere concesso, poiché non lo merito affatto. Anzi, dovrei essere le ossa che offrono supporto.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando un operatore qualsiasi della squadra usa un'abilità di combattimento, il personaggio ottiene 1 accumulo di <@ba.key>Lama di Yinglung</>, che conferisce <@ba.vup>+{dmg_up:0%}</> di danni all'abilità combo successiva. <@ba.key>Lama di Yinglung</> può accumularsi {max_stack:0} volta/e."
-  },
-  "item_equip_t4_suit_attri01_edc_02": {
-    "name": "Effige da Maciulla-Ossa O2",
-    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Un lavoro artigianale di ben poca utilità. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia in chi lo indossa.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
-  },
-  "item_equip_t4_suit_criti01_body_03": {
-    "name": "Tenuta della sicurezza MI O1",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_attri01_body_01": {
     "name": "Armatura pesante da Maciulla-Ossa",
@@ -965,8 +773,20 @@
     "decoDesc": "Equipaggiamento con design ispirato al clan degli Spacca-Ossa. \nQuesta armatura pesante non solo offre una dignitosa protezione, ma i nomadi delle terre selvagge la considerano il simbolo di uno stile di vita brutale e spietato.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
-  "item_equip_t4_suit_attri01_edc_07": {
-    "name": "Maschera da Maciulla-Ossa O2",
+  "item_equip_t4_suit_attri01_edc_02": {
+    "name": "Effige da Maciulla-Ossa O2",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un lavoro artigianale di ben poca utilità. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia in chi lo indossa.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
+  },
+  "item_equip_t4_suit_attri01_edc_03": {
+    "name": "Effige da Maciulla-Ossa",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un gingillo senza un vero scopo pratico. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia ed entusiasmo.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
+  },
+  "item_equip_t4_suit_attri01_edc_04": {
+    "name": "Maschera da Maciulla-Ossa",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nLa maschera è un simbolo di fanatismo. Tuttavia, la sola fede non basta a sopravvivere in una regione contaminata. Non importa se sia appesa a una cintura o indossata: questa maschera è soltanto un pezzo di legno fragile.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
@@ -977,21 +797,33 @@
     "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nLa maschera è un simbolo di fanatismo. Tuttavia, la sola fede non basta a sopravvivere in una regione contaminata. Non importa se sia appesa a una cintura o indossata: questa maschera è soltanto un pezzo di legno fragile.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
+  "item_equip_t4_suit_attri01_edc_06": {
+    "name": "Effige da Maciulla-Ossa O1",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Un gingillo senza un vero scopo pratico. Chi l'ha progettato, tuttavia, sostiene che possa indurre euforia ed entusiasmo.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
+  },
+  "item_equip_t4_suit_attri01_edc_07": {
+    "name": "Maschera da Maciulla-Ossa O2",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nLa maschera è un simbolo di fanatismo. Tuttavia, la sola fede non basta a sopravvivere in una regione contaminata. Non importa se sia appesa a una cintura o indossata: questa maschera è soltanto un pezzo di legno fragile.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
+  },
   "item_equip_t4_suit_attri01_hand_01": {
     "name": "Bracciale da Maciulla-Ossa",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nAnche se non tutti gli abitanti delle terre selvagge diventano dei Fenditerra, nessuno può sfuggire alla morsa della natura.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
-  "item_equip_t4_suit_phy01_body_03": {
-    "name": "Armatura pesante da spadamante O1",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nNel progettare questa armatura pesante da spadamante, i Tianshi hanno adottato un approccio basato su serenità mentale e libertà interiore, così da conferirle la possibilità di neutralizzare gli attacchi energetici.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
-  },
   "item_equip_t4_suit_attri01_hand_02": {
     "name": "Bracciale da Maciulla-Ossa O1",
     "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nAnche se non tutti gli abitanti delle terre selvagge diventano dei Fenditerra, nessuno può sfuggire alla morsa della natura.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
+  },
+  "item_equip_t4_suit_attri01_hand_03": {
+    "name": "Guanti da Maciulla-Ossa",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento progettato ispirandosi al clan degli Spacca-Ossa. \nAnche se non tutti gli abitanti delle terre selvagge diventano dei Fenditerra, nessuno può sfuggire alla morsa della natura.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio usa un'abilità combo, ottiene 1 accumulo di <@ba.key>Distruzione frantumaossa</> che conferisce <@ba.vup>+{dmg_up:0%}</> di danni al successivo utilizzo di un'abilità di combattimento. <@ba.key>Distruzione frantumaossa</> può accumularsi {max_stack:0} volta/e."
   },
@@ -1001,16 +833,22 @@
     "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un ricordo circa la Contaminazione acquatica: le maree insensibili hanno sempre rifiutato la nozione della vita.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
-  "item_equip_t4_suit_poise01_hand_02": {
-    "name": "Guanti leggeri Æthertech",
-    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  "item_equip_t4_suit_burst01_edc_01": {
+    "name": "Tubo di ossigeno del fiume sospeso",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è uno scatto di disperazione riguardo alla Contaminazione acquatica: le torbide correnti dell'ignoto si sono riversate sulla terraferma.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "name": "Torcia tagliente torbida",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesto è un pizzico di paura nei confronti della Contaminazione acquatica: quando si manifesterà la calamità incombente?",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_burst01_hand_01": {
+    "name": "Coprimani dell'alta marea",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento progettato dal Dipartimento degli Spadamanti per coloro che lavorano vicino alla Contaminazione acquatica. \nQuesta è una domanda riguardo alla Contaminazione acquatica: il crollo delle antiche dighe inizia dall'interno?",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{skill_dmg_up:0%}</> di danni da abilità inflitti.\nQuando il personaggio applica <@ba.key>{stack_cond}</> o più accumuli di <#ba.spellinflict>Afflizioni da Arti</> al nemico, infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.key>danni da Arti</> per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
@@ -1037,11 +875,17 @@
     "decoDesc": "Equipaggiamento molto economico, prodotto seguendo i dettami delle pergamene e degli antichi libri trovati nella Palizzata di Qingbo.\nUna lama corta e tagliente, realizzata affilando del bambù. All'aspetto si direbbe un'arma mediocre, ma è in grado di potare una ninfa boschiva senza ferire l'animaletto.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo del personaggio.\nQuando il personaggio usa un'abilità combo, infligge <@ba.vup>+{spell_up:0%}</> di danni da abilità combo (per ogni abilità) per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
   },
-  "item_equip_t4_suit_criti01_hand_04": {
-    "name": "Guanti della sicurezza MI O1",
-    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuesti guanti possono essere usati come arma. L'approvazione del prodotto include una valutazione riguardante \"l'efficacia nella disintegrazione di appendici aggeloidi\".",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  "item_equip_t4_suit_combo_cd01_edc_03": {
+    "name": "Barile di Qingbo",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dalla fabbrica del SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento molto economico, prodotto seguendo i dettami delle pergamene e degli antichi libri trovati nella Palizzata di Qingbo.\nUn piccolo barile con un nucleo filtrante facile da pulire. Per motivi ignoti, la pagina dei libri antichi sui depuratori d'acqua è stata strappata, pertanto il componente mancante del barile è stato sostituito con un nucleo filtrante moderno.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo del personaggio.\nQuando il personaggio usa un'abilità combo, infligge <@ba.vup>+{spell_up:0%}</> di danni da abilità combo (per ogni abilità) per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
+  },
+  "item_equip_t4_suit_combo_cd01_edc_04": {
+    "name": "Kit di localizzazione di Qingbo O1",
+    "description": "Progettato dalla Endfield basandosi sulle tecniche di artigianato delle terre selvagge e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento molto economico, prodotto seguendo i dettami delle pergamene e degli antichi libri trovati nella Palizzata di Qingbo.\nUn dispositivo semplice che ha la duplice funzione di rabdomante delle falde acquifere e bussola magnetica. Stando alle testimonianze, ha raggiunto ottimi risultati nei primi anni della Palizzata di Qingbo.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{1-comboskill_cooldown:0%}</> di riduzione del tempo di recupero dell'abilità combo del personaggio.\nQuando il personaggio usa un'abilità combo, infligge <@ba.vup>+{spell_up:0%}</> di danni da abilità combo (per ogni abilità) per {duration} s. Accumuli massimi: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "name": "Coprimani di Qingbo",
@@ -1061,10 +905,28 @@
     "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nÈ stato impiegato per la prima volta dagli eserciti umani sul fronte aggeloide.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
-  "item_equip_t4_suit_criti01_edc_03": {
-    "name": "Multiutensile della sicurezza MI",
+  "item_equip_t4_suit_criti01_body_02": {
+    "name": "Tenuta della sicurezza MI",
     "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \n\"Grazie, agente! Giuro che è l'ultima volta questo mese che chiamerò la polizia per aver dimenticato le chiavi! Lo prometto!\"",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_criti01_body_03": {
+    "name": "Tenuta della sicurezza MI O1",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_criti01_body_04": {
+    "name": "Tenuta della sicurezza MI O2",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuando la guerra finì, la Mieszko Industries modificò le proprie linee di produzione attuando efficaci interventi per la riduzione del peso. In questo modo, si sono aggiudicati dei contratti di fornitura per le forze di sicurezza urbane.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_criti01_body_06": {
+    "name": "Armatura della sicurezza MI O1",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nÈ stato impiegato per la prima volta dagli eserciti umani sul fronte aggeloide.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_criti01_edc_01": {
@@ -1077,6 +939,12 @@
     "name": "Mirino della sicurezza MI",
     "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nSpesso i prodotti della Mieszko Industries vengono contrabbandati nelle terre selvagge. Per alcuni assassini dei Fenditerra, il mirino della sicurezza MI è uno dei migliori in circolazione.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_criti01_edc_03": {
+    "name": "Multiutensile della sicurezza MI",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \n\"Grazie, agente! Giuro che è l'ultima volta questo mese che chiamerò la polizia per aver dimenticato le chiavi! Lo prometto!\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_criti01_edc_04": {
@@ -1103,23 +971,77 @@
     "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuesti guanti possono essere usati come arma. L'approvazione del prodotto include una valutazione riguardante \"l'efficacia nella disintegrazione di appendici aggeloidi\".",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
-  "item_equip_t4_suit_expend_spell01_edc_02": {
-    "name": "Manganello Xiranflow",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento sperimentale proposto come attrezzatura d'ordinanza per le guardie di Wuling.\nUn manganello leggero, ma dal potere d'arresto sorprendente. Può spezzare le ossa di una bestia, se necessario.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</><#ba.conduct> Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Questo effetto può conferire fino a {max_stack} accumuli di potenziamento. Ciascun accumulo ha una sua durata indipendente."
-  },
   "item_equip_t4_suit_criti01_hand_02": {
     "name": "DPI per mani della sicurezza MI",
     "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nIncludono unità delle Arti in miniatura a scopo soppressivo e vantano un'eccellente conduttanza energetica.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_criti01_hand_03": {
+    "name": "DPI per mani della sicurezza MI O1",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nIncludono unità delle Arti in miniatura a scopo soppressivo e vantano un'eccellente conduttanza energetica.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_criti01_hand_04": {
+    "name": "Guanti della sicurezza MI O1",
+    "description": "Progettato dalla Mieszko Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento della linea \"sicurezza MI\". \nQuesti guanti possono essere usati come arma. L'approvazione del prodotto include una valutazione riguardante \"l'efficacia nella disintegrazione di appendici aggeloidi\".",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{crit_up:0%}</> di probabilità di critico. \nQuando il personaggio mette a segno un colpo critico, ottiene <@ba.vup>+{atk_up:0%}</> di ATT per {duration} s. Accumuli massimi: {max_stack:0}. Dopo aver raggiunto gli accumuli massimi, conferisce un ulteriore <@ba.vup>+{crit_up2:0%}</> di probabilità di critico. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_body_01": {
+    "name": "Armatura dal bordo grigio",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nSi riconosce nel suo design l'eredità della Guerra degli Aggeloi: è rude e massiccio, ma anche funzionale.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_body_02": {
+    "name": "Armatura dal bordo grigio O1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nSi riconosce nel suo design l'eredità della Guerra degli Aggeloi: è rude e massiccio, ma anche funzionale.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_01": {
+    "name": "Pugnale a scatto dal bordo grigio",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nQuesto affilato pugnale a scatto si può attaccare agli spallacci o ai coprimani, a seconda dello stile di combattimento di chi lo utilizza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_edc_02": {
+    "name": "Pugnale a scatto dal bordo grigio O1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nQuesto affilato pugnale a scatto si può attaccare agli spallacci o ai coprimani, a seconda dello stile di combattimento di chi lo utilizza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_01": {
+    "name": "Coprimani dal bordo grigio",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nIl supporto fornito da questo paio di coprimani lascia un po' a desiderare. Alcune risorse del passato non possono essere replicate; questo implica che i nostri Tianshi devono trovare delle alternative.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_crush_fracture_hand_02": {
+    "name": "Coprimani dal bordo grigio O1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Un equipaggiamento difensivo multifunzione, sviluppato dalla Spadamanti Hongshan grazie allo studio di progetti di tecnologie perdute. \nIl supporto fornito da questo paio di coprimani lascia un po' a desiderare. Alcune risorse del passato non possono essere replicate; questo implica che i nostri Tianshi devono trovare delle alternative.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio applica <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</>, infligge <@ba.vup>+({phy_dmg_up_perstack:0%} × numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico)</> di <@ba.pd>danni fisici</> per {duration} s. Se il bersaglio ha già <#ba.physicalvul>Suscettibilità fisica</>, è <@ba.poise>Vacillante</> o se gli sono stati applicati <#ba.originium>cristalli di Originium</>, questo potenziamento aumenta di <@ba.vup>{special_multi:0.0}</> volte. Questo effetto non si accumula."
+  },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "name": "Armatura leggera Xiranflow",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento sperimentale proposto come attrezzatura d'ordinanza per le guardie di Wuling.\nVisto che si può contare su una costante produzione in massa di xiranite, sono stati riavviati molti progetti di ricerca per sviluppare equipaggiamenti a xiranite.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</><#ba.conduct> Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Questo effetto può conferire fino a {max_stack} accumuli di potenziamento. Ciascun accumulo ha una sua durata indipendente."
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</> <#ba.conduct>Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Numero massimo di accumuli di potenziamento: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
+  },
+  "item_equip_t4_suit_expend_spell01_edc_02": {
+    "name": "Randello Xiranflow",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento sperimentale proposto come attrezzatura d'ordinanza per le guardie di Wuling.\nUn manganello leggero, ma dal potere d'arresto sorprendente. Può spezzare le ossa di una bestia, se necessario.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</> <#ba.conduct>Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Numero massimo di accumuli di potenziamento: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
+  },
+  "item_equip_t4_suit_expend_spell01_hand_02": {
+    "name": "Guanti Xiranflow",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento sperimentale proposto come attrezzatura d'ordinanza per le guardie di Wuling.\n\"Stai dicendo che questi guanti saranno... Cosa?! Posso toccare i macchinari di xiranite per caricare questi ragazzacci?! Non è una delle tue solite contaminerie, vero?\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT.\nQuando il personaggio <#ba.consume>consuma</> <#ba.conduct>Elettrificazione</> o <#ba.corrupt>Corrosione</>, ottiene un numero di accumuli di potenziamento pari al <#ba.statuslevel>livello di stato</> della Reazione delle Arti consumata, e ciascun accumulo di potenziamento infligge <@ba.vup>+{spell_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> e <@ba.natur>danni da natura</> per {duration} s. Numero massimo di accumuli di potenziamento: {max_stack}. Ciascun accumulo ha una sua durata indipendente."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Esoscheletro anti-calore",
@@ -1145,29 +1067,53 @@
     "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \nIl caldo estremo non è terrificante. Tuttavia, fai attenzione se noti un inesplicabile cambio di temperatura.",
     "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
-  "item_equip_t4_suit_pulse_cryst01_body_01": {
-    "name": "Tuta perturbante a impulsi",
-    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dal design innovativo. \nMolti non hanno mai capito perché la Endfield Industries abbia sviluppato una tuta difensiva per combattere la guerra digitale.",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
-  },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "name": "Cartuccia portatile anti-calore",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \n\"Qualcuno ha udito una canzone proprio presso quel vulcano.\"",
     "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
-  "item_equip_t4_suit_pulse_cryst01_hand_01": {
-    "name": "Guanti a impulsi",
+  "item_equip_t4_suit_fire_natr01_hand_01": {
+    "name": "Guanti anti-calore",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
-    "decoDesc": "Equipaggiamento dal design innovativo. \nIn molti non sono riusciti a capire perché la Endfield Industries abbia aggiunto un miglior isolamento termico ai DPI a impulsi.",
-    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+    "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \nI DPI anti-calore sono stati sviluppati congiuntamente dall'USLT e dalla Endfield Industries per esplorare gli ambienti con temperature elevate.",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_fire_natr01_hand_02": {
+    "name": "Coprimani anti-calore",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \n\"Ssst! Silenzio. Potrebbe svegliarsi.\"",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "name": "Coprimani anti-calore O1",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento dall'eccellente resistenza al fuoco. \n\"Ssst! Silenzio. Potrebbe svegliarsi.\"",
     "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.burning>Combustione</>, ottiene <@ba.vup>+{fire_dmg_up:0%}</> di <@ba.fire>danni da fuoco</> per {duration} s. Quando il personaggio applica <#ba.corrupt>Corrosione</>, ottiene <@ba.vup>+{nature_dmg_up:0%}</> di <@ba.natur>danni da natura</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_heal01_body_01": {
+    "name": "Armatura pesante LYNX",
+    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una versione più pesante dell'equipaggiamento preferito dai medici. \nDi solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_heal01_body_02": {
+    "name": "Corazza LYNX",
+    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "L'equipaggiamento preferito dai medici. \nDi solito, le persone si riferiscono ai combattenti che indossano la corazza LYNX come \"kit medici ambulanti\". Spesso quegli angeli custodi si riempiono ogni tasca dell'armatura con presidi medici d'emergenza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_heal01_edc_01": {
+    "name": "Connettore LYNX",
+    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "L'equipaggiamento preferito dai medici. \nUn componente connettivo sviluppato dalla Rhodes Island per la calibrazione dei dati. Si può collegare a vari sistemi di supporto vitale per eseguire numerose operazioni mediche d'emergenza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_heal01_edc_02": {
+    "name": "Connettore LYNX O2",
+    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "L'equipaggiamento preferito dai medici. \nUn componente connettivo sviluppato dalla Rhodes Island per la calibrazione dei dati. Si può collegare a vari sistemi di supporto vitale per eseguire numerose operazioni mediche d'emergenza.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "name": "Lastra LYNX",
@@ -1187,6 +1133,12 @@
     "decoDesc": "L'equipaggiamento preferito dai medici. \nUn componente connettivo sviluppato dalla Rhodes Island per la calibrazione dei dati. Si può collegare a vari sistemi di supporto vitale per eseguire numerose operazioni mediche d'emergenza.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
   },
+  "item_equip_t4_suit_heal01_hand_01": {
+    "name": "Guanti LYNX",
+    "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Una versione più pesante dell'equipaggiamento preferito dai medici. \nLa Rhodes Island ancora oggi dota i suoi DPI di moduli di monitoraggio dell'Oripatia.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{heal_up:0%}</> di efficacia della Cura PS. \nQuando il personaggio fornisce Cura PS a un bersaglio alleato, quest'ultimo ottiene anche un <@ba.vup>{1-dmg_taken_down:0%}</> di riduzione dei danni contro ogni tipo di danno per {duration} s. Se con la Cura i PS superano i PS massimi, il bersaglio ottiene invece un <@ba.vup>{1-dmg_taken_down2:0%}</> di riduzione dei danni contro tutti i tipi di danni. Gli effetti descritti non si accumulano."
+  },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "Coprimani LYNX",
     "description": "Progettato dalla Rhodes Island e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
@@ -1199,10 +1151,46 @@
     "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nSulla prima pagina dei progetti di quest'arma si leggono le seguenti parole: \"La spadamanzia è per i guerrieri solitari\".",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
   },
+  "item_equip_t4_suit_phy01_body_02": {
+    "name": "Armatura pesante da spadamante",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nPer il design, i Tianshi hanno puntato sul \"grande quanto un burrone\", riuscendo così ad assorbire e neutralizzare gli attacchi a base energetica.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_03": {
+    "name": "Armatura pesante da spadamante O1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nNel progettare questa armatura pesante da spadamante, i Tianshi hanno adottato un approccio basato su serenità mentale e libertà interiore, così da conferirle la possibilità di neutralizzare gli attacchi energetici.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_body_04": {
+    "name": "Armatura in fibra da spadamante",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nSulla prima pagina dei progetti di quest'arma si leggono le seguenti parole: \"I coraggiosi marciano verso nord\".",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_01": {
+    "name": "Segnalatore NAV da spadamante",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nMolti ambienti contaminati sono estremamente pericolosi. Basta un passo falso per imboccare una strada sbagliata senza via d'uscita... proprio come è successo a Wuling tanti anni fa.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
   "item_equip_t4_suit_phy01_edc_02": {
     "name": "Microfiltro da spadamante",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \n\"Anche una singola esalazione in un ambiente contaminato può ucciderti. Indossa correttamente i dispositivi di protezione!\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_03": {
+    "name": "Pietra focaia da spadamante",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \nIn breve, la pietra focaia va in overlocking e prosciuga le riserve energetiche del sistema di armatura da spadamante. Si illumina solo quando chi la tiene è a un passo dalla morte.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
+  },
+  "item_equip_t4_suit_phy01_edc_04": {
+    "name": "Pugnale da spadamante",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dalla fabbrica del SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori.\nUn'arma da taglio tattica estremamente affilata, nonché uno dei primissimi esempi delle eccellenti tecniche di produzione della Spadamanti HS. Questo pugnale ha indubbiamente gettato solide fondamenta per la successiva serie di equipaggiamenti Yinglung.",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
   },
   "item_equip_t4_suit_phy01_hand_01": {
@@ -1210,12 +1198,6 @@
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Uno dei prodotti messi in commercio dal Dipartimento degli Spadamanti ai suoi albori. \n\"Fine dell'anno. Ho portato la mia lama a sud. Alla montagna sono cresciute nove teste che ruggivano incessantemente. Un buon auspicio.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{poise_up:0%}</> di bonus all'efficacia del Vacillamento. \nQuando il personaggio applica uno <#ba.physicalstatus>stato fisico</> esegue anche 1 colpo che infligge danni fisici pari a un {atk_scale:0%} dell'ATT e <@ba.poise>{poise}</> di Vacillamento. Tempo di recupero dell'effetto: {duration} s."
-  },
-  "item_equip_t4_suit_usp02_edc_02": {
-    "name": "Nucleo energetico di xiranite eterna O1",
-    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
-    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
-    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "name": "Coprimani tattici da spadamante",
@@ -1253,11 +1235,71 @@
     "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Tieni sempre addosso lo stabilizzatore, grazie. Così facendo, eviterai di catapultarti in cielo come una mongolfiera impazzita durante la fluttuazione dei parametri.\"",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
   },
+  "item_equip_t4_suit_poise01_edc_04": {
+    "name": "Orologio Æthertech",
+    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Alcuni utenti sostengono che i nostri prodotti provochino effetti emomutageni. Sono accuse assolutamente prive di fondamento.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_poise01_hand_01": {
+    "name": "Guanti Æthertech",
+    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_poise01_hand_02": {
+    "name": "Guanti leggeri Æthertech",
+    "description": "Progettato dalla Portable Æthertech Labs e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Uno sperimentale equipaggiamento protettivo leggero. \n\"Indossare sempre imbottiture extra durante l'utilizzo dei nostri prodotti. In caso di allucinazioni auditive o visive, TOGLIERSI IMMEDIATAMENTE di dosso i prodotti e mangiare qualcosa.\"",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{atk_up:0%}</> di ATT. \nQuando il personaggio applica <#ba.noguard>Vulnerabilità</>, ottiene <@ba.vup>+{phy_dmg_up:0%}</> di <@ba.pd>danni fisici</> per {duration} s. Accumuli massimi: {max_stack:0}. Se il bersaglio ha già {stack_cond:0} accumulo/i di <#ba.noguard>Vulnerabilità</>, il personaggio ottiene un ulteriore <@ba.vup>+{phy_dmg_up2:0%}</> di danni fisici per {duration2} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_pulse_cryst01_body_01": {
+    "name": "Tuta perturbante a impulsi",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento dal design innovativo. \nMolti non hanno mai capito perché la Endfield Industries abbia sviluppato una tuta difensiva per combattere la guerra digitale.",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "name": "Sonda a impulsi",
     "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
     "decoDesc": "Equipaggiamento dal design innovativo. \nPuò trovare tracce di chi ha smarrito la via anche nelle nebbie più fitte e gelide.",
     "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_02": {
+    "name": "Calibratore a impulsi",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento dal design innovativo. \nSetaccia l'infinito oceano di dati in cerca delle ben nascoste \"anomalie dorate\", per poi spazzarle via per sempre.",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_pulse_cryst01_edc_03": {
+    "name": "Nucleo di invasione a impulsi",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento dal design innovativo. \nGrazie al supporto della Cabala della Tranquillità, è stato creato un nucleo di invasione a impulsi in grado di violare la maggior parte dei firewall dei terminali.",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_pulse_cryst01_hand_01": {
+    "name": "Guanti a impulsi",
+    "description": "Progettato in via indipendente dalla Endfield Industries e assemblato dal SIA, questo equipaggiamento migliora le capacità combattive di chi lo usa.",
+    "decoDesc": "Equipaggiamento dal design innovativo. \nIn molti non sono riusciti a capire perché la Endfield Industries abbia aggiunto un miglior isolamento termico ai DPI a impulsi.",
+    "setBonus": "Effetto set da 3 pezzi: Intensità delle Arti <@ba.vup>+{phy_spell_up:0}</>. \nQuando il personaggio applica <#ba.conduct>Elettrificazione</>, ottiene <@ba.vup>+{pulse_dmg_up:0%}</> di <@ba.pulse>danni da elettricità</> per {duration} s. Quando il personaggio applica <#ba.frozen>Solidificazione</>, ottiene <@ba.vup>+{cryst_dmg_up:0%}</> di <@ba.cryst>danni da ghiaccio</> per {duration2} s. Gli effetti descritti non si accumulano."
+  },
+  "item_equip_t4_suit_usp02_body_01": {
+    "name": "Armatura di xiranite eterna",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Pochi riuscirebbero a trovare un collegamento tra le attività culinarie e la xiranite. Eppure, un residente di Wuling in particolare riesce a trarne ispirazione quando pasteggia al ristorante.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_edc_01": {
+    "name": "Nucleo energetico di xiranite eterna",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_edc_02": {
+    "name": "Nucleo energetico di xiranite eterna O1",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \n... Un tempo, percorreva le strade con un'ampia ciotola di tofu stufato nel latte Rugiada di bambù, e sosteneva di aver creato una tecnologia refrigerante di nuova generazione a base di xiranite.",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "name": "Braccio secondario di xiranite eterna",
@@ -1267,6 +1309,12 @@
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Guanti di xiranite eterna",
+    "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
+    "decoDesc": "Eredità di un Tianshi \"folle\". \n... I giorni passavano, e il folle Tianshi iniziava a rifiutare qualsiasi cibo che \"non regalasse ispirazione\". Dopo essersi ridotto a pelle e ossa, sparì presto nelle terre selvagge in cerca di \"xiranite appetibile\".",
+    "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."
+  },
+  "item_equip_t4_suit_usp02_hand_02": {
+    "name": "Guanti di xiranite eterna O1",
     "description": "Progettato dalla Spadamanti Hongshan e assemblato dal SIA, questo equipaggiamento può migliorare le capacità combattive di chi lo usa.",
     "decoDesc": "Eredità di un Tianshi \"folle\". \n... I giorni passavano, e il folle Tianshi iniziava a rifiutare qualsiasi cibo che \"non regalasse ispirazione\". Dopo essersi ridotto a pelle e ossa, sparì presto nelle terre selvagge in cerca di \"xiranite appetibile\".",
     "setBonus": "Effetto set da 3 pezzi: <@ba.vup>+{hp_up}</> di PS.\nQuando il personaggio applica <#ba.enhance>Amplificazione</>, <#ba.guard>Protezione</>, <#ba.vulnerable>Suscettibilità</> o <#ba.weak>Indebolimento</>, gli altri compagni di squadra infliggono <@ba.vup>+{dmg_up:0%}</> di danni per {duration} s. Questo effetto non si accumula."

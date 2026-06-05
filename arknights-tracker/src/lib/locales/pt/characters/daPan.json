@@ -127,7 +127,7 @@
       "name": "Mistura Especial"
     },
     "potential5": {
-      "description": "Habilidade de batalha <@ba.key>VIRE O WOK!</> melhorada: se a habilidade atingir apenas um inimigo, aplica mais 1 acúmulo de <#ba.noguard>Vulnerabilidade</> no alvo. O efeito só é ativado uma vez a cada {potential_5_interval:0} s.",
+      "description": "Habilidade de batalha <@ba.key>VIRE O WOK!</> melhorada: se a habilidade atingir apenas um inimigo, aplica mais 1 acúmulo de <#ba.noguard>Vulnerabilidade</> no alvo. Esse efeito só pode ser acionado uma vez a cada {potential_5_interval:0} s.",
       "name": "Acender o Fogo"
     }
   },
