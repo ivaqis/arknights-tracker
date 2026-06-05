@@ -1860,7 +1860,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Minipintura de Açúcar",
     "item_wgslime_1_hsmob_1_grass_2_1": "Gelatinas Verdes de Chubby Lung",
     "item_wgslime_1_wgthorns_1_1": "Soda Misteriosa",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Duplo Crocante Frito na Panela"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Duplo Crocante Frito na Panela",
+    "item_drop_agdisk_1": "Pedra Efígie Condutora",
+    "item_drop_agshield_1": "Lingote de Crisópolis Natural",
+    "item_drop_hsbear_1": "Trança de Bugio",
+    "item_drop_hsmino_1": "Sinos de Bambu de Qingbo",
+    "item_drop_hstiger_1": "Pelo Longo de Rastejante",
+    "item_drop_hvybow_1": "Balista Imersa em Névoa",
+    "item_drop_lbroshan_1": "Manoplas de Socador",
+    "item_drop_lbtough_1": "Lâmina de Machado Fragmentada",
+    "item_drop_sandb_1": "Chifre de Machado",
+    "item_drop_wgabyss_1": "Vintage Instantâneo"
   },
   "buildingNames": {
     "component_mc_1": "Unidade de Montagem",

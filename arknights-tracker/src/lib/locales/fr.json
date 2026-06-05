@@ -1860,7 +1860,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Mini peinture au sucre",
     "item_wgslime_1_hsmob_1_grass_2_1": "Verdure gélifiée de Choupi Lung",
     "item_wgslime_1_wgthorns_1_1": "Soda mystérieux",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Poêlée croustillante"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Poêlée croustillante",
+    "item_drop_agdisk_1": "Pierre d'effigie conductrice",
+    "item_drop_agshield_1": "Lingot de chrysopolis naturel",
+    "item_drop_hsbear_1": "Tresse de hurleur",
+    "item_drop_hsmino_1": "Carillons en bambou de Qingbo",
+    "item_drop_hstiger_1": "Poil long de ratisseur",
+    "item_drop_hvybow_1": "Baliste imbibée d'ignibrume",
+    "item_drop_lbroshan_1": "Gantelets de phalange de siège",
+    "item_drop_lbtough_1": "Lame de hache brisée",
+    "item_drop_sandb_1": "Corne de brute",
+    "item_drop_wgabyss_1": "Millésime instantané"
   },
   "buildingNames": {
     "component_mc_1": "Unité d'ajustage",

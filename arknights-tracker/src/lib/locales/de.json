@@ -1859,7 +1859,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Mini-Zuckergemälde",
     "item_wgslime_1_hsmob_1_grass_2_1": "Geliertes Gemüse in Chubby-Lung-Form",
     "item_wgslime_1_wgthorns_1_1": "Geheimnisvolle Limonade",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Doppel-Knusper"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Doppel-Knusper",
+    "item_drop_agdisk_1": "Leitfähiger Golemstein",
+    "item_drop_agshield_1": "Natürlicher Chrysopolis-Barren",
+    "item_drop_hsbear_1": "Heulerbestiengeflecht",
+    "item_drop_hsmino_1": "Qingbo-Bambuswindspiel",
+    "item_drop_hstiger_1": "Langfell der Wüstlingsbestie",
+    "item_drop_hvybow_1": "Nebeldurchtränkte Knochenbrecher-Balliste",
+    "item_drop_lbroshan_1": "Belagerungsfaust-Fingerhandschuhe",
+    "item_drop_lbtough_1": "Zerschmetterte Axtklinge",
+    "item_drop_sandb_1": "Axthorn",
+    "item_drop_wgabyss_1": "Tafelfertige Weinlese"
   },
   "buildingNames": {
     "component_mc_1": "Einpasseinheit",

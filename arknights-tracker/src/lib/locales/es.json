@@ -1859,7 +1859,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "Mini pintura de azúcar",
     "item_wgslime_1_hsmob_1_grass_2_1": "Gelatina verde de Lung regordete",
     "item_wgslime_1_wgthorns_1_1": "Gaseosa misteriosa",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "Doble crujiente frito"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "Doble crujiente frito",
+    "item_drop_agdisk_1": "Piedra efigie conductora",
+    "item_drop_agshield_1": "Lingote de Crisópolis natural",
+    "item_drop_hsbear_1": "Trenza de Bestia aulladora",
+    "item_drop_hsmino_1": "Campanas de bambú Qingbo",
+    "item_drop_hstiger_1": "Pelaje largo de Bestia Rastrera",
+    "item_drop_hvybow_1": "Balista empapada de niebla",
+    "item_drop_lbroshan_1": "Guanteletes rompeasedios",
+    "item_drop_lbtough_1": "Hoja de hacha destrozada",
+    "item_drop_sandb_1": "Cuerno de hacha",
+    "item_drop_wgabyss_1": "Clásico instantáneo"
   },
   "buildingNames": {
     "component_mc_1": "Unidad de ajuste",

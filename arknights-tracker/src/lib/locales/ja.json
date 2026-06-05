@@ -1860,7 +1860,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "飴細工",
     "item_wgslime_1_hsmob_1_grass_2_1": "龍泡泡の野菜羊羹",
     "item_wgslime_1_wgthorns_1_1": "不思議な炭酸飲料",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "レバーとガツの強火炒め"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "レバーとガツの強火炒め",
+    "item_drop_agdisk_1": "熱伝導擬態石",
+    "item_drop_agshield_1": "天然晶城塊",
+    "item_drop_hsbear_1": "咆獣のたてがみ",
+    "item_drop_hsmino_1": "清波竹鈴",
+    "item_drop_hstiger_1": "彪獣の長毛",
+    "item_drop_hvybow_1": "浸霧のクロスボウ",
+    "item_drop_lbroshan_1": "攻城者のガントレット",
+    "item_drop_lbtough_1": "崩砕の斧",
+    "item_drop_sandb_1": "斧甲獣の角",
+    "item_drop_wgabyss_1": "即席熟成酒"
   },
   "buildingNames": {
     "component_mc_1": "組立機",

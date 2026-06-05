@@ -1860,7 +1860,17 @@
     "item_wgshoal_1_grass_1_grass_2_1": "มินิ​ศิลปะ​จาก​น้ำตาล",
     "item_wgslime_1_hsmob_1_grass_2_1": "ผัก​เยลลี่​หลง​จ้ำม่ำ",
     "item_wgslime_1_wgthorns_1_1": "โซดา​พิศวง​ลึกลับ",
-    "item_wgthorns_1_hshog_1_hsmob_1_1": "เมนู​กะทะ​ทอด​พิเศษ​ความ​กรุบ​กรอบ"
+    "item_wgthorns_1_hshog_1_hsmob_1_1": "เมนู​กะทะ​ทอด​พิเศษ​ความ​กรุบ​กรอบ",
+    "item_drop_agdisk_1": "ศิลา​เอฟ​ฟิ​จี​สื่อ​นำ",
+    "item_drop_agshield_1": "แท่ง​คริ​โซ​โป​ลิส​ธรรมชาติ",
+    "item_drop_hsbear_1": "เปีย​อสูร​คำราม",
+    "item_drop_hsmino_1": "กระดิ่ง​ไผ่​ชิง​ป๋อ",
+    "item_drop_hstiger_1": "ขน​ยาว​เร​เกอร์​บี​ส​ต์",
+    "item_drop_hvybow_1": "บัล​ลิส​ตา​ที่​ดูดซับ​หมอก​มัว",
+    "item_drop_lbroshan_1": "ถุงมือ​เกราะ​หมัด​แห่ง​ป้อมปราการ",
+    "item_drop_lbtough_1": "ใบ​ขวาน​ที่​แตกสลาย",
+    "item_drop_sandb_1": "ขวาน​เขา",
+    "item_drop_wgabyss_1": "ไวน์​วิน​เท​จ​สำเร็จรูป"
   },
   "buildingNames": {
     "component_mc_1": "ยู​นิต​พิมพ์​แบบ",
