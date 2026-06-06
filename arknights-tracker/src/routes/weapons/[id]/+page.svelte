@@ -530,19 +530,8 @@
 
 <div class="min-h-screen md:px-8 md:py-3 font-sans transition-colors ">
     <div class="w-full max-w-[1500px] mx-auto mb-6">
-        <Button
-            variant="roundSmall"
-            color="white"
-            onClick={() => history.back()}
-        >
-            <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"><path d="M15 18l-6-6 6-6" /></svg
-            >
+        <Button variant="roundSmall" color="white" onClick={() => history.back()}>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -765,7 +754,7 @@
                         </div>
                         <span
                             class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                            >{tOrFallback("stats.baseAtk", "Базовая АТК")}</span
+                            >{tOrFallback("stats.baseAtk", "Base ATK")}</span
                         >
                         <span
                             class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
@@ -876,7 +865,7 @@
                         class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
                     >
                         <Icon name="table" class="w-4 h-4" />
-                        <span>{tOrFallback("stats.table", "Таблица")}</span>
+                        <span>{tOrFallback("stats.table", "Table")}</span>
                     </button>
                 </div>
             </div>
@@ -901,22 +890,7 @@
                                 class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
                             >
                                 <div class="flex items-center gap-2 shrink-0">
-                                    <svg
-                                        width="12"
-                                        height="12"
-                                        viewBox="0 0 12 12"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="shrink-0 mt-0.5"
-                                    >
-                                        <circle
-                                            cx="6"
-                                            cy="6"
-                                            r="5"
-                                            stroke="#888"
-                                            stroke-width="2"
-                                        />
-                                    </svg>
+                                    <Icon name="circle" class="w-3 h-3 text-[#888888]" />
                                     <div class="flex gap-1 items-center">
                                         <h3
                                             class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
@@ -1140,24 +1114,9 @@
                                 }}
                             >
                                 {#if copiedImageId === "icon"}
-                                    <svg
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
+                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                 {:else}
-                                    <Icon
-                                        name="copy"
-                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                    />
+                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                 {/if}
                             </button>
 
@@ -1173,10 +1132,7 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon
-                                    name="import"
-                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                />
+                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                             </button>
                         </div>
                     </div>
@@ -1241,24 +1197,9 @@
                                 }}
                             >
                                 {#if copiedImageId === "big"}
-                                    <svg
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
+                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                 {:else}
-                                    <Icon
-                                        name="copy"
-                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                    />
+                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                 {/if}
                             </button>
 
@@ -1274,10 +1215,7 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon
-                                    name="import"
-                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                />
+                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                             </button>
                         </div>
                     </div>
@@ -1329,19 +1267,7 @@
                         class="p-1.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none"
                     >
                         {#if isTableCopied}
-                            <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#FACC15"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="animate-fadeIn"
-                            >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
+                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                         {:else}
                             <Icon name="copy" class="w-4 h-4" />
                         {/if}
@@ -1372,7 +1298,7 @@
                                 class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
                                 >{tOrFallback(
                                     "stats.baseAtk",
-                                    "Базовая АТК",
+                                    "Base ATK",
                                 )}</th
                             >
                         </tr>
@@ -1439,19 +1365,6 @@
 {/if}
 
 <style>
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #cbd5e1;
-        border-radius: 10px;
-    }
-    :global(.dark) .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #555;
-    }
     .card-gradient {
         background: linear-gradient(
             to right,

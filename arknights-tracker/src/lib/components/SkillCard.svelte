@@ -1,5 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
+    
     import Icon from "$lib/components/Icons.svelte";
     import ItemCard from "$lib/components/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -534,19 +535,7 @@
                 class="flex items-center justify-center gap-2 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-[#444444] dark:hover:bg-[#555] rounded-md transition-colors text-gray-700 dark:text-[#E4E4E4] text-sm font-bold border border-gray-200 dark:border-transparent shrink-0 shadow-sm animate-fadeIn"
             >
                 {#if isTableCopied}
-                    <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#FACC15"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="animate-fadeIn"
-                    >
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                 {:else}
                     <Icon name="copy" class="w-4 h-4" />
                 {/if}

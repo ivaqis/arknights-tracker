@@ -2,6 +2,7 @@
     import { t } from "$lib/i18n";
     import { characters } from "$lib/data/characters";
     import { weapons } from "$lib/data/weapons";
+    
     import Icon from "$lib/components/Icons.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Images from "$lib/components/Images.svelte";

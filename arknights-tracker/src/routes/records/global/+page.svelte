@@ -4,6 +4,12 @@
     import { goto } from "$app/navigation";
     import { fade } from "svelte/transition";
     import { currentLocale } from "$lib/stores/locale";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { currencies } from "$lib/data/items/currencies";
+    import { banners } from "$lib/data/banners";
+    import { bannerTypes } from "$lib/data/bannerTypes";
+    import { API_BASE } from "$lib/api";
 
     import Select from "$lib/components/Select.svelte";
     import Icon from "$lib/components/Icons.svelte";
@@ -13,13 +19,6 @@
     import BannerModal from "$lib/components/BannerModal.svelte";
     import OperatorCard from "$lib/components/OperatorCard.svelte";
     import WeaponCard from "$lib/components/WeaponCard.svelte";
-
-    import { characters } from "$lib/data/characters";
-    import { weapons } from "$lib/data/weapons";
-    import { currencies } from "$lib/data/items/currencies";
-    import { banners } from "$lib/data/banners";
-    import { bannerTypes } from "$lib/data/bannerTypes";
-    import { API_BASE } from "$lib/api";
 
     const initialStats = {
         totalUsers: 0,
@@ -466,16 +465,7 @@
             color="white"
             onClick={() => goto("/records")}
         >
-            <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
         <h2
             class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"

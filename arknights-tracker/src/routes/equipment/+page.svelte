@@ -4,13 +4,7 @@
     import { pullData } from "$lib/stores/pulls";
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
-    //import { onMount } from 'svelte'; //Убрать
-    import {
-        equipmentFilters,
-        equipmentSearch,
-        equipmentManual,
-        equipmentGroupMode,
-    } from "$lib/stores/filterStore";
+    import { equipmentFilters, equipmentSearch, equipmentManual, equipmentGroupMode } from "$lib/stores/filterStore";
 
     import WeaponCard from "$lib/components/WeaponCard.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";

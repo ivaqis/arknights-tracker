@@ -1,14 +1,13 @@
 <script lang="ts">
     import { t } from "$lib/i18n";
+
     import Timeline from "$lib/components/Timeline.svelte";
 </script>
 
 <div class="fixed inset-0 z-20 w-full h-full flex flex-col overflow-hidden bg-[#F9F9F9] dark:bg-[#2C2C2C] md:p-8 p-4 md:ml-[var(--sb-w)]">
-    
+
     <div class="flex items-center gap-4 mb-3 shrink-0">
-        <h2
-            class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3"
-        >
+        <h2 class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3">
             {$t("pages.events")}
         </h2>
     </div>

@@ -54,11 +54,11 @@
     const sortOptions = [
         {
             value: "max_wait",
-            label: $t("systemNames.sortByWait") || "По числу дней без рерана",
+            label: $t("systemNames.sortByWait") || "By days without rerun",
         },
         {
             value: "release",
-            label: $t("systemNames.sortByRelease") || "По релизам",
+            label: $t("systemNames.sortByRelease") || "By release date",
         },
     ];
 
@@ -393,7 +393,7 @@
                                                 {#if item.isCurrentlyActive}
                                                     <span class="text-green-400"
                                                         >{$t("status.active") ||
-                                                            "Активен"}</span
+                                                            "Active"}</span
                                                     >
                                                     ({$t(
                                                         "timer.ongoing_active",
@@ -502,11 +502,9 @@
                                 </button>
                             {/if}
 
-                            <span
-                                class="text-sm font-bold whitespace-nowrap text-[#21272C] dark:text-[#FDFDFD] {isLastExpanded
+                            <span class="text-sm font-bold whitespace-nowrap text-[#21272C] dark:text-[#FDFDFD] {isLastExpanded
                                     ? 'ml-12'
-                                    : 'ml-3'}"
-                            >
+                                    : 'ml-3'}">
                                 {currentTab === "operators"
                                     ? $t(`characters.${item.id}`) !==
                                       `characters.${item.id}`
@@ -526,24 +524,3 @@
 </div>
 
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />
-
-<style>
-    .custom-scrollbar {
-        scrollbar-width: auto;
-        scrollbar-color: #a1a1aa transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #d4d4d8;
-        border-radius: 10px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background-color: #a1a1aa;
-    }
-</style>

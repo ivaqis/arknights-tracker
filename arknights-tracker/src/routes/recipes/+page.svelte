@@ -1,14 +1,15 @@
 <script>
-    import {t} from "$lib/i18n";
-    import {itemFilters, itemGroupMode, itemManual, itemSearch} from "$lib/stores/filterStore.js";
-    import {Item} from "$lib/classes/items/Item.js";
+    import { t } from "$lib/i18n";
+    import { itemFilters, itemGroupMode, itemManual, itemSearch } from "$lib/stores/filterStore.js";
+    import { Item } from "$lib/classes/items/Item.js";
+    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
+    import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
+
+    import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
     import DataToolbar from "$lib/components/DataToolbar.svelte";
     import ItemCard from "$lib/components/recipes/ItemCard.svelte";
-    import {craftableItemsList} from "$lib/data/crafts/craftableItemsList.js";
-    import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
-    import {FactoryEvent} from "$lib/classes/events/FactoryEvent.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
 
     $: filters = $itemFilters;
     $: searchQuery = $itemSearch;
@@ -18,7 +19,6 @@
 
     let sortField = "itemGroup";
     let sortDirection = "desc";
-    let searchQuery = "";
 
     $: filteredItems = (() => {
         const baseFiltered = [...allItems].filter((item) => {
@@ -166,29 +166,51 @@
     $: groupedArray = Object.entries(groupedItems)
         .map(([groupId, items]) => ({ groupId, items }));
 
-    let displayLimit = 100;
-    $: if (searchQuery !== undefined || filters || sortField || sortDirection) {
-        displayLimit = 100;
+    let displayLimit = 2;
+    let flatDisplayLimit = 40;
+
+    $: {
+        const _trigger = [
+            $itemSearch,
+            $itemFilters,
+            sortField,
+            sortDirection,
+            isGrouped
+        ];
+        displayLimit = 2;
+        flatDisplayLimit = 40;
+        setTimeout(checkScroll, 50);
     }
 
     $: displayedGroups = groupedArray.slice(0, displayLimit);
-    $: displayedItems = filteredItems.slice(0, displayLimit);
+    $: displayedItems = filteredItems.slice(0, flatDisplayLimit);
 
-    function infiniteScroll(node) {
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && displayLimit < filteredItems.length) {
-                displayLimit += 100;
-            }
-        }, {
-            rootMargin: "400px"
-        });
+    function loadMore() {
+        let changed = false;
+        if (isGrouped && displayLimit < groupedArray.length) {
+            displayLimit += 2;
+            changed = true;
+        } else if (!isGrouped && flatDisplayLimit < filteredItems.length) {
+            flatDisplayLimit += 40;
+            changed = true;
+        }
+        if (changed) {
+            setTimeout(checkScroll, 50);
+        }
+    }
 
-        observer.observe(node);
-        return {
-            destroy() { observer.disconnect(); }
-        };
+    function checkScroll() {
+        if (typeof window === "undefined" || typeof document === "undefined")
+            return;
+        const currentScroll = window.innerHeight + window.scrollY;
+        const totalHeight = document.body.offsetHeight;
+        if (totalHeight - currentScroll < 1000) {
+            loadMore();
+        }
     }
 </script>
+
+<svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
 
 <div class="max-w-[100%] max-h-[100%] min-h-screen h-full flex flex-col xl:flex-row">
     <div class="w-full xl:w-[calc(100%-max(470px,30%))] mr-6">
@@ -218,14 +240,14 @@
             {#if isGrouped}
 
                 {#each displayedGroups as group}
-                    <div class="flex flex-col gap-1 animate-fadeIn">
-                        <div class="flex items-center gap-3 mb-2 mt-6">
-                            <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk">
+                    <div class="flex flex-col gap-1 animate-fadeIn pb-5">
+                        <div class="flex items-center gap-3 mb-2">
+                            <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk pl-0.5">
                                 {$t(`sort.itemGroups.${group.groupId}`)}
                             </h3>
                         </div>
 
-                        <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-5 justify-start">
+                        <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">
                             {#each group.items as item}
 
                                 <button
@@ -271,10 +293,14 @@
                     {/each}
                 </div>
 
-                {#if displayLimit < filteredItems.length}
-                    <div use:infiniteScroll class="h-10 w-full mt-4"></div>
-                {/if}
+            {/if}
 
+            {#if (isGrouped && displayLimit < groupedArray.length) || (!isGrouped && flatDisplayLimit < filteredItems.length)}
+                <div class="h-10 w-full mt-4 flex items-center justify-center opacity-50">
+                    <div class="w-8 h-8 animate-spin dark:text-white">
+                        <Icon name="loading" class="w-8 h-8 opacity-100" />
+                    </div>
+                </div>
             {/if}
 
         </div>
@@ -300,7 +326,7 @@
             on:click={() => (isBottomSheetOpen = true)}
             title="Results"
         >
-            <Icons name="inbox" class="w-6 h-6 text-black" />
+            <Icon name="inbox" class="w-6 h-6 text-black" />
         </button>
     {/if}
 {/if}

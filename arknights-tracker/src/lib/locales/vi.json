@@ -98,7 +98,18 @@
       "importSuccess": "Nhập thành công! Đã thêm {n} lượt tìm kiếm mới.",
       "importDuplicate": "Tất cả lượt tìm kiếm trong tệp đã có trong cơ sở dữ liệu.",
       "importError": "Lỗi nhập dữ liệu. Vui lòng kiểm tra cấu trúc tệp.",
-      "importNoData": "Không tìm thấy dữ liệu hợp lệ để nhập."
+      "importNoData": "Không tìm thấy dữ liệu hợp lệ để nhập.",
+      "dragMode": "Bật chế độ sắp xếp lại thẻ banner",
+      "resetLayout": "Đặt lại bố cục",
+      "historySettings": "Cài đặt trang",
+      "maxCols": "Số cột tối đa",
+      "bannerTypeExclusions": "Loại trừ loại banner",
+      "bannerExclusions": "Loại trừ banner",
+      "noneSelected": "Chưa chọn",
+      "noWeaponBanners": "Không có banner vũ khí nào khả dụng",
+      "showMonthlyChart": "Hiển thị biểu đồ lượt tìm kiếm theo tháng",
+      "showRating": "Hiển thị đánh giá của bạn",
+      "showTotalCost": "Hiển thị tổng chi phí tuyển dụng"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Lịch sử Banner",

@@ -1064,7 +1064,7 @@
                             >
                                 <Icon
                                     name={regionId}
-                                    class="w-5 h-5"
+                                    class="w-5 h-5 shrink-0"
                                     style="color: {rColor};"
                                 />
                                 <h3
@@ -1266,14 +1266,7 @@
                                                         "essencesPage.primaryWeapon",
                                                     )}
                                                 >
-                                                    <svg
-                                                        class="w-3 h-3"
-                                                        fill="currentColor"
-                                                        viewBox="0 0 24 24"
-                                                        ><path
-                                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                                                        /></svg
-                                                    >
+                                                    <Icon name="favorite" class="w-3 h-3" />
                                                 </div>
                                             {/if}
                                         </div>
@@ -1372,25 +1365,13 @@
                                             type="button"
                                             class="w-7 h-7 rounded-md bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors border border-red-500/30 flex-shrink-0 cursor-pointer ml-2"
                                             title={$t("common.remove") ||
-                                                "Убрать"}
+                                                "Remove"}
                                             on:click|preventDefault|stopPropagation={() =>
                                                 toggleWeaponSelection(
                                                     match.weapon.id,
                                                 )}
                                         >
-                                            <svg
-                                                class="w-4 h-4"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="3"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M20 12H4"
-                                                />
-                                            </svg>
+                                            −
                                         </button>
                                     </div>
                                 {/each}
@@ -1408,35 +1389,14 @@
                                             )}
                                     >
                                         <div class="flex items-center gap-2">
-                                            <Icon
-                                                name="sparkles"
-                                                class="w-4 h-4 text-[#F9B90C]"
-                                            />
-                                            <span
-                                                class="text-[12px] font-bold text-[#4ADE80] dark:text-[#4ADE80]"
-                                            >
-                                                {$t(
-                                                    "essencesPage.simultaneousFarming",
-                                                )}
+                                            <Icon name="sparkles" class="w-4 h-4 text-[#F9B90C]" />
+                                            <span class="text-[12px] font-bold text-[#3AC76D] dark:text-[#4ADE80]">
+                                                {$t("essencesPage.simultaneousFarming")}
                                             </span>
                                         </div>
-                                        <svg
-                                            class="w-4 h-4 text-[#F9B90C] transition-transform duration-300 {collapsedSuggestions[
-                                                dungeon.dungeonId
-                                            ]
+                                        <Icon name="arrowDown" class="w-3 h-3 text-[#F9B90C] transition-transform duration-300 {collapsedSuggestions[dungeon.dungeonId]
                                                 ? 'rotate-180'
-                                                : ''}"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M5 15l7-7 7 7"
-                                            />
-                                        </svg>
+                                                : ''}" />
                                     </button>
 
                                     {#if !collapsedSuggestions[dungeon.dungeonId]}
@@ -1554,19 +1514,7 @@
                                                                                         wp.id,
                                                                                     )}
                                                                             >
-                                                                                <svg
-                                                                                    class="w-3 h-3"
-                                                                                    fill="none"
-                                                                                    viewBox="0 0 24 24"
-                                                                                    stroke="currentColor"
-                                                                                    stroke-width="3"
-                                                                                >
-                                                                                    <path
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        d="M12 4v16m8-8H4"
-                                                                                    />
-                                                                                </svg>
+                                                                                +
                                                                             </button>
                                                                         </div>
                                                                     {/each}

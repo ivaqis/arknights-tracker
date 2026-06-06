@@ -98,7 +98,18 @@
       "importSuccess": "가챠 데이터 가져오기 성공! 새로운 가챠 {n}개가 추가되었습니다.",
       "importDuplicate": "파일의 모든 가챠 데이터가 이미 데이터베이스에 존재합니다.",
       "importError": "가져오기 오류. 파일 구조를 확인해 주세요.",
-      "importNoData": "가져올 올바른 데이터가 없습니다."
+      "importNoData": "가져올 올바른 데이터가 없습니다.",
+      "dragMode": "배너 카드 정렬 모드 활성화",
+      "resetLayout": "레이아웃 초기화",
+      "historySettings": "페이지 설정",
+      "maxCols": "최대 열 수",
+      "bannerTypeExclusions": "배너 유형 제외",
+      "bannerExclusions": "배너 제외",
+      "noneSelected": "선택되지 않음",
+      "noWeaponBanners": "사용 가능한 무기 배너가 없습니다",
+      "showMonthlyChart": "월별 가챠 횟수 그래프 표시",
+      "showRating": "내 등급 표시",
+      "showTotalCost": "총 공개채용 비용 표시"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "배너 기록",

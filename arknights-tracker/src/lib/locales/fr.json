@@ -98,7 +98,18 @@
       "importSuccess": "Importation réussie ! {n} nouveaux tirages ajoutés.",
       "importDuplicate": "Tous les tirages du fichier sont déjà dans la base de données.",
       "importError": "Erreur d'importation. Vérifiez la structure du fichier.",
-      "importNoData": "Aucune donnée valide trouvée pour l'importation."
+      "importNoData": "Aucune donnée valide trouvée pour l'importation.",
+      "dragMode": "Activer le mode de réarrangement des cartes de bannières",
+      "resetLayout": "Réinitialiser la disposition",
+      "historySettings": "Pengaturan Halaman",
+      "maxCols": "Colonnes max",
+      "bannerTypeExclusions": "Exclusions de types de bannières",
+      "bannerExclusions": "Exclusions de bannières",
+      "noneSelected": "Aucun sélectionné",
+      "noWeaponBanners": "Aucune bannière d'arme disponible",
+      "showMonthlyChart": "Afficher le graphique des tirages par mois",
+      "showRating": "Afficher votre évaluation",
+      "showTotalCost": "Afficher le coût total du recrutement"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Historique des bannières",

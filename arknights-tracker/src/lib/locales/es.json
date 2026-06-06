@@ -95,7 +95,18 @@
       "importSuccess": "¡Importación exitosa! Se agregaron {n} tiradas nuevas.",
       "importDuplicate": "Todas las tiradas del archivo ya están en la base de datos.",
       "importError": "Error de importación. Compruebe la estructura del archivo.",
-      "importNoData": "No se encontraron datos válidos para importar."
+      "importNoData": "No se encontraron datos válidos para importar.",
+      "dragMode": "Activar el modo de reorganización de tarjetas de banners",
+      "resetLayout": "Restablecer diseño",
+      "historySettings": "Ajustes de página",
+      "maxCols": "Columnas máximas",
+      "bannerTypeExclusions": "Exclusiones de tipos de banners",
+      "bannerExclusions": "Exclusiones de banners",
+      "noneSelected": "Ninguno seleccionado",
+      "noWeaponBanners": "No hay banners de armas disponibles",
+      "showMonthlyChart": "Mostrar gráfico de tiradas por mes",
+      "showRating": "Mostrar tu calificación",
+      "showTotalCost": "Mostrar costo total de reclutamiento"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Historial de banners",

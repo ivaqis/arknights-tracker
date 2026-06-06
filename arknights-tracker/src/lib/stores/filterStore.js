@@ -129,3 +129,12 @@ export const itemFilters = writable({ ...initialItemFilters });
 export const itemManual = writable({ ...initialManualMode });
 export const itemSearch = writable("");
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
+
+export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
+export const recordsExcludedBanners = createPersistentStore('recordsExcludedBanners', []);
+export const recordsShowMonthlyChart = createPersistentStore('recordsShowMonthlyChart', true);
+export const recordsShowRating = createPersistentStore('recordsShowRating', true);
+export const recordsShowTotalCost = createPersistentStore('recordsShowTotalCost', true);
+export const recordsMaxCols = createPersistentStore('recordsMaxCols', 3);
+export const recordsEnableDragDrop = createPersistentStore('recordsEnableDragDrop', false);
+export const recordsCardsOrder = createPersistentStore('recordsCardsOrder', []);

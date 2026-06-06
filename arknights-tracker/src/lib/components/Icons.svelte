@@ -2133,6 +2133,15 @@
     >
         <path d="M7 3L16 12L7 21" stroke="black" stroke-width="2" />
     </svg>
+{:else if name == "arrowLeft"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"><path d="M15 18l-6-6 6-6" /></svg
+    >
 {:else if name == "info"}
     <svg
         width="17"
@@ -3293,5 +3302,175 @@
         xmlns="http://www.w3.org/2000/svg"
     >
         <path d="M2 7L12 17L22 7" fill="currentColor" />
+    </svg>
+{:else if name == "toggleManu"}
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class={$$props.class}
+        style={$$props.style}
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+        />
+    </svg>
+{:else if name == "doubleArrowsLeft"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M18 19L11 12L18 5"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="square"
+        />
+        <path
+            d="M11 19L4 12L11 5"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="square"
+        />
+    </svg>
+{:else if name == "moon"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="none"
+        ><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+{:else if name == "sun"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        ><circle cx="12" cy="12" r="5" /><path
+            d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+        />
+    </svg>
+{:else if name == "circle"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g clip-path="url(#clip0_2471_80928)">
+            <path
+                d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
+                stroke="currentColor"
+                stroke-width="2"
+            />
+        </g>
+        <defs>
+            <clipPath id="clip0_2471_80928">
+                <rect width="12" height="12" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+{:else if name == "person"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        ><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle
+            cx="12"
+            cy="7"
+            r="4"
+        ></circle>
+    </svg>
+{:else if name == "favorite"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        ><path
+            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+        />
+    </svg>
+{:else if name == "code"}
+    <svg
+        class="w-4 h-4 text-gray-400"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+        ></path>
+    </svg>
+{:else if name == "search"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        ></path>
+    </svg>
+{:else if name == "dragDots"}
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M10 6C10 6.55228 9.55228 7 9 7C8.44772 7 8 6.55228 8 6C8 5.44772 8.44772 5 9 5C9.55228 5 10 5.44772 10 6Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M10 12C10 12.5523 9.55228 13 9 13C8.44772 13 8 12.5523 8 12C8 11.4477 8.44772 11 9 11C9.55228 11 10 11.4477 10 12Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M10 18C10 18.5523 9.55228 19 9 19C8.44772 19 8 18.5523 8 18C8 17.4477 8.44772 17 9 17C9.55228 17 10 17.4477 10 18Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M16 6C16 6.55228 15.5523 7 15 7C14.4477 7 14 6.55228 14 6C14 5.44772 14.4477 5 15 5C15.5523 5 16 5.44772 16 6Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M16 12C16 12.5523 15.5523 13 15 13C14.4477 13 14 12.5523 14 12C14 11.4477 14.4477 11 15 11C15.5523 11 16 11.4477 16 12Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M16 18C16 18.5523 15.5523 19 15 19C14.4477 19 14 18.5523 14 18C14 17.4477 14.4477 17 15 17C15.5523 17 16 17.4477 16 18Z"
+            stroke="currentColor"
+            stroke-width="2"
+        />
     </svg>
 {/if}

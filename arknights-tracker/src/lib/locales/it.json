@@ -98,7 +98,18 @@
       "importSuccess": "Importazione completata! Aggiunte {n} nuove pescate.",
       "importDuplicate": "Tutte le pescate nel file sono già nel database.",
       "importError": "Errore di importazione. Controlla la struttura del file.",
-      "importNoData": "Impossibile trovare dati validi per l'importazione."
+      "importNoData": "Impossibile trovare dati validi per l'importazione.",
+      "dragMode": "Abilita la modalità di riarrangiamento delle carte banner",
+      "resetLayout": "Ripristina layout",
+      "historySettings": "Impostazioni della pagina",
+      "maxCols": "Colonne massime",
+      "bannerTypeExclusions": "Esclusioni dei tipi di banner",
+      "bannerExclusions": "Esclusioni di banner",
+      "noneSelected": "Nessuno selezionato",
+      "noWeaponBanners": "Nessun banner di armi disponibile",
+      "showMonthlyChart": "Mostra grafico delle pescate al mese",
+      "showRating": "Mostra la tua valutazione",
+      "showTotalCost": "Mostra il costo totale del reclutamiento"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Cronologia Banner",

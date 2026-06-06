@@ -3,13 +3,7 @@
     import { onMount, onDestroy } from "svelte";
     import { pullData } from "$lib/stores/pulls";
     import { accountStore } from "$lib/stores/accounts";
-    import {
-        syncStatus,
-        user,
-        initAuth,
-        checkSync,
-        justSynced,
-    } from "$lib/stores/cloudStore";
+    import { syncStatus, user, initAuth, checkSync, justSynced } from "$lib/stores/cloudStore";
     import { t } from "$lib/i18n";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -23,7 +17,7 @@
 
     import CookieConsent from "$lib/components/CookieConsent.svelte";
     import LanguageSelect from "$lib/components/LanguageSelect.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
     import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
     import SyncModal from "$lib/components/SyncModal.svelte";
     import PrivacyModal from "$lib/components/PrivacyModal.svelte";
@@ -193,20 +187,7 @@
                     (isMobileMenuOpen = !isMobileMenuOpen)}
                 class="p-2 bg-base text-primary border border-line rounded-lg shadow-md"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
+                <Icon name="toggleManu" class="w-6 h-6" />
             </button>
         </div>
 
@@ -241,7 +222,7 @@
                                 href="/"
                                 class="block hover:opacity-80 transition-opacity"
                             >
-                                <Icons name="siteLogo" class="w-full h-auto" />
+                                <Icon name="siteLogo" class="w-full h-auto" />
                             </a>
                         </h1>
                     </div>
@@ -249,47 +230,15 @@
 
                 <button
                     on:click={toggleCollapse}
-                    class="hidden md:flex items-center justify-center w-8 h-8 rounded text-gray-400 dark:text-gray-500 hover:text-[#21272C] dark:hover:text-[#FDFDFD] transition-colors group flex-shrink-0"
+                    class="hidden md:flex items-center justify-center w-8 h-8 rounded text-gray-400 dark:text-gray-500 group flex-shrink-0 hover:dark:text-[#FFE145] hover:text-[#FFE145] duration-200"
                     aria-label={isCollapsed
                         ? "Expand Sidebar"
                         : "Collapse Sidebar"}
                 >
                     {#if isCollapsed}
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        </svg>
+                        <Icon name="toggleManu" class="w-6 h-6" />
                     {:else}
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M18 19l-7-7 7-7"
-                            />
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M11 19l-7-7 7-7"
-                                class="opacity-50"
-                            />
-                        </svg>
+                        <Icon name="doubleArrowsLeft" class="w-6 h-6" />
                     {/if}
                 </button>
             </div>
@@ -345,7 +294,7 @@
                                         ? 'text-gray-900 dark:text-white'
                                         : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
                                 >
-                                    <Icons
+                                    <Icon
                                         name={item.icon}
                                         class="w-full h-full"
                                     />
@@ -399,28 +348,9 @@
                             : $t("sidebar.theme_dark")}
                     >
                         {#if $isDarkMode}
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="none"
-                                ><path
-                                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-                                ></path></svg
-                            >
+                            <Icon name="moon" class="w-6 h-6" />
                         {:else}
-                            <svg
-                                width="22"
-                                height="22"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                ><circle cx="12" cy="12" r="5" /><path
-                                    d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-                                /></svg
-                            >
+                            <Icon name="sun" class="w-6 h-6" />
                         {/if}
                     </button>
 
@@ -429,7 +359,7 @@
                         class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-black dark:hover:text-white transition-colors"
                         title="Change Language"
                     >
-                        <Icons name="globe" style="width:22px; height:22px;" />
+                        <Icon name="globe" style="width:22px; height:22px;" />
                     </button>
                 {/if}
             </div>
@@ -450,19 +380,19 @@
                         <div class="flex items-center gap-3 min-w-0">
                             {#if notification.type === 'success'}
                                 <div class="flex-shrink-0 bg-green-50 dark:bg-green-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="success" class="w-[15px] h-[15px] text-green-500" />
+                                    <Icon name="success" class="w-[15px] h-[15px] text-green-500" />
                                 </div>
                             {:else if notification.type === 'error'}
                                 <div class="flex-shrink-0 bg-red-50 dark:bg-red-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="error" class="w-[15px] h-[15px] text-red-500" />
+                                    <Icon name="error" class="w-[15px] h-[15px] text-red-500" />
                                 </div>
                             {:else if notification.type === 'warning'}
                                 <div class="flex-shrink-0 bg-amber-50 dark:bg-amber-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="warning" class="w-[15px] h-[15px] text-amber-500" />
+                                    <Icon name="warning" class="w-[15px] h-[15px] text-amber-500" />
                                 </div>
                             {:else}
                                 <div class="flex-shrink-0 bg-blue-50 dark:bg-blue-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="info" class="w-[15px] h-[15px] text-blue-500" />
+                                    <Icon name="info" class="w-[15px] h-[15px] text-blue-500" />
                                 </div>
                             {/if}
 
@@ -487,7 +417,7 @@
                             class="flex-shrink-0 text-gray-400 hover:text-gray-600 dark:hover:text-white transition-colors p-1 hover:bg-gray-100 dark:hover:bg-[#3E3E3E] rounded-md outline-none"
                             aria-label={$t("close") || "Close"}
                         >
-                            <Icons name="close" class="w-3.5 h-3.5" />
+                            <Icon name="close" class="w-3.5 h-3.5" />
                             <span class="hidden">{$t("close") || "Close"}</span>
                         </button>
                     </div>
@@ -543,7 +473,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Discord"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="discrodBig"
                                         class="h-[22px] w-auto"
                                     />
@@ -555,7 +485,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="GitHub"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="gitHubBig"
                                         class="h-[22px] w-auto"
                                     />
@@ -581,7 +511,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="X (Twitter)"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="twitter"
                                         class="h-[22px] w-auto"
                                     />
@@ -593,7 +523,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Skport"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="skport"
                                         class="h-[22px] w-auto"
                                     />
@@ -605,7 +535,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Official Discord"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="discord"
                                         class="h-[22px] w-auto"
                                     />
@@ -617,7 +547,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Official YouTube"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="youtube"
                                         class="h-[22px] w-auto"
                                     />
@@ -640,7 +570,7 @@
                                 on:click={() => (isDonateModalOpen = true)}
                                 class="text-left text-[15px] text-[#F9B90C] hover:text-[#d9a009] dark:hover:text-[#ffe28a] transition-colors flex items-center gap-1"
                             >
-                                <Icons name="favorite" class="w-4 h-4" />
+                                <Icon name="favorite" class="w-4 h-4" />
                                 {$t("footer.supportProject")}
                             </button>
                         </div>
@@ -657,7 +587,7 @@
                                 class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("home.docsTitle")}
-                                <Icons name="sendToLink" class="w-4 h-4" />
+                                <Icon name="sendToLink" class="w-4 h-4" />
                             </a>
                             <a
                                 href="https://opendfieldmap.org/"
@@ -666,7 +596,7 @@
                                 class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("footer.interactiveMap")}
-                                <Icons name="sendToLink" class="w-4 h-4" />
+                                <Icon name="sendToLink" class="w-4 h-4" />
                             </a>
                         </div>
                     </div>
@@ -700,7 +630,7 @@
                             class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors"
                             on:click={() => (isDonateModalOpen = false)}
                         >
-                            <Icons name="close" class="w-6 h-6" />
+                            <Icon name="close" class="w-6 h-6" />
                         </button>
 
                         <h2
@@ -727,7 +657,7 @@
                                     className="w-full justify-center"
                                 >
                                     <div slot="icon">
-                                        <Icons name="boosty" class="w-5 h-5" />
+                                        <Icon name="boosty" class="w-5 h-5" />
                                     </div>
                                     Boosty
                                 </Button>
@@ -743,7 +673,7 @@
                                     className="w-full justify-center"
                                 >
                                     <div slot="icon">
-                                        <Icons name="tribute" class="w-5 h-5" />
+                                        <Icon name="tribute" class="w-5 h-5" />
                                     </div>
                                     Tribute
                                 </Button>
@@ -759,7 +689,7 @@
                                     className="w-full justify-center"
                                 >
                                     <div slot="icon">
-                                        <Icons name="patreon" class="w-5 h-5" />
+                                        <Icon name="patreon" class="w-5 h-5" />
                                     </div>
                                     Patreon
                                 </Button>

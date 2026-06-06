@@ -98,7 +98,18 @@
       "importSuccess": "Import erfolgreich! {n} neue Züge hinzugefügt.",
       "importDuplicate": "Alle Züge in der Datei sind bereits in der Datenbank.",
       "importError": "Importfehler. Überprüfen Sie die Dateistruktur.",
-      "importNoData": "Keine gültigen Daten für den Import gefunden."
+      "importNoData": "Keine gültigen Daten für den Import gefunden.",
+      "dragMode": "Modus zum Neuanordnen der Bannerkarten aktivieren",
+      "resetLayout": "Layout zurücksetzen",
+      "historySettings": "Seiteneinstellungen",
+      "maxCols": "Maximale Spaltenanzahl",
+      "bannerTypeExclusions": "Ausschlüsse von Bannertypen",
+      "bannerExclusions": "Bannerausschlüsse",
+      "noneSelected": "Nichts ausgewählt",
+      "noWeaponBanners": "Keine Waffenbanner verfügbar",
+      "showMonthlyChart": "Diagramm 'Züge pro Monat' anzeigen",
+      "showRating": "Ihre Bewertung anzeigen",
+      "showTotalCost": "Gesamtkosten für die Rekrutierung anzeigen"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Banner-Verlauf",

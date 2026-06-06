@@ -98,7 +98,18 @@
       "importSuccess": "匯入成功！已新增 {n} 個新尋訪記錄。",
       "importDuplicate": "檔案中的所有尋訪記錄已存在於資料庫中。",
       "importError": "匯入錯誤。請檢查檔案結構。",
-      "importNoData": "未找到可匯入的有效資料。"
+      "importNoData": "未找到可匯入的有效資料。",
+      "dragMode": "啟用尋訪卡片拖拽排序模式",
+      "resetLayout": "重置布局",
+      "historySettings": "頁面設定",
+      "maxCols": "最大列數",
+      "bannerTypeExclusions": "卡池類型排除",
+      "bannerExclusions": "特定卡池排除",
+      "noneSelected": "未選擇",
+      "noWeaponBanners": "沒有可用的武器卡池",
+      "showMonthlyChart": "顯示每月尋訪次數圖表",
+      "showRating": "顯示「您的評分」",
+      "showTotalCost": "顯示「尋訪總花費」"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "卡池歷史趨勢",

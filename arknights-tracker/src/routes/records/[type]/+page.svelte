@@ -620,16 +620,7 @@
             color="white"
             onClick={() => goto("/records")}
         >
-            <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
 
         <h2
@@ -639,9 +630,7 @@
                 {$t("page.title")}
             </span>
 
-            <span
-                class="text-gray-400 text-lg md:text-3xl font-normal whitespace-nowrap"
-            >
+            <span class="text-gray-400 text-lg md:text-3xl font-normal whitespace-nowrap">
                 / {$t(`bannerTypes.${bannerType}`)}
             </span>
         </h2>
@@ -654,9 +643,7 @@
             class="flex mt-11 flex-col gap-6 w-full order-1 xl:order-2 min-w-0"
         >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div
-                    class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5"
-                >
+                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5">
                     <div class="space-y-2.5">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600 dark:text-[#E0E0E0]"
@@ -671,12 +658,10 @@
 
                         {#if !isNewPlayer && !isWeaponType}
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-600 dark:text-[#E0E0E0]"
-                                    >{$t("page.banner.spent")}</span
-                                >
-                                <span
-                                    class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-0.5 font-nums text-xl"
-                                >
+                                <span class="text-gray-600 dark:text-[#E0E0E0]">
+                                    {$t("page.banner.spent")}
+                                </span>
+                                <span class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-0.5 font-nums text-xl">
                                     <Images
                                         id="oroberyl"
                                         variant="currency"
@@ -689,64 +674,51 @@
 
                         {#if !isAllWeaponCategory}
                             <div class="flex justify-between items-center">
-                                <div
-                                    class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                                >
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]">
                                     <span class="font-bold">6</span>
                                     <Icon name="star" class="w-4 h-4" />
                                     <span>{$t("page.banner.pity6")}</span>
                                 </div>
-                                <span
-                                    class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-                                >
-                                    {currentPity6}<span
-                                        class="text-sm text-gray-400 dark:text-[#787878]"
-                                        >/{maxPity6}</span
-                                    >
+                                <span class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]">
+                                    {currentPity6}
+                                    <span class="text-sm text-gray-400 dark:text-[#787878]">
+                                        /{maxPity6}
+                                    </span>
                                 </span>
                             </div>
 
                             {#if mileage.show}
                                 <div class="flex justify-between items-center">
-                                    <div
-                                        class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                                    >
+                                    <div class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]">
                                         <span class="font-bold">6</span>
                                         <Icon name="star" class="w-4 h-4" />
-                                        <span>{getMileageLabel(mileage.label)}</span
-                                        >
+                                        <span>
+                                            {getMileageLabel(mileage.label)}
+                                        </span>
                                     </div>
-                                    <span
-                                        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-                                    >
-                                        {mileage.current}<span
-                                            class="text-sm text-gray-400 dark:text-[#787878]"
-                                            >/{mileage.max}</span
-                                        >
+                                    <span class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]">
+                                        {mileage.current}
+                                        <span class="text-sm text-gray-400 dark:text-[#787878]">
+                                            /{mileage.max}
+                                        </span>
                                     </span>
                                 </div>
                             {/if}
 
                             {#if isWeaponType && !hasReceivedRateUp}
                                 <div class="flex justify-between items-center">
-                                    <div
-                                        class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]"
-                                    >
+                                    <div class="flex items-center gap-1 text-gray-600 dark:text-[#E0E0E0]">
                                         <span class="font-bold">6</span>
                                         <Icon name="star" class="w-4 h-4" />
-                                        <span
-                                            >{$t(
-                                                "page.banner.guarantee_rateup",
-                                            )}</span
-                                        >
+                                        <span>
+                                            {$t("page.banner.guarantee_rateup")}
+                                        </span>
                                     </div>
-                                    <span
-                                        class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]"
-                                    >
-                                        {weaponGuaranteeProgress}<span
-                                            class="text-sm text-gray-400 dark:text-[#787878]"
-                                            >/80</span
-                                        >
+                                    <span class="font-bold text-xl font-nums text-[#21272C] dark:text-[#FDFDFD]">
+                                        {weaponGuaranteeProgress}
+                                        <span class="text-sm text-gray-400 dark:text-[#787878]">
+                                            /80
+                                        </span>
                                     </span>
                                 </div>
                             {/if}

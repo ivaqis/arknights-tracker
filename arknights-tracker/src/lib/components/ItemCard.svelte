@@ -1,10 +1,13 @@
 <script>
     import { t } from "$lib/i18n";
+
     import Images from "$lib/components/Images.svelte";
 
     export let item = {};
     export let amount = 0;
     export let customPath;
+    export let hideAmount = false;
+    
     function getRarityColor(rarity) {
         if (rarity === 5) return "#FFC107";
         if (rarity === 4) return "#A857FA";
@@ -34,7 +37,9 @@
             class="absolute bottom-[-6px] right-[-2px] z-20 text-sm font-bold font-sdk leading-none text-white drop-shadow-[0_2px_0_rgba(0,0,0,1)] stroke-black paint-order-stroke"
             style="-webkit-text-stroke: 3px black; paint-order: stroke fill;"
         >
-            <span class="relative z-10">{amount.toLocaleString()}</span>
+            {#if hideAmount === false}
+                <span class="relative z-10">{amount.toLocaleString()}</span>
+            {/if}
         </div>
     </div>
 

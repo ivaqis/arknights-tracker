@@ -12,8 +12,10 @@
     import { onDestroy } from "svelte";
     import { disableDarkening } from "$lib/stores/settings";
     import { addNotification } from "$lib/stores/notifications";
+    import { currentLocale } from "$lib/stores/locale";
 
     import Select from "$lib/components/Select.svelte";
+    import Checkbox from "$lib/components/Checkbox.svelte";
     import Icon from "$lib/components/Icons.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -124,9 +126,24 @@
     }
 
     let lastSyncDate = "";
-    $: if ($syncStatus && typeof window !== "undefined") {
+    $: if ($syncStatus && $currentLocale && typeof window !== "undefined") {
         const ts = parseInt(localStorage.getItem("ark_last_sync") || "0");
-        lastSyncDate = ts > 0 ? new Date(ts).toLocaleString() : "-";
+        if (ts > 0) {
+            try {
+                lastSyncDate = new Intl.DateTimeFormat($currentLocale, {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                }).format(new Date(ts));
+            } catch (e) {
+                lastSyncDate = new Date(ts).toLocaleString();
+            }
+        } else {
+            lastSyncDate = "-";
+        }
     }
 
     $: maskedName = $user?.displayName
@@ -499,27 +516,7 @@
                     "Changing the server affects import links and data fetching."}
             </p>
 
-            <label
-                class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-            >
-                <div class="relative flex items-center mt-0.5">
-                    <input
-                        type="checkbox"
-                        bind:checked={showServerTime}
-                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-line bg-surface checked:border-accent checked:bg-accent transition-all"
-                    />
-                    <svg
-                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
-                        <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                </div>
+            <Checkbox bind:checked={showServerTime} variant="accent" align="start">
                 <div>
                     <span
                         class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-base"
@@ -527,7 +524,7 @@
                         {$t("settings.server.show_server_time")}
                     </span>
                 </div>
-            </label>
+            </Checkbox>
 
             <p class="text-xs text-gray-500 dark:text-[#787878] max-w-md">
                 {$t("settings.server.show_server_time_desc")}
@@ -716,7 +713,7 @@
                                     {:else}
                                         <Icon name="refresh" class="w-4 h-4" />
                                         {$t("settings.cloud.syncBtn") ||
-                                            "Синхронизировать"}
+                                            "Sync"}
                                     {/if}
                                 </button>
                             {/if}
@@ -767,13 +764,6 @@
             >
         </div>
     </section>
-
-    <!--<section class="mb-10 ml-2">
-        <h2 class="font-sdk text-2xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4">
-            {$t("settings.sources.title")}
-        </h2>
-        <div class="text-gray-400 italic">wip</div>
-    </section>-->
 
     <section class="mb-3 ml-2">
         <h2
@@ -867,7 +857,7 @@
                 role="switch"
                 aria-label="switch"
                 aria-checked={$disableDarkening}
-                class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$disableDarkening
+                class="shrink-0 relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$disableDarkening
                     ? 'bg-[#F9B90C]'
                     : 'bg-gray-200 dark:bg-[#555]'}"
                 on:click={toggleDarkening}

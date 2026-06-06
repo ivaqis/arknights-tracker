@@ -1,7 +1,6 @@
-<!-- src/lib/components/Timeline.svelte -->
 <script>
-    import { onMount, onDestroy, tick } from "svelte";
     import { t } from "$lib/i18n";
+    import { onMount, onDestroy, tick } from "svelte";
     import { browser } from "$app/environment";
     import { rawEvents } from "$lib/data/timeline.js";
     import { banners } from "$lib/data/banners.js";

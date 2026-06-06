@@ -45,6 +45,7 @@ files.forEach(file => {
         content.page.recordsSettings[key] = val;
       });
       
+      // Write back with 2 spaces formatting and preserve trailing newline
       fs.writeFileSync(filePath, JSON.stringify(content, null, 2) + '\n', 'utf8');
       console.log(`Updated ${file}`);
     } else {

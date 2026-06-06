@@ -8,12 +8,14 @@
   import { banners } from "$lib/data/banners";
   import { currencies } from "$lib/data/items/currencies";
   import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { slide } from "svelte/transition";
+  import { currentLocale } from "$lib/stores/locale";
+  import { recordsExcludedBanners } from "$lib/stores/filterStore";
+
   import Button from "$lib/components/Button.svelte";
   import Images from "$lib/components/Images.svelte";
   import Icon from "$lib/components/Icons.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
-  import { slide } from "svelte/transition";
-  import { currentLocale } from "$lib/stores/locale";
 
   export let bannerId;
   export let titleKey;
@@ -21,13 +23,13 @@
   const oroberyl = currencies.find((c) => c.id === "oroberyl");
 
   let selectedSubBannerId = "";
-  $: isWeaponCard = bannerId.includes("weap");
 
+  $: isWeaponCard = bannerId.includes("weap");
   $: availableSubBanners = (() => {
     const list = Object.keys($pullData)
       .filter((key) => {
         if (!isWeaponCard) return key === bannerId;
-        return getWeaponCategory(key) === bannerId;
+        return getWeaponCategory(key) === bannerId && !$recordsExcludedBanners.includes(key);
       })
       .sort((a, b) => {
         const banA = banners.find((x) => x.id === a);
@@ -98,7 +100,7 @@
 
   $: subBannerIds = Object.keys($pullData).filter((key) => {
     if (!isWeaponCard) return key === bannerId;
-    return getWeaponCategory(key) === bannerId;
+    return getWeaponCategory(key) === bannerId && !$recordsExcludedBanners.includes(key);
   });
 
   $: aggregatedData = (() => {
@@ -407,10 +409,10 @@
     </div>
   {/if}
 
-  <div class="flex justify-between items-start mb-3 pt-1 relative" use:clickOutside>
+  <div class="flex justify-between items-start mb-2.5 pt-1 relative" use:clickOutside>
     <div class="w-2/3 min-w-0">
       <button
-        class="w-full text-left font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xl leading-tight select-none transition-opacity
+        class="w-full text-left font-bold font-sdk text-[#21272C] dark:text-[#FDFDFD] text-xl leading-tight transition-opacity
                {isWeaponCard && availableSubBanners.length > 1 ? 'hover:opacity-85 cursor-pointer' : 'cursor-default'}"
         on:click={toggleDropdown}
       >
@@ -763,39 +765,3 @@
     {/if}
   </div>
 </div>
-<style>
-  .banners-scroll::-webkit-scrollbar {
-    height: 6px; 
-  }
-  .banners-scroll::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .banners-scroll::-webkit-scrollbar-thumb {
-    background-color: #cbd5e1;
-    border-radius: 10px;
-  }
-  .banners-scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #9ca3af;
-  }
-  
-  :global(.dark) .banners-scroll::-webkit-scrollbar-thumb {
-    background-color: #525252;
-  }
-  :global(.dark) .banners-scroll::-webkit-scrollbar-thumb:hover {
-    background-color: #737373;
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175, 0.5);
-    border-radius: 3px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(156, 163, 175, 0.7);
-  }
-</style>

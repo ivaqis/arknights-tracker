@@ -98,7 +98,18 @@
       "importSuccess": "Importação bem-sucedida! Adicionadas {n} novas jogadas.",
       "importDuplicate": "Todas as jogadas no arquivo já estão no banco de dados.",
       "importError": "Erro de importação. Verifique a estrutura do arquivo.",
-      "importNoData": "Não foi possível encontrar dados válidos para importação."
+      "importNoData": "Não foi possível encontrar dados válidos para importação.",
+      "dragMode": "Ativar modo de reorganização dos cartões de banners",
+      "resetLayout": "Redefinir layout",
+      "historySettings": "Configurações da página",
+      "maxCols": "Máximo de colunas",
+      "bannerTypeExclusions": "Exclusões de tipos de banners",
+      "bannerExclusions": "Exclusões de banners",
+      "noneSelected": "Nenhum selecionado",
+      "noWeaponBanners": "Nenhum banner de arma disponível",
+      "showMonthlyChart": "Mostrar gráfico de jogadas por mês",
+      "showRating": "Mostrar sua classificação",
+      "showTotalCost": "Mostrar custo total de recrutamento"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Histórico de banners",

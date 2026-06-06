@@ -1,9 +1,9 @@
 <script>
   import { t } from "$lib/i18n";
   import { banners } from "$lib/data/banners";
-  import Icon from "$lib/components/Icons.svelte";
-
   import { getWeaponCategory } from "$lib/utils/importUtils";
+
+  import Icon from "$lib/components/Icons.svelte";
 
   export let rawPulls = [];
   export let bannerType = "";

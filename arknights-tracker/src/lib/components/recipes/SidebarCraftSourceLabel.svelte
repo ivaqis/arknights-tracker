@@ -1,6 +1,6 @@
 <script>
     import Images from "$lib/components/Images.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
 
     export let text;
     export let iconId; // only if iconVariant === "building-icon"
@@ -31,7 +31,7 @@
 
     {#if (iconVariant && svgIconName)}
         <div class="flex justify-center items-center h-8 w-8">
-            <Icons
+            <Icon
                 name={svgIconName}
                 class="text-[#FDFDFD] dark:text-[#FDFDFD] h-full w-full"
             />

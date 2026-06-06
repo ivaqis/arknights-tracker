@@ -1,6 +1,6 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
   import { t } from "$lib/i18n";
+  import { onMount, onDestroy } from "svelte";
   import { currentLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
@@ -541,17 +541,7 @@
                       class="flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 hover:dark:bg-[#373737] text-gray-400 hover:text-[#21272C] hover:dark:text-[#B7B6B3] transition-colors shrink-0"
                     >
                       {#if copiedCode === promo.code}
-                        <svg
-                          width="12"
-                          height="12"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="#FACC15"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          ><polyline points="20 6 9 17 4 12"></polyline></svg
-                        >
+                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                       {:else}
                         <Icon name="copy" class="w-3.5 h-3.5" />
                       {/if}
@@ -612,12 +602,12 @@
                   {:else}
                     <span
                       class="text-[11px] font-bold text-gray-600 dark:text-[#E0E0E0] whitespace-nowrap leading-tight"
-                      >{getFormattedDate(promo.displayEndTime)}</span
-                    >
+                      >{getFormattedDate(promo.displayEndTime)}
+                    </span>
                     <span
                       class="text-[9px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight"
-                      >{getPromoTimeLabel(promo.displayEndTime)}</span
-                    >
+                      >{getPromoTimeLabel(promo.displayEndTime)}
+                    </span>
                   {/if}
                 </div>
               </div>
@@ -805,16 +795,3 @@
     </div>
   </div>
 {/if}
-
-<style>
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-  }
-</style>

@@ -1,8 +1,9 @@
 <script>
     import { t } from "$lib/i18n";
-    import Images from "$lib/components/Images.svelte";
-    import {ResourcePoint} from "$lib/classes/items/ResourcePoint.js";
+    import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
+    
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import Images from "$lib/components/Images.svelte";
 
     export let itemId = "";
 

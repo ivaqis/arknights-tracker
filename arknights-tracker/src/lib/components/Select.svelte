@@ -3,7 +3,7 @@
   import { slide } from 'svelte/transition';
 
   import Images from "$lib/components/Images.svelte";
-  import Icons from "$lib/components/Icons.svelte";
+  import Icon from "$lib/components/Icons.svelte";
 
   export let options = [];
   export let value = "";
@@ -99,7 +99,7 @@
     </span>
 
     <div class="relative z-10 transition-transform duration-300 {isOpen ? 'rotate-180' : ''}">
-      <Icons name="arrowDown" class="w-3.5 h-3.5" />
+      <Icon name="arrowDown" class="w-3.5 h-3.5" />
     </div>
     
     </button>
@@ -153,16 +153,3 @@
     </div>
   {/if}
 </div>
-
-<style>
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(156, 163, 175, 0.5);
-    border-radius: 3px;
-  }
-</style>

@@ -1,28 +1,29 @@
 <script>
-    import {t} from "$lib/i18n";
-    import {Item} from "$lib/classes/items/Item.js";
-    import {MachineCraftSearcher} from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
-    import {ManualCraftSearcher} from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
-    import {HubCraftSearcher} from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
-    import {MinerSearcher} from "$lib/classes/crafts/searchers/MinerSearcher.js";
-    import {PumpSearcher} from "$lib/classes/crafts/searchers/PumpSearcher.js";
-    import {Building} from "$lib/classes/buildings/Building.js";
-    import {Crafter} from "$lib/classes/buildings/Crafter.js";
-    import {Miner} from "$lib/classes/buildings/Miner.js";
-    import {Pump} from "$lib/classes/buildings/Pump.js";
+    import { t } from "$lib/i18n";
+    import { Item } from "$lib/classes/items/Item.js";
+    import { MachineCraftSearcher } from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
+    import { ManualCraftSearcher } from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
+    import { HubCraftSearcher } from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
+    import { MinerSearcher } from "$lib/classes/crafts/searchers/MinerSearcher.js";
+    import { PumpSearcher } from "$lib/classes/crafts/searchers/PumpSearcher.js";
+    import { Building } from "$lib/classes/buildings/Building.js";
+    import { Crafter } from "$lib/classes/buildings/Crafter.js";
+    import { Miner } from "$lib/classes/buildings/Miner.js";
+    import { Pump } from "$lib/classes/buildings/Pump.js";
+    import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
+    import { ManualCraft } from "$lib/classes/crafts/ManualCraft.js";
+    import { HubCraft } from "$lib/classes/crafts/HubCraft.js";
+    import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
+    import { PowerStation } from "$lib/classes/buildings/PowerStation.js";
+    import { PowerStationSearcher } from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
+    import { PowerFormula } from "$lib/classes/crafts/PowerFormula.js";
+    import { Fuel } from "$lib/classes/items/Fuel.js";
+    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
+
     import Formula from "$lib/components/recipes/Formula.svelte";
-    import {MachineCraft} from "$lib/classes/crafts/MachineCraft.js";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
     import SidebarSectorLabel from "$lib/components/recipes/SidebarSectorLabel.svelte";
     import SidebarCraftSourceLabel from "$lib/components/recipes/SidebarCraftSourceLabel.svelte";
-    import {ManualCraft} from "$lib/classes/crafts/ManualCraft.js";
-    import {HubCraft} from "$lib/classes/crafts/HubCraft.js";
-    import {ResourcePoint} from "$lib/classes/items/ResourcePoint.js";
-    import {PowerStation} from "$lib/classes/buildings/PowerStation.js";
-    import {PowerStationSearcher} from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
-    import {PowerFormula} from "$lib/classes/crafts/PowerFormula.js";
-    import {Fuel} from "$lib/classes/items/Fuel.js";
-    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
     export let currentItemId = ""; // only if mode is "recipes" or "tree"
     export let currentBuildingId = ""; // only if mode is "building"
@@ -460,7 +461,7 @@
     {:else}
 
         <div class="flex-1 flex flex-col justify-center items-center">
-            <Icons name="noData" class="w-16 h-16" />
+            <Icon name="noData" class="w-16 h-16" />
         </div>
 
     {/if}

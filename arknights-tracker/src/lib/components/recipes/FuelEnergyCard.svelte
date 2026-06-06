@@ -1,5 +1,5 @@
 <script>
-    import {t} from "$lib/i18n";
+    import { t } from "$lib/i18n";
 
     export let powerProvide = 0;
 </script>

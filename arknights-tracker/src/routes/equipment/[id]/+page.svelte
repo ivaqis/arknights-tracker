@@ -318,16 +318,7 @@
             color="white"
             onClick={() => history.back()}
         >
-            <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -386,24 +377,9 @@
                             }}
                         >
                             {#if copiedImageId === "icon"}
-                                <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                    ><polyline points="20 6 9 17 4 12"
-                                    ></polyline></svg
-                                >
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
-                                <Icon
-                                    name="copy"
-                                    class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110"
-                                />
+                                <Icon name="copy" class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110" />
                             {/if}
                         </button>
 
@@ -419,10 +395,7 @@
                                 document.body.removeChild(link);
                             }}
                         >
-                            <Icon
-                                name="import"
-                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                            />
+                            <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                         </button>
                     </div>
 
@@ -437,25 +410,14 @@
 
                         <div class="flex items-center gap-3 mb-6">
                             <Tooltip text={partTypeLabel}>
-                                <div
-                                    class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm"
-                                >
-                                    <Icon
-                                        name={partTypeStr}
-                                        class="w-7 h-7 text-white"
-                                    />
+                                <div class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm">
+                                    <Icon name={partTypeStr} class="w-7 h-7 text-white" />
                                 </div>
                             </Tooltip>
-                            <div
-                                class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"
-                            ></div>
+                            <div class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"></div>
                             <div class="flex -space-x-1">
                                 {#each Array(rarity || 1) as _}
-                                    <Icon
-                                        name="strokeStar"
-                                        class="w-9 h-9"
-                                        style="color: {rarityColor}; stroke-opacity: 100%;"
-                                    />
+                                    <Icon name="strokeStar" class="w-9 h-9" style="color: {rarityColor}; stroke-opacity: 100%;" />
                                 {/each}
                             </div>
                         </div>
@@ -654,20 +616,7 @@
                             class="p-0.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none cursor-pointer"
                         >
                             {#if isTableCopied}
-                                <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="#FACC15"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn"
-                                >
-                                    <polyline points="20 6 9 17 4 12"
-                                    ></polyline>
-                                </svg>
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
                                 <Icon name="copy" class="w-4 h-4" />
                             {/if}

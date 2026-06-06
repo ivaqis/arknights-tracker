@@ -144,9 +144,7 @@
 <div class="min-h-screen md:px-8 md:py-3 font-sans transition-colors">
     <div class="w-full max-w-[1500px] mx-auto mb-6">
         <Button variant="roundSmall" color="white" onClick={() => history.back()}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -188,23 +186,9 @@
                             }}
                         >
                             {#if copiedImageId === "icon"}
-                                <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                ><polyline points="20 6 9 17 4 12"
-                                ></polyline></svg>
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
-                                <Icon
-                                    name="copy"
-                                    class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110"
-                                />
+                                <Icon name="copy" class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110" />
                             {/if}
                         </button>
 
@@ -220,10 +204,7 @@
                                 document.body.removeChild(link);
                             }}
                         >
-                            <Icon
-                                name="import"
-                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                            />
+                            <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                         </button>
                     </div>
 
@@ -269,7 +250,7 @@
                                     <Icon name="atk" class="w-5 h-5 text-white" />
                                 </div>
                                 <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
-                                    {tOrFallback("stats.atk", "АТК")}
+                                    {tOrFallback("stats.atk", "ATK")}
                                 </span>
                                 <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm">
                                     {currentAtk}
@@ -281,7 +262,7 @@
                                     <Icon name="def" class="w-5 h-5 text-white" />
                                 </div>
                                 <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
-                                    {tOrFallback("stats.def", "ЗАЩ")}
+                                    {tOrFallback("stats.def", "DEF")}
                                 </span>
                                 <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm">
                                     {currentDef}
@@ -322,7 +303,7 @@
                 <div class="px-6 pb-6 bg-white dark:bg-[#383838] flex flex-col gap-3">
                     <div>
                         <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mb-2">
-                            {tOrFallback("stats.vulnerable", "Уязвимости")}
+                            {tOrFallback("stats.vulnerable", "Vulnerability")}
                         </h2>
                         <div class="flex flex-wrap gap-x-8 gap-y-5">
                             {#each resistances as res}
@@ -351,7 +332,7 @@
                     {#if enemyAbilities.length > 0}
                         <div>
                             <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mt-2">
-                                {tOrFallback("stats.abilities", "Умения")}
+                                {tOrFallback("stats.abilities", "Abilities")}
                             </h2>
                             <ul class="flex flex-col gap-2">
                                 {#each enemyAbilities as ability}
@@ -376,7 +357,7 @@
             <div class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-6 transition-colors">
                 <div>
                     <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3 mb-4">
-                        {tOrFallback("stats.properties", "Характеристики")}
+                        {tOrFallback("stats.properties", "Properties")}
                     </h2>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
                         {#each advancedStats as stat}
@@ -404,7 +385,7 @@
                 <div class="flex flex-wrap gap-2 pt-1">
                     {#if enemyData.drop && enemyData.drop.length > 0}
                         {#each enemyData.drop as dropId}
-                            <ItemCard item={{id: dropId}} customPath="itemNames" />
+                            <ItemCard item={{id: dropId}} hideAmount=true customPath="itemNames" />
                         {/each}
                     {:else}
                         <div class="w-full text-center text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic">

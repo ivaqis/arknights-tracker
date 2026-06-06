@@ -615,14 +615,7 @@
                         color="white"
                         onClick={() => history.back()}
                     >
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"><path d="M15 18l-6-6 6-6" /></svg
-                        >
+                        <Icon name="arrowLeft" class="w-5 h-5" />
                     </Button>
                 </div>
 
@@ -1484,29 +1477,11 @@
                                                         }}
                                                     >
                                                         {#if copiedArtId === realKey}
-                                                            <svg
-                                                                width="16"
-                                                                height="16"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                stroke-width="3"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                                            >
-                                                                <polyline
-                                                                    points="20 6 9 17 4 12"
-                                                                ></polyline>
-                                                            </svg>
+                                                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                                         {:else}
-                                                            <Icon
-                                                                name="copy"
-                                                                class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                                            />
+                                                            <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                                         {/if}
                                                     </button>
-
                                                     <button
                                                         class="flex items-center justify-center w-8 h-8 bg-black/60 hover:bg-[#FFD800] text-white hover:text-black backdrop-blur rounded-full transition-all duration-300 shadow-md group/down"
                                                         title="Dowanload Art"
@@ -1559,21 +1534,7 @@
                                                     <div
                                                         class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
                                                     >
-                                                        <svg
-                                                            width="12"
-                                                            height="12"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                            stroke="currentColor"
-                                                            stroke-width="2"
-                                                            ><path
-                                                                d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
-                                                            ></path><circle
-                                                                cx="12"
-                                                                cy="7"
-                                                                r="4"
-                                                            ></circle></svg
-                                                        >
+                                                        <Icon name="person" class="w-3 h-3" />
                                                     </div>
                                                     <span
                                                         class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
@@ -1663,26 +1624,9 @@
                                                     }}
                                                 >
                                                     {#if copiedArtId === "splash"}
-                                                        <svg
-                                                            width="16"
-                                                            height="16"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                            stroke="currentColor"
-                                                            stroke-width="3"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                            class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                                        >
-                                                            <polyline
-                                                                points="20 6 9 17 4 12"
-                                                            ></polyline>
-                                                        </svg>
+                                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                                     {:else}
-                                                        <Icon
-                                                            name="copy"
-                                                            class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                                        />
+                                                        <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                                     {/if}
                                                 </button>
 
@@ -1735,21 +1679,7 @@
                                                 <div
                                                     class="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 dark:text-[#B7B6B3] shrink-0"
                                                 >
-                                                    <svg
-                                                        width="12"
-                                                        height="12"
-                                                        viewBox="0 0 24 24"
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        ><path
-                                                            d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
-                                                        ></path><circle
-                                                            cx="12"
-                                                            cy="7"
-                                                            r="4"
-                                                        ></circle></svg
-                                                    >
+                                                    <Icon name="person" class="w-3 h-3" />
                                                 </div>
                                                 <span
                                                     class="text-xs font-bold text-gray-500 dark:text-[#B7B6B3]"
@@ -1777,30 +1707,30 @@
                     'about'
                         ? 'max-w-[550px]'
                         : ''}">
-                                <div class="flex-1 flex justify-start overflow-hidden">
-                                    {#if prevTab}
-                                        <button
-                                            on:click={() => switchTab(prevTab.id)}
-                                            class="flex items-center gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
-                                        >
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gray-400"><path d="M15 18l-6-6 6-6"/></svg>
-                                            <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(prevTab.label) || prevTab.id}</span>
-                                        </button>
-                                    {/if}
-                                </div>
-                                
-                                <div class="flex-1 flex justify-end overflow-hidden ">
-                                    {#if nextTab}
-                                        <button
-                                            on:click={() => switchTab(nextTab.id)}
-                                            class="flex items-center justify-end gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
-                                        >
-                                            <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(nextTab.label) || nextTab.id}</span>
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-gray-400"><path d="M9 18l6-6-6-6"/></svg>
-                                        </button>
-                                    {/if}
-                                </div>
-                            </div>
+                        <div class="flex-1 flex justify-start overflow-hidden">
+                            {#if prevTab}
+                                <button
+                                    on:click={() => switchTab(prevTab.id)}
+                                    class="flex items-center gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
+                                >
+                                    <Icon name="arrowLeft" class="w-5 h-5 shrink-0 text-gray-400" />
+                                    <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(prevTab.label) || prevTab.id}</span>
+                                </button>
+                            {/if}
+                        </div>
+                        
+                        <div class="flex-1 flex justify-end overflow-hidden ">
+                            {#if nextTab}
+                                <button
+                                    on:click={() => switchTab(nextTab.id)}
+                                    class="flex items-center justify-end gap-2 px-4 py-3 bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 rounded-2xl shadow-sm border border-white/50 dark:border-[#444444] active:scale-95 transition-all group max-w-full"
+                                >
+                                    <span class="font-bold text-sm text-[#21272C] dark:text-[#E4E4E4] truncate">{$t(nextTab.label) || nextTab.id}</span>
+                                    <Icon name="arrowLeft" class="rotate-180 w-5 h-5 shrink-0 text-gray-400" />
+                                </button>
+                            {/if}
+                        </div>
+                    </div>
                 </div>
             {/key}
         </div>
@@ -1837,19 +1767,7 @@
                         class="p-1.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none"
                     >
                         {#if isTableCopied}
-                            <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#FACC15"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="animate-fadeIn"
-                            >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
+                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                         {:else}
                             <Icon name="copy" class="w-4 h-4" />
                         {/if}

@@ -5,6 +5,7 @@
   import { fetchGlobalStats } from "$lib/api";
   import { browser } from "$app/environment";
   import { accountStore } from "$lib/stores/accounts";
+
   import Button from "./Button.svelte";
   import Icon from "./Icons.svelte";
   import Tooltip from "./Tooltip.svelte";

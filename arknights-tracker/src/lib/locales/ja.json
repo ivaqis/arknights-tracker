@@ -98,7 +98,18 @@
       "importSuccess": "インポートが成功しました！新しいガチャが {n} 件追加されました。",
       "importDuplicate": "ファイル内のすべてのガチャはすでにデータベースに存在します。",
       "importError": "インポートエラー。ファイル構造を確認してください。",
-      "importNoData": "インポートするための有効なデータが見つかりませんでした。"
+      "importNoData": "インポートするための有効なデータが見つかりませんでした。",
+      "dragMode": "バナーカードの並び替えモードを有効にする",
+      "resetLayout": "レイアウトをリセット",
+      "historySettings": "ページ設定",
+      "maxCols": "最大列数",
+      "bannerTypeExclusions": "バナータイプの除外",
+      "bannerExclusions": "バナーの除外",
+      "noneSelected": "未選択",
+      "noWeaponBanners": "利用可能な武器バナーはありません",
+      "showMonthlyChart": "月間ガチャ回数グラフを表示",
+      "showRating": "あなたの評価を表示",
+      "showTotalCost": "総スカウト費用を表示"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "ガチャ履歴グラフ",

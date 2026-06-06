@@ -1,8 +1,8 @@
 <script>
+    import { t } from "$lib/i18n";
     import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore";
     import { accountStore } from "$lib/stores/accounts";
     import { pullData } from "$lib/stores/pulls";
-    import { t } from "$lib/i18n";
 
     import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
     import Button from "$lib/components/Button.svelte";

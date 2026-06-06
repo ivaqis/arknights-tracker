@@ -1,5 +1,6 @@
 <script>
     import { getImagePath } from "$lib/utils/imageUtils";
+
     import Icon from "$lib/components/Icons.svelte";
 
     export let item = null; 
@@ -50,9 +51,7 @@
     }
 
     $: sizeStyle = typeof size === 'number' ? `width: ${size}px; height: ${size}px;` : `width: ${size}; height: ${size};`;
-
     $: isSmallIcon = variant.includes('icon') && !variant.includes('banner');
-    
     $: smoothImageStyles = isSmallIcon 
         ? "image-rendering: auto;" 
         : "image-rendering: -webkit-optimize-contrast; transform: translateZ(0); backface-visibility: hidden;";

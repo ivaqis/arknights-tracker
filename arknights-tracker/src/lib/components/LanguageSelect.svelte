@@ -1,7 +1,8 @@
 <script>
     import { currentLocale, languages, isSupported } from "$lib/stores/locale";
     import { slide } from "svelte/transition";
-    import Icons from "$lib/components/Icons.svelte";
+
+    import Icon from "$lib/components/Icons.svelte";
 
     let isOpen = false;
     let selectContainer;
@@ -50,7 +51,7 @@ bind:this={selectContainer}>
         >
             {#each languages as lang}
                 <button
-                    class="w-full text-left px-4 py-3 hover:bg-white/10 transition-colors flex items-center justify-between
+                    class="w-full text-left px-3 py-3 hover:bg-white/10 transition-colors flex items-center justify-between
                     {lang.code === $currentLocale
                         ? 'text-yellow-400 bg-white/5'
                         : 'text-gray-300'}
@@ -61,25 +62,13 @@ bind:this={selectContainer}>
                 >
                     <div class="flex items-center gap-3">
                         <div class="w-5 h-5 flex-shrink-0 content-center">
-                            <Icons name={lang.code} class="w-full h-full" />
+                            <Icon name={lang.code} class="w-full h-full" />
                         </div>
                         
                         <span>{lang.label}</span>
                     </div>
                     {#if lang.code === $currentLocale}
-                        <svg
-                            class="w-4 h-4 ml-2 flex-shrink-0"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 13l4 4L19 7"
-                            ></path>
-                        </svg>
+                        <Icon name="success" class="w-4 h-4 ml-2 flex-shrink-0" />
                     {/if}
                 </button>
             {/each}
@@ -98,10 +87,10 @@ bind:this={selectContainer}>
         <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#FFE145] z-10"></div>
         <div class="relative z-10 flex items-center w-full px-5 content-center">
             <div class="mr-4 text-white">
-                <Icons name={$currentLocale} class="w-6 h-6" />
+                <Icon name={$currentLocale} class="w-6 h-6" />
             </div>
 
-            <span class="text-lg font-medium flex-grow text-left pt-0.5 justify-center">
+            <span class="text-mg font-medium flex-grow text-left justify-center">
                 {currentLabel}
             </span>
 
@@ -110,24 +99,8 @@ bind:this={selectContainer}>
                     ? 'rotate-180'
                     : ''}"
             >
-                <Icons name="arrowDown" class="w-3.5 h-3.5" />
+                <Icon name="arrowDown" class="w-3.5 h-3.5" />
             </div>
         </div>
     </button>
 </div>
-
-<style>
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: #2a2a2a;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: #555;
-        border-radius: 3px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #777;
-    }
-</style>

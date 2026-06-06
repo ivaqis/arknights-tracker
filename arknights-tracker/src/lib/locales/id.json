@@ -98,7 +98,18 @@
       "importSuccess": "Impor berhasil! Menambahkan {n} tarikan baru.",
       "importDuplicate": "Semua tarikan dalam file sudah ada di database.",
       "importError": "Kesalahan impor. Periksa struktur file.",
-      "importNoData": "Tidak dapat menemukan data yang valid untuk diimpor."
+      "importNoData": "Tidak dapat menemukan data yang valid untuk diimpor.",
+      "dragMode": "Aktifkan mode penyusunan ulang kartu banner",
+      "resetLayout": "Atur ulang tata letak",
+      "historySettings": "Pengaturan Riwayat",
+      "maxCols": "Kolom maks",
+      "bannerTypeExclusions": "Pengecualian jenis banner",
+      "bannerExclusions": "Pengecualian banner",
+      "noneSelected": "Tidak ada yang dipilih",
+      "noWeaponBanners": "Tidak ada banner senjata yang tersedia",
+      "showMonthlyChart": "Tampilkan grafik tarikan per bulan",
+      "showRating": "Tampilkan peringkat Anda",
+      "showTotalCost": "Tampilkan total biaya pencarian bakat"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Riwayat Banner",

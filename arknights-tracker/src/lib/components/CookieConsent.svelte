@@ -1,8 +1,9 @@
 <script>
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
-  import Button from "./Button.svelte";
   import { t } from "$lib/i18n";
+
+  import Button from "./Button.svelte";
 
   let showBanner = false;
 

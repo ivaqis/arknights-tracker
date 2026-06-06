@@ -1,5 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
+    
     import ItemCard from "$lib/components/ItemCard.svelte";
     import Images from "$lib/components/Images.svelte";
 

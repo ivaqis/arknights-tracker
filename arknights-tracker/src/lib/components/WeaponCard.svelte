@@ -5,12 +5,11 @@
     import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
     import { disableDarkening } from "$lib/stores/settings";
+    import { changelogData } from "$lib/data/versions.js";
 
     import Images from "$lib/components/Images.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icons.svelte";
-
-    import { changelogData } from "$lib/data/versions.js";
 
     export let weapon = {};
     export let variant = "default"; // "default" | "small"

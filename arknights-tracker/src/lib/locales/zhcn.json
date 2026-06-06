@@ -98,7 +98,18 @@
       "importSuccess": "导入成功！已添加 {n} 个新寻访记录。",
       "importDuplicate": "文件中的所有寻访记录已存在于数据库中。",
       "importError": "导入错误。请检查文件结构。",
-      "importNoData": "未找到可导入的有效数据。"
+      "importNoData": "未找到可导入的有效数据。",
+      "dragMode": "启用寻访卡片拖拽排序模式",
+      "resetLayout": "重置布局",
+      "historySettings": "页面设置",
+      "maxCols": "最大列数",
+      "bannerTypeExclusions": "卡池类型排除",
+      "bannerExclusions": "特定卡池排除",
+      "noneSelected": "未选择",
+      "noWeaponBanners": "没有可用的武器卡池",
+      "showMonthlyChart": "显示每月寻访次数图表",
+      "showRating": "显示“您的评分”",
+      "showTotalCost": "显示“寻访总花费”"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "卡池历史趋势",

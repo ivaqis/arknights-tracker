@@ -1,10 +1,11 @@
 <script>
     import { t } from "$lib/i18n";
+    import { getRarityColor } from "$lib/utils/rarityUtils.js";
+    import { FullBottle } from "$lib/classes/items/FullBottle.js";
+    import { Item } from "$lib/classes/items/Item.js";
+
     import Images from "$lib/components/Images.svelte";
-    import {getRarityColor} from "$lib/utils/rarityUtils.js";
-    import {FullBottle} from "$lib/classes/items/FullBottle.js";
-    import {Item} from "$lib/classes/items/Item.js";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
 
     export let itemId = "";
@@ -111,6 +112,7 @@
                         <div class="w-2/3 h-2/3">
                             <Images
                                 id={liquid.iconId}
+                                interactive={true}
                                 variant="item-icon"
                                 className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
                             />
@@ -121,7 +123,7 @@
             {:else}
 
                 <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
-                    <Icons name="noData" class="w-1/2 h-1/2"/>
+                    <Icon name="noData" class="w-1/2 h-1/2"/>
                 </div>
 
             {/if}
@@ -155,7 +157,7 @@
 
         {#if isEventItem}
             <div class="absolute -top-2 -right-2 w-5 h-5 z-[35]">
-                <Icons name="eventStar"/>
+                <Icon name="eventStar"/>
             </div>
         {/if}
 

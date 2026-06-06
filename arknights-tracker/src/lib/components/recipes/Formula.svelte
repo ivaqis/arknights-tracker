@@ -1,7 +1,7 @@
 <script>
     import ItemStackCard from "$lib/components/ItemStackCard.svelte";
     import ResourcePointCard from "$lib/components/recipes/ResourcePointCard.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icons.svelte";
     import FuelEnergyCard from "$lib/components/recipes/FuelEnergyCard.svelte";
     import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
@@ -155,7 +155,7 @@
                 {`${craftTimeMs / 1000}s`}
             </span>
         {/if}
-        <Icons
+        <Icon
             name="doubleArrows"
             class="text-[#21272C] dark:text-[#FDFDFD] w-full"
         />

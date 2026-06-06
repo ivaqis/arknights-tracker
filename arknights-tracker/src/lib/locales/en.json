@@ -113,7 +113,18 @@
       "importSuccess": "Import successful! Added {n} new pulls.",
       "importDuplicate": "All pulls in the file are already in the database.",
       "importError": "Import error. Check file structure or account consistency.",
-      "importNoData": "Could not find valid data for import."
+      "importNoData": "Could not find valid data for import.",
+      "dragMode": "Enable card rearrangement mode",
+      "resetLayout": "Reset layout",
+      "historySettings": "Page Settings",
+      "maxCols": "Max columns",
+      "bannerTypeExclusions": "Banner type exclusions",
+      "bannerExclusions": "Banner exclusions",
+      "noneSelected": "None selected",
+      "noWeaponBanners": "No weapon banners available",
+      "showMonthlyChart": "Show pulls per month chart",
+      "showRating": "Show your rating",
+      "showTotalCost": "Show total headhunting cost"
     },
     "bannerTypes": {
       "bannerHistoryGraph": "Banners history",

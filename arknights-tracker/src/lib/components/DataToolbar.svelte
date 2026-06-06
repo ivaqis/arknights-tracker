@@ -1,8 +1,9 @@
 <script>
     import { t } from "$lib/i18n";
+    import { factoryEvents } from "$lib/data/events/factoryEvents.js";
+    import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
+
     import Icon from "$lib/components/Icons.svelte";
-    import {factoryEvents} from "$lib/data/events/factoryEvents.js";
-    import {FactoryEvent} from "$lib/classes/events/FactoryEvent.js";
 
     export let mode = "operators"; // "operators" | "weapons" | "equipment" | "enemies" | "items"
     export let sortField = "rarity";
@@ -663,19 +664,7 @@
                         on:click|stopPropagation={resetFilters}
                         title={$t("sort.reset") || "Reset filters"}
                     >
-                        <svg
-                            class="w-[10px] h-[10px] text-black/80"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="3"
-                                d="M6 18L18 6M6 6l12 12"
-                            ></path>
-                        </svg>
+                        <Icon name="close" class="w-[16px] h-[16px] text-black/80" />
                     </button>
                 </div>
             {/if}
@@ -1182,7 +1171,7 @@
 
                         <button
                             type="button"
-                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                            class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 mt-3 hover:opacity-70"
                             on:click={() => {toggleFilterItemSubGroup(itemSubGroups.nature, isSelected)}}
                         >
                             {$t("sort.itemGroups.nature") || "Nature"}
@@ -1204,7 +1193,7 @@
 
                         <button
                                 type="button"
-                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 mt-3 hover:opacity-70"
                                 on:click={() => {toggleFilterItemSubGroup(itemSubGroups.product, isSelected)}}
                         >
                             {$t("sort.itemGroups.product") || "Product"}
@@ -1226,7 +1215,7 @@
 
                         <button
                                 type="button"
-                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 mt-3 hover:opacity-70"
                                 on:click={() => {toggleFilterItemSubGroup(itemSubGroups.usable, isSelected)}}
                         >
                             {$t("sort.itemGroups.usable") || "Usable"}
@@ -1248,7 +1237,7 @@
 
                         <button
                                 type="button"
-                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 mt-3 hover:opacity-70"
                                 on:click={() => {toggleFilterItemSubGroup(itemSubGroups.gatherable, isSelected)}}
                         >
                             {$t("sort.itemGroups.gatherable") || "Gatherable"}
@@ -1270,7 +1259,7 @@
 
                         <button
                                 type="button"
-                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70"
+                                class="text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 mt-3 hover:opacity-70"
                                 on:click={() => {toggleFilterItemSubGroup(itemSubGroups.facility, isSelected)}}
                         >
                             {$t("sort.itemGroups.facility") || "Facility"}
@@ -1289,7 +1278,6 @@
                                 </button>
                             {/each}
                         </div>
-
                     </div>
                 {/if}
             </div>
@@ -1301,18 +1289,7 @@
             <div
                 class="absolute left-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-500 pointer-events-none"
             >
-                <svg
-                    class="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    ><path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    ></path></svg
-                >
+                <Icon name="search" class="w-4 h-4" />
             </div>
 
             <input
@@ -1326,19 +1303,10 @@
                 <button
                     type="button"
                     aria-label="Clear search"
-                    class="absolute right-3 top-1/2 -translate-y-1/2 dark:text-[#E0E0E0] text-gray-400 hover:text-gray-600 cursor-pointer"
+                    class="rounded-full text-gray-300 dark:text-[#444444] absolute right-3 top-1/2 -translate-y-1/2 dark:bg-[#E0E0E0] bg-gray-500 cursor-pointer"
                     on:click={clearSearch}
                 >
-                    <svg
-                        class="w-4 h-4 pointer-events-none"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        ><path
-                            fill-rule="evenodd"
-                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                            clip-rule="evenodd"
-                        /></svg
-                    >
+                    <Icon name="close" class="w-4 h-4 p-0.5 pointer-events-none" />
                 </button>
             {/if}
         </div>

@@ -11,6 +11,7 @@
     import { API_BASE } from "$lib/api";
 
     import Button from "$lib/components/Button.svelte";
+    import Checkbox from "$lib/components/Checkbox.svelte";
     import PowershellBlock from "$lib/components/PowershellBlock.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icons.svelte";
@@ -53,6 +54,7 @@
     const powerShellScript2 = `$f=[System.IO.File]::Open("$env:LOCALAPPDATA\\PlatformProcess\\Cache\\data_1",3,1,3); $t=(New-Object System.IO.StreamReader($f,[System.Text.Encoding]::ASCII)).ReadToEnd(); $f.Close(); $m=[regex]::Matches($t,"u8_token=([^&\\s\\x00]+)"); if($m.Count){ $m[$m.Count-1].Groups[1].Value | Set-Clipboard }`;
     const powerShellScript3 = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url2.ps1'))}"`;
     const browserBookmarklet = `javascript:(async()=>{try{let e=null;for(let[t,n]of Object.entries(sessionStorage))if(t.startsWith("APP_ROLE_U8_TOKEN:")){e=n.toString().split(":")[0];break}if(!e)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(e),alert("Success! Token copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
+    
     onMount(() => {
         loadSavedTokens();
         //checkMaintenanceStatus();
@@ -483,16 +485,7 @@
             color="white"
             onClick={() => goto("/records")}
         >
-            <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
         <h2
             class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-3"
@@ -506,9 +499,9 @@
             class="bg-white p-8 md:p-12 rounded-xl dark:bg-[#383838] dark:border-[#444444] shadow-sm border border-gray-100 relative min-h-[400px]"
         >
             <div
-                class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-5 mb-3 shadow-sm"
+                class="bg-white dark:bg-[#343434] border border-gray-200 dark:border-[#444444] rounded-xl p-4 mb-3 shadow-sm"
             >
-                <div class="flex items-start gap-4">
+                <div class="flex items-start gap-3">
                     <div class="mt-0.5 text-[#FACC15] shrink-0">
                         <Icon name="info" class="w-6 h-6" />
                     </div>
@@ -1064,29 +1057,7 @@
                             <div
                                 class="flex flex-col gap-2 transition-all w-full"
                             >
-                                <label
-                                    class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-                                >
-                                    <div
-                                        class="relative flex items-center mt-0.5"
-                                    >
-                                        <input
-                                            type="checkbox"
-                                            bind:checked={isSaveTokenEnabled}
-                                            class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                        />
-                                        <svg
-                                            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="4"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <polyline points="20 6 9 17 4 12" />
-                                        </svg>
-                                    </div>
+                                <Checkbox bind:checked={isSaveTokenEnabled} variant="yellow" align="start">
                                     <div>
                                         <span
                                             class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-sm"
@@ -1116,7 +1087,7 @@
                                             </div>
                                         {/if}
                                     </div>
-                                </label>
+                                </Checkbox>
 
                                 {#if isSaveTokenEnabled}
                                     <div class="pl-8 mb-1 relative">
@@ -1148,96 +1119,15 @@
                             </div>
                         {/if}
 
-                        <!--<label
-                            class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-                        >
-                            <div class="relative flex items-center">
-                                <input
-                                    type="checkbox"
-                                    bind:checked={isOverwriteEnabled}
-                                    class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-red-500 checked:bg-red-500 transition-all"
-                                />
-                                <svg
-                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col">
-                                <span
-                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm {isOverwriteEnabled
-                                        ? 'text-red-600 dark:text-red-400 font-bold'
-                                        : ''}"
-                                >
-                                    {$t("import.overwriteStats") ||
-                                        "Overwrite Raiting Stats"}
-                                </span>
-                                {#if isOverwriteEnabled}
-                                    <div
-                                        class="text-gray-400 dark:text-gray-500 text-xs mt-1 max-w-md leading-relaxed"
-                                    >
-                                        {$t("import.overwriteDesc") ||
-                                            "Use this option only if your rating stats are doubled or showing incorrect numbers. The system will strictly recalculate your rating from the local pull history."}
-                                    </div>
-                                {/if}
-                            </div>
-                        </label>-->
-
-                        <label
-                            class="flex items-center gap-3 select-none group cursor-pointer w-fit"
-                        >
-                            <div class="relative flex items-center">
-                                <input
-                                    type="checkbox"
-                                    bind:checked={isGlobalStatsEnabled}
-                                    class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-[#FFE145] checked:bg-[#FFE145] transition-all"
-                                />
-                                <svg
-                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg>
-                            </div>
+                        <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
                             <span
                                 class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
                             >
                                 {$t("import.enableGlobalStats")}
                             </span>
-                        </label>
+                        </Checkbox>
 
-                        <label
-                            class="flex items-center gap-3 select-none group cursor-pointer w-fit"
-                        >
-                            <div class="relative flex items-center">
-                                <input
-                                    type="checkbox"
-                                    bind:checked={isRecoveryEnabled}
-                                    class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-gray-300 bg-white checked:border-red-500 checked:bg-red-500 transition-all"
-                                />
-                                <svg
-                                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-white opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="4"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                >
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg>
-                            </div>
+                        <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
                             <span
                                 class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
                             >
@@ -1254,7 +1144,7 @@
                                     </span>
                                 </Tooltip>
                             </span>
-                        </label>
+                        </Checkbox>
 
                         <div
                             class="w-fit mt-4 {isLoading
@@ -1446,38 +1336,3 @@
     on:confirm={confirmDeleteToken}
     on:close={cancelDeleteToken}
 />
-
-<style>
-    .custom-tab-scroll {
-        scrollbar-width: thin;
-        scrollbar-color: #cbd5e1 transparent;
-    }
-    :global(.dark) .custom-tab-scroll {
-        scrollbar-color: #525252 transparent;
-    }
-
-    .custom-tab-scroll::-webkit-scrollbar {
-        height: 4px;
-    }
-
-    .custom-tab-scroll::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    .custom-tab-scroll::-webkit-scrollbar-thumb {
-        background-color: #e2e8f0;
-        border-radius: 10px;
-    }
-
-    .custom-tab-scroll::-webkit-scrollbar-thumb:hover {
-        background-color: #cbd5e1;
-    }
-
-    :global(.dark) .custom-tab-scroll::-webkit-scrollbar-thumb {
-        background-color: #404040;
-    }
-
-    :global(.dark) .custom-tab-scroll::-webkit-scrollbar-thumb:hover {
-        background-color: #525252;
-    }
-</style>
