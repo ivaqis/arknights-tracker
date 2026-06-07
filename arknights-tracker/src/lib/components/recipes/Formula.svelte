@@ -9,6 +9,9 @@
     export let highlightItemId = "";
 
     export let itemsAsLink = false;
+    export let formulaAsButton = false;
+
+    export let isClicked = false;
 
     $: mode = formula.formulaType;
 
@@ -64,10 +67,21 @@
         craftTimeMs = formula.powerTimeMs;
         powerProvide = formula.powerProvide;
     }
+
+    $: buttonHoverEffects = formulaAsButton ? "hover:bg-gray-200 dark:hover:bg-[#424242] cursor-pointer" : "";
+
+    function selectFormula() {
+        // isClicked = true;
+    }
     
 </script>
 
-<div class="flex flex-row gap-3 h-[60px] w-full pl-1">
+<svelte:element
+    this={formulaAsButton ? "button" : "div"}
+    class="flex flex-row gap-3 h-[68px] w-full pl-1 pt-1 pb-1 rounded-md {buttonHoverEffects}"
+    role={formulaAsButton ? "button" : "presentation"}
+    on:click|preventDefault|stopPropagation={() => selectFormula()}
+>
 
     <div class="flex flex-row gap-2">
 
@@ -193,4 +207,4 @@
 
     </div>
 
-</div>
+</svelte:element>
