@@ -1,13 +1,13 @@
 <script>
 
-import Button from "$lib/components/Button.svelte";
-import BottomSheet from "$lib/components/BottomSheet.svelte";
-import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
-import FormulaTreePlate from "$lib/components/recipes/FormulaTreePlate.svelte";
+    import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
+    import FormulaTreePlate from "$lib/components/recipes/FormulaTreePlate.svelte";
 
-let isBottomSheetOpen = false;
-let selectedItemId = "item_plant_grass_1";
-let sidebarMode = "tree"
+    let isBottomSheetOpen = false;
+    let selectedItemId = "item_plant_grass_1";
+    let sidebarMode = "tree"
 
 </script>
 
