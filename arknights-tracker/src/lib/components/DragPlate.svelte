@@ -11,11 +11,19 @@
     const step = 0.25;
 
     function zoomIn() {
+        const oldScale = scale;
         scale = Math.min(maxScale, scale + step);
+        const scaleChange = scale / oldScale;
+        x = x * scaleChange;
+        y = y * scaleChange;
     }
 
     function zoomOut() {
+        const oldScale = scale;
         scale = Math.max(minScale, scale - step);
+        const scaleChange = scale / oldScale;
+        x = x * scaleChange;
+        y = y * scaleChange;
     }
 
     function reset() {
@@ -42,8 +50,20 @@
 
     function onWheel(e) {
         e.preventDefault();
+
+        const rect = e.currentTarget.getBoundingClientRect();
+
+        const mouseX = e.clientX - rect.left - rect.width / 2;
+        const mouseY = e.clientY - rect.top - rect.height / 2;
+
+        const oldScale = scale;
+
         const delta = e.deltaY > 0 ? -step : step;
         scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+
+        const scaleChange = scale / oldScale;
+        x = mouseX - scaleChange * (mouseX - x);
+        y = mouseY - scaleChange * (mouseY - y);
     }
 </script>
 
