@@ -1,15 +1,10 @@
 <script>
-
-    let {
-        children
-    } = $props();
-
-    let scale = $state(1);
-    let x = $state(0);
-    let y = $state(0);
-    let isDragging = $state(false);
-    let startX = $state(0);
-    let startY = $state(0);
+    let scale = 1;
+    let x = 0;
+    let y = 0;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
 
     const minScale = 0.5;
     const maxScale = 3;
@@ -71,7 +66,7 @@
             style="transform: translate(calc(-50% + {x}px), calc(-50% + {y}px)) scale({scale});"
         >
 
-            {@render children?.()}
+            <slot />
 
         </div>
 
