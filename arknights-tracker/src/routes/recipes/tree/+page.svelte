@@ -81,7 +81,7 @@
 
             if (formula.formulaType === "manualCraft") sidebarMode = "manual";
             if (formula.formulaType === "hubCraft") sidebarMode = "hub";
-            
+
         } else {
             currentBuildingId = null;
         }
@@ -90,8 +90,10 @@
 
     } else {
         currentItemId = null;
+        currentBuildingId = null;
         currentFormulas = [];
         isHeadItem = false;
+        sidebarMode = "";
     }
 
 
