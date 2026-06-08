@@ -370,7 +370,7 @@
 </script>
 
 <div
-  class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 min-w-[320px] flex flex-col"
+  class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-5 shadow-sm border border-gray-100 min-w-0 flex flex-col"
 >
   {#if availableSubBanners.length > 1}
     <div

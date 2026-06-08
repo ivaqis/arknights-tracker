@@ -103,7 +103,7 @@
   }
 </script>
 
-<div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 h-full min-w-[320px]">
+<div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 h-full min-w-0">
   <div class="flex justify-between items-center mb-4 relative z-20">
     <h3 class="text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]">
       {$t("page.rating.ratingTitle")}

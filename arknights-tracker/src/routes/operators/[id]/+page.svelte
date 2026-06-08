@@ -547,11 +547,11 @@
             let mathStr = expr;
 
             for (const key in bb) {
-                const regex = new RegExp(`\\b${key}\\b`, "g");
+                const regex = new RegExp(`\\b${key}\\b`, "gi");
                 mathStr = mathStr.replace(regex, `(${bb[key]})`);
             }
 
-            if (/[a-zA-Z_]/.test(mathStr)) return match;
+            if (/[a-z_]/i.test(mathStr)) return match;
 
             let result = 0;
             try {

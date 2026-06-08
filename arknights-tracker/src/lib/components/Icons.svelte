@@ -3473,4 +3473,9 @@
             stroke-width="2"
         />
     </svg>
+{:else if name == "eyeOpen"}
+    <svg class={$$props.class} style={$$props.style} viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="17" cy="12" r="3" fill="currentColor" stroke="currentColor" stroke-width="2"/>
+        <path d="M16.999 6.5C23.4081 6.5 28.5735 8.92521 30.8027 12C28.5735 15.0748 23.4081 17.5 16.999 17.5C10.5899 17.4999 5.42442 15.0749 3.19531 12C5.42442 8.92511 10.5899 6.50008 16.999 6.5Z" stroke="currentColor" stroke-width="3"/>
+    </svg>
 {/if}

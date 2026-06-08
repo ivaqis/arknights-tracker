@@ -361,7 +361,7 @@
 <div class="w-full" style="max-width: max(1400px, calc(400px * {activeCols} + 6rem));">
   <div class="flex flex-wrap justify-left items-center mb-8 gap-6">
     <h2
-      class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD] shrink-0"
+      class="font-sdk text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
     >
       {$t("page.title")}
     </h2>
@@ -558,7 +558,7 @@
                 <RatingCard />
               {:else if card.type === "cost"}
                 <div
-                  class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 min-w-[320px] w-full"
+                  class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 min-w-0 w-full"
                 >
                   <h3
                     class="text-xl font-bold mb-4 font-sdk text-[#21272C] dark:text-[#FDFDFD]"
