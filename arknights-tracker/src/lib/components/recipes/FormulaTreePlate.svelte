@@ -84,7 +84,7 @@
 
         {#each tree.getIterator() as node}
 
-            <div class="absolute top-[{getYpx(node.layer)}px] right-[{getXpx(node.stage)}px] top-0"
+            <div class="absolute"
                  style="top: {getYpx(node.layer)}px; right:{getXpx(node.stage)}px">
                 {#if node.type === "itemNode"}
 
