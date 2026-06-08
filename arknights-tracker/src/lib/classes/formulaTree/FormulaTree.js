@@ -177,7 +177,7 @@ export class FormulaTree {
             }
 
             if (node.childNodes.length === 0) {
-                if (minStageByLayer[layer-1] > node.stage && node.layer !== 0) {
+                while (minStageByLayer[layer-1] > node.stage && node.layer !== 0) {
                     layer--;
                     let tempNode = node;
                     node._layer = layer;
