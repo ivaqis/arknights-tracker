@@ -25,7 +25,7 @@
     $: if (
         startItem
         && (startItem.id !== tree.startNode?.itemId
-            || startFormula && startFormula !== tree.startNode?.formula)
+            || startFormula && !tree.startNode?.formula)
     ) {
         tree.setStartNode(startItem.id, startFormula);
         forceTreeUpdate();
