@@ -207,7 +207,7 @@
                             <Formula
                                 formula={HubCraft.getHubCraft(craftId)}
                                 highlightItemId={item.id}
-                                itemsAsLink={isRecipesMode}
+                                itemsAsLink={isRecipesMode || isBuildingMode}
                                 formulaAsButton={isTreeMode}
                                 onClick={handleFormulaClick}
                             />
@@ -226,7 +226,7 @@
                             <Formula
                                 formula={ManualCraft.getManualCraft(craftId)}
                                 highlightItemId={item.id}
-                                itemsAsLink={isRecipesMode}
+                                itemsAsLink={isRecipesMode || isBuildingMode}
                                 formulaAsButton={isTreeMode}
                                 onClick={handleFormulaClick}
                             />
@@ -245,7 +245,7 @@
                                 <Formula
                                     formula={Miner.getMiner(minerId).getMiningFormula(item.id)}
                                     highlightItemId={item.id}
-                                    itemsAsLink={isRecipesMode}
+                                    itemsAsLink={isRecipesMode || isBuildingMode}
                                     formulaAsButton={isTreeMode}
                                     onClick={handleFormulaClick}
                                 />
@@ -265,7 +265,7 @@
                                 <Formula
                                     formula={Pump.getPump(pumpId).getPumpingFormula(item.id)}
                                     highlightItemId={item.id}
-                                    itemsAsLink={isRecipesMode}
+                                    itemsAsLink={isRecipesMode || isBuildingMode}
                                     formulaAsButton={isTreeMode}
                                     onClick={handleFormulaClick}
                                 />
@@ -287,7 +287,7 @@
                                     <Formula
                                         formula={MachineCraft.getMachineCraft(craftId)}
                                         highlightItemId={item.id}
-                                        itemsAsLink={isRecipesMode}
+                                        itemsAsLink={isRecipesMode || isBuildingMode}
                                         formulaAsButton={isTreeMode}
                                         onClick={handleFormulaClick}
                                     />

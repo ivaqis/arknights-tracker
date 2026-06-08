@@ -40,12 +40,16 @@
     let sidebarMode = "tree";
 
     let selectedItemNode;
+    let selectedBuildingNode;
 
     let currentItemId;
+    let currentBuildingId;
     let currentFormulas = [];
     let isHeadItem = false;
 
     $: if (selectedItemNode) {
+        sidebarMode = "tree";
+
         currentItemId = selectedItemNode.itemId;
 
         currentFormulas = [];
@@ -61,11 +65,33 @@
         }
 
         isHeadItem = !selectedItemNode.parentNode;
+
+    } else if (selectedBuildingNode) {
+        console.log("zsfgdfgb");
+        sidebarMode = "building";
+
+        currentItemId = selectedBuildingNode.itemId;
+
+
+        currentFormulas = [];
+
+        let formula = selectedBuildingNode.formula;
+        if (formula) {
+            currentFormulas.push(formula);
+
+            currentBuildingId = formula.crafterId || formula.minerId || formula.pumpId;
+        } else {
+            currentBuildingId = null;
+        }
+
+        isHeadItem = false;
+
     } else {
         currentItemId = null;
         currentFormulas = [];
         isHeadItem = false;
     }
+
 
     let selectedFormula;
 
@@ -100,6 +126,7 @@
                 bind:selectedFormula={selectedFormula}
                 bind:isBottomSheetOpen={isBottomSheetOpen}
                 bind:selectedItemNode={selectedItemNode}
+                bind:selectedBuildingNode={selectedBuildingNode}
             />
 
         </div>
@@ -111,6 +138,7 @@
 
             <FormulaSidebar
                 currentItemId={currentItemId}
+                currentBuildingId={currentBuildingId}
                 mode="{sidebarMode}"
                 currentFormulas={currentFormulas}
                 isHeadItem={isHeadItem}

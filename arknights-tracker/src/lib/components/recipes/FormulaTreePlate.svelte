@@ -12,6 +12,7 @@
     export let isBottomSheetOpen;
 
     export let selectedItemNode;
+    export let selectedBuildingNode;
     export let selectedFormula;
 
     let tree = new FormulaTree();
@@ -51,11 +52,28 @@
         }
 
         selectedItemNode = node;
+        selectedBuildingNode = null;
         isBottomSheetOpen = true;
     }
 
     $: isNodeSelected = (node) => {
         return selectedItemNode === node;
+    };
+
+    function selectBuildingNode(node) {
+        if (node === selectedBuildingNode) {
+            selectedBuildingNode = null;
+            isBottomSheetOpen = false;
+            return;
+        }
+
+        selectedBuildingNode = node;
+        selectedItemNode = null;
+        isBottomSheetOpen = true;
+    }
+
+    $: isBuildingNodeSelected = (node) => {
+        return selectedBuildingNode === node;
     };
 
     function getXpx(stage) {
@@ -123,10 +141,18 @@
                     style="top: {getYBuildingNode(node.layer)}px; right: {getXBuildingNode(node.stage)}px"
                 >
 
-                    <BuildingTreeNode
-                        formulaType={node.formula?.formulaType}
-                        buildingId={node.formula?.crafterId || node.formula?.minerId || node.formula?.pumpId}
-                    />
+                    <button
+                        class="rounded-md"
+                        on:click|preventDefault|stopPropagation={() => selectBuildingNode(node)}
+                    >
+
+                        <BuildingTreeNode
+                            formulaType={node.formula?.formulaType}
+                            buildingId={node.formula?.crafterId || node.formula?.minerId || node.formula?.pumpId}
+                            highlight={isBuildingNodeSelected(node)}
+                        />
+
+                    </button>
 
                 </div>
 
