@@ -85,7 +85,7 @@ export class FormulaTree {
                 node.formula = this._getFirstFormula(item);
             }
 
-            if (this.getItemUseCount(item.id) >= 1) {
+            if (this.getItemUseCount(item.id) >= 1 && node !== startNode) {
                 continue;
             }
             this._addItemToUsedItemList(item.id);
