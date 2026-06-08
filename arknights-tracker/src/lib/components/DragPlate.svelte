@@ -6,7 +6,7 @@
     let startX = 0;
     let startY = 0;
 
-    const minScale = 0.5;
+    const minScale = 0.25;
     const maxScale = 3;
     const step = 0.25;
 
