@@ -82,7 +82,7 @@
     >
 
         <div
-            class="absolute top-1/2 left-1/2 transition-transform duration-[10ms] min-h-full min-w-full flex items-center justify-center"
+            class="absolute top-1/2 left-1/2 min-h-full min-w-full flex items-center justify-center"
             style="transform: translate(calc(-50% + {x}px), calc(-50% + {y}px)) scale({scale});"
         >
 
