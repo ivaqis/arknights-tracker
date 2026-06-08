@@ -27,7 +27,6 @@
     ) {
         tree.setStartNode(startItem.id, startFormula);
         forceTreeUpdate();
-        console.log("start")
     }
 
     $: nodes = [...tree.getIterator()];
@@ -39,24 +38,19 @@
         selectedFormula = null;
         tree.updateNode(selectedItemNode);
         tree.updateNodePositions();
-        // selectedItemNode = null;
-        // isBottomSheetOpen = false;
 
         forceTreeUpdate();
-        console.log("sfgdfg")
     }
 
     function selectNode(node) {
         if (node === selectedItemNode) {
             selectedItemNode = null;
             isBottomSheetOpen = false;
-            console.log("unselected");
             return;
         }
 
         selectedItemNode = node;
         isBottomSheetOpen = true;
-        console.log("selected")
     }
 
     $: isNodeSelected = (node) => {
@@ -73,7 +67,6 @@
 
     function forceTreeUpdate() {
         tree = tree;
-        console.log("forceTreeUpdate");
     }
 
 </script>
