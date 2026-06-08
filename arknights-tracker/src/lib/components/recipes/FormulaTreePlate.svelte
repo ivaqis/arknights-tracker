@@ -72,6 +72,11 @@
         isBottomSheetOpen = true;
     }
 
+    function forceNodeContinuation(node) {
+        tree.updateNode(node);
+        forceTreeUpdate();
+    }
+
     $: isBuildingNodeSelected = (node) => {
         return selectedBuildingNode === node;
     };
@@ -152,6 +157,24 @@
                             highlight={isBuildingNodeSelected(node)}
                         />
 
+                    </button>
+
+                </div>
+
+            {/if}
+
+            {#if node.childNodes.length === 0 && node.type === "itemNode"}
+
+                <div
+                    class="absolute flex items-center h-[110px]"
+                    style="top: {getYBuildingNode(node.layer)}px; right: {getXBuildingNode(node.stage)}px"
+                >
+
+                    <button
+                        class="rounded-full h-16 w-16 flex items-center justify-center bg-[#383838]"
+                        on:click|preventDefault|stopPropagation={() => forceNodeContinuation(node)}
+                    >
+                        a
                     </button>
 
                 </div>
