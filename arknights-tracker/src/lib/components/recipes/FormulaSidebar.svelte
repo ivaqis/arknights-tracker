@@ -30,8 +30,6 @@
     export let currentFormulas; // only if mode is "tree"
     export let isHeadItem = false; // only if mode is "tree"
 
-    export let itemsAsLink = false;
-
     export let mode = ""; // "recipes" | "tree" | "building" | "manual" | "hub"
 
     export let selectedFormula;
