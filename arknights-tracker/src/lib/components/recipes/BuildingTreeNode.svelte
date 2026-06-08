@@ -7,6 +7,7 @@
 
     export let formulaType;
     export let buildingId;
+    export let craftTimeMs;
 
     export let highlight;
 
@@ -35,7 +36,7 @@
 </script>
 
 <div
-    class="relative flex flex-row items-center w-[300px] min-h-14 bg-[#1f1f1f] rounded-md p-3 gap-3 group {highlightRing} border border-[#444]">
+    class="relative flex flex-row items-center w-[350px] min-h-14 bg-[#1f1f1f] rounded-md p-3 gap-3 group {highlightRing} border border-[#444]">
 
     <div
         class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
@@ -43,7 +44,7 @@
 
     {#if buildingIconId}
 
-        <div class="flex justify-center items-center h-8 w-8">
+        <div class="flex-shrink-0 flex justify-center items-center h-8 w-8">
             <Images
                 id={buildingIconId}
                 variant="building-icon"
@@ -53,7 +54,7 @@
 
     {:else if svgIconName}
 
-        <div class="flex justify-center items-center h-8 w-8">
+        <div class="flex-shrink-0 flex justify-center items-center h-8 w-8">
             <Icons
                 name={svgIconName}
                 class="text-[#FDFDFD] dark:text-[#FDFDFD] h-full w-full"
@@ -62,10 +63,20 @@
 
     {/if}
 
-    <div class="flex items-center w-full">
+    <div class="flex-1 flex items-center w-full">
         <span class="font-sdk text-lg text-left text-[#FDFDFD] dark:text-[#FDFDFD]">
             {text}
         </span>
     </div>
+
+    {#if craftTimeMs}
+
+        <div class="flex-shrink-0 flex items-center">
+            <span class="font-nums text-sm text-gray-400">
+                {craftTimeMs / 1000}s
+            </span>
+        </div>
+
+    {/if}
 
 </div>

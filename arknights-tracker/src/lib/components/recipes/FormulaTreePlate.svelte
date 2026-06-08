@@ -156,6 +156,7 @@
                             formulaType={node.formula?.formulaType}
                             buildingId={node.formula?.crafterId || node.formula?.minerId || node.formula?.pumpId}
                             highlight={isBuildingNodeSelected(node)}
+                            craftTimeMs={node.formula?.craftTimeMs || node.formula?.miningTimeMs || node.formula?.pumpTimeMs}
                         />
 
                     </button>
