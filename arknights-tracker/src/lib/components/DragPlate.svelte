@@ -65,6 +65,8 @@
 
     function onWheel(e) {
         e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
 
         const rect = e.currentTarget.getBoundingClientRect();
 
