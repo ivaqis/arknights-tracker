@@ -82,21 +82,35 @@
         return selectedBuildingNode === node;
     };
 
+    const itemNodeWidthPx = 110;
+    const itemNodeHeightPx = 110;
+
+    const buildingNodeWidthPx = 350;
+
+    const itemNode2BuildingNodeHorizontalDistancePx = 150;
+    const buildingNode2ItemNodeHorizontalDistancePx = 150;
+
+    const itemNode2ItemNodeHorizontalDistancePx = itemNode2BuildingNodeHorizontalDistancePx + buildingNodeWidthPx + buildingNode2ItemNodeHorizontalDistancePx;
+    const itemNode2ItemNodeVerticalDistancePx = 100;
+
+    const itemNode2ForceNodeContinuationButtonHorizontalDistancePx = 50;
+
     function getXpx(stage) {
-        return 100 + stage * 600;
+        return 100 + stage * (itemNodeWidthPx + itemNode2ItemNodeHorizontalDistancePx);
     }
 
     function getYpx(layer) {
-        return 100 + layer * 200;
+        return 100 + layer * (itemNodeHeightPx + itemNode2ItemNodeVerticalDistancePx);
     }
 
     function getXBuildingNode(stage) {
-        return getXpx(stage) + 200;
+        return getXpx(stage) + itemNodeWidthPx + itemNode2BuildingNodeHorizontalDistancePx;
     }
 
-    function getYBuildingNode(layer) {
-        return getYpx(layer);
+    function getXForceNodeContinuationButton(stage) {
+        return getXpx(stage) + itemNodeWidthPx + itemNode2ForceNodeContinuationButtonHorizontalDistancePx;
     }
+
 
     function forceTreeUpdate() {
         tree = tree;
@@ -147,7 +161,7 @@
 
                 <div
                     class="absolute flex items-center h-[110px]"
-                    style="top: {getYBuildingNode(node.layer)}px; right: {getXBuildingNode(node.stage)}px"
+                    style="top: {getYpx(node.layer)}px; right: {getXBuildingNode(node.stage)}px"
                 >
 
                     <button
@@ -172,7 +186,7 @@
 
                 <div
                     class="absolute flex items-center h-[110px]"
-                    style="top: {getYBuildingNode(node.layer)}px; right: {getXBuildingNode(node.stage)}px"
+                    style="top: {getYpx(node.layer)}px; right: {getXForceNodeContinuationButton(node.stage)}px"
                 >
 
                     <button
