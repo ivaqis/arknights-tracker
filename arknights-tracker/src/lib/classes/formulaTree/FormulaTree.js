@@ -1,14 +1,14 @@
-import {MachineCraftSearcher} from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
-import {ManualCraftSearcher} from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
-import {HubCraftSearcher} from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
-import {MinerSearcher} from "$lib/classes/crafts/searchers/MinerSearcher.js";
-import {PumpSearcher} from "$lib/classes/crafts/searchers/PumpSearcher.js";
-import {Miner} from "$lib/classes/buildings/Miner.js";
-import {Pump} from "$lib/classes/buildings/Pump.js";
-import {MachineCraft} from "$lib/classes/crafts/MachineCraft.js";
-import {ManualCraft} from "$lib/classes/crafts/ManualCraft.js";
-import {HubCraft} from "$lib/classes/crafts/HubCraft.js";
-import {Item} from "$lib/classes/items/Item.js";
+import { Miner } from "$lib/classes/buildings/Miner.js";
+import { Pump } from "$lib/classes/buildings/Pump.js";
+import { HubCraft } from "$lib/classes/crafts/HubCraft.js";
+import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
+import { ManualCraft } from "$lib/classes/crafts/ManualCraft.js";
+import { HubCraftSearcher } from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
+import { MachineCraftSearcher } from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
+import { ManualCraftSearcher } from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
+import { MinerSearcher } from "$lib/classes/crafts/searchers/MinerSearcher.js";
+import { PumpSearcher } from "$lib/classes/crafts/searchers/PumpSearcher.js";
+import { Item } from "$lib/classes/items/Item.js";
 
 export class FormulaTree {
     _machineCraftSearcher = new MachineCraftSearcher();
@@ -125,6 +125,7 @@ export class FormulaTree {
                 );
 
                 node.addChildNode(childNode);
+
             } else if (formula?.formulaType === "miningFormula") {
                 let itemId = formula.miningItemId;
                 let childNode = new ResourcePointNode(
@@ -142,7 +143,10 @@ export class FormulaTree {
         this._clearUsedItemList();
 
         for (let node of this.getIterator()) {
-            if (node.type === "resourcePointNode") continue;
+            if (node.type === "resourcePointNode") {
+                continue;
+            }
+
             this._addItemToUsedItemList(node.itemId);
         }
     }
@@ -204,6 +208,10 @@ export class FormulaTree {
         this._maxStage = maxStage;
     }
 
+    /**
+     * Traversing the tree in depth
+     * @returns {Generator<Node, void, *>}
+     */
     getIterator() {
         return this.startNode?.getIterator() ?? [];
     }

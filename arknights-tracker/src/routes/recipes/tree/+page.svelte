@@ -9,6 +9,7 @@
     import Button from "$lib/components/Button.svelte";
     import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
     import FormulaTreePlate from "$lib/components/recipes/FormulaTreePlate.svelte";
+    import { t } from "$lib/i18n";
 
     $: startItemId = $page.url.searchParams.get("itemId");
     $: startFormulaType = $page.url.searchParams.get("type");
@@ -108,15 +109,26 @@
 
         <div class="flex flex-row gap-6 items-center mb-8 h-12">
 
-            <Button variant="roundSmall" color="white" onClick={() => history.back()}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M15 18l-6-6 6-6" />
+            <Button
+                variant="roundSmall"
+                color="white"
+                onClick={() => history.back()}
+            >
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path d="M15 18l-6-6 6-6"/>
                 </svg>
             </Button>
 
             <div class="flex items-baseline flex-wrap gap-2 md:gap-3 font-sdk">
                 <h2 class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]">
-                    Recipe tree
+                    {$t("pages.recipeTree")}
                 </h2>
             </div>
 

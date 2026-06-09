@@ -105,13 +105,16 @@
 </script>
 
 <DragPlate>
-    <div class="relative shrink-0 bg-gray-600"
-         style="width: 500px; height: 500px;">
+    <div
+        class="relative shrink-0 bg-gray-600"
+        style="width: 500px; height: 500px;"
+    >
 
         {#each tree.getIterator() as node}
 
-            <div class="absolute"
-                 style="top: {getYpx(node.layer)}px; right: {getXpx(node.stage)}px"
+            <div
+                class="absolute"
+                style="top: {getYpx(node.layer)}px; right: {getXpx(node.stage)}px"
             >
                 {#if node.type === "itemNode"}
 

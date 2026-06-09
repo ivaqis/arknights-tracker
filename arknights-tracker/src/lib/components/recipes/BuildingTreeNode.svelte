@@ -11,10 +11,6 @@
 
     export let highlight;
 
-    $: {
-        console.log(`${formulaType} ${buildingId}`);
-    }
-
     $: building = Building.getBuilding(buildingId);
 
     $: isBuildingMode = formulaType === "machineCraft"
@@ -23,7 +19,9 @@
     $: isManualMode = formulaType === "manualCraft";
     $: isHubMode = formulaType === "hubCraft";
 
-    $: svgIconName = isManualMode ? "recepies" : isHubMode ? "pba" : null;
+    $: svgIconName = isManualMode ? "recepies"
+        : isHubMode ? "pba"
+        : null;
     $: buildingIconId = isBuildingMode && building ? building.iconId : null;
 
     $: text = isBuildingMode ? $t(`buildingNames.${building?.id}`)
