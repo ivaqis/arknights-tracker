@@ -87,30 +87,29 @@
 
     const buildingNodeWidthPx = 350;
 
-    const itemNode2BuildingNodeHorizontalDistancePx = 150;
-    const buildingNode2ItemNodeHorizontalDistancePx = 150;
+    const itemNode2BuildingNodeXDistancePx = 150;
+    const buildingNode2ItemNodeXDistancePx = 150;
 
-    const itemNode2ItemNodeHorizontalDistancePx = itemNode2BuildingNodeHorizontalDistancePx + buildingNodeWidthPx + buildingNode2ItemNodeHorizontalDistancePx;
-    const itemNode2ItemNodeVerticalDistancePx = 100;
+    const itemNode2ItemNodeXDistancePx = itemNode2BuildingNodeXDistancePx + buildingNodeWidthPx + buildingNode2ItemNodeXDistancePx;
+    const itemNode2ItemNodeYDistancePx = 100;
 
-    const itemNode2ForceNodeContinuationButtonHorizontalDistancePx = 50;
+    const itemNode2ForceNodeContinuationButtonXDistancePx = 50;
 
     function getXpx(stage) {
-        return 100 + stage * (itemNodeWidthPx + itemNode2ItemNodeHorizontalDistancePx);
+        return 100 + stage * (itemNodeWidthPx + itemNode2ItemNodeXDistancePx);
     }
 
     function getYpx(layer) {
-        return 100 + layer * (itemNodeHeightPx + itemNode2ItemNodeVerticalDistancePx);
+        return 100 + layer * (itemNodeHeightPx + itemNode2ItemNodeYDistancePx);
     }
 
     function getXBuildingNode(stage) {
-        return getXpx(stage) + itemNodeWidthPx + itemNode2BuildingNodeHorizontalDistancePx;
+        return getXpx(stage) + itemNodeWidthPx + itemNode2BuildingNodeXDistancePx;
     }
 
     function getXForceNodeContinuationButton(stage) {
-        return getXpx(stage) + itemNodeWidthPx + itemNode2ForceNodeContinuationButtonHorizontalDistancePx;
+        return getXpx(stage) + itemNodeWidthPx + itemNode2ForceNodeContinuationButtonXDistancePx;
     }
-
 
     function forceTreeUpdate() {
         tree = tree;
