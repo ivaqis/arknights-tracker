@@ -472,9 +472,9 @@
             <div class="flex-shrink-0 flex items-center justify-center h-20 pl-6 pr-6 pt-4 pb-4 border-t border-gray-200 dark:border-[#444]">
                 <a
                     href="/recipes/tree?{getRecipeTreeLinkParameters(item.id)}"
-                    class="h-full w-full flex items-center justify-center rounded-2xl bg-[#F9B90C] hover:bg-[#FFC01E]"
+                    class="relative h-full w-full rounded-2xl bg-[#F9B90C] hover:bg-[#FFC01E]"
                 >
-                    <span class="font-sdk text-xl text-[#21272C] dark:text-[#21272C]">
+                    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-sdk text-xl text-[#21272C] dark:text-[#21272C]">
                         {treeSwitchButtonText}
                     </span>
                 </a>
