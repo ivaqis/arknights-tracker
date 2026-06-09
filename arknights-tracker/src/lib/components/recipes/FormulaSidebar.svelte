@@ -474,7 +474,7 @@
                     href="/recipes/tree?{getRecipeTreeLinkParameters(item.id)}"
                     class="relative h-full w-full rounded-2xl bg-[#F9B90C] hover:bg-[#FFC01E]"
                 >
-                    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-sdk text-xl text-[#21272C] dark:text-[#21272C]">
+                    <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-sdk text-xl text-[#21272C] dark:text-[#21272C] whitespace-nowrap">
                         {treeSwitchButtonText}
                     </span>
                 </a>
