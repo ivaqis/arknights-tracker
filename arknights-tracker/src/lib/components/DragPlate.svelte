@@ -1,5 +1,4 @@
 <script>
-
     import DragPlateSettingsModal from "$lib/components/DragPlateSettingsModal.svelte";
     import Icons from "$lib/components/Icons.svelte";
     import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
@@ -60,9 +59,15 @@
     }
 
     function onMouseDown(e) {
-        isDragging = true;
-        startX = e.clientX - x;
-        startY = e.clientY - y;
+        if ($ctrlForZoom) {
+            isDragging = true;
+            startX = e.clientX - x;
+            startY = e.clientY - y;
+        } else {
+            isDragging = true;
+            startX = e.clientX - x;
+            startY = e.clientY - y;
+        }
     }
 
     function onMouseMove(e) {
@@ -79,6 +84,14 @@
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
+
+        if ($ctrlForZoom) {
+            if (!e.ctrlKey && !e.metaKey) {
+                x -= e.deltaX;
+                y -= e.deltaY;
+                return;
+            }
+        }
 
         const rect = e.currentTarget.getBoundingClientRect();
 
@@ -183,6 +196,10 @@
             }
         };
     }
+
+    $: if ($ctrlForZoom !== undefined) {
+        isDragging = false;
+    }
 </script>
 
 <DragPlateSettingsModal
@@ -198,8 +215,9 @@
     <div
         role="button"
         tabindex="0"
-        class="w-full h-full cursor-grab overflow-hidden relative"
-        class:active:cursor-grabbing={isDragging}
+        class="w-full h-full overflow-hidden relative"
+        class:cursor-grab={!isDragging}
+        class:cursor-grabbing={isDragging}
         onmousedown={onMouseDown}
         onmousemove={onMouseMove}
         onmouseup={onMouseUp}
