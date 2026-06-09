@@ -13,6 +13,7 @@
     import { disableDarkening } from "$lib/stores/settings";
     import { addNotification } from "$lib/stores/notifications";
     import { currentLocale } from "$lib/stores/locale";
+    import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
 
     import Select from "$lib/components/Select.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
@@ -50,6 +51,10 @@
 
     function toggleDarkening() {
         disableDarkening.update((v) => !v);
+    }
+
+    function toggleDragPlateMode() {
+        ctrlForZoom.update((v) => !v);
     }
 
     import {
@@ -851,7 +856,7 @@
         >
             {$t("settings.other")}
         </h2>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 mb-4">
         <button
                 type="button"
                 role="switch"
@@ -872,6 +877,31 @@
                 {$t("settings.disableDarkening") || "Disable darkening"}
             </span>
             
+        </div>
+
+        <div class="flex items-center gap-3">
+
+            <button
+                type="button"
+                role="switch"
+                aria-label="switch"
+                aria-checked={$ctrlForZoom}
+                class="shrink-0 relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$ctrlForZoom
+                    ? 'bg-[#F9B90C]'
+                    : 'bg-gray-200 dark:bg-[#555]'}"
+                on:click={toggleDragPlateMode}
+            >
+                    <span
+                        class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform {$ctrlForZoom
+                    ? 'translate-x-6'
+                    : 'translate-x-1'} shadow-sm"
+                    ></span>
+            </button>
+
+            <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
+                    {$t("settings.toggleCtrlForZoom")}
+                </span>
+
         </div>
     </section>
 </div>
