@@ -6,6 +6,13 @@
     let startX = 0;
     let startY = 0;
 
+    let initialDistance = 0;
+    let initialScale = 1;
+    let initialX = 0;
+    let initialY = 0;
+    let pinchCenterX = 0;
+    let pinchCenterY = 0;
+
     const minScale = 0.25;
     const maxScale = 3;
     const step = 0.25;
@@ -73,9 +80,81 @@
         x = mouseX - scaleChange * (mouseX - x);
         y = mouseY - scaleChange * (mouseY - y);
     }
+
+    function getTouchDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function getTouchCenter(touches) {
+        return {
+            x: (touches[0].clientX + touches[1].clientX) / 2,
+            y: (touches[0].clientY + touches[1].clientY) / 2
+        };
+    }
+
+    function onTouchStart(e) {
+        if (e.touches.length === 1) {
+            isDragging = true;
+            startX = e.touches[0].clientX - x;
+            startY = e.touches[0].clientY - y;
+        } else if (e.touches.length === 2) {
+            isDragging = false;
+            initialDistance = getTouchDistance(e.touches);
+            initialScale = scale;
+            initialX = x;
+            initialY = y;
+            const center = getTouchCenter(e.touches);
+            pinchCenterX = center.x;
+            pinchCenterY = center.y;
+        }
+    }
+
+    function onTouchMove(e) {
+        e.preventDefault();
+
+        if (e.touches.length === 1 && isDragging) {
+            x = e.touches[0].clientX - startX;
+            y = e.touches[0].clientY - startY;
+        } else if (e.touches.length === 2) {
+            const currentDistance = getTouchDistance(e.touches);
+            const center = getTouchCenter(e.touches);
+
+            if (initialDistance > 0) {
+                const newScale = Math.min(maxScale, Math.max(minScale, initialScale * (currentDistance / initialDistance)));
+
+                const rect = e.currentTarget.getBoundingClientRect();
+                const containerCenterX = rect.left + rect.width / 2;
+                const containerCenterY = rect.top + rect.height / 2;
+
+                const scaleChange = newScale / initialScale;
+
+                const touchCenterRelativeX = pinchCenterX - containerCenterX;
+                const touchCenterRelativeY = pinchCenterY - containerCenterY;
+
+                x = touchCenterRelativeX - scaleChange * (touchCenterRelativeX - initialX);
+                y = touchCenterRelativeY - scaleChange * (touchCenterRelativeY - initialY);
+
+                scale = newScale;
+            }
+        }
+    }
+
+    function onTouchEnd(e) {
+        if (e.touches.length === 0) {
+            isDragging = false;
+            initialDistance = 0;
+        } else if (e.touches.length === 1) {
+            isDragging = true;
+            startX = e.touches[0].clientX - x;
+            startY = e.touches[0].clientY - y;
+            initialDistance = 0;
+        }
+    }
 </script>
 
-<div class="relative h-full w-full bg-gray-300 dark:bg-[#252525] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors overflow-hidden select-none">
+<div class="relative h-full w-full bg-gray-300 dark:bg-[#252525] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors overflow-hidden select-none touch-none">
 
     <div
         role="button"
@@ -87,6 +166,9 @@
         onmouseup={onMouseUp}
         onmouseleave={onMouseUp}
         onwheel={onWheel}
+        ontouchstart={onTouchStart}
+        ontouchmove={onTouchMove}
+        ontouchend={onTouchEnd}
     >
 
         <div
