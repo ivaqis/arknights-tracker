@@ -157,10 +157,25 @@
             initialDistance = 0;
         }
     }
+
+    function preventWheel(node) {
+        function handleWheel(e) {
+            e.preventDefault();
+        }
+
+        node.addEventListener('wheel', handleWheel, { passive: false });
+
+        return {
+            destroy() {
+                node.removeEventListener('wheel', handleWheel);
+            }
+        };
+    }
 </script>
 
 <div
     class="relative h-full w-full bg-gray-300 dark:bg-[#252525] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors overflow-hidden select-none touch-none"
+    use:preventWheel
     onwheel={onWheel}
 >
 
