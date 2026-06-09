@@ -39,7 +39,7 @@
     class="relative flex flex-row items-center w-[350px] min-h-14 bg-[#1f1f1f] rounded-md p-3 gap-3 group {highlightRing} border border-[#444]">
 
     <div
-        class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
+        class="absolute inset-0 border-[2px] border-white rounded-[5px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
     ></div>
 
     {#if buildingIconId}
