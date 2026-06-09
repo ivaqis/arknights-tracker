@@ -67,7 +67,7 @@
     }
 </script>
 
-<div class="relative h-full w-full bg-gray-300 dark:bg-[#252525] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors overflow-hidden">
+<div class="relative h-full w-full bg-gray-300 dark:bg-[#252525] rounded-3xl border border-gray-200 dark:border-[#444] transition-colors overflow-hidden select-none">
 
     <div
         role="button"
