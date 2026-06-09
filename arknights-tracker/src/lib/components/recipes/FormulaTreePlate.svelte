@@ -167,7 +167,7 @@
 
 <DragPlate>
     <div
-        class="relative shrink-0 bg-gray-600"
+        class="relative shrink-0"
         style="width: 500px; height: 500px;"
     >
 
