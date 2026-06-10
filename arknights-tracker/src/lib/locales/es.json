@@ -291,7 +291,8 @@
     "versions": "Versiones",
     "sortByRelease": "Por lanzamiento",
     "sortByWait": "Por días sin rerun",
-    "allBanners": "Todos los Banners"
+    "allBanners": "Todos los Banners",
+    "emptyPageMsg": "Qué vacío está aquí"
   },
   "status": {
     "won": "Ganado 50:50",

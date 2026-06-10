@@ -565,7 +565,7 @@
 
 <svelte:window on:click={closeAll} />
 
-<div class="flex flex-wrap gap-3 items-center w-full mb-6 relative z-40">
+<div class="flex flex-wrap gap-3 items-center w-full mb-6 relative {isFilterOpen || isSortDropdownOpen ? 'z-60' : 'z-40'}">
     <div class="relative">
         <button
             type="button"

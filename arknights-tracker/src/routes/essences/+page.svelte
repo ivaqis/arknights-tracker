@@ -1,5 +1,6 @@
 <script>
     import { t } from "$lib/i18n";
+    import { fade, scale } from "svelte/transition";
     import { weapons } from "$lib/data/weapons.js";
     import { essences } from "$lib/data/items/essences.js";
     import { pullData } from "$lib/stores/pulls";
@@ -412,6 +413,39 @@
         return wishlist;
     }
 
+    let isEssenceModalOpen = false;
+    let activeDungeonId = null;
+
+    function openEssencesModal(dungeonId) {
+        activeDungeonId = dungeonId;
+        isEssenceModalOpen = true;
+    }
+
+    function closeEssencesModal() {
+        isEssenceModalOpen = false;
+        activeDungeonId = null;
+    }
+
+    function getDungeonAttributes(dungeonId) {
+        if (!dungeonId) return { attr1: [], attr2: [], attr3: [] };
+        const dungeonEssences = Object.values(essences).filter(
+            (e) => e.obtain && e.obtain.includes(dungeonId)
+        );
+
+        const skills = new Set();
+        dungeonEssences.forEach((essence) => {
+            essence.skills.forEach((s) => {
+                skills.add(s.id);
+            });
+        });
+
+        const attr1 = Array.from(skills).filter((s) => attr1Skills.includes(s));
+        const attr2 = Array.from(skills).filter((s) => attr2Skills.includes(s));
+        const attr3 = Array.from(skills).filter((s) => attr3Skills.includes(s));
+
+        return { attr1, attr2, attr3 };
+    }
+
     $: optimizerResults = computeOptimizer(
         selectedWeaponIds,
         primaryWeaponId,
@@ -434,19 +468,27 @@
             .filter(Boolean);
         const dungeonMap = {};
 
+        const allDungeons = new Set();
         Object.values(essencesData).forEach((essence) => {
-            if (!essence.obtain || essence.obtain.length === 0) return;
-            const eSkillIds = essence.skills.map((s) => s.id);
-            const eLevelSum = essence.skills.reduce(
-                (sum, s) => sum + s.level,
-                0,
+            if (essence.obtain) {
+                essence.obtain.forEach((d) => allDungeons.add(d));
+            }
+        });
+
+        allDungeons.forEach((dungeonId) => {
+            const dungeonEssences = Object.values(essencesData).filter(
+                (essence) => essence.obtain && essence.obtain.includes(dungeonId)
             );
 
             selectedWeapons.forEach((wp) => {
-                const matchedSkills = wp.skills.filter((s) =>
-                    eSkillIds.includes(s),
+                const matchedSkills = wp.skills.filter((skillId) =>
+                    dungeonEssences.some((essence) =>
+                        essence.skills.some((s) => s.id === skillId)
+                    )
                 );
+
                 const matchCount = matchedSkills.length;
+                if (matchCount === 0) return;
 
                 let effectiveCount = matchCount;
                 if (wishlist && primaryId !== wp.id) {
@@ -463,36 +505,48 @@
                     }
                 }
 
-                if (matchCount > 0) {
-                    essence.obtain.forEach((dungeonId) => {
-                        if (!dungeonMap[dungeonId]) dungeonMap[dungeonId] = {};
+                let bestEssence = null;
+                let bestEssenceMatchCount = -1;
+                let bestEssenceRarity = -1;
+                let bestEssenceLevelSum = -1;
 
-                        const existing = dungeonMap[dungeonId][wp.id];
-                        const isBetter =
-                            !existing ||
-                            effectiveCount > existing.effectiveCount ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount > existing.matchCount) ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount === existing.matchCount &&
-                                essence.rarity > existing.bestEssence.rarity) ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount === existing.matchCount &&
-                                essence.rarity ===
-                                    existing.bestEssence.rarity &&
-                                eLevelSum > existing.eLevelSum);
+                dungeonEssences.forEach((essence) => {
+                    const essenceSkillIds = essence.skills.map((s) => s.id);
+                    const essenceMatchCount = wp.skills.filter((s) =>
+                        essenceSkillIds.includes(s)
+                    ).length;
+                    if (essenceMatchCount === 0) return;
 
-                        if (isBetter) {
-                            dungeonMap[dungeonId][wp.id] = {
-                                bestEssence: essence,
-                                matchCount,
-                                effectiveCount,
-                                matchedSkills,
-                                eLevelSum,
-                            };
-                        }
-                    });
-                }
+                    const essenceLevelSum = essence.skills.reduce(
+                        (sum, s) => sum + s.level,
+                        0,
+                    );
+
+                    const isBetter =
+                        !bestEssence ||
+                        essenceMatchCount > bestEssenceMatchCount ||
+                        (essenceMatchCount === bestEssenceMatchCount &&
+                            essence.rarity > bestEssenceRarity) ||
+                        (essenceMatchCount === bestEssenceMatchCount &&
+                            essence.rarity === bestEssenceRarity &&
+                            essenceLevelSum > bestEssenceLevelSum);
+
+                    if (isBetter) {
+                        bestEssence = essence;
+                        bestEssenceMatchCount = essenceMatchCount;
+                        bestEssenceRarity = essence.rarity;
+                        bestEssenceLevelSum = essenceLevelSum;
+                    }
+                });
+
+                if (!dungeonMap[dungeonId]) dungeonMap[dungeonId] = {};
+                dungeonMap[dungeonId][wp.id] = {
+                    bestEssence: bestEssence || dungeonEssences[0],
+                    matchCount,
+                    effectiveCount,
+                    matchedSkills,
+                    eLevelSum: bestEssenceLevelSum > -1 ? bestEssenceLevelSum : 0,
+                };
             });
         });
 
@@ -565,14 +619,11 @@
                             )
                                 return;
 
-                            const can3_3 = dungeonEssences.some((essence) => {
-                                const eSkillIds = essence.skills.map(
-                                    (s) => s.id,
-                                );
-                                return wp.skills.every((skill) =>
-                                    eSkillIds.includes(skill),
-                                );
-                            });
+                            const can3_3 = wp.skills.every((skill) =>
+                                dungeonEssences.some((essence) =>
+                                    essence.skills.some((s) => s.id === skill)
+                                )
+                            );
 
                             if (can3_3) {
                                 const wAttr1 = wp.skills.find((s) =>
@@ -688,11 +739,26 @@
                 let dSet = new Set();
                 const wp = allWeapons.find((w) => w.id === wpId);
                 if (wp) {
+                    // Find all unique dungeons
+                    const dungeons = new Set();
                     Object.values(essences).forEach((ess) => {
-                        if (!ess.obtain) return;
-                        const essSkillIds = ess.skills.map((s) => s.id);
-                        if (wp.skills.every((s) => essSkillIds.includes(s))) {
-                            ess.obtain.forEach((dId) => dSet.add(dId));
+                        if (ess.obtain) {
+                            ess.obtain.forEach((dId) => dungeons.add(dId));
+                        }
+                    });
+                    
+                    // Check if all 3 skills of the weapon are dropped in that dungeon
+                    dungeons.forEach((dId) => {
+                        const dungeonEssences = Object.values(essences).filter(
+                            (e) => e.obtain && e.obtain.includes(dId)
+                        );
+                        const allCovered = wp.skills.every((skillId) =>
+                            dungeonEssences.some((e) =>
+                                e.skills.some((es) => es.id === skillId)
+                            )
+                        );
+                        if (allCovered) {
+                            dSet.add(dId);
                         }
                     });
                 }
@@ -754,18 +820,20 @@
 
                 let canFarm3_3 = false;
                 if (!hasConflict && commonDungeons.size > 0) {
-                    Object.values(essences).forEach((ess) => {
-                        if (!ess.obtain || canFarm3_3) return;
-
-                        if (ess.obtain.some((dId) => commonDungeons.has(dId))) {
-                            const essSkillIds = ess.skills.map((s) => s.id);
-                            if (
-                                wp.skills.every((s) => essSkillIds.includes(s))
-                            ) {
-                                canFarm3_3 = true;
-                            }
+                    for (const dId of commonDungeons) {
+                        const dungeonEssences = Object.values(essences).filter(
+                            (e) => e.obtain && e.obtain.includes(dId)
+                        );
+                        const allCovered = wp.skills.every((skillId) =>
+                            dungeonEssences.some((e) =>
+                                e.skills.some((es) => es.id === skillId)
+                            )
+                        );
+                        if (allCovered) {
+                            canFarm3_3 = true;
+                            break;
                         }
-                    });
+                    }
                 }
 
                 if (hasConflict || !canFarm3_3) {
@@ -1144,25 +1212,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <Button
-                                    variant="roundSmall"
-                                    className="opacity-85 hover:opacity-100"
-                                    color="gray"
-                                    onClick={() => {
-                                        const mapUrl =
-                                            locData.url || locData.URL;
-                                        if (mapUrl)
-                                            window.open(mapUrl, "_blank");
-                                    }}
-                                >
-                                    <span class="flex items-center gap-2">
-                                        {$t("essencesPage.openInMap")}
-                                        <Icon
-                                            name="sendToLink"
-                                            class="w-3 h-3"
-                                        />
-                                    </span>
-                                </Button>
+                                <div class="flex items-center gap-2">
+                                    <Button
+                                        variant="roundSmall"
+                                        color="gray"
+                                        onClick={() => openEssencesModal(dungeon.dungeonId)}
+                                        title={$t("essencesPage.viewEssences") || "Essences"}
+                                    >
+                                        <span class="flex items-center justify-center">
+                                            <Icon name="essence" class="w-4 h-4 text-current" />
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="roundSmall"
+                                        color="gray"
+                                        onClick={() => {
+                                            const mapUrl =
+                                                locData.url || locData.URL;
+                                            if (mapUrl)
+                                                window.open(mapUrl, "_blank");
+                                        }}
+                                    >
+                                        <span class="flex items-center gap-2">
+                                            {$t("essencesPage.openInMap")}
+                                            <Icon
+                                                name="sendToLink"
+                                                class="w-3 h-3"
+                                            />
+                                        </span>
+                                    </Button>
+                                </div>
                             </div>
 
                             <div
@@ -1363,7 +1442,7 @@
 
                                         <button
                                             type="button"
-                                            class="w-7 h-7 rounded-md bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors border border-red-500/30 flex-shrink-0 cursor-pointer ml-2"
+                                            class="w-7 h-7 rounded-md bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors border select-none border-red-500/30 flex-shrink-0 cursor-pointer ml-2"
                                             title={$t("common.remove") ||
                                                 "Remove"}
                                             on:click|preventDefault|stopPropagation={() =>
@@ -1504,7 +1583,7 @@
 
                                                                             <button
                                                                                 type="button"
-                                                                                class="w-5 h-5 rounded-md bg-[#4ADE80]/10 text-[#4ADE80] hover:bg-[#4ADE80] hover:text-white flex items-center justify-center transition-colors border border-[#4ADE80]/30 flex-shrink-0 cursor-pointer"
+                                                                                class="w-5 h-5 rounded-md bg-[#4ADE80]/10 text-[#4ADE80] hover:bg-[#4ADE80] hover:text-white flex items-center justify-center select-none transition-colors border border-[#4ADE80]/30 flex-shrink-0 cursor-pointer"
                                                                                 title={$t(
                                                                                     "common.add",
                                                                                 ) ||
@@ -1664,4 +1743,120 @@
             <Icon name="inbox" class="w-6 h-6 text-black" />
         </button>
     {/if}
+{/if}
+
+{#if isEssenceModalOpen && activeDungeonId}
+  {@const dungeonAttrs = getDungeonAttributes(activeDungeonId)}
+  {@const regionId = getLocationIcon(activeDungeonId)}
+  {@const rColor = getRegionColor(regionId)}
+  <div class="fixed inset-0 z-[10000] flex items-center justify-center p-4 md:ml-[var(--sb-w)]">
+    <div 
+      class="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default outline-none"
+      transition:fade={{ duration: 200 }}
+      role="button"
+      tabindex="0"
+      on:click={closeEssencesModal}
+      on:keydown={(e) => {
+        if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') closeEssencesModal();
+      }}
+    ></div>
+
+    <div
+      class="relative bg-white rounded-2xl dark:bg-[#383838] dark:border-[#444444] p-6 md:p-8 w-full max-w-3xl shadow-2xl border border-gray-100 flex flex-col max-h-[90vh]"
+      transition:scale={{ duration: 200, start: 0.95 }}
+    >
+      <div class="flex justify-between items-start mb-6 shrink-0 border-b border-gray-100 dark:border-[#444444] pb-4">
+        <h3 class="text-xl md:text-2xl font-bold font-sdk dark:text-[#FDFDFD] text-[#21272C] flex items-start gap-2.5 pr-4 leading-tight">
+          <Icon name={regionId} class="w-7 h-7 shrink-0 mt-0.5" style="color: {rColor};" />
+          <span>{$t(`energyPoints.${activeDungeonId}`) || activeDungeonId}</span>
+        </h3>
+        <button 
+          on:click={closeEssencesModal}
+          class="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors p-1 shrink-0"
+        >
+          <Icon name="close" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="overflow-y-auto custom-scrollbar pr-3 space-y-6 text-sm dark:text-[#B7B6B3] text-gray-600 leading-relaxed flex-1">
+        
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr1") || "Attribute 1"}
+          </h4>
+          {#if dungeonAttrs.attr1.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr1 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center shrink-0">
+                      <Icon name={skillIcons[skill]} class="w-3.5 h-3.5 text-white" />
+                    </div>
+                  {/if}
+                  <span class="text-xs font-bold">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr2") || "Attribute 2"}
+          </h4>
+          {#if dungeonAttrs.attr2.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr2 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    {#if elementColors[skill]}
+                      <Icon name={skillIcons[skill]} class="w-4 h-4 shrink-0 {elementColors[skill]}" />
+                    {:else}
+                      <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center shrink-0">
+                        <Icon name={skillIcons[skill]} class="w-3.5 h-3.5 text-white" />
+                      </div>
+                    {/if}
+                  {/if}
+                  <span class="text-xs font-bold {elementColors[skill] || ''}">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr3") || "Attribute 3"}
+          </h4>
+          {#if dungeonAttrs.attr3.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr3 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    <Icon name={skillIcons[skill]} class="w-4 h-4 shrink-0 text-current" />
+                  {/if}
+                  <span class="text-xs font-bold">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+      </div>
+
+      <div class="mt-6 pt-4 flex justify-end shrink-0 border-t border-gray-100 dark:border-[#444444]">
+        <div class="w-auto min-w-[120px]">
+          <Button variant="round" color="yellow" onClick={closeEssencesModal}>
+            {$t("privacy.close")}
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
 {/if}

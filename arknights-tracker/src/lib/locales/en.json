@@ -312,7 +312,8 @@
     "versions": "Versions",
     "sortByRelease": "By release date",
     "sortByWait": "By days without rerun",
-    "allBanners": "All Banners"
+    "allBanners": "All Banners",
+    "emptyPageMsg": "It's so empty here"
   },
   "status": {
     "won": "Won 50:50",

@@ -2207,8 +2207,8 @@
     </svg>
 {:else if name == "event"}
     <svg
-        width="12"
-        height="12"
+        class={$$props.class}
+        style={$$props.style}
         viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -2462,8 +2462,8 @@
     </svg>
 {:else if name == "protoPass"}
     <svg
-        width="16"
-        height="12"
+        class={$$props.class}
+        style={$$props.style}
         viewBox="0 0 17 13"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -2483,8 +2483,8 @@
     </svg>
 {:else if name == "mail"}
     <svg
-        width="14"
-        height="14"
+        class={$$props.class}
+        style={$$props.style}
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -2592,21 +2592,18 @@
     <svg
         class={$$props.class}
         style={$$props.style}
-        width="18"
-        height="24"
-        viewBox="0 0 18 24"
+        viewBox="0 0 22 22"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
     >
         <path
-            d="M8 21L16 21C16.5523 21 17 20.5523 17 20L17 4C17 3.44771 16.5523 3 16 3L8 3"
+            d="M2 11L13 11M8.41667 16L13 11L8.41667 6"
             stroke="currentColor"
             stroke-width="2"
         />
         <path
-            d="M8.74228e-07 12L12 12M12 12L7 7M12 12L7 17"
-            stroke="currentColor"
-            stroke-width="2"
+            d="M10.8193 1.92188C15.8709 1.92202 20.0347 5.94708 20.0352 10.9951C20.0352 16.0435 15.8712 20.0692 10.8193 20.0693C7.5005 20.0693 4.56496 18.3324 2.94141 15.709H5.44043C6.68482 17.0727 8.45992 17.9609 10.4482 18.0596L10.8193 18.0693C14.6798 18.0692 17.8322 15.0968 18.0254 11.3594L18.0352 10.9951C18.0347 7.21093 15.0027 4.12011 11.1904 3.93066L10.8193 3.92188C8.68392 3.92188 6.76553 4.83211 5.44434 6.27734H2.94434C4.56854 3.65703 7.50267 1.92188 10.8193 1.92188Z"
+            fill="currentColor"
         />
     </svg>
 {:else if name == "discrodBig"}
@@ -3474,8 +3471,25 @@
         />
     </svg>
 {:else if name == "eyeOpen"}
-    <svg class={$$props.class} style={$$props.style} viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="17" cy="12" r="3" fill="currentColor" stroke="currentColor" stroke-width="2"/>
-        <path d="M16.999 6.5C23.4081 6.5 28.5735 8.92521 30.8027 12C28.5735 15.0748 23.4081 17.5 16.999 17.5C10.5899 17.4999 5.42442 15.0749 3.19531 12C5.42442 8.92511 10.5899 6.50008 16.999 6.5Z" stroke="currentColor" stroke-width="3"/>
+    <svg
+        class={$$props.class}
+        style={$$props.style}
+        viewBox="0 0 34 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <circle
+            cx="17"
+            cy="12"
+            r="3"
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-width="2"
+        />
+        <path
+            d="M16.999 6.5C23.4081 6.5 28.5735 8.92521 30.8027 12C28.5735 15.0748 23.4081 17.5 16.999 17.5C10.5899 17.4999 5.42442 15.0749 3.19531 12C5.42442 8.92511 10.5899 6.50008 16.999 6.5Z"
+            stroke="currentColor"
+            stroke-width="3"
+        />
     </svg>
 {/if}

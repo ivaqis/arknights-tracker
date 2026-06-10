@@ -292,7 +292,8 @@
     "versions": "Phiên bản",
     "sortByRelease": "Theo ngày phát hành",
     "sortByWait": "Theo số ngày không có rerun",
-    "allBanners": "Tất cả Banner"
+    "allBanners": "Tất cả Banner",
+    "emptyPageMsg": "Ở đây trống trải quá"
   },
   "status": {
     "won": "Thắng 50:50",

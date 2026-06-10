@@ -303,9 +303,13 @@
   })();
 
   let draggedCardId = null;
+  let lastSwapX = 0;
+  let lastSwapY = 0;
 
   function handleDragStart(event, cardId) {
     draggedCardId = cardId;
+    lastSwapX = event.clientX;
+    lastSwapY = event.clientY;
     event.dataTransfer.effectAllowed = 'move';
     event.dataTransfer.setData('text/plain', cardId);
   }
@@ -335,6 +339,27 @@
     const targetIndex = currentOrder.indexOf(targetCardId);
 
     if (sourceIndex !== -1 && targetIndex !== -1 && sourceIndex !== targetIndex) {
+      let draggedColIdx = -1;
+      let targetColIdx = -1;
+      columnsData.forEach((col, colIdx) => {
+        if (col.some(card => card.id === draggedCardId)) draggedColIdx = colIdx;
+        if (col.some(card => card.id === targetCardId)) targetColIdx = colIdx;
+      });
+
+      if (draggedColIdx !== -1 && draggedColIdx === targetColIdx) {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const relativeY = event.clientY - rect.top;
+        const margin = Math.min(50, rect.height * 0.2);
+
+        if (sourceIndex < targetIndex) {
+          if (relativeY < margin) return;
+        } else {
+          if (relativeY > rect.height - margin) return;
+        }
+      }
+
+      lastSwapX = event.clientX;
+      lastSwapY = event.clientY;
       currentOrder.splice(sourceIndex, 1);
       currentOrder.splice(targetIndex, 0, draggedCardId);
       $recordsCardsOrder = currentOrder;
@@ -415,11 +440,11 @@
   </div>
   {#if columnsData.every(col => col.length === 0)}
     <div class="flex flex-col items-center justify-center py-20 px-4 text-center w-full min-h-[350px]">
-      <img src="/images/empty.png" alt="Empty" class="w-56 h-auto object-contain mb-5 opacity-90 dark:opacity-85 select-none pointer-events-none" />
+      <img src="/images/empty.png" alt="Empty" class="w-56 h-auto object-contain mb-5 select-none pointer-events-none" />
       <div class="flex items-center gap-3 text-lg font-bold text-gray-500 dark:text-gray-400 select-none">
-        <Icon name="noData" class="w-6 h-6 text-gray-400 dark:text-gray-500" />
-        <span>Как же тут пусто</span>
-        <Icon name="noData" class="w-6 h-6 text-gray-400 dark:text-gray-500" />
+        <Icon name="noData" class="w-6 h-6" />
+        <span class="text-[#A0A0A0]">{$t("systemNames.emptyPageMsg")}</span>
+        <Icon name="noData" class="w-6 h-6" />
       </div>
     </div>
   {:else}

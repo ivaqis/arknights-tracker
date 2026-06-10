@@ -292,7 +292,8 @@
     "versions": "Versi",
     "sortByRelease": "Berdasarkan rilis",
     "sortByWait": "Berdasarkan hari tanpa rerun",
-    "allBanners": "Semua Banner"
+    "allBanners": "Semua Banner",
+    "emptyPageMsg": "Kosong sekali di sini"
   },
   "status": {
     "won": "Menang 50:50",

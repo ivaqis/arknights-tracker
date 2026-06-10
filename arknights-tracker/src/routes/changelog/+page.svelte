@@ -122,6 +122,15 @@
                 : "Протопропуск",
     };
 
+    const typeIcons = {
+        signIn: "signIn",
+        inGame: "event",
+        inGamePermanent: "permanent",
+        web: "link",
+        mailEvent: "mail",
+        protoPass: "protoPass",
+    };
+
     $: equipmentByPack = displayEquipment.reduce((acc, eq) => {
         const packName = eq.pack || "none";
         if (!acc[packName]) acc[packName] = [];
@@ -365,9 +374,12 @@
                     {#each sortedEventTypes as type}
                         <div class="flex flex-col gap-2">
                             <h4
-                                class="text-lg font-bold text-gray-600 dark:text-[#B7B6B3] font-sdk pb-1 border-b border-gray-300 dark:border-[#3b3b3b]"
+                                class="text-lg font-bold text-gray-600 dark:text-[#B7B6B3] font-sdk pb-1 border-b border-gray-300 dark:border-[#3b3b3b] flex items-center gap-2"
                             >
-                                {eventTypeLabels[type] || type}
+                                {#if typeIcons[type]}
+                                    <Icon name={typeIcons[type]} class="w-5 h-5 opacity-80 text-current" />
+                                {/if}
+                                <span>{eventTypeLabels[type] || type}</span>
                             </h4>
 
                             <div

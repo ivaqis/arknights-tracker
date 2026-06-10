@@ -401,6 +401,19 @@
             "ba.heal": "text-[#4ADE80] font-bold",
             "ba.consume": "text-[#E3BC55] font-bold",
             "ba.noguard": "text-[#F87171] font-bold",
+            "ba.cryst": "text-[#67E8F9] font-bold",
+            "ba.pulse": "text-[#C084FC] font-bold",
+            "ba.phy": "text-[#A3A3A3] font-bold",
+            "ba.poise": "text-[#FBBF24] font-bold",
+            "ba.key": "text-[#E3BC55] font-bold",
+            "ba.conduct": "text-[#C084FC] font-bold",
+            "ba.spelldmg": "text-[#E3BC55] font-bold",
+            "ba.crush": "text-[#FBBF24] font-bold",
+            "ba.fracture": "text-[#FBBF24] font-bold",
+            "ba.pd": "text-[#A3A3A3] font-bold",
+            "ba.physicalvul": "text-[#F87171] font-bold",
+            "ba.originium": "text-[#67E8F9] font-bold",
+            "ba.return": "text-[#38BDF8] font-bold",
         };
         let html = text.replace(/<([@#])([^>]+)>/g, (match, type, tag) => {
             let styleClass = styles[tag] || "text-[#38BDF8] font-bold";

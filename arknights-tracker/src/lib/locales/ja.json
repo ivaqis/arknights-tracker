@@ -292,7 +292,8 @@
     "versions": "バージョン",
     "sortByRelease": "実装日順",
     "sortByWait": "復刻待ち日数順",
-    "allBanners": "すべてのガチャ"
+    "allBanners": "すべてのガチャ",
+    "emptyPageMsg": "ここはなんて空っぽなんだろう"
   },
   "status": {
     "won": "勝利 50:50",

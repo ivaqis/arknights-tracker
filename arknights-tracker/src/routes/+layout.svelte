@@ -33,7 +33,7 @@
 
     let prevStatus = null;
 
-    $: if ($justSynced) {
+    $: if ($justSynced && $isI18nReady) {
         addNotification("success", $t("settings.cloud.sync_toast"));
         justSynced.set(false);
     }

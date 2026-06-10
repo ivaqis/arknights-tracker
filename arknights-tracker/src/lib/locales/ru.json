@@ -309,7 +309,8 @@
     "versions": "Версий",
     "sortByRelease": "По релизам",
     "sortByWait": "По числу дней без рерана",
-    "allBanners": "Все баннеры"
+    "allBanners": "Все баннеры",
+    "emptyPageMsg": "Как же тут пусто"
   },
   "status": {
     "won": "Выигрыш 50:50",

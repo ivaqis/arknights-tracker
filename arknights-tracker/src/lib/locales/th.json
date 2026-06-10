@@ -292,7 +292,8 @@
     "versions": "เวอร์ชัน",
     "sortByRelease": "ตามวันเปิดตัว",
     "sortByWait": "ตามจำนวนวันที่ไม่มีรีรัน",
-    "allBanners": "แบนเนอร์ทั้งหมด"
+    "allBanners": "แบนเนอร์ทั้งหมด",
+    "emptyPageMsg": "ที่นี่ว่างเปล่าจัง"
   },
   "status": {
     "won": "ชนะ 50:50",

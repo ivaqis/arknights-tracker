@@ -292,7 +292,8 @@
     "versions": "版本",
     "sortByRelease": "按實裝順序",
     "sortByWait": "按未復刻天數",
-    "allBanners": "所有卡池"
+    "allBanners": "所有卡池",
+    "emptyPageMsg": "這裡好空啊"
   },
   "status": {
     "won": "勝出 50:50",
