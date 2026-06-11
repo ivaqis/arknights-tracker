@@ -1,15 +1,15 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { goto } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { disableDarkening } from "$lib/stores/settings";
+    import { pullData } from "$lib/stores/pulls.js";
+    import { manualPotentials } from "$lib/stores/potentials.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { disableDarkening } from "$lib/stores/settings.js";
     import { changelogData } from "$lib/data/versions.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let operator = {};
     export let variant = "default"; // "small" | "default"
@@ -174,7 +174,7 @@
                     ? 'bottom-[21%]'
                     : 'bottom-0'}"
             >
-                <Images
+                <Image
                     id={operator.id}
                     variant="operator-preview"
                     size="100%"

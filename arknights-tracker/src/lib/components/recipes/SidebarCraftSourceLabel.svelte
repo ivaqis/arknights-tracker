@@ -1,6 +1,6 @@
 <script>
-    import Images from "$lib/components/Images.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     export let text;
     export let iconId; // only if iconVariant === "building-icon"
@@ -20,7 +20,7 @@
 
     {#if (iconId && iconVariant)}
         <div class="flex justify-center items-center h-8 w-8">
-            <Images
+            <Image
                 id={iconId}
                 interactive={true}
                 variant={iconVariant}

@@ -1,7 +1,7 @@
 <script>
-    import ItemStackCard from "$lib/components/ItemStackCard.svelte";
-    import ResourcePointCard from "$lib/components/recipes/ResourcePointCard.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
+    import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import FuelEnergyCard from "$lib/components/recipes/FuelEnergyCard.svelte";
     import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 

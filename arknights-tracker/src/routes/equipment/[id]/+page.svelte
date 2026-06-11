@@ -4,12 +4,12 @@
     import { currentLocale } from "$lib/stores/locale";
     import { equipment } from "$lib/data/items/equipment.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -346,7 +346,7 @@
                     <div
                         class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
                     >
-                        <Images
+                        <Image
                             {id}
                             variant="equipment"
                             interactive={true}
@@ -783,7 +783,7 @@
                                             {#if match.craftCost !== Infinity && match.materials[0]}
                                                 <div class="absolute right-1 bottom-1 flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
                                                     <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
-                                                        <Images
+                                                        <Image
                                                             id={match.materials[0].name}
                                                             variant="item"
                                                             className="max-w-full max-h-full object-contain drop-shadow-sm"

@@ -6,10 +6,10 @@
     import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
 
     import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
+    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
     import ItemCard from "$lib/components/recipes/ItemCard.svelte";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     $: filters = $itemFilters;
     $: searchQuery = $itemSearch;

@@ -1,17 +1,17 @@
 <script>
-  import { t } from "$lib/i18n";
-  import { pullData } from "$lib/stores/pulls";
-  import { banners } from "$lib/data/banners";
-  import { addNotification } from "$lib/stores";
+  import { t } from "$lib/i18n.js";
+  import { pullData } from "$lib/stores/pulls.js";
+  import { banners } from "$lib/data/banners.js";
+  import { addNotification } from "$lib/stores/index.js";
   import { onDestroy } from "svelte";
-  import { currentLocale } from "$lib/stores/locale";
-  import Images from "$lib/components/Images.svelte";
+  import { currentLocale } from "$lib/stores/locale.js";
+  import Image from "$lib/components/Image.svelte";
 
   import * as XLSX from "xlsx";
-  import Icon from "$lib/components/Icons.svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
-  import { getWeaponCategory } from "$lib/utils/importUtils";
+  import { getWeaponCategory } from "$lib/utils/importUtils.js";
   import {
     recordsExcludedBannerTypes,
     recordsExcludedBanners,
@@ -21,7 +21,7 @@
     recordsMaxCols,
     recordsEnableDragDrop,
     recordsCardsOrder
-  } from "$lib/stores/filterStore";
+  } from "$lib/stores/filterStore.js";
 
   export let isOpen = false;
   export let onClose;
@@ -658,7 +658,7 @@
                           <div class="flex items-center gap-3 ml-2 text-left">
                             {#if opt.iconId}
                               <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
-                                <Images 
+                                <Image
                                   id={opt.iconId} 
                                   variant="banner-mini" 
                                   size="100%" 

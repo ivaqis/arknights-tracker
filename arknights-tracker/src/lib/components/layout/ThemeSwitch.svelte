@@ -1,8 +1,8 @@
 <script>
-    import { isDarkMode } from "$lib/stores/theme";
-    import { t } from "$lib/i18n";
+    import { isDarkMode } from "$lib/stores/theme.js";
+    import { t } from "$lib/i18n.js";
 
-    import Icon from "./Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     function toggleTheme() {
         $isDarkMode = !$isDarkMode;

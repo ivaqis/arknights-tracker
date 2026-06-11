@@ -7,9 +7,9 @@
     import { accountStore } from "$lib/stores/accounts";
     import { operatorFilters, operatorSearch, operatorManual, operatorOwnedOnly } from '$lib/stores/filterStore';
 
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     $: filters = $operatorFilters;
     $: searchQuery = $operatorSearch;

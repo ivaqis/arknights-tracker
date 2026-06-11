@@ -1,7 +1,7 @@
 <script>
     import { getImagePath } from "$lib/utils/imageUtils";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     export let item = null; 
     export let id = null;

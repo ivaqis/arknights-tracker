@@ -15,12 +15,12 @@
     import { notifications, addNotification, removeNotification } from "$lib/stores";
     import { cubicOut } from "svelte/easing";
 
-    import CookieConsent from "$lib/components/CookieConsent.svelte";
-    import LanguageSelect from "$lib/components/LanguageSelect.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
-    import SyncModal from "$lib/components/SyncModal.svelte";
-    import PrivacyModal from "$lib/components/PrivacyModal.svelte";
+    import CookieConsent from "$lib/components/layout/CookieConsent.svelte";
+    import LanguageSelect from "$lib/components/layout/LanguageSelect.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ThemeSwitch from "$lib/components/layout/ThemeSwitch.svelte";
+    import SyncModal from "$lib/components/modals/SyncModal.svelte";
+    import PrivacyModal from "$lib/components/layout/PrivacyModal.svelte";
     import Button from "$lib/components/Button.svelte";
 
     let isDonateModalOpen = false;

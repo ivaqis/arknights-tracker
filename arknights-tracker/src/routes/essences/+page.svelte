@@ -9,10 +9,10 @@
     import { accountStore } from "$lib/stores/accounts";
     import { weaponFilters, weaponSearch, weaponManual } from '$lib/stores/filterStore';
 
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Button from "$lib/components/Button.svelte";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -1330,7 +1330,7 @@
                                                     match.weapon.rarity
                                                 ] || '#B7B6B3'};"
                                             >
-                                                <Images
+                                                <Image
                                                     id={match.weapon.id}
                                                     interactive={true}
                                                     variant="weapon-icon"
@@ -1563,7 +1563,7 @@
                                                                                     href={`/weapons/${wp.id}`}
                                                                                     class="hover:ring-2 hover:ring-white/70 ring-inset duration-300"
                                                                                 >
-                                                                                <Images
+                                                                                <Image
                                                                                     id={wp.id}
                                                                                     interactive={true}
                                                                                     variant="weapon-icon"

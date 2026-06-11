@@ -2,8 +2,8 @@
   import { createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
 
-  import Images from "$lib/components/Images.svelte";
-  import Icon from "$lib/components/Icons.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 
   export let options = [];
   export let value = "";
@@ -77,7 +77,7 @@
     <span class="relative z-10 text-lg truncate pr-4 flex items-center gap-3">
       {#if selectedOption?.iconId}
          <div class="w-12 h-8 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
-             <Images 
+             <Image
                 id={selectedOption.iconId} 
                 variant="banner-mini" 
                 size="100%" 
@@ -127,7 +127,7 @@
             >
               {#if option.iconId}
                  <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
-                     <Images 
+                     <Image
                         id={option.iconId} 
                         variant="banner-mini" 
                         size="100%" 

@@ -6,8 +6,8 @@
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
 
-    import Images from "$lib/components/Images.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import Select from "$lib/components/Select.svelte";
 
     let now = new Date();
@@ -352,7 +352,7 @@
                                     <div
                                         class="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0"
                                     >
-                                        <Images
+                                        <Image
                                             id={item.id}
                                             variant={currentTab === "weapons"
                                                 ? "weapon-icon"
@@ -424,7 +424,7 @@
                                         banner.startMs,
                                     )}px; transform: translateX(-16px);"
                                 >
-                                    <Images
+                                    <Image
                                         id={item.id}
                                         variant={currentTab === "weapons"
                                             ? "weapon-icon"
@@ -462,7 +462,7 @@
                                     <div
                                         class="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0"
                                     >
-                                        <Images
+                                        <Image
                                             id={item.id}
                                             variant={currentTab === "weapons"
                                                 ? "weapon-icon"

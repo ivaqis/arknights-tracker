@@ -1,8 +1,8 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     
-    import ItemCard from "$lib/components/ItemCard.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let charId = "";
     export let type = "talent";
@@ -196,7 +196,7 @@
                     <div
                         class="w-[52px] h-[52px] flex items-center justify-center"
                     >
-                        <Images
+                        <Image
                             id={skillImageId}
                             interactive={true}
                             variant={imageVariant}
@@ -207,7 +207,7 @@
                     <div
                         class="w-[52px] h-[52px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[3px]"
                     >
-                        <Images
+                        <Image
                             id={skillImageId}
                             interactive={true}
                             variant={imageVariant}

@@ -13,8 +13,8 @@
   import { recordsExcludedBanners } from "$lib/stores/filterStore";
 
   import Button from "$lib/components/Button.svelte";
-  import Images from "$lib/components/Images.svelte";
-  import Icon from "$lib/components/Icons.svelte";
+  import Image from "$lib/components/Image.svelte";
+  import Icon from "$lib/components/Icon.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
 
   export let bannerId;
@@ -380,7 +380,7 @@
         <div class="shrink-0">
           <Tooltip text={bId === "all" ? $t("systemNames.allBanners") : ($t(`banners.${bId}`) || bId)}>
             <button
-              class="group relative {bId === "all" ? "px-2" : ""} h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none flex items-center justify-center
+              class="group relative {bId === 'all' ? 'px-2' : ''} h-12 w-18 flex-shrink-0 rounded shadow-sm border overflow-hidden transition-all focus:outline-none flex items-center justify-center
                     {selectedSubBannerId === bId
                 ? 'ring-2 ring-[#e44e25] border-[#e44e25] bg-transparent text-[#e44e25] dark:text-[#e44e25]'
                 : 'border-gray-200 hover:ring-2 hover:ring-[#e44e25] dark:border-[#7A7A7A] opacity-60 hover:opacity-100 bg-gray-50 dark:bg-[#2e2e2e] text-[#21272C] dark:text-[#FDFDFD]'}"
@@ -392,7 +392,7 @@
                   <span>ALL</span>
                 </div>
               {:else}
-                <Images
+                <Image
                   id={bId}
                   variant="banner-mini"
                   alt={bId}
@@ -462,7 +462,7 @@
                 {:else}
                    {#if option.iconId}
                       <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
-                          <Images 
+                          <Image
                              id={option.iconId} 
                              variant="banner-mini" 
                              size="100%" 
@@ -507,7 +507,7 @@
         <span
           class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-1 font-nums text-xl"
         >
-          <Images id="oroberyl" variant="currency" size={25} />
+          <Image id="oroberyl" variant="currency" size={25} />
           {spent}
         </span>
       </div>
@@ -704,7 +704,7 @@
                   <div
                     class="w-full h-full {icon.isWeapon ? 'scale-[1.45]' : ''} transition-transform"
                   >
-                    <Images
+                    <Image
                       id={icon.id}
                       variant={icon.isWeapon ? "weapon-icon" : "operator-icon"}
                       size="100%"

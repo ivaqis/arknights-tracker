@@ -1,12 +1,12 @@
 <script>
     import { FormulaTree } from "$lib/classes/formulaTree/FormulaTree.js";
     import { Item } from "$lib/classes/items/Item.js";
-    import DragPlate from "$lib/components/DragPlate.svelte";
-    import Icons from "$lib/components/Icons.svelte";
-    import ItemStackCard from "$lib/components/ItemStackCard.svelte";
+    import DragPlate from "$lib/components/dragPlate/DragPlate.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
     import BuildingTreeNode from "$lib/components/recipes/BuildingTreeNode.svelte";
     import ForceNodeContinuationButton from "$lib/components/recipes/ForceNodeContinuationButton.svelte";
-    import ResourcePointCard from "$lib/components/recipes/ResourcePointCard.svelte";
+    import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
 
     export let startItemId;
     export let startFormula = null;
@@ -332,7 +332,7 @@
 
             <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
 
-                <Icons
+                <Icon
                     name="noData"
                     class="h-16 w-16"
                 />

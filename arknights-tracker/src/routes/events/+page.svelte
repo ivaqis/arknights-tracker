@@ -1,7 +1,7 @@
 <script lang="ts">
     import { t } from "$lib/i18n";
 
-    import Timeline from "$lib/components/Timeline.svelte";
+    import Timeline from "$lib/components/events/Timeline.svelte";
 </script>
 
 <div class="fixed inset-0 z-20 w-full h-full flex flex-col overflow-hidden bg-[#F9F9F9] dark:bg-[#2C2C2C] md:p-8 p-4 md:ml-[var(--sb-w)]">

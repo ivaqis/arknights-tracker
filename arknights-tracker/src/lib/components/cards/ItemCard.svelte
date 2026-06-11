@@ -1,7 +1,7 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
 
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let item = {};
     export let amount = 0;
@@ -26,7 +26,7 @@
     
     <div class="relative w-full bg-[#E5E5E5] flex items-center justify-center overflow-visible">
         
-        <Images 
+        <Image
             id={item.id} 
             variant={imageVariant}
             interactive={true}

@@ -1,10 +1,10 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { fade, scale } from "svelte/transition";
-  import { t } from "$lib/i18n";
+  import { t } from "$lib/i18n.js";
   
   import Button from "$lib/components/Button.svelte";
-  import Icon from "$lib/components/Icons.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 
   export let isOpen = false;
 

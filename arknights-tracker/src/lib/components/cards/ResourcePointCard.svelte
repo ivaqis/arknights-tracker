@@ -1,9 +1,9 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
     
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let itemId = "";
 
@@ -48,7 +48,7 @@
         <div class="relative w-full h-full rounded-[6px] overflow-hidden bg-[#777676]">
 
             <div class="absolute inset-0 flex items-center justify-center z-0">
-                <Images
+                <Image
                     id={resourceIconId}
                     variant="item-icon-bg"
                     className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
@@ -58,7 +58,7 @@
             {#if (iconId)}
                 <div class="absolute inset-0 flex items-center justify-center z-0 left-[25%]">
                     <div class="w-2/3 h-2/3">
-                        <Images
+                        <Image
                             id={iconId}
                             variant="item-icon"
                             className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"

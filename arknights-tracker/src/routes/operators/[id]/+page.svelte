@@ -11,13 +11,13 @@
     import { accountStore } from "$lib/stores/accounts";
     import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import SkillCard from "$lib/components/SkillCard.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import TalentCard from "$lib/components/TalentCard.svelte";
+    import SkillCard from "$lib/components/operators/SkillCard.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import TalentCard from "$lib/components/operators/TalentCard.svelte";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -605,7 +605,7 @@
         <div
             class="h-[110%] max-w-none object-cover opacity-100 lg:opacity-100 mask-image-gradient"
         >
-            <Images id={char.id} variant="operator-splash" size="100%" />
+            <Image id={char.id} variant="operator-splash" size="100%" />
         </div>
         <div
             class="absolute inset-0 bg-gradient-to-r dark:from-[#5E5E5E] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-40"
@@ -1418,7 +1418,7 @@
                                                         e.key === " ") &&
                                                     (selectedArtId = `${id}_${realKey}`)}
                                             >
-                                                <Images
+                                                <Image
                                                     id={`${id}_${realKey}`}
                                                     variant="operator-art"
                                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -1928,7 +1928,7 @@
                     alt="Splash Art Full"
                 />
             {:else}
-                <Images
+                <Image
                     id={selectedArtId}
                     interactive={true}
                     variant="operator-art"

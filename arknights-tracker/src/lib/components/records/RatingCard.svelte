@@ -1,14 +1,14 @@
 <script>
-  import { t } from "$lib/i18n";
-  import { pullData } from "$lib/stores/pulls";
-  import { bannerTypes } from "$lib/data/bannerTypes";
-  import { fetchGlobalStats } from "$lib/api";
+  import { t } from "$lib/i18n.js";
+  import { pullData } from "$lib/stores/pulls.js";
+  import { bannerTypes } from "$lib/data/bannerTypes.js";
+  import { fetchGlobalStats } from "$lib/api.js";
   import { browser } from "$app/environment";
-  import { accountStore } from "$lib/stores/accounts";
+  import { accountStore } from "$lib/stores/accounts.js";
 
-  import Button from "./Button.svelte";
-  import Icon from "./Icons.svelte";
-  import Tooltip from "./Tooltip.svelte";
+  import Button from "../Button.svelte";
+  import Icon from "../Icon.svelte";
+  import Tooltip from "../Tooltip.svelte";
 
   const { accounts, selectedId } = accountStore;
   

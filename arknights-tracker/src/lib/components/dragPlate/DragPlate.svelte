@@ -1,6 +1,6 @@
 <script>
-    import DragPlateSettingsModal from "$lib/components/DragPlateSettingsModal.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import DragPlateSettingsModal from "$lib/components/dragPlate/DragPlateSettingsModal.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
 
     let isSettingsOpen = false;
@@ -292,7 +292,7 @@
             class="flex h-8 w-8 items-center justify-center bg-white dark:bg-[#383838] rounded-xl border border-gray-200 dark:border-[#444]"
             onclick={openSettings}
         >
-            <Icons
+            <Icon
                 name="settings"
                 class="h-5 w-5 text-[#21272C] dark:text-[#FDFDFD]"
             />

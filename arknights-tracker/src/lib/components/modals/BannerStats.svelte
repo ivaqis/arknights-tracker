@@ -1,11 +1,11 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { characters } from "$lib/data/characters";
-    import { weapons } from "$lib/data/weapons";
+    import { t } from "$lib/i18n.js";
+    import { characters } from "$lib/data/characters.js";
+    import { weapons } from "$lib/data/weapons.js";
     
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let pulls = [];
     export let banner = null;
@@ -160,7 +160,7 @@
                     >{$t("page.banner.spent")}</span
                 >
                 <div class="flex items-center gap-1.5">
-                    <Images id="oroberyl" variant="currency" size={18} />
+                    <Image id="oroberyl" variant="currency" size={18} />
                     <span
                         class="font-bold text-gray-800 dark:text-[#E0E0E0] font-nums text-lg leading-none"
                         >{spent}</span
@@ -272,7 +272,7 @@
                                         ? `border-[#ff6600] ${getWeaponBg(6)}`
                                         : 'border-[#ff6600] bg-gray-100'}"
                                 >
-                                    <Images
+                                    <Image
                                         id={icon.id}
                                         variant={icon.isWeapon
                                             ? "weapon-icon"
@@ -312,7 +312,7 @@
 
                         {#if icon.isGuaranteed}
                              <div class="absolute -top-0.5 -right-0.5 z-[50] pointer-events-auto">
-                                <Tooltip textKey="{`${$t("status.guaranteed")} ${icon.isWeapon ? "80" : "120"}`}">
+                                <Tooltip textKey={`${$t("status.guaranteed")} ${icon.isWeapon ? "80" : "120"}`}>
                                     <Icon
                                         name="guaranteed"
                                         class="w-5 h-5 stroke-[1.1px] text-[#D0926E] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)] hover:scale-110 transition-transform"

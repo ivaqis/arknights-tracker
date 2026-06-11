@@ -17,11 +17,11 @@
 
     import Select from "$lib/components/Select.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Button from "$lib/components/Button.svelte";
-    import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
-    import SyncModal from "$lib/components/SyncModal.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import SyncModal from "$lib/components/modals/SyncModal.svelte";
 
     let isEmailVisible = false;
     let emailTimer;

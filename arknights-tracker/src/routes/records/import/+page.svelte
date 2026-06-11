@@ -14,8 +14,8 @@
     import Checkbox from "$lib/components/Checkbox.svelte";
     import PowershellBlock from "$lib/components/PowershellBlock.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
 
     let platformTab = "pc-web";
     let urlInput = "";

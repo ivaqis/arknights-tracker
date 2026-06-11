@@ -1,20 +1,20 @@
 <script>
     import { createEventDispatcher, onMount } from "svelte";
     import { replaceState } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls";
-    import { characters } from "$lib/data/characters";
-    import { accountStore } from "$lib/stores/accounts";
-    import { weapons } from "$lib/data/weapons";
-    import { banners } from "$lib/data/banners";
+    import { pullData } from "$lib/stores/pulls.js";
+    import { characters } from "$lib/data/characters.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { weapons } from "$lib/data/weapons.js";
+    import { banners } from "$lib/data/banners.js";
     import { browser } from "$app/environment";
-    import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale";
+    import { t } from "$lib/i18n.js";
+    import { currentLocale } from "$lib/stores/locale.js";
 
-    import Icon from "$lib/components/Icons.svelte";
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import BannerStats from "$lib/components/BannerStats.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import BannerStats from "$lib/components/modals/BannerStats.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
 
     export const bannerId = undefined;
@@ -438,7 +438,7 @@
             </button>
 
             <div class="aspect-[32/9] w-full relative bg-gray-100">
-                <Images
+                <Image
                     item={banner}
                     interactive={true}
                     variant={imageVariant}

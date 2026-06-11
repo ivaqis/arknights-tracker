@@ -1,8 +1,8 @@
 <script>
 
     import { Building } from "$lib/classes/buildings/Building.js";
-    import Icons from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
     import { t } from "$lib/i18n";
 
     export let formulaType;
@@ -43,7 +43,7 @@
     {#if buildingIconId}
 
         <div class="flex-shrink-0 flex justify-center items-center h-8 w-8">
-            <Images
+            <Image
                 id={buildingIconId}
                 variant="building-icon"
                 className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
@@ -53,7 +53,7 @@
     {:else if svgIconName}
 
         <div class="flex-shrink-0 flex justify-center items-center h-8 w-8">
-            <Icons
+            <Icon
                 name={svgIconName}
                 class="text-[#FDFDFD] dark:text-[#FDFDFD] h-full w-full"
             />

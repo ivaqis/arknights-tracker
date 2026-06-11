@@ -3,7 +3,7 @@
   import { banners } from "$lib/data/banners";
   import { getWeaponCategory } from "$lib/utils/importUtils";
 
-  import Icon from "$lib/components/Icons.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 
   export let rawPulls = [];
   export let bannerType = "";

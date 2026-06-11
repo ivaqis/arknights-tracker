@@ -1,9 +1,9 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { factoryEvents } from "$lib/data/events/factoryEvents.js";
     import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     export let mode = "operators"; // "operators" | "weapons" | "equipment" | "enemies" | "items"
     export let sortField = "rarity";

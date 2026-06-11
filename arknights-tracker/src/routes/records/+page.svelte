@@ -10,12 +10,12 @@
   import { currentLocale } from "$lib/stores/locale";
   import { flip } from "svelte/animate";
 
-  import BannerCard from "$lib/components/BannerCard.svelte";
-  import SettingsModal from "$lib/components/SettingsModal.svelte";
+  import BannerCard from "$lib/components/records/BannerCard.svelte";
+  import SettingsModal from "$lib/components/records/SettingsModal.svelte";
   import Button from "$lib/components/Button.svelte";
-  import RatingCard from "$lib/components/RatingCard.svelte";
-  import Icon from "$lib/components/Icons.svelte";
-  import Images from "$lib/components/Images.svelte";
+  import RatingCard from "$lib/components/records/RatingCard.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Image from "$lib/components/Image.svelte";
   import {
     recordsExcludedBannerTypes,
     recordsExcludedBanners,
@@ -593,13 +593,13 @@
                   <div
                     class="text-3xl font-black text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-2 font-nums"
                   >
-                    <Images id="oroberyl" variant="currency" size={32} />
+                    <Image id="oroberyl" variant="currency" size={32} />
                     {(billablePulls * 500).toLocaleString("ru-RU")}
                   </div>
                   <div
                     class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-2 font-medium flex items-center"
                   >
-                    ≈ <Images id="origeometry" variant="currency" size={20} />
+                    ≈ <Image id="origeometry" variant="currency" size={20} />
                     {((charPullsOnly * 500) / 75).toFixed(0)}
                     {$t("page.banner.origeometry")}
                   </div>

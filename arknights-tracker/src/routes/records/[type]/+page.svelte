@@ -14,11 +14,11 @@
     import { getWeaponCategory } from "$lib/utils/importUtils";
 
     import Button from "$lib/components/Button.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
-    import AnalyticsCharts from "$lib/components/AnalyticsCharts.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;
@@ -662,7 +662,7 @@
                                     {$t("page.banner.spent")}
                                 </span>
                                 <span class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-0.5 font-nums text-xl">
-                                    <Images
+                                    <Image
                                         id="oroberyl"
                                         variant="currency"
                                         size={25}
@@ -1011,7 +1011,7 @@
                                                                 row.rarity,
                                                             )}"
                                                         >
-                                                            <Images
+                                                            <Image
                                                                 id={itemId}
                                                                 variant={isWeapon
                                                                     ? "weapon-icon"

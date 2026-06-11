@@ -4,10 +4,10 @@
     import { currentLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
 
-    import Icon from "$lib/components/Icons.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -157,7 +157,7 @@
                     <div class="pointer-events-none absolute inset-0 z-0 pointer-events-none card-gradient" style="--rarity-color: {rarityColor};"></div>
 
                     <div class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
-                        <Images {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
+                        <Image {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
                     </div>
 
                     <div class="absolute top-4 right-4 z-20 flex flex-col gap-2">

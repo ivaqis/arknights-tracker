@@ -1,12 +1,12 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore";
-    import { accountStore } from "$lib/stores/accounts";
-    import { pullData } from "$lib/stores/pulls";
+    import { t } from "$lib/i18n.js";
+    import { syncStatus, cloudDataBuffer, applyCloudData, uploadLocalData } from "$lib/stores/cloudStore.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { pullData } from "$lib/stores/pulls.js";
 
-    import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     let showClearModal = false;
 

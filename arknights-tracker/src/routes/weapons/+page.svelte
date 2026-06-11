@@ -6,9 +6,9 @@
     import { accountStore } from "$lib/stores/accounts";
     import { weaponFilters, weaponSearch, weaponManual, weaponOwnedOnly } from '$lib/stores/filterStore';
 
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     $: filters = $weaponFilters;
     $: searchQuery = $weaponSearch;

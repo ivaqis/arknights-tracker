@@ -1,8 +1,8 @@
 <script>
-    import { currentLocale, languages, isSupported } from "$lib/stores/locale";
+    import { currentLocale, languages, isSupported } from "$lib/stores/locale.js";
     import { slide } from "svelte/transition";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     let isOpen = false;
     let selectContainer;

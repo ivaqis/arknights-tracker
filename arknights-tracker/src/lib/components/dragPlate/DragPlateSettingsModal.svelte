@@ -1,6 +1,6 @@
 <script>
     import Button from "$lib/components/Button.svelte";
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
 
     export let isOpen;

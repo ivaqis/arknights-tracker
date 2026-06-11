@@ -12,11 +12,11 @@
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     let showPotHint = false;
 
@@ -565,7 +565,7 @@
                 <div
                     class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
                 >
-                    <Images
+                    <Image
                         {id}
                         variant="weapon-icon"
                         interactive={true}
@@ -1084,7 +1084,7 @@
                                 (e.key === "Enter" || e.key === " ") &&
                                 (selectedImageVariant = "weapon-icon")}
                         >
-                            <Images
+                            <Image
                                 {id}
                                 variant="weapon-icon"
                                 interactive={true}
@@ -1166,7 +1166,7 @@
                             <div
                                 class="absolute inset-4 flex items-center justify-center [&_img]:max-w-full [&_img]:max-h-full [&_img]:object-contain [&_img]:w-auto [&_img]:h-auto"
                             >
-                                <Images
+                                <Image
                                     {id}
                                     interactive={true}
                                     variant="weapons-big"
@@ -1359,7 +1359,7 @@
             on:click|stopPropagation
             on:keydown|stopPropagation
         >
-            <Images
+            <Image
                 {id}
                 variant={selectedImageVariant}
                 interactive={true}

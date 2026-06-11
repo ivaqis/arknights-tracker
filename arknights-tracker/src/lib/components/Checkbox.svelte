@@ -11,7 +11,7 @@
   export let checkboxClass = ""; // Override classes for the checkbox input itself
   export let checkmarkClass = ""; // Override classes for the checkmark SVG
 
-  import Icon from "$lib/components/Icons.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 
   const dispatch = createEventDispatcher();
 

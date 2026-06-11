@@ -1,10 +1,10 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     
-    import Icon from "$lib/components/Icons.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let charId = "";
     export let skillKey = "";
@@ -292,7 +292,7 @@
                 <div
                     class="relative z-10 w-[85%] h-[85%] flex items-center justify-center"
                 >
-                    <Images
+                    <Image
                         id={skillImageId}
                         interactive={true}
                         variant="skill-icon"

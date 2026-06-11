@@ -10,10 +10,10 @@
   import { progression } from "$lib/data/items/progression";
   import { fade } from "svelte/transition";
 
-  import Icon from "$lib/components/Icons.svelte";
-  import Images from "$lib/components/Images.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Image from "$lib/components/Image.svelte";
   import Button from "$lib/components/Button.svelte";
-  import BannerModal from "$lib/components/BannerModal.svelte";
+  import BannerModal from "$lib/components/modals/BannerModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
 
   let now = new Date();
@@ -310,7 +310,7 @@
                 in:fade={{ duration: 200 }}
                 out:fade={{ duration: 200 }}
               >
-                <Images
+                <Image
                   id={activeBanners[currentBannerIndex].icon}
                   interactive={true}
                   variant="banner-icon"
@@ -410,7 +410,7 @@
                   (selectedBanner = event)}
               >
                 <div class="absolute top-0 right-0 bottom-0 w-[200px] z-0">
-                  <Images
+                  <Image
                     id={event.icon || event.id}
                     variant="event-icon"
                     className="w-full h-full  object-cover"
@@ -569,7 +569,7 @@
                         )}"
                       >
                         <span class="font-bold mr-1">{reward.count}</span>
-                        <Images
+                        <Image
                           id={reward.id}
                           variant="item"
                           size={16}
@@ -670,7 +670,7 @@
           class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center gap-2">
-            <Images
+            <Image
               id="origeometry"
               variant="item"
               size={32}

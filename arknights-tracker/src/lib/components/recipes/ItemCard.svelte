@@ -1,6 +1,6 @@
 <script>
-    import Images from "$lib/components/Images.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     import { getRarityColor } from "$lib/utils/rarityUtils.js";
     import { FullBottle } from "$lib/classes/items/FullBottle.js";
@@ -39,7 +39,7 @@
         <div
             class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]"
         >
-            <Images
+            <Image
                 id={item.iconId}
                 interactive={true}
                 variant="item-icon"
@@ -53,7 +53,7 @@
                 class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]"
             >
                 <div class="w-2/3 h-2/3">
-                    <Images
+                    <Image
                         id={liquid.iconId}
                         interactive={true}
                         variant="item-icon"
@@ -81,7 +81,7 @@
 
     {#if isEventItem}
         <div class="absolute -top-2 -right-2 w-6 h-6 z-[35]">
-            <Icons name="eventStar"/>
+            <Icon name="eventStar"/>
         </div>
     {/if}
 

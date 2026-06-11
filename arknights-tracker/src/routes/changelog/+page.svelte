@@ -10,11 +10,11 @@
     import { rawEvents } from "$lib/data/timeline.js";
 
     import Select from "$lib/components/Select.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
 
     $: versionOptions = changelogData
         .map((v) => ({
@@ -210,7 +210,7 @@
                                     (e.key === "Enter" || e.key === " ") &&
                                     (bannerForModal = banner)}
                             >
-                                <Images
+                                <Image
                                     id={banner.id}
                                     interactive={true}
                                     variant={banner.type === "web" ||
@@ -398,7 +398,7 @@
                                                     e.key === " ") &&
                                                 (bannerForModal = ev)}
                                         >
-                                            <Images
+                                            <Image
                                                 id={ev.icon}
                                                 interactive={true}
                                                 variant="event-icon"

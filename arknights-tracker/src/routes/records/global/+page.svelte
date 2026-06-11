@@ -12,13 +12,13 @@
     import { API_BASE } from "$lib/api";
 
     import Select from "$lib/components/Select.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
     import Button from "$lib/components/Button.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
 
     const initialStats = {
         totalUsers: 0,
@@ -635,7 +635,7 @@
                             <span
                                 class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-1.5 font-nums text-lg"
                             >
-                                <Images
+                                <Image
                                     id="oroberyl"
                                     variant="currency"
                                     size={20}
@@ -762,7 +762,7 @@
                             class="absolute inset-0"
                             in:fade={{ duration: 300 }}
                         >
-                            <Images
+                            <Image
                                 id={currentBanner.icon || currentBanner.id}
                                 variant="banner-icon"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -1164,7 +1164,7 @@
                                                 <div
                                                     class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#D84C38] shrink-0"
                                                 >
-                                                    <Images
+                                                    <Image
                                                         id={resolved.id}
                                                         variant={resolved.isWeapon
                                                             ? "weapon-icon"
@@ -1272,7 +1272,7 @@
                                                 <div
                                                     class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#E3BC55] shrink-0"
                                                 >
-                                                    <Images
+                                                    <Image
                                                         id={resolved.id}
                                                         variant={resolved.isWeapon
                                                             ? "weapon-icon"

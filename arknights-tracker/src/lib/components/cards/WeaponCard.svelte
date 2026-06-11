@@ -1,15 +1,15 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { goto } from "$app/navigation";
-    import { pullData } from "$lib/stores/pulls";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { disableDarkening } from "$lib/stores/settings";
+    import { pullData } from "$lib/stores/pulls.js";
+    import { manualPotentials } from "$lib/stores/potentials.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { disableDarkening } from "$lib/stores/settings.js";
     import { changelogData } from "$lib/data/versions.js";
 
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
 
     export let weapon = {};
     export let variant = "default"; // "default" | "small"
@@ -210,7 +210,7 @@
                     ? ''
                     : 'bottom-[6px]'}"
             >
-                <Images
+                <Image
                     id={weapon.id}
                     interactive={true}
                     variant={imageVariant}

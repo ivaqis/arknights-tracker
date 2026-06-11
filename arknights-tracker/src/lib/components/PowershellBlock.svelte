@@ -2,7 +2,7 @@
   import { t } from "$lib/i18n";
   import { fade } from 'svelte/transition';
 
-  import Icon from "./Icons.svelte";
+  import Icon from "$lib/components/Icon.svelte";
 
   export let script = "";
   export let language = "PowerShell";

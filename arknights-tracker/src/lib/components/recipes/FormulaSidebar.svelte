@@ -21,7 +21,7 @@
     import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
     import Formula from "$lib/components/recipes/Formula.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import SidebarSectorLabel from "$lib/components/recipes/SidebarSectorLabel.svelte";
     import SidebarCraftSourceLabel from "$lib/components/recipes/SidebarCraftSourceLabel.svelte";
 

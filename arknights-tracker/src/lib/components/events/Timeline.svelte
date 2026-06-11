@@ -1,14 +1,14 @@
 <script>
-    import { t } from "$lib/i18n";
+    import { t } from "$lib/i18n.js";
     import { onMount, onDestroy, tick } from "svelte";
     import { browser } from "$app/environment";
     import { rawEvents } from "$lib/data/timeline.js";
     import { banners } from "$lib/data/banners.js";
-    import { currentLocale } from "$lib/stores/locale";
+    import { currentLocale } from "$lib/stores/locale.js";
 
-    import Icon from "$lib/components/Icons.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     export let lastVersion = null;
     export let currentVersion = null;
@@ -792,7 +792,7 @@
                                 <div
                                     class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform"
                                 >
-                                    <Images
+                                    <Image
                                         item={event}
                                         variant={getVariant(event)}
                                         className="w-full h-full"
