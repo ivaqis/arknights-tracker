@@ -6,6 +6,19 @@
     <link rel="apple-touch-icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="%sveltekit.assets%/config.js"></script>
+
+    <script>
+        if (window.location.hostname === 'www.goyfield.moe') {
+            fetch('https://cloudflare.com/cdn-cgi/trace')
+                .then(res => res.text())
+                .then(text => {
+                    if (text.includes('loc=RU')) {
+                        window.location.replace('https://goyfield.moe' + window.location.pathname + window.location.search);
+                    }
+                })
+                .catch(() => {});
+        }
+    </script>
     
     <script>
         var isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
