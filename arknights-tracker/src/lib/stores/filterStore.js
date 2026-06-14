@@ -173,6 +173,7 @@ export function getDefaultItemSortParams() {
                 "plant_sp_2",
                 "plant_sp_3",
                 "plant_sp_4",
+                "nonMaterial"
             ],
             rarity: [5, 4, 3, 2, 1],
             events: ["nonEvent", "ev4-v1.2"],

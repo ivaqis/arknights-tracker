@@ -134,7 +134,7 @@
                 >
 
                     <span class="text-xs capitalize font-bold pointer-events-none">
-                        {$t(FactoryEvent.getEvent(filterName ?? "")?.title ?? "")}
+                        {$t(FactoryEvent.getEvent(filterName)?.title ?? "sort.events.nonEvent")}
                     </span>
 
                 </button>

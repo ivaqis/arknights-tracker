@@ -1,5 +1,4 @@
 <script>
-    import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
     import { Item } from "$lib/classes/items/Item.js";
     import { ItemComparator } from "$lib/classes/items/ItemComparator.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
@@ -30,6 +29,8 @@
     const itemComparator = new ItemComparator();
     itemComparator.localeComparator.getLocaleFunc = (item) => $t(`itemNames.${item.id}`);
 
+    let sortDirection = "asc";
+
     $: filteredItems = (() => {
         itemComparator.setComparatorsOrder(sortParams.sortFieldOrder);
         itemComparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
@@ -38,8 +39,29 @@
         itemComparator.materialComparator.setValueOrder(sortParams.sortFieldParams.itemMaterials);
         itemComparator.localeComparator.isReversed = sortParams.sortFieldParams.localeName !== "a-z";
 
-        return itemComparator.getSortedList(allItems);
+        let items = [...allItems].filter((item) => {
+            let rarity = itemCheck(selectedFilters.rarity, item.rarity);
+            let group = itemCheck(selectedFilters.itemGroups, item.groupId);
+            let type = itemCheck(selectedFilters.itemTypes, item.type);
+            let material = itemCheck(selectedFilters.itemMaterials, item.material ?? "nonMaterial");
+            let event = itemCheck(selectedFilters.events, item.getEventIds()?.[0] ?? "nonEvent");
+            let query = !searchQuery
+                || item.id.includes(searchQuery)
+                || $t(`itemNames.${item.id}`).includes(searchQuery);
+
+            return rarity && group && type && material && event && query;
+        });
+
+        return itemComparator.getSortedList(items, sortDirection === "desc");
     })();
+
+    function itemCheck(filterParamsSet, value) {
+        if (!filterParamsSet || filterParamsSet.size === 0) {
+            return true;
+        }
+
+        return filterParamsSet.has(value);
+    }
 
     let selectedItemId = "";
     let isBottomSheetOpen = false;
@@ -141,9 +163,14 @@
 <!--            />-->
 
             <DataToolbar
+                showSortDropdownButton={true}
+                showSortDirectionButton={true}
                 showFilterDropdownButton={true}
                 showSearchInput={true}
                 showGroupButton={true}
+                bind:isGrouped={$itemGroupMode}
+                bind:searchString={$itemSearch}
+                bind:sortDirection={sortDirection}
             >
 
                 <RecipesFilterDropdown

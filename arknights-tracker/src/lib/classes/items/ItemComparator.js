@@ -15,6 +15,7 @@ export class ItemComparator {
     _groupComparator;
     _typeComparator;
     _materialComparator;
+    _eventComparator;
     _localeComparator;
 
     constructor({
@@ -22,12 +23,14 @@ export class ItemComparator {
                     groupComparator = new FieldComparator((item) => item.groupId),
                     typeComparator = new FieldComparator((item) => item.type),
                     materialComparator = new FieldComparator(ItemComparator._getMaterial),
+                    eventComparator = new FieldComparator((item) => item.getEventIds()?.[0] ?? ""),
                     localeComparator = new LocaleComparator((item) => item.id)
     } = {}) {
         this._rarityComparator = rarityComparator;
         this._groupComparator = groupComparator;
         this._typeComparator = typeComparator;
         this._materialComparator = materialComparator;
+        this._eventComparator = eventComparator;
         this._localeComparator = localeComparator;
     }
 
@@ -57,6 +60,13 @@ export class ItemComparator {
      */
     get materialComparator() {
         return this._materialComparator;
+    }
+
+    /**
+     * @returns {FieldComparator}
+     */
+    get eventComparator() {
+        return this._eventComparator;
     }
 
     /**
