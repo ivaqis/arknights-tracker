@@ -4,12 +4,19 @@
     import BottomSheet from "$lib/components/BottomSheet.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import RecipesFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/RecipesFilterDropdown.svelte";
+    import RecipesSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/RecipesSortDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
     import ItemCard from "$lib/components/recipes/ItemCard.svelte";
     import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
     import { t } from "$lib/i18n";
-    import { itemFilters, itemGroupMode, itemSearch, itemSortParams } from "$lib/stores/filterStore.js";
+    import {
+        getDefaultItemSortParams,
+        itemFilters,
+        itemGroupMode,
+        itemSearch,
+        itemSortParams
+    } from "$lib/stores/filterStore.js";
 
     $: selectedFilters = $itemFilters;
     $: searchQuery = $itemSearch;
@@ -62,6 +69,14 @@
 
         return filterParamsSet.has(value);
     }
+
+    function resetSortParams() {
+        $itemSortParams = getDefaultItemSortParams();
+    }
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters)
+        .some((set) => set.size > 0);
 
     let selectedItemId = "";
     let isBottomSheetOpen = false;
@@ -168,10 +183,17 @@
                 showFilterDropdownButton={true}
                 showSearchInput={true}
                 showGroupButton={true}
+                isFilterActive={isFilterActive}
                 bind:isGrouped={$itemGroupMode}
                 bind:searchString={$itemSearch}
                 bind:sortDirection={sortDirection}
             >
+
+                <RecipesSortDropdown
+                    slot="sortDropdown"
+                    onSortReset={resetSortParams}
+                    bind:sortParams={$itemSortParams}
+                />
 
                 <RecipesFilterDropdown
                     slot="filterDropdown"
