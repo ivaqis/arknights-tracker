@@ -169,6 +169,6 @@ export class ItemComparator {
             return fullBottle.emptyBottleItem.material;
         }
 
-        return item.material;
+        return item.material ?? "nonMaterial";
     }
 }
