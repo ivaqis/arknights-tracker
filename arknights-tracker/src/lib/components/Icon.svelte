@@ -1209,7 +1209,7 @@
         <path
             fill-rule="evenodd"
             clip-rule="evenodd"
-            d="M17 4L14 0.00307703V12.9969V16.9969H17V12.9969V7.99692H20L17 4Z"
+            d="M17 0H14V10V17L20 10H17V0Z"
             fill="currentColor"
         />
     </svg>

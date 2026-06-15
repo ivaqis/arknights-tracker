@@ -1,7 +1,6 @@
 // src/lib/stores/filterStore.js
 
 import { writable } from 'svelte/store';
-import {factoryEvents} from "$lib/data/events/factoryEvents.js";
 
 function createPersistentStore(key, startValue) {
     const isBrowser = typeof window !== 'undefined';
@@ -25,42 +24,6 @@ const attr2Skills = [
 const attr3Skills = [
     "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
     "combo", "crit", "force", "heal", "keyword", "phyabn", "smash"
-];
-
-const itemSubGroups = [
-    "facility_battle",
-    "facility_crafter",
-    "facility_miner",
-    "facility_other",
-    "facility_powerStation",
-    "facility_pump",
-    "facility_soil",
-    "gatherable_drop",
-    "gatherable_muck",
-    "gatherable_plant",
-    "nature_flowerPlant",
-    "nature_grassPlant",
-    "nature_liquid",
-    "nature_ore",
-    "nature_soilPlant",
-    "nature_wood",
-    "product_activityXiranite",
-    "product_amethyst",
-    "product_battery",
-    "product_carbon",
-    "product_component",
-    "product_copper",
-    "product_fullBottle",
-    "product_iron",
-    "product_liquid",
-    "product_muck",
-    "product_originium",
-    "product_powder",
-    "product_xiranite",
-    "usable_bomb",
-    "usable_bottledProdFood",
-    "usable_other",
-    "usable_powder"
 ];
 
 const initialEquipmentFilters = {
@@ -96,17 +59,94 @@ const initialEnemiesFilters = {
     rarity: [6, 5, 4, 3]
 };
 
-const initialItemFilters = {
-    rarity: [5, 4, 3, 2, 1],
-    itemSubGroups: itemSubGroups,
-    factoryEvents: ["nonEvent", ...Object.keys(factoryEvents)]
-};
-
 const initialManualMode = {
     rarity: false, partType: false, pack: false, stats: false,
     class: false, element: false, weapon: false, type: false, attr1: false, attr2: false, attr3: false,
     itemSubGroups: false
 };
+
+export function getDefaultItemSortParams() {
+    return {
+        sortFieldOrder: [
+            "itemGroups",
+            "itemTypes",
+            "events",
+            "rarity",
+            "itemMaterials",
+            "localeName"
+        ],
+        sortFieldParams: {
+            itemGroups: ["nature", "product", "usable", "gatherable", "facility"],
+            itemTypes: [
+                "ore",
+                "liquid",
+                "plant",
+                "plant_seed",
+                "plant_special",
+                "wood",
+                "ingot",
+                "powder",
+                "compressed_powder",
+                "part",
+                "component",
+                "battery",
+                "bottle",
+                "hulu",
+                "tool",
+                "muck",
+                "full_bottle",
+                "bomb",
+                "hp_recovery",
+                "food",
+                "special_food",
+                "insect",
+                "drop",
+                "miner",
+                "pump",
+                "crafter",
+                "power",
+                "soil",
+                "battle",
+                "other"
+            ],
+            itemMaterials: [
+                "water",
+                "acid",
+                "sewage",
+                "originium",
+                "amethyst",
+                "iron",
+                "originium_enr",
+                "amethyst_enr",
+                "iron_enr",
+                "xiranite",
+                "xiranite_enr",
+                "copper",
+                "copper_enr",
+                "carbon",
+                "carbon_enr",
+                "plant_flower_1",
+                "plant_flower_2",
+                "plant_flower_3",
+                "plant_grass_1",
+                "plant_grass_2",
+                "plant_flower_spc_1",
+                "plant_flower_spc_2",
+                "plant_grass_spc_1",
+                "plant_grass_spc_2",
+                "plant_bbflower_1",
+                "plant_sp_1",
+                "plant_sp_2",
+                "plant_sp_3",
+                "plant_sp_4",
+                "nonMaterial"
+            ],
+            rarity: [1, 2, 3, 4, 5],
+            events: ["nonEvent", "ev4-v1.2"],
+            localeName: "a-z"
+        }
+    };
+}
 
 export const equipmentFilters = writable({ ...initialEquipmentFilters });
 export const equipmentManual = writable({ ...initialManualMode });
@@ -127,9 +167,9 @@ export const enemyFilters = writable({});
 export const enemySearch = writable("");
 export const enemyGroupMode = createPersistentStore('enemyGroupMode', true);
 
-export const itemFilters = writable({ ...initialItemFilters });
-export const itemManual = writable({ ...initialManualMode });
+export const itemFilters = writable({});
 export const itemSearch = writable("");
+export const itemSortParams = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
 
 export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
@@ -139,4 +179,4 @@ export const recordsShowRating = createPersistentStore('recordsShowRating', true
 export const recordsShowTotalCost = createPersistentStore('recordsShowTotalCost', true);
 export const recordsMaxCols = createPersistentStore('recordsMaxCols', 3);
 export const recordsEnableDragDrop = createPersistentStore('recordsEnableDragDrop', false);
-export const recordsCardsOrder = createPersistentStore('recordsCardsOrder', []);
+export const recordsCardsOrder = createPersistentStore('recordsCardsOrder', []);

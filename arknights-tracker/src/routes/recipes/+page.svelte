@@ -1,139 +1,136 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { itemFilters, itemGroupMode, itemManual, itemSearch } from "$lib/stores/filterStore.js";
-    import { Item } from "$lib/classes/items/Item.js";
-    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
     import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
-
-    import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
-    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
-    import ItemCard from "$lib/components/recipes/ItemCard.svelte";
+    import { Item } from "$lib/classes/items/Item.js";
+    import { ItemComparator } from "$lib/classes/items/ItemComparator.js";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import RecipesFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/RecipesFilterDropdown.svelte";
+    import RecipesSortDropdown from "$lib/components/dataToolbarV2/sortDropdowns/RecipesSortDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import FormulaSidebar from "$lib/components/recipes/FormulaSidebar.svelte";
+    import ItemCard from "$lib/components/recipes/ItemCard.svelte";
+    import { craftableItemsList } from "$lib/data/crafts/craftableItemsList.js";
+    import { t } from "$lib/i18n";
+    import {
+        getDefaultItemSortParams,
+        itemFilters,
+        itemGroupMode,
+        itemSearch,
+        itemSortParams
+    } from "$lib/stores/filterStore.js";
 
-    $: filters = $itemFilters;
+    $: selectedFilters = $itemFilters;
     $: searchQuery = $itemSearch;
     $: isGrouped = $itemGroupMode || false;
+    $: sortParams = $itemSortParams;
+
+    $: allFilters = {
+        rarity: sortParams.sortFieldParams.rarity,
+        events: sortParams.sortFieldParams.events,
+        itemGroups: sortParams.sortFieldParams.itemGroups,
+        itemTypes: sortParams.sortFieldParams.itemTypes,
+        itemMaterials: sortParams.sortFieldParams.itemMaterials
+    };
 
     const allItems = craftableItemsList.map((itemId) => Item.getItem(itemId));
 
-    let sortField = "itemGroup";
-    let sortDirection = "desc";
+    const itemComparator = new ItemComparator();
+    itemComparator.localeComparator.getLocaleFunc = (item) => $t(`itemNames.${item.id}`);
+
+    let sortDirection = "asc";
 
     $: filteredItems = (() => {
-        const baseFiltered = [...allItems].filter((item) => {
-            const query = searchQuery.toLowerCase().trim();
-            const localizedName = ($t(`itemNames.${item.id}`) || "").toLowerCase();
-            const idStr = (item.id || "").toLowerCase();
+        itemComparator.setComparatorsOrder(sortParams.sortFieldOrder);
+        itemComparator.rarityComparator.setValueOrder(sortParams.sortFieldParams.rarity);
+        itemComparator.groupComparator.setValueOrder(sortParams.sortFieldParams.itemGroups);
+        itemComparator.typeComparator.setValueOrder(sortParams.sortFieldParams.itemTypes);
+        itemComparator.materialComparator.setValueOrder(sortParams.sortFieldParams.itemMaterials);
+        itemComparator.eventComparator.setValueOrder(sortParams.sortFieldParams.events);
+        itemComparator.localeComparator.isReversed = sortParams.sortFieldParams.localeName !== "a-z";
 
-            const matchesSearch = !query || localizedName.includes(query) || idStr.includes(query);
+        let items = [...allItems].filter((item) => {
+            let rarity = itemCheck(selectedFilters.rarity, item.rarity);
+            let group = itemCheck(selectedFilters.itemGroups, item.groupId);
+            let type = itemCheck(selectedFilters.itemTypes, item.type);
+            let material = itemCheck(selectedFilters.itemMaterials, item.material ?? "nonMaterial");
+            let event = itemCheck(selectedFilters.events, item.getEventIds()?.[0] ?? "nonEvent");
+            let query = !searchQuery
+                || item.id.includes(searchQuery)
+                || $t(`itemNames.${item.id}`).includes(searchQuery);
 
-            if (!matchesSearch) return false;
-
-            const matchesRarity =
-                filters.rarity.length === 0
-                || filters.rarity.includes(item.rarity);
-
-
-            let matchesGroup =
-                filters.itemSubGroups.length === 0
-                || filters.itemSubGroups.includes(item.subGroupId);
-
-            let matchesEvent = filters.factoryEvents.length === 0
-                || filters.factoryEvents.includes("nonEvent")
-                || filters.factoryEvents
-                    .some((eventId) => FactoryEvent.getFactoryEvent(eventId).containsEventItemId(item.id));
-
-            return matchesRarity && matchesGroup && matchesEvent;
+            return rarity && group && type && material && event && query;
         });
 
-        const sortLogic = (itemA, itemB) => {
-            let diff = 0;
-            let aWeight = 0;
-            let bWeight = 0;
-
-            if (sortField === "itemGroup") {
-                aWeight = itemGroupWeight[itemA.groupId] ?? 0;
-                bWeight = itemGroupWeight[itemB.groupId] ?? 0;
-
-                if (aWeight === bWeight) {
-                    aWeight = itemSubGroupWeight[itemA.subGroupId] ?? -100;
-                    bWeight = itemSubGroupWeight[itemB.subGroupId] ?? -100;
-                }
-
-            } else if (sortField === "rarity") {
-                aWeight = itemA.rarity;
-                bWeight = itemB.rarity;
-            }
-
-            diff = bWeight - aWeight;
-
-            if (diff !== 0) {
-                return sortDirection === "desc" ? diff : -diff;
-            }
-
-            aWeight = itemA.rarity;
-            bWeight = itemB.rarity;
-
-            diff = aWeight - bWeight;
-
-            if (diff !== 0) {
-                return diff;
-            }
-
-            return itemA.id.localeCompare(itemB.id);
-        };
-
-        return baseFiltered.sort(sortLogic);
+        return itemComparator.getSortedList(items, sortDirection === "desc");
     })();
 
-    const itemGroupWeight = {
-        "nature": 5,
-        "gatherable": 2,
-        "product": 4,
-        "usable": 3,
-        "facility": 1
-    };
+    function itemCheck(filterParamsSet, value) {
+        if (!filterParamsSet || filterParamsSet.size === 0) {
+            return true;
+        }
 
-    const itemSubGroupWeight = {
-        "facility_battle": 5,
-        "facility_crafter": 8,
-        "facility_miner": 10,
-        "facility_other": -10,
-        "facility_powerStation": 7,
-        "facility_pump": 9,
-        "facility_soil": 6,
+        return filterParamsSet.has(value);
+    }
 
-        "gatherable_drop": 8,
-        "gatherable_muck": 9,
-        "gatherable_plant": 10,
+    function resetSortParams() {
+        $itemSortParams = getDefaultItemSortParams();
+    }
 
-        "nature_flowerPlant": 8,
-        "nature_grassPlant": 7,
-        "nature_liquid": 9,
-        "nature_ore": 10,
-        "nature_soilPlant": 6,
-        "nature_wood": 5,
+    function checkSortParams(currentSortParams, defaultSortParams) {
+        if (!currentSortParams || !currentSortParams.sortFieldOrder || !currentSortParams.sortFieldParams) {
+            return false;
+        }
 
-        "product_activityXiranite": 3,
-        "product_amethyst": 9,
-        "product_battery": 1,
-        "product_carbon": 5,
-        "product_component": 2,
-        "product_copper": 7,
-        "product_fullBottle": -10,
-        "product_iron": 8,
-        "product_liquid": 11,
-        "product_muck": 0,
-        "product_originium": 10,
-        "product_powder": 6,
-        "product_xiranite": 4,
+        let fieldOrder = checkList(currentSortParams.sortFieldOrder, defaultSortParams.sortFieldOrder);
 
-        "usable_bomb": 8,
-        "usable_bottledProdFood": 9,
-        "usable_other": -10,
-        "usable_powder": 10
-    };
+        if (!fieldOrder) {
+            return false;
+        }
+
+        let { localeName, ...rest } = defaultSortParams.sortFieldParams;
+
+        for (let key of Object.keys(rest)) {
+            let check = checkList(currentSortParams.sortFieldParams[key], defaultSortParams.sortFieldParams[key]);
+
+            if (!check) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function checkList(currentList, defaultList) {
+        if (!currentList) {
+            return false;
+        }
+
+        let set = new Set(defaultList);
+
+        for (let item of currentList) {
+            let isDeleted = set.delete(item);
+
+            if (!isDeleted) {
+                return false;
+            }
+        }
+
+        return set.size === 0;
+    }
+
+    let defaultSortParams = getDefaultItemSortParams();
+    $: {
+        let isSortParamsCorrect = $itemSortParams ? checkSortParams($itemSortParams, defaultSortParams) : true;
+
+        if (!isSortParamsCorrect) {
+            console.log("Incorrect item sort params");
+            $itemSortParams = getDefaultItemSortParams();
+        }
+    }
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters)
+        .some((set) => set.size > 0);
 
     let selectedItemId = "";
     let isBottomSheetOpen = false;
@@ -153,18 +150,46 @@
         return selectedItemId === itemId;
     };
 
+    $: sortFieldName = (() => {
+        let sortFieldName = sortParams.sortFieldOrder[0];
+        if (sortFieldName === "localeName") {
+            sortFieldName = sortParams.sortFieldOrder[1];
+        }
+
+        return sortFieldName;
+    })();
+
+    $: groupFieldName = (() => {
+        switch (sortFieldName) {
+            case "itemGroups": return "groupId";
+            case "itemTypes": return "type";
+            case "itemMaterials": return "material";
+            case "rarity": return "rarity";
+            case "events": return "events";
+        }
+
+        return null;
+    })();
+
     $: groupedItems = filteredItems.reduce((groups, item) => {
-        let groupId = item.groupId;
+        let groupId = groupFieldName === "events"
+            ? (item.getEventIds()?.[0] ?? "nonEvent")
+            : item[groupFieldName];
 
-        if (!groups[groupId]) groups[groupId] = [];
+        groupId = groupId.toString();
 
-        groups[groupId].push(item);
+        if (!groups.groupLists[groupId]) {
+            groups.order.push(groupId);
+            groups.groupLists[groupId] = [];
+        }
+
+        groups.groupLists[groupId].push(item);
 
         return groups;
-    }, {});
+    }, { order: [], groupLists: {} });
 
-    $: groupedArray = Object.entries(groupedItems)
-        .map(([groupId, items]) => ({ groupId, items }));
+    $: groupedArray = groupedItems.order
+        .map((groupId) => ({ groupId, items: groupedItems.groupLists[groupId] }));
 
     let displayLimit = 2;
     let flatDisplayLimit = 40;
@@ -173,7 +198,7 @@
         const _trigger = [
             $itemSearch,
             $itemFilters,
-            sortField,
+            $itemSortParams,
             sortDirection,
             isGrouped
         ];
@@ -208,6 +233,22 @@
             loadMore();
         }
     }
+
+    function getFilterNameLocale(sortFieldName, filterName) {
+        if (sortFieldName === "rarity") {
+            return filterName;
+        }
+
+        if (sortFieldName === "events") {
+            if (filterName === "nonEvent") {
+                return $t("sort.events.nonEvent");
+            }
+
+            return $t(FactoryEvent.getEvent(filterName)?.title);
+        }
+
+        return $t(`sort.${sortFieldName}.${filterName}`);
+    }
 </script>
 
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
@@ -224,15 +265,34 @@
         </div>
 
         <div class="w-full xl:w-[70%] mb-4">
+
             <DataToolbar
-                bind:sortField
-                bind:sortDirection
-                bind:filters={$itemFilters}
-                bind:searchQuery={$itemSearch}
-                bind:manualMode={$itemManual}
-                bind:groupMode={$itemGroupMode}
-                mode="items"
-            />
+                showSortDropdownButton={true}
+                showSortDirectionButton={true}
+                showFilterDropdownButton={true}
+                showSearchInput={true}
+                showGroupButton={true}
+                isFilterActive={isFilterActive}
+                onFilterReset={() => $itemFilters = {}}
+                bind:isGrouped={$itemGroupMode}
+                bind:searchString={$itemSearch}
+                bind:sortDirection={sortDirection}
+            >
+
+                <RecipesSortDropdown
+                    slot="sortDropdown"
+                    onSortReset={resetSortParams}
+                    bind:sortParams={$itemSortParams}
+                />
+
+                <RecipesFilterDropdown
+                    slot="filterDropdown"
+                    filters={allFilters}
+                    bind:selectedFilters={$itemFilters}
+                />
+
+            </DataToolbar>
+
         </div>
 
         <div class="w-full pb-8">
@@ -241,10 +301,19 @@
 
                 {#each displayedGroups as group}
                     <div class="flex flex-col gap-1 animate-fadeIn pb-5">
-                        <div class="flex items-center gap-3 mb-2">
+                        <div class="flex items-center gap-2 mb-2">
                             <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk pl-0.5">
-                                {$t(`sort.itemGroups.${group.groupId}`)}
+                                {getFilterNameLocale(sortFieldName, group.groupId)}
                             </h3>
+
+                            {#if sortFieldName === "rarity"}
+
+                                <Icon
+                                    name="star"
+                                    class="h-5 w-5 text-[#21272C] dark:text-[#E4E4E4]"
+                                />
+
+                            {/if}
                         </div>
 
                         <div class="grid grid-cols-[repeat(auto-fill,minmax(110px,1fr))] md:grid-cols-[repeat(auto-fill,110px)] gap-3 justify-start">

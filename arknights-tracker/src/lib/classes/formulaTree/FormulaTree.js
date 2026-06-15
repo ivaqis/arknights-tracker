@@ -238,7 +238,7 @@ export class FormulaTree {
      * @private
      */
     _getFirstFormula(item) {
-        if (item.subGroupId === "nature_liquid") {
+        if (item.groupId === "nature" && item.type === "liquid") {
             return this._getFirstMiningFormula(item.id)
                 || this._getFirstPumpingFormula(item.id)
                 || this._getFirstMachineCraft(item.id)

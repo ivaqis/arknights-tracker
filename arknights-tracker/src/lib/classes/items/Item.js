@@ -23,8 +23,12 @@ export class Item {
         return this._itemObj.groupId;
     }
 
-    get subGroupId() {
-        return this._itemObj.subGroupId;
+    get type() {
+        return this._itemObj.type;
+    }
+
+    get material() {
+        return this._itemObj.material;
     }
 
     get iconId() {

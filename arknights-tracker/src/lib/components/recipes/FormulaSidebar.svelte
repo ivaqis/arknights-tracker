@@ -111,7 +111,6 @@
         isBottomSheetOpen = false;
     }
 
-    // todo localization
     $: treeSwitchButtonText = isTreeMode
         ? $t(`formulaSidebar.treeSwitchButton.changeTree`)
         : $t(`formulaSidebar.treeSwitchButton.openTree`);
