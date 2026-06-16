@@ -13,6 +13,14 @@
         sortParams = getDefaultItemSortParams();
     };
 
+    function sortReset() {
+        onSortReset();
+
+        if (!sortFieldDragList) return;
+
+        sortFieldDragList.itemList = sortParams.sortFieldOrder;
+    }
+
     function switchLocaleSort() {
         let current = sortParams.sortFieldParams.localeName;
         sortParams.sortFieldParams.localeName = current === "a-z" ? "z-a" : "a-z";
@@ -213,7 +221,7 @@
 
 <DropdownTemplate
     showResetButton={true}
-    onResetButton={onSortReset}
+    onResetButton={sortReset}
 >
 
     <div class="flex flex-col gap-3 select-none">
