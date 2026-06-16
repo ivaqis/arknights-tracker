@@ -526,7 +526,7 @@
         class="w-full max-w-[1500px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8 items-start"
     >
         <div
-            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
+            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors md:min-w-[500px]"
         >
             <div
                 class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
@@ -537,7 +537,7 @@
                 ></div>
 
                 <div
-                    class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
+                    class="absolute right-[-50px] md:right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
                 >
                     <Image
                         {id}
@@ -1234,7 +1234,7 @@
         role="dialog"
         tabindex="-1"
         aria-modal="true"
-        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
+        class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
         on:click|self={() => (showStatsTable = false)}
         on:keydown|self={(e) => {
             if (e.key === "Escape" || e.key === "Enter" || e.key === " ")

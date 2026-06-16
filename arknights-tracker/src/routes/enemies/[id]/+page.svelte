@@ -192,11 +192,11 @@
         
         <div class="col-span-1 xl:col-span-7 flex flex-col gap-6">
             
-            <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors">
+            <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors min-w-[400px]">
                 <div class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]">
                     <div class="pointer-events-none absolute inset-0 z-0 pointer-events-none card-gradient" style="--rarity-color: {rarityColor};"></div>
 
-                    <div class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
+                    <div class="absolute right-[-30px] md:right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
                         <Image {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
                     </div>
 
@@ -419,7 +419,7 @@
                         {#each advancedStats as stat}
                             <div class="flex flex-col">
                                 <span class="text-xs text-gray-500 dark:text-[#A0A0A0] font-bold uppercase">{stat.key}</span>
-                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD]">{stat.val}</span>
+                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] truncate">{stat.val}</span>
                             </div>
                         {/each}
                     </div>
@@ -458,7 +458,7 @@
         role="dialog"
         tabindex="-1"
         aria-modal="true"
-        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
+        class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
         on:click|self={() => (showStatsTable = false)}
         on:keydown|self={(e) => {
             if (e.key === "Escape" || e.key === "Enter" || e.key === " ")

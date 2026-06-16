@@ -314,7 +314,7 @@
                     ></div>
 
                     <div
-                        class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
+                        class="absolute right-[-25px] md:right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
                     >
                         <Image
                             {id}

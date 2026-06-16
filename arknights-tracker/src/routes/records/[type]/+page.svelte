@@ -12,6 +12,7 @@
     import { isDarkMode } from "$lib/stores/theme";
     import { onMount } from "svelte";
     import { getWeaponCategory } from "$lib/utils/importUtils";
+    import { currentUiLocale } from "$lib/stores/locale";
 
     import Button from "$lib/components/Button.svelte";
     import Icon from "$lib/components/Icon.svelte";
@@ -611,6 +612,29 @@
         }
         return null;
     }
+
+    function formatDateShort(time, locale) {
+        if (!time) return "";
+        return new Date(time).toLocaleString(locale || "ru", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+        });
+    }
+
+    function formatDateFull(time, locale) {
+        if (!time) return "";
+        return new Date(time).toLocaleString(locale || "ru", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+        });
+    }
 </script>
 
 <div class="max-w-[1600px] justify-start min-h-screen">
@@ -640,7 +664,7 @@
         class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_480px] 2xl:grid-cols-[minmax(0,1fr)_680px] gap-6 items-start"
     >
         <div
-            class="flex mt-11 flex-col gap-6 w-full order-1 xl:order-2 min-w-0"
+            class="flex mt-3 xl:mt-11 flex-col gap-6 w-full order-1 xl:order-2 min-w-0"
         >
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5">
@@ -861,12 +885,11 @@
                 class="w-full bg-white rounded-xl dark:border-[#444444] dark:bg-[#383838] shadow-sm border border-gray-100 overflow-hidden order-2 xl:order-1"
             >
                 <div class="overflow-x-auto w-full">
-                    <div class="min-w-[600px]">
+                    <div class="min-w-[340px] sm:min-w-[600px]">
                         <div
-                            class="grid gap-2 px-4 py-3 border-b border-gray-100 bg-white dark:border-[#444444] dark:bg-[#424242] dark:text-[#FDFDFD] text-sm font-bold text-gray-700 pl-6"
-                            style="grid-template-columns: 40px 40px minmax(140px, 1fr) 60px 130px 80px;"
+                            class="records-grid px-2 sm:px-4 py-2 sm:py-3 border-b border-gray-100 bg-white dark:border-[#444444] dark:bg-[#424242] dark:text-[#FDFDFD] text-xs sm:text-sm font-bold text-gray-700 pl-4 sm:pl-6"
                         >
-                            <div class="whitespace-nowrap text-center">
+                            <div class="whitespace-nowrap text-center text-[10px] sm:text-sm">
                                 {$t("systemNames.pull")}
                             </div>
                             <Tooltip
@@ -876,10 +899,10 @@
                                 <div
                                     class="whitespace-nowrap flex items-center justify-center"
                                 >
-                                    <Icon name="star" class="w-4 h-4" />
+                                    <Icon name="star" class="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                                 </div>
                             </Tooltip>
-                            <div class="whitespace-nowrap">
+                            <div class="whitespace-nowrap text-[10px] sm:text-sm">
                                 {#if isWeaponType}
                                     {$t("sort.weapon")}
                                 {:else}
@@ -887,14 +910,14 @@
                                 {/if}
                             </div>
                             <div
-                                class="flex items-center justify-center whitespace-nowrap"
+                                class="flex items-center justify-center whitespace-nowrap text-[10px] sm:text-sm"
                             >
                                 {$t("systemNames.pity")}
                             </div>
-                            <div class="whitespace-nowrap">
+                            <div class="whitespace-nowrap text-[10px] sm:text-sm">
                                 {$t("systemNames.date")}
                             </div>
-                            <div class="text-right whitespace-nowrap">
+                            <div class="text-right whitespace-nowrap text-[10px] sm:text-sm">
                                 {$t("systemNames.banner")}
                             </div>
                         </div>
@@ -939,17 +962,17 @@
                                         {#if showBatches && row.isBatch}
                                             {#if row.batchEnd}
                                                 <div
-                                                    class="absolute left-[18px] top-1/2 bottom-0 w-[10px] border-l-2 border-t-2 z-20 pointer-events-none"
+                                                    class="absolute left-[14px] sm:left-[18px] top-1/2 bottom-0 w-[10px] border-l-2 border-t-2 z-20 pointer-events-none"
                                                     style="border-color: {bracketColor};"
                                                 ></div>
                                             {:else if row.batchStart}
                                                 <div
-                                                    class="absolute left-[18px] top-0 bottom-1/2 w-[10px] border-l-2 border-b-2 z-20 pointer-events-none"
+                                                    class="absolute left-[14px] sm:left-[18px] top-0 bottom-1/2 w-[10px] border-l-2 border-b-2 z-20 pointer-events-none"
                                                     style="border-color: {bracketColor};"
                                                 ></div>
                                             {:else}
                                                 <div
-                                                    class="absolute left-[18px] top-0 bottom-0 w-[10px] border-l-2 z-20 pointer-events-none"
+                                                    class="absolute left-[14px] sm:left-[18px] top-0 bottom-0 w-[10px] border-l-2 z-20 pointer-events-none"
                                                     style="border-color: {bracketColor};"
                                                 ></div>
                                             {/if}
@@ -975,10 +998,8 @@
                                         {/if}
 
                                         <div
-                                            class="grid gap-2 items-center px-4 py-1.5 text-sm border-b border-gray-50 last:border-0 hover:bg-gray-50 transition relative pl-6"
-                                            style="grid-template-columns: 40px 40px minmax(140px, 1fr) 60px 130px 80px; background: {getRowBackground(
-                                                row.rarity,
-                                            )}"
+                                            class="records-grid items-center px-2 sm:px-4 py-1 sm:py-1.5 border-b border-gray-50 last:border-0 hover:bg-gray-50 transition relative pl-5 sm:pl-6"
+                                            style="background: {getRowBackground(row.rarity)}"
                                         >
                                             <div
                                                 class="font-nums text-gray-400 dark:text-[#B7B6B3] text-xs text-center justify-center flex items-center"
@@ -987,7 +1008,7 @@
                                             </div>
 
                                             <div
-                                                class="text-lg flex items-center justify-center font-nums"
+                                                class="text-sm sm:text-lg flex items-center justify-center font-nums"
                                                 style="color: {getRarityColor(
                                                     row.rarity,
                                                 )}"
@@ -996,7 +1017,7 @@
                                             </div>
 
                                             <div
-                                                class="flex items-center min-w-0 pr-2"
+                                                class="flex items-center min-w-0 pr-1 sm:pr-2"
                                             >
                                                 <div
                                                     class="relative inline-flex items-center max-w-full"
@@ -1005,7 +1026,7 @@
                                                         class="relative z-10 flex-shrink-0"
                                                     >
                                                         <div
-                                                            class="w-10 h-10 rounded-full overflow-hidden border-2 shadow-sm relative group
+                                                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border sm:border-2 shadow-sm relative group
                 {isWeapon ? getWeaponBg(row.rarity) : 'bg-transparent'}"
                                                             style="border-color: {getRarityColor(
                                                                 row.rarity,
@@ -1024,7 +1045,7 @@
                                                         </div>
                                                         {#if row.isNew}
                                                             <div
-                                                                class="absolute -top-1 -right-1 bg-[#D84C38]/85 text-white text-[8px] leading-none font-bold px-1.5 py-0.5 rounded-md z-20 pointer-events-none backdrop-blur-[1px]"
+                                                                class="absolute -top-1 -right-1 bg-[#D84C38]/85 text-white text-[7px] sm:text-[8px] leading-none font-bold px-1 sm:px-1.5 py-0.5 rounded sm:rounded-md z-20 pointer-events-none backdrop-blur-[1px]"
                                                             >
                                                                 NEW
                                                             </div>
@@ -1032,13 +1053,13 @@
                                                     </div>
 
                                                     <div
-                                                        class="relative bg-transparent -ml-5 pl-7 pr-3 rounded-r-full border-y-2 border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-10"
+                                                        class="relative bg-transparent -ml-4 pl-6 pr-2 sm:-ml-5 sm:pl-7 sm:pr-3 rounded-r-full border-y sm:border-y-2 border-r sm:border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-8 sm:h-10"
                                                         style="border-color: {getRarityColor(
                                                             row.rarity,
                                                         )}"
                                                     >
                                                         <span
-                                                            class="text-gray-800 dark:text-[#E0E0E0] text-sm font-medium leading-tight block w-full truncate cursor-default"
+                                                            class="text-gray-800 dark:text-[#E0E0E0] text-xs sm:text-sm font-medium leading-tight block w-full truncate cursor-default"
                                                             title={translatedName}
                                                         >
                                                             {translatedName}
@@ -1048,7 +1069,7 @@
                                             </div>
 
                                             <div
-                                                class="flex items-center justify-center font-nums text-base gap-1"
+                                                class="flex items-center justify-center font-nums text-xs sm:text-base gap-0.5 sm:gap-1"
                                                 style="color: {getRarityColor(
                                                     row.rarity,
                                                 )}"
@@ -1066,7 +1087,7 @@
                                                                 >
                                                                     <Icon
                                                                         name="star"
-                                                                        class="w-4 h-4 text-[#D0926E]"
+                                                                        class="w-3 h-3 sm:w-4 sm:h-4 text-[#D0926E]"
                                                                     />
                                                                 </Tooltip>
                                                             {/if}
@@ -1078,7 +1099,7 @@
                                                             >
                                                                 <Icon
                                                                     name="lost"
-                                                                    class="w-4 h-4 text-[#D0926E]"
+                                                                    class="w-3 h-3 sm:w-4 sm:h-4 text-[#D0926E]"
                                                                 />
                                                             </Tooltip>
                                                         {:else if row.status === "guaranteed" && !isAllWeaponCategory}
@@ -1087,7 +1108,7 @@
                                                             >
                                                                 <Icon
                                                                     name="guaranteed"
-                                                                    class="w-4 h-4 text-[#D0926E]"
+                                                                    class="w-3 h-3 sm:w-4 sm:h-4 text-[#D0926E]"
                                                                 />
                                                             </Tooltip>
                                                         {/if}
@@ -1096,17 +1117,18 @@
                                             </div>
 
                                             <div
-                                                class="text-gray-500 dark:text-[#B7B6B3] font-nums text-xs whitespace-nowrap"
+                                                class="text-gray-500 dark:text-[#B7B6B3] font-nums text-[10px] sm:text-xs whitespace-nowrap"
                                             >
-                                                {new Date(
-                                                    row.time,
-                                                ).toLocaleString("ru-RU")}
+                                                <span class="block sm:hidden">{formatDateShort(row.time, $currentUiLocale)}</span>
+                                                <span class="hidden sm:block">
+                                                    {formatDateFull(row.time, $currentUiLocale)}
+                                                </span>
                                             </div>
 
                                             <div class="flex justify-end">
                                                 {#if currentBanner}
                                                     <button
-                                                        class="group relative h-10 w-20 rounded shadow-sm border border-gray-200 dark:border-[#7A7A7A] overflow-hidden hover:ring-2 hover:ring-[#e44e25] transition-all focus:outline-none bg-gray-100"
+                                                        class="group relative h-7 w-12 sm:h-10 sm:w-20 rounded sm:rounded-md shadow-sm border border-gray-200 dark:border-[#7A7A7A] overflow-hidden hover:ring-2 hover:ring-[#e44e25] transition-all focus:outline-none bg-gray-100"
                                                         on:click={() =>
                                                             (selectedBanner =
                                                                 currentBanner)}
@@ -1132,7 +1154,7 @@
                                                     </button>
                                                 {:else}
                                                     <div
-                                                        class="h-6 w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center"
+                                                        class="h-6 w-10 sm:h-6 sm:w-12 bg-gray-50 rounded border border-gray-100 flex items-center justify-center"
                                                     >
                                                         <span
                                                             class="text-[10px] text-gray-300"
@@ -1157,3 +1179,19 @@
     pageContext={bannerType}
     on:close={() => (selectedBanner = null)}
 />
+
+<style>
+    .records-grid {
+        display: grid;
+        gap: 0.25rem;
+        align-items: center;
+        grid-template-columns: 28px 24px minmax(70px, 1fr) 32px 100px 50px;
+    }
+
+    @media (min-width: 640px) {
+        .records-grid {
+            gap: 0.5rem;
+            grid-template-columns: 40px 40px minmax(140px, 1fr) 60px 160px 80px;
+        }
+    }
+</style>

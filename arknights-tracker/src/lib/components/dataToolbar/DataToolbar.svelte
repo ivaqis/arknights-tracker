@@ -1186,7 +1186,6 @@
                                                 activeStatTab,
                                             )}"
                                             on:click={() => {
-                                                manualMode.stats = true;
                                                 let newStats = {
                                                     ...filters.stats,
                                                 };
@@ -1210,6 +1209,15 @@
                                                         stat,
                                                     ];
                                                 }
+                                                const hasAnySelected =
+                                                    (newStats.any?.length || 0) > 0 ||
+                                                    (newStats[1]?.length || 0) > 0 ||
+                                                    (newStats[2]?.length || 0) > 0 ||
+                                                    (newStats[3]?.length || 0) > 0;
+                                                manualMode = {
+                                                    ...manualMode,
+                                                    stats: hasAnySelected
+                                                };
                                                 filters.stats = newStats;
                                             }}
                                         >
