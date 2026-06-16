@@ -355,7 +355,7 @@
                 >
                     {#each displayEnemies as eny (eny.id)}
                         <div class="flex justify-center transition-transform">
-                            <WeaponCard weapon={eny} isNew={false} isEnemy={true} />
+                            <WeaponCard weapon={eny} isNew={false} hideDarkness={true} hidePot={false} isEnemy={true} />
                         </div>
                     {/each}
                 </div>

@@ -503,7 +503,7 @@
             >
                 <div class="flex items-start gap-3">
                     <div class="mt-0.5 text-[#FACC15] shrink-0">
-                        <Icon name="info" class="w-6 h-6" />
+                        <Icon name="info" class="w-5 h-5" />
                     </div>
                     <div class="flex-1">
                         <h3

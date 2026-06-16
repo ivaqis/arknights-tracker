@@ -747,7 +747,7 @@
                                 >
                                 <Icon
                                     name="star"
-                                    class="w-3 h-3 text-current pointer-events-none"
+                                    class="w-3.5 h-3.5 text-current pointer-events-none"
                                 />
                             </button>
                         {/each}
@@ -779,7 +779,7 @@
                                     >
                                         <Icon
                                             name={cls}
-                                            class="w-3.5 h-3.5 text-white"
+                                            class="w-4 h-4 text-white"
                                         />
                                     </div>
                                     <span
@@ -815,7 +815,7 @@
                                     >
                                         <Icon
                                             name={elm}
-                                            class="w-full h-full text-current"
+                                            class="w-full h-full text-current rounded-md"
                                         />
                                     </div>
                                     <span
@@ -1026,7 +1026,7 @@
                                         {#if elementColors[skill]}
                                             <Icon
                                                 name={skillIcons[skill]}
-                                                class="w-4 h-4 pointer-events-none {elementColors[
+                                                class="w-4 h-4 rounded-sm pointer-events-none {elementColors[
                                                     skill
                                                 ]}"
                                             />

@@ -722,7 +722,7 @@
                             >
                                 <Icon
                                     name={char.class}
-                                    class="w-10 h-10 text-white"
+                                    class="w-10 h-10 text-white rounded-md"
                                 />
                             </div>
                         </Tooltip>
@@ -737,7 +737,7 @@
                             >
                                 <Icon
                                     name={char.element}
-                                    class="w-10 h-10 text-white"
+                                    class="w-10 h-10 text-white rounded-md"
                                 />
                             </div>
                         </Tooltip>
