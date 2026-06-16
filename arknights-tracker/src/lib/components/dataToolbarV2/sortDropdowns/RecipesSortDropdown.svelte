@@ -202,7 +202,7 @@
 {#if sortFieldDragList.draggedItemId}
 
     <div
-        class="fixed flex flex-row rounded-lg z-[1000] pointer-events-none select-none"
+        class="fixed flex flex-row rounded-lg z-[1000] pointer-events-none select-none opacity-50"
         style="left: {currentDragCursorPosX-8}px; top: {currentDragCursorPosY-8}px"
     >
 
@@ -215,11 +215,11 @@
 
         </div>
 
-        <div class="flex flex-row gap-2 items-center text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70">
+        <div class="flex flex-row gap-2 items-center text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2">
 
-                    <span>
-                        {getSortFieldLocale(sortFieldDragList.draggedItemId)}
-                    </span>
+            <span>
+                {getSortFieldLocale(sortFieldDragList.draggedItemId)}
+            </span>
 
         </div>
 
