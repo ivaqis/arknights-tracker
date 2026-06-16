@@ -7,7 +7,7 @@
   import { currentLocale, currentUiLocale } from "$lib/stores/locale.js";
   import Image from "$lib/components/Image.svelte";
 
-  import * as XLSX from "xlsx";
+
   import Icon from "$lib/components/Icon.svelte";
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
@@ -50,7 +50,8 @@
       return new Date(d).getTime();
   }
 
-  function exportExcel() {
+  async function exportExcel() {
+    const XLSX = await import("xlsx");
     let dataToExport;
     const unsubscribe = pullData.subscribe((value) => {
       dataToExport = value;
@@ -227,7 +228,8 @@
     }
   }
 
-  function importExcel(event) {
+  async function importExcel(event) {
+    const XLSX = await import("xlsx");
     const file = event.target.files[0];
     if (!file) return;
 
