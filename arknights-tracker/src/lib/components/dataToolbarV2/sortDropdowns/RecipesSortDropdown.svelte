@@ -145,13 +145,71 @@
 
     }
 
+    let touchSortFieldHovered = null;
+
+    function handleWindowTouchMove(event) {
+        const touch = event.touches[0];
+        if (!touch) return;
+
+        const elementUnderPointer = document.elementFromPoint(touch.clientX, touch.clientY);
+        const listItem = elementUnderPointer?.closest('[data-sort-field]');
+        const newField = listItem?.dataset.sortField ?? null;
+
+        if (newField !== touchSortFieldHovered) {
+            if (touchSortFieldHovered) {
+                onSortFieldLeave(event, touchSortFieldHovered);
+            }
+            if (newField) {
+                onSortFieldEnter(event, newField);
+            }
+            touchSortFieldHovered = newField;
+        }
+    }
+
+    function handleWindowTouchEnd(event) {
+        if (touchSortFieldHovered) {
+            onSortFieldLeave(event, touchSortFieldHovered);
+            touchSortFieldHovered = null;
+        }
+    }
+
 
 </script>
 
 <svelte:window
+    on:touchmove={handleWindowTouchMove}
+    on:touchend={handleWindowTouchEnd}
     on:pointermove={handleWindowPointerMove}
     on:pointerup={handleWindowPointerUp}
 />
+
+{#if sortFieldDragList.draggedItemId}
+
+    <div
+        class="fixed flex flex-row rounded-lg z-[1000] pointer-events-none select-none"
+        style="left: {currentDragCursorPosX-8}px; top: {currentDragCursorPosY-8}px"
+    >
+
+        <div class="h-4 w-4 pt-[1px] mr-3 cursor-grabbing">
+
+            <Icon
+                name="dragDots"
+                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+            />
+
+        </div>
+
+        <div class="flex flex-row gap-2 items-center text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70">
+
+                    <span>
+                        {getSortFieldLocale(sortFieldDragList.draggedItemId)}
+                    </span>
+
+        </div>
+
+    </div>
+
+{/if}
 
 <DropdownTemplate
     showResetButton={true}
@@ -160,49 +218,22 @@
 
     <div class="flex flex-col gap-3 select-none">
 
-        {#if sortFieldDragList.draggedItemId}
-
-            <div
-                class="fixed flex flex-row rounded-lg pointer-events-none select-none"
-                style="left: {currentDragCursorPosX-8}px; top: {currentDragCursorPosY-8}px"
-            >
-
-                <div class="h-4 w-4 pt-[1px] mr-3 cursor-grabbing">
-
-                    <Icon
-                        name="dragDots"
-                        class="w-5 h-5 text-gray-500 dark:text-gray-400"
-                    />
-
-                </div>
-
-                <div class="flex flex-row gap-2 items-center text-sm dark:text-[#E0E0E0] font-bold text-gray-800 mb-2 hover:opacity-70">
-
-                    <span>
-                        {getSortFieldLocale(sortFieldDragList.draggedItemId)}
-                    </span>
-
-                </div>
-
-            </div>
-
-        {/if}
-
         {#each sortParams.sortFieldOrder as sortFieldName (sortFieldName)}
 
             <div
                 animate:flip={{ duration: 100 }}
                 class="flex flex-row transition-all duration-200 rounded-lg"
                 role="listitem"
+                data-sort-field={sortFieldName}
                 on:pointerenter={(e) => onSortFieldEnter(e, sortFieldName)}
                 on:pointerleave={(e) => onSortFieldLeave(e, sortFieldName)}
             >
 
                 <div
-                    class="h-4 w-4 pt-[1px] mr-3 cursor-grab"
+                    class="h-4 w-4 pt-[1px] mr-3 cursor-grab touch-none"
                     role="button"
                     tabindex="0"
-                    on:pointerdown={(event) => sortFieldStartDrag(event, sortFieldName)}
+                    on:pointerdown|preventDefault={(event) => sortFieldStartDrag(event, sortFieldName)}
                 >
 
                     <Icon
