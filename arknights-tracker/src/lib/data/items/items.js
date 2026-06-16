@@ -2157,7 +2157,7 @@ export const items = {
         "rarity": 4,
         "groupId": "usable",
         "type": "special_food",
-        "material": "plant_grass_1"
+        "material": "plant_grass_spc_1"
     },
     "item_bottled_grass1spc_2": {
         "id": "item_bottled_grass1spc_2",
@@ -2165,7 +2165,7 @@ export const items = {
         "rarity": 5,
         "groupId": "usable",
         "type": "special_food",
-        "material": "plant_grass_1"
+        "material": "plant_grass_spc_1"
     },
     "item_bottled_grass2spc_1": {
         "id": "item_bottled_grass2spc_1",
@@ -2173,7 +2173,7 @@ export const items = {
         "rarity": 4,
         "groupId": "usable",
         "type": "special_food",
-        "material": "plant_grass_2"
+        "material": "plant_grass_spc_2"
     },
     "item_bottled_grass2spc_2": {
         "id": "item_bottled_grass2spc_2",
@@ -2181,7 +2181,7 @@ export const items = {
         "rarity": 5,
         "groupId": "usable",
         "type": "special_food",
-        "material": "plant_grass_2"
+        "material": "plant_grass_spc_2"
     },
     "item_bottled_rec_hp_1": {
         "id": "item_bottled_rec_hp_1",
