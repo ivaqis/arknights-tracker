@@ -5,7 +5,7 @@ export class DraggableList {
     _enteredItemId = null;
 
     /**
-     * @param {string[]} itemList
+     * @param {string[]|number[]} itemList
      */
     constructor(itemList = []) {
         this._itemList = itemList;
@@ -16,28 +16,28 @@ export class DraggableList {
     }
 
     /**
-     * @param {string[]} itemList
+     * @param {string[]|number[]} itemList
      */
     set itemList(itemList) {
         this._itemList = itemList;
     }
 
     /**
-     * @returns {string|null}
+     * @returns {string|number|null}
      */
     get draggedItemId() {
         return this._draggedItemId;
     }
 
     /**
-     * @returns {string|null}
+     * @returns {string|number|null}
      */
     get enteredItemId() {
         return this._enteredItemId;
     }
 
     /**
-     * @param {string} itemId
+     * @param {string|number} itemId
      */
     startDrag(itemId) {
         this._draggedItemId = itemId;
@@ -49,7 +49,7 @@ export class DraggableList {
 
     /**
      * Returns true if itemList was modified else returns false
-     * @param {string} enteredItemId
+     * @param {string|number} enteredItemId
      * @returns {boolean}
      */
     onEnter(enteredItemId) {
@@ -74,7 +74,7 @@ export class DraggableList {
     }
 
     /**
-     * @param {string} leavedItemId
+     * @param {string|number} leavedItemId
      */
     onLeave(leavedItemId) {
         if (leavedItemId === this._draggedItemId) {
@@ -93,6 +93,7 @@ export class DraggableList {
     }
 
     _getItemIndex(itemId) {
-        return this._itemList.indexOf(itemId);
+        return this._itemList
+            .findIndex((item) => item.toString() === itemId.toString());
     }
 }
