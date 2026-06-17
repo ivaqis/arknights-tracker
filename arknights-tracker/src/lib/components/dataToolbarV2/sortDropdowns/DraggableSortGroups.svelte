@@ -8,7 +8,7 @@
     export let getLocaleFunc = (group) => group?.toString() ?? "null";
 
     // bindable
-    export let groupList = [];
+    export let groupList = []; // if binded, it will be updated on change order of elements
     export let draggedGroup = null;
     export let openedGroup = null;
 
@@ -20,10 +20,19 @@
         openedGroup = group;
     }
 
+    function closeAllGroups() {
+        openedGroup = null;
+    }
+
     $: isGroupOpened = (group) => openableGroups && openedGroup === group;
 
     let dragList = new DraggableList(groupList);
-    $: dragList.itemList = groupList;
+
+    $: draggedGroup = dragList.draggedItemId;
+
+    $: if (groupList) {
+        updateItemList(groupList);
+    }
 
     function forceGroupListUpdate() {
         groupList = dragList.itemList;
@@ -32,7 +41,120 @@
     function forceDragListUpdate() {
         dragList = dragList;
     }
+
+    function updateItemList(itemList) {
+        dragList.itemList = itemList;
+    }
+
+    let currentCursorPosX = 0;
+    let currentCursorPosY = 0;
+
+    $: isGroupDragged = (group) => dragList.draggedItemId === group;
+
+    function startDrag(event, group) {
+        console.log(`start ${group}`);
+
+        currentCursorPosX = event.clientX;
+        currentCursorPosY = event.clientY;
+
+        closeAllGroups();
+
+        dragList.startDrag(group);
+        forceDragListUpdate();
+
+        document.body.classList.add("cursor-grabbing");
+    }
+
+    function endDrag() {
+        console.log("end");
+
+        dragList.endDrag();
+        forceDragListUpdate();
+    }
+
+    function onGroupEnter(group) {
+        if (!dragList.draggedItemId) return;
+
+        console.log(`enter ${group}`);
+
+        let wasModified = dragList.onEnter(group);
+
+        forceDragListUpdate();
+
+        if (wasModified) {
+            forceGroupListUpdate();
+        }
+    }
+
+    function onGroupLeave(group) {
+        if (!dragList.draggedItemId) return;
+
+        console.log(`leave ${group}`);
+
+        dragList.onLeave(group);
+
+        forceDragListUpdate();
+    }
+
+
+    function handleWindowPointerUp() {
+        if (!dragList.draggedItemId) return;
+
+        endDrag();
+
+        document.body.classList.remove("cursor-grabbing");
+    }
+
+    function handleWindowPointerMove(event) {
+        if (!dragList.draggedItemId) return;
+
+        currentCursorPosX = event.clientX;
+        currentCursorPosY = event.clientY;
+    }
+
+
+    let groupTouchHovered = null;
+
+    function handleWindowTouchMove(event) {
+        if (!dragList.draggedItemId) return;
+
+        const touch = event.touches[0];
+        if (!touch) return;
+
+        const elementUnderPointer = document.elementFromPoint(touch.clientX, touch.clientY);
+        const groupItem = elementUnderPointer.closest("[data-group]");
+        const newGroup = groupItem?.dataset.group ?? null;
+
+        if (newGroup === groupTouchHovered) return;
+
+        if (groupTouchHovered) {
+            onGroupEnter(groupTouchHovered);
+        }
+
+        if (newGroup) {
+            onGroupLeave(newGroup);
+        }
+
+        groupTouchHovered = newGroup;
+    }
+
+    function handleWindowTouchEnd() {
+        if (!dragList.draggedItemId) return;
+
+        if (groupTouchHovered) {
+            onGroupLeave(groupTouchHovered);
+            groupTouchHovered = null;
+        }
+    }
+
 </script>
+
+<svelte:window
+    on:touchmove={handleWindowTouchMove}
+    on:touchend={handleWindowTouchEnd}
+    on:pointermove={handleWindowPointerMove}
+    on:pointerup={handleWindowPointerUp}
+/>
 
 <div class="flex flex-col gap-3 select-none">
 
@@ -43,19 +165,24 @@
             class="flex flex-row transition-all duration-200 rounded-lg"
             role="listitem"
             data-group={group}
-            on:pointerenter={() => {}}
-            on:pointerleave={() => {}}
+            on:pointerenter={() => {onGroupEnter(group)}}
+            on:pointerleave={() => {onGroupLeave(group)}}
         >
 
             <div
                 class="h-4 w-4 pt-[1px] mr-3 cursor-grab touch-none"
                 role="button"
                 tabindex="-1"
+                on:pointerdown|preventDefault={(e) => startDrag(e, group)}
             >
 
                 <Icon
                     name="dragDots"
-                    class="h-5 w-5"
+                    class="h-5 w-5 {
+                        isGroupDragged(group)
+                            ? 'text-[#f9b90c]'
+                            : 'text-gray-500 dark:text-gray-400'
+                    }"
                 />
 
             </div>
