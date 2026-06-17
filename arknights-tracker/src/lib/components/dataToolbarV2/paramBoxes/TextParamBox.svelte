@@ -8,9 +8,9 @@
 
     <slot name="left"/>
 
-    <span class="text-xs font-bold pointer-events-none">
+    <div class="text-xs font-bold pointer-events-none">
         <slot />
-    </span>
+    </div>
 
     <slot name="right"/>
 
