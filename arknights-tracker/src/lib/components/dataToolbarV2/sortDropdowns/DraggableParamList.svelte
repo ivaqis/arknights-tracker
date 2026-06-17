@@ -101,12 +101,13 @@
     function handleWindowTouchMove(event) {
         if (!dragList.draggedItemId) return;
 
+
         const touch = event.touches[0];
-        if (touch) return;
+        if (!touch) return;
 
         const elementUnderPointer = document.elementFromPoint(touch.clientX, touch.clientY);
-        const paramItem = elementUnderPointer.closest("[data-param]");
-        const newParam = paramItem?.dataset.param ?? null;
+        const paramItem = elementUnderPointer.closest("[data-param-id]");
+        const newParam = paramItem?.dataset.paramId ?? null;
 
         if (newParam === paramTouchHovered) return;
 
@@ -145,9 +146,9 @@
 
         <div
             animate:flip={{ duration: 100 }}
-            class="cursor-grab"
+            class="cursor-grab touch-none"
             role="listitem"
-            data-param={param}
+            data-param-id={param}
             on:pointerenter={() => onParamEnter(param)}
             on:pointerleave={() => onParamLeave(param)}
             on:pointerdown|preventDefault={(e) => startDrag(e, param)}
