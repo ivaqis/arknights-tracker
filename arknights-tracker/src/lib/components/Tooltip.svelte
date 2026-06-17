@@ -97,8 +97,8 @@
 {#if open && tooltipText}
   <span
     bind:this={tooltipEl}
-    class="fixed px-3 py-1.5 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-xl
-           pointer-events-none whitespace-nowrap z-[999999]"
+    class="fixed max-w-[400px] px-3 py-1.5 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-xl
+           pointer-events-none  z-[999999]"
     style="left: {left}px; top: {top}px;"
   >
     {tooltipText}

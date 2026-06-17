@@ -707,7 +707,8 @@
     "drops": "Drops",
     "properties": "Properties",
     "abilities": "Abilities",
-    "vulnerable": "Vulnerable"
+    "vulnerable": "Vulnerable",
+    "enemiesResHint": "Displays the coefficient of damage taken by the enemy according to the formula: Damage × Resistance (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved."
   },
   "bioValues": {
     "Unknown": "Unknown"

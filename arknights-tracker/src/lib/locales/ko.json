@@ -574,7 +574,8 @@
     "drops": "적 처치 시 획득 가능",
     "properties": "특성 설명",
     "abilities": "능력",
-    "vulnerable": "방어 불능"
+    "vulnerable": "방어 불능",
+    "enemiesResHint": "다음 공식에 따라 적이 받는 데미지 계수를 표시합니다: 데미지 × 저항력 (%). 예: 100% — 데미지 감소 없음, 50% — 적이 받는 데미지 절반으로 감소."
   },
   "bioValues": {
     "Unknown": "알 수 없음"

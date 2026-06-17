@@ -574,7 +574,8 @@
     "drops": "入手可能",
     "properties": "特性説明",
     "abilities": "スキル",
-    "vulnerable": "クラッシュ"
+    "vulnerable": "クラッシュ",
+    "enemiesResHint": "敵が受けるダメージの係数を次の式で表示します：ダメージ × 耐性 (%)。例：100% — ダメージ減少なし、50% — 敵が受けるダメージが半減。"
   },
   "bioValues": {
     "Unknown": "不明"

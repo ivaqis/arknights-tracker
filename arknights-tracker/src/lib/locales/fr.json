@@ -574,7 +574,8 @@
     "drops": "Butins",
     "properties": "Propriétés",
     "abilities": "Capacités",
-    "vulnerable": "Vulnérable"
+    "vulnerable": "Vulnérable",
+    "enemiesResHint": "Affiche le coefficient de dégâts reçus par l'ennemi selon la formule : Dégâts × Résistance (%). Par exemple : 100 % — aucune réduction de dégâts, 50 % — les dégâts reçus par l'ennemi sont réduits de moitié."
   },
   "bioValues": {
     "Unknown": "Inconnu"

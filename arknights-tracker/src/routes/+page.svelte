@@ -520,7 +520,7 @@
                 class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
               >
                 <div class="w-full md:w-auto md:max-w-[50%] shrink-0">
-                  <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-1.5">
                     <div class="min-w-0 shrink-1">
                       {#if promo.url}
                         <a

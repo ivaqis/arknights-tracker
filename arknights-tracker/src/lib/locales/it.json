@@ -574,7 +574,8 @@
     "drops": "Ottenimenti",
     "properties": "Properti",
     "abilities": "Abilità",
-    "vulnerable": "Vulnerabilità"
+    "vulnerable": "Vulnerabilità",
+    "enemiesResHint": "Mostra il coefficiente di danno ricevuto dal nemico secondo la formula: Danno × Resistenza (%). Ad esempio: 100% — nessuna riduzione del danno, 50% — il danno ricevuto dal nemico è dimezzato."
   },
   "bioValues": {
     "Unknown": "Sconosciuto"

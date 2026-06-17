@@ -1468,7 +1468,6 @@
                                             )}
                                     >
                                         <div class="flex items-center gap-2">
-                                            <Icon name="sparkles" class="w-4 h-4 text-[#F9B90C]" />
                                             <span class="text-[12px] font-bold text-[#3AC76D] dark:text-[#4ADE80]">
                                                 {$t("essencesPage.simultaneousFarming")}
                                             </span>

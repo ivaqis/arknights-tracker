@@ -632,7 +632,8 @@
     "drops": "敵人掉落",
     "properties": "特性說明",
     "abilities": "能力",
-    "vulnerable": "破防"
+    "vulnerable": "破防",
+    "enemiesResHint": "根據公式顯示敵人受到的傷害係數：傷害 × 抗性（%）。例如：100% — 傷害不減少，50% — 敵人受到的傷害減半。"
   },
   "bioValues": {
     "Unknown": "未知"

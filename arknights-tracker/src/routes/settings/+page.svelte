@@ -624,12 +624,12 @@
 
                     {#if !$user}
                         <div
-                            class="flex items-start dark:text-[#B7B6B3] gap-4 text-gray-600 text-sm leading-relaxed mb-3"
+                            class="flex items-start dark:text-[#B7B6B3] gap-3 text-gray-600 text-sm leading-relaxed mb-3"
                         >
                             <div class="mt-0.5 flex-shrink-0">
                                 <Icon
                                     name="info"
-                                    class="w-5 h-5 text-gray-400"
+                                    class="w-4.5 h-4.5 text-gray-400"
                                 />
                             </div>
                             <p>{$t("settings.cloud.description")}</p>
@@ -744,10 +744,10 @@
             {$t("settings.backup.title")}
         </h2>
         <div
-            class="bg-gray-200 rounded-xl p-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] mb-3 flex items-start gap-4 text-gray-600 text-sm leading-relaxed"
+            class="bg-gray-200 rounded-xl p-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] mb-3 flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-5 h-5 text-gray-400" />
+                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
             </div>
             <p>{$t("settings.backup.description")}</p>
         </div>
@@ -777,10 +777,10 @@
             {$t("settings.feedback.title")}
         </h2>
         <div
-            class="bg-gray-200 rounded-xl p-5 mb-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] flex items-start gap-4 text-gray-600 text-sm leading-relaxed"
+            class="bg-gray-200 rounded-xl p-5 mb-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-5 h-5 text-gray-400" />
+                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
             </div>
             <p>{$t("settings.feedback.text")}</p>
         </div>

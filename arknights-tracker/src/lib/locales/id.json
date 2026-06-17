@@ -574,7 +574,8 @@
     "drops": "Drop",
     "properties": "Properti",
     "abilities": "Kemampuan",
-    "vulnerable": "Vulnerable"
+    "vulnerable": "Vulnerable",
+    "enemiesResHint": "Menampilkan koefisien kerusakan yang diterima musuh dengan rumus: Kerusakan × Resistansi (%). Contoh: 100% — tidak ada pengurangan kerusakan, 50% — kerusakan yang diterima musuh berkurang separuhnya."
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"

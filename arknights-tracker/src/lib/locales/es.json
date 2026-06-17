@@ -573,7 +573,8 @@
     "drops": "Botín",
     "properties": "Propiedades",
     "abilities": "Habilidades",
-    "vulnerable": "Vulnerable"
+    "vulnerable": "Vulnerable",
+    "enemiesResHint": "Muestra el coeficiente de daño recibido por el enemigo según la fórmula: Daño × Resistencia (%). Por ejemplo: 100% — sin reducción de daño, 50% — el daño recibido por el enemigo se reduce a la mitad."
   },
   "bioValues": {
     "Unknown": "Desconocido"

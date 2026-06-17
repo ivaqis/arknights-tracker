@@ -9,6 +9,7 @@
     import Button from "$lib/components/Button.svelte";
     import Image from "$lib/components/Image.svelte";
     import NotFound from "$lib/components/NotFound.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -360,6 +361,16 @@
                     <div>
                         <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mb-2">
                             {tOrFallback("stats.vulnerable", "Vulnerability")}
+                            <Tooltip
+                                text={$t("stats.enemiesResHint") ||
+                                    "Displays the coefficient of damage taken by the enemy according to the formula: Damage × Resistance (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved."}
+                            >
+                                <span
+                                    class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
+                                >
+                                    <Icon name="info" class="m-0.5 w-4 h-4" />
+                                </span>
+                            </Tooltip>
                         </h2>
                         <div class="flex flex-wrap gap-x-8 gap-y-5">
                             {#each resistances as res}
@@ -372,10 +383,10 @@
                                             {$t(`resitances.${res.locKey}`) || res.key}
                                         </span>
                                         <div class="flex items-baseline gap-1.5 mt-1.5">
-                                            <span class="text-[16px] font-black {res.val < 1 ? 'text-green-500' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
+                                            <span class="text-[16px] font-black {res.val < 1 ? 'text-orange-400' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
                                                 {resLetter}
                                             </span>
-                                            <span class="text-[16px] font-bold {res.val < 1 ? 'text-green-500' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
+                                            <span class="text-[16px] font-bold {res.val < 1 ? 'text-orange-400' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
                                                 {resPercent}%
                                             </span>
                                         </div>

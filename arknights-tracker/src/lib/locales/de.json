@@ -574,7 +574,8 @@
     "drops": "Drops",
     "properties": "Eigenschaften",
     "abilities": "Capacidades",
-    "vulnerable": "Anfällig"
+    "vulnerable": "Anfällig",
+    "enemiesResHint": "Zeigt den Koeffizienten des vom Feind erlittenen Schadens nach folgender Formel an: Schaden × Widerstand (%). Zum Beispiel: 100% — keine Schadensverringerung, 50% — der erlittene Schaden wird halbiert."
   },
   "bioValues": {
     "Unknown": "Unbekannt"

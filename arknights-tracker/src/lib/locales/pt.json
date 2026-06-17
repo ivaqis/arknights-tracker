@@ -574,7 +574,8 @@
     "drops": "Espólios",
     "properties": "Propriedades",
     "abilities": "Capacidades",
-    "vulnerable": "Vulnerável"
+    "vulnerable": "Vulnerável",
+    "enemiesResHint": "Exibe o coeficiente de dano recebido pelo inimigo de acordo com a fórmula: Dano × Resistência (%). Por exemplo: 100% — sem redução de dano, 50% — o dano recebido pelo inimigo é reduzido pela metade."
   },
   "bioValues": {
     "Unknown": "Desconhecido"

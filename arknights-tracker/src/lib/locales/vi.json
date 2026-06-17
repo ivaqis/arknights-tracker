@@ -632,7 +632,8 @@
     "drops": "Xuất hiện",
     "properties": "Tài sản",
     "abilities": "Năng lực",
-    "vulnerable": "Yếu Đuối"
+    "vulnerable": "Yếu Đuối",
+    "enemiesResHint": "Hiển thị hệ số sát thương mà kẻ thù nhận phải theo công thức: Sát thương × Kháng (%). Ví dụ: 100% — không giảm sát thương, 50% — sát thương kẻ thù nhận phải giảm một nửa."
   },
   "bioValues": {
     "Unknown": "Không rõ"
