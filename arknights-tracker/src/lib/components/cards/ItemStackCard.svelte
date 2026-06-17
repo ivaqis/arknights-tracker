@@ -47,7 +47,7 @@
         isEventItem = item.isEventItem();
     }
 
-    let boxSize = (() => {
+    $: boxSize = (() => {
         switch (size) {
             case "small": return "w-[80px] h-[80px]";
             case "micro": return "w-[60px] h-[60px]";
@@ -57,13 +57,23 @@
         }
     })();
 
-    let textSize = (() => {
+    $: textSize = (() => {
         switch (size) {
             case "small": return "text-sm";
             case "micro": return "text-xs";
 
             case "default":
             default: return "text-sm"
+        }
+    })();
+
+    $: eventStarSize = (() => {
+        switch (size) {
+            case "small": return "h-6 w-6";
+            case "micro": return "h-5 w-5";
+
+            case "default":
+            default: return "h-7 w-7"
         }
     })();
 
@@ -158,10 +168,10 @@
         </div>
 
         {#if isEventItem}
-            <div class="absolute -top-2 -right-2 w-5 h-5 z-[35]">
+            <div class="absolute -top-2 -right-2 {eventStarSize} z-[35]">
                 <Icon
                     name="eventStar"
-                    class="w-5 h-5"
+                    class="{eventStarSize}"
                 />
             </div>
         {/if}
