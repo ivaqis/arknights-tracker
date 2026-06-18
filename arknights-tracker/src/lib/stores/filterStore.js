@@ -243,7 +243,7 @@ export const equipmentManual = writable({ ...initialManualMode });
 export const equipmentSearch = writable("");
 export const equipmentGroupMode = createPersistentStore('equipmentGroupMode', true);
 
-export const weaponFilters = writable({ ...initialWeaponFilters });
+export const weaponFilters = writable({});
 export const weaponManual = writable({ ...initialManualMode });
 export const weaponSearch = writable("");
 export const weaponOwnedOnly = writable(false);
