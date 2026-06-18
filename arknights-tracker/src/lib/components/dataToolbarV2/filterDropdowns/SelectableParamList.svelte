@@ -1,7 +1,7 @@
 <script>
     export let paramList = [];
 
-    export let getLocaleFunc = (param) => param;
+    export let getLocaleFunc;
     export let paramBox;
 
     // bindable
