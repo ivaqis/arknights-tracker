@@ -179,7 +179,7 @@
                 <svg
                     width="{getXpx(tree.maxStage) + 500}"
                     height="{getYpx(tree.maxLayer) + 500}"
-                    viewBox="{getXpx(tree.maxStage) + 500} {getYpx(tree.maxLayer) + 500}"
+                    viewBox="0 0 {getXpx(tree.maxStage) + 500} {getYpx(tree.maxLayer) + 500}"
                 >
 
                     <g transform="translate({getXpx(tree.maxStage) + 500}, 0) scale(-1, 1)">

@@ -2,7 +2,7 @@
     import Image from "$lib/components/Image.svelte";
     import Icon from "$lib/components/Icon.svelte";
 
-    import { getRarityColor } from "$lib/utils/rarityUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
     import { FullBottle } from "$lib/classes/items/FullBottle.js";
 
     export let item = {};
@@ -80,8 +80,11 @@
     </div>
 
     {#if isEventItem}
-        <div class="absolute -top-2 -right-2 w-6 h-6 z-[35]">
-            <Icon name="eventStar"/>
+        <div class="absolute -top-2 -right-2 w-7 h-7 z-[35]">
+            <Icon
+                name="eventStar"
+                class="w-7 h-7"
+            />
         </div>
     {/if}
 
