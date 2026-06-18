@@ -107,7 +107,7 @@
     let flatDisplayLimit = 60;
 
     $: {
-        const _trigger = [searchQuery, sortField, sortDirection, isGrouped];
+        const _trigger = [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
         displayLimit = 4;
         flatDisplayLimit = 60;
         setTimeout(checkScroll, 50);
