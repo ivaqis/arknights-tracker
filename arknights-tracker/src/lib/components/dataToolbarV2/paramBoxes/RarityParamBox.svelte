@@ -1,11 +1,11 @@
 <script>
-    import ParamBox from "$lib/components/dataToolbarV2/paramBoxes/ParamBox.svelte";
+    import ParamBoxTemplate from "$lib/components/dataToolbarV2/paramBoxes/ParamBoxTemplate.svelte";
     import Icon from "$lib/components/Icon.svelte";
 
     export let styleMode = "default";
 </script>
 
-<ParamBox styleMode={styleMode}>
+<ParamBoxTemplate styleMode={styleMode}>
 
     <span class="font-bold pointer-events-none">
         <slot />
@@ -16,4 +16,4 @@
         class="w-3 h-3 text-current pointer-events-none"
     />
 
-</ParamBox>
+</ParamBoxTemplate>

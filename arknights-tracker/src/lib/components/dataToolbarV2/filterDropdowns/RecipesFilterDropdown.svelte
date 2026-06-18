@@ -3,7 +3,7 @@
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
-    import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import TextParamBoxTemplate from "$lib/components/dataToolbarV2/paramBoxes/TextParamBoxTemplate.svelte";
     import { t } from "$lib/i18n";
 
     export let filters = {};
@@ -69,7 +69,7 @@
 
         <SelectableParamList
             paramList={filters.events}
-            paramBox={TextParamBox}
+            paramBox={TextParamBoxTemplate}
             getLocaleFunc={(param) => $t(FactoryEvent.getEvent(param)?.title ?? "sort.events.nonEvent")}
             bind:selectedParamSet={selectedFilters.events}
         />
@@ -87,7 +87,7 @@
 
         <SelectableParamList
             paramList={filters.itemGroups}
-            paramBox={TextParamBox}
+            paramBox={TextParamBoxTemplate}
             getLocaleFunc={(param) => $t(`sort.itemGroups.${param}`)}
             bind:selectedParamSet={selectedFilters.itemGroups}
         />
@@ -105,7 +105,7 @@
 
         <SelectableParamList
             paramList={filters.itemTypes}
-            paramBox={TextParamBox}
+            paramBox={TextParamBoxTemplate}
             getLocaleFunc={(param) => $t(`sort.itemTypes.${param}`)}
             bind:selectedParamSet={selectedFilters.itemTypes}
         />
@@ -123,7 +123,7 @@
 
         <SelectableParamList
             paramList={filters.itemMaterials}
-            paramBox={TextParamBox}
+            paramBox={TextParamBoxTemplate}
             getLocaleFunc={(param) => $t(`sort.itemMaterials.${param}`)}
             bind:selectedParamSet={selectedFilters.itemMaterials}
         />
