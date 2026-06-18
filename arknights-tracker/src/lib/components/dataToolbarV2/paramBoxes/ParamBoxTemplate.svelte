@@ -16,7 +16,7 @@
     }
 </script>
 
-<div class="h-[32px] px-2 rounded flex items-center gap-2 border transition-all {getClasses(styleMode)}">
+<div class="h-[32px] px-2 rounded flex items-center gap-1.5 border transition-all {getClasses(styleMode)}">
 
     <slot/>
 
