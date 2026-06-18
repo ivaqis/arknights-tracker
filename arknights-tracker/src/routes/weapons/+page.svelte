@@ -25,7 +25,6 @@
         (wp) => wp && wp.id
     );
 
-    let sortOptions = getWeaponSortOptions();
     let sortField = "rarity";
     let sortDirection = "desc";
     let searchQuery = "";
@@ -160,15 +159,6 @@
     </div>
 
     <div class="w-full xl:w-[70%] mb-4">
-<!--        <DataToolbar-->
-<!--            bind:sortField-->
-<!--            bind:sortDirection-->
-<!--            bind:filters={$weaponFilters} -->
-<!--            bind:searchQuery={$weaponSearch} -->
-<!--            bind:manualMode={$weaponManual}-->
-<!--            bind:showOwnedOnly={$weaponOwnedOnly}-->
-<!--            mode="weapons" -->
-<!--        />-->
 
         <DataToolbar
             showSortDropdownButton={true}
@@ -183,7 +173,7 @@
 
             <SortSelectorDropdown
                 slot="sortDropdown"
-                optionList={sortOptions}
+                optionList={getWeaponSortOptions()}
                 bind:selectedOption={sortField}
             />
 
