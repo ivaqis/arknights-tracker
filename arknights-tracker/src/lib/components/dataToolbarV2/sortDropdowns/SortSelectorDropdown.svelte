@@ -14,7 +14,7 @@
     $: isOptionSelected = (option) => option === selectedOption;
 </script>
 
-<div class="absolute left-0 py-1 z-40 w-full flex flex-col bg-white dark:bg-[#383838] rounded-xl shadow-xl border border-gray-100 dark:border-[#444444] overflow-hidden">
+<div class="min-w-full py-1 flex flex-col bg-white dark:bg-[#383838] rounded-xl shadow-xl border border-gray-100 dark:border-[#444444] overflow-hidden">
 
     {#each optionList as option}
 

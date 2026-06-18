@@ -79,7 +79,7 @@
 
             {#if isSortDropdownOpen}
 
-                <div class="absolute top-12 left-0">
+                <div class="absolute top-12 left-0 min-w-full z-[60]">
 
                     <slot name="sortDropdown"/>
 
