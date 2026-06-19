@@ -21,6 +21,7 @@
     } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
     import { fade, scale } from "svelte/transition";
 
     $: selectedFilters = $essenceWeaponFilters;
@@ -173,33 +174,14 @@
             return compareResult;
         });
 
-    function filterCheck(filterParamSet, value) {
-        if (!filterParamSet || filterParamSet.size === 0) {
-            return true;
-        }
-
-        return filterParamSet.has(value);
-    }
-
-    function filterCheckLowerCase(filterParamSet, value) {
-        if (!filterParamSet || filterParamSet.size === 0) {
-            return true;
-        }
-
-        const valueLowerCase = value.toLowerCase();
-
-        for (let param of filterParamSet) {
-            if (param.toLowerCase() === valueLowerCase) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     let isFilterActive = false;
-    $: isFilterActive = Object.values(selectedFilters)
-        .some((set) => set.size > 0);
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || $essenceWeaponOwnedOnly;
+
+    function resetFilters() {
+        $essenceWeaponFilters = {};
+        $essenceWeaponOwnedOnly = false;
+    }
 
     let displayLimit = 40;
     $: if (
@@ -907,7 +889,7 @@
                     showFilterDropdownButton={true}
                     showSearchInput={true}
                     isFilterActive={isFilterActive}
-                    onFilterReset={() => $essenceWeaponFilters = {}}
+                    onFilterReset={resetFilters}
                     bind:searchString={$essenceWeaponSearch}
                     bind:sortDirection={sortDirection}
                 >
@@ -921,6 +903,7 @@
                     <WeaponFilterDropdown
                         slot="filterDropdown"
                         filters={getWeaponFilters()}
+                        onFilterReset={resetFilters}
                         bind:selectedFilters={$essenceWeaponFilters}
                         bind:showOwnedOnly={$essenceWeaponOwnedOnly}
                     />
