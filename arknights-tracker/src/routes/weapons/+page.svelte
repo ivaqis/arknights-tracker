@@ -16,6 +16,7 @@
     } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
 
     $: selectedFilters = $weaponFilters;
     $: searchQuery = $weaponSearch;
@@ -102,33 +103,14 @@
             return compareResult;
         });
 
-    function filterCheck(filterParamSet, value) {
-        if (!filterParamSet || filterParamSet.size === 0) {
-            return true;
-        }
-
-        return filterParamSet.has(value);
-    }
-
-    function filterCheckLowerCase(filterParamSet, value) {
-        if (!filterParamSet || filterParamSet.size === 0) {
-            return true;
-        }
-
-        const valueLowerCase = value.toLowerCase();
-
-        for (let param of filterParamSet) {
-            if (param.toLowerCase() === valueLowerCase) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     let isFilterActive = false;
-    $: isFilterActive = Object.values(selectedFilters)
-        .some((set) => set.size > 0);
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || showOwnedOnly;
+
+    function resetFilters() {
+        $weaponFilters = {};
+        $weaponOwnedOnly = false;
+    }
 
     let displayLimit = 40;
     $: if (searchQuery !== undefined || selectedFilters || sortField || sortDirection || showOwnedOnly) {
@@ -166,7 +148,7 @@
             showFilterDropdownButton={true}
             showSearchInput={true}
             isFilterActive={isFilterActive}
-            onFilterReset={() => $weaponFilters = {}}
+            onFilterReset={resetFilters}
             bind:searchString={$weaponSearch}
             bind:sortDirection={sortDirection}
         >
@@ -180,6 +162,7 @@
             <WeaponFilterDropdown
                 slot="filterDropdown"
                 filters={getWeaponFilters()}
+                onFilterReset={resetFilters}
                 bind:selectedFilters={$weaponFilters}
                 bind:showOwnedOnly={$weaponOwnedOnly}
             />
