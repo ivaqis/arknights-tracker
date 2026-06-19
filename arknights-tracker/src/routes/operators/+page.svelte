@@ -181,8 +181,7 @@
     })();
 
     let isFilterActive = false;
-    $: isFilterActive = Object.values(selectedFilters)
-        .some((set) => set.size > 0)
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
         || showOwnedOnly;
 
     function resetFilters() {
