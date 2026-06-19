@@ -1,5 +1,5 @@
 <script>
-    export let paramList = [];
+    export let paramGroups = [];
     export let maxSelectedParams = -1;
 
     export let getLocaleFunc;
@@ -97,23 +97,35 @@
     }
 </script>
 
-<div class="flex flex-wrap gap-2">
+<div class="flex flex-col gap-2.5">
 
-    {#each paramList as param (param)}
+    {#each paramGroups as paramList, index}
 
-        <button
-            class="rounded"
-            on:click={() => toggleParam(param)}
-        >
+        <div class="flex flex-wrap gap-2 {
+            index < paramGroups.length - 1
+                ? 'pb-2.5 border-b border-gray-200/60 dark:border-[#444]/50'
+                : ''
+        }">
 
-            <svelte:component
-                this={paramBox}
-                styleMode={getBoxStyleMode(param)}
-                paramId={param}
-                getLocaleFunc={getLocaleFunc}
-            />
+            {#each paramList as param (param)}
 
-        </button>
+                <button
+                    class="rounded"
+                    on:click={() => toggleParam(param)}
+                >
+
+                    <svelte:component
+                        this={paramBox}
+                        styleMode={getBoxStyleMode(param)}
+                        paramId={param}
+                        getLocaleFunc={getLocaleFunc}
+                    />
+
+                </button>
+
+            {/each}
+
+        </div>
 
     {/each}
 

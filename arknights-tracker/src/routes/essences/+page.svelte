@@ -1,24 +1,35 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { fade, scale } from "svelte/transition";
-    import { weapons } from "$lib/data/weapons.js";
-    import { essences } from "$lib/data/items/essences.js";
-    import { pullData } from "$lib/stores/pulls";
-    import { locations } from "$lib/data/locations.js";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { weaponFilters, weaponSearch, weaponManual } from '$lib/stores/filterStore';
-
+    import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import Button from "$lib/components/Button.svelte";
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
+    import WeaponFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/WeaponFilterDropdown.svelte";
+    import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
+    import SkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/SkillParamBox.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import { essences } from "$lib/data/items/essences.js";
+    import { locations } from "$lib/data/locations.js";
+    import { weapons } from "$lib/data/weapons.js";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import {
+        essenceWeaponFilters,
+        essenceWeaponOwnedOnly,
+        essenceWeaponSearch,
+        getWeaponFilters, getWeaponSortOptions
+    } from "$lib/stores/filterStore";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { fade, scale } from "svelte/transition";
 
-    $: filters = $weaponFilters;
-    $: searchQuery = $weaponSearch;
+    $: selectedFilters = $essenceWeaponFilters;
+    $: searchQuery = $essenceWeaponSearch;
+    $: showOwnedOnly = $essenceWeaponOwnedOnly;
 
     const allWeapons = Object.values(weapons || {}).filter((wp) => wp && wp.id);
 
@@ -91,14 +102,6 @@
         "smash",
     ];
 
-    let filters = {
-        rarity: [6, 5, 4, 3],
-        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-        attr1: [...attr1Skills],
-        attr2: [...attr2Skills],
-        attr3: [...attr3Skills],
-    };
-
     const { selectedId } = accountStore;
 
     $: filteredWeapons = allWeapons
@@ -140,33 +143,14 @@
                 idName.includes(query);
             if (!matchesSearch) return false;
 
-            const matchesRarity =
-                filters.rarity.length === 0 ||
-                filters.rarity.includes(wp.rarity);
+            const matchesRarity = filterCheck(selectedFilters.rarity, wp.rarity);
             const wpType = wp.type || wp.weapon;
-            const matchesType =
-                filters.type.length === 0 ||
-                (wpType &&
-                    filters.type.some(
-                        (w) => w.toLowerCase() === wpType.toLowerCase(),
-                    ));
-            const passesAttr1 =
-                filters.attr1.length === attr1Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr1.includes(s)));
-            const passesAttr2 =
-                filters.attr2.length === attr2Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr2.includes(s)));
-            const passesAttr3 =
-                filters.attr3.length === attr3Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr3.includes(s)));
+            const matchesType = filterCheckLowerCase(selectedFilters.type, wpType);
+            const passesAttr1 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr1, skill));
+            const passesAttr2 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr2, skill));
+            const passesAttr3 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr3, skill));
 
-            return (
-                matchesRarity &&
-                matchesType &&
-                passesAttr1 &&
-                passesAttr2 &&
-                passesAttr3
-            );
+            return matchesRarity && matchesType && passesAttr1 && passesAttr2 && passesAttr3;
         })
         .sort((a, b) => {
             let valA = sortField === "type" ? a.type || a.weapon : a[sortField];
@@ -192,6 +176,15 @@
             }
             return compareResult;
         });
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || $essenceWeaponOwnedOnly;
+
+    function resetFilters() {
+        $essenceWeaponFilters = {};
+        $essenceWeaponOwnedOnly = false;
+    }
 
     let displayLimit = 40;
     $: if (
@@ -229,6 +222,28 @@
     let invAttr2 = null;
     let invAttr3 = null;
 
+    let invAttr1Set = new Set();
+    let invAttr2Set = new Set();
+    let invAttr3Set = new Set();
+
+    $: if (invAttr1Set) {
+        let skill = invAttr1Set.values().next().value ?? null;
+
+        setInvAttr(1, skill);
+    }
+
+    $: if (invAttr2Set) {
+        let skill = invAttr2Set.values().next().value ?? null;
+
+        setInvAttr(2, skill);
+    }
+
+    $: if (invAttr3Set) {
+        let skill = invAttr3Set.values().next().value ?? null;
+
+        setInvAttr(3, skill);
+    }
+
     const rarityColors = {
         6: "#F4700C", // Красный/Оранжевый
         5: "#F9B90C", // Золотой
@@ -255,6 +270,10 @@
         invAttr2 = null;
         invAttr3 = null;
         isBottomSheetOpen = false;
+
+        invAttr1Set = new Set();
+        invAttr2Set = new Set();
+        invAttr3Set = new Set();
     }
 
     $: invSelectedCount = [invAttr1, invAttr2, invAttr3].filter(Boolean).length;
@@ -892,15 +911,34 @@
 
         {#if activeTab === "optimizer"}
             <div>
+
                 <DataToolbar
-                    bind:sortField
-                    bind:sortDirection
-                    bind:filters={$weaponFilters} 
-                    bind:searchQuery={$weaponSearch} 
-                    bind:manualMode={$weaponManual}
-                    bind:showOwnedOnly
-                    mode="weapons"
-                />
+                    showSortDropdownButton={true}
+                    showSortDirectionButton={true}
+                    showFilterDropdownButton={true}
+                    showSearchInput={true}
+                    isFilterActive={isFilterActive}
+                    onFilterReset={resetFilters}
+                    bind:searchString={$essenceWeaponSearch}
+                    bind:sortDirection={sortDirection}
+                >
+
+                    <SortSelectorDropdown
+                        slot="sortDropdown"
+                        optionList={getWeaponSortOptions()}
+                        bind:selectedOption={sortField}
+                    />
+
+                    <WeaponFilterDropdown
+                        slot="filterDropdown"
+                        filters={getWeaponFilters()}
+                        onFilterReset={resetFilters}
+                        bind:selectedFilters={$essenceWeaponFilters}
+                        bind:showOwnedOnly={$essenceWeaponOwnedOnly}
+                    />
+
+                </DataToolbar>
+
             </div>
 
             <div
@@ -969,118 +1007,51 @@
             {/if}
         {:else if activeTab === "inventory"}
             <div class="flex flex-col gap-6 pt-2 pb-8">
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr1")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr1Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr1 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(1, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    <div
-                                        class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
-                                    >
-                                        <Icon
-                                            name={skillIcons[skill]}
-                                            class="w-3 h-3 text-white pointer-events-none"
-                                        />
-                                    </div>
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none"
-                                    >{$t(`skills.${skill}`) || skill}</span
-                                >
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr1Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr1Set}
+                    />
+
                 </div>
 
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr2")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr2Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr2 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(2, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    {#if elementColors[skill]}
-                                        <Icon
-                                            name={skillIcons[skill]}
-                                            class="w-4 h-4 pointer-events-none {elementColors[
-                                                skill
-                                            ]}"
-                                        />
-                                    {:else}
-                                        <div
-                                            class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
-                                        >
-                                            <Icon
-                                                name={skillIcons[skill]}
-                                                class="w-3 h-3 text-white pointer-events-none"
-                                            />
-                                        </div>
-                                    {/if}
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none {elementColors[
-                                        skill
-                                    ] || 'text-current'}"
-                                >
-                                    {$t(`skills.${skill}`) || skill}
-                                </span>
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr2Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr2Set}
+                    />
+
                 </div>
 
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr3")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr3Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr3 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(3, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    <Icon
-                                        name={skillIcons[skill]}
-                                        class="w-4 h-4 text-current pointer-events-none"
-                                    />
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none"
-                                    >{$t(`skills.${skill}`) || skill}</span
-                                >
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr3Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr3Set}
+                    />
+
                 </div>
+
             </div>
         {/if}
     </div>

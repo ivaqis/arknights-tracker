@@ -20,3 +20,15 @@ const attrId2TextColor = {
     attr_pulsedam: "text-[#FEC001]",
     attr_phydam: "text-slate-500 dark:text-slate-300",
 };
+
+export function getTextColorByElement(element) {
+    return element2TextColor[element] ?? "";
+}
+
+const element2TextColor = {
+    "heat": "text-[#FE633D]",
+    "cryo": "text-[#22C6D0]",
+    "nature": "text-[#AFCD47] dark:text-[#C3E354]",
+    "electric": "text-[#FEC001]",
+    "physical": "text-slate-500 dark:text-slate-300"
+};

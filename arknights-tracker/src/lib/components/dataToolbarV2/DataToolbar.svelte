@@ -7,6 +7,7 @@
     export let showFilterDropdownButton = false;
     export let showSearchInput = false;
     export let showGroupButton = false;
+    export let showExportExcelButton = false;
 
     export let sortDirection = "desc"; // "desc | "asc"
     export let searchString = "";
@@ -14,6 +15,7 @@
 
     export let isFilterActive = false;
     export let onFilterReset = () => {};
+    export let onExportExcel = () => {};
 
     let isFilterDropdownOpen = false;
     let isSortDropdownOpen = false;
@@ -79,7 +81,7 @@
 
             {#if isSortDropdownOpen}
 
-                <div class="absolute top-12 left-0">
+                <div class="absolute top-12 left-0 min-w-full z-[60]">
 
                     <slot name="sortDropdown"/>
 
@@ -254,6 +256,26 @@
                 name="list"
                 class="w-5 h-5 pointer-events-none"
             />
+
+        </button>
+
+    {/if}
+
+    {#if showExportExcelButton}
+
+        <button
+            class="h-[40px] px-4 rounded-full border border-gray-200 dark:border-[#444] dark:bg-[#383838] hover:dark:bg-[#444] text-gray-700 dark:text-[#E0E0E0] hover:text-[#1D6F42] hover:border-[#1D6F42] dark:hover:text-green-400 dark:hover:border-green-500 hover:bg-green-50/50 dark:hover:bg-green-950/20 transition-all flex items-center justify-center gap-2 text-sm shadow-sm cursor-pointer whitespace-nowrap shrink-0"
+            on:click={onExportExcel}
+        >
+
+            <Icon
+                name="export"
+                class="w-5 h-5 pointer-events-none"
+            />
+
+            <span>
+                {$t("page.recordsSettings.exportXLSX")}
+            </span>
 
         </button>
 

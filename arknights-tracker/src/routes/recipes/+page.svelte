@@ -18,6 +18,7 @@
         itemSearch,
         itemSortParams
     } from "$lib/stores/filterStore.js";
+    import { filterCheck } from "$lib/utils/filterUtils.js";
 
     $: selectedFilters = $itemFilters;
     $: searchQuery = $itemSearch;
@@ -49,11 +50,11 @@
         itemComparator.localeComparator.isReversed = sortParams.sortFieldParams.localeName !== "a-z";
 
         let items = [...allItems].filter((item) => {
-            let rarity = itemCheck(selectedFilters.rarity, item.rarity);
-            let group = itemCheck(selectedFilters.itemGroups, item.groupId);
-            let type = itemCheck(selectedFilters.itemTypes, item.type);
-            let material = itemCheck(selectedFilters.itemMaterials, item.material ?? "nonMaterial");
-            let event = itemCheck(selectedFilters.events, item.getEventIds()?.[0] ?? "nonEvent");
+            let rarity = filterCheck(selectedFilters.rarity, item.rarity);
+            let group = filterCheck(selectedFilters.itemGroups, item.groupId);
+            let type = filterCheck(selectedFilters.itemTypes, item.type);
+            let material = filterCheck(selectedFilters.itemMaterials, item.material ?? "nonMaterial");
+            let event = filterCheck(selectedFilters.events, item.getEventIds()?.[0] ?? "nonEvent");
             let query = !searchQuery
                 || item.id.includes(searchQuery)
                 || $t(`itemNames.${item.id}`).includes(searchQuery);
@@ -63,14 +64,6 @@
 
         return itemComparator.getSortedList(items, sortDirection === "desc");
     })();
-
-    function itemCheck(filterParamsSet, value) {
-        if (!filterParamsSet || filterParamsSet.size === 0) {
-            return true;
-        }
-
-        return filterParamsSet.has(value);
-    }
 
     function resetSortParams() {
         $itemSortParams = getDefaultItemSortParams();

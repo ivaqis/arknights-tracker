@@ -4,7 +4,7 @@
 
     export let paramBox;
 
-    export let getLocaleFunc = (param) => param?.toString() ?? "null";
+    export let getLocaleFunc;
 
     // bindable
     export let paramList = []; // if bound, it will be updated on change order of elements

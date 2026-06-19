@@ -1,17 +1,19 @@
 <script>
-    import { FactoryEvent } from "$lib/classes/events/FactoryEvent.js";
     import DropdownTemplate from "$lib/components/dataToolbarV2/DropdownTemplate.svelte";
     import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
     import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
-    import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import SkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/SkillParamBox.svelte";
+    import WeaponTypeParamBox from "$lib/components/dataToolbarV2/paramBoxes/WeaponTypeParamBox.svelte";
+    import SwitchButton from "$lib/components/SwitchButton.svelte";
     import { t } from "$lib/i18n";
 
     export let filters = {};
 
     export let selectedFilters = {};
+    export let showOwnedOnly;
 
-    export let onFilterReset = () => {selectedFilters = {}};
+    export let onFilterReset = () => selectedFilters = {};
 
     function toggleFilterGroup(groupName) {
         if (!selectedFilters[groupName]) {
@@ -42,6 +44,21 @@
     onResetButton={onFilterReset}
 >
 
+    <div
+        slot="top"
+        class="flex items-center gap-3"
+    >
+
+        <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
+            {$t("sort.ownedOnly")}
+        </span>
+
+        <SwitchButton
+            bind:isActive={showOwnedOnly}
+        />
+
+    </div>
+
     <div class="flex flex-col items-start gap-2">
 
         <GroupTitle
@@ -63,16 +80,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("events")}
+            onClick={() => toggleFilterGroup("type")}
         >
-            {$t("sort.eventsTitle")}
+            {$t("sort.type")}
         </GroupTitle>
 
         <SelectableParamList
-            paramList={filters.events}
-            paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(FactoryEvent.getEvent(param)?.title ?? "sort.events.nonEvent")}
-            bind:selectedParamSet={selectedFilters.events}
+            paramBox={WeaponTypeParamBox}
+            paramList={filters.type}
+            bind:selectedParamSet={selectedFilters.type}
         />
 
     </div>
@@ -81,16 +97,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemGroups")}
+            onClick={() => toggleFilterGroup("attr1")}
         >
-            {$t("sort.itemGroup")}
+            {$t("sort.attribute1")}
         </GroupTitle>
 
         <SelectableParamList
-            paramList={filters.itemGroups}
-            paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemGroups.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemGroups}
+            paramBox={SkillParamBox}
+            paramList={filters.attr1}
+            bind:selectedParamSet={selectedFilters.attr1}
         />
 
     </div>
@@ -99,16 +114,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemTypes")}
+            onClick={() => toggleFilterGroup("attr2")}
         >
-            {$t("sort.itemTypesTitle")}
+            {$t("sort.attribute2")}
         </GroupTitle>
 
         <SelectableParamList
-            paramList={filters.itemTypes}
-            paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemTypes.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemTypes}
+            paramBox={SkillParamBox}
+            paramList={filters.attr2}
+            bind:selectedParamSet={selectedFilters.attr2}
         />
 
     </div>
@@ -117,16 +131,15 @@
 
         <GroupTitle
             asButton={true}
-            onClick={() => toggleFilterGroup("itemMaterials")}
+            onClick={() => toggleFilterGroup("attr3")}
         >
-            {$t("sort.itemMaterialsTitle")}
+            {$t("sort.attribute3")}
         </GroupTitle>
 
         <SelectableParamList
-            paramList={filters.itemMaterials}
-            paramBox={TextParamBox}
-            getLocaleFunc={(param) => $t(`sort.itemMaterials.${param}`)}
-            bind:selectedParamSet={selectedFilters.itemMaterials}
+            paramBox={SkillParamBox}
+            paramList={filters.attr3}
+            bind:selectedParamSet={selectedFilters.attr3}
         />
 
     </div>

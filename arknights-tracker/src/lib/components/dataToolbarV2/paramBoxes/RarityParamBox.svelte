@@ -9,13 +9,17 @@
 
 <ParamBoxTemplate styleMode={styleMode}>
 
-    <span class="font-bold pointer-events-none">
-        {paramId}
-    </span>
+    <div class="flex flex-row items-center gap-1.5 mx-0.5">
 
-    <Icon
-        name="star"
-        class="w-3 h-3 text-current pointer-events-none"
-    />
+        <span class="font-bold pointer-events-none">
+            {paramId}
+        </span>
+
+        <Icon
+            name="star"
+            class="w-3.5 h-3.5 text-current pointer-events-none"
+        />
+
+    </div>
 
 </ParamBoxTemplate>

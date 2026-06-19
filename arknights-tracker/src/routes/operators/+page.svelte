@@ -1,19 +1,29 @@
 <script>
-    import { goto } from "$app/navigation";
-    import { t } from "$lib/i18n";
-    import { characters } from "$lib/data/characters.js";
-    import { pullData } from "$lib/stores/pulls";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { operatorFilters, operatorSearch, operatorManual, operatorOwnedOnly } from '$lib/stores/filterStore';
-
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
-    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import OperatorFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/OperatorFilterDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import { characters } from "$lib/data/characters.js";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import {
+        getOperatorFilters,
+        getOperatorSortOptions,
+        operatorFilters,
+        operatorOwnedOnly,
+        operatorSearch
+    } from "$lib/stores/filterStore";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
 
-    $: filters = $operatorFilters;
+    $: selectedFilters = $operatorFilters;
     $: searchQuery = $operatorSearch;
     $: showOwnedOnly = $operatorOwnedOnly;
+
+    $: selectedMaterial = selectedFilters.skillMaterial?.values().next().value ?? null;
+    let selectedSkillMaterialType = "any";
 
     const allOperators = Object.values(characters || {}).filter(
         (op) => op && op.id,
@@ -23,13 +33,6 @@
     let sortDirection = "desc";
     let searchQuery = "";
     let showOwnedOnly = false;
-    
-    let filters = {
-        rarity: [6, 5, 4],
-        class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
-        element: ["cryo", "physical", "nature", "heat", "electric"],
-        weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-    };
 
     const { selectedId } = accountStore;
 
@@ -58,7 +61,7 @@
         return loadingPromise;
     }
 
-    $: if (filters.skillMaterial && !isDataLoaded) {
+    $: if (selectedMaterial && !isDataLoaded) {
         loadCharacterData();
     }
 
@@ -149,13 +152,13 @@
 
                 if (!matchesSearch) return false;
                 
-                const matchesRarity = filters.rarity.length === 0 || filters.rarity.includes(op.rarity);
-                const matchesClass = filters.class.length === 0 || filters.class.some((c) => c.toLowerCase() === op.class?.toLowerCase());
-                const matchesElement = filters.element.length === 0 || filters.element.some((e) => e.toLowerCase() === op.element?.toLowerCase());
-                const matchesWeapon = filters.weapon.length === 0 || (op.weapon && filters.weapon.some((w) => w.toLowerCase() === op.weapon.toLowerCase()));
+                const matchesRarity = filterCheck(selectedFilters.rarity, op.rarity);
+                const matchesClass = filterCheckLowerCase(selectedFilters.class, op.class ?? "");
+                const matchesElement = filterCheckLowerCase(selectedFilters.element, op.element ?? "");
+                const matchesWeapon = filterCheckLowerCase(selectedFilters.weapon, op.weapon);
 
-                if (filters.skillMaterial) {
-                    const count = getSkillMaterialCount(op.id, filters.skillMaterial, filters.skillMaterialType);
+                if (selectedMaterial) {
+                    const count = getSkillMaterialCount(op.id, selectedMaterial, selectedSkillMaterialType);
                     if (count === 0) return false;
                 }
 
@@ -176,6 +179,15 @@
                     : String(valB).localeCompare(String(valA));
             });
     })();
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || showOwnedOnly;
+
+    function resetFilters() {
+        $operatorFilters = {};
+        $operatorOwnedOnly = false;
+    }
 
     let displayLimit = 40;
     $: if (searchQuery !== undefined || filters || sortField || sortDirection || showOwnedOnly) {
@@ -206,14 +218,35 @@
     </div>
 
     <div class="w-full xl:w-[70%] mb-4">
+
         <DataToolbar
-            bind:sortField
-            bind:sortDirection
-            bind:filters={$operatorFilters} 
-            bind:searchQuery={$operatorSearch} 
-            bind:manualMode={$operatorManual}
-            bind:showOwnedOnly={$operatorOwnedOnly}
-        />
+            showSortDropdownButton={true}
+            showSortDirectionButton={true}
+            showFilterDropdownButton={true}
+            showSearchInput={true}
+            isFilterActive={isFilterActive}
+            onFilterReset={resetFilters}
+            bind:searchString={$operatorSearch}
+            bind:sortDirection={sortDirection}
+        >
+
+            <SortSelectorDropdown
+                slot="sortDropdown"
+                optionList={getOperatorSortOptions()}
+                bind:selectedOption={sortField}
+            />
+
+            <OperatorFilterDropdown
+                slot="filterDropdown"
+                filters={getOperatorFilters()}
+                onFilterReset={resetFilters}
+                bind:selectedFilters={$operatorFilters}
+                bind:showOwnedOnly={$operatorOwnedOnly}
+                bind:selectedSkillMaterialType={selectedSkillMaterialType}
+            />
+
+        </DataToolbar>
+
     </div>
 
     <div class="w-full xl:w-[80%] pb-8">
@@ -225,8 +258,8 @@
                     <OperatorCard 
                         operator={op} 
                         isNew={op.isNew} 
-                        materialIcon={filters.skillMaterial} 
-                        materialCount={getSkillMaterialCount(op.id, filters.skillMaterial, filters.skillMaterialType)} 
+                        materialIcon={selectedMaterial}
+                        materialCount={getSkillMaterialCount(op.id, selectedMaterial, selectedSkillMaterialType)}
                     />
                 </div>
             {/each}

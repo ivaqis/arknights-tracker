@@ -8,7 +8,7 @@
 
     <slot name="left"/>
 
-    <div class="text-xs font-bold pointer-events-none">
+    <div class="text-xs font-bold pointer-events-none mx-0.5">
 
         <slot />
 

@@ -1,17 +1,24 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { currentLocale } from "$lib/stores/locale";
-    import { equipment } from "$lib/data/items/equipment.js";
-    import { pullData } from "$lib/stores/pulls";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { equipmentFilters, equipmentSearch, equipmentManual, equipmentGroupMode } from "$lib/stores/filterStore";
-
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/dataToolbar/DataToolbar.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import EquipmentFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EquipmentFilterDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import { equipment } from "$lib/data/items/equipment.js";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import {
+        equipmentFilters,
+        equipmentGroupMode,
+        equipmentSearch,
+        getEquipmentFilters,
+        getEquipmentSortOptions
+    } from "$lib/stores/filterStore";
+    import { currentLocale } from "$lib/stores/locale";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
 
-    $: filters = $equipmentFilters;
+    $: selectedFilters = $equipmentFilters;
     $: searchQuery = $equipmentSearch;
     $: isGrouped = $equipmentGroupMode;
 
@@ -25,49 +32,14 @@
     let searchQuery = "";
     let showOwnedOnly = false;
 
+    let selectedAttrType = "any";
+
     const availablePacks = [
-        ...new Set(allEquipment.map((eq) => eq.pack).filter(Boolean)),
-    ];
-    //const available2Stats = [...new Set(allEquipment.flatMap(eq => (eq.displayAttr || []).map(a => a.attrType)))];
-    const availableStats = [
-        "Def",
-        "Str",
-        "Agi",
-        "Wisd",
-        "Will",
-        "Atk",
-        "CriticalRate",
-        "UltimateSpGainScalar",
-        "OriginiumArts",
-        "Sub",
-        "Main",
-        "NormalSkillEfficiency",
-        "ComboSkillEfficiency",
-        "UltimateSkillEfficiency",
-        "SpellDamageIncrease",
-        "AllSkillDamageIncrease",
-        "PhysicalDamageIncrease",
-        "AttrDamageToBrokenUnitIncrease",
-        "NormalAttackDamageIncrease",
-        "CrystAndPulseDamageIncrease",
-        "FireAndNaturalDamageIncrease",
-        "MaxHp",
-        "AllDamageTakenScalar",
-        "HealOutputIncrease",
+        ...new Set( allEquipment.map((eq) => eq.pack).filter((pack) => pack) ),
     ];
 
-    // 0 - body, 1 - hand, 2 - edc
-    let filters = {
-        rarity: [5, 4, 3, 2, 1],
-        partType: [0, 1, 2],
-        pack: [],
-        stats: {
-            any: [],
-            1: [],
-            2: [],
-            3: [],
-        },
-    };
+    const allFilters = getEquipmentFilters();
+    allFilters.pack = availablePacks;
 
     // onMount(() => {
     //     const allEquip = Object.values(equipment);
@@ -95,32 +67,32 @@
             const matchesSearch =
                 !query || locName.includes(query) || idName.includes(query);
             if (!matchesSearch) return false;
+
             const itemRarity = eq.rarity || 1;
-            const matchesRarity =
-                filters.rarity.length === 0 ||
-                filters.rarity.includes(itemRarity);
+            const matchesRarity = filterCheck(selectedFilters.rarity, itemRarity);
+
             const itemPartType = eq.partType !== undefined ? eq.partType : 0;
-            const matchesPart =
-                filters.partType.length === 0 ||
-                filters.partType.includes(itemPartType);
+            const matchesPart = filterCheck(selectedFilters.partType, getPartTypeId(itemPartType));
+
             const itemPack = eq.pack || "none";
-            const matchesPack =
-                filters.pack.length === 0 || filters.pack.includes(itemPack);
+            const matchesPack = filterCheck(selectedFilters.pack, itemPack);
+
             const allItemAttributes = [
                 ...(eq.equipAttr || []),
                 ...(eq.displayAttr || []),
             ].map((a) => String(a.attrType || "").toLowerCase());
-            const passesAny =
-                filters.stats.any.length === 0 ||
-                filters.stats.any.some((stat) =>
-                    allItemAttributes.includes(String(stat).toLowerCase()),
-                );
+
+            const passesAny = allItemAttributes.some((stat) => filterCheckLowerCase(selectedFilters.stats_any, stat));
+
             if (!passesAny) return false;
+
             for (let i = 1; i <= 3; i++) {
-                const required = filters.stats[i];
-                if (required && required.length > 0) {
-                    const statAtThisPos = allItemAttributes[i]; 
-                    if (!statAtThisPos || !required.map(s => String(s).toLowerCase()).includes(statAtThisPos)) {
+                const required = selectedFilters[`stats_${i}`];
+
+                if (required && required.size > 0) {
+                    const statAtThisPos = allItemAttributes[i];
+
+                    if (!statAtThisPos || !filterCheckLowerCase(required, statAtThisPos)) {
                         return false;
                     }
                 }
@@ -169,6 +141,23 @@
         return baseFiltered.sort(sortLogic);
     })();
 
+    function getPartTypeId(partType) {
+        switch (partType) {
+            case 0: return "body";
+            case 1: return "hand";
+            case 2: return "edc";
+            default: return "";
+        }
+    }
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0);
+
+    function resetFilters() {
+        $equipmentFilters = {};
+        selectedAttrType = "any"
+    }
+
     $: groupedEquipment = filteredEquipment.reduce((groups, eq) => {
         const packKey = eq.pack || "none";
         if (!groups[packKey]) groups[packKey] = [];
@@ -202,7 +191,7 @@
     $: {
         const _trigger = [
             searchQuery,
-            filters,
+            selectedFilters,
             sortField,
             sortDirection,
             showOwnedOnly,
@@ -471,19 +460,37 @@
     </div>
 
     <div class="w-full xl:w-[70%] mb-3">
+
         <DataToolbar
-            bind:sortField
-            bind:sortDirection
-            bind:filters={$equipmentFilters}
-            bind:searchQuery={$equipmentSearch}
-            bind:manualMode={$equipmentManual}
-            bind:showOwnedOnly
-            bind:groupMode={$equipmentGroupMode}
-            mode="equipment"
-            {availablePacks}
-            {availableStats}
-            exportXLSX={exportEquipmentExcel}
-        />
+            showSortDropdownButton={true}
+            showSortDirectionButton={true}
+            showFilterDropdownButton={true}
+            showSearchInput={true}
+            showGroupButton={true}
+            showExportExcelButton={true}
+            isFilterActive={isFilterActive}
+            onFilterReset={resetFilters}
+            onExportExcel={exportEquipmentExcel}
+            bind:searchString={$equipmentSearch}
+            bind:isGrouped={$equipmentGroupMode}
+            bind:sortDirection={sortDirection}
+        >
+
+            <SortSelectorDropdown
+                slot="sortDropdown"
+                optionList={getEquipmentSortOptions()}
+                bind:selectedOption={sortField}
+            />
+
+            <EquipmentFilterDropdown
+                slot="filterDropdown"
+                filters={allFilters}
+                bind:selectedFilters={$equipmentFilters}
+                bind:selectedAttrType={selectedAttrType}
+            />
+
+        </DataToolbar>
+
     </div>
 
     <div class="w-full xl:w-[69%] pb-12 flex flex-col gap-5 relative">

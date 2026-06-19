@@ -15,55 +15,127 @@ function createPersistentStore(key, startValue) {
     return store;
 }
 
-const attr1Skills = ["attr_agi", "attr_str", "attr_will", "attr_wisd", "attr_main"];
-const attr2Skills = [
-    "attr_atk", "attr_firedam", "attr_crirate", "attr_heal", "attr_hp", 
-    "attr_usp", "attr_icedam", "attr_magicdam", "attr_naturaldam", 
-    "attr_phydam", "attr_physpell", "attr_pulsedam"
-];
-const attr3Skills = [
-    "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
-    "combo", "crit", "force", "heal", "keyword", "phyabn", "smash"
-];
+export function getOperatorFilters() {
+    return {
+        rarity: [6, 5, 4],
+        class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
+        element: ["cryo", "nature", "heat", "electric", "physical"],
+        weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        skillMaterialType: ["any", "basic_combo", "battle_ultimate", "ascension"],
+        skillMaterial: [
+            "d96SteelSample4",
+            "metadiastimaPhotoemissionTube",
+            "tachyonScreeningLattice",
+            "quadrantFittingFluid",
+            "triphasicNanoflake"
+        ]
+    };
+}
 
-const initialEquipmentFilters = {
-    rarity: [5, 4, 3, 2, 1],
-    partType: [0, 1, 2], 
-    pack: [],
-    stats: {
-        any: [],
-        1: [],
-        2: [],
-        3: []
-    }
-};
+export function getWeaponFilters() {
+    return {
+        rarity: [6, 5, 4, 3],
+        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        attr1: [
+            "attr_agi",
+            "attr_str",
+            "attr_will",
+            "attr_wisd",
+            "attr_main"
+        ],
+        attr2: [
+            "attr_firedam",
+            "attr_icedam",
+            "attr_naturaldam",
+            "attr_pulsedam",
+            "attr_phydam",
+            "attr_atk",
+            "attr_crirate",
+            "attr_hp",
+            "attr_heal",
+            "attr_usp",
+            "attr_physpell",
+            "attr_magicdam",
+        ],
+        attr3: [
+            "tacafter",
+            "magabn",
+            "burst",
+            "spirit",
+            "tactic",
+            "ult",
+            "break",
+            "combo",
+            "crit",
+            "force",
+            "heal",
+            "keyword",
+            "phyabn",
+            "smash"
+        ]
+    };
+}
 
-const initialWeaponFilters = {
-    rarity: [6, 5, 4, 3],
-    type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-    attr1: [...attr1Skills],
-    attr2: [...attr2Skills],
-    attr3: [...attr3Skills]
-};
+export function getEquipmentFilters() {
+    return {
+        rarity: [5, 4, 3, 2, 1],
+        partType: ["body", "hand", "edc"],
+        pack: [],
+        stats: [
+            [
+                "Def",
+                "Str",
+                "Agi",
+                "Wisd",
+                "Will",
+                "Atk",
+                "CriticalRate",
+                "UltimateSpGainScalar",
+                "OriginiumArts",
+                "Sub",
+                "Main"
+            ], [
+                "NormalSkillEfficiency",
+                "ComboSkillEfficiency",
+                "UltimateSkillEfficiency",
+                "SpellDamageIncrease",
+                "AllSkillDamageIncrease"
+            ], [
+                "PhysicalDamageIncrease",
+                "AttrDamageToBrokenUnitIncrease",
+                "NormalAttackDamageIncrease",
+                "CrystAndPulseDamageIncrease",
+                "FireAndNaturalDamageIncrease"
+            ], [
+                "MaxHp",
+                "AllDamageTakenScalar",
+                "HealOutputIncrease"
+            ]
+        ]
+    };
+}
 
-const initialOperatorFilters = {
-    rarity: [6, 5, 4],
-    class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
-    element: ["cryo", "physical", "nature", "heat", "electric"],
-    weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-    skillMaterialType: "any",
-    skillMaterial: null
-};
+export function getEnemyFilters() {
+    return {
+        rarity: [6, 5, 4, 3]
+    };
+}
 
-const initialEnemiesFilters = {
-    rarity: [6, 5, 4, 3]
-};
+export function getOperatorSortOptions() {
+    return ["rarity", "class", "element", "weapon"];
+}
 
-const initialManualMode = {
-    rarity: false, partType: false, pack: false, stats: false,
-    class: false, element: false, weapon: false, type: false, attr1: false, attr2: false, attr3: false,
-    itemSubGroups: false
-};
+export function getWeaponSortOptions() {
+    return ["rarity", "type"];
+}
+
+export function getEquipmentSortOptions() {
+    return ["rarity"];
+}
+
+export function getEnemySortOptions() {
+    return ["rarity"];
+}
 
 export function getDefaultItemSortParams() {
     return {
@@ -148,18 +220,19 @@ export function getDefaultItemSortParams() {
     };
 }
 
-export const equipmentFilters = writable({ ...initialEquipmentFilters });
-export const equipmentManual = writable({ ...initialManualMode });
+export const equipmentFilters = writable({});
 export const equipmentSearch = writable("");
 export const equipmentGroupMode = createPersistentStore('equipmentGroupMode', true);
 
-export const weaponFilters = writable({ ...initialWeaponFilters });
-export const weaponManual = writable({ ...initialManualMode });
+export const weaponFilters = writable({});
 export const weaponSearch = writable("");
 export const weaponOwnedOnly = writable(false);
 
-export const operatorFilters = writable({ ...initialOperatorFilters });
-export const operatorManual = writable({ ...initialManualMode });
+export const essenceWeaponFilters = writable({});
+export const essenceWeaponSearch = writable("");
+export const essenceWeaponOwnedOnly = writable(false);
+
+export const operatorFilters = writable({});
 export const operatorSearch = writable("");
 export const operatorOwnedOnly = writable(false);
 
