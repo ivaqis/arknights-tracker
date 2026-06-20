@@ -4,6 +4,7 @@
   import { getWeaponCategory } from "$lib/utils/importUtils";
 
   import Icon from "$lib/components/Icon.svelte";
+  import Tooltip from "$lib/components/Tooltip.svelte";
 
   export let rawPulls = [];
   export let bannerType = "";
@@ -94,17 +95,9 @@
 
   let isPieHovered = false;
   let hoveredBarIdx = null;
-  let hoveredBarPosition = { x: 0, y: 0 };
 
-  $: hoveredItem = hoveredBarIdx !== null ? timelineData[hoveredBarIdx] : null;
-
-  function handleBarHover(event, idx) {
+  function handleBarHover(idx) {
     hoveredBarIdx = idx;
-    const rect = event.currentTarget.getBoundingClientRect();
-    hoveredBarPosition = {
-      x: rect.left + rect.width / 2,
-      y: rect.top,
-    };
   }
 
   function handleBarLeave() {
@@ -125,28 +118,23 @@
       class="relative flex flex-col items-center justify-center w-full py-1"
     >
       {#if totalCount > 0}
-        <div
-          class="w-40 max-w-full aspect-square rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out relative z-10 {isPieHovered
-            ? 'scale-105'
-            : ''}"
-          style="background: {pieGradient};"
-          role="img"
+        <Tooltip
+          class="w-40 max-w-full aspect-square rounded-full relative z-10"
           on:mouseenter={() => (isPieHovered = true)}
           on:mouseleave={() => (isPieHovered = false)}
-        ></div>
-
-        {#if isPieHovered}
-          <div
-          class="absolute 
-                 z-50 min-w-[160px] p-3 rounded-xl border backdrop-blur-sm shadow-xl
-                 bg-white/95 border-gray-200 
-                 dark:bg-[#383838] dark:border-[#444444] 
-                 pointer-events-none animate-in fade-in zoom-in-95 duration-200
-                 left-1/2 -translate-x-1/2 top-[100%] mt-4
-                 xl:left-[85%] xl:top-1/2 xl:-translate-y-1/2 xl:translate-x-0 xl:mt-0 xl:ml-2"
         >
-            <div class="space-y-1.5">
-              <div class="flex items-center justify-between gap-3 text-xs">
+          <div
+            class="w-full h-full rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out {isPieHovered
+              ? 'scale-105'
+              : ''}"
+            style="background: {pieGradient};"
+            role="img"
+          ></div>
+
+          <div slot="content" class="min-w-[160px] py-1 text-xs text-start">
+            <div class="space-y-1.5 font-nums text-white">
+              <!-- 6 Stars -->
+              <div class="flex items-center justify-between gap-3">
                 <div class="flex items-center gap-1.5 text-[#D0926E] font-bold">
                   <div class="w-2.5 h-2.5 flex items-center justify-center">
                     <Icon name="star" class="w-4 h-4" />
@@ -154,11 +142,11 @@
                   <span>6</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="font-nums font-bold text-gray-700 dark:text-[#E0E0E0]">
+                  <span class="font-bold text-white">
                     {rawPulls.filter((p) => p.rarity === 6).length}
                   </span>
                   <span
-                    class="font-nums text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right"
+                    class="text-[10px] text-white/60 w-8 text-right"
                   >
                     {(
                       (rawPulls.filter((p) => p.rarity === 6).length /
@@ -170,7 +158,7 @@
               </div>
 
               <!-- 5 Stars -->
-              <div class="flex items-center justify-between gap-3 text-xs">
+              <div class="flex items-center justify-between gap-3">
                 <div class="flex items-center gap-1.5 text-[#E3BC55] font-bold">
                   <div class="w-2.5 h-2.5 flex items-center justify-center">
                     <Icon name="star" class="w-4 h-4" />
@@ -178,10 +166,9 @@
                   <span>5</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="font-nums font-bold text-gray-700 dark:text-[#E0E0E0]">{count5}</span
-                  >
+                  <span class="font-bold text-white">{count5}</span>
                   <span
-                    class="font-nums text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right"
+                    class="text-[10px] text-white/60 w-8 text-right"
                   >
                     {pct5.toFixed(1)}%
                   </span>
@@ -189,7 +176,7 @@
               </div>
 
               <!-- 4 Stars -->
-              <div class="flex items-center justify-between gap-3 text-xs">
+              <div class="flex items-center justify-between gap-3">
                 <div class="flex items-center gap-1.5 text-[#9B83BE] font-bold">
                   <div class="w-2.5 h-2.5 flex items-center justify-center">
                     <Icon name="star" class="w-4 h-4" />
@@ -197,10 +184,9 @@
                   <span>4</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="font-nums font-bold text-gray-700 dark:text-[#E0E0E0]">{count4}</span
-                  >
+                  <span class="font-bold text-white">{count4}</span>
                   <span
-                    class="font-nums text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right"
+                    class="text-[10px] text-white/60 w-8 text-right"
                   >
                     {pct4.toFixed(1)}%
                   </span>
@@ -209,16 +195,16 @@
 
               <!-- Total -->
               <div
-                class="border-t dark:border-[#444444] border-gray-100 mt-2 pt-1.5 dark:text-[#B7B6B3] text-gray-500 flex justify-between items-center text-xs"
+                class="border-t border-white/15 mt-2 pt-1.5 text-white/60 flex justify-between items-center text-xs"
               >
                 <span>{$t("systemNames.total")}</span>
-                <span class="font-bold text-gray-800 dark:text-[#E0E0E0] font-nums"
+                <span class="font-bold text-white"
                   >{totalCount}</span
                 >
               </div>
             </div>
           </div>
-        {/if}
+        </Tooltip>
       {:else}
         <div
           class="w-40 h-40 rounded-full border-4 border-gray-100 dark:border-[#404040] bg-gray-50 dark:bg-[#393939] flex items-center justify-center relative z-10"
@@ -287,31 +273,98 @@
                     class="relative h-full flex flex-col justify-end w-6 group z-10"
                   >
                     <div
-                      class="w-full flex flex-col-reverse transition-all duration-200 rounded-t-sm overflow-hidden cursor-pointer outline-none {hoveredBarIdx ===
-                      idx
-                        ? 'opacity-90 scale-110'
-                        : ''}"
+                      class="w-full transition-all duration-200 rounded-t-sm overflow-hidden {hoveredBarIdx !== null && hoveredBarIdx !== idx ? 'opacity-40' : ''} {hoveredBarIdx === idx ? 'brightness-115 shadow-md' : ''}"
                       style="height: {(item.total / maxBarValue) *
                         100}%; z-index: {hoveredBarIdx === idx ? 50 : 10};"
-                      role="button"
-                      tabindex="0"
-                      on:mouseenter={(e) => handleBarHover(e, idx)}
-                      on:mouseleave={handleBarLeave}
-                      on:focus={(e) => handleBarHover(e, idx)}
-                      on:blur={handleBarLeave}
                     >
-                      <div
-                        class="w-full transition-all hover:brightness-110"
-                        style="background-color: #9B83BE; flex: {item.c4} 1 0%;"
-                      ></div>
-                      <div
-                        class="w-full transition-all hover:brightness-110"
-                        style="background-color: #E3BC55; flex: {item.c5} 1 0%;"
-                      ></div>
-                      <div
-                        class="w-full transition-all hover:brightness-110"
-                        style="background-color: #D0926E; flex: {item.c6} 1 0%;"
-                      ></div>
+                      <Tooltip
+                        class="w-full h-full flex flex-col-reverse"
+                        on:mouseenter={() => handleBarHover(idx)}
+                        on:mouseleave={handleBarLeave}
+                        on:focus={() => handleBarHover(idx)}
+                        on:blur={handleBarLeave}
+                      >
+                        <div
+                          class="w-full transition-all hover:brightness-110"
+                          style="background-color: #9B83BE; flex: {item.c4} 1 0%;"
+                        ></div>
+                        <div
+                          class="w-full transition-all hover:brightness-110"
+                          style="background-color: #E3BC55; flex: {item.c5} 1 0%;"
+                        ></div>
+                        <div
+                          class="w-full transition-all hover:brightness-110"
+                          style="background-color: #D0926E; flex: {item.c6} 1 0%;"
+                        ></div>
+
+                        <div slot="content" class="min-w-[160px] py-1 text-xs text-start">
+                          <div
+                            class="font-bold mb-2 border-b border-white/15 pb-1 text-white text-center truncate max-w-[170px]"
+                          >
+                            {$t(`banners.${item.id}`) || item.name}
+                          </div>
+
+                          <div class="space-y-1 font-nums text-white">
+                            <div class="flex justify-between items-center gap-3">
+                              <div class="flex items-center gap-1 text-[#D0926E] font-bold">
+                                <div class="w-2.5 h-2.5 flex items-center justify-center">
+                                  <Icon name="star" class="w-4 h-4" />
+                                </div>
+                                <span>6</span>
+                              </div>
+                              <div class="flex items-center gap-2">
+                                <span class="font-bold text-white">{item.c6}</span>
+                                <span class="text-[10px] text-white/60 w-8 text-right">
+                                  {item.total > 0
+                                    ? ((item.c6 / item.total) * 100).toFixed(1)
+                                    : 0}%
+                                </span>
+                              </div>
+                            </div>
+
+                            <div class="flex justify-between items-center gap-3">
+                              <div class="flex items-center gap-1 text-[#E3BC55] font-bold">
+                                <div class="w-2.5 h-2.5 flex items-center justify-center">
+                                  <Icon name="star" class="w-4 h-4" />
+                                </div>
+                                <span>5</span>
+                              </div>
+                              <div class="flex items-center gap-2">
+                                <span class="font-bold text-white">{item.c5}</span>
+                                <span class="text-[10px] text-white/60 w-8 text-right">
+                                  {item.total > 0
+                                    ? ((item.c5 / item.total) * 100).toFixed(1)
+                                    : 0}%
+                                </span>
+                              </div>
+                            </div>
+
+                            <div class="flex justify-between items-center gap-3">
+                              <div class="flex items-center gap-1 text-[#9B83BE] font-bold">
+                                <div class="w-2.5 h-2.5 flex items-center justify-center">
+                                  <Icon name="star" class="w-4 h-4" />
+                                </div>
+                                <span>4</span>
+                              </div>
+                              <div class="flex items-center gap-2">
+                                <span class="font-bold text-white">{item.c4}</span>
+                                <span class="text-[10px] text-white/60 w-8 text-right">
+                                  {item.total > 0
+                                    ? ((item.c4 / item.total) * 100).toFixed(1)
+                                    : 0}%
+                                </span>
+                              </div>
+                            </div>
+
+                            <div
+                              class="border-t border-white/15 font-normal mt-2 pt-1 text-white/60 flex justify-between items-center text-xs"
+                            >
+                              <span>{$t("systemNames.total")}</span>
+                              <span class="font-bold text-white">{item.total}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </Tooltip>
                     </div>
                   </div>
                 {/each}
@@ -346,75 +399,4 @@
   {/if}
 </div>
 
-{#if hoveredItem}
-  <div
-    class="fixed bg-white/95 dark:bg-[#383838] dark:border-[#444444] backdrop-blur-sm border border-gray-200 rounded-xl p-3 text-xs z-[9999] whitespace-nowrap min-w-[160px] pointer-events-none"
-    style="left: {hoveredBarPosition.x}px; top: {hoveredBarPosition.y}px; transform: translate(-50%, -100%) translateY(-12px);"
-  >
-    <div
-      class="font-bold mb-2 dark:border-[#444444] dark:text-[#E0E0E0] text-xs border-b border-gray-100 pb-1 text-gray-800 text-center truncate max-w-[170px]"
-    >
-      {$t(`banners.${hoveredItem.id}`) || hoveredItem.name}
-    </div>
 
-    <div class="space-y-1 font-nums">
-      <div class="flex justify-between items-center gap-3">
-        <div class="flex items-center gap-1 text-[#D0926E] font-bold">
-          <div class="w-2.5 h-2.5 flex items-center justify-center">
-            <Icon name="star" class="w-4 h-4" />
-          </div>
-          <span>6</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{hoveredItem.c6}</span>
-          <span class="text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right">
-            {hoveredItem.total > 0
-              ? ((hoveredItem.c6 / hoveredItem.total) * 100).toFixed(1)
-              : 0}%
-          </span>
-        </div>
-      </div>
-
-      <div class="flex justify-between items-center gap-3">
-        <div class="flex items-center gap-1 text-[#E3BC55] font-bold">
-          <div class="w-2.5 h-2.5 flex items-center justify-center">
-            <Icon name="star" class="w-4 h-4" />
-          </div>
-          <span>5</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{hoveredItem.c5}</span>
-          <span class="text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right">
-            {hoveredItem.total > 0
-              ? ((hoveredItem.c5 / hoveredItem.total) * 100).toFixed(1)
-              : 0}%
-          </span>
-        </div>
-      </div>
-
-      <div class="flex justify-between items-center gap-3">
-        <div class="flex items-center gap-1 text-[#9B83BE] font-bold">
-          <div class="w-2.5 h-2.5 flex items-center justify-center">
-            <Icon name="star" class="w-4 h-4" />
-          </div>
-          <span>4</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="font-bold text-gray-700 dark:text-[#E0E0E0]">{hoveredItem.c4}</span>
-          <span class="text-[10px] text-gray-400 dark:text-[#B7B6B3] w-8 text-right">
-            {hoveredItem.total > 0
-              ? ((hoveredItem.c4 / hoveredItem.total) * 100).toFixed(1)
-              : 0}%
-          </span>
-        </div>
-      </div>
-
-      <div
-        class="border-t border-gray-100 font-normal dark:border-[#444444] mt-2 pt-1 dark:text-[#B7B6B3] text-gray-500 flex justify-between items-center text-xs"
-      >
-        <span>{$t("systemNames.total")}</span>
-        <span class="font-bold text-gray-800 dark:text-[#E0E0E0]">{hoveredItem.total}</span>
-      </div>
-    </div>
-  </div>
-{/if}

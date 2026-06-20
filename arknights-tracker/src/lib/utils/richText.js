@@ -196,7 +196,7 @@ export function hyperlinkAction(node) {
 
                     const titleImgName = `icon_term_${termId.replace(/\./g, '_')}.png`;
                     const titleImgSrc = `/images/textIcons/${titleImgName}`;
-                    const titleHtml = `<div style="font-weight:700;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;margin-bottom:4px;font-size:13px;letter-spacing:0.025em;color:#facc15;display:flex;align-items:center;gap:6px;"><img src="${titleImgSrc}" style="width:16px;height:16px;display:none;flex-shrink:0;vertical-align:text-bottom;" onload="this.style.display='inline-block'" />${tooltipTitle}</div>`;
+                    const titleHtml = `<div style="font-weight:700;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;margin-bottom:4px;font-size:13px;letter-spacing:0.025em;color:#facc15;display:flex;align-items:center;gap:2px;"><img src="${titleImgSrc}" style="width:20px;height:20px;display:none;flex-shrink:0;vertical-align:text-bottom;" onload="this.style.display='inline-block'" />${tooltipTitle}</div>`;
                     
                     const parsedDesc = parseRichText(tooltipDesc);
                     const descHtml = `<div style="font-size:11px;color:#e5e7eb;">${parsedDesc}</div>`;

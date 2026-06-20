@@ -8,6 +8,21 @@
   "hints": {
     "editPotential": "Um das Waffenpotenzial zu ändern, klicke auf das Stiftsymbol."
   },
+  "privacy": {
+    "title": "Datenschutzrichtlinie",
+    "analytics_title": "Datenschutz & Analyse",
+    "analytics_text1": "Wir verwenden Firebase Analytics (Google Analytics), um Verkehrs- und Leistungsmetriken zu sammeln und Goyfield.moe zu verbessern.",
+    "analytics_text2": "Goyfield.moe verwendet die localStorage-Technologie, um Ihre Benutzereinstellungen (z. B. ausgewählter Server, Design, Sprache) und den Zug-Verlauf (Pulls) lokal auf Ihrem Gerät zu speichern.",
+    "tracker_title": "Pull-Tracker",
+    "tracker_text1": "Standardmäßig werden alle importierten Pull-Daten lokal auf Ihrem Gerät gespeichert. Ihr Importlink (der ein temporäres Token enthält) wird nur an den Backend-Server von Goyfield.moe gesendet, um eine Verbindung zur offiziellen Spiel-API herzustellen und Ihren Verlauf abzurufen. Der Link selbst, Token oder persönliche Kontodaten werden nicht an Dritte weitergegeben und nicht im Klartext auf dem Server gespeichert.",
+    "tracker_text2": "Im Falle eines Systemfehlers während des Imports kann der Link vorübergehend in den Administratorprotokollen gespeichert werden, um Fehler zu identifizieren und zu beheben.",
+    "global_title": "Globale Statistiken",
+    "global_text": "Wenn Sie Ihren Verlauf importieren, werden bestimmte anonymisierte Informationen über Ihre Pulls (Gegenstandstyp, Seltenheit, Zeit, Banner) auf unserem Server gespeichert. Diese Daten sind mit einer anonymen Kennung (UID) verknüpft und werden für den Bereich „Globale Statistiken“ verwendet.",
+    "cloud_title": "Cloud-Synchronisierung",
+    "cloud_text1": "Goyfield.moe bietet die Möglichkeit, Ihr Google-Konto zu verknüpfen, um Cloud-Backups Ihrer Pull-Daten zu erstellen. Ihr Benutzername und Ihre E-Mail-Adresse werden nur in den Einstellungen angezeigt und nicht an Dritte weitergegeben.",
+    "cloud_text2": "Im Gegensatz zum lokalen Speicher werden Ihre Pull-Daten bei Verwendung dieser Funktion sicher in unserer Cloud-Datenbank (Firebase) gespeichert. Sie können sich jederzeit über die Einstellungen von Ihrem Konto abmelden.",
+    "close": "Schließen"
+  },
   "sidebar": {
     "home": "Home",
     "records": "Rekrutierung",
@@ -575,7 +590,10 @@
     "abilities": "Capacidades",
     "vulnerable": "Widerstandsmultiplikator",
     "resistance": "Widerstand",
-    "enemiesResHint": "Zeigt den Multiplikator des erlittenen Schadens nach der Formel: Schaden × Widerstandsmultiplikator (%). Zum Beispiel: 100% — keine Schadensverringerung, 50% — der erlittene Schaden wird halbiert. Widerstand: 100% - n% = m%, wobei n% der Widerstandsmultiplikator und m% der Widerstand ist."
+    "enemiesResHint": "Zeigt den Multiplikator des erlittenen Schadens nach der Formel: Schaden × Widerstandsmultiplikator (%). Zum Beispiel: 100% — keine Schadensverringerung, 50% — der erlittene Schaden wird halbiert. Widerstand: 100% - n% = m%, wobei n% der Widerstandsmultiplikator und m% der Widerstand ist.",
+    "essence": "Essenz",
+    "none": "Ohne Essenz",
+    "addEssence": "Essenz hinzufügen"
   },
   "bioValues": {
     "Unknown": "Unbekannt"
@@ -1993,6 +2011,10 @@
     "treeSwitchButton": {
       "changeTree": "Kette ändern",
       "openTree": "Kette anzeigen"
+    },
+    "emptyState": {
+      "title": "Nichts ausgewählt",
+      "subtitle": "Klicken Sie auf ein Element auf der linken Seite, um sein Rezept anzuzeigen."
     }
   },
   "resourcePointNames": {

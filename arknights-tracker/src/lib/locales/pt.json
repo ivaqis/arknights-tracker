@@ -8,6 +8,21 @@
   "hints": {
     "editPotential": "Para alterar os potenciais da arma, clique no ícone do lápis."
   },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "analytics_title": "Privacidade e Análises",
+    "analytics_text1": "Usamos o Firebase Analytics (Google Analytics) para coletar métricas de tráfego e desempenho para melhorar o Goyfield.moe.",
+    "analytics_text2": "O Goyfield.moe usa a tecnologia localStorage para armazenar suas preferências de usuário (por exemplo, servidor selecionado, tema, idioma) e dados do histórico de tiros (pulls) localmente no seu dispositivo.",
+    "tracker_title": "Rastreador de Tiros",
+    "tracker_text1": "Por padrão, todos os dados de tiros importados são salvos localmente no seu dispositivo. Seu link de importação (contendo um token temporário) é enviado ao servidor backend do Goyfield.moe exclusivamente para conectar-se à API oficial do jogo e recuperar seu histórico. O link em si, os tokens ou quaisquer dados pessoais da conta não são compartilhados com terceiros e não são armazenados no servidor em texto simples.",
+    "tracker_text2": "Em caso de erro no sistema durante a importação, o link pode ser salvo temporariamente nos logs do administrador para identificar e corrigir bugs.",
+    "global_title": "Estatísticas Globais",
+    "global_text": "Quando você importa seu histórico, certas informações anônimas sobre seus tiros (tipo de item, raridade, tempo, banner) são salvas em nosso servidor. Esses dados são vinculados a um identificador gerado anonimamente (UID) e são usados para alimentar a seção \"Estatísticas Globais\".",
+    "cloud_title": "Sincronização na Nuvem",
+    "cloud_text1": "O Goyfield.moe oferece a opção de vincular sua conta do Google para criar backups na nuvem dos seus tiros. Seu nome de usuário e endereço de e-mail são exibidos exclusivamente na interface de configurações e não são compartilhados com terceiros.",
+    "cloud_text2": "Ao contrário do armazenamento local, ao usar esse recurso, seus dados de tiros são armazenados com segurança em nosso banco de dados em nuvem (Firebase). Você pode sair da sua conta a qualquer momento em Configurações.",
+    "close": "Fechar"
+  },
   "sidebar": {
     "home": "Início",
     "records": "Histórico de Buscas",
@@ -575,7 +590,10 @@
     "abilities": "Capacidades",
     "vulnerable": "Multiplicador de Resistência",
     "resistance": "Resistência",
-    "enemiesResHint": "Exibe o multiplicador de dano recebido de acordo com a fórmula: Dano × Multiplicador de Resistência (%). Por exemplo: 100% — sem redução de dano, 50% — o dano recebido pelo inimigo é reduzido pela metade. Resistência: 100% - n% = m%, onde n% é o multiplicador de resistência e m% é a resistência."
+    "enemiesResHint": "Exibe o multiplicador de dano recebido de acordo com a fórmula: Dano × Multiplicador de Resistência (%). Por exemplo: 100% — sem redução de dano, 50% — o dano recebido pelo inimigo é reduzido pela metade. Resistência: 100% - n% = m%, onde n% é o multiplicador de resistência e m% é a resistência.",
+    "essence": "Essência",
+    "none": "Sem Essência",
+    "addEssence": "Adicionar Essência"
   },
   "bioValues": {
     "Unknown": "Desconhecido"
@@ -1994,6 +2012,10 @@
     "treeSwitchButton": {
       "changeTree": "Alterar cadeia",
       "openTree": "Ver cadeia"
+    },
+    "emptyState": {
+      "title": "Nada selecionado",
+      "subtitle": "Clique em um item à esquerda para exibir sua receita."
     }
   },
   "resourcePointNames": {

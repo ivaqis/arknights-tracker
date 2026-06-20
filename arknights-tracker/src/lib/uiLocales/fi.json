@@ -448,7 +448,10 @@
     "abilities": "Kyvyt",
     "vulnerable": "Vastustuskerroin",
     "resistance": "Vastus",
-    "enemiesResHint": "Näyttää saadun vahingon kertoimen kaavan mukaisesti: Vahinko × Vastustuskerroin (%). Esimerkiksi: 100 % — ei vahingonvähennystä, 50 % — vihollisen saama vahinko puolitetaan. Vastus: 100 % - n % = m %, jossa n % on vastustuskerroin ja m % on vastus."
+    "enemiesResHint": "Näyttää saadun vahingon kertoimen kaavan mukaisesti: Vahinko × Vastustuskerroin (%). Esimerkiksi: 100 % — ei vahingonvähennystä, 50 % — vihollisen saama vahinko puolitetaan. Vastus: 100 % - n % = m %, jossa n % on vastustuskerroin ja m % on vastus.",
+    "none": "Ilman esanssia",
+    "essence": "Esanssi",
+    "addEssence": "Lisää esanssi"
   },
   "bioValues": {
     "Unknown": "Tuntematon"
@@ -685,6 +688,10 @@
     "treeSwitchButton": {
       "changeTree": "Vaihda ketjua",
       "openTree": "Näytä ketju"
+    },
+    "emptyState": {
+      "title": "Mitään ei ole valittu",
+      "subtitle": "Napsauta vasemmalla olevaa esinettä näyttääksesi sen reseptin."
     }
   }
 }

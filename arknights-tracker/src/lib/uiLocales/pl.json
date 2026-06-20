@@ -448,7 +448,10 @@
     "abilities": "Zdolności",
     "vulnerable": "Mnożnik odporności",
     "resistance": "Odporność",
-    "enemiesResHint": "Wyświetla mnożnik otrzymywanych obrażeń według wzoru: Obrażenia × Mnożnik odporności (%). Na przykład: 100% — brak redukcji obrażeń, 50% — obrażenia otrzymywane przez wroga są zmniejszone o połowę. Odporność: 100% - n% = m%, gdzie n% to mnożnik odporności, a m% to odporność."
+    "enemiesResHint": "Wyświetla mnożnik otrzymywanych obrażeń według wzoru: Obrażenia × Mnożnik odporności (%). Na przykład: 100% — brak redukcji obrażeń, 50% — obrażenia otrzymywane przez wroga są zmniejszone o połowę. Odporność: 100% - n% = m%, gdzie n% to mnożnik odporności, a m% to odporność.",
+    "none": "Bez esencji",
+    "essence": "Esencja",
+    "addEssence": "Dodaj esencję"
   },
   "bioValues": {
     "Unknown": "Nieznane"
@@ -685,6 +688,10 @@
     "treeSwitchButton": {
       "changeTree": "Zmień łańcuch",
       "openTree": "Wyświetl łańcuch"
+    },
+    "emptyState": {
+      "title": "Nic nie wybrano",
+      "subtitle": "Kliknij przedmiot po lewej stronie, aby wyświetlić jego recepturę."
     }
   }
 }

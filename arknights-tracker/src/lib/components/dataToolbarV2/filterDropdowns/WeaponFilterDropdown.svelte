@@ -5,6 +5,7 @@
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import SkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/SkillParamBox.svelte";
     import WeaponTypeParamBox from "$lib/components/dataToolbarV2/paramBoxes/WeaponTypeParamBox.svelte";
+    import EssenceParamBox from "$lib/components/dataToolbarV2/paramBoxes/EssenceParamBox.svelte";
     import SwitchButton from "$lib/components/SwitchButton.svelte";
     import { t } from "$lib/i18n";
 
@@ -140,6 +141,23 @@
             paramBox={SkillParamBox}
             paramList={filters.attr3}
             bind:selectedParamSet={selectedFilters.attr3}
+        />
+
+    </div>
+
+    <div class="flex flex-col items-start gap-2">
+
+        <GroupTitle
+            asButton={true}
+            onClick={() => toggleFilterGroup("essence")}
+        >
+            {$t("stats.essence")}
+        </GroupTitle>
+
+        <SelectableParamList
+            paramBox={EssenceParamBox}
+            paramList={filters.essence}
+            bind:selectedParamSet={selectedFilters.essence}
         />
 
     </div>

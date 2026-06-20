@@ -8,6 +8,21 @@
   "hints": {
     "editPotential": "Per modificare i potenziali dell'arma, fai clic sull'icona della matita."
   },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "analytics_title": "Privacy e Analisi",
+    "analytics_text1": "Utilizziamo Firebase Analytics (Google Analytics) per raccogliere metriche di traffico e prestazioni per migliorare Goyfield.moe.",
+    "analytics_text2": "Goyfield.moe utilizza la tecnologia localStorage per memorizzare le tue preferenze utente (es. server, tema, lingua) e i dati della cronologia dei pull localmente sul tuo dispositivo.",
+    "tracker_title": "Tracker dei Pull",
+    "tracker_text1": "Per impostazione predefinita, tutti i dati dei pull importati vengono salvati localmente sul tuo dispositivo. Il tuo link di importazione (contenente un token temporaneo) viene inviato al server backend di Goyfield.moe solo per connettersi all'API ufficiale del gioco e recuperare la tua cronologia. Il link stesso, i token o qualsiasi dato personale dell'account non vengono condivisi con terze parti e non vengono memorizzati sul server in chiaro.",
+    "tracker_text2": "In caso di errore di sistema durante l'importazione, il link potrebbe essere temporaneamente salvato nei log dell'amministratore per identificare e correggere i bug.",
+    "global_title": "Statistiche Globali",
+    "global_text": "Quando importi la tua cronologia, alcune informazioni anonime sui tuoi pull (tipo di oggetto, rarità, tempo, banner) vengono salvate sul nostro server. Questi dati sono collegati a un identificatore anonimo (UID) e vengono utilizzati per alimentare la sezione \"Statistiche Globali\".",
+    "cloud_title": "Sincronizzazione Cloud",
+    "cloud_text1": "Goyfield.moe offre l'opzione di collegare il tuo account Google per creare backup in cloud dei tuoi pull. Il tuo nome utente e l'indirizzo email vengono visualizzati esclusivamente nell'interfaccia delle impostazioni e non vengono condivisi con terze parti.",
+    "cloud_text2": "A differenza dell'archiviazione locale, utilizzando questa funzione i dati dei tuoi pull sono archiviati in modo sicuro nel nostro database cloud (Firebase). Puoi disconnetterti dal tuo account in qualsiasi momento tramite le Impostazioni.",
+    "close": "Chiudi"
+  },
   "sidebar": {
     "home": "Home",
     "records": "Registro Reclutamenti",
@@ -575,7 +590,10 @@
     "abilities": "Abilità",
     "vulnerable": "Moltiplicatore di resistenza",
     "resistance": "Resistenza",
-    "enemiesResHint": "Mostra il moltiplicatore del danno ricevuto in base alla formula: Danno × Moltiplicatore di resistenza (%). Ad esempio: 100% — nessuna riduzione del danno, 50% — il danno ricevuto dal nemico è dimezzato. Resistenza: 100% - n% = m%, dove n% è il moltiplicatore di resistenza e m% è la resistenza."
+    "enemiesResHint": "Mostra il moltiplicatore del danno ricevuto in base alla formula: Danno × Moltiplicatore di resistenza (%). Ad esempio: 100% — nessuna riduzione del danno, 50% — il danno ricevuto dal nemico è dimezzato. Resistenza: 100% - n% = m%, dove n% è il moltiplicatore di resistenza e m% è la resistenza.",
+    "essence": "Essenza",
+    "none": "Senza Essenza",
+    "addEssence": "Aggiungi Essenza"
   },
   "bioValues": {
     "Unknown": "Sconosciuto"
@@ -1994,6 +2012,10 @@
     "treeSwitchButton": {
       "changeTree": "Modifica catena",
       "openTree": "Visualizza catena"
+    },
+    "emptyState": {
+      "title": "Nessuna selezione",
+      "subtitle": "Fai clic su un oggetto a sinistra per visualizzare la sua ricetta."
     }
   },
   "resourcePointNames": {

@@ -633,7 +633,10 @@
     "abilities": "能力",
     "vulnerable": "抗性倍率",
     "resistance": "抗性",
-    "enemiesResHint": "根据公式显示受到的伤害倍率：伤害 × 抗性倍率（%）。例如：100% — 伤害不减少，50% — 敌人受到的伤害减半。抗性：100% - n% = m%，其中 n% 为抗性倍率，m% 为抗性。"
+    "enemiesResHint": "根据公式显示受到的伤害倍率：伤害 × 抗性倍率（%）。例如：100% — 伤害不减少，50% — 敌人受到的伤害减半。抗性：100% - n% = m%，其中 n% 为抗性倍率，m% 为抗性。",
+    "essence": "基质",
+    "none": "无基质",
+    "addEssence": "添加基质"
   },
   "bioValues": {
     "Unknown": "未知"
@@ -2053,6 +2056,10 @@
     "treeSwitchButton": {
       "changeTree": "修改配方链",
       "openTree": "查看配方链"
+    },
+    "emptyState": {
+      "title": "未选择任何项目",
+      "subtitle": "点击左侧的物品以显示其配方。"
     }
   },
   "resourcePointNames": {

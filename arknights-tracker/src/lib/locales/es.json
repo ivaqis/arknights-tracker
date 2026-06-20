@@ -5,6 +5,24 @@
     "description": "Rastreador de deseos avanzado para Arknights: Endfield. Sigue tu historial de tiradas, calcula el pity y predice tu próximo operador o arma garantizada.",
     "keywords": "Arknights Endfield, Arknights, Gacha Tracker, Pull History, Operators, Arknights Endfield Español, Rastreador Gacha, Historial de Tiradas, Operadores, Goyfield"
   },
+  "hints": {
+    "editPotential": "Para cambiar los potenciales del arma, haz clic en el icono del lápiz."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "analytics_title": "Privacidad y Analíticas",
+    "analytics_text1": "Utilizamos Firebase Analytics (Google Analytics) para recopilar métricas de tráfico y rendimiento con el fin de mejorar Goyfield.moe.",
+    "analytics_text2": "Goyfield.moe utiliza la tecnología localStorage para almacenar sus preferencias de usuario (por ejemplo, servidor seleccionado, tema, idioma) y el historial de tiradas localmente en su dispositivo.",
+    "tracker_title": "Rastreador de Tiradas",
+    "tracker_text1": "Por defecto, todos los datos de tiradas importados se guardan localmente en su dispositivo. Su enlace de importación (que contiene un token temporal) se envía al servidor backend de Goyfield.moe únicamente para conectarse con la API oficial del juego y recuperar su historial. El enlace en sí, los tokens o cualquier dato de cuenta personal no se comparten con terceros ni se almacenan en el servidor en texto plano.",
+    "tracker_text2": "En caso de un error del sistema durante la importación, el enlace puede guardarse temporalmente en los registros del administrador para identificar y corregir errores.",
+    "global_title": "Estadísticas Globales",
+    "global_text": "Cuando importa su historial, cierta información anonimizada sobre sus tiradas (tipo de artículo, rareza, tiempo, banner) se guarda en nuestro servidor. Estos datos se vinculan a un identificador generado de forma anónima (UID) y se utilizan para alimentar la sección de \"Estadísticas Globales\".",
+    "cloud_title": "Sincronización en la Nube",
+    "cloud_text1": "Goyfield.moe ofrece la opción de vincular su cuenta de Google para crear copias de seguridad en la nube de sus tiradas. Su nombre de usuario y correo electrónico se muestran únicamente en la interfaz de configuración y no se comparten con terceros.",
+    "cloud_text2": "A diferencia del almacenamiento local, al usar esta función, sus datos de tiradas se almacenan de forma segura en nuestra base de datos en la nube (Firebase). Puede cerrar la sesión de su cuenta en cualquier momento a través de la Configuración.",
+    "close": "Cerrar"
+  },
   "sidebar": {
     "home": "Inicio",
     "records": "Historial de Reclutamiento",
@@ -574,7 +592,10 @@
     "abilities": "Habilidades",
     "vulnerable": "Multiplicador de resistencia",
     "resistance": "Resistencia",
-    "enemiesResHint": "Muestra el multiplicador de daño recibido según la fórmula: Daño × Multiplicador de resistencia (%). Por ejemplo: 100% — sin reducción de daño, 50% — el daño recibido por el enemigo se reduce a la mitad. Resistencia: 100% - n% = m%, donde n% es el multiplicador de resistencia y m% es la resistencia."
+    "enemiesResHint": "Muestra el multiplicador de daño recibido según la fórmula: Daño × Multiplicador de resistencia (%). Por ejemplo: 100% — sin reducción de daño, 50% — el daño recibido por el enemigo se reduce a la mitad. Resistencia: 100% - n% = m%, donde n% es el multiplicador de resistencia y m% es la resistencia.",
+    "essence": "Esencia",
+    "none": "Sin Esencia",
+    "addEssence": "Añadir Esencia"
   },
   "bioValues": {
     "Unknown": "Desconocido"
@@ -1993,6 +2014,10 @@
     "treeSwitchButton": {
       "changeTree": "Cambiar cadena",
       "openTree": "Ver cadena"
+    },
+    "emptyState": {
+      "title": "Nada seleccionado",
+      "subtitle": "Haz clic en un objeto a la izquierda para mostrar su receta."
     }
   },
   "resourcePointNames": {

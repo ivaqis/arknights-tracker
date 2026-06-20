@@ -17,6 +17,7 @@
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
 
     $: selectedFilters = $weaponFilters;
     $: searchQuery = $weaponSearch;
@@ -32,6 +33,7 @@
     let showOwnedOnly = false;
 
     const { selectedId } = accountStore;
+    $: accountEssences = $weaponEssences[$selectedId] || {};
 
     $: filteredWeapons = allWeapons
         .filter((wp) => {
@@ -74,11 +76,13 @@
             const matchesRarity = filterCheck(selectedFilters.rarity, wp.rarity);
             const wpType = wp.type || wp.weapon;
             const matchesType = filterCheckLowerCase(selectedFilters.type, wpType);
+            const wpEssence = accountEssences[wp.id] || 0;
+            const matchesEssence = filterCheck(selectedFilters.essence, wpEssence);
             const passesAttr1 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr1, skill));
             const passesAttr2 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr2, skill));
             const passesAttr3 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr3, skill));
 
-            return matchesRarity && matchesType && passesAttr1 && passesAttr2 && passesAttr3;
+            return matchesRarity && matchesType && matchesEssence && passesAttr1 && passesAttr2 && passesAttr3;
         })
         .sort((a, b) => {
             let valA = sortField === "type" ? a.type || a.weapon : a[sortField];

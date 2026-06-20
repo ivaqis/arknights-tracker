@@ -11,6 +11,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
     import { essences } from "$lib/data/items/essences.js";
     import { locations } from "$lib/data/locations.js";
     import { weapons } from "$lib/data/weapons.js";
@@ -1719,18 +1720,7 @@
   {@const dungeonAttrs = getDungeonAttributes(activeDungeonId)}
   {@const regionId = getLocationIcon(activeDungeonId)}
   {@const rColor = getRegionColor(regionId)}
-  <div class="fixed inset-0 z-[10000] flex items-center justify-center p-4 md:ml-[var(--sb-w)]">
-    <div 
-      class="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-default outline-none"
-      transition:fade={{ duration: 200 }}
-      role="button"
-      tabindex="0"
-      on:click={closeEssencesModal}
-      on:keydown={(e) => {
-        if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') closeEssencesModal();
-      }}
-    ></div>
-
+  <Modal isOpen={isEssenceModalOpen} on:close={closeEssencesModal}>
     <div
       class="relative bg-white rounded-2xl dark:bg-[#383838] dark:border-[#444444] p-6 md:p-8 w-full max-w-3xl shadow-2xl border border-gray-100 flex flex-col max-h-[90vh]"
       transition:scale={{ duration: 200, start: 0.95 }}
@@ -1828,5 +1818,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </Modal>
 {/if}

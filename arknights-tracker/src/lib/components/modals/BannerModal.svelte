@@ -16,6 +16,7 @@
     import Image from "$lib/components/Image.svelte";
     import BannerStats from "$lib/components/modals/BannerStats.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
 
     export const bannerId = undefined;
     export let banner = null;
@@ -420,17 +421,10 @@
         : { days: 0, hours: 0, minutes: 0 };
 </script>
 
-{#if banner}
+<Modal isOpen={!!banner} on:close={close}>
     <div
-        class="fixed inset-0 md:ml-[var(--sb-w)] bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 animate-in fade-in duration-200 cursor-default"
-        role="button"
-        tabindex="0"
-        on:click|self={close}
-        on:keydown={(e) => (e.key === "Escape" || e.key === "Enter") && close()}
+        class="bg-white dark:bg-[#383838] rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-200 flex flex-col cursor-auto"
     >
-        <div
-            class="bg-white dark:bg-[#383838] rounded-2xl shadow-2xl max-w-md w-full overflow-hidden relative animate-in zoom-in-95 duration-200 flex flex-col cursor-auto"
-        >
             <button
                 class="hover:bg-[#FACC15] text-white hover:text-[#21272C] absolute top-3 right-3 z-20 p-2 bg-black/30 text-white rounded-full transition-colors backdrop-blur-md cursor-pointer"
                 on:click={close}
@@ -692,6 +686,5 @@
                     />
                 {/if}
             </div>
-        </div>
     </div>
-{/if}
+</Modal>

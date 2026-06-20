@@ -517,20 +517,22 @@
     </div>
 
     <div
-        class="bg-[#F0F2F4] rounded-xl p-4 dark:bg-[#343434] flex gap-2 overflow-x-auto md:justify-center justify-start"
+        class="bg-[#F0F2F4] rounded-xl p-4 dark:bg-[#343434] overflow-x-auto custom-scrollbar"
     >
-        {#if neededMaterials.length > 0}
-            {#each neededMaterials as mat (mat.id)}
-                <div class="shrink-0">
-                    <ItemCard item={mat} amount={mat.amount} />
+        <div class="flex gap-2 w-max min-w-full justify-center">
+            {#if neededMaterials.length > 0}
+                {#each neededMaterials as mat (mat.id)}
+                    <div class="shrink-0">
+                        <ItemCard item={mat} amount={mat.amount} />
+                    </div>
+                {/each}
+            {:else}
+                <div
+                    class="w-full text-center text-gray-400 text-xs py-2 italic shrink-0"
+                >
+                    {$t("systemNames.noMaterialsNeeded") || "No materials needed"}
                 </div>
-            {/each}
-        {:else}
-            <div
-                class="w-full text-center text-gray-400 text-xs py-2 italic shrink-0"
-            >
-                {$t("systemNames.noMaterialsNeeded") || "No materials needed"}
-            </div>
-        {/if}
+            {/if}
+        </div>
     </div>
 </div>

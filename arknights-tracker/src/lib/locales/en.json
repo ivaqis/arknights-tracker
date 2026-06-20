@@ -708,7 +708,10 @@
     "abilities": "Abilities",
     "vulnerable": "Resistance Multiplier",
     "resistance": "Resistance",
-    "enemiesResHint": "Displays the taken damage multiplier according to the formula: Damage × Resistance Multiplier (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved. Resistance: 100% - n% = m%, where n% is the resistance multiplier and m% is the resistance."
+    "enemiesResHint": "Displays the taken damage multiplier according to the formula: Damage × Resistance Multiplier (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved. Resistance: 100% - n% = m%, where n% is the resistance multiplier and m% is the resistance.",
+    "essence": "Essence",
+    "none": "No Essence",
+    "addEssence": "Add Essence"
   },
   "bioValues": {
     "Unknown": "Unknown"
@@ -2128,6 +2131,10 @@
     "treeSwitchButton": {
       "changeTree": "Change chain",
       "openTree": "View chain"
+    },
+    "emptyState": {
+      "title": "Nothing selected",
+      "subtitle": "Click on an item on the left to display its recipe."
     }
   },
   "resourcePointNames": {

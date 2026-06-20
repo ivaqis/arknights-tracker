@@ -669,6 +669,9 @@
     "birth": "Дата рождения"
   },
   "stats": {
+    "essence": "Эссенция",
+    "none": "Без эссенции",
+    "addEssence": "Добавить эссенцию",
     "attributes": "Атрибуты",
     "ascension": "Возвышение",
     "cumulative": "Кумулятивно",
@@ -2130,6 +2133,10 @@
     "treeSwitchButton": {
       "changeTree": "Сменить цепочку",
       "openTree": "Посмотреть цепочку"
+    },
+    "emptyState": {
+      "title": "Ничего не выбрано",
+      "subtitle": "Кликните по предмету слева, чтобы отобразить его рецепт."
     }
   },
   "resourcePointNames": {

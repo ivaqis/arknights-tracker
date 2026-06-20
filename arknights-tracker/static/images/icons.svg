@@ -1212,7 +1212,9 @@
   </symbol>
 
   <symbol id="patreon" viewBox="0 0 26 26">
-    <rect width="26" height="26" fill="url(#patreon_pattern0_1573_82525)" />
+    <circle cx="13" cy="13" r="13" fill="#F76754"/>
+    <circle cx="15.5" cy="11.5" r="4.5" fill="white"/>
+    <rect x="8" y="7" width="2" height="12" fill="#002C49"/>
   </symbol>
 
   <symbol id="boosty" viewBox="0 0 23 28">

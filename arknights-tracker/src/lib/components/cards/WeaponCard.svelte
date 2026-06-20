@@ -3,6 +3,7 @@
     import { goto } from "$app/navigation";
     import { pullData } from "$lib/stores/pulls.js";
     import { manualPotentials } from "$lib/stores/potentials.js";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts.js";
     import { disableDarkening } from "$lib/stores/settings.js";
     import { changelogData } from "$lib/data/versions.js";
@@ -130,6 +131,17 @@
         accountPots[weapon.id] !== undefined ? accountPots[weapon.id] : basePot;
 
     $: hasWeapon = currentPot >= 0 || hideDarkness == true;
+
+    $: accountEssences = $weaponEssences[currentAccountId] || {};
+    $: currentEssence = accountEssences[weapon.id] || 0;
+
+    function getEssenceColor(level) {
+        if (level === 1) return "#EF4444";
+        if (level === 2) return "#F97316";
+        if (level === 3) return "#22C55E";
+        return "";
+    }
+
     $: constCount = hasWeapon ? currentPot : 0;
     $: isMaxPot = constCount >= 5;
     $: isAccountEmpty = (() => {
@@ -248,6 +260,16 @@
                         >
                             {weapon.level}
                         </span>
+                    {/if}
+
+                    {#if !isEquipment && !isEnemy && currentEssence > 0}
+                        <Tooltip text={currentEssence === 3 ? `${$t("stats.essence") || "Essence"} (3/3)` : currentEssence === 2 ? `${$t("stats.essence") || "Essence"} (2/3)` : `${$t("stats.essence") || "Essence"} (1/3)`}>
+                            <Icon
+                                name="essence"
+                                class="w-5 h-5 drop-shadow-sm cursor-pointer mt-1 filter"
+                                style="color: {getEssenceColor(currentEssence)}"
+                            />
+                        </Tooltip>
                     {/if}
                 </div>
             {/if}

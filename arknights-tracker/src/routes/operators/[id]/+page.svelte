@@ -10,6 +10,7 @@
     import { pullData } from "$lib/stores/pulls";
     import { accountStore } from "$lib/stores/accounts";
     import { levels as levelUpTable } from "$lib/data/levelUpTable.js";
+    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -19,8 +20,8 @@
     import Image from "$lib/components/Image.svelte";
     import TalentCard from "$lib/components/operators/TalentCard.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
     import NotFound from "$lib/components/NotFound.svelte";
+    import TableModal from "$lib/components/modals/TableModal.svelte";
 
     function formatBirthDate(raw, lang) {
         if (typeof raw !== "string" || !/^\d{1,2}-\d{1,2}$/.test(raw))
@@ -1720,164 +1721,120 @@
     </div>
 </div>
 
-{#if showStatsTable}
-    <div
-        role="dialog"
-        aria-modal="true"
-        tabindex="-1"
-        class="fixed inset-0 z-50 md:ml-[var(--sb-w)] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn outline-none"
-        on:click={(e) => {
-            if (e.target === e.currentTarget) {
-                showStatsTable = false;
-            }
-        }}
-        on:keydown={(e) => {
-            if (e.key === "Escape") showStatsTable = false;
-        }}
-    >
-        <div
-            class="bg-white rounded-xl w-full max-w-4xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden cursor-auto"
+<TableModal
+    bind:isOpen={showStatsTable}
+    title={$t("stats.attributesTable") || "Attributes Table"}
+    isTableCopied={isTableCopied}
+    maxWidthClass="max-w-4xl"
+    on:copy={copyStatsTable}
+>
+    <table class="w-full text-center border-collapse">
+        <thead
+            class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
         >
-            <div
-                class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white dark:bg-[#2C2C2C] shrink-0"
-            >
-                <h3 class="font-bold text-lg">
-                    {$t("stats.attributesTable") || "Attributes Table"}
-                </h3>
-                <div class="flex items-center gap-3">
-                    <button
-                        on:click={copyStatsTable}
-                        class="p-1.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none"
-                    >
-                        {#if isTableCopied}
-                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                        {:else}
-                            <Icon name="copy" class="w-4 h-4" />
-                        {/if}
-                        <span>{$t("common.copy") || "Copy"}</span>
-                    </button>
-                    <button
-                        on:click={() => (showStatsTable = false)}
-                        class="p-1.5 hover:bg-white/10 rounded-full transition-colors"
-                    >
-                        <Icon name="close" class="w-6 h-6" />
-                    </button>
-                </div>
-            </div>
+            <tr>
+                <th
+                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                    >{$t("stats.level") || "Level"}</th
+                >
+                <th
+                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                    >{$t("stats.baseHp") || "Base HP"}</th
+                >
+                <th
+                    class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
+                    >{$t("stats.baseAtk") || "Base ATK"}</th
+                >
 
-            <div
-                class="overflow-auto custom-scrollbar bg-white dark:bg-[#2b2b2b] p-0"
-            >
-                <table class="w-full text-center border-collapse">
-                    <thead
-                        class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
-                    >
-                        <tr>
-                            <th
-                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                                >{$t("stats.level") || "Level"}</th
-                            >
-                            <th
-                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                                >{$t("stats.baseHp") || "Base HP"}</th
-                            >
-                            <th
-                                class="py-3 px-2 border-b text-gray-600 dark:text-[#E4E4E4] dark:border-[#444]"
-                                >{$t("stats.baseAtk") || "Base ATK"}</th
-                            >
+                {#each ["str", "agi", "int", "will"] as attr}
+                    {@const isMain =
+                        attr === charStats.mainAttribute}
+                    {@const isSec =
+                        attr === charStats.secondaryAttribute}
 
-                            {#each ["str", "agi", "int", "will"] as attr}
-                                {@const isMain =
-                                    attr === charStats.mainAttribute}
-                                {@const isSec =
-                                    attr === charStats.secondaryAttribute}
-
-                                <th
-                                    class="py-3 px-2 border-b align-middle dark:border-[#444]"
-                                >
-                                    <div class="flex justify-center w-full">
-                                        <Tooltip
-                                            text={$t(
-                                                isMain
-                                                    ? "stats.mainAttr"
-                                                    : isSec
-                                                      ? "stats.secAttr"
-                                                      : "",
-                                            )}
-                                        >
-                                            <div
-                                                class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
-                                                    ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
-                                                    : ''} {isSec
-                                                    ? 'bg-[#3B3B3B] dark:bg-[#323232] text-white shadow-sm'
-                                                    : ''} {!isMain && !isSec
-                                                    ? 'text-gray-600 dark:text-[#E4E4E4]'
-                                                    : ''}"
-                                            >
-                                                {$t(`stats.${attr}`) || attr}
-                                            </div>
-                                        </Tooltip>
-                                    </div>
-                                </th>
-                            {/each}
-                        </tr>
-                    </thead>
-                    <tbody
-                        class="text-sm font-nums text-gray-800 dark:text-gray-300"
+                    <th
+                        class="py-3 px-2 border-b align-middle dark:border-[#444]"
                     >
-                        {#each Array(90) as _, i}
-                            {@const lvl = i + 1}
-                            <tr
-                                class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                        <div class="flex justify-center w-full">
+                            <Tooltip
+                                text={$t(
+                                    isMain
+                                        ? "stats.mainAttr"
+                                        : isSec
+                                          ? "stats.secAttr"
+                                          : "",
+                                )}
                             >
-                                <td
-                                    class="py-2 px-4 text-gray-500 dark:text-gray-400"
-                                    >{lvl}</td
+                                <div
+                                    class="px-2 py-1 rounded transition-colors text-xs font-bold tracking-wider {isMain
+                                        ? 'bg-[#FFEE00] text-[#21272C]  shadow-sm'
+                                        : ''} {isSec
+                                        ? 'bg-[#3B3B3B] dark:bg-[#323232] text-white shadow-sm'
+                                        : ''} {!isMain && !isSec
+                                        ? 'text-gray-600 dark:text-[#E4E4E4]'
+                                        : ''}"
                                 >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(charStats.hp, lvl)}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(charStats.atk, lvl)}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(
-                                        charStats.attributes.str,
-                                        lvl,
-                                    )}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(
-                                        charStats.attributes.agi,
-                                        lvl,
-                                    )}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(
-                                        charStats.attributes.int,
-                                        lvl,
-                                    )}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                    >{calculateStat(
-                                        charStats.attributes.will,
-                                        lvl,
-                                    )}</td
-                                >
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-{/if}
+                                    {$t(`stats.${attr}`) || attr}
+                                </div>
+                            </Tooltip>
+                        </div>
+                    </th>
+                {/each}
+            </tr>
+        </thead>
+        <tbody
+            class="text-sm font-nums text-gray-800 dark:text-gray-300"
+        >
+            {#each Array(90) as _, i}
+                {@const lvl = i + 1}
+                <tr
+                    class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                >
+                    <td
+                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                        >{lvl}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(charStats.hp, lvl)}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(charStats.atk, lvl)}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(
+                            charStats.attributes.str,
+                            lvl,
+                        )}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(
+                            charStats.attributes.agi,
+                            lvl,
+                        )}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(
+                            charStats.attributes.int,
+                            lvl,
+                        )}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                        >{calculateStat(
+                            charStats.attributes.will,
+                            lvl,
+                        )}</td
+                    >
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</TableModal>
 {#if selectedArtId}
     <div
         role="dialog"

@@ -81,6 +81,8 @@
                 ...(eq.displayAttr || []),
             ].map((a) => String(a.attrType || "").toLowerCase());
 
+            console.log(eq.displayAttr);
+
             const passesAny = allItemAttributes.some((stat) => filterCheckLowerCase(selectedFilters.stats_any, stat));
 
             if (!passesAny) return false;

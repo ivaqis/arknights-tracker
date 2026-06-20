@@ -8,6 +8,21 @@
   "hints": {
     "editPotential": "Untuk mengubah potensi senjata, klik ikon pensil."
   },
+  "privacy": {
+    "title": "Kebijakan Privasi",
+    "analytics_title": "Privasi & Analitik",
+    "analytics_text1": "Kami menggunakan Firebase Analytics (Google Analytics) untuk mengumpulkan metrik lalu lintas dan performa guna meningkatkan Goyfield.moe.",
+    "analytics_text2": "Goyfield.moe menggunakan teknologi localStorage untuk menyimpan preferensi pengguna Anda (misalnya, server, tema, bahasa yang dipilih) dan data riwayat tarikan (pull) secara lokal di perangkat Anda.",
+    "tracker_title": "Pelacak Tarikan",
+    "tracker_text1": "Secara default, semua data tarikan yang diimpor disimpan secara lokal di perangkat Anda. Tautan impor Anda (yang berisi token sementara) dikirim ke server backend Goyfield.moe semata-mata untuk terhubung dengan API resmi game dan mengambil riwayat Anda. Tautan itu sendiri, token, atau data akun pribadi apa pun tidak dibagikan kepada pihak ketiga dan tidak disimpan di server dalam bentuk teks biasa.",
+    "tracker_text2": "Jika terjadi kesalahan sistem selama impor, tautan dapat disimpan sementara di log administrator untuk mengidentifikasi dan memperbaiki bug.",
+    "global_title": "Statistik Global",
+    "global_text": "Saat Anda mengimpor riwayat, informasi anonim tertentu tentang tarikan Anda (jenis item, kelangkaan, waktu, banner) disimpan di server kami. Data ini ditautkan ke pengidentifikasi anonim yang dihasilkan (UID) dan digunakan untuk mendukung bagian \"Statistik Global\".",
+    "cloud_title": "Sinkronisasi Cloud",
+    "cloud_text1": "Goyfield.moe menyediakan opsi untuk menautkan akun Google Anda untuk membuat cadangan cloud data tarikan Anda. Nama pengguna dan alamat email Anda ditampilkan semata-mata dalam antarmuka pengaturan dan tidak dibagikan kepada pihak ketiga.",
+    "cloud_text2": "Berbeda dengan penyimpanan lokal, saat menggunakan fitur ini, data tarikan Anda disimpan dengan aman di database cloud kami (Firebase). Anda dapat keluar dari akun kapan saja melalui Pengaturan.",
+    "close": "Tutup"
+  },
   "sidebar": {
     "home": "Beranda",
     "records": "Riwayat Headhunting",
@@ -575,7 +590,10 @@
     "abilities": "Kemampuan",
     "vulnerable": "Pengganda Resistansi",
     "resistance": "Resistansi",
-    "enemiesResHint": "Menampilkan pengganda kerusakan yang diterima menurut rumus: Kerusakan × Pengganda Resistansi (%). Contoh: 100% — tidak ada pengurangan kerusakan, 50% — kerusakan yang diterima musuh berkurang separuhnya. Resistansi: 100% - n% = m%, di mana n% adalah pengganda resistansi dan m% adalah resistansi."
+    "enemiesResHint": "Menampilkan pengganda kerusakan yang diterima menurut rumus: Kerusakan × Pengganda Resistansi (%). Contoh: 100% — tidak ada pengurangan kerusakan, 50% — kerusakan yang diterima musuh berkurang separuhnya. Resistansi: 100% - n% = m%, di mana n% adalah pengganda resistansi dan m% adalah resistansi.",
+    "essence": "Esensi",
+    "none": "Tanpa Esensi",
+    "addEssence": "Tambahkan Esensi"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"
@@ -1994,6 +2012,10 @@
     "treeSwitchButton": {
       "changeTree": "Ubah rantai",
       "openTree": "Lihat rantai"
+    },
+    "emptyState": {
+      "title": "Tidak ada yang dipilih",
+      "subtitle": "Klik item di sebelah kiri untuk menampilkan resepnya."
     }
   },
   "resourcePointNames": {

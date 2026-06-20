@@ -448,7 +448,10 @@
     "abilities": "Kebolehan",
     "vulnerable": "Pendarab Rintangan",
     "resistance": "Rintangan",
-    "enemiesResHint": "Memaparkan pendarab kerosakan yang diterima mengikut formula: Kerosakan × Pendarab Rintangan (%). Sebagai contoh: 100% — tiada pengurangan kerosakan, 50% — kerosakan yang diterima oleh musuh dikurangkan separuh. Rintangan: 100% - n% = m%, di mana n% ialah pendarab rintangan dan m% ialah rintangan."
+    "enemiesResHint": "Memaparkan pendarab kerosakan yang diterima mengikut formula: Kerosakan × Pendarab Rintangan (%). Sebagai contoh: 100% — tiada pengurangan kerosakan, 50% — kerosakan yang diterima oleh musuh dikurangkan separuh. Rintangan: 100% - n% = m%, di mana n% ialah pendarab rintangan dan m% ialah rintangan.",
+    "none": "Tiada Esen",
+    "essence": "Esen",
+    "addEssence": "Tambah Esen"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"
@@ -685,6 +688,10 @@
     "treeSwitchButton": {
       "changeTree": "Tukar rantaian",
       "openTree": "Lihat rantaian"
+    },
+    "emptyState": {
+      "title": "Tiada yang dipilih",
+      "subtitle": "Klik pada item di sebelah kiri untuk memaparkan resipinya."
     }
   }
 }

@@ -243,24 +243,26 @@
         </span>
 
         <div
-            class="bg-[#F0F2F4] rounded-xl pt-4 px-4 dark:bg-[#343434] flex gap-2 overflow-x-auto materials-scroll md:justify-center justify-start w-full snap-x"
+            class="bg-[#F0F2F4] rounded-xl pt-4 px-4 dark:bg-[#343434] overflow-x-auto materials-scroll w-full snap-x"
         >
-            {#if currentMaterials.length > 0}
-                {#each currentMaterials as mat}
-                    <div class="transform scale-90 origin-top-left">
-                        <ItemCard item={{ id: mat.name }} amount={mat.amount} />
+            <div class="flex gap-2 w-max min-w-full justify-center">
+                {#if currentMaterials.length > 0}
+                    {#each currentMaterials as mat}
+                        <div class="transform scale-90 origin-top-left">
+                            <ItemCard item={{ id: mat.name }} amount={mat.amount} />
+                        </div>
+                    {/each}
+                {:else}
+                    <div
+                        class="w-full text-center dark:bg-[#343434] py-4 mb-4 bg-gray-50 rounded border border-gray-200 dark:border-[#444444]"
+                    >
+                        <span class="text-xs text-gray-400 italic">
+                            {$t("systemNames.noMaterialsNeeded") ||
+                                "No materials needed"}
+                        </span>
                     </div>
-                {/each}
-            {:else}
-                <div
-                    class="w-full text-center dark:bg-[#343434] py-4 mb-4 bg-gray-50 rounded border border-gray-200 dark:border-[#444444]"
-                >
-                    <span class="text-xs text-gray-400 italic">
-                        {$t("systemNames.noMaterialsNeeded") ||
-                            "No materials needed"}
-                    </span>
-                </div>
-            {/if}
+                {/if}
+            </div>
         </div>
     </div>
 </div>

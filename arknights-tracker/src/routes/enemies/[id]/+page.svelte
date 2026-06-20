@@ -10,6 +10,7 @@
     import Image from "$lib/components/Image.svelte";
     import NotFound from "$lib/components/NotFound.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
+    import TableModal from "$lib/components/modals/TableModal.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -475,104 +476,63 @@
     </div>
 </div>
 
-{#if showStatsTable}
-    <div
-        role="dialog"
-        tabindex="-1"
-        aria-modal="true"
-        class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
-        on:click|self={() => (showStatsTable = false)}
-        on:keydown|self={(e) => {
-            if (e.key === "Escape" || e.key === "Enter" || e.key === " ")
-                showStatsTable = false;
-        }}
-    >
-        <div
-            class="bg-white rounded-xl w-full max-w-sm max-h-[85vh] flex flex-col shadow-2xl overflow-hidden"
+<TableModal
+    bind:isOpen={showStatsTable}
+    title={tOrFallback("stats.attributesTable", "Attributes Table")}
+    isTableCopied={isTableCopied}
+    maxWidthClass="max-w-sm"
+    on:copy={copyStatsTable}
+>
+    <table class="w-full text-center border-collapse">
+        <thead
+            class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
         >
-            <div
-                class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white dark:bg-[#2C2C2C] shrink-0"
-            >
-                <h3 class="font-bold text-lg">
-                    {tOrFallback("stats.attributesTable", "Attributes Table")}
-                </h3>
-                <div class="flex gap-2">
-                    <button
-                        on:click={copyStatsTable}
-                        class="p-1.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none cursor-pointer"
+            <tr>
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.level", "Уровень")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.hp", "HP")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.atk", "ATK")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.def", "DEF")}</th
+                >
+            </tr>
+        </thead>
+        <tbody
+            class="text-sm font-nums text-gray-800 dark:text-gray-300"
+        >
+            {#each Array(maxLevel) as _, i}
+                <tr
+                    class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                >
+                    <td
+                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                        >{i + 1}</td
                     >
-                        {#if isTableCopied}
-                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-                        {:else}
-                            <Icon name="copy" class="w-4 h-4" />
-                        {/if}
-                        <span>{tOrFallback("common.copy", "Copy")}</span>
-                    </button>
-                    <button
-                        on:click={() => (showStatsTable = false)}
-                        class="p-1.5 rounded-full hover:bg-gray-200 dark:hover:bg-white/10 text-gray-500 dark:text-gray-400 transition-colors cursor-pointer"
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        <Icon name="close" class="w-6 h-6" />
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="overflow-auto custom-scrollbar bg-white dark:bg-[#2b2b2b] p-0"
-            >
-                <table class="w-full text-center border-collapse">
-                    <thead
-                        class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
+                        {@html formatNumberForSelection(enemyData.hp ? enemyData.hp[i] : 0)}
+                    </td>
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        <tr>
-                            <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback("stats.level", "Уровень")}</th
-                            >
-                            <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback("stats.hp", "HP")}</th
-                            >
-                            <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback("stats.atk", "ATK")}</th
-                            >
-                            <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback("stats.def", "DEF")}</th
-                            >
-                        </tr>
-                    </thead>
-                    <tbody
-                        class="text-sm font-nums text-gray-800 dark:text-gray-300"
+                        {@html formatNumberForSelection(enemyData.atk ? enemyData.atk[i] : 0)}
+                    </td>
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        {#each Array(maxLevel) as _, i}
-                            <tr
-                                class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
-                            >
-                                <td
-                                    class="py-2 px-4 text-gray-500 dark:text-gray-400"
-                                    >{i + 1}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                >
-                                    {@html formatNumberForSelection(enemyData.hp ? enemyData.hp[i] : 0)}
-                                </td>
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                >
-                                    {@html formatNumberForSelection(enemyData.atk ? enemyData.atk[i] : 0)}
-                                </td>
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                >
-                                    {@html formatNumberForSelection(enemyData.def ? enemyData.def[i] : 0)}
-                                </td>
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-{/if}
+                        {@html formatNumberForSelection(enemyData.def ? enemyData.def[i] : 0)}
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</TableModal>
 {/if}
 <style>
     .card-gradient {

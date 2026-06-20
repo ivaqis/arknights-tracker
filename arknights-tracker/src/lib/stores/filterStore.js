@@ -36,6 +36,7 @@ export function getWeaponFilters() {
     return {
         rarity: [6, 5, 4, 3],
         type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        essence: [0, 1, 2, 3],
         attr1: [
             "attr_agi",
             "attr_str",

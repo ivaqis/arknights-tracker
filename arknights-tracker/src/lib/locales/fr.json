@@ -8,6 +8,21 @@
   "hints": {
     "editPotential": "Pour modifier les potentiels de l'arme, cliquez sur l'icône en forme de crayon."
   },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "analytics_title": "Confidentialité et Analyses",
+    "analytics_text1": "Nous utilisons Firebase Analytics (Google Analytics) pour collecter des mesures de trafic et de performance afin d'améliorer Goyfield.moe.",
+    "analytics_text2": "Goyfield.moe utilise la technologie localStorage pour stocker vos préférences utilisateur (par ex. serveur, thème, langue) et l'historique de vos tirages localement sur votre appareil.",
+    "tracker_title": "Suivi des Tirages",
+    "tracker_text1": "Par défaut, toutes les données de tirages importées sont enregistrées localement sur votre appareil. Votre lien d'importation (contenant un jeton temporaire) est envoyé au serveur backend de Goyfield.moe uniquement pour se connecter à l'API officielle du jeu et récupérer votre historique. Le lien lui-même, les jetons ou toute donnée de compte personnel ne sont pas partagés avec des tiers et ne sont pas stockés sur le serveur en texte clair.",
+    "tracker_text2": "En cas d'erreur système lors de l'importation, le lien peut être temporairement enregistré dans les journaux de l'administrateur pour identifier et corriger les bugs.",
+    "global_title": "Statistiques Globales",
+    "global_text": "Lorsque vous importez votre historique, certaines informations anonymisées concernant vos tirages (type d'objet, rareté, heure, bannière) sont enregistrées sur notre serveur. Ces données sont liées à un identifiant anonyme (UID) et sont utilisées pour alimenter la section « Statistiques Globales ».",
+    "cloud_title": "Synchronisation Cloud",
+    "cloud_text1": "Goyfield.moe offre la possibilité de lier votre compte Google pour créer des sauvegardes cloud de vos tirages. Votre nom d'utilisateur et votre adresse e-mail sont affichés uniquement dans l'interface des paramètres et ne sont pas partagés avec des tiers.",
+    "cloud_text2": "Contrairement au stockage local, lors de l'utilisation de cette fonctionnalité, vos données de tirages sont stockées en toute sécurité dans notre base de données cloud (Firebase). Vous pouvez vous déconnecter de votre compte à tout moment via les Paramètres.",
+    "close": "Fermer"
+  },
   "sidebar": {
     "home": "Accueil",
     "records": "Historique Recrutement",
@@ -575,7 +590,10 @@
     "abilities": "Capacités",
     "vulnerable": "Multiplicateur de résistance",
     "resistance": "Résistance",
-    "enemiesResHint": "Affiche le multiplicateur de dégâts reçus selon la formule : Dégâts × Multiplicateur de résistance (%). Par exemple : 100 % — aucune réduction de dégâts, 50 % — les dégâts reçus par l'ennemi sont réduits de moitié. Résistance : 100 % - n % = m %, où n % est le multiplicateur de résistance et m % est la résistance."
+    "enemiesResHint": "Affiche le multiplicateur de dégâts reçus selon la formule : Dégâts × Multiplicateur de résistance (%). Par exemple : 100 % — aucune réduction de dégâts, 50 % — les dégâts reçus par l'ennemi sont réduits de moitié. Résistance : 100 % - n % = m %, où n % est le multiplicateur de résistance et m % est la résistance.",
+    "essence": "Essence",
+    "none": "Sans Essence",
+    "addEssence": "Ajouter Essence"
   },
   "bioValues": {
     "Unknown": "Inconnu"
@@ -1994,6 +2012,10 @@
     "treeSwitchButton": {
       "changeTree": "Modifier la chaîne",
       "openTree": "Voir la chaîne"
+    },
+    "emptyState": {
+      "title": "Aucune sélection",
+      "subtitle": "Cliquez sur un objet à gauche pour afficher sa recette."
     }
   },
   "resourcePointNames": {
