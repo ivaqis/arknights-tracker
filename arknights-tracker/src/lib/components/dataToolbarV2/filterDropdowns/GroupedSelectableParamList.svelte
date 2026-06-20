@@ -94,15 +94,18 @@
         }
 
         return "inactive"
-    }
+    };
+
+    $: displayedGroups = paramGroups.filter((list) => list.length > 0);
+
 </script>
 
 <div class="flex flex-col gap-2.5">
 
-    {#each paramGroups as paramList, index}
+    {#each displayedGroups as paramList, index}
 
         <div class="flex flex-wrap gap-2 {
-            index < paramGroups.length - 1
+            index < displayedGroups.length - 1
                 ? 'pb-2.5 border-b border-gray-200/60 dark:border-[#444]/50'
                 : ''
         }">
