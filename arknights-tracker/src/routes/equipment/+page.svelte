@@ -140,28 +140,41 @@
         return baseFiltered.sort(sortLogic);
     })();
 
-    $: equipmentFilteredByAttr = allEquipment.filter((eq) => {
-        const allItemAttributes = [
-            ...(eq.displayAttr || []),
-        ].map((a) => String(a.attrType || "").toLowerCase());
+    $: equipmentFilteredByAttr12 = allEquipment.filter((eq) => {
+        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
         const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1] ?? "");
         const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2] ?? "");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
 
-        return passesAttr1 && passesAttr2 && passesAttr3;
+        return passesAttr1 && passesAttr2;
     });
 
-    $: if (equipmentFilteredByAttr) {
-        let attrFilters1 = getEquipmentAttrSet(equipmentFilteredByAttr, 1);
-        let attrFilters2 = getEquipmentAttrSet(equipmentFilteredByAttr, 2);
-        let attrFilters3 = getEquipmentAttrSet(equipmentFilteredByAttr, 3);
+    $: equipmentFilteredByAttr23 = allEquipment.filter((eq) => {
+        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
+
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2] ?? "");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
+
+        return passesAttr2 && passesAttr3;
+    });
+
+    $: equipmentFilteredByAttr13 = allEquipment.filter((eq) => {
+        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
+
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1] ?? "");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
+
+        return passesAttr1 && passesAttr3;
+    });
+
+    $: if (equipmentFilteredByAttr12 && equipmentFilteredByAttr23 && equipmentFilteredByAttr13) {
+        let attrFilters1 = getEquipmentAttrSet(equipmentFilteredByAttr23, 1);
+        let attrFilters2 = getEquipmentAttrSet(equipmentFilteredByAttr13, 2);
+        let attrFilters3 = getEquipmentAttrSet(equipmentFilteredByAttr12, 3);
 
         allFilters.stats_1 = getFilteredAttrGroupList(allFilters.stats, attrFilters1);
         allFilters.stats_2 = getFilteredAttrGroupList(allFilters.stats, attrFilters2);
         allFilters.stats_3 = getFilteredAttrGroupList(allFilters.stats, attrFilters3);
-
-        console.log(allFilters);
 
         forceUpdateFilterList();
     }
