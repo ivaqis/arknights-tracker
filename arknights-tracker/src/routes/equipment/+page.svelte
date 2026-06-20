@@ -145,9 +145,9 @@
             ...(eq.displayAttr || []),
         ].map((a) => String(a.attrType || "").toLowerCase());
 
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1]);
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2]);
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3]);
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1] ?? "");
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2] ?? "");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
 
         return passesAttr1 && passesAttr2 && passesAttr3;
     });
