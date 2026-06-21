@@ -870,6 +870,7 @@
       "syncNotWorking": "동기화가 작동하지 않나요?",
       "clearAccountData": "계정 데이터 지우기",
       "sync_toast": "데이터 동기화 완료",
+      "connectionFailed": "Firebase 연결에 실패했습니다. 클라우드 동기화를 사용할 수 없습니다.",
       "description": "Goyfield는 Google과 동기화하여 기록을 저장합니다. 동기화가 꺼져 있으면 캐시 삭제나 브라우저 재설치 시 모든 데이터가 삭제됩니다. Goyfield는 자신의 파일에만 액세스할 수 있습니다.",
       "btn": "Google로 로그인",
       "connected": "연결됨",

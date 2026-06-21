@@ -872,6 +872,7 @@
       "syncNotWorking": "¿La sincronización no funciona?",
       "clearAccountData": "Borrar datos de la cuenta",
       "sync_toast": "Datos sincronizados con éxito",
+      "connectionFailed": "Error de conexión a Firebase. La sincronización en la nube no está disponible.",
       "description": "Goyfield sincroniza datos con Google para guardar tu historial. Si la sincronización está desactivada, limpiar caché o reinstalar el navegador borrará todos los datos. Goyfield solo puede acceder a sus propios archivos.",
       "btn": "Iniciar sesión con Google",
       "connected": "Conectado",

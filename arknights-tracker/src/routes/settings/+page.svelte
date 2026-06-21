@@ -14,6 +14,8 @@
     import { addNotification } from "$lib/stores/notifications";
     import { currentLocale, currentUiLocale } from "$lib/stores/locale";
     import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { weaponEssences } from "$lib/stores/weaponEssences";
 
     import Select from "$lib/components/Select.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
@@ -188,6 +190,8 @@
                     selectedId: currentSelectedId,
                 },
                 data: {},
+                potentials: get(manualPotentials),
+                essences: get(weaponEssences)
             };
 
             currentAccounts.forEach((acc) => {
@@ -305,6 +309,21 @@
             accountStore.accounts.set(importedJsonData.meta.accounts);
             if (importedJsonData.meta.selectedId)
                 accountStore.selectAccount(importedJsonData.meta.selectedId);
+
+            if (importedJsonData.potentials) {
+                localStorage.setItem(
+                    "operatorPotentialsByAccount",
+                    JSON.stringify(importedJsonData.potentials),
+                );
+                try { manualPotentials.set(importedJsonData.potentials); } catch (err) { }
+            }
+            if (importedJsonData.essences) {
+                localStorage.setItem(
+                    "weaponEssencesByAccount",
+                    JSON.stringify(importedJsonData.essences),
+                );
+                try { weaponEssences.set(importedJsonData.essences); } catch (err) { }
+            }
 
             addNotification("success", $t("settings.backup.success_import_full"));
             setTimeout(() => {

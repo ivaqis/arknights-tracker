@@ -8,6 +8,8 @@
     import OperatorClassParamBox from "$lib/components/dataToolbarV2/paramBoxes/OperatorClassParamBox.svelte";
     import RarityParamBox from "$lib/components/dataToolbarV2/paramBoxes/RarityParamBox.svelte";
     import WeaponTypeParamBox from "$lib/components/dataToolbarV2/paramBoxes/WeaponTypeParamBox.svelte";
+    import TextParamBox from "$lib/components/dataToolbarV2/paramBoxes/TextParamBox.svelte";
+    import BaseSkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/BaseSkillParamBox.svelte";
     import SwitchButton from "$lib/components/SwitchButton.svelte";
     import { t } from "$lib/i18n";
 
@@ -155,6 +157,32 @@
             paramBox={WeaponTypeParamBox}
             paramList={filters.weapon}
             bind:selectedParamSet={selectedFilters.weapon}
+        />
+
+    </div>
+
+    <div class="flex flex-col items-start gap-2">
+
+        <GroupTitle
+            asButton={true}
+            onClick={() => toggleFilterGroup("baseSkill")}
+        >
+            {$t("menu.baseSkills")}
+        </GroupTitle>
+
+        <SelectableParamList
+            paramBox={BaseSkillParamBox}
+            paramList={filters.baseSkill}
+            bind:selectedParamSet={selectedFilters.baseSkill}
+            getLocaleFunc={(paramId) => {
+                if (paramId.startsWith("moodDropHour_")) {
+                    const roomKey = paramId.substring("moodDropHour_".length);
+                    const moodDropText = $t("baseSkillsFilters.moodDropHour");
+                    const roomText = $t(`baseSkillsPositions.${roomKey}`) || roomKey;
+                    return `${moodDropText} (${roomText})`;
+                }
+                return $t(`baseSkillsFilters.${paramId}`) || paramId;
+            }}
         />
 
     </div>

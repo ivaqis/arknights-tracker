@@ -527,6 +527,7 @@
       "syncNotWorking": "Eikö synkronointi toimi?",
       "clearAccountData": "Tyhjennä tilin tiedot",
       "sync_toast": "Tiedot synkronoitu onnistuneesti",
+      "connectionFailed": "Firebase-yhteys epäonnistui. Pilvisynkronointi ei ole käytettävissä.",
       "description": "Goyfield synkronoi tiedot Googlen kanssa vetohistoriasi tallentamiseksi. Jos synkronointi poistetaan käytöstä, välimuistin tyhjentäminen tai selaimen uudelleenasentaminen poistaa kaikki vetotiedot. Goyfield voi käyttää vain omia tiedostojaan.",
       "btn": "Kirjaudu sisään Googlella",
       "connected": "Yhdistetty",

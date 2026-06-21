@@ -350,7 +350,7 @@
                   activeBanners.length;
               }}
             >
-              <Icon name="chevronLeft" style="width: 24px; height: 24px;" />
+              <Icon name="chevronLeft" className="w-6 h-6" />
             </button>
             <button
               type="button"
@@ -360,7 +360,7 @@
                   (currentBannerIndex + 1) % activeBanners.length;
               }}
             >
-              <Icon name="chevronRight" style="width: 24px; height: 24px;" />
+              <Icon name="chevronRight" className="w-6 h-6" />
             </button>
           {:else}
             <div

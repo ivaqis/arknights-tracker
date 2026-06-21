@@ -28,6 +28,20 @@ export function getOperatorFilters() {
             "tachyonScreeningLattice",
             "quadrantFittingFluid",
             "triphasicNanoflake"
+        ],
+        baseSkill: [
+            "weaponMaterialEfficiency",
+            "operatorMaterialEfficiency",
+            "operatorClueCollectingEfficiency",
+            "fungiGrowthEfficiency",
+            "vitrosGrowthEfficiency",
+            "mineralGrowthEfficiency",
+            "moodRegen",
+            "clueEfficiencyBoost",
+            "moodDropHour_controlNexus",
+            "moodDropHour_receptionRoom",
+            "moodDropHour_manufacturingCabin",
+            "moodDropHour_growthChamber"
         ]
     };
 }

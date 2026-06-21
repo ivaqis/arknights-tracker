@@ -914,6 +914,7 @@
       "syncNotWorking": "同步無法正常運作？",
       "clearAccountData": "清除帳戶資料",
       "sync_toast": "資料同步成功",
+      "connectionFailed": "Firebase 連線失敗。雲端同步不可用。",
       "description": "Goyfield 與 Google 同步以儲存您的尋訪記錄。如果停用同步，清除快取或重新安裝瀏覽器將刪除所有資料。Goyfield 只能存取其自己的檔案。",
       "btn": "使用 Google 登入",
       "connected": "已連線",

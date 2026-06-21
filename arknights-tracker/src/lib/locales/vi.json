@@ -914,6 +914,7 @@
       "syncNotWorking": "Đồng bộ hóa không hoạt động?",
       "clearAccountData": "Xóa dữ liệu tài khoản",
       "sync_toast": "Đồng bộ dữ liệu thành công",
+      "connectionFailed": "Kết nối Firebase thất bại. Đồng bộ hóa đám mây không khả dụng.",
       "description": "Goyfield đồng bộ dữ liệu với Google để lưu lịch sử chiêu mộ của bạn. Nếu tắt đồng bộ, việc xóa bộ nhớ đệm hoặc cài lại trình duyệt sẽ xóa tất cả dữ liệu. Goyfield chỉ có thể truy cập các tệp của chính nó.",
       "btn": "Đăng nhập bằng Google",
       "connected": "Đã kết nối",

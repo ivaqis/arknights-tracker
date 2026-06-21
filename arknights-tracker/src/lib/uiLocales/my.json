@@ -527,6 +527,7 @@
       "syncNotWorking": "Penyegerakan tidak berfungsi?",
       "clearAccountData": "Kosongkan data akaun",
       "sync_toast": "Data berjaya disegerakkan",
+      "connectionFailed": "Sambungan Firebase gagal. Penyegerakan awan tidak tersedia.",
       "description": "Goyfield menyegerakkan data dengan Google untuk menyimpan sejarah tarikan anda. Jika penyegerakan dilumpuhkan, membersihkan cache atau memasang semula penyemak imbas akan memadam semua data tarikan. Goyfield hanya boleh mengakses failnya sendiri.",
       "btn": "Log masuk dengan Google",
       "connected": "Tersambung",

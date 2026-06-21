@@ -16,7 +16,7 @@
     } from "$lib/stores/filterStore";
     import { manualPotentials } from "$lib/stores/potentials";
     import { pullData } from "$lib/stores/pulls";
-    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { filterCheck, filterCheckLowerCase, getBaseSkillMappedFilter } from "$lib/utils/filterUtils.js";
 
     $: selectedFilters = $operatorFilters;
     $: searchQuery = $operatorSearch;
@@ -61,9 +61,7 @@
         return loadingPromise;
     }
 
-    $: if (selectedMaterial && !isDataLoaded) {
-        loadCharacterData();
-    }
+    loadCharacterData();
 
     function getSkillMaterialCount(opId, matId, category) {
         if (!matId) return 0;
@@ -160,6 +158,23 @@
                 if (selectedMaterial) {
                     const count = getSkillMaterialCount(op.id, selectedMaterial, selectedSkillMaterialType);
                     if (count === 0) return false;
+                }
+
+                if (selectedFilters.baseSkill && selectedFilters.baseSkill.size > 0) {
+                    const charDetails = characterDetailsMap[op.id];
+                    if (!charDetails || !charDetails.facSkills) return false;
+                    let hasMatch = false;
+                    for (const key of Object.keys(charDetails.facSkills)) {
+                        const skill = charDetails.facSkills[key];
+                        if (skill && skill.name) {
+                            const mappedFilter = getBaseSkillMappedFilter(op.id, skill.name);
+                            if (selectedFilters.baseSkill.has(mappedFilter)) {
+                                hasMatch = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!hasMatch) return false;
                 }
 
                 return matchesRarity && matchesClass && matchesElement && matchesWeapon;
@@ -260,6 +275,8 @@
                         isNew={op.isNew} 
                         materialIcon={selectedMaterial}
                         materialCount={getSkillMaterialCount(op.id, selectedMaterial, selectedSkillMaterialType)}
+                        baseSkills={characterDetailsMap[op.id]?.facSkills}
+                        activeBaseSkillFilters={selectedFilters.baseSkill}
                     />
                 </div>
             {/each}
@@ -271,7 +288,7 @@
             >
                 <Icon name="noData" class="w-4 h-4" />
                 <p class="text-sm">
-                    {$t("emptyState.noData") || "Нет данных"}
+                    {$t("emptyState.noData")}
                 </p>
             </div>
         {/if}

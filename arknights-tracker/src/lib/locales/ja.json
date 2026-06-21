@@ -870,6 +870,7 @@
       "syncNotWorking": "同期が機能しませんか？",
       "clearAccountData": "アカウントデータを消去",
       "sync_toast": "データの同期が完了しました",
+      "connectionFailed": "Firebaseの接続に失敗しました。クラウド同期は利用できません。",
       "description": "GoyfieldはGoogleと同期してガチャ履歴を保存します。同期が無効の場合、キャッシュのクリアやブラウザの再インストールで全てのデータが消えます。Goyfieldは自身のファイルにのみアクセス可能です。",
       "btn": "Googleでログイン",
       "connected": "接続済み",

@@ -11,6 +11,7 @@
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
+    import { getBaseSkillLocale, getBaseSkillMappedFilter } from "$lib/utils/filterUtils.js";
 
     export let operator = {};
     export let variant = "default"; // "small" | "default"
@@ -19,6 +20,29 @@
     export let hideName = false;
     export let materialIcon = null;
     export let materialCount = 0;
+    export let baseSkills = null;
+    export let activeBaseSkillFilters = null;
+
+    $: uniqueBaseSkills = (() => {
+        if (!baseSkills) return [];
+        const names = new Set();
+        const keys = Object.keys(baseSkills).sort();
+        for (const key of keys) {
+            const skill = baseSkills[key];
+            if (skill && skill.name) {
+                names.add(skill.name);
+            }
+        }
+        return Array.from(names);
+    })();
+
+    $: displayedBaseSkills = (() => {
+        if (!activeBaseSkillFilters || activeBaseSkillFilters.size === 0) return [];
+        return uniqueBaseSkills.filter(skillName => {
+            const mappedFilter = getBaseSkillMappedFilter(operator.id, skillName);
+            return activeBaseSkillFilters.has(mappedFilter);
+        });
+    })();
 
     $: computedIsNew =
         isNew !== undefined
@@ -204,7 +228,7 @@
                 </div>
 
                 {#if operator.element}
-                    <div class="pointer-events-auto">
+                    <div class="pointer-events-auto {variant === 'small' ? 'mt-[-1px]' : 'mt-[-3px]'}">
                         <Tooltip
                             textKey={`elements.${operator.element}`}
                             class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
@@ -216,6 +240,21 @@
                         </Tooltip>
                     </div>
                 {/if}
+
+                {#each displayedBaseSkills as skillName}
+                    <div class="pointer-events-auto {variant === 'small' ? 'mt-[-1px]' : 'mt-[-3px]'}">
+                        <Tooltip
+                            text={getBaseSkillLocale(operator.id, skillName, $t)}
+                            class={`flex items-center justify-center filter drop-shadow-md cursor-pointer ${iconSize}`}
+                        >
+                            <Image
+                                id={skillName}
+                                variant="fac-skill"
+                                className="w-full h-full object-contain rounded-md"
+                            />
+                        </Tooltip>
+                    </div>
+                {/each}
             </div>
 
             {#if variant === "default"}

@@ -870,6 +870,7 @@
       "syncNotWorking": "Sinkronisasi tidak berfungsi?",
       "clearAccountData": "Hapus data akun",
       "sync_toast": "Data berhasil disinkronkan",
+      "connectionFailed": "Koneksi Firebase gagal. Sinkronisasi cloud tidak tersedia.",
       "description": "Goyfield menyinkronkan data dengan Google untuk menyimpan riwayat pull Anda. Jika sinkronisasi dimatikan, membersihkan cache atau menginstal ulang browser akan menghapus semua data pull. Goyfield hanya dapat mengakses filenya sendiri.",
       "btn": "Masuk dengan Google",
       "connected": "Terhubung",

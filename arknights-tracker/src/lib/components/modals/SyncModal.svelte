@@ -122,7 +122,7 @@
 </script>
 
 <Modal isOpen={showModal} closeOnOutsideClick={false} closeOnEscape={false} on:close={handleLeftButton}>
-    <div class="bg-white dark:bg-[#383838] rounded-xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col">
+    <div class="bg-white dark:bg-[#383838] rounded-xl w-full max-w-3xl shadow-2xl overflow-hidden flex flex-col">
         
         <div class="px-6 py-5 border-b border-gray-100 dark:border-[#444444] flex justify-between items-center bg-gray-50 dark:bg-[#343434]">
             <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-3">

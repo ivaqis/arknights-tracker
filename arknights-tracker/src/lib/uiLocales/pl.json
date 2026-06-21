@@ -527,6 +527,7 @@
       "syncNotWorking": "Synchronizacja nie działa?",
       "clearAccountData": "Wyczyść dane konta",
       "sync_toast": "Dane pomyślnie zsynchronizowane",
+      "connectionFailed": "Połączenie z Firebase nie powiodło się. Synchronizacja w chmurze jest niedostępna.",
       "description": "Goyfield synchronizuje dane z Google, aby zachować Twoją historię losowań. Jeśli synchronizacja zostanie wyłączona, wyczyszczenie pamięci podręcznej lub ponowna instalacja przeglądarki spowoduje usunięcie wszystkich danych o losowaniach. Goyfield ma dostęp tylko do własnych plików.",
       "btn": "Zaloguj się przez Google",
       "connected": "Połączono",
