@@ -308,7 +308,7 @@
         }
         if (attrName === secAttr) {
             return {
-                bg: "bg-[#3B3B3B]",
+                bg: "bg-[#323232]",
                 icon: "text-white",
             };
         }
@@ -574,12 +574,12 @@
         style="transform: translateZ(0);"
     >
         <div
-            class="h-[110%] max-w-none object-cover opacity-100 lg:opacity-100 mask-image-gradient"
+            class="h-[110%] max-w-none object-cover opacity-100 mask-image-gradient"
         >
             <Image id={char.id} variant="operator-splash" size="100%" />
         </div>
         <div
-            class="absolute inset-0 bg-gradient-to-r dark:from-[#5E5E5E] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-40"
+            class="absolute inset-0 bg-gradient-to-r dark:from-[#5E5E5E] from-[#F9F9F9] via-[#F9F9F9]/80 to-transparent lg:via-[#F9F9F9]/40 z-10 opacity-20"
         ></div>
     </div>
 
