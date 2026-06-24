@@ -1,0 +1,43 @@
+{
+  "name": "goyfield-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec ts-node -r tsconfig-paths/register src/main.ts",
+    "build": "tsc && tsc-alias",
+    "clean": "tsc --build --clean",
+    "rebuild": "npm run clean && npm run build",
+    "start": "node dist/main.js",
+    "migrate:pg": "prisma migrate deploy --schema prisma/postgres/schema.prisma",
+    "migrate:sqlite": "prisma migrate deploy --schema prisma/sqlite/schema.prisma",
+    "generate:pg": "prisma generate --schema prisma/postgres/schema.prisma",
+    "generate:sqlite": "prisma generate --schema prisma/sqlite/schema.prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/client": "5.19.0",
+    "axios": "^1.16.0",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "cross-env": "^10.1.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.5.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.17",
+    "nodemon": "^3.1.14",
+    "prisma": "5.19.0",
+    "@types/node": "^26.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6"
+  }
+}

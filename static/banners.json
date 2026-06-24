@@ -1,0 +1,300 @@
+[
+  {
+    "id": "standard_01",
+    "name": "Basic Headhunting",
+    "type": "standard",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "ardelia",
+      "pogranichnik",
+      "lastRite",
+      "ember",
+      "lifeng"
+    ]
+  },
+  {
+    "id": "new_player_01",
+    "name": "New Horizons Headhunting",
+    "type": "new-player",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "ardelia",
+      "pogranichnik",
+      "lastRite",
+      "ember",
+      "lifeng"
+    ]
+  },
+  {
+    "id": "special_1_0_1",
+    "name": "Scars Of The Forge",
+    "type": "special",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": "2026-02-07 11:59:59",
+    "featured6": [
+      "laevatain"
+    ]
+  },
+  {
+    "id": "special_1_0_3",
+    "name": "The Floaty Messenger",
+    "type": "special",
+    "startTime": "2026-02-07 12:00:00",
+    "endTime": "2026-02-24 11:59:59",
+    "featured6": [
+      "gilberta"
+    ]
+  },
+  {
+    "id": "special_1_0_2",
+    "name": "Hues Of Passion",
+    "type": "special",
+    "startTime": "2026-02-24 12:00:00",
+    "endTime": "2026-03-11 17:00:00",
+    "endTimeAsia": "2026-03-12 06:00:00",
+    "featured6": [
+      "yvonne"
+    ]
+  },
+  {
+    "id": "weponbox_1_0_1",
+    "name": "Smelting Forge Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": "2026-03-11 17:00:00",
+    "endTimeAsia": "2026-03-12 06:00:00",
+    "featured6": [
+      "forgebornScathe"
+    ]
+  },
+  {
+    "id": "weaponbox_constant_1",
+    "name": "Solid Ice Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "khravengger"
+    ]
+  },
+  {
+    "id": "weaponbox_constant_2",
+    "name": "Cosmic Voice Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "dreamsOfTheStarryBeach"
+    ]
+  },
+  {
+    "id": "weaponbox_constant_3",
+    "name": "Far Expedition Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "neverRest"
+    ]
+  },
+  {
+    "id": "weaponbox_constant_4",
+    "name": "Rising Mount Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "mountainBearer"
+    ]
+  },
+  {
+    "id": "weaponbox_constant_5",
+    "name": "Thunderous Peal Issue",
+    "type": "weapon",
+    "startTime": "2026-01-22 03:00:00",
+    "endTime": null,
+    "featured6": [
+      "thunderberge"
+    ]
+  },
+  {
+    "id": "weponbox_1_0_3",
+    "name": "Express Delivery Issue",
+    "type": "weapon",
+    "startTime": "2026-02-07 12:00:00",
+    "endTime": "2026-04-05 11:59:59",
+    "featured6": [
+      "deliveryGuaranteed"
+    ]
+  },
+  {
+    "id": "weponbox_1_0_2",
+    "name": "Graffiti Issue",
+    "type": "weapon",
+    "startTime": "2026-02-24 12:00:00",
+    "endTime": "2026-04-16 17:00:00",
+    "endTimeAsia": "2026-04-17 06:00:00",
+    "featured6": [
+      "artzyTyrannical",
+      "Artzy Tyrannical"
+    ]
+  },
+  {
+    "id": "special_1_1_1",
+    "name": "River's Daughter",
+    "type": "special",
+    "startTime": "2026-03-11 22:00:00",
+    "endTime": "2026-03-29 11:59:59",
+    "startTimeAsia": "2026-03-12 11:00:00",
+    "endTimeAsia": "2026-03-29 11:59:59",
+    "featured6": [
+      "tangtang",
+      "Tangtang"
+    ]
+  },
+  {
+    "id": "special_1_1_2",
+    "name": "Wolf Pearl",
+    "type": "special",
+    "startTime": "2026-03-29 12:00:00",
+    "endTime": "2026-04-16 17:00:00",
+    "endTimeAsia": "2026-04-17 06:00:00",
+    "featured6": [
+      "rossi",
+      "Rossi"
+    ]
+  },
+  {
+    "id": "weponbox_1_1_1",
+    "name": "Brigand's Calling",
+    "type": "weapon",
+    "startTime": "2026-03-11 23:00:00",
+    "endTime": "2026-05-14 11:59:59",
+    "startTimeAsia": "2026-03-12 12:00:00",
+    "endTimeAsia": "2026-05-04 11:59:59",
+    "featured6": [
+      "brigandsCalling",
+      "Brigand's Calling"
+    ]
+  },
+  {
+    "id": "weponbox_1_1_2",
+    "name": "Lupine Scarlet",
+    "type": "weapon",
+    "startTime": "2026-03-29 12:00:00",
+    "endTime": "2026-06-26 11:59:59",
+    "featured6": [
+      "lupineScarlet",
+      "Lupine Scarlet"
+    ]
+  },
+  {
+    "id": "special_1_2_1",
+    "name": "Thunder of Renewal",
+    "type": "special",
+    "startTime": "2026-04-16 22:00:00",
+    "startTimeAsia": "2026-04-17 11:00:00",
+    "endTime": "2026-05-22 11:59:59",
+    "featured6": [
+      "zhuangfy",
+      "Zhuangfy",
+      "Zhuang Fangyi"
+    ]
+  },
+  {
+    "id": "weponbox_1_2_1",
+    "name": "Drifting Raft",
+    "type": "weapon",
+    "startTime": "2026-04-16 22:00:00",
+    "startTimeAsia": "2026-04-17 11:00:00",
+    "endTime": "2026-07-16 04:00:00",
+    "endTimeAsia": "2026-07-15 17:00:00",
+    "featured6": [
+      "loneBarge",
+      "Lone Barge"
+    ]
+  },
+  {
+    "id": "joint_1_2_2",
+    "name": "Fest of Brilliance",
+    "type": "joint",
+    "startTime": "2026-05-14 12:00:00",
+    "endTime": "2026-06-04 04:00:00",
+    "endTimeAsia": "2026-06-05 06:00:00",
+    "featured6": [
+      "pogranichnik",
+      "laevatain",
+      "gilberta",
+      "ardelia"
+    ]
+  },
+  {
+    "id": "weponbox_1_2_2",
+    "name": "Smelting Fire Issue",
+    "type": "weapon",
+    "startTime": "2026-05-14 12:00:00",
+    "endTime": "2026-06-04 04:00:00",
+    "endTimeAsia": "2026-06-05 06:00:00",
+    "featured6": [
+      "forgebornScathe"
+    ]
+  },
+  {
+    "id": "weponbox_1_2_3",
+    "name": "Swift Walker Issue",
+    "type": "weapon",
+    "startTime": "2026-05-14 12:00:00",
+    "endTime": "2026-06-04 04:00:00",
+    "endTimeAsia": "2026-06-05 06:00:00",
+    "featured6": [
+      "deliveryGuaranteed"
+    ]
+  },
+  {
+    "id": "special_1_3_1",
+    "name": "Fists of No Regrets",
+    "type": "special",
+    "startTime": "2026-06-04 22:00:00",
+    "startTimeAsia": "2026-06-05 11:00:00",
+    "endTime": "2026-06-26 11:59:59",
+    "featured6": [
+      "miFu",
+      "MiFu",
+      "mifu"
+    ]
+  },
+  {
+    "id": "special_1_3_2",
+    "name": "Expubger of Sin",
+    "type": "special",
+    "startTime": "2026-06-26 12:00:00",
+    "endTime": "2026-07-16 04:00:00",
+    "endTimeAsia": "2026-07-15 17:00:00",
+    "featured6": [
+      "camille"
+    ]
+  },
+  {
+    "id": "weponbox_1_3_1",
+    "name": "Scarlet Knot Issue",
+    "type": "weapon",
+    "startTime": "2026-06-04 22:00:00",
+    "startTimeAsia": "2026-06-05 11:00:00",
+    "endTime": "2026-08-08 11:59:59",
+    "featured6": [
+      "amaranthineTassel"
+    ]
+  },
+  {
+    "id": "weponbox_1_3_2",
+    "name": "Crimson Hued Issue",
+    "type": "weapon",
+    "startTime": "2026-06-26 12:00:00",
+    "endTime": "2026-08-24 17:00:00",
+    "featured6": [
+      "blessingOfLustrousCarmine"
+    ]
+  }
+]

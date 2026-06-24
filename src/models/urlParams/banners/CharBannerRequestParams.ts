@@ -1,0 +1,25 @@
+import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
+import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
+
+
+export class CharBannerRequestParams extends BannerRequestParams {
+    private readonly _poolType: string;
+
+    constructor(urlParams: CharBannerURLParams) {
+        super(urlParams);
+
+        this._poolType = urlParams.poolType;
+    }
+
+    public get poolType(): string {
+        return this._poolType;
+    }
+
+    protected getInitParams(): Record<string, string> {
+        const params = super.getInitParams();
+
+        params.pool_type = this.poolType;
+
+        return params;
+    }
+}
