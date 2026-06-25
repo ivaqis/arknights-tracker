@@ -36,7 +36,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
 
     public async getPullsList() {
         const list: T[] = [];
-        let errorMsg: string = "";
+        let errorMsg: string | null = null;
 
         let hasMore = true;
         let pageCount = 0;
