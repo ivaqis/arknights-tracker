@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=dev nodemon --exec ts-node -r tsconfig-paths/register src/main.ts",
     "build": "tsc && tsc-alias",
-    "clean": "tsc --build --clean",
-    "rebuild": "npm run clean && npm run build",
     "start": "node dist/main.js",
     "migrate:pg": "prisma migrate deploy --schema prisma/postgres/schema.prisma",
     "migrate:sqlite": "prisma migrate deploy --schema prisma/sqlite/schema.prisma",
