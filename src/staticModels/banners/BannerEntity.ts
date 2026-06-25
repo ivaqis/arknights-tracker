@@ -3,8 +3,8 @@ export interface BannerEntity {
     name: string,
     type: string,
     startTime: string,
-    endTime?: string,
-    startTimeAsia?: string,
-    endTimeAsia?: string,
+    endTime?: string | null,
+    startTimeAsia?: string | null,
+    endTimeAsia?: string | null,
     featured6: string[]
 }

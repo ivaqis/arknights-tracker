@@ -1,14 +1,15 @@
 import { BannerType } from "@models/banners/BannerType";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
+import { bannerRecords } from "@staticModels/instances";
 
 export class Banner {
     private readonly _id: string;
     private readonly _name: string;
     private readonly _type: BannerType;
     private readonly _startTime: string;
-    private readonly _endTime?: string;
-    private readonly _startTimeAsia?: string;
-    private readonly _endTimeAsia?: string;
+    private readonly _endTime?: string | null;
+    private readonly _startTimeAsia?: string | null;
+    private readonly _endTimeAsia?: string | null;
     private readonly _featured6List: string[];
 
     constructor(bannerEntity: BannerEntity) {
@@ -26,6 +27,10 @@ export class Banner {
         this._startTimeAsia = bannerEntity.startTimeAsia;
         this._endTimeAsia = bannerEntity.endTimeAsia;
         this._featured6List = bannerEntity.featured6;
+    }
+
+    public static get(bannerId: string): Banner | null {
+        return bannerRecords.getBanner(bannerId);
     }
 
     public static getBannerType(bannerType: string): BannerType | null {
@@ -55,19 +60,19 @@ export class Banner {
         return this._startTime;
     }
 
-    public get endTime(): string | undefined {
-        return this._endTime;
+    public get endTime(): string | null {
+        return this._endTime ?? null;
     }
 
-    public get startTimeAsia(): string | undefined {
-        return this._startTimeAsia;
+    public get startTimeAsia(): string | null {
+        return this._startTimeAsia ?? null;
     }
 
-    public get endTimeAsia(): string | undefined {
-        return this._endTimeAsia;
+    public get endTimeAsia(): string | null {
+        return this._endTimeAsia ?? null;
     }
 
     public get featured6List(): string[] {
-        return this._featured6List;
+        return this._featured6List ?? null;
     }
 }

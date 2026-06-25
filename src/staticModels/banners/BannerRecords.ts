@@ -6,7 +6,7 @@ import { RecordsModel } from "@staticModels/RecordsModel";
 
 export class BannerRecords extends RecordsModel<BannerEntity> {
 
-    private constructor(list: BannerEntity[]) {
+    public constructor(list: BannerEntity[]) {
         super(list, (entity) => entity.id);
     }
 
