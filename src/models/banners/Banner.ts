@@ -13,7 +13,7 @@ export class Banner {
     private readonly _featured6List: string[];
 
     constructor(bannerEntity: BannerEntity) {
-        let bannerType = Banner.getBannerType(bannerEntity.type);
+        let bannerType = BannerType.getBannerTypeByShortName(bannerEntity.type);
 
         if (!bannerType) {
             throw new Error(`Invalid banner type ${bannerEntity.type}`);
@@ -31,17 +31,6 @@ export class Banner {
 
     public static get(bannerId: string): Banner | null {
         return bannerRecords.getBanner(bannerId);
-    }
-
-    public static getBannerType(bannerType: string): BannerType | null {
-        switch (bannerType) {
-            case "standard": return BannerType.CHAR_STANDARD;
-            case "new-player": return BannerType.CHAR_BEGINNER;
-            case "special": return BannerType.CHAR_SPECIAL;
-            case "joint": return BannerType.CHAR_JOINT;
-            case "weapon": return BannerType.WEAPON;
-            default: return null;
-        }
     }
 
     public get id(): string {

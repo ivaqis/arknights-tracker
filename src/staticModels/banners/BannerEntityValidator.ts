@@ -1,4 +1,5 @@
 import { Banner } from "@models/banners/Banner";
+import { BannerType } from "@models/banners/BannerType";
 import { Validator } from "@models/Validator";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
 import { isOptionalString, isString, isValidList } from "@utils/validationUtils";
@@ -51,7 +52,7 @@ export class BannerEntityValidator extends Validator<BannerEntity> {
     private typeCheck(): boolean {
         let field = this._entity.type;
 
-        if (!(isString(field) && !!Banner.getBannerType(field))) {
+        if (!(isString(field) && BannerType.getBannerTypeByShortName(field))) {
             this._messages.push(`type must be one of ${BannerEntityValidator.AVAILABLE_TYPES}`);
             return false;
         }
