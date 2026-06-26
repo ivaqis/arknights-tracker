@@ -8,55 +8,71 @@ datasource db {
 }
 
 model User {
-    uid       String           @id
-    updatedAt DateTime         @updatedAt
-    stats     UserBannerStat[]
+    uid       BigInt   @id @default(autoincrement())
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+
+    userBannerStats     UserBannerStat[]
+    userBannerTypeStats UserBannerTypeStat[]
+    generatedTokens     GeneratedToken[]
+}
+
+model GeneratedToken {
+    token String @id
+    uid   BigInt
+
+    user User @relation(fields: [uid], references: [uid])
 }
 
 model UserBannerStat {
-    uid                   String
-    bannerId              String // 'standard', 'special', 'special_banner_01' и т.д.
-    totalPulls            Int      @default(0)
-    lastUpdate            DateTime @default(now())
-    total6                Int      @default(0)
-    sumPity6              Int      @default(0)
-    total5                Int      @default(0)
-    sumPity5              Int      @default(0)
-    won5050               Int      @default(0)
-    total5050             Int      @default(0)
-    lastProcessedPullTime BigInt   @default(0)
-    user                  User     @relation(fields: [uid], references: [uid])
+    uid            BigInt
+    bannerId       String
+    totalPulls     Int      @default(0)
+    total6         Int      @default(0)
+    total5         Int      @default(0)
+    won5050        Int      @default(0)
+    total5050      Int      @default(0)
+    lastPullTimeTs BigInt   @default(0)
+    updatedAt      DateTime @updatedAt
+
+    user User @relation(fields: [uid], references: [uid])
 
     @@id([uid, bannerId])
     @@index([bannerId, totalPulls])
-    @@index([bannerId, sumPity6])
 }
 
-model ImportError {
-    id        Int      @id @default(autoincrement())
-    createdAt DateTime @default(now())
-    url       String
-    error     String
-    stack     String?
-    serverId  String?
-    solved    Boolean  @default(false)
+model UserBannerTypeStat {
+    uid            BigInt
+    bannerType     String
+    totalPulls     Int      @default(0)
+    total6         Int      @default(0)
+    total5         Int      @default(0)
+    won5050        Int      @default(0)
+    total5050      Int      @default(0)
+    lastPullTimeTs BigInt   @default(0)
+    updatedAt      DateTime @updatedAt
+
+    user User @relation(fields: [uid], references: [uid])
+
+    @@id([uid, bannerType])
+    @@index([bannerType, totalPulls])
 }
 
 model GlobalBannerStats {
-    bannerId     String   @id
-    totalPulls   BigInt   @default(0)
-    totalUsers   Int      @default(0)
-    total6       Int      @default(0)
-    total5       Int      @default(0)
-    limitedCount Int      @default(0)
-    lost5050     Int      @default(0)
-    updatedAt    DateTime @updatedAt
+    bannerId      String   @id
+    totalUsers    Int      @default(0)
+    totalPulls    BigInt   @default(0)
+    total6        Int      @default(0)
+    total5        Int      @default(0)
+    total6Limited Int      @default(0)
+    lost5050      Int      @default(0)
+    updatedAt     DateTime @updatedAt
 }
 
-model GlobalTimeline {
-    bannerId String
-    date     String // формат "YYYY-MM-DD"
-    pulls    Int    @default(0)
+model GlobalBannerTimeline {
+    bannerId   String
+    date       String // "YYYY-MM-DD"
+    pullsCount Int    @default(0)
 
     @@id([bannerId, date])
 }
@@ -67,14 +83,23 @@ model GlobalPityDistribution {
     rarity   Int
     count    Int    @default(0)
 
-    @@id([bannerId, rarity, pity])
+    @@id([bannerId, pity, rarity])
 }
 
 model GlobalItemStats {
     bannerId String
-    itemName String
-    rarity   Int
+    itemId   String
     count    Int    @default(0)
 
-    @@id([bannerId, itemName])
+    @@id([bannerId, itemId])
+}
+
+model ImportError {
+    id        Int      @id @default(autoincrement())
+    createdAt DateTime @default(now())
+    url       String
+    message   String
+    stack     String?
+    serverId  String?
+    solved    Boolean  @default(false)
 }
