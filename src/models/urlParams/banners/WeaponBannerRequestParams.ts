@@ -4,7 +4,7 @@ import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/Wea
 export class WeaponBannerRequestParams extends BannerRequestParams {
     private readonly _poolId?: string;
 
-    constructor(urlParams: WeaponBannerURLParams) {
+    public constructor(urlParams: WeaponBannerURLParams) {
         super(urlParams);
 
         this._poolId = urlParams.poolId;

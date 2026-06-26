@@ -5,7 +5,7 @@ import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharB
 export class CharBannerRequestParams extends BannerRequestParams {
     private readonly _poolType: string;
 
-    constructor(urlParams: CharBannerURLParams) {
+    public constructor(urlParams: CharBannerURLParams) {
         super(urlParams);
 
         this._poolType = urlParams.poolType;

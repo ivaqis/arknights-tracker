@@ -1,3 +1,4 @@
+import { GameServerId } from "@models/GameServerId";
 import { URLRequestParams } from "@models/urlParams/URLRequestParams";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 
@@ -8,7 +9,7 @@ export class BannerRequestParams extends URLRequestParams {
 
     private _seqId?: string;
 
-    constructor(urlParams: BannerURLParams) {
+    public constructor(urlParams: BannerURLParams) {
         super();
 
         this._token = urlParams.token;
@@ -26,8 +27,14 @@ export class BannerRequestParams extends URLRequestParams {
         return this._lang;
     }
 
-    public get serverId(): string {
+    public get serverIdString(): string {
         return this._serverId;
+    }
+
+    public get serverId(): GameServerId | null {
+        return GameServerId.isServerId(this._serverId)
+            ? this._serverId
+            : null;
     }
 
     public get seqId(): string | undefined {
@@ -42,7 +49,7 @@ export class BannerRequestParams extends URLRequestParams {
         const params: Record<string, string> = {
             token: this.token,
             lang: this.lang,
-            server_id: this.serverId,
+            server_id: this.serverIdString,
         }
 
         if (this.seqId) {
