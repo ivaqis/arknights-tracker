@@ -1,5 +1,5 @@
-import { Banner } from "@models/banners/Banner";
 import { BannerType } from "@models/banners/BannerType";
+import { DbBannerType } from "@models/banners/DbBannerType";
 import { Validator } from "@models/Validator";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
 import { isOptionalString, isString, isValidList } from "@utils/validationUtils";
@@ -15,6 +15,7 @@ export class BannerEntityValidator extends Validator<BannerEntity> {
         let id = this.idCheck();
         let name = this.nameCheck();
         let type = this.typeCheck();
+        let dbType = this.dbTypeCheck();
         let startTime = this.startTimeCheck();
         let endTime = this.endTimeCheck();
         let startTimeAsia = this.startTimeAsiaCheck();
@@ -24,6 +25,7 @@ export class BannerEntityValidator extends Validator<BannerEntity> {
         return id
             && name
             && type
+            && dbType
             && startTime
             && endTime
             && startTimeAsia
@@ -54,6 +56,17 @@ export class BannerEntityValidator extends Validator<BannerEntity> {
 
         if (!(isString(field) && BannerType.getBannerTypeByShortName(field))) {
             this._messages.push(`type must be one of ${BannerEntityValidator.AVAILABLE_TYPES}`);
+            return false;
+        }
+
+        return true;
+    }
+
+    private dbTypeCheck(): boolean {
+        let field = this._entity.dbType;
+
+        if (!(isString(field) && DbBannerType.isDbBannerType(field))) {
+            this._messages.push(`dbType must be one of ${DbBannerType.getValues()}`);
             return false;
         }
 

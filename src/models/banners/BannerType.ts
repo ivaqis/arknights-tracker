@@ -1,3 +1,5 @@
+import { DbBannerType } from "@models/banners/DbBannerType";
+
 export enum BannerType {
     CHAR_BEGINNER = "E_CharacterGachaPoolType_Beginner",
     CHAR_STANDARD = "E_CharacterGachaPoolType_Standard",
@@ -27,5 +29,16 @@ export namespace BannerType {
         }
 
         return null;
+    }
+
+    export function getBannerTypeByDbBannerType(bannerType: DbBannerType): BannerType {
+        switch (bannerType) {
+            case DbBannerType.CHAR_BEGINNER: return BannerType.CHAR_BEGINNER;
+            case DbBannerType.CHAR_STANDARD: return BannerType.CHAR_STANDARD;
+            case DbBannerType.CHAR_SPECIAL: return BannerType.CHAR_SPECIAL;
+            case DbBannerType.CHAR_JOINT: return BannerType.CHAR_JOINT;
+            case DbBannerType.WEAPON_SPECIAL: return BannerType.WEAPON
+            case DbBannerType.WEAPON_STANDARD: return BannerType.WEAPON
+        }
     }
 }

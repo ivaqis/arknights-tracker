@@ -1,4 +1,5 @@
 import { BannerType } from "@models/banners/BannerType";
+import { DbBannerType } from "@models/banners/DbBannerType";
 import { BannerEntity } from "@staticModels/banners/BannerEntity";
 import { bannerRecords } from "@staticModels/instances";
 
@@ -6,6 +7,7 @@ export class Banner {
     private readonly _id: string;
     private readonly _name: string;
     private readonly _type: BannerType;
+    private readonly _dbType: DbBannerType;
     private readonly _startTime: string;
     private readonly _endTime?: string | null;
     private readonly _startTimeAsia?: string | null;
@@ -13,15 +15,10 @@ export class Banner {
     private readonly _featured6List: string[];
 
     constructor(bannerEntity: BannerEntity) {
-        let bannerType = BannerType.getBannerTypeByShortName(bannerEntity.type);
-
-        if (!bannerType) {
-            throw new Error(`Invalid banner type ${bannerEntity.type}`);
-        }
-
         this._id = bannerEntity.id;
         this._name = bannerEntity.name;
-        this._type = bannerType;
+        this._type = this.getBannerType(bannerEntity.type);
+        this._dbType = this.getDbBannerType(bannerEntity.dbType);
         this._startTime = bannerEntity.startTime;
         this._endTime = bannerEntity.endTime;
         this._startTimeAsia = bannerEntity.startTimeAsia;
@@ -45,6 +42,10 @@ export class Banner {
         return this._type;
     }
 
+    public get dbType(): DbBannerType {
+        return this._dbType;
+    }
+
     public get startTime(): string {
         return this._startTime;
     }
@@ -63,5 +64,25 @@ export class Banner {
 
     public get featured6List(): string[] {
         return this._featured6List ?? null;
+    }
+
+    private getBannerType(str: string): BannerType {
+        let bannerType = BannerType.getBannerTypeByShortName(str);
+
+        if (!bannerType) {
+            throw new Error(`Invalid banner type ${str}`);
+        }
+
+        return bannerType;
+    }
+
+    private getDbBannerType(str: string): DbBannerType {
+        const isDbBannerType = DbBannerType.isDbBannerType(str);
+
+        if (!isDbBannerType) {
+            throw new Error(`Invalid banner dbType ${str}`);
+        }
+
+        return str;
     }
 }
