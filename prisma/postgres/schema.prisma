@@ -112,7 +112,8 @@ model GlobalBannerStats {
     total6        Int      @default(0)
     total5        Int      @default(0)
     total6Limited Int      @default(0)
-    lost5050      Int      @default(0)
+    won5050       Int      @default(0)
+    total5050     Int      @default(0)
     updatedAt     DateTime @updatedAt
 }
 

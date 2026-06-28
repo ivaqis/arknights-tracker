@@ -1,6 +1,6 @@
-export interface UserBannerStatEntity {
+export interface UserBannerTypeStatEntity {
     uid: bigint,
-    bannerId: string,
+    bannerType: string,
     totalPulls: number,
     total6: number,
     total5: number,

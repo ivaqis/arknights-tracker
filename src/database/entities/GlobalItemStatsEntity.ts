@@ -1,6 +1,5 @@
 export interface GlobalItemStatsEntity {
     bannerId: string,
-    itemName: string,
-    rarity: number,
+    itemId: string,
     count: number
 }

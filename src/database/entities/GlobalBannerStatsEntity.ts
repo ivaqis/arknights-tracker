@@ -1,10 +1,11 @@
 export interface GlobalBannerStatsEntity {
     bannerId: string,
-    totalPulls: bigint,
     totalUsers: number,
+    totalPulls: number,
     total6: number,
     total5: number,
-    limitedCount: number,
-    lost5050: number,
+    total6Limited: number,
+    won5050: number,
+    total5050: number,
     updatedAt: Date
 }

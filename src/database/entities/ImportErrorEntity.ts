@@ -2,7 +2,7 @@ export interface ImportErrorEntity {
     id: number,
     createdAt: Date,
     url: string,
-    error: string,
+    message: string,
     stack?: string,
     serverId?: string,
     solved: boolean

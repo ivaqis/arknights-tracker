@@ -1,4 +1,4 @@
 export interface UserEntity {
-    uid: string,
-    updatedAt: Date
+    uid: bigint,
+    createdAt: Date
 }
