@@ -1,4 +1,6 @@
-export interface UserWeaponBannerPullsEntity {
+import { RecordEntity } from "src/database/entities/RecordEntity";
+
+export interface UserWeaponBannerPullsEntity extends RecordEntity {
     uid: bigint,
     bannerId: string,
     last6Pull: number,

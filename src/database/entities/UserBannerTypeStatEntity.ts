@@ -1,4 +1,6 @@
-export interface UserBannerTypeStatEntity {
+import { RecordEntity } from "src/database/entities/RecordEntity";
+
+export interface UserBannerTypeStatEntity extends RecordEntity {
     uid: bigint,
     bannerType: string,
     unfreePulls: number,

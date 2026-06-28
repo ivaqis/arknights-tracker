@@ -1,4 +1,6 @@
-export interface ImportErrorEntity {
+import { RecordEntity } from "src/database/entities/RecordEntity";
+
+export interface ImportErrorEntity extends RecordEntity {
     id: number,
     createdAt: Date,
     url: string,

@@ -1,4 +1,6 @@
-export interface GlobalBannerStatsEntity {
+import { RecordEntity } from "src/database/entities/RecordEntity";
+
+export interface GlobalBannerStatsEntity extends RecordEntity {
     bannerId: string,
     totalUsers: number,
     unfreePulls: number,
