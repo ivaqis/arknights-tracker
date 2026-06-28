@@ -27,14 +27,18 @@ model GeneratedToken {
 }
 
 model UserBannerStat {
-    uid        BigInt
-    bannerId   String
-    totalPulls Int      @default(0)
-    total6     Int      @default(0)
-    total5     Int      @default(0)
-    won5050    Int      @default(0)
-    total5050  Int      @default(0)
-    updatedAt  DateTime @updatedAt
+    uid         BigInt
+    bannerId    String
+    unfreePulls Int      @default(0)
+    total6      Int      @default(0)
+    total5      Int      @default(0)
+    won5050     Int      @default(0)
+    total5050   Int      @default(0)
+    freePulls   Int      @default(0)
+    free6       Int      @default(0)
+    free5       Int      @default(0)
+    freeWin5050 Int      @default(0)
+    updatedAt   DateTime @updatedAt
 
     user User @relation(fields: [uid], references: [uid])
 
@@ -46,14 +50,18 @@ model UserBannerStat {
 }
 
 model UserBannerTypeStat {
-    uid        BigInt
-    bannerType String
-    totalPulls Int      @default(0)
-    total6     Int      @default(0)
-    total5     Int      @default(0)
-    won5050    Int      @default(0)
-    total5050  Int      @default(0)
-    updatedAt  DateTime @updatedAt
+    uid         BigInt
+    bannerType  String
+    unfreePulls Int      @default(0)
+    total6      Int      @default(0)
+    total5      Int      @default(0)
+    won5050     Int      @default(0)
+    total5050   Int      @default(0)
+    freePulls   Int      @default(0)
+    free6       Int      @default(0)
+    free5       Int      @default(0)
+    freeWin5050 Int      @default(0)
+    updatedAt   DateTime @updatedAt
 
     user User @relation(fields: [uid], references: [uid])
 
@@ -106,15 +114,18 @@ model UserWeaponBannerPulls {
 }
 
 model GlobalBannerStats {
-    bannerId      String   @id
-    totalUsers    Int      @default(0)
-    totalPulls    BigInt   @default(0)
-    total6        Int      @default(0)
-    total5        Int      @default(0)
-    total6Limited Int      @default(0)
-    won5050       Int      @default(0)
-    total5050     Int      @default(0)
-    updatedAt     DateTime @updatedAt
+    bannerId    String   @id
+    totalUsers  Int      @default(0)
+    unfreePulls BigInt   @default(0)
+    total6      Int      @default(0)
+    total5      Int      @default(0)
+    won5050     Int      @default(0)
+    total5050   Int      @default(0)
+    freePulls   Int      @default(0)
+    free6       Int      @default(0)
+    free5       Int      @default(0)
+    freeWin5050 Int      @default(0)
+    updatedAt   DateTime @updatedAt
 }
 
 model GlobalBannerTimeline {
