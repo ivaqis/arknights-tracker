@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 export class Database {
     private readonly _prisma: PrismaClient;
 
-    constructor(prisma: PrismaClient) {
+    public constructor(prisma: PrismaClient) {
         const isValid = Database.isPrismaValid(prisma);
 
         if (!isValid) {
@@ -21,6 +21,22 @@ export class Database {
         return this._prisma.userBannerStat;
     }
 
+    private get userBannerTypeStatTable() {
+        return this._prisma.userBannerTypeStat;
+    }
+
+    private get userCharBannerPullsTable() {
+        return this._prisma.userCharBannerPulls;
+    }
+
+    private get userCharBannerTypePullsTable() {
+        return this._prisma.userCharBannerTypePulls;
+    }
+
+    private get userWeaponBannerPullsTable() {
+        return this._prisma.userWeaponBannerPulls;
+    }
+
     private get importErrorTable() {
         return this._prisma.importError;
     }
@@ -29,8 +45,8 @@ export class Database {
         return this._prisma.globalBannerStats;
     }
 
-    private get globalTimelineTable() {
-        return this._prisma.globalTimeline;
+    private get globalBannerTimelineTable() {
+        return this._prisma.globalBannerTimeline;
     }
 
     private get globalPityDistributionTable() {
@@ -46,11 +62,15 @@ export class Database {
             prisma
             && prisma.user
             && prisma.userBannerStat
-            && prisma.importError
+            && prisma.userBannerTypeStat
+            && prisma.userCharBannerPulls
+            && prisma.userCharBannerTypePulls
+            && prisma.userWeaponBannerPulls
             && prisma.globalBannerStats
-            && prisma.globalTimeline
+            && prisma.globalBannerTimeline
             && prisma.globalPityDistribution
             && prisma.globalItemStats
+            && prisma.importError
         );
     }
 }
