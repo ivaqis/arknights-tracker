@@ -540,7 +540,7 @@
             const prev = processed[i - 1];
             if (
                 prev &&
-                new Date(prev.time).getTime() !== new Date(p.time).getTime()
+                Math.abs(new Date(prev.time).getTime() - new Date(p.time).getTime()) > 1000
             ) {
                 batches.push(currentBatch);
                 currentBatch = [];
