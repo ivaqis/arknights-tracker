@@ -1116,14 +1116,18 @@
                                                 class="flex items-center min-w-0 pr-1 sm:pr-2"
                                             >
                                                 <div
-                                                    class="relative inline-flex items-center max-w-full"
+                                                    role="button"
+                                                    tabindex="0"
+                                                    on:click={() => goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
+                                                    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
+                                                    class="relative inline-flex items-center max-w-full cursor-pointer group/item outline-none"
                                                 >
                                                     <div
                                                         class="relative z-10 flex-shrink-0"
                                                     >
                                                         <div
-                                                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border sm:border-2 shadow-sm relative group
-                {isWeapon ? getWeaponBg(row.rarity) : 'bg-transparent'}"
+                                                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border sm:border-2 shadow-sm relative transition-all duration-200 group-hover/item:shadow-md group-hover/item:opacity-90
+                                                            {isWeapon ? getWeaponBg(row.rarity) : 'bg-transparent'}"
                                                             style="border-color: {getRarityColor(
                                                                 row.rarity,
                                                             )}"
@@ -1149,13 +1153,13 @@
                                                     </div>
 
                                                     <div
-                                                        class="relative bg-transparent -ml-4 pl-6 pr-2 sm:-ml-5 sm:pl-7 sm:pr-3 rounded-r-full border-y sm:border-y-2 border-r sm:border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-8 sm:h-10"
+                                                        class="relative bg-transparent -ml-4 pl-6 pr-2 sm:-ml-5 sm:pl-7 sm:pr-3 rounded-r-full border-y sm:border-y-2 border-r sm:border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-8 sm:h-10 transition-colors duration-200 group-hover/item:bg-gray-100/50 dark:group-hover/item:bg-white/5"
                                                         style="border-color: {getRarityColor(
                                                             row.rarity,
                                                         )}"
                                                     >
                                                         <span
-                                                            class="text-gray-800 dark:text-[#E0E0E0] text-xs sm:text-sm font-medium leading-tight block w-full truncate cursor-default"
+                                                            class="text-gray-800 dark:text-[#E0E0E0] text-xs sm:text-sm font-medium leading-tight block w-full truncate cursor-pointer group-hover/item:text-yellow-600 dark:group-hover/item:text-yellow-400 transition-all duration-200"
                                                             title={translatedName}
                                                         >
                                                             {translatedName}
@@ -1238,7 +1242,7 @@
                                                             ) ||
                                                                 "/images/banners/unknown.jpg"}
                                                             alt={currentBanner.name}
-                                                            class="h-full w-full object-cover transition-transform group-hover:scale-110"
+                                                            class="h-full w-full object-cover transition-transform"
                                                             on:error={(e) =>
                                                                 (e.target.style.display =
                                                                     "none")}

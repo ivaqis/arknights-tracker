@@ -156,9 +156,7 @@
           on:mouseleave={() => (isPieHovered = false)}
         >
           <div
-            class="w-full h-full rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out {isPieHovered
-              ? 'scale-105'
-              : ''}"
+            class="w-full h-full rounded-full shadow-inner cursor-pointer transition-transform duration-200 ease-out"
             style="background: {pieGradient};"
             role="img"
           ></div>
