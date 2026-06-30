@@ -35,7 +35,7 @@ export class GlobalBannerStatsTable extends Table<Prisma.GlobalBannerStatsDelega
         });
     }
 
-    public async getEntity(bannerId: string): Promise<GlobalBannerStatsEntity> {
+    private async getEntity(bannerId: string): Promise<GlobalBannerStatsEntity> {
         return this.table.upsert({
             where: {
                 bannerId
