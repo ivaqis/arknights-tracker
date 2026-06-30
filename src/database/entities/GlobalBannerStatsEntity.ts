@@ -3,7 +3,7 @@ import { RecordEntity } from "src/database/entities/RecordEntity";
 export interface GlobalBannerStatsEntity extends RecordEntity {
     bannerId: string,
     totalUsers: number,
-    unfreePulls: number,
+    unfreePulls: bigint,
     total6: number,
     total5: number,
     won5050: number,
