@@ -1,9 +1,9 @@
 import { GlobalBannerStatsEntity } from "@database/entities/GlobalBannerStatsEntity";
 import { GlobalBannerStatsRecord } from "@database/records/GlobalBannerStatsRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class GlobalBannerStatsRepository extends Repository<Prisma.GlobalBannerStatsDelegate> {
+export class GlobalBannerStatsTable extends Table<Prisma.GlobalBannerStatsDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.globalBannerStats);

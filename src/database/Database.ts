@@ -1,32 +1,32 @@
-import { GeneratedTokensRepository } from "@database/repositories/GeneratedTokensRepository";
-import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository";
-import { GlobalBannerTimelinesRepository } from "@database/repositories/GlobalBannerTimelinesRepository";
-import { GlobalItemStatsRepository } from "@database/repositories/GlobalItemStatsRepository";
-import { GlobalPityDistributionsRepository } from "@database/repositories/GlobalPityDistributionsRepository";
-import { ImportErrorsRepository } from "@database/repositories/ImportErrorsRepository";
-import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository";
-import { UserBannerTypeStatsRepository } from "@database/repositories/UserBannerTypeStatsRepository";
-import { UserCharBannerPullsRepository } from "@database/repositories/UserCharBannerPullsRepository";
-import { UserCharBannerTypePullsRepository } from "@database/repositories/UserCharBannerTypePullsRepository";
-import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository";
-import { UserWeaponBannerPullsRepository } from "@database/repositories/UserWeaponBannerPullsRepository";
+import { GeneratedTokensTable } from "@database/tables/GeneratedTokensTable";
+import { GlobalBannerStatsTable } from "@database/tables/GlobalBannerStatsTable";
+import { GlobalBannerTimelinesTable } from "@database/tables/GlobalBannerTimelinesTable";
+import { GlobalItemStatsTable } from "@database/tables/GlobalItemStatsTable";
+import { GlobalPityDistributionsTable } from "@database/tables/GlobalPityDistributionsTable";
+import { ImportErrorsTable } from "@database/tables/ImportErrorsTable";
+import { UserBannerStatsTable } from "@database/tables/UserBannerStatsTable";
+import { UserBannerTypeStatsTable } from "@database/tables/UserBannerTypeStatsTable";
+import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTable";
+import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
+import { UserBannerProfilesTable } from "@database/tables/UserBannerProfilesTable";
+import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
 import { PrismaClient } from "@prisma/client";
 
 export class Database {
     private readonly _prisma: PrismaClient;
 
-    private readonly _userBannerProfilesRepository: UserBannerProfilesRepository;
-    private readonly _generatedTokensRepository: GeneratedTokensRepository;
-    private readonly _userBannerStatsRepository: UserBannerStatsRepository;
-    private readonly _userBannerTypeStatsRepository: UserBannerTypeStatsRepository;
-    private readonly _userCharBannerTypePullsRepository: UserCharBannerTypePullsRepository;
-    private readonly _userCharBannerPullsRepository: UserCharBannerPullsRepository;
-    private readonly _userWeaponBannerPullsRepository: UserWeaponBannerPullsRepository;
-    private readonly _globalBannerStatsRepository: GlobalBannerStatsRepository;
-    private readonly _globalBannerTimelinesRepository: GlobalBannerTimelinesRepository;
-    private readonly _globalPityDistributionsRepository: GlobalPityDistributionsRepository;
-    private readonly _globalItemStatsRepository: GlobalItemStatsRepository;
-    private readonly _importErrorsRepository: ImportErrorsRepository;
+    private readonly _userBannerProfilesRepository: UserBannerProfilesTable;
+    private readonly _generatedTokensRepository: GeneratedTokensTable;
+    private readonly _userBannerStatsRepository: UserBannerStatsTable;
+    private readonly _userBannerTypeStatsRepository: UserBannerTypeStatsTable;
+    private readonly _userCharBannerTypePullsRepository: UserCharBannerTypePullsTable;
+    private readonly _userCharBannerPullsRepository: UserCharBannerPullsTable;
+    private readonly _userWeaponBannerPullsRepository: UserWeaponBannerPullsTable;
+    private readonly _globalBannerStatsRepository: GlobalBannerStatsTable;
+    private readonly _globalBannerTimelinesRepository: GlobalBannerTimelinesTable;
+    private readonly _globalPityDistributionsRepository: GlobalPityDistributionsTable;
+    private readonly _globalItemStatsRepository: GlobalItemStatsTable;
+    private readonly _importErrorsRepository: ImportErrorsTable;
 
     public constructor(prisma: PrismaClient) {
         const isValid = Database.isPrismaValid(prisma);
@@ -37,18 +37,18 @@ export class Database {
 
         this._prisma = prisma;
 
-        this._userBannerProfilesRepository = new UserBannerProfilesRepository(prisma);
-        this._generatedTokensRepository = new GeneratedTokensRepository(prisma);
-        this._userBannerStatsRepository = new UserBannerStatsRepository(prisma);
-        this._userBannerTypeStatsRepository = new UserBannerTypeStatsRepository(prisma);
-        this._userCharBannerTypePullsRepository = new UserCharBannerTypePullsRepository(prisma);
-        this._userCharBannerPullsRepository = new UserCharBannerPullsRepository(prisma);
-        this._userWeaponBannerPullsRepository = new UserWeaponBannerPullsRepository(prisma);
-        this._globalBannerStatsRepository = new GlobalBannerStatsRepository(prisma);
-        this._globalBannerTimelinesRepository = new GlobalBannerTimelinesRepository(prisma);
-        this._globalPityDistributionsRepository = new GlobalPityDistributionsRepository(prisma);
-        this._globalItemStatsRepository = new GlobalItemStatsRepository(prisma);
-        this._importErrorsRepository = new ImportErrorsRepository(prisma);
+        this._userBannerProfilesRepository = new UserBannerProfilesTable(prisma);
+        this._generatedTokensRepository = new GeneratedTokensTable(prisma);
+        this._userBannerStatsRepository = new UserBannerStatsTable(prisma);
+        this._userBannerTypeStatsRepository = new UserBannerTypeStatsTable(prisma);
+        this._userCharBannerTypePullsRepository = new UserCharBannerTypePullsTable(prisma);
+        this._userCharBannerPullsRepository = new UserCharBannerPullsTable(prisma);
+        this._userWeaponBannerPullsRepository = new UserWeaponBannerPullsTable(prisma);
+        this._globalBannerStatsRepository = new GlobalBannerStatsTable(prisma);
+        this._globalBannerTimelinesRepository = new GlobalBannerTimelinesTable(prisma);
+        this._globalPityDistributionsRepository = new GlobalPityDistributionsTable(prisma);
+        this._globalItemStatsRepository = new GlobalItemStatsTable(prisma);
+        this._importErrorsRepository = new ImportErrorsTable(prisma);
     }
 
     private static isPrismaValid(prisma: PrismaClient): boolean {

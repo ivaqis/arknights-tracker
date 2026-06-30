@@ -1,8 +1,8 @@
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { ImportError } from "@errors/ImportError";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class ImportErrorsRepository extends Repository<Prisma.ImportErrorDelegate> {
+export class ImportErrorsTable extends Table<Prisma.ImportErrorDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.importError);

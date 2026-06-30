@@ -1,10 +1,9 @@
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
-import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { UserBannerTypeStatRecord } from "@database/records/UserBannerTypeStatRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class UserBannerTypeStatsRepository extends Repository<Prisma.UserBannerTypeStatDelegate> {
+export class UserBannerTypeStatsTable extends Table<Prisma.UserBannerTypeStatDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.userBannerTypeStat);

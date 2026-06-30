@@ -1,9 +1,9 @@
 import { GlobalItemStatsEntity } from "@database/entities/GlobalItemStatsEntity";
 import { GlobalItemStatsRecord } from "@database/records/GlobalItemStatsRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class GlobalItemStatsRepository extends Repository<Prisma.GlobalItemStatsDelegate> {
+export class GlobalItemStatsTable extends Table<Prisma.GlobalItemStatsDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.globalItemStats);

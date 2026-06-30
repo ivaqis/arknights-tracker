@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
-export abstract class Repository<Delegate> {
+export abstract class Table<Delegate> {
     private readonly _prismaClient: PrismaClient;
     private readonly _delegate: Delegate;
 

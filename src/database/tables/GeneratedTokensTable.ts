@@ -1,9 +1,9 @@
 import { GeneratedTokenEntity } from "@database/entities/GeneratedTokenEntity";
 import { GeneratedTokenRecord } from "@database/records/GeneratedTokenRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class GeneratedTokensRepository extends Repository<Prisma.GeneratedTokenDelegate> {
+export class GeneratedTokensTable extends Table<Prisma.GeneratedTokenDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.generatedToken);

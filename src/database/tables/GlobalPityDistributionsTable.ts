@@ -1,9 +1,9 @@
 import { GlobalPityDistributionEntity } from "@database/entities/GlobalPityDistributionEntity";
 import { GlobalPityDistributionRecord } from "@database/records/GlobalPityDistributionRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class GlobalPityDistributionsRepository extends Repository<Prisma.GlobalPityDistributionDelegate> {
+export class GlobalPityDistributionsTable extends Table<Prisma.GlobalPityDistributionDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.globalPityDistribution);

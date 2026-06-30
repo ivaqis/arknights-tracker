@@ -1,9 +1,9 @@
 import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity";
 import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class UserBannerProfilesRepository extends Repository<Prisma.UserBannerProfileDelegate> {
+export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.userBannerProfile);

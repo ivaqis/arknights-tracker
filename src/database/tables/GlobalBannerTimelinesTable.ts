@@ -1,9 +1,9 @@
 import { GlobalBannerTimelineEntity } from "@database/entities/GlobalBannerTimelineEntity";
 import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
-import { Repository } from "@database/repositories/Repository";
+import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-export class GlobalBannerTimelinesRepository extends Repository<Prisma.GlobalBannerTimelineDelegate> {
+export class GlobalBannerTimelinesTable extends Table<Prisma.GlobalBannerTimelineDelegate> {
 
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.globalBannerTimeline);
