@@ -37,6 +37,17 @@ export class UserBannerStatsRepository extends Repository<Prisma.UserBannerStatD
         });
     }
 
+    public async getAllByBannerId(bannerId: string): Promise<UserBannerStatRecord[]> {
+        const entities = await this.table
+            .findMany({
+                where: {
+                    bannerId
+                }
+            });
+
+        return entities.map(entity => new UserBannerStatRecord(entity));
+    }
+
     private getEntity(profileId: bigint, bannerId: string): Promise<UserBannerStatEntity> {
         return this.table.upsert({
             where: {

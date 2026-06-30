@@ -1,4 +1,5 @@
 import { UserBannerTypeStatEntity } from "@database/entities/UserBannerTypeStatEntity";
+import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { UserBannerTypeStatRecord } from "@database/records/UserBannerTypeStatRecord";
 import { Repository } from "@database/repositories/Repository";
 import { Prisma, PrismaClient } from "@prisma/client";
@@ -35,6 +36,17 @@ export class UserBannerTypeStatsRepository extends Repository<Prisma.UserBannerT
                 freeWin5050: { increment: record.freeWin5050.delta }
             }
         });
+    }
+
+    public async getAllByBannerId(bannerType: string): Promise<UserBannerTypeStatRecord[]> {
+        const entities = await this.table
+            .findMany({
+                where: {
+                    bannerType
+                }
+            });
+
+        return entities.map(entity => new UserBannerTypeStatRecord(entity));
     }
 
     private async getEntity(profileId: bigint, bannerType: string): Promise<UserBannerTypeStatEntity> {
