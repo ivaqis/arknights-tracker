@@ -7,7 +7,7 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model BannerProfile {
+model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
     createdAt DateTime @default(now())
 
@@ -23,7 +23,7 @@ model GeneratedToken {
     token     String @id
     profileId BigInt
 
-    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 }
 
 model UserBannerStat {
@@ -40,7 +40,7 @@ model UserBannerStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 
     userCharBannerPulls   UserCharBannerPulls[]
     userWeaponBannerPulls UserWeaponBannerPulls[]
@@ -63,7 +63,7 @@ model UserBannerTypeStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 
     userCharBannerTypePulls UserCharBannerTypePulls[]
 
@@ -80,7 +80,7 @@ model UserCharBannerTypePulls {
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
-    bannerProfile  BannerProfile      @relation(fields: [profileId], references: [profileId])
+    bannerProfile  UserBannerProfile  @relation(fields: [profileId], references: [profileId])
     bannerTypeStat UserBannerTypeStat @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
 
     @@id([profileId, bannerType])
@@ -92,8 +92,8 @@ model UserCharBannerPulls {
     last6LimitedPull Int      @default(0)
     updatedAt        DateTime @updatedAt
 
-    bannerProfile BannerProfile  @relation(fields: [profileId], references: [profileId])
-    bannerStat    UserBannerStat @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+    bannerStat    UserBannerStat    @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
 
     @@id([profileId, bannerId])
 }
@@ -107,8 +107,8 @@ model UserWeaponBannerPulls {
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
-    bannerProfile BannerProfile  @relation(fields: [profileId], references: [profileId])
-    bannerStat    UserBannerStat @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+    bannerStat    UserBannerStat    @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
 
     @@id([profileId, bannerId])
 }
