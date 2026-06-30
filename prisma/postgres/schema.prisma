@@ -7,8 +7,8 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-model User {
-    uid       BigInt   @id @default(autoincrement())
+model BannerProfile {
+    profileId BigInt   @id @default(autoincrement())
     createdAt DateTime @default(now())
 
     generatedTokens         GeneratedToken[]
@@ -20,14 +20,14 @@ model User {
 }
 
 model GeneratedToken {
-    token String @id
-    uid   BigInt
+    token     String @id
+    profileId BigInt
 
-    user User @relation(fields: [uid], references: [uid])
+    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
 }
 
 model UserBannerStat {
-    uid         BigInt
+    profileId   BigInt
     bannerId    String
     unfreePulls Int      @default(0)
     total6      Int      @default(0)
@@ -40,17 +40,17 @@ model UserBannerStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    user User @relation(fields: [uid], references: [uid])
+    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
 
     userCharBannerPulls   UserCharBannerPulls[]
     userWeaponBannerPulls UserWeaponBannerPulls[]
 
-    @@id([uid, bannerId])
+    @@id([profileId, bannerId])
     @@index([bannerId])
 }
 
 model UserBannerTypeStat {
-    uid         BigInt
+    profileId   BigInt
     bannerType  String
     unfreePulls Int      @default(0)
     total6      Int      @default(0)
@@ -63,16 +63,16 @@ model UserBannerTypeStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    user User @relation(fields: [uid], references: [uid])
+    bannerProfile BannerProfile @relation(fields: [profileId], references: [profileId])
 
     userCharBannerTypePulls UserCharBannerTypePulls[]
 
-    @@id([uid, bannerType])
+    @@id([profileId, bannerType])
     @@index([bannerType])
 }
 
 model UserCharBannerTypePulls {
-    uid             BigInt
+    profileId       BigInt
     bannerType      String
     last6Pull       Int      @default(0)
     last5Pull       Int      @default(0)
@@ -80,26 +80,26 @@ model UserCharBannerTypePulls {
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
-    user           User               @relation(fields: [uid], references: [uid])
-    bannerTypeStat UserBannerTypeStat @relation(fields: [uid, bannerType], references: [uid, bannerType])
+    bannerProfile  BannerProfile      @relation(fields: [profileId], references: [profileId])
+    bannerTypeStat UserBannerTypeStat @relation(fields: [profileId, bannerType], references: [profileId, bannerType])
 
-    @@id([uid, bannerType])
+    @@id([profileId, bannerType])
 }
 
 model UserCharBannerPulls {
-    uid              BigInt
+    profileId        BigInt
     bannerId         String
     last6LimitedPull Int      @default(0)
     updatedAt        DateTime @updatedAt
 
-    user       User           @relation(fields: [uid], references: [uid])
-    bannerStat UserBannerStat @relation(fields: [uid, bannerId], references: [uid, bannerId])
+    bannerProfile BannerProfile  @relation(fields: [profileId], references: [profileId])
+    bannerStat    UserBannerStat @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
 
-    @@id([uid, bannerId])
+    @@id([profileId, bannerId])
 }
 
 model UserWeaponBannerPulls {
-    uid             BigInt
+    profileId       BigInt
     bannerId        String
     last6Pull       Int      @default(0)
     last5Pull       Int      @default(0)
@@ -107,10 +107,10 @@ model UserWeaponBannerPulls {
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
-    user       User           @relation(fields: [uid], references: [uid])
-    bannerStat UserBannerStat @relation(fields: [uid, bannerId], references: [uid, bannerId])
+    bannerProfile BannerProfile  @relation(fields: [profileId], references: [profileId])
+    bannerStat    UserBannerStat @relation(fields: [profileId, bannerId], references: [profileId, bannerId])
 
-    @@id([uid, bannerId])
+    @@id([profileId, bannerId])
 }
 
 model GlobalBannerStats {

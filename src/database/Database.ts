@@ -8,14 +8,14 @@ import { UserBannerStatsRepository } from "@database/repositories/UserBannerStat
 import { UserBannerTypeStatsRepository } from "@database/repositories/UserBannerTypeStatsRepository";
 import { UserCharBannerPullsRepository } from "@database/repositories/UserCharBannerPullsRepository";
 import { UserCharBannerTypePullsRepository } from "@database/repositories/UserCharBannerTypePullsRepository";
-import { UsersRepository } from "@database/repositories/UsersRepository";
+import { BannerProfilesRepository } from "@database/repositories/BannerProfilesRepository";
 import { UserWeaponBannerPullsRepository } from "@database/repositories/UserWeaponBannerPullsRepository";
 import { PrismaClient } from "@prisma/client";
 
 export class Database {
     private readonly _prisma: PrismaClient;
 
-    private readonly _usersRepository: UsersRepository;
+    private readonly _bannerProfilesRepository: BannerProfilesRepository;
     private readonly _generatedTokensRepository: GeneratedTokensRepository;
     private readonly _userBannerStatsRepository: UserBannerStatsRepository;
     private readonly _userBannerTypeStatsRepository: UserBannerTypeStatsRepository;
@@ -37,7 +37,7 @@ export class Database {
 
         this._prisma = prisma;
 
-        this._usersRepository = new UsersRepository(prisma);
+        this._bannerProfilesRepository = new BannerProfilesRepository(prisma);
         this._generatedTokensRepository = new GeneratedTokensRepository(prisma);
         this._userBannerStatsRepository = new UserBannerStatsRepository(prisma);
         this._userBannerTypeStatsRepository = new UserBannerTypeStatsRepository(prisma);
@@ -54,7 +54,7 @@ export class Database {
     private static isPrismaValid(prisma: PrismaClient): boolean {
         return Boolean(
             prisma
-            && prisma.user
+            && prisma.bannerProfile
             && prisma.generatedToken
             && prisma.userBannerStat
             && prisma.userBannerTypeStat

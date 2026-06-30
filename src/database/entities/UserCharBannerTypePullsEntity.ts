@@ -1,7 +1,7 @@
 import { RecordEntity } from "src/database/entities/RecordEntity";
 
 export interface UserCharBannerTypePullsEntity extends RecordEntity {
-    uid: bigint,
+    profileId: bigint,
     bannerType: string,
     last6Pull: number,
     last5pull: number,

@@ -1,6 +1,6 @@
 import { RecordEntity } from "src/database/entities/RecordEntity";
 
-export interface UserEntity extends RecordEntity {
-    uid: bigint,
+export interface BannerProfileEntity extends RecordEntity {
+    profileId: bigint,
     createdAt: Date
 }
