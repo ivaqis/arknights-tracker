@@ -5,6 +5,16 @@
     import { getUserProfile, registerProfile, syncGameAccount, uploadAvatar, deleteGameAccount } from "$lib/api.js";
     import { addNotification } from "$lib/stores/notifications.js";
     import { fade, fly } from "svelte/transition";
+    import { characters } from "$lib/data/characters.js";
+    import { weapons } from "$lib/data/weapons.js";
+    import { equipment } from "$lib/data/items/equipment.js";
+    import { getImagePath } from "$lib/utils/imageUtils.js";
+    import ruEquip from "$lib/locales/ru/equipment.json";
+    import enEquip from "$lib/locales/en/equipment.json";
+    import { currentLocale } from "$lib/stores/locale.js";
+    import { formatContractDescription } from "$lib/utils/richText.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";
     import Modal from "$lib/components/modals/Modal.svelte";
@@ -14,20 +24,28 @@
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import { characters } from "$lib/data/characters.js";
-    import { weapons } from "$lib/data/weapons.js";
-    import { equipment } from "$lib/data/items/equipment.js";
-    import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { currentLocale } from "$lib/stores/locale.js";
-    import { formatContractDescription } from "$lib/utils/richText.js";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import RatingCard from "$lib/components/records/RatingCard.svelte";
     import Select from "$lib/components/Select.svelte";
-    import { accountStore } from "$lib/stores/accounts.js";
 
     const { accounts } = accountStore;
 
+    const elementColors = {
+        physical: "#5E5D5D",
+        cryo: "#21C4CE",
+        ice: "#21C4CE",
+        cryst: "#21C4CE",
+        nature: "#AABD00",
+        natural: "#AABD00",
+        electric: "#FFBF00",
+        pulse: "#FFBF00",
+        heat: "#FF613D",
+        fire: "#FF613D",
+    };
+
     let profile = null;
+    let linkCopied = false;
+    let copiedUid = null;
     let loading = true;
     let needsRegistration = false;
     let syncModalOpen = false;
@@ -283,6 +301,13 @@
         };
     }
 
+    function getRarityColor(rarity) {
+        if (rarity === 6) return "#F4700C";
+        if (rarity === 5) return "#F9B90C";
+        if (rarity === 4) return "#9253F1";
+        return "#888";
+    }
+
     const weaponIdMap = {
         "wpn_sword_0012": "thermiteCutter",
         "wpn_greatsword_0010": "industry01",
@@ -295,7 +320,8 @@
 
     function getWeaponData(weapon) {
         if (!weapon) return null;
-        const gameId = weapon.id;
+        const skillKey = weapon.weaponData?.skills?.find(s => s.key?.startsWith("sk_wpn_"))?.key;
+        const gameId = skillKey ? skillKey.replace("sk_", "") : (weapon.id || weapon.weaponData?.id);
         const mappedId = weaponIdMap[gameId];
         const staticData = (mappedId && weapons[mappedId]) || Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
         if (staticData) {
@@ -303,9 +329,9 @@
         }
         return {
             id: gameId,
-            name: weapon.name || gameId,
-            rarity: Number(weapon.rarity?.value || weapon.rarity || 4),
-            type: weapon.type || "sword"
+            name: weapon.weaponData?.name || weapon.name || gameId,
+            rarity: Number(weapon.weaponData?.rarity?.value || weapon.rarity?.value || weapon.rarity || 4),
+            type: weapon.weaponData?.type?.value || weapon.type || "sword"
         };
     }
 
@@ -360,11 +386,214 @@
         }
     }
 
-    // Active selected game account UID
     let selectedGameUid = null;
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || profile?.details?.[0];
+    $: sortedChars = (() => {
+        const chars = activeAccount?.info?.chars || [];
+        return [...chars].sort((a, b) => {
+            const aData = getOperatorData(a);
+            const bData = getOperatorData(b);
+            const aRarity = aData?.rarity || 0;
+            const bRarity = bData?.rarity || 0;
+            if (bRarity !== aRarity) {
+                return bRarity - aRarity;
+            }
+            const aLevel = a?.level || 0;
+            const bLevel = b?.level || 0;
+            if (bLevel !== aLevel) {
+                return bLevel - aLevel;
+            }
+            return (aData?.id || "").localeCompare(bData?.id || "");
+        });
+    })();
 
-    // Local avatar cache for NSFW items
+    let selectedOperatorId = null;
+    $: if (sortedChars && sortedChars.length > 0 && !selectedOperatorId) {
+        selectedOperatorId = sortedChars[0].id;
+    }
+    $: selectedChar = sortedChars.find(c => c.id === selectedOperatorId) || sortedChars[0];
+    $: selectedDetailedChar = selectedChar ? getDetailedChar(selectedChar.id) : null;
+    let selectedCharDetails = null;
+    $: if (selectedChar) {
+        const svelteId = getSvelteCharId(selectedChar);
+        if (svelteId) {
+            import(`../../lib/data/charactersData/${svelteId}.json`)
+                .then(mod => {
+                    selectedCharDetails = mod.default || mod;
+                })
+                .catch(err => {
+                    console.warn("Failed to load details for", svelteId, err);
+                    selectedCharDetails = null;
+                });
+        } else {
+            selectedCharDetails = null;
+        }
+    }
+    $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails) : [];
+
+    function getDetailedChar(charId) {
+        if (!activeAccount?.info?.detail?.chars) return null;
+        return activeAccount.info.detail.chars.find(c => c.charData?.id === charId || c.id === charId);
+    }
+
+    function getEquipTier(levelStr) {
+        const val = parseInt(levelStr?.replace("equip_level_", "") || levelStr) || 0;
+        if (val >= 70) return 3;
+        if (val >= 60) return 2;
+        if (val >= 50) return 1;
+        return 0;
+    }
+
+    function getPropertyLabel(propKey) {
+        const mappings = {
+            "equip_attr_wisd": "Wisdom",
+            "equip_attr_str": "Strength",
+            "equip_attr_agi": "Agility",
+            "equip_attr_will": "Willpower",
+            "equip_attr_def": "Defense",
+            "equip_attr_maxhp": "HP",
+            "equip_attr_ultimate_sp_gain_scalar": "SP Gain",
+            "equip_attr_atk": "Attack",
+            "equip_attr_ultimate_sp_gain": "SP Gain",
+            "equip_attr_heal_scalar": "Healing",
+            "equip_attr_spell_vulnerable": "Vulnerability"
+        };
+        const key = propKey?.toLowerCase() || "";
+        const transKey = `stats.${propKey?.replace("equip_attr_", "")}`;
+        const trans = $t(transKey);
+        if (trans && trans !== transKey) return trans;
+        for (const [k, v] of Object.entries(mappings)) {
+            if (key.includes(k)) return v;
+        }
+        return propKey?.replace("equip_attr_", "").toUpperCase() || "Stat";
+    }
+
+    function getStaticEquipId(equipData) {
+        if (!equipData) return null;
+        const nameToMatch = equipData.name;
+        if (!nameToMatch) return null;
+
+        let matched = Object.keys(equipmentNames).find(key => equipmentNames[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        matched = Object.keys(ruEquip).find(key => ruEquip[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        matched = Object.keys(enEquip).find(key => enEquip[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        if (equipment[equipData.id]) return equipData.id;
+        return null;
+    }
+
+    function getStatIcon(propKey) {
+        if (!propKey) return null;
+        const key = propKey.toLowerCase();
+        if (key.includes("wisd") || key.includes("int")) return "int";
+        if (key.includes("str")) return "str";
+        if (key.includes("agi")) return "agi";
+        if (key.includes("will")) return "will";
+        if (key.includes("def")) return "def";
+        if (key.includes("maxhp") || key.includes("hp")) return "hp";
+        if (key.includes("atk")) return "atk";
+        if (key.includes("sp_gain") || key.includes("usp")) return "usp";
+        if (key.includes("heal")) return "heal";
+        if (key.includes("vulnerable") || key.includes("magicdam")) return "magicdam";
+        return null;
+    }
+
+    function getCultivationLabel(node, lvl) {
+        if (!node) return lvl.toString();
+        const match = node.name.match(/[αβγ]\s*$/);
+        return match ? match[0] : lvl.toString();
+    }
+
+    function getTalents(char, detailedChar, staticDetails = null) {
+        if (!char?.charData) return [];
+        const svelteId = getSvelteCharId(char);
+        const combatNodes = char.charData.combatTalents || [];
+        const groupedCombat = {};
+        groupedCombat.latestPassiveSkillNodes = detailedChar?.talent?.latestPassiveSkillNodes || [];
+        combatNodes.forEach(node => {
+            if (!groupedCombat[node.name]) {
+                groupedCombat[node.name] = [];
+            }
+            groupedCombat[node.name].push(node);
+        });
+        
+        const talents = [];
+        let combatIdx = 1;
+        Object.entries(groupedCombat).forEach(([name, nodes]) => {
+            if (name === "latestPassiveSkillNodes") return;
+            nodes.sort((a, b) => a.id.localeCompare(b.id));
+            const levelsCount = nodes.length;
+            const activeNode = groupedCombat.latestPassiveSkillNodes.find(id => nodes.some(n => n.id === id)) 
+                || nodes[0]?.id;
+            const activeIndex = nodes.findIndex(n => n.id === activeNode);
+            const currentLevel = activeIndex !== -1 ? activeIndex + 1 : 1;
+            const nodeData = nodes[activeIndex !== -1 ? activeIndex : 0] || {};
+            
+            talents.push({
+                name: nodeData.name,
+                iconUrl: nodeData.iconUrl,
+                localImageId: `${svelteId}_talent${combatIdx}`,
+                desc: nodeData.desc,
+                descParams: nodeData.descParams,
+                type: 'combat',
+                currentLevel,
+                levelsCount
+            });
+            combatIdx++;
+        });
+
+        const cultNodes = char.charData.cultivationTalents || [];
+        const groupedCult = {};
+        groupedCult.latestSpaceshipSkillNodes = detailedChar?.talent?.latestSpaceshipSkillNodes || [];
+        cultNodes.forEach(node => {
+            const baseName = node.name.replace(/\s*[αβγ]\s*$/, "").trim();
+            if (!groupedCult[baseName]) {
+                groupedCult[baseName] = [];
+            }
+            groupedCult[baseName].push(node);
+        });
+
+        Object.entries(groupedCult).forEach(([baseName, nodes]) => {
+            if (baseName === "latestSpaceshipSkillNodes") return;
+            nodes.sort((a, b) => a.id.localeCompare(b.id));
+            const levelsCount = nodes.length;
+            const activeNode = groupedCult.latestSpaceshipSkillNodes.find(id => nodes.some(n => n.id === id))
+                || nodes[0]?.id;
+            const activeIndex = nodes.findIndex(n => n.id === activeNode);
+            const currentLevel = activeIndex !== -1 ? activeIndex + 1 : 1;
+            const nodeData = nodes[activeIndex !== -1 ? activeIndex : 0] || {};
+
+            let localImageId = "";
+            if (nodeData.id) {
+                const parts = nodeData.id.split('_');
+                if (parts.length >= 2) {
+                    const skillIdx = parts[parts.length - 2];
+                    const levelIdx = parts[parts.length - 1];
+                    const facSkillKey = `facSkill${skillIdx}_${levelIdx}`;
+                    localImageId = staticDetails?.facSkills?.[facSkillKey]?.name || "";
+                }
+            }
+
+            talents.push({
+                name: nodeData.name,
+                iconUrl: nodeData.iconUrl,
+                localImageId: localImageId,
+                desc: nodeData.desc,
+                descParams: nodeData.descParams,
+                type: 'cultivation',
+                currentLevel,
+                levelsCount,
+                nodes
+            });
+        });
+
+        return talents;
+    }
+
     let localAvatar = "";
 
     onMount(async () => {
@@ -379,7 +608,6 @@
                 const data = await getUserProfile(u.uid);
                 if (data) {
                     profile = data;
-                    // Parse details
                     if (profile.details) {
                         profile.details = profile.details.map(d => {
                             try {
@@ -474,6 +702,32 @@
         showNameWarning = false;
     }
 
+    function handleCopyProfileLink() {
+        if (!profile || !profile.name) return;
+        const link = `${window.location.origin}/u/${profile.name}`;
+        navigator.clipboard.writeText(link).then(() => {
+            linkCopied = true;
+            setTimeout(() => {
+                linkCopied = false;
+            }, 2000);
+        }).catch(err => {
+            console.error("Failed to copy link: ", err);
+            addNotification("error", "Не удалось скопировать.");
+        });
+    }
+
+    function handleCopyUid(uid) {
+        navigator.clipboard.writeText(uid).then(() => {
+            copiedUid = uid;
+            setTimeout(() => {
+                if (copiedUid === uid) copiedUid = null;
+            }, 2000);
+        }).catch(err => {
+            console.error("Failed to copy UID: ", err);
+            addNotification("error", "Не удалось скопировать.");
+        });
+    }
+
     function getLastSyncText(updatedAt) {
         if (!updatedAt) return "";
         const diff = Date.now() - new Date(updatedAt).getTime();
@@ -554,7 +808,6 @@
         zoom = nextZoom;
     }
 
-    // Client-side WebP conversion & Cropping trigger
     function processAndUploadImage(file) {
         const allowedTypes = ["image/jpeg", "image/jpg", "image/png", "image/webp", "image/avif"];
         if (!allowedTypes.includes(file.type)) {
@@ -750,13 +1003,9 @@
         }
     }
 
-    // Mock simulation removed - production sync enabled
-
     function getServerLabel(serverId) {
         return serverId === "2" ? "Asia" : "Americas / Europe";
     }
-
-
 
     function getAvatarUrl(pictureId) {
         if (localAvatar) return localAvatar;
@@ -944,9 +1193,20 @@
                                 <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk">
                                     {profile.name}
                                 </h1>
-                                <button on:click={() => { newProfileName = profile.name || ""; isEditingName = true; }} class="text-gray-400 hover:text-white transition-colors">
-                                    <Icon name="pen" class="w-4 h-4" />
-                                </button>
+                                <Tooltip text={$t("profile.edit_nickname") || "Изменить ник"}>
+                                    <button on:click={() => { newProfileName = profile.name || ""; isEditingName = true; }} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
+                                        <Icon name="pen" class="w-4 h-4" />
+                                    </button>
+                                </Tooltip>
+                                <Tooltip text={$t("profile.copy_profile_link") || "Скопировать ссылку на аккаунт"}>
+                                    <button on:click={handleCopyProfileLink} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
+                                        {#if linkCopied}
+                                            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                        {:else}
+                                            <Icon name="link" class="w-4 h-4" />
+                                        {/if}
+                                    </button>
+                                </Tooltip>
                             </div>
                         {/if}
                         {#if profile.avatar_strike === 1}
@@ -969,13 +1229,17 @@
                                 class="bg-white/40 dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-white/60 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
                                 {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-white/5'}"
                             >
-                                <button
-                                    on:click|stopPropagation={() => triggerDeleteAccount(d.game_uid)}
-                                    class="absolute -top-1.5 -right-1.5 bg-red-900/95 border border-red-500/50 hover:bg-red-600 hover:border-red-400 p-1.5 rounded-lg text-white transition-all cursor-pointer z-20 opacity-0 group-hover:opacity-100 shadow-md active:scale-95 flex items-center justify-center"
-                                    title="Unlink Account"
+                                <Tooltip
+                                    text={$t("profile.unlink_account") || "Отвязать аккаунт"}
+                                    class="absolute -top-1.5 -right-1.5 z-20 opacity-0 group-hover:opacity-100 transition-all"
                                 >
-                                    <Icon name="trash" class="w-3.5 h-3.5" />
-                                </button>
+                                    <button
+                                        on:click|stopPropagation={() => triggerDeleteAccount(d.game_uid)}
+                                        class="bg-red-900/95 border border-red-500/50 hover:bg-red-600 hover:border-red-400 p-1.5 rounded-lg text-white shadow-md active:scale-95 flex items-center justify-center cursor-pointer"
+                                    >
+                                        <Icon name="trash" class="w-3.5 h-3.5" />
+                                    </button>
+                                </Tooltip>
 
                                 <img
                                     src={d.info?.base?.avatarUrl || (d.info?.chars?.[0]?.charData?.avatarSqUrl) || "/images/operators/icons/endministrator1.png"}
@@ -989,7 +1253,21 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <ContractLevelTag level={d.info?.contract?.level || 0} />
                                     </div>
-                                    <div class="text-[10px] text-gray-400 font-mono truncate">UID: {d.game_uid}</div>
+                                    <div class="text-[10px] text-gray-400 font-mono truncate flex items-center gap-1">
+                                        <span>UID: {d.game_uid}</span>
+                                        <Tooltip text={$t("profile.copy_uid") || "Копировать UID"}>
+                                            <button 
+                                                on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
+                                                class="text-gray-400 hover:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
+                                            >
+                                                {#if copiedUid === d.game_uid}
+                                                    <Icon name="success" class="w-3 h-3 text-yellow-400" />
+                                                {:else}
+                                                    <Icon name="copy" class="w-3 h-3 opacity-60 hover:opacity-100" />
+                                                {/if}
+                                            </button>
+                                        </Tooltip>
+                                    </div>
                                     <div class="bg-gray-200 text-gray-600 dark:bg-[#383838] dark:text-[#B0B0B0] px-1.5 py-0.5 rounded text-[9px] font-medium font-sans w-fit truncate">
                                         {getServerLabel(d.info?.base?.serverId)}
                                     </div>
@@ -1248,31 +1526,400 @@
                         </div>
                     </div>
 
-                    <div class="w-full">
-                        <div class="bg-white/5 dark:bg-[#383838]/5 dark:border-[#444444] rounded-xl p-5 border border-gray-100/50 h-full flex flex-col w-full mx-auto backdrop-blur-sm shadow-xl">
-                            <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444444] pb-3 mb-6">
+                    <div class="w-full min-w-0 overflow-hidden">
+                        <div class="bg-white/5 dark:bg-[#383838]/5 dark:border-[#444444] rounded-xl p-5 border border-gray-100/50 flex flex-col w-full mx-auto backdrop-blur-sm shadow-xl min-w-0 overflow-hidden">
+                            <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444444] pb-3 mb-3">
                                 <div class="flex gap-2">
                                     <Icon name="operators" class="w-6 h-6 text-[#21272C] dark:text-[#FDFDFD]" />
                                     <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
                                         {$t("profile.operators_title")}
                                     </h2>
                                 </div>
-                                <a href="/operators" class="text-xs text-[#FFE145] hover:underline font-mono">
-                                    {$t("profile.more")}
-                                </a>
                             </div>
-
-                            <div class="grid grid-cols-[repeat(auto-fill,120px)] gap-3 overflow-y-auto pr-2 custom-scrollbar flex-1 justify-center">
-                                {#each activeAccount.info?.chars || [] as char}
+                            <div class="flex gap-4 overflow-x-auto pb-3 custom-scrollbar whitespace-nowrap max-w-full justify-start items-center">
+                                {#each sortedChars as char}
                                     {@const opData = getOperatorData(char)}
-                                    <OperatorCard
-                                        operator={opData}
-                                        level={char.level}
-                                        potential={Math.max(0, (char.potential || 1) - 1)}
-                                        owned={true}
-                                    />
+                                    {@const isSelected = char.id === selectedOperatorId}
+                                    <div class="relative w-12 h-12 shrink-0">
+                                        <button
+                                            on:click={() => selectedOperatorId = char.id}
+                                            class="w-full h-full rounded-full border-2 transition-all duration-300 overflow-hidden outline-none cursor-pointer
+                                            {isSelected ? 'border-white shadow-md' : 'border-[#FF6600]/80 hover:opacity-85'}"
+                                        >
+                                            <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover" />
+                                        </button>
+                                        <div class="absolute -bottom-1 -right-1 z-10 px-1 py-0.5 text-[12px] text-white bg-black/40 rounded-md leading-none font-nums select-none shadow-xl">
+                                            {char.level}
+                                        </div>
+                                    </div>
                                 {/each}
                             </div>
+
+                            {#if selectedChar}
+                                {@const opData = getOperatorData(selectedChar)}
+                                {@const detailedChar = selectedDetailedChar}
+                                {@const svelteId = getSvelteCharId(selectedChar)}
+                                {@const targetCharData = detailedChar?.charData || selectedChar?.charData}
+                                {@const elementGradients = {
+                                    physical: "from-gray-500/10 to-transparent",
+                                    cryo: "from-[#21C4CE]/15 to-transparent",
+                                    cryst: "from-[#21C4CE]/15 to-transparent",
+                                    nature: "from-[#AABD00]/15 to-transparent",
+                                    natural: "from-[#AABD00]/15 to-transparent",
+                                    electric: "from-[#FFBF00]/15 to-transparent",
+                                    pulse: "from-[#FFBF00]/15 to-transparent",
+                                    heat: "from-[#FF613D]/15 to-transparent",
+                                    fire: "from-[#FF613D]/15 to-transparent",
+                                }}
+                                {@const elementColor = elementGradients[opData.element] || "from-white/5 to-transparent"}
+                                
+                                {#key selectedOperatorId}
+                                    <div in:fade={{ duration: 200 }} class="w-full max-w-[1050px] mx-auto relative bg-black/25 dark:bg-black/35 backdrop-blur-md border border-white/10 rounded-2xl p-5 md:p-7 shadow-2xl transition-all duration-300 text-left mt-4">
+                                        
+                                        <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
+
+                                        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                                            <div class="lg:col-span-5 relative flex flex-col rounded-xl justify-between">
+                                                <div class="absolute inset-0 w-full h-full pointer-events-none z-0 select-none">
+                                                    <Image id={opData.id} variant="operator-splash" className="w-full h-full object-cover object-center" />
+                                                </div>
+
+                                                <div class="z-10">
+                                                    <div>
+                                                        <div class="flex flex-col mt-2 gap-2">
+                                                            <div class="flex items-center gap-2">
+                                                                {#if opData.class}
+                                                                    <Tooltip text={$t(`classes.${opData.class}`)}>
+                                                                        <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                            <Icon name={opData.class} class="w-10 h-10 text-white rounded-md" />
+                                                                        </div>
+                                                                    </Tooltip>
+                                                                {/if}
+
+                                                                {#if opData.class && opData.element}
+                                                                    <div class="w-[1px] h-8 bg-gray-500/60"></div>
+                                                                {/if}
+                                                            
+                                                                {#if opData.element}
+                                                                    <Tooltip text={$t(`elements.${opData.element}`)}>
+                                                                        <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                            <Icon name={opData.element} class="w-10 h-10 text-white rounded-md" />
+                                                                        </div>
+                                                                    </Tooltip>
+                                                                {/if}
+
+                                                                <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-md leading-none">
+                                                                    {$t(`characters.${opData.id}`) || opData.name}
+                                                                </h3>
+                                                            </div>
+
+                                                            <div class="flex items-center gap-0 -space-x-1">
+                                                                {#each Array(opData.rarity || 1) as _}
+                                                                    <Icon
+                                                                        name="strokeStar"
+                                                                        class="w-10 h-10"
+                                                                        style="color: {getRarityColor(opData.rarity)}; stroke-opacity: 50%"
+                                                                    />
+                                                                {/each}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex justify-between items-start my-auto py-2">
+                                                        <div class="flex flex-col items-start leading-none select-none">
+                                                            <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                                            <span class="text-[52px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}</span>
+                                                        </div>
+
+                                                        <div class="flex flex-col items-end gap-3 select-none">
+                                                            <div class="text-[#FFE145] drop-shadow-lg">
+                                                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                                                    <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.41l8.2-1.192z"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex justify-between items-end mt-auto pt-4 z-10">
+                                                        <div class="flex flex-col gap-3">
+                                                            {#each ["basicAttack", "battleSkill", "comboSkill", "ultimate"] as skillKey, idx}
+                                                                {@const skillMeta = Array.isArray(targetCharData?.skills)
+                                                                    ? targetCharData.skills[idx]
+                                                                    : targetCharData?.skills?.[skillKey]}
+                                                                {#if skillMeta}
+                                                                    {@const skillLvl = detailedChar?.userSkills?.[skillMeta.id]?.level || 1}
+                                                                    {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
+                                                                    {@const currentElement = targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
+                                                                    {@const currentColor = elementColors[currentElement] || "#5E5D5D"}
+                                                                    {@const isUltimate = skillKey === "ultimate"}
+                                                                    
+                                                                    <div class="flex flex-col items-center group relative">
+                                                                        <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
+                                                                            <div
+                                                                                class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
+                                                                                style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
+                                                                                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                                                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                                                -webkit-mask-composite: destination-out;
+                                                                                mask-composite: exclude;"
+                                                                            ></div>
+                                                                            
+                                                                            <div class="w-[82%] h-[82%] rounded-full bg-black/80 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
+                                                                                {#if isUltimate}
+                                                                                    <div
+                                                                                        class="absolute inset-0"
+                                                                                        style="background-color: {currentColor}"
+                                                                                    ></div>
+                                                                                {:else}
+                                                                                    <div
+                                                                                        class="absolute inset-0"
+                                                                                        style="background-color: {currentColor}; 
+                                                                                        clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"
+                                                                                    ></div>
+                                                                                {/if}
+
+                                                                                <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
+                                                                                    <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="absolute left-16 top-1/2 -translate-y-1/2 bg-black/95 text-white px-2 py-1 rounded text-[10px] hidden group-hover:block z-30 border border-white/10 whitespace-nowrap shadow-xl">
+                                                                            <span class="font-bold">{$t(`menu.${skillKey}`) || skillKey}:</span> {skillMeta.name || "Skill"}
+                                                                        </div>
+
+                                                                        <div class="flex items-center justify-center select-none mt-[-10px]">
+                                                                            {#if skillLvl >= 10}
+                                                                                <div class="flex items-center gap-0.5 scale-90">
+                                                                                    {#each Array(3) as _, i}
+                                                                                        {@const isActive = (skillLvl - 9) > i}
+                                                                                        <svg width="8" height="8" viewBox="0 0 24 24" class="drop-shadow-sm">
+                                                                                            <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={isActive ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={isActive ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" />
+                                                                                        </svg>
+                                                                                    {/each}
+                                                                                </div>
+                                                                            {:else}
+                                                                                <span class="text-xs font-black text-white/90 font-nums mt-0.5" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">{skillLvl}</span>
+                                                                            {/if}
+                                                                        </div>
+                                                                    </div>
+                                                                {/if}
+                                                            {/each}
+                                                        </div>
+
+                                                        <div class="flex flex-col gap-3.5 items-end justify-center">
+                                                            {#if talentsList && talentsList.length > 0}
+                                                                {#each talentsList as talent}
+                                                                    <Tooltip text={talent.name + ": " + talent.desc}>
+                                                                        <div class="group relative cursor-pointer transition-transform duration-200 hover:scale-105 select-none">
+                                                                            {#if talent.type === "cultivation"}
+                                                                                <!-- Cultivation/Spaceship talent (Square) -->
+                                                                                <div class="w-[50px] h-[50px] flex items-center justify-center">
+                                                                                    <Image
+                                                                                        id={talent.localImageId || talent.iconUrl}
+                                                                                        interactive={true}
+                                                                                        variant="fac-skill"
+                                                                                        className="max-w-full max-h-full object-contain"
+                                                                                    />
+                                                                                </div>
+                                                                                <!-- Greek letter on bottom right -->
+                                                                                {#if talent.name}
+                                                                                    {@const match = talent.name.match(/[αβγ]\s*$/)}
+                                                                                    {@const label = match ? match[0] : ""}
+                                                                                    {#if label}
+                                                                                        <div class="absolute -bottom-1 -right-1.5 z-10 text-white font-black font-serif text-[15px] select-none" style="text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;">
+                                                                                            {label}
+                                                                                        </div>
+                                                                                    {/if}
+                                                                                {/if}
+                                                                            {:else}
+                                                                                <!-- Combat/Normal talent (Circle) -->
+                                                                                <div class="w-[50px] h-[50px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px]">
+                                                                                    <Image
+                                                                                        id={talent.localImageId || talent.iconUrl}
+                                                                                        interactive={true}
+                                                                                        variant="skill-icon"
+                                                                                        className="w-full h-full object-cover rounded-full"
+                                                                                    />
+                                                                                </div>
+                                                                                <!-- Level indicator (slanted bars) on bottom right -->
+                                                                                {#if talent.levelsCount > 1}
+                                                                                    <div class="absolute -bottom-1.5 -right-2.5 z-10 flex gap-[2px] items-center pointer-events-none select-none">
+                                                                                        {#each Array(talent.levelsCount) as _, i}
+                                                                                            {@const isActive = (i + 1) <= talent.currentLevel}
+                                                                                            <div
+                                                                                                class="w-[4px] h-[10px] rounded-full transform rotate-[30deg] border-[1px] shrink-0
+                                                                                                {isActive
+                                                                                                    ? 'border-[#FFE145] bg-[#FFE145] shadow-sm'
+                                                                                                    : 'border-gray-500 bg-transparent'}"
+                                                                                            ></div>
+                                                                                        {/each}
+                                                                                    </div>
+                                                                                {/if}
+                                                                            {/if}
+                                                                        </div>
+                                                                    </Tooltip>
+                                                                {/each}
+                                                            {/if}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="lg:col-span-7 flex flex-col gap-4 justify-between">
+                                                
+                                                {#if detailedChar?.weapon}
+                                                    {@const wpn = detailedChar.weapon}
+                                                    {@const wpnStatic = getWeaponData(wpn)}
+                                                    {@const wpnName = $t(`weaponsList.${wpnStatic?.id}`) !== `weaponsList.${wpnStatic?.id}` ? $t(`weaponsList.${wpnStatic?.id}`) : (wpnStatic?.name || wpn.id)}
+                                                    {@const wpnTerms = wpn.weaponTerms || []}
+                                                    
+                                                    <div class="relative p-5 flex flex-row items-stretch justify-between gap-4 rounded-xl shadow-xl overflow-hidden min-h-[150px]"
+                                                         style="border: 1px solid transparent; background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0.05), rgba(255,255,255,0.15)) border-box;">
+                                                        
+                                                        <div class="flex flex-col justify-between items-start shrink-0 min-w-[70px]">
+                                                            <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={36} />
+                                                            
+                                                            <div class="flex flex-col items-start leading-none select-none mt-2">
+                                                                <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                                                <span class="text-[44px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
+                                                                <div class="w-12 h-[3px] bg-[#FFE145] mt-1.5 rounded"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex flex-col justify-between flex-1 min-w-0 ml-1">
+                                                            <div>
+                                                                <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="hover:underline block">
+                                                                    <h4 class="text-lg font-black text-white leading-tight uppercase truncate" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                                                        {wpnName}
+                                                                    </h4>
+                                                                </a>
+                                                                <div class="flex items-center gap-0.5 mt-1 select-none">
+                                                                    {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
+                                                                        <Icon name="strokeStar" class="w-4 h-4 text-[#FFE145]" />
+                                                                    {/each}
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="flex items-center gap-3 mt-4 select-none">
+                                                                {#each ['atk', 'def', 'maxhp'] as statKey}
+                                                                    {@const calculatedStat = statKey === 'atk' ? Math.round(80 + wpn.level * 2.5) : (statKey === 'def' ? Math.round(20 + wpn.level * 0.8) : Math.round(150 + wpn.level * 4))}
+                                                                    <div class="flex items-center gap-1.5 text-xs font-bold text-white/90">
+                                                                        <Icon name={statKey} class="w-4 h-4 text-white/70" />
+                                                                        <span class="font-nums">+{calculatedStat}</span>
+                                                                    </div>
+                                                                {/each}
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex items-center shrink-0 ml-2">
+                                                            <div class="relative w-28 h-28 flex items-center justify-center shrink-0">
+                                                                <img 
+                                                                    src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
+                                                                    alt="Weapon" 
+                                                                    class="w-full h-full object-contain pointer-events-none"
+                                                                    on:error={(e) => { 
+                                                                        if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) { 
+                                                                            e.target.src = wpn.weaponData.iconUrl; 
+                                                                        } 
+                                                                    }} 
+                                                                />
+                                                            </div>
+                                                            
+                                                            {#if wpnTerms && wpnTerms.length > 0}
+                                                                <div class="flex flex-col gap-1.5 shrink-0 justify-center ml-2 select-none">
+                                                                    {#each wpnTerms as term}
+                                                                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-black/45 border border-white/5 shadow-sm">
+                                                                            <div class="w-[4px] h-[10px] rounded-full transform rotate-[40deg] bg-[#FFE145] border-[#FFE145] shrink-0"></div>
+                                                                            <span class="text-[9px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
+                                                                        </div>
+                                                                    {/each}
+                                                                </div>
+                                                            {/if}
+                                                        </div>
+                                                        
+                                                    </div>
+                                                {:else}
+                                                    <div class="bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
+                                                        No Weapon Equipped
+                                                    </div>
+                                                {/if}
+
+                                                <div class="grid grid-cols-2 gap-4 flex-1">
+                                                    {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
+                                                        {@const equip = detailedChar?.[eqKey]}
+                                                        {#if equip && equip.equipData}
+                                                            {@const staticId = getStaticEquipId(equip.equipData)}
+                                                            {@const tier = getEquipTier(equip.equipData.level.value)}
+                                                            
+                                                            <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-3 bg-[#202020] border-b-2 border-[#FF6600] rounded-xl hover:bg-white/5 transition-all cursor-pointer min-h-[76px] min-w-0">
+                                                                
+                                                                <div class="relative flex items-center justify-center w-14 h-14 shrink-0 bg-black/40 rounded border border-white/5">
+                                                                    <div class="absolute top-0.5 left-0.5 w-6 h-3.5 z-20 select-none">
+                                                                        <svg class="w-full h-full" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
+                                                                            <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
+                                                                            <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                            <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                            {#if tier >= 1}
+                                                                                <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
+                                                                            {/if}
+                                                                            <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                            {#if tier >= 1 && tier < 3}
+                                                                                <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
+                                                                            {/if}
+                                                                        </svg>
+                                                                    </div>
+                                                                    
+                                                                    <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-12 h-12 object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
+                                                                </div>
+                                                                
+                                                                <div class="flex flex-col items-end gap-0.5 flex-1 pl-2 select-none overflow-hidden max-h-[70px]">
+                                                                    {#each equip.equipData.properties || [] as propKey}
+                                                                        {@const statIcon = getStatIcon(propKey)}
+                                                                        {@const staticEquip = staticId ? equipment[staticId] : null}
+                                                                        {@const displayAttr = staticEquip?.displayAttr?.find(a => a.attrType === propKey.replace("equip_attr_", "").toUpperCase() || propKey.toLowerCase().includes(a.attrType.toLowerCase()))}
+                                                                        {@const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null}
+                                                                        
+                                                                        <div class="flex items-center gap-1 text-[9px] font-bold text-white font-nums bg-black/45 px-1.5 py-0.5 rounded leading-none">
+                                                                            {#if statIcon}
+                                                                                <Icon name={statIcon} class="w-3 h-3 text-white/70" />
+                                                                            {/if}
+                                                                            <span>
+                                                                                {#if statVal !== null && statVal !== undefined}
+                                                                                    {#if Math.abs(statVal) > 0 && Math.abs(statVal) < 1}
+                                                                                        {Math.round(statVal * 100)}%
+                                                                                    {:else}
+                                                                                        +{Math.round(statVal)}
+                                                                                    {/if}
+                                                                                {:else}
+                                                                                    +{10 + tier * 5}
+                                                                                {/if}
+                                                                            </span>
+                                                                        </div>
+                                                                    {/each}
+                                                                    
+                                                                    {#if (equip.equipData.properties || []).length < 4}
+                                                                        {#each Array(4 - (equip.equipData.properties || []).length) as _}
+                                                                            <div class="h-[14px] w-2"></div>
+                                                                        {/each}
+                                                                    {/if}
+                                                                </div>
+                                                            </a>
+                                                        {:else}
+                                                            <div class="flex items-center justify-center bg-[#202020]/40 border border-dashed border-white/10 rounded-xl min-h-[76px] text-[10px] text-white/30 uppercase select-none">
+                                                                Empty Slot
+                                                            </div>
+                                                        {/if}
+                                                    {/each}
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                {/key}
+                            {/if}
                         </div>
                     </div>
 
@@ -1506,7 +2153,6 @@
                 <span class="text-sm text-gray-700 dark:text-gray-300 font-sdk pr-4 select-text">
                     {$t("profile.settings_hide_data")}
                 </span>
-                <!-- toggle switch -->
                 <!-- svelte-ignore a11y_click_events_have_key_events -->
                 <!-- svelte-ignore a11y_no_static_element_interactions -->
                 <div

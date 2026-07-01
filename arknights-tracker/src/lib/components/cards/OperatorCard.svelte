@@ -217,12 +217,10 @@
                 {/if}
 
                 {#if level !== undefined}
-                    <span
-                        class="absolute bottom-3.5 right-1 z-30 font-black text-white leading-none tracking-tight font-nums text-[15px] select-none"
-                        style="text-shadow: 1px 1px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 0 2px 2px rgba(0,0,0,0.5);"
-                    >
-                        Lv. {level}
-                    </span>
+                    <div class="absolute bottom-3.5 left-2 z-30 flex flex-col items-start leading-none select-none">
+                        <span class="text-[8px] font-black text-white/70 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">LV</span>
+                        <span class="text-[20px] font-black text-white leading-none tracking-tighter" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9);">{level}</span>
+                    </div>
                 {/if}
             </div>
 

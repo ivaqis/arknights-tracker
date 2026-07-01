@@ -2260,7 +2260,13 @@
     "image_size_error": "Image is too small. Minimum resolution is 128x128 pixels.",
     "crop_avatar_title": "Crop Avatar",
     "avatar_success": "Avatar updated successfully!",
-    "no_connected_accounts": "No connected game accounts. Sync your account using the Update button above."
+    "no_connected_accounts": "No connected game accounts. Sync your account using the Update button above.",
+    "edit_nickname": "Edit nickname",
+    "copy_profile_link": "Copy profile link",
+    "link_copied": "Link copied to clipboard!",
+    "uid_copied": "UID copied to clipboard!",
+    "copy_uid": "Copy UID",
+    "unlink_account": "Unlink account"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambient: Overclock",

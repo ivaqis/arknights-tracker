@@ -9,18 +9,18 @@
         if (lvl >= 40) {
             return {
                 border: "#D83742",
-                bg: "linear-gradient(to right, transparent 30%, #171201 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #171201, #61201A)"
+                bg: "linear-gradient(to right, transparent 50%, #171201 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #171201, #61201A)"
             };
         }
         if (lvl >= 20) {
             return {
                 border: "#E97126",
-                bg: "linear-gradient(to right, transparent 30%, #131800 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #131800, #694012)"
+                bg: "linear-gradient(to right, transparent 50%, #131800 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #131800, #694012)"
             };
         }
         return {
             border: "#828282",
-            bg: "linear-gradient(to right, transparent 30%, #050505 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #050505, #313434)"
+            bg: "linear-gradient(to right, transparent 50%, #050505 95%), radial-gradient(circle, rgba(255,255,255,0.25) 0.5px, transparent 0.5px) 0 0 / 2px 2px, linear-gradient(to left, #050505, #313434)"
         };
     }
 
@@ -32,5 +32,5 @@
     style="border-color: {tagStyle.border}; background: {tagStyle.bg};"
 >
     <span>{level || 0}</span>
-    <Icon name="contract2" class="w-5 h-5 text-white shrink-0" />
+    <Icon name="contract2" class="w-6 h-6 text-white shrink-0" />
 </div>
