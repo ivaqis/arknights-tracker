@@ -1,6 +1,5 @@
 node_modules
-# Keep environment variables out of version control
 .env
-/banned_words.txt
-/banned_words_local.txt
+banned_words.txt
+banned_words_local.txt
 /generated/prisma

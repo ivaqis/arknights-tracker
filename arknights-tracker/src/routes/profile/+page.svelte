@@ -43,6 +43,14 @@
         fire: "#FF613D",
     };
 
+    const elementGradients = {
+        physical: "from-gray-500/30 to-transparent",
+        cryo: "from-[#21C4CE]/30 to-transparent",
+        nature: "from-[#76C104]/30 to-transparent",
+        electric: "from-[#FFBF00]/30 to-transparent",
+        heat: "from-[#FF613D]/30 to-transparent",
+    };
+
     let profile = null;
     let linkCopied = false;
     let copiedUid = null;
@@ -344,6 +352,93 @@
         return weapon.icon || "";
     }
 
+    function getWeaponTerms(wpn) {
+        if (!wpn) return [];
+        if (wpn.weaponTerms && wpn.weaponTerms.length > 0) {
+            return wpn.weaponTerms;
+        }
+        const refine = wpn.refineLevel || 0;
+        const wpnStatic = getWeaponData(wpn);
+        const rarity = wpnStatic?.rarity || wpn.rarity || 4;
+        const gameId = wpnStatic?.id || wpn.id || "";
+        const level = wpn.level || 1;
+
+        const baseTermsMap = {
+            "wpn_sword_0006": [6, 3, 1],
+            "wpn_sword_0012": [5, 5, 1],
+            "wpn_funnel_0005": [3, 2, 1],
+            "wpn_claym_0012": [2, 1, 2]
+        };
+
+        let base = baseTermsMap[gameId];
+        if (!base) {
+            if (rarity === 6) base = [5, 3, 1];
+            else if (rarity === 5) base = [2, 2, 1];
+            else if (rarity === 4) base = [1, 1, 1];
+            else base = [1, 1];
+        }
+
+        let lower_current_1 = 1;
+        let lower_current_2 = 1;
+        let lower_max_1 = 3;
+        let lower_max_2 = 3;
+
+        if (rarity === 3) {
+            lower_max_1 = 5;
+            if (level < 20) lower_current_1 = 1;
+            else if (level < 40) lower_current_1 = 2;
+            else if (level < 60) lower_current_1 = 3;
+            else if (level < 80) lower_current_1 = 4;
+            else lower_current_1 = 5;
+        } else {
+            if (level < 20) {
+                lower_current_1 = 1;
+                lower_current_2 = 1;
+            } else if (level < 40) {
+                lower_current_1 = 2;
+                lower_current_2 = 1;
+            } else if (level < 60) {
+                lower_current_1 = 2;
+                lower_current_2 = 2;
+            } else if (level < 80) {
+                lower_current_1 = 3;
+                lower_current_2 = 2;
+            } else {
+                lower_current_1 = 3;
+                lower_current_2 = 3;
+            }
+        }
+
+        let term1 = Math.ceil(base[0] * (lower_current_1 / lower_max_1));
+        let term2 = base[1] ? Math.ceil(base[1] * (lower_current_2 / lower_max_2)) : 0;
+        let term3 = base[2] || 1;
+
+        if (base.length >= 3) {
+            term3 += refine;
+        }
+
+        if (wpn.gem && wpn.gem.gemData) {
+            const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : 4;
+            const hasMatchingTerm = !!wpn.gem.gemData.termId;
+
+            if (gemRarity === 5) {
+                term1 += 4;
+                if (base[1]) term2 += 4;
+                if (hasMatchingTerm && base.length >= 3) {
+                    term3 += 2;
+                }
+            } else if (gemRarity === 4) {
+                term1 += 2;
+                if (base[1]) term2 += 2;
+                if (hasMatchingTerm && base.length >= 3) {
+                    term3 += 1;
+                }
+            }
+        }
+
+        return base.length >= 3 ? [term1, term2, term3] : (base.length === 2 ? [term1, term2] : [term1]);
+    }
+
     function getEquipIcon(equip) {
         if (!equip) return "";
         if (equip.id) {
@@ -430,18 +525,34 @@
         }
     }
     $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails) : [];
+    $: opData = selectedChar ? getOperatorData(selectedChar) : null;
+    $: detailedChar = selectedDetailedChar;
+    $: svelteId = selectedChar ? getSvelteCharId(selectedChar) : "";
+    $: targetCharData = detailedChar?.charData || selectedChar?.charData;
+    $: elementColor = opData ? (elementGradients[opData.element] || "from-white/5 to-transparent") : "from-white/5 to-transparent";
 
     function getDetailedChar(charId) {
         if (!activeAccount?.info?.detail?.chars) return null;
         return activeAccount.info.detail.chars.find(c => c.charData?.id === charId || c.id === charId);
     }
 
-    function getEquipTier(levelStr) {
+    function getEquipTier(levelStr, rarity) {
         const val = parseInt(levelStr?.replace("equip_level_", "") || levelStr) || 0;
+        const r = Number(rarity) || 4;
+        if (r < 5) return 0;
         if (val >= 70) return 3;
-        if (val >= 60) return 2;
-        if (val >= 50) return 1;
+        if (val >= 50) return 2;
+        if (val >= 36) return 1;
         return 0;
+    }
+
+    function getEquipRarity(equip, staticEquip) {
+        if (staticEquip?.rarity) return Number(staticEquip.rarity);
+        const key = equip?.equipData?.rarity?.key || "";
+        const match = key.match(/equip_rarity_(\d+)/);
+        if (match) return parseInt(match[1]);
+        const val = Number(equip?.equipData?.rarity?.value || equip?.rarity);
+        return isNaN(val) ? 4 : val;
     }
 
     function getPropertyLabel(propKey) {
@@ -499,6 +610,15 @@
         if (key.includes("sp_gain") || key.includes("usp")) return "usp";
         if (key.includes("heal")) return "heal";
         if (key.includes("vulnerable") || key.includes("magicdam")) return "magicdam";
+        if (key.includes("normal_skill_damage")) return "normalskillefficiency";
+        if (key.includes("combo_skill_damage")) return "comboskillefficiency";
+        if (key.includes("normal_attack_damage")) return "normalattackdamageincrease";
+        if (key.includes("physical_damage")) return "physicaldamageincrease";
+        if (key.includes("physical_and_spellinfliction") || key.includes("spellinfliction")) return "magicdam";
+        if (key.includes("cryst_and_pulse_damage")) return "alldamagetakenscalar";
+        if (key.includes("all_skill_damage")) return "alldamagetakenscalar";
+        if (key.includes("spell_damage")) return "alldamagetakenscalar";
+        if (key.includes("sub")) return "alldamagetakenscalar";
         return null;
     }
 
@@ -1536,17 +1656,17 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="flex gap-4 overflow-x-auto pb-3 custom-scrollbar whitespace-nowrap max-w-full justify-start items-center">
+                            <div class="flex gap-3.5 overflow-x-auto pb-2.5 custom-scrollbar whitespace-nowrap max-w-full justify-start items-center">
                                 {#each sortedChars as char}
                                     {@const opData = getOperatorData(char)}
                                     {@const isSelected = char.id === selectedOperatorId}
-                                    <div class="relative w-12 h-12 shrink-0">
+                                    <div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
                                         <button
                                             on:click={() => selectedOperatorId = char.id}
-                                            class="w-full h-full rounded-full border-2 transition-all duration-300 overflow-hidden outline-none cursor-pointer
-                                            {isSelected ? 'border-white shadow-md' : 'border-[#FF6600]/80 hover:opacity-85'}"
+                                            class="w-11 h-11 rounded-full border-2 transition-all duration-300 outline-none cursor-pointer
+                                            {isSelected ? 'ring-2 ring-white shadow-md' : 'border-[#FF6600]/80 hover:opacity-85'}"
                                         >
-                                            <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover" />
+                                            <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
                                         </button>
                                         <div class="absolute -bottom-1 -right-1 z-10 px-1 py-0.5 text-[12px] text-white bg-black/40 rounded-md leading-none font-nums select-none shadow-xl">
                                             {char.level}
@@ -1556,367 +1676,417 @@
                             </div>
 
                             {#if selectedChar}
-                                {@const opData = getOperatorData(selectedChar)}
-                                {@const detailedChar = selectedDetailedChar}
-                                {@const svelteId = getSvelteCharId(selectedChar)}
-                                {@const targetCharData = detailedChar?.charData || selectedChar?.charData}
-                                {@const elementGradients = {
-                                    physical: "from-gray-500/10 to-transparent",
-                                    cryo: "from-[#21C4CE]/15 to-transparent",
-                                    cryst: "from-[#21C4CE]/15 to-transparent",
-                                    nature: "from-[#AABD00]/15 to-transparent",
-                                    natural: "from-[#AABD00]/15 to-transparent",
-                                    electric: "from-[#FFBF00]/15 to-transparent",
-                                    pulse: "from-[#FFBF00]/15 to-transparent",
-                                    heat: "from-[#FF613D]/15 to-transparent",
-                                    fire: "from-[#FF613D]/15 to-transparent",
-                                }}
-                                {@const elementColor = elementGradients[opData.element] || "from-white/5 to-transparent"}
                                 
                                 {#key selectedOperatorId}
-                                    <div in:fade={{ duration: 200 }} class="w-full max-w-[1050px] mx-auto relative bg-black/25 dark:bg-black/35 backdrop-blur-md border border-white/10 rounded-2xl p-5 md:p-7 shadow-2xl transition-all duration-300 text-left mt-4">
-                                        
-                                        <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
+                                    <div class="w-full overflow-x-auto custom-scrollbar pb-1">
+                                        <div in:fade={{ duration: 200 }} class="w-[950px] h-[465px] mx-auto relative bg-black/30 dark:bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl p-5 md:p-7 shadow-2xl transition-all duration-300 text-left mt-3 overflow-hidden">
+                                            
+                                            <div class="absolute inset-0 bg-gradient-to-br {elementColor} pointer-events-none z-0 rounded-2xl"></div>
+                                            <div class="absolute left-[-25px] top-2 pointer-events-none z-0 select-none opacity-90" style="width: 50%; height: 100%; transform: scale(1.5); transform-origin: left center;">
+                                                <Image id={opData.id} variant="operator-splash" className="w-full h-full object-contain object-center" />
+                                            </div>
 
-                                        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                                            <div class="lg:col-span-5 relative flex flex-col rounded-xl justify-between">
-                                                <div class="absolute inset-0 w-full h-full pointer-events-none z-0 select-none">
-                                                    <Image id={opData.id} variant="operator-splash" className="w-full h-full object-cover object-center" />
-                                                </div>
+                                            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                                                <div class="lg:col-span-7 relative flex flex-col rounded-xl justify-between">
+                                                    <div class="z-10">
+                                                        <div class="flex flex-col gap-2 mb-2">
+                                                            <div class="flex items-start justify-between w-full gap-2">
+                                                                <div class="flex flex-col gap-2">
+                                                                    <div class="flex items-center gap-2">
+                                                                        {#if opData.class}
+                                                                            <Tooltip text={$t(`classes.${opData.class}`)}>
+                                                                                <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                                    <Icon name={opData.class} class="w-10 h-10 text-white rounded-md" />
+                                                                                </div>
+                                                                            </Tooltip>
+                                                                        {/if}
 
-                                                <div class="z-10">
-                                                    <div>
-                                                        <div class="flex flex-col mt-2 gap-2">
-                                                            <div class="flex items-center gap-2">
-                                                                {#if opData.class}
-                                                                    <Tooltip text={$t(`classes.${opData.class}`)}>
-                                                                        <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
-                                                                            <Icon name={opData.class} class="w-10 h-10 text-white rounded-md" />
-                                                                        </div>
-                                                                    </Tooltip>
-                                                                {/if}
-
-                                                                {#if opData.class && opData.element}
-                                                                    <div class="w-[1px] h-8 bg-gray-500/60"></div>
-                                                                {/if}
-                                                            
-                                                                {#if opData.element}
-                                                                    <Tooltip text={$t(`elements.${opData.element}`)}>
-                                                                        <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
-                                                                            <Icon name={opData.element} class="w-10 h-10 text-white rounded-md" />
-                                                                        </div>
-                                                                    </Tooltip>
-                                                                {/if}
-
-                                                                <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-md leading-none">
-                                                                    {$t(`characters.${opData.id}`) || opData.name}
-                                                                </h3>
-                                                            </div>
-
-                                                            <div class="flex items-center gap-0 -space-x-1">
-                                                                {#each Array(opData.rarity || 1) as _}
-                                                                    <Icon
-                                                                        name="strokeStar"
-                                                                        class="w-10 h-10"
-                                                                        style="color: {getRarityColor(opData.rarity)}; stroke-opacity: 50%"
-                                                                    />
-                                                                {/each}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="flex justify-between items-start my-auto py-2">
-                                                        <div class="flex flex-col items-start leading-none select-none">
-                                                            <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                                            <span class="text-[52px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}</span>
-                                                        </div>
-
-                                                        <div class="flex flex-col items-end gap-3 select-none">
-                                                            <div class="text-[#FFE145] drop-shadow-lg">
-                                                                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                                                                    <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.41l8.2-1.192z"/>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex justify-between items-end mt-auto pt-4 z-10">
-                                                        <div class="flex flex-col gap-3">
-                                                            {#each ["basicAttack", "battleSkill", "comboSkill", "ultimate"] as skillKey, idx}
-                                                                {@const skillMeta = Array.isArray(targetCharData?.skills)
-                                                                    ? targetCharData.skills[idx]
-                                                                    : targetCharData?.skills?.[skillKey]}
-                                                                {#if skillMeta}
-                                                                    {@const skillLvl = detailedChar?.userSkills?.[skillMeta.id]?.level || 1}
-                                                                    {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
-                                                                    {@const currentElement = targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
-                                                                    {@const currentColor = elementColors[currentElement] || "#5E5D5D"}
-                                                                    {@const isUltimate = skillKey === "ultimate"}
+                                                                        {#if opData.class && opData.element}
+                                                                            <div class="w-[1px] h-8 bg-gray-500/60"></div>
+                                                                        {/if}
                                                                     
-                                                                    <div class="flex flex-col items-center group relative">
-                                                                        <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
-                                                                            <div
-                                                                                class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
-                                                                                style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
-                                                                                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                                                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                                                -webkit-mask-composite: destination-out;
-                                                                                mask-composite: exclude;"
-                                                                            ></div>
-                                                                            
-                                                                            <div class="w-[82%] h-[82%] rounded-full bg-black/80 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
-                                                                                {#if isUltimate}
-                                                                                    <div
-                                                                                        class="absolute inset-0"
-                                                                                        style="background-color: {currentColor}"
-                                                                                    ></div>
-                                                                                {:else}
-                                                                                    <div
-                                                                                        class="absolute inset-0"
-                                                                                        style="background-color: {currentColor}; 
-                                                                                        clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"
-                                                                                    ></div>
-                                                                                {/if}
+                                                                        {#if opData.element}
+                                                                            <Tooltip text={$t(`elements.${opData.element}`)}>
+                                                                                <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                                    <Icon name={opData.element} class="w-10 h-10 text-white rounded-md" />
+                                                                                </div>
+                                                                            </Tooltip>
+                                                                        {/if}
 
-                                                                                <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
-                                                                                    <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
+                                                                        <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-xl leading-none" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                                                            {$t(`characters.${opData.id}`) || opData.name}
+                                                                        </h3>
+
+                                                                        <Tooltip text="P{Math.max(1, (selectedChar.potential || 1)) - 1}">
+                                                                            <PotentialIcon pot={Math.max(0, (selectedChar.potential || 1) - 1)} size={50} className="ml-1 pt-2" />
+                                                                        </Tooltip>
+                                                                    </div>
+
+                                                                    <div class="flex items-center gap-0 -space-x-2 ml-[-3px]">
+                                                                        {#each Array(opData.rarity || 1) as _}
+                                                                            <Icon
+                                                                                name="strokeStar"
+                                                                                class="w-10 h-10"
+                                                                                style="color: white; stroke-opacity: 20%"
+                                                                            />
+                                                                        {/each}
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="flex flex-col items-center select-none shrink-0">
+                                                                    <div class="flex flex-col items-start leading-none">
+                                                                        <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                                                        <span class="text-[52px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex justify-between items-end mt-auto z-10">
+                                                            <div class="flex flex-col gap-2">
+                                                                {#each ["basicAttack", "battleSkill", "comboSkill", "ultimate"] as skillKey, idx}
+                                                                    {@const skillMeta = Array.isArray(targetCharData?.skills)
+                                                                        ? targetCharData.skills[idx]
+                                                                        : targetCharData?.skills?.[skillKey]}
+                                                                    {#if skillMeta}
+                                                                        {@const skillLvl = detailedChar?.userSkills?.[skillMeta.id]?.level || 1}
+                                                                        {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
+                                                                        {@const currentElement = targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
+                                                                        {@const currentColor = elementColors[currentElement] || "#5E5D5D"}
+                                                                        {@const isUltimate = skillKey === "ultimate"}
+                                                                        
+                                                                        <div class="flex flex-col items-center group relative">
+                                                                            <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
+                                                                                <div
+                                                                                    class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
+                                                                                    style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
+                                                                                    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                                                    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                                                    -webkit-mask-composite: destination-out;
+                                                                                    mask-composite: exclude;"
+                                                                                ></div>
+                                                                                
+                                                                                <div class="w-[82%] h-[82%] rounded-full bg-black/35 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
+                                                                                    {#if isUltimate}
+                                                                                        <div
+                                                                                            class="absolute inset-0"
+                                                                                            style="background-color: {currentColor}"
+                                                                                        ></div>
+                                                                                    {:else}
+                                                                                        <div
+                                                                                            class="absolute inset-0"
+                                                                                            style="background-color: {currentColor}; 
+                                                                                            clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"
+                                                                                        ></div>
+                                                                                    {/if}
+
+                                                                                    <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
+                                                                                        <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                        
-                                                                        <div class="absolute left-16 top-1/2 -translate-y-1/2 bg-black/95 text-white px-2 py-1 rounded text-[10px] hidden group-hover:block z-30 border border-white/10 whitespace-nowrap shadow-xl">
-                                                                            <span class="font-bold">{$t(`menu.${skillKey}`) || skillKey}:</span> {skillMeta.name || "Skill"}
-                                                                        </div>
+                                                                            
+                                                                            <div class="absolute left-16 top-1/2 -translate-y-1/2 bg-black/95 text-white px-2 py-1 rounded text-[10px] hidden group-hover:block z-30 border border-white/10 whitespace-nowrap shadow-xl">
+                                                                                <span class="font-bold">{$t(`menu.${skillKey}`) || skillKey}:</span> {skillMeta.name || "Skill"}
+                                                                            </div>
 
-                                                                        <div class="flex items-center justify-center select-none mt-[-10px]">
-                                                                            {#if skillLvl >= 10}
-                                                                                <div class="flex items-center gap-0.5 scale-90">
-                                                                                    {#each Array(3) as _, i}
-                                                                                        {@const isActive = (skillLvl - 9) > i}
-                                                                                        <svg width="8" height="8" viewBox="0 0 24 24" class="drop-shadow-sm">
-                                                                                            <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={isActive ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={isActive ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" />
-                                                                                        </svg>
-                                                                                    {/each}
-                                                                                </div>
-                                                                            {:else}
-                                                                                <span class="text-xs font-black text-white/90 font-nums mt-0.5" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">{skillLvl}</span>
-                                                                            {/if}
+                                                                            <div class="flex items-center justify-center select-none mt-[-10px]">
+                                                                                {#if skillLvl >= 10}
+                                                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex flex-col items-center justify-center scale-95 shadow-md z-10 relative">
+                                                                                        <div class="flex flex-col items-center mt-[-1px]">
+                                                                                            <svg width="7" height="7" viewBox="0 0 24 24">
+                                                                                                <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" />
+                                                                                            </svg>
+                                                                                            <div class="flex ">
+                                                                                                <svg width="7" height="7" viewBox="0 0 24 24">
+                                                                                                    <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" />
+                                                                                                </svg>
+                                                                                                <svg width="7" height="7" viewBox="0 0 24 24">
+                                                                                                    <path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" />
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                {:else}
+                                                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex items-center justify-center shadow-md z-10 relative">
+                                                                                        <span class="text-xs font-black text-white/90 font-nums mt-[1px]">{skillLvl}</span>
+                                                                                    </div>
+                                                                                {/if}
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                {/if}
-                                                            {/each}
-                                                        </div>
+                                                                    {/if}
+                                                                {/each}
+                                                            </div>
 
-                                                        <div class="flex flex-col gap-3.5 items-end justify-center">
-                                                            {#if talentsList && talentsList.length > 0}
-                                                                {#each talentsList as talent}
-                                                                    <Tooltip text={talent.name + ": " + talent.desc}>
-                                                                        <div class="group relative cursor-pointer transition-transform duration-200 hover:scale-105 select-none">
-                                                                            {#if talent.type === "cultivation"}
-                                                                                <!-- Cultivation/Spaceship talent (Square) -->
-                                                                                <div class="w-[50px] h-[50px] flex items-center justify-center">
-                                                                                    <Image
-                                                                                        id={talent.localImageId || talent.iconUrl}
-                                                                                        interactive={true}
-                                                                                        variant="fac-skill"
-                                                                                        className="max-w-full max-h-full object-contain"
-                                                                                    />
-                                                                                </div>
-                                                                                <!-- Greek letter on bottom right -->
-                                                                                {#if talent.name}
-                                                                                    {@const match = talent.name.match(/[αβγ]\s*$/)}
-                                                                                    {@const label = match ? match[0] : ""}
-                                                                                    {#if label}
-                                                                                        <div class="absolute -bottom-1 -right-1.5 z-10 text-white font-black font-serif text-[15px] select-none" style="text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;">
-                                                                                            {label}
+                                                            <div class="flex flex-col gap-3 items-end justify-center">
+                                                                {#if talentsList && talentsList.length > 0}
+                                                                    {#each talentsList as talent}
+                                                                        <Tooltip text={talent.name + ": " + talent.desc}>
+                                                                            <div class="group relative cursor-pointer transition-transform duration-200 hover:scale-105 select-none">
+                                                                                {#if talent.type === "cultivation"}
+                                                                                    <div class="w-[35px] h-[35px] flex items-center justify-center">
+                                                                                        <Image
+                                                                                            id={talent.localImageId || talent.iconUrl}
+                                                                                            interactive={true}
+                                                                                            variant="fac-skill"
+                                                                                            className="max-w-full max-h-full object-contain"
+                                                                                        />
+                                                                                    </div>
+                                                                                    {#if talent.name}
+                                                                                        {@const match = talent.name.match(/[αβγ]\s*$/)}
+                                                                                        {@const label = match ? match[0] : ""}
+                                                                                        {#if label}
+                                                                                            <div class="absolute -bottom-1 -right-1.5 z-10 text-white font-black font-serif text-[15px] select-none" style="text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;">
+                                                                                                {label}
+                                                                                            </div>
+                                                                                        {/if}
+                                                                                    {/if}
+                                                                                {:else}
+                                                                                    <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px]">
+                                                                                        <Image
+                                                                                            id={talent.localImageId || talent.iconUrl}
+                                                                                            interactive={true}
+                                                                                            variant="skill-icon"
+                                                                                            className="w-full h-full object-cover rounded-full"
+                                                                                        />
+                                                                                    </div>
+                                                                                    {#if talent.levelsCount > 1}
+                                                                                        <div class="absolute -bottom-1.5 -right-1.5 z-10 flex gap-[2px] pb-1 items-center pointer-events-none select-none">
+                                                                                            {#each Array(talent.levelsCount) as _, i}
+                                                                                                {@const isActive = (i + 1) <= talent.currentLevel}
+                                                                                                <div
+                                                                                                    class="w-[4px] h-[10px] rounded-full transform rotate-[30deg] border-[1px] shrink-0
+                                                                                                    {isActive
+                                                                                                        ? 'border-[#FFE145] bg-[#FFE145] shadow-sm'
+                                                                                                        : 'border-gray-500 bg-transparent'}"
+                                                                                                ></div>
+                                                                                            {/each}
                                                                                         </div>
                                                                                     {/if}
                                                                                 {/if}
-                                                                            {:else}
-                                                                                <!-- Combat/Normal talent (Circle) -->
-                                                                                <div class="w-[50px] h-[50px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px]">
-                                                                                    <Image
-                                                                                        id={talent.localImageId || talent.iconUrl}
-                                                                                        interactive={true}
-                                                                                        variant="skill-icon"
-                                                                                        className="w-full h-full object-cover rounded-full"
-                                                                                    />
-                                                                                </div>
-                                                                                <!-- Level indicator (slanted bars) on bottom right -->
-                                                                                {#if talent.levelsCount > 1}
-                                                                                    <div class="absolute -bottom-1.5 -right-2.5 z-10 flex gap-[2px] items-center pointer-events-none select-none">
-                                                                                        {#each Array(talent.levelsCount) as _, i}
-                                                                                            {@const isActive = (i + 1) <= talent.currentLevel}
-                                                                                            <div
-                                                                                                class="w-[4px] h-[10px] rounded-full transform rotate-[30deg] border-[1px] shrink-0
-                                                                                                {isActive
-                                                                                                    ? 'border-[#FFE145] bg-[#FFE145] shadow-sm'
-                                                                                                    : 'border-gray-500 bg-transparent'}"
-                                                                                            ></div>
-                                                                                        {/each}
-                                                                                    </div>
-                                                                                {/if}
-                                                                            {/if}
-                                                                        </div>
-                                                                    </Tooltip>
-                                                                {/each}
-                                                            {/if}
+                                                                            </div>
+                                                                        </Tooltip>
+                                                                    {/each}
+                                                                {/if}
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="lg:col-span-7 flex flex-col gap-4 justify-between">
-                                                
-                                                {#if detailedChar?.weapon}
-                                                    {@const wpn = detailedChar.weapon}
-                                                    {@const wpnStatic = getWeaponData(wpn)}
-                                                    {@const wpnName = $t(`weaponsList.${wpnStatic?.id}`) !== `weaponsList.${wpnStatic?.id}` ? $t(`weaponsList.${wpnStatic?.id}`) : (wpnStatic?.name || wpn.id)}
-                                                    {@const wpnTerms = wpn.weaponTerms || []}
+                                                <div class="lg:col-span-5 flex flex-col gap-2 justify-between">
                                                     
-                                                    <div class="relative p-5 flex flex-row items-stretch justify-between gap-4 rounded-xl shadow-xl overflow-hidden min-h-[150px]"
-                                                         style="border: 1px solid transparent; background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0.05), rgba(255,255,255,0.15)) border-box;">
+                                                    {#if detailedChar?.weapon}
+                                                        {@const wpn = detailedChar.weapon}
+                                                        {@const wpnStatic = getWeaponData(wpn)}
+                                                        {@const wpnName = $t(`weaponsList.${wpnStatic?.id}`) !== `weaponsList.${wpnStatic?.id}` ? $t(`weaponsList.${wpnStatic?.id}`) : (wpnStatic?.name || wpn.id)}
+                                                        {@const wpnTerms = getWeaponTerms(wpn)}
                                                         
-                                                        <div class="flex flex-col justify-between items-start shrink-0 min-w-[70px]">
-                                                            <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={36} />
+                                                        <div class="relative pl-8 pr-3 py-3 flex flex-row items-stretch justify-between gap-3 rounded-xl overflow-hidden max-h-[140px]"
+                                                             style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
                                                             
-                                                            <div class="flex flex-col items-start leading-none select-none mt-2">
-                                                                <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                                                <span class="text-[44px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
-                                                                <div class="w-12 h-[3px] bg-[#FFE145] mt-1.5 rounded"></div>
+                                                            <div class="flex flex-col justify-end items-start shrink-0">
+                                                                <div class="flex flex-col items-start leading-none select-none">
+                                                                    <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                                                    <span class="text-[36px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
+                                                                    <div class="w-12 h-[3px] bg-[#FFE145] mt-1 rounded"></div>
+                                                                </div>
                                                             </div>
-                                                        </div>
 
-                                                        <div class="flex flex-col justify-between flex-1 min-w-0 ml-1">
-                                                            <div>
-                                                                <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="hover:underline block">
-                                                                    <h4 class="text-lg font-black text-white leading-tight uppercase truncate" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
-                                                                        {wpnName}
-                                                                    </h4>
-                                                                </a>
-                                                                <div class="flex items-center gap-0.5 mt-1 select-none">
-                                                                    {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                                                        <Icon name="strokeStar" class="w-4 h-4 text-[#FFE145]" />
+                                                            <div class="flex flex-col gap-2 flex-1 min-w-0 ml-1">
+                                                                <div>
+                                                                    <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="hover:underline block w-full min-w-0">
+                                                                        <h4 class="text-md font-black text-white leading-tight text-right truncate w-full" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                                                            {wpnName}
+                                                                        </h4>
+                                                                    </a>
+                                                                    <div class="flex items-center mt-1 select-none -space-x-1.5 justify-end mr-[-3px]">
+                                                                        {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
+                                                                            <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-white" />
+                                                                        {/each}
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="flex items-center gap-3 pr-2 mt-2 select-none justify-end">
+                                                                    {#each ['atk', 'def', 'maxhp'] as statKey}
+                                                                        {@const calculatedStat = statKey === 'atk' ? Math.round(80 + wpn.level * 2.5) : (statKey === 'def' ? Math.round(20 + wpn.level * 0.8) : Math.round(150 + wpn.level * 4))}
+                                                                        <div class="flex items-center gap-1.5 text-xs font-bold text-white/90">
+                                                                            <Icon name={statKey} class="w-4 h-4 text-white/70" />
+                                                                            <span class="font-nums">+{calculatedStat}</span>
+                                                                        </div>
                                                                     {/each}
                                                                 </div>
                                                             </div>
-                                                            
-                                                            <div class="flex items-center gap-3 mt-4 select-none">
-                                                                {#each ['atk', 'def', 'maxhp'] as statKey}
-                                                                    {@const calculatedStat = statKey === 'atk' ? Math.round(80 + wpn.level * 2.5) : (statKey === 'def' ? Math.round(20 + wpn.level * 0.8) : Math.round(150 + wpn.level * 4))}
-                                                                    <div class="flex items-center gap-1.5 text-xs font-bold text-white/90">
-                                                                        <Icon name={statKey} class="w-4 h-4 text-white/70" />
-                                                                        <span class="font-nums">+{calculatedStat}</span>
-                                                                    </div>
-                                                                {/each}
-                                                            </div>
-                                                        </div>
 
-                                                        <div class="flex items-center shrink-0 ml-2">
-                                                            <div class="relative w-28 h-28 flex items-center justify-center shrink-0">
-                                                                <img 
-                                                                    src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
-                                                                    alt="Weapon" 
-                                                                    class="w-full h-full object-contain pointer-events-none"
-                                                                    on:error={(e) => { 
-                                                                        if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) { 
-                                                                            e.target.src = wpn.weaponData.iconUrl; 
-                                                                        } 
-                                                                    }} 
-                                                                />
+                                                            <div class="flex items-center shrink-0 ml-2">
+                                                                <div class="relative w-[120px] h-[120px] flex items-center justify-center shrink-0">
+                                                                    <div class="absolute top-0 right-0 z-10">
+                                                                        <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+                                                                    </div>
+                                                                    <img 
+                                                                        src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
+                                                                        alt="Weapon" 
+                                                                        class="w-full h-full object-contain pointer-events-none"
+                                                                        on:error={(e) => { 
+                                                                            if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) { 
+                                                                                e.target.src = wpn.weaponData.iconUrl; 
+                                                                            } 
+                                                                        }} 
+                                                                    />
+                                                                </div>
+                                                                
+                                                                {#if wpnTerms && wpnTerms.length > 0}
+                                                                    <div class="flex flex-col gap-2 shrink-0 items-center justify-center ml-2 select-none">
+                                                                        <div class="flex flex-col gap-1 w-full">
+                                                                            {#each wpnTerms as term}
+                                                                                <div class="flex items-center gap-1.5 px-2 py-1 rounded bg-black/45 border border-white/10 shadow-sm w-full justify-center">
+                                                                                    <div class="w-[5px] h-[12px] rounded-full transform rotate-[40deg] bg-[#FFE145] border-[#FFE145] shrink-0"></div>
+                                                                                    <span class="text-[12px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
+                                                                                </div>
+                                                                            {/each}
+                                                                        </div>
+                                                                        
+                                                                        <div class="mt-1 flex items-center justify-center">
+                                                                            {#if wpn.gem && wpn.gem.gemData}
+                                                                                {@const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : (wpn.gem.gemData.templateId === "item_gem_rarity_4" ? 4 : 3)}
+                                                                                {@const gemColor = getRarityColor(gemRarity)}
+                                                                                <Tooltip text={wpn.gem.gemData.name}>
+                                                                                    <div class="relative w-8 h-8 rounded-full border flex items-center justify-center bg-black/40 shadow-inner overflow-hidden group hover:scale-105 transition-transform cursor-pointer" 
+                                                                                         style="border-color: {gemColor}; box-shadow: 0 0 8px {gemColor}33;">
+                                                                                        {#if wpn.gem.gemData.icon}
+                                                                                            <img src={wpn.gem.gemData.icon} alt={wpn.gem.gemData.name} class="w-7 h-7 object-contain" />
+                                                                                        {:else}
+                                                                                            <div class="w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
+                                                                                        {/if}
+                                                                                    </div>
+                                                                                </Tooltip>
+                                                                            {:else}
+                                                                                <Tooltip text={$t("profile.no_essence") || "Эссенция не установлена"}>
+                                                                                    <div class="relative w-8 h-8 rounded-full border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
+                                                                                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
+                                                                                        </svg>
+                                                                                    </div>
+                                                                                </Tooltip>
+                                                                            {/if}
+                                                                        </div>
+                                                                    </div>
+                                                                {/if}
                                                             </div>
                                                             
-                                                            {#if wpnTerms && wpnTerms.length > 0}
-                                                                <div class="flex flex-col gap-1.5 shrink-0 justify-center ml-2 select-none">
-                                                                    {#each wpnTerms as term}
-                                                                        <div class="flex items-center gap-1 px-1.5 py-0.5 rounded bg-black/45 border border-white/5 shadow-sm">
-                                                                            <div class="w-[4px] h-[10px] rounded-full transform rotate-[40deg] bg-[#FFE145] border-[#FFE145] shrink-0"></div>
-                                                                            <span class="text-[9px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
+                                                        </div>
+                                                    {:else}
+                                                        <div class="bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
+                                                            No Weapon Equipped
+                                                        </div>
+                                                    {/if}
+
+                                                    <div class="grid grid-cols-2 gap-2 flex-1">
+                                                        {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
+                                                            {@const equip = detailedChar?.[eqKey]}
+                                                            {#if equip && equip.equipData}
+                                                                {@const staticId = getStaticEquipId(equip.equipData)}
+                                                                {@const staticEquip = staticId ? equipment[staticId] : null}
+                                                                {@const eqRarity = getEquipRarity(equip, staticEquip)}
+                                                                {@const tier = eqRarity < 5 ? 0 : (equip.enhanceStatus !== undefined ? Math.max(0, equip.enhanceStatus - 1) : getEquipTier(equip.equipData.level?.value || equip.equipData.level, eqRarity))}
+                                                                {@const rarityColor = eqRarity === 6 ? "#F4700C" : (eqRarity === 5 ? "#F9B90C" : (eqRarity === 4 ? "#9253F1" : (eqRarity === 3 ? "#26BAFB" : (eqRarity === 2 ? "#AABD00" : "#8F8F8F"))))}
+                                                                
+                                                                {@const statsToRender = (() => {
+                                                                    let list = [];
+                                                                    
+                                                                    const staticDefAttr = staticEquip?.displayAttr?.find(a => a.attrType.toLowerCase() === "def");
+                                                                    if (staticDefAttr) {
+                                                                        list.push({
+                                                                            propKey: "equip_attr_def",
+                                                                            statIcon: "def",
+                                                                            statVal: staticDefAttr.values[tier] || staticDefAttr.values[0]
+                                                                        });
+                                                                    } else {
+                                                                        list.push({
+                                                                            propKey: "equip_attr_def",
+                                                                            statIcon: "def",
+                                                                            statVal: 10 + tier * 5
+                                                                        });
+                                                                    }
+                                                                    
+                                                                    const subProperties = (equip.equipData.properties || []).filter(p => !p.toLowerCase().includes("def"));
+                                                                    for (const propKey of subProperties) {
+                                                                        const statIcon = getStatIcon(propKey);
+                                                                        const displayAttr = staticEquip?.displayAttr?.find(a => a.attrType === propKey.replace("equip_attr_", "").toUpperCase() || propKey.toLowerCase().includes(a.attrType.toLowerCase()));
+                                                                        const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null;
+                                                                        list.push({
+                                                                            propKey,
+                                                                            statIcon,
+                                                                            statVal
+                                                                        });
+                                                                    }
+                                                                    return list;
+                                                                })()}
+                                                                
+                                                                <a href="/equipment/{staticId || equip.equipId}" 
+                                                                   class="relative flex items-center justify-between p-2 rounded-xl pl-5 hover:bg-white/5 transition-all cursor-pointer min-h-[32px] min-w-0"
+                                                                   style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
+                                                                    
+                                                                    <div class="flex flex-col items-center justify-between shrink-0 h-full">
+                                                                        <div class="w-9 h-5 select-none self-start">
+                                                                            <svg class="w-full h-full filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
+                                                                                <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
+                                                                                <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                                <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                                {#if tier >= 1}
+                                                                                    <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
+                                                                                {/if}
+                                                                                <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
+                                                                                {#if tier >= 1 && tier < 3}
+                                                                                    <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
+                                                                                {/if}
+                                                                            </svg>
                                                                         </div>
-                                                                    {/each}
+                                                                        
+                                                                        <div class="relative w-20 h-20 flex items-center justify-center -my-1">
+                                                                            <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-[110%] h-full object-contain pointer-events-none shadow-md" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
+                                                                        </div>
+                                                                        
+                                                                        <div class="w-12 h-[3px] rounded" style="background-color: {rarityColor};"></div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="flex flex-col items-end gap-1 flex-1 select-none overflow-hidden justify-center h-full">
+                                                                        {#each statsToRender as stat}
+                                                                            <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-black/30 px-2 py-1 rounded leading-none border border-white/5 w-fit">
+                                                                                {#if stat.statIcon}
+                                                                                    <Icon name={stat.statIcon} class="w-3.5 h-3.5 text-white/90" />
+                                                                                {/if}
+                                                                                <span>
+                                                                                    {#if stat.statVal !== null && stat.statVal !== undefined}
+                                                                                        {#if Math.abs(stat.statVal) > 0 && Math.abs(stat.statVal) < 1}
+                                                                                            {Math.round(stat.statVal * 100)}%
+                                                                                        {:else}
+                                                                                            +{Math.round(stat.statVal)}
+                                                                                        {/if}
+                                                                                    {:else}
+                                                                                        +{10 + tier * 5}
+                                                                                    {/if}
+                                                                                </span>
+                                                                            </div>
+                                                                        {/each}
+                                                                        
+                                                                        {#if statsToRender.length < 4}
+                                                                            {#each Array(4 - statsToRender.length) as _}
+                                                                                <div class="h-[22px] w-2"></div>
+                                                                            {/each}
+                                                                        {/if}
+                                                                    </div>
+                                                                </a>
+                                                            {:else}
+                                                                <div class="flex items-center justify-center bg-[#202020]/40 border border-dashed border-white/10 rounded-xl min-h-[84px] text-[10px] text-white/30 uppercase select-none">
+                                                                    Empty Slot
                                                                 </div>
                                                             {/if}
-                                                        </div>
-                                                        
+                                                        {/each}
                                                     </div>
-                                                {:else}
-                                                    <div class="bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
-                                                        No Weapon Equipped
-                                                    </div>
-                                                {/if}
 
-                                                <div class="grid grid-cols-2 gap-4 flex-1">
-                                                    {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
-                                                        {@const equip = detailedChar?.[eqKey]}
-                                                        {#if equip && equip.equipData}
-                                                            {@const staticId = getStaticEquipId(equip.equipData)}
-                                                            {@const tier = getEquipTier(equip.equipData.level.value)}
-                                                            
-                                                            <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-3 bg-[#202020] border-b-2 border-[#FF6600] rounded-xl hover:bg-white/5 transition-all cursor-pointer min-h-[76px] min-w-0">
-                                                                
-                                                                <div class="relative flex items-center justify-center w-14 h-14 shrink-0 bg-black/40 rounded border border-white/5">
-                                                                    <div class="absolute top-0.5 left-0.5 w-6 h-3.5 z-20 select-none">
-                                                                        <svg class="w-full h-full" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                            <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
-                                                                            <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
-                                                                            <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                            <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                            {#if tier >= 1}
-                                                                                <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
-                                                                            {/if}
-                                                                            <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                            {#if tier >= 1 && tier < 3}
-                                                                                <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
-                                                                            {/if}
-                                                                        </svg>
-                                                                    </div>
-                                                                    
-                                                                    <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-12 h-12 object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
-                                                                </div>
-                                                                
-                                                                <div class="flex flex-col items-end gap-0.5 flex-1 pl-2 select-none overflow-hidden max-h-[70px]">
-                                                                    {#each equip.equipData.properties || [] as propKey}
-                                                                        {@const statIcon = getStatIcon(propKey)}
-                                                                        {@const staticEquip = staticId ? equipment[staticId] : null}
-                                                                        {@const displayAttr = staticEquip?.displayAttr?.find(a => a.attrType === propKey.replace("equip_attr_", "").toUpperCase() || propKey.toLowerCase().includes(a.attrType.toLowerCase()))}
-                                                                        {@const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null}
-                                                                        
-                                                                        <div class="flex items-center gap-1 text-[9px] font-bold text-white font-nums bg-black/45 px-1.5 py-0.5 rounded leading-none">
-                                                                            {#if statIcon}
-                                                                                <Icon name={statIcon} class="w-3 h-3 text-white/70" />
-                                                                            {/if}
-                                                                            <span>
-                                                                                {#if statVal !== null && statVal !== undefined}
-                                                                                    {#if Math.abs(statVal) > 0 && Math.abs(statVal) < 1}
-                                                                                        {Math.round(statVal * 100)}%
-                                                                                    {:else}
-                                                                                        +{Math.round(statVal)}
-                                                                                    {/if}
-                                                                                {:else}
-                                                                                    +{10 + tier * 5}
-                                                                                {/if}
-                                                                            </span>
-                                                                        </div>
-                                                                    {/each}
-                                                                    
-                                                                    {#if (equip.equipData.properties || []).length < 4}
-                                                                        {#each Array(4 - (equip.equipData.properties || []).length) as _}
-                                                                            <div class="h-[14px] w-2"></div>
-                                                                        {/each}
-                                                                    {/if}
-                                                                </div>
-                                                            </a>
-                                                        {:else}
-                                                            <div class="flex items-center justify-center bg-[#202020]/40 border border-dashed border-white/10 rounded-xl min-h-[76px] text-[10px] text-white/30 uppercase select-none">
-                                                                Empty Slot
-                                                            </div>
-                                                        {/if}
-                                                    {/each}
                                                 </div>
-
                                             </div>
-
                                         </div>
-
                                     </div>
                                 {/key}
                             {/if}

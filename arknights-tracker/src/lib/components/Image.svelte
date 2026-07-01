@@ -55,8 +55,9 @@
     $: smoothImageStyles = isSmallIcon 
         ? "image-rendering: auto;" 
         : "image-rendering: -webkit-optimize-contrast; transform: translateZ(0); backface-visibility: hidden;";
+    $: hasObjectFit = (className || "").split(' ').some(c => c.startsWith('object-'));
 </script>
-
+ 
 {#if hasError}
     <div 
         class="{className} flex items-center justify-center bg-gray-100 dark:bg-[#3d3d3d] text-gray-400 dark:text-[#7A7A7A]"
@@ -74,7 +75,7 @@
         loading="lazy"
         decoding="async"
         draggable={interactive ? "true" : "false"}
-        class="{className} object-cover antialiased transition-opacity duration-300 {interactive ? '' : 'pointer-events-none select-none'} {isVisible ? 'opacity-100' : 'opacity-0'}"
+        class="{className} {hasObjectFit ? '' : 'object-cover'} antialiased transition-opacity duration-300 {interactive ? '' : 'pointer-events-none select-none'} {isVisible ? 'opacity-100' : 'opacity-0'}"
         style="{smoothImageStyles} {sizeStyle} {style}"
     />
 {/if}
