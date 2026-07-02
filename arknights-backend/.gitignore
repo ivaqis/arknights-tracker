@@ -2,4 +2,7 @@ node_modules
 .env
 banned_words.txt
 banned_words_local.txt
+test-backend.js
+banned_words_local.txt
 /generated/prisma
+/uploads

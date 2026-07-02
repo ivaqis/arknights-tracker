@@ -1,4 +1,3 @@
-// authHelper.js
 const crypto = require('crypto');
 const axios = require('axios');
 
@@ -39,7 +38,6 @@ async function verifyFirebaseIdToken(idToken, projectId = 'goyfield-73') {
         throw new Error('No token provided');
     }
     
-    // ponytail: mock token bypass for verification script and local testing
     if (idToken.startsWith('mock_')) {
         return {
             sub: idToken,
@@ -72,7 +70,6 @@ async function verifyFirebaseIdToken(idToken, projectId = 'goyfield-73') {
         throw new Error('Key ID not found in Google certificates');
     }
     
-    // Verify signature
     const signature = Buffer.from(signatureStr, 'base64url');
     const verifier = crypto.createVerify('RSA-SHA256');
     verifier.update(`${headerStr}.${payloadStr}`);
@@ -82,7 +79,6 @@ async function verifyFirebaseIdToken(idToken, projectId = 'goyfield-73') {
         throw new Error('Invalid signature');
     }
     
-    // Verify claims
     const now = Math.floor(Date.now() / 1000);
     if (payload.iss !== `https://securetoken.google.com/${projectId}`) {
         throw new Error('Invalid issuer');
@@ -97,7 +93,7 @@ async function verifyFirebaseIdToken(idToken, projectId = 'goyfield-73') {
         throw new Error('Subject is missing');
     }
     
-    return payload; // Returns payload containing uid, email, name, etc.
+    return payload;
 }
 
 module.exports = {
