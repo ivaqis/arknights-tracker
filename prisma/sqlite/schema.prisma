@@ -7,9 +7,77 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
+model FirebaseUser {
+    firebaseUid String   @id
+    createdAt   DateTime @default(now())
+
+    users User[]
+}
+
+model User {
+    uid             BigInt   @id @default(autoincrement())
+    firebaseUid     String?
+    isPrivate       Boolean  @default(false)
+    name            String?
+    avatarId        String?
+    backgroundId    String?
+    displayAvatar   Boolean  @default(true)
+    uploadCount     Int      @default(0)
+    lastUploadReset DateTime @default(now())
+    createdAt       DateTime @default(now())
+    updatedAt       DateTime @updatedAt
+
+    firebaseUser FirebaseUser? @relation(fields: [firebaseUid], references: [firebaseUid])
+
+    userGameProfiles UserGameProfile[]
+
+    @@index([firebaseUid])
+}
+
+model UserGameProfile {
+    gameUid String @id
+    uid     BigInt
+    data    String // json
+
+    user User @relation(fields: [uid], references: [uid])
+
+    userBannerProfile        UserBannerProfile?
+    userContractLeaderboards UserContractLeaderboard[]
+    userMonumentLeaderboards UserMonumentLeaderboard[]
+
+    @@index([uid])
+}
+
+model UserContractLeaderboard {
+    gameUid     String
+    eventId     String
+    clearTimeMs Int
+    data        String // json
+
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
+
+    @@id([gameUid, eventId])
+    @@index([eventId])
+}
+
+model UserMonumentLeaderboard {
+    gameUid     String
+    eventId     String
+    clearTimeMs Int
+    data        String // json
+
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
+
+    @@id([gameUid, eventId])
+    @@index([eventId])
+}
+
 model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
+    gameUid   String?  @unique
     createdAt DateTime @default(now())
+
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
     generatedTokens         GeneratedToken[]
     userBannerStats         UserBannerStat[]
@@ -17,6 +85,8 @@ model UserBannerProfile {
     userCharBannerTypePulls UserCharBannerTypePulls[]
     userCharBannerPulls     UserCharBannerPulls[]
     userWeaponBannerPulls   UserWeaponBannerPulls[]
+
+    @@index([gameUid])
 }
 
 model GeneratedToken {
@@ -126,12 +196,18 @@ model GlobalBannerStats {
     free5       Int      @default(0)
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
+
+    globalBannerTimelines   GlobalBannerTimeline[]
+    globalPityDistributions GlobalPityDistribution[]
+    globalItemStats         GlobalItemStats[]
 }
 
 model GlobalBannerTimeline {
     bannerId   String
     date       String // "YYYY-MM-DD"
     pullsCount Int    @default(0)
+
+    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
     @@id([bannerId, date])
 }
@@ -142,6 +218,8 @@ model GlobalPityDistribution {
     rarity   Int
     count    Int    @default(0)
 
+    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
+
     @@id([bannerId, pity, rarity])
 }
 
@@ -149,6 +227,8 @@ model GlobalItemStats {
     bannerId String
     itemId   String
     count    Int    @default(0)
+
+    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
     @@id([bannerId, itemId])
 }
