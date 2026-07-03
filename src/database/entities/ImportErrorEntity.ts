@@ -5,7 +5,7 @@ export interface ImportErrorEntity extends RecordEntity {
     createdAt: Date,
     url: string,
     message: string,
-    stack?: string,
-    serverId?: string,
+    stack: string | null,
+    serverId: string | null,
     solved: boolean
 }
