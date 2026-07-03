@@ -53,6 +53,7 @@ model UserContractLeaderboard {
     eventId     String
     clearTimeMs Int
     data        String // json
+    updatedAt   DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
@@ -65,6 +66,7 @@ model UserMonumentLeaderboard {
     eventId     String
     clearTimeMs Int
     data        String // json
+    updatedAt   DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
