@@ -2192,7 +2192,16 @@
     "all": "全部",
     "sync_with_game": "與遊戲同步",
     "no_essence": "無精華",
-    "copy_failed": "複製失敗"
+    "copy_failed": "複製失敗",
+    "no_weapon": "未裝備武器",
+    "primary_account_updated": "主遊戲帳戶已更新",
+    "privacy_settings_updated": "隱私設定已更新",
+    "login_failed": "登入失敗",
+    "name_empty_error": "使用者名稱不能為空",
+    "name_invalid_error": "使用者名稱包含無效字元！僅允許英文字母、數字和底線 _",
+    "profile_created": "個人資料建立成功",
+    "username_updated": "使用者名稱已更新",
+    "sync_success": "遊戲帳戶同步成功"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",

@@ -2148,7 +2148,16 @@
     "all": "全て",
     "sync_with_game": "ゲームと同期",
     "no_essence": "エッセンスなし",
-    "copy_failed": "コピー失敗"
+    "copy_failed": "コピー失敗",
+    "no_weapon": "武器を装備していません",
+    "primary_account_updated": "メインゲームアカウントが更新されました",
+    "privacy_settings_updated": "プライバシー設定が更新されました",
+    "login_failed": "ログインに失敗しました",
+    "name_empty_error": "ユーザー名を空にはできません",
+    "name_invalid_error": "無効な文字が含まれています！英字、数字、アンダースコア（_）のみ使用可能です",
+    "profile_created": "プロファイルが正常に作成されました",
+    "username_updated": "ユーザー名が更新されました",
+    "sync_success": "ゲームアカウントの同期に成功しました"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",

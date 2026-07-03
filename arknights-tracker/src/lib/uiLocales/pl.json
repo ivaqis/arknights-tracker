@@ -792,6 +792,15 @@
     "all": "Wszystkie",
     "sync_with_game": "Synchronizuj z grą",
     "no_essence": "Brak esencji",
-    "copy_failed": "Kopiowanie nieudane"
+    "copy_failed": "Kopiowanie nieudane",
+    "no_weapon": "Brak wyposażonej broni",
+    "primary_account_updated": "Główne konto gry zostało zaktualizowane",
+    "privacy_settings_updated": "Ustawienia prywatności zaktualizowane",
+    "login_failed": "Logowanie nie powiodło się",
+    "name_empty_error": "Nazwa użytkownika nie może być pusta",
+    "name_invalid_error": "Niedozwolony znak! Dozwolone są tylko angielskie litery, cyfry i _",
+    "profile_created": "Profil utworzony pomyślnie",
+    "username_updated": "Nazwa użytkownika zaktualizowana",
+    "sync_success": "Konto gry pomyślnie zsynchronizowane"
   }
 }

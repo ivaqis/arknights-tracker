@@ -684,7 +684,7 @@
                             </h1>
 
                             <div
-                                class="flex items-center shrink-0 mt-1 relative"
+                                class="flex items-center shrink-0 mt-2 relative"
                             >
                                 {#if !isEditingPot}
                                     <div
@@ -692,7 +692,7 @@
                                     >
                                         {#if isOwned}
                                             <div
-                                                class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
+                                                class="mr-1 bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
                                             >
                                                 R{currentPot}
                                             </div>
@@ -959,15 +959,9 @@
                         <button
                             on:click={() =>
                                 (isPotDropdownOpen = !isPotDropdownOpen)}
-                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[13px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
+                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
                         >
-                            <span
-                                class="font-medium text-gray-500 dark:text-gray-300 font-sans"
-                                >{tOrFallback(
-                                    "menu.potentials",
-                                    "Потенциал",
-                                )}</span>
-                            <span class="font-medium text-[#21272C] dark:text-white">R{previewPot}</span>
+                            <span class="text-[#21272C] dark:text-white">R{previewPot}</span>
                             <Icon
                                 name="arrowDown"
                                 class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
@@ -991,7 +985,7 @@
                                             isPotDropdownOpen = false;
                                         }}
                                     >
-                                        R{i + 1}
+                                        R{i}
                                     </button>
                                 {/each}
                             </div>

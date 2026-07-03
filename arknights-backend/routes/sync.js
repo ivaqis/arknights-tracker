@@ -12,10 +12,13 @@ const router = express.Router();
 const prisma = new PrismaClient();
 
 let bannedWords = new Set();
+let bannedRoots = [];
 
 async function loadBannedWords() {
     const listPath = path.join(__dirname, '../banned_words.txt');
     const localPath = path.join(__dirname, '../banned_words_local.txt');
+    const rootsPath = path.join(__dirname, '../banned_roots.txt'); // Путь к новому файлу
+
     if (!fs.existsSync(listPath)) {
         try {
             const res = await axios.get('https://raw.githubusercontent.com/censor-text/profanity-list/main/list/en.txt');
@@ -24,11 +27,7 @@ async function loadBannedWords() {
             console.error(e.message);
         }
     }
-    if (!fs.existsSync(localPath)) {
-        try {
-            fs.writeFileSync(localPath, 'custombannedwordexample\n');
-        } catch (e) {}
-    }
+
     try {
         if (fs.existsSync(listPath)) {
             const data = fs.readFileSync(listPath, 'utf8');
@@ -44,6 +43,13 @@ async function loadBannedWords() {
                 if (trimmed) bannedWords.add(trimmed);
             });
         }
+        if (fs.existsSync(rootsPath)) {
+            const data = fs.readFileSync(rootsPath, 'utf8');
+            data.split(/\r?\n/).forEach(w => {
+                const trimmed = w.trim().toLowerCase();
+                if (trimmed) bannedRoots.push(trimmed);
+            });
+        }
     } catch (e) {
         console.error(e.message);
     }
@@ -52,18 +58,38 @@ loadBannedWords();
 
 function checkProfanity(name) {
     if (!name) return false;
-    const tokens = name.toLowerCase().split(/[^a-z]+/);
+    
+    const lowerName = name.toLowerCase();
+
+    const normalized = lowerName
+        .replace(/1/g, 'i')
+        .replace(/3/g, 'e')
+        .replace(/4/g, 'a')
+        .replace(/0/g, 'o')
+        .replace(/@/g, 'a')
+        .replace(/5/g, 's');
+
+    for (const root of bannedRoots) {
+        if (normalized.includes(root)) {
+            return true;
+        }
+    }
+
+    const tokens = normalized.split(/[^a-z]+/);
     for (const token of tokens) {
         if (!token) continue;
+        
         if (bannedWords.has(token)) {
             return true;
         }
+
         for (const word of bannedWords) {
             if (word.length >= 4 && token.includes(word)) {
                 return true;
             }
         }
     }
+
     return false;
 }
 

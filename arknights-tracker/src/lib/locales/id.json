@@ -2148,7 +2148,16 @@
     "all": "Semua",
     "sync_with_game": "Sinkronkan dengan game",
     "no_essence": "Tidak ada esensi",
-    "copy_failed": "Gagal menyalin"
+    "copy_failed": "Gagal menyalin",
+    "no_weapon": "Tidak ada senjata yang dilengkapi",
+    "primary_account_updated": "Akun game utama diperbarui",
+    "privacy_settings_updated": "Pengaturan privasi diperbarui",
+    "login_failed": "Gagal masuk",
+    "name_empty_error": "Nama pengguna tidak boleh kosong",
+    "name_invalid_error": "Karakter tidak valid! Hanya huruf Inggris, angka, dan _ yang diizinkan",
+    "profile_created": "Profil berhasil dibuat",
+    "username_updated": "Nama pengguna diperbarui",
+    "sync_success": "Akun game berhasil disinkronkan"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiens: Overclock",

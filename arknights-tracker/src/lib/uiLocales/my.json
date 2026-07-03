@@ -792,6 +792,15 @@
     "all": "Semua",
     "sync_with_game": "Segerakkan dengan permainan",
     "no_essence": "Tiada pati",
-    "copy_failed": "Gagal menyalin"
+    "copy_failed": "Gagal menyalin",
+    "no_weapon": "Tiada senjata yang dilengkapi",
+    "primary_account_updated": "Akaun permainan utama dikemas kini",
+    "privacy_settings_updated": "Tetapan privasi dikemas kini",
+    "login_failed": "Log masuk gagal",
+    "name_empty_error": "Nama pengguna tidak boleh kosong",
+    "name_invalid_error": "Aksara tidak sah! Hanya huruf Inggeris, nombor dan garis bawah _ dibenarkan",
+    "profile_created": "Profil berjaya dicipta",
+    "username_updated": "Nama pengguna dikemas kini",
+    "sync_success": "Akaun permainan berjaya disegerakkan"
   }
 }

@@ -2147,7 +2147,16 @@
     "all": "Alle",
     "sync_with_game": "Mit Spiel synchronisieren",
     "no_essence": "Keine Essenz",
-    "copy_failed": "Kopieren fehlgeschlagen"
+    "copy_failed": "Kopieren fehlgeschlagen",
+    "no_weapon": "Keine Waffe ausgerüstet",
+    "primary_account_updated": "Haupt-Spielkonto aktualisiert",
+    "privacy_settings_updated": "Datenschutzeinstellungen aktualisiert",
+    "login_failed": "Anmeldung fehlgeschlagen",
+    "name_empty_error": "Benutzername darf nicht leer sein",
+    "name_invalid_error": "Ungültiges Zeichen! Nur englische Buchstaben, Zahlen und _ sind erlaubt",
+    "profile_created": "Profil erfolgreich erstellt",
+    "username_updated": "Benutzername aktualisiert",
+    "sync_success": "Spielkonto erfolgreich synchronisiert"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Umgebung: Übertakten",

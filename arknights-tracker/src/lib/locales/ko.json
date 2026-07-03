@@ -2148,7 +2148,16 @@
     "all": "모두",
     "sync_with_game": "게임과 동기화",
     "no_essence": "에센스 없음",
-    "copy_failed": "복사 실패"
+    "copy_failed": "복사 실패",
+    "no_weapon": "장착된 무기 없음",
+    "primary_account_updated": "기본 게임 계정이 업데이트되었습니다",
+    "privacy_settings_updated": "개인정보 보호 설정이 업데이트되었습니다",
+    "login_failed": "로그인 실패",
+    "name_empty_error": "사용자 이름은 비워둘 수 없습니다",
+    "name_invalid_error": "잘못된 문자입니다! 영문자, 숫자, 밑줄(_)만 허용됩니다",
+    "profile_created": "프로필이 성공적으로 생성되었습니다",
+    "username_updated": "사용자 이름이 업데이트되었습니다",
+    "sync_success": "게임 계정이 성공적으로 동기화되었습니다"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "환경: 과속",

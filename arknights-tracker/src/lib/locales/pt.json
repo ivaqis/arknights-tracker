@@ -2148,7 +2148,16 @@
     "all": "Todos",
     "sync_with_game": "Sincronizar",
     "no_essence": "Sem essência",
-    "copy_failed": "Falha ao copiar"
+    "copy_failed": "Falha ao copiar",
+    "no_weapon": "Nenhuma arma equipada",
+    "primary_account_updated": "Conta principal do jogo atualizada",
+    "privacy_settings_updated": "Configurações de privacidade atualizadas",
+    "login_failed": "Falha no login",
+    "name_empty_error": "O nome de usuário não pode estar vazio",
+    "name_invalid_error": "Caractere inválido! Apenas letras inglesas, números e _ são permitidos",
+    "profile_created": "Perfil criado com sucesso",
+    "username_updated": "Nome de usuário atualizado",
+    "sync_success": "Conta de jogo sincronizada com sucesso"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Overclock",

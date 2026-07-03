@@ -2148,7 +2148,16 @@
     "all": "Tous",
     "sync_with_game": "Synchroniser",
     "no_essence": "Pas d'essence",
-    "copy_failed": "Échec de la copie"
+    "copy_failed": "Échec de la copie",
+    "no_weapon": "Aucune arme équipée",
+    "primary_account_updated": "Compte de jeu principal mis à jour",
+    "privacy_settings_updated": "Paramètres de confidentialité mis à jour",
+    "login_failed": "Échec de la connexion",
+    "name_empty_error": "Le nom d'utilisateur ne peut pas être vide",
+    "name_invalid_error": "Caractère invalide ! Seules les lettres anglaises, les chiffres et _ sont autorisés",
+    "profile_created": "Profil créé avec succès",
+    "username_updated": "Nom d'utilisateur mis à jour",
+    "sync_success": "Compte de jeu synchronisé avec succès"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Environnement : Surcharge",

@@ -9,6 +9,7 @@
     import { weapons } from "$lib/data/weapons.js";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
     import ruEquip from "$lib/locales/ru/equipment.json";
     import enEquip from "$lib/locales/en/equipment.json";
     import { currentLocale } from "$lib/stores/locale.js";
@@ -23,6 +24,7 @@
     import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
+    import AsscentionIcon from "$lib/components/operators/AscensionIcon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
     import CropModal from "$lib/components/profile/CropModal.svelte";
@@ -116,7 +118,7 @@
             const token = await $user.getIdToken();
             const data = await registerProfile(token, profile.name, profile.picture, profile.is_private, bgId || null, profile.records_uid);
             profile.background = data.background;
-            addNotification("success", "Profile background updated!"); // Добавить перевод
+            addNotification("success", $t("profile.background_updated") || "Profile background updated!");
         } catch (e) {
             addNotification("error", e.message);
         }
@@ -143,7 +145,7 @@
                 }
             });
             profile = { ...profile, details };
-            addNotification("success", "Primary game account updated!"); // Добавить перевод
+            addNotification("success", $t("profile.primary_account_updated") || "Primary game account updated!");
         } catch (e) {
             console.error("[handleSelectRecordsUid] Error:", e);
             addNotification("error", e.message);
@@ -233,13 +235,6 @@
             class: mapProfessionToClass(char.charData?.profession?.key) || "guard",
             element: mapPropertyToElement(char.charData?.property?.key) || null
         };
-    }
-
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#F4700C";
-        if (rarity === 5) return "#F9B90C";
-        if (rarity === 4) return "#9253F1";
-        return "#888";
     }
 
     const weaponIdMap = {
@@ -401,7 +396,7 @@
             const data = await registerProfile(token, profile.name, profile.picture, nextPrivateVal, profile.background, profile.records_uid);
             profile.is_private = data.is_private;
             isPrivate = data.is_private === 1;
-            addNotification("success", "Privacy settings updated!"); // Добавить перевод
+            addNotification("success", $t("profile.privacy_settings_updated") || "Privacy settings updated!");
         } catch (e) {
             addNotification("error", e.message);
         }
@@ -683,14 +678,14 @@
         try {
             await login();
         } catch (e) {
-            addNotification("error", "Login failed"); // Добавить перевод
+            addNotification("error", $t("profile.login_failed") || "Login failed");
         }
     }
 
     async function handleRegister() {
         const trimmed = newProfileName.trim();
         if (!trimmed) {
-            addNotification("error", "Username cannot be empty"); // Добавить перевод
+            addNotification("error", $t("profile.name_empty_error") || "Username cannot be empty");
             return;
         }
         if (trimmed.length < 3 || trimmed.length > 20) {
@@ -698,7 +693,7 @@
             return;
         }
         if (!/^[a-zA-Z0-9_]+$/.test(trimmed)) {
-            addNotification("error", $t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed.");
+            addNotification("error", $t("profile.name_invalid_error") || "Invalid character! Only English letters, numbers, and _ are allowed.");
             return;
         }
         try {
@@ -707,7 +702,7 @@
             const data = await registerProfile(token, trimmed, localAvatar || null);
             profile = { ...data, details: [] };
             needsRegistration = false;
-            addNotification("success", "Profile created successfully!"); // Добавить перевод
+            addNotification("success", $t("profile.profile_created") || "Profile created successfully");
         } catch (e) {
             addNotification("error", e.message);
         } finally {
@@ -723,11 +718,11 @@
             return;
         }
         if (trimmed.length < 3 || trimmed.length > 20) {
-            addNotification("error", $t("profile.name_length_error") || "Username must be between 3 and 20 characters long.");
+            addNotification("error", $t("profile.name_length_error") || "Username must be between 3 and 20 characters long");
             return;
         }
         if (!/^[a-zA-Z0-9_]+$/.test(trimmed)) {
-            addNotification("error", $t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed.");
+            addNotification("error", $t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed");
             return;
         }
         try {
@@ -735,7 +730,7 @@
             const data = await registerProfile(token, trimmed, profile.picture, profile.is_private, profile.background, profile.records_uid);
             profile.name = data.name;
             isEditingName = false;
-            addNotification("success", "Username updated!"); // Добавить перевод
+            addNotification("success", $t("profile.username_updated") || "Username updated");
         } catch (e) {
             addNotification("error", e.message);
         }
@@ -875,7 +870,7 @@
                 selectedGameUid = profile.details[0].game_uid;
             }
             syncModalOpen = false;
-            addNotification("success", "Game account synced successfully!"); // Добавить перевод
+            addNotification("success", $t("profile.sync_success") || "Game account synced successfully");
             onSuccess?.(false);
         } catch (err) {
             addNotification("error", err.message);
@@ -992,8 +987,8 @@
                     <input type="file" accept="image/*" class="hidden" bind:this={avatarInput} on:change={handleFileChange} />
                 </div>
 
-                <div class="w-full mb-6 relative pb-6">
-                    <label class="block text-xs uppercase tracking-wider dark:text-gray-400 text-gray-600 font-bold mb-2" for="reg-username">
+                <div class="w-full mb-6 mt-2 relative pb-6">
+                    <label class="block text-sm dark:text-gray-400 text-gray-600 font-bold mb-2" for="reg-username">
                         {$t("profile.register_name")}
                     </label>
                     <input
@@ -1001,26 +996,31 @@
                         type="text"
                         value={newProfileName}
                         on:input={handleNameInput}
-                        placeholder="e.g. ivawa"
+                        placeholder="e.g. user69"
                         class="w-full bg-white/5 border border-white/10 text-white rounded-lg px-4 py-3 outline-none focus:border-[#FFE145] transition-colors font-mono"
                     />
                     {#if showNameWarning}
-                        <p class="absolute bottom-0 left-0 text-xs text-orange-400 font-sans w-full" transition:fade>
+                        <p class="absolute text-xs text-orange-400 font-sans w-full mt-2" transition:fade>
                             {$t("profile.name_validation_error") || "Invalid character! Only English letters, numbers, and _ are allowed."}
                         </p>
                     {:else}
-                        <p class="absolute bottom-0 left-0 text-xs text-gray-400 font-sans w-full">
+                        <p class="absolute text-xs text-gray-400 font-sans w-full mt-2">
                             {$t("profile.name_validation_hint") || "Only English letters, numbers, and underscores (_) are allowed."}
                         </p>
                     {/if}
                 </div>
 
-                <button
-                    on:click={handleRegister}
-                    class="w-full py-3 bg-[#FFE145] hover:bg-[#ebd03e] text-gray-900 font-bold rounded-lg transition-colors font-sdk"
+                <Button
+                    variant="yellow"
+                    color="gray"
+                    onClick={handleRegister}
+                    className="w-full !p-3 !h-12 !px-0 flex items-center justify-center font-nums mt-2"
                 >
+                    <div slot="icon">
+                        <Icon name="save" class="w-6 h-6" />
+                    </div>
                     {$t("profile.register_btn")}
-                </button>
+                </Button>
             </div>
         </div>
     {:else if profile}
@@ -1351,7 +1351,7 @@
                                                                 <span class="text-[16px] text-white font-nums font-black leading-none" style="text-shadow: 1px 1px 0 #111;">
                                                                     {char.weapon.level}
                                                                 </span>
-                                                                <div class="w-6 h-[2px] bg-[#E3A000] mt-0.5 rounded"></div>
+                                                                <div class="w-6 h-[2px] mt-0.5 rounded" style="background-color: {getRarityColor(char.weapon.rarity)}"></div>
                                                             </div>
                                                         </div>
 
@@ -1480,27 +1480,30 @@
                                                     <div class="z-10">
                                                         <div class="flex flex-col gap-2 mb-2">
                                                             <div class="flex items-start justify-between w-full gap-2">
-                                                                <div class="flex flex-col gap-2">
-                                                                    <div class="flex items-center gap-2">
-                                                                        {#if opData.class}
-                                                                            <Tooltip text={$t(`classes.${opData.class}`)}>
-                                                                                <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
-                                                                                    <Icon name={opData.class} class="w-10 h-10 text-white rounded-md" />
-                                                                                </div>
-                                                                            </Tooltip>
-                                                                        {/if}
-                                                                    
-                                                                        {#if opData.element}
-                                                                            <Tooltip text={$t(`elements.${opData.element}`)}>
-                                                                                <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
-                                                                                    <Icon name={opData.element} class="w-10 h-10 text-white rounded-md" />
-                                                                                </div>
-                                                                            </Tooltip>
-                                                                        {/if}
+                                                                <div class="flex flex-col gap-2 w-full">
+                                                                    <div class="flex items-center justify-between w-full">
+                                                                        
+                                                                        <div class="flex items-center gap-2">
+                                                                            {#if opData.class}
+                                                                                <Tooltip text={$t(`classes.${opData.class}`)}>
+                                                                                    <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                                        <Icon name={opData.class} class="w-10 h-10 text-white rounded-md" />
+                                                                                    </div>
+                                                                                </Tooltip>
+                                                                            {/if}
+                                                                        
+                                                                            {#if opData.element}
+                                                                                <Tooltip text={$t(`elements.${opData.element}`)}>
+                                                                                    <div class="w-10 h-10 rounded flex items-center justify-center shadow-sm">
+                                                                                        <Icon name={opData.element} class="w-10 h-10 text-white rounded-md" />
+                                                                                    </div>
+                                                                                </Tooltip>
+                                                                            {/if}
 
-                                                                        <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-xl leading-none" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
-                                                                            {$t(`characters.${opData.id}`) || opData.name}
-                                                                        </h3>
+                                                                            <h3 class="pl-1 text-3xl font-sdk font-black text-white tracking-tight drop-shadow-xl leading-none" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                                                                {$t(`characters.${opData.id}`) || opData.name}
+                                                                            </h3>
+                                                                        </div>
 
                                                                         <Tooltip text="P{Math.max(1, (selectedChar.potential || 1)) - 1}">
                                                                             <PotentialIcon pot={Math.max(0, (selectedChar.potential || 1) - 1)} size={50} className="ml-1 pt-2" />
@@ -1509,24 +1512,14 @@
 
                                                                     <div class="flex items-center gap-0 -space-x-2 ml-[-3px]">
                                                                         {#each Array(opData.rarity || 1) as _}
-                                                                            <Icon
-                                                                                name="strokeStar"
-                                                                                class="w-10 h-10"
-                                                                                style="color: white; stroke-opacity: 20%"
-                                                                            />
+                                                                            <Icon name="strokeStar" class="w-10 h-10" style="color: white; stroke-opacity: 20%" />
                                                                         {/each}
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="flex flex-col items-center select-none shrink-0">
-                                                                    <div class="flex flex-col items-start leading-none">
-                                                                        <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                                                        <span class="text-[52px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="flex justify-between items-end mt-auto z-10">
+                                                            <div class="flex flex-row items-end gap-3">
                                                             <div class="flex flex-col gap-1.5">
                                                                 {#each ["basicAttack", "battleSkill", "comboSkill", "ultimate"] as skillKey, idx}
                                                                     {@const skillMeta = Array.isArray(targetCharData?.skills)
@@ -1602,6 +1595,17 @@
                                                                 {/each}
                                                             </div>
 
+                                                            <div class="flex flex-row items-end gap-3 shrink-0">
+                                                                <div class="flex flex-col items-start select-none justify-end pb-1">
+                                                                    <div class="flex items-baseline gap-1.5">
+                                                                        <span class="text-[11px] font-bold text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                                                        <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/90</span></span>
+                                                                    </div>
+                                                                </div>
+                                                                <!--<AsscentionIcon ascension={Math.min(4, Math.floor(selectedChar.level / 20))} size={46} className="" />-->
+                                                            </div>
+                                                            </div>
+
                                                             <div class="flex flex-col gap-3 items-end justify-center">
                                                                 {#if talentsList && talentsList.length > 0}
                                                                     {#each talentsList as talent}
@@ -1672,7 +1676,7 @@
                                                                 <div class="flex flex-col items-start leading-none select-none">
                                                                     <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
                                                                     <span class="text-[36px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
-                                                                    <div class="w-12 h-[3px] bg-[#FFE145] mt-1 rounded"></div>
+                                                                    <div class="w-12 h-[4px] mt-1 rounded" style="background-color: {getRarityColor(wpnStatic?.rarity || wpn.rarity || 5)};"></div>
                                                                 </div>
                                                             </div>
 
@@ -1704,7 +1708,9 @@
                                                             <div class="flex items-center shrink-0 ml-2">
                                                                 <div class="relative w-[120px] h-[120px] flex items-center justify-center shrink-0">
                                                                     <div class="absolute top-0 right-0 z-10">
-                                                                        <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+                                                                        <Tooltip text="R{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}">
+                                                                            <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+                                                                        </Tooltip>
                                                                     </div>
                                                                     <img 
                                                                         src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
@@ -1719,10 +1725,10 @@
                                                                 </div>
                                                                 
                                                                 {#if wpnTerms && wpnTerms.length > 0}
-                                                                    <div class="flex flex-col gap-2 shrink-0 items-center justify-center ml-2 select-none">
+                                                                    <div class="flex flex-col gap-1 shrink-0 items-center justify-center ml-2 select-none">
                                                                         <div class="flex flex-col gap-1 w-full">
                                                                             {#each wpnTerms as term}
-                                                                                <div class="flex items-center gap-1.5 px-2 py-1 rounded bg-black/45 border border-white/10 shadow-sm w-full justify-center">
+                                                                                <div class="flex items-center gap-1.5 px-2 py-1 rounded shadow-sm w-full justify-center" style="background: linear-gradient(to right, #1C1C1C, #2D2D2B);">
                                                                                     <div class="w-[5px] h-[12px] rounded-full transform rotate-[40deg] bg-[#FFE145] border-[#FFE145] shrink-0"></div>
                                                                                     <span class="text-[12px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
                                                                                 </div>
@@ -1734,10 +1740,10 @@
                                                                                 {@const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : (wpn.gem.gemData.templateId === "item_gem_rarity_4" ? 4 : 3)}
                                                                                 {@const gemColor = getRarityColor(gemRarity)}
                                                                                 <Tooltip text={wpn.gem.gemData.name}>
-                                                                                    <div class="relative w-8 h-8 rounded-full border flex items-center justify-center bg-black/40 shadow-inner overflow-hidden group hover:scale-105 transition-transform cursor-pointer" 
-                                                                                         style="border-color: {gemColor}; box-shadow: 0 0 8px {gemColor}33;">
+                                                                                    <div class="relative w-8 h-8 rounded-md border-b flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform cursor-pointer" 
+                                                                                         style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
                                                                                         {#if wpn.gem.gemData.icon}
-                                                                                            <img src={wpn.gem.gemData.icon} alt={wpn.gem.gemData.name} class="w-7 h-7 object-contain" />
+                                                                                            <img src={wpn.gem.gemData.icon} alt={wpn.gem.gemData.name} referrerpolicy="no-referrer" class="w-7 h-7 object-contain" />
                                                                                         {:else}
                                                                                             <div class="w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
                                                                                         {/if}
@@ -1745,10 +1751,8 @@
                                                                                 </Tooltip>
                                                                             {:else}
                                                                                 <Tooltip text={$t("profile.no_essence") || "No essence"}>
-                                                                                    <div class="relative w-8 h-8 rounded-full border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
-                                                                                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4" />
-                                                                                        </svg>
+                                                                                    <div class="relative w-8 h-8 rounded-md border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
+                                                                                        <Icon name="noData" class="shrink-0 w-3 h-3" />
                                                                                     </div>
                                                                                 </Tooltip>
                                                                             {/if}
@@ -1759,8 +1763,9 @@
                                                             
                                                         </div>
                                                     {:else}
-                                                        <div class="bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
-                                                            No Weapon Equipped
+                                                        <div class="flex flex-col gap-2 items-center justify-center bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
+                                                            <Icon name="noData" class="shrink-0 w-6 h-6" />
+                                                            {$t("profile.no_weapon") || "No weapon"}
                                                         </div>
                                                     {/if}
 
@@ -1932,6 +1937,5 @@
         on:confirm={confirmDeleteAccount}
         on:close={() => (showDeleteAccountModal = false)}
     />
-
 
 </div>

@@ -2192,7 +2192,16 @@
     "all": "Tất cả",
     "sync_with_game": "Đồng bộ với game",
     "no_essence": "Không có tinh hoa",
-    "copy_failed": "Sao chép thất bại"
+    "copy_failed": "Sao chép thất bại",
+    "no_weapon": "Chưa trang bị vũ khí",
+    "primary_account_updated": "Đã cập nhật tài khoản game chính",
+    "privacy_settings_updated": "Đã cập nhật cài đặt quyền riêng tư",
+    "login_failed": "Đăng nhập thất bại",
+    "name_empty_error": "Tên người dùng không được để trống",
+    "name_invalid_error": "Ký tự không hợp lệ! Chỉ cho phép chữ cái tiếng Anh, số và dấu gạch dưới _",
+    "profile_created": "Đã tạo hồ sơ thành công",
+    "username_updated": "Đã cập nhật tên người dùng",
+    "sync_success": "Đã đồng bộ tài khoản game thành công"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Môi Trường: Quá Tải",

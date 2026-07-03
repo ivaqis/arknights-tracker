@@ -792,6 +792,15 @@
     "all": "Kaikki",
     "sync_with_game": "Synkronoi",
     "no_essence": "Ei esanssia",
-    "copy_failed": "Kopiointi epäonnistui"
+    "copy_failed": "Kopiointi epäonnistui",
+    "no_weapon": "Ei varustettua asetta",
+    "primary_account_updated": "Ensisijainen pelitili päivitetty",
+    "privacy_settings_updated": "Yksityisyysasetukset päivitetty",
+    "login_failed": "Kirjautuminen epäonnistui",
+    "name_empty_error": "Käyttäjätunnus ei voi olla tyhjä",
+    "name_invalid_error": "Virheellinen merkki! Vain englannin kirjaimet, numerot ja alaviiva _ ovat sallittuja",
+    "profile_created": "Profiili luotiin onnistuneesti",
+    "username_updated": "Käyttäjätunnus päivitetty",
+    "sync_success": "Pelitili synkronoitu onnistuneesti"
   }
 }

@@ -2150,7 +2150,16 @@
     "all": "Todos",
     "sync_with_game": "Sincronizar con el juego",
     "no_essence": "Sin esencia",
-    "copy_failed": "Error al copiar"
+    "copy_failed": "Error al copiar",
+    "no_weapon": "Sin arma equipada",
+    "primary_account_updated": "Cuenta principal de juego actualizada",
+    "privacy_settings_updated": "Ajustes de privacidad actualizados",
+    "login_failed": "Error al iniciar sesión",
+    "name_empty_error": "El nombre de usuario no puede estar vacío",
+    "name_invalid_error": "¡Carácter inválido! Solo se permiten letras inglesas, números y _",
+    "profile_created": "Perfil creado con éxito",
+    "username_updated": "Nombre de usuario actualizado",
+    "sync_success": "Cuenta de juego sincronizada con éxito"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Sobreaceleración",

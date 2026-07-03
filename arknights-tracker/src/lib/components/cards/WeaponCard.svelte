@@ -7,10 +7,12 @@
     import { accountStore } from "$lib/stores/accounts.js";
     import { disableDarkening } from "$lib/stores/settings.js";
     import { changelogData } from "$lib/data/versions.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Image from "$lib/components/Image.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Icon from "$lib/components/Icon.svelte";
+    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
 
     export let weapon = {};
     export let variant = "default"; // "default" | "small"
@@ -84,14 +86,6 @@
 
     let isHovered = false;
 
-    function getRarityColor(rarity) {
-        if (rarity === 6) return "#F4700C"; // Orange
-        if (rarity === 5) return "#F9B90C"; // Gold
-        if (rarity === 4) return "#9253F1"; // Purple
-        if (rarity === 3) return "#25B9F9"; // Blue
-        if (rarity === 2) return "#A5B100"; // Green
-        return "#8F8F8F";
-    }
 
     $: safeRarity = weapon?.rarity || 1;
     $: rarityColor = getRarityColor(safeRarity);
@@ -155,14 +149,6 @@
     })();
     $: shouldDarken =
         !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
-
-    const potPaths = [
-        "M35.3769 14.521L43.8763 14.4792L10.06 39.0583L2.11523 38.4865L35.3769 14.521Z",
-        "M20.1176 23.9788L22.9078 15.9502L34.827 56.0203L31.6429 63.3215L20.1176 23.9788Z",
-        "M24.2399 42.7944L17.3306 37.8443L59.1357 37.7639L65.2359 42.8858L24.2399 42.7944Z",
-        "M44.879 41.6553L38.1667 46.8695L49.9912 6.77135L56.6378 2.38173L44.879 41.6553Z",
-        "M49.8633 25.9639L52.5508 34.0273L18.6602 9.55078L16.7285 1.82324L49.8633 25.9639Z",
-    ];
 
     function tooltipOnlyOnOverflow(node, text) {
         const checkOverflow = () => {
@@ -300,30 +286,7 @@
                     class="absolute z-20 right-1 top-1 pointer-events-auto blur-[0.2px] shadow-black"
                 >
                     <Tooltip text={`R${currentPot}`} class="">
-                        <svg
-                            viewBox="0 0 66 65"
-                            fill="none"
-                            class="w-7 h-7 transition-all cursor-pointer duration-300 {isMaxPot
-                                ? 'drop-shadow-[0_0_8px_rgba(254,222,40,0.8)]'
-                                : ''}"
-                            style="shape-rendering: geometricPrecision;"
-                        >
-                            {#each potPaths as d, i}
-                                {@const isActive = i < constCount}
-                                <path
-                                    {d}
-                                    fill={isActive ? "#FEDE28" : "black"}
-                                    stroke={isMaxPot
-                                        ? "white"
-                                        : isActive
-                                          ? "#E5D32B"
-                                          : "white"}
-                                    stroke-width="1.5"
-                                    stroke-linejoin="round"
-                                    class="transition-colors duration-300"
-                                />
-                            {/each}
-                        </svg>
+                        <PotentialIcon pot={currentPot !== undefined ? currentPot : 0} size={30} />
                     </Tooltip>
                 </div>
             {/if}

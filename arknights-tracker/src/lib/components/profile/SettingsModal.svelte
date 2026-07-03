@@ -97,7 +97,7 @@
                         {profile?.background === bg.id ? 'border-[#FFE145] bg-[#FFE145]/5' : 'border-transparent hover:border-gray-300 dark:hover:border-white/20'}"
                     >
                         <div class="w-full aspect-video bg-neutral-800 relative overflow-hidden">
-                            <Image id={bg.id} variant="operator-art" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                            <Image id="{bg.id}.webp" variant="operator-art-lq" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                             <div class="absolute top-0.5 left-0.5 bg-black/60 text-white text-[8px] font-bold px-1 py-0.2 rounded leading-none">
                                 P{bg.pot}
                             </div>

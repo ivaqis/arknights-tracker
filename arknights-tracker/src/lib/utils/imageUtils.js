@@ -86,9 +86,18 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'operator-art':
             return `/images/operators/arts/${withExt(name)}`;
+
+        case 'operator-art-lq':
+            return `/images/operators/artsLQ/${withExt(name)}`;
             
         case 'contract-tag-icon':
             return `/images/crisisContract/tags/icon_${withExt(name)}`;
+
+        case 'essence-icon':
+            return `/images/essences/${withExt(name)}`;
+
+        case 'essence-type-icon':
+            return `/images/essencesTypes/${withExt(name)}`;
 
         case 'operator-icon':
         default:

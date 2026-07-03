@@ -2148,7 +2148,16 @@
     "all": "Tutti",
     "sync_with_game": "Sincronizza con il gioco",
     "no_essence": "Nessuna essenza",
-    "copy_failed": "Copia non riuscita"
+    "copy_failed": "Copia non riuscita",
+    "no_weapon": "Nessuna arma equipaggiata",
+    "primary_account_updated": "Account di gioco principale aggiornato",
+    "privacy_settings_updated": "Impostazioni sulla privacy aggiornate",
+    "login_failed": "Accesso non riuscito",
+    "name_empty_error": "Il nome utente non può essere vuoto",
+    "name_invalid_error": "Carattere non valido! Sono ammessi solo lettere inglesi, numeri e _",
+    "profile_created": "Profilo creato con successo",
+    "username_updated": "Nome utente aggiornato",
+    "sync_success": "Account di gioco sincronizzato con successo"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: sovraccarico",

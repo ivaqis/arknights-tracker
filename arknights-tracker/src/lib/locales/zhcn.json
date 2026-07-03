@@ -2192,7 +2192,16 @@
     "all": "全部",
     "sync_with_game": "与游戏同步",
     "no_essence": "无精华",
-    "copy_failed": "复制失败"
+    "copy_failed": "复制失败",
+    "no_weapon": "未装备武器",
+    "primary_account_updated": "主游戏账户已更新",
+    "privacy_settings_updated": "隐私设置已更新",
+    "login_failed": "登录失败",
+    "name_empty_error": "用户名不能为空",
+    "name_invalid_error": "用户名包含无效字符！仅允许英文字母、数字和下划线 _",
+    "profile_created": "个人资料创建成功",
+    "username_updated": "用户名已更新",
+    "sync_success": "游戏账户同步成功"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "环境：过速",

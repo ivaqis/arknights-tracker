@@ -2148,7 +2148,16 @@
     "all": "ทั้งหมด",
     "sync_with_game": "ซิงค์กับเกม",
     "no_essence": "ไม่มีแก่นแท้",
-    "copy_failed": "คัดลอกล้มเหลว"
+    "copy_failed": "คัดลอกล้มเหลว",
+    "no_weapon": "ไม่ได้สวมใส่อาวุธ",
+    "primary_account_updated": "อัปเดตบัญชีเกมหลักแล้ว",
+    "privacy_settings_updated": "อัปเดตการตั้งค่าความเป็นส่วนตัวแล้ว",
+    "login_failed": "เข้าสู่ระบบล้มเหลว",
+    "name_empty_error": "ชื่อผู้ใช้ไม่สามารถเว้นว่างได้",
+    "name_invalid_error": "อักขระไม่ถูกต้อง! อนุญาตเฉพาะตัวอักษรภาษาอังกฤษ ตัวเลข และ _ เท่านั้น",
+    "profile_created": "สร้างโปรไฟล์สำเร็จแล้ว",
+    "username_updated": "อัปเดตชื่อผู้ใช้แล้ว",
+    "sync_success": "ซิงค์บัญชีเกมสำเร็จแล้ว"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "สภาพแวดล้อม​: โอเวอร์​ค​ล็อก",
