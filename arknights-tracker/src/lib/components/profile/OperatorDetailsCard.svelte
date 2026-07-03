@@ -8,6 +8,7 @@
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
+    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     export let selectedChar;
     export let detailedChar;
@@ -23,6 +24,107 @@
     export let getEquipRarity;
     export let getEquipTier;
     export let getStatIcon;
+    export let charDetails = null;
+    export let charLocale = null;
+
+    function getSkillDescription(skillKey, skillLvl) {
+        const skillData = charLocale?.skills?.[skillKey] || {};
+        let text = skillData.description;
+        if (!text) {
+            const skillMeta = Array.isArray(targetCharData?.skills) 
+                ? targetCharData.skills.find(s => s.key === skillKey || s.id?.includes(skillKey)) 
+                : targetCharData?.skills?.[skillKey];
+            text = skillMeta?.desc || skillMeta?.description || "";
+        }
+        if (!text) return "";
+
+        const skillValues = charDetails?.skills?.[skillKey] || {};
+        const blackboard = charDetails?.blackboard || {};
+
+        text = text.replace(
+            /\{(-?[a-zA-Z0-9_\.]+)(?::([^}]+))?\}/g,
+            (match, rawKey, format) => {
+                const isNegative = rawKey.startsWith("-");
+                const cleanKey = isNegative ? rawKey.substring(1) : rawKey;
+                const lowerKey = cleanKey.toLowerCase();
+
+                let foundRaw = null;
+                if (skillValues) {
+                    const fk = Object.keys(skillValues).find(
+                        (k) => k.toLowerCase() === lowerKey,
+                    );
+                    if (fk) foundRaw = skillValues[fk];
+                }
+                if (foundRaw === null || foundRaw === undefined) {
+                    if (blackboard) {
+                        for (const subSkill of Object.values(blackboard)) {
+                            if (subSkill && typeof subSkill === "object") {
+                                const fk = Object.keys(subSkill).find(
+                                    (k) => k.toLowerCase() === lowerKey,
+                                );
+                                if (fk) {
+                                    foundRaw = subSkill[fk];
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (foundRaw === null || foundRaw === undefined) return match;
+                let num = 0;
+                let isPercentData = false;
+                if (
+                    typeof foundRaw === "object" &&
+                    !Array.isArray(foundRaw) &&
+                    Array.isArray(foundRaw.data)
+                ) {
+                    const idx = Math.min(skillLvl - 1, foundRaw.data.length - 1);
+                    num = parseFloat(foundRaw.data[idx]);
+                    if (foundRaw.dataType === "percent") isPercentData = true;
+                } else if (Array.isArray(foundRaw)) {
+                    const idx = Math.min(skillLvl - 1, foundRaw.length - 1);
+                    num = parseFloat(foundRaw[idx]);
+                } else {
+                    num = parseFloat(foundRaw);
+                }
+                if (isNaN(num)) return match;
+                if (isNegative) num = -num;
+                let result = num;
+                if (format) {
+                    if (format.includes("%"))
+                        result = Math.round(num * 100) + "%";
+                    else if (format === "0") result = Math.round(num);
+                    else if (format === "0.0") result = num.toFixed(1);
+                    else result = parseFloat(num.toFixed(2));
+                } else {
+                    if (isPercentData)
+                        result = parseFloat((num * 100).toFixed(2)) + "%";
+                    else result = parseFloat(num.toFixed(2));
+                }
+
+                return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
+            }
+        );
+
+        return text;
+    }
+
+    function getGemIcon(gemData) {
+        if (!gemData) return "";
+        if (gemData.iconId) return gemData.iconId;
+        const id = gemData.id || "";
+        const match = id.match(/_(\d+)_/);
+        if (match) {
+            const num = parseInt(match[1], 10);
+            return `icon_wpngem_${String(num).padStart(2, '0')}`;
+        }
+        const fallbackMatch = id.match(/(\d+)/);
+        if (fallbackMatch) {
+            const num = parseInt(fallbackMatch[1], 10);
+            return `icon_wpngem_${String(num).padStart(2, '0')}`;
+        }
+        return "";
+    }
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
@@ -67,7 +169,7 @@
 
                                 <div class="flex items-center gap-0 -space-x-2 ml-[-3px]">
                                     {#each Array(opData.rarity || 1) as _}
-                                        <Icon name="strokeStar" class="w-10 h-10" style="color: white; stroke-opacity: 20%" />
+                                        <Icon name="strokeStar" class="w-10 h-10 text-gray-600 dark:text-white" style="stroke-opacity: 20%" />
                                     {/each}
                                 </div>
                             </div>
@@ -83,55 +185,65 @@
                                 {#if skillMeta}
                                     {@const skillLvl = detailedChar?.userSkills?.[skillMeta.id]?.level || 1}
                                     {@const skillImageId = skillKey === "basicAttack" ? (opData?.weapon || "sword") : `${svelteId}_${skillKey}`}
-                                    {@const currentElement = targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
+                                    {@const currentElement = skillMeta?.property?.key?.replace("skill_property_", "") || targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
                                     {@const currentColor = getHexColorByElement(currentElement) || "#5E5D5D"}
                                     {@const isUltimate = skillKey === "ultimate"}
                                     
-                                    <div class="flex flex-col items-center group relative">
-                                        <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
-                                            <div
-                                                class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
-                                                style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
-                                                mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-                                                -webkit-mask-composite: destination-out;
-                                                mask-composite: exclude;"
-                                            ></div>
-                                            
-                                            <div class="w-[82%] h-[82%] rounded-full bg-black/35 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
-                                                {#if isUltimate}
-                                                    <div class="absolute inset-0" style="background-color: {currentColor}"></div>
-                                                {:else}
-                                                    <div class="absolute inset-0" style="background-color: {currentColor}; clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"></div>
-                                                {/if}
-                                                <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
-                                                    <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="absolute left-16 top-1/2 -translate-y-1/2 bg-black/95 text-white px-2 py-1 rounded text-[10px] hidden group-hover:block z-30 border border-white/10 whitespace-nowrap shadow-xl">
-                                            <span class="font-bold">{$t(`menu.${skillKey}`) || skillKey}:</span> {skillMeta.name || "Skill"}
-                                        </div>
-
-                                        <div class="flex items-center justify-center select-none mt-[-10px]">
-                                            {#if skillLvl >= 10}
-                                                <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex flex-col items-center justify-center scale-95 shadow-md z-10 relative">
-                                                    <div class="flex flex-col items-center mt-[-1px]">
-                                                        <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                        <div class="flex">
-                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
-                                                        </div>
+                                    <Tooltip>
+                                        <div class="flex flex-col items-center group relative cursor-pointer">
+                                            <div class="w-14 h-14 shrink-0 flex items-center justify-center relative">
+                                                <div
+                                                    class="absolute inset-0 rounded-full border-[2.5px] border-transparent"
+                                                    style="background: conic-gradient(from 225deg, #d1d5db 270deg, transparent 0deg) border-box;
+                                                    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+                                                    -webkit-mask-composite: destination-out;
+                                                    mask-composite: exclude;"
+                                                ></div>
+                                                
+                                                <div class="w-[82%] h-[82%] rounded-full bg-black/35 relative overflow-hidden flex items-center justify-center border border-white/5 shadow-md">
+                                                    {#if isUltimate}
+                                                        <div class="absolute inset-0" style="background-color: {currentColor}"></div>
+                                                    {:else}
+                                                        <div class="absolute inset-0" style="background-color: {currentColor}; clip-path: polygon(50% 50%, -100% 100%, 200% 100%);"></div>
+                                                    {/if}
+                                                    <div class="relative z-10 w-[85%] h-[85%] flex items-center justify-center">
+                                                        <Image id={skillImageId} variant="skill-icon" className="w-full h-full object-contain filter drop-shadow" />
                                                     </div>
                                                 </div>
-                                            {:else}
-                                                <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex items-center justify-center shadow-md z-10 relative">
-                                                    <span class="text-xs font-black text-white/90 font-nums mt-[1px]">{skillLvl}</span>
-                                                </div>
-                                            {/if}
+                                            </div>
+
+                                            <div class="flex items-center justify-center select-none mt-[-10px]">
+                                                {#if skillLvl >= 10}
+                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex flex-col items-center justify-center scale-95 shadow-md z-10 relative">
+                                                        <div class="flex flex-col items-center mt-[-1px]">
+                                                            <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 0 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
+                                                            <div class="flex">
+                                                                <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 1 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
+                                                                <svg width="7" height="7" viewBox="0 0 24 24"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" fill={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.1)"} stroke={(skillLvl - 9) > 2 ? "#FFFFFF" : "rgba(255,255,255,0.25)"} stroke-width="2.5" /></svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                {:else}
+                                                    <div class="w-6 h-6 rounded-full bg-black/60 border border-white/10 flex items-center justify-center shadow-md z-10 relative">
+                                                        <span class="text-xs font-black text-white/90 font-nums mt-[1px]">{skillLvl}</span>
+                                                    </div>
+                                                {/if}
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div slot="content" class="flex flex-col gap-1 text-left max-w-[280px]" use:hyperlinkAction>
+                                            <div class="flex items-center gap-1.5 border-b border-white/10 pb-1 mb-1 font-sans">
+                                                <span class="px-1.5 py-0.5 bg-white/10 text-white rounded text-[10px] font-bold">
+                                                    {$t(`menu.${skillKey}`) || skillKey}
+                                                </span>
+                                                <span class="font-bold text-[#FFE145]">{charLocale?.skills?.[skillKey]?.name || skillMeta.name || "Skill"}</span>
+                                                <span class="text-xs text-gray-400 font-nums">(Lv. {skillLvl})</span>
+                                            </div>
+                                            <span class="text-xs leading-relaxed text-gray-200">
+                                                {@html parseRichText(getSkillDescription(skillKey, skillLvl))}
+                                            </span>
+                                        </div>
+                                    </Tooltip>
                                 {/if}
                             {/each}
                         </div>
@@ -149,10 +261,10 @@
                     <div class="flex flex-col gap-3 items-end justify-center">
                         {#if talentsList && talentsList.length > 0}
                             {#each talentsList as talent}
-                                <Tooltip text={talent.name + ": " + talent.desc}>
+                                <Tooltip>
                                     <div class="group relative cursor-pointer transition-transform duration-200 hover:scale-105 select-none">
                                         {#if talent.type === "cultivation"}
-                                            <div class="w-[35px] h-[35px] flex items-center justify-center">
+                                            <div class="w-[35px] h-[35px] flex items-center justify-center {talent.currentLevel === 0 ? 'opacity-40 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="fac-skill" className="max-w-full max-h-full object-contain" />
                                             </div>
                                             {#if talent.name}
@@ -164,11 +276,18 @@
                                                     </div>
                                                 {/if}
                                             {/if}
+                                        {:else if talent.type === "ability"}
+                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.activeCount === 0 ? 'opacity-40 grayscale' : ''}">
+                                                <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="attribute-icon" className="w-full h-full object-cover rounded-full" />
+                                            </div>
+                                            <div class="absolute -bottom-1 -right-2.5 z-10 bg-black/90 border border-white/20 px-1 py-0.5 rounded text-[9px] font-black text-[#FFE145] font-nums leading-none shadow-md">
+                                                +{talent.totalValue}
+                                            </div>
                                         {:else}
-                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px]">
+                                            <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.currentLevel === 0 ? 'opacity-40 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="skill-icon" className="w-full h-full object-cover rounded-full" />
                                             </div>
-                                            {#if talent.levelsCount > 1}
+                                            {#if talent.levelsCount > 0}
                                                 <div class="absolute -bottom-1.5 -right-1.5 z-10 flex gap-[2px] pb-1 items-center pointer-events-none select-none">
                                                     {#each Array(talent.levelsCount) as _, i}
                                                         {@const isActive = (i + 1) <= talent.currentLevel}
@@ -177,6 +296,10 @@
                                                 </div>
                                             {/if}
                                         {/if}
+                                    </div>
+                                    <div slot="content" class="flex flex-col gap-1 text-left max-w-[280px]" use:hyperlinkAction>
+                                        <span class="font-bold text-[#FFE145]">{talent.name}</span>
+                                        <span class="text-xs leading-relaxed text-gray-200">{@html parseRichText(talent.desc)}</span>
                                     </div>
                                 </Tooltip>
                             {/each}
@@ -212,7 +335,7 @@
                                 </a>
                                 <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-35px]">
                                     {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                        <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-white" />
+                                        <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
                                     {/each}
                                 </div>
                             </div>
@@ -256,17 +379,31 @@
 
                                     <div class="mt-1 flex items-center justify-center">
                                         {#if wpn.gem && wpn.gem.gemData}
-                                            {@const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : (wpn.gem.gemData.templateId === "item_gem_rarity_4" ? 4 : 3)}
+                                            {@const gemRarity = parseInt(wpn.gem.gemData.templateId?.replace("item_gem_rarity_", "")) || wpn.gem.gemData.rarity || 4}
                                             {@const gemColor = getRarityColor(gemRarity)}
-                                            <Tooltip text={wpn.gem.gemData.name}>
-                                                <div class="relative w-8 h-8 rounded-md border-b flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform cursor-pointer" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
+                                            {@const localIcon = getGemIcon(wpn.gem.gemData)}
+                                                <div class="relative w-8 h-8 rounded-md border-b-2 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
+                                                    <img 
+                                                        src={getImagePath('item_gem_rarity_' + gemRarity, 'essence-type-icon')} 
+                                                        alt="" 
+                                                        class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none" 
+                                                    />
                                                     {#if wpn.gem.gemData.icon}
-                                                        <img src={wpn.gem.gemData.icon} alt={wpn.gem.gemData.name} referrerpolicy="no-referrer" class="w-7 h-7 object-contain" />
+                                                        <img 
+                                                            src={getImagePath(localIcon, 'essence-icon') || wpn.gem.gemData.icon} 
+                                                            alt={wpn.gem.gemData.name} 
+                                                            referrerpolicy="no-referrer" 
+                                                            class="relative z-10 w-7 h-7 object-contain left-0.5 bottom-0.5" 
+                                                            on:error={(e) => {
+                                                                if (e.target.src !== wpn.gem.gemData.icon) {
+                                                                    e.target.src = wpn.gem.gemData.icon;
+                                                                }
+                                                            }}
+                                                        />
                                                     {:else}
-                                                        <div class="w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
+                                                        <div class="relative z-10 w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
                                                     {/if}
                                                 </div>
-                                            </Tooltip>
                                         {:else}
                                             <Tooltip text={$t("profile.no_essence") || "No essence"}>
                                                 <div class="relative w-8 h-8 rounded-md border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
@@ -316,7 +453,8 @@
                             <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-2 rounded-xl pl-5 hover:bg-white/5 transition-all cursor-pointer min-h-[32px] min-w-0"
                                style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
                                 <div class="flex flex-col items-center justify-between shrink-0 h-full">
-                                    <div class="w-9 h-5 select-none self-start">
+                                    <!--<div class="w-9 h-5 select-none self-start">
+                                    
                                         <svg class="w-full h-full filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
                                             <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
@@ -330,11 +468,11 @@
                                                 <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
                                             {/if}
                                         </svg>
+                                    </div>-->
+                                    <div class="relative w-20 h-20 flex items-center justify-center -my-1 top-4">
+                                        <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" style="transform: scale(1.1);" class="w-[110%] h-full object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
                                     </div>
-                                    <div class="relative w-20 h-20 flex items-center justify-center -my-1">
-                                        <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-[110%] h-full object-contain pointer-events-none shadow-md" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
-                                    </div>
-                                    <div class="w-12 h-[3px] rounded" style="background-color: {rarityColor};"></div>
+                                    <div class="w-12 h-[4px] rounded" style="background-color: {rarityColor};"></div>
                                 </div>
                                 
                                 <div class="flex flex-col items-end gap-1 flex-1 select-none overflow-hidden justify-center h-full">

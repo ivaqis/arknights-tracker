@@ -5,10 +5,18 @@
     import { user } from "$lib/stores/cloudStore.js";
     import { addNotification } from "$lib/stores/notifications.js";
     import { fade, fly } from "svelte/transition";
+    import { characters } from "$lib/data/characters.js";
+
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";
-    import { characters } from "$lib/data/characters.js";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import Select from "$lib/components/Select.svelte";
+
+    $: serverOptions = [
+        { value: 'all', label: $t('leaderboard.filter_all') },
+        { value: '3', label: 'Americas/Europe' },
+        { value: '2', label: 'Asia' }
+    ];
 
     const charactersById = Object.values(characters || {}).reduce((acc, char) => {
         if (char && char.id) acc[char.id] = char;
@@ -200,15 +208,12 @@
         </div>
 
         <div class="flex items-center gap-3 text-sm w-full md:w-auto">
-            <span class="text-gray-400 shrink-0">{$t("leaderboard.server")}:</span>
-            <select
+            <Select
+                options={serverOptions}
                 bind:value={serverFilter}
-                class="bg-black/40 border border-white/10 text-white rounded-xl px-4 py-2 outline-none focus:border-[#FFE145] transition-colors cursor-pointer w-full md:w-48"
-            >
-                <option value="all">{$t("leaderboard.filter_all")}</option>
-                <option value="3">Americas/Europe</option>
-                <option value="2">Asia</option>
-            </select>
+                className="w-full md:w-48"
+                variant="gray" 
+            />
         </div>
     </div>
 

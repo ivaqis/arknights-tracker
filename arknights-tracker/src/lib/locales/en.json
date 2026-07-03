@@ -2178,7 +2178,7 @@
   "leaderboard": {
     "title": "Leaderboard",
     "event_type": "Event Type",
-    "contract": "Crisis Contract",
+    "contract": "Contingency Contract",
     "monument": "Monument of Valley",
     "rank": "Rank",
     "operator": "Player",
@@ -2215,11 +2215,11 @@
     "files": "Files",
     "awake_day": "Awakening Day",
     "sanity": "Sanity",
-    "protopass": "Protopass",
+    "protopass": "Protocol Pass",
     "weekly_routine": "Weekly Routine",
     "activity_points": "Activity Points",
     "stats": "Statistics",
-    "crisis_contract": "Crisis Contract",
+    "crisis_contract": "Contingency Contract",
     "monument": "Monument",
     "clear_time_label": "Best ompletion Time:",
     "sec_val": "{time} sec.",
@@ -2230,6 +2230,7 @@
     "name_validation_hint": "Only English letters, numbers, and underscores _ are allowed",
     "name_validation_error": "Invalid character! Only English letters, numbers, and _ are allowed",
     "name_length_error": "Username must be between 3 and 20 characters long",
+    "username_taken": "Username is already taken",
     "last_sync": "Last sync: {time}",
     "time_just_now": "less than 1 min. ago",
     "time_mins": "{n} min. ago",
@@ -2378,5 +2379,12 @@
     "activity_contract_tag_114": "Enemy HP <color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_115": "Enemy HP +{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_116": "Enemy HP +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>."
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "\"Contention of Deathly Silences\"",
+    "searingScars": "Searing Scars",
+    "inorganicConstruct": "\"Inorganic Construct\"",
+    "turbidityManifest": "\"Turbidity Manifest\"",
+    "thoseForsakenByTheLand": "\"Those Forsaken by the Land\""
   }
 }

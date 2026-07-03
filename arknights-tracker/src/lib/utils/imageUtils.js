@@ -24,6 +24,8 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
     const name = normalizeId(idOrName);
     const withExt = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.png`;
 
+    const withWebp = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.webp`;
+
     switch (variant) {
         case 'operator-splash':
             return `/images/operators/splash/${withExt(name)}`;
@@ -94,10 +96,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/crisisContract/tags/icon_${withExt(name)}`;
 
         case 'essence-icon':
-            return `/images/essences/${withExt(name)}`;
+            return `/images/essences/${withWebp(name)}`;
 
         case 'essence-type-icon':
-            return `/images/essencesTypes/${withExt(name)}`;
+            return `/images/essencesTypes/${withWebp(name)}`;
 
         case 'operator-icon':
         default:

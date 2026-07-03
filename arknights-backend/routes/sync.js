@@ -126,6 +126,21 @@ router.post('/profile', async (req, res) => {
             if (checkProfanity(trimmedName)) {
                 return res.status(400).json({ error: "Username contains inappropriate language." });
             }
+            
+            const existingUsers = await prisma.userAccount.findMany({
+                where: {
+                    name: {
+                        contains: trimmedName
+                    },
+                    firebase_uid: {
+                        not: firebaseUid
+                    }
+                }
+            });
+            const isTaken = existingUsers.some(u => u.name && u.name.toLowerCase() === trimmedName.toLowerCase());
+            if (isTaken) {
+                return res.status(400).json({ error: "Username is already taken." });
+            }
             updateData.name = trimmedName;
         }
         if (is_private !== undefined) updateData.is_private = Number(is_private);

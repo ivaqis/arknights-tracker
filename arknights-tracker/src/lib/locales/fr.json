@@ -2056,7 +2056,7 @@
   "leaderboard": {
     "title": "Classement",
     "event_type": "Type d'Événement",
-    "contract": "Contrat de Crise",
+    "contract": "Contrat de crise",
     "monument": "Monument de la Vallée",
     "rank": "Rang",
     "operator": "Joueur",
@@ -2088,16 +2088,16 @@
     "update_hint": "Mettez à jour vos opérateurs et temps depuis les serveurs d'Endfield.",
     "overview": "Aperçu",
     "operators_count": "Opérateurs",
-    "exploration_level": "Niveau d'Exploration",
+    "exploration_level": "Niveau d'exploration",
     "weapons": "Armes",
-    "files": "Fichiers",
-    "awake_day": "Jour d'Éveil",
-    "sanity": "Raison",
-    "protopass": "Protopass",
-    "weekly_routine": "Routine Hebdomadaire",
+    "files": "Dossiers",
+    "awake_day": "Jour de l'éveil",
+    "sanity": "Lucidité",
+    "protopass": "Pass de Protocole",
+    "weekly_routine": "Routine hebdomadaire",
     "activity_points": "Points d'Activité",
     "stats": "Statistiques",
-    "crisis_contract": "Contrat de Crise",
+    "crisis_contract": "Contrat de crise",
     "monument": "Monument",
     "clear_time_label": "Meilleur temps:",
     "sec_val": "{time} sec.",
@@ -2256,5 +2256,12 @@
     "activity_contract_tag_114": "PV de l'ennemi <color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_115": "PV de l'ennemi +{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_116": "PV de l'ennemi +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>."
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "« Discorde des silences mortels »",
+    "searingScars": "Cicatrices brûlantes",
+    "inorganicConstruct": "« Construction non organique »",
+    "turbidityManifest": "« Manifeste de la Turbidité »",
+    "thoseForsakenByTheLand": "« Les oubliés des Terres »"
   }
 }

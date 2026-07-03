@@ -74,6 +74,7 @@
         alt={alt || rawId}
         loading="lazy"
         decoding="async"
+        referrerpolicy="no-referrer"
         draggable={interactive ? "true" : "false"}
         class="{className} {hasObjectFit ? '' : 'object-cover'} antialiased transition-opacity duration-300 {interactive ? '' : 'pointer-events-none select-none'} {isVisible ? 'opacity-100' : 'opacity-0'}"
         style="{smoothImageStyles} {sizeStyle} {style}"

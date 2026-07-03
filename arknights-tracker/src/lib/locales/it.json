@@ -2056,7 +2056,7 @@
   "leaderboard": {
     "title": "Classifica",
     "event_type": "Tipo di Evento",
-    "contract": "Contratto di Crisi",
+    "contract": "Contratto di emergenza",
     "monument": "Monumento della Valle",
     "rank": "Rango",
     "operator": "Giocatore",
@@ -2088,16 +2088,16 @@
     "update_hint": "Aggiorna i tuoi operatori e i tempi dai server di Endfield.",
     "overview": "Panoramica",
     "operators_count": "Operatori",
-    "exploration_level": "Livello di Esplorazione",
+    "exploration_level": "Livello di esplorazione",
     "weapons": "Armi",
     "files": "File",
-    "awake_day": "Giorno del Risveglio",
-    "sanity": "Sanità Mentale",
-    "protopass": "Protopass",
-    "weekly_routine": "Routine Settimanale",
+    "awake_day": "Giorno del risveglio",
+    "sanity": "Lucidità",
+    "protopass": "Pass protocollare",
+    "weekly_routine": "Routine settimanale",
     "activity_points": "Punti Attività",
     "stats": "Statistiche",
-    "crisis_contract": "Contratto di Crisi",
+    "crisis_contract": "Contratto di emergenza",
     "monument": "Monumento",
     "clear_time_label": "Miglior Tempo:",
     "sec_val": "{time} sec.",
@@ -2256,5 +2256,12 @@
     "activity_contract_tag_114": "PS del nemico <color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_115": "PS del nemico +{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_116": "PS del nemico +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>."
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "\"Contesa dei silenzi tombali\"",
+    "searingScars": "Cicatrici roventi",
+    "inorganicConstruct": "\"Costrutto inorganico\"",
+    "turbidityManifest": "\"Manifesto di torbidità\"",
+    "thoseForsakenByTheLand": "\"Rinnegati da Terra\""
   }
 }

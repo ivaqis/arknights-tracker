@@ -2135,10 +2135,10 @@
     "exploration_level": "探索等级",
     "weapons": "武器",
     "files": "档案",
-    "awake_day": "觉醒日",
+    "awake_day": "苏醒日",
     "sanity": "理智",
-    "protopass": "原初通行证",
-    "weekly_routine": "每周惯例",
+    "protopass": "协议通行证",
+    "weekly_routine": "每周事务",
     "activity_points": "活跃点数",
     "stats": "统计数据",
     "crisis_contract": "危机合约",
@@ -2300,5 +2300,12 @@
     "activity_contract_tag_114": "敌人生命值<color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_115": "敌人生命值+{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_116": "敌人生命值+{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>"
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "“死寂争鸣”",
+    "searingScars": "灼痛疤痕",
+    "inorganicConstruct": "“无机造物”",
+    "turbidityManifest": "“浊流具现”",
+    "thoseForsakenByTheLand": "“大地的弃子”"
   }
 }

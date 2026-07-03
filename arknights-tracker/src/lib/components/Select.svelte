@@ -8,11 +8,48 @@
   export let options = [];
   export let value = "";
   export let placeholder = "Select option";
-  export let variant = "black"; // 'black' | 'white'
+  export let variant = "black"; // 'black' | 'white' | 'yellow' | 'gray'
   export let className = "";
 
   const dispatch = createEventDispatcher();
   let isOpen = false;
+
+  const themes = {
+    black: {
+      button: "bg-[#363636] border-[#363636] text-white hover:bg-[#404040]",
+      dropdown: "bg-[#363636] border-[#454545] text-white",
+      optionActive: "bg-[#505050] text-white",
+      optionHover: "hover:bg-[#404040]",
+      subLabel: "text-gray-300",
+      topoOpacity: "opacity-25"
+    },
+    white: {
+      button: "bg-white border-gray-200 text-[#21272C] hover:border-gray-300",
+      dropdown: "bg-white border-gray-100 text-[#21272C]",
+      optionActive: "bg-gray-100",
+      optionHover: "hover:bg-gray-50",
+      subLabel: "text-gray-500",
+      topoOpacity: "opacity-30"
+    },
+    yellow: {
+      button: "bg-[#FFE145] border-[#FFE145] text-black hover:bg-[#ebd03f]",
+      dropdown: "bg-[#FFE145] border-[#ebd03f] text-black",
+      optionActive: "bg-black/10 text-black",
+      optionHover: "hover:bg-black/5",
+      subLabel: "text-black/60",
+      topoOpacity: "opacity-20"
+    },
+    gray: {
+      button: "bg-[#404040] border-[#404040] text-white hover:bg-[#3f3f3f]",
+      dropdown: "bg-[#404040] border-[#404040] text-white",
+      optionActive: "bg-[#3f3f3f] text-white",
+      optionHover: "hover:bg-[#3f3f3f]",
+      subLabel: "text-white/60",
+      topoOpacity: "opacity-20"
+    }
+  };
+
+  $: theme = themes[variant] || themes.black;
 
   $: selectedOption = options.find(o => o.value === value);
   $: selectedLabel = selectedOption?.label || placeholder;
@@ -60,18 +97,16 @@
     class="
       relative w-full h-14 px-4 flex items-center justify-between
       border transition-colors duration-200 group rounded-md
-      {variant === 'black' 
-        ? 'bg-[#363636] border-[#363636] text-white hover:bg-[#404040]' 
-        : 'bg-white border-gray-200 text-[#21272C] hover:border-gray-300'}
+      {theme.button}
     "
   >
     <div 
         class="
-            absolute right-0 top-0 h-full z-0 pointer-events-none overflow-hidden rounded-r-md
-            {variant === 'black' ? 'opacity-25' : 'opacity-30'}
+          absolute right-0 top-0 h-full z-0 pointer-events-none overflow-hidden rounded-r-md
+          {theme.topoOpacity}
         "
     >
-       {@html topoPattern}
+        {@html topoPattern}
     </div>
 
     <span class="relative z-10 text-lg truncate pr-4 flex items-center gap-3">
@@ -89,7 +124,7 @@
       {#if selectedOption?.subLabel}
         <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
           <span class="truncate leading-tight">{selectedLabel}</span>
-          <span class="text-xs font-mono tracking-tight mt-0.5 opacity-60 {variant === 'black' ? 'text-gray-300' : 'text-gray-500'}">
+          <span class="text-xs font-mono tracking-tight mt-0.5 opacity-60 {theme.subLabel}">
             {selectedOption.subLabel}
           </span>
         </div>
@@ -102,7 +137,7 @@
       <Icon name="arrowDown" class="w-3.5 h-3.5" />
     </div>
     
-    </button>
+  </button>
 
   {#if isOpen}
     <div 
@@ -110,7 +145,7 @@
       class="
         absolute left-0 right-0 top-full mt-1 z-50 
         shadow-xl border overflow-hidden rounded-md
-        {variant === 'black' ? 'bg-[#363636] border-[#454545] text-white' : 'bg-white border-gray-100 text-[#21272C]'}
+        {theme.dropdown}
       "
     >
       <ul class="max-h-60 overflow-y-auto custom-scrollbar">
@@ -120,9 +155,7 @@
               on:click={() => select(option)}
               class="
                 w-full text-left px-4 py-2.5 text-sm font-medium transition-colors flex items-center gap-3
-                {value === option.value 
-                   ? (variant === 'black' ? 'bg-[#505050] text-white' : 'bg-gray-100') 
-                   : (variant === 'black' ? 'hover:bg-[#404040]' : 'hover:bg-gray-50')}
+                {value === option.value ? theme.optionActive : theme.optionHover}
               "
             >
               {#if option.iconId}
@@ -139,7 +172,7 @@
               {#if option.subLabel}
                 <div class="flex flex-col min-w-0 items-start leading-none py-0.5">
                   <span class="truncate leading-tight">{option.label}</span>
-                  <span class="text-[11px] font-mono tracking-tight mt-0.5 opacity-60 {variant === 'black' ? 'text-gray-300' : 'text-gray-500'}">
+                  <span class="text-[11px] font-mono tracking-tight mt-0.5 opacity-60 {theme.subLabel}">
                     {option.subLabel}
                   </span>
                 </div>

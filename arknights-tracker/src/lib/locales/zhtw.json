@@ -2135,10 +2135,10 @@
     "exploration_level": "探索等級",
     "weapons": "武器",
     "files": "檔案",
-    "awake_day": "覺醒日",
+    "awake_day": "甦醒日",
     "sanity": "理智",
-    "protopass": "原初通行證",
-    "weekly_routine": "每週慣例",
+    "protopass": "協議通行證",
+    "weekly_routine": "每週事務",
     "activity_points": "活躍點數",
     "stats": "統計數據",
     "crisis_contract": "危機合約",
@@ -2300,5 +2300,12 @@
     "activity_contract_tag_114": "敵人生命值<color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_115": "敵人生命值+{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_116": "敵人生命值+{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>"
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "「死寂爭鳴」",
+    "searingScars": "灼痛疤痕",
+    "inorganicConstruct": "「無機造物」",
+    "turbidityManifest": "「濁流具現」",
+    "thoseForsakenByTheLand": "「大地的棄子」"
   }
 }

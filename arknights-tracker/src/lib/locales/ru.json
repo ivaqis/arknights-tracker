@@ -2232,6 +2232,7 @@
     "name_validation_hint": "Разрешены только английские буквы, цифры и символ подчеркивания _.",
     "name_validation_error": "Недопустимый символ! Разрешены только английские буквы, цифры и _.",
     "name_length_error": "Имя пользователя должно содержать от 3 до 20 символов.",
+    "username_taken": "Имя пользователя уже занято.",
     "last_sync": "Последний синк: {time}",
     "time_just_now": "менее 1 мин. назад",
     "time_mins": "{n} мин. назад",
@@ -2380,5 +2381,12 @@
     "activity_contract_tag_114": "ОЗ врагов <color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_115": "ОЗ врагов +{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}.",
     "activity_contract_tag_116": "ОЗ врагов +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>."
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "Отпор смертельному безмолвию",
+    "searingScars": "Жгучие шрамы",
+    "inorganicConstruct": "Неорганическая постройка",
+    "turbidityManifest": "Образ помутнения",
+    "thoseForsakenByTheLand": "Отвергнутые землей"
   }
 }

@@ -2056,7 +2056,7 @@
   "leaderboard": {
     "title": "Tabela de Classificação",
     "event_type": "Tipo de Evento",
-    "contract": "Contrato de Crise",
+    "contract": "Contrato de Contingência",
     "monument": "Monumento do Vale",
     "rank": "Rank",
     "operator": "Jogador",
@@ -2093,11 +2093,11 @@
     "files": "Arquivos",
     "awake_day": "Dia do Despertar",
     "sanity": "Sanidade",
-    "protopass": "Protopasse",
+    "protopass": "Passe do Protocolo",
     "weekly_routine": "Rotina Semanal",
     "activity_points": "Pontos de Atividade",
     "stats": "Estatísticas",
-    "crisis_contract": "Contrato de Crise",
+    "crisis_contract": "Contrato de Contingência",
     "monument": "Monumento",
     "clear_time_label": "Melhor Tempo:",
     "sec_val": "{time} seg.",
@@ -2256,5 +2256,12 @@
     "activity_contract_tag_114": "PV do inimigo <color=#cc9900>+ {hp_up-1:0%}</color>/+ {@900102@hp_up-1:0%}/+ {@900103@hp_up-1:0%}.",
     "activity_contract_tag_115": "PV do inimigo + {@900101@hp_up-1:0%}/<color=#cc9900>+ {hp_up-1:0%}</color>/+ {@900103@hp_up-1:0%}.",
     "activity_contract_tag_116": "PV do inimigo + {@900101@hp_up-1:0%}/+ {@900102@hp_up-1:0%}/<color=#cc9900>+ {hp_up-1:0%}</color>."
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "\"Disputa dos Silêncios Mortais\"",
+    "searingScars": "Cicatrizes Ardentes",
+    "inorganicConstruct": "\"Construção Inorgânica\"",
+    "turbidityManifest": "\"Manifesto de Turbidez\"",
+    "thoseForsakenByTheLand": "\"Os Abandonados pela Terra\""
   }
 }

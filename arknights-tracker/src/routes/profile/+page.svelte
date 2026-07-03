@@ -148,6 +148,7 @@
         if (!char) return "";
         const charId = char.charData?.id || char.id || char.charId || "";
 
+        // Сделать так, если перс не найден, то высылать это на бэк в табличку какую-нибудь, а еще лучше на бэке сделать обработку
         if (charId && charactersByApiId[charId]) {
             return charactersByApiId[charId].id;
         }
@@ -373,9 +374,20 @@
             addNotification("error", e.message);
         }
     }
-
+    let testEmptySlot = false;
     let selectedGameUid = null;
     $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || profile?.details?.[0];
+    $: contractChars = (() => {
+        const chars = activeAccount?.info?.contract?.chars || [];
+        let list = [...chars];
+        if (testEmptySlot && list.length > 0) {
+            list[list.length - 1] = null;
+        }
+        while (list.length < 4) {
+            list.push(null);
+        }
+        return list;
+    })();
     $: sortedChars = (() => {
         const chars = activeAccount?.info?.chars || [];
         return [...chars].sort((a, b) => {
@@ -426,7 +438,47 @@
             selectedCharDetails = null;
         }
     }
-    $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails) : [];
+    let selectedCharLocale = null;
+    let currentLocaleFetchId = null;
+    let currentLocaleFetchLang = null;
+    $: if (selectedChar && $currentLocale) {
+        const svelteId = getSvelteCharId(selectedChar);
+        const lang = ($currentLocale || "en").toLowerCase().replace("-", "");
+        currentLocaleFetchId = svelteId;
+        currentLocaleFetchLang = lang;
+        if (svelteId) {
+            import(`../../lib/locales/${lang}/characters/${svelteId}.json`)
+                .then(mod => {
+                    if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                        selectedCharLocale = mod.default || mod;
+                    }
+                })
+                .catch(err => {
+                    if (lang !== "en") {
+                        import(`../../lib/locales/en/characters/${svelteId}.json`)
+                            .then(mod => {
+                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                                    selectedCharLocale = mod.default || mod;
+                                }
+                            })
+                            .catch(err2 => {
+                                console.warn("Failed to load fallback en locale for", svelteId, err2);
+                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                                    selectedCharLocale = null;
+                                }
+                            });
+                    } else {
+                        console.warn("Failed to load locale for", svelteId, err);
+                        if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                            selectedCharLocale = null;
+                        }
+                    }
+                });
+        } else {
+            selectedCharLocale = null;
+        }
+    }
+    $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails, selectedCharLocale) : [];
     $: opData = selectedChar ? getOperatorData(selectedChar) : null;
     $: detailedChar = selectedDetailedChar;
     $: svelteId = selectedChar ? getSvelteCharId(selectedChar) : "";
@@ -530,12 +582,67 @@
         return match ? match[0] : lvl.toString();
     }
 
-    function getTalents(char, detailedChar, staticDetails = null) {
+    function interpolateBlackboard(text, bb) {
+        if (!text) return "";
+        if (!bb || Object.keys(bb).length === 0) return text;
+
+        return text.replace(/\{([^}]+)\}/g, (match, content) => {
+            let [expr, format] = content.split(":");
+            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
+
+            for (const key in bb) {
+                const regex = new RegExp(`\\b${key}\\b`, "g");
+                mathStr = mathStr.replace(regex, `(${bb[key]})`);
+            }
+
+            if (/[a-zA-Z_]/.test(mathStr)) return match;
+
+            let result = 0;
+            try {
+                result = new Function("return " + mathStr)();
+            } catch (e) {
+                return match;
+            }
+            if (format) {
+                if (format.includes("%")) {
+                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                } else if (format === "0") {
+                    result = Math.round(result);
+                } else {
+                    result = parseFloat(Number(result).toFixed(2));
+                }
+            }
+            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
+        });
+    }
+
+    function normalizeCultNodeId(id) {
+        if (!id) return null;
+        const m1 = id.match(/^spaceship_skill_(.+)_(\d+)_(\d+)$/);
+        if (m1) {
+            return {
+                charId: m1[1],
+                skillIdx: parseInt(m1[2], 10),
+                level: parseInt(m1[3], 10)
+            };
+        }
+        const m2 = id.match(/^fac_(.+)_(\d+)_(\d+)$/);
+        if (m2) {
+            return {
+                charId: m2[1],
+                skillIdx: parseInt(m2[2], 10) + 1,
+                level: parseInt(m2[3], 10)
+            };
+        }
+        return null;
+    }
+
+    function getTalents(char, detailedChar, staticDetails = null, charLocale = null) {
         if (!char?.charData) return [];
         const svelteId = getSvelteCharId(char);
         const combatNodes = char.charData.combatTalents || [];
+        const latestPassive = detailedChar?.talent?.latestPassiveSkillNodes || [];
         const groupedCombat = {};
-        groupedCombat.latestPassiveSkillNodes = detailedChar?.talent?.latestPassiveSkillNodes || [];
         combatNodes.forEach(node => {
             if (!groupedCombat[node.name]) {
                 groupedCombat[node.name] = [];
@@ -544,33 +651,59 @@
         });
         
         const talents = [];
-        let combatIdx = 1;
+        const combatList = [];
         Object.entries(groupedCombat).forEach(([name, nodes]) => {
-            if (name === "latestPassiveSkillNodes") return;
             nodes.sort((a, b) => a.id.localeCompare(b.id));
             const levelsCount = nodes.length;
-            const activeNode = groupedCombat.latestPassiveSkillNodes.find(id => nodes.some(n => n.id === id)) 
-                || nodes[0]?.id;
-            const activeIndex = nodes.findIndex(n => n.id === activeNode);
-            const currentLevel = activeIndex !== -1 ? activeIndex + 1 : 1;
-            const nodeData = nodes[activeIndex !== -1 ? activeIndex : 0] || {};
             
-            talents.push({
-                name: nodeData.name,
-                iconUrl: nodeData.iconUrl,
-                localImageId: `${svelteId}_talent${combatIdx}`,
-                desc: nodeData.desc,
-                descParams: nodeData.descParams,
-                type: 'combat',
-                currentLevel,
-                levelsCount
+            let talentIdx = 0;
+            const match = nodes[0]?.id?.match(/passive_skill_(\d+)_/);
+            if (match) {
+                talentIdx = parseInt(match[1], 10);
+            }
+            const currentIdx = talentIdx + 1;
+            
+            const activeNode = latestPassive.find(id => nodes.some(n => n.id === id));
+            let currentLevel = 0;
+            if (activeNode) {
+                currentLevel = nodes.findIndex(n => n.id === activeNode) + 1;
+            }
+            
+            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
+            
+            const talentKey = `talent${currentIdx}`;
+            const localeData = charLocale?.skills?.[talentKey];
+            const localizedName = localeData?.name || nodeData.name;
+            let desc = nodeData.desc;
+            if (localeData?.levels) {
+                const descIndex = Math.max(0, currentLevel - 1);
+                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
+            }
+            const bbKey = `${talentKey}_${Math.max(1, currentLevel)}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[talentKey] || {};
+            desc = interpolateBlackboard(desc, currentBlackboard);
+
+            combatList.push({
+                idx: currentIdx,
+                data: {
+                    name: localizedName,
+                    iconUrl: nodeData.iconUrl,
+                    localImageId: `${svelteId}_talent${currentIdx}`,
+                    desc: desc,
+                    descParams: nodeData.descParams,
+                    type: 'combat',
+                    currentLevel,
+                    levelsCount
+                }
             });
-            combatIdx++;
         });
+        combatList.sort((a, b) => a.idx - b.idx);
+        combatList.forEach(item => talents.push(item.data));
 
         const cultNodes = char.charData.cultivationTalents || [];
+        const latestFactory = detailedChar?.talent?.latestFactorySkillNodes || detailedChar?.talent?.latestSpaceshipSkillNodes || [];
         const groupedCult = {};
-        groupedCult.latestSpaceshipSkillNodes = detailedChar?.talent?.latestSpaceshipSkillNodes || [];
         cultNodes.forEach(node => {
             const baseName = node.name.replace(/\s*[αβγ]\s*$/, "").trim();
             if (!groupedCult[baseName]) {
@@ -579,39 +712,160 @@
             groupedCult[baseName].push(node);
         });
 
+        const cultList = [];
         Object.entries(groupedCult).forEach(([baseName, nodes]) => {
-            if (baseName === "latestSpaceshipSkillNodes") return;
             nodes.sort((a, b) => a.id.localeCompare(b.id));
             const levelsCount = nodes.length;
-            const activeNode = groupedCult.latestSpaceshipSkillNodes.find(id => nodes.some(n => n.id === id))
-                || nodes[0]?.id;
-            const activeIndex = nodes.findIndex(n => n.id === activeNode);
-            const currentLevel = activeIndex !== -1 ? activeIndex + 1 : 1;
-            const nodeData = nodes[activeIndex !== -1 ? activeIndex : 0] || {};
 
+            let skillIdx = 1;
+            const fallbackNode = nodes[0] || {};
+            if (fallbackNode.id) {
+                const parts = fallbackNode.id.split('_');
+                if (parts.length >= 2) {
+                    const parsedIdx = parseInt(parts[parts.length - 2], 10);
+                    if (!isNaN(parsedIdx)) {
+                        skillIdx = parsedIdx;
+                    }
+                }
+            }
+
+            const activeNode = latestFactory.find(activeId => {
+                const normActive = normalizeCultNodeId(activeId);
+                return nodes.some(n => {
+                    const normN = normalizeCultNodeId(n.id);
+                    return normActive && normN &&
+                        normActive.charId === normN.charId &&
+                        normActive.skillIdx === normN.skillIdx &&
+                        normActive.level === normN.level;
+                });
+            });
+
+            let currentLevel = 0;
+            if (activeNode) {
+                const norm = normalizeCultNodeId(activeNode);
+                if (norm) {
+                    currentLevel = norm.level;
+                }
+            }
+
+            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
             let localImageId = "";
             if (nodeData.id) {
                 const parts = nodeData.id.split('_');
                 if (parts.length >= 2) {
-                    const skillIdx = parts[parts.length - 2];
                     const levelIdx = parts[parts.length - 1];
                     const facSkillKey = `facSkill${skillIdx}_${levelIdx}`;
                     localImageId = staticDetails?.facSkills?.[facSkillKey]?.name || "";
                 }
             }
 
-            talents.push({
-                name: nodeData.name,
-                iconUrl: nodeData.iconUrl,
-                localImageId: localImageId,
-                desc: nodeData.desc,
-                descParams: nodeData.descParams,
-                type: 'cultivation',
-                currentLevel,
-                levelsCount,
-                nodes
+            const baseKey = `baseSkill${skillIdx}`;
+            const localeData = charLocale?.skills?.[baseKey];
+            const localizedName = localeData?.name || nodeData.name;
+            
+            const greekMatch = nodeData.name.match(/[αβγ]\s*$/);
+            let finalName = localizedName;
+            if (greekMatch && !finalName.match(/[αβγ]\s*$/)) {
+                finalName = `${finalName} ${greekMatch[0]}`;
+            }
+
+            let desc = nodeData.desc;
+            if (localeData?.levels) {
+                const descIndex = Math.max(0, currentLevel - 1);
+                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
+            }
+            const bbKey = `${baseKey}_${Math.max(1, currentLevel)}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[baseKey] || {};
+            desc = interpolateBlackboard(desc, currentBlackboard);
+
+            cultList.push({
+                idx: skillIdx,
+                data: {
+                    name: finalName,
+                    iconUrl: nodeData.iconUrl,
+                    localImageId: localImageId,
+                    desc: desc,
+                    descParams: nodeData.descParams,
+                    type: 'cultivation',
+                    currentLevel,
+                    levelsCount,
+                    nodes
+                }
             });
         });
+        cultList.sort((a, b) => a.idx - b.idx);
+        cultList.forEach(item => talents.push(item.data));
+
+
+        const abilityNodes = char.charData.abilityTalents || [];
+        if (abilityNodes.length > 0) {
+            const attrNodes = new Set(detailedChar?.talent?.attrNodes || char.talent?.attrNodes || []);
+            let totalValue = 0;
+            let activeNodesCount = 0;
+            
+            abilityNodes.forEach(node => {
+                if (attrNodes.has(node.id)) {
+                    activeNodesCount++;
+                    const valMatch = node.desc?.match(/\+(\d+)/);
+                    if (valMatch) {
+                        totalValue += parseInt(valMatch[1], 10);
+                    }
+                }
+            });
+
+            const firstNode = abilityNodes[0] || {};
+            let description = firstNode.desc || "";
+            if (activeNodesCount > 0) {
+                const activeNodeList = abilityNodes.filter(n => attrNodes.has(n.id));
+                activeNodeList.sort((a, b) => a.id.localeCompare(b.id));
+                const highestActive = activeNodeList[activeNodeList.length - 1];
+                if (highestActive) {
+                    description = highestActive.desc || "";
+                }
+            }
+
+            const localeData = charLocale?.skills?.indicator;
+            const localizedName = localeData?.name || firstNode.name || "Ability";
+            if (localeData?.levels) {
+                const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
+                description = localeData.levels[activeLevel - 1] || localeData.levels[0] || description;
+            }
+
+            const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
+            const bbKey = `indicator_${activeLevel}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard?.indicator || {};
+            description = interpolateBlackboard(description, currentBlackboard);
+
+            description = description.replace(/([-+]\s*)\d+(?:\.\d+)?/, `$1${totalValue}`);
+
+            const getAttributeType = (desc) => {
+                if (!desc) return "str";
+                const d = desc.toLowerCase();
+                if (d.includes("ловкост") || d.includes("agility") || d.includes("agi")) return "agi";
+                if (d.includes("интеллект") || d.includes("wisdom") || d.includes("intellect") || d.includes("wisd") || d.includes("int")) return "wisd";
+                if (d.includes("сила") || d.includes("strength") || d.includes("str")) return "str";
+                if (d.includes("воля") || d.includes("willpower") || d.includes("will")) return "will";
+                if (d.includes("hp") || d.includes("здоровье") || d.includes("хп")) return "maxHp";
+                if (d.includes("def") || d.includes("защит")) return "def";
+                return "str";
+            };
+
+            const attrType = getAttributeType(firstNode.desc || firstNode.name || "");
+            const localImageId = `icon_attribute_${attrType}`;
+
+            talents.push({
+                name: localizedName,
+                iconUrl: firstNode.iconUrl,
+                localImageId: localImageId,
+                desc: description,
+                type: 'ability',
+                totalValue: totalValue,
+                activeCount: activeNodesCount,
+                levelsCount: abilityNodes.length
+            });
+        }
 
         return talents;
     }
@@ -684,12 +938,44 @@
         try {
             loading = true;
             const token = await $user.getIdToken();
-            const data = await registerProfile(token, trimmed, localAvatar || null);
+            
+            const data = await registerProfile(token, trimmed, null);
             profile = { ...data, details: [] };
             needsRegistration = false;
+            
+            if (localAvatar) {
+                try {
+                    const uploadResult = await uploadAvatar(token, localAvatar, "avatar.webp");
+                    if (uploadResult.nsfw) {
+                        profile = {
+                            ...profile,
+                            picture: null,
+                            avatar_strike: 1
+                        };
+                        localStorage.setItem("goyfield_local_avatar", localAvatar);
+                        addNotification("warning", $t("profile.strike_warning"));
+                    } else {
+                        localAvatar = "";
+                        localStorage.removeItem("goyfield_local_avatar");
+                        await registerProfile(token, trimmed, uploadResult.picture);
+                        profile = {
+                            ...profile,
+                            picture: uploadResult.picture,
+                            avatar_strike: 0
+                        };
+                    }
+                } catch (uploadErr) {
+                    console.error("Failed to upload avatar after registration:", uploadErr);
+                    addNotification("error", "Profile created, but failed to upload avatar: " + uploadErr.message);
+                }
+            }
+            
             addNotification("success", $t("profile.profile_created") || "Profile created successfully");
         } catch (e) {
-            addNotification("error", e.message);
+            const errMsg = e.message === "Username is already taken."
+                ? ($t("profile.username_taken") || "Username is already taken")
+                : e.message;
+            addNotification("error", errMsg);
         } finally {
             loading = false;
         }
@@ -717,7 +1003,10 @@
             isEditingName = false;
             addNotification("success", $t("profile.username_updated") || "Username updated");
         } catch (e) {
-            addNotification("error", e.message);
+            const errMsg = e.message === "Username is already taken."
+                ? ($t("profile.username_taken") || "Username is already taken")
+                : e.message;
+            addNotification("error", errMsg);
         }
     }
 
@@ -794,6 +1083,11 @@
     async function handleCropSave(e) {
         const webpBase64 = e.detail;
         showCropModal = false;
+
+        if (needsRegistration) {
+            localAvatar = webpBase64;
+            return;
+        }
 
         try {
             loading = true;
@@ -1010,7 +1304,7 @@
         </div>
     {:else if profile}
         <div class="space-y-6 relative z-10" in:fade>
-            <div class="bg-white/5 dark:bg-[#383838]/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
                     <div class="relative group shrink-0 w-28 h-28">
                         <button
@@ -1120,8 +1414,8 @@
                                 on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') selectedGameUid = d.game_uid; }}
                                 role="button"
                                 tabindex="0"
-                                class="bg-white/40 dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-white/60 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
-                                {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-white/5'}"
+                                class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
+                                {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-gray-400/20'}"
                             >
                                 <Tooltip
                                     text={$t("profile.unlink_account") || "Unlink account"}
@@ -1147,12 +1441,12 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <ContractLevelTag level={d.info?.contract?.level || 0} />
                                     </div>
-                                    <div class="text-[10px] text-gray-400 font-mono truncate flex items-center gap-1">
+                                    <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
                                         <span>UID: {d.game_uid}</span>
                                         <Tooltip text={$t("profile.copy_uid") || "Copy UID"}>
                                             <button 
                                                 on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
-                                                class="text-gray-400 hover:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
+                                                class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
                                             >
                                                 {#if copiedUid === d.game_uid}
                                                     <Icon name="success" class="w-3 h-3 text-yellow-400" />
@@ -1209,21 +1503,22 @@
                         <AccountSummary 
                             stats={activeAccount.info?.stats || {}} 
                             totalCharsCount={Object.keys(charactersById).length} 
+                            profileBackground={!profile?.background}
                         />
 
                         <div class="min-w-0 flex flex-col">
                             {#if activeAccount?.records_uid}
-                                <RatingCard customGameUid={activeAccount.records_uid} isProfile={true} />
+                                <RatingCard customGameUid={activeAccount.records_uid} isProfile={true} hideBorders={!!profile?.background} />
                             {:else}
-                                <div class="bg-white/5 dark:bg-[#383838]/5 dark:border-[#444444] rounded-xl p-5 border border-gray-100/50 min-w-0 flex flex-col backdrop-blur-sm shadow-xl">
-                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b border-gray-100 dark:border-[#444444] pb-3">
+                                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 min-w-0 flex flex-col backdrop-blur-sm shadow-sm">
+                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-4 font-sdk border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
                                         {$t("profile.stats")}
                                     </h2>
                                     <div class="flex flex-col items-center h-40 justify-center text-center border border-gray-100/50 dark:border-[#444444]/50 rounded-lg bg-gray-50/20 dark:bg-[#2e2e2e]/20 font-mono text-xs text-gray-500 dark:text-gray-400 backdrop-blur-sm px-4">
                                         <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                        <p>
+                                        <div class="">
                                             {$t("profile.bind_to_view_luck")}
-                                        </p>
+                                        </div>
                                     </div>
                                 </div>
                             {/if}
@@ -1231,8 +1526,8 @@
                     </div>
 
                     <div>
-                        <div class="bg-white/5 dark:bg-[#383838]/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-xl flex flex-col">
-                            <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444444] pb-2 mb-4">
+                        <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col">
+                            <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
                                 <div class="flex items-center gap-2">
                                     <Icon name="contract" class="w-7 h-7 text-[#21272C] dark:text-[#FDFDFD]" />
                                     <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
@@ -1253,7 +1548,7 @@
                                 </div>
 
                                 <div class="flex flex-row justify-center gap-4 flex-wrap">
-                                    {#each activeAccount.info.contract.chars as char}
+                                    {#each contractChars as char}
                                         <ContractCard
                                             {char}
                                             {getOperatorData}
@@ -1289,8 +1584,8 @@
                     </div>
 
                     <div class="w-full min-w-0 overflow-hidden">
-                        <div class="bg-white/5 dark:bg-[#383838]/5 dark:border-[#444444] rounded-xl p-5 border border-gray-100/50 flex flex-col w-full mx-auto backdrop-blur-sm shadow-xl min-w-0 overflow-hidden">
-                            <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444444] pb-3 mb-3">
+                        <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
+                            <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3 mb-3">
                                 <div class="flex gap-2">
                                     <Icon name="operators" class="w-6 h-6 text-[#21272C] dark:text-[#FDFDFD]" />
                                     <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
@@ -1298,7 +1593,7 @@
                                     </h2>
                                 </div>
                             </div>
-                            <div class="flex gap-3.5 overflow-x-auto pb-2.5 custom-scrollbar whitespace-nowrap max-w-full justify-start items-center">
+                            <div class="flex gap-3.5 overflow-x-auto pb-2.5 whitespace-nowrap max-w-full justify-start items-center">
                                 {#each sortedChars as char}
                                     {@const opData = getOperatorData(char)}
                                     {@const isSelected = char.id === selectedOperatorId}
@@ -1306,7 +1601,7 @@
                                         <button
                                             on:click={() => selectedOperatorId = char.id}
                                             class="w-11 h-11 rounded-full border-2 transition-all duration-300 outline-none cursor-pointer
-                                            {isSelected ? 'ring-2 ring-white shadow-md' : 'border-[#FF6600]/80 hover:opacity-85'}"
+                                            {isSelected ? 'ring-2 ring-gray-400 dark:ring-white shadow-md dark:border-gray-500'  : 'border-[#FF6600]/80 hover:opacity-85'}"
                                         >
                                             <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
                                         </button>
@@ -1335,6 +1630,8 @@
                                         {getEquipRarity}
                                         {getEquipTier}
                                         {getStatIcon}
+                                        charDetails={selectedCharDetails}
+                                        charLocale={selectedCharLocale}
                                     />
                                 {/key}
                             {/if}
@@ -1343,7 +1640,7 @@
 
                 </div>
             {:else}
-                <div class="bg-white/5 dark:bg-[#383838]/5 border border-white/5 rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 font-mono text-sm shadow-xl leading-relaxed" in:fade>
+                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
                     {$t("profile.no_connected_accounts")}
                 </div>
             {/if}

@@ -39,9 +39,13 @@ export function getHexColorByElement(element) {
 
 const element2HexColor = {
     fire: "#FF613D",
+    heat: "#FF613D",
     cryst: "#21C4CE",
+    cryo: "#21C4CE",
     natural: "#AABD00",
+    nature: "#AABD00",
     pulse: "#FFBF00",
+    electric: "#FFBF00",
     physical: "#5E5D5D"
 };
 

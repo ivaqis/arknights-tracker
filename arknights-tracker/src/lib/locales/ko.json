@@ -2088,13 +2088,13 @@
     "update_hint": "Endfield 서버에서 오퍼레이터 목록과 클리어 시간을 업데이트하세요.",
     "overview": "개요",
     "operators_count": "오퍼레이터",
-    "exploration_level": "탐사 레벨",
+    "exploration_level": "탐색 레벨",
     "weapons": "무기",
     "files": "파일",
-    "awake_day": "각성의 날",
+    "awake_day": "각성일",
     "sanity": "이성",
-    "protopass": "프로토패스",
-    "weekly_routine": "주간 루틴",
+    "protopass": "프로토콜 통행증",
+    "weekly_routine": "주간 업무",
     "activity_points": "활동 포인트",
     "stats": "통계",
     "crisis_contract": "위기 협약",
@@ -2256,5 +2256,12 @@
     "activity_contract_tag_114": "적 생명력 <color=#cc9900>+{hp_up-1:0%}</color>/+{@900102@hp_up-1:0%}/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_115": "적 생명력 +{@900101@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>/+{@900103@hp_up-1:0%}",
     "activity_contract_tag_116": "적 생명력 +{@900101@hp_up-1:0%}/+{@900102@hp_up-1:0%}/<color=#cc9900>+{hp_up-1:0%}</color>"
+  },
+  "monument": {
+    "contentionOfDeathlySilences": "'적막 속의 외침'",
+    "searingScars": "작열의 흉터",
+    "inorganicConstruct": "'무기물'",
+    "turbidityManifest": "'탁류 구현'",
+    "thoseForsakenByTheLand": "'대지에게 버림받은 존재'"
   }
 }

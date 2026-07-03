@@ -3,6 +3,7 @@
 
     export let stats = {};
     export let totalCharsCount = 0;
+    export let profileBackground = false;
 
     $: summaryRows = [
         { 
@@ -44,14 +45,14 @@
     ];
 </script>
 
-<div class="bg-white/5 dark:bg-[#383838]/5 dark:border-[#444444] rounded-xl p-5 shadow-xl border border-gray-100/50 min-w-0 flex flex-col backdrop-blur-sm">
-    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-2 font-sdk border-b border-gray-100 dark:border-[#444444] pb-3">
+<div class="{profileBackground ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 shadow-sm min-w-0 flex flex-col backdrop-blur-sm">
+    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] mb-2 font-sdk border-b {profileBackground ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3">
         {$t("profile.overview")}
     </h2>
     <div class="space-y-1 px-1">
         {#each summaryRows as row}
             <div class="flex justify-between items-center py-1.5 dark:border-[#444444]">
-                <span class="text-gray-700 dark:text-[#E4E4E4] font-medium">{row.label}</span>
+                <span class="text-gray-800 dark:text-[#E4E4E4] font-medium">{row.label}</span>
                 <span class="font-bold text-[#21272C] dark:text-[#FDFDFD] font-nums">{row.value}</span>
             </div>
         {/each}
