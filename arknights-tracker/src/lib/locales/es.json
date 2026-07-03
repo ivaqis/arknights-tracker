@@ -2159,7 +2159,9 @@
     "name_invalid_error": "¡Carácter inválido! Solo se permiten letras inglesas, números y _",
     "profile_created": "Perfil creado con éxito",
     "username_updated": "Nombre de usuario actualizado",
-    "sync_success": "Cuenta de juego sincronizada con éxito"
+    "sync_success": "Cuenta de juego sincronizada con éxito",
+    "background_updated": "¡Fondo de perfil actualizado!",
+    "empty_slot": "Espacio vacío"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Sobreaceleración",

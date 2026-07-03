@@ -2157,7 +2157,9 @@
     "name_invalid_error": "잘못된 문자입니다! 영문자, 숫자, 밑줄(_)만 허용됩니다",
     "profile_created": "프로필이 성공적으로 생성되었습니다",
     "username_updated": "사용자 이름이 업데이트되었습니다",
-    "sync_success": "게임 계정이 성공적으로 동기화되었습니다"
+    "sync_success": "게임 계정이 성공적으로 동기화되었습니다",
+    "background_updated": "프로필 배경이 업데이트되었습니다!",
+    "empty_slot": "빈 슬롯"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "환경: 과속",

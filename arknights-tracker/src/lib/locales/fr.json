@@ -2157,7 +2157,9 @@
     "name_invalid_error": "Caractère invalide ! Seules les lettres anglaises, les chiffres et _ sont autorisés",
     "profile_created": "Profil créé avec succès",
     "username_updated": "Nom d'utilisateur mis à jour",
-    "sync_success": "Compte de jeu synchronisé avec succès"
+    "sync_success": "Compte de jeu synchronisé avec succès",
+    "background_updated": "Fond de profil mis à jour !",
+    "empty_slot": "Emplacement vide"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Environnement : Surcharge",

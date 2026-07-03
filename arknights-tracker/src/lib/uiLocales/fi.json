@@ -801,6 +801,8 @@
     "name_invalid_error": "Virheellinen merkki! Vain englannin kirjaimet, numerot ja alaviiva _ ovat sallittuja",
     "profile_created": "Profiili luotiin onnistuneesti",
     "username_updated": "Käyttäjätunnus päivitetty",
-    "sync_success": "Pelitili synkronoitu onnistuneesti"
+    "sync_success": "Pelitili synkronoitu onnistuneesti",
+    "background_updated": "Profiilin tausta päivitetty!",
+    "empty_slot": "Tyhjä paikka"
   }
 }

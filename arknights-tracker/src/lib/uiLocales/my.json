@@ -801,6 +801,8 @@
     "name_invalid_error": "Aksara tidak sah! Hanya huruf Inggeris, nombor dan garis bawah _ dibenarkan",
     "profile_created": "Profil berjaya dicipta",
     "username_updated": "Nama pengguna dikemas kini",
-    "sync_success": "Akaun permainan berjaya disegerakkan"
+    "sync_success": "Akaun permainan berjaya disegerakkan",
+    "background_updated": "Latar belakang profil dikemas kini!",
+    "empty_slot": "Slot Kosong"
   }
 }

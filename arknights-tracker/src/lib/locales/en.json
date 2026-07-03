@@ -2280,7 +2280,8 @@
     "profile_created": "Profile created successfully",
     "username_updated": "Username updated",
     "sync_success": "Game account synced successfully",
-    "background_updated": "Profile background updated!"
+    "background_updated": "Profile background updated!",
+    "empty_slot": "Empty Slot"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambient: Overclock",

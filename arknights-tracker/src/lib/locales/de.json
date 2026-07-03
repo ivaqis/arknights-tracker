@@ -2156,7 +2156,9 @@
     "name_invalid_error": "Ungültiges Zeichen! Nur englische Buchstaben, Zahlen und _ sind erlaubt",
     "profile_created": "Profil erfolgreich erstellt",
     "username_updated": "Benutzername aktualisiert",
-    "sync_success": "Spielkonto erfolgreich synchronisiert"
+    "sync_success": "Spielkonto erfolgreich synchronisiert",
+    "background_updated": "Profilhintergrund aktualisiert!",
+    "empty_slot": "Leerer Slot"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Umgebung: Übertakten",

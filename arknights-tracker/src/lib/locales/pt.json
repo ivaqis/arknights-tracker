@@ -2157,7 +2157,9 @@
     "name_invalid_error": "Caractere inválido! Apenas letras inglesas, números e _ são permitidos",
     "profile_created": "Perfil criado com sucesso",
     "username_updated": "Nome de usuário atualizado",
-    "sync_success": "Conta de jogo sincronizada com sucesso"
+    "sync_success": "Conta de jogo sincronizada com sucesso",
+    "background_updated": "Fundo do perfil atualizado!",
+    "empty_slot": "Espaço vazio"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: Overclock",

@@ -2201,7 +2201,9 @@
     "name_invalid_error": "使用者名稱包含無效字元！僅允許英文字母、數字和底線 _",
     "profile_created": "個人資料建立成功",
     "username_updated": "使用者名稱已更新",
-    "sync_success": "遊戲帳戶同步成功"
+    "sync_success": "遊戲帳戶同步成功",
+    "background_updated": "個人主頁背景已更新！",
+    "empty_slot": "空插槽"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "環境：過速",

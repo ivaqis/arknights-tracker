@@ -2201,7 +2201,9 @@
     "name_invalid_error": "用户名包含无效字符！仅允许英文字母、数字和下划线 _",
     "profile_created": "个人资料创建成功",
     "username_updated": "用户名已更新",
-    "sync_success": "游戏账户同步成功"
+    "sync_success": "游戏账户同步成功",
+    "background_updated": "个人主页背景已更新！",
+    "empty_slot": "空插槽"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "环境：过速",

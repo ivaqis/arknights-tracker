@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="mb-6 relative z-50">
+        <div class="mb-4 relative z-50">
             <span class="block text-sm font-bold text-gray-700 dark:text-gray-300 font-sdk mb-2">
                 {$t("profile.settings_primary_account")}
             </span>
@@ -69,7 +69,7 @@
             {/if}
         </div>
 
-        <div class="mb-6">
+        <div class="mb-4">
             <span class="block text-sm font-bold text-gray-700 dark:text-gray-300 font-sdk mb-2">
                 {$t("profile.settings_background")}
             </span>
@@ -93,16 +93,16 @@
                 {#each filteredBackgrounds as bg (bg.id)}
                     <button
                         on:click={() => dispatch("selectBackground", bg.id)}
-                        class="group relative flex flex-col rounded-lg border-2 overflow-hidden transition-all bg-white/5 dark:bg-white/3 outline-none
-                        {profile?.background === bg.id ? 'border-[#FFE145] bg-[#FFE145]/5' : 'border-transparent hover:border-gray-300 dark:hover:border-white/20'}"
+                        class="group relative flex flex-col rounded-lg border-2 overflow-hidden transition-all bg-gray-200 dark:bg-white/5 dark:bg-white/3 outline-none
+                        {profile?.background === bg.id ? 'border-[#FFE145] bg-[#FFE145]/5' : 'border-transparent hover:border-gray-400 dark:hover:border-white/80'}"
                     >
-                        <div class="w-full aspect-video bg-neutral-800 relative overflow-hidden">
-                            <Image id="{bg.id}.webp" variant="operator-art-lq" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-                            <div class="absolute top-0.5 left-0.5 bg-black/60 text-white text-[8px] font-bold px-1 py-0.2 rounded leading-none">
+                        <div class="w-full bg-neutral-800 relative overflow-hidden">
+                            <Image id="{bg.id}.webp" variant="operator-art-lq" className="w-full h-full object-cover transition-transform duration-300" />
+                            <div class="absolute top-0.5 left-0.5 bg-black/80 text-white text-[10px] font-bold px-1 py-0.5 rounded-md leading-none">
                                 P{bg.pot}
                             </div>
                         </div>
-                        <div class="p-1 text-[9px] font-bold text-gray-700 dark:text-gray-300 text-center truncate w-full">
+                        <div class="p-1 text-[10px] font-bold text-gray-700 dark:text-gray-200 text-center truncate w-full">
                             {$t(`characters.${bg.id.split('_')[0]}`) || bg.name}
                         </div>
                     </button>
@@ -112,7 +112,7 @@
 
         <button
             on:click={() => dispatch("logout")}
-            class="w-full py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg transition-colors font-sdk"
+            class="w-full px-4 py-3 border dark:border-[#444444] border-red-200 dark:text-red-500 text-red-600 rounded hover:dark:bg-[#5F2121] hover:bg-red-50 font-bold text-sm transition-colors"
         >
             {$t("profile.settings_logout")}
         </button>

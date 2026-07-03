@@ -2157,7 +2157,9 @@
     "name_invalid_error": "Karakter tidak valid! Hanya huruf Inggris, angka, dan _ yang diizinkan",
     "profile_created": "Profil berhasil dibuat",
     "username_updated": "Nama pengguna diperbarui",
-    "sync_success": "Akun game berhasil disinkronkan"
+    "sync_success": "Akun game berhasil disinkronkan",
+    "background_updated": "Latar belakang profil diperbarui!",
+    "empty_slot": "Slot Kosong"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiens: Overclock",

@@ -2157,7 +2157,9 @@
     "name_invalid_error": "Carattere non valido! Sono ammessi solo lettere inglesi, numeri e _",
     "profile_created": "Profilo creato con successo",
     "username_updated": "Nome utente aggiornato",
-    "sync_success": "Account di gioco sincronizzato con successo"
+    "sync_success": "Account di gioco sincronizzato con successo",
+    "background_updated": "Sfondo del profilo aggiornato!",
+    "empty_slot": "Slot vuoto"
   },
   "contractTagNames": {
     "activity_contract_tag_201": "Ambiente: sovraccarico",

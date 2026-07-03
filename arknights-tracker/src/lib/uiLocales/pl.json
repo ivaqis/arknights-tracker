@@ -801,6 +801,8 @@
     "name_invalid_error": "Niedozwolony znak! Dozwolone są tylko angielskie litery, cyfry i _",
     "profile_created": "Profil utworzony pomyślnie",
     "username_updated": "Nazwa użytkownika zaktualizowana",
-    "sync_success": "Konto gry pomyślnie zsynchronizowane"
+    "sync_success": "Konto gry pomyślnie zsynchronizowane",
+    "background_updated": "Tło profilu zaktualizowane!",
+    "empty_slot": "Puste gniazdo"
   }
 }
