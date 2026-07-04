@@ -41,9 +41,9 @@
     },
     gray: {
       button: "bg-[#404040] border-[#404040] text-white hover:bg-[#3f3f3f]",
-      dropdown: "bg-[#404040] border-[#404040] text-white",
-      optionActive: "bg-[#3f3f3f] text-white",
-      optionHover: "hover:bg-[#3f3f3f]",
+      dropdown: "bg-[#3A3A3A] border-[#404040] text-white",
+      optionActive: "bg-[#404040] text-white",
+      optionHover: "hover:bg-[#404040]",
       subLabel: "text-white/60",
       topoOpacity: "opacity-20"
     }

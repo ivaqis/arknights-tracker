@@ -72,18 +72,45 @@
     }
 
     async function handleSync() {
-        if (!gameTokenInput.trim()) {
-            dispatch("error", "Game Token cannot be empty"); // Добавить перевод
+        const rawInput = gameTokenInput.trim();
+        if (!rawInput) {
+            dispatch("error", $t("profile.token_empty") || "Game Token cannot be empty");
             return;
         }
+
+        let tokenToUse = rawInput;
+        if (rawInput.startsWith('{') && rawInput.endsWith('}')) {
+            try {
+                const parsed = JSON.parse(rawInput);
+                if (parsed.data && parsed.data.content) {
+                    tokenToUse = parsed.data.content.trim();
+                } else if (parsed.content) {
+                    tokenToUse = parsed.content.trim();
+                } else {
+                    dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
+                    return;
+                }
+            } catch (err) {
+                dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
+                return;
+            }
+        }
+
+        // Validate final token characters and length
+        const base64Regex = /^[A-Za-z0-9+/=_-]+$/;
+        if (!base64Regex.test(tokenToUse) || tokenToUse.length < 10 || tokenToUse.length > 128) {
+            dispatch("error", $t("profile.token_invalid") || "Invalid token format. It must be a 24-character code or a valid JSON containing it");
+            return;
+        }
+
         syncing = true;
         dispatch("sync", {
-            token: gameTokenInput.trim(),
+            token: tokenToUse,
             server: selectedServer,
             saveName: isSaveTokenEnabled && tokenName.trim() ? tokenName.trim() : null,
             onSuccess: (didSave) => {
                 if (didSave === false) {
-                    const existingIdx = savedSyncTokens.findIndex(t => t.token === gameTokenInput.trim());
+                    const existingIdx = savedSyncTokens.findIndex(t => t.token === tokenToUse);
                     if (existingIdx !== -1) {
                         let updated = false;
                         if (savedSyncTokens[existingIdx].serverId !== selectedServer) {
@@ -99,7 +126,7 @@
                             savedSyncTokens = [...savedSyncTokens];
                         }
                     } else if (isSaveTokenEnabled && tokenName.trim()) {
-                        saveSyncToken(tokenName.trim(), gameTokenInput.trim(), selectedServer);
+                        saveSyncToken(tokenName.trim(), tokenToUse, selectedServer);
                     }
                     tokenName = "";
                     isSaveTokenEnabled = false;

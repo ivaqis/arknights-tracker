@@ -23,10 +23,6 @@
             value: stats.fileCount || 0 
         },
         { 
-            label: $t("profile.awake_day"), 
-            value: stats.awakeDay || "-" 
-        },
-        { 
             label: $t("profile.sanity"), 
             value: `${stats.sanity || 0} / ${stats.maxSanity || 358}` 
         },

@@ -102,6 +102,7 @@ model UserAccount {
   last_upload_reset DateTime             @default(now())
   is_private        Int                  @default(0)
   background        String?
+  favorite_game_uid String?
   
   details           UserAccountDetails[]
 

@@ -63,7 +63,6 @@ router.get('/', async (req, res) => {
                 id: entry.id,
                 game_uid: entry.game_uid,
                 clear_time: entry.clear_time,
-                leaderboard_info: leaderboardInfo,
                 user: {
                     name: entry.account_detail.user.name || "Operator",
                     picture: entry.account_detail.user.picture,
@@ -72,7 +71,12 @@ router.get('/', async (req, res) => {
                 },
                 level: accountInfo.detail?.base?.level || accountInfo.base?.level || 1,
                 serverId: accountInfo.detail?.base?.serverId || accountInfo.base?.serverId || '3',
-                chars: accountInfo.detail?.chars || accountInfo.chars || [],
+                chars: (leaderboardInfo?.chars || accountInfo.detail?.chars || accountInfo.chars || []).slice(0, 4).map(c => ({
+                    id: c.id,
+                    level: c.level,
+                    rarity: c.rarity || (c.charData?.rarity ? Number(c.charData.rarity.value) : 4),
+                    weapon: c.weapon ? { id: c.weapon.id, level: c.weapon.level, refineLevel: c.weapon.refineLevel } : null
+                })),
                 updatedAt: entry.account_detail.user.updated_at,
                 contractLevel: Number(leaderboardInfo?.level || accountInfo.contract?.level || 0)
             };
@@ -96,6 +100,28 @@ router.get('/', async (req, res) => {
         res.json({ status: 'success', data: formatted });
     } catch (e) {
         console.error("[Leaderboard API Error]:", e.message);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+router.get('/run/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const entry = await prisma.userLeaderboard.findUnique({
+            where: { id: Number(id) }
+        });
+        if (!entry) {
+            return res.status(404).json({ error: 'Run record not found' });
+        }
+        let leaderboardInfo = {};
+        try {
+            leaderboardInfo = JSON.parse(entry.leaderboard_info);
+        } catch (e) {
+            console.warn(`Failed to parse leaderboard_info for run ${id}`);
+        }
+        res.json({ status: 'success', data: leaderboardInfo });
+    } catch (e) {
+        console.error("[Leaderboard Run API Error]:", e.message);
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });

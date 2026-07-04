@@ -2,21 +2,26 @@
     import { page } from "$app/stores";
     import { t } from "$lib/i18n.js";
     import { getUserProfileByName } from "$lib/api.js";
-    import { fade } from "svelte/transition";
-    import Icon from "$lib/components/Icon.svelte";
-    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
-    import Image from "$lib/components/Image.svelte";
-    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
+    import { addNotification } from "$lib/stores/notifications.js";
+    import { fade, fly } from "svelte/transition";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
-    import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { currentLocale } from "$lib/stores/locale.js";
-    import { formatContractDescription } from "$lib/utils/richText.js";
-    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import { getGradientColorByElement } from "$lib/utils/colorUtils.js";
     import ruEquip from "$lib/locales/ru/equipment.json";
     import enEquip from "$lib/locales/en/equipment.json";
+    import { currentLocale } from "$lib/stores/locale.js";
+
+    import Icon from "$lib/components/Icon.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import RatingCard from "$lib/components/records/RatingCard.svelte";
+    import OperatorDetailsCard from "$lib/components/profile/OperatorDetailsCard.svelte";
+    import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
+    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
+    import Image from "$lib/components/Image.svelte";
 
     $: username = $page.params.username;
 
@@ -24,6 +29,10 @@
     let loading = true;
     let errorMsg = "";
     let selectedGameUid = null;
+    let favoriteGameUid = "";
+    let linkCopied = false;
+    let copiedUid = null;
+    let showFullAvatarModal = false;
 
     const charactersById = Object.values(characters || {}).reduce((acc, char) => {
         if (char && char.id) acc[char.id] = char;
@@ -61,29 +70,19 @@
         };
     }
 
-    const weaponIdMap = {
-        "wpn_sword_0012": "thermiteCutter",
-        "wpn_greatsword_0010": "industry01",
-        "wpn_greatsword_0006": "exemplar",
-        "wpn_greatsword_0007": "formerFinery",
-        "wpn_greatsword_0008": "thunderberge",
-        "wpn_greatsword_0009": "sunderedPrince",
-        "wpn_greatsword_0011": "quencher"
-    };
-
     function getWeaponData(weapon) {
         if (!weapon) return null;
-        const gameId = weapon.id;
-        const mappedId = weaponIdMap[gameId];
-        const staticData = (mappedId && weapons[mappedId]) || Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
+        const skillKey = weapon.weaponData?.skills?.find(s => s.key?.startsWith("sk_wpn_"))?.key;
+        const gameId = skillKey ? skillKey.replace("sk_", "") : (weapon.id || weapon.weaponData?.id);
+        const staticData = Object.values(weapons || {}).find(w => w.id === gameId || w.gameId === gameId);
         if (staticData) {
             return staticData;
         }
         return {
             id: gameId,
-            name: weapon.name || gameId,
-            rarity: Number(weapon.rarity?.value || weapon.rarity || 4),
-            type: weapon.type || "sword"
+            name: weapon.weaponData?.name || weapon.name || gameId,
+            rarity: Number(weapon.weaponData?.rarity?.value || weapon.rarity?.value || weapon.rarity || 4),
+            type: weapon.weaponData?.type?.value || weapon.type || "sword"
         };
     }
 
@@ -95,6 +94,93 @@
             return getImagePath(wpnId, "weapon-icon");
         }
         return weapon.icon || "";
+    }
+
+    function getWeaponTerms(wpn) {
+        if (!wpn) return [];
+        if (wpn.weaponTerms && wpn.weaponTerms.length > 0) {
+            return wpn.weaponTerms;
+        }
+        const refine = wpn.refineLevel || 0;
+        const wpnStatic = getWeaponData(wpn);
+        const rarity = wpnStatic?.rarity || wpn.rarity || 4;
+        const gameId = wpnStatic?.id || wpn.id || "";
+        const level = wpn.level || 1;
+
+        const baseTermsMap = {
+            "wpn_sword_0006": [6, 3, 1],
+            "wpn_sword_0012": [5, 5, 1],
+            "wpn_funnel_0005": [3, 2, 1],
+            "wpn_claym_0012": [2, 1, 2]
+        };
+
+        let base = baseTermsMap[gameId];
+        if (!base) {
+            if (rarity === 6) base = [5, 3, 1];
+            else if (rarity === 5) base = [2, 2, 1];
+            else if (rarity === 4) base = [1, 1, 1];
+            else base = [1, 1];
+        }
+
+        let lower_current_1 = 1;
+        let lower_current_2 = 1;
+        let lower_max_1 = 3;
+        let lower_max_2 = 3;
+
+        if (rarity === 3) {
+            lower_max_1 = 5;
+            if (level < 20) lower_current_1 = 1;
+            else if (level < 40) lower_current_1 = 2;
+            else if (level < 60) lower_current_1 = 3;
+            else if (level < 80) lower_current_1 = 4;
+            else lower_current_1 = 5;
+        } else {
+            if (level < 20) {
+                lower_current_1 = 1;
+                lower_current_2 = 1;
+            } else if (level < 40) {
+                lower_current_1 = 2;
+                lower_current_2 = 1;
+            } else if (level < 60) {
+                lower_current_1 = 2;
+                lower_current_2 = 2;
+            } else if (level < 80) {
+                lower_current_1 = 3;
+                lower_current_2 = 2;
+            } else {
+                lower_current_1 = 3;
+                lower_current_2 = 3;
+            }
+        }
+
+        let term1 = Math.ceil(base[0] * (lower_current_1 / lower_max_1));
+        let term2 = base[1] ? Math.ceil(base[1] * (lower_current_2 / lower_max_2)) : 0;
+        let term3 = base[2] || 1;
+
+        if (base.length >= 3) {
+            term3 += refine;
+        }
+
+        if (wpn.gem && wpn.gem.gemData) {
+            const gemRarity = wpn.gem.gemData.templateId === "item_gem_rarity_5" ? 5 : 4;
+            const hasMatchingTerm = !!wpn.gem.gemData.termId;
+
+            if (gemRarity === 5) {
+                term1 += 4;
+                if (base[1]) term2 += 4;
+                if (hasMatchingTerm && base.length >= 3) {
+                    term3 += 2;
+                }
+            } else if (gemRarity === 4) {
+                term1 += 2;
+                if (base[1]) term2 += 2;
+                if (hasMatchingTerm && base.length >= 3) {
+                    term3 += 1;
+                }
+            }
+        }
+
+        return base.length >= 3 ? [term1, term2, term3] : (base.length === 2 ? [term1, term2] : [term1]);
     }
 
     function getStaticEquipId(equipData) {
@@ -111,17 +197,7 @@
         matched = Object.keys(enEquip).find(key => enEquip[key]?.name === nameToMatch);
         if (matched) return matched;
 
-        if (equipment[equipData.id]) return equipData.id;
         return null;
-    }
-
-    function getEquipIcon(equip) {
-        if (!equip) return "";
-        const staticId = getStaticEquipId(equip.equipData) || equip.id;
-        if (staticId) {
-            return getImagePath(staticId, "equipment");
-        }
-        return equip.icon || (equip.equipData?.iconUrl || "");
     }
 
     let equipmentNames = {};
@@ -155,6 +231,7 @@
                 profile = null;
             } else {
                 profile = data;
+                favoriteGameUid = profile.favorite_game_uid || "";
                 // Parse details
                 if (profile.details) {
                     profile.details = profile.details.map(d => {
@@ -170,7 +247,9 @@
                         };
                     });
                     if (profile.details.length > 0) {
-                        selectedGameUid = profile.details[0].game_uid;
+                        const fav = favoriteGameUid;
+                        const hasFav = profile.details.some(d => d.game_uid === fav);
+                        selectedGameUid = hasFav ? fav : profile.details[0].game_uid;
                     }
                 }
             }
@@ -181,17 +260,521 @@
         }
     }
 
-    $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || profile?.details?.[0];
+    $: sortedDetails = (() => {
+        const details = profile?.details || [];
+        if (!favoriteGameUid) return details;
+        return [...details].sort((a, b) => {
+            if (a.game_uid === favoriteGameUid) return -1;
+            if (b.game_uid === favoriteGameUid) return 1;
+            return 0;
+        });
+    })();
+
+    $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
+
+    $: sortedChars = (() => {
+        const chars = activeAccount?.info?.chars || [];
+        return [...chars].sort((a, b) => {
+            const aData = getOperatorData(a);
+            const bData = getOperatorData(b);
+            const aRarity = aData?.rarity || 0;
+            const bRarity = bData?.rarity || 0;
+            if (bRarity !== aRarity) {
+                return bRarity - aRarity;
+            }
+            const aLevel = a?.level || 0;
+            const bLevel = b?.level || 0;
+            if (bLevel !== aLevel) {
+                return bLevel - aLevel;
+            }
+            return (aData?.id || "").localeCompare(bData?.id || "");
+        });
+    })();
+
+    let selectedOperatorId = null;
+    let prevGameUid = null;
+
+    $: if (selectedGameUid !== prevGameUid) {
+        prevGameUid = selectedGameUid;
+        if (sortedChars && sortedChars.length > 0) {
+            selectedOperatorId = sortedChars[0].id;
+        }
+    }
+
+    $: selectedChar = sortedChars.find(c => c.id === selectedOperatorId) || sortedChars[0];
+    $: selectedDetailedChar = selectedChar ? getDetailedChar(selectedChar.id) : null;
+    let selectedCharDetails = null;
+    let currentFetchId = null;
+    $: if (selectedChar) {
+        const svelteId = getSvelteCharId(selectedChar);
+        currentFetchId = svelteId;
+        if (svelteId) {
+            import(`../../../lib/data/charactersData/${svelteId}.json`)
+                .then(mod => {
+                    if (currentFetchId === svelteId) {
+                        selectedCharDetails = mod.default || mod;
+                    }
+                })
+                .catch(err => {
+                    console.warn("Failed to load details for", svelteId, err);
+                    selectedCharDetails = null;
+                });
+        } else {
+            selectedCharDetails = null;
+        }
+    }
+
+    let selectedCharLocale = null;
+    let currentLocaleFetchId = null;
+    let currentLocaleFetchLang = null;
+    $: if (selectedChar && $currentLocale) {
+        const svelteId = getSvelteCharId(selectedChar);
+        const lang = ($currentLocale || "en").toLowerCase().replace("-", "");
+        currentLocaleFetchId = svelteId;
+        currentLocaleFetchLang = lang;
+        if (svelteId) {
+            import(`../../../lib/locales/${lang}/characters/${svelteId}.json`)
+                .then(mod => {
+                    if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                        selectedCharLocale = mod.default || mod;
+                    }
+                })
+                .catch(err => {
+                    if (lang !== "en") {
+                        import(`../../../lib/locales/en/characters/${svelteId}.json`)
+                            .then(mod => {
+                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                                    selectedCharLocale = mod.default || mod;
+                                }
+                            })
+                            .catch(err2 => {
+                                console.warn("Failed to load fallback en locale for", svelteId, err2);
+                                if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                                    selectedCharLocale = null;
+                                }
+                            });
+                    } else {
+                        console.warn("Failed to load locale for", svelteId, err);
+                        if (currentLocaleFetchId === svelteId && currentLocaleFetchLang === lang) {
+                            selectedCharLocale = null;
+                        }
+                    }
+                });
+        } else {
+            selectedCharLocale = null;
+        }
+    }
+
+    let selectedWeaponDetails = null;
+    let currentWeaponFetchId = null;
+    $: if (selectedDetailedChar?.weapon) {
+        const wpnStatic = getWeaponData(selectedDetailedChar.weapon);
+        const wpnId = wpnStatic?.id;
+        if (wpnId) {
+            currentWeaponFetchId = wpnId;
+            import(`../../../lib/data/weaponsData/${wpnId}.json`)
+                .then(mod => {
+                    if (currentWeaponFetchId === wpnId) {
+                        selectedWeaponDetails = mod.default || mod;
+                    }
+                })
+                .catch(err => {
+                    console.warn("Failed to load weapon details for", wpnId, err);
+                    selectedWeaponDetails = null;
+                });
+        } else {
+            selectedWeaponDetails = null;
+        }
+    } else {
+        selectedWeaponDetails = null;
+    }
+
+    $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails, selectedCharLocale) : [];
+    $: opData = selectedChar ? getOperatorData(selectedChar) : null;
+    $: detailedChar = selectedDetailedChar;
+    $: svelteId = selectedChar ? getSvelteCharId(selectedChar) : "";
+    $: targetCharData = detailedChar?.charData || selectedChar?.charData;
+    $: elementColor = opData ? (getGradientColorByElement(opData.element) || "from-white/5 to-transparent") : "from-white/5 to-transparent";
+
+    function getDetailedChar(charId) {
+        if (!activeAccount?.info?.chars) return null;
+        return activeAccount.info.chars.find(c => c.charData?.id === charId || c.id === charId);
+    }
+
+    function getEquipTier(levelStr, rarity) {
+        const val = parseInt(levelStr?.replace("equip_level_", "") || levelStr) || 0;
+        const r = Number(rarity) || 4;
+        if (r < 5) return 0;
+        if (val >= 70) return 3;
+        if (val >= 50) return 2;
+        if (val >= 36) return 1;
+        return 0;
+    }
+
+    function getEquipRarity(equip, staticEquip) {
+        if (staticEquip?.rarity) return Number(staticEquip.rarity);
+        const key = equip?.equipData?.rarity?.key || "";
+        const match = key.match(/equip_rarity_(\d+)/);
+        if (match) return parseInt(match[1]);
+        const val = Number(equip?.equipData?.rarity?.value || equip?.rarity);
+        return isNaN(val) ? 4 : val;
+    }
+
+    function getPropertyLabel(propKey) {
+        if (!propKey) return "Stat";
+        const rawKey = propKey.replace("equip_attr_", "").replace("equip_", "");
+        const lowerKey = rawKey.toLowerCase();
+        
+        const transKey = `stats.${rawKey}`;
+        const trans = $t(transKey);
+        if (trans && trans !== transKey) return trans;
+
+        const mappings = {
+            "wisd": "Wisdom",
+            "str": "Strength",
+            "agi": "Agility",
+            "will": "Willpower",
+            "def": "Defense",
+            "maxhp": "HP",
+            "hp": "HP",
+            "ultimate_sp_gain_scalar": "SP Gain",
+            "atk": "Attack",
+            "ultimate_sp_gain": "SP Gain",
+            "heal_scalar": "Healing",
+            "spell_vulnerable": "Vulnerability",
+            "physical_damage_increase": "Physical DMG Dealt",
+            "cryst_and_pulse_damage_increase": "Crystal/Pulse DMG Increase",
+            "normal_attack_damage_increase": "Normal Attack DMG Increase",
+            "sub": "Sub Attribute"
+        };
+
+        for (const [k, v] of Object.entries(mappings)) {
+            if (lowerKey === k || lowerKey.includes(k)) return v;
+        }
+
+        return rawKey
+            .split("_")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(" ");
+    }
+
+    function getStatIcon(propKey) {
+        if (!propKey) return null;
+        const key = propKey.toLowerCase();
+        if (key.includes("wisd") || key.includes("int")) return "int";
+        if (key.includes("str")) return "str";
+        if (key.includes("agi")) return "agi";
+        if (key.includes("will")) return "will";
+        if (key.includes("def")) return "def";
+        if (key.includes("maxhp") || key.includes("hp")) return "hp";
+        if (key.includes("atk")) return "atk";
+        if (key.includes("sp_gain") || key.includes("usp")) return "usp";
+        if (key.includes("heal")) return "heal";
+        if (key.includes("vulnerable") || key.includes("magicdam")) return "magicdam";
+        if (key.includes("normal_skill_damage")) return "normalskillefficiency";
+        if (key.includes("combo_skill_damage")) return "comboskillefficiency";
+        if (key.includes("normal_attack_damage")) return "normalattackdamageincrease";
+        if (key.includes("physical_damage")) return "physicaldamageincrease";
+        if (key.includes("physical_and_spellinfliction") || key.includes("spellinfliction")) return "magicdam";
+        if (key.includes("cryst_and_pulse_damage")) return "alldamagetakenscalar";
+        if (key.includes("all_skill_damage")) return "alldamagetakenscalar";
+        if (key.includes("spell_damage")) return "alldamagetakenscalar";
+        if (key.includes("sub")) return "alldamagetakenscalar";
+        return null;
+    }
+
+    function getCultivationLabel(node, lvl) {
+        if (!node) return lvl.toString();
+        const match = node.name.match(/[αβγ]\s*$/);
+        return match ? match[0] : lvl.toString();
+    }
+
+    function interpolateBlackboard(text, bb) {
+        if (!text) return "";
+        if (!bb || Object.keys(bb).length === 0) return text;
+
+        return text.replace(/\{([^}]+)\}/g, (match, content) => {
+            let [expr, format] = content.split(":");
+            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
+
+            for (const key in bb) {
+                const regex = new RegExp(`\\b${key}\\b`, "g");
+                mathStr = mathStr.replace(regex, `(${bb[key]})`);
+            }
+
+            if (/[a-zA-Z_]/.test(mathStr)) return match;
+
+            let result = 0;
+            try {
+                result = new Function("return " + mathStr)();
+            } catch (e) {
+                return match;
+            }
+            if (format) {
+                if (format.includes("%")) {
+                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                } else if (format === "0") {
+                    result = Math.round(result);
+                } else {
+                    result = parseFloat(Number(result).toFixed(2));
+                }
+            }
+            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
+        });
+    }
+
+    function getTalents(char, detailedChar, staticDetails = null, charLocale = null) {
+        if (!char?.charData) return [];
+        const svelteId = getSvelteCharId(char);
+        const combatNodes = char.charData.combatTalents || [];
+        const groupedCombat = {};
+        combatNodes.forEach(node => {
+            if (!groupedCombat[node.name]) {
+                groupedCombat[node.name] = [];
+            }
+            groupedCombat[node.name].push(node);
+        });
+        
+        const talents = [];
+        const combatList = [];
+        Object.entries(groupedCombat).forEach(([name, nodes]) => {
+            nodes.sort((a, b) => a.id.localeCompare(b.id));
+            const levelsCount = nodes.length;
+            
+            let talentIdx = 0;
+            const match = nodes[0]?.id?.match(/passive_skill_(\d+)_/);
+            if (match) {
+                talentIdx = parseInt(match[1], 10);
+            }
+            const currentIdx = talentIdx + 1;
+            
+            const talentKey = `talent${currentIdx}`;
+            const currentLevel = detailedChar?.talentLevels?.[talentKey] || 0;
+            
+            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
+            
+            const talentKeyName = `talent${currentIdx}`;
+            const localeData = charLocale?.skills?.[talentKeyName];
+            const localizedName = localeData?.name || nodeData.name;
+            let desc = nodeData.desc;
+            if (localeData?.levels) {
+                const descIndex = Math.max(0, currentLevel - 1);
+                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
+            }
+            const bbKey = `${talentKeyName}_${Math.max(1, currentLevel)}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[talentKeyName] || {};
+            desc = interpolateBlackboard(desc, currentBlackboard);
+
+            combatList.push({
+                idx: currentIdx,
+                data: {
+                    name: localizedName,
+                    iconUrl: nodeData.iconUrl,
+                    localImageId: `${svelteId}_talent${currentIdx}`,
+                    desc: desc,
+                    descParams: nodeData.descParams,
+                    type: 'combat',
+                    currentLevel,
+                    levelsCount
+                }
+            });
+        });
+        combatList.sort((a, b) => a.idx - b.idx);
+        combatList.forEach(item => talents.push(item.data));
+
+        const cultNodes = char.charData.cultivationTalents || [];
+        const groupedCult = {};
+        cultNodes.forEach(node => {
+            const baseName = node.name.replace(/\s*[αβγ]\s*$/, "").trim();
+            if (!groupedCult[baseName]) {
+                groupedCult[baseName] = [];
+            }
+            groupedCult[baseName].push(node);
+        });
+
+        const cultList = [];
+        Object.entries(groupedCult).forEach(([baseName, nodes]) => {
+            nodes.sort((a, b) => a.id.localeCompare(b.id));
+            const levelsCount = nodes.length;
+
+            let skillIdx = 1;
+            const fallbackNode = nodes[0] || {};
+            if (fallbackNode.id) {
+                const parts = fallbackNode.id.split('_');
+                if (parts.length >= 2) {
+                    const parsedIdx = parseInt(parts[parts.length - 2], 10);
+                    if (!isNaN(parsedIdx)) {
+                        skillIdx = parsedIdx;
+                    }
+                }
+            }
+
+            const baseKey = `baseSkill${skillIdx}`;
+            const currentLevel = detailedChar?.talentLevels?.[baseKey] || 0;
+
+            const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
+            let localImageId = "";
+            if (nodeData.id) {
+                const parts = nodeData.id.split('_');
+                if (parts.length >= 2) {
+                    const levelIdx = parts[parts.length - 1];
+                    const facSkillKey = `facSkill${skillIdx}_${levelIdx}`;
+                    localImageId = staticDetails?.facSkills?.[facSkillKey]?.name || "";
+                }
+            }
+
+            const baseKeyPrefix = `baseSkill${skillIdx}`;
+            const localeData = charLocale?.skills?.[baseKeyPrefix];
+            const localizedName = localeData?.name || nodeData.name;
+            
+            const greekMatch = nodeData.name.match(/[αβγ]\s*$/);
+            let finalName = localizedName;
+            if (greekMatch && !finalName.match(/[αβγ]\s*$/)) {
+                finalName = `${finalName} ${greekMatch[0]}`;
+            }
+
+            let desc = nodeData.desc;
+            if (localeData?.levels) {
+                const descIndex = Math.max(0, currentLevel - 1);
+                desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
+            }
+            const bbKey = `${baseKeyPrefix}_${Math.max(1, currentLevel)}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[baseKeyPrefix] || {};
+            desc = interpolateBlackboard(desc, currentBlackboard);
+
+            cultList.push({
+                idx: skillIdx,
+                data: {
+                    name: finalName,
+                    iconUrl: nodeData.iconUrl,
+                    localImageId: localImageId,
+                    desc: desc,
+                    descParams: nodeData.descParams,
+                    type: 'cultivation',
+                    currentLevel,
+                    levelsCount,
+                    nodes
+                }
+            });
+        });
+        cultList.sort((a, b) => a.idx - b.idx);
+        cultList.forEach(item => talents.push(item.data));
+
+        const abilityNodes = char.charData.abilityTalents || [];
+        if (abilityNodes.length > 0) {
+            const attrNodes = new Set(detailedChar?.talent?.attrNodes || char.talent?.attrNodes || []);
+            const hasNode = (nodeId) => {
+                if (attrNodes.has(nodeId)) return true;
+                if (nodeId.includes('endmin')) {
+                    const suffix = nodeId.split('_').pop();
+                    return Array.from(attrNodes).some(attrId => attrId.includes('endmin') && attrId.endsWith('_' + suffix));
+                }
+                return false;
+            };
+            let totalValue = 0;
+            let activeNodesCount = 0;
+            
+            abilityNodes.forEach(node => {
+                if (hasNode(node.id)) {
+                    activeNodesCount++;
+                    const valMatch = node.desc?.match(/\+(\d+)/);
+                    if (valMatch) {
+                        totalValue += parseInt(valMatch[1], 10);
+                    }
+                }
+            });
+
+            const firstNode = abilityNodes[0] || {};
+            let description = firstNode.desc || "";
+            if (activeNodesCount > 0) {
+                const activeNodeList = abilityNodes.filter(n => hasNode(n.id));
+                activeNodeList.sort((a, b) => a.id.localeCompare(b.id));
+                const highestActive = activeNodeList[activeNodeList.length - 1];
+                if (highestActive) {
+                    description = highestActive.desc || "";
+                }
+            }
+
+            const localeData = charLocale?.skills?.indicator;
+            const localizedName = localeData?.name || firstNode.name || "Ability";
+            if (localeData?.levels) {
+                const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
+                description = localeData.levels[activeLevel - 1] || localeData.levels[0] || description;
+            }
+
+            const activeLevel = activeNodesCount > 0 ? activeNodesCount : 1;
+            const bbKey = `indicator_${activeLevel}`;
+            const blackboard = staticDetails?.blackboard || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard?.indicator || {};
+            description = interpolateBlackboard(description, currentBlackboard);
+
+            description = description.replace(/([-+]\s*)\d+(?:\.\d+)?/, `$1${totalValue}`);
+
+            const getAttributeType = (desc) => {
+                if (!desc) return "str";
+                const d = desc.toLowerCase();
+                if (d.includes("ловкост") || d.includes("agility") || d.includes("agi")) return "agi";
+                if (d.includes("интеллект") || d.includes("wisdom") || d.includes("intellect") || d.includes("wisd") || d.includes("int")) return "wisd";
+                if (d.includes("сила") || d.includes("strength") || d.includes("str")) return "str";
+                if (d.includes("воля") || d.includes("willpower") || d.includes("will")) return "will";
+                if (d.includes("hp") || d.includes("здоровье") || d.includes("хп")) return "maxHp";
+                if (d.includes("def") || d.includes("защит")) return "def";
+                return "str";
+            };
+
+            const attrType = getAttributeType(firstNode.desc || firstNode.name || "");
+            const localImageId = `icon_attribute_${attrType}`;
+
+            talents.push({
+                name: localizedName,
+                iconUrl: firstNode.iconUrl,
+                localImageId: localImageId,
+                desc: description,
+                type: 'ability',
+                totalValue: totalValue,
+                activeCount: activeNodesCount,
+                levelsCount: abilityNodes.length
+            });
+        }
+
+        return talents;
+    }
 
     function getServerLabel(serverId) {
         return serverId === "2" ? "Asia" : "Americas / Europe";
     }
 
-
-
     function getAvatarUrl(pictureId) {
         if (pictureId) return `http://localhost:3001/uploads/${pictureId}.webp`;
         return "";
+    }
+
+    function handleCopyProfileLink() {
+        if (!profile || !profile.name) return;
+        const link = `${window.location.origin}/u/${profile.name}`;
+        navigator.clipboard.writeText(link).then(() => {
+            linkCopied = true;
+            setTimeout(() => {
+                linkCopied = false;
+            }, 2000);
+        }).catch(err => {
+            console.error("Failed to copy link: ", err);
+            addNotification("error", $t("profile.copy_failed") || "Failed to copy");
+        });
+    }
+
+    function handleCopyUid(uid) {
+        navigator.clipboard.writeText(uid).then(() => {
+            copiedUid = uid;
+            setTimeout(() => {
+                if (copiedUid === uid) copiedUid = null;
+            }, 2000);
+        }).catch(err => {
+            console.error("Failed to copy UID: ", err);
+            addNotification("error", $t("profile.copy_failed") || "Failed to copy");
+        });
     }
 </script>
 
@@ -199,10 +782,10 @@
     <title>{username ? `${username} - Profile | Goyfield` : 'Player Profile | Goyfield'}</title>
 </svelte:head>
 
-<div class="container mx-auto px-4 py-8 select-text">
+<div class="max-w-[1800px] w-full mx-auto pb-20">
     {#if profile && profile.background}
         <div class="fixed inset-0 w-[100vw] h-[100vh] pointer-events-none z-0 flex items-center justify-center overflow-hidden">
-            <div class="w-full h-full object-cover opacity-45 dark:opacity-35 transform scale-105">
+            <div class="w-full h-full object-cover opacity-65 dark:opacity-55 transform scale-105">
                 <Image id={profile.background} variant="operator-art" size="100%" />
             </div>
             <div class="absolute inset-0 bg-black/5 dark:bg-black/15 z-10"></div>
@@ -210,66 +793,92 @@
         </div>
     {/if}
     {#if loading}
-        <div class="flex items-center justify-center min-h-[50vh] relative z-10">
-            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#FFE145]"></div>
+        <div class="flex items-center justify-center min-h-[60vh]">
+            <Icon name="loading" class="w-12 h-12 text-[#FFE145] animate-spin" />
         </div>
     {:else if errorMsg}
-        <div class="flex flex-col items-center justify-center min-h-[50vh] text-center relative z-10" in:fade>
+        <div class="flex flex-col items-center justify-center min-h-[80vh] text-center relative z-10" in:fade>
             <div class="bg-white/5 border border-white/10 p-8 rounded-2xl max-w-md backdrop-blur-md shadow-2xl">
-                <Icon name="warning" class="w-16 h-16 text-red-500 mb-4 mx-auto" />
+                <img src="/images/empty.png" alt="Empty" class="w-36 h-auto object-contain mb-4 mx-auto select-none pointer-events-none" />
                 <h3 class="text-xl font-bold dark:text-white text-gray-900 mb-2 font-sdk">
-                    {errorMsg === "Profile not found" ? "Профиль не найден" : "Профиль скрыт"}
+                    {errorMsg === "Profile not found" ? $t("profile.profile_not_found") : $t("profile.profile_hidden")}
                 </h3>
-                <p class="text-sm dark:text-gray-400 text-gray-600 font-mono">
+                <p class="text-sm dark:text-gray-400 text-gray-600">
                     {errorMsg === "Profile not found" 
-                        ? `Пользователь с именем "${username}" не зарегистрирован.` 
-                        : "Этот пользователь скрыл свои данные в настройках приватности."}
+                        ? $t("profile.profile_not_registered_desc", { username }) 
+                        : $t("profile.profile_hidden_desc")}
                 </p>
-                <a href="/leaderboard" class="mt-6 inline-block px-6 py-2.5 bg-[#FFE145] hover:bg-[#ebd03e] text-gray-900 font-bold rounded-lg transition-colors font-sdk text-sm">
-                    Вернуться к лидерборду
-                </a>
+                <Button variant="yellow" onClick={() => window.location.href = '/leaderboard'} className="mt-6 ">
+                    <div slot="icon">
+                        <Icon name="arrowLeft" class="w-5 h-5" />
+                    </div>
+                    {$t("profile.error_return_btn")}
+                </Button>
             </div>
         </div>
     {:else if profile}
-        <!-- Read-Only Profile view -->
         <div class="space-y-6 relative z-10" in:fade>
-            <!-- Top Header user card -->
-            <div class="bg-white/80 dark:bg-[#383838]/75 border border-gray-200 dark:border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center gap-4">
-                    <!-- Read-Only Avatar -->
-                    <div class="shrink-0">
-                        {#if getAvatarUrl(profile.picture)}
-                            <img
-                                src={getAvatarUrl(profile.picture)}
-                                alt="User Avatar"
-                                class="w-20 h-20 rounded-xl border-2 border-white/20 object-cover"
-                            />
-                        {:else}
-                            <div class="w-20 h-20 rounded-xl bg-white/10 border-2 border-white/20 flex items-center justify-center text-white/50 text-2xl font-bold">
-                                {profile.name ? profile.name[0].toUpperCase() : "?"}
-                            </div>
-                        {/if}
+                    <div class="relative group shrink-0 w-28 h-28">
+                        <button
+                            type="button"
+                            class="w-full h-full rounded-md border border-white/20 focus:outline-none focus:ring-2 focus:ring-[#FFE145] transition-all overflow-hidden {getAvatarUrl(profile.picture) ? 'cursor-zoom-in' : 'cursor-default'}"
+                            on:click={() => {
+                                if (getAvatarUrl(profile.picture)) {
+                                    showFullAvatarModal = true;
+                                }
+                            }}
+                            aria-label="View avatar"
+                        >
+                            {#if getAvatarUrl(profile.picture)}
+                                <img
+                                    src={getAvatarUrl(profile.picture)}
+                                    alt="User Avatar"
+                                    class="w-full h-full object-cover"
+                                />
+                            {:else}
+                                <div class="w-full h-full bg-white/10 flex items-center justify-center text-white/50 text-3xl font-bold">
+                                    {profile.name ? profile.name[0].toUpperCase() : "?"}
+                                </div>
+                            {/if}
+                        </button>
                     </div>
 
-                    <!-- Display Name -->
-                    <div class="flex flex-col gap-1">
-                        <h1 class="text-2xl font-bold dark:text-white text-gray-900 font-sdk">
-                            {profile.name}
-                        </h1>
+                    <div class="flex flex-col gap-1 relative">
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-3xl font-bold dark:text-white text-gray-900 font-sdk">
+                                {profile.name}
+                            </h1>
+                            <Tooltip text={$t("profile.copy_profile_link") || "Copy profile link"}>
+                                <button on:click={handleCopyProfileLink} class="text-gray-400 hover:text-white transition-colors flex items-center justify-center w-6 h-6">
+                                    {#if linkCopied}
+                                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                    {:else}
+                                        <Icon name="link" class="w-4 h-4" />
+                                    {/if}
+                                </button>
+                            </Tooltip>
+                        </div>
+                        {#if profile.avatar_strike === 1}
+                            <span class="text-[10px] text-orange-400 font-bold flex items-center gap-1 mt-1">
+                                <Icon name="warning" class="w-3.5 h-3.5" />
+                                {$t("profile.strike_warning")}
+                            </span>
+                        {/if}
                     </div>
                 </div>
 
-                <!-- Game account cards inside header -->
                 <div class="flex flex-wrap items-center gap-4">
-                    {#if profile.details && profile.details.length > 0}
-                        {#each profile.details as d}
+                    {#if sortedDetails && sortedDetails.length > 0}
+                        {#each sortedDetails as d}
                             <div
                                 on:click={() => selectedGameUid = d.game_uid}
                                 on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') selectedGameUid = d.game_uid; }}
                                 role="button"
                                 tabindex="0"
-                                class="bg-white/40 dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-white/60 dark:hover:bg-black/35 transition-all cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
-                                {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-white/5'}"
+                                class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
+                                {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-gray-400/20'}"
                             >
                                 <img
                                     src={d.info?.base?.avatarUrl || (d.info?.chars?.[0]?.charData?.avatarSqUrl) || "/images/operators/icons/endministrator1.png"}
@@ -283,13 +892,27 @@
                                         <span class="text-md font-bold dark:text-white text-gray-900 font-sdk truncate">{d.info?.base?.name || "Profile"}</span>
                                         <ContractLevelTag level={d.info?.contract?.level || 0} />
                                     </div>
-                                    <div class="text-[10px] text-gray-400 font-mono truncate">UID: {d.game_uid}</div>
+                                    <div class="text-[10px] text-gray-500 dark:text-gray-400 font-mono truncate flex items-center gap-1">
+                                        <span>UID: {d.game_uid}</span>
+                                        <Tooltip text={$t("profile.copy_uid") || "Copy UID"}>
+                                            <button 
+                                                on:click|stopPropagation={() => handleCopyUid(d.game_uid)} 
+                                                class="text-gray-500 hover:text-gray-600 hover:dark:text-white transition-colors cursor-pointer flex items-center justify-center p-0.5"
+                                            >
+                                                {#if copiedUid === d.game_uid}
+                                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+                                                {:else}
+                                                    <Icon name="copy" class="w-3 h-3 opacity-60 hover:opacity-100" />
+                                                {/if}
+                                            </button>
+                                        </Tooltip>
+                                    </div>
                                     <div class="bg-gray-200 text-gray-600 dark:bg-[#383838] dark:text-[#B0B0B0] px-1.5 py-0.5 rounded text-[9px] font-medium font-sans w-fit truncate">
                                         {getServerLabel(d.info?.base?.serverId)}
                                     </div>
                                 </div>
                                 <div class="flex flex-col items-center justify-center shrink-0 min-w-[36px] border-l border-white/10 pl-3">
-                                    <span class="bg-gray-800 text-white dark:bg-white dark:text-black font-black text-[9px] px-1 rounded-[2px] tracking-tighter uppercase leading-none mb-0.5 select-none">Lv.</span>
+                                    <span class="bg-gray-800 text-white dark:bg-white dark:text-black font-black text-[9px] px-1 tracking-tighter uppercase leading-none mb-0.5 select-none">Lv.</span>
                                     <span class="text-2xl font-black dark:text-white text-gray-900 font-mono leading-none">{d.info?.base?.level || 1}</span>
                                 </div>
                             </div>
@@ -298,269 +921,106 @@
                 </div>
             </div>
 
-            <!-- Profile Content Grid (3 Columns) -->
             {#if activeAccount}
-                <div class="grid grid-cols-1 xl:grid-cols-3 gap-6" in:fade>
+                <div class="grid grid-cols-1 xl:grid-cols-[320px_435px_1fr] gap-6" in:fade>
                     
-                    <!-- COLUMN 1: Overview and Gacha statistics -->
                     <div class="space-y-6">
-                        <!-- Overview Card -->
-                        <div class="bg-white/80 dark:bg-[#383838]/75 border border-gray-200 dark:border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl">
-                            <h2 class="text-xl font-bold dark:text-white text-gray-900 mb-6 font-sdk border-b border-white/10 pb-3">
-                                {$t("profile.overview")}
-                            </h2>
-                            <div class="space-y-4 font-mono text-sm">
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.operators_count")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.charCount || 0} / {Object.keys(charactersById).length}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.exploration_level")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.explorationLevel || 0}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.weapons")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.weaponCount || 0}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.files")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.fileCount || 0}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.awake_day")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.awakeDay || "-"}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.sanity")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.sanity || 0} / {activeAccount.info?.stats?.maxSanity || 358}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.protopass")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.protoPass || 0} / {activeAccount.info?.stats?.protoPassMax || 60}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.weekly_routine")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.weeklyRoutine || 0} / {activeAccount.info?.stats?.weeklyRoutineMax || 10}</span>
-                                </div>
-                                <div class="flex justify-between items-center py-1.5 border-b border-gray-100 dark:border-white/5">
-                                    <span class="text-gray-700 dark:text-gray-200 font-medium">{$t("profile.activity_points")}</span>
-                                    <span class="dark:text-white text-gray-900 font-bold">{activeAccount.info?.stats?.activityPoints || 0} / {activeAccount.info?.stats?.activityPointsMax || 100}</span>
-                                </div>
-                            </div>
-                        </div>
+                        <AccountSummary 
+                            stats={activeAccount.info?.stats || {}} 
+                            totalCharsCount={Object.keys(charactersById).length} 
+                            profileBackground={!profile?.background}
+                        />
 
-                        <!-- Statistics Mock Card -->
-                        <div class="bg-white/80 dark:bg-[#383838]/75 border border-gray-200 dark:border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl">
-                            <h2 class="text-xl font-bold dark:text-white text-gray-900 mb-4 font-sdk border-b border-white/10 pb-3">
-                                {$t("profile.stats")}
-                            </h2>
-                            <div class="h-40 flex items-center justify-center border border-white/10 rounded-xl bg-white/5 font-mono text-xs text-gray-500">
-                                Global Rank Percentile: Top 5.2%
+                        {#if activeAccount?.records_uid}
+                            <div class="min-w-0 flex flex-col">
+                                <RatingCard customGameUid={activeAccount.records_uid} isProfile={true} hideBorders={!!profile?.background} />
                             </div>
-                        </div>
+                        {/if}
                     </div>
 
-                    <!-- COLUMN 2: Crisis Contract details -->
-                    <div>
-                        <div class="bg-white/80 dark:bg-[#383838]/75 border border-gray-200 dark:border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl h-full flex flex-col">
-                            <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-4">
-                                <div class="flex items-center gap-2">
-                                    <Icon name="contract" class="w-6 h-6 text-[#FFE145]" />
-                                    <h2 class="text-xl font-bold dark:text-white text-gray-900 font-sdk">
-                                        {$t("profile.crisis_contract")}
+                    <CrisisContract
+                        contract={activeAccount.info?.contract}
+                        hasBackground={!!profile?.background}
+                    />
+
+                    <div class="w-full min-w-0 overflow-hidden">
+                        <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
+                            <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3 mb-3">
+                                <div class="flex gap-2">
+                                    <Icon name="operators" class="w-6 h-6 text-[#21272C] dark:text-[#FDFDFD]" />
+                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                                        {$t("profile.operators_title")}
                                     </h2>
                                 </div>
                             </div>
-
-                            {#if activeAccount.info?.contract && activeAccount.info.contract.level > 0}
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="text-sm font-sdk dark:text-gray-400 text-gray-600">
-                                        {$t("profile.clear_time_label")} 
-                                        <span class="dark:text-white text-gray-900 font-bold text-lg ml-1 font-mono">
-                                            {activeAccount.info.contract.clearTime} сек.
-                                        </span>
-                                    </div>
-                                    <ContractLevelTag level={activeAccount.info.contract.level || 0} />
-                                </div>
-
-                                <div class="flex flex-row justify-center gap-2 flex-wrap">
-                                    {#each activeAccount.info.contract.chars as char}
-                                        {@const opData = getOperatorData(char)}
-                                        <div class="flex flex-col bg-[#111111] border border-white/10 rounded-b-[4px] min-w-0 w-[84px] max-w-[84px] shrink-0 shadow-md relative">
-                                            <a href="/operators/{opData.id}" class="relative w-full h-[150px] bg-white/5 overflow-hidden shrink-0 block group cursor-pointer">
-                                                <div class="w-full h-full transition-transform duration-300 group-hover:scale-105">
-                                                    <Image id={opData.id} variant="operator-preview" className="w-full h-full object-cover" />
-                                                </div>
-                                                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#111111] to-transparent z-20 pointer-events-none"></div>
-                                                
-                                                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                                                <!-- svelte-ignore a11y-no-static-element-interactions -->
-                                                <div class="absolute top-1 right-1 z-30" on:click|stopPropagation|preventDefault>
-                                                    <Tooltip text="P{(char.potential || 1) - 1}">
-                                                        <PotentialIcon pot={(char.potential || 1) - 1} size={32} />
-                                                    </Tooltip>
-                                                </div>
-
-                                                <div class="absolute bottom-2 left-2 z-30 flex flex-col items-start leading-none select-none">
-                                                    <span class="text-[8px] font-black text-white/70 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">LV</span>
-                                                    <span class="text-[24px] font-black text-white leading-none tracking-tighter" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9);">{char.level}</span>
-                                                </div>
-                                            </a>
-
-                                            {#if char.weapon}
-                                                {@const weaponData = getWeaponData(char.weapon)}
-                                                {@const weaponName = $t(`weaponsList.${weaponData?.id}`) !== `weaponsList.${weaponData?.id}` ? $t(`weaponsList.${weaponData?.id}`) : (weaponData?.name || char.weapon.id)}
-                                                <Tooltip text={`${weaponName} R${char.weapon.refineLevel !== undefined ? char.weapon.refineLevel + 1 : 1}`}>
-                                                    <a href="/weapons/{weaponData.id}?level={char.weapon.level}&refine={char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0}&skills={char.weapon.weaponTerms ? char.weapon.weaponTerms.join(',') : ''}" class="relative w-[96px] h-[68px] flex items-center justify-between p-1 overflow-hidden shrink-0 z-20 ml-[-12px] transition-transform duration-200 hover:scale-105 cursor-pointer block"
-                                                         style="border: 1px solid transparent; background: linear-gradient(to right, #363634, #111111) padding-box, linear-gradient(to right, #464644, #1b1b1a) border-box;">
-                                                        
-                                                        <img 
-                                                            src={getWeaponIcon(char.weapon)} 
-                                                            alt="Weapon" 
-                                                            class="absolute left-[40%] top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 object-contain opacity-50 pointer-events-none rotate-[-15deg]"
-                                                            on:error={(e) => e.target.src = char.weapon.icon}
-                                                        />
-                                                        
-                                                        <div class="flex flex-col justify-between h-full z-10 items-start">
-                                                            <PotentialIcon pot={char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 0} size={20} />
-                                                            <div class="flex flex-col items-start leading-none">
-                                                                <span class="text-[7px] text-white/50 font-black">LV</span>
-                                                                <span class="text-[16px] text-white font-nums font-black leading-none" style="text-shadow: 1px 1px 0 #111;">
-                                                                    {char.weapon.level}
-                                                                </span>
-                                                                <div class="w-6 h-[2px] bg-[#E3A000] mt-0.5"></div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex flex-col gap-0.5 z-10 items-end justify-center h-full pr-1">
-                                                            {#each char.weapon.weaponTerms || [] as term}
-                                                                <div class="flex items-center gap-0.5 px-1 py-0.5 rounded-[2px]" style="background: linear-gradient(to right, #111111, #2D2D2B);">
-                                                                    <svg class="w-2.5 h-1.5 rotate-[-25deg]" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M2 2C2 0.9 2.9 0 4 0H10L14 5L10 10H4C2.9 10 2 9.1 2 8V2Z" fill="#FFE145" />
-                                                                    </svg>
-                                                                    <span class="text-[9px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
-                                                                </div>
-                                                            {/each}
-                                                        </div>
-                                                    </a>
-                                                </Tooltip>
-                                            {/if}
-
-                                            <div class="grid grid-cols-2 gap-1 p-1 bg-[#111111] rounded-b-[4px]">
-                                                {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
-                                                    {@const equip = char.equips?.[eqKey]}
-                                                    {#if equip}
-                                                        {@const staticId = getStaticEquipId(equip.equipData) || equip.id}
-                                                        {@const tier = Math.max(0, (equip.enhanceStatus || 1) - 1)}
-                                                        <Tooltip text={equipmentNames[staticId]?.name || equip.equipData?.name || staticId}>
-                                                            <a href="/equipment/{staticId}" class="relative flex items-center justify-between w-[38px] h-[28px] p-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
-                                                                 style="border: 1px solid transparent; background: linear-gradient(to right, #101010, #1A4558) padding-box, linear-gradient(to right, #3D3F3A, #194457) border-box;">
-                                                                
-                                                                <div class="relative w-[14px] h-[8px] flex items-center justify-center shrink-0 ml-0.5">
-                                                                    <svg class="w-full h-full" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
-                                                                        <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
-                                                                        <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                        <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                        {#if tier >= 1}
-                                                                            <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
-                                                                        {/if}
-                                                                        <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                                                        {#if tier >= 1 && tier < 3}
-                                                                            <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
-                                                                        {/if}
-                                                                    </svg>
-                                                                </div>
-
-                                                                <img 
-                                                                    src={getEquipIcon(equip)} 
-                                                                    alt={eqKey} 
-                                                                    class="w-[22px] h-[22px] object-contain pointer-events-none mr-0.5 shrink-0"
-                                                                    on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; else if (equip.icon) e.target.src = equip.icon; }}
-                                                                />
-                                                                
-                                                                <div class="left-0.5 w-[14px] h-[1.5px] bg-[#E3A000] absolute bottom-0.5"></div>
-                                                            </a>
-                                                        </Tooltip>
-                                                    {:else}
-                                                        <div class="bg-[#101010]/60 border border-white/5 w-[38px] h-[28px] min-w-0"></div>
-                                                    {/if}
-                                                {/each}
-                                            </div>
-                                        </div>
-                                    {/each}
-                                </div>
-
-                                <div class="grid grid-cols-[repeat(auto-fill,56px)] gap-1.5 mt-4 border-t border-white/10 pt-4 justify-center">
-                                    {#each activeAccount.info.contract.indicators || [] as ind}
-                                        {@const tagId = typeof ind === 'object' ? ind.id : ind}
-                                        {@const tagName = $t(`contractTagNames.${tagId}`) || (typeof ind === 'object' ? ind.name : tagId)}
-                                        {@const tagDesc = formatContractDescription(tagId, $t(`contractTagDesc.${tagId}`) || (typeof ind === 'object' ? ind.desc : ''))}
-                                        {@const cleanDesc = tagDesc ? tagDesc.replace(/<[^>]*>/g, "") : ""}
-                                        <Tooltip text={tagName + (cleanDesc ? ": " + cleanDesc : "")}>
-                                            <div class="w-12 h-12 bg-black/90 border border-white/10 rounded-lg p-1.5 flex items-center justify-center cursor-pointer hover:border-white/30 transition-all">
-                                                <img src={getImagePath(tagId, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = (typeof ind === 'object' ? ind.icon : '')} />
-                                            </div>
-                                        </Tooltip>
-                                    {/each}
-                                </div>
-                            {:else}
-                                <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50 dark:bg-[#2C2C2C] rounded-2xl border border-dashed border-gray-200 dark:border-[#333] w-full">
-                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                    <p class="text-sm">
-                                        {$t("emptyState.noData") || "No records found"}
-                                    </p>
-                                </div>
-                            {/if}
-                        </div>
-                    </div>
-
-                    <!-- COLUMN 3: Operator Grid -->
-                    <div>
-                        <div class="bg-white/80 dark:bg-[#383838]/75 border border-gray-200 dark:border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl h-full flex flex-col">
-                            <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-6">
-                                <h2 class="text-xl font-bold dark:text-white text-gray-900 font-sdk">
-                                    {$t("profile.operators_title")}
-                                </h2>
-                            </div>
-
-                            <div class="grid grid-cols-[repeat(auto-fill,120px)] gap-3 overflow-y-auto max-h-[500px] pr-2 custom-scrollbar flex-1 justify-center">
-                                {#each activeAccount.info?.chars || [] as char}
+                            <div class="flex gap-3.5 overflow-x-auto pb-2.5 whitespace-nowrap max-w-full justify-start items-center">
+                                {#each sortedChars as char}
                                     {@const opData = getOperatorData(char)}
-                                    <OperatorCard
-                                        operator={opData}
-                                        level={char.level}
-                                        potential={(char.potential || 1) - 1}
-                                        owned={true}
-                                    />
+                                    {@const isSelected = char.id === selectedOperatorId}
+                                    <div class="relative w-12 h-12 shrink-0 flex items-center justify-center">
+                                        <button
+                                            on:click={() => selectedOperatorId = char.id}
+                                            class="w-11 h-11 rounded-full border-2 transition-all duration-300 outline-none cursor-pointer
+                                            {isSelected ? 'ring-2 ring-gray-400 dark:ring-white shadow-md dark:border-gray-500'  : 'border-[#FF6600]/80 hover:opacity-85'}"
+                                        >
+                                            <Image id={opData.id} variant="operator-icon" className="w-full h-full object-cover rounded-full" />
+                                        </button>
+                                        <div class="absolute -bottom-1 -right-1 z-10 px-1 py-0.5 text-[12px] text-white bg-black/40 rounded-md leading-none font-nums select-none shadow-xl">
+                                            {char.level}
+                                        </div>
+                                    </div>
                                 {/each}
                             </div>
+
+                            {#if selectedChar}
+                                {#key selectedOperatorId}
+                                    <OperatorDetailsCard
+                                        {selectedChar}
+                                        {detailedChar}
+                                        {opData}
+                                        {targetCharData}
+                                        {elementColor}
+                                        {svelteId}
+                                        {talentsList}
+                                        {getWeaponData}
+                                        {getWeaponIcon}
+                                        {getWeaponTerms}
+                                        {getStaticEquipId}
+                                        {getEquipRarity}
+                                        {getEquipTier}
+                                        {getStatIcon}
+                                        charDetails={selectedCharDetails}
+                                        charLocale={selectedCharLocale}
+                                        weaponDetails={selectedWeaponDetails}
+                                    />
+                                {/key}
+                            {/if}
                         </div>
                     </div>
 
                 </div>
             {:else}
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-12 text-center backdrop-blur-md text-gray-500 font-mono text-sm leading-relaxed" in:fade>
-                    No connected game accounts.
+                <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-12 text-center backdrop-blur-sm text-gray-500 dark:text-gray-400 font-mono text-sm shadow-sm leading-relaxed" in:fade>
+                    {$t("profile.no_connected_accounts")}
                 </div>
             {/if}
         </div>
     {/if}
-</div>
 
-<style>
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: rgba(255, 255, 255, 0.02);
-        border-radius: 3px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 3px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: rgba(255, 255, 255, 0.2);
-    }
-</style>
+    <Modal isOpen={showFullAvatarModal} on:close={() => showFullAvatarModal = false}>
+        <div class="relative max-w-[90vw] max-h-[90vh] flex flex-col items-center select-none">
+            <button
+                on:click={() => showFullAvatarModal = false}
+                class="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors bg-black/40 p-2 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#FFE145]"
+                aria-label="Close"
+            >
+                <Icon name="close" class="w-6 h-6" />
+            </button>
+            <img
+                src={getAvatarUrl(profile?.picture)}
+                alt="Avatar Fullsize"
+                class="max-w-full max-h-[80vh] rounded-2xl border border-white/20 shadow-2xl object-contain select-text"
+            />
+        </div>
+    </Modal>
+</div>

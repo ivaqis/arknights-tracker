@@ -43,7 +43,7 @@ export async function getUserProfile(uid) {
     }
 }
 
-export async function registerProfile(idToken, name, picture = null, is_private = undefined, background = undefined, records_uid = undefined, game_uid = undefined) {
+export async function registerProfile(idToken, name, picture = null, is_private = undefined, background = undefined, records_uid = undefined, game_uid = undefined, favorite_game_uid = undefined) {
     const bodyObj = { idToken };
     if (name !== undefined) bodyObj.name = name;
     if (picture !== undefined) bodyObj.picture = picture;
@@ -51,6 +51,7 @@ export async function registerProfile(idToken, name, picture = null, is_private 
     if (background !== undefined) bodyObj.background = background;
     if (records_uid !== undefined) bodyObj.records_uid = records_uid;
     if (game_uid !== undefined) bodyObj.game_uid = game_uid;
+    if (favorite_game_uid !== undefined) bodyObj.favorite_game_uid = favorite_game_uid;
 
     const res = await fetch(`${API_BASE}/user/profile`, {
         method: 'POST',
@@ -93,6 +94,18 @@ export async function fetchLeaderboard(eventType) {
     } catch (e) {
         console.error("fetchLeaderboard Error:", e);
         return [];
+    }
+}
+
+export async function fetchLeaderboardRun(id) {
+    try {
+        const res = await fetch(`${API_BASE}/leaderboard/run/${id}`);
+        if (!res.ok) throw new Error('Failed to fetch leaderboard run details');
+        const json = await res.json();
+        return json.data;
+    } catch (e) {
+        console.error("fetchLeaderboardRun Error:", e);
+        return null;
     }
 }
 

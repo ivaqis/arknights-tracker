@@ -35,6 +35,7 @@
     import ContractCard from "$lib/components/profile/ContractCard.svelte";
     import OperatorDetailsCard from "$lib/components/profile/OperatorDetailsCard.svelte";
     import AccountSummary from "$lib/components/profile/AccountSummary.svelte";
+    import CrisisContract from "$lib/components/profile/ContractContainer.svelte";
 
     const { accounts } = accountStore;
 
@@ -88,6 +89,76 @@
         }))
     ];
 
+    function translateBackendError(message) {
+        if (!message) return "";
+        const msg = message.trim();
+
+        const exactMappings = {
+            "Username must be between 3 and 20 characters long.": "profile.name_length_error",
+            "Username can only contain English letters, numbers, and underscores.": "profile.name_invalid_error",
+            "Username contains inappropriate language.": "profile.name_profanity_error",
+            "Username is already taken.": "profile.username_taken",
+            "Invalid background format.": "profile.invalid_background",
+            "Unauthorized: Game account belongs to another user.": "profile.account_linked_elsewhere",
+            "Profile not found.": "profile.profile_not_found",
+            "Profile not found": "profile.profile_not_found",
+            "Profile not found. Register first.": "profile.profile_not_found",
+            "Profile not registered. Please register a profile first.": "profile.profile_not_registered",
+            "Profile not registered.": "profile.profile_not_registered",
+            "This profile is private": "profile.profile_private_error",
+            "Game account not found.": "profile.game_account_not_found",
+            "You do not own this game account.": "profile.not_account_owner",
+            "Game token is required.": "profile.token_empty",
+            "Invalid token format in JSON structure.": "profile.token_invalid",
+            "Invalid JSON token format.": "profile.token_invalid",
+            "Invalid token format.": "profile.token_invalid",
+            "Invalid or expired game token.": "profile.token_invalid_or_expired",
+            "No game accounts found or failed to fetch their details.": "profile.sync_no_accounts",
+            "Authentication service temporarily unavailable": "profile.auth_unavailable",
+            "No token provided": "profile.no_auth_token",
+            "Invalid token format": "profile.invalid_auth_token",
+            "Failed to parse token payload": "profile.invalid_auth_token",
+            "Unsupported algorithm": "profile.invalid_auth_token",
+            "Key ID not found in Google certificates": "profile.invalid_auth_token",
+            "Invalid signature": "profile.invalid_auth_token",
+            "Invalid issuer": "profile.invalid_auth_token",
+            "Invalid audience": "profile.invalid_auth_token",
+            "Token expired": "profile.auth_token_expired",
+            "Subject is missing": "profile.invalid_auth_token",
+            "Invalid image format header. Only JPEG, PNG, WebP, and AVIF are allowed.": "profile.image_format_error",
+            "Image exceeds the 1MB limit.": "profile.image_size_limit_error",
+            "Image is too small. Minimum resolution is 128x128 pixels.": "profile.image_size_error",
+            "Monthly upload limit reached (max 30 uploads per month).": "profile.upload_limit_reached",
+            "Converted WebP exceeds 1MB limit.": "profile.image_size_limit_error"
+        };
+
+        if (exactMappings[msg]) {
+            return $t(exactMappings[msg]) || msg;
+        }
+
+        if (msg.startsWith("Sync is on cooldown. Please wait")) {
+            const match = msg.match(/wait (\d+) minutes/);
+            const mins = match ? match[1] : "";
+            return $t("profile.sync_cooldown", { time: mins }) || msg;
+        }
+        if (msg.startsWith("Game UID") && msg.includes("is already linked to another user account.")) {
+            const match = msg.match(/Game UID (\d+) is already linked/);
+            const gameUid = match ? match[1] : "";
+            return $t("profile.uid_already_linked", { uid: gameUid }) || msg;
+        }
+        if (msg.startsWith("Forbidden file format detected:")) {
+            return $t("profile.image_format_error") || msg;
+        }
+        if (msg.startsWith("Image processing failed:")) {
+            return $t("profile.image_processing_failed") || msg;
+        }
+        if (msg.startsWith("Game binding query failed:")) {
+            return $t("profile.binding_query_failed") || msg;
+        }
+
+        return msg;
+    }
+
     $: filteredBackgrounds = availableBackgrounds.filter(bg => {
         if (!bgSearchQuery) return true;
         const query = bgSearchQuery.toLowerCase();
@@ -102,7 +173,7 @@
             profile.background = data.background;
             addNotification("success", $t("profile.background_updated") || "Profile background updated!");
         } catch (e) {
-            addNotification("error", e.message);
+            addNotification("error", translateBackendError(e.message));
         }
     }
 
@@ -130,7 +201,7 @@
             addNotification("success", $t("profile.primary_account_updated") || "Primary game account updated!");
         } catch (e) {
             console.error("[handleSelectRecordsUid] Error:", e);
-            addNotification("error", e.message);
+            addNotification("error", translateBackendError(e.message));
         }
     }
 
@@ -323,12 +394,51 @@
             isPrivate = data.is_private === 1;
             addNotification("success", $t("profile.privacy_settings_updated") || "Privacy settings updated!");
         } catch (e) {
-            addNotification("error", e.message);
+            addNotification("error", translateBackendError(e.message));
         }
     }
     let testEmptySlot = false;
     let selectedGameUid = null;
-    $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || profile?.details?.[0];
+    let favoriteGameUid = "";
+
+    async function toggleFavorite(uid) {
+        const nextFavoriteUid = favoriteGameUid === uid ? "" : uid;
+        try {
+            const token = await $user.getIdToken();
+            const data = await registerProfile(
+                token,
+                profile.name,
+                profile.picture,
+                profile.is_private,
+                profile.background,
+                profile.records_uid,
+                undefined,
+                nextFavoriteUid
+            );
+            profile.favorite_game_uid = data.favorite_game_uid;
+            favoriteGameUid = data.favorite_game_uid || "";
+            if (nextFavoriteUid) {
+                addNotification("success", $t("profile.favorite_set") || "Set as favorite");
+                selectedGameUid = nextFavoriteUid;
+            } else {
+                addNotification("success", $t("profile.favorite_removed") || "Removed from favorites");
+            }
+        } catch (e) {
+            addNotification("error", translateBackendError(e.message));
+        }
+    }
+
+    $: sortedDetails = (() => {
+        const details = profile?.details || [];
+        if (!favoriteGameUid) return details;
+        return [...details].sort((a, b) => {
+            if (a.game_uid === favoriteGameUid) return -1;
+            if (b.game_uid === favoriteGameUid) return 1;
+            return 0;
+        });
+    })();
+
+    $: activeAccount = profile?.details?.find(d => d.game_uid === selectedGameUid) || sortedDetails?.[0];
     $: contractChars = (() => {
         const chars = activeAccount?.info?.contract?.chars || [];
         let list = [...chars];
@@ -430,6 +540,30 @@
             selectedCharLocale = null;
         }
     }
+
+    let selectedWeaponDetails = null;
+    let currentWeaponFetchId = null;
+    $: if (selectedDetailedChar?.weapon) {
+        const wpnStatic = getWeaponData(selectedDetailedChar.weapon);
+        const wpnId = wpnStatic?.id;
+        if (wpnId) {
+            currentWeaponFetchId = wpnId;
+            import(`../../lib/data/weaponsData/${wpnId}.json`)
+                .then(mod => {
+                    if (currentWeaponFetchId === wpnId) {
+                        selectedWeaponDetails = mod.default || mod;
+                    }
+                })
+                .catch(err => {
+                    console.warn("Failed to load weapon details for", wpnId, err);
+                    selectedWeaponDetails = null;
+                });
+        } else {
+            selectedWeaponDetails = null;
+        }
+    } else {
+        selectedWeaponDetails = null;
+    }
     $: talentsList = selectedChar ? getTalents(selectedChar, selectedDetailedChar, selectedCharDetails, selectedCharLocale) : [];
     $: opData = selectedChar ? getOperatorData(selectedChar) : null;
     $: detailedChar = selectedDetailedChar;
@@ -462,27 +596,41 @@
     }
 
     function getPropertyLabel(propKey) {
-        const mappings = {
-            "equip_attr_wisd": "Wisdom",
-            "equip_attr_str": "Strength",
-            "equip_attr_agi": "Agility",
-            "equip_attr_will": "Willpower",
-            "equip_attr_def": "Defense",
-            "equip_attr_maxhp": "HP",
-            "equip_attr_ultimate_sp_gain_scalar": "SP Gain",
-            "equip_attr_atk": "Attack",
-            "equip_attr_ultimate_sp_gain": "SP Gain",
-            "equip_attr_heal_scalar": "Healing",
-            "equip_attr_spell_vulnerable": "Vulnerability"
-        };
-        const key = propKey?.toLowerCase() || "";
-        const transKey = `stats.${propKey?.replace("equip_attr_", "")}`;
+        if (!propKey) return "Stat";
+        const rawKey = propKey.replace("equip_attr_", "").replace("equip_", "");
+        const lowerKey = rawKey.toLowerCase();
+        
+        const transKey = `stats.${rawKey}`;
         const trans = $t(transKey);
         if (trans && trans !== transKey) return trans;
+
+        const mappings = {
+            "wisd": "Wisdom",
+            "str": "Strength",
+            "agi": "Agility",
+            "will": "Willpower",
+            "def": "Defense",
+            "maxhp": "HP",
+            "hp": "HP",
+            "ultimate_sp_gain_scalar": "SP Gain",
+            "atk": "Attack",
+            "ultimate_sp_gain": "SP Gain",
+            "heal_scalar": "Healing",
+            "spell_vulnerable": "Vulnerability",
+            "physical_damage_increase": "Physical DMG Dealt",
+            "cryst_and_pulse_damage_increase": "Crystal/Pulse DMG Increase",
+            "normal_attack_damage_increase": "Normal Attack DMG Increase",
+            "sub": "Sub Attribute"
+        };
+
         for (const [k, v] of Object.entries(mappings)) {
-            if (key.includes(k)) return v;
+            if (lowerKey === k || lowerKey.includes(k)) return v;
         }
-        return propKey?.replace("equip_attr_", "").toUpperCase() || "Stat";
+
+        return rawKey
+            .split("_")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(" ");
     }
 
     function getStaticEquipId(equipData) {
@@ -801,6 +949,7 @@
                 const data = await getUserProfile(u.uid);
                 if (data) {
                     profile = data;
+                    favoriteGameUid = profile.favorite_game_uid || "";
                     if (profile.details) {
                         profile.details = profile.details.map(d => {
                             try {
@@ -810,7 +959,9 @@
                             }
                         });
                         if (profile.details.length > 0) {
-                            selectedGameUid = profile.details[0].game_uid;
+                            const fav = favoriteGameUid;
+                            const hasFav = profile.details.some(d => d.game_uid === fav);
+                            selectedGameUid = hasFav ? fav : profile.details[0].game_uid;
                         }
                     }
                     newProfileName = profile.name || "";
@@ -884,16 +1035,13 @@
                     }
                 } catch (uploadErr) {
                     console.error("Failed to upload avatar after registration:", uploadErr);
-                    addNotification("error", "Profile created, but failed to upload avatar: " + uploadErr.message);
+                    addNotification("error", ($t("profile.profile_created_avatar_failed") || "Profile created, but failed to upload avatar: ") + translateBackendError(uploadErr.message));
                 }
             }
             
             addNotification("success", $t("profile.profile_created") || "Profile created successfully");
         } catch (e) {
-            const errMsg = e.message === "Username is already taken."
-                ? ($t("profile.username_taken") || "Username is already taken")
-                : e.message;
-            addNotification("error", errMsg);
+            addNotification("error", translateBackendError(e.message));
         } finally {
             loading = false;
         }
@@ -921,10 +1069,7 @@
             isEditingName = false;
             addNotification("success", $t("profile.username_updated") || "Username updated");
         } catch (e) {
-            const errMsg = e.message === "Username is already taken."
-                ? ($t("profile.username_taken") || "Username is already taken")
-                : e.message;
-            addNotification("error", errMsg);
+            addNotification("error", translateBackendError(e.message));
         }
     }
 
@@ -1036,7 +1181,7 @@
                 addNotification("success", $t("profile.avatar_success") || "Image set successfully");
             }
         } catch (err) {
-            addNotification("error", err.message);
+            addNotification("error", translateBackendError(err.message));
         } finally {
             loading = false;
         }
@@ -1064,13 +1209,15 @@
                 }))
             };
             if (profile.details.length > 0) {
-                selectedGameUid = profile.details[0].game_uid;
+                const fav = typeof window !== 'undefined' ? localStorage.getItem("goyfield_favorite_game_uid") : "";
+                const hasFav = profile.details.some(d => d.game_uid === fav);
+                selectedGameUid = hasFav ? fav : profile.details[0].game_uid;
             }
             syncModalOpen = false;
             addNotification("success", $t("profile.sync_success") || "Game account synced successfully");
             onSuccess?.(false);
         } catch (err) {
-            addNotification("error", err.message);
+            addNotification("error", translateBackendError(err.message));
             onError?.();
         }
     }
@@ -1093,12 +1240,27 @@
                 ...profile,
                 details: profile.details.filter(d => d.game_uid !== accountToDeleteUid)
             };
+            if (accountToDeleteUid === favoriteGameUid) {
+                favoriteGameUid = "";
+                await registerProfile(
+                    token,
+                    profile.name,
+                    profile.picture,
+                    profile.is_private,
+                    profile.background,
+                    profile.records_uid,
+                    undefined,
+                    ""
+                );
+            }
             if (selectedGameUid === accountToDeleteUid) {
-                selectedGameUid = profile.details.length > 0 ? profile.details[0].game_uid : null;
+                const fav = favoriteGameUid;
+                const hasFav = profile.details.some(d => d.game_uid === fav);
+                selectedGameUid = hasFav ? fav : (profile.details.length > 0 ? profile.details[0].game_uid : null);
             }
             addNotification("success", $t("profile.unlink_success"));
         } catch (e) {
-            addNotification("error", e.message);
+            addNotification("error", translateBackendError(e.message));
         } finally {
             accountToDeleteUid = null;
         }
@@ -1325,8 +1487,8 @@
                 </div>
 
                 <div class="flex flex-wrap items-center gap-4">
-                    {#if profile.details && profile.details.length > 0}
-                        {#each profile.details as d}
+                    {#if sortedDetails && sortedDetails.length > 0}
+                        {#each sortedDetails as d}
                             <div
                                 on:click={() => selectedGameUid = d.game_uid}
                                 on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') selectedGameUid = d.game_uid; }}
@@ -1335,6 +1497,19 @@
                                 class="{!profile?.background ? 'bg-gray-100/80' : 'bg-gray-100/25'}  dark:bg-black/20 backdrop-blur-md border text-left p-3 rounded-xl flex items-center gap-4 w-[285px] hover:bg-gray-400/15 dark:hover:bg-black/35 transition-all relative group cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-[#FFE145]
                                 {selectedGameUid === d.game_uid ? 'border-2 border-[#FFE145]' : 'border-2 border-white/10 dark:border-gray-400/20'}"
                             >
+                                <Tooltip
+                                    text={favoriteGameUid === d.game_uid ? ($t("profile.remove_favorite") || "Remove from favorites") : ($t("profile.set_favorite") || "Set as favorite")}
+                                    class="absolute -top-1.5 -left-1.5 z-20 {favoriteGameUid === d.game_uid ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-all"
+                                >
+                                    <button
+                                        on:click|stopPropagation={() => toggleFavorite(d.game_uid)}
+                                        class="border p-1.5 rounded-full shadow-md active:scale-95 flex items-center justify-center cursor-pointer transition-colors
+                                        {favoriteGameUid === d.game_uid ? 'bg-[#F9B90C]/95 border-[#F9B90C]/50 hover:bg-[#F9B90C] text-black' : 'bg-gray-800/95 border-gray-500/50 hover:bg-gray-700 hover:border-gray-400 text-white'}"
+                                    >
+                                        <Icon name="favorite" class="w-4 h-4" />
+                                    </button>
+                                </Tooltip>
+
                                 <Tooltip
                                     text={$t("profile.unlink_account") || "Unlink account"}
                                     class="absolute -top-1.5 -right-1.5 z-20 opacity-0 group-hover:opacity-100 transition-all"
@@ -1443,65 +1618,10 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-2xl p-6 backdrop-blur-sm shadow-sm flex flex-col">
-                            <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-2 mb-4">
-                                <div class="flex items-center gap-2">
-                                    <Icon name="contract" class="w-7 h-7 text-[#21272C] dark:text-[#FDFDFD]" />
-                                    <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
-                                        {$t("profile.crisis_contract")}
-                                    </h2>
-                                </div>
-                            </div>
-
-                            {#if activeAccount.info?.contract && activeAccount.info.contract.level > 0}
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="text-sm font-medium dark:text-gray-400 text-gray-600">
-                                        {$t("profile.clear_time_label")} 
-                                        <span class="dark:text-white text-gray-900 font-bold text-lg ml-1 font-nums">
-                                            {$t("leaderboard.sec", { time: activeAccount.info.contract.clearTime })}
-                                        </span>
-                                    </div>
-                                    <ContractLevelTag level={activeAccount.info.contract.level || 0} />
-                                </div>
-
-                                <div class="flex flex-row justify-center gap-4 flex-wrap">
-                                    {#each contractChars as char}
-                                        <ContractCard
-                                            {char}
-                                            {getOperatorData}
-                                            {getWeaponData}
-                                            {getWeaponIcon}
-                                            {getEquipIcon}
-                                            {getStaticEquipId}
-                                            {equipmentNames}
-                                        />
-                                    {/each}
-                                </div>
-
-                                <div class="grid grid-cols-[repeat(auto-fill,56px)] gap-1.5 mt-4 border-t border-white/10 pt-4 justify-center">
-                                    {#each activeAccount.info.contract.indicators || [] as ind}
-                                        {@const tagId = typeof ind === 'object' ? ind.id : ind}
-                                        {@const tagName = $t(`contractTagNames.${tagId}`) || (typeof ind === 'object' ? ind.name : tagId)}
-                                        {@const tagDesc = formatContractDescription(tagId, $t(`contractTagDesc.${tagId}`) || (typeof ind === 'object' ? ind.desc : ''))}
-                                        {@const cleanDesc = tagDesc ? tagDesc.replace(/<[^>]*>/g, "") : ""}
-                                        <Tooltip text={tagName + (cleanDesc ? ": " + cleanDesc : "")}>
-                                            <div class="w-12 h-12 bg-black/90 border border-white/10 rounded-lg p-1.5 flex items-center justify-center cursor-pointer hover:border-white/30 transition-all">
-                                                <img src={getImagePath(tagId, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = (typeof ind === 'object' ? ind.icon : '')} />
-                                            </div>
-                                        </Tooltip>
-                                    {/each}
-                                </div>
-                            {:else}
-                                <div class="text-center py-10 text-gray-400 italic flex flex-col items-center bg-gray-50/20 dark:bg-[#2C2C2C]/20 rounded-2xl border border-gray-100/50 dark:border-[#444444]/50 w-full backdrop-blur-sm">
-                                    <Icon name="noData" class="w-8 h-8 mb-2 opacity-30" />
-                                    <p class="text-sm">
-                                        {$t("emptyState.noData") || "No records found"}
-                                    </p>
-                                </div>
-                            {/if}
-                        </div>
-                    </div>
+                    <CrisisContract
+                        contract={activeAccount.info?.contract}
+                        hasBackground={!!profile?.background}
+                    />
 
                     <div class="w-full min-w-0 overflow-hidden">
                         <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
@@ -1552,6 +1672,7 @@
                                         {getStatIcon}
                                         charDetails={selectedCharDetails}
                                         charLocale={selectedCharLocale}
+                                        weaponDetails={selectedWeaponDetails}
                                     />
                                 {/key}
                             {/if}

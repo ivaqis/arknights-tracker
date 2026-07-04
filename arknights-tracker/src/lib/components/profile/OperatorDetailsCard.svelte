@@ -1,5 +1,6 @@
 <script>
     import { t } from "$lib/i18n.js";
+    import { currentLocale } from "$lib/stores/locale.js";
     import { fade } from "svelte/transition";
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
@@ -11,6 +12,87 @@
     import { getRarityColor, getHexColorByElement } from "$lib/utils/colorUtils.js";
     import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
+    const localeModules = {
+        en: import.meta.glob("/src/lib/locales/en/equipment.json"),
+        ru: import.meta.glob("/src/lib/locales/ru/equipment.json"),
+        de: import.meta.glob("/src/lib/locales/de/equipment.json"),
+        es: import.meta.glob("/src/lib/locales/es/equipment.json"),
+        fr: import.meta.glob("/src/lib/locales/fr/equipment.json"),
+        id: import.meta.glob("/src/lib/locales/id/equipment.json"),
+        it: import.meta.glob("/src/lib/locales/it/equipment.json"),
+        ja: import.meta.glob("/src/lib/locales/ja/equipment.json"),
+        ko: import.meta.glob("/src/lib/locales/ko/equipment.json"),
+        pt: import.meta.glob("/src/lib/locales/pt/equipment.json"),
+        th: import.meta.glob("/src/lib/locales/th/equipment.json"),
+        vi: import.meta.glob("/src/lib/locales/vi/equipment.json"),
+        zhcn: import.meta.glob("/src/lib/locales/zhcn/equipment.json"),
+        zhtw: import.meta.glob("/src/lib/locales/zhtw/equipment.json"),
+    };
+
+    let equipLocaleData = {};
+
+    $: loadEquipLocale($currentLocale);
+    $: curLabel = $currentLocale === 'ru' ? 'текущ.' : 'current';
+
+    async function loadEquipLocale(lang) {
+        lang = lang || "en";
+        const safeLang = lang.toLowerCase().replace("-", "");
+        const localePath = `/src/lib/locales/${safeLang}/equipment.json`;
+        const fallbackPath = `/src/lib/locales/en/equipment.json`;
+
+        let localeLoader = localeModules[safeLang]?.[localePath];
+        if (!localeLoader && safeLang !== "en") {
+            localeLoader = localeModules["en"]?.[fallbackPath];
+        }
+
+        if (localeLoader) {
+            const mod = await localeLoader();
+            equipLocaleData = mod.default || mod;
+        } else {
+            equipLocaleData = {};
+        }
+    }
+
+    function interpolateBlackboard(text, bb) {
+        if (!text) return "";
+        if (!bb || Object.keys(bb).length === 0) return text;
+
+        return text.replace(/\{([^}]+)\}/g, (match, content) => {
+            let [expr, format] = content.split(":");
+            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
+
+            for (const key in bb) {
+                const regex = new RegExp(`\\b${key}\\b`, "g");
+                mathStr = mathStr.replace(regex, `(${bb[key]})`);
+            }
+
+            if (/[a-zA-Z_]/.test(mathStr)) return match;
+
+            let result = 0;
+            try {
+                result = new Function("return " + mathStr)();
+            } catch (e) {
+                return match;
+            }
+            if (format) {
+                if (format.includes("%")) {
+                    result = parseFloat((result * 100).toFixed(2)) + "%";
+                } else if (format === "0") {
+                    result = Math.round(result);
+                } else {
+                    result = parseFloat(Number(result).toFixed(2));
+                }
+            }
+            return `<span class="text-[#38BDF8] font-bold drop-shadow-sm">${result}</span>`;
+        });
+    }
+
+    function tOrFallback(key, fallback) {
+        const translated = $t(key);
+        if (typeof translated === "object") return fallback;
+        return translated === key ? fallback : translated;
+    }
+
     export let selectedChar;
     export let detailedChar;
     export let opData;
@@ -20,13 +102,21 @@
     export let talentsList;
     export let getWeaponData;
     export let getWeaponIcon;
-    export let getWeaponTerms;
     export let getStaticEquipId;
     export let getEquipRarity;
     export let getEquipTier;
     export let getStatIcon;
     export let charDetails = null;
     export let charLocale = null;
+    export let weaponDetails = null;
+
+    function getEquipName(staticId, fallbackName) {
+        if (!staticId) return fallbackName || "";
+        const transKey = `equipment.${staticId}`;
+        const trans = $t(transKey);
+        if (trans && trans !== transKey) return trans;
+        return fallbackName || staticId;
+    }
 
     function getSkillDescription(skillKey, skillLvl) {
         const skillData = charLocale?.skills?.[skillKey] || {};
@@ -126,6 +216,469 @@
         }
         return "";
     }
+
+    const DB_PROP_TO_ATTR_TYPE = {
+        "equip_attr_def": "Def",
+        "equip_attr_maxhp": "MaxHp",
+        "equip_attr_atk": "Atk",
+        "equip_attr_str": "Str",
+        "equip_attr_agi": "Agi",
+        "equip_attr_wisd": "Wisd",
+        "equip_attr_will": "Will",
+        "equip_sub": "Sub",
+        "equip_attr_normal_skill_damage_increase": "NormalSkillEfficiency",
+        "equip_attr_combo_skill_damage_increase": "ComboSkillEfficiency",
+        "equip_attr_normal_attack_damage_increase": "NormalAttackDamageIncrease",
+        "equip_attr_ultimate_sp_gain_scalar": "UltimateSpGainScalar",
+        "equip_attr_ultimate_sp_gain": "UltimateSpGain",
+        "equip_attr_cryst_and_pulse_damage_increase": "CrystAndPulseDamageIncrease",
+        "equip_attr_physical_damage_increase": "PhysicalDamageIncrease",
+        "equip_all_skill_damage_increase": "AllSkillDamageIncrease",
+        "equip_spell_damage_increase": "SpellDamageIncrease",
+        "equip_attr_physical_and_spellinfliction_enhance": "OriginiumArts",
+        "equip_attr_physical_and_spellInfliction_enhance": "OriginiumArts",
+        "equip_attr_heal_scalar": "HealScalar",
+        "equip_attr_spell_vulnerable": "SpellVulnerable"
+    };
+
+    function matchDisplayAttr(propKey, displayAttrs) {
+        if (!propKey || !displayAttrs) return null;
+        const lowerProp = propKey.toLowerCase();
+        
+        const targetType = DB_PROP_TO_ATTR_TYPE[propKey] || DB_PROP_TO_ATTR_TYPE[lowerProp];
+        if (targetType) {
+            const found = displayAttrs.find(a => a.attrType === targetType || a.attrType.toLowerCase() === targetType.toLowerCase());
+            if (found) return found;
+        }
+        
+        const cleanProp = lowerProp.replace("equip_attr_", "").replace("equip_", "").replace("_increase", "").replace(/_/g, "");
+        let match = displayAttrs.find(a => {
+            const cleanAttr = a.attrType.toLowerCase().replace(/_/g, "");
+            return cleanAttr === cleanProp || cleanAttr.includes(cleanProp) || cleanProp.includes(cleanAttr);
+        });
+        if (match) return match;
+        
+        return displayAttrs.find(a => {
+            const cleanAttr = a.attrType.toLowerCase();
+            return lowerProp.includes(cleanAttr) || cleanAttr.includes(cleanProp);
+        });
+    }
+
+    function getPrimaryAttrIcon(charClass) {
+        const cls = charClass?.toLowerCase() || "";
+        if (cls.includes("caster") || cls.includes("supporter")) return "int";
+        if (cls.includes("specialist") || cls.includes("recon")) return "agi";
+        if (cls.includes("vanguard")) return "will";
+        return "str";
+    }
+
+    function getWeaponStatLabel(statKey) {
+        if (!statKey) return "";
+        const sKey = statKey.toLowerCase();
+        if (sKey === "baseatk") {
+            return $t("stats.baseAtk") || "Base ATK";
+        }
+        const mappings = {
+            "str": "equipSkills.Str",
+            "agi": "equipSkills.Agi",
+            "wisd": "equipSkills.Wisd",
+            "will": "equipSkills.Will",
+            "atk": "equipSkills.Atk",
+            "def": "equipSkills.Def",
+            "phy_dmg_up": "equipSkills.PhysicalDamageIncrease",
+            "spell_dmg_up": "equipSkills.SpellDamageIncrease",
+            "pulse_dmg_up": "equipSkills.PulseDamageIncrease",
+            "cryst_dmg_up": "equipSkills.CrystDamageIncrease",
+            "fire_dmg_up": "equipSkills.FireDamageIncrease",
+            "ice_dmg_up": "equipSkills.CrystDamageIncrease",
+            "crit_up": "equipSkills.CriticalRate",
+            "hp_up": "equipSkills.MaxHp",
+            "shield_up": "equipSkills.Shield",
+            "usgs": "equipSkills.UltimateSpGainScalar",
+            "primary_attr_up": "equipSkills.Main",
+            "second_attr_up": "equipSkills.Sub"
+        };
+
+        const transKey = mappings[sKey];
+        if (transKey) {
+            const trans = $t(transKey);
+            if (trans && trans !== transKey) return trans;
+        }
+
+        // Substring matching for translation keys
+        for (const [k, tKey] of Object.entries(mappings)) {
+            if (sKey.includes(k)) {
+                const trans = $t(tKey);
+                if (trans && trans !== tKey) return trans;
+            }
+        }
+
+        const englishFallback = {
+            "str": "Strength",
+            "agi": "Agility",
+            "wisd": "Wisdom",
+            "will": "Willpower",
+            "atk": "Attack",
+            "def": "Defense",
+            "phy_dmg_up": "Physical DMG Dealt",
+            "spell_dmg_up": "Spell DMG Dealt",
+            "pulse_dmg_up": "Pulse DMG Dealt",
+            "cryst_dmg_up": "Crystal DMG Dealt",
+            "fire_dmg_up": "Fire DMG Dealt",
+            "ice_dmg_up": "Ice DMG Dealt",
+            "crit_up": "Crit Rate",
+            "hp_up": "HP",
+            "shield_up": "Shield",
+            "usgs": "SP Gain",
+            "primary_attr_up": "Primary Attribute",
+            "second_attr_up": "Secondary Attribute"
+        };
+
+        for (const [k, fallbackVal] of Object.entries(englishFallback)) {
+            if (sKey.includes(k)) return fallbackVal;
+        }
+
+        return statKey
+            .split("_")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(" ");
+    }
+
+    function getPropertyLabel(propKey) {
+        if (!propKey) return "Stat";
+        const rawKey = propKey.replace("equip_attr_", "").replace("equip_", "");
+        const lowerKey = rawKey.toLowerCase();
+        
+        // Exact mapping from database keys to existing i18n keys
+        const mappings = {
+            "wisd": "equipSkills.Wisd",
+            "str": "equipSkills.Str",
+            "agi": "equipSkills.Agi",
+            "will": "equipSkills.Will",
+            "def": "equipSkills.Def",
+            "maxhp": "equipSkills.MaxHp",
+            "hp": "equipSkills.MaxHp",
+            "atk": "equipSkills.Atk",
+            "ultimate_sp_gain_scalar": "equipSkills.UltimateSpGainScalar",
+            "ultimate_sp_gain": "equipSkills.UltimateSpGainScalar",
+            "heal_scalar": "equipSkills.HealOutputIncrease",
+            "heal_output_increase": "equipSkills.HealOutputIncrease",
+            "heal_taken_increase": "equipSkills.HealTakenIncrease",
+            "spell_vulnerable": "equipSkills.SpellDamageIncrease",
+            "spell_damage_increase": "equipSkills.SpellDamageIncrease",
+            "physical_damage_increase": "equipSkills.PhysicalDamageIncrease",
+            "cryst_and_pulse_damage_increase": "equipSkills.CrystAndPulseDamageIncrease",
+            "normal_attack_damage_increase": "equipSkills.NormalAttackDamageIncrease",
+            "normal_skill_damage_increase": "equipSkills.NormalSkillEfficiency",
+            "combo_skill_damage_increase": "equipSkills.ComboSkillEfficiency",
+            "ultimate_skill_damage_increase": "equipSkills.UltimateSkillEfficiency",
+            "critical_damage_increase": "equipSkills.CriticalDamageIncrease",
+            "crit_dmg_up": "equipSkills.CriticalDamageIncrease",
+            "critical_rate": "equipSkills.CriticalRate",
+            "crit_rate": "equipSkills.CriticalRate",
+            "crit_up": "equipSkills.CriticalRate",
+            "sub": "equipSkills.Sub",
+            "main": "equipSkills.Main"
+        };
+
+        const transKey = mappings[lowerKey];
+        if (transKey) {
+            const trans = $t(transKey);
+            if (trans && trans !== transKey) return trans;
+        }
+
+        // Substring matching for translation keys
+        for (const [k, tKey] of Object.entries(mappings)) {
+            if (lowerKey.includes(k)) {
+                const trans = $t(tKey);
+                if (trans && trans !== tKey) return trans;
+            }
+        }
+
+        // Default English fallback values
+        const englishFallback = {
+            "wisd": "Wisdom",
+            "str": "Strength",
+            "agi": "Agility",
+            "will": "Willpower",
+            "def": "Defense",
+            "maxhp": "HP",
+            "hp": "HP",
+            "atk": "Attack",
+            "ultimate_sp_gain": "SP Gain",
+            "heal_scalar": "Healing",
+            "spell_vulnerable": "Vulnerability",
+            "physical_damage_increase": "Physical DMG Dealt",
+            "cryst_and_pulse_damage_increase": "Crystal/Pulse DMG Increase",
+            "normal_attack_damage_increase": "Normal Attack DMG Increase",
+            "normal_skill_damage_increase": "Battle Skill DMG Bonus",
+            "combo_skill_damage_increase": "Combo Skill DMG Bonus",
+            "ultimate_skill_damage_increase": "Ultimate DMG Bonus",
+            "critical_damage_increase": "Critical DMG",
+            "critical_rate": "Critical Rate",
+            "sub": "Secondary Attribute",
+            "main": "Main Attribute"
+        };
+
+        for (const [k, fallbackVal] of Object.entries(englishFallback)) {
+            if (lowerKey.includes(k)) return fallbackVal;
+        }
+
+        return rawKey
+            .split("_")
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(" ");
+    }
+
+    function getWeaponStatsToRender(wpn, wpnStatic, weaponDetails, opClass) {
+        if (!wpn) return [];
+        let list = [];
+        
+        let baseAtkVal = 0;
+        if (weaponDetails?.levels?.baseAtk) {
+            baseAtkVal = weaponDetails.levels.baseAtk[wpn.level - 1] || weaponDetails.levels.baseAtk[0] || 0;
+        } else {
+            baseAtkVal = Math.round(80 + wpn.level * 2.5);
+        }
+        list.push({
+            key: "baseAtk",
+            icon: "atk",
+            label: getWeaponStatLabel("baseatk"),
+            value: `${baseAtkVal}`
+        });
+
+        if (weaponDetails?.blackboard) {
+            const refineLevel = wpn.refineLevel !== undefined ? wpn.refineLevel : 0;
+            const potSkillIndex = weaponDetails.potSkill || 3;
+            
+            for (let i = 1; i <= 3; i++) {
+                const skillKey = `skill${i}`;
+                const bb = weaponDetails.blackboard[skillKey];
+                const tiers = weaponDetails.skillLevels?.[skillKey];
+                
+                if (bb && tiers) {
+                    let activeTier = tiers[0];
+                    for (const t of tiers) {
+                        if (wpn.level >= t.level) activeTier = t;
+                    }
+                    let rank = activeTier.lower;
+                    let upper = activeTier.upper;
+                    if (i === potSkillIndex) {
+                        rank += refineLevel;
+                        upper += refineLevel;
+                    }
+                    if (rank > upper) rank = upper;
+                    if (rank > 9) rank = 9;
+
+                    const bbKeys = Object.keys(bb);
+                    const mainKey = bbKeys.find(k => k !== 'duration' && k !== 'duration2' && k !== 'duration3' && k !== 'duration4' && k !== 'max_stack' && k !== 'max_stacks' && k !== 'cd' && k !== 'cd ' && k !== 'lv');
+                    
+                    if (mainKey) {
+                        const values = bb[mainKey];
+                        const val = values ? (values[rank - 1] !== undefined ? values[rank - 1] : values[0]) : null;
+                        if (val !== null && val !== undefined) {
+                            let iconName = getStatIcon(mainKey);
+                            if (!iconName) {
+                                const kLower = mainKey.toLowerCase();
+                                if (kLower.includes("physical") || kLower.includes("phy")) {
+                                    iconName = "physicaldamageincrease";
+                                } else if (kLower.includes("usgs") || kLower.includes("sp_gain")) {
+                                    iconName = "usp";
+                                } else if (kLower === "mainattr" || kLower === "primary_attr_up") {
+                                    iconName = getPrimaryAttrIcon(opClass);
+                                } else {
+                                    iconName = "circle";
+                                }
+                            }
+                            
+                            let displayVal = "";
+                            const num = Number(val);
+                            if (!isNaN(num)) {
+                                if (Math.abs(num) > 0 && Math.abs(num) < 1) {
+                                    displayVal = `${Math.round(num * 1000) / 10}%`;
+                                } else {
+                                    displayVal = `${Math.round(num)}`;
+                                }
+                            } else {
+                                displayVal = val;
+                            }
+
+                            list.push({
+                                key: mainKey,
+                                icon: iconName,
+                                label: getWeaponStatLabel(mainKey),
+                                value: displayVal
+                            });
+                        }
+                    }
+                }
+            }
+        } else {
+            list.push({ key: "def", icon: "def", label: "DEF", value: `${Math.round(20 + wpn.level * 0.8)}` });
+            list.push({ key: "maxhp", icon: "hp", label: "HP", value: `${Math.round(150 + wpn.level * 4)}` });
+        }
+
+        return list;
+    }
+
+    function getWeaponStatsRanges(wpn, wpnStatic, weaponDetails, opClass) {
+        if (!wpn) return [];
+        let list = [];
+
+        // Base ATK
+        let baseAtkMin = 83;
+        let baseAtkMax = 305;
+        if (weaponDetails?.levels?.baseAtk && weaponDetails.levels.baseAtk.length > 0) {
+            baseAtkMin = weaponDetails.levels.baseAtk[0];
+            baseAtkMax = weaponDetails.levels.baseAtk[weaponDetails.levels.baseAtk.length - 1];
+        }
+        list.push({
+            key: "baseAtk",
+            icon: "atk",
+            label: getWeaponStatLabel("baseatk"),
+            range: `${baseAtkMin}-${baseAtkMax}`
+        });
+
+        if (weaponDetails?.blackboard) {
+            for (let i = 1; i <= 3; i++) {
+                const skillKey = `skill${i}`;
+                const bb = weaponDetails.blackboard[skillKey];
+                if (bb) {
+                    const bbKeys = Object.keys(bb);
+                    const mainKey = bbKeys.find(k => k !== 'duration' && k !== 'duration2' && k !== 'duration3' && k !== 'duration4' && k !== 'max_stack' && k !== 'max_stacks' && k !== 'cd' && k !== 'cd ' && k !== 'lv');
+                    if (mainKey) {
+                        const values = bb[mainKey];
+                        if (values && values.length > 0) {
+                            const minVal = values[0];
+                            const maxVal = values[values.length - 1];
+                            let iconName = getStatIcon(mainKey);
+                            if (!iconName) {
+                                const kLower = mainKey.toLowerCase();
+                                if (kLower.includes("physical") || kLower.includes("phy")) {
+                                    iconName = "physicaldamageincrease";
+                                } else if (kLower.includes("usgs") || kLower.includes("sp_gain")) {
+                                    iconName = "usp";
+                                } else if (kLower === "mainattr" || kLower === "primary_attr_up") {
+                                    iconName = getPrimaryAttrIcon(opClass);
+                                } else {
+                                    iconName = "circle";
+                                }
+                            }
+                            
+                            let rangeStr = "";
+                            const minNum = Number(minVal);
+                            const maxNum = Number(maxVal);
+                            if (!isNaN(minNum) && !isNaN(maxNum)) {
+                                if (Math.abs(minNum) > 0 && Math.abs(minNum) < 1) {
+                                    rangeStr = `${Math.round(minNum * 100)}%-${Math.round(maxNum * 100)}%`;
+                                } else {
+                                    rangeStr = `${Math.round(minNum)}-${Math.round(maxNum)}`;
+                                }
+                            } else {
+                                rangeStr = `${minVal}-${maxVal}`;
+                            }
+
+                            list.push({
+                                key: mainKey,
+                                icon: iconName,
+                                label: getWeaponStatLabel(mainKey),
+                                range: rangeStr
+                            });
+                        }
+                    }
+                }
+            }
+        } else {
+            list.push({ key: "def", icon: "def", label: "DEF", range: "21-92" });
+            list.push({ key: "maxhp", icon: "hp", label: "HP", range: "154-510" });
+        }
+
+        return list;
+    }
+
+    function getSkillStatLabel(skillKey, key, charLocale, lang = "en") {
+        const localized = charLocale?.skills?.[skillKey]?.[skillKey]?.[key];
+        if (localized) return localized;
+
+        const tKey = `stats.${key}`;
+        const trans = $t(tKey);
+        if (trans && trans !== tKey) return trans;
+
+        const statsKeyMap = {
+            "hp": "stats.hp",
+            "atk": "stats.atk",
+            "def": "stats.def",
+            "cooldown": "stats.coolDown",
+            "cool_down": "stats.coolDown",
+            "costvalue": "stats.costValue",
+            "cost_value": "stats.costValue"
+        };
+        const mappedKey = statsKeyMap[key.toLowerCase()];
+        if (mappedKey) {
+            const mappedTrans = $t(mappedKey);
+            if (mappedTrans && mappedTrans !== mappedKey) return mappedTrans;
+        }
+
+        return key
+            .replace(/([A-Z])/g, ' $1')
+            .replace(/([0-9]+)/g, ' $1 ')
+            .replace(/_/g, ' ')
+            .trim()
+            .split(/\s+/)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+            .join(" ");
+    }
+
+    function getSkillStatsList(skillKey, skillLvl, charDetails, charLocale, lang = "en") {
+        if (!charDetails || !charDetails.skills || !charDetails.skills[skillKey]) {
+            return [];
+        }
+
+        const skillValues = charDetails.skills[skillKey];
+        const list = [];
+        const safeLang = (lang || "en").toLowerCase().replace("-", "");
+
+        for (const [key, valObj] of Object.entries(skillValues)) {
+            if (key === "elementType") continue;
+
+            let data = null;
+            let isPercent = false;
+
+            if (valObj && typeof valObj === "object" && Array.isArray(valObj.data)) {
+                data = valObj.data;
+                isPercent = valObj.dataType === "percent";
+            } else if (Array.isArray(valObj)) {
+                data = valObj;
+            }
+
+            if (!data || data.length === 0) continue;
+
+            const currentIdx = Math.min(skillLvl - 1, data.length - 1);
+            const currentVal = parseFloat(data[currentIdx]);
+
+            if (isNaN(currentVal)) continue;
+
+            let currentStr = "";
+            const isTimeStat = key.toLowerCase().includes("cooldown") || key.toLowerCase() === "cool" || key.toLowerCase().includes("duration");
+            const suffix = isTimeStat ? (safeLang === "ru" ? " сек." : "s") : "";
+
+            if (isPercent) {
+                const curPct = Math.round(currentVal * 100);
+                currentStr = `${curPct}%`;
+            } else {
+                const curValFormatted = currentVal % 1 === 0 ? currentVal.toString() : currentVal.toFixed(1);
+                currentStr = `${curValFormatted}${suffix}`;
+            }
+
+            list.push({
+                key,
+                label: getSkillStatLabel(skillKey, key, charLocale, lang),
+                value: currentStr
+            });
+        }
+
+        return list;
+    }
 </script>
 
 <div class="w-full overflow-x-auto custom-scrollbar pb-1">
@@ -136,8 +689,8 @@
             <Image id={opData.id} variant="operator-splash" className="w-full h-full object-contain object-center" />
         </div>
 
-        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div class="lg:col-span-7 relative flex flex-col rounded-xl justify-between">
+        <div class="relative z-10 grid grid-cols-12 gap-8 items-stretch">
+            <div class="col-span-7 relative flex flex-col rounded-xl justify-between">
                 <div class="z-10">
                     <div class="flex flex-col gap-2 mb-2">
                         <div class="flex items-start justify-between w-full gap-2">
@@ -189,6 +742,7 @@
                                     {@const currentElement = skillMeta?.property?.key?.replace("skill_property_", "") || targetCharData?.property?.key?.replace("char_property_", "") || opData?.element || "physical"}
                                     {@const currentColor = getHexColorByElement(currentElement) || "#5E5D5D"}
                                     {@const isUltimate = skillKey === "ultimate"}
+                                    {@const skillStats = getSkillStatsList(skillKey, skillLvl, charDetails, charLocale, $currentLocale)}
                                     
                                     <Tooltip>
                                         <div class="flex flex-col items-center group relative cursor-pointer">
@@ -243,6 +797,16 @@
                                             <span class="text-xs leading-relaxed text-gray-200">
                                                 {@html parseRichText(getSkillDescription(skillKey, skillLvl))}
                                             </span>
+                                            {#if skillStats && skillStats.length > 0}
+                                                <div class="border-t border-white/10 pt-1.5 mt-1.5 flex flex-col gap-1 select-none">
+                                                    {#each skillStats as stat}
+                                                        <div class="flex items-center justify-between text-[11px]">
+                                                            <span class="text-white/70">{stat.label}</span>
+                                                            <span class="font-nums text-[#38BDF8] font-bold">{stat.value}</span>
+                                                        </div>
+                                                    {/each}
+                                                </div>
+                                            {/if}
                                         </div>
                                     </Tooltip>
                                 {/if}
@@ -256,7 +820,7 @@
                                     <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/90</span></span>
                                 </div>
                             </div>
-                            <AscensionIcon ascension={selectedChar.evolvePhase || 0} size={42} className="pb-1" />
+                            <AscensionIcon ascension={selectedChar.evolvePhase || 0} size={56} className="pb-1" />
                         </div>
                     </div>
 
@@ -311,114 +875,124 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-5 flex flex-col gap-2 justify-between">
+            <div class="col-span-5 flex flex-col gap-2 justify-between">
                 {#if detailedChar?.weapon}
                     {@const wpn = detailedChar.weapon}
                     {@const wpnStatic = getWeaponData(wpn)}
                     {@const wpnName = $t(`weaponsList.${wpnStatic?.id}`) !== `weaponsList.${wpnStatic?.id}` ? $t(`weaponsList.${wpnStatic?.id}`) : (wpnStatic?.name || wpn.id)}
-                    {@const wpnTerms = getWeaponTerms(wpn)}
+                    {@const wpnStats = getWeaponStatsToRender(wpn, wpnStatic, weaponDetails, opData.class)}
+                    {@const baseAtkStat = wpnStats.find(s => s.key === 'baseAtk')}
                     
-                    <div class="relative pl-8 pr-3 py-3 flex flex-row items-stretch justify-between gap-3 rounded-xl max-h-[140px]"
-                         style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
-                        
-                        <div class="flex flex-col justify-end items-start shrink-0">
-                            <div class="flex flex-col items-start leading-none select-none">
-                                <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                <span class="text-[36px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
-                                <div class="w-12 h-[4px] mt-1 rounded" style="background-color: {getRarityColor(wpnStatic?.rarity || wpn.rarity || 5)};"></div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col gap-2 flex-1 min-w-0 ml-1">
-                            <div class="flex flex-col items-end w-full min-w-0">
-                                <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="flex flex-row-reverse overflow-visible w-full">
-                                    <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0 mr-[-32px]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
-                                        {wpnName}
-                                    </h4>
-                                </a>
-                                <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-35px]">
-                                    {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
-                                        <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
-                                    {/each}
+                    <Tooltip class="w-full">
+                        <a href="/weapons/{wpnStatic?.id}?level={wpn.level}&refine={wpn.refineLevel}" class="relative pl-8 pr-3 py-3 flex flex-row items-stretch justify-between gap-3 rounded-xl max-h-[140px] hover:bg-white/5 transition-all w-full select-none"
+                           style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
+                            
+                            <div class="flex flex-col justify-end items-start shrink-0">
+                                <div class="flex flex-col items-start leading-none select-none">
+                                    <span class="text-[9px] font-black text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
+                                    <span class="text-[36px] font-black text-white leading-none tracking-tighter" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{wpn.level}</span>
+                                    <div class="w-12 h-[4px] mt-1 rounded" style="background-color: {getRarityColor(wpnStatic?.rarity || wpn.rarity || 5)};"></div>
                                 </div>
                             </div>
 
-                            <div class="flex items-center gap-1.5 mt-8 select-none ml-[-6px] justify-start z-30">
-                                {#each ['atk', 'def', 'maxhp'] as statKey}
-                                    {@const calculatedStat = statKey === 'atk' ? Math.round(80 + wpn.level * 2.5) : (statKey === 'def' ? Math.round(20 + wpn.level * 0.8) : Math.round(150 + wpn.level * 4))}
-                                    <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-black/30 px-2 py-1 rounded leading-none border border-white/5 w-fit">
-                                        <Icon name={statKey} class="w-3.5 h-3.5 text-white/90" />
-                                        <span>+{calculatedStat}</span>
+                            <div class="flex flex-col flex-1 min-w-0 ml-1">
+                                <div class="flex flex-col items-end w-full min-w-0">
+                                    <div class="flex flex-row-reverse overflow-visible w-full mr-[-40px]">
+                                        <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0 mr-[-32px]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                            {wpnName}
+                                        </h4>
                                     </div>
-                                {/each}
-                            </div>
-                        </div>
-
-                        <div class="flex items-center shrink-0 ml-2">
-                            <div class="relative w-[120px] h-[120px] flex items-center justify-center shrink-0">
-                                <div class="absolute top-0 right-0 z-10">
-                                    <Tooltip text="R{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}">
-                                        <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
-                                    </Tooltip>
-                                </div>
-                                <img 
-                                    src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
-                                    alt="Weapon" 
-                                    class="w-full h-full object-contain pointer-events-none"
-                                    on:error={(e) => { if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) e.target.src = wpn.weaponData.iconUrl; }} 
-                                />
-                            </div>
-
-                            {#if wpnTerms && wpnTerms.length > 0}
-                                <div class="flex flex-col gap-1 shrink-0 items-center justify-center ml-2 select-none">
-                                    <div class="flex flex-col gap-1 w-full">
-                                        {#each wpnTerms as term}
-                                            <div class="flex items-center gap-1.5 px-2 py-1 rounded shadow-sm w-full justify-center" style="background: linear-gradient(to right, #1C1C1C, #2D2D2B);">
-                                                <div class="w-[5px] h-[12px] rounded-full transform rotate-[40deg] bg-[#FFE145] border-[#FFE145] shrink-0"></div>
-                                                <span class="text-[12px] font-black text-[#FFE145] font-nums leading-none">{term}</span>
-                                            </div>
+                                    <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-75px] z-40">
+                                        {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
+                                            <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
                                         {/each}
                                     </div>
+                                </div>
 
-                                    <div class="mt-1 flex items-center justify-center">
+                                <div class="flex items-center gap-3 w-full mt-5 select-none ml-[-6px] justify-between z-30">
+                                    <div class="flex items-center justify-center">
                                         {#if wpn.gem && wpn.gem.gemData}
                                             {@const gemRarity = parseInt(wpn.gem.gemData.templateId?.replace("item_gem_rarity_", "")) || wpn.gem.gemData.rarity || 4}
                                             {@const gemColor = getRarityColor(gemRarity)}
                                             {@const localIcon = getGemIcon(wpn.gem.gemData)}
-                                                <div class="relative w-8 h-8 rounded-md border-b-2 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
+                                            <div class="relative w-8 h-8 rounded-md border-b-2 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden transition-transform" style="border-color: {gemColor}; box-shadow: 0 0 4px {gemColor}33;">
+                                                <img 
+                                                    src={getImagePath('item_gem_rarity_' + gemRarity, 'essence-type-icon')} 
+                                                    alt="" 
+                                                    class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none" 
+                                                />
+                                                {#if wpn.gem.gemData.icon}
                                                     <img 
-                                                        src={getImagePath('item_gem_rarity_' + gemRarity, 'essence-type-icon')} 
-                                                        alt="" 
-                                                        class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none" 
+                                                        src={getImagePath(localIcon, 'essence-icon') || wpn.gem.gemData.icon} 
+                                                        alt={wpn.gem.gemData.name} 
+                                                        referrerpolicy="no-referrer" 
+                                                        class="relative z-10 w-7 h-7 object-contain left-0.5 bottom-0.5" 
+                                                        on:error={(e) => {
+                                                            if (e.target.src !== wpn.gem.gemData.icon) {
+                                                                e.target.src = wpn.gem.gemData.icon;
+                                                            }
+                                                        }}
                                                     />
-                                                    {#if wpn.gem.gemData.icon}
-                                                        <img 
-                                                            src={getImagePath(localIcon, 'essence-icon') || wpn.gem.gemData.icon} 
-                                                            alt={wpn.gem.gemData.name} 
-                                                            referrerpolicy="no-referrer" 
-                                                            class="relative z-10 w-7 h-7 object-contain left-0.5 bottom-0.5" 
-                                                            on:error={(e) => {
-                                                                if (e.target.src !== wpn.gem.gemData.icon) {
-                                                                    e.target.src = wpn.gem.gemData.icon;
-                                                                }
-                                                            }}
-                                                        />
-                                                    {:else}
-                                                        <div class="relative z-10 w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
-                                                    {/if}
-                                                </div>
+                                                {:else}
+                                                    <div class="relative z-10 w-1.5 h-1.5 rounded-full" style="background-color: {gemColor}"></div>
+                                                {/if}
+                                            </div>
                                         {:else}
-                                            <Tooltip text={$t("profile.no_essence") || "No essence"}>
-                                                <div class="relative w-8 h-8 rounded-md border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
-                                                    <Icon name="noData" class="shrink-0 w-3 h-3" />
-                                                </div>
-                                            </Tooltip>
+                                            <div class="relative w-8 h-8 rounded-md border border-dashed border-white/20 bg-black/20 flex items-center justify-center text-white/20 hover:border-white/40 hover:text-white/40 transition-colors cursor-pointer">
+                                                <Icon name="noData" class="shrink-0 w-3 h-3" />
+                                            </div>
                                         {/if}
                                     </div>
+                                    
+                                    {#if baseAtkStat}
+                                        <div class="flex items-center">
+                                            <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-gray-200/50 px-1.5 py-1.5 rounded leading-none w-fit">
+                                                <Icon name="atk" class="w-3.5 h-3.5 text-white/90" />
+                                            </div>
+                                            <span class="text-white ml-1.5 items-center text-[18px] font-nums">{baseAtkStat.value}</span>
+                                        </div>
+                                    {/if}
                                 </div>
-                            {/if}
+                            </div>
+
+                            <div class="flex items-center gap-2 shrink-0 ml-2 pr-5">
+                                <div class="relative w-[120px] h-[120px] flex items-center justify-center shrink-0">
+                                    <div class="absolute top-0 right-0 z-10">
+                                        <PotentialIcon pot={wpn.refineLevel !== undefined ? wpn.refineLevel : 0} size={30} />
+                                    </div>
+                                    <img 
+                                        src={getWeaponIcon(wpn) || wpn.weaponData?.iconUrl || ''} 
+                                        alt="Weapon" 
+                                        class="w-full h-full object-contain pointer-events-none ml-5"
+                                        on:error={(e) => { if (wpn.weaponData?.iconUrl && e.target.src !== wpn.weaponData.iconUrl) e.target.src = wpn.weaponData.iconUrl; }} 
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                        <div slot="content" class="flex flex-col gap-2 text-left max-w-[280px] p-1 font-sans select-none">
+                            <div class="flex flex-col border-b border-white/10 pb-1 mb-0.5">
+                                <span class="font-bold text-[#FFE145] text-sm">{wpnName}</span>
+                                <span class="text-[10px] text-gray-400 font-medium font-nums leading-none mt-1">
+                                    Lv. {wpn.level} • R{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}
+                                </span>
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                {#each getWeaponStatsRanges(wpn, wpnStatic, weaponDetails, opData.class) as stat}
+                                    {@const currentStat = wpnStats.find(s => s.key === stat.key)}
+                                    <div class="flex items-center justify-between text-xs">
+                                        <div class="flex items-center gap-1.5 text-white/90">
+                                            <Icon name={stat.icon} class="w-3.5 h-3.5 text-white/70" />
+                                            <span>{stat.label}</span>
+                                        </div>
+                                        <div class="font-nums flex items-center gap-1.5">
+                                            <span class="text-[#38BDF8] font-bold">+{stat.range}</span>
+
+                                        </div>
+                                    </div>
+                                {/each}
+                            </div>
                         </div>
-                    </div>
+                    </Tooltip>
                 {:else}
                     <div class="flex flex-col gap-2 items-center justify-center bg-gradient-to-r from-transparent to-[#1a1a1a] border border-white/5 rounded-xl p-6 text-xs text-white/40 italic flex items-center justify-center min-h-[150px]">
                         <Icon name="noData" class="shrink-0 w-6 h-6" />
@@ -426,7 +1000,7 @@
                     </div>
                 {/if}
 
-                <div class="grid grid-cols-2 gap-2 flex-1">
+                <div class="flex flex-col gap-1.5 flex-1">
                     {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
                         {@const equip = detailedChar?.[eqKey]}
                         {#if equip && equip.equipData}
@@ -446,68 +1020,161 @@
                                 const subProperties = (equip.equipData.properties || []).filter(p => !p.toLowerCase().includes("def"));
                                 for (const propKey of subProperties) {
                                     const statIcon = getStatIcon(propKey);
-                                    const displayAttr = staticEquip?.displayAttr?.find(a => a.attrType === propKey.replace("equip_attr_", "").toUpperCase() || propKey.toLowerCase().includes(a.attrType.toLowerCase()));
+                                    const displayAttr = matchDisplayAttr(propKey, staticEquip?.displayAttr);
                                     const statVal = displayAttr ? displayAttr.values[tier] || displayAttr.values[0] : null;
                                     list.push({ propKey, statIcon, statVal });
                                 }
                                 return list;
                             })()}
                             
-                            <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-2 rounded-xl pl-5 hover:bg-white/5 transition-all cursor-pointer min-h-[32px] min-w-0"
-                               style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
-                                <div class="flex flex-col items-center justify-between shrink-0 h-full">
-                                    <!--<div class="w-9 h-5 select-none self-start">
-                                    
-                                        <svg class="w-full h-full filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]" viewBox="0 0 54 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="33.3789" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 33.3789 15)" fill={tier >= 1 ? "#26BAFB" : "#8F8F8F"} />
-                                            <rect x="41.8555" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 41.8555 15)" fill={tier >= 2 ? "#26BAFB" : "#8F8F8F"} />
-                                            <rect x="50.3281" y="15" width="4.23793" height="14.7562" rx="2.11897" transform="rotate(30 50.3281 15)" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                            <path d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                            {#if tier >= 1}
-                                                <path d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.6885 14.1904L23.625 10.4453L28.0068 17Z" fill="#26BAFB" />
-                                            {/if}
-                                            <path d="M31 0L36.1962 9H25.8038L31 0Z" fill={tier >= 3 ? "#26BAFB" : "#8F8F8F"} />
-                                            {#if tier >= 1 && tier < 3}
-                                                <path d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z" fill="#26BAFB" />
-                                            {/if}
-                                        </svg>
-                                    </div>-->
-                                    <div class="relative w-20 h-20 flex items-center justify-center -my-1 top-4">
-                                        <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" style="transform: scale(1.1);" class="w-[110%] h-full object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
-                                    </div>
-                                    <div class="w-12 h-[4px] rounded" style="background-color: {rarityColor};"></div>
-                                </div>
-                                
-                                <div class="flex flex-col items-end gap-1 flex-1 select-none overflow-hidden justify-center h-full">
-                                    {#each statsToRender as stat}
-                                        <div class="flex items-center gap-1.5 text-[13px] font-black text-white font-nums bg-black/30 px-2 py-1 rounded leading-none border border-white/5 w-fit">
-                                            {#if stat.statIcon}
-                                                <Icon name={stat.statIcon} class="w-3.5 h-3.5 text-white/90" />
-                                            {/if}
-                                            <span>
-                                                {#if stat.statVal !== null && stat.statVal !== undefined}
-                                                    {#if Math.abs(stat.statVal) > 0 && Math.abs(stat.statVal) < 1}
-                                                        {Math.round(stat.statVal * 100)}%
-                                                    {:else}
-                                                        +{Math.round(stat.statVal)}
-                                                    {/if}
-                                                {:else}
-                                                    +{10 + tier * 5}
-                                                {/if}
+                            <Tooltip class="w-full">
+                                <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-1 rounded-xl pl-3 pr-4 hover:bg-white/5 transition-all cursor-pointer min-h-[42px] min-w-0 w-full"
+                                   style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
+                                    <div class="flex items-center gap-3 shrink-0">
+                                        <div class="flex flex-col items-center justify-center shrink-0">
+                                            <div class="relative w-12 h-12 flex items-center justify-center">
+                                                <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-full h-full object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
+                                            </div>
+                                            <div class="w-8 h-[3px] rounded mt-0.5" style="background-color: {rarityColor};"></div>
+                                        </div>
+                                        
+                                        <div class="flex flex-col items-start justify-start min-w-0 select-none">
+                                            <span class="text-sm font-bold text-white truncate font-sdk">{getEquipName(staticId, equip.equipData?.name)}</span>
+                                            <span class="text-[10px] text-white/40 font-sans justify-start">
+                                                {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`)}
                                             </span>
                                         </div>
-                                    {/each}
-                                    {#if statsToRender.length < 4}
-                                        {#each Array(4 - statsToRender.length) as _}
-                                            <div class="h-[22px] w-2"></div>
-                                        {/each}
+                                    </div>
+                                </a>
+                                <div slot="content" class="flex flex-col gap-2 text-left max-w-[320px] p-1 font-sans select-none" use:hyperlinkAction>
+                                    {#if staticEquip && staticEquip.pack && staticEquip.pack !== "none" && equipLocaleData[staticId]?.setBonus}
+                                        <div class="flex flex-col gap-0.5">
+                                            <span class="text-[10px] font-bold text-[#FFE145] uppercase tracking-wider leading-tight">
+                                                {tOrFallback(`packs.${staticEquip.pack}`, staticEquip.pack)}
+                                            </span>
+                                            <span class="text-xs leading-relaxed text-gray-200">
+                                                {@html parseRichText(interpolateBlackboard(equipLocaleData[staticId].setBonus, staticEquip.blackboard || {}))}
+                                            </span>
+                                        </div>
+                                        <hr class="border-white/10 my-1" />
                                     {/if}
+                                    
+                                    {@const itemTiers = eqRarity >= 5 ? [0, 1, 2, 3] : [0]}
+                                    <table class="w-full text-left border-collapse text-[11px]">
+                                        <thead>
+                                            <tr class="border-b border-white/10">
+                                                <th class="py-1 px-1 font-bold text-gray-400 text-left w-[40%]">
+                                                    {tOrFallback("sort.stats", "Attribute")}
+                                                </th>
+                                                {#each itemTiers as tIdx}
+                                                    <th class="py-1 px-0.5 text-center w-[15%]">
+                                                        <div class="flex items-center justify-center {tIdx === tier ? 'text-[#26BAFB] font-bold scale-110' : 'text-gray-400 opacity-60'}">
+                                                            <svg
+                                                                class="w-[20px] h-[11px]"
+                                                                viewBox="0 0 54 30"
+                                                                fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <rect
+                                                                    x="33.3789"
+                                                                    y="15"
+                                                                    width="4.23793"
+                                                                    height="14.7562"
+                                                                    rx="2.11897"
+                                                                    transform="rotate(30 33.3789 15)"
+                                                                    fill={tIdx >= 1 ? (tIdx === tier ? '#38BDF8' : '#26BAFB') : '#8F8F8F'}
+                                                                />
+                                                                <rect
+                                                                    x="41.8555"
+                                                                    y="15"
+                                                                    width="4.23793"
+                                                                    height="14.7562"
+                                                                    rx="2.11897"
+                                                                    transform="rotate(30 41.8555 15)"
+                                                                    fill={tIdx >= 2 ? (tIdx === tier ? '#38BDF8' : '#26BAFB') : '#8F8F8F'}
+                                                                />
+                                                                <rect
+                                                                    x="50.3281"
+                                                                    y="15"
+                                                                    width="4.23793"
+                                                                    height="14.7562"
+                                                                    rx="2.11897"
+                                                                    transform="rotate(30 50.3281 15)"
+                                                                    fill={tIdx >= 3 ? (tIdx === tier ? '#38BDF8' : '#26BAFB') : '#8F8F8F'}
+                                                                />
+
+                                                                <path
+                                                                    d="M28 17L20 29H8L0 17L8 5H20L28 17ZM14 12C11.2386 12 9 14.2386 9 17C9 19.7614 11.2386 22 14 22C16.7614 22 19 19.7614 19 17C19 14.2386 16.7614 12 14 12Z"
+                                                                    fill={tIdx >= 3 ? (tIdx === tier ? '#38BDF8' : '#26BAFB') : '#8F8F8F'}
+                                                                />
+                                                                {#if tIdx >= 1}
+                                                                    <path
+                                                                        d="M28.0068 17L20.0068 29H8.00684L4.39844 23.5859L9.8877 19.834C10.7895 21.1422 12.2978 22 14.0068 22C16.7683 22 19.0068 19.7614 19.0068 17C19.0068 15.9584 18.6885 14.9912 18.1436 14.1904L23.625 10.4453L28.0068 17Z"
+                                                                        fill={tIdx === tier ? '#38BDF8' : '#26BAFB'}
+                                                                    />
+                                                                {/if}
+
+                                                                <path
+                                                                    d="M31 0L36.1962 9H25.8038L31 0Z"
+                                                                    fill={tIdx >= 3 ? (tIdx === tier ? '#38BDF8' : '#26BAFB') : '#8F8F8F'}
+                                                                />
+                                                                {#if tIdx >= 1 && tIdx < 3}
+                                                                    <path
+                                                                        d="M33.5981 4.5L36.197 9H25.8047L33.5981 4.5Z"
+                                                                        fill={tIdx === tier ? '#38BDF8' : '#26BAFB'}
+                                                                    />
+                                                                {/if}
+                                                            </svg>
+                                                        </div>
+                                                    </th>
+                                                {/each}
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {#if staticEquip && staticEquip.displayAttr}
+                                                {#each staticEquip.displayAttr as attr}
+                                                    {@const iconName = attr.attrType.toLowerCase() === "maxhp" ? "hp" : attr.attrType.toLowerCase()}
+                                                    {@const isDef = attr.attrType.toLowerCase() === "def"}
+                                                    <tr class="border-b border-white/5 last:border-0 hover:bg-white/5 transition-colors">
+                                                        <td class="py-1 px-1 flex items-center gap-1.5 whitespace-nowrap text-white/90">
+                                                            <Icon name={iconName} class="w-3.5 h-3.5 text-white/70" />
+                                                            <span>{tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType)}</span>
+                                                        </td>
+                                                        {#each itemTiers as valIndex}
+                                                            {@const val = attr.values[valIndex]}
+                                                            {@const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar"}
+                                                            {@const displayVal = isAllDamage && val !== undefined ? 1 - val : val}
+                                                            {@const isCurrent = valIndex === tier}
+                                                            <td class="py-1 px-0.5 text-center font-nums {isCurrent ? 'text-[#38BDF8] font-bold bg-[#38BDF8]/10' : 'text-white/60'}">
+                                                                {#if isDef && valIndex > 0}
+                                                                    -
+                                                                {:else if displayVal === 0 || !displayVal}
+                                                                    -
+                                                                {:else if Math.abs(displayVal) > 0 && Math.abs(displayVal) < 1}
+                                                                    {Math.round(displayVal * 1000) / 10}%
+                                                                {:else}
+                                                                    {Math.round(displayVal * 10) / 10}
+                                                                {/if}
+                                                            </td>
+                                                        {/each}
+                                                    </tr>
+                                                {/each}
+                                            {/if}
+                                        </tbody>
+                                    </table>
                                 </div>
-                            </a>
+                            </Tooltip>
                         {:else}
-                            <div class="flex flex-col gap-1 items-center justify-center bg-[#202020]/40 border border-dashed border-white/10 rounded-xl min-h-[84px] text-[10px] text-white/40 select-none">
-                                <Icon name="noData" class="shrink-0 w-3 h-3" /> 
-                                <span>{$t("profile.empty_slot") || "Empty Slot"}</span>
+                            <div class="flex items-center gap-2 bg-[#202020]/20 border border-dashed border-white/5 p-1 rounded-xl pl-3 pr-4 min-h-[42px] text-[11px] text-white/30 select-none h-full">
+                                <div class="w-10 h-10 flex items-center justify-center border border-dashed border-white/5 rounded bg-black/10 shrink-0">
+                                    <Icon name="noData" class="shrink-0 w-4 h-4 opacity-50" />
+                                </div>
+                                <div class="flex flex-col justify-center min-w-0">
+                                    <span class="font-sdk text-white/40">{$t("profile.empty_slot") || "Empty Slot"}</span>
+                                    <span class="text-[9px] uppercase tracking-wider text-white/20">
+                                        {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`) || ''}
+                                    </span>
+                                </div>
                             </div>
                         {/if}
                     {/each}

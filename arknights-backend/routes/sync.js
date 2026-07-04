@@ -122,7 +122,7 @@ function parseDetailsInUserAccount(userAccount) {
 
 router.post('/profile', async (req, res) => {
     console.log("[POST /profile] received req.body:", req.body);
-    const { idToken, name, picture, is_private, background, game_uid, records_uid } = req.body;
+    const { idToken, name, picture, is_private, background, game_uid, records_uid, favorite_game_uid } = req.body;
     try {
         const payload = await verifyFirebaseIdToken(idToken);
         const firebaseUid = payload.sub;
@@ -170,6 +170,9 @@ router.post('/profile', async (req, res) => {
                 return res.status(400).json({ error: "Invalid background format." });
             }
         }
+        if (favorite_game_uid !== undefined) {
+            updateData.favorite_game_uid = favorite_game_uid || null;
+        }
 
         const userAccount = await prisma.userAccount.upsert({
             where: { firebase_uid: firebaseUid },
@@ -179,7 +182,8 @@ router.post('/profile', async (req, res) => {
                 name: trimmedName || payload.name || "Operator",
                 picture: picture || null,
                 is_private: is_private !== undefined ? Number(is_private) : 0,
-                background: (background && /^[a-zA-Z0-9_]+_potential[135]$/.test(background)) ? background : null
+                background: (background && /^[a-zA-Z0-9_]+_potential[135]$/.test(background)) ? background : null,
+                favorite_game_uid: favorite_game_uid || null
             }
         });
 
@@ -252,7 +256,7 @@ router.post('/sync', async (req, res) => {
         const now = Date.now();
         const lastUpdated = new Date(userAccount.updated_at).getTime();
         
-        if (false && !testRecords && (now - lastUpdated < SYNC_COOLDOWN)) {
+        if (!testRecords && (now - lastUpdated < SYNC_COOLDOWN)) {
             const timeRemaining = Math.ceil((SYNC_COOLDOWN - (now - lastUpdated)) / 1000 / 60);
             return res.status(429).json({ 
                 error: `Sync is on cooldown. Please wait ${timeRemaining} minutes before trying again.` 
@@ -264,6 +268,10 @@ router.post('/sync', async (req, res) => {
         if (testRecords) {
             syncedAccounts = testRecords;
         } else {
+            if (!gameToken || typeof gameToken !== 'string') {
+                return res.status(400).json({ error: "Game token is required." });
+            }
+
             let tokenToUse = gameToken.trim();
             if (tokenToUse.startsWith('{') && tokenToUse.endsWith('}')) {
                 try {
@@ -272,10 +280,17 @@ router.post('/sync', async (req, res) => {
                         tokenToUse = parsed.data.content.trim();
                     } else if (parsed.content) {
                         tokenToUse = parsed.content.trim();
+                    } else {
+                        return res.status(400).json({ error: "Invalid token format in JSON structure." });
                     }
                 } catch (err) {
-                    console.error("[Sync API Token Parse Warning]: Failed to parse token as JSON:", err.message);
+                    return res.status(400).json({ error: "Invalid JSON token format." });
                 }
+            }
+
+            const base64Regex = /^[A-Za-z0-9+/=_-]+$/;
+            if (!base64Regex.test(tokenToUse) || tokenToUse.length < 10 || tokenToUse.length > 128) {
+                return res.status(400).json({ error: "Invalid token format." });
             }
 
             const grantRes = await axios.post(
@@ -510,6 +525,7 @@ router.post('/sync', async (req, res) => {
                         }
                     });
                 }
+                leaderboardRouter.clearCache();
             }
         }
 
@@ -901,7 +917,7 @@ function getStaticWeaponId(weapon) {
     const skills = weapon.weaponData.skills || [];
     for (const s of skills) {
         if (s.key && s.key.startsWith('sk_wpn_')) {
-            return s.key.substring(3); // 'sk_wpn_...' -> 'wpn_...'
+            return s.key.substring(3);
         }
     }
     return weapon.weaponData.id || weapon.id;
@@ -1003,6 +1019,8 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
             } : null,
             gem: c.weapon.gem ? {
                 gemData: c.weapon.gem.gemData ? {
+                    id: c.weapon.gem.gemData.id,
+                    icon: c.weapon.gem.gemData.icon,
                     templateId: c.weapon.gem.gemData.templateId,
                     termId: c.weapon.gem.gemData.termId,
                     name: c.weapon.gem.gemData.name,
