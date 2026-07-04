@@ -12,6 +12,7 @@ export const config = {
     adminSecret: process.env.ADMIN_SECRET || "super_secret_fallback_key_123",
     gryphlineAuthUrl: process.env.GRYPHLINE_AUTH_URL || null,
     skportCredUrl: getSkportCredUrl(),
+    skportBindingPath: process.env.SKPORT_BIND_PATH || null,
     skportBindingUrl: getSkportBindingUrl(),
     skportDetailUrl: getSkportDetailUrl(),
     skportContractUrl: getSkportContractUrl(),

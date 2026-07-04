@@ -5,12 +5,12 @@ import { CredResponse } from "@services/skportAuth/contracts/CredResponse";
 import axios, { AxiosResponse } from "axios";
 
 export class SkportAuthenticator {
-    private static readonly _skportBindingUrl = config.skportBindingUrl as string;
+    private static readonly _skportCredUrl = config.skportCredUrl as string;
 
     private readonly _gryphAuthCode: string;
 
     public constructor(gryphAuthCode: string) {
-        if (!SkportAuthenticator._skportBindingUrl) {
+        if (!SkportAuthenticator._skportCredUrl) {
             throw new Error("skportBindingUrl is not provided");
         }
 
@@ -49,7 +49,7 @@ export class SkportAuthenticator {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            console.error(`[ERROR] SkportAuthenticator error: ${this._gryphAuthCode}`, error);
+            console.error(`[ERROR] SkportAuthenticator error: ${this._gryphAuthCode}\n`, error);
 
             return null;
         }
@@ -70,7 +70,7 @@ export class SkportAuthenticator {
 
         try {
             resp = await axios.post(
-                SkportAuthenticator._skportBindingUrl,
+                SkportAuthenticator._skportCredUrl,
                 this.getRequestData(),
                 SkportAuthenticator.getRequestConfig()
             );
