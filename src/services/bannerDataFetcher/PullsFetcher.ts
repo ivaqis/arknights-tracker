@@ -1,3 +1,4 @@
+import { BadResponseStatusError } from "@errors/BadResponseStatusError";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
 import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
@@ -145,7 +146,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
         }
 
         if (resp.status !== 200) {
-            throw new Error("Bad response status: " + resp.statusText);
+            throw new BadResponseStatusError(resp.status, resp);
         }
 
         return resp.data;

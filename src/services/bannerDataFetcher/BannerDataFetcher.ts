@@ -71,8 +71,7 @@ export class BannerDataFetcher {
         };
     }
 
-    private async getCharPulls(bannerType: BannerType)
-        : Promise<CharPull[]> {
+    private async getCharPulls(bannerType: BannerType): Promise<CharPull[]> {
         const bannerData = await BannerDataFetcher.getBannerData<CharPullEntity, CharBannerRequestParams>(
             BannerDataFetcher.CHAR_API_URL,
             this.getCharRequestParams(bannerType),
@@ -88,8 +87,7 @@ export class BannerDataFetcher {
             .map((entity) => new CharPull(entity));
     }
 
-    private async getWeaponPulls()
-        : Promise<WeaponPull[]> {
+    private async getWeaponPulls(): Promise<WeaponPull[]> {
         const bannerData = await BannerDataFetcher.getBannerData<WeaponPullEntity, WeaponBannerRequestParams>(
             BannerDataFetcher.WEAPON_API_URL,
             this.getWeaponRequestParams(),
