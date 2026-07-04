@@ -1,5 +1,23 @@
 import { get } from "svelte/store";
 import { t, isI18nReady } from "$lib/i18n.js";
+import { tags } from "$lib/data/contractTags.js";
+
+const tagIdToBlackboard = {};
+const localIdToBlackboard = {};
+
+for (const key in tags) {
+    const tag = tags[key];
+    const bb = {};
+    if (tag && tag.blackboard) {
+        for (const item of tag.blackboard) {
+            bb[item.key] = item.value;
+        }
+    }
+    localIdToBlackboard[key] = bb;
+    if (tag && tag.tagId) {
+        tagIdToBlackboard[String(tag.tagId)] = bb;
+    }
+}
 
 const VALID_TEXT_ICONS = new Set([
     "ba_airborne",
@@ -322,6 +340,63 @@ export function hyperlinkAction(node) {
             }
         }
     };
+}
+
+function evaluateMath(expr, bb) {
+    let resolved = expr;
+    const keys = Object.keys(bb).sort((a, b) => b.length - a.length);
+    for (const key of keys) {
+        const regex = new RegExp(`\\b${key}\\b`, 'g');
+        resolved = resolved.replace(regex, bb[key]);
+    }
+    resolved = resolved.replace(/[a-zA-Z_]+/g, '0');
+    const sanitized = resolved.replace(/[^0-9.+\-*/() ]/g, '');
+    try {
+        return Function(`"use strict"; return (${sanitized})`)();
+    } catch (e) {
+        return 0;
+    }
+}
+
+function formatValue(value, format) {
+    if (typeof value !== 'number' || isNaN(value)) return value;
+    if (format === '0%') {
+        return Math.round(value * 100) + '%';
+    }
+    if (format === '0') {
+        return Math.round(value);
+    }
+    return value;
+}
+
+export function formatContractDescription(id, text) {
+    if (!text) return "";
+    let result = text.replace(/\{([^{}]+)\}/g, (match, content) => {
+        let tagId = null;
+        let expr = "";
+        let format = "";
+        const crossRefMatch = content.match(/^@(\d+)@([^:]+)(?::([^}]+))?$/);
+        if (crossRefMatch) {
+            tagId = crossRefMatch[1];
+            expr = crossRefMatch[2];
+            format = crossRefMatch[3] || "";
+        } else {
+            const localMatch = content.match(/^([^:]+)(?::([^}]+))?$/);
+            if (localMatch) {
+                expr = localMatch[1];
+                format = localMatch[2] || "";
+            }
+        }
+        let bb = {};
+        if (tagId) {
+            bb = tagIdToBlackboard[tagId] || {};
+        } else {
+            bb = localIdToBlackboard[id] || {};
+        }
+        const val = evaluateMath(expr, bb);
+        return formatValue(val, format);
+    });
+    return parseRichText(result);
 }
 
 

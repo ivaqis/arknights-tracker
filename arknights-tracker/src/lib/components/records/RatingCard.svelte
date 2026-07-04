@@ -10,10 +10,15 @@
   import Icon from "../Icon.svelte";
   import Tooltip from "../Tooltip.svelte";
 
+  export let customGameUid = undefined;
+  export let isProfile = false;
+  export let hideBorders = false;
+  $: console.log({hideBorders: hideBorders ? 'border-gray-100/20' : 'border-gray-100'})
+
   const { accounts, selectedId } = accountStore;
   
   $: currentAccount = $accounts.find(a => a.id === $selectedId);
-  $: gameUid = currentAccount?.serverUid; 
+  $: gameUid = customGameUid || currentAccount?.serverUid; 
 
   const totalTab = {
       id: "total",
@@ -104,10 +109,13 @@
   }
 </script>
 
-<div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl p-6 shadow-sm border border-gray-100 h-full min-w-0">
-  <div class="flex justify-between items-center {showTabs ? 'mb-4' : 'mb-2'} relative z-20">
-    <h3 class={showTabs ? "text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]" : "text-sm font-bold text-gray-800 text-start mb-2 dark:text-[#FDFDFD]"}>
-      {$t("page.rating.ratingTitle")}
+<div class="rounded-xl p-6 shadow-sm h-full min-w-0 border
+  {hideBorders 
+    ? 'bg-white/5 dark:bg-[#383838]/5 border-white/10 backdrop-blur-sm' 
+    : 'bg-white dark:bg-[#383838] dark:border-[#444444] border-gray-100 dark:border-[#444444]'}">
+  <div class="flex justify-between items-center mb-4 relative z-20">
+    <h3 class="text-xl font-bold dark:text-[#FDFDFD] font-sdk text-[#21272C]">
+      {isProfile ? ($t("profile.pulls_rating") || "Рейтинг круток") : $t("page.rating.ratingTitle")}
     </h3>
 
     <div class="group relative flex items-center py-1 pl-4 text-gray-400/90 dark:text-[#7A7A7A]">
@@ -166,9 +174,9 @@
   <div class="space-y-6">
     
     {#if activeTab !== 'new-player'}
-      <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4 h-[72px]">
+      <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
         <div class="flex flex-col justify-center">
-          <div class="font-medium dark:text-[#FDFDFD] text-gray-700">{$t("page.rating.luckyTotal")}</div>
+          <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">{$t("page.rating.luckyTotal")}</div>
           {#if rankTotal !== null}
             <div class="text-xs text-gray-400 dark:text-[#B7B6B3] mt-1">
                 {#if rankTotal < 50}
@@ -189,8 +197,8 @@
               </div>
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
-                  <span class="text-sm font-medium text-gray-500 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "Нет данных"}</span>
-                  <Icon name="noData" class="w-4 h-4 text-gray-400 dark:text-[#7A7A7A]" />
+                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                  <Icon name="noData" class="w-4 h-4" />
               </div>
           {/if}
         </div>
@@ -198,7 +206,7 @@
     {/if}
 
     {#if activeTab !== 'standard' && activeTab !== 'new-player' && activeTab !== 'joint'}
-      <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4 h-[72px]">
+      <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
         <div class="flex flex-col justify-center">
           <div class="font-medium text-[#21272C] dark:text-[#FDFDFD]">
             {#if activeTab.includes('weap')}
@@ -227,15 +235,15 @@
               </div>
           {:else}
               <div class="flex items-center gap-2 opacity-50 justify-end">
-                  <span class="text-sm font-medium text-gray-500 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "Нет данных"}</span>
-                  <Icon name="noData" class="w-4 h-4 text-gray-400 dark:text-[#7A7A7A]" />
+                  <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                  <Icon name="noData" class="w-4 h-4" />
               </div>
           {/if}
         </div>
       </div>
     {/if}
 
-    <div class="flex justify-between items-center border-b dark:border-[#444444] border-gray-100 pb-4 h-[72px]">
+    <div class="flex justify-between items-center border-b dark:border-[#444444] {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
       <div class="flex flex-col justify-center">
         <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
           {$t("page.rating.lucky6")} 6 <Icon name="star" class="w-4 h-4" />
@@ -260,14 +268,14 @@
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
-                <span class="text-sm font-medium text-gray-500 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "Нет данных"}</span>
-                <Icon name="noData" class="w-4 h-4 text-gray-400 dark:text-[#7A7A7A]" />
+                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                <Icon name="noData" class="w-4 h-4" />
             </div>
         {/if}
       </div>
     </div>
 
-    <div class="flex justify-between items-center {showTabs ? 'border-b border-gray-100 dark:border-[#444444] pb-4' : ''} h-[72px]">
+    <div class="flex justify-between items-center dark:border-[#444444] border-b {hideBorders ? 'border-gray-100/20' : 'border-gray-100'} pb-4 h-[72px]">
       <div class="flex flex-col justify-center">
         <div class="font-medium text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1">
           {$t("page.rating.lucky5")} 5 <Icon name="star" class="w-4 h-4" />
@@ -292,8 +300,8 @@
             </div>
         {:else}
             <div class="flex items-center gap-2 opacity-50 justify-end">
-                <span class="text-sm font-medium text-gray-500 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "Нет данных"}</span>
-                <Icon name="noData" class="w-4 h-4 text-gray-400 dark:text-[#7A7A7A]" />
+                <span class="text-sm font-medium text-gray-700 dark:text-[#B7B6B3]">{$t("page.rating.noData") || "No Data"}</span>
+                <Icon name="noData" class="w-4 h-4" />
             </div>
         {/if}
       </div>

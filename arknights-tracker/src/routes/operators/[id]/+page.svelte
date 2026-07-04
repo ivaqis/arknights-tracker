@@ -676,7 +676,7 @@
                                 <span
                                     class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
                                 >
-                                    {draftPot === -1 ? "" : `P${draftPot}`}
+                                    {draftPot === -1 ? "" : `P${draftPot + 1}`}
                                 </span>
 
                                 <button

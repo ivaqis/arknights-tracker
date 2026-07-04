@@ -32,3 +32,31 @@ const element2TextColor = {
     "electric": "text-[#FEC001]",
     "physical": "text-slate-500 dark:text-slate-300"
 };
+
+export function getHexColorByElement(element) {
+    return element2HexColor[element] ?? "#5E5D5D";
+}
+
+const element2HexColor = {
+    fire: "#FF613D",
+    heat: "#FF613D",
+    cryst: "#21C4CE",
+    cryo: "#21C4CE",
+    natural: "#AABD00",
+    nature: "#AABD00",
+    pulse: "#FFBF00",
+    electric: "#FFBF00",
+    physical: "#5E5D5D"
+};
+
+export function getGradientColorByElement(element) {
+    return element2GradientColor[element] ?? "";
+}
+
+const element2GradientColor = {
+    physical: "from-gray-500/30 to-transparent",
+    cryo: "from-[#21C4CE]/30 to-transparent",
+    nature: "from-[#76C104]/30 to-transparent",
+    electric: "from-[#FFBF00]/30 to-transparent",
+    heat: "from-[#FF613D]/30 to-transparent",
+};

@@ -22,6 +22,9 @@
     export let materialCount = 0;
     export let baseSkills = null;
     export let activeBaseSkillFilters = null;
+    export let level = undefined;
+    export let potential = undefined;
+    export let owned = undefined;
 
     $: uniqueBaseSkills = (() => {
         if (!baseSkills) return [];
@@ -84,7 +87,9 @@
 
     $: accountPots = $manualPotentials[currentAccountId] || {};
     $: currentPot =
-        accountPots[operator.id] !== undefined
+        potential !== undefined
+            ? potential
+            : accountPots[operator.id] !== undefined
             ? isAlwaysOwned
                 ? Math.max(0, accountPots[operator.id])
                 : accountPots[operator.id]
@@ -92,7 +97,7 @@
 
     $: manualPot = accountPots[operator.id];
     $: actualPulls = manualPot !== undefined ? manualPot + 1 : gachaPulls;
-    $: hasOperator = currentPot >= 0;
+    $: hasOperator = owned !== undefined ? owned : currentPot >= 0;
     $: constCount = hasOperator ? currentPot : 0;
     $: isMaxPot = constCount >= 5;
     $: isAccountEmpty = (() => {
@@ -209,6 +214,13 @@
                     <div
                         class="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none z-10"
                     ></div>
+                {/if}
+
+                {#if level !== undefined}
+                    <div class="absolute bottom-3.5 left-2 z-30 flex flex-col items-start leading-none select-none">
+                        <span class="text-[8px] font-black text-white/70 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">LV</span>
+                        <span class="text-[20px] font-black text-white leading-none tracking-tighter" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.9);">{level}</span>
+                    </div>
                 {/if}
             </div>
 

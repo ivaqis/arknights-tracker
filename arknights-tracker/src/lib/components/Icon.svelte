@@ -2,6 +2,18 @@
     export let name;
 
     const iconMeta = {
+    "contract": {
+        "viewBox": "0 0 30 30",
+        "width": "30",
+        "height": "30",
+        "fill": "none"
+    },
+    "contract2": {
+        "viewBox": "0 0 28 30",
+        "width": "28",
+        "height": "30",
+        "fill": "none"
+    },
     "star": {
         "viewBox": "0 0 14 15",
         "width": "14",

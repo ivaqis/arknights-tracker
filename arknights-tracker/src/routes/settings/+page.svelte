@@ -683,11 +683,11 @@
                                     <img
                                         src={$user.photoURL}
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full dark:border-[#7A7A7A] border border-white shadow-sm shrink-0"
+                                        class="w-10 h-10 rounded-xl dark:border-[#7A7A7A] border border-white shadow-sm shrink-0"
                                     />
                                 {:else}
                                     <div
-                                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
+                                        class="w-10 h-10 rounded-xl bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
                                     >
                                         {$user.displayName
                                             ? $user.displayName[0]

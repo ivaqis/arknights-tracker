@@ -6,8 +6,12 @@ const { URL, URLSearchParams } = require('url');
 const { BANNERS } = require('./banners');
 const crypto = require('crypto');
 const rateLimit = require('express-rate-limit');
+const path = require('path');
 
 require('dotenv').config();
+
+const syncRouter = require('./routes/sync');
+const leaderboardRouter = require('./routes/leaderboard');
 
 const importLimiter = rateLimit({
     windowMs: 60 * 1000,
@@ -18,6 +22,31 @@ const importLimiter = rateLimit({
     standardHeaders: true,
     legacyHeaders: false,
 });
+
+const syncLimiter = rateLimit({
+    windowMs: 1 * 10 * 1000, // 15 minutes ПОМЕНЯТЬ 15 * 60 * 1000
+    max: 10,
+    message: { error: "Too many sync attempts. Sync is allowed once every 7 minutes." }, // Сделать обертки для i18n
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
+const uploadLimiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 5,
+    message: { error: "Too many avatar upload attempts. Please try again later." },
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
+const leaderboardLimiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 60,
+    message: { error: "Too many leaderboard requests. Please slow down." },
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
 
 function generateStableUid(pulls) {
     if (!pulls || pulls.length === 0) return null;
@@ -52,7 +81,7 @@ if (process.env.DATABASE_URL) {
     console.log("[Init] Running in Local Mode (No DATABASE_URL). Ratings & Stats will not be saved.");
 }
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 function generatePullId(uid, pull) {
     return `${uid}_${pull.seqId || pull.timestamp}`;
@@ -76,6 +105,11 @@ function getBannerDates(banner, serverId) {
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/api/user/sync', syncLimiter);
+app.use('/api/user/upload-avatar', uploadLimiter);
+app.use('/api/user', syncRouter);
+app.use('/api/leaderboard', leaderboardLimiter, leaderboardRouter);
 
 const GAME_API_URL = 'https://ef-webview.gryphline.com/api/record/char';
 

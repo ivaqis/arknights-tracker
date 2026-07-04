@@ -966,7 +966,7 @@
                                     class="flex flex-col items-center justify-center py-6 border-2 dark:border-[#444444] dark:text-[#B7B6B3] border-dashed border-gray-200 rounded-lg text-gray-400"
                                 >
                                     <Icon
-                                        name="archive"
+                                        name="noData"
                                         style="width: 32px; height: 32px; opacity: 0.5;"
                                     />
                                     <span class="mt-2 text-sm font-medium"

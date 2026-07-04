@@ -3,6 +3,7 @@
 export const weapons = {
   "industry01": {
     "id": "industry01",
+    "gameId": "wpn_claym_0003",
     "name": "Industry 0.1",
     "rarity": 4,
     "weapon": "greatSword",
@@ -14,6 +15,7 @@ export const weapons = {
   },
   "exemplar": {
     "id": "exemplar",
+    "gameId": "wpn_claym_0004",
     "name": "Exemplar",
     "rarity": 6,
     "weapon": "greatSword",
@@ -25,6 +27,7 @@ export const weapons = {
   },
   "formerFinery": {
     "id": "formerFinery",
+    "gameId": "wpn_claym_0006",
     "name": "Former Finery",
     "rarity": 6,
     "weapon": "greatSword",
@@ -36,6 +39,7 @@ export const weapons = {
   },
   "thunderberge": {
     "id": "thunderberge",
+    "gameId": "wpn_claym_0007",
     "name": "Thunderberge",
     "rarity": 6,
     "weapon": "greatSword",
@@ -47,6 +51,7 @@ export const weapons = {
   },
   "sunderedPrince": {
     "id": "sunderedPrince",
+    "gameId": "wpn_claym_0008",
     "name": "Sundered Prince",
     "rarity": 6,
     "weapon": "greatSword",
@@ -58,6 +63,7 @@ export const weapons = {
   },
   "quencher": {
     "id": "quencher",
+    "gameId": "wpn_claym_0009",
     "name": "Quencher",
     "rarity": 4,
     "weapon": "greatSword",
@@ -69,6 +75,7 @@ export const weapons = {
   },
   "darhoff7": {
     "id": "darhoff7",
+    "gameId": "wpn_claym_0010",
     "name": "Darhoff 7",
     "rarity": 3,
     "weapon": "greatSword",
@@ -79,6 +86,7 @@ export const weapons = {
   },
   "seekerOfDarkLung": {
     "id": "seekerOfDarkLung",
+    "gameId": "wpn_claym_0011",
     "name": "Seeker of Dark Lung",
     "rarity": 5,
     "weapon": "greatSword",
@@ -90,6 +98,7 @@ export const weapons = {
   },
   "finishingCall": {
     "id": "finishingCall",
+    "gameId": "wpn_claym_0012",
     "name": "Finishing Call",
     "rarity": 5,
     "weapon": "greatSword",
@@ -101,6 +110,7 @@ export const weapons = {
   },
   "khravengger": {
     "id": "khravengger",
+    "gameId": "wpn_claym_0013",
     "name": "Khravengger",
     "rarity": 6,
     "weapon": "greatSword",
@@ -112,6 +122,7 @@ export const weapons = {
   },
   "ancientCanal": {
     "id": "ancientCanal",
+    "gameId": "wpn_claym_0014",
     "name": "Ancient Canal",
     "rarity": 5,
     "weapon": "greatSword",
@@ -123,6 +134,7 @@ export const weapons = {
   },
   "objHeavyBurden": {
     "id": "objHeavyBurden",
+    "gameId": "wpn_claym_0015",
     "name": "OBJ Heavy Burden",
     "rarity": 5,
     "weapon": "greatSword",
@@ -134,6 +146,7 @@ export const weapons = {
   },
   "phantomPain": {
     "id": "phantomPain",
+    "gameId": "wpn_claym_0016",
     "name": "Phantom Pain",
     "rarity": 6,
     "weapon": "greatSword",
@@ -145,6 +158,7 @@ export const weapons = {
   },
   "amaranthineTassel": {
     "id": "amaranthineTassel",
+    "gameId": "wpn_claym_0017",
     "name": "Amaranthine Tassel",
     "rarity": 6,
     "weapon": "greatSword",
@@ -156,6 +170,7 @@ export const weapons = {
   },
   "hypernovaAuto": {
     "id": "hypernovaAuto",
+    "gameId": "wpn_funnel_0001",
     "name": "Hypernova Auto",
     "rarity": 4,
     "weapon": "artsUnit",
@@ -167,6 +182,7 @@ export const weapons = {
   },
   "jiminy12": {
     "id": "jiminy12",
+    "gameId": "wpn_funnel_0002",
     "name": "Jiminy 12",
     "rarity": 3,
     "weapon": "artsUnit",
@@ -177,6 +193,7 @@ export const weapons = {
   },
   "fluorescentRoc": {
     "id": "fluorescentRoc",
+    "gameId": "wpn_funnel_0003",
     "name": "Fluorescent Roc",
     "rarity": 4,
     "weapon": "artsUnit",
@@ -188,6 +205,7 @@ export const weapons = {
   },
   "wildWanderer": {
     "id": "wildWanderer",
+    "gameId": "wpn_funnel_0004",
     "name": "Wild Wanderer",
     "rarity": 5,
     "weapon": "artsUnit",
@@ -199,6 +217,7 @@ export const weapons = {
   },
   "stanzaOfMemorials": {
     "id": "stanzaOfMemorials",
+    "gameId": "wpn_funnel_0005",
     "name": "Stanza of Memorials",
     "rarity": 5,
     "weapon": "artsUnit",
@@ -210,6 +229,7 @@ export const weapons = {
   },
   "opusEtchFigure": {
     "id": "opusEtchFigure",
+    "gameId": "wpn_funnel_0006",
     "name": "Opus: Etch Figure",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -221,6 +241,7 @@ export const weapons = {
   },
   "monaihe": {
     "id": "monaihe",
+    "gameId": "wpn_funnel_0007",
     "name": "Monaihe",
     "rarity": 5,
     "weapon": "artsUnit",
@@ -232,6 +253,7 @@ export const weapons = {
   },
   "detonationUnit": {
     "id": "detonationUnit",
+    "gameId": "wpn_funnel_0008",
     "name": "Detonation Unit",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -243,6 +265,7 @@ export const weapons = {
   },
   "oblivion": {
     "id": "oblivion",
+    "gameId": "wpn_funnel_0009",
     "name": "Oblivion",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -254,6 +277,7 @@ export const weapons = {
   },
   "chivalricVirtues": {
     "id": "chivalricVirtues",
+    "gameId": "wpn_funnel_0010",
     "name": "Chivalric Virtues",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -265,6 +289,7 @@ export const weapons = {
   },
   "deliveryGuaranteed": {
     "id": "deliveryGuaranteed",
+    "gameId": "wpn_funnel_0011",
     "name": "Delivery Guaranteed",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -276,6 +301,7 @@ export const weapons = {
   },
   "freedomToProselytize": {
     "id": "freedomToProselytize",
+    "gameId": "wpn_funnel_0012",
     "name": "Freedom to Proselytize",
     "rarity": 5,
     "weapon": "artsUnit",
@@ -287,6 +313,7 @@ export const weapons = {
   },
   "dreamsOfTheStarryBeach": {
     "id": "dreamsOfTheStarryBeach",
+    "gameId": "wpn_funnel_0013",
     "name": "Dreams of the Starry Beach",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -298,6 +325,7 @@ export const weapons = {
   },
   "objArtsIdentifier": {
     "id": "objArtsIdentifier",
+    "gameId": "wpn_funnel_0014",
     "name": "OBJ Arts Identifier",
     "rarity": 5,
     "weapon": "artsUnit",
@@ -309,6 +337,7 @@ export const weapons = {
   },
   "loneBarge": {
     "id": "loneBarge",
+    "gameId": "wpn_funnel_0015",
     "name": "Lone Barge",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -320,6 +349,7 @@ export const weapons = {
   },
   "flickersInTheMist": {
     "id": "flickersInTheMist",
+    "gameId": "wpn_funnel_0017",
     "name": "Flickers in the Mist",
     "rarity": 6,
     "weapon": "artsUnit",
@@ -331,6 +361,7 @@ export const weapons = {
   },
   "pathfindersBeacon": {
     "id": "pathfindersBeacon",
+    "gameId": "wpn_lance_0003",
     "name": "Pathfinder's Beacon",
     "rarity": 4,
     "weapon": "polearm",
@@ -342,6 +373,7 @@ export const weapons = {
   },
   "chimericJustice": {
     "id": "chimericJustice",
+    "gameId": "wpn_lance_0004",
     "name": "Chimeric Justice",
     "rarity": 5,
     "weapon": "polearm",
@@ -353,6 +385,7 @@ export const weapons = {
   },
   "cohesiveTraction": {
     "id": "cohesiveTraction",
+    "gameId": "wpn_lance_0006",
     "name": "Cohesive Traction",
     "rarity": 5,
     "weapon": "polearm",
@@ -364,6 +397,7 @@ export const weapons = {
   },
   "beaconOfDuty": {
     "id": "beaconOfDuty",
+    "gameId": "wpn_lance_0007",
     "name": "Beacon of Duty",
     "rarity": 6,
     "weapon": "polearm",
@@ -375,6 +409,7 @@ export const weapons = {
   },
   "aggeloslayer": {
     "id": "aggeloslayer",
+    "gameId": "wpn_lance_0008",
     "name": "Aggeloslayer",
     "rarity": 4,
     "weapon": "polearm",
@@ -386,6 +421,7 @@ export const weapons = {
   },
   "opero77": {
     "id": "opero77",
+    "gameId": "wpn_lance_0009",
     "name": "Opero 77",
     "rarity": 3,
     "weapon": "polearm",
@@ -396,6 +432,7 @@ export const weapons = {
   },
   "valiant": {
     "id": "valiant",
+    "gameId": "wpn_lance_0010",
     "name": "Valiant",
     "rarity": 6,
     "weapon": "polearm",
@@ -407,6 +444,7 @@ export const weapons = {
   },
   "jet": {
     "id": "jet",
+    "gameId": "wpn_lance_0011",
     "name": "JET",
     "rarity": 6,
     "weapon": "polearm",
@@ -418,6 +456,7 @@ export const weapons = {
   },
   "mountainBearer": {
     "id": "mountainBearer",
+    "gameId": "wpn_lance_0012",
     "name": "Mountain Bearer",
     "rarity": 6,
     "weapon": "polearm",
@@ -429,6 +468,7 @@ export const weapons = {
   },
   "objRazorhorn": {
     "id": "objRazorhorn",
+    "gameId": "wpn_lance_0013",
     "name": "OBJ Razorhorn",
     "rarity": 5,
     "weapon": "polearm",
@@ -440,6 +480,7 @@ export const weapons = {
   },
   "blessingOfLustrousCarmine": {
     "id": "blessingOfLustrousCarmine",
+    "gameId": "wpn_lance_0015",
     "name": "Blessing of Lustrous Carmine",
     "rarity": 6,
     "weapon": "polearm",
@@ -451,6 +492,7 @@ export const weapons = {
   },
   "peco5": {
     "id": "peco5",
+    "gameId": "wpn_pistol_0001",
     "name": "Peco 5",
     "rarity": 3,
     "weapon": "handcannon",
@@ -461,6 +503,7 @@ export const weapons = {
   },
   "howlingGuard": {
     "id": "howlingGuard",
+    "gameId": "wpn_pistol_0002",
     "name": "Howling Guard",
     "rarity": 4,
     "weapon": "handcannon",
@@ -472,6 +515,7 @@ export const weapons = {
   },
   "longRoad": {
     "id": "longRoad",
+    "gameId": "wpn_pistol_0003",
     "name": "Long Road",
     "rarity": 4,
     "weapon": "handcannon",
@@ -483,6 +527,7 @@ export const weapons = {
   },
   "rationalFarewell": {
     "id": "rationalFarewell",
+    "gameId": "wpn_pistol_0004",
     "name": "Rational Farewell",
     "rarity": 5,
     "weapon": "handcannon",
@@ -494,6 +539,7 @@ export const weapons = {
   },
   "navigator": {
     "id": "navigator",
+    "gameId": "wpn_pistol_0005",
     "name": "Navigator",
     "rarity": 6,
     "weapon": "handcannon",
@@ -505,6 +551,7 @@ export const weapons = {
   },
   "opusTheLiving": {
     "id": "opusTheLiving",
+    "gameId": "wpn_pistol_0006",
     "name": "Opus: The Living",
     "rarity": 5,
     "weapon": "handcannon",
@@ -516,6 +563,7 @@ export const weapons = {
   },
   "homeLonging": {
     "id": "homeLonging",
+    "gameId": "wpn_pistol_0007",
     "name": "Home Longing",
     "rarity": 6,
     "weapon": "handcannon",
@@ -527,6 +575,7 @@ export const weapons = {
   },
   "wedge": {
     "id": "wedge",
+    "gameId": "wpn_pistol_0008",
     "name": "Wedge",
     "rarity": 6,
     "weapon": "handcannon",
@@ -538,6 +587,7 @@ export const weapons = {
   },
   "clannibal": {
     "id": "clannibal",
+    "gameId": "wpn_pistol_0009",
     "name": "Clannibal",
     "rarity": 6,
     "weapon": "handcannon",
@@ -549,6 +599,7 @@ export const weapons = {
   },
   "artzyTyrannical": {
     "id": "artzyTyrannical",
+    "gameId": "wpn_pistol_0010",
     "name": "Artzy Tyrannical",
     "rarity": 6,
     "weapon": "handcannon",
@@ -560,6 +611,7 @@ export const weapons = {
   },
   "brigandsCalling": {
     "id": "brigandsCalling",
+    "gameId": "wpn_pistol_0011",
     "name": "Brigand's Calling",
     "rarity": 6,
     "weapon": "handcannon",
@@ -571,6 +623,7 @@ export const weapons = {
   },
   "objVelocitous": {
     "id": "objVelocitous",
+    "gameId": "wpn_pistol_0012",
     "name": "OBJ Velocitous",
     "rarity": 5,
     "weapon": "handcannon",
@@ -582,6 +635,7 @@ export const weapons = {
   },
   "tarr11": {
     "id": "tarr11",
+    "gameId": "wpn_sword_0003",
     "name": "Tarr 11",
     "rarity": 3,
     "weapon": "sword",
@@ -592,6 +646,7 @@ export const weapons = {
   },
   "sunderingSteel": {
     "id": "sunderingSteel",
+    "gameId": "wpn_sword_0005",
     "name": "Sundering Steel",
     "rarity": 5,
     "weapon": "sword",
@@ -603,6 +658,7 @@ export const weapons = {
   },
   "forgebornScathe": {
     "id": "forgebornScathe",
+    "gameId": "wpn_sword_0006",
     "name": "Forgeborn Scathe",
     "rarity": 6,
     "weapon": "sword",
@@ -614,6 +670,7 @@ export const weapons = {
   },
   "fortmaker": {
     "id": "fortmaker",
+    "gameId": "wpn_sword_0007",
     "name": "Fortmaker",
     "rarity": 5,
     "weapon": "sword",
@@ -625,6 +682,7 @@ export const weapons = {
   },
   "prominentEdge": {
     "id": "prominentEdge",
+    "gameId": "wpn_sword_0008",
     "name": "Prominent Edge",
     "rarity": 4,
     "weapon": "sword",
@@ -636,6 +694,7 @@ export const weapons = {
   },
   "waveTide": {
     "id": "waveTide",
+    "gameId": "wpn_sword_0009",
     "name": "Wave Tide",
     "rarity": 4,
     "weapon": "sword",
@@ -647,6 +706,7 @@ export const weapons = {
   },
   "umbralTorch": {
     "id": "umbralTorch",
+    "gameId": "wpn_sword_0010",
     "name": "Umbral Torch",
     "rarity": 6,
     "weapon": "sword",
@@ -658,6 +718,7 @@ export const weapons = {
   },
   "rapidAscent": {
     "id": "rapidAscent",
+    "gameId": "wpn_sword_0011",
     "name": "Rapid Ascent",
     "rarity": 6,
     "weapon": "sword",
@@ -669,6 +730,7 @@ export const weapons = {
   },
   "thermiteCutter": {
     "id": "thermiteCutter",
+    "gameId": "wpn_sword_0012",
     "name": "Thermite Cutter",
     "rarity": 6,
     "weapon": "sword",
@@ -680,6 +742,7 @@ export const weapons = {
   },
   "eminentRepute": {
     "id": "eminentRepute",
+    "gameId": "wpn_sword_0013",
     "name": "Eminent Repute",
     "rarity": 6,
     "weapon": "sword",
@@ -691,6 +754,7 @@ export const weapons = {
   },
   "whiteNightNova": {
     "id": "whiteNightNova",
+    "gameId": "wpn_sword_0014",
     "name": "White Night Nova",
     "rarity": 6,
     "weapon": "sword",
@@ -702,6 +766,7 @@ export const weapons = {
   },
   "aspirant": {
     "id": "aspirant",
+    "gameId": "wpn_sword_0015",
     "name": "Aspirant",
     "rarity": 5,
     "weapon": "sword",
@@ -713,6 +778,7 @@ export const weapons = {
   },
   "neverRest": {
     "id": "neverRest",
+    "gameId": "wpn_sword_0016",
     "name": "Never Rest",
     "rarity": 6,
     "weapon": "sword",
@@ -724,6 +790,7 @@ export const weapons = {
   },
   "gloriousMemory": {
     "id": "gloriousMemory",
+    "gameId": "wpn_sword_0017",
     "name": "Glorious Memory",
     "rarity": 6,
     "weapon": "sword",
@@ -735,6 +802,7 @@ export const weapons = {
   },
   "twelveQuestions": {
     "id": "twelveQuestions",
+    "gameId": "wpn_sword_0018",
     "name": "Twelve Questions",
     "rarity": 5,
     "weapon": "sword",
@@ -746,6 +814,7 @@ export const weapons = {
   },
   "objEdgeOfLightness": {
     "id": "objEdgeOfLightness",
+    "gameId": "wpn_sword_0019",
     "name": "OBJ Edge of Lightness",
     "rarity": 5,
     "weapon": "sword",
@@ -757,6 +826,7 @@ export const weapons = {
   },
   "finchaser30": {
     "id": "finchaser30",
+    "gameId": "wpn_sword_0020",
     "name": "Finchaser 3.0",
     "rarity": 5,
     "weapon": "sword",
@@ -768,6 +838,7 @@ export const weapons = {
   },
   "grandVision": {
     "id": "grandVision",
+    "gameId": "wpn_sword_0021",
     "name": "Grand Vision",
     "rarity": 6,
     "weapon": "sword",
@@ -779,6 +850,7 @@ export const weapons = {
   },
   "lupineScarlet": {
     "id": "lupineScarlet",
+    "gameId": "wpn_sword_0022",
     "name": "Lupine Scarlet",
     "rarity": 6,
     "weapon": "sword",

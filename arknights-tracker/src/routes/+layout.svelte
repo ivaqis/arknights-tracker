@@ -273,6 +273,9 @@
                         { path: "/equipment", label: "pages.equipment", icon: "edc" },
                         { path: "/recipes", label: "pages.recipes", icon: "recepies" },
                         { type: "divider" },
+                        { path: "/leaderboard", label: "pages.leaderboard", icon: "leaderboard" },
+                        { path: "/profile", label: "pages.profile", icon: "profile" },
+                        { type: "divider" },
                         { path: "/settings", label: "sidebar.settings", icon: "settings" }
                     ] as item}
                         {#if item.type === "divider"}
