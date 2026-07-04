@@ -7,9 +7,18 @@ const crypto = require('crypto');
 const leaderboardRouter = require('./leaderboard');
 const fs = require('fs');
 const path = require('path');
+const rateLimit = require('express-rate-limit');
 
 const router = express.Router();
 const prisma = new PrismaClient();
+
+const profileUpdateLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 30,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: { error: 'Too many profile update requests, please try again later.' }
+});
 
 let bannedWords = new Set();
 let bannedRoots = [];
@@ -120,7 +129,7 @@ function parseDetailsInUserAccount(userAccount) {
     return userAccount;
 }
 
-router.post('/profile', async (req, res) => {
+router.post('/profile', profileUpdateLimiter, async (req, res) => {
     console.log("[POST /profile] received req.body:", req.body);
     const { idToken, name, picture, is_private, background, game_uid, records_uid, favorite_game_uid } = req.body;
     try {
