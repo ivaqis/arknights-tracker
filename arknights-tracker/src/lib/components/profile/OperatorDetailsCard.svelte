@@ -4,6 +4,7 @@
     import Icon from "$lib/components/Icon.svelte";
     import Image from "$lib/components/Image.svelte";
     import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
+    import AscensionIcon from "$lib/components/operators/AscensionIcon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import { equipment } from "$lib/data/items/equipment.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
@@ -255,6 +256,7 @@
                                     <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/90</span></span>
                                 </div>
                             </div>
+                            <AscensionIcon ascension={selectedChar.evolvePhase || 0} size={42} className="pb-1" />
                         </div>
                     </div>
 
@@ -270,7 +272,7 @@
                                             {#if talent.name}
                                                 {@const match = talent.name.match(/[αβγ]\s*$/)}
                                                 {@const label = match ? match[0] : ""}
-                                                {#if label}
+                                                {#if label && talent.currentLevel > 0}
                                                     <div class="absolute -bottom-1 -right-1.5 z-10 text-white font-black font-serif text-[15px] select-none" style="text-shadow: 1px 1px 2px #000, -1px -1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000;">
                                                         {label}
                                                     </div>
@@ -280,18 +282,19 @@
                                             <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.activeCount === 0 ? 'opacity-40 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="attribute-icon" className="w-full h-full object-cover rounded-full" />
                                             </div>
-                                            <div class="absolute -bottom-1 -right-2.5 z-10 bg-black/90 border border-white/20 px-1 py-0.5 rounded text-[9px] font-black text-[#FFE145] font-nums leading-none shadow-md">
-                                                +{talent.totalValue}
-                                            </div>
+                                            {#if talent.activeCount > 0}
+                                                <div class="absolute -bottom-1 -right-2.5 z-10 bg-black/90 border border-white/20 px-1 py-0.5 rounded text-[9px] font-black text-[#FFE145] font-nums leading-none shadow-md">
+                                                    +{talent.totalValue}
+                                                </div>
+                                            {/if}
                                         {:else}
                                             <div class="w-[35px] h-[35px] rounded-full bg-[#F3CE00] border-[3px] border-[#D5B500] overflow-hidden flex items-center justify-center shadow-sm p-[2px] {talent.currentLevel === 0 ? 'opacity-40 grayscale' : ''}">
                                                 <Image id={talent.localImageId || talent.iconUrl} interactive={true} variant="skill-icon" className="w-full h-full object-cover rounded-full" />
                                             </div>
-                                            {#if talent.levelsCount > 0}
+                                            {#if talent.currentLevel > 0}
                                                 <div class="absolute -bottom-1.5 -right-1.5 z-10 flex gap-[2px] pb-1 items-center pointer-events-none select-none">
-                                                    {#each Array(talent.levelsCount) as _, i}
-                                                        {@const isActive = (i + 1) <= talent.currentLevel}
-                                                        <div class="w-[4px] h-[10px] rounded-full transform rotate-[30deg] border-[1px] shrink-0 {isActive ? 'border-[#FFE145] bg-[#FFE145] shadow-sm' : 'border-gray-500 bg-transparent'}"></div>
+                                                    {#each Array(talent.currentLevel) as _, i}
+                                                        <div class="w-[4px] h-[10px] rounded-full transform rotate-[30deg] border-[1px] shrink-0 border-[#FFE145] bg-[#FFE145] shadow-sm"></div>
                                                     {/each}
                                                 </div>
                                             {/if}

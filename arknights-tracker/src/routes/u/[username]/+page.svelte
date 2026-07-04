@@ -15,6 +15,8 @@
     import { currentLocale } from "$lib/stores/locale.js";
     import { formatContractDescription } from "$lib/utils/richText.js";
     import ContractLevelTag from "$lib/components/profile/ContractLevelTag.svelte";
+    import ruEquip from "$lib/locales/ru/equipment.json";
+    import enEquip from "$lib/locales/en/equipment.json";
 
     $: username = $page.params.username;
 
@@ -30,45 +32,7 @@
 
     function getSvelteCharId(char) {
         if (!char) return "";
-        const rawName = char.charData?.name || char.name || "";
-        const nameLower = rawName.toLowerCase().trim();
-
-        const ruMapping = {
-            "эндминистратор": "endministrator1",
-            "перлика": "perlica",
-            "арделия": "ardelia",
-            "пограничник": "pogranichnik",
-            "арклайт": "arclight",
-            "авивенна": "avywenna",
-            "светоснежка": "snowshine",
-            "чэнь цяньюй": "chenQianyu",
-            "да пан": "daPan",
-            "алеш": "alesh",
-            "эстелла": "estella",
-            "кэтчер": "catcher",
-            "флюорит": "fluorite",
-            "акэкури": "akekuri",
-            "антал": "antal",
-            "лейватейн": "laevatain",
-            "ивонн": "yvonne",
-            "джилберта": "gilberta",
-            "эмбер": "ember",
-            "ласт райт": "lastRite",
-            "лифэн": "lifeng",
-            "вулфгард": "wulfgard",
-            "ксайхи": "xaihi",
-            "ксаихи": "xaihi",
-            "тангтанг": "tangtang",
-            "росси": "rossi",
-            "чжуань фаньи": "zhuangfy",
-            "ми фу": "mifu"
-        };
-
-        if (ruMapping[nameLower]) {
-            return ruMapping[nameLower];
-        }
-
-        return char.charData?.id || char.id || "";
+        return char.id || char.charId || char.charData?.id || "";
     }
 
     function mapProfessionToClass(key) {
@@ -126,18 +90,38 @@
     function getWeaponIcon(weapon) {
         if (!weapon) return "";
         const mapped = getWeaponData(weapon);
-        if (mapped && mapped.id && !mapped.id.startsWith("wpn_")) {
-            return getImagePath(mapped.id, "weapon-icon");
+        const wpnId = mapped?.id || weapon.id;
+        if (wpnId) {
+            return getImagePath(wpnId, "weapon-icon");
         }
         return weapon.icon || "";
     }
 
+    function getStaticEquipId(equipData) {
+        if (!equipData) return null;
+        const nameToMatch = equipData.name;
+        if (!nameToMatch) return null;
+
+        let matched = Object.keys(equipmentNames).find(key => equipmentNames[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        matched = Object.keys(ruEquip).find(key => ruEquip[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        matched = Object.keys(enEquip).find(key => enEquip[key]?.name === nameToMatch);
+        if (matched) return matched;
+
+        if (equipment[equipData.id]) return equipData.id;
+        return null;
+    }
+
     function getEquipIcon(equip) {
         if (!equip) return "";
-        if (equip.id) {
-            return getImagePath(equip.id, "equipment");
+        const staticId = getStaticEquipId(equip.equipData) || equip.id;
+        if (staticId) {
+            return getImagePath(staticId, "equipment");
         }
-        return equip.icon || "";
+        return equip.icon || (equip.equipData?.iconUrl || "");
     }
 
     let equipmentNames = {};
@@ -466,10 +450,10 @@
                                                 {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
                                                     {@const equip = char.equips?.[eqKey]}
                                                     {#if equip}
+                                                        {@const staticId = getStaticEquipId(equip.equipData) || equip.id}
                                                         {@const tier = Math.max(0, (equip.enhanceStatus || 1) - 1)}
-                                                        {@const eqData = equipment[equip.id]}
-                                                        <Tooltip text={equipmentNames[equip.id]?.name || equip.id}>
-                                                            <a href="/equipment/{equip.id}" class="relative flex items-center justify-between w-[38px] h-[28px] p-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
+                                                        <Tooltip text={equipmentNames[staticId]?.name || equip.equipData?.name || staticId}>
+                                                            <a href="/equipment/{staticId}" class="relative flex items-center justify-between w-[38px] h-[28px] p-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
                                                                  style="border: 1px solid transparent; background: linear-gradient(to right, #101010, #1A4558) padding-box, linear-gradient(to right, #3D3F3A, #194457) border-box;">
                                                                 
                                                                 <div class="relative w-[14px] h-[8px] flex items-center justify-center shrink-0 ml-0.5">
@@ -492,7 +476,7 @@
                                                                     src={getEquipIcon(equip)} 
                                                                     alt={eqKey} 
                                                                     class="w-[22px] h-[22px] object-contain pointer-events-none mr-0.5 shrink-0"
-                                                                    on:error={(e) => e.target.src = equip.icon}
+                                                                    on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; else if (equip.icon) e.target.src = equip.icon; }}
                                                                 />
                                                                 
                                                                 <div class="left-0.5 w-[14px] h-[1.5px] bg-[#E3A000] absolute bottom-0.5"></div>
@@ -509,12 +493,13 @@
 
                                 <div class="grid grid-cols-[repeat(auto-fill,56px)] gap-1.5 mt-4 border-t border-white/10 pt-4 justify-center">
                                     {#each activeAccount.info.contract.indicators || [] as ind}
-                                        {@const tagName = $t(`contractTagNames.${ind.id}`) || ind.name}
-                                        {@const tagDesc = formatContractDescription(ind.id, $t(`contractTagDesc.${ind.id}`) || ind.desc)}
+                                        {@const tagId = typeof ind === 'object' ? ind.id : ind}
+                                        {@const tagName = $t(`contractTagNames.${tagId}`) || (typeof ind === 'object' ? ind.name : tagId)}
+                                        {@const tagDesc = formatContractDescription(tagId, $t(`contractTagDesc.${tagId}`) || (typeof ind === 'object' ? ind.desc : ''))}
                                         {@const cleanDesc = tagDesc ? tagDesc.replace(/<[^>]*>/g, "") : ""}
                                         <Tooltip text={tagName + (cleanDesc ? ": " + cleanDesc : "")}>
                                             <div class="w-12 h-12 bg-black/90 border border-white/10 rounded-lg p-1.5 flex items-center justify-center cursor-pointer hover:border-white/30 transition-all">
-                                                <img src={getImagePath(ind.id, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = ind.icon} />
+                                                <img src={getImagePath(tagId, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = (typeof ind === 'object' ? ind.icon : '')} />
                                             </div>
                                         </Tooltip>
                                     {/each}

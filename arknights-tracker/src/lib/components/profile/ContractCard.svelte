@@ -13,6 +13,7 @@
     export let getWeaponData;
     export let getWeaponIcon;
     export let getEquipIcon;
+    export let getStaticEquipId = null;
     export let equipmentNames;
 
     $: isEmpty = !char || Object.keys(char).length === 0;
@@ -87,9 +88,10 @@
             {#each ['bodyEquip', 'armEquip', 'firstAccessory', 'secondAccessory'] as eqKey}
                 {@const equip = char.equips?.[eqKey]}
                 {#if equip}
+                    {@const staticId = (equip.equipData && getStaticEquipId) ? getStaticEquipId(equip.equipData) : (equip.id || "")}
                     {@const tier = Math.max(0, (equip.enhanceStatus || 1) - 1)}
-                    <Tooltip text={equipmentNames[equip.id]?.name || equip.id}>
-                        <a href="/equipment/{equip.id}" class="relative flex items-center justify-end w-[38px] h-[28px] py-0.5 pl-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
+                    <Tooltip text={equipmentNames[staticId]?.name || equip.equipData?.name || staticId}>
+                        <a href="/equipment/{staticId}" class="relative flex items-center justify-end w-[38px] h-[28px] py-0.5 pl-0.5 min-w-0 transition-transform duration-200 hover:scale-110 hover:z-20 cursor-pointer block"
                            style="border: 1px solid transparent; background: linear-gradient(to right, #101010, #1A4558) padding-box, linear-gradient(to right, #3D3F3A, #194457) border-box;">
                             
                             <div class="absolute top-0.5 left-0.5 w-[14px] h-[8px] flex items-center justify-center shrink-0">
@@ -112,7 +114,7 @@
                                 src={getEquipIcon(equip)} 
                                 alt={eqKey} 
                                 class="-mr-1 w-[30px] h-[30px] object-contain pointer-events-none shrink-0"
-                                on:error={(e) => e.target.src = equip.icon}
+                                on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; else if (equip.icon) e.target.src = equip.icon; }}
                             />
                             
                             <div class="left-0.5 w-[14px] h-[1.5px] bg-[#E3A000] absolute bottom-0.5 rounded"></div>

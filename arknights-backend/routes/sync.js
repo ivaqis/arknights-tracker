@@ -104,6 +104,22 @@ function generateSign(path, query, timestamp, token) {
                  .digest('hex');
 }
 
+function parseDetailsInUserAccount(userAccount) {
+    if (userAccount && userAccount.details) {
+        userAccount.details = userAccount.details.map(d => {
+            try {
+                return {
+                    ...d,
+                    account_info: typeof d.account_info === 'string' ? JSON.parse(d.account_info) : d.account_info
+                };
+            } catch (e) {
+                return d;
+            }
+        });
+    }
+    return userAccount;
+}
+
 router.post('/profile', async (req, res) => {
     console.log("[POST /profile] received req.body:", req.body);
     const { idToken, name, picture, is_private, background, game_uid, records_uid } = req.body;
@@ -193,7 +209,7 @@ router.post('/profile', async (req, res) => {
             include: { details: true }
         });
 
-        res.json({ status: 'success', data: fullUserAccount });
+        res.json({ status: 'success', data: parseDetailsInUserAccount(fullUserAccount) });
     } catch (e) {
         console.error("[Profile API Error]:", e.message);
         res.status(400).json({ error: e.message });
@@ -212,7 +228,7 @@ router.get('/profile/:uid', async (req, res) => {
             return res.status(404).json({ error: 'Profile not found' });
         }
 
-        res.json({ status: 'success', data: userAccount });
+        res.json({ status: 'success', data: parseDetailsInUserAccount(userAccount) });
     } catch (e) {
         console.error("[Profile API Error]:", e.message);
         res.status(500).json({ error: 'Internal Server Error' });
@@ -675,7 +691,7 @@ router.get('/profile-by-name/:name', async (req, res) => {
             return res.status(403).json({ error: 'This profile is private' });
         }
 
-        res.json({ status: 'success', data: userAccount });
+        res.json({ status: 'success', data: parseDetailsInUserAccount(userAccount) });
     } catch (e) {
         console.error("[Profile API Error]:", e.message);
         res.status(500).json({ error: 'Internal Server Error' });
@@ -739,6 +755,158 @@ for (const key in nameScoreToTagId) {
     }
 }
 
+const ruCharMapping = {
+    "эндминистратор": "endministrator1",
+    "перлика": "perlica",
+    "арделия": "ardelia",
+    "пограничник": "pogranichnik",
+    "арклайт": "arclight",
+    "авивенна": "avywenna",
+    "светоснежка": "snowshine",
+    "чэнь цяньюй": "chenQianyu",
+    "да пан": "daPan",
+    "алеш": "alesh",
+    "эстелла": "estella",
+    "кэтчер": "catcher",
+    "флюорит": "fluorite",
+    "акэкури": "akekuri",
+    "антал": "antal",
+    "лейватейн": "laevatain",
+    "ивонн": "yvonne",
+    "джилберта": "gilberta",
+    "эмбер": "ember",
+    "ласт райт": "lastRite",
+    "лифэн": "lifeng",
+    "вулфгард": "wulfgard",
+    "ксайхи": "xaihi",
+    "ксаихи": "xaihi",
+    "тангтанг": "tangtang",
+    "росси": "rossi",
+    "чжуань фаньи": "zhuangfy",
+    "ми фу": "mifu"
+};
+
+const apiIdToCharId = {
+    "c4cf7541c23c93f991e2e464ee18bb18": "perlica",
+    "ad1607a2d5a203b1e95762ff0d911bcd": "chenQianyu",
+    "0295282ff895bd1b7242d137da99dc94": "gilberta",
+    "bfb4ba13f819568c69c2ae46d8f5b869": "ardelia",
+    "ce97268e7469e004a3e7a81e4b09a025": "ember",
+    "12ccf3692d76c7bddd3ef84eddd3f3c1": "lastRite",
+    "9c4a116d4dba884c3db9b7f46ea7ea20": "pogranichnik",
+    "7e6df1575604cc5872590f22af757e40": "alesh",
+    "00ff4c582aeeafc237695f81e36969b4": "arclight",
+    "e7b91cae9108d01f550922498747a45e": "avywenna",
+    "55ab3b3d98fa76a045347d29da1abbca": "daPan",
+    "06ba43ff26befc881fd106eaa5ef1b81": "snowshine",
+    "26e3cc73ac23deb8f6a875038d2243ff": "wulfgard",
+    "3839d35948216cc09368cd62167c7368": "xaihi",
+    "a0591d65311b190e7d5e09faa0ed1cdd": "akekuri",
+    "1b441436fd73326614cfcd14c640e068": "antal",
+    "e6c2a3e9f0b1917eb0b1fe29a4b94b3d": "catcher",
+    "50515754ef6085bb6a8ddc21ab18a825": "estella",
+    "bcb564ed05eb0912d4b0f86d1e193c9f": "fluorite",
+    "ee3bf7197a05580397b45ba2fb1de28e": "tangtang"
+};
+
+function getMappedCharId(c) {
+    if (!c) return "";
+    const rawId = c.charData?.id || c.id || c.charId || "";
+    const nameLower = (c.charData?.name || c.name || "").toLowerCase().trim();
+    if (rawId === "93e76fbbc07f7b480cfe0870c6414494" || nameLower === "эндминистратор") {
+        const avatar = c.charData?.avatarSqUrl || c.avatarSqUrl || c.avatarUrl || "";
+        if (avatar.includes("399568dc6c8b6e0331947f58ab7a19ad") || avatar.includes("2f61fccb562d9616a2eb057a349e0be6")) {
+            return "endministrator1"; // Female
+        }
+        return "endministrator2"; // Male
+    }
+    if (rawId && apiIdToCharId[rawId]) {
+        return apiIdToCharId[rawId];
+    }
+    if (ruCharMapping[nameLower]) {
+        return ruCharMapping[nameLower];
+    }
+    return rawId;
+}
+
+function normalizeCultNodeId(id) {
+    if (!id) return null;
+    const m1 = id.match(/^spaceship_skill_(.+)_(\d+)_(\d+)$/);
+    if (m1) {
+        return {
+            charId: m1[1],
+            skillIdx: parseInt(m1[2], 10),
+            level: parseInt(m1[3], 10)
+        };
+    }
+    const m2 = id.match(/^fac_(.+)_(\d+)_(\d+)$/);
+    if (m2) {
+        return {
+            charId: m2[1],
+            skillIdx: parseInt(m2[2], 10) + 1,
+            level: parseInt(m2[3], 10)
+        };
+    }
+    return null;
+}
+
+function getCombatTalentLevel(char, idx) {
+    const combatNodes = char.charData?.combatTalents || [];
+    const latestPassive = char.talent?.latestPassiveSkillNodes || [];
+    const talentNodes = combatNodes.filter(node => {
+        const match = node.id?.match(/passive_skill_(\d+)_/);
+        return match && (parseInt(match[1], 10) + 1) === idx;
+    });
+    talentNodes.sort((a, b) => a.id.localeCompare(b.id));
+    if (talentNodes.length === 0) return 0;
+    const activeNode = latestPassive.find(id => talentNodes.some(n => n.id === id));
+    if (activeNode) {
+        return talentNodes.findIndex(n => n.id === activeNode) + 1;
+    }
+    return 0;
+}
+
+function getBaseSkillLevel(char, idx) {
+    const cultNodes = char.charData?.cultivationTalents || [];
+    const latestFactory = char.talent?.latestFactorySkillNodes || char.talent?.latestSpaceshipSkillNodes || [];
+    const skillNodes = cultNodes.filter(node => {
+        const parts = node.id.split('_');
+        if (parts.length >= 2) {
+            const parsedIdx = parseInt(parts[parts.length - 2], 10);
+            return parsedIdx === idx;
+        }
+        return false;
+    });
+    skillNodes.sort((a, b) => a.id.localeCompare(b.id));
+    if (skillNodes.length === 0) return 0;
+    const activeNode = latestFactory.find(activeId => {
+        const normActive = normalizeCultNodeId(activeId);
+        return skillNodes.some(n => {
+            const normN = normalizeCultNodeId(n.id);
+            return normActive && normN &&
+                normActive.charId === normN.charId &&
+                normActive.skillIdx === normN.skillIdx &&
+                normActive.level === normN.level;
+        });
+    });
+    if (activeNode) {
+        const norm = normalizeCultNodeId(activeNode);
+        return norm ? norm.level : 0;
+    }
+    return 0;
+}
+
+function getStaticWeaponId(weapon) {
+    if (!weapon || !weapon.weaponData) return null;
+    const skills = weapon.weaponData.skills || [];
+    for (const s of skills) {
+        if (s.key && s.key.startsWith('sk_wpn_')) {
+            return s.key.substring(3); // 'sk_wpn_...' -> 'wpn_...'
+        }
+    }
+    return weapon.weaponData.id || weapon.id;
+}
+
 function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
     if (rawInfo && rawInfo.base && rawInfo.stats && !contractDetail) {
         return rawInfo;
@@ -758,13 +926,120 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
     }
 
     const mappedChars = (detail.chars || []).map(c => {
-        return {
-            id: c.charData?.id || c.id,
+        const mappedId = getMappedCharId(c);
+        const charObj = {
+            id: mappedId,
             name: c.charData?.name || c.name || "Operator",
             level: c.level || 1,
+            evolvePhase: c.evolvePhase || 0,
             potentialLevel: c.potentialLevel || 0,
             potential: (c.potentialLevel !== undefined ? c.potentialLevel + 1 : (c.potential || 1)),
-            charData: c.charData
+            charData: c.charData,
+            userSkills: c.userSkills || {},
+            weapon: c.weapon || null,
+            bodyEquip: c.bodyEquip || null,
+            armEquip: c.armEquip || null,
+            firstAccessory: c.firstAccessory || null,
+            secondAccessory: c.secondAccessory || null,
+            talent: c.talent || {}
+        };
+        
+        const talentLevels = {
+            talent1: getCombatTalentLevel(charObj, 1),
+            talent2: getCombatTalentLevel(charObj, 2),
+            baseSkill1: getBaseSkillLevel(charObj, 1),
+            baseSkill2: getBaseSkillLevel(charObj, 2)
+        };
+
+        const prunedCharData = {
+            rarity: Number(c.charData?.rarity?.value || c.rarity || 4),
+            property: c.charData?.property ? { key: c.charData.property.key } : null,
+            skills: (c.charData?.skills || []).map(s => ({
+                id: s.id,
+                key: s.key,
+                name: s.name,
+                property: s.property ? { key: s.property.key } : null
+            })),
+            combatTalents: (c.charData?.combatTalents || []).map(t => ({
+                id: t.id,
+                name: t.name,
+                descParams: t.descParams
+            })),
+            cultivationTalents: (c.charData?.cultivationTalents || []).map(t => ({
+                id: t.id,
+                name: t.name,
+                descParams: t.descParams
+            })),
+            abilityTalents: (c.charData?.abilityTalents || []).map(t => ({
+                id: t.id,
+                name: t.name,
+                desc: t.desc || "",
+                descParams: t.descParams
+            }))
+        };
+
+        const prunedUserSkills = {};
+        if (c.userSkills) {
+            for (const [skId, skVal] of Object.entries(c.userSkills)) {
+                if (skVal) {
+                    prunedUserSkills[skId] = { level: skVal.level || 1 };
+                }
+            }
+        }
+
+        const weaponStaticId = getStaticWeaponId(c.weapon);
+        const rawRarity = c.weapon ? (c.weapon.rarity || c.weapon.weaponData?.rarity) : null;
+        const prunedWeapon = c.weapon ? {
+            id: weaponStaticId || c.weapon.id,
+            level: c.weapon.level,
+            refineLevel: c.weapon.refineLevel,
+            rarity: rawRarity && typeof rawRarity === 'object' ? Number(rawRarity.value) : rawRarity,
+            weaponTerms: c.weapon.weaponTerms,
+            weaponData: c.weapon.weaponData ? {
+                id: weaponStaticId || c.weapon.weaponData.id,
+                name: c.weapon.weaponData.name,
+                rarity: c.weapon.weaponData.rarity ? { value: c.weapon.weaponData.rarity.value } : null,
+                skills: (c.weapon.weaponData.skills || []).map(s => ({ key: s.key }))
+            } : null,
+            gem: c.weapon.gem ? {
+                gemData: c.weapon.gem.gemData ? {
+                    templateId: c.weapon.gem.gemData.templateId,
+                    termId: c.weapon.gem.gemData.termId,
+                    name: c.weapon.gem.gemData.name,
+                    rarity: c.weapon.gem.gemData.rarity
+                } : null
+            } : null
+        } : null;
+
+        const pruneEquip = (eq) => {
+            if (!eq) return null;
+            return {
+                id: eq.id,
+                enhanceStatus: eq.enhanceStatus,
+                equipData: eq.equipData ? {
+                    id: eq.equipData.id,
+                    name: eq.equipData.name,
+                    level: eq.equipData.level,
+                    properties: eq.equipData.properties
+                } : null
+            };
+        };
+
+        return {
+            id: charObj.id,
+            level: charObj.level,
+            evolvePhase: charObj.evolvePhase,
+            potentialLevel: charObj.potentialLevel,
+            potential: charObj.potential,
+            charData: prunedCharData,
+            userSkills: prunedUserSkills,
+            weapon: prunedWeapon,
+            bodyEquip: pruneEquip(c.bodyEquip),
+            armEquip: pruneEquip(c.armEquip),
+            firstAccessory: pruneEquip(c.firstAccessory),
+            secondAccessory: pruneEquip(c.secondAccessory),
+            talent: c.talent ? { attrNodes: c.talent.attrNodes || [] } : {},
+            talentLevels
         };
     });
 
@@ -772,6 +1047,68 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
     let contractClearTime = 0;
     let contractChars = [];
     let contractIndicators = [];
+
+    const mapContractChar = (c) => {
+        const mappedId = getMappedCharId(c);
+        const rosterChar = mappedChars.find(rc => rc.id === mappedId);
+
+        const contractRawRarity = c.weapon ? (c.weapon.rarity || c.weapon.weaponData?.rarity) : null;
+        const rawWeapon = rosterChar ? rosterChar.weapon : (c.weapon ? {
+            id: getStaticWeaponId(c.weapon) || c.weapon.id,
+            level: c.weapon.level,
+            refineLevel: c.weapon.refineLevel,
+            rarity: contractRawRarity && typeof contractRawRarity === 'object' ? Number(contractRawRarity.value) : contractRawRarity,
+            weaponTerms: c.weapon.weaponTerms || []
+        } : null);
+
+        const weapon = rawWeapon ? {
+            id: rawWeapon.id,
+            level: rawWeapon.level,
+            refineLevel: rawWeapon.refineLevel,
+            rarity: rawWeapon.rarity,
+            weaponTerms: (c.weapon && c.weapon.weaponTerms && c.weapon.weaponTerms.length > 0) ? c.weapon.weaponTerms : (rawWeapon.weaponTerms || [])
+        } : null;
+
+        const pruneContractEquip = (eq) => {
+            if (!eq) return null;
+            return {
+                id: eq.id,
+                enhanceStatus: eq.enhanceStatus,
+                equipData: eq.equipData ? {
+                    id: eq.equipData.id,
+                    name: eq.equipData.name,
+                    level: eq.equipData.level,
+                    properties: eq.equipData.properties
+                } : null
+            };
+        };
+
+        const equips = rosterChar ? {
+            bodyEquip: rosterChar.bodyEquip,
+            armEquip: rosterChar.armEquip,
+            firstAccessory: rosterChar.firstAccessory,
+            secondAccessory: rosterChar.secondAccessory
+        } : (c.equips ? {
+            bodyEquip: pruneContractEquip(c.equips.bodyEquip),
+            armEquip: pruneContractEquip(c.equips.armEquip),
+            firstAccessory: pruneContractEquip(c.equips.firstAccessory),
+            secondAccessory: pruneContractEquip(c.equips.secondAccessory)
+        } : null);
+
+        return {
+            id: mappedId,
+            level: c.level || 1,
+            potentialLevel: c.potentialLevel || 0,
+            potential: c.potentialLevel + 1,
+            weapon: weapon,
+            equips: equips,
+            charData: rosterChar ? {
+                avatarSqUrl: rosterChar.charData?.avatarSqUrl || ""
+            } : {
+                avatarSqUrl: c.avatarUrl || c.charData?.avatarSqUrl || ""
+            }
+        };
+    };
 
     if (contractDetail) {
         contractLevel = contractDetail.status?.highest || 0;
@@ -791,81 +1128,21 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
                 const name = ind.name || "";
                 const score = ind.score || 1;
                 const lookupKey = `${name}_${score}`;
-                const tagId = nameScoreToTagId[lookupKey] || nameToTagId[name] || ind.id || "";
-                return {
-                    id: tagId,
-                    icon: ind.icon || "",
-                    name: name,
-                    desc: ind.desc || ""
-                };
+                return nameScoreToTagId[lookupKey] || nameToTagId[name] || ind.id || "";
             });
             const detailCharsList = contractDetail.bestRecordDetail?.chars || bestRecord.chars || [];
-            contractChars = detailCharsList.map(c => {
-                const rosterChar = mappedChars.find(rc => rc.id === c.charId);
-                return {
-                    id: c.charId,
-                    name: rosterChar ? rosterChar.name : "Operator",
-                    level: c.level || 1,
-                    potentialLevel: c.potentialLevel || 0,
-                    potential: c.potentialLevel + 1,
-                    weapon: c.weapon ? {
-                        id: c.weapon.id,
-                        icon: c.weapon.icon,
-                        level: c.weapon.level,
-                        refineLevel: c.weapon.refineLevel,
-                        rarity: c.weapon.rarity && typeof c.weapon.rarity === 'object' ? Number(c.weapon.rarity.value) : c.weapon.rarity,
-                        weaponTerms: c.weapon.weaponTerms || []
-                    } : null,
-                    equips: c.equips ? {
-                        bodyEquip: c.equips.bodyEquip ? {
-                            id: c.equips.bodyEquip.id,
-                            icon: c.equips.bodyEquip.icon,
-                            enhanceStatus: c.equips.bodyEquip.enhanceStatus,
-                            rarity: c.equips.bodyEquip.rarity && typeof c.equips.bodyEquip.rarity === 'object' ? Number(c.equips.bodyEquip.rarity.value) : c.equips.bodyEquip.rarity
-                        } : null,
-                        armEquip: c.equips.armEquip ? {
-                            id: c.equips.armEquip.id,
-                            icon: c.equips.armEquip.icon,
-                            enhanceStatus: c.equips.armEquip.enhanceStatus,
-                            rarity: c.equips.armEquip.rarity && typeof c.equips.armEquip.rarity === 'object' ? Number(c.equips.armEquip.rarity.value) : c.equips.armEquip.rarity
-                        } : null,
-                        firstAccessory: c.equips.firstAccessory ? {
-                            id: c.equips.firstAccessory.id,
-                            icon: c.equips.firstAccessory.icon,
-                            enhanceStatus: c.equips.firstAccessory.enhanceStatus,
-                            rarity: c.equips.firstAccessory.rarity && typeof c.equips.firstAccessory.rarity === 'object' ? Number(c.equips.firstAccessory.rarity.value) : c.equips.firstAccessory.rarity
-                        } : null,
-                        secondAccessory: c.equips.secondAccessory ? {
-                            id: c.equips.secondAccessory.id,
-                            icon: c.equips.secondAccessory.icon,
-                            enhanceStatus: c.equips.secondAccessory.enhanceStatus,
-                            rarity: c.equips.secondAccessory.rarity && typeof c.equips.secondAccessory.rarity === 'object' ? Number(c.equips.secondAccessory.rarity.value) : c.equips.secondAccessory.rarity
-                        } : null
-                    } : null,
-                    charData: rosterChar ? rosterChar.charData : {
-                        id: c.charId,
-                        name: "Operator",
-                        avatarSqUrl: c.avatarUrl
-                    }
-                };
-            });
+            contractChars = detailCharsList.map(mapContractChar);
         }
     } else if (crisisContractList.length > 0) {
         const latestContract = crisisContractList[0];
         contractLevel = latestContract.highest || 0;
         contractClearTime = latestContract.clearTime || latestContract.costTime || latestContract.time || 0;
-        contractChars = latestContract.chars || [];
+        contractChars = (latestContract.chars || []).map(mapContractChar);
         contractIndicators = (latestContract.indicators || []).map(ind => {
             const name = ind.name || "";
             const score = ind.score || 1;
             const lookupKey = `${name}_${score}`;
-            const tagId = nameScoreToTagId[lookupKey] || nameToTagId[name] || ind.id || "";
-            return {
-                id: tagId,
-                icon: ind.icon || "",
-                name: name,
-                desc: ind.desc || ""
-            };
+            return nameScoreToTagId[lookupKey] || nameToTagId[name] || ind.id || "";
         });
     }
 
@@ -897,8 +1174,7 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
             chars: contractChars,
             indicators: contractIndicators
         },
-        chars: mappedChars,
-        detail: detail
+        chars: mappedChars
     };
 
     return normalized;

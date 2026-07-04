@@ -139,59 +139,9 @@
         return acc;
     }, {});
 
-    const charactersByApiId = Object.values(characters || {}).reduce((acc, char) => {
-        if (char && char.apiId) acc[char.apiId] = char;
-        return acc;
-    }, {});
-
     function getSvelteCharId(char) {
         if (!char) return "";
-        const charId = char.charData?.id || char.id || char.charId || "";
-
-        // Сделать так, если перс не найден, то высылать это на бэк в табличку какую-нибудь, а еще лучше на бэке сделать обработку
-        if (charId && charactersByApiId[charId]) {
-            return charactersByApiId[charId].id;
-        }
-
-        const rawName = char.charData?.name || char.name || "";
-        const nameLower = rawName.toLowerCase().trim();
-
-        const ruMapping = {
-            "эндминистратор": "endministrator1",
-            "перлика": "perlica",
-            "арделия": "ardelia",
-            "пограничник": "pogranichnik",
-            "арклайт": "arclight",
-            "авивенна": "avywenna",
-            "светоснежка": "snowshine",
-            "чэнь цяньюй": "chenQianyu",
-            "да пан": "daPan",
-            "алеш": "alesh",
-            "эстелла": "estella",
-            "кэтчер": "catcher",
-            "флюорит": "fluorite",
-            "акэкури": "akekuri",
-            "антал": "antal",
-            "лейватейн": "laevatain",
-            "ивонн": "yvonne",
-            "джилберта": "gilberta",
-            "эмбер": "ember",
-            "ласт райт": "lastRite",
-            "лифэн": "lifeng",
-            "вулфгард": "wulfgard",
-            "ксайхи": "xaihi",
-            "ксаихи": "xaihi",
-            "тангтанг": "tangtang",
-            "росси": "rossi",
-            "чжуань фаньи": "zhuangfy",
-            "ми фу": "mifu"
-        };
-
-        if (ruMapping[nameLower]) {
-            return ruMapping[nameLower];
-        }
-
-        return charId;
+        return char.id || char.charId || char.charData?.id || "";
     }
 
     function mapProfessionToClass(key) {
@@ -239,8 +189,9 @@
     function getWeaponIcon(weapon) {
         if (!weapon) return "";
         const mapped = getWeaponData(weapon);
-        if (mapped && mapped.id && !mapped.id.startsWith("wpn_")) {
-            return getImagePath(mapped.id, "weapon-icon");
+        const wpnId = mapped?.id || weapon.id;
+        if (wpnId) {
+            return getImagePath(wpnId, "weapon-icon");
         }
         return weapon.icon || "";
     }
@@ -335,10 +286,11 @@
 
     function getEquipIcon(equip) {
         if (!equip) return "";
-        if (equip.id) {
-            return getImagePath(equip.id, "equipment");
+        const staticId = getStaticEquipId(equip.equipData) || equip.id;
+        if (staticId) {
+            return getImagePath(staticId, "equipment");
         }
-        return equip.icon || "";
+        return equip.icon || (equip.equipData?.iconUrl || "");
     }
 
     let equipmentNames = {};
@@ -486,8 +438,8 @@
     $: elementColor = opData ? (getGradientColorByElement(opData.element) || "from-white/5 to-transparent") : "from-white/5 to-transparent";
 
     function getDetailedChar(charId) {
-        if (!activeAccount?.info?.detail?.chars) return null;
-        return activeAccount.info.detail.chars.find(c => c.charData?.id === charId || c.id === charId);
+        if (!activeAccount?.info?.chars) return null;
+        return activeAccount.info.chars.find(c => c.charData?.id === charId || c.id === charId);
     }
 
     function getEquipTier(levelStr, rarity) {
@@ -616,32 +568,10 @@
         });
     }
 
-    function normalizeCultNodeId(id) {
-        if (!id) return null;
-        const m1 = id.match(/^spaceship_skill_(.+)_(\d+)_(\d+)$/);
-        if (m1) {
-            return {
-                charId: m1[1],
-                skillIdx: parseInt(m1[2], 10),
-                level: parseInt(m1[3], 10)
-            };
-        }
-        const m2 = id.match(/^fac_(.+)_(\d+)_(\d+)$/);
-        if (m2) {
-            return {
-                charId: m2[1],
-                skillIdx: parseInt(m2[2], 10) + 1,
-                level: parseInt(m2[3], 10)
-            };
-        }
-        return null;
-    }
-
     function getTalents(char, detailedChar, staticDetails = null, charLocale = null) {
         if (!char?.charData) return [];
         const svelteId = getSvelteCharId(char);
         const combatNodes = char.charData.combatTalents || [];
-        const latestPassive = detailedChar?.talent?.latestPassiveSkillNodes || [];
         const groupedCombat = {};
         combatNodes.forEach(node => {
             if (!groupedCombat[node.name]) {
@@ -663,25 +593,22 @@
             }
             const currentIdx = talentIdx + 1;
             
-            const activeNode = latestPassive.find(id => nodes.some(n => n.id === id));
-            let currentLevel = 0;
-            if (activeNode) {
-                currentLevel = nodes.findIndex(n => n.id === activeNode) + 1;
-            }
+            const talentKey = `talent${currentIdx}`;
+            const currentLevel = detailedChar?.talentLevels?.[talentKey] || 0;
             
             const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
             
-            const talentKey = `talent${currentIdx}`;
-            const localeData = charLocale?.skills?.[talentKey];
+            const talentKeyName = `talent${currentIdx}`;
+            const localeData = charLocale?.skills?.[talentKeyName];
             const localizedName = localeData?.name || nodeData.name;
             let desc = nodeData.desc;
             if (localeData?.levels) {
                 const descIndex = Math.max(0, currentLevel - 1);
                 desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
             }
-            const bbKey = `${talentKey}_${Math.max(1, currentLevel)}`;
+            const bbKey = `${talentKeyName}_${Math.max(1, currentLevel)}`;
             const blackboard = staticDetails?.blackboard || {};
-            const currentBlackboard = blackboard[bbKey] || blackboard[talentKey] || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[talentKeyName] || {};
             desc = interpolateBlackboard(desc, currentBlackboard);
 
             combatList.push({
@@ -702,7 +629,6 @@
         combatList.forEach(item => talents.push(item.data));
 
         const cultNodes = char.charData.cultivationTalents || [];
-        const latestFactory = detailedChar?.talent?.latestFactorySkillNodes || detailedChar?.talent?.latestSpaceshipSkillNodes || [];
         const groupedCult = {};
         cultNodes.forEach(node => {
             const baseName = node.name.replace(/\s*[αβγ]\s*$/, "").trim();
@@ -729,24 +655,8 @@
                 }
             }
 
-            const activeNode = latestFactory.find(activeId => {
-                const normActive = normalizeCultNodeId(activeId);
-                return nodes.some(n => {
-                    const normN = normalizeCultNodeId(n.id);
-                    return normActive && normN &&
-                        normActive.charId === normN.charId &&
-                        normActive.skillIdx === normN.skillIdx &&
-                        normActive.level === normN.level;
-                });
-            });
-
-            let currentLevel = 0;
-            if (activeNode) {
-                const norm = normalizeCultNodeId(activeNode);
-                if (norm) {
-                    currentLevel = norm.level;
-                }
-            }
+            const baseKey = `baseSkill${skillIdx}`;
+            const currentLevel = detailedChar?.talentLevels?.[baseKey] || 0;
 
             const nodeData = nodes[currentLevel > 0 ? currentLevel - 1 : 0] || {};
             let localImageId = "";
@@ -759,8 +669,8 @@
                 }
             }
 
-            const baseKey = `baseSkill${skillIdx}`;
-            const localeData = charLocale?.skills?.[baseKey];
+            const baseKeyPrefix = `baseSkill${skillIdx}`;
+            const localeData = charLocale?.skills?.[baseKeyPrefix];
             const localizedName = localeData?.name || nodeData.name;
             
             const greekMatch = nodeData.name.match(/[αβγ]\s*$/);
@@ -774,9 +684,9 @@
                 const descIndex = Math.max(0, currentLevel - 1);
                 desc = localeData.levels[descIndex] || localeData.levels[0] || desc;
             }
-            const bbKey = `${baseKey}_${Math.max(1, currentLevel)}`;
+            const bbKey = `${baseKeyPrefix}_${Math.max(1, currentLevel)}`;
             const blackboard = staticDetails?.blackboard || {};
-            const currentBlackboard = blackboard[bbKey] || blackboard[baseKey] || {};
+            const currentBlackboard = blackboard[bbKey] || blackboard[baseKeyPrefix] || {};
             desc = interpolateBlackboard(desc, currentBlackboard);
 
             cultList.push({
@@ -801,11 +711,19 @@
         const abilityNodes = char.charData.abilityTalents || [];
         if (abilityNodes.length > 0) {
             const attrNodes = new Set(detailedChar?.talent?.attrNodes || char.talent?.attrNodes || []);
+            const hasNode = (nodeId) => {
+                if (attrNodes.has(nodeId)) return true;
+                if (nodeId.includes('endmin')) {
+                    const suffix = nodeId.split('_').pop();
+                    return Array.from(attrNodes).some(attrId => attrId.includes('endmin') && attrId.endsWith('_' + suffix));
+                }
+                return false;
+            };
             let totalValue = 0;
             let activeNodesCount = 0;
             
             abilityNodes.forEach(node => {
-                if (attrNodes.has(node.id)) {
+                if (hasNode(node.id)) {
                     activeNodesCount++;
                     const valMatch = node.desc?.match(/\+(\d+)/);
                     if (valMatch) {
@@ -817,7 +735,7 @@
             const firstNode = abilityNodes[0] || {};
             let description = firstNode.desc || "";
             if (activeNodesCount > 0) {
-                const activeNodeList = abilityNodes.filter(n => attrNodes.has(n.id));
+                const activeNodeList = abilityNodes.filter(n => hasNode(n.id));
                 activeNodeList.sort((a, b) => a.id.localeCompare(b.id));
                 const highestActive = activeNodeList[activeNodeList.length - 1];
                 if (highestActive) {
@@ -886,7 +804,7 @@
                     if (profile.details) {
                         profile.details = profile.details.map(d => {
                             try {
-                                return { ...d, info: JSON.parse(d.account_info) };
+                                return { ...d, info: typeof d.account_info === 'string' ? JSON.parse(d.account_info) : d.account_info };
                             } catch (e) {
                                 return { ...d, info: {} };
                             }
@@ -1555,6 +1473,7 @@
                                             {getWeaponData}
                                             {getWeaponIcon}
                                             {getEquipIcon}
+                                            {getStaticEquipId}
                                             {equipmentNames}
                                         />
                                     {/each}
@@ -1562,12 +1481,13 @@
 
                                 <div class="grid grid-cols-[repeat(auto-fill,56px)] gap-1.5 mt-4 border-t border-white/10 pt-4 justify-center">
                                     {#each activeAccount.info.contract.indicators || [] as ind}
-                                        {@const tagName = $t(`contractTagNames.${ind.id}`) || ind.name}
-                                        {@const tagDesc = formatContractDescription(ind.id, $t(`contractTagDesc.${ind.id}`) || ind.desc)}
+                                        {@const tagId = typeof ind === 'object' ? ind.id : ind}
+                                        {@const tagName = $t(`contractTagNames.${tagId}`) || (typeof ind === 'object' ? ind.name : tagId)}
+                                        {@const tagDesc = formatContractDescription(tagId, $t(`contractTagDesc.${tagId}`) || (typeof ind === 'object' ? ind.desc : ''))}
                                         {@const cleanDesc = tagDesc ? tagDesc.replace(/<[^>]*>/g, "") : ""}
                                         <Tooltip text={tagName + (cleanDesc ? ": " + cleanDesc : "")}>
                                             <div class="w-12 h-12 bg-black/90 border border-white/10 rounded-lg p-1.5 flex items-center justify-center cursor-pointer hover:border-white/30 transition-all">
-                                                <img src={getImagePath(ind.id, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = ind.icon} />
+                                                <img src={getImagePath(tagId, "contract-tag-icon")} alt={tagName} class="w-full h-full object-contain" on:error={(e) => e.target.src = (typeof ind === 'object' ? ind.icon : '')} />
                                             </div>
                                         </Tooltip>
                                     {/each}

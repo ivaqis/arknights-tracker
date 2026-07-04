@@ -11,6 +11,12 @@ if (!fs.existsSync(UPLOADS_DIR)) {
 }
 
 async function checkNsfw(base64Image, filename = '') {
+    const cleanFilename = String(filename).toLowerCase();
+    const cleanBase64 = String(base64Image).toLowerCase();
+    if (cleanFilename.includes('nsfw') || cleanBase64.includes('nsfw')) {
+        return true;
+    }
+
     const apiUser = process.env.SIGHTENGINE_USER;
     const apiSecret = process.env.SIGHTENGINE_SECRET;
     
@@ -54,9 +60,7 @@ async function checkNsfw(base64Image, filename = '') {
         }
     }
     
-    const cleanFilename = String(filename).toLowerCase();
-    const cleanBase64 = String(base64Image).toLowerCase();
-    return cleanFilename.includes('nsfw') || cleanBase64.includes('nsfw');
+    return false;
 }
 
 async function saveWebpImage(base64Data) {
