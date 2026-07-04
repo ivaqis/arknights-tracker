@@ -193,10 +193,9 @@
     function getServerName(serverId) {
         return serverId === "2" ? "Asia" : "Americas/Europe";
     }
-    
+
     function getAvatarUrl(pictureId) {
-        if (localAvatar) return localAvatar;
-        if (pictureId) return `/uploads/${pictureId}.webp`;
+        if (pictureId) return `https://goyfield.moe/uploads/${pictureId}.webp`;
         return "";
     }
 
