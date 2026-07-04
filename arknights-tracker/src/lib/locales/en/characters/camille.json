@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "SP Recovery",
+      "Heat Infliction",
+      "Link"
+    ],
+    "behaviourHateTags": [
+      "Nature"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing (SYSTEM ONLY, not visible in-game)"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Situational Analysis",
+      "Agility"
+    ],
+    "giftPreferTags": [
+      "Wuling Swordmancers' Choice"
+    ],
+    "hobbyTags": [
+      "Creative",
+      "Technology"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+        "finisherAtkMultiplier": "Finisher ATK Multiplier",
+        "diveAtkMultiplier": "Dive ATK Multiplier"
+      },
+      "name": "Sanguine Absolution",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.fire>Heat DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.fire>Heat DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.fire>Heat DMG</> and recovers some SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger",
+        "firefangVesperwingDurationS": "Firefang Vesperwing Duration (s)",
+        "weaknessEffect": "Weakness Effect",
+        "heatSusceptibility": "Heat Susceptibility",
+        "explosionDmgMultiplier": "Explosion DMG Multiplier"
+      },
+      "name": "Blazing Exorcism",
+      "description": "Camille summons <@ba.key>Firefang Vesperwings</> that fly towards the enemy to deal <@ba.fire>Heat DMG</> and apply <#ba.fireinflict>Heat Infliction</> on enemies in a small area of effect. The <@ba.key>Firefang Vesperwings</> then temporarily <@ba.key>hover</> around the target and apply <#ba.weak>Weakness</> and <#ba.firevul>Heat Susceptibility</> to the said target for the duration of the hovering. When the target is defeated, the <@ba.key>Firefang Vesperwings</> fly to another nearby enemy, deal <@ba.fire>Heat DMG</>, and apply <#ba.fireinflict>Heat Infliction</>, <#ba.weak>Weakness</>, and <#ba.firevul>Heat Susceptibility</> to the new target.\nHitting an enemy with <@ba.key>hovering</> <@ba.key>Firefang Vesperwings</> with Camille's combo skill sets off an explosion after a short delay. This explosion deals additional <@ba.fire>Heat DMG</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger",
+        "spRecovery": "SP Recovery",
+        "hunterPursuitDmgMultiplier": "Hunter Pursuit DMG Multiplier",
+        "hunterPursuitStagger": "Hunter Pursuit Stagger",
+        "hunterPursuitSpRecovery": "Hunter Pursuit SP Recovery",
+        "ultimateEnergyGain": "Ultimate Energy Gain"
+      },
+      "name": "Heartstake Thorn",
+      "description": "COMBO TRIGGER: When an enemy's <#ba.fireinflict>Heat Infliction</> is <#ba.consume>consumed</> or <#ba.absorb>absorbed</>.\nPerforms a returning dash that deals <@ba.fire>Heat DMG</> and recovers some SP."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger",
+        "spRecovery": "SP Recovery",
+        "hunterPursuitStateDurationS": "Hunter Pursuit State Duration (s)"
+      },
+      "name": "Sanguine Downpour",
+      "description": "Camille flies to the sky, rains down a barrage of spears, and follows through with a sweep attack. This deals <@ba.fire>Heat DMG</> and applies <#ba.fireinflict>Heat Infliction</> to target(s) hit while recovering some SP. \nAfter casting the ultimate, Camille's battle skill is temporarily transformed into <@ba.key>Hunter Pursuit</>.\n<@ba.key>Hunter Pursuit</>: Treated as a combo skill and costs no SP. It is a dash attack that deals <@ba.fire>Heat DMG</> and recovers some SP."
+    },
+    "indicator": {
+      "levels": [
+        "Operator Agility +10.",
+        "Operator Agility +15.",
+        "Operator Agility +15.",
+        "Operator Agility +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "Combo skill <@ba.key>Heartstake Thorn</> improved: When hitting an enemy with <@ba.key>hovering</><@ba.key> Firefang Vesperwings</>, Camille restores <@ba.heal>[{heal_base:0} + Intellect × {heal_sub_multi:0.##}]</> HP to himself and grants a <#ba.combo>Link</> buff for {combo_duration}s. When casting <@ba.key>Hunter Pursuit</>, this effect can be triggered even when hitting a target with no <@ba.key>hovering</> Vesperwings.",
+        "Combo skill <@ba.key>Heartstake Thorn</> improved: When hitting an enemy with <@ba.key>hovering</><@ba.key> Firefang Vesperwings</>, Camille restores <@ba.heal>[{heal_base:0} + Intellect × {heal_sub_multi:0.##}]</> HP to himself and grants a <#ba.combo>Link</> buff for {combo_duration}s. When casting <@ba.key>Hunter Pursuit</>, this effect can be triggered even when hitting a target with no <@ba.key>hovering</> Vesperwings."
+      ],
+      "name": "Hunter of Transgression"
+    },
+    "talent2": {
+      "levels": [
+        "Whenever Camille restores HP via a skill, he gains <@ba.fire>Heat DMG Dealt</> <@ba.vup>+{atk_up:0%}</> (max stacks: 5) for {duration:0}s while other operators in the team gain <@ba.vup>{teammate_rate:0%}</> of this effect. This effect can reach 5 stacks. \n<@ba.info>If Camille is already at Max HP, each trigger gives 2 stacks of the effect.</>",
+        "Whenever Camille restores HP via a skill, he gains <@ba.fire>Heat DMG Dealt</> <@ba.vup>+{atk_up:0%}</> (max stacks: 5) for {duration:0}s while other operators in the team gain <@ba.vup>{teammate_rate:0%}</> of this effect. This effect can reach 5 stacks. \n<@ba.info>If Camille is already at Max HP, each trigger gives 2 stacks of the effect.</>"
+      ],
+      "name": "Bloodfount Revival"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Growth Chamber to grant vitrified plant growth rate +20%",
+        "Assign to Growth Chamber to grant vitrified plant growth rate +30%"
+      ],
+      "name": "Hemo-Vitreography"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Manufacturing Cabin to grant operator EXP material production efficiency +20%",
+        "Assign to Manufacturing Cabin to grant operator EXP material production efficiency +30%"
+      ],
+      "name": "Agaš'mekanaz's Manual"
+    },
+    "files": {
+      "main": "CODENAME: Camille \nGENDER: Male \nAUTHENTICATION: Seš'qa \nDOB: November 20 \nRACE: Sarkaz \n[ORIPATHY INFECTION STATUS] \nOripathy negative, based on medical examination reports. \n\n[INTEGRATED PHYSICAL EXAMINATION] \nPHYSIOLOGICAL STRENGTH: Excellent \nCOMBAT SKILL: Standard \nTACTICAL ACUMEN: Standard \nORIGINIUM ARTS ASSIMILATION: Outstanding \n\nInquiries have already been made to Seš'qa. However, the exact influences on Camille's Originium Arts Assimilation by the act of sharing blood remain uncertain. \n— A Sarkazian operator",
+      "humanResources": "Camille Arno, Seš'qa's Agaš'mekanaz (Keeper of Wisdom), sought a partnership with Endfield Industries in a personal capacity. Following a recommendation from the Endministrator, he currently holds a position within the Specialist Tech Division. \n\nOperator Camille's parents were members of the joint science expedition from Terra. He himself was born and raised in Seš'qa. However, due to the requirements of his job and his past experiences, Camille has lived outside the floating city for many years. \nAlthough Camille claims to be \"hunting\" a criminal kin, his extremely long yet blank curriculum vitae suggests that he has quietly swapped his roles of \"hunter\" and \"prey\". The entire corpus of his social relations, personal background ... or his \"life\", if we were to adopt a broader definition, has been completely destroyed across a period of several decades. \nWhen I picked this up in the discussion, Camille averted his gaze to the ceiling and stared at a blotch. He then broke the silence with a stream of metaphors and figures of speech. One of them, which I felt was most impressive, was how he described himself as a \"pendulum working in vain\". \nHe went on and said there was a certain day when his time stopped ticking. \nWhen the conversation was over, I walked away with the most important lesson when engaging with this operator — If you wish to avoid the excessive task of emotional management, DO NOT talk about his sibling. \n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "DOCUMENT: The Tourist's Guide to Talos-II: Seš'qa, Issue 3 \nSeš'qa Open Day is here! What should a wise tourist do? Visit Witching Hour's flagship store? Buy yourself a limited edition of something not offered on the shelves of TGCC shops? Sip on something nice at the Glasshouse Bar? Look for secret witch-crafter ateliers in the dark alleyways? There are just so many things to do in the floating city. Our latest guide gives you a secret and nuanced choice: Book a visit to a safe house of an Agaš'mekanaz, or Keeper of Wisdom. \nI used to treat these Keepers as a mysterious group of dangerous and merciless individuals who work in the shadows. I believe many readers share my view. The organizers of recent Open Days might be interested in changing this stereotype, since they added more Keeper-related activities to the agenda to help us learn about their long-term contributions and good work. \nMy guide was a retired Keeper. A kind and patient Goliath, she was nothing like the cold and merciless Agaš'mekanaz I had in mind. She told me that after Jakub Meissen betrayed Seš'qa, the city experienced a crisis of trust, even though the event also devastated Sarkazian communities of Talos-II. To prevent such things from happening again, the leaders of Seš'qa gathered the very best and established the office of the Agaš'mekanaz. Their focus is to handle malicious crimes perpetrated by, or targeting, the Sarkaz. \nWe spent the next hour happily walking past evidence walls, filing cabinets, and showcases of various specialized witchcraft equipment. The convo we shared taught me a few secrets. The biggest challenge that any Keeper could face would be crimes committed by a fellow kindred. Generally speaking, the other races would balk at putting a relative of the suspect on the case, but the Sarkaz took the opposite approach. Many of their tribes are blessed with long life and mastery of a wide selection of Originium Arts. Hence, a kindred bound by blood also happens to be the perfect counter to Sarkazian criminals. \n\"This is why many of the Agaš'mekanaz suffer emotionally. Some doubt our ability to remain just and fair, but none of us have yet to abandon principle for a kindred,\" the Keeper said. \n\"Were you ever forced to ... cross blades with your own family?\" I could not help but ask. \nThere was a moment when I thought her emotions might crack, but she raised her gaze to the only skylight of the safe house. There was a brief silence before she sorted out her feelings and reverted to her normal self. \"I used a handcannon. It was his.\" \nThrough the skylight, I could see the last rays of dusk reflecting off the clouds. The fireworks erupted, elaborate works of witchcraft woven by the crafters. Seš'qa has enjoyed another day of peace.",
+      "file2": "DOCUMENT: Valley IV Monitoring Feed \n1. Originium Byproduct Processing Center (Originium BPPC), Entrance: Clear images. Endfield operators observed. No strange sightings. \n2. Worker Dorms, southeast: UWST crew mates going about their daily activities. No strange sightings. \n3. The Hub Base: Camille Arno identified. Camera zooms in for better tracking. \n4. Aburrey Quarry: Signal lost. Suspected damage to the camera affixed to the Landbreaker; said entity has been attacked and eliminated by the enemy. \n5. Bridge Approach Camp: Several Landbreakers had left or joined the retreating column. Only a few fuzzy videos have been captured. Final position has been abandoned. \n6. United Parking Lot, Originium Power Plant: Focus all cameras on Camille Arno and the Endministrator of Endfield Industries. Monitor the activities of these two individuals. \n...... \nThis report proves that an unknown party has deployed a well-hidden monitoring system throughout the region of Valley IV. \n\nNobody could have imagined that the Endministrator returned from this trip with several thousand hours worth of video recordings. The discovery, found in an abandoned underground facility, left every analyst in shock. It proves that an organization has been acting from the shadows of Valley IV, silently observing every action of everyone, and pulling secret strings to exert control over the region. \nWhen the analysts realized that the cameras were implanted within the Landbreakers to avoid detection (Camille mentioned how the perpetrator abandoned them without second thought), they knew why Seš'qa chose to assign an Agaš'mekanaz to the task. Fortunately, after Camille Arno arrived at Valley IV, all the cameras were assigned to monitor his movement and activities. The period of monitoring happens to overlap with Endfield activities in the region. We can safely assume that no pieces of critical intel have been leaked. The lack of leakage is also why none of our operators noticed the unwarranted third-party monitoring. \nAfter receiving the video feed, operators of the tech division traced the origins to an earlier batch of records (already destroyed) and realized that the organization had begun tracking Camille several decades ago. Though the Keeper himself responded to this finding mildly and appeared to have expected this, the techies sympathized with his plight and promised to give his equipment a suite of upgrades designed to counter covert monitoring measures. When the analysts briefed Camille about their findings, he just leaned against the wall and looked at the screen quietly for quite a while before he raised his eyes and asked: \"Say if you were on the other side of the monitoring cameras, staring at a familiar person ... what is most likely to come to mind?\" \nThe analysts gave all sorts of answers. Camille did not respond to any of them but continued his extended silence. Finally, he left a written note in the debriefing report. \n\"So much alike, yet so divergent in essence. Why?\" \nHe wants the answer to the question. He needs it.",
+      "file3": "Camille always thought his emotions were well-hidden away. When compared to other operators who exercised zero restraints, he did a fine job. Unfortunately, unintended movements and barely noticeable body language still betrayed him. \nWhen frustrated, Camille would lower his gaze and study a crack, if any, on the ground, or subconsciously rub his shoulder blade. When he wishes to avoid contact, he would shift his center of balance to his right leg to expedite immediate flight. When hesitating or discomforted, his fingers would subconsciously rub the old, ancient key hanging from his waist. \nMany Endfield operators have an item or keepsake they focus on. For example, Yvonne treats Frost-e-Bytee as a close friend, Rossi has her dagger, and Da Pan is always carrying that ferrium wok on his back. But Camille is different. If anyone were to ask him about his key, he would immediately retract his hand as though the thing had become a burning brand. He would keep his lips tightly closed and refuse to respond to the inquiry. \nSkilled machinists would identify that the key was a handcrafted from something that resembled a music box cylinder, though Camille knows nothing about artisanry. The man has no property to his name, and no one knows what the key could actually open. \nEventually, everyone became wiser and learned not to ask about the item. \nIn the end, Camille confessed to the origins of the key during a casual conversation. It was a present personally crafted by his younger brother (the very same who broke all ties with him). It was part of their home at Seš'qa, which Camille later sold after an accident and no longer returned to. The key was merely ornamental and his habit of touching the key was rooted in longing ... and perhaps a dash of inexplicable ennui. After saying these words, Camille placed the key in one of his pockets. \nWhat he remembered was the searing pain as if a chunk of flesh were being torn from his body, and a dark and exhausting past that went on and on. The gift was offered when sincerity remained. The Keeper faced a dilemma, and he no longer wanted to be reminded. \nA few days later, Camille received a Baker toast and visited the Endministrator's office. He was received by a smiling Endministrator who dropped a new key into his hands. \n\"Such keys and locks are pretty rare, so making them took quite a while,\" the person said, \"I just want you to know that Dijiang always has a door that you can open.\" \nIt caught Camille by surprise. He tightly wrapped his fingers around the key and turned his face aside. He tried to form words, but they came out like noises made by a wheezing fowl whose neck was caught in an iron grip. In the end, he only managed to blurt out a barely audible phrase: \"Thank you.\" \nNot everybody is familiar with Camille's body language, but everyone knows that the jingling of the new key against the old is joyous, like how he felt at that very moment.",
+      "file4": "DOCUMENT: A Torn Manuscript \nThe first mirror witnessed by a babe is usually the eyes of its mother. A mother would gaze at you and softly whisper these words: \"Welcome to this world.\" You opened your eyes to look right back at her, with a focus shared by a navigator attempting to cross an ocean. Once the wet shimmers faded, you would see yourself reflected in her eyes. \nPowerful, weak, hateful, lovely, pure, tainted... You recognized the reflection in the mirror, a reflection of yourself. \nBut what if your first mirror was not your mother? What if you opened your eyes before you uttered your first cry? The ocean around you swayed like a swinging cradle, and someone pressed against your fingers. It felt annoying but also calm. You did not know who this person was, but you peered through the turbid fluids, noticed another pair of blurry eyes, and saw your reflection in them. At that very moment, something faster than a bolt of lightning struck through your soul. \nHe was born with you. You were the closest friends, yet you always fought and argued. You could not help but peer into his eyes to look at your own reflections... He was the rule and the control by which you were measured against, and the very conduit by which you fed from the world. He, on the other hand, relied upon you, respected you, and envied you. The days passed and your reflection within his eyes grew ever more perfect. \nThen one day it came. The first crack appeared in the mirror. The cracks spread, and the mirror shattered. Your image was gone. The storm descended, the fates murmured, and the oceans drove back into the deep. You gained a scar that would never heal, lost half of your soul, and were forced to raise your weapon against him. It was the only way with which you could pierce the hatred that burned deeper than love and restore what was broken to completion. \nAnd that moment, you still had not realized — \n— that you were his first mirror. \n\nDOCUMENT: A Faded News Cutting \nLandbreakers Raid Towns - Seš'qa Planning to Create an Anti-Witchcraft Organization \nThe floating city traitor and deserter Jakub Meissen and the Landbreaker raiders he led have recently become a major security threat to the Civilization Band. Jakub's forces have occupied and transformed an Originium farm into their base of operations, sending out raider groups to spread more Originium and raid. \nJust two nights prior, a town at the Band Fringes was attacked by raiders led by a Vampire serving as Jakub's lieutenant. The town, situated at an area not yet claimed by Talosian factions, was poorly defended. However, another Vampire, who hailed from Seš'qa, played a pivotal role in thwarting the raid. Armed with knowledge of Sarkazian witchcraft, the Vampire defender sabotaged the raiders' military hardware and ran his weapon through the chest of the raid leader, forcing the latter to call for retreat. Currently, the raider leader has gone into hiding and Seš'qa is maintaining constant vigilance to track him down. \nSeš'qa regarded Jakub's betrayal as its responsibility. The latest news revealed that the leadership of the floating city is planning to create an organization dedicated to fighting crimes involving Sarkazian witchcraft and apprehending the traitors."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Battle skill <@ba.key>Blazing Exorcism</> improved: The skill applies <#ba.weak>Weakness</> <@ba.vup>+{0-weak_scale:0%}</> and <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwings</> <@ba.key>hover</> duration <@ba.vup>+{bat_duration:0}</>s.",
+      "name": "Flame-Anointed Lance"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Intellect <@ba.vup>+{Wisd:0}</>.",
+      "name": "Tracker of Witch Scent"
+    },
+    "potential3": {
+      "description": "Combo skill <@ba.key>Heartstake Thorn</> improved: Length of cooldown <@ba.vup>{coolDown:0}</>s. <@ba.key>Heartstake Thorn</> and <@ba.key>Hunter Pursuit</> improved: DMG Multipliers are increased to <@ba.vup>{atk_scale_1_1:0.0}</> times the original; SP Recoveries are increased to <@ba.vup>{atb:0.##}</> times the original.",
+      "name": "Thorned Incapacitor"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Sanguine Downpour</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Agašlehem's Sigil"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Bloodfount Revival</> improved: <@ba.fire>Heat DMG</> boost per stack <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Sanguine Convention"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Return to Eternity",
+      "author": "およ",
+      "description": "Progress through the unending cycle until you hit the shattered end, and become whole once more."
+    },
+    "potential3": {
+      "name": "A Proud Start",
+      "author": "起ID无能",
+      "description": "The past is like a drop of rain. Raise your head to face it so that it does not pour out of your heart."
+    },
+    "potential5": {
+      "name": "Shadowbreak",
+      "author": "se_eeeee",
+      "description": "He freed himself from the dark shadow that clung to him, like a thorny vine that burst from the earth."
+    }
+  }
+}

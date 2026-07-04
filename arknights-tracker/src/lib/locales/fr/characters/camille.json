@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Récupération de PC",
+      "Altération thermique",
+      "Lien"
+    ],
+    "behaviourHateTags": [
+      "Nature"
+    ],
+    "behaviourUnavailableTags": [
+      "Extraverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Analyse contextuelle",
+      "Agilité"
+    ],
+    "giftPreferTags": [
+      "Sélection des spadamanciens de Wuling"
+    ],
+    "hobbyTags": [
+      "Créativité",
+      "Technologie"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+      },
+      "name": "Absolution sanguine",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "firefangVesperwingDurationS": "Durée d'Ailes vespérales de feu (s)",
+        "weaknessEffect": "Effet Faiblesse",
+        "heatSusceptibility": "Sensibilité thermique",
+        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion"
+      },
+      "name": "Exorcisme ardent",
+      "description": "Camille invoque des <@ba.key>Ailes vespérales de feu</> qui s'envolent vers l'ennemi pour lui infliger des <@ba.fire>DÉG thermiques</> et appliquer une <#ba.fireinflict>altération thermique</> aux ennemis dans une petite zone d'effet. Les <@ba.key>Ailes vespérales de feu</> vont ensuite <@ba.key>surplomber</> temporairement la cible et lui appliquer une <#ba.weak>Faiblesse</> et une <#ba.firevul>sensibilité thermique</> pendant qu'elles le surplombent. Une fois la cible vaincue, les <@ba.key>Ailes vespérales de feu</> s'envolent vers un autre ennemi à proximité, lui infligent des <@ba.fire>DÉG thermiques</> et appliquent une <#ba.fireinflict>altération thermique</>, une <#ba.weak>Faiblesse</> et une <#ba.firevul>sensibilité thermique</>.\nToucher un ennemi <@ba.key>surplombé</> par des <@ba.key>Ailes vespérales de feu</> à l'aide d'une compétence de combo de Camille déclenche une explosion après quelques instants. Cette explosion inflige des <@ba.fire>DÉG thermiques</> supplémentaires."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "spRecovery": "Récupération de PC",
+        "hunterPursuitDmgMultiplier": "Multiplicateur de DÉG de Poursuite du chasseur",
+        "hunterPursuitStagger": "Déséquilibre de Poursuite du chasseur",
+        "hunterPursuitSpRecovery": "Récupération de PC de Poursuite du chasseur",
+        "ultimateEnergyGain": "Gain d'énergie d'ultime"
+      },
+      "name": "Épine en plein cœur",
+      "description": "DÉCLENCHEMENT DE COMBO : quand l'<#ba.fireinflict>altération thermique</> de l'ennemi est <#ba.consume>consommée</> ou <#ba.absorb>absorbée</>.\nEffectue un sprint vers l'ennemi et inflige des <@ba.fire>DÉG thermiques</> tout en récupérant des PC."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre",
+        "spRecovery": "Récupération de PC",
+        "hunterPursuitStateDurationS": "Durée de l'État de chasseur (s)"
+      },
+      "name": "Averse sanguine",
+      "description": "Camille s'envole et fait tomber une pluie de lances, suivie d'un balayage. Cette attaque inflige des <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</> aux cibles touchées, tout en restaurant des PC. \nAprès avoir lancé l'ultime, la compétence de combat de Camille est remplacée temporairement par <@ba.key>Poursuite du chasseur</>.\n<@ba.key>Poursuite du chasseur</> agit comme une compétence de combo et ne coûte aucun PC. Il s'agit d'une ruée qui inflige des <@ba.fire>DÉG thermiques</> et restaure des PC."
+    },
+    "indicator": {
+      "levels": [
+        "Agilité de l'opérateur +10.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +15.",
+        "Agilité de l'opérateur +20."
+      ],
+      "name": "Escarmoucheur"
+    },
+    "talent1": {
+      "levels": [
+        "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[{heal_base:0} + Intelligence × {heal_sub_multi:0.##}]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant {combo_duration} s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes.",
+        "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[{heal_base:0} + Intelligence × {heal_sub_multi:0.##}]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant {combo_duration} s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes."
+      ],
+      "name": "Chasseur de transgression"
+    },
+    "talent2": {
+      "levels": [
+        "Quand Camille récupère des PV grâce à une compétence, les <@ba.fire>DÉG thermiques qu'il inflige</> augmentent de <@ba.vup>{atk_up:0%}</> (cumuls max. : 5) pendant {duration:0} s, tandis que les autres opérateurs de l'équipe obtiennent <@ba.vup>{teammate_rate:0%}</> de cet effet. L'effet est cumulable 5 fois. \n<@ba.info>Si les PV de Camille sont déjà au max., chaque déclenchement lui octroie 2 cumuls de l'effet.</>",
+        "Quand Camille récupère des PV grâce à une compétence, les <@ba.fire>DÉG thermiques qu'il inflige</> augmentent de <@ba.vup>{atk_up:0%}</> (cumuls max. : 5) pendant {duration:0} s, tandis que les autres opérateurs de l'équipe obtiennent <@ba.vup>{teammate_rate:0%}</> de cet effet. L'effet est cumulable 5 fois. \n<@ba.info>Si les PV de Camille sont déjà au max., chaque déclenchement lui octroie 2 cumuls de l'effet.</>"
+      ],
+      "name": "Régénération sanguine"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 20 %.",
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 30 %."
+      ],
+      "name": "Hémovitrologie"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 20 %.",
+        "En l'affectant à la cabine de fabrication, augmente le rendement de production des matériaux d'EXP d'opérateur de 30 %."
+      ],
+      "name": "Manuel d'Agaš'mekanaz"
+    },
+    "files": {
+      "main": "NOM DE CODE : Camille \nSEXE : Masculin \nAUTHENTIFICATION : Seš'qa \nDATE DE NAISSANCE : 20 novembre \nRACE : Sarkaz \n[STATUT D'INFECTION À L'ORIPATHIE] \nNégatif, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : Excellente \nCAPACITÉS AU COMBAT : Standard \nSENS TACTIQUE : Standard \nASSIMILATION DES ARTS DE L'ORIGINIUM : Exceptionnelle \n\nDes demandes ont déjà été envoyées à Seš'qa. Cependant, l'influence réelle du partage de sang sur l'assimilation des Arts de l'originium de Camille reste incertaine. \n— Un opérateur sarkaz",
+      "humanResources": "Camille Arno, Agaš'mekanaz (Gardien du Savoir) de Seš'qa, cherchait à établir un partenariat avec les Industries Endfield à titre personnel. Sur recommandation de l'Endministrator, il occupe actuellement un poste au sein de la division technologique spécialisée. \n\nLes parents de l'opérateur Camille étaient membres d'une expédition scientifique conjointe venue de Terra, mais il est né et a été élevé à Seš'qa. Cependant, en raison des exigences de son poste et de ses expériences passées, Camille a vécu hors de la ville flottante pendant de nombreuses années. \nBien que Camille prétende « pourchasser » un criminel qui lui est apparenté, son CV aussi long qu'immaculé suggère qu'il est lentement passé du statut de « chasseur » à celui de « chassé ». L'intégralité de ses relations sociales, de son parcours personnel, bref de sa « vie » dans le sens large du terme, a été totalement détruite en l'espace de quelques décennies. \nQuand j'ai abordé le sujet avec lui, Camille a levé les yeux et fixé une tache au plafond, avant de rompre le silence avec une suite de métaphores et de figures de style. La plus impressionnante d'entre elles était sa façon de se décrire personnellement comme « un pendule qui oscille en vain ». \nIl a poursuivi en disant qu'un jour, le temps s'était figé pour lui. \nÀ l'issue de la conversation m'est apparue la leçon la plus importante à retenir vis-à-vis de cet opérateur : si vous souhaitez vous épargner un gros travail de gestion des émotions, ne lui parlez SURTOUT PAS de son frère. \n— Martin Marvin Malen, assistant, division des RH, Industries Endfield",
+      "file1": "DOCUMENT : « Le guide du touriste talosien : Seš'qa, volume 3 » \nVoici venue la journée portes ouvertes de Seš'qa ! Que faire pour un touriste avisé ? Visiter leur boutique phare, Goetia ? S'offrir une édition limitée de quelque chose qu'on ne trouve pas dans les boutiques de la CCGT ? Siroter une douceur au bar de la Serre ? Chercher les ateliers des artisans sorciers dissimulés dans les allées sombres ? Il y a tellement de choses à faire dans la ville flottante. Notre tout nouveau guide vous propose un choix plus nuancé et trop méconnu : réserver une visite du caveau d'un Agaš'mekanaz, autrement connu sous le nom de Gardien du Savoir. \nJ'ai toujours vu ces Gardiens comme un mystérieux groupe d'individus dangereux et impitoyables qui œuvraient dans l'ombre. Je pense que de nombreux lecteurs partagent cette impression. Les organisateurs de ces portes ouvertes ont visiblement envie de s'attaquer à ce stéréotype, car ils ont ajouté au programme d'autres d'activités liées aux Gardiens afin de nous permettre de découvrir leur travail et leurs contributions à long terme. \nJ'ai eu pour guide une Gardienne retraitée, une Goliath douce et patiente qui ne ressemblait en rien à l'image de tueurs froids que je m'étais faite des Agaš'mekanaz. Elle m'a dit qu'après la trahison de Seš'qa par Jakub Meissen, la ville avait souffert d'une crise de confiance, même si l'événement avait également dévasté les communautés sarkaz de Talos-II. Pour empêcher qu'une telle chose ne se reproduise, les dirigeants de Seš'qa ont rassemblé l'élite et fondé le bureau des Agaš'mekanaz. Leur mission consiste à enquêter sur les crimes perpétrés par des Sarkaz ou les visant. \nNous avons passé l'heure suivante à déambuler joyeusement devant des murs d'indices, des classeurs à tiroirs et des vitrines pleines d'équipement de sorcellerie spécialisé. J'ai appris quelques secrets pendant nos discussions. Le plus grand défi auquel un Gardien peut être confronté est celui d'enquêter sur des crimes commis par un de ses semblables. De manière générale, les autres espèces rechigneraient à confier une affaire à un proche du suspect, mais les Sarkaz privilégient justement cette approche. Ils comptent de nombreuses tribus dotées d'une grande longévité et maîtrisant une large variété d'Arts de l'originium. Ainsi, être lié par le sang est le meilleur moyen de contrer les plans des criminels sarkaz. \n« Voilà pourquoi de nombreux Agaš'mekanaz font état d'une souffrance émotionnelle. Certains doutent de notre capacité à rester justes et intègres, mais aucun d'entre nous n'a dû renoncer à ses principes pour un proche », m'a confié la Gardienne. \nJ'étais obligée de lui demander. « Est-ce que vous avez déjà dû... croiser le fer avec un membre de votre propre famille ? »\nPendant un instant, j'ai bien cru qu'elle allait laisser transparaître ses émotions. Mais elle a levé les yeux vers l'unique puits de lumière du caveau, silencieusement, a mis de l'ordre dans ses sentiments, puis elle est redevenue elle-même. « J'utilisais un canon portatif. C'était le sien. » \nÀ travers le puits de lumière, je pouvais voir les derniers rayons du crépuscule qui embrasaient les nuages. Les feux d'artifice ont alors tonné, des œuvres de sorcellerie de pointe confectionnées par les artisans sorciers. Un nouveau jour de paix venait de s'écouler à Seš'qa.",
+      "file2": "DOCUMENT : Flux de surveillance de la Vallée-IV \n1. Centre de traitement des dérivés d'originium (CTD d'originium) - Entrée : Images nettes. Observation d'opérateurs d'Endfield. Rien d'inhabituel. \n2. Dortoirs des ouvriers, sud-est : Membres du STUT vaquant à leurs tâches quotidiennes. Rien d'inhabituel. \n3. Base du Hub : Identification de Camille Arno. Gros plan de la caméra afin de mieux le suivre. \n4. Carrière d'Aburrey : Signal perdu. Suspicion de dégradation de la caméra installée sur le Brise-Terre. Ce dernier a été attaqué et éliminé par l'ennemi. \n5. Camp de la voie d'accès au pont : Plusieurs Brise-Terres sont partis ou ont rejoint le groupe battant en retraite. Seules quelques vidéos floues ont pu être captées. Leur position finale a été abandonnée. \n6. Parking uni - Centrale électrique d'originium : Concentration de toutes les caméras sur Camille Arno et l'Endministrator des Industries Endfield. Surveillance des activités de ces deux individus. \n... \nCe rapport prouve qu'un tiers inconnu a déployé un système de surveillance soigneusement dissimulé dans toute la Vallée-IV. \n\nPersonne n'aurait pu imaginer que l'Endministrator reviendrait de son périple avec en sa possession plusieurs milliers d'heures d'enregistrements. Cette découverte, faite dans une installation souterraine abandonnée, a abasourdi tous nos analystes. Cela prouve qu'une organisation a agi dans l'ombre de la Vallée-IV, observé tout le monde en cachette et tiré secrètement les ficelles afin de prendre le contrôle de cette région. \nLorsque les analystes se sont rendu compte que les caméras étaient implantées chez les Brise-Terres pour échapper à toute détection (Camille a mentionné la façon dont le responsable les avait abandonnés sans hésiter), ils ont compris pourquoi Seš'qa avait choisi d'affecter un Agaš'mekanaz à cette tâche. Fort heureusement, après l'arrivée de Camille Arno dans la Vallée-IV, toutes les caméras ont été reparamétrées pour surveiller ses moindres faits et gestes. Cette période de surveillance coïncide avec les activités d'Endfield dans la région. Nous pouvons raisonnablement penser qu'aucune information sensible n'a fuité. Cette absence de fuite est également la raison pour laquelle aucun de nos opérateurs n'a remarqué qu'un tiers les surveillait abusivement. \nAprès réception du flux vidéo, les opérateurs de la division technologique ont pu remonter jusqu'à un précédent lot d'enregistrements (déjà détruit) et ils ont alors compris que cette organisation avait commencé à traquer Camille plusieurs décennies auparavant. Bien que le Gardien ait personnellement réagi de façon assez détachée et qu'il ait semblé s'y attendre, les techniciens ont compati à sa situation et ont promis d'apporter à son équipement une série d'améliorations permettant de contrecarrer toutes mesures de surveillance. Lorsque les analystes ont informé Camille de leurs découvertes, il s'est contenté de s'adosser au dos et de regarder l'écran calmement pendant un long moment avant de lever les yeux et de demander : « Dites, si vous étiez à l'origine de ce flux de surveillance, en train de regarder quelqu'un que vous connaissez bien... Que penseriez-vous, le plus probablement ? » \nLes analystes lui ont apporté toutes sortes de réponses. Camille n'a répondu que par un long silence. Enfin, il a rédigé une note qu'il a glissée dans le compte-rendu. \n« Si semblables, et pourtant fondamentalement si différents. Pourquoi ? » \nIl veut trouver la réponse à cette question. Il en a besoin.",
+      "file3": "Camille a toujours pensé que ses émotions étaient bien cachées. Comparé aux autres opérateurs qui ne s'imposaient aucune contrainte, il se débrouillait très bien. Malheureusement, il se trahissait quand même par des mouvements inconscients et un langage corporel à peine perceptible. \nEn cas de frustration, Camille baissait les yeux et étudiait une fissure dans le sol, s'il y en avait une, ou se frottait inconsciemment l'omoplate. Lorsqu'il souhaitait éviter tout contact, il faisait basculer le poids de son corps sur sa jambe droite pour lui permettre de fuir dans la seconde. S'il hésitait ou n'était pas à l'aise, ses doigts venaient d'eux-mêmes caresser la vieille clé accrochée à sa taille. \nDe nombreux opérateurs d'Endfield ont un objet ou un souvenir sur lequel ils se concentrent. Par exemple, Yvonne traite Givr-O-max comme un ami proche, Rossi a sa dague et Da Pan transporte constamment ce wok en ferrium sur son dos. Mais Camille est différent. Quand quelqu'un lui posait une question sur cette clé, il retirait immédiatement sa main, comme si cet objet était devenu un tison brûlant. Il pinçait les lèvres et refusait de répondre à la question. \nDes machinistes expérimentés pourraient remarquer que cette clé a été façonnée à la main à partir d'un objet ressemblant à une boîte à musique cylindrique, mais Camille n'est pas versé dans l'artisanat. Cet homme ne possède rien et nul ne sait ce que cette clé pourrait ouvrir. \nFinalement, tout le monde a trouvé plus sage de ne plus l'interroger à ce sujet. \nCamille a fini par révéler les origines de cette clé pendant une conversation informelle. C'était un cadeau, fabriqué par son petit frère (celui-là même qui avait totalement coupé les ponts avec lui). C'était un élément de leur maison à Seš'qa, que Camille a vendue à la suite d'un accident pour ne plus jamais y remettre les pieds. La clé était purement ornementale et s'il avait pris l'habitude de la toucher, c'était par nostalgie... et peut-être en raison d'une mystérieuse pointe de mélancolie. Après avoir dit cela, Camille a rangé la clé dans une de ses poches. \nIl se souvenait d'une douleur cuisante, comme si un morceau de chair avait été arraché à son corps, et d'un passé sombre et épuisant qui ressurgissait sans cesse. Cette clé lui avait été offerte lorsque l'honnêteté régnait encore. Le Gardien était face à un dilemme et il ne voulait plus qu'on le lui rappelle. \nQuelques jours plus tard, Camille a reçu un message sur Baker de la part de l'Endministrator, qui l'invitait dans son bureau. L'Endministrator l'a reçu tout sourire et a lui a remis une clé toute neuve. \n« Ce type de clé et de serrure est plutôt rare, alors cela nous a pris du temps d'en refaire une », a annoncé l'Endmin. « Je veux simplement que vous sachiez qu'il y aura toujours sur le Dijiang une porte que vous pourrez ouvrir. » \nCamille ne s'y attendait pas. Il a serré la clé dans sa main et détourné le visage. Il a tenté de dire quelques mots, mais ce qui est sorti ressemblait davantage aux sons produits par un aviliaire asthmatique dont le cou serait pris dans un collet. Finalement, il n'a réussi qu'à marmonner un « Merci » tout juste audible. \nLe langage corporel de Camille échappe à beaucoup de gens, mais tout le monde sait que le tintement de cette nouvelle clé contre l'ancienne est un son joyeux, tout comme ce qu'il a ressenti à cet instant précis.",
+      "file4": "DOCUMENT : Un manuscrit déchiré \nLe premier miroir qu'aperçoit un bébé est généralement le regard de sa mère. Une mère vous contemple et vous souffle ces mots : « Bienvenue dans ce monde. » Vous ouvrez les yeux pour regarder droit dans les siens, avec la concentration d'un navigateur qui tente de traverser un océan. Une fois les scintillements humides dissipés, vous voyez votre propre reflet dans ses yeux. \nLa puissance, la faiblesse, la haine, l'amour, la pureté, la corruption... Vous reconnaissez le reflet dans le miroir. Votre reflet. \nMais, et si votre premier miroir n'était pas votre mère ? Et si vous aviez ouvert les yeux avant même de laisser échapper votre premier cri ? L'océan qui vous entourait s'agitait comme le balancement d'un berceau et quelqu'un était pressé contre vos doigts. C'était gênant mais tout était calme. Vous ne saviez pas qui était cette personne, mais vous avez regardé à travers les fluides troubles, remarqué une autre paire d'yeux flous, et vous y avez vu votre reflet. À cet instant, à la vitesse de l'éclair, quelque chose a traversé votre âme. \nVous êtes nés en même temps. Vous étiez les meilleurs amis, pourtant vous vous battiez et vous disputiez constamment. Vous ne pouviez vous empêcher de regarder dans ses yeux pour voir votre propre reflet... Il était la base et la fondation à l'aune de laquelle on vous mesurait, il était l'intermédiaire vous permettant d'absorber ce monde. Lui, de son côté, s'appuyait sur vous, vous respectait et vous enviait. Les jours ont passé et votre reflet dans ses yeux a gagné en perfection. \nPuis elle est arrivée un jour. La première fissure dans le miroir. Les fissures se sont étendues et le miroir s'est brisé. Votre image a disparu. L'orage a cessé, le destin a murmuré et les remous sont retournés dans les profondeurs. Vous avez été blessé et cette cicatrice ne se refermerait jamais. Vous avez perdu la moitié de votre âme et avez dû lever votre arme contre lui. C'était votre seul moyen de transpercer la haine qui couvait plus profondément encore que l'amour et de réparer ce qui avait été brisé. \nEt à cet instant, vous n'aviez pas encore réalisé… \nque vous étiez également son premier miroir. \n\nDOCUMENT : Une coupure de presse jaunie \nLes Brise-Terres attaquent nos villages - Seš'qa prévoit de créer une organisation anti-sorcellerie \nLe traître et déserteur de la ville flottante, Jakub Meissen, ainsi que les Brise-Terres qu'il dirige, sont récemment devenus une grave menace pour la sécurité de la Ceinture civilisée. Les forces de Jakub ont occupé une ferme d'originium et l'ont transformée en base opérationnelle, envoyant des groupes de pillards répandre davantage d'originium, de chaos et de malheurs. \nDeux nuits auparavant, des pillards ont attaqué une ville en bordure de la Ceinture. Un des lieutenants de Jakub, un Vampire, était à leur tête. La ville, située dans une zone qui n'a pas encore été revendiquée par les factions talosiennes, était faiblement défendue. Cependant, un autre Vampire, originaire de Seš'qa, a joué un rôle central dans la mise en échec de ce pillage. Grâce à ses connaissances en sorcellerie sarkaz, le défenseur Vampire a saboté l'équipement militaire des pillards et a transpercé de sa lame le torse de leur meneur, forçant les pillards à sonner la retraite. Ce meneur a disparu de la circulation et Seš'qa exerce une vigilance constante pour retrouver sa trace. \nSeš'qa a considéré la trahison de Jakub Meissen comme relevant de leur responsabilité. D'après les dernières nouvelles, les dirigeants de la ville flottante prévoient de créer une organisation vouée à combattre les crimes impliquant de la sorcellerie sarkaz et à appréhender les traîtres."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Renforce la compétence de combat <@ba.key>Exorcisme ardent</> : la compétence applique <#ba.weak>Faiblesse</> <@ba.vup>+{0-weak_scale:0%}</> et <#ba.firevul>sensibilité thermique</> <@ba.vup>+{vulnerable_scale:0%}</>. Les <@ba.key>Ailes vespérales de feu</> <@ba.key>surplombent</> l'ennemi pendant <@ba.vup>{bat_duration:0}</> s supplémentaires.",
+      "name": "Lance consacrée par les flammes"
+    },
+    "potential2": {
+      "description": "Agilité <@ba.vup>+{Agi:0}</> points, Intelligence <@ba.vup>+{Wisd:0}</> points.",
+      "name": "Pisteur de parfum de sorcière"
+    },
+    "potential3": {
+      "description": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : le temps de recharge est désormais de <@ba.vup>{coolDown:0}</> s, et les multiplicateurs de DÉG d'<@ba.key>Épine en plein cœur</> et <@ba.key>Poursuite du chasseur</> passent à <@ba.vup>{atk_scale_1_1:0.0}</> fois leur valeur d'origine. La récupération de PC passe à <@ba.vup>{atb:0.##}</> fois la valeur d'origine.",
+      "name": "Neutralisateur épineux"
+    },
+    "potential4": {
+      "description": "Renforce l'ultime <@ba.key>Averse sanguine</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Sceau d'Agašlehem"
+    },
+    "potential5": {
+      "description": "Renforce le talent <@ba.key>Régénération sanguine</> : le bonus de <@ba.fire>DÉG thermiques</> par cumul augmente de <@ba.vup>{atk_up:0%}</>.",
+      "name": "Convention sanguine"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Retour à l'éternité",
+      "author": "およ",
+      "description": "Progressez dans le Cycle infini jusqu'à atteindre la fin ravagée pour former un tout à nouveau."
+    },
+    "potential3": {
+      "name": "Des débuts majestueux",
+      "author": "起ID无能",
+      "description": "Le passé, c'est comme une goutte de pluie. Il suffit de redresser la tête pour qu'il ne s'échappe pas de votre cœur."
+    },
+    "potential5": {
+      "name": "Évasion de l'ombre",
+      "author": "se_eeeee",
+      "description": "Il s'est libéré des ténèbres qui avaient planté ses griffes en lui, telles des ronces sorties de terre."
+    }
+  }
+}

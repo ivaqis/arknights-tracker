@@ -153,7 +153,8 @@
     "weap-standard": "標準武器",
     "weap-special": "活動武器",
     "weapon-all": "武器卡池",
-    "joint": "輝光慶典"
+    "joint": "輝光慶典",
+    "weponbox_1_3_2": "染赤申領"
   },
   "import": {
     "title": "匯入尋訪記錄",
@@ -349,7 +350,9 @@
     "weaponbox_constant_5": "雷鳴申領",
     "joint_1_2_2": "輝光慶典",
     "weponbox_1_2_2": "熔灼申領",
-    "weponbox_1_2_3": "疾行申領"
+    "weponbox_1_2_3": "疾行申領",
+    "special_1_3_2": "逐罪者",
+    "weponbox_1_3_2": "染赤申領"
   },
   "pages": {
     "home": "首頁",
@@ -432,7 +435,8 @@
     "contingencyReadiness": "危機籌備",
     "seatchForSwordVaultDale": "尋劍幽谷",
     "monumentalEtchingDirgeOfGrief": "豐碑留名·忿聲",
-    "umbralMonument": "影拓豐碑"
+    "umbralMonument": "影拓豐碑",
+    "peacekeepersNocturneSignIn": "夜趨逐罪簽到"
   },
   "mouths": {
     "january": "一月",

@@ -152,7 +152,8 @@
     "weap-special": "Arma de Evento",
     "weapon-all": "Banners de armas",
     "joint": "Festival del resplandor",
-    "weponbox_1_3_1": "Solicitud de Nudo escarlata"
+    "weponbox_1_3_1": "Solicitud de Nudo escarlata",
+    "weponbox_1_3_2": "Solicitud de tono carmesí"
   },
   "import": {
     "title": "Importar Historial de Reclutamiento",
@@ -346,7 +347,9 @@
     "weponbox_1_2_2": "Solicitud del Fuego de fundición",
     "weponbox_1_2_3": "Solicitud del Caminante veloz",
     "special_1_3_1": "Puños sin arrepentimientos",
-    "weponbox_1_3_1": "Solicitud de Nudo escarlata"
+    "weponbox_1_3_1": "Solicitud de Nudo escarlata",
+    "special_1_3_2": "Expiador de pecados",
+    "weponbox_1_3_2": "Solicitud de tono carmesí"
   },
   "pages": {
     "home": "Inicio",
@@ -428,7 +431,8 @@
     "contingencyReadiness": "Preparación ante contingencias",
     "seatchForSwordVaultDale": "En busca del Valle Ocultaespadas",
     "monumentalEtchingDirgeOfGrief": "Grabado monumental: Canto fúnebre del pesar",
-    "umbralMonument": "Monumento del umbral"
+    "umbralMonument": "Monumento del umbral",
+    "peacekeepersNocturneSignIn": "Inicio de sesión de Nocturno del pacificador"
   },
   "mouths": {
     "january": "Enero",

@@ -152,7 +152,8 @@
     "weap-special": "이벤트 무기",
     "weapon-all": "무기 배너",
     "joint": "찬란한 빛의 축제",
-    "weponbox_1_3_1": "붉은 결속 신청"
+    "weponbox_1_3_1": "붉은 결속 신청",
+    "weponbox_1_3_2": "적색화 신청"
   },
   "import": {
     "title": "헤드헌팅 기록 가져오기",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "용작 신청",
     "weponbox_1_2_3": "질풍 신청",
     "special_1_3_1": "후회 없는 주먹",
-    "weponbox_1_3_1": "붉은 결속 신청"
+    "weponbox_1_3_1": "붉은 결속 신청",
+    "special_1_3_2": "죄를 쫓는 자",
+    "weponbox_1_3_2": "적색화 신청"
   },
   "pages": {
     "home": "홈",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "위기 대응 준비",
     "seatchForSwordVaultDale": "골짜기의 검을 찾아서",
     "monumentalEtchingDirgeOfGrief": "기억의 흔적 · 분노의 외침",
-    "umbralMonument": "그림자 이정표"
+    "umbralMonument": "그림자 이정표",
+    "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크"
   },
   "mouths": {
     "january": "1월",

@@ -875,5 +875,20 @@ export const rawEvents = [
     type: "signIn",
     iconPosition: 17,
     version: "1.3"
+  },
+  {
+    id: "ev11-v1.3",
+    title: "events.peacekeepersNocturneSignIn",
+    name: "",
+    startTime: "2026-06-26 12:00:00",
+    endTime: "2026-07-16 04:00:00",
+    endTimeAsia: "2026-07-15 17:00:00",
+    icon: "ev11-v1.3.jpg",
+    url: "",
+    color: "#bb2323",
+    layer: 4,
+    type: "signIn",
+    iconPosition: 20,
+    version: "1.3"
   }
 ];

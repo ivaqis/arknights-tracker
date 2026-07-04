@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "FP-Wiederherstellung",
+      "Hitze",
+      "Verbunden"
+    ],
+    "behaviourHateTags": [
+      "Natur"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Situationsbezogene Analyse",
+      "Beweglich-\nkeit"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Schwertkämpfern empfohlen"
+    ],
+    "hobbyTags": [
+      "Kreatives",
+      "Technologie"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+      },
+      "name": "Blutabsolution",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.fire>Hitze-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.fire>Hitze-SDN</> zufügen und ein wenig FP wiederherstellen."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln",
+        "firefangVesperwingDurationS": "Feuerzahn-Vesperflügel-Dauer (Sek.)",
+        "weaknessEffect": "Schwäche-Effekt",
+        "heatSusceptibility": "Hitze-Empfänglichkeit",
+        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator"
+      },
+      "name": "Flammender Exorzismus",
+      "description": "Camille beschwört <@ba.key>Feuerzahn-Vesperflügel</>, die auf den Gegner zufliegen, um diesem <@ba.fire>Hitze-SDN</> zuzufügen und Gegner innerhalb eines kleinen Wirkungsbereichs mit <#ba.fireinflict>Hitze</> zu belegen. Anschließend <@ba.key>schweben</> die <@ba.key>Feuerzahn-Vesperflügel</> vorübergehend um das Ziel und belegen es für die Dauer ihres Schwebens mit <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>. Wird das Ziel besiegt, fliegen die <@ba.key>Feuerzahn-Vesperflügel</> zu einem anderen Gegner in der Nähe, fügen diesem <@ba.fire>Hitze-SDN</> zu und belegen ihr neues Ziel mit <#ba.fireinflict>Hitze</>, <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>.\nWird ein Gegner mit <@ba.key>schwebenden</> <@ba.key>Feuerzahn-Vesperflügeln</> von Camilles Kombofertigkeit getroffen, wird nach einer kurzen Verzögerung eine Explosion ausgelöst. Diese Explosion verursacht zusätzlichen <@ba.fire>Hitze-SDN</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln",
+        "spRecovery": "FP-Wiederherstellung",
+        "hunterPursuitDmgMultiplier": "Jägerverfolgungs-SDN-Multiplikator",
+        "hunterPursuitStagger": "Jägerverfolgungs-Taumeln",
+        "hunterPursuitSpRecovery": "Jägerverfolgungs-FP-Wiederherstellung",
+        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+      },
+      "name": "Herzpfähler",
+      "description": "KOMBOAUSLÖSER: Wenn die <#ba.fireinflict>Hitzekumulierung</> eines Gegners <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wird.\nSprintet nach vorn und wieder zurück, verursacht <@ba.fire>Hitze-SDN</> und stellt einige FP wieder her."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln",
+        "spRecovery": "FP-Wiederherstellung",
+        "hunterPursuitStateDurationS": "Jägerverfolgungs-Dauer (Sek.)"
+      },
+      "name": "Blutregenguss",
+      "description": "Camille fliegt hoch in den Himmel und lässt Speere auf seine Gegner herabregnen, ehe er einen Sturzangriff ausführt. Dieser fügt Zielen <@ba.fire>Hitze-SDN</> zu, belegt sie mit <#ba.fireinflict>Hitze</> und stellt gleichzeitig einige FP wieder her.\nNach dem Wirken der Ultimativen Fertigkeit wird Camilles Kampffertigkeit vorübergehend durch <@ba.key>Jägerverfolgung</> ersetzt.\n<@ba.key>Jägerverfolgung</>: Wird als Kombofertigkeit behandelt und kostet keine FP. Hierbei handelt es sich um einen Sprintangriff, der <@ba.fire>Hitze-SDN</> verursacht und einige FP wiederherstellt."
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Beweglichkeit +10.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +15.",
+        "Operator-Beweglichkeit +20."
+      ],
+      "name": "Scharmützler"
+    },
+    "talent1": {
+      "levels": [
+        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird.",
+        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird."
+      ],
+      "name": "Sündenjäger"
+    },
+    "talent2": {
+      "levels": [
+        "Wenn Camille mit einer Fertigkeit LP wiederherstellt, erhält er <@ba.fire>Verursachten Hitze-SDN</> <@ba.vup>+{atk_up:0%}</> (max. Kumulierungen: 5) für {duration:0} Sek., während andere Operatoren im Team <@ba.vup>{teammate_rate:0%}</> dieses Effekts erlangen. Dieser Effekt kann 5-mal kumuliert werden. \n<@ba.info>Fehlen Camille keine LP, verleiht jedes Auslösen 2 Kumulierungen des Effekts.</>",
+        "Wenn Camille mit einer Fertigkeit LP wiederherstellt, erhält er <@ba.fire>Verursachten Hitze-SDN</> <@ba.vup>+{atk_up:0%}</> (max. Kumulierungen: 5) für {duration:0} Sek., während andere Operatoren im Team <@ba.vup>{teammate_rate:0%}</> dieses Effekts erlangen. Dieser Effekt kann 5-mal kumuliert werden. \n<@ba.info>Fehlen Camille keine LP, verleiht jedes Auslösen 2 Kumulierungen des Effekts.</>"
+      ],
+      "name": "Wiederbelebung des Blutquells"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +30 % zu erhöhen."
+      ],
+      "name": "Hämovitreografie"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +20 % zu erhöhen.",
+        "Herstellungskabine zuweisen, um Operator-EP-Materialproduktionseffizienz um +30 % zu erhöhen."
+      ],
+      "name": "Agaš’mekanaz’ Handbuch"
+    },
+    "files": {
+      "main": "DECKNAME: Camille \nGESCHLECHT: Männlich \nAUTHENTIFIZIERUNG: Seš’qa \nGEB: 20. November \nSPEZIES: Sarkaz \n[ORIPATHIE-INFEKTIONSSTATUS] \nOripathie-negativ, basierend auf ärztlichen Befunden. \n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG] \nPHYSIOLOGISCHE STÄRKE: Ausgezeichnet \nKAMPFFERTIGKEIT: Standard \nTAKTISCHER SCHARFSINN: Standard \nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Herausragend \n\nEntsprechende Anfragen wurden bereits an Seš’qa übermittelt. Die genauen Auswirkungen von Camilles Originium-Techniken-Assimilierung durch das Teilen von Blut sind allerdings noch nicht bekannt. \n– Ein Sarkaz-Operator",
+      "humanResources": "Camille Arno, Agaš’mekanaz (Bewahrer der Weisheit) von Seš’qa, hat sich persönlich an Endfield Industries gewandt und die Zusammenarbeit erbeten. Auf Empfehlung des Endministrators wurde ihm eine Position innerhalb der Spezialisierten Technikabteilung zugewiesen. \n\nOperator Camilles Eltern waren Mitglieder der gemeinschaftlichen Forschungsexpedition von Terra. Er selbst wurde in Seš’qa geboren und ist dort aufgewachsen. Aufgrund der mit seiner Arbeit verbundenen Aufgaben und Erlebnissen in seiner Vergangenheit hat Camille allerdings viele Jahre lang außerhalb der schwebenden Stadt gelebt. \nCamille behauptet, auf der „Jagd“ nach einem kriminellen Verwandten zu sein, allerdings lässt sein gleichzeitig extrem langer und extrem leerer Lebenslauf vermuten, dass er die Rollen des „Jägers“ und der „Beute“ in dieser Erzählung vertauscht hat. Sämtliche Aufzeichnungen zu seinen sozialen Kontakten, persönlichen Hintergründen … wollte man es allgemeiner formulieren, könnte man sagen, zu seinem „Leben“, wurden über mehrere Jahrzehnte hinweg systematisch und vollständig zerstört. \nAls dieser Punkt zur Sprache kam, wandte Camille seinen Blick ab und fixierte einen Fleck an der Decke. Schließlich beendete er die Stille mit einer wahren Flut an Metaphern und Redewendungen. Eines der sprachlichen Bilder, das mich besonders beeindruckt hat, war der Vergleich seiner selbst mit einem „vergeblich schwingenden Pendel“. \nEr fuhr fort und sagte, dass es einen bestimmten Tag gab, an dem seine Zeit stehen blieb. \nNach unserem Gespräch hatte ich eine der wichtigsten Lektionen über den Umgang mit diesem Operator gelernt – jeder, der sich nicht der zeitaufwändigen Aufgabe der Emotionsregulierung widmen möchte, sollte es UM JEDEN PREIS vermeiden, seinen Bruder zu erwähnen. \n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "DOKUMENT: Der Talos-II-Reiseführer: Seš’qa, Ausgabe 3 \nDer Tag der offenen Tür von Seš’qa ist gekommen! Wie sollte der umtriebige Tourist ihn verbringen? Mit einem Besuch im Zauberstunde-Flagship-Store? Mit einem Einkaufsbummel und dem Erwerb von limitierten Gütern, die man in den Regalen der Läden der TAHK nicht findet? Mit einem erfrischenden Getränk in der Glashaus-Bar? Oder auf der Suche nach geheimen Hexer-Ateliers in düsteren Nebengassen? Die schwebende Stadt hat einfach zu viel zu bieten. Einer unserer Gästeführer vor Ort hat noch einen weiteren Geheimtipp: Warum nicht einen Besuch im Haus eines Agaš’mekanaz, eines Bewahrers der Weisheit, buchen? \nIch habe diese Bewahrer immer für eine rätselhafte, gefährliche Gruppe skrupelloser Individuen gehalten, die ihre Arbeit in den Schatten verrichten. Sicher würden viele Leser mir bei dieser Ansicht beipflichten. Vielleicht ist den Organisatoren hinter dem Tag der offenen Tür daran gelegen, mit diesen Vorurteilen aufzuräumen. Dieses Jahr findet sich eine ganze Reihe von Veranstaltungen rund um die Bewahrer auf dem Programm, damit wir mehr über ihre Beiträge und ihre wichtige Arbeit für die Stadt erfahren können. \nIch wurde von einer Bewahrerin im Ruhestand herumgeführt. Die freundliche, geduldige Goliath passte so gar nicht zum Bild des kalten, skrupellosen Agaš’mekanaz, das ich vor Augen hatte. Sie erzählte mir, dass Jakub Meissens Verrat an Seš’qa die Stadt in eine tiefe Vertrauenskrise stürzte, obwohl der Vorfall auch die Gemeinde der Sarkaz auf Talos-II schwer getroffen hatte. Die Anführer der Seš’qa wollten unbedingt verhindern, dass sich ein solcher Vorfall wiederholen konnte. Daher versammelten sie die fähigsten Sarkaz und gründeten das Amt der Agaš’mekanaz. Ihre Hauptaufgabe besteht in der Ahndung von Verbrechen, die von oder gegen die Sarkaz begangen werden. \nIn den nächsten Stunden schlenderten wir vergnügt an Beweisübersichten, Aktenschränken und Vitrinen mit verschiedenen Gerätschaften für die Ausübung der Hexerei vorbei. Im Laufe dieses Gesprächs hat sie mir sogar das ein oder andere Geheimnis anvertraut. Die größte Herausforderung, vor der ein Bewahrer stehen kann, ist die Konfrontation mit einem durch einen Verwandten begangenen Verbrechen. Im Allgemeinen würden die meisten Spezies bei der Idee, einen Verwandten mit der Ermittlung zu betreuen, die Nase rümpfen. Die Sarkaz verfolgen da einen genau gegensätzlichen Ansatz. Viele ihrer Stämme sind mit einer langen Lebensspanne und der Meisterschaft über eine große Vielzahl von Originium-Techniken gesegnet. Daher ist ein Blutsverwandter der perfekte Kandidat, um gegen einen Sarkaz-Kriminellen zu ermitteln. \n„Dieser Umstand bereitet vielen Agaš’mekanaz großen emotionalen Druck. Einige zweifeln an unserer Fähigkeit, gerecht und fair zu bleiben, aber noch ist es nie vorgekommen, dass einer von uns Nachsicht zugunsten eines Verwandten walten ließ“, erklärte die Bewahrerin. \n„Musstest du jemals … dein Schwert gegen ein Mitglied deiner Familie erheben?“ Diese Frage konnte ich mir einfach nicht verkneifen. \nEinen Moment lang dachte ich, sie würde von Gefühlen überwältigt werden, aber dann hob sie nur den Blick zum Dachfenster des Hauses. Kurz machte sich Stille breit, während sie ihre Gefühle bändigte und wieder ihre bisherige Miene aufsetzte. „Ich habe eine Handfeuerwaffe verwendet. Seine eigene.“ \nDurch das Dachfenster sah ich den Wiederschein der Abenddämmerung in den Wolken. Dann begann das Feuerwerk, eine beeindruckende Zurschaustellung der Hexerei-Handwerkskunst. Ein weiterer friedlicher Tag in Seš’qa neigte sich seinem Ende zu.",
+      "file2": "DOKUMENT: Überwachungsaufzeichnung, Tal IV \n1. Verarbeitungsanlage für Originium-Nebenprodukte (VAON), Eingang: klares Bildmaterial. Endfield-Operatoren gesichtet. Keine auffälligen Sichtungen. \n2. Arbeiter-Schlafsäle, Südosten: GBT-Crewmitglieder gehen ihren täglichen Aufgaben nach. Keine auffälligen Sichtungen. \n3. Die Hub-Basis: Camille Arno erkannt. Kamera wird zur besseren Verfolgung herangezoomt. \n4. Aburrey-Steinbruch: Signal verloren. Vermutete Beschädigung der am Landbrecher befestigten Kamera; besagte Einheit wurde vom Gegner angegriffen und ausgeschaltet. \n5. Brückenzugangscamp: Mehrere Landbrecher sind fortgegangen oder haben sich dem Rückzug angeschlossen. Es konnten nur verwaschene Bildaufnahmen eingefangen werden. Die letzte Position wurde aufgegeben. \n6. GBT-Parkplatz, Originium-Kraftwerk: Alle Kameras sind auf Camille Arno und den Endministrator von Endfield Industries zu richten. Überwacht die Aktivitäten dieser beiden Individuen. \n… \nDieser Bericht beweist, dass eine unbekannte Gruppierung in der Tal-IV-Region ein gut verstecktes Überwachungssystem eingerichtet hat. \n\nNiemand hätte damit gerechnet, dass der Endministrator bei der Rückkehr von dieser Expedition tausende Stunden an Videomaterial mitbringen würde. Diese in einem verlassenen, unterirdischen Raum gemachte Entdeckung schockierte alle Analysten. Das Material beweist, dass eine Organisation aus den Schatten von Tal IV heraus sämtliche Aktivitäten sämtlicher Akteure beobachtet und geheime Fäden gezogen hat, um Kontrolle in der Region auszuüben. \nAls den Analysten klar wurde, dass die Kameras auch in den Körpern einiger Landbrecher verborgen waren, um der Entdeckung zu entgehen (Camille hatte erwähnt, dass der Übeltäter sie ohne zu zögern zurückgelassen hatte), begriffen sie auch, weshalb Seš’qa einen Agaš’mekanaz mit diesem Fall betraut hatte. Glücklicherweise wurden die Kameras nach Camille Arnos Ankunft in Tal IV allesamt angewiesen, seine Bewegungen und Aktivitäten zu überwachen. Die Zeitspanne der Überwachung überschneidet sich weiterhin mit den Aktivitäten von Endfield in der Region. Wir können mit Sicherheit annehmen, dass keine kritischen Informationen entwendet wurden. Die Abwesenheit größerer Sicherheitslücken ist sicherlich auch der Grund dafür, dass die ungewollte Überwachung durch eine unbekannte Organisation keinem unserer Operatoren aufgefallen ist. \nNach Erhalt des Videomaterials konnten einige Operatoren der Technikabteilung die Ursprünge auf einige frühere (bereits zerstörte) Aufnahmen zurückführen und aufdecken, dass die Organisation Camille bereits seit mehreren Jahrzehnten überwachte. Der Bewahrer reagierte auf diese Entdeckung eher verhalten und schien etwas Ähnliches bereits erwartet zu haben, aber die Techniker hatten Mitleid mit ihm und versprachen, seine Ausrüstung mit einigen Verbesserungen zu versehen, um ungewollter Überwachung vorzubeugen. Als die Analysten Camille über ihre Entdeckungen informierten, lehnte er sich einfach nur gegen die Wand und schaute eine Weile stumm auf den Bildschirm. Dann hob er die Augen und fragte: „Sagt mal, wenn ihr auf der anderen Seite der Überwachungskameras wärt und die ganze Zeit über eine bekannte Person anstarren würdet … Was würde euch dabei am ehesten durch den Kopf gehen?“ \nDie Analysten gaben die unterschiedlichsten Antworten. Camille ging auf keine davon ein, sondern hüllte sich erneut in sein Schweigen. Letztendlich ergänzte er den Analysebericht um eine handschriftliche Bemerkung: \n„So gleich und doch im Wesentlichen so verschieden. Warum?“ \nEr möchte die Antworten auf diese Fragen. Er braucht sie.",
+      "file3": "Camille war stets davon überzeugt, all seine Emotionen sorgfältig verbergen zu können. Verglichen mit anderen Operatoren, für die „Zurückhaltung“ ein Fremdwort ist, stellt er sich dabei durchaus geschickt an. Allerdings verraten kaum wahrnehmbare Bewegungen und Ausdrücke in seiner Körpersprache dennoch einiges über seinen Gemütszustand. \nIst er frustriert, senkt Camille den Blick und betrachtet eingehend einen Riss, sofern es einen gibt, oder den Boden. Alternativ reibt er sich die Schulter. Will er einer Begegnung aus dem Weg gehen, verlagert er sein Gewicht auf das rechte Bein, um jederzeit fliehen zu können. Zögert er oder fühlt er sich unwohl, wandern seine Finger beinahe von allein zu dem alten Schlüssel, den er an seiner Hüfte befestigt hat. \nViele Operatoren bei Endfield besitzen einen Gegenstand oder ein Erinnerungsstück, auf das sie häufig zurückgreifen. Yvonne beispielsweise behandelt Frost-Bytee wie einen engen Freund, Rossi hat ihren Dolch und Da Pan trägt immer diesen Ferrium-Wok mit sich herum. Bei Camille sieht die Sache jedoch anders aus. Spricht man ihn auf den Schlüssel an, schnellt seine Hand sofort davon weg, als hätte er sich plötzlich daran verbrannt. Er verzieht die Lippen zu einer dünnen Linie und weigert sich, irgendwelche Fragen zu beantworten. \nEinem fähigen Maschinisten fällt auf, dass der Schlüssel per Hand aus etwas gefertigt wurde, das an die Walze einer Spieluhr erinnert. Camille verfügt jedoch nicht über handwerkliche Fähigkeiten. Er besitzt keine Immobilien und niemand weiß, was man mit diesem Schlüssel aufschließen kann. \nIrgendwann hatten wir es alle verstanden und hörten auf, ihn nach dem Schlüssel zu fragen. \nAls schon niemand mehr damit rechnete, enthüllte Camille das Rätsel des Schlüssels während einer lockeren Unterhaltung. Es handelt sich um ein Geschenk, das sein jüngerer Bruder (derjenige, der allen Kontakt zu ihm abgebrochen hat) für ihn angefertigt hat. Er gehörte zu ihrem Haus in Seš’qa, das Camille nach einem Unfall inzwischen verkauft hat und nicht mehr besucht. Der Schlüssel verfügt also nur noch über sentimentalen und schmückenden Wert und seine Angewohnheit, ihn zu berühren ist ein Ausdruck einer tiefen Sehnsucht … und vielleicht von unerklärlicher Langeweile. Nach dieser Erklärung ließ Camille den Schlüssel in einer Tasche verschwinden. \nEr erinnerte sich nur noch an einen brennenden Schmerz und das Gefühl, das Fleisch würde ihm in Klumpen aus dem Körper gerissen. Seine Erinnerungen zeugten von einer dunklen, scheinbar endlosen Vergangenheit. Das Geschenk wurde angeboten, als es noch Aufrichtigkeit gab. Der Bewahrer stand vor einem Problem, an das er nicht länger erinnert werden wollte. \nEin paar Tage später erhielt Camille einen Baker-Toast und besuchte das Büro des Endministrators. Er wurde mit einem Lächeln empfangen und der Endministrator übergab ihm einen neuen Schlüssel. \n„Solche Schlüssel und Schlösser sind wirklich selten, daher hat die Herstellung eine Weile gedauert“, bemerkte der Endministrator, „Ich möchte nur, dass du weißt, dass du jederzeit eine Tür auf der Dijiang öffnen kannst.“ \nDie Geste überraschte Camille. Er schloss den neuen Schlüssel fest in die Hand und wandte sein Gesicht ab. Worte formten sich auf seiner Zunge, aber aus seinem Mund kamen nur Geräusche, die an eine in einer Falle gefangenen Vogelbestie erinnerten. Am Ende brachte er doch noch zwei kaum verständliche Worte heraus: „Vielen Dank.“ \nNicht alle Operatoren verstehen Camilles Körpersprache, aber jeder weiß, dass das Klirren der beiden Schlüssel ein Ausdruck der Freude ist, die er in diesem Moment verspürt hat.",
+      "file4": "DOKUMENT: Ein zerrissenes Manuskript \nDie ersten Spiegel, in die ein Neugeborenes blickt, sind für gewöhnlich die Augen seiner Mutter. Augen, mit denen eine Mutter ihr Kind liebevoll betrachtet und ihm die Worte zuflüstert: „Willkommen in dieser Welt.“ Das Neugeborene öffnet ebenfalls die Augen und erwidert den Blick mit der Zielstrebigkeit eines Navigators, der einen Ozean überquert. Verzieht sich der feuchte Glanz, erkennt es sein Spiegelbild in ihren Augen. \nMächtig, schwach, hasserfüllt, liebevoll, rein, besudelt … All dies erkennt man in diesem Bild im Spiegel – der Spiegelung seiner selbst. \nAber was, wenn dein erster Spiegel nicht deine Mutter war? Was, wenn du die Augen geöffnet hast, noch ehe der erste Schrei deinen Körper verlies? Der Ozean um dich herum schaukelte dich sanft wie eine Wiege und jemand berührte deine Finger. Die Berührung fühlte sich einerseits störend, andererseits aber auch beruhigend an. Du kanntest die andere Person nicht, aber als du durch die trübe Flüssigkeit blicktest, fandest du ein weiteres Paar verschwommener Augen, in denen deine sich spiegelten. In diesem Moment fuhr eine Erkenntnis schneller als ein Blitzschlag in deinen Körper. \nEr war mit dir geboren worden. Ihr beiden wart die besten Freunde, konntet aber nicht anders, als stets zu kämpfen oder zu streiten. Du konntest nicht anders, als dein Spiegelbild in seinen Augen zu betrachten … Er war die Regel und der Maßstab, an dem du gemessen wurdest und gleichzeitig die Leitung, durch die du die Welt in dir aufnahmst. Er dagegen verließ sich auf dich, respektierte dich und beneidete dich. Die Tage vergingen und dein Spiegelbild in seinen Augen kam der Perfektion immer näher. \nEines Tages war es dann so weit. Der erste Riss zeigte sich im Spiegel. Die Risse breiteten sich immer weiter aus und der Spiegel zersprang. Dein Bild war fort. Der Sturm brach los, das Schicksal seufzte auf und die Ozeane wurden in die Tiefe zurückgetrieben. Dir wurde eine Narbe zugefügt, die niemals ganz verheilen sollte. Die Hälfte deiner Seele ging dir verloren und du musstest deine Waffe gegen ihn richten. Nur so konntest du den Hass durchdringen, der heller brannte als Liebe, und wiederherstellen, was völlig zerbrochen war. \nUnd selbst in diesem Moment war dir noch nicht bewusst – \n– dass du sein erster Spiegel gewesen warst. \n\nDOKUMENT: Ein verblasster Zeitungsausschnitt \nLandbrecher überfallen Stadt – Seš’qa plant die Einrichtung einer Organisation zur Eindämmung der Hexerei \nDer Verräter und Deserteur Jakub Meissen aus der schwebenden Stadt und seine Landbrecher-Gefolgsleute stellen in letzter Zeit eine ernsthafte Bedrohung für die Sicherheit im Zivilisationsgürtel dar. Jakubs Streitkräfte haben eine Originium-Farm eingenommen und zu ihrem Stützpunkt umgebaut. Von dort aus entsenden sie Gruppen, die mehr Originium verbreiten und Überfälle verüben. \nErst vor zwei Nächten wurde eine Stadt am Rand des Zivilisationsgürtels von einer Gruppe überfallen, die von Jakubs Vampir-Leutnant angeführt wurde. Die Stadt befand sich in einem Gebiet, das noch keine talosianische Fraktion beansprucht hat, und verfügte nur über unzureichende Verteidigungsmöglichkeiten. Ein weiterer Vampir aus Seš’qa spielte jedoch eine entscheidende Rolle bei der Abwehr des Überfalls. Der Vampir-Verteidiger nutzte sein Wissen über die Sarkaz-Hexerei, um die militärische Ausrüstung der Angreifer zu manipulieren und durchbohrte den Anführer der Angreifer mit seiner Waffe, woraufhin dieser den Rückzug anordnen musste. Derzeit ist der Anführer der Angreifer auf der Flucht und Seš’qa arbeitet unermüdlich daran, ihn ausfindig zu machen. \nSeš’qa sieht sich in der Verantwortung, mit den Folgen von Jakubs Verrat umzugehen. Neueste Enthüllungen zeigen, dass die Anführer der schwebenden Stadt die Einrichtung einer Organisation planen, die Verräter dingfest machen und sich mit Verbrechen beschäftigen soll, die durch Sarkaz-Hexerei begangen wurden."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kampffertigkeit <@ba.key>Flammender Exorzismus</> verbessert: Die Fertigkeit belegt Gegner mit <#ba.weak>Schwächen</> <@ba.vup>+{0-weak_scale:0%}</> und <#ba.firevul>Hitze-Empfänglichkeit</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Schwebe</>dauer der <@ba.key>Feuerzahn-Vesperflügel</> <@ba.vup>+{bat_duration:0}</> Sek.",
+      "name": "Flammengesalbte Lanze"
+    },
+    "potential2": {
+      "description": "Beweglichkeit <@ba.vup>+{Agi:0}</>, Intellekt <@ba.vup>+{Wisd:0}</>.",
+      "name": "Hexenfährtenleser"
+    },
+    "potential3": {
+      "description": "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek. <@ba.key>Herzpfähler</> und <@ba.key>Jägerverfolgung</> verbessert: Die SDN-Multiplikatoren werden auf das <@ba.vup>{atk_scale_1_1:0.0}</>-fache des Originalwerts erhöht. Die FP-Wiederherstellung wird auf das <@ba.vup>{atb:0.##}</>-fache des Originalwerts erhöht.",
+      "name": "Dorniger Lähmer"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>Blutregenguss</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Agašlehems Siegel"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Wiederbelebung des Blutquells</> verbessert: <@ba.fire>Hitze-SDN</>-Boost pro Kumulierung <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Blutkonvention"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Rückkehr zur Ewigkeit",
+      "author": "およ",
+      "description": "Schreite im unendlichen Kreislauf voran, bis du das zerrüttete Ende erreichst, um wieder ein Ganzes zu werden."
+    },
+    "potential3": {
+      "name": "Ein stolzer Anfang",
+      "author": "起ID无能",
+      "description": "Die Vergangenheit ist wie ein Regentropfen. Erhebe dein Haupt und wende dich ihm zu, damit er sich nicht aus deinem Herzen ergießt."
+    },
+    "potential5": {
+      "name": "Schattenbruch",
+      "author": "se_eeeee",
+      "description": "Er befreite sich von dem finsteren Schatten, der an ihm haftete wie eine Dornenranke, die aus der Erde hervorbrach."
+    }
+  }
+}

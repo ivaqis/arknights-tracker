@@ -152,7 +152,8 @@
     "weapSpecial": "Arma de Evento",
     "weapon-all": "Banners de Armas",
     "joint": "Festival do Brilhantismo",
-    "weponbox_1_3_1": "Distribuição Nó Escarlate"
+    "weponbox_1_3_1": "Distribuição Nó Escarlate",
+    "weponbox_1_3_2": "Distribuição Tom Carmesim"
   },
   "import": {
     "title": "Importar Histórico de Busca",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "Distribuição Fogo Fundente",
     "weponbox_1_2_3": "Distribuição Caminhante Veloz",
     "special_1_3_1": "Punhos Sem Remorsos",
-    "weponbox_1_3_1": "Distribuição Nó Escarlate"
+    "weponbox_1_3_1": "Distribuição Nó Escarlate",
+    "special_1_3_2": "Expurgador de Pecados",
+    "weponbox_1_3_2": "Distribuição Tom Carmesim"
   },
   "pages": {
     "home": "Início",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "Preparação de Contingência",
     "seatchForSwordVaultDale": "A Procura do Vale do Cofre de Espadas",
     "monumentalEtchingDirgeOfGrief": "Entalhe Monumental: Lamento da Dor",
-    "umbralMonument": "Monumento Umbral"
+    "umbralMonument": "Monumento Umbral",
+    "peacekeepersNocturneSignIn": "Login em Noturno do Pacificador"
   },
   "mouths": {
     "january": "Janeiro",

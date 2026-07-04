@@ -152,7 +152,8 @@
     "weap-special": "Arma Evento",
     "weapon-all": "Banner Armi",
     "joint": "Festival della lucentezza",
-    "weponbox_1_3_1": "Distribuzione Nodo scarlatto"
+    "weponbox_1_3_1": "Distribuzione Nodo scarlatto",
+    "weponbox_1_3_2": "Distribuzione Tinta cremisi"
   },
   "import": {
     "title": "Importa Registro Reclutamenti",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "Distribuzione Fiamma della fonderia",
     "weponbox_1_2_3": "Distribuzione Viandante celere",
     "special_1_3_1": "Pugni senza rimorsi",
-    "weponbox_1_3_1": "Distribuzione Nodo scarlatto"
+    "weponbox_1_3_1": "Distribuzione Nodo scarlatto",
+    "special_1_3_2": "Cancellare il peccato",
+    "weponbox_1_3_2": "Distribuzione Tinta cremisi"
   },
   "pages": {
     "home": "Home",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "Reattività alle emergenze",
     "seatchForSwordVaultDale": "Ricerca della Valletta di Voltaspada",
     "monumentalEtchingDirgeOfGrief": "Incisione monumentale: Canto di dolore",
-    "umbralMonument": "Monumento d'ombra"
+    "umbralMonument": "Monumento d'ombra",
+    "peacekeepersNocturneSignIn": "Accesso Notturno della diplomazia"
   },
   "mouths": {
     "january": "Gennaio",

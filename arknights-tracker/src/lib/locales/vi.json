@@ -153,7 +153,8 @@
     "weap-standard": "Vũ khí Tiêu chuẩn",
     "weap-special": "Vũ khí Sự kiện",
     "weapon-all": "Banner Vũ khí",
-    "joint": "Lễ Hội Rực Rỡ"
+    "joint": "Lễ Hội Rực Rỡ",
+    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc"
   },
   "import": {
     "title": "Nhập Hồ sơ Chiêu mộ",
@@ -349,7 +350,9 @@
     "weaponbox_constant_5": "Gói Tiếng Sấm Rền",
     "joint_1_2_2": "Lễ Hội Rực Rỡ",
     "weponbox_1_2_2": "Gói Luyện Hỏa",
-    "weponbox_1_2_3": "Gói Hành Tốc"
+    "weponbox_1_2_3": "Gói Hành Tốc",
+    "special_1_3_2": "Đấng Xá Tội",
+    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc"
   },
   "pages": {
     "home": "Trang chủ",
@@ -432,7 +435,8 @@
     "contingencyReadiness": "Sẵn Sàng Ứng Biến",
     "seatchForSwordVaultDale": "Tìm Về Cốc Tàng Kiếm",
     "monumentalEtchingDirgeOfGrief": "Văn Khắc Kỷ Niệm: Bi Ca Sầu Muộn",
-    "umbralMonument": "Đài Bóng Tối"
+    "umbralMonument": "Đài Bóng Tối",
+    "peacekeepersNocturneSignIn": "Điểm Danh Dạ Khúc Bảo Vệ Hòa Bình"
   },
   "mouths": {
     "january": "Tháng 1",

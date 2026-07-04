@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Recuperação de PH",
+      "Inflição Térmica",
+      "Conexão"
+    ],
+    "behaviourHateTags": [
+      "Natureza"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido (EXCLUSIVO DO SISTEMA, não é visível dentro do jogo)"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Análise Situacional",
+      "Agilidade"
+    ],
+    "giftPreferTags": [
+      "Escolha dos Espadeiros de Wuling"
+    ],
+    "hobbyTags": [
+      "Criatividade",
+      "Tecnologia"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
+      },
+      "name": "Absolvição Sanguínea",
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.fire>DNO Térmico</>. Como o operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.fire>DNO Térmico</> aos inimigos próximos. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado se torna um finalizador que causa uma enorme quantidade de <@ba.fire>DNO Térmico</> e recupera PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientação",
+        "firefangVesperwingDurationS": "Duração da Vesperfera Presas de Fogo (s)",
+        "weaknessEffect": "Efeito de Fraqueza",
+        "heatSusceptibility": "Suscetibilidade Térmica",
+        "explosionDmgMultiplier": "Multiplicador DNO Explosão"
+      },
+      "name": "Exorcismo Flamejante",
+      "description": "Camille invoca <@ba.key>Vesperferas Presas de Fogo</> que voam na direção do inimigo para causar <@ba.fire>DNO Térmico</> e aplicar <#ba.fireinflict>Inflição Térmica</> nos inimigos em uma pequena área de efeito. As <@ba.key>Vesperferas Presas de Fogo</> então <@ba.key>pairam</> temporariamente ao redor do alvo e aplicam <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao alvo em questão durante a pairagem. Quando o inimigo é derrotado, as <@ba.key>Vesperferas Presas de Fogo</> voam para outro inimigo próximo, causam <@ba.fire>DNO Térmico</> e aplicam <#ba.fireinflict>Inflição Térmica</>, <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao novo alvo.\nAtingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele usando o combo de habilidades de Camille aciona uma explosão após um breve atraso. Essa explosão causa <@ba.fire>DNO Térmico</> adicional."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientação",
+        "spRecovery": "Recuperação de PH",
+        "hunterPursuitDmgMultiplier": "Multiplicador DNO Perseguição do Caçador",
+        "hunterPursuitStagger": "Desorientação Perseguição do Caçador",
+        "hunterPursuitSpRecovery": "Recuperação de PH Perseguição do Caçador",
+        "ultimateEnergyGain": "Ganho de Energia Suprema"
+      },
+      "name": "Espinho no Coração",
+      "description": "ACIONADOR DO COMBO: quando <#ba.fireinflict>Inflição Térmica</> de um inimigo é <#ba.consume>consumida</> ou <#ba.absorb>absorvida</>.\nRealiza um avanço de retorno que causa <@ba.fire>DNO Térmico</> e recupera algum PH."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientação",
+        "spRecovery": "Recuperação de PH",
+        "hunterPursuitStateDurationS": "Duração do Estado de Perseguição do Caçador (s)"
+      },
+      "name": "Derrame Sanguíneo",
+      "description": "Camille voa até o céu, dispara uma saraivada de lanças e continua com um ataque de varredura. Isso causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</> aos alvos atingidos e, ao mesmo tempo, recupera PH. \nApós a conjuração da habilidade suprema, a habilidade de batalha de Camille é transformada temporariamente em <@ba.key>Perseguição do Caçador</>.\n<@ba.key>Perseguição do Caçador</> é tratado como um combo de habilidades e não gera custos de PH. É um ataque de investida que causa <@ba.fire>DNO Térmico</> e recupera PH."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidade do Operador + 10.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 15.",
+        "Agilidade do Operador + 20."
+      ],
+      "name": "Escaramuçador"
+    },
+    "talent1": {
+      "levels": [
+        "Combo de habilidades <@ba.key>Espinho no Coração</> aprimorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele.",
+        "Combo de habilidades <@ba.key>Espinho no Coração</> aprimorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele."
+      ],
+      "name": "Caçador de Transgressões"
+    },
+    "talent2": {
+      "levels": [
+        "Sempre que Camille restaurar PV com uma habilidade, ele ganhará <@ba.fire>DNO Térmico Causado</> <@ba.vup>+ {atk_up:0%}</> (máx. acúmulos: 5) por {duration:0} s enquanto outros operadores na equipe ganharão <@ba.vup>{teammate_rate:0%}</> desse efeito. Esse efeito pode atingir 5 acúmulos. \n<@ba.info>Se Camille já estiver com PV Máximo, cada acionador produzirá 2 acúmulos do efeito.</>",
+        "Sempre que Camille restaurar PV com uma habilidade, ele ganhará <@ba.fire>DNO Térmico Causado</> <@ba.vup>+ {atk_up:0%}</> (máx. acúmulos: 5) por {duration:0} s enquanto outros operadores na equipe ganharão <@ba.vup>{teammate_rate:0%}</> desse efeito. Esse efeito pode atingir 5 acúmulos. \n<@ba.info>Se Camille já estiver com PV Máximo, cada acionador produzirá 2 acúmulos do efeito.</>"
+      ],
+      "name": "Reviver da Fonte de Sangue"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 20%",
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 30%"
+      ],
+      "name": "Hemovitreografia"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de Operador + 20%",
+        "Atribua à Cabine de Manufatura para conceder eficiência em produção de materiais de EXP de Operador + 30%"
+      ],
+      "name": "Manual de Agaš'mekanaz"
+    },
+    "files": {
+      "main": "CODINOME: Camille \nGÊNERO: Masculino \nAUTENTICAÇÃO: Seš'qa \nDATA DE NASCIMENTO: 20 de novembro \nRAÇA: Sarkaz \n[STATUS DE INFECÇÃO POR ORIPATIA] \nNegativo para Oripatia com base em relatórios de exames médicos. \n\n[EXAME FÍSICO INTEGRADO] \nFORÇA FISIOLÓGICA: Excelente \nHABILIDADE DE COMBATE: Padrão \nPERSPICÁCIA TÁTICA: Padrão \nASSIMILAÇÃO DE ARTES DE ORIGINIUM: Excepcional \n\nConsultas a Seš'qa já foram realizadas. No entanto, as influências exatas do ato de compartilhar sangue na assimilação das Artes de Originium de Camille permanecem incertas. \n— Um operador Sarkaz",
+      "humanResources": "Camille Arno, Agaš'mekanaz de Seš'qa (Guardião da Sabedoria), buscou uma parceria com a Endfield Industries em caráter pessoal. Após a recomendação de Endministrator, ele ocupa atualmente uma posição na Divisão Técnica Especializada. \n\nOs pais do operador Camille eram membros da expedição científica conjunta da Terra. Ele próprio nasceu e foi criado em Seš'qa. No entanto, devido às exigências de seu trabalho e às suas experiências passadas, Camille vive fora da cidade flutuante há muitos anos. \nEmbora Camille afirme estar \"caçando\" um parente criminoso, seu currículo extremamente longo, porém em branco, sugere que ele discretamente trocou de papéis de \"caçador\" e \"presa\". Todo o conjunto de suas relações sociais, sua história pessoal... ou sua \"vida\", se adotarmos uma definição mais ampla, tudo foi completamente destruído ao longo de várias décadas. \nQuando toquei nesse assunto na conversa, Camille desviou o olhar para o teto e ficou encarando uma mancha. Ele então quebrou o silêncio com uma série de metáforas e figuras de linguagem. Uma delas, que achei particularmente impressionante, foi como ele se descreveu como um \"pêndulo que trabalha em vão\". \nEle continuou e disse que houve um certo dia em que seu tempo parou de avançar. \nAo final da conversa, a lição mais importante que aprendi ao interagir com esse operador foi a seguinte: se você deseja evitar a extenuante tarefa de lidar com emoções, NÃO fale sobre o irmão dele. \n— Martin Marvin Malen, Assistente, Divisão de RH, Endfield Industries",
+      "file1": "DOCUMENTO: Guia Turístico de Talos-II: Seš'qa, Edição 3 \nO Dia Aberto de Seš'qa chegou! O que um turista inteligente deveria fazer? Visitar a loja modelo da Witching Hour? Comprar uma edição limitada de algo que não está disponível nas lojas da CGCT? Saborear algo gostoso no Bar de Vidro? Procurar ateliês secretos de feitiçaria em becos escuros? Há tantas coisas para fazer na cidade flutuante. Nosso guia mais recente oferece uma opção secreta e cheia de nuances: agende uma visita à casa segura de um Agaš'mekanaz, ou Guardião da Sabedoria. \nEu costumava tratar esses Guardiões como um grupo misterioso de indivíduos perigosos e implacáveis que trabalham nas sombras. Acredito que muitos leitores compartilham da minha opinião. Os organizadores dos Dias Abertos mais recentes talvez estivessem interessados em mudar esse estereótipo, já que adicionaram mais atividades relacionadas aos Guardiões à programação para nos ajudar a aprender sobre suas contribuições de longo prazo e o bom trabalho que realizam. \nMeu guia era uma Guardiã aposentada. Uma Golias bondosa e paciente, ela não tinha nada a ver com a Agaš'mekanaz fria e impiedosa que eu tinha em mente. Ela me contou que, após Jakub Meissen trair Seš'qa, a cidade passou por uma crise de confiança, embora o evento também tenha devastado as comunidades Sarkaz de Talos-II. Para evitar que coisas como essa voltassem a ocorrer, os líderes de Seš'qa reuniram os melhores e estabeleceram o gabinete dos Agaš'mekanaz. Seu foco é lidar com crimes maliciosos perpetrados pelos Sarkaz ou que os tenham como alvo. \nPassamos a hora seguinte caminhando alegremente entre paredes repletas de evidências, arquivos e vitrines com diversos equipamentos especializados em feitiçaria. A conversa que tivemos me ensinou alguns segredos. O maior desafio que qualquer Guardião poderia enfrentar seriam os crimes cometidos por um membro de sua própria família. De um modo geral, as outras etnias hesitariam em colocar um parente do suspeito no caso, mas os Sarkaz adotaram uma abordagem totalmente oposta. Muitas de suas tribos são abençoadas com vida longa e domínio de uma ampla variedade de Artes de Originium. Assim, um clã unido por laços de sangue também se revela o antídoto perfeito para os criminosos Sarkaz. \n\"É por isso que muitos dos Agaš'mekanaz sofrem emocionalmente. Alguns duvidam da nossa capacidade de permanecermos justos e imparciais, mas nenhum de nós ainda abandonou os princípios em nome de um semelhante\", disse a Guardiã. \n\"Você já foi forçada a... cruzar espadas com sua própria família?\" Não pude deixar de perguntar. \nHouve um momento em que pensei que suas emoções pudessem se romper, mas ela ergueu o olhar para a única claraboia da casa. Houve um breve silêncio antes que ela organizasse seus sentimentos e voltasse ao normal. \"Eu usei um canhão de mão. Era dele.\" \nPela claraboia, pude ver os últimos raios do crepúsculo refletindo nas nuvens. Os fogos de artifício, obras de feitiçaria elaboradas tecidas pelos artesãos, explodiram. Seš'qa desfrutou de mais um dia de paz.",
+      "file2": "DOCUMENTO: Feed de Monitoramento de Vale IV \n1. Centro de Processamento de Subprodutos de Originium (CPSO), Entrada: Imagens nítidas. Operadores da Endfield observados. Nenhum avistamento fora do normal. \n2. Alojamento trabalhadores, sudeste: membros da equipe do STUT realizando suas atividades diárias. Nenhum avistamento fora do normal. \n3. A Base Central: Camille Arno identificado. A câmera aumenta o zoom para melhorar o rastreamento. \n4. Pedreira de Aburrey: Sinal perdido. Suspeita-se de danos na câmera fixada no Invasor de Terras; a unidade em questão foi atacada e eliminada pelo inimigo. \n5. Acampamento de Acesso à Ponte: vários Invasores de Terras haviam deixado ou se juntado à coluna em retirada. Apenas alguns vídeos desfocados foram capturados. A posição final foi abandonada. \n6. Estacionamento do Sindicato, Usina de Energia de Originium: foque todas as câmeras em Camille Arno e em Endministrator da Endfield Industries. Monitore as atividades desses dois indivíduos. \n...... \nEste relatório comprova que uma entidade desconhecida implantou um sistema de monitoramento bem oculto na região de Vale IV. \n\nNinguém poderia imaginar que Endministrator retornaria dessa viagem com milhares de horas de gravação em vídeo. A descoberta, feita em uma instalação subterrânea abandonada, deixou todos os analistas em choque. Isso prova que uma organização tem agido nas sombras de Vale IV, observando silenciosamente cada ação de todos e manipulando os bastidores para exercer controle sobre a região. \nQuando os analistas perceberam que as câmeras foram implantadas internamente nos Invasores de Terras para evitar a detecção (Camille mencionou como o perpetrador os abandonou sem pensar duas vezes), eles entenderam por que Seš'qa escolheu designar um Agaš'mekanaz para a tarefa. Felizmente, após a chegada de Camille Arno a Vale IV, todas as câmeras foram reatribuídas para monitorar seus movimentos e atividades. O período de monitoramento coincide com as atividades da Endfield na região. Podemos afirmar com segurança que nenhuma informação crítica foi vazada. A ausência de vazamentos também explica por que nenhum dos nossos operadores percebeu o monitoramento indevido por terceiros. \nApós receberem o feed de vídeo, os operadores da divisão de tecnologia rastrearam a origem até um lote anterior de registros (já destruídos) e perceberam que a organização havia começado a monitorar Camille várias décadas atrás. Embora o próprio Guardião tenha reagido com indiferença à descoberta e parecesse já esperar por isso, os técnicos se solidarizaram com sua situação e prometeram melhorar seu equipamento com uma série de upgrades projetados para neutralizar medidas secretas de monitoramento. Quando os analistas informaram Camille sobre suas descobertas, ele simplesmente se encostou na parede e olhou para a tela em silêncio por um bom tempo antes de levantar os olhos e perguntar: \"Imagine se você estivesse do outro lado das câmeras de monitoramento, olhando para uma pessoa familiar... o que provavelmente viria à sua mente?\" \nOs analistas deram todos os tipos de respostas. Camille não respondeu a nenhum deles, mas continuou seu longo silêncio. Por fim, ele deixou uma anotação escrita no relatório de debriefing. \n\"Tão semelhantes, mas tão essencialmente diferentes. Por quê?\" \nEle quer saber a resposta para a pergunta. Ele precisa disso.",
+      "file3": "Camille sempre achou que conseguia esconder bem suas emoções. Comparado a outros operadores que não demonstravam nenhuma restrição, ele fez um ótimo trabalho. Infelizmente, movimentos involuntários e uma linguagem corporal quase imperceptível ainda o denunciaram. \nQuando frustrado, Camille baixava o olhar e examinava qualquer rachadura no chão, se houvesse alguma, ou inconscientemente esfregava a escápula. Quando deseja evitar contato, ele desloca seu centro de equilíbrio para a perna direita para agilizar um voo iminente. Quando hesitava ou se sentia desconfortável, seus dedos, inconscientemente, esfregavam a velha chave que pendia de sua cintura. \nMuitos operadores da Endfield têm um objeto ou lembrança em que se concentram. Por exemplo, Yvonne trata Frost-e-Bytee como uma amizade próxima, Rossi tem sua adaga e Da Pan está sempre carregando aquele wok de ferrium nas costas. Mas Camille é diferente. Se alguém perguntasse a ele sobre a chave, ele imediatamente retiraria a mão como se o objeto tivesse se transformado em uma brasa ardente. Ele manteria os lábios cerrados e se recusaria a responder à pergunta. \nMecânicos experientes diriam que a chave era artesanal, feita de algo que lembrava um cilindro de caixa de música, embora Camille não entenda nada de artesanato. O homem não possui nenhuma propriedade em seu nome, e ninguém sabe o que a chave realmente abre. \nCom o tempo, todos se tornaram mais sábios e aprenderam a não perguntar sobre o objeto. \nFinalmente, Camille confessou a origem da chave durante uma conversa informal. Foi um presente feito à mão por seu irmão mais novo (o mesmo que rompeu todos os laços com ele). Era parte do lar da família em Seš'qa, vendido mais tarde por Camille após um acidente e para onde ele nunca mais voltou. A chave era meramente ornamental e seu hábito de tocá-la tinha raízes na saudade... e talvez em uma pitada de tédio sem fim. Após proferir essas palavras, Camille colocou a chave em um dos bolsos. \nO que ele recordava era uma dor lancinante, como se um pedaço de carne estivesse sendo arrancado de seu corpo, e um passado sombrio e exaustivo que parecia não ter fim. O presente foi oferecido enquanto ainda havia sinceridade. O Guardião se viu diante de um dilema, e não queria mais ser lembrado disso. \nAlguns dias depois, Camille recebeu um toast no Baker e foi visitar o escritório de Endministrator. Ao recebê-lo, Endministrator era só sorrisos e entregou a ele uma nova chave. \n\"Essas chaves e fechaduras são bem raras, então fazê-las levou bastante tempo\", disse a pessoa. \"Só quero que você saiba que a Dijiang sempre tem uma porta que você pode abrir.\" \nCamille foi pego de surpresa. Ele apertou os dedos com força em volta da chave e virou o rosto para o lado. Ele tentou formar palavras, mas elas saíam como ruídos emitidos por uma ave ofegante cujo pescoço estava preso em uma garra de ferro. No fim, ele só conseguiu balbuciar uma frase quase inaudível: \"Obrigado\". \nNem todos estão familiarizados com a linguagem corporal de Camille, mas todos sabem que o tilintar da chave nova contra a antiga é motivo de alegria, assim como ele se sentiu naquele exato momento.",
+      "file4": "DOCUMENTO: Um Manuscrito Rasgado \nO primeiro espelho que um bebê costuma enxergar são os olhos da mãe. Uma mãe olharia para você e sussurraria suavemente estas palavras: \"Boas-vindas a este mundo.\" Você abriria os olhos para encará-la com a mesma concentração de um navegador tentando atravessar um oceano. Assim que o brilho úmido desaparecesse, você se veria refletido em seus olhos. \nPoderoso, fraco, odioso, adorável, puro, corrompido... Você reconheceria o reflexo no espelho, um reflexo de si mesmo. \nMas e se o seu primeiro espelho não fosse a sua mãe? E se você abrisse os olhos antes mesmo do primeiro choro? O oceano ao seu redor balançava como um berço, e alguém pressionava seus dedos. Era irritante, mas também calmo. Você não sabia quem era aquela pessoa, mas olhou através dos fluidos turvos, notou outro par de olhos embaçados e viu seu reflexo neles. Naquele exato momento, algo mais rápido que um raio atravessou sua alma. \nEle nasceu com você. Vocês eram os melhores amigos, apesar de sempre brigarem e discutirem. Você não conseguia deixar de olhar em seus olhos para contemplar seu próprio reflexo... Ele era a regra e o controle pelos quais você era medido, e o próprio canal através do qual você se alimentava do mundo. Ele, por outro lado, confiava em você, respeitava você e tinha inveja de você. Os dias se passavam e seu reflexo em seus olhos se tornava cada vez mais perfeito. \nEntão, um dia, aconteceu. A primeira rachadura apareceu no espelho. As rachaduras se alastraram e o espelho se estilhaçou. Sua imagem havia desaparecido. A tempestade chegou, os destinos sussurraram e os oceanos recuaram para as profundezas. Você ganhou uma cicatriz que jamais desaparecerá, perdeu metade da sua alma e foi forçado a erguer sua arma contra ele. Era a única maneira de penetrar o ódio que ardia mais profundamente que o amor e restaurar à totalidade o que havia sido quebrado. \nE, naquele momento, você ainda não tinha percebido... \n— que você era seu primeiro espelho. \n\nDOCUMENTO: Um Recorte de Jornal Desbotado \nInvasores de Terras Atacam Cidades: Seš'qa Planeja Criar uma Organização Antifeitiçaria \nO traidor e desertor da cidade flutuante, Jakub Meissen, e os saqueadores Invasores de Terras que liderava tornaram-se recentemente uma grande ameaça à segurança do Cinturão da Civilização. As forças de Jakub ocuparam e transformaram uma fazenda de Originium em sua base de operações, enviando grupos de saqueadores para espalhar mais Originium e realizar ataques. \nApenas duas noites antes, uma cidade nas Margens do Cinturão foi atacada por saqueadores liderados por um Vampiro que servia como tenente de Jakub. A cidade, situada numa área ainda não reivindicada pelas facções Talosianas, estava mal defendida. No entanto, outro Vampiro, proveniente de Seš'qa, desempenhou um papel fundamental para frustrar o ataque. Munido de um profundo conhecimento da feitiçaria Sarkaz, o Vampiro defensor sabotou o equipamento militar dos invasores e atravessou o peito do líder do ataque com sua arma, forçando-o a ordenar a retirada. Atualmente, o líder dos saqueadores está desaparecido e Seš'qa mantém vigilância constante para localizá-lo. \nSeš'qa assumiu a responsabilidade pela traição de Jakub. As últimas notícias revelaram que a liderança da cidade flutuante está planejando criar uma organização dedicada a combater crimes envolvendo feitiçaria Sarkaz e a capturar os traidores."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidade de batalha <@ba.key>Exorcismo Flamejante</> aprimorada: a habilidade aplica <#ba.weak>Fraqueza</> <@ba.vup>+ {0-weak_scale:0%}</> e <#ba.firevul>Suscetibilidade Térmica</> <@ba.vup>+ {vulnerable_scale:0%}</>. Duração da <@ba.key>pairagem</> das <@ba.key>Vesperferas Presas de Fogo</> <@ba.vup>+ {bat_duration:0}</> s.",
+      "name": "Lança Ungida pela Chama"
+    },
+    "potential2": {
+      "description": "Agilidade <@ba.vup>+ {Agi:0}</>, Inteligência <@ba.vup>+ {Wisd:0}</>.",
+      "name": "Rastreador de Aroma de Bruxas"
+    },
+    "potential3": {
+      "description": "Combo de habilidades <@ba.key>Espinho no Coração</> melhorado: a duração do Tempo de Recarga é <@ba.vup>{coolDown:0}</> s. <@ba.key>Espinho no Coração</> e <@ba.key>Perseguição do Caçador</> melhorados: os Multiplicadores DNO são aumentados para <@ba.vup>{atk_scale_1_1:0.0}</> vezes os originais. As recuperações de PH são aumentadas para <@ba.vup>{atb:0.##}</> vezes as originais.",
+      "name": "Incapacitador Espinhoso"
+    },
+    "potential4": {
+      "description": "<@ba.key>Derrame Sanguíneo</> supremo aprimorado: custo de Energia Suprema <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Sigilo de Agašlehem"
+    },
+    "potential5": {
+      "description": "Talento <@ba.key>Reviver da Fonte de Sangue</> aprimorado: potencialização de <@ba.fire>DNO Térmico</> por acúmulo <@ba.vup>+ {atk_up:0%}</>.",
+      "name": "Convenção Sanguínea"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Retorno à Eternidade",
+      "author": "およ",
+      "description": "Avance pelo ciclo sem fim até chegar ao fim despedaçado e se tornar inteiro novamente."
+    },
+    "potential3": {
+      "name": "Um Início Orgulhoso",
+      "author": "起ID无能",
+      "description": "O passado é como uma gota de chuva. Levante a cabeça para encará-la para que ela não transborde do seu coração."
+    },
+    "potential5": {
+      "name": "Romper das Sombras",
+      "author": "se_eeeee",
+      "description": "Ele se libertou da sombra escura que se agarrava a ele, como uma videira espinhosa que irrompeu da terra."
+    }
+  }
+}

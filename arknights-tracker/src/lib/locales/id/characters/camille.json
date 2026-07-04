@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Pemulihan SP",
+      "Heat Infliction",
+      "Link"
+    ],
+    "behaviourHateTags": [
+      "Alam"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel (SISTEM SAJA, tidak terlihat dalam game)"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Analisis Situasi",
+      "Kegesitan"
+    ],
+    "giftPreferTags": [
+      "Pilihan Swordmancer Wuling"
+    ],
+    "hobbyTags": [
+      "Kreatif",
+      "Teknologi"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+        "diveAtkMultiplier": "Pengganda ATK Menukik"
+      },
+      "name": "Sanguine Absolution",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "firefangVesperwingDurationS": "Durasi Firefang Vesperwing (dtk)",
+        "weaknessEffect": "Efek Weakness",
+        "heatSusceptibility": "Heat Susceptibility",
+        "explosionDmgMultiplier": "Pengganda DMG Ledakan"
+      },
+      "name": "Blazing Exorcism",
+      "description": "Camille memanggil <@ba.key>Firefang Vesperwing</> yang akan terbang ke arah musuh sehingga akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada musuh di area efek yang kecil. Lalu, <@ba.key>Firefang Vesperwing</> itu untuk sementara akan <@ba.key>terbang mengitari</> target dan mengakibatkan <#ba.weak>Weakness</> serta <#ba.firevul>Heat Susceptibility</> kepada target tersebut selama masih terbang. Saat target kalah, <@ba.key>Firefang Vesperwing</> akan terbang ke musuh lain di dekatnya, menimbulkan <@ba.fire>Heat DMG</>, dan mengakibatkan <#ba.fireinflict>Heat Infliction</>, <#ba.weak>Weakness</>, serta <#ba.firevul>Heat Susceptibility</> kepada target yang baru.\nJika <@ba.key>Firefang Vesperwing</> <@ba.key>terbang mengitari</> musuh dan musuh itu terkena skill kombo Camille, ledakan akan terpicu setelah beberapa saat. Ledakan ini akan menimbulkan <@ba.fire>Heat DMG</> tambahan."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "spRecovery": "Pemulihan SP",
+        "hunterPursuitDmgMultiplier": "Pengganda Hunter Pursuit DMG",
+        "hunterPursuitStagger": "Hunter Pursuit Stagger",
+        "hunterPursuitSpRecovery": "Pemulihan SP Hunter Pursuit",
+        "ultimateEnergyGain": "Perolehan Energi Ultimate"
+      },
+      "name": "Heartstake Thorn",
+      "description": "PEMICU KOMBO: Saat <#ba.fireinflict>Heat Infliction</> musuh <#ba.consume>dipakai</> atau <#ba.absorb>diserap</>.\nMelancarkan gerakan melejit ke belakang yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger",
+        "spRecovery": "Pemulihan SP",
+        "hunterPursuitStateDurationS": "Durasi Kondisi Hunter Pursuit (dtk)"
+      },
+      "name": "Sanguine Downpour",
+      "description": "Camille terbang ke langit, menghujani target dengan rentetan tombak, dan melanjutkannya dengan serangan sapuan. Serangan ini akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada target yang terhantam serta memulihkan sejumlah SP. \nSetelah menggunakan ultimate, skill tarung Camille untuk sementara akan berubah menjadi <@ba.key>Hunter Pursuit</>.\n<@ba.key>Hunter Pursuit</>: Dianggap sebagai skill kombo dan penggunaannya tidak butuh SP. Skill ini adalah serangan melejit yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP."
+    },
+    "indicator": {
+      "levels": [
+        "Agility Operator +10.",
+        "Agility Operator +15.",
+        "Agility Operator +15.",
+        "Agility Operator +20."
+      ],
+      "name": "Skirmisher"
+    },
+    "talent1": {
+      "levels": [
+        "Skill kombo <@ba.key>Heartstake Thorn</> meningkat: Jika menghantam musuh selagi <@ba.key>Firefang Vesperwing</> <@ba.key>terbang mengitarinya</>, Camille akan mendapatkan pemulihan HP untuk dirinya sendiri sebesar <@ba.heal>[{heal_base:0} + Intellect × {heal_sub_multi:0.##}]</> dan mendapatkan buff <#ba.combo>Link</> selama {combo_duration} detik. Saat menggunakan <@ba.key>Hunter Pursuit</>, efek ini bisa aktif bahkan jika menghantam target saat Vesperwing <@ba.key>tidak sedang terbang mengitarinya</>.",
+        "Skill kombo <@ba.key>Heartstake Thorn</> meningkat: Jika menghantam musuh selagi <@ba.key>Firefang Vesperwing</> <@ba.key>terbang mengitarinya</>, Camille akan mendapatkan pemulihan HP untuk dirinya sendiri sebesar <@ba.heal>[{heal_base:0} + Intellect × {heal_sub_multi:0.##}]</> dan mendapatkan buff <#ba.combo>Link</> selama {combo_duration} detik. Saat menggunakan <@ba.key>Hunter Pursuit</>, efek ini bisa aktif bahkan jika menghantam target saat Vesperwing <@ba.key>tidak sedang terbang mengitarinya</>."
+      ],
+      "name": "Hunter of Transgression"
+    },
+    "talent2": {
+      "levels": [
+        "Setiap kali Camille mendapatkan pemulihan HP melalui penggunaan skill, dia akan mendapatkan <@ba.fire>Heat DMG Dealt</> <@ba.vup>+{atk_up:0%}</> (tumpukan maks: 5) selama {duration:0} dtk, sedangkan operator lain dalam tim akan mendapatkan <@ba.vup>{teammate_rate:0%}</> dari efek ini. Efek ini bisa mencapai 5 tumpuk. \n<@ba.info>Jika Camille sudah mencapai HP maks, setiap aktivasi akan memberikan 2 tumpuk efek ini.</>",
+        "Setiap kali Camille mendapatkan pemulihan HP melalui penggunaan skill, dia akan mendapatkan <@ba.fire>Heat DMG Dealt</> <@ba.vup>+{atk_up:0%}</> (tumpukan maks: 5) selama {duration:0} dtk, sedangkan operator lain dalam tim akan mendapatkan <@ba.vup>{teammate_rate:0%}</> dari efek ini. Efek ini bisa mencapai 5 tumpuk. \n<@ba.info>Jika Camille sudah mencapai HP maks, setiap aktivasi akan memberikan 2 tumpuk efek ini.</>"
+      ],
+      "name": "Bloodfount Revival"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +30%"
+      ],
+      "name": "Hemo-Vitreography"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Kabin Manufaktur, efisiensi produksi material EXP operator akan meningkat sebesar +30%"
+      ],
+      "name": "Agaš’mekanaz’s Manual"
+    },
+    "files": {
+      "main": "NAMA SANDI: Camille \nGENDER: Laki-laki \nAUTENTIKASI: Seš’qa \nTANGGAL LAHIR: 20 November \nRAS: Sarkaz \n[STATUS INFEKSI ORIPATI] \nNegatif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Sangat Baik \nKEMAMPUAN TEMPUR: Standar \nKECERDASAN TAKTIS: Standar \nASIMILASI ORIGINIUM ARTS: Luar Biasa \n\nPertanyaan pemeriksaan sudah dikirimkan kepada Seš’qa. Tapi, belum bisa dipastikan apa pengaruh pasti tindakan berbagi darah terhadap Asimilasi Originium Arts Camille. \n— Seorang operator Sarkaz",
+      "humanResources": "Camille Arno, Agaš’mekanaz (Penjaga Kebijaksanaan) dari Seš’qa, ingin bermitra dengan Endfield Industries dalam kapasitas perorangan. Dengan rekomendasi dari Endministrator, dia kini menjadi anggota tim Divisi Teknologi Spesialis. \n\nOrang tua Operator Camille adalah anggota ekspedisi ilmiah gabungan dari Terra. Dia sendiri lahir dan besar di Seš’qa. Tapi, karena kebutuhan kerja serta pengalaman terdahulunya, Camille sudah bertahun-tahun tinggal di luar kota apung itu. \nCamille memang mengaku sedang “memburu” saudaranya yang merupakan seorang penjahat, tapi curriculum vitae-nya yang kosong justru menunjukkan bahwa dia diam-diam bertukar peran antara “pemburu” dan “mangsa”. Seluruh data relasi sosialnya, latar belakang pribadinya ... atau “hidupnya” (jika kita menggunakan definisi yang lebih luas) sudah hancur sepanjang beberapa dekade. \nSaat aku menyinggung hal ini dalam percakapan, Camille mengalihkan pandangannya ke langit-langit dan menatap ke suatu titik. Lalu, dia memecah keheningan dengan serangkaian metafora dan majas. Salah satunya, yang menurutku paling mengesankan, adalah saat dia menggambarkan dirinya seperti “bandul yang berayun tanpa arah”. \nDia melanjutkan dengan mengatakan bahwa dulu, suatu hari, waktu baginya telah berhenti berdetak. \nSetelah percakapan itu berakhir, aku pergi dengan satu pelajaran terpenting saat berinteraksi dengan operator ini—kalau tak ingin terpaksa repot mengelola emosi yang berlebihan, JANGAN membahas tentang saudaranya. \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "DOKUMEN: Panduan Wisata Talos-II: Seš’qa, Edisi 3 \nHari Pameran Seš’qa telah tiba! Apa yang sebaiknya dilakukan oleh wisatawan yang cerdas? Mengunjungi toko utama Witching Hour? Membeli barang edisi terbatas yang tidak tersedia di toko-toko TGCC? Menikmati minuman lezat di Bar Rumah Kaca? Mencari studio tukang sihir yang tersembunyi di gang-gang gelap? Ada begitu banyak yang bisa dilakukan di kota apung ini. Panduan terbaru kami menawarkan pilihan rahasia yang lebih bernuansa: memesan kunjungan ke rumah lindung milik seorang Agaš’mekanaz, atau Penjaga Kebijaksanaan. \nDulu, aku menganggap para Penjaga ini adalah kelompok misterius yang berbahaya dan tak kenal belas kasihan, yang bekerja di balik bayang-bayang. Aku yakin banyak pembaca juga beranggapan sama denganku. Penyelenggara Hari Pameran belakangan ini mungkin berniat mengubah stereotip ini karena mereka menambahkan lebih banyak kegiatan bertema Penjaga ke dalam agenda agar kita bisa belajar tentang kontribusi dan karya positif jangka panjang mereka. \nPemanduku adalah seorang pensiunan Penjaga. Dia seorang Goliath yang ramah dan sabar, sama sekali tak seperti Agaš’mekanaz yang dingin dan tak kenal ampun seperti yang kubayangkan. Dia bilang bahwa setelah Jakub Meissen mengkhianati Seš’qa, kota itu mengalami krisis kepercayaan, walaupun peristiwa itu juga menghancurkan komunitas Sarkaz di Talos-II. Agar kejadian seperti itu tak terulang lagi, para pemimpin Seš’qa mengumpulkan anggota-anggota terbaik mereka dan mendirikan lembaga Agaš’mekanaz. Fokus mereka adalah menangani kejahatan berbahaya yang dilakukan oleh atau yang ditujukan untuk mengincar kaum Sarkaz. \nKami menghabiskan satu jam berikutnya dengan berjalan riang melewati dinding berisi barang bukti, lemari arsip, dan etalase yang memajang berbagai peralatan sihir khusus. Dari percakapan kami, aku jadi tahu beberapa rahasia. Tantangan terbesar yang mungkin dihadapi Penjaga adalah kejahatan yang dilakukan oleh kerabat mereka sendiri. Umumnya, ras lain akan enggan menugaskan kerabat tersangka untuk menangani kasus semacam itu, tapi kaum Sarkaz justru mengambil pendekatan yang sebaliknya. Banyak suku mereka diberkati dengan umur panjang dan penguasaan berbagai Seni Originium. Karena itu, kerabat yang punya ikatan darah ternyata juga bisa menjadi penangkal untuk mengatasi penjahat Sarkaz. \n“Karena itulah banyak Agaš’mekanaz menderita dari sisi emosi. Sebagian ragu apakah kami bisa tetap bertindak adil dan jujur, tapi sejauh ini belum ada anggota kami yang mengingkari prinsip semata demi membela kerabatnya,” ujar sang Penjaga. \n“Apa kau pernah terpaksa ... berhadapan dengan keluargamu sendiri?” Aku tak mampu menahan pertanyaanku ini. \nSesaat, kukira emosinya akan runtuh, tapi dia hanya mendongak ke satu-satunya jendela langit-langit di rumah lindung itu. Setelah hening sejenak, dia menata perasaannya dan bersikap biasa lagi. “Aku menggunakan meriam tangan. Meriam miliknya.” \nMelalui jendela langit-langit itu, aku bisa melihat sisa-sisa cahaya senja memantul di awan. Kembang api meletus, karya rumit sihir yang dirangkai oleh para tukang sihir. Seš’qa menikmati satu hari lagi yang damai.",
+      "file2": "DOKUMEN: Rekaman Pemantauan Lembah IV \n1. Pusat Pemrosesan Produk Sampingan Originium (P3S), Pintu masuk: Gambar jelas. Ada operator Endfield. Tidak ada pemandangan aneh. \n2. Asrama Pekerja, tenggara: Rekan kru UWST menjalankan kegiatan sehari-hari. Tidak ada pemandangan aneh. \n3. Markas Hub: Camille Arno teridentifikasi. Kamera memperbesar tampilan untuk mempermudah pelacakan. \n4. Tambang Batu Aburrey: Sinyal hilang. Dicurigai ada kerusakan pada kamera yang terpasang pada Landbreaker; entitas tersebut diserang dan disingkirkan oleh musuh. \n5. Kamp Transisi Jembatan: Beberapa Landbreaker pergi atau ikut dengan rombongan yang mundur. Kamera hanya merekam sejumlah video yang tampak buram. Posisi akhir sudah ditinggalkan. \n6. Tempat Parkir Serikat, Pembangkit Listrik Originium: Semua kamera berfokus pada Camille Arno dan Endministrator dari Endfield Industries. Memantau aktivitas kedua orang itu. \n...... \nLaporan ini membuktikan bahwa ada pihak tak dikenal yang memasang sistem pemantauan yang sangat tersembunyi di seluruh wilayah Lembah IV. \n\nTak seorang pun mengira bahwa Endministrator kembali dari perjalanan ini dengan membawa rekaman video berdurasi beberapa ribu jam. Temuan ini, yang ditemukan di sebuah fasilitas bawah tanah yang terbengkalai, membuat semua analis terkejut. Ini membuktikan bahwa ada sebuah organisasi yang bergerak di tempat-tempat tersembunyi di Lembah IV, diam-diam mengamati setiap tindakan semua orang, dan menarik benang-benang tersembunyi untuk mengendalikan wilayah itu. \nSaat para analis menyadari bahwa kamera-kamera itu ditanamkan di dalam tubuh Landbreaker untuk menghindari deteksi (Camille sempat menyebut bagaimana pelakunya meninggalkan mereka tanpa ragu), mereka pun bisa memahami alasan Seš’qa memilih menugaskan seorang Agaš’mekanaz untuk menangani masalah ini. Untungnya, setelah Camille Arno tiba di Lembah IV, semua kamera dialihkan untuk memantau pergerakan dan aktivitasnya. Periode pemantauan ini kebetulan kurang lebih bersamaan dengan aktivitas Endfield di wilayah itu. Karenanya, cukup masuk akal jika kita berasumsi bahwa tidak ada intel penting yang bocor. Karena tidak ada kebocoran informasi ini jugalah, tak seorang pun operator kita menyadari adanya pemantauan diam-diam yang melibatkan pihak ketiga ini. \nSetelah menerima rekaman video itu, para operator divisi teknologi menelusuri asal-usulnya hingga ke kumpulan data yang lebih lama (yang kini sudah dihancurkan) dan menyadari bahwa organisasi itu sudah mulai melacak Camille sejak beberapa dekade lalu. Walau sang Penjaga itu sendiri menanggapi temuan ini dengan santai dan tampak seakan sudah memperkirakan hal itu, para teknisi bersimpati kepadanya dan berjanji akan memberikan serangkaian peningkatan pada perlengkapannya yang dirancang untuk melawan metode pemantauan terselubung. Saat para analis menyampaikan temuan mereka kepada Camille, dia hanya bersandar pada dinding sambil menatap layar cukup lama tanpa bicara, hingga akhirnya dia mendongak dan bertanya, “Coba bayangkan, andaikan kalian berada di sisi lain kamera pemantau, menatap seseorang yang kalian kenal ... kira-kira apa yang paling mungkin terlintas di pikiran kalian?\" \nJawaban dari para analis itu bermacam-macam. Camille tak menanggapi satu pun, dan tetap terdiam cukup lama. Akhirnya, dia menuliskan suatu catatan dalam laporan temuan itu. \n“Sangat mirip, tapi sangat bertentangan pada dasarnya. Kenapa?” \nDia menginginkan jawaban atas pertanyaan itu. Dia membutuhkannya.",
+      "file3": "Camille selalu mengira emosinya tersembunyi dengan baik. Dibandingkan operator lain yang sama sekali tak menutupi apa-apa, upayanya itu sudah cukup bagus. Sayangnya, gerakan tanpa sadar dan bahasa tubuh yang nyaris tak terlihat tetap saja membuat emosinya ketahuan. \nSaat frustrasi, Camille biasanya akan menundukkan pandangannya dan memperhatikan retakan di tanah, kalau ada, atau tanpa sadar menggosok tulang belikatnya. Saat ingin menghindari kontak, dia akan memindahkan tumpuan berat tubuhnya ke kaki kanan agar lebih cepat kalau ingin kabur seketika. Saat ragu atau merasa tak nyaman, jari-jarinya akan tanpa sadar mengusap kunci tua dan kuno yang tergantung di pinggangnya. \nBanyak operator Endfield punya benda atau kenang-kenangan yang mereka jadikan fokus. Misalnya, Yvonne menganggap Frost-e-Bytee sebagai teman dekat, Rossi punya belati, sedangkan Da Pan selalu memanggul wajan ferrium. Tapi, Camille tak seperti mereka. Kalau ada yang bertanya tentang kuncinya, dia akan langsung menarik tangannya seakan-akan kunci itu berubah menjadi besi panas yang membara. Dia akan mengatupkan bibirnya rapat-rapat dan tak mau menjawab pertanyaan. \nAhli mesin yang terampil bisa mengenali bahwa kunci itu dibuat secara manual dari suatu benda yang menyerupai silinder kotak musik, walau Camille sendiri tak tahu apa-apa tentang kerajinan semacam itu. Dia tak punya rumah atas namanya sendiri, dan tak seorang pun tahu apa sebenarnya yang bisa dibuka oleh kuncinya itu. \nSeiring waktu, semua orang jadi lebih paham dan sadar bahwa lebih baik mereka tak bertanya tentang benda itu. \nPada akhirnya, Camille mengungkapkan asal-usul kunci itu dalam sebuah percakapan santai. Kunci itu adalah hadiah yang dibuat sendiri oleh adik laki-lakinya (orang yang kemudian juga memutuskan semua hubungan dengannya). Benda itu adalah bagian dari rumah mereka di Seš’qa, yang kemudian dijual oleh Camille setelah terjadinya suatu insiden dan setelah itu tak pernah dikunjunginya lagi. Kunci itu hanyalah benda hiasan, dan kebiasaannya menyentuh kunci itu berakar dari kerinduan ... dan mungkin sekilas rasa hampa yang tak bisa dijelaskan. Setelah mengatakan semua ini, Camille memasukkan kunci itu ke salah satu sakunya. \nYang diingatnya adalah rasa sakit yang panas, seolah sepotong daging tercabik dari tubuhnya, serta masa lalu yang gelap dan melelahkan yang terus berlanjut tanpa akhir. Hadiah itu diberikan saat masih ada rasa tulus. Sang Penjaga itu menghadapi dilema, dan dia tak ingin lagi diingatkan tentang hal itu. \nBeberapa hari kemudian, Camille menerima pesan di Baker dan mengunjungi kantor Endministrator. Dia disambut dengan senyuman oleh Endministrator, yang kemudian menyerahkan sebuah kunci baru ke tangannya. \n“Kunci dan gembok seperti ini agak langka, jadi butuh waktu lama untuk membuatnya,\" kata orang itu, \"aku hanya ingin kau tahu bahwa di Dijiang selalu ada pintu yang bisa kaubuka.\" \nCamille terkejut karenanya. Dia menggenggam kunci itu erat-erat sambil memalingkan wajah. Dia mencoba menyusun kata-kata, tapi yang keluar dari mulutnya justru seperti suara seekor burung yang tercekik karena lehernya terjepit besi. Pada akhirnya, dia hanya berhasil mengucapkan satu frasa yang nyaris tak terdengar, “Terima kasih.” \nTak semua orang bisa memahami bahasa tubuh Camille, tapi semua orang tahu bahwa bunyi gemerincing kunci baru yang berbenturan dengan kunci lama itu terdengar penuh sukacita, seperti perasaan Camille pada saat itu.",
+      "file4": "DOKUMEN: Naskah yang Robek \nBiasanya, cermin pertama yang dilihat oleh bayi adalah mata ibunya. Ibu akan menatapmu sambil berbisik lembut, “Selamat datang di dunia ini.” Kamu membuka mata untuk membalas tatapannya, dengan fokus seperti seorang nakhoda yang berusaha menyeberangi lautan. Setelah kilapan basah itu memudar, kamu akan melihat dirimu sendiri terpantul di matanya. \nKuat, lemah, penuh kebencian, indah, murni, ternoda .... Kamu mengenali pantulan di cermin itu, pantulan dirimu sendiri. \nTapi, bagaimana kalau cermin pertamamu bukanlah ibumu? Bagaimana kalau kamu lebih dulu membuka mata sebelum mengeluarkan tangisan pertamamu? Lautan di sekitarmu bergelombang seperti buaian yang berayun, dan seseorang menekan jari-jarimu. Rasanya risih tapi juga menenangkan. Kamu tidak tahu siapa orang itu, tapi kamu mengintip melalui cairan keruh, melihat sepasang mata lain yang samar, dan melihat pantulan dirimu di dalamnya. Saat itulah, sesuatu yang lebih cepat dari kilat menembus jiwamu. \nDia lahir bersamamu. Kalian bagaikan sahabat kental, tapi selalu saja bertengkar dan berkelahi. Kamu tak bisa menahan diri untuk menatap ke dalam matanya demi melihat pantulan dirimu sendiri .... Dia adalah aturan dan tolok ukur yang menjadi pembanding dirimu, sekaligus perantara yang membuatmu bisa mereguk dunia. Di sisi lain, dia bergantung kepadamu, menghormatimu, tapi sekaligus iri kepadamu. Hari demi hari berlalu, dan pantulan dirimu di matanya menjadi makin sempurna. \nLalu, tibalah hari itu. Retakan pertama muncul pada cermin. Retakan itu menyebar, dan cermin pun hancur. Pantulanmu menghilang. Badai turun, takdir bergumam, dan lautan surut kembali ke kedalaman. Kamu mendapatkan luka yang tak akan pernah sembuh, kehilangan separuh jiwamu, dan terpaksa mengangkat senjata melawannya. Itulah satu-satunya cara untuk menembus kebencian membara yang lebih dalam daripada cinta, dan menyatukan yang telah hancur agar utuh kembali. \nBahkan saat itu pun, kamu masih belum juga menyadari—\n—bahwa kamulah cermin pertama baginya. \n\nDOKUMEN: Kliping Koran yang Sudah Usang \nLandbreaker Jarah Kota - Seš’qa Berencana Dirikan Organisasi Antisihir \nPengkhianat sekaligus pembelot kota apung, Jakub Meissen, dan kawanan Landbreaker penjarah yang dipimpinnya belakangan ini menjadi ancaman keamanan besar bagi Sentrapolis. Pasukan Jakub telah menduduki dan mengubah sebuah ladang Originium menjadi pangkalan operasi mereka, lalu mengirimkan kelompok-kelompok penjarah untuk menyebarkan lebih banyak Originium sekaligus menjarah. \nBaru dua malam yang lalu, sebuah kota di Pinggiran Sentrapolis diserang oleh kawanan penjarah yang dipimpin oleh seorang Vampir yang menjadi tangan kanan Jakub. Kota itu, yang berada di wilayah yang belum diduduki oleh faksi Talos, hanya punya pertahanan yang lemah. Tapi, seorang Vampir lain dari Seš’qa memegang peran penting dalam menggagalkan serangan itu. Berbekal pengetahuan tentang ilmu sihir Sarkaz, sang Vampir pembela ini menyabotase perlengkapan militer kawanan penjarah itu dan menusukkan senjatanya ke dada si pemimpin serangan sehingga si pemimpin pun terpaksa memerintahkan pasukannya untuk mundur. Saat ini, pemimpin kawanan penjarah itu bersembunyi, dan Seš’qa terus melakukan pengawasan ketat untuk melacaknya. \nSeš’qa menganggap pengkhianatan Jakub sebagai tanggung jawabnya. Berita terbaru mengungkapkan bahwa para pemimpin kota apung sedang merencanakan pembentukan sebuah organisasi yang didedikasikan untuk memerangi kejahatan yang melibatkan sihir Sarkaz serta menangkap para pengkhianat."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Skill Tarung <@ba.key>Blazing Exorcism</> meningkat: Skill ini akan mengakibatkan <#ba.weak>Weakness</> <@ba.vup>+{0-weak_scale:0%}</> dan <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwing</> punya durasi <@ba.key>terbang</> <@ba.vup>{bat_duration:0}</> dtk lebih lama.",
+      "name": "Flame-Anointed Lance"
+    },
+    "potential2": {
+      "description": "Agility <@ba.vup>+{Agi:0}</>, Intellect <@ba.vup>+{Wisd:0}</>.",
+      "name": "Tracker of Witch Scent"
+    },
+    "potential3": {
+      "description": "Skill kombo <@ba.key>Heartstake Thorn</> meningkat: Durasi cooldown menjadi <@ba.vup>{coolDown:0}</> dtk. <@ba.key>Heartstake Thorn</> dan <@ba.key>Hunter Pursuit</> meningkat: Pengganda DMG meningkat menjadi <@ba.vup>{atk_scale_1_1:0.0}</> kali nilai aslinya; Pemulihan SP meningkat menjadi <@ba.vup>{atb:0.##}</> kali nilai aslinya.",
+      "name": "Thorned Incapacitor"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Sanguine Downpour</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Agašlehem’s Sigil"
+    },
+    "potential5": {
+      "description": "Talent <@ba.key>Bloodfount Revival</> meningkat: Peningkatan <@ba.fire>Heat DMG</> per Tumpuk <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Sanguine Convention"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Kembali ke Keabadian",
+      "author": "およ",
+      "description": "Teruslah berjalan dalam lingkaran tanpa akhir hingga kamu menemui kehancuran di titik akhir, lalu menjadi utuh kembali."
+    },
+    "potential3": {
+      "name": "Awal yang Membanggakan",
+      "author": "起ID无能",
+      "description": "Masa lalu ibarat rintik hujan. Angkat kepalamu dan hadapilah agar tidak tumpah dari hatimu."
+    },
+    "potential5": {
+      "name": "Pelepas Bayangan",
+      "author": "se_eeeee",
+      "description": "Dia membebaskan diri dari bayangan gelap yang melekat padanya, seperti tanaman rambat berduri yang menyeruak dari bumi."
+    }
+  }
+}

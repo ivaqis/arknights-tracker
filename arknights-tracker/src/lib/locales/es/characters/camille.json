@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Rec. de PH",
+      "Imp. de cal.",
+      "Enlace"
+    ],
+    "behaviourHateTags": [
+      "Naturaleza"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido (SOLO SISTEMA, no visible dentro del juego)"
+    ],
+    "blocTag": "Seš’qa",
+    "expertTags": [
+      "Análisis situacional",
+      "Agilidad"
+    ],
+    "giftPreferTags": [
+      "Selección de los Espadachines de Wuling"
+    ],
+    "hobbyTags": [
+      "Creatividad",
+      "Tecnología"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+      },
+      "name": "Absolución sanguínea",
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo",
+        "firefangVesperwingDurationS": "Duración de Vesperala de colmillo ígneo (s)",
+        "weaknessEffect": "Efecto de debilidad",
+        "heatSusceptibility": "Susceptibilidad al calor",
+        "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión"
+      },
+      "name": "Exorcismo ardiente",
+      "description": "Camille invoca <@ba.key>Vesperalas de colmillo ígneo</> que vuelan hacia el enemigo para infligir <@ba.fire>DAÑ por calor</> y aplicar <#ba.fireinflict>Imposición de calor</> a los enemigos en una pequeña área de efecto. Las <@ba.key>Vesperalas de colmillo ígneo</> luego <@ba.key>flotan</> temporalmente alrededor del objetivo y aplican <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> a dicho objetivo mientras floten. Cuando el objetivo es derrotado, las <@ba.key>Vesperalas de colmillo ígneo</> vuelan hacia otro enemigo cercano, infligen <@ba.fire>DAÑ por calor</> y aplican <#ba.fireinflict>Imposición de calor</>, <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> al nuevo objetivo.\nGolpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</> <@ba.key>flotantes</> con la habilidad de combo de Camille provoca una explosión tras un breve retraso. Esta explosión inflige <@ba.fire>DAÑ por calor</> adicional."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo",
+        "spRecovery": "Rec. de PH",
+        "hunterPursuitDmgMultiplier": "Multiplicador de DAÑ de Persecución del cazador",
+        "hunterPursuitStagger": "Tambaleo por Persecución del cazador",
+        "hunterPursuitSpRecovery": "Recuperación de PH por Persecución del cazador",
+        "ultimateEnergyGain": "Ganancia de Energía máxima"
+      },
+      "name": "Espina clavacorazones",
+      "description": "ACTIVADOR DE COMBO: Cuando la <#ba.fireinflict>Imposición de calor</> del enemigo se <#ba.consume>consume</> o es <#ba.absorb>absorbida</>.\nRealiza un desplazamiento de regreso que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo",
+        "spRecovery": "Rec. de PH",
+        "hunterPursuitStateDurationS": "Duración del Estado de Persecución del cazador (s)"
+      },
+      "name": "Lluvia sanguínea",
+      "description": "Camille vuela hacia el cielo, desata una lluvia de lanzas y remata con un ataque de barrido. Esto inflige <@ba.fire>DAÑ por calor</> y aplica <#ba.fireinflict>Imposición de calor</> a los objetivos golpeados mientras recupera algo de PH. \nDespués de lanzar la máxima, la habilidad de batalla de Camille se transforma temporalmente en <@ba.key>Persecución del cazador</>.\n<@ba.key>Persecución del cazador</>: Se considera una habilidad de combo y no cuesta PH. Es un ataque de desplazamiento que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH."
+    },
+    "indicator": {
+      "levels": [
+        "Agilidad del operador +10.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +15.",
+        "Agilidad del operador +20."
+      ],
+      "name": "Guerrillero"
+    },
+    "talent1": {
+      "levels": [
+        "Habilidad de combo <@ba.key>Espina clavacorazones</> mejorada: Al golpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</><@ba.key> flotantes</>, Camille restaura <@ba.heal>[{heal_base:0} + Intelecto × {heal_sub_multi:0.##}]</> PV para sí y otorga un incremento de <#ba.combo>Enlace</> durante {combo_duration} s. Al usar <@ba.key>Persecución del cazador</>, este efecto puede activarse incluso al golpear a un objetivo sin Vesperalas <@ba.key>flotantes</>.",
+        "Habilidad de combo <@ba.key>Espina clavacorazones</> mejorada: Al golpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</><@ba.key> flotantes</>, Camille restaura <@ba.heal>[{heal_base:0} + Intelecto × {heal_sub_multi:0.##}]</> PV para sí y otorga un incremento de <#ba.combo>Enlace</> durante {combo_duration} s. Al usar <@ba.key>Persecución del cazador</>, este efecto puede activarse incluso al golpear a un objetivo sin Vesperalas <@ba.key>flotantes</>."
+      ],
+      "name": "Cazador de transgresiones"
+    },
+    "talent2": {
+      "levels": [
+        "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{atk_up:0%}</> (Máx. acumulaciones: 5) durante {duration:0} s, mientras que los demás operadores del equipo obtienen <@ba.vup>{teammate_rate:0%}</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>",
+        "Cada vez que Camille restaura PV con una habilidad, obtiene <@ba.fire>DAÑ por calor infligido</> <@ba.vup>+{atk_up:0%}</> (Máx. acumulaciones: 5) durante {duration:0} s, mientras que los demás operadores del equipo obtienen <@ba.vup>{teammate_rate:0%}</> de este efecto. Este efecto puede alcanzar 5 acumulaciones. \n<@ba.info>Si Camille ya tiene sus PV Máx., cada activación otorga 2 acumulaciones del efecto.</>"
+      ],
+      "name": "Resurgimiento de la fuente de sangre"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +20 %",
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +30 %"
+      ],
+      "name": "Hemovitreografía"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +20 %",
+        "Asignar a la Cabina de manufactura para otorgar eficiencia de producción de materiales de EXP de operador en un +30 %"
+      ],
+      "name": "Manual de Agaš'mekanaz"
+    },
+    "files": {
+      "main": "NOMBRE CÓDIGO: Camille \nGÉNERO: Masculino \nAUTENTICACIÓN: Seš'qa \nFecha de nacimiento: 20 de noviembre \nRAZA: Sarkaz \n[ESTADO DE INFECCIÓN POR ORIPATÍA] \nOripatía negativa, según los informes del examen médico. \n\n[EXAMEN FÍSICO INTEGRAL] \nFUERZA FISIOLÓGICA: Excelente \nHABILIDAD DE COMBATE: Estándar \nPERICIA TÁCTICA: Estándar \nASIMILACIÓN DE ARTES DE ORIGINIO: Excepcional \n\nYa se han hecho averiguaciones en Seš'qa. Sin embargo, aún no se sabe con certeza cómo influye exactamente el hecho de compartir sangre en la asimilación de las Artes de Originio por parte de Camille. \n— Un operador Sarkaziano",
+      "humanResources": "Camille Arno, Seš'qa's Agaš'mekanaz (Guardián de la sabiduría), buscó asociarse con Endfield Industries a título personal. Tras una recomendación de Endministrator, actualmente ocupa un puesto dentro de la División de tecnología especializada. \n\nLos padres del operador Camille formaban parte de la expedición científica conjunta proveniente de Terra. Él mismo nació y creció en Seš'qa. Sin embargo, debido a las exigencias de su trabajo y a sus experiencias pasadas, Camille ha vivido fuera de la ciudad flotante durante muchos años. \nAunque Camille afirma estar “cazando” a un familiar criminal, su larguísimo pero vacío currículum vitae sugiere que, en silencio, ha intercambiado los papeles de “cazador” y “presa”. Todo el conjunto de sus relaciones sociales, sus antecedentes personales... o su “vida”, si adoptáramos una definición más amplia, ha sido destruido por completo a lo largo de varias décadas. \nCuando saqué esto a colación durante la conversación, Camille desvió la mirada hacia el techo y se quedó viendo una mancha. Luego rompió el silencio con una catarata de metáforas y figuras retóricas. Una de ellas, la que me pareció más impactante, fue cuando se describió a sí mismo como “un péndulo trabajando en vano”. \nContinuó diciendo que hubo cierto día en que su tiempo dejó de correr. \nCuando terminó la conversación, me fui con la lección más importante al tratar con este operador: si deseas evitar la excesiva tarea de gestionar sus emociones, NO hables de su hermano. \n— Martin Marvin Malen, asistente, División de RR. HH., Endfield Industries",
+      "file1": "DOCUMENTO: Guía del turista de Talos-II: Seš'qa, edición 3 \n¡Ya llegó la Jornada de puertas abiertas de Seš'qa! ¿Qué debería hacer un turista sensato? ¿Visitar la tienda insignia de Hora de brujas? ¿Comprarte una edición limitada de algo que no se ofrece en los estantes de las tiendas de la C.G.C.T.? ¿Tomarte algo rico en el Bar de Cristal? ¿Buscar talleres secretos de artesanas brujas en los callejones oscuros? Hay tantísimas cosas que hacer en la Ciudad flotante. Nuestra guía más reciente te ofrece una opción secreta y matizada: reserva una visita a una casa segura de un Agaš'mekanaz, o Guardián de la sabiduría. \nYo solía considerar a estos Guardianes como un grupo misterioso de individuos peligrosos y despiadados que trabajan en las sombras. Creo que muchos lectores comparten esa opinión. Puede que los organizadores de las Jornadas de puertas abiertas recientes estén interesados en cambiar este estereotipo, ya que añadieron más actividades relacionadas con los Guardianes a la agenda para ayudarnos a conocer sus contribuciones de largo plazo y su buena labor. \nMi guía era una Guardiana retirada. Una Goliat amable y paciente, no se parecía en nada al frío e implacable Agaš'mekanaz que yo tenía en mente. Me contó que, después de que Jakub Meissen traicionó a Seš'qa, la ciudad atravesó una crisis de confianza, aunque ese hecho también devastó a las comunidades Sarkazianas de Talos-II. Para evitar que algo así volviera a ocurrir, los líderes de Seš'qa reunieron a los mejores y establecieron la oficina del Agaš'mekanaz. Su enfoque es atender crímenes maliciosos perpetrados por los Sarkaz o dirigidos contra ellos. \nPasamos la siguiente hora caminando alegremente entre muros de evidencias, archiveros y vitrinas con diversos equipos especializados de hechicería. La charla que compartimos me enseñó algunos secretos. El mayor desafío al que podría enfrentarse cualquier Guardián serían los crímenes cometidos por su propia estirpe. En términos generales, otras razas vacilarían ante la idea de poner a un pariente del sospechoso en el caso, pero los Sarkaz adoptaron el enfoque contrario. Muchas de sus tribus están bendecidas con larga vida y maestría sobre una amplia variedad de Artes de Originio. De ahí que uno de su propia estirpe unido por sangre también resulte ser el rival perfecto contra criminales Sarkazianos. \n“Por eso muchos de los Agaš'mekanaz sufren emocionalmente”. “Algunos dudan de nuestra capacidad para seguir siendo justos e imparciales, pero ninguno de nosotros ha abandonado aún sus principios por un semejante”, dijo la Guardiana. \n“¿Alguna vez te viste obligada a... cruzar espadas con tu propia familia?” No pude evitar preguntarlo. \nHubo un momento en que pensé que sus emociones podían resquebrajarse, pero alzó la mirada hacia el único tragaluz del refugio. Hubo un breve silencio antes de que ordenara sus sentimientos y recuperara la compostura. “Usé un cañón de mano. Era suyo”. \nA través del tragaluz, podía ver los últimos rayos del crepúsculo reflejándose en las nubes. Los fuegos artificiales estallaron, elaboradas obras de hechicería tejidas por las artesanas. Seš'qa ha disfrutado otro día de paz.",
+      "file2": "DOCUMENTO: Registro de monitoreo del Valle IV \n1. Centro de procesamiento de subproductos de Originio (C.P.S. de Originio), entrada: imágenes claras. Se observaron operadores de Endfield. No hubo avistamientos extraños. \n2. Dormitorios de trabajadores, sureste: miembros de la tripulación de los S.T.U.T. realizando sus actividades diarias. No hubo avistamientos extraños. \n3. La Base Central: Camille Arno identificado. La cámara hace zoom para un mejor seguimiento. \n4. Cantera Aburrey: Señal perdida. Se sospecha que la cámara fijada al Rompesuelos resultó dañada; dicha entidad fue atacada y eliminada por el enemigo. \n5. Campamento de aproximación al puente: varios Rompesuelos habían abandonado o se habían unido a la columna de retirada. Solo se captaron unos cuantos videos borrosos. La posición final ha sido abandonada. \n6. Estacionamiento unificado, Planta de energía de Originio: enfocar todas las cámaras en Camille Arno y Endministrator de Endfield Industries. Supervisar las actividades de estos dos individuos. \n...… \nEste informe prueba que una parte desconocida ha desplegado un sistema de vigilancia bien oculto por toda la región del Valle IV. \n\nNadie habría imaginado que Endministrator regresaría de este viaje con varios miles de horas de grabaciones de video. El hallazgo, encontrado en una instalación subterránea abandonada, dejó a todos los analistas en shock. Esto prueba que una organización ha estado actuando desde las sombras del Valle IV, observando en silencio cada acción de todos y moviendo hilos secretos para ejercer control sobre la región. \nCuando los analistas se dieron cuenta de que las cámaras estaban implantadas dentro de los Rompesuelos para evitar ser detectadas (Camille mencionó cómo el perpetrador los abandonó sin pensarlo dos veces), entendieron por qué Seš'qa decidió asignar a un Agaš'mekanaz a la tarea. Afortunadamente, después de que Camille Arno llegó al Valle IV, todas las cámaras fueron asignadas para monitorear sus movimientos y actividades. El periodo de monitoreo coincide con las actividades de Endfield en la región. Podemos asumir con seguridad que no se filtró ninguna pieza de información crítica. La ausencia de filtraciones también explica por qué ninguno de nuestros operadores notó la vigilancia injustificada de un tercero. \nTras recibir el registro de video, los operadores de la división técnica rastrearon el origen hasta un lote anterior de registros (ya destruido) y descubrieron que la organización había comenzado a seguir a Camille varias décadas atrás. Aunque el propio Guardián reaccionó con calma ante este hallazgo y parecía haberlo esperado, los técnicos simpatizaron con su situación y prometieron dotar su equipo de una serie de mejoras diseñadas para contrarrestar medidas de vigilancia encubierta. Cuando los analistas informaron a Camille de sus hallazgos, él simplemente se recargó en la pared y miró la pantalla en silencio durante un buen rato antes de alzar la vista y preguntar: “Digan, si estuvieran del otro lado de las cámaras de vigilancia, mirando a una persona familiar... ¿qué sería lo primero que les vendría a la mente?” \nLos analistas dieron toda clase de respuestas. Camille no respondió a ninguna y continuó en su prolongado silencio. Al final, dejó una nota escrita en el informe de la reunión. \n“Tan parecidos, y sin embargo tan divergentes en esencia. ¿Por qué?” \nQuiere la respuesta a esa pregunta. La necesita.",
+      "file3": "Camille siempre pensó que mantenía bien ocultas sus emociones. En comparación con otros operadores que no ejercían ninguna contención, hacía un buen trabajo. Desafortunadamente, movimientos involuntarios y un lenguaje corporal apenas perceptible seguían delatándolo. \nCuando se frustraba, Camille bajaba la mirada y examinaba alguna grieta en el suelo, si la había, o se frotaba inconscientemente el omóplato. Cuando desea evitar el contacto, desplaza su centro de equilibrio hacia la pierna derecha para facilitar una huida inmediata. Cuando dudaba o se sentía incómodo, sus dedos frotaban inconscientemente la vieja y antigua llave que colgaba de su cintura. \nMuchos operadores de Endfield tienen un objeto o recuerdo en el que se enfocan. Por ejemplo, Yvonne trata a Frost-e-Bytee como a un amigo cercano, Rossi tiene su daga y Da Pan siempre carga ese wok de Ferrio en la espalda. Pero Camille es distinto. Si alguien llegara a preguntarle por su llave, retiraría la mano de inmediato, como si aquello se hubiera vuelto una brasa ardiente. Mantendría los labios firmemente cerrados y se negaría a responder a la pregunta. \nMaquinistas expertos identificarían que la llave fue hecha a mano a partir de algo parecido al cilindro de una caja de música, aunque Camille no sabe nada de artesanía. El hombre no tiene bienes a su nombre y nadie sabe qué podría abrir realmente esa llave. \nCon el tiempo, todos se volvieron más prudentes y aprendieron a no preguntar por ese objeto. \nAl final, Camille confesó el origen de la llave durante una conversación casual. Era un regalo hecho personalmente por su hermano menor (el mismo que rompió toda relación con él). Formaba parte de su hogar en Seš'qa, el cual Camille vendió después de un accidente y al que nunca volvió. La llave era meramente decorativa y su costumbre de tocarla nacía de la añoranza... y quizá de una pizca de hastío inexplicable. Después de decir esto, Camille guardó la llave en uno de sus bolsillos. \nLo que recordó fue un dolor abrasador, como si le arrancaran un trozo de carne del cuerpo, y un pasado oscuro y agotador que se prolongaba sin fin. El regalo fue entregado cuando aún quedaba sinceridad. El Guardián enfrentó un dilema y ya no quería recordarlo. \nUnos días después, Camille recibió un toast en Baker y visitó la oficina de Endministrator, quien lo recibió con una cálida sonrisa y dejó una llave nueva en sus manos. \n“Llaves y cerraduras así son bastante raras, así que hacerlas tomó su tiempo”, dijo la persona, “solo quiero que sepas que la Dijiang siempre tiene una puerta que puedes abrir”. \nEso tomó a Camille por sorpresa. Cerró con fuerza los dedos alrededor de la llave y apartó el rostro. Intentó articular palabras, pero le salieron como sonidos de un ave jadeante con el cuello atrapado en un puño de hierro. Al final, solo logró soltar una frase apenas audible: “Gracias”. \nNo todos están familiarizados con el lenguaje corporal de Camille, pero todos saben que el tintineo de la llave nueva contra la vieja es alegre, como se sentía él en ese preciso momento.",
+      "file4": "DOCUMENTO: Un manuscrito roto \nEl primer espejo que ve un bebé suelen ser los ojos de su madre. Una madre te miraría y susurraría suavemente estas palabras: “Bienvenido a este mundo”. Abriste los ojos para mirarla de vuelta, con una concentración propia de un navegante que intenta cruzar un océano. Una vez que el brillo húmedo se disipó, te verías reflejado en sus ojos. \nPoderoso, débil, odioso, encantador, puro, mancillado... Reconociste el reflejo en el espejo, un reflejo de ti mismo. \n¿Pero qué pasaría si tu primer espejo no hubiera sido tu madre? ¿Y si hubieras abierto los ojos antes de emitir tu primer llanto? El océano a tu alrededor se mecía como una cuna balanceándose, y alguien presionó contra tus dedos. Se sentía molesto, pero también tranquilo. No sabías quién era esa persona, pero miraste a través de los fluidos turbios, notaste otro par de ojos borrosos y viste tu reflejo en ellos. En ese mismo instante, algo más rápido que un rayo atravesó tu alma. \nÉl nació contigo. Eran los amigos más cercanos y, aun así, siempre peleaban y discutían. No podías evitar mirar sus ojos para ver tus propios reflejos... Él era la regla y el control con los que se te medía, y el conducto mismo por el que te alimentabas del mundo. Él, por su parte, dependía de ti, te respetaba y te envidiaba. Los días pasaron y tu reflejo en sus ojos se volvió cada vez más perfecto. \nEntonces, un día, llegó. La primera grieta apareció en el espejo. Las grietas se extendieron y el espejo se hizo añicos. Tu imagen había desaparecido. La tormenta descendió, los destinos murmuraron y los océanos retrocedieron hacia las profundidades. Recibiste una cicatriz que nunca sanaría, perdiste la mitad de tu alma y te viste obligado a alzar tu arma contra él. Era la única manera en que podías atravesar el odio que ardía más hondo que el amor y restaurar a la plenitud lo que se había roto. \nY en ese momento, aún no habías comprendido... \n — que tú eras su primer espejo. \n\nDOCUMENTO: Un recorte de periódico borroso \nLos Rompesuelos asaltan pueblos -- Seš'qa planea crear una Organización antihechicería \nEl traidor y desertor de la ciudad flotante, Jakub Meissen, y los asaltantes Rompesuelos que lidera se han convertido recientemente en una grave amenaza para la Franja de la Civilización. Las fuerzas de Jakub han ocupado y transformado una granja de Originio en su base de operaciones, enviando grupos de asaltantes para propagar más Originio y atacar. \nApenas dos noches antes, un pueblo en los Linderos de la Franja fue atacado por asaltantes liderados por un Vampiro que servía como lugarteniente de Jakub. El pueblo, ubicado en una zona aún no reclamada por facciones Talosianas, estaba mal defendido. Sin embargo, otro Vampiro, originario de Seš'qa, desempeñó un papel decisivo para frustrar el ataque. Armado con conocimiento de la hechicería Sarkaziana, el Vampiro defensor saboteó el equipo militar de los asaltantes y atravesó con su arma el pecho del líder del ataque, obligándolo a ordenar la retirada. Actualmente, el líder de los asaltantes se ha ocultado y Seš'qa mantiene vigilancia constante para dar con él. \nSeš'qa consideró la traición de Jakub como una responsabilidad propia. Las noticias más recientes revelaron que el liderazgo de la ciudad flotante planea crear una organización dedicada a combatir delitos relacionados con la hechicería Sarkaziana y a capturar a los traidores."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidad de batalla <@ba.key>Exorcismo ardiente</> mejorada: La habilidad aplica <#ba.weak>Debilidad</> <@ba.vup>+{0-weak_scale:0%}</> y <#ba.firevul>Susceptibilidad al calor</> <@ba.vup>+{vulnerable_scale:0%}</>. Duración de <@ba.key>flotar</> de las <@ba.key>Vesperalas de colmillo ígneo</>: <@ba.vup>+{bat_duration:0}</> s.",
+      "name": "Lanza ungida por la llama"
+    },
+    "potential2": {
+      "description": "Agilidad <@ba.vup>+{Agi:0}</>, Intelecto <@ba.vup>+{Wisd:0}</>.",
+      "name": "Rastreador del aroma de bruja"
+    },
+    "potential3": {
+      "description": "Habilidad de combo <@ba.key>Espina clavacorazones</> mejorada: Duración de tiempo de reutilización <@ba.vup>{coolDown:0}</> s. <@ba.key>Espina clavacorazones</> y <@ba.key>Persecución del cazador</> mejoradas: Multiplicadores de DAÑ aumentan <@ba.vup>{atk_scale_1_1:0.0}</> veces el original; recuperaciones de PH aumentan <@ba.vup>{atb:0.##}</> veces el original.",
+      "name": "Inhabilitador espinoso"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>Lluvia sanguínea</> mejorada: El costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Sello de Agašlehem"
+    },
+    "potential5": {
+      "description": "Talento <@ba.key>Resurgimiento de la fuente de sangre</> mejorado: Aumento de <@ba.fire>DAÑ por calor</> por acumulación <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Convención sanguínea"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Regresa al Qingbo Bailey",
+      "author": "およ",
+      "description": "Avanza a través del Ciclo sin fin hasta llegar al final destrozado, y vuelve a ser completo una vez más."
+    },
+    "potential3": {
+      "name": "Un comienzo orgulloso",
+      "author": "起ID无能",
+      "description": "El pasado es como una gota de lluvia. Levanta la cabeza para enfrentarlo, para que no se derrame fuera de tu corazón."
+    },
+    "potential5": {
+      "name": "Ruptura de sombras",
+      "author": "se_eeeee",
+      "description": "Se liberó de la sombra oscura que se aferraba a él, como una enredadera espinosa que brotó de la tierra."
+    }
+  }
+}

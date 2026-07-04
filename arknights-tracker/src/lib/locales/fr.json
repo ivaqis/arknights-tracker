@@ -152,7 +152,8 @@
     "weap-special": "Arme Événement",
     "weapon-all": "Bannières d'armes",
     "joint": "Festival de Radiance",
-    "weponbox_1_3_1": "Tirage de nœud écarlate"
+    "weponbox_1_3_1": "Tirage de nœud écarlate",
+    "weponbox_1_3_2": "Tirage de teinte écarlate"
   },
   "import": {
     "title": "Importer l'Historique de Recrutement",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "Tirage du feu des forges",
     "weponbox_1_2_3": "Tirage du marcheur alerte",
     "special_1_3_1": "Poings sans regrets",
-    "weponbox_1_3_1": "Tirage de nœud écarlate"
+    "weponbox_1_3_1": "Tirage de nœud écarlate",
+    "special_1_3_2": "Effaceur de péché",
+    "weponbox_1_3_2": "Tirage de teinte écarlate"
   },
   "pages": {
     "home": "Accueil",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "Parer à toute éventualité",
     "seatchForSwordVaultDale": "Recherche du Val du caveau des lames",
     "monumentalEtchingDirgeOfGrief": "Gravure monumentale : mélopée lugubre",
-    "umbralMonument": "Monument de l'ombre"
+    "umbralMonument": "Monument de l'ombre",
+    "peacekeepersNocturneSignIn": "Connexion - Nocturne du pacificateur"
   },
   "mouths": {
     "january": "Janvier",

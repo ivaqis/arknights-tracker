@@ -87,22 +87,20 @@
     });
 
   $: activeEvents = rawEvents
-    .filter((e) => {
-      const start = parseWithServerOffset(e.startTime);
-      const end = e.endTime
-        ? parseWithServerOffset(e.endTime)
-        : new Date(9999, 11, 31);
-      return now >= start && now <= end;
+    .map((e) => {
+      const isAsia = currentServerId === "2";
+      const displayStartTime = isAsia && e.startTimeAsia ? e.startTimeAsia : e.startTime;
+      const displayEndTime = isAsia && e.endTimeAsia ? e.endTimeAsia : e.endTime;
+      return {
+        ...e,
+        displayStartTime,
+        displayEndTime,
+        startTimeMs: parseWithServerOffset(displayStartTime).getTime(),
+        endTimeMs: displayEndTime ? parseWithServerOffset(displayEndTime).getTime() : Infinity,
+      };
     })
-    .sort((a, b) => {
-      const endA = a.endTime
-        ? parseWithServerOffset(a.endTime).getTime()
-        : Infinity;
-      const endB = b.endTime
-        ? parseWithServerOffset(b.endTime).getTime()
-        : Infinity;
-      return endA - endB;
-    });
+    .filter((e) => now.getTime() >= e.startTimeMs && now.getTime() <= e.endTimeMs)
+    .sort((a, b) => a.endTimeMs - b.endTimeMs);
 
   let currentBannerIndex = 0;
   let bannerInterval;
@@ -253,7 +251,7 @@
       if (!isAPerm && isBPerm) return -1;
 
       if (!isAPerm && !isBPerm) {
-        return new Date(a.endTime).getTime() - new Date(b.endTime).getTime();
+        return a.endTimeMs - b.endTimeMs;
       }
 
       return 0;
@@ -457,8 +455,8 @@
                       {$t(event.title) || event.title}
                     </div>
                   </div>
-                  {#if event.endTime && event.type !== "inGamePermanent"}
-                    {@const diff = parseWithServerOffset(event.endTime) - now}
+                  {#if event.displayEndTime && event.type !== "inGamePermanent"}
+                    {@const diff = parseWithServerOffset(event.displayEndTime) - now}
                     {@const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24))}
                     {@const isEndingSoon = daysLeft <= 3 && daysLeft >= 0}
 
@@ -477,7 +475,7 @@
                           ? 'text-orange-300'
                           : 'text-white'} font-nums leading-none"
                       >
-                        {formatTimeLeft(event.endTime)}
+                        {formatTimeLeft(event.displayEndTime)}
                       </span>
                     </div>
                   {/if}

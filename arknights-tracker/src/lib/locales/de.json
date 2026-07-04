@@ -152,7 +152,8 @@
     "weap-special": "Event-Waffe",
     "weapon-all": "Waffenbanner",
     "joint": "Feier der Exzellenz",
-    "weponbox_1_3_1": "Scharlachknoten-Ausgabe"
+    "weponbox_1_3_1": "Scharlachknoten-Ausgabe",
+    "weponbox_1_3_2": "„Blutrot“-Ausgabe"
   },
   "import": {
     "title": "Rekrutierungsverlauf importieren",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "Hüttenfeuer-Ausgabe",
     "weponbox_1_2_3": "Schnellschreiter-Ausgabe",
     "special_1_3_1": "Fäuste ohne Reue",
-    "weponbox_1_3_1": "Scharlachknoten-Ausgabe"
+    "weponbox_1_3_1": "Scharlachknoten-Ausgabe",
+    "special_1_3_2": "Sündentilger",
+    "weponbox_1_3_2": "„Blutrot“-Ausgabe"
   },
   "pages": {
     "home": "Home",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "Krisenbereitschaft",
     "seatchForSwordVaultDale": "Die Suche nach dem Tal des Schwertverlieses",
     "monumentalEtchingDirgeOfGrief": "Monumentales Ätzen: Klagegesang",
-    "umbralMonument": "Schattenmonument"
+    "umbralMonument": "Schattenmonument",
+    "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung"
   },
   "mouths": {
     "january": "Januar",

@@ -33,7 +33,8 @@
         .sort((a, b) => a.order - b.order)
   ];
 
-  let activeTab = "total";
+  export let activeTab = "total";
+  export let showTabs = true;
   $: localStore = $pullData[activeTab] || { pulls: [], stats: {} };
   $: localStats = localStore.stats || {};
   $: localTotal = localStore.pulls?.length || 0;
@@ -306,19 +307,21 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-2 mt-2">
-      {#each ratingTabs as tab}
-        <Button
-          variant="roundSmall"
-          color={activeTab === tab.id ? "black" : "gray"}
-          className={
-            (activeTab === tab.id ? "shadow-md " : "opacity-70 hover:opacity-100 ")
-          }
-          onClick={() => (activeTab = tab.id)}
-        >
-          {$t(tab.i18nKey) || tab.id}
-        </Button>
-      {/each}
-    </div>
+    {#if showTabs}
+      <div class="flex flex-wrap gap-2 mt-2">
+        {#each ratingTabs as tab}
+          <Button
+            variant="roundSmall"
+            color={activeTab === tab.id ? "black" : "gray"}
+            className={
+              (activeTab === tab.id ? "shadow-md " : "opacity-70 hover:opacity-100 ")
+            }
+            onClick={() => (activeTab = tab.id)}
+          >
+            {$t(tab.i18nKey) || tab.id}
+          </Button>
+        {/each}
+      </div>
+    {/if}
   </div>
 </div>

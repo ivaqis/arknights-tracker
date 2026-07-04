@@ -152,7 +152,8 @@
     "weap-special": "Senjata Event",
     "weapon-all": "Banner Senjata",
     "joint": "Festival Kegemilangan",
-    "weponbox_1_3_1": "Edisi Simpul Merah"
+    "weponbox_1_3_1": "Edisi Simpul Merah",
+    "weponbox_1_3_2": "Edisi Rona Merah Darah"
   },
   "import": {
     "title": "Impor Catatan Headhunting",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "Edisi Api Pelebur",
     "weponbox_1_2_3": "Edisi Pengembara Gesit",
     "special_1_3_1": "Fists of No Regrets",
-    "weponbox_1_3_1": "Edisi Simpul Merah"
+    "weponbox_1_3_1": "Edisi Simpul Merah",
+    "special_1_3_2": "Pembasuh Dosa",
+    "weponbox_1_3_2": "Edisi Rona Merah Darah"
   },
   "pages": {
     "home": "Beranda",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "Kesiagaan Kontingensi",
     "seatchForSwordVaultDale": "Pencarian Lembah Benteng Pedang",
     "monumentalEtchingDirgeOfGrief": "Pengukiran Monumental: Ratapan Duka",
-    "umbralMonument": "Monumen Umbra"
+    "umbralMonument": "Monumen Umbra",
+    "peacekeepersNocturneSignIn": "Sign In Nokturno sang Penjaga Perdamaian"
   },
   "mouths": {
     "january": "Januari",

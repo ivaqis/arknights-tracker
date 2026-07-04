@@ -152,7 +152,8 @@
     "weap-special": "イベント武器",
     "weapon-all": "武器バナー",
     "joint": "輝きの祝典",
-    "weponbox_1_3_1": "赫結・申請"
+    "weponbox_1_3_1": "赫結・申請",
+    "weponbox_1_3_2": "染紅・申請"
   },
   "import": {
     "title": "発掘履歴のインポート",
@@ -344,7 +345,9 @@
     "weponbox_1_2_2": "溶融・申請",
     "weponbox_1_2_3": "早駆・申請",
     "special_1_3_1": "拳に悔い無し",
-    "weponbox_1_3_1": "赫結・申請"
+    "weponbox_1_3_1": "赫結・申請",
+    "special_1_3_2": "咎の番人",
+    "weponbox_1_3_2": "染紅・申請"
   },
   "pages": {
     "home": "ホーム",
@@ -426,7 +429,8 @@
     "contingencyReadiness": "危機準備",
     "seatchForSwordVaultDale": "幽谷探剣",
     "monumentalEtchingDirgeOfGrief": "記憶の痕・怒鳴",
-    "umbralMonument": "映像の記念碑"
+    "umbralMonument": "映像の記念碑",
+    "peacekeepersNocturneSignIn": "闇夜の罪咎スタンプ"
   },
   "mouths": {
     "january": "1月",

@@ -11,6 +11,7 @@
   import Icon from "$lib/components/Icon.svelte";
   import Button from "$lib/components/Button.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
+  import MultiSelect from "$lib/components/MultiSelect.svelte";
   import { getWeaponCategory } from "$lib/utils/importUtils.js";
   import {
     recordsExcludedBannerTypes,
@@ -325,32 +326,7 @@
     fileInputExcel.click();
   }
 
-  let isBannerTypesDropdownOpen = false;
-  let isBannersDropdownOpen = false;
-
-  function clickOutside(node, params) {
-    let callback = params.callback;
-    let ignoreSel = params.ignoreSel;
-
-    const handleClick = event => {
-      if (ignoreSel && event.target.closest(ignoreSel)) {
-        return;
-      }
-      if (node && !node.contains(event.target) && !event.defaultPrevented) {
-        callback();
-      }
-    };
-    document.addEventListener('click', handleClick, true);
-    return {
-      update(newParams) {
-        callback = newParams.callback;
-        ignoreSel = newParams.ignoreSel;
-      },
-      destroy() {
-        document.removeEventListener('click', handleClick, true);
-      }
-    };
-  }
+  // ponytail: removed custom clickOutside and dropdown state variables since we are using MultiSelect
 
   const bannerTypeOptions = [
     { value: "special", label: $t("bannerTypes.special") || "Специальный наем" },
@@ -361,22 +337,7 @@
     { value: "joint", label: $t("bannerTypes.joint") || "Сияние славы" }
   ];
 
-  function toggleBannerTypeExclusion(value, isChecked) {
-    if (isChecked) {
-      if (!$recordsExcludedBannerTypes.includes(value)) {
-        $recordsExcludedBannerTypes = [...$recordsExcludedBannerTypes, value];
-      }
-    } else {
-      $recordsExcludedBannerTypes = $recordsExcludedBannerTypes.filter(x => x !== value);
-    }
-  }
 
-  $: selectedBannerTypesLabel = $recordsExcludedBannerTypes.length === 0
-    ? "Не выбрано"
-    : bannerTypeOptions
-        .filter(opt => $recordsExcludedBannerTypes.includes(opt.value))
-        .map(opt => opt.label)
-        .join(", ");
 
   function formatBannerDate(dateStr, locale) {
     if (!dateStr) return "";
@@ -418,24 +379,7 @@
     }).sort((a, b) => a.label.localeCompare(b.label));
   })();
 
-  function toggleBannerExclusion(value, isChecked) {
-    if (isChecked) {
-      if (!$recordsExcludedBanners.includes(value)) {
-        $recordsExcludedBanners = [...$recordsExcludedBanners, value];
-      }
-    } else {
-      $recordsExcludedBanners = $recordsExcludedBanners.filter(x => x !== value);
-    }
-  }
 
-  $: selectedBannersLabel = $recordsExcludedBanners.length === 0
-    ? "Не выбрано"
-    : $recordsExcludedBanners
-        .map(id => {
-          const b = banners.find(x => x.id === id);
-          return b ? ($t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name) : id;
-        })
-        .join(", ");
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -529,7 +473,7 @@
             </div>
 
             <!-- Banner Type Exclusions -->
-            <div class="relative">
+            <div class="relative z-30">
               <div class="flex justify-between items-center mb-1.5">
                 <span class="text-sm font-medium text-gray-600 dark:text-[#E0E0E0]">
                   {$t("page.recordsSettings.bannerTypeExclusions")}
@@ -544,60 +488,15 @@
                   </button>
                 {/if}
               </div>
-              <div
-                on:click|stopPropagation={() => isBannerTypesDropdownOpen = !isBannerTypesDropdownOpen}
-                on:keydown|stopPropagation={(e) => (e.key === 'Enter' || e.key === ' ') && (isBannerTypesDropdownOpen = !isBannerTypesDropdownOpen)}
-                role="button"
-                tabindex="0"
-                class="btn-trigger-banner-types w-full min-h-11 py-1.5 px-4 flex items-center justify-between border border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] dark:text-[#E0E0E0] rounded-xl hover:border-gray-300 transition text-left text-sm focus:outline-none gap-2 flex-wrap cursor-pointer"
-              >
-                {#if $recordsExcludedBannerTypes.length === 0}
-                  <span class="text-gray-400 dark:text-[#888]">{$t("page.recordsSettings.noneSelected")}</span>
-                {:else}
-                  <div class="flex flex-wrap gap-1.5 max-w-[90%]">
-                    {#each $recordsExcludedBannerTypes as val}
-                      {@const opt = bannerTypeOptions.find(o => o.value === val)}
-                      {#if opt}
-                        <span class="inline-flex items-center gap-1 bg-amber-550 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 text-[11px] font-bold px-2 py-0.5 rounded-lg border border-amber-200/50 dark:border-amber-900/30">
-                          {opt.label}
-                          <button
-                            type="button"
-                            class="hover:text-amber-600 dark:hover:text-amber-400 p-0.5 rounded-full transition-colors flex items-center justify-center"
-                            on:click|stopPropagation={() => toggleBannerTypeExclusion(val, false)}
-                          >
-                            <Icon name="close" class="w-2.5 h-2.5" />
-                          </button>
-                        </span>
-                      {/if}
-                    {/each}
-                  </div>
-                {/if}
-                <Icon name="arrowDown" class="w-3.5 h-3.5 transition-transform duration-200 ml-auto {isBannerTypesDropdownOpen ? 'rotate-180' : ''} shrink-0" />
-              </div>
-
-              {#if isBannerTypesDropdownOpen}
-                <div
-                  use:clickOutside={{ callback: () => isBannerTypesDropdownOpen = false, ignoreSel: '.btn-trigger-banner-types' }}
-                  class="absolute left-0 right-0 mt-1 z-50 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444] rounded-xl shadow-xl max-h-60 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full"
-                >
-                  {#each bannerTypeOptions as opt}
-                    <div class="px-2 py-1 hover:bg-gray-150 dark:hover:bg-[#444] rounded-lg">
-                      <Checkbox
-                        variant="yellow"
-                        align="center"
-                        checked={$recordsExcludedBannerTypes.includes(opt.value)}
-                        on:change={(e) => toggleBannerTypeExclusion(opt.value, e.detail)}
-                      >
-                        <span class="text-sm dark:text-[#E0E0E0]">{opt.label}</span>
-                      </Checkbox>
-                    </div>
-                  {/each}
-                </div>
-              {/if}
+              <MultiSelect
+                options={bannerTypeOptions}
+                bind:value={$recordsExcludedBannerTypes}
+                placeholder={$t("page.recordsSettings.noneSelected") || "None Selected"}
+              />
             </div>
 
             <!-- Weapon Banner Exclusions -->
-            <div class="relative">
+            <div class="relative z-20">
               <div class="flex justify-between items-center mb-1.5">
                 <span class="text-sm font-medium text-gray-600 dark:text-[#E0E0E0]">
                   {$t("page.recordsSettings.bannerExclusions")}
@@ -612,80 +511,11 @@
                   </button>
                 {/if}
               </div>
-              <div
-                on:click|stopPropagation={() => isBannersDropdownOpen = !isBannersDropdownOpen}
-                on:keydown|stopPropagation={(e) => (e.key === 'Enter' || e.key === ' ') && (isBannersDropdownOpen = !isBannersDropdownOpen)}
-                role="button"
-                tabindex="0"
-                class="btn-trigger-banners w-full min-h-11 py-1.5 px-4 flex items-center justify-between border border-gray-200 dark:border-[#444] bg-white dark:bg-[#383838] dark:text-[#E0E0E0] rounded-xl hover:border-gray-300 transition text-left text-sm focus:outline-none gap-2 flex-wrap cursor-pointer"
-              >
-                {#if $recordsExcludedBanners.length === 0}
-                  <span class="text-gray-400 dark:text-[#888]">{$t("page.recordsSettings.noneSelected")}</span>
-                {:else}
-                  <div class="flex flex-wrap gap-1.5 max-w-[90%]">
-                    {#each $recordsExcludedBanners as val}
-                      {@const opt = weaponBannerOptions.find(o => o.value === val)}
-                      {#if opt}
-                        <span class="inline-flex items-center gap-1 bg-amber-550 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 text-[11px] font-bold px-2 py-0.5 rounded-lg border border-amber-200/50 dark:border-amber-900/30">
-                          {opt.label}
-                          <button
-                            type="button"
-                            class="hover:text-amber-600 dark:hover:text-amber-400 p-0.5 rounded-full transition-colors flex items-center justify-center"
-                            on:click|stopPropagation={() => toggleBannerExclusion(val, false)}
-                          >
-                            <Icon name="close" class="w-2.5 h-2.5" />
-                          </button>
-                        </span>
-                      {/if}
-                    {/each}
-                  </div>
-                {/if}
-                <Icon name="arrowDown" class="w-3.5 h-3.5 transition-transform duration-200 ml-auto {isBannersDropdownOpen ? 'rotate-180' : ''} shrink-0" />
-              </div>
-
-              {#if isBannersDropdownOpen}
-                <div
-                  use:clickOutside={{ callback: () => isBannersDropdownOpen = false, ignoreSel: '.btn-trigger-banners' }}
-                  class="absolute left-0 right-0 mt-1 z-50 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444] rounded-xl shadow-xl max-h-60 overflow-y-auto p-2 space-y-1 custom-scrollbar w-full"
-                >
-                  {#if weaponBannerOptions.length === 0}
-                    <div class="px-3 py-2 text-xs text-gray-400 italic">{$t("page.recordsSettings.noWeaponBanners")}</div>
-                  {:else}
-                    {#each weaponBannerOptions as opt}
-                      <div class="px-2 py-1 hover:bg-gray-150 dark:hover:bg-[#444] rounded-lg">
-                        <Checkbox
-                          variant="yellow"
-                          align="center"
-                          checked={$recordsExcludedBanners.includes(opt.value)}
-                          on:change={(e) => toggleBannerExclusion(opt.value, e.detail)}
-                        >
-                          <div class="flex items-center gap-3 ml-2 text-left">
-                            {#if opt.iconId}
-                              <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
-                                <Image
-                                  id={opt.iconId} 
-                                  variant="banner-mini" 
-                                  size="100%" 
-                                  className="w-full h-full object-cover"
-                                  alt={opt.label}
-                                />
-                              </div>
-                            {/if}
-                            <div class="flex flex-col leading-none">
-                              <span class="text-sm dark:text-[#E0E0E0] truncate max-w-[280px]">{opt.label}</span>
-                              {#if opt.subLabel}
-                                <span class="text-[10px] font-mono tracking-tight mt-0.5 opacity-60 text-gray-500 dark:text-gray-300">
-                                  {opt.subLabel}
-                                </span>
-                              {/if}
-                            </div>
-                          </div>
-                        </Checkbox>
-                      </div>
-                    {/each}
-                  {/if}
-                </div>
-              {/if}
+              <MultiSelect
+                options={weaponBannerOptions}
+                bind:value={$recordsExcludedBanners}
+                placeholder={$t("page.recordsSettings.noneSelected") || "None Selected"}
+              />
             </div>
 
             <!-- Section Checkboxes -->

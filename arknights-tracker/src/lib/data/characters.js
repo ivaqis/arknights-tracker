@@ -278,7 +278,15 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "greatSword",
-    birthDate: "09-07",
-    apiId: ""
+    birthDate: "09-07"
+  },
+  camille: {
+    id: "camille",
+    name: "Camille",
+    rarity: 6,
+    element: "heat",
+    class: "vanguard",
+    weapon: "polearm",
+    birthDate: "20-11"
   }
 };

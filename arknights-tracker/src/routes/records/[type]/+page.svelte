@@ -20,6 +20,7 @@
     import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import AnalyticsCharts from "$lib/components/records/AnalyticsCharts.svelte";
     import Image from "$lib/components/Image.svelte";
+    import MultiSelect from "$lib/components/MultiSelect.svelte";
 
     $: bannerType = $page.params.type;
     let selectedBanner = null;
@@ -540,7 +541,7 @@
             const prev = processed[i - 1];
             if (
                 prev &&
-                new Date(prev.time).getTime() !== new Date(p.time).getTime()
+                Math.abs(new Date(prev.time).getTime() - new Date(p.time).getTime()) > 1000
             ) {
                 batches.push(currentBatch);
                 currentBatch = [];
@@ -587,9 +588,86 @@
         if (selectedRarities.length === 0) selectedRarities = [6, 5, 4];
     }
 
-    $: filteredTableData = (tableData || []).filter((row) =>
-        selectedRarities.includes(row.rarity),
-    );
+    let selectedBanners = [];
+    $: {
+        if (bannerType) {
+            selectedBanners = [];
+        }
+    }
+
+    function formatBannerDate(dateStr, locale) {
+        if (!dateStr) return "";
+        const parsed = new Date(dateStr.replace(" ", "T"));
+        if (isNaN(parsed.getTime())) return "";
+        let loc = locale || "en";
+        if (loc === "my") loc = "ms-MY";
+        try {
+            return new Intl.DateTimeFormat(loc, {
+                day: "2-digit",
+                month: "2-digit",
+                year: "2-digit"
+            }).format(parsed);
+        } catch (e) {
+            const y = String(parsed.getFullYear()).slice(-2);
+            const m = String(parsed.getMonth() + 1).padStart(2, '0');
+            const d = String(parsed.getDate()).padStart(2, '0');
+            return `${d}.${m}.${y}`;
+        }
+    }
+
+    $: bannerOptions = (() => {
+        const seenBanners = new Set();
+        let hasOther = false;
+        rawPulls.forEach(p => {
+            const b = getBannerForPull(p, bannerType);
+            if (b) seenBanners.add(b.id);
+            else hasOther = true;
+        });
+
+        const list = banners.filter(b => {
+            if (isAllWeaponCategory) {
+                return getWeaponCategory(b.id) === bannerType;
+            }
+            return b.type === bannerType;
+        });
+
+        const opts = list
+            .filter(b => seenBanners.has(b.id))
+            .sort((a, b) => new Date(b.startTime).getTime() - new Date(a.startTime).getTime())
+            .map(b => {
+                const label = $t(`banners.${b.id}`) !== `banners.${b.id}` ? $t(`banners.${b.id}`) : b.name;
+                const startFormatted = formatBannerDate(b.startTime, $currentUiLocale);
+                const endFormatted = b.endTime ? formatBannerDate(b.endTime, $currentUiLocale) : ($t("permanent") || "Permanent");
+                const subLabel = startFormatted && endFormatted ? `${startFormatted} - ${endFormatted}` : "";
+                return {
+                    value: b.id,
+                    label,
+                    subLabel,
+                    iconId: b.miniIcon ? b.miniIcon.replace(/\.[^/.]+$/, "") : b.id
+                };
+            });
+
+        if (hasOther) {
+            opts.push({
+                value: "other",
+                label: $t("systemNames.other") || "Other",
+                subLabel: "",
+                iconId: null
+            });
+        }
+        return opts;
+    })();
+
+    $: filteredTableData = (tableData || []).filter((row) => {
+        const matchesRarity = selectedRarities.includes(row.rarity);
+        if (!matchesRarity) return false;
+
+        if (selectedBanners.length === 0) return true;
+
+        const currentBanner = getBannerForPull(row, bannerType);
+        const bid = currentBanner ? currentBanner.id : "other";
+        return selectedBanners.includes(bid);
+    });
 
     $: showBatches = selectedRarities.length === 3;
 
@@ -670,8 +748,8 @@
         <div
             class="flex mt-3 xl:mt-11 flex-col gap-6 w-full order-1 xl:order-2 min-w-0"
         >
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5">
+            <div class="flex flex-wrap gap-6 items-stretch">
+                <div class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5 flex-1 min-w-[315px]">
                     <div class="space-y-2.5">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-600 dark:text-[#E0E0E0]"
@@ -773,7 +851,7 @@
                 </div>
 
                 <div
-                    class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5"
+                    class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-xl shadow-sm border border-gray-100 p-5 flex-1 min-w-[315px]"
                 >
                     <h4
                         class="font-bold text-sm mb-3 text-[#21272C] dark:text-[#FDFDFD]"
@@ -856,7 +934,7 @@
                                 {/if}
                             </div>
                         {/each}
-                    </div>
+                </div>
                 </div>
             </div>
 
@@ -865,25 +943,39 @@
             </div>
         </div>
         <div class="flex flex-col gap-3 order-2 xl:order-1 min-w-0">
-            <div class="flex gap-2">
-                {#each [6, 5, 4] as rarity}
-                    {@const isSelected = selectedRarities.includes(rarity)}
-                    {@const color = getRarityColor(rarity)}
-                    <button
-                        on:click={() => toggleRarity(rarity)}
-                        class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-bold transition-all border shadow-sm select-none"
-                        style="
-                            background-color: {isSelected
-                            ? color + '20'
-                            : 'rgba(156, 163, 175, 0.1)'};
-                            color: {isSelected ? color : '#9CA3AF'};
-                            border-color: {isSelected ? color : 'transparent'};
-                        "
-                    >
-                        <span>{rarity}</span>
-                        <Icon name="star" class="w-3.5 h-3.5" />
-                    </button>
-                {/each}
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 select-none">
+                <div class="flex gap-2">
+                    {#each [6, 5, 4] as rarity}
+                        {@const isSelected = selectedRarities.includes(rarity)}
+                        {@const color = getRarityColor(rarity)}
+                        <button
+                            on:click={() => toggleRarity(rarity)}
+                            class="flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-bold transition-all border shadow-sm select-none"
+                            style="
+                                background-color: {isSelected
+                                ? color + '20'
+                                : 'rgba(156, 163, 175, 0.1)'};
+                                color: {isSelected ? color : '#9CA3AF'};
+                                border-color: {isSelected ? color : 'transparent'};
+                            "
+                        >
+                            <span>{rarity}</span>
+                            <Icon name="star" class="w-3.5 h-3.5" />
+                        </button>
+                    {/each}
+                </div>
+
+                {#if bannerOptions.length > 1}
+                    <div class="w-full sm:w-72">
+                        <MultiSelect
+                            options={bannerOptions}
+                            bind:value={selectedBanners}
+                            placeholder={$t("systemNames.banners") || "Banners"}
+                            maxVisibleTags={1}
+                            resetLabel={$t("sort.reset")}
+                        />
+                    </div>
+                {/if}
             </div>
             <div
                 class="w-full bg-white rounded-xl dark:border-[#444444] dark:bg-[#383838] shadow-sm border border-gray-100 overflow-hidden order-2 xl:order-1"
@@ -1024,14 +1116,18 @@
                                                 class="flex items-center min-w-0 pr-1 sm:pr-2"
                                             >
                                                 <div
-                                                    class="relative inline-flex items-center max-w-full"
+                                                    role="button"
+                                                    tabindex="0"
+                                                    on:click={() => goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
+                                                    on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(isWeapon ? `/weapons/${itemId}` : `/operators/${itemId}`)}
+                                                    class="relative inline-flex items-center max-w-full cursor-pointer group/item outline-none"
                                                 >
                                                     <div
                                                         class="relative z-10 flex-shrink-0"
                                                     >
                                                         <div
-                                                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border sm:border-2 shadow-sm relative group
-                {isWeapon ? getWeaponBg(row.rarity) : 'bg-transparent'}"
+                                                            class="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden border sm:border-2 shadow-sm relative transition-all duration-200 group-hover/item:shadow-md group-hover/item:opacity-90
+                                                            {isWeapon ? getWeaponBg(row.rarity) : 'bg-transparent'}"
                                                             style="border-color: {getRarityColor(
                                                                 row.rarity,
                                                             )}"
@@ -1057,13 +1153,13 @@
                                                     </div>
 
                                                     <div
-                                                        class="relative bg-transparent -ml-4 pl-6 pr-2 sm:-ml-5 sm:pl-7 sm:pr-3 rounded-r-full border-y sm:border-y-2 border-r sm:border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-8 sm:h-10"
+                                                        class="relative bg-transparent -ml-4 pl-6 pr-2 sm:-ml-5 sm:pl-7 sm:pr-3 rounded-r-full border-y sm:border-y-2 border-r sm:border-r-2 border-l-0 min-w-0 w-full max-w-[280px] flex items-center h-8 sm:h-10 transition-colors duration-200 group-hover/item:bg-gray-100/50 dark:group-hover/item:bg-white/5"
                                                         style="border-color: {getRarityColor(
                                                             row.rarity,
                                                         )}"
                                                     >
                                                         <span
-                                                            class="text-gray-800 dark:text-[#E0E0E0] text-xs sm:text-sm font-medium leading-tight block w-full truncate cursor-default"
+                                                            class="text-gray-800 dark:text-[#E0E0E0] text-xs sm:text-sm font-medium leading-tight block w-full truncate cursor-pointer group-hover/item:text-yellow-600 dark:group-hover/item:text-yellow-400 transition-all duration-200"
                                                             title={translatedName}
                                                         >
                                                             {translatedName}
@@ -1146,7 +1242,7 @@
                                                             ) ||
                                                                 "/images/banners/unknown.jpg"}
                                                             alt={currentBanner.name}
-                                                            class="h-full w-full object-cover transition-transform group-hover:scale-110"
+                                                            class="h-full w-full object-cover transition-transform"
                                                             on:error={(e) =>
                                                                 (e.target.style.display =
                                                                     "none")}

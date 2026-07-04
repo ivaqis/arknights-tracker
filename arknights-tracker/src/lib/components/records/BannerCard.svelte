@@ -259,6 +259,7 @@
         isWeapon,
         isFree: p.isFree,
         isGuaranteed: p.isGuaranteed || p.status === "guaranteed", 
+        status: p.status || p.gachaStatus,
       };
     });
 
@@ -691,8 +692,13 @@
           <div class="relative inline-flex">
             
             <Tooltip text={$t(icon.translationKey) || icon.name}>
+              <!-- svelte-ignore a11y-no-noninteractive-element-to-interactive-role -->
               <div
-                class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110
+                on:click={() => goto(icon.isWeapon ? `/weapons/${icon.id}` : `/operators/${icon.id}`)}
+                on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(icon.isWeapon ? `/weapons/${icon.id}` : `/operators/${icon.id}`)}
+                role="button"
+                tabindex="0"
+                class="relative w-12 h-12 transition-transform cursor-pointer hover:scale-110 outline-none
         {icon.isWeapon
                   ? ''
                   : 'rounded-full border-2 border-[#ff6600] bg-gradient-to-t from-[#591C00] to-[#CA774C] shadow-sm'}"
@@ -742,12 +748,32 @@
               </div>
             </Tooltip>
 
-            {#if icon.isGuaranteed}
+            {#if icon.status === "won"}
+              {#if icon.isWeapon || (!bannerId.includes("standard") && !bannerId.includes("new"))}
+                <div class="absolute -top-0.5 -right-0.5 z-[40] pointer-events-auto">
+                  <Tooltip textKey={icon.isWeapon ? "status.wonWeapon" : "status.won"}>
+                    <Icon
+                      name="star"
+                      class="w-5 h-5 text-[#D28253] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)] hover:scale-110 transition-transform"
+                    />
+                  </Tooltip>
+                </div>
+              {/if}
+            {:else if icon.status === "lost" && !bannerId.includes("standard") && !bannerId.includes("new")}
+              <div class="absolute -top-0.5 -right-0.5 z-[40] pointer-events-auto">
+                <Tooltip textKey={icon.isWeapon ? "status.lostWeapon" : "status.lost"}>
+                  <Icon
+                    name="lost"
+                    class="w-5 h-5 text-[#D28253] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)] hover:scale-110 transition-transform"
+                  />
+                </Tooltip>
+              </div>
+            {:else if icon.status === "guaranteed" || icon.isGuaranteed}
               <div class="absolute -top-0.5 -right-0.5 z-[40] pointer-events-auto">
                 <Tooltip text={`${$t("status.guaranteed")} ${icon.isWeapon ? "80" : "120"}`}>
                   <Icon
                     name="guaranteed"
-                    class="w-5 h-5 stroke-[1.1px] text-[#D0926E] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)] hover:scale-110 transition-transform"
+                    class="w-5 h-5 stroke-[1.1px] text-[#D28253] filter drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)] hover:scale-110 transition-transform"
                   />
                 </Tooltip>
               </div>
