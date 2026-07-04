@@ -747,7 +747,8 @@
     }
 
     function getAvatarUrl(pictureId) {
-        if (pictureId) return `http://localhost:3001/uploads/${pictureId}.webp`;
+        if (localAvatar) return localAvatar;
+        if (pictureId) return `/uploads/${pictureId}.webp`;
         return "";
     }
 
