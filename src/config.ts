@@ -55,7 +55,7 @@ function getSkportContractUrl() {
 }
 
 function getSkportContractRecordsUrl() {
-    return skportBaseDomain && process.env.SKPORT_CC_REC_URL
-        ? `${skportBaseDomain}${process.env.SKPORT_CC_REC_URL}`
+    return skportBaseDomain && process.env.SKPORT_CC_REC_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_CC_REC_PATH}`
         : null;
 }
