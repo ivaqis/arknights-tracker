@@ -3,11 +3,19 @@ import path from "node:path";
 
 loadEnv();
 
+const skportBaseDomain = process.env.SKPORT_BASE_DOMAIN || null;
+
 export const config = {
     envName: process.env.NODE_ENV || null,
     port: process.env.PORT || "3001",
     databaseUrl: process.env.DATABASE_URL || null,
     adminSecret: process.env.ADMIN_SECRET || "super_secret_fallback_key_123",
+    gryphlineAuthUrl: process.env.GRYPHLINE_AUTH_URL || null,
+    skportCredUrl: getSkportCredUrl(),
+    skportBindingUrl: getSkportBindingUrl(),
+    skportDetailUrl: getSkportDetailUrl(),
+    skportContractUrl: getSkportContractUrl(),
+    skportContractRecordsUrl: getSkportContractRecordsUrl(),
 } as const;
 
 function loadEnv(): void {
@@ -20,4 +28,34 @@ function loadEnv(): void {
             path: path.resolve(__dirname, `.env.${envName}`),
         });
     }
+}
+
+function getSkportCredUrl() {
+    return skportBaseDomain && process.env.SKPORT_CRED_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_CRED_PATH}`
+        : null;
+}
+
+function getSkportBindingUrl() {
+    return skportBaseDomain && process.env.SKPORT_BIND_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_BIND_PATH}`
+        : null;
+}
+
+function getSkportDetailUrl() {
+    return skportBaseDomain && process.env.SKPORT_DETAIL_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_DETAIL_PATH}`
+        : null;
+}
+
+function getSkportContractUrl() {
+    return skportBaseDomain && process.env.SKPORT_CC_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_CC_PATH}`
+        : null;
+}
+
+function getSkportContractRecordsUrl() {
+    return skportBaseDomain && process.env.SKPORT_CC_REC_URL
+        ? `${skportBaseDomain}${process.env.SKPORT_CC_REC_URL}`
+        : null;
 }
