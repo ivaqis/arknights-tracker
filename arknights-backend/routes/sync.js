@@ -265,7 +265,8 @@ router.post('/sync', async (req, res) => {
         const now = Date.now();
         const lastUpdated = new Date(userAccount.updated_at).getTime();
         
-        if (!testRecords && (now - lastUpdated < SYNC_COOLDOWN)) {
+        // Добавить поле в БД для синка
+        if (false && !testRecords && (now - lastUpdated < SYNC_COOLDOWN)) {
             const timeRemaining = Math.ceil((SYNC_COOLDOWN - (now - lastUpdated)) / 1000 / 60);
             return res.status(429).json({ 
                 error: `Sync is on cooldown. Please wait ${timeRemaining} minutes before trying again.` 
