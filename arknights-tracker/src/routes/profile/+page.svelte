@@ -1270,9 +1270,10 @@
         return serverId === "2" ? "Asia" : "Americas / Europe";
     }
 
+    // Убрать хардкод
     function getAvatarUrl(pictureId) {
         if (localAvatar) return localAvatar;
-        if (pictureId) return `http://localhost:3001/uploads/${pictureId}.webp`;
+        if (pictureId) return `https://goyfield.moe/uploads/${pictureId}.webp`;
         return "";
     }
 </script>
