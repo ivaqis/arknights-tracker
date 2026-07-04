@@ -1,4 +1,3 @@
-import { BadResponseStatusError } from "@errors/BadResponseStatusError";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
 import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
@@ -143,10 +142,6 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
             resp = await axios.get(url, PullsFetcher.getDefaultRequestConfig());
         } catch (e) {
             throw e;
-        }
-
-        if (resp.status !== 200) {
-            throw new BadResponseStatusError(resp.status, resp);
         }
 
         return resp.data;

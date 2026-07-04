@@ -1,5 +1,4 @@
 import { config } from "@/config";
-import { BadResponseStatusError } from "@errors/BadResponseStatusError";
 import { AuthData } from "@services/skportAuth/contracts/AuthData";
 import { AuthResponse } from "@services/skportAuth/contracts/AuthResponse";
 import axios, { AxiosResponse } from "axios";
@@ -72,10 +71,6 @@ export class GryphlineAuthenticator {
             );
         } catch (error) {
             throw error;
-        }
-
-        if (resp.status !== 200) {
-            throw new BadResponseStatusError(resp.status, resp);
         }
 
         return resp.data;

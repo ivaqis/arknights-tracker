@@ -1,5 +1,4 @@
 import { config } from "@/config";
-import { BadResponseStatusError } from "@errors/BadResponseStatusError";
 import { CredData } from "@services/skportAuth/contracts/CredData";
 import { CredResponse } from "@services/skportAuth/contracts/CredResponse";
 import axios, { AxiosResponse } from "axios";
@@ -76,10 +75,6 @@ export class SkportAuthenticator {
             );
         } catch (e) {
             throw e;
-        }
-
-        if (resp.status !== 200) {
-            throw new BadResponseStatusError(resp.status, resp);
         }
 
         return resp.data;
