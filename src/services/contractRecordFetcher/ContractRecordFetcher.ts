@@ -58,7 +58,7 @@ export class ContractRecordFetcher {
         try {
             fetcher = new ContractRecordFetcher(roleData, credData, contractId, recordId);
         } catch (error) {
-            console.error(error);
+            logger.error(error);
 
             return null;
         }
