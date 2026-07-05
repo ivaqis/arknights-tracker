@@ -20,3 +20,7 @@ export function generateSign(path: string, query: string, timestamp: string, tok
         .update(hmacSha256)
         .digest("hex");
 }
+
+export function getTimestampNow(): string {
+    return String(Math.floor(Date.now() / 1000));
+}
