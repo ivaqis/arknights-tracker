@@ -8,7 +8,7 @@ const runtimeBase =
 export const API_BASE =
     runtimeBase ??
     import.meta.env.VITE_API_BASE ??
-    (import.meta.env.PROD ? '/api' : 'http://localhost:3001/api');
+    (import.meta.env.PROD ? 'https://goyfield.moe/api' : 'https://goyfield.moe/api');
 
 export async function fetchGlobalStats(uid, poolId) {
     try {

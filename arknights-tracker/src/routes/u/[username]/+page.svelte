@@ -39,6 +39,11 @@
         return acc;
     }, {});
 
+    const charactersByApiId = Object.values(characters || {}).reduce((acc, char) => {
+        if (char && char.apiId) acc[char.apiId] = char;
+        return acc;
+    }, {});
+
     function getSvelteCharId(char) {
         if (!char) return "";
         return char.id || char.charId || char.charData?.id || "";
@@ -56,7 +61,7 @@
 
     function getOperatorData(char) {
         const svelteId = getSvelteCharId(char);
-        const staticData = charactersById[svelteId];
+        const staticData = charactersById[svelteId] || charactersByApiId[svelteId];
         if (staticData) {
             return staticData;
         }

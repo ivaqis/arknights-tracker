@@ -216,7 +216,7 @@
 
     function getOperatorData(char) {
         const svelteId = getSvelteCharId(char);
-        const staticData = charactersById[svelteId];
+        const staticData = charactersById[svelteId] || charactersByApiId[svelteId];
         if (staticData) {
             return staticData;
         }

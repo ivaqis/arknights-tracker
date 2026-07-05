@@ -2,11 +2,19 @@
 
 import { currencies } from '$lib/data/items/currencies';
 import { progression } from '$lib/data/items/progression';
+import { characters } from '$lib/data/characters';
 
 const extractIds = (list) => {
     if (!list) return [];
     return list.map(item => (typeof item === 'string' ? item : item.id));
 };
+
+const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
+    if (char && char.apiId) {
+        acc[char.apiId] = char.id;
+    }
+    return acc;
+}, {});
 
 const CURRENCY_IDS = new Set(extractIds(currencies));
 const PROGRESSION_IDS = new Set(extractIds(progression));
@@ -14,7 +22,11 @@ const PROGRESSION_IDS = new Set(extractIds(progression));
 export function normalizeId(str) {
     if (!str) return "";
     if (str.toString().startsWith("http")) return str;
-    return str.toString().replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
+    const clean = str.toString().trim();
+    if (apiIdToCharId[clean]) {
+        return apiIdToCharId[clean];
+    }
+    return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
 }
 
 export function getImagePath(idOrName, variant = 'operator-icon') {
