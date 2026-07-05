@@ -1,4 +1,4 @@
-export interface ContractData {
+export interface ContractStatusData {
     id: string;
     name: string;
     challengeCount: number;

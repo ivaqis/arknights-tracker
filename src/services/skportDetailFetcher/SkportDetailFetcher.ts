@@ -57,6 +57,8 @@ export class SkportDetailFetcher {
     }
 
     private async getResponseData(): Promise<SkportDetailResponse> {
+        logger.info("SkportDetailFetcher: Getting response data");
+
         this.initTimestamp();
 
         let resp: AxiosResponse<SkportDetailResponse>;
@@ -69,6 +71,8 @@ export class SkportDetailFetcher {
         } catch (error) {
             throw error;
         }
+
+        logger.info("SkportDetailFetcher: Response data received");
 
         return resp.data;
     }

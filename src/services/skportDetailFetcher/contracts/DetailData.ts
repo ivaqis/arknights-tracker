@@ -1,6 +1,6 @@
 import { BaseData } from "@services/skportDetailFetcher/contracts/BaseData";
 import { CharData } from "@services/skportDetailFetcher/contracts/CharData";
-import { ContractData } from "@services/skportDetailFetcher/contracts/ContractData";
+import { ContractStatusData } from "@services/skportDetailFetcher/contracts/ContractStatusData";
 import { MonumentData } from "@services/skportDetailFetcher/contracts/MonumentData";
 
 export interface DetailData {
@@ -31,5 +31,5 @@ export interface DetailData {
         count: number;
         total: number;
     };
-    crisisContract: ContractData[];
+    crisisContract: ContractStatusData[];
 }
