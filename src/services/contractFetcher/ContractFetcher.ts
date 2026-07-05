@@ -1,6 +1,6 @@
 import { config } from "@/config";
 import { logger } from "@/logger";
-import { BadResponseDataCode } from "@errors/BadResponseDataCode";
+import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError";
 import { ContractRequestParams } from "@models/urlParams/skportAccountData/ContractRequestParams";
 import { ContractData } from "@services/contractFetcher/contracts/ContractData";
 import { ContractResponse } from "@services/contractFetcher/contracts/ContractResponse";
@@ -74,7 +74,7 @@ export class ContractFetcher {
         logger.info("ContractFetcher: Response data received");
 
         if (resp.data.code !== 0) {
-            throw new BadResponseDataCode(resp.data.code, resp.data);
+            throw new BadResponseDataCodeError(resp.data.code, resp.data);
         }
 
         return resp.data;

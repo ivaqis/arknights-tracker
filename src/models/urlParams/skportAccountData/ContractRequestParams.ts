@@ -1,5 +1,5 @@
 import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams";
-import { ContractURLParams } from "@services/skportContractsFetcher/contracts/ContractURLParams";
+import { ContractURLParams } from "@services/contractFetcher/contracts/ContractURLParams";
 
 export class ContractRequestParams extends DetailRequestParams {
     private readonly _userId: string;

@@ -1,5 +1,5 @@
 import { ContractRequestParams } from "@models/urlParams/skportAccountData/ContractRequestParams";
-import { ContractRecordURLParams } from "@services/skportContractsFetcher/contracts/ContractRecordURLParams";
+import { ContractRecordURLParams } from "@services/contractRecordFetcher/contracts/ContractRecordURLParams";
 
 export class ContractRecordRequestParams extends ContractRequestParams {
     private _recordId: string;
