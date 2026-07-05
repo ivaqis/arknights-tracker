@@ -49,7 +49,7 @@ export class SkportAuthenticator {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            logger.error(`SkportAuthenticator error: ${this._gryphAuthCode}\n`, error);
+            logger.error(`SkportAuthenticator error: ${this._gryphAuthCode}\n${error}`);
 
             return null;
         }
@@ -57,7 +57,7 @@ export class SkportAuthenticator {
         let data = responseData.data;
 
         if (!SkportAuthenticator.isCredDataValid(data)) {
-            logger.warn(`No data in auth response: ${this._gryphAuthCode}`);
+            logger.warn(`SkportAuthenticator: No data in auth response: ${this._gryphAuthCode}`);
 
             return null;
         }
@@ -66,6 +66,8 @@ export class SkportAuthenticator {
     }
 
     private async getResponseData(): Promise<CredResponse> {
+        logger.info("SkportAuthenticator: Getting response data");
+
         let resp: AxiosResponse<CredResponse>;
 
         try {
@@ -77,6 +79,8 @@ export class SkportAuthenticator {
         } catch (e) {
             throw e;
         }
+
+        logger.info("SkportAuthenticator: Response data received");
 
         return resp.data;
     }

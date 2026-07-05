@@ -52,7 +52,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
                 resp = await this.getResponseData(url);
             } catch (e) {
                 hasMore = false;
-                logger.error(`Error while fetching data: ${e}`);
+                logger.error(`Error while fetching pulls: ${e}`);
 
                 if (e instanceof Error) {
                     errorMsg = e.message;
@@ -137,6 +137,8 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
     }
 
     private async getResponseData(url: string) {
+        logger.info(`PullsFetcher: Getting response data: ${this._urlParams.seqId}`);
+
         let resp: AxiosResponse<BannerResponse<T>>;
 
         try {
@@ -144,6 +146,8 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
         } catch (e) {
             throw e;
         }
+
+        logger.info("PullsFetcher: Response data received");
 
         return resp.data;
     }

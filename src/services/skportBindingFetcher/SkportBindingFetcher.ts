@@ -27,11 +27,15 @@ export class SkportBindingFetcher {
 
     private static isGameDataListValid(list: GameData[]): boolean {
         if (!list) {
+            logger.warn("SkportBindingFetcher: gameData list is empty");
+
             return false;
         }
 
         for (const item of list) {
             if (!(item.appCode && item.appName && item.bindingList)) {
+                logger.warn("SkportBindingFetcher: gameData list is not valid");
+
                 return false;
             }
         }
@@ -60,7 +64,7 @@ export class SkportBindingFetcher {
     }
 
     public async getEndfieldGameData(): Promise<GameData | null> {
-        let list = await this.getGameDataList()
+        let list = await this.getGameDataList();
 
         if (!list) {
             return null;
@@ -68,9 +72,13 @@ export class SkportBindingFetcher {
 
         for (const item of list) {
             if (item.appCode === "endfield") {
+                logger.info("SkportBindingFetcher: Endfield game data found");
+
                 return item;
             }
         }
+
+        logger.info("SkportBindingFetcher: No Endfield game data");
 
         return null;
     }
@@ -90,10 +98,16 @@ export class SkportBindingFetcher {
             }
         }
 
+        if (list.length === 0) {
+            logger.warn("SkportBindingFetcher: No roles found");
+        }
+
         return list;
     }
 
     private async getResponseData(): Promise<BindingResponse> {
+        logger.info("SkportBindingFetcher: Getting response data");
+
         let resp: AxiosResponse<BindingResponse>;
 
         this.initTimestamp();
@@ -106,6 +120,8 @@ export class SkportBindingFetcher {
         } catch (e) {
             throw e;
         }
+
+        logger.info("SkportBindingFetcher: Response data received");
 
         return resp.data;
     }

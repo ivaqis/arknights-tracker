@@ -45,7 +45,7 @@ export class GryphlineAuthenticator {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            logger.error(`GryphlineAuthenticator error: ${this._authToken}`, error);
+            logger.error(`GryphlineAuthenticator error: ${this._authToken}\n${error}`);
 
             return null;
         }
@@ -53,7 +53,7 @@ export class GryphlineAuthenticator {
         let data = responseData.data;
 
         if (!(data && data.uid && data.code)) {
-            logger.warn(`No data in auth response: ${this._authToken}`);
+            logger.warn(`GryphlineAuthenticator: No data in auth response: ${this._authToken}`);
 
             return null;
         }
@@ -62,6 +62,8 @@ export class GryphlineAuthenticator {
     }
 
     private async getResponseData(): Promise<AuthResponse> {
+        logger.info("GryphlineAuthenticator: Getting response data");
+
         let resp: AxiosResponse<AuthResponse>;
 
         try {
@@ -73,6 +75,8 @@ export class GryphlineAuthenticator {
         } catch (error) {
             throw error;
         }
+
+        logger.info("GryphlineAuthenticator: Response data received");
 
         return resp.data;
     }
