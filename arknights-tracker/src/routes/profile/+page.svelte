@@ -1593,7 +1593,7 @@
             </div>
 
             {#if activeAccount}
-                <div class="grid grid-cols-1 xl:grid-cols-[320px_435px_1fr] gap-6" in:fade>
+                <div class="grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-[320px_435px_1fr] gap-6" in:fade>
                     
                     <div class="space-y-6">
                         <AccountSummary 
@@ -1626,7 +1626,7 @@
                         hasBackground={!!profile?.background}
                     />
 
-                    <div class="w-full min-w-0 overflow-hidden">
+                    <div class="col-span-1 xl:col-span-2 2xl:col-span-1 w-full min-w-0 overflow-hidden">
                         <div class="{!profile?.background ? 'bg-white dark:bg-[#383838] border border-white/10' : 'bg-white/5 border dark:bg-[#383838]/5 dark:border-[#444444]/20 border-white/20'} rounded-xl p-5 flex flex-col w-full mx-auto backdrop-blur-sm shadow-sm min-w-0 overflow-hidden">
                             <div class="flex items-center justify-between border-b {!profile?.background ? 'border-gray-100 dark:border-[#444444]' : 'border-gray-100/30 dark:border-[#444444]/30'} pb-3 mb-3">
                                 <div class="flex gap-2">
