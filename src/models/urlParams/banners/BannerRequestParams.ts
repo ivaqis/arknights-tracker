@@ -1,4 +1,3 @@
-import { GameServerId } from "@models/GameServerId";
 import { URLRequestParams } from "@models/urlParams/URLRequestParams";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 
@@ -31,10 +30,8 @@ export class BannerRequestParams extends URLRequestParams {
         return this._serverId;
     }
 
-    public get serverId(): GameServerId | null {
-        return GameServerId.isServerId(this._serverId)
-            ? this._serverId
-            : null;
+    public get serverId(): string {
+        return this._serverId;
     }
 
     public get seqId(): string | undefined {

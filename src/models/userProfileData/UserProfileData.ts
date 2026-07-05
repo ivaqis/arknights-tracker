@@ -1,10 +1,8 @@
-import { GameServerId } from "@models/GameServerId";
-
 export interface UserProfileData {
     base: {
         name: string,
         level: number,
-        serverId: GameServerId,
+        serverId: string,
         avatarUrl: string | null
     },
     stats: {
