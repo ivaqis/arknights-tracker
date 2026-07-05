@@ -160,7 +160,7 @@
                 {#if opt.iconId}
                   <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-black/10 dark:border-white/10">
                     <Image
-                      id={opt.iconId}
+                      id="{opt.iconId}.webp"
                       variant="banner-mini"
                       size="100%"
                       className="w-full h-full object-cover"

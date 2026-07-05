@@ -113,7 +113,7 @@
       {#if selectedOption?.iconId}
          <div class="w-12 h-8 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
              <Image
-                id={selectedOption.iconId} 
+                id="{selectedOption.iconId}.webp"
                 variant="banner-mini" 
                 size="100%" 
                 className="w-full h-full object-cover"
@@ -161,7 +161,7 @@
               {#if option.iconId}
                  <div class="w-10 h-6 rounded-sm overflow-hidden flex-shrink-0 shadow-sm border border-white/10">
                      <Image
-                        id={option.iconId} 
+                        id="{option.iconId}.webp"
                         variant="banner-mini" 
                         size="100%" 
                         className="w-full h-full object-cover"

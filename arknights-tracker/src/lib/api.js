@@ -31,9 +31,13 @@ export async function fetchGlobalStats(uid, poolId) {
     }
 }
 
-export async function getUserProfile(uid) {
+export async function getUserProfile(uid, token = null) {
     try {
-        const res = await fetch(`${API_BASE}/user/profile/${uid}`);
+        const headers = {};
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+        }
+        const res = await fetch(`${API_BASE}/user/profile/${uid}`, { headers });
         if (!res.ok) return null;
         const json = await res.json();
         return json.data;

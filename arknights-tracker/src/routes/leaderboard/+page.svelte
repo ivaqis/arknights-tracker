@@ -436,7 +436,7 @@
                                                 <img
                                                     src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
                                                     alt={opData.name}
-                                                    class="w-8 h-8 rounded bg-white/10 border border-white/10 object-cover"
+                                                    class="w-8 h-8 rounded bg-white/10 border border-white/10 object-cover shrink-0"
                                                     on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
                                                 />
                                             </Tooltip>
@@ -453,7 +453,7 @@
                                                     <img
                                                         src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
                                                         alt={wpnData.name}
-                                                        class="w-8 h-8 rounded-sm bg-white/10 border border-white/10 object-contain p-1"
+                                                        class="w-8 h-8 rounded-sm bg-white/10 border border-white/10 object-contain p-1 shrink-0"
                                                         on:error={(e) => e.target.style.display = 'none'}
                                                     />
                                                 </Tooltip>

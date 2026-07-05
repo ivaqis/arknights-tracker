@@ -38,7 +38,7 @@ async function verifyFirebaseIdToken(idToken, projectId = 'goyfield-73') {
         throw new Error('No token provided');
     }
     
-    if (idToken.startsWith('mock_')) {
+    if (idToken.startsWith('mock_') && process.env.NODE_ENV !== 'production') {
         return {
             sub: idToken,
             name: idToken.replace('mock_', ''),

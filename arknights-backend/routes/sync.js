@@ -22,11 +22,12 @@ const profileUpdateLimiter = rateLimit({
 
 let bannedWords = new Set();
 let bannedRoots = [];
+const lastSyncTimes = new Map();
 
 async function loadBannedWords() {
-    const listPath = path.join(__dirname, '../banned_words.txt');
-    const localPath = path.join(__dirname, '../banned_words_local.txt');
-    const rootsPath = path.join(__dirname, '../banned_roots.txt'); // Путь к новому файлу
+    const listPath = process.env.BANNED_WORDS_PATH || path.join(__dirname, '../banned_words.txt');
+    const localPath = process.env.BANNED_WORDS_LOCAL_PATH || path.join(__dirname, '../banned_words_local.txt');
+    const rootsPath = process.env.BANNED_ROOTS_PATH || path.join(__dirname, '../banned_roots.txt');
 
     if (!fs.existsSync(listPath)) {
         try {
@@ -241,6 +242,22 @@ router.get('/profile/:uid', async (req, res) => {
             return res.status(404).json({ error: 'Profile not found' });
         }
 
+        if (userAccount.is_private === 1) {
+            const authHeader = req.headers.authorization;
+            if (!authHeader || !authHeader.startsWith('Bearer ')) {
+                return res.status(403).json({ error: 'This profile is private' });
+            }
+            const token = authHeader.split(' ')[1];
+            try {
+                const payload = await verifyFirebaseIdToken(token);
+                if (payload.sub !== uid) {
+                    return res.status(403).json({ error: 'This profile is private' });
+                }
+            } catch (e) {
+                return res.status(403).json({ error: 'This profile is private' });
+            }
+        }
+
         res.json({ status: 'success', data: parseDetailsInUserAccount(userAccount) });
     } catch (e) {
         console.error("[Profile API Error]:", e.message);
@@ -263,11 +280,10 @@ router.post('/sync', async (req, res) => {
 
         const SYNC_COOLDOWN = 7 * 60 * 1000;
         const now = Date.now();
-        const lastUpdated = new Date(userAccount.updated_at).getTime();
+        const lastSync = lastSyncTimes.get(firebaseUid) || 0;
         
-        // Добавить поле в БД для синка
-        if (false && !testRecords && (now - lastUpdated < SYNC_COOLDOWN)) {
-            const timeRemaining = Math.ceil((SYNC_COOLDOWN - (now - lastUpdated)) / 1000 / 60);
+        if (!testRecords && (now - lastSync < SYNC_COOLDOWN)) {
+            const timeRemaining = Math.ceil((SYNC_COOLDOWN - (now - lastSync)) / 1000 / 60);
             return res.status(429).json({ 
                 error: `Sync is on cooldown. Please wait ${timeRemaining} minutes before trying again.` 
             });
@@ -275,7 +291,11 @@ router.post('/sync', async (req, res) => {
 
         let syncedAccounts = [];
 
+        const isDev = process.env.NODE_ENV !== 'production';
         if (testRecords) {
+            if (!isDev) {
+                return res.status(400).json({ error: "Test records are not allowed in production." });
+            }
             syncedAccounts = testRecords;
         } else {
             if (!gameToken || typeof gameToken !== 'string') {
@@ -544,6 +564,8 @@ router.post('/sync', async (req, res) => {
             data: { updated_at: new Date() }
         });
 
+        lastSyncTimes.set(firebaseUid, Date.now());
+
         const allDetails = await prisma.userAccountDetails.findMany({
             where: { user_id: userAccount.id }
         });
@@ -798,7 +820,7 @@ const ruCharMapping = {
     "акэкури": "akekuri",
     "антал": "antal",
     "лейватейн": "laevatain",
-    "ивонн": "yvonne",
+    "ивонна": "yvonne",
     "джилберта": "gilberta",
     "эмбер": "ember",
     "ласт райт": "lastRite",
@@ -809,7 +831,8 @@ const ruCharMapping = {
     "тангтанг": "tangtang",
     "росси": "rossi",
     "чжуань фаньи": "zhuangfy",
-    "ми фу": "mifu"
+    "ми фу": "mifu",
+    "камиль": "camille"
 };
 
 const apiIdToCharId = {
@@ -832,7 +855,10 @@ const apiIdToCharId = {
     "e6c2a3e9f0b1917eb0b1fe29a4b94b3d": "catcher",
     "50515754ef6085bb6a8ddc21ab18a825": "estella",
     "bcb564ed05eb0912d4b0f86d1e193c9f": "fluorite",
-    "ee3bf7197a05580397b45ba2fb1de28e": "tangtang"
+    "ee3bf7197a05580397b45ba2fb1de28e": "tangtang",
+    "0b199a0eaae5a9b37a5d3c990b6c8bca": "laevatain",
+    "05047b063867199b953b30ac8df9a853": "yvonne",
+    "c2fa8a588cab489795166bed5161fefc": "zhuangfy"
 };
 
 function getMappedCharId(c) {

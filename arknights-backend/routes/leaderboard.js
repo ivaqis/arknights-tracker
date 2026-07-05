@@ -106,11 +106,26 @@ router.get('/', async (req, res) => {
 
 router.get('/run/:id', async (req, res) => {
     const { id } = req.params;
+    const recordId = Number(id);
+    if (isNaN(recordId)) {
+        return res.status(400).json({ error: 'Invalid ID format' });
+    }
     try {
         const entry = await prisma.userLeaderboard.findUnique({
-            where: { id: Number(id) }
+            where: { id: recordId },
+            include: {
+                account_detail: {
+                    include: {
+                        user: {
+                            select: {
+                                is_private: true
+                            }
+                        }
+                    }
+                }
+            }
         });
-        if (!entry) {
+        if (!entry || entry.account_detail?.user?.is_private === 1) {
             return res.status(404).json({ error: 'Run record not found' });
         }
         let leaderboardInfo = {};

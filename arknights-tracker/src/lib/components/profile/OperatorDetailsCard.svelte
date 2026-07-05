@@ -981,8 +981,8 @@
                                     {@const currentStat = wpnStats.find(s => s.key === stat.key)}
                                     <div class="flex items-center justify-between text-xs">
                                         <div class="flex items-center gap-1.5 text-white/90">
-                                            <Icon name={stat.icon} class="w-3.5 h-3.5 text-white/70" />
-                                            <span>{stat.label}</span>
+                                            <Icon name={stat.icon} class="w-3 h-3 text-gray-200" />
+                                            <span class="max-w-[90px] truncate">{stat.label}</span>
                                         </div>
                                         <div class="font-nums flex items-center gap-1.5">
                                             <span class="text-[#38BDF8] font-bold">+{stat.range}</span>
@@ -1030,7 +1030,7 @@
                             <Tooltip class="w-full">
                                 <a href="/equipment/{staticId || equip.equipId}" class="relative flex items-center justify-between p-1 rounded-xl pl-3 pr-4 hover:bg-white/5 transition-all cursor-pointer min-h-[42px] min-w-0 w-full"
                                    style="background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(20,20,20,0.85) 100%) padding-box, linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.15)) border-box;">
-                                    <div class="flex items-center gap-3 shrink-0">
+                                    <div class="flex items-center gap-3 min-w-0 flex-1">
                                         <div class="flex flex-col items-center justify-center shrink-0">
                                             <div class="relative w-12 h-12 flex items-center justify-center">
                                                 <img src={staticId ? getImagePath(staticId, 'equipment') : (equip.equipData?.iconUrl || '')} alt="Equip" class="w-full h-full object-contain pointer-events-none" on:error={(e) => { if (equip.equipData?.iconUrl) e.target.src = equip.equipData.iconUrl; }} />
@@ -1038,9 +1038,9 @@
                                             <div class="w-8 h-[3px] rounded mt-0.5" style="background-color: {rarityColor};"></div>
                                         </div>
                                         
-                                        <div class="flex flex-col items-start justify-start min-w-0 select-none">
-                                            <span class="text-sm font-bold text-white truncate font-sdk">{getEquipName(staticId, equip.equipData?.name)}</span>
-                                            <span class="text-[10px] text-white/40 font-sans justify-start">
+                                        <div class="flex flex-col items-start justify-start min-w-0 flex-1 select-none text-left">
+                                            <span class="text-sm font-bold text-white truncate font-sdk block w-full" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">{getEquipName(staticId, equip.equipData?.name)}</span>
+                                            <span class="text-[10px] text-white/40 font-sans justify-start block w-full truncate">
                                                 {$t(`equipmentTypes.${eqKey === 'bodyEquip' ? 'body' : (eqKey === 'armEquip' ? 'hand' : 'edc')}`)}
                                             </span>
                                         </div>
@@ -1049,7 +1049,7 @@
                                 <div slot="content" class="flex flex-col gap-2 text-left max-w-[320px] p-1 font-sans select-none" use:hyperlinkAction>
                                     {#if staticEquip && staticEquip.pack && staticEquip.pack !== "none" && equipLocaleData[staticId]?.setBonus}
                                         <div class="flex flex-col gap-0.5">
-                                            <span class="text-[10px] font-bold text-[#FFE145] uppercase tracking-wider leading-tight">
+                                            <span class="text-[13px] font-bold text-[#FFE145] leading-tight">
                                                 {tOrFallback(`packs.${staticEquip.pack}`, staticEquip.pack)}
                                             </span>
                                             <span class="text-xs leading-relaxed text-gray-200">
@@ -1137,8 +1137,8 @@
                                                     {@const isDef = attr.attrType.toLowerCase() === "def"}
                                                     <tr class="border-b border-white/5 last:border-0 hover:bg-white/5 transition-colors">
                                                         <td class="py-1 px-1 flex items-center gap-1.5 whitespace-nowrap text-white/90">
-                                                            <Icon name={iconName} class="w-3.5 h-3.5 text-white/70" />
-                                                            <span>{tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType)}</span>
+                                                            <Icon name={iconName} class="w-3 h-3 text-gray-200" />
+                                                            <span class="max-w-[100px] truncate">{tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType)}</span>
                                                         </td>
                                                         {#each itemTiers as valIndex}
                                                             {@const val = attr.values[valIndex]}

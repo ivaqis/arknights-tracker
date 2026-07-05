@@ -18,6 +18,12 @@
     let hasError = false;
     let isVisible = false;
 
+    $: {
+        src;
+        hasError = false;
+        isVisible = false;
+    }
+
     function imageHandler(node, currentSrc) {
         function handleLoad() {
             isVisible = true;

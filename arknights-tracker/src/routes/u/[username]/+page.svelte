@@ -308,6 +308,7 @@
     $: if (selectedChar) {
         const svelteId = getSvelteCharId(selectedChar);
         currentFetchId = svelteId;
+        selectedCharDetails = null;
         if (svelteId) {
             import(`../../../lib/data/charactersData/${svelteId}.json`)
                 .then(mod => {
@@ -332,6 +333,7 @@
         const lang = ($currentLocale || "en").toLowerCase().replace("-", "");
         currentLocaleFetchId = svelteId;
         currentLocaleFetchLang = lang;
+        selectedCharLocale = null;
         if (svelteId) {
             import(`../../../lib/locales/${lang}/characters/${svelteId}.json`)
                 .then(mod => {

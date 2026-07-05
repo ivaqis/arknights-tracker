@@ -485,6 +485,7 @@
     $: if (selectedChar) {
         const svelteId = getSvelteCharId(selectedChar);
         currentFetchId = svelteId;
+        selectedCharDetails = null;
         if (svelteId) {
             import(`../../lib/data/charactersData/${svelteId}.json`)
                 .then(mod => {
@@ -508,6 +509,7 @@
         const lang = ($currentLocale || "en").toLowerCase().replace("-", "");
         currentLocaleFetchId = svelteId;
         currentLocaleFetchLang = lang;
+        selectedCharLocale = null;
         if (svelteId) {
             import(`../../lib/locales/${lang}/characters/${svelteId}.json`)
                 .then(mod => {
@@ -946,7 +948,8 @@
         const unsubscribe = user.subscribe(async (u) => {
             if (u) {
                 loading = true;
-                const data = await getUserProfile(u.uid);
+                const token = await u.getIdToken();
+                const data = await getUserProfile(u.uid, token);
                 if (data) {
                     profile = data;
                     favoriteGameUid = profile.favorite_game_uid || "";
@@ -1424,14 +1427,14 @@
                     </div>
                     <input type="file" accept="image/jpeg,image/png,image/webp,image/avif" class="hidden" bind:this={avatarInput} on:change={handleFileChange} />
 
-                    <div class="flex flex-col gap-1 relative">
+                    <div class="flex flex-col gap-1 relative min-w-0 flex-1">
                         {#if isEditingName}
-                            <div class="flex items-center gap-1">
+                            <div class="flex items-center gap-1 w-full">
                                 <input
                                     type="text"
                                     value={newProfileName}
                                     on:input={handleNameInput}
-                                    class="bg-white/10 border border-white/20 text-white rounded px-2 py-1 outline-none font-mono text-xl"
+                                    class="bg-white/10 border border-white/20 text-white rounded px-2 py-1 outline-none font-mono text-xl w-full min-w-0 max-w-[150px] sm:max-w-xs"
                                     on:keydown={(e) => { if (e.key === "Enter") handleUpdateName(); else if (e.key === "Escape") handleCancelEditName(); }}
                                 />
                                 <Tooltip text={$t("settings.account.cancel") || "Cancel"}>

@@ -121,7 +121,11 @@
                         </a>
                     </Tooltip>
                 {:else}
-                    <div class="bg-[#101010]/60 border border-white/5 w-[38px] h-[28px] min-w-0"></div>
+                    <div class="bg-[#101010]/60 border border-white/5 w-[38px] h-[28px] min-w-0 flex items-center justify-center">
+                        <svg class="w-3 h-3 text-white/10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="2" y1="10" x2="10" y2="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
                 {/if}
             {/each}
         </div>

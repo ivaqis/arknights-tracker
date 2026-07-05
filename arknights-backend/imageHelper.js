@@ -12,8 +12,7 @@ if (!fs.existsSync(UPLOADS_DIR)) {
 
 async function checkNsfw(base64Image, filename = '') {
     const cleanFilename = String(filename).toLowerCase();
-    const cleanBase64 = String(base64Image).toLowerCase();
-    if (cleanFilename.includes('nsfw') || cleanBase64.includes('nsfw')) {
+    if (cleanFilename.includes('nsfw')) {
         return true;
     }
 
