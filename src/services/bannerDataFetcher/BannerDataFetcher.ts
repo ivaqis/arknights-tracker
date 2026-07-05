@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { BannerType } from "@models/banners/BannerType";
 import { CharPull } from "@models/pulls/CharPull";
 import { WeaponPull } from "@models/pulls/WeaponPull";
@@ -79,7 +80,7 @@ export class BannerDataFetcher {
         );
 
         if (bannerData.error) {
-            console.error(bannerData.error);
+            logger.error(bannerData.error);
             return [];
         }
 
@@ -95,7 +96,7 @@ export class BannerDataFetcher {
         );
 
         if (bannerData.error) {
-            console.error(bannerData.error);
+            logger.error(bannerData.error);
             return [];
         }
 

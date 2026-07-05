@@ -1,4 +1,5 @@
 import { config } from "@/config";
+import { logger } from "@/logger";
 import { AuthData } from "@services/skportAuth/contracts/AuthData";
 import { AuthResponse } from "@services/skportAuth/contracts/AuthResponse";
 import axios, { AxiosResponse } from "axios";
@@ -22,7 +23,7 @@ export class GryphlineAuthenticator {
         try {
             authenticator = new GryphlineAuthenticator(authToken);
         } catch (error) {
-            console.error(error);
+            logger.error(error);
 
             return null;
         }
@@ -44,7 +45,7 @@ export class GryphlineAuthenticator {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            console.error(`[ERROR] GryphlineAuthenticator error: ${this._authToken}`, error);
+            logger.error(`GryphlineAuthenticator error: ${this._authToken}`, error);
 
             return null;
         }
@@ -52,7 +53,7 @@ export class GryphlineAuthenticator {
         let data = responseData.data;
 
         if (!(data && data.uid && data.code)) {
-            console.log(`[WARNING] No data in auth response: ${this._authToken}`);
+            logger.warn(`No data in auth response: ${this._authToken}`);
 
             return null;
         }

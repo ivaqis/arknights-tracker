@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
 import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
@@ -51,7 +52,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
                 resp = await this.getResponseData(url);
             } catch (e) {
                 hasMore = false;
-                console.error(`Error while fetching data: ${e}`);
+                logger.error(`Error while fetching data: ${e}`);
 
                 if (e instanceof Error) {
                     errorMsg = e.message;
@@ -74,7 +75,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
 
             if (isEnded) {
                 hasMore = false;
-                console.log("[Optimization] Reached known history")
+                logger.info("[Optimization] Reached known history")
                 break;
             }
 

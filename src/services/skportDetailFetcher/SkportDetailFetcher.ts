@@ -1,4 +1,5 @@
 import { config } from "@/config";
+import { logger } from "@/logger";
 import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams";
 import { CredData } from "@services/skportAuth/contracts/CredData";
 import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
@@ -41,7 +42,7 @@ export class SkportDetailFetcher {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            console.error(error);
+            logger.error(error);
 
             return null;
         }

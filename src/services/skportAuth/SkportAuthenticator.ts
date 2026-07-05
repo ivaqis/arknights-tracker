@@ -1,4 +1,5 @@
 import { config } from "@/config";
+import { logger } from "@/logger";
 import { CredData } from "@services/skportAuth/contracts/CredData";
 import { CredResponse } from "@services/skportAuth/contracts/CredResponse";
 import axios, { AxiosResponse } from "axios";
@@ -22,7 +23,7 @@ export class SkportAuthenticator {
         try {
             authenticator = new SkportAuthenticator(gryphAuthCode);
         } catch (e) {
-            console.error(e);
+            logger.error(e);
 
             return null;
         }
@@ -48,7 +49,7 @@ export class SkportAuthenticator {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            console.error(`[ERROR] SkportAuthenticator error: ${this._gryphAuthCode}\n`, error);
+            logger.error(`SkportAuthenticator error: ${this._gryphAuthCode}\n`, error);
 
             return null;
         }
@@ -56,7 +57,7 @@ export class SkportAuthenticator {
         let data = responseData.data;
 
         if (!SkportAuthenticator.isCredDataValid(data)) {
-            console.log(`[WARNING] No data in auth response: ${this._gryphAuthCode}`);
+            logger.warn(`No data in auth response: ${this._gryphAuthCode}`);
 
             return null;
         }

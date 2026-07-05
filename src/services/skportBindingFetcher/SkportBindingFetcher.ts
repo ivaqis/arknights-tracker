@@ -1,4 +1,5 @@
 import { config } from "@/config";
+import { logger } from "@/logger";
 import { CredData } from "@services/skportAuth/contracts/CredData";
 import { BindingResponse } from "@services/skportBindingFetcher/contracts/BindingResponse";
 import { GameData } from "@services/skportBindingFetcher/contracts/GameData";
@@ -44,7 +45,7 @@ export class SkportBindingFetcher {
         try {
             responseData = await this.getResponseData();
         } catch (error) {
-            console.error(error);
+            logger.error(error);
 
             return null;
         }
