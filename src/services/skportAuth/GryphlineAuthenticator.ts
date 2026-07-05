@@ -18,6 +18,16 @@ export class GryphlineAuthenticator {
     }
 
     public static async authenticate(authToken: string): Promise<AuthData | null> {
+        let authenticator = this.create(authToken);
+
+        if (!authenticator) {
+            return null;
+        }
+
+        return authenticator.getAuthData();
+    }
+
+    public static create(authToken: string): GryphlineAuthenticator | null {
         let authenticator: GryphlineAuthenticator;
 
         try {
@@ -28,7 +38,7 @@ export class GryphlineAuthenticator {
             return null;
         }
 
-        return authenticator.getAuthData();
+        return authenticator;
     }
 
     private static getRequestConfig() {

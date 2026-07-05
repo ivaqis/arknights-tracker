@@ -66,6 +66,24 @@ export class ContractRecordFetcher {
         return fetcher.getContractRecordData();
     }
 
+    public static create(roleData: { serverId: string, roleId: string },
+                         credData: CredData,
+                         contractId: string,
+                         recordId: string
+    ): ContractRecordFetcher | null {
+        let fetcher: ContractRecordFetcher;
+
+        try {
+            fetcher = new ContractRecordFetcher(roleData, credData, contractId, recordId);
+        } catch (error) {
+            logger.error(error);
+
+            return null;
+        }
+
+        return fetcher;
+    }
+
     public async getContractRecordData(): Promise<ContractRecordDetailData | null> {
         let responseData: ContractRecordResponse;
 

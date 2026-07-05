@@ -41,6 +41,40 @@ export class ContractFetcher {
         });
     }
 
+    public static async getContractData(roleData: { serverId: string, roleId: string },
+                                        credData: CredData,
+                                        contractId: string
+    ): Promise<ContractData | null> {
+        let fetcher: ContractFetcher;
+
+        try {
+            fetcher = new ContractFetcher(roleData, credData, contractId);
+        } catch (error) {
+            logger.error(error);
+
+            return null;
+        }
+
+        return fetcher.getContractData();
+    }
+
+    public static create(roleData: { serverId: string, roleId: string },
+                         credData: CredData,
+                         contractId: string
+    ): ContractFetcher | null {
+        let fetcher: ContractFetcher;
+
+        try {
+            fetcher = new ContractFetcher(roleData, credData, contractId);
+        } catch (error) {
+            logger.error(error);
+
+            return null;
+        }
+
+        return fetcher;
+    }
+
     public async getContractData(): Promise<ContractData | null> {
         let responseData: ContractResponse;
 

@@ -36,6 +36,34 @@ export class SkportDetailFetcher {
         });
     }
 
+    public static create(roleData: { serverId: string, roleId: string },
+                         credData: CredData
+    ): SkportDetailFetcher | null {
+        let fetcher: SkportDetailFetcher;
+
+        try {
+            fetcher = new SkportDetailFetcher(roleData, credData);
+        } catch (error) {
+            logger.error(error);
+
+            return null;
+        }
+
+        return fetcher;
+    }
+
+    public static async getDetailData(roleData: { serverId: string, roleId: string },
+                                      credData: CredData
+    ): Promise<DetailData | null> {
+        const fetcher = this.create(roleData, credData);
+
+        if (!fetcher) {
+            return null;
+        }
+
+        return fetcher.getDetailData();
+    }
+
     public async getDetailData(): Promise<DetailData | null> {
         let responseData: SkportDetailResponse;
 

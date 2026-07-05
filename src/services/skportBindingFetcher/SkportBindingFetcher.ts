@@ -25,6 +25,50 @@ export class SkportBindingFetcher {
         this._token = credData.token;
     }
 
+    public static async getGameDataList(credData: CredData): Promise<GameData[] | null> {
+        const fetcher = this.create(credData);
+
+        if (!fetcher) {
+            return null;
+        }
+
+        return fetcher.getGameDataList();
+    }
+
+    public static async getEndfieldGameData(credData: CredData): Promise<GameData | null> {
+        const fetcher = this.create(credData);
+
+        if (!fetcher) {
+            return null;
+        }
+
+        return fetcher.getEndfieldGameData();
+    }
+
+    public static async getEndfieldRoles(credData: CredData): Promise<RoleData[] | null> {
+        const fetcher = this.create(credData);
+
+        if (!fetcher) {
+            return null;
+        }
+
+        return fetcher.getEndfieldRoles();
+    }
+
+    public static create(credData: CredData): SkportBindingFetcher | null {
+        let fetcher: SkportBindingFetcher;
+
+        try {
+            fetcher = new SkportBindingFetcher(credData);
+        } catch (error) {
+            logger.error(error);
+
+            return null;
+        }
+
+        return fetcher;
+    }
+
     private static isGameDataListValid(list: GameData[]): boolean {
         if (!list) {
             logger.warn("SkportBindingFetcher: gameData list is empty");

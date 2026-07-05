@@ -18,6 +18,16 @@ export class SkportAuthenticator {
     }
 
     public static async authenticate(gryphAuthCode: string): Promise<CredData | null> {
+        let authenticator = this.create(gryphAuthCode);
+
+        if (!authenticator) {
+            return null;
+        }
+
+        return authenticator.getAuthData();
+    }
+
+    public static create(gryphAuthCode: string): SkportAuthenticator | null {
         let authenticator: SkportAuthenticator;
 
         try {
@@ -28,7 +38,7 @@ export class SkportAuthenticator {
             return null;
         }
 
-        return authenticator.getAuthData();
+        return authenticator;
     }
 
     private static isCredDataValid(data?: CredData): data is CredData {
