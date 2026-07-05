@@ -2,6 +2,7 @@ import { get } from "svelte/store";
 import { t, isI18nReady } from "$lib/i18n.js";
 import { tags } from "$lib/data/contractTags.js";
 
+const tagIdToKey = {};
 const tagIdToBlackboard = {};
 const localIdToBlackboard = {};
 
@@ -16,7 +17,17 @@ for (const key in tags) {
     localIdToBlackboard[key] = bb;
     if (tag && tag.tagId) {
         tagIdToBlackboard[String(tag.tagId)] = bb;
+        tagIdToKey[String(tag.tagId)] = key;
     }
+}
+
+export function normalizeContractTagId(id) {
+    if (!id) return id;
+    const strId = String(id);
+    if (tagIdToKey[strId]) {
+        return tagIdToKey[strId];
+    }
+    return id;
 }
 
 const VALID_TEXT_ICONS = new Set([
@@ -350,7 +361,8 @@ function evaluateMath(expr, bb) {
         resolved = resolved.replace(regex, bb[key]);
     }
     resolved = resolved.replace(/[a-zA-Z_]+/g, '0');
-    const sanitized = resolved.replace(/[^0-9.+\-*/() ]/g, '');
+    let sanitized = resolved.replace(/[^0-9.+\-*/() ]/g, '');
+    sanitized = sanitized.replace(/--/g, ' - -').replace(/\+\+/g, ' + +');
     try {
         return Function(`"use strict"; return (${sanitized})`)();
     } catch (e) {
@@ -371,6 +383,7 @@ function formatValue(value, format) {
 
 export function formatContractDescription(id, text) {
     if (!text) return "";
+    id = normalizeContractTagId(id);
     let result = text.replace(/\{([^{}]+)\}/g, (match, content) => {
         let tagId = null;
         let expr = "";

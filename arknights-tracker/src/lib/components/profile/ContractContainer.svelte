@@ -4,7 +4,7 @@
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
     import { getImagePath } from "$lib/utils/imageUtils.js";
-    import { formatContractDescription } from "$lib/utils/richText.js";
+    import { formatContractDescription, normalizeContractTagId } from "$lib/utils/richText.js";
     import { equipment } from "$lib/data/items/equipment.js";
 
     import Icon from "$lib/components/Icon.svelte";
@@ -185,7 +185,8 @@
             {#if contract.indicators && contract.indicators.length > 0}
                 <div class="grid grid-cols-[repeat(auto-fill,56px)] gap-1.5 mt-4 border-t border-white/10 pt-4 justify-center">
                     {#each contract.indicators as ind}
-                        {@const tagId = typeof ind === 'object' ? ind.id : ind}
+                        {@const rawTagId = typeof ind === 'object' ? ind.id : ind}
+                        {@const tagId = normalizeContractTagId(rawTagId)}
                         {@const tagName = $t(`contractTagNames.${tagId}`) || (typeof ind === 'object' ? ind.name : tagId)}
                         {@const tagDesc = formatContractDescription(tagId, $t(`contractTagDesc.${tagId}`) || (typeof ind === 'object' ? ind.desc : ''))}
                         {@const cleanDesc = tagDesc ? tagDesc.replace(/<[^>]*>/g, "") : ""}

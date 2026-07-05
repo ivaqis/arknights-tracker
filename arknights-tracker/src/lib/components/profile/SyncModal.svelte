@@ -322,7 +322,7 @@
                                     </div>
                                     <div class="flex gap-2 items-center mt-2">
                                         <span class="text-[10px] bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-white px-2 py-0.5 rounded-full font-medium">
-                                            {item.serverId === '3' ? 'Americas / Europe' : item.serverId === '2' ? 'Asia' : 'Both'}
+                                            {item.serverId === '3' ? 'Americas / Europe' : item.serverId === '2' ? 'Asia' : $t("profile.all")}
                                         </span>
                                         <span class="text-[10px] text-gray-500 dark:text-[#B7B6B3] font-medium">
                                             {new Date(item.date).toLocaleDateString()}

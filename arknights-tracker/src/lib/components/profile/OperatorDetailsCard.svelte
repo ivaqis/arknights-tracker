@@ -817,7 +817,7 @@
                             <div class="flex flex-col items-start select-none justify-end pb-1">
                                 <div class="flex items-baseline gap-1.5">
                                     <span class="text-[11px] font-bold text-white/50 uppercase tracking-wider" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">Lv.</span>
-                                    <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/90</span></span>
+                                    <span class="text-[42px] font-light text-white leading-none tracking-tighter font-nums" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.9);">{selectedChar.level}<span class="text-[22px] text-white/40 font-normal">/{({ 4: 90, 3: 80, 2: 60, 1: 40, 0: 20 }[Number(selectedChar.evolvePhase)] ?? 90)}</span></span>
                                 </div>
                             </div>
                             <AscensionIcon ascension={selectedChar.evolvePhase || 0} size={56} className="pb-1" />

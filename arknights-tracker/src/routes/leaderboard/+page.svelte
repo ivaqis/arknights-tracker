@@ -7,6 +7,7 @@
     import { fade, fly } from "svelte/transition";
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Button from "$lib/components/Button.svelte";
@@ -382,31 +383,33 @@
                                 </td>
 
                                 <td class="py-2 px-3">
-                                    <div class="flex items-center gap-3 group w-fit">
-                                        {#if entry.user.picture && entry.user.avatar_strike === 0}
-                                            <a href="/u/{entry.user.name}" class="shrink-0">
-                                                <img
-                                                    src={getAvatarUrl(entry.user.picture)}
-                                                    alt={entry.user.name}
-                                                    class="w-9 h-9 rounded-md object-cover border border-white/10 shrink-0 group-hover:opacity-85 transition-opacity"
-                                                />
-                                            </a>
-                                        {:else}
-                                            <a href="/u/{entry.user.name}">
-                                                <div class="w-8 h-8 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white/70 font-bold text-xs shrink-0 select-none hover:bg-white/20 transition-colors">
-                                                    {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
-                                                </div>
-                                            </a>
-                                        {/if}
-                                        <div class="flex items-center gap-2">
+                                    <div class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-3 sm:space-y-0 space-y-[-7px] w-fit">
+                                        <div class="flex items-center gap-3 group/user">
+                                            {#if entry.user.picture && entry.user.avatar_strike === 0}
+                                                <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                    <img
+                                                        src={getAvatarUrl(entry.user.picture)}
+                                                        alt={entry.user.name}
+                                                        class="w-9 h-9 rounded-md object-cover border border-white/10 shrink-0 group-hover/user:opacity-85 transition-opacity"
+                                                    />
+                                                </a>
+                                            {:else}
+                                                <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
+                                                    <div class="w-9 h-9 rounded-md bg-white/10 border border-white/20 flex items-center justify-center text-white/70 font-bold text-xs shrink-0 select-none group-hover/user:bg-white/20 transition-colors">
+                                                        {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
+                                                    </div>
+                                                </a>
+                                            {/if}
                                             <div class="flex items-center gap-1">
-                                                <a href="/u/{entry.user.name}" class="font-bold text-gray-600 dark:text-white group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-colors">{entry.user.name}</a>
-                                                <Icon name="sendToLink" class="w-3 h-3 text-gray-600 dark:text-white group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-transform duration-200 shrink-0" />
+                                                <a href="/u/{entry.user.name}" class="group font-bold text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] transition-colors inline-flex items-center gap-1" on:click|stopPropagation>
+                                                    <span>{entry.user.name}</span>
+                                                    <Icon name="sendToLink" class="w-3 h-3 text-gray-600 dark:text-white group-hover/user:text-[#FFE145] group-hover/user:dark:text-[#FFE145] group-hover:text-[#FFE145] group-hover:dark:text-[#FFE145] transition-transform duration-200 shrink-0" />
+                                                </a>
                                             </div>
-                                            <span class="bg-gray-200 text-gray-600 dark:bg-[#303030] dark:text-[#B0B0B0] px-1.5 rounded text-[9px] font-medium font-sans select-none shrink-0">
-                                                {getServerName(entry.serverId)}
-                                            </span>
                                         </div>
+                                        <span class="bg-gray-200 text-gray-600 dark:bg-[#303030] dark:text-[#B0B0B0] px-1 sm:px-1.5 rounded text-[8px] sm:text-[9px] font-medium font-sans select-none shrink-0 w-fit ml-12 sm:ml-0">
+                                            {getServerName(entry.serverId)}
+                                        </span>
                                     </div>
                                 </td>
 
@@ -436,7 +439,7 @@
                                                 <img
                                                     src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
                                                     alt={opData.name}
-                                                    class="w-8 h-8 rounded bg-white/10 border border-white/10 object-cover shrink-0"
+                                                    class="w-10 h-10 rounded bg-white/10 border border-white/10 object-cover shrink-0 cursor-pointer"
                                                     on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
                                                 />
                                             </Tooltip>
@@ -449,16 +452,18 @@
                                         {#each (entry.chars || []).slice(0, 4) as char}
                                             {#if char.weapon}
                                                 {@const wpnData = getWeaponData(char.weapon)}
-                                                <Tooltip text={`${getWeaponName(wpnData, char.weapon)} (LV. ${char.weapon.level || 1}, R${char.weapon.refineLevel !== undefined ? char.weapon.refineLevel + 1 : 1})`}>
+                                                {@const wpnRarity = wpnData?.rarity || char.weapon.rarity || 4}
+                                                <Tooltip text={`${getWeaponName(wpnData, char.weapon)} (LV. ${char.weapon.level || 1}, R${char.weapon.refineLevel !== undefined ? char.weapon.refineLevel : 1})`}>
                                                     <img
                                                         src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
                                                         alt={wpnData.name}
-                                                        class="w-8 h-8 rounded-sm bg-white/10 border border-white/10 object-contain p-1 shrink-0"
+                                                        class="w-10 h-10 rounded border object-contain shrink-0 cursor-pointer"
+                                                        style="background-color: {getRarityColor(wpnRarity)}15; border-color: {getRarityColor(wpnRarity)}50;"
                                                         on:error={(e) => e.target.style.display = 'none'}
                                                     />
                                                 </Tooltip>
                                             {:else}
-                                                <div class="w-8 h-8 rounded bg-white/5 border border-white/5 flex items-center justify-center text-[10px] text-gray-500 font-medium shrink-0 select-none">
+                                                <div class="w-10 h-10 rounded bg-white/5 border border-white/5 flex items-center justify-center text-[10px] text-gray-500 font-medium shrink-0 select-none">
                                                     —
                                                 </div>
                                             {/if}
@@ -501,7 +506,10 @@
                     {/if}
                     <div>
                         <h4 class="text-xl font-bold dark:text-white text-gray-900 font-sdk">
-                            <a href="/u/{selectedEntry.user.name}" class="hover:text-[#FFE145] transition-colors">{selectedEntry.user.name}</a>
+                            <a href="/u/{selectedEntry.user.name}" class="inline-flex items-center gap-1 hover:text-[#FFE145] transition-colors group">
+                                <span>{selectedEntry.user.name}</span>
+                                <Icon name="sendToLink" class="w-4 h-4 text-gray-400 group-hover:text-[#FFE145] transition-colors shrink-0" />
+                            </a>
                         </h4>
                         <div class="text-xs text-gray-400 mt-1">
                             Level {selectedEntry.level} &bull; {getServerName(selectedEntry.serverId)}
