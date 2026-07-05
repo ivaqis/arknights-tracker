@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import path from "node:path";
+import winston from "winston";
 
 loadEnv();
 
@@ -10,6 +11,7 @@ export const config = {
     port: process.env.PORT || "3001",
     databaseUrl: process.env.DATABASE_URL || null,
     adminSecret: process.env.ADMIN_SECRET || "super_secret_fallback_key_123",
+    loggingLevel: getLoggingLevel(),
     gryphlineAuthUrl: process.env.GRYPHLINE_AUTH_URL || null,
     skportBindingPath: process.env.SKPORT_BIND_PATH || null,
     skportDetailPath: process.env.SKPORT_DETAIL_PATH || null,
@@ -29,7 +31,7 @@ function loadEnv(): void {
 
     if (envName) {
         dotenv.config({
-            path: path.resolve(__dirname, `.env.${envName}`),
+            path: path.resolve(process.cwd(), `.env.${envName}`),
         });
     }
 }
@@ -62,4 +64,21 @@ function getSkportContractRecordsUrl() {
     return skportBaseDomain && process.env.SKPORT_CC_REC_PATH
         ? `${skportBaseDomain}${process.env.SKPORT_CC_REC_PATH}`
         : null;
+}
+
+function getLoggingLevel() {
+    const levels = new Set(Object.keys(winston.config.npm.levels));
+    const current = process.env.LOGGING_LEVEL;
+
+    if (!current) {
+        console.log("No logging level provided. Selected \"info\" by default.");
+
+        return "info";
+    }
+
+    if (!levels.has(current)) {
+        console.log(`Invalid logging level: "${current}". Selected \"info\" by default.`);
+    }
+
+    return current;
 }
