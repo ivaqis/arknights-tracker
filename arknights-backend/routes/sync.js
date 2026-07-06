@@ -500,7 +500,19 @@ router.post('/sync', async (req, res) => {
                 });
             }
 
-            const normalizedInfo = normalizeGameAccountInfo(synced.account_info, synced.server_id, synced.contract_detail);
+            let oldContract = null;
+            if (existingDetail && existingDetail.account_info) {
+                try {
+                    const parsed = JSON.parse(existingDetail.account_info);
+                    if (parsed && parsed.contract) {
+                        oldContract = parsed.contract;
+                    }
+                } catch (e) {
+                    console.error("[Sync API] Failed to parse existing account_info JSON:", e.message);
+                }
+            }
+
+            const normalizedInfo = normalizeGameAccountInfo(synced.account_info, synced.server_id, synced.contract_detail, oldContract);
             const detailRecord = await prisma.userAccountDetails.upsert({
                 where: { game_uid: synced.game_uid },
                 update: {
@@ -959,8 +971,25 @@ function getStaticWeaponId(weapon) {
     return weapon.weaponData.id || weapon.id;
 }
 
-function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
+function normalizeGameAccountInfo(rawInfo, serverId, contractDetail, oldContract = null) {
     if (rawInfo && rawInfo.base && rawInfo.stats && !contractDetail) {
+        if (oldContract) {
+            const oldLevel = Number(oldContract.level || 0);
+            const oldClearTime = parseFloat(oldContract.clearTime !== undefined ? oldContract.clearTime : (oldContract.clear_time || 0));
+            const curLevel = Number(rawInfo.contract?.level || 0);
+            const curClearTime = parseFloat(rawInfo.contract?.clearTime !== undefined ? rawInfo.contract.clearTime : (rawInfo.contract?.clear_time || 0));
+
+            const isOldBetter = (oldLevel > curLevel) ||
+                                (oldLevel === curLevel && oldLevel > 0 && oldClearTime > 0 && (curClearTime <= 0 || oldClearTime < curClearTime));
+            if (isOldBetter) {
+                rawInfo.contract = {
+                    level: oldLevel,
+                    clearTime: oldClearTime,
+                    chars: oldContract.chars || [],
+                    indicators: oldContract.indicators || []
+                };
+            }
+        }
         return rawInfo;
     }
     const detail = rawInfo.detail || rawInfo;
@@ -1230,6 +1259,23 @@ function normalizeGameAccountInfo(rawInfo, serverId, contractDetail) {
         },
         chars: mappedChars
     };
+
+    if (oldContract) {
+        const oldLevel = Number(oldContract.level || 0);
+        const oldClearTime = parseFloat(oldContract.clearTime !== undefined ? oldContract.clearTime : (oldContract.clear_time || 0));
+
+        const isOldBetter = (oldLevel > normalized.contract.level) ||
+                            (oldLevel === normalized.contract.level && oldLevel > 0 && oldClearTime > 0 && (normalized.contract.clearTime <= 0 || oldClearTime < normalized.contract.clearTime));
+
+        if (isOldBetter) {
+            normalized.contract = {
+                level: oldLevel,
+                clearTime: oldClearTime,
+                chars: oldContract.chars || [],
+                indicators: oldContract.indicators || []
+            };
+        }
+    }
 
     return normalized;
 }

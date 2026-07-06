@@ -270,11 +270,11 @@
 
     <div class="bg-white dark:bg-[#383838] border border-white/10 rounded-2xl p-4 mb-4 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
         
-        <div class="flex bg-black/30 p-1 rounded-xl border border-white/5 shrink-0">
+        <div class="flex bg-gray-100 dark:bg-black/30 p-1 rounded-xl shrink-0">
             <button
                 on:click={() => selectedEvent = "contract"}
                 class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors flex items-center gap-2
-                {selectedEvent === 'contract' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-400 hover:text-white'}"
+                {selectedEvent === 'contract' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
             >
                 <Icon name="contract" class="w-6 h-6" />
                 {$t("leaderboard.contract")}
@@ -283,7 +283,7 @@
                 on:click={() => selectedEvent = "monument"}
                 disabled
                 class="px-5 py-2.5 rounded-lg text-sm font-bold font-sdk transition-colors cursor-not-allowed flex items-center gap-2
-                {selectedEvent === 'monument' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-400 hover:text-white'}"
+                {selectedEvent === 'monument' ? 'bg-[#FFE145] text-gray-900' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 hover:dark:text-gray-300'}"
             >
                 <Icon name="monument" class="w-5 h-5" />
                 {$t("leaderboard.monument")}
@@ -378,7 +378,7 @@
                                             3
                                         </span>
                                     {:else}
-                                        <span class="text-gray-400 font-bold pl-2">{index + 1}</span>
+                                        <span class="text-gray-600 dark:text-gray-400 font-bold pl-2">{index + 1}</span>
                                     {/if}
                                 </td>
 
@@ -395,7 +395,7 @@
                                                 </a>
                                             {:else}
                                                 <a href="/u/{entry.user.name}" class="shrink-0" on:click|stopPropagation>
-                                                    <div class="w-9 h-9 rounded-md bg-white/10 border border-white/20 flex items-center justify-center text-white/70 font-bold text-xs shrink-0 select-none group-hover/user:bg-white/20 transition-colors">
+                                                    <div class="w-9 h-9 rounded-md bg-gray-200 border-gray-300 dark:bg-white/10 border dark:border-white/20 flex items-center justify-center text-gray-500 dark:text-white/70 font-bold text-xs shrink-0 select-none group-hover/user:bg-white/20 transition-colors">
                                                         {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
                                                     </div>
                                                 </a>
@@ -413,21 +413,21 @@
                                     </div>
                                 </td>
 
-                                <td class="py-2 px-3 text-gray-300">
+                                <td class="py-2 px-3 text-gray-600 dark:text-gray-300">
                                     {entry.level}
                                 </td>
 
                                 {#if selectedEvent === 'contract'}
-                                    <td class="py-2 px-6">
-                                        <ContractLevelTag level={entry.contractLevel || 0} />
+                                    <td class="py-2 px-3">
+                                        <ContractLevelTag className="max-w-[80px]" level={entry.contractLevel || 0} />
                                     </td>
                                 {/if}
 
-                                <td class="py-2 px-3 font-bold text-[#FFE145]">
+                                <td class="py-2 px-3 font-bold text-[#e8cc3c] dark:text-[#FFE145]">
                                     {formatTime(entry.clear_time)}
                                 </td>
 
-                                <td class="py-2 px-3 text-gray-400">
+                                <td class="py-2 px-3 text-gray-600 dark:text-gray-300">
                                     {formatRelativeTime(entry.updatedAt)}
                                 </td>
 
