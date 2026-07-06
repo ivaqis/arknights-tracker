@@ -599,7 +599,8 @@
     "enemiesResHint": "Affiche le multiplicateur de dégâts reçus selon la formule : Dégâts × Multiplicateur de résistance (%). Par exemple : 100 % — aucune réduction de dégâts, 50 % — les dégâts reçus par l'ennemi sont réduits de moitié. Résistance : 100 % - n % = m %, où n % est le multiplicateur de résistance et m % est la résistance.",
     "essence": "Essence",
     "none": "Sans Essence",
-    "addEssence": "Ajouter Essence"
+    "addEssence": "Ajouter Essence",
+    "usefulnessTooltip": "Nombre d'objets de ce type pour lesquels cet équipement est une bonne option"
   },
   "bioValues": {
     "Unknown": "Inconnu"

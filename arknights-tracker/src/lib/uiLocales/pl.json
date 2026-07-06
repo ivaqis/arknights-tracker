@@ -453,7 +453,8 @@
     "enemiesResHint": "Wyświetla mnożnik otrzymywanych obrażeń według wzoru: Obrażenia × Mnożnik odporności (%). Na przykład: 100% — brak redukcji obrażeń, 50% — obrażenia otrzymywane przez wroga są zmniejszone o połowę. Odporność: 100% - n% = m%, gdzie n% to mnożnik odporności, a m% to odporność.",
     "none": "Bez esencji",
     "essence": "Esencja",
-    "addEssence": "Dodaj esencję"
+    "addEssence": "Dodaj esencję",
+    "usefulnessTooltip": "Liczba przedmiotów tego typu, dla których ten sprzęt jest dobrym dopasowaniem"
   },
   "bioValues": {
     "Unknown": "Nieznane"

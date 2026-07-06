@@ -642,7 +642,8 @@
     "enemiesResHint": "Hiển thị hệ số sát thương nhận vào theo công thức: Sát thương × Hệ số Kháng (%). Ví dụ: 100% — không giảm sát thương, 50% — sát thương kẻ thù nhận vào giảm một nửa. Kháng: 100% - n% = m%, trong đó n% là hệ số kháng và m% là mức kháng.",
     "essence": "Tinh Chất",
     "none": "Không có Tinh Chất",
-    "addEssence": "Thêm Tinh Chất"
+    "addEssence": "Thêm Tinh Chất",
+    "usefulnessTooltip": "Số lượng trang bị thuộc loại này mà trang bị này là lựa chọn tốt"
   },
   "bioValues": {
     "Unknown": "Không rõ"

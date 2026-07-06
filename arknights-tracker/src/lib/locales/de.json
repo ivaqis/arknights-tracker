@@ -599,7 +599,8 @@
     "enemiesResHint": "Zeigt den Multiplikator des erlittenen Schadens nach der Formel: Schaden × Widerstandsmultiplikator (%). Zum Beispiel: 100% — keine Schadensverringerung, 50% — der erlittene Schaden wird halbiert. Widerstand: 100% - n% = m%, wobei n% der Widerstandsmultiplikator und m% der Widerstand ist.",
     "essence": "Essenz",
     "none": "Ohne Essenz",
-    "addEssence": "Essenz hinzufügen"
+    "addEssence": "Essenz hinzufügen",
+    "usefulnessTooltip": "Anzahl der Gegenstände dieses Typs, für die diese Ausrüstung eine gute Übereinstimmung ist"
   },
   "bioValues": {
     "Unknown": "Unbekannt"

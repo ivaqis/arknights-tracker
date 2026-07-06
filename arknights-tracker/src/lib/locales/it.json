@@ -599,7 +599,8 @@
     "enemiesResHint": "Mostra il moltiplicatore del danno ricevuto in base alla formula: Danno × Moltiplicatore di resistenza (%). Ad esempio: 100% — nessuna riduzione del danno, 50% — il danno ricevuto dal nemico è dimezzato. Resistenza: 100% - n% = m%, dove n% è il moltiplicatore di resistenza e m% è la resistenza.",
     "essence": "Essenza",
     "none": "Senza Essenza",
-    "addEssence": "Aggiungi Essenza"
+    "addEssence": "Aggiungi Essenza",
+    "usefulnessTooltip": "Numero di oggetti di questo tipo per i quali questo equipaggiamento è una buona corrispondenza"
   },
   "bioValues": {
     "Unknown": "Sconosciuto"

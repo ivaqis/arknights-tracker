@@ -973,7 +973,7 @@
                             <div class="flex flex-col border-b border-white/10 pb-1 mb-0.5">
                                 <span class="font-bold text-[#FFE145] text-sm">{wpnName}</span>
                                 <span class="text-[10px] text-gray-400 font-medium font-nums leading-none mt-1">
-                                    Lv. {wpn.level} • R{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}
+                                    Lv. {wpn.level} • P{wpn.refineLevel !== undefined ? wpn.refineLevel : 0}
                                 </span>
                             </div>
                             <div class="flex flex-col gap-1.5">

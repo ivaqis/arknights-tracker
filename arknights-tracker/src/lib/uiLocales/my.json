@@ -453,7 +453,8 @@
     "enemiesResHint": "Memaparkan pendarab kerosakan yang diterima mengikut formula: Kerosakan × Pendarab Rintangan (%). Sebagai contoh: 100% — tiada pengurangan kerosakan, 50% — kerosakan yang diterima oleh musuh dikurangkan separuh. Rintangan: 100% - n% = m%, di mana n% ialah pendarab rintangan dan m% ialah rintangan.",
     "none": "Tiada Esen",
     "essence": "Esen",
-    "addEssence": "Tambah Esen"
+    "addEssence": "Tambah Esen",
+    "usefulnessTooltip": "ဤစက်ပစ္စည်းသည် အဆင်ပြေသော တွဲဖက်မှုဖြစ်သည့် ဤအမျိုးအစား၏ ပစ္စည်းအရေအတွက်"
   },
   "bioValues": {
     "Unknown": "Tidak Diketahui"

@@ -285,7 +285,7 @@
                 <div
                     class="absolute z-20 right-1 top-1 pointer-events-auto blur-[0.2px] shadow-black"
                 >
-                    <Tooltip text={`R${currentPot}`} class="">
+                    <Tooltip text={`P${currentPot}`} class="">
                         <PotentialIcon pot={currentPot !== undefined ? currentPot : 0} size={30} />
                     </Tooltip>
                 </div>

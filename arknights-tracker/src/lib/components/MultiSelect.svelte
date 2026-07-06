@@ -80,7 +80,7 @@
             {#if opt.iconId}
               <div class="w-9 h-5 rounded-sm overflow-hidden flex-shrink-0 border border-black/10 dark:border-white/10">
                 <Image
-                  id={opt.iconId}
+                  id="{opt.iconId}.webp"
                   variant="banner-mini"
                   size="100%"
                   className="w-full h-full object-cover"

@@ -601,7 +601,8 @@
     "enemiesResHint": "Muestra el multiplicador de daño recibido según la fórmula: Daño × Multiplicador de resistencia (%). Por ejemplo: 100% — sin reducción de daño, 50% — el daño recibido por el enemigo se reduce a la mitad. Resistencia: 100% - n% = m%, donde n% es el multiplicador de resistencia y m% es la resistencia.",
     "essence": "Esencia",
     "none": "Sin Esencia",
-    "addEssence": "Añadir Esencia"
+    "addEssence": "Añadir Esencia",
+    "usefulnessTooltip": "Número de objetos de este tipo para los cuales este equipamiento es una buena opción"
   },
   "bioValues": {
     "Unknown": "Desconocido"

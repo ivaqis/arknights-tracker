@@ -642,7 +642,8 @@
     "enemiesResHint": "根據公式顯示受到的傷害倍率：傷害 × 抗性倍率（%）。例如：100% — 傷害不減少，50% — 敵人受到的傷害減半。抗性：100% - n% = m%，其中 n% 為抗性倍率，m% 為抗性。",
     "essence": "基質",
     "none": "無基質",
-    "addEssence": "添加基質"
+    "addEssence": "添加基質",
+    "usefulnessTooltip": "該部位中此裝備屬於較好適配的裝備數量"
   },
   "bioValues": {
     "Unknown": "未知"

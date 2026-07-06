@@ -453,7 +453,8 @@
     "enemiesResHint": "Näyttää saadun vahingon kertoimen kaavan mukaisesti: Vahinko × Vastustuskerroin (%). Esimerkiksi: 100 % — ei vahingonvähennystä, 50 % — vihollisen saama vahinko puolitetaan. Vastus: 100 % - n % = m %, jossa n % on vastustuskerroin ja m % on vastus.",
     "none": "Ilman esanssia",
     "essence": "Esanssi",
-    "addEssence": "Lisää esanssi"
+    "addEssence": "Lisää esanssi",
+    "usefulnessTooltip": "Tämän tyypin esineiden määrä, joille tämä varuste on hyvä valinta"
   },
   "bioValues": {
     "Unknown": "Tuntematon"

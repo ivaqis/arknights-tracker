@@ -719,7 +719,8 @@
     "enemiesResHint": "Displays the taken damage multiplier according to the formula: Damage × Resistance Multiplier (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved. Resistance: 100% - n% = m%, where n% is the resistance multiplier and m% is the resistance.",
     "essence": "Essence",
     "none": "No Essence",
-    "addEssence": "Add Essence"
+    "addEssence": "Add Essence",
+    "usefulnessTooltip": "Number of items of this type for which this gear is a Good Match"
   },
   "bioValues": {
     "Unknown": "Unknown"

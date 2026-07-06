@@ -180,6 +180,61 @@
         }
     }
 
+    $: usefulnessMap = (() => {
+        if (equipData.rarity !== 5) return {};
+        const slotItems = Object.entries(equipment)
+            .filter(([_, data]) => data.rarity === 5 && data.partType === equipData.partType)
+            .map(([eId, data]) => ({ id: eId, ...data }));
+
+        const usefulness = {};
+        for (const food of slotItems) {
+            const foodAttrs = food.displayAttr || [];
+            const foodNonDefAttrs = foodAttrs.filter((a) => a.attrType.toLowerCase() !== "def");
+            if (foodNonDefAttrs.length === 0) {
+                usefulness[food.id] = 0;
+                continue;
+            }
+            const matchAttr = foodNonDefAttrs[0];
+            const attrType = matchAttr.attrType;
+            const isInverted = attrType.toLowerCase().includes("damagetakenscalar");
+            const foodValues = matchAttr.values.filter((v) => v !== undefined && v !== null);
+            const foodBest = foodValues.length > 0
+                ? (isInverted ? Math.min(...foodValues.map(Math.abs)) : Math.max(...foodValues.map(Math.abs)))
+                : 0;
+
+            let matchesCount = 0;
+            for (const target of slotItems) {
+                if (target.id === food.id) continue;
+                const targetAttrs = target.displayAttr || [];
+                const targetAttr = targetAttrs.find((a) => a.attrType === attrType);
+                if (!targetAttr) continue;
+                const targetValues = targetAttr.values.filter((v) => v !== undefined && v !== null);
+                const targetBest = targetValues.length > 0
+                    ? (isInverted ? Math.min(...targetValues.map(Math.abs)) : Math.max(...targetValues.map(Math.abs)))
+                    : 0;
+
+                const isBetter = isInverted ? foodBest < targetBest : foodBest > targetBest;
+                if (isBetter) {
+                    matchesCount++;
+                }
+            }
+            usefulness[food.id] = matchesCount;
+        }
+        return usefulness;
+    })();
+
+    function getUsefulnessClass(val) {
+        if (val < 10) {
+            return "text-yellow-600 bg-yellow-500/10 dark:text-yellow-200 dark:bg-yellow-400/10";
+        } else if (val < 20) {
+            return "text-yellow-700 bg-yellow-500/10 dark:text-yellow-300 dark:bg-yellow-400/10";
+        } else if (val < 30) {
+            return "text-yellow-800 bg-yellow-500/15 dark:text-yellow-400 dark:bg-yellow-400/15";
+        } else {
+            return "text-yellow-900 bg-yellow-500/20 dark:text-yellow-500 dark:bg-yellow-400/20";
+        }
+    }
+
     $: artificingMatches = (() => {
         if (equipData.rarity !== 5) return [];
         if (!equipData.displayAttr) return [];
@@ -191,12 +246,15 @@
             (a) => a.attrType.toLowerCase() !== "def",
         );
         return targetAttrs.map((targetAttr) => {
+            const isInverted = targetAttr.attrType.toLowerCase().includes("damagetakenscalar");
             const targetValues = targetAttr.values.filter(
                 (v) => v !== undefined && v !== null,
             );
-            const targetMax =
+            const targetBest =
                 targetValues.length > 0
-                    ? Math.max(...targetValues.map(Math.abs))
+                    ? (isInverted
+                        ? Math.min(...targetValues.map(Math.abs))
+                        : Math.max(...targetValues.map(Math.abs)))
                     : 0;
             const matchesMapped = pool
                 .filter((food) => {
@@ -212,12 +270,15 @@
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
-                    const foodMax =
+                    const foodBest =
                         foodValues.length > 0
-                            ? Math.max(...foodValues.map(Math.abs))
+                            ? (isInverted
+                                ? Math.min(...foodValues.map(Math.abs))
+                                : Math.max(...foodValues.map(Math.abs)))
                             : 0;
 
-                    if (foodMax < targetMax) return false;
+                    const isWorse = isInverted ? foodBest > targetBest : foodBest < targetBest;
+                    if (isWorse) return false;
 
                     return true;
                 })
@@ -230,12 +291,16 @@
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
-                    const foodMax =
+                    const foodBest =
                         foodValues.length > 0
-                            ? Math.max(...foodValues.map(Math.abs))
+                            ? (isInverted
+                                ? Math.min(...foodValues.map(Math.abs))
+                                : Math.max(...foodValues.map(Math.abs)))
                             : 0;
 
-                    const isHigherStat = foodMax > targetMax;
+                    const isHigherStat = isInverted
+                        ? foodBest < targetBest
+                        : foodBest > targetBest;
                     const foodNonDefAttrs = foodAttrs.filter(
                         (a) => a.attrType.toLowerCase() !== "def",
                     );
@@ -245,29 +310,36 @@
                     const isGoodMatch = isHigherStat && isFirstStat;
                     const craftCost = (food.materials && food.materials.length > 0) ? food.materials[0].amount : Infinity;
 
-                    return { ...food, isGoodMatch, foodMax, isHigherStat, craftCost };
+                    return { ...food, isGoodMatch, foodMax: foodBest, isHigherStat, craftCost };
                 });
 
-            const absoluteMaxStat =
+            const absoluteBestStat =
                 matchesMapped.length > 0
-                    ? Math.max(...matchesMapped.map((m) => m.foodMax))
+                    ? (isInverted
+                        ? Math.min(...matchesMapped.map((m) => m.foodMax))
+                        : Math.max(...matchesMapped.map((m) => m.foodMax)))
                     : 0;
-            const matchesAtAbsoluteMax = matchesMapped.filter(m => m.foodMax === absoluteMaxStat);
-            const minCraftCostAtMaxStat = matchesAtAbsoluteMax.length > 0 
-                ? Math.min(...matchesAtAbsoluteMax.map(m => m.craftCost))
+            const matchesAtAbsoluteBest = matchesMapped.filter(m => m.foodMax === absoluteBestStat);
+            const minCraftCostAtBestStat = matchesAtAbsoluteBest.length > 0 
+                ? Math.min(...matchesAtAbsoluteBest.map(m => m.craftCost))
                 : 0;
 
             const matches = matchesMapped
                 .map((match) => {
+                    const isBetterThanTarget = isInverted
+                        ? match.foodMax < targetBest
+                        : match.foodMax > targetBest;
                     const isRecommended =
-                        match.foodMax > targetMax &&
-                        match.foodMax === absoluteMaxStat &&
-                        match.craftCost === minCraftCostAtMaxStat;
+                        isBetterThanTarget &&
+                        match.foodMax === absoluteBestStat &&
+                        match.craftCost === minCraftCostAtBestStat;
 
                     return { ...match, isRecommended };
                 })
                 .sort((a, b) => {
-                    if (b.foodMax !== a.foodMax) return b.foodMax - a.foodMax;
+                    if (b.foodMax !== a.foodMax) {
+                        return isInverted ? a.foodMax - b.foodMax : b.foodMax - a.foodMax;
+                    }
                     if (a.isRecommended && !b.isRecommended) return -1;
                     if (!a.isRecommended && b.isRecommended) return 1;
                     if (a.isGoodMatch && !b.isGoodMatch) return -1;
@@ -707,6 +779,7 @@
                                                         )}
                                                     </span>
                                                 {/if}
+
                                             </div>
 
                                             <div class="flex flex-col flex-1 min-w-0 pr-2">
@@ -759,20 +832,30 @@
                                                 </div>
                                             </div>
 
-                                            {#if match.craftCost !== Infinity && match.materials[0]}
-                                                <div class="absolute right-1 bottom-1 flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
-                                                    <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
-                                                        <Image
-                                                            id={match.materials[0].name}
-                                                            variant="item"
-                                                            className="max-w-full max-h-full object-contain drop-shadow-sm"
-                                                        />
+                                            <div class="absolute right-1 bottom-1 flex flex-col items-end gap-1">
+                                                {#if usefulnessMap[match.id] !== undefined}
+                                                    <Tooltip text={tOrFallback("stats.usefulnessTooltip", "Number of items of this type for which this gear is a Good Match")}>
+                                                        <span class="text-[10px] font-bold px-1 py-[1.5px] rounded-md select-none leading-none {getUsefulnessClass(usefulnessMap[match.id])}">
+                                                            {usefulnessMap[match.id]}
+                                                        </span>
+                                                    </Tooltip>
+                                                {/if}
+
+                                                {#if match.craftCost !== Infinity && match.materials[0]}
+                                                    <div class="flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
+                                                        <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
+                                                            <Image
+                                                                id={match.materials[0].name}
+                                                                variant="item"
+                                                                className="max-w-full max-h-full object-contain drop-shadow-sm"
+                                                            />
+                                                        </div>
+                                                        <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px">
+                                                            {match.craftCost}
+                                                        </span>
                                                     </div>
-                                                    <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px">
-                                                        {match.craftCost}
-                                                    </span>
-                                                </div>
-                                            {/if}
+                                                {/if}
+                                            </div>
                                         </div>
                                     {/each}
 

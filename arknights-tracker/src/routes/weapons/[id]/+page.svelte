@@ -694,7 +694,7 @@
                                             <div
                                                 class="mr-1 bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
                                             >
-                                                R{currentPot}
+                                                P{currentPot}
                                             </div>
                                         {/if}
 
