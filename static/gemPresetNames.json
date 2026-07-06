@@ -1,0 +1,82 @@
+[
+  {
+    "id": "item_preset_gem_1",
+    "name": "Turbid Essence"
+  },
+  {
+    "id": "item_preset_gem_2",
+    "name": "Stable Essence"
+  },
+  {
+    "id": "item_preset_gem_3",
+    "name": "Clean Essence"
+  },
+  {
+    "id": "item_preset_gem_4",
+    "name": "Pure Essence"
+  },
+  {
+    "id": "item_preset_gem_5",
+    "name": "Flawless Essence"
+  },
+  {
+    "id": "item_preset_gem_5_break",
+    "name": "Flawless Essence·Brutality"
+  },
+  {
+    "id": "item_preset_gem_5_burst",
+    "name": "Flawless Essence·Detonate"
+  },
+  {
+    "id": "item_preset_gem_5_combo",
+    "name": "Flawless Essence·Pursuit"
+  },
+  {
+    "id": "item_preset_gem_5_crit",
+    "name": "Flawless Essence·Fracture"
+  },
+  {
+    "id": "item_preset_gem_5_force",
+    "name": "Flawless Essence·Assault"
+  },
+  {
+    "id": "item_preset_gem_5_heal",
+    "name": "Flawless Essence·Medicant"
+  },
+  {
+    "id": "item_preset_gem_5_keyword",
+    "name": "Flawless Essence·Efficacy"
+  },
+  {
+    "id": "item_preset_gem_5_magabn",
+    "name": "Flawless Essence·Infliction"
+  },
+  {
+    "id": "item_preset_gem_5_no",
+    "name": "Flawless Essence"
+  },
+  {
+    "id": "item_preset_gem_5_phyabn",
+    "name": "Flawless Essence·Combative"
+  },
+  {
+    "id": "item_preset_gem_5_smash",
+    "name": "Flawless Essence·Crusher"
+  },
+  {
+    "id": "item_preset_gem_5_spirit",
+    "name": "Flawless Essence·Inspiring"
+  },
+  {
+    "id": "item_preset_gem_5_tacafter",
+    "name": "Flawless Essence·Flow"
+  },
+  {
+    "id": "item_preset_gem_5_tactic",
+    "name": "Flawless Essence·Suppression"
+  },
+  {
+    "id": "item_preset_gem_5_ult",
+    "name": "Flawless Essence·Twilight"
+  }
+]
