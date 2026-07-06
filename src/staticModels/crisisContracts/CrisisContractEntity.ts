@@ -1,4 +1,8 @@
+import { IndicatorEntity } from "@staticModels/crisisContracts/IndicatorEntity";
+
 export interface CrisisContractEntity {
     id: string;
-    isCurrent: boolean;
+    apiId: string;
+    isCurrent?: boolean;
+    indicators: IndicatorEntity[]
 }

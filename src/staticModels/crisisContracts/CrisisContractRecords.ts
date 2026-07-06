@@ -1,41 +1,38 @@
+import { CrisisContract } from "@staticModels/crisisContracts/CrisisContract";
 import { CrisisContractEntity } from "@staticModels/crisisContracts/CrisisContractEntity";
 import { RecordsModel } from "@staticModels/RecordsModel";
 
-export class CrisisContractRecords extends RecordsModel<CrisisContractEntity> {
-    private readonly _current: CrisisContractEntity;
+export class CrisisContractRecords {
+    private readonly _byId: RecordsModel<CrisisContract>;
+    private readonly _byApiId: RecordsModel<CrisisContract>;
+
+    private readonly _current: CrisisContract;
 
     public constructor(list: CrisisContractEntity[]) {
         CrisisContractRecords.hasCurrentCheck(list);
 
-        super(list, entity => entity.id, "CrisisContractRecords");
+        const objList = CrisisContractRecords.getList(list);
 
-        this._current = this.getCurrent();
+        this._byId = new RecordsModel(objList, obj => obj.id, "CrisisContractRecords.byId");
+        this._byApiId = new RecordsModel(objList, obj => obj.apiId, "CrisisContractRecords.byApiId");
+
+        this._current = CrisisContractRecords.getCurrent(objList);
     }
 
-    public get current(): CrisisContractEntity {
+    public get current(): CrisisContract {
         return this._current;
     }
 
-    public getContract(id: string): CrisisContractEntity | null {
-        return this.get(id);
+    public getContractById(id: string): CrisisContract | null {
+        return this._byId.get(id);
     }
 
-    public isCurrent(id: string): boolean {
-        const entity = this.getContract(id);
-
-        if (!entity) {
-            return false;
-        }
-
-        return entity.isCurrent;
+    public getContractByApiId(apiId: string): CrisisContract | null {
+        return this._byApiId.get(apiId);
     }
 
-    protected isValid(obj: CrisisContractEntity): boolean {
-        return true;
-    }
-
-    private getCurrent(): CrisisContractEntity {
-        for (const item of this._records.values()) {
+    private static getCurrent(list: CrisisContract[]): CrisisContract {
+        for (const item of list) {
             if (item.isCurrent) {
                 return item;
             }
@@ -60,5 +57,15 @@ export class CrisisContractRecords extends RecordsModel<CrisisContractEntity> {
         if (!has) {
             throw new Error("Must be one current crisis contract");
         }
+    }
+
+    private static getList(list: CrisisContractEntity[]): CrisisContract[] {
+        const result: CrisisContract[] = [];
+
+        for (const item of list) {
+            result.push(new CrisisContract(item));
+        }
+
+        return result;
     }
 }

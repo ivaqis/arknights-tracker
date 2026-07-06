@@ -1,12 +1,19 @@
 import { logger } from "@/logger";
 
-export abstract class RecordsModel<T extends object> {
+export class RecordsModel<T extends object> {
     protected readonly _records = new Map<string, T>();
+
+    private readonly _isValidFunc: (obj: T) => boolean;
 
     private readonly _name?: string;
 
-    protected constructor(list: T[], getIdFunc: (obj: T) => string, name?: string) {
+    public constructor(list: T[],
+                          getIdFunc: (obj: T) => string,
+                          name?: string,
+                          isValidFunc: (obj: T) => boolean = () => true
+    ) {
         this._name = name;
+        this._isValidFunc = isValidFunc;
         this.initRecords(list, getIdFunc);
     }
 
@@ -26,7 +33,9 @@ export abstract class RecordsModel<T extends object> {
         return "";
     }
 
-    protected abstract isValid(obj: T): boolean;
+    protected isValid(obj: T): boolean {
+        return this._isValidFunc(obj);
+    }
 
     private initRecords(list: T[], getIdFunc: (obj: T) => string) {
         logger.debug(`${this.namePrefix}Initializing...`);
