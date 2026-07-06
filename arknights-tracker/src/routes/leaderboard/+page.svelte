@@ -246,13 +246,15 @@
     }
 </script>
 
-<div class="max-w-[1600px] mx-auto w-full pb-20">
+<div class="max-w-[1600px] mx-auto w-full pb-10">
     
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 font-sdk">
         <div>
-            <h1 class="font-sdk dark:text-[#FDFDFD] text-5xl font-black text-[#21272C] mb-2">
-                {$t("leaderboard.title")} (Beta)
-            </h1>
+            <h2
+                class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
+            >
+                {$t("leaderboard.title")}
+            </h2>
         </div>
 
         {#if !$user}
@@ -268,7 +270,7 @@
         {/if}
     </div>
 
-    <div class="bg-white dark:bg-[#383838] border border-white/10 rounded-2xl p-4 mb-4 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div class="bg-white dark:bg-[#383838] border border-white/10 rounded-2xl p-4 mb-4 shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         
         <div class="flex bg-gray-100 dark:bg-black/30 p-1 rounded-xl shrink-0">
             <button
@@ -290,11 +292,11 @@
             </button>
         </div>
 
-        <div class="flex items-center gap-3 text-sm w-full md:w-auto">
+        <div class="flex items-center gap-3 text-sm w-full lg:w-auto">
             <Select
                 options={serverOptions}
                 bind:value={serverFilter}
-                className="w-full md:w-48"
+                className="w-full lg:w-48"
                 variant="gray" 
             />
         </div>
@@ -310,7 +312,7 @@
         </div>
     {:else}
         <div class="bg-white dark:bg-[#383838] border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm" in:fade>
-            <div class="overflow-x-auto">
+            <div class="hidden md:block overflow-x-auto">
                 <table class="w-full text-left border-collapse text-sm">
                     <thead>
                         <tr class="border-b border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 text-gray-600 dark:text-gray-300 text-xs tracking-wider">
@@ -475,43 +477,134 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="block md:hidden divide-y divide-gray-200 dark:divide-white/10">
+                {#each filteredEntries as entry, index}
+                    <!-- svelte-ignore a11y-click-events-have-key-events -->
+                    <!-- svelte-ignore a11y-no-static-element-interactions -->
+                    <div 
+                        on:click={() => selectEntry(entry)}
+                        class="p-4 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors cursor-pointer flex flex-col gap-1.5"
+                    >
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                {#if index === 0}
+                                    <span class="w-6 h-6 rounded-full bg-[#FFE145] text-gray-900 font-black flex items-center justify-center text-xs" title="1st Place">
+                                        1
+                                    </span>
+                                {:else if index === 1}
+                                    <span class="w-6 h-6 rounded-full bg-[#C0C0C0] text-gray-900 font-black flex items-center justify-center text-xs" title="2nd Place">
+                                        2
+                                    </span>
+                                {:else if index === 2}
+                                    <span class="w-6 h-6 rounded-full bg-[#CD7F32] text-white font-black flex items-center justify-center text-xs" title="3rd Place">
+                                        3
+                                    </span>
+                                {:else}
+                                    <span class="text-gray-500 dark:text-gray-400 font-bold text-sm w-6 text-center">{index + 1}</span>
+                                {/if}
+
+                                <div class="flex items-center gap-2">
+                                    {#if entry.user.picture && entry.user.avatar_strike === 0}
+                                        <img
+                                            src={getAvatarUrl(entry.user.picture)}
+                                            alt={entry.user.name}
+                                            class="w-8 h-8 rounded object-cover border border-gray-200 dark:border-white/10"
+                                        />
+                                    {:else}
+                                        <div class="w-8 h-8 rounded bg-gray-100 dark:bg-white/10 border border-gray-300 dark:border-white/20 flex items-center justify-center text-gray-700 dark:text-white/70 font-bold text-xs select-none">
+                                            {entry.user.name ? entry.user.name[0].toUpperCase() : "?"}
+                                        </div>
+                                    {/if}
+                                    <div class="flex flex-col">
+                                        <span class="font-bold text-gray-900 dark:text-white text-sm">{entry.user.name}</span>
+                                        <span class="text-[10px] text-gray-500 dark:text-gray-400">
+                                            Lvl {entry.level} &bull; {getServerName(entry.serverId)}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col items-end gap-1">
+                                <span class="text-amber-600 dark:text-[#FFE145] font-black text-sm">
+                                    {formatTime(entry.clear_time)}
+                                </span>
+                                {#if selectedEvent === 'contract'}
+                                    <ContractLevelTag className="scale-90 origin-right" level={entry.contractLevel || 0} />
+                                {/if}
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between mt-1">
+                            <div class="flex items-center gap-1.5">
+                                {#each (entry.chars || []).slice(0, 4) as char}
+                                    {@const opData = getOperatorData(char)}
+                                    <div class="relative">
+                                        <img
+                                            src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
+                                            alt={opData.name}
+                                            class="w-9 h-9 rounded bg-white/10 border border-gray-200 dark:border-white/10 object-cover"
+                                            on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
+                                        />
+                                        {#if char.weapon}
+                                            {@const wpnData = getWeaponData(char.weapon)}
+                                            {@const wpnRarity = wpnData?.rarity || char.weapon.rarity || 4}
+                                            <img
+                                                src={`/images/weapons/${wpnData?.id || char.weapon.id}.png`}
+                                                alt={wpnData.name}
+                                                class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full border bg-black object-contain"
+                                                style="border-color: {getRarityColor(wpnRarity)}80;"
+                                                on:error={(e) => e.target.style.display = 'none'}
+                                            />
+                                        {/if}
+                                    </div>
+                                {/each}
+                            </div>
+
+                            <span class="text-[10px] text-gray-500 dark:text-gray-400">
+                                {formatRelativeTime(entry.updatedAt)}
+                            </span>
+                        </div>
+                    </div>
+                {/each}
+            </div>
         </div>
     {/if}
 
     <Modal isOpen={!!selectedEntry} on:close={() => selectEntry(null)}>
         {#if selectedEntry}
-            <div class="bg-[#242424] border border-white/10 rounded-2xl p-6 md:p-8 w-full max-w-lg shadow-2xl relative cursor-auto" transition:fly={{ y: 50 }}>
+            <div class="bg-white dark:bg-[#242424] border border-gray-200 dark:border-white/10 rounded-2xl p-6 md:p-8 w-full max-w-lg shadow-2xl relative cursor-auto" transition:fly={{ y: 50 }}>
                 <button
                     on:click={() => selectEntry(null)}
-                    class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                 >
                     <Icon name="close" class="w-6 h-6" />
                 </button>
 
-                <div class="flex items-center gap-4 border-b border-white/10 pb-4 mb-6">
+                <div class="flex items-center gap-4 border-b border-gray-200 dark:border-white/10 pb-4 mb-6">
                     {#if selectedEntry.user.picture && selectedEntry.user.avatar_strike === 0}
                         <a href="/u/{selectedEntry.user.name}">
                             <img
                                 src={getAvatarUrl(selectedEntry.user.picture)}
                                 alt={selectedEntry.user.name}
-                                class="w-14 h-14 rounded-xl object-cover border border-white/10 hover:opacity-85 transition-opacity"
+                                class="w-14 h-14 rounded-xl object-cover border border-gray-200 dark:border-white/10 hover:opacity-85 transition-opacity"
                             />
                         </a>
                     {:else}
                         <a href="/u/{selectedEntry.user.name}">
-                            <div class="w-14 h-14 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white/70 font-bold text-lg select-none hover:bg-white/20 transition-colors">
+                            <div class="w-14 h-14 rounded-xl bg-gray-100 dark:bg-white/10 border border-gray-300 dark:border-white/20 flex items-center justify-center text-gray-700 dark:text-white/70 font-bold text-lg select-none hover:bg-gray-200 dark:hover:bg-white/20 transition-colors">
                                 {selectedEntry.user.name ? selectedEntry.user.name[0].toUpperCase() : "?"}
                             </div>
                         </a>
                     {/if}
                     <div>
-                        <h4 class="text-xl font-bold dark:text-white text-gray-900 font-sdk">
-                            <a href="/u/{selectedEntry.user.name}" class="inline-flex items-center gap-1 hover:text-[#FFE145] transition-colors group">
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white font-sdk">
+                            <a href="/u/{selectedEntry.user.name}" class="inline-flex items-center gap-1 hover:text-[#d9a009] dark:hover:text-[#FFE145] transition-colors group">
                                 <span>{selectedEntry.user.name}</span>
-                                <Icon name="sendToLink" class="w-4 h-4 text-gray-400 group-hover:text-[#FFE145] transition-colors shrink-0" />
+                                <Icon name="sendToLink" class="w-4 h-4 text-gray-400 group-hover:text-[#d9a009] dark:group-hover:text-[#FFE145] transition-colors shrink-0" />
                             </a>
                         </h4>
-                        <div class="text-xs text-gray-400 mt-1">
+                        <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">
                             Level {selectedEntry.level} &bull; {getServerName(selectedEntry.serverId)}
                         </div>
                     </div>
@@ -519,8 +612,8 @@
 
                 {#if runDetailsLoading}
                     <div class="flex flex-col items-center justify-center py-12 gap-3">
-                        <Icon name="loading" class="w-8 h-8 text-[#FFE145] animate-spin" />
-                        <span class="text-xs text-gray-400">{$t("leaderboard.loading_details")}</span>
+                        <Icon name="loading" class="w-8 h-8 text-[#d9a009] dark:text-[#FFE145] animate-spin" />
+                        <span class="text-xs text-gray-500 dark:text-gray-400">{$t("leaderboard.loading_details")}</span>
                     </div>
                 {:else if selectedRunDetails}
                     {#if selectedEvent === 'contract'}
@@ -532,39 +625,39 @@
                             transparent={true}
                         />
                     {:else}
-                        <div class="bg-black/20 rounded-xl p-4 mb-6 text-sm border border-white/5">
+                        <div class="bg-gray-50 dark:bg-black/20 rounded-xl p-4 mb-6 text-sm border border-gray-200 dark:border-white/5">
                             <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-400">Event:</span>
-                                <span class="text-white font-bold font-sdk">
+                                <span class="text-gray-500 dark:text-gray-400">Event:</span>
+                                <span class="text-gray-900 dark:text-white font-bold font-sdk">
                                     {$t("leaderboard.monument")}
                                 </span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-400">{$t("leaderboard.time")}:</span>
-                                <span class="text-[#FFE145] font-black text-lg">
+                                <span class="text-gray-500 dark:text-gray-400">{$t("leaderboard.time")}:</span>
+                                <span class="text-amber-600 dark:text-[#FFE145] font-black text-lg">
                                     {formatTime(selectedEntry.clear_time)}
                                 </span>
                             </div>
                         </div>
 
-                        <h5 class="text-xs uppercase tracking-wider text-gray-400 font-black mb-3">
+                        <h5 class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-black mb-3">
                             {$t("leaderboard.team")}
                         </h5>
                         
                         <div class="grid grid-cols-2 gap-4">
                             {#each (selectedRunDetails.chars || selectedEntry.chars || []).slice(0, 4) as char}
                                 {@const opData = getOperatorData(char)}
-                                <div class="bg-white/5 border border-white/10 rounded-xl p-3 flex items-center gap-3">
+                                <div class="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl p-3 flex items-center gap-3">
                                     <img
                                         src={opData.id.startsWith('http') ? opData.id : `/images/operators/icons/${opData.id}.png`}
                                         alt={opData.name}
-                                        class="w-12 h-12 rounded bg-white/10 border border-white/20 object-cover"
+                                        class="w-12 h-12 rounded bg-gray-100 dark:bg-white/10 border border-gray-300 dark:border-white/20 object-cover"
                                         on:error={(e) => e.target.src = '/images/operators/icons/endministrator1.png'}
                                     />
                                     <div class="min-w-0 flex-1">
-                                        <div class="text-xs font-bold text-white truncate">{opData.name}</div>
-                                        <div class="text-[10px] text-gray-400 mt-0.5">Lvl {char.level || 1}</div>
-                                        <div class="text-[8px] text-[#FFE145] font-black mt-0.5">
+                                        <div class="text-xs font-bold text-gray-900 dark:text-white truncate">{opData.name}</div>
+                                        <div class="text-[10px] text-gray-500 dark:text-gray-400 mt-0.5">Lvl {char.level || 1}</div>
+                                        <div class="text-[8px] text-amber-500 dark:text-[#FFE145] font-black mt-0.5">
                                             {#each Array(char.potential || 1) as _}
                                                 ★
                                             {/each}
@@ -575,7 +668,7 @@
                         </div>
                     {/if}
                 {:else}
-                    <div class="text-center py-10 text-gray-400 italic">
+                    <div class="text-center py-10 text-gray-500 dark:text-gray-400 italic">
                         Failed to load details.
                     </div>
                 {/if}

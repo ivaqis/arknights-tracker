@@ -898,11 +898,11 @@
                             <div class="flex flex-col flex-1 min-w-0 ml-1">
                                 <div class="flex flex-col items-end w-full min-w-0">
                                     <div class="flex flex-row-reverse overflow-visible w-full mr-[-40px]">
-                                        <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0 mr-[-32px]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
+                                        <h4 class="text-md font-black text-white leading-tight text-nowrap shrink-0 mr-[-22px]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.85);">
                                             {wpnName}
                                         </h4>
                                     </div>
-                                    <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-75px] z-40">
+                                    <div class="flex items-center mt-2 select-none -space-x-1.5 mr-[-67px] z-40">
                                         {#each Array(wpnStatic?.rarity || wpn.rarity || 5) as _}
                                             <Icon name="strokeStar" class="shrink-0 w-7 h-7 text-gray-600 dark:text-white" />
                                         {/each}

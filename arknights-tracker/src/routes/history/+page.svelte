@@ -245,10 +245,10 @@
 </script>
 
 <div class="relative flex flex-col w-full text-[#21272C] dark:text-[#FDFDFD]">
-    <div class="flex items-center gap-4 mb-1 shrink-0">
+    <div class="flex items-center gap-4 mb-1 shrink-0 font-sdk">
         <h2
-            class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3 mb-3"
-        >
+                class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
+            >
             {$t("pages.bannerHistory") || "Banners History"}
         </h2>
     </div>
