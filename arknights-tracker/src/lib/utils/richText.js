@@ -147,23 +147,35 @@ function isTouchPreventingHover() {
 
 export function hyperlinkAction(node) {
     let tooltipEl = null;
-    let hoverListeners = [];
+    let parentListeners = [];
+    let tooltipListeners = [];
     let activeTerm = null;
     let unsubscribeT = null;
     let observer = null;
+    let isPinned = false;
+    let tooltipStack = [];
+    let hideTimeout = null;
 
     function cleanup() {
         cleanupTooltip();
-        hoverListeners.forEach(cleanupListener => cleanupListener());
-        hoverListeners = [];
+        parentListeners.forEach(cleanupListener => cleanupListener());
+        parentListeners = [];
     }
 
     function cleanupTooltip() {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+        tooltipListeners.forEach(cleanupListener => cleanupListener());
+        tooltipListeners = [];
         if (tooltipEl) {
             tooltipEl.remove();
             tooltipEl = null;
         }
         activeTerm = null;
+        isPinned = false;
+        tooltipStack = [];
         window.removeEventListener('scroll', cleanupTooltip);
         window.removeEventListener('resize', cleanupTooltip);
         document.removeEventListener('click', handleDocumentClick);
@@ -182,11 +194,138 @@ export function hyperlinkAction(node) {
         initTimeout = setTimeout(init, 0);
     }
 
-    function init() {
-        cleanup();
+    function renderStack() {
+        if (!tooltipEl || tooltipStack.length === 0) {
+            cleanupTooltip();
+            return;
+        }
 
-        const terms = node.querySelectorAll('.rich-term');
+        let html = `
+            <style>
+                .tooltip-history-title:hover {
+                    color: #facc15 !important;
+                }
+                .tooltip-history-title:hover span {
+                    opacity: 1 !important;
+                }
+            </style>
+        `;
+
+        tooltipStack.forEach((card, index) => {
+            const isLast = index === tooltipStack.length - 1;
+            
+            html += `<div class="tooltip-card" style="${index > 0 ? 'border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; margin-top: 8px;' : ''}">`;
+
+            const titleImgName = `icon_term_${card.termId.replace(/\./g, '_')}.png`;
+            const titleImgSrc = `/images/textIcons/${titleImgName}`;
+            
+            let backButtonHtml = '';
+            if (isLast && index > 0) {
+                backButtonHtml = `
+                    <button class="tooltip-back-btn" style="margin-left: auto; background: rgba(255,255,255,0.08); border: none; color: #a1a1aa; font-size: 10px; font-weight: 700; cursor: pointer; padding: 2px 6px; border-radius: 4px; display: flex; align-items: center; gap: 3px; outline: none; -webkit-tap-highlight-color: transparent;">
+                        <svg viewBox="0 0 16 16" fill="currentColor" style="width:10px;height:10px;"><path d="M9.707 13.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 8l4.293 4.293a1 1 0 010 1.414z"/></svg>Back
+                    </button>
+                `;
+            }
+
+            let historyClass = '';
+            let historyStyle = '';
+            if (!isLast) {
+                historyClass = 'tooltip-history-title';
+                historyStyle = 'cursor: pointer; transition: color 0.2s;';
+            }
+
+            const titleHtml = `
+                <div class="${historyClass}" data-index="${index}" style="font-weight:700; ${isLast ? 'border-bottom:1px solid rgba(255,255,255,0.15); padding-bottom:4px; margin-bottom:4px;' : ''} font-size:13px; letter-spacing:0.025em; color:${isLast ? '#facc15' : '#a1a1aa'}; display:flex; align-items:center; gap:4px; ${historyStyle}">
+                    <img src="${titleImgSrc}" style="width:20px;height:20px;display:none;flex-shrink:0;vertical-align:text-bottom; filter: ${isLast ? 'none' : 'grayscale(100%) opacity(50%)'};" onload="this.style.display='inline-block'" />
+                    <span style="${isLast ? '' : 'opacity: 0.7;'}">${card.title}</span>
+                    ${backButtonHtml}
+                </div>
+            `;
+            
+            html += titleHtml;
+
+            if (isLast) {
+                const parsedDesc = parseRichText(card.desc);
+                const descHtml = `<div style="font-size:11px;color:#e5e7eb;">${parsedDesc}</div>`;
+                html += descHtml;
+            }
+
+            html += `</div>`;
+        });
+
+        tooltipEl.innerHTML = html;
+
+        tooltipListeners.forEach(cleanupListener => cleanupListener());
+        tooltipListeners = [];
+
+        bindTerms(tooltipEl, true);
+
+        const backBtn = tooltipEl.querySelector('.tooltip-back-btn');
+        if (backBtn) {
+            backBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                tooltipStack.pop();
+                if (tooltipStack.length > 0) {
+                    activeTerm = tooltipStack[tooltipStack.length - 1].termElement;
+                }
+                renderStack();
+            });
+        }
+
+        const historyTitles = tooltipEl.querySelectorAll('.tooltip-history-title');
+        historyTitles.forEach(titleEl => {
+            titleEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const targetIndex = parseInt(titleEl.getAttribute('data-index'));
+                if (!isNaN(targetIndex) && targetIndex < tooltipStack.length - 1) {
+                    tooltipStack = tooltipStack.slice(0, targetIndex + 1);
+                    activeTerm = tooltipStack[tooltipStack.length - 1].termElement;
+                    renderStack();
+                }
+            });
+        });
+
+        const imgs = tooltipEl.querySelectorAll('img');
+        imgs.forEach(img => {
+            if (!img.complete) {
+                img.addEventListener('load', updatePosition);
+            }
+        });
+
+        updatePosition();
+    }
+
+    function updatePosition() {
+        if (!tooltipEl || tooltipStack.length === 0) return;
+        const anchorCard = tooltipStack[0];
+        if (!anchorCard || !anchorCard.termElement) return;
+        const termRect = anchorCard.termElement.getBoundingClientRect();
+        const tooltipRect = tooltipEl.getBoundingClientRect();
+
+        let left = termRect.left + (termRect.width - tooltipRect.width) / 2;
+        if (left < 10) {
+            left = 10;
+        } else if (left + tooltipRect.width > window.innerWidth - 10) {
+            left = window.innerWidth - tooltipRect.width - 10;
+        }
+
+        tooltipEl.style.left = `${left}px`;
+
+        let top = termRect.top - tooltipRect.height - 8;
+        if (top < 10) {
+            tooltipEl.style.top = `${termRect.bottom + 8}px`;
+            tooltipEl.style.bottom = 'auto';
+        } else {
+            tooltipEl.style.bottom = `${window.innerHeight - termRect.top + 8}px`;
+            tooltipEl.style.top = 'auto';
+        }
+    }
+
+    function bindTerms(container, isTooltip = false) {
+        const terms = container.querySelectorAll('.rich-term');
         const tFunc = get(t);
+        const targetListeners = isTooltip ? tooltipListeners : parentListeners;
 
         terms.forEach(term => {
             const termId = term.getAttribute('data-term-id');
@@ -199,20 +338,53 @@ export function hyperlinkAction(node) {
             if (hasTooltip) {
                 term.style.cursor = 'default';
 
-                const showTooltip = () => {
+                const showTooltip = (pin = false, isNested = false) => {
+                    if (hideTimeout) {
+                        clearTimeout(hideTimeout);
+                        hideTimeout = null;
+                    }
+                    if (isPinned && !pin) return;
+                    if (pin) {
+                        isPinned = true;
+                    }
+
+                    if (isPinned && tooltipEl && isNested) {
+                        tooltipStack.push({
+                            termId,
+                            title: tooltipTitle,
+                            desc: tooltipDesc,
+                            termElement: term
+                        });
+                        activeTerm = term;
+                        renderStack();
+                        return;
+                    }
+
                     cleanupTooltip();
+                    if (pin) {
+                        isPinned = true;
+                    }
                     activeTerm = term;
+
+                    tooltipStack = [{
+                        termId,
+                        title: tooltipTitle,
+                        desc: tooltipDesc,
+                        termElement: term
+                    }];
 
                     tooltipEl = document.createElement('div');
                     tooltipEl.style.cssText = `
                         position: fixed;
+                        left: -9999px;
+                        top: -9999px;
                         padding: 10px 14px;
                         background: #0a0a0f;
                         color: #e5e5e5;
                         font-size: 12px;
                         border-radius: 10px;
                         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
-                        pointer-events: none;
+                        pointer-events: auto;
                         z-index: 999999;
                         max-width: 280px;
                         white-space: normal;
@@ -223,15 +395,28 @@ export function hyperlinkAction(node) {
                         display: block !important;
                     `;
 
-                    const titleImgName = `icon_term_${termId.replace(/\./g, '_')}.png`;
-                    const titleImgSrc = `/images/textIcons/${titleImgName}`;
-                    const titleHtml = `<div style="font-weight:700;border-bottom:1px solid rgba(255,255,255,0.2);padding-bottom:4px;margin-bottom:4px;font-size:13px;letter-spacing:0.025em;color:#facc15;display:flex;align-items:center;gap:2px;"><img src="${titleImgSrc}" style="width:20px;height:20px;display:none;flex-shrink:0;vertical-align:text-bottom;" onload="this.style.display='inline-block'" />${tooltipTitle}</div>`;
-                    
-                    const parsedDesc = parseRichText(tooltipDesc);
-                    const descHtml = `<div style="font-size:11px;color:#e5e7eb;">${parsedDesc}</div>`;
-                    tooltipEl.innerHTML = titleHtml + descHtml;
-
                     document.body.appendChild(tooltipEl);
+
+                    // Hover grace period listeners on the tooltip itself
+                    const onTooltipMouseEnter = () => {
+                        if (hideTimeout) {
+                            clearTimeout(hideTimeout);
+                            hideTimeout = null;
+                        }
+                    };
+                    const onTooltipMouseLeave = () => {
+                        hideTooltip();
+                    };
+
+                    tooltipEl.addEventListener('mouseenter', onTooltipMouseEnter);
+                    tooltipEl.addEventListener('mouseleave', onTooltipMouseLeave);
+
+                    tooltipListeners.push(() => {
+                        if (tooltipEl) {
+                            tooltipEl.removeEventListener('mouseenter', onTooltipMouseEnter);
+                            tooltipEl.removeEventListener('mouseleave', onTooltipMouseLeave);
+                        }
+                    });
 
                     window.addEventListener('scroll', cleanupTooltip, { passive: true });
                     window.addEventListener('resize', cleanupTooltip, { passive: true });
@@ -240,47 +425,20 @@ export function hyperlinkAction(node) {
                         document.addEventListener('click', handleDocumentClick);
                     }, 0);
 
-                    const imgs = tooltipEl.querySelectorAll('img');
-                    imgs.forEach(img => {
-                        if (!img.complete) {
-                            img.addEventListener('load', updatePosition);
-                        }
-                    });
-
-                    updatePosition();
+                    renderStack();
                 };
 
                 const hideTooltip = () => {
-                    cleanupTooltip();
-                };
-
-                const updatePosition = () => {
-                    if (!tooltipEl) return;
-                    const termRect = term.getBoundingClientRect();
-                    const tooltipRect = tooltipEl.getBoundingClientRect();
-
-                    let left = termRect.left + (termRect.width - tooltipRect.width) / 2;
-                    if (left < 10) {
-                        left = 10;
-                    } else if (left + tooltipRect.width > window.innerWidth - 10) {
-                        left = window.innerWidth - tooltipRect.width - 10;
-                    }
-
-                    tooltipEl.style.left = `${left}px`;
-
-                    let top = termRect.top - tooltipRect.height - 8;
-                    if (top < 10) {
-                        tooltipEl.style.top = `${termRect.bottom + 8}px`;
-                        tooltipEl.style.bottom = 'auto';
-                    } else {
-                        tooltipEl.style.bottom = `${window.innerHeight - termRect.top + 8}px`;
-                        tooltipEl.style.top = 'auto';
-                    }
+                    if (isPinned) return;
+                    if (hideTimeout) clearTimeout(hideTimeout);
+                    hideTimeout = setTimeout(() => {
+                        cleanupTooltip();
+                    }, 150);
                 };
 
                 const handleMouseEnter = () => {
                     if (isTouchPreventingHover()) return;
-                    showTooltip();
+                    showTooltip(false, isTooltip);
                 };
 
                 const handleMouseLeave = () => {
@@ -291,23 +449,36 @@ export function hyperlinkAction(node) {
                 const handleClick = (e) => {
                     e.stopPropagation();
                     if (tooltipEl && activeTerm === term) {
-                        cleanupTooltip();
+                        if (isPinned) {
+                            cleanupTooltip();
+                        } else {
+                            isPinned = true;
+                        }
                     } else {
-                        showTooltip();
+                        showTooltip(true, isTooltip);
                     }
                 };
 
-                term.addEventListener('mouseenter', handleMouseEnter);
-                term.addEventListener('mouseleave', handleMouseLeave);
+                if (!isTooltip) {
+                    term.addEventListener('mouseenter', handleMouseEnter);
+                    term.addEventListener('mouseleave', handleMouseLeave);
+                }
                 term.addEventListener('click', handleClick);
 
-                hoverListeners.push(() => {
-                    term.removeEventListener('mouseenter', handleMouseEnter);
-                    term.removeEventListener('mouseleave', handleMouseLeave);
+                targetListeners.push(() => {
+                    if (!isTooltip) {
+                        term.removeEventListener('mouseenter', handleMouseEnter);
+                        term.removeEventListener('mouseleave', handleMouseLeave);
+                    }
                     term.removeEventListener('click', handleClick);
                 });
             }
         });
+    }
+
+    function init() {
+        cleanup();
+        bindTerms(node, false);
     }
 
     let unsubscribeReady = null;
@@ -339,6 +510,9 @@ export function hyperlinkAction(node) {
             cleanup();
             if (initTimeout) {
                 clearTimeout(initTimeout);
+            }
+            if (hideTimeout) {
+                clearTimeout(hideTimeout);
             }
             if (unsubscribeReady) {
                 unsubscribeReady();
