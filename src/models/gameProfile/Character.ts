@@ -1,7 +1,7 @@
 import { logger } from "@/logger";
 import { CharSkill } from "@models/gameProfile/CharSkill";
 import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
-import { Weapon } from "@models/gameProfile/entities/Weapon";
+import { Weapon } from "@models/gameProfile/Weapon";
 import { Equip } from "@models/gameProfile/Equip";
 import { TacticalItem } from "@models/gameProfile/TacticalItem";
 import { Talent } from "@models/gameProfile/Talent";
