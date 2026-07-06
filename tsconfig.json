@@ -4,11 +4,11 @@
     "module": "commonjs",
     "lib": ["ES2022"],
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
+    "tsBuildInfoFile": "./tsconfig.tsbuildinfo",
 
     "strict": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
 
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -18,7 +18,7 @@
 
     "sourceMap": true,
     "skipLibCheck": true,
-    "incremental": false,
+    "incremental": true,
 
     "baseUrl": ".",
     "paths": {
@@ -33,6 +33,10 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["./src"],
+  "exclude": ["node_modules", "dist"],
+  "tsc-alias": {
+    "resolveFullPaths": true,
+    "resolveFullExtension": ".js"
+  }
 }
