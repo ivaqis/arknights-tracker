@@ -1,25 +1,54 @@
-export abstract class RecordsModel<T> {
-    protected readonly _records: Record<string, T>;
+import { logger } from "@/logger";
 
-    protected constructor(list: T[], getIdFunc: (obj: T) => string) {
-        this._records = this.getRecords(list, getIdFunc);
+export abstract class RecordsModel<T extends object> {
+    protected readonly _records = new Map<string, T>();
+
+    private readonly _name?: string;
+
+    protected constructor(list: T[], getIdFunc: (obj: T) => string, name?: string) {
+        this._name = name;
+        this.initRecords(list, getIdFunc);
     }
 
     public get(id: string): T | null {
-        return this._records[id] ?? null;
+        return this._records.get(id) ?? null;
+    }
+
+    public get name(): string | null {
+        return this._name ?? null;
+    }
+
+    protected get namePrefix(): string {
+        if (this.name) {
+            return `${this.name}: `;
+        }
+
+        return "";
     }
 
     protected abstract isValid(obj: T): boolean;
 
-    private getRecords(list: T[], getIdFunc: (obj: T) => string): Record<string, T> {
-        let result: Record<string, T> = {};
+    private initRecords(list: T[], getIdFunc: (obj: T) => string) {
+        logger.debug(`${this.namePrefix}Initializing...`);
+
+        const map = this._records;
 
         for (const item of list) {
+            let key = getIdFunc(item);
+
+            if (map.has(key)) {
+                logger.warn(`${this.namePrefix}Key ${key} is already in map`);
+
+                continue;
+            }
+
             if (this.isValid(item)) {
-                result[getIdFunc(item)] = item;
+                map.set(key, item);
+            } else {
+                logger.warn(`${this.namePrefix}Item is invalid:\n${item}`);
             }
         }
 
-        return result;
+        logger.info(`${this.namePrefix}Initializing completed (${this._records.size})`);
     }
 }

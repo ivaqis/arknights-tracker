@@ -7,7 +7,7 @@ import { RecordsModel } from "@staticModels/RecordsModel";
 export class BannerRecords extends RecordsModel<BannerEntity> {
 
     public constructor(list: BannerEntity[]) {
-        super(list, (entity) => entity.id);
+        super(list, (entity) => entity.id, "BannerRecords");
     }
 
     public getBanner(id: string): Banner | null {
