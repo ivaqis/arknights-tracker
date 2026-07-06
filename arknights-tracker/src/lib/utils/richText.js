@@ -200,6 +200,9 @@ export function hyperlinkAction(node) {
             return;
         }
 
+        const tFunc = get(t);
+        const backText = tFunc("home.go_back") || "Back";
+
         let html = `
             <style>
                 .tooltip-history-title:hover {
@@ -223,7 +226,7 @@ export function hyperlinkAction(node) {
             if (isLast && index > 0) {
                 backButtonHtml = `
                     <button class="tooltip-back-btn" style="margin-left: auto; background: rgba(255,255,255,0.08); border: none; color: #a1a1aa; font-size: 10px; font-weight: 700; cursor: pointer; padding: 2px 6px; border-radius: 4px; display: flex; align-items: center; gap: 3px; outline: none; -webkit-tap-highlight-color: transparent;">
-                        <svg viewBox="0 0 16 16" fill="currentColor" style="width:10px;height:10px;"><path d="M9.707 13.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 8l4.293 4.293a1 1 0 010 1.414z"/></svg>Back
+                        <svg viewBox="0 0 16 16" fill="currentColor" style="width:10px;height:10px;"><path d="M9.707 13.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 8l4.293 4.293a1 1 0 010 1.414z"/></svg>${backText}
                     </button>
                 `;
             }
