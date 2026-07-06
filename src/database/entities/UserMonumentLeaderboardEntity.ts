@@ -1,7 +1,7 @@
 export interface UserMonumentLeaderboardEntity {
     gameUid: string,
     eventId: string,
-    clearTimeMs: number,
+    clearTimeSec: number,
     data: string,
     updatedAt: Date
 }

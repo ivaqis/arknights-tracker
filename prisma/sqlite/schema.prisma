@@ -49,11 +49,11 @@ model UserGameProfile {
 }
 
 model UserContractLeaderboard {
-    gameUid     String
-    eventId     String
-    clearTimeMs Int
-    data        String // json
-    updatedAt   DateTime @updatedAt
+    gameUid      String
+    eventId      String
+    clearTimeSec Int
+    data         String // json
+    updatedAt    DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
@@ -62,11 +62,11 @@ model UserContractLeaderboard {
 }
 
 model UserMonumentLeaderboard {
-    gameUid     String
-    eventId     String
-    clearTimeMs Int
-    data        String // json
-    updatedAt   DateTime @updatedAt
+    gameUid      String
+    eventId      String
+    clearTimeSec Int
+    data         String // json
+    updatedAt    DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
