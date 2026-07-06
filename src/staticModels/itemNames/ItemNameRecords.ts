@@ -5,7 +5,7 @@ export class ItemNameRecords {
     private readonly _id2Name = new Map<string, string>();
     private readonly _name2Id = new Map<string, string>();
 
-    private _name?: string;
+    private readonly _name?: string;
 
     public constructor(list: ItemNameEntity[], name?: string) {
         this._name = name;
@@ -54,7 +54,7 @@ export class ItemNameRecords {
             item => item.id
         );
 
-        logger.info(`${this.namePrefix}Initializing completed: ${this.id2NameSize} / ${this.name2IdSize}`);
+        logger.info(`${this.namePrefix}Initializing completed (ids: ${this.id2NameSize} / names: ${this.name2IdSize})`);
     }
 
     private initMap(map: Map<string, string>,
@@ -68,6 +68,7 @@ export class ItemNameRecords {
 
             if (map.has(key)) {
                 logger.warn(`${this.namePrefix}Key "${key}" is already in map`);
+                continue;
             }
 
             map.set(key, value);
