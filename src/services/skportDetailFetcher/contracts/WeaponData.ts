@@ -1,3 +1,5 @@
+import { GemData } from "@services/skportDetailFetcher/contracts/GemData";
+
 export interface WeaponData {
     weaponData: {
         id: string;
@@ -6,12 +8,5 @@ export interface WeaponData {
     level: number;
     refineLevel: number;
     breakthroughLevel: number;
-    gem?: {
-        id: string;
-        gemData: {
-            termId: string;
-            name: string;
-            templateId: string;
-        }
-    }
+    gem?: GemData
 }

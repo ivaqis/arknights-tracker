@@ -11,7 +11,7 @@ export interface CharData {
         skills: SkillData[];
     };
     id: string;
-    level: string;
+    level: number;
     userSkills: Record<string, UserSkillData>;
     bodyEquip?: EquipData;
     armEquip?: EquipData;

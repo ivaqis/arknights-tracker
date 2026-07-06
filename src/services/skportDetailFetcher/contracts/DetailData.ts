@@ -5,7 +5,7 @@ import { MonumentData } from "@services/skportDetailFetcher/contracts/MonumentDa
 
 export interface DetailData {
     base: BaseData;
-    chars: CharData;
+    chars: CharData[];
     dungeon: {
         curStamina: string;
         maxTs: string;
