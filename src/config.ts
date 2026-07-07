@@ -17,11 +17,13 @@ export const config = {
     skportDetailPath: process.env.SKPORT_DETAIL_PATH || null,
     skportContractPath: process.env.SKPORT_CC_PATH || null,
     skportContractRecordsPath: process.env.SKPORT_CC_REC_PATH || null,
+    skportMonumentPath: process.env.SKPORT_MONUMENT_PATH || null,
     skportCredUrl: getSkportCredUrl(),
     skportBindingUrl: getSkportBindingUrl(),
     skportDetailUrl: getSkportDetailUrl(),
     skportContractUrl: getSkportContractUrl(),
     skportContractRecordsUrl: getSkportContractRecordsUrl(),
+    skportMonumentUrl: getSkportMonumentUrl(),
 } as const;
 
 function loadEnv(): void {
@@ -63,6 +65,12 @@ function getSkportContractUrl() {
 function getSkportContractRecordsUrl() {
     return skportBaseDomain && process.env.SKPORT_CC_REC_PATH
         ? `${skportBaseDomain}${process.env.SKPORT_CC_REC_PATH}`
+        : null;
+}
+
+function getSkportMonumentUrl() {
+    return skportBaseDomain && process.env.SKPORT_MONUMENT_PATH
+        ? `${skportBaseDomain}${process.env.SKPORT_MONUMENT_PATH}`
         : null;
 }
 
