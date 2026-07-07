@@ -11,7 +11,6 @@ import { crisisContractRecords } from "@staticModels/instances";
 export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     private readonly _id: string;
     private readonly _contractId: string;
-    private readonly _contractApiId: string;
     private readonly _ts: string;
     private readonly _passTs: string;
     private readonly _isPass: boolean;
@@ -23,7 +22,6 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
 
     private constructor(id: string,
                         contractId: string,
-                        contractApiId: string,
                         ts: string,
                         passTs: string,
                         isPass: boolean,
@@ -35,7 +33,6 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     ) {
         this._id = id;
         this._contractId = contractId;
-        this._contractApiId = contractApiId;
         this._ts = ts;
         this._passTs = passTs;
         this._isPass = isPass;
@@ -49,12 +46,10 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     public static getFromData(data: ContractRecordDetailData,
                               profileChars: Character[],
                               contractId: string,
-                              contractApiId: string
     ): ContractRecord {
         return new ContractRecord(
             data.id,
             contractId,
-            contractApiId,
             data.ts,
             data.passTs,
             data.isPass,
@@ -66,11 +61,10 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
         );
     }
 
-    public static getFromEntity(entity: ContractRecordEntity): ContractRecord {
+    public static getFromEntity(entity: ContractRecordEntity, recordId: string): ContractRecord {
         return new ContractRecord(
-            entity.id,
+            recordId,
             entity.contractId,
-            entity.contractApiId,
             entity.ts,
             entity.passTs,
             entity.isPass,
@@ -175,10 +169,6 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
         return this._contractId;
     }
 
-    public get contractApiId(): string {
-        return this._contractApiId;
-    }
-
     public get ts(): string {
         return this._ts;
     }
@@ -213,9 +203,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
 
     public getEntity(): ContractRecordEntity {
         return {
-            id: this.id,
             contractId: this.contractId,
-            contractApiId: this.contractApiId,
             ts: this.ts,
             passTs: this.passTs,
             isPass: this.isPass,
