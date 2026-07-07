@@ -1,5 +1,6 @@
 import { config } from "@/config";
 import { logger } from "@/logger";
+import { BadResponseDataCodeError } from "@errors/BadResponseDataCodeError";
 import { DetailRequestParams } from "@models/urlParams/skportAccountData/DetailRequestParams";
 import { CredData } from "@services/skportAuth/contracts/CredData";
 import { DetailData } from "@services/skportDetailFetcher/contracts/DetailData";
@@ -101,6 +102,10 @@ export class SkportDetailFetcher {
         }
 
         logger.info("SkportDetailFetcher: Response data received");
+
+        if (resp.data.code !== 0) {
+            throw new BadResponseDataCodeError(resp.data.code, resp.data);
+        }
 
         return resp.data;
     }
