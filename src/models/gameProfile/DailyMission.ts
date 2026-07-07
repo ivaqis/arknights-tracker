@@ -5,9 +5,17 @@ export class DailyMission implements IEntityClass<DailyMissionEntity> {
     private readonly _dailyActivation: number;
     private readonly _maxDailyActivation: number;
 
-    constructor(entity: DailyMissionEntity) {
+    private constructor(entity: DailyMissionEntity) {
         this._dailyActivation = entity.dailyActivation;
         this._maxDailyActivation = entity.maxDailyActivation;
+    }
+
+    public static getFromData(entity: DailyMissionEntity): DailyMission {
+        return this.getFromEntity(entity);
+    }
+
+    public static getFromEntity(entity: DailyMissionEntity): DailyMission {
+        return new DailyMission(entity);
     }
 
     public get dailyActivation(): number {

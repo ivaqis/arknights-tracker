@@ -7,35 +7,38 @@ import { tacticalItemNameRecords } from "@staticModels/instances";
 export class TacticalItem implements IEntityClass<TacticalItemEntity> {
     private readonly _id: string;
 
-    public constructor(entity: TacticalItemData) {
-        const id = tacticalItemNameRecords.getId(entity.tacticalItemData.name);
+    private constructor(entity: TacticalItemEntity) {
+        this._id = entity.id;
+    }
 
-        if (!id) {
-            throw new Error(`tacticalItemId not found:\n${entity}`);
+    public static getFromData(data?: TacticalItemData): TacticalItem | null {
+        if (!data) {
+            return null;
         }
 
-        this._id = id;
+        const id = tacticalItemNameRecords.getId(data.tacticalItemData.name);
+
+        if (!id) {
+            logger.warn(`tacticalItemId not found:\n${data}`);
+
+            return null;
+        }
+
+        return this.getFromEntity({
+            id: id
+        });
     }
 
-    public get id(): string {
-        return this._id;
-    }
-
-    public static get(entity?: TacticalItemData): TacticalItem | null {
+    public static getFromEntity(entity: TacticalItemEntity | null): TacticalItem | null {
         if (!entity) {
             return null;
         }
 
-        let item: TacticalItem;
-        try {
-            item = new TacticalItem(entity);
-        } catch (e) {
-            logger.warn(e);
+        return new TacticalItem(entity);
+    }
 
-            return null;
-        }
-
-        return item;
+    public get id(): string {
+        return this._id;
     }
 
     public getEntity(): TacticalItemEntity {

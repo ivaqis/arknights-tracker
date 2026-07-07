@@ -9,19 +9,38 @@ export class Gem implements IEntityClass<GemEntity> {
     private readonly _presetId: string;
     private readonly _iconUrl: string;
 
-    public constructor(entity: GemData) {
-        let presetId = gemPresetNameRecords.getId(entity.gemData.name);
+    private constructor(entity: GemEntity) {
+        this._id = entity.id;
+        this._presetId = entity.presetId;
+        this._iconUrl = entity.iconUrl;
+    }
 
-        if (!presetId) {
-            logger.warn(`gemPreset not found:\n${entity}`);
-
-            this._presetId = "";
-        } else {
-            this._presetId = presetId;
+    public static getFromData(data?: GemData): Gem | null {
+        if (!data) {
+            return null;
         }
 
-        this._id = entity.id;
-        this._iconUrl = entity.gemData.icon;
+        let presetId = gemPresetNameRecords.getId(data.gemData.name);
+
+        if (!presetId) {
+            logger.warn(`gemPreset not found:\n${data}`);
+
+            return null;
+        }
+
+        return this.getFromEntity({
+            id: data.id,
+            presetId: presetId,
+            iconUrl: data.gemData.icon
+        });
+    }
+
+    public static getFromEntity(entity: GemEntity | null): Gem | null {
+        if (!entity) {
+            return null;
+        }
+
+        return new Gem(entity);
     }
 
     public get id(): string {
@@ -34,14 +53,6 @@ export class Gem implements IEntityClass<GemEntity> {
 
     public get iconUrl(): string {
         return this._iconUrl;
-    }
-
-    public static get(entity?: GemData): Gem | null {
-        if (!entity) {
-            return null;
-        }
-
-        return new Gem(entity);
     }
 
     public getEntity(): GemEntity {

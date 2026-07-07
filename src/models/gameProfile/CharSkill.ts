@@ -8,14 +8,30 @@ export class CharSkill implements IEntityClass<CharSkillEntity> {
     private readonly _level: number;
     private readonly _maxLevel: number;
 
-    public constructor(userSkillData: UserSkillData, skillData: SkillData) {
+    private constructor(entity: CharSkillEntity) {
+        this._type = entity.type;
+        this._level = entity.level;
+        this._maxLevel = entity.maxLevel;
+    }
+
+    public static getFromData(userSkillData: UserSkillData, skillData: SkillData): CharSkill {
         if (userSkillData.skillId !== skillData.id) {
-            throw new Error(`SkillIds must be equal: ${userSkillData.skillId} / ${skillData.id}`);
+            throw new Error(`SkillId must be equal: ${skillData.id} / ${skillData.id}`);
         }
 
-        this._type = CharSkill.getType(skillData);
-        this._level = userSkillData.level;
-        this._maxLevel = userSkillData.maxLevel;
+        return this.getFromEntity({
+            type: this.getType(skillData),
+            level: userSkillData.level,
+            maxLevel: userSkillData.maxLevel
+        });
+    }
+
+    public static getFromEntity(entity: CharSkillEntity): CharSkill {
+        return new CharSkill(entity);
+    }
+
+    private static getType(skillData: SkillData) {
+        return skillData.type.key;
     }
 
     public get type(): string {
@@ -36,9 +52,5 @@ export class CharSkill implements IEntityClass<CharSkillEntity> {
             level: this.level,
             maxLevel: this.maxLevel,
         };
-    }
-
-    private static getType(skillData: SkillData) {
-        return skillData.type.key;
     }
 }

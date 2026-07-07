@@ -7,35 +7,37 @@ import { equipNameRecords } from "@staticModels/instances";
 export class Equip implements IEntityClass<EquipEntity> {
     private readonly _id: string;
 
-    public constructor(entity: EquipData) {
-        const id = equipNameRecords.getId(entity.equipData.name);
+    private constructor(entity: EquipEntity) {
+        this._id = entity.id;
+    }
 
-        if (!id) {
-            throw new Error(`equipId not found:\n${entity}`);
+    public static getFromData(data?: EquipData): Equip | null {
+        if (!data) {
+            return null;
         }
 
-        this._id = id;
+        const id = equipNameRecords.getId(data.equipData.name);
+
+        if (!id) {
+            logger.warn(`equipId not found:\n${data}`);
+            return null;
+        }
+
+        return this.getFromEntity({
+            id: id
+        });
     }
 
-    public get id(): string {
-        return this._id;
-    }
-
-    public static get(entity?: EquipData): Equip | null {
+    public static getFromEntity(entity: EquipEntity | null): Equip | null {
         if (!entity) {
             return null;
         }
 
-        let equip: Equip;
-        try {
-            equip = new Equip(entity);
-        } catch (e) {
-            logger.warn(e);
+        return new Equip(entity);
+    }
 
-            return null;
-        }
-
-        return equip;
+    public get id(): string {
+        return this._id;
     }
 
     public getEntity(): EquipEntity {

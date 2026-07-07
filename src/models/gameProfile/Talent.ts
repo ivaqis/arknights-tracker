@@ -7,11 +7,19 @@ export class Talent implements IEntityClass<TalentEntity> {
     private readonly _latestFactorySkillNodes: string[];
     private readonly _latestSpaceshipSkillNodes: string[];
 
-    public constructor(entity: TalentEntity) {
+    private constructor(entity: TalentEntity) {
         this._attrNodes = entity.attrNodes;
         this._latestPassiveSkillNodes = entity.latestPassiveSkillNodes;
         this._latestFactorySkillNodes = entity.latestFactorySkillNodes;
         this._latestSpaceshipSkillNodes = entity.latestSpaceshipSkillNodes;
+    }
+
+    public static getFromData(data: TalentEntity): Talent {
+        return new Talent(data);
+    }
+
+    public static getFromEntity(entity: TalentEntity): Talent {
+        return new Talent(entity);
     }
 
     public get attrNodes(): string[] {

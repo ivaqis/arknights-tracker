@@ -6,10 +6,18 @@ export class Dungeon implements IEntityClass<DungeonEntity> {
     private readonly _maxTs: string;
     private readonly _maxStamina: string;
 
-    public constructor(entity: DungeonEntity) {
+    private constructor(entity: DungeonEntity) {
         this._curStamina = entity.curStamina;
         this._maxTs = entity.maxTs;
         this._maxStamina = entity.maxStamina;
+    }
+
+    public static getFromData(data: DungeonEntity): Dungeon {
+        return this.getFromEntity(data);
+    }
+
+    public static getFromEntity(entity: DungeonEntity): Dungeon {
+        return new Dungeon(entity);
     }
 
     public get curStamina(): string {

@@ -1,13 +1,21 @@
 import { BpSystemEntity } from "@models/gameProfile/entities/BpSystemEntity";
 import { IEntityClass } from "@models/IEntityClass";
 
-export class BpSystem implements IEntityClass<BpSystemEntity>{
+export class BpSystem implements IEntityClass<BpSystemEntity> {
     private readonly _curLevel: number;
     private readonly _maxLevel: number;
 
-    public constructor(entity: BpSystemEntity) {
+    private constructor(entity: BpSystemEntity) {
         this._curLevel = entity.curLevel;
         this._maxLevel = entity.maxLevel;
+    }
+
+    public static getFromData(data: BpSystemEntity): BpSystem {
+        return this.getFromEntity(data);
+    }
+
+    public static getFromEntity(entity: BpSystemEntity): BpSystem {
+        return new BpSystem(entity);
     }
 
     public get curLevel(): number {

@@ -11,17 +11,42 @@ export class Weapon implements IEntityClass<WeaponEntity> {
     private readonly _breakthroughLevel: number;
     private readonly _gem: Gem | null;
 
-    public constructor(entity: WeaponData) {
-        let id = weaponNameRecords.getId(entity.weaponData.name);
-
-        if (!id) {
-            throw new Error(`weaponId not found:\n${entity}`)
-        }
-
-        this._id = id;
+    private constructor(entity: { id: string, level: number, breakthroughLevel: number }, gem: Gem | null) {
+        this._id = entity.id;
         this._level = entity.level;
         this._breakthroughLevel = entity.breakthroughLevel;
-        this._gem = Gem.get(entity.gem);
+        this._gem = gem;
+    }
+
+    public static getFromData(data?: WeaponData): Weapon | null {
+        if (!data) {
+            return null;
+        }
+
+        const id = weaponNameRecords.getId(data.weaponData.name);
+
+        if (!id) {
+            logger.warn(`weaponId not found:\n${data}`);
+
+            return null;
+        }
+
+        return new Weapon(
+            {
+                id: id,
+                level: data.level,
+                breakthroughLevel: data.breakthroughLevel
+            },
+            Gem.getFromData(data.gem)
+        );
+    }
+
+    public static getFromEntity(entity: WeaponEntity | null): Weapon | null {
+        if (!entity) {
+            return null;
+        }
+
+        return new Weapon(entity, Gem.getFromEntity(entity.gem));
     }
 
     public get id(): string {
@@ -40,29 +65,12 @@ export class Weapon implements IEntityClass<WeaponEntity> {
         return this._gem;
     }
 
-    public static get(entity?: WeaponData): Weapon | null {
-        if (!entity) {
-            return null;
-        }
-
-        let weapon: Weapon;
-        try {
-            weapon = new Weapon(entity);
-        } catch (e) {
-            logger.warn(e);
-
-            return null;
-        }
-
-        return weapon;
-    }
-
     public getEntity(): WeaponEntity {
         return {
             id: this._id,
             level: this._level,
             breakthroughLevel: this._breakthroughLevel,
             gem: this._gem?.getEntity() ?? null,
-        }
+        };
     }
 }

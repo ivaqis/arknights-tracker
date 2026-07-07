@@ -1,8 +1,10 @@
+import { logger } from "@/logger";
 import { Base } from "@models/gameProfile/Base";
 import { BpSystem } from "@models/gameProfile/BpSystem";
 import { Character } from "@models/gameProfile/Character";
 import { DailyMission } from "@models/gameProfile/DailyMission";
 import { Dungeon } from "@models/gameProfile/Dungeon";
+import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
 import { SeekSuspicion } from "@models/gameProfile/SeekSuspicion";
 import { WeeklyMission } from "@models/gameProfile/WeeklyMission";
@@ -19,14 +21,68 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
     private readonly _seekSuspicion: SeekSuspicion;
     private readonly _chars: Character[];
 
-    public constructor(data: DetailData, serverId: string) {
-        this._base = new Base(data.base, serverId);
-        this._dungeon = new Dungeon(data.dungeon);
-        this._bpSystem = new BpSystem(data.bpSystem);
-        this._dailyMission = new DailyMission(data.dailyMission);
-        this._weeklyMission = new WeeklyMission(data.weeklyMission);
-        this._seekSuspicion = new SeekSuspicion(data.seekSuspicion);
-        this._chars = GameProfile.getChars(data.chars);
+    private constructor(base: Base,
+                        dungeon: Dungeon,
+                        bpSystem: BpSystem,
+                        dailyMission: DailyMission,
+                        weeklyMission: WeeklyMission,
+                        seekSuspicion: SeekSuspicion,
+                        chars: Character[]
+    ) {
+        this._base = base;
+        this._dungeon = dungeon;
+        this._bpSystem = bpSystem;
+        this._dailyMission = dailyMission;
+        this._weeklyMission = weeklyMission;
+        this._seekSuspicion = seekSuspicion;
+        this._chars = chars;
+    }
+
+    public static getFromData(data: DetailData, serverId: string) {
+        return new GameProfile(
+            Base.getFromData(data.base, serverId),
+            Dungeon.getFromData(data.dungeon),
+            BpSystem.getFromData(data.bpSystem),
+            DailyMission.getFromData(data.dailyMission),
+            WeeklyMission.getFromData(data.weeklyMission),
+            SeekSuspicion.getFromData(data.seekSuspicion),
+            this.getChars(data.chars)
+        );
+    }
+
+    public static getFromEntity(entity: GameProfileEntity) {
+        return new GameProfile(
+            Base.getFromEntity(entity.base),
+            Dungeon.getFromEntity(entity.dungeon),
+            BpSystem.getFromEntity(entity.bpSystem),
+            DailyMission.getFromEntity(entity.dailyMission),
+            WeeklyMission.getFromEntity(entity.weeklyMission),
+            SeekSuspicion.getFromEntity(entity.seekSuspicion),
+            this.getCharsFromEntity(entity.chars)
+        );
+    }
+
+    private static getCharsFromEntity(chars: CharacterEntity[]) {
+        return chars.map((char) => Character.getFromEntity(char));
+    }
+
+    private static getChars(chars: CharData[]): Character[] {
+        const result: Character[] = [];
+
+        for (const char of chars) {
+            let character: Character;
+
+            try {
+                character = Character.getFromData(char);
+            } catch (e) {
+                logger.warn(e);
+                continue;
+            }
+
+            result.push(character);
+        }
+
+        return result;
     }
 
     public get base(): Base {
@@ -55,18 +111,6 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
 
     public get chars(): Character[] {
         return this._chars;
-    }
-
-    private static getChars(chars: CharData[]): Character[] {
-        const result: Character[] = [];
-
-        for (const char of chars) {
-            let character = new Character(char);
-
-            result.push(character);
-        }
-
-        return result;
     }
 
     public getEntity(): GameProfileEntity {

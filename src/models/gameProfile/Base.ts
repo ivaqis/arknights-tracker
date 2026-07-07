@@ -18,8 +18,8 @@ export class Base implements IEntityClass<BaseEntity> {
     private readonly _weaponNum: number;
     private readonly _docNum: number;
 
-    public constructor(entity: BaseData, serverId: string) {
-        this._serverId = serverId;
+    private constructor(entity: BaseEntity) {
+        this._serverId = entity.serverId;
         this._roleId = entity.roleId;
         this._name = entity.name;
         this._createTime = entity.createTime;
@@ -33,6 +33,29 @@ export class Base implements IEntityClass<BaseEntity> {
         this._charNum = entity.charNum;
         this._weaponNum = entity.weaponNum;
         this._docNum = entity.docNum;
+    }
+
+    public static getFromData(data: BaseData, serverId: string): Base {
+        return this.getFromEntity({
+            serverId,
+            roleId: data.roleId,
+            name: data.name,
+            createTime: data.createTime,
+            saveTime: data.saveTime,
+            lastLoginTime: data.lastLoginTime,
+            exp: data.exp,
+            level: data.level,
+            worldLevel: data.worldLevel,
+            gender: data.gender,
+            avatarUrl: data.avatarUrl,
+            charNum: data.charNum,
+            weaponNum: data.weaponNum,
+            docNum: data.docNum
+        });
+    }
+
+    public static getFromEntity(entity: BaseEntity): Base {
+        return new Base(entity);
     }
 
     public get serverId(): string {

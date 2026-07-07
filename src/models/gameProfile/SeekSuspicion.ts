@@ -5,9 +5,17 @@ export class SeekSuspicion implements IEntityClass<SeekSuspicionEntity> {
     private readonly _count: number;
     private readonly _total: number;
 
-    public constructor(entity: SeekSuspicionEntity) {
+    private constructor(entity: SeekSuspicionEntity) {
         this._count = entity.count;
         this._total = entity.total;
+    }
+
+    public static getFromData(entity: SeekSuspicionEntity): SeekSuspicion {
+        return this.getFromEntity(entity);
+    }
+
+    public static getFromEntity(entity: SeekSuspicionEntity): SeekSuspicion {
+        return new SeekSuspicion(entity);
     }
 
     public get count(): number {

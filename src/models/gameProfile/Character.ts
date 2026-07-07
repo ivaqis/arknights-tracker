@@ -1,10 +1,11 @@
 import { logger } from "@/logger";
 import { CharSkill } from "@models/gameProfile/CharSkill";
 import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
-import { Weapon } from "@models/gameProfile/Weapon";
+import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity";
 import { Equip } from "@models/gameProfile/Equip";
 import { TacticalItem } from "@models/gameProfile/TacticalItem";
 import { Talent } from "@models/gameProfile/Talent";
+import { Weapon } from "@models/gameProfile/Weapon";
 import { IEntityClass } from "@models/IEntityClass";
 import { CharData } from "@services/skportDetailFetcher/contracts/CharData";
 import { SkillData } from "@services/skportDetailFetcher/contracts/SkillData";
@@ -25,25 +26,94 @@ export class Character implements IEntityClass<CharacterEntity> {
     private readonly _weapon: Weapon | null;
     private readonly _talent: Talent;
 
-    public constructor(entity: CharData) {
-        let id = charNameRecords.getId(entity.charData.name);
+    private constructor(id: string,
+                        level: number,
+                        potentialLevel: number,
+                        ownTs: string,
+                        skills: CharSkill[],
+                        bodyEquip: Equip | null,
+                        armEquip: Equip | null,
+                        firstAccessory: Equip | null,
+                        secondAccessory: Equip | null,
+                        tacticalItem: TacticalItem | null,
+                        weapon: Weapon | null,
+                        talent: Talent,
+    ) {
+        this._id = id;
+        this._level = level;
+        this._potentialLevel = potentialLevel;
+        this._ownTs = ownTs;
+        this._skills = skills;
+        this._bodyEquip = bodyEquip;
+        this._armEquip = armEquip;
+        this._firstAccessory = firstAccessory;
+        this._secondAccessory = secondAccessory;
+        this._tacticalItem = tacticalItem;
+        this._weapon = weapon;
+        this._talent = talent;
+    }
+
+    public static getFromData(data: CharData): Character {
+        let id = charNameRecords.getId(data.charData.name);
 
         if (!id) {
-            throw new Error(`charId not found:\n${entity}`);
+            throw new Error(`charId not found:\n${data}`);
         }
 
-        this._id = id;
-        this._level = entity.level;
-        this._potentialLevel = entity.potentialLevel;
-        this._ownTs = entity.ownTs;
-        this._skills = Character.getSkills(entity.userSkills, entity.charData.skills);
-        this._bodyEquip = Equip.get(entity.bodyEquip);
-        this._armEquip = Equip.get(entity.armEquip);
-        this._firstAccessory = Equip.get(entity.firstAccessory);
-        this._secondAccessory = Equip.get(entity.secondAccessory);
-        this._tacticalItem = TacticalItem.get(entity.tacticalItem);
-        this._weapon = Weapon.get(entity.weapon);
-        this._talent = new Talent(entity.talent);
+        return new Character(
+            id,
+            data.level,
+            data.potentialLevel,
+            data.ownTs,
+            this.getSkills(data.userSkills, data.charData.skills),
+            Equip.getFromData(data.bodyEquip),
+            Equip.getFromData(data.armEquip),
+            Equip.getFromData(data.firstAccessory),
+            Equip.getFromData(data.secondAccessory),
+            TacticalItem.getFromData(data.tacticalItem),
+            Weapon.getFromData(data.weapon),
+            Talent.getFromData(data.talent)
+        );
+    }
+
+    public static getFromEntity(entity: CharacterEntity): Character {
+        return new Character(
+            entity.id,
+            entity.level,
+            entity.potentialLevel,
+            entity.ownTs,
+            this.getSkillsFromEntity(entity.skills),
+            Equip.getFromEntity(entity.bodyEquip),
+            Equip.getFromEntity(entity.armEquip),
+            Equip.getFromEntity(entity.firstAccessory),
+            Equip.getFromEntity(entity.secondAccessory),
+            TacticalItem.getFromEntity(entity.tacticalItem),
+            Weapon.getFromEntity(entity.weapon),
+            Talent.getFromEntity(entity.talent)
+        );
+    }
+
+    private static getSkillsFromEntity(skills: CharSkillEntity[]): CharSkill[] {
+        return skills.map(skill => CharSkill.getFromEntity(skill));
+    }
+
+    private static getSkills(userSkills: Record<string, UserSkillData>, skills: SkillData[]): CharSkill[] {
+        const result: CharSkill[] = [];
+
+        for (const skillData of skills) {
+            let userSkill = userSkills[skillData.id];
+
+            if (!userSkill) {
+                logger.warn(`no userSkill found for ${skillData}`);
+                continue;
+            }
+
+            let skill = CharSkill.getFromData(userSkill, skillData);
+
+            result.push(skill);
+        }
+
+        return result;
     }
 
     public get id(): string {
@@ -92,24 +162,6 @@ export class Character implements IEntityClass<CharacterEntity> {
 
     public get talent(): Talent {
         return this._talent;
-    }
-
-    private static getSkills(userSkills: Record<string, UserSkillData>, skills: SkillData[]): CharSkill[] {
-        const result: CharSkill[] = [];
-
-        for (const skillData of skills) {
-            let userSkill = userSkills[skillData.id];
-
-            if (!userSkill) {
-                logger.warn(`no userSkill found for ${skillData}`);
-            }
-
-            let skill = new CharSkill(userSkill, skillData);
-
-            result.push(skill);
-        }
-
-        return result;
     }
 
     public getEntity(): CharacterEntity {
