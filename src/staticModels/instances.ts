@@ -6,9 +6,12 @@ import gemPresetNames from "@static/gemPresetNames.json";
 import weaponNames from "@static/weaponNames.json";
 import tacticalItemNames from "@static/tacticalItemNames.json";
 import contractNames from "@static/contractNames.json";
+import monumentNames from "@static/monumentNames.json";
+import monumentGroups from "@static/monumentGroups.json";
 import { BannerRecords } from "@staticModels/banners/BannerRecords";
 import { CrisisContractRecords } from "@staticModels/crisisContracts/CrisisContractRecords";
 import { ItemNameRecords } from "@staticModels/itemNames/ItemNameRecords";
+import { MonumentGroupRecords } from "@staticModels/monument/MonumentGroupRecords";
 
 export const bannerRecords = new BannerRecords(banners);
 
@@ -18,5 +21,8 @@ export const equipNameRecords = new ItemNameRecords(equipNames, "EquipNameRecord
 export const gemPresetNameRecords = new ItemNameRecords(gemPresetNames, "GemPresetNameRecords");
 export const tacticalItemNameRecords = new ItemNameRecords(tacticalItemNames, "TacticalItemNameRecords");
 export const contractNameRecords = new ItemNameRecords(contractNames, "ContractNameRecords");
+export const monumentNameRecords = new ItemNameRecords(monumentNames, "MonumentNameRecords");
 
 export const crisisContractRecords = new CrisisContractRecords(crisisContracts);
+
+export const monumentGroupRecords = new MonumentGroupRecords(monumentGroups);

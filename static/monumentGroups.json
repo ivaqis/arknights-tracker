@@ -1,0 +1,79 @@
+[
+  {
+    "id": "indie_group_h01",
+    "hardDungeons": [
+      "indie_hard001_s",
+      "indie_hard002_s",
+      "indie_hard003_s"
+    ],
+    "normalDungeons": [
+      "indie_hard001",
+      "indie_hard002",
+      "indie_hard003"
+    ]
+  },
+  {
+    "id": "indie_group_h02",
+    "hardDungeons": [
+      "indie_hard004_s",
+      "indie_hard005_s",
+      "indie_hard006_s"
+    ],
+    "normalDungeons": [
+      "indie_hard004",
+      "indie_hard005",
+      "indie_hard006"
+    ]
+  },
+  {
+    "id": "indie_group_h03",
+    "hardDungeons": [
+      "indie_hard007_s",
+      "indie_hard008_s",
+      "indie_hard009_s"
+    ],
+    "normalDungeons": [
+      "indie_hard007",
+      "indie_hard008",
+      "indie_hard009"
+    ]
+  },
+  {
+    "id": "indie_group_h04",
+    "hardDungeons": [
+      "indie_hard010_s",
+      "indie_hard011_s",
+      "indie_hard012_s",
+      "indie_hard013_s",
+      "indie_hard014_s",
+      "indie_hard015_s"
+    ],
+    "normalDungeons": [
+      "indie_hard010",
+      "indie_hard011",
+      "indie_hard012",
+      "indie_hard013",
+      "indie_hard014",
+      "indie_hard015"
+    ]
+  },
+  {
+    "id": "indie_group_h05",
+    "hardDungeons": [
+      "indie_hard016_s",
+      "indie_hard017_s",
+      "indie_hard018_s",
+      "indie_hard019_s",
+      "indie_hard020_s",
+      "indie_hard021_s"
+    ],
+    "normalDungeons": [
+      "indie_hard016",
+      "indie_hard017",
+      "indie_hard018",
+      "indie_hard019",
+      "indie_hard020",
+      "indie_hard021"
+    ]
+  }
+]
