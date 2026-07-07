@@ -25,6 +25,7 @@ export class Character implements IEntityClass<CharacterEntity> {
     private readonly _tacticalItem: TacticalItem | null;
     private readonly _weapon: Weapon | null;
     private readonly _talent: Talent;
+    private readonly _apiId: string;
 
     private constructor(id: string,
                         level: number,
@@ -38,6 +39,7 @@ export class Character implements IEntityClass<CharacterEntity> {
                         tacticalItem: TacticalItem | null,
                         weapon: Weapon | null,
                         talent: Talent,
+                        apiId: string
     ) {
         this._id = id;
         this._level = level;
@@ -51,6 +53,7 @@ export class Character implements IEntityClass<CharacterEntity> {
         this._tacticalItem = tacticalItem;
         this._weapon = weapon;
         this._talent = talent;
+        this._apiId = apiId;
     }
 
     public static getFromData(data: CharData): Character {
@@ -72,7 +75,8 @@ export class Character implements IEntityClass<CharacterEntity> {
             Equip.getFromData(data.secondAccessory),
             TacticalItem.getFromData(data.tacticalItem),
             Weapon.getFromData(data.weapon),
-            Talent.getFromData(data.talent)
+            Talent.getFromData(data.talent),
+            data.id
         );
     }
 
@@ -89,7 +93,8 @@ export class Character implements IEntityClass<CharacterEntity> {
             Equip.getFromEntity(entity.secondAccessory),
             TacticalItem.getFromEntity(entity.tacticalItem),
             Weapon.getFromEntity(entity.weapon),
-            Talent.getFromEntity(entity.talent)
+            Talent.getFromEntity(entity.talent),
+            entity.apiId
         );
     }
 
@@ -164,8 +169,13 @@ export class Character implements IEntityClass<CharacterEntity> {
         return this._talent;
     }
 
+    public get apiId(): string {
+        return this._apiId;
+    }
+
     public getEntity(): CharacterEntity {
         return {
+            apiId: this.apiId,
             id: this.id,
             level: this.level,
             potentialLevel: this.potentialLevel,

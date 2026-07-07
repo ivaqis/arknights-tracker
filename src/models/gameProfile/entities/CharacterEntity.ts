@@ -17,4 +17,5 @@ export interface CharacterEntity {
     tacticalItem: TacticalItemEntity | null;
     weapon: WeaponEntity | null;
     talent: TalentEntity;
+    apiId: string;
 }
