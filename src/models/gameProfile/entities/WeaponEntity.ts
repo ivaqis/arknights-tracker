@@ -3,6 +3,6 @@ import { GemEntity } from "@models/gameProfile/entities/GemEntity";
 export interface WeaponEntity {
     id: string;
     level: number;
-    breakthroughLevel: number;
+    refineLevel: number;
     gem: GemEntity | null;
 }
