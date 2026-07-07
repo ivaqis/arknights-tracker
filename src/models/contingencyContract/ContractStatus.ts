@@ -15,7 +15,7 @@ export class ContractStatus {
         const id = contractNameRecords.getId(data.name);
 
         if (!id) {
-            logger.warn(`contractId not found:\n${data}`);
+            logger.warn(`contractId not found:\n${JSON.stringify(data, undefined, 2)}`);
 
             return null;
         }

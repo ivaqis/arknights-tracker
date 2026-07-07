@@ -100,7 +100,7 @@ export class MonumentRecord implements IEntityClass<MonumentRecordEntity> {
             let profileChar = map.get(char.charId);
 
             if (!profileChar) {
-                logger.warn(`Could not find char "${char}"`);
+                logger.warn(`Could not find char "${char.charId}"`);
 
                 continue;
             }

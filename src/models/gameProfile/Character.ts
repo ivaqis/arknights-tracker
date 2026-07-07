@@ -109,7 +109,7 @@ export class Character implements IEntityClass<CharacterEntity> {
             let userSkill = userSkills[skillData.id];
 
             if (!userSkill) {
-                logger.warn(`no userSkill found for ${skillData}`);
+                logger.warn(`no userSkill found for ${JSON.stringify(skillData, undefined, 2)}`);
                 continue;
             }
 

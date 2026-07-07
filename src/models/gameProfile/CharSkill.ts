@@ -16,7 +16,7 @@ export class CharSkill implements IEntityClass<CharSkillEntity> {
 
     public static getFromData(userSkillData: UserSkillData, skillData: SkillData): CharSkill {
         if (userSkillData.skillId !== skillData.id) {
-            throw new Error(`SkillId must be equal: ${skillData.id} / ${skillData.id}`);
+            throw new Error(`SkillId must be equal: ${userSkillData.skillId} / ${skillData.id}`);
         }
 
         return this.getFromEntity({

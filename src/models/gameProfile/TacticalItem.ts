@@ -19,7 +19,7 @@ export class TacticalItem implements IEntityClass<TacticalItemEntity> {
         const id = tacticalItemNameRecords.getId(data.tacticalItemData.name);
 
         if (!id) {
-            logger.warn(`tacticalItemId not found:\n${data}`);
+            logger.warn(`tacticalItemId not found:\n${JSON.stringify(data, undefined, 2)}`);
 
             return null;
         }

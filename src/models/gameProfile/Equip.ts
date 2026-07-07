@@ -19,7 +19,7 @@ export class Equip implements IEntityClass<EquipEntity> {
         const id = equipNameRecords.getId(data.equipData.name);
 
         if (!id) {
-            logger.warn(`equipId not found:\n${data}`);
+            logger.warn(`equipId not found:\n${JSON.stringify(data, undefined, 2)}`);
             return null;
         }
 

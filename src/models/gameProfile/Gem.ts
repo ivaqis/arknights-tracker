@@ -23,7 +23,7 @@ export class Gem implements IEntityClass<GemEntity> {
         let presetId = gemPresetNameRecords.getId(data.gemData.name);
 
         if (!presetId) {
-            logger.warn(`gemPreset not found:\n${data}`);
+            logger.warn(`gemPreset not found:\n${JSON.stringify(data, undefined, 2)}`);
 
             return null;
         }

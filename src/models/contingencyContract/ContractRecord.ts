@@ -12,7 +12,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     private readonly _id: string;
     private readonly _contractId: string;
     private readonly _ts: string;
-    private readonly _passTs: string;
+    private readonly _passTs: number;
     private readonly _isPass: boolean;
     private readonly _indicatorCount: number;
     private readonly _passWave: number;
@@ -23,7 +23,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
     private constructor(id: string,
                         contractId: string,
                         ts: string,
-                        passTs: string,
+                        passTs: number,
                         isPass: boolean,
                         indicatorCount: number,
                         passWave: number,
@@ -51,7 +51,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
             data.id,
             contractId,
             data.ts,
-            data.passTs,
+            Number(data.passTs),
             data.isPass,
             data.indicatorCount,
             data.passWave,
@@ -173,7 +173,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
         return this._ts;
     }
 
-    public get passTs(): string {
+    public get passTs(): number {
         return this._passTs;
     }
 

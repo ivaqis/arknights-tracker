@@ -26,7 +26,7 @@ export class Weapon implements IEntityClass<WeaponEntity> {
         const id = weaponNameRecords.getId(data.weaponData.name);
 
         if (!id) {
-            logger.warn(`weaponId not found:\n${data}`);
+            logger.warn(`weaponId not found:\n${JSON.stringify(data, undefined, 2)}`);
 
             return null;
         }
