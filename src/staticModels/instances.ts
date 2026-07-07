@@ -5,6 +5,7 @@ import equipNames from "@static/equipNames.json";
 import gemPresetNames from "@static/gemPresetNames.json";
 import weaponNames from "@static/weaponNames.json";
 import tacticalItemNames from "@static/tacticalItemNames.json";
+import contractNames from "@static/contractNames.json";
 import { BannerRecords } from "@staticModels/banners/BannerRecords";
 import { CrisisContractRecords } from "@staticModels/crisisContracts/CrisisContractRecords";
 import { ItemNameRecords } from "@staticModels/itemNames/ItemNameRecords";
@@ -16,5 +17,6 @@ export const weaponNameRecords = new ItemNameRecords(weaponNames, "WeaponNameRec
 export const equipNameRecords = new ItemNameRecords(equipNames, "EquipNameRecords");
 export const gemPresetNameRecords = new ItemNameRecords(gemPresetNames, "GemPresetNameRecords");
 export const tacticalItemNameRecords = new ItemNameRecords(tacticalItemNames, "TacticalItemNameRecords");
+export const contractNameRecords = new ItemNameRecords(contractNames, "ContractNameRecords");
 
 export const crisisContractRecords = new CrisisContractRecords(crisisContracts);
