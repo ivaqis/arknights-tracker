@@ -19,7 +19,7 @@ export class MonumentGroupRecords extends RecordsModel<MonumentGroupEntity> {
             let groupId = item.id;
 
             for (const dungeonId of getDungeonList(item)) {
-                map.set(groupId, dungeonId);
+                map.set(dungeonId, groupId);
             }
         }
 
