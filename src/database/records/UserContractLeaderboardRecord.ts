@@ -71,4 +71,8 @@ export class UserContractLeaderboardRecord {
     public get updatedAt(): Date {
         return this._updatedAt;
     }
+
+    public getStringData(): string {
+        return JSON.stringify(this.data.getEntity());
+    }
 }

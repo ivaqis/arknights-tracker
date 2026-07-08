@@ -1,4 +1,3 @@
-import { UserMonumentLeaderboardEntity } from "@database/entities/UserMonumentLeaderboardEntity";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
@@ -55,6 +54,19 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         });
 
         return entities.map(UserMonumentLeaderboardRecord.createFromEntity);
+    }
+
+    public async create(record: UserMonumentLeaderboardRecord) {
+        await this.table.create({
+            data: {
+                gameUid: record.gameUid,
+                dungeonId: record.dungeonId,
+                groupId: record.groupId,
+                isHard: record.isHard,
+                clearTimeSec: record.clearTimeSec,
+                data: record.getStringData()
+            }
+        });
     }
 
     public async delete(gameUid: string, dungeonId: string): Promise<void> {

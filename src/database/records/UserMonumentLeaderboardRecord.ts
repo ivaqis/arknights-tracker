@@ -71,4 +71,8 @@ export class UserMonumentLeaderboardRecord {
     public get data(): MonumentRecord {
         return this._data;
     }
+
+    public getStringData(): string {
+        return JSON.stringify(this.data.getEntity());
+    }
 }

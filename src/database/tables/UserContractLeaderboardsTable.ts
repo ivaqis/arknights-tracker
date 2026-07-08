@@ -42,6 +42,19 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         return entities.map(UserContractLeaderboardRecord.createFromEntity);
     }
 
+    public async create(record: UserContractLeaderboardRecord) {
+        await this.table.create({
+            data: {
+                recordId: record.recordId,
+                gameUid: record.gameUid,
+                contractId: record.contractId,
+                indicatorCount: record.indicatorCount,
+                clearTimeSec: record.clearTimeSec,
+                data: record.getStringData()
+            }
+        });
+    }
+
     public async delete(recordId: string): Promise<void> {
         await this.table.delete({
             where: {
