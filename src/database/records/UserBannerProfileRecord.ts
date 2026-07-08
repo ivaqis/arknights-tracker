@@ -1,13 +1,14 @@
 import { UserBannerProfileEntity } from "@database/entities/UserBannerProfileEntity";
+import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
 
 export class UserBannerProfileRecord {
     private readonly _profileId: bigint;
-    private readonly _gameUid: string | null;
+    private readonly _gameUid: NullableStringRecordField;
     private readonly _createdAt: Date;
 
     public constructor(entity: UserBannerProfileEntity) {
         this._profileId = entity.profileId;
-        this._gameUid = entity.gameUid;
+        this._gameUid = new NullableStringRecordField(entity.gameUid);
         this._createdAt = entity.createdAt;
     }
 
@@ -15,7 +16,7 @@ export class UserBannerProfileRecord {
         return this._profileId;
     }
 
-    get gameUid(): string | null {
+    get gameUid(): NullableStringRecordField {
         return this._gameUid;
     }
 

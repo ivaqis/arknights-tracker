@@ -20,6 +20,29 @@ export class UserBannerProfilesRepository extends Repository {
         return this._userBannerProfilesTable.get(profileId);
     }
 
+    public async getUserBannerProfileByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
+        return this._userBannerProfilesTable.findByGameUid(gameUid);
+    }
+
+    /**
+     * Returns true if gameUid was found and removed.
+     * Else if gameUid not found, returns false.
+     * @param gameUid
+     */
+    public async removeGameUidLink(gameUid: string): Promise<boolean> {
+        const record = await this.getUserBannerProfileByGameUid(gameUid);
+
+        if (!record) {
+            return false;
+        }
+
+        record.gameUid.value = null;
+
+        await this._userBannerProfilesTable.update(record);
+
+        return true;
+    }
+
     public async createUserBannerProfile(): Promise<UserBannerProfileRecord> {
         return this._userBannerProfilesTable.create();
     }

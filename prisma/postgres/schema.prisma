@@ -27,7 +27,7 @@ model User {
     createdAt       DateTime @default(now())
     updatedAt       DateTime @updatedAt
 
-    firebaseUser FirebaseUser? @relation(fields: [firebaseUid], references: [firebaseUid])
+    firebaseUser FirebaseUser? @relation(fields: [firebaseUid], references: [firebaseUid], onDelete: Cascade)
 
     userGameProfiles UserGameProfile[]
 
@@ -39,7 +39,7 @@ model UserGameProfile {
     uid     BigInt
     data    String // json
 
-    user User @relation(fields: [uid], references: [uid])
+    user User @relation(fields: [uid], references: [uid], onDelete: Cascade)
 
     userBannerProfile        UserBannerProfile?
     userContractLeaderboards UserContractLeaderboard[]
@@ -57,7 +57,7 @@ model UserContractLeaderboard {
     data           String // json
     updatedAt      DateTime @updatedAt
 
-    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
     @@index([gameUid, contractId])
     @@index([contractId])
@@ -72,7 +72,7 @@ model UserMonumentLeaderboard {
     data         String // json
     updatedAt    DateTime @updatedAt
 
-    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
     @@id([gameUid, dungeonId])
     @@index([dungeonId])
