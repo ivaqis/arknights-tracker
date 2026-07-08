@@ -49,9 +49,9 @@ model UserGameProfile {
 }
 
 model UserContractLeaderboard {
+    recordId       String   @id
     gameUid        String
     contractId     String
-    recordId       String   @unique
     indicatorCount Int
     clearTimeSec   Int
     data           String // json
@@ -59,9 +59,8 @@ model UserContractLeaderboard {
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
-    @@id([gameUid, contractId])
+    @@index([gameUid, contractId])
     @@index([contractId])
-    @@index([recordId])
 }
 
 model UserMonumentLeaderboard {

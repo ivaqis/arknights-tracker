@@ -1,7 +1,7 @@
 export interface UserContractLeaderboardEntity {
+    recordId: string,
     gameUid: string,
     contractId: string,
-    recordId: string,
     indicatorCount: number,
     clearTimeSec: number,
     data: string,
