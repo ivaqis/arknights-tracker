@@ -21,14 +21,32 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
         return new UserGameProfileRecord(entity);
     }
 
-    public async findByUid(uid: bigint): Promise<UserGameProfileRecord[]> {
+    public async findByUid(uid: bigint, serverId?: string): Promise<UserGameProfileRecord[]> {
         const entities = await this.table.findMany({
             where: {
                 uid: uid,
+                serverId: serverId,
             }
         });
 
         return entities.map(entity => new UserGameProfileRecord(entity));
+    }
+
+    public async findByServerId(uid: bigint, serverId: string): Promise<UserGameProfileRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                uid_serverId: {
+                    uid,
+                    serverId
+                }
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserGameProfileRecord(entity);
     }
 
     public async upsert(record: UserGameProfileRecord) {
