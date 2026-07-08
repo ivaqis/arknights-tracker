@@ -49,29 +49,35 @@ model UserGameProfile {
 }
 
 model UserContractLeaderboard {
-    gameUid      String
-    eventId      String
-    clearTimeSec Int
-    data         String // json
-    updatedAt    DateTime @updatedAt
+    gameUid        String
+    contractId     String
+    recordId       String   @unique
+    indicatorCount Int
+    clearTimeSec   Int
+    data           String // json
+    updatedAt      DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
-    @@id([gameUid, eventId])
-    @@index([eventId])
+    @@id([gameUid, contractId])
+    @@index([contractId])
+    @@index([recordId])
 }
 
 model UserMonumentLeaderboard {
     gameUid      String
-    eventId      String
+    dungeonId    String
+    groupId      String
+    isHard       Boolean
     clearTimeSec Int
     data         String // json
     updatedAt    DateTime @updatedAt
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid])
 
-    @@id([gameUid, eventId])
-    @@index([eventId])
+    @@id([gameUid, dungeonId])
+    @@index([dungeonId])
+    @@index([groupId, isHard])
 }
 
 model UserBannerProfile {

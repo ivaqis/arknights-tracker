@@ -1,6 +1,8 @@
 export interface UserMonumentLeaderboardEntity {
     gameUid: string,
-    eventId: string,
+    dungeonId: string,
+    groupId: string,
+    isHard: boolean,
     clearTimeSec: number,
     data: string,
     updatedAt: Date
