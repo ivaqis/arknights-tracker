@@ -1,8 +1,8 @@
 export interface UserEntity {
     uid: bigint,
+    publicUid: string,
     firebaseUid: string | null,
     isPrivate: boolean,
-    name: string | null,
     avatarId: string | null,
     backgroundId: string | null,
     displayAvatar: boolean,

@@ -16,9 +16,9 @@ model FirebaseUser {
 
 model User {
     uid             BigInt   @id @default(autoincrement())
+    publicUid       String   @unique
     firebaseUid     String?
     isPrivate       Boolean  @default(false)
-    name            String?
     avatarId        String?
     backgroundId    String?
     displayAvatar   Boolean  @default(true)
@@ -32,6 +32,7 @@ model User {
     userGameProfiles UserGameProfile[]
 
     @@index([firebaseUid])
+    @@index([publicUid])
 }
 
 model UserGameProfile {

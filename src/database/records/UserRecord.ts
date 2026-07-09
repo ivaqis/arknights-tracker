@@ -6,9 +6,9 @@ import { NumberRecordField } from "@database/records/recordFields/NumberRecordFi
 
 export class UserRecord {
     private readonly _uid: bigint;
+    private readonly _publicUid: string;
     private readonly _firebaseUid: NullableStringRecordField;
     private readonly _isPrivate: BooleanRecordField;
-    private readonly _name: NullableStringRecordField;
     private readonly _avatarId: NullableStringRecordField;
     private readonly _backgroundId: NullableStringRecordField;
     private readonly _displayAvatar: BooleanRecordField;
@@ -19,9 +19,9 @@ export class UserRecord {
 
     public constructor(entity: UserEntity) {
         this._uid = entity.uid;
+        this._publicUid = entity.publicUid;
         this._firebaseUid = new NullableStringRecordField(entity.firebaseUid);
         this._isPrivate = new BooleanRecordField(entity.isPrivate);
-        this._name = new NullableStringRecordField(entity.name);
         this._avatarId = new NullableStringRecordField(entity.avatarId);
         this._backgroundId = new NullableStringRecordField(entity.backgroundId);
         this._displayAvatar = new BooleanRecordField(entity.displayAvatar);
@@ -35,16 +35,16 @@ export class UserRecord {
         return this._uid;
     }
 
+    public get publicUid(): string {
+        return this._publicUid;
+    }
+
     public get firebaseUid(): NullableStringRecordField {
         return this._firebaseUid;
     }
 
     public get isPrivate(): BooleanRecordField {
         return this._isPrivate;
-    }
-
-    public get name(): NullableStringRecordField {
-        return this._name;
     }
 
     public get avatarId(): NullableStringRecordField {

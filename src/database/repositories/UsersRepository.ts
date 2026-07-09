@@ -15,8 +15,8 @@ export class UsersRepository extends Repository {
         this._firebaseUsersTable = new FirebaseUsersTable(prisma);
     }
 
-    public async createUser(firebaseUid: string): Promise<UserRecord> {
-        return this._usersTable.create(firebaseUid);
+    public async createUser(publicUid: string, firebaseUid: string): Promise<UserRecord> {
+        return this._usersTable.create(publicUid, firebaseUid);
     }
 
     public async findUser(uid: bigint): Promise<UserRecord | null> {

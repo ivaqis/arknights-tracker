@@ -7,10 +7,11 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
         super(prisma, prisma.user);
     }
 
-    public async create(firebaseUid: string): Promise<UserRecord> {
+    public async create(publicUid: string, firebaseUid: string): Promise<UserRecord> {
         const entity = await this.table.create({
             data: {
                 firebaseUid: firebaseUid,
+                publicUid: publicUid,
             }
         });
 
@@ -20,6 +21,18 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
     public async find(uid: bigint): Promise<UserRecord | null> {
         const entity = await this.table.findUnique({
             where: { uid: uid },
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserRecord(entity);
+    }
+
+    public async findByPublicUid(publicUid: string): Promise<UserRecord | null> {
+        const entity = await this.table.findUnique({
+            where: { publicUid: publicUid },
         });
 
         if (!entity) {
@@ -44,7 +57,6 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
             },
             data: {
                 isPrivate: record.isPrivate.value,
-                name: record.name.value,
                 avatarId: record.avatarId.value,
                 backgroundId: record.backgroundId.value,
                 displayAvatar: record.displayAvatar.value,
