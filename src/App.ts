@@ -1,17 +1,25 @@
-import express, {Express} from "express";
+import { config } from "@/config";
+import { root } from "@api/routes/root";
+import e, { Express } from "express";
 
 export class App {
     private readonly _app: Express;
+    private readonly _port: number;
 
-    constructor() {
-        this._app = express();
+    public constructor(port: number) {
+        this._app = e();
+        this._port = port;
+
+        this._app.use("/", root);
+
+        this._app.listen(this._port);
     }
 
-    get app() {
+    public get app() {
         return this._app;
     }
 
-    private configureRoutes() {
-        this._app.use()
+    public get port(): number {
+        return this._port;
     }
 }

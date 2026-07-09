@@ -8,7 +8,7 @@ const skportBaseDomain = process.env.SKPORT_BASE_DOMAIN || null;
 
 export const config = {
     envName: process.env.NODE_ENV || null,
-    port: process.env.PORT || "3001",
+    port: Number(process.env.PORT) || 3001,
     databaseUrl: process.env.DATABASE_URL || null,
     adminSecret: process.env.ADMIN_SECRET || "super_secret_fallback_key_123",
     loggingLevel: getLoggingLevel(),
