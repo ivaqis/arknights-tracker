@@ -23,6 +23,10 @@ export class UsersRepository extends Repository {
         return this._usersTable.find(uid);
     }
 
+    public async findUserByPublicUid(publicUid: string): Promise<UserRecord | null> {
+        return this._usersTable.findByPublicUid(publicUid);
+    }
+
     public async findUsersByFirebaseUid(firebaseUid: string): Promise<UserRecord[]> {
         return this._usersTable.findByFirebaseUid(firebaseUid);
     }
