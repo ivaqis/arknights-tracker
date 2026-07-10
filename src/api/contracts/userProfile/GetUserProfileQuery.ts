@@ -1,4 +1,4 @@
-export interface UserProfileQuery {
+export interface GetUserProfileQuery {
     uid: string;
     firebaseUid?: string;
 }

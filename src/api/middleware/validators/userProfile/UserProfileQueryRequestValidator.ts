@@ -1,5 +1,5 @@
 import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserProfileQuery } from "@api/contracts/userProfile/UserProfileQuery";
+import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { UserProfileQueryValidator } from "@api/middleware/validators/userProfile/UserProfileQueryValidator";
 import e from "express";
@@ -7,14 +7,14 @@ import e from "express";
 export class UserProfileQueryRequestValidator extends RequestValidator<
     {},
     {},
-    UserProfileQuery
+    GetUserProfileQuery
 > {
 
-    private constructor(req: e.Request<{}, ResponseBody<unknown>, {}, UserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
+    private constructor(req: e.Request<{}, ResponseBody<unknown>, {}, GetUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next);
     }
 
-    public static validate(req: e.Request<{}, ResponseBody<unknown>, {}, UserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
+    public static validate(req: e.Request<{}, ResponseBody<unknown>, {}, GetUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         const validator = new UserProfileQueryRequestValidator(req, res, next);
 
         validator.safeExecute();

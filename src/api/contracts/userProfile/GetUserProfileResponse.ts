@@ -1,6 +1,6 @@
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
 
-export interface UserProfileResponse {
+export interface GetUserProfileResponse {
     publicUid: string;
     isPrivate: boolean;
     avatarId: string | null;

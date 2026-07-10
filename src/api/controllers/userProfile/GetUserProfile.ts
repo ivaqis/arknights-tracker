@@ -1,8 +1,8 @@
 import { logger } from "@/logger";
 import { database } from "@/main";
 import { ResponseBody } from "@api/contracts/ResponseBody";
-import { UserProfileQuery } from "@api/contracts/userProfile/UserProfileQuery";
-import { UserProfileResponse } from "@api/contracts/userProfile/UserProfileResponse";
+import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
+import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse";
 import { Controller } from "@api/controllers/Controller";
 import { UserRecord } from "@database/records/UserRecord";
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
@@ -10,14 +10,14 @@ import e from "express";
 
 export class GetUserProfile extends Controller<
     {},
-    UserProfileResponse,
+    GetUserProfileResponse,
     {},
-    UserProfileQuery
+    GetUserProfileQuery
 > {
     private readonly _publicUid: string;
     private readonly _firebaseUid?: string;
 
-    private constructor(req: e.Request<{}, ResponseBody<UserProfileResponse>, {}, UserProfileQuery>, res: e.Response<ResponseBody<UserProfileResponse>>) {
+    private constructor(req: e.Request<{}, ResponseBody<GetUserProfileResponse>, {}, GetUserProfileQuery>, res: e.Response<ResponseBody<GetUserProfileResponse>>) {
         super(req, res);
 
         const { uid, firebaseUid } = req.query;
@@ -26,13 +26,13 @@ export class GetUserProfile extends Controller<
         this._firebaseUid = firebaseUid;
     }
 
-    public static async get(req: e.Request<{}, ResponseBody<UserProfileResponse>, {}, UserProfileQuery>, res: e.Response<ResponseBody<UserProfileResponse>>) {
+    public static async get(req: e.Request<{}, ResponseBody<GetUserProfileResponse>, {}, GetUserProfileQuery>, res: e.Response<ResponseBody<GetUserProfileResponse>>) {
         const controller = new GetUserProfile(req, res);
 
         await controller.safeExecute();
     }
 
-    private static getRespData(record: UserRecord, gameProfiles: GameProfileEntity[]): UserProfileResponse {
+    private static getRespData(record: UserRecord, gameProfiles: GameProfileEntity[]): GetUserProfileResponse {
         return {
             publicUid: record.publicUid,
             isPrivate: record.isPrivate.initValue,
