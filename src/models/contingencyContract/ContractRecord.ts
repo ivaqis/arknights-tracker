@@ -61,9 +61,9 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
         );
     }
 
-    public static getFromEntity(entity: ContractRecordEntity, recordId: string): ContractRecord {
+    public static getFromEntity(entity: ContractRecordEntity): ContractRecord {
         return new ContractRecord(
-            recordId,
+            entity.recordId,
             entity.contractId,
             entity.ts,
             entity.passTs,
@@ -203,6 +203,7 @@ export class ContractRecord implements IEntityClass<ContractRecordEntity> {
 
     public getEntity(): ContractRecordEntity {
         return {
+            recordId: this._id,
             contractId: this.contractId,
             ts: this.ts,
             passTs: this.passTs,

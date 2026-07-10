@@ -28,7 +28,7 @@ export class UserContractLeaderboardRecord {
             entity.indicatorCount,
             entity.clearTimeSec,
             entity.updatedAt,
-            ContractRecord.getFromEntity(JSON.parse(entity.data), entity.recordId)
+            ContractRecord.getFromEntity(JSON.parse(entity.data))
         );
     }
 

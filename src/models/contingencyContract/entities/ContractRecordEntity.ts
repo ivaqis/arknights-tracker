@@ -1,6 +1,7 @@
 import { ContractCharEntity } from "@models/contingencyContract/entities/ContractCharEntity";
 
 export interface ContractRecordEntity {
+    recordId: string;
     contractId: string;
     ts: string;
     passTs: number;
