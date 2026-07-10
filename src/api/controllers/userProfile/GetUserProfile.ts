@@ -3,9 +3,12 @@ import { database } from "@/main";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
 import { GetUserProfileResponse } from "@api/contracts/userProfile/GetUserProfileResponse";
+import { IGameProfile } from "@api/contracts/userProfile/IGameProfile";
 import { Controller } from "@api/controllers/Controller";
 import { UserRecord } from "@database/records/UserRecord";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
+import { crisisContractRecords } from "@staticModels/instances";
 import e from "express";
 
 export class GetUserProfile extends Controller<
@@ -32,14 +35,29 @@ export class GetUserProfile extends Controller<
         await controller.safeExecute();
     }
 
-    private static getRespData(record: UserRecord, gameProfiles: GameProfileEntity[]): GetUserProfileResponse {
+    private static getRespData(record: UserRecord, gameProfiles: GameProfileEntity[], contractRecords: Record<string, ContractRecord | null>): GetUserProfileResponse {
         return {
             publicUid: record.publicUid,
             isPrivate: record.isPrivate.initValue,
             avatarId: record.avatarId.initValue,
             backgroundId: record.backgroundId.initValue,
-            gameProfiles: gameProfiles
+            gameProfiles: this.getGameProfiles(gameProfiles, contractRecords)
         };
+    }
+
+    private static getGameProfiles(gameProfiles: GameProfileEntity[], contractRecords: Record<string, ContractRecord | null>): IGameProfile[] {
+        const result: IGameProfile[] = [];
+
+        for (const gameProfile of gameProfiles) {
+            let record = contractRecords[gameProfile.base.roleId];
+
+            result.push({
+                gameProfile: gameProfile,
+                contract: record?.getEntity() ?? null
+            });
+        }
+
+        return result;
     }
 
     protected async execute() {
@@ -68,8 +86,10 @@ export class GetUserProfile extends Controller<
         }
 
         const gameProfiles = await this.getGameProfiles(profile.uid);
+        const gameUids = gameProfiles.map(profile => profile.base.roleId);
+        const bestRecords = await this.getBestRecords(gameUids);
 
-        this.data = GetUserProfile.getRespData(profile, gameProfiles);
+        this.data = GetUserProfile.getRespData(profile, gameProfiles, bestRecords);
     }
 
     private async getSelfProfile() {
@@ -92,8 +112,23 @@ export class GetUserProfile extends Controller<
         }
 
         const gameProfiles = await this.getGameProfiles(profile.uid);
+        const gameUids = gameProfiles.map(profile => profile.base.roleId);
+        const bestRecords = await this.getBestRecords(gameUids);
 
-        this.data = GetUserProfile.getRespData(profile, gameProfiles);
+        this.data = GetUserProfile.getRespData(profile, gameProfiles, bestRecords);
+    }
+
+    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
+        const currentContractId = crisisContractRecords.current.id;
+        const records: Record<string, ContractRecord | null> = {};
+
+        for (const uid of gameUids) {
+            const record = await database.gameProfiles.contractTable.findBestByGameUid(uid, currentContractId);
+
+            records[uid] = record?.data ?? null;
+        }
+
+        return records;
     }
 
     private async getProfile(): Promise<UserRecord | null> {

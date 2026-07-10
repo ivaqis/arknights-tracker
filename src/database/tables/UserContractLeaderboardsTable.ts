@@ -42,6 +42,25 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         return entities.map(UserContractLeaderboardRecord.createFromEntity);
     }
 
+    public async findBestByGameUid(gameUid: string, contractId?: string): Promise<UserContractLeaderboardRecord | null> {
+        const entity = await this.table.findFirst({
+            where: {
+                gameUid: gameUid,
+                contractId: contractId
+            },
+            orderBy: [
+                { indicatorCount: "desc" },
+                { clearTimeSec: "desc" }
+            ]
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return UserContractLeaderboardRecord.createFromEntity(entity);
+    }
+
     public async create(record: UserContractLeaderboardRecord) {
         await this.table.create({
             data: {
