@@ -2615,4 +2615,11 @@
     <path d="M6 29H12V42H6V29Z" fill="currentColor"/>
     <path d="M0 25H3V42H0V25Z" fill="currentColor"/>
   </symbol>
+
+  <symbol id="zoom-in" viewBox="0 0 24 24">
+    <path d="M14 14L20 20" stroke="white" stroke-width="2"/>
+    <circle cx="9.5" cy="9.5" r="5.5" stroke="white" stroke-width="2"/>
+    <path d="M9.5 7V12M7 9.5H12" stroke="white" stroke-width="2"/>
+  </symbol>
+  
 </svg>

@@ -314,7 +314,8 @@
     "sortByWait": "Theo số ngày không có rerun",
     "allBanners": "Tất cả Banner",
     "emptyPageMsg": "Ở đây trống trải quá",
-    "equipmentType": "Loại thiết bị"
+    "equipmentType": "Loại thiết bị",
+    "gearTemplate": "Mẫu Trang Bị"
   },
   "status": {
     "won": "Thắng 50:50",
@@ -436,7 +437,8 @@
     "seatchForSwordVaultDale": "Tìm Về Cốc Tàng Kiếm",
     "monumentalEtchingDirgeOfGrief": "Văn Khắc Kỷ Niệm: Bi Ca Sầu Muộn",
     "umbralMonument": "Đài Bóng Tối",
-    "peacekeepersNocturneSignIn": "Điểm Danh Dạ Khúc Bảo Vệ Hòa Bình"
+    "peacekeepersNocturneSignIn": "Điểm Danh Dạ Khúc Bảo Vệ Hòa Bình",
+    "northwardToPerilSignIn": "Điểm Danh Bắc Tiến Vào Hiểm Nguy"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -848,7 +850,8 @@
     "precipitationAcid": "Axit Lắng Đọng",
     "liquidHeavyXiranite": "Xiranite Nặng Hóa Lỏng",
     "centuryRind": "Trần Bì Trăm Năm",
-    "caudalGoldscale": "Vảy Đuôi Hoàng Kim"
+    "caudalGoldscale": "Vảy Đuôi Hoàng Kim",
+    "stickerSafetyHelmet": "Nhãn dán: Mũ Bảo Hộ"
   },
   "common": {
     "copy": "Sao chép",

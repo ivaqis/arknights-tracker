@@ -3,6 +3,7 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import ItemCard from "$lib/components/cards/ItemCard.svelte";
@@ -85,15 +86,7 @@
     $: enemyName = enemyLocale.name || id;
     $: enemyAbilities = enemyLocale.abilities || [];
     $: enemyDescription = enemyLocale.description || "";
-
-    function getRarityColors(rarity) {
-        if (rarity === 6) return "#F87C32";
-        if (rarity === 5) return "#F9B90C";
-        if (rarity === 4) return "#9253F1";
-        if (rarity === 3) return "#25B9F9";
-        return "#888888";
-    }
-    $: rarityColor = getRarityColors(enemyData.rarity || 4);
+    $: rarityColor = getRarityColor(enemyData.rarity || 4);
 
     function getResColorClass(val) {
         const percent = Math.round(val * 100);
@@ -187,7 +180,6 @@
     }} 
     on:keyup={handleKeyup} 
 />
-
 
 {#if !enemies[id]}
     <NotFound />

@@ -309,7 +309,8 @@
     "sortByWait": "복각 대기일순",
     "allBanners": "모든 배너",
     "emptyPageMsg": "여기 정말 텅 비었네",
-    "equipmentType": "장비 유형"
+    "equipmentType": "장비 유형",
+    "gearTemplate": "장비 제작 템플릿"
   },
   "status": {
     "won": "승리 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "골짜기의 검을 찾아서",
     "monumentalEtchingDirgeOfGrief": "기억의 흔적 · 분노의 외침",
     "umbralMonument": "그림자 이정표",
-    "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크"
+    "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크",
+    "northwardToPerilSignIn": "북쪽 험지 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -805,7 +807,8 @@
     "precipitationAcid": "산성 침적물",
     "liquidHeavyXiranite": "액화 중식양",
     "centuryRind": "백년 숙성 진피",
-    "caudalGoldscale": "꼬리 금갑"
+    "caudalGoldscale": "꼬리 금갑",
+    "stickerSafetyHelmet": "스티커 · 공업 안전모"
   },
   "common": {
     "copy": "복사",

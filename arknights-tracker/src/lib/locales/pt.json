@@ -309,7 +309,8 @@
     "sortByWait": "Por dias sem rerun",
     "allBanners": "Todos os Banners",
     "emptyPageMsg": "Como está vazio aqui",
-    "equipmentType": "Tipo de equipamento"
+    "equipmentType": "Tipo de equipamento",
+    "gearTemplate": "Gabarito de Equipamento"
   },
   "status": {
     "won": "Ganho 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "A Procura do Vale do Cofre de Espadas",
     "monumentalEtchingDirgeOfGrief": "Entalhe Monumental: Lamento da Dor",
     "umbralMonument": "Monumento Umbral",
-    "peacekeepersNocturneSignIn": "Login em Noturno do Pacificador"
+    "peacekeepersNocturneSignIn": "Login em Noturno do Pacificador",
+    "northwardToPerilSignIn": "Login em Rumo ao Perigo no Norte"
   },
   "mouths": {
     "january": "Janeiro",
@@ -805,7 +807,8 @@
     "precipitationAcid": "Ácido de Precipitação",
     "liquidHeavyXiranite": "Xiranita Pesada Líquida",
     "centuryRind": "Casca Secular",
-    "caudalGoldscale": "Escama Dourada Caudal"
+    "caudalGoldscale": "Escama Dourada Caudal",
+    "stickerSafetyHelmet": "Adesivo: Capacete de Segurança"
   },
   "common": {
     "copy": "Copiar",

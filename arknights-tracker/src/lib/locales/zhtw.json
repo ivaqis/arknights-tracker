@@ -314,7 +314,8 @@
     "sortByWait": "按未復刻天數",
     "allBanners": "所有卡池",
     "emptyPageMsg": "這裡好空啊",
-    "equipmentType": "裝備類型"
+    "equipmentType": "裝備類型",
+    "gearTemplate": "裝備製造模板"
   },
   "status": {
     "won": "勝出 50:50",
@@ -436,7 +437,8 @@
     "seatchForSwordVaultDale": "尋劍幽谷",
     "monumentalEtchingDirgeOfGrief": "豐碑留名·忿聲",
     "umbralMonument": "影拓豐碑",
-    "peacekeepersNocturneSignIn": "夜趨逐罪簽到"
+    "peacekeepersNocturneSignIn": "夜趨逐罪簽到",
+    "northwardToPerilSignIn": "北行險境簽到"
   },
   "mouths": {
     "january": "一月",
@@ -848,7 +850,8 @@
     "precipitationAcid": "沉積酸",
     "liquidHeavyXiranite": "液化重息壤",
     "centuryRind": "百年陳皮",
-    "caudalGoldscale": "尾尖金甲"
+    "caudalGoldscale": "尾尖金甲",
+    "stickerSafetyHelmet": "貼紙·工業安全帽"
   },
   "common": {
     "copy": "複製",

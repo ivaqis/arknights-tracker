@@ -309,7 +309,8 @@
     "sortByWait": "Per giorni senza rerun",
     "allBanners": "Tutti i Banner",
     "emptyPageMsg": "Com'è vuoto qui",
-    "equipmentType": "Tipo di equipaggiamento"
+    "equipmentType": "Tipo di equipaggiamento",
+    "gearTemplate": "Schema per l'equipaggiamento"
   },
   "status": {
     "won": "Vinto 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "Ricerca della Valletta di Voltaspada",
     "monumentalEtchingDirgeOfGrief": "Incisione monumentale: Canto di dolore",
     "umbralMonument": "Monumento d'ombra",
-    "peacekeepersNocturneSignIn": "Accesso Notturno della diplomazia"
+    "peacekeepersNocturneSignIn": "Accesso Notturno della diplomazia",
+    "northwardToPerilSignIn": "Accesso Verso il pericolo a nord"
   },
   "mouths": {
     "january": "Gennaio",
@@ -805,7 +807,8 @@
     "precipitationAcid": "Acido per precipitazione",
     "liquidHeavyXiranite": "Xiranite pesante liquida",
     "centuryRind": "Scorza secolare",
-    "caudalGoldscale": "Scaglia caudale dorata"
+    "caudalGoldscale": "Scaglia caudale dorata",
+    "stickerSafetyHelmet": "Adesivo: casco di sicurezza"
   },
   "common": {
     "copy": "Copia",

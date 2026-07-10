@@ -309,7 +309,8 @@
     "sortByWait": "Berdasarkan hari tanpa rerun",
     "allBanners": "Semua Banner",
     "emptyPageMsg": "Kosong sekali di sini",
-    "equipmentType": "Tipe Peralatan"
+    "equipmentType": "Tipe Peralatan",
+    "gearTemplate": "Templat Gear"
   },
   "status": {
     "won": "Menang 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "Pencarian Lembah Benteng Pedang",
     "monumentalEtchingDirgeOfGrief": "Pengukiran Monumental: Ratapan Duka",
     "umbralMonument": "Monumen Umbra",
-    "peacekeepersNocturneSignIn": "Sign In Nokturno sang Penjaga Perdamaian"
+    "peacekeepersNocturneSignIn": "Sign In Nokturno sang Penjaga Perdamaian",
+    "northwardToPerilSignIn": "Sign In Menuju Bahaya di Utara"
   },
   "mouths": {
     "january": "Januari",
@@ -805,7 +807,8 @@
     "precipitationAcid": "Asam Peluruh",
     "liquidHeavyXiranite": "Xiranite Berat Cair",
     "centuryRind": "Kulit Buah Seabad",
-    "caudalGoldscale": "Sisik Emas Kaudal"
+    "caudalGoldscale": "Sisik Emas Kaudal",
+    "stickerSafetyHelmet": "Stiker: Helm Pengaman"
   },
   "common": {
     "copy": "Salin",

@@ -313,7 +313,9 @@
     "sortByWait": "По числу дней без рерана",
     "allBanners": "Все баннеры",
     "emptyPageMsg": "Как же тут пусто",
-    "equipmentType": "Тип снаряжения"
+    "equipmentType": "Тип снаряжения",
+    "gearTemplate": "Шаблон снаряжения",
+    "blueprintLocation": "Локация шаблона снаряжения"
   },
   "status": {
     "won": "Выигрыш 50:50",
@@ -437,7 +439,8 @@
     "seatchForSwordVaultDale": "В поисках долины Залежи Клинков",
     "monumentalEtchingDirgeOfGrief": "Памятные знаки: Скорбный плач",
     "umbralMonument": "Сумрачный монумент",
-    "peacekeepersNocturneSignIn": "Вход «Ноктюрн миротворца»"
+    "peacekeepersNocturneSignIn": "Вход «Ноктюрн миротворца»",
+    "northwardToPerilSignIn": "Вход «На север, навстречу риску»"
   },
   "mouths": {
     "january": "Январь",
@@ -924,7 +927,8 @@
     "precipitationAcid": "Осадочная кислота",
     "liquidHeavyXiranite": "Жидкий тяжелый ксиранит",
     "centuryRind": "Вековая кожура",
-    "caudalGoldscale": "Золотая хвостовая чешуя"
+    "caudalGoldscale": "Золотая хвостовая чешуя",
+    "stickerSafetyHelmet": "Стикер «Защитная каска»"
   },
   "common": {
     "copy": "Копировать",

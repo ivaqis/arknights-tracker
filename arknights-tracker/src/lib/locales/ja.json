@@ -309,7 +309,8 @@
     "sortByWait": "復刻待ち日数順",
     "allBanners": "すべてのガチャ",
     "emptyPageMsg": "ここはなんて空っぽなんだろう",
-    "equipmentType": "装備タイプ"
+    "equipmentType": "装備タイプ",
+    "gearTemplate": "装備設計図"
   },
   "status": {
     "won": "勝利 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "幽谷探剣",
     "monumentalEtchingDirgeOfGrief": "記憶の痕・怒鳴",
     "umbralMonument": "映像の記念碑",
-    "peacekeepersNocturneSignIn": "闇夜の罪咎スタンプ"
+    "peacekeepersNocturneSignIn": "闇夜の罪咎スタンプ",
+    "northwardToPerilSignIn": "北部絶境スタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -600,7 +602,7 @@
     "essence": "基質",
     "none": "基質なし",
     "addEssence": "基質を追加",
-    "usefulnessTooltip": "この部位でこの装備が適している他の装備の数"
+    "usefulnessTooltip": "この部位でこの装備が適している他の装備의 수"
   },
   "bioValues": {
     "Unknown": "不明"
@@ -805,7 +807,8 @@
     "precipitationAcid": "沈殿酸",
     "liquidHeavyXiranite": "液化重息壌",
     "centuryRind": "百年陳皮",
-    "caudalGoldscale": "尾先の金鱗"
+    "caudalGoldscale": "尾先の金鱗",
+    "stickerSafetyHelmet": "ステッカー・作業用ヘルメット"
   },
   "common": {
     "copy": "コピー",

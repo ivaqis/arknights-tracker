@@ -309,7 +309,8 @@
     "sortByWait": "Nach Tagen ohne Rerun",
     "allBanners": "Alle Banner",
     "emptyPageMsg": "Wie leer es hier ist",
-    "equipmentType": "Ausrüstungstyp"
+    "equipmentType": "Ausrüstungstyp",
+    "gearTemplate": "Ausrüstungsvorlage"
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "Die Suche nach dem Tal des Schwertverlieses",
     "monumentalEtchingDirgeOfGrief": "Monumentales Ätzen: Klagegesang",
     "umbralMonument": "Schattenmonument",
-    "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung"
+    "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung",
+    "northwardToPerilSignIn": "„Nach Norden der Gefahr entgegen“-Anmeldung"
   },
   "mouths": {
     "january": "Januar",
@@ -805,7 +807,8 @@
     "precipitationAcid": "Niederschlagssäure",
     "liquidHeavyXiranite": "Flüssiges Schweres Xiranit",
     "centuryRind": "Jahrhundertschale",
-    "caudalGoldscale": "Goldene Schwanzschuppe"
+    "caudalGoldscale": "Goldene Schwanzschuppe",
+    "stickerSafetyHelmet": "Sticker: Schutzhelm"
   },
   "common": {
     "copy": "Kopieren",

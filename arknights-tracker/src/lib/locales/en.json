@@ -316,7 +316,9 @@
     "sortByWait": "By days without rerun",
     "allBanners": "All Banners",
     "emptyPageMsg": "It's so empty here",
-    "equipmentType": "Equipment Type"
+    "equipmentType": "Equipment Type",
+    "gearTemplate": "Gear Template",
+    "blueprintLocation": "Gear template location"
   },
   "status": {
     "won": "Won 50:50",
@@ -438,7 +440,8 @@
     "seatchForSwordVaultDale": "Search for Sword Vault Dale",
     "monumentalEtchingDirgeOfGrief": "Monumental Etching: Dirge of Grief",
     "umbralMonument": "Umbral Monument",
-    "peacekeepersNocturneSignIn": "Peacekeeper's Nocturne Sign-In"
+    "peacekeepersNocturneSignIn": "Peacekeeper's Nocturne Sign-In",
+    "northwardToPerilSignIn": "Northward to Peril Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -925,7 +928,8 @@
     "precipitationAcid": "Precipitation Acid",
     "liquidHeavyXiranite": "Liquid Heavy Xiranite",
     "centuryRind": "Century Rind",
-    "caudalGoldscale": "Caudal Goldscale"
+    "caudalGoldscale": "Caudal Goldscale",
+    "stickerSafetyHelmet": "Sticker: Safety Helmet"
   },
   "common": {
     "copy": "Copy",

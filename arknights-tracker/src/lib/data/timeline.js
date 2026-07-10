@@ -822,6 +822,7 @@ export const rawEvents = [
     startTime: "2026-07-02 12:00:00",
     endTime: "2026-07-16 04:00:00",
     endTimeAsia: "2026-07-15 17:00:00",
+    isPermanent: true,
     icon: "ev8-v1.0.jpg",
     url: "",
     color: "#1D1D1D",
@@ -889,6 +890,22 @@ export const rawEvents = [
     layer: 4,
     type: "signIn",
     iconPosition: 20,
+    version: "1.3"
+  },
+  {
+    id: "ev12-v1.3",
+    title: "events.northwardToPerilSignIn",
+    name: "Northward to Peril Sign-In",
+    startTime: "2026-07-10 12:00:00",
+    startTimeAsia: "2026-07-10 19:30:00",
+    endTime: "2026-07-16 04:00:00",
+    endTimeAsia: "2026-07-15 17:00:00",
+    icon: "ev12-v1.3.jpg",
+    url: "",
+    color: "#d8c0c0ff",
+    layer: 3,
+    type: "signIn",
+    iconPosition: 40,
     version: "1.3"
   }
 ];

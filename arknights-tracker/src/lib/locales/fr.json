@@ -309,7 +309,8 @@
     "sortByWait": "Par jours sans rerun",
     "allBanners": "Tous les Banners",
     "emptyPageMsg": "Comme c'est vide ici",
-    "equipmentType": "Type d'équipement"
+    "equipmentType": "Type d'équipement",
+    "gearTemplate": "Modèle d'équipement"
   },
   "status": {
     "won": "Gagné 50:50",
@@ -430,7 +431,8 @@
     "seatchForSwordVaultDale": "Recherche du Val du caveau des lames",
     "monumentalEtchingDirgeOfGrief": "Gravure monumentale : mélopée lugubre",
     "umbralMonument": "Monument de l'ombre",
-    "peacekeepersNocturneSignIn": "Connexion - Nocturne du pacificateur"
+    "peacekeepersNocturneSignIn": "Connexion - Nocturne du pacificateur",
+    "northwardToPerilSignIn": "Connexion - Périple vers le nord"
   },
   "mouths": {
     "january": "Janvier",
@@ -805,7 +807,8 @@
     "precipitationAcid": "Acide de précipitation",
     "liquidHeavyXiranite": "Xiranite lourde liquide",
     "centuryRind": "Écorce centenaire",
-    "caudalGoldscale": "Écaille d'or caudale"
+    "caudalGoldscale": "Écaille d'or caudale",
+    "stickerSafetyHelmet": "Autocollant : casque de protection"
   },
   "common": {
     "copy": "Copier",
