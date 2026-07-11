@@ -12,7 +12,7 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
     private static getRules(): ValidationRule<GetUserProfileQuery>[] {
         return [
             this.getUidRule(),
-            this.getFirebaseUidRule()
+            this.getFirebaseTokenRule()
         ];
     }
 
@@ -25,12 +25,12 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
         );
     }
 
-    private static getFirebaseUidRule(): ValidationRule<GetUserProfileQuery> {
+    private static getFirebaseTokenRule(): ValidationRule<GetUserProfileQuery> {
         const rule = new OptionalValidationRule(new StringValidationRule(true));
 
         return new ValidationRule(
             item => rule.isValid(item.firebaseToken),
-            "firebaseUid must be a string or undefined"
+            "firebaseToken must be a string or undefined"
         );
     }
 }
