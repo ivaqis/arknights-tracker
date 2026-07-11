@@ -6,6 +6,7 @@ import { UpdateUserProfileResponse } from "@api/contracts/userProfile/UpdateUser
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
+import { bannedWords } from "@staticModels/instances";
 import e from "express";
 
 export class UpdateUserProfile
@@ -78,6 +79,16 @@ export class UpdateUserProfile
                 this.status = 400;
                 this.message = "User already exists";
                 this.code = 3;
+
+                return;
+            }
+
+            const isValid = bannedWords.containsAnyBanned(this._newUid);
+
+            if (!isValid) {
+                this.status = 400;
+                this.message = "Username contains banned words";
+                this.code = 4;
 
                 return;
             }
