@@ -3,10 +3,11 @@ import { BooleanRecordField } from "@database/records/recordFields/BooleanRecord
 import { DateRecordField } from "@database/records/recordFields/DateRecordField";
 import { NullableStringRecordField } from "@database/records/recordFields/NullableStringRecordField";
 import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
+import { StringRecordField } from "@database/records/recordFields/StringRecordField";
 
 export class UserRecord {
     private readonly _uid: bigint;
-    private readonly _publicUid: string;
+    private readonly _publicUid: StringRecordField;
     private readonly _firebaseUid: NullableStringRecordField;
     private readonly _isPrivate: BooleanRecordField;
     private readonly _avatarId: NullableStringRecordField;
@@ -19,7 +20,7 @@ export class UserRecord {
 
     public constructor(entity: UserEntity) {
         this._uid = entity.uid;
-        this._publicUid = entity.publicUid;
+        this._publicUid = new StringRecordField(entity.publicUid);
         this._firebaseUid = new NullableStringRecordField(entity.firebaseUid);
         this._isPrivate = new BooleanRecordField(entity.isPrivate);
         this._avatarId = new NullableStringRecordField(entity.avatarId);
@@ -35,7 +36,7 @@ export class UserRecord {
         return this._uid;
     }
 
-    public get publicUid(): string {
+    public get publicUid(): StringRecordField {
         return this._publicUid;
     }
 
