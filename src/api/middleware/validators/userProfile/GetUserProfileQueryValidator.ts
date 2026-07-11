@@ -4,9 +4,9 @@ import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
-export class UserProfileQueryValidator extends Validator<GetUserProfileQuery> {
+export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery> {
     public constructor(item: GetUserProfileQuery) {
-        super(item, UserProfileQueryValidator.getRules());
+        super(item, GetUserProfileQueryValidator.getRules());
     }
 
     private static getRules(): ValidationRule<GetUserProfileQuery>[] {

@@ -1,10 +1,10 @@
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import {
-    UserProfileQueryRequestValidator
-} from "@api/middleware/validators/userProfile/UserProfileQueryRequestValidator";
+    GetUserProfileRequestValidator
+} from "@api/middleware/validators/userProfile/GetUserProfileRequestValidator";
 import { Router } from "express";
 
 export const profileRouter = Router();
 
-profileRouter.get("/", UserProfileQueryRequestValidator.validate, GetUserProfile.get);
+profileRouter.get("/", GetUserProfileRequestValidator.validate, GetUserProfile.get);
 profileRouter.post("/");
