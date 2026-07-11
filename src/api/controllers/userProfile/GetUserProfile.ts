@@ -48,7 +48,7 @@ export class GetUserProfile extends Controller<
                                contractRecords: Record<string, ContractRecord | null>
     ): GetUserProfileResponse {
         return {
-            publicUid: record.publicUid,
+            publicUid: record.publicUid.initValue,
             isPrivate: record.isPrivate.initValue,
             avatarId: record.avatarId.initValue,
             backgroundId: record.backgroundId.initValue,
