@@ -41,4 +41,13 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
             "backgroundId must be a string",
         );
     }
+
+    private static getNewUidRule(): ValidationRule<UpdateUserProfileRequest> {
+        const rule = new OptionalValidationRule(new StringValidationRule(true));
+
+        return new ValidationRule(
+            item => rule.isValid(item.newUid),
+            "newUid must be a string",
+        );
+    }
 }
