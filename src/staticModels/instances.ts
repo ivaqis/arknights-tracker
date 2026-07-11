@@ -9,9 +9,11 @@ import contractNames from "@static/contractNames.json";
 import monumentNames from "@static/monumentNames.json";
 import monumentGroups from "@static/monumentGroups.json";
 import { BannerRecords } from "@staticModels/banners/BannerRecords";
+import { BannedWords } from "@staticModels/banwords/BannedWords";
 import { CrisisContractRecords } from "@staticModels/crisisContracts/CrisisContractRecords";
 import { ItemNameRecords } from "@staticModels/itemNames/ItemNameRecords";
 import { MonumentGroupRecords } from "@staticModels/monument/MonumentGroupRecords";
+import { TextList } from "@staticModels/TextList";
 
 export const bannerRecords = new BannerRecords(banners);
 
@@ -26,3 +28,11 @@ export const monumentNameRecords = new ItemNameRecords(monumentNames, "MonumentN
 export const crisisContractRecords = new CrisisContractRecords(crisisContracts);
 
 export const monumentGroupRecords = new MonumentGroupRecords(monumentGroups);
+
+const banWordList = new TextList();
+const banRootList = new TextList();
+
+banWordList.addFromDir("static/banwords");
+banRootList.addFromDir("static/banroots");
+
+export const bannedWords = new BannedWords(banWordList.getList(), banRootList.getList());
