@@ -98,9 +98,10 @@ Response
 
 Query
 
-* bannerType: string
+* bannerType?: string
 * authToken?: string
 * gameUid?: string
+* firebaseToken?: string
 
 Response
 
