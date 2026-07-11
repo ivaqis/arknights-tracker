@@ -29,7 +29,7 @@ export class UserProfileQueryValidator extends Validator<GetUserProfileQuery> {
         const rule = new OptionalValidationRule(new StringValidationRule(true));
 
         return new ValidationRule(
-            item => rule.isValid(item.firebaseUid),
+            item => rule.isValid(item.firebaseToken),
             "firebaseUid must be a string or undefined"
         );
     }

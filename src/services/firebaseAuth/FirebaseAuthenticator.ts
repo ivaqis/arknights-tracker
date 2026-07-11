@@ -49,6 +49,16 @@ export class FirebaseAuthenticator {
         }
     }
 
+    public async getFirebaseUid(token?: string | null): Promise<string | null> {
+        if (!token) {
+            return null;
+        }
+
+        const data = await this.verifyToken(token);
+
+        return data?.sub ?? null;
+    }
+
     private async verify(token: string): Promise<FirebaseAuthData> {
         if (token.startsWith("mock_") && config.envName !== "production") {
             return {
