@@ -13,7 +13,8 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
         return [
             this.getIsPrivateRule(),
             this.getAvatarIdRule(),
-            this.getBackgroundIdRule()
+            this.getBackgroundIdRule(),
+            this.getNewUidRule()
         ];
     }
 
