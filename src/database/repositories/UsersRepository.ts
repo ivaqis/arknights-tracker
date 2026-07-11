@@ -31,6 +31,12 @@ export class UsersRepository extends Repository {
         return this._usersTable.findByFirebaseUid(firebaseUid);
     }
 
+    public async isUserExist(publicUid: string): Promise<boolean> {
+        const user  = await this.findUserByPublicUid(publicUid);
+
+        return !!user;
+    }
+
     public async updateUser(record: UserRecord): Promise<void> {
         return this._usersTable.update(record);
     }

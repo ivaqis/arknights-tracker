@@ -11,9 +11,9 @@
 * GET `/api/leaderboard/monument/run`
 * GET `/api/rankings/data`
 * DELETE `/api/user/game-account/delete`
-* GET `/api/user/profile/get`
+* GET `/api/user/profile/get` +
 * POST `/api/user/profile/create`
-* POST `/api/user/profile/update`
+* POST `/api/user/profile/update` +
 * DELETE `/api/user/profile/delete`
 * POST `/api/user/sync`
 * POST `/api/user/upload-avatar`
