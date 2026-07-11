@@ -1,5 +1,4 @@
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
-import { OptionalValidationRule } from "@models/validation/OptionalValidationRule";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
@@ -21,16 +20,16 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
 
         return new ValidationRule(
             item => rule.isValid(item.uid),
-            "uid must be a string"
+            "uid must be a not-empty string"
         );
     }
 
     private static getFirebaseTokenRule(): ValidationRule<GetUserProfileQuery> {
-        const rule = new OptionalValidationRule(new StringValidationRule(true));
+        const rule = new StringValidationRule();
 
         return new ValidationRule(
             item => rule.isValid(item.firebaseToken),
-            "firebaseToken must be a string or undefined"
+            "firebaseToken must be a string"
         );
     }
 }
