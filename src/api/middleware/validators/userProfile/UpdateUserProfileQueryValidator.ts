@@ -12,7 +12,6 @@ export class UpdateUserProfileQueryValidator extends Validator<UpdateUserProfile
         return [
             this.getFirebaseTokenRule(),
             this.getUidRule(),
-            this.getGameUidRule()
         ];
     }
 
@@ -31,15 +30,6 @@ export class UpdateUserProfileQueryValidator extends Validator<UpdateUserProfile
         return new ValidationRule(
             item => rule.isValid(item.uid),
             "uid must be a string"
-        );
-    }
-
-    private static getGameUidRule(): ValidationRule<UpdateUserProfileQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.gameUid),
-            "gameUid must be a string"
         );
     }
 }
