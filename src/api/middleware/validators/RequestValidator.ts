@@ -68,7 +68,8 @@ export abstract class RequestValidator<
             return true;
         }
 
-        const validator = new ctor(item);
+        // @ts-ignore
+        const validator = new ctor(item || {});
 
         if (!validator.isValid) {
             this.status = 400;

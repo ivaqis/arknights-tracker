@@ -1,7 +1,10 @@
 import { App } from "@/App";
 import { config } from "@/config";
+import { charNameRecords } from "@staticModels/instances";
 
-const app = new App();
 
-console.log("dddd");
 
+// static data init
+charNameRecords;
+
+const app = new App(config.port);

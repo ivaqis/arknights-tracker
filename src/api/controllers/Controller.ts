@@ -68,6 +68,10 @@ export abstract class Controller<
         } catch (e) {
             logger.error(e);
 
+            if (e instanceof Error) {
+                logger.error(e.stack);
+            }
+
             this.status = 500;
             this._res.status(500).json({
                 message: "Internal Server Error",

@@ -69,7 +69,11 @@ export abstract class Middleware<
                 this.next();
             }
         } catch (e) {
-            logger.error(e);
+            logger.error(`Middleware: ${e}`);
+
+            if (e instanceof Error) {
+                logger.error(e.stack);
+            }
 
             this.status = 500;
             this.res.status(500).json({
