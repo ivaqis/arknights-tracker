@@ -14,38 +14,16 @@ export class UpdateUserProfileRequestValidator
         UpdateUserProfileRequest,
         UpdateUserProfileQuery
     > {
-
     private constructor(req: e.Request<{}, ResponseBody<unknown>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
-        super(req, res, next);
+        super(req, res, next, {
+            bodyValidatorConstructor: UpdateUserProfileBodyValidator,
+            queryValidatorConstructor: UpdateUserProfileQueryValidator
+        });
     }
 
-    public static validate(req: e.Request<{}, ResponseBody<unknown>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
+    public static async validate(req: e.Request<{}, ResponseBody<unknown>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         const validator = new UpdateUserProfileRequestValidator(req, res, next);
 
-        validator.safeExecute();
-    }
-
-    protected execute(): void {
-        const query = this.req.query;
-
-        const queryValidator = new UpdateUserProfileQueryValidator(query);
-
-        if (!queryValidator.isValid) {
-            this.status = 400;
-            this.message = queryValidator.messages.join("\n");
-
-            return;
-        }
-
-        const body = this.req.body;
-
-        const bodyValidator = new UpdateUserProfileBodyValidator(body);
-
-        if (!bodyValidator.isValid) {
-            this.status = 400;
-            this.message = bodyValidator.messages.join("\n");
-
-            return;
-        }
+        await validator.safeExecute();
     }
 }

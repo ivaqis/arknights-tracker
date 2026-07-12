@@ -1,79 +1,81 @@
 import { ResponseBody } from "@api/contracts/ResponseBody";
+import { Middleware } from "@api/middleware/Middleware";
+import { RequestValidatorConstructors } from "@api/middleware/validators/RequestValidatorConstructors";
+import { Validator } from "@models/validation/Validator";
 import e from "express";
 import * as core from "express-serve-static-core";
 
 export abstract class RequestValidator<
-    Params extends core.ParamsDictionary = core.ParamsDictionary,
-    ReqBody = any,
-    ReqQuery = any
+    Params extends core.ParamsDictionary,
+    ReqBody,
+    ReqQuery
+> extends Middleware <
+    Params,
+    unknown,
+    ReqBody,
+    ReqQuery
 > {
-    private readonly _req: e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery>;
-    private readonly _res: e.Response<ResponseBody<unknown>>;
-    private readonly _next: e.NextFunction;
-
-    private _status: number = 200;
-    private _message: string = "";
+    private readonly _paramsValidatorConstructor?: new (params: Params) => Validator<Params>;
+    private readonly _queryValidatorConstructor?: new (query: ReqQuery) => Validator<ReqQuery>;
+    private readonly _bodyValidatorConstructor?: new (body: ReqBody) => Validator<ReqBody>;
 
     protected constructor(req: e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery>,
                           res: e.Response<ResponseBody<unknown>>,
-                          next: e.NextFunction
+                          next: e.NextFunction,
+                          validators: RequestValidatorConstructors<Params, ReqBody, ReqQuery>
     ) {
-        this._req = req;
-        this._res = res;
-        this._next = next;
+        super(req, res, next);
+
+        this._paramsValidatorConstructor = validators.paramsValidatorConstructor;
+        this._bodyValidatorConstructor = validators.bodyValidatorConstructor;
+        this._queryValidatorConstructor = validators.queryValidatorConstructor;
     }
 
-    protected get req(): e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery> {
-        return this._req;
-    }
+    protected async execute(): Promise<void> {
+        const params = this.paramsValidate();
 
-    protected get res(): e.Response<ResponseBody<unknown>> {
-        return this._res;
-    }
-
-    protected get next(): e.NextFunction {
-        return this._next;
-    }
-
-    public get status(): number {
-        return this._status;
-    }
-
-    protected set status(value: number) {
-        this._status = value;
-    }
-
-    public get message(): string {
-        return this._message;
-    }
-
-    protected set message(value: string) {
-        this._message = value;
-    }
-
-    protected abstract execute(): void;
-
-    protected safeExecute(): void {
-        try {
-            this.execute();
-
-            if (this._status !== 200) {
-                this._res.status(this._status)
-                    .json({
-                        message: this._message,
-                        data: null
-                    });
-                return;
-            }
-
-            this._next();
-
-        } catch (e) {
-            this._res.status(500)
-                .json({
-                    message: "Internal Server Error",
-                    data: null
-                });
+        if (!params) {
+            return;
         }
+
+        const query = this.queryValidate();
+
+        if (!query) {
+            return;
+        }
+
+        const body = this.bodyValidate();
+
+        if (!body) {
+            return;
+        }
+    }
+
+    private queryValidate(): boolean {
+        return this.validate(this.req.query, this._queryValidatorConstructor);
+    }
+
+    private bodyValidate(): boolean {
+        return this.validate(this.req.body, this._bodyValidatorConstructor);
+    }
+
+    private paramsValidate(): boolean {
+        return this.validate(this.req.params, this._paramsValidatorConstructor);
+    }
+
+    private validate<T>(item: T, ctor?: new (item: T) => Validator<T>): boolean {
+        if (!ctor) {
+            return true;
+        }
+
+        const validator = new ctor(item);
+
+        if (!validator.isValid) {
+            this.status = 400;
+            this.message = validator.messages.join("\n");
+            return false;
+        }
+
+        return true;
     }
 }
