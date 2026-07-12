@@ -7,7 +7,7 @@ import e, { Router } from "express";
 
 export const apiRouter = Router();
 
-apiRouter.use(e.json());
+apiRouter.use(e.json({ limit: "10mb" }));
 
 apiRouter.use("/leaderboard", leaderboardRouter);
 apiRouter.use("/user", userRouter);
