@@ -1,4 +1,5 @@
 import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfile";
+import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
@@ -19,4 +20,4 @@ export const profileRouter = Router();
 profileRouter.get("/get", GetUserProfileRequestValidator.validate, GetUserProfile.get);
 profileRouter.post("/update", JsonRequestValidator.isJson, UpdateUserProfileRequestValidator.validate, UpdateUserProfile.post);
 profileRouter.post("/create", JsonRequestValidator.isJson, CreateUserProfileRequestValidator.validate, CreateUserProfile.post);
-profileRouter.delete("/delete", JsonRequestValidator.isJson, DeleteUserProfileRequestValidator.validate);
+profileRouter.delete("/delete", DeleteUserProfileRequestValidator.validate, DeleteUserProfile.delete);
