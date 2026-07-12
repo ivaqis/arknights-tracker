@@ -4,9 +4,12 @@ import { UpdateUserProfileQuery } from "@api/contracts/userProfile/UpdateUserPro
 import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
 import { UpdateUserProfileResponse } from "@api/contracts/userProfile/UpdateUserProfileResponse";
 import { Controller } from "@api/controllers/Controller";
+import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { Database } from "@database/Database";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord";
+import { GameProfileEntity } from "@models/gameProfile/entities/GameProfileEntity";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
-import { bannedWords } from "@staticModels/instances";
+import { bannedWords, crisisContractRecords } from "@staticModels/instances";
 import e from "express";
 
 export class UpdateUserProfile
@@ -43,21 +46,12 @@ export class UpdateUserProfile
         await controller.safeExecute();
     }
 
-    private get code(): number | undefined {
-        return this.data?.code;
-    }
-
-    private set code(value: number) {
-        this.data = { code: value };
-    }
-
     protected async execute(): Promise<void> {
         const profile = await this._database.users.findUserByPublicUid(this._uid);
 
         if (!profile) {
             this.status = 404;
             this.message = "User not found";
-            this.code = 1;
 
             return;
         }
@@ -67,7 +61,6 @@ export class UpdateUserProfile
         if (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid) {
             this.status = 403;
             this.message = "Unauthorized";
-            this.code = 2;
 
             return;
         }
@@ -78,7 +71,6 @@ export class UpdateUserProfile
             if (exists) {
                 this.status = 400;
                 this.message = "User already exists";
-                this.code = 3;
 
                 return;
             }
@@ -88,7 +80,6 @@ export class UpdateUserProfile
             if (!isValid) {
                 this.status = 400;
                 this.message = "Username contains banned words";
-                this.code = 4;
 
                 return;
             }
@@ -108,10 +99,32 @@ export class UpdateUserProfile
             profile.backgroundId.value = this._backgroundId;
         }
 
-        await this._database.users.updateUser(profile);
+        const newProfile = await this._database.users.updateUser(profile);
+        const gameProfiles = await this.getGameProfiles(newProfile.uid);
+        const gameUids = gameProfiles.map(profile => profile.base.roleId);
+        const bestRecords = await this.getBestRecords(gameUids);
 
-        this.code = 0;
+        this.data = GetUserProfile.getRespData(newProfile, gameProfiles, bestRecords);
 
         return;
+    }
+
+    private async getGameProfiles(uid: bigint): Promise<GameProfileEntity[]> {
+        const profiles = await this._database.gameProfiles.gameProfilesTable.findByUid(uid);
+
+        return profiles.map(profile => profile.data.getEntity());
+    }
+
+    private async getBestRecords(gameUids: string[]): Promise<Record<string, ContractRecord | null>> {
+        const currentContractId = crisisContractRecords.current.id;
+        const records: Record<string, ContractRecord | null> = {};
+
+        for (const uid of gameUids) {
+            const record = await this._database.gameProfiles.contractTable.findBestByGameUid(uid, currentContractId);
+
+            records[uid] = record?.data ?? null;
+        }
+
+        return records;
     }
 }

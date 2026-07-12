@@ -50,8 +50,8 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
         return entities.map(entity => new UserRecord(entity));
     }
 
-    public async update(record: UserRecord): Promise<void> {
-        await this.table.update({
+    public async update(record: UserRecord): Promise<UserRecord> {
+        const entity = await this.table.update({
             where: {
                 uid: record.uid
             },
@@ -65,6 +65,8 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
                 lastUploadReset: record.lastUploadReset.value
             }
         });
+
+        return new UserRecord(entity);
     }
 
     public async delete(uid: bigint): Promise<void> {

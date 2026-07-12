@@ -43,7 +43,7 @@ export class GetUserProfile extends Controller<
         await controller.safeExecute();
     }
 
-    private static getRespData(record: UserRecord,
+    public static getRespData(record: UserRecord,
                                gameProfiles: GameProfileEntity[],
                                contractRecords: Record<string, ContractRecord | null>
     ): GetUserProfileResponse {
@@ -57,8 +57,7 @@ export class GetUserProfile extends Controller<
     }
 
     private static getGameProfiles(gameProfiles: GameProfileEntity[],
-                                   contractRecords: Record<string,
-                                       ContractRecord | null>
+                                   contractRecords: Record<string, ContractRecord | null>
     ): IGameProfile[] {
         const result: IGameProfile[] = [];
 

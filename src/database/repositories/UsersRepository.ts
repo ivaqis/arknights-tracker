@@ -37,7 +37,7 @@ export class UsersRepository extends Repository {
         return !!user;
     }
 
-    public async updateUser(record: UserRecord): Promise<void> {
+    public async updateUser(record: UserRecord): Promise<UserRecord> {
         return this._usersTable.update(record);
     }
 
