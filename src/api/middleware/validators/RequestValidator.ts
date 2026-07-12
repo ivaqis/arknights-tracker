@@ -63,12 +63,11 @@ export abstract class RequestValidator<
         return this.validate(this.req.params, this._paramsValidatorConstructor);
     }
 
-    private validate<T>(item: T, ctor?: new (item: T) => Validator<T>): boolean {
+    private validate<T>(item: T, ctor?: new (item: any) => Validator<T>): boolean {
         if (!ctor) {
             return true;
         }
 
-        // @ts-ignore
         const validator = new ctor(item || {});
 
         if (!validator.isValid) {

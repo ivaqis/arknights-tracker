@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { GetUserProfileQuery } from "@api/contracts/userProfile/GetUserProfileQuery";
@@ -85,7 +86,7 @@ export class GetUserProfile extends Controller<
             return;
         }
 
-        if (profile.isPrivate && (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid)) {
+        if (profile.isPrivate.initValue && (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid)) {
             this.status = 403;
             this.message = "User profile is private";
 

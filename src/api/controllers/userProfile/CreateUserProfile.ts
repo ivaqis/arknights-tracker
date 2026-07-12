@@ -67,7 +67,7 @@ export class CreateUserProfile extends Controller<
             return;
         }
 
-        const isValid = bannedWords.containsAnyBanned(this._uid);
+        const isValid = !bannedWords.containsAnyBanned(this._uid);
 
         if (!isValid) {
             this.status = 400;

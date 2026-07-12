@@ -3,9 +3,11 @@ import { globalRouter } from "@api/routes/api/global/router";
 import { importRouter } from "@api/routes/api/import/router";
 import { leaderboardRouter } from "@api/routes/api/leaderboard/router";
 import { userRouter } from "@api/routes/api/user/router";
-import { Router } from "express";
+import e, { Router } from "express";
 
 export const apiRouter = Router();
+
+apiRouter.use(e.json());
 
 apiRouter.use("/leaderboard", leaderboardRouter);
 apiRouter.use("/user", userRouter);
