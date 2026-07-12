@@ -1,5 +1,5 @@
-import { config } from "@/config";
 import { root } from "@api/routes/root";
+import cors from "cors";
 import e, { Express } from "express";
 
 export class App {
@@ -10,6 +10,7 @@ export class App {
         this._app = e();
         this._port = port;
 
+        this._app.use(cors());
         this._app.use("/", root);
 
         this._app.listen(this._port);
