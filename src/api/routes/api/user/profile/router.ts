@@ -1,5 +1,11 @@
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
+import {
+    CreateUserProfileRequestValidator
+} from "@api/middleware/validators/userProfile/CreateUserProfileRequestValidator";
+import {
+    DeleteUserProfileRequestValidator
+} from "@api/middleware/validators/userProfile/DeleteUserProfileRequestValidator";
 import { GetUserProfileRequestValidator } from "@api/middleware/validators/userProfile/GetUserProfileRequestValidator";
 import {
     UpdateUserProfileRequestValidator
@@ -10,5 +16,5 @@ export const profileRouter = Router();
 
 profileRouter.get("/get", GetUserProfileRequestValidator.validate, GetUserProfile.get);
 profileRouter.post("/update", UpdateUserProfileRequestValidator.validate, UpdateUserProfile.post);
-profileRouter.post("/create");
-profileRouter.delete("/delete");
+profileRouter.post("/create", CreateUserProfileRequestValidator.validate);
+profileRouter.delete("/delete", DeleteUserProfileRequestValidator.validate);
