@@ -1,3 +1,4 @@
+import { FirebaseUserRecord } from "@database/records/FirebaseUserRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
 import { FirebaseUsersTable } from "@database/tables/FirebaseUsersTable";
@@ -15,8 +16,14 @@ export class UsersRepository extends Repository {
         this._firebaseUsersTable = new FirebaseUsersTable(prisma);
     }
 
+    public async getFirebaseUser(firebaseUid: string): Promise<FirebaseUserRecord> {
+        return this._firebaseUsersTable.get(firebaseUid);
+    }
+
     public async createUser(publicUid: string, firebaseUid: string): Promise<UserRecord> {
-        return this._usersTable.create(publicUid, firebaseUid);
+        await this.getFirebaseUser(firebaseUid);
+
+        return await this._usersTable.create(publicUid, firebaseUid);
     }
 
     public async findUser(uid: bigint): Promise<UserRecord | null> {
