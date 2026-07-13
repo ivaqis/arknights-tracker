@@ -236,7 +236,17 @@
     "error_account_mismatch": "عدم تطابق الحساب! لديك بالفعل سجل بين {start} و {end}، ولكن البيانات المستوردة تختلف تماماً. يرجى التحقق مما إذا كنت قد حددت الحساب الصحيح.",
     "recoveryStats": "استعادة السجلات",
     "recoveryTooltip": "سيؤدي تحديد هذا المربع إلى فرض استعادة سجل السحبات إن أمكن. يمكن أن يساعد هذا في حالة الفقدان الجزئي لسجلات السحبات.",
-    "error_account_mismatch_recovery": "عدم تطابق الحساب! لم يتم العثور على سجلات متطابقة حتى في وضع الاستعادة. يرجى التحقق مما إذا كنت قد حددت الحساب الصحيح."
+    "error_account_mismatch_recovery": "عدم تطابق الحساب! لم يتم العثور على سجلات متطابقة حتى في وضع الاستعادة. يرجى التحقق مما إذا كنت قد حددت الحساب الصحيح.",
+    "endmin_step1": "انتقل إلى <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>، وافتح قسم <strong>&ldquo;الإعدادات &rarr; البيانات&rdquo;</strong>.",
+    "endmin_step2": "قم بتصدير البيانات بالنقر فوق زر <strong>&ldquo;تصدير البيانات&rdquo;</strong>.",
+    "endmin_step3": "اختر الملف الذي تم تنزيله في الحقل أدناه.",
+    "endmin_drag_drop": "انقر لتحديد ملف أو قم بالسحب والإفلات هنا",
+    "endmin_files_label": "ملفات *.endmin",
+    "endmin_decompress_error": "فشل فك ضغط الملف. تأكد من أن هذا ملف نسخ احتياطي صالح لـ endmin.",
+    "endmin_no_profiles_error": "لم يتم العثور على ملفات شخصية في ملف النسخ الاحتياطي.",
+    "endmin_no_pulls_error": "لم يتم العثور على سحوبات في الملف الشخصي المحدد.",
+    "endmin_read_error": "فشلت قراءة الملف من القرص.",
+    "endmin_unknown_error": "خطأ غير معروف في قراءة الملف"
   },
   "emptyState": {
     "noData": "لا توجد إدخالات"

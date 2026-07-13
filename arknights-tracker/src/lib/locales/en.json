@@ -275,7 +275,17 @@
     "error_account_mismatch": "Account Mismatch! You already have history between {start} and {end}, but the imported data differs completely. Please check if you selected the correct account.",
     "recoveryStats": "Record Recovery",
     "recoveryTooltip": "Checking this box will force recovery of pull history if applicable. This can help in case of partial loss of pull records.",
-    "error_account_mismatch_recovery": "Account Mismatch! No matching records found even in recovery mode. Please check if you selected the correct account."
+    "error_account_mismatch_recovery": "Account Mismatch! No matching records found even in recovery mode. Please check if you selected the correct account.",
+    "endmin_step1": "Go to <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, open the <strong>&ldquo;Settings &rarr; Data&rdquo;</strong> section.",
+    "endmin_step2": "Export the data by clicking the <strong>&ldquo;Export Data&rdquo;</strong> button.",
+    "endmin_step3": "Choose the downloaded file in the field below.",
+    "endmin_drag_drop": "Click to select a file or drag and drop here",
+    "endmin_files_label": "Files *.endmin",
+    "endmin_decompress_error": "Failed to decompress file. Ensure this is a valid endmin backup file.",
+    "endmin_no_profiles_error": "No profiles found in the backup file.",
+    "endmin_no_pulls_error": "No pulls found in the selected profile.",
+    "endmin_read_error": "Failed to read file from disk.",
+    "endmin_unknown_error": "Unknown file read error"
   },
   "emptyState": {
     "noData": "No entries"

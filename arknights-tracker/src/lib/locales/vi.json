@@ -273,7 +273,17 @@
     "error_account_mismatch": "Tài khoản không khớp! Bạn đã có lịch sử giữa {start} và {end}, nhưng dữ liệu nhập vào khác hoàn toàn. Vui lòng kiểm tra lại tài khoản đã chọn.",
     "recoveryStats": "Khôi phục hồ sơ",
     "recoveryTooltip": "Chọn hộp này sẽ bắt buộc khôi phục lịch sử chiêu mộ nếu có thể. Điều này có thể giúp ích trong trường hợp mất một phần hồ sơ chiêu mộ.",
-    "error_account_mismatch_recovery": "Tài khoản không khớp! Không tìm thấy hồ sơ khớp ngay cả trong chế độ khôi phục. Vui lòng kiểm tra xem bạn đã chọn đúng tài khoản chưa."
+    "error_account_mismatch_recovery": "Tài khoản không khớp! Không tìm thấy hồ sơ khớp ngay cả trong chế độ khôi phục. Vui lòng kiểm tra xem bạn đã chọn đúng tài khoản chưa.",
+    "endmin_step1": "Truy cập <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, mở phần <strong>&ldquo;Cài đặt &rarr; Dữ liệu&rdquo;</strong>.",
+    "endmin_step2": "Xuất dữ liệu bằng cách nhấp vào nút <strong>&ldquo;Xuất dữ liệu&rdquo;</strong>.",
+    "endmin_step3": "Chọn tệp đã tải xuống ở trường bên dưới.",
+    "endmin_drag_drop": "Nhấp để chọn tệp hoặc kéo và thả vào đây",
+    "endmin_files_label": "Tệp *.endmin",
+    "endmin_decompress_error": "Không thể giải nén tệp. Đảm bảo đây là tệp sao lưu endmin hợp lệ.",
+    "endmin_no_profiles_error": "Không tìm thấy hồ sơ nào trong tệp sao lưu.",
+    "endmin_no_pulls_error": "Không tìm thấy lượt quay nào trong hồ sơ đã chọn.",
+    "endmin_read_error": "Không thể đọc tệp từ ổ đĩa.",
+    "endmin_unknown_error": "Lỗi đọc tệp không xác định"
   },
   "emptyState": {
     "noData": "Không có dữ liệu"

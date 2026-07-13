@@ -273,7 +273,17 @@
     "error_account_mismatch": "账号不匹配！您已经拥有 {start} 至 {end} 的记录，但导入的数据完全不同。请检查是否选择了正确的账号。",
     "recoveryStats": "记录恢复",
     "recoveryTooltip": "勾选此框将强制恢复寻访记录（如果适用）。这有助于解决部分寻访记录丢失的问题。",
-    "error_account_mismatch_recovery": "账号不匹配！即使在恢复模式下也找不到匹配的的记录。请检查是否选择了正确的账号。"
+    "error_account_mismatch_recovery": "账号不匹配！即使在恢复模式下也找不到匹配的的记录。请检查是否选择了正确的账号。",
+    "endmin_step1": "前往 <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>，打开 <strong>&ldquo;设置 &rarr; 数据&rdquo;</strong> 部分。",
+    "endmin_step2": "点击 <strong>&ldquo;导出数据&rdquo;</strong> 按钮以导出数据。",
+    "endmin_step3": "在下方字段中选择下载的文件。",
+    "endmin_drag_drop": "点击选择文件或拖放至此处",
+    "endmin_files_label": "文件 *.endmin",
+    "endmin_decompress_error": "文件解压失败。请确保这是有效的 endmin 备份文件。",
+    "endmin_no_profiles_error": "在备份文件中未找到任何个人资料。",
+    "endmin_no_pulls_error": "在所选个人资料中未找到抽卡记录。",
+    "endmin_read_error": "无法从磁盘读取文件。",
+    "endmin_unknown_error": "未知的读取文件错误"
   },
   "emptyState": {
     "noData": "无记录"

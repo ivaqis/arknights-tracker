@@ -236,7 +236,17 @@
     "error_account_mismatch": "Niezgodność konta! Masz już historię między {start} a {end}, ale importowane dane są zupełnie inne. Sprawdź, czy wybrałeś właściwe konto.",
     "recoveryStats": "Odzyskiwanie rekordów",
     "recoveryTooltip": "Zaznaczenie tego pola wymusi odzyskanie historii losowań, jeśli to możliwe. Może to pomóc w przypadku częściowej utraty rekordów losowań.",
-    "error_account_mismatch_recovery": "Niezgodność konta! Nie znaleziono pasujących rekordów nawet w trybie odzyskiwania. Sprawdź, czy wybrałeś właściwe konto."
+    "error_account_mismatch_recovery": "Niezgodność konta! Nie znaleziono pasujących rekordów nawet w trybie odzyskiwania. Sprawdź, czy wybrałeś właściwe konto.",
+    "endmin_step1": "Przejdź na <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, otwórz sekcję <strong>&ldquo;Ustawienia &rarr; Dane&rdquo;</strong>.",
+    "endmin_step2": "Eksportuj dane, klikając przycisk <strong>&ldquo;Eksportuj Dane&rdquo;</strong>.",
+    "endmin_step3": "Wybierz pobrany plik w polu poniżej.",
+    "endmin_drag_drop": "Kliknij, aby wybrać plik, lub przeciągnij i upuść tutaj",
+    "endmin_files_label": "Pliki *.endmin",
+    "endmin_decompress_error": "Nie udało się rozpakować pliku. Upewnij się, że to prawidłowy plik kopii zapasowej endmin.",
+    "endmin_no_profiles_error": "Nie znaleziono profili w pliku kopii zapasowej.",
+    "endmin_no_pulls_error": "Nie znaleziono losowań w wybranym profilu.",
+    "endmin_read_error": "Nie udało się odczytać pliku z dysku.",
+    "endmin_unknown_error": "Nieznany błąd odczytu pliku"
   },
   "emptyState": {
     "noData": "Brak wpisów"

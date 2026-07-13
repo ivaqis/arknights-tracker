@@ -268,7 +268,17 @@
     "error_account_mismatch": "Incohérence de compte ! Vous avez déjà un historique entre {start} et {end}, mais les données importées diffèrent totalement. Vérifiez le compte sélectionné.",
     "recoveryStats": "Récupération des dossiers",
     "recoveryTooltip": "Cocher cette case forcera la récupération de l'historique des recrutements si applicable. Cela peut aider en cas de perte partielle des enregistrements.",
-    "error_account_mismatch_recovery": "Incohérence de compte ! Aucun enregistrement correspondant trouvé, même en mode de récupération. Veuillez vérifier si vous avez sélectionné le bon compte."
+    "error_account_mismatch_recovery": "Incohérence de compte ! Aucun enregistrement correspondant trouvé, même en mode de récupération. Veuillez vérifier si vous avez sélectionné le bon compte.",
+    "endmin_step1": "Allez sur <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, ouvrez la section <strong>&ldquo;Paramètres &rarr; Données&rdquo;</strong>.",
+    "endmin_step2": "Exportez les données en cliquant sur le bouton <strong>&ldquo;Exporter les données&rdquo;</strong>.",
+    "endmin_step3": "Choisissez le fichier téléchargé dans le champ ci-dessous.",
+    "endmin_drag_drop": "Cliquez pour sélectionner un fichier ou glissez-déposez ici",
+    "endmin_files_label": "Fichiers *.endmin",
+    "endmin_decompress_error": "Échec de la décompression du fichier. Assurez-vous qu'il s'agit d'un fichier de sauvegarde endmin valide.",
+    "endmin_no_profiles_error": "Aucun profil trouvé dans le fichier de sauvegarde.",
+    "endmin_no_pulls_error": "Aucun tirage trouvé dans le profil sélectionné.",
+    "endmin_read_error": "Échec de la lecture du fichier sur le disque.",
+    "endmin_unknown_error": "Erreur de lecture de fichier inconnue"
   },
   "emptyState": {
     "noData": "Aucune entrée"

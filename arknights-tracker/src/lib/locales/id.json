@@ -268,7 +268,17 @@
     "error_account_mismatch": "Akun Tidak Cocok! Anda sudah memiliki riwayat antara {start} dan {end}, tetapi data yang diimpor berbeda total. Mohon periksa apakah Anda memilih akun yang benar.",
     "recoveryStats": "Pemulihan Catatan",
     "recoveryTooltip": "Mencentang kotak ini akan memaksa pemulihan riwayat tarikan jika memungkinkan. Ini dapat membantu jika sebagian catatan tarikan hilang.",
-    "error_account_mismatch_recovery": "Ketidakcocokan Akun! Tidak ada catatan yang cocok ditemukan bahkan dalam mode pemulihan. Silakan periksa apakah Anda memilih akun yang benar."
+    "error_account_mismatch_recovery": "Ketidakcocokan Akun! Tidak ada catatan yang cocok ditemukan bahkan dalam mode pemulihan. Silakan periksa apakah Anda memilih akun yang benar.",
+    "endmin_step1": "Buka <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, buka bagian <strong>&ldquo;Pengaturan &rarr; Data&rdquo;</strong>.",
+    "endmin_step2": "Ekspor data dengan mengklik tombol <strong>&ldquo;Ekspor Data&rdquo;</strong>.",
+    "endmin_step3": "Pilih file yang diunduh pada kolom di bawah.",
+    "endmin_drag_drop": "Klik untuk memilih file atau seret dan jatuhkan di sini",
+    "endmin_files_label": "File *.endmin",
+    "endmin_decompress_error": "Gagal mendekompresi file. Pastikan ini adalah file cadangan endmin yang valid.",
+    "endmin_no_profiles_error": "Tidak ada profil yang ditemukan dalam file cadangan.",
+    "endmin_no_pulls_error": "Tidak ada tarikan yang ditemukan di profil yang dipilih.",
+    "endmin_read_error": "Gagal membaca file dari disk.",
+    "endmin_unknown_error": "Kesalahan pembacaan file tidak diketahui"
   },
   "emptyState": {
     "noData": "Tidak ada entri"

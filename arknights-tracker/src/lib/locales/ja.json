@@ -268,7 +268,17 @@
     "error_account_mismatch": "アカウント不一致！ {start} から {end} までの履歴がありますが、インポートされたデータと完全に異なります。正しいアカウントを選択しているか確認してください。",
     "recoveryStats": "記録の復元",
     "recoveryTooltip": "このチェックボックスをオンにすると、適用可能な場合にガチャ履歴の復元を強制します。ガチャ記録が一部紛失している場合に役立ちます。",
-    "error_account_mismatch_recovery": "アカンウト不一致！復元モードでも一致する記録が見つかりませんでした。正しいアカウントを選択しているか確認してください。"
+    "error_account_mismatch_recovery": "アカンウト不一致！復元モードでも一致する記録が見つかりませんでした。正しいアカウントを選択しているか確認してください。",
+    "endmin_step1": "<a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>にアクセスし、<strong>&ldquo;設定 &rarr; データ&rdquo;</strong>セクションを開きます。",
+    "endmin_step2": "<strong>&ldquo;データエクスポート&rdquo;</strong>ボタンをクリックしてデータをエクスポートします。",
+    "endmin_step3": "ダウンロードしたファイルを下のフィールドで選択します。",
+    "endmin_drag_drop": "クリックしてファイルを選択するか、ここにドラッグ＆ドロップします",
+    "endmin_files_label": "ファイル *.endmin",
+    "endmin_decompress_error": "ファイルの展開に失敗しました。有効なendminバックアップファイルであることを確認してください。",
+    "endmin_no_profiles_error": "バックアップファイルにプロファイルが見つかりません。",
+    "endmin_no_pulls_error": "選択したプロファイルにガチャ履歴が見つかりません。",
+    "endmin_read_error": "ディスクからのファイルの読み取りに失敗しました。",
+    "endmin_unknown_error": "不明なファイル読み取りエラー"
   },
   "emptyState": {
     "noData": "エントリーなし"

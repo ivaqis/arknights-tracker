@@ -268,7 +268,17 @@
     "error_account_mismatch": "Account non corrispondente! Hai già una cronologia tra {start} e {end}, ma i dati importati sono completamente diversi. Controlla di aver selezionato l'account corretto.",
     "recoveryStats": "Ripristino dei record",
     "recoveryTooltip": "Selezionando questa casella si forzerà il ripristino della cronologia dei reclutamenti, se applicabile. Questo può aiutare in caso di perdita parziale dei record.",
-    "error_account_mismatch_recovery": "Mancata corrispondenza dell'account! Nessun record corrispondente trovato anche in modalità di ripristino. Verifica se hai selezionato l'account corretto."
+    "error_account_mismatch_recovery": "Mancata corrispondenza dell'account! Nessun record corrispondente trovato anche in modalità di ripristino. Verifica se hai selezionato l'account corretto.",
+    "endmin_step1": "Vai su <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, apri la sezione <strong>&ldquo;Impostazioni &rarr; Dati&rdquo;</strong>.",
+    "endmin_step2": "Esporta i dati facendo clic sul pulsante <strong>&ldquo;Esporta Dati&rdquo;</strong>.",
+    "endmin_step3": "Scegli il file scaricato nel campo sottostante.",
+    "endmin_drag_drop": "Fai clic per selezionare un file o trascinalo qui",
+    "endmin_files_label": "File *.endmin",
+    "endmin_decompress_error": "Impossibile decomprimere il file. Assicurati che sia un file di backup endmin valido.",
+    "endmin_no_profiles_error": "Nessun profilo trovato nel file di backup.",
+    "endmin_no_pulls_error": "Nessun pull trovato nel profilo selezionato.",
+    "endmin_read_error": "Impossibile leggere il file dal disco.",
+    "endmin_unknown_error": "Errore sconosciuto di lettura del file"
   },
   "emptyState": {
     "noData": "Nessuna voce"

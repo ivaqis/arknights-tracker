@@ -236,7 +236,17 @@
     "error_account_mismatch": "Ketidakpadanan Akaun! Anda sudah mempunyai sejarah antara {start} dan {end}, tetapi data yang diimport berbeza sama sekali. Sila pastikan anda memilih akaun yang betul.",
     "recoveryStats": "Pemulihan Rekod",
     "recoveryTooltip": "Memeriksa kotak ini akan memaksa pemulihan sejarah tarikan jika berkenaan. Ini boleh membantu sekiranya berlaku kehilangan rekod tarikan separa.",
-    "error_account_mismatch_recovery": "Ketidakpadanan Akaun! Tiada rekod padanan ditemui walaupun dalam mod pemulihan. Sila pastikan anda memilih akaun yang betul."
+    "error_account_mismatch_recovery": "Ketidakpadanan Akaun! Tiada rekod padanan ditemui walaupun dalam mod pemulihan. Sila pastikan anda memilih akaun yang betul.",
+    "endmin_step1": "Pergi ke <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, buka bahagian <strong>&ldquo;Tetapan &rarr; Data&rdquo;</strong>.",
+    "endmin_step2": "Eksport data dengan mengklik butang <strong>&ldquo;Eksport Data&rdquo;</strong>.",
+    "endmin_step3": "Pilih fail yang dimuat turun dalam medan di bawah.",
+    "endmin_drag_drop": "Klik untuk memilih fail atau seret dan lepas di sini",
+    "endmin_files_label": "Fail *.endmin",
+    "endmin_decompress_error": "Gagal menyahmampat fail. Pastikan ini adalah fail sandaran endmin yang sah.",
+    "endmin_no_profiles_error": "Tiada profil ditemui dalam fail sandaran.",
+    "endmin_no_pulls_error": "Tiada tarikan gacha ditemui dalam profil yang dipilih.",
+    "endmin_read_error": "Gagal membaca fail dari cakera.",
+    "endmin_unknown_error": "Ralat membaca fail yang tidak diketahui"
   },
   "emptyState": {
     "noData": "Tiada entri"

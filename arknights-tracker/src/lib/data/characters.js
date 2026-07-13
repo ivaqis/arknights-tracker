@@ -9,7 +9,8 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "",
-    apiId: "93e76fbbc07f7b480cfe0870c6414494"
+    apiId: "93e76fbbc07f7b480cfe0870c6414494",
+    gameId: "chr_0002_endminm"
   },
   endministrator2: {
     id: "endministrator1",
@@ -19,7 +20,8 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "",
-    apiId: "27e807f4caa5c4a9429bcb99760c0302"
+    apiId: "27e807f4caa5c4a9429bcb99760c0302",
+    gameId: "chr_0003_endminf"
   },
   perlica: {
     id: "perlica",
@@ -29,7 +31,8 @@ export const characters = {
     class: "caster",
     weapon: "artsUnit",
     birthDate: "10-03",
-    apiId: "c4cf7541c23c93f991e2e464ee18bb18"
+    apiId: "c4cf7541c23c93f991e2e464ee18bb18",
+    gameId: "chr_0004_pelica"
   },
   chenQianyu: {
     id: "chenQianyu",
@@ -39,7 +42,8 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "18-08",
-    apiId: "ad1607a2d5a203b1e95762ff0d911bcd"
+    apiId: "ad1607a2d5a203b1e95762ff0d911bcd",
+    gameId: "chr_0005_chen"
   },
   laevatain: {
     id: "laevatain",
@@ -49,7 +53,8 @@ export const characters = {
     class: "striker",
     weapon: "sword",
     birthDate: "",
-    apiId: "0b199a0eaae5a9b37a5d3c990b6c8bca"
+    apiId: "0b199a0eaae5a9b37a5d3c990b6c8bca",
+    gameId: "chr_0016_laevat"
   },
   yvonne: {
     id: "yvonne",
@@ -59,7 +64,8 @@ export const characters = {
     class: "striker",
     weapon: "handcannon",
     birthDate: "09-05",
-    apiId: "05047b063867199b953b30ac8df9a853"
+    apiId: "05047b063867199b953b30ac8df9a853",
+    gameId: "chr_0017_yvonne"
   },
   gilberta: {
     id: "gilberta",
@@ -69,7 +75,8 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "28-11",
-    apiId: "0295282ff895bd1b7242d137da99dc94"
+    apiId: "0295282ff895bd1b7242d137da99dc94",
+    gameId: "chr_0013_aglina"
   },
   ardelia: {
     id: "ardelia",
@@ -79,7 +86,8 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "18-10",
-    apiId: "bfb4ba13f819568c69c2ae46d8f5b869"
+    apiId: "bfb4ba13f819568c69c2ae46d8f5b869",
+    gameId: "chr_0025_ardelia"
   },
   ember: {
     id: "ember",
@@ -89,7 +97,8 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "10-04",
-    apiId: "ce97268e7469e004a3e7a81e4b09a025"
+    apiId: "ce97268e7469e004a3e7a81e4b09a025",
+    gameId: "chr_0009_azrila"
   },
   lastRite: {
     id: "lastRite",
@@ -99,7 +108,8 @@ export const characters = {
     class: "striker",
     weapon: "greatSword",
     birthDate: "12-11",
-    apiId: "12ccf3692d76c7bddd3ef84eddd3f3c1"
+    apiId: "12ccf3692d76c7bddd3ef84eddd3f3c1",
+    gameId: "chr_0026_lastrite"
   },
   lifeng: {
     id: "lifeng",
@@ -109,7 +119,8 @@ export const characters = {
     class: "guard",
     weapon: "polearm",
     birthDate: "16-07",
-    apiId: "8d94026ab55f7a869288db04631434a3"
+    apiId: "8d94026ab55f7a869288db04631434a3",
+    gameId: "chr_0015_lifeng"
   },
   pogranichnik: {
     id: "pogranichnik",
@@ -119,7 +130,8 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "23-07",
-    apiId: "9c4a116d4dba884c3db9b7f46ea7ea20"
+    apiId: "9c4a116d4dba884c3db9b7f46ea7ea20",
+    gameId: "chr_0029_pograni"
   },
   alesh: {
     id: "alesh",
@@ -129,7 +141,8 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "01-09",
-    apiId: "7e6df1575604cc5872590f22af757e40"
+    apiId: "7e6df1575604cc5872590f22af757e40",
+    gameId: "chr_0024_deepfin"
   },
   arсlight: {
     id: "arclight",
@@ -139,7 +152,8 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "03-01",
-    apiId: "00ff4c582aeeafc237695f81e36969b4"
+    apiId: "00ff4c582aeeafc237695f81e36969b4",
+    gameId: "chr_0007_ikut"
   },
   avywenna: {
     id: "avywenna",
@@ -149,7 +163,8 @@ export const characters = {
     class: "striker",
     weapon: "polearm",
     birthDate: "25-10",
-    apiId: "e7b91cae9108d01f550922498747a45e"
+    apiId: "e7b91cae9108d01f550922498747a45e",
+    gameId: "chr_0012_avywen"
   },
   daPan: {
     id: "daPan",
@@ -159,7 +174,8 @@ export const characters = {
     class: "striker",
     weapon: "greatSword",
     birthDate: "19-05",
-    apiId: "55ab3b3d98fa76a045347d29da1abbca"
+    apiId: "55ab3b3d98fa76a045347d29da1abbca",
+    gameId: "chr_0018_dapan"
   },
   snowshine: {
     id: "snowshine",
@@ -169,7 +185,8 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "19-12",
-    apiId: "06ba43ff26befc881fd106eaa5ef1b81"
+    apiId: "06ba43ff26befc881fd106eaa5ef1b81",
+    gameId: "chr_0014_aurora"
   },
   wulfgard: {
     id: "wulfgard",
@@ -179,7 +196,8 @@ export const characters = {
     class: "caster",
     weapon: "handcannon",
     birthDate: "16-11",
-    apiId: "26e3cc73ac23deb8f6a875038d2243ff"
+    apiId: "26e3cc73ac23deb8f6a875038d2243ff",
+    gameId: "chr_0006_wolfgd"
   },
   xaihi: {
     id: "xaihi",
@@ -189,7 +207,8 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "16-05",
-    apiId: "3839d35948216cc09368cd62167c7368"
+    apiId: "3839d35948216cc09368cd62167c7368",
+    gameId: "chr_0011_seraph"
   },
   akekuri: {
     id: "akekuri",
@@ -199,7 +218,8 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "31-03",
-    apiId: "a0591d65311b190e7d5e09faa0ed1cdd"
+    apiId: "a0591d65311b190e7d5e09faa0ed1cdd",
+    gameId: "chr_0019_karin"
   },
   antal: {
     id: "antal",
@@ -209,7 +229,8 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "10-04",
-    apiId: "1b441436fd73326614cfcd14c640e068"
+    apiId: "1b441436fd73326614cfcd14c640e068",
+    gameId: "chr_0023_antal"
   },
   catcher: {
     id: "catcher",
@@ -219,7 +240,8 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "16-08",
-    apiId: "e6c2a3e9f0b1917eb0b1fe29a4b94b3d"
+    apiId: "e6c2a3e9f0b1917eb0b1fe29a4b94b3d",
+    gameId: "chr_0020_meurs"
   },
   estella: {
     id: "estella",
@@ -229,7 +251,8 @@ export const characters = {
     class: "guard",
     weapon: "polearm",
     birthDate: "09-04",
-    apiId: "50515754ef6085bb6a8ddc21ab18a825"
+    apiId: "50515754ef6085bb6a8ddc21ab18a825",
+    gameId: "chr_0021_whiten"
   },
   fluorite: {
     id: "fluorite",
@@ -239,7 +262,8 @@ export const characters = {
     class: "caster",
     weapon: "handcannon",
     birthDate: "21-06",
-    apiId: "bcb564ed05eb0912d4b0f86d1e193c9f"
+    apiId: "bcb564ed05eb0912d4b0f86d1e193c9f",
+    gameId: "chr_0022_bounda"
   },
   tangtang: {
     id: "tangtang",
@@ -249,7 +273,8 @@ export const characters = {
     class: "caster",
     weapon: "handcannon",
     birthDate: "21-06",
-    apiId: "ee3bf7197a05580397b45ba2fb1de28e"
+    apiId: "ee3bf7197a05580397b45ba2fb1de28e",
+    gameId: "chr_0027_tangtang"
   },
   rossi: {
     id: "rossi",
@@ -259,7 +284,8 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "10-03",
-    apiId: "7572e50052976332fa7621ba7dd30c4e"
+    apiId: "7572e50052976332fa7621ba7dd30c4e",
+    gameId: "chr_0028_wulfa"
   },
   zhuangfy: {
     id: "zhuangfy",
@@ -269,7 +295,8 @@ export const characters = {
     class: "striker",
     weapon: "artsUnit",
     birthDate: "07-08",
-    apiId: "c2fa8a588cab489795166bed5161fefc"
+    apiId: "c2fa8a588cab489795166bed5161fefc",
+    gameId: "chr_0030_zhuangfy"
   },
   mifu: {
     id: "mifu",
@@ -279,7 +306,8 @@ export const characters = {
     class: "guard",
     weapon: "greatSword",
     birthDate: "09-07",
-    apiId: "d3dcd2110b516c48c411e33911ece631"
+    apiId: "d3dcd2110b516c48c411e33911ece631",
+    gameId: "chr_0031_mifu"
   },
   camille: {
     id: "camille",
@@ -289,6 +317,7 @@ export const characters = {
     class: "vanguard",
     weapon: "polearm",
     birthDate: "20-11",
-    apiId: "6f1c12e86229fe068ba70baef7ff0aa1"
+    apiId: "6f1c12e86229fe068ba70baef7ff0aa1",
+    gameId: "chr_0033_camille"
   }
 };

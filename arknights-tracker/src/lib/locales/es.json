@@ -270,7 +270,17 @@
     "error_account_mismatch": "¡La cuenta no coincide! Ya tienes historial entre {start} y {end}, pero los datos importados son totalmente distintos. Revisa si seleccionaste la cuenta correcta.",
     "recoveryStats": "Recuperación de registros",
     "recoveryTooltip": "Marcar esta casilla forzará la recuperación del historial de tiradas si es aplicable. Esto puede ayudar en caso de pérdida parcial de registros.",
-    "error_account_mismatch_recovery": "¡Discrepancia de cuentas! No se encontraron registros coincidentes incluso en el modo de recuperación. Por favor, comprueba si has seleccionado la cuenta correcta."
+    "error_account_mismatch_recovery": "¡Discrepancia de cuentas! No se encontraron registros coincidentes incluso en el modo de recuperación. Por favor, comprueba si has seleccionado la cuenta correcta.",
+    "endmin_step1": "Ve a <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, abre la sección <strong>&ldquo;Ajustes &rarr; Datos&rdquo;</strong>.",
+    "endmin_step2": "Exporta los datos haciendo clic en el botón <strong>&ldquo;Exportar Datos&rdquo;</strong>.",
+    "endmin_step3": "Elige el archivo descargado en el campo de abajo.",
+    "endmin_drag_drop": "Haz clic para seleccionar un archivo o arrástralo y suéltalo aquí",
+    "endmin_files_label": "Archivos *.endmin",
+    "endmin_decompress_error": "Error al descomprimir el archivo. Asegúrate de que es un archivo de copia de seguridad válido de endmin.",
+    "endmin_no_profiles_error": "No se encontraron perfiles en el archivo de copia de seguridad.",
+    "endmin_no_pulls_error": "No se encontraron tiradas en el perfil seleccionado.",
+    "endmin_read_error": "Error al leer el archivo del disco.",
+    "endmin_unknown_error": "Error de lectura de archivo desconocido"
   },
   "emptyState": {
     "noData": "Sin entradas"

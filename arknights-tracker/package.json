@@ -21,6 +21,7 @@
 	},
 	"dependencies": {
 		"firebase": "^12.8.0",
+		"lz-string": "^1.5.0",
 		"xlsx": "https://cdn.sheetjs.com/xlsx-latest/xlsx-latest.tgz"
 	}
 }

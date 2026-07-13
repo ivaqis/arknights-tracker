@@ -236,7 +236,17 @@
     "error_account_mismatch": "Tili ei täsmää! Sinulla on jo historiaa aikavälillä {start} - {end}, mutta tuodut tiedot eroavat täysin. Tarkista, oletko valinnut oikean tilin.",
     "recoveryStats": "Tietueiden palautus",
     "recoveryTooltip": "Tämän ruudun valitseminen pakottaa vetohistorian palauttamisen, jos mahdollista. Tämä voi auttaa vetotietojen osittaisessa katoamisessa.",
-    "error_account_mismatch_recovery": "Tili ei täsmää! Vastaavia tietueita ei löytynyt edes palautustilassa. Tarkista, oletko valinnut oikean tilin."
+    "error_account_mismatch_recovery": "Tili ei täsmää! Vastaavia tietueita ei löytynyt edes palautustilassa. Tarkista, oletko valinnut oikean tilin.",
+    "endmin_step1": "Mene osoitteeseen <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a> ja avaa <strong>&ldquo;Asetukset &rarr; Tiedot&rdquo;</strong> -osio.",
+    "endmin_step2": "Vie tiedot napsauttamalla <strong>&ldquo;Vie tiedot&rdquo;</strong> -painiketta.",
+    "endmin_step3": "Valitse ladattu tiedosto alla olevaan kenttään.",
+    "endmin_drag_drop": "Napsauta valitaksesi tiedoston tai vedä ja pudota se tähän",
+    "endmin_files_label": "Tiedostot *.endmin",
+    "endmin_decompress_error": "Tiedoston purkaminen epäonnistui. Varmista, että tämä on kelvollinen endmin-varmuuskopiotiedosto.",
+    "endmin_no_profiles_error": "Varmuuskopiotiedostosta ei löytynyt profiileja.",
+    "endmin_no_pulls_error": "Valitusta profiilista ei löytynyt vetoja.",
+    "endmin_read_error": "Tiedoston lukeminen levyltä epäonnistui.",
+    "endmin_unknown_error": "Tuntematon tiedostonlukuvirhe"
   },
   "emptyState": {
     "noData": "Ei merkintöjä"

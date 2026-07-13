@@ -268,7 +268,17 @@
     "error_account_mismatch": "Conta incompatível! Você já tem histórico entre {start} e {end}, mas os dados importados são totalmente diferentes. Verifique se selecionou a conta correta.",
     "recoveryStats": "Recuperação de Registros",
     "recoveryTooltip": "Marcar esta caixa forçará a recuperação do histórico de recrutamentos, se aplicável. Isso pode ajudar em caso de perda parcial dos registros.",
-    "error_account_mismatch_recovery": "Incompatibilidade de Contas! Nenhum registro correspondente foi encontrado, mesmo no modo de recuperação. Por favor, verifique se você selecionou a conta correta."
+    "error_account_mismatch_recovery": "Incompatibilidade de Contas! Nenhum registro correspondente foi encontrado, mesmo no modo de recuperação. Por favor, verifique se você selecionou a conta correta.",
+    "endmin_step1": "Vá para <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, abra a seção <strong>&ldquo;Configurações &rarr; Dados&rdquo;</strong>.",
+    "endmin_step2": "Exporte os dados clicando no botão <strong>&ldquo;Exportar Dados&rdquo;</strong>.",
+    "endmin_step3": "Escolha o arquivo baixado no campo abaixo.",
+    "endmin_drag_drop": "Clique para selecionar um arquivo ou arraste e solte aqui",
+    "endmin_files_label": "Arquivos *.endmin",
+    "endmin_decompress_error": "Falha ao descompactar o arquivo. Certifique-se de que é um arquivo de backup endmin válido.",
+    "endmin_no_profiles_error": "Nenhum perfil encontrado no arquivo de backup.",
+    "endmin_no_pulls_error": "Nenhum tiro encontrado no perfil selecionado.",
+    "endmin_read_error": "Falha ao ler o arquivo do disco.",
+    "endmin_unknown_error": "Erro desconhecido de leitura de arquivo"
   },
   "emptyState": {
     "noData": "Sem entradas"

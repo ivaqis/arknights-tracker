@@ -9,6 +9,12 @@
     import { currentUid } from "$lib/stores/auth";
     import { accountStore } from "$lib/stores/accounts";
     import { API_BASE } from "$lib/api";
+    import { currentUiLocale } from "$lib/stores/locale";
+    import { characters } from "$lib/data/characters";
+    import { weapons } from "$lib/data/weapons";
+    import { getInternalBannerType } from "$lib/utils/importUtils";
+
+    import LZString from "lz-string";
 
     import Button from "$lib/components/Button.svelte";
     import Checkbox from "$lib/components/Checkbox.svelte";
@@ -476,6 +482,165 @@
     }
 
     function handleInput() {}
+
+    let selectedFileName = "";
+    let lastParsedPulls = null;
+
+    $: if (platformTab) {
+        selectedFileName = "";
+        lastParsedPulls = null;
+        pendingData = null;
+        previewReport = null;
+        errorMsg = "";
+    }
+
+    async function runSmartImportPreview(pullsMapped) {
+        isLoading = true;
+        try {
+            const accounts = get(accountStore.accounts) || [];
+            const selectedId = get(accountStore.selectedId);
+            const currentAcc = accounts.find((a) => a.id === selectedId);
+            const sId = currentAcc?.serverId || "3";
+
+            const report = await pullData.smartImport(
+                pullsMapped,
+                sId,
+                false,
+                platformTab === 'endmin' ? false : isRecoveryEnabled
+            );
+
+            pendingData = pullsMapped;
+            previewReport = report;
+        } catch (err) {
+            console.error("Import Error:", err);
+            errorMsg = err.message;
+        } finally {
+            isLoading = false;
+        }
+    }
+
+    let isDragging = false;
+
+    async function handleFileSelect(e) {
+        const file = e.target.files[0];
+        if (file) processFile(file);
+    }
+
+    function handleFileDrop(e) {
+        isDragging = false;
+        const file = e.dataTransfer?.files?.[0];
+        if (file) processFile(file);
+    }
+
+    async function processFile(file) {
+        errorMsg = "";
+        isInputError = false;
+        selectedFileName = file.name;
+        isLoading = true;
+        previewReport = null;
+        pendingData = null;
+
+        const reader = new FileReader();
+        reader.onload = async (event) => {
+            try {
+                const fileContent = event.target.result;
+                let decompressed = "";
+                try {
+                    decompressed = LZString.decompressFromUTF16(fileContent) || LZString.decompress(fileContent);
+                } catch (decErr) {
+                    console.error("LZString decompress error:", decErr);
+                }
+
+                if (!decompressed) {
+                    throw new Error($t("import.endmin_decompress_error"));
+                }
+
+                const parsedData = JSON.parse(decompressed);
+                const profilesObj = parsedData.profileData || {};
+                const profileKeys = Object.keys(profilesObj);
+                let selectedProfileKey = profileKeys.find(k => k === 'main') || profileKeys[0];
+
+                if (!selectedProfileKey || !profilesObj[selectedProfileKey]) {
+                    throw new Error($t("import.endmin_no_profiles_error"));
+                }
+
+                const profile = profilesObj[selectedProfileKey];
+                const allPulls = [];
+                if (profile && profile.pulls) {
+                    Object.entries(profile.pulls).forEach(([poolKey, pullsList]) => {
+                        if (Array.isArray(pullsList)) {
+                            pullsList.forEach(item => {
+                                allPulls.push(item);
+                            });
+                        }
+                    });
+                }
+
+                if (allPulls.length === 0) {
+                    throw new Error($t("import.endmin_no_pulls_error"));
+                }
+
+                const pullsMapped = allPulls.map((item) => {
+                    const itemId = item.item_id || "";
+                    let rawName = itemId;
+                    let type = "character";
+                    let rarity = Number(item.rarity || 4);
+
+                    if (itemId.startsWith("chr_")) {
+                        const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
+                        if (characterKey && characters[characterKey]) {
+                            rawName = characters[characterKey].name;
+                            type = "character";
+                            rarity = characters[characterKey].rarity;
+                        }
+                    } else if (itemId.startsWith("wpn_")) {
+                        const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
+                        if (weaponKey && weapons[weaponKey]) {
+                            rawName = weapons[weaponKey].name;
+                            type = "weapon";
+                            rarity = weapons[weaponKey].rarity;
+                        }
+                    }
+
+                    const seqId = Number(item.sequence_id || item.sequence || 0);
+                    const dateObj = new Date(Number(item.timestamp || item.gachaTs || item.ts || 0));
+                    const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                    const rawBannerId = item.poolId || item.cardPoolType || "standard";
+                    const internalId = getInternalBannerType(rawBannerId);
+
+                    return {
+                        id: uniqueId,
+                        time: dateObj,
+                        name: rawName,
+                        rarity,
+                        bannerId: internalId,
+                        seqId,
+                        isNew: item.is_new === true || item.isNew === true,
+                        isFree: item.is_free === true || item.isFree === true,
+                        type,
+                        rawPoolId: rawBannerId
+                    };
+                }).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+
+                lastParsedPulls = pullsMapped;
+                await runSmartImportPreview(pullsMapped);
+
+            } catch (err) {
+                console.error("Error processing backup file:", err);
+                errorMsg = err.message || $t("import.endmin_unknown_error");
+            } finally {
+                isLoading = false;
+            }
+        };
+
+        reader.onerror = () => {
+            errorMsg = $t("import.endmin_read_error");
+            isLoading = false;
+        };
+
+        reader.readAsText(file);
+    }
 </script>
 
 <div class="max-w-[1600px] justify-start">
@@ -559,7 +724,7 @@
             <div
                 class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full mb-5 mt-5 overflow-x-auto custom-tab-scroll"
             >
-                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }] as tab}
+                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }] as tab}
                     <button
                         class="px-6 py-3 text-sm font-bold transition-all relative border-b-2 whitespace-nowrap
             {platformTab === tab.id
@@ -778,6 +943,23 @@
                             {$t("import.android_s11")}
                         </p>
                     </div>
+                {:else if platformTab === "endmin"}
+                    {#each [{ text: $t("import.endmin_step1") }, { text: $t("import.endmin_step2") }, { text: $t("import.endmin_step3") }] as step, i}
+                        <div
+                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
+                        >
+                            <div
+                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
+                            >
+                                {i + 1}
+                            </div>
+                            <div
+                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
+                            >
+                                {@html step.text}
+                            </div>
+                        </div>
+                    {/each}
                 {:else}
                     <div
                         class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-10 pl-10"
@@ -851,9 +1033,44 @@
                 {/if}
 
                 <div class="mb-6 {platformTab === 'ios' ? '' : 'pl-10'}">
-                    <div
-                        class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-4"
-                    >
+                    {#if platformTab === 'endmin'}
+                        <div class="max-w-4xl mb-6 relative group">
+                            <label
+                                for="endmin-file-input"
+                                class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
+                                {isDragging
+                                    ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
+                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'
+                                }"
+                                on:dragover|preventDefault={() => (isDragging = true)}
+                                on:dragenter|preventDefault={() => (isDragging = true)}
+                                on:dragleave|preventDefault={() => (isDragging = false)}
+                                on:drop|preventDefault={handleFileDrop}
+                            >
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <div class="text-[#FFE145] mb-3">
+                                        <Icon name="import" style="width: 48px; height: 48px;" />
+                                    </div>
+                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold">
+                                        {$t("import.endmin_drag_drop")}
+                                    </p>
+                                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                                        {selectedFileName || $t("import.endmin_files_label")}
+                                    </p>
+                                </div>
+                                <input
+                                    id="endmin-file-input"
+                                    type="file"
+                                    accept=".endmin"
+                                    class="hidden"
+                                    on:change={handleFileSelect}
+                                />
+                            </label>
+                        </div>
+                    {:else}
+                        <div
+                            class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full max-w-4xl mb-4"
+                        >
                         <button
                             class="px-6 py-3 text-sm font-bold transition-all relative border-b-2
                         {activeTab === 'new'
@@ -1028,9 +1245,10 @@
                             {/if}
                         </div>
                     {/if}
+                    {/if}
 
                     <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new"}
+                        {#if activeTab === "new" && platformTab !== 'endmin'}
                             <div
                                 class="flex flex-col gap-2 transition-all w-full"
                             >
@@ -1096,69 +1314,73 @@
                             </div>
                         {/if}
 
-                        <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
-                            <span
-                                class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
-                            >
-                                {$t("import.enableGlobalStats")}
-                            </span>
-                        </Checkbox>
-
-                        <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
-                            <span
-                                class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
-                            >
-                                {$t("import.recoveryStats") ||
-                                    "Восстановление записей"}
-                                <Tooltip
-                                    text={$t("import.recoveryTooltip") ||
-                                        "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
+                        {#if platformTab !== 'endmin'}
+                            <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
+                                <span
+                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
                                 >
-                                    <span
-                                        class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
-                                    >
-                                        <Icon name="info" class="m-1 w-4 h-4" />
-                                    </span>
-                                </Tooltip>
-                            </span>
-                        </Checkbox>
-
-                        <div
-                            class="w-fit mt-4 {isLoading
-                                ? 'opacity-60 pointer-events-none cursor-not-allowed'
-                                : ''}"
-                        >
-                            <Button
-                                variant="yellow"
-                                onClick={() => {
-                                    if (!isLoading) handleUrlImport();
-                                }}
-                                disabled={isLoading}
-                            >
-                                <div
-                                    slot="icon"
-                                    class="text-gray-800 dark:text-gray-800"
-                                >
-                                    {#if isLoading}
-                                        <Icon
-                                            name="loading"
-                                            class="w-4 h-4 animate-spin"
-                                        />
-                                    {:else}
-                                        <Icon
-                                            name="import"
-                                            style="width: 30px; height: 30px;"
-                                        />
-                                    {/if}
-                                </div>
-                                <span>
-                                    {isLoading
-                                        ? $t("import.importing") ||
-                                          "Scanning..."
-                                        : $t("page.importBtn")}
+                                    {$t("import.enableGlobalStats")}
                                 </span>
-                            </Button>
-                        </div>
+                            </Checkbox>
+
+                            <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
+                                <span
+                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
+                                >
+                                    {$t("import.recoveryStats") ||
+                                        "Восстановление записей"}
+                                    <Tooltip
+                                        text={$t("import.recoveryTooltip") ||
+                                            "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
+                                    >
+                                        <span
+                                            class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
+                                        >
+                                            <Icon name="info" class="m-1 w-4 h-4" />
+                                        </span>
+                                    </Tooltip>
+                                </span>
+                            </Checkbox>
+                        {/if}
+
+                        {#if platformTab !== 'endmin'}
+                            <div
+                                class="w-fit mt-4 {isLoading
+                                    ? 'opacity-60 pointer-events-none cursor-not-allowed'
+                                    : ''}"
+                            >
+                                <Button
+                                    variant="yellow"
+                                    onClick={() => {
+                                        if (!isLoading) handleUrlImport();
+                                    }}
+                                    disabled={isLoading}
+                                >
+                                    <div
+                                        slot="icon"
+                                        class="text-gray-800 dark:text-gray-800"
+                                    >
+                                        {#if isLoading}
+                                            <Icon
+                                                name="loading"
+                                                class="w-4 h-4 animate-spin"
+                                            />
+                                        {:else}
+                                            <Icon
+                                                name="import"
+                                                style="width: 30px; height: 30px;"
+                                            />
+                                        {/if}
+                                    </div>
+                                    <span>
+                                        {isLoading
+                                            ? $t("import.importing") ||
+                                              "Scanning..."
+                                            : $t("page.importBtn")}
+                                    </span>
+                                </Button>
+                            </div>
+                        {/if}
                     </div>
                 </div>
 
