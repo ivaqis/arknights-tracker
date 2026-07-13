@@ -47,6 +47,15 @@ export class UpdateUserProfile
     }
 
     protected async execute(): Promise<void> {
+        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+
+        if (!firebaseUid) {
+            this.status = 401;
+            this.message = "Unauthorized";
+
+            return;
+        }
+
         const profile = await this._database.users.findUserByPublicUid(this._uid);
 
         if (!profile) {
@@ -56,11 +65,9 @@ export class UpdateUserProfile
             return;
         }
 
-        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
-
-        if (!firebaseUid || profile.firebaseUid.initValue !== firebaseUid) {
+        if (profile.firebaseUid.initValue !== firebaseUid) {
             this.status = 403;
-            this.message = "Unauthorized";
+            this.message = "No access";
 
             return;
         }

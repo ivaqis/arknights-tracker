@@ -45,7 +45,7 @@ export class CreateUserProfile extends Controller<
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
         if (!firebaseUid) {
-            this.status = 403;
+            this.status = 401;
             this.message = "Unauthorized";
 
             return;

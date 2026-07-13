@@ -46,7 +46,7 @@ export class DeleteUserProfile extends Controller<
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
         if (!firebaseUid) {
-            this.status = 403;
+            this.status = 401;
             this.message = "Unauthorized";
             this.code = 1;
 
@@ -65,7 +65,7 @@ export class DeleteUserProfile extends Controller<
 
         if (profile.firebaseUid.initValue !== firebaseUid) {
             this.status = 403;
-            this.message = "Unauthorized";
+            this.message = "No access";
             this.code = 3;
 
             return;
