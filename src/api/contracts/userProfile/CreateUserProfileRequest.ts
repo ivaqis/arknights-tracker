@@ -1,6 +1,7 @@
 export interface CreateUserProfileRequest {
     publicUid: string;
     isPrivate: boolean;
-    avatarId: string | null;
+    avatarImage: string | null;
+    filename: string | null;
     backgroundId: string | null;
 }

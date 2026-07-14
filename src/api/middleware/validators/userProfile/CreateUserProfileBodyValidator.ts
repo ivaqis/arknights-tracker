@@ -14,7 +14,8 @@ export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileR
             this.getPublicUidRule(),
             this.getIsPrivateRule(),
             this.getBackgroundIdRule(),
-            this.getAvatarIdRule()
+            this.getAvatarImageRule(),
+            this.getFilenameRule()
         ];
     }
 
@@ -34,13 +35,22 @@ export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileR
         );
     }
 
-    private static getAvatarIdRule(): ValidationRule<CreateUserProfileRequest> {
+    private static getAvatarImageRule(): ValidationRule<CreateUserProfileRequest> {
         const rule = new StringValidationRule(true);
 
         return new ValidationRule(
-            item => rule.isValid(item.avatarId) || item.avatarId === null,
-            "avatarId must be a string or null"
+            item => rule.isValid(item.avatarImage) || item.avatarImage === null,
+            "avatarImage must be a string or null"
         );
+    }
+
+    private static getFilenameRule(): ValidationRule<CreateUserProfileRequest> {
+        const rule = new StringValidationRule(true);
+
+        return new ValidationRule(
+            item => rule.isValid(item.filename) || item.filename === null,
+            "filename must be a string or null"
+        )
     }
 
     private static getBackgroundIdRule(): ValidationRule<CreateUserProfileRequest> {
