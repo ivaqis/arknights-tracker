@@ -1,11 +1,14 @@
 import { config } from "@/config";
 import { logger } from "@/logger";
 import { FirebaseAuthData } from "@services/firebaseAuth/FirebaseAuthData";
+import { IService } from "@services/IService";
 import axios, { AxiosResponse } from "axios";
-import crypto from "crypto";
+import crypto from "node:crypto";
 
-export class FirebaseAuthenticator {
+export class FirebaseAuthenticator implements IService {
     public static readonly PUBLIC_TOKEN_URL = "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com";
+
+    public readonly name: string = "FirebaseAuthenticator";
 
     private readonly _projectId: string;
 
@@ -59,6 +62,10 @@ export class FirebaseAuthenticator {
         return data?.sub ?? null;
     }
 
+    public isActive(): boolean {
+        return !!this.projectId;
+    }
+
     private async verify(token: string): Promise<FirebaseAuthData> {
         if (token.startsWith("mock_") && config.envName !== "production") {
             return {
@@ -92,30 +99,30 @@ export class FirebaseAuthenticator {
         const certs = await this.getCertificate();
         const cert = certs[header.kid];
         if (!cert) {
-            throw new Error('Key ID not found in Google certificates');
+            throw new Error("Key ID not found in Google certificates");
         }
 
-        const signature = Buffer.from(signatureStr, 'base64url');
-        const verifier = crypto.createVerify('RSA-SHA256');
+        const signature = Buffer.from(signatureStr, "base64url");
+        const verifier = crypto.createVerify("RSA-SHA256");
         verifier.update(`${headerStr}.${payloadStr}`);
 
         const isValid = verifier.verify(cert, signature);
         if (!isValid) {
-            throw new Error('Invalid signature');
+            throw new Error("Invalid signature");
         }
 
         const now = Math.floor(Date.now() / 1000);
         if (payload.iss !== `https://securetoken.google.com/${this.projectId}`) {
-            throw new Error('Invalid issuer');
+            throw new Error("Invalid issuer");
         }
         if (payload.aud !== this.projectId) {
-            throw new Error('Invalid audience');
+            throw new Error("Invalid audience");
         }
         if (!payload.exp || payload.exp < now) {
-            throw new Error('Token expired');
+            throw new Error("Token expired");
         }
         if (!payload.sub) {
-            throw new Error('Subject is missing');
+            throw new Error("Subject is missing");
         }
 
         return {

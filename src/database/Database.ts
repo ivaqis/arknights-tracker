@@ -1,3 +1,4 @@
+import { config } from "@/config";
 import { ErrorsRepository } from "@database/repositories/ErrorsRepository";
 import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository";
 import { GameProfilesRepository } from "@database/repositories/GameProfilesRepository";
@@ -5,8 +6,11 @@ import { UserBannerProfilesRepository } from "@database/repositories/UserBannerP
 import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository";
 import { UsersRepository } from "@database/repositories/UsersRepository";
 import { PrismaClient } from "@prisma/client";
+import { IService } from "@services/IService";
 
-export class Database {
+export class Database implements IService {
+    public readonly name: string = "Database";
+
     private readonly _prisma: PrismaClient;
 
     private readonly _errorsRepository: ErrorsRepository;
@@ -49,6 +53,10 @@ export class Database {
 
     public get gameProfiles(): GameProfilesRepository {
         return this._userGameProfilesRepository;
+    }
+
+    public isActive(): boolean {
+        return !!config.databaseUrl;
     }
 
     public async deleteUser(uid: bigint): Promise<void> {

@@ -1,7 +1,9 @@
+import { database, firebase } from "@/serviceInstances";
 import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfile";
 import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
+import { RequireService } from "@api/middleware/RequireService";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
 import {
     CreateUserProfileRequestValidator
@@ -16,6 +18,8 @@ import {
 import { Router } from "express";
 
 export const profileRouter = Router();
+
+profileRouter.use(RequireService.require(database), RequireService.require(firebase));
 
 profileRouter.get("/get", GetUserProfileRequestValidator.validate, GetUserProfile.get);
 profileRouter.post("/update", JsonRequestValidator.isJson, UpdateUserProfileRequestValidator.validate, UpdateUserProfile.post);
