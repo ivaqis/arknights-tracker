@@ -35,6 +35,7 @@ profileRouter.post("/create",
     CreateUserProfile.post
 );
 profileRouter.delete("/delete",
+    RequireService.require(avatarUploader),
     DeleteUserProfileRequestValidator.validate,
     DeleteUserProfile.delete
 );

@@ -1,9 +1,10 @@
-import { database, firebase } from "@/serviceInstances";
+import { avatarUploader, database, firebase } from "@/serviceInstances";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { DeleteUserProfileQuery } from "@api/contracts/userProfile/DeleteUserProfileQuery";
 import { DeleteUserProfileResponse } from "@api/contracts/userProfile/DeleteUserProfileResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { AvatarUploader } from "@services/avatarUploader/AvatarUploader";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
@@ -15,6 +16,7 @@ export class DeleteUserProfile extends Controller<
 > {
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _uploader: AvatarUploader = avatarUploader;
 
     private readonly _firebaseToken: string;
     private readonly _publicUid: string;
@@ -69,6 +71,10 @@ export class DeleteUserProfile extends Controller<
             this.code = 3;
 
             return;
+        }
+
+        if (profile.avatarId.initValue) {
+            await this._uploader.deleteAvatar(profile.avatarId.initValue);
         }
 
         await this._database.deleteUser(profile.uid);
