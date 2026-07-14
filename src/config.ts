@@ -24,6 +24,8 @@ export const config = {
     skportContractUrl: getSkportContractUrl(),
     skportContractRecordsUrl: getSkportContractRecordsUrl(),
     skportMonumentUrl: getSkportMonumentUrl(),
+    sightengineUser: process.env.SIGHTENGINE_USER || null,
+    sightengineSecret: process.env.SIGHTENGINE_SECRET || null,
 } as const;
 
 function loadEnv(): void {

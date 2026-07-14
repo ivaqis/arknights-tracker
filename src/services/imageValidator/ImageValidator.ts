@@ -16,6 +16,10 @@ export class ImageValidator {
         return imageValidator.isValid(data);
     }
 
+    public static getMatch(base64Data: string): RegExpMatchArray | null {
+        return base64Data.match(this.IMAGE_HEADER_MATCH);
+    }
+
     public isValid(data: Metadata): boolean {
         const size = data.size;
         const width = data.width;

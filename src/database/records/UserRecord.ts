@@ -75,4 +75,23 @@ export class UserRecord {
     public get updatedAt(): Date {
         return this._updatedAt;
     }
+
+    public resetUploadsIfMust(): void {
+        if (this.mustResetUploads()) {
+            this.resetUploads();
+        }
+    }
+
+    public resetUploads(): void {
+        this.uploadCount.value = 0;
+        this.lastUploadReset.value = new Date();
+    }
+
+    public mustResetUploads(): boolean {
+        const now = new Date();
+        const resetDate = this.lastUploadReset.initValue;
+
+        return now.getFullYear() !== resetDate.getFullYear()
+            || now.getMonth() !== resetDate.getMonth();
+    }
 }

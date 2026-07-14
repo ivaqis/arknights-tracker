@@ -1,14 +1,18 @@
 import { logger } from "@/logger";
 import { ImageValidator } from "@services/imageValidator/ImageValidator";
+import { IService } from "@services/IService";
 import { SightengineResponse } from "@services/sightengineNsfwValidator/contracts/SightengineResponse";
 import { NsfwCheckResult } from "@services/sightengineNsfwValidator/NsfwCheckResult";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import { Blob } from "node:buffer";
 
-export class SightengineNsfwValidator {
+export class SightengineNsfwValidator implements IService {
     private static readonly SIGHTENGINE_URL = "https://api.sightengine.com/1.0/check.json";
     private static readonly SEXUAL_ACTIVITY_LIMIT = 0.5;
     private static readonly SEXUAL_DISPLAY_LIMIT = 0.5;
     private static readonly EROTICA_LIMIT = 0.5;
+
+    public readonly name = "SightengineNsfwValidator";
 
     private readonly _sightengineUser;
     private readonly _sightengineSecret;
@@ -33,6 +37,10 @@ export class SightengineNsfwValidator {
     }
 
     public async isNsfwImage(base64Image: string, filename?: string): Promise<NsfwCheckResult> {
+        if (!this.isActive()) {
+            throw new Error("Service inactive");
+        }
+
         const normalizedFilename = filename?.toLowerCase();
         if (normalizedFilename && normalizedFilename.includes("nsfw")) {
             return {
@@ -60,6 +68,10 @@ export class SightengineNsfwValidator {
             success: true,
             isNsfw: isNsfw
         };
+    }
+
+    public isActive(): boolean {
+        return !!(this._sightengineSecret && this._sightengineUser);
     }
 
     private getFormData(base64Image: string, filename: string = "image.webp"): FormData {
