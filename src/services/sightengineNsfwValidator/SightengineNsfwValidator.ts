@@ -1,4 +1,5 @@
 import { logger } from "@/logger";
+import { ImageValidator } from "@services/imageValidator/ImageValidator";
 import { SightengineResponse } from "@services/sightengineNsfwValidator/contracts/SightengineResponse";
 import { NsfwCheckResult } from "@services/sightengineNsfwValidator/NsfwCheckResult";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
@@ -24,7 +25,7 @@ export class SightengineNsfwValidator {
     }
 
     private static getBlob(base64Image: string): Blob {
-        const match = base64Image.match(/^data:image\/(jpeg|jpg|png|webp|avif);base64,(.+)$/i);
+        const match = base64Image.match(ImageValidator.IMAGE_HEADER_MATCH);
         const base64Str = match ? match[2] : base64Image;
         const buffer = Buffer.from(base64Str, "base64");
 
