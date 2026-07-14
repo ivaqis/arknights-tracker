@@ -19,7 +19,7 @@ import { Router } from "express";
 
 export const profileRouter = Router();
 
-profileRouter.use(RequireService.require(database), RequireService.require(firebase));
+profileRouter.use(RequireService.require(database, firebase));
 
 profileRouter.get("/get", GetUserProfileRequestValidator.validate, GetUserProfile.get);
 profileRouter.post("/update", JsonRequestValidator.isJson, UpdateUserProfileRequestValidator.validate, UpdateUserProfile.post);

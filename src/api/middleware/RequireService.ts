@@ -10,30 +10,34 @@ export class RequireService extends Middleware<
     unknown,
     unknown
 > {
-    private readonly _requiredService: IService;
+    private readonly _requiredServices: IService[];
 
     private constructor(req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>,
                         res: e.Response<ResponseBody<unknown>>,
                         next: e.NextFunction,
-                        requiredService: IService
+                        requiredServices: IService[]
     ) {
         super(req, res, next);
 
-        this._requiredService = requiredService;
+        this._requiredServices = requiredServices;
     }
 
-    public static require(service: IService): (req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => Promise<void> {
+    public static require(...services: IService[]): (req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => Promise<void> {
         return async (req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => {
-            const middleware = new RequireService(req, res, next, service);
+            const middleware = new RequireService(req, res, next, services);
 
             await middleware.safeExecute();
         }
     }
 
     protected async execute(): Promise<void> {
-        if (!this._requiredService.isActive()) {
-            this.status = 503;
-            this.message = `Required service unavailable: ${this._requiredService.name}`
+        for (const service of this._requiredServices) {
+            if (!service.isActive()) {
+                this.status = 503;
+                this.message = `Required service unavailable: ${service.name}`
+
+                return;
+            }
         }
     }
 }
