@@ -79,7 +79,9 @@ export class UploadAvatar extends Controller<
             return;
         }
 
-        if (profile.uploadCount.initValue >= UploadAvatar.MONTHLY_UPLOADS_LIMIT) {
+        profile.resetUploadsIfMust();
+
+        if (profile.uploadCount.value >= UploadAvatar.MONTHLY_UPLOADS_LIMIT) {
             this.status = 429;
             this.message = "Reached upload limit";
 
@@ -94,8 +96,6 @@ export class UploadAvatar extends Controller<
 
             return;
         }
-
-        profile.resetUploadsIfMust();
 
         if (nsfwCheckResult.isNsfw) {
             this.status = 200;
