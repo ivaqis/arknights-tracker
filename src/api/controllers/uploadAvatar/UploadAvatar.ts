@@ -121,6 +121,7 @@ export class UploadAvatar extends Controller<
         const avatarId = await this._uploader.uploadAvatar(this._image);
 
         profile.avatarId.value = avatarId;
+        profile.displayAvatar.value = true;
         profile.uploadCount.value += 1;
 
         await this._database.users.updateUser(profile);
