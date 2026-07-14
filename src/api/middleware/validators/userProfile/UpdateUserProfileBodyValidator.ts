@@ -12,7 +12,6 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
     private static getRules(): ValidationRule<UpdateUserProfileRequest>[] {
         return [
             this.getIsPrivateRule(),
-            this.getAvatarIdRule(),
             this.getBackgroundIdRule(),
             this.getNewUidRule()
         ];
@@ -22,15 +21,6 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
         return new ValidationRule(
             item => typeof item.isPrivate === "boolean" || typeof item.isPrivate === "undefined",
             "isPrivate must be true or false",
-        );
-    }
-
-    private static getAvatarIdRule(): ValidationRule<UpdateUserProfileRequest> {
-        const rule = new OptionalValidationRule(new StringValidationRule(true));
-
-        return new ValidationRule(
-            item => rule.isValid(item.avatarId),
-            "avatarId must be a string",
         );
     }
 

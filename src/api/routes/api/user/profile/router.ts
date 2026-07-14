@@ -1,7 +1,9 @@
+import { avatarUploader, sightengine } from "@/serviceInstances";
 import { CreateUserProfile } from "@api/controllers/userProfile/CreateUserProfile";
 import { DeleteUserProfile } from "@api/controllers/userProfile/DeleteUserProfile";
 import { GetUserProfile } from "@api/controllers/userProfile/GetUserProfile";
 import { UpdateUserProfile } from "@api/controllers/userProfile/UpdateUserProfile";
+import { RequireService } from "@api/middleware/RequireService";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
 import {
     CreateUserProfileRequestValidator
@@ -17,7 +19,22 @@ import { Router } from "express";
 
 export const profileRouter = Router();
 
-profileRouter.get("/get", GetUserProfileRequestValidator.validate, GetUserProfile.get);
-profileRouter.post("/update", JsonRequestValidator.isJson, UpdateUserProfileRequestValidator.validate, UpdateUserProfile.post);
-profileRouter.post("/create", JsonRequestValidator.isJson, CreateUserProfileRequestValidator.validate, CreateUserProfile.post);
-profileRouter.delete("/delete", DeleteUserProfileRequestValidator.validate, DeleteUserProfile.delete);
+profileRouter.get("/get",
+    GetUserProfileRequestValidator.validate,
+    GetUserProfile.get
+);
+profileRouter.post("/update",
+    JsonRequestValidator.isJson,
+    UpdateUserProfileRequestValidator.validate,
+    UpdateUserProfile.post
+);
+profileRouter.post("/create",
+    RequireService.require(sightengine, avatarUploader),
+    JsonRequestValidator.isJson,
+    CreateUserProfileRequestValidator.validate,
+    CreateUserProfile.post
+);
+profileRouter.delete("/delete",
+    DeleteUserProfileRequestValidator.validate,
+    DeleteUserProfile.delete
+);
