@@ -47,7 +47,6 @@ model UserGameProfile {
     userContractLeaderboards UserContractLeaderboard[]
     userMonumentLeaderboards UserMonumentLeaderboard[]
 
-    @@unique([uid, serverId])
     @@index([uid, serverId])
 }
 

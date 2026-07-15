@@ -56,8 +56,33 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return entities.map(UserMonumentLeaderboardRecord.createFromEntity);
     }
 
-    public async create(record: UserMonumentLeaderboardRecord) {
-        await this.table.create({
+    public async upsert(record: UserMonumentLeaderboardRecord): Promise<UserMonumentLeaderboardRecord> {
+        const entity = await this.table.upsert({
+            where: {
+                gameUid_dungeonId: {
+                    dungeonId: record.dungeonId,
+                    gameUid: record.gameUid
+                }
+            },
+            update: {
+                clearTimeSec: record.clearTimeSec,
+                data: record.getStringData()
+            },
+            create: {
+                gameUid: record.gameUid,
+                dungeonId: record.dungeonId,
+                groupId: record.groupId,
+                isHard: record.isHard,
+                clearTimeSec: record.clearTimeSec,
+                data: record.getStringData()
+            }
+        });
+
+        return UserMonumentLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async create(record: UserMonumentLeaderboardRecord): Promise<UserMonumentLeaderboardRecord> {
+        const entity = await this.table.create({
             data: {
                 gameUid: record.gameUid,
                 dungeonId: record.dungeonId,
@@ -67,6 +92,8 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                 data: record.getStringData()
             }
         });
+
+        return UserMonumentLeaderboardRecord.createFromEntity(entity);
     }
 
     public async delete(gameUid: string, dungeonId: string): Promise<void> {

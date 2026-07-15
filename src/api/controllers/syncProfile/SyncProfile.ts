@@ -140,13 +140,9 @@ export class SyncProfile extends Controller<
             return;
         }
 
-        if (existedRecord) {
-            await this._database.gameProfiles.monumentTable.delete(existedRecord.gameUid, existedRecord.dungeonId);
-        }
-
         const dbRecord = UserMonumentLeaderboardRecord.createFromData(record, gameUid);
 
-        await this._database.gameProfiles.monumentTable.create(dbRecord);
+        await this._database.gameProfiles.monumentTable.upsert(dbRecord);
     }
 
     private async updateContractDataList(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatuses: ContractStatus[], profileChars: Character[]): Promise<void> {
