@@ -60,7 +60,7 @@ export abstract class Middleware<
 
     protected async safeExecute(): Promise<void> {
         try {
-            logger.debug(`[${this.name}] [${this._req.baseUrl}/] PROCESSING (${this._req.method} ${this._req.originalUrl})`);
+            logger.debug(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] PROCESSING (${this._req.method} ${this._req.originalUrl})`);
 
             await this.execute();
 
@@ -70,14 +70,14 @@ export abstract class Middleware<
                     data: this._data
                 });
 
-                logger.info(`[${this.name}] [${this._req.baseUrl}/] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+                logger.info(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
             } else {
-                logger.debug(`[${this.name}] [${this._req.baseUrl}/] NEXT CALLED (${this._req.method} ${this._req.originalUrl})`);
+                logger.debug(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] NEXT CALLED (${this._req.method} ${this._req.originalUrl})`);
 
                 this.next();
             }
         } catch (e) {
-            logger.error(`[${this.name}] [${this._req.baseUrl}/] ${this._req.method} ${this._req.originalUrl}\n${e}`);
+            logger.error(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] ${this._req.method} ${this._req.originalUrl}\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -89,7 +89,17 @@ export abstract class Middleware<
                 data: null
             });
 
-            logger.info(`[${this.name}] [${this._req.baseUrl}/] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+            logger.info(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         }
+    }
+
+    protected getRoutePath(): string {
+        const path = this._req?.route?.path as string;
+
+        if (!path || typeof path !== "string") {
+            return "";
+        }
+
+        return path;
     }
 }
