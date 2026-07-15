@@ -60,6 +60,10 @@ export class ContractRecordFetcher {
         } catch (error) {
             logger.error(error);
 
+            if (error instanceof Error) {
+                logger.error(error.stack);
+            }
+
             return null;
         }
 
@@ -78,6 +82,10 @@ export class ContractRecordFetcher {
         } catch (error) {
             logger.error(error);
 
+            if (error instanceof Error) {
+                logger.error(error.stack);
+            }
+
             return null;
         }
 
@@ -91,6 +99,10 @@ export class ContractRecordFetcher {
             responseData = await this.getResponseData();
         } catch (error) {
             logger.error(error);
+
+            if (error instanceof Error) {
+                logger.error(error.stack);
+            }
 
             return null;
         }

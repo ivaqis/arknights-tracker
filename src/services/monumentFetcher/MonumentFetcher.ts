@@ -48,6 +48,10 @@ export class MonumentFetcher {
         } catch (e) {
             logger.error(e);
 
+            if (e instanceof Error) {
+                logger.error(e.stack);
+            }
+
             return null;
         }
 
@@ -73,6 +77,10 @@ export class MonumentFetcher {
             responseData = await this.getResponseData();
         } catch (e) {
             logger.error(e);
+
+            if (e instanceof Error) {
+                logger.error(e.stack);
+            }
 
             return null;
         }

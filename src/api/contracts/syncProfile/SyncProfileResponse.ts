@@ -1,5 +1,3 @@
-import { IGameProfile } from "@api/contracts/userProfile/IGameProfile";
+export interface SyncProfileResponse extends Record<string, boolean> {
 
-export interface SyncProfileResponse {
-    gameProfiles: IGameProfile[];
 }

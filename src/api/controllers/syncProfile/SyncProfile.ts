@@ -5,6 +5,16 @@ import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileReques
 import { SyncProfileResponse } from "@api/contracts/syncProfile/SyncProfileResponse";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
+import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord";
+import { ContractStatus } from "@models/contingencyContract/ContractStatus";
+import { Character } from "@models/gameProfile/Character";
+import { GameProfile } from "@models/gameProfile/GameProfile";
+import { MonumentGroup } from "@models/monument/MonumentGroup";
+import { MonumentRecord } from "@models/monument/MonumentRecord";
+import { EndfieldDataFetcher } from "@services/endfieldDataFetcher/EndfieldDataFetcher";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
@@ -20,6 +30,7 @@ export class SyncProfile extends Controller<
     private readonly _uid: string;
     private readonly _firebaseToken: string;
     private readonly _serverIds: string[];
+    private readonly _token: string;
 
     private constructor(req: e.Request<{}, ResponseBody<SyncProfileResponse>, SyncProfileRequest, SyncProfileQuery>, res: e.Response<ResponseBody<SyncProfileResponse>>) {
         super(req, res);
@@ -27,6 +38,7 @@ export class SyncProfile extends Controller<
         this._uid = req.query.uid;
         this._firebaseToken = req.query.firebaseToken;
         this._serverIds = req.body.serverIds;
+        this._token = req.body.token;
     }
 
     public static async post(req: e.Request<{}, ResponseBody<SyncProfileResponse>, SyncProfileRequest, SyncProfileQuery>, res: e.Response<ResponseBody<SyncProfileResponse>>) {
@@ -62,6 +74,113 @@ export class SyncProfile extends Controller<
             return;
         }
 
+        const endfieldDataFetcher = await EndfieldDataFetcher.create(this._token);
 
+        if (!endfieldDataFetcher) {
+            this.status = 400;
+            this.message = "Gryphline auth failed";
+
+            return;
+        }
+
+        const result: Record<string, boolean> = {};
+
+        for (const serverId of this._serverIds) {
+            const updated = await this.updateData(endfieldDataFetcher, serverId, profile.uid);
+
+            result[serverId] = updated;
+        }
+
+        this.data = result;
+    }
+
+    private async updateData(fetcher: EndfieldDataFetcher, serverId: string, uid: bigint): Promise<boolean> {
+        const profileData = await fetcher.getDetailData(serverId);
+
+        if (!profileData) {
+            return false;
+        }
+
+        const gameProfile = GameProfile.getFromData(profileData, serverId);
+
+        const gameProfileRecord = UserGameProfileRecord.createFromData(gameProfile.base.roleId, serverId, uid, gameProfile);
+
+        await this._database.gameProfiles.gameProfilesTable.upsert(gameProfileRecord);
+
+        const contractStatuses = ContractStatus.getList(profileData.crisisContract);
+
+        await this.updateContractDataList(fetcher, serverId, gameProfile.base.roleId, contractStatuses, gameProfile.chars);
+        await this.updateMonumentData(fetcher, serverId, gameProfile.base.roleId, gameProfile.chars);
+
+        return true;
+    }
+
+    private async updateMonumentData(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, profileChars: Character[]): Promise<void> {
+        const monumentData = await fetcher.getMonumentData(serverId);
+
+        if (!monumentData || !monumentData.length) {
+            return;
+        }
+
+        const monumentGroup = MonumentGroup.getFromDataList(monumentData, profileChars);
+        const records = MonumentGroup.getRecordsFromList(monumentGroup);
+
+        for (const record of records) {
+            await this.updateMonumentRecord(record, gameUid);
+        }
+    }
+
+    private async updateMonumentRecord(record: MonumentRecord, gameUid: string): Promise<void> {
+        const existedRecord = await this._database.gameProfiles.monumentTable.find(gameUid, record.dungeonId);
+        const existedRecordData = existedRecord ? existedRecord.data : null;
+
+        if (existedRecordData && existedRecordData.ts === record.ts) {
+            return;
+        }
+
+        if (existedRecord) {
+            await this._database.gameProfiles.monumentTable.delete(existedRecord.gameUid, existedRecord.dungeonId);
+        }
+
+        const dbRecord = UserMonumentLeaderboardRecord.createFromData(record, gameUid);
+
+        await this._database.gameProfiles.monumentTable.create(dbRecord);
+    }
+
+    private async updateContractDataList(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatuses: ContractStatus[], profileChars: Character[]): Promise<void> {
+        for (const status of contractStatuses) {
+            await this.updateContractData(fetcher, serverId, gameUid, status, profileChars);
+        }
+    }
+
+    private async updateContractData(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatus: ContractStatus, profileChars: Character[]) {
+        const contractData = await fetcher.getContractData(serverId, contractStatus.apiId);
+
+        if (!contractData || !contractData.history.bestRecord) {
+            return;
+        }
+
+        const bestRecordData = await fetcher.getContractRecordData(serverId, contractStatus.apiId, contractData.history.bestRecord.id);
+
+        if (!bestRecordData) {
+            return;
+        }
+
+        const bestRecord = ContractRecord.getFromData(bestRecordData, profileChars, contractStatus.id);
+
+        const exists = await this._database.gameProfiles.contractTable.find(bestRecord.id) !== null;
+
+        if (exists) {
+            return;
+        }
+
+        const dbRecord = UserContractLeaderboardRecord.createFromData(bestRecord, gameUid);
+
+        const oldRecords = await this._database.gameProfiles.contractTable.findByGameUid(gameUid, contractStatus.id);
+        for (const record of oldRecords) {
+            await this._database.gameProfiles.contractTable.delete(record.recordId);
+        }
+
+        await this._database.gameProfiles.contractTable.create(dbRecord);
     }
 }

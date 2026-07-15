@@ -18,7 +18,7 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
             return null;
         }
 
-        return new UserGameProfileRecord(entity);
+        return UserGameProfileRecord.createFromEntity(entity);
     }
 
     public async findByUid(uid: bigint, serverId?: string): Promise<UserGameProfileRecord[]> {
@@ -29,24 +29,7 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
             }
         });
 
-        return entities.map(entity => new UserGameProfileRecord(entity));
-    }
-
-    public async findByServerId(uid: bigint, serverId: string): Promise<UserGameProfileRecord | null> {
-        const entity = await this.table.findUnique({
-            where: {
-                uid_serverId: {
-                    uid,
-                    serverId
-                }
-            }
-        });
-
-        if (!entity) {
-            return null;
-        }
-
-        return new UserGameProfileRecord(entity);
+        return entities.map(UserGameProfileRecord.createFromEntity);
     }
 
     public async upsert(record: UserGameProfileRecord) {

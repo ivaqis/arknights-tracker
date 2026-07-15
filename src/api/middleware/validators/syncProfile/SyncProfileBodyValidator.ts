@@ -12,7 +12,8 @@ export class SyncProfileBodyValidator extends Validator<SyncProfileRequest> {
 
     private static getRules(): ValidationRule<SyncProfileRequest>[] {
         return [
-            this.getServerIdsRule()
+            this.getServerIdsRule(),
+            this.getTokenRule()
         ];
     }
 
@@ -20,8 +21,17 @@ export class SyncProfileBodyValidator extends Validator<SyncProfileRequest> {
         const rule = new ListValidationRule(new StringValidationRule(true));
 
         return new ValidationRule(
-            item => rule.isValid(item.serverIds) && item.serverIds.length > 0,
+            item => rule.isValid(item.serverIds) && item.serverIds.length > 0 && item.serverIds.length <= 2,
             "serverIds must be an array of strings"
+        );
+    }
+
+    public static getTokenRule(): ValidationRule<SyncProfileRequest> {
+        const rule = new StringValidationRule(true);
+
+        return new ValidationRule(
+            item => rule.isValid(item.token),
+            "token must be a string"
         );
     }
 }
