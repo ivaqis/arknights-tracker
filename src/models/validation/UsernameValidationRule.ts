@@ -5,7 +5,7 @@ export class UsernameValidationRule extends ValidationRule<unknown> {
 
     public constructor(notEmpty: boolean = false, invalidMsg?: string, validMsg?: string) {
         super(
-            item => typeof item === "string" && item.length > 0 && UsernameValidationRule.REGEX.test(item),
+            item => typeof item === "string" && (notEmpty ? item.length > 0 : true) && UsernameValidationRule.REGEX.test(item),
             invalidMsg,
             validMsg
         );
