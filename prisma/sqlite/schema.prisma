@@ -86,7 +86,7 @@ model UserBannerProfile {
     gameUid   String?  @unique
     createdAt DateTime @default(now())
 
-    userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid])
+    userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
 
     generatedTokens         GeneratedToken[]
     userBannerStats         UserBannerStat[]
