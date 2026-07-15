@@ -7,6 +7,7 @@ import { UploadAvatarQueryValidator } from "@api/middleware/validators/uploadAva
 import e from "express";
 
 export class UploadAvatarRequestValidator extends RequestValidator<{}, UploadAvatarRequest, UploadAvatarQuery> {
+    public readonly name = "UploadAvatarRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, UploadAvatarRequest, UploadAvatarQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {

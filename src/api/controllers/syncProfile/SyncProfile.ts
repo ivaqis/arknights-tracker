@@ -24,6 +24,8 @@ export class SyncProfile extends Controller<
     SyncProfileRequest,
     SyncProfileQuery
 > {
+    public readonly name = "SyncProfile";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
 

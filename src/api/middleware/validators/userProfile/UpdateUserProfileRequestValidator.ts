@@ -14,6 +14,8 @@ export class UpdateUserProfileRequestValidator
         UpdateUserProfileRequest,
         UpdateUserProfileQuery
     > {
+    public readonly name = "UpdateUserProfileRequestValidator";
+
     private constructor(req: e.Request<{}, ResponseBody<unknown>, UpdateUserProfileRequest, UpdateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {
             bodyValidatorConstructor: UpdateUserProfileBodyValidator,

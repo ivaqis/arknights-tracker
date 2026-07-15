@@ -9,6 +9,7 @@ export class GetUserProfileRequestValidator extends RequestValidator<
     {},
     GetUserProfileQuery
 > {
+    public readonly name = "GetUserProfileRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, {}, GetUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {

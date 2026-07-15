@@ -7,6 +7,7 @@ import { SyncProfileQueryValidator } from "@api/middleware/validators/syncProfil
 import e from "express";
 
 export class SyncProfileRequestValidator extends RequestValidator<{}, SyncProfileRequest, SyncProfileQuery> {
+    public readonly name = "SyncProfileRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, SyncProfileRequest, SyncProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {

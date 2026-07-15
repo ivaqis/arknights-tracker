@@ -7,6 +7,7 @@ import {
 import e from "express";
 
 export class DeleteUserProfileRequestValidator extends RequestValidator<{}, {}, DeleteUserProfileQuery> {
+    public readonly name = "DeleteUserProfileRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, {}, DeleteUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {

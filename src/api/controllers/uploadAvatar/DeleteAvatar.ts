@@ -14,6 +14,8 @@ export class DeleteAvatar extends Controller<
     {},
     DeleteAvatarQuery
 > {
+    public readonly name = "DeleteAvatar";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
     private readonly _uploader: AvatarUploader = avatarUploader;

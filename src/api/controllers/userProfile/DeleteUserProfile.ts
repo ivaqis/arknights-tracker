@@ -14,6 +14,8 @@ export class DeleteUserProfile extends Controller<
     {},
     DeleteUserProfileQuery
 > {
+    public readonly name = "DeleteUserProfile";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
     private readonly _uploader: AvatarUploader = avatarUploader;

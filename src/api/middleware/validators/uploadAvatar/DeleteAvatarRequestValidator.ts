@@ -5,6 +5,7 @@ import { DeleteAvatarQueryValidator } from "@api/middleware/validators/uploadAva
 import e from "express";
 
 export class DeleteAvatarRequestValidator extends RequestValidator<{}, {}, DeleteAvatarQuery> {
+    public readonly name = "DeleteAvatarRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, {}, DeleteAvatarQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {

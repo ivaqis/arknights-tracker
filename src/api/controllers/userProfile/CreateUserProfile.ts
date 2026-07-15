@@ -19,6 +19,8 @@ export class CreateUserProfile extends Controller<
     CreateUserProfileRequest,
     CreateUserProfileQuery
 > {
+    public readonly name = "CreateUserProfile";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
     private readonly _uploader: AvatarUploader = avatarUploader;

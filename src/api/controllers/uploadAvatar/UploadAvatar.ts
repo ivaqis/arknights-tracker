@@ -19,6 +19,8 @@ export class UploadAvatar extends Controller<
 > {
     public static readonly MONTHLY_UPLOADS_LIMIT = 30;
 
+    public readonly name = "UploadAvatar";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
     private readonly _uploader: AvatarUploader = avatarUploader;

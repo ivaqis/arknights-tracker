@@ -19,6 +19,8 @@ export class UpdateUserProfile
         UpdateUserProfileRequest,
         UpdateUserProfileQuery
     > {
+    public readonly name = "UpdateUserProfile";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
 

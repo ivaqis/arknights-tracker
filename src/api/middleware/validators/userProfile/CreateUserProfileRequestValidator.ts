@@ -14,6 +14,7 @@ export class CreateUserProfileRequestValidator extends RequestValidator<
     CreateUserProfileRequest,
     CreateUserProfileQuery
 > {
+    public readonly name = "CreateUserProfileRequestValidator";
 
     private constructor(req: e.Request<{}, ResponseBody<unknown>, CreateUserProfileRequest, CreateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next, {
@@ -23,8 +24,6 @@ export class CreateUserProfileRequestValidator extends RequestValidator<
     }
 
     public static async validate(req: e.Request<{}, ResponseBody<unknown>, CreateUserProfileRequest, CreateUserProfileQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
-        logger.debug("CreateUserProfileRequestValidator: request received");
-
         const validator = new CreateUserProfileRequestValidator(req, res, next);
 
         await validator.safeExecute();

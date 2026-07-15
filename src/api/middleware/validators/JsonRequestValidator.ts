@@ -10,6 +10,8 @@ export class JsonRequestValidator extends Middleware<
     unknown,
     unknown
 > {
+    public readonly name = "JsonRequestValidator";
+
     private constructor(req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
         super(req, res, next);
     }

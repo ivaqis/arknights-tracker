@@ -42,6 +42,8 @@ export abstract class Middleware<
         return this._status;
     }
 
+    public abstract get name(): string;
+
     protected set status(value: number) {
         this._status = value;
     }
@@ -58,7 +60,7 @@ export abstract class Middleware<
 
     protected async safeExecute(): Promise<void> {
         try {
-            logger.debug(`[${this._req.baseUrl}/] Processing (${this._req.method} ${this._req.originalUrl})`);
+            logger.debug(`[${this.name}] [${this._req.baseUrl}/] Processing (${this._req.method} ${this._req.originalUrl})`);
 
             await this.execute();
 
@@ -68,14 +70,14 @@ export abstract class Middleware<
                     data: this._data
                 });
 
-                logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+                logger.info(`[${this.name}] [${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
             } else {
-                logger.debug(`[${this._req.baseUrl}/] Next called: (${this._req.method} ${this._req.originalUrl})`);
+                logger.debug(`[${this.name}] [${this._req.baseUrl}/] Next called: (${this._req.method} ${this._req.originalUrl})`);
 
                 this.next();
             }
         } catch (e) {
-            logger.error(`[${this._req.baseUrl}/] Error on middleware: (${this._req.method} ${this._req.originalUrl})\n${e}`);
+            logger.error(`[${this.name}] [${this._req.baseUrl}/] Error on middleware: (${this._req.method} ${this._req.originalUrl})\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -87,7 +89,7 @@ export abstract class Middleware<
                 data: null
             });
 
-            logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+            logger.info(`[${this.name}] [${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         }
     }
 }

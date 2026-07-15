@@ -10,6 +10,8 @@ export class RequireService extends Middleware<
     unknown,
     unknown
 > {
+    public readonly name = "RequireService";
+
     private readonly _requiredServices: IService[];
 
     private constructor(req: e.Request<core.ParamsDictionary, ResponseBody<unknown>, unknown, unknown>,

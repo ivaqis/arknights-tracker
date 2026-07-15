@@ -19,6 +19,8 @@ export class GetUserProfile extends Controller<
     {},
     GetUserProfileQuery
 > {
+    public readonly name = "GetUserProfile";
+
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
 
