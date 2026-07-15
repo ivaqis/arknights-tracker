@@ -1,6 +1,7 @@
 import { UpdateUserProfileRequest } from "@api/contracts/userProfile/UpdateUserProfileRequest";
 import { OptionalValidationRule } from "@models/validation/OptionalValidationRule";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
@@ -34,11 +35,11 @@ export class UpdateUserProfileBodyValidator extends Validator<UpdateUserProfileR
     }
 
     private static getNewUidRule(): ValidationRule<UpdateUserProfileRequest> {
-        const rule = new OptionalValidationRule(new StringValidationRule(true));
+        const rule = new OptionalValidationRule(new UsernameValidationRule(true));
 
         return new ValidationRule(
             item => rule.isValid(item.newUid),
-            "newUid must be a string",
+            "newUid must be a string matches \\w",
         );
     }
 }

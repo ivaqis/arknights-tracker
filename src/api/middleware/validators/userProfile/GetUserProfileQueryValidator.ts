@@ -20,7 +20,7 @@ export class GetUserProfileQueryValidator extends Validator<GetUserProfileQuery>
 
         return new ValidationRule(
             item => rule.isValid(item.uid),
-            "uid must be a not-empty string"
+            "uid must be a not-empty string matches \\w"
         );
     }
 

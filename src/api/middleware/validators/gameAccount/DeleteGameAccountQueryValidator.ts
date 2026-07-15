@@ -1,5 +1,7 @@
 import { DeleteGameAccountQuery } from "@api/contracts/gameAccount/DeleteGameAccountQuery";
+import { GameUidValidationRule } from "@models/validation/GameUidValidationRule";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
@@ -18,11 +20,11 @@ export class DeleteGameAccountQueryValidator extends Validator<DeleteGameAccount
     }
 
     private static getUidRule(): ValidationRule<DeleteGameAccountQuery> {
-        const rule = new StringValidationRule(true);
+        const rule = new UsernameValidationRule(true);
 
         return new ValidationRule(
             item => rule.isValid(item.uid),
-            "uid must be a string"
+            "uid must be a string of digits"
         );
     }
 
@@ -36,11 +38,11 @@ export class DeleteGameAccountQueryValidator extends Validator<DeleteGameAccount
     }
 
     private static getGameUidRule(): ValidationRule<DeleteGameAccountQuery> {
-        const rule = new StringValidationRule(true);
+        const rule = new GameUidValidationRule(true);
 
         return new ValidationRule(
             item => rule.isValid(item.gameUid),
-            "gameUid must be a string"
+            "gameUid must be a string matches \\w"
         );
     }
 }

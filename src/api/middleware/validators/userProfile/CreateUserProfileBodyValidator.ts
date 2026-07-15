@@ -1,5 +1,6 @@
 import { CreateUserProfileRequest } from "@api/contracts/userProfile/CreateUserProfileRequest";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
+import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
@@ -20,11 +21,11 @@ export class CreateUserProfileBodyValidator extends Validator<CreateUserProfileR
     }
 
     private static getPublicUidRule(): ValidationRule<CreateUserProfileRequest> {
-        const rule = new StringValidationRule(true);
+        const rule = new UsernameValidationRule(true);
 
         return new ValidationRule(
             item => rule.isValid(item.publicUid),
-            "publicUid must be a string"
+            "publicUid must be a string matches \\w"
         );
     }
 
