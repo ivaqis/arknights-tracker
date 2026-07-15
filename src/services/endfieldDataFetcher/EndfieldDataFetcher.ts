@@ -1,5 +1,3 @@
-import { ContractStatus } from "@models/contingencyContract/ContractStatus";
-import { GameProfile } from "@models/gameProfile/GameProfile";
 import { ContractFetcher } from "@services/contractFetcher/ContractFetcher";
 import { ContractData } from "@services/contractFetcher/contracts/ContractData";
 import { ContractRecordFetcher } from "@services/contractRecordFetcher/ContractRecordFetcher";
