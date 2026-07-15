@@ -1,4 +1,5 @@
 import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
+import { GameServerId } from "@models/GameServerId";
 import { ListValidationRule } from "@models/validation/ListValidationRule";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
@@ -18,11 +19,12 @@ export class SyncProfileBodyValidator extends Validator<SyncProfileRequest> {
     }
 
     private static getServerIdsRule(): ValidationRule<SyncProfileRequest> {
-        const rule = new ListValidationRule(new StringValidationRule(true));
+        const itemRule = new ValidationRule(item => typeof item === "string" && GameServerId.isServerId(item));
+        const rule = new ListValidationRule(itemRule);
 
         return new ValidationRule(
-            item => rule.isValid(item.serverIds) && item.serverIds.length > 0 && item.serverIds.length <= 2,
-            "serverIds must be an array of strings"
+            item => Array.isArray(item) && 0 < item.serverIds.length && item.serverIds.length <= 2 && new Set(item).size === item.length && rule.isValid(item.serverIds),
+            "serverIds must be an array of unique valid server ids; 0 < serverIds.length <= 2"
         );
     }
 

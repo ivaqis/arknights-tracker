@@ -1,6 +1,6 @@
 export enum GameServerId {
-    EUROPE = "2",
-    ASIA = "3"
+    ASIA = "2",
+    EUROPE = "3"
 }
 
 export namespace GameServerId {
