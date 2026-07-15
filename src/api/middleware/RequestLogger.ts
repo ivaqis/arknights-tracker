@@ -23,6 +23,6 @@ export class RequestLogger extends Middleware<
     }
 
     protected async execute(): Promise<void> {
-        logger.info(`Request received: ${this.req.method.toUpperCase()} ${this.req.originalUrl}`);
+        logger.info(`[REQUEST RECEIVED] ${this.req.method.toUpperCase()} ${this.req.originalUrl}`);
     }
 }

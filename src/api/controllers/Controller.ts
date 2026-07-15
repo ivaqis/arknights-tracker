@@ -59,7 +59,7 @@ export abstract class Controller<
 
     protected async safeExecute(): Promise<void> {
         try {
-            logger.debug(`[${this.name}] [${this._req.baseUrl}/] Processing (${this._req.method} ${this._req.originalUrl})`);
+            logger.debug(`[${this.name}] [${this._req.baseUrl}/] PROCESSING (${this._req.method} ${this._req.originalUrl})`);
 
             await this.execute();
 
@@ -70,9 +70,9 @@ export abstract class Controller<
                     data: this._data
                 });
 
-            logger.info(`[${this.name}] [${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+            logger.info(`[${this.name}] [${this._req.baseUrl}/] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         } catch (e) {
-            logger.error(`[${this.name}] [${this._req.baseUrl}/] Error on controller ${this._req.method} ${this._req.originalUrl}\n${e}`);
+            logger.error(`[${this.name}] [${this._req.baseUrl}/] ${this._req.method} ${this._req.originalUrl}\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -84,7 +84,7 @@ export abstract class Controller<
                 data: null
             });
 
-            logger.info(`[${this.name}] [${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
+            logger.info(`[${this.name}] [${this._req.baseUrl}/] SENT ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         }
     }
 }
