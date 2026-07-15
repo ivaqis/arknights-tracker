@@ -58,6 +58,8 @@ export abstract class Middleware<
 
     protected async safeExecute(): Promise<void> {
         try {
+            logger.debug(`[${this._req.baseUrl}/] Processing (${this._req.method} ${this._req.originalUrl})`);
+
             await this.execute();
 
             if (this._status !== 200) {
@@ -65,11 +67,15 @@ export abstract class Middleware<
                     message: this._message,
                     data: this._data
                 });
+
+                logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
             } else {
+                logger.debug(`[${this._req.baseUrl}/] Next called: (${this._req.method} ${this._req.originalUrl})`);
+
                 this.next();
             }
         } catch (e) {
-            logger.error(`Middleware: ${e}`);
+            logger.error(`[${this._req.baseUrl}/] Error on middleware: (${this._req.method} ${this._req.originalUrl})\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -80,6 +86,8 @@ export abstract class Middleware<
                 message: "Internal Server Error",
                 data: null
             });
+
+            logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         }
     }
 }

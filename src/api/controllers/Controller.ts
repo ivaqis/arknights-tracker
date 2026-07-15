@@ -57,6 +57,8 @@ export abstract class Controller<
 
     protected async safeExecute(): Promise<void> {
         try {
+            logger.debug(`[${this._req.baseUrl}/] Processing (${this._req.method} ${this._req.originalUrl})`);
+
             await this.execute();
 
             this.res
@@ -65,8 +67,10 @@ export abstract class Controller<
                     message: this._message,
                     data: this._data
                 });
+
+            logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         } catch (e) {
-            logger.error(e);
+            logger.error(`[${this._req.baseUrl}/] Error on controller ${this._req.method} ${this._req.originalUrl}\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -77,6 +81,8 @@ export abstract class Controller<
                 message: "Internal Server Error",
                 data: null
             });
+
+            logger.info(`[${this._req.baseUrl}/] Response sent: ${this.status} ${this._req.method} ${this._req.originalUrl}`);
         }
     }
 }
