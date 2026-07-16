@@ -154,5 +154,11 @@ export const buildings = {
         "type": "crafter",
         "itemId": "item_port_phase_trans_2",
         "iconId": "icon_port_transmuter_2"
+    },
+    "gas_pump_1": {
+        "id": "gas_pump_1",
+        "type": "gasMiner",
+        "itemId": "item_port_gas_pump_1",
+        "iconId": "icon_port_gas_pump_1"
     }
 };
