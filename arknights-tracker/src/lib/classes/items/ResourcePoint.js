@@ -25,6 +25,7 @@ export class ResourcePoint {
         switch (this.type) {
             case "mine": return "item_icon_bg_miner";
             case "liquid": return "item_icon_bg_liquid";
+            case "gas": return "item_icon_bg_gas";
 
             default: return null;
         }

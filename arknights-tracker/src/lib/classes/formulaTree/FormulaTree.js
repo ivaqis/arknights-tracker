@@ -1,8 +1,10 @@
+import { GasMiner } from "$lib/classes/buildings/GasMiner.js";
 import { Miner } from "$lib/classes/buildings/Miner.js";
 import { Pump } from "$lib/classes/buildings/Pump.js";
 import { HubCraft } from "$lib/classes/crafts/HubCraft.js";
 import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
 import { ManualCraft } from "$lib/classes/crafts/ManualCraft.js";
+import { GasMinerSearcher } from "$lib/classes/crafts/searchers/GasMinerSearcher.js";
 import { HubCraftSearcher } from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
 import { MachineCraftSearcher } from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
 import { ManualCraftSearcher } from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
@@ -16,6 +18,7 @@ export class FormulaTree {
     _hubCraftSearcher = new HubCraftSearcher();
     _minerSearcher = new MinerSearcher();
     _pumpSearcher = new PumpSearcher();
+    _gasMinerSearcher = new GasMinerSearcher();
 
     _maxLayer = 0;
     _maxStage = 0;
@@ -133,6 +136,13 @@ export class FormulaTree {
                     itemId
                 );
                 node.addChildNode(childNode);
+            } else if (formula?.formulaType === "gasMiningFormula") {
+                let itemId = formula.miningItemId;
+                let childNode = new ResourcePointNode(
+                    node,
+                    itemId
+                );
+                node.addChildNode(childNode);
             }
         }
 
@@ -240,6 +250,7 @@ export class FormulaTree {
     _getFirstFormula(item) {
         if (item.groupId === "nature" && item.type === "liquid") {
             return this._getFirstMiningFormula(item.id)
+                || this._getFirstGasMiningFormula(item.id)
                 || this._getFirstPumpingFormula(item.id)
                 || this._getFirstMachineCraft(item.id)
                 || this._getFirstManualCraft(item.id)
@@ -248,6 +259,7 @@ export class FormulaTree {
         }
 
         return this._getFirstMiningFormula(item.id)
+            || this._getFirstGasMiningFormula(item.id)
             || this._getFirstMachineCraft(item.id)
             || this._getFirstPumpingFormula(item.id)
             || this._getFirstManualCraft(item.id)
@@ -299,6 +311,17 @@ export class FormulaTree {
         let pump = Pump.getPump(pumpId);
 
         return pump.getPumpingFormula(itemId);
+    }
+
+    _getFirstGasMiningFormula(itemId) {
+        let result = this._gasMinerSearcher.searchByItemAsOutcome(itemId);
+
+        if (result.isEmpty()) return null;
+
+        let minerId = result.buildingIdList[0];
+        let gasMiner = GasMiner.getGasMiner(minerId);
+
+        return gasMiner.getMiningFormula(itemId);
     }
 }
 

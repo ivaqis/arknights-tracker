@@ -1,29 +1,30 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { Item } from "$lib/classes/items/Item.js";
-    import { MachineCraftSearcher } from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
-    import { ManualCraftSearcher } from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
-    import { HubCraftSearcher } from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
-    import { MinerSearcher } from "$lib/classes/crafts/searchers/MinerSearcher.js";
-    import { PumpSearcher } from "$lib/classes/crafts/searchers/PumpSearcher.js";
     import { Building } from "$lib/classes/buildings/Building.js";
     import { Crafter } from "$lib/classes/buildings/Crafter.js";
+    import { GasMiner } from "$lib/classes/buildings/GasMiner.js";
     import { Miner } from "$lib/classes/buildings/Miner.js";
+    import { PowerStation } from "$lib/classes/buildings/PowerStation.js";
     import { Pump } from "$lib/classes/buildings/Pump.js";
+    import { HubCraft } from "$lib/classes/crafts/HubCraft.js";
     import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
     import { ManualCraft } from "$lib/classes/crafts/ManualCraft.js";
-    import { HubCraft } from "$lib/classes/crafts/HubCraft.js";
-    import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
-    import { PowerStation } from "$lib/classes/buildings/PowerStation.js";
-    import { PowerStationSearcher } from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
     import { PowerFormula } from "$lib/classes/crafts/PowerFormula.js";
+    import { GasMinerSearcher } from "$lib/classes/crafts/searchers/GasMinerSearcher.js";
+    import { HubCraftSearcher } from "$lib/classes/crafts/searchers/HubCraftSearcher.js";
+    import { MachineCraftSearcher } from "$lib/classes/crafts/searchers/MachineCraftSearcher.js";
+    import { ManualCraftSearcher } from "$lib/classes/crafts/searchers/ManualCraftSearcher.js";
+    import { MinerSearcher } from "$lib/classes/crafts/searchers/MinerSearcher.js";
+    import { PowerStationSearcher } from "$lib/classes/crafts/searchers/PowerStationSearcher.js";
+    import { PumpSearcher } from "$lib/classes/crafts/searchers/PumpSearcher.js";
     import { Fuel } from "$lib/classes/items/Fuel.js";
-    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
-
-    import Formula from "$lib/components/recipes/Formula.svelte";
+    import { Item } from "$lib/classes/items/Item.js";
+    import { ResourcePoint } from "$lib/classes/items/ResourcePoint.js";
     import Icon from "$lib/components/Icon.svelte";
-    import SidebarSectorLabel from "$lib/components/recipes/SidebarSectorLabel.svelte";
+    import Formula from "$lib/components/recipes/Formula.svelte";
     import SidebarCraftSourceLabel from "$lib/components/recipes/SidebarCraftSourceLabel.svelte";
+    import SidebarSectorLabel from "$lib/components/recipes/SidebarSectorLabel.svelte";
+    import { t } from "$lib/i18n";
+    import { getRecipeTreeLinkParameters } from "$lib/utils/linkUtils.js";
 
     export let currentItemId = ""; // only if mode is "recipes" or "tree"
     export let currentBuildingId = ""; // only if mode is "building"
@@ -49,6 +50,7 @@
     const manualCraftSearcher = new ManualCraftSearcher();
     const hubCraftSearcher = new HubCraftSearcher();
     const minerSearcher = new MinerSearcher();
+    const gasMinerSearcher = new GasMinerSearcher();
     const pumpSearcher = new PumpSearcher();
     const powerStationSearcher = new PowerStationSearcher();
 
@@ -63,6 +65,7 @@
     let machineCraftSearchResultAsCrafter;
 
     let minerSearchResult;
+    let gasMinerSearchResult;
     let pumpSearchResult;
     let powerStationSearchResult;
 
@@ -70,6 +73,7 @@
     $: buildingId = building?.id;
     $: isCrafter = Crafter.isCrafter(buildingId ?? "");
     $: miner = Miner.getMiner(buildingId ?? "");
+    $: gasMiner = GasMiner.getGasMiner(buildingId ?? "");
     $: pump = Pump.getPump(buildingId ?? "");
     $: powerStation = PowerStation.getPowerStation(buildingId ?? "");
 
@@ -84,6 +88,7 @@
         hubCraftSearchResultAsOutcome = hubCraftSearcher.searchByItemAsOutcome(item.id);
 
         minerSearchResult = minerSearcher.searchByItemAsOutcome(item.id);
+        gasMinerSearchResult = gasMinerSearcher.searchByItemAsOutcome(item.id);
         pumpSearchResult = pumpSearcher.searchByItemAsOutcome(item.id);
         powerStationSearchResult = powerStationSearcher.searchByItemAsIncome(item.id);
 
@@ -96,6 +101,7 @@
         || !(manualCraftSearchResultAsOutcome?.isEmpty() ?? true)
         || !(hubCraftSearchResultAsOutcome?.isEmpty() ?? true)
         || !(minerSearchResult?.isEmpty() ?? true)
+        || !(gasMinerSearchResult?.isEmpty() ?? true)
         || !(pumpSearchResult?.isEmpty() ?? true);
 
     $: hasIncomeFormulas = !(machineCraftSearchResultAsIncome?.isEmpty() ?? true)
@@ -251,6 +257,26 @@
 
                                 <Formula
                                     formula={Miner.getMiner(minerId).getMiningFormula(item.id)}
+                                    highlightItemId={item.id}
+                                    itemsAsLink={isRecipesMode || isBuildingMode}
+                                    formulaAsButton={isTreeMode}
+                                    onClick={handleFormulaClick}
+                                />
+
+                            {/if}
+                        {/each}
+
+                        {#each gasMinerSearchResult.buildingIdList as gasMinerId}
+                            {#if (ResourcePoint.isItemResourcePoint(item.id))}
+
+                                <SidebarCraftSourceLabel
+                                    text={$t(`buildingNames.${gasMinerId}`)}
+                                    iconId={GasMiner.getGasMiner(gasMinerId).iconId}
+                                    iconVariant="building-icon"
+                                />
+
+                                <Formula
+                                    formula={GasMiner.getGasMiner(gasMinerId).getMiningFormula(item.id)}
                                     highlightItemId={item.id}
                                     itemsAsLink={isRecipesMode || isBuildingMode}
                                     formulaAsButton={isTreeMode}
@@ -424,6 +450,24 @@
                             {#if (ResourcePoint.isItemResourcePoint(itemId))}
                                 <Formula
                                     formula={miner.getMiningFormula(itemId)}
+                                    highlightItemId={item.id}
+                                    itemsAsLink={true}
+                                />
+                            {/if}
+                        {/each}
+
+                    </div>
+                {/if}
+
+                {#if isRecipesMode && gasMiner}
+                    <div class="flex flex-col justify-start w-full gap-3">
+
+                        <SidebarSectorLabel text={$t("formulaSidebar.sector.resourceCollection")}/>
+
+                        {#each gasMiner.mineableItemIds as itemId}
+                            {#if (ResourcePoint.isItemResourcePoint(itemId))}
+                                <Formula
+                                    formula={gasMiner.getMiningFormula(itemId)}
                                     highlightItemId={item.id}
                                     itemsAsLink={true}
                                 />

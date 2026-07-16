@@ -1,10 +1,11 @@
-import {machineCrafts} from "$lib/data/crafts/machineCrafts.js";
-import {manualCrafts} from "$lib/data/crafts/manualCrafts.js";
-import {hubCrafts} from "$lib/data/crafts/hubCrafts.js";
-import {miners} from "$lib/data/buildings/miners.js";
-import {pumps} from "$lib/data/buildings/pumps.js";
-import {powerStations} from "$lib/data/buildings/powerStations.js";
-import {fuel} from "$lib/data/items/fuel.js";
+import { gasMiners } from "$lib/data/buildings/gasMiners.js";
+import { miners } from "$lib/data/buildings/miners.js";
+import { powerStations } from "$lib/data/buildings/powerStations.js";
+import { pumps } from "$lib/data/buildings/pumps.js";
+import { hubCrafts } from "$lib/data/crafts/hubCrafts.js";
+import { machineCrafts } from "$lib/data/crafts/machineCrafts.js";
+import { manualCrafts } from "$lib/data/crafts/manualCrafts.js";
+import { fuel } from "$lib/data/items/fuel.js";
 
 export const machineCraftItemAsIncome = getCraftItemAs("ingredients", machineCrafts);
 export const machineCraftItemAsOutcome = getCraftItemAs("outcomes", machineCrafts);
@@ -16,6 +17,8 @@ export const hubCraftItemAsIncome = getCraftItemAs("ingredients", hubCrafts);
 export const hubCraftItemAsOutcome = getCraftItemAs("outcomes", hubCrafts);
 
 export const miningItemId2MinerId = getMiningItemId2MinerId();
+
+export const gasId2GasMinerId = getGasId2GasMinerId();
 
 export const pumpingItemId2PumpId = getPumpingItemId2PumpId();
 
@@ -33,6 +36,24 @@ function getCraftItemAs(fieldName, table) {
             if (!map.hasOwnProperty(itemId)) map[itemId] = [];
 
             map[itemId].push(formulaId);
+        }
+    }
+
+    return map;
+}
+
+function getGasId2GasMinerId() {
+    let map = {};
+
+    for (let obj of Object.values(gasMiners)) {
+        let minerId = obj.id;
+
+        for (let mineable of Object.values(obj.mineable)) {
+            let itemId = mineable.miningItemId;
+
+            if (!map.hasOwnProperty(itemId)) map[itemId] = [];
+
+            map[itemId].push(minerId)
         }
     }
 

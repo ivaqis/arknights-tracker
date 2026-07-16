@@ -3,7 +3,7 @@
     import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import FuelEnergyCard from "$lib/components/recipes/FuelEnergyCard.svelte";
-    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
+    import { getRecipeTreeLinkParameters } from "$lib/utils/linkUtils.js";
 
     export let formula;
     export let highlightItemId = "";
@@ -32,6 +32,23 @@
     }
 
     $: if (mode === "miningFormula") {
+        if (formula.hasConsumeItem()) {
+            ingredients = [{
+                count: formula.consumeItemCount,
+                itemId: formula.consumeItemId
+            }];
+        } else {
+            ingredients = [];
+        }
+        outcomes = [{
+            count: 1,
+            itemId: formula.miningItemId
+        }];
+        craftTimeMs = formula.miningTimeMs;
+        resourceItemId = formula.miningItemId;
+    }
+
+    $: if (mode === "gasMiningFormula") {
         if (formula.hasConsumeItem()) {
             ingredients = [{
                 count: formula.consumeItemCount,
@@ -110,6 +127,32 @@
             {/each}
 
         {:else if (mode === "miningFormula")}
+
+            <ResourcePointCard
+                itemId={resourceItemId}
+                size="micro"
+                showTooltip={true}
+            />
+
+            {#each ingredients as {count, itemId}}
+                <div class="flex items-center justify-center">
+                        <span class="font-sdk text-xl text-[#21272C] dark:text-[#FDFDFD]">
+                            +
+                        </span>
+                </div>
+
+                <ItemStackCard
+                    itemId={itemId}
+                    amount={count}
+                    size="micro"
+                    highlight={highlightItemId === itemId}
+                    showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
+                />
+            {/each}
+
+        {:else if (mode === "gasMiningFormula")}
 
             <ResourcePointCard
                 itemId={resourceItemId}
