@@ -28,4 +28,4 @@ export const pumps = {
             "item_liquid_acid"
         ]
     }
-}
+};

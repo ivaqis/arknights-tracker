@@ -5412,5 +5412,969 @@ export const machineCrafts = {
             }
         ],
         "craftTimeMs": 2000
+    },
+    "component_copper_enr2_cmpt_1": {
+        "id": "component_copper_enr2_cmpt_1",
+        "formulaGroupId": "group_component_normal",
+        "buildingId": "component_mc_1",
+        "ingredients": [
+            {
+                "count": 5,
+                "itemId": "item_copper_enr2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "dismantler_copperjar_gas_acid_1": {
+        "id": "dismantler_copperjar_gas_acid_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_acid"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_acid"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_copper_1": {
+        "id": "dismantler_copperjar_gas_copper_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_copper_enr2_1": {
+        "id": "dismantler_copperjar_gas_copper_enr2_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper_enr2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr2"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_copper_enr_1": {
+        "id": "dismantler_copperjar_gas_copper_enr_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_inert_1": {
+        "id": "dismantler_copperjar_gas_inert_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_inert"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_water_1": {
+        "id": "dismantler_copperjar_gas_water_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_water"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_xiranite_1": {
+        "id": "dismantler_copperjar_gas_xiranite_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "dismantler_copperjar_gas_xiranite_enr_1": {
+        "id": "dismantler_copperjar_gas_xiranite_enr_1",
+        "formulaGroupId": "group_dismantler_gasliquid",
+        "buildingId": "dismantler_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_xiranite_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_copper_enr2_1": {
+        "id": "filling_copperjar_copper_enr2_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper_enr2"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_acid_1": {
+        "id": "filling_copperjar_gas_acid_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_acid"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_acid"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_copper_1": {
+        "id": "filling_copperjar_gas_copper_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_copper_enr_1": {
+        "id": "filling_copperjar_gas_copper_enr_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_inert_1": {
+        "id": "filling_copperjar_gas_inert_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_inert"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_water_1": {
+        "id": "filling_copperjar_gas_water_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_water"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_xiranite_1": {
+        "id": "filling_copperjar_gas_xiranite_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_xiranite"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "filling_copperjar_gas_xiranite_enr_1": {
+        "id": "filling_copperjar_gas_xiranite_enr_1",
+        "formulaGroupId": "group_filling_gasliquid",
+        "buildingId": "filling_powder_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gasjar_copper_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "gas_reactor_gas_copper_enr2_1": {
+        "id": "gas_reactor_gas_copper_enr2_1",
+        "formulaGroupId": "group_gas_reactor_gas",
+        "buildingId": "gas_reactor_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper_enr"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr2"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_purifier_gas_copper_enr_1": {
+        "id": "liquid_purifier_gas_copper_enr_1",
+        "formulaGroupId": "group_liquid_purifier_gas",
+        "buildingId": "liquid_purifier_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper"
+            },
+            {
+                "count": 2,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_purifier_gas_copper_enr_2": {
+        "id": "liquid_purifier_gas_copper_enr_2",
+        "formulaGroupId": "group_liquid_purifier_gas",
+        "buildingId": "liquid_purifier_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper"
+            },
+            {
+                "count": 1,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_purifier_gas_xiranite_enr_1": {
+        "id": "liquid_purifier_gas_xiranite_enr_1",
+        "formulaGroupId": "group_liquid_purifier_gas",
+        "buildingId": "liquid_purifier_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_xiranite"
+            },
+            {
+                "count": 2,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_purifier_gas_xiranite_enr_2": {
+        "id": "liquid_purifier_gas_xiranite_enr_2",
+        "formulaGroupId": "group_liquid_purifier_gas",
+        "buildingId": "liquid_purifier_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_xiranite"
+            },
+            {
+                "count": 1,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_acid_1": {
+        "id": "liquid_transmuter_1_gas_gas_acid_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_acid"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_acid"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_copper_1": {
+        "id": "liquid_transmuter_1_gas_gas_copper_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_liquid_copper"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_copper_enr_1": {
+        "id": "liquid_transmuter_1_gas_gas_copper_enr_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_water_1": {
+        "id": "liquid_transmuter_1_gas_gas_water_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_water"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_xiranite_1": {
+        "id": "liquid_transmuter_1_gas_gas_xiranite_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_gas_gas_xiranite_enr_1": {
+        "id": "liquid_transmuter_1_gas_gas_xiranite_enr_1",
+        "formulaGroupId": "group_transmuter_1_gastrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_liquid_xiranite_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 5,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "liquid_transmuter_1_liquid_liquid_acid_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_acid_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_acid"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_acid"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_liquid_liquid_copper_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_copper_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_liquid_copper"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_liquid_liquid_copper_enr_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_copper_enr_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_liquid_liquid_water_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_water_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_liquid_liquid_xiranite_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_xiranite_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_liquid_xiranite"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_1_liquid_liquid_xiranite_enr_1": {
+        "id": "liquid_transmuter_1_liquid_liquid_xiranite_enr_1",
+        "formulaGroupId": "group_transmuter_1_liquidtrans",
+        "buildingId": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 5,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_liquid_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "liquid_transmuter_2_gas_gas_copper_1": {
+        "id": "liquid_transmuter_2_gas_gas_copper_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_copper_nugget"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_gas_gas_copper_enr2_1": {
+        "id": "liquid_transmuter_2_gas_gas_copper_enr2_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr2"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_gas_gas_copper_enr_1": {
+        "id": "liquid_transmuter_2_gas_gas_copper_enr_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_gas_gas_xiranite_1": {
+        "id": "liquid_transmuter_2_gas_gas_xiranite_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_gas_gas_xiranite_enr_1": {
+        "id": "liquid_transmuter_2_gas_gas_xiranite_enr_1",
+        "formulaGroupId": "group_transmuter_2_gastrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_xiranite_enr_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 5,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "liquid_transmuter_2_solid_copper_enr2_1": {
+        "id": "liquid_transmuter_2_solid_copper_enr2_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper_enr2"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr2"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_solid_copper_enr_1": {
+        "id": "liquid_transmuter_2_solid_copper_enr_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_gas_copper_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_solid_copper_nugget_1": {
+        "id": "liquid_transmuter_2_solid_copper_nugget_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_copper"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_copper_nugget"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "liquid_transmuter_2_solid_xiranite_enr_powder_1": {
+        "id": "liquid_transmuter_2_solid_xiranite_enr_powder_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 5,
+                "itemId": "item_gas_xiranite_enr"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_xiranite_enr_powder"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "liquid_transmuter_2_solid_xiranite_powder_1": {
+        "id": "liquid_transmuter_2_solid_xiranite_powder_1",
+        "formulaGroupId": "group_transmuter_2_solidtrans",
+        "buildingId": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_gas_xiranite"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "shaper_gas_copper_jar_1": {
+        "id": "shaper_gas_copper_jar_1",
+        "formulaGroupId": "group_shaper_gas",
+        "buildingId": "shaper_1",
+        "ingredients": [
+            {
+                "count": 2,
+                "itemId": "item_copper_nugget"
+            },
+            {
+                "count": 1,
+                "itemId": "item_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "tools_proc_filter_core_2": {
+        "id": "tools_proc_filter_core_2",
+        "formulaGroupId": "group_tools_normal",
+        "buildingId": "tools_assebling_mc_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_jar"
+            },
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
+    "winder_equip_script_4_3": {
+        "id": "winder_equip_script_4_3",
+        "formulaGroupId": "group_winder_normal",
+        "buildingId": "winder_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_copper_enr2_cmpt"
+            },
+            {
+                "count": 2,
+                "itemId": "item_xiranite_enr_powder"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_equip_script_4_3"
+            }
+        ],
+        "craftTimeMs": 10000
+    },
+    "xiranite_oven_xiranite_powder_2": {
+        "id": "xiranite_oven_xiranite_powder_2",
+        "formulaGroupId": "group_xiranite_oven_gasliquid",
+        "buildingId": "xiranite_oven_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "craftTimeMs": 2000
     }
-}
+};

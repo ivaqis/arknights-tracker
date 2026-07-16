@@ -14,6 +14,10 @@ export const crafters = {
             {
                 "formulaGroupId": "group_dismantler_liquid",
                 "modeName": "liquid"
+            },
+            {
+                "formulaGroupId": "group_dismantler_gasliquid",
+                "modeName": "gasliquid"
             }
         ]
     },
@@ -23,6 +27,10 @@ export const crafters = {
             {
                 "formulaGroupId": "group_liquid_purifier_liquid",
                 "modeName": "liquid"
+            },
+            {
+                "formulaGroupId": "group_liquid_purifier_gas",
+                "modeName": "gas"
             }
         ]
     },
@@ -36,6 +44,10 @@ export const crafters = {
             {
                 "formulaGroupId": "group_filling_liquid",
                 "modeName": "liquid"
+            },
+            {
+                "formulaGroupId": "group_filling_gasliquid",
+                "modeName": "gasliquid"
             }
         ]
     },
@@ -116,6 +128,10 @@ export const crafters = {
             {
                 "formulaGroupId": "group_shaper_normal",
                 "modeName": "normal"
+            },
+            {
+                "formulaGroupId": "group_shaper_gas",
+                "modeName": "gas"
             }
         ]
     },
@@ -152,7 +168,46 @@ export const crafters = {
             {
                 "formulaGroupId": "group_xiranite_oven_liquid",
                 "modeName": "liquid"
+            },
+            {
+                "formulaGroupId": "group_xiranite_oven_gasliquid",
+                "modeName": "gasliquid"
+            }
+        ]
+    },
+    "gas_reactor_1": {
+        "id": "gas_reactor_1",
+        "modeMap": [
+            {
+                "formulaGroupId": "group_gas_reactor_gas",
+                "modeName": "gas"
+            }
+        ]
+    },
+    "transmuter_1": {
+        "id": "transmuter_1",
+        "modeMap": [
+            {
+                "formulaGroupId": "group_transmuter_1_gastrans",
+                "modeName": "gastrans"
+            },
+            {
+                "formulaGroupId": "group_transmuter_1_liquidtrans",
+                "modeName": "liquidtrans"
+            }
+        ]
+    },
+    "transmuter_2": {
+        "id": "transmuter_2",
+        "modeMap": [
+            {
+                "formulaGroupId": "group_transmuter_2_gastrans",
+                "modeName": "gastrans"
+            },
+            {
+                "formulaGroupId": "group_transmuter_2_solidtrans",
+                "modeName": "solidtrans"
             }
         ]
     }
-}
+};

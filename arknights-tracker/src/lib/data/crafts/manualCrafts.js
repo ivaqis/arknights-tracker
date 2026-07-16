@@ -1526,5 +1526,357 @@ export const manualCrafts = {
                 "itemId": "item_jzmonk_1_hsmob_1_1"
             }
         ]
+    },
+    "hdwk_klbuds_1_hsfly_1_1": {
+        "id": "hdwk_klbuds_1_hsfly_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_klbuds_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_hsfly_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_klbuds_1_hsfly_1_1"
+            }
+        ]
+    },
+    "hdwk_klcreatures_1_wgthorns_1_1": {
+        "id": "hdwk_klcreatures_1_wgthorns_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_drop_klcreatures_1"
+            },
+            {
+                "count": 1,
+                "itemId": "item_drop_wgthorns_1"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_klcreatures_1_wgthorns_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_crylplant_1_1": {
+        "id": "hdwk_plant_crylplant_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_crylplant_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_crylplant_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_crylplant_1_1_ap": {
+        "id": "hdwk_plant_crylplant_1_1_ap",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_crylplant_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_crylplant_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_crylplant_1_2": {
+        "id": "hdwk_plant_crylplant_1_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_crylplant_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_crylplant_1_2"
+            }
+        ]
+    },
+    "hdwk_plant_crylplant_1_2_ap": {
+        "id": "hdwk_plant_crylplant_1_2_ap",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_crylplant_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_crylplant_1_2"
+            }
+        ]
+    },
+    "hdwk_plant_mushroom_1_1": {
+        "id": "hdwk_plant_mushroom_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_mushroom_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_mushroom_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_mushroom_1_1_ap": {
+        "id": "hdwk_plant_mushroom_1_1_ap",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_mushroom_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_mushroom_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_mushroom_1_2": {
+        "id": "hdwk_plant_mushroom_1_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_mushroom_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_mushroom_1_2"
+            }
+        ]
+    },
+    "hdwk_plant_mushroom_1_2_ap": {
+        "id": "hdwk_plant_mushroom_1_2_ap",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_mushroom_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_mushroom_1_2"
+            }
+        ]
+    },
+    "hdwk_plant_spcstone_1_1": {
+        "id": "hdwk_plant_spcstone_1_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_spcstone_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_spcstone_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_spcstone_1_1_sp": {
+        "id": "hdwk_plant_spcstone_1_1_sp",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_spcstone_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_spcstone_1_1"
+            }
+        ]
+    },
+    "hdwk_plant_spcstone_1_2": {
+        "id": "hdwk_plant_spcstone_1_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_spcstone_1_3"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 2,
+                "itemId": "item_plant_spcstone_1_2"
+            }
+        ]
+    },
+    "hdwk_plant_spcstone_1_2_sp": {
+        "id": "hdwk_plant_spcstone_1_2_sp",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_plant_spcstone_1_3"
+            },
+            {
+                "count": 10,
+                "itemId": "item_ap"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 3,
+                "itemId": "item_plant_spcstone_1_2"
+            }
+        ]
+    },
+    "item_device_balloon_recycle_1": {
+        "id": "item_device_balloon_recycle_1",
+        "ingredients": [
+            {
+                "count": 10,
+                "itemId": "item_gasjar_copper_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_balloon_recycle_1"
+            }
+        ]
+    },
+    "item_device_balloon_recycle_2": {
+        "id": "item_device_balloon_recycle_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_device_balloon_recycle_1"
+            },
+            {
+                "count": 50,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_balloon_recycle_2"
+            }
+        ]
+    },
+    "item_device_balloon_recycle_3": {
+        "id": "item_device_balloon_recycle_3",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_device_balloon_recycle_2"
+            },
+            {
+                "count": 10,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_balloon_recycle_3"
+            }
+        ]
+    },
+    "item_device_xiranite_nexus_2": {
+        "id": "item_device_xiranite_nexus_2",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_device_xiranite_nexus_1"
+            },
+            {
+                "count": 20,
+                "itemId": "item_gasjar_copper_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_xiranite_nexus_2"
+            }
+        ]
+    },
+    "item_device_xiranite_nexus_3": {
+        "id": "item_device_xiranite_nexus_3",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_device_xiranite_nexus_2"
+            },
+            {
+                "count": 50,
+                "itemId": "item_gasjar_copper_gas_xiranite"
+            },
+            {
+                "count": 50,
+                "itemId": "item_filter_core"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_xiranite_nexus_3"
+            }
+        ]
+    },
+    "item_device_xiranite_radar_1": {
+        "id": "item_device_xiranite_radar_1",
+        "ingredients": [
+            {
+                "count": 20,
+                "itemId": "item_gasjar_copper_gas_inert"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_device_xiranite_radar_1"
+            }
+        ]
     }
 };

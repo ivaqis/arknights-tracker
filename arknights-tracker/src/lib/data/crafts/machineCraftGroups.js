@@ -9,7 +9,8 @@ export const machineCraftGroups = {
             "component_copper_cmpt_1",
             "component_copper_enr_cmpt_1",
             "component_activity_xiranite_cmpt_1",
-            "component_activity_xiranite_enr_cmpt_1"
+            "component_activity_xiranite_enr_cmpt_1",
+            "component_copper_enr2_cmpt_1"
         ]
     },
     "group_dismantler_liquid": {
@@ -253,9 +254,10 @@ export const machineCraftGroups = {
             "tools_proc_food_5_1",
             "tools_proc_battery_4_1",
             "tools_proc_battery_5_1",
-            "tools_proc_activity_xiranite_enr_tool_1",
             "tools_proc_activity_xiranite_hulu_1",
-            "tools_proc_activity_xiranite_enr_hulu_1"
+            "tools_proc_activity_xiranite_enr_hulu_1",
+            "tools_proc_activity_xiranite_enr_tool_1",
+            "tools_proc_filter_core_2"
         ]
     },
     "group_liquid_purifier_liquid": {
@@ -301,7 +303,8 @@ export const machineCraftGroups = {
             "winder_equip_script_3",
             "winder_equip_script_4",
             "winder_equip_script_4_1",
-            "winder_equip_script_4_2"
+            "winder_equip_script_4_2",
+            "winder_equip_script_4_3"
         ]
     },
     "group_planter_normal": {
@@ -345,5 +348,236 @@ export const machineCraftGroups = {
             "thickener_plant_moss_enr_powder_1_1",
             "thickener_plant_moss_enr_powder_2_1"
         ]
+    },
+    "group_dismantler_gasliquid": {
+        "id": "group_dismantler_gasliquid",
+        "craftList": [
+            "dismantler_copperjar_gas_water_1",
+            "dismantler_copperjar_gas_acid_1",
+            "dismantler_copperjar_gas_xiranite_1",
+            "dismantler_copperjar_gas_xiranite_enr_1",
+            "dismantler_copperjar_gas_inert_1",
+            "dismantler_copperjar_gas_copper_1",
+            "dismantler_copperjar_gas_copper_enr_1",
+            "dismantler_copperjar_gas_copper_enr2_1",
+            "dismantler_glass_water_1",
+            "dismantler_glass_acid_1",
+            "dismantler_glass_sewage_1",
+            "dismantler_glass_grass_1_1",
+            "dismantler_glass_grass_2_1",
+            "dismantler_glass_xiranite_1",
+            "dismantler_glass_xiranite_enr_1",
+            "dismantler_glass_xiranite_poly_1",
+            "dismantler_glass_xiranite_lowpoly_1",
+            "dismantler_glass_copper_1",
+            "dismantler_glass_copper_enr_1",
+            "dismantler_glassenr_water_1",
+            "dismantler_glassenr_acid_1",
+            "dismantler_glassenr_sewage_1",
+            "dismantler_glassenr_grass_1_1",
+            "dismantler_glassenr_grass_2_1",
+            "dismantler_glassenr_xiranite_1",
+            "dismantler_glassenr_xiranite_enr_1",
+            "dismantler_glassenr_xiranite_poly_1",
+            "dismantler_glassenr_xiranite_lowpoly_1",
+            "dismantler_glassenr_copper_1",
+            "dismantler_glassenr_copper_enr_1",
+            "dismantler_iron_water_1",
+            "dismantler_iron_acid_1",
+            "dismantler_iron_sewage_1",
+            "dismantler_iron_grass_1_1",
+            "dismantler_iron_grass_2_1",
+            "dismantler_iron_xiranite_1",
+            "dismantler_iron_xiranite_enr_1",
+            "dismantler_iron_xiranite_poly_1",
+            "dismantler_iron_xiranite_lowpoly_1",
+            "dismantler_iron_copper_1",
+            "dismantler_iron_copper_enr_1",
+            "dismantler_ironenr_water_1",
+            "dismantler_ironenr_acid_1",
+            "dismantler_ironenr_sewage_1",
+            "dismantler_ironenr_grass_1_1",
+            "dismantler_ironenr_grass_2_1",
+            "dismantler_ironenr_xiranite_1",
+            "dismantler_ironenr_xiranite_enr_1",
+            "dismantler_ironenr_xiranite_poly_1",
+            "dismantler_ironenr_xiranite_lowpoly_1",
+            "dismantler_ironenr_copper_1",
+            "dismantler_ironenr_copper_enr_1",
+            "dismantler_copper_water_1",
+            "dismantler_copper_acid_1",
+            "dismantler_copper_sewage_1",
+            "dismantler_copper_grass_1_1",
+            "dismantler_copper_grass_2_1",
+            "dismantler_copper_xiranite_1",
+            "dismantler_copper_xiranite_enr_1",
+            "dismantler_copper_xiranite_poly_1",
+            "dismantler_copper_xiranite_lowpoly_1",
+            "dismantler_copper_copper_1",
+            "dismantler_copper_copper_enr_1",
+            "dismantler_copperenr_water_1",
+            "dismantler_copperenr_acid_1",
+            "dismantler_copperenr_sewage_1",
+            "dismantler_copperenr_grass_1_1",
+            "dismantler_copperenr_grass_2_1",
+            "dismantler_copperenr_xiranite_1",
+            "dismantler_copperenr_xiranite_enr_1",
+            "dismantler_copperenr_xiranite_poly_1",
+            "dismantler_copperenr_xiranite_lowpoly_1",
+            "dismantler_copperenr_copper_1",
+            "dismantler_copperenr_copper_enr_1"
+        ]
+    },
+    "group_filling_gasliquid": {
+        "id": "group_filling_gasliquid",
+        "craftList": [
+            "filling_copperjar_gas_water_1",
+            "filling_copperjar_gas_acid_1",
+            "filling_copperjar_gas_xiranite_1",
+            "filling_copperjar_gas_xiranite_enr_1",
+            "filling_copperjar_gas_inert_1",
+            "filling_copperjar_gas_copper_1",
+            "filling_copperjar_gas_copper_enr_1",
+            "filling_copperjar_copper_enr2_1",
+            "filling_bottled_glass_water",
+            "filling_bottled_glass_acid",
+            "filling_bottled_glass_sewage",
+            "filling_bottled_glass_grass_1",
+            "filling_bottled_glass_grass_2",
+            "filling_bottled_glass_xiranite",
+            "filling_bottled_glass_xiranite_enr",
+            "filling_bottled_glass_xiranite_poly",
+            "filling_bottled_glass_xiranite_lowpoly",
+            "filling_bottled_glass_copper",
+            "filling_bottled_glass_copper_enr",
+            "filling_bottled_glassenr_water",
+            "filling_bottled_glassenr_acid",
+            "filling_bottled_glassenr_sewage",
+            "filling_bottled_glassenr_grass_1",
+            "filling_bottled_glassenr_grass_2",
+            "filling_bottled_glassenr_xiranite",
+            "filling_bottled_glassenr_xiranite_enr",
+            "filling_bottled_glassenr_xiranite_poly",
+            "filling_bottled_glassenr_xiranite_lowpoly",
+            "filling_bottled_glassenr_copper",
+            "filling_bottled_glassenr_copper_enr",
+            "filling_bottled_iron_water",
+            "filling_bottled_iron_acid",
+            "filling_bottled_iron_sewage",
+            "filling_bottled_iron_grass_1",
+            "filling_bottled_iron_grass_2",
+            "filling_bottled_iron_xiranite",
+            "filling_bottled_iron_xiranite_enr",
+            "filling_bottled_iron_xiranite_poly",
+            "filling_bottled_iron_xiranite_lowpoly",
+            "filling_bottled_iron_copper",
+            "filling_bottled_iron_copper_enr",
+            "filling_bottled_ironenr_water",
+            "filling_bottled_ironenr_acid",
+            "filling_bottled_ironenr_sewage",
+            "filling_bottled_ironenr_grass_1",
+            "filling_bottled_ironenr_grass_2",
+            "filling_bottled_ironenr_xiranite",
+            "filling_bottled_ironenr_xiranite_enr",
+            "filling_bottled_ironenr_xiranite_poly",
+            "filling_bottled_ironenr_xiranite_lowpoly",
+            "filling_bottled_ironenr_copper",
+            "filling_bottled_ironenr_copper_enr",
+            "filling_bottled_copper_water",
+            "filling_bottled_copper_acid",
+            "filling_bottled_copper_sewage",
+            "filling_bottled_copper_grass_1",
+            "filling_bottled_copper_grass_2",
+            "filling_bottled_copper_xiranite",
+            "filling_bottled_copper_xiranite_enr",
+            "filling_bottled_copper_xiranite_poly",
+            "filling_bottled_copper_xiranite_lowpoly",
+            "filling_bottled_copper_copper",
+            "filling_bottled_copper_copper_enr",
+            "filling_bottled_copperenr_water",
+            "filling_bottled_copperenr_acid",
+            "filling_bottled_copperenr_sewage",
+            "filling_bottled_copperenr_grass_1",
+            "filling_bottled_copperenr_grass_2",
+            "filling_bottled_copperenr_xiranite",
+            "filling_bottled_copperenr_xiranite_enr",
+            "filling_bottled_copperenr_xiranite_poly",
+            "filling_bottled_copperenr_xiranite_lowpoly",
+            "filling_bottled_copperenr_copper",
+            "filling_bottled_copperenr_copper_enr",
+            "filling_bottled_xiranenr_grass_2"
+        ]
+    },
+    "group_gas_reactor_gas": {
+        "id": "group_gas_reactor_gas",
+        "craftList": [
+            "gas_reactor_gas_copper_enr2_1"
+        ]
+    },
+    "group_liquid_purifier_gas": {
+        "id": "group_liquid_purifier_gas",
+        "craftList": [
+            "liquid_purifier_gas_xiranite_enr_1",
+            "liquid_purifier_gas_xiranite_enr_2",
+            "liquid_purifier_gas_copper_enr_1",
+            "liquid_purifier_gas_copper_enr_2"
+        ]
+    },
+    "group_shaper_gas": {
+        "id": "group_shaper_gas",
+        "craftList": [
+            "shaper_gas_copper_jar_1"
+        ]
+    },
+    "group_transmuter_1_gastrans": {
+        "id": "group_transmuter_1_gastrans",
+        "craftList": [
+            "liquid_transmuter_1_gas_gas_water_1",
+            "liquid_transmuter_1_gas_gas_acid_1",
+            "liquid_transmuter_1_gas_gas_xiranite_1",
+            "liquid_transmuter_1_gas_gas_xiranite_enr_1",
+            "liquid_transmuter_1_gas_gas_copper_1",
+            "liquid_transmuter_1_gas_gas_copper_enr_1"
+        ]
+    },
+    "group_transmuter_1_liquidtrans": {
+        "id": "group_transmuter_1_liquidtrans",
+        "craftList": [
+            "liquid_transmuter_1_liquid_liquid_water_1",
+            "liquid_transmuter_1_liquid_liquid_acid_1",
+            "liquid_transmuter_1_liquid_liquid_xiranite_1",
+            "liquid_transmuter_1_liquid_liquid_xiranite_enr_1",
+            "liquid_transmuter_1_liquid_liquid_copper_1",
+            "liquid_transmuter_1_liquid_liquid_copper_enr_1"
+        ]
+    },
+    "group_transmuter_2_gastrans": {
+        "id": "group_transmuter_2_gastrans",
+        "craftList": [
+            "liquid_transmuter_2_gas_gas_xiranite_1",
+            "liquid_transmuter_2_gas_gas_xiranite_enr_1",
+            "liquid_transmuter_2_gas_gas_copper_1",
+            "liquid_transmuter_2_gas_gas_copper_enr_1",
+            "liquid_transmuter_2_gas_gas_copper_enr2_1"
+        ]
+    },
+    "group_transmuter_2_solidtrans": {
+        "id": "group_transmuter_2_solidtrans",
+        "craftList": [
+            "liquid_transmuter_2_solid_xiranite_powder_1",
+            "liquid_transmuter_2_solid_xiranite_enr_powder_1",
+            "liquid_transmuter_2_solid_copper_nugget_1",
+            "liquid_transmuter_2_solid_copper_enr_1",
+            "liquid_transmuter_2_solid_copper_enr2_1"
+        ]
+    },
+    "group_xiranite_oven_gasliquid": {
+        "id": "group_xiranite_oven_gasliquid",
+        "craftList": [
+            "xiranite_oven_xiranite_powder_1",
+            "xiranite_oven_xiranite_powder_2",
+            "xiranite_oven_xiranite_enr_powder_1",
+            "xiranite_oven_muck_xiranite_1"
+        ]
     }
-}
+};
