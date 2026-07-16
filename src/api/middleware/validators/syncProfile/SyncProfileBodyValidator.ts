@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
 import { GameServerId } from "@models/GameServerId";
 import { ListValidationRule } from "@models/validation/ListValidationRule";
