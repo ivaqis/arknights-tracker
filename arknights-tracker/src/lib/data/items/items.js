@@ -2972,7 +2972,7 @@ export const items = {
         "iconId": "item_copper_enr2",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
+        "type": "ingot",
         "material": "copper_enr"
     },
     "item_copper_enr2_cmpt": {

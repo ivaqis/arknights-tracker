@@ -165,10 +165,14 @@ export function getDefaultItemSortParams() {
             "localeName"
         ],
         sortFieldParams: {
-            itemGroups: ["nature", "product", "usable", "gatherable", "facility"],
+            itemGroups: ["nature", "product", "usable", "gatherable", "device", "nurturance", "facility", "other"],
             itemTypes: [
+                "spcstone",
+                "mushroom",
+                "crylplant",
                 "ore",
                 "liquid",
+                "gas",
                 "plant",
                 "plant_seed",
                 "plant_special",
@@ -180,10 +184,15 @@ export function getDefaultItemSortParams() {
                 "component",
                 "battery",
                 "bottle",
+                "jar",
+                "balloon_recycle",
                 "hulu",
                 "tool",
+                "xiranite_radar",
+                "xiranite_nexus",
                 "muck",
                 "full_bottle",
+                "full_gas_jar",
                 "bomb",
                 "hp_recovery",
                 "food",
@@ -191,16 +200,19 @@ export function getDefaultItemSortParams() {
                 "insect",
                 "drop",
                 "miner",
+                "gas_miner",
                 "pump",
                 "crafter",
                 "power",
                 "soil",
                 "battle",
+                "sanity",
                 "other"
             ],
             itemMaterials: [
                 "water",
                 "acid",
+                "inert",
                 "sewage",
                 "originium",
                 "amethyst",
@@ -230,7 +242,7 @@ export function getDefaultItemSortParams() {
                 "plant_sp_4",
                 "nonMaterial"
             ],
-            rarity: [1, 2, 3, 4, 5],
+            rarity: [1, 2, 3, 4, 5, 6],
             events: ["nonEvent", "ev4-v1.2"],
             localeName: "a-z"
         }
