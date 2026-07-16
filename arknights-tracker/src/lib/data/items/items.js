@@ -2734,5 +2734,413 @@ export const items = {
         "groupId": "usable",
         "type": "other",
         "material": null
+    },
+    "item_device_balloon_recycle_1": {
+        "id": "item_device_balloon_recycle_1",
+        "iconId": "item_device_balloon_recycle_1",
+        "rarity": 3,
+        "groupId": "device",
+        "type": "balloon_recycle",
+        "material": null
+    },
+    "item_device_balloon_recycle_2": {
+        "id": "item_device_balloon_recycle_2",
+        "iconId": "item_device_balloon_recycle_2",
+        "rarity": 4,
+        "groupId": "device",
+        "type": "balloon_recycle",
+        "material": null
+    },
+    "item_device_balloon_recycle_3": {
+        "id": "item_device_balloon_recycle_3",
+        "iconId": "item_device_balloon_recycle_3",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "balloon_recycle",
+        "material": null
+    },
+    "item_device_xiranite_nexus_1": {
+        "id": "item_device_xiranite_nexus_1",
+        "iconId": "item_device_xiranite_nexus_1",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "xiranite_nexus",
+        "material": null
+    },
+    "item_device_xiranite_nexus_2": {
+        "id": "item_device_xiranite_nexus_2",
+        "iconId": "item_device_xiranite_nexus_2",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "xiranite_nexus",
+        "material": null
+    },
+    "item_device_xiranite_nexus_3": {
+        "id": "item_device_xiranite_nexus_3",
+        "iconId": "item_device_xiranite_nexus_3",
+        "rarity": 5,
+        "groupId": "device",
+        "type": "xiranite_nexus",
+        "material": null
+    },
+    "item_device_xiranite_radar_1": {
+        "id": "item_device_xiranite_radar_1",
+        "iconId": "item_device_xiranite_radar_1",
+        "rarity": 4,
+        "groupId": "device",
+        "type": "xiranite_radar",
+        "material": null
+    },
+    "item_port_battle_lightning_2": {
+        "id": "item_port_battle_lightning_2",
+        "iconId": "item_port_battle_lightning_2",
+        "rarity": 5,
+        "groupId": "facility",
+        "type": "battle",
+        "material": null
+    },
+    "item_port_battle_turret_3": {
+        "id": "item_port_battle_turret_3",
+        "iconId": "item_port_battle_turret_3",
+        "rarity": 5,
+        "groupId": "facility",
+        "type": "battle",
+        "material": null
+    },
+    "item_port_gas_pump_1": {
+        "id": "item_port_gas_pump_1",
+        "iconId": "item_port_gas_pump_1",
+        "rarity": 2,
+        "groupId": "facility",
+        "type": "gas_miner",
+        "material": null
+    },
+    "item_port_gas_reactor_1": {
+        "id": "item_port_gas_reactor_1",
+        "iconId": "item_port_gas_reactor_1",
+        "rarity": 4,
+        "groupId": "facility",
+        "type": "crafter",
+        "material": null
+    },
+    "item_port_gas_storager_1": {
+        "id": "item_port_gas_storager_1",
+        "iconId": "item_port_gas_storager_1",
+        "rarity": 2,
+        "groupId": "facility",
+        "type": "other",
+        "material": null
+    },
+    "item_port_phase_trans_1": {
+        "id": "item_port_phase_trans_1",
+        "iconId": "item_port_phase_trans_1",
+        "rarity": 4,
+        "groupId": "facility",
+        "type": "crafter",
+        "material": null
+    },
+    "item_port_phase_trans_2": {
+        "id": "item_port_phase_trans_2",
+        "iconId": "item_port_phase_trans_2",
+        "rarity": 4,
+        "groupId": "facility",
+        "type": "crafter",
+        "material": null
+    },
+    "item_port_vaporizer_1": {
+        "id": "item_port_vaporizer_1",
+        "iconId": "item_port_vaporizer_1",
+        "rarity": 4,
+        "groupId": "facility",
+        "type": "other",
+        "material": null
+    },
+    "item_drop_klbuds_1": {
+        "id": "item_drop_klbuds_1",
+        "iconId": "item_drop_klbuds_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_drop_klcaps_1": {
+        "id": "item_drop_klcaps_1",
+        "iconId": "item_drop_klcaps_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_drop_klcreatures_1": {
+        "id": "item_drop_klcreatures_1",
+        "iconId": "item_drop_klcreatures_1",
+        "rarity": 4,
+        "groupId": "gatherable",
+        "type": "drop",
+        "material": null
+    },
+    "item_gas_inert": {
+        "id": "item_gas_inert",
+        "iconId": "item_gas_inert",
+        "rarity": 1,
+        "groupId": "nature",
+        "type": "gas",
+        "material": "inert"
+    },
+    "item_gas_xiranite": {
+        "id": "item_gas_xiranite",
+        "iconId": "item_gas_xiranite",
+        "rarity": 3,
+        "groupId": "nature",
+        "type": "gas",
+        "material": "xiranite"
+    },
+    "item_plant_crylplant_1_1": {
+        "id": "item_plant_crylplant_1_1",
+        "iconId": "item_plant_crylplant_1_1",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "crylplant",
+        "material": null
+    },
+    "item_plant_crylplant_1_2": {
+        "id": "item_plant_crylplant_1_2",
+        "iconId": "item_plant_crylplant_1_2",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "crylplant",
+        "material": null
+    },
+    "item_plant_crylplant_1_3": {
+        "id": "item_plant_crylplant_1_3",
+        "iconId": "item_plant_crylplant_1_3",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "crylplant",
+        "material": null
+    },
+    "item_plant_mushroom_1_1": {
+        "id": "item_plant_mushroom_1_1",
+        "iconId": "item_plant_mushroom_1_1",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "mushroom",
+        "material": null
+    },
+    "item_plant_mushroom_1_2": {
+        "id": "item_plant_mushroom_1_2",
+        "iconId": "item_plant_mushroom_1_2",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "mushroom",
+        "material": null
+    },
+    "item_plant_mushroom_1_3": {
+        "id": "item_plant_mushroom_1_3",
+        "iconId": "item_plant_mushroom_1_3",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "mushroom",
+        "material": null
+    },
+    "item_plant_spcstone_1_1": {
+        "id": "item_plant_spcstone_1_1",
+        "iconId": "item_plant_spcstone_1_1",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "spcstone",
+        "material": null
+    },
+    "item_plant_spcstone_1_2": {
+        "id": "item_plant_spcstone_1_2",
+        "iconId": "item_plant_spcstone_1_2",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "spcstone",
+        "material": null
+    },
+    "item_plant_spcstone_1_3": {
+        "id": "item_plant_spcstone_1_3",
+        "iconId": "item_plant_spcstone_1_3",
+        "rarity": 4,
+        "groupId": "nurturance",
+        "type": "spcstone",
+        "material": null
+    },
+    "item_copper_enr2": {
+        "id": "item_copper_enr2",
+        "iconId": "item_copper_enr2",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "ingot",
+        "material": "copper_enr"
+    },
+    "item_copper_enr2_cmpt": {
+        "id": "item_copper_enr2_cmpt",
+        "iconId": "item_copper_enr2_cmpt",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "part",
+        "material": "copper_enr"
+    },
+    "item_copper_jar": {
+        "id": "item_copper_jar",
+        "iconId": "item_copper_jar",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "jar",
+        "material": "copper"
+    },
+    "item_equip_script_4_3": {
+        "id": "item_equip_script_4_3",
+        "iconId": "item_equip_script_4_3",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "component",
+        "material": "copper_enr"
+    },
+    "item_filter_core": {
+        "id": "item_filter_core",
+        "iconId": "item_filter_core",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "other",
+        "material": null
+    },
+    "item_gas_acid": {
+        "id": "item_gas_acid",
+        "iconId": "item_gas_acid",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "gas",
+        "material": "acid"
+    },
+    "item_gas_copper": {
+        "id": "item_gas_copper",
+        "iconId": "item_gas_copper",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "gas",
+        "material": "copper"
+    },
+    "item_gas_copper_enr": {
+        "id": "item_gas_copper_enr",
+        "iconId": "item_gas_copper_enr",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "gas",
+        "material": "copper_enr"
+    },
+    "item_gas_copper_enr2": {
+        "id": "item_gas_copper_enr2",
+        "iconId": "item_gas_copper_enr2",
+        "rarity": 4,
+        "groupId": "product",
+        "type": "gas",
+        "material": "copper_enr"
+    },
+    "item_gas_water": {
+        "id": "item_gas_water",
+        "iconId": "item_gas_water",
+        "rarity": 2,
+        "groupId": "product",
+        "type": "gas",
+        "material": "water"
+    },
+    "item_gas_xiranite_enr": {
+        "id": "item_gas_xiranite_enr",
+        "iconId": "item_gas_xiranite_enr",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "gas",
+        "material": "xiranite_enr"
+    },
+    "item_gasjar_copper_gas_acid": {
+        "id": "item_gasjar_copper_gas_acid",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper": {
+        "id": "item_gasjar_copper_gas_copper",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper_enr": {
+        "id": "item_gasjar_copper_gas_copper_enr",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_copper_enr2": {
+        "id": "item_gasjar_copper_gas_copper_enr2",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_inert": {
+        "id": "item_gasjar_copper_gas_inert",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_water": {
+        "id": "item_gasjar_copper_gas_water",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_xiranite": {
+        "id": "item_gasjar_copper_gas_xiranite",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_gasjar_copper_gas_xiranite_enr": {
+        "id": "item_gasjar_copper_gas_xiranite_enr",
+        "iconId": "item_copper_jar_gas",
+        "rarity": 3,
+        "groupId": "product",
+        "type": "full_gas_jar",
+        "material": null
+    },
+    "item_klbuds_1_hsfly_1_1": {
+        "id": "item_klbuds_1_hsfly_1_1",
+        "iconId": "item_klbuds_1_hsfly_1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "other",
+        "material": null
+    },
+    "item_klcreatures_1_wgthorns_1_1": {
+        "id": "item_klcreatures_1_wgthorns_1_1",
+        "iconId": "item_klcreatures_1_wgthorns_1_1",
+        "rarity": 4,
+        "groupId": "usable",
+        "type": "other",
+        "material": null
+    },
+    "item_ap": {
+        "id": "item_ap",
+        "iconId": "item_ap",
+        "rarity": 6,
+        "groupId": "other",
+        "type": "sanity",
+        "material": null
     }
 };

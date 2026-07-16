@@ -553,7 +553,9 @@
       "gatherable": "채집 재료",
       "product": "공업 생산품",
       "usable": "사용할 수 있는 아이템",
-      "facility": "생산 도구"
+      "facility": "생산 도구",
+      "device": "휴대 장치",
+      "nurturance": "희귀 재료"
     }
   },
   "menu": {
@@ -2074,7 +2076,58 @@
     "item_drop_jzmonk_1": "백년 숙성 진피",
     "item_drop_jzogre_1": "꼬리 금갑",
     "item_corp4_spc": "로도스 아일랜드 특별 제작 식량",
-    "item_jzmonk_1_hsmob_1_1": "진피 죽순 무침"
+    "item_jzmonk_1_hsmob_1_1": "진피 죽순 무침",
+    "item_device_balloon_recycle_1": "부유식 회수기 I",
+    "item_device_balloon_recycle_2": "부유식 회수기 II",
+    "item_device_balloon_recycle_3": "부유식 회수기 III",
+    "item_device_xiranite_nexus_1": "중추 식양 장치",
+    "item_device_xiranite_nexus_2": "중추 식양 장치 · 확장 I형",
+    "item_device_xiranite_nexus_3": "중추 식양 장치 · 확장 II형",
+    "item_device_xiranite_radar_1": "침식 안개 스캔 모듈",
+    "item_port_battle_lightning_2": "갑2형 '전하'",
+    "item_port_battle_turret_3": "'폭우' 총기 타워",
+    "item_port_gas_pump_1": "기체 수집기",
+    "item_port_gas_reactor_1": "기체 반응로",
+    "item_port_gas_storager_1": "저장용 가스통",
+    "item_port_phase_trans_1": "액체 · 기체 전환기",
+    "item_port_phase_trans_2": "고체 · 기체 전환기",
+    "item_port_vaporizer_1": "기체 분산기",
+    "item_drop_klbuds_1": "잔영의 이슬 방울",
+    "item_drop_klcaps_1": "진형 파괴자의 칼 조각",
+    "item_drop_klcreatures_1": "그림자 비스트의 돌",
+    "item_gas_inert": "비활성 기체",
+    "item_gas_xiranite": "식양 기체",
+    "item_plant_crylplant_1_1": "칼코덴드라",
+    "item_plant_crylplant_1_2": "크리소덴드라",
+    "item_plant_crylplant_1_3": "비트로덴드라",
+    "item_plant_mushroom_1_1": "연한 붉은 기둥 버섯",
+    "item_plant_mushroom_1_2": "보통 붉은 기둥 버섯",
+    "item_plant_mushroom_1_3": "진한 붉은 기둥 버섯",
+    "item_plant_spcstone_1_1": "연한 흑암석",
+    "item_plant_spcstone_1_2": "일반 흑암석",
+    "item_plant_spcstone_1_3": "진한 흑암석",
+    "item_copper_enr2": "작동 조각",
+    "item_copper_enr2_cmpt": "작동 부품",
+    "item_copper_jar": "적동 내압 캔",
+    "item_equip_script_4_3": "작동 장비 부품",
+    "item_filter_core": "분리 필터",
+    "item_gas_acid": "산성 기체",
+    "item_gas_copper": "기체 적동",
+    "item_gas_copper_enr": "기체 혁동",
+    "item_gas_copper_enr2": "기체 작동",
+    "item_gas_water": "수증기",
+    "item_gas_xiranite_enr": "중식양 기체",
+    "item_gasjar_copper_gas_acid": "적동 내압 캔",
+    "item_gasjar_copper_gas_copper": "적동 내압 캔",
+    "item_gasjar_copper_gas_copper_enr": "적동 내압 캔",
+    "item_gasjar_copper_gas_copper_enr2": "적동 내압 캔",
+    "item_gasjar_copper_gas_inert": "적동 내압 캔",
+    "item_gasjar_copper_gas_water": "적동 내압 캔",
+    "item_gasjar_copper_gas_xiranite": "적동 내압 캔",
+    "item_gasjar_copper_gas_xiranite_enr": "적동 내압 캔",
+    "item_klbuds_1_hsfly_1_1": "재앙 정화의 비약",
+    "item_klcreatures_1_wgthorns_1_1": "축석의 비약",
+    "item_ap": "이성"
   },
   "buildingNames": {
     "component_mc_1": "부품 가공기",
@@ -2099,11 +2152,20 @@
     "miner_3": "전동 채굴기 II",
     "miner_4": "수력 채굴기",
     "pump_1": "양수기",
-    "pump_2": "내산성 양수기 II"
+    "pump_2": "내산성 양수기 II",
+    "gas_reactor_1": "기체 반응로",
+    "transmuter_1": "액체 · 기체 전환기",
+    "transmuter_2": "고체 · 기체 전환기",
+    "gas_pump_1": "기체 수집기"
   },
   "buildingModes": {
     "normal": "기본 모드",
-    "liquid": "액체 모드"
+    "liquid": "액체 모드",
+    "gas": "기체 모드",
+    "gasliquid": "기체 · 액체 모드",
+    "gastrans": "기체 생산",
+    "liquidtrans": "액체 생산",
+    "solidtrans": "고체 생산"
   },
   "formulaSidebar": {
     "sector": {
@@ -2141,7 +2203,10 @@
     "item_liquidpoint_xiranite_enr": "액화 중식양 보관 지점",
     "item_minepoint_copper_ore": "적동 광석 광산 지점",
     "item_minepoint_originium_ore": "오리지늄 광물 광산 지점",
-    "item_minepoint_quartz_sand": "자수정 광석 광산 지점"
+    "item_minepoint_quartz_sand": "자수정 광석 광산 지점",
+    "item_gaspoint_acid": "산성 기체 광산 지점",
+    "item_gaspoint_inert": "비활성 기체 광산 지점",
+    "item_gaspoint_xiranite": "식양 기체 비축 지점"
   },
   "baseSkillsFilters": {
     "weaponMaterialEfficiency": "무기 육성 재료 효율",

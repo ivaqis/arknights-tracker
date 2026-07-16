@@ -903,5 +903,125 @@ export const hubCrafts = {
                 "itemId": "item_port_unloader_1"
             }
         ]
+    },
+    "battle_lightning_2": {
+        "id": "battle_lightning_2",
+        "ingredients": [
+            {
+                "count": 20,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_battle_lightning_2"
+            }
+        ]
+    },
+    "battle_turret_3": {
+        "id": "battle_turret_3",
+        "ingredients": [
+            {
+                "count": 20,
+                "itemId": "item_copper_enr2_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_battle_turret_3"
+            }
+        ]
+    },
+    "gas_pump_1": {
+        "id": "gas_pump_1",
+        "ingredients": [
+            {
+                "count": 20,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_gas_pump_1"
+            }
+        ]
+    },
+    "gas_reactor_1": {
+        "id": "gas_reactor_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_gas_reactor_1"
+            }
+        ]
+    },
+    "gas_storager_1": {
+        "id": "gas_storager_1",
+        "ingredients": [
+            {
+                "count": 20,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_gas_storager_1"
+            }
+        ]
+    },
+    "transmuter_1": {
+        "id": "transmuter_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_phase_trans_1"
+            }
+        ]
+    },
+    "transmuter_2": {
+        "id": "transmuter_2",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_phase_trans_2"
+            }
+        ]
+    },
+    "vaporizer_1": {
+        "id": "vaporizer_1",
+        "ingredients": [
+            {
+                "count": 40,
+                "itemId": "item_copper_cmpt"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_port_vaporizer_1"
+            }
+        ]
     }
-}
+};

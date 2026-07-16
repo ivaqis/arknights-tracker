@@ -15,6 +15,7 @@
 
     $: isBuildingMode = formulaType === "machineCraft"
         || formulaType === "miningFormula"
+        || formulaType === "gasMiningFormula"
         || formulaType === "pumpingFormula";
     $: isManualMode = formulaType === "manualCraft";
     $: isHubMode = formulaType === "hubCraft";

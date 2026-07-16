@@ -564,7 +564,10 @@
       "gatherable": "Gatherables",
       "product": "AIC Products",
       "usable": "Usable Items",
-      "facility": "Production"
+      "facility": "Production",
+      "device": "Personal Device",
+      "nurturance": "Rare Materials",
+      "other": "Other"
     },
     "itemSubGroups": {
       "facility_battle": "Battle",
@@ -638,7 +641,18 @@
       "power": "Power",
       "soil": "Soil",
       "battle": "Battle",
-      "other": "Other"
+      "other": "Other",
+      "spcstone": "Mineral",
+      "mushroom": "Mushroom",
+      "crylplant": "Crystal Plant",
+      "gas": "Gas",
+      "jar": "Canister",
+      "balloon_recycle": "Aero-Salvager",
+      "xiranite_radar": "Scanner",
+      "xiranite_nexus": "Nexus",
+      "full_gas_jar": "Full Canister",
+      "gas_miner": "Gas Extractor",
+      "sanity": "Sanity"
     },
     "itemMaterials": {
       "water": "Water",
@@ -670,7 +684,8 @@
       "plant_sp_2": "Tartpepper",
       "plant_sp_3": "Redjade Ginseng",
       "plant_sp_4": "Amber Rice",
-      "nonMaterial": "No Material"
+      "nonMaterial": "No Material",
+      "inert": "Inergen"
     },
     "localeName": {
       "a-z": "A - Z",
@@ -2196,7 +2211,58 @@
     "item_drop_jzmonk_1": "Century Rind",
     "item_drop_jzogre_1": "Caudal Goldscale",
     "item_corp4_spc": "Rhodes Island Special Ration",
-    "item_jzmonk_1_hsmob_1_1": "Rind-Flavored Sprouts"
+    "item_jzmonk_1_hsmob_1_1": "Rind-Flavored Sprouts",
+    "item_device_balloon_recycle_1": "Aero-Salvager Ⅰ",
+    "item_device_balloon_recycle_2": "Aero-Salvager Ⅱ",
+    "item_device_balloon_recycle_3": "Aero-Salvager Ⅲ",
+    "item_device_xiranite_nexus_1": "Xiranite Nexus",
+    "item_device_xiranite_nexus_2": "Xiranite Nexus XC-Ⅰ",
+    "item_device_xiranite_nexus_3": "Xiranite Nexus XC-Ⅱ",
+    "item_device_xiranite_radar_1": "Blight Miasma Scanner Plugin",
+    "item_port_battle_lightning_2": "Electrocharger Model A-2",
+    "item_port_battle_turret_3": "Torrent Gun Tower",
+    "item_port_gas_pump_1": "Gas Extractor",
+    "item_port_gas_reactor_1": "Gas Reactor Globe",
+    "item_port_gas_storager_1": "Gas Tank",
+    "item_port_phase_trans_1": "Fluid-Gas Transmuting Unit",
+    "item_port_phase_trans_2": "Solid-Gas Transmuting Unit",
+    "item_port_vaporizer_1": "Gas Dispersing Unit",
+    "item_drop_klbuds_1": "Shadow Dew",
+    "item_drop_klcaps_1": "Glaive Fragment",
+    "item_drop_klcreatures_1": "Blightshade Bezoar",
+    "item_gas_inert": "Inergen",
+    "item_gas_xiranite": "Xiragen",
+    "item_plant_crylplant_1_1": "Kalkodendra",
+    "item_plant_crylplant_1_2": "Chrysodendra",
+    "item_plant_crylplant_1_3": "Vitrodendra",
+    "item_plant_mushroom_1_1": "Pink Bolete",
+    "item_plant_mushroom_1_2": "Red Bolete",
+    "item_plant_mushroom_1_3": "Ruby Bolete",
+    "item_plant_spcstone_1_1": "Kalkonyx",
+    "item_plant_spcstone_1_2": "Auronyx",
+    "item_plant_spcstone_1_3": "Umbronyx",
+    "item_copper_enr2": "Pyrrolite",
+    "item_copper_enr2_cmpt": "Pyrrolite Part",
+    "item_copper_jar": "Cuprium Canister",
+    "item_equip_script_4_3": "Pyrrolite Component",
+    "item_filter_core": "Separator Core",
+    "item_gas_acid": "Acridgen",
+    "item_gas_copper": "Cuprium Gas",
+    "item_gas_copper_enr": "Hetonite Gas",
+    "item_gas_copper_enr2": "Pyrrolite Gas",
+    "item_gas_water": "Aquagen",
+    "item_gas_xiranite_enr": "Heavy Xiragen",
+    "item_gasjar_copper_gas_acid": "Cuprium Canister",
+    "item_gasjar_copper_gas_copper": "Cuprium Canister",
+    "item_gasjar_copper_gas_copper_enr": "Cuprium Canister",
+    "item_gasjar_copper_gas_copper_enr2": "Cuprium Canister",
+    "item_gasjar_copper_gas_inert": "Cuprium Canister",
+    "item_gasjar_copper_gas_water": "Cuprium Canister",
+    "item_gasjar_copper_gas_xiranite": "Cuprium Canister",
+    "item_gasjar_copper_gas_xiranite_enr": "Cuprium Canister",
+    "item_klbuds_1_hsfly_1_1": "Ruin-Purger Remedy",
+    "item_klcreatures_1_wgthorns_1_1": "Stonehold Remedy",
+    "item_ap": "Sanity"
   },
   "buildingNames": {
     "component_mc_1": "Fitting Unit",
@@ -2221,11 +2287,20 @@
     "miner_3": "Electric Mining Rig Mk II",
     "miner_4": "Hydro Mining Rig",
     "pump_1": "Fluid Pump",
-    "pump_2": "Acid Resistant Pump Mk II"
+    "pump_2": "Acid Resistant Pump Mk II",
+    "gas_reactor_1": "Gas Reactor Globe",
+    "transmuter_1": "Fluid-Gas Transmuting Unit",
+    "transmuter_2": "Solid-Gas Transmuting Unit",
+    "gas_pump_1": "Gas Extractor"
   },
   "buildingModes": {
     "normal": "STD Mode",
-    "liquid": "Fluid Mode"
+    "liquid": "Fluid Mode",
+    "gas": "Gas Mode",
+    "gasliquid": "Gas & Fluid Mode",
+    "gastrans": "Gasify",
+    "liquidtrans": "Fluidify",
+    "solidtrans": "Solidify"
   },
   "formulaSidebar": {
     "sector": {
@@ -2264,7 +2339,10 @@
     "item_liquidpoint_xiranite_enr": "Liquid Heavy Xiranite Storage",
     "item_minepoint_copper_ore": "Cuprium Mining Spot",
     "item_minepoint_originium_ore": "Originium Mining Spot",
-    "item_minepoint_quartz_sand": "Amethyst Mining Spot"
+    "item_minepoint_quartz_sand": "Amethyst Mining Spot",
+    "item_gaspoint_acid": "Acridgen Vent",
+    "item_gaspoint_inert": "Inergen Vent",
+    "item_gaspoint_xiranite": "Xiragen Reservoir"
   },
   "baseSkillsFilters": {
     "weaponMaterialEfficiency": "Weapon Material Efficiency",

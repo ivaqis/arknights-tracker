@@ -1,4 +1,5 @@
 <script>
+    import { FullGasJar } from "$lib/classes/items/FullGasJar.js";
     import Image from "$lib/components/Image.svelte";
     import Icon from "$lib/components/Icon.svelte";
 
@@ -11,6 +12,11 @@
 
     $: fullBottle = FullBottle.getFullBottleFromItem(item);
     $: liquid = fullBottle?.liquidItem;
+
+    $: isFullGasJar = FullGasJar.isFullGasJar(item.id);
+
+    $: fullGasJar = FullGasJar.getFullGasJarFromItem(item);
+    $: gas = fullGasJar?.gasItem;
 
     $: isEventItem = item.isEventItem();
 
@@ -61,6 +67,24 @@
                     />
                 </div>
             </div>
+
+        {:else if isFullGasJar}
+
+            <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+
+                <div class="w-2/3 h-2/3">
+
+                    <Image
+                        id={gas.iconId}
+                        interactive={true}
+                        variant="item-icon"
+                        className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                    />
+
+                </div>
+
+            </div>
+
         {/if}
 
         <div

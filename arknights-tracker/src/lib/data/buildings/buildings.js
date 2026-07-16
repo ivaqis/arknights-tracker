@@ -136,5 +136,29 @@ export const buildings = {
         "type": "pump",
         "itemId": "item_port_pump_2",
         "iconId": "icon_port_pump_2"
+    },
+    "gas_reactor_1": {
+        "id": "gas_reactor_1",
+        "type": "crafter",
+        "itemId": "item_port_gas_reactor_1",
+        "iconId": "icon_port_gas_reactor_1"
+    },
+    "transmuter_1": {
+        "id": "transmuter_1",
+        "type": "crafter",
+        "itemId": "item_port_phase_trans_1",
+        "iconId": "icon_port_transmuter_1"
+    },
+    "transmuter_2": {
+        "id": "transmuter_2",
+        "type": "crafter",
+        "itemId": "item_port_phase_trans_2",
+        "iconId": "icon_port_transmuter_2"
+    },
+    "gas_pump_1": {
+        "id": "gas_pump_1",
+        "type": "gasMiner",
+        "itemId": "item_port_gas_pump_1",
+        "iconId": "icon_port_gas_pump_1"
     }
-}
+};

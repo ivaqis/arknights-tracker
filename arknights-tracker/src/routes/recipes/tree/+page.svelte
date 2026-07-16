@@ -78,7 +78,7 @@
         if (formula) {
             currentFormulas.push(formula);
 
-            currentBuildingId = formula.crafterId || formula.minerId || formula.pumpId;
+            currentBuildingId = formula.crafterId || formula.minerId || formula.pumpId || formula.gasMinerId;
 
             if (formula.formulaType === "manualCraft") sidebarMode = "manual";
             if (formula.formulaType === "hubCraft") sidebarMode = "hub";

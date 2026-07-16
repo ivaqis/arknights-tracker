@@ -53,5 +53,20 @@ export const resourcePoints = {
         "id": "item_minepoint_quartz_sand",
         "itemId": "item_quartz_sand",
         "type": "mine"
+    },
+    "item_gaspoint_acid": {
+        "id": "item_gaspoint_acid",
+        "itemId": "item_gas_acid",
+        "type": "gas"
+    },
+    "item_gaspoint_inert": {
+        "id": "item_gaspoint_inert",
+        "itemId": "item_gas_inert",
+        "type": "gas"
+    },
+    "item_gaspoint_xiranite": {
+        "id": "item_gaspoint_xiranite",
+        "itemId": "item_gas_xiranite",
+        "type": "gas"
     }
 };

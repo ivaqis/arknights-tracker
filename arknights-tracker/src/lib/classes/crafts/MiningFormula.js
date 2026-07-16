@@ -36,7 +36,7 @@ export class MiningFormula {
     }
 
     hasConsumeItem() {
-        return this._minableObj.hasOwnProperty("consumeItem");
+        return !!this._minableObj.consumeItem;
     }
 
     static getMiningFormula(miner, mineableItemId) {

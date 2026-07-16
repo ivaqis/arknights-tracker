@@ -295,7 +295,7 @@
 
                         <BuildingTreeNode
                             formulaType={node.formula?.formulaType}
-                            buildingId={node.formula?.crafterId || node.formula?.minerId || node.formula?.pumpId}
+                            buildingId={node.formula?.crafterId || node.formula?.minerId || node.formula?.pumpId || node.formula?.gasMinerId}
                             highlight={isBuildingNodeSelected(node)}
                             craftTimeMs={node.formula?.craftTimeMs || node.formula?.miningTimeMs || node.formula?.pumpTimeMs}
                         />

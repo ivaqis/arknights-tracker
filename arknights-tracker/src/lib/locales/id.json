@@ -553,7 +553,9 @@
       "gatherable": "Bisa Dikumpulkan",
       "product": "Produk AIC",
       "usable": "Item Berdaya Guna",
-      "facility": "Produksi"
+      "facility": "Produksi",
+      "device": "Perangkat Pribadi",
+      "nurturance": "Material Langka"
     }
   },
   "menu": {
@@ -2074,7 +2076,58 @@
     "item_drop_jzmonk_1": "Kulit Buah Seabad",
     "item_drop_jzogre_1": "Sisik Emas Kaudal",
     "item_corp4_spc": "Ransum Spesial Rhodes Island",
-    "item_jzmonk_1_hsmob_1_1": "Rebung Rasa Kulit Buah"
+    "item_jzmonk_1_hsmob_1_1": "Rebung Rasa Kulit Buah",
+    "item_device_balloon_recycle_1": "Pengangkut Layang I",
+    "item_device_balloon_recycle_2": "Pengangkut Layang II",
+    "item_device_balloon_recycle_3": "Pengangkut Layang III",
+    "item_device_xiranite_nexus_1": "Nexus Xiranite",
+    "item_device_xiranite_nexus_2": "Nexus Xiranite XC-I",
+    "item_device_xiranite_nexus_3": "Nexus Xiranite XC-II",
+    "item_device_xiranite_radar_1": "Plugin Pemindai Miasma Hawar",
+    "item_port_battle_lightning_2": "Electrocharger Model A-2",
+    "item_port_battle_turret_3": "Menara Tembak Torrent",
+    "item_port_gas_pump_1": "Ekstraktor Gas",
+    "item_port_gas_reactor_1": "Bola Reaktor Gas",
+    "item_port_gas_storager_1": "Tangki Gas",
+    "item_port_phase_trans_1": "Unit Transmutasi Cair-Gas",
+    "item_port_phase_trans_2": "Unit Transmutasi Padat-Gas",
+    "item_port_vaporizer_1": "Unit Penyebar Gas",
+    "item_drop_klbuds_1": "Embun Bayangan",
+    "item_drop_klcaps_1": "Fragmen Glaive",
+    "item_drop_klcreatures_1": "Bezoar Bayang-bayang Hawar",
+    "item_gas_inert": "Inergen",
+    "item_gas_xiranite": "Xiragen",
+    "item_plant_crylplant_1_1": "Kalkodendra",
+    "item_plant_crylplant_1_2": "Chrysodendra",
+    "item_plant_crylplant_1_3": "Vitrodendra",
+    "item_plant_mushroom_1_1": "Boletus Pink",
+    "item_plant_mushroom_1_2": "Boletus Merah",
+    "item_plant_mushroom_1_3": "Boletus Rubi",
+    "item_plant_spcstone_1_1": "Kalkonyx",
+    "item_plant_spcstone_1_2": "Auronyx",
+    "item_plant_spcstone_1_3": "Umbronyx",
+    "item_copper_enr2": "Pyrrolite",
+    "item_copper_enr2_cmpt": "Bagian Pyrrolite",
+    "item_copper_jar": "Tabung Cuprium",
+    "item_equip_script_4_3": "Komponen Pyrrolite",
+    "item_filter_core": "Inti Pemisah",
+    "item_gas_acid": "Acridgen",
+    "item_gas_copper": "Gas Cuprium",
+    "item_gas_copper_enr": "Gas Hetonite",
+    "item_gas_copper_enr2": "Gas Pyrrolite",
+    "item_gas_water": "Aquagen",
+    "item_gas_xiranite_enr": "Xiragen Berat",
+    "item_gasjar_copper_gas_acid": "Tabung Cuprium",
+    "item_gasjar_copper_gas_copper": "Tabung Cuprium",
+    "item_gasjar_copper_gas_copper_enr": "Tabung Cuprium",
+    "item_gasjar_copper_gas_copper_enr2": "Tabung Cuprium",
+    "item_gasjar_copper_gas_inert": "Tabung Cuprium",
+    "item_gasjar_copper_gas_water": "Tabung Cuprium",
+    "item_gasjar_copper_gas_xiranite": "Tabung Cuprium",
+    "item_gasjar_copper_gas_xiranite_enr": "Tabung Cuprium",
+    "item_klbuds_1_hsfly_1_1": "Ramuan Pemurni Puing",
+    "item_klcreatures_1_wgthorns_1_1": "Ramuan Stonehold",
+    "item_ap": "Sanity"
   },
   "buildingNames": {
     "component_mc_1": "Unit Pengepas",
@@ -2099,11 +2152,20 @@
     "miner_3": "Rig Tambang Elektrik Mk II",
     "miner_4": "Rig Tambang Hidro",
     "pump_1": "Pompa Cairan",
-    "pump_2": "Pompa Tahan Asam Mk II"
+    "pump_2": "Pompa Tahan Asam Mk II",
+    "gas_reactor_1": "Bola Reaktor Gas",
+    "transmuter_1": "Unit Transmutasi Cair-Gas",
+    "transmuter_2": "Unit Transmutasi Padat-Gas",
+    "gas_pump_1": "Ekstraktor Gas"
   },
   "buildingModes": {
     "normal": "Mode STD",
-    "liquid": "Mode Cairan"
+    "liquid": "Mode Cairan",
+    "gas": "Mode Gas",
+    "gasliquid": "Mode Gas & Cairan",
+    "gastrans": "Ubah ke Gas",
+    "liquidtrans": "Cairkan",
+    "solidtrans": "Solidify"
   },
   "formulaSidebar": {
     "sector": {
@@ -2141,7 +2203,10 @@
     "item_liquidpoint_xiranite_enr": "Penyimpanan Xiranite Berat Cair",
     "item_minepoint_copper_ore": "Titik Tambang Cuprium",
     "item_minepoint_originium_ore": "Titik Tambang Originium",
-    "item_minepoint_quartz_sand": "Titik Tambang Ametis"
+    "item_minepoint_quartz_sand": "Titik Tambang Ametis",
+    "item_gaspoint_acid": "Ventilasi Acridgen",
+    "item_gaspoint_inert": "Ventilasi Inergen",
+    "item_gaspoint_xiranite": "Waduk Xiragen"
   },
   "baseSkillsFilters": {
     "weaponMaterialEfficiency": "Efisiensi Material Senjata",
