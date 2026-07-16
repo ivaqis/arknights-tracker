@@ -103,6 +103,7 @@ export const locations = {
   },
   "world_energy_point05_7": {
     "id": "world_energy_point05_7",
+    "url": "https://oem.re/0XsNKdS",
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
@@ -218,7 +219,8 @@ export const locations = {
   },
   "world_energy_point10_7": {
     "id": "world_energy_point10_7",
-    "region": "theBase",
+    "url": "https://oem.re/0O2XmE8",
+    "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
       "eny_0117_klhound",
@@ -237,7 +239,8 @@ export const locations = {
   },
   "world_energy_point11_7": {
     "id": "world_energy_point11_7",
-    "region": "theBase",
+    "url": "https://oem.re/0Xb5jm0",
+    "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
       "eny_0117_klhound",

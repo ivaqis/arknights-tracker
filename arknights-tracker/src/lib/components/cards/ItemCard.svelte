@@ -34,7 +34,8 @@
         'crystonComponent': 'item_equip_script_3',
         'xiraniteComponent': 'item_equip_script_4',
         'cupriumComponent': 'item_equip_script_4_1',
-        'hetoniteComponent': 'item_equip_script_4_2'
+        'hetoniteComponent': 'item_equip_script_4_2',
+        'pyrroliteComponent': 'item_equip_script_4_3',
     };
 
     $: resolvedItemId = item.id ? (equipmentMatToItemMap[item.id] || item.id) : null;
@@ -66,7 +67,7 @@
         {#if hasRecipe && linkToRecipe}
             <div class="absolute top-1 right-1 z-30">
                 <Tooltip class="cursor-pointer" textKey="pages.openRecipe">
-                    <div class="p-0.5 rounded bg-black/60 text-white hover:bg-black/80 hover:text-[#FFE145] transition-colors flex items-center justify-center">
+                    <div class="p-0.5 rounded bg-black/60 text-white group-hover:bg-black/80 group-hover:text-[#FFE145] transition-colors flex items-center justify-center">
                         <Icon name="sendToLink" class="w-3.5 h-3.5" />
                     </div>
                 </Tooltip>
