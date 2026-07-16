@@ -1,4 +1,4 @@
-export const items = { // todo переделать
+export const items = {
     "item_port_battle_cannon_1": {
         "id": "item_port_battle_cannon_1",
         "iconId": "item_port_battle_cannon_1",
@@ -2740,7 +2740,7 @@ export const items = { // todo переделать
         "iconId": "item_device_balloon_recycle_1",
         "rarity": 3,
         "groupId": "device",
-        "type": "other",
+        "type": "balloon_recycle",
         "material": null
     },
     "item_device_balloon_recycle_2": {
@@ -2748,7 +2748,7 @@ export const items = { // todo переделать
         "iconId": "item_device_balloon_recycle_2",
         "rarity": 4,
         "groupId": "device",
-        "type": "other",
+        "type": "balloon_recycle",
         "material": null
     },
     "item_device_balloon_recycle_3": {
@@ -2756,7 +2756,7 @@ export const items = { // todo переделать
         "iconId": "item_device_balloon_recycle_3",
         "rarity": 5,
         "groupId": "device",
-        "type": "other",
+        "type": "balloon_recycle",
         "material": null
     },
     "item_device_xiranite_nexus_1": {
@@ -2764,7 +2764,7 @@ export const items = { // todo переделать
         "iconId": "item_device_xiranite_nexus_1",
         "rarity": 5,
         "groupId": "device",
-        "type": "other",
+        "type": "xiranite_nexus",
         "material": null
     },
     "item_device_xiranite_nexus_2": {
@@ -2772,7 +2772,7 @@ export const items = { // todo переделать
         "iconId": "item_device_xiranite_nexus_2",
         "rarity": 5,
         "groupId": "device",
-        "type": "other",
+        "type": "xiranite_nexus",
         "material": null
     },
     "item_device_xiranite_nexus_3": {
@@ -2780,7 +2780,7 @@ export const items = { // todo переделать
         "iconId": "item_device_xiranite_nexus_3",
         "rarity": 5,
         "groupId": "device",
-        "type": "other",
+        "type": "xiranite_nexus",
         "material": null
     },
     "item_device_xiranite_radar_1": {
@@ -2788,7 +2788,7 @@ export const items = { // todo переделать
         "iconId": "item_device_xiranite_radar_1",
         "rarity": 4,
         "groupId": "device",
-        "type": "other",
+        "type": "xiranite_radar",
         "material": null
     },
     "item_port_battle_lightning_2": {
@@ -2812,7 +2812,7 @@ export const items = { // todo переделать
         "iconId": "item_port_gas_pump_1",
         "rarity": 2,
         "groupId": "facility",
-        "type": "other",
+        "type": "gas_miner",
         "material": null
     },
     "item_port_gas_reactor_1": {
@@ -2884,23 +2884,23 @@ export const items = { // todo переделать
         "iconId": "item_gas_inert",
         "rarity": 1,
         "groupId": "nature",
-        "type": "other",
-        "material": null
+        "type": "gas",
+        "material": "inert"
     },
     "item_gas_xiranite": {
         "id": "item_gas_xiranite",
         "iconId": "item_gas_xiranite",
         "rarity": 3,
         "groupId": "nature",
-        "type": "other",
-        "material": null
+        "type": "gas",
+        "material": "xiranite"
     },
     "item_plant_crylplant_1_1": {
         "id": "item_plant_crylplant_1_1",
         "iconId": "item_plant_crylplant_1_1",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "crylplant",
         "material": null
     },
     "item_plant_crylplant_1_2": {
@@ -2908,7 +2908,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_crylplant_1_2",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "crylplant",
         "material": null
     },
     "item_plant_crylplant_1_3": {
@@ -2916,7 +2916,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_crylplant_1_3",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "crylplant",
         "material": null
     },
     "item_plant_mushroom_1_1": {
@@ -2924,7 +2924,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_mushroom_1_1",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "mushroom",
         "material": null
     },
     "item_plant_mushroom_1_2": {
@@ -2932,7 +2932,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_mushroom_1_2",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "mushroom",
         "material": null
     },
     "item_plant_mushroom_1_3": {
@@ -2940,7 +2940,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_mushroom_1_3",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "mushroom",
         "material": null
     },
     "item_plant_spcstone_1_1": {
@@ -2948,7 +2948,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_spcstone_1_1",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "spcstone",
         "material": null
     },
     "item_plant_spcstone_1_2": {
@@ -2956,7 +2956,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_spcstone_1_2",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "spcstone",
         "material": null
     },
     "item_plant_spcstone_1_3": {
@@ -2964,7 +2964,7 @@ export const items = { // todo переделать
         "iconId": "item_plant_spcstone_1_3",
         "rarity": 4,
         "groupId": "nurturance",
-        "type": "other",
+        "type": "spcstone",
         "material": null
     },
     "item_copper_enr2": {
@@ -2988,7 +2988,7 @@ export const items = { // todo переделать
         "iconId": "item_copper_jar",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
+        "type": "jar",
         "material": "copper"
     },
     "item_equip_script_4_3": {
@@ -3012,15 +3012,15 @@ export const items = { // todo переделать
         "iconId": "item_gas_acid",
         "rarity": 2,
         "groupId": "product",
-        "type": "other",
-        "material": null
+        "type": "gas",
+        "material": "acid"
     },
     "item_gas_copper": {
         "id": "item_gas_copper",
         "iconId": "item_gas_copper",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
+        "type": "gas",
         "material": "copper"
     },
     "item_gas_copper_enr": {
@@ -3028,7 +3028,7 @@ export const items = { // todo переделать
         "iconId": "item_gas_copper_enr",
         "rarity": 3,
         "groupId": "product",
-        "type": "ingot",
+        "type": "gas",
         "material": "copper_enr"
     },
     "item_gas_copper_enr2": {
@@ -3036,7 +3036,7 @@ export const items = { // todo переделать
         "iconId": "item_gas_copper_enr2",
         "rarity": 4,
         "groupId": "product",
-        "type": "other",
+        "type": "gas",
         "material": "copper_enr"
     },
     "item_gas_water": {
@@ -3044,15 +3044,15 @@ export const items = { // todo переделать
         "iconId": "item_gas_water",
         "rarity": 2,
         "groupId": "product",
-        "type": "other",
-        "material": null
+        "type": "gas",
+        "material": "water"
     },
     "item_gas_xiranite_enr": {
         "id": "item_gas_xiranite_enr",
         "iconId": "item_gas_xiranite_enr",
         "rarity": 3,
         "groupId": "product",
-        "type": "ingot",
+        "type": "gas",
         "material": "xiranite_enr"
     },
     "item_gasjar_copper_gas_acid": {
@@ -3060,64 +3060,64 @@ export const items = { // todo переделать
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_copper": {
         "id": "item_gasjar_copper_gas_copper",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_copper_enr": {
         "id": "item_gasjar_copper_gas_copper_enr",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "ingot",
-        "material": "copper_enr"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_copper_enr2": {
         "id": "item_gasjar_copper_gas_copper_enr2",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper_enr"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_inert": {
         "id": "item_gasjar_copper_gas_inert",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_water": {
         "id": "item_gasjar_copper_gas_water",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_xiranite": {
         "id": "item_gasjar_copper_gas_xiranite",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "other",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_gasjar_copper_gas_xiranite_enr": {
         "id": "item_gasjar_copper_gas_xiranite_enr",
         "iconId": "item_copper_jar_gas",
         "rarity": 3,
         "groupId": "product",
-        "type": "ingot",
-        "material": "copper"
+        "type": "full_gas_jar",
+        "material": null
     },
     "item_klbuds_1_hsfly_1_1": {
         "id": "item_klbuds_1_hsfly_1_1",
@@ -3139,7 +3139,7 @@ export const items = { // todo переделать
         "id": "item_ap",
         "iconId": "item_ap",
         "rarity": 6,
-        "groupId": "sanity",
+        "groupId": "other",
         "type": "sanity",
         "material": null
     }

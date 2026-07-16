@@ -23,6 +23,7 @@ export const itemId2BuildingId = {
     "item_port_miner_2": "miner_2",
     "item_port_miner_3": "miner_3",
     "item_port_miner_4": "miner_4",
+    "item_port_gas_pump_1": "gas_pump_1",
     "item_port_pump_1": "pump_1",
     "item_port_pump_2": "pump_2"
 };
