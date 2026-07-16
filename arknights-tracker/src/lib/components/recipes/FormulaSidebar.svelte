@@ -528,8 +528,8 @@
     {:else}
 
         <div class="flex-1 flex flex-col justify-center items-center p-6 text-center">
-            <Icon name="noData" class="w-16 h-16 text-gray-300 dark:text-gray-600 mb-4" />
-            <h3 class="text-base font-bold text-[#21272C] dark:text-[#E4E4E4] mb-1.5">
+            <Icon name="noData" class="w-16 h-16 mb-4" />
+            <h3 class="font-bold text-[#A0A0A0] mb-1.5">
                 {$t("formulaSidebar.emptyState.title") || "Nothing selected"}
             </h3>
             <p class="text-xs text-gray-500 dark:text-gray-400 max-w-[240px] leading-relaxed">

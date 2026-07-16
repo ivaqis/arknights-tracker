@@ -9,13 +9,13 @@ const localIdToBlackboard = {};
 for (const key in tags) {
     const tag = tags[key];
     const bb = {};
-    if (tag && tag.blackboard) {
+    if (tag?.blackboard) {
         for (const item of tag.blackboard) {
             bb[item.key] = item.value;
         }
     }
     localIdToBlackboard[key] = bb;
-    if (tag && tag.tagId) {
+    if (tag?.tagId) {
         tagIdToBlackboard[String(tag.tagId)] = bb;
         tagIdToKey[String(tag.tagId)] = key;
     }
@@ -75,6 +75,13 @@ const VALID_TEXT_ICONS = new Set([
     "ba_weak"
 ]);
 
+const buffIconMap = {
+    "BuffIcon/icon_energy_fusion_pulse": "icon_term_ba_pulseinflict.png",
+    "BuffIcon/icon_energy_fusion_cryst": "icon_term_ba_crystinflict.png",
+    "BuffIcon/icon_infliction_nature": "icon_term_ba_naturalinflict.png",
+    "BuffIcon/icon_energy_fusion_fire": "icon_term_ba_fireinflict.png"
+};
+
 export function parseRichText(text) {
     if (!text) return "";
     const styles = {
@@ -118,7 +125,7 @@ export function parseRichText(text) {
                 " underline decoration-dashed decoration-current underline-offset-4";
         }
         
-        const tagKey = tag.replace(/\./g, '_');
+        const tagKey = tag.replaceAll('.', '_');
         const showIconPlaceholder = tag !== "ba.info" && tag !== "profile.key" && VALID_TEXT_ICONS.has(tagKey);
         let iconPlaceholder = '';
         if (showIconPlaceholder) {
@@ -130,8 +137,21 @@ export function parseRichText(text) {
         return `<span class="rich-term ${styleClass}" data-term-id="${tag}">${iconPlaceholder}`;
     });
     
-    html = html.replace(/<\/>/g, "</span>");
-    html = html.replace(/\n/g, "<br>");
+    html = html.replaceAll('</>', "</span>");
+    html = html.replaceAll('\n', "<br>");
+    
+    html = html.replace(/<image=["']?([^"'\s>]+)["']?(?:\s+scale=([0-9.]+))?>/g, (match, path, scale) => {
+        let mappedName = buffIconMap[path];
+        if (!mappedName) {
+            const parts = path.split('/');
+            mappedName = parts[parts.length - 1] + '.png';
+        }
+        
+        const imgSrc = `/images/textIcons/${mappedName}`;
+        const size = scale ? Math.round(16 * Number.parseFloat(scale)) : 16;
+        return `<img src="${imgSrc}" class="inline-block align-text-bottom shrink-0 transition-transform duration-200 hover:scale-110" style="width: ${size}px; height: ${size}px; object-fit: contain; aspect-ratio: 1/1;" />`;
+    });
+
     return html;
 }
 let lastTouchTime = 0;
@@ -187,6 +207,103 @@ export function hyperlinkAction(node) {
         }
     }
 
+    function showTooltip(term, termId, tooltipTitle, tooltipDesc, pin = false, isNested = false) {
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+        if (isPinned && !pin) return;
+        if (pin) {
+            isPinned = true;
+        }
+
+        if (isPinned && tooltipEl && isNested) {
+            tooltipStack.push({
+                termId,
+                title: tooltipTitle,
+                desc: tooltipDesc,
+                termElement: term
+            });
+            activeTerm = term;
+            renderStack();
+            return;
+        }
+
+        cleanupTooltip();
+        if (pin) {
+            isPinned = true;
+        }
+        activeTerm = term;
+
+        tooltipStack = [{
+            termId,
+            title: tooltipTitle,
+            desc: tooltipDesc,
+            termElement: term
+        }];
+
+        tooltipEl = document.createElement('div');
+        tooltipEl.style.cssText = `
+            position: fixed;
+            left: -9999px;
+            top: -9999px;
+            padding: 10px 14px;
+            background: #0a0a0f;
+            color: #e5e5e5;
+            font-size: 12px;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
+            pointer-events: auto;
+            z-index: 999999;
+            max-width: 280px;
+            white-space: normal;
+            line-height: 1.5;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: block !important;
+        `;
+
+        document.body.appendChild(tooltipEl);
+
+        const onTooltipMouseEnter = () => {
+            if (hideTimeout) {
+                clearTimeout(hideTimeout);
+                hideTimeout = null;
+            }
+        };
+        const onTooltipMouseLeave = () => {
+            hideTooltip();
+        };
+
+        tooltipEl.addEventListener('mouseenter', onTooltipMouseEnter);
+        tooltipEl.addEventListener('mouseleave', onTooltipMouseLeave);
+
+        tooltipListeners.push(() => {
+            if (tooltipEl) {
+                tooltipEl.removeEventListener('mouseenter', onTooltipMouseEnter);
+                tooltipEl.removeEventListener('mouseleave', onTooltipMouseLeave);
+            }
+        });
+
+        window.addEventListener('scroll', cleanupTooltip, { passive: true });
+        window.addEventListener('resize', cleanupTooltip, { passive: true });
+        
+        setTimeout(() => {
+            document.addEventListener('click', handleDocumentClick);
+        }, 0);
+
+        renderStack();
+    }
+
+    function hideTooltip() {
+        if (isPinned) return;
+        if (hideTimeout) clearTimeout(hideTimeout);
+        hideTimeout = setTimeout(() => {
+            cleanupTooltip();
+        }, 150);
+    }
+
     let initTimeout = null;
 
     function queueInit() {
@@ -219,7 +336,7 @@ export function hyperlinkAction(node) {
             
             html += `<div class="tooltip-card" style="${index > 0 ? 'border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; margin-top: 8px;' : ''}">`;
 
-            const titleImgName = `icon_term_${card.termId.replace(/\./g, '_')}.png`;
+            const titleImgName = `icon_term_${card.termId.replaceAll('.', '_')}.png`;
             const titleImgSrc = `/images/textIcons/${titleImgName}`;
             
             let backButtonHtml = '';
@@ -270,7 +387,7 @@ export function hyperlinkAction(node) {
                 e.stopPropagation();
                 tooltipStack.pop();
                 if (tooltipStack.length > 0) {
-                    activeTerm = tooltipStack[tooltipStack.length - 1].termElement;
+                    activeTerm = tooltipStack.at(-1).termElement;
                 }
                 renderStack();
             });
@@ -280,10 +397,10 @@ export function hyperlinkAction(node) {
         historyTitles.forEach(titleEl => {
             titleEl.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const targetIndex = parseInt(titleEl.getAttribute('data-index'));
-                if (!isNaN(targetIndex) && targetIndex < tooltipStack.length - 1) {
+                const targetIndex = Number.parseInt(titleEl.dataset.index);
+                if (!Number.isNaN(targetIndex) && targetIndex < tooltipStack.length - 1) {
                     tooltipStack = tooltipStack.slice(0, targetIndex + 1);
-                    activeTerm = tooltipStack[tooltipStack.length - 1].termElement;
+                    activeTerm = tooltipStack.at(-1).termElement;
                     renderStack();
                 }
             });
@@ -302,7 +419,7 @@ export function hyperlinkAction(node) {
     function updatePosition() {
         if (!tooltipEl || tooltipStack.length === 0) return;
         const anchorCard = tooltipStack[0];
-        if (!anchorCard || !anchorCard.termElement) return;
+        if (!anchorCard?.termElement) return;
         const termRect = anchorCard.termElement.getBoundingClientRect();
         const tooltipRect = tooltipEl.getBoundingClientRect();
 
@@ -331,7 +448,7 @@ export function hyperlinkAction(node) {
         const targetListeners = isTooltip ? tooltipListeners : parentListeners;
 
         terms.forEach(term => {
-            const termId = term.getAttribute('data-term-id');
+            const termId = term.dataset.termId;
             if (!termId) return;
 
             const tooltipTitle = tFunc(`hyperlink.${termId}.name`);
@@ -341,107 +458,9 @@ export function hyperlinkAction(node) {
             if (hasTooltip) {
                 term.style.cursor = 'default';
 
-                const showTooltip = (pin = false, isNested = false) => {
-                    if (hideTimeout) {
-                        clearTimeout(hideTimeout);
-                        hideTimeout = null;
-                    }
-                    if (isPinned && !pin) return;
-                    if (pin) {
-                        isPinned = true;
-                    }
-
-                    if (isPinned && tooltipEl && isNested) {
-                        tooltipStack.push({
-                            termId,
-                            title: tooltipTitle,
-                            desc: tooltipDesc,
-                            termElement: term
-                        });
-                        activeTerm = term;
-                        renderStack();
-                        return;
-                    }
-
-                    cleanupTooltip();
-                    if (pin) {
-                        isPinned = true;
-                    }
-                    activeTerm = term;
-
-                    tooltipStack = [{
-                        termId,
-                        title: tooltipTitle,
-                        desc: tooltipDesc,
-                        termElement: term
-                    }];
-
-                    tooltipEl = document.createElement('div');
-                    tooltipEl.style.cssText = `
-                        position: fixed;
-                        left: -9999px;
-                        top: -9999px;
-                        padding: 10px 14px;
-                        background: #0a0a0f;
-                        color: #e5e5e5;
-                        font-size: 12px;
-                        border-radius: 10px;
-                        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06);
-                        pointer-events: auto;
-                        z-index: 999999;
-                        max-width: 280px;
-                        white-space: normal;
-                        line-height: 1.5;
-                        border: 1px solid rgba(255, 255, 255, 0.08);
-                        opacity: 1 !important;
-                        visibility: visible !important;
-                        display: block !important;
-                    `;
-
-                    document.body.appendChild(tooltipEl);
-
-                    // Hover grace period listeners on the tooltip itself
-                    const onTooltipMouseEnter = () => {
-                        if (hideTimeout) {
-                            clearTimeout(hideTimeout);
-                            hideTimeout = null;
-                        }
-                    };
-                    const onTooltipMouseLeave = () => {
-                        hideTooltip();
-                    };
-
-                    tooltipEl.addEventListener('mouseenter', onTooltipMouseEnter);
-                    tooltipEl.addEventListener('mouseleave', onTooltipMouseLeave);
-
-                    tooltipListeners.push(() => {
-                        if (tooltipEl) {
-                            tooltipEl.removeEventListener('mouseenter', onTooltipMouseEnter);
-                            tooltipEl.removeEventListener('mouseleave', onTooltipMouseLeave);
-                        }
-                    });
-
-                    window.addEventListener('scroll', cleanupTooltip, { passive: true });
-                    window.addEventListener('resize', cleanupTooltip, { passive: true });
-                    
-                    setTimeout(() => {
-                        document.addEventListener('click', handleDocumentClick);
-                    }, 0);
-
-                    renderStack();
-                };
-
-                const hideTooltip = () => {
-                    if (isPinned) return;
-                    if (hideTimeout) clearTimeout(hideTimeout);
-                    hideTimeout = setTimeout(() => {
-                        cleanupTooltip();
-                    }, 150);
-                };
-
                 const handleMouseEnter = () => {
                     if (isTouchPreventingHover()) return;
-                    showTooltip(false, isTooltip);
+                    showTooltip(term, termId, tooltipTitle, tooltipDesc, false, isTooltip);
                 };
 
                 const handleMouseLeave = () => {
@@ -458,7 +477,7 @@ export function hyperlinkAction(node) {
                             isPinned = true;
                         }
                     } else {
-                        showTooltip(true, isTooltip);
+                        showTooltip(term, termId, tooltipTitle, tooltipDesc, true, isTooltip);
                     }
                 };
 
@@ -534,21 +553,21 @@ function evaluateMath(expr, bb) {
     let resolved = expr;
     const keys = Object.keys(bb).sort((a, b) => b.length - a.length);
     for (const key of keys) {
-        const regex = new RegExp(`\\b${key}\\b`, 'g');
+        const regex = new RegExp(String.raw`\b${key}\b`, 'g');
         resolved = resolved.replace(regex, bb[key]);
     }
     resolved = resolved.replace(/[a-zA-Z_]+/g, '0');
     let sanitized = resolved.replace(/[^0-9.+\-*/() ]/g, '');
-    sanitized = sanitized.replace(/--/g, ' - -').replace(/\+\+/g, ' + +');
+    sanitized = sanitized.replaceAll('--', ' - -').replaceAll('++', ' + +');
     try {
-        return Function(`"use strict"; return (${sanitized})`)();
-    } catch (e) {
+        return new Function(`"use strict"; return (${sanitized})`)();
+    } catch {
         return 0;
     }
 }
 
 function formatValue(value, format) {
-    if (typeof value !== 'number' || isNaN(value)) return value;
+    if (typeof value !== 'number' || Number.isNaN(value)) return value;
     if (format === '0%') {
         return Math.round(value * 100) + '%';
     }

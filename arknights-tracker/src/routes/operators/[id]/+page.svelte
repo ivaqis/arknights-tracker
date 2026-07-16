@@ -1307,7 +1307,7 @@
                             {/if}
                         </div>
                     {:else if activeTab === "potentials"}
-                        <div class="flex flex-col gap-5 animate-fadeIn w-full">
+                        <div class="flex flex-col gap-5 animate-fadeIn w-full potentials-wrapper">
                             <h2
                                 class="text-3xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4 drop-shadow-sm font-sdk text-left 2xl:text-right"
                             >
@@ -1322,12 +1322,17 @@
                                         <div
                                             class="bg-white/90 backdrop-blur-md dark:bg-[#383838]/90 p-5 rounded-2xl dark:border-[#444444] shadow-xl border border-white/50 flex gap-4 items-start transition-transform"
                                         >
-                                            <PotentialIcon
-                                                pot={parseInt(potKey.replace("potential", ""))}
-                                                size={48}
-                                                showNumber={true}
-                                                className="mt-1"
-                                            />
+                                            <div class="relative flex items-center justify-center shrink-0 w-14 h-14 mt-0.5">
+                                                <div 
+                                                    class="absolute -inset-6 rounded-full dark:hidden pointer-events-none" 
+                                                    style="background: radial-gradient(circle, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0) 50%);"
+                                                ></div>
+                                                <PotentialIcon
+                                                    pot={parseInt(potKey.replace("potential", ""))}
+                                                    size={48}
+                                                    showNumber={true}
+                                                />
+                                            </div>
 
                                             <div
                                                 class="flex flex-col gap-1 w-full"
