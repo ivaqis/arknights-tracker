@@ -634,6 +634,21 @@
         </a>
 
         <a
+          href="https://github.com/ivaqis/arknights-tracker"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full min-h-[60px] flex items-center justify-between p-4 bg-[#24292F] border border-gray-100 dark:border-[#333333] hover:bg-[#1C2128] hover:border-white hover:border text-white rounded-xl shadow-sm transition-colors group"
+        >
+          <div class="flex items-center">
+            <Icon name="gitHubBig" class="h-[22px] w-auto text-white" />
+          </div>
+          <Icon
+            name="sendToLink"
+            class="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity"
+          />
+        </a>
+
+        <a
           href="https://goyfield-developers.github.io/"
           target="_blank"
           rel="noopener noreferrer"

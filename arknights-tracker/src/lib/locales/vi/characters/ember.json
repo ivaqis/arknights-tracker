@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Khi thi triển KN chiến đấu <@ba.key>Tiến Lên</> và KN liên hoàn <@ba.key>Hỗ Trợ Tiền Tuyến</>, Ember nhận được <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Bảo Hộ</> và kỹ năng ít bị gián đoạn hơn.",
-        "Khi thi triển KN chiến đấu <@ba.key>Tiến Lên</> và KN liên hoàn <@ba.key>Hỗ Trợ Tiền Tuyến</>, Ember nhận được <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Bảo Hộ</> và kỹ năng ít bị gián đoạn hơn."
+        "Khi thi triển KN chiến đấu <@ba.key>Tiến Lên</> và KN liên hoàn <@ba.key>Hỗ Trợ Tiền Tuyến</>, Ember nhận được <@ba.vup>{shelterrate:0%}</> <#ba.guard>Bảo Hộ</> và kỹ năng ít bị gián đoạn hơn.",
+        "Khi thi triển KN chiến đấu <@ba.key>Tiến Lên</> và KN liên hoàn <@ba.key>Hỗ Trợ Tiền Tuyến</>, Ember nhận được <@ba.vup>{shelterrate:0%}</> <#ba.guard>Bảo Hộ</> và kỹ năng ít bị gián đoạn hơn."
       ],
       "name": "Hỏa Khí Xung Trận"
     },

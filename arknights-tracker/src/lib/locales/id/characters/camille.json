@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "Pengganda DMG",
         "stagger": "Stagger",
-        "firefangVesperwingDurationS": "Durasi Firefang Vesperwing (dtk)",
+        "firefangVesperwingsDurationS": "Durasi Firefang Vesperwing (dtk)",
         "weaknessEffect": "Efek Weakness",
         "heatSusceptibility": "Heat Susceptibility",
         "explosionDmgMultiplier": "Pengganda DMG Ledakan"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Skill Tarung <@ba.key>Blazing Exorcism</> meningkat: Skill ini akan mengakibatkan <#ba.weak>Weakness</> <@ba.vup>+{0-weak_scale:0%}</> dan <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwing</> punya durasi <@ba.key>terbang</> <@ba.vup>{bat_duration:0}</> dtk lebih lama.",
+      "description": "Skill Tarung <@ba.key>Blazing Exorcism</> meningkat: Skill ini akan mengakibatkan <#ba.weak>Weakness</> <@ba.vup>+{weak_scale:0%}</> dan <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwing</> punya durasi <@ba.key>terbang</> <@ba.vup>{bat_duration:0}</> dtk lebih lama.",
       "name": "Flame-Anointed Lance"
     },
     "potential2": {

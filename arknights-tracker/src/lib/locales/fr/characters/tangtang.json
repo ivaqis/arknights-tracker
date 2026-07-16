@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{1-ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet.",
-        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{1-ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet."
+        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet.",
+        "Dans un rayon de <@ba.vup>{range_talent1buff:0}</> mètres d'un <@ba.key>tourbillon</>, les opérateurs alliés gagnent <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Vitesse</> tandis que les ennemis subissent <@ba.vup>{ratio_speedreduction:0%}</> de <#ba.slow>Lenteur</>. Ces effets perdurent pendant {duration_talent1buff:0} s après avoir quitté la zone d'effet."
       ],
       "name": "Famille honorable"
     },

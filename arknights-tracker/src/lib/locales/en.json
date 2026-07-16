@@ -366,7 +366,9 @@
     "weponbox_1_2_2": "Smelting Fire Issue",
     "weponbox_1_2_3": "Swift Walker Issue",
     "special_1_3_2": "Expunger of Sin",
-    "weponbox_1_3_2": "Crimson Hued Issue"
+    "weponbox_1_3_2": "Crimson Hued Issue",
+    "special_1_4_1": "North Yearns the Rift Vigile",
+    "weponbox_1_4_1": "Military Grade Issue"
   },
   "pages": {
     "home": "Home",
@@ -451,7 +453,15 @@
     "monumentalEtchingDirgeOfGrief": "Monumental Etching: Dirge of Grief",
     "umbralMonument": "Umbral Monument",
     "peacekeepersNocturneSignIn": "Peacekeeper's Nocturne Sign-In",
-    "northwardToPerilSignIn": "Northward to Peril Sign-In"
+    "northwardToPerilSignIn": "Northward to Peril Sign-In",
+    "echoesOfWar": "Echoes of War",
+    "gazeTowardsTheNorthernExclusion": "Gaze Towards the Northern Exclusion",
+    "tributeOfCompanionship": "Tribute of Companionship",
+    "heatRageMegaArena": "HEAT RAGE! MEGA ARENA!",
+    "monumentalEtchingBeastlyHowl": "Monumental Etching: Beastly Howl",
+    "theRootedRealm": "The Rooted Realm",
+    "protocolPassBlightedSea": "Protocol Pass: Blighted Sea",
+    "gazeNorthToTheRiftSignIn": "Gaze North to the Rift Sign-In"
   },
   "mouths": {
     "january": "January",
@@ -939,7 +949,26 @@
     "liquidHeavyXiranite": "Liquid Heavy Xiranite",
     "centuryRind": "Century Rind",
     "caudalGoldscale": "Caudal Goldscale",
-    "stickerSafetyHelmet": "Sticker: Safety Helmet"
+    "stickerSafetyHelmet": "Sticker: Safety Helmet",
+    "pyrrolite": "Pyrrolite",
+    "pyrrolitePart": "Pyrrolite Part",
+    "cupriumCanister": "Cuprium Canister",
+    "shadowDew": "Shadow Dew",
+    "glaiveFragment": "Glaive Fragment",
+    "blightshadeBezoar": "Blightshade Bezoar",
+    "pyrroliteComponent": "Pyrrolite Component",
+    "separatorCore": "Separator Core",
+    "acridgen": "Acridgen",
+    "cupriumGas": "Cuprium Gas",
+    "hetoniteGas": "Hetonite Gas",
+    "pyrroliteGas": "Pyrrolite Gas",
+    "inergen": "Inergen",
+    "aquagen": "Aquagen",
+    "xiragen": "Xiragen",
+    "heavyXiragen": "Heavy Xiragen",
+    "crimsonSpearleaf": "Crimson Spearleaf",
+    "talosCap": "Talos Cap",
+    "protocolith": "Protocolith"
   },
   "common": {
     "copy": "Copy",
@@ -1135,7 +1164,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcane"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -1209,7 +1239,11 @@
     "phantomPain": "Phantom Pain",
     "amaranthineTassel": "Amaranthine Tassel",
     "beaconOfDuty": "Beacon of Duty",
-    "blessingOfLustrousCarmine": "Blessing of Lustrous Carmine"
+    "blessingOfLustrousCarmine": "Blessing of Lustrous Carmine",
+    "type42SolemnPhalanx": "Type 42: Solemn Phalanx",
+    "junctionPoint": "Junction Point",
+    "goldenAge": "Golden Age",
+    "farsight": "Farsight"
   },
   "cookies": {
     "title": "We use cookies",
@@ -1313,7 +1347,21 @@
     "world_energy_point09_4": "Severe Energy Alluvium: Sword Vault Dale",
     "world_energy_point09_5": "Severe Energy Alluvium: Sword Vault Dale",
     "world_energy_point09_6": "Severe Energy Alluvium: Sword Vault Dale",
-    "world_energy_point09_7": "Severe Energy Alluvium: Sword Vault Dale"
+    "world_energy_point09_7": "Severe Energy Alluvium: Sword Vault Dale",
+    "world_energy_point10_1": "Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_2": "Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_3": "Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_4": "Severe Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_5": "Severe Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_6": "Severe Energy Alluvium: Yinglung Pass",
+    "world_energy_point10_7": "Severe Energy Alluvium: Yinglung Pass",
+    "world_energy_point11_1": "Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_2": "Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_3": "Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_4": "Severe Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_5": "Severe Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_6": "Severe Energy Alluvium: North Wuling EZ",
+    "world_energy_point11_7": "Severe Energy Alluvium: North Wuling EZ"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunneling Nidwyrm",
@@ -1390,7 +1438,16 @@
     "eny_0082_hsbear": "Skydrummer",
     "eny_0112_jzmonk": "Rockhowler",
     "eny_0113_jzogre": "Armored Manglerbeast",
-    "eny_0114_jzmking": "Craghowler"
+    "eny_0114_jzmking": "Craghowler",
+    "eny_0117_klhound": "Tuskbeast Blightshade",
+    "eny_0118_klhog": "Quillbeast Blightshade",
+    "eny_0119_kltiger": "Rakerbeast Blightshade",
+    "eny_0120_klbear": "Blitzcrash Blightshade",
+    "eny_0121_klbud": "YSTF Vanguard Blightshade",
+    "eny_0122_kltdbud": "YSTF Elite Blightshade",
+    "eny_0123_klcap": "YSTF Glaiver Blightshade",
+    "eny_0124_kltdcap": "YSTF Captain Blightshade",
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
   },
   "essencesPage": {
     "optimizer": "Farming Optimizer",
@@ -1646,7 +1703,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Grizzled Edge Push Knife T1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Grizzled Edge Gauntlets",
     "item_equip_t4_suit_crush_fracture_hand_02": "Grizzled Edge Gauntlets T1",
-    "item_equip_t4_suit_phy01_body_04": "Swordmancer Fiber Armor"
+    "item_equip_t4_suit_phy01_body_04": "Swordmancer Fiber Armor",
+    "item_equip_t4_parts_wuling00_body_01": "AIC Fieldwork Armor",
+    "item_equip_t4_parts_wuling00_body_02": "AIC Fieldwork Plate",
+    "item_equip_t4_parts_wuling00_body_03": "AIC Fieldwork Vest",
+    "item_equip_t4_parts_wuling00_edc_01": "AIC Fieldwork Machete",
+    "item_equip_t4_parts_wuling00_edc_02": "AIC Fieldwork Ember",
+    "item_equip_t4_parts_wuling00_edc_03": "AIC Fieldwork Flashlight",
+    "item_equip_t4_parts_wuling00_hand_01": "AIC Fieldwork Gloves",
+    "item_equip_t4_parts_wuling00_hand_02": "AIC Fieldwork Hands",
+    "item_equip_t4_parts_wuling00_hand_03": "AIC Fieldwork Wraps",
+    "item_equip_t4_parts_wuling02_body_01": "Rift Trekker Heavy Armor",
+    "item_equip_t4_parts_wuling02_body_02": "Rift Trekker Light Armor",
+    "item_equip_t4_parts_wuling02_edc_01": "Rift Trekker Armor Slab",
+    "item_equip_t4_parts_wuling02_hand_01": "Rift Trekker Gloves",
+    "item_equip_t4_parts_wuling02_hand_02": "Rift Trekker Hands",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Hot Work Insulation Slab",
+    "item_equip_t4_suit_fire_natr01_hand_04": "Hot Work Hands PPE",
+    "item_equip_t4_suit_heal01_body_03": "LYNX Cuirass T1",
+    "item_equip_t4_suit_heal01_hand_03": "LYNX Gauntlets T1",
+    "item_equip_t4_suit_usp02_body_03": "Eternal Xiranite Light Armor",
+    "item_equip_t4_suit_usp02_body_04": "Eternal Xiranite Light Armor T1",
+    "item_equip_t4_suit_usp02_edc_04": "Eternal Xiranite Bracing Slab",
+    "item_equip_t4_suit_usp02_hand_03": "Eternal Xiranite Wraps",
+    "item_equip_t4_suit_usp02_hand_04": "Eternal Xiranite Hands"
   },
   "packs": {
     "none": "Non-Set",
@@ -1695,7 +1775,8 @@
     "suit_wisdwill01": "AIC Light",
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
-    "suit_crush_fracture": "Grizzled Edge"
+    "suit_crush_fracture": "Grizzled Edge",
+    "suit_generaltype": "AIC Fieldwork"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1749,13 +1830,21 @@
     "AllDamageTakenScalar": "Final DMG Reduction",
     "Sub": "Secondary Attribute",
     "AllSkillDamageIncrease": "All Skill DMG Dealt Bonus",
-    "FireAndNaturalDamageIncrease": "Heat and Nature DMG Dealt Bonus"
+    "FireAndNaturalDamageIncrease": "Heat and Nature DMG Dealt Bonus",
+    "PhysicalResistance": "Physical Resistance",
+    "NatureResistance": "Nature Resistance",
+    "CryoResistance": "Cryo Resistance",
+    "ElectricResistance": "Electric Resistance",
+    "HeatResistance": "Heat Resistance",
+    "TherResistance": "Æther Resistance"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Landbreakers",
     "wiki_group_monster_hongshan": "Cangzei Pirates",
-    "wiki_group_monster_animal": "Wildlife"
+    "wiki_group_monster_animal": "Wildlife",
+    "wiki_group_monster_kl": "Blightshades",
+    "wiki_group_monster_js": "Foundite"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -2437,5 +2526,11 @@
     "inorganicConstruct": "\"Inorganic Construct\"",
     "turbidityManifest": "\"Turbidity Manifest\"",
     "thoseForsakenByTheLand": "\"Those Forsaken by the Land\""
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Xiranite Technique",
+    "cupriumTechnique": "Cuprium Technique",
+    "hetoniteTechnique": "Hetonite Technique",
+    "pyrroliteTechnique": "Pyrrolite Technique"
   }
 }

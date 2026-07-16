@@ -940,7 +940,7 @@ export const rawEvents = [
   },
   {
     id: "ev3-v1.4",
-    title: "events.gazeTowardsTheNorthemExclusion",
+    title: "events.gazeTowardsTheNorthernExclusion",
     name: "Gaze Towards the Northem Exclusion",
     startTime: "2026-07-15 22:00:00",
     startTimeAsia: "2026-07-16 11:00:00",
@@ -950,7 +950,7 @@ export const rawEvents = [
     color: "#D405B8",
     layer: 9,
     type: "inGame",
-    iconPosition: 40,
+    iconPosition: 55,
     version: "1.4"
   },
   {
@@ -965,13 +965,13 @@ export const rawEvents = [
     color: "#F0595E",
     layer: 8,
     type: "inGamePermanent",
-    iconPosition: 40,
+    iconPosition: 55,
     version: "1.4",
     isPermanent: true
   },
   {
     id: "ev5-v1.4",
-    title: "events.heatRageMegarena",
+    title: "events.heatRageMegaArena",
     name: "HEAT RAGE! MEGA ARENA!",
     startTime: "2026-07-30 12:00:00",
     endTime: "2026-08-13 04:00:00",
@@ -1030,7 +1030,7 @@ export const rawEvents = [
   },
   {
     id: "ev9-v1.4",
-    title: "events.umbralMonumentBeastlyHowl",
+    title: "events.monumentalEtchingBeastlyHowl",
     name: "Monumental Etching: Beastly Howl",
     startTime: "2026-08-06 12:00:00",
     endTime: "2026-08-20 04:00:00",
@@ -1087,6 +1087,21 @@ export const rawEvents = [
     layer: 16,
     type: "protoPass",
     iconPosition: 50,
+    version: "1.4"
+  },
+  {
+    id: "ev13-v1.4",
+    title: "events.gazeNorthToTheRiftSignIn",
+    name: "Gaze North to the Rift Sign-In",
+    startTime: "2026-07-15 22:00:00",
+    startTimeAsia: "2026-07-16 11:00:00",
+    endTime: "2026-08-09 11:59:59",
+    icon: "ev13-v1.4.jpg",
+    url: "",
+    color: "#73a8ddff",
+    layer: 1,
+    type: "signIn",
+    iconPosition: 30,
     version: "1.4"
   }
 ];

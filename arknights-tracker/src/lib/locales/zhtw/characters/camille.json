@@ -37,13 +37,13 @@
         "diveAtkMultiplier": "下墜攻擊倍率"
       },
       "name": "歃血滌罪",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.fire>灼熱傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n  \n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.fire>灼熱傷害</>。\n  \n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.fire>灼熱傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.fire>灼熱傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.fire>灼熱傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.fire>灼熱傷害</>並回復一定技力。"
     },
     "battleSkill": {
       "battleSkill": {
         "dmgMultiplier": "傷害倍率",
         "stagger": "失衡值",
-        "firefangVesperwingDurationS": "銜火血翼持續時間（秒）",
+        "firefangVesperwingsDurationS": "銜火血翼持續時間（秒）",
         "weaknessEffect": "虛弱效果",
         "heatSusceptibility": "灼熱脆弱效果",
         "explosionDmgMultiplier": "爆裂傷害倍率"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "戰技<@ba.key>驅火焚影</>施加的<#ba.weak>虛弱</>效果<@ba.vup>+{0-weak_scale:0%}</>，<#ba.firevul>灼熱脆弱</>效果<@ba.vup>+{vulnerable_scale:0%}</>，<@ba.key>銜火血翼</><@ba.key>盤桓</>的持續時間<@ba.vup>+{bat_duration:0}</>秒。",
+      "description": "戰技<@ba.key>驅火焚影</>施加的<#ba.weak>虛弱</>效果<@ba.vup>+{weak_scale:0%}</>，<#ba.firevul>灼熱脆弱</>效果<@ba.vup>+{vulnerable_scale:0%}</>，<@ba.key>銜火血翼</><@ba.key>盤桓</>的持續時間<@ba.vup>+{bat_duration:0}</>秒。",
       "name": "烈火洗槍"
     },
     "potential2": {

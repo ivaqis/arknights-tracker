@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek.",
-        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek."
+        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek.",
+        "Saat berada dalam radius <@ba.vup>{range_talent1buff:0}</> meter dari <@ba.key>Pusaran Air</>, operator rekan akan mendapatkan <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</>, sedangkan musuh akan terkena <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Slow</>. Efek ini bertahan hingga {duration_talent1buff:0} dtk setelah keluar dari area efek."
       ],
       "name": "Fam of Honor"
     },

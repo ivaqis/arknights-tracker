@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Quando vengono usate l'abilità di combattimento <@ba.key>Marcia in avanti</> e l'abilità combo <@ba.key>Supporto in prima linea</>, Ember ottiene un <@ba.vup>{1-shelterrate:0%}</> di <#ba.guard>Protezione</> ed è meno probabile che venga interrotta.",
-        "Quando vengono usate l'abilità di combattimento <@ba.key>Marcia in avanti</> e l'abilità combo <@ba.key>Supporto in prima linea</>, Ember ottiene un <@ba.vup>{1-shelterrate:0%}</> di <#ba.guard>Protezione</> ed è meno probabile che venga interrotta."
+        "Quando vengono usate l'abilità di combattimento <@ba.key>Marcia in avanti</> e l'abilità combo <@ba.key>Supporto in prima linea</>, Ember ottiene un <@ba.vup>{shelterrate:0%}</> di <#ba.guard>Protezione</> ed è meno probabile che venga interrotta.",
+        "Quando vengono usate l'abilità di combattimento <@ba.key>Marcia in avanti</> e l'abilità combo <@ba.key>Supporto in prima linea</>, Ember ottiene un <@ba.vup>{shelterrate:0%}</> di <#ba.guard>Protezione</> ed è meno probabile che venga interrotta."
       ],
       "name": "Foga dell'assalto"
     },

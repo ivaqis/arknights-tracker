@@ -545,6 +545,60 @@
     "decoDesc": "Una pieza de equipo esencial para operaciones en entornos especiales. \nTodos los ingenieros que realizan reparaciones eléctricas en los sitios de Ruptura de Plaga deben llevar EPP especializado para protegerse de los arcos eléctricos anómalos y de las descargas eléctricas.",
     "setBonus": "Efecto de conjunto de 3 piezas: Intelecto del portador <@ba.vup>+{wisd_up}</>. \nCuando los PV del portador están por encima de {hp_ratio:0%}, el <@ba.key>DAÑ por artes</> <@ba.vup>+{spell_dmg_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "Armadura para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Pensé que estaba comprando munición. Pero luego presté más atención y me di cuenta de que no encontrarás una oferta mejor que esta”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "Placa para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nLa gran capacidad de producción del CAI garantiza que la armadura de placas de la serie Fieldwork pueda arrasar a la competencia, ya que ofrece una protección mucho mejor a un precio extremadamente accesible.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "Chaleco para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“¿Me das unas cuantas piezas más, por favor? Sirven como buenos materiales de construcción”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "Machete para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nUna hoja multifuncional. Puede dañar con eficacia las defensas enemigas y Aggeloides, así como otros obstáculos que bloqueen el camino.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "Brasa para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Así como la gente confía en un encendedor, yo confío en cada sesión de entrenamiento que tomé en Endfield Industries”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "Linterna para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“Espero con ansias una nueva operación de combate, así como la gente espera con ansias el siguiente amanecer”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "Guantes para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nSu diseño está basado en las estructuras fibrosas de una enredadera especial. El producto es ligero, fino y transpirable.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "Manos para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \n“La sensación táctil es perfecta. ¿Alguna vez han considerado el mercado de EPP para fábricas y construcción?”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "Vendas para trabajo de campo del CAI",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Un conjunto de equipamiento de combate diseñado por Endfield Industries para el entrenamiento de operadores. Esta serie tiene buena recepción en el mercado debido a su excelente relación calidad-precio. \nEquipo de protección especial para las manos. Fueron diseñadas para operadores de campo de batalla que necesitan manejar maquinaria compleja.",
+    "setBonus": "Efecto de conjunto de 3 piezas: el portador obtiene DAÑ infligido <@ba.vup>+{dmg_up:0%}</> para todo tipo de DAÑ, <@ba.vup>{1-dmg_taken_down:0%}</> de Reducción de DAÑ contra todo tipo de DAÑ y Eficiencia de ganancia máxima <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "Placas de redentor",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -591,6 +645,36 @@
     "name": "Manos de Redentor",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Este equipo es sinónimo del difícil camino que está por venir. “La misión aún no ha terminado, por lo que el viaje aún no está completo.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "Armadura pesada de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Para recorrer la gran grieta, visto un traje de jade de Xiranita”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "Armadura ligera de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Al contemplar el invierno, la vida y la muerte se vuelven claras como el día”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "Losa de armadura de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Con herramientas para tallar la piedra, marca la cabecera de mi lecho eterno”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "Guantes de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“Cuando oigo rugir el trueno, todo temor que albergue queda purgado”.",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "Manos de Trotagrietas",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "La Agencia de Espadachines diseñó este conjunto especial de equipo para combatientes que realizan operaciones frecuentes en zonas de alto riesgo. \n“El estandarte se despliega, un sudario para tenderme a descansar”.",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -680,67 +764,67 @@
   "item_equip_t4_suit_atk02_body_01": {
     "name": "Armadura pesada Yinglung tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_body_02": {
     "name": "Armadura pesada Yinglung tipo 50 T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipo de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nMuy pocos saben que el diseñador de la armadura en realidad es un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_body_03": {
     "name": "Armadura pesada Yinglung tipo 50 T2",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipo de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nMuy pocos saben que el diseñador de la armadura en realidad es un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_body_04": {
     "name": "Armadura ligera Yinglung tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nPoca gente sabe que el diseñador de la armadura es en realidad un reservista que casi aprobó la prueba de selección de la EFEY. Casi.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_edc_01": {
     "name": "Radar Yinglung tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nCuando por fin concluyeron las optimizaciones, añadió unas palabras junto a los planos: “Aunque se quiebren los cielos y la tierra, prevaleceré y saldré victorioso”.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \nCuando por fin concluyeron las optimizaciones, añadió unas palabras junto a los planos: “Aunque se quiebren los cielos y la tierra, prevaleceré y saldré victorioso”.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "name": "Radar Yinglung tipo 50 T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipo de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nCuando por fin se completaron las optimizaciones, añadió unas palabras junto a los planos: “El cielo y la tierra podrán partirse, pero yo prevaleceré y saldré victorioso.”",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nCuando por fin se completaron las optimizaciones, añadió unas palabras junto a los planos: “El cielo y la tierra podrán partirse, pero yo prevaleceré y saldré victorioso.”",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_edc_03": {
     "name": "Radar Yinglung tipo 50 T2",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipo de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nCuando por fin se completaron las optimizaciones, añadió unas palabras junto a los planos: “El cielo y la tierra podrán partirse, pero yo prevaleceré y saldré victorioso.”",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con usuarios generales. \nCuando por fin se completaron las optimizaciones, añadió unas palabras junto a los planos: “El cielo y la tierra podrán partirse, pero yo prevaleceré y saldré victorioso.”",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "name": "Cuchillo Yinglung tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“Cuando vi rostros conocidos con quienes entrené, cumpliendo roles cruciales y protegiendo lugares clave, me sentí... como un derrotado que huye de un campo de batalla horrible. Me sentí como un desertor”.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“Cuando vi rostros conocidos con quienes entrené, cumpliendo roles cruciales y protegiendo lugares clave, me sentí... como un derrotado que huye de un campo de batalla horrible. Me sentí como un desertor”.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "name": "Cuchillo Yinglung tipo 50 T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“Cuando vi rostros conocidos con quienes entrené, cumpliendo roles cruciales y protegiendo lugares clave, me sentí... como un derrotado que huye de un campo de batalla horrible. Me sentí como un desertor”.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“Cuando vi rostros conocidos con quienes entrené, cumpliendo roles cruciales y protegiendo lugares clave, me sentí... como un derrotado que huye de un campo de batalla horrible. Me sentí como un desertor”.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_hand_01": {
     "name": "Guantes Yinglung tipo 50",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“No envidio el poder concedido, pues estoy lejos de merecerlo. De hecho, debería ser los huesos que les brindan soporte”.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“No envidio el poder concedido, pues estoy lejos de merecerlo. De hecho, debería ser los huesos que les brindan soporte”.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_atk02_hand_02": {
     "name": "Guantes Yinglung tipo 50 T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
-    "decoDesc": "Una versión civil del equipamiento de la Fuerza de Tareas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“No envidio el poder concedido, pues estoy lejos de merecerlo. De hecho, debería ser los huesos que les brindan soporte”.",
+    "decoDesc": "Una versión civil del equipamiento del Equipo de Fuerzas Especiales de Yinglung. La ausencia de un componente de potencia crucial en realidad mejoró su compatibilidad con el público general. \n“No envidio el poder concedido, pues estoy lejos de merecerlo. De hecho, debería ser los huesos que les brindan soporte”.",
     "setBonus": "Efecto de conjunto de 3 piezas: ATQ del portador <@ba.vup>+{atk_up:0%}</>. \nCuando cualquier operador del equipo lanza una habilidad de batalla, el portador obtiene 1 acumulación de <@ba.key>El borde de Yinglung</> que otorga DAÑ <@ba.vup>+{dmg_up:0%}</> a su siguiente habilidad de combo. <@ba.key>El borde de Yinglung</> puede acumularse {max_stack:0} veces."
   },
   "item_equip_t4_suit_attri01_body_01": {
@@ -1073,6 +1157,12 @@
     "decoDesc": "Equipo que presenta una calificación de resistencia al fuego excelente. \n“Alguien escuchó un canto en ese mismo volcán”.",
     "setBonus": "Efecto de conjunto de 3 piezas: Intensidad de Artes del portador <@ba.vup>+{phy_spell_up:0}</>. \nDespués de que el portador aplique <#ba.burning>Combustión</>, el portador obtiene <@ba.fire>DAÑ por calor</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Después de que el portador aplique <#ba.corrupt>Corrosión</>, el portador obtiene <@ba.natur>DAÑ por naturaleza</> +<@ba.vup>{nature_dmg_up:0%}</> durante {duration2} s. Los efectos antes mencionados no se pueden acumular."
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "Losa aislante para trabajos en caliente",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Equipo que presenta una calificación de resistencia al fuego excelente. \n“Ni siquiera la lava puede derretir esto, amigo. Es como mi amor por ella. Nunca se derretirá lo suficiente como para llegar hasta su corazón”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Intensidad de Artes del portador <@ba.vup>+{phy_spell_up:0}</>. \nDespués de que el portador aplique <#ba.burning>Combustión</>, el portador obtiene <@ba.fire>DAÑ por calor</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Después de que el portador aplique <#ba.corrupt>Corrosión</>, el portador obtiene <@ba.natur>DAÑ por naturaleza</> +<@ba.vup>{nature_dmg_up:0%}</> durante {duration2} s. Los efectos antes mencionados no se pueden acumular."
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "Guantes resistentes al calor",
     "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -1091,6 +1181,12 @@
     "decoDesc": "Equipo que presenta una calificación de resistencia al fuego excelente. \n“Shh, silencio. Podrías despertarlo”.",
     "setBonus": "Efecto de conjunto de 3 piezas: Intensidad de Artes del portador <@ba.vup>+{phy_spell_up:0}</>. \nDespués de que el portador aplique <#ba.burning>Combustión</>, el portador obtiene <@ba.fire>DAÑ por calor</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Después de que el portador aplique <#ba.corrupt>Corrosión</>, el portador obtiene <@ba.natur>DAÑ por naturaleza</> +<@ba.vup>{nature_dmg_up:0%}</> durante {duration2} s. Los efectos antes mencionados no se pueden acumular."
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "EPP para manos en trabajos en caliente",
+    "description": "Diseñado de forma independiente por Endfield Industries y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Equipo que presenta una calificación de resistencia al fuego excelente. \nUn conjunto de protección para manos que ofrece excelente protección sin limitar las acciones que requieren destreza. El usuario puede manipular diversos objetos de forma segura sin sufrir lesiones térmicas.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Intensidad de Artes del portador <@ba.vup>+{phy_spell_up:0}</>. \nDespués de que el portador aplique <#ba.burning>Combustión</>, el portador obtiene <@ba.fire>DAÑ por calor</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Después de que el portador aplique <#ba.corrupt>Corrosión</>, el portador obtiene <@ba.natur>DAÑ por naturaleza</> +<@ba.vup>{nature_dmg_up:0%}</> durante {duration2} s. Los efectos antes mencionados no se pueden acumular."
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "Armadura pesada LYNX",
     "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -1101,6 +1197,12 @@
     "name": "Coraza LYNX",
     "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "El equipo preferido de los médicos. \nLa gente suele referirse a los combatientes que visten la Coraza LYNX como “botiquines andantes”. Estos salvavidas suelen llenar cada bolsillo y soporte de su armadura con suministros médicos de emergencia.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Eficiencia del tratamiento de PV del portador <@ba.vup>+{heal_up:0%}</>. \nDespués de que el portador aplique tratamiento de PV a un objetivo aliado, ese objetivo también obtiene <@ba.vup>{1-dmg_taken_down:0%}</> de reducción de DAÑ contra todo tipo de DAÑ por {duration}s. Si dicho tratamiento excede los PV Máx. del objetivo, el objetivo obtiene <@ba.vup>{1-dmg_taken_down2:0%}</> de reducción de DAÑ contra todo tipo de DAÑ. Los efectos antes mencionados no se pueden acumular."
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "Coraza LYNX T1",
+    "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "El equipo preferido de los médicos. La gente suele referirse a los combatientes que visten la Coraza LYNX como “botiquines andantes”. Estos salvavidas suelen llenar cada bolsillo y soporte de su armadura con suministros médicos de emergencia.",
     "setBonus": "Efecto de conjunto de 3 piezas: Eficiencia del tratamiento de PV del portador <@ba.vup>+{heal_up:0%}</>. \nDespués de que el portador aplique tratamiento de PV a un objetivo aliado, ese objetivo también obtiene <@ba.vup>{1-dmg_taken_down:0%}</> de reducción de DAÑ contra todo tipo de DAÑ por {duration}s. Si dicho tratamiento excede los PV Máx. del objetivo, el objetivo obtiene <@ba.vup>{1-dmg_taken_down2:0%}</> de reducción de DAÑ contra todo tipo de DAÑ. Los efectos antes mencionados no se pueden acumular."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1143,6 +1245,12 @@
     "name": "Guanteletes LYNX",
     "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "El equipo preferido de los médicos. \nRhodes Island aún tiene la tradición de equipar a sus EPP con módulos de monitoreo de Oripatía.",
+    "setBonus": "Efecto de conjunto de 3 piezas: Eficiencia del tratamiento de PV del portador <@ba.vup>+{heal_up:0%}</>. \nDespués de que el portador aplique tratamiento de PV a un objetivo aliado, ese objetivo también obtiene <@ba.vup>{1-dmg_taken_down:0%}</> de reducción de DAÑ contra todo tipo de DAÑ por {duration}s. Si dicho tratamiento excede los PV Máx. del objetivo, el objetivo obtiene <@ba.vup>{1-dmg_taken_down2:0%}</> de reducción de DAÑ contra todo tipo de DAÑ. Los efectos antes mencionados no se pueden acumular."
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "Guanteletes LYNX T1",
+    "description": "Diseñado por Rhodes Island y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "El equipo preferido de los médicos. Rhodes Island aún tiene la tradición de equipar a sus EPP con módulos de monitoreo de Oripatía.",
     "setBonus": "Efecto de conjunto de 3 piezas: Eficiencia del tratamiento de PV del portador <@ba.vup>+{heal_up:0%}</>. \nDespués de que el portador aplique tratamiento de PV a un objetivo aliado, ese objetivo también obtiene <@ba.vup>{1-dmg_taken_down:0%}</> de reducción de DAÑ contra todo tipo de DAÑ por {duration}s. Si dicho tratamiento excede los PV Máx. del objetivo, el objetivo obtiene <@ba.vup>{1-dmg_taken_down2:0%}</> de reducción de DAÑ contra todo tipo de DAÑ. Los efectos antes mencionados no se pueden acumular."
   },
   "item_equip_t4_suit_phy01_body_01": {
@@ -1289,6 +1397,18 @@
     "decoDesc": "Legado de un Tianshi “loco”. \nA la mayoría le costaría encontrar una relación entre el trabajo de cocina y la Xiranita. Sin embargo, un residente de Wuling en particular encuentra inspiración para sus diseños cuando come en un restaurante.",
     "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "Armadura ligera de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿sí? ¡LIGERO!”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "Armadura ligera de Xiranita eterna T1",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \n“Yo digo que es demasiado pesada. Mira. Es tan austera como los restos blanqueados de las bestias aleatorias junto al camino. Hay que viajar ligero, ¿sí? ¡LIGERO!”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Núcleo de energía de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -1307,6 +1427,12 @@
     "decoDesc": "Legado de un Tianshi “loco”. \n... Se decía que el Tianshi loco vio un “ciclo autoalimentado” en una olla caliente servida por un chef Ursus. Esta inspiración le permitió más que duplicar la duración de potencia del equipo protector de Xiranita eterna.",
     "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "Losa de refuerzo de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \nLos Tianshi responsables de llevar el diseño heredado a la línea de producción también se dieron cuenta de que era demasiado austero. Por ello, diseñaron placas protectoras adicionales para complementar las defensas.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Guantes de Xiranita eterna",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
@@ -1317,6 +1443,18 @@
     "name": "Guantes de Xiranita eterna T1",
     "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
     "decoDesc": "Legado de un Tianshi “loco”. \n...Pasaron los días y el Tianshi loco empezó a rechazar cualquier comida que “no aportara inspiración”. Tras quedar en los puros huesos, pronto desapareció en las tierras salvajes en busca de “Xiranita comestible”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "Envolturas de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \n“¿A quién demonios se le ocurrió tejer Xiranita en la fibra? ¿Están locos?”.",
+    "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "Manos de Xiranita eterna",
+    "description": "Diseñado por los Espadachines de Hongshan y ensamblado por el CAI. Este equipo mejora las capacidades de combate del portador.",
+    "decoDesc": "Legado de un Tianshi “loco”. \nÚsalas, póntelas... Deja que el poder corra por tu piel, que la energía impregne tu carne y tu sangre.",
     "setBonus": "Efecto de conjunto de 3 piezas: PV del portador <@ba.vup>+{hp_up}</>.\nDespués de que el portador aplique <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Susceptibilidad</> o <#ba.weak>Debilitado</>, los demás compañeros obtienen DAÑ infligido <@ba.vup>+{dmg_up:0%}</> durante {duration} s. Este efecto no se puede acumular."
   }
 }

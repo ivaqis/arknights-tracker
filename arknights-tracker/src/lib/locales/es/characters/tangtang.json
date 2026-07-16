@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</> metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto.",
-        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</> metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto."
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto.",
+        "Al estar dentro de un radio de <@ba.vup>{range_talent1buff:0}</>metros de un <@ba.key>Remolino</>, los operadores aliados obtienen <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Celeridad</> mientras que los enemigos sufren <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Ralentizar</>. Estos efectos persisten durante {duration_talent1buff:0} s tras salir del área de efecto."
       ],
       "name": "Familia de honor"
     },

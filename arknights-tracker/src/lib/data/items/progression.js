@@ -175,5 +175,20 @@ export const progression = [
         id: "vitrodendra",
         name: "Vitrodendra",
         rarity: 4
+    },
+    {
+        id: "protocolith",
+        name: "Protocolith",
+        rarity: 5
+    },
+    {
+        id: "talosCap",
+        name: "Talos Cap",
+        rarity: 5
+    },
+    {
+        id: "crimsonSpearleaf",
+        name: "Crimson Spearleaf",
+        rarity: 5
     }
 ]

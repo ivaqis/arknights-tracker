@@ -135,7 +135,7 @@
       "name": "Bình Tĩnh Tuyệt Đối"
     },
     "potential5": {
-      "description": "Trong quá trình biến đổi <@ba.key>Chân Lý Tối Thượng</>, ST Gây Ra của Zhuang Fangyi bỏ qua <@ba.vup>{100*ignore_pulse_resist:0}</> <@ba.pulse>Kháng Điện</> của kẻ địch.",
+      "description": "Trong quá trình biến đổi <@ba.key>Chân Lý Tối Thượng</>, ST Gây Ra của Zhuang Fangyi bỏ qua <@ba.vup>{-ignore_pulse_resist:0}</> <@ba.pulse>Kháng Điện</> của kẻ địch.",
       "name": "Biến Chuyển Khôn Lường"
     }
   },

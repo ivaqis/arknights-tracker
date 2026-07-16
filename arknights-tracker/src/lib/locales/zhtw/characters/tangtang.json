@@ -36,7 +36,7 @@
         "diveAtkMultiplier": "下墜攻擊倍率"
       },
       "name": "崩你腦袋！",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n \n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n \n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。"
     },
     "battleSkill": {
       "battleSkill": {
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "<@ba.key>渦流</>附近<@ba.vup>{range_talent1buff:0}</>公尺範圍內，友方幹員獲得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敵人受到<@ba.vup>{1-ratio_speedreduction:0%}</><#ba.slow>緩速</>，離開範圍後該效果持續{duration_talent1buff:0}秒。",
-        "<@ba.key>渦流</>附近<@ba.vup>{range_talent1buff:0}</>公尺範圍內，友方幹員獲得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敵人受到<@ba.vup>{1-ratio_speedreduction:0%}</><#ba.slow>緩速</>，離開範圍後該效果持續{duration_talent1buff:0}秒。"
+        "<@ba.key>渦流</>附近<@ba.vup>{range_talent1buff:0}</>公尺範圍內，友方幹員獲得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敵人受到<@ba.vup>{ratio_speedreduction:0%}</><#ba.slow>緩速</>，離開範圍後該效果持續{duration_talent1buff:0}秒。",
+        "<@ba.key>渦流</>附近<@ba.vup>{range_talent1buff:0}</>公尺範圍內，友方幹員獲得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敵人受到<@ba.vup>{ratio_speedreduction:0%}</><#ba.slow>緩速</>，離開範圍後該效果持續{duration_talent1buff:0}秒。"
       ],
       "name": "肝膽相照"
     },

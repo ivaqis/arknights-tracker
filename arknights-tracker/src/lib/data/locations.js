@@ -215,5 +215,43 @@ export const locations = {
       60,
       60
     ]
+  },
+  "world_energy_point10_7": {
+    "id": "world_energy_point10_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0117_klhound",
+      "eny_0118_klhog",
+      "eny_0119_kltiger_sluggish",
+      "eny_0121_klbud",
+      "eny_0122_kltdbud"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
+  },
+  "world_energy_point11_7": {
+    "id": "world_energy_point11_7",
+    "region": "theBase",
+    "costStamina": 80,
+    "enemyIds": [
+      "eny_0117_klhound",
+      "eny_0121_klbud",
+      "eny_0122_kltdbud",
+      "eny_0123_klcap",
+      "eny_0124_kltdcap_yujidian"
+    ],
+    "enemyLevels": [
+      60,
+      60,
+      60,
+      60,
+      60
+    ]
   }
 };

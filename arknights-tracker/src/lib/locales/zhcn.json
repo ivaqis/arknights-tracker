@@ -363,7 +363,9 @@
     "weponbox_1_2_2": "熔灼申领",
     "weponbox_1_2_3": "疾行申领",
     "special_1_3_2": "逐罪者",
-    "weponbox_1_3_2": "染赤申领"
+    "weponbox_1_3_2": "染赤申领",
+    "special_1_4_1": "临渊望北",
+    "weponbox_1_4_1": "军列申领"
   },
   "pages": {
     "home": "首页",
@@ -448,7 +450,15 @@
     "monumentalEtchingDirgeOfGrief": "丰碑留名·忿声",
     "umbralMonument": "影拓丰碑",
     "peacekeepersNocturneSignIn": "夜趋逐罪签到",
-    "northwardToPerilSignIn": "北行险境签到"
+    "northwardToPerilSignIn": "北行险境签到",
+    "echoesOfWar": "战争回响",
+    "gazeTowardsTheNorthernExclusion": "北观禁土",
+    "tributeOfCompanionship": "相伴赠礼",
+    "heatRageMegaArena": "炽燃！竞技大会！",
+    "monumentalEtchingBeastlyHowl": "丰碑留名·兽犼",
+    "theRootedRealm": "根脉奇境",
+    "protocolPassBlightedSea": "协议通行证·蚀海",
+    "gazeNorthToTheRiftSignIn": "踞渊北眺签到"
   },
   "mouths": {
     "january": "一月",
@@ -861,7 +871,26 @@
     "liquidHeavyXiranite": "液化重息壤",
     "centuryRind": "百年陈皮",
     "caudalGoldscale": "尾尖金甲",
-    "stickerSafetyHelmet": "贴纸·工业安全帽"
+    "stickerSafetyHelmet": "贴纸·工业安全帽",
+    "pyrrolite": "灼铜块",
+    "pyrrolitePart": "灼铜零件",
+    "cupriumCanister": "赤铜耐压罐",
+    "shadowDew": "残影露滴",
+    "glaiveFragment": "破阵刀碎片",
+    "blightshadeBezoar": "影兽衔石",
+    "pyrroliteComponent": "灼铜装备原件",
+    "separatorCore": "分离芯",
+    "acridgen": "酸气",
+    "cupriumGas": "气态赤铜",
+    "hetoniteGas": "气态赫铜",
+    "pyrroliteGas": "气态灼铜",
+    "inergen": "惰气",
+    "aquagen": "水蒸气",
+    "xiragen": "息壤气",
+    "heavyXiragen": "重息壤气",
+    "crimsonSpearleaf": "红矛叶",
+    "talosCap": "塔罗斯菌",
+    "protocolith": "协议纹石\n"
   },
   "common": {
     "copy": "复制",
@@ -1057,7 +1086,8 @@
     "zhuangFangyi": "庄方宜",
     "miFu": "弭弗",
     "mifu": "弭弗",
-    "camille": "卡缪"
+    "camille": "卡缪",
+    "arcane": "诀"
   },
   "weaponsList": {
     "industry01": "工业零点一",
@@ -1131,7 +1161,11 @@
     "phantomPain": "幻想苦痛",
     "amaranthineTassel": "赤缨",
     "beaconOfDuty": "灯火使命",
-    "blessingOfLustrousCarmine": "镀红祝福"
+    "blessingOfLustrousCarmine": "镀红祝福",
+    "type42SolemnPhalanx": "四二式·肃阵",
+    "junctionPoint": "联结点",
+    "goldenAge": "黄金时代",
+    "farsight": "遥望"
   },
   "cookies": {
     "title": "我们使用 Cookie",
@@ -1235,7 +1269,21 @@
     "world_energy_point09_4": "重度能量淤积点·藏剑谷",
     "world_energy_point09_5": "重度能量淤积点·藏剑谷",
     "world_energy_point09_6": "重度能量淤积点·藏剑谷",
-    "world_energy_point09_7": "重度能量淤积点·藏剑谷"
+    "world_energy_point09_7": "重度能量淤积点·藏剑谷",
+    "world_energy_point10_1": "能量淤积点·应龙关",
+    "world_energy_point10_2": "能量淤积点·应龙关",
+    "world_energy_point10_3": "能量淤积点·应龙关",
+    "world_energy_point10_4": "重度能量淤积点·应龙关",
+    "world_energy_point10_5": "重度能量淤积点·应龙关",
+    "world_energy_point10_6": "重度能量淤积点·应龙关",
+    "world_energy_point10_7": "重度能量淤积点·应龙关",
+    "world_energy_point11_1": "能量淤积点·北部禁区",
+    "world_energy_point11_2": "能量淤积点·北部禁区",
+    "world_energy_point11_3": "能量淤积点·北部禁区",
+    "world_energy_point11_4": "重度能量淤积点·北部禁区",
+    "world_energy_point11_5": "重度能量淤积点·北部禁区",
+    "world_energy_point11_6": "重度能量淤积点·北部禁区",
+    "world_energy_point11_7": "重度能量淤积点·北部禁区"
   },
   "enemies": {
     "eny_0007_mimicw": "潜地虬兽",
@@ -1312,7 +1360,16 @@
     "eny_0082_hsbear": "天鼓",
     "eny_0112_jzmonk": "山犼兽",
     "eny_0113_jzogre": "披甲裂兽",
-    "eny_0114_jzmking": "巨山犼兽"
+    "eny_0114_jzmking": "巨山犼兽",
+    "eny_0117_klhound": "蚀影牙兽",
+    "eny_0118_klhog": "蚀影球刺兽",
+    "eny_0119_kltiger": "蚀影彪兽",
+    "eny_0120_klbear": "蚀影噪雷",
+    "eny_0121_klbud": "蚀影应龙前锋",
+    "eny_0122_kltdbud": "蚀影应龙尖兵",
+    "eny_0123_klcap": "蚀影应龙破阵手",
+    "eny_0124_kltdcap": "蚀影应龙队长",
+    "eny_0125_fdcentur": "阿莱克琉斯，千夫长"
   },
   "essencesPage": {
     "optimizer": "刷取优化器",
@@ -1568,7 +1625,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "旧锋刺刃·壹型",
     "item_equip_t4_suit_crush_fracture_hand_01": "旧锋手甲",
     "item_equip_t4_suit_crush_fracture_hand_02": "旧锋手甲·壹型",
-    "item_equip_t4_suit_phy01_body_04": "点剑纤维护甲"
+    "item_equip_t4_suit_phy01_body_04": "点剑纤维护甲",
+    "item_equip_t4_parts_wuling00_body_01": "集成实训护甲",
+    "item_equip_t4_parts_wuling00_body_02": "集成实训钢甲",
+    "item_equip_t4_parts_wuling00_body_03": "集成实训胸甲",
+    "item_equip_t4_parts_wuling00_edc_01": "集成实训排障刀",
+    "item_equip_t4_parts_wuling00_edc_02": "集成实训火种石",
+    "item_equip_t4_parts_wuling00_edc_03": "集成实训照明器",
+    "item_equip_t4_parts_wuling00_hand_01": "集成实训手套",
+    "item_equip_t4_parts_wuling00_hand_02": "集成实训护手",
+    "item_equip_t4_parts_wuling00_hand_03": "集成实训缠带",
+    "item_equip_t4_parts_wuling02_body_01": "涉渊重甲",
+    "item_equip_t4_parts_wuling02_body_02": "涉渊轻甲",
+    "item_equip_t4_parts_wuling02_edc_01": "涉渊护甲板",
+    "item_equip_t4_parts_wuling02_hand_01": "涉渊护手",
+    "item_equip_t4_parts_wuling02_hand_02": "涉渊手套",
+    "item_equip_t4_suit_fire_natr01_edc_04": "动火用隔温板",
+    "item_equip_t4_suit_fire_natr01_hand_04": "动火用护手",
+    "item_equip_t4_suit_heal01_body_03": "生物辅助胸甲·壹型",
+    "item_equip_t4_suit_heal01_hand_03": "生物辅助手甲·壹型",
+    "item_equip_t4_suit_usp02_body_03": "长息轻护甲",
+    "item_equip_t4_suit_usp02_body_04": "长息轻护甲·壹型",
+    "item_equip_t4_suit_usp02_edc_04": "长息加固板",
+    "item_equip_t4_suit_usp02_hand_03": "长息裹手",
+    "item_equip_t4_suit_usp02_hand_04": "长息手套"
   },
   "packs": {
     "none": "无套组",
@@ -1617,7 +1697,8 @@
     "suit_wisdwill01": "集成轻型",
     "suit_combo_cd01": "清波",
     "suit_expend_spell01": "壤流",
-    "suit_crush_fracture": "旧锋"
+    "suit_crush_fracture": "旧锋",
+    "suit_generaltype": "集成实训"
   },
   "equipmentTypes": {
     "body": "护甲",
@@ -1671,13 +1752,21 @@
     "AllDamageTakenScalar": "全伤害减免",
     "Sub": "副能力",
     "AllSkillDamageIncrease": "所有技能伤害加成",
-    "FireAndNaturalDamageIncrease": "灼热和自然伤害加成"
+    "FireAndNaturalDamageIncrease": "灼热和自然伤害加成",
+    "PhysicalResistance": "物理抗性",
+    "NatureResistance": "自然抗性",
+    "CryoResistance": "寒冷抗性",
+    "ElectricResistance": "电磁抗性",
+    "HeatResistance": "灼热抗性",
+    "TherResistance": "超域抗性"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "天使",
     "wiki_group_monster_landbreaker": "裂地者",
     "wiki_group_monster_hongshan": "沧贼",
-    "wiki_group_monster_animal": "野外生物"
+    "wiki_group_monster_animal": "野外生物",
+    "wiki_group_monster_kl": "蚀影",
+    "wiki_group_monster_js": "造裔"
   },
   "resitances": {
     "heatRez": "灼热抗性",
@@ -2358,5 +2447,11 @@
     "inorganicConstruct": "“无机造物”",
     "turbidityManifest": "“浊流具现”",
     "thoseForsakenByTheLand": "“大地的弃子”"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "息壤工艺",
+    "cupriumTechnique": "赤铜工艺",
+    "hetoniteTechnique": "赫铜工艺",
+    "pyrroliteTechnique": "灼铜工艺"
   }
 }

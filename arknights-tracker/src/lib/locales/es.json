@@ -360,7 +360,9 @@
     "special_1_3_1": "Puños sin arrepentimientos",
     "weponbox_1_3_1": "Solicitud de Nudo escarlata",
     "special_1_3_2": "Expiador de pecados",
-    "weponbox_1_3_2": "Solicitud de tono carmesí"
+    "weponbox_1_3_2": "Solicitud de tono carmesí",
+    "special_1_4_1": "El norte añora a la vigilante de la grieta",
+    "weponbox_1_4_1": "Solicitud de Grado militar"
   },
   "pages": {
     "home": "Inicio",
@@ -444,7 +446,15 @@
     "monumentalEtchingDirgeOfGrief": "Grabado monumental: Canto fúnebre del pesar",
     "umbralMonument": "Monumento del umbral",
     "peacekeepersNocturneSignIn": "Inicio de sesión de Nocturno del pacificador",
-    "northwardToPerilSignIn": "Inicio de sesión de Hacia el norte, hacia el peligro"
+    "northwardToPerilSignIn": "Inicio de sesión de Hacia el norte, hacia el peligro",
+    "echoesOfWar": "Ecos de guerra",
+    "gazeTowardsTheNorthernExclusion": "Contemplando la Exclusión del norte",
+    "tributeOfCompanionship": "Tributo a la camaradería",
+    "heatRageMegaArena": "¡FURIA ARDIENTE! ¡MEGA ARENA!",
+    "monumentalEtchingBeastlyHowl": "Grabado monumental: Aullido bestial",
+    "theRootedRealm": "El Reino Arraigado",
+    "protocolPassBlightedSea": "Pase de protocolo: Mar contaminado",
+    "gazeNorthToTheRiftSignIn": "Inicio de sesión de Mirada hacia el norte en la grieta"
   },
   "mouths": {
     "january": "Enero",
@@ -820,7 +830,26 @@
     "xiranite": "Xiranita",
     "centuryRind": "Corteza centenaria",
     "caudalGoldscale": "Escama dorada caudal",
-    "stickerSafetyHelmet": "Calcomanía: Casco de seguridad"
+    "stickerSafetyHelmet": "Calcomanía: Casco de seguridad",
+    "pyrrolite": "Pirrolita",
+    "pyrrolitePart": "Pieza de pirrolita",
+    "cupriumCanister": "Contenedor de Cuprio",
+    "shadowDew": "Rocío sombrío",
+    "glaiveFragment": "Fragmento de guja",
+    "blightshadeBezoar": "Bezoar de Sombra contaminada",
+    "pyrroliteComponent": "Componente de Pirrolita",
+    "separatorCore": "Núcleo separador",
+    "acridgen": "Acridgen",
+    "cupriumGas": "Gas de Cuprio",
+    "hetoniteGas": "Gas de hetonita",
+    "pyrroliteGas": "Gas de Pirrolita",
+    "inergen": "Inergen",
+    "aquagen": "Aquagen",
+    "xiragen": "Xiragen",
+    "heavyXiragen": "Xiragen pesado",
+    "crimsonSpearleaf": "Hojalanza carmesí",
+    "talosCap": "Sombrero de Talos",
+    "protocolith": "Protocolito"
   },
   "common": {
     "copy": "Copiar",
@@ -1015,7 +1044,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcane"
   },
   "weaponsList": {
     "industry01": "Industria 0.1",
@@ -1089,7 +1119,11 @@
     "phantomPain": "Dolor fantasma",
     "amaranthineTassel": "Borla amarantina",
     "beaconOfDuty": "Baliza del deber",
-    "blessingOfLustrousCarmine": "Bendición del carmín lustroso"
+    "blessingOfLustrousCarmine": "Bendición del carmín lustroso",
+    "type42SolemnPhalanx": "Tipo 42: Falange solemne",
+    "junctionPoint": "Punto de unión",
+    "goldenAge": "Edad de oro",
+    "farsight": "Vista lejana"
   },
   "cookies": {
     "title": "Usamos cookies",
@@ -1193,7 +1227,21 @@
     "world_energy_point09_4": "Aluvión energético severo: Valle Ocultaespadas",
     "world_energy_point09_5": "Aluvión energético severo: Valle Ocultaespadas",
     "world_energy_point09_6": "Aluvión energético severo: Valle Ocultaespadas",
-    "world_energy_point09_7": "Aluvión energético severo: Valle Ocultaespadas"
+    "world_energy_point09_7": "Aluvión energético severo: Valle Ocultaespadas",
+    "world_energy_point10_1": "Aluvión energético: Paso de Yinglung",
+    "world_energy_point10_2": "Aluvión energético: Paso de Yinglung",
+    "world_energy_point10_3": "Aluvión energético: Paso de Yinglung",
+    "world_energy_point10_4": "Aluvión energético severo: Paso de Yinglung",
+    "world_energy_point10_5": "Aluvión energético severo: Paso de Yinglung",
+    "world_energy_point10_6": "Aluvión energético severo: Paso de Yinglung",
+    "world_energy_point10_7": "Aluvión energético severo: Paso de Yinglung",
+    "world_energy_point11_1": "Aluvión energético: ZE norte de Wuling",
+    "world_energy_point11_2": "Aluvión energético: ZE norte de Wuling",
+    "world_energy_point11_3": "Aluvión energético: ZE norte de Wuling",
+    "world_energy_point11_4": "Aluvión energético severo: ZE norte de Wuling",
+    "world_energy_point11_5": "Aluvión energético severo: ZE norte de Wuling",
+    "world_energy_point11_6": "Aluvión energético severo: ZE norte de Wuling",
+    "world_energy_point11_7": "Aluvión energético severo: ZE norte de Wuling"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Subterráneo",
@@ -1270,7 +1318,16 @@
     "eny_0109_hshog2": "Bestia pluma imbuida",
     "eny_0112_jzmonk": "Aullador de roca",
     "eny_0113_jzogre": "Bestia mutiladora acorazada",
-    "eny_0114_jzmking": "Aullador del peñasco"
+    "eny_0114_jzmking": "Aullador del peñasco",
+    "eny_0117_klhound": "Sombra contaminada de Bestia colmilluda",
+    "eny_0118_klhog": "Sombra contaminada de Bestia pluma",
+    "eny_0119_kltiger": "Sombra contaminada de Bestia rastrera",
+    "eny_0120_klbear": "Sombra contaminada de Blitzcrash",
+    "eny_0121_klbud": "Sombra contaminada de vanguardia del EFEY",
+    "eny_0122_kltdbud": "Sombra contaminada de élite del EFEY",
+    "eny_0123_klcap": "Sombra contaminada con guja del EFEY",
+    "eny_0124_kltdcap": "Sombra contaminada de capitán del EFEY",
+    "eny_0125_fdcentur": "Alleikhreos, Quiliarca"
   },
   "essencesPage": {
     "optimizer": "Optimizador de farmeo",
@@ -1526,7 +1583,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Cuchillo de empuje de Filo curtido T1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Guanteletes de Filo curtido",
     "item_equip_t4_suit_crush_fracture_hand_02": "Guanteletes de Filo curtido T1",
-    "item_equip_t4_suit_phy01_body_04": "Armadura de fibra de Espadachín"
+    "item_equip_t4_suit_phy01_body_04": "Armadura de fibra de Espadachín",
+    "item_equip_t4_parts_wuling00_body_01": "Armadura para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_body_02": "Placa para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_body_03": "Chaleco para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_edc_01": "Machete para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_edc_02": "Brasa para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_edc_03": "Linterna para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_hand_01": "Guantes para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_hand_02": "Manos para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling00_hand_03": "Vendas para trabajo de campo del CAI",
+    "item_equip_t4_parts_wuling02_body_01": "Armadura pesada de Trotagrietas",
+    "item_equip_t4_parts_wuling02_body_02": "Armadura ligera de Trotagrietas",
+    "item_equip_t4_parts_wuling02_edc_01": "Losa de armadura de Trotagrietas",
+    "item_equip_t4_parts_wuling02_hand_01": "Guantes de Trotagrietas",
+    "item_equip_t4_parts_wuling02_hand_02": "Manos de Trotagrietas",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Losa aislante para trabajos en caliente",
+    "item_equip_t4_suit_fire_natr01_hand_04": "EPP para manos en trabajos en caliente",
+    "item_equip_t4_suit_heal01_body_03": "Coraza LYNX T1",
+    "item_equip_t4_suit_heal01_hand_03": "Guanteletes LYNX T1",
+    "item_equip_t4_suit_usp02_body_03": "Armadura ligera de Xiranita eterna",
+    "item_equip_t4_suit_usp02_body_04": "Armadura ligera de Xiranita eterna T1",
+    "item_equip_t4_suit_usp02_edc_04": "Losa de refuerzo de Xiranita eterna",
+    "item_equip_t4_suit_usp02_hand_03": "Envolturas de Xiranita eterna",
+    "item_equip_t4_suit_usp02_hand_04": "Manos de Xiranita eterna"
   },
   "packs": {
     "none": "No establecido",
@@ -1575,7 +1655,8 @@
     "suit_usp01": "Catástrofe",
     "suit_usp02": "Xiranita eterna",
     "suit_wisd01": "Aislamiento de Mordvolt",
-    "suit_crush_fracture": "Filo curtido"
+    "suit_crush_fracture": "Filo curtido",
+    "suit_generaltype": "Trabajo de campo del CAI"
   },
   "equipmentTypes": {
     "body": "Armadura",
@@ -1629,13 +1710,21 @@
     "AllDamageTakenScalar": "Reducción final de DAÑ",
     "Sub": "Atributo secundario",
     "AllSkillDamageIncrease": "Bonificación de DAÑ de todas las habilidades infligido",
-    "FireAndNaturalDamageIncrease": "Bonificación de DAÑ por calor y por naturaleza infligido"
+    "FireAndNaturalDamageIncrease": "Bonificación de DAÑ por calor y por naturaleza infligido",
+    "PhysicalResistance": "Resistencia física",
+    "NatureResistance": "Resistencia a la naturaleza",
+    "CryoResistance": "Resistencia criogénica",
+    "ElectricResistance": "Resistencia eléctrica",
+    "HeatResistance": "Resistencia al calor",
+    "TherResistance": "Resistencia al Éter"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Rompesuelos",
     "wiki_group_monster_hongshan": "Piratas Cangzei",
-    "wiki_group_monster_animal": "Vida silvestre"
+    "wiki_group_monster_animal": "Vida silvestre",
+    "wiki_group_monster_kl": "Sombras contaminadas",
+    "wiki_group_monster_js": "Fundita"
   },
   "resitances": {
     "heatRez": "Resistencia al calor",
@@ -2316,5 +2405,11 @@
     "inorganicConstruct": "“Constructo inorgánico”",
     "turbidityManifest": "“Manifestación de turbiedad”",
     "thoseForsakenByTheLand": "“Los abandonados por la tierra”"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Técnica de Xiranita",
+    "cupriumTechnique": "Técnica de Cuprio",
+    "hetoniteTechnique": "Técnica de Hetonita",
+    "pyrroliteTechnique": "Técnica de Pirrolita"
   }
 }

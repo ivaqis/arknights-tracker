@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "<@ba.key>涡流</>附近<@ba.vup>{range_talent1buff:0}</>米范围内，友方干员获得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敌人受到<@ba.vup>{1-ratio_speedreduction:0%}</><#ba.slow>缓速</>，离开范围后该效果持续{duration_talent1buff:0}秒。",
-        "<@ba.key>涡流</>附近<@ba.vup>{range_talent1buff:0}</>米范围内，友方干员获得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敌人受到<@ba.vup>{1-ratio_speedreduction:0%}</><#ba.slow>缓速</>，离开范围后该效果持续{duration_talent1buff:0}秒。"
+        "<@ba.key>涡流</>附近<@ba.vup>{range_talent1buff:0}</>米范围内，友方干员获得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敌人受到<@ba.vup>{ratio_speedreduction:0%}</><#ba.slow>缓速</>，离开范围后该效果持续{duration_talent1buff:0}秒。",
+        "<@ba.key>涡流</>附近<@ba.vup>{range_talent1buff:0}</>米范围内，友方干员获得<@ba.vup>{ratio_speed:0%}</><#ba.speedup>加速</>，敌人受到<@ba.vup>{ratio_speedreduction:0%}</><#ba.slow>缓速</>，离开范围后该效果持续{duration_talent1buff:0}秒。"
       ],
       "name": "肝胆相照"
     },

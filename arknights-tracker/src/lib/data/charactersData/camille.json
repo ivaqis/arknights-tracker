@@ -1696,7 +1696,7 @@
                     10.0
                 ]
             },
-            "firefangVesperwingDurationS": {
+            "firefangVesperwingsDurationS": {
                 "dataType": "float",
                 "data": [
                     45.0,
@@ -2387,18 +2387,18 @@
                 10
             ],
             "weak_scale": [
-                0.95,
-                0.95,
-                0.95,
-                0.945,
-                0.945,
-                0.945,
-                0.94,
-                0.94,
-                0.94,
-                0.935,
-                0.935,
-                0.93
+                0.05,
+                0.05,
+                0.05,
+                0.055,
+                0.055,
+                0.055,
+                0.06,
+                0.06,
+                0.06,
+                0.065,
+                0.065,
+                0.07
             ],
             "vulnerable_scale": [
                 0.05,
@@ -2800,7 +2800,7 @@
             "teammate_rate": 0.25
         },
         "potential1": {
-            "weak_scale": -0.05,
+            "weak_scale": 0.05,
             "vulnerable_scale": 0.05,
             "bat_duration": 15
         },

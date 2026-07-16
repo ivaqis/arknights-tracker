@@ -358,7 +358,9 @@
     "special_1_3_1": "拳に悔い無し",
     "weponbox_1_3_1": "赫結・申請",
     "special_1_3_2": "咎の番人",
-    "weponbox_1_3_2": "染紅・申請"
+    "weponbox_1_3_2": "染紅・申請",
+    "special_1_4_1": "臨淵望北",
+    "weponbox_1_4_1": "戦列・申請"
   },
   "pages": {
     "home": "ホーム",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "記憶の痕・怒鳴",
     "umbralMonument": "映像の記念碑",
     "peacekeepersNocturneSignIn": "闇夜の罪咎スタンプ",
-    "northwardToPerilSignIn": "北部絶境スタンプ"
+    "northwardToPerilSignIn": "北部絶境スタンプ",
+    "echoesOfWar": "戦争残響",
+    "gazeTowardsTheNorthernExclusion": "北の禁門を望む",
+    "tributeOfCompanionship": "絆の特典",
+    "heatRageMegaArena": "燃えよ！アリーナ！",
+    "monumentalEtchingBeastlyHowl": "記憶の痕・獣吼",
+    "theRootedRealm": "根脈奇景",
+    "protocolPassBlightedSea": "協約通行証・蝕海",
+    "gazeNorthToTheRiftSignIn": "臨淵北望スタンプ"
   },
   "mouths": {
     "january": "1月",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "液化重息壌",
     "centuryRind": "百年陳皮",
     "caudalGoldscale": "尾先の金鱗",
-    "stickerSafetyHelmet": "ステッカー・作業用ヘルメット"
+    "stickerSafetyHelmet": "ステッカー・作業用ヘルメット",
+    "pyrrolite": "焔銅塊",
+    "pyrrolitePart": "焔銅部品",
+    "cupriumCanister": "赤銅圧力タンク",
+    "shadowDew": "残影の露",
+    "glaiveFragment": "破陣刀の欠片",
+    "blightshadeBezoar": "影獣の石",
+    "pyrroliteComponent": "焔銅装備部品",
+    "separatorCore": "分離コア",
+    "acridgen": "酸性ガス",
+    "cupriumGas": "赤銅ガス",
+    "hetoniteGas": "緋銅ガス",
+    "pyrroliteGas": "焔銅ガス",
+    "inergen": "不活性ガス",
+    "aquagen": "水蒸気",
+    "xiragen": "息壌ガス",
+    "heavyXiragen": "重息壌ガス",
+    "crimsonSpearleaf": "赤槍葉",
+    "talosCap": "タロス茸",
+    "protocolith": "協約紋石"
   },
   "common": {
     "copy": "コピー",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "ゾアン・ファンイ",
     "miFu": "ミ・フ",
     "mifu": "ミ・フ",
-    "camille": "カミーユ"
+    "camille": "カミーユ",
+    "arcane": "オクギ"
   },
   "weaponsList": {
     "industry01": "工業零点一",
@@ -1087,7 +1117,11 @@
     "phantomPain": "ファントムペイン",
     "amaranthineTassel": "赤纓",
     "beaconOfDuty": "灯火の使命",
-    "blessingOfLustrousCarmine": "カーマインヴェール"
+    "blessingOfLustrousCarmine": "カーマインヴェール",
+    "type42SolemnPhalanx": "四二式・粛陣",
+    "junctionPoint": "連結点",
+    "goldenAge": "黄金時代",
+    "farsight": "ファーサイト"
   },
   "cookies": {
     "title": "クッキーを使用しています",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "重度超域活性点・蔵剣谷",
     "world_energy_point09_5": "重度超域活性点・蔵剣谷",
     "world_energy_point09_6": "重度超域活性点・蔵剣谷",
-    "world_energy_point09_7": "重度超域活性点・蔵剣谷"
+    "world_energy_point09_7": "重度超域活性点・蔵剣谷",
+    "world_energy_point10_1": "超域活性点・応龍関",
+    "world_energy_point10_2": "超域活性点・応龍関",
+    "world_energy_point10_3": "超域活性点・応龍関",
+    "world_energy_point10_4": "重度超域活性点・応龍関",
+    "world_energy_point10_5": "重度超域活性点・応龍関",
+    "world_energy_point10_6": "重度超域活性点・応龍関",
+    "world_energy_point10_7": "重度超域活性点・応龍関",
+    "world_energy_point11_1": "超域活性点・北部封鎖区域",
+    "world_energy_point11_2": "超域活性点・北部封鎖区域",
+    "world_energy_point11_3": "超域活性点・北部封鎖区域",
+    "world_energy_point11_4": "重度超域活性点・北部封鎖区域",
+    "world_energy_point11_5": "重度超域活性点・北部封鎖区域",
+    "world_energy_point11_6": "重度超域活性点・北部封鎖区域",
+    "world_energy_point11_7": "重度超域活性点・北部封鎖区域"
   },
   "enemies": {
     "eny_0007_mimicw": "潜地蛟獣",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "天鼓",
     "eny_0112_jzmonk": "山吼獣",
     "eny_0113_jzogre": "鎧裂獣",
-    "eny_0114_jzmking": "大山吼獣"
+    "eny_0114_jzmking": "大山吼獣",
+    "eny_0117_klhound": "牙獣の蝕影",
+    "eny_0118_klhog": "球刺獣の蝕影",
+    "eny_0119_kltiger": "彪獣の蝕影",
+    "eny_0120_klbear": "噪雷の蝕影",
+    "eny_0121_klbud": "応龍先鋒の蝕影",
+    "eny_0122_kltdbud": "応龍精鋭先鋒の蝕影",
+    "eny_0123_klcap": "応龍突撃兵の蝕影",
+    "eny_0124_kltdcap": "応龍隊長の蝕影",
+    "eny_0125_fdcentur": "千人隊長アレイクレウス"
   },
   "essencesPage": {
     "optimizer": "育成オプティマイザー",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "旧鋒ナイフⅠ",
     "item_equip_t4_suit_crush_fracture_hand_01": "旧鋒ガントレット",
     "item_equip_t4_suit_crush_fracture_hand_02": "旧鋒ガントレットⅠ",
-    "item_equip_t4_suit_phy01_body_04": "宏山点剣繊維防具"
+    "item_equip_t4_suit_phy01_body_04": "宏山点剣繊維防具",
+    "item_equip_t4_parts_wuling00_body_01": "集成訓練防具",
+    "item_equip_t4_parts_wuling00_body_02": "集成訓練鋼製防具",
+    "item_equip_t4_parts_wuling00_body_03": "集成訓練ベスト",
+    "item_equip_t4_parts_wuling00_edc_01": "集成訓練多機能ナイフ",
+    "item_equip_t4_parts_wuling00_edc_02": "集成訓練火種石",
+    "item_equip_t4_parts_wuling00_edc_03": "集成訓練ライト",
+    "item_equip_t4_parts_wuling00_hand_01": "集成訓練グローブ",
+    "item_equip_t4_parts_wuling00_hand_02": "集成訓練プロテクター",
+    "item_equip_t4_parts_wuling00_hand_03": "集成訓練サポーター",
+    "item_equip_t4_parts_wuling02_body_01": "渡淵重防具",
+    "item_equip_t4_parts_wuling02_body_02": "渡淵軽防具",
+    "item_equip_t4_parts_wuling02_edc_01": "渡淵装甲板",
+    "item_equip_t4_parts_wuling02_hand_01": "渡淵プロテクター",
+    "item_equip_t4_parts_wuling02_hand_02": "渡淵グローブ",
+    "item_equip_t4_suit_fire_natr01_edc_04": "火山用遮熱板",
+    "item_equip_t4_suit_fire_natr01_hand_04": "火山用プロテクター",
+    "item_equip_t4_suit_heal01_body_03": "生物補助ベストⅠ",
+    "item_equip_t4_suit_heal01_hand_03": "生物補助手袋Ⅰ",
+    "item_equip_t4_suit_usp02_body_03": "流転軽防具",
+    "item_equip_t4_suit_usp02_body_04": "流転軽防具Ⅰ",
+    "item_equip_t4_suit_usp02_edc_04": "流転補強板",
+    "item_equip_t4_suit_usp02_hand_03": "流転ハンドガード",
+    "item_equip_t4_suit_usp02_hand_04": "流転グローブ"
   },
   "packs": {
     "none": "セットなし",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "集成軽量",
     "suit_combo_cd01": "清波",
     "suit_expend_spell01": "壌流",
-    "suit_crush_fracture": "旧鋒"
+    "suit_crush_fracture": "旧鋒",
+    "suit_generaltype": "集成訓練"
   },
   "equipmentTypes": {
     "body": "胴",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "全ダメージ軽減",
     "Sub": "サブ能力",
     "AllSkillDamageIncrease": "全スキルダメージUP",
-    "FireAndNaturalDamageIncrease": "灼熱&自然ダメージUP"
+    "FireAndNaturalDamageIncrease": "灼熱&自然ダメージUP",
+    "PhysicalResistance": "物理耐性",
+    "NatureResistance": "自然耐性",
+    "CryoResistance": "寒冷耐性",
+    "ElectricResistance": "電磁耐性",
+    "HeatResistance": "灼熱耐性",
+    "TherResistance": "超域耐性"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "アンゲロス",
     "wiki_group_monster_landbreaker": "ランドブレーカー",
     "wiki_group_monster_hongshan": "滄賊",
-    "wiki_group_monster_animal": "野生の生物"
+    "wiki_group_monster_animal": "野生の生物",
+    "wiki_group_monster_kl": "蝕影",
+    "wiki_group_monster_js": "造裔"
   },
   "resitances": {
     "heatRez": "灼熱耐性",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "「無機的造物」",
     "turbidityManifest": "「濁流具現」",
     "thoseForsakenByTheLand": "「大地に見捨てられし者」"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "息壌工程",
+    "cupriumTechnique": "赤銅工程",
+    "hetoniteTechnique": "緋銅工程",
+    "pyrroliteTechnique": "焔銅工程"
   }
 }

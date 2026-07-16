@@ -624,7 +624,7 @@
     "description": "A variant of manglerbeasts that evolved specifically on Talos-II. These unique manglers are armored in extremely thick scales and share a mutualistic symbiosis with rockhowlers. The former species provides the bulwark and muscle while the latter offers keen senses and warns against trespassers.",
     "abilities": [
       "The Rockhowler riding on the Armored Manglerbeast's back can throw banana peels. If the Armored Manglerbeast steps on banana peels while performing a charging attack, it will slip and fall.",
-      "When curled into its defensive pose, only its hands remain exposed as weak spots. Break the hands to end the defensive pose and apply knock down to the beast.",
+      "When curled into its defensive pose, only its hands remain exposed as weak points. Break the hands to end the defensive pose and apply knock down to the beast.",
       "Drops Rockhowlers when knocked down. Attack the Rockhowlers to deal even more DMG."
     ]
   },
@@ -636,6 +636,82 @@
       "When enraged, the Craghowler will start breaking the ruins. Loosened rocks will fall into the battlefield and deal DMG to operators hit by them.",
       "The Craghowler can use the pillars within the ruins to great effect and give itself a huge attack range.",
       "The Craghowler will feign a retreat, and suddenly throw huge rocks to attack unsuspecting enemies."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Tuskbeast Blightshade",
+    "nickname": "Tuskbeast Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a tuskbeast. Although this is but a \"lingering shadow\", its sharp fangs are still capable of tearing through armor and protective gear.",
+    "abilities": [
+      "Some attacks can activate Blightshade Energy they hit."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Quillbeast Blightshade",
+    "nickname": "Quillbeast Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a quillbeast. This blightshade seems to exhibit far more aggressive rolling and bouncing attacks than its living counterpart, though it may just be a matter of imagination.",
+    "abilities": [
+      "After a short charge-up, the Quillbeast Blightshade can summon multiple bolts of lightning and activates Blightshade Energy within a large area. Interrupt the beast quickly when it starts charging up."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Rakerbeast Blightshade",
+    "nickname": "Rakerbeast Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a rakerbeast. The eye-spotted coat seems more fluid and highlights attack moves that are truly terrifying to behold.",
+    "abilities": [
+      "The beast can use its horns to conduct lightning, attack from range, and even throw lightning orbs that explode after a short delay. Stay out of the explosion radius.",
+      "At low HP, the beast will unleash a furious roar, call down multiple thunderbolts to attack, and enter an Enraged state. Applying Staggered to the beast ends the Enraged state. Fight it with caution."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Blitzcrash Blightshade",
+    "nickname": "Blitzcrash Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of Blitzcrash. The beast was once raised at Tanjian Hall and used to be Li Zhiyan's best friend. Its blightshade, however, retains nothing but its instincts for aggression.",
+    "abilities": [
+      "Blightshade Energy activated by Blitzcrash Blightshade can unleash thunderbolts.",
+      "This enemy summons Tuskbeast Blightshades. It then calls down multiple thunderbolts to strike the beasts, turn them into Blightshade Energy, and activate them. Try to dodge these attacks."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "YSTF Vanguard Blightshade",
+    "nickname": "YSTF Vanguard Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a YSTF Vanguard. Mastering melee combat techniques is just the most basic requirement for the Yinglungs.",
+    "abilities": [
+      "Unleashes blade qi that can activate any Blightshade Energy it hits."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "YSTF Elite Blightshade",
+    "nickname": "YSTF Elite Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a YSTF Elite. An Yinglung who has mastered both the Originium Arts and swordmancy will be considered an elite.",
+    "abilities": [
+      "Unleashes blade qi that can activate any Blightshade Energy it hits."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "YSTF Glaiver Blightshade",
+    "nickname": "YSTF Glaiver Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a YSTF Glaiver. Such Yinglungs are extremely skilled in leading assaults and taking defended positions. The glaives they wield are designed to cleave through Aggeloi with ease.",
+    "abilities": [
+      "The YSTF Glaiver Blightshade can feign defeat before it launches an unexpected attack. Be careful!",
+      "After dissipating, this enemy can blink next to an operator and attack. Try to dodge."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "YSTF Captain Blightshade",
+    "nickname": "YSTF Captain Blightshade",
+    "description": "A manifestation of residual Æther energy that projects the outward form of a YSTF Captain. Only veterans who have demonstrated gifts for command, exceptional combat prowess, and achieved true valor in war will receive the chance of becoming a YSTF Captain.",
+    "abilities": [
+      "After dissipating, this enemy can blink next to an operator and attack. Try to dodge.",
+      "The YSTF Captain Blightshade can use its weapon to call down thunderbolts. A Blightshade Energy entity is activated when hit by a thunderbolt."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarch",
+    "nickname": "Alleikhreos",
+    "description": "A creation of the Foundation and a veteran of countless battles. This Chiliarch roamed the Ætherside until he recovered his lost sword and tore open a moment for his return.",
+    "abilities": [
+      "When the Stagger meter of Alleikhreos, Chiliarch hits the Stagger Node, he would drop a Foundite Weapon. Approach it with the controlled operator to pick it up and use the weapon to attack him."
     ]
   }
 }

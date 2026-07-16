@@ -624,7 +624,7 @@
     "description": "Một biến thể Gấu Nanh Dài tiến hóa đặc thù trên Talos-II. Những cá thể Gấu độc đáo này sở hữu lớp vảy giáp cực dày và có quan hệ cộng sinh tương hỗ với Rockhowler. Loài trước cung cấp lớp phòng vệ vững chắc cùng sức mạnh cơ bắp, còn loài sau đảm nhiệm giác quan nhạy bén và cảnh báo khi có kẻ xâm nhập.",
     "abilities": [
       "Rockhowler cưỡi trên lưng Gấu Nanh Dài Thiết Giáp có thể vứt vỏ chuối. Nếu Gấu Nanh Dài Thiết Giáp giẫm phải vỏ chuối khi đang thực hiện tụ lực thì nó sẽ bị trượt ngã.",
-      "Khi cuộn mình vào tư thế phòng thủ, điểm yếu của nó là hai tay. Phá hủy hai tay để phá bỏ tư thế phòng thủ và khiến con quái thú bị quật ngã.",
+      "Khi cuộn mình vào tư thế phòng thủ, chỉ hai bàn tay của nó còn lộ ra làm điểm yếu. Phá hủy hai tay để phá bỏ tư thế phòng thủ và khiến con quái thú bị quật ngã.",
       "Rơi ra Rockhowler khi gục ngã. Tấn công Rockhowler để gây thêm ST."
     ]
   },
@@ -636,6 +636,82 @@
       "Khi điên cuồng, Craghowler sẽ bắt đầu phá hủy các tàn tích. Những tảng đá bong rơi sẽ lao xuống chiến trường, gây ST lên các cán viên trúng phải.",
       "Craghowler có thể sử dụng các cột trụ trong tàn tích để cường hóa hiệu ứng và cho bản thân thêm tầm đánh.",
       "Craghowler sẽ giả vờ rút lui, sau đó bất ngờ ném đá tảng để tấn công những kẻ địch không phòng bị."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Bóng Nhiễm Khuẩn Thú Ngà",
+    "nickname": "Bóng Nhiễm Khuẩn Thú Ngà",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Thú Ngà. Dù chỉ là một \"bóng hình vương lại\", cặp nanh sắc bén của nó vẫn đủ sức xé toạc giáp trụ và trang bị bảo hộ.",
+    "abilities": [
+      "Một số đòn tấn công có thể kích hoạt Năng Lượng Bóng Nhiễm Khuẩn mà chúng đánh trúng."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
+    "nickname": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Quái Lông Nhọn. Bóng Nhiễm Khuẩn này có vẻ thể hiện những đòn tấn công lăn và bật nhảy hung hãn hơn nhiều so với bản thể còn sống, dù đó có lẽ cũng chỉ là ảo giác.",
+    "abilities": [
+      "Sau một khoảng thời gian tụ lực ngắn, Bóng Nhiễm Khuẩn Quái Lông Nhọn có thể triệu hồi nhiều tia sét và kích hoạt Năng Lượng Bóng Nhiễm Khuẩn trong phạm vi lớn. Hãy nhanh chóng làm gián đoạn con thú khi nó bắt đầu tụ lực."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Bóng Nhiễm Khuẩn Quái Cào",
+    "nickname": "Bóng Nhiễm Khuẩn Quái Cào",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một Quái Cào. Bộ lông điểm hoa văn tựa đôi mắt của nó trông mềm lỏng hơn, càng làm nổi bật những đòn tấn công kinh hoàng đến rợn người.",
+    "abilities": [
+      "Con thú có thể dùng sừng để dẫn sét, tấn công từ xa, thậm chí ném ra các quả cầu sét sẽ phát nổ sau một khoảng trễ ngắn. Hãy tránh khỏi phạm vi vụ nổ.",
+      "Khi HP còn thấp, con thú sẽ tung ra tiếng gầm cuồng nộ, gọi xuống nhiều tia sét để tấn công và tiến vào trạng thái Điên Cuồng. Áp dụng Suy Sụp lên con thú sẽ kết thúc trạng thái Điên Cuồng. Hãy cẩn thận khi đối đầu với nó."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Bóng Nhiễm Khuẩn Chớp Nhoáng",
+    "nickname": "Bóng Nhiễm Khuẩn Chớp Nhoáng",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của Blitzcrash. Con thú này từng được nuôi dưỡng tại Đàm Kiếm Đường và từng là người bạn thân nhất của Li Zhiyan. Thế nhưng Bóng Nhiễm Khuẩn của nó chẳng còn giữ lại gì ngoài bản năng công kích.",
+    "abilities": [
+      "Năng Lượng Bóng Nhiễm Khuẩn do Bóng Nhiễm Khuẩn Chớp Nhoáng kích hoạt có thể phóng ra tia sét.",
+      "Kẻ địch này triệu hồi Bóng Nhiễm Khuẩn Thú Ngà. Sau đó, nó gọi xuống nhiều tia sét đánh vào những con thú này, biến chúng thành Năng Lượng Bóng Nhiễm Khuẩn và kích hoạt chúng. Hãy cố gắng né các đòn tấn công này."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Tiên Phong. Với các Đặc Nhiệm, làm chủ kỹ thuật chiến đấu cận chiến mới chỉ là yêu cầu cơ bản nhất.",
+    "abilities": [
+      "Phóng ra kiếm khí có thể kích hoạt bất kỳ Năng Lượng Bóng Nhiễm Khuẩn nào bị đánh trúng."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Tinh Anh. Một Đặc Nhiệm làm chủ cả Thuật Pháp Originium lẫn kiếm pháp sẽ được xem là tinh anh.",
+    "abilities": [
+      "Phóng ra kiếm khí có thể kích hoạt bất kỳ Năng Lượng Bóng Nhiễm Khuẩn nào bị đánh trúng."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Đao Thủ. Những Đặc Nhiệm như họ cực kỳ tinh thông trong việc dẫn đầu xung kích và đánh chiếm các vị trí phòng thủ. Những thanh đao cán dài họ sử dụng được thiết kế để chém xuyên Aggeloi một cách dễ dàng.",
+    "abilities": [
+      "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ có thể giả vờ bị đánh bại trước khi tung ra một đòn tập kích bất ngờ. Hãy cảnh giác.",
+      "Sau khi tan biến, kẻ địch này có thể dịch chuyển tức thời đến cạnh một cán viên và tấn công. Hãy cố gắng né tránh."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm",
+    "nickname": "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm",
+    "description": "Hiện thân của năng lượng Æther tồn dư, phóng chiếu hình dạng bên ngoài của một ĐĐNY Trưởng Nhóm. Chỉ những cựu binh đã chứng minh được tài năng chỉ huy, năng lực chiến đấu xuất chúng và lòng dũng cảm chân chính trên chiến trường mới có cơ hội trở thành ĐĐNY Trưởng Nhóm.",
+    "abilities": [
+      "Sau khi tan biến, kẻ địch này có thể dịch chuyển tức thời đến cạnh một cán viên và tấn công. Hãy cố gắng né tránh.",
+      "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm có thể dùng vũ khí để gọi sét đánh xuống. Thực thể Năng Lượng Bóng Nhiễm Khuẩn sẽ được kích hoạt khi bị sét đánh trúng."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Thiên Phu Trưởng",
+    "nickname": "Alleikhreos",
+    "description": "Một Tạo Vật của Nền Tảng, cũng là lão tướng từng kinh qua vô số trận chiến. Vị Thiên Phu Trưởng này đã lang bạt nơi Ætherside, cho đến khi tìm lại thanh kiếm thất lạc và xé mở khoảnh khắc để trở về.",
+    "abilities": [
+      "Khi thanh Suy Sụp của Alleikhreos, Thiên Phu Trưởng chạm đến Điểm Suy Sụp, hắn sẽ rơi ra một Vũ Khí Tạo Tác. Hãy điều khiển cán viên đang điều khiển đến gần để nhặt và dùng vũ khí đó tấn công hắn."
     ]
   }
 }

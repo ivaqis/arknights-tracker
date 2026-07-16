@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Inflição da Natureza",
+      "Corroer",
+      "Controle de Multidões"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido (EXCLUSIVO DO SISTEMA, não é visível dentro do jogo)"
+    ],
+    "blocTag": "Academia de Ciências de Hongshan (ACH)",
+    "expertTags": [
+      "Técnica de Combate",
+      "Constituição"
+    ],
+    "giftPreferTags": [
+      "Escolha do Explorador de Wuling"
+    ],
+    "hobbyTags": [
+      "Natureza",
+      "Caridade"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
+      },
+      "name": "Interdição de Artilharia",
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador DNO",
+        "stagger": "Desorientar"
+      },
+      "name": "Grade Esmagadora de Jade",
+      "description": "Cria uma <@ba.key>Grade Esmagadora de Jade</> que causa <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Multiplicador DNO Base",
+        "baseStagger": "Desorientação Base",
+        "imprisonmentAndSusceptibilityDurationS": "Duração do Aprisionamento e da Suscetibilidade (s)",
+        "susceptibility": "Suscetibilidade",
+        "baseSusceptibility": "Suscetibilidade Base",
+        "maxBonusSusceptibilityFromWill": "Suscetibilidade de Bônus Máxima por Vontade",
+        "willRequiredForMaxBonusSusceptibility": "Vontade Necessária para Suscetibilidade de Bônus Máxima",
+        "explosionDmgMultiplier": "Multiplicador DNO Explosão",
+        "explosionStagger": "Desorientação por Explosão",
+        "bonusDmgMultiplier": "Multiplicador DNO Bônus",
+        "bonusSusceptibilityDurationS": "Duração da Suscetibilidade de Bônus (s)",
+        "spReturn": "Devolução de PH",
+        "ultimateEnergyGain": "Ganho de Energia Suprema"
+      },
+      "name": "Postura Yinglung IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Multiplicador DNO Criação do Conjunto Expurgador da Melancolia",
+        "gloompurgerArrayCreationStagger": "Desorientação Criação do Conjunto Expurgador da Melancolia",
+        "gloompurgerArrayDurationS": "Duração do Conjunto Expurgador da Melancolia (s)",
+        "forcedCorrosionDurationS": "Duração da Corrosão Forçada (s)",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicador DNO Total de Ataque em Área",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador DNO Expurgo da Melancolia Arcane",
+        "gloompurgeArcanaStagger": "Desorientação Expurgo da Melancolia Arcane"
+      },
+      "name": "Expurgo da Melancolia",
+      "description": "Arcane cria um <@ba.key>Conjunto Expurgador da Melancolia</> que causa <@ba.natur>DNO Natureza</> imediatamente aos inimigos na área de efeito (ADE).\nAo atingir um inimigo dentro do <@ba.key>Conjunto Expurgador da Melancolia</> com um Finalizador ou <#ba.lastcombo>Golpe Final</> realizado pelo operador controlado, o <@ba.key>Conjunto Expurgador da Melancolia</> libera um <@ba.key>Ataque em Área</> que causa DNO em Área ao inimigo em questão. Esse efeito pode ser acionado até 2 vezes.\nApós acionar <@ba.key>Ataque em Área</> 2 vezes, a habilidade suprema é alternada para <@ba.key>Expurgo da Melancolia Arcane</>.\n<@ba.key>Expurgo da Melancolia Arcane</>: causa <@ba.natur>DNO Natureza</> a inimigos em uma grande ADE."
+    },
+    "indicator": {
+      "levels": [
+        "Inteligência e Vontade do Operador + 8.",
+        "Inteligência e Vontade do Operador + 10.",
+        "Inteligência e Vontade do Operador + 10.",
+        "Inteligência e Vontade do Operador + 15."
+      ],
+      "name": "Mente Aguçada/Inabalável"
+    },
+    "talent1": {
+      "levels": [
+        "Quando Inteligência de Arcane ≥ Vontade, mude o tipo de habilidade para <@ba.key>Conjunto Arcane: INT</>. Caso contrário, mude para <@ba.key>Conjunto Arcane: VON</>.\n<@ba.info>Os requisitos de atributos para os 2 tipos de Conjunto Arcane incluem apenas os efeitos dos níveis do operador, talentos, potenciais e bônus de atributos fornecidos por equipamentos e armas utilizados.</>",
+        "Quando Inteligência de Arcane ≥ Vontade, mude o tipo de habilidade para <@ba.key>Conjunto Arcane: INT</>. Caso contrário, mude para <@ba.key>Conjunto Arcane: VON</>.\nHabilidade suprema <@ba.key>Expurgo da Melancolia</> melhorada:\n<@ba.key>Conjunto Arcane: INT</>:\n- Durante a habilidade suprema, Arcane ganha <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Amp Artes</>.\n<@ba.key>Conjunto Arcane: VON</>:\n- Quando <@ba.key>Conjunto Expurgador da Melancolia</> (sequência 1 da habilidade suprema) e <@ba.key>Expurgo da Melancolia Arcane</> (sequência 2 da habilidade suprema) causam DNO ao inimigo, também aplicam <@ba.vup>[Vontade × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> (máx.: <@ba.vup>{spell_vul_rate:0.0%}</>) por <@ba.vup>{duration:0}</> s. Esse efeito não pode se acumular.\n<@ba.info>Os requisitos de atributos para os 2 tipos de Conjunto Arcane incluem apenas os efeitos dos níveis do operador, talentos, potenciais e bônus de atributos fornecidos por equipamentos e armas utilizados.</>"
+      ],
+      "name": "Planejamento Tático"
+    },
+    "talent2": {
+      "levels": [
+        "A <#ba.corrupt>Corrosão</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s a mais, e a Redução de Resistência Máxima é aumentada para <@ba.vup>{1+corrupt_rate:0.00}</> vezes a original.",
+        "A <#ba.corrupt>Corrosão</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s a mais, e a Redução de Resistência Máxima é aumentada para <@ba.vup>{1+corrupt_rate:0.0}</> vezes a original."
+      ],
+      "name": "Aprimoramento de Armas"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de minerais raros + 20%",
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de minerais raros + 30%"
+      ],
+      "name": "Arrancar a Montanha, Ferver o Mar"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 20%",
+        "Atribua à Câmara de Crescimento para conceder taxa de crescimento de plantas vitrificadas + 30%"
+      ],
+      "name": "Botanófilo"
+    },
+    "files": {
+      "main": "CODINOME: Arcane \nGÊNERO: Feminino \nAUTENTICAÇÃO: Força-Tarefa Especial de Yinglung \nDATA DE NASCIMENTO: 7 de julho \nRAÇA: Liberi \n[STATUS DE INFECÇÃO POR ORIPATIA] \nNegativa para Oripatia com base em relatórios de exames médicos. \n\n[EXAME FÍSICO INTEGRADO] \nFORÇA FISIOLÓGICA: Padrão \nHABILIDADE DE COMBATE: Excelente \nPERSPICÁCIA TÁTICA: Excepcional \nASSIMILAÇÃO DE ARTES DE ORIGINIUM: Excelente",
+      "humanResources": "A operadora Arcane (nome verdadeiro: Li Zhiyan) é uma capitã da Força-Tarefa Especial de Yinglung (FTEY) da Academia de Ciências de Hongshan. Após sofrer ferimentos durante uma operação na Zona de Exclusão do Norte de Wuling, ela recebeu permissão para um período prolongado de descanso e recuperação. Com autorização especial da FTEY, Arcane agora é parceira da Endfield Industries. \n\nDe acordo com a própria Operadora Arcane, este é seu primeiro período prolongado de descanso e recuperação. Nossos operadores médicos identificaram dezenas de locais com lesões internas. O trabalho na linha de frente em ambientes perigosos repletos de Praga não destruiu seu espírito, mas cobrou seu preço na forma de dor física constante e extenuante. Após conversarmos com membros da ACH, ficamos sabendo que a ACH espera que ela possa aproveitar a oportunidade para se recuperar de forma adequada. \"Deve ser uma pausa para compensar todas as pausas que ela perdeu durante vários anos seguidos.\" \n— Martin Marvin Malen, Assistente, Divisão de RH, Endfield Industries",
+      "file1": "A Capitã e Chen? Não sei muito sobre elas. Ouvi dizer que elas eram muito amigas e até formaram dupla durante os desafios de seleção. O desempenho delas também foi o mais notável entre os reservistas. Todos pensavam que elas se tornariam um par de Yinglungs promissoras estacionadas na Passagem de Yinglung. Mas depois disso... elas não paravam de discutir uma com a outra. E, quando não batiam boca, estavam se preparando para a próxima discussão acalorada. Você conhece a Capitã. Ela nunca recua. As duas foram atribuídas a grupos separados e a Capitã foi quem se tornou Yinglung... E se Chen se tornasse Yinglung...? Eu... não consigo imaginar isso. A Capitã continuará sendo a Capitã. E se ela fosse designada para a equipe da Capitã... alguém certamente seria realocado. Como observadores, o Instrutor Zhu e a Capitã tomaram a decisão correta. A disposição atual é a melhor para ambas. \n— Summit, soldado, Força-Tarefa Especial de Yinglung \n\nA FTEY não ensinou a Capitã a manejar o canhão pesado da sua unidade de artes. Perguntei a ela uma vez, e ela disse que faz parte do \"legado\" de seu pai. Houve uma época em que a Capitã não conseguia melhorar mais do que já era, não importava o quanto treinasse, então ela ficava trocando de armas. Lâminas, lanças, espadas, alabardas, machados, machados de guerra, ganchos e tridentes... Ela experimentou e se tornou hábil em todas, dominou vários estilos de luta, mas não estava satisfeita. Ela achava que não estava melhorando o suficiente, então dobrou seu regime de treinamento... As pessoas ficaram preocupadas que ela pudesse desmaiar de exaustão. Então, um dia, ela se deparou por acaso com o canhão da unidade de artes de seu pai, que estava guardado do lado de fora da propriedade. Ela nunca havia solicitado licença até então. Ninguém sabia para onde ela tinha ido durante alguns dias. Mas quando ela voltou, já havia decidido usar a arma de seu pai. E depois disso, ela simplesmente se tornou a Arcane que conhecemos. Nenhum Yinglung estacionado em Wuling é páreo para ela. \n— Phrase, soldado, Força-Tarefa Especial de Yinglung \n\nPARE DE DAR OUVIDOS AOS BOATOS! Ugh. Durante os desafios de seleção, ela... bem, ela estava tipo... é... tinha uma ligeira vantagem sobre mim. Mas eu sou uma lutadora muito melhor do que costumava ser! Se lutarmos de novo, darei a ela a vantagem de três ataques livres contra mim! Espere... talvez dois. Não se preocupe. Seria apenas um treino amigável. Pelo que me lembro, Arcane estava sempre carrancuda e mal-humorada, como se estivesse carregando um peso enorme o tempo todo. Mas desde que realizou seu desejo em relação à Zona de Exclusão do Norte de Wuling, ela ficou um pouco diferente. Ah, sim! Isso me faz lembrar de como ela era quando a conheci. Tentei perguntar a ela sobre seus encontros na Zona de Exclusão, mas ela se recusou a me dizer qualquer coisa. Não posso simplesmente ir lá e importunar Endmin com perguntas... Espere... Eu acho que posso... \n— Chen Qianyu, ex-reservista da Força-Tarefa Especial de Yinglung \n\nLi Zhiyan? Aquela garotinha Yinglung? Não. Nada de especial me vem à mente. Toda vez que a vejo, ela está sempre com cara fechada, inflexível e fazendo as pessoas se sentirem mal consigo mesmas. E ela não parava de tagarelar \"Lady Representante! Lady Representante!\" e eu tive que corrigi-la inúmeras vezes antes de conseguir obrigá-la a mudar. A vida mortal é curta, mas ela foi agraciada com capacidades poderosas. Mas veja só o que ela está fazendo com elas: vivendo a vida mais entediante de todas e se acorrentando a um monte de regras criadas por ela mesma. Bem, as coisas melhoraram um pouco recentemente. Seu semblante está um pouco mais suave, o que é, no mínimo, interessante. Talvez aquela bobalhona tenha feito alguma coisa. Humph. Aquela bobona sem noção ficou correndo por aí e acabou cheia de ferimentos. Desta vez não haverá escapatória. \n— Si",
+      "file2": "\"Ela pode parecer fria e insensível, mas é exatamente isso que a FTEY precisa.\" A avaliação que um observador externo faz de Li Zhiyan geralmente é muito simples. \nTodas as ações e escolhas de Li podem ser resumidas a esta afirmação: concluir a missão. Os soldados da Força-Tarefa Especial de Yinglung (FTEY) sempre lutam em ambientes extremos. Racionalidade fria e determinação pura ajudam a garantir o sucesso de uma missão. Se \"saída segura\" não estivesse listada como parte do objetivo da missão, todo Yinglung sabia o que isso significava. \nA FTEY possui uma câmara secreta mantida sob forte esquema de segurança. Eles não a utilizam para armazenar arquivos ou documentos de inteligência, mas sim os \"pertences\" de cada Yinglung. Ao se tornar um Yinglung, você recebe uma caixa e tem a liberdade de colocar nela o que quiser. Se você morrer em uma missão, aquele objeto dentro da caixa servirá como a única prova de sua existência. \nMas a caixa de Li Zhiyan permanecia vazia. \nEla disse ao curador da câmara que não tinha nada. Tudo o que ela um dia já teve foi sepultado no Miasma escuro, frio e tóxico da Zona de Exclusão do Norte de Wuling. \nO curador teve que dizer a ela que essa era uma regra da FTEY. Isso fez Li refletir. Que item melhor a representa? Se o título de Capitã da FTEY fosse retirado, haveria algo para ela colocar na caixa? Ela refletiu sobre o significado de \"si mesma\". \nEla só foi temporariamente atrapalhada pela pergunta. Em pouco tempo, ela encontrou um artista veterano no mercado que escreveu seu nome com um pincel de caligrafia. E foi esse nome que entrou na caixa. \nA pergunta não pareceu importante para ela. A próxima missão era sempre o que mais interessava. \n...... \nLi quase não visitou a câmara secreta até recentemente. Em suas várias visitas, sua caixa, antes tão negligenciada, começou a se encher. Uma caneta. Um botão. Uma adaga também se juntou à pilha... Cada item parecia banal e sem importância, como se ela simplesmente tivesse pegado algo de cima de uma mesa. Alguns pareciam presentes de seus vizinhos ou lembranças que alguém queria que ela repassasse... Mesmo assim, Li tratou todos eles como tesouros e os guardou cuidadosamente em sua caixa. \nQuando Endministrator, cheio de curiosidade, perguntou sobre isso, Li não respondeu mais com o silêncio severo que costumava fazer no passado. Em vez disso, ela deu uma resposta solene. \n\"Olhando para trás, percebi que perdi muitas coisas que deveria ter valorizado.\"",
+      "file3": "Meu estilo de combate? É baseado nas formações que meu pai me ensinou, combinadas com as táticas de Yinglung. \nMeu pai disse que as formações funcionam com base no princípio da \"mudança\". Cada formação confere impulso ao combatente e se move junto com ele. Nenhuma formação deve ser imutável ou permanente. Uma formação só está completa quando o guerreiro se torna parte dela. \nMeu pai me levou a muitos lugares quando eu era menina. Às vezes, descíamos os rios em toras de madeira. Ocasionalmente, subíamos em árvores muito altas. E quando nos cansávamos, simplesmente deitávamos na grama para contemplar as estrelas... Meu pai me ensinou as posições e os formatos das constelações. Mais tarde descobri que nada disso era apenas uma \"brincadeira\". Ele usou um método sutil, porém envolvente, para me ensinar seu conhecimento sobre formações e os ciclos de todos os tipos de entidades. \nOs Yinglungs, no entanto, me ensinaram o significado de \"permanência\" e como permanecer imóvel em meio a uma tempestade. A tática Yinglung baseia-se principalmente no \"impulso\" para criar uma força imparável. Diferentes táticas são usadas contra diferentes ameaças. Mas não importa se lutamos com espadas, lanças ou com nossas formações e formações. Cada Yinglung manteve-se firme em seu posto, concentrado em desferir o golpe decisivo para aniquilar o inimigo. \nTentei integrar as táticas de Yinglung às formações do meu pai. A primeira abordagem foca na equipe, em todo o campo de batalha e na complementação dos movimentos de cada membro, como o meu canhão triplex funcionando como uma unidade única. As formações do meu pai priorizam a flexibilidade e a mudança. Combinar essas duas abordagens foi difícil e me incomodou por um bom tempo... \nMas então voltei ao lugar onde meu pai e eu costumávamos brincar. Vi como as folhas caídas passavam pelas corredeiras do rio, como as aves-fera empoleiradas na ponta dos longos galhos balançavam com o vento e como as constelações nunca paravam, mas de alguma forma mantinham suas formas. Então, de repente, entendi o que meu pai costumava dizer. Eu sou a chave. Devo fazer parte da formação, ser a quarta peça do conjunto. \nSou o nó e o pivô que alteram a formação, o elemento variável que preenche a lacuna tática. Assim que aprendi a lição, me incorporei à formação. Com minha tira de jade, posicionei o canhão triplex e ajustei seu poder de fogo até que parecesse uma extensão do meu braço e da minha perna. Só então consegui dominar seu uso. \nMinhas Artes de Originium se concentram mais no \"fluxo\" de energia para criar um equilíbrio entre \"mudança\" e \"permanência\". De certa forma, minhas Artes são semelhantes às utilizadas pela Operadora Gilberta. Ela compartilhou algumas dicas sobre conjuração de Artes comigo. A operadora Arclight também manipulava correntes elétricas com elegância e domínio admiráveis, e por isso também pedi conselhos a ela. Ela respondeu com uma frase: \"Sinta isso\". De fato, a Dijiang é composta por um grupo de indivíduos incrivelmente talentosos e habilidosos, oferecendo muitas oportunidades de aprendizado, como a Operadora Last Rite, com sua força astronômica, e o Operador Pogranichnik, com seu conhecimento incomparável de formações militares... Espero que minha estadia na Dijiang me dê a oportunidade de aprimorar minhas habilidades e estudar os pontos fortes de cada escola... \nTambém estou tentando compilar essas lições em um livro. Outros Yinglungs interessados em dominar as formações e os canhões pesados podem usá-lo como referência. Espero que estes escritos possam ser úteis.",
+      "file4": "[REGISTRO DE RECEBIMENTO] \nDESTINATÁRIO: Li Zhiyan \nREMETENTE: Ling Yue \nENDEREÇO DO REMETENTE: Cidade de Wuling \nSTATUS: Assinado e recebido \nINSPEÇÃO: Inspeção aprovada \nMENSAGEM DE VOZ: \nZhiyan! Sou eu! Tia Liu! Ouvi dizer que você está aproveitando para descansar e relaxar na Endfield. Você devia ter me contado. Ah, garota. Toda a vizinhança ficou super preocupada! Então, pedi à moça do Jardim da Serenidade que me ajudasse a entregar algumas das suas coisas favoritas! Eram apenas algumas caixas de bolos de osmanthus e pudim de kohl doce. Eu o preparei há poucos dias para o aniversário do bebê, então ele não vai durar para sempre. Termine isso primeiro, ok? \nTia Shen também se preocupa muito com você. Ela encheu o pacote com alguns conjuntos de roupas que ela mesma costurou. Ela ouviu dizer que você agora está morando em uma nave espacial e, por isso, ficou reclamando do frio que você pode estar sentindo no espaço. Sim, é daí que vêm as roupas, caso você esteja se perguntando. \nAh, garota, não sei quando você vai voltar. Você sempre foi teimosa. Sempre sentada no mesmo lugar sem fazer nada. Você quase não brincava com outras meninas da sua idade. Em vez disso, você continuou tentando ajudar as tias da vizinhança. Isso não está certo! Você é uma garota adorável, mas estamos envelhecendo e não estaremos aqui para sempre. Ouça sua Tia e faça amigos na Endfield. Eu vi Endmin e a moça chamada Perlica, parecem ser pessoas muito simpáticas! E, se você não souber como puxar conversa, leve os bolinhos de arroz e o pudim de kohl doce para os Endfielders e deixe que eles experimentem a culinária da sua Tia! Faça isso algumas vezes e você terá novos amigos! \nA Tia viu você crescer. Você nunca gostou de conversar, mas a Tia sabe que você tem um olhar atento aos detalhes. Eu anotava cada vez que você nos ajudava. Lembra quando você voltou com uma foto da filhinha de Tia Shen? Tia Shen não conseguia parar de chorar naquele dia. A pobre garota foi embora quando tinha mais ou menos a sua idade. E então Tia Shen passou a tratar você como se você fosse filha dela. E... vale para todos nós. Você é uma filha de Wuling. A cidade sempre será o seu lar, não importa aonde você vá. \nAiyah, a conversa está ficando muito triste. A Tia aqui não é muito boa com as palavras, então talvez eu deva parar por aqui. Concentre-se apenas em melhorar e tente voltar para casa mais cedo. Quando você voltar para Wuling, a Tia vai preparar um banquete enorme para você! Não se esqueça dos conselhos da Tia! Traga também seus novos amigos! \n...... \nEspere. Aiyo, Tia Shen até tinha algo a dizer, mas começou a chorar de novo. Vou deixar que Ling Yue entregue o pacote e que Tia Shen grave uma mensagem de voz mais tarde. Espero que a gente não esteja incomodando. Ei! Não me apresse! Não vou demorar uma eternidade, ok! Espere. Bateria fraca? Como... \n\n[REGISTRO DE ENTREGA] \nREMETENTE: Li Zhiyan \nDESTINATÁRIO: Ling Yue \nENDEREÇO DO REMETENTE: NMO Dijiang \nSTATUS DE ENTREGA: Entregue \nINSPEÇÃO: Inspeção aprovada \nLISTA DE ITENS: \nXale Simonch – 5 peças \nBrisa de Kjersch – 5 potes \nQuebra-Cabeça do Portão Cósmico – 3 conjuntos \nCitromix [Rf.] – 10 garrafas \nMENSAGEM DE VOZ: \nLing Yue, sou eu... Li Zhiyan. Recebi o pacote dos idosos da vizinhança. Por favor, não deixe que entreguem outra encomenda... Tem de tudo a bordo da Dijiang, e ainda me sobraram muitas coisas depois de ter distribuído vários itens para Endmin e outros Endfielders... \nAcho que as tias gostaram dos xales que enviei pelo correio da última vez. Consegui mais alguns na Divisão de Logística, então deixe as senhoras mais velhas os distribuírem. Há também misturas com sabor de frutas que você não encontra em Wuling, além de brinquedos para crianças. \nNão se preocupe com o custo. Eu praticamente não tenho outras despesas. \nE diga a Tia Shen que esses itens são brindes da Endfield. Não quero que ela se preocupe muito."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Combo de habilidades <@ba.key>Postura Yinglung IV</> melhorado:\nO Multiplicador DNO é aumentado para <@ba.vup>{atk_scale_touch:0.0}</> vezes o original.\n<@ba.key>Conjunto Arcane: INT</>: atingir um inimigo sob <@ba.key>Aprisionamento</> com a habilidade de batalha de Arcane <#ba.return>devolve</> <@ba.vup>{atb_return_wisd:0}</> de PH adicional.\n<@ba.key>Conjunto Arcane: VON</>: efeitos da <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados <@ba.vup>+ {rate_pre:0%}</>.",
+      "name": "Observadora do Mar"
+    },
+    "potential2": {
+      "description": "Inteligência e Vontade <@ba.vup>+ {Will:0}</>, Intensidade das Artes <@ba.vup>+ {PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Coração de Ferrium Gelado"
+    },
+    "potential3": {
+      "description": "Talento <@ba.key>Aprimoramento de Armas</> melhorado:A \n<#ba.corrupt>Corrosão</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s a mais, e a Redução de Resistência Máxima é aumentada em <@ba.vup>{corrupt_rate:0%}</> da original.",
+      "name": "Portadora da Pedra"
+    },
+    "potential4": {
+      "description": "Habilidade suprema <@ba.key>Expurgo da Melancolia</> aprimorada: custo de Energia Suprema <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Mente de Aço Refinado"
+    },
+    "potential5": {
+      "description": "Habilidade suprema <@ba.key>Expurgo da Melancolia</> melhorada:\n<@ba.key>Conjunto Arcane: INT</>: durante a habilidade suprema, Arcane ganha <@ba.vup>{enhance_rate:0%}</> de <#ba.spellenhance>Amp Artes</>. O Multiplicador DNO de <@ba.key>Expurgo da Melancolia Arcane</> (sequência 2 da habilidade suprema) é aumentado para <@ba.vup>{atk_scale:0.0}</> vezes o original.\n<@ba.key>Conjunto Arcane: VON</>: aumenta ainda mais os efeitos de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados por <@ba.key>Conjunto Expurgador da Melancolia</> (sequência 1 da habilidade suprema) e <@ba.key>Expurgo da Melancolia Arcane</> (sequência 2 da habilidade suprema) em <@ba.vup>+ {spell_vul_rate_potential:0%}</>. Após a conjuração de <@ba.key>Expurgo da Melancolia Arcane</> (sequência 2 da habilidade suprema), se o combo de habilidades <@ba.key>Postura Yinglung IV</> ainda estiver em seu tempo de recarga, reduz imediatamente a duração do tempo de recarga em <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Vislumbre de Casa"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Pergunta para a Borboleta",
+      "author": "栗樺茶",
+      "description": "Memórias do passado se dissipam com facilidade; momentos de outrora se desfazem como bem entendem."
+    },
+    "potential3": {
+      "name": "Galho da Volta Para Casa",
+      "author": "狂zip",
+      "description": "A ave buscou sem parar, mas não encontrou um galho onde pousar."
+    },
+    "potential5": {
+      "name": "Lâmina Personificada",
+      "author": "Eteru",
+      "description": "Transforme o corpo em uma lâmina e condense o pensamento em Arcane."
+    }
+  }
+}

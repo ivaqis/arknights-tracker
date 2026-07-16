@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nature Infliction",
+      "Corrode",
+      "Crowd Control"
+    ],
+    "behaviourHateTags": [
+      "Fashion"
+    ],
+    "behaviourUnavailableTags": [
+      "Outgoing (SYSTEM ONLY, not visible in-game)"
+    ],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Combat Technique",
+      "Constitution"
+    ],
+    "giftPreferTags": [
+      "Wuling Explorer's Choice"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Charity"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+        "finisherAtkMultiplier": "Finisher ATK Multiplier",
+        "diveAtkMultiplier": "Dive ATK Multiplier"
+      },
+      "name": "Artillery Interdiction",
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "DMG Multiplier",
+        "stagger": "Stagger"
+      },
+      "name": "Jadecrushing Grid",
+      "description": "Creates a <@ba.key>Jadecrushing Grid</> that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies within the area of effect."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Base DMG Multiplier",
+        "baseStagger": "Base Stagger",
+        "imprisonmentAndSusceptibilityDurationS": "Imprisonment and Susceptibility Duration (s)",
+        "susceptibility": "Susceptibility",
+        "baseSusceptibility": "Base Susceptibility",
+        "maxBonusSusceptibilityFromWill": "Max Bonus Susceptibility from Will",
+        "willRequiredForMaxBonusSusceptibility": "Will Required for Max Bonus Susceptibility",
+        "explosionDmgMultiplier": "Explosion DMG Multiplier",
+        "explosionStagger": "Explosion Stagger",
+        "bonusDmgMultiplier": "Bonus DMG Multiplier",
+        "bonusSusceptibilityDurationS": "Bonus Susceptibility Duration (s)",
+        "spReturn": "SP Return",
+        "ultimateEnergyGain": "Ultimate Energy Gain"
+      },
+      "name": "Yinglung Stance IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Gloompurger Array Creation DMG Multiplier",
+        "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
+        "gloompurgerArrayDurationS": "Gloompurger Array Duration (s)",
+        "forcedCorrosionDurationS": "Forced Corrosion Duration (s)",
+        "clusterStrikeTotalDmgMultiplier": "Cluster Strike Total DMG Multiplier",
+        "gloompurgeArcanaDmgMultiplier": "Gloompurge Arcana DMG Multiplier",
+        "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
+      },
+      "name": "Gloompurge",
+      "description": "Arcane creates a <@ba.key>Gloompurger Array</> that immediately deals <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE).\nWhen hitting an enemy within the <@ba.key>Gloompurger Array</> with a Finisher or a <#ba.lastcombo>Final Strike</> performed by the controlled operator, the <@ba.key>Gloompurger Array</> unleashes a <@ba.key>Cluster Strike</> that deals Area DMG to the said enemy. This effect triggers up to 2 times.\nAfter triggering <@ba.key>Cluster Strike</> 2 times, the ultimate is switched to <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Deals <@ba.natur>Nature DMG</> to enemies within a large AOE."
+    },
+    "indicator": {
+      "levels": [
+        "Operator Intellect and Will +8.",
+        "Operator Intellect and Will +10.",
+        "Operator Intellect and Will +10.",
+        "Operator Intellect and Will +15."
+      ],
+      "name": "Keen Mind/Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "When Arcane's Intellect ≥ Will, switch skill type to <@ba.key>Array Arcana: INT</>. If not, then switch to <@ba.key>Array Arcana: WILL</>.\n<@ba.info>Attribute requirements for the 2 types of Array Arcana only include effects from operator levels, talents, potentials, and attribute bonuses provided by equipped gear and weapons.</>",
+        "When Arcane's Intellect ≥ Will, switch skill type to <@ba.key>Array Arcana: INT</>. If not, then switch to <@ba.key>Array Arcana: WILL</>.\nUltimate <@ba.key>Gloompurge</> improved:\n<@ba.key>Array Arcana: INT</>:\n- During the ultimate, Arcane gains <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Arts Amp</>.\n<@ba.key>Array Arcana: WILL</>:\n- When <@ba.key>Gloompurger Array</> (ultimate sequence 1) and <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) deal DMG to the enemy, they also apply <@ba.vup>[Will × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> (max: <@ba.vup>{spell_vul_rate:0.0%}</>) for <@ba.vup>{duration:0}</>s. This effect cannot stack.\n<@ba.info>Attribute requirements for the 2 types of Array Arcana only include effects from operator levels, talents, potentials, and attribute bonuses provided by equipped gear and weapons.</>"
+      ],
+      "name": "Tactical Planning"
+    },
+    "talent2": {
+      "levels": [
+        "<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>{duration_add:0}</>s longer, and Max Resistance Reduction is increased to <@ba.vup>{1+corrupt_rate:0.00}</> times the original.",
+        "<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>{duration_add:0}</>s longer, and Max Resistance Reduction is increased to <@ba.vup>{1+corrupt_rate:0.0}</> times the original."
+      ],
+      "name": "Weapon Honing"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assign to Growth Chamber to grant rare mineral growth rate +20%",
+        "Assign to Growth Chamber to grant rare mineral growth rate +30%"
+      ],
+      "name": "Pluck the Mountain, Boil the Sea"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assign to Growth Chamber to grant vitrified plant growth rate +20%",
+        "Assign to Growth Chamber to grant vitrified plant growth rate +30%"
+      ],
+      "name": "Botanophile"
+    },
+    "files": {
+      "main": "CODENAME: Arcane \nGENDER: Female \nAUTHENTICATION: Yinglung Special Task Force \nDOB: July 7 \nRACE: Liberi \n[ORIPATHY INFECTION STATUS] \nOripathy negative, based on medical examination reports. \n\n[INTEGRATED PHYSICAL EXAMINATION] \nPHYSIOLOGICAL STRENGTH: Standard \nCOMBAT SKILL: Excellent \nTACTICAL ACUMEN: Outstanding \nORIGINIUM ARTS ASSIMILATION: Excellent",
+      "humanResources": "Operator Arcane (given name: Li Zhiyan) is a Hongshan Academy of Sciences Yinglung Special Task Force (YSTF) captain. Following injuries suffered during an operation in the North Wuling Exclusion Zone (EZ), she has been permitted to take an extended R&R. With special permission from the YSTF, Arcane is now a partner of Endfield Industries. \n\nAccording to Operator Arcane herself, this is her first long R&R. Our medical operators identified several dozen sites of internal injuries. Frontline work in dangerous Blight environments did not destroy her spirit, yet it has taken a toll on her in the form of constant and grueling physical pain. After conversing with members of the HAS, we learned that the HAS hopes that she can use the opportunity for proper recovery. \"It should be a break to make up for all the breaks she missed for several years running.\" \n— Martin Marvin Malen, Assistant, HR Division, Endfield Industries",
+      "file1": "The Captain and Chen? I don't know much about that. I heard they were pretty good friends and even partnered up during the selection trials. Their performance was also the most outstanding amongst the reservists. Everyone thought they would become a pair of promising Yinglungs garrisoned at Yinglung Pass. But after that ... they wouldn't stop arguing with each other. And if they weren't, they were preparing for the next shouting match. You know the Captain. She never backs down. The two were assigned to separate groups and the Captain was the one that became an Yinglung... What if Chen becomes an Yinglung...? I ... can't imagine that. The Captain will still be the Captain. And if she were ever assigned to the Captain's team ... someone would definitely get reassigned. As a bystander, Instructor Zhu and the Captain made the right call. The current arrangement is the best for both of them. \n— Summit, trooper, Yinglung Special Task Force \n\nThe YSTF didn't teach the Captain how to wield her heavy arts unit cannon. I asked her once, and she said it's part of her father's \"legacy\". There was a time when the Captain couldn't get any better no matter how hard she trained, so she kept swapping her weapons. Blades, spears, swords, halberds, axes, broadaxes, hooks, and tridents... She tried them all, got decent with everything, mastered all sorts of fighting styles, but she wasn't satisfied. She thought she wasn't getting good enough, so she doubled her training regimen... People got worried that she'd collapse from exhaustion. Then one day she chanced upon her father's arts unit cannon that was stored outside the place. She never applied for leave until then. No one knew where she went for a couple of days. But when she came back, she had made up her mind to use her father's weapon. And after that, she just became the Arcane we know. No Yinglung garrisoned at Wuling is a match for her. \n— Phrase, trooper, Yinglung Special Task Force \n\nSTOP LISTENING TO THE RUMORS! Ugh. During the selection trials, she ... welp, she was like ... yeah ... got that slight edge over me. But I'm a far better fighter than I used to! If we fight again, I'll give her three free attacks on me! Wait ... maybe two. Don't worry. It'd be just a friendly spar. From what I remember, Arcane was always frowning and grumpy, like she was constantly carrying a huge boulder around. But since she fulfilled her wish about the North Wuling EZ, she's turned a little different. Oh yeah! It reminds me of how she looked like when I first met her. I tried asking her about her encounters in the EZ but she refused to say anything to me. I can't just go and pester the Endmin with questions... Wait... I think I can... \n— Chen Qianyu, former reservist, Yinglung Special Task Force \n\nLi Zhiyan? That little Yinglung girl? Nope. Nothing special comes to mind. Every time I see her, she's always stern-faced, stiff-necked, and making people feel bad about themselves. And she wouldn't stop yapping \"Lady Proxy! Lady Proxy!\" and I had to correct her umpteen times before I could force her to change. Mortal life is short, yet she's blessed with powerful abilities. But look at what she's doing with them: Living the most boring life ever and shackling herself with a load of self-made rules. Well, things have gotten a bit better recently. Her face softened up a little, so that's quite interesting, at least. Maybe the silly dolt did something. Hmph. That clueless idiot romped around and ended up with a bunch of injuries. There'll be no escape this time. \n— Si",
+      "file2": "\"She may come off as cold and heartless, but that is what's needed in the YSTF.\" A bystander's evaluation of Li Zhiyan is usually very simple. \nAll of Li's actions and choices can be boiled down to this statement: Finishing the mission. The troopers of the Yinglung Special Task Force (YSTF) always fight in extreme environments. Cold rationality and sheer determination help guarantee the success of a mission. If \"safe exit\" is not listed as part of the mission objective, every Yinglung knew what it meant. \nThe YSTF has a secret chamber kept under tight security. They do not use it for storing intel files or documents, but for the \"belongings\" of every Yinglung. When you become an Yinglung, you are given a box and you are free to put anything you want in it. In the event that you fall during a mission, that thing in the box will function as the only proof of your existence. \nBut Li Zhiyan's box remained empty. \nShe told the chamber custodian that she had nothing. Everything she once had was buried within the dark, cold, and toxic Miasma of the North Wuling Exclusion Zone. \nThe custodian had to tell her that this was a YSTF rule. It made Li think. What item best represents herself? If the title of YSTF Captain were taken from her, is there anything that she could put in the box? She pondered about the meaning of \"self\". \nShe was only temporarily hampered by the question. Soon enough, she found an old artist on the market to write her name down with a calligraphy brush. This name was the thing that entered the box. \nThe question did not feel important to her. It was the next mission that always mattered most. \n...... \nLi barely visited the secret chamber until recently. In her multiple visits, her once threadbare box began to fill. A pen. A button. A dagger also joined the pile... Every item appeared mundane and meaningless, as though she just grabbed something from the desk. A few seemed like gifts from her neighbors or keepsakes that someone wanted her to pass on... Yet Li treated them all like treasure and carefully placed them in her box. \nWhen a curious Endministrator asked about this, Li no longer responded with stern silence as she'd often done in the past. Instead, she gave a solemn answer. \n\"I looked back and realized that I have missed so many things that I should have treasured.\"",
+      "file3": "My combat style? It's based on the arrays that my Father taught me combined with Yinglung tactics. \nFather said that arrays operate on the principle of \"change\". The array gives the wielder momentum, and moves with the wielder as well. No array should be unchanging or permanent. An array is only complete when the wielder becomes part of it. \nFather brought me to many places when I was a girl. Sometimes we rode logs down rivers. Sometimes we climbed really tall trees. And when we got tired, we'd just lie down on the grass to gaze at the stars... Father taught me their positions and the shapes of the constellations. I later learned that none of this was just a \"game\". He used a subtle yet engaging way to teach me his knowledge of arrays and the cycles of all sorts of entities. \nThe Yinglungs, however, taught me the meaning of \"permanence\", and how to remain unmoving in the midst of a storm. The Yinglung tactic relies primarily on \"momentum\" to create an unstoppable force. Different tactics are used against different threats. Yet it does not matter if we fought with swordmancy, spearmancy, or with our formations and arrays. Every Yinglung stuck to their post and focused on unleashing the momentous strike to obliterate the foe. \nI tried integrating Yinglung tactics with my Father's arrays. The former focuses on the team, the entire battlefield, and complementing each other's moves, like how my triplex cannon function as a single unit. My Father's arrays focus on flexibility and change. Combining these two approaches was difficult and troubled me for quite some time... \nBut then I revisited the place where Father and I used to play. I saw how falling leaves passed through river rapids, how fowlbeasts perched at the end of long branches swung with the wind, and how the constellations never stopped yet somehow retained their shapes — Then I suddenly understood what Father used to say. I am the key. I must be part of the formation, the fourth piece of the array. \nI am the knot and pivot by which the array changes, the variable element that fills the tactical gap. Once I learned the lesson, I incorporated myself into the array. With my jade slip I positioned the triplex cannon and adjusted its firepower until it felt like an extension of my arm and leg. Only then did I master its use. \nMy Originium Arts focus more on the \"flow\" of energy to create an equilibrium of \"change\" and \"permanence\". In a way, my Arts are similar to those wielded by Operator Gilberta. She shared a few tips about Arts casting with me. Operator Arclight also wielded electrical currents with beautiful elegance and mastery, and so I asked her for advice as well. She responded with a phrase: \"Feel it.\" Indeed, Dijiang is a gathering of incredibly talented and skilled individuals and offers plenty of learning opportunities, like Operator Last Rite with her astronomical strength and Operator Pogranichnik with his unparalleled knowledge of military formations... I hope my stay aboard Dijiang will give me a chance to improve my own skills and study the strengths of every school... \nI'm also trying to compile these lessons into a book. Other Yinglungs trying to master the arrays and heavy cannons can use it for reference. I hope these writings can provide them with assistance.",
+      "file4": "[RECEIVING RECORD] \nRECIPIENT: Li Zhiyan \nSENDER: Ling Yue \nSENDER'S ADDRESS: Wuling City \nSTATUS: Signed and received \nINSPECTION: Inspection passed \nVOICE MESSAGE: \nZhiyan! It's me! Auntie Liu! I heard you're getting some R and R at Endfield. You should have told me, Ah Girl. The entire neighborhood got super worried! So I asked the young lady at Serenity Garden to help deliver some of your favorite things! Just a few boxes of osmanthus cakes and sweet kohl pudding. I brewed it just a few days ago for baby's birthday, so it won't keep forever. Finish it first, okay? \nAuntie Shen also cares a lot about you. She stuffed the package with a few sets of clothing that she sewed. She heard you're now staying on a spaceship and so she kept complaining how cold you are in space. So yes, that's where the clothes are from in case you're wondering. \nAh Girl, I don't know when you'd be back. You've always been stubborn. Always sitting at one spot and doing nothing. You hardly played with other girls your age. Instead, you kept trying to help the aunties in the neighborhood. It's not right! You are a darling girl but we're getting old and won't be around forever. Listen to your Auntie and make some friends at Endfield. I saw their Endmin and the young lady called Perlica, and they look very nice to me! And if you don't know how to make small talk, just take the rice cakes and sweet kohl pudding to the Endfielders, and let them try out your Auntie's cooking! Do this a few times and you'll have new friends! \nAuntie watched you grow up. You never liked to talk, but Auntie knows you got an eye for details. I made a note every time you helped us. Remember when you returned with a photo of Auntie Shen's little girl? Auntie Shen couldn't stop crying that day. Poor girl left when she was around your age, so Auntie Shen treated you like her own. And ... it's the same for all of us. You are a child of Wuling. The city is always your home, no matter where you go. \nAiyah, the talk is getting too sad. Auntie isn't very good with words, so maybe I should stop here. Just focus on getting better and try to come home early. Once you come back to Wuling, Auntie will make a huge feast for you! Don't forget about Auntie's advice! Bring your new friends too! \n...... \nWait. Aiyo, Auntie Shen actually has something to say but she started crying again. I'll just let Ling Yue deliver the package and let Auntie Shen record a voice message later. Hope we're not bugging you. Hey! Don't rush me! I'm not taking forever, okay! Wait. Low battery? How — \n\n[DELIVERY RECORD] \nSENDER: Li Zhiyan \nRECIPIENT: Ling Yue \nSENDER'S ADDRESS: OMV Dijiang \nDELIVERY STATUS: Delivered \nINSPECTION: Inspection passed \nLIST OF ITEM(S): \nSimonch Shawl - 5 pieces \nBreeze of Kjersch - 5 jars \nCosmic Gate Puzzle - 3 sets \nCitromix [Rf.] - 10 bottles \nVOICE MESSAGE: \nLing Yue, It's me ... Li Zhiyan. I received the package from the old folks of the neighborhood. Please don't let them deliver another package... There's everything aboard Dijiang, and I still got plenty of stuff left after giving away plenty of things to the Endmin and other Endfielders... \nI think the aunties like the shawls I mailed last time. I procured a few more from the Logistics Division so just let the old ladies sort them out. There are also fruit-flavored mixes you can't find in Wuling and toys for the children. \nDon't worry about the cost. I hardly have any other expenses. \nAnd tell Auntie Shen that the things are free giveaways from Endfield. I don't want her to worry too much."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Combo skill <@ba.key>Yinglung Stance IV</> improved:\nDMG Multiplier is increased to <@ba.vup>{atk_scale_touch:0.0}</> times the original.\n<@ba.key>Array Arcana: INT</>: Hitting an enemy under <@ba.key>Imprisonment</> with Arcane's battle skill <#ba.return>returns</> <@ba.vup>{atb_return_wisd:0}</> additional SP.\n<@ba.key>Array Arcana: WILL</>: Effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Watcher of the Sea"
+    },
+    "potential2": {
+      "description": "Intellect and Will <@ba.vup>+{Will:0}</>, Arts Intensity <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Heart of Ice Cold Ferrium"
+    },
+    "potential3": {
+      "description": "Talent <@ba.key>Weapon Honing</> improved:\n<#ba.corrupt>Corrosion</> applied by Arcane lasts <@ba.vup>{duration_add:0}</>s longer, and Max Resistance Reduction is increased by <@ba.vup>{corrupt_rate:0%}</> of the original.",
+      "name": "Wielder of Stone"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Gloompurge</> improved: Ultimate Energy cost <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Mind of Refined Steel"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>Gloompurge</> improved:\n<@ba.key>Array Arcana: INT</>: During the ultimate, Arcane gains <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Arts Amp</>. DMG Multiplier of <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) is increased to <@ba.vup>{atk_scale:0.0}</> times the original.\n<@ba.key>Array Arcana: WILL</>: Further increases the effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied by <@ba.key>Gloompurger Array</> (ultimate sequence 1) and <@ba.key>Gloompurge Arcana</> (ultimate sequence 2) by <@ba.vup>+{spell_vul_rate_potential:0%}</>. After casting <@ba.key>Gloompurge Arcana</> (ultimate sequence 2), if combo skill <@ba.key>Yinglung Stance IV</> is still in its cooldown, immediately shorten the length of the cooldown by <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Homeward Glance"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Question for the Butterfly",
+      "author": "栗樺茶",
+      "description": "Memories of the past break with ease; moments of yesteryear dissipate as they please."
+    },
+    "potential3": {
+      "name": "Branch of Homecoming",
+      "author": "狂zip",
+      "description": "The fowl searched but found no rest, no branch of home to catch her breath."
+    },
+    "potential5": {
+      "name": "Blade Personified",
+      "author": "Eteru",
+      "description": "Transform the body into a blade, and condense thought into the arcane."
+    }
+  }
+}

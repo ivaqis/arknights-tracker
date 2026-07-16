@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Ao conjurar a habilidade de batalha <@ba.key>Marcha à Frente</> e o combo de habilidades <@ba.key>Apoio na Linha de Frente</>, Ember ganha <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Proteção</> e se torna menos propensa a ser interrompida.",
-        "Ao conjurar a habilidade de batalha <@ba.key>Marcha à Frente</> e o combo de habilidades <@ba.key>Apoio na Linha de Frente</>, Ember ganha <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Proteção</> e se torna menos propensa a ser interrompida."
+        "Ao conjurar a habilidade de batalha <@ba.key>Marcha à Frente</> e o combo de habilidades <@ba.key>Apoio na Linha de Frente</>, Ember ganha <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Proteção</> e se torna menos propensa a ser interrompida.",
+        "Ao conjurar a habilidade de batalha <@ba.key>Marcha à Frente</> e o combo de habilidades <@ba.key>Apoio na Linha de Frente</>, Ember ganha <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Proteção</> e se torna menos propensa a ser interrompida."
       ],
       "name": "Vontade de Fogo"
     },

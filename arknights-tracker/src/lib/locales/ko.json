@@ -358,7 +358,9 @@
     "special_1_3_1": "후회 없는 주먹",
     "weponbox_1_3_1": "붉은 결속 신청",
     "special_1_3_2": "죄를 쫓는 자",
-    "weponbox_1_3_2": "적색화 신청"
+    "weponbox_1_3_2": "적색화 신청",
+    "special_1_4_1": "벼랑 끝, 북쪽을 향한 시선",
+    "weponbox_1_4_1": "제대 신청"
   },
   "pages": {
     "home": "홈",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "기억의 흔적 · 분노의 외침",
     "umbralMonument": "그림자 이정표",
     "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크",
-    "northwardToPerilSignIn": "북쪽 험지 출석 체크"
+    "northwardToPerilSignIn": "북쪽 험지 출석 체크",
+    "echoesOfWar": "전쟁의 메아리",
+    "gazeTowardsTheNorthernExclusion": "북쪽 관측 금지 구역",
+    "tributeOfCompanionship": "인연의 선물",
+    "heatRageMegaArena": "타올라라! 경기 대회!",
+    "monumentalEtchingBeastlyHowl": "기억의 흔적 · 비스트의 외침",
+    "theRootedRealm": "미지의 구역",
+    "protocolPassBlightedSea": "프로토콜 통행증 · 침식 조류",
+    "gazeNorthToTheRiftSignIn": "심연에서 북쪽을 바라보며 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "액화 중식양",
     "centuryRind": "백년 숙성 진피",
     "caudalGoldscale": "꼬리 금갑",
-    "stickerSafetyHelmet": "스티커 · 공업 안전모"
+    "stickerSafetyHelmet": "스티커 · 공업 안전모",
+    "pyrrolite": "작동 조각",
+    "pyrrolitePart": "작동 부품",
+    "cupriumCanister": "적동 내압 캔",
+    "shadowDew": "잔영의 이슬 방울",
+    "glaiveFragment": "진형 파괴자의 칼 조각",
+    "blightshadeBezoar": "그림자 비스트의 돌",
+    "pyrroliteComponent": "작동 장비 부품",
+    "separatorCore": "분리 필터",
+    "acridgen": "산성 기체",
+    "cupriumGas": "기체 적동",
+    "hetoniteGas": "기체 혁동",
+    "pyrroliteGas": "기체 작동",
+    "inergen": "비활성 기체",
+    "aquagen": "수증기",
+    "xiragen": "식양 기체",
+    "heavyXiragen": "중식양 기체",
+    "crimsonSpearleaf": "붉은 창 잎",
+    "talosCap": "탈로스 버섯",
+    "protocolith": "프로토콜 문양석"
   },
   "common": {
     "copy": "복사",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "장방이",
     "miFu": "미브",
     "mifu": "미브",
-    "camille": "카뮤"
+    "camille": "카뮤",
+    "arcane": "결"
   },
   "weaponsList": {
     "industry01": "공업 0.1",
@@ -1087,7 +1117,11 @@
     "phantomPain": "환상통",
     "amaranthineTassel": "적영",
     "beaconOfDuty": "등불의 사명",
-    "blessingOfLustrousCarmine": "붉게 물든 가호"
+    "blessingOfLustrousCarmine": "붉게 물든 가호",
+    "type42SolemnPhalanx": "42식 · 척결",
+    "junctionPoint": "공명점",
+    "goldenAge": "전성기",
+    "farsight": "조망"
   },
   "cookies": {
     "title": "쿠키 사용 안내",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "고위 에너지 응집점 · 장검 골짜기",
     "world_energy_point09_5": "고위 에너지 응집점 · 장검 골짜기",
     "world_energy_point09_6": "고위 에너지 응집점 · 장검 골짜기",
-    "world_energy_point09_7": "고위 에너지 응집점 · 장검 골짜기"
+    "world_energy_point09_7": "고위 에너지 응집점 · 장검 골짜기",
+    "world_energy_point10_1": "에너지 응집점 · 응룡 관문",
+    "world_energy_point10_2": "에너지 응집점 · 응룡 관문",
+    "world_energy_point10_3": "에너지 응집점 · 응룡 관문",
+    "world_energy_point10_4": "고위 에너지 응집점 · 응룡 관문",
+    "world_energy_point10_5": "고위 에너지 응집점 · 응룡 관문",
+    "world_energy_point10_6": "고위 에너지 응집점 · 응룡 관문",
+    "world_energy_point10_7": "고위 에너지 응집점 · 응룡 관문",
+    "world_energy_point11_1": "에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_2": "에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_3": "에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_4": "고위 에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_5": "고위 에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_6": "고위 에너지 응집점 · 북쪽 금지 구역",
+    "world_energy_point11_7": "고위 에너지 응집점 · 북쪽 금지 구역"
   },
   "enemies": {
     "eny_0007_mimicw": "터널링 니드웜",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "천고",
     "eny_0112_jzmonk": "록하울러",
     "eny_0113_jzogre": "무장 맹글러",
-    "eny_0114_jzmking": "거대한 록하울러"
+    "eny_0114_jzmking": "거대한 록하울러",
+    "eny_0117_klhound": "그림자에 물든 터스크비스트",
+    "eny_0118_klhog": "그림자에 물든 프릭비스트",
+    "eny_0119_kltiger": "그림자에 물든 레이커비스트",
+    "eny_0120_klbear": "그림자에 물든 진뢰",
+    "eny_0121_klbud": "그림자에 물든 응룡 대원 · 선봉",
+    "eny_0122_kltdbud": "그림자에 물든 응룡 대원 · 정예",
+    "eny_0123_klcap": "그림자에 물든 응룡 대원 · 돌파",
+    "eny_0124_kltdcap": "그림자에 물든 응룡 대장",
+    "eny_0125_fdcentur": "알레이크레오스, 천부장"
   },
   "essencesPage": {
     "optimizer": "파밍 최적화",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "고검의 잔향 단검 · I",
     "item_equip_t4_suit_crush_fracture_hand_01": "고검의 잔향 금속 장갑",
     "item_equip_t4_suit_crush_fracture_hand_02": "고검의 잔향 금속 장갑 · I",
-    "item_equip_t4_suit_phy01_body_04": "검술사 섬유 방어구"
+    "item_equip_t4_suit_phy01_body_04": "검술사 섬유 방어구",
+    "item_equip_t4_parts_wuling00_body_01": "통합 실전 훈련 방어구",
+    "item_equip_t4_parts_wuling00_body_02": "통합 실전 훈련 강철 방어구",
+    "item_equip_t4_parts_wuling00_body_03": "통합 실전 훈련 흉갑",
+    "item_equip_t4_parts_wuling00_edc_01": "통합 실전 훈련 정글도",
+    "item_equip_t4_parts_wuling00_edc_02": "통합 실전 훈련 점화석",
+    "item_equip_t4_parts_wuling00_edc_03": "통합 실전 훈련 조명 장치",
+    "item_equip_t4_parts_wuling00_hand_01": "통합 실전 훈련 장갑",
+    "item_equip_t4_parts_wuling00_hand_02": "통합 실전 훈련 보호 장갑",
+    "item_equip_t4_parts_wuling00_hand_03": "통합 실전 훈련 붕대",
+    "item_equip_t4_parts_wuling02_body_01": "절망 중갑",
+    "item_equip_t4_parts_wuling02_body_02": "절망 경갑",
+    "item_equip_t4_parts_wuling02_edc_01": "절망 방탄 방어구",
+    "item_equip_t4_parts_wuling02_hand_01": "절망 보호 장갑",
+    "item_equip_t4_parts_wuling02_hand_02": "절망 장갑",
+    "item_equip_t4_suit_fire_natr01_edc_04": "열 작업용 단열판",
+    "item_equip_t4_suit_fire_natr01_hand_04": "열 작업용 보호 장갑",
+    "item_equip_t4_suit_heal01_body_03": "생체 보조 흉갑 · I",
+    "item_equip_t4_suit_heal01_hand_03": "생체 보조 금속 장갑 · I",
+    "item_equip_t4_suit_usp02_body_03": "식양의 숨결 경량 방어구",
+    "item_equip_t4_suit_usp02_body_04": "식양의 숨결 경량 방어구 · I",
+    "item_equip_t4_suit_usp02_edc_04": "식양의 숨결 강화판",
+    "item_equip_t4_suit_usp02_hand_03": "식양의 숨결 보호대",
+    "item_equip_t4_suit_usp02_hand_04": "식양의 숨결 장갑"
   },
   "packs": {
     "none": "세트 없음",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "통합 경량형 모델",
     "suit_combo_cd01": "청파",
     "suit_expend_spell01": "식양의 흐름",
-    "suit_crush_fracture": "고검의 잔향"
+    "suit_crush_fracture": "고검의 잔향",
+    "suit_generaltype": "통합 실전 훈련"
   },
   "equipmentTypes": {
     "body": "방어구",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "모든 피해 감소",
     "Sub": "보조 능력치",
     "AllSkillDamageIncrease": "모든 스킬 피해 보너스",
-    "FireAndNaturalDamageIncrease": "열기와 자연 피해 보너스"
+    "FireAndNaturalDamageIncrease": "열기와 자연 피해 보너스",
+    "PhysicalResistance": "물리 저항",
+    "NatureResistance": "자연 저항",
+    "CryoResistance": "냉기 저항",
+    "ElectricResistance": "전기 저항",
+    "HeatResistance": "열기 저항",
+    "TherResistance": "초자연 저항"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "아겔로스",
     "wiki_group_monster_landbreaker": "랜드브레이커",
     "wiki_group_monster_hongshan": "창적",
-    "wiki_group_monster_animal": "야외 생물"
+    "wiki_group_monster_animal": "야외 생물",
+    "wiki_group_monster_kl": "침식의 그림자",
+    "wiki_group_monster_js": "파운다이트"
   },
   "resitances": {
     "heatRez": "열기 저항",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "'무기물'",
     "turbidityManifest": "'탁류 구현'",
     "thoseForsakenByTheLand": "'대지에게 버림받은 존재'"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "식양 기술",
+    "cupriumTechnique": "적동 기술",
+    "hetoniteTechnique": "혁동 기술",
+    "pyrroliteTechnique": "작동 기술"
   }
 }

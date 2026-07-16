@@ -363,7 +363,9 @@
     "weponbox_1_2_2": "Gói Luyện Hỏa",
     "weponbox_1_2_3": "Gói Hành Tốc",
     "special_1_3_2": "Đấng Xá Tội",
-    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc"
+    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc",
+    "special_1_4_1": "Đứng Canh Khe Nứt Bứt Rứt Nhớ Quê",
+    "weponbox_1_4_1": "Gói Rút Cấp Quân Dụng"
   },
   "pages": {
     "home": "Trang chủ",
@@ -402,7 +404,7 @@
     "thoseForsakenByTheLand": "Khắc Bia Kỷ Niệm: Vết Thương Cũ «Những Kẻ Bị Đất Bỏ Rơi»",
     "inorganicConstruct": "Khắc Bia Kỷ Niệm: Vết Thương Cũ «Cấu Trúc Vô Cơ»",
     "protoPass": "Thẻ Giao Thức",
-    "fortuneConnectAndWin": "'Kết Nối Vận May và Chiến Thắng",
+    "fortuneConnectAndWin": "Kết Nối Và Chiến Thắng: Vận May",
     "stepsToSweetSuccess": "Từng bước thăng tiến",
     "springNoteWarmlyCrafted": "Thiệp Xuân Ấm Áp, Trao Gửi Yêu Thương",
     "fireWalkerTrialSignIn": "Đăng Nhập Dấu Chân Lửa",
@@ -448,7 +450,15 @@
     "monumentalEtchingDirgeOfGrief": "Văn Khắc Kỷ Niệm: Bi Ca Sầu Muộn",
     "umbralMonument": "Đài Bóng Tối",
     "peacekeepersNocturneSignIn": "Điểm Danh Dạ Khúc Bảo Vệ Hòa Bình",
-    "northwardToPerilSignIn": "Điểm Danh Bắc Tiến Vào Hiểm Nguy"
+    "northwardToPerilSignIn": "Điểm Danh Bắc Tiến Vào Hiểm Nguy",
+    "echoesOfWar": "Tiếng Vọng Nơi Chiến Trận",
+    "gazeTowardsTheNorthernExclusion": "Dõi Về Khu Cấm Bắc",
+    "tributeOfCompanionship": "Quà Tặng Đồng Hành",
+    "heatRageMegaArena": "NHIỆT HUYẾT SỤC SÔI! SIÊU ĐẤU TRƯỜNG!",
+    "monumentalEtchingBeastlyHowl": "Văn Khắc Kỷ Niệm: Tiếng Tru Dã Thú",
+    "theRootedRealm": "Vùng Đất Khởi Nguyên",
+    "protocolPassBlightedSea": "Thẻ Giao Thức: Biển Nhiễm Khuẩn",
+    "gazeNorthToTheRiftSignIn": "Điểm Danh Dõi Về Khe Nứt Phương Bắc"
   },
   "mouths": {
     "january": "Tháng 1",
@@ -861,7 +871,26 @@
     "liquidHeavyXiranite": "Xiranite Nặng Hóa Lỏng",
     "centuryRind": "Trần Bì Trăm Năm",
     "caudalGoldscale": "Vảy Đuôi Hoàng Kim",
-    "stickerSafetyHelmet": "Nhãn dán: Mũ Bảo Hộ"
+    "stickerSafetyHelmet": "Nhãn dán: Mũ Bảo Hộ",
+    "pyrrolite": "Nham Đồng",
+    "pyrrolitePart": "Mảnh Nham Đồng",
+    "cupriumCanister": "Bình Chứa Đồng",
+    "shadowDew": "Sương Ảnh",
+    "glaiveFragment": "Mảnh Đao Cán Dài",
+    "blightshadeBezoar": "Kết Thạch Bóng Nhiễm Khuẩn",
+    "pyrroliteComponent": "Linh Kiện Nham Đồng",
+    "separatorCore": "Lõi Phân Tách",
+    "acridgen": "Khí Axit",
+    "cupriumGas": "Khí Đồng",
+    "hetoniteGas": "Khí Huyết Đồng",
+    "pyrroliteGas": "Khí Nham Đồng",
+    "inergen": "Khí Trơ",
+    "aquagen": "Thủy Khí",
+    "xiragen": "Khí Xiranite",
+    "heavyXiragen": "Khí Xiranite Đậm Đặc",
+    "crimsonSpearleaf": "Thương Diệp Huyết Sắc",
+    "talosCap": "Nấm Mũ Talos",
+    "protocolith": "Thạch Giao Thức"
   },
   "common": {
     "copy": "Sao chép",
@@ -1057,7 +1086,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcane"
   },
   "weaponsList": {
     "industry01": "Công Nghiệp 0.1",
@@ -1131,7 +1161,11 @@
     "phantomPain": "Cơn Đau Ảo",
     "amaranthineTassel": "Dải Tua Bất Diệt",
     "beaconOfDuty": "Ngọn Đuốc Trách Nhiệm",
-    "blessingOfLustrousCarmine": "Phước Lành Rực Đỏ"
+    "blessingOfLustrousCarmine": "Phước Lành Rực Đỏ",
+    "type42SolemnPhalanx": "Loại 42: Phương Trận Trang Nghiêm",
+    "junctionPoint": "Giao Thoa",
+    "goldenAge": "Thời Đại Hoàng Kim",
+    "farsight": "Viễn Kiến"
   },
   "cookies": {
     "title": "Chúng tôi sử dụng cookie",
@@ -1235,7 +1269,21 @@
     "world_energy_point09_4": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
     "world_energy_point09_5": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
     "world_energy_point09_6": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
-    "world_energy_point09_7": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm"
+    "world_energy_point09_7": "Năng Lượng Bồi Tích Dữ Dội: Cốc Tàng Kiếm",
+    "world_energy_point10_1": "Năng Lượng Bồi Tích: Đèo Yinglung",
+    "world_energy_point10_2": "Năng Lượng Bồi Tích: Đèo Yinglung",
+    "world_energy_point10_3": "Năng Lượng Bồi Tích: Đèo Yinglung",
+    "world_energy_point10_4": "Năng Lượng Bồi Tích Dữ Dội: Đèo Yinglung",
+    "world_energy_point10_5": "Năng Lượng Bồi Tích Dữ Dội: Đèo Yinglung",
+    "world_energy_point10_6": "Năng Lượng Bồi Tích Dữ Dội: Đèo Yinglung",
+    "world_energy_point10_7": "Năng Lượng Bồi Tích Dữ Dội: Đèo Yinglung",
+    "world_energy_point11_1": "Năng Lượng Bồi Tích: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_2": "Năng Lượng Bồi Tích: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_3": "Năng Lượng Bồi Tích: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_4": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_5": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_6": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng",
+    "world_energy_point11_7": "Năng Lượng Bồi Tích Dữ Dội: Khu Cấm Bắc Võ Lăng"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Đào Hầm",
@@ -1312,7 +1360,16 @@
     "eny_0082_hsbear": "Người Gõ Trống Trời",
     "eny_0112_jzmonk": "Rockhowler",
     "eny_0113_jzogre": "Gấu Nanh Dài Thiết Giáp",
-    "eny_0114_jzmking": "Craghowler"
+    "eny_0114_jzmking": "Craghowler",
+    "eny_0117_klhound": "Bóng Nhiễm Khuẩn Thú Ngà",
+    "eny_0118_klhog": "Bóng Nhiễm Khuẩn Quái Lông Nhọn",
+    "eny_0119_kltiger": "Bóng Nhiễm Khuẩn Quái Cào",
+    "eny_0120_klbear": "Bóng Nhiễm Khuẩn Chớp Nhoáng",
+    "eny_0121_klbud": "Bóng Nhiễm Khuẩn ĐĐNY Tiên Phong",
+    "eny_0122_kltdbud": "Bóng Nhiễm Khuẩn ĐĐNY Tinh Anh",
+    "eny_0123_klcap": "Bóng Nhiễm Khuẩn ĐĐNY Đao Thủ",
+    "eny_0124_kltdcap": "Bóng Nhiễm Khuẩn ĐĐNY Trưởng Nhóm",
+    "eny_0125_fdcentur": "Alleikhreos, Thiên Phu Trưởng"
   },
   "essencesPage": {
     "optimizer": "Tối ưu hóa Cày cuốc",
@@ -1568,7 +1625,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Dao Đẩy Lão Luyện T1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Găng Lão Luyện",
     "item_equip_t4_suit_crush_fracture_hand_02": "Găng Lão Luyện T1",
-    "item_equip_t4_suit_phy01_body_04": "Giáp Sợi Kiếm Sĩ"
+    "item_equip_t4_suit_phy01_body_04": "Giáp Sợi Kiếm Sĩ",
+    "item_equip_t4_parts_wuling00_body_01": "Giáp Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_body_02": "Giáp Tấm Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_body_03": "Áo Giáp Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_01": "Dao Rựa Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_02": "Tàn Lửa Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_edc_03": "Đèn Pin Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_01": "Găng Tay Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_02": "Tay Giáp Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling00_hand_03": "Băng Quấn Thực Địa Khu Phức Hợp",
+    "item_equip_t4_parts_wuling02_body_01": "Trọng Giáp Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_body_02": "Khinh Giáp Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_edc_01": "Giáp Phiến Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_hand_01": "Găng Tay Lữ Hành Khe Nứt",
+    "item_equip_t4_parts_wuling02_hand_02": "Tay Giáp Lữ Hành Khe Nứt",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Phiến Cách Nhiệt Kháng Lửa",
+    "item_equip_t4_suit_fire_natr01_hand_04": "Tay Giáp Bảo Hộ Kháng Lửa",
+    "item_equip_t4_suit_heal01_body_03": "Giáp Thân LYNX T1",
+    "item_equip_t4_suit_heal01_hand_03": "Giáp Tay LYNX T1",
+    "item_equip_t4_suit_usp02_body_03": "Khinh Giáp Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_usp02_body_04": "Khinh Giáp Xiranite Vĩnh Cửu T1",
+    "item_equip_t4_suit_usp02_edc_04": "Phiến Gia Cố Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_usp02_hand_03": "Băng Quấn Xiranite Vĩnh Cửu",
+    "item_equip_t4_suit_usp02_hand_04": "Tay Giáp Xiranite Vĩnh Cửu"
   },
   "packs": {
     "none": "Không Theo Bộ",
@@ -1617,7 +1697,8 @@
     "suit_wisdwill01": "Khu Phức Hợp Nhẹ",
     "suit_combo_cd01": "Thanh Ba",
     "suit_expend_spell01": "Xiranflow",
-    "suit_crush_fracture": "Lão Luyện"
+    "suit_crush_fracture": "Lão Luyện",
+    "suit_generaltype": "Thực Địa Khu Phức Hợp"
   },
   "equipmentTypes": {
     "body": "Giáp",
@@ -1671,13 +1752,21 @@
     "AllDamageTakenScalar": "Giảm ST Cuối",
     "Sub": "Thuộc Tính Phụ",
     "AllSkillDamageIncrease": "Tăng ST Tất Cả Kỹ Năng Gây Ra",
-    "FireAndNaturalDamageIncrease": "Tăng ST Nhiệt và Tự Nhiên Gây Ra"
+    "FireAndNaturalDamageIncrease": "Tăng ST Nhiệt và Tự Nhiên Gây Ra",
+    "PhysicalResistance": "Kháng Vật Lý",
+    "NatureResistance": "Kháng Tự Nhiên",
+    "CryoResistance": "Kháng Băng",
+    "ElectricResistance": "Kháng Điện",
+    "HeatResistance": "Kháng Nhiệt",
+    "TherResistance": "Kháng Æther"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Landbreaker",
     "wiki_group_monster_hongshan": "Hải Tặc Cangzei",
-    "wiki_group_monster_animal": "Động Vật Hoang Dã"
+    "wiki_group_monster_animal": "Động Vật Hoang Dã",
+    "wiki_group_monster_kl": "Bóng Nhiễm Khuẩn",
+    "wiki_group_monster_js": "Foundite"
   },
   "resitances": {
     "heatRez": "Kháng Nhiệt",
@@ -2358,5 +2447,11 @@
     "inorganicConstruct": "\"Thực Thể Vô Cơ\"",
     "turbidityManifest": "\"Sương Đục Hiện Thể\"",
     "thoseForsakenByTheLand": "\"Kẻ Bị Vùng Đất Ruồng Bỏ\""
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Kỹ Thuật Xiranite",
+    "cupriumTechnique": "Kỹ Thuật Đồng",
+    "hetoniteTechnique": "Kỹ Thuật Huyết Đồng",
+    "pyrroliteTechnique": "Kỹ Thuật Nham Đồng"
   }
 }

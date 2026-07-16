@@ -42,7 +42,7 @@
     "setBonus": ""
   },
   "item_equip_t1_parts_tundra01_body_04": {
-    "name": "測試型重甲I",
+    "name": "測試型重甲·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "臨時製成的裝備，相較標準型有所微調，雖然夠重，但防護能力有限。",
     "setBonus": ""
@@ -168,13 +168,13 @@
     "setBonus": ""
   },
   "item_equip_t2_parts_tundra01_hand_01": {
-    "name": "礦場手甲I",
+    "name": "礦場手甲·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t2_parts_tundra01_hand_02": {
-    "name": "礦場手套I",
+    "name": "礦場手套·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
@@ -264,7 +264,7 @@
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t2_suit_wisd01_edc_02": {
-    "name": "蝕電絕緣扳手I",
+    "name": "蝕電絕緣扳手·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "增加了特殊防護鍍層的扳手。\n必要時可以當作武器使用，用來敲碎某些天使的肢體也不在話下。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
@@ -282,79 +282,79 @@
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t3_parts_tundra01_body_01": {
-    "name": "礦場護甲I",
+    "name": "礦場護甲·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_body_02": {
-    "name": "礦場防護服I",
+    "name": "礦場防護服·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_edc_01": {
-    "name": "礦場增壓輪I",
+    "name": "礦場增壓輪·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_edc_02": {
-    "name": "礦場傳動輪I",
+    "name": "礦場傳動輪·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_edc_03": {
-    "name": "礦場壓縮核I",
+    "name": "礦場壓縮核·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_edc_04": {
-    "name": "礦場聯絡儀I",
+    "name": "礦場聯絡儀·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_01": {
-    "name": "礦場手套II",
+    "name": "礦場手套·II",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_parts_tundra01_hand_02": {
-    "name": "礦場護手I",
+    "name": "礦場護手·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "多用於礦場作業的防護裝備。\n《四號谷地安全防護標準》要求勞動保護裝備至少需要軟性保護及硬性保護兩層防護結構。",
     "setBonus": ""
   },
   "item_equip_t3_suit_agi01_body_01": {
-    "name": "巡行信使夾克I",
+    "name": "巡行信使夾克·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "信使們愛穿的夾克。\n四號谷地周邊的信使會為自己的交通工具噴塗大樹枝幹般的紋路。曾保護這片土地的事物至今仍能給予人們力量。",
     "setBonus": "3件套裝效果：裝備者敏捷<@ba.vup>+{agi_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_agi01_edc_01": {
-    "name": "巡行信使手電筒I",
+    "name": "巡行信使手電筒·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "堅固的照明手電筒。\n它尾部的尖錐偶爾會被用來破開一些塵封的古物。",
     "setBonus": "3件套裝效果：裝備者敏捷<@ba.vup>+{agi_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_agi01_edc_02": {
-    "name": "巡行信使手電筒II",
+    "name": "巡行信使手電筒·II",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "堅固的照明手電筒。\n它尾部的尖錐偶爾會被用來破開一些塵封的古物。",
     "setBonus": "3件套裝效果：裝備者敏捷<@ba.vup>+{agi_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_agi01_edc_03": {
-    "name": "巡行信使陀螺I",
+    "name": "巡行信使陀螺·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "小巧的紓壓玩具。\n根據權威統計，約有20%的信使會把這樣的紓壓玩具改裝為定向追蹤器。",
     "setBonus": "3件套裝效果：裝備者敏捷<@ba.vup>+{agi_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_agi01_hand_01": {
-    "name": "巡行信使手套I",
+    "name": "巡行信使手套·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "信使們愛用的護手。\n走上擂台切磋幾手也是信使們的消遣方式之一。",
     "setBonus": "3件套裝效果：裝備者敏捷<@ba.vup>+{agi_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>。"
@@ -366,7 +366,7 @@
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
   },
   "item_equip_t3_suit_atk01_body_02": {
-    "name": "阿伯莉重甲I",
+    "name": "阿伯莉重甲·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "針對阿伯莉採石場作業情況做出了調整的新型防護裝甲。\n阿伯莉重甲系列的作戰用型，相較於標準型多出了武器連接功能，能夠有效搭配噴火器、榴彈發射器等裝備。",
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
@@ -378,7 +378,7 @@
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
   },
   "item_equip_t3_suit_atk01_body_04": {
-    "name": "阿伯莉輕甲I",
+    "name": "阿伯莉輕甲·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "針對阿伯莉採石場作業情況做出了調整的新型防護裝甲。\n「停工！停工！想辦法聯絡寂語修會！」",
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
@@ -396,7 +396,7 @@
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
   },
   "item_equip_t3_suit_atk01_edc_03": {
-    "name": "阿伯莉偵聽晶片I",
+    "name": "阿伯莉偵聽晶片·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "針對阿伯莉採石場作業情況做出了調整的新型防護裝甲。\n在探索未知環境時，隔音效果夠強的聽覺防護裝備尤其重要。這款晶片能有效輔助裝備者判斷自身是否出現了幻聽症狀。",
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
@@ -414,7 +414,7 @@
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
   },
   "item_equip_t3_suit_atk01_edc_06": {
-    "name": "阿伯莉感測晶片I",
+    "name": "阿伯莉感測晶片·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "針對阿伯莉採石場作業情況做出了調整的新型防護裝甲。\n按照工程師的說法，這套防護裝甲未來的更新方向重點在於全面自動化——即使穿戴者失去意識，它也能夠帶人安全撤離。",
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
@@ -426,31 +426,31 @@
     "setBonus": "3件套裝效果：裝備者所有技能傷害<@ba.vup>+{dmg_up:0%}</>。\n當裝備者施放戰技、連攜技、終結技時，分別<@ba.vup>+{atk_up:0%}</>攻擊力，持續{duration}秒。三種增益狀態獨立存在，層數無法疊加。"
   },
   "item_equip_t3_suit_str01_body_01": {
-    "name": "重裝信使夾克I",
+    "name": "重裝信使夾克·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "信使們愛穿的夾克。\n在塔衛二，越野摩托車是一種物美價廉的交通工具——信使們會為它附上不同的改裝模組。",
     "setBonus": "3件套裝效果：裝備者力量<@ba.vup>+{str_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>。"
   },
   "item_equip_t3_suit_str01_edc_01": {
-    "name": "重裝信使陀螺I",
+    "name": "重裝信使陀螺·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "小巧的紓壓玩具。\n根據權威統計，約有80%的信使會把這樣的小玩具改裝成微型爆破飛鏢。",
     "setBonus": "3件套裝效果：裝備者力量<@ba.vup>+{str_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>。"
   },
   "item_equip_t3_suit_str01_edc_02": {
-    "name": "重裝信使手電筒I",
+    "name": "重裝信使手電筒·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "堅固的照明手電筒。\n它尾部的尖錐通常會被用來鑿開一些不願溝通的骨骼。",
     "setBonus": "3件套裝效果：裝備者力量<@ba.vup>+{str_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>。"
   },
   "item_equip_t3_suit_str01_hand_01": {
-    "name": "重裝信使手套I",
+    "name": "重裝信使手套·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "信使們愛用的護手。\n大部分信使會為自己的交通工具增加一個便捷脫離裝置，以便能在突發的侵蝕災害中保全性命。",
     "setBonus": "3件套裝效果：裝備者力量<@ba.vup>+{str_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>。"
   },
   "item_equip_t3_suit_str01_hand_02": {
-    "name": "重裝信使手套II",
+    "name": "重裝信使手套·II",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "信使們愛用的護手。\n大部分信使會為自己的交通工具增加一個便捷脫離裝置，以便能在突發的侵蝕災害中保全性命。",
     "setBonus": "3件套裝效果：裝備者力量<@ba.vup>+{str_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>。"
@@ -462,7 +462,7 @@
     "setBonus": "3件套裝效果：裝備者終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。\n裝備者施放戰技時<#ba.return>返還</><@ba.vup>{atb_recover:0}</>點技力，此效果每場戰鬥最多觸發一次。"
   },
   "item_equip_t3_suit_usp01_body_02": {
-    "name": "天災防護重甲I",
+    "name": "天災防護重甲·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "源石研究園種植作業中會使用的外骨骼裝備。\n搭載了微電流刺激系統，能有效降低穿戴者的疲勞感——工人們對這種「振奮精神」的小設計尤為滿意。",
     "setBonus": "3件套裝效果：裝備者終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。\n裝備者施放戰技時<#ba.return>返還</><@ba.vup>{atb_recover:0}</>點技力，此效果每場戰鬥最多觸發一次。"
@@ -474,7 +474,7 @@
     "setBonus": "3件套裝效果：裝備者終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。\n裝備者施放戰技時<#ba.return>返還</><@ba.vup>{atb_recover:0}</>點技力，此效果每場戰鬥最多觸發一次。"
   },
   "item_equip_t3_suit_usp01_edc_02": {
-    "name": "天災防護淨芯I",
+    "name": "天災防護淨芯·I",
     "description": "本裝備由特里格拉夫軍工廠設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "源石研究園種植作業中會使用的外骨骼裝備。\n雖然礦石病在塔衛二已能得到有效控制，但還請繼續做好基本的呼吸防護。",
     "setBonus": "3件套裝效果：裝備者終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。\n裝備者施放戰技時<#ba.return>返還</><@ba.vup>{atb_recover:0}</>點技力，此效果每場戰鬥最多觸發一次。"
@@ -492,58 +492,112 @@
     "setBonus": "3件套裝效果：裝備者終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。\n裝備者施放戰技時<#ba.return>返還</><@ba.vup>{atb_recover:0}</>點技力，此效果每場戰鬥最多觸發一次。"
   },
   "item_equip_t3_suit_will01_body_01": {
-    "name": "蝕電防護背心I",
+    "name": "蝕電防護背心·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "牢固的防護背心。\n「在搶修現場必須穿好防護裝備，不然你就會看到受損設備向你大聲呼救……別給醫生添麻煩，好嗎？」",
     "setBonus": "3件套裝效果：裝備者意志<@ba.vup>+{will_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，造成的治療效果<@ba.vup>+{heal_up:0%}</>。"
   },
   "item_equip_t3_suit_will01_edc_01": {
-    "name": "蝕電防護電池I",
+    "name": "蝕電防護電池·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "重量略大的電池。\n經驗豐富的工人可以在十分鐘內將這種源石電池改裝成榴彈。",
     "setBonus": "3件套裝效果：裝備者意志<@ba.vup>+{will_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，造成的治療效果<@ba.vup>+{heal_up:0%}</>。"
   },
   "item_equip_t3_suit_will01_edc_02": {
-    "name": "蝕電防護扳手I",
+    "name": "蝕電防護扳手·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "線條流暢的扳手。\n「用來當武器意外順手！」——某位不願透露姓名的工人。",
     "setBonus": "3件套裝效果：裝備者意志<@ba.vup>+{will_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，造成的治療效果<@ba.vup>+{heal_up:0%}</>。"
   },
   "item_equip_t3_suit_will01_hand_01": {
-    "name": "蝕電防護手套I",
+    "name": "蝕電防護手套·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "格外牢固的手套。\n目前人類還未研發出能夠有效阻隔侵蝕的防護服，現役防護裝備大多數僅能應對侵蝕次生災害。",
     "setBonus": "3件套裝效果：裝備者意志<@ba.vup>+{will_up}</>。\n當裝備者生命值低於{hp_ratio:0%}時，造成的治療效果<@ba.vup>+{heal_up:0%}</>。"
   },
   "item_equip_t3_suit_wisd01_body_01": {
-    "name": "蝕電絕緣背心I",
+    "name": "蝕電絕緣背心·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "特殊環境作業時必備的防護裝備。\n嚴重的侵蝕災害往往會帶來有悖常理的電路故障，搶修者亦需小心。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_wisd01_body_02": {
-    "name": "蝕電絕緣背心II",
+    "name": "蝕電絕緣背心·II",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "特殊環境作業時必備的防護裝備。\n嚴重的侵蝕災害往往會帶來有悖常理的電路故障，搶修者亦需小心。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_wisd01_edc_01": {
-    "name": "蝕電絕緣扳手II",
+    "name": "蝕電絕緣扳手·II",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "增加了特殊防護鍍層的扳手。\n必要時可以當作武器使用，用來敲碎某些天使的肢體也不在話下。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_wisd01_edc_02": {
-    "name": "蝕電絕緣電池I",
+    "name": "蝕電絕緣電池·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "耐用程度極高的電池。\n在塔衛二，侵蝕環境下的工程搶修作業極度危險。因此，即便是「如何使用電池」，也需按照特殊標準嚴格訓練。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
   "item_equip_t3_suit_wisd01_hand_01": {
-    "name": "蝕電絕緣手套I",
+    "name": "蝕電絕緣手套·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "特殊環境作業時必備的防護裝備。\n為了避免被異常爆發的電流擊傷，在侵蝕災害現場搶修電路的工程師們必須穿上特製防護服。",
     "setBonus": "3件套裝效果：裝備者智識<@ba.vup>+{wisd_up}</>。\n當裝備者生命值高於{hp_ratio:0%}時，造成的<@ba.key>法術傷害</><@ba.vup>+{spell_dmg_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "集成實訓護甲",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n「如果不是我看得仔細，我險些以為它和子彈一個價格，沒有比它更實惠的裝備了。」",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "集成實訓鋼甲",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n集成工業系統的強大生產能力保證了實訓系鋼甲在強度和價格上都足以碾壓同類產品。",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "集成實訓胸甲",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n「能不能多賣幾件給我，我拿去蓋房子。」",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "集成實訓排障刀",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n功能頗多的刀具，在能夠有效破壞天使等敵人的防護結構的同時，亦可作為工業排障工具使用。",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "集成實訓火種石",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n「我會信任我在終末地受到的一切訓練，就像人類信任火種。」",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "集成實訓照明器",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n「我會期待一切尚未到來的作戰任務，就像人類期待第二天的光明。」",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "集成實訓手套",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n參考了某種藤蔓植物的纖維結構，實現了保證輕而薄的同時透氣性極好。",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "集成實訓護手",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n「完美的手感，我覺得你們已經可以去搶占勞工安全用品的市場銷售額度了。」",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "集成實訓纏帶",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "終末地為幹員訓練而設計的作戰裝備組，因為過於物美價廉而廣受市場歡迎。\n特殊的手部防護裝備，為即便在戰場上亦需操作複雜設備的幹員而設計。",
+    "setBonus": "3件套裝效果：裝備者造成的所有類型傷害<@ba.vup>+{dmg_up:0%}</>，受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>，終結技蓄能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
   },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "紓難重甲",
@@ -564,7 +618,7 @@
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling01_edc_02": {
-    "name": "紓難識別證I",
+    "name": "紓難識別證·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "象徵著艱辛前路的裝備。「事未竟，路猶長。」",
     "setBonus": ""
@@ -576,7 +630,7 @@
     "setBonus": ""
   },
   "item_equip_t4_parts_wuling01_edc_04": {
-    "name": "紓難印章I",
+    "name": "紓難印章·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "象徵著艱辛前路的裝備。「事未竟，路猶長。」",
     "setBonus": ""
@@ -593,6 +647,36 @@
     "decoDesc": "象徵著艱辛前路的裝備。「事未竟，路猶長。」",
     "setBonus": ""
   },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "涉淵重甲",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "選劍局為了需要頻繁往返危險區域的作戰人員所設計的特殊裝備組。\n「吾執玉壤，以涉大淵。」",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "涉淵輕甲",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "選劍局為了需要頻繁往返危險區域的作戰人員所設計的特殊裝備組。\n「吾觀冬景，以明生死。」",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "涉淵護甲板",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "選劍局為了需要頻繁往返危險區域的作戰人員所設計的特殊裝備組。\n「吾琢金石，以為墓碣。」",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "涉淵護手",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "選劍局為了需要頻繁往返危險區域的作戰人員所設計的特殊裝備組。\n「吾鳴蟄雷，以壯肝膽。」",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "涉淵手套",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "選劍局為了需要頻繁往返危險區域的作戰人員所設計的特殊裝備組。\n「吾展旗旌，以備裹骸。」",
+    "setBonus": ""
+  },
   "item_equip_t4_suit_atb01_body_01": {
     "name": "拓荒護甲",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
@@ -600,13 +684,13 @@
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_atb01_body_02": {
-    "name": "拓荒護甲I",
+    "name": "拓荒護甲·I",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "拓荒者系列護甲重框體型號——為了能夠在肩部配備重火炮而額外加裝了人造脊椎構造。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_atb01_body_03": {
-    "name": "拓荒護甲II",
+    "name": "拓荒護甲·II",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "拓荒者系列護甲重框體型號——為了能夠在肩部配備重火炮而額外加裝了人造脊椎構造。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
@@ -630,7 +714,7 @@
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_atb01_edc_02": {
-    "name": "拓荒通訊器I",
+    "name": "拓荒通訊器·I",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "厚重的通訊器。為了在狀況複雜的地下遺跡開掘現場確保通訊品質，設計師僅為拓荒通訊器保留了訊息傳遞功能。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
@@ -654,7 +738,7 @@
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_atb01_edc_06": {
-    "name": "拓荒增量供氧栓I",
+    "name": "拓荒增量供氧栓·I",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "在拓荒者系列裝備的循環供氧技術支援下，供氧栓保障了使用者至少能夠進行四小時水下高壓作業。升級後，作業時間能延長至六小時。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
@@ -672,7 +756,7 @@
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_atb01_hand_03": {
-    "name": "拓荒纖維手套I",
+    "name": "拓荒纖維手套·I",
     "description": "本裝備由北進重工支援所設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "拓荒者系列護甲水下作戰型號——獨特的纖維編織技術使手套也擁有了供氧循環功能。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n裝備者透過技能回復技力後，全隊造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒，該效果無法疊加。"
@@ -684,13 +768,13 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_body_02": {
-    "name": "50式應龍重甲·壹型",
+    "name": "50式應龍重甲·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n鮮有人知，這套護甲的設計師實際上是一位僅差半步就能通過特勤隊考核的預備隊員。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_body_03": {
-    "name": "50式應龍重甲·貳型",
+    "name": "50式應龍重甲·II",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n鮮有人知，這套護甲的設計師實際上是一位僅差半步就能通過特勤隊考核的預備隊員。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
@@ -708,13 +792,13 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_edc_02": {
-    "name": "50式應龍雷達·壹型",
+    "name": "50式應龍雷達·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n改善設計完成的那天，他提起筆，在設計圖邊留下幾個字——「天崩地裂，我亦勝之」。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_edc_03": {
-    "name": "50式應龍雷達·貳型",
+    "name": "50式應龍雷達·II",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n改善設計完成的那天，他提起筆，在設計圖邊留下幾個字——「天崩地裂，我亦勝之」。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
@@ -726,7 +810,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_edc_05": {
-    "name": "50式應龍短刃·壹型",
+    "name": "50式應龍短刃·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n「曾和我一起訓練的熟面孔，我看著他們擔起重責，鎮守重地，這讓我覺得……我像個從慘烈戰場上逃走的戰敗者，一個逃兵。」",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
@@ -738,7 +822,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_atk02_hand_02": {
-    "name": "50式應龍護手·壹型",
+    "name": "50式應龍護手·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "應龍特勤隊所配裝備的民用版，缺少了關鍵力量，但具備了普遍適用性。\n「我並不覬覦那份被贈與的力量，我離它非常遙遠，我該成為支撐他們的骨骼。」",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當小隊內任意幹員施放戰技時，裝備者獲得一層<@ba.key>應龍之銳</>，使得該幹員下一次連攜技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>應龍之銳</>最多疊加{max_stack:0}層。"
@@ -750,7 +834,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_body_02": {
-    "name": "碾骨重護甲I",
+    "name": "碾骨重護甲·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n厚重護甲不單只具有防護能力，在荒地行人眼中，它也代表著一種冷酷殘忍的行事風格。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
@@ -762,19 +846,19 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_body_04": {
-    "name": "碾骨披巾I",
+    "name": "碾骨披巾·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n實際上，披巾並不具備什麼防護效果，它通常會作為身分標誌，就像是某種旗幟的另一種型態。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_body_05": {
-    "name": "碾骨重護甲II",
+    "name": "碾骨重護甲·II",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n厚重護甲不單只具有防護能力，在荒地行人眼中，它也代表著一種冷酷殘忍的行事風格。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_edc_02": {
-    "name": "碾骨小雕像II",
+    "name": "碾骨小雕像·II",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "並無什麼實際意義的小工藝品，但設計者宣稱它能有效調動人的亢奮情緒。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
@@ -792,19 +876,19 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_edc_05": {
-    "name": "碾骨面具I",
+    "name": "碾骨面具·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n代表著某種狂熱的面具。單純的信念無法讓人在侵蝕環境中存活更久。無論是掛在腰間還是戴在臉上，都只不過是輕飄飄的木塊罷了。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_edc_06": {
-    "name": "碾骨小雕像I",
+    "name": "碾骨小雕像·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "並無什麼實際意義的小工藝品，但設計者宣稱它能有效調動人的亢奮情緒。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_edc_07": {
-    "name": "碾骨面具II",
+    "name": "碾骨面具·II",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n代表著某種狂熱的面具。單純的信念無法讓人在侵蝕環境中存活更久。無論是掛在腰間還是戴在臉上，都只不過是輕飄飄的木塊罷了。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
@@ -816,7 +900,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
   },
   "item_equip_t4_suit_attri01_hand_02": {
-    "name": "碾骨腕帶I",
+    "name": "碾骨腕帶·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "設計靈感來自於碾骨氏族的裝備。\n並非每一個走上荒野的人都會變成裂地者，但被荒野束縛住的人永遠無法回頭。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n當裝備者施放連攜技時，獲得一層<@ba.key>碾骨重壓</>，下一次的戰技傷害<@ba.vup>+{dmg_up:0%}</>，<@ba.key>碾骨重壓</>最多可疊加{max_stack:0}層。"
@@ -882,7 +966,7 @@
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n當裝備者施放連攜技時，所有技能傷害<@ba.vup>+{spell_up:0%}</>，持續{duration}秒。該效果最多疊加{max_stack}層，每層單獨計算持續時間。"
   },
   "item_equip_t4_suit_combo_cd01_edc_04": {
-    "name": "清波定位儀·壹型",
+    "name": "清波定位儀·I",
     "description": "本裝備由終末地工業參考荒野手工藝品設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "自清波寨古書中還原出來的高CP值裝備。\n某種結合了水脈探測功能及指南功能的簡易裝置。據文獻記載，它在清波寨建立之初就已立下了赫赫戰功。",
     "setBonus": "3件套裝效果：裝備者連攜技冷卻縮減<@ba.vup>+{1-comboskill_cooldown:0%}</>。\n當裝備者施放連攜技時，所有技能傷害<@ba.vup>+{spell_up:0%}</>，持續{duration}秒。該效果最多疊加{max_stack}層，每層單獨計算持續時間。"
@@ -912,19 +996,19 @@
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_body_03": {
-    "name": "M. I.警用罩衣I",
+    "name": "M. I.警用罩衣·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n在戰爭結束後，梅什科工業調整了生產線，以優秀的輕量化工藝獲得了城市警用裝備供應資格。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_body_04": {
-    "name": "M. I.警用罩衣II",
+    "name": "M. I.警用罩衣·II",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n在戰爭結束後，梅什科工業調整了生產線，以優秀的輕量化工藝獲得了城市警用裝備供應資格。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_body_06": {
-    "name": "M. I.警用護甲I",
+    "name": "M. I.警用護甲·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n它最初服役於人類與天使對抗的一線戰場。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
@@ -954,13 +1038,13 @@
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_edc_05": {
-    "name": "M. I.警用刺刃I",
+    "name": "M. I.警用刺刃·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n握把中填裝了源石火藥。抵住目標，扣下扳機，短刃會瞬間撕開敵人的裝甲和血肉，就像切蛋糕一樣順滑。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_edc_06": {
-    "name": "M. I.警用瞄具I",
+    "name": "M. I.警用瞄具·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n梅什科工業的部分產品會被走私到荒野上。在一些裂地者暗殺者手中，M. I.警用瞄具是上等品。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
@@ -978,13 +1062,13 @@
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_hand_03": {
-    "name": "M. I.警用手環I",
+    "name": "M. I.警用手環·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n手環內嵌了微型鎮暴用施術單元，整體能量傳導效能相當優秀。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
   },
   "item_equip_t4_suit_criti01_hand_04": {
-    "name": "M. I.警用手套I",
+    "name": "M. I.警用手套·I",
     "description": "本裝備由梅什科工業設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "M. I.警用系列裝備。\n這款手套同時具備攻擊屬性，其驗收流程中存在「能否有效擊碎天使肢體」這一環節。",
     "setBonus": "3件套裝效果：裝備者暴擊率<@ba.vup>+{crit_up:0%}</>。\n當裝備者觸發暴擊後，{duration}秒內<@ba.vup>+{atk_up:0%}</>攻擊力，該效果最多疊加{max_stack:0}層。層數疊滿後，額外<@ba.vup>+{crit_up2:0%}</>暴擊率，該效果無法疊加。"
@@ -996,7 +1080,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
   },
   "item_equip_t4_suit_crush_fracture_body_02": {
-    "name": "舊鋒裝甲·壹型",
+    "name": "舊鋒裝甲·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "選劍局回收遺落的技術檔案後所研發的綜合防禦裝備。\n它有著天使戰爭時期的影子，沉重、粗糙卻也足夠高效。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
@@ -1008,7 +1092,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
   },
   "item_equip_t4_suit_crush_fracture_edc_02": {
-    "name": "舊鋒刺刃·壹型",
+    "name": "舊鋒刺刃·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "選劍局回收遺落的技術檔案後所研發的綜合防禦裝備。\n尖銳的刺刃，可以隨時接在肩甲或手甲上，這取決於穿戴者的格鬥技巧流派。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
@@ -1020,7 +1104,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
   },
   "item_equip_t4_suit_crush_fracture_hand_02": {
-    "name": "舊鋒手甲·壹型",
+    "name": "舊鋒手甲·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "選劍局回收遺落的技術檔案後所研發的綜合防禦裝備。\n相較理想中的狀態，這款手甲的動力輔助性能其實稍微低了一點——舊日資源不可複製，天師們必須另想辦法。",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者造成<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>時，根據<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數，使自身<@ba.pd>物理傷害</><@ba.vup>+[{phy_dmg_up_perstack:0%}×<#ba.consume>消耗</>層數]</>，持續{duration}秒。若目標已處於<#ba.physicalvul>物理脆弱</>、<@ba.poise>失衡</>狀態或被附著<#ba.originium>源石結晶</>，上述增益效果變為<@ba.vup>{special_multi:0.0}</>倍。增益效果無法疊加。"
@@ -1073,6 +1157,12 @@
     "decoDesc": "耐火性極強的裝備。\n「在那座火山中，有人聽到了歌聲。」",
     "setBonus": "3件套裝效果：裝備者源石技藝強度<@ba.vup>+{phy_spell_up:0}</>。\n當裝備者施加<#ba.burning>燃燒</>後，<@ba.fire>灼熱傷害</>+<@ba.vup>{fire_dmg_up:0%}</>，持續{duration}秒，該效果無法疊加；當裝備者施加<#ba.corrupt>腐蝕</>後，<@ba.natur>自然傷害</>+<@ba.vup>{nature_dmg_up:0%}</>，持續{duration2}秒，該效果無法疊加。"
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "動火用隔溫板",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "耐火性極強的裝備。\n「熔岩也燒不穿它，我的朋友，就像我熱烈的愛怎麼也燒不穿她的心。」",
+    "setBonus": "3件套裝效果：裝備者源石技藝強度<@ba.vup>+{phy_spell_up:0}</>。\n當裝備者施加<#ba.burning>燃燒</>後，<@ba.fire>灼熱傷害</>+<@ba.vup>{fire_dmg_up:0%}</>，持續{duration}秒，該效果無法疊加；當裝備者施加<#ba.corrupt>腐蝕</>後，<@ba.natur>自然傷害</>+<@ba.vup>{nature_dmg_up:0%}</>，持續{duration2}秒，該效果無法疊加。"
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "動火用手套",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
@@ -1086,9 +1176,15 @@
     "setBonus": "3件套裝效果：裝備者源石技藝強度<@ba.vup>+{phy_spell_up:0}</>。\n當裝備者施加<#ba.burning>燃燒</>後，<@ba.fire>灼熱傷害</>+<@ba.vup>{fire_dmg_up:0%}</>，持續{duration}秒，該效果無法疊加；當裝備者施加<#ba.corrupt>腐蝕</>後，<@ba.natur>自然傷害</>+<@ba.vup>{nature_dmg_up:0%}</>，持續{duration2}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
-    "name": "動火用手甲I",
+    "name": "動火用手甲·I",
     "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "耐火性極強的裝備。\n「噓，小聲點，你就要喚醒它了。」",
+    "setBonus": "3件套裝效果：裝備者源石技藝強度<@ba.vup>+{phy_spell_up:0}</>。\n當裝備者施加<#ba.burning>燃燒</>後，<@ba.fire>灼熱傷害</>+<@ba.vup>{fire_dmg_up:0%}</>，持續{duration}秒，該效果無法疊加；當裝備者施加<#ba.corrupt>腐蝕</>後，<@ba.natur>自然傷害</>+<@ba.vup>{nature_dmg_up:0%}</>，持續{duration2}秒，該效果無法疊加。"
+  },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "動火用護手",
+    "description": "本裝備由終末地工業自研，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "耐火性極強的裝備。\n兼顧防護性能與靈巧性的手套，能保證使用者在不遭高溫侵害的情況下接觸目標物。",
     "setBonus": "3件套裝效果：裝備者源石技藝強度<@ba.vup>+{phy_spell_up:0}</>。\n當裝備者施加<#ba.burning>燃燒</>後，<@ba.fire>灼熱傷害</>+<@ba.vup>{fire_dmg_up:0%}</>，持續{duration}秒，該效果無法疊加；當裝備者施加<#ba.corrupt>腐蝕</>後，<@ba.natur>自然傷害</>+<@ba.vup>{nature_dmg_up:0%}</>，持續{duration2}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_heal01_body_01": {
@@ -1103,6 +1199,12 @@
     "decoDesc": "醫療者們愛用的裝備。\n穿著生物輔助胸甲的作戰人員通常會被人戲稱為「移動藥品庫」，他們通常會在護甲各處塞滿急救藥物。",
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
   },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "生物輔助胸甲·I",
+    "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "醫療者們愛用的裝備。穿著生物輔助胸甲的作戰人員通常會被人戲稱為「移動藥品庫」，他們通常會在護甲各處塞滿急救藥物。",
+    "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
+  },
   "item_equip_t4_suit_heal01_edc_01": {
     "name": "生物輔助接駁器",
     "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
@@ -1110,7 +1212,7 @@
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
   },
   "item_equip_t4_suit_heal01_edc_02": {
-    "name": "生物輔助接駁器II",
+    "name": "生物輔助接駁器·II",
     "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "醫療者們愛用的裝備。\n羅德島開發了能夠校準數據的接駁單元，以便在緊急狀況下接入不同的維生系統，完成急救作業。",
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
@@ -1128,7 +1230,7 @@
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
   },
   "item_equip_t4_suit_heal01_edc_05": {
-    "name": "生物輔助接駁器I",
+    "name": "生物輔助接駁器·I",
     "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "醫療者們愛用的裝備。\n羅德島開發了能夠校準數據的接駁單元，以便在緊急狀況下接入不同的維生系統，完成急救作業。",
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
@@ -1141,6 +1243,12 @@
   },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "生物輔助手甲",
+    "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "醫療者們愛用的裝備。\n羅德島仍保留著在裝備上配備礦石病監測模組的習慣。",
+    "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "生物輔助手甲·I",
     "description": "本裝備由羅德島設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "醫療者們愛用的裝備。\n羅德島仍保留著在裝備上配備礦石病監測模組的習慣。",
     "setBonus": "3件套裝效果：裝備者治療效率<@ba.vup>+{heal_up:0%}</>。\n當裝備者治療我方目標後，使該目標在{duration}秒內受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果該目標受到的治療量溢出，則受到的所有類型傷害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果無法疊加。"
@@ -1158,7 +1266,7 @@
     "setBonus": "3件套裝效果：裝備者失衡效率加成<@ba.vup>+{poise_up:0%}</>。\n當裝備者造成<#ba.physicalstatus>物理異常</>後，額外造成一次{atk_scale:0%}攻擊力的物理傷害[<@ba.poise>{poise}</>點失衡值]。該效果每{duration}秒最多觸發一次。"
   },
   "item_equip_t4_suit_phy01_body_03": {
-    "name": "點劍重裝甲·壹型",
+    "name": "點劍重裝甲·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "選劍局早期向市場推廣的產品之一。\n天師以「虛懷若谷」為設計理念，在點劍重裝甲上真正實現了「化解能量攻擊」這一功能。",
     "setBonus": "3件套裝效果：裝備者失衡效率加成<@ba.vup>+{poise_up:0%}</>。\n當裝備者造成<#ba.physicalstatus>物理異常</>後，額外造成一次{atk_scale:0%}攻擊力的物理傷害[<@ba.poise>{poise}</>點失衡值]。該效果每{duration}秒最多觸發一次。"
@@ -1206,7 +1314,7 @@
     "setBonus": "3件套裝效果：裝備者失衡效率加成<@ba.vup>+{poise_up:0%}</>。\n當裝備者造成<#ba.physicalstatus>物理異常</>後，額外造成一次{atk_scale:0%}攻擊力的物理傷害[<@ba.poise>{poise}</>點失衡值]。該效果每{duration}秒最多觸發一次。"
   },
   "item_equip_t4_suit_phy01_hand_03": {
-    "name": "點劍戰術手甲·壹型",
+    "name": "點劍戰術手甲·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "選劍局早期向市場推廣的產品之一。\n戰術手甲的驗收流程包括「穿著手甲將宣紙折成二十四層紙花」這一環節。",
     "setBonus": "3件套裝效果：裝備者失衡效率加成<@ba.vup>+{poise_up:0%}</>。\n當裝備者造成<#ba.physicalstatus>物理異常</>後，額外造成一次{atk_scale:0%}攻擊力的物理傷害[<@ba.poise>{poise}</>點失衡值]。該效果每{duration}秒最多觸發一次。"
@@ -1230,7 +1338,7 @@
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者施加<#ba.noguard>破防</>後，<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>，持續{duration}秒，最多可疊加{max_stack:0}層。若使目標達到{stack_cond:0}層<#ba.noguard>破防</>，物理傷害額外<@ba.vup>+{phy_dmg_up2:0%}</>，持續{duration2}秒，該效果無法疊加。"
   },
   "item_equip_t4_suit_poise01_edc_03": {
-    "name": "輕超域穩定器I",
+    "name": "輕超域穩定器·I",
     "description": "本裝備由輕超域技術實驗室設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "輕巧的實驗型防護裝備。\n「為了避免參數混亂導致您像氣球一樣飄向高空，請隨身攜帶搭配的穩定盤，謝謝。」",
     "setBonus": "3件套裝效果：裝備者攻擊力<@ba.vup>+{atk_up:0%}</>。\n裝備者施加<#ba.noguard>破防</>後，<@ba.pd>物理傷害</><@ba.vup>+{phy_dmg_up:0%}</>，持續{duration}秒，最多可疊加{max_stack:0}層。若使目標達到{stack_cond:0}層<#ba.noguard>破防</>，物理傷害額外<@ba.vup>+{phy_dmg_up2:0%}</>，持續{duration2}秒，該效果無法疊加。"
@@ -1289,6 +1397,18 @@
     "decoDesc": "某位「瘋狂」天師的遺世之作。\n常人或許很難將廚藝與息壤供能關聯在一起，但武陵城中偏偏有人能在餐館中獲得設計靈感。",
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "長息輕護甲",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "某位「瘋狂」天師的遺世之作。\n「要我說，太重了，你看它簡陋的就像路邊的野獸骨頭，輕者愈輕，明白嗎！要減輕！」",
+    "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "長息輕護甲·I",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "某位「瘋狂」天師的遺世之作。\n「要我說，太重了，你看它簡陋的就像路邊的野獸骨頭，輕者愈輕，明白嗎！要減輕！」",
+    "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "長息蓄電核",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
@@ -1296,7 +1416,7 @@
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
   },
   "item_equip_t4_suit_usp02_edc_02": {
-    "name": "長息蓄電核·壹型",
+    "name": "長息蓄電核·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "某位「瘋狂」天師的遺世之作。\n……他也曾端著一盆「竹瀝燉豆腐」穿街而過，並宣稱新一代息壤冷卻技術終於被他烹飪了出來。",
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
@@ -1307,6 +1427,12 @@
     "decoDesc": "某位「瘋狂」天師的遺世之作。\n……據說這位瘋狂天師在烏薩斯廚師端上桌的火鍋中看到了一種「生生不息的循環」，成功將長息護甲的續航時間提高了一倍。",
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "長息加固板",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "某位「瘋狂」天師的遺世之作。\n將這款遺世之作推進至實裝階段的天師們明顯也意識到了它過於簡陋，因此補充設計了額外的防護裝甲。",
+    "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "長息護手",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
@@ -1314,9 +1440,21 @@
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
   },
   "item_equip_t4_suit_usp02_hand_02": {
-    "name": "長息護手·壹型",
+    "name": "長息護手·I",
     "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
     "decoDesc": "某位「瘋狂」天師的遺世之作。\n……數日後，瘋狂的天師開始拒絕一切「不能讓自己獲得靈感」的食物，隨即，為了探尋「能吞入腹中的息壤」，骨瘦如柴的他消失在了荒野中。",
+    "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "長息裹手",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "某位「瘋狂」天師的遺世之作。\n「把息壤編織到纖維裡，你瘋了？」",
+    "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "長息手套",
+    "description": "本裝備由宏山選劍局設計，使用集成工業系統製造，能夠提高使用者的作戰能力。",
+    "decoDesc": "某位「瘋狂」天師的遺世之作。\n戴上它吧，戴上它吧……感受能量流淌過你的皮膚，沁入你的血肉。",
     "setBonus": "3件套裝效果：裝備者生命值<@ba.vup>+{hp_up}</>。\n裝備者施加<#ba.enhance>增幅</>、<#ba.guard>庇護</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虛弱</>後，使其他隊友造成的傷害<@ba.vup>+{dmg_up:0%}</>，持續{duration}秒。該效果無法疊加。"
   }
 }

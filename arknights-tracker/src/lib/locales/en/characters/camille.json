@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "DMG Multiplier",
         "stagger": "Stagger",
-        "firefangVesperwingDurationS": "Firefang Vesperwing Duration (s)",
+        "firefangVesperwingsDurationS": "Firefang Vesperwings Duration (s)",
         "weaknessEffect": "Weakness Effect",
         "heatSusceptibility": "Heat Susceptibility",
         "explosionDmgMultiplier": "Explosion DMG Multiplier"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Battle skill <@ba.key>Blazing Exorcism</> improved: The skill applies <#ba.weak>Weakness</> <@ba.vup>+{0-weak_scale:0%}</> and <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwings</> <@ba.key>hover</> duration <@ba.vup>+{bat_duration:0}</>s.",
+      "description": "Battle skill <@ba.key>Blazing Exorcism</> improved: The skill applies <#ba.weak>Weakness</> <@ba.vup>+{weak_scale:0%}</> and <#ba.firevul>Heat Susceptibility</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Firefang Vesperwings</> <@ba.key> hover</> duration <@ba.vup>+{bat_duration:0}</>s.",
       "name": "Flame-Anointed Lance"
     },
     "potential2": {

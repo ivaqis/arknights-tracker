@@ -42,8 +42,8 @@
     "battleSkill": {
       "battleSkill": {
         "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "firefangVesperwingDurationS": "Duração da Vesperfera Presas de Fogo (s)",
+        "stagger": "Desorientar",
+        "firefangVesperwingsDurationS": "Duração das Vesperferas Presas de Fogo (s)",
         "weaknessEffect": "Efeito de Fraqueza",
         "heatSusceptibility": "Suscetibilidade Térmica",
         "explosionDmgMultiplier": "Multiplicador DNO Explosão"
@@ -54,7 +54,7 @@
     "comboSkill": {
       "comboSkill": {
         "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
+        "stagger": "Desorientar",
         "spRecovery": "Recuperação de PH",
         "hunterPursuitDmgMultiplier": "Multiplicador DNO Perseguição do Caçador",
         "hunterPursuitStagger": "Desorientação Perseguição do Caçador",
@@ -67,7 +67,7 @@
     "ultimate": {
       "ultimate": {
         "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
+        "stagger": "Desorientar",
         "spRecovery": "Recuperação de PH",
         "hunterPursuitStateDurationS": "Duração do Estado de Perseguição do Caçador (s)"
       },
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Combo de habilidades <@ba.key>Espinho no Coração</> aprimorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele.",
-        "Combo de habilidades <@ba.key>Espinho no Coração</> aprimorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele."
+        "Combo de habilidades <@ba.key>Espinho no Coração</> melhorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</><@ba.key> pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele.",
+        "Combo de habilidades <@ba.key>Espinho no Coração</> melhorado: ao atingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</><@ba.key> pairando</> sobre ele, Camille restaura <@ba.heal>[{heal_base:0} + Inteligência × {heal_sub_multi:0.##}]</> de PV a si mesmo e concede um benefício de <#ba.combo>Conexão</> por {combo_duration} s. Quando a habilidade <@ba.key>Perseguição do Caçador</> é conjurada, esse efeito poderá ser acionado mesmo ao atingir um alvo sem Vesperferas <@ba.key>pairando</> sobre ele."
       ],
       "name": "Caçador de Transgressões"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Habilidade de batalha <@ba.key>Exorcismo Flamejante</> aprimorada: a habilidade aplica <#ba.weak>Fraqueza</> <@ba.vup>+ {0-weak_scale:0%}</> e <#ba.firevul>Suscetibilidade Térmica</> <@ba.vup>+ {vulnerable_scale:0%}</>. Duração da <@ba.key>pairagem</> das <@ba.key>Vesperferas Presas de Fogo</> <@ba.vup>+ {bat_duration:0}</> s.",
+      "description": "Habilidade de batalha <@ba.key>Exorcismo Flamejante</> melhorada: a habilidade aplica <#ba.weak>Fraqueza</> <@ba.vup>+{weak_scale:0%}</> e <#ba.firevul>Suscetibilidade Térmica</> <@ba.vup>+{vulnerable_scale:0%}</>. Duração da <@ba.key>pairagem</> das <@ba.key>Vesperferas Presas de Fogo</> <@ba.vup>+ {bat_duration:0}</> s.",
       "name": "Lança Ungida pela Chama"
     },
     "potential2": {
@@ -134,11 +134,11 @@
       "name": "Incapacitador Espinhoso"
     },
     "potential4": {
-      "description": "<@ba.key>Derrame Sanguíneo</> supremo aprimorado: custo de Energia Suprema <@ba.vup>-{1-costvalue:0%}</>.",
+      "description": "Habilidade suprema <@ba.key>Derrame Sanguíneo</> melhorada: custo de Energia Suprema <@ba.vup>- {1-costvalue:0%}</>.",
       "name": "Sigilo de Agašlehem"
     },
     "potential5": {
-      "description": "Talento <@ba.key>Reviver da Fonte de Sangue</> aprimorado: potencialização de <@ba.fire>DNO Térmico</> por acúmulo <@ba.vup>+ {atk_up:0%}</>.",
+      "description": "Talento <@ba.key>Reviver da Fonte de Sangue</> melhorado: potencialização de <@ba.fire>DNO Térmico</> por acúmulo <@ba.vup>+ {atk_up:0%}</>.",
       "name": "Convenção Sanguínea"
     }
   },

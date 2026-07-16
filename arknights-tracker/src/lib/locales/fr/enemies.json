@@ -624,7 +624,7 @@
     "description": "Variante d'ours à dents de sabre qui a évolué spécifiquement sur Talos-II. Ces ours uniques sont dotés d'une armure d'écailles extrêmement épaisses et ils vivent en symbiose avec les hurlerocs. Les ours protègent le groupe grâce à leur force, tandis que les hurlerocs utilisent leurs sens affûtés pour détecter les intrus.",
     "abilities": [
       "Le hurleroc qui chevauche l'ours à dents de sabre cuirassé peut lancer des peaux de banane. Si sa monture marche dessus en chargeant, elle glissera et s'étalera par terre.",
-      "Lorsqu'il se place en position de défense, son point faible se situe au niveau des mains. Visez ses mains pour interrompre la posture défensive et renverser la bête.",
+      "Lorsqu'il se place en position de défense, seules ses mains sont découvertes et constituent son point faible. Visez ses mains pour interrompre la posture défensive et renverser la bête.",
       "Lance des hurlerocs quand il est renversé. Attaquez les hurlerocs pour infliger plus de DÉG."
     ]
   },
@@ -636,6 +636,82 @@
       "Une fois enragé, le hurlepic s'en prend aux ruines. Les pierres qui se détachent tombent sur le champ de bataille et infligent des DÉG aux opérateurs qui les reçoivent.",
       "Le hurlepic peut utiliser les colonnes des ruines à son avantage et élargir sa portée d'attaque.",
       "Le hurlepic fait semblant de battre en retraite, puis lance d'énormes rochers en direction des ennemis qui ne se doutent de rien."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Gangrénombre hyenard",
+    "nickname": "Gangrénombre hyenard",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un hyenard. Bien qu'il ne s'agisse que d'une « ombre persistante », ses crocs acérés sont capables de percer une armure ou un équipement de protection.",
+    "abilities": [
+      "Certaines attaques peuvent activer de l'énergie de Gangrénombre au contact."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Gangrénombre bêtaplume",
+    "nickname": "Gangrénombre bêtaplume",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'une bêtaplume. Cette Gangrénombre qui saute et fond sur ses proies semble bien plus agressive que son modèle vivant, mais ce n'est peut-être qu'une impression.",
+    "abilities": [
+      "Après un court temps de recharge, la Gangrénombre bêtaplume peut invoquer plusieurs éclairs et activer de l'énergie de Gangrénombre dans une large zone. Interrompez la Gangrénombre au plus vite lorsqu'elle commence à charger."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Gangrénombre ratisseur",
+    "nickname": "Gangrénombre ratisseur",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un ratisseur. Sa robe tachetée se fond mieux dans l'environnement et ses techniques d'attaque sont tout bonnement terrifiantes.",
+    "abilities": [
+      "La créature peut utiliser ses cornes pour conduire les éclairs, attaquer à distance et même projeter des orbes de foudre qui explosent au bout d'un court laps de temps. Éloignez-vous du rayon d'explosion.",
+      "Lorsqu'il lui reste peu de PV, la créature pousse un rugissement de fureur et invoque plusieurs éclairs offensifs avant d'entrer en état enragé. Tentez de déséquilibrer la créature pour mettre fin à son état enragé. Pendant le combat, restez toujours sur vos gardes."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Gangrénombre de Fracas",
+    "nickname": "Gangrénombre de Fracas",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure de Fracas. Cette créature élevée dans la salle de Tanjian était la meilleure amie de Li Zhiyan. Cependant, sa Gangrénombre n'a conservé que ses instincts de prédateur.",
+    "abilities": [
+      "L'énergie de Gangrénombre activée par la Gangrénombre de Fracas peut projeter des éclairs.",
+      "Cet ennemi invoque des Gangrénombres hyenards. Il fait ensuite apparaître plusieurs éclairs qui vont frapper les créatures et les transformer en énergie de Gangrénombre, pour enfin les activer. Tâchez d'esquiver ces attaques."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Gangrénombre avant-garde des FSY",
+    "nickname": "Gangrénombre avant-garde des FSY",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un combattant d'avant-garde des FSY. La maîtrise des techniques de combat au corps-à-corps est absolument indispensable chez les Yinglungs.",
+    "abilities": [
+      "Libère du chi d'épée capable d'activer toute l'énergie de Gangrénombre qu'il touche."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Gangrénombre élite des FSY",
+    "nickname": "Gangrénombre élite des FSY",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un combattant d'élite des FSY. Les Yinglungs qui maîtrisent à la fois les Arts de l'originium et la spadamancie sont considérés comme des élites.",
+    "abilities": [
+      "Libère du chi d'épée capable d'activer toute l'énergie de Gangrénombre qu'il touche."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Gangrénombre lancier des FSY",
+    "nickname": "Gangrénombre lancier des FSY",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un lancier des FSY. Ces Yinglungs excellent dans l'assaut et la prise de positions fortifiées. Les lances qu'ils manient sont conçues pour transpercer les Aggeloi sans difficulté.",
+    "abilities": [
+      "La Gangrénombre lancier des FSY peut feindre la défaite avant de lancer une attaque surprise. Méfiance !",
+      "Après dissipation, l'ennemi peut se téléporter près d'un opérateur et attaquer. Tâchez d'esquiver !"
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Gangrénombre capitaine des FSY",
+    "nickname": "Gangrénombre capitaine des FSY",
+    "description": "Une manifestation d'énergie æthérique résiduelle reflétant l'apparence extérieure d'un capitaine des FSY. Seuls les vétérans qui ont démontré leurs talents de leader et se sont illustrés par leurs prouesses au combat et leur courage sur le champ de bataille peuvent accéder à ce titre.",
+    "abilities": [
+      "Après dissipation, l'ennemi peut se téléporter près d'un opérateur et attaquer. Tâchez d'esquiver !",
+      "La Gangrénombre capitaine des FSY peut utiliser son arme pour invoquer des éclairs. Une entité d'énergie de Gangrénombre s'active dès qu'elle est touchée par un éclair."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarque",
+    "nickname": "Alleikhreos",
+    "description": "Une création de la Fondation ayant livré d'innombrables combats. Ce Chiliarque qui errait dans le plan æthérique a retrouvé son épée perdue et déchiré l'espace-temps pour revenir dans notre réalité.",
+    "abilities": [
+      "Lorsque sa jauge de Déséquilibre atteint le nœud de déséquilibre, Alleikhreos le Chiliarque lâche une arme fondamentale. Approchez-vous-en avec l'opérateur contrôlé pour la ramasser et l'utiliser contre lui."
     ]
   }
 }

@@ -277,7 +277,7 @@
   },
   "item.bbflowerSeed": {
     "name": "아케톤 씨앗",
-    "desc": "공업 설비를 통해 <#item.bbflower>아케톤</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 아케톤 씨앗으로 아케톤을 재배할 수 있습니다.\n아케톤 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilBbflower>아케톤 논배미</>를 획득할 수도 있습니다."
+    "desc": "공업 설비를 통해 <#item.bbflower>아케톤</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 아케톤 씨앗으로 아케톤을 재배할 수 있습니다.\n아케톤 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 <#sys.manualCraftField>논배미를 제작</>하고 <#item.portSoilBbflower>아케톤 논배미</>를 획득할 수도 있습니다."
   },
   "item.bottledRecHp1": {
     "name": "메밀꽃 치유 캡슐",
@@ -285,7 +285,7 @@
   },
   "item.carbonMtl": {
     "name": "카본 조각",
-    "desc": "<#item.plantMoss1>메밀꽃</>을 공업 설비를 통해 정련하여 얻은 조각입니다.\n논배미를 <#sys.manualCraftField>재배</>할 때 꼭 필요한 재료이며, 기타 재료의 합성에도 사용할 수 있습니다."
+    "desc": "<#item.plantMoss1>메밀꽃</>을 공업 설비를 통해 정련하여 얻은 조각입니다.\n<#sys.manualCraftField>논배미를 제작</>할 때 꼭 필요한 재료이며, 기타 재료의 합성에도 사용할 수 있습니다."
   },
   "item.crystalShell": {
     "name": "오리고 크러스트",
@@ -345,11 +345,11 @@
   },
   "item.plantMossSeed1": {
     "name": "메밀꽃 씨앗",
-    "desc": "공업 설비를 통해 <#item.plantMoss1>메밀꽃</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 메밀꽃 씨앗으로 메밀꽃을 재배할 수 있습니다. 또는 메밀꽃 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilMoss1>메밀꽃 논배미</>를 획득할 수도 있습니다."
+    "desc": "공업 설비를 통해 <#item.plantMoss1>메밀꽃</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 메밀꽃 씨앗으로 메밀꽃을 재배할 수 있습니다. 또는 메밀꽃 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 <#sys.manualCraftField>논배미를 제작</>하고 <#item.portSoilMoss1>메밀꽃 논배미</>를 획득할 수도 있습니다."
   },
   "item.plantMossSeed3": {
     "name": "샌드리프 씨앗",
-    "desc": "공업 설비를 통해 <#item.plantMoss3>샌드리프</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 샌드리프 씨앗으로 샌드리프를 재배할 수 있습니다.\n샌드리프 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilMoss3>샌드리프 논배미</>를 획득할 수도 있습니다."
+    "desc": "공업 설비를 통해 <#item.plantMoss3>샌드리프</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 샌드리프 씨앗으로 샌드리프를 재배할 수 있습니다.\n샌드리프 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 <#sys.manualCraftField>논배미를 제작</>하고 <#item.portSoilMoss3>샌드리프 논배미</>를 획득할 수도 있습니다."
   },
   "item.plantMossSpc1": {
     "name": "화염 메밀꽃",
@@ -361,23 +361,23 @@
   },
   "item.plantSpSeed1": {
     "name": "회보리 씨앗",
-    "desc": "공업 설비를 통해 <#item.plantSp1>회보리</>에서 추출한 씨앗입니다.\n회보리 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilSp1>회보리 논배미</>를 획득할 수 있습니다."
+    "desc": "공업 설비를 통해 <#item.plantSp1>회보리</>에서 추출한 씨앗입니다.\n회보리 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 <#sys.manualCraftField>논배미를 제작</>하고 <#item.portSoilSp1>회보리 논배미</>를 획득할 수 있습니다."
   },
   "item.portSoilBbflower": {
     "name": "아케톤 논배미",
-    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.bbflower>아케톤</>을 수확할 수 있는 논배미입니다.\n<#item.bbflowerSeed>아케톤 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 아케톤을 획득할 수 있습니다."
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.bbflower>아케톤</>을 수확할 수 있는 논배미입니다.\n<#item.bbflowerSeed>아케톤 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 논배미를 제작할 수 있습니다.\n수확할 때가 되면 대량의 아케톤을 획득할 수 있습니다."
   },
   "item.portSoilMoss1": {
     "name": "메밀꽃 논배미",
-    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss1>메밀꽃</>을 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed1>메밀꽃 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 메밀꽃을 획득할 수 있으며, 비교적 높은 확률로 <#item.plantMossSpc1>화염 메밀꽃</>을 추가로 획득할 수 있습니다."
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss1>메밀꽃</>을 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed1>메밀꽃 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 <#sys.manualCraftField>논배미를 제작</>할 수 있습니다.\n수확할 때가 되면 대량의 메밀꽃을 획득할 수 있으며, 비교적 높은 확률로 <#item.plantMossSpc1>화염 메밀꽃</>을 추가로 획득할 수 있습니다."
   },
   "item.portSoilMoss3": {
     "name": "샌드리프 논배미",
-    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss3>샌드리프</>를 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed3>샌드리프 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 샌드리프를 획득할 수 있습니다."
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss3>샌드리프</>를 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed3>샌드리프 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 논배미를 제작할 수 있습니다.\n수확할 때가 되면 대량의 샌드리프를 획득할 수 있습니다."
   },
   "item.portSoilSp1": {
     "name": "회보리 논배미",
-    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantSp1>회보리</>를 수확할 수 있는 논배미입니다.\n<#item.plantSpSeed1>회보리 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 회보리를 획득할 수 있습니다."
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantSp1>회보리</>를 수확할 수 있는 논배미입니다.\n<#item.plantSpSeed1>회보리 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 혼합하여 논배미를 제작할 수 있습니다.\n수확할 때가 되면 대량의 회보리를 획득할 수 있습니다."
   },
   "item.procBattery1": {
     "name": "저용량 협곡 배터리",
@@ -408,7 +408,7 @@
     "desc": "정제된 식품 및 약품은 <#sys.tacticalItem>전술 아이템</>으로 사용할 수 있습니다.\n<#sys.manualCraftTonic>응급 식품 및 약품</>과 달리, 정제된 식품 및 약품은 <#sys.manualCraft>간편 제작</>으로만 생산할 수 있습니다."
   },
   "sys.manualCraftField": {
-    "name": "재배",
+    "name": "논배미 제작",
     "desc": "<#sys.manualCraft>간편 제작</>에서 일부 식물의 씨앗을 <#item.carbonMtl>카본 조각</>과 조합하여 해당 식물의 논배미를 만들 수 있습니다.\n이후 생태 재배 구역에서 논배미를 재배할 수 있습니다."
   },
   "sys.manualCraftTonic": {

@@ -124,7 +124,7 @@
       "name": "독심술"
     },
     "potential3": {
-      "description": "배틀 스킬 <@ba.key>서프라이즈?</>로 인해 점착된 <@ba.key>수제 폭탄</>이 폭발한 후, <#ba.slow>감속</> 효과가 명중 당한 모든 적에게로 확산됩니다. 해당 효과는 <@ba.vup>{duration_potential:0}</>초 동안 지속됩니다.",
+      "description": "배틀 스킬 <@ba.key>서프라이즈?</>로 인해 점착된 <@ba.key>수제 폭탄</>이 폭발한 후, <#ba.slow>감속</> 효과가 명중당한 모든 적에게로 확산됩니다. 해당 효과는 <@ba.vup>{duration_potential:0}</>초 동안 지속됩니다.",
       "name": "트리플 서프라이즈"
     },
     "potential4": {

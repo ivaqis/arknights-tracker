@@ -2813,7 +2813,7 @@
             "costvalue": 0.85
         },
         "potential5": {
-            "ignore_pulse_resist": 0.15
+            "ignore_pulse_resist": -15
         }
     }
 }

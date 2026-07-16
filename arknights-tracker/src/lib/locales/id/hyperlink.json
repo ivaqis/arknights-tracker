@@ -1,422 +1,422 @@
 {
   "adv.electricFence": {
-    "name": "High Voltage Fence",
-    "desc": "An active high voltage fence is impassable. Follow the cable, find the switch, and shut down the fence for safe passage."
+    "name": "Pagar Tegangan Tinggi",
+    "desc": "Pagar tegangan tinggi yang aktif tidak akan bisa dilewati. Telusuri kabelnya, cari sakelarnya, lalu nonaktifkan pagar agar bisa dilewati dengan aman."
   },
   "adv.eswitch": {
-    "name": "Reactive Device",
-    "desc": "A reactive device changes its operation mode when attacked or hit by an explosion. It is often used to switch off <#adv.electricFence>High Voltage Fences</> or activate <#adv.jumpMachine>Bounce Devices</>."
+    "name": "Perangkat Reaktif",
+    "desc": "Mode operasi perangkat reaktif akan berubah saat diserang atau terkena ledakan. Perangkat ini sering dipakai untuk menonaktifkan <#adv.electricFence>Pagar Tegangan Tinggi</> atau mengaktifkan <#adv.jumpMachine>Perangkat Pantul</>."
   },
   "adv.jumpMachine": {
-    "name": "Bounce Device",
-    "desc": "The controlled operator can use Bounce Devices to jump across a longer distance or reach high places unreachable with normal jumping.\nSimply stand on a powered Bounce Device, then jump to use it."
+    "name": "Perangkat Pantul",
+    "desc": "Operator terkontrol bisa menggunakan Perangkat Pantul untuk melompat dalam jarak yang lebih jauh atau menjangkau tempat tinggi yang tak bisa dijangkau dengan lompatan normal.\nBerdiri saja di atas Perangkat Pantul yang aktif, lalu melompatlah dari situ."
   },
   "adv.powerTerminal": {
-    "name": "Electric Nexus",
-    "desc": "An electric nexus is usually placed at the end of a power transmission line. Connect it to the power grid to supply power to nearby facilities. Electric Nexuses are often used to power gates and switches. Supply power to Electric Nexuses with Relay Towers. This then grants control access to gates or switches linked to them."
+    "name": "Nexus Listrik",
+    "desc": "Nexus listrik biasanya ditempatkan di ujung jalur transmisi daya. Hubungkan ke jaringan listrik untuk mengalirkan listrik ke fasilitas di sekitarnya. Nexus listrik banyak digunakan untuk mengalirkan listrik ke gerbang dan sakelar. Alirkan listrik ke Nexus listrik menggunakan Menara Relai. Setelah itu, akses kontrol ke gerbang atau sakelar yang terhubung akan terbuka."
   },
   "ba.absorb": {
-    "name": "Absorb",
-    "desc": "A way to end a Physical or Arts debuff early. <@ba.key>Absorb</> is not the same as <#ba.consume>consume</>."
+    "name": "Serap",
+    "desc": "Cara untuk mengakhiri debuff Physical atau Arts lebih awal. <@ba.key>Serap</> tidak sama dengan <#ba.consume>memakai</>."
   },
   "ba.airborne": {
-    "name": "Physical Status: Lift",
-    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then add 1 stack of <#ba.noguard>Vulnerability</>, and deal <@ba.phy>Physical DMG</> and <@ba.poise>Stagger</>."
+    "name": "Status Fisik: Lift",
+    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, <#ba.noguard>Vulnerability</> akan bertambah sebanyak 1 tumpuk lagi dan menimbulkan <@ba.phy>Physical DMG</> dan <@ba.poise>Stagger</>."
   },
   "ba.burning": {
     "name": "Arts Reaction: Combustion",
-    "desc": "An enemy with <@ba.burning>Combustion</> takes <@ba.fire>Heat DMG</> over time.\n<@ba.burning>Combustion</> = A <#ba.spellinflict>non-Heat Infliction</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</>"
+    "desc": "Musuh yang terkena <@ba.burning>Combustion</> akan terkena <@ba.fire>Heat DMG</> seiring waktu.\n<@ba.burning>Combustion</> = <#ba.spellinflict>Infliction selain Heat</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</>"
   },
   "ba.burningonchar": {
-    "name": "Operator Debuff: Combustion",
-    "desc": "Certain enemy skills can apply stacks of <@ba.fireinflict>Heat Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.burning>Combusted</>: Temporarily take continuous <@ba.fire>Heat DMG</> that ignores their DEF."
+    "name": "Debuff Operator: Combustion",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.fireinflict>Heat Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.burning>Combusted</>: Terkena <@ba.fire>Heat DMG</> terus-menerus untuk sementara dan DEF-nya akan diabaikan."
   },
   "ba.combo": {
     "name": "Link",
-    "desc": "Next battle skill or ultimate cast by the team consumes the Link buff and deals more DMG, with battle skills getting a higher increase. Effects of the same type can stack, but with diminishing returns."
+    "desc": "Skill tarung atau ultimate berikutnya yang digunakan oleh tim akan memakai buff Link dan menimbulkan DMG lebih besar, dan skill tarung akan mendapatkan peningkatan lebih besar. Efek yang tipenya sama bisa ditumpuk, tapi hasilnya akan menurun."
   },
   "ba.conduct": {
     "name": "Arts Reaction: Electrification",
-    "desc": "An enemy with <@ba.conduct>Electrification</> takes more <#ba.spelldmg>Arts DMG</>.\n<@ba.conduct>Electrification</> = A <#ba.spellinflict>non-Electric Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</>"
+    "desc": "Musuh yang terkena <@ba.conduct>Electrification</> akan terkena <#ba.spelldmg>Arts DMG</> lebih besar.\n<@ba.conduct>Electrification</> = <#ba.spellinflict>Infliction selain Electric</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</>"
   },
   "ba.conductonchar": {
-    "name": "Operator Debuff: Electrification",
-    "desc": "Certain enemy skills can apply stacks of <@ba.pulseinflict>Electric Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.conduct>Electrified</>: Temporary stun and take more <#ba.spelldmg>Arts DMG</> for a certain duration."
+    "name": "Debuff Operator: Electrification",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.pulseinflict>Electric Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.conduct>Electrified</>: Terkena Stun untuk sementara dan terkena <#ba.spelldmg>Arts DMG</> selama durasi tertentu."
   },
   "ba.consume": {
-    "name": "Debuff Consumption",
-    "desc": "Various Physical and Arts debuffs can be ended early. For example, <#ba.crush>Crush</> consumes <#ba.noguard>Vulnerability</> debuffs, while <#ba.burning>Combustion</> consumes <#ba.spellinflict>Arts Infliction</> debuffs."
+    "name": "Pemakaian Debuff",
+    "desc": "Berbagai debuff Physical dan Arts bisa diakhiri lebih awal. Contoh: <#ba.crush>Crush</> memakai debuff <#ba.noguard>Vulnerability</>, sedangkan <#ba.burning>Combustion</> memakai debuff <#ba.spellinflict>Arts Infliction</>."
   },
   "ba.corrupt": {
     "name": "Arts Reaction: Corrosion",
-    "desc": "An enemy with <@ba.corrupt>Corrosion</> gradually loses resistance against all elements. \n<@ba.corrupt>Corrosion</> = A <#ba.spellinflict>non-Nature Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</>"
+    "desc": "Musuh yang terkena <@ba.corrupt>Corrosion</> akan kehilangan ketahanan secara bertahap terhadap semua elemen. \n<@ba.corrupt>Corrosion</> = <#ba.spellinflict>Infliction selain Nature</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</>"
   },
   "ba.corruptonchar": {
-    "name": "Operator Debuff: Corrosion",
-    "desc": "Certain enemy skills can apply stacks of <@ba.naturalinflict>Nature Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.corrupt>Corroded</>: Cannot dash and suffer movement speed reduction for a certain duration."
+    "name": "Debuff Operator: Corrosion",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.naturalinflict>Nature Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.corrupt>Corroded</>: Tidak bisa melejit dan akan mengalami pengurangan kecepatan gerak selama durasi tertentu."
   },
   "ba.crush": {
-    "name": "Physical Status: Crush",
-    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then <#ba.consume>consume</> all <#ba.noguard>Vulnerability</> stacks and deal massive <@ba.phy>Physical DMG</>."
+    "name": "Status Fisik: Crush",
+    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, semua tumpukan <#ba.noguard>Vulnerability</> akan <#ba.consume>dipakai</> dan menimbulkan <@ba.phy>Physical DMG</> dalam jumlah besar."
   },
   "ba.crystbreak": {
     "name": "Shatter",
-    "desc": "To an enemy with active <#ba.frozen>Solidification</>, applying <#ba.noguard>Vulnerability</> or <#ba.physicalstatus>Physical Status</> effects will <#ba.consume>consume</> the <#ba.frozen>Solidification</> to trigger Shatter that deals massive <@ba.pd>Physical DMG</>."
+    "desc": "Jika berhasil mengakibatkan efek <#ba.noguard>Vulnerability</> atau <#ba.physicalstatus>Status Fisik</> kepada musuh yang sedang terkena <#ba.frozen>Solidification</>, <#ba.frozen>Solidification</> itu akan <#ba.consume>dipakai</> untuk mengaktifkan Shatter yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar."
   },
   "ba.crystburst": {
     "name": "Arts Burst: Cryo",
-    "desc": "<#ba.crystinflict>Cryo Infliction</> + <#ba.crystinflict>Cryo Infliction</> will trigger <@ba.cryst>Cryo Burst</> that deals <@ba.cryst>Cryo DMG</> to enemies."
+    "desc": "<#ba.crystinflict>Cryo Infliction</> + <#ba.crystinflict>Cryo Infliction</> akan mengaktifkan <@ba.cryst>Cryo Burst</> yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh."
   },
   "ba.crystenhance": {
     "name": "Cryo Amp",
-    "desc": "Cryo Amped targets temporarily deal more <@ba.cryst>Cryo DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Cryo Amped akan menimbulkan <@ba.cryst>Cryo DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.crystinflict": {
     "name": "Arts Infliction: Cryo",
-    "desc": "<@ba.crystinflict>Cryo Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.crystinflict>Cryo Infliction</> can be applied and stacking triggers <#ba.crystburst>Cryo Burst</>. \nA <#ba.spellinflict>non-Cryo Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</> = <#ba.frozen>Solidification</>"
+    "desc": "<@ba.crystinflict>Cryo Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.crystinflict>Cryo Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.crystburst>Cryo Burst</>. \n<#ba.spellinflict>Infliction selain Cryo</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</> = <#ba.frozen>Solidification</>"
   },
   "ba.crystonchar": {
-    "name": "Operator Debuff: Cryo Infliction",
-    "desc": "Certain enemy skills can apply stacks of <@ba.crystinflict>Cryo Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.frozen>Solidified</>: Cannot move for a certain duration."
+    "name": "Debuff Operator: Cryo Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.crystinflict>Cryo Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.frozen>Solidified</>: Tidak bisa bergerak selama durasi tertentu."
   },
   "ba.crystvul": {
     "name": "Cryo Susceptibility",
-    "desc": "Cryo Susceptible targets temporarily take more <@ba.cryst>Cryo DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang terkena Cryo Susceptible akan terkena <@ba.cryst>Cryo DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.dispel": {
     "name": "Dispel",
-    "desc": "This removes specific debuffs from the operator."
+    "desc": "Ini akan menghilangkan debuff dari operator."
   },
   "ba.dot": {
     "name": "DMG Over Time",
-    "desc": "DMG over time cannot trigger critical hits."
+    "desc": "DMG over time tidak bisa mengakibatkan critical hit."
   },
   "ba.enhance": {
     "name": "Amp",
-    "desc": "Amped targets deal more DMG of the element it is Amped for. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Amped akan menimbulkan DMG yang lebih besar berdasarkan elemen Amped-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.fireburst": {
     "name": "Arts Burst: Heat",
-    "desc": "<#ba.fireinflict>Heat Infliction</> + <#ba.fireinflict>Heat Infliction</> will trigger <@ba.fire>Heat Burst</> that deals <@ba.fire>Heat DMG</> to enemies."
+    "desc": "<#ba.fireinflict>Heat Infliction</> + <#ba.fireinflict>Heat Infliction</> akan mengaktifkan <@ba.fire>Heat Burst</> yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh."
   },
   "ba.fireenhance": {
     "name": "Heat Amp",
-    "desc": "Heat Amped targets temporarily deal more <@ba.fire>Heat DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Heat Amped akan menimbulkan <@ba.fire>Heat DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.fireinflict": {
     "name": "Arts Infliction: Heat",
-    "desc": "<@ba.fireinflict>Heat Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.fireinflict>Heat Infliction</> can be applied and stacking triggers <#ba.fireburst>Heat Burst</>. \nA <#ba.spellinflict>non-Heat Infliction</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</> = <#ba.burning>Combustion</>"
+    "desc": "<@ba.fireinflict>Heat Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.fireinflict>Heat Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.fireburst>Heat Burst</>. \n<#ba.spellinflict>Infliction selain Heat</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</> = <#ba.burning>Combustion</>"
   },
   "ba.fireonchar": {
-    "name": "Operator Debuff: Heat Infliction",
-    "desc": "Certain enemy skills can apply stacks of <@ba.fireinflict>Heat Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.burning>Combusted</>: Temporarily take continuous <@ba.fire>Heat DMG</> that ignores their DEF."
+    "name": "Debuff Operator: Heat Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.fireinflict>Heat Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.burning>Combusted</>: Terkena <@ba.fire>Heat DMG</> terus-menerus untuk sementara dan DEF-nya akan diabaikan."
   },
   "ba.firevul": {
     "name": "Heat Susceptibility",
-    "desc": "Heat Susceptible targets temporarily take more <@ba.fire>Heat DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang terkena Heat Susceptible akan terkena <@ba.fire>Heat DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.fracture": {
-    "name": "Physical Status: Breach",
-    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then <#ba.consume>consume</> all <#ba.noguard>Vulnerability</> stacks, deal <@ba.phy>Physical DMG</>, and temporarily increase the <@ba.pd>Physical DMG</> taken by the enemy."
+    "name": "Status Fisik: Breach",
+    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, semua tumpukan <#ba.noguard>Vulnerability</> akan <#ba.consume>dipakai</> sehingga akan menimbulkan <@ba.phy>Physical DMG</> dan untuk sementara meningkatkan <@ba.pd>Physical DMG</> yang diterima musuh."
   },
   "ba.frozen": {
     "name": "Arts Reaction: Solidification",
-    "desc": "An enemy with <@ba.frozen>Solidification</> cannot move, and applying <#ba.noguard>Vulnerability</> or a <#ba.physicalstatus>Physical Status</> to the enemy triggers the <#ba.crystbreak>Shatter</> effect. \n<@ba.frozen>Solidification</> = A <#ba.spellinflict>non-Cryo Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</>"
+    "desc": "Musuh yang terkena <@ba.frozen>Solidification</> tidak akan bisa bergerak, dan jika kamu mengakibatkan <#ba.noguard>Vulnerability</> atau <#ba.physicalstatus>Status Fisik</> kepada musuh tersebut, efek <#ba.crystbreak>Shatter</> akan aktif. \n<@ba.frozen>Solidification</> = <#ba.spellinflict>Infliction selain Cryo</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</>"
   },
   "ba.frozenonchar": {
-    "name": "Operator Debuff: Solidification",
-    "desc": "Certain enemy skills can apply stacks of <@ba.crystinflict>Cryo Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.frozen>Solidified</>: Cannot move for a certain duration."
+    "name": "Debuff Operator: Solidification",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.crystinflict>Cryo Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.frozen>Solidified</>: Tidak bisa bergerak selama durasi tertentu."
   },
   "ba.guard": {
     "name": "Protect",
-    "desc": "Protected targets temporarily take reduced DMG. The number represents the degree of reduction. When there are multiple effects of the same type, only the most powerful applies."
+    "desc": "Target yang punya Protected akan terkena DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
   },
   "ba.knockdown": {
-    "name": "Physical Status: Knock Down",
-    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then add 1 stack of <#ba.noguard>Vulnerability</>, and deal <@ba.phy>Physical DMG</> and <@ba.poise>Stagger</>."
+    "name": "Status Fisik: Knock Down",
+    "desc": "Mengakibatkan <#ba.noguard>Vulnerability</> kepada musuh. Jika musuh sudah terkena <#ba.noguard>Vulnerable</>, <#ba.noguard>Vulnerability</> akan bertambah sebanyak 1 tumpuk lagi dan menimbulkan <@ba.phy>Physical DMG</> dan <@ba.poise>Stagger</>."
   },
   "ba.lastcombo": {
     "name": "Final Strike",
-    "desc": "Final Strike is the last sequence of basic attack. When the controlled operator's Final Strike hits the enemy, it also deals <@ba.poise>Stagger</> and restores some Skill Points (SP)."
+    "desc": "Final Strike adalah tahap terakhir dari serangan dasar. Saat Final Strike dari operator terkontrol menghantam musuh, Final Strike itu juga akan menimbulkan <@ba.poise>Stagger</> dan memulihkan sebagian Poin Skill (SP)."
   },
   "ba.naturalburst": {
     "name": "Arts Burst: Nature",
-    "desc": "<#ba.naturalinflict>Nature Infliction</> + <#ba.naturalinflict>Nature Infliction</> will trigger <@ba.natur>Nature Burst</> that deals <@ba.natur>Nature DMG</> to enemies."
+    "desc": "<#ba.naturalinflict>Nature Infliction</> + <#ba.naturalinflict>Nature Infliction</> akan mengaktifkan <@ba.natur>Nature Burst</> yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh."
   },
   "ba.naturalenhance": {
     "name": "Nature Amp",
-    "desc": "Nature Amped targets temporarily deal more <@ba.natur>Nature DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Nature Amped akan menimbulkan <@ba.natur>Nature DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.naturalinflict": {
     "name": "Arts Infliction: Nature",
-    "desc": "<@ba.naturalinflict>Nature Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.naturalinflict>Nature Infliction</> can be applied and stacking triggers <#ba.naturalburst>Nature Burst</>. \nA <#ba.spellinflict>non-Nature Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</> = <#ba.corrupt>Corrosion</>"
+    "desc": "<@ba.naturalinflict>Nature Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.naturalinflict>Nature Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.naturalburst>Nature Burst</>. \n<#ba.spellinflict>Infliction selain Nature</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</> = <#ba.corrupt>Corrosion</>"
   },
   "ba.naturalonchar": {
-    "name": "Operator Debuff: Nature Infliction",
-    "desc": "Certain enemy skills can apply stacks of <@ba.naturalinflict>Nature Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.corrupt>Corroded</>: Cannot dash and suffer movement speed reduction for a certain duration."
+    "name": "Debuff Operator: Nature Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.naturalinflict>Nature Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.corrupt>Corroded</>: Tidak bisa melejit dan akan mengalami pengurangan kecepatan gerak selama durasi tertentu."
   },
   "ba.naturalvul": {
     "name": "Nature Susceptibility",
-    "desc": "Nature Susceptible targets temporarily take more <@ba.natur>Nature DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang terkena Nature Susceptible akan terkena <@ba.natur>Nature DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.noguard": {
     "name": "Vulnerable",
-    "desc": "Hitting an enemy for the first time with a skill with <#ba.physicalstatus>Physical Status</> applies <@ba.noguard>Vulnerability</> instead of the actual Physical Status.\nA <@ba.phy>Vulnerable</> enemy can be <#ba.airborne>Lifted</> and <#ba.knockdown>Knocked Down</> to add more Vulnerability stacks (up to 4). Hitting a Vulnerable enemy with <#ba.crush>Crush</> or <#ba.fracture>Breach</> will <#ba.consume>consume</> the Vulnerability stacks."
+    "desc": "Jika skill yang punya <#ba.physicalstatus>Status Fisik</> berhasil menghantam musuh untuk pertama kali, kamu akan mengakibatkan <@ba.noguard>Vulnerability</> alih-alih Status Fisik yang sesungguhnya.\nMusuh yang sedang terkena <@ba.phy>Vulnerable</> bisa terkena <#ba.airborne>Lifted</> dan <#ba.knockdown>Knocked Down</> untuk menambahkan lebih banyak tumpukan Vulnerability (maks 4). Jika <#ba.crush>Crush</> atau <#ba.fracture>Breach</> berhasil menghantam musuh yang sedang terkena Vulnerable, tumpukan Vulnerability akan <#ba.consume>terpakai</>."
   },
   "ba.originium": {
-    "name": "Originium Crystal",
-    "desc": "The Endministrator's combo skill attaches Originium Crystals to enemies and immobilizes them."
+    "name": "Kristal Originium",
+    "desc": "Skill kombo Endministrator akan memasangkan Kristal Originium pada musuh dan melumpuhkannya."
   },
   "ba.physicalenhance": {
     "name": "Physical Amp",
-    "desc": "Physical Amped targets temporarily deal more <@ba.pd>Physical DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Physical Amped akan menimbulkan <@ba.pd>Physical DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.physicalstatus": {
-    "name": "Physical Status",
-    "desc": "Physical Statuses refer to physical debuffs applied to the enemy. They include: <#ba.airborne>Lifted</>, <#ba.knockdown>Knocked Down</>, <#ba.crush>Crushed</>, and <#ba.fracture>Breached</>."
+    "name": "Status Fisik",
+    "desc": "Status Fisik adalah debuff fisik yang diakibatkan kepada musuh. Status Fisik mencakup: <#ba.airborne>Lifted</>, <#ba.knockdown>Knocked Down</>, <#ba.crush>Crushed</>, dan <#ba.fracture>Breached</>."
   },
   "ba.physicalvul": {
-    "name": "Physical Susceptibility",
-    "desc": "Physical Susceptible targets temporarily take more <@ba.pd>Physical DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "name": "Phy Suscept",
+    "desc": "Target yang terkena Physical Susceptible akan terkena <@ba.pd>Physical DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.poiseknot": {
-    "name": "Stagger Node",
-    "desc": "Some powerful enemies have <@ba.poise>Stagger Nodes</>. Deal enough <@ba.poise>Stagger</> to reach the <@ba.poise>Stagger Node</> to interrupt such enemies and make them stumble."
+    "name": "Nodus Stagger",
+    "desc": "Beberapa musuh kuat punya <@ba.poise>Nodus Stagger</>. Timbulkan cukup banyak <@ba.poise>Stagger</> agar bisa mencapai <@ba.poise>Nodus Stagger</> untuk menyela musuh tersebut dan membuat mereka goyah."
   },
   "ba.pulseburst": {
     "name": "Arts Burst: Electric",
-    "desc": "<#ba.pulseinflict>Electric Infliction</> + <#ba.pulseinflict>Electric Infliction</> will trigger <@ba.pulse>Electric Burst</> that deals <@ba.pulse>Electric DMG</> to enemies."
+    "desc": "<#ba.pulseinflict>Electric Infliction</> + <#ba.pulseinflict>Electric Infliction</> akan mengaktifkan <@ba.pulse>Electric Burst</> yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh."
   },
   "ba.pulseenhance": {
     "name": "Electric Amp",
-    "desc": "Electric Amped targets temporarily deal more <@ba.pulse>Electric DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Electric Amped akan menimbulkan <@ba.pulse>Electric DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.pulseinflict": {
     "name": "Arts Infliction: Electric",
-    "desc": "<@ba.pulseinflict>Electric Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.pulseinflict>Electric Infliction</> can be applied and stacking triggers <#ba.pulseburst>Electric Burst</>. \nA <#ba.spellinflict>non-Electric Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</> = <#ba.conduct>Electrification</>"
+    "desc": "<@ba.pulseinflict>Electric Infliction</> adalah salah satu tipe <#ba.spellinflict>Arts Infliction</>. \nMaks 4 tumpuk <@ba.pulseinflict>Electric Infliction</> bisa diakibatkan, dan akumulasi tumpukannya akan mengaktifkan <#ba.pulseburst>Electric Burst</>. \n<#ba.spellinflict>Infliction selain Electric</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</> = <#ba.conduct>Electrification</>"
   },
   "ba.pulseonchar": {
-    "name": "Operator Debuff: Electric Infliction",
-    "desc": "Certain enemy skills can apply stacks of <@ba.pulseinflict>Electric Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.conduct>Electrified</>: Temporary stun and take more <#ba.spelldmg>Arts DMG</> for a certain duration."
+    "name": "Debuff Operator: Electric Infliction",
+    "desc": "Skill tertentu dari musuh bisa mengakibatkan tumpukan <@ba.pulseinflict>Electric Infliction</> kepada operator. \nSaat mencapai 4 tumpuk, operator akan terkena <@ba.conduct>Electrified</>: Terkena Stun untuk sementara dan terkena <#ba.spelldmg>Arts DMG</> selama durasi tertentu."
   },
   "ba.pulsevul": {
     "name": "Electric Susceptibility",
-    "desc": "Electric Susceptible targets temporarily take more <@ba.pulse>Electric DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang terkena Electric Susceptible akan terkena <@ba.pulse>Electric DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.return": {
-    "name": "SP Return",
-    "desc": "After spending SP and meeting certain criteria, some of the SP spent will be returned. \nSP Return is not \"SP Recovery\" and does not activate SP Recovery-triggered effects. Spending returned SP also does not give Ultimate Energy."
+    "name": "Pengembalian SP",
+    "desc": "Sebagian SP yang dipakai akan dikembalikan setelah memakai SP dan memenuhi kriteria tertentu. \nPengembalian SP bukanlah “Pemulihan SP” dan tidak akan mengaktifkan efek yang diaktifkan oleh Pemulihan SP. Pemakaian SP yang dikembalikan juga tidak akan memberikan Energi Ultimate."
   },
   "ba.rossi": {
     "name": "Razor Clawmark",
-    "desc": "Rossi's battle skill applies a special status on the enemy. The affected target will take <@ba.pd>Physical DMG</> over time, and suffers higher Physical DMG Taken and Heat DMG Taken."
+    "desc": "Skill tarung Rossi akan mengakibatkan status khusus kepada musuh. Target yang terdampak akan terkena <@ba.pd>Physical DMG</> over time, dan terkena Physical DMG Taken serta Heat DMG Taken yang lebih besar."
   },
   "ba.shield": {
-    "name": "Shield",
-    "desc": "The shield can absorb damage while it is active. Some shields may only absorb specific type(s) of DMG."
+    "name": "Perisai",
+    "desc": "Perisai bisa menyerap damage selagi masih aktif. Beberapa perisai hanya bisa menyerap tipe DMG tertentu."
   },
   "ba.slow": {
     "name": "Slow",
-    "desc": "Slowed targets temporarily suffer movement speed reduction. The number represents the degree of reduction. When there are multiple effects of the same type, only the most powerful applies."
+    "desc": "Target yang terkena Slowed akan mengalami penurunan kecepatan gerak untuk sementara. Angkanya menunjukkan besaran pengurangannya. Jika ada beberapa efek yang tipenya sama, yang akan berlaku hanyalah efek yang paling kuat."
   },
   "ba.speedup": {
     "name": "Haste",
-    "desc": "Temporarily raises the movement speed of a target. The number represents the degree of the speed increase. Effects of the same type can stack until hitting the speed cap."
+    "desc": "Meningkatkan kecepatan gerak target untuk sementara. Angkanya menunjukkan besaran peningkatan kecepatannya. Efek yang tipenya sama bisa ditumpuk hingga mencapai batas kecepatan."
   },
   "ba.spellburst": {
     "name": "Arts Burst",
-    "desc": "<@ba.key>Arts Bursts</> are triggered by stacking <#ba.spellinflict>Arts Inflictions</> of the same elements. They include <#ba.fireburst>Heat Burst</>, <#ba.pulseburst>Electric Burst</>, <#ba.crystburst>Cryo Burst</>, and <#ba.naturalburst>Nature Burst</>."
+    "desc": "<@ba.key>Arts Burst</> bisa diaktifkan dengan menumpuk <#ba.spellinflict>Arts Infliction</> yang elemennya sama. Arts Burst mencakup <#ba.fireburst>Heat Burst</>, <#ba.pulseburst>Electric Burst</>, <#ba.crystburst>Cryo Burst</>, dan <#ba.naturalburst>Nature Burst</>."
   },
   "ba.spelldmg": {
-    "name": "DMG Type",
-    "desc": "Damage can be divided into <@ba.pd>Physical DMG</>, <@ba.key>Arts DMG</>, and <@ba.ether>Æther DMG</>.\n<@ba.key>Arts DMG</> can be further divided into <@ba.fire>Heat DMG</>, <@ba.pulse>Electric DMG</>, <@ba.cryst>Cryo DMG</>, and <@ba.natur>Nature DMG</>."
+    "name": "Tipe DMG",
+    "desc": "Damage bisa dibagi menjadi <@ba.pd>Physical DMG</>, <@ba.key>Arts DMG</>, dan <@ba.ether>Æther DMG</>.\n<@ba.key>Arts DMG</> bisa dibagi lagi menjadi <@ba.fire>Heat DMG</>, <@ba.pulse>Electric DMG</>, <@ba.cryst>Cryo DMG</>, dan <@ba.natur>Nature DMG</>."
   },
   "ba.spellenhance": {
     "name": "Arts Amp",
-    "desc": "Arts Amped targets temporarily deal more <#ba.spelldmg>Arts DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang punya Arts Amped akan menimbulkan <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.spellinflict": {
     "name": "Arts Infliction",
-    "desc": "<@ba.key>Arts Inflictions</> are special Arts debuff inflicted upon the enemy. There are 4 elements of Arts Inflictions: <#ba.fireinflict>Heat Infliction</>, <#ba.pulseinflict>Electric Infliction</>, <#ba.crystinflict>Cryo Infliction</>, and <#ba.naturalinflict>Nature Infliction</>. \nUp to 4 stacks of <@ba.key>Arts Infliction</> of the same element can be applied."
+    "desc": "<@ba.key>Arts Inflictions</> adalah debuff Arts spesial yang diakibatkan kepada musuh. Ada 4 elemen Arts Infliction: <#ba.fireinflict>Heat Infliction</>, <#ba.pulseinflict>Electric Infliction</>, <#ba.crystinflict>Cryo Infliction</>, dan <#ba.naturalinflict>Nature Infliction</>. \n<@ba.key>Arts Infliction</> yang elemennya sama bisa diakibatkan sebanyak maks 4 tumpuk."
   },
   "ba.spellinflictonchar": {
-    "name": "Arts Inflictions / Arts Reactions on Operators",
-    "desc": "Some enemy skills can apply stacks of <#ba.burningonchar>Heat Infliction</>, <#ba.conductonchar>Electric Infliction</>, <#ba.frozenonchar>Cryo Infliction</>, or <#ba.corruptonchar>Nature Infliction</>.\nAt 4 stacks of the Arts Inflictions, the operator becomes <#ba.burningonchar>Combusted</>, <#ba.conductonchar>Electrified</>, <#ba.frozenonchar>Solidified</>, or <#ba.corruptonchar>Corroded</> respectively."
+    "name": "Arts Infliction/Arts Reaction pada Operator",
+    "desc": "Beberapa skill musuh bisa mengakibatkan tumpukan <#ba.burningonchar>Heat Infliction</>, <#ba.conductonchar>Electric Infliction</>, <#ba.frozenonchar>Cryo Infliction</>, atau <#ba.corruptonchar>Nature Infliction</>.\nJika Arts Infliction mencapai 4 tumpukan, operator akan terkena <#ba.burningonchar>Combusted</>, <#ba.conductonchar>Electrified</>, <#ba.frozenonchar>Solidified</>, atau <#ba.corruptonchar>Corroded</> sesuai efeknya."
   },
   "ba.spellstatus": {
     "name": "Arts Reaction",
-    "desc": "<@ba.key>Arts Reactions</> are Arts debuffs that can be applied to the enemy. They include: <#ba.burning>Combustion</>, <#ba.conduct>Electrification</>, <#ba.frozen>Solidification</>, and <#ba.corrupt>Corrosion</>."
+    "desc": "<@ba.key>Arts Reaction</> adalah debuff Arts yang bisa diakibatkan kepada musuh. Arts Reaction mencakup: <#ba.burning>Combustion</>, <#ba.conduct>Electrification</>, <#ba.frozen>Solidification</>, dan <#ba.corrupt>Corrosion</>."
   },
   "ba.spellvul": {
-    "name": "Arts Susceptibility",
-    "desc": "Arts Susceptible targets temporarily take more <#ba.spelldmg>Arts DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+    "name": "Arts Suscept",
+    "desc": "Target yang terkena Arts Susceptible akan terkena <#ba.spelldmg>Arts DMG</> lebih besar untuk sementara. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.statuslevel": {
-    "name": "Status Level",
-    "desc": "Status Level is the number of <#ba.noguard>Vulnerability</> or <#ba.spellinflict>Arts Infliction</> stacks (max 4) <#ba.consume>consumed</> when triggering a <#ba.physicalstatus>Physical Status</> or <#ba.spellstatus>Arts Reaction</>. The higher the <#ba.statuslevel>Status Level</>, the stronger the resulting <#ba.physicalstatus>Physical Status</> or <#ba.spellstatus>Arts Reaction</>."
+    "name": "Level Status",
+    "desc": "Level Status adalah jumlah tumpukan <#ba.noguard>Vulnerability</> atau <#ba.spellinflict>Arts Infliction</> (maks 4) yang <#ba.consume>terpakai</> saat mengaktifkan <#ba.physicalstatus>Status Fisik</> atau <#ba.spellstatus>Arts Reaction</>. Makin tinggi <#ba.statuslevel>Level Status</>, makin kuat <#ba.physicalstatus>Status Fisik</> atau <#ba.spellstatus>Arts Reaction</> yang dihasilkan."
   },
   "ba.vulnerable": {
     "name": "Susceptible",
-    "desc": "Susceptible targets temporarily take more DMG of the element it is Susceptible to. The number represents the degree of increase. Effects of the same type can stack."
+    "desc": "Target yang terkena Susceptible akan terkena DMG yang lebih besar untuk sementara berdasarkan elemen Susceptible-nya. Angkanya menunjukkan besaran peningkatannya. Efek yang tipenya sama bisa ditumpuk."
   },
   "ba.weak": {
     "name": "Weaken",
-    "desc": "Weakened targets temporarily deal reduced DMG. The number represents the degree of reduction. Effects of the same type can stack non-linearly."
+    "desc": "Target yang terkena Weakened akan menimbulkan DMG yang lebih kecil untuk sementara. Angkanya menunjukkan besaran pengurangannya. Efek yang tipenya sama bisa ditumpuk secara nonlinier."
   },
   "fac.hub": {
-    "name": "Protocol Automation-Core",
-    "desc": "The Protocol Automation-Core (PAC) is the central facility of the Automated Industry Complex (AIC) Factory. Storage management becomes available when standing in the Core AIC Area of the PAC."
+    "name": "Protokol Automasi Canggih",
+    "desc": "Protokol Automasi Canggih (PAC) adalah fasilitas pusat Pabrik Area Industri Cerdas (AIC). Pengelolaan penyimpanan akan tersedia jika kamu berdiri di Area AIC Inti di PAC."
   },
   "item.bbflower": {
-    "name": "Aketine",
-    "desc": "A plant that contains flammable and explosive substances. It can be gathered from the wilderness.\nThe plant can be grown with AIC Factory facilities or cultivated with <#item.portSoilBbflower>Aketine Plots</>.\nIt can also be processed with AIC Factory facilities. For example, it can be shredded to produce <#item.bbflowerPowder>Aketine Powder</>."
+    "name": "Aketin",
+    "desc": "Tanaman ini mengandung zat mudah terbakar dan mudah meledak. Bisa dikumpulkan dari alam liar.\nTanaman ini bisa ditumbuhkan menggunakan fasilitas Pabrik AIC atau dibudidayakan di <#item.portSoilBbflower>Petak Aketin</>.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, tanaman ini bisa dicacah untuk memproduksi <#item.bbflowerPowder>Bubuk Aketin</>."
   },
   "item.bbflowerPowder": {
-    "name": "Aketine Powder",
-    "desc": "A powder produced by shredding <#item.bbflower>Aketine</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bubuk Aketin",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.bbflower>Aketin</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.bbflowerSeed": {
-    "name": "Aketine Seed",
-    "desc": "Seeds picked from <#item.bbflower>Aketine</> with AIC Factory facilities.\nAketine Seeds can then be planted and grown at AIC Factory facilities to acquire Aketine.\nAlternatively, Aketine Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilBbflower>Aketine Plots</>."
+    "name": "Benih Aketin",
+    "desc": "Benih ini dipetik dari <#item.bbflower>Aketin</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Aketin bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Aketin.\nBenih Aketin dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilBbflower>Petak Aketin</>."
   },
   "item.bottledRecHp1": {
-    "name": "Buck Capsule [C]",
-    "desc": "A capsule made by <#sys.manualCraft>crafting</> or filling <#item.plantMossPowder1>Buckflower Powder</> into an <#item.glassBottle>Amethyst Bottle</> with AIC Factory facilities.\nUse this to restore an operator's HP. It can also be equipped as a <#sys.tacticalItem>tactical</>."
+    "name": "Kapsul Buck [C]",
+    "desc": "Kapsul ini dibuat melalui <#sys.manualCraft>crafting</> atau dengan mengisikan <#item.plantMossPowder1>Bubuk Buckflower</> ke dalam <#item.glassBottle>Botol Ametis</> menggunakan fasilitas Pabrik AIC.\nGunakan item ini untuk memulihkan HP operator. Bisa juga dipakai sebagai <#sys.tacticalItem>item taktis</>."
   },
   "item.carbonMtl": {
-    "name": "Carbon",
-    "desc": "A material produced by refining <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nCarbon is essential for crafting <#sys.manualCraftField>planting</> plots, and can also be used for producing other materials."
+    "name": "Karbon",
+    "desc": "Material ini diproduksi dengan merafinasi <#item.plantMoss1>Buckflower</> dengan fasilitas Pabrik AIC.\nKarbon sangatlah penting untuk membuat petak <#sys.manualCraftField>tanam</>, dan bisa juga digunakan untuk memproduksi material lain."
   },
   "item.crystalShell": {
     "name": "Origocrust",
-    "desc": "A crystalline crust produced by refining <#item.originium>Originium Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "desc": "Kepingan kristal ini diproduksi dengan merafinasi <#item.originium>Bijih Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.glassBottle": {
-    "name": "Amethyst Bottle",
-    "desc": "A bottle produced by moulding <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Botol Ametis",
+    "desc": "Botol ini diproduksi dengan mencetak <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.glassCmpt": {
-    "name": "Amethyst Part",
-    "desc": "A part produced by fitting <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bagian Ametis",
+    "desc": "Bagian ini diproduksi dengan mengepaskan <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.ironEnrPowder": {
-    "name": "Dense Ferrium Powder",
-    "desc": "A fine, dense powder produced by grinding <#item.ironPowder>Ferrium Powder</> and <#item.plantMossPowder3>Sandleaf Powder</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bubuk Ferrium Padat",
+    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.ironPowder>Bubuk Ferrium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.ironNugget": {
     "name": "Ferrium",
-    "desc": "A metal ingot produced by refining <#item.ironOre>Ferrium Ore</> with AIC Factory facilities. It can be used to produce other materials."
+    "desc": "Batangan logam ini diproduksi dengan merafinasi <#item.ironOre>Bijih Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
   },
   "item.ironOre": {
-    "name": "Ferrium Ore",
-    "desc": "An ore that can be gathered from Ferrium Ore mining spots in the wilderness.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.ironNugget>Ferrium</>."
+    "name": "Bijih Ferrium",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Ferrium di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.ironNugget>Ferrium</>."
   },
   "item.ironPowder": {
-    "name": "Ferrium Powder",
-    "desc": "A powder produced by shredding <#item.ironNugget>Ferrium</> with AIC Factory facilities. It can be used to produce other materials."
+    "name": "Bubuk Ferrium",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.ironNugget>Ferrium</> menggunakan fasilitas Pabrik AIC. Bisa digunakan untuk memproduksi material lain."
   },
   "item.originium": {
-    "name": "Originium Ore",
-    "desc": "An ore that can be gathered from Originium Ore mining spots in the wilderness. It can be used for power generation in the AIC Factory.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.crystalShell>Origocrust</>."
+    "name": "Bijih Originium",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Bijih Originium di alam liar. Bisa digunakan untuk pembangkitan daya listrik di Pabrik AIC.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.crystalShell>Origocrust</>."
   },
   "item.originiumEnrPowder": {
-    "name": "Dense Originium Powder",
-    "desc": "A fine, dense powder produced by grinding <#item.originiumPowder>Originium Powder</> and <#item.plantMossPowder3>Sandleaf Powder</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bubuk Originium Padat",
+    "desc": "Bubuk halus dan padat ini diproduksi dengan menggiling <#item.originiumPowder>Bubuk Originium</> dan <#item.plantMossPowder3>Bubuk Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.originiumPowder": {
-    "name": "Originium Powder",
-    "desc": "A powder produced by shredding <#item.originium>Originium Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bubuk Originium",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.originium>Bijih Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.plantMoss1": {
     "name": "Buckflower",
-    "desc": "The Buckflower is a plant that grows in the wilderness and is known for its brightly colored flowers.\nThe plant can also be grown with AIC Factory facilities or <#item.portSoilMoss1>Buckflower Plots</>.\nThe plant can be used for crafting <#sys.tacticalItem>tacticals</> or other materials."
+    "desc": "Buckflower adalah tanaman yang tumbuh di alam liar dan dikenal karena bunganya yang berwarna cerah.\nTanaman ini juga bisa ditumbuhkan di fasilitas Pabrik AIC atau <#item.portSoilMoss1>Petak Buckflower</>.\nTanaman ini bisa digunakan untuk membuat berbagai <#sys.tacticalItem>item taktis</> atau material lainnya."
   },
   "item.plantMoss3": {
     "name": "Sandleaf",
-    "desc": "A plant that is characterized by rough, gritty leaves. It can be gathered from the wilderness.\nThe plant can be grown with AIC Factory facilities or cultivated with <#item.portSoilMoss3>Sandleaf Plots</>.\nIt can also be processed with AIC Factory facilities. For example, it can be shredded to produce <#item.plantMossPowder3>Sandleaf Powder</>."
+    "desc": "Tanaman ini punya daun kasar dan bergerigi. Bisa dikumpulkan dari alam liar.\nTanaman ini bisa ditumbuhkan menggunakan fasilitas Pabrik AIC atau dibudidayakan di <#item.portSoilMoss3>Petak Sandleaf</>.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, tanaman ini bisa dicacah untuk memproduksi <#item.plantMossPowder3>Bubuk Sandleaf</>."
   },
   "item.plantMossPowder1": {
-    "name": "Buckflower Powder",
-    "desc": "A powder made by <#sys.manualCraft>crafting</> or shredding <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nUse this to restore an operator's HP. It can also be equipped as a <#sys.tacticalItem>tactical</>."
+    "name": "Bubuk Buckflower",
+    "desc": "Bubuk ini dibuat melalui <#sys.manualCraft>crafting</> atau dengan mencacah <#item.plantMoss1>Buckflower</> menggunakan fasilitas Pabrik AIC.\nGunakan item ini untuk memulihkan HP operator. Bisa juga dipakai sebagai <#sys.tacticalItem>item taktis</>."
   },
   "item.plantMossPowder3": {
-    "name": "Sandleaf Powder",
-    "desc": "A powder produced by shredding <#item.plantMoss3>Sandleaves</> with AIC Factory facilities.\nIt can be used to produce other materials, usually by grinding."
+    "name": "Bubuk Sandleaf",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.plantMoss3>Sandleaf</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain, biasanya melalui penggilingan."
   },
   "item.plantMossSeed1": {
-    "name": "Buckflower Seed",
-    "desc": "Seeds picked from <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nBuckflower Seeds can then be planted and grown at AIC Factory facilities to acquire Buckflowers. Alternatively, Buckflower Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilMoss1>Buckflower Plots</>."
+    "name": "Benih Buckflower",
+    "desc": "Benih ini dipetik dari <#item.plantMoss1>Buckflower</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Buckflower bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Buckflower. Benih Buckflower dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss1>Petak Buckflower</>."
   },
   "item.plantMossSeed3": {
-    "name": "Sandleaf Seed",
-    "desc": "Seeds picked from <#item.plantMoss3>Sandleaves</> with AIC Factory facilities.\nSandleaf Seeds can then be planted and grown at AIC Factory facilities to acquire Sandleaves.\nAlternatively, Sandleaf Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilMoss3>Sandleaf Plots</>."
+    "name": "Benih Sandleaf",
+    "desc": "Benih ini dipetik dari <#item.plantMoss3>Sandleaf</> menggunakan fasilitas Pabrik AIC.\nLalu, Benih Sandleaf bisa ditanam dan ditumbuhkan di fasilitas Pabrik AIC untuk menghasilkan Sandleaf.\nBenih Sandleaf dan <#item.carbonMtl>Karbon</> juga bisa digunakan di layar <#sys.manualCraftField>Penanaman</> dan dijadikan <#item.portSoilMoss3>Petak Sandleaf</>."
   },
   "item.plantMossSpc1": {
     "name": "Firebuckle",
-    "desc": "The Firebuckle is a plant that grows in the wilderness and is known for its exceptionally brilliant flowers.\nThere is a chance of getting Firebuckles when harvesting <#item.plantMoss1>Buckflowers</> in the wilderness.\nThey can be used for crafting <#sys.tacticalItem>tacticals</>."
+    "desc": "Firebuckle adalah tanaman yang tumbuh di alam liar dan dikenal karena bunganya yang mencolok.\nAda peluang untuk mendapatkan Firebuckle saat memanen <#item.plantMoss1>Buckflower</> di alam liar.\nTanaman ini bisa digunakan untuk membuat berbagai <#sys.tacticalItem>item taktis</>."
   },
   "item.plantSp1": {
     "name": "Reed Rye",
-    "desc": "The Reed Rye is a type of plantable crop gatherable from the wilderness. It can also be acquired by cultivating <#item.portSoilSp1>Reed Rye Plots</>.\nIt can be directly used for crafting <#sys.manualCraftDish>Fine Food & Meds</> (Fine F&M)."
+    "desc": "Reed Rye adalah tumbuhan panen yang bisa dikumpulkan dari alam liar. Tanaman ini juga bisa didapatkan dengan membudidayakan <#item.portSoilSp1>Petak Reed Rye</>.\nBisa langsung digunakan untuk membuat <#sys.manualCraftDish>Makanan & Obat-obatan Berkualitas</> (M&O Berkualitas)."
   },
   "item.plantSpSeed1": {
-    "name": "Reed Rye Seed",
-    "desc": "Seeds produced by seed-picking <#item.plantSp1>Reed Rye</> plants with AIC Factory facilities.\nTake Reed Rye Seed and <#item.carbonMtl>Carbon</>, then go to the <#sys.manualCraftField>Planting</> screen to craft them into <#item.portSoilSp1>Reed Rye Plots</>."
+    "name": "Benih Reed Rye",
+    "desc": "Benih ini diproduksi dengan memetik benih tanaman <#item.plantSp1>Reed Rye</> menggunakan fasilitas Pabrik AIC.\nAmbil Benih Reed Rye dan <#item.carbonMtl>Karbon</>, lalu buka layar <#sys.manualCraftField>Penanaman</> untuk membudidayakannya di <#item.portSoilSp1>Petak Reed Rye</>."
   },
   "item.portSoilBbflower": {
-    "name": "Aketine Plot",
-    "desc": "Aketine Plots can be cultivated at the Eco-Farm to acquire <#item.bbflower>Aketine</>.\nThese plots can be crafted by using <#item.bbflowerSeed>Aketine Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Aketine."
+    "name": "Petak Aketin",
+    "desc": "Petak Aketin bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.bbflower>Aketin</>.\nPetak ini bisa dibuat menggunakan <#item.bbflowerSeed>Benih Aketin</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Aketin."
   },
   "item.portSoilMoss1": {
-    "name": "Buckflower Plot",
-    "desc": "Buckflower Plots can be cultivated at the Eco-Farm to acquire <#item.plantMoss1>Buckflower</>.\nThese plots can be crafted by using <#item.plantMossSeed1>Buckflower Seed</> and <#item.carbonMtl>Carbon</> in the <#sys.manualCraftField>Planting</> screen.\nHarvesting a fully grown plot has a higher chance of getting bonus <#item.plantMossSpc1>Firebuckle</>."
+    "name": "Petak Buckflower",
+    "desc": "Petak Buckflower bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss1>Buckflower</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed1>Benih Buckflower</> dan <#item.carbonMtl>Karbon</> di layar <#sys.manualCraftField>Penanaman</>.\nDengan memanen petak yang sudah dewasa, ada peluang lebih besar untuk mendapatkan bonus <#item.plantMossSpc1>Firebuckle</>."
   },
   "item.portSoilMoss3": {
-    "name": "Sandleaf Plot",
-    "desc": "Sandleaf Plots can be cultivated at the Eco-Farm to acquire <#item.plantMoss3>Sandleaf</>.\nThese plots can be crafted by using <#item.plantMossSeed3>Sandleaf Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Sandleaves."
+    "name": "Petak Sandleaf",
+    "desc": "Petak Sandleaf bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantMoss3>Sandleaf</>.\nPetak ini bisa dibuat menggunakan <#item.plantMossSeed3>Benih Sandleaf</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Sandleaf."
   },
   "item.portSoilSp1": {
-    "name": "Reed Rye Plot",
-    "desc": "Reed Rye Plots can be cultivated at the Eco-Farm to acquire <#item.plantSp1>Reed Rye</>.\nThese plots can be crafted by using <#item.plantSpSeed1>Reed Rye Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Reed Rye."
+    "name": "Petak Reed Rye",
+    "desc": "Petak Reed Rye bisa dibudidayakan di Ladang Ramah Lingkungan untuk menghasilkan <#item.plantSp1>Reed Rye</>.\nPetak ini bisa dibuat menggunakan <#item.plantSpSeed1>Benih Reed Rye</> dan <#item.carbonMtl>Karbon</> di layar Penanaman.\nSaat dipanen, tanaman yang sudah dewasa akan menghasilkan banyak Reed Rye."
   },
   "item.procBattery1": {
-    "name": "LC Valley Battery",
-    "desc": "A battery produced by packaging <#item.glassCmpt>Amethyst Part</> and <#item.originiumPowder>Originium Powder</> with AIC Factory facilities.\nIt can be used to supply power, charge up facilities, or traded at various outposts."
+    "name": "Baterai KR Lembah",
+    "desc": "Baterai ini diproduksi dengan mengemas <#item.glassCmpt>Bagian Ametis</> dan <#item.originiumPowder>Bubuk Originium</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk mengalirkan listrik, mengisi daya fasilitas, atau diperdagangkan di pos depan."
   },
   "item.procBomb": {
-    "name": "Industrial Explosive",
-    "desc": "Industrial Explosives are a type of explosive that can be produced.\nThey are made by using the Packaging Unit, an AIC Factory facility. The materials required are <#item.glassCmpt>Amethyst Part</> and <#item.bbflowerPowder>Aketine Powder</>.\nUse Industrial Explosives to deal DMG to enemies or take down destructible objects within the blast radius."
+    "name": "Bahan Peledak Kelas Industri",
+    "desc": "Bahan Peledak Kelas Industri adalah tipe bahan peledak kelas industri yang bisa diproduksi.\nBahan peledak ini dibuat menggunakan fasilitas Pabrik AIC yaitu Unit Pengemas. Material yang dibutuhkan adalah <#item.glassCmpt>Bagian Ametis</> dan <#item.bbflowerPowder>Bubuk Aketin</>.\nGunakan Bahan Peledak Kelas Industri untuk menimbulkan DMG kepada musuh atau menghancurkan objek yang bisa dihancurkan dalam radius ledaknya."
   },
   "item.quartzGlass": {
-    "name": "Amethyst Fiber",
-    "desc": "A fiber produced by refining <#item.quartzSand>Amethyst Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Serat Ametis",
+    "desc": "Serat ini diproduksi dengan merafinasi <#item.quartzSand>Bijih Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.quartzPowder": {
-    "name": "Amethyst Powder",
-    "desc": "A powder produced by shredding <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+    "name": "Bubuk Ametis",
+    "desc": "Bubuk ini diproduksi dengan mencacah <#item.quartzGlass>Serat Ametis</> menggunakan fasilitas Pabrik AIC.\nBisa digunakan untuk memproduksi material lain."
   },
   "item.quartzSand": {
-    "name": "Amethyst Ore",
-    "desc": "An ore that can be gathered from Amethyst mining spots in the wilderness.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.quartzGlass>Amethyst Fiber</>."
+    "name": "Bijih Ametis",
+    "desc": "Bijih ini bisa dikumpulkan dari titik tambang Ametis di alam liar.\nBisa juga diproses menggunakan fasilitas Pabrik AIC. Misalnya, bijih ini bisa dirafinasi untuk memproduksi <#item.quartzGlass>Serat Ametis</>."
   },
   "sys.manualCraft": {
     "name": "Crafting",
-    "desc": "Open the Backpack panel to access the Crafting screen. Different raw materials can be crafted into useful items.\nFor example, <#item.plantMoss1>Buckflower</> can be crafted into <#item.plantMossSeed1>Buckflower Powder</> for restoring HP."
+    "desc": "Buka panel Ransel untuk mengakses layar Crafting. Berbagai bahan baku bisa diolah menjadi item yang berguna.\nMisalnya, <#item.plantMoss1>Buckflower</> bisa diolah menjadi <#item.plantMossSeed1>Bubuk Buckflower</> untuk memulihkan HP."
   },
   "sys.manualCraftDish": {
-    "name": "Fine Food & Meds",
-    "desc": "Fine Food & Meds (Fine F&M) can be used as <#sys.tacticalItem>tacticals</>. \nUnlike <#sys.manualCraftTonic>Emergency Food & Meds</>, they can only be made using <#sys.manualCraft>Crafting</>."
+    "name": "Makanan & Obat-obatan Berkualitas",
+    "desc": "Makanan & Obat-obatan Berkualitas (M&O Berkualitas) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>. \nTidak seperti <#sys.manualCraftTonic>Makanan & Obat-obatan Darurat</>, item ini hanya bisa dibuat melalui <#sys.manualCraft>Crafting</>."
   },
   "sys.manualCraftField": {
-    "name": "Planting",
-    "desc": "<#sys.manualCraft>Crafting</> lets you craft planting plots with plant seeds and <#item.carbonMtl>Carbon</>. Planting plots can be placed and grown at the Eco-Farm."
+    "name": "Penanaman",
+    "desc": "Dengan <#sys.manualCraft>Crafting</>, kamu bisa membuat petak tanam dengan benih tanaman dan <#item.carbonMtl>Karbon</>. Petak tanam bisa ditempatkan dan dibudidayakan di Ladang Ramah Lingkungan."
   },
   "sys.manualCraftTonic": {
-    "name": "Emergency Food & Meds",
-    "desc": "Emergency Food & Meds (EMS F&M) can be used as <#sys.tacticalItem>tacticals</>.\nThey can be acquired by <#sys.manualCraft>Crafting</> or by using AIC Factory facilities."
+    "name": "Makanan & Obat-obatan Darurat",
+    "desc": "Makanan & Obat-obatan Darurat (M&O Darurat) bisa digunakan sebagai <#sys.tacticalItem>item taktis</>.\nItem ini bisa didapatkan dengan <#sys.manualCraft>Crafting</> atau dengan menggunakan fasilitas Pabrik AIC."
   },
   "sys.tacticalItem": {
-    "name": "Tacticals",
-    "desc": "Tacticals are items that can be used during combat to provide various benefits and buffs. Every tactical has different activation criteria and usage limits.\nEvery operator can be equipped with 1 tactical. During battle, whenever the tactical activation criteria are met, the operator will auto-use their equipped tactical.\nAfter expending all tactical usage attempts in a single battle, one more use will be restored after a while."
+    "name": "Item Taktis",
+    "desc": "Item taktis adalah item yang bisa digunakan saat pertarungan untuk memberikan berbagai manfaat dan buff. Setiap item taktis punya kriteria aktivasi dan batas penggunaan yang berbeda-beda.\nSetiap operator bisa dipasangi 1 item taktis. Saat bertarung, jika kriteria aktivasi item taktis sudah terpenuhi, operator akan secara otomatis menggunakan item taktis yang terpasang.\nSetelah semua upaya pemakaian item taktis terpakai dalam satu kali pertarungan, penggunaannya akan dipulihkan satu kali lagi setelah beberapa saat."
   }
 }

@@ -135,7 +135,7 @@
       "name": "Absolute Haltung"
     },
     "potential5": {
-      "description": "Während der <@ba.key>Avatar der Wahrheit</>-Verwandlung ignoriert der durch Zhuang Fangyi verursachte SDN <@ba.vup>{100*ignore_pulse_resist:0}</> der <@ba.pulse>Elektrischen Resistenz</> des Gegners.",
+      "description": "Während der <@ba.key>Avatar der Wahrheit</>-Verwandlung ignoriert der durch Zhuang Fangyi verursachte SDN <@ba.vup>{-ignore_pulse_resist:0}</> der <@ba.pulse>Elektrischen Resistenz</> des Gegners.",
       "name": "Sturm der Wandlung"
     }
   },

@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Imp. de nat.",
+      "Corroer",
+      "Con. de mas."
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertido (SOLO SISTEMA, no visible dentro del juego)"
+    ],
+    "blocTag": "Academia Científica Hongshan (A.C.H.)",
+    "expertTags": [
+      "Técnica de combate",
+      "Constitución"
+    ],
+    "giftPreferTags": [
+      "Selección de los exploradores de Wuling"
+    ],
+    "hobbyTags": [
+      "Naturaleza",
+      "Caridad"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
+      },
+      "name": "Interdicción de artillería",
+      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.natur>DAÑ por naturaleza</> masivo y recupera algo de PH."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicador de DAÑ",
+        "stagger": "Tambaleo"
+      },
+      "name": "Red triturajade",
+      "description": "Crea una <@ba.key>Red triturajade</> que inflige <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos dentro del área de efecto."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Multiplicador de DAÑ base",
+        "baseStagger": "Tambaleo base",
+        "imprisonmentAndSusceptibilityDurationS": "Duración de Aprisionamiento y Susceptibilidad (s)",
+        "susceptibility": "Susceptibilidad",
+        "baseSusceptibility": "Susceptibilidad base",
+        "maxBonusSusceptibilityFromWill": "Susceptibilidad adicional Máx. por Voluntad",
+        "willRequiredForMaxBonusSusceptibility": "Voluntad requerida para la Susceptibilidad adicional Máx.",
+        "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión",
+        "explosionStagger": "Tambaleo por Explosión",
+        "bonusDmgMultiplier": "Multiplicador de DAÑ adicional",
+        "bonusSusceptibilityDurationS": "Duración de Susceptibilidad adicional (s)",
+        "spReturn": "Retorno de PH",
+        "ultimateEnergyGain": "Ganancia de Energía máxima"
+      },
+      "name": "Postura de Yinglung IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Multiplicador de DAÑ por Creación de Matriz de purgasombras",
+        "gloompurgerArrayCreationStagger": "Tambaleo por Creación de Matriz de purgasombras",
+        "gloompurgerArrayDurationS": "Duración de la Matriz de purgasombras (s)",
+        "forcedCorrosionDurationS": "Duración de Corrosión forzada (s)",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicador de DAÑ total de Ataque de racimo",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador de DAÑ de Arcano de purgasombras",
+        "gloompurgeArcanaStagger": "Tambaleo por Arcano de purgasombras"
+      },
+      "name": "Purgasombras",
+      "description": "Arcane crea una <@ba.key>Matriz de purgasombras</> que inflige inmediatamente <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro del área de efecto (ADE).\nAl golpear a un enemigo dentro de la <@ba.key>Matriz de purgasombras</> con un Remate o un <#ba.lastcombo>Golpe final</> ejecutado por el operador controlado, la <@ba.key>Matriz de purgasombras</> desata un <@ba.key>Ataque de racimo</> que inflige DAÑ de área a dicho enemigo. Este efecto se activa hasta 2 veces.\nDespués de activar <@ba.key>Ataque de racimo</> 2 veces, la máxima cambia a <@ba.key>Arcano de purgasombras</>.\n<@ba.key>Arcano de purgasombras</>: Inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro de un ADE grande."
+    },
+    "indicator": {
+      "levels": [
+        "Intelecto y Voluntad del Operador +8.",
+        "Intelecto y Voluntad del Operador +10.",
+        "Intelecto y Voluntad del Operador +10.",
+        "Intelecto y Voluntad del Operador +15."
+      ],
+      "name": "Mente aguda/Inquebrantable"
+    },
+    "talent1": {
+      "levels": [
+        "Cuando el Intelecto de Arcane ≥ Voluntad, cambia el tipo de habilidad a <@ba.key>Arcano de matriz: INT</>. De lo contrario, cambia a <@ba.key>Arcano de matriz: VOL</>.\n<@ba.info>Los requisitos de atributo de los 2 tipos de Arcano de matriz solo incluyen efectos de niveles de operador, talentos, potenciales y bonificaciones de atributo otorgadas por el equipamiento y las armas equipados.</>",
+        "Cuando el Intelecto de Arcane ≥ Voluntad, cambia el tipo de habilidad a <@ba.key>Arcano de matriz: INT</>. De lo contrario, cambia a <@ba.key>Arcano de matriz: VOL</>.\nMáxima <@ba.key>Purgasombras</> mejorada:\n<@ba.key>Arcano de matriz: INT</>:\nDurante la máxima, Arcane obtiene <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Amp de artes</>.\n<@ba.key>Arcano de matriz: VOL</>:\n- Cuando <@ba.key>Matriz de purgasombras</> (secuencia de máxima 1) y <@ba.key>Arcano de purgasombras</> (secuencia de máxima 2) infligen DAÑ al enemigo, también aplican <@ba.vup>[Voluntad × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> (Máx.: <@ba.vup>{spell_vul_rate:0.0%}</>) durante <@ba.vup>{duration:0}</> s. Este efecto no puede acumularse.\n<@ba.info>Los requisitos de atributo de los 2 tipos de Arcano de matriz solo incluyen efectos de niveles de operador, talentos, potenciales y bonificaciones de atributo otorgadas por el equipamiento y las armas equipados.</>"
+      ],
+      "name": "Planeación táctica"
+    },
+    "talent2": {
+      "levels": [
+        "La <#ba.corrupt>Corrosión</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s más y la reducción máxima de Resistencia aumenta a <@ba.vup>{1+corrupt_rate:0.00}</> veces la original.",
+        "La <#ba.corrupt>Corrosión</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s más y la reducción máxima de Resistencia aumenta a <@ba.vup>{1+corrupt_rate:0.0}</> veces la original."
+      ],
+      "name": "Perfeccionamiento de armas"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de minerales raros del +20 %",
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de minerales raros del +30 %"
+      ],
+      "name": "Arrancar la montaña, hervir el mar"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +20 %",
+        "Asignar a la Cámara de crecimiento para otorgar una tasa de crecimiento de plantas vitrificadas del +30 %"
+      ],
+      "name": "Botanófila"
+    },
+    "files": {
+      "main": "NOMBRE CLAVE: Arcane \nGÉNERO: Femenino \nAUTENTICACIÓN: Equipo de Fuerzas Especiales de Yinglung \nFecha de nacimiento: 7 de julio \nRAZA: Liberi \n[ESTADO DE INFECCIÓN POR ORIPATÍA] \nNegativo a Oripatía, según los informes del examen médico. \n\n[EXAMEN FÍSICO INTEGRAL] \nFUERZA FISIOLÓGICA: Estándar \nHABILIDAD DE COMBATE: Excelente \nPERICIA TÁCTICA: Excepcional \nASIMILACIÓN DE ARTES DE ORIGINIO: Excelente",
+      "humanResources": "La operadora Arcane (nombre: Li Zhiyan) es una capitana del Equipo de Fuerzas Especiales de Yinglung (EFEY) de la Academia Científica Hongshan (A.C.H.). Tras las heridas que sufrió durante una operación en la Zona de exclusión (ZE) norte de Wuling, se le autorizó tomar un descanso prolongado. Con un permiso especial del EFEY, Arcane ahora es colaboradora de Endfield Industries. \n\nSegún la propia operadora Arcane, este es su primer descanso largo. Nuestros operadores médicos identificaron varias decenas de lesiones internas. El trabajo en primera línea dentro de peligrosos entornos de la Plaga no destruyó su espíritu, pero sí le pasó factura en forma de un dolor físico constante y agotador. Después de conversar con miembros de la A.C.H., supimos que la A.C.H. espera que pueda aprovechar esta oportunidad para recuperarse adecuadamente. “Debería ser un descanso para compensar todos los descansos que se perdió durante varios años seguidos”. \n— Martin Marvin Malen, asistente, División de RR. HH., Endfield Industries",
+      "file1": "¿La Capitana y Chen? No sé mucho al respecto. Escuché que eran muy buenas amigas e incluso formaron equipo durante las pruebas de selección. Su desempeño también fue el más sobresaliente entre los reservistas. Todos pensaban que se convertirían en un par de Yinglungs prometedoras destinadas al Paso de Yinglung. Pero después de eso... no dejaban de discutir entre ellas. Y si no estaban discutiendo, se estaban preparando para el siguiente pleito a gritos. Ya conoce a la Capitana. Ella nunca se echa para atrás. Las asignaron a grupos separados y la Capitana fue quien se convirtió en Yinglung... ¿Qué pasaría si Chen se convierte en Yinglung...? No... no puedo imaginármelo. La Capitana seguirá siendo la Capitana. Y si alguna vez la asignaran al equipo de la Capitana... seguro que reasignarían a alguien. Desde mi perspectiva, el instructor Zhu y la Capitana tomaron la decisión correcta. La disposición actual es la mejor para ambas. \n— Summit, soldado, Equipo de Fuerzas Especiales de Yinglung \n\nEl EFEY no le enseñó a la Capitana a usar el cañón pesado de su Unidad de las Artes. Una vez le pregunté y me dijo que forma parte del “legado” de su padre. Hubo un tiempo en que la Capitana no podía mejorar por más que entrenara, así que cambiaba de arma constantemente. Hojas afiladas, lanzas, espadas, alabardas, hachas de guerra, ganchos y tridentes... Las probó todas, se volvió competente con todo, dominó todo tipo de estilos de combate, pero no estaba satisfecha. Pensaba que no estaba mejorando lo suficiente, así que duplicó su régimen de entrenamiento... La gente empezó a preocuparse de que colapsara de agotamiento. Entonces, un día se encontró por casualidad con el cañón de la Unidad de las Artes de su padre, que estaba guardado fuera del lugar. Hasta entonces, nunca había solicitado permiso. Nadie supo a dónde fue ella durante un par de días. Pero, cuando regresó, ya había decidido usar el arma de su padre. Y, después de eso, simplemente se convirtió en la Arcane que conocemos. Ningún Yinglung de la guarnición de Wuling es rival para ella. \n— Phrase, soldado, Equipo de Fuerzas Especiales de Yinglung \n\n¡DEJEN DE HACERLE CASO A LOS RUMORES! Ugh. Durante las pruebas de selección, ella... bueno, digamos que... sí... me sacó una ligera ventaja. ¡Pero ahora peleo mucho mejor que antes! ¡Si volvemos a pelear, le concederé tres ataques gratis contra mí! Espera... mejor dos. No te preocupes. Solo sería un combate amistoso. Por lo que recuerdo, Arcane siempre estaba malhumorada y con el ceño fruncido, como si cargara constantemente una roca enorme a cuestas. Pero, desde que cumplió su deseo relacionado con la ZE norte de Wuling, cambió un poco. ¡Ah, sí! Me recuerda a cómo se veía cuando la vi por primera vez. Intenté preguntarle sobre sus encuentros en la ZE, pero se negó a decirme algo. No puedo simplemente ir a molestar a Endmin con preguntas... Espera... Creo que sí puedo... \n— Chen Qianyu, exreservista, Equipo de Fuerzas Especiales de Yinglung \n\n¿Li Zhiyan? ¿Esa niñita Yinglung? No. No se me ocurre nada especial. Cada vez que la veo, siempre está con cara seria, toda tiesa, y haciendo que la gente se sienta mal consigo misma. Y no dejaba de parlotear diciendo “¡Señorita Emisaria! ¡Señorita Emisaria!”, y tuve que corregirla en innumerables ocasiones antes de obligarla a cambiar. La vida mortal es corta, y aun así fue bendecida con habilidades poderosas. Pero miren lo que está haciendo con ellas: vivir la vida más aburrida del mundo y encadenarse a un montón de reglas que ella misma inventó. Bueno, las cosas han mejorado un poco últimamente. Su expresión se suavizó un poco, así que al menos eso es interesante. Tal vez esa tonta hizo algo. Hmph. Esa idiota despistada anduvo por ahí haciendo de las suyas y terminó con un montón de heridas. Esta vez no habrá escapatoria. \n— Si",
+      "file2": "“Puede parecer fría y despiadada, pero eso es lo que se necesita en el EFEY”. La evaluación que un observador haría de Li Zhiyan suele ser muy sencilla. \nTodas las acciones y decisiones de Li pueden resumirse en esta frase: Completar la misión. Los soldados del Equipo de Fuerzas Especiales de Yinglung (EFEY) siempre combaten en entornos extremos. Una racionalidad fría y una determinación absoluta ayudan a garantizar el éxito de una misión. Si la “salida segura” no figuraba como parte del objetivo de la misión, todos los Yinglung sabían lo que eso significaba. \nEl EFEY cuenta con una cámara secreta bajo estricta seguridad. No la usan para guardar archivos de inteligencia ni documentos, sino las “pertenencias” de cada Yinglung. Cuando te conviertes en Yinglung, te dan una caja y eres libre de poner en ella lo que quieras. En caso de caer durante una misión, lo que haya en la caja servirá como la única prueba de tu existencia. \nPero la caja de Li Zhiyan permaneció vacía. \nLe dijo al custodio de la cámara que no tenía nada. Todo lo que alguna vez tuvo quedó sepultado en el oscuro, frío y tóxico Miasma de la Zona de exclusión norte de Wuling. \nEl custodio tuvo que decirle que era una regla del EFEY. Eso hizo pensar a Li. ¿Qué objeto la representaba mejor? Si le quitaran el título de capitana del EFEY, ¿habría algo que pudiera poner en la caja? Reflexionó sobre el significado del “yo”. \nLa pregunta solo la detuvo temporalmente. Poco después, encontró a un viejo artista en el mercado para que escribiera su nombre con un pincel de caligrafía. Ese nombre fue lo que entró en la caja. \nLa pregunta no le pareció importante. Lo que siempre importaba más era la siguiente misión. \n...... \nLi casi no visitó la cámara secreta hasta hace poco. Durante sus múltiples visitas, su caja, antes casi vacía, comenzó a llenarse. Una pluma. Un botón. Una daga también se unió al montón... Cada objeto parecía común y carente de significado, como si simplemente lo hubiera tomado de su escritorio. Algunos parecían regalos de sus vecinos o recuerdos que alguien quería que entregara... Aun así, Li los trató como tesoros y los colocó cuidadosamente en su caja. \nCuando Endministrator preguntó por esto con curiosidad, Li ya no respondió con el silencio severo al que solía recurrir en el pasado. En cambio, dio una respuesta solemne. \n“Miré hacia atrás y me di cuenta de que dejé pasar muchísimas cosas que debí haber atesorado”.",
+      "file3": "¿Mi estilo de combate? Se basa en las formaciones que mi padre me enseñó, combinadas con tácticas Yinglung. \nMi padre decía que las formaciones funcionan según el principio del “cambio”. La formación le da impulso a quien la usa, y también se mueve con esa persona. Ninguna formación debe ser inmutable ni permanente. Una formación solo está completa cuando quien la usa se vuelve parte de ella. \nMi padre me llevó a muchos lugares cuando era niña. A veces bajábamos ríos sobre troncos. A veces trepábamos árboles muy altos. Y, cuando nos cansábamos, simplemente nos recostábamos en el pasto para mirar las estrellas... Mi padre me enseñó sus posiciones y las formas de las constelaciones. Más tarde aprendí que nada de eso era solo un “juego”. Usaba una forma sutil pero cautivadora para enseñarme sus conocimientos sobre formaciones y los ciclos de toda clase de entidades. \nLos Yinglungs, sin embargo, me enseñaron el significado de la “permanencia”, y cómo mantenerme inmóvil en medio de una tormenta. La táctica Yinglung se basa principalmente en el “impulso” para crear una fuerza imparable. Se usan distintas tácticas contra distintas amenazas. Pero no importa si luchábamos con el arte de la espada, el arte de la lanza, o con nuestras formaciones y matrices. Cada Yinglung se mantenía en su puesto y se concentraba en desatar el golpe decisivo para aniquilar al enemigo. \nIntenté integrar las tácticas Yinglung con las formaciones de mi padre. Las primeras se centran en el equipo, todo el campo de batalla y complementar los movimientos de los demás, como la forma en que mis cañones triples funcionan como una sola unidad. Las formaciones de mi padre se centran en la flexibilidad y el cambio. Combinar estos dos enfoques fue difícil y me preocupó durante bastante tiempo... \nPero entonces volví al lugar donde mi padre y yo solíamos jugar. Vi cómo las hojas caídas pasaban por los rápidos del río, cómo las bestias voladoras posadas en los extremos de ramas largas se mecían con el viento, y cómo las constelaciones nunca se detenían y aun así, de algún modo, conservaban su forma. Entonces, de pronto entendí lo que mi padre solía decir. Yo soy la clave. Debo ser parte de la formación, la cuarta pieza de la matriz. \nSoy el nudo y el eje por el cual cambia la matriz, el elemento variable que cubre la brecha táctica. Una vez que aprendí la lección, me incorporé a la matriz. Con mi tablilla de jade, posicioné los cañones triples y ajusté su potencia de fuego hasta que se sintieron como una extensión de mis brazos y piernas. Solo entonces dominé su uso. \nMis Artes de Originio se centran más en el “flujo” de energía para crear un equilibrio entre “cambio” y “permanencia”. En cierto modo, mis Artes son similares a las que usa la operadora Gilberta. Ella compartió conmigo algunos consejos sobre el lanzamiento de Artes. La operadora Arclight también manejaba las corrientes eléctricas con una elegancia y maestría hermosas, así que también le pedí consejo. Me respondió con una frase: “Siéntelo”. Sin duda, la Dijiang reúne a personas increíblemente talentosas y hábiles, y ofrece muchas oportunidades de aprendizaje, como la operadora Last Rite con su fuerza astronómica y el operador Pogranichnik con su conocimiento sin igual de las formaciones militares... Espero que mi estancia a bordo de la Dijiang me dé la oportunidad de mejorar mis propias habilidades y estudiar las fortalezas de cada escuela... \nTambién estoy intentando compilar estas lecciones en un libro. Otros Yinglungs que intenten dominar las matrices y los cañones pesados podrán usarlo como referencia. Espero que estos escritos puedan serles de ayuda.",
+      "file4": "[REGISTRO DE RECEPCIÓN] \nDESTINATARIA: Li Zhiyan \nREMITENTE: Ling Yue \nDIRECCIÓN DEL REMITENTE: Ciudad de Wuling \nESTADO: Firmado y recibido \nINSPECCIÓN: Inspección aprobada \nMENSAJE DE VOZ: \n¡Zhiyan! ¡Soy yo! ¡La Tía Liu! Escuché que estás descansando un poco en Endfield. Debiste habérmelo dicho, chica. ¡Todo el vecindario se preocupó muchísimo! ¡Así que le pedí a la jovencita del Jardín de la serenidad que ayudara a enviarte algunas de tus cosas favoritas! Solo unas cuantas cajas de Pasteles de osmanthus y budín dulce de Kohl. Lo preparé hace apenas unos días para el cumpleaños del bebé, así que no durará para siempre. Termina eso primero, ¿sí? \nLa tía Shen también se preocupa mucho por ti. Metió en el paquete algunos conjuntos de ropa que ella misma cosió. Escuchó que ahora te estás quedando en una nave espacial, así que no dejó de quejarse de lo frío que debe ser el espacio. Así que sí, de ahí salió la ropa, por si te lo preguntabas. \nAh Chica, no sé cuándo volverás. Siempre has sido terca. Siempre sentada en un solo lugar sin hacer nada. Casi no jugabas con otras niñas de tu edad. En cambio, siempre intentabas ayudar a las señoras del vecindario. ¡Eso no está bien! Eres una niña encantadora, pero nosotras estamos envejeciendo y no estaremos aquí para siempre. Hazle caso a tu tía y haz algunos amigos en Endfield. Vi a su Endmin y a la jovencita llamada Perlica, ¡y me parecieron muy agradables! Y, si no sabes cómo sacar conversación, solo llévales los pastelillos de arroz y el budín dulce de Kohl a los Endfielders, ¡y deja que prueben la comida de tu tía! ¡Hazlo unas cuantas veces y tendrás nuevos amigos! \nTu tía te vio crecer. Nunca te gustó hablar, pero tu tía sabe que tienes ojo para los detalles. Anoté cada vez que nos ayudaste. ¿Recuerdas cuando volviste con una foto de la hijita de la tía Shen? La Tía Shen no pudo dejar de llorar ese día. La pobre chica se fue cuando tenía más o menos tu edad, así que la Tía Shen te trató como si fueras suya. Y... es lo mismo para todas nosotras. Eres una hija de Wuling. La ciudad siempre será tu hogar, sin importar a dónde vayas. \nAy ya, la charla se está poniendo muy triste. Tu tía no es muy buena con las palabras, así que quizá debería dejarlo aquí. Solo concéntrate en recuperarte e intenta volver pronto a casa. ¡Cuando regreses a Wuling, tu tía te preparará un gran banquete solo para ti! ¡No olvides el consejo de tu tía! ¡Trae también a tus nuevos amigos! \n...... \nEspera. Ay no, la Tía Shen en realidad tiene algo que decir, pero volvió a ponerse a llorar. Mejor dejaré que Ling Yue entregue el paquete y que la tía Shen grabe un mensaje de voz más tarde. Esperamos no molestarte. ¡Oye! ¡No me apresures! ¡No me estoy tardando tanto!, ¡¿sí?! Espera. ¿Batería baja? Cómo... \n\n[REGISTRO DE ENVÍO] \nREMITENTE: Li Zhiyan \nDESTINATARIA: Ling Yue \nDIRECCIÓN DEL REMITENTE: NMO Dijiang \nESTADO DEL ENVÍO: Entregado \nINSPECCIÓN: Inspección aprobada \nLISTA DE OBJETOS: \nMantón Simonch - 5 piezas \nBrisa de Kjersch - 5 frascos \nRompecabezas de la Puerta cósmica - 3 juegos \nCitromix [Rf.] - 10 botellas \nMENSAJE DE VOZ: \nLing Yue, soy yo... Li Zhiyan. Recibí el paquete de los ancianos del vecindario. Por favor, no permitas que envíen otro paquete... Hay de todo a bordo de la Dijiang, y todavía me quedaron muchas cosas después de regalarle varias a Endmin y a otros Endfielders... \nCreo que a las tías les gustaron los mantones que envié la última vez. Conseguí algunos más en la División de logística, así que deja que las señoras se los repartan. También hay mezclas sabor fruta que no se consiguen en Wuling y juguetes para los niños. \nNo te preocupes por el costo. Casi no tengo otros gastos. \nY dile a la Tía Shen que son obsequios gratuitos de Endfield. No quiero que se preocupe demasiado."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Habilidad de combo <@ba.key>Postura de Yinglung IV</> mejorada:\nEl multiplicador de DAÑ aumenta <@ba.vup>{atk_scale_touch:0.0}</> veces el original.\n<@ba.key>Arcano de matriz: INT</>: Golpear a un enemigo bajo <@ba.key>Aprisionamiento</> con la habilidad de batalla de Arcane <#ba.return>devuelve</> <@ba.vup>{atb_return_wisd:0}</> PH adicionales.\n<@ba.key>Arcano de matriz: VOL</>: Efectos de <#ba.naturalvul>Susceptibilidad a la Naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> aplicados <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Vigilante del mar"
+    },
+    "potential2": {
+      "description": "Intelecto y Voluntad <@ba.vup>+{Will:0}</>, Intensidad de artes <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Corazón de ferrio gélido"
+    },
+    "potential3": {
+      "description": "Talento <@ba.key>Perfeccionamiento de armas</> mejorado:La \n<#ba.corrupt>Corrosión</> aplicada por Arcane dura <@ba.vup>{duration_add:0}</> s más, y la Reducción máxima de resistencia aumenta en <@ba.vup>{corrupt_rate:0%}</> de la original.",
+      "name": "Portador de piedra"
+    },
+    "potential4": {
+      "description": "Máxima <@ba.key>Purgasombras</> mejorada: costo de Energía máxima <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Mente de acero refinado"
+    },
+    "potential5": {
+      "description": "Máxima <@ba.key>Purgasombras</> mejorada:\n<@ba.key>Arcano de matriz: INT</>: durante la máxima, Arcane obtiene <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>de Amp de artes</>. El Multiplicador de DAÑ de <@ba.key>Arcano de purgasombras</> (secuencia de máxima 2) aumenta a <@ba.vup>{atk_scale:0.0}</> veces el original.\n<@ba.key>Arcano de matriz: VOL</>: Aumenta aún más los efectos de <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> aplicados por <@ba.key>Matriz de purgasombras</> (secuencia máxima 1) y <@ba.key>Arcano de purgasombras</> (secuencia máxima 2) por <@ba.vup>+{spell_vul_rate_potential:0%}</>. Tras lanzar <@ba.key>Arcano de purgasombras</> (secuencia de máxima 2), si la habilidad de combo <@ba.key>Postura de Yinglung IV</> aún está en Tiempo de reutilización, acorta de inmediato la duración del Tiempo de reutilización en <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Mirada hacia el hogar"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Pregunta para la mariposa",
+      "author": "栗樺茶",
+      "description": "Los recuerdos del pasado se rompen con facilidad; los momentos de antaño se disipan a voluntad."
+    },
+    "potential3": {
+      "name": "Rama del Regreso a casa",
+      "author": "狂zip",
+      "description": "El ave buscó, mas no halló calma, ni rama de hogar que le abrigara el alma."
+    },
+    "potential5": {
+      "name": "La espada personificada",
+      "author": "Eteru",
+      "description": "Transforma el cuerpo en una espada y condensa el pensamiento en lo arcano."
+    }
+  }
+}

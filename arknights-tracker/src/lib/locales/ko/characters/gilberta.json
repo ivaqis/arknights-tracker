@@ -38,7 +38,7 @@
     },
     "battleSkill": {
       "battleSkill": {
-        "gravityPullDmgMultiplier": "인력 피해 배율",
+        "gravityPullDmgMultiplier": "끌어당기기 피해 배율",
         "explosionDmgMultiplier": "폭발 피해 배율",
         "explosionStagger": "폭발 불균형치"
       },

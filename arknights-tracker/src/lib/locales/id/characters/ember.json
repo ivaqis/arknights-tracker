@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Saat menggunakan skill tarung <@ba.key>Forward March</> dan skill kombo <@ba.key>Frontline Support</>, Ember akan mendapatkan <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Protection</> dan lebih kecil kemungkinannya untuk disela.",
-        "Saat menggunakan skill tarung <@ba.key>Forward March</> dan skill kombo <@ba.key>Frontline Support</>, Ember akan mendapatkan <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Protection</> dan lebih kecil kemungkinannya untuk disela."
+        "Saat menggunakan skill tarung <@ba.key>Forward March</> dan skill kombo <@ba.key>Frontline Support</>, Ember akan mendapatkan <@ba.vup>{shelterrate:0%}</> <#ba.guard>Protection</> dan lebih kecil kemungkinannya untuk disela.",
+        "Saat menggunakan skill tarung <@ba.key>Forward March</> dan skill kombo <@ba.key>Frontline Support</>, Ember akan mendapatkan <@ba.vup>{shelterrate:0%}</> <#ba.guard>Protection</> dan lebih kecil kemungkinannya untuk disela."
       ],
       "name": "Inflamed for the Assault"
     },

@@ -624,7 +624,7 @@
     "description": "Varian manglerbeast yang berevolusi hanya di Talos-II. Mangler unik ini punya sisik yang sangat tebal dan memiliki hubungan simbiosis mutualisme dengan rockhowler. Manglerbeast memberikan perlindungan dan tenaga, sedangkan rockhowler punya indra yang tajam dan akan memberikan peringatan jika ada penyusup.",
     "abilities": [
       "Rockhowler yang menunggang di punggung Manglerbeast Berarmor bisa melemparkan kulit pisang. Jika Manglerbeast Berarmor menginjak kulit pisang ini saat menerjang untuk menyerang, dia akan terpeleset dan jatuh.",
-      "Saat meringkuk dalam pose bertahan, titik lemahnya adalah tangannya. Serang tangannya untuk mengakhiri pose bertahan dan mengakibatkan knocked down kepada binatang tersebut.",
+      "Saat meringkuk dalam pose bertahan, hanya tangannya yang menjadi titik lemahnya. Serang tangannya untuk mengakhiri pose bertahan dan mengakibatkan knocked down kepada binatang tersebut.",
       "Menjatuhkan Rockhowler saat terkena knocked down. Serang Rockhowler untuk menimbulkan lebih banyak DMG."
     ]
   },
@@ -636,6 +636,82 @@
       "Saat mengamuk, Craghowler akan mulai menghancurkan reruntuhan. Batu yang longgar akan jatuh ke medan pertarungan dan menimbulkan DMG kepada operator yang terhantam.",
       "Craghowler bisa menggunakan pilar di dalam reruntuhan untuk menciptakan efek luar biasa dan memberi dirinya jangkauan serang yang sangat luas.",
       "Craghowler akan berpura-pura mundur dan tiba-tiba melempar batu besar untuk menyerang musuh yang lengah."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Bayang-bayang Hawar Tuskbeast",
+    "nickname": "Bayang-bayang Hawar Tuskbeast",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud tuskbeast. Meskipun ini hanyalah “bayangan yang tersisa”, taring tajamnya tetap mampu menembus zirah dan gear pelindung.",
+    "abilities": [
+      "Beberapa serangan bisa mengaktifkan Energi Bayang-bayang Hawar yang dikenainya."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Bayang-bayang Hawar Quillbeast",
+    "nickname": "Bayang-bayang Hawar Quillbeast",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud seekor quillbeast. Bayang-bayang hawar ini tampaknya melakukan serangan berguling dan melompat yang jauh lebih agresif daripada versi hidupnya, meskipun hal itu mungkin hanya sekadar khayalan belaka.",
+    "abilities": [
+      "Setelah pengisian kekuatan singkat, Bayang-bayang Hawar Quillbeast bisa memanggil beberapa kilat petir dan mengaktifkan Energi Bayang-bayang Hawar dalam area luas. Segera hentikan hewan itu saat mulai mengisi kekuatan."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Bayang-bayang Hawar Rakerbeast",
+    "nickname": "Bayang-bayang Hawar Rakerbeast",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud rakerbeast. Mantel bermotif bintik-bintik itu tampak lebih luwes dan menonjolkan serangan yang benar-benar menakutkan.",
+    "abilities": [
+      "Hewan ini bisa menggunakan tanduknya untuk menghantarkan petir, menyerang dari jarak jauh, dan bahkan melemparkan bola petir yang akan meledak setelah beberapa saat. Menjauhlah dari radius ledakannya.",
+      "Saat HP-nya rendah, hewan ini akan melepaskan raungan mengamuk, memanggil sejumlah petir untuk menyerang, dan memasuki kondisi Mengamuk. Jika hewan ini terkena Staggered, kondisi Mengamuknya akan berakhir. Hadapi dengan hati-hati."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Bayang-bayang Hawar Blitzcrash",
+    "nickname": "Bayang-bayang Hawar Blitzcrash",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Blitzcrash. Hewan itu dulu dibesarkan di Balai Tanjian dan pernah menjadi sahabat Li Zhiyan. Tapi, bayang-bayang hawarnya hanya punya naluri agresifnya saja.",
+    "abilities": [
+      "Energi Bayang-bayang Hawar yang diaktifkan oleh Bayang-bayang Hawar Blitzcrash bisa melepaskan sambaran petir.",
+      "Musuh ini akan memanggil Bayang-bayang Hawar Tuskbeast. Ia lalu memanggil sejumlah petir untuk menyambar mereka, mengubah mereka menjadi Energi Bayang-bayang Hawar, dan mengaktifkannya. Berusahalah menghindari serangan ini."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Bayang-bayang Hawar Garda Depan Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Garda Depan Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Garda Depan Satgassus Yinglung. Menguasai teknik tempur jarak dekat hanyalah persyaratan paling dasar bagi para Yinglung.",
+    "abilities": [
+      "Mengeluarkan qi pedang yang bisa mengaktifkan Energi Bayang-bayang Hawar apa pun yang dikenainya."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Bayang-bayang Hawar Elite Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Elite Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Elite Satgassus Yinglung. Yinglung yang telah menguasai Originium Arts dan ilmu pedang akan dianggap seorang elite.",
+    "abilities": [
+      "Mengeluarkan qi pedang yang bisa mengaktifkan Energi Bayang-bayang Hawar apa pun yang dikenainya."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Glaiver Satgassus Yinglung. Yinglung semacam itu sangat ahli memimpin penyerbuan dan merebut posisi yang dijaga. Glaive yang mereka pegang dirancang untuk menebas Aggelos dengan mudah.",
+    "abilities": [
+      "Bayang-bayang Hawar Glaiver Satgassus Yinglung bisa berpura-pura kalah sebelum melancarkan serangan tak terduga. Hati-hati!",
+      "Setelah menghilang, musuh ini bisa langsung berpindah ke sebelah operator dan menyerang. Berusahalah menghindarinya."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Bayang-bayang Hawar Kapten Satgassus Yinglung",
+    "nickname": "Bayang-bayang Hawar Kapten Satgassus Yinglung",
+    "description": "Manifestasi sisa energi Æther yang memancarkan wujud Kapten Satgassus Yinglung. Hanya para veteran yang telah menunjukkan bakat kepemimpinan, kemampuan tempur luar biasa, dan menunjukkan keberanian sejati dalam perang yang akan mendapat kesempatan untuk menjadi Kapten Satgassus Yinglung.",
+    "abilities": [
+      "Setelah menghilang, musuh ini bisa langsung berpindah ke sebelah operator dan menyerang. Berusahalah menghindarinya.",
+      "Bayang-bayang Hawar Kapten Satgassus Yinglung bisa menggunakan senjatanya untuk memanggil petir. Entitas Energi Bayang-bayang Hawar akan aktif saat terkena sambaran petir."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarch",
+    "nickname": "Alleikhreos",
+    "description": "Ciptaan Fondasi dan veteran pertarungan yang tak terhitung banyaknya. Chiliarch ini berkelana di Ætherside hingga ia menemukan kembali pedangnya yang hilang dan menemukan waktu kembalinya.",
+    "abilities": [
+      "Saat indikator Stagger Alleikhreos, Chiliarch mencapai Nodus Stagger, dia akan menjatuhkan Senjata Foundite. Dekati dengan operator terkontrol untuk mengambilnya dan gunakan senjata tersebut untuk menyerangnya."
     ]
   }
 }

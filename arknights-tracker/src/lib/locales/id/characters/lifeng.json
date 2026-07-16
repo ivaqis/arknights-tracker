@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)"
       },
       "name": "Turbid Avatar",
-      "description": "Mengayunkan senjata galah beberapa kali untuk menimbulkan 2 hantaman <@ba.pd>Physical DMG</>, lalu menghantam tanah untuk menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh di area efek. \nJika musuh yang terkena serangan terakhir dari skill ini tidak terkena tumpukan <#ba.noguard>Vulnerability</>, <#ba.physicalvul>Physical Susceptibility</> akan diakibatkan kepada musuh yang bersangkutan."
+      "description": "Mengayunkan senjata galah beberapa kali untuk menimbulkan 2 hantaman <@ba.pd>Physical DMG</>, lalu menghantam tanah untuk menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh di area efek. \nJika musuh yang terkena serangan terakhir dari skill ini tidak terkena tumpukan <#ba.noguard>Vulnerability</>, <#ba.physicalvul>Physical Susceptibility</> juga akan diakibatkan kepada musuh yang bersangkutan."
     },
     "comboSkill": {
       "comboSkill": {

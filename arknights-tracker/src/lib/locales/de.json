@@ -358,7 +358,9 @@
     "special_1_3_1": "Fäuste ohne Reue",
     "weponbox_1_3_1": "Scharlachknoten-Ausgabe",
     "special_1_3_2": "Sündentilger",
-    "weponbox_1_3_2": "„Blutrot“-Ausgabe"
+    "weponbox_1_3_2": "„Blutrot“-Ausgabe",
+    "special_1_4_1": "Sehnsucht der Riss-Wächterin nach dem Norden",
+    "weponbox_1_4_1": "Militär-Standard-Ausgabe"
   },
   "pages": {
     "home": "Home",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "Monumentales Ätzen: Klagegesang",
     "umbralMonument": "Schattenmonument",
     "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung",
-    "northwardToPerilSignIn": "„Nach Norden der Gefahr entgegen“-Anmeldung"
+    "northwardToPerilSignIn": "„Nach Norden der Gefahr entgegen“-Anmeldung",
+    "echoesOfWar": "Echos des Krieges",
+    "gazeTowardsTheNorthernExclusion": "Blicke zur Sperrzone Nord",
+    "tributeOfCompanionship": "Tribut der Gesellschaft",
+    "heatRageMegaArena": "HITZEWUT! MEGA-ARENA!",
+    "monumentalEtchingBeastlyHowl": "Monumentales Ätzen: Bestialisches Heulen",
+    "theRootedRealm": "Das Geerdete Reich",
+    "protocolPassBlightedSea": "Protokollpass: Verderbtes Meer",
+    "gazeNorthToTheRiftSignIn": "Blicke nach Norden zum Riss – Anmeldung"
   },
   "mouths": {
     "january": "Januar",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "Flüssiges Schweres Xiranit",
     "centuryRind": "Jahrhundertschale",
     "caudalGoldscale": "Goldene Schwanzschuppe",
-    "stickerSafetyHelmet": "Sticker: Schutzhelm"
+    "stickerSafetyHelmet": "Sticker: Schutzhelm",
+    "pyrrolite": "Pyrrolit",
+    "pyrrolitePart": "Pyrrolit-Teil",
+    "cupriumCanister": "Cuprium-Behälter",
+    "shadowDew": "Schattentau",
+    "glaiveFragment": "Glefenfragment",
+    "blightshadeBezoar": "Verderbnisschatten-Bezoar",
+    "pyrroliteComponent": "Pyrrolit-Komponente",
+    "separatorCore": "Separatorkern",
+    "acridgen": "Acridgen",
+    "cupriumGas": "Cuprium-Gas",
+    "hetoniteGas": "Hetonit-Gas",
+    "pyrroliteGas": "Pyrrolit-Gas",
+    "inergen": "Inergen",
+    "aquagen": "Aquagen",
+    "xiragen": "Xiragen",
+    "heavyXiragen": "Schweres Xiragen",
+    "crimsonSpearleaf": "Blutrotes Speerblatt",
+    "talosCap": "Taloskappe",
+    "protocolith": "Protokolith"
   },
   "common": {
     "copy": "Kopieren",
@@ -1012,7 +1041,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arkan"
   },
   "weaponsList": {
     "industry01": "Industrie 0.1",
@@ -1086,7 +1116,11 @@
     "phantomPain": "Phantomschmerz",
     "amaranthineTassel": "Amaranthfarbene Quaste",
     "beaconOfDuty": "Leuchtfeuer der Pflicht",
-    "blessingOfLustrousCarmine": "Segen des schimmernden Scharlachs"
+    "blessingOfLustrousCarmine": "Segen des schimmernden Scharlachs",
+    "type42SolemnPhalanx": "Typ 42: Feierliche Phalanx",
+    "junctionPoint": "Knotenpunkt",
+    "goldenAge": "Goldenes Zeitalter",
+    "farsight": "Weitsicht"
   },
   "cookies": {
     "title": "Wir verwenden Cookies",
@@ -1190,7 +1224,21 @@
     "world_energy_point09_4": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
     "world_energy_point09_5": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
     "world_energy_point09_6": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
-    "world_energy_point09_7": "Schweres Energie-Alluvium: Tal des Schwertverlieses"
+    "world_energy_point09_7": "Schweres Energie-Alluvium: Tal des Schwertverlieses",
+    "world_energy_point10_1": "Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_2": "Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_3": "Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_4": "Schweres Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_5": "Schweres Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_6": "Schweres Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point10_7": "Schweres Energie-Alluvium: Yinglung-Pass",
+    "world_energy_point11_1": "Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_2": "Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_3": "Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_4": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_5": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_6": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling",
+    "world_energy_point11_7": "Schweres Energie-Alluvium: Sperrzone Nord-Wuling"
   },
   "enemies": {
     "eny_0007_mimicw": "Tunnel-Nidwurm",
@@ -1267,7 +1315,16 @@
     "eny_0082_hsbear": "Himmelstrommler",
     "eny_0112_jzmonk": "Felsenheuler",
     "eny_0113_jzogre": "Gepanzerte Fetzbestie",
-    "eny_0114_jzmking": "Klippenheuler"
+    "eny_0114_jzmking": "Klippenheuler",
+    "eny_0117_klhound": "Reißbiest-Verderbnisschatten",
+    "eny_0118_klhog": "Federbiest-Verderbnisschatten",
+    "eny_0119_kltiger": "Wüstlingsbestie-Verderbnisschatten",
+    "eny_0120_klbear": "Blitzcrashs Verderbnisschatten",
+    "eny_0121_klbud": "YSE-Vorhut-Verderbnisschatten",
+    "eny_0122_kltdbud": "YSE-Elite-Verderbnisschatten",
+    "eny_0123_klcap": "YSE-Glefenträger-Verderbnisschatten",
+    "eny_0124_kltdcap": "YSE-Hauptmann-Verderbnisschatten",
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
   },
   "essencesPage": {
     "optimizer": "Farming-Optimierer",
@@ -1523,7 +1580,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Graukant-Druckmesser S1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Graukant-Fingerhandschuhe",
     "item_equip_t4_suit_crush_fracture_hand_02": "Graukant-Fingerhandschuhe S1",
-    "item_equip_t4_suit_phy01_body_04": "Faserverstärkte Schwertkämpfer-Rüstung"
+    "item_equip_t4_suit_phy01_body_04": "Faserverstärkte Schwertkämpfer-Rüstung",
+    "item_equip_t4_parts_wuling00_body_01": "AIK-Einsatzrüstung",
+    "item_equip_t4_parts_wuling00_body_02": "AIK-Einsatzvollharnisch",
+    "item_equip_t4_parts_wuling00_body_03": "AIK-Einsatzweste",
+    "item_equip_t4_parts_wuling00_edc_01": "AIK-Einsatzmachete",
+    "item_equip_t4_parts_wuling00_edc_02": "AIK-Einsatzglimmer",
+    "item_equip_t4_parts_wuling00_edc_03": "AIK-Einsatztaschenlampe",
+    "item_equip_t4_parts_wuling00_hand_01": "AIK-Einsatzhandschuhe",
+    "item_equip_t4_parts_wuling00_hand_02": "AIK-Einsatzhandschutz",
+    "item_equip_t4_parts_wuling00_hand_03": "AIK-Einsatzwickel",
+    "item_equip_t4_parts_wuling02_body_01": "Schwere Rissforscher-Rüstung",
+    "item_equip_t4_parts_wuling02_body_02": "Leichte Rissforscher-Rüstung",
+    "item_equip_t4_parts_wuling02_edc_01": "Rissforscher-Rüstungsteil",
+    "item_equip_t4_parts_wuling02_hand_01": "Rissforscher-Handschuhe",
+    "item_equip_t4_parts_wuling02_hand_02": "Rissforscher-Handschutz",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Hitze-Isolierteil",
+    "item_equip_t4_suit_fire_natr01_hand_04": "Hitze-Hand-PSA",
+    "item_equip_t4_suit_heal01_body_03": "LUCHS-Kürass-S1",
+    "item_equip_t4_suit_heal01_hand_03": "LUCHS-Fingerhandschuhe S1",
+    "item_equip_t4_suit_usp02_body_03": "Leichte Ewiges-Xiranit-Rüstung",
+    "item_equip_t4_suit_usp02_body_04": "Leichte Ewiges-Xiranit-Rüstung S1",
+    "item_equip_t4_suit_usp02_edc_04": "Ewiges-Xiranit-Schutzteil",
+    "item_equip_t4_suit_usp02_hand_03": "Ewiges-Xiranit-Wickel",
+    "item_equip_t4_suit_usp02_hand_04": "Ewiges-Xiranit-Handschutz"
   },
   "packs": {
     "none": "Ohne Set",
@@ -1572,7 +1652,8 @@
     "suit_wisdwill01": "AIK (Leicht)",
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranfluss",
-    "suit_crush_fracture": "Graukant"
+    "suit_crush_fracture": "Graukant",
+    "suit_generaltype": "AIK-Einsatz"
   },
   "equipmentTypes": {
     "body": "Rüstung",
@@ -1626,13 +1707,21 @@
     "AllDamageTakenScalar": "Finaler-SDN-Reduzierung",
     "Sub": "Sekundärattribut",
     "AllSkillDamageIncrease": "SDN-Bonus: Sämtlicher Verursachter Fertigkeits-SDN",
-    "FireAndNaturalDamageIncrease": "SDN-Bonus: Verursachter Hitze- und Natur-SDN"
+    "FireAndNaturalDamageIncrease": "SDN-Bonus: Verursachter Hitze- und Natur-SDN",
+    "PhysicalResistance": "Physische Resistenz",
+    "NatureResistance": "Naturresistenz",
+    "CryoResistance": "Kryo-Resistenz",
+    "ElectricResistance": "Elektrische Resistenz",
+    "HeatResistance": "Hitzeresistenz",
+    "TherResistance": "Æther-Resistenz"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Landbrecher",
     "wiki_group_monster_hongshan": "Cangzei-Piraten",
-    "wiki_group_monster_animal": "Fauna"
+    "wiki_group_monster_animal": "Fauna",
+    "wiki_group_monster_kl": "Verderbnisschatten",
+    "wiki_group_monster_js": "Fundit"
   },
   "resitances": {
     "heatRez": "Heat Resistance",
@@ -2313,5 +2402,11 @@
     "inorganicConstruct": "„Anorganisches Konstrukt“",
     "turbidityManifest": "„Trübungsverzeichnis“",
     "thoseForsakenByTheLand": "„Die vom Land Verstoßenen“"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Xiranit-Technik",
+    "cupriumTechnique": "Cuprium-Technik",
+    "hetoniteTechnique": "Hetonit-Technik",
+    "pyrroliteTechnique": "Pyrrolit-Technik"
   }
 }

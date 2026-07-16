@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Thời Gian Yếu Hóa Vật Lý (giây)"
       },
       "name": "Thân Trược",
-      "description": "Xoay vũ khí cán dài nhiều lần để gây 2 đòn <@ba.pd>ST Vật Lý</>, sau đó đập mạnh xuống đất, gây <@ba.pd>ST Vật Lý</> và <#ba.knockdown>Quật Ngã</> tất cả kẻ địch trong phạm vi ảnh hưởng. \nNếu kẻ địch trúng đòn cuối cùng của kỹ năng này không có điểm cộng dồn <#ba.noguard>Trừ Giáp</> nào thì sẽ áp dụng <#ba.physicalvul>Yếu Hóa Vật Lý</> lên kẻ địch đó."
+      "description": "Xoay vũ khí cán dài nhiều lần để gây 2 đòn <@ba.pd>ST Vật Lý</>, sau đó đập mạnh xuống đất, gây <@ba.pd>ST Vật Lý</> và <#ba.knockdown>Quật Ngã</> tất cả kẻ địch trong phạm vi ảnh hưởng. \nNếu kẻ địch trúng đòn cuối cùng của kỹ năng này không có điểm cộng dồn <#ba.noguard>Trừ Giáp</> nào thì cũng sẽ áp dụng <#ba.physicalvul>Yếu Hóa Vật Lý</> lên kẻ địch đó."
     },
     "comboSkill": {
       "comboSkill": {

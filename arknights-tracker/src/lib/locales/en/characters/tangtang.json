@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect.",
-        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect."
+        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect.",
+        "When within a <@ba.vup>{range_talent1buff:0}</>-meter radius of a <@ba.key>Whirlpool</>, allied operators gain <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Haste</> while enemies suffer <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Slow</>. These effects persist for {duration_talent1buff:0}s after leaving the area of effect."
       ],
       "name": "Fam of Honor"
     },

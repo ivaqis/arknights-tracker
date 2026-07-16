@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Al lanzar la habilidad de batalla <@ba.key>Marcha hacia adelante</> y la habilidad de combo <@ba.key>Apoyo en primera línea</>, Ember obtiene <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Protección</> y es menos probable que sea interrumpida.",
-        "Al lanzar la habilidad de batalla <@ba.key>Marcha hacia adelante</> y la habilidad de combo <@ba.key>Apoyo en primera línea</>, Ember obtiene <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Protección</> y es menos probable que sea interrumpida."
+        "Al lanzar la habilidad de batalla <@ba.key>Marcha hacia adelante</> y la habilidad de combo <@ba.key>Apoyo en primera línea</>, Ember obtiene <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Protección</> y es menos probable que sea interrumpida.",
+        "Al lanzar la habilidad de batalla <@ba.key>Marcha hacia adelante</> y la habilidad de combo <@ba.key>Apoyo en primera línea</>, Ember obtiene <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Protección</> y es menos probable que sea interrumpida."
       ],
       "name": "Encendida para el asalto"
     },

@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "When casting the battle skill <@ba.key>Forward March</> and the combo skill <@ba.key>Frontline Support</>, Ember gains <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Protection</> and is less likely to be interrupted.",
-        "When casting the battle skill <@ba.key>Forward March</> and the combo skill <@ba.key>Frontline Support</>, Ember gains <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Protection</> and is less likely to be interrupted."
+        "When casting the battle skill <@ba.key>Forward March</> and the combo skill <@ba.key>Frontline Support</>, Ember gains <@ba.vup>{shelterrate:0%}</> <#ba.guard>Protection</> and is less likely to be interrupted.",
+        "When casting the battle skill <@ba.key>Forward March</> and the combo skill <@ba.key>Frontline Support</>, Ember gains <@ba.vup>{shelterrate:0%}</> <#ba.guard>Protection</> and is less likely to be interrupted."
       ],
       "name": "Inflamed for the Assault"
     },

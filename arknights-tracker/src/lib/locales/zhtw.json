@@ -363,7 +363,9 @@
     "weponbox_1_2_2": "熔灼申領",
     "weponbox_1_2_3": "疾行申領",
     "special_1_3_2": "逐罪者",
-    "weponbox_1_3_2": "染赤申領"
+    "weponbox_1_3_2": "染赤申領",
+    "special_1_4_1": "臨淵望北",
+    "weponbox_1_4_1": "軍列申領"
   },
   "pages": {
     "home": "首頁",
@@ -402,7 +404,7 @@
     "thoseForsakenByTheLand": "紀念碑刻：舊傷《被大地遺棄的人》",
     "inorganicConstruct": "紀念碑刻：舊傷《無機構造體》",
     "protoPass": "協議通行證",
-    "fortuneConnectAndWin": "宏運連連看",
+    "fortuneConnectAndWin": "宏運連連樂",
     "stepsToSweetSuccess": "步步登糕",
     "springNoteWarmlyCrafted": "暖箋賀春",
     "fireWalkerTrialSignIn": "行火留燼簽到",
@@ -448,7 +450,15 @@
     "monumentalEtchingDirgeOfGrief": "豐碑留名·忿聲",
     "umbralMonument": "影拓豐碑",
     "peacekeepersNocturneSignIn": "夜趨逐罪簽到",
-    "northwardToPerilSignIn": "北行險境簽到"
+    "northwardToPerilSignIn": "北行險境簽到",
+    "echoesOfWar": "戰爭迴響",
+    "gazeTowardsTheNorthernExclusion": "北觀禁土",
+    "tributeOfCompanionship": "相伴贈禮",
+    "heatRageMegaArena": "熾燃！競技大會！",
+    "monumentalEtchingBeastlyHowl": "豐碑留名·獸犼",
+    "theRootedRealm": "根脈奇境",
+    "protocolPassBlightedSea": "協議通行證·蝕海",
+    "gazeNorthToTheRiftSignIn": "踞淵北眺簽到"
   },
   "mouths": {
     "january": "一月",
@@ -861,7 +871,26 @@
     "liquidHeavyXiranite": "液化重息壤",
     "centuryRind": "百年陳皮",
     "caudalGoldscale": "尾尖金甲",
-    "stickerSafetyHelmet": "貼紙·工業安全帽"
+    "stickerSafetyHelmet": "貼紙·工業安全帽",
+    "pyrrolite": "灼銅塊",
+    "pyrrolitePart": "灼銅零件",
+    "cupriumCanister": "赤銅耐壓罐",
+    "shadowDew": "殘影露滴",
+    "glaiveFragment": "破陣刀碎片",
+    "blightshadeBezoar": "影獸銜石",
+    "pyrroliteComponent": "灼銅裝備原件",
+    "separatorCore": "分離芯",
+    "acridgen": "酸氣",
+    "cupriumGas": "氣態赤銅",
+    "hetoniteGas": "氣態赫銅",
+    "pyrroliteGas": "氣態灼銅",
+    "inergen": "惰氣",
+    "aquagen": "水蒸氣",
+    "xiragen": "息壤氣",
+    "heavyXiragen": "重息壤氣",
+    "crimsonSpearleaf": "紅矛葉",
+    "talosCap": "塔羅斯菌",
+    "protocolith": "協議紋石"
   },
   "common": {
     "copy": "複製",
@@ -1057,7 +1086,8 @@
     "zhuangFangyi": "莊方宜",
     "miFu": "弭弗",
     "mifu": "弭弗",
-    "camille": "卡繆"
+    "camille": "卡繆",
+    "arcane": "訣"
   },
   "weaponsList": {
     "industry01": "工業零點一",
@@ -1131,7 +1161,11 @@
     "phantomPain": "幻想苦痛",
     "amaranthineTassel": "赤纓",
     "beaconOfDuty": "燈火使命",
-    "blessingOfLustrousCarmine": "鍍紅祝福"
+    "blessingOfLustrousCarmine": "鍍紅祝福",
+    "type42SolemnPhalanx": "四二式·肅陣",
+    "junctionPoint": "聯結點",
+    "goldenAge": "黃金時代",
+    "farsight": "遙望"
   },
   "cookies": {
     "title": "我們使用 Cookie",
@@ -1235,7 +1269,21 @@
     "world_energy_point09_4": "重度能量淤積點·藏劍谷",
     "world_energy_point09_5": "重度能量淤積點·藏劍谷",
     "world_energy_point09_6": "重度能量淤積點·藏劍谷",
-    "world_energy_point09_7": "重度能量淤積點·藏劍谷"
+    "world_energy_point09_7": "重度能量淤積點·藏劍谷",
+    "world_energy_point10_1": "能量淤積點·應龍關",
+    "world_energy_point10_2": "能量淤積點·應龍關",
+    "world_energy_point10_3": "能量淤積點·應龍關",
+    "world_energy_point10_4": "重度能量淤積點·應龍關",
+    "world_energy_point10_5": "重度能量淤積點·應龍關",
+    "world_energy_point10_6": "重度能量淤積點·應龍關",
+    "world_energy_point10_7": "重度能量淤積點·應龍關",
+    "world_energy_point11_1": "能量淤積點·北部禁區",
+    "world_energy_point11_2": "能量淤積點·北部禁區",
+    "world_energy_point11_3": "能量淤積點·北部禁區",
+    "world_energy_point11_4": "重度能量淤積點·北部禁區",
+    "world_energy_point11_5": "重度能量淤積點·北部禁區",
+    "world_energy_point11_6": "重度能量淤積點·北部禁區",
+    "world_energy_point11_7": "重度能量淤積點·北部禁區"
   },
   "enemies": {
     "eny_0007_mimicw": "潛地虯獸",
@@ -1312,7 +1360,16 @@
     "eny_0082_hsbear": "天鼓",
     "eny_0112_jzmonk": "山犼獸",
     "eny_0113_jzogre": "披甲裂獸",
-    "eny_0114_jzmking": "巨山犼獸"
+    "eny_0114_jzmking": "巨山犼獸",
+    "eny_0117_klhound": "蝕影牙獸",
+    "eny_0118_klhog": "蝕影球刺獸",
+    "eny_0119_kltiger": "蝕影彪獸",
+    "eny_0120_klbear": "蝕影噪雷",
+    "eny_0121_klbud": "蝕影應龍前鋒",
+    "eny_0122_kltdbud": "蝕影應龍尖兵",
+    "eny_0123_klcap": "蝕影應龍破陣手",
+    "eny_0124_kltdcap": "蝕影應龍隊長",
+    "eny_0125_fdcentur": "阿萊克琉斯，千夫長"
   },
   "essencesPage": {
     "optimizer": "刷取優化器",
@@ -1568,7 +1625,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "舊鋒刺刃·壹型",
     "item_equip_t4_suit_crush_fracture_hand_01": "舊鋒手甲",
     "item_equip_t4_suit_crush_fracture_hand_02": "舊鋒手甲·壹型",
-    "item_equip_t4_suit_phy01_body_04": "點劍纖維護甲"
+    "item_equip_t4_suit_phy01_body_04": "點劍纖維護甲",
+    "item_equip_t4_parts_wuling00_body_01": "集成實訓護甲",
+    "item_equip_t4_parts_wuling00_body_02": "集成實訓鋼甲",
+    "item_equip_t4_parts_wuling00_body_03": "集成實訓胸甲",
+    "item_equip_t4_parts_wuling00_edc_01": "集成實訓排障刀",
+    "item_equip_t4_parts_wuling00_edc_02": "集成實訓火種石",
+    "item_equip_t4_parts_wuling00_edc_03": "集成實訓照明器",
+    "item_equip_t4_parts_wuling00_hand_01": "集成實訓手套",
+    "item_equip_t4_parts_wuling00_hand_02": "集成實訓護手",
+    "item_equip_t4_parts_wuling00_hand_03": "集成實訓纏帶",
+    "item_equip_t4_parts_wuling02_body_01": "涉淵重甲",
+    "item_equip_t4_parts_wuling02_body_02": "涉淵輕甲",
+    "item_equip_t4_parts_wuling02_edc_01": "涉淵護甲板",
+    "item_equip_t4_parts_wuling02_hand_01": "涉淵護手",
+    "item_equip_t4_parts_wuling02_hand_02": "涉淵手套",
+    "item_equip_t4_suit_fire_natr01_edc_04": "動火用隔溫板",
+    "item_equip_t4_suit_fire_natr01_hand_04": "動火用護手",
+    "item_equip_t4_suit_heal01_body_03": "生物輔助胸甲·I",
+    "item_equip_t4_suit_heal01_hand_03": "生物輔助手甲·I",
+    "item_equip_t4_suit_usp02_body_03": "長息輕護甲",
+    "item_equip_t4_suit_usp02_body_04": "長息輕護甲·I",
+    "item_equip_t4_suit_usp02_edc_04": "長息加固板",
+    "item_equip_t4_suit_usp02_hand_03": "長息裹手",
+    "item_equip_t4_suit_usp02_hand_04": "長息手套"
   },
   "packs": {
     "none": "無套裝",
@@ -1617,7 +1697,8 @@
     "suit_wisdwill01": "整合輕型",
     "suit_combo_cd01": "清波",
     "suit_expend_spell01": "壤流",
-    "suit_crush_fracture": "舊鋒"
+    "suit_crush_fracture": "舊鋒",
+    "suit_generaltype": "集成實訓"
   },
   "equipmentTypes": {
     "body": "護甲",
@@ -1671,13 +1752,21 @@
     "AllDamageTakenScalar": "總傷害減免",
     "Sub": "副能力",
     "AllSkillDamageIncrease": "所有技能傷害加成",
-    "FireAndNaturalDamageIncrease": "灼熱和自然傷害加成"
+    "FireAndNaturalDamageIncrease": "灼熱和自然傷害加成",
+    "PhysicalResistance": "物理抗性",
+    "NatureResistance": "自然抗性",
+    "CryoResistance": "寒冷抗性",
+    "ElectricResistance": "電磁抗性",
+    "HeatResistance": "灼熱抗性",
+    "TherResistance": "超域抗性"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "天使",
     "wiki_group_monster_landbreaker": "裂地者",
     "wiki_group_monster_hongshan": "滄賊",
-    "wiki_group_monster_animal": "野外生物"
+    "wiki_group_monster_animal": "野外生物",
+    "wiki_group_monster_kl": "蝕影",
+    "wiki_group_monster_js": "造裔"
   },
   "resitances": {
     "heatRez": "灼熱抗性",
@@ -2358,5 +2447,11 @@
     "inorganicConstruct": "「無機造物」",
     "turbidityManifest": "「濁流具現」",
     "thoseForsakenByTheLand": "「大地的棄子」"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "息壤工藝",
+    "cupriumTechnique": "赤銅工藝",
+    "hetoniteTechnique": "赫銅工藝",
+    "pyrroliteTechnique": "灼銅工藝"
   }
 }

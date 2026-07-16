@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nhiễm Tự Nhiên",
+      "Ăn Mòn",
+      "Chế Ngự Áp Đảo"
+    ],
+    "behaviourHateTags": [
+      "Thời Trang"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
+    ],
+    "blocTag": "Học viện Khoa học Hongshan (HAS)",
+    "expertTags": [
+      "Kỹ Thuật Chiến Đấu",
+      "Hiến pháp"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn Của Nhà Thám Hiểm Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Tự Nhiên",
+      "Lòng Nhân Ái"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+        "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+      },
+      "name": "Pháo Kích Trấn Áp",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp"
+      },
+      "name": "Trận Nghiền Ngọc",
+      "description": "Tạo một <@ba.key>Trận Nghiền Ngọc</> gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong phạm vi hiệu ứng."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
+        "baseStagger": "Suy Sụp Cơ Bản",
+        "imprisonmentAndSusceptibilityDurationS": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
+        "susceptibility": "Yếu Hóa",
+        "baseSusceptibility": "Yếu Hóa Cơ Bản",
+        "maxBonusSusceptibilityFromWill": "Thưởng Tối Đa Yếu Hóa từ Ý Chí",
+        "willRequiredForMaxBonusSusceptibility": "Yêu Cầu Ý Chí để nhận Thưởng Tối Đa Yếu Hóa",
+        "explosionDmgMultiplier": "Hệ Số ST Nổ",
+        "explosionStagger": "Suy Sụp Do Nổ",
+        "bonusDmgMultiplier": "Hệ Số ST Cộng Thêm",
+        "bonusSusceptibilityDurationS": "Hiệu Lực Thời Gian Yếu Hóa (giây)",
+        "spReturn": "Điểm KN Hoàn Trả",
+        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+      },
+      "name": "Tư Thế Đặc Nhiệm IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Hệ Số ST Kiến Tạo Trận Pháp Trừ Ám",
+        "gloompurgerArrayCreationStagger": "Suy Sụp Kiến Tạo Trận Pháp Trừ Ám",
+        "gloompurgerArrayDurationS": "Hiệu Lực Trận Pháp Trừ Ám (giây)",
+        "forcedCorrosionDurationS": "Hiệu Lực Ăn Mòn Cưỡng Bức (giây)",
+        "clusterStrikeTotalDmgMultiplier": "Tổng Hệ Số ST Tập Kích Cụm",
+        "gloompurgeArcanaDmgMultiplier": "Hệ Số ST Bí Thuật Trừ Ám",
+        "gloompurgeArcanaStagger": "Suy Sụp Bí Thuật Trừ Ám"
+      },
+      "name": "Trừ Ám",
+      "description": "Arcane tạo ra <@ba.key>Trận Pháp Trừ Ám</>, lập tức gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng (AOE).\nKhi cán viên đang điều khiển dùng Đòn Kết Liễu hoặc <@ba.key>Đòn Dứt Điểm</> đánh trúng kẻ địch trong <#ba.lastcombo>Trận Pháp Trừ Ám</>, <@ba.key>Trận Pháp Trừ Ám</> sẽ tung ra <@ba.key>Tập Kích Cụm</>, gây ST Diện Rộng lên kẻ địch đó. Hiệu ứng này kích hoạt tối đa 2 lần.\nSau khi kích hoạt <@ba.key>Tập Kích Cụm</> 2 lần, Tuyệt Kỹ sẽ chuyển thành <@ba.key>Bí Thuật Trừ Ám</>.\n<@ba.key>Bí Thuật Trừ Ám</>: Gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng lớn."
+    },
+    "indicator": {
+      "levels": [
+        "Trí Tuệ và Ý Chí Cán Viên +8.",
+        "Trí Tuệ và Ý Chí Cán Viên +10.",
+        "Trí Tuệ và Ý Chí Cán Viên +10.",
+        "Trí Tuệ và Ý Chí Cán Viên +15."
+      ],
+      "name": "Nhạy Bén/Kiên Cường"
+    },
+    "talent1": {
+      "levels": [
+        "Khi Trí Tuệ của Arcane ≥ Ý Chí, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>. Nếu không, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: Ý CHÍ</>.\n<@ba.info>Yêu cầu thuộc tính của 2 loại Trận Huyền Thuật chỉ tính hiệu ứng từ cấp cán viên, thiên phú, tiềm năng, cùng các chỉ số cộng thêm do trang bị và vũ khí đang mang cung cấp.</>",
+        "Khi Trí Tuệ của Arcane ≥ Ý Chí, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>. Nếu không, loại kỹ năng sẽ chuyển sang <@ba.key>Trận Huyền Thuật: Ý CHÍ</>.\nTuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa:\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Trong thời gian duy trì Tuyệt Kỹ, Arcane nhận <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Tăng ST Thuật Pháp</>.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Khi <@ba.key>Trận Pháp Trừ Ám</> (chuỗi tuyệt kỹ 1) và <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) gây ST lên kẻ địch, chúng đồng thời áp dụng <@ba.vup>[Ý Chí ×{spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> (tối đa: <@ba.vup>{spell_vul_rate:0.0%}</>) trong <@ba.vup>{duration:0}</> giây. Hiệu ứng này không cộng dồn.\n<@ba.info>Yêu cầu thuộc tính của 2 loại Trận Huyền Thuật chỉ tính hiệu ứng từ cấp cán viên, thiên phú, tiềm năng, cùng các chỉ số cộng thêm do trang bị và vũ khí đang mang cung cấp.</>"
+      ],
+      "name": "Hoạch Định Chiến Thuật"
+    },
+    "talent2": {
+      "levels": [
+        "<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>{duration_add:0}</> giây, đồng thời Giảm Kháng Tối Đa được tăng lên <@ba.vup>{1+corrupt_rate:0.00}</> lần so với ban đầu.",
+        "<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>{duration_add:0}</> giây, đồng thời Giảm Kháng Tối Đa được tăng lên <@ba.vup>{1+corrupt_rate:0.0}</> lần so với ban đầu."
+      ],
+      "name": "Rèn Sắc Vũ Khí"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng khoáng sản quý hiếm thêm 30%"
+      ],
+      "name": "Bạt Sơn Chử Hải"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 30%"
+      ],
+      "name": "Người Yêu Cây Cỏ"
+    },
+    "files": {
+      "main": "MẬT DANH: Arcane \nGIỚI TÍNH: Nữ \nNHẬN DẠNG: Đội Đặc Nhiệm Yinglung \nNGÀY SINH: 07 tháng 07 \nCHỦNG TỘC: Liberi \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Cơ Bản \nKN CHIẾN ĐẤU: Xuất Sắc \nTƯ DUY CHIẾN THUẬT: Nổi Bật \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Sắc",
+      "humanResources": "Cán Viên Arcane (tên thật là Li Zhiyan) là đội trưởng thuộc Đội Đặc Nhiệm Yinglung (ĐĐNY) của Học Viện Khoa Học Hongshan. Sau khi bị thương trong một chiến dịch tại Khu Cấm Bắc Võ Lăng, cô đã được cho phép bước vào kỳ nghỉ dưỡng và hồi phục dài hạn. Với sự chấp thuận đặc biệt từ ĐĐNY, Arcane hiện là cộng sự của Tập Đoàn Endfield. \n\nTheo lời Cán Viên Arcane, đây là kỳ nghỉ dài đầu tiên của cô. Các Cán Viên y tế của chúng tôi đã phát hiện hàng chục vị trí tổn thương bên trong cơ thể cô. Những năm tháng nơi tiền tuyến, hoạt động trong môi trường Nhiễm Khuẩn đầy hiểm nguy, tuy không thể bẻ gãy ý chí, nhưng đã bào mòn cơ thể cô bằng những cơn đau thể chất dai dẳng và khắc nghiệt. Sau khi trao đổi với các thành viên của Học Viện, chúng tôi được biết Học Viện hy vọng cô có thể tận dụng cơ hội này để hồi phục đúng nghĩa. “Đó nên là một kỳ nghỉ bù cho tất cả những kỳ nghỉ mà cô ấy đã bỏ lỡ suốt mấy năm liền.” \n— Martin Marvin Malen, Trợ lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "Trưởng Nhóm và Chen à? Tôi cũng không biết rõ lắm. Chỉ nghe nói ngày trước họ là bạn khá thân, thậm chí còn bắt cặp với nhau trong kỳ tuyển chọn. Thành tích của hai người họ khi ấy cũng nổi bật nhất trong số các thành viên dự bị. Ai cũng nghĩ họ sẽ trở thành một cặp Đặc Nhiệm Yinglung đầy triển vọng, cùng đồn trú tại Đèo Yinglung. Nhưng sau đó... họ cứ cãi nhau không ngừng. Nếu không cãi nhau, thì chắc là đang chuẩn bị cho trận cãi vã tiếp theo. Ngài cũng biết Trưởng Nhóm rồi đấy. Cô ấy chẳng bao giờ chịu nhường nửa bước. Cuối cùng, hai người họ được phân vào hai tổ khác nhau, và Trưởng Nhóm là người trở thành Đặc Nhiệm Yinglung... Nếu Chen trở thành Đặc Nhiệm Yinglung thì sao...? Tôi... không tưởng tượng nổi. Trưởng Nhóm thì vẫn sẽ là Trưởng Nhóm thôi. Còn nếu Chen thật sự được phân vào đội của cô ấy... chắc chắn sẽ có người bị điều chuyển đi nơi khác. Với góc nhìn của một người ngoài cuộc, tôi nghĩ Giáo Quan Zhu và Trưởng Nhóm đã đưa ra quyết định đúng. Sắp xếp hiện tại là tốt nhất cho cả hai người họ. \n— Summit, chiến binh, Đội Đặc Nhiệm Yinglung \n\nĐĐNY không dạy Trưởng Nhóm cách sử dụng khẩu pháo Đơn Vị Thuật Pháp hạng nặng đó. Tôi từng hỏi cô ấy một lần, và cô ấy nói đó là một phần \"di sản\" của cha mình. Đã có một thời gian, dù luyện tập thế nào Trưởng Nhóm cũng không thể tiến bộ thêm, nên cô ấy liên tục đổi vũ khí. Đao, thương, kiếm, kích, rìu lớn, rìu bé, móc, đinh ba... cô ấy đều đã thử qua. Món nào cô ấy cũng dùng được khá tốt, nắm được đủ loại lối đánh, nhưng vẫn không thấy hài lòng. Cô ấy nghĩ bản thân chưa đủ giỏi, nên lại tăng gấp đôi cường độ luyện tập... Mọi người đều lo cô ấy sẽ luyện đến kiệt sức mà gục mất. Rồi một ngày nọ, cô ấy tình cờ tìm thấy khẩu pháo Đơn Vị Thuật Pháp của cha mình, vốn đang được cất giữ bên ngoài. Đó là lần đầu tiên cô ấy xin nghỉ phép. Không ai biết cô ấy đã đi đâu suốt mấy ngày liền. Nhưng khi trở về, cô ấy đã quyết định sẽ dùng vũ khí của cha mình. Và kể từ đó, cô ấy trở thành Arcane mà chúng ta biết ngày hôm nay. Trong số các Đặc Nhiệm Yinglung đồn trú tại Võ Lăng, không ai là đối thủ của cô ấy. \n— Phrase, chiến binh, Đội Đặc Nhiệm Yinglung \n\nĐỪNG NGHE MẤY TIN ĐỒN ĐÓ NỮA! Ôi. Hồi kỳ tuyển chọn ấy, cô ấy... ờ thì, cũng kiểu như là... đúng, nhỉnh hơn tôi một chút thôi. Nhưng bây giờ tôi mạnh hơn hồi đó nhiều rồi nhé! Nếu đấu lại lần nữa, tôi sẽ chấp cô ấy đánh trước ba chiêu luôn! À khoan... có lẽ hai chiêu thôi. Yên tâm đi, chỉ là đấu tập giao hữu thôi mà. Theo trí nhớ của tôi, Arcane lúc nào cũng cau có, khó gần, cứ như trên vai lúc nào cũng vác theo một tảng đá thật lớn vậy. Nhưng sau khi hoàn thành tâm nguyện ở Khu Cấm Bắc Võ Lăng, cô ấy hình như đã khác đi một chút. À đúng rồi! Làm tôi nhớ đến dáng vẻ của cô ấy khi chúng tôi mới gặp nhau. Tôi từng thử hỏi cô ấy đã gặp chuyện gì trong Khu Cấm, nhưng cô ấy chẳng chịu nói với tôi nửa lời. Tôi cũng đâu thể chạy đi làm phiền Endmin bằng cả đống câu hỏi được... Khoan đã... hình như tôi có thể mà... \n— Chen Qianyu, cựu lính dự bị, Đội Đặc Nhiệm Yinglung \n\nLi Zhiyan? Cô bé trong Đội Đặc Nhiệm Yinglung đó à? Không. Chẳng có gì đặc biệt khiến ta nhớ đến cả. Mỗi lần gặp, cô ta đều giữ cái vẻ mặt nghiêm như đá, cổ cứng như gỗ, lại còn khiến người bên cạnh thấy mình thật vô dụng. Đã vậy cứ luôn miệng “Bà Toái Thể! Bà Toái Thể!” mãi không thôi. Ta phải sửa không biết bao nhiêu lần mới ép được cô ta đổi cách xưng hô. Đời phàm nhân vốn ngắn ngủi, vậy mà cô ta lại được ban cho năng lực mạnh mẽ đến thế. Nhưng nhìn xem cô ta dùng nó vào việc gì kìa: sống một cuộc đời buồn tẻ đến phát chán, rồi tự trói mình bằng cả đống quy tắc do chính mình đặt ra. Cơ mà gần đây cũng đỡ hơn đôi chút. Gương mặt cô ta đã dịu lại phần nào, ít nhất như vậy cũng khá thú vị. Có lẽ tên ngốc kia đã làm gì đó thật. Hừm. Con bé khờ khạo ấy cứ chạy loạn khắp nơi, để rồi mang về cả người đầy thương tích. Lần này thì đừng hòng trốn nữa. \n— Si",
+      "file2": "“Cô ấy có thể trông lạnh lùng và vô tình, nhưng đó là điều cần thiết trong ĐĐNY.” Đánh giá của người ngoài về Li Zhiyan thường đơn giản như vậy. \nMọi hành động và lựa chọn của Li gần như đều có thể quy về một điều: hoàn thành nhiệm vụ. Các chiến sĩ của Đội Đặc Nhiệm Yinglung (ĐĐNY) luôn phải chiến đấu trong những môi trường khắc nghiệt nhất. Lý trí lạnh lùng và ý chí tuyệt đối chính là những yếu tố bảo đảm cho thành công của nhiệm vụ. Nếu “rút lui an toàn” không nằm trong mục tiêu nhiệm vụ, mọi Đặc Nhiệm Yinglung đều hiểu điều đó có nghĩa là gì. \nĐĐNY có một mật thất được bảo vệ nghiêm ngặt. Nơi đó không dùng để lưu trữ hồ sơ tình báo hay tài liệu mật, mà để cất giữ “di vật” của từng Đặc Nhiệm Yinglung. Khi trở thành Đặc Nhiệm Yinglung, mỗi người sẽ được trao một chiếc hộp, và có thể đặt vào đó bất cứ thứ gì mình muốn. Nếu một ngày họ ngã xuống trong nhiệm vụ, món đồ trong chiếc hộp ấy sẽ trở thành minh chứng duy nhất rằng họ từng tồn tại. \nNhưng chiếc hộp của Li Zhiyan vẫn luôn trống rỗng. \nCô nói với người trông coi mật thất rằng mình chẳng có gì cả. Tất cả những gì từng thuộc về cô đều đã bị chôn vùi trong Sương Mù tối tăm, lạnh lẽo và độc hại của Khu Cấm Bắc Võ Lăng. \nNgười trông coi đành nhắc cô rằng đây là quy định của ĐĐNY. Điều đó khiến Li phải suy nghĩ. Thứ gì mới có thể đại diện cho bản thân cô? Nếu danh hiệu Trưởng Nhóm ĐĐNY bị tước khỏi cô, liệu cô còn có gì để đặt vào chiếc hộp ấy không? Cô bắt đầu nghĩ về ý nghĩa của “bản thân”. \nCâu hỏi đó chỉ khiến cô khựng lại trong chốc lát. Không lâu sau, cô tìm đến một nghệ nhân viết chữ già trong chợ, nhờ ông dùng bút lông viết tên mình xuống. Và cái tên ấy đã trở thành thứ được đặt vào trong hộp. \nVới cô, câu hỏi đó vốn không quan trọng. Điều quan trọng nhất, trước sau vẫn luôn là nhiệm vụ tiếp theo. \n...... \nTrước đây, Li rất hiếm khi ghé lại mật thất. Nhưng gần đây, sau vài lần cô trở lại nơi đó, chiếc hộp từng trống trải của cô bắt đầu có thêm nhiều thứ. Một cây bút. Một chiếc cúc áo. Rồi cả một con dao găm cũng được đặt vào trong đó... Mỗi món đồ đều bình thường đến mức tưởng như chẳng có ý nghĩa gì, như thể cô chỉ tiện tay nhặt đại thứ gì đó trên bàn. Một vài món dường như là quà từ hàng xóm, hoặc vật kỷ niệm mà ai đó nhờ cô chuyển lại... Thế nhưng Li lại xem tất cả như báu vật, cẩn thận đặt từng món vào chiếc hộp của mình. \nKhi một Endministrator tò mò hỏi về chuyện đó, Li không còn đáp lại bằng sự im lặng nghiêm nghị như trước kia. Thay vào đó, cô nghiêm túc trả lời: \n\"Khi ngoảnh lại, tôi mới nhận ra mình đã bỏ lỡ quá nhiều điều đáng lẽ phải biết trân trọng.\"",
+      "file3": "Phong cách chiến đấu của tôi sao? Đó là sự kết hợp giữa những trận pháp cha truyền lại cho tôi và chiến thuật của Đội Đặc Nhiệm Yinglung. \nCha từng nói, cốt lõi của trận pháp nằm ở “biến”. Trận pháp trao cho người thi triển thế lực để tiến, đồng thời cũng chuyển động theo chính người đó. Không có trận pháp nào nên bất biến, càng không có trận pháp nào nên tồn tại ở một dạng cố định mãi mãi. Chỉ khi người sử dụng trở thành một phần của trận pháp, trận ấy mới thật sự hoàn chỉnh. \nKhi tôi còn nhỏ, cha từng đưa tôi đi rất nhiều nơi. Có lúc, chúng tôi cưỡi những khúc gỗ trôi dọc theo dòng sông. Có lúc, chúng tôi trèo lên những tán cây thật cao. Khi mệt, hai cha con lại nằm dài trên bãi cỏ, ngước nhìn bầu trời sao... Cha dạy tôi vị trí của từng vì sao, hình dáng của từng chòm sao. Mãi về sau tôi mới hiểu, tất cả những điều ấy không đơn thuần chỉ là “trò chơi”. Bằng một cách tinh tế mà cuốn hút, cha đã truyền dạy cho tôi kiến thức của ông về trận pháp, cũng như quy luật tuần hoàn của vạn vật. \nCòn Đội Đặc Nhiệm Yinglung lại dạy tôi ý nghĩa của “hằng” - cách giữ vững bản thân, bất động giữa tâm bão. Chiến thuật của Đội Đặc Nhiệm Yinglung chủ yếu dựa vào “thế”, lấy đó làm nền tảng để tạo nên một sức mạnh không gì cản nổi. Trước những mối đe dọa khác nhau, chúng tôi sẽ sử dụng các chiến thuật khác nhau. Nhưng dù chiến đấu bằng kiếm pháp, thương pháp, đội hình hay trận pháp, mọi Đặc Nhiệm Yinglung đều phải giữ vững vị trí của mình, dồn toàn bộ sức mạnh vào một đòn thế quyết định để nghiền nát kẻ địch. \nTôi từng thử dung hợp chiến thuật từ Đội Đặc Nhiệm Yinglung với trận pháp của cha. Chiến thuật của Đội Đặc Nhiệm Yinglung chú trọng vào cả đội, vào toàn cục chiến trường và sự phối hợp giữa từng người, giống như cách ba khẩu pháo tam liên của tôi vận hành như một chỉnh thể thống nhất. Còn trận pháp của cha lại đặt trọng tâm vào sự linh hoạt và biến hóa. Kết hợp hai lối tiếp cận ấy không hề dễ dàng, và nó từng khiến tôi trăn trở trong một thời gian dài... \nRồi một ngày, tôi quay lại nơi cha và tôi từng chơi đùa khi xưa. Tôi nhìn thấy lá rơi trôi qua dòng nước xiết, thấy những con thú lông vũ đậu trên đầu cành dài đung đưa theo gió, thấy các chòm sao chưa từng ngừng chuyển động, nhưng bằng cách nào đó vẫn luôn giữ được hình dạng của mình. Khi ấy, tôi chợt hiểu ra điều cha từng nói. Chìa khóa chính là tôi. Tôi phải trở thành một phần của đội hình, mảnh ghép thứ tư trong trận pháp. \nTôi là nút thắt, là trục xoay để trận pháp biến hóa, là biến số lấp đầy khoảng trống trong chiến thuật. Khi hiểu được điều đó, tôi đưa chính bản thân mình vào trong trận. Tôi dùng thẻ ngọc để bố trí ba khẩu pháo tam liên, rồi liên tục điều chỉnh hỏa lực của chúng cho đến khi chúng trở thành một phần nối dài của tay chân mình. Chỉ đến lúc ấy, tôi mới thật sự làm chủ được chúng. \nThuật Pháp Originium của tôi chú trọng nhiều hơn vào “dòng chảy” của năng lượng, nhằm tạo nên thế cân bằng giữa “biến” và “hằng”. Ở một khía cạnh nào đó, Thuật Pháp của tôi có nét tương đồng với Thuật Pháp của Cán Viên Gilberta. Cô ấy từng chia sẻ với tôi một vài kinh nghiệm khi thi triển Thuật Pháp. Cán Viên Arclight cũng điều khiển dòng điện với sự tao nhã và thuần thục đáng kinh ngạc, nên tôi cũng đã xin cô ấy chỉ giáo. Cô ấy chỉ đáp lại bằng một câu: “Hãy cảm nhận nó.” Quả thật, Dijiang là nơi hội tụ của rất nhiều cá nhân thiên phú và lão luyện, đồng thời cũng mang đến vô số cơ hội học hỏi. Chẳng hạn như Cán Viên Last Rite với sức mạnh phi thường, hay Cán Viên Pogranichnik với hiểu biết vô song về trận pháp quân sự... Tôi hy vọng quãng thời gian ở trên Dijiang sẽ cho mình cơ hội tiếp tục rèn luyện kỹ năng, cũng như học hỏi sở trường của từng trường phái. \nHiện tôi cũng đang cố gắng tổng hợp những bài học này thành một cuốn sách. Những Đặc Nhiệm Yinglung khác muốn làm chủ trận pháp và pháo hạng nặng có thể dùng nó làm tài liệu tham khảo. Tôi hy vọng những ghi chép này sẽ giúp ích được cho họ.",
+      "file4": "[HỒ SƠ NHẬN HÀNG] \nNGƯỜI NHẬN: Li Zhiyan \nNGƯỜI GỬI: Ling Yue \nĐỊA CHỈ NGƯỜI GỬI: Thành Phố Võ Lăng \nTRẠNG THÁI: Đã ký nhận \nKIỂM TRA: Đã thông qua kiểm tra \nTIN NHẮN THOẠI: \nZhiyan! Là dì đây! Dì Liu đây! Nghe nói con đang nghỉ dưỡng ở Endfield. Sao chuyện lớn như vậy mà không nói với dì hả, con bé này? Cả khu phố lo cho con lắm đó! Vậy nên dì nhờ cô gái trẻ ở Vườn Tĩnh Lặng giúp gửi cho con mấy món con thích ăn. Cũng chỉ có vài hộp bánh hoa mộc với thạch rượu ngọt thôi. Dì mới làm cách đây mấy hôm nhân sinh nhật bé nhà dì, nên không để được lâu đâu. Nhớ ăn trước nhé? \nDì Shen cũng lo cho con lắm. Bà ấy nhét thêm vào gói hàng mấy bộ quần áo tự tay may. Nghe nói giờ con đang ở trên tàu vũ trụ, bà ấy cứ than mãi là ngoài không gian lạnh lắm. Nên nếu con thắc mắc mấy bộ đồ đó ở đâu ra, thì là vậy đó. \nCon gái à, dì cũng không biết khi nào con mới về. Từ nhỏ con đã bướng bỉnh rồi. Lúc nào cũng ngồi lì một chỗ, chẳng chịu làm gì. Con cũng hiếm khi chơi với mấy bé gái cùng tuổi, chỉ toàn chạy đi giúp mấy dì trong khu. Như vậy không được đâu! Con là một cô bé ngoan, nhưng bọn dì đều già cả rồi, không thể ở bên con mãi được. Nghe lời dì, ở Endfield thì cố kết bạn nhiều vào. Dì có gặp Endmin của họ với cô gái tên Perlica rồi, trông đều là người tốt cả! Nếu con không biết bắt chuyện thế nào, thì cứ mang bánh gạo với thạch rượu ngọt qua cho các nhân viên Endfield ăn thử tay nghề của dì. Làm vài lần như vậy là có bạn mới ngay thôi! \nDì nhìn con lớn lên từng ngày. Con không thích nói chuyện, nhưng dì biết con là đứa tinh tế. Mỗi lần con giúp bọn dì, dì đều ghi nhớ cả. Còn nhớ lần con mang tấm ảnh con gái nhỏ của Dì Shen về không? Hôm đó dì Shen khóc mãi không thôi. Tội nghiệp con bé, nó ra đi khi chỉ tầm tuổi con, nên Dì Shen vẫn luôn thương con như con ruột của mình. Và... bọn dì ai cũng vậy cả. Con là đứa trẻ của Võ Lăng. Thành phố này mãi mãi là nhà của con, dù con có đi đâu chăng nữa. \nAi da, nói một hồi lại buồn quá rồi. Dì cũng không giỏi ăn nói, chắc nên dừng ở đây thôi. Con cứ tập trung dưỡng bệnh cho tốt, rồi cố gắng về nhà sớm nhé. Đợi con về Võ Lăng, dì sẽ nấu cho con một bữa thật linh đình! Đừng quên lời dì dặn đó! Nhớ dẫn cả bạn mới về nữa! \n...... \nKhoan đã. Ai dô, Dì Shen cũng có chuyện muốn nói, mà bà ấy lại bắt đầu khóc rồi. Thôi để Ling Yue gửi gói hàng trước, rồi lát nữa Dì Shen thu âm tin nhắn sau vậy. Hy vọng không làm phiền con. Này! Đừng hối dì! Dì đâu có lâu thế! Khoan, sắp hết pin à? Sao lại— \n\n[HỒ SƠ GỬI HÀNG] \n[NGƯỜI GỬI: Li Zhiyan \nNGƯỜI NHẬN: Ling Yue \nĐỊA CHỈ NGƯỜI GỬI: Tàu Vũ Trụ Originium Dijiang \nTRẠNG THÁI GỬI HÀNG: Đã giao \nKIỂM TRA: Đã thông qua kiểm tra \nDANH SÁCH VẬT PHẨM: \nKhăn Choàng Simonch - 5 chiếc \nLàn Gió Của Kjersch - 5 hũ \nGiải Đố Cổng Không Gian - 3 bộ \nNước Ép Cam [Rf.] - 10 chai \nTIN NHẮN THOẠI: \nLing Yue, là tôi đây... Li Zhiyan. Tôi đã nhận được gói hàng của các cô chú trong khu rồi. Làm ơn đừng để họ gửi thêm gói nào nữa... Trên Dijiang có đủ mọi thứ, hơn nữa sau khi chia bớt cho Endmin và mọi người ở Endfield, tôi vẫn còn rất nhiều đồ. \nTôi nghĩ các dì khá thích mấy chiếc khăn choàng tôi gửi lần trước, nên tôi đã lấy thêm vài chiếc từ Bộ Phận Vận Chuyển. Cứ để các bà tự chia với nhau. Ngoài ra còn có vài loại đồ uống pha vị trái cây không mua được ở Võ Lăng, và một ít đồ chơi cho bọn trẻ. \nĐừng lo về chi phí. Tôi cũng gần như chẳng có khoản nào khác phải tiêu. \nVà nói với Dì Shen rằng những món đồ này đều là quà miễn phí từ Endfield. Tôi không muốn dì ấy lo lắng quá nhiều."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN liên hoàn <@ba.key>Tư Thế Đặc Nhiệm IV</> được cường hóa:\nHệ Số ST tăng lên bằng <@ba.vup>{atk_scale_touch:0.0}</> lần so với ban đầu.\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>: Dùng kỹ năng chiến đấu của Arcane đánh trúng kẻ địch đang chịu <@ba.key>Giam Cầm</> sẽ <#ba.return>hoàn trả</> thêm <@ba.vup>{atb_return_wisd:0}</> Điểm Kỹ Năng.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>: Hiệu quả <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> được áp dụng <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Người Dõi Theo Biển Cả"
+    },
+    "potential2": {
+      "description": "Trí Tuệ và Ý Chí <@ba.vup>+{Will:0}</>, Công Phép <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Trái Tim Sắt Giá Băng"
+    },
+    "potential3": {
+      "description": "Thiên Phú <@ba.key>Rèn Sắc Vũ Khí</> được cường hóa:\n<#ba.corrupt>Ăn Mòn</> do Arcane áp dụng sẽ kéo dài thêm <@ba.vup>{duration_add:0}</> giây, đồng thời Giảm Kháng Tối Đa được tăng thêm <@ba.vup>{corrupt_rate:0%}</> so với ban đầu.",
+      "name": "Kẻ Nắm Quyền Thạch Nham"
+    },
+    "potential4": {
+      "description": "Tuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa: Năng Lượng Tuyệt Kỹ tiêu hao <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Tâm Thép Tôi Rèn"
+    },
+    "potential5": {
+      "description": "Tuyệt Kỹ <@ba.key>Trừ Ám</> được cường hóa:\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>: Trong thời gian duy trì Tuyệt Kỹ, Arcane nhận <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Tăng ST Thuật Pháp</>. Hệ Số ST của <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) tăng lên bằng <@ba.vup>{atk_scale:0.0}</> lần so với ban đầu.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>: Tăng hiệu quả của <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> do <@ba.key>Trận Pháp Trừ Ám</> (chuỗi tuyệt kỹ 1) và <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2) áp dụng thêm <@ba.vup>+{spell_vul_rate_potential:0%}</>. Sau khi thi triển <@ba.key>Bí Thuật Trừ Ám</> (chuỗi tuyệt kỹ 2), nếu KN liên hoàn <@ba.key>Tư Thế Đặc Nhiệm IV</> vẫn đang trong thời gian hồi chiêu, lập tức rút ngắn thời gian hồi chiêu đó đi <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Ngoảnh Mắt Về Cố Hương"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Câu Hỏi Gửi Cánh Bướm",
+      "author": "栗樺茶",
+      "description": "Ký ức cũ nhẹ tênh mà vỡ nát; tháng ngày xưa tùy gió hóa hư không."
+    },
+    "potential3": {
+      "name": "Cành Quy Hương",
+      "author": "狂zip",
+      "description": "Cánh thú lông vũ mải miết kiếm tìm, nhưng chẳng nơi nào cho cô dừng cánh; chẳng có cành cây nào để cô đậu xuống nghỉ ngơi."
+    },
+    "potential5": {
+      "name": "Lưỡi Kiếm Hóa Thân",
+      "author": "Eteru",
+      "description": "Thân hóa kiếm phong, niệm tụ huyền thuật."
+    }
+  }
+}

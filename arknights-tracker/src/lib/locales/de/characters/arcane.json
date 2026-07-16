@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Natur",
+      "Korrodieren",
+      "Massenkontrolle"
+    ],
+    "behaviourHateTags": [
+      "Mode"
+    ],
+    "behaviourUnavailableTags": [
+      "Extrovertiert (NUR SYSTEM, im Spiel nicht sichtbar)"
+    ],
+    "blocTag": "Hongshan-Akademie der Wissenschaften (HAW)",
+    "expertTags": [
+      "Kampftechnik",
+      "Verfassung"
+    ],
+    "giftPreferTags": [
+      "Von Wuling-Entdeckern empfohlen"
+    ],
+    "hobbyTags": [
+      "Natur",
+      "Wohltätigkeit"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
+      },
+      "name": "Abriegelungsartillerie",
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "SDN-Multiplikator",
+        "stagger": "Taumeln"
+      },
+      "name": "Jadebrecher-Netz",
+      "description": "Erzeugt ein <@ba.key>Jadebrecher-Netz</>, das Gegnern im Wirkungsbereich mit <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Standard-SDN-Multiplikator",
+        "baseStagger": "Standard-Taumeln",
+        "imprisonmentAndSusceptibilityDurationS": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
+        "susceptibility": "Empfänglichkeit",
+        "baseSusceptibility": "Standard-Empfänglichkeit",
+        "maxBonusSusceptibilityFromWill": "Max. Bonus-Empfänglichkeit durch Wille",
+        "willRequiredForMaxBonusSusceptibility": "Der für eine max. Bonus-Empfänglichkeit erforderliche Wille",
+        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+        "explosionStagger": "Explosions-Taumeln",
+        "bonusDmgMultiplier": "Bonus-SDN-Multiplikator",
+        "bonusSusceptibilityDurationS": "Dauer der Bonus-Empfänglichkeit (Sek.)",
+        "spReturn": "FP-Rückerstattung",
+        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+      },
+      "name": "Yinglung-Haltung IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Finsternisvertreiber-Säulenreihenerrichtung-SDN-Multiplikator",
+        "gloompurgerArrayCreationStagger": "Finsternisvertreiber-Säulenreihenerrichtung-Taumeln",
+        "gloompurgerArrayDurationS": "Dauer von Finsternisvertreiber-Säulenreihe (Sek.)",
+        "forcedCorrosionDurationS": "Dauer von Erzwungene Korrosion (Sek.)",
+        "clusterStrikeTotalDmgMultiplier": "Gewittersturm-SDN-Multiplikator (Gesamt)",
+        "gloompurgeArcanaDmgMultiplier": "Finsternisvertreiber-Arkana-SDN-Multiplikator",
+        "gloompurgeArcanaStagger": "Finsternisvertreiber-Arkana-Taumeln"
+      },
+      "name": "Finsternisvertreiber",
+      "description": "Arkan erzeugt eine <@ba.key>Finsternisvertreiber-Säulenreihe</>, die Gegnern im Wirkungsbereich sofort <@ba.natur>Natur-SDN</> zufügt.\nErleidet ein Gegner innerhalb der <@ba.key>Finsternisvertreiber-Säulenreihe</> einen Wuchtschlag oder einen <#ba.lastcombo>Abschlussangriff</> durch den gesteuerten Operator, entfesselt die <@ba.key>Finsternisvertreiber-Säulenreihe</> einen <@ba.key>Gewittersturm</>, der ebenjenem Gegner Flächen-SDN zufügt. Dieser Effekt kann bis zu zweimal ausgelöst werden.\nWurde <@ba.key>Gewittersturm</> zweimal ausgelöst, wechselt die Ultimative Fertigkeit zu <@ba.key>Finsternisvertreiber-Arkana</>.\n<@ba.key>Finsternisvertreiber-Arkana</>: Fügt Gegnern innerhalb eines großen Wirkungsbereichs <@ba.natur>Natur-SDN</> zu."
+    },
+    "indicator": {
+      "levels": [
+        "Operator-Intellekt und -Wille +8.",
+        "Operator-Intellekt und -Wille +10.",
+        "Operator-Intellekt und -Wille +10.",
+        "Operator-Intellekt und -Wille +15."
+      ],
+      "name": "Unerschütterlicher Verstand"
+    },
+    "talent1": {
+      "levels": [
+        "Falls Arkans Intellekt mindestens so hoch ist wie ihr Wille, wechselt die Fertigkeitsart zu <@ba.key>Säulenreihen-Arkana: INT</>. Falls nicht, wird zu <@ba.key>Säulenreihen-Arkana: WILLE</> gewechselt.\n<@ba.info>Die Attributsanforderungen für die beiden Säulenreihen-Arkana umfassen nur Effekte von Operator-Leveln, Talenten, Potenzialen und Attribut-Boni, die von Ausrüstung und Waffen verliehen werden.</>",
+        "Falls Arkans Intellekt mindestens so hoch ist wie ihr Wille, wechselt die Fertigkeitsart zu <@ba.key>Säulenreihen-Arkana: INT</>. Falls nicht, wird zu <@ba.key>Säulenreihen-Arkana: WILLE</> gewechselt.\nUltimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert:\n<@ba.key>Säulenreihen-Arkana: INT</>:\n– Während der Ultimativen Fertigkeit erhält Arkan <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Technik-Verstärkung</>.\n<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wenn <@ba.key>Finsternisvertreiber-Säulenreihe</> (ultimative Sequenz 1) und <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) dem Gegner SDN zufügen, gewähren sie außerdem <@ba.vup>{duration:0}</> Sek. lang <@ba.vup>[Wille × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> (max: <@ba.vup>{spell_vul_rate:0.0%}</>). Dieser Effekt kann nicht kumuliert werden.\n<@ba.info>Die Attributsanforderungen für die beiden Säulenreihen-Arkana umfassen nur Effekte von Operator-Leveln, Talenten, Potenzialen und Attribut-Boni, die von Ausrüstung und Waffen verliehen werden.</>"
+      ],
+      "name": "Taktische Planung"
+    },
+    "talent2": {
+      "levels": [
+        "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{1+corrupt_rate:0.00}</>-Fache des Ursprungswerts erhöht.",
+        "Von Arkan gewirkte <#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{1+corrupt_rate:0.0}</>-Fache des Ursprungswerts erhöht."
+      ],
+      "name": "Waffentraining"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von seltenen Mineralien um +30 % zu erhöhen."
+      ],
+      "name": "Pflück’ den Berg und koch’ das Meer"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +20 % zu erhöhen.",
+        "Wachstumskammer zuweisen, um Wachstumsrate von In-vitro-Pflanzen um +30 % zu erhöhen."
+      ],
+      "name": "Botanikexperte"
+    },
+    "files": {
+      "main": "DECKNAME: Arkan \nGESCHLECHT: Weiblich \nAUTHENTIFIZIERUNG: Yinglung-Sondereinheit \nGEB.: 7. Juli \nSPEZIES: Liberi \n[ORIPATHIE-INFEKTIONSSTATUS] \nOripathie-negativ, basierend auf ärztlichen Befunden. \n\n[INTEGRIERTE PHYSISCHE UNTERSUCHUNG] \nPHYSIOLOGISCHE STÄRKE: Standard \nKAMPFFERTIGKEIT: Ausgezeichnet \nTAKTISCHER SCHARFSINN: Hervorragend \nORIGINIUM-TECHNIKEN-ASSIMILIERUNG: Ausgezeichnet",
+      "humanResources": "Operatorin Arkan (Geburtsname: Li Zhiyan) ist eine Hauptfrau der Yinglung-Sondereinheit (YSE) der Hongshan-Akademie der Wissenschaften. Nachdem sie während eines Einsatzes in der Sperrzone Nord-Wuling (SZ) Verletzungen erlitten hatte, gestand man ihr einen längeren Erholungsurlaub zu. Mit einer Sondererlaubnis der YSE arbeitet sie jetzt mit Endfield Industries zusammen. \n\nOperatorin Arkan selbst bezeichnet das als ihren ersten langen Erholungsurlaub. Unsere medizinischen Operatoren haben mehrere Dutzend innere Verletzungen festgestellt. Die Arbeit an der Front ist gefährlich. Ihr Enthusiasmus ist trotz der Verderbnis im Umkreis ungetrübt geblieben, doch sie leidet unter konstanten und höllischen Schmerzen. In Gesprächen mit Mitgliedern der HAW haben wir erfahren, dass die HAW hofft, sie könne diese Gelegenheit nutzen, um sich vollständig zu erholen. „Es sollte eine Pause sein, um die Pausen aufzuholen, die sie in den ganzen Jahren ihrer Tätigkeit verpasst hat.“ \n– Martin Marvin Malen, Assistent, Personalabteilung, Endfield Industries",
+      "file1": "Die Frau Hauptmann und Chen? Recht viel weiß ich darüber nicht. Angeblich waren sie ziemlich gute Freundinnen und haben bei der Auswahlprüfung sogar ein Team gebildet. Sie brachten von all den Reservisten die beste Leistung. Alle hielten sie für ein Paar vielversprechender Yinglungs, die am Yinglung-Pass stationiert werden würden. Aber nach der Prüfung … stritten sie nur noch. Und wenn sie mal nicht stritten, bereiteten sie sich auf ihren nächsten Streit vor. Du weißt, wie die Frau Hauptmann ist. Sie gibt nie klein bei. Die beiden wurden verschiedenen Gruppen zugewiesen, und die Frau Hauptmann wurde eine Yinglung … Was wäre, wenn Chen eine Yinglung geworden wäre …? Das … kann ich mir nicht vorstellen. Die Frau Hauptmann ist und bleibt die Frau Hauptmann. Und würde man Chen je dem Team der Frau Hauptmann zuweisen … würde jemand ganz sicher versetzt werden. Als Außenstehender finde ich, dass Ausbilder Zhu und die Frau Hauptmann die richtige Entscheidung getroffen haben. Die aktuelle Lösung ist die beste für beide. \n– Summit, Soldat, Yinglung-Sondereinheit \n\nDie YSE hat dem Hauptmann den Umgang mit ihrer Schweren Tech-Einheit-Kanone nicht beigebracht. Ich habe sie einmal gefragt, und sie meinte, es wäre Teil des „Vermächtnisses“ ihres Vaters. Das war, als der Hauptmann einfach nicht besser wurde, egal, wie hart sie trainierte, und deshalb ihre Waffen durchwechselte. Speere, Schwerter, Hellebarden, Äxte, Breitäxte, Haken und Dreizacke … Sie hat alle ausprobiert, konnte letzten Endes gut mit jeder Waffe umgehen, meisterte die verschiedensten Kampfstile, aber sie war nicht zufrieden damit. Sie war der Meinung, nicht gut genug zu werden, deshalb verdoppelte sie ihre Trainingseinheiten … Wir haben uns Sorgen gemacht, dass sie vor Erschöpfung umkippen könnte. Eines Tages stieß sie jedoch zufällig auf die Tech-Einheit-Kanone ihres Vaters, die etwas außerhalb verwahrt worden war. An diesem Tag nahm sie ihren ersten Urlaub. Dann verschwand sie ein paar Tage lang, niemand wusste wohin. Als sie zurückkam, hatte sie bereits beschlossen, mit der Waffe ihres Vaters zu kämpfen. Und seither ist sie die Arkan, die wir kennen. Kein in Wuling stationierter Yinglung kann ihr das Wasser reichen. \n– Phrase, Soldatin, Yinglung-Sondereinheit \n\nHÖR DOCH NICHT AUF DEN KLATSCH DER LEUTE! Uff. Während der Auswahlprüfung war sie … na ja, wie … sie war ein bisschen besser als ich. Aber jetzt bin ich viel besser als damals! Falls wir jemals wieder kämpfen, darf sie mich dreimal angreifen, bevor ich loslege! Na ja, vielleicht zweimal. Keine Sorge. Das wäre nur ein harmloser Übungskampf. Soweit ich mich erinnere, ist Arkan immer mit einem finsteren Gesicht rumgelaufen, als würde sie eine schwere Last mit sich herumtragen. Als ihr Wunsch hinsichtlich der Sperrzone Nord-Wuling in Erfüllung gegangen ist, hat sie sich ein bisschen verändert. Oh ja! Das erinnert mich daran, wie sie bei unserer ersten Begegnung ausgesehen hat. Ich habe versucht, sie über ihre Erlebnisse in der SZ auszufragen, aber sie hat mir partout nichts erzählt. Ich kann nicht einfach den Endmin mit Fragen belagern. Warte kurz … Vielleicht kann ich das doch … \n– Chen Qianyu, ehemalige Reservistin, Yinglung-Sondereinheit \n\nLi Zhiyan! Das kleine Yinglung-Mädchen? Nein. Da fällt mir nichts ein, was besonders auffällig wäre. Wann immer ich sie sehe, ist sie ernst, halsstarrig und sorgt dafür, dass sich die Leute in ihrer Umgebung in ihrer Haut nicht wohlfühlen. Und ständig lag sie mir mit „Frau Proxy! Frau Proxy!“ in den Ohren, und ich musste sie viel zu oft korrigieren, bis sie sich endlich änderte. Das Leben der Sterblichen ist kurz, und doch ist sie mit ein paar mächtigen Fähigkeiten gesegnet. Aber was macht sie mit ihnen? Sie lebt das langweiligste Leben und schränkt sich selbst mit einem Haufen selbst auferlegter Regeln ein. Na ja, vor Kurzem hat sich alles jedoch ein bisschen zum Positiven gewendet. Ihr Gesicht ist weicher geworden, das ist ziemlich interessant. Vielleicht hat dieser dumme Gimpel etwas gemacht. Hmpf. Diese hirnlose Idiotin ist herumgetollt und hat sich ein paar Verletzungen zugezogen. Diesmal gibt es kein Entkommen. \n– Si",
+      "file2": "„Sie kommt zwar kalt und herzlos rüber, aber das muss man auch in der YSE.“ Für Außenstehende ist Li Zhiyan für gewöhnlich recht einfach zu durchschauen. \nAll ihre Aktionen und Entscheidungen fußen auf dem Ziel, die Mission abzuschließen. Die Soldaten der Yinglung-Sondereinheit (YSE) kämpfen immer in einer extremen Umgebung. Nur durch Vernunft und Entschlossenheit schaffen sie es, eine Mission erfolgreich zu beenden. Ist eine „sichere Rückreise“ nicht als Teil des Missionsziels vermerkt, weiß jeder Yinglung, was das bedeutet. \nDie YSE hat eine Geheimkammer, die von extremen Sicherheitsvorkehrungen geschützt wird. In ihr werden keine Informationen oder Dokumente gelagert, sondern die „Habseligkeiten“ aller Yinglungs. Wenn man ein Yinglung wird, erhält man eine Schachtel, in der man alles verstauen kann, was man will. Sollte man während einer Mission sterben, wird der Inhalt der Schachtel zum einzigen Beweis, dass man existiert hat. \nAber Li Zhiyans Schachtel blieb leer. \nSie versicherte dem Verwalter der Kammer, dass sie nichts besäße. Alles, was sie einst besaß, läge im dunklen, kalten und giftigen Nebel der Sperrzone Nord-Wuling begraben. \nDer Verwalter musste sie darüber informieren, dass es sich dabei um eine Regel der YSE handele. Li dachte nach. Welcher Gegenstand repräsentierte sie am besten? Würde man ihr den Titel als YSE-Hauptmann wegnehmen, was könnte sie dann noch in die Schachtel legen? Sie grübelte über die Bedeutung des Ichs nach. \nDie Frage beschäftigte sie aber nicht allzu lange. Binnen kürzester Zeit suchte sie einen alten Künstler auf dem Markt auf, der ihren Namen mit einem Kalligrafiepinsel niederschrieb. Dieser Name war das Einzige, das sie in der Schachtel verwahrte. \nDie Frage schien ihr nicht wichtig zu sein. Es war die nächste Mission, die immer am wichtigsten war. \n…\nBis vor Kurzem besuchte Li die Geheimkammer fast nie. Doch dann begann sich ihre leere Schachtel zu füllen. Ein Stift. Ein Knopf. Ein Dolch gesellte sich ebenfalls dazu. Jeder Gegenstand schien gewöhnlich und bedeutungslos zu sein, als ob sie einfach etwas vom Schreibtisch genommen hätte. Ein paar Gegenstände waren wohl Geschenke von ihren Nachbarn oder Andenken, die sie für jemanden weiterleiten sollte … Und doch wurden sie von Li wie ein Schatz behandelt und sorgsam in die Schachtel gelegt. \nWurde sie von einem neugierigen Endministrator danach gefragt, antwortete Li nicht mehr wie früher mit ernstem Schweigen. Stattdessen antwortet sie feierlich: \n„Ich habe zurückgeblickt und festgestellt, dass ich so viel verpasst habe, das ich viel mehr hätte schätzen sollen.“",
+      "file3": "Mein Kampfstil? Er basiert auf den Reihen, die mein Vater mich gelehrt hat, kombiniert mit Yinglung-Taktiken. \nMein Vater hat immer gesagt, dass Reihen auf dem Prinzip der „Veränderung“ beruhen. Die Reihe gibt dem Anwender Momentum und bewegt sich auch mit dem Anwender. Keine Reihe sollte starr oder permanent sein. Eine Reihe ist nur vollständig, wenn der Anwender ein Teil davon wird. \nVater nahm mich als Kind an viele Orte mit. Manchmal ließen wir Baumstämme den Fluss runtertreiben. Manchmal kletterten wir echt hohe Bäume hoch. Und wenn wir müde wurden, ließen wir uns einfach ins Gras fallen, um zu den Sternen hinaufzuschauen. Vater erklärte mir ihre Positionen und die einzelnen Sternbilder. Später erfuhr ich, dass nichts davon nur ein Spiel war. Er brachte mir sein Wissen über Reihen und die Kreisläufe der verschiedensten Dinge auf subtile und doch fesselnde Weise bei. \nDie Yinglungs lehrten mich jedoch die Bedeutung von „Beständigkeit“ und wie man ein Fels in der Brandung sein kann. Die Yinglung-Taktik baut in erster Linie mit Momentum eine unaufhaltsame Kraft auf. Verschiedene Taktiken werden gegen unterschiedliche Bedrohungen eingesetzt. Aber egal, ob wir mit Schwertern, Speeren oder mit anderen Formationen und Reihen kämpften, jeder Yinglung blieb auf seinem Posten und konzentrierte sich darauf, den folgenschweren Angriff auszuführen, um den Feind zu vernichten. \nIch habe versucht, Yinglung-Taktiken in die Reihen meines Vaters zu integrieren. Ersteres konzentriert sich auf das Team, das gesamte Schlachtfeld und darauf, die Angriffe der anderen zu ergänzen, so wie meine Triplexkanonen-Funktion als eine einzige Einheit. Die Reihen meines Vaters sind auf Flexibilität und Veränderung ausgelegt. Das Kombinieren dieser zwei Ansätze war schwierig und hat mir einige Zeit lang Kopfzerbrechen bereitet. \nAber dann habe ich den Ort besucht, an dem mein Vater und ich damals gespielt haben. Ich sah, wie die gefallenen Blätter Flussschnellen entlangtrieben, wie Vogelbestien sicher auf vom Wind gepeitschten Zweigen saßen, wie sich die Sternbilder stets bewegten und doch ihre Form beibehielten. Da verstand ich plötzlich, was mein Vater immer gesagt hat. Ich bin der Schlüssel. Ich muss ein Teil der Formation sein, der vierte Teil der Reihe. \nIch bin der Dreh- und Angelpunkt, um den sich die Reihe verändert, die Variable, die die taktische Lücke füllt. Kaum hatte ich diese Lektion verstanden, habe ich mich in die Reihe eingebunden. Mit meinem Jadesplitter habe ich die Triplexkanone positioniert und ihre Feuerkraft so angepasst, dass sie sich wie eine Verlängerung meiner Gliedmaßen anfühlte. Erst dann habe ich sie gemeistert. \nMeine Originium-Techniken konzentrieren sich mehr auf den Fluss der Energie, um ein Gleichgewicht aus Veränderung und Beständigkeit aufzubauen. Irgendwie sind meine Techniken ähnlich derer von Operatorin Gilberta. Sie hat mir ein paar Tipps hinsichtlich des Wirkens von Techniken gegeben. Operatorin Arclight hat Elektrizität auch mit einer wunderschönen Eleganz gemeistert, und deshalb habe ich auch sie um Rat gebeten. Sie antwortete mit „Spüre sie!“ Ja, auf der Dijiang finden sich die verschiedensten unglaublich talentierten und fähigen Individuen ein, und sie bietet unendlich viele Gelegenheiten, um zu lernen. Wie Operatorin Last Rite beispielsweise und ihre astronomische Stärke – oder Operator Pogranichnik mit seinem unvergleichlichen Wissen über Kampfformationen. Ich hoffe, mein Aufenthalt an Bord der Dijiang gibt mir die Chance, meine Fertigkeiten zu verbessern und die Stärken jeder Schule zu studieren … \nIch versuche auch, diese Lektionen in einem Buch zusammenzufassen. Andere Yinglungs, die die Reihen und Schweren Kanonen beherrschen wollen, können dann darin nachschlagen. Ich hoffe, diese Niederschriften helfen ihnen.",
+      "file4": "[AUFZEICHNUNG WIRD EMPFANGEN] \nEMPFÄNGER: Li Zhiyan \nABSENDER: Ling Yue \nADRESSE DES ABSENDERS: Wuling City \nSTATUS: Unterschrieben und empfangen \nINSPEKTION: Inspektion bestanden \nSPRACHNACHRICHT: \nZhiyan! Ich bin’s! Tante Liu! Ich hab gehört, dass du dich ein bisschen bei Endfield erholst. Das hättest du mir sagen sollen, Mädel! Alle Nachbarn haben sich große Sorgen gemacht! Deshalb hab ich die junge Dame im Garten der Klarheit gebeten, dir ein paar deiner Lieblingssachen zu schicken. Ist nur etwas Osmanthus-Kuchen und süßer Thanol-Pudding. Ich habe das Ganze erst vor ein paar Tagen zum Geburtstag des Babys gezaubert, es wird aber nicht ewig halten. Iss es schnell auf, okay? \nTante Shen mag dich auch sehr. Sie hat dem Paket noch etwas Kleidung beigefügt, die sie selbst genäht hat. Sie hat mitbekommen, dass du auf einem Raumschiff bist, und jammert die ganze Zeit, dass dir im All sicher kalt ist. Also ja, da kommen die ganzen Kleidungsstücke her, falls du dich schon gefragt hast. \nAh, Mädel, ich weiß nicht, wann du wieder hier sein wirst. Du bist immer so stur gewesen. Hast immer nur still auf einem Platz gesessen. Du hast kaum mit den anderen Mädchen in deinem Alter gespielt. Stattdessen hast du versucht, den Tanten in der Nachbarschaft zu helfen. Das ist nicht richtig. Du bist so ein liebes Mädchen, aber wir werden langsam alt und werden nicht für immer hier sein. Hör auf deine Tante und freunde dich bei Endfield mit ein paar Leuten an. Ich habe ihren Endmin gesehen und die junge Dame namens Perlica. Beide kamen mir sehr nett vor! Und wenn dir der Smalltalk schwerfällt, nimm einfach den Kuchen und den Thanol-Pudding mit zu den Endfieldern und lass deine Kollegen etwas von der Kochkunst deiner Tante probieren. Mach das ein paarmal, und du hast neue Freunde. \nDeine Tante kennt dich schon seit deiner Kindheit. Du warst nie besonders gesprächig, aber deine Tante weiß, dass dir selbst Kleinigkeiten nicht entgehen. Ich habe mir immer notiert, wenn du uns geholfen hast. Weißt du noch, als du mit einem Foto von Tante Shens kleinem Mädchen zurückgekommen bist? Tante Shen konnte an diesem Tag nicht mehr aufhören zu weinen. Das arme Mädchen ging weg, als sie ungefähr in deinem Alter war, deshalb warst du für Tante Shen wie eine Tochter. Und … das gilt für uns alle. Du bist ein Kind von Wuling. Die Stadt ist immer dein Zuhause, wo auch immer du bist. \nAaaah, das wird langsam traurig. Deine Tante tut sich schwer mit Worten, darum sollte ich hier vielleicht lieber aufhören. Konzentriere dich einfach darauf, wieder gesund zu werden, und komm bald wieder nach Hause. Wenn du wieder in Wuling bist, kocht Tante ein Festessen für dich! Erinnere dich an den Rat von deinem Tantchen! Bring deine neuen Freunde auch mit! \n…\nWarte. Ach so, Tante Shen will dir auch noch was sagen, aber sie hat wieder zu weinen begonnen. Ling Yue soll einfach das Paket liefern, und Tante Shen wird später eine Sprachnachricht aufnehmen. Hoffentlich stören wir dich nicht. Hey! Dräng mich nicht! Ich brauche nicht mehr lang, okay? Warte mal. Akku fast leer? Wi… \n\n[LIEFERAUFZEICHNUNG] \nABSENDER: Li Zhiyan \nEMPFÄNGER: Ling Yue \nADRESSE DES ABSENDERS: OMV Dijiang \nLIEFERSTATUS: Geliefert \nINSPEKTION: Inspektion bestanden \nGEGENSTANDSLISTE: \n5-mal Simonch-Schal \n5-mal Brise von Kjersch \n3-mal Kosmisches-Tor-Puzzle \n10-mal Zitromen-Mix [Rf.] \nSPRACHNACHRICHT: \nLing Yue, ich bin’s! Li Zhiyan! Ich habe das Paket von den Tanten in der Nachbarschaft erhalten. Bitte lass nicht zu, dass sie mir noch was schicken … Ich habe hier auf der Dijiang alles, was ich brauche, und immer noch so viel übrig, nachdem ich dem Endmin und anderen Endfieldern schon so viel geschenkt hab. \nIch glaube, die Tanten mögen meine Schals vom letzten Mal. Deshalb habe ich noch ein paar von der Logistikabteilung besorgt. Sag ihnen, dass sie sie unter sich aufteilen sollen. Außerdem habe ich etwas Sirup eingepackt, den man in Wuling nicht kriegt, und Spielzeug für die Kinder. \nMach dir wegen der Kosten keine Sorgen. Ich gebe sonst kaum Geld aus. \nUnd tu vor Tante Shen so, als wären die Sachen Werbegeschenke von Endfield. Ich will nicht, dass sie sich Sorgen macht."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Kombofertigkeit <@ba.key>Yinglung-Haltung IV</> verbessert:\nDer SDN-Multiplikator wurde auf das <@ba.vup>{atk_scale_touch:0.0}</>-Fache des Ursprungswertes erhöht.\n<@ba.key>Säulenreihen-Arkana: INT</>: Das Treffen eines von <@ba.key>Gefangenschaft</> betroffenen Gegners mit Arkans Kampffertigkeit <#ba.return>stellt</> <@ba.vup>{atb_return_wisd:0}</> zusätzliche FP <#ba.return>wieder her</>.\n<@ba.key>Säulenreihen-Arkana: WILLE</>: Effekte von gewirkter <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Beobachter des Meeres"
+    },
+    "potential2": {
+      "description": "Intellekt und Wille <@ba.vup>+{Will:0}</>, Technik-Intensität <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Herz des eiskalten Ferrium"
+    },
+    "potential3": {
+      "description": "Talent <@ba.key>Waffentraining</> verbessert:Von Arkan gewirkte \n<#ba.corrupt>Korrosion</> dauert <@ba.vup>{duration_add:0}</> Sek. länger an. Die max. Resistenzverringerung wird auf das <@ba.vup>{corrupt_rate:0%}</>-Fache des Ursprungswerts erhöht.",
+      "name": "Anwender des Steins"
+    },
+    "potential4": {
+      "description": "Ultimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert: Ultimative Energiekosten <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Ein Geist aus gehärtetem Stahl"
+    },
+    "potential5": {
+      "description": "Ultimative Fertigkeit <@ba.key>Finsternisvertreiber</> verbessert:\n<@ba.key>Säulenreihen-Arkana: INT</>: Während die Ultimative Fertigkeit gewirkt wird, erhält Arkan <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Technik-Verstärkung</>. Der SDN-Multiplikator von <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) wurde auf das <@ba.vup>{atk_scale:0.0}</>-Fache des Ursprungswertes erhöht.\n<@ba.key>Säulenreihen-Arkana: WILLE</>: Die Effekte der durch <@ba.key>Finsternisvertreiber-Säulenreihe</> (ultimative Sequenz 1) und <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) gewirkten <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> erhöhen sich außerdem um <@ba.vup>+{spell_vul_rate_potential:0%}</>. Nachdem <@ba.key>Finsternisvertreiber-Arkana</> (ultimative Sequenz 2) gewirkt wurde, verringert sich die Abklingzeit der Kombofertigkeit <@ba.key>Yinglung-Haltung IV</> sofort um <@ba.vup>{cd_minus:0%}</>, wenn sie sich noch in der Abklingzeit befindet.",
+      "name": "Blick nach Hause"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Fragen an den Schmetterling",
+      "author": "栗樺茶",
+      "description": "Erinnerungen an früher brechen so schnell entzwei; Momente des letzten Jahres, sie fliehen vorbei."
+    },
+    "potential3": {
+      "name": "Zweig der Heimkehr",
+      "author": "狂zip",
+      "description": "Der Vogel flog, doch fand keine Ruh’; kein Zweig, kein Zuhause sagte ihm jemals zu."
+    },
+    "potential5": {
+      "name": "Verkörperung der Klinge",
+      "author": "Eteru",
+      "description": "Verwandle deinen Körper in eine Klinge und bewege dich durch das Arkan."
+    }
+  }
+}

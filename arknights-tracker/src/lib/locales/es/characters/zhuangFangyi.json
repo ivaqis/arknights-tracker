@@ -135,7 +135,7 @@
       "name": "Serenidad absoluta"
     },
     "potential5": {
-      "description": "Durante la transformación <@ba.key>Empíreo de la verdad</>, el DAÑ infligido por Zhuang Fangyi ignora <@ba.vup>{100*ignore_pulse_resist:0}</> de la <@ba.pulse>Resistencia eléctrica</> del enemigo.",
+      "description": "Durante la transformación <@ba.key>Empíreo de la verdad</>, el DAÑ infligido por Zhuang Fangyi ignora <@ba.vup>{-ignore_pulse_resist:0}</> de la <@ba.pulse>Resistencia eléctrica</> del enemigo.",
       "name": "Tormenta de transformación"
     }
   },

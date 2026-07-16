@@ -2692,14 +2692,14 @@
         },
         "talent1_1": {
             "talent1_speed": 1,
-            "ratio_speedreduction": 0.8,
+            "ratio_speedreduction": 0.2,
             "ratio_speed": 0.1,
             "duration_talent1buff": 3,
             "range_talent1buff": 5
         },
         "talent1_2": {
             "talent1_speed": 1,
-            "ratio_speedreduction": 0.6,
+            "ratio_speedreduction": 0.4,
             "ratio_speed": 0.2,
             "duration_talent1buff": 3,
             "range_talent1buff": 5

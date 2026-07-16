@@ -545,6 +545,60 @@
     "decoDesc": "Ein für Sondereinsätze mit besonderen Geländeanforderungen unerlässliches Ausrüstungsteil. \nAlle Ingenieure, die nach einem Verderbnisausbruch elektrische Geräte warten, müssen besondere PSA tragen, um sich gegen ungewöhnliche elektrische Entladungen zu schützen.",
     "setBonus": "3-Stück-Setbonus: Intellekt des Trägers <@ba.vup>+{wisd_up}</>. \nLiegen die LP des Trägers über {hp_ratio:0%}, erhält der Träger <@ba.vup>+{spell_dmg_up:0%}</> <@ba.key>Technik-SDN</>."
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "AIK-Einsatzrüstung",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Ich dachte, ich wäre für die nur Kanonenfutter, aber dann habe ich mal genauer hingesehen. Bessere Ausrüstung bekommt man nirgendwo.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "AIK-Einsatzvollharnisch",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nDie herausragenden Produktionskapazitäten des AIK ermöglichen es, dass der Vollharnisch aus der Einsatzreihe deutlich preiswerter ist als vergleichbare Produkte der Konkurrenz.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "AIK-Einsatzweste",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Kann ich bitte noch ein paar davon haben? Sie eignen sich wirklich gut als Baumaterial.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "AIK-Einsatzmachete",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nEine multifunktionale Klinge. Sie kann sowohl Aggeloi- als auch feindlichen Verteidigungsstrukturen Schaden zufügen und verschiedene Hindernisse aus dem Weg räumen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "AIK-Einsatzglimmer",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Manche Leute vertrauen auf ihr Feuerzeug. Ich vertraue auf jede Trainingseinheit, die ich bei Endfield Industries absolviert habe.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "AIK-Einsatztaschenlampe",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Ich freue mich auf neue Kampfeinsätze, wie andere Leute sich auf den nächsten Sonnenaufgang freuen.“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "AIK-Einsatzhandschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nDer Entwurf basiert auf der Faserstruktur einer bestimmten Ranke. Das Produkt ist leicht, dünn und atmungsaktiv.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "AIK-Einsatzhandschutz",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \n„Das Tastgefühl ist perfekt. Hat schon mal jemand darüber nachgedacht, damit in den Markt für PSA für den Fabrik- und Bausektor einzusteigen?“",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "AIK-Einsatzwickel",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ein Set Kampfausrüstung, das von Endfield Industries für das Training von Operatoren entwickelt wurde. Die Reihe ist aufgrund des hervorragenden Preis-Leistungs-Verhältnisses wirklich gut angenommen worden. \nSpezielle Schutzausrüstung für die Hände. Diese Ausrüstung ist für Operatoren gedacht, die im Kampf komplexe Maschinen bedienen müssen.",
+    "setBonus": "3-Stück-Setbonus: Der verursachte SDN des Trägers erhöht sich für alle Arten von SDN um <@ba.vup>+{dmg_up:0%}</>, <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN und Ultimative Effizienzsteigerung <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "Erlöser-Brustplatte",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -591,6 +645,36 @@
     "name": "Erlöser-Hände",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Die Worte auf diesem Ausrüstungsteil sollen dem Träger Mut für die beschwerliche Reise schenken. „Der Auftrag ist noch nicht abgeschlossen, also ist die Reise noch nicht vorbei.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "Schwere Rissforscher-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Für die Reise zum großen Riss legte ich eine Rüstung aus Xiranit-Jade an.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "Leichte Rissforscher-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Der Blick in den Winter hebt Leben und Tod glasklar hervor.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "Rissforscher-Rüstungsteil",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Markiert den Ort meiner ewigen Ruhestätte mit Werkzeugen, die den Stein durchdringen.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "Rissforscher-Handschuhe",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Das Grollen des Donners vertreibt jede Furcht, die ich empfinde.“",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "Rissforscher-Handschutz",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Die Schwertkämpfer-Behörde hat diese Ausrüstung speziell für Kampftrupps entworfen, die häufig Missionen in gefährlichen Umgebungen ausführen. \n„Das Banner ist entfaltet. Dieser Schleier soll mich zur Ruhe betten.“",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -1073,6 +1157,12 @@
     "decoDesc": "Ausrüstung mit einem herausragenden Feuerwiderstand. \n„Einige haben genau an diesem Vulkan Gesang gehört.“",
     "setBonus": "3-Stück-Setbonus: Technik-Intensität des Trägers <@ba.vup>+{phy_spell_up:0}</>. \nNachdem der Träger ein Ziel mit <#ba.burning>Verbrannt</> belegt hat, erhält er <@ba.fire>Hitze-SDN</> <@ba.vup>+{fire_dmg_up:0%}</> für {duration} Sek. Nachdem der Träger ein Ziel mit <#ba.corrupt>Korrosion</> belegt hat, erhält er <@ba.natur>Natur-SDN</> <@ba.vup>+{nature_dmg_up:0%}</> für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "Hitze-Isolierteil",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ausrüstung mit einer herausragenden Feuerresistenz. \n„Nicht mal Lava schmilzt dieses Zeug, Kumpel. Es ist genau wie meine Liebe für sie. Nichts wird ihr Herz jemals zum Schmelzen bringen.“",
+    "setBonus": "3-Stück-Setbonus: Technik-Intensität des Trägers <@ba.vup>+{phy_spell_up:0}</>. \nNachdem der Träger ein Ziel mit <#ba.burning>Verbrannt</> belegt hat, erhält er <@ba.fire>Hitze-SDN</> <@ba.vup>+{fire_dmg_up:0%}</> für {duration} Sek. Nachdem der Träger ein Ziel mit <#ba.corrupt>Korrosion</> belegt hat, erhält er <@ba.natur>Natur-SDN</> <@ba.vup>+{nature_dmg_up:0%}</> für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "Hitze-Arbeitshandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -1091,6 +1181,12 @@
     "decoDesc": "Ausrüstung mit einem herausragenden Feuerwiderstand. \n„Psst, still jetzt. Du weckst es noch auf.“",
     "setBonus": "3-Stück-Setbonus: Technik-Intensität des Trägers <@ba.vup>+{phy_spell_up:0}</>. \nNachdem der Träger ein Ziel mit <#ba.burning>Verbrannt</> belegt hat, erhält er <@ba.fire>Hitze-SDN</> <@ba.vup>+{fire_dmg_up:0%}</> für {duration} Sek. Nachdem der Träger ein Ziel mit <#ba.corrupt>Korrosion</> belegt hat, erhält er <@ba.natur>Natur-SDN</> <@ba.vup>+{nature_dmg_up:0%}</> für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "Hitze-Hand-PSA",
+    "description": "Dieses Ausrüstungsteil wurde von Endfield Industries eigenständig entworfen und mit dem AIK zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Ausrüstung mit einer herausragenden Feuerresistenz. \nDiese Schutzausrüstung bietet hervorragenden Schutz und ausreichend Platz für feinfühlige Aktionen. Der Nutzer kann verschiedene Objekte sicher verwenden und muss sich keine Sorgen um Verletzungen durch Hitze machen.",
+    "setBonus": "3-Stück-Setbonus: Technik-Intensität des Trägers <@ba.vup>+{phy_spell_up:0}</>. \nNachdem der Träger ein Ziel mit <#ba.burning>Verbrannt</> belegt hat, erhält er <@ba.fire>Hitze-SDN</> <@ba.vup>+{fire_dmg_up:0%}</> für {duration} Sek. Nachdem der Träger ein Ziel mit <#ba.corrupt>Korrosion</> belegt hat, erhält er <@ba.natur>Natur-SDN</> <@ba.vup>+{nature_dmg_up:0%}</> für {duration2} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "Schwere LUCHS-Rüstung",
     "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -1101,6 +1197,12 @@
     "name": "LUCHS-Kürass",
     "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. \nMan bezeichnet Kämpfer im LUCHS-Kürass auch als „Wandelnde Medikamentenkoffer“. Diese Lebensretter verstauen oft so viele medizinische Notfallvorräte in ihrem Kürass, wie sie tragen können.",
+    "setBonus": "3-Stück-Setbonus: LP-Behandlungseffizienz des Trägers <@ba.vup>+{heal_up:0%}</>. \nNachdem der Träger LP bei einem verbündeten Ziel wiederhergestellt hat, erhält das Ziel zusätzlich {duration} Sek. lang <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN. Übersteigt der Behandlungseffekt die max. LP des Ziels, erhält dieses stattdessen <@ba.vup>{1-dmg_taken_down2:0%}</> SDN-Reduzierung für alle Arten von SDN. Diese Effekt können nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "LUCHS-Kürass-S1",
+    "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. Man bezeichnet Kämpfer im LUCHS-Kürass auch als „Wandelnde Medikamentenkoffer“. Diese Lebensretter verstauen oft so viele medizinische Notfallvorräte in ihrem Kürass, wie sie tragen können.",
     "setBonus": "3-Stück-Setbonus: LP-Behandlungseffizienz des Trägers <@ba.vup>+{heal_up:0%}</>. \nNachdem der Träger LP bei einem verbündeten Ziel wiederhergestellt hat, erhält das Ziel zusätzlich {duration} Sek. lang <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN. Übersteigt der Behandlungseffekt die max. LP des Ziels, erhält dieses stattdessen <@ba.vup>{1-dmg_taken_down2:0%}</> SDN-Reduzierung für alle Arten von SDN. Diese Effekt können nicht kumuliert werden."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1143,6 +1245,12 @@
     "name": "LUCHS-Fingerhandschuhe",
     "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. \nRhodes Island bleibt der Tradition, seine PPE mit Modulen zur Überwachung von Oripathie auszustatten, weiterhin treu.",
+    "setBonus": "3-Stück-Setbonus: LP-Behandlungseffizienz des Trägers <@ba.vup>+{heal_up:0%}</>. \nNachdem der Träger LP bei einem verbündeten Ziel wiederhergestellt hat, erhält das Ziel zusätzlich {duration} Sek. lang <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN. Übersteigt der Behandlungseffekt die max. LP des Ziels, erhält dieses stattdessen <@ba.vup>{1-dmg_taken_down2:0%}</> SDN-Reduzierung für alle Arten von SDN. Diese Effekt können nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "LUCHS-Fingerhandschuhe S1",
+    "description": "Dieses Ausrüstungsteil wurde von Rhodes Island entworfen und mit der AIK-Fabrik zusammengesetzt. Es verbessert die Kampffertigkeiten seines Trägers.",
+    "decoDesc": "Die vom Sanitätspersonal bevorzugte Ausrüstung. Rhodes Island bleibt der Tradition, seine PSA mit Modulen zur Überwachung von Oripathie auszustatten, weiterhin treu.",
     "setBonus": "3-Stück-Setbonus: LP-Behandlungseffizienz des Trägers <@ba.vup>+{heal_up:0%}</>. \nNachdem der Träger LP bei einem verbündeten Ziel wiederhergestellt hat, erhält das Ziel zusätzlich {duration} Sek. lang <@ba.vup>{1-dmg_taken_down:0%}</> SDN-Reduzierung für alle Arten von SDN. Übersteigt der Behandlungseffekt die max. LP des Ziels, erhält dieses stattdessen <@ba.vup>{1-dmg_taken_down2:0%}</> SDN-Reduzierung für alle Arten von SDN. Diese Effekt können nicht kumuliert werden."
   },
   "item_equip_t4_suit_phy01_body_01": {
@@ -1289,6 +1397,18 @@
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nVielen würde es schwerfallen, eine Verbindungen zwischen Küchenarbeit und Xiranit herzustellen. Einem gewissen Bewohner Wulings kam jedoch beim Essen in einem Restaurant die Idee für einen Entwurf.",
     "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "Leichte Ewiges-Xiranit-Rüstung",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Das Ding ist eindeutig viel zu schwer. Sieh mal. Das Ding liegt brach wie die bleichen Knochen eines Viehs auf der Straße. Man muss immer mit leichtem Gepäck reisen, ja? Mit LEICHTEM Gepäck!“",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "Leichte Ewiges-Xiranit-Rüstung S1",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Das Ding ist eindeutig viel zu schwer. Sieh mal. Das Ding liegt brach wie die bleichen Knochen eines Viehs auf der Straße. Man muss immer mit leichtem Gepäck reisen, ja? Mit LEICHTEM Gepäck!“",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Ewiges-Xiranit-Energiekern",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -1307,6 +1427,12 @@
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Es heißt, dass der wahnsinnige Tianshi einmal im Eintopf eines Ursus-Kochs ein „sich selbst nährendes System“ gesehen haben soll. Dank dieser Inspiration konnte er die Energie-Laufzeit von Ausrüstung aus Ewigem Xiranit mehr als verdoppeln.",
     "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "Ewiges-Xiranit-Schutzteil",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nAuch dem Tianshi, der den ursprünglichen Entwurf zur Produktion freigeben wollte, fiel auf, dass er etwas rudimentär ausgefallen war. Er entwarf daher kurzerhand zusätzliche Schutzteile, um die Verteidigung zu verbessern.",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Ewiges-Xiranit-Handschuhe",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
@@ -1317,6 +1443,18 @@
     "name": "Ewiges-Xiranit-Handschuhe S1",
     "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
     "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n… Mehrere Tage vergingen und der wahnsinnige Tianshi begann, sich zu weigern „uninspirierende“ Nahrung zu sich zu nehmen. Als er nur noch aus Haut und Knochen bestand, verschwand er in die Wildnis, um nach „schmackhaftem Xiranit“ zu suchen.",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "Ewiges-Xiranit-Wickel",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \n„Wer beim Riss hat Xiranit in die Fasern eingewebt? Hast du den Verstand verloren?“",
+    "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "Ewiges-Xiranit-Handschutz",
+    "description": "Dieses Ausrüstungsteil wurde von den Hongshan-Schwertkämpfern entworfen und mit der AIK-Fabrik zusammengesetzt. Es kann die Kampffertigkeiten seines Trägers verbessern.",
+    "decoDesc": "Das Vermächtnis eines „wahnsinnigen“ Tianshi. \nTrag sie, zieh sie an … Lass die Energie durch deine Haut fließen. Spüre, wie die Kraft dir in Fleisch und Blut übergeht.",
     "setBonus": "3-Stück-Setbonus: LP des Trägers <@ba.vup>+{hp_up}</>.\nNachdem der Träger ein Ziel mit <#ba.enhance>Verstärkung</>, <#ba.guard>Geschützt</>, <#ba.vulnerable>Empfänglichkeit</> oder <#ba.weak>Geschwächt</> belegt hat, erhalten andere Teammitglieder <@ba.vup>+{dmg_up:0%}</> auf den verursachten SDN für {duration} Sek. Dieser Effekt kann nicht kumuliert werden."
   }
 }

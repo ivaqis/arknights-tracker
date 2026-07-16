@@ -2622,4 +2622,18 @@
     <path d="M9.5 7V12M7 9.5H12" stroke="white" stroke-width="2"/>
   </symbol>
   
+  <symbol id="js" viewBox="0 0 34 42">
+    <path d="M23.5 32L15.5 18.5H32V41L23.5 36.5V32Z" fill="currentColor"/>
+    <path d="M9.5 25.5C7.66667 30.5 3.9 40.7 3.5 41.5H12.5L15 33.5L9.5 25.5Z" fill="currentColor"/>
+    <path d="M9.00889 24.5H0.00888889C0.00888889 24.5 -0.491111 16 6.00889 8.5C12.5089 1 19.5 0 21 0H34.0089L29.0089 8.5C29.0089 8.5 19.5178 7.5 14.5089 12.5C9.5 17.5 9.00889 24.5 9.00889 24.5Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="kl" viewBox="0 0 41 45">
+    <rect x="11" y="18" width="7" height="9" fill="currentColor"/>
+    <rect x="23" y="18" width="7" height="9" fill="currentColor"/>
+    <path d="M37 18H30C30 7 20.5391 6.5 20.5391 6.5C20.5391 6.5 11 6.5 11 18H4C4 8.33502 11.4264 0 20.5391 0C29.6518 0 37 8.33502 37 18Z" fill="currentColor"/>
+    <path d="M0 45V38C0 38 4 37 4 35V27H11V35C11 38 9.69765 39.6686 7.5 41.5C5.30235 43.3314 0 45 0 45Z" fill="currentColor"/>
+    <path d="M41 45V38C41 38 37 37 37 35V27H30V35C30 38 31.3023 39.6686 33.5 41.5C35.6977 43.3314 41 45 41 45Z" fill="currentColor"/>
+  </symbol>
+
 </svg>

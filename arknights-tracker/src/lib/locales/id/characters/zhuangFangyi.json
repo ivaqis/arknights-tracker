@@ -135,7 +135,7 @@
       "name": "Absolute Composure"
     },
     "potential5": {
-      "description": "Saat transformasi <@ba.key>Empyrean of Truth</>, DMG yang ditimbulkan oleh Zhuang Fangyi akan mengabaikan <@ba.vup>{100*ignore_pulse_resist:0}</> <@ba.pulse>Resistansi Electric</> musuh.",
+      "description": "Saat transformasi <@ba.key>Empyrean of Truth</>, DMG yang ditimbulkan oleh Zhuang Fangyi akan mengabaikan <@ba.vup>{-ignore_pulse_resist:0}</> <@ba.pulse>Resistansi Electric</> musuh.",
       "name": "Storm of Transformation"
     }
   },

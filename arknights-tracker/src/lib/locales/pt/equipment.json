@@ -545,6 +545,60 @@
     "decoDesc": "Um equipamento essencial para operações em ambientes especiais. \nTodos os engenheiros que realizam reparos elétricos em locais de ruptura da Praga devem usar EPI especializado para evitar ferimentos causados por explosões anômalas de descarga elétrica.",
     "setBonus": "Efeito do conjunto de 3 peças: Inteligência do Usuário <@ba.vup>+ {wisd_up}</>. \nQuando PV do usuário está acima de {hp_ratio:0%}, <@ba.key>DNO Artes</> <@ba.vup>+ {spell_dmg_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "Armadura CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \n\"Eu pensei que estava comprando munição. Então prestei mais atenção e percebi que você não verá uma oferta melhor do que essa.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "Placa CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \nA poderosa capacidade de produção do CAI garante que a armadura de placas da série Fieldwork possa acabar com a concorrência, pois ela oferece proteção muito melhor a um custo muito mais baixo.",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "Vestimenta CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \n\"Eu poderia levar mais algumas peças, por favor? São ótimos materiais de construção.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "Facão CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \nUma lâmina multifuncional. Ela pode danificar de forma eficaz as defesas Aggeloides e do inimigo, bem como outros obstáculos que estejam no caminho.",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "Cinza CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \n\"Assim como as pessoas têm fé na luz, eu tenho fé em cada sessão de treinamento que fiz na Endfield Industries.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "Lanterna CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \n\"Aguardo com expectativa uma nova operação de combate assim como as pessoas aguardam o próximo nascer do sol.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "Luvas CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \nO design é baseado nas estruturas fibrosas de uma videira especial. O produto é leve, fino e arejado.",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "Mãos CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \n\"A sensação tátil é perfeita. Você já considerou o mercado de EPIs para fábricas e construção civil?\"",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "Bandagens CAI de Campo",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Um conjunto de equipamentos de combate projetado pela Endfield Industries para treinamento de operadores. Esta série é bem recebida pelo mercado devido à sua excelente relação custo-benefício. \nEquipamento de proteção especial para as mãos. Esses equipamentos foram projetados para operadores que precisam operar máquinas complexas em campo de batalha.",
+    "setBonus": "Efeito do conjunto de 3 peças: o usuário ganha DNO Causado <@ba.vup>+ {dmg_up:0%}</> para todos os tipos de DNO, <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO e Eficiência de Ganho Supremo <@ba.vup>+ {ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "Placas do Redentor",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
@@ -591,6 +645,36 @@
     "name": "Mãos do Redentor",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Esse equipamento é sinônimo do difícil caminho que temos pela frente. \"A missão ainda não terminou e, portanto, a jornada ainda não está concluída.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "Armadura Pesada Pesquisador de Fendas​",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O Bureau dos Espadeiros projetou este conjunto especial de equipamentos para combatentes que realizam operações frequentes em áreas de alto risco. \n\"Para percorrer a grande fenda, visto um traje de jade de Xiranita.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "Armadura Leve Pesquisador de Fendas​",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O Bureau dos Espadeiros projetou este conjunto especial de equipamentos para combatentes que realizam operações frequentes em áreas de alto risco. \n\"Ao contemplar o inverno, a vida e a morte tornam-se claras como o dia.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "Placa de Armadura Pesquisador de Fendas​",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O Bureau dos Espadeiros projetou este conjunto especial de equipamentos para combatentes que realizam operações frequentes em áreas de alto risco. \n\"Com ferramentas para lascar a pedra, marque a cabeceira do meu leito eterno.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "Luvas Pesquisador de Fendas​",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O Bureau dos Espadeiros projetou este conjunto especial de equipamentos para combatentes que realizam operações frequentes em áreas de alto risco. \n\"Quando ouço o trovão rugir, qualquer medo desaparece.\"",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "Mãos Pesquisador de Fendas​",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O Bureau dos Espadeiros projetou este conjunto especial de equipamentos para combatentes que realizam operações frequentes em áreas de alto risco. \n\"O estandarte foi desfraldado, um sudário para me sepultar.\"",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -1073,6 +1157,12 @@
     "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Alguém ouviu uma música naquele mesmo vulcão.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "Placa de Isolamento Hot Work",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Equipamento com excelente classificação de resistência ao fogo. \n\"Nem mesmo lava consegue derreter isso, colega. É como o meu amor por ela. Nunca vai penetrar e chegar a seu coração.\"",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "Luvas Hot Work",
     "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
@@ -1091,6 +1181,12 @@
     "decoDesc": "Equipamento que apresenta excelente classificação de resistência ao fogo. \n\"Shh, quieto. Você pode acordá-lo.\"",
     "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "EPI para as Mãos Hot Work",
+    "description": "Projetado de forma independente pela Endfield Industries e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "Equipamento com excelente classificação de resistência ao fogo. \nUm conjunto de luvas que oferece excelente proteção e, ao mesmo tempo, permite movimentos precisos. O usuário pode manipular diversos objetos com segurança, sem sofrer queimaduras térmicas.",
+    "setBonus": "Efeito do conjunto de 3 peças: Intensidade das Artes do Usuário <@ba.vup>+ {phy_spell_up:0}</>. \nApós o usuário aplicar <#ba.burning>Combustão</>, ele ganha <@ba.fire>DNO Térmico</> +<@ba.vup>{fire_dmg_up:0%}</> por {duration} s. Após o usuário aplicar <#ba.corrupt>Corrosão</>, ele ganha <@ba.natur>DNO Natureza</> + <@ba.vup>{nature_dmg_up:0%}</> por {duration2} s. Os efeitos acima não podem se acumular."
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "Armadura Pesada LYNX",
     "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
@@ -1101,6 +1197,12 @@
     "name": "Couraça LYNX",
     "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "O equipamento preferido dos médicos. \nAs pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "Couraça LYNX T1",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "O equipamento preferido dos médicos. As pessoas costumam se referir aos combatentes que usam a Couraça LYNX como \"Kits Médicos Ambulantes\". Esses salva-vidas costumam encher todos os bolsos e compartimentos de suas armaduras com suprimentos médicos de emergência.",
     "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1143,6 +1245,12 @@
     "name": "Manoplas LYNX",
     "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do portador.",
     "decoDesc": "O equipamento preferido dos médicos. \nA Rhodes Island ainda tem a tradição de fornecer seus EPIs com módulos de monitoramento de Oripatia.",
+    "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "Manoplas LYNX T1",
+    "description": "Projetado pela Rhodes Island e montado pelo CAI. Esse equipamento aprimora os recursos de combate do usuário.",
+    "decoDesc": "O equipamento preferido dos médicos. A Rhodes Island ainda tem a tradição de equipar seu EPI com módulos de monitoramento de Oripatia.",
     "setBonus": "Efeito do conjunto de 3 peças: Eficiência do Tratamento de PV do usuário <@ba.vup>+ {heal_up:0%}</>. \nApós o usuário fornecer tratamento de PV a um alvo aliado, esse alvo também ganha <@ba.vup>{1-dmg_taken_down:0%}</> de Redução DNO contra todos os tipos de DNO por {duration} s. Se o tratamento em questão exceder o PV Máximo do alvo, o alvo ganhará <@ba.vup>{1-dmg_taken_down2:0%}</> de redução DNO contra todos os tipos de DNO. Os efeitos acima não podem se acumular."
   },
   "item_equip_t4_suit_phy01_body_01": {
@@ -1289,6 +1397,18 @@
     "decoDesc": "O legado de um Tianshi \"louco\". \nA maioria teria dificuldade em estabelecer uma conexão entre o trabalho na cozinha e Xiranita. No entanto, um morador de Wuling realmente se inspira em design ao jantar em um restaurante.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "Armadura Leve de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \n\"Eu digo que é pesado demais. Veja. É tão simples quanto os restos mortais esbranquiçados de bestas aleatórias à beira da estrada. É preciso viajar com pouca bagagem, ok? LEVE!\"",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "Armadura Leve de Xiranita Eterna T1",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \n\"Eu digo que é pesado demais. Veja. É tão simples quanto os restos mortais esbranquiçados de bestas aleatórias à beira da estrada. É preciso viajar com pouca bagagem, ok? LEVE!\"",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Núcleo de Energia de Xiranita Eterna",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
@@ -1307,6 +1427,12 @@
     "decoDesc": "Herança de um Tianshi \"louco\". \n...Diz-se que o Tianshi louco viu um \"ciclo de autoalimentação\" em um ensopado servido por um chef Ursus. Essa inspiração permitiu que ele mais que dobrasse a duração do poder do equipamento de proteção de Xiranita Eterna.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "Placa de Suporte de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \nO Tianshi responsável por levar o design antigo para a linha de produção também percebeu que ele era muito básico. Assim, eles projetaram lajes de proteção adicionais para complementar as defesas.",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Luvas de Xiranita Eterna",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
@@ -1317,6 +1443,18 @@
     "name": "Luvas de Xiranita Eterna T1",
     "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI, esse equipamento pode aprimorar os recursos de combate do portador.",
     "decoDesc": "Herança de um Tianshi \"louco\". \n...Dias se passaram e o enlouquecido Tianshi começou a rejeitar qualquer alimento que \"falhasse em trazer inspiração\". Após ser reduzido a pele e ossos, ele logo desapareceu nas terras selvagens em busca da \"saborosa Xiranita\".",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "Bandagens de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \n\"Quem diabos teceu Xiranita na fibra? Vocês estão loucos?\"",
+    "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "Mãos de Xiranita Eterna",
+    "description": "Projetado pela Hongshan Swordmancers e montado pelo CAI. Este equipamento pode melhorar as capacidades de combate do usuário.",
+    "decoDesc": "O legado de um Tianshi \"louco\". \nColoque-as, vista-as... Deixe o poder percorrer sua pele, deixe a energia permear sua carne e seu sangue.",
     "setBonus": "Efeito do conjunto de 3 peças: PV do Usuário <@ba.vup>+ {hp_up}</>.\nApós o usuário aplicar <#ba.enhance>Amp</>, <#ba.guard>Protegido</>, <#ba.vulnerable>Suscetibilidade</> ou <#ba.weak>Enfraquecido</>, os outros membros da equipe ganham DNO Causado <@ba.vup>+{dmg_up:0%}</> por {duration} s. Esse efeito não pode se acumular."
   }
 }

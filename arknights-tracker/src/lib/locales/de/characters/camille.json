@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "SDN-Multiplikator",
         "stagger": "Taumeln",
-        "firefangVesperwingDurationS": "Feuerzahn-Vesperflügel-Dauer (Sek.)",
+        "firefangVesperwingsDurationS": "Dauer der Feuerzahn-Vesperflügel (Sek.)",
         "weaknessEffect": "Schwäche-Effekt",
         "heatSusceptibility": "Hitze-Empfänglichkeit",
         "explosionDmgMultiplier": "Explosions-SDN-Multiplikator"
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird.",
-        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird."
+        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird.",
+        "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert: Wenn Camille einen Gegner mit <@ba.key>schwebenden</><@ba.key> Feuerzahn-Vesperflügeln</> trifft, stellt er <@ba.heal>[{heal_base:0} + Intellekt × {heal_sub_multi:0.##}]</> LP bei sich wieder her und gewährt für {combo_duration} Sek. <#ba.combo>Verbunden</>-Buff. Beim Wirken von <@ba.key>Jägerverfolgung</> kann dieser Effekt auch dann ausgelöst werden, wenn ein Ziel mit nicht <@ba.key>schwebenden</> Vesperflügeln getroffen wird."
       ],
       "name": "Sündenjäger"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Kampffertigkeit <@ba.key>Flammender Exorzismus</> verbessert: Die Fertigkeit belegt Gegner mit <#ba.weak>Schwächen</> <@ba.vup>+{0-weak_scale:0%}</> und <#ba.firevul>Hitze-Empfänglichkeit</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Schwebe</>dauer der <@ba.key>Feuerzahn-Vesperflügel</> <@ba.vup>+{bat_duration:0}</> Sek.",
+      "description": "Kampffertigkeit <@ba.key>Flammender Exorzismus</> verbessert: Die Fertigkeit belegt Gegner mit <#ba.weak>Schwäche</> <@ba.vup>+{weak_scale:0%}</> und <#ba.firevul>Hitze-Empfänglichkeit</> <@ba.vup>+{vulnerable_scale:0%}</>. <@ba.key>Schwebe</>dauer der <@ba.key>Feuerzahn-Vesperflügel</> <@ba.vup>+{bat_duration:0}</> Sek.",
       "name": "Flammengesalbte Lanze"
     },
     "potential2": {
@@ -130,7 +130,7 @@
       "name": "Hexenfährtenleser"
     },
     "potential3": {
-      "description": "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek. <@ba.key>Herzpfähler</> und <@ba.key>Jägerverfolgung</> verbessert: Die SDN-Multiplikatoren werden auf das <@ba.vup>{atk_scale_1_1:0.0}</>-fache des Originalwerts erhöht. Die FP-Wiederherstellung wird auf das <@ba.vup>{atb:0.##}</>-fache des Originalwerts erhöht.",
+      "description": "Kombofertigkeit <@ba.key>Herzpfähler</> verbessert. Abklingzeit: <@ba.vup>{coolDown:0}</> Sek. <@ba.key>Herzpfähler</> und <@ba.key>Jägerverfolgung</> verbessert: Die SDN-Multiplikatoren werden auf das <@ba.vup>{atk_scale_1_1:0.0}</>-fache des Originalwerts erhöht. Die FP-Wiederherstellung wird auf das <@ba.vup>{atb:0.##}</>-fache des Originalwerts erhöht.",
       "name": "Dorniger Lähmer"
     },
     "potential4": {

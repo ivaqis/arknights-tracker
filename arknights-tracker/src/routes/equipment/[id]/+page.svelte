@@ -81,11 +81,50 @@
     $: partTypeLabel = $t(`equipmentTypes.${partTypeStr}` || partTypeStr);
     $: rarityColor = getRarityColor(rarity);
     $: currentBlackboard = equipData.blackboard || {};
-    $: neededMaterials = (equipData.materials || []).map((m) => ({
-        id: m.name,
-        name: m.name,
-        amount: m.amount,
-    }));
+    function getScriptName(recipe, index) {
+        if (!recipe) return "";
+        const componentMat = recipe.find(m => m.name && m.name.endsWith("Component"));
+        if (!componentMat) {
+            return `${$t("recipes")} ${index + 1}`;
+        }
+        const techName = componentMat.name.replace("Component", "Technique");
+        const key = `equipmentScriptNames.${techName}`;
+        const translated = $t(key);
+        if (translated && translated !== key) {
+            return translated;
+        }
+        const baseName = componentMat.name.replace("Component", "");
+        const formattedBase = baseName.charAt(0).toUpperCase() + baseName.slice(1);
+        return `${formattedBase} Technique`;
+    }
+
+    function formatCostValue(val) {
+        if (val >= 1000) {
+            const formatted = val / 1000;
+            return Number(formatted.toFixed(1)) + "K";
+        }
+        return val.toString();
+    }
+
+    function formatCostRange(materials) {
+        if (!materials || materials.length === 0) return "0";
+        const costs = materials.map(r => r[0]?.amount || 0).filter(v => v > 0);
+        if (costs.length === 0) return "0";
+        const minCost = Math.min(...costs);
+        const maxCost = Math.max(...costs);
+        if (minCost === maxCost) {
+            return formatCostValue(minCost);
+        }
+        return `${formatCostValue(minCost)}-${formatCostValue(maxCost)}`;
+    }
+
+    $: neededMaterials = (equipData.materials && equipData.materials[0])
+        ? equipData.materials[0].map((m) => ({
+            id: m.name,
+            name: m.name,
+            amount: m.amount,
+        }))
+        : [];
 
     function interpolateBlackboard(text, bb) {
         if (!text) return "";
@@ -296,7 +335,7 @@
                         foodNonDefAttrs.length > 0 &&
                         foodNonDefAttrs[0].attrType === targetAttr.attrType;
                     const isGoodMatch = isHigherStat && isFirstStat;
-                    const craftCost = (food.materials && food.materials.length > 0) ? food.materials[0].amount : Infinity;
+                    const craftCost = (food.materials && food.materials.length > 0 && food.materials[0].length > 0) ? food.materials[0][0].amount : Infinity;
 
                     return { ...food, isGoodMatch, foodMax: foodBest, isHigherStat, craftCost };
                 });
@@ -838,19 +877,46 @@
                                                     </Tooltip>
                                                 {/if}
 
-                                                {#if match.craftCost !== Infinity && match.materials[0]}
-                                                    <div class="flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
-                                                        <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
-                                                            <Image
-                                                                id={match.materials[0].name}
-                                                                variant="item"
-                                                                className="max-w-full max-h-full object-contain drop-shadow-sm"
-                                                            />
+                                                {#if match.craftCost !== Infinity && match.materials?.[0]?.[0]}
+                                                    <Tooltip>
+                                                        <div class="flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-1 py-0.5 rounded-md shadow-sm">
+                                                            <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0 pointer-events-none">
+                                                                <Image
+                                                                    id={match.materials[0][0].name}
+                                                                    variant="item"
+                                                                    className="max-w-full max-h-full object-contain drop-shadow-sm"
+                                                                />
+                                                            </div>
+                                                            <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px pointer-events-none">
+                                                                {formatCostRange(match.materials)}
+                                                            </span>
                                                         </div>
-                                                        <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px">
-                                                            {match.craftCost}
-                                                        </span>
-                                                    </div>
+                                                        <div slot="content" class="flex flex-col gap-1.5 p-1 text-xs">
+                                                            {#each match.materials as recipe, i}
+                                                                <div class="flex items-center gap-2 text-white/90">
+                                                                    <span class="font-medium text-gray-300">{getScriptName(recipe, i)}:</span>
+                                                                    
+                                                                    {#if recipe[1]}
+                                                                        <div class="flex items-center gap-1">
+                                                                            <span class="font-bold text-yellow-400">{recipe[1].amount}</span>
+                                                                            <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
+                                                                                <Image id={recipe[1].name} variant="item" className="max-w-full max-h-full object-contain" />
+                                                                            </div>
+                                                                        </div>
+                                                                    {/if}
+                                                                    
+                                                                    {#if recipe[0]}
+                                                                        <div class="flex items-center gap-1 border-l border-white/20 pl-2">
+                                                                            <span class="font-bold text-gray-300">{recipe[0].amount}</span>
+                                                                            <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
+                                                                                <Image id={recipe[0].name} variant="item" className="max-w-full max-h-full object-contain" />
+                                                                            </div>
+                                                                        </div>
+                                                                    {/if}
+                                                                </div>
+                                                            {/each}
+                                                        </div>
+                                                    </Tooltip>
                                                 {/if}
                                             </div>
                                         </div>
@@ -875,21 +941,43 @@
             <div
                 class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors shadow-sm"
             >
-                <h2
-                    class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
-                >
-                    {$t("stats.materials" || "Materials")}
-                </h2>
-                <div class="flex flex-wrap gap-4 pt-1">
-                    {#if neededMaterials.length > 0}
-                        {#each neededMaterials as mat (mat.id)}
-                            <ItemCard item={mat} amount={mat.amount} linkToRecipe={true} />
-                        {/each}
+                <div class="flex items-center justify-between border-b border-gray-100 dark:border-[#444] pb-3">
+                    <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk">
+                        {$t("stats.materials" || "Materials")}
+                    </h2>
+                </div>
+                <div class="pt-1">
+                    {#if equipData.materials && equipData.materials.length > 1}
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {#each equipData.materials as recipe, i}
+                                {@const techName = getScriptName(recipe, i)}
+                                <div class="border border-gray-200 dark:border-[#444] rounded-2xl p-4 flex flex-col gap-3 transition-colors bg-transparent hover:border-gray-300 dark:hover:border-[#555] shadow-sm">
+                                    {#if techName}
+                                        <span class="font-bold text-sm text-gray-600 dark:text-gray-300 border-b border-gray-100 dark:border-[#383838] pb-1.5 leading-none">
+                                            {techName}
+                                        </span>
+                                    {/if}
+                                    <div class="flex flex-wrap gap-2.5">
+                                        {#each recipe as mat}
+                                            <ItemCard item={{ id: mat.name, name: mat.name }} amount={mat.amount} linkToRecipe={true} />
+                                        {/each}
+                                    </div>
+                                </div>
+                            {/each}
+                        </div>
                     {:else}
-                        <div
-                            class="w-full text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
-                        >
-                            {$t("systemNames.noMaterialsNeeded" || "No materials needed")}
+                        <div class="flex flex-wrap gap-4">
+                            {#if neededMaterials.length > 0}
+                                {#each neededMaterials as mat (mat.id)}
+                                    <ItemCard item={mat} amount={mat.amount} linkToRecipe={true} />
+                                {/each}
+                            {:else}
+                                <div
+                                    class="w-full text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
+                                >
+                                    {$t("systemNames.noMaterialsNeeded" || "No materials needed")}
+                                </div>
+                            {/if}
                         </div>
                     {/if}
                 </div>

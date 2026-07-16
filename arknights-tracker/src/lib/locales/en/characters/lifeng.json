@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Physical Susceptibility Duration (s)"
       },
       "name": "Turbid Avatar",
-      "description": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy instead."
+      "description": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well."
     },
     "comboSkill": {
       "comboSkill": {

@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Duración de Suscep. fís. (s)"
       },
       "name": "Avatar turbio",
-      "description": "Gira el arma de asta múltiples veces para infligir 2 golpes de <@ba.pd>DAÑ físico</>, luego golpea el suelo para infligir <@ba.pd>DAÑ físico</> y <#ba.knockdown>Derribar</> a todos los enemigos en el área de efecto. \nSi el enemigo golpeado por el último impacto de esta habilidad no tiene acumulaciones de <#ba.noguard>Vulnerabilidad</> se aplica <#ba.physicalvul>Susceptibilidad física</> al enemigo en su lugar."
+      "description": "Gira el arma de asta múltiples veces para infligir 2 golpes de <@ba.pd>DAÑ físico</>, luego golpea el suelo para infligir <@ba.pd>DAÑ físico</> y <#ba.knockdown>Derribar</> a todos los enemigos en el área de efecto. \nSi el enemigo golpeado por el último impacto de esta habilidad no tiene acumulaciones de <#ba.noguard>Vulnerabilidad</>, también aplica <#ba.physicalvul>Susceptibilidad física</> a dicho enemigo."
     },
     "comboSkill": {
       "comboSkill": {

@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "Hệ Số ST",
         "stagger": "Suy Sụp",
-        "firefangVesperwingDurationS": "Hiệu Lực Dơi Quái Lửa",
+        "firefangVesperwingsDurationS": "Hiệu Lực Dơi Quái Lửa (giây)",
         "weaknessEffect": "Hiệu Ứng Suy Yếu",
         "heatSusceptibility": "Yếu Hóa Nhiệt",
         "explosionDmgMultiplier": "Hệ Số ST Nổ"
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>.",
-        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>."
+        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</><@ba.key> bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>.",
+        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</><@ba.key> bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>."
       ],
       "name": "Thợ Săn Tội Nghiệt"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "KN chiến đấu <@ba.key>Lửa Dữ Tận Diệt</> được cường hóa: Kỹ năng áp dụng <#ba.weak>Suy Yếu</> <@ba.vup>+{0-weak_scale:0%}</> và <#ba.firevul>Yếu Hóa Nhiệt</> <@ba.vup>+{vulnerable_scale:0%}</>. Hiệu lực <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</> được <@ba.vup>+{bat_duration:0}</> giây.",
+      "description": "KN chiến đấu <@ba.key>Lửa Dữ Tận Diệt</> được cường hóa: Kỹ năng áp dụng <#ba.weak>Suy Yếu</> <@ba.vup>+{weak_scale:0%}</> và <#ba.firevul>Yếu Hóa Nhiệt</> <@ba.vup>+{vulnerable_scale:0%}</>. Hiệu lực <@ba.key>Dơi Quái Lửa</> <@ba.key> bay lơ lửng</> được <@ba.vup>+{bat_duration:0}</> giây.",
       "name": "Thương Tẩm Hỏa"
     },
     "potential2": {

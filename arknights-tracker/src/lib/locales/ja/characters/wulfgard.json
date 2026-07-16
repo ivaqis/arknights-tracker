@@ -54,7 +54,7 @@
         "ultimateEnergyGain": "必殺チャージ回復量"
       },
       "name": "フラググレネード・β",
-      "description": "敵が<#ba.spellinflict>アーツ付着</>状態になったときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。"
+      "description": "敵に<#ba.spellinflict>アーツ付着</>が付与されたときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。"
     },
     "ultimate": {
       "ultimate": {

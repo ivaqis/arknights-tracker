@@ -624,7 +624,7 @@
     "description": "Una varietà di orso dai denti a sciabola evolutasi su Talos-II. Questi peculiari orsi sono coperti da scaglie estremamente spesse e vivono in rapporto simbiotico con gli ulularocce. Gli orsi offrono protezione e forza bruta, mentre gli ulularocce contribuiscono con sensi acuti, capaci di segnalare eventuali presenze sgradite.",
     "abilities": [
       "L'ulularocce in sella all'orso dai denti a sciabola corazzato può lanciare bucce di banana. Se l'orso dai denti a sciabola corazzato calpesta le bucce di banana mentre sferra un attacco caricato, scivola e cade.",
-      "Quando si raggomitola in posizione difensiva, il suo punto debole sono le mani. Colpiscile per porre fine alla posizione difensiva e applicare Abbattimento alla bestia.",
+      "Quando si raggomitola in posizione difensiva, il suo punto debole sono le mani, l'unica parte che rimane esposta. Colpiscile per porre fine alla posizione difensiva e applicare Abbattimento alla bestia.",
       "Libera ulularocce quando viene abbattuto. Attacca gli ulularocce per infliggere ancora più danni."
     ]
   },
@@ -636,6 +636,82 @@
       "Quando è Infuriato, l'ulularupi inizia a distruggere le rovine. Sul campo di battaglia cadono rocce che infliggono danni agli operatori che colpiscono.",
       "L'ulularupi può usare le colonne nelle rovine in modo molto efficace per sferrare attacchi con un'enorme gittata.",
       "L'ulularupi finge di ritirarsi, per poi lanciare all'improvviso enormi massi contro i nemici ignari."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Ombra contaminante di bestia feroce",
+    "nickname": "Ombra contaminante di bestia feroce",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di una bestia feroce. Pur essendo solo un'\"ombra persistente\", le sue zanne affilate sono ancora capaci di lacerare armature ed equipaggiamento protettivo.",
+    "abilities": [
+      "Alcuni attacchi possono attivare l'energia dell'ombra contaminante colpita."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Ombra contaminante di bestiaspina",
+    "nickname": "Ombra contaminante di bestiaspina",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di una bestiaspina. Quest'ombra contaminante sembra esibire attacchi rotolanti e rimbalzanti molto più aggressivi della sua controparte vivente, anche se potrebbe essere solo questione di immaginazione.",
+    "abilities": [
+      "Dopo una breve carica, l'ombra contaminante di bestiaspina può evocare più fulmini e attivare l'energia dell'ombra contaminante in una vasta area. Interrompi in fretta la bestia quando inizia a caricare."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Ombra contaminante di rastrobestia",
+    "nickname": "Ombra contaminante di rastrobestia",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di una rastrobestia. La livrea ocellata sembra più fluida e mette in risalto movimenti d'attacco davvero terrificanti.",
+    "abilities": [
+      "La bestia può usare le sue corna per disperdere le scariche elettriche, attaccare a distanza e persino lanciare sfere di fulmini che esplodono dopo un breve ritardo. Rimani fuori dal raggio dell'esplosione.",
+      "Quando ha pochi PS, la bestia emette un ruggito furioso, richiama più fulmini per attaccare ed entra in uno stato di Furia. Applica Vacillante alla bestia per porre fine al suo stato di Furia. Affrontala con cautela."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Ombra contaminante di Bottoblitz",
+    "nickname": "Ombra contaminante di Bottoblitz",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di Bottoblitz. Questa creatura veniva un tempo allevata presso l'Accademia Tanjian ed era la migliore amica di Li Zhiyan. La sua ombra contaminante, però, non conserva altro che istinti aggressivi.",
+    "abilities": [
+      "L'energia dell'ombra contaminante attivata dall'ombra contaminante di Bottoblitz può scatenare fulmini.",
+      "Questo nemico evoca l'ombra contaminante di bestia feroce. Poi richiama più fulmini per colpire le bestie, trasformarle in energia dell'ombra contaminante e attivarle. Cerca di schivare questi attacchi."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Ombra contaminante di avanguardia STEY",
+    "nickname": "Ombra contaminante di avanguardia STEY",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di un'avanguardia STEY. Padroneggiare le tecniche di combattimento in mischia è soltanto il requisito più basilare per gli Yinglung.",
+    "abilities": [
+      "Scatena il qi della lama che può attivare l'energia di qualsiasi ombra contaminante colpita."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Ombra contaminante élite STEY",
+    "nickname": "Ombra contaminante élite STEY",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di un élite STEY. Uno Yinglung che padroneggia sia le Arti di Originium sia le arti della spada viene considerato come élite.",
+    "abilities": [
+      "Scatena il qi della lama che può attivare l'energia di qualsiasi ombra contaminante colpita."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Ombra contaminante Maestro di falcione STEY",
+    "nickname": "Ombra contaminante Maestro di falcione STEY",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di un Maestro di falcione STEY. Questi Yinglung sono estremamente abili nel guidare assalti e conquistare posizioni di difesa. I falcioni che brandiscono sono progettati per fendere gli Aggeloi con facilità.",
+    "abilities": [
+      "L'ombra contaminante Maestro di falcione STEY può simulare la resa prima di sferrare un attacco inaspettato. Attenzione!",
+      "Dopo la dissipazione, il nemico può sbattere le palpebre vicino a un operatore e attaccare. Cerca di schivarlo."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Ombra contaminante Capitano STEY",
+    "nickname": "Ombra contaminante Capitano STEY",
+    "description": "Manifestazione di energia dell'Æther residua che proietta la forma esteriore di un Capitano STEY. Soltanto i veterani che hanno dimostrato doti di comando, eccezionali capacità combattive e autentico valore in guerra avranno l'occasione di diventare un Capitano STEY.",
+    "abilities": [
+      "Dopo la dissipazione, il nemico può sbattere le palpebre vicino a un operatore e attaccare. Cerca di schivarlo.",
+      "L'ombra contaminante Capitano STEY può usare la sua arma per richiamare i fulmini. Un'entità energetica dell'ombra contaminante si attiva quando viene colpita da un fulmine."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarch",
+    "nickname": "Alleikhreos",
+    "description": "Creazione dei Fondatori e veterano di innumerevoli battaglie. Questo Chiliarca vagava per l'Ætherspazio finché non ha recuperato la sua spada perduta e squarciato un varco per fare ritorno.",
+    "abilities": [
+      "Quando la barra di vacillamento di Alleikhreos, Chiliarch colpisce il nodo di vacillamento, rilascia un'Arma di Foundite. Avvicinati con l'operatore controllato per raccoglierla e usarla per attaccarlo."
     ]
   }
 }

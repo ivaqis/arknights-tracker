@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "伤害倍率",
         "stagger": "失衡值",
-        "firefangVesperwingDurationS": "衔火血翼持续时间（秒）",
+        "firefangVesperwingsDurationS": "衔火血翼持续时间（秒）",
         "weaknessEffect": "虚弱效果",
         "heatSusceptibility": "灼热脆弱效果",
         "explosionDmgMultiplier": "爆裂伤害倍率"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "战技<@ba.key>驱火焚影</>施加的<#ba.weak>虚弱</>效果<@ba.vup>+{0-weak_scale:0%}</>，<#ba.firevul>灼热脆弱</>效果<@ba.vup>+{vulnerable_scale:0%}</>，<@ba.key>衔火血翼</><@ba.key>盘桓</>的持续时间<@ba.vup>+{bat_duration:0}</>秒。",
+      "description": "战技<@ba.key>驱火焚影</>施加的<#ba.weak>虚弱</>效果<@ba.vup>+{weak_scale:0%}</>，<#ba.firevul>灼热脆弱</>效果<@ba.vup>+{vulnerable_scale:0%}</>，<@ba.key>衔火血翼</><@ba.key>盘桓</>的持续时间<@ba.vup>+{bat_duration:0}</>秒。",
       "name": "烈火洗枪"
     },
     "potential2": {

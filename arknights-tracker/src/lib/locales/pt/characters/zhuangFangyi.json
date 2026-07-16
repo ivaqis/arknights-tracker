@@ -135,7 +135,7 @@
       "name": "Serenidade Absoluta"
     },
     "potential5": {
-      "description": "Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora <@ba.vup>{100*ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
+      "description": "Durante a transformação do <@ba.key>Empíreo da Verdade</>, o DNO Causado por Zhuang Fangyi ignora <@ba.vup>{-ignore_pulse_resist:0}</> da <@ba.pulse>Resistência Elétrica</> do inimigo.",
       "name": "Tempestade de Transformação"
     }
   },

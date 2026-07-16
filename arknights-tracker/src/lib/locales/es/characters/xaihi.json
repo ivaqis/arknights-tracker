@@ -64,7 +64,7 @@
         "baseCryoAmp": "Amp criogénica inicial",
         "baseNatureAmp": "Amp-Nat inicial",
         "ampIncreasePerIntellect": "Amp incrementa por Intelecto",
-        "intellectRaisesAmpLimit": "El Intelecto aumenta el límite de Amp",
+        "intellectRaisesAmpLimit": "Amp MÁX de Intelecto",
         "durationS": "Duración (s)"
       },
       "name": "Sobreacumulación",

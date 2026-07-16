@@ -347,6 +347,18 @@ export const weapons = {
       "tactic"
     ]
   },
+  "type42SolemnPhalanx": {
+    "id": "type42SolemnPhalanx",
+    "gameId": "wpn_funnel_0016",
+    "name": "Type 42: Solemn Phalanx",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_usp",
+      "burst"
+    ]
+  },
   "flickersInTheMist": {
     "id": "flickersInTheMist",
     "gameId": "wpn_funnel_0017",
@@ -356,6 +368,18 @@ export const weapons = {
     "skills": [
       "attr_will",
       "attr_pulsedam",
+      "keyword"
+    ]
+  },
+  "junctionPoint": {
+    "id": "junctionPoint",
+    "gameId": "wpn_funnel_0018",
+    "name": "Junction Point",
+    "rarity": 6,
+    "weapon": "artsUnit",
+    "skills": [
+      "attr_wisd",
+      "attr_usp",
       "keyword"
     ]
   },
@@ -488,6 +512,18 @@ export const weapons = {
       "attr_agi",
       "attr_firedam",
       "tacafter"
+    ]
+  },
+  "goldenAge": {
+    "id": "goldenAge",
+    "gameId": "wpn_lance_0016",
+    "name": "Golden Age",
+    "rarity": 6,
+    "weapon": "polearm",
+    "skills": [
+      "attr_will",
+      "attr_heal",
+      "combo"
     ]
   },
   "peco5": {
@@ -858,6 +894,18 @@ export const weapons = {
       "attr_agi",
       "attr_crirate",
       "crit"
+    ]
+  },
+  "farsight": {
+    "id": "farsight",
+    "gameId": "wpn_sword_0026",
+    "name": "Farsight",
+    "rarity": 6,
+    "weapon": "sword",
+    "skills": [
+      "attr_main",
+      "attr_physpell",
+      "force"
     ]
   }
 };

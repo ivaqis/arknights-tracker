@@ -358,7 +358,9 @@
     "special_1_3_1": "Pugni senza rimorsi",
     "weponbox_1_3_1": "Distribuzione Nodo scarlatto",
     "special_1_3_2": "Cancellare il peccato",
-    "weponbox_1_3_2": "Distribuzione Tinta cremisi"
+    "weponbox_1_3_2": "Distribuzione Tinta cremisi",
+    "special_1_4_1": "Sguardo nostalgico al Nord dall'abisso",
+    "weponbox_1_4_1": "Distribuzione grado militare"
   },
   "pages": {
     "home": "Home",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "Incisione monumentale: Canto di dolore",
     "umbralMonument": "Monumento d'ombra",
     "peacekeepersNocturneSignIn": "Accesso Notturno della diplomazia",
-    "northwardToPerilSignIn": "Accesso Verso il pericolo a nord"
+    "northwardToPerilSignIn": "Accesso Verso il pericolo a nord",
+    "echoesOfWar": "Echi di guerra",
+    "gazeTowardsTheNorthernExclusion": "Guarda verso l'Area interdetta a nord",
+    "tributeOfCompanionship": "Tributo di buona compagnia",
+    "heatRageMegaArena": "FURIA INCANDESCENTE! MEGA ARENA!",
+    "monumentalEtchingBeastlyHowl": "Incisione monumentale: Urlo bestiale",
+    "theRootedRealm": "Il Regno radicato",
+    "protocolPassBlightedSea": "Pass protocollare: mare contaminato",
+    "gazeNorthToTheRiftSignIn": "Accesso Guarda a nord verso la spaccatura"
   },
   "mouths": {
     "january": "Gennaio",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "Xiranite pesante liquida",
     "centuryRind": "Scorza secolare",
     "caudalGoldscale": "Scaglia caudale dorata",
-    "stickerSafetyHelmet": "Adesivo: casco di sicurezza"
+    "stickerSafetyHelmet": "Adesivo: casco di sicurezza",
+    "pyrrolite": "Pirrolite",
+    "pyrrolitePart": "Parte di pirrolite",
+    "cupriumCanister": "Contenitore di cuprium",
+    "shadowDew": "Rugiada d'ombra",
+    "glaiveFragment": "Frammento di falcione",
+    "blightshadeBezoar": "Bezoario di ombra contaminante",
+    "pyrroliteComponent": "Componente di pirrolite",
+    "separatorCore": "Nucleo separatore",
+    "acridgen": "Acridogeno",
+    "cupriumGas": "Gas di cuprium",
+    "hetoniteGas": "Gas di etonite",
+    "pyrroliteGas": "Gas di pirrolite",
+    "inergen": "Inergeno",
+    "aquagen": "Acquageno",
+    "xiragen": "Xirageno",
+    "heavyXiragen": "Xirageno pesante",
+    "crimsonSpearleaf": "Foglialancia cremisi",
+    "talosCap": "Cappuccetto di Talos",
+    "protocolith": "Protocolite"
   },
   "common": {
     "copy": "Copia",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcana"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -1087,7 +1117,11 @@
     "phantomPain": "Dolore fantasma",
     "amaranthineTassel": "Nappa amaranto",
     "beaconOfDuty": "Faro del dovere",
-    "blessingOfLustrousCarmine": "Benedizione del Cremisi splendente"
+    "blessingOfLustrousCarmine": "Benedizione del Cremisi splendente",
+    "type42SolemnPhalanx": "Tipo 42: Falange solenne",
+    "junctionPoint": "Punto di congiunzione",
+    "goldenAge": "Epoca d'oro",
+    "farsight": "Lungimiranza"
   },
   "cookies": {
     "title": "Utilizziamo i cookie",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "Sedimento energetico ostico: Valletta di Voltaspada",
     "world_energy_point09_5": "Sedimento energetico ostico: Valletta di Voltaspada",
     "world_energy_point09_6": "Sedimento energetico ostico: Valletta di Voltaspada",
-    "world_energy_point09_7": "Sedimento energetico ostico: Valletta di Voltaspada"
+    "world_energy_point09_7": "Sedimento energetico ostico: Valletta di Voltaspada",
+    "world_energy_point10_1": "Sedimento energetico: Valico di Yinglung",
+    "world_energy_point10_2": "Sedimento energetico: Valico di Yinglung",
+    "world_energy_point10_3": "Sedimento energetico: Valico di Yinglung",
+    "world_energy_point10_4": "Sedimento energetico ostico: Valico di Yinglung",
+    "world_energy_point10_5": "Sedimento energetico ostico: Valico di Yinglung",
+    "world_energy_point10_6": "Sedimento energetico ostico: Valico di Yinglung",
+    "world_energy_point10_7": "Sedimento energetico ostico: Valico di Yinglung",
+    "world_energy_point11_1": "Sedimento energetico: Area interdetta di Wuling Nord",
+    "world_energy_point11_2": "Sedimento energetico: Area interdetta di Wuling Nord",
+    "world_energy_point11_3": "Sedimento energetico: Area interdetta di Wuling Nord",
+    "world_energy_point11_4": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
+    "world_energy_point11_5": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
+    "world_energy_point11_6": "Sedimento energetico ostico: Area interdetta di Wuling Nord",
+    "world_energy_point11_7": "Sedimento energetico ostico: Area interdetta di Wuling Nord"
   },
   "enemies": {
     "eny_0007_mimicw": "Drago delle sabbie",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "Batticielo",
     "eny_0112_jzmonk": "Ulularocce",
     "eny_0113_jzogre": "Orso dai denti a sciabola corazzato",
-    "eny_0114_jzmking": "Ulularupi"
+    "eny_0114_jzmking": "Ulularupi",
+    "eny_0117_klhound": "Ombra contaminante di bestia feroce",
+    "eny_0118_klhog": "Ombra contaminante di bestiaspina",
+    "eny_0119_kltiger": "Ombra contaminante di rastrobestia",
+    "eny_0120_klbear": "Ombra contaminante di Bottoblitz",
+    "eny_0121_klbud": "Ombra contaminante di avanguardia STEY",
+    "eny_0122_kltdbud": "Ombra contaminante élite STEY",
+    "eny_0123_klcap": "Ombra contaminante Maestro di falcione STEY",
+    "eny_0124_kltdcap": "Ombra contaminante Capitano STEY",
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
   },
   "essencesPage": {
     "optimizer": "Ottimizzatore farming",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Pugnale a scatto dal bordo grigio O1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Coprimani dal bordo grigio",
     "item_equip_t4_suit_crush_fracture_hand_02": "Coprimani dal bordo grigio O1",
-    "item_equip_t4_suit_phy01_body_04": "Armatura in fibra da spadamante"
+    "item_equip_t4_suit_phy01_body_04": "Armatura in fibra da spadamante",
+    "item_equip_t4_parts_wuling00_body_01": "Armatura per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_body_02": "Placca per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_body_03": "Gilet per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_01": "Machete per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_02": "Brace per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_edc_03": "Torcia per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_01": "Guanti per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_02": "Mani per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling00_hand_03": "Fasce per lavoro sul campo del SIA",
+    "item_equip_t4_parts_wuling02_body_01": "Armatura pesante per l'esplorazione della spaccatura",
+    "item_equip_t4_parts_wuling02_body_02": "Armatura leggera per l'esplorazione della spaccatura",
+    "item_equip_t4_parts_wuling02_edc_01": "Lastra per armatura per l'esplorazione della spaccatura",
+    "item_equip_t4_parts_wuling02_hand_01": "Guanti per l'esplorazione della spaccatura",
+    "item_equip_t4_parts_wuling02_hand_02": "Mani per l'esplorazione della spaccatura",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Placca anti-calore",
+    "item_equip_t4_suit_fire_natr01_hand_04": "DPI anti-calore per le mani",
+    "item_equip_t4_suit_heal01_body_03": "Corazza LYNX O1",
+    "item_equip_t4_suit_heal01_hand_03": "Coprimani LYNX O1",
+    "item_equip_t4_suit_usp02_body_03": "Armatura di xiranite eterna leggera",
+    "item_equip_t4_suit_usp02_body_04": "Armatura di xiranite eterna leggera O1",
+    "item_equip_t4_suit_usp02_edc_04": "Placca di sostegno di xiranite eterna",
+    "item_equip_t4_suit_usp02_hand_03": "Fasce di xiranite eterna",
+    "item_equip_t4_suit_usp02_hand_04": "Mani di xiranite eterna"
   },
   "packs": {
     "none": "Senza set",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "Leggera SIA",
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
-    "suit_crush_fracture": "Bordo grigio"
+    "suit_crush_fracture": "Bordo grigio",
+    "suit_generaltype": "Lavoro sul campo del SIA"
   },
   "equipmentTypes": {
     "body": "Armatura",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "Riduzione del danno finale",
     "Sub": "Attributo secondario",
     "AllSkillDamageIncrease": "Bonus ai danni da abilità inflitti",
-    "FireAndNaturalDamageIncrease": "Bonus ai danni da fuoco e da natura inflitti"
+    "FireAndNaturalDamageIncrease": "Bonus ai danni da fuoco e da natura inflitti",
+    "PhysicalResistance": "Resistenza fisica",
+    "NatureResistance": "Resistenza alla natura",
+    "CryoResistance": "Resistenza al ghiaccio",
+    "ElectricResistance": "Resistenza all'elettricità",
+    "HeatResistance": "Resistenza al fuoco",
+    "TherResistance": "Resistenza all'Æther"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Fenditerra",
     "wiki_group_monster_hongshan": "Pirati di Cangzei",
-    "wiki_group_monster_animal": "Fauna"
+    "wiki_group_monster_animal": "Fauna",
+    "wiki_group_monster_kl": "Ombre contaminanti",
+    "wiki_group_monster_js": "Foundite"
   },
   "resitances": {
     "heatRez": "Resistenza al fuoco",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "\"Costrutto inorganico\"",
     "turbidityManifest": "\"Manifesto di torbidità\"",
     "thoseForsakenByTheLand": "\"Rinnegati da Terra\""
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Tecnica di xiranite",
+    "cupriumTechnique": "Tecnica di cuprium",
+    "hetoniteTechnique": "Tecnica di etonite",
+    "pyrroliteTechnique": "Tecnica di pirrolite"
   }
 }

@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "ダメージ倍率",
         "stagger": "ブレイク値",
-        "firefangVesperwingDurationS": "燃える血の翼持続時間（秒）",
+        "firefangVesperwingsDurationS": "燃える血の翼持続時間（秒）",
         "weaknessEffect": "弱体化効果",
         "heatSusceptibility": "灼熱脆弱効果",
         "explosionDmgMultiplier": "爆発ダメージ倍率"
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "連携技<@ba.key>「心抉る棘」</>強化：<@ba.key>燃える血の翼</>で<@ba.key>包囲</>している敵に命中するとき、自身の<@ba.heal>[{heal_base:0}+知性×{heal_sub_multi:0.##}]</>のHPを回復し、さらに{combo_duration}秒間持続する<#ba.combo>リンク</>状態を獲得する\n<@ba.key>追及</>を発動するとき、目標が<@ba.key>包囲</>されていなくてもこの効果を発動できる",
-        "連携技<@ba.key>「心抉る棘」</>強化：<@ba.key>燃える血の翼</>で<@ba.key>包囲</>している敵に命中するとき、自身の<@ba.heal>[{heal_base:0}+知性×{heal_sub_multi:0.##}]</>のHPを回復し、さらに{combo_duration}秒間持続する<#ba.combo>リンク</>状態を獲得する\n<@ba.key>追及</>を発動するとき、目標が<@ba.key>包囲</>されていなくてもこの効果を発動できる"
+        "連携技<@ba.key>「心抉る棘」</>強化：<@ba.key>燃える血の翼</>に<@ba.key>包囲</>されている敵に命中するとき、自身の<@ba.heal>[{heal_base:0}+知性×{heal_sub_multi:0.##}]</>のHPを回復し、さらに{combo_duration}秒間持続する<#ba.combo>リンク</>状態を獲得する\n<@ba.key>追及</>を発動するとき、目標が<@ba.key>包囲</>されていなくてもこの効果を発動できる",
+        "連携技<@ba.key>「心抉る棘」</>強化：<@ba.key>燃える血の翼</>に<@ba.key>包囲</>されている敵に命中するとき、自身の<@ba.heal>[{heal_base:0}+知性×{heal_sub_multi:0.##}]</>のHPを回復し、さらに{combo_duration}秒間持続する<#ba.combo>リンク</>状態を獲得する\n<@ba.key>追及</>を発動するとき、目標が<@ba.key>包囲</>されていなくてもこの効果を発動できる"
       ],
       "name": "罪追人"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "戦技<@ba.key>「影祓う」</>で付与する<#ba.weak>弱体化</>効果<@ba.vup>+{0-weak_scale:0%}</>、<#ba.firevul>灼熱脆弱</>効果<@ba.vup>+{vulnerable_scale:0%}</>、<@ba.key>燃える血の翼</>の<@ba.key>包囲</>持続時間<@ba.vup>+{bat_duration:0}</>秒",
+      "description": "戦技<@ba.key>「影祓う」</>で付与する<#ba.weak>弱体化</>効果<@ba.vup>+{weak_scale:0%}</>、<#ba.firevul>灼熱脆弱</>効果<@ba.vup>+{vulnerable_scale:0%}</>、<@ba.key>燃える血の翼</>の<@ba.key>包囲</>持続時間<@ba.vup>+{bat_duration:0}</>秒",
       "name": "烈火炎槍"
     },
     "potential2": {

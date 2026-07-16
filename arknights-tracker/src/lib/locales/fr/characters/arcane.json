@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Altération naturelle",
+      "Corrosion",
+      "Contrôle de foule"
+    ],
+    "behaviourHateTags": [
+      "Mode"
+    ],
+    "behaviourUnavailableTags": [
+      "Extraverti (SYSTÈME UNIQUEMENT, non visible dans le jeu)"
+    ],
+    "blocTag": "Académie des sciences de Hongshan (ASH)",
+    "expertTags": [
+      "Techniques de combat",
+      "Constitution"
+    ],
+    "giftPreferTags": [
+      "Sélection des explorateurs de Wuling"
+    ],
+    "hobbyTags": [
+      "Nature",
+      "Charité"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
+      },
+      "name": "Interdiction de l'artillerie",
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Multiplicateur de DÉG",
+        "stagger": "Déséquilibre"
+      },
+      "name": "Grille de broyage de jade",
+      "description": "Crée une <@ba.key>grille de broyage de jade</> qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis situés dans la zone d'effet."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Multiplicateur de DÉG de base",
+        "baseStagger": "Déséquilibre de base",
+        "imprisonmentAndSusceptibilityDurationS": "Durée de sensibilité et d'Emprisonnement (s)",
+        "susceptibility": "Sensibilité",
+        "baseSusceptibility": "Sensibilité de base",
+        "maxBonusSusceptibilityFromWill": "Bonus max. de sensibilité par Volonté",
+        "willRequiredForMaxBonusSusceptibility": "Volonté requise pour le bonus max. de sensibilité",
+        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+        "explosionStagger": "Déséquilibre par explosion",
+        "bonusDmgMultiplier": "Multiplicateur de DÉG bonus",
+        "bonusSusceptibilityDurationS": "Durée du bonus de sensibilité (s)",
+        "spReturn": "Restitution de PC",
+        "ultimateEnergyGain": "Gain d'énergie d'ultime"
+      },
+      "name": "Posture de Yinglung IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Multiplicateur de DÉG de création de Matrice purificatrice",
+        "gloompurgerArrayCreationStagger": "Déséquilibre de création de Matrice purificatrice",
+        "gloompurgerArrayDurationS": "Durée de Matrice purificatrice (s)",
+        "forcedCorrosionDurationS": "Durée de Corrosion forcée (s)",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicateur de DÉG totaux de Frappe d'amas",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicateur de DÉG d'Arcane purificateur",
+        "gloompurgeArcanaStagger": "Déséquilibre d'Arcane purificateur"
+      },
+      "name": "Purification",
+      "description": "Arcane crée une <@ba.key>Matrice purificatrice</> qui inflige immédiatement des <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet.\nLorsque l'opérateur contrôlé inflige un coup fatal ou un <#ba.lastcombo>Coup final</> à un ennemi situé dans la <@ba.key>Matrice purificatrice</>, celle-ci déclenche une <@ba.key>Frappe d'amas</> qui inflige des DÉG de zone à cet ennemi. Cet effet peut se déclencher 2 fois.\nAprès avoir déclenché la <@ba.key>Frappe d'amas</> 2 fois, l'ultime évolue en <@ba.key>Arcane purificateur</>.\n<@ba.key>Arcane purificateur</> : inflige des <@ba.natur>DÉG naturels</> aux ennemis dans une large zone d'effet."
+    },
+    "indicator": {
+      "levels": [
+        "Intelligence et Volonté de l'opérateur +8.",
+        "Intelligence et Volonté de l'opérateur +10.",
+        "Intelligence et Volonté de l'opérateur +10.",
+        "Intelligence et Volonté de l'opérateur +15."
+      ],
+      "name": "Esprit vif/Pilier"
+    },
+    "talent1": {
+      "levels": [
+        "Lorsque l'Intelligence d'Arcane est supérieure ou égale à sa Volonté, elle passe au type de compétence <@ba.key>Arcane de matrice : INT</>. Sinon, elle passe au type <@ba.key>Arcane de matrice : VOL</>.\n<@ba.info>Les critères de trait des deux types d'Arcane de matrice ne tiennent compte que des effets de niveau, de talents et de potentiel des opérateurs, ainsi que des bonus de trait conférés par leur équipement et leurs armes.</>",
+        "Lorsque l'Intelligence d'Arcane est supérieure ou égale à sa Volonté, elle passe au type de compétence <@ba.key>Arcane de matrice : INT</>. Sinon, elle passe au type <@ba.key>Arcane de matrice : VOL</>.\nSon ultime <@ba.key>Purification</> est amélioré :\n<@ba.key>Arcane de matrice : INT</> :\n- Pendant son ultime, Arcane gagne <@ba.vup>{enhance_rate:0%}</> d'<#ba.spellenhance>amplification des Arts</>.\n<@ba.key>Arcane de matrice : VOL</> :\n- Lorsque <@ba.key>Matrice purificatrice</> (séquence 1 d'ultime) et <@ba.key>Arcane purificateur</> (séquence 2 d'ultime) infligent des DÉG à l'ennemi, ils appliquent également <@ba.vup>[VOL × {spell_vul_rate_per_will:0.00%}]</> de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> (max : <@ba.vup>{spell_vul_rate:0.0%}</>) pendant <@ba.vup>{duration:0}</> s. L'effet ne peut pas être cumulé.\n<@ba.info>Les critères de trait des deux types d'Arcane de matrice ne tiennent compte que des effets de niveau, de talents et de potentiel des opérateurs, ainsi que des bonus de trait conférés par leur équipement et leurs armes.</>"
+      ],
+      "name": "Planification tactique"
+    },
+    "talent2": {
+      "levels": [
+        "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{1+corrupt_rate:0.00}</> fois sa valeur d'origine.",
+        "La <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{1+corrupt_rate:0.0}</> fois sa valeur d'origine."
+      ],
+      "name": "Armes affûtées"
+    },
+    "baseSkill1": {
+      "levels": [
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 20 %.",
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des minerais rares de 30 %."
+      ],
+      "name": "Gratter la montagne, faire bouillir la mer"
+    },
+    "baseSkill2": {
+      "levels": [
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 20 %.",
+        "En l'affectant à la chambre de culture, augmente le taux de croissance des plantes vitrifiées de 30 %."
+      ],
+      "name": "Botanophilie"
+    },
+    "files": {
+      "main": "NOM DE CODE : Arcane \nSEXE : Féminin \nAUTHENTIFICATION : Forces spéciales de Yinglung \nDATE DE NAISSANCE : 7 juillet \nRACE : Liberi \n[STATUT D'INFECTION À L'ORIPATHIE] \nNégative, d'après les rapports médicaux. \n\n[EXAMEN PHYSIQUE INTÉGRÉ] \nVIGUEUR PHYSIOLOGIQUE : Standard \nCAPACITÉS AU COMBAT : Excellentes \nSENS TACTIQUE : Exceptionnel \nASSIMILATION DES ARTS DE L'ORIGINIUM : Excellente",
+      "humanResources": "L'opératrice Arcane (de son vrai nom Li Zhiyan) est capitaine des Forces spéciales de Yinglung (FSY), qui relèvent de l'Académie des sciences de Hongshan. Blessée lors d'une opération dans la zone d'exclusion (ZE) du nord de Wuling, elle a obtenu un congé de longue durée. Les FSY l'ont exceptionnellement autorisée à nouer un partenariat avec les Industries Endfield. \n\nD'après ses propres dires, l'opératrice Arcane n'avait encore jamais pris tant de jours de repos. Nos opérateurs médicaux lui ont trouvé plusieurs dizaines de lésions internes. Si ses missions en première ligne, dans un milieu à risque rongé par la Gangrène, n'ont en rien entamé sa détermination, elle en paie tout de même le prix sous forme de douleurs chroniques et éprouvantes. Nos entretiens avec des membres de l'ASH nous ont appris que l'Académie espère qu'Arcane profitera de sa convalescence pour bien se rétablir, « histoire de compenser tous les congés dont elle se prive depuis de longues années ».\n— Martin Marvin Malen, assistant, division des RH, Industries Endfield",
+      "file1": "Chen et la capitaine ? Je ne sais pas trop. Il paraît qu'elles étaient bonnes amies. D'ailleurs, elles ont même fait équipe lors des épreuves de sélection. Elles se démarquaient nettement des autres réservistes. Tout le monde pensait qu'elles formeraient un duo prometteur, une fois qu'elles seraient postées au col de Yinglung. Mais, après ça... elles ont passé leur temps à se crêper le chignon. Et, quand ce n'était pas le cas, elles préparaient déjà leur prochaine prise de bec. Vous connaissez la capitaine. Elle ne cède jamais d'un pouce. Elle et Chen ont été affectées à deux groupes différents, et seule la capitaine a rejoint les Yinglungs... Quoi ? « Et si Chen intégrait leurs rangs... ? » Je... Je n'ose même pas l'imaginer. La capitaine ne changera jamais. Si Chen venait à faire partie de l'équipe... l'une d'elles serait réaffectée pour sûr. En toute objectivité, je pense que l'instructeur Zhu et la capitaine ont pris la bonne décision. Elles y gagnent toutes les deux. \n– Zénith, soldat des Forces spéciales de Yinglung \n\nCe ne sont pas les FSY qui ont appris à la capitaine à manier la lourde unité des Arts qui lui sert de canon. Je lui ai posé la question, une fois, et elle m'a dit qu'elle le tenait de son père. À une époque, elle n'arrivait pas à progresser, malgré tous ses efforts, alors elle changeait tout le temps d'arme. La lance, l'épée, la hallebarde, la hache, la doloire, le grappin, le trident... Elle a tout essayé et elle s'en sortait bien. Elle maîtrisait toutes sortes de techniques de combat, mais ça ne lui suffisait pas. Elle pensait toujours ne pas être assez douée, alors elle redoublait d'efforts... On s'attendait tous à ce qu'elle s'effondre d'épuisement. Et puis, un jour, elle est tombée sur le canon de son père, entreposé dehors. Jusque-là, elle n'avait jamais pris un seul jour de repos. Personne ne sait où elle a disparu pendant un ou deux jours, mais, à son retour, elle avait décidé d'utiliser cette arme. C'est comme ça qu'elle est devenue l'Arcane que nous connaissons tous. Aucun Yinglung ne lui arrive à la cheville, à Wuling. \n– Phrase, soldate des Forces spéciales de Yinglung \n\nARRÊTEZ DE CROIRE TOUT CE QUE LES GENS RACONTENT ! Argh. Pendant les épreuves de sélection, elle était... bah, disons... un peu meilleure que moi. Mais je me suis vachement améliorée depuis ! Si on s'affrontait maintenant, je lui laisserais trois coups d'avance ! Enfin... non, deux. Ne vous en faites pas. Ce serait juste un duel amical. Dans mes souvenirs, Arcane a toujours été du genre à froncer les sourcils d'un air grincheux, comme si elle portait le poids du monde sur ses épaules. Mais, depuis qu'elle a atteint son but dans la ZE du nord de Wuling, elle a un peu changé. Ah, oui ! Ça me rappelle comment elle était quand on s'est rencontrées. Je voulais qu'elle me parle de ce qui s'est passé dans la ZE, mais elle refuse de me dire quoi que ce soit. Je ne peux tout de même pas embêter l'Endmin avec toutes mes questions... Hmm... Quoique... \n– Chen Qianyu, ancienne réserviste des Forces spéciales de Yinglung \n\nLi Zhiyan ? Vous voulez parler de la petite Yinglung ? Non. Je n'ai rien de spécial à dire. Chaque fois que je la vois, elle a le visage grave, un petit air hautain, et ses interlocuteurs ne savent plus où se mettre. Elle n'arrêtait pas de japper « Madame la Mandataire ! Madame la Mandataire ! », et j'ai dû la reprendre je ne sais combien de fois avant qu'elle change de disque. Les mortels ne vivent pas bien longtemps, mais elle a la chance d'avoir des pouvoirs redoutables. Pourtant, regardez ce qu'elle en fait : elle vit la vie la plus barbante possible et s'impose tout un tas de règles de sa propre invention. Enfin, ces derniers temps, il y a un léger mieux. Ses traits se sont un peu adoucis. C'est très intéressant à voir, en tout cas. Cette petite sotte a dû faire quelque chose. Hmpf. Cette pauvre idiote est allée je ne sais où et en est revenue dans un piteux état. Cette fois, elle ne m'échappera pas. \n– Si",
+      "file2": "« Elle peut sembler froide et insensible, mais les Yinglungs sont bien obligés de l'être. » Tel est le simple constat que font généralement les gens qui observent Li Zhiyan. \nLes choix et les actions de Li tendent vers un seul but : mener la mission à bien. Les soldats des Forces spéciales de Yinglung (FSY) combattent toujours en conditions extrêmes. Leur sang-froid et leur détermination sans faille les aident à assurer le succès de leurs missions. Si « en sortir vivant » ne figure pas parmi les objectifs fixés, les Yinglungs savent tous ce que cela implique. \nLes FSY ont accès à une chambre secrète, placée sous bonne garde. Elles ne s'en servent pas pour archiver des documents ou des dossiers de renseignement, mais pour y entreposer les « effets personnels » de chacun de leurs membres. Les nouvelles recrues se voient remettre une boîte dans laquelle elles peuvent ranger tout ce qu'elles veulent. Si leur mission venait à leur coûter la vie, son contenu resterait l'unique preuve de leur existence. \nLa boîte de Li Zhiyan est longtemps restée vide. \nElle avait déclaré au gardien de la salle qu'elle n'avait rien à y mettre. Que tout ce qu'elle possédait autrefois était désormais enseveli sous les miasmes sombres, froids et toxiques de la zone d'exclusion du nord de Wuling. \nLe gardien n'avait eu d'autre choix que de répondre que telle était pourtant la règle. Li y a donc réfléchi. Quel objet la représenterait le mieux ? Si elle venait à perdre son titre de capitaine des FSY, que lui resterait-il à placer dans cette boîte ? Elle s'est interrogée sur son identité. \nLa question ne l'a pas ennuyée bien longtemps. Elle a eu tôt fait de trouver un vieil artiste, sur la place du marché, et lui a demandé de calligraphier son nom. Et c'est cela même qu'elle a mis dans sa boîte. \nPour elle, cette question n'avait guère d'importance. Rien ne comptait plus que sa prochaine mission. \n...... \nJusque récemment, Li se rendait rarement dans la chambre secrète. Au fil de ses visites, sa boîte, autrefois vide, s'est peu à peu remplie. Un stylo. Un bouton. Une dague... Chacun de ces nouveaux objets semblait banal et insignifiant, comme si elle se contentait de prendre ce qu'elle avait sous la main. Quelques-uns étaient visiblement des cadeaux de ses voisins ; d'autres, des souvenirs que les gens voulaient lui faire transmettre... mais Li les traitait tous comme des trésors et les rangeait soigneusement dans sa boîte. \nLorsque l'Endministrator l'a interrogée à ce sujet, par simple curiosité, Li ne lui a pas répondu par un silence glacial, comme elle avait tendance à le faire jusque-là. Elle lui a au contraire donné une réponse solennelle. \n« Avec le recul, je me suis rendu compte que j'étais passée à côté de tout un tas de choses que j'aurais dû chérir. »",
+      "file3": "Mon style de combat ? Il s'inspire des formations que mon père m'a apprises, associées aux tactiques des Yinglungs. \nD'après mon père, ces formations reposent sur le principe du « changement ». Elles donnent une impulsion aux personnes qui s'en servent et évoluent avec elles. Elles ne doivent jamais être immuables ou permanentes. Ces formations ne sont complètes que lorsque l'utilisateur en fait pleinement partie. \nQuand j'étais enfant, mon père m'emmenait un peu partout. Parfois, on descendait la rivière sur des rondins de bois. Parfois, on grimpait à la cime de grands arbres. Et, quand la fatigue se faisait sentir, on s'allongeait dans l'herbe pour contempler les étoiles... Mon père m'a appris à les situer et à reconnaître les constellations. J'ai découvert plus tard que ce n'était pas juste pour me « divertir ». Il usait de méthodes subtiles, mais captivantes pour me transmettre ce qu'il savait des formations et des fluctuations de toutes sortes de choses. \nLes Yinglungs, en revanche, m'ont appris la « constance » ; à rester inflexible au cœur de la tempête. Leurs tactiques consistent principalement à monter en puissance afin de générer une force implacable. Leurs stratégies s'adaptent à différentes menaces. Qu'ils utilisent la spadamancie, l'art de la lance ou leurs formations, peu importe. Chaque Yinglung reste à son poste et guette le moment opportun pour porter une attaque décisive et annihiler l'ennemi. \nJe me suis efforcée d'intégrer les tactiques des Yinglungs aux formations qu'utilisait mon père. Les premières se focalisent sur le travail d'équipe, le champ de bataille dans son ensemble et la complémentarité des techniques de chacun, à l'image de mon triple canon, qui fonctionne comme une seule unité. Les formations de mon père se concentrent sur la flexibilité et le changement. Combiner ces deux approches n'a pas été facile. J'ai dû y réfléchir pendant un certain temps... \nC'est à ce moment-là que je suis retournée là où mon père et moi nous amusions souvent. J'ai observé les feuilles traverser les rapides ; les aviliaires se percher au bout de branches secouées par le vent ; les constellations poursuivre implacablement leur course tout en gardant leur forme... Puis j'ai soudain compris ce que voulait dire mon père. « Je suis le chaînon manquant. Je dois faire partie de cette formation. Devenir l'une de ses unités. » \n« Je suis le nœud et le pivot autour duquel elle peut évoluer, l'élément variable qui manque à ces tactiques. » Forte de cet enseignement, je me suis intégrée à la formation. J'ai usé de mon rouleau de jade pour positionner le triple canon et ajuster sa puissance de feu jusqu'à ce qu'il devienne en quelque sorte le prolongement de mes membres. Ce n'est qu'alors que je suis parvenue à maîtriser cette arme. \nMes Arts de l'originium consistent davantage à faire « circuler » l'énergie pour créer un équilibre entre « changement » et « constance ». D'une certaine manière, ils s'apparentent à ceux de l'opératrice Gilberta. Elle m'a d'ailleurs donné quelques astuces. J'ai également demandé conseil à l'opératrice Arclight, qui manipule les courants électriques avec une élégance et une maîtrise remarquables. Sa réponse tenait en une seule phrase : « Suis ton instinct. » Il est indéniable que le Dijiang rassemble des individus extrêmement talentueux et offre de nombreuses occasions de se perfectionner. Je pense notamment à l'opératrice Last Rite, dont la force est extraordinaire, ou encore à l'opérateur Pogranichnik, dont les connaissances en matière de formations militaires sont sans commune mesure... J'espère que mon séjour à bord me permettra de m'améliorer et d'étudier les points forts de chacun... \nJ'ai d'ailleurs l'intention de compiler ces leçons dans un livre auquel les Yinglungs soucieux de maîtriser les formations et les canons d'épaule pourront se référer. J'espère que ça leur sera utile.",
+      "file4": "[AVIS DE RÉCEPTION] \nDESTINATAIRE : Li Zhiyan \nEXPÉDITEUR : Ling Yue \nADRESSE DE L'EXPÉDITEUR : Wuling \nÉTAT : remis contre signature \nINSPECTION : R.A.S. \nMESSAGE VOCAL : \nZhiyan ! C'est moi ! Tante Liu ! Il paraît que tu es partie te reposer chez Endfield. Tu aurais quand même pu me prévenir avant, ma grande. Tout le quartier s'est fait un sang d'encre pour toi ! J'ai demandé à la jeune fille du Jardin de la sérénité de te faire parvenir tes douceurs préférées ! Quelques paquets de gâteaux à l'osmanthe et du riz au cohl sucré. Je l'ai préparé il y a deux ou trois jours pour l'anniversaire de la petite, donc il tournera vite. Finis-le en premier, d'accord ? \nTante Shen se soucie beaucoup de toi, elle aussi. Elle a glissé dans le colis quelques vêtements qu'elle a cousus elle-même. Depuis qu'elle a appris que tu séjournes à bord d'un vaisseau spatial, elle n'arrête pas de dire que tu dois avoir froid. Si tu te demandais d'où venaient ces habits, tu as donc ta réponse. \nMa grande, je ne sais pas trop quand tu seras de retour. Tu es tellement têtue. Tu étais toujours là à t'asseoir dans un coin et à rester tranquille. Tu ne jouais presque jamais avec les autres filles de ton âge. Au lieu de ça, tu insistais pour aider toutes les dames du quartier. Ce n'est pas bon du tout ! Tu es une jeune fille adorable, mais nous ne rajeunissons pas et nous ne sommes pas éternelles. Écoute un peu ta tante et fais-toi des amis à Endfield. J'ai croisé leur Endmin, ainsi que la jeune fille du nom de Perlica. Ces gens m'ont l'air très sympathiques ! Si tu ne sais pas trop comment briser la glace avec les Endfielders, apporte-leur les gâteaux de riz et le riz au cohl sucré que je t'ai fait livrer. Propose-leur de goûter aux délices de ta tante ! Au bout de quelque temps, vous deviendrez amis ! \nJe t'ai regardée grandir. Tu n'as jamais été loquace, mais je sais combien tu es attentive. J'ai pris note de toutes les fois où tu nous as aidées. Tu te souviens, quand tu as rapporté une photo de la fille de tante Shen ? Elle a pleuré toute la journée, après. Pauvre petite... Elle avait pratiquement ton âge quand elle nous a quittés. C'est pour ça que tante Shen t'a élevée comme sa fille. Et c'est pareil pour nous... Tu es une enfant de Wuling. Tu seras toujours la bienvenue ici, peu importe où tes pas te mènent. \nAïe, aïe, aïe... Ce message est de plus en plus triste. Je ne suis pas très douée avec les mots. Je ferais peut-être mieux de m'arrêter là. Concentre-toi sur ton rétablissement et tâche de nous revenir vite. Dès que tu seras rentrée, je te préparerai un vrai petit festin ! N'oublie pas mes conseils ! Et dis à tes nouveaux amis de venir avec toi ! \n...... \nAttends. Roooh... Tante Shen avait quelque chose à te dire, mais elle vient encore d'éclater en sanglots. Je vais laisser Ling Yue t'expédier le colis, et je dirai à Shen d'enregistrer un autre message plus tard. J'espère qu'on ne te dérange pas trop ! Hé ! Arrêtez de me bousculer ! J'ai presque fini, d'accord ? Attendez. Comment ça, la batterie est faible... \n\n[AVIS DE LIVRAISON] \nEXPÉDITEUR : Li Zhiyan \nDESTINATAIRE : Ling Yue \nADRESSE DU DESTINATAIRE : VMO Dijiang \nÉTAT DE LA LIVRAISON : livré \nINSPECTION : R.A.S. \nLISTE D'OBJET(S) : \n5 châles de Simonch \n5 pots de souffle de Kjersch \n3 pièces de puzzle du Portail cosmique \n10 bouteilles de citromix [Rf.] \nMESSAGE VOCAL \nLing Yue, c'est moi... Li Zhiyan. J'ai reçu le colis des vieilles dames du quartier. Dis-leur que ce n'est pas la peine d'en envoyer un autre... J'ai tout ce qu'il me faut sur le Dijiang, et il me reste encore pas mal de choses, malgré tout ce que j'ai donné à l'Endmin et aux autres... \nJe crois que nos tantes ont bien aimé les châles que j'ai envoyés l'autre jour. Le service logistique m'en a procuré d'autres, alors dis-leur de se les partager. J'ai aussi mis des mélanges aromatisés aux fruits qu'on ne trouve pas à Wuling, et des jouets pour les enfants. \nNe t'inquiète pas de ce que ça m'a coûté. Je ne dépense pratiquement rien ici. \nEt dis à tante Shen que c'est l'Endmin qui m'a donné tout ça. Je ne veux pas qu'elle se fasse trop de souci."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Amélioration de la compétence de combo <@ba.key>Posture de Yinglung IV</> : \nLe multiplicateur de DÉG passe à <@ba.vup>{atk_scale_touch:0.0}</> fois sa valeur d'origine.\n<@ba.key>Arcane de matrice : INT</> : toucher un ennemi victime d'<@ba.key>Emprisonnement</> avec la compétence de combat d'Arcane <#ba.return>restitue</> <@ba.vup>{atb_return_wisd:0}</> PC supplémentaires.\n<@ba.key>Arcane de matrice : VOL</> : effets de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> appliqués <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Observatrice de la mer"
+    },
+    "potential2": {
+      "description": "Intelligence et Volonté <@ba.vup>+{Will:0}</>, intensité des Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Cœur de ferrium glacé"
+    },
+    "potential3": {
+      "description": "Amélioration du talent <@ba.key>Armes affûtées</> :\nLa <#ba.corrupt>Corrosion</> appliquée par Arcane dure <@ba.vup>{duration_add:0}</> s de plus et fait passer la réduction de résistance max. à <@ba.vup>{corrupt_rate:0%}</> fois sa valeur d'origine.",
+      "name": "Manieuse de pierres"
+    },
+    "potential4": {
+      "description": "Amélioration de l'ultime <@ba.key>Purification</> : coût en énergie d'ultime <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Esprit affûté"
+    },
+    "potential5": {
+      "description": "Amélioration de l'ultime <@ba.key>Purification</> :\n<@ba.key>Arcane de matrice : INT</> : pendant son ultime, Arcane gagne <@ba.vup>{enhance_rate:0%}</> d'<#ba.spellenhance>amplification des Arts</>. Le multiplicateur de DÉG d'<@ba.key>Arcane purificateur</> (séquence 2 d'ultime) passe à <@ba.vup>{atk_scale:0.0}</> fois sa valeur d'origine.\n<@ba.key>Arcane de matrice : VOL</> : augmente encore les effets de <#ba.naturalvul>sensibilité naturelle</> et de <#ba.crystvul>sensibilité cryogénique</> appliqués par <@ba.key>Matrice purificatrice</> (séquence 1 d'ultime) et <@ba.key>Arcane purificateur</> (séquence 2 d'ultime) de <@ba.vup>{spell_vul_rate_potential:0%}</>. Après avoir lancé <@ba.key>Arcane purificateur</> (séquence 2 d'ultime), si la compétence de combo <@ba.key>Posture de Yinglung IV</> est en cours de recharge, raccourcit le temps de recharge de <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Introspection"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Question au papillon",
+      "author": "栗樺茶",
+      "description": "Les souvenirs du passé se brisent comme un rien ; les instants d'autrefois se dissipent comme le vent."
+    },
+    "potential3": {
+      "name": "Branche du foyer",
+      "author": "狂zip",
+      "description": "L'aviliaire avait beau chercher, il ne trouvait pas le repos, aucune branche lui rappelant sa maison où se poser et reprendre son souffle."
+    },
+    "potential5": {
+      "name": "Lame incarnée",
+      "author": "Eteru",
+      "description": "Le corps se transforme en lame, la pensée se condense dans l'arcane."
+    }
+  }
+}

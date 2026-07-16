@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Quand elle lance la compétence de combat <@ba.key>Marche en avant</> et la compétence de combo <@ba.key>Soutien du front</>, Ember bénéficie de <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Protection</> et a moins de chances d'être interrompue.",
-        "Quand elle lance la compétence de combat <@ba.key>Marche en avant</> et la compétence de combo <@ba.key>Soutien du front</>, Ember bénéficie de <@ba.vup>{1-shelterrate:0%}</> de <#ba.guard>Protection</> et a moins de chances d'être interrompue."
+        "Quand elle lance la compétence de combat <@ba.key>Marche en avant</> et la compétence de combo <@ba.key>Soutien du front</>, Ember bénéficie de <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Protection</> et a moins de chances d'être interrompue.",
+        "Quand elle lance la compétence de combat <@ba.key>Marche en avant</> et la compétence de combo <@ba.key>Soutien du front</>, Ember bénéficie de <@ba.vup>{shelterrate:0%}</> de <#ba.guard>Protection</> et a moins de chances d'être interrompue."
       ],
       "name": "Enflammée avant l'assaut"
     },

@@ -365,7 +365,9 @@
     "special_1_3_1": "Бой без сожалений",
     "weponbox_1_3_1": "Поставка «Алый узел»",
     "special_1_3_2": "Очищение от греха",
-    "weponbox_1_3_2": "Поставка «В багровых тонах»"
+    "weponbox_1_3_2": "Поставка «В багровых тонах»",
+    "special_1_4_1": "Притяжение разлома",
+    "weponbox_1_4_1": "Поставка «Военный стандарт»"
   },
   "pages": {
     "home": "Главная",
@@ -450,7 +452,15 @@
     "monumentalEtchingDirgeOfGrief": "Памятные знаки: Скорбный плач",
     "umbralMonument": "Сумрачный монумент",
     "peacekeepersNocturneSignIn": "Вход «Ноктюрн миротворца»",
-    "northwardToPerilSignIn": "Вход «На север, навстречу риску»"
+    "northwardToPerilSignIn": "Вход «На север, навстречу риску»",
+    "echoesOfWar": "Эхо войны",
+    "gazeTowardsTheNorthernExclusion": "Вид на северную зону отчуждения",
+    "tributeOfCompanionship": "Дань дружбе",
+    "heatRageMegaArena": "ЖАРКАЯ ЯРОСТЬ! МЕГА-АРЕНА!",
+    "monumentalEtchingBeastlyHowl": "Памятные знаки: Звериный вой",
+    "theRootedRealm": "Царство корней",
+    "protocolPassBlightedSea": "Протопропуск «Моровые волны»",
+    "gazeNorthToTheRiftSignIn": "Событие входа «Вид на северный разлом»"
   },
   "mouths": {
     "january": "Январь",
@@ -938,7 +948,26 @@
     "liquidHeavyXiranite": "Жидкий тяжелый ксиранит",
     "centuryRind": "Вековая кожура",
     "caudalGoldscale": "Золотая хвостовая чешуя",
-    "stickerSafetyHelmet": "Стикер «Защитная каска»"
+    "stickerSafetyHelmet": "Стикер «Защитная каска»",
+    "pyrrolite": "Пирролит",
+    "pyrrolitePart": "Пирролитовая деталь",
+    "cupriumCanister": "Куприевый контейнер",
+    "shadowDew": "Теневая роса",
+    "glaiveFragment": "Фрагмент глевии",
+    "blightshadeBezoar": "Безоар моротени",
+    "pyrroliteComponent": "Пирролитовый компонент",
+    "separatorCore": "Ядро сепаратора",
+    "acridgen": "Акридген",
+    "cupriumGas": "Куприевый газ",
+    "hetoniteGas": "Гетонитовый газ",
+    "pyrroliteGas": "Пирролитовый газ",
+    "inergen": "Инерген",
+    "aquagen": "Акваген",
+    "xiragen": "Ксираген",
+    "heavyXiragen": "Тяжелый ксираген",
+    "crimsonSpearleaf": "Багровый копьелист",
+    "talosCap": "Талосник",
+    "protocolith": "Протоколит"
   },
   "common": {
     "copy": "Копировать",
@@ -1137,7 +1166,8 @@
     "zhuangFangyi": "Чжуан Фанъи",
     "miFu": "Ми Фу",
     "mifu": "Ми Фу",
-    "camille": "Камиль"
+    "camille": "Камиль",
+    "arcane": "Премудрость"
   },
   "weaponsList": {
     "industry01": "Индустрия 0.1",
@@ -1211,7 +1241,11 @@
     "phantomPain": "Фантомная боль",
     "amaranthineTassel": "Пурпурная кисточка",
     "beaconOfDuty": "Маяк долга",
-    "blessingOfLustrousCarmine": "Благословение кармина"
+    "blessingOfLustrousCarmine": "Благословение кармина",
+    "type42SolemnPhalanx": "Тип 42: Чинная фаланга",
+    "junctionPoint": "Узловая точка",
+    "goldenAge": "Золотой век",
+    "farsight": "Дальновидность"
   },
   "cookies": {
     "title": "Мы используем куки",
@@ -1315,7 +1349,21 @@
     "world_energy_point09_4": "Сильный аллювий энергии: долина Залежи Клинков",
     "world_energy_point09_5": "Сильный аллювий энергии: долина Залежи Клинков",
     "world_energy_point09_6": "Сильный аллювий энергии: долина Залежи Клинков",
-    "world_energy_point09_7": "Сильный аллювий энергии: долина Залежи Клинков"
+    "world_energy_point09_7": "Сильный аллювий энергии: долина Залежи Клинков",
+    "world_energy_point10_1": "Аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_2": "Аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_3": "Аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_4": "Сильный аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_5": "Сильный аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_6": "Сильный аллювий энергии: застава «Инлуна»",
+    "world_energy_point10_7": "Сильный аллювий энергии: застава «Инлуна»",
+    "world_energy_point11_1": "Аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_2": "Аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_3": "Аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_4": "Сильный аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_5": "Сильный аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_6": "Сильный аллювий энергии: ЗО северного Улина",
+    "world_energy_point11_7": "Сильный аллювий энергии: ЗО северного Улина"
   },
   "enemies": {
     "eny_0007_mimicw": "Роющий нидвурм",
@@ -1392,7 +1440,16 @@
     "eny_0082_hsbear": "Небесный барабанщик",
     "eny_0112_jzmonk": "Каменный ревун",
     "eny_0113_jzogre": "Бронированный саблезубый зверь",
-    "eny_0114_jzmking": "Скальный ревун"
+    "eny_0114_jzmking": "Скальный ревун",
+    "eny_0117_klhound": "Моротень звероклыка",
+    "eny_0118_klhog": "Моротень колючего зверя",
+    "eny_0119_kltiger": "Моротень хитрого зверя",
+    "eny_0120_klbear": "Моротень Молнии",
+    "eny_0121_klbud": "Моротень авангарда спецопергруппы «Инлун»",
+    "eny_0122_kltdbud": "Моротень элитного бойца спецопергруппы «Инлун»",
+    "eny_0123_klcap": "Моротень спецопергруппы «Инлун» с глевией",
+    "eny_0124_kltdcap": "Моротень капитана спецопергруппы «Инлун»",
+    "eny_0125_fdcentur": "Хилиарх Аллейхреос"
   },
   "essencesPage": {
     "optimizer": "Оптимизатор фарма",
@@ -1648,7 +1705,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Тычковый нож «Потертое лезвие» К1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Рукавицы «Потертое лезвие»",
     "item_equip_t4_suit_crush_fracture_hand_02": "Рукавицы «Потертое лезвие» К1",
-    "item_equip_t4_suit_phy01_body_04": "Волоконная броня «Мастер меча»"
+    "item_equip_t4_suit_phy01_body_04": "Волоконная броня «Мастер меча»",
+    "item_equip_t4_parts_wuling00_body_01": "Броня «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_body_02": "Пластина «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_body_03": "Жилет «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_edc_01": "Мачете «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_edc_02": "Горелка «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_edc_03": "Фонарик «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_hand_01": "Перчатки «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_hand_02": "Краги «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling00_hand_03": "Обмотки «Полевые работы АПК»",
+    "item_equip_t4_parts_wuling02_body_01": "Тяжелая броня «Путник разлома»",
+    "item_equip_t4_parts_wuling02_body_02": "Легкая броня «Путник разлома»",
+    "item_equip_t4_parts_wuling02_edc_01": "Бронепластина «Путник разлома»",
+    "item_equip_t4_parts_wuling02_hand_01": "Перчатки «Путник разлома»",
+    "item_equip_t4_parts_wuling02_hand_02": "Краги «Путник разлома»",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Изолированная пластина «Термоудар»",
+    "item_equip_t4_suit_fire_natr01_hand_04": "СИЗ для рук «Термоудар»",
+    "item_equip_t4_suit_heal01_body_03": "Бронежилет «Рысь» К1",
+    "item_equip_t4_suit_heal01_hand_03": "Рукавицы «Рысь» К1",
+    "item_equip_t4_suit_usp02_body_03": "Легкая броня «Вечный ксиранит»",
+    "item_equip_t4_suit_usp02_body_04": "Легкая броня «Вечный ксиранит» К1",
+    "item_equip_t4_suit_usp02_edc_04": "Крепежная пластина «Вечный ксиранит»",
+    "item_equip_t4_suit_usp02_hand_03": "Обмотки «Вечный ксиранит»",
+    "item_equip_t4_suit_usp02_hand_04": "Краги «Вечный ксиранит»"
   },
   "packs": {
     "none": "Некомплектное",
@@ -1697,7 +1777,8 @@
     "suit_wisdwill01": "Легкий АПК",
     "suit_combo_cd01": "Циньбо",
     "suit_expend_spell01": "Ксиранад",
-    "suit_crush_fracture": "Потертое лезвие"
+    "suit_crush_fracture": "Потертое лезвие",
+    "suit_generaltype": "Полевые работы АПК"
   },
   "equipmentTypes": {
     "body": "Броня",
@@ -1751,13 +1832,21 @@
     "AllDamageTakenScalar": "Снижение итогового УРН",
     "Sub": "Побочный показатель",
     "AllSkillDamageIncrease": "УРН от всех навыков",
-    "FireAndNaturalDamageIncrease": "Тепловой и природный УРН"
+    "FireAndNaturalDamageIncrease": "Тепловой и природный УРН",
+    "PhysicalResistance": "Физическая СОПР",
+    "NatureResistance": "Природная СОПР",
+    "CryoResistance": "Криогенная СОПР",
+    "ElectricResistance": "Электрическая СОПР",
+    "HeatResistance": "Тепловая СОПР",
+    "TherResistance": "Эфирная СОПР"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Аггелы",
     "wiki_group_monster_landbreaker": "Землекрушители",
     "wiki_group_monster_hongshan": "Разбойники-цанцзэй",
-    "wiki_group_monster_animal": "Дикая фауна"
+    "wiki_group_monster_animal": "Дикая фауна",
+    "wiki_group_monster_kl": "Моротени",
+    "wiki_group_monster_js": "Сотворенный"
   },
   "resitances": {
     "heatRez": "Тепловая СОПР",
@@ -2439,5 +2528,11 @@
     "inorganicConstruct": "Неорганическая постройка",
     "turbidityManifest": "Образ помутнения",
     "thoseForsakenByTheLand": "Отвергнутые землей"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Технология: ксиранит",
+    "cupriumTechnique": "Технология: куприй",
+    "hetoniteTechnique": "Технология: гетонит",
+    "pyrroliteTechnique": "Технология: пирролит"
   }
 }

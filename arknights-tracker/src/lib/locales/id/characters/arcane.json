@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Nature Inflict",
+      "Corrode",
+      "Crowd Control"
+    ],
+    "behaviourHateTags": [
+      "Fesyen"
+    ],
+    "behaviourUnavailableTags": [
+      "Fleksibel (SISTEM SAJA, tidak terlihat dalam game)"
+    ],
+    "blocTag": "Hongshan Academy of Sciences (HAS)",
+    "expertTags": [
+      "Teknik Tempur",
+      "Kondisi Tubuh"
+    ],
+    "giftPreferTags": [
+      "Pilihan Penjelajah Wuling"
+    ],
+    "hobbyTags": [
+      "Alam",
+      "Amal"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+        "diveAtkMultiplier": "Pengganda ATK Menukik"
+      },
+      "name": "Artillery Interdiction",
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Pengganda DMG",
+        "stagger": "Stagger"
+      },
+      "name": "Jadecrushing Grid",
+      "description": "Memunculkan <@ba.key>Jadecrushing Grid</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di dalam area efek."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Pengganda DMG Dasar",
+        "baseStagger": "Stagger Dasar",
+        "imprisonmentAndSusceptibilityDurationS": "Durasi Imprisonment dan Susceptibility (dtk)",
+        "susceptibility": "Susceptibility",
+        "baseSusceptibility": "Susceptibility Dasar",
+        "maxBonusSusceptibilityFromWill": "Bonus Maks Susceptibility dari Will",
+        "willRequiredForMaxBonusSusceptibility": "Will yang Dibutuhkan untuk Bonus Maks Susceptibility",
+        "explosionDmgMultiplier": "Pengganda DMG Ledakan",
+        "explosionStagger": "Stagger Ledakan",
+        "bonusDmgMultiplier": "Pengganda Bonus DMG",
+        "bonusSusceptibilityDurationS": "Durasi Bonus Susceptibility (dtk)",
+        "spReturn": "Pengembalian SP",
+        "ultimateEnergyGain": "Perolehan Energi Ultimate"
+      },
+      "name": "Yinglung Stance IV",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Pengganda DMG Gloompurger Array Creation",
+        "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
+        "gloompurgerArrayDurationS": "Durasi Gloompurger Array (dtk)",
+        "forcedCorrosionDurationS": "Durasi Forced Corrosion (dtk)",
+        "clusterStrikeTotalDmgMultiplier": "Pengganda DMG Total Cluster Strike",
+        "gloompurgeArcanaDmgMultiplier": "Pengganda DMG Gloompurge Arcana",
+        "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
+      },
+      "name": "Gloompurge",
+      "description": "Arcane akan memunculkan <@ba.key>Gloompurger Array</> yang akan langsung menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam area efek (AOE).\nSaat musuh di dalam <@ba.key>Gloompurger Array</> terkena serangan Penuntas atau <#ba.lastcombo>Final Strike</> yang dilancarkan oleh operator terkontrol, <@ba.key>Gloompurger Array</> akan melepaskan <@ba.key>Cluster Strike</> yang akan menimbulkan Area DMG kepada musuh yang bersangkutan. Efek ini bisa diaktifkan maks 2 kali.\nSetelah mengaktifkan <@ba.key>Cluster Strike</> sebanyak 2 kali, ultimate akan beralih ke <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam AOE luas."
+    },
+    "indicator": {
+      "levels": [
+        "Intellect dan Will Operator +8.",
+        "Intellect dan Will Operator +10.",
+        "Intellect dan Will Operator +10.",
+        "Intellect dan Will Operator +15."
+      ],
+      "name": "Keen Mind/Stalwart"
+    },
+    "talent1": {
+      "levels": [
+        "Jika Intellect Arcane ≥ Will, tipe skill akan beralih ke <@ba.key>Array Arcana: INT</>. Jika tidak, skill akan beralih ke <@ba.key>Array Arcana: WILL</>. \n<@ba.info>Persyaratan atribut untuk kedua tipe Array Arcana ini hanya mencakup efek dari level, talent, dan potensi operator, serta bonus atribut yang diberikan oleh gear dan senjata yang dipakai.</>",
+        "Jika Intellect Arcane ≥ Will, tipe skill-nya akan beralih ke <@ba.key>Array Arcana: INT</>. Jika tidak, skill-nya akan beralih ke <@ba.key>Array Arcana: WILL</>.\nUltimate <@ba.key>Gloompurge</> meningkat:\n<@ba.key>Array Arcana: INT</>:\n- Selama ultimate, Arcane akan mendapatkan <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Arts Amp</>.\n<@ba.key>Array Arcana: WILL</>:\n- Saat <@ba.key>Gloompurger Array</> (ultimate urutan 1) dan <@ba.key>Gloompurge Arcana</> (ultimate urutan 2) menimbulkan DMG kepada musuh, kedua skill itu juga akan mengakibatkan <@ba.vup>[Will × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> (maks: <@ba.vup>{spell_vul_rate:0.0%}</>) selama <@ba.vup>{duration:0}</> dtk. Efek ini tidak bisa ditumpuk.\n<@ba.info>Persyaratan atribut untuk kedua tipe Array Arcana ini hanya mencakup efek dari level, talent, dan potensi operator, serta bonus atribut yang diberikan oleh gear dan senjata yang dipakai.</>"
+      ],
+      "name": "Tactical Planning"
+    },
+    "talent2": {
+      "levels": [
+        "<#ba.corrupt>Corrosion</> yang diakibatkan oleh Arcane akan bertahan <@ba.vup>{duration_add:0}</> dtk lebih lama, dan Pengurangan Resistansi Maks meningkat menjadi <@ba.vup>{1+corrupt_rate:0.00}</> kali nilai aslinya.",
+        "<#ba.corrupt>Corrosion</> yang diakibatkan oleh Arcane akan bertahan <@ba.vup>{duration_add:0}</> dtk lebih lama, dan Pengurangan Resistansi Maks meningkat menjadi <@ba.vup>{1+corrupt_rate:0.0}</> kali nilai aslinya."
+      ],
+      "name": "Weapon Honing"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan mineral langka akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan mineral langka akan meningkat sebesar +30%"
+      ],
+      "name": "Pluck the Mountain, Boil the Sea"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +20%",
+        "Saat ditugaskan ke Ruang Pertumbuhan, laju pertumbuhan tanaman hasil pemijaran akan meningkat sebesar +30%"
+      ],
+      "name": "Botanophile"
+    },
+    "files": {
+      "main": "NAMA SANDI: Arcane \nGENDER: Perempuan \nAUTENTIKASI: Satuan Tugas Khusus Yinglung \nTANGGAL LAHIR: 7 Juli \nRAS: Liberi \n[STATUS INFEKSI ORIPATI] \nNegatif Oripati, berdasarkan laporan pemeriksaan medis. \n\n[PEMERIKSAAN FISIK TERPADU] \nKEKUATAN FISIOLOGIS: Standar \nKEMAMPUAN TEMPUR: Sangat Baik \nKECERDASAN TAKTIS: Luar Biasa \nASIMILASI ORIGINIUM ARTS: Sangat Baik",
+      "humanResources": "Operator Arcane (nama asli: Li Zhiyan) adalah kapten Satuan Tugas Khusus Yinglung (Satgassus Yinglung) Hongshan Academy of Sciences. Karena cedera yang dideritanya selama operasi di Zona Eksklusi Wuling Utara (ZE), dia diizinkan untuk mengambil cuti panjang. Dengan izin khusus dari Satgassus Yinglung, Arcane sekarang menjadi mitra Endfield Industries. \n\nMenurut Operator Arcane sendiri, ini adalah cuti panjang pertamanya. Operator medis kami mengidentifikasi puluhan titik cedera internal. Pekerjaan garis depan di lingkungan Hawar yang berbahaya memang tidak menghancurkan semangatnya, tapi membebaninya dalam bentuk rasa sakit fisik yang konstan dan melelahkan. Setelah berbicara dengan anggota HAS, kami mengetahui bahwa HAS berharap dia bisa memanfaatkan kesempatan ini untuk benar-benar memulihkan diri. “Seharusnya ini menjadi istirahat pengganti semua waktu istirahat yang dia lewatkan selama beberapa tahun berturut-turut.” \n— Martin Marvin Malen, Asisten, Divisi SDM, Endfield Industries",
+      "file1": "Kapten dan Chen? Aku tak tahu banyak soal itu. Kudengar mereka dulu berteman baik dan bahkan berpasangan selama ujian seleksi. Performa mereka juga yang paling menonjol di antara para tentara cadangan. Semua orang mengira mereka akan menjadi sepasang anggota Yinglung menjanjikan yang akan ditempatkan di Terusan Yinglung. Tapi setelah itu ... mereka terus bertengkar tanpa henti. Jika tidak sedang bertengkar, mereka pasti sedang siap-siap untuk adu mulut berikutnya. Kau tahu sendiri Kapten itu bagaimana. Dia tak pernah mundur. Keduanya ditugaskan ke kelompok yang berbeda dan Kaptenlah yang jadi anggota Yinglung .... Bagaimana kalau Chen jadi anggota Yinglung ...? Aku ... tak bisa membayangkannya. Kapten akan tetap jadi Kaptennya. Dan kalau dia ditugaskan ke tim Kapten ... pasti akan ada yang dipindahtugaskan. Sebagai pengamat, Instruktur Zhu dan Kapten membuat keputusan yang tepat. Pengaturan saat ini adalah yang terbaik untuk mereka berdua. \n— Summit, prajurit, Satuan Tugas Khusus Yinglung \n\nSatgassus Yinglung tidak mengajari Kapten cara menggunakan meriam unit arts beratnya. Aku pernah bertanya, dan dia bilang itu bagian dari “warisan” ayahnya. Ada suatu masa ketika kemampuan Kapten tidak mengalami peningkatan meski sudah berlatih keras, jadi dia terus berganti senjata. Pisau, tombak, pedang, tombak kapak, kapak, kapak lebar, kait, dan trisula .... Dia mencoba semuanya, menjadi mahir menggunakan semuanya, menguasai semua jenis gaya bertarung, tapi dia tidak puas. Dia merasa belum cukup kuat, jadi dia menggandakan latihannya .... Orang-orang khawatir dia akan pingsan karena kelelahan. Lalu suatu hari, dia menemukan meriam unit arts ayahnya yang disimpan di luar tempat itu. Dia tak pernah mengajukan cuti sampai saat itu. Tak ada yang tahu ke mana dia pergi selama beberapa hari. Tapi, ketika dia kembali, dia telah memutuskan untuk menggunakan senjata ayahnya. Dan setelah itu, dia pun menjadi Arcane yang kita kenal. Tak ada anggota Yinglung di garnisun Wuling yang bisa menandinginya. \n— Phrase, prajurit, Satuan Tugas Khusus Yinglung \n\nJANGAN DENGARKAN RUMOR ITU LAGI! Ugh. Selama ujian seleksi, dia ... yah, dia itu ... ya ... sedikit lebih unggul dariku. Tapi, aku jauh lebih jago bertarung daripada dulu! Jika kami berhadapan lagi, akan kuberi dia tiga serangan gratis! Tunggu ... mungkin dua saja. Jangan khawatir. Itu hanya latihan tarung biasa. Seingatku, Arcane selalu cemberut dan marah-marah, seolah-olah terus memikul beban berat. Tapi, sejak keinginannya tentang ZE Wuling Utara terpenuhi, dia jadi agak berubah. Oh iya! Seperti penampilannya saat aku pertama kali bertemu dengannya. Aku sudah tanya tentang pertemuannya di ZE, tapi dia tak mau bilang apa pun kepadaku. Aku kan tak bisa langsung tanya-tanya Endmin .... Tunggu .... Mungkin saja bisa .... \n— Chen Qianyu, mantan tentara cadangan, Satuan Tugas Khusus Yinglung \n\nLi Zhiyan? Gadis kecil Yinglung itu? Tidak. Tak ada hal khusus yang terlintas di pikiran. Setiap kali aku melihatnya, dia selalu berwajah tegas, keras kepala, dan membuat orang merasa minder. Dia juga terus mengoceh “Nona Proksi! Nona Proksi!”, membuatku harus mengoreksinya berulang kali sebelum berhasil memaksanya berubah. Kehidupan fana itu singkat, tapi dia diberkati dengan kemampuan yang kuat. Sayangnya, lihat apa yang dia lakukan dengan kemampuannya: Menjalani kehidupan yang sangat membosankan dan membelenggu dirinya dengan aturan-aturannya sendiri. Yah, segalanya jadi agak lebih baik baru-baru ini. Wajahnya sedikit melunak, jadi setidaknya itu cukup menarik. Mungkin si bodoh itu akhirnya melakukan sesuatu. Huh. Si konyol tak tahu apa-apa itu berkeliaran dan malah jadi luka-luka. Tak akan ada jalan keluar kali ini. \n— Si",
+      "file2": "“Dia mungkin terlihat dingin dan tak punya hati, tapi itulah yang dibutuhkan di Satgassus Yinglung.” Penilaian orang awam terhadap Li Zhiyan biasanya sangat sederhana. \nSemua tindakan dan pilihan Li bisa diringkas dalam pernyataan ini: Menyelesaikan misi. Para prajurit Satuan Tugas Khusus Yinglung (Satgassus Yinglung) selalu bertarung di lingkungan ekstrem. Rasionalitas yang dingin dan tekad yang kuat membantu menjamin keberhasilan sebuah misi. Jika “keluar dengan selamat” tidak menjadi bagian dari target misi, setiap anggota Yinglung tahu apa artinya. \nSatgassus Yinglung punya ruang rahasia yang dijaga ketat. Mereka tidak menggunakannya untuk menyimpan berkas intel atau dokumen, tapi untuk “barang milik” setiap anggota Yinglung. Saat menjadi anggota Yinglung, kau akan diberi sebuah kotak dan bebas memasukkan apa pun ke dalamnya. Jika kau gugur dalam misi, benda di dalam kotak itu akan menjadi satu-satunya bukti keberadaanmu. \nTapi, kotak Li Zhiyan tetap kosong. \nDia memberi tahu penjaga ruang itu bahwa dia tak punya apa-apa. Segala sesuatu yang pernah dia miliki telah terkubur di dalam Miasma yang gelap, dingin, dan beracun di Zona Eksklusi Wuling Utara. \nSang penjaga harus memberitahunya bahwa ini aturan Satgassus Yinglung. Li pun jadi harus berpikir keras. Benda apa yang paling mewakili dirinya? Jika gelar Kapten Satgassus Yinglung diambil darinya, adakah sesuatu yang bisa dia masukkan ke dalam kotak itu? Dia merenungkan makna “diri”. \nPertanyaan itu tak menghambatnya terlalu lama. Tak lama kemudian, dia mencari seorang seniman tua di pasar untuk menuliskan namanya dalam kaligrafi. Nama inilah yang dimasukkan ke dalam kotak. \nPertanyaan itu tidak terasa penting baginya. Misi berikutnyalah yang selalu paling penting \n...... \nLi jarang mengunjungi ruang rahasia itu sampai baru-baru ini. Dalam beberapa kunjungannya, kotaknya yang dulu kosong mulai terisi. Sebuah pena. Sebuah kancing. Ada juga sebilah belati di tumpukan itu .... Semuanya tampak biasa dan tak punya arti, seolah-olah dia asal mengambil barang di meja. Beberapa tampak seperti hadiah dari tetangganya atau kenang-kenangan yang akan dia teruskan atas permintaan seseorang .... Tapi, Li memperlakukan semuanya seperti harta karun dan dengan hati-hati meletakkannya di kotaknya. \nSaat Endministrator penasaran dan bertanya, Li tidak lagi menanggapi dengan sikap diam yang tegas seperti yang sering dilakukannya dulu. Sebagai gantinya, dia menjawab dengan serius. \n“Aku merenung dan menyadari bahwa aku telah melewatkan begitu banyak hal yang seharusnya kuhargai.”",
+      "file3": "Gaya tarungku? Gabungan dari susunan yang diajarkan Ayahku dengan taktik Yinglung. \nAyah bilang, susunan beroperasi berdasarkan prinsip “perubahan”. Susunan itu memberikan momentum kepada si pemakai dan bergerak bersama si pemakai juga. Tak ada susunan yang tak akan berubah atau permanen. Susunan baru akan lengkap jika si pemakai menjadi bagian darinya. \nSaat aku masih kecil, ayah membawaku ke banyak tempat. Terkadang kami naik batang kayu menyusuri sungai. Terkadang kami memanjat pohon yang sangat tinggi. Dan setelah merasa lelah, kami berbaring di atas rumput untuk menatap bintang-bintang .... Ayah mengajariku tentang posisi dan bentuk rasi bintang. Aku kemudian menyadari bahwa semua itu bukan sekadar “permainan”. Dia menggunakan cara yang tak kentara tapi menyenangkan untuk mengajarkan pengetahuannya tentang susunan dan siklus segala macam entitas kepadaku. \nTapi, Yinglung mengajariku makna “kekekalan” dan cara bertahan di tengah badai. Taktik Yinglung terutama bergantung pada “momentum” untuk menciptakan kekuatan yang tak terbendung. Taktik yang berbeda digunakan untuk menghadapi ancaman yang berbeda. Tapi, tak peduli apakah kami bertarung dengan ilmu pedang, ilmu tombak, atau dengan formasi dan susunan kami. Setiap anggota Yinglung akan bertahan di posnya dan berfokus untuk melepaskan serangan dahsyat untuk menghabisi musuh. \nAku sudah mencoba memadukan taktik Yinglung dengan susunan Ayahku. Taktik Yinglung berfokus pada tim, seluruh medan pertarungan, dan saling melengkapi gerakan satu sama lain, seperti meriam tripleksku yang berfungsi sebagai satu unit. Susunan Ayahku berfokus pada fleksibilitas dan perubahan. Penggabungan kedua pendekatan ini benar-benar sulit dan membuatku kesulitan selama beberapa waktu .... \nTapi, aku lalu mengunjungi kembali lokasi tempat Ayah dan aku dulu bermain. Aku melihat daun-daun yang berguguran melewati jeram sungai, fowlbeast yang bertengger di ujung cabang panjang yang berayun tertiup angin, dan rasi bintang yang tak pernah berhenti tapi bisa tetap mempertahankan bentuknya—Aku pun akhirnya paham kata-kata Ayah. Akulah kuncinya. Aku harus menjadi bagian dari formasi, bagian keempat dari susunan. \nAku ini simpul dan poros yang mengubah susunan itu, elemen variabel yang mengisi celah taktis. Setelah memahami pelajarannya, aku memasukkan diriku ke dalam susunan. Dengan lempeng giokku, aku memosisikan meriam tripleks dan mengatur daya tembaknya sampai terasa seperti perpanjangan lengan dan kakiku. Baru pada saat itulah aku menguasai penggunaannya. \nOriginium Arts-ku lebih fokus pada “aliran” energi untuk menciptakan keseimbangan “perubahan” dan “kekekalan”. Arts-ku ini bisa dibilang mirip dengan Arts milik Operator Gilberta. Dia membagikan beberapa tips tentang penggunaan Arts kepadaku. Operator Arclight juga menggunakan arus listrik dengan keanggunan dan penguasaan yang indah, jadi aku juga meminta nasihat darinya. Dia merespons dengan satu kalimat: “Rasakan saja.” Dijiang memang tempat berkumpul individu-individu yang sangat berbakat dan terampil serta menawarkan banyak kesempatan belajar, seperti Operator Last Rite dengan kekuatannya yang luar biasa, dan Operator Pogranichnik dengan pengetahuannya yang tak tertandingi tentang formasi militer .... Semoga selama di Dijiang, aku bisa mendapatkan kesempatan untuk meningkatkan kemampuanku dan mempelajari kekuatan dari setiap perguruan .... \nAku juga sedang berusaha menyusun semua pelajaran ini dalam sebuah buku. Anggota Yinglung lain yang sedang berusaha menguasai susunan dan meriam berat bisa membacanya sebagai referensi. Semoga tulisan-tulisan ini bisa membantu mereka.",
+      "file4": "[CATATAN PENERIMAAN] \nPENERIMA: Li Zhiyan \nPENGIRIM: Ling Yue \nALAMAT PENGIRIM: Kota Wuling \nSTATUS: Ditandatangani dan diterima \nINSPEKSI: Lulus inspeksi \nPESAN SUARA: \nZhiyan! Ini aku! Bibi Liu! Kudengar kau sedang ambil cuti panjang di Endfield. Kau seharusnya cerita, Nak. Semua orang di sini sangat cemas! Jadi, aku meminta wanita muda di Taman Hening untuk mengantarkan makanan kesukaanmu! Hanya beberapa kotak kue osmanthus dan puding kohl manis. Aku menyeduhnya beberapa hari yang lalu untuk ulang tahun bayi, jadi itu tak tahan lama. Habiskan yang itu dulu, oke? \nBibi Shen juga sangat peduli padamu. Dia memasukkan beberapa pakaian yang dijahitnya ke dalam bingkisan itu. Dia dengar kau sekarang tinggal di pesawat luar angkasa, jadi dia terus mengeluh tentang kau yang kedinginan di luar angkasa. Jadi ya, itulah alasan pakaiannya, kalau-kalau kau penasaran. \nNak, aku tak tahu kapan kau akan kembali. Kau memang keras kepala. Selalu duduk di satu tempat dan tak melakukan apa-apa. Kau jarang bermain dengan gadis-gadis lain seusiamu. Kau malah terus berusaha membantu para bibi di sini. Jangan begitu! Kau memang gadis yang baik, tapi kami ini makin tua dan tak akan ada selamanya. Menurutlah pada Bibimu dan carilah teman di Endfield. Aku sudah lihat Endmin mereka dan wanita muda bernama Perlica, dan menurutku mereka terlihat baik! Kalau kau tak tahu cara basa-basi, bawakan saja kue beras dan puding kohl manis untuk para Endfielder itu, dan biarkan mereka mencoba masakan Bibimu! Lakukan ini beberapa kali dan kau pasti akan punya teman baru! \nBibi melihatmu tumbuh dewasa. Kau jarang bicara, tapi Bibi tahu kau jeli memperhatikan detail. Aku selalu mencatat setiap kali kau membantu kami. Masih ingat saat kau kembali membawa foto putri kecil Bibi Shen? Hari itu, Bibi Shen tak bisa berhenti menangis. Gadis kecil yang malang itu pergi saat masih seusiamu, jadi Bibi Shen memperlakukanmu seperti anaknya sendiri. Dan ... kami semua juga sama. Kau adalah anak dari Wuling. Ke mana pun kau pergi, kota ini akan selalu jadi rumahmu. \nAiyah, obrolan ini malah jadi sedih. Bibi tak pandai merangkai kata-kata, jadi sebaiknya kusudahi saja. Fokus saja untuk mengasah diri dan berusahalah pulang lebih awal. Setelah kau kembali ke Wuling, Bibi akan adakan pesta besar untukmu! Jangan lupakan nasihat Bibi! Bawa juga teman-teman barumu! \n.... \nTunggu. Aiyo, Bibi Shen sebenarnya ingin bicara, tapi dia malah menangis lagi. Aku akan minta Ling Yue antarkan bingkisan ini dulu, Bibi Shen akan merekam pesan suara nanti. Semoga kami tak merepotkanmu. Hei! Sabar sedikit! Aku tak akan lama-lama, oke! Tunggu. Baterai lemah? Bagaimana— \n\n[CATATAN PENGIRIMAN] \nPENGIRIM: Li Zhiyan \nPENERIMA: Ling Yue \nALAMAT PENGIRIM: PPO Dijiang \nSTATUS PENGIRIMAN: Terkirim \nINSPEKSI: Lulus inspeksi \nDAFTAR ITEM: \nSelendang Simonch - 5 buah \nSemilir Kjersch - 5 stoples \nPuzzle Gerbang Kosmis - 3 set \nCitromix [Rf.] - 10 botol \nPESAN SUARA: \nLing Yue, ini aku ... Li Zhiyan. Aku menerima bingkisan dari orang-orang tua di lingkungan. Tolong jangan biarkan mereka mengirimkan bingkisan lagi .... Semua kebutuhan ada di Dijiang, dan masih banyak makanan yang tersisa bahkan setelah kubagi dengan Endmin dan Endfielder lainnya .... \nKurasa para bibi menyukai selendang yang kukirimkan terakhir kali. Aku mengirimkan beberapa selendang lagi dari Divisi Logistik, jadi biar para bibi saja yang memilahnya. Ada juga berbagai makanan rasa buah yang tak ada di Wuling dan mainan untuk anak-anak. \nTak usah khawatir soal biaya. Pengeluaranku tidak banyak. \nDan bilang kepada Bibi Shen bahwa barang-barang itu hadiah gratis dari Endfield. Aku tak mau dia terlalu khawatir."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Skill kombo <@ba.key>Yinglung Stance IV</> meningkat:\nPengganda DMG meningkat menjadi <@ba.vup>{atk_scale_touch:0.0}</> kali nilai aslinya.\n<@ba.key>Array Arcana: INT</>: Menghantam musuh yang sedang terkena <@ba.key>Imprisonment</> menggunakan skill tarung Arcane akan <#ba.return>mengembalikan</> <@ba.vup>{atb_return_wisd:0}</> SP lagi.\n<@ba.key>Array Arcana: WILL</>: Efek <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> yang diakibatkan <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Watcher of the Sea"
+    },
+    "potential2": {
+      "description": "Intellect dan Will <@ba.vup>+{Will:0}</>, Intensitas Arts <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Heart of Ice Cold Ferrium"
+    },
+    "potential3": {
+      "description": "Talent <@ba.key>Weapon Honing</> meningkat:\n<#ba.corrupt>Corrosion</> yang diakibatkan oleh Arcane bertahan <@ba.vup>{duration_add:0}</> dtk lebih lama, dan Pengurangan Resistansi Maks meningkat sebesar <@ba.vup>{corrupt_rate:0%}</> kali nilai aslinya.",
+      "name": "Wielder of Stone"
+    },
+    "potential4": {
+      "description": "Ultimate <@ba.key>Gloompurge</> meningkat: Biaya Energi Ultimate <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Mind of Refined Steel"
+    },
+    "potential5": {
+      "description": "Ultimate <@ba.key>Gloompurge</> meningkat:\n<@ba.key>Array Arcana: INT</>: Selama ultimate, Arcane akan mendapatkan <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Arts Amp</>. Pengganda DMG untuk <@ba.key>Gloompurge Arcana</> (ultimate urutan 2) meningkat menjadi <@ba.vup>{atk_scale:0.0}</> kali nilai aslinya.\n<@ba.key>Array Arcana: WILL</>: Meningkatkan efek <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> yang diakibatkan oleh <@ba.key>Gloompurger Array</> (ultimate urutan 1) dan <@ba.key>Gloompurge Arcana</> (ultimate urutan 2) sebesar <@ba.vup>+{spell_vul_rate_potential:0%}</>. Setelah menggunakan <@ba.key>Gloompurge Arcana</> (ultimate urutan 2), jika skill kombo <@ba.key>Yinglung Stance IV</> masih dalam periode cooldown, durasi cooldown itu akan langsung dipersingkat sebesar <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Homeward Glance"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Pertanyaan untuk Kupu-Kupu",
+      "author": "栗樺茶",
+      "description": "Memori masa lalu lenyap seketika; momen masa silam menguap tanpa memberi tanda."
+    },
+    "potential3": {
+      "name": "Cabang Kepulangan",
+      "author": "狂zip",
+      "description": "Ke mana pun ia mencari, fowlbeast itu tak menemukan tempat beristirahat, ranting untuk pulang dan menghela napas."
+    },
+    "potential5": {
+      "name": "Wujud Diri Pedang",
+      "author": "Eteru",
+      "description": "Ubah tubuh menjadi sebilah pedang, dan padatkan pikiran menjadi kekuatan tak kasatmata."
+    }
+  }
+}

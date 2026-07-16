@@ -111,7 +111,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "궁극기 <@ba.key>채 썰어 웍에 넣기!</>로 1명 이상의 적을 처치했을 때, 판이 주는 <@ba.pd>물리 피해</><@ba.vup> +{potential_1_dmg_up:0%}</>, {potential_1_duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다.",
+      "description": "궁극기 <@ba.key>채 썰어 웍에 넣기!</>로 1명 이상의 적을 처치했을 때, 판이 주는 <@ba.pd>물리 피해</> <@ba.vup>+{potential_1_dmg_up:0%}</>, {potential_1_duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다.",
       "name": "정교한 요리"
     },
     "potential2": {

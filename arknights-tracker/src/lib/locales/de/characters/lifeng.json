@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Dauer der Physisch-Empfänglichkeit (Sek.)"
       },
       "name": "Trüber Avatar",
-      "description": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner stattdessen mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt."
+      "description": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner außerdem mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt."
     },
     "comboSkill": {
       "comboSkill": {

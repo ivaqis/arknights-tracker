@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "Beim Wirken der Kampffertigkeit <@ba.key>Vorwärts, marsch</> und der Kombofertigkeit <@ba.key>Frontlinien-Unterstützung</> erhält Ember <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Schutz</> und sie wird nicht so leicht unterbrochen.",
-        "Beim Wirken der Kampffertigkeit <@ba.key>Vorwärts, marsch</> und der Kombofertigkeit <@ba.key>Frontlinien-Unterstützung</> erhält Ember <@ba.vup>{1-shelterrate:0%}</> <#ba.guard>Schutz</> und sie wird nicht so leicht unterbrochen."
+        "Beim Wirken der Kampffertigkeit <@ba.key>Vorwärts, marsch</> und der Kombofertigkeit <@ba.key>Frontlinien-Unterstützung</> erhält Ember <@ba.vup>{shelterrate:0%}</> <#ba.guard>Schutz</> und sie wird nicht so leicht unterbrochen.",
+        "Beim Wirken der Kampffertigkeit <@ba.key>Vorwärts, marsch</> und der Kombofertigkeit <@ba.key>Frontlinien-Unterstützung</> erhält Ember <@ba.vup>{shelterrate:0%}</> <#ba.guard>Schutz</> und sie wird nicht so leicht unterbrochen."
       ],
       "name": "Feuer und Flamme für den Sturmangriff"
     },

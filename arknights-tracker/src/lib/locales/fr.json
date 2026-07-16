@@ -358,7 +358,9 @@
     "special_1_3_1": "Poings sans regrets",
     "weponbox_1_3_1": "Tirage de nœud écarlate",
     "special_1_3_2": "Effaceur de péché",
-    "weponbox_1_3_2": "Tirage de teinte écarlate"
+    "weponbox_1_3_2": "Tirage de teinte écarlate",
+    "special_1_4_1": "Face à la faille, regardant vers le nord",
+    "weponbox_1_4_1": "Tirage de type militaire"
   },
   "pages": {
     "home": "Accueil",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "Gravure monumentale : mélopée lugubre",
     "umbralMonument": "Monument de l'ombre",
     "peacekeepersNocturneSignIn": "Connexion - Nocturne du pacificateur",
-    "northwardToPerilSignIn": "Connexion - Périple vers le nord"
+    "northwardToPerilSignIn": "Connexion - Périple vers le nord",
+    "echoesOfWar": "Échos guerriers",
+    "gazeTowardsTheNorthernExclusion": "Regard tourné vers la zone d'exclusion",
+    "tributeOfCompanionship": "Don de camaraderie",
+    "heatRageMegaArena": "COMBAT DOUBLE ! MÉGA ARÈNE !",
+    "monumentalEtchingBeastlyHowl": "Gravure monumentale : rugissement bestial",
+    "theRootedRealm": "Le royaume enraciné",
+    "protocolPassBlightedSea": "Pass de Protocole : Marée gangrénée",
+    "gazeNorthToTheRiftSignIn": "Connexion - Regard tourné vers le nord et vers la faille"
   },
   "mouths": {
     "january": "Janvier",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "Xiranite lourde liquide",
     "centuryRind": "Écorce centenaire",
     "caudalGoldscale": "Écaille d'or caudale",
-    "stickerSafetyHelmet": "Autocollant : casque de protection"
+    "stickerSafetyHelmet": "Autocollant : casque de protection",
+    "pyrrolite": "Pyrrolite",
+    "pyrrolitePart": "Pièce en pyrrolite",
+    "cupriumCanister": "Bonbonne en cuprium",
+    "shadowDew": "Ombre de rosée",
+    "glaiveFragment": "Fragment de lance",
+    "blightshadeBezoar": "Bézoard de Gangrénombre",
+    "pyrroliteComponent": "Composant en pyrrolite",
+    "separatorCore": "Noyau séparateur",
+    "acridgen": "Âcrigène",
+    "cupriumGas": "Cuprium gazeux",
+    "hetoniteGas": "Hétonite gazeuse",
+    "pyrroliteGas": "Pyrrolite gazeuse",
+    "inergen": "Inergène",
+    "aquagen": "Aquagène",
+    "xiragen": "Xiragène",
+    "heavyXiragen": "Xiragène lourd",
+    "crimsonSpearleaf": "Lancéolée écarlate",
+    "talosCap": "Cèpe de Talos",
+    "protocolith": "Protocolite"
   },
   "common": {
     "copy": "Copier",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcane"
   },
   "weaponsList": {
     "industry01": "Industrie 0.1",
@@ -1087,7 +1117,11 @@
     "phantomPain": "Douleur fantôme",
     "amaranthineTassel": "Accessoire amaranthe",
     "beaconOfDuty": "Symbole du devoir",
-    "blessingOfLustrousCarmine": "Bénédiction carmin"
+    "blessingOfLustrousCarmine": "Bénédiction carmin",
+    "type42SolemnPhalanx": "Type 42 : phalange solennelle",
+    "junctionPoint": "Point de jonction",
+    "goldenAge": "Âge d'or",
+    "farsight": "Clairvoyance"
   },
   "cookies": {
     "title": "Nous utilisons des cookies",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "Alluvion d'énergie intense : Val du caveau des lames",
     "world_energy_point09_5": "Alluvion d'énergie intense : Val du caveau des lames",
     "world_energy_point09_6": "Alluvion d'énergie intense : Val du caveau des lames",
-    "world_energy_point09_7": "Alluvion d'énergie intense : Val du caveau des lames"
+    "world_energy_point09_7": "Alluvion d'énergie intense : Val du caveau des lames",
+    "world_energy_point10_1": "Alluvion d'énergie : col de Yinglung",
+    "world_energy_point10_2": "Alluvion d'énergie : col de Yinglung",
+    "world_energy_point10_3": "Alluvion d'énergie : col de Yinglung",
+    "world_energy_point10_4": "Alluvion d'énergie intense : col de Yinglung",
+    "world_energy_point10_5": "Alluvion d'énergie intense : col de Yinglung",
+    "world_energy_point10_6": "Alluvion d'énergie intense : col de Yinglung",
+    "world_energy_point10_7": "Alluvion d'énergie intense : col de Yinglung",
+    "world_energy_point11_1": "Alluvion d'énergie : ZE du nord de Wuling",
+    "world_energy_point11_2": "Alluvion d'énergie : ZE du nord de Wuling",
+    "world_energy_point11_3": "Alluvion d'énergie : ZE du nord de Wuling",
+    "world_energy_point11_4": "Alluvion d'énergie intense : ZE du nord de Wuling",
+    "world_energy_point11_5": "Alluvion d'énergie intense : ZE du nord de Wuling",
+    "world_energy_point11_6": "Alluvion d'énergie intense : ZE du nord de Wuling",
+    "world_energy_point11_7": "Alluvion d'énergie intense : ZE du nord de Wuling"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm tunnelier",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "Frappeciel",
     "eny_0112_jzmonk": "Hurleroc",
     "eny_0113_jzogre": "Ours à dents de sabre cuirassé",
-    "eny_0114_jzmking": "Hurlepic"
+    "eny_0114_jzmking": "Hurlepic",
+    "eny_0117_klhound": "Gangrénombre hyenard",
+    "eny_0118_klhog": "Gangrénombre bêtaplume",
+    "eny_0119_kltiger": "Gangrénombre ratisseur",
+    "eny_0120_klbear": "Gangrénombre de Fracas",
+    "eny_0121_klbud": "Gangrénombre avant-garde des FSY",
+    "eny_0122_kltdbud": "Gangrénombre élite des FSY",
+    "eny_0123_klcap": "Gangrénombre lancier des FSY",
+    "eny_0124_kltdcap": "Gangrénombre capitaine des FSY",
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarque"
   },
   "essencesPage": {
     "optimizer": "Optimiseur de farm",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Poignard à propulsion Fil émoussé G1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Gantelets Fil émoussé",
     "item_equip_t4_suit_crush_fracture_hand_02": "Gantelets Fil émoussé G1",
-    "item_equip_t4_suit_phy01_body_04": "Armure en fibres de spadamancien"
+    "item_equip_t4_suit_phy01_body_04": "Armure en fibres de spadamancien",
+    "item_equip_t4_parts_wuling00_body_01": "Armure de terrain du GIA",
+    "item_equip_t4_parts_wuling00_body_02": "Plaque de terrain du GIA",
+    "item_equip_t4_parts_wuling00_body_03": "Veste de terrain du GIA",
+    "item_equip_t4_parts_wuling00_edc_01": "Machette de terrain du GIA",
+    "item_equip_t4_parts_wuling00_edc_02": "Pierre à feu de terrain du GIA",
+    "item_equip_t4_parts_wuling00_edc_03": "Lampe de poche de terrain du GIA",
+    "item_equip_t4_parts_wuling00_hand_01": "Gants de terrain du GIA",
+    "item_equip_t4_parts_wuling00_hand_02": "Équipement pour mains de terrain du GIA",
+    "item_equip_t4_parts_wuling00_hand_03": "Bandes pour mains de terrain du GIA",
+    "item_equip_t4_parts_wuling02_body_01": "Armure lourde d'arpenteur de faille",
+    "item_equip_t4_parts_wuling02_body_02": "Armure légère d'arpenteur de faille",
+    "item_equip_t4_parts_wuling02_edc_01": "Plaque d'armure d'arpenteur de faille",
+    "item_equip_t4_parts_wuling02_hand_01": "Gants d'arpenteur de faille",
+    "item_equip_t4_parts_wuling02_hand_02": "Équipement de mains d'arpenteur de faille",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Plaque isolante pour hautes températures",
+    "item_equip_t4_suit_fire_natr01_hand_04": "EPI haute température pour mains",
+    "item_equip_t4_suit_heal01_body_03": "Cuirasse LYNX G1",
+    "item_equip_t4_suit_heal01_hand_03": "Gantelets LYNX G1",
+    "item_equip_t4_suit_usp02_body_03": "Armure légère en xiranite éternelle",
+    "item_equip_t4_suit_usp02_body_04": "Armure légère en xiranite éternelle G1",
+    "item_equip_t4_suit_usp02_edc_04": "Plaque fortifiante en xiranite éternelle",
+    "item_equip_t4_suit_usp02_hand_03": "Bandes pour mains en xiranite éternelle",
+    "item_equip_t4_suit_usp02_hand_04": "Équipement pour mains en xiranite éternelle"
   },
   "packs": {
     "none": "Unique",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "Équipement léger du GIA",
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflux",
-    "suit_crush_fracture": "Fil émoussé"
+    "suit_crush_fracture": "Fil émoussé",
+    "suit_generaltype": "Terrain du GIA"
   },
   "equipmentTypes": {
     "body": "Armure",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "Réduction des DÉG finale",
     "Sub": "Trait secondaire",
     "AllSkillDamageIncrease": "Bonus de tous les DÉG de compétence infligés",
-    "FireAndNaturalDamageIncrease": "Bonus de DÉG thermiques et naturels infligés"
+    "FireAndNaturalDamageIncrease": "Bonus de DÉG thermiques et naturels infligés",
+    "PhysicalResistance": "Résistance physique",
+    "NatureResistance": "Résistance naturelle",
+    "CryoResistance": "Résistance cryogénique",
+    "ElectricResistance": "Résistance électrique",
+    "HeatResistance": "Résistance thermique",
+    "TherResistance": "Résistance æthérique"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggeloi",
     "wiki_group_monster_landbreaker": "Brise-Terres",
     "wiki_group_monster_hongshan": "Pirates cangzei",
-    "wiki_group_monster_animal": "Faune"
+    "wiki_group_monster_animal": "Faune",
+    "wiki_group_monster_kl": "Les Gangrénombres",
+    "wiki_group_monster_js": "Fondamentaux"
   },
   "resitances": {
     "heatRez": "Résistance thermique",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "« Construction non organique »",
     "turbidityManifest": "« Manifeste de la Turbidité »",
     "thoseForsakenByTheLand": "« Les oubliés des Terres »"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Technique de xiranite",
+    "cupriumTechnique": "Technique de cuprium",
+    "hetoniteTechnique": "Technique d'hétonite",
+    "pyrroliteTechnique": "Technique de pyrrolite"
   }
 }

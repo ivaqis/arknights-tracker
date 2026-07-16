@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{1-ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione.",
-        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{1-ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione."
+        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione.",
+        "Quando si trovano nel raggio di <@ba.vup>{range_talent1buff:0}</> metri da un <@ba.key>vortice</>, gli operatori alleati ottengono un <@ba.vup>{ratio_speed:0%}</> di <#ba.speedup>Accelerazione</>, mentre i nemici subiscono un <@ba.vup>{ratio_speedreduction:0%}</> di <#ba.slow>Rallentamento</>. Questi effetti persistono per {duration_talent1buff:0} s dopo l'allontanamento dal raggio d'azione."
       ],
       "name": "Famiglia d'onore"
     },

@@ -135,7 +135,7 @@
       "name": "Absolute Composure"
     },
     "potential5": {
-      "description": "During the <@ba.key>Empyrean of Truth</> transformation, DMG Dealt by Zhuang Fangyi ignores <@ba.vup>{100*ignore_pulse_resist:0}</> of the enemy's <@ba.pulse>Electric Resistance</>.",
+      "description": "During the <@ba.key>Empyrean of Truth</> transformation, DMG Dealt by Zhuang Fangyi ignores <@ba.vup>{-ignore_pulse_resist:0}</> of the enemy's <@ba.pulse>Electric Resistance</>.",
       "name": "Storm of Transformation"
     }
   },

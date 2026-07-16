@@ -1,0 +1,167 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Afflizione da natura",
+      "Corrosione",
+      "Controllo nemici"
+    ],
+    "behaviourHateTags": [
+      "Moda"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione (SOLO SISTEMA, non visibile nel gioco)"
+    ],
+    "blocTag": "Accademia scientifica di Hongshan (ASH)",
+    "expertTags": [
+      "Tecnica di combattimento",
+      "Costituzione"
+    ],
+    "giftPreferTags": [
+      "Scelta dell'esploratore di Wuling"
+    ],
+    "hobbyTags": [
+      "Natura",
+      "Beneficenza"
+    ],
+    "raceTag": "Liberi"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
+      },
+      "name": "Interdizione dell'artiglieria",
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.natur>danni da natura</>. In caso di operatore controllato, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.natur>danni da natura</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.natur>danni da natura</> e ripristinano parzialmente i PA."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento"
+      },
+      "name": "Rete frantumagiada",
+      "description": "Crea una <@ba.key>Rete frantumagiada</> che infligge <@ba.natur>danni da natura</> e applica <#ba.naturalinflict>Afflizione da natura</> ai nemici nel raggio d'azione."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "baseDmgMultiplier": "Moltiplicatore danni base",
+        "baseStagger": "Vacillamento base",
+        "imprisonmentAndSusceptibilityDurationS": "Durata Prigionia e Suscettibilità (s)",
+        "susceptibility": "Suscettibilità",
+        "baseSusceptibility": "Suscettibilità base",
+        "maxBonusSusceptibilityFromWill": "Suscettibilità max bonus da Volontà",
+        "willRequiredForMaxBonusSusceptibility": "Volontà richiesta per suscettibilità max bonus",
+        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
+        "explosionStagger": "Vacillamento Esplosione",
+        "bonusDmgMultiplier": "Moltiplicatore danni bonus",
+        "bonusSusceptibilityDurationS": "Durata Suscettibilità bonus (s)",
+        "spReturn": "Restituzione PA",
+        "ultimateEnergyGain": "Incremento energia suprema"
+      },
+      "name": "Posizione IV di Yinglung",
+      "description": ""
+    },
+    "ultimate": {
+      "ultimate": {
+        "gloompurgerArrayCreationDmgMultiplier": "Moltiplicatore danni creazione Schiera purificaoscurità",
+        "gloompurgerArrayCreationStagger": "Vacillamento creazione Schiera purificaoscurità",
+        "gloompurgerArrayDurationS": "Durata Schiera purificaoscurità (s)",
+        "forcedCorrosionDurationS": "Durata Corrosione forzata (s)",
+        "clusterStrikeTotalDmgMultiplier": "Moltiplicatore danni totali Colpo a grappolo",
+        "gloompurgeArcanaDmgMultiplier": "Moltiplicatore danni Arcana purificaoscurità",
+        "gloompurgeArcanaStagger": "Vacillamento Arcana purificaoscurità"
+      },
+      "name": "Purificaoscurità",
+      "description": "Arcana crea una <@ba.key>Schiera purificaoscurità</> che infligge immediatamente <@ba.natur>danni da natura</> ai nemici nel raggio d'azione.\nQuando colpisce un nemico entro la <@ba.key>Schiera purificaoscurità</> con una Mossa letale o un <#ba.lastcombo>Colpo finale</> eseguito dall'operatore controllato, la <@ba.key>Schiera purificaoscurità</> scatena un <@ba.key>Colpo a grappolo</> che infligge danni ad area a quel nemico. L'effetto può essere attivato per un massimo di 2 volte.\nDopo che il <@ba.key>colpo a grappolo</> è stato attivato 2 volte, l'abilità suprema viene sostituita con <@ba.key>Arcana purificaoscurità</>.\n<@ba.key>Arcana purificaoscurità</>: infligge <@ba.natur>danni da natura</> ai nemici entro un ampio raggio d'azione."
+    },
+    "indicator": {
+      "levels": [
+        "Intelletto e Volontà operatore +8.",
+        "Intelletto e Volontà operatore +10.",
+        "Intelletto e Volontà operatore +10.",
+        "Intelletto e Volontà operatore +15."
+      ],
+      "name": "Acume/Convinzione"
+    },
+    "talent1": {
+      "levels": [
+        "Quando Arcana ha Intelletto ≥ Volontà, il tipo di abilità cambia in <@ba.key>Schiera di Arcana: INT</>. In caso contrario, l'abilità cambia in <@ba.key>Schiera di Arcana: VOL</>.\n<@ba.info>I requisiti in termini di attributi per i 2 tipi di Schiera di Arcana includono solo gli effetti dei livelli, talenti e potenziali dell'operatore, oltre ai bonus attributo forniti da equipaggiamento e armi assegnati.</>",
+        "Quando Arcana ha Intelletto ≥ Volontà, il tipo di abilità cambia in <@ba.key>Schiera di Arcana: INT</>. In caso contrario, l'abilità cambia in <@ba.key>Schiera di Arcana: VOL</>.\nAbilità suprema <@ba.key>Purificaoscurità</> migliorata:\n<@ba.key>Schiera di Arcana: INT</>:\n- Durante l'abilità suprema, Arcana ottiene <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Amplificazione delle Arti</>.\n<@ba.key>Schiera di Arcana: VOL</>:\n- Quando la <@ba.key>Schiera purificaoscurità</> (sequenza abilità suprema 1) e <@ba.key>Arcana purificaoscurità</> (sequenza abilità suprema 2) infliggono danni al nemico, applicano anche <@ba.vup>[Volontà × {spell_vul_rate_per_will:0.00%}]</> <#ba.naturalvul>Suscettibilità alla natura</> e <#ba.crystvul>Suscettibilità al ghiaccio</> (max: <@ba.vup>{spell_vul_rate:0.0%}</>) per <@ba.vup>{duration:0}</> s. Questo effetto non si accumula.\n<@ba.info>I requisiti in termini di attributi per i 2 tipi di Schiera di Arcana includono solo gli effetti dei livelli, talenti e potenziali dell'operatore, oltre ai bonus attributo forniti da equipaggiamento e armi assegnati.</>"
+      ],
+      "name": "Organizzazione tattica"
+    },
+    "talent2": {
+      "levels": [
+        "La <#ba.corrupt>Corrosione</> applicata da Arcana dura <@ba.vup>{duration_add:0}</> s in più e causa una riduzione della resistenza massima <@ba.vup>{1+corrupt_rate:0.00}</> volte rispetto all'originale.",
+        "La <#ba.corrupt>Corrosione</> applicata da Arcana dura <@ba.vup>{duration_add:0}</> s in più e causa una riduzione della resistenza massima <@ba.vup>{1+corrupt_rate:0.0}</> volte rispetto all'originale."
+      ],
+      "name": "Perfezionamento armi"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assegna alla camera di coltivazione per aumentare del 20% la velocità di crescita dei minerali rari.",
+        "Assegna alla camera di coltivazione per aumentare del 30% la velocità di crescita dei minerali rari."
+      ],
+      "name": "Sradica la montagna, fai bollire il mare"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assegna alla camera di coltivazione per aumentare del 20% la velocità di crescita delle piante in vitro.",
+        "Assegna alla camera di coltivazione per aumentare del 30% la velocità di crescita delle piante in vitro."
+      ],
+      "name": "Botanofilia"
+    },
+    "files": {
+      "main": "NOME IN CODICE: Arcana \nGENERE: F \nAFFILIAZIONE: Squadra tattica d'élite di Yinglung \nDATA DI NASCITA: 7 luglio \nRAZZA: Liberi \n[STATO ORIPATIA] \nI referti medici confermano la negatività all'Oripatia. \n\n[RISULTATI DELL'ESAME FISICO] \nFORZA FISICA: Normale \nABILITÀ DI COMBATTIMENTO: Eccellente \nACUME TATTICO: Straordinario \nASSIMILAZIONE DELLE ARTI DI ORIGINIUM: Eccellente",
+      "humanResources": "L'operatrice Arcana (nome alla nascita: Li Zhiyan) è una capitana della squadra tattica d'élite di Yinglung (STEY) dell'Accademia scientifica di Hongshan. A seguito delle ferite riportate durante un'operazione nell'Area interdetta di Wuling Nord, le è stato concesso un periodo di riposo e recupero prolungato. Grazie a un permesso speciale della STEY, Arcana è ora partner della Endfield Industries. \n\nPur non avendole intaccato lo spirito, l'aver prestato servizio in prima linea in pericolosi ambienti contaminati ha messo a dura prova il suo fisico, causandole un dolore costante e straziante. Dopo aver parlato con i membri dell'ASH, abbiamo appreso che l'Accademia spera che l'operatrice possa sfruttare questa opportunità per recuperare adeguatamente le forze. \"Dovrebbe essere una pausa cumulativa di tutte le pause che non ha fatto in questi anni\". \n— Martin Marvin Malen, Assistente, reparto risorse umane, Endfield Industries",
+      "file1": "La Capitana e Chen? Di loro non ne so molto. Ho sentito dire che un tempo erano molto amiche e che avevano persino fatto coppia durante le prove di selezione. Tra tutti i riservisti, erano quelle che si erano distinte di più. Tutti erano convinti che sarebbero diventate una coppia di promettenti Yinglung di stanza al Valico di Yinglung. Poi però... hanno iniziato a litigare senza sosta. E quando non litigavano, era perché si stavano preparando per la prossima discussione. Sai com'è fatta la Capitana: non si tira mai indietro. Alla fine sono state assegnate a gruppi diversi e la Capitana è diventata una Yinglung. E se anche Chen diventasse una Yinglung...? Preferisco non pensarci. La Capitana resterà sempre la Capitana. E se un giorno Chen venisse assegnata alla sua squadra... qualcuno finirebbe sicuramente per essere trasferito. Da osservatore esterno, credo che l'Istruttore Zhu e la Capitana abbiano preso la decisione giusta. L'assetto attuale è il migliore per entrambe. \n— Summit, soldato, squadra tattica d'élite di Yinglung \n\nNon è stata la STEY a insegnare alla Capitana come maneggiare il suo cannone d'assalto dell'unità delle Arti. Quando le ho chiesto spiegazioni, mi ha risposto che si tratta di una sorta di \"eredità\" lasciata da suo padre. C'è stato un periodo in cui la Capitana non riusciva a migliorare, per quanto si addestrasse duramente, quindi continuava a cambiare arma. Lame, lance, spade, alabarde, asce, scuri, uncini e tridenti... Ha provato di tutto, ha raggiunto un livello discreto con ogni arma, ha imparato ogni stile di combattimento, ma non era soddisfatta. Pensava di non essere abbastanza brava, così ha raddoppiato il regime di addestramento... C'era chi temeva che prima o poi sarebbe crollata per la fatica. Poi, un giorno, si è imbattuta nel cannone dell'unità delle Arti di suo padre, che era custodito in un altro luogo. Fino ad allora non aveva mai chiesto un permesso. Per un paio di giorni nessuno seppe dove fosse finita. Ma quando tornò, aveva deciso di usare l'arma di suo padre. E da quel momento, è diventata l'Arcana che conosciamo. Nessun Yinglung di stanza a Wuling può tenerle testa. \n— Phrase, soldatessa, squadra tattica d'élite di Yinglung \n\nSMETTILA DI DARE CREDITO ALLE VOCI! Diamine. Durante le prove di selezione, lei... beh, diciamo che... sì... ha avuto un leggero vantaggio su di me. Ma ora sono una combattente molto più brava di prima! Se dovessimo scontrarci di nuovo, le concederei tre attacchi a titolo gratuito! Anzi... magari solo due. Non temere. Sarebbe un incontro amichevole. Da quello che ricordo, Arcana era sempre accigliata e scontrosa, come se si portasse sempre dietro un enorme macigno. Ma da quando il suo desiderio riguardo l'Area interdetta di Wuling Nord si è realizzato, è un po' diversa. Eh già! È più simile a com'era prima, quando l'ho conosciuta. Ho provato a chiederle delle sue esperienze nell'Area interdetta, ma non ha voluto dirmi nulla. Non posso mica andare a tormentare l'Endmin con mille domande... Aspetta... forse posso farlo... \n— Chen Qianyu, ex riservista, squadra tattica d'élite di Yinglung \n\nLi Zhiyan? Quella ragazzina Yinglung? No. Non ricordo nulla di speciale. Ogni volta che la vedo, ha sempre un'espressione severa e un portamento rigido che mettono a disagio le persone. E poi continuava a ripetere \"Lady rappresentante! Lady rappresentante!\"... ho dovuto correggerla un'infinità di volte prima di riuscire a farle cambiare atteggiamento. La vita terrena è breve, ma lei è dotata di abilità straordinarie. E guarda come le sta usando: vive la vita più noiosa che ci sia e si costringe a seguire un sacco di regole che si è imposta da sola. Beh, le cose sono migliorate un po' ultimamente. Il viso le si è un po' addolcito, almeno questo è interessante. Forse quella sciocca ha fatto qualcosa. Bah. Quell'idiota senza cervello si è cacciata nei guai e si è ritrovata con un sacco di ferite. Stavolta non potrà farla franca. \n— Si",
+      "file2": "\"Può sembrare fredda e spietata, ma è proprio quello che serve nella STEY\". Il giudizio che gli estranei danno di Li Zhiyan in genere è molto semplice. \nTutte le azioni e le decisioni di Li possono essere riassunte in una singola frase: portare a termine la missione. I soldati della squadra tattica d'élite di Yinglung (STEY) combattono sempre in condizioni estreme. Una fredda razionalità e una determinazione incrollabile contribuiscono a garantire il successo delle missioni. Tutti i membri della squadra sapevano bene cosa voleva dire quando la \"ritirata in sicurezza\" non era inclusa tra gli obiettivi di un'operazione. \nLa STEY dispone di una camera segreta sorvegliata con estremo rigore. Non viene utilizzata per conservare file o documenti di intelligence, ma per custodire gli \"effetti personali\" degli Yinglung. Quando diventi uno Yinglung, ti viene consegnata una scatola in cui puoi riporre tutto ciò che desideri. Nel caso in cui dovessi cadere durante una missione, il contenuto della scatola sarà l'unica prova della tua esistenza. \nLa scatola di Li Zhiyan era rimasta vuota. \nAveva detto al custode della camera di non avere nulla. Tutto ciò che possedeva un tempo era rimasto sepolto nel miasma oscuro, freddo e tossico dell'Area interdetta di Wuling Nord. \nIl custode era stato costretto a dirle che quella era una regola della STEY. E questo l'aveva fatta riflettere. Quale oggetto la rappresentava davvero? Se le fosse stato tolto il titolo di Capitana della STEY, c'era qualcosa che avrebbe potuto mettere nella scatola? Iniziò a interrogarsi sul significato del \"sé\". \nMa le sue elucubrazioni non durarono a lungo. Poco dopo, passeggiando per il mercato, trovò un anziano artista a cui chiese di scrivere il suo nome con un pennello da calligrafia. Fu proprio quello, il nome, a finire nella scatola. \nA lei quella domanda non sembrava importante. Ciò che contava di più era sempre la missione successiva. \n...... \nFino a poco tempo fa, Li aveva visitato la camera segreta solo di rado. Durante le sue numerose visite, la sua scatola, un tempo semivuota, iniziò a riempirsi: una penna, un bottone, persino un pugnale... Ogni oggetto sembrava banale e insignificante, come se l'avesse semplicemente tirato fuori dalla sua scrivania. Alcuni sembravano regali ricevuti dai suoi vicini o ricordi che qualcuno voleva che lei tramandasse... Eppure Li li trattava tutti come tesori e li riponeva con cura nella sua scatola. \nQuando un Endministrator incuriosito le chiese spiegazioni, Li non rispose con un severo silenzio come faceva spesso in passato. Rispose invece in modo solenne. \n\"Ho guardato indietro e mi sono resa conto di essermi persa troppe cose che avrei dovuto custodire gelosamente\".",
+      "file3": "Il mio stile di combattimento? Si basa sugli schieramenti che ho appreso da mio padre, combinati con le tattiche Yinglung. \nMio padre diceva che gli schieramenti si basano sul principio del \"cambiamento\". Lo schieramento conferisce slancio all'attaccante e, allo stesso tempo, si muove con lui. Nessuno schieramento deve essere immutabile o permanente. Uno schieramento è davvero completo solo quando l'attaccante ne diventa parte integrante. \nMio padre mi portava in tanti posti quando ero bambina. A volte scendevamo i fiumi su tronchi. A volte ci arrampicavamo su alberi altissimi. E quando ci stancavamo, ci sdraiavamo semplicemente sull'erba a guardare le stelle... Mi ha insegnato a individuarne la posizione e a riconoscere le forme delle costellazioni. Solo più tardi ho capito che non si trattava semplicemente di un \"gioco\". Utilizzava un metodo discreto ma stimolante per trasmettermi la sua conoscenza degli schieramenti e dei cicli di ogni sorta di entità. \nGli Yinglung, invece, mi hanno insegnato il significato di \"permanenza\" e come restare immobile in mezzo a una tempesta. La tattica degli Yinglung si basa principalmente sullo \"slancio\" come mezzo per creare una forza inarrestabile. Ogni minaccia richiede una tattica diversa. Ma non importa se si combatte con la spadamanzia, la lanciamanzia o con gli schieramenti. Ogni Yinglung rimane al proprio posto e si concentra su come sferrare il colpo decisivo per annientare il nemico. \nHo provato a integrare le tattiche Yinglung con gli schieramenti di mio padre. Le prime si concentrano sulla squadra, sull'intero campo di battaglia e sul coordinamento delle mosse reciproche, proprio come il mio triplo cannone funziona come un'unica unità. Gli schieramenti di mio padre puntano invece sulla flessibilità e sul cambiamento. Combinare questi due approcci non è stato facile e mi ha creato non poche difficoltà per molto tempo... \nMa poi sono tornata nel luogo in cui giocavo con mio padre da bambina. Ho visto come le foglie cadenti attraversavano le rapide del fiume, come i crestaloni appollaiati alle estremità dei lunghi rami oscillavano al vento e come le costellazioni non si fermavano mai, pur conservando in qualche modo la loro forma. Allora ho capito all'improvviso il significato di ciò che era solito ripetere mio padre: la chiave sono io. Devo essere parte dello schieramento, il quarto pezzo. \nSono il nodo e il perno attorno al quale lo schieramento si trasforma, l'elemento variabile che colma il vuoto tattico. Una volta compresa la lezione, ho imparato a integrarmi nello schieramento. Con la mia bacchetta di giada ho posizionato il triplo cannone e ne ho regolato la potenza di fuoco finché non l'ho sentito come un'estensione del mio braccio e della mia gamba. Solo allora ho imparato a padroneggiarne l'uso. \nLe mie Arti di Originium si concentrano maggiormente sul \"flusso\" di energia per creare un equilibrio tra \"cambiamento\" e \"permanenza\". In un certo senso, le mie Arti sono simili a quelle praticate dall'operatrice Gilberta, che mi ha dato qualche consiglio su come esercitarle. Anche l'operatrice Arclight sapeva maneggiare le correnti elettriche con grande eleganza e maestria, così ho chiesto consiglio anche a lei. Mi ha risposto con una frase: \"Devi sentirlo\". In effetti, Dijiang è un insieme di individui incredibilmente talentuosi e abili e offre molte opportunità di apprendimento. Penso all'operatrice Last Rite, con la sua forza fuori dal comune, ma anche all'operatore Pogranichnik, con la sua conoscenza infinita delle formazioni militari... Spero che il mio soggiorno a bordo della Dijiang mi dia la possibilità di migliorare le mie abilità e di studiare i punti di forza di ogni scuola... \nSto anche cercando di raccogliere queste lezioni in un libro, in modo che altri Yinglung desiderosi di approfondire le loro conoscenze su schieramenti e cannoni pesanti possano usarlo come riferimento. Spero che questi scritti possano essere loro d'aiuto.",
+      "file4": "[REGISTRO DI RICEZIONE] \nDESTINATARIO: Li Zhiyan \nMITTENTE: Ling Yue \nINDIRIZZO DEL MITTENTE: Città di Wuling \nSTATO: Firmato e ricevuto \nCONTROLLO: Controllo superato \nMESSAGGIO VOCALE: \nZhiyan! Sono io, zia Liu! Ho saputo che ti stai concedendo un po' di riposo e relax alla Endfield. Avresti dovuto dirmelo, ragazza mia. Tutto il vicinato era molto preoccupato! Così ho chiesto alla signorina del Giardino della serenità di aiutarmi a consegnarti alcune delle cose che ti piacciono di più! Solo qualche torta di osmanto e un po' di budino dolce al kohl. L'ho preparato giusto qualche giorno fa per il compleanno del bebè, quindi va consumato in fretta. Mangia prima quello, va bene? \nAnche zia Shen ti pensa sempre. Ha aggiunto al pacco un paio di completi cuciti da lei. Ha sentito che ora sei su un'astronave e non faceva che lamentarsi di quanto faccia freddo nello spazio. Quindi sì, è per questo che ci sono quei vestiti, nel caso te lo stessi chiedendo. \nAh, ragazza mia, chissà quando tornerai. Sei sempre stata testarda. Stavi sempre seduta in un angolo, immobile. Non giocavi quasi mai con le altre ragazze della tua età. Preferivi aiutare le zie del quartiere. Così non va bene! Sei una ragazza adorabile, ma stiamo invecchiando e un giorno non ci saremo più. Ascolta tua zia e fatti degli amici alla Endfield. Ho visto il loro Endmin e la signorina di nome Perlica, e mi sembrano molto simpatici! Se non sai come rompere il ghiaccio, porta agli Endfielder i dolci di riso e il budino dolce di kohl e fa loro assaggiare la cucina di tua zia! Provaci un paio di volte e ti farai nuovi amici! \nTua zia ti ha visto crescere. Non ti è mai piaciuto parlare, ma so che sei attenta ai dettagli. Mi sono segnata tutte le volte che ci hai aiutato. Ti ricordi quando sei tornata con una foto della bimba di zia Shen? Zia Shen ha pianto tutto il giorno. Quella povera bambina se n'è andata quando aveva più o meno la tua età, così zia Shen ti ha trattata come se fossi sua figlia. E lo stesso vale per tutti noi. Tu sei una figlia di Wuling. La città sarà sempre casa tua, ovunque tu vada. \nAhimè, sto diventando troppo malinconica. Non sono molto brava con le parole, quindi forse dovrei fermarmi qui. Pensa solo a rimetterti in forze e cerca di tornare a casa presto. Una volta tornata a Wuling, zia ti preparerà un vero banchetto! Ricordati il consiglio di tua zia! Porta anche i tuoi nuovi amici! \n...... \nAspetta. Ah, zia Shen aveva qualcosa da dire ma ha ricominciato a piangere. Lascerò che Ling Yue consegni il pacco e lascerò che zia Shen registri un messaggio vocale più tardi. Spero di non disturbarti. Ehi! Non mettermi fretta! Non ci metterò una vita, promesso! Aspetta. Batteria scarica? Come... \n\n[REGISTRO CONSEGNE] \nMITTENTE: Li Zhiyan \nDESTINATARIO: Ling Yue \nINDIRIZZO DEL MITTENTE: OMV Dijiang \nSTATO CONSEGNA: Consegnato \nISPEZIONE: Ispezione superata \nELENCO ARTICOLI: \nScialle di Simonch: 5 pezzi \nBrezza di Kjersch: 5 barattoli \nEnigma del Portale cosmico: 3 set \nMiscela di citromi (raf.): 10 bottiglie \nMESSAGGIO VOCALE: \nLing Yue, sono io... Li Zhiyan. Ho ricevuto il pacco dalle anziane del quartiere. Per favore, fai in modo che non me ne mandino altri. A bordo della Dijiang c'è di tutto e, nonostante abbia regalato un sacco di cose agli Endmin e agli altri Endfielder, me ne sono rimaste ancora tante altre... \nCredo che alle signore siano piaciuti gli scialli che ho spedito l'ultima volta. Me ne sono procurata altri alla Divisione logistica, quindi lascia che siano le signore a smistarli. Ci sono anche miscele al gusto di frutta che non si trovano a Wuling e giocattoli per i bambini. \nNon preoccuparti del costo. Non spendo praticamente nulla. \nE di' a zia Shen che le cose sono donazioni della Endfield. Non voglio che si preoccupi troppo."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Abilità combo <@ba.key>Posizione IV di Yinglung</> migliorata:\nil moltiplicatore danni aumenta a <@ba.vup>{atk_scale_touch:0.0}</> volte rispetto all'originale.\n<@ba.key>Schiera di Arcana: INT</>: colpire un nemico sotto <@ba.key>Prigionia</> con l'abilità di combattimento di Arcana <#ba.return>restituisce</> <@ba.vup>{atb_return_wisd:0}</> PA aggiuntivi.\n<@ba.key>Schiera di Arcana: VOL</>: effetti della <#ba.naturalvul>Suscettibilità alla natura</> e della <#ba.crystvul>Suscettibilità al ghiaccio</> <@ba.vup>+{rate_pre:0%}</>.",
+      "name": "Osservando il mare"
+    },
+    "potential2": {
+      "description": "Intelletto e Volontà <@ba.vup>+{Will:0}</>, Intensità delle Arti <@ba.vup>+{PhysicalAndSpellInflictionEnhance:0}</>.",
+      "name": "Cuore di ferrium ghiacciato"
+    },
+    "potential3": {
+      "description": "Talento <@ba.key>Perfezionamento armi</> migliorato:\nLa <#ba.corrupt>Corrosione</> applicata da Arcana dura <@ba.vup>{duration_add:0}</> s in più e causa una riduzione della resistenza massima di un <@ba.vup>{corrupt_rate:0%}</> rispetto all'originale.",
+      "name": "Attaccante di pietra"
+    },
+    "potential4": {
+      "description": "Abilità suprema <@ba.key>Purificaoscurità</> migliorata: <@ba.vup>-{1-costvalue:0%}</> al costo di energia suprema.",
+      "name": "Mente dell'acciaio raffinato"
+    },
+    "potential5": {
+      "description": "Abilità suprema <@ba.key>Purificaoscurità</> migliorata:\n<@ba.key>Schiera di Arcana: INT</>: durante l'abilità suprema, Arcana ottiene <@ba.vup>{enhance_rate:0%}</> <#ba.spellenhance>Amplificazione delle Arti</>. Il moltiplicatore danni della <@ba.key>Arcana purificaoscurità</> (sequenza suprema 2) aumenta a <@ba.vup>{atk_scale:0.0}</> volte rispetto all'originale.\n<@ba.key>Schiera di Arcana: VOL</>: aumenta ulteriormente gli effetti della <#ba.naturalvul>Suscettibilità alla natura</> e della <#ba.crystvul>Suscettibilità al ghiaccio</> applicati dalla <@ba.key>Schiera purificaoscurità</> (sequenza suprema 1) e da <@ba.key>Arcana purificaoscurità</> (sequenza suprema 2) di <@ba.vup>+{spell_vul_rate_potential:0%}</>. Dopo aver lanciato <@ba.key>Arcana purificaoscurità</> (sequenza suprema 2), se abilità combo <@ba.key>Posizione IV di Yinglung</> è ancora nel suo tempo di recupero, riduce immediatamente la durata del tempo di recupero di una percentuale pari a <@ba.vup>{cd_minus:0%}</>.",
+      "name": "Lo sguardo verso casa"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Domanda per la farfalla",
+      "author": "栗樺茶",
+      "description": "I ricordi del passato si infrangono facilmente; i momenti di un tempo svaniscono a proprio piacimento."
+    },
+    "potential3": {
+      "name": "Ramo del ritorno a casa",
+      "author": "狂zip",
+      "description": "Il crestalone ha cercato riposo senza trovarlo, nessun ramo familiare dove riprendere fiato."
+    },
+    "potential5": {
+      "name": "Lama personificata",
+      "author": "Eteru",
+      "description": "Trasforma il corpo in una spada e condensa i pensieri nell'arcano."
+    }
+  }
+}

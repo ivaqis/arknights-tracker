@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch für {duration_talent1buff:0} Sek. an.",
-        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch für {duration_talent1buff:0} Sek. an."
+        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch {duration_talent1buff:0} Sek. lang an.",
+        "In einem Umkreis von <@ba.vup>{range_talent1buff:0}</> Metern um einen <@ba.key>Strudel</> herum erhalten verbündete Operatoren <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>Hast</>, Gegner erleiden <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Verlangsamen</>. Diese Effekte halten nach Verlassen des Wirkungsbereichs noch {duration_talent1buff:0} Sek. lang an."
       ],
       "name": "Ehrenfamilie"
     },

@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "В радиусе <@ba.vup>{range_talent1buff:0}</> м от <@ba.key>воронки</> союзные оперативники получают <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>ускорения</>, а враги — <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>замедления</>. Эти эффекты действуют еще {duration_talent1buff:0} сек. после выхода из области действия.",
-        "В радиусе <@ba.vup>{range_talent1buff:0}</> м от <@ba.key>воронки</> союзные оперативники получают <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>ускорения</>, а враги — <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>замедления</>. Эти эффекты действуют еще {duration_talent1buff:0} сек. после выхода из области действия."
+        "В радиусе <@ba.vup>{range_talent1buff:0}</> м от <@ba.key>воронки</> союзные оперативники получают <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>ускорения</>, а враги — <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>замедления</>. Эти эффекты действуют еще {duration_talent1buff:0} сек. после выхода из области действия.",
+        "В радиусе <@ba.vup>{range_talent1buff:0}</> м от <@ba.key>воронки</> союзные оперативники получают <@ba.vup>{ratio_speed:0%}</> <#ba.speedup>ускорения</>, а враги — <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>замедления</>. Эти эффекты действуют еще {duration_talent1buff:0} сек. после выхода из области действия."
       ],
       "name": "Друзья-товарищи"
     },

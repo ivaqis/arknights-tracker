@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "Moltiplicatore danni",
         "stagger": "Vacillamento",
-        "firefangVesperwingDurationS": "Durata vesprivoli zannafuoco (s)",
+        "firefangVesperwingsDurationS": "Durata vesprivoli zannafuoco (s)",
         "weaknessEffect": "Effetto Debolezza",
         "heatSusceptibility": "Suscettibilità al fuoco",
         "explosionDmgMultiplier": "Moltiplicatore danni Esplosione"
@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>.",
-        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>."
+        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</><@ba.key> orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>.",
+        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</><@ba.key> orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>."
       ],
       "name": "Cacciatore di trasgressioni"
     },
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Abilità di combattimento <@ba.key>Esorcismo ardente</> migliorata: l'abilità applica <@ba.vup>+{0-weak_scale:0%}</> di <#ba.weak>Indebolimento</> e <@ba.vup>+{vulnerable_scale:0%}</> di <#ba.firevul>Suscettibilità al fuoco</>. +<@ba.vup>{bat_duration:0}</> s di durata dei <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>.",
+      "description": "Abilità di combattimento <@ba.key>Esorcismo ardente</> migliorata: l'abilità applica <@ba.vup>+{weak_scale:0%}</> di <#ba.weak>Indebolimento</> e <@ba.vup>+{vulnerable_scale:0%}</> di <#ba.firevul>Suscettibilità al fuoco</>. +<@ba.vup>{bat_duration:0}</> s di durata dei <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>.",
       "name": "Lancia consacrata dal fuoco"
     },
     "potential2": {

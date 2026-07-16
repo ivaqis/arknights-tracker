@@ -135,7 +135,7 @@
       "name": "Compostezza assoluta"
     },
     "potential5": {
-      "description": "Quando si trasforma nell'<@ba.key>Empireo della verità</>, i danni inflitti da Zhuang Fangyi ignorano un <@ba.vup>{100*ignore_pulse_resist:0}</> di <@ba.pulse>resistenza all'elettricità</> del nemico.",
+      "description": "Quando si trasforma nell'<@ba.key>Empireo della verità</>, i danni inflitti da Zhuang Fangyi ignorano un <@ba.vup>{-ignore_pulse_resist:0}</> di <@ba.pulse>resistenza all'elettricità</> del nemico.",
       "name": "Tempesta della trasformazione"
     }
   },

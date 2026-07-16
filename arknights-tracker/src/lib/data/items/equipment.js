@@ -3,6 +3,7 @@
 export const equipment = {
   "item_equip_t0_parts_tundra01_body_01": {
     "level": 10,
+    "tier": "T0.5",
     "partType": 0,
     "rarity": 1,
     "pack": "",
@@ -35,18 +36,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "origocrust",
-        "amount": 10
-      },
-      {
-        "name": "wood",
-        "amount": 2
-      }
+      [
+        {
+          "name": "origocrust",
+          "amount": 10
+        },
+        {
+          "name": "wood",
+          "amount": 2
+        }
+      ]
     ]
   },
   "item_equip_t0_parts_tundra01_body_02": {
     "level": 10,
+    "tier": "T0.5",
     "partType": 0,
     "rarity": 1,
     "pack": "",
@@ -79,18 +83,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "origocrust",
-        "amount": 10
-      },
-      {
-        "name": "wood",
-        "amount": 2
-      }
+      [
+        {
+          "name": "origocrust",
+          "amount": 10
+        },
+        {
+          "name": "wood",
+          "amount": 2
+        }
+      ]
     ]
   },
   "item_equip_t0_parts_tundra01_hand_01": {
     "level": 10,
+    "tier": "T0.5",
     "partType": 1,
     "rarity": 1,
     "pack": "",
@@ -123,18 +130,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "origocrust",
-        "amount": 10
-      },
-      {
-        "name": "wood",
-        "amount": 2
-      }
+      [
+        {
+          "name": "origocrust",
+          "amount": 10
+        },
+        {
+          "name": "wood",
+          "amount": 2
+        }
+      ]
     ]
   },
   "item_equip_t0_parts_tundra01_hand_02": {
     "level": 10,
+    "tier": "T0.5",
     "partType": 1,
     "rarity": 1,
     "pack": "",
@@ -167,18 +177,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "origocrust",
-        "amount": 10
-      },
-      {
-        "name": "wood",
-        "amount": 2
-      }
+      [
+        {
+          "name": "origocrust",
+          "amount": 10
+        },
+        {
+          "name": "wood",
+          "amount": 2
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_01": {
     "level": 20,
+    "tier": "T1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -211,18 +224,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_02": {
     "level": 20,
+    "tier": "T1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -255,18 +271,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_03": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -299,18 +318,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_04": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -343,18 +365,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_05": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -387,18 +412,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_body_06": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "",
@@ -431,18 +459,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_edc_01": {
     "level": 20,
+    "tier": "T1",
     "partType": 2,
     "rarity": 2,
     "pack": "",
@@ -463,18 +494,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_edc_02": {
     "level": 20,
+    "tier": "T1",
     "partType": 2,
     "rarity": 2,
     "pack": "",
@@ -495,18 +529,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_hand_01": {
     "level": 20,
+    "tier": "T1",
     "partType": 1,
     "rarity": 2,
     "pack": "",
@@ -539,18 +576,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_hand_02": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "",
@@ -583,18 +623,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_hand_03": {
     "level": 20,
+    "tier": "T1",
     "partType": 1,
     "rarity": 2,
     "pack": "",
@@ -627,18 +670,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 20
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 5
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 20
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t1_parts_tundra01_hand_04": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "",
@@ -671,18 +717,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_stragi01_body_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "suit_stragi01",
@@ -719,18 +768,21 @@ export const equipment = {
       "cd": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_stragi01_edc_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_stragi01",
@@ -761,18 +813,21 @@ export const equipment = {
       "cd": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_stragi01_edc_02": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_stragi01",
@@ -803,18 +858,21 @@ export const equipment = {
       "cd": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_stragi01_hand_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "suit_stragi01",
@@ -851,18 +909,21 @@ export const equipment = {
       "cd": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_wisdwill01_body_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 0,
     "rarity": 2,
     "pack": "suit_wisdwill01",
@@ -899,18 +960,21 @@ export const equipment = {
       "duration": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_wisdwill01_edc_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_wisdwill01",
@@ -941,18 +1005,21 @@ export const equipment = {
       "duration": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_wisdwill01_edc_02": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 2,
     "rarity": 2,
     "pack": "suit_wisdwill01",
@@ -983,18 +1050,21 @@ export const equipment = {
       "duration": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t1_suit_wisdwill01_hand_01": {
     "level": 28,
+    "tier": "T1.1",
     "partType": 1,
     "rarity": 2,
     "pack": "suit_wisdwill01",
@@ -1031,18 +1101,21 @@ export const equipment = {
       "duration": 5
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 160
-      },
-      {
-        "name": "amethystComponent",
-        "amount": 20
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 160
+        },
+        {
+          "name": "amethystComponent",
+          "amount": 20
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_edc_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
@@ -1069,18 +1142,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_edc_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
@@ -1107,18 +1183,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_edc_03": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
@@ -1145,18 +1224,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_edc_04": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "",
@@ -1183,18 +1265,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_hand_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "",
@@ -1227,18 +1312,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_parts_tundra01_hand_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "",
@@ -1271,18 +1359,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_agi01_body_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 0,
     "rarity": 3,
     "pack": "suit_agi01",
@@ -1319,18 +1410,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_agi01_edc_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_agi01",
@@ -1361,18 +1455,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_agi01_edc_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_agi01",
@@ -1403,18 +1500,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_agi01_hand_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_agi01",
@@ -1451,18 +1551,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_str01_body_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 0,
     "rarity": 3,
     "pack": "suit_str01",
@@ -1499,18 +1602,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_str01_edc_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_str01",
@@ -1541,18 +1647,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_str01_edc_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_str01",
@@ -1583,18 +1692,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_str01_hand_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_str01",
@@ -1631,18 +1743,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_will01_body_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 0,
     "rarity": 3,
     "pack": "suit_will01",
@@ -1679,18 +1794,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_will01_edc_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_will01",
@@ -1721,18 +1839,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_will01_edc_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_will01",
@@ -1763,18 +1884,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_will01_hand_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_will01",
@@ -1811,18 +1935,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_wisd01_body_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 0,
     "rarity": 3,
     "pack": "suit_wisd01",
@@ -1859,18 +1986,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_wisd01_edc_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_wisd01",
@@ -1901,18 +2031,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_wisd01_edc_02": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_wisd01",
@@ -1943,18 +2076,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_wisd01_edc_03": {
     "level": 36,
+    "tier": "T2",
     "partType": 2,
     "rarity": 3,
     "pack": "suit_wisd01",
@@ -1985,18 +2121,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t2_suit_wisd01_hand_01": {
     "level": 36,
+    "tier": "T2",
     "partType": 1,
     "rarity": 3,
     "pack": "suit_wisd01",
@@ -2033,18 +2172,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 1200
-      },
-      {
-        "name": "ferriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 1200
+        },
+        {
+          "name": "ferriumComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "",
@@ -2077,18 +2219,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_body_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "",
@@ -2121,18 +2266,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
@@ -2159,18 +2307,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
@@ -2197,18 +2348,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_edc_03": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
@@ -2235,18 +2389,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_edc_04": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "",
@@ -2273,18 +2430,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "",
@@ -2317,18 +2477,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_parts_tundra01_hand_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "",
@@ -2361,18 +2524,21 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_agi01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_agi01",
@@ -2409,18 +2575,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_agi01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
@@ -2457,18 +2626,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_agi01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
@@ -2505,18 +2677,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_agi01_edc_03": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_agi01",
@@ -2553,18 +2728,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_agi01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_agi01",
@@ -2601,18 +2779,21 @@ export const equipment = {
       "phy_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2649,18 +2830,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_body_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2697,18 +2881,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_body_03": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2745,18 +2932,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_body_04": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2793,18 +2983,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2841,18 +3034,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2889,18 +3085,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_03": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2937,18 +3136,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_04": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -2985,18 +3187,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_05": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -3033,18 +3238,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_edc_06": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -3081,18 +3289,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_atk01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_atk01",
@@ -3129,18 +3340,21 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_str01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_str01",
@@ -3177,18 +3391,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_str01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_str01",
@@ -3225,18 +3442,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_str01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_str01",
@@ -3273,18 +3493,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_str01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_str01",
@@ -3321,18 +3544,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_str01_hand_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_str01",
@@ -3369,18 +3595,21 @@ export const equipment = {
       "dmg_taken_down": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3416,18 +3645,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_body_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3463,18 +3695,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3510,18 +3745,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3557,18 +3795,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_edc_03": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3604,18 +3845,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_usp01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_usp01",
@@ -3651,18 +3895,21 @@ export const equipment = {
       "atb_recover": 50
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_will01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_will01",
@@ -3699,18 +3946,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_will01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_will01",
@@ -3747,18 +3997,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_will01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_will01",
@@ -3795,18 +4048,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_will01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_will01",
@@ -3843,18 +4099,21 @@ export const equipment = {
       "heal_up": 0.30000001192092896
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_wisd01_body_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_wisd01",
@@ -3891,18 +4150,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_wisd01_body_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 0,
     "rarity": 4,
     "pack": "suit_wisd01",
@@ -3939,18 +4201,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_wisd01_edc_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_wisd01",
@@ -3987,18 +4252,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_wisd01_edc_02": {
     "level": 50,
+    "tier": "T3",
     "partType": 2,
     "rarity": 4,
     "pack": "suit_wisd01",
@@ -4029,18 +4297,21 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
-      {
-        "name": "valleyStockBill",
-        "amount": 9600
-      },
-      {
-        "name": "crystonComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t3_suit_wisd01_hand_01": {
     "level": 50,
+    "tier": "T3",
     "partType": 1,
     "rarity": 4,
     "pack": "suit_wisd01",
@@ -4077,18 +4348,858 @@ export const equipment = {
       "spell_dmg_up": 0.20000000298023224
     },
     "materials": [
+      [
+        {
+          "name": "valleyStockBill",
+          "amount": 9600
+        },
+        {
+          "name": "crystonComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
       {
-        "name": "valleyStockBill",
-        "amount": 9600
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
       },
       {
-        "name": "crystonComponent",
-        "amount": 50
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.0931578947368421,
+          0.102473683655262,
+          0.11178947240114212,
+          0.12110526114702225
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.10535714285714286,
+          0.11589285731315613,
+          0.12642857432365417,
+          0.13696429133415222
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          48
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          74,
+          81,
+          88,
+          96
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          49,
+          53,
+          58,
+          63
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.08850762511338889,
+          0.09735839068889618,
+          0.1062091514468193,
+          0.11505991220474243
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.1863157894736842,
+          0.204947367310524,
+          0.22357894480228424,
+          0.2422105222940445
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.21071428571428572,
+          0.23178571462631226,
+          0.25285714864730835,
+          0.27392858266830444
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          18
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          27,
+          29,
+          32,
+          35
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          18,
+          19,
+          21,
+          23
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.17701525022677778,
+          0.19471678137779236,
+          0.2124183028936386,
+          0.23011982440948486
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "SpellDamageIncrease",
+        "values": [
+          0.15526315789473685,
+          0.17078948020935059,
+          0.18631578981876373,
+          0.20184209942817688
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.17559523809523808,
+          0.19315476715564728,
+          0.21071428060531616,
+          0.22827380895614624
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "level": 60,
+    "tier": "T3.5",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_generaltype",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          36
+        ]
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          55,
+          60,
+          66,
+          71
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Main",
+        "values": [
+          37,
+          40,
+          44,
+          48
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.14751270852231482,
+          0.16226397454738617,
+          0.1770152449607849,
+          0.19176651537418365
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "dmg_up": 0.20000000298023224,
+      "dmg_taken_down": 0.8999999761581421,
+      "ultimate_gain_up": 0.10000000149011612
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 20
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 3000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 4
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 30
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 2
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_body_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "",
@@ -4123,18 +5234,41 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_body_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "",
@@ -4169,18 +5303,41 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "",
@@ -4215,18 +5372,51 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "",
@@ -4261,18 +5451,51 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "",
@@ -4307,18 +5530,51 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "",
@@ -4353,18 +5609,51 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_hand_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "",
@@ -4399,18 +5688,41 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_parts_wuling01_hand_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "",
@@ -4445,18 +5757,286 @@ export const equipment = {
     ],
     "blackboard": {},
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 16000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
       },
       {
-        "name": "cupriumComponent",
-        "amount": 50
+        "attrType": "Str",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "OriginiumArts",
+        "values": [
+          21.599999999999998,
+          23.760000228881836,
+          25.920000076293945,
+          28.079999923706055
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          115,
+          126,
+          138,
+          149
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "HealOutputIncrease",
+        "values": [
+          0.10799999999999998,
+          0.11879999935626984,
+          0.12960000336170197,
+          0.1404000073671341
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.21601861044623727,
+          0.23762047290802002,
+          0.2592223286628723,
+          0.2808241844177246
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.21428571428571427,
+          0.23571428656578064,
+          0.2571428716182709,
+          0.2785714268684387
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "level": 70,
+    "tier": "T4.3_star",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          86,
+          94,
+          103,
+          111
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "NormalSkillEfficiency",
+        "values": [
+          0.36,
+          0.3959999978542328,
+          0.4320000112056732,
+          0.46799999475479126
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {},
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4505,18 +6085,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_body_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4565,18 +6178,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_body_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4625,18 +6271,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_body_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4685,18 +6364,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_body_05": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4745,19 +6457,42 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ],
     "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_atb01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4806,18 +6541,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4866,18 +6634,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_edc_03": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4916,18 +6717,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -4976,18 +6800,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_edc_05": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -5026,18 +6883,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_edc_06": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -5086,18 +6966,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -5146,18 +7039,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_hand_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -5206,18 +7132,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atb01_hand_03": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_atb01",
@@ -5266,18 +7215,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5326,18 +7288,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_body_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5386,18 +7381,41 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_body_03": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5446,18 +7464,41 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_body_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5506,18 +7547,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5566,18 +7640,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_edc_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5626,18 +7733,41 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_edc_03": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5686,18 +7816,41 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5746,18 +7899,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_edc_05": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5806,18 +7992,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5866,18 +8085,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_atk02_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_atk02",
@@ -5926,18 +8178,51 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -5986,18 +8271,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_body_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6046,18 +8364,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_body_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6106,18 +8457,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_body_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6166,19 +8550,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_body_05": {
-    "url": "https://oem.re/1aPV20g",
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6227,18 +8643,42 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_edc_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6287,18 +8727,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6347,18 +8800,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6407,18 +8893,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_edc_05": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6467,18 +8986,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_edc_06": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6527,19 +9079,51 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_attri01_edc_07": {
-    "url": "https://oem.re/1aPV20g",
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6588,19 +9172,42 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_hand_01": {
-    "url": "https://oem.re/1aPV20g",
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6649,19 +9256,42 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_hand_02": {
-    "url": "https://oem.re/1aPV20g",
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6710,18 +9340,42 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
-    ]
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ],
+    "url": "https://oem.re/1aPV20g"
   },
   "item_equip_t4_suit_attri01_hand_03": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_attri01",
@@ -6770,18 +9424,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_burst01",
@@ -6831,18 +9498,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_burst01",
@@ -6892,18 +9592,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_burst01",
@@ -6953,18 +9686,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_burst01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_burst01",
@@ -7014,18 +9780,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_body_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7075,18 +9874,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_body_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7136,18 +9948,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_edc_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7197,18 +10022,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_edc_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7258,18 +10096,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_edc_03": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7319,18 +10170,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_edc_04": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7380,18 +10244,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_hand_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7441,18 +10318,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_combo_cd01_hand_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_combo_cd01",
@@ -7502,18 +10392,31 @@ export const equipment = {
       "max_stack": 2
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7564,18 +10467,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_body_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7626,18 +10562,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_body_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7688,18 +10657,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_body_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7750,18 +10752,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_body_06": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7812,18 +10847,41 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7874,18 +10932,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7936,18 +11027,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -7998,18 +11122,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8060,18 +11217,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_05": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8122,18 +11312,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_edc_06": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8184,18 +11407,41 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8246,18 +11492,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8308,18 +11587,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_hand_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8370,18 +11682,51 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_criti01_hand_04": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_criti01",
@@ -8432,18 +11777,41 @@ export const equipment = {
       "crit_up2": 0.05000000074505806
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_body_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8493,18 +11861,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_body_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8554,18 +11935,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_edc_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8615,18 +12009,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_edc_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8676,18 +12083,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_hand_01": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8737,18 +12157,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_crush_fracture_hand_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_crush_fracture",
@@ -8798,18 +12231,31 @@ export const equipment = {
       "duration": 20
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_expend_spell01_body_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_expend_spell01",
@@ -8859,18 +12305,31 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_expend_spell01_edc_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_expend_spell01",
@@ -8920,18 +12379,31 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_expend_spell01_hand_02": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_expend_spell01",
@@ -8981,18 +12453,31 @@ export const equipment = {
       "max_stack": 3
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9043,18 +12528,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_body_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9105,18 +12623,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9167,18 +12708,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9219,18 +12793,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9281,18 +12888,116 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_fire_natr01",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Wisd",
+        "values": [
+          32,
+          35,
+          38,
+          41
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          21,
+          23,
+          25,
+          27
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "AllSkillDamageIncrease",
+        "values": [
+          0.27599999999999997,
+          0.303600013256073,
+          0.3312000036239624,
+          0.3587999939918518
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "fire_dmg_up": 0.5,
+      "duration": 10,
+      "nature_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9343,18 +13048,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9405,18 +13133,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_fire_natr01_hand_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_fire_natr01",
@@ -9467,18 +13228,116 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_fire_natr01",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Wisd",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "FireAndNaturalDamageIncrease",
+        "values": [
+          0.19166666666666668,
+          0.2108333259820938,
+          0.23000000417232513,
+          0.24916666746139526
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "phy_spell_up": 30,
+      "fire_dmg_up": 0.5,
+      "duration": 10,
+      "nature_dmg_up": 0.5,
+      "duration2": 10
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9528,18 +13387,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_body_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9589,18 +13481,115 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Will",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9650,18 +13639,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_edc_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9701,18 +13723,41 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9762,18 +13807,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_edc_04": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9813,18 +13891,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_edc_05": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9874,18 +13985,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9935,18 +14079,51 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_heal01_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_heal01",
@@ -9996,18 +14173,115 @@ export const equipment = {
       "dmg_taken_down2": 0.699999988079071
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_heal01",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "heal_up": 0.20000000298023224,
+      "duration": 10,
+      "dmg_taken_down": 0.8500000238418579,
+      "dmg_taken_down2": 0.699999988079071
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_body_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10057,18 +14331,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_body_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10118,18 +14415,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_body_03": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10179,18 +14509,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_body_04": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10240,18 +14583,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_edc_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10291,18 +14647,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_edc_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10352,18 +14731,41 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10413,18 +14815,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_edc_04": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10474,18 +14909,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10535,18 +14983,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10596,18 +15077,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_phy01_hand_03": {
     "level": 70,
+    "tier": "T4.2",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_phy01",
@@ -10657,18 +15171,31 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 25000
-      },
-      {
-        "name": "hetoniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 25000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 250
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 25
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -10721,18 +15248,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -10785,18 +15345,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -10849,18 +15442,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_edc_03": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -10913,18 +15539,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_edc_04": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -10977,18 +15626,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -11041,18 +15713,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_poise01_hand_02": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_poise01",
@@ -11105,18 +15810,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
@@ -11167,18 +15895,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_edc_01": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
@@ -11229,18 +15990,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
@@ -11281,18 +16065,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_edc_03": {
     "level": 70,
+    "tier": "T4.1",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
@@ -11333,18 +16150,41 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 16000
-      },
-      {
-        "name": "cupriumComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 16000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 160
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_pulse_cryst01_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_pulse_cryst01",
@@ -11395,18 +16235,51 @@ export const equipment = {
       "duration2": 10
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_body_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 0,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11455,18 +16328,167 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_body_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Will",
+        "values": [
+          110,
+          121,
+          132,
+          143
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.1232142857142857,
+          0.13553571701049805,
+          0.14785714447498322,
+          0.16017857193946838
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 0,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          56
+        ]
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          87,
+          95,
+          104,
+          113
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          58,
+          63,
+          69,
+          75
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.1035089175054887,
+          0.11385980993509293,
+          0.12421070039272308,
+          0.13456159830093384
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_edc_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11515,18 +16537,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_edc_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11575,18 +16630,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_edc_03": {
     "level": 70,
+    "tier": "T4",
     "partType": 2,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11635,18 +16723,104 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 2,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          21
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Will",
+        "values": [
+          41,
+          45,
+          49,
+          53
+        ],
+        "enhanceGuaranteeTimes": "SingleAttrPity"
+      },
+      {
+        "attrType": "Sub",
+        "values": [
+          0.2070178350109774,
+          0.22771961987018585,
+          0.24842140078544617,
+          0.2691231966018677
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_hand_01": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11695,18 +16869,51 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
-      {
-        "name": "wulingStockBill",
-        "amount": 8000
-      },
-      {
-        "name": "xiraniteComponent",
-        "amount": 50
-      }
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
     ]
   },
   "item_equip_t4_suit_usp02_hand_02": {
     "level": 70,
+    "tier": "T4",
     "partType": 1,
     "rarity": 5,
     "pack": "suit_usp02",
@@ -11755,14 +16962,172 @@ export const equipment = {
       "duration": 15
     },
     "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "xiraniteComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "cupriumComponent",
+          "amount": 50
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 8000
+        },
+        {
+          "name": "hetoniteComponent",
+          "amount": 10
+        }
+      ],
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 80
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 5
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
       {
-        "name": "wulingStockBill",
-        "amount": 8000
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
       },
       {
-        "name": "xiraniteComponent",
-        "amount": 50
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Wisd",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
       }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
+    ]
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "level": 70,
+    "tier": "T4.3",
+    "partType": 1,
+    "rarity": 5,
+    "pack": "suit_usp02",
+    "displayAttr": [
+      {
+        "attrType": "Def",
+        "enhanceGuaranteeTimes": "",
+        "values": [
+          42
+        ]
+      },
+      {
+        "attrType": "Will",
+        "values": [
+          65,
+          71,
+          78,
+          84
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "Agi",
+        "values": [
+          43,
+          47,
+          51,
+          55
+        ],
+        "enhanceGuaranteeTimes": "DoubleAttrPity"
+      },
+      {
+        "attrType": "UltimateSpGainScalar",
+        "values": [
+          0.20535714285714285,
+          0.22589285671710968,
+          0.24642856419086456,
+          0.26696428656578064
+        ],
+        "enhanceGuaranteeTimes": "ExtraAttrPity"
+      }
+    ],
+    "blackboard": {
+      "hp_up": 1000,
+      "dmg_up": 0.1599999964237213,
+      "duration": 15
+    },
+    "materials": [
+      [
+        {
+          "name": "wulingStockBill",
+          "amount": 360
+        },
+        {
+          "name": "pyrroliteComponent",
+          "amount": 50
+        }
+      ]
     ]
   }
 };

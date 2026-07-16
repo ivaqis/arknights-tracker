@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "Multiplicateur de DÉG",
         "stagger": "Déséquilibre",
-        "firefangVesperwingDurationS": "Durée d'Ailes vespérales de feu (s)",
+        "firefangVesperwingsDurationS": "Durée d'Ailes vespérales de feu (s)",
         "weaknessEffect": "Effet Faiblesse",
         "heatSusceptibility": "Sensibilité thermique",
         "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion"
@@ -85,7 +85,7 @@
     },
     "talent1": {
       "levels": [
-        "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[{heal_base:0} + Intelligence × {heal_sub_multi:0.##}]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant {combo_duration} s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes.",
+        "Amélioration de la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[{heal_base:0} + Intelligence × {heal_sub_multi:0.##}]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant {combo_duration} s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes.",
         "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : quand elle touche un ennemi <@ba.key>surplombé</> par les <@ba.key>Ailes vespérales de feu</>, Camille restaure <@ba.heal>[{heal_base:0} + Intelligence × {heal_sub_multi:0.##}]</> PV à lui-même et octroie un bonus de <#ba.combo>Lien</> pendant {combo_duration} s. Lorsqu'il lance <@ba.key>Poursuite du chasseur</>, cet effet peut se déclencher même si la cible n'est <@ba.key>pas surplombée</> par des Ailes."
       ],
       "name": "Chasseur de transgression"
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Renforce la compétence de combat <@ba.key>Exorcisme ardent</> : la compétence applique <#ba.weak>Faiblesse</> <@ba.vup>+{0-weak_scale:0%}</> et <#ba.firevul>sensibilité thermique</> <@ba.vup>+{vulnerable_scale:0%}</>. Les <@ba.key>Ailes vespérales de feu</> <@ba.key>surplombent</> l'ennemi pendant <@ba.vup>{bat_duration:0}</> s supplémentaires.",
+      "description": "Amélioration de la compétence de combat <@ba.key>Exorcisme ardent</> : la compétence applique <@ba.vup>+{weak_scale:0%}</> de <#ba.weak>Faiblesse</> et <@ba.vup>+{vulnerable_scale:0%}</> de <#ba.firevul>sensibilité thermique</>. Les <@ba.key>Ailes vespérales de feu</> <@ba.key>surplombent</> l'ennemi pendant <@ba.vup>{bat_duration:0}</> s supplémentaires.",
       "name": "Lance consacrée par les flammes"
     },
     "potential2": {
@@ -130,7 +130,7 @@
       "name": "Pisteur de parfum de sorcière"
     },
     "potential3": {
-      "description": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : le temps de recharge est désormais de <@ba.vup>{coolDown:0}</> s, et les multiplicateurs de DÉG d'<@ba.key>Épine en plein cœur</> et <@ba.key>Poursuite du chasseur</> passent à <@ba.vup>{atk_scale_1_1:0.0}</> fois leur valeur d'origine. La récupération de PC passe à <@ba.vup>{atb:0.##}</> fois la valeur d'origine.",
+      "description": "Renforce la compétence de combo <@ba.key>Épine en plein cœur</> : le temps de recharge est désormais de <@ba.vup>{coolDown:0}</> s, et les multiplicateurs de DÉG d'<@ba.key>Épine en plein cœur</> et <@ba.key>Poursuite du chasseur</> passent à <@ba.vup>{atk_scale_1_1:0.0}</> fois leur valeur d'origine. La récupération de PC passe à <@ba.vup>{atb:0.##}</> fois la valeur d'origine.",
       "name": "Neutralisateur épineux"
     },
     "potential4": {

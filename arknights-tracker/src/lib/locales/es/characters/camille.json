@@ -43,7 +43,7 @@
       "battleSkill": {
         "dmgMultiplier": "Multiplicador de DAÑ",
         "stagger": "Tambaleo",
-        "firefangVesperwingDurationS": "Duración de Vesperala de colmillo ígneo (s)",
+        "firefangVesperwingsDurationS": "Duración de Vesperalas de colmillo ígneo (s)",
         "weaknessEffect": "Efecto de debilidad",
         "heatSusceptibility": "Susceptibilidad al calor",
         "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión"
@@ -55,10 +55,10 @@
       "comboSkill": {
         "dmgMultiplier": "Multiplicador de DAÑ",
         "stagger": "Tambaleo",
-        "spRecovery": "Rec. de PH",
+        "spRecovery": "Recuperación de PH",
         "hunterPursuitDmgMultiplier": "Multiplicador de DAÑ de Persecución del cazador",
         "hunterPursuitStagger": "Tambaleo por Persecución del cazador",
-        "hunterPursuitSpRecovery": "Recuperación de PH por Persecución del cazador",
+        "hunterPursuitSpRecovery": "Recuperación de PH. por Persecución del cazador",
         "ultimateEnergyGain": "Ganancia de Energía máxima"
       },
       "name": "Espina clavacorazones",
@@ -68,7 +68,7 @@
       "ultimate": {
         "dmgMultiplier": "Multiplicador de DAÑ",
         "stagger": "Tambaleo",
-        "spRecovery": "Rec. de PH",
+        "spRecovery": "Recuperación de PH",
         "hunterPursuitStateDurationS": "Duración del Estado de Persecución del cazador (s)"
       },
       "name": "Lluvia sanguínea",
@@ -122,7 +122,7 @@
   },
   "potentials": {
     "potential1": {
-      "description": "Habilidad de batalla <@ba.key>Exorcismo ardiente</> mejorada: La habilidad aplica <#ba.weak>Debilidad</> <@ba.vup>+{0-weak_scale:0%}</> y <#ba.firevul>Susceptibilidad al calor</> <@ba.vup>+{vulnerable_scale:0%}</>. Duración de <@ba.key>flotar</> de las <@ba.key>Vesperalas de colmillo ígneo</>: <@ba.vup>+{bat_duration:0}</> s.",
+      "description": "Habilidad de batalla <@ba.key>Exorcismo ardiente</> mejorada: La habilidad aplica <#ba.weak>Debilidad</> <@ba.vup>+{weak_scale:0%}</> y <#ba.firevul>Susceptibilidad al calor</> <@ba.vup>+{vulnerable_scale:0%}</>. Duración de <@ba.key>Flotar</> de las <@ba.key> Vesperalas de colmillo ígneo</>: <@ba.vup>+{bat_duration:0}</> s.",
       "name": "Lanza ungida por la llama"
     },
     "potential2": {
@@ -144,7 +144,7 @@
   },
   "arts": {
     "potential1": {
-      "name": "Regresa al Qingbo Bailey",
+      "name": "Regreso a la eternidad",
       "author": "およ",
       "description": "Avanza a través del Ciclo sin fin hasta llegar al final destrozado, y vuelve a ser completo una vez más."
     },

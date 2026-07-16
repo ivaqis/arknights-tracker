@@ -135,7 +135,7 @@
       "name": "Sang-froid absolu"
     },
     "potential5": {
-      "description": "Lorsque Zhuang Fangyi est transformée en <@ba.key>Empyréenne de la Vérité</>, les DÉG qu'elle inflige ignorent <@ba.vup>{100*ignore_pulse_resist:0}</> de la <@ba.pulse>résistance électrique</> de l'ennemi.",
+      "description": "Lorsque Zhuang Fangyi est transformée en <@ba.key>Empyréenne de la Vérité</>, les DÉG qu'elle inflige ignorent <@ba.vup>{-ignore_pulse_resist:0}</> de la <@ba.pulse>résistance électrique</> de l'ennemi.",
       "name": "Tempête de transformation"
     }
   },

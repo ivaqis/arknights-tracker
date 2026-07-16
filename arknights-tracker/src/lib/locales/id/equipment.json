@@ -545,6 +545,60 @@
     "decoDesc": "Peralatan penting untuk operasi di lingkungan khusus. \nSemua ahli mesin yang melakukan perbaikan listrik di lokasi letupan Hawar harus mengenakan APD khusus untuk menghindari cedera yang disebabkan oleh semburan listrik yang tidak wajar.",
     "setBonus": "Efek set 3 bagian: Intellect si pemakai <@ba.vup>+{wisd_up}</>. \nSaat HP si pemakai lebih dari {hp_ratio:0%}, <@ba.key>Arts DMG</> akan meningkat sebesar <@ba.vup>+{spell_dmg_up:0%}</>."
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "Armor Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Kukira aku cuma membeli amunisi. Lalu, aku hitung dengan lebih teliti dan menyadari bahwa tak mungkin ada yang lebih bagus dari ini.”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "Pelat Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nBerkat kapasitas produksi AIC yang besar, armor pelat seri Misi Lapangan ini pasti bisa mengalahkan kompetitornya karena menawarkan perlindungan yang lebih baik dan harga yang jauh lebih terjangkau.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "Rompi Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Boleh minta sedikit lagi? Rompi ini ternyata bagus untuk bahan bangunan.”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "Parang Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk pelatihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nSebilah pedang multifungsi. Pedang ini bisa menimbulkan damage secara efektif kepada Aggelos dan pertahanan musuh, serta rintangan lain yang menghadang.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "Pemantik Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk pelatihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Sama seperti orang-orang yang percaya kepada sebuah pemantik, aku pun percaya kepada setiap sesi latihan yang kujalani di Endfield Industries.”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "Senter Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Aku menantikan operasi tempur berikutnya seperti orang-orang menantikan datangnya fajar.”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "Sarung Tangan Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nDesainnya terinspirasi dari struktur berserat tanaman rambat tertentu. Produk ini ringan, tipis, dan berpori.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "Pelindung Tangan Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \n“Sensasi sentuhannya sangat sempurna. Kalian tidak mau masuk ke pasar APD konstruksi dan pabrik?”",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "Bebat Tangan Misi Lapangan AIC",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Satu set peralatan tempur yang dirancang oleh Endfield Industries untuk latihan operator. Seri ini disambut baik oleh pasar karena nilai yang ditawarkan sangat sepadan dengan harganya. \nPeralatan pelindung khusus untuk tangan. Peralatan ini dirancang untuk operator tempur yang perlu mengoperasikan mesin-mesin rumit.",
+    "setBonus": "Efek set 3 bagian: Si pemakai akan mendapatkan <@ba.vup>+{dmg_up:0%}</> DMG yang ditimbulkan untuk semua tipe DMG, <@ba.vup>{1-dmg_taken_down:0%}</> Pengurangan DMG terhadap semua tipe DMG, dan Efisiensi Perolehan Ultimate <@ba.vup>+{ultimate_gain_up:0%}</>."
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "Pelat Redeemer",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -591,6 +645,36 @@
     "name": "Pelindung Tangan Redeemer",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Kepingan gear ini adalah simbol untuk menghadapi tantangan di depan. “Tugas ini belum berakhir, dan perjalanannya pun belum tuntas.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "Armor Berat Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancers merancang set peralatan khusus ini untuk para petarung yang sering melakukan operasi di area yang sangat berbahaya. \n“Untuk menyusuri celah besar, aku mengenakan zirah giok Xiranite.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "Armor Ringan Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancers merancang set peralatan khusus ini untuk para petarung yang sering melakukan operasi di area yang sangat berbahaya. \n“Saat aku menatap musim dingin, hidup dan mati menjadi sejelas siang hari.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "Lempeng Armor Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancers merancang set peralatan khusus ini untuk para petarung yang sering melakukan operasi di area yang sangat berbahaya. \n“Dengan alat pemahat batu, ukirlah nisan pusaraku.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "Sarung Tangan Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancers merancang set peralatan khusus ini untuk para petarung yang sering melakukan operasi di area yang sangat berbahaya. \n“Saat kudengar guntur menggelegar, segala rasa takutku sirna seketika.”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "Pelindung Tangan Penjelajah Celah",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Biro Swordmancers merancang set peralatan khusus ini untuk para petarung yang sering melakukan operasi di area yang sangat berbahaya. \n“Panji yang terbentang akan menjadi kain penyelimut yang mengantarku menuju peristirahatan abadi.”",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -1029,19 +1113,19 @@
     "name": "Armor Ringan Xiranflow",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh Pabrik AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Perlengkapan eksperimen yang diajukan sebagai peralatan standar untuk Korps Penjaga Wuling.\nKarena produksi massal Xiranite kini sudah terjamin, banyak proyek Litbang peralatan Xiranite yang tadinya ditangguhkan pun kini mulai dijalankan kembali.",
-    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.corrupt>Electrification</> atau <#ba.conduct>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
+    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.conduct>Electrification</> atau <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
   },
   "item_equip_t4_suit_expend_spell01_edc_02": {
     "name": "Pentungan Xiranflow",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh Pabrik AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Senjata eksperimen yang diajukan sebagai peralatan standar untuk Korps Penjaga Wuling.\nPentungan ringan ... tapi sangat ampuh untuk menghentikan orang. Kalau perlu, pentungan ini bahkan bisa mematahkan tulang hewan buas.",
-    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.corrupt>Electrification</> atau <#ba.conduct>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
+    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.conduct>Electrification</> atau <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
   },
   "item_equip_t4_suit_expend_spell01_hand_02": {
     "name": "Sarung Tangan Xiranflow",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh Pabrik AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Perlengkapan eksperimen yang diajukan sebagai peralatan standar untuk Korps Penjaga Wuling.\n“Maksudmu, sarung tangan ini akan .... Apa ...? Aku bisa menyentuh mesin Xiranite untuk mengisi daya sarung tangan ini? Itu bukan cuma bualan, ‘kan ...?”",
-    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.corrupt>Electrification</> atau <#ba.conduct>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
+    "setBonus": "Efek set 3 bagian: ATK si pemakai <@ba.vup>+{atk_up:0%}</>.\nSetiap kali <#ba.consume>memakai</> <#ba.conduct>Electrification</> atau <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan tumpukan buff dengan jumlah setara dengan <#ba.statuslevel>Level Status</> Arts Reaction yang dipakai, dan setiap tumpuk buff ini akan memberikan <@ba.pulse>Electric DMG Dealt</> dan <@ba.natur>Nature DMG Dealt</> <@ba.vup>+{spell_dmg_up:0%}</> selama {duration} dtk. Jumlah maks tumpukan buff: {max_stack}. Durasi setiap tumpukan dihitung sendiri-sendiri."
   },
   "item_equip_t4_suit_fire_natr01_body_01": {
     "name": "Eksoskeleton Kerja Panas",
@@ -1073,6 +1157,12 @@
     "decoDesc": "Peralatan dengan rating ketahanan api yang sangat baik. \n“Ada yang mendengar lagu di gunung berapi itu.”",
     "setBonus": "Efek set 3 bagian: Intensitas Arts si pemakai <@ba.vup>+{phy_spell_up:0}</>. \nSetelah mengakibatkan <#ba.burning>Combustion</>, si pemakai akan mendapatkan <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> selama {duration} dtk. Setelah mengakibatkan <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> selama {duration2} dtk. Efek ini tidak bisa ditumpuk."
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "Lempeng Insulasi Kerja Panas",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peralatan dengan rating ketahanan api yang sangat baik. \n“Bahkan lava pun tak mampu melelehkan benda ini, Kawan. Seperti cintaku kepadanya. Takkan bisa melelehkan dia dan mencapai hatinya.”",
+    "setBonus": "Efek set 3 bagian: Intensitas Arts si pemakai <@ba.vup>+{phy_spell_up:0}</>. \nSetelah mengakibatkan <#ba.burning>Combustion</>, si pemakai akan mendapatkan <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> selama {duration} dtk. Setelah mengakibatkan <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> selama {duration2} dtk. Efek ini tidak bisa ditumpuk."
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "Sarung Tangan Kerja Panas",
     "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -1091,6 +1181,12 @@
     "decoDesc": "Peralatan dengan rating ketahanan api yang sangat baik. \n“Ssst, jangan berisik. Nanti dia bangun.”",
     "setBonus": "Efek set 3 bagian: Intensitas Arts si pemakai <@ba.vup>+{phy_spell_up:0}</>. \nSetelah mengakibatkan <#ba.burning>Combustion</>, si pemakai akan mendapatkan <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> selama {duration} dtk. Setelah mengakibatkan <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> selama {duration2} dtk. Efek ini tidak bisa ditumpuk."
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "APD Tangan Kerja Panas",
+    "description": "Dirancang secara independen oleh Endfield Industries dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peralatan dengan rating ketahanan api yang sangat baik. \nSatu set pelindung tangan yang menawarkan perlindungan sangat baik tanpa mengorbankan ruang gerak untuk bekerja dengan cekatan. Pengguna bisa dengan aman menangani berbagai macam objek tanpa mengalami luka bakar.",
+    "setBonus": "Efek set 3 bagian: Intensitas Arts si pemakai <@ba.vup>+{phy_spell_up:0}</>. \nSetelah mengakibatkan <#ba.burning>Combustion</>, si pemakai akan mendapatkan <@ba.fire>Heat DMG</> +<@ba.vup>{fire_dmg_up:0%}</> selama {duration} dtk. Setelah mengakibatkan <#ba.corrupt>Corrosion</>, si pemakai akan mendapatkan <@ba.natur>Nature DMG</> +<@ba.vup>{nature_dmg_up:0%}</> selama {duration2} dtk. Efek ini tidak bisa ditumpuk."
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "Armor Berat LYNX",
     "description": "Dirancang oleh Rhodes Island dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -1101,6 +1197,12 @@
     "name": "Cuirass LYNX",
     "description": "Dirancang oleh Rhodes Island dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Peralatan andalan tim medis. \nPetarung yang mengenakan Cuirass LYNX biasanya dijuluki “Kit Medis Berjalan”. Para penyelamat ini kerap mengisi saku dan kantong di armor mereka dengan suplai medis darurat.",
+    "setBonus": "Efek set 3 bagian: Efisiensi HP Treatment si pemakai <@ba.vup>+{heal_up:0%}</>. \nSetelah si pemakai memberikan HP treatment kepada satu rekan tertarget, si target juga akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down:0%}</>- untuk semua tipe DMG selama {duration} dtk. Jika treatment melampaui HP Maks target, si target akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down2:0%}</>- untuk semua tipe DMG. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "Cuirass LYNX T1",
+    "description": "Dirancang oleh Rhodes Island dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peralatan andalan tim medis. Petarung yang mengenakan Cuirass LYNX biasanya dijuluki “Kit Medis Berjalan”. Para penyelamat ini kerap mengisi saku dan kantong di armor mereka dengan suplai medis darurat.",
     "setBonus": "Efek set 3 bagian: Efisiensi HP Treatment si pemakai <@ba.vup>+{heal_up:0%}</>. \nSetelah si pemakai memberikan HP treatment kepada satu rekan tertarget, si target juga akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down:0%}</>- untuk semua tipe DMG selama {duration} dtk. Jika treatment melampaui HP Maks target, si target akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down2:0%}</>- untuk semua tipe DMG. Efek ini tidak bisa ditumpuk."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1143,6 +1245,12 @@
     "name": "Gauntlet LYNX",
     "description": "Dirancang oleh Rhodes Island dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Peralatan andalan para medis. \nRhodes Island masih mempraktikkan tradisi melengkapi APD mereka dengan modul pemantauan Oripati.",
+    "setBonus": "Efek set 3 bagian: Efisiensi HP Treatment si pemakai <@ba.vup>+{heal_up:0%}</>. \nSetelah si pemakai memberikan HP treatment kepada satu rekan tertarget, si target juga akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down:0%}</>- untuk semua tipe DMG selama {duration} dtk. Jika treatment melampaui HP Maks target, si target akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down2:0%}</>- untuk semua tipe DMG. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "Gauntlet LYNX T1",
+    "description": "Dirancang oleh Rhodes Island dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peralatan andalan tim medis. Rhodes Island masih mempraktikkan tradisi melengkapi APD mereka dengan modul pemantauan Oripati.",
     "setBonus": "Efek set 3 bagian: Efisiensi HP Treatment si pemakai <@ba.vup>+{heal_up:0%}</>. \nSetelah si pemakai memberikan HP treatment kepada satu rekan tertarget, si target juga akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down:0%}</>- untuk semua tipe DMG selama {duration} dtk. Jika treatment melampaui HP Maks target, si target akan mendapatkan Pengurangan DMG sebesar <@ba.vup>{1-dmg_taken_down2:0%}</>- untuk semua tipe DMG. Efek ini tidak bisa ditumpuk."
   },
   "item_equip_t4_suit_phy01_body_01": {
@@ -1289,6 +1397,18 @@
     "decoDesc": "Peninggalan seorang Tianshi “gila”. \nBagi kebanyakan orang, sulit untuk menghubungkan pekerjaan dapur dengan Xiranite. Tapi, ada seorang warga Wuling yang justru menemukan inspirasi desainnya saat bersantap di restoran.",
     "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "Armor Ringan Eternal Xiranite",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peninggalan seorang Tianshi “gila”. \n“Menurutku itu terlalu berat. Lihat. Yang ini sederhana sekali, seperti tulang-belulang beast yang sudah memutih di pinggir jalan. Kalau bepergian itu harus seringan mungkin, paham? SERINGAN MUNGKIN!”",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "Armor Ringan Eternal Xiranite T1",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peninggalan seorang Tianshi “gila”. \n“Menurutku itu terlalu berat. Lihat. Yang ini sederhana sekali, seperti tulang-belulang beast yang sudah memutih di pinggir jalan. Kalau bepergian itu harus seringan mungkin, paham? SERINGAN MUNGKIN!”",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Inti Daya Eternal Xiranite",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -1307,6 +1427,12 @@
     "decoDesc": "Peninggalan seorang Tianshi “gila”. \n... Konon, Tianshi gila itu melihat sebuah “siklus aliran mandiri” dalam hidangan hot pot buatan seorang koki Ursus. Inspirasi itu membuatnya mampu melipatgandakan durasi daya APD Eternal Xiranite.",
     "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "Lempeng Penopang Eternal Xiranite",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peninggalan seorang Tianshi “gila”. \nTianshi yang bertanggung jawab untuk mendorong produksi desain warisan juga menyadari bahwa desainnya terlalu sederhana. Oleh sebab itu, mereka merancang lempeng pelindung tambahan untuk memperkuat pertahanannya.",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Sarung Tangan Eternal Xiranite",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
@@ -1317,6 +1443,18 @@
     "name": "Sarung Tangan Eternal Xiranite T1",
     "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
     "decoDesc": "Peninggalan seorang Tianshi “gila”. \n... Hari demi hari berlalu dan Tianshi gila itu mulai menolak segala makanan yang “tak membawa inspirasi”. Setelah tubuhnya kurus kering, dia pun menghilang ke alam liar untuk mencari “Xiranite yang layak disantap”.",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "Bebat Tangan Eternal Xiranite",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peninggalan seorang Tianshi “gila”. \n“Siapa coba yang kepikiran menenunkan Xiranite ke dalam serat ini? Kau gila, ya?”",
+    "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "Pelindung Tangan Eternal Xiranite",
+    "description": "Dirancang oleh Hongshan Swordmancers dan dirakit oleh AIC. Peralatan ini bisa meningkatkan kemampuan tempur pemakainya.",
+    "decoDesc": "Peninggalan seorang Tianshi “gila”. \nKenakan ini .... Biarkan kekuatannya mengalir di kulitmu, biarkan energi meresap ke dalam daging dan darahmu.",
     "setBonus": "Efek set 3 bagian: HP si pemakai <@ba.vup>+{hp_up}</>. \nSetelah si pemakai mengakibatkan <#ba.enhance>Amp</>, <#ba.guard>Protected</>, <#ba.vulnerable>Susceptibility</>, atau <#ba.weak>Weakened</>, rekan tim lain akan mendapatkan DMG Dealt <@ba.vup>+{dmg_up:0%}</> selama {duration} dtk. Efek ini tidak bisa ditumpuk."
   }
 }

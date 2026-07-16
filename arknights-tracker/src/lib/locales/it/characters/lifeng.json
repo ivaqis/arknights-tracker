@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Durata Suscettibilità fisica (s)"
       },
       "name": "Maledizione torbida",
-      "description": "Agita l'arma ad asta più volte per sferrare due colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica invece <#ba.physicalvul>Suscettibilità fisica</> a quel nemico."
+      "description": "Agita l'arma ad asta più volte per sferrare 2 colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica anche <#ba.physicalvul>Suscettibilità fisica</> a quel nemico."
     },
     "comboSkill": {
       "comboSkill": {

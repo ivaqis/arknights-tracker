@@ -358,7 +358,9 @@
     "special_1_3_1": "กำปั้น​ไม่​หวนคืน",
     "weponbox_1_3_1": "ตั๋ว​ปม​สกา​เล็ต",
     "special_1_3_2": "ผู้​ล้างบาป",
-    "weponbox_1_3_2": "ตั๋ว​สีแดง​ชาด"
+    "weponbox_1_3_2": "ตั๋ว​สีแดง​ชาด",
+    "special_1_4_1": "เหนือ​คะนึง​พิทักษ์​ รอยแยก​มิ​เลือน",
+    "weponbox_1_4_1": "ตั๋ว​ระดับ​ทหาร"
   },
   "pages": {
     "home": "หน้าแรก",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "จารึก​อนุสรณ์​: บทเพลง​คร่ำครวญ​แห่ง​ความ​โศกเศร้า",
     "umbralMonument": "อนุสาวรีย์​แห่ง​เงามืด",
     "peacekeepersNocturneSignIn": "ลงชื่อ​เข้าสู่ระบบ​ บทเพลง​รัตติกาล​ของ​ผู้พิทักษ์",
-    "northwardToPerilSignIn": "ลงชื่อ​เข้าสู่ระบบ​ ขึ้น​เหนือ​สู่​ภยันตราย"
+    "northwardToPerilSignIn": "ลงชื่อ​เข้าสู่ระบบ​ ขึ้น​เหนือ​สู่​ภยันตราย",
+    "echoesOfWar": "เสียงสะท้อน​แห่ง​สงคราม",
+    "gazeTowardsTheNorthernExclusion": "มอง​สู่​เขต​พิเศษ​แดน​เหนือ",
+    "tributeOfCompanionship": "เครื่องบรรณาการ​แห่ง​มิตรภาพ",
+    "heatRageMegaArena": "เพลิง​พิโรธ​! เมก้า​อารี​น่า​!",
+    "monumentalEtchingBeastlyHowl": "การแกะสลัก​อนุสรณ์​: เสียง​หอน​แห่ง​อสูร​ร้าย",
+    "theRootedRealm": "ดินแดน​หยั่งราก",
+    "protocolPassBlightedSea": "บัตร​ผ่าน​โปร​โต​คอล​: ทะเล​เสื่อมสลาย",
+    "gazeNorthToTheRiftSignIn": "ลงชื่อ​เข้าสู่ระบบ​มอง​ทางเหนือ​สู่​รอยแยก"
   },
   "mouths": {
     "january": "มกราคม",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "ซี​เรน​ไนต์​หนัก​แบบ​เหลว",
     "centuryRind": "เปลือก​ร้อย​ปี",
     "caudalGoldscale": "เกล็ด​ทอง​ส่วน​หาง",
-    "stickerSafetyHelmet": "สติกเกอร์​: หมวกนิรภัย"
+    "stickerSafetyHelmet": "สติกเกอร์​: หมวกนิรภัย",
+    "pyrrolite": "ไพร์​โร​ไลท์",
+    "pyrrolitePart": "ชิ้นส่วน​ไพร์​โร​ไลท์",
+    "cupriumCanister": "ถัง​คู​เพ​รี​ยม",
+    "shadowDew": "น้ำค้าง​เงา",
+    "glaiveFragment": "เศษ​เสี้ยว​เกล​ฟ",
+    "blightshadeBezoar": "นิ่ว​เงา​เสื่อมโทรม",
+    "pyrroliteComponent": "ส่วนประกอบ​ไพร์​โร​ไลท์",
+    "separatorCore": "แกน​ตัว​แยก",
+    "acridgen": "แอค​ริด​เจน",
+    "cupriumGas": "ก๊าซ​คู​เพ​รี​ยม",
+    "hetoniteGas": "ก๊าซ​เฮ​โท​ไนต์",
+    "pyrroliteGas": "ก๊าซ​ไพร์​โร​ไลท์",
+    "inergen": "อิน​เนอร์​เจน",
+    "aquagen": "อะ​ค​วา​เจน",
+    "xiragen": "ซี​รา​เจน",
+    "heavyXiragen": "ซี​รา​เจน​หนัก",
+    "crimsonSpearleaf": "ใบ​หอก​สีชา​ด",
+    "talosCap": "เห็ด​ทาล​อส",
+    "protocolith": "โปร​โต​โค​ลิ​ธ"
   },
   "common": {
     "copy": "คัดลอก",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "จวง​ฟาง​อี้",
     "miFu": "หมี่​ฟู่",
     "mifu": "หมี่​ฟู่",
-    "camille": "คา​มิลล์"
+    "camille": "คา​มิลล์",
+    "arcane": "ปริศนา"
   },
   "weaponsList": {
     "industry01": "อิน​ดัส​ทรี​ 0.1",
@@ -1087,7 +1117,11 @@
     "phantomPain": "ความเจ็บปวด​ลวง",
     "amaranthineTassel": "อมา​รัน​ไธ​น์​ ทาส​เซล",
     "beaconOfDuty": "คบเพลิง​แห่ง​หน้าที่",
-    "blessingOfLustrousCarmine": "พร​แห่ง​ลัส​ท​รัส​ คาร์​มีน"
+    "blessingOfLustrousCarmine": "พร​แห่ง​ลัส​ท​รัส​ คาร์​มีน",
+    "type42SolemnPhalanx": "Type 42: โซ​เล็ม​ ฟา​ลัง​ซ์",
+    "junctionPoint": "จุด​เชื่อมต่อ",
+    "goldenAge": "ยุคทอง",
+    "farsight": "สุดลูกหูลูกตา"
   },
   "cookies": {
     "title": "เราใช้คุกกี้",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
     "world_energy_point09_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
     "world_energy_point09_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
-    "world_energy_point09_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ"
+    "world_energy_point09_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เดล​คลัง​ดาบ",
+    "world_energy_point10_1": "อัล​ลู​เวีย​ม​พลังงาน​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_2": "อัล​ลู​เวีย​ม​พลังงาน​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_3": "อัล​ลู​เวีย​ม​พลังงาน​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point10_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: ทางผ่าน​ห​ยิง​หลง",
+    "world_energy_point11_1": "อัล​ลู​เวีย​ม​พลังงาน​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_2": "อัล​ลู​เวีย​ม​พลังงาน​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_3": "อัล​ลู​เวีย​ม​พลังงาน​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_4": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_5": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_6": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ",
+    "world_energy_point11_7": "อัล​ลู​เวีย​ม​พลังงาน​รุนแรง​: เขต​ EZ อู่​หลิง​ทางเหนือ"
   },
   "enemies": {
     "eny_0007_mimicw": "นิด​เ​วิ​ร์​ม​ใต้พิภพ",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "มือ​กลอง​นภา",
     "eny_0112_jzmonk": "ร็อค​ฮา​ว​เลอร์",
     "eny_0113_jzogre": "แมง​เกลอ​ร์​บี​ส​ต์​หุ้ม​เกราะ",
-    "eny_0114_jzmking": "เคร​ก​ฮา​ว​เลอร์"
+    "eny_0114_jzmking": "เคร​ก​ฮา​ว​เลอร์",
+    "eny_0117_klhound": "เงา​เสื่อมโทรม​ทั​ส​ก์​บี​ส​ต์",
+    "eny_0118_klhog": "เงา​เสื่อมโทรม​ควิ​ล​ล์​บี​ส​ต์",
+    "eny_0119_kltiger": "เงา​เสื่อมโทรม​เร​เกอร์​บี​ส​ต์",
+    "eny_0120_klbear": "เงา​เสื่อมโทรม​บ​ลิตซ์​แค​ร​ช",
+    "eny_0121_klbud": "เงา​เสื่อมโทรม​แนวหน้า​ YSTF",
+    "eny_0122_kltdbud": "เงา​เสื่อมโทรม​ YSTF ระดับสูง",
+    "eny_0123_klcap": "เงา​เสื่อมโทรม​พล​เกล​ฟ​ YSTF",
+    "eny_0124_kltdcap": "เงา​เสื่อมโทรม​ผู้กอง​ YSTF",
+    "eny_0125_fdcentur": "อัล​เล​เคร​ออส​, ผู้​บังคับ​กองพัน"
   },
   "essencesPage": {
     "optimizer": "เครื่องมือเพิ่มประสิทธิภาพการฟาร์ม",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "มีด​สั้น​ Grizzled Edge T1",
     "item_equip_t4_suit_crush_fracture_hand_01": "ถุงมือ​ Grizzled Edge",
     "item_equip_t4_suit_crush_fracture_hand_02": "ถุงมือ​ Grizzled Edge T1",
-    "item_equip_t4_suit_phy01_body_04": "เกราะ​ไฟเบอร์​นัก​ดาบ​เวท"
+    "item_equip_t4_suit_phy01_body_04": "เกราะ​ไฟเบอร์​นัก​ดาบ​เวท",
+    "item_equip_t4_parts_wuling00_body_01": "เกราะ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_body_02": "แผ่น​เกราะ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_body_03": "เสื้อกั๊ก​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_edc_01": "มีดพร้า​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_edc_02": "ประกายไฟ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_edc_03": "ไฟฉาย​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_hand_01": "ถุงมือ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_hand_02": "เกราะ​มือ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling00_hand_03": "ผ้า​พัน​มือ​ภาค​สนาม​ AIC",
+    "item_equip_t4_parts_wuling02_body_01": "เกราะ​หนัก​ริฟ​ต์​เทร​ก​เกอร์",
+    "item_equip_t4_parts_wuling02_body_02": "เกราะ​เบา​ริฟ​ต์​เทร​ก​เกอร์",
+    "item_equip_t4_parts_wuling02_edc_01": "แผ่น​เกราะ​ริฟ​ต์​เทร​ก​เกอร์",
+    "item_equip_t4_parts_wuling02_hand_01": "ถุงมือ​ริฟ​ต์​เทร​ก​เกอร์",
+    "item_equip_t4_parts_wuling02_hand_02": "เกราะ​มือ​ริฟ​ต์​เท​ร็​ก​เกอร์",
+    "item_equip_t4_suit_fire_natr01_edc_04": "แผ่น​ฉนวน​สำหรับ​งาน​ร้อน",
+    "item_equip_t4_suit_fire_natr01_hand_04": "PPE สำหรับ​งาน​ร้อน​ชนิด​สวม​มือ",
+    "item_equip_t4_suit_heal01_body_03": "เกราะ​อก​ LYNX T1",
+    "item_equip_t4_suit_heal01_hand_03": "ถุงมือ​เกราะ​ LYNX T1",
+    "item_equip_t4_suit_usp02_body_03": "เกราะ​เบา​ซี​เรน​ไนต์​นิรันดร์",
+    "item_equip_t4_suit_usp02_body_04": "เกราะ​เบา​ซี​เรน​ไนต์​นิรันดร์​ T1",
+    "item_equip_t4_suit_usp02_edc_04": "แผ่น​เสริม​เกราะ​ซี​เรน​ไนต์​นิรันดร์",
+    "item_equip_t4_suit_usp02_hand_03": "ผ้า​พัน​มือ​ซี​เรน​ไนต์​นิรันดร์",
+    "item_equip_t4_suit_usp02_hand_04": "เกราะ​มือ​ซี​เรน​ไนต์​นิรันดร์"
   },
   "packs": {
     "none": "ยัง​ไม่ได้​กำหนด",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "AIC งาน​เบา",
     "suit_combo_cd01": "ชิง​ป๋อ",
     "suit_expend_spell01": "ซี​เรน​โฟลว์",
-    "suit_crush_fracture": "กริซ​เซิล​เอ​ด​จ์"
+    "suit_crush_fracture": "กริซ​เซิล​เอ​ด​จ์",
+    "suit_generaltype": "ภาค​สนาม​ AIC"
   },
   "equipmentTypes": {
     "body": "เกราะ",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "การ​ลด​ DMG สุดท้าย",
     "Sub": "คุณสมบัติ​รอง",
     "AllSkillDamageIncrease": "โบนัส​ DMG ของ​ทักษะ​ทั้งหมด",
-    "FireAndNaturalDamageIncrease": "โบนัส​ DMG ความร้อน​และ​ธรรมชาติ"
+    "FireAndNaturalDamageIncrease": "โบนัส​ DMG ความร้อน​และ​ธรรมชาติ",
+    "PhysicalResistance": "ความต้านทาน​ทางกายภาพ",
+    "NatureResistance": "การต้าน​ทาน​ธรรมชาติ",
+    "CryoResistance": "การต้าน​ทาน​ไค​ร​โอ",
+    "ElectricResistance": "การต้าน​ทาน​ไฟฟ้า",
+    "HeatResistance": "การต้าน​ทาน​ความร้อน",
+    "TherResistance": "การต้าน​ทาน​เอ​เทอร์"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "แอง​เกลอ​ย",
     "wiki_group_monster_landbreaker": "แลนด์​เบรก​เกอร์",
     "wiki_group_monster_hongshan": "โจรสลัด​คัง​เซย",
-    "wiki_group_monster_animal": "สัตว์ป่า"
+    "wiki_group_monster_animal": "สัตว์ป่า",
+    "wiki_group_monster_kl": "เงา​เสื่อมโทรม",
+    "wiki_group_monster_js": "ฟาวน์​ได​ท์"
   },
   "resitances": {
     "heatRez": "การต้าน​ทาน​ความร้อน",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "\"โครงสร้าง​อนินทรีย์​\"",
     "turbidityManifest": "\"ภูต​สำแดง​สับสน​\"",
     "thoseForsakenByTheLand": "\"ผู้​ถูก​ทอดทิ้ง​โดย​แผ่นดิน​\""
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "เทคนิค​ซี​เรน​ไนต์",
+    "cupriumTechnique": "เทคนิค​คู​เพ​รี​ยม",
+    "hetoniteTechnique": "เทคนิค​เฮ​โท​ไนต์",
+    "pyrroliteTechnique": "เทคนิค​ไพร์​โร​ไลท์"
   }
 }

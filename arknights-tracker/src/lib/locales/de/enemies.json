@@ -624,7 +624,7 @@
     "description": "Eine Variante der Fetzbestie, die sich nur auf Talos-II entwickelt hat. Diese einzigartigen Fetzbestien sind mit äußerst dicken Schuppen gepanzert und leben in einer mutualistischen Symbiose mit Felsenheulern. Die erstere Art bietet ein Bollwerk aus Muskelkraft, während die letztere scharfe Sinne aufweist und vor Eindringlingen warnt.",
     "abilities": [
       "Der Felsenheuler, der auf der Gepanzerten Fetzbestie reitet, kann Bananenschalen werfen. Wenn die Gepanzerte Fetzbestie während eines Ansturms auf Bananenschalen tritt, rutscht sie aus und stürzt.",
-      "In ihrer eingerollten Verteidigungshaltung sind die Hände ihre Schwachstelle. Durchbrich die Handposition, um die Verteidigungshaltung zu beenden, und belege die Bestie mit Niederschlag.",
+      "In ihrer eingerollten Verteidigungshaltung bleiben nur die Hände als Schwachstellen angreifbar. Durchbrich die Handposition, um die Verteidigungshaltung zu beenden, und belege die Bestie mit Niederschlag.",
       "Lässt Felsenheuler fallen, wenn sie niedergeschlagen wird. Greife die Felsenheuler an, um noch mehr SDN zu verursachen."
     ]
   },
@@ -636,6 +636,82 @@
       "Im Zustand „Raserei“ fängt der Klippenheuler an, die Ruinen zu zerstören. Gelockerte Felsen stürzen aufs Schlachtfeld hinab und fügen getroffenen Operatoren SDN zu.",
       "Der Klippenheuler kann die Säulen innerhalb der Ruinen effektiv nutzen und sich dadurch eine enorme Angriffsreichweite verschaffen.",
       "Der Klippenheuler wird einen Rückzug vortäuschen und plötzlich gewaltige Felsen schleudern, um ahnungslose Gegner anzugreifen."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Reißbiest-Verderbnisschatten",
+    "nickname": "Reißbiest-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Reißbiests angenommen hat. Sie ist zwar nicht mehr als ein „verblassender Schatten“, aber ihre scharfen Reißzähne können dennoch Rüstungen und Schutzkleidung zerfetzen.",
+    "abilities": [
+      "Manche Angriffe können von ihnen getroffene Verderbnisschatten-Energie aktivieren."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Federbiest-Verderbnisschatten",
+    "nickname": "Federbiest-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Federbiests angenommen hat. Dieser Verderbnisschatten scheint sehr viel aggressivere Roll- und Sprungangriffe auszuführen als sein lebendiges Gegenstück, aber vielleicht ist das auch nur Einbildung.",
+    "abilities": [
+      "Nach einer kurzen Aufladung kann der Federbiest-Verderbnisschatten mehrere Blitze heraufbeschwören, und er aktiviert Verderbnisschatten-Energie in einem großen Bereich. Wenn sich das Biest auflädt, musst du es schnell unterbrechen."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Wüstlingsbestie-Verderbnisschatten",
+    "nickname": "Wüstlingsbestie-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt einer Wüstlingsbestie angenommen hat. Ihr geflecktes Fell wirkt flüssiger und ermöglicht es, wirklich fürchterliche Angriffe vorherzusehen.",
+    "abilities": [
+      "Das Biest kann mit seinen Hörnern Blitze leiten, aus der Ferne angreifen und sogar Blitzkugeln schleudern, die nach kurzer Verzögerung explodieren. Bleib außerhalb des Explosionsradius.",
+      "Bei geringer Gesundheit gibt das Biest ein wildes Brüllen von sich, woraufhin es mehrere Blitze regnen lässt und in Raserei versetzt wird. Bringst du das Biest zum Taumeln, beendet das seine Raserei. Kämpfe bedacht."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Blitzcrashs Verderbnisschatten",
+    "nickname": "Blitzcrashs Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt von Blitzcrash angenommen hat. Diese Bestie wurde in der Tanjian-Halle aufgezogen und Li Zhiyan zählte sie einst zu ihren besten Freunden. Ihr Verderbnisschatten jedoch verfügt nur noch über seine Angriffsinstinkte.",
+    "abilities": [
+      "Durch Blitzcrashs Verderbnisschatten aktivierte Verderbnisschatten-Energie kann Blitze entfesseln.",
+      "Dieser Gegner ruft Reißbiest-Verderbnisschatten herbei. Anschließend lässt sie mehrere Blitze auf die Biester regnen, verwandelt sie in Verderbnisschatten-Energie und aktiviert sie. Versuche, diesen Angriffen auszuweichen."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "YSE-Vorhut-Verderbnisschatten",
+    "nickname": "YSE-Vorhut-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Mitglieds einer Vorhut-Einheit der YSE angenommen hat. Die Beherrschung von Nahkampftechniken ist eine der grundlegendsten Anforderungen an die Yinglungs.",
+    "abilities": [
+      "Entfesselt das Klingen-Qi, das jede Verderbnisschatten-Energie aktivieren kann, das es berührt."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "YSE-Elite-Verderbnisschatten",
+    "nickname": "YSE-Elite-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Mitglieds einer Eliteeinheit der YSE angenommen hat. Nur Yinglungs, die sowohl Originium-Techniken als auch die Schwertkunst gemeistert haben, dürfen sich zur Elite zählen.",
+    "abilities": [
+      "Entfesselt das Klingen-Qi, das jede Verderbnisschatten-Energie aktivieren kann, das es berührt."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "YSE-Glefenträger-Verderbnisschatten",
+    "nickname": "YSE-Glefenträger-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Glefenträgers der YSE angenommen hat. Yinglungs mit dieser Spezialisierung sind extrem geschickt darin, Angriffe anzuführen und befestigte Stellungen einzunehmen. Die Glefen, die sie tragen, wurden so optimiert, dass sie Aggeloi mit Leichtigkeit in Stücke hauen können.",
+    "abilities": [
+      "Der YSE-Glefenträger-Verderbnisschatten kann seine Niederlage vortäuschen, um anschließend zu einem Überraschungsangriff überzugehen. Sei vorsichtig!",
+      "Nachdem sich dieser Gegner aufgelöst hat, kann er sich neben einen Operator teleportieren und angreifen. Versuche, auszuweichen."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "YSE-Hauptmann-Verderbnisschatten",
+    "nickname": "YSE-Hauptmann-Verderbnisschatten",
+    "description": "Eine Manifestation von Æther-Energie-Rückständen, die die Gestalt eines Hauptmannes der YSE angenommen hat. Nur Veteranen, die über ein Talent für die Befehlsgebung sowie exzellente Kampffertigkeiten verfügen und ihren Mut im Kampf unzählige Male beweisen, erhalten die Chance, zu einem Hauptmann der YSE aufzusteigen.",
+    "abilities": [
+      "Nachdem sich dieser Gegner aufgelöst hat, kann er sich neben einen Operator teleportieren und angreifen. Versuche, auszuweichen.",
+      "Dieser YSE-Hauptmann-Verderbnisschatten kann seine Waffe verwenden, um Blitze regnen zu lassen. Eine Verderbnisschatten-Energie-Entität wird aktiviert, wenn sie von einem Blitz getroffen wird."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Chiliarch",
+    "nickname": "Alleikhreos",
+    "description": "Eine Schöpfung der Stiftung und Veteran zahlloser Kämpfe. Dieser Chiliarch hat die Ætherside durchwandert, bis er sein verlorenes Schwert wiedergefunden hatte und sich eine Möglichkeit zur Rückkehr freischneiden konnte.",
+    "abilities": [
+      "Wenn die Taumeln-Anzeige von Alleikhreos, Chiliarch den Taumel-Knoten erreicht, lässt er eine Fundit-Waffe fallen. Nähere dich ihr mit dem gesteuerten Operator, um die Waffe aufzuheben und ihn damit anzugreifen."
     ]
   }
 }

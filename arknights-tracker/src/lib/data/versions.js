@@ -19,5 +19,12 @@ export const changelogData = [
         weapons: ["beaconOfDuty", "phantomPain", "amaranthineTassel", "blessingOfLustrousCarmine"],
         equipment: ["item_equip_t4_suit_combo_cd01_edc_04", "item_equip_t4_suit_crush_fracture_body_01", "item_equip_t4_suit_crush_fracture_body_02", "item_equip_t4_suit_crush_fracture_hand_01", "item_equip_t4_suit_crush_fracture_hand_02", "item_equip_t4_suit_crush_fracture_edc_01", "item_equip_t4_suit_crush_fracture_edc_02", "item_equip_t4_suit_phy01_body_04"],
         enemies: ["eny_0113_jzogre", "eny_0114_jzmking", "eny_0112_jzmonk"]
+    },
+    {
+        version: "1.4",
+        characters: ["arcane"],
+        weapons: ["junctionPoint", "type42SolemnPhalanx", "goldenAge", "farsight"],
+        equipment: ["item_equip_t4_suit_fire_natr01_hand_04", "item_equip_t4_suit_fire_natr01_edc_04", "item_equip_t4_parts_wuling00_body_01", "item_equip_t4_parts_wuling00_body_02", "item_equip_t4_parts_wuling00_body_03", "item_equip_t4_parts_wuling00_hand_01", "item_equip_t4_parts_wuling00_hand_02", "item_equip_t4_parts_wuling00_hand_03", "item_equip_t4_parts_wuling00_edc_01", "item_equip_t4_parts_wuling00_edc_02", "item_equip_t4_parts_wuling00_edc_03", "item_equip_t4_suit_heal01_body_03", "item_equip_t4_suit_heal01_hand_03", "item_equip_t4_suit_usp02_body_03", "item_equip_t4_suit_usp02_body_04", "item_equip_t4_suit_usp02_hand_03", "item_equip_t4_suit_usp02_hand_04", "item_equip_t4_suit_usp02_edc_04", "item_equip_t4_parts_wuling02_body_01", "item_equip_t4_parts_wuling02_body_02", "item_equip_t4_parts_wuling02_hand_01", "item_equip_t4_parts_wuling02_hand_02", "item_equip_t4_parts_wuling02_edc_01"],
+        enemies: ["eny_0125_fdcentur", "eny_0119_kltiger", "eny_0120_klbear", "eny_0123_klcap", "eny_0124_kltdcap", "eny_0118_klhog", "eny_0117_klhound", "eny_0121_klbud", "eny_0122_kltdbud"]
     }
 ];

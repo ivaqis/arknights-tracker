@@ -85,8 +85,8 @@
     },
     "talent1": {
       "levels": [
-        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após sair da área de efeito.",
-        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{1-ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após sair da área de efeito."
+        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após saírem da área de efeito.",
+        "Quando dentro de um raio de <@ba.vup>{range_talent1buff:0}</> metros de um <@ba.key>Redemoinho</>, os operadores aliados ganham <@ba.vup>{ratio_speed:0%}</> de <#ba.speedup>Rapidez</>, enquanto os inimigos sofrem <@ba.vup>{ratio_speedreduction:0%}</> <#ba.slow>Desacelerar</>. Esses efeitos persistem por {duration_talent1buff:0} s após saírem da área de efeito."
       ],
       "name": "Família de Honra"
     },

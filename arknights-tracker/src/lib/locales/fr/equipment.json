@@ -545,6 +545,60 @@
     "decoDesc": "Une pièce d'équipement primordiale pour les opérations en environnement spécial.\nTous les ingénieurs chargés des réparations électriques sur les sites de déchirure de Gangrène doivent porter un EPI spécialisé pour éviter les blessures provoquées par les anomalies et les décharges électriques.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{wisd_up}</> d'Intelligence. \nLorsque les PV du porteur sont supérieurs à {hp_ratio:0%}, il gagne <@ba.vup>+{spell_dmg_up:0%}</> de <@ba.key>DÉG des Arts</>."
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "Armure de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Je croyais acheter des munitions. Et puis j'y ai regardé à deux fois et j'ai réalisé que cette offre était imbattable. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "Plaque de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nGrâce aux énormes capacités de production du GIA, ces plaques d'armure de terrain écrasent la concurrence, car elles offrent une protection de bien meilleure qualité à un prix extrêmement abordable.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "Veste de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Pourrais-je avoir encore quelques pièces ? Ce sont de bons matériaux de construction. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "Machette de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nUne lame aux multiples usages. Elle peut aussi bien abattre les défenses aggeloïdes et ennemies que des obstacles.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "Pierre à feu de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Tout comme on a foi dans un briquet, moi, j'ai une confiance absolue dans toutes les sessions d'entraînement que j'ai suivies aux Industries Endfield. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "Lampe de poche de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« J'attends la prochaine opération de combat aussi impatiemment que le reste des gens attendent le lever de soleil à venir. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "Gants de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nSon design s'inspire des structures fibreuses d'une liane. Le produit obtenu est léger, fin et respirant.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "Équipement pour mains de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \n« Le toucher est parfait. Avez-vous déjà envisagé d'aller sur le marché des usines et des EPI de construction ? »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "Bandes pour mains de terrain du GIA",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Un équipement de combat conçu par les Industries Endfield pour l'entraînement de ses opérateurs. Une série populaire sur le marché, en raison de son bon rapport qualité-prix. \nDe l'équipement de protection spécial pour les mains, conçu pour les opérateurs qui doivent manipuler des machines complexes en combat.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pour tous les types de DÉG, <@ba.vup>-{1-dmg_taken_down:0%}</> de réduction des DÉG contre tous les types de DÉG et <@ba.vup>+{ultimate_gain_up:0%}</> de vitesse de gain d'ultime."
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "Plaques de rédempteur",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -591,6 +645,36 @@
     "name": "Mains de rédempteur",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "Cette pièce d'équipement symbolise le chemin difficile qui nous attend. « La quête n'est pas encore accomplie, le voyage n'est donc pas terminé. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "Armure lourde d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Pour arpenter la faille immense, j'enfile une tenue en jade de xiranite. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "Armure légère d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement à destination des combattants qui partent souvent en mission dans les zones les plus à risque. \n« Tandis que je contemple l'hiver, la vie et la mort deviennent claires comme de l'eau de roche. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "Plaque d'armure d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Sur la pierre qui ornera mon sommeil éternel, inscrivez mon épitaphe à l'aide d'outils de sculpture. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "Gants d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« Quand j'entends rugir le tonnerre, ma peur disparaît. »",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "Équipement de mains d'arpenteur de faille",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "Le bureau des spadamanciens a conçu cet équipement pour les combattants qui partent souvent en mission dans les zones les plus à risque. \n« La bannière s'est déployée et deviendra le linceul dans lequel on m'enterrera. »",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -1073,6 +1157,12 @@
     "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Quelqu'un a entendu une chanson provenant de ce volcan. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "Plaque isolante pour hautes températures",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "De l'équipement qui présente une excellente résistance au feu. \n« Même la lave ne pourrait pas faire fondre cet objet, mec. C'est comme mon amour pour elle, il ne parviendra jamais à faire fondre son cœur. »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "Gants haute température",
     "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -1091,6 +1181,12 @@
     "decoDesc": "Un équipement qui possède une excellente résistance au feu.\n« Chut, moins de bruit. Tu risquerais de le réveiller. »",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "EPI haute température pour mains",
+    "description": "Conçu de façon indépendante par les Industries Endfield et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "De l'équipement qui présente une excellente résistance au feu. \nDes gants qui offrent une protection optimale, sans pour autant entraver la dextérité. Leur utilisateur peut manipuler des objets sans se brûler.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{phy_spell_up:0}</> d'intensité des Arts. \nLorsque le porteur applique <#ba.burning>Combustion</>, il inflige <@ba.vup>+{fire_dmg_up:0%}</> de <@ba.fire>DÉG thermiques</> pendant {duration} s. Lorsque le porteur applique <#ba.corrupt>Corrosion</>, il inflige <@ba.vup>+{nature_dmg_up:0%}</> de <@ba.natur>DÉG naturels</> pendant {duration2} s. Ces effets ne se cumulent pas."
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "Armure lourde LYNX",
     "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
@@ -1101,6 +1197,12 @@
     "name": "Cuirasse LYNX",
     "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "L'équipement favori des médecins.\nLes gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "Cuirasse LYNX G1",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "L'équipement favori des médecins. Les gens appellent généralement les combattants qui portent la cuirasse LYNX des « trousses médicales sur pattes ». Ces sauveteurs remplissent généralement toutes les poches et les supports de leur armure de fournitures médicales d'urgence.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1143,6 +1245,12 @@
     "name": "Gantelets LYNX",
     "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
     "decoDesc": "L'équipement favori des médecins. \nRhodes Island a toujours pour tradition d'équiper leurs EPI de modules d'évaluation de l'oripathie.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "Gantelets LYNX G1",
+    "description": "Conçu par Rhodes Island et assemblé par le GIA, cet équipement améliore les capacités de son porteur au combat.",
+    "decoDesc": "L'équipement favori des médecins. Rhodes Island a toujours pour tradition d'équiper leurs EPI de modules d'évaluation de l'oripathie.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{heal_up:0%}</> d'efficacité des soins. \nLorsque le porteur soigne une cible alliée, celle-ci bénéficie également d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down:0%}</> contre tous les types de DÉG pendant {duration} s. Si les soins dépassent les PV max de la cible, elle bénéficie alors d'une réduction des DÉG de <@ba.vup>-{1-dmg_taken_down2:0%}</> contre tous les types de DÉG. Ces effets ne se cumulent pas."
   },
   "item_equip_t4_suit_phy01_body_01": {
@@ -1289,6 +1397,18 @@
     "decoDesc": "L'héritage d'un Tianshi « fou ».\nLa plupart des gens ne voient pas de lien entre les ustensiles de cuisine et la xiranite. Mais un certain habitant de Wuling trouve son inspiration en matière de design en dînant au restaurant.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "Armure légère en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \n« C'est bien trop lourd. Regardez ça, c'est aussi compact que les ossements des animaux sauvages près de la route. Il faut voyager léger, compris ? LÉGER ! »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "Armure légère en xiranite éternelle G1",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \n« C'est bien trop lourd. Regardez ça, c'est aussi compact que les ossements des animaux sauvages près de la route. Il faut voyager léger, compris ? LÉGER ! »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "Noyau d'énergie en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -1307,6 +1427,12 @@
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... On disait que le Tianshi fou avait vu un « cycle d'auto-alimentation » dans un pot-au-feu servi par un chef ursus. Cette inspiration lui a permis de plus que doubler la durée d'alimentation de l'équipement de protection en xiranite éternelle.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "Plaque fortifiante en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \nLe Tianshi qui a proposé le design d'origine à l'atelier de production a compris qu'il était trop minimaliste. Il a donc ajouté des plaques de protection pour améliorer sa défense.",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "Gants en xiranite éternelle",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
@@ -1317,6 +1443,18 @@
     "name": "Gants en xiranite éternelle G1",
     "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
     "decoDesc": "L'héritage d'un Tianshi « fou ».\n... Les jours ont passé et le Tianshi fou a commencé à refuser toute nourriture qui « n'est pas source d'inspiration ». Amaigri à l'extrême, il est parti dans les terres sauvages à la recherche de « xiranite savoureuse ».",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "Bandes pour mains en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \n« Mais qui a eu l'idée de tisser de la xiranite dans les fibres ? Vous êtes dingue ? »",
+    "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "Équipement pour mains en xiranite éternelle",
+    "description": "Conçu par les spadamanciens de Hongshan et assemblé par le GIA, cet équipement peut améliorer les capacités de son porteur au combat.",
+    "decoDesc": "L'héritage d'un Tianshi « fou ». \nEnfilez-le... et laissez son pouvoir couler dans vos veines, l'énergie imprégner votre chair et votre sang.",
     "setBonus": "Effet d'ensemble 3 pièces : <@ba.vup>+{hp_up}</> PV.\nLorsque le porteur applique <#ba.enhance>amplification</>, <#ba.guard>protégé</>, <#ba.vulnerable>sensible</> ou <#ba.weak>affaibli</>, les autres coéquipiers bénéficient de <@ba.vup>+{dmg_up:0%}</> de DÉG infligés pendant {duration} s. L'effet ne peut pas être cumulé."
   }
 }

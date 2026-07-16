@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Duração da Suscetibilidade Física (s)"
       },
       "name": "Avatar Turvo",
-      "description": "Balança a arma de haste várias vezes para causar 2 acertos de <@ba.pd>DNO Físico</> e, em seguida, bate no chão para causar <@ba.pd>DNO Físico</> e <#ba.knockdown>Derrubar</> todos os inimigos na área de efeito. \nSe o inimigo atingido pelo último golpe dessa habilidade não tiver acúmulos de <#ba.noguard>Vulnerabilidade</>, aplica <#ba.physicalvul>Suscetibilidade Física</> ao inimigo em questão."
+      "description": "Balança a arma de haste várias vezes para causar 2 acertos de <@ba.pd>DNO Físico</> e, em seguida, bate no chão para causar <@ba.pd>DNO Físico</> e <#ba.knockdown>Derrubar</> todos os inimigos na área de efeito. \nSe o inimigo atingido pelo último golpe dessa habilidade não tiver acúmulos de <#ba.noguard>Vulnerabilidade</>, aplica <#ba.physicalvul>Suscetibilidade Física</> ao inimigo em questão também."
     },
     "comboSkill": {
       "comboSkill": {

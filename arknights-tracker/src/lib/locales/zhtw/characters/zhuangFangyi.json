@@ -135,7 +135,7 @@
       "name": "千定萬定"
     },
     "potential5": {
-      "description": "<@ba.key>天理合真</>狀態下，自身造成的傷害無視敵人<@ba.vup>{100*ignore_pulse_resist:0}</>點<@ba.pulse>電磁抗性</>。",
+      "description": "<@ba.key>天理合真</>狀態下，自身造成的傷害無視敵人<@ba.vup>{-ignore_pulse_resist:0}</>點<@ba.pulse>電磁抗性</>。",
       "name": "風雲之變"
     }
   },

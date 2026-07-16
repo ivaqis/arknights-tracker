@@ -2864,17 +2864,17 @@
             ]
         },
         "talent1_1": {
-            "ignore_fire_resist": 0.1,
+            "ignore_fire_resist": -10,
             "ignore_fire_resist_duration": 20,
             "max_stack": 4
         },
         "talent1_2": {
-            "ignore_fire_resist": 0.15,
+            "ignore_fire_resist": -15,
             "ignore_fire_resist_duration": 20,
             "max_stack": 4
         },
         "talent1_3": {
-            "ignore_fire_resist": 0.2,
+            "ignore_fire_resist": -20,
             "ignore_fire_resist_duration": 20,
             "max_stack": 4
         },
@@ -2884,7 +2884,7 @@
             "shelter": 0.9,
             "duration": 4,
             "cd": 120,
-            "shelter_real": 0.1
+            "shelter_real": 0.9
         },
         "talent2_2": {
             "hp_threshold": 0.4,
@@ -2892,10 +2892,10 @@
             "shelter": 0.9,
             "duration": 8,
             "cd": 120,
-            "shelter_real": 0.1
+            "shelter_real": 0.9
         },
         "talent2_3": {
-            "ignore_fire_resist": 0.2,
+            "ignore_fire_resist": -20,
             "ignore_fire_resist_duration": 20,
             "max_stack": 4
         },

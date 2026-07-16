@@ -77,8 +77,8 @@
     },
     "talent1": {
       "levels": [
-        "戰技<@ba.key>進軍</>和連攜技<@ba.key>前線援護</>的施放過程中獲得<@ba.vup>{1-shelterrate:0%}</><#ba.guard>庇護</>，且更不容易被打斷。",
-        "戰技<@ba.key>進軍</>和連攜技<@ba.key>前線援護</>的施放過程中獲得<@ba.vup>{1-shelterrate:0%}</><#ba.guard>庇護</>，且更不容易被打斷。"
+        "戰技<@ba.key>進軍</>和連攜技<@ba.key>前線援護</>的施放過程中獲得<@ba.vup>{shelterrate:0%}</><#ba.guard>庇護</>，且更不容易被打斷。",
+        "戰技<@ba.key>進軍</>和連攜技<@ba.key>前線援護</>的施放過程中獲得<@ba.vup>{shelterrate:0%}</><#ba.guard>庇護</>，且更不容易被打斷。"
       ],
       "name": "陷陣之志"
     },

@@ -47,9 +47,9 @@
     },
     "comboSkill": {
       "comboSkill": {
-        "initialBaseTreatment": "基礎回復量（初回）",
-        "initialTreatmentIncreasePerWill": "意志1ごとの回復値UP（初回）",
-        "baseTreatmentOverTime": "基礎持続回復量",
+        "initialBaseTreatment": "基礎回復値（初回）",
+        "initialTreatmentIncreasePerWill": "意志1ごとの初回回復値UP",
+        "baseTreatmentOverTime": "基礎回復値（持続）",
         "treatmentOverTimeIncreasePerWill": "意志1ごとの持続回復値UP",
         "treatmentOverTimeIntervalS": "持続回復間隔（秒）",
         "durationS": "持続時間（秒）",

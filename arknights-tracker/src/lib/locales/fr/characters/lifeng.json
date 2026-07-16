@@ -48,7 +48,7 @@
         "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)"
       },
       "name": "Avatar trouble",
-      "description": "Frappe plusieurs fois avec l'arme d'hast pour infliger 2 fois des <@ba.pd>DÉG physiques</>, puis frappe le sol pour infliger des <@ba.pd>DÉG physiques</> et appliquer <#ba.knockdown>Renversement</> à tous les ennemis dans la zone d'effet. \nSi l'ennemi touché par la dernière frappe de sa compétence n'a pas de cumul de <#ba.noguard>Vulnérabilité</>, applique à la place une <#ba.physicalvul>sensibilité physique</> à cet ennemi."
+      "description": "Frappe plusieurs fois avec l'arme d'hast pour infliger 2 fois des <@ba.pd>DÉG physiques</>, puis frappe le sol pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.knockdown>Renversement</> à tous les ennemis dans la zone d'effet. \nSi l'ennemi touché par la dernière frappe de sa compétence n'a pas de cumul de <#ba.noguard>Vulnérabilité</>, applique également une <#ba.physicalvul>sensibilité physique</> à cet ennemi."
     },
     "comboSkill": {
       "comboSkill": {

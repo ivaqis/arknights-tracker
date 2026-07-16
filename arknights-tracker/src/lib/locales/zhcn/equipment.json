@@ -545,6 +545,60 @@
     "decoDesc": "特殊环境作业时必备的防护装备。\n为了避免被异常爆发的电流击伤，在侵蚀灾害现场抢修电路的工程师们必须穿上特制防护服。",
     "setBonus": "3件套组效果：装备者智识<@ba.vup>+{wisd_up}</>。\n当装备者生命值高于{hp_ratio:0%}时，造成的<@ba.key>法术伤害</><@ba.vup>+{spell_dmg_up:0%}</>。"
   },
+  "item_equip_t4_parts_wuling00_body_01": {
+    "name": "集成实训护甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“如果不是我看得仔细，我险些以为它和子弹一个价格，没有比它更实惠的装备了。”",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_02": {
+    "name": "集成实训钢甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n集成工业系统的强大生产能力保证了实训系钢甲在强度和价格上都足以碾压同类产品。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_body_03": {
+    "name": "集成实训胸甲",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“能不能多卖给我几件，我拿去盖房子。”",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_01": {
+    "name": "集成实训排障刀",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n功能颇多的刀具，在能够有效破坏天使等敌人的防护结构的同时，亦可作为工业排障工具使用。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_02": {
+    "name": "集成实训火种石",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“我会信任我在终末地受到的一切训练，就像人类信任火种。”",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_edc_03": {
+    "name": "集成实训照明器",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“我会期待一切尚未到来的作战任务，就像人类期待第二天的光明。”",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_01": {
+    "name": "集成实训手套",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n参考了某种藤蔓植物的纤维结构，实现了保证轻而薄的同时透气性极好。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_02": {
+    "name": "集成实训护手",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n“完美的手感，我感觉你们已经可以去抢占劳动保障品的市场销售额度了。”",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
+  "item_equip_t4_parts_wuling00_hand_03": {
+    "name": "集成实训缠带",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "终末地为干员训练而设计的作战装备组，因为过于物美价廉而广受市场欢迎。\n特殊的手部防护装备，为即便在战场上亦需操作复杂设备的干员而设计。",
+    "setBonus": "3件套组效果：装备者造成的所有类型伤害<@ba.vup>+{dmg_up:0%}</>，受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>，终结技充能效率<@ba.vup>+{ultimate_gain_up:0%}</>。"
+  },
   "item_equip_t4_parts_wuling01_body_01": {
     "name": "纾难重甲",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -591,6 +645,36 @@
     "name": "纾难手套",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "象征着艰辛前路的装备。“事未竟，路犹长。”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_01": {
+    "name": "涉渊重甲",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾执玉壤，以涉大渊。”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_body_02": {
+    "name": "涉渊轻甲",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾观冬景，以明生死。”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_edc_01": {
+    "name": "涉渊护甲板",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾琢金石，以为墓碣。”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_01": {
+    "name": "涉渊护手",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾鸣蛰雷，以壮肝胆。”",
+    "setBonus": ""
+  },
+  "item_equip_t4_parts_wuling02_hand_02": {
+    "name": "涉渊手套",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "选剑局为了需要频繁往复危险区域的作战人员所设计的特殊装备组。\n“吾展旗旌，以备裹骸。”",
     "setBonus": ""
   },
   "item_equip_t4_suit_atb01_body_01": {
@@ -1073,6 +1157,12 @@
     "decoDesc": "耐火性极强的装备。\n“在那座火山中，有人听到了歌声。”",
     "setBonus": "3件套组效果：装备者源石技艺强度<@ba.vup>+{phy_spell_up:0}</>。\n当装备者施加<#ba.burning>燃烧</>后，<@ba.fire>灼热伤害</>+<@ba.vup>{fire_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加；当装备者施加<#ba.corrupt>腐蚀</>后，<@ba.natur>自然伤害</>+<@ba.vup>{nature_dmg_up:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
+  "item_equip_t4_suit_fire_natr01_edc_04": {
+    "name": "动火用隔温板",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "耐火性极强的装备。\n“熔岩也烧不穿它，我的朋友，就像我热烈的爱怎么也烧不穿她的心。”",
+    "setBonus": "3件套组效果：装备者源石技艺强度<@ba.vup>+{phy_spell_up:0}</>。\n当装备者施加<#ba.burning>燃烧</>后，<@ba.fire>灼热伤害</>+<@ba.vup>{fire_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加；当装备者施加<#ba.corrupt>腐蚀</>后，<@ba.natur>自然伤害</>+<@ba.vup>{nature_dmg_up:0%}</>，持续{duration2}秒，该效果无法叠加。"
+  },
   "item_equip_t4_suit_fire_natr01_hand_01": {
     "name": "动火用手套",
     "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -1091,6 +1181,12 @@
     "decoDesc": "耐火性极强的装备。\n“嘘，小声点，你就要唤醒它了。”",
     "setBonus": "3件套组效果：装备者源石技艺强度<@ba.vup>+{phy_spell_up:0}</>。\n当装备者施加<#ba.burning>燃烧</>后，<@ba.fire>灼热伤害</>+<@ba.vup>{fire_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加；当装备者施加<#ba.corrupt>腐蚀</>后，<@ba.natur>自然伤害</>+<@ba.vup>{nature_dmg_up:0%}</>，持续{duration2}秒，该效果无法叠加。"
   },
+  "item_equip_t4_suit_fire_natr01_hand_04": {
+    "name": "动火用护手",
+    "description": "本装备由终末地工业自研，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "耐火性极强的装备。\n兼顾防护性能与灵巧性的手套，能保证使用者在不遭高温侵害的情况下接触目标物。",
+    "setBonus": "3件套组效果：装备者源石技艺强度<@ba.vup>+{phy_spell_up:0}</>。\n当装备者施加<#ba.burning>燃烧</>后，<@ba.fire>灼热伤害</>+<@ba.vup>{fire_dmg_up:0%}</>，持续{duration}秒，该效果无法叠加；当装备者施加<#ba.corrupt>腐蚀</>后，<@ba.natur>自然伤害</>+<@ba.vup>{nature_dmg_up:0%}</>，持续{duration2}秒，该效果无法叠加。"
+  },
   "item_equip_t4_suit_heal01_body_01": {
     "name": "生物辅助重甲",
     "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -1101,6 +1197,12 @@
     "name": "生物辅助胸甲",
     "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "医疗者们爱用的装备。\n穿着生物辅助胸甲的作战人员通常会被人戏称为“移动药品库”，他们通常会在护甲各处塞满急救药物。",
+    "setBonus": "3件套组效果：装备者治疗效率<@ba.vup>+{heal_up:0%}</>。\n当装备者治疗我方目标后，使该目标在{duration}秒内受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果该目标受到的治疗量溢出，则受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果无法叠加。"
+  },
+  "item_equip_t4_suit_heal01_body_03": {
+    "name": "生物辅助胸甲·壹型",
+    "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "医疗者们爱用的装备。穿着生物辅助胸甲的作战人员通常会被人戏称为“移动药品库”，他们通常会在护甲各处塞满急救药物。",
     "setBonus": "3件套组效果：装备者治疗效率<@ba.vup>+{heal_up:0%}</>。\n当装备者治疗我方目标后，使该目标在{duration}秒内受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果该目标受到的治疗量溢出，则受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果无法叠加。"
   },
   "item_equip_t4_suit_heal01_edc_01": {
@@ -1141,6 +1243,12 @@
   },
   "item_equip_t4_suit_heal01_hand_02": {
     "name": "生物辅助手甲",
+    "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "医疗者们爱用的装备。\n罗德岛仍保留着在装备上配置矿石病监测模组的习惯。",
+    "setBonus": "3件套组效果：装备者治疗效率<@ba.vup>+{heal_up:0%}</>。\n当装备者治疗我方目标后，使该目标在{duration}秒内受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果该目标受到的治疗量溢出，则受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果无法叠加。"
+  },
+  "item_equip_t4_suit_heal01_hand_03": {
+    "name": "生物辅助手甲·壹型",
     "description": "本装备由罗德岛设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "医疗者们爱用的装备。\n罗德岛仍保留着在装备上配置矿石病监测模组的习惯。",
     "setBonus": "3件套组效果：装备者治疗效率<@ba.vup>+{heal_up:0%}</>。\n当装备者治疗我方目标后，使该目标在{duration}秒内受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down:0%}</>；如果该目标受到的治疗量溢出，则受到的所有类型伤害<@ba.vup>-{1-dmg_taken_down2:0%}</>。上述效果无法叠加。"
@@ -1289,6 +1397,18 @@
     "decoDesc": "某位“疯狂”天师的遗世之作。\n常人或许很难将厨艺与息壤供能联系在一起，但武陵城中偏偏有人能在餐馆中获得设计灵感。",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   },
+  "item_equip_t4_suit_usp02_body_03": {
+    "name": "长息轻护甲",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋的就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
+  "item_equip_t4_suit_usp02_body_04": {
+    "name": "长息轻护甲·壹型",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n“要我说，太重了，你看它简陋的就像路边的野兽骨头，轻者愈轻，明白吗！要减轻！”",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
   "item_equip_t4_suit_usp02_edc_01": {
     "name": "长息蓄电核",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -1307,6 +1427,12 @@
     "decoDesc": "某位“疯狂”天师的遗世之作。\n……据说这位疯狂天师在乌萨斯厨师端上桌的火锅中看到了一种“生生不息的循环”，成功将长息装甲的续航时间提高了一倍。",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   },
+  "item_equip_t4_suit_usp02_edc_04": {
+    "name": "长息加固板",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n将这款遗世之作推进至实装阶段的天师们明显也意识到了它过于简陋，因此补充设计了额外的防护装甲。",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
   "item_equip_t4_suit_usp02_hand_01": {
     "name": "长息护手",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
@@ -1317,6 +1443,18 @@
     "name": "长息护手·壹型",
     "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
     "decoDesc": "某位“疯狂”天师的遗世之作。\n……数日后，疯狂的天师开始拒绝一切“不能让自己获得灵感”的食物，随即，为了探寻“能吞入腹中的息壤”，骨瘦如柴的他消失在了荒野中。",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
+  "item_equip_t4_suit_usp02_hand_03": {
+    "name": "长息裹手",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n“把息壤编织到纤维里，你疯了？”",
+    "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
+  },
+  "item_equip_t4_suit_usp02_hand_04": {
+    "name": "长息手套",
+    "description": "本装备由宏山选剑局设计，使用集成工业系统制造，能够提高使用者的作战能力。",
+    "decoDesc": "某位“疯狂”天师的遗世之作。\n戴上它吧，戴上它吧……感受能量流淌过你的皮肤，沁入你的血肉。",
     "setBonus": "3件套组效果：装备者生命值<@ba.vup>+{hp_up}</>。\n装备者施加<#ba.enhance>增幅</>、<#ba.guard>庇护</>、<#ba.vulnerable>脆弱</>、<#ba.weak>虚弱</>后，使其他队友造成的伤害<@ba.vup>+{dmg_up:0%}</>，持续{duration}秒。该效果无法叠加。"
   }
 }

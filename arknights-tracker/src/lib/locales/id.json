@@ -358,7 +358,9 @@
     "special_1_3_1": "Fists of No Regrets",
     "weponbox_1_3_1": "Edisi Simpul Merah",
     "special_1_3_2": "Pembasuh Dosa",
-    "weponbox_1_3_2": "Edisi Rona Merah Darah"
+    "weponbox_1_3_2": "Edisi Rona Merah Darah",
+    "special_1_4_1": "Penjaga Celah Merindukan Utara",
+    "weponbox_1_4_1": "Edisi Standar Militer"
   },
   "pages": {
     "home": "Beranda",
@@ -442,7 +444,15 @@
     "monumentalEtchingDirgeOfGrief": "Pengukiran Monumental: Ratapan Duka",
     "umbralMonument": "Monumen Umbra",
     "peacekeepersNocturneSignIn": "Sign In Nokturno sang Penjaga Perdamaian",
-    "northwardToPerilSignIn": "Sign In Menuju Bahaya di Utara"
+    "northwardToPerilSignIn": "Sign In Menuju Bahaya di Utara",
+    "echoesOfWar": "Gema Perang",
+    "gazeTowardsTheNorthernExclusion": "Tataplah Zona Eksklusi Utara",
+    "tributeOfCompanionship": "Persembahan atas Pertemanan",
+    "heatRageMegaArena": "AMARAH MEMBARA! MEGAARENA!",
+    "monumentalEtchingBeastlyHowl": "Pengukiran Monumental: Lolongan Menggelegar",
+    "theRootedRealm": "Buana Akar",
+    "protocolPassBlightedSea": "Tiket Akses Protokol: Laut Hawar",
+    "gazeNorthToTheRiftSignIn": "Sign In Tataplah Celah di Utara"
   },
   "mouths": {
     "january": "Januari",
@@ -818,7 +828,26 @@
     "liquidHeavyXiranite": "Xiranite Berat Cair",
     "centuryRind": "Kulit Buah Seabad",
     "caudalGoldscale": "Sisik Emas Kaudal",
-    "stickerSafetyHelmet": "Stiker: Helm Pengaman"
+    "stickerSafetyHelmet": "Stiker: Helm Pengaman",
+    "pyrrolite": "Pyrrolite",
+    "pyrrolitePart": "Bagian Pyrrolite",
+    "cupriumCanister": "Tabung Cuprium",
+    "shadowDew": "Embun Bayangan",
+    "glaiveFragment": "Fragmen Glaive",
+    "blightshadeBezoar": "Bezoar Bayang-bayang Hawar",
+    "pyrroliteComponent": "Komponen Pyrrolite",
+    "separatorCore": "Inti Pemisah",
+    "acridgen": "Acridgen",
+    "cupriumGas": "Gas Cuprium",
+    "hetoniteGas": "Gas Hetonite",
+    "pyrroliteGas": "Gas Pyrrolite",
+    "inergen": "Inergen",
+    "aquagen": "Aquagen",
+    "xiragen": "Xiragen",
+    "heavyXiragen": "Xiragen Berat",
+    "crimsonSpearleaf": "Crimson Spearleaf",
+    "talosCap": "Topi Talos",
+    "protocolith": "Protocolith"
   },
   "common": {
     "copy": "Salin",
@@ -1013,7 +1042,8 @@
     "zhuangFangyi": "Zhuang Fangyi",
     "miFu": "Mi Fu",
     "mifu": "Mi Fu",
-    "camille": "Camille"
+    "camille": "Camille",
+    "arcane": "Arcane"
   },
   "weaponsList": {
     "industry01": "Industry 0.1",
@@ -1087,7 +1117,11 @@
     "phantomPain": "Phantom Pain",
     "amaranthineTassel": "Amaranthine Tassel",
     "beaconOfDuty": "Beacon of Duty",
-    "blessingOfLustrousCarmine": "Blessing of Lustrous Carmine"
+    "blessingOfLustrousCarmine": "Blessing of Lustrous Carmine",
+    "type42SolemnPhalanx": "Type 42: Solemn Phalanx",
+    "junctionPoint": "Junction Point",
+    "goldenAge": "Golden Age",
+    "farsight": "Farsight"
   },
   "cookies": {
     "title": "Kami menggunakan cookie",
@@ -1191,7 +1225,21 @@
     "world_energy_point09_4": "Aluvium Energi Parah: Lembah Benteng Pedang",
     "world_energy_point09_5": "Aluvium Energi Parah: Lembah Benteng Pedang",
     "world_energy_point09_6": "Aluvium Energi Parah: Lembah Benteng Pedang",
-    "world_energy_point09_7": "Aluvium Energi Parah: Lembah Benteng Pedang"
+    "world_energy_point09_7": "Aluvium Energi Parah: Lembah Benteng Pedang",
+    "world_energy_point10_1": "Aluvium Energi: Terusan Yinglung",
+    "world_energy_point10_2": "Aluvium Energi: Terusan Yinglung",
+    "world_energy_point10_3": "Aluvium Energi: Terusan Yinglung",
+    "world_energy_point10_4": "Aluvium Energi Parah: Terusan Yinglung",
+    "world_energy_point10_5": "Aluvium Energi Parah: Terusan Yinglung",
+    "world_energy_point10_6": "Aluvium Energi Parah: Terusan Yinglung",
+    "world_energy_point10_7": "Aluvium Energi Parah: Terusan Yinglung",
+    "world_energy_point11_1": "Aluvium Energi: ZE Wuling Utara",
+    "world_energy_point11_2": "Aluvium Energi: ZE Wuling Utara",
+    "world_energy_point11_3": "Aluvium Energi: ZE Wuling Utara",
+    "world_energy_point11_4": "Aluvium Energi Parah: ZE Wuling Utara",
+    "world_energy_point11_5": "Aluvium Energi Parah: ZE Wuling Utara",
+    "world_energy_point11_6": "Aluvium Energi Parah: ZE Wuling Utara",
+    "world_energy_point11_7": "Aluvium Energi Parah: ZE Wuling Utara"
   },
   "enemies": {
     "eny_0007_mimicw": "Nidwyrm Penggali",
@@ -1268,7 +1316,16 @@
     "eny_0082_hsbear": "Skydrummer",
     "eny_0112_jzmonk": "Rockhowler",
     "eny_0113_jzogre": "Manglerbeast Berarmor",
-    "eny_0114_jzmking": "Craghowler"
+    "eny_0114_jzmking": "Craghowler",
+    "eny_0117_klhound": "Bayang-bayang Hawar Tuskbeast",
+    "eny_0118_klhog": "Bayang-bayang Hawar Quillbeast",
+    "eny_0119_kltiger": "Bayang-bayang Hawar Rakerbeast",
+    "eny_0120_klbear": "Bayang-bayang Hawar Blitzcrash",
+    "eny_0121_klbud": "Bayang-bayang Hawar Garda Depan Satgassus Yinglung",
+    "eny_0122_kltdbud": "Bayang-bayang Hawar Elite Satgassus Yinglung",
+    "eny_0123_klcap": "Bayang-bayang Hawar Glaiver Satgassus Yinglung",
+    "eny_0124_kltdcap": "Bayang-bayang Hawar Kapten Satgassus Yinglung",
+    "eny_0125_fdcentur": "Alleikhreos, Chiliarch"
   },
   "essencesPage": {
     "optimizer": "Pengoptimal Farming",
@@ -1524,7 +1581,30 @@
     "item_equip_t4_suit_crush_fracture_edc_02": "Pisau Tinju Tepian Serabut T1",
     "item_equip_t4_suit_crush_fracture_hand_01": "Gauntlet Tepian Serabut",
     "item_equip_t4_suit_crush_fracture_hand_02": "Gauntlet Tepian Serabut T1",
-    "item_equip_t4_suit_phy01_body_04": "Armor Serat Swordmancer"
+    "item_equip_t4_suit_phy01_body_04": "Armor Serat Swordmancer",
+    "item_equip_t4_parts_wuling00_body_01": "Armor Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_body_02": "Pelat Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_body_03": "Rompi Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_edc_01": "Parang Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_edc_02": "Pemantik Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_edc_03": "Senter Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_hand_01": "Sarung Tangan Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_hand_02": "Pelindung Tangan Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling00_hand_03": "Bebat Tangan Misi Lapangan AIC",
+    "item_equip_t4_parts_wuling02_body_01": "Armor Berat Penjelajah Celah",
+    "item_equip_t4_parts_wuling02_body_02": "Armor Ringan Penjelajah Celah",
+    "item_equip_t4_parts_wuling02_edc_01": "Lempeng Armor Penjelajah Celah",
+    "item_equip_t4_parts_wuling02_hand_01": "Sarung Tangan Penjelajah Celah",
+    "item_equip_t4_parts_wuling02_hand_02": "Pelindung Tangan Penjelajah Celah",
+    "item_equip_t4_suit_fire_natr01_edc_04": "Lempeng Insulasi Kerja Panas",
+    "item_equip_t4_suit_fire_natr01_hand_04": "APD Tangan Kerja Panas",
+    "item_equip_t4_suit_heal01_body_03": "Cuirass LYNX T1",
+    "item_equip_t4_suit_heal01_hand_03": "Gauntlet LYNX T1",
+    "item_equip_t4_suit_usp02_body_03": "Armor Ringan Eternal Xiranite",
+    "item_equip_t4_suit_usp02_body_04": "Armor Ringan Eternal Xiranite T1",
+    "item_equip_t4_suit_usp02_edc_04": "Lempeng Penopang Eternal Xiranite",
+    "item_equip_t4_suit_usp02_hand_03": "Bebat Tangan Eternal Xiranite",
+    "item_equip_t4_suit_usp02_hand_04": "Pelindung Tangan Eternal Xiranite"
   },
   "packs": {
     "none": "Nonset",
@@ -1573,7 +1653,8 @@
     "suit_wisdwill01": "AIC Ringan",
     "suit_combo_cd01": "Qingbo",
     "suit_expend_spell01": "Xiranflow",
-    "suit_crush_fracture": "Tepian Serabut"
+    "suit_crush_fracture": "Tepian Serabut",
+    "suit_generaltype": "Misi Lapangan AIC"
   },
   "equipmentTypes": {
     "body": "Armor",
@@ -1627,13 +1708,21 @@
     "AllDamageTakenScalar": "Pengurangan Final DMG",
     "Sub": "Atribut Sekunder",
     "AllSkillDamageIncrease": "Bonus Semua Skill DMG Dealt",
-    "FireAndNaturalDamageIncrease": "Bonus Heat dan Nature DMG Dealt"
+    "FireAndNaturalDamageIncrease": "Bonus Heat dan Nature DMG Dealt",
+    "PhysicalResistance": "Resistansi Physical",
+    "NatureResistance": "Resistansi Nature",
+    "CryoResistance": "Resistansi Cryo",
+    "ElectricResistance": "Resistansi Electric",
+    "HeatResistance": "Resistansi Heat",
+    "TherResistance": "Resistansi Æther"
   },
   "enemiesGroups": {
     "wiki_group_monster_angel": "Aggelos",
     "wiki_group_monster_landbreaker": "Landbreaker",
     "wiki_group_monster_hongshan": "Perompak Cangzei",
-    "wiki_group_monster_animal": "Margasatwa"
+    "wiki_group_monster_animal": "Margasatwa",
+    "wiki_group_monster_kl": "Bayang-bayang Hawar",
+    "wiki_group_monster_js": "Foundite"
   },
   "resitances": {
     "heatRez": "Resistansi Heat",
@@ -2314,5 +2403,11 @@
     "inorganicConstruct": "“Konstruksi Anorganik”",
     "turbidityManifest": "“Manifestasi Kekeruhan”",
     "thoseForsakenByTheLand": "“Yang Ditelantarkan Negeri”"
+  },
+  "equipmentScriptNames": {
+    "xiraniteTechnique": "Teknik Xiranite",
+    "cupriumTechnique": "Teknik Cuprium",
+    "hetoniteTechnique": "Teknik Hetonite",
+    "pyrroliteTechnique": "Teknik Pyrrolite"
   }
 }

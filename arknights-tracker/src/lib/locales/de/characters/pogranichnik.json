@@ -81,7 +81,7 @@
         "decisiveAssaultSpRecovery": "Entscheidender-Sturmangriff-FP-Wiederherstellung"
       },
       "name": "Schildwächter-Banner, Vorwärts",
-      "description": "Beschwört 4 Schildwächter herauf, die vorrücken und alle Gegner in ihrem Weg auf das Ziel zuschieben. Dabei verursachen sie <@ba.pd>Physischen SDN</> und generieren 5 <@ba.key>Stahlschwur</>-Punkte. Wenn ein Gegner durch Pogranichniks Kombofertigkeit einen <#ba.physicalstatus>Physischen Zustand</> oder SDN erleidet, verbraucht Pogranichnik 1 <@ba.key>Stahlschwur</>-Punkt und beschwört 1 Schildwächter herauf, der diesen Gegner angreift, <@ba.pd>Physischen SDN</> verursacht und einige FP wiederherstellt. Wenn der letzte <@ba.key>Stahlschwur</>-Punkt verbraucht wird, führen alle 4 Schildwächter einen Entscheidenden Sturmangriff aus, der massiven <@ba.pd>Physischen SDN</> beim Ziel verursacht und eine große Menge an FP wiederherstellt."
+      "description": "Beschwört 4 Schildwächter herauf, die vorrücken und alle Gegner in ihrem Weg auf das Ziel zuschieben. Dabei verursachen sie <@ba.pd>Physischen SDN</> und generieren 5 <@ba.key>Stahlschwur</>-Punkte. Wenn ein Gegner einen <#ba.physicalstatus>Physischen Zustand</> erleidet oder eine von Pogranichniks Kombofertigkeit bei ihm SDN verursacht, verbraucht Pogranichnik 1 <@ba.key>Stahlschwur</>-Punkt und beschwört 1 Schildwächter herauf, der diesen Gegner angreift, <@ba.pd>Physischen SDN</> verursacht und einige FP wiederherstellt. Wenn der letzte <@ba.key>Stahlschwur</>-Punkt verbraucht wird, führen alle 4 Schildwächter einen Entscheidenden Sturmangriff aus, der massiven <@ba.pd>Physischen SDN</> beim Ziel verursacht und eine große Menge an FP wiederherstellt."
     },
     "indicator": {
       "levels": [

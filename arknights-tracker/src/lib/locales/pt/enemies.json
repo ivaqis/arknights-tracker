@@ -624,7 +624,7 @@
     "description": "Uma variante das bestas mutiladoras que evoluiu especificamente em Talos-II. Esses predadores únicos são protegidos por escamas extremamente grossas que formam uma espécie de couraça e compartilham uma simbiose mutualística com os uivantes montanheses. A primeira espécie fornece a proteção e a força, enquanto a segunda oferece sentidos aguçados e alertas contra intrusos.",
     "abilities": [
       "O uivante montanhês montado nas costas da besta mutiladora encouraçada pode jogar cascas de banana. Se a Besta Mutiladora Encouraçada pisar nas cascas de banana durante um ataque de investida, ela escorregará e cairá.",
-      "Quando encolhida em posição defensiva, o ponto fraco seriam as mãos. Quebre as mãos para encerrar a postura defensiva e derrube a fera.",
+      "Quando encolhida em posição defensiva, somente as mãos permanecem expostas como pontos fracos. Afaste as mãos para encerrar a postura defensiva e derrube a fera.",
       "Ao ser derrubada, os uivantes montanheses caem de seu dorso. Ataque-os para causar ainda mais DNO."
     ]
   },
@@ -636,6 +636,82 @@
       "Quando enfurecido, o Uivante dos Penhascos começará a destruir as ruínas. Rochas soltas cairão no campo de batalha e causarão DNO aos operadores atingidos por elas.",
       "O Uivante dos Penhascos pode usar os pilares dentro das ruínas com grande eficácia, o que confere a ele um enorme alcance de ataque.",
       "O Uivante dos Penhascos fingirá que está fugindo e, de repente, lançará pedras enormes para atacar inimigos desavisados."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Sombra da Praga de Besta Carnívora",
+    "nickname": "Sombra da Praga de Besta Carnívora",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de uma besta carnívora. Embora seja apenas uma \"sombra persistente\", suas presas afiadas ainda são capazes de rasgar armaduras e equipamentos de proteção.",
+    "abilities": [
+      "Alguns ataques podem ativar a Energia do Sombra da Praga que atingem."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Sombra da Praga de Penoso",
+    "nickname": "Sombra da Praga de Penoso",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um penoso. Esse sombra da praga parece desferir ataques rolantes e saltitantes muito mais agressivos do que sua contraparte viva, embora isso possa ser apenas uma questão de imaginação.",
+    "abilities": [
+      "Após um breve período de carregamento, o Sombra da Praga de Penoso pode invocar múltiplos raios e ativar a Energia de Sombra da Praga em uma grande área. Interrompa a besta rapidamente quando ela começar a carregar energia."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Sombra da Praga de Rastejante",
+    "nickname": "Sombra da Praga de Rastejante",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um rastejante. A pelagem com manchas em forma de olho parece mais fluida e destaca movimentos de ataque verdadeiramente aterrorizantes.",
+    "abilities": [
+      "A besta pode usar seus chifres para conduzir raios, atacar à distância e até mesmo lançar orbes de raios que explodem após um curto período. Mantenha-se fora do raio da explosão.",
+      "Com pouco PV, a besta soltará um rugido furioso, invocará vários raios para atacar e entrará no estado Enfurecido. Aplicar o efeito de Desorientado à besta encerra o estado Enfurecido. Combata-a com cautela."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Sombra da Praga de Blitzcrash",
+    "nickname": "Sombra da Praga de Blitzcrash",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de Blitzcrash. A besta foi criada Tanjian Hall e costumava ser a melhor amiga de Li Zhiyan. Seu sombra da praga, no entanto, não retém nada além de seus instintos agressivos.",
+    "abilities": [
+      "A Energia de Sombra da Praga ativada pelo Sombra da Praga de Blitzcrash pode liberar raios.",
+      "Este inimigo invoca Sombras da Praga de Besta Carnívora. Em seguida, invoca múltiplos raios para atacar as bestas, transformando-as em Energia de Sombra da Praga e ativando-as. Tente desviar desses ataques."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Sombra da Praga de Vanguarda da FTEY",
+    "nickname": "Sombra da Praga de Vanguarda da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Vanguarda da FTEY. Dominar as técnicas de combate corpo a corpo é apenas o requisito mais básico para os Yinglungs.",
+    "abilities": [
+      "Libera uma energia qi de lâmina que pode ativar qualquer Energia de Sombra da Praga que atingir."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Sombra da Praga de Elite da FTEY",
+    "nickname": "Sombra da Praga de Elite da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Elite da FTEY. Um Yinglung que dominou tanto as Artes de Originium quanto a espadomancia será considerado um Elite.",
+    "abilities": [
+      "Libera uma energia qi de lâmina que pode ativar qualquer Energia de Sombra da Praga que atingir."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Sombra da Praga de Guja da FTEY",
+    "nickname": "Sombra da Praga de Guja da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Guja da FTEY. Esses Yinglungs são extremamente habilidosos em liderar assaltos e capturar posições defendidas. Os gládios que empunham são projetados para cortar Aggeloi com facilidade.",
+    "abilities": [
+      "O Sombra da Praga de Guja da FTEY pode fingir a derrota imediatamente antes de desferir um ataque inesperado. Tenha cuidado!",
+      "Após se dissipar, esse inimigo pode se teletransportar para perto de um operador e atacá-lo. Tente desviar."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Sombra da Praga de Capitão da FTEY",
+    "nickname": "Sombra da Praga de Capitão da FTEY",
+    "description": "Uma manifestação de Energia do Æther residual que projeta a forma externa de um Capitão da FTEY. Somente veteranos que demonstraram talento para comando, excepcional proeza em combate e verdadeira bravura em guerra terão a chance de se tornarem Capitães da FTEY.",
+    "abilities": [
+      "Após se dissipar, esse inimigo pode se teletransportar para perto de um operador e atacá-lo. Tente desviar.",
+      "O Sombra da Praga de Capitão da FTEY pode usar sua arma para invocar raios. Uma entidade de Energia de Sombra da Praga é ativada ao ser atingida por um raio."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Quiliarca",
+    "nickname": "Alleikhreos",
+    "description": "Uma criação da Fundação e um veterano de inúmeras batalhas. Este Quiliarca vagou pelo Ætherside até recuperar sua espada perdida e abrir uma brecha para poder retornar.",
+    "abilities": [
+      "Quando o medidor de Desorientação de Alleikhreos, Quiliarca, atingir o Nó de Desorientação, ele soltará uma Arma de Fundite. Aproxime-se dela com o operador controlado para pegá-la e use a arma para atacá-lo."
     ]
   }
 }

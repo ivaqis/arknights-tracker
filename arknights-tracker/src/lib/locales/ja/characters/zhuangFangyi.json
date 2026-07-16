@@ -135,7 +135,7 @@
       "name": "千定万定"
     },
     "potential5": {
-      "description": "<@ba.key>理の境</>状態では、自身が敵の<@ba.pulse>電磁耐性</>を<@ba.vup>{100*ignore_pulse_resist:0}</>無視してダメージを与える",
+      "description": "<@ba.key>理の境</>状態では、自身が敵の<@ba.pulse>電磁耐性</>を<@ba.vup>{-ignore_pulse_resist:0}</>無視してダメージを与える",
       "name": "風雲一変"
     }
   },

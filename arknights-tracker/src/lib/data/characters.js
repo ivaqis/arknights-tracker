@@ -319,5 +319,16 @@ export const characters = {
     birthDate: "20-11",
     apiId: "6f1c12e86229fe068ba70baef7ff0aa1",
     gameId: "chr_0033_camille"
+  },
+  arcane: {
+    id: "arcane",
+    name: "arcane",
+    rarity: 6,
+    element: "nature",
+    class: "caster",
+    weapon: "artsUnit",
+    birthDate: "07-07",
+    apiId: "chr_0032_lizhiyan",
+    gameId: "chr_0034_arcane"
   }
 };

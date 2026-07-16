@@ -624,7 +624,7 @@
     "description": "Una variante de las bestias mutiladoras que evolucionó específicamente en Talos-II. Estas mutiladoras únicas están cubiertas de escamas extremadamente gruesas y comparten una simbiosis mutua con los aulladores de roca. La primera especie aporta la defensa y la fuerza, mientras que la segunda ofrece sentidos agudos y advierte sobre los intrusos.",
     "abilities": [
       "El Aullador de roca montado en el lomo de la Bestia mutiladora acorazada puede lanzar cáscaras de plátano. Si la bestia mutiladora acorazada pisa cáscaras de plátano mientras realiza un ataque de carga, se resbalará y caerá.",
-      "Cuando se encoge en su postura defensiva, su punto débil son las manos. Destruye sus manos para acabar con la postura defensiva y aplicar Derribar a la bestia.",
+      "Cuando se encoge en su postura defensiva, solo las manos permanecen expuestas como puntos débiles. Destruye sus manos para acabar con la postura defensiva y aplicar Derribar a la bestia.",
       "Suelta Aulladores de roca cuando es derribada. Ataca a los Aulladores de roca para infligir aún más DAÑ."
     ]
   },
@@ -636,6 +636,82 @@
       "Cuando esté iracundo, el aullador del peñasco comenzará a destruir las ruinas. Las rocas aflojadas caerán al campo de batalla e infligirán DAÑ a los operadores que sean golpeados por ellas.",
       "El aullador del peñasco puede aprovechar muy bien los pilares dentro de las ruinas y obtener un enorme alcance de ataque.",
       "El aullador del peñasco fingirá retirarse y, de pronto, lanzará enormes rocas para atacar a enemigos desprevenidos."
+    ]
+  },
+  "eny_0117_klhound": {
+    "name": "Sombra contaminada de Bestia colmilluda",
+    "nickname": "Sombra contaminada de Bestia colmilluda",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia colmilluda. Aunque no es más que una “sombra persistente”, sus afilados colmillos aún son capaces de atravesar armaduras y equipamiento de protección.",
+    "abilities": [
+      "Algunos ataques pueden activar la energía de Sombra contaminada que golpeen."
+    ]
+  },
+  "eny_0118_klhog": {
+    "name": "Sombra contaminada de Bestia pluma",
+    "nickname": "Sombra contaminada de Bestia pluma",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia pluma. Esta sombra contaminada parece exhibir ataques giratorios y de rebote mucho más agresivos que su contraparte viva, aunque quizá solo sea cosa de la imaginación.",
+    "abilities": [
+      "Tras una breve carga, la Sombra contaminada de bestia pluma puede invocar múltiples relámpagos y activar la energía de Sombra contaminada en una zona amplia. Interrumpe a la bestia rápidamente cuando empiece a cargar."
+    ]
+  },
+  "eny_0119_kltiger": {
+    "name": "Sombra contaminada de Bestia rastrera",
+    "nickname": "Sombra contaminada de Bestia rastrera",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de una bestia rastrera. El pelaje con manchas oculares parece más fluido y resalta movimientos de ataque verdaderamente aterradores.",
+    "abilities": [
+      "La bestia puede usar sus cuernos para conducir rayos, atacar a distancia e incluso lanzar orbes eléctricos que explotan tras un breve retraso. Mantente fuera del radio de explosión.",
+      "Con pocos PV, la bestia soltará un rugido furioso, hará caer múltiples rayos para atacar y entrará en estado Iracundo. Aplicar Tambaleado a la bestia pone fin al estado Iracundo. Pelea con cautela."
+    ]
+  },
+  "eny_0120_klbear": {
+    "name": "Sombra contaminada de Blitzcrash",
+    "nickname": "Sombra contaminada de Blitzcrash",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de Blitzcrash. La bestia fue criada en el Salón tanjian y solía ser la mejor amiga de Li Zhiyan. Sin embargo, su sombra contaminada no conserva nada más que sus instintos agresivos.",
+    "abilities": [
+      "La energía de Sombra contaminada activada por la Sombra contaminada de Blitzcrash puede desatar rayos.",
+      "Este enemigo invoca Sombras contaminadas de Bestias colmilludas. Luego hace caer múltiples rayos para golpear a las bestias, convertirlas en energía de Sombra contaminada y activarlas. Intenta esquivar estos ataques."
+    ]
+  },
+  "eny_0121_klbud": {
+    "name": "Sombra contaminada de vanguardia del EFEY",
+    "nickname": "Sombra contaminada de vanguardia del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro de vanguardia del EFEY. Dominar las técnicas de combate cuerpo a cuerpo no es más que el requisito más básico para los Yinglungs.",
+    "abilities": [
+      "Desata chi de espada que puede activar cualquier energía de Sombra contaminada que golpee."
+    ]
+  },
+  "eny_0122_kltdbud": {
+    "name": "Sombra contaminada de élite del EFEY",
+    "nickname": "Sombra contaminada de élite del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY de élite. Un Yinglung que haya dominado tanto las Artes de Originio como el arte de la espada será considerado de élite.",
+    "abilities": [
+      "Desata chi de espada que puede activar cualquier energía de Sombra contaminada que golpee."
+    ]
+  },
+  "eny_0123_klcap": {
+    "name": "Sombra contaminada con guja del EFEY",
+    "nickname": "Sombra contaminada con guja del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un miembro del EFEY con guja. Estos Yinglungs son sumamente hábiles para dirigir asaltos y tomar posiciones defendidas. Las gujas que empuñan están diseñadas para partir Aggeloi con facilidad.",
+    "abilities": [
+      "La Sombra contaminada con guja del EFEY puede fingir su derrota antes de lanzar un ataque inesperado. ¡Ten cuidado!",
+      "Tras disiparse, este enemigo puede trasladarse instantáneamente junto a un operador y atacar. Intenta esquivar."
+    ]
+  },
+  "eny_0124_kltdcap": {
+    "name": "Sombra contaminada de capitán del EFEY",
+    "nickname": "Sombra contaminada de capitán del EFEY",
+    "description": "Una manifestación de energía residual de Éter que proyecta la forma externa de un capitán del EFEY. Solo los veteranos que hayan demostrado dotes de mando, una destreza excepcional en combate y verdadero valor en la guerra recibirán la oportunidad de convertirse en capitanes del EFEY.",
+    "abilities": [
+      "Tras disiparse, este enemigo puede trasladarse instantáneamente junto a un operador y atacar. Intenta esquivar.",
+      "La Sombra contaminada de capitán del EFEY puede usar su arma para hacer caer rayos. Una entidad de energía de Sombra contaminada se activa al recibir el impacto de un rayo."
+    ]
+  },
+  "eny_0125_fdcentur": {
+    "name": "Alleikhreos, Quiliarca",
+    "nickname": "Alleikhreos",
+    "description": "Una creación de la Fundación y veterano de incontables batallas. Este quiliarca vagó por el Plano del éter hasta que recuperó su espada perdida y abrió por la fuerza un instante para su regreso.",
+    "abilities": [
+      "Cuando el medidor de Tambaleo de Alleikhreos, Quiliarca llegue al Nodo de Tambaleo, soltará un Arma de fundita. Acércate con el operador controlado para recogerla y usa el arma para atacarlo."
     ]
   }
 }
