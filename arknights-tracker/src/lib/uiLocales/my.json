@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "Tiada profil ditemui dalam fail sandaran.",
     "endmin_no_pulls_error": "Tiada tarikan gacha ditemui dalam profil yang dipilih.",
     "endmin_read_error": "Gagal membaca fail dari cakera.",
-    "endmin_unknown_error": "Ralat membaca fail yang tidak diketahui"
+    "endmin_unknown_error": "Ralat membaca fail yang tidak diketahui",
+    "toolsdev_step1": "Pergi ke <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Pada bar penanda halaman (tekan Ctrl + Shift + B untuk menunjukkannya), klik 'Tambah halaman', berikan apa-apa nama, dan tampal kod ini ke dalam medan URL:",
+    "toolsdev_step3": "Semasa berada di laman web, klik penanda halaman tersebut — data akan disalin ke papan keratan anda. Tampalkannya di bawah.",
+    "toolsdev_placeholder": "Tampal JSON di sini...",
+    "warning": "Amaran",
+    "tracker_backup_warning": "Sebelum mengimport data dari tapak penjejak, anda amat disyorkan untuk membuat sandaran data semasa anda (Pergi ke Tetapan dan klik <strong>&ldquo;Eksport data&rdquo;</strong> dalam bahagian <strong>&ldquo;Sandaran&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Tiada entri"

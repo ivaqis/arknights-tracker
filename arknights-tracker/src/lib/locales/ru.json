@@ -282,7 +282,13 @@
     "endmin_no_profiles_error": "В файле не найдено профилей с данными",
     "endmin_no_pulls_error": "В выбранном профиле не найдено записей о крутках",
     "endmin_read_error": "Ошибка при чтении файла с диска",
-    "endmin_unknown_error": "Неизвестная ошибка при чтении файла"
+    "endmin_unknown_error": "Неизвестная ошибка при чтении файла",
+    "toolsdev_step1": "Перейдите на сайт <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "На панели закладок (чтобы отобразить панель закладок нажмите Ctrl + Shift + B) нажмите 'Добавить страницу', назовите ее любым именем и вставьте этот код в поле URL:",
+    "toolsdev_step3": "Находясь на сайте, нажмите на эту закладку — данные скопируются в буфер обмена. Вставьте их ниже.",
+    "toolsdev_placeholder": "Вставьте скопированный JSON сюда...",
+    "warning": "Предупреждение",
+    "tracker_backup_warning": "Для импорта данных с сайтов трекеров рекомендуется сделать резервную копию данных (Перейдите в настройки и нажмите <strong>&ldquo;Экспортировать данные&rdquo;</strong> в разделе <strong>&ldquo;Резервная копия&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Нет записей"

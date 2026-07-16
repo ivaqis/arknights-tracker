@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "Aucun profil trouvé dans le fichier de sauvegarde.",
     "endmin_no_pulls_error": "Aucun tirage trouvé dans le profil sélectionné.",
     "endmin_read_error": "Échec de la lecture du fichier sur le disque.",
-    "endmin_unknown_error": "Erreur de lecture de fichier inconnue"
+    "endmin_unknown_error": "Erreur de lecture de fichier inconnue",
+    "toolsdev_step1": "Allez sur <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Dans la barre de favoris (appuyez sur Ctrl + Maj + B pour l'afficher), cliquez sur 'Ajouter une page', donnez-lui le nom de votre choix, et collez ce code dans le champ URL :",
+    "toolsdev_step3": "Tout en étant sur le site, cliquez sur ce favori — les données seront copiées dans votre presse-papiers. Collez-les ci-dessous.",
+    "toolsdev_placeholder": "Collez le JSON ici...",
+    "warning": "Avertissement",
+    "tracker_backup_warning": "Avant d'importer des données depuis des sites de suivi, il est fortement recommandé de sauvegarder vos données actuelles (Allez dans les paramètres et cliquez sur <strong>&ldquo;Exporter les données&rdquo;</strong> dans la section <strong>&ldquo;Sauvegarde&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Aucune entrée"

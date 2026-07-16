@@ -283,7 +283,13 @@
     "endmin_no_profiles_error": "在備份檔案中未找到任何個人資料。",
     "endmin_no_pulls_error": "在所選個人資料中未找到抽卡紀錄。",
     "endmin_read_error": "無法從磁碟讀取檔案。",
-    "endmin_unknown_error": "未知的讀取檔案錯誤"
+    "endmin_unknown_error": "未知的讀取檔案錯誤",
+    "toolsdev_step1": "前往 <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>。",
+    "toolsdev_step2": "在書籤列上（按 Ctrl + Shift + B 顯示），點擊「新增網頁」，隨意命名，並將此代碼貼上到 URL 欄位中：",
+    "toolsdev_step3": "在網站上時，點擊該書籤 — 數據將複製到剪貼簿。請將其貼在下方。",
+    "toolsdev_placeholder": "在此處貼上 JSON...",
+    "warning": "警告",
+    "tracker_backup_warning": "從追蹤器網站匯入數據前，強烈建議先備份當前數據（前往設定並在 <strong>&ldquo;備份&rdquo;</strong> 區塊點擊 <strong>&ldquo;匯出數據&rdquo;</strong>）。"
   },
   "emptyState": {
     "noData": "無記錄"

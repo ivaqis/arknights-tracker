@@ -283,7 +283,13 @@
     "endmin_no_profiles_error": "Không tìm thấy hồ sơ nào trong tệp sao lưu.",
     "endmin_no_pulls_error": "Không tìm thấy lượt quay nào trong hồ sơ đã chọn.",
     "endmin_read_error": "Không thể đọc tệp từ ổ đĩa.",
-    "endmin_unknown_error": "Lỗi đọc tệp không xác định"
+    "endmin_unknown_error": "Lỗi đọc tệp không xác định",
+    "toolsdev_step1": "Truy cập <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Trên thanh dấu trang (nhấn Ctrl + Shift + B để hiển thị), nhấp vào 'Thêm trang', đặt tên bất kỳ và dán mã này vào trường URL:",
+    "toolsdev_step3": "Khi đang ở trên trang web, hãy nhấp vào dấu trang đó — dữ liệu sẽ được sao chép vào khay nhớ tạm. Dán vào bên dưới.",
+    "toolsdev_placeholder": "Dán JSON vào đây...",
+    "warning": "Cảnh báo",
+    "tracker_backup_warning": "Trước khi nhập dữ liệu từ các trang web theo dõi, bạn nên sao lưu dữ liệu hiện tại của mình (Đi tới Cài đặt và nhấp vào <strong>&ldquo;Xuất dữ liệu&rdquo;</strong> trong phần <strong>&ldquo;Sao lưu&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Không có dữ liệu"

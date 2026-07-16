@@ -283,7 +283,13 @@
     "endmin_no_profiles_error": "在备份文件中未找到任何个人资料。",
     "endmin_no_pulls_error": "在所选个人资料中未找到抽卡记录。",
     "endmin_read_error": "无法从磁盘读取文件。",
-    "endmin_unknown_error": "未知的读取文件错误"
+    "endmin_unknown_error": "未知的读取文件错误",
+    "toolsdev_step1": "前往 <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>。",
+    "toolsdev_step2": "在书签栏上（按 Ctrl + Shift + B 显示），点击“添加网页”，随意命名，并将此代码粘贴到 URL 字段中：",
+    "toolsdev_step3": "在网站上时，点击该书签 — 数据将复制到剪贴板。请将其粘贴到下方。",
+    "toolsdev_placeholder": "在此处粘贴 JSON...",
+    "warning": "警告",
+    "tracker_backup_warning": "从追踪器网站导入数据前，强烈建议先备份当前数据（前往设置并在 <strong>&ldquo;备份&rdquo;</strong> 部分点击 <strong>&ldquo;导出数据&rdquo;</strong>）。"
   },
   "emptyState": {
     "noData": "无记录"

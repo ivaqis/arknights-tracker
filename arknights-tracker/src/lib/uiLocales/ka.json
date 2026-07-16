@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "სარეზერვო ფაილში პროფილები ვერ მოიძებნა.",
     "endmin_no_pulls_error": "არჩეულ პროფილში გაჩა ვერ მოიძებნა.",
     "endmin_read_error": "დისკიდან ფაილის წაკითხვა ვერ მოხერხდა.",
-    "endmin_unknown_error": "ფაილის წაკითხვის უცნობი შეცდომა"
+    "endmin_unknown_error": "ფაილის წაკითხვის უცნობი შეცდომა",
+    "toolsdev_step1": "გადადით <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>-ზე.",
+    "toolsdev_step2": "სანიშნეების პანელზე (დააჭირეთ Ctrl + Shift + B მის გამოსაჩენად) დააჭირეთ 'გვერდის დამატებას', დაარქვით ნებისმიერი სახელი და ჩასვით ეს კოდი URL ველში:",
+    "toolsdev_step3": "საიტზე ყოფნისას დააჭირეთ ამ სანიშნეს — მონაცემები დაკოპირდება გაცვლის ბუფერში. ჩასვით ქვემოთ.",
+    "toolsdev_placeholder": "ჩასვით JSON აქ...",
+    "warning": "გაფრთხილება",
+    "tracker_backup_warning": "ტრეკერების საიტებიდან მონაცემების იმპორტამდე სასურველია მიმდინარე მონაცემების სარეზერვო ასლის გაკეთება (გადადით პარამეტრებში და დააჭირეთ <strong>&ldquo;მონაცემების ექსპორტს&rdquo;</strong> სექციაში <strong>&ldquo;სარეზერვო ასლი&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "ჩანაწერები არ არის"

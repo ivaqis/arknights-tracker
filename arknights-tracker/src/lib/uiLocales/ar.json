@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "لم يتم العثور على ملفات شخصية في ملف النسخ الاحتياطي.",
     "endmin_no_pulls_error": "لم يتم العثور على سحوبات في الملف الشخصي المحدد.",
     "endmin_read_error": "فشلت قراءة الملف من القرص.",
-    "endmin_unknown_error": "خطأ غير معروف في قراءة الملف"
+    "endmin_unknown_error": "خطأ غير معروف في قراءة الملف",
+    "toolsdev_step1": "انتقل إلى <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "في شريط الإشارات المرجعية (اضغط على Ctrl + Shift + B لإظهاره)، انقر على 'إضافة صفحة'، وقم بتسميتها بأي اسم، والصق هذا الرمز في حقل URL:",
+    "toolsdev_step3": "أثناء وجودك في الموقع، انقر على تلك الإشارة المرجعية — سيتم نسخ البيانات إلى الحافظة. ألصقها أدناه.",
+    "toolsdev_placeholder": "ألصق JSON هنا...",
+    "warning": "تحذير",
+    "tracker_backup_warning": "قبل استيراد البيانات من مواقع التتبع، يوصى بشدة بعمل نسخة احتياطية من بياناتك الحالية (انتقل إلى الإعدادات وانقر على <strong>&ldquo;تصدير البيانات&rdquo;</strong> في قسم <strong>&ldquo;النسخ الاحتياطي&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "لا توجد إدخالات"

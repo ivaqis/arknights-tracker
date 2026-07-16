@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "Tidak ada profil yang ditemukan dalam file cadangan.",
     "endmin_no_pulls_error": "Tidak ada tarikan yang ditemukan di profil yang dipilih.",
     "endmin_read_error": "Gagal membaca file dari disk.",
-    "endmin_unknown_error": "Kesalahan pembacaan file tidak diketahui"
+    "endmin_unknown_error": "Kesalahan pembacaan file tidak diketahui",
+    "toolsdev_step1": "Buka <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Pada bilah bookmark (tekan Ctrl + Shift + B untuk menampilkannya), klik 'Tambahkan halaman', beri nama apa saja, dan rekatkan kode ini ke kolom URL:",
+    "toolsdev_step3": "Saat berada di situs web tersebut, klik bookmark itu — data akan disalin ke clipboard Anda. Rekatkan di bawah.",
+    "toolsdev_placeholder": "Rekatkan JSON di sini...",
+    "warning": "Peringatan",
+    "tracker_backup_warning": "Sebelum mengimpor data dari situs pelacak, sangat disarankan untuk mencadangkan data Anda saat ini (Buka Pengaturan dan klik <strong>&ldquo;Ekspor data&rdquo;</strong> di bagian <strong>&ldquo;Cadangan&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Tidak ada entri"

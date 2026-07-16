@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "Nenhum perfil encontrado no arquivo de backup.",
     "endmin_no_pulls_error": "Nenhum tiro encontrado no perfil selecionado.",
     "endmin_read_error": "Falha ao ler o arquivo do disco.",
-    "endmin_unknown_error": "Erro desconhecido de leitura de arquivo"
+    "endmin_unknown_error": "Erro desconhecido de leitura de arquivo",
+    "toolsdev_step1": "Acesse <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Na barra de favoritos (pressione Ctrl + Shift + B para mostrá-la), clique em 'Adicionar página', dê qualquer nome e cole este código no campo URL:",
+    "toolsdev_step3": "Enquanto estiver no site, clique nesse favorito — os dados serão copiados para a área de transferência. Cole-os abaixo.",
+    "toolsdev_placeholder": "Cole o JSON aqui...",
+    "warning": "Aviso",
+    "tracker_backup_warning": "Antes de importar dados de sites rastreadores, é altamente recomendável fazer um backup de seus dados atuais (Vá para Configurações e clique em <strong>&ldquo;Exportar dados&rdquo;</strong> na seção <strong>&ldquo;Backup&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Sem entradas"

@@ -285,7 +285,13 @@
     "endmin_no_profiles_error": "No profiles found in the backup file.",
     "endmin_no_pulls_error": "No pulls found in the selected profile.",
     "endmin_read_error": "Failed to read file from disk.",
-    "endmin_unknown_error": "Unknown file read error"
+    "endmin_unknown_error": "Unknown file read error",
+    "toolsdev_step1": "Go to <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "On the bookmarks bar (press Ctrl + Shift + B to show it), click 'Add page', give it any name, and paste this code into the URL field:",
+    "toolsdev_step3": "While on the website, click that bookmark — the data will be copied to your clipboard. Paste it below.",
+    "toolsdev_placeholder": "Paste JSON here...",
+    "warning": "Warning",
+    "tracker_backup_warning": "Before importing data from tracker sites, it is highly recommended to make a backup of your current data (Go to Settings and click <strong>&ldquo;Export data&rdquo;</strong> in the <strong>&ldquo;Backup&rdquo;</strong> section)."
   },
   "emptyState": {
     "noData": "No entries"

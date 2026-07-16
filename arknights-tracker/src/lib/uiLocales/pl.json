@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "Nie znaleziono profili w pliku kopii zapasowej.",
     "endmin_no_pulls_error": "Nie znaleziono losowań w wybranym profilu.",
     "endmin_read_error": "Nie udało się odczytać pliku z dysku.",
-    "endmin_unknown_error": "Nieznany błąd odczytu pliku"
+    "endmin_unknown_error": "Nieznany błąd odczytu pliku",
+    "toolsdev_step1": "Przejdź na <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Na pasku zakładek (naciśnij Ctrl + Shift + B, aby go wyświetlić), kliknij 'Dodaj stronę', nadaj jej dowolną nazwę i wklej ten kod w polu URL:",
+    "toolsdev_step3": "Będąc na stronie, kliknij tę zakładkę — dane zostaną skopiowane do schowka. Wklej je poniżej.",
+    "toolsdev_placeholder": "Wklej JSON tutaj...",
+    "warning": "Ostrzeżenie",
+    "tracker_backup_warning": "Przed zaimportowaniem danych z witryn śledzących zaleca się wykonanie kopii zapasowej bieżących danych (Przejdź do Ustawień i kliknij <strong>&ldquo;Eksportuj dane&rdquo;</strong> w sekcji <strong>&ldquo;Kopia zapasowa&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Brak wpisów"

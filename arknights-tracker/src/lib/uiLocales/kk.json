@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "Резервтік файлдан профильдер табылмады.",
     "endmin_no_pulls_error": "Таңдалған профильде круткалар табылмады.",
     "endmin_read_error": "Файлды дискіден оқу мүмкін болмады.",
-    "endmin_unknown_error": "Файлды оқудың белгісіз қатесі"
+    "endmin_unknown_error": "Файлды оқудың белгісіз қатесі",
+    "toolsdev_step1": "<a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a> сайтына өтіңіз.",
+    "toolsdev_step2": "Бетбелгілер жолағында (оны көрсету үшін Ctrl + Shift + B басыңыз) 'Бетті қосу' түймесін басып, кез келген атау беріңіз және осы кодты URL өрісіне қойыңыз:",
+    "toolsdev_step3": "Сайтта болған кезде сол бетбелгіні басыңыз — деректер алмасу буферіне көшіріледі. Оны төменге қойыңыз.",
+    "toolsdev_placeholder": "JSON-ды осында қойыңыз...",
+    "warning": "Ескерту",
+    "tracker_backup_warning": "Трекер сайттарынан деректерді импорттамас бұрын, ағымдағы деректердің резервтік көшірмесін жасау ұсынылады (Баптауларға өтіп, <strong>&ldquo;Резервтік көшірме&rdquo;</strong> бөліміндегі <strong>&ldquo;Деректерді экспорттау&rdquo;</strong> түймесін басыңыз)."
   },
   "emptyState": {
     "noData": "Жазбалар жоқ"

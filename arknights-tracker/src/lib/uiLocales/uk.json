@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "У файлі резервної копії не знайдено профілів.",
     "endmin_no_pulls_error": "У вибраному профілі не знайдено круток.",
     "endmin_read_error": "Не вдалося прочитати файл з диска.",
-    "endmin_unknown_error": "Невідома помилка читання файлу"
+    "endmin_unknown_error": "Невідома помилка читання файлу",
+    "toolsdev_step1": "Перейдіть на <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "На панелі закладок (натисніть Ctrl + Shift + B, щоб її показати), натисніть 'Додати сторінку', дайте їй будь-яке ім'я та вставте цей код у поле URL:",
+    "toolsdev_step3": "Перебуваючи на сайті, натисніть на цю закладку — дані буде скопійовано в буфер обміну. Вставте їх нижче.",
+    "toolsdev_placeholder": "Вставте JSON сюди...",
+    "warning": "Увага",
+    "tracker_backup_warning": "Перед імпортом даних з сайтів-трекерів наполегливо рекомендується зробити резервну копію поточних даних (Перейдіть до Налаштувань і натисніть <strong>&ldquo;Експорт даних&rdquo;</strong> у розділі <strong>&ldquo;Резервна копія&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Немає записів"

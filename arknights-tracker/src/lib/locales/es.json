@@ -280,7 +280,13 @@
     "endmin_no_profiles_error": "No se encontraron perfiles en el archivo de copia de seguridad.",
     "endmin_no_pulls_error": "No se encontraron tiradas en el perfil seleccionado.",
     "endmin_read_error": "Error al leer el archivo del disco.",
-    "endmin_unknown_error": "Error de lectura de archivo desconocido"
+    "endmin_unknown_error": "Error de lectura de archivo desconocido",
+    "toolsdev_step1": "Ve a <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "En la barra de marcadores (pulsa Ctrl + Shift + B para mostrarla), haz clic en 'Añadir página', dale un nombre cualquiera y pega este código en el campo URL:",
+    "toolsdev_step3": "Mientras estés en el sitio web, haz clic en ese marcador: los datos se copiarán en tu portapapeles. Pégalos a continuación.",
+    "toolsdev_placeholder": "Pega el JSON aquí...",
+    "warning": "Advertencia",
+    "tracker_backup_warning": "Antes de importar datos de sitios de rastreo, es muy recomendable hacer una copia de seguridad de tus datos actuales (Ve a Ajustes y haz clic en <strong>&ldquo;Exportar datos&rdquo;</strong> en la sección <strong>&ldquo;Copia de seguridad&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Sin entradas"

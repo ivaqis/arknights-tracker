@@ -60,7 +60,8 @@
     const powerShellScript2 = `$f=[System.IO.File]::Open("$env:LOCALAPPDATA\\PlatformProcess\\Cache\\data_1",3,1,3); $t=(New-Object System.IO.StreamReader($f,[System.Text.Encoding]::ASCII)).ReadToEnd(); $f.Close(); $m=[regex]::Matches($t,"u8_token=([^&\\s\\x00]+)"); if($m.Count){ $m[$m.Count-1].Groups[1].Value | Set-Clipboard }`;
     const powerShellScript3 = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ivaqis/arknights-pull-url/refs/heads/main/endfield-url2.ps1'))}"`;
     const browserBookmarklet = `javascript:(async()=>{try{let e=null;for(let[t,n]of Object.entries(sessionStorage))if(t.startsWith("APP_ROLE_U8_TOKEN:")){e=n.toString().split(":")[0];break}if(!e)throw new Error("Token not found. Please log in and refresh the page.");await navigator.clipboard.writeText(e),alert("Success! Token copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
-    
+    const toolsdevBookmarklet = `javascript:(async()=>{try{let e=localStorage.getItem("headhunt_user_data_v2");if(!e)throw new Error("Data not found.");await navigator.clipboard.writeText(e),alert("Success! Data copied to clipboard.")}catch(e){alert("Error: "+e.message)}})();`;
+
     onMount(() => {
         loadSavedTokens();
         //checkMaintenanceStatus();
@@ -438,7 +439,7 @@
                 pendingData,
                 sId,
                 true,
-                isRecoveryEnabled,
+                (platformTab === 'endmin' || platformTab === 'toolsdev') ? false : isRecoveryEnabled,
             );
 
             if (uid) {
@@ -485,6 +486,7 @@
 
     let selectedFileName = "";
     let lastParsedPulls = null;
+    let toolsDevJsonInput = "";
 
     $: if (platformTab) {
         selectedFileName = "";
@@ -492,6 +494,7 @@
         pendingData = null;
         previewReport = null;
         errorMsg = "";
+        toolsDevJsonInput = "";
     }
 
     async function runSmartImportPreview(pullsMapped) {
@@ -506,7 +509,7 @@
                 pullsMapped,
                 sId,
                 false,
-                platformTab === 'endmin' ? false : isRecoveryEnabled
+                isRecoveryEnabled
             );
 
             pendingData = pullsMapped;
@@ -624,7 +627,6 @@
                 }).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
 
                 lastParsedPulls = pullsMapped;
-                await runSmartImportPreview(pullsMapped);
 
             } catch (err) {
                 console.error("Error processing backup file:", err);
@@ -640,6 +642,81 @@
         };
 
         reader.readAsText(file);
+    }
+
+    async function handleToolsDevImport() {
+        errorMsg = "";
+        isInputError = false;
+        if (!toolsDevJsonInput.trim()) {
+            errorMsg = $t("import.error_empty") || "Link or Token is required";
+            isInputError = true;
+            return;
+        }
+
+        isLoading = true;
+        previewReport = null;
+        pendingData = null;
+
+        try {
+            const parsedData = JSON.parse(toolsDevJsonInput.trim());
+            const records = parsedData?.data?.records;
+            if (!Array.isArray(records)) {
+                throw new Error($t("import.endmin_no_pulls_error") || "No pulls found");
+            }
+
+            const pullsMapped = records.map((item) => {
+                const itemId = item.itemId || "";
+                let rawName = item.itemName || itemId;
+                let type = item.recordType === "character" ? "character" : "weapon";
+                let rarity = Number(item.rarity || 4);
+
+                if (type === "character") {
+                    const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
+                    if (characterKey && characters[characterKey]) {
+                        rawName = characters[characterKey].name;
+                        rarity = characters[characterKey].rarity;
+                    }
+                } else {
+                    const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
+                    if (weaponKey && weapons[weaponKey]) {
+                        rawName = weapons[weaponKey].name;
+                        rarity = weapons[weaponKey].rarity;
+                    }
+                }
+
+                const seqId = Number(item.seqId || 0);
+                const dateObj = new Date(Number(item.gachaTs || 0));
+                const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                const rawBannerId = item.poolId || "standard";
+                const internalId = getInternalBannerType(rawBannerId);
+
+                return {
+                    id: uniqueId,
+                    time: dateObj,
+                    name: rawName,
+                    rarity,
+                    bannerId: internalId,
+                    seqId,
+                    isNew: item.isNew === true,
+                    isFree: item.isFree === true || false,
+                    type,
+                    rawPoolId: rawBannerId
+                };
+            }).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+
+            lastParsedPulls = pullsMapped;
+
+        } catch (err) {
+            console.error("Error processing endfieldtools.dev data:", err);
+            errorMsg = err.message || $t("import.error_format") || "Invalid format";
+        } finally {
+            isLoading = false;
+        }
+    }
+
+    $: if (lastParsedPulls && (platformTab === 'endmin' || platformTab === 'toolsdev') && isRecoveryEnabled !== undefined) {
+        runSmartImportPreview(lastParsedPulls);
     }
 </script>
 
@@ -724,7 +801,7 @@
             <div
                 class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full mb-5 mt-5 overflow-x-auto custom-tab-scroll"
             >
-                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }] as tab}
+                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }] as tab}
                     <button
                         class="px-6 py-3 text-sm font-bold transition-all relative border-b-2 whitespace-nowrap
             {platformTab === tab.id
@@ -944,6 +1021,15 @@
                         </p>
                     </div>
                 {:else if platformTab === "endmin"}
+                    <div
+                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
+                    >
+                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                            {$t("import.warning") || "Warning"}:
+                        </span>
+                        {@html $t("import.tracker_backup_warning")}
+                    </div>
+
                     {#each [{ text: $t("import.endmin_step1") }, { text: $t("import.endmin_step2") }, { text: $t("import.endmin_step3") }] as step, i}
                         <div
                             class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
@@ -958,6 +1044,40 @@
                             >
                                 {@html step.text}
                             </div>
+                        </div>
+                    {/each}
+                {:else if platformTab === "toolsdev"}
+                    <div
+                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
+                    >
+                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                            {$t("import.warning") || "Warning"}:
+                        </span>
+                        {@html $t("import.tracker_backup_warning")}
+                    </div>
+
+                    {#each [{ text: $t("import.toolsdev_step1") }, { text: $t("import.toolsdev_step2") }, { text: $t("import.toolsdev_step3") }] as step, i}
+                        <div
+                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-1' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-4'}"
+                        >
+                            <div
+                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
+                            >
+                                {i + 1}
+                            </div>
+                            <div
+                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
+                            >
+                                {@html step.text}
+                            </div>
+                            {#if i === 1}
+                                <div class="max-w-4xl mt-3 mb-2">
+                                    <CodeBlock
+                                        script={toolsdevBookmarklet}
+                                        language="JAVA SCRIPT"
+                                    />
+                                </div>
+                            {/if}
                         </div>
                     {/each}
                 {:else}
@@ -1066,6 +1186,50 @@
                                     on:change={handleFileSelect}
                                 />
                             </label>
+                        </div>
+                    {:else if platformTab === 'toolsdev'}
+                        <div class="max-w-4xl mb-6 relative flex flex-col gap-3">
+                            <textarea
+                                bind:value={toolsDevJsonInput}
+                                placeholder={$t("import.toolsdev_placeholder") || 'Paste JSON here...'}
+                                class="w-full min-h-[160px] p-3 mb-3 bg-gray-50 dark:bg-[#343434] dark:border-[#444444] dark:text-[#E0E0E0] border border-gray-200 focus:bg-white focus:border-[#FFE145] focus:dark:border-[#FFE145] rounded-lg text-sm outline-none text-[#21272C] transition-colors font-mono resize-y"
+                            ></textarea>
+                            <div
+                                class="w-fit {isLoading
+                                    ? 'opacity-60 pointer-events-none cursor-not-allowed'
+                                    : ''}"
+                            >
+                                <Button
+                                    variant="yellow"
+                                    onClick={() => {
+                                        if (!isLoading) handleToolsDevImport();
+                                    }}
+                                    disabled={isLoading}
+                                >
+                                    <div
+                                        slot="icon"
+                                        class="text-gray-800 dark:text-gray-800"
+                                    >
+                                        {#if isLoading}
+                                            <Icon
+                                                name="loading"
+                                                class="w-4 h-4 animate-spin"
+                                            />
+                                        {:else}
+                                            <Icon
+                                                name="import"
+                                                style="width: 30px; height: 30px;"
+                                            />
+                                        {/if}
+                                    </div>
+                                    <span>
+                                        {isLoading
+                                            ? $t("import.importing") ||
+                                              "Scanning..."
+                                            : $t("page.importBtn")}
+                                    </span>
+                                </Button>
+                            </div>
                         </div>
                     {:else}
                         <div
@@ -1248,7 +1412,7 @@
                     {/if}
 
                     <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new" && platformTab !== 'endmin'}
+                        {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev'}
                             <div
                                 class="flex flex-col gap-2 transition-all w-full"
                             >
@@ -1314,7 +1478,7 @@
                             </div>
                         {/if}
 
-                        {#if platformTab !== 'endmin'}
+                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev'}
                             <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
                                 <span
                                     class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
@@ -1322,28 +1486,28 @@
                                     {$t("import.enableGlobalStats")}
                                 </span>
                             </Checkbox>
-
-                            <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
-                                <span
-                                    class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
-                                >
-                                    {$t("import.recoveryStats") ||
-                                        "Восстановление записей"}
-                                    <Tooltip
-                                        text={$t("import.recoveryTooltip") ||
-                                            "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
-                                    >
-                                        <span
-                                            class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
-                                        >
-                                            <Icon name="info" class="m-1 w-4 h-4" />
-                                        </span>
-                                    </Tooltip>
-                                </span>
-                            </Checkbox>
                         {/if}
 
-                        {#if platformTab !== 'endmin'}
+                        <Checkbox bind:checked={isRecoveryEnabled} variant="red" align="center">
+                            <span
+                                class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm flex items-center gap-1.5"
+                            >
+                                {$t("import.recoveryStats") ||
+                                    "Восстановление записей"}
+                                <Tooltip
+                                    text={$t("import.recoveryTooltip") ||
+                                        "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках"}
+                                >
+                                    <span
+                                        class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
+                                    >
+                                        <Icon name="info" class="m-1 w-4 h-4" />
+                                    </span>
+                                </Tooltip>
+                            </span>
+                        </Checkbox>
+
+                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev'}
                             <div
                                 class="w-fit mt-4 {isLoading
                                     ? 'opacity-60 pointer-events-none cursor-not-allowed'

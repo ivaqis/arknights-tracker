@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "Keine Profile in der Backup-Datei gefunden.",
     "endmin_no_pulls_error": "Keine Ziehungen im ausgewählten Profil gefunden.",
     "endmin_read_error": "Datei konnte nicht von der Festplatte gelesen werden.",
-    "endmin_unknown_error": "Unbekannter Dateilesefehler"
+    "endmin_unknown_error": "Unbekannter Dateilesefehler",
+    "toolsdev_step1": "Gehe zu <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Klicke in der Lesezeichenleiste (drücke Strg + Umschalt + B, um sie anzuzeigen) auf 'Seite hinzufügen', gib ihr einen beliebigen Namen und füge diesen Code in das URL-Feld ein:",
+    "toolsdev_step3": "Klicke auf der Website auf dieses Lesezeichen — die Daten werden in deine Zwischenablage kopiert. Füge sie unten ein.",
+    "toolsdev_placeholder": "JSON hier einfügen...",
+    "warning": "Warnung",
+    "tracker_backup_warning": "Bevor du Daten von Tracker-Seiten importierst, wird dringend empfohlen, ein Backup deiner aktuellen Daten zu erstellen (Gehe zu den Einstellungen und klicke im Bereich <strong>&ldquo;Backup&rdquo;</strong> auf <strong>&ldquo;Daten exportieren&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Keine Einträge"

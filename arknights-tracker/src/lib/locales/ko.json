@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "백업 파일에서 프로필을 찾을 수 없습니다.",
     "endmin_no_pulls_error": "선택한 프로필에서 뽑기 내역을 찾을 수 없습니다.",
     "endmin_read_error": "디스크에서 파일을 읽는 데 실패했습니다.",
-    "endmin_unknown_error": "알 수 없는 파일 읽기 오류"
+    "endmin_unknown_error": "알 수 없는 파일 읽기 오류",
+    "toolsdev_step1": "<a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>로 이동합니다.",
+    "toolsdev_step2": "북마크바(Ctrl + Shift + B를 눌러 표시)에서 '페이지 추가'를 클릭하고, 임의의 이름을 지정한 다음, URL 필드에 이 코드를 붙여넣습니다:",
+    "toolsdev_step3": "웹사이트에 있는 동안 해당 북마크를 클릭하면 데이터가 클립보드에 복사됩니다. 아래에 붙여넣으세요.",
+    "toolsdev_placeholder": "여기에 JSON 붙여넣기...",
+    "warning": "경고",
+    "tracker_backup_warning": "트래커 사이트에서 데이터를 가져오기 전에 현재 데이터를 백업하는 것이 좋습니다 (설정으로 이동하여 <strong>&ldquo;백업&rdquo;</strong> 섹션의 <strong>&ldquo;데이터 내보내기&rdquo;</strong>를 클릭하세요)."
   },
   "emptyState": {
     "noData": "데이터 없음"

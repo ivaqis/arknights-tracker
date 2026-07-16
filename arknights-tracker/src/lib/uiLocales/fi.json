@@ -246,7 +246,13 @@
     "endmin_no_profiles_error": "Varmuuskopiotiedostosta ei löytynyt profiileja.",
     "endmin_no_pulls_error": "Valitusta profiilista ei löytynyt vetoja.",
     "endmin_read_error": "Tiedoston lukeminen levyltä epäonnistui.",
-    "endmin_unknown_error": "Tuntematon tiedostonlukuvirhe"
+    "endmin_unknown_error": "Tuntematon tiedostonlukuvirhe",
+    "toolsdev_step1": "Mene osoitteeseen <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Napsauta kirjanmerkkipalkissa (paina Ctrl + Shift + B näyttääksesi sen) 'Lisää sivu', anna sille jokin nimi ja liitä tämä koodi URL-kenttään:",
+    "toolsdev_step3": "Kun olet verkkosivustolla, napsauta sitä kirjanmerkkiä — tiedot kopioidaan leikepöydälle. Liitä ne alle.",
+    "toolsdev_placeholder": "Liitä JSON tähän...",
+    "warning": "Varoitus",
+    "tracker_backup_warning": "Ennen kuin tuot tietoja seurantasivustoilta, on erittäin suositeltavaa varmuuskopioida nykyiset tietosi (Mene asetuksiin ja napsauta <strong>&ldquo;Vie tiedot&rdquo;</strong> <strong>&ldquo;Varmuuskopiointi&rdquo;</strong> -osiossa)."
   },
   "emptyState": {
     "noData": "Ei merkintöjä"

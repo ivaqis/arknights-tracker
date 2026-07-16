@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "ไม่พบโปรไฟล์ในไฟล์สำรอง",
     "endmin_no_pulls_error": "ไม่พบการเปิดกาชาในโปรไฟล์ที่เลือก",
     "endmin_read_error": "ไม่สามารถอ่านไฟล์จากดิสก์ได้",
-    "endmin_unknown_error": "ข้อผิดพลาดในการอ่านไฟล์ที่ไม่รู้จัก"
+    "endmin_unknown_error": "ข้อผิดพลาดในการอ่านไฟล์ที่ไม่รู้จัก",
+    "toolsdev_step1": "ไปที่ <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>",
+    "toolsdev_step2": "บนแถบบุ๊กมาร์ก (กด Ctrl + Shift + B เพื่อแสดง) คลิก 'เพิ่มหน้า' ตั้งชื่อใดก็ได้ แล้ววางโค้ดนี้ลงในช่อง URL:",
+    "toolsdev_step3": "ขณะอยู่ในเว็บไซต์ ให้คลิกบุ๊กมาร์กนั้น — ข้อมูลจะถูกคัดลอกไปยังคลิปบอร์ดของคุณ วางลงที่ด้านล่าง",
+    "toolsdev_placeholder": "วาง JSON ที่นี่...",
+    "warning": "คำเตือน",
+    "tracker_backup_warning": "ก่อนนำเข้าข้อมูลจากไซต์ติดตาม ขอแนะนำให้สำรองข้อมูลปัจจุบันของคุณ (ไปที่ตั้งค่าและคลิก <strong>&ldquo;ส่งออกข้อมูล&rdquo;</strong> ในส่วน <strong>&ldquo;สำรองข้อมูล&rdquo;</strong>)"
   },
   "emptyState": {
     "noData": "ไม่มีข้อมูล"

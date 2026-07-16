@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "Nessun profilo trovato nel file di backup.",
     "endmin_no_pulls_error": "Nessun pull trovato nel profilo selezionato.",
     "endmin_read_error": "Impossibile leggere il file dal disco.",
-    "endmin_unknown_error": "Errore sconosciuto di lettura del file"
+    "endmin_unknown_error": "Errore sconosciuto di lettura del file",
+    "toolsdev_step1": "Vai su <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
+    "toolsdev_step2": "Nella barra dei preferiti (premi Ctrl + Maiusc + B per mostrarla), fai clic su 'Aggiungi pagina', dalle un nome qualsiasi e incolla questo codice nel campo URL:",
+    "toolsdev_step3": "Mentre sei sul sito web, fai clic su quel preferito: i dati verranno copiati negli appunti. Incollali qui sotto.",
+    "toolsdev_placeholder": "Incolla qui il JSON...",
+    "warning": "Avviso",
+    "tracker_backup_warning": "Prima di importare dati da siti di monitoraggio, si consiglia vivamente di fare un backup dei dati attuali (Vai su Impostazioni e fai clic su <strong>&ldquo;Esporta dati&rdquo;</strong> nella sezione <strong>&ldquo;Backup&rdquo;</strong>)."
   },
   "emptyState": {
     "noData": "Nessuna voce"

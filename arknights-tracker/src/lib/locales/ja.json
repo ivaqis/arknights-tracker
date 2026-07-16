@@ -278,7 +278,13 @@
     "endmin_no_profiles_error": "バックアップファイルにプロファイルが見つかりません。",
     "endmin_no_pulls_error": "選択したプロファイルにガチャ履歴が見つかりません。",
     "endmin_read_error": "ディスクからのファイルの読み取りに失敗しました。",
-    "endmin_unknown_error": "不明なファイル読み取りエラー"
+    "endmin_unknown_error": "不明なファイル読み取りエラー",
+    "toolsdev_step1": "<a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>にアクセスします。",
+    "toolsdev_step2": "ブックマークバー（Ctrl + Shift + Bキーを押して表示）で、「ページを追加」をクリックし、任意の名前を付けて、URLフィールドにこのコードを貼り付けます:",
+    "toolsdev_step3": "ウェブサイトにいる間にそのブックマークをクリックすると、データがクリップボードにコピーされます。以下に貼り付けてください。",
+    "toolsdev_placeholder": "ここにJSONを貼り付け...",
+    "warning": "警告",
+    "tracker_backup_warning": "トラッカーサイトからデータをインポートする前に、現在のデータのバックアップを作成することを強くお勧めします（設定に移動し、<strong>&ldquo;バックアップ&rdquo;</strong>セクションの<strong>&ldquo;データエクスポート&rdquo;</strong>をクリックします）。"
   },
   "emptyState": {
     "noData": "エントリーなし"
