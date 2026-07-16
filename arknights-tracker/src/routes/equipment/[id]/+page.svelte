@@ -3,6 +3,8 @@
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
     import { equipment } from "$lib/data/items/equipment.js";
+    import { browser } from "$app/environment";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -73,25 +75,11 @@
     $: rarity = equipData.rarity || 1;
     $: level = equipData.level || 70;
     $: pack = equipData.pack || "none";
-
     $: partTypeInt = equipData.partType !== undefined ? equipData.partType : 0;
     $: partTypeStr =
         partTypeInt === 0 ? "body" : partTypeInt === 1 ? "hand" : "edc";
-    $: partTypeLabel = tOrFallback(
-        `equipmentTypes.${partTypeStr}`,
-        partTypeStr,
-    );
-
-    function getRarityColors(r) {
-        if (r === 6) return "#F87C32"; // Оранжевый из оружия
-        if (r === 5) return "#F9B90C"; // Желтый
-        if (r === 4) return "#9253F1"; // Фиолетовый
-        if (r === 3) return "#25B9F9"; // Синий
-        if (r === 2) return "#A5B100"; // Зеленый
-        return "#888888";
-    }
-    $: rarityColor = getRarityColors(rarity);
-
+    $: partTypeLabel = $t(`equipmentTypes.${partTypeStr}` || partTypeStr);
+    $: rarityColor = getRarityColor(rarity);
     $: currentBlackboard = equipData.blackboard || {};
     $: neededMaterials = (equipData.materials || []).map((m) => ({
         id: m.name,
@@ -354,7 +342,37 @@
             };
         });
     })();
+
+    function extractShortCode(url) {
+        if (!url) return null;
+        try {
+            const parsed = new URL(url);
+            const x = parsed.searchParams.get("x");
+            if (x) return x;
+            const parts = parsed.pathname.split("/").filter(Boolean);
+            if (parts.length > 0) return parts[parts.length - 1];
+        } catch (e) {
+        }
+        const xMatch = url.match(/[?&]x=([^&]+)/);
+        if (xMatch) return xMatch[1];
+        const parts = url.split("/").filter(Boolean);
+        if (parts.length > 0) {
+            const last = parts[parts.length - 1];
+            if (last.includes("?")) return last.split("?")[0];
+            return last;
+        }
+        return null;
+    }
+
+    function getCleanUrlText(url) {
+        if (!url) return "";
+        return url.replace(/^https?:\/\//, "");
+    }
+
+    let showZoomModal = false;
 </script>
+
+<svelte:window on:keydown={(e) => showZoomModal && e.key === 'Escape' && (showZoomModal = false)} />
 
 {#if !equipment[id]}
     <NotFound />
@@ -491,7 +509,7 @@
                                     <span
                                         class="text-[11px] font-bold text-[#21272C] dark:text-white/90 uppercase tracking-widest leading-none"
                                     >
-                                        {tOrFallback("packs.none", "Non-Set")}
+                                        {$t("packs.none" || "Non-Set")}
                                     </span>
                                 </div>
                             {/if}
@@ -509,7 +527,7 @@
                                     <th
                                         class="py-3 px-2 font-bold text-gray-500 dark:text-[#888] text-sm whitespace-nowrap w-[40%]"
                                     >
-                                        {tOrFallback("sort.stats", "Attribute")}
+                                        {$t("sort.stats" || "Attribute")}
                                     </th>
 
                                     {#each tiers as tier}
@@ -612,10 +630,7 @@
                                                 />
                                                 <span
                                                     class="text-[#21272C] dark:text-white"
-                                                    >{tOrFallback(
-                                                        `equipSkills.${attr.attrType}`,
-                                                        attr.attrType,
-                                                    )}</span
+                                                    >{$t(`equipSkills.${attr.attrType}` || attr.attrType)}</span
                                                 >
                                             </td>
 
@@ -661,7 +676,7 @@
                                 <h3
                                     class="text-sm font-bold text-gray-500 dark:text-[#888]"
                                 >
-                                    {tOrFallback(`packs.${pack}`, pack)}
+                                    {$t(`packs.${pack}` || pack)}
                                 </h3>
                             {/if}
                         </div>
@@ -675,7 +690,7 @@
                             {:else}
                                 <Icon name="copy" class="w-4 h-4" />
                             {/if}
-                            <span>{tOrFallback("common.copy", "Copy")}</span>
+                            <span>{$t("common.copy" || "Copy")}</span>
                         </button>
                     </div>
 
@@ -715,7 +730,7 @@
                     <h2
                         class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                     >
-                        {tOrFallback("stats.artificing", "Artificing")}
+                        {$t("stats.artificing" || "Artificing")}
                     </h2>
 
                     <div
@@ -741,10 +756,7 @@
                                     <span
                                         class="font-medium text-[15px] text-[#21272C] dark:text-white tracking-wide leading-tight"
                                     >
-                                        {tOrFallback(
-                                            `equipSkills.${attrGroup.attrType}`,
-                                            attrGroup.attrType,
-                                        )}
+                                        {$t(`equipSkills.${attrGroup.attrType}` || attrGroup.attrType)}
                                     </span>
                                 </div>
 
@@ -773,10 +785,7 @@
                                                     <span
                                                         class="absolute bottom-0 left-0 right-0 py-[1.5px] bg-[#26BAFB]/60 dark:bg-[#26BAFB]/45 text-white text-[8px] font-bold uppercase leading-none text-center pointer-events-none rounded-b-[6px] shadow-sm z-30"
                                                     >
-                                                        {tOrFallback(
-                                                            "common.same",
-                                                            "Same",
-                                                        )}
+                                                        Same
                                                     </span>
                                                 {/if}
 
@@ -787,10 +796,7 @@
                                                 <span
                                                     class="text-[13px] font-medium text-gray-800 dark:text-gray-200 leading-tight block whitespace-normal break-words"
                                                 >
-                                                    {tOrFallback(
-                                                        `equipment.${match.id}`,
-                                                        match.name || match.id,
-                                                    )}
+                                                    {$t(`equipment.${match.id}` || match.name || match.id)}
                                                 </span>
 
                                                 <div class="flex flex-col items-start gap-1.5 mt-1">
@@ -799,10 +805,7 @@
                                                         <span
                                                             class="text-[11px] font-bold text-[#16A34A] dark:text-[#4ADE80] leading-none flex items-center gap-0.5"
                                                         >
-                                                            {tOrFallback(
-                                                                "stats.recommended",
-                                                                "Recommended",
-                                                            )}
+                                                            {$t("stats.recommended" || "Recommended")}
                                                         </span>
                                                     {/if}
 
@@ -813,19 +816,13 @@
                                                                     ? 'text-[#F9B90C]/80'
                                                                     : 'text-[#F9B90C]'} leading-none"
                                                             >
-                                                                {tOrFallback(
-                                                                    "stats.goodMatch",
-                                                                    "Good Match",
-                                                                )}
+                                                                {$t("stats.goodMatch" || "Good Match")}
                                                             </span>
                                                         {:else if !match.isRecommended}
                                                             <span
                                                                 class="text-[11px] font-medium text-gray-400 dark:text-[#888] leading-none"
                                                             >
-                                                                {tOrFallback(
-                                                                    "stats.standardMatch",
-                                                                    "Standard Match",
-                                                                )}
+                                                                {$t("stats.standardMatch" || "Standard Match")}
                                                             </span>
                                                         {/if}
                                                     </div>
@@ -834,7 +831,7 @@
 
                                             <div class="absolute right-1 bottom-1 flex flex-col items-end gap-1">
                                                 {#if usefulnessMap[match.id] !== undefined}
-                                                    <Tooltip text={tOrFallback("stats.usefulnessTooltip", "Number of items of this type for which this gear is a Good Match")}>
+                                                    <Tooltip text={$t("stats.usefulnessTooltip" || "Number of items of this type for which this gear is a Good Match")}>
                                                         <span class="text-[10px] font-bold px-1 py-[1.5px] rounded-md select-none leading-none {getUsefulnessClass(usefulnessMap[match.id])}">
                                                             {usefulnessMap[match.id]}
                                                         </span>
@@ -863,10 +860,7 @@
                                         <div
                                             class="text-center py-4 text-gray-400 text-[13px] italic bg-gray-50/50 dark:bg-[#333]/20 rounded-xl border border-transparent dark:border-[#444]/50"
                                         >
-                                            {tOrFallback(
-                                                "page.rating.noData",
-                                                "No data",
-                                            )}
+                                            {$t("page.rating.noData" || "No data")}
                                         </div>
                                     {/if}
                                 </div>
@@ -884,7 +878,7 @@
                 <h2
                     class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
                 >
-                    {tOrFallback("stats.materials", "Materials")}
+                    {$t("stats.materials" || "Materials")}
                 </h2>
                 <div class="flex flex-wrap gap-4 pt-1">
                     {#if neededMaterials.length > 0}
@@ -895,14 +889,91 @@
                         <div
                             class="w-full text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic"
                         >
-                            {tOrFallback(
-                                "systemNames.noMaterialsNeeded",
-                                "No materials needed",
-                            )}
+                            {$t("systemNames.noMaterialsNeeded" || "No materials needed")}
                         </div>
                     {/if}
                 </div>
             </div>
+
+            {#if equipData.url}
+                {@const code = extractShortCode(equipData.url)}
+                {#if code}
+                    <div
+                        class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-4 transition-colors shadow-sm"
+                    >
+                        <h2
+                            class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3"
+                        >
+                            {$t("systemNames.blueprintLocation")}
+                        </h2>
+                        
+                        <div
+                            class="relative rounded-2xl overflow-hidden aspect-[1200/630] w-full block shadow-md border border-gray-100 dark:border-[#444]"
+                        >
+                            <a
+                                href={equipData.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-full h-full block group"
+                            >
+                                <img
+                                    src="https://cdn.opendfieldmap.org/_dev/endfield/atlos/seo/og/r2/{code}.jpg"
+                                    alt="Gear template location"
+                                    class="w-full h-full object-cover transition-transform duration-500"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer"
+                                />
+
+                                <div class="absolute inset-0 pointer-events-none"></div>
+                                
+                                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white pointer-events-none">
+                                    <div class="flex items-start gap-2.5">
+                                        <div class="w-[3px] bg-white rounded self-stretch"></div>
+                                        <span class="text-md group-hover:underline font-bold tracking-wide drop-shadow-md max-w-[250px]">
+                                            {$t("systemNames.gearTemplate")} - Open Endfield Map<Icon name="sendToLink" class="w-4 h-4 inline-block align-middle ml-1.5 text-current group-hover:text-[#FFD800]" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <button
+                                type="button"
+                                class="absolute top-4 right-4 z-10 flex items-center justify-center w-11 h-11 rounded-xl bg-black/45 hover:bg-black/65 text-white transition-all duration-300 backdrop-blur-sm shadow-md cursor-pointer pointer-events-auto"
+                                on:click={() => showZoomModal = true}
+                            >
+                                <Icon name="zoom-in" class="w-7 h-7 text-white" />
+                            </button>
+                        </div>
+                    </div>
+
+                    {#if showZoomModal}
+                        <div
+                            class="md:ml-[var(--sb-w)] fixed inset-0 z-[100] bg-black/85 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 cursor-default"
+                            on:click={() => showZoomModal = false}
+                            role="button"
+                            tabindex="0"
+                            on:keydown={(e) => e.key === 'Escape' && (showZoomModal = false)}
+                        >
+                            <div class="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center group pointer-events-none">
+                                <img
+                                    src="https://cdn.opendfieldmap.org/_dev/endfield/atlos/seo/og/r2/{code}.jpg"
+                                    alt="Blueprint location map full screen"
+                                    class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10 pointer-events-auto select-none"
+                                    referrerpolicy="no-referrer"
+                                />
+                                
+                                <button
+                                    type="button"
+                                    class="absolute -top-12 right-0 md:-right-12 flex items-center justify-center w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all cursor-pointer pointer-events-auto"
+                                    on:click={() => showZoomModal = false}
+                                >
+                                    <Icon name="close" class="w-6 h-6 text-white" />
+                                </button>
+                            </div>
+                        </div>
+                    {/if}
+                {/if}
+            {/if}
         </div>
     </div>
 </div>

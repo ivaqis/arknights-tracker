@@ -27,7 +27,7 @@ export const promocodes = [
             { id: "protoprism", count: 5 },
             { id: "tCreds", count: 30 }
         ],
-        startTime: "2024-01-22 00:00:00",
+        startTime: "2026-01-22 00:00:00",
         condition: null,
         endTime: "2026-01-29 23:59:59",
         url: null
@@ -40,7 +40,7 @@ export const promocodes = [
             { id: "intermediateCombatRecord", count: 20 },
             { id: "armsInspKit", count: 20 }
         ],
-        startTime: "2024-01-22 00:00:00",
+        startTime: "2026-01-22 00:00:00",
         condition: null,
         endTime: null,
         url: null
@@ -52,7 +52,7 @@ export const promocodes = [
             { id: "advancedCombatRecord", count: 2 },
             { id: "armsInspKit", count: 2 }
         ],
-        startTime: "2024-01-22 00:00:00",
+        startTime: "2026-01-22 00:00:00",
         condition: "home.conditions.onlyPc",
         endTime: null,
         url: null
@@ -63,9 +63,20 @@ export const promocodes = [
             { id: "tCreds", count: 5000 },
             { id: "armsInspKit", count: 10 }
         ],
-        startTime: "2024-04-18 00:00:00",
+        startTime: "2026-04-18 00:00:00",
         condition: null,
         endTime: "N/A",
+        url: null
+    },
+    {
+        code: "ENDFIELDRENEW",
+        rewards: [
+            { id: "tCreds", count: 71600 },
+            { id: "stickerSafetyHelmet", count: 1 }
+        ],
+        startTime: "2026-07-10 00:00:00",
+        condition: null,
+        endTime: "2026-08-24 17:00:00",
         url: null
     }
 ];

@@ -268,7 +268,17 @@
     "error_account_mismatch": "บัญชีไม่ตรงกัน! คุณมีประวัติระหว่าง {start} ถึง {end} อยู่แล้ว แต่ข้อมูลที่นำเข้าแตกต่างกันอย่างสิ้นเชิง โปรดตรวจสอบว่าเลือกบัญชีถูกต้อง",
     "recoveryStats": "กู้คืนบันทึก",
     "recoveryTooltip": "การทำเครื่องหมายที่ช่องนี้จะบังคับให้กู้คืนประวัติการสุ่มหากทำได้ ซึ่งอาจช่วยได้ในกรณีที่บันทึกการสุ่มสูญหายไปบางส่วน",
-    "error_account_mismatch_recovery": "บัญชีไม่ตรงกัน! ไม่พบประวัติที่ตรงกันแม้จะอยู่ในโหมดกู้คืน โปรดตรวจสอบว่าคุณเลือกบัญชีถูกต้องหรือไม่"
+    "error_account_mismatch_recovery": "บัญชีไม่ตรงกัน! ไม่พบประวัติที่ตรงกันแม้จะอยู่ในโหมดกู้คืน โปรดตรวจสอบว่าคุณเลือกบัญชีถูกต้องหรือไม่",
+    "endmin_step1": "ไปที่ <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a> เปิดส่วน <strong>&ldquo;ตั้งค่า &rarr; ข้อมูล&rdquo;</strong>",
+    "endmin_step2": "ส่งออกข้อมูลโดยคลิกปุ่ม <strong>&ldquo;ส่งออกข้อมูล&rdquo;</strong>",
+    "endmin_step3": "เลือกไฟล์ที่ดาวน์โหลดในช่องด้านล่าง",
+    "endmin_drag_drop": "คลิกเพื่อเลือกไฟล์หรือลากและวางที่นี่",
+    "endmin_files_label": "ไฟล์ *.endmin",
+    "endmin_decompress_error": "ไม่สามารถขยายไฟล์ได้ โปรดตรวจสอบว่าเป็นไฟล์สำรอง endmin ที่ถูกต้อง",
+    "endmin_no_profiles_error": "ไม่พบโปรไฟล์ในไฟล์สำรอง",
+    "endmin_no_pulls_error": "ไม่พบการเปิดกาชาในโปรไฟล์ที่เลือก",
+    "endmin_read_error": "ไม่สามารถอ่านไฟล์จากดิสก์ได้",
+    "endmin_unknown_error": "ข้อผิดพลาดในการอ่านไฟล์ที่ไม่รู้จัก"
   },
   "emptyState": {
     "noData": "ไม่มีข้อมูล"
@@ -309,7 +319,8 @@
     "sortByWait": "ตามจำนวนวันที่ไม่มีรีรัน",
     "allBanners": "แบนเนอร์ทั้งหมด",
     "emptyPageMsg": "ที่นี่ว่างเปล่าจัง",
-    "equipmentType": "ประเภทอุปกรณ์"
+    "equipmentType": "ประเภทอุปกรณ์",
+    "gearTemplate": "เทม​เพล​ต​อุปกรณ์"
   },
   "status": {
     "won": "ชนะ 50:50",
@@ -430,7 +441,8 @@
     "seatchForSwordVaultDale": "ค้นหา​เดล​คลัง​ดาบ",
     "monumentalEtchingDirgeOfGrief": "จารึก​อนุสรณ์​: บทเพลง​คร่ำครวญ​แห่ง​ความ​โศกเศร้า",
     "umbralMonument": "อนุสาวรีย์​แห่ง​เงามืด",
-    "peacekeepersNocturneSignIn": "ลงชื่อ​เข้าสู่ระบบ​ บทเพลง​รัตติกาล​ของ​ผู้พิทักษ์"
+    "peacekeepersNocturneSignIn": "ลงชื่อ​เข้าสู่ระบบ​ บทเพลง​รัตติกาล​ของ​ผู้พิทักษ์",
+    "northwardToPerilSignIn": "ลงชื่อ​เข้าสู่ระบบ​ ขึ้น​เหนือ​สู่​ภยันตราย"
   },
   "mouths": {
     "january": "มกราคม",
@@ -807,7 +819,8 @@
     "precipitationAcid": "กรด​ตกตะกอน",
     "liquidHeavyXiranite": "ซี​เรน​ไนต์​หนัก​แบบ​เหลว",
     "centuryRind": "เปลือก​ร้อย​ปี",
-    "caudalGoldscale": "เกล็ด​ทอง​ส่วน​หาง"
+    "caudalGoldscale": "เกล็ด​ทอง​ส่วน​หาง",
+    "stickerSafetyHelmet": "สติกเกอร์​: หมวกนิรภัย"
   },
   "common": {
     "copy": "คัดลอก",

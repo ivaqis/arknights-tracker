@@ -268,7 +268,17 @@
     "error_account_mismatch": "계정 불일치! {start}와 {end} 사이의 기록이 있지만, 가져온 데이터가 완전히 다릅니다. 올바른 계정을 선택했는지 확인해주세요.",
     "recoveryStats": "기록 복구",
     "recoveryTooltip": "이 상자를 선택하면 해당되는 경우 소환 기록 복구를 강제합니다. 이는 소환 기록의 일부가 유실된 경우에 도움이 될 수 있습니다.",
-    "error_account_mismatch_recovery": "계정 불일치! 복구 모드에서도 일치하는 기록을 찾을 수 없습니다. 올바른 계정을 선택했는지 확인해 주세요."
+    "error_account_mismatch_recovery": "계정 불일치! 복구 모드에서도 일치하는 기록을 찾을 수 없습니다. 올바른 계정을 선택했는지 확인해 주세요.",
+    "endmin_step1": "<a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>로 이동하여 <strong>&ldquo;설정 &rarr; 데이터&rdquo;</strong> 섹션을 엽니다.",
+    "endmin_step2": "<strong>&ldquo;데이터 내보내기&rdquo;</strong> 버튼을 클릭하여 데이터를 내보냅니다.",
+    "endmin_step3": "다운로드한 파일을 아래 필드에서 선택합니다.",
+    "endmin_drag_drop": "클릭하여 파일을 선택하거나 여기에 드래그 앤 드롭하세요",
+    "endmin_files_label": "파일 *.endmin",
+    "endmin_decompress_error": "파일의 압축을 푸는 데 실패했습니다. 올바른 endmin 백업 파일인지 확인하세요.",
+    "endmin_no_profiles_error": "백업 파일에서 프로필을 찾을 수 없습니다.",
+    "endmin_no_pulls_error": "선택한 프로필에서 뽑기 내역을 찾을 수 없습니다.",
+    "endmin_read_error": "디스크에서 파일을 읽는 데 실패했습니다.",
+    "endmin_unknown_error": "알 수 없는 파일 읽기 오류"
   },
   "emptyState": {
     "noData": "데이터 없음"
@@ -309,7 +319,8 @@
     "sortByWait": "복각 대기일순",
     "allBanners": "모든 배너",
     "emptyPageMsg": "여기 정말 텅 비었네",
-    "equipmentType": "장비 유형"
+    "equipmentType": "장비 유형",
+    "gearTemplate": "장비 제작 템플릿"
   },
   "status": {
     "won": "승리 50:50",
@@ -430,7 +441,8 @@
     "seatchForSwordVaultDale": "골짜기의 검을 찾아서",
     "monumentalEtchingDirgeOfGrief": "기억의 흔적 · 분노의 외침",
     "umbralMonument": "그림자 이정표",
-    "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크"
+    "peacekeepersNocturneSignIn": "단죄의 야상곡 출석 체크",
+    "northwardToPerilSignIn": "북쪽 험지 출석 체크"
   },
   "mouths": {
     "january": "1월",
@@ -807,7 +819,8 @@
     "precipitationAcid": "산성 침적물",
     "liquidHeavyXiranite": "액화 중식양",
     "centuryRind": "백년 숙성 진피",
-    "caudalGoldscale": "꼬리 금갑"
+    "caudalGoldscale": "꼬리 금갑",
+    "stickerSafetyHelmet": "스티커 · 공업 안전모"
   },
   "common": {
     "copy": "복사",

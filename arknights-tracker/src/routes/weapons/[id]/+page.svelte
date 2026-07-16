@@ -12,6 +12,7 @@
     import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
 
     import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
@@ -512,15 +513,7 @@
             });
     })();
 
-    function getRarityColors(rarity) {
-        if (rarity === 6) return "#F87C32";
-        if (rarity === 5) return "#F9B90C";
-        if (rarity === 4) return "#9253F1";
-        if (rarity === 3) return "#25B9F9";
-        return "#888888";
-    }
-    $: rarityColor = getRarityColors(weaponBase.rarity);
-
+    $: rarityColor = getRarityColor(weaponBase.rarity);
 
     function interpolateBlackboard(text, bb) {
         if (!text || !bb) return text;
@@ -961,7 +954,7 @@
                                 (isPotDropdownOpen = !isPotDropdownOpen)}
                             class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
                         >
-                            <span class="text-[#21272C] dark:text-white">R{previewPot}</span>
+                            <span class="text-[#21272C] dark:text-white">P{previewPot}</span>
                             <Icon
                                 name="arrowDown"
                                 class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
@@ -985,7 +978,7 @@
                                             isPotDropdownOpen = false;
                                         }}
                                     >
-                                        R{i}
+                                        P{i}
                                     </button>
                                 {/each}
                             </div>

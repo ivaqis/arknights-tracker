@@ -272,7 +272,17 @@
     "error_account_mismatch": "Несовпадение аккаунта! У вас уже есть история с {start} по {end}, но новые данные полностью отличаются. Убедитесь, что выбрали правильный аккаунт.",
     "recoveryStats": "Восстановление записей",
     "recoveryTooltip": "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках",
-    "error_account_mismatch_recovery": "Несовпадение аккаунтов! Не найдено подходящих записей даже в режиме восстановления. Пожалуйста, убедитесь, что выбран правильный аккаунт."
+    "error_account_mismatch_recovery": "Несовпадение аккаунтов! Не найдено подходящих записей даже в режиме восстановления. Пожалуйста, убедитесь, что выбран правильный аккаунт.",
+    "endmin_step1": "Зайдите на сайт <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, перейдите в раздел <strong>&ldquo;Settings &rarr; Data&rdquo;</strong>",
+    "endmin_step2": "Экспортируйте данные нажатием на кнопку <strong>&ldquo;Export Data&rdquo;</strong>",
+    "endmin_step3": "Полученный файл приложите в поле ниже",
+    "endmin_drag_drop": "Нажмите для выбора файла или перетащите его сюда",
+    "endmin_files_label": "Файлы *.endmin",
+    "endmin_decompress_error": "Не удалось разжать файл. Убедитесь, что выбрали правильный файл endmin.",
+    "endmin_no_profiles_error": "В файле не найдено профилей с данными",
+    "endmin_no_pulls_error": "В выбранном профиле не найдено записей о крутках",
+    "endmin_read_error": "Ошибка при чтении файла с диска",
+    "endmin_unknown_error": "Неизвестная ошибка при чтении файла"
   },
   "emptyState": {
     "noData": "Нет записей"
@@ -313,7 +323,9 @@
     "sortByWait": "По числу дней без рерана",
     "allBanners": "Все баннеры",
     "emptyPageMsg": "Как же тут пусто",
-    "equipmentType": "Тип снаряжения"
+    "equipmentType": "Тип снаряжения",
+    "gearTemplate": "Шаблон снаряжения",
+    "blueprintLocation": "Локация шаблона снаряжения"
   },
   "status": {
     "won": "Выигрыш 50:50",
@@ -437,7 +449,8 @@
     "seatchForSwordVaultDale": "В поисках долины Залежи Клинков",
     "monumentalEtchingDirgeOfGrief": "Памятные знаки: Скорбный плач",
     "umbralMonument": "Сумрачный монумент",
-    "peacekeepersNocturneSignIn": "Вход «Ноктюрн миротворца»"
+    "peacekeepersNocturneSignIn": "Вход «Ноктюрн миротворца»",
+    "northwardToPerilSignIn": "Вход «На север, навстречу риску»"
   },
   "mouths": {
     "january": "Январь",
@@ -939,7 +952,8 @@
     "precipitationAcid": "Осадочная кислота",
     "liquidHeavyXiranite": "Жидкий тяжелый ксиранит",
     "centuryRind": "Вековая кожура",
-    "caudalGoldscale": "Золотая хвостовая чешуя"
+    "caudalGoldscale": "Золотая хвостовая чешуя",
+    "stickerSafetyHelmet": "Стикер «Защитная каска»"
   },
   "common": {
     "copy": "Копировать",

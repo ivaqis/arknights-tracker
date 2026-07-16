@@ -268,7 +268,17 @@
     "error_account_mismatch": "Konto stimmt nicht überein! Du hast bereits einen Verlauf zwischen {start} und {end}, aber die importierten Daten unterscheiden sich komplett. Bitte überprüfe, ob du das richtige Konto gewählt hast.",
     "recoveryStats": "Verlaufswiederherstellung",
     "recoveryTooltip": "Das Aktivieren dieses Kontrollkästchens erzwingt die Wiederherstellung des Rekrutierungsverlaufs, falls zutreffend. Dies kann bei partiellem Verlust von Rekrutierungsdaten helfen.",
-    "error_account_mismatch_recovery": "Konto-Mismatch! Selbst im Wiederherstellungsmodus wurden keine übereinstimmenden Daten gefunden. Bitte überprüfe, ob das richtige Konto ausgewählt ist."
+    "error_account_mismatch_recovery": "Konto-Mismatch! Selbst im Wiederherstellungsmodus wurden keine übereinstimmenden Daten gefunden. Bitte überprüfe, ob das richtige Konto ausgewählt ist.",
+    "endmin_step1": "Gehe zu <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, öffne den Bereich <strong>&ldquo;Einstellungen &rarr; Daten&rdquo;</strong>.",
+    "endmin_step2": "Exportiere die Daten, indem du auf die Schaltfläche <strong>&ldquo;Daten exportieren&rdquo;</strong> klickst.",
+    "endmin_step3": "Wähle die heruntergeladene Datei im Feld unten aus.",
+    "endmin_drag_drop": "Klicken, um eine Datei auszuwählen, oder hierher ziehen und ablegen",
+    "endmin_files_label": "Dateien *.endmin",
+    "endmin_decompress_error": "Datei konnte nicht entpackt werden. Stelle sicher, dass es sich um eine gültige endmin-Backup-Datei handelt.",
+    "endmin_no_profiles_error": "Keine Profile in der Backup-Datei gefunden.",
+    "endmin_no_pulls_error": "Keine Ziehungen im ausgewählten Profil gefunden.",
+    "endmin_read_error": "Datei konnte nicht von der Festplatte gelesen werden.",
+    "endmin_unknown_error": "Unbekannter Dateilesefehler"
   },
   "emptyState": {
     "noData": "Keine Einträge"
@@ -309,7 +319,8 @@
     "sortByWait": "Nach Tagen ohne Rerun",
     "allBanners": "Alle Banner",
     "emptyPageMsg": "Wie leer es hier ist",
-    "equipmentType": "Ausrüstungstyp"
+    "equipmentType": "Ausrüstungstyp",
+    "gearTemplate": "Ausrüstungsvorlage"
   },
   "status": {
     "won": "Gewonnen 50:50",
@@ -430,7 +441,8 @@
     "seatchForSwordVaultDale": "Die Suche nach dem Tal des Schwertverlieses",
     "monumentalEtchingDirgeOfGrief": "Monumentales Ätzen: Klagegesang",
     "umbralMonument": "Schattenmonument",
-    "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung"
+    "peacekeepersNocturneSignIn": "„Nächtlicher Friedenswächter“-Anmeldung",
+    "northwardToPerilSignIn": "„Nach Norden der Gefahr entgegen“-Anmeldung"
   },
   "mouths": {
     "january": "Januar",
@@ -807,7 +819,8 @@
     "precipitationAcid": "Niederschlagssäure",
     "liquidHeavyXiranite": "Flüssiges Schweres Xiranit",
     "centuryRind": "Jahrhundertschale",
-    "caudalGoldscale": "Goldene Schwanzschuppe"
+    "caudalGoldscale": "Goldene Schwanzschuppe",
+    "stickerSafetyHelmet": "Sticker: Schutzhelm"
   },
   "common": {
     "copy": "Kopieren",
