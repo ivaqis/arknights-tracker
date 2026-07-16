@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Hochspannungszaun",
+    "desc": "Ein aktiver Hochspannungszaun lässt sich nicht passieren. Folge dem Kabel, finde den Schalter und schalte den Zaun aus, um ihn sicher passieren zu können."
+  },
+  "adv.eswitch": {
+    "name": "Reaktives Gerät",
+    "desc": "Ein reaktives Gerät ändert seinen Betriebsmodus, wenn es angegriffen oder von einer Explosion getroffen wird. Es wird oftmals verwendet, um <#adv.electricFence>Hochspannungszäune</> auszuschalten oder <#adv.jumpMachine>Sprungmodule</> zu aktivieren."
+  },
+  "adv.jumpMachine": {
+    "name": "Sprungmodul",
+    "desc": "Der gesteuerte Operator kann Sprungmodule verwenden, um größere Distanzen zurückzulegen oder hohe Orte zu erreichen, die mit normalen Sprüngen nicht erreichbar wären.\nStell dich einfach auf ein mit Strom versorgtes Sprungmodul und springe, um es zu nutzen."
+  },
+  "adv.powerTerminal": {
+    "name": "Elektrischer Nexus",
+    "desc": "Ein elektrischer Nexus wird normalerweise am Ende einer Energieübertragungsleitung platziert. Verbinde ihn mit dem Stromnetz, um Anlagen in der Nähe mit Energie zu versorgen. Elektrische Nexus werden häufig für die Stromversorgung von Toren und Schaltern verwendet. Versorge elektrische Nexus über Energieverteiler mit Strom. Das verleiht dir die Kontrolle über Tore oder Schalter, die mit ihnen verbunden sind."
+  },
+  "ba.absorb": {
+    "name": "Absorbieren",
+    "desc": "Eine Methode zum vorzeitigen Beenden eines Physisch- oder Technik-Debuffs. <@ba.key>Absorbieren</> ist nicht dasselbe wie <#ba.consume>Verbrauchen</>."
+  },
+  "ba.airborne": {
+    "name": "Physischer Zustand: Anheben",
+    "desc": "Belegt einen Gegner mit <#ba.noguard>Anfälligkeit</>. Wenn der Gegner bereits mit dem Status <#ba.noguard>Anfällig</> belegt ist, erhält er 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>, erleidet <@ba.phy>Physischen SDN</> und wird mit dem Status <@ba.poise>Taumeln</> belegt."
+  },
+  "ba.burning": {
+    "name": "Technikreaktion: Verbrannt",
+    "desc": "Ein mit <@ba.burning>Verbrannt</> belegter Gegner erleidet kontinuierlichen <@ba.fire>Hitze-SDN</>.\n<@ba.burning>Verbrannt</> = <#ba.spellinflict>Nicht-Hitze-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Hitze</>"
+  },
+  "ba.burningonchar": {
+    "name": "Operator-Debuff: Verbrannt",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.fireinflict>Hitze</> belegen.\nNach 4 Kumulierungen leiden Operatoren unter <@ba.burning>Verbrannt</>: Sie erleiden kontinuierlichen <@ba.fire>Hitze-SDN</>, der ihre VERT ignoriert."
+  },
+  "ba.combo": {
+    "name": "Verbunden",
+    "desc": "Die nächste Kampffertigkeit oder Ultimative Fertigkeit, die vom Team gewirkt wird, verbraucht den Verbunden-Buff und verursacht mehr SDN. Kampffertigkeiten werden stärker erhöht. Effekte desselben Typs können kumuliert werden, doch ihre Wirkung nimmt dabei ab."
+  },
+  "ba.conduct": {
+    "name": "Technikreaktion: Elektrifizierung",
+    "desc": "Ein mit <@ba.conduct>Elektrifizierung</> belegter Gegner erleidet mehr <#ba.spelldmg>Technik-SDN</>.\n<@ba.conduct>Elektrifizierung</> = <#ba.spellinflict>Nicht-Elektrik-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Elektrik</>"
+  },
+  "ba.conductonchar": {
+    "name": "Operator-Debuff: Elektrifizierung",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.pulseinflict>Elektrik</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.conduct>Elektrifiziert</>: Sie werden vorübergehend betäubt und erleiden für eine gewisse Zeit mehr <#ba.spelldmg>Technik-SDN</>."
+  },
+  "ba.consume": {
+    "name": "Debuff-Verbrauch",
+    "desc": "Zahlreiche physische Debuffs und Technik-Debuffs können vorzeitig beendet werden. Beispiel: <#ba.crush>Zertrümmern</> verbraucht <#ba.noguard>Anfälligkeit</>-Debuffs, wohingegen <#ba.burning>Verbrannt</> <#ba.spellinflict>Techniken</>-Debuffs verbraucht."
+  },
+  "ba.corrupt": {
+    "name": "Technikreaktion: Korrosion",
+    "desc": "Ein mit <@ba.corrupt>Korrosion</> belegter Gegner verliert nach und nach seine Resistenz gegen alle Elemente. \n<@ba.corrupt>Korrosion</> = <#ba.spellinflict>Nicht-Natur-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Natur</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Operator-Debuff: Korrosion",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.naturalinflict>Natur</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.corrupt>Korrodieren</>: Für eine gewisse Zeit ist ihr Bewegungstempo verringert und sie können nicht sprinten."
+  },
+  "ba.crush": {
+    "name": "Physischer Zustand: Zertrümmern",
+    "desc": "Belegt einen Gegner mit <#ba.noguard>Anfälligkeit</>. Wenn der Gegner bereits mit dem Status <#ba.noguard>Anfällig</> belegt ist, werden alle <#ba.noguard>Anfälligkeit</>-Kumulierungen <#ba.consume>verbraucht</> und massiver <@ba.phy>Physischer SDN</> zugefügt."
+  },
+  "ba.crystbreak": {
+    "name": "Zersplittern",
+    "desc": "Belegst du einen Gegner, der von <#ba.frozen>Erstarrung</> betroffen ist, mit <#ba.noguard>Anfälligkeit</> oder <#ba.physicalstatus>Physischer Zustand</>-Effekten, wird die <#ba.frozen>Erstarrung</> <#ba.consume>verbraucht</>. Dies löst Zersplittern aus, was massiven <@ba.pd>Physischen SDN</> verursacht."
+  },
+  "ba.crystburst": {
+    "name": "Technikexplosion: Kryo",
+    "desc": "<#ba.crystinflict>Kryo</> + <#ba.crystinflict>Kryo</> löst eine <@ba.cryst>Kryo-Explosion</> aus, die Gegnern <@ba.cryst>Kryo-SDN</> zufügt."
+  },
+  "ba.crystenhance": {
+    "name": "Kryo-Verstärkung",
+    "desc": "Ziele mit Kryo-Verstärkung verursachen vorübergehend mehr <@ba.cryst>Kryo-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.crystinflict": {
+    "name": "Technikkumulierung: Kryo",
+    "desc": "<@ba.crystinflict>Kryo</> ist eine <#ba.spellinflict>Technikkumulierung</>. \nEs können bis zu 4 Kumulierungen <@ba.crystinflict>Kryo</> zugefügt werden und Kumulieren löst <#ba.crystburst>Kryo-Explosion</> aus. \n<#ba.spellinflict>Nicht-Kryo-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Kryo</> = <#ba.frozen>Erstarrung</>"
+  },
+  "ba.crystonchar": {
+    "name": "Operator-Debuff: Kryo",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.crystinflict>Kryo</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.frozen>Erstarrung</>: Sie können sich für eine gewisse Zeit nicht bewegen."
+  },
+  "ba.crystvul": {
+    "name": "Kryo-Empfänglichkeit",
+    "desc": "Ziele mit Kryo-Empfänglichkeit erleiden vorübergehend mehr <@ba.cryst>Kryo-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.dispel": {
+    "name": "Aufheben",
+    "desc": "Dies befreit den Operator von spezifischen Debuffs."
+  },
+  "ba.dot": {
+    "name": "Kontinuierlicher SDN",
+    "desc": "Kontinuierlicher SDN kann keine kritischen Treffer verursachen."
+  },
+  "ba.enhance": {
+    "name": "Verstärken",
+    "desc": "Verstärkte Ziele verursachen vorübergehend mehr SDN desjenigen Elements, für das sie gestärkt wurden. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.fireburst": {
+    "name": "Technikexplosion: Hitze",
+    "desc": "<#ba.fireinflict>Hitze</> + <#ba.fireinflict>Hitze</> löst eine <@ba.fire>Hitzeexplosion</> aus, die Gegnern <@ba.fire>Hitze-SDN</> zufügt."
+  },
+  "ba.fireenhance": {
+    "name": "Hitze-Verstärkung",
+    "desc": "Ziele mit Hitze-Verstärkung verursachen vorübergehend mehr <@ba.fire>Hitze-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.fireinflict": {
+    "name": "Technikkumulierung: Hitze",
+    "desc": "<@ba.fireinflict>Hitze</> ist eine <#ba.spellinflict>Technikkumulierung</>. \nEs können bis zu 4 Kumulierungen <@ba.fireinflict>Hitze</> zugefügt werden und Kumulieren löst <#ba.fireburst>Hitzeexplosion</> aus. \n<#ba.spellinflict>Nicht-Hitze-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Hitze</> = <#ba.burning>Verbrannt</>"
+  },
+  "ba.fireonchar": {
+    "name": "Operator-Debuff: Hitze",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.fireinflict>Hitze</> belegen.\nNach 4 Kumulierungen leiden Operatoren unter <@ba.burning>Verbrannt</>: Sie erleiden kontinuierlichen <@ba.fire>Hitze-SDN</>, der ihre VERT ignoriert."
+  },
+  "ba.firevul": {
+    "name": "Hitze-Empfänglichkeit",
+    "desc": "Ziele mit Hitze-Empfänglichkeit erleiden vorübergehend mehr <@ba.fire>Hitze-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.fracture": {
+    "name": "Physischer Zustand: Brechen",
+    "desc": "Belegt einen Gegner mit <#ba.noguard>Anfälligkeit</>. Wenn der Gegner bereits mit dem Status <#ba.noguard>Anfällig</> belegt ist, werden alle <#ba.noguard>Anfälligkeit</>-Kumulierungen <#ba.consume>verbraucht</> und <@ba.phy>Physischer SDN</> zugefügt. Außerdem wird der von Gegnern erlittene <@ba.pd>Physische SDN</> vorübergehend erhöht."
+  },
+  "ba.frozen": {
+    "name": "Technikreaktion: Erstarrung",
+    "desc": "Ein mit <@ba.frozen>Erstarrung</> belegter Gegner kann sich nicht bewegen. Wird er mit <#ba.noguard>Anfälligkeit</> oder einem <#ba.physicalstatus>Physischen Zustand</> belegt, wird der Effekt <#ba.crystbreak>Zersplittern</> ausgelöst. \n<@ba.frozen>Erstarrung</> = <#ba.spellinflict>Nicht-Kryo-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Kryo</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Operator-Debuff: Erstarrung",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.crystinflict>Kryo</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.frozen>Erstarrung</>: Sie können sich für eine gewisse Zeit nicht bewegen."
+  },
+  "ba.guard": {
+    "name": "Schützen",
+    "desc": "Geschützte Ziele erleiden vorübergehen weniger SDN. Die Zahl gibt das Ausmaß der Verringerung an. Liegen mehrere Effekte desselben Typs vor, wirkt nur der stärkste."
+  },
+  "ba.knockdown": {
+    "name": "Physischer Zustand: Niederschlag",
+    "desc": "Belegt einen Gegner mit <#ba.noguard>Anfälligkeit</>. Wenn der Gegner bereits mit dem Status <#ba.noguard>Anfällig</> belegt ist, erhält er 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>, erleidet <@ba.phy>Physischen SDN</> und wird mit dem Status <@ba.poise>Taumeln</> belegt."
+  },
+  "ba.lastcombo": {
+    "name": "Abschlussangriff",
+    "desc": "Ein Abschlussangriff ist die letzte Sequenz eines Standardangriffs. Trifft der Abschlussangriff des gesteuerten Operators den Gegner, verursacht dies <@ba.poise>Taumeln</> und es werden ein paar Fertigkeitspunkte (FP) wiederhergestellt."
+  },
+  "ba.naturalburst": {
+    "name": "Technikexplosion: Natur",
+    "desc": "<#ba.naturalinflict>Natur</> + <#ba.naturalinflict>Natur</> löst eine <@ba.natur>Naturexplosion</> aus, die Gegnern <@ba.natur>Natur-SDN</> zufügt."
+  },
+  "ba.naturalenhance": {
+    "name": "Natur-Verstärkung",
+    "desc": "Ziele mit Natur-Verstärkung verursachen vorübergehend mehr <@ba.natur>Natur-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.naturalinflict": {
+    "name": "Technikkumulierung: Natur",
+    "desc": "<@ba.naturalinflict>Natur</> ist eine <#ba.spellinflict>Technikkumulierung</>. \nEs können bis zu 4 Kumulierungen <@ba.naturalinflict>Natur</> zugefügt werden und Kumulieren löst <#ba.naturalburst>Naturexplosion</> aus. \n<#ba.spellinflict>Nicht-Natur-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Natur</> = <#ba.corrupt>Korrosion</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Operator-Debuff: Natur",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.naturalinflict>Natur</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.corrupt>Korrodieren</>: Für eine gewisse Zeit ist ihr Bewegungstempo verringert und sie können nicht sprinten."
+  },
+  "ba.naturalvul": {
+    "name": "Natur-Empfänglichkeit",
+    "desc": "Ziele mit Natur-Empfänglichkeit erleiden vorübergehend mehr <@ba.natur>Natur-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.noguard": {
+    "name": "Anfällig",
+    "desc": "Wenn du einen Gegner das erste Mal mit einer Fertigkeit mit <#ba.physicalstatus>Physischer Zustand</> triffst, wird <@ba.noguard>Anfälligkeit</> anstelle des tatsächlichen Physischen Zustands angewendet.\nDu kannst einen <@ba.phy>Anfälligen</> Gegner <#ba.airborne>Anheben</> und <#ba.knockdown>Niedergeschlagen</>, um ihn mit mehr Anfälligkeit-Kumulierungen (bis zu 4) zu belegen. Wenn du einen anfälligen Gegner mit <#ba.crush>Zertrümmern</> oder <#ba.fracture>Brechen</> triffst, werden die Anfälligkeit-Kumulierungen <#ba.consume>verbraucht</>."
+  },
+  "ba.originium": {
+    "name": "Originium-Kristall",
+    "desc": "Die Kombofertigkeit des Endministrators bringt Originium-Kristalle am Gegner an."
+  },
+  "ba.physicalenhance": {
+    "name": "Physisch-Verstärkung",
+    "desc": "Ziele mit Physisch-Verstärkung verursachen vorübergehend mehr <@ba.pd>Physischen SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.physicalstatus": {
+    "name": "Physischer Zustand",
+    "desc": "Physische Zustände sind physische Debuffs, die auf Gegner angewendet werden. Sie umfassen: <#ba.airborne>Angehoben</>, <#ba.knockdown>Niedergeschlagen</>, <#ba.crush>Zertrümmert</> und <#ba.fracture>Gebrochen</>."
+  },
+  "ba.physicalvul": {
+    "name": "Physisch-Empfänglichkeit",
+    "desc": "Ziele mit Physisch-Empfänglichkeit erleiden vorübergehend mehr <@ba.pd>Physischen SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.poiseknot": {
+    "name": "Taumel-Knoten",
+    "desc": "Einige mächtige Gegner haben <@ba.poise>Taumel-Knoten</>. Verursache genug <@ba.poise>Taumeln</>, um den <@ba.poise>Taumel-Knoten</> solcher Gegner zu erreichen und so ihre Angriffe zu unterbrechen und sie aus dem Gleichgewicht zu bringen."
+  },
+  "ba.pulseburst": {
+    "name": "Technikexplosion: Elektrik",
+    "desc": "<#ba.pulseinflict>Elektrik</> + <#ba.pulseinflict>Elektrik</> löst eine <@ba.pulse>Elektrikexplosion</> aus, die Gegnern <@ba.pulse>Elektrischen SDN</> zufügt."
+  },
+  "ba.pulseenhance": {
+    "name": "Elektrik-Verstärkung",
+    "desc": "Ziele mit Elektrik-Verstärkung verursachen vorübergehend mehr <@ba.pulse>Elektrischen SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.pulseinflict": {
+    "name": "Technikkumulierung: Elektrik",
+    "desc": "<@ba.pulseinflict>Elektrik</> ist eine <#ba.spellinflict>Technikkumulierung</>. \nEs können bis zu 4 Kumulierungen <@ba.pulseinflict>Elektrik</> zugefügt werden und Kumulieren löst <#ba.pulseburst>Elektrikexplosion</> aus. \n<#ba.spellinflict>Nicht-Elektrik-Kumulierung</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Elektrik</> = <#ba.conduct>Elektrifizierung</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Operator-Debuff: Elektrik",
+    "desc": "Bestimmte gegnerische Fertigkeiten können Operatoren mit <@ba.pulseinflict>Elektrik</> belegen. \nNach 4 Kumulierungen leiden Operatoren unter <@ba.conduct>Elektrifiziert</>: Sie werden vorübergehend betäubt und erleiden für eine gewisse Zeit mehr <#ba.spelldmg>Technik-SDN</>."
+  },
+  "ba.pulsevul": {
+    "name": "Elektrik-Empfänglichkeit",
+    "desc": "Ziele mit Elektrik-Empfänglichkeit erleiden vorübergehend mehr <@ba.pulse>Elektrischen SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.return": {
+    "name": "FP-Rückerstattung",
+    "desc": "Nachdem du FP ausgegeben hast, erhältst du einen Teil der FP zurück, wenn bestimmte Voraussetzungen erfüllt sind.\nFP-Rückerstattung ist nicht mit „FP-Wiederherstellung“ zu verwechseln. Sie aktiviert keine von FP-Wiederherstellung ausgelösten Effekte. Wenn du rückerstattete FP ausgibst, erhältst du auch keine Ultimative Energie."
+  },
+  "ba.rossi": {
+    "name": "Rasierkrallenspur",
+    "desc": "Rossis Kampffertigkeit belegt den Gegner mit einem Spezialstatus. Das betroffene Ziel erleidet kontinuierlich <@ba.pd>Physischen SDN</> sowie höheren erlittenen Physischen SDN und erlittenen Hitze-SDN."
+  },
+  "ba.shield": {
+    "name": "Schild",
+    "desc": "Der Schild kann Schaden absorbieren, solange er aktiv ist. Manche Schilde können nur bestimmte SDN-Arten absorbieren."
+  },
+  "ba.slow": {
+    "name": "Verlangsamen",
+    "desc": "Verlangsamte Ziele leiden vorübergehend unter einer Verringerung des Bewegungstempos. Die Zahl gibt das Ausmaß der Verringerung an. Wenn mehrere Effekte desselben Typs aktiv sind, wirkt nur der stärkste."
+  },
+  "ba.speedup": {
+    "name": "Hast",
+    "desc": "Erhöht vorübergehend das Bewegungstempo eines Ziels. Die Zahl gibt das Ausmaß der Tempoerhöhung an. Effekte desselben Typs können kumuliert werden, bis die Tempo-Obergrenze erreicht wird."
+  },
+  "ba.spellburst": {
+    "name": "Technikexplosion",
+    "desc": "Werden <#ba.spellinflict>Technikkumulierungen</> desselben Elements kumuliert, löst dies <@ba.key>Technikexplosionen</> aus. Dazu gehören <#ba.fireburst>Hitzeexplosion</>, <#ba.pulseburst>Elektrikexplosion</>, <#ba.crystburst>Kryo-Explosion</> und <#ba.naturalburst>Naturexplosion</>."
+  },
+  "ba.spelldmg": {
+    "name": "SDN-Art",
+    "desc": "Schaden lässt sich in <@ba.pd>Physischen SDN</>, <@ba.key>Technik-SDN</> und <@ba.ether>Æther-SDN</> unterteilen.\n<@ba.key>Technik-SDN</> kann noch mal in <@ba.fire>Hitze-SDN</>, <@ba.pulse>Elektrischen SDN</>, <@ba.cryst>Kryo-SDN</> und <@ba.natur>Natur-SDN</> unterteilt werden."
+  },
+  "ba.spellenhance": {
+    "name": "Technik-Verstärkung",
+    "desc": "Ziele mit Technik-Verstärkung verursachen vorübergehend mehr <#ba.spelldmg>Technik-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.spellinflict": {
+    "name": "Technikkumulierung",
+    "desc": "<@ba.key>Technikkumulierungen</> sind spezielle Technik-Debuffs, mit denen ein Gegner belegt wird. Es gibt 4 Elemente von Technikkumulierungen: <#ba.fireinflict>Hitze-Kumulierung</>, <#ba.pulseinflict>Elektrik-Kumulierung</>, <#ba.crystinflict>Kryo-Kumulierung</> und <#ba.naturalinflict>Natur-Kumulierung</>. \n<@ba.key>Technikkumulierungen</> desselben Elements können bis zu 4 Mal zugefügt werden."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Technikkumulierungen/Technikreaktionen bei Operatoren",
+    "desc": "Manche gegnerische Fertigkeiten können einen Operator mit <#ba.burningonchar>Hitze</>, <#ba.conductonchar>Elektrik</>, <#ba.frozenonchar>Kryo</> oder <#ba.corruptonchar>Natur</> belegen.\nWird der Operator mit 4 Kumulierungen einer Technikkumulierung belegt, erleidet er entweder <#ba.burningonchar>Verbrannt</>, <#ba.conductonchar>Elektrifiziert</>, <#ba.frozenonchar>Erstarrung</> oder <#ba.corruptonchar>Korrosion</>."
+  },
+  "ba.spellstatus": {
+    "name": "Technikreaktion",
+    "desc": "<@ba.key>Technikreaktionen</> sind Technik-Debuffs, die auf einen Gegner angewendet werden können. Sie umfassen: <#ba.burning>Verbrannt</>, <#ba.conduct>Elektrifizierung</>, <#ba.frozen>Erstarrung</> und <#ba.corrupt>Korrosion</>."
+  },
+  "ba.spellvul": {
+    "name": "Technik-Empfänglichkeit",
+    "desc": "Ziele mit Technik-Empfänglichkeit erleiden vorübergehend mehr <#ba.spelldmg>Technik-SDN</>. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.statuslevel": {
+    "name": "Zustandslevel",
+    "desc": "Das Zustandslevel ist die Menge an <#ba.noguard>Anfälligkeit</>-Kumulierungen oder <#ba.spellinflict>Technikkumulierungen</> (max. 4), die <#ba.consume>verbraucht</> werden, wenn ein <#ba.physicalstatus>Physischer Zustand</> oder eine <#ba.spellstatus>Technikreaktion</> ausgelöst wird. Je höher das <#ba.statuslevel>Zustandslevel</> ist, desto stärker ist der <#ba.physicalstatus>Physische Zustand</> oder die <#ba.spellstatus>Technikreaktion</>."
+  },
+  "ba.vulnerable": {
+    "name": "Empfänglich",
+    "desc": "Empfängliche Ziele erleiden vorübergehend mehr SDN desjenigen Elements, für das sie empfänglich sind. Die Zahl gibt das Ausmaß der Erhöhung an. Effekte desselben Typs können kumuliert werden."
+  },
+  "ba.weak": {
+    "name": "Schwächen",
+    "desc": "Geschwächte Ziele verursachen vorübergehend weniger SDN. Die Zahl gibt das Ausmaß der Verringerung an. Effekte desselben Typs können nichtlinear kumuliert werden."
+  },
+  "fac.hub": {
+    "name": "Protokoll-Automationskern",
+    "desc": "Der Protokoll-Automationskern (PAK) ist die zentrale Anlage der Automatisierter-Industriekomplex-Fabrik (AIK-Fabrik). Die Lagerverwaltung wird verfügbar, sobald du im AIK-Kernbereich des Protokoll-Automationskerns stehst."
+  },
+  "item.bbflower": {
+    "name": "Aketin",
+    "desc": "Eine Pflanze, die brennbare und explosive Substanzen enthält. Sie kann in der Wildnis gesammelt werden.\nDie Pflanze kann mithilfe von AIK-Fabrikanlagen gezüchtet oder auf <#item.portSoilBbflower>Aketin-Beeten</> kultiviert werden.\nSie kann auch mithilfe von AIK-Fabrikanlagen verarbeitet werden. Zum Beispiel lässt sie sich zur Produktion von <#item.bbflowerPowder>Aketin-Pulver</> zerkleinern."
+  },
+  "item.bbflowerPowder": {
+    "name": "Aketin-Pulver",
+    "desc": "Ein Pulver, das durch Zerkleinerung von <#item.bbflower>Aketin</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.bbflowerSeed": {
+    "name": "Aketin-Saat",
+    "desc": "<#item.bbflower>Aketin</>-Samen, die mithilfe von AIK-Fabrikanlagen gesammelt wurden.\nAketin-Saat kann in AIK-Fabrikanlagen gepflanzt und zu Aketin kultiviert werden.\nAlternativ lassen sich aus Aketin-Saat und <#item.carbonMtl>Carbon</> im <#sys.manualCraftField>Pflanzen</>-Bildschirm <#item.portSoilBbflower>Aketin-Beete</> herstellen."
+  },
+  "item.bottledRecHp1": {
+    "name": "Buchweizen-Pille [C]",
+    "desc": "Eine Kapsel, die <#sys.manualCraft>hergestellt</> oder durch das Befüllen einer <#item.glassBottle>Amethyst-Flasche</> mit <#item.plantMossPowder1>Buchweizenblumen-Pulver</> mithilfe von AIK-Fabrikanlagen produziert werden kann.\nVerwende sie, um die LP eines Operators wiederherzustellen. Sie kann auch als <#sys.tacticalItem>taktisches Mittel</> ausgerüstet werden."
+  },
+  "item.carbonMtl": {
+    "name": "Carbon",
+    "desc": "Ein Material, das durch Veredelung von <#item.plantMoss1>Buchweizenblumen</> mit AIK-Fabrikanlagen produziert wird.\nCarbon ist eine essenzielle Komponente in der Herstellung von <#sys.manualCraftField>Pflanzen</>-Beeten und wird auch für die Produktion anderer Materialien verwendet."
+  },
+  "item.crystalShell": {
+    "name": "Origo-Kruste",
+    "desc": "Eine kristalline Kruste, die durch Veredelung von <#item.originium>Originium-Erz</> mithilfe von AIK-Fabrikanlagen produziert wird.\nSie kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.glassBottle": {
+    "name": "Amethyst-Flasche",
+    "desc": "Eine Flasche, die durch Formung von <#item.quartzGlass>Amethyst-Faser</> mithilfe von AIK-Fabrikanlagen produziert wird.\nSie kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.glassCmpt": {
+    "name": "Amethyst-Teil",
+    "desc": "Ein Teil, das durch Einpassen von <#item.quartzGlass>Amethyst-Faser</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.ironEnrPowder": {
+    "name": "Verdichtetes Ferrium-Pulver",
+    "desc": "Ein feines, konzentriertes Pulver, das durch Zermahlen von <#item.ironPowder>Ferrium-Pulver</> und <#item.plantMossPowder3>Sandblatt-Pulver</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien produzieren."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "Ein Metallbarren, der durch Veredelung von <#item.ironOre>Ferrium-Erz</> mithilfe von AIK-Fabrikanlagen produziert wird. Er kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.ironOre": {
+    "name": "Ferrium-Erz",
+    "desc": "Ein Erz, das an Ferrium-Erz-Abbaustellen in der Wildnis gesammelt werden kann.\nEs kann auch mithilfe von AIK-Fabrikanlagen verarbeitet werden. Zum Beispiel lässt es sich zur Produktion von <#item.ironNugget>Ferrium</> veredeln."
+  },
+  "item.ironPowder": {
+    "name": "Ferrium-Pulver",
+    "desc": "Ein Pulver, das durch Zerkleinerung von <#item.ironNugget>Ferrium</> mithilfe von AIK-Fabrikanlagen produziert wird. Es kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.originium": {
+    "name": "Originium-Erz",
+    "desc": "Ein Erz, das an Originium-Erz-Abbaustellen in der Wildnis gesammelt werden kann. Es kann zur Stromerzeugung in der AIK-Fabrik verwendet werden.\nEs kann auch mithilfe von AIK-Fabrikanlagen verarbeitet werden. Zum Beispiel lässt es sich zur Produktion von <#item.crystalShell>Origo-Kruste</> veredeln."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Verdichtetes Originium-Pulver",
+    "desc": "Ein feines, konzentriertes Pulver, das durch Mahlen von <#item.originiumPowder>Originium-Pulver</> und <#item.plantMossPowder3>Sandblatt-Pulver</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien produzieren."
+  },
+  "item.originiumPowder": {
+    "name": "Originium-Pulver",
+    "desc": "Ein Pulver, das durch Zerkleinerung von <#item.originium>Originium-Erz</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.plantMoss1": {
+    "name": "Buchweizenblume",
+    "desc": "Die Buchweizenblume ist eine Pflanze, die in der Wildnis wächst und für ihre hell bunten Blüten bekannt ist.\nDie Pflanze kann auch mithilfe von AIK-Fabrikanlagen oder auf <#item.portSoilMoss1>Buchweizenblumen-Beeten</> gezüchtet werden.\nDie Pflanze kann zur Herstellung von <#sys.tacticalItem>taktischen Mitteln</> oder anderen Materialen verwendet werden."
+  },
+  "item.plantMoss3": {
+    "name": "Sandblatt",
+    "desc": "Eine Pflanze, die sich durch ihre rauen, groben Blätter auszeichnet. Sie kann in der Wildnis gesammelt werden.\nDie Pflanze kann mithilfe von AIK-Fabrikanlagen gezüchtet oder auf <#item.portSoilMoss3>Sandblatt-Beeten</> kultiviert werden.\nSie kann auch mithilfe von AIK-Fabrikanlagen verarbeitet werden. Zum Beispiel lässt sie sich zur Produktion von <#item.plantMossPowder3>Sandblatt-Pulver</> zerkleinern."
+  },
+  "item.plantMossPowder1": {
+    "name": "Buchweizenblumen-Pulver",
+    "desc": "Ein Pulver, das <#sys.manualCraft>hergestellt</> oder durch das Zerkleinern von <#item.plantMoss1>Buchweizenblumen</> mithilfe von AIK-Fabrikanlagen produziert werden kann.\nVerwende es, um die LP eines Operators wiederherzustellen. Es kann auch als <#sys.tacticalItem>taktisches Mittel</> ausgerüstet werden."
+  },
+  "item.plantMossPowder3": {
+    "name": "Sandblatt-Pulver",
+    "desc": "Ein Pulver, das durch Zerkleinerung von <#item.plantMoss3>Sandblättern</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien zu produzieren – für gewöhnlich durch Mahlen."
+  },
+  "item.plantMossSeed1": {
+    "name": "Buchweizenblumen-Saat",
+    "desc": "Samen der <#item.plantMoss1>Buchweizenblume</>, die mithilfe von AIK-Fabrikanlagen gesammelt wurden.\nBuchweizenblumen-Saat kann in AIK-Fabrikanlagen gepflanzt und zu Buchweizenblumen kultiviert werden. Alternativ lassen sich aus Buchweizenblumen-Saat und <#item.carbonMtl>Carbon</> im <#sys.manualCraftField>Pflanzen</>-Bildschirm <#item.portSoilMoss1>Buchweizenblumen-Beete</> herstellen."
+  },
+  "item.plantMossSeed3": {
+    "name": "Sandblatt-Saat",
+    "desc": "Samen von <#item.plantMoss3>Sandblättern</>, die mithilfe von AIK-Fabrikanlagen gesammelt wurden.\nSandblatt-Saat kann in AIK-Fabrikanlagen gepflanzt und zu Sandblättern kultiviert werden.\nAlternativ lassen sich aus Sandblatt-Saat und <#item.carbonMtl>Carbon</> im <#sys.manualCraftField>Pflanzen</>-Bildschirm <#item.portSoilMoss3>Sandblatt-Beete</> herstellen."
+  },
+  "item.plantMossSpc1": {
+    "name": "Feuerschnalle",
+    "desc": "Die Buchweizenblume ist eine Pflanze, die in der Wildnis wächst und für ihre außergewöhnlich leuchtenden Blüten bekannt ist.\nBei der Ernte von <#item.plantMoss1>Buchweizenblumen</> in der Wildnis besteht die Chance, Feuerschnalle zu erhalten.\nSie können zur Herstellung von <#sys.tacticalItem>taktischen Mitteln</> verwendet werden."
+  },
+  "item.plantSp1": {
+    "name": "Schilfroggen",
+    "desc": "Der Schilfroggen ist eine kultivierbare Pflanze, die in der Wildnis gesammelt werden kann. Er kann auch auf <#item.portSoilSp1>Schilfroggen-Beeten</> gepflanzt werden.\nEr kann direkt zur Herstellung von <#sys.manualCraftDish>Gute Nahrung & Medikamente</> (gute N&M) verwendet werden."
+  },
+  "item.plantSpSeed1": {
+    "name": "Schilfroggen-Saat",
+    "desc": "Samen, die durch Saatgewinnung von <#item.plantSp1>Schilfroggen</>-Pflanzen mithilfe von AIK-Fabrikanlagen produziert werden.\nNimm Schilfroggen-Saat und <#item.carbonMtl>Carbon</> und begib dich zum <#sys.manualCraftField>Pflanzen</>-Bildschirm, um daraus <#item.portSoilSp1>Schilfroggen-Beete</> herzustellen."
+  },
+  "item.portSoilBbflower": {
+    "name": "Aketin-Beet",
+    "desc": "Aketin-Beete können auf der Öko-Farm kultiviert werden, um <#item.bbflower>Aketin</> zu erhalten.\nDiese Beete können mit <#item.bbflowerSeed>Aketin-Saat</> und <#item.carbonMtl>Carbon</> im Pflanzen-Bildschirm hergestellt werden.\nEin vollständig kultiviertes Beet bringt große Erträge an Aketin ein."
+  },
+  "item.portSoilMoss1": {
+    "name": "Buchweizenblumen-Beet",
+    "desc": "Buchweizenblumen-Beete können auf der Öko-Farm kultiviert werden, um <#item.plantMoss1>Buchweizenblumen</> zu erhalten.\nDiese Beete können mit <#item.plantMossSeed1>Buchweizenblumen-Saat</> und <#item.carbonMtl>Carbon</> im <#sys.manualCraftField>Pflanzen</>-Bildschirm hergestellt werden.\nEin vollständig kultiviertes Beet birgt eine höhere Wahrscheinlichkeit, bei der Ernte zusätzlich <#item.plantMossSpc1>Feuerschnalle</> zu gewähren."
+  },
+  "item.portSoilMoss3": {
+    "name": "Sandblatt-Beet",
+    "desc": "Sandblatt-Beete können auf der Öko-Farm kultiviert werden, um <#item.plantMoss3>Sandblätter</> zu erhalten.\nDiese Beete können mit <#item.plantMossSeed3>Sandblatt-Saat</> und <#item.carbonMtl>Carbon</> im Pflanzen-Bildschirm hergestellt werden.\nEin vollständig kultiviertes Beet bringt große Erträge an Sandblättern ein."
+  },
+  "item.portSoilSp1": {
+    "name": "Schilfroggen-Beet",
+    "desc": "Schilfroggen-Beete können auf der Öko-Farm kultiviert werden, um <#item.plantSp1>Schilfroggen</> zu erhalten.\nDiese Beete können mit <#item.plantSpSeed1>Schilfroggen-Saat</> und <#item.carbonMtl>Carbon</> im Pflanzen-Bildschirm hergestellt werden.\nEin vollständig kultiviertes Beet bringt große Erträge an Schilfroggen ein."
+  },
+  "item.procBattery1": {
+    "name": "Tal-LC-Batterie",
+    "desc": "Eine Batterie, die durch das Verpacken von <#item.glassCmpt>Amethyst-Teil</> und <#item.originiumPowder>Originium-Pulver</> mithilfe von AIK-Fabrikanlagen produziert wird.\nSie kann für die Energieversorgung oder das Aufladen von Anlagen verwendet oder an verschiedene Außenposten verkauft werden."
+  },
+  "item.procBomb": {
+    "name": "Industriesprengstoff",
+    "desc": "Industriesprengstoff ist ein Sprengstofftyp, der hergestellt werden kann.\nEr wird mithilfe einer AIK-Fabrikanlage, der Verpackungseinheit, hergestellt. Dafür werden ein <#item.glassCmpt>Amethyst-Teil</> und <#item.bbflowerPowder>Aketin-Pulver</> benötigt.\nNutze Industriesprengstoff, um Gegnern SDN zuzufügen oder zerstörbare Objekte zu vernichten. Dafür müssen sie sich im Explosionsradius befinden."
+  },
+  "item.quartzGlass": {
+    "name": "Amethyst-Fasern",
+    "desc": "Eine Faser, die durch Veredelung von <#item.quartzSand>Amethyst-Erz</> mithilfe von AIK-Fabrikanlagen produziert wird.\nSie kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.quartzPowder": {
+    "name": "Amethyst-Pulver",
+    "desc": "Ein Pulver, das durch Zerkleinerung von <#item.quartzGlass>Amethyst-Faser</> mithilfe von AIK-Fabrikanlagen produziert wird.\nEs kann verwendet werden, um andere Materialien zu produzieren."
+  },
+  "item.quartzSand": {
+    "name": "Amethyst-Erz",
+    "desc": "Ein Erz, das an Amethyst-Erz-Abbaustellen in der Wildnis gesammelt werden kann.\nEs kann auch mithilfe von AIK-Fabrikanlagen verarbeitet werden. Zum Beispiel lässt es sich zur Produktion von <#item.quartzGlass>Amethyst-Faser</> veredeln."
+  },
+  "sys.manualCraft": {
+    "name": "Herstellen",
+    "desc": "Öffne das Rucksackfenster, um auf den Herstellungsbildschirm zuzugreifen. Aus verschiedenen Rohmaterialien lassen sich nützliche Gegenstände herstellen.\nZum Beispiel lässt sich aus der <#item.plantMoss1>Buchweizenblume</> <#item.plantMossSeed1>Buchweizenblumen-Pulver</> herstellen, mit dem LP wiederhergestellt werden können."
+  },
+  "sys.manualCraftDish": {
+    "name": "Gute Nahrung & Medikamente",
+    "desc": "Gute Nahrung & Medikamente für den Notfall (gute N&M) können als <#sys.tacticalItem>taktische Mittel</> eingesetzt werden.\nIm Gegensatz zu <#sys.manualCraftTonic>Nahrung & Medikamenten für den Notfall (EMS-N&M)</>, können sie nur durch <#sys.manualCraft>Herstellung</> gefertigt werden."
+  },
+  "sys.manualCraftField": {
+    "name": "Pflanzen",
+    "desc": "<#sys.manualCraft>Herstellung</> ermöglicht es dir, mit Saatgut und <#item.carbonMtl>Carbon</> Pflanzenbeete herzustellen. Pflanzenbeete können in der Öko-Farm platziert und kultiviert werden."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Nahrung & Medikamente für den Notfall",
+    "desc": "Nahrung & Medikamente für den Notfall (EMS-N&M) können als <#sys.tacticalItem>taktische Mittel</> eingesetzt werden.\nSie können <#sys.manualCraft>hergestellt</> oder durch die Nutzung von AIK-Fabrikanlagen erhalten werden."
+  },
+  "sys.tacticalItem": {
+    "name": "Taktische Mittel",
+    "desc": "Taktische Mittel sind Gegenstände, die im Kampf zahlreiche Vorteile und Buffs gewähren. Jedes taktische Mittel hat verschiedene Aktivierungsvoraussetzungen und Nutzungsbeschränkungen.\nJeder Operator kann mit 1 taktischem Mittel ausgestattet werden. Wenn im Kampf die Aktivierungsvoraussetzungen des taktischen Mittels eines Operators erfüllt sind, setzt er es automatisch ein.\nWurden alle Verwendungsversuche des taktischen Mittels in einem Kampf verbraucht, kann es nach einer Weile ein weiteres Mal verwendet werden."
+  }
+}

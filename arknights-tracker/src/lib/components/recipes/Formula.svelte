@@ -1,11 +1,17 @@
 <script>
-    import ItemStackCard from "$lib/components/ItemStackCard.svelte";
-    import ResourcePointCard from "$lib/components/recipes/ResourcePointCard.svelte";
-    import Icons from "$lib/components/Icons.svelte";
+    import ItemStackCard from "$lib/components/cards/ItemStackCard.svelte";
+    import ResourcePointCard from "$lib/components/cards/ResourcePointCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import FuelEnergyCard from "$lib/components/recipes/FuelEnergyCard.svelte";
+    import {getRecipeTreeLinkParameters} from "$lib/utils/linkUtils.js";
 
     export let formula;
     export let highlightItemId = "";
+
+    export let itemsAsLink = false;
+    export let formulaAsButton = false;
+
+    export let onClick;
 
     $: mode = formula.formulaType;
 
@@ -61,10 +67,23 @@
         craftTimeMs = formula.powerTimeMs;
         powerProvide = formula.powerProvide;
     }
+
+    $: buttonHoverEffects = formulaAsButton ? "hover:bg-gray-200 dark:hover:bg-[#424242] cursor-pointer" : "";
+
+    function selectFormula() {
+        if (!onClick) return;
+
+        onClick(formula);
+    }
     
 </script>
 
-<div class="flex flex-row gap-3 h-[60px] w-full pl-1">
+<svelte:element
+    this={formulaAsButton ? "button" : "div"}
+    class="flex flex-row gap-3 h-[68px] w-full pl-1 pt-1 pb-1 rounded-md {buttonHoverEffects}"
+    role={formulaAsButton ? "button" : "presentation"}
+    on:click|stopPropagation={formulaAsButton ? () => selectFormula() : undefined}
+>
 
     <div class="flex flex-row gap-2">
 
@@ -85,6 +104,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -109,6 +130,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -133,6 +156,8 @@
                     size="micro"
                     highlight={highlightItemId === itemId}
                     showTooltip={true}
+                    asLink={itemsAsLink}
+                    url="/recipes/tree?{getRecipeTreeLinkParameters(itemId)}"
                 />
             {/each}
 
@@ -146,7 +171,7 @@
                 {`${craftTimeMs / 1000}s`}
             </span>
         {/if}
-        <Icons
+        <Icon
             name="doubleArrows"
             class="text-[#21272C] dark:text-[#FDFDFD] w-full"
         />
@@ -169,6 +194,8 @@
                 size="micro"
                 highlight={highlightItemId === itemId}
                 showTooltip={true}
+                asLink={itemsAsLink}
+                url="/recipes/tree?{getRecipeTreeLinkParameters(itemId, formula)}"
             />
         {/each}
 
@@ -182,4 +209,4 @@
 
     </div>
 
-</div>
+</svelte:element>

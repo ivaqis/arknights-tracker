@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "终末地工业",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "未公开"
   },
   "skills": {
     "basicAttack": {
@@ -39,7 +43,8 @@
         "dmgMultiplier": "伤害倍率",
         "crystalShatteringDmgMultiplier": "击碎结晶伤害倍率",
         "stagger": "失衡值",
-        "sealDurationS": "封印时间（秒）"
+        "sealDurationS": "封印时间（秒）",
+        "ultimateEnergyGain": "获得终结技能量"
       },
       "name": "锁闭序列",
       "description": "当小队内其他干员的连携技造成伤害时可以发动。\n冲到敌人身边，对其造成<@ba.pd>物理伤害</>，并附着<#ba.originium>源石结晶</>，在一段时间内将其封印。施加<#ba.physicalstatus>物理异常</>或<#ba.noguard>破防</>会<#ba.consume>消耗</><#ba.originium>源石结晶</>并额外造成<@ba.pd>物理伤害</>。"
@@ -64,27 +69,29 @@
     },
     "talent1": {
       "levels": [
-        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。",
-        "当敌人附着的<#ba.originium>源石结晶</>被<#ba.consume>消耗</>后，自身攻击力<@ba.vup>+{atk_up:0%}</>，持续{duration:0}秒，该效果无法叠加。"
+        "战技和终结技命中至少2个目标后，连携技的冷却时间恢复{0,0:0.0}秒。",
+        "战技和终结技命中至少2个目标后，连携技的冷却时间恢复{0,0:0.0}秒。"
       ],
       "name": "本质瓦解"
     },
     "talent2": {
       "levels": [
-        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。",
-        "附着<#ba.originium>源石结晶</>的敌人受到的物理伤害<@ba.vup>+{dmg:0%}</>。"
+        "被<#ba.originium>源石结晶</>封印的敌人还会受到<@ba.vup>{0,0:0%}</>的额外物理伤害。",
+        "被<#ba.originium>源石结晶</>封印的敌人还会受到<@ba.vup>{0,0:0%}</>的额外物理伤害。"
       ],
       "name": "现实静滞"
     },
     "baseSkill1": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
     "baseSkill2": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>【代号】管理员\n【性别】■■\n【身份认证】■■\n【生日】■■\n【种族】■■\n\n你什么都回忆不起来。\n记忆像是被揉碎的梦境，只等随便某个念头兴起，便无影无踪。\n这让你偶尔焦躁，偶尔担忧，也让你有了一些空间思考。\n但更多时候，你无暇多想，你选择相信眼前的人，只需前行。\n也许记忆已经被你短暂地抛诸脑后……\n……所以，你什么都回忆不起来。</>",
+      "humanResources": "<@profile.key>你过去的生命贯穿了塔卫二至今的历史……</>",
+      "file1": "<@profile.key>……那么，未来呢？</>"
+    }
   },
   "potentials": {
     "potential1": {
@@ -96,8 +103,8 @@
       "name": "权能映射"
     },
     "potential3": {
-      "description": "？？？",
-      "name": "？？？"
+      "description": "终结技<@ba.key>轰击序列</><#ba.consume>消耗</><#ba.originium>源石结晶</>后，获得<@ba.vup>{usp:0}</>点终结技能量。\n<@ba.info>该效果无法被加成。</>",
+      "name": "指引者"
     },
     "potential4": {
       "description": "？？？",
@@ -119,7 +126,7 @@
       "author": "廻轉",
       "description": "您在十字的正中心。"
     },
-    "potential6": {
+    "potential5": {
       "name": "掌握",
       "author": "수줍(Sjoop)",
       "description": "所凝聚的信任在您掌中，它的第一枚碎片名为历史，又名为文明与生命。"

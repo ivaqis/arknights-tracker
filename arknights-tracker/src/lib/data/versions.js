@@ -15,8 +15,8 @@ export const changelogData = [
     },
     {
         version: "1.3",
-        characters: ["mifu"],
-        weapons: ["beaconOfDuty", "phantomPain", "amaranthineTassel"],
+        characters: ["mifu", "camille"],
+        weapons: ["beaconOfDuty", "phantomPain", "amaranthineTassel", "blessingOfLustrousCarmine"],
         equipment: ["item_equip_t4_suit_combo_cd01_edc_04", "item_equip_t4_suit_crush_fracture_body_01", "item_equip_t4_suit_crush_fracture_body_02", "item_equip_t4_suit_crush_fracture_hand_01", "item_equip_t4_suit_crush_fracture_hand_02", "item_equip_t4_suit_crush_fracture_edc_01", "item_equip_t4_suit_crush_fracture_edc_02", "item_equip_t4_suit_phy01_body_04"],
         enemies: ["eny_0113_jzogre", "eny_0114_jzmking", "eny_0112_jzmonk"]
     }

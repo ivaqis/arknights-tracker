@@ -8,468 +8,1398 @@
 
 <url>
   <loc>https://goyfield.moe/</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/records</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/operators</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/essences</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/events</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/settings</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
+  <loc>https://goyfield.moe/history</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/endministrator2</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/changelog</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/endministrator1</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/operators</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/laevatain</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/yvonne</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/essences</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/gilberta</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/ardelia</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/equipment</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/operators/ember</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/operators/lastRite</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/operators/lifeng</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/operators/pogranichnik</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/recipes</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/perlica</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/chenQianyu</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/laevatain</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/yvonne</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/gilberta</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/ardelia</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/ember</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/lastRite</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/lifeng</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/operators/pogranichnik</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/alesh</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/arclight</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/avywenna</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/daPan</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/snowshine</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/wulfgard</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/xaihi</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/akekuri</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/antal</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/catcher</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/estella</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/operators/fluorite</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/oblivion</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/operators/tangtang</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/exemplar</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/operators/rossi</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/sunderedPrince</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/operators/zhuangfy</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/formerFinery</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/operators/mifu</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/thunderberge</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/beaconOfDuty</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/chivalricVirtues</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/phantomPain</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/eminentRepute</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/amaranthineTassel</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/rapidAscent</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/khravengger</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_crush_fracture_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_body_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0113_jzogre</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0114_jzmking</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0112_jzmonk</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/opusEtchFigure</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/umbralTorch</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/detonationUnit</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/oblivion</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/chivalricVirtues</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/deliveryGuaranteed</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/dreamsOfTheStarryBeach</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/valiant</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/loneBarge</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/jet</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/flickersInTheMist</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/mountainBearer</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/exemplar</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/artzyTyrannical</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/formerFinery</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/whiteNightNova</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/thunderberge</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/sunderedPrince</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/khravengger</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/navigator</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/homeLonging</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/wedge</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/forgebornScathe</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/clannibal</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/neverRest</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/artzyTyrannical</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/brigandsCalling</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/valiant</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/jet</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/mountainBearer</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/forgebornScathe</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/umbralTorch</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/rapidAscent</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/thermiteCutter</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/eminentRepute</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/whiteNightNova</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/neverRest</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/weapons/gloriousMemory</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/grandVision</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/opusTheLiving</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/seekerOfDarkLung</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/finishingCall</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/ancientCanal</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/objHeavyBurden</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/fortmaker</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/weapons/lupineScarlet</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/wildWanderer</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/twelveQuestions</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/stanzaOfMemorials</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/monaihe</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/finchaser30</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/freedomToProselytize</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
-</url>
-<url>
-  <loc>https://goyfield.moe/weapons/cohesiveTraction</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://goyfield.moe/weapons/objArtsIdentifier</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/chimericJustice</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0045_agtrinit</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/objRazorhorn</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0052_palesent</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/rationalFarewell</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0061_palecore</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/objVelocitous</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0062_paletent</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/sunderingSteel</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0039_agcanno</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/aspirant</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0058_agdisk</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/objEdgeOfLightness</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0077_agshield</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/industry01</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0090_wgabyss</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/quencher</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0091_wgshoal</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/aggeloslayer</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0107_wgshoal2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/fluorescentRoc</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0023_aghornb</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/hypernovaAuto</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0027_agscorp</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/contingentMeasure</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0069_aghornb2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/pathfindersBeacon</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0070_agscorp2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/howlingGuard</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0021_agmelee</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/longRoad</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0025_agrange</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/waveTide</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0063_agmelee2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/darhoff7</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0064_agrange2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/opero77</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0076_agfly</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/jiminy12</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0087_wgslime</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/peco5</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0088_wgthorns</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://goyfield.moe/weapons/tarr11</loc>
-  <lastmod>2026-03-02T11:27:08+00:00</lastmod>
-  <priority>0.50</priority>
+  <loc>https://goyfield.moe/enemies/eny_0089_wgreflec</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0101_agfly2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0105_wgslime2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0106_wgthorns2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0081_ruanyi</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0054_hsmino</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0097_hsmino2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0104_hsrogue2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0055_hscrane</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0085_hsrogue</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0053_hsmob</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0084_hshunt</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0096_hsmob2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0103_hshunt2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0051_rodin</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0078_nefarp1</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0079_nefarp2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0018_lbtough</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0048_hvybow</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0068_lbtough2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0075_lbroshan</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0046_lbshamman</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0047_firebat</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0029_lbmob</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0033_lbhunt</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0049_rogue</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0050_hound</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0059_erhound</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0060_lbmad</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0065_lbmob2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0066_lbhunt2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0067_hound2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0074_lbshield</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0071_sandb</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0082_hsbear</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0083_hstiger</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0098_sandb2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0102_hstiger2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0007_mimicw</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0093_hshog</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0109_hshog2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0072_slimeml</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0073_slimerg</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0092_slbomb</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0094_hsfly</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0095_ethillu</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0099_slimeml2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0100_slimerg2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/enemies/eny_0108_slbomb2</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_body_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_body_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_body_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_hand_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atb01_edc_06</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_body_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_body_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_atk02_edc_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_body_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_body_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_body_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_hand_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_06</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_attri01_edc_07</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_burst01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_burst01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_burst01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_burst01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_06</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_edc_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_body_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_expend_spell01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_body_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_pulse_cryst01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_body_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_body_06</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_body_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_hand_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_hand_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_pulse_cryst01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_expend_spell01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_hand_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_poise01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_phy01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_hand_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_hand_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_pulse_cryst01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_04</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_05</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_heal01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_expend_spell01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_usp02_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_combo_cd01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_body_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_hand_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_criti01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_pulse_cryst01_edc_01</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_parts_wuling01_edc_03</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_fire_natr01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://goyfield.moe/equipment/item_equip_t4_suit_pulse_cryst01_edc_02</loc>
+  <lastmod>2026-06-10T06:52:19+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 

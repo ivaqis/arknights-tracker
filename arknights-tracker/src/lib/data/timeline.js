@@ -732,7 +732,7 @@ export const rawEvents = [
     startTime: "2026-06-12 04:00:00",
     endTime: "2026-06-19 04:00:00",
     icon: "ev2-v1.3.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2064905467508428808?s=20",
     color: "#B22827",
     layer: 6,
     type: "inGame",
@@ -762,11 +762,11 @@ export const rawEvents = [
     endTime: "2026-07-16 04:00:00",
     endTimeAsia: "2026-07-15 17:00:00",
     icon: "ev4-v1.3.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2064913009353642176?s=20",
     color: "#3FB291",
     layer: 7,
     type: "inGamePermanent",
-    iconPosition: 45,
+    iconPosition: 51,
     version: "1.3"
   },
   {
@@ -777,11 +777,11 @@ export const rawEvents = [
     endTime: "2026-07-16 04:00:00",
     endTimeAsia: "2026-07-15 17:00:00",
     icon: "ev4-v1.3.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2064913009353642176?s=20",
     color: "#1d7c53",
     layer: 8,
     type: "inGame",
-    iconPosition: 45,
+    iconPosition: 51,
     version: "1.3"
   },
   {
@@ -874,6 +874,21 @@ export const rawEvents = [
     layer: 4,
     type: "signIn",
     iconPosition: 17,
+    version: "1.3"
+  },
+  {
+    id: "ev11-v1.3",
+    title: "events.peacekeepersNocturneSignIn",
+    name: "",
+    startTime: "2026-06-26 12:00:00",
+    endTime: "2026-07-16 04:00:00",
+    endTimeAsia: "2026-07-15 17:00:00",
+    icon: "ev11-v1.3.jpg",
+    url: "",
+    color: "#bb2323",
+    layer: 4,
+    type: "signIn",
+    iconPosition: 20,
     version: "1.3"
   }
 ];

@@ -9,7 +9,7 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "",
-    isNew: false
+    apiId: "93e76fbbc07f7b480cfe0870c6414494"
   },
   endministrator2: {
     id: "endministrator1",
@@ -19,7 +19,7 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "",
-    isNew: false
+    apiId: "27e807f4caa5c4a9429bcb99760c0302"
   },
   perlica: {
     id: "perlica",
@@ -29,7 +29,7 @@ export const characters = {
     class: "caster",
     weapon: "artsUnit",
     birthDate: "10-03",
-    isNew: false
+    apiId: "c4cf7541c23c93f991e2e464ee18bb18"
   },
   chenQianyu: {
     id: "chenQianyu",
@@ -39,7 +39,7 @@ export const characters = {
     class: "guard",
     weapon: "sword",
     birthDate: "18-08",
-    isNew: false
+    apiId: "ad1607a2d5a203b1e95762ff0d911bcd"
   },
   laevatain: {
     id: "laevatain",
@@ -49,7 +49,7 @@ export const characters = {
     class: "striker",
     weapon: "sword",
     birthDate: "",
-    isNew: false
+    apiId: "0b199a0eaae5a9b37a5d3c990b6c8bca"
   },
   yvonne: {
     id: "yvonne",
@@ -59,7 +59,7 @@ export const characters = {
     class: "striker",
     weapon: "handcannon",
     birthDate: "09-05",
-    isNew: false
+    apiId: "05047b063867199b953b30ac8df9a853"
   },
   gilberta: {
     id: "gilberta",
@@ -69,7 +69,7 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "28-11",
-    isNew: false
+    apiId: "0295282ff895bd1b7242d137da99dc94"
   },
   ardelia: {
     id: "ardelia",
@@ -79,7 +79,7 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "18-10",
-    isNew: false
+    apiId: "bfb4ba13f819568c69c2ae46d8f5b869"
   },
   ember: {
     id: "ember",
@@ -89,7 +89,7 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "10-04",
-    isNew: false
+    apiId: "ce97268e7469e004a3e7a81e4b09a025"
   },
   lastRite: {
     id: "lastRite",
@@ -99,7 +99,7 @@ export const characters = {
     class: "striker",
     weapon: "greatSword",
     birthDate: "12-11",
-    isNew: false
+    apiId: "12ccf3692d76c7bddd3ef84eddd3f3c1"
   },
   lifeng: {
     id: "lifeng",
@@ -109,7 +109,7 @@ export const characters = {
     class: "guard",
     weapon: "polearm",
     birthDate: "16-07",
-    isNew: false
+    apiId: "8d94026ab55f7a869288db04631434a3"
   },
   pogranichnik: {
     id: "pogranichnik",
@@ -119,7 +119,7 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "23-07",
-    isNew: false
+    apiId: "9c4a116d4dba884c3db9b7f46ea7ea20"
   },
   alesh: {
     id: "alesh",
@@ -129,7 +129,7 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "01-09",
-    isNew: false
+    apiId: "7e6df1575604cc5872590f22af757e40"
   },
   arсlight: {
     id: "arclight",
@@ -139,7 +139,7 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "03-01",
-    isNew: false
+    apiId: "00ff4c582aeeafc237695f81e36969b4"
   },
   avywenna: {
     id: "avywenna",
@@ -149,7 +149,7 @@ export const characters = {
     class: "striker",
     weapon: "polearm",
     birthDate: "25-10",
-    isNew: false
+    apiId: "e7b91cae9108d01f550922498747a45e"
   },
   daPan: {
     id: "daPan",
@@ -159,7 +159,7 @@ export const characters = {
     class: "striker",
     weapon: "greatSword",
     birthDate: "19-05",
-    isNew: false
+    apiId: "55ab3b3d98fa76a045347d29da1abbca"
   },
   snowshine: {
     id: "snowshine",
@@ -169,7 +169,7 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "19-12",
-    isNew: false
+    apiId: "06ba43ff26befc881fd106eaa5ef1b81"
   },
   wulfgard: {
     id: "wulfgard",
@@ -179,7 +179,7 @@ export const characters = {
     class: "caster",
     weapon: "handcannon",
     birthDate: "16-11",
-    isNew: false
+    apiId: "26e3cc73ac23deb8f6a875038d2243ff"
   },
   xaihi: {
     id: "xaihi",
@@ -189,7 +189,7 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "16-05",
-    isNew: false
+    apiId: "3839d35948216cc09368cd62167c7368"
   },
   akekuri: {
     id: "akekuri",
@@ -199,7 +199,7 @@ export const characters = {
     class: "vanguard",
     weapon: "sword",
     birthDate: "31-03",
-    isNew: false
+    apiId: "a0591d65311b190e7d5e09faa0ed1cdd"
   },
   antal: {
     id: "antal",
@@ -209,7 +209,7 @@ export const characters = {
     class: "supporter",
     weapon: "artsUnit",
     birthDate: "10-04",
-    isNew: false
+    apiId: "1b441436fd73326614cfcd14c640e068"
   },
   catcher: {
     id: "catcher",
@@ -219,7 +219,7 @@ export const characters = {
     class: "defender",
     weapon: "greatSword",
     birthDate: "16-08",
-    isNew: false
+    apiId: "e6c2a3e9f0b1917eb0b1fe29a4b94b3d"
   },
   estella: {
     id: "estella",
@@ -229,7 +229,7 @@ export const characters = {
     class: "guard",
     weapon: "polearm",
     birthDate: "09-04",
-    isNew: false
+    apiId: "50515754ef6085bb6a8ddc21ab18a825"
   },
   fluorite: {
     id: "fluorite",
@@ -239,7 +239,7 @@ export const characters = {
     class: "caster",
     weapon: "handcannon",
     birthDate: "21-06",
-    isNew: false
+    apiId: "bcb564ed05eb0912d4b0f86d1e193c9f"
   },
   tangtang: {
     id: "tangtang",
@@ -248,7 +248,8 @@ export const characters = {
     element: "cryo",
     class: "caster",
     weapon: "handcannon",
-    birthDate: "21-06"
+    birthDate: "21-06",
+    apiId: "ee3bf7197a05580397b45ba2fb1de28e"
   },
   rossi: {
     id: "rossi",
@@ -257,7 +258,8 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "sword",
-    birthDate: "10-03"
+    birthDate: "10-03",
+    apiId: "7572e50052976332fa7621ba7dd30c4e"
   },
   zhuangfy: {
     id: "zhuangfy",
@@ -266,7 +268,8 @@ export const characters = {
     element: "electric",
     class: "striker",
     weapon: "artsUnit",
-    birthDate: "07-08"
+    birthDate: "07-08",
+    apiId: "c2fa8a588cab489795166bed5161fefc"
   },
   mifu: {
     id: "mifu",
@@ -275,6 +278,17 @@ export const characters = {
     element: "physical",
     class: "guard",
     weapon: "greatSword",
-    birthDate: "09-07"
+    birthDate: "09-07",
+    apiId: "d3dcd2110b516c48c411e33911ece631"
+  },
+  camille: {
+    id: "camille",
+    name: "Camille",
+    rarity: 6,
+    element: "heat",
+    class: "vanguard",
+    weapon: "polearm",
+    birthDate: "20-11",
+    apiId: "6f1c12e86229fe068ba70baef7ff0aa1"
   }
 };

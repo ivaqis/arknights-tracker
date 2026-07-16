@@ -20,6 +20,22 @@ export const languages = [
 ];
 
 export const isSupported = (code) => ['ru', 'en', 'ja', 'de', 'id', 'it', 'fr', 'ko', 'vi', 'es', 'th', 'pt', 'zh-CN', 'zh-TW'].includes(code);
+
+export const uiLanguages = [
+  { code: 'uk', label: 'Українська' },            // Украинский
+  { code: 'pl', label: 'Polski' },                // Польский
+  { code: 'kk', label: 'Қазақ тілі' },            // Казахский
+  { code: 'ka', label: 'ქართული' },             // Грузинский
+  { code: 'ar', label: 'العربية' },              // Арабский
+  { code: 'fi', label: 'Suomi' },                 // Финский
+  { code: 'my', label: 'Bahasa Malaysia' },       // Малайский
+];
+
+export const isSupportedUi = (code) => [
+  'ru', 'en', 'ja', 'de', 'id', 'it', 'fr', 'ko', 'vi', 'es', 'th', 'pt', 'zh-CN', 'zh-TW',
+  'uk', 'pl', 'kk', 'ka', 'ar', 'fi', 'my'
+].includes(code);
+
 const getInitialLocale = () => {
   if (typeof window === 'undefined') return 'en';
   const saved = localStorage.getItem('user_locale');
@@ -39,9 +55,29 @@ const getInitialLocale = () => {
   if (baseMatch) return baseMatch.code;
   return 'en';
 };
-export const currentLocale = writable(getInitialLocale());
+
+const getInitialUiLocale = (initialMain) => {
+  if (typeof window === 'undefined') return 'en';
+  const saved = localStorage.getItem('user_ui_locale');
+  const allCodes = [
+    ...languages.map(l => l.code),
+    ...uiLanguages.map(l => l.code)
+  ];
+  if (saved && allCodes.includes(saved)) {
+    return saved;
+  }
+  return initialMain;
+};
+
+const initialMain = getInitialLocale();
+export const currentLocale = writable(initialMain);
+export const currentUiLocale = writable(getInitialUiLocale(initialMain));
+
 if (typeof window !== 'undefined') {
   currentLocale.subscribe(value => {
     localStorage.setItem('user_locale', value);
+  });
+  currentUiLocale.subscribe(value => {
+    localStorage.setItem('user_ui_locale', value);
   });
 }

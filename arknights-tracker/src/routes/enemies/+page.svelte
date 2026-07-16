@@ -1,37 +1,42 @@
 <script>
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import EnemyFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EnemyFilterDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
     import { t } from "$lib/i18n";
-    import { enemies } from "$lib/data/enemies.js"; 
-    import { enemyFilters, enemySearch, enemyGroupMode } from "$lib/stores/filterStore";
+    import { enemies } from "$lib/data/enemies.js";
+    import { enemyFilters, enemySearch, enemyGroupMode, getEnemyFilters } from "$lib/stores/filterStore";
 
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import { filterCheck } from "$lib/utils/filterUtils.js";
 
     $: searchQuery = $enemySearch || "";
     $: isGrouped = $enemyGroupMode || false;
+    $: selectedFilters = $enemyFilters;
 
     const allEnemies = Object.values(enemies || {}).filter(
         (e) => e && e.id
     );
-    
+
+    let sortFieldList = ["rarity"];
     let sortField = "rarity";
     let sortDirection = "desc";
-    let filters = {
-        rarity: [6, 5, 4, 3]
-    };
+    let filters = getEnemyFilters();
 
     $: filteredEnemies = (() => {
-        const baseFiltered = allEnemies.filter((e) => {
-            const translationKey = `enemies.${e.id}`;
+        const baseFiltered = allEnemies.filter((enemy) => {
+            const translationKey = `enemies.${enemy.id}`;
             const translatedName = $t(translationKey);
 
             if (translatedName === translationKey) return false;
-            const matchesRarity = !filters.rarity || filters.rarity.length === 0 || filters.rarity.includes(e.rarity);
+
+            const matchesRarity = filterCheck(selectedFilters.rarity, enemy.rarity);
             if (!matchesRarity) return false;
+
             const locName = translatedName.toLowerCase();
             const query = searchQuery.toLowerCase().trim();
-            const baseName = (e.name || "").toLowerCase();
-            const idName = e.id.toLowerCase();
+            const baseName = (enemy.name || "").toLowerCase();
+            const idName = enemy.id.toLowerCase();
             
             return !query ||
                 baseName.includes(query) ||
@@ -59,6 +64,10 @@
             return sortDirection === "asc" ? diff : -diff;
         });
     })();
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters)
+        .some((set) => set.size > 0);
 
     $: groupedEnemies = filteredEnemies.reduce((groups, e) => {
         const groupKey = e.groupId || "none";
@@ -90,7 +99,7 @@
     let flatDisplayLimit = 60;
 
     $: {
-        const _trigger = [searchQuery, sortField, sortDirection, isGrouped];
+        const _trigger = [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
         displayLimit = 4;
         flatDisplayLimit = 60;
         setTimeout(checkScroll, 50);
@@ -137,22 +146,42 @@
     </div>
 
     <div class="w-full xl:w-[70%] mb-4">
+
         <DataToolbar
-            bind:sortField
-            bind:sortDirection
-            bind:filters
-            bind:searchQuery={$enemySearch}
-            bind:groupMode={$enemyGroupMode}
-            mode="enemies" 
-        />
+            showSortDropdownButton={true}
+            showSortDirectionButton={true}
+            showFilterDropdownButton={true}
+            showSearchInput={true}
+            showGroupButton={true}
+            isFilterActive={isFilterActive}
+            onFilterReset={() => $enemyFilters = {}}
+            bind:isGrouped={$enemyGroupMode}
+            bind:searchString={$enemySearch}
+            bind:sortDirection={sortDirection}
+        >
+
+            <SortSelectorDropdown
+                slot="sortDropdown"
+                optionList={sortFieldList}
+                bind:selectedOption={sortField}
+            />
+
+            <EnemyFilterDropdown
+                slot="filterDropdown"
+                filters={filters}
+                bind:selectedFilters={$enemyFilters}
+            />
+
+        </DataToolbar>
+
     </div>
 
     <div class="w-full xl:w-[85%] pb-12 flex flex-col gap-5 relative">
         {#if isGrouped}
             {#each displayedGroups as group}
                 <div class="flex flex-col gap-1 animate-fadeIn">
-                    <div class="flex items-center gap-3 mb-2">
-                        <Icon name={group.groupId.replace('wiki_group_monster_', '')} class="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                    <div class="flex items-center mb-2 {group.groupId === "none" ? 'gap-0' : 'gap-3'}">
+                        <Icon name={group.groupId.replace('wiki_group_monster_', '')} class="text-gray-700 dark:text-gray-300 {group.groupId === "none" ? 'w-0 h-0' : 'w-6 h-6'}" />
                         <h3 class="text-xl font-bold text-[#21272C] dark:text-[#E4E4E4] font-sdk">
                             {group.groupId === "none" 
                                 ? ($t("global.noData") || "No data") 
@@ -173,7 +202,7 @@
             <div class="grid grid-cols-[repeat(auto-fill,minmax(100px,1fr))] md:grid-cols-[repeat(auto-fill,100px)] gap-5 justify-start animate-fadeIn">
                 {#each displayedFlat as enemy (enemy.id)}
                     <div class="flex justify-center transition-transform">
-                        <WeaponCard weapon={enemy} isEnemy={true} isNew={enemy.isNew} />
+                        <WeaponCard weapon={enemy} isEnemy={true} hideDarkness={true} hidePot={false} isNew={enemy.isNew} />
                     </div>
                 {/each}
             </div>

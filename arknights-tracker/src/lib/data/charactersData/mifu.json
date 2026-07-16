@@ -2499,7 +2499,7 @@
             "potential": 1,
             "extra_effect": 0.05,
             "extra_time": 4,
-            "cooldown": -2
+            "coolDown": -2
         },
         "potential2": {
             "Str": 20,

@@ -3,13 +3,7 @@
     import { onMount, onDestroy } from "svelte";
     import { pullData } from "$lib/stores/pulls";
     import { accountStore } from "$lib/stores/accounts";
-    import {
-        syncStatus,
-        user,
-        initAuth,
-        checkSync,
-        justSynced,
-    } from "$lib/stores/cloudStore";
+    import { syncStatus, user, initAuth, checkSync, justSynced } from "$lib/stores/cloudStore";
     import { t } from "$lib/i18n";
     import { fly } from "svelte/transition";
     import { page } from "$app/stores";
@@ -18,16 +12,17 @@
     import { browser } from "$app/environment";
     import { currentLocale } from "$lib/stores/locale";
     import { isI18nReady } from "$lib/i18n";
-    import { notifications, addNotification, removeNotification } from "$lib/stores";
-    import { cubicOut } from "svelte/easing";
+    import { addNotification } from "$lib/stores";
 
-    import CookieConsent from "$lib/components/CookieConsent.svelte";
-    import LanguageSelect from "$lib/components/LanguageSelect.svelte";
-    import Icons from "$lib/components/Icons.svelte";
-    import ThemeSwitch from "$lib/components/ThemeSwitch.svelte";
-    import SyncModal from "$lib/components/SyncModal.svelte";
-    import PrivacyModal from "$lib/components/PrivacyModal.svelte";
+    import CookieConsent from "$lib/components/layout/CookieConsent.svelte";
+    import LanguageSelect from "$lib/components/layout/LanguageSelect.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ThemeSwitch from "$lib/components/layout/ThemeSwitch.svelte";
+    import SyncModal from "$lib/components/modals/SyncModal.svelte";
+    import PrivacyModal from "$lib/components/layout/PrivacyModal.svelte";
     import Button from "$lib/components/Button.svelte";
+    import SupportModal from "$lib/components/modals/SupportModal.svelte";
+    import Notifications from "$lib/components/layout/Notifications.svelte";
 
     let isDonateModalOpen = false;
     let isMobileMenuOpen = false;
@@ -39,7 +34,7 @@
 
     let prevStatus = null;
 
-    $: if ($justSynced) {
+    $: if ($justSynced && $isI18nReady) {
         addNotification("success", $t("settings.cloud.sync_toast"));
         justSynced.set(false);
     }
@@ -54,6 +49,20 @@
 
     onMount(() => {
         if (browser) {
+            fetch('/images/icons.svg?v=5')
+                .then(res => {
+                    if (res.ok) return res.text();
+                    throw new Error('Failed to load icons.svg');
+                })
+                .then(svgText => {
+                    const div = document.createElement('div');
+                    div.style.display = 'none';
+                    div.id = '__svg-sprite-sheet__';
+                    div.innerHTML = svgText;
+                    document.body.appendChild(div);
+                })
+                .catch(err => console.error(err));
+
             isI18nReady.subscribe((isReady) => {
                 if (isReady) {
                     document.body.style.opacity = "1";
@@ -193,20 +202,7 @@
                     (isMobileMenuOpen = !isMobileMenuOpen)}
                 class="p-2 bg-base text-primary border border-line rounded-lg shadow-md"
             >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
+                <Icon name="toggleManu" class="w-6 h-6" />
             </button>
         </div>
 
@@ -241,7 +237,7 @@
                                 href="/"
                                 class="block hover:opacity-80 transition-opacity"
                             >
-                                <Icons name="siteLogo" class="w-full h-auto" />
+                                <Icon name="siteLogo" class="w-full h-auto" />
                             </a>
                         </h1>
                     </div>
@@ -249,47 +245,15 @@
 
                 <button
                     on:click={toggleCollapse}
-                    class="hidden md:flex items-center justify-center w-8 h-8 rounded text-gray-400 dark:text-gray-500 hover:text-[#21272C] dark:hover:text-[#FDFDFD] transition-colors group flex-shrink-0"
+                    class="hidden md:flex items-center justify-center w-8 h-8 rounded text-gray-400 dark:text-gray-500 group flex-shrink-0 hover:dark:text-[#FFE145] hover:text-[#FFE145] duration-200"
                     aria-label={isCollapsed
                         ? "Expand Sidebar"
                         : "Collapse Sidebar"}
                 >
                     {#if isCollapsed}
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        </svg>
+                        <Icon name="toggleManu" class="w-6 h-6" />
                     {:else}
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 group-hover:text-[#FFE145] transition-colors"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M18 19l-7-7 7-7"
-                            />
-                            <path
-                                stroke-linecap="square"
-                                stroke-linejoin="miter"
-                                d="M11 19l-7-7 7-7"
-                                class="opacity-50"
-                            />
-                        </svg>
+                        <Icon name="doubleArrowsLeft" class="w-6 h-6" />
                     {/if}
                 </button>
             </div>
@@ -345,7 +309,7 @@
                                         ? 'text-gray-900 dark:text-white'
                                         : 'text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200'}"
                                 >
-                                    <Icons
+                                    <Icon
                                         name={item.icon}
                                         class="w-full h-full"
                                     />
@@ -399,28 +363,9 @@
                             : $t("sidebar.theme_dark")}
                     >
                         {#if $isDarkMode}
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                stroke="none"
-                                ><path
-                                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
-                                ></path></svg
-                            >
+                            <Icon name="moon" class="w-6 h-6" />
                         {:else}
-                            <svg
-                                width="22"
-                                height="22"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                ><circle cx="12" cy="12" r="5" /><path
-                                    d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-                                /></svg
-                            >
+                            <Icon name="sun" class="w-6 h-6" />
                         {/if}
                     </button>
 
@@ -429,71 +374,13 @@
                         class="w-10 h-10 flex items-center justify-center rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#444] hover:text-black dark:hover:text-white transition-colors"
                         title="Change Language"
                     >
-                        <Icons name="globe" style="width:22px; height:22px;" />
+                        <Icon name="globe" style="width:22px; height:22px;" />
                     </button>
                 {/if}
             </div>
         </aside>
 
-        {#if $notifications && $notifications.length > 0}
-            <div class="fixed bottom-6 right-6 z-[9999] flex flex-col gap-3 max-w-sm w-full pointer-events-none select-none">
-                {#each $notifications as notification (notification.id)}
-                    <div
-                        in:fly={{ x: 40, duration: 450, easing: cubicOut }}
-                        out:fade={{ duration: 200 }}
-                        class="pointer-events-auto flex items-center justify-between gap-3 bg-white dark:bg-[#2C2C2C] border shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-xl px-4 py-3 transition-all
-                            {notification.type === 'success' ? 'border-green-200/80 dark:border-green-900/30' : ''}
-                            {notification.type === 'error' ? 'border-red-200/80 dark:border-red-900/30' : ''}
-                            {notification.type === 'warning' ? 'border-amber-200/80 dark:border-amber-900/30' : ''}
-                            {notification.type === 'info' ? 'border-blue-200/80 dark:border-blue-900/30' : ''}"
-                    >
-                        <div class="flex items-center gap-3 min-w-0">
-                            {#if notification.type === 'success'}
-                                <div class="flex-shrink-0 bg-green-50 dark:bg-green-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="success" class="w-[15px] h-[15px] text-green-500" />
-                                </div>
-                            {:else if notification.type === 'error'}
-                                <div class="flex-shrink-0 bg-red-50 dark:bg-red-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="error" class="w-[15px] h-[15px] text-red-500" />
-                                </div>
-                            {:else if notification.type === 'warning'}
-                                <div class="flex-shrink-0 bg-amber-50 dark:bg-amber-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="warning" class="w-[15px] h-[15px] text-amber-500" />
-                                </div>
-                            {:else}
-                                <div class="flex-shrink-0 bg-blue-50 dark:bg-blue-950/40 p-1.5 rounded-full flex items-center justify-center">
-                                    <Icons name="info" class="w-[15px] h-[15px] text-blue-500" />
-                                </div>
-                            {/if}
-
-                            <div class="flex flex-col min-w-0">
-                                <span class="text-sm font-bold text-gray-800 dark:text-[#E4E4E4] leading-tight break-words">
-                                    {notification.message}
-                                    {#if notification.subtitle}
-                                        <span class="ml-1.5 px-1.5 py-0.5 text-[10px] font-mono font-bold rounded-md
-                                            {notification.type === 'error' ? 'bg-red-50 text-red-700 dark:bg-red-950/50 dark:text-red-400 border border-red-200/40 dark:border-red-900/20' : ''}
-                                            {notification.type === 'success' ? 'bg-green-50 text-green-700 dark:bg-green-950/50 dark:text-green-400 border border-green-200/40 dark:border-green-900/20' : ''}
-                                            {notification.type === 'warning' ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400 border border-amber-200/40 dark:border-amber-900/20' : ''}
-                                            {notification.type === 'info' ? 'bg-blue-50 text-blue-700 dark:bg-blue-950/50 dark:text-blue-400 border border-blue-200/40 dark:border-blue-900/20' : ''}">
-                                            {notification.subtitle}
-                                        </span>
-                                    {/if}
-                                </span>
-                            </div>
-                        </div>
-
-                        <button
-                            on:click={() => removeNotification(notification.id)}
-                            class="flex-shrink-0 text-gray-400 hover:text-gray-600 dark:hover:text-white transition-colors p-1 hover:bg-gray-100 dark:hover:bg-[#3E3E3E] rounded-md outline-none"
-                            aria-label={$t("close") || "Close"}
-                        >
-                            <Icons name="close" class="w-3.5 h-3.5" />
-                            <span class="hidden">{$t("close") || "Close"}</span>
-                        </button>
-                    </div>
-                {/each}
-            </div>
-        {/if}
+        <Notifications />
 
         <main
             class="
@@ -543,7 +430,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Discord"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="discrodBig"
                                         class="h-[22px] w-auto"
                                     />
@@ -555,7 +442,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="GitHub"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="gitHubBig"
                                         class="h-[22px] w-auto"
                                     />
@@ -581,7 +468,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="X (Twitter)"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="twitter"
                                         class="h-[22px] w-auto"
                                     />
@@ -593,7 +480,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Skport"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="skport"
                                         class="h-[22px] w-auto"
                                     />
@@ -605,7 +492,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Official Discord"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="discord"
                                         class="h-[22px] w-auto"
                                     />
@@ -617,7 +504,7 @@
                                     class="text-[#21272C]/90 hover:opacity-70 dark:text-white/80 transition-opacity"
                                     title="Official YouTube"
                                 >
-                                    <Icons
+                                    <Icon
                                         name="youtube"
                                         class="h-[22px] w-auto"
                                     />
@@ -640,7 +527,7 @@
                                 on:click={() => (isDonateModalOpen = true)}
                                 class="text-left text-[15px] text-[#F9B90C] hover:text-[#d9a009] dark:hover:text-[#ffe28a] transition-colors flex items-center gap-1"
                             >
-                                <Icons name="favorite" class="w-4 h-4" />
+                                <Icon name="favorite" class="w-4 h-4" />
                                 {$t("footer.supportProject")}
                             </button>
                         </div>
@@ -657,7 +544,7 @@
                                 class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("home.docsTitle")}
-                                <Icons name="sendToLink" class="w-4 h-4" />
+                                <Icon name="sendToLink" class="w-4 h-4" />
                             </a>
                             <a
                                 href="https://opendfieldmap.org/"
@@ -666,7 +553,7 @@
                                 class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("footer.interactiveMap")}
-                                <Icons name="sendToLink" class="w-4 h-4" />
+                                <Icon name="sendToLink" class="w-4 h-4" />
                             </a>
                         </div>
                     </div>
@@ -679,95 +566,10 @@
                 on:close={() => (isPrivacyModalOpen = false)}
             />
 
-            {#if isDonateModalOpen}
-                <div
-                    class="fixed inset-0 md:ml-[var(--sb-w)] z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity"
-                    on:click={() => (isDonateModalOpen = false)}
-                    on:keydown={(e) =>
-                        e.key === "Escape" && (isDonateModalOpen = false)}
-                    role="button"
-                    tabindex="0"
-                >
-                    <div
-                        class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-2xl p-8 max-w-sm w-full mx-4 shadow-2xl relative"
-                        on:click|stopPropagation
-                        on:keydown|stopPropagation
-                        role="dialog"
-                        aria-modal="true"
-                        tabindex="-1"
-                    >
-                        <button
-                            class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors"
-                            on:click={() => (isDonateModalOpen = false)}
-                        >
-                            <Icons name="close" class="w-6 h-6" />
-                        </button>
-
-                        <h2
-                            class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-2 text-center"
-                        >
-                            {$t("settings.donate.title")}
-                        </h2>
-
-                        <p
-                            class="text-sm text-gray-500 dark:text-gray-400 mb-6 text-center leading-relaxed"
-                        >
-                            {$t("settings.donate.description")}
-                        </p>
-
-                        <div class="flex flex-col gap-3">
-                            <a
-                                href="https://boosty.to/ivawa/donate"
-                                target="_blank"
-                                rel="noreferrer"
-                                class="no-underline block"
-                            >
-                                <Button
-                                    variant="black2"
-                                    className="w-full justify-center"
-                                >
-                                    <div slot="icon">
-                                        <Icons name="boosty" class="w-5 h-5" />
-                                    </div>
-                                    Boosty
-                                </Button>
-                            </a>
-                            <a
-                                href="https://t.me/tribute/app?startapp=dFlw"
-                                target="_blank"
-                                rel="noreferrer"
-                                class="no-underline block"
-                            >
-                                <Button
-                                    variant="black2"
-                                    className="w-full justify-center"
-                                >
-                                    <div slot="icon">
-                                        <Icons name="tribute" class="w-5 h-5" />
-                                    </div>
-                                    Tribute
-                                </Button>
-                            </a>
-                            <a
-                                href="https://patreon.com/ivawa?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
-                                target="_blank"
-                                rel="noreferrer"
-                                class="no-underline block"
-                            >
-                                <Button
-                                    variant="black2"
-                                    className="w-full justify-center"
-                                >
-                                    <div slot="icon">
-                                        <Icons name="patreon" class="w-5 h-5" />
-                                    </div>
-                                    Patreon
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            {/if}
+            <SupportModal
+                isOpen={isDonateModalOpen}
+                on:close={() => (isDonateModalOpen = false)}
+            />
         </main>
     </div>
 {:else}

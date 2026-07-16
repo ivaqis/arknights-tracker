@@ -2,11 +2,19 @@
 
 import { currencies } from '$lib/data/items/currencies';
 import { progression } from '$lib/data/items/progression';
+import { characters } from '$lib/data/characters';
 
 const extractIds = (list) => {
     if (!list) return [];
     return list.map(item => (typeof item === 'string' ? item : item.id));
 };
+
+const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
+    if (char && char.apiId) {
+        acc[char.apiId] = char.id;
+    }
+    return acc;
+}, {});
 
 const CURRENCY_IDS = new Set(extractIds(currencies));
 const PROGRESSION_IDS = new Set(extractIds(progression));
@@ -14,7 +22,11 @@ const PROGRESSION_IDS = new Set(extractIds(progression));
 export function normalizeId(str) {
     if (!str) return "";
     if (str.toString().startsWith("http")) return str;
-    return str.toString().replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
+    const clean = str.toString().trim();
+    if (apiIdToCharId[clean]) {
+        return apiIdToCharId[clean];
+    }
+    return clean.replace(/\s+/g, "_").replace(/[^a-zA-Z0-9_\-\.]/g, "");
 }
 
 export function getImagePath(idOrName, variant = 'operator-icon') {
@@ -23,6 +35,8 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
     const name = normalizeId(idOrName);
     const withExt = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.png`;
+
+    const withWebp = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.webp`;
 
     switch (variant) {
         case 'operator-splash':
@@ -86,7 +100,19 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
 
         case 'operator-art':
             return `/images/operators/arts/${withExt(name)}`;
+
+        case 'operator-art-lq':
+            return `/images/operators/artsLQ/${withExt(name)}`;
             
+        case 'contract-tag-icon':
+            return `/images/crisisContract/tags/icon_${withExt(name)}`;
+
+        case 'essence-icon':
+            return `/images/essences/${withWebp(name)}`;
+
+        case 'essence-type-icon':
+            return `/images/essencesTypes/${withWebp(name)}`;
+
         case 'operator-icon':
         default:
             return `/images/operators/icons/${withExt(name)}`;

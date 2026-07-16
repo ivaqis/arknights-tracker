@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Reja de alto voltaje",
+    "desc": "Una reja de alto voltaje activa es infranqueable. Sigue el cable, encuentra el interruptor y apaga la cerca para pasar con seguridad."
+  },
+  "adv.eswitch": {
+    "name": "Dispositivo reactivo",
+    "desc": "Un dispositivo reactivo cambia su modo de operación cuando es atacado o impactado por una explosión. A menudo se usa para apagar <#adv.electricFence>Rejas de alto voltaje</> o activar <#adv.jumpMachine>Dispositivos de impulso</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Dispositivo de impulso",
+    "desc": "El operador controlado puede usar Dispositivos de impulso para saltar distancias mayores o alcanzar lugares altos inaccesibles con un salto normal.\nSimplemente colócate sobre un Dispositivo de impulso con energía y luego salta para usarlo."
+  },
+  "adv.powerTerminal": {
+    "name": "Nexus eléctrico",
+    "desc": "Un Nexus eléctrico normalmente se coloca al final de una línea de transmisión de energía. Conéctalo a la red de energía para suministrar energía a las instalaciones cercanas. Los Nexus eléctricos suelen usarse para alimentar puertas e interruptores. Suministra energía a los Nexos eléctricos con Torres de transmisión. Esto otorgará acceso de control a las puertas o interruptores vinculados a ellos."
+  },
+  "ba.absorb": {
+    "name": "Absorber",
+    "desc": "Una forma de terminar antes una penalización Física o de Artes. <@ba.key>Absorber</> no es lo mismo que <#ba.consume>consumir</>."
+  },
+  "ba.airborne": {
+    "name": "Estado físico: Levantar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidad</> a un enemigo. Si el enemigo ya está <#ba.noguard>Vulnerable</>, entonces añade 1 acumulación de <#ba.noguard>Vulnerabilidad</> y causa <@ba.phy>DAÑ físico</> y <@ba.poise>Tambaleo</>."
+  },
+  "ba.burning": {
+    "name": "Reacción a artes: Combustión",
+    "desc": "Un enemigo con <@ba.burning>Combustión</> recibe <@ba.fire>DAÑ por calor</> continuo.\n<@ba.burning>Combustión</> = Una <#ba.spellinflict>Imposición que no sea de calor</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Imposición de calor</>"
+  },
+  "ba.burningonchar": {
+    "name": "Debilitación del operador: Combustión",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.fireinflict>Imposición de calor</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.burning>Combustido</>: Recibe temporalmente <@ba.fire>DAÑ por calor</> continuo que ignora su DEF."
+  },
+  "ba.combo": {
+    "name": "Enlace",
+    "desc": "La siguiente habilidad de batalla o máxima lanzada por el equipo consume el incremento de Vínculo y causa más DAÑ, y las habilidades de batalla obtienen un aumento mayor. Los efectos del mismo tipo pueden acumularse, pero con rendimientos decrecientes."
+  },
+  "ba.conduct": {
+    "name": "Reacción a artes: Electrificación",
+    "desc": "Un enemigo con <@ba.conduct>Electrificación</> recibe más <#ba.spelldmg>DAÑ por artes</>.\n<@ba.conduct>Electrificación</> = Una <#ba.spellinflict>Imposición no eléctrica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Imposición eléctrica</>"
+  },
+  "ba.conductonchar": {
+    "name": "Debilitación del operador: Electrificación",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.pulseinflict>Imposición eléctrica</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.conduct>Electrificado</>: Aturdimiento temporal y recibe más <#ba.spelldmg>DAÑ por artes</> por cierto tiempo."
+  },
+  "ba.consume": {
+    "name": "Consumo de debilitaciones",
+    "desc": "Varias penalizaciones Físicas y de artes se pueden terminar antes. Por ejemplo, <#ba.crush>Triturar</> consume las penalizaciones de <#ba.noguard>Vulnerabilidad</>, mientras que <#ba.burning>Combustión</> consume las penalizaciones de <#ba.spellinflict>Imposición de artes</>."
+  },
+  "ba.corrupt": {
+    "name": "Reacción a artes: Corrosión",
+    "desc": "Un enemigo con <@ba.corrupt>Corrosión</> pierde gradualmente la resistencia contra todos los elementos. \n<@ba.corrupt>Corrosión</> = Una <#ba.spellinflict>Imposición no de naturaleza</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Imposición de naturaleza</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Debilitación del operador: Corrosión",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.naturalinflict>Imposición de naturaleza</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.corrupt>Corroído</>: No puede hacer desplazamiento y sufre una reducción de velocidad de movimiento por cierto tiempo."
+  },
+  "ba.crush": {
+    "name": "Estado físico: Triturar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidad</> a un enemigo. Si el enemigo ya está <#ba.noguard>Vulnerable</>, <#ba.consume>consume</> todas las acumulaciones de <#ba.noguard>Vulnerabilidad</> e inflige <@ba.phy>DAÑ físico</> masivo."
+  },
+  "ba.crystbreak": {
+    "name": "Quebrar",
+    "desc": "A un enemigo con <#ba.frozen>Solidificación</> activa, aplicar <#ba.noguard>Vulnerabilidad</> o efectos de <#ba.physicalstatus>Estado físico</> <#ba.consume>consumirá</> la <#ba.frozen>Solidificación</> para activar Quebrar, lo que inflige <@ba.pd>DAÑ físico</> considerable."
+  },
+  "ba.crystburst": {
+    "name": "Ráfaga de artes: Criogénico",
+    "desc": "<#ba.crystinflict>Imposición criogénica</> + <#ba.crystinflict>Imposición criogénica</> activará <@ba.cryst>Ráfaga criogénica</> que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos."
+  },
+  "ba.crystenhance": {
+    "name": "Amplific. criogénico",
+    "desc": "Los objetivos con amplificación de frío infligen temporalmente más <@ba.cryst>DAÑ Criogénico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.crystinflict": {
+    "name": "Imposición de artes: criogénico",
+    "desc": "<@ba.crystinflict>Imposición criogénica</> es un tipo de <#ba.spellinflict>Imposición de artes</>. \nSe pueden aplicar hasta 4 acumulaciones de <@ba.crystinflict>Imposición criogénica</> y la acumulación activa <#ba.crystburst>Ráfaga criogénica</>. \nUna <#ba.spellinflict>Imposición no criogénica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Imposición criogénica</> = <#ba.frozen>Solidificación</>"
+  },
+  "ba.crystonchar": {
+    "name": "Penalización del operador: Imp. crio.",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.crystinflict>Imposición criogénica</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.frozen>Solidificado</>: No puede moverse por cierto tiempo."
+  },
+  "ba.crystvul": {
+    "name": "Susceptibilidad criogénica",
+    "desc": "Los objetivos susceptibles al frío reciben temporalmente más <@ba.cryst>DAÑ Criogénico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.dispel": {
+    "name": "Disipar",
+    "desc": "Esto elimina debilitaciones específicas del operador."
+  },
+  "ba.dot": {
+    "name": "DAÑ continuo",
+    "desc": "El DAÑ continuo no puede provocar golpes críticos."
+  },
+  "ba.enhance": {
+    "name": "Amplific.",
+    "desc": "Los objetivos con amplificación infligen más DAÑ con el elemento que tienen amplificado. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.fireburst": {
+    "name": "Ráfaga de artes: Calor",
+    "desc": "<#ba.fireinflict>Imposición de calor</> + <#ba.fireinflict>Imposición de calor</> activará <@ba.fire>Ráfaga de calor</> que inflige <@ba.fire>DAÑ por calor</> a los enemigos."
+  },
+  "ba.fireenhance": {
+    "name": "Amp de calor",
+    "desc": "Los objetivos con amplificación de Calor infligen temporalmente más <@ba.fire>DAÑ por calor</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.fireinflict": {
+    "name": "Imposición de artes: Calor",
+    "desc": "<@ba.fireinflict>Imposición de calor</> es un tipo de <#ba.spellinflict>Imposición de artes</>. \nSe pueden aplicar hasta 4 acumulaciones de <@ba.fireinflict>Imposición de calor</> y la acumulación activa <#ba.fireburst>Ráfaga de calor</>. \nUna <#ba.spellinflict>Imposición que no sea de calor</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Imposición de calor</> = <#ba.burning>Combustión</>"
+  },
+  "ba.fireonchar": {
+    "name": "Penalización del operador: Imp. de cal.",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.fireinflict>Imposición de calor</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.burning>Combustido</>: Recibe temporalmente <@ba.fire>DAÑ por calor</> continuo que ignora su DEF."
+  },
+  "ba.firevul": {
+    "name": "Susceptibilidad al calor",
+    "desc": "Los objetivos susceptibles al Calor reciben temporalmente más <@ba.fire>DAÑ por calor</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.fracture": {
+    "name": "Estado físico: Brecha",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidad</> a un enemigo. Si el enemigo ya está <#ba.noguard>Vulnerable</>, <#ba.consume>consume</> todas las acumulaciones de <#ba.noguard>Vulnerabilidad</>, inflige <@ba.phy>DAÑ físico</> y aumenta temporalmente el <@ba.pd>DAÑ físico</> recibido por el enemigo."
+  },
+  "ba.frozen": {
+    "name": "Reacción a artes: Solidificación",
+    "desc": "Un enemigo con <@ba.frozen>Solidificación</> no se puede mover, y aplicarle <#ba.noguard>Vulnerabilidad</> o un <#ba.physicalstatus>Estado físico</> al enemigo activa el efecto de <#ba.crystbreak>Quebrar</>. \n<@ba.frozen>Solidificación</> = Una <#ba.spellinflict>Imposición no criogénica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Imposición criogénica</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Debilitación del operador: Solidificación",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.crystinflict>Imposición criogénica</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.frozen>Solidificado</>: No puede moverse por cierto tiempo."
+  },
+  "ba.guard": {
+    "name": "Proteger",
+    "desc": "Los objetivos protegidos reciben DAÑ reducido temporalmente. El número representa el nivel de la reducción. Cuando hay múltiples efectos del mismo tipo, solo aplica el más fuerte."
+  },
+  "ba.knockdown": {
+    "name": "Estado físico: Derribar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidad</> a un enemigo. Si el enemigo ya está <#ba.noguard>Vulnerable</>, entonces añade 1 acumulación de <#ba.noguard>Vulnerabilidad</> y causa <@ba.phy>DAÑ físico</> y <@ba.poise>Tambaleo</>."
+  },
+  "ba.lastcombo": {
+    "name": "Golpe final",
+    "desc": "Golpe final es la última secuencia de ataque básico. Cuando el Golpe final del operador controlado golpea a un enemigo, también inflige <@ba.poise>Tambaleo</> y restaura algunos Puntos de habilidad (PH)."
+  },
+  "ba.naturalburst": {
+    "name": "Ráfaga de artes: Naturaleza",
+    "desc": "<#ba.naturalinflict>Imposición de naturaleza</> + <#ba.naturalinflict>Imposición de naturaleza</> activará <@ba.natur>Ráfaga de naturaleza</> que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos."
+  },
+  "ba.naturalenhance": {
+    "name": "Amplific. de naturaleza",
+    "desc": "Los objetivos con amplificación de naturaleza infligen temporalmente más <@ba.natur>DAÑ por naturaleza</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.naturalinflict": {
+    "name": "Imposición de artes: Naturaleza",
+    "desc": "<@ba.naturalinflict>Imposición de naturaleza</> es un tipo de <#ba.spellinflict>Imposición de artes</>. \nSe pueden aplicar hasta 4 acumulaciones de <@ba.naturalinflict>Imposición de naturaleza</> y la acumulación activa <#ba.naturalburst>Ráfaga de naturaleza</>. \nUna <#ba.spellinflict>Imposición no de naturaleza</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Imposición de naturaleza</> = <#ba.corrupt>Corrosión</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Penalización del operador: Imp. de nat.",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.naturalinflict>Imposición de naturaleza</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.corrupt>Corroído</>: No puede hacer desplazamiento y sufre una reducción de velocidad de movimiento por cierto tiempo."
+  },
+  "ba.naturalvul": {
+    "name": "Susceptibilidad a la naturaleza",
+    "desc": "Los objetivos susceptibles a la naturaleza reciben temporalmente más <@ba.natur>DAÑ por naturaleza</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.noguard": {
+    "name": "Vulnerable",
+    "desc": "La primera vez que golpeas a un enemigo con una con <#ba.physicalstatus>Estado físico</> se aplica <@ba.noguard>Vulnerabilidad</> en lugar del Estado físico actual.\nUn enemigo <@ba.phy>Vulnerable</> puede ser <#ba.airborne>Levantado</> y <#ba.knockdown>Derribado</> para añadir más acumulaciones de Vulnerabilidad (hasta 4). Al golpear a enemigos Vulnerables con <#ba.crush>Triturar</> o <#ba.fracture>Brecha</> se <#ba.consume>consumen</> las acumulaciones de Vulnerabilidad."
+  },
+  "ba.originium": {
+    "name": "Cristal de Originio",
+    "desc": "La habilidad de combo del Endministrator adhiere Cristales de Originio a los enemigos y los inmoviliza."
+  },
+  "ba.physicalenhance": {
+    "name": "Amplific. físico",
+    "desc": "Los objetivos con amplificación de ataque físico infligen temporalmente más <@ba.pd>DAÑ físico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.physicalstatus": {
+    "name": "Estado físico",
+    "desc": "Los Estados físicos se refieren a debilitaciones físicas aplicadas al enemigo. Estos incluyen: <#ba.airborne>Levantado</>, <#ba.knockdown>Derribado</>, <#ba.crush>Triturado</> y <#ba.fracture>Vulnerado</>."
+  },
+  "ba.physicalvul": {
+    "name": "Suscep. fís.",
+    "desc": "Los objetivos susceptibles a los ataques físicos reciben temporalmente más <@ba.pd>DAÑ físico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.poiseknot": {
+    "name": "Nodo de tambaleo",
+    "desc": "Algunos enemigos poderosos tienen <@ba.poise>Nodos de tambaleo</>. Inflige suficiente <@ba.poise>Tambaleo</> para llegar al <@ba.poise>Nodo de tambaleo</> e interrumpir a esos enemigos y hacer que se tambaleen."
+  },
+  "ba.pulseburst": {
+    "name": "Ráfaga de artes: Eléctrico",
+    "desc": "<#ba.pulseinflict>Imposición eléctrica</> + <#ba.pulseinflict>Imposición eléctrica</> activará <@ba.pulse>Ráfaga eléctrica</> que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos."
+  },
+  "ba.pulseenhance": {
+    "name": "Amp eléctrico",
+    "desc": "Los objetivos con amplificación eléctrica infligen temporalmente más <@ba.pulse>DAÑ Eléctrico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.pulseinflict": {
+    "name": "Imposición de artes: Eléctrico",
+    "desc": "<@ba.pulseinflict>Imposición eléctrica</> es un tipo de <#ba.spellinflict>Imposición de artes</>. \nSe pueden aplicar hasta 4 acumulaciones de <@ba.pulseinflict>Imposición eléctrica</> y la acumulación activa <#ba.pulseburst>Ráfaga eléctrica</>. \nUna <#ba.spellinflict>Imposición no eléctrica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Imposición eléctrica</> = <#ba.conduct>Electrificación</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Penalización del operador: Imp. elec.",
+    "desc": "Algunas habilidades de los enemigos pueden aplicar acumulación de <@ba.pulseinflict>Imposición eléctrica</> a los operadores. \nCon 4 acumulaciones, el operador quedará <@ba.conduct>Electrificado</>: Aturdimiento temporal y recibe más <#ba.spelldmg>DAÑ por artes</> por cierto tiempo."
+  },
+  "ba.pulsevul": {
+    "name": "Susceptibilidad eléctrica",
+    "desc": "Los objetivos susceptibles a la electricidad reciben temporalmente más <@ba.pulse>DAÑ Eléctrico</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.return": {
+    "name": "Retorno de PH",
+    "desc": "Después de gastar PH y cumplir ciertos criterios, se devolverá parte de los PH gastados. \nEl retorno de PH no es “Recuperación de PH” y no activa efectos que se detonan con la Recuperación de PH. Gastar los PH devueltos tampoco otorga Energía máxima."
+  },
+  "ba.rossi": {
+    "name": "Marca de garra afilada",
+    "desc": "La habilidad de batalla de Rossi aplica un estado especial al enemigo. El objetivo afectado recibirá <@ba.pd>DAÑ físico continuo</> y sufrirá un aumento de DAÑ físico recibido y DAÑ por calor recibido."
+  },
+  "ba.shield": {
+    "name": "Escudo",
+    "desc": "El escudo puede absorber daño mientras esté activo. Algunos escudos solo pueden absorber uno o más tipos específicos de DAÑ."
+  },
+  "ba.slow": {
+    "name": "Ralentizar",
+    "desc": "Los objetivos ralentizados sufren temporalmente de reducción de velocidad de movimiento. El número representa el nivel de la reducción. Cuando hay múltiples efectos del mismo tipo, solo aplica el más fuerte."
+  },
+  "ba.speedup": {
+    "name": "Celeridad",
+    "desc": "Aumenta temporalmente la velocidad de movimiento de un objetivo. El número representa el grado del aumento de velocidad. Los efectos del mismo tipo pueden acumularse hasta alcanzar el límite de velocidad."
+  },
+  "ba.spellburst": {
+    "name": "Ráfaga de artes",
+    "desc": "Las <@ba.key>Ráfagas de artes</> se activan acumulando <#ba.spellinflict>Imposición de artes</> de los mismos elementos. Estos incluyen <#ba.fireburst>Ráfaga de calor</>, <#ba.pulseburst>Ráfaga eléctrica</>, <#ba.crystburst>Ráfaga criogénica</> y <#ba.naturalburst>Ráfaga de naturaleza</>."
+  },
+  "ba.spelldmg": {
+    "name": "Tipo de DAÑ",
+    "desc": "El daño se puede dividir en <@ba.pd>DAÑ físico</>, <@ba.key>DAÑ por artes</> y <@ba.ether>DAÑ por éter</>.\nEl <@ba.key>DAÑ por artes</> se puede dividir a su vez en <@ba.fire>DAÑ por calor</>, <@ba.pulse>DAÑ eléctrico</>, <@ba.cryst>DAÑ criogénico</> y <@ba.natur>DAÑ por naturaleza</>."
+  },
+  "ba.spellenhance": {
+    "name": "Amp de artes",
+    "desc": "Los objetivos con amplificación de Artes infligen temporalmente más <#ba.spelldmg>DAÑ por artes</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.spellinflict": {
+    "name": "Imposición de artes",
+    "desc": "Las <@ba.key>Imposiciones de artes</> son Artes especiales que debilitan al enemigo. Hay 4 elementos de Imposiciones de artes: <#ba.fireinflict>Imposición de calor</>, <#ba.pulseinflict>Imposición eléctrica</>, <#ba.crystinflict>Imposición criogénica</> e <#ba.naturalinflict>Imposición de naturaleza</>. \nSe pueden aplicar hasta 4 acumulaciones de <@ba.key>Imposición de artes</> del mismo elemento."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Imposiciones de artes/Reacciones a artes en operadores",
+    "desc": "Algunas habilidades de enemigos pueden aplicar acumulaciones de <#ba.burningonchar>Imposición de calor</>, <#ba.conductonchar>Imposición eléctrica</>, <#ba.frozenonchar>Imposición criogénica</> o <#ba.corruptonchar>Imposición de naturaleza</>.\nCon 4 acumulaciones de Imposiciones de artes, el operador queda en <#ba.burningonchar>Quemado</>, <#ba.conductonchar>Electrificado</>, <#ba.frozenonchar>Solidificado</> o <#ba.corruptonchar>Corroído</>, respectivamente."
+  },
+  "ba.spellstatus": {
+    "name": "Reacción a artes",
+    "desc": "Las <@ba.key>Reacción a artes</> son debilitaciones de artes que se pueden aplicar al enemigo. Estas incluyen: <#ba.burning>Combustión</>, <#ba.conduct>Electrificación</>, <#ba.frozen>Solidificación</> y <#ba.corrupt>Corrosión</>."
+  },
+  "ba.spellvul": {
+    "name": "Suscep. a art.",
+    "desc": "Los objetivos susceptibles a las artes reciben temporalmente más <#ba.spelldmg>DAÑ por artes</>. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.statuslevel": {
+    "name": "Nivel de estado",
+    "desc": "El Nivel de estado es el número de acumulaciones de <#ba.noguard>Vulnerabilidad</> o <#ba.spellinflict>Imposición de artes</> (máx. 4) <#ba.consume>consumidas</> al activar un <#ba.physicalstatus>Estado físico</> o una <#ba.spellstatus>Reacción a artes</>. Entre más alto es el <#ba.statuslevel>Nivel de estado</>, más fuerte el <#ba.physicalstatus>Estado físico</> o la <#ba.spellstatus>Reacción a artes</> resultantes."
+  },
+  "ba.vulnerable": {
+    "name": "Susceptible",
+    "desc": "Los objetivos susceptibles reciben temporalmente más DAÑ del elemento al cual son susceptibles. El número representa el nivel del aumento. Los efectos del mismo tipo se pueden acumular."
+  },
+  "ba.weak": {
+    "name": "Debilitar",
+    "desc": "Los objetivos debilitados infligen DAÑ reducido temporalmente. El número representa el nivel de la reducción. Los efectos del mismo tipo se pueden acumular de forma no linear."
+  },
+  "fac.hub": {
+    "name": "Núcleo de automatización de protocolos",
+    "desc": "El Núcleo de automatización de protocolos (NAP) es la instalación central de la fábrica del Complejo de Automatización Industrial (CAI). La gestión de almacenamiento está disponible al estar en el Área central del CAI del NAP."
+  },
+  "item.bbflower": {
+    "name": "Aketina",
+    "desc": "Una planta que contiene sustancias inflamables y explosivas. Puede recolectarse en las tierras salvajes.\nLa planta puede cultivarse con instalaciones de la Fábrica del CAI o con <#item.portSoilBbflower>Terrenos de aketina</>.\nTambién puede procesarse con instalaciones de la Fábrica del CAI. Por ejemplo, puede triturarse para producir <#item.bbflowerPowder>Polvo de aketina</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Polvo de aketina",
+    "desc": "Un polvo producido al pulverizar <#item.bbflower>Aketina</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.bbflowerSeed": {
+    "name": "Semilla de aketina",
+    "desc": "Semillas recolectadas de <#item.bbflower>Aketina</> con instalaciones de la Fábrica del CAI.\nLas Semillas de aketina pueden plantarse y cultivarse en instalaciones de la Fábrica del CAI para obtener Aketina.\nAlternativamente, Semilla de aketina y <#item.carbonMtl>Carbono</> pueden usarse en la pantalla de <#sys.manualCraftField>Cultivo</> para fabricar <#item.portSoilBbflower>Terrenos de aketina</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Cápsulas de floracina [C]",
+    "desc": "Una cápsula hecha <#sys.manualCraft>fabricando</> o rellenando <#item.plantMossPowder1>Polvo de Floracina</> en una <#item.glassBottle>Botella de amatista</> con instalaciones de la Fábrica del CAI.\nÚsala para restaurar los PV de un operador. También puede equiparse como <#sys.tacticalItem>item táctico</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbono",
+    "desc": "Un material producido al refinar <#item.plantMoss1>Floracinas</> con instalaciones de la Fábrica del CAI.\nEl Carbono es esencial para fabricar terrenos de <#sys.manualCraftField>cultivo</>, y también se puede usar para producir otros materiales."
+  },
+  "item.crystalShell": {
+    "name": "Origocorteza",
+    "desc": "Una corteza cristalina producida al refinar <#item.originium>Mineral de Originio</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.glassBottle": {
+    "name": "Botella de amatista",
+    "desc": "Un frasco producido al moldear <#item.quartzGlass>Fibra de amatista</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.glassCmpt": {
+    "name": "Pieza de amatista",
+    "desc": "Una pieza producida al ajustar <#item.quartzGlass>Fibra de amatista</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.ironEnrPowder": {
+    "name": "Polvo de ferrio denso",
+    "desc": "Un polvo fino y denso producido al pulverizar <#item.ironPowder>Polvo de ferrio</> y <#item.plantMossPowder3>Polvo de hojarena</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.ironNugget": {
+    "name": "Ferrio",
+    "desc": "Un lingote metálico producido al refinar <#item.ironOre>Mineral de ferrio</> con instalaciones de la Fábrica del CAI. Puede usarse para producir otros materiales."
+  },
+  "item.ironOre": {
+    "name": "Mineral de ferrio",
+    "desc": "Un mineral que puede recolectarse de puntos de minería de Mineral de ferrio en las tierras salvajes.\nTambién puede procesarse con instalaciones de la Fábrica del CAI. Por ejemplo, puede refinarse para producir <#item.ironNugget>Ferrio</>."
+  },
+  "item.ironPowder": {
+    "name": "Polvo de ferrio",
+    "desc": "Un polvo producido al triturar <#item.ironNugget>Ferrio</> con las instalaciones de la Fábrica del CAI. Se puede usar para producir otros materiales."
+  },
+  "item.originium": {
+    "name": "Mineral de Originio",
+    "desc": "Un mineral que puede recolectarse de puntos de minería de Mineral de Originio en las tierras salvajes. Puede usarse para generar energía en la Fábrica del CAI.\nTambién puede procesarse con instalaciones de la Fábrica del CAI. Por ejemplo, puede refinarse para producir <#item.crystalShell>Origocorteza</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Polvo de Originio denso",
+    "desc": "Un polvo fino y denso producido al pulverizar <#item.originiumPowder>Polvo de Originio</> y <#item.plantMossPowder3>Polvo de hojarena</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.originiumPowder": {
+    "name": "Polvo de Originio",
+    "desc": "Un polvo producido al pulverizar <#item.originium>Mineral de Originio</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.plantMoss1": {
+    "name": "Floracina",
+    "desc": "La Floracina es una planta que crece en el área silvestre y es conocida por sus flores de colores brillantes.\nLa planta también puede cultivarse con instalaciones de la Fábrica del CAI o <#item.portSoilMoss1>Terrenos de floracina</>.\nLa planta puede usarse para fabricar <#sys.tacticalItem>items tácticos</> u otros materiales."
+  },
+  "item.plantMoss3": {
+    "name": "Hojarena",
+    "desc": "Una planta que se caracteriza por sus hojas ásperas y granuladas. Se puede recolectar en las tierras salvajes.\nLa planta se puede cultivar con las instalaciones de la Fábrica del CAI o en <#item.portSoilMoss3>Terrenos de hojarena</>.\nTambién se puede procesar con las instalaciones de la Fábrica del CAI. Por ejemplo, se puede triturar para producir <#item.plantMossPowder3>Polvo de hojarena</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Polvo de floracina",
+    "desc": "Un polvo <#sys.manualCraft>fabricado</> o triturado a partir de <#item.plantMoss1>Floracinas</> con instalaciones de la Fábrica del CAI.\nÚsalo para restaurar los PV de un operador. También puede equiparse como <#sys.tacticalItem>item táctico</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Polvo de hojarena",
+    "desc": "Un polvo producido al pulverizar <#item.plantMoss3>Hojarenas</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales, normalmente mediante molienda."
+  },
+  "item.plantMossSeed1": {
+    "name": "Semilla de floracina",
+    "desc": "Semillas recolectadas de <#item.plantMoss1>Floracinas</> mediante instalaciones de la Fábrica del CAI.\nLas Semillas de floracina pueden plantarse y cultivarse en instalaciones de la Fábrica del CAI para obtener Floracinas. Alternativamente, Semilla de floracina y <#item.carbonMtl>Carbono</> pueden usarse en la pantalla de <#sys.manualCraftField>Cultivo</> para fabricar <#item.portSoilMoss1>Terrenos de floracina</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Semilla de hojarena",
+    "desc": "Semillas recolectadas de <#item.plantMoss3>Hojarenas</> con instalaciones de la Fábrica del CAI.\nLas Semillas de hojarena pueden plantarse y cultivarse en instalaciones de la Fábrica del CAI para obtener Hojarenas.\nAlternativamente, Semilla de hojarena y <#item.carbonMtl>Carbono</> pueden usarse en la pantalla de <#sys.manualCraftField>Cultivo</> para fabricar <#item.portSoilMoss3>Terrenos de hojarena</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Hebilla de fuego",
+    "desc": "La Hebilla de fuego es una planta que crece en el área silvestre y es conocida por sus flores excepcionalmente brillantes.\nExiste la posibilidad de obtener Hebillas de fuego al cosechar <#item.plantMoss1>Floracinas</> en las tierras salvajes.\nPueden usarse para fabricar <#sys.tacticalItem>items tácticos</>."
+  },
+  "item.plantSp1": {
+    "name": "Centeno de caña",
+    "desc": "El Centeno de caña es un tipo de cultivo plantable que se recolecta en las tierras salvajes. También puede obtenerse cultivando <#item.portSoilSp1>Terrenos de centeno de caña</>.\nPuede usarse directamente para fabricar <#sys.manualCraftDish>Comida & medicinas buenas</> (C&M buena)."
+  },
+  "item.plantSpSeed1": {
+    "name": "Semilla de centeno de caña",
+    "desc": "Semillas producidas al recolectar semillas de plantas de <#item.plantSp1>Centeno de caña</> con instalaciones de la Fábrica del CAI.\nToma Semilla de centeno de caña y <#item.carbonMtl>Carbono</>, luego ve a la pantalla de <#sys.manualCraftField>Cultivo</> para fabricarlas en Terrenos de <#item.portSoilSp1>centeno de caña</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Terreno de aketina",
+    "desc": "Los Terrenos de aketina pueden cultivarse en la Granja ecológica para obtener <#item.bbflower>Aketina</>.\nEstos terrenos pueden fabricarse usando <#item.bbflowerSeed>Semilla de aketina</> y <#item.carbonMtl>Carbono</> en la pantalla de Cultivo.\nLa cosecha de un terreno completamente desarrollado proporciona una gran cantidad de Aketina."
+  },
+  "item.portSoilMoss1": {
+    "name": "Terreno de floracina",
+    "desc": "Los Terrenos de floracina pueden cultivarse en la Granja ecológica para obtener <#item.plantMoss1>Floracina</>.\nEstos terrenos pueden fabricarse usando <#item.plantMossSeed1>Semilla de floracina</> y <#item.carbonMtl>Carbono</> en la pantalla de <#sys.manualCraftField>Cultivo</>.\nCosechar un terreno completamente crecido tiene mayor probabilidad de obtener <#item.plantMossSpc1>Hebilla de fuego</> adicional."
+  },
+  "item.portSoilMoss3": {
+    "name": "Terreno de hojarena",
+    "desc": "Los Terrenos de hojarena pueden cultivarse en la Granja ecológica para obtener <#item.plantMoss3>Hojarena</>.\nEstas terrenos pueden fabricarse usando <#item.plantMossSeed3>Semilla de hojarena</> y <#item.carbonMtl>Carbono</> en la pantalla de Cultivo.\nCosechar un terreno completamente crecida proporciona abundantes Hojarenas."
+  },
+  "item.portSoilSp1": {
+    "name": "Terreno de centeno de caña",
+    "desc": "Las Terrenos de centeno de caña pueden cultivarse en la Granja ecológica para obtener <#item.plantSp1>Centeno de caña</>.\nEstas terrenos pueden fabricarse usando <#item.plantSpSeed1>Semilla de centeno de caña</> y <#item.carbonMtl>Carbono</> en la pantalla de Cultivo.\nCosechar un terreno completamente crecida proporciona abundante Centeno de caña."
+  },
+  "item.procBattery1": {
+    "name": "Batería de CB del Valle",
+    "desc": "Una batería producida al empaquetar <#item.glassCmpt>Pieza de amatista</> y <#item.originiumPowder>Polvo de Originio</> con instalaciones de la Fábrica del CAI.\nPuede usarse para suministrar energía, cargar instalaciones o comerciarse en varios puestos de avanzada."
+  },
+  "item.procBomb": {
+    "name": "Explosivo industrial",
+    "desc": "Los Explosivos industriales son un tipo de explosivo que puede producirse.\nSe fabrican usando la Unidad de empaquetado, una instalación de la Fábrica del CAI. Los materiales requeridos son <#item.glassCmpt>Pieza de amatista</> y <#item.bbflowerPowder>Polvo de aketina</>.\nUsa Explosivos industriales para infligir DAÑ a enemigos o derribar objetos destructibles dentro del radio de explosión."
+  },
+  "item.quartzGlass": {
+    "name": "Fibra de amatista",
+    "desc": "Una fibra producida al refinar <#item.quartzSand>Mineral de amatista</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.quartzPowder": {
+    "name": "Polvo de amatista",
+    "desc": "Un polvo producido al pulverizar <#item.quartzGlass>Fibra de amatista</> con instalaciones de la Fábrica del CAI.\nPuede usarse para producir otros materiales."
+  },
+  "item.quartzSand": {
+    "name": "Mineral de amatista",
+    "desc": "Un mineral que se puede recolectar en puntos de minería de amatista en el Área silvestre.\nTambién se puede procesar en las instalaciones de la Fábrica del CAI. Por ejemplo, se puede refinar para producir <#item.quartzGlass>Fibra de amatista</>."
+  },
+  "sys.manualCraft": {
+    "name": "Fabricación",
+    "desc": "Abre el panel de la Mochila para acceder a la pantalla de Fabricación. Diferentes materias primas pueden fabricarse en objetos útiles.\nPor ejemplo, la <#item.plantMoss1>Floracina</> puede convertirse en <#item.plantMossSeed1>Polvo de floracina</> para restaurar PV."
+  },
+  "sys.manualCraftDish": {
+    "name": "Comida y medicinas buenas",
+    "desc": "La Comida & medicinas buena (C&M buena) pueden usarse como <#sys.tacticalItem>items tácticos</>. \nA diferencia de la <#sys.manualCraftTonic>Alimentos y medicamentos de emergencia</>, solo pueden fabricarse mediante <#sys.manualCraft>Fabricación</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Cultivo",
+    "desc": "La <#sys.manualCraft>Fabricación</> te permite crear parcelas de cultivo con semillas y <#item.carbonMtl>Carbono</>. Los terrenos de cultivo se pueden colocar y cultivar en la Granja ecológica."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Alimentos y medicamentos de emergencia",
+    "desc": "Los Alimentos y medicamentos de emergencia (C&M de emerg.) se pueden usar como <#sys.tacticalItem>items tácticos</>.\nSe pueden obtener mediante <#sys.manualCraft>Fabricación</> o usando instalaciones de la Fábrica del CAI."
+  },
+  "sys.tacticalItem": {
+    "name": "Items tácticos",
+    "desc": "Los items tácticos son objetos que pueden usarse durante el combate para brindar diversos beneficios e incrementos. Cada item táctico tiene distintos criterios de activación y límites de uso.\nCada operador puede equipar 1 item táctico. Durante la batalla, cuando se cumplan los criterios de activación del item táctico, el operador usará automáticamente su item táctico equipado.\nTras agotar todos los usos del item táctico en una sola batalla, al cabo de un tiempo se restaurará un uso más."
+  }
+}

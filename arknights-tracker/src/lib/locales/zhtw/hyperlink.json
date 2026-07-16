@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "高壓隔離網",
+    "desc": "在啟動狀態中的高壓隔離網是無法通過的。\n沿著電線找到其對應的開關，即可關閉高壓隔離網，通過其封鎖的路段。"
+  },
+  "adv.eswitch": {
+    "name": "受擊裝置",
+    "desc": "受擊裝置在受到攻擊或是爆炸衝擊後，會改變運作狀態。\n通常用來關閉<#adv.electricFence>高壓隔離網</>或啟用<#adv.jumpMachine>彈射裝置</>。"
+  },
+  "adv.jumpMachine": {
+    "name": "彈射裝置",
+    "desc": "主控幹員可使用彈射裝置進行一次長距離的跳躍，能夠抵達普通跳躍無法到達的高處。\n在通電時，彈射裝置為可用狀態。此時操控主控幹員站立在裝置上方並進行跳躍即可使用。"
+  },
+  "adv.powerTerminal": {
+    "name": "供電終端",
+    "desc": "作為電路末端的終端設備，可接入電網為其他設備供電。\n供電終端通常為大門、開關等設備供電。使用中繼器為供電終端運輸電力後，即可控制大門或開關。"
+  },
+  "ba.absorb": {
+    "name": "吸收",
+    "desc": "狀態以特殊的方式提前結束。<@ba.key>吸收</>不算作<#ba.consume>消耗</>。"
+  },
+  "ba.airborne": {
+    "name": "物理異常 - 擊飛",
+    "desc": "對敵人造成<#ba.noguard>破防</>，如果敵人已經<#ba.noguard>破防</>，則疊加一層<#ba.noguard>破防</>，造成<@ba.phy>物理傷害</>並累積<@ba.poise>失衡值</>。"
+  },
+  "ba.burning": {
+    "name": "法術異常 - 燃燒",
+    "desc": "<@ba.burning>燃燒</>狀態下，敵人持續受到<@ba.fire>灼熱傷害</>。\n<@ba.burning>燃燒</> = 其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.fireinflict>灼熱附著</>"
+  },
+  "ba.burningonchar": {
+    "name": "幹員受到燃燒",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.fireinflict>灼熱附著</>。\n達到4層時，幹員會進入<@ba.burning>燃燒</>狀態：一段時間內，持續受到無視防禦力的<@ba.fire>灼熱傷害</>。"
+  },
+  "ba.combo": {
+    "name": "連擊",
+    "desc": "全隊的下個戰技或終結技的傷害提高，對戰技的提高幅度更大，觸發後效果清空。同類效果可以疊加，但效果有衰減。"
+  },
+  "ba.conduct": {
+    "name": "法術異常 - 導電",
+    "desc": "<@ba.conduct>導電</>狀態下，敵人受到的<#ba.spelldmg>法術傷害</>提高。\n<@ba.conduct>導電</> = 其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.pulseinflict>電磁附著</>"
+  },
+  "ba.conductonchar": {
+    "name": "幹員受到導電",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.pulseinflict>電磁附著</>。\n達到4層時，幹員會進入<@ba.conduct>導電</>狀態：短暫暈眩，且一段時間內，受到的<#ba.spelldmg>法術傷害</>提高。"
+  },
+  "ba.consume": {
+    "name": "狀態消耗",
+    "desc": "狀態以特殊的方式提前結束（如<#ba.crush>猛擊</>消耗<#ba.noguard>破防</>狀態，<#ba.burning>燃燒</>消耗<#ba.spellinflict>法術附著</>狀態）。"
+  },
+  "ba.corrupt": {
+    "name": "法術異常 - 腐蝕",
+    "desc": "<@ba.corrupt>腐蝕</>狀態下，敵人的所有抗性逐漸下降。\n<@ba.corrupt>腐蝕</> = 其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>）+ <@ba.naturalinflict>自然附著</>"
+  },
+  "ba.corruptonchar": {
+    "name": "幹員受到腐蝕",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.naturalinflict>自然附著</>。\n達到4層時，幹員會進入<@ba.corrupt>腐蝕</>狀態：一段時間內無法衝刺，且移動速度降低。"
+  },
+  "ba.crush": {
+    "name": "物理異常 - 猛擊",
+    "desc": "對敵人造成<#ba.noguard>破防</>，如果敵人已經<#ba.noguard>破防</>，則會<#ba.consume>消耗</>所有<#ba.noguard>破防</>層數並造成大量<@ba.phy>物理傷害</>。"
+  },
+  "ba.crystbreak": {
+    "name": "碎冰",
+    "desc": "對處於<#ba.frozen>凍結</>狀態的敵人施加<#ba.noguard>破防</>或<#ba.physicalstatus>物理異常</>時觸發，<#ba.consume>消耗</>目標的<#ba.frozen>凍結</>狀態，並對其造成大量<@ba.pd>物理傷害</>。"
+  },
+  "ba.crystburst": {
+    "name": "法術爆發 - 寒冷",
+    "desc": "<#ba.crystinflict>寒冷附著</> + <#ba.crystinflict>寒冷附著</>會觸發<@ba.cryst>寒冷爆發</>，對敵人造成一定<@ba.cryst>寒冷傷害</>。"
+  },
+  "ba.crystenhance": {
+    "name": "寒冷增幅",
+    "desc": "一定時間內目標造成的<@ba.cryst>寒冷傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.crystinflict": {
+    "name": "法術附著 - 寒冷",
+    "desc": "<@ba.crystinflict>寒冷附著</>是一種<#ba.spellinflict>法術附著</>。\n<@ba.crystinflict>寒冷附著</>最多疊加4層，疊加時會觸發<#ba.crystburst>寒冷爆發</>。\n其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.crystinflict>寒冷附著</> = <#ba.frozen>凍結</>"
+  },
+  "ba.crystonchar": {
+    "name": "幹員受到寒冷附著",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.crystinflict>寒冷附著</>。\n達到4層時，幹員會進入<@ba.frozen>凍結</>狀態：一段時間內無法行動。"
+  },
+  "ba.crystvul": {
+    "name": "寒冷脆弱",
+    "desc": "一定時間內目標受到的<@ba.cryst>寒冷傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.dispel": {
+    "name": "淨化",
+    "desc": "清除幹員的特定異常狀態。"
+  },
+  "ba.dot": {
+    "name": "持續傷害",
+    "desc": "持續傷害無法觸發暴擊。"
+  },
+  "ba.enhance": {
+    "name": "增幅",
+    "desc": "一定時間內目標造成的特定屬性傷害提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.fireburst": {
+    "name": "法術爆發 - 灼熱",
+    "desc": "<#ba.fireinflict>灼熱附著</> + <#ba.fireinflict>灼熱附著</>會觸發<@ba.fire>灼熱爆發</>，對敵人造成一定<@ba.fire>灼熱傷害</>。"
+  },
+  "ba.fireenhance": {
+    "name": "灼熱增幅",
+    "desc": "一定時間內目標造成的<@ba.fire>灼熱傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.fireinflict": {
+    "name": "法術附著 - 灼熱",
+    "desc": "<@ba.fireinflict>灼熱附著</>是一種<#ba.spellinflict>法術附著</>。\n<@ba.fireinflict>灼熱附著</>最多疊加4層，疊加時會觸發<#ba.fireburst>灼熱爆發</>。\n其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.fireinflict>灼熱附著</> = <#ba.burning>燃燒</>"
+  },
+  "ba.fireonchar": {
+    "name": "幹員受到灼熱附著",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.fireinflict>灼熱附著</>。\n達到4層時，幹員會進入<@ba.burning>燃燒</>狀態：一段時間內，持續受到無視防禦力的<@ba.fire>灼熱傷害</>。"
+  },
+  "ba.firevul": {
+    "name": "灼熱脆弱",
+    "desc": "一定時間內目標受到的<@ba.fire>灼熱傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.fracture": {
+    "name": "物理異常 - 碎甲",
+    "desc": "對敵人造成<#ba.noguard>破防</>，如果敵人已經<#ba.noguard>破防</>，則會<#ba.consume>消耗</>所有<#ba.noguard>破防</>層數，造成<@ba.phy>物理傷害</>，並使其在一段時間內受到的<@ba.pd>物理傷害</>提高。"
+  },
+  "ba.frozen": {
+    "name": "法術異常 - 凍結",
+    "desc": "<@ba.frozen>凍結</>狀態下，敵人無法行動，此時若受到<#ba.noguard>破防</>或<#ba.physicalstatus>物理異常</>，會觸發<#ba.crystbreak>碎冰</>。\n<@ba.frozen>凍結</> = 其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.crystinflict>寒冷附著</>"
+  },
+  "ba.frozenonchar": {
+    "name": "幹員受到凍結",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.crystinflict>寒冷附著</>。\n達到4層時，幹員會進入<@ba.frozen>凍結</>狀態：一段時間內無法行動。"
+  },
+  "ba.guard": {
+    "name": "庇護",
+    "desc": "一定時間內目標受到的傷害降低（數值代表降低的幅度）。同類效果會取效果最高值。"
+  },
+  "ba.knockdown": {
+    "name": "物理異常 - 倒地",
+    "desc": "對敵人造成<#ba.noguard>破防</>，如果敵人已經<#ba.noguard>破防</>，則疊加一層<#ba.noguard>破防</>，造成<@ba.phy>物理傷害</>並累積<@ba.poise>失衡值</>。"
+  },
+  "ba.lastcombo": {
+    "name": "重擊",
+    "desc": "重擊是幹員普通攻擊的最後一段。主控幹員的重擊命中敵人時，會額外累積<@ba.poise>失衡值</>，並回復一定技力。"
+  },
+  "ba.naturalburst": {
+    "name": "法術爆發 - 自然",
+    "desc": "<#ba.naturalinflict>自然附著</> + <#ba.naturalinflict>自然附著</>會觸發<@ba.natur>自然爆發</>，對敵人造成一定<@ba.natur>自然傷害</>。"
+  },
+  "ba.naturalenhance": {
+    "name": "自然增幅",
+    "desc": "一定時間內目標造成的<@ba.natur>自然傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.naturalinflict": {
+    "name": "法術附著 - 自然",
+    "desc": "<@ba.naturalinflict>自然附著</>是一種<#ba.spellinflict>法術附著</>。\n<@ba.naturalinflict>自然附著</>最多疊加4層，疊加時會觸發<#ba.naturalburst>自然爆發</>。\n其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>）+ <@ba.naturalinflict>自然附著</> = <#ba.corrupt>腐蝕</>"
+  },
+  "ba.naturalonchar": {
+    "name": "幹員受到自然附著",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.naturalinflict>自然附著</>。\n達到4層時，幹員會進入<@ba.corrupt>腐蝕</>狀態：一段時間內無法衝刺，且移動速度降低。"
+  },
+  "ba.naturalvul": {
+    "name": "自然脆弱",
+    "desc": "一定時間內目標受到的<@ba.natur>自然傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.noguard": {
+    "name": "破防",
+    "desc": "當敵人首次受到<#ba.physicalstatus>物理異常</>時，不會直接觸發異常效果，而是進入<@ba.noguard>破防</>狀態。\n<@ba.phy>破防</>狀態可以與<#ba.airborne>擊飛</>和<#ba.knockdown>倒地</>疊加（最多4層），且會被<#ba.crush>猛擊</>和<#ba.fracture>碎甲</><#ba.consume>消耗</>。"
+  },
+  "ba.originium": {
+    "name": "源石結晶",
+    "desc": "管理員的連攜技會讓敵人附著源石結晶，使其無法行動。"
+  },
+  "ba.physicalenhance": {
+    "name": "物理增幅",
+    "desc": "一定時間內目標造成的<@ba.pd>物理傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.physicalstatus": {
+    "name": "物理異常",
+    "desc": "物理異常是藉由物理方式對敵人施加的異常效果，包含<#ba.airborne>擊飛</>、<#ba.knockdown>倒地</>、<#ba.crush>猛擊</>、<#ba.fracture>碎甲</>。"
+  },
+  "ba.physicalvul": {
+    "name": "物理脆弱",
+    "desc": "一定時間內目標受到的<@ba.pd>物理傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.poiseknot": {
+    "name": "失衡節點",
+    "desc": "部分強大的敵人存在<@ba.poise>失衡節點</>。<@ba.poise>失衡值</>累積到<@ba.poise>失衡節點</>時，會打斷敵人行動並讓敵人踉蹌。"
+  },
+  "ba.pulseburst": {
+    "name": "法術爆發 - 電磁",
+    "desc": "<#ba.pulseinflict>電磁附著</> + <#ba.pulseinflict>電磁附著</>會觸發<@ba.pulse>電磁爆發</>，對敵人造成一定<@ba.pulse>電磁傷害</>。"
+  },
+  "ba.pulseenhance": {
+    "name": "電磁增幅",
+    "desc": "一定時間內目標造成的<@ba.pulse>電磁傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.pulseinflict": {
+    "name": "法術附著 - 電磁",
+    "desc": "<@ba.pulseinflict>電磁附著</>是一種<#ba.spellinflict>法術附著</>。\n<@ba.pulseinflict>電磁附著</>最多疊加4層，疊加時會觸發<#ba.pulseburst>電磁爆發</>。\n其他<#ba.spellinflict>法術附著</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+ <@ba.pulseinflict>電磁附著</> = <#ba.conduct>導電</>"
+  },
+  "ba.pulseonchar": {
+    "name": "幹員受到電磁附著",
+    "desc": "一些敵人的技能會使幹員被施加<@ba.pulseinflict>電磁附著</>。\n達到4層時，幹員會進入<@ba.conduct>導電</>狀態：短暫暈眩，且一段時間內，受到的<#ba.spelldmg>法術傷害</>提高。"
+  },
+  "ba.pulsevul": {
+    "name": "電磁脆弱",
+    "desc": "一定時間內目標受到的<@ba.pulse>電磁傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.return": {
+    "name": "返還技力",
+    "desc": "消耗技力後，達成一定條件時，重新獲得的一部分技力。\n返還技力並不算作「回復技力」，不會觸發回復技力時觸發的效果，且這部分技力消耗時不會獲得終結技能量。"
+  },
+  "ba.rossi": {
+    "name": "爪印斫痕",
+    "desc": "洛西的戰技對敵人造成的特殊效果。受影響的目標會持續受到<@ba.pd>物理傷害</>，並且受到的物理和灼熱傷害會增加。"
+  },
+  "ba.shield": {
+    "name": "護盾",
+    "desc": "護盾可以在持續時間內吸收傷害。部分護盾只會吸收特定類型的傷害。"
+  },
+  "ba.slow": {
+    "name": "緩速",
+    "desc": "一定時間內目標的移動速度降低（數值代表降低的幅度）。同類效果會取效果最高值。"
+  },
+  "ba.speedup": {
+    "name": "加速",
+    "desc": "一定時間內目標的移動速度提高（數值代表提高的幅度）。同類效果可以疊加，直到達到上限。"
+  },
+  "ba.spellburst": {
+    "name": "法術爆發",
+    "desc": "<@ba.key>法術爆發</>是同類型的<#ba.spellinflict>法術附著</>疊加時產生的傷害效果，包含<#ba.fireburst>灼熱爆發</>、<#ba.pulseburst>電磁爆發</>、<#ba.crystburst>寒冷爆發</>、<#ba.naturalburst>自然爆發</>。"
+  },
+  "ba.spelldmg": {
+    "name": "傷害類型",
+    "desc": "傷害分為<@ba.pd>物理傷害</>、<@ba.key>法術傷害</>、<@ba.ether>超域傷害</>。\n其中，<@ba.key>法術傷害</>又分為<@ba.fire>灼熱傷害</>、<@ba.pulse>電磁傷害</>、<@ba.cryst>寒冷傷害</>、<@ba.natur>自然傷害</>。"
+  },
+  "ba.spellenhance": {
+    "name": "法術增幅",
+    "desc": "一定時間內目標造成的<#ba.spelldmg>法術傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.spellinflict": {
+    "name": "法術附著",
+    "desc": "<@ba.key>法術附著</>是一種附著在敵人身上的法術標記，包括<#ba.fireinflict>灼熱附著</>、<#ba.pulseinflict>電磁附著</>、<#ba.crystinflict>寒冷附著</>、<#ba.naturalinflict>自然附著</>。\n同類型的<@ba.key>法術附著</>可以疊加，最多4層。"
+  },
+  "ba.spellinflictonchar": {
+    "name": "幹員受到法術附著/異常",
+    "desc": "一些敵人的技能會使幹員被施加<#ba.burningonchar>灼熱附著</>、<#ba.conductonchar>電磁附著</>、<#ba.frozenonchar>寒冷附著</>或<#ba.corruptonchar>自然附著</>。\n達到4層時，會分別讓幹員受到<#ba.burningonchar>燃燒</>、<#ba.conductonchar>導電</>、<#ba.frozenonchar>凍結</>或<#ba.corruptonchar>腐蝕</>。"
+  },
+  "ba.spellstatus": {
+    "name": "法術異常",
+    "desc": "<@ba.key>法術異常</>是透過法術方式對敵人施加的異常效果，包含<#ba.burning>燃燒</>、<#ba.conduct>導電</>、<#ba.frozen>凍結</>、<#ba.corrupt>腐蝕</>。"
+  },
+  "ba.spellvul": {
+    "name": "法術脆弱",
+    "desc": "一定時間內目標受到的<#ba.spelldmg>法術傷害</>提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.statuslevel": {
+    "name": "異常等級",
+    "desc": "異常等級等於觸發<#ba.physicalstatus>物理異常</>或<#ba.spellstatus>法術異常</>時<#ba.consume>消耗</>的<#ba.noguard>破防</>或<#ba.spellinflict>法術附著</>層數（最高4級）。<#ba.statuslevel>異常等級</>越高，<#ba.physicalstatus>物理異常</>和<#ba.spellstatus>法術異常</>的效果就越強。"
+  },
+  "ba.vulnerable": {
+    "name": "脆弱",
+    "desc": "一定時間內目標受到的特定屬性傷害提高（數值代表提高的幅度）。同類效果可以疊加。"
+  },
+  "ba.weak": {
+    "name": "虛弱",
+    "desc": "一定時間內目標造成的傷害降低（數值代表降低的幅度）。同類效果會以非線性方式疊加。"
+  },
+  "fac.hub": {
+    "name": "協議核心",
+    "desc": "協議核心是集成工業系統的中樞設備，承擔了諸多功能，是建設工業的核心。\n在協議核心所在的集成核心區域內，可以進行倉儲管理。"
+  },
+  "item.bbflower": {
+    "name": "酮化灌木",
+    "desc": "一種可在野外採集的植物，內含易燃易爆成分。\n可使用工業設備培育獲得，或在<#item.portSoilBbflower>酮化灌木田塊</>中種植獲得。\n也可使用工業設備為其加工，比如在粉碎後得到<#item.bbflowerPowder>酮化灌木粉末</>。"
+  },
+  "item.bbflowerPowder": {
+    "name": "酮化灌木粉末",
+    "desc": "由<#item.bbflower>酮化灌木</>透過工業設備粉碎後得到的粉末。\n可用於其他材料合成。"
+  },
+  "item.bbflowerSeed": {
+    "name": "酮化樹種",
+    "desc": "由<#item.bbflower>酮化灌木</>透過工業設備採種得到的種子。\n在工業設備中種植酮化樹種，可獲得酮化灌木。\n將酮化樹種與<#item.carbonMtl>碳塊</>一起進行<#sys.manualCraftField>種植調配</>，可以獲得<#item.portSoilBbflower>酮化灌木田塊</>。"
+  },
+  "item.bottledRecHp1": {
+    "name": "蕎癒膠囊",
+    "desc": "由<#item.plantMossPowder1>蕎花粉末</>與<#item.glassBottle>紫晶質瓶</>透過<#sys.manualCraft>簡易製作</>或工業設備灌裝得到的膠囊。\n使用後，可以回復幹員的生命值。也可作為<#sys.tacticalItem>戰術物品</>裝備。"
+  },
+  "item.carbonMtl": {
+    "name": "碳塊",
+    "desc": "由<#item.plantMoss1>蕎花</>透過工業設備精煉得來的碳材料。\n是<#sys.manualCraftField>種植調配</>田塊必不可少的材料，也可用於其他材料的合成。"
+  },
+  "item.crystalShell": {
+    "name": "晶體外殼",
+    "desc": "由<#item.originium>源礦</>透過工業設備精煉後得到的外殼。\n可用於其他材料合成。"
+  },
+  "item.glassBottle": {
+    "name": "紫晶質瓶",
+    "desc": "由<#item.quartzGlass>紫晶纖維</>透過工業設備塑形後得到的瓶子。\n可用於其他材料合成。"
+  },
+  "item.glassCmpt": {
+    "name": "紫晶零件",
+    "desc": "由<#item.quartzGlass>紫晶纖維</>透過工業設備配件後得到的零件。\n可用於其他材料合成。"
+  },
+  "item.ironEnrPowder": {
+    "name": "緻密藍鐵粉末",
+    "desc": "由<#item.ironPowder>藍鐵粉末</>與<#item.plantMossPowder3>砂葉粉末</>透過工業設備研磨後得到的細粉。\n可用於其他材料合成。"
+  },
+  "item.ironNugget": {
+    "name": "藍鐵塊",
+    "desc": "由<#item.ironOre>藍鐵礦</>透過工業設備精煉後得到的金屬塊。\n可用於其他材料合成。"
+  },
+  "item.ironOre": {
+    "name": "藍鐵礦",
+    "desc": "一種可在野外藍鐵礦礦點採集的礦石。\n可使用工業設備為其加工，比如在精煉後得到<#item.ironNugget>藍鐵塊</>。"
+  },
+  "item.ironPowder": {
+    "name": "藍鐵粉末",
+    "desc": "由<#item.ironNugget>藍鐵塊</>透過工業設備粉碎後得到的粉末。\n可用於其他材料合成。"
+  },
+  "item.originium": {
+    "name": "源礦",
+    "desc": "一種可在野外源礦礦點採集的礦石，可用於集成工業系統發電。\n可使用工業設備為其加工，比如在精煉後得到<#item.crystalShell>晶體外殼</>。"
+  },
+  "item.originiumEnrPowder": {
+    "name": "緻密源石粉末",
+    "desc": "由<#item.originiumPowder>源石粉末</>與<#item.plantMossPowder3>砂葉粉末</>透過工業設備研磨後得到的細粉。\n可用於其他材料合成。"
+  },
+  "item.originiumPowder": {
+    "name": "源石粉末",
+    "desc": "由<#item.originium>源礦</>透過工業設備粉碎後得到的粉末。\n可用於其他材料合成。"
+  },
+  "item.plantMoss1": {
+    "name": "蕎花",
+    "desc": "蕎花是一種可在野外採集的豔麗花朵。\n可使用工業設備培育獲得，或在<#item.portSoilMoss1>蕎花田塊</>中種植獲得。\n可用於<#sys.tacticalItem>戰術物品</>製作或其他材料合成。"
+  },
+  "item.plantMoss3": {
+    "name": "砂葉",
+    "desc": "一種可在野外採集的葉片粗糙的植物。\n可使用工業設備培育獲得，或在<#item.portSoilMoss3>砂葉田塊</>中種植獲得。\n也可使用工業設備為其加工，比如在粉碎後得到<#item.plantMossPowder3>砂葉粉末</>。"
+  },
+  "item.plantMossPowder1": {
+    "name": "蕎花粉末",
+    "desc": "由<#item.plantMoss1>蕎花</>透過<#sys.manualCraft>簡易製作</>或工業設備粉碎後得到的粉末。\n使用後，可以回復幹員的生命值。也可作為<#sys.tacticalItem>戰術物品</>裝備。"
+  },
+  "item.plantMossPowder3": {
+    "name": "砂葉粉末",
+    "desc": "由<#item.plantMoss3>砂葉</>透過工業設備粉碎後得到的粉末。\n可用於其他材料合成，常用於研磨。"
+  },
+  "item.plantMossSeed1": {
+    "name": "蕎花種子",
+    "desc": "由<#item.plantMoss1>蕎花</>透過工業設備採種得到的種子。\n在工業設備中種植蕎花種子，可獲得蕎花。或將蕎花種子與<#item.carbonMtl>碳塊</>一起進行<#sys.manualCraftField>種植調配</>，可以獲得<#item.portSoilMoss1>蕎花田塊</>。"
+  },
+  "item.plantMossSeed3": {
+    "name": "砂葉種子",
+    "desc": "由<#item.plantMoss3>砂葉</>透過工業設備採種得到的種子。\n在工業設備中種植砂葉種子，可獲得砂葉。\n將砂葉種子與<#item.carbonMtl>碳塊</>一起進行<#sys.manualCraftField>種植調配</>，可以獲得<#item.portSoilMoss3>砂葉田塊</>。"
+  },
+  "item.plantMossSpc1": {
+    "name": "映火蕎花",
+    "desc": "映火蕎花是一種可在野外採集的特殊豔麗花朵。\n在採集<#item.plantMoss1>蕎花</>時有機率額外獲得映火蕎花。\n可用於<#sys.tacticalItem>戰術物品</>製作。"
+  },
+  "item.plantSp1": {
+    "name": "灰蘆麥",
+    "desc": "灰蘆麥是一種可在野外採集的作物，也可在<#item.portSoilSp1>灰蘆麥田塊</>中種植獲得。\n可直接用於<#sys.manualCraftDish>精製食藥</>的製作。"
+  },
+  "item.plantSpSeed1": {
+    "name": "灰蘆麥種子",
+    "desc": "由<#item.plantSp1>灰蘆麥</>透過工業設備採種後得到的種子。\n將灰蘆麥種子與<#item.carbonMtl>碳塊</>一起進行<#sys.manualCraftField>種植調配</>，可以獲得<#item.portSoilSp1>灰蘆麥田塊</>。"
+  },
+  "item.portSoilBbflower": {
+    "name": "酮化灌木田塊",
+    "desc": "可以在生態種植園中精細化培育以收穫<#item.bbflower>酮化灌木</>的田塊。\n由<#item.bbflowerSeed>酮化樹種</>與<#item.carbonMtl>碳塊</>一起進行種植調配獲得。\n收穫時可獲得大量酮化灌木。"
+  },
+  "item.portSoilMoss1": {
+    "name": "蕎花田塊",
+    "desc": "可以在生態種植園中精細化培育以收穫<#item.plantMoss1>蕎花</>的田塊\n由<#item.plantMossSeed1>蕎花種子</>與<#item.carbonMtl>碳塊</>一起進行<#sys.manualCraftField>種植調配</>獲得。\n收穫時可獲得大量蕎花，且有較高機率額外獲得<#item.plantMossSpc1>映火蕎花</>。"
+  },
+  "item.portSoilMoss3": {
+    "name": "砂葉田塊",
+    "desc": "可以在生態種植園中精細化培育以收穫<#item.plantMoss3>砂葉</>的田塊。\n由<#item.plantMossSeed3>砂葉種子</>與<#item.carbonMtl>碳塊</>一起進行種植調配獲得。\n收穫時可獲得大量砂葉。"
+  },
+  "item.portSoilSp1": {
+    "name": "灰蘆麥田塊",
+    "desc": "可以在生態種植園中精細化培育以收穫<#item.plantSp1>灰蘆麥</>的田塊。\n由<#item.plantSpSeed1>灰蘆麥種子</>與<#item.carbonMtl>碳塊</>一起進行種植調配獲得。\n收穫時可獲得大量灰蘆麥。"
+  },
+  "item.procBattery1": {
+    "name": "低容量谷地電池",
+    "desc": "由<#item.glassCmpt>紫晶零件</>與<#item.originiumPowder>源石粉末</>透過工業設備封裝得到的電池。\n可用於發電、設備蓄能或與據點交易。"
+  },
+  "item.procBomb": {
+    "name": "工業爆炸物",
+    "desc": "工業爆炸物是一種可生產的爆炸物。\n由<#item.glassCmpt>紫晶零件</>與<#item.bbflowerPowder>酮化灌木粉末</>透過工業設備封裝後獲得。\n使用工業爆炸物，可對爆炸範圍內的敵人造成傷害，也可對範圍內可被爆破的物體造成破壞。"
+  },
+  "item.quartzGlass": {
+    "name": "紫晶纖維",
+    "desc": "由<#item.quartzSand>紫晶礦</>透過工業設備精煉後得到的纖維。\n可用於其他材料合成。"
+  },
+  "item.quartzPowder": {
+    "name": "紫晶粉末",
+    "desc": "由<#item.quartzGlass>紫晶纖維</>透過工業設備粉碎後得到的粉末。\n可用於其他材料合成。"
+  },
+  "item.quartzSand": {
+    "name": "紫晶礦",
+    "desc": "一種可在野外紫晶礦礦點採集的礦石。\n可使用工業設備為其加工，比如在精煉後得到<#item.quartzGlass>紫晶纖維</>。"
+  },
+  "sys.manualCraft": {
+    "name": "簡易製作",
+    "desc": "可在背包中進行簡易製作，將不同的原材料製作成各種可用的物品。\n例如可透過簡易製作，將<#item.plantMoss1>蕎花</>製作成能夠回復生命值的<#item.plantMossSeed1>蕎花粉末</>。"
+  },
+  "sys.manualCraftDish": {
+    "name": "精製食藥",
+    "desc": "精製食藥可以作為<#sys.tacticalItem>戰術物品</>使用。\n不同於<#sys.manualCraftTonic>緊急食藥</>，精製食藥只能透過<#sys.manualCraft>簡易製作</>獲得。"
+  },
+  "sys.manualCraftField": {
+    "name": "種植調配",
+    "desc": "在<#sys.manualCraft>簡易製作</>中，可將一些植物的種子與<#item.carbonMtl>碳塊</>調配成對應植物的田塊。\n可以進一步在生態種植區中對田塊種植培育。"
+  },
+  "sys.manualCraftTonic": {
+    "name": "緊急食藥",
+    "desc": "緊急食藥可以作為<#sys.tacticalItem>戰術物品</>使用。\n可透過<#sys.manualCraft>簡易製作</>或工業設備生產獲得。"
+  },
+  "sys.tacticalItem": {
+    "name": "戰術物品",
+    "desc": "戰術物品可以為戰鬥帶來增益效果，每種戰術物品都有不同的生效條件及使用次數上限。\n戰鬥前，可為每名幹員裝備一種戰術物品。戰鬥中，當符合其生效條件時，幹員會自動使用裝備中的戰術物品。\n當戰術物品的使用次數在單次戰鬥中耗盡後，會在一段時間後恢復一次使用次數。"
+  }
+}

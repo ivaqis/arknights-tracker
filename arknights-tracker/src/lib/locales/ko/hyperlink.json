@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "고압 차단망",
+    "desc": "활성화된 고압 차단망을 지나가는 건 상당히 위험합니다.\n전선을 따라가서 대응하는 스위치를 찾으면 고압 차단망을 비활성화할 수 있습니다."
+  },
+  "adv.eswitch": {
+    "name": "반응형 장치",
+    "desc": "반응형 장치는 공격 또는 폭발의 충격을 받으면 일시적으로 작동 상태가 바뀝니다.\n일반적으로 <#adv.electricFence>고압 차단망</>을 비활성화하거나 <#adv.jumpMachine>점프형 장치</>를 작동하는 데 사용됩니다."
+  },
+  "adv.jumpMachine": {
+    "name": "점프형 장치",
+    "desc": "장거리 점프를 할 수 있게 만드는 장치입니다. 이를 잘 이용하면 일반 점프로는 갈 수 없는 높은 곳까지 올라갈 수 있습니다.\n점프형 장치에 전원을 연결한 다음, 장치 위에서 점프하면 일반 점프보다 훨씬 더 멀리 점프할 수 있습니다."
+  },
+  "adv.powerTerminal": {
+    "name": "전력 단말기",
+    "desc": "전기 회로의 끝부분에 있는 설비로, 전력망과 연결하여 많은 설비에 전력을 공급할 수 있습니다.\n전력 단말기는 대문이나 스위치 같은 설비에 전력을 공급하며, 중계기를 사용해 전력 단말기에 전력을 공급하면 대문 혹은 스위치를 제어할 수 있습니다."
+  },
+  "ba.absorb": {
+    "name": "흡수",
+    "desc": "특정 상태는 특별한 상호작용으로 일찍 사라질 수 있습니다. <@ba.key>흡수</>는 <#ba.consume>소모</>로 간주되지 않습니다."
+  },
+  "ba.airborne": {
+    "name": "물리 이상 - 띄우기",
+    "desc": "적에게 <#ba.noguard>방어 불능</> 피해를 줍니다. <#ba.noguard>방어 불능</> 상태의 적이라면, <#ba.noguard>방어 불능</> 1스택을 쌓고, <@ba.phy>물리 피해</>를 주며 <@ba.poise>불균형치</>를 쌓습니다."
+  },
+  "ba.burning": {
+    "name": "아츠 이상 - 연소",
+    "desc": "<@ba.burning>연소</> 상태에서 적은 지속적으로 <@ba.fire>열기 피해</>를 받습니다.\n<@ba.burning>연소</> = 기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>열기 부착</>"
+  },
+  "ba.burningonchar": {
+    "name": "오퍼레이터의 연소 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.fireinflict>열기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.burning>연소</> 상태에 들어가며, 일정 시간 동안 지속적으로 방어력을 무시하는 <@ba.fire>열기 피해</>를 받습니다."
+  },
+  "ba.combo": {
+    "name": "연타",
+    "desc": "팀 전체의 다음 배틀 스킬 혹은 궁극기의 피해를 증가시킵니다. 증가 폭은 배틀 스킬이 궁극기보다 더 크고, 효과가 발동하면 사라집니다. 같은 종류의 효과를 획득할 경우, 효과가 중첩되는 대신 증가량이 점차 감소합니다."
+  },
+  "ba.conduct": {
+    "name": "아츠 이상 - 감전",
+    "desc": "<@ba.conduct>감전</> 상태에서는 적이 받는 <#ba.spelldmg>아츠 피해</>가 증가합니다.\n<@ba.conduct>감전</> = 다른 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>전기 부착</>"
+  },
+  "ba.conductonchar": {
+    "name": "오퍼레이터의 감전 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.pulseinflict>전기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.conduct>감전</> 상태에 들어가며, 일시적으로 기절하고 일정 시간 동안 받는 <#ba.spelldmg>아츠 피해</>가 증가합니다."
+  },
+  "ba.consume": {
+    "name": "상태 소모",
+    "desc": "특정 상태는 특별한 상호작용으로 일찍 사라질 수 있습니다. (예를 들어 <#ba.crush>강타</>는 <#ba.noguard>방어 불능</> 상태를, <#ba.burning>연소</>는 <#ba.spellinflict>아츠 부착</> 상태를 소모합니다.)"
+  },
+  "ba.corrupt": {
+    "name": "아츠 이상 - 부식",
+    "desc": "<@ba.corrupt>부식</> 상태에서는 적의 모든 저항이 점차 감소합니다.\n<@ba.corrupt>부식</> = 다른 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>자연 부착</>"
+  },
+  "ba.corruptonchar": {
+    "name": "오퍼레이터의 부식 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.naturalinflict>자연 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.corrupt>부식</> 상태에 들어가며, 일정 시간 동안 돌진을 사용할 수 없게 되고 이동 속도가 감소합니다."
+  },
+  "ba.crush": {
+    "name": "물리 이상 - 강타",
+    "desc": "적에게 <#ba.noguard>방어 불능</> 피해를 줍니다. <#ba.noguard>방어 불능</> 상태의 적이라면, 모든 <#ba.noguard>방어 불능</> 스택 수치를 <#ba.consume>소모</>하고, 대량의 <@ba.phy>물리 피해</>를 줍니다."
+  },
+  "ba.crystbreak": {
+    "name": "쇄빙",
+    "desc": "<#ba.frozen>동결</> 상태의 적에게 <#ba.noguard>방어 불능</> 혹은 <#ba.physicalstatus>물리 이상</> 효과를 부여하면 발동합니다. 목표의 <#ba.frozen>동결</> 상태를 <#ba.consume>소모</>하고 대량의 <@ba.pd>물리 피해</>를 줍니다."
+  },
+  "ba.crystburst": {
+    "name": "아츠 폭발 - 냉기",
+    "desc": "<#ba.crystinflict>냉기 부착</> + <#ba.crystinflict>냉기 부착</> = <@ba.cryst>냉기 폭발</>, 적에게 일정 <@ba.cryst>냉기 피해</>를 줍니다."
+  },
+  "ba.crystenhance": {
+    "name": "냉기 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <@ba.cryst>냉기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.crystinflict": {
+    "name": "아츠 부착 - 냉기",
+    "desc": "<@ba.crystinflict>냉기 부착</>은 <#ba.spellinflict>아츠 부착</>의 한 종류입니다.\n<@ba.crystinflict>냉기 부착</>은 최대 4스택까지 쌓을 수 있으며, 중첩 시 <#ba.crystburst>냉기 폭발</>이 발동합니다.\n기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>냉기 부착</> = <#ba.frozen>동결</>"
+  },
+  "ba.crystonchar": {
+    "name": "오퍼레이터의 냉기 부착 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.crystinflict>냉기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.frozen>동결</> 상태에 들어가며, 일정 시간 동안 움직일 수 없게 됩니다."
+  },
+  "ba.crystvul": {
+    "name": "냉기 취약",
+    "desc": "일정 시간 동안 목표가 받는 <@ba.cryst>냉기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.dispel": {
+    "name": "정화",
+    "desc": "오퍼레이터의 특정 이상 효과를 제거합니다."
+  },
+  "ba.dot": {
+    "name": "지속 피해",
+    "desc": "지속 피해는 치명타가 발생하지 않습니다."
+  },
+  "ba.enhance": {
+    "name": "증폭",
+    "desc": "일정 시간 동안 목표가 주는 특정 속성의 피해가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.fireburst": {
+    "name": "아츠 폭발 - 열기",
+    "desc": "<#ba.fireinflict>열기 부착</> + <#ba.fireinflict>열기 부착</> = <@ba.fire>열기 폭발</>, 적에게 일정 <@ba.fire>열기 피해</>를 줍니다."
+  },
+  "ba.fireenhance": {
+    "name": "열기 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <@ba.fire>열기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.fireinflict": {
+    "name": "아츠 부착 - 열기",
+    "desc": "<@ba.fireinflict>열기 부착</>은 <#ba.spellinflict>아츠 부착</>의 한 종류입니다.\n<@ba.fireinflict>열기 부착</>은 최대 4스택까지 쌓을 수 있으며, 중첩 시 <#ba.fireburst>열기 폭발</>이 발동합니다.\n기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>열기 부착</> = <#ba.burning>연소</>"
+  },
+  "ba.fireonchar": {
+    "name": "오퍼레이터의 열기 부착 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.fireinflict>열기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.burning>연소</> 상태에 들어가며, 일정 시간 동안 지속적으로 방어력을 무시하는 <@ba.fire>열기 피해</>를 받습니다."
+  },
+  "ba.firevul": {
+    "name": "열기 취약",
+    "desc": "일정 시간 동안 목표가 받는 <@ba.fire>열기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.fracture": {
+    "name": "물리 이상 - 갑옷 파괴",
+    "desc": "적에게 <#ba.noguard>방어 불능</> 피해를 줍니다. <#ba.noguard>방어 불능</> 상태의 적이라면, 모든 <#ba.noguard>방어 불능</> 스택 수치를 <#ba.consume>소모</>하고, 적에게 <@ba.phy>물리 피해</>를 주며 일정 시간 동안 받는 <@ba.pd>물리 피해</>를 증가시킵니다."
+  },
+  "ba.frozen": {
+    "name": "아츠 이상 - 동결",
+    "desc": "<@ba.frozen>동결</> 상태의 적은 움직일 수 없습니다. 이때 <#ba.noguard>방어 불능</> 혹은 <#ba.physicalstatus>물리 이상</> 효과를 받으면 <#ba.crystbreak>쇄빙</>이 발동됩니다.\n<@ba.frozen>동결</> = 기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>냉기 부착</>"
+  },
+  "ba.frozenonchar": {
+    "name": "오퍼레이터의 동결 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.crystinflict>냉기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.frozen>동결</> 상태에 들어가며, 일정 시간 동안 움직일 수 없게 됩니다."
+  },
+  "ba.guard": {
+    "name": "비호",
+    "desc": "일정 시간 동안 목표가 받는 피해가 감소합니다. (수치는 감소 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 가장 높은 수치만 적용됩니다."
+  },
+  "ba.knockdown": {
+    "name": "물리 이상 - 넘어뜨리기",
+    "desc": "적에게 <#ba.noguard>방어 불능</> 피해를 줍니다. <#ba.noguard>방어 불능</> 상태의 적이라면, <#ba.noguard>방어 불능</> 1스택을 쌓고, <@ba.phy>물리 피해</>를 주며 <@ba.poise>불균형치</>를 쌓습니다."
+  },
+  "ba.lastcombo": {
+    "name": "강력한 일격",
+    "desc": "강력한 일격은 오퍼레이터 일반 공격의 마지막 단계를 말합니다. 메인 컨트롤 오퍼레이터의 강력한 일격이 적에게 명중하면 추가로 <@ba.poise>불균형치</>가 누적되고, 일정량의 스킬 게이지가 회복됩니다."
+  },
+  "ba.naturalburst": {
+    "name": "아츠 폭발 - 자연",
+    "desc": "<#ba.naturalinflict>자연 부착</> + <#ba.naturalinflict>자연 부착</> = <@ba.natur>자연 폭발</>, 적에게 일정 <@ba.natur>자연 피해</>를 줍니다."
+  },
+  "ba.naturalenhance": {
+    "name": "자연 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <@ba.natur>자연 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.naturalinflict": {
+    "name": "아츠 부착 - 자연",
+    "desc": "<@ba.naturalinflict>자연 부착</>은 <#ba.spellinflict>아츠 부착</>의 한 종류입니다.\n<@ba.naturalinflict>자연 부착</>은 최대 4스택까지 쌓을 수 있으며, 중첩 시 <#ba.naturalburst>자연 폭발</>이 발동합니다.\n기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>자연 부착</> = <#ba.corrupt>부식</>"
+  },
+  "ba.naturalonchar": {
+    "name": "오퍼레이터의 자연 부착 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.naturalinflict>자연 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.corrupt>부식</> 상태에 들어가며, 일정 시간 동안 돌진을 사용할 수 없게 되고 이동 속도가 감소합니다."
+  },
+  "ba.naturalvul": {
+    "name": "자연 취약",
+    "desc": "일정 시간 동안 목표가 받는 <@ba.natur>자연 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.noguard": {
+    "name": "방어 불능",
+    "desc": "적이 처음 <#ba.physicalstatus>물리 이상</> 효과를 받을 때는 이상 효과가 바로 발동되지 않고 먼저 <@ba.noguard>방어 불능</> 상태가 됩니다.\n<@ba.phy>방어 불능</> 상태는 <#ba.airborne>띄우기</>와 <#ba.knockdown>넘어뜨리기</> 피해를 주면 최대 4스택까지 쌓이고, <#ba.crush>강타</>와 <#ba.fracture>갑옷 파괴</> 피해를 주면 <#ba.consume>소모</>됩니다."
+  },
+  "ba.originium": {
+    "name": "오리지늄 결정",
+    "desc": "관리자의 연계 스킬은 적에게 오리지늄 결정을 부착하여 행동할 수 없게 만듭니다."
+  },
+  "ba.physicalenhance": {
+    "name": "물리 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <@ba.pd>물리 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.physicalstatus": {
+    "name": "물리 이상",
+    "desc": "물리적인 방법으로 적에게 물리 이상 효과를 줄 수 있습니다. 물리 이상 효과에는 <#ba.airborne>띄우기</>, <#ba.knockdown>넘어뜨리기</>, <#ba.crush>강타</>, <#ba.fracture>갑옷 파괴</>가 존재합니다."
+  },
+  "ba.physicalvul": {
+    "name": "물리 취약",
+    "desc": "일정 시간 동안 목표가 받는 <@ba.pd>물리 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.poiseknot": {
+    "name": "불균형 지점",
+    "desc": "일부 강력한 적은 <@ba.poise>불균형 지점</>이 존재합니다. <@ba.poise>불균형치</>가 <@ba.poise>불균형 지점</>까지 누적되면, 적은 행동을 멈추고 비틀거리게 됩니다."
+  },
+  "ba.pulseburst": {
+    "name": "아츠 폭발 - 전기",
+    "desc": "<#ba.pulseinflict>전기 부착</> + <#ba.pulseinflict>전기 부착</> = <@ba.pulse>전기 폭발</>, 적에게 일정 <@ba.pulse>전기 피해</>를 줍니다."
+  },
+  "ba.pulseenhance": {
+    "name": "전기 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <@ba.pulse>전기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.pulseinflict": {
+    "name": "아츠 부착 - 전기",
+    "desc": "<@ba.pulseinflict>전기 부착</>은 <#ba.spellinflict>아츠 부착</>의 한 종류입니다.\n<@ba.pulseinflict>전기 부착</>은 최대 4스택까지 쌓을 수 있으며, 중첩 시 <#ba.pulseburst>전기 폭발</>이 발동합니다.\n기타 <#ba.spellinflict>아츠 부착</>(<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>전기 부착</> = <#ba.conduct>감전</>"
+  },
+  "ba.pulseonchar": {
+    "name": "오퍼레이터의 전기 부착 상태",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <@ba.pulseinflict>전기 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터가 <@ba.conduct>감전</> 상태에 들어가며, 일시적으로 기절하고 일정 시간 동안 받는 <#ba.spelldmg>아츠 피해</>가 증가합니다."
+  },
+  "ba.pulsevul": {
+    "name": "전기 취약",
+    "desc": "일정 시간 동안 목표가 받는 <@ba.pulse>전기 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.return": {
+    "name": "스킬 게이지 반환",
+    "desc": "스킬 게이지를 소모했을 때, 일정 조건을 만족하면 스킬 게이지의 일부가 반환됩니다.\n스킬 게이지 반환은 '스킬 게이지 회복'으로 간주하지 않으므로 스킬 게이지를 회복했을 때 발동하는 효과는 적용되지 않습니다. 또한 반환된 스킬 게이지를 다시 소모하더라도 궁극기 에너지를 획득하지 않습니다."
+  },
+  "ba.rossi": {
+    "name": "늑대의 발톱",
+    "desc": "로시의 배틀 스킬이 적에게 부여하는 특수 효과입니다. 영향을 받은 목표는 지속적으로 <@ba.pd>물리 피해</>를 받으며, 받는 물리 피해와 열기 피해가 증가합니다."
+  },
+  "ba.shield": {
+    "name": "보호",
+    "desc": "보호 효과는 지속 시간 동안 피해를 흡수합니다. 일부 보호 효과는 특정 유형의 피해만 흡수합니다."
+  },
+  "ba.slow": {
+    "name": "감속",
+    "desc": "일정 시간 동안 목표의 이동 속도가 감소합니다. (수치는 감소 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 가장 높은 수치만 적용됩니다."
+  },
+  "ba.speedup": {
+    "name": "가속",
+    "desc": "일정 시간 동안 목표의 이동 속도가 증가합니다. (수치는 증가 폭을 의미합니다.)같은 종류의 효과를 획득할 경우, 효과가 중첩되고, 최대치에 도달할 때까지 적용됩니다."
+  },
+  "ba.spellburst": {
+    "name": "아츠 폭발",
+    "desc": "<@ba.key>아츠 폭발</>은 같은 유형의 <#ba.spellinflict>아츠 부착</>이 중첩될 때 발생합니다. 아츠 폭발에는 <#ba.fireburst>열기 폭발</>, <#ba.pulseburst>전기 폭발</>, <#ba.crystburst>냉기 폭발</>, <#ba.naturalburst>자연 폭발</>이 존재합니다."
+  },
+  "ba.spelldmg": {
+    "name": "피해 유형",
+    "desc": "피해는 <@ba.pd>물리 피해</>, <@ba.key>아츠 피해</>, <@ba.ether>초자연 피해</>로 구분됩니다.\n<@ba.key>아츠 피해</>는 또다시 <@ba.fire>열기 피해</>, <@ba.pulse>전기 피해</>, <@ba.cryst>냉기 피해</>, <@ba.natur>자연 피해</>로 구분됩니다."
+  },
+  "ba.spellenhance": {
+    "name": "아츠 증폭",
+    "desc": "일정 시간 동안 목표가 주는 <#ba.spelldmg>아츠 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.spellinflict": {
+    "name": "아츠 부착",
+    "desc": "아츠를 사용하여 적에게 <@ba.key>아츠 부착</>을 남길 수 있습니다. 아츠 부착에는 <#ba.fireinflict>열기 부착</>, <#ba.pulseinflict>전기 부착</>, <#ba.crystinflict>냉기 부착</>, <#ba.naturalinflict>자연 부착</>이 존재합니다.\n같은 유형의 <@ba.key>아츠 부착</>은 최대 4스택까지만 쌓을 수 있습니다."
+  },
+  "ba.spellinflictonchar": {
+    "name": "오퍼레이터의 아츠 부착/이상",
+    "desc": "일부 적의 스킬은 오퍼레이터에게 <#ba.burningonchar>열기 부착</>, <#ba.conductonchar>전기 부착</>, <#ba.frozenonchar>냉기 부착</> 혹은 <#ba.corruptonchar>자연 부착</>을 부여합니다.\n4스택이 쌓이면 오퍼레이터를 각각 <#ba.burningonchar>연소</>, <#ba.conductonchar>감전</>, <#ba.frozenonchar>동결</> 혹은 <#ba.corruptonchar>부식</> 상태로 만듭니다."
+  },
+  "ba.spellstatus": {
+    "name": "아츠 이상",
+    "desc": "아츠를 사용하여 적에게 <@ba.key>아츠 이상</> 효과를 부여할 수 있습니다. 아츠 이상 효과에는 <#ba.burning>연소</>, <#ba.conduct>감전</>, <#ba.frozen>동결</>, <#ba.corrupt>부식</>이 존재합니다."
+  },
+  "ba.spellvul": {
+    "name": "아츠 취약",
+    "desc": "일정 시간 동안 목표가 받는 <#ba.spelldmg>아츠 피해</>가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.statuslevel": {
+    "name": "이상 레벨",
+    "desc": "이상 레벨은 <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.spellstatus>아츠 이상</> 효과가 발동할 때, <#ba.consume>소모</>된 <#ba.noguard>방어 불능</> 혹은 <#ba.spellinflict>아츠 부착</>의 스택 수치를 의미합니다.(최대 4레벨) <#ba.statuslevel>이상 레벨</>이 높을수록 <#ba.physicalstatus>물리 이상</> 효과와 <#ba.spellstatus>아츠 이상</> 효과가 강해집니다."
+  },
+  "ba.vulnerable": {
+    "name": "취약",
+    "desc": "일정 시간 동안 목표가 받는 특정 속성의 피해가 증가합니다. (수치는 증가 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 효과가 중첩됩니다."
+  },
+  "ba.weak": {
+    "name": "허약",
+    "desc": "일정 시간 동안 목표가 주는 피해가 감소합니다. (수치는 감소 폭을 의미합니다.) 같은 종류의 효과를 획득할 경우, 비선형적으로 중첩됩니다."
+  },
+  "fac.hub": {
+    "name": "프로토콜 코어",
+    "desc": "프로토콜 코어는 통합 공업 시스템의 중추 설비로 다양한 기능을 담당하는 공업 건설의 핵심입니다.\n프로토콜 코어가 위치한 통합 핵심 구역에서 저장고를 관리할 수 있습니다."
+  },
+  "item.bbflower": {
+    "name": "아케톤",
+    "desc": "야외에서 채집할 수 있는 가연성 식물입니다.\n공업 설비나 <#item.portSoilBbflower>아케톤 논배미</>를 통해 재배할 수 있습니다.\n공업 설비를 통해 가공할 수 있습니다. 예를 들어, 아케톤을 분쇄하면 <#item.bbflowerPowder>아케톤 가루</>를 획득할 수 있습니다."
+  },
+  "item.bbflowerPowder": {
+    "name": "아케톤 가루",
+    "desc": "<#item.bbflower>아케톤</>을 공업 설비를 통해 분쇄하여 얻은 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.bbflowerSeed": {
+    "name": "아케톤 씨앗",
+    "desc": "공업 설비를 통해 <#item.bbflower>아케톤</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 아케톤 씨앗으로 아케톤을 재배할 수 있습니다.\n아케톤 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilBbflower>아케톤 논배미</>를 획득할 수도 있습니다."
+  },
+  "item.bottledRecHp1": {
+    "name": "메밀꽃 치유 캡슐",
+    "desc": "<#item.plantMossPowder1>메밀꽃 가루</>와 <#item.glassBottle>자수정 병</>을 <#sys.manualCraft>간편 제작</> 또는 공업 설비의 주입 기능을 통해 만든 캡슐입니다.\n오퍼레이터의 생명력을 회복시킬 수 있으며, <#sys.tacticalItem>전술 아이템</>으로 장착시킬 수도 있습니다."
+  },
+  "item.carbonMtl": {
+    "name": "카본 조각",
+    "desc": "<#item.plantMoss1>메밀꽃</>을 공업 설비를 통해 정련하여 얻은 조각입니다.\n논배미를 <#sys.manualCraftField>재배</>할 때 꼭 필요한 재료이며, 기타 재료의 합성에도 사용할 수 있습니다."
+  },
+  "item.crystalShell": {
+    "name": "오리고 크러스트",
+    "desc": "<#item.originium>오리지늄 광물</>을 공업 설비를 통해 정련해서 얻은 껍데기입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.glassBottle": {
+    "name": "자수정 병",
+    "desc": "<#item.quartzGlass>자수정 섬유</>를 공업 설비를 통해 성형하여 얻은 병입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.glassCmpt": {
+    "name": "자수정 부품",
+    "desc": "<#item.quartzGlass>자수정 섬유</>를 공업 설비를 통해 가공하여 얻은 부품입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.ironEnrPowder": {
+    "name": "고밀도 페리움 가루",
+    "desc": "<#item.ironPowder>페리움 가루</>와 <#item.plantMossPowder3>샌드리프 가루</>를 공업 설비를 통해 연마하여 만든 고밀도 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.ironNugget": {
+    "name": "페리움 조각",
+    "desc": "<#item.ironOre>페리움 광석</>을 공업 설비를 통해 정련하여 얻은 금속 덩어리입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.ironOre": {
+    "name": "페리움 광석",
+    "desc": "야외의 페리움 광석 광산 지점에서 채집할 수 있는 광석입니다.\n공업 설비를 통해 가공할 수 있습니다. 예를 들어, 페리움 광석을 정련하면 <#item.ironNugget>페리움 조각</>을 획득할 수 있습니다."
+  },
+  "item.ironPowder": {
+    "name": "페리움 가루",
+    "desc": "<#item.ironNugget>페리움 조각</>을 공업 설비를 통해 분쇄하여 얻은 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.originium": {
+    "name": "오리지늄 광물",
+    "desc": "야외의 오리지늄 광물 광산 지점에서 채집할 수 있는 광석입니다. 통합 공업 시스템에 전력을 공급하는 데 사용할 수 있습니다.\n공업 설비를 통해 가공할 수 있습니다. 예를 들어, 오리지늄 광물을 정련하면 <#item.crystalShell>오리고 크러스트</>를 획득할 수 있습니다."
+  },
+  "item.originiumEnrPowder": {
+    "name": "고밀도 오리지늄 가루",
+    "desc": "<#item.originiumPowder>오리지늄 가루</>와 <#item.plantMossPowder3>샌드리프 가루</>를 공업 설비를 통해 연마해서 만든 고밀도 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.originiumPowder": {
+    "name": "오리지늄 가루",
+    "desc": "<#item.originium>오리지늄 광물</>을 공업 설비를 통해 분쇄하여 얻은 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.plantMoss1": {
+    "name": "메밀꽃",
+    "desc": "메밀꽃은 야외에서 채집할 수 있는 꽃입니다.\n공업 설비나 <#item.portSoilMoss1>메밀꽃 논배미</>를 통해 재배할 수 있습니다.\n<#sys.tacticalItem>전술 아이템</>을 제작하거나 기타 재료를 합성하는 데 사용할 수 있습니다."
+  },
+  "item.plantMoss3": {
+    "name": "샌드리프",
+    "desc": "야외에서 채집할 수 있는 잎사귀가 거친 식물입니다.\n공업 설비나 <#item.portSoilMoss3>샌드리프 논배미</>를 통해 재배할 수 있습니다.\n공업 설비를 통해 가공할 수 있습니다. 예를 들어, 샌드리프를 분쇄하면 <#item.plantMossPowder3>샌드리프 가루</>를 획득할 수 있습니다."
+  },
+  "item.plantMossPowder1": {
+    "name": "메밀꽃 가루",
+    "desc": "<#item.plantMoss1>메밀꽃</>을 <#sys.manualCraft>간편 제작</> 또는 공업 설비의 분쇄 기능을 통해 만든 가루입니다.\n오퍼레이터의 생명력을 회복시킬 수 있으며, <#sys.tacticalItem>전술 아이템</>으로 장착시킬 수도 있습니다."
+  },
+  "item.plantMossPowder3": {
+    "name": "샌드리프 가루",
+    "desc": "<#item.plantMoss3>샌드리프</>를 공업 설비를 통해 분쇄하여 얻은 가루입니다.\n기타 재료의 합성에 사용할 수 있으며, 연마에 자주 사용되는 재료입니다."
+  },
+  "item.plantMossSeed1": {
+    "name": "메밀꽃 씨앗",
+    "desc": "공업 설비를 통해 <#item.plantMoss1>메밀꽃</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 메밀꽃 씨앗으로 메밀꽃을 재배할 수 있습니다. 또는 메밀꽃 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilMoss1>메밀꽃 논배미</>를 획득할 수도 있습니다."
+  },
+  "item.plantMossSeed3": {
+    "name": "샌드리프 씨앗",
+    "desc": "공업 설비를 통해 <#item.plantMoss3>샌드리프</>에서 추출한 씨앗입니다.\n공업 설비를 이용하면 샌드리프 씨앗으로 샌드리프를 재배할 수 있습니다.\n샌드리프 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilMoss3>샌드리프 논배미</>를 획득할 수도 있습니다."
+  },
+  "item.plantMossSpc1": {
+    "name": "화염 메밀꽃",
+    "desc": "화염 메밀꽃은 야외에서 채집할 수 있는 특수한 꽃입니다.\n<#item.plantMoss1>메밀꽃</>을 채집할 때 일정 확률로 화염 메밀꽃을 추가로 획득할 수 있습니다.\n<#sys.tacticalItem>전술 아이템</>의 제작에 사용할 수 있습니다."
+  },
+  "item.plantSp1": {
+    "name": "회보리",
+    "desc": "회보리는 야외에서 채집할 수 있는 작물입니다. <#item.portSoilSp1>회보리 논배미</>에서 재배하여 획득할 수도 있습니다.\n<#sys.manualCraftDish>정제된 식품 및 약품</>의 제작에 사용할 수 있습니다."
+  },
+  "item.plantSpSeed1": {
+    "name": "회보리 씨앗",
+    "desc": "공업 설비를 통해 <#item.plantSp1>회보리</>에서 추출한 씨앗입니다.\n회보리 씨앗과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 <#item.portSoilSp1>회보리 논배미</>를 획득할 수 있습니다."
+  },
+  "item.portSoilBbflower": {
+    "name": "아케톤 논배미",
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.bbflower>아케톤</>을 수확할 수 있는 논배미입니다.\n<#item.bbflowerSeed>아케톤 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 아케톤을 획득할 수 있습니다."
+  },
+  "item.portSoilMoss1": {
+    "name": "메밀꽃 논배미",
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss1>메밀꽃</>을 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed1>메밀꽃 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 <#sys.manualCraftField>재배</>하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 메밀꽃을 획득할 수 있으며, 비교적 높은 확률로 <#item.plantMossSpc1>화염 메밀꽃</>을 추가로 획득할 수 있습니다."
+  },
+  "item.portSoilMoss3": {
+    "name": "샌드리프 논배미",
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantMoss3>샌드리프</>를 수확할 수 있는 논배미입니다.\n<#item.plantMossSeed3>샌드리프 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 샌드리프를 획득할 수 있습니다."
+  },
+  "item.portSoilSp1": {
+    "name": "회보리 논배미",
+    "desc": "생태 농장에서의 정밀한 재배를 통해 <#item.plantSp1>회보리</>를 수확할 수 있는 논배미입니다.\n<#item.plantSpSeed1>회보리 씨앗</>과 <#item.carbonMtl>카본 조각</>을 함께 재배하여 획득할 수 있습니다.\n수확할 때가 되면 대량의 회보리를 획득할 수 있습니다."
+  },
+  "item.procBattery1": {
+    "name": "저용량 협곡 배터리",
+    "desc": "<#item.glassCmpt>자수정 부품</>과 <#item.originiumPowder>오리지늄 가루</>를 공업 설비를 통해 포장해서 얻은 배터리입니다.\n전력 발전, 설비 에너지 충전 또는 거점과의 거래에 사용할 수 있습니다."
+  },
+  "item.procBomb": {
+    "name": "공업 폭발물",
+    "desc": "공업 폭발물은 직접 만들어낼 수 있는 폭발물입니다.\n<#item.glassCmpt>자수정 부품</>과 <#item.bbflowerPowder>아케톤 가루</>를 공업 설비를 통해 포장하면 공업 폭발물을 만들 수 있습니다.\n공업 폭발물을 던져서 일정 범위 내의 적에게 피해를 주거나, 파괴할 수 있는 물체를 폭발시킬 수도 있습니다."
+  },
+  "item.quartzGlass": {
+    "name": "자수정 섬유",
+    "desc": "<#item.quartzSand>자수정 광석</>을 공업 설비를 통해 정련하여 얻은 섬유입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.quartzPowder": {
+    "name": "자수정 가루",
+    "desc": "<#item.quartzGlass>자수정 섬유</>를 공업 설비를 통해 분쇄하여 얻은 가루입니다.\n기타 재료의 합성에 사용할 수 있습니다."
+  },
+  "item.quartzSand": {
+    "name": "자수정 광석",
+    "desc": "야외의 자수정 광석 광산 지점에서 채집할 수 있는 광석입니다.\n공업 설비를 통해 가공할 수 있습니다. 예를 들어, 자수정 광석을 정련하면 <#item.quartzGlass>자수정 섬유</>를 획득할 수 있습니다."
+  },
+  "sys.manualCraft": {
+    "name": "간편 제작",
+    "desc": "가방의 간편 제작을 통해 원자재를 유용한 아이템으로 제작할 수 있습니다.\n예를 들어 간편 제작을 통해 <#item.plantMoss1>메밀꽃</>을 생명력 회복 효과를 가진 <#item.plantMossSeed1>메밀꽃 가루</>로 만들 수 있습니다."
+  },
+  "sys.manualCraftDish": {
+    "name": "정제된 식품 및 약품",
+    "desc": "정제된 식품 및 약품은 <#sys.tacticalItem>전술 아이템</>으로 사용할 수 있습니다.\n<#sys.manualCraftTonic>응급 식품 및 약품</>과 달리, 정제된 식품 및 약품은 <#sys.manualCraft>간편 제작</>으로만 생산할 수 있습니다."
+  },
+  "sys.manualCraftField": {
+    "name": "재배",
+    "desc": "<#sys.manualCraft>간편 제작</>에서 일부 식물의 씨앗을 <#item.carbonMtl>카본 조각</>과 조합하여 해당 식물의 논배미를 만들 수 있습니다.\n이후 생태 재배 구역에서 논배미를 재배할 수 있습니다."
+  },
+  "sys.manualCraftTonic": {
+    "name": "응급 식품 및 약품",
+    "desc": "응급 식품 및 약품은 <#sys.tacticalItem>전술 아이템</>으로 사용할 수 있습니다.\n<#sys.manualCraft>간편 제작</>이나 공업 설비를 통해 생산할 수 있습니다."
+  },
+  "sys.tacticalItem": {
+    "name": "전술 아이템",
+    "desc": "전술 아이템은 순조로운 전투를 위한 버프 효과를 제공하며, 전술 아이템마다 사용 조건과 최대 사용 횟수가 다릅니다.\n전투를 시작하기 전, 각 오퍼레이터에게 전술 아이템 한 종류를 장착시킬 수 있으며 전투 중 사용 조건을 만족하면 오퍼레이터가 전술 아이템을 자동으로 사용합니다.\n한 번의 전투에서 사용할 수 있는 전술 아이템의 사용 횟수를 모두 소모하면, 일정 시간이 지난 뒤 사용 횟수가 1회 회복됩니다."
+  }
+}

@@ -1,8 +1,10 @@
 <script>
   import { t } from "$lib/i18n";
-  import { onDestroy, tick } from "svelte";
+  import { createEventDispatcher, onDestroy, tick } from "svelte";
   import { browser } from "$app/environment";
 
+  const dispatch = createEventDispatcher();
+  
   export let text = "";
   export let textKey = "";
   
@@ -54,9 +56,12 @@
     }
   }
 
-  async function show() {
+  async function show(e) {
     if (!browser) return; 
     open = true;
+    if (e) {
+      dispatch(e.type, e);
+    }
     await tick(); 
     if (tooltipEl && tooltipEl.parentNode !== document.body) {
       document.body.appendChild(tooltipEl);
@@ -66,9 +71,12 @@
     window.addEventListener("resize", onScrollOrResize, { passive: true });
   }
 
-  function hide() {
+  function hide(e) {
     if (!browser) return;
     open = false;
+    if (e) {
+      dispatch(e.type, e);
+    }
     window.removeEventListener("scroll", onScrollOrResize, { capture: true });
     window.removeEventListener("resize", onScrollOrResize);
   }
@@ -94,14 +102,18 @@
   <slot />
 </button>
 
-{#if open && tooltipText}
+{#if open && (tooltipText || $$slots.content)}
   <span
     bind:this={tooltipEl}
-    class="fixed px-3 py-1.5 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-xl
-           pointer-events-none whitespace-nowrap z-[999999]"
+    class="fixed max-w-[400px] px-3 py-1.5 bg-gray-900 dark:bg-[#1E1E1E] text-white text-xs rounded-lg shadow-xl
+           pointer-events-none  z-[999999]"
     style="left: {left}px; top: {top}px;"
   >
-    {tooltipText}
+    {#if $$slots.content}
+      <slot name="content" />
+    {:else}
+      {tooltipText}
+    {/if}
     
     {#if !isFlipped}
         <span

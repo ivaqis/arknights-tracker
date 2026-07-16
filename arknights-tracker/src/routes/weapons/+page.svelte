@@ -1,48 +1,39 @@
 <script>
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import WeaponFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/WeaponFilterDropdown.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import { weapons } from "$lib/data/weapons.js";
     import { t } from "$lib/i18n";
-    import { weapons } from "$lib/data/weapons.js"; 
-    import { pullData } from "$lib/stores/pulls";
-    import { manualPotentials } from "$lib/stores/potentials";
     import { accountStore } from "$lib/stores/accounts";
-    import { weaponFilters, weaponSearch, weaponManual, weaponOwnedOnly } from '$lib/stores/filterStore';
+    import {
+        getWeaponFilters,
+        getWeaponSortOptions,
+        weaponFilters,
+        weaponOwnedOnly,
+        weaponSearch
+    } from "$lib/stores/filterStore";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
 
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-
-    $: filters = $weaponFilters;
+    $: selectedFilters = $weaponFilters;
     $: searchQuery = $weaponSearch;
     $: showOwnedOnly = $weaponOwnedOnly;
 
     const allWeapons = Object.values(weapons || {}).filter(
         (wp) => wp && wp.id
     );
-    
+
     let sortField = "rarity";
     let sortDirection = "desc";
     let searchQuery = "";
     let showOwnedOnly = false;
 
-    const attr1Skills = ["attr_agi", "attr_str", "attr_will", "attr_wisd", "attr_main"];
-    const attr2Skills = [
-        "attr_atk", "attr_firedam", "attr_crirate", "attr_heal", "attr_hp", 
-        "attr_usp", "attr_icedam", "attr_magicdam", "attr_naturaldam", 
-        "attr_phydam", "attr_physpell", "attr_pulsedam"
-    ];
-    const attr3Skills = [
-        "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
-        "combo", "crit", "force", "heal", "keyword", "phyabn", "smash"
-    ];
-    
-    let filters = {
-        rarity: [6, 5, 4, 3],
-        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-        attr1: [...attr1Skills],
-        attr2: [...attr2Skills],
-        attr3: [...attr3Skills]
-    };
-
     const { selectedId } = accountStore;
+    $: accountEssences = $weaponEssences[$selectedId] || {};
 
     $: filteredWeapons = allWeapons
         .filter((wp) => {
@@ -82,19 +73,16 @@
 
             if (!matchesSearch) return false;
             
-            const matchesRarity = filters.rarity.length === 0 || filters.rarity.includes(wp.rarity);
+            const matchesRarity = filterCheck(selectedFilters.rarity, wp.rarity);
             const wpType = wp.type || wp.weapon;
-            const matchesType = filters.type.length === 0 || (wpType && filters.type.some(w => w.toLowerCase() === wpType.toLowerCase()));
-            const passesAttr1 = filters.attr1.length === attr1Skills.length || 
-                (wp.skills && wp.skills.some(skill => filters.attr1.includes(skill)));
+            const matchesType = filterCheckLowerCase(selectedFilters.type, wpType);
+            const wpEssence = accountEssences[wp.id] || 0;
+            const matchesEssence = filterCheck(selectedFilters.essence, wpEssence);
+            const passesAttr1 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr1, skill));
+            const passesAttr2 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr2, skill));
+            const passesAttr3 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr3, skill));
 
-            const passesAttr2 = filters.attr2.length === attr2Skills.length || 
-                (wp.skills && wp.skills.some(skill => filters.attr2.includes(skill)));
-
-            const passesAttr3 = filters.attr3.length === attr3Skills.length || 
-                (wp.skills && wp.skills.some(skill => filters.attr3.includes(skill)));
-
-            return matchesRarity && matchesType && passesAttr1 && passesAttr2 && passesAttr3;
+            return matchesRarity && matchesType && matchesEssence && passesAttr1 && passesAttr2 && passesAttr3;
         })
         .sort((a, b) => {
             let valA = sortField === "type" ? a.type || a.weapon : a[sortField];
@@ -119,8 +107,17 @@
             return compareResult;
         });
 
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || showOwnedOnly;
+
+    function resetFilters() {
+        $weaponFilters = {};
+        $weaponOwnedOnly = false;
+    }
+
     let displayLimit = 40;
-    $: if (searchQuery !== undefined || filters || sortField || sortDirection || showOwnedOnly) {
+    $: if (searchQuery !== undefined || selectedFilters || sortField || sortDirection || showOwnedOnly) {
         displayLimit = 40;
     }
     $: displayedWeapons = filteredWeapons.slice(0, displayLimit);
@@ -148,15 +145,34 @@
     </div>
 
     <div class="w-full xl:w-[70%] mb-4">
+
         <DataToolbar
-            bind:sortField
-            bind:sortDirection
-            bind:filters={$weaponFilters} 
-            bind:searchQuery={$weaponSearch} 
-            bind:manualMode={$weaponManual}
-            bind:showOwnedOnly={$weaponOwnedOnly}
-            mode="weapons" 
-        />
+            showSortDropdownButton={true}
+            showSortDirectionButton={true}
+            showFilterDropdownButton={true}
+            showSearchInput={true}
+            isFilterActive={isFilterActive}
+            onFilterReset={resetFilters}
+            bind:searchString={$weaponSearch}
+            bind:sortDirection={sortDirection}
+        >
+
+            <SortSelectorDropdown
+                slot="sortDropdown"
+                optionList={getWeaponSortOptions()}
+                bind:selectedOption={sortField}
+            />
+
+            <WeaponFilterDropdown
+                slot="filterDropdown"
+                filters={getWeaponFilters()}
+                onFilterReset={resetFilters}
+                bind:selectedFilters={$weaponFilters}
+                bind:showOwnedOnly={$weaponOwnedOnly}
+            />
+
+        </DataToolbar>
+
     </div>
 
     <div class="w-full xl:w-[85%] pb-8">

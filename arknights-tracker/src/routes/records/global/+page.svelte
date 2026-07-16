@@ -4,22 +4,21 @@
     import { goto } from "$app/navigation";
     import { fade } from "svelte/transition";
     import { currentLocale } from "$lib/stores/locale";
-
-    import Select from "$lib/components/Select.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import Button from "$lib/components/Button.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-
     import { characters } from "$lib/data/characters";
     import { weapons } from "$lib/data/weapons";
     import { currencies } from "$lib/data/items/currencies";
     import { banners } from "$lib/data/banners";
     import { bannerTypes } from "$lib/data/bannerTypes";
     import { API_BASE } from "$lib/api";
+
+    import Select from "$lib/components/Select.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
 
     const initialStats = {
         totalUsers: 0,
@@ -51,8 +50,10 @@
         if (!dateStr) return "";
         const parsed = new Date(dateStr.replace(" ", "T"));
         if (isNaN(parsed.getTime())) return "";
+        let loc = locale || "en";
+        if (loc === "my") loc = "ms-MY";
         try {
-            return new Intl.DateTimeFormat(locale, {
+            return new Intl.DateTimeFormat(loc, {
                 day: "2-digit",
                 month: "2-digit",
                 year: "2-digit"
@@ -466,16 +467,7 @@
             color="white"
             onClick={() => goto("/records")}
         >
-            <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
         <h2
             class="font-sdk text-4xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
@@ -645,7 +637,7 @@
                             <span
                                 class="font-bold text-gray-900 dark:text-[#FDFDFD] flex items-center gap-1.5 font-nums text-lg"
                             >
-                                <Images
+                                <Image
                                     id="oroberyl"
                                     variant="currency"
                                     size={20}
@@ -772,7 +764,7 @@
                             class="absolute inset-0"
                             in:fade={{ duration: 300 }}
                         >
-                            <Images
+                            <Image
                                 id={currentBanner.icon || currentBanner.id}
                                 variant="banner-icon"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -1174,7 +1166,7 @@
                                                 <div
                                                     class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#D84C38] shrink-0"
                                                 >
-                                                    <Images
+                                                    <Image
                                                         id={resolved.id}
                                                         variant={resolved.isWeapon
                                                             ? "weapon-icon"
@@ -1282,7 +1274,7 @@
                                                 <div
                                                     class="w-10 h-10 rounded-full bg-gray-200 dark:bg-[#1E1E1E] overflow-hidden border-2 border-[#E3BC55] shrink-0"
                                                 >
-                                                    <Images
+                                                    <Image
                                                         id={resolved.id}
                                                         variant={resolved.isWeapon
                                                             ? "weapon-icon"

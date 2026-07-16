@@ -6,14 +6,26 @@ import { signInWithPopup, signOut, onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
 import { logEvent } from "firebase/analytics";
 import { accountStore } from "$lib/stores/accounts";
+import { t } from "$lib/i18n.js";
+import { addNotification } from "$lib/stores/notifications";
+import { manualPotentials } from "$lib/stores/potentials";
+import { weaponEssences } from "$lib/stores/weaponEssences";
 
 export const user = writable(null);
 export const syncStatus = writable("idle");
 export const cloudDataBuffer = writable(null);
 export const justSynced = writable(false);
 
+let hasShownFirebaseError = false;
+
+
 function compressDataForCloud(fullBackup) {
-    const compressed = { meta: fullBackup.meta, data: {} };
+    const compressed = {
+        meta: fullBackup.meta,
+        data: {},
+        potentials: fullBackup.potentials || {},
+        essences: fullBackup.essences || {}
+    };
 
     Object.entries(fullBackup.data).forEach(([accId, accData]) => {
         compressed.data[accId] = {};
@@ -133,36 +145,46 @@ export async function checkSync(currentUser, freshSnapshot = null) {
 
             if (localTotal === 0 && cloudTotal === 0) {
                 syncStatus.set("synced");
+                hasShownFirebaseError = false;
                 return;
             }
 
             if (localTotal === cloudTotal) {
                 if (localLastUpdated === 0 && cloudLastUpdated > 0) localStorage.setItem("ark_last_sync", cloudLastUpdated.toString());
                 syncStatus.set("synced");
+                hasShownFirebaseError = false;
                 return;
             }
 
             if (localTotal > cloudTotal) {
                 setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "local_newer");
+                hasShownFirebaseError = false;
                 return;
             }
             if (cloudTotal > localTotal) {
                 setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
+                hasShownFirebaseError = false;
                 return;
             }
             const diff = cloudLastUpdated - localLastUpdated;
             if (Math.abs(diff) > 10000) {
                 if (diff > 0) setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "conflict_cloud_newer");
                 else setConflict(cloudFullBackup, cloudLastUpdated, cloudTotal, "local_newer");
+                hasShownFirebaseError = false;
                 return;
             }
             syncStatus.set("synced");
         } else {
             syncStatus.set("local_newer");
         }
+        hasShownFirebaseError = false;
     } catch (e) {
         console.warn("Sync warn:", e);
-        syncStatus.set("local_newer");
+        syncStatus.set("error");
+        if (!hasShownFirebaseError) {
+            hasShownFirebaseError = true;
+            addNotification("error", get(t)("settings.cloud.connectionFailed"));
+        }
     }
 }
 
@@ -174,7 +196,7 @@ function setConflict(backup, time, total, status) {
 export function applyCloudData() {
     const buffer = get(cloudDataBuffer);
     if (!buffer || !buffer.fullBackup) return;
-    const { meta, data } = buffer.fullBackup;
+    const { meta, data, potentials, essences } = buffer.fullBackup;
     try {
         if (meta && meta.accounts) {
             localStorage.setItem("ark_tracker_accounts", JSON.stringify({ accounts: meta.accounts, selectedId: meta.selectedId || 'main' }));
@@ -211,6 +233,14 @@ export function applyCloudData() {
                 localStorage.setItem(`ark_tracker_data_${accId}`, JSON.stringify(restoredAccData));
             });
         }
+        if (potentials) {
+            localStorage.setItem("operatorPotentialsByAccount", JSON.stringify(potentials));
+            try { manualPotentials.set(potentials); } catch (err) { }
+        }
+        if (essences) {
+            localStorage.setItem("weaponEssencesByAccount", JSON.stringify(essences));
+            try { weaponEssences.set(essences); } catch (err) { }
+        }
         localStorage.setItem("ark_last_sync", buffer.timestamp.toString());
         syncStatus.set("synced");
         cloudDataBuffer.set(null);
@@ -239,7 +269,12 @@ export async function uploadLocalData(freshSnapshot = null) {
             else { accounts = [{ id: 'main', name: 'Main' }]; }
         }
 
-        const fullBackup = { meta: { accounts, selectedId }, data: {} };
+        const fullBackup = {
+            meta: { accounts, selectedId },
+            data: {},
+            potentials: get(manualPotentials),
+            essences: get(weaponEssences)
+        };
         let totalPulls = 0;
         let sixStars = 0;
 
@@ -299,11 +334,16 @@ export async function uploadLocalData(freshSnapshot = null) {
         localStorage.setItem("ark_last_sync", Date.now().toString());
         justSynced.set(true);
         syncStatus.set("synced");
+        hasShownFirebaseError = false;
         if (analytics) logEvent(analytics, 'sync_upload', { total: totalPulls });
 
     } catch (e) {
         console.error("[Firebase] Upload error", e);
         syncStatus.set("error");
+        if (!hasShownFirebaseError) {
+            hasShownFirebaseError = true;
+            addNotification("error", get(t)("settings.cloud.connectionFailed"));
+        }
     }
 }
 

@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Recupero PA",
+      "Afflizione da fuoco",
+      "Concatenamento"
+    ],
+    "behaviourHateTags": [
+      "Natura"
+    ],
+    "behaviourUnavailableTags": [
+      "Estroversione (SOLO SISTEMA, non visibile nel gioco)"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Analisi della situazione",
+      "Agilità"
+    ],
+    "giftPreferTags": [
+      "Scelta degli Spadamanti di Wuling"
+    ],
+    "hobbyTags": [
+      "Creatività",
+      "Tecnologia"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
+      },
+      "name": "Assoluzione di sangue",
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.fire>danni da fuoco</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.fire>danni da fuoco</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.fire>danni da fuoco</> e ripristinano parzialmente i PA."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento",
+        "firefangVesperwingDurationS": "Durata vesprivoli zannafuoco (s)",
+        "weaknessEffect": "Effetto Debolezza",
+        "heatSusceptibility": "Suscettibilità al fuoco",
+        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione"
+      },
+      "name": "Esorcismo ardente",
+      "description": "Camille evoca <@ba.key>vesprivoli zannafuoco</> che volano verso il nemico per infliggere <@ba.fire>danni da fuoco</> e applicare <#ba.fireinflict>Afflizione da fuoco</> entro un raggio d'azione ridotto. I <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitano</> temporaneamente intorno al bersaglio e applicano <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</>. Quando il bersaglio viene sconfitto, i <@ba.key>vesprivoli zannafuoco</> volano verso un altro nemico nelle vicinanze, infliggono <@ba.fire>danni da fuoco</> e applicano <#ba.fireinflict>Afflizione da fuoco</>, <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</> al nuovo bersaglio.\nColpire un nemico attorno a cui <@ba.key>orbitano</> i <@ba.key>vesprivoli zannafuoco</> con l'abilità combo di Camille innesca un'esplosione dopo un breve intervallo. L'esplosione infligge ulteriori <@ba.fire>danni da fuoco</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento",
+        "spRecovery": "Recupero PA",
+        "hunterPursuitDmgMultiplier": "Moltiplicatore danni Caccia spietata",
+        "hunterPursuitStagger": "Vacillamento Caccia spietata",
+        "hunterPursuitSpRecovery": "Recupero PA Caccia spietata",
+        "ultimateEnergyGain": "Incremento energia suprema"
+      },
+      "name": "Spina trafiggicuore",
+      "description": "ATTIVAZIONE COMBO: quando l'<#ba.fireinflict>Afflizione da fuoco</> di un nemico viene <#ba.consume>consumata</> o <#ba.absorb>assorbita</>.\nEsegue uno scatto all'indietro che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Moltiplicatore danni",
+        "stagger": "Vacillamento",
+        "spRecovery": "Recupero PA",
+        "hunterPursuitStateDurationS": "Durata stato Caccia spietata (s)"
+      },
+      "name": "Diluvio di sangue",
+      "description": "Camille vola in cielo, fa piovere una raffica di lance e prosegue con un attacco che infligge <@ba.fire>danni da fuoco</>, applica <#ba.fireinflict>Afflizione da fuoco</> ai bersagli colpiti e ripristina parzialmente i PA. \nDopo aver usato l'abilità suprema, l'abilità di combattimento di Camille si trasforma temporaneamente in <@ba.key>Caccia spietata</>.\n<@ba.key>Caccia spietata</> è considerata un'abilità combo e il suo utilizzo non costa PA. Si tratta di un attacco sferzante che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA."
+    },
+    "indicator": {
+      "levels": [
+        "Agilità operatore +10.",
+        "Agilità operatore +15.",
+        "Agilità operatore +15.",
+        "Agilità operatore +20."
+      ],
+      "name": "Destrezza"
+    },
+    "talent1": {
+      "levels": [
+        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>.",
+        "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: quando colpisce un nemico con <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>, Camille recupera PS pari a <@ba.heal>({heal_base:0} + Intelletto × {heal_sub_multi:0.##})</> e conferisce un potenziamento <#ba.combo>Concatenamento</> per {combo_duration} s. Quando usa <@ba.key>Caccia spietata</>, questo effetto può essere attivato anche colpendo un bersaglio senza vesprivoli <@ba.key>orbitanti</>."
+      ],
+      "name": "Cacciatore di trasgressioni"
+    },
+    "talent2": {
+      "levels": [
+        "Quando Camille recupera PS tramite un'abilità, ottiene un <@ba.vup>{atk_up:0%}</> in più di <@ba.fire>danni da fuoco inflitti</> (accumuli massimi: 5) per {duration:0} s, mentre gli altri operatori nella squadra ottengono un <@ba.vup>{teammate_rate:0%}</> di questo effetto. Questo effetto può raggiungere un massimo di 5 accumuli.\n<@ba.info>Se Camille ha già il massimo di PS, ottiene 2 accumuli di questo effetto.</>",
+        "Quando Camille recupera PS tramite un'abilità, ottiene un <@ba.vup>{atk_up:0%}</> in più di <@ba.fire>danni da fuoco inflitti</> (accumuli massimi: 5) per {duration:0} s, mentre gli altri operatori nella squadra ottengono un <@ba.vup>{teammate_rate:0%}</> di questo effetto. Questo effetto può raggiungere un massimo di 5 accumuli.\n<@ba.info>Se Camille ha già il massimo di PS, ottiene 2 accumuli di questo effetto.</>"
+      ],
+      "name": "Risveglio della fonte sanguigna"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Assegna alla camera di coltivazione per aumentare del 20% la velocità di crescita delle piante in vitro.",
+        "Assegna alla camera di coltivazione per aumentare del 30% la velocità di crescita delle piante in vitro."
+      ],
+      "name": "Emo-vitreografia"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Assegna alla cabina di produzione per aumentare del 20% l'efficienza di produzione dei materiali per l'ESP degli operatori.",
+        "Assegna alla cabina di produzione per aumentare del 30% l'efficienza di produzione dei materiali per l'ESP degli operatori."
+      ],
+      "name": "Manuale dell'Agaš'mekanaz"
+    },
+    "files": {
+      "main": "NOME IN CODICE: Camille \nGENERE: M \nAFFILIAZIONE: Seš'qa \nDATA DI NASCITA: 20 novembre \nRAZZA: Sarkaz \n[STATO ORIPATIA] \nI referti medici confermano la negatività all'Oripatia. \n\n[RISULTATI DELL'ESAME FISICO] \nFORZA FISICA: Eccellente \nABILITÀ DI COMBATTIMENTO: Normali \nACUME TATTICO: Normale \nASSIMILAZIONE DELLE ARTI DI ORIGINIUM: Straordinaria \n\nNonostante la richiesta di accertamenti rivolta a Seš'qa, gli effetti della capacità di Camille di assimilare le Arti di Originium tramite condivisione sanguigna rimangono incerti. \n- Un operatore Sarkaz",
+      "humanResources": "Camille Arno, Agaš'mekanaz di Seš'qa (Custode della Saggezza), ha richiesto a titolo personale una collaborazione con la Endfield Industries. In seguito a una raccomandazione da parte dell'Endministrator, ricopre attualmente una posizione all'interno della Divisione tecnologica specializzata. \n\nI genitori dell'operatore Camille facevano parte della spedizione scientifica congiunta proveniente da Terra. Camille è nato e cresciuto a Seš'qa, ma ha vissuto per molti anni fuori dalla città fluttuante, per via del suo lavoro e delle sue esperienze passate. \nNonostante Camille sostenga di essere \"a caccia\" di un familiare ricercato, il suo curriculum vitae, tanto lungo quanto vuoto, suggerisce che abbia finito per invertire i ruoli di \"cacciatore\" e \"preda\": tutte le sue relazioni sociali, il suo vissuto personale... o la sua \"vita\", per usare una definizione più ampia, è andata completamente distrutta nell'arco di diversi decenni. \nQuando ho sollevato l'argomento, Camille ha distolto lo sguardo, concentrandosi su una macchia sul soffitto. Dopodiché, ha rotto il silenzio con una serie di metafore e figure retoriche, tra cui una che mi ha colpito molto: si è definito un \"pendolo che oscilla invano\". \nHa poi proseguito dicendo che c'è stata una giornata in cui il suo tempo si è fermato. \nTerminata la conversazione, ho capito di aver imparato una lezione fondamentale in merito a questo operatore: se si vuole evitare il gravoso compito di gestirne la sfera emotiva, è meglio NON parlare di suo fratello. \n- Martin Marvin Malen, assistente alle risorse umane, Endfield Industries",
+      "file1": "FONTE: Guida turistica di Talos-II: Seš'qa, numero 3 \nOggi è l'open day di Seš'qa! Cosa dovrebbe fare un turista? Andare a vedere il negozio principale della Witching Hour? Acquistare un'edizione limitata di qualche oggetto introvabile nei negozi della CCGT? Sorseggiare qualcosa di buono al Bar degli Specchi? Scovare atelier stregonici in qualche vicolo buio? Ci sono davvero tante cose da fare nella città fluttuante. La nostra ultima guida propone un'attività segreta e ricercata: prenotare una visita al rifugio di un Agaš'mekanaz, detti anche Custodi della Saggezza. \nIn passato, pensavo a questi Custodi come un misterioso gruppo di individui pericolosi e senza scrupoli che agivano nell'ombra. Credo che molti lettori condividano quest'opinione. Ebbene, gli organizzatori degli ultimi open day devono avere un certo interesse a sfatare tale stereotipo: hanno infatti aggiunto al programma nuove attività proprio legate ai Custodi per aiutarci a saperne di più sui loro contributi a lungo termine e sulle loro opere di bene. \nLa mia guida era una Custode in pensione. Una Goliath paziente e gentile; nulla a che vedere con i freddi e spietati Agaš'mekanaz che avevo immaginato. Mi dice che, dopo il tradimento di Jakub Meissen, Seš'qa ha vissuto una crisi di fiducia, sebbene l'evento avesse devastato anche le comunità di Sarkaz di Talos-II. Per evitare che si verificasse nuovamente qualcosa di simile, i capi di Seš'qa hanno radunato le loro risorse migliori e hanno aperto la sede degli Agaš'mekanaz. Il loro incarico è occuparsi dei crimini più pericolosi che vedono coinvolti i Sarkaz, come responsabili o come vittime. \nAbbiamo trascorso l'ora seguente camminando spensierati accanto a lavagne piene di prove, archivi e vetrine che mettevano in mostra equipaggiamenti stregonici. Grazie alla nostra chiacchierata, ho scoperto vari segreti. La sfida più ardua per qualsiasi Custode è indagare sui crimini perpetrati da un parente. In linea di massima, le altre razze si rifiuterebbero di assegnare un caso a un familiare del sospettato, ma i Sarkaz hanno adottato l'approccio opposto. Molte loro tribù godono di lunga vita e padroneggiano un'ampia selezione di Arti di Originium, pertanto un parente di sangue rappresenta il contraltare perfetto a un criminale Sarkaz. \n\"Ecco perché molti Agaš'mekanaz soffrono emotivamente. Secondo alcuni, non saremmo in grado di restare giusti ed equi, ma finora nessuno ha mai rinnegato i propri principi per un familiare\" ha detto la Custode. \n\"Sei mai stata obbligata a... incrociare le spade con un parente?\" le ho chiesto, non resistendo alla tentazione. \nPer un momento ho pensato che le sue emozioni potessero avere la meglio, ma lei ha alzato lo sguardo verso l'unico lucernario del rifugio. Dopo un breve silenzio, in cui ha messo ordine fra i suoi sentimenti, è tornata alla normalità. \"Ho usato una pistola pesante. Era la sua.\" \nAttraverso il lucernario, potevo vedere gli ultimi raggi del crepuscolo riflettersi sulle nuvole. In cielo esplodevano i fuochi d'artificio, elaborate creazioni di stregoneria. Seš'qa aveva vissuto un altro giorno di pace.",
+      "file2": "FONTE: Immagini di videosorveglianza di Valle IV \n1. Centro di lavorazione dei sottoprodotti di Originium (CLS Originium), ingresso: immagini chiare. Osservati operatori della Endfield. Nessun avvistamento fuori dalla norma. \n2. Dormitori degli operai, sud-est: i membri dell'USLT svolgono le loro attività quotidiane. Nessun avvistamento fuori dalla norma. \n3. Base del Polo centrale: identificato Camille Arno. La telecamera ingrandisce l'immagine per un monitoraggio migliore. \n4. Cava di Aburrey: segnale perso. Si sospettano danni alla telecamera presente sul Fenditerra; il soggetto è stato attaccato ed eliminato dal nemico. \n5. Accampamento dell'avvicinamento al ponte: alcuni Fenditerra se ne sono andati o si sono uniti alla colonna in ritirata. I pochi video disponibili sono sfocati. Ultima posizione abbandonata. \n6. Parcheggio condiviso, Centrale elettrica a Originium: puntare tutte le telecamere su Camille Arno e l'Endministrator della Endfield Industries. Monitorare le attività di questi due individui. \n...... \nQuesto rapporto dimostra che un soggetto ignoto ha impiegato un sistema di sorveglianza nascosto nella regione di Valle IV. \n\nNessuno immaginava che l'Endministrator avrebbe fatto ritorno da questo viaggio con migliaia di ore di registrazioni. La scoperta, avvenuta in una struttura sotterranea abbandonata, ha lasciato a bocca aperta tutti gli analisti. È la prova che un'organizzazione ha agito nell'ombra a Valle IV, osservando in silenzio le azioni di tutti e muovendo fili misteriosi per esercitare un controllo sull'intera regione. \nQuando gli analisti hanno capito che le telecamere erano state impiantate nei Fenditerra per evitare che venissero rilevate (Camille ha accennato al fatto che il responsabile abbia abbandonato i Fenditerra senza pensarci due volte), sapevano perché Seš'qa avesse deciso di affidare l'incarico a un Agaš'mekanaz. Per fortuna, dopo l'arrivo di Camille Arno a Valle IV, tutte le telecamere erano focalizzate sul monitorare i suoi spostamenti e le sue attività. Il periodo di sorveglianza coincide con le attività della Endfield nella regione. Possiamo tranquillamente presumere che non siano trapelate informazioni cruciali. La mancata fuga di notizie è anche il motivo per cui nessuno dei nostri operatori aveva notato tale sorveglianza non autorizzata. \nUna volta ricevute le registrazioni, gli operatori della Divisione tecnologica le hanno ricondotte a una precedente serie di riprese (già distrutta) e hanno capito che l'organizzazione aveva iniziato a sorvegliare Camille decenni fa. Il Custode ha reagito a questa notizia senza scomporsi e non sembrava sorpreso, ma i tecnici hanno comunque preso a cuore la sua situazione e hanno promesso di lavorare sul suo equipaggiamento per neutralizzare eventuali strumenti di sorveglianza nascosti. Quando gli analisti hanno comunicato a Camille le loro scoperte, lui si è appoggiato al muro e ha osservato per diverso tempo lo schermo in silenzio, dopodiché ha alzato lo sguardo e ha chiesto: \"Se voi foste dall'altro lato della videosorveglianza, intenti a fissare una persona che conoscete... qual è la prima cosa che vi verrebbe in mente?\" \nGli analisti hanno dato risposte di ogni genere. Camille è rimasto in silenzio, senza rispondere. Alla fine, ha lasciato un biglietto nel rapporto. \n\"Così simili, eppure così diversi nella sostanza. Perché?\" \nVuole una risposta a questa domanda. Ne ha bisogno.",
+      "file3": "Camille aveva sempre pensato di saper tenere a bada le proprie emozioni. Rispetto agli altri operatori, che non avevano freni inibitori, lui se la cavava bene. Purtroppo, alcuni movimenti involontari e un linguaggio del corpo quasi impercettibile lo tradivano ugualmente. \nQuando è frustrato, Camille abbassa lo sguardo ed esamina una crepa a terra (se ce ne sono) oppure si massaggia distrattamente una scapola. Quando vuole evitare un contatto, sposta il baricentro sulla gamba destra, pronto a una fuga immediata. Quando esita o è a disagio, strofina con le dita la vecchia chiave che porta appesa alla vita. \nMolti operatori della Endfield hanno un oggetto o un cimelio su cui concentrarsi. Per esempio, Yvonne tratta Gelobyte come un amico fidato, Rossi ha il suo pugnale e Da Pan porta sempre sulla schiena il suo fidato wok di ferrium. Camille è diverso. Se qualcuno gli chiedesse della sua chiave, lui allontanerebbe subito la mano, come se l'oggetto si fosse trasformato in un tizzone ardente. Terrebbe le labbra serrate e si rifiuterebbe di rispondere. \nUn esperto capirebbe subito che la chiave è stata realizzata a mano, ricavata da qualcosa di simile a un carillon, ma Camille non sa nulla di artigianato. Non risultano proprietà a suo nome e nessuno sa cosa apra quella chiave. \nCol tempo, tutti avevano capito che era meglio non fare domande su quell'oggetto. \nAlla fine, Camille aveva confessato l'origine della chiave durante una normale chiacchierata: era un regalo a cui aveva lavorato personalmente suo fratello minore (lo stesso che aveva tagliato i ponti con lui), parte della loro casa a Seš'qa. Camille aveva venduto l'abitazione dopo un incidente e non vi è più tornato. La chiave era puramente decorativa e la sua abitudine di toccarla era da attribuirsi alla nostalgia... e forse a un tocco di inspiegabile noia. Detto ciò, Camille aveva poi riposto la chiave in una tasca. \nRicordava il dolore lancinante, come se un pezzo di carne gli venisse strappato dal corpo, e un passato oscuro ed estenuante che sembrava non avere mai fine. Il regalo gli era stato offerto quando c'era ancora sincerità. Il Custode era di fronte a un dilemma a cui non voleva più pensare. \nQualche giorno più tardi, Camille fece visita all'ufficio dell'Endministrator, dopo aver ricevuto un toast su Baker. L'Endministrator lo accolse con un sorriso e una nuova chiave in mano. \n\"Queste chiavi e serrature sono rarissime, ci è voluto parecchio per realizzarle\" disse. \"Voglio solo che tu sappia che per te sulla Dijiang ci sarà sempre una porta che puoi aprire.\" \nCamille era sorpreso. Strinse le dita attorno alla chiave e si voltò. Cercò di parlare, ma la sua voce era strozzata come quella di un crestalone con il collo stretto in una morsa d'acciaio. Alla fine, riuscì a dire soltanto una frase appena udibile: \"Grazie\". \nNon tutti conoscono il linguaggio del corpo di Camille, ma tutti sanno che il tintinnio della nuova chiave sulla vecchia è un rumore felice, perché in quel momento, aveva provato una grande gioia.",
+      "file4": "FONTE: Un manoscritto strappato \nIl primo riflesso in cui si specchia un bambino, generalmente, è negli occhi della madre. Una madre ti osserva e sussurra piano queste parole: \"Benvenuto al mondo\". Apri gli occhi per guardarla a tua volta, con la stessa concentrazione di un marinaio intento ad attraversare l'oceano. Quando il luccichio della luce sbiadisce, ti ritrovi riflesso negli occhi di lei. \nPotente, debole, detestabile, adorabile, puro, corrotto... Hai riconosciuto il riflesso nello specchio: sei tu. \nE se il primo specchio non fosse stato tua madre? E se avessi aperto gli occhi prima ancora di emettere il primo vagito? L'oceano intorno a te ondeggiava come una culla dondolante e qualcuno premeva contro le tue dita. Era fastidioso, ma anche rilassante. Non sapevi chi fosse questa persona, ma sbirciando attraverso i fluidi torbidi, avevi notato un altro paio di occhi sfocati, dove avevi visto il tuo riflesso. In quell'istante, qualcosa di più veloce di un lampo ti attraversò l'anima. \nEra nato con te. Eravate migliori amici, eppure litigavate di continuo. Non riuscivi a fare a meno di guardarlo negli occhi per vedere il tuo riflesso... Lui era la regola e il controllo, il tuo metro di paragone e il canale tramite cui ti nutrivi del mondo. D'altro canto, lui si affidava a te. Ti rispettava e ti invidiava. I giorni passavano e il tuo riflesso nei suoi occhi diventava sempre più perfetto. \nPoi arrivò il giorno. La prima crepa nello specchio. Poi un'altra, un'altra e un'altra ancora, finché lo specchio si ruppe. La tua immagine era sparita. Arrivò la tempesta, il fato mormorò e gli oceani si ritirarono nelle profondità. Ti eri guadagnato una cicatrice che non si sarebbe mai rimarginata, avevi perso metà della tua anima ed eri stato costretto a brandire l'arma contro di lui. Era l'unico modo per trafiggere l'odio che bruciava più dell'amore e ricomporre ciò che si era rotto. \nE in quel momento, non avevi ancora capito... \n... Che tu eri stato il suo primo specchio. \n\nFONTE: Un ritaglio di giornale sbiadito \nIncursioni di Fenditerra in città - Seš'qa vuole fondare un'organizzazione anti-stregoneria \nI predoni Fenditerra guidati da Jakub Meissen, traditore e disertore della città fluttuante, sono diventati un pericolo pubblico per la Cintura civilizzata. Le forze di Jakub hanno occupato una fattoria di Originium, trasformandola nella loro base operativa, e hanno inviato gruppi di predoni per spargere Originium e saccheggiare. \nSolo due sere prima, una città ai margini della Cintura era stata attaccata da predoni guidati da un Vampiro, luogotenente di Jakub. La città si trovava in una zona non ancora rivendicata dalle fazioni talossiane ed era mal difesa. Tuttavia, un altro Vampiro, proveniente da Seš'qa, ha giocato un ruolo cruciale nello sventare l'incursione. Potendo contare sulla conoscenza della stregoneria Sarkaz, il Vampiro difensore ha sabotato la strumentazione militare dei predoni e ha piantato l'arma nel petto del loro capo, costringendolo alla ritirata. Al momento, il capo dei predoni è nascosto e Seš'qa sta monitorando costantemente la zona per rintracciarlo. \nSeš'qa si è assunta la responsabilità del tradimento di Jakub. Stando alle ultime notizie, la leadership della città fluttuante ha intenzione di istituire un'organizzazione volta a sventare i crimini commessi con la stregoneria Sarkaz e catturare i traditori."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "Abilità di combattimento <@ba.key>Esorcismo ardente</> migliorata: l'abilità applica <@ba.vup>+{0-weak_scale:0%}</> di <#ba.weak>Indebolimento</> e <@ba.vup>+{vulnerable_scale:0%}</> di <#ba.firevul>Suscettibilità al fuoco</>. +<@ba.vup>{bat_duration:0}</> s di durata dei <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitanti</>.",
+      "name": "Lancia consacrata dal fuoco"
+    },
+    "potential2": {
+      "description": "Agilità <@ba.vup>+{Agi:0}</>, Intelletto <@ba.vup>+{Wisd:0}</>.",
+      "name": "Segugio della stregoneria"
+    },
+    "potential3": {
+      "description": "Abilità combo <@ba.key>Spina trafiggicuore</> migliorata: tempo di recupero di <@ba.vup>{coolDown:0}</> s. <@ba.key>Spina trafiggicuore</> e <@ba.key>Caccia spietata</> migliorate: i moltiplicatori danni aumentano a <@ba.vup>{atk_scale_1_1:0.0}</> volte rispetto all'originale e il recupero PA aumenta a <@ba.vup>{atb:0.##}</> volte rispetto all'originale.",
+      "name": "Neutralizzatore spinato"
+    },
+    "potential4": {
+      "description": "Abilità suprema <@ba.key>Diluvio di sangue</> migliorata: <@ba.vup>-{1-costvalue:0%}</> al costo di energia suprema.",
+      "name": "Sigillo di Agašlehem"
+    },
+    "potential5": {
+      "description": "Talento <@ba.key>Risveglio della fonte sanguigna</> migliorato: <@ba.vup>+{atk_up:0%}</> al potenziamento dei <@ba.fire>danni da fuoco</> per accumulo.",
+      "name": "Patto sanguigno"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Ritorno all'eternità",
+      "author": "およ",
+      "description": "Avanza nel ciclo infinito finché non incontri l'estremità in frantumi: allora, sarai di nuovo una cosa unica."
+    },
+    "potential3": {
+      "name": "Un fiero inizio",
+      "author": "起ID无能",
+      "description": "Il passato è come una goccia di pioggia. Affrontalo a testa alta, così che non trabocchi dal tuo cuore."
+    },
+    "potential5": {
+      "name": "Fuga dall'ombra",
+      "author": "se_eeeee",
+      "description": "Si liberò dall'ombra oscura che lo attanagliava come uno spinoso rampicante che irrompe dalla terra."
+    }
+  }
+}

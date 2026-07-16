@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Não divulgado"
   },
   "skills": {
     "basicAttack": {
@@ -39,7 +43,8 @@
         "dmgMultiplier": "Multiplicador DNO",
         "crystalShatteringDmgMultiplier": "Multiplicador DNO Fragmentação de Cristal",
         "stagger": "Desorientação",
-        "sealDurationS": "Duração do Selo (s)"
+        "sealDurationS": "Duração do Selo (s)",
+        "ultimateEnergyGain": "Ganho de Energia Suprema"
       },
       "name": "Sequência de Vedação",
       "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <#ba.originium>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado <#ba.consume>consome</> os <#ba.originium>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional."
@@ -64,27 +69,29 @@
     },
     "talent1": {
       "levels": [
-        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular.",
-        "Quando os <#ba.originium>Cristais de Originium</> anexados ao inimigo são <#ba.consume>consumidos</>, Endministrator concede ATQ <@ba.vup>+ {atk_up:0%}</> por {duration:0} s. Esse efeito não pode se acumular."
+        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s.",
+        "Acertar pelo menos 2 alvos com a habilidade de batalha ou suprema reduz o Tempo de Recarga do combo de habilidades em {0,0:0.0} s."
       ],
       "name": "Desintegração da Essência"
     },
     "talent2": {
       "levels": [
-        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>.",
-        "Inimigos com <#ba.originium>Cristais de Originium</> anexados sofrem DNO Físico <@ba.vup>+{dmg:0%}</>."
+        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico.",
+        "Os inimigos selados por <#ba.originium>Cristais de Originium</> recebem <@ba.vup>{0,0:0%}</> mais DNO Físico."
       ],
       "name": "Estase do Espaço Real"
     },
     "baseSkill1": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
     "baseSkill2": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>CODINOME: Endministrator \nGÊNERO: ■■ \nAUTENTICAÇÃO: ■■ \nDATA DE NASCIMENTO: ■■ \nRAÇA: ■■ \n\nVocê não se lembra de nada. \nSuas memórias estão em pedaços, como sonhos reduzidos a pó, desaparecendo ao menor pensamento. \nÀs vezes, isso deixa você impaciente, às vezes, desconfortável, mas ainda assim proporciona a você um momento de silêncio para respirar e pensar. \nNa maioria das vezes, porém, não há pausa para dúvidas. Você simplesmente confia em quem está diante de você e segue em frente. \nTalvez você tenha escondido suas memórias do passado, mesmo que por pouco tempo... \n...e, por isso, não se lembra de nada. </>",
+      "humanResources": "<@profile.key>Você viveu por toda a história de Talos-II...</>",
+      "file1": "<@profile.key>Mas... o que você fará com seu futuro?</>"
+    }
   },
   "potentials": {
     "potential1": {
@@ -96,8 +103,8 @@
       "name": "Reflexão da Autoridade"
     },
     "potential3": {
-      "description": "???",
-      "name": "???"
+      "description": "<@ba.key>Sequência de Bombardeio</> Suprema melhorada: após <#ba.consume>consumir</> <#ba.originium>Cristais de Originium</>, Endministrator ganha <@ba.vup>{usp:0}</> de Energia Suprema.\n<@ba.info>Esse efeito não se beneficia de outros bônus.</>",
+      "name": "A Guia"
     },
     "potential4": {
       "description": "???",
@@ -119,7 +126,7 @@
       "author": "廻轉",
       "description": "Você está bem no centro do cruzamento."
     },
-    "potential6": {
+    "potential5": {
       "name": "Compreensão Total",
       "author": "수줍(Sjoop)",
       "description": "Confiança e fé cristalizadas na palma da sua mão. O primeiro fragmento se chama história. Seu outro nome é Civilização e Vida."

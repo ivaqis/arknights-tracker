@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Cerca de Alta Voltagem",
+    "desc": "Uma cerca de alta voltagem ativa é intransponível. Siga o cabo, encontre o interruptor e desligue a cerca para garantir a passagem segura."
+  },
+  "adv.eswitch": {
+    "name": "Dispositivo Reativo",
+    "desc": "Um dispositivo reativo altera seu modo de operação quando atacado ou atingido por uma explosão. É frequentemente usado como interruptor para desligar <#adv.electricFence>Cercas de Alta Voltagem</> ou ativar <#adv.jumpMachine>Dispositivos de Salto</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Dispositivo de Salto",
+    "desc": "O operador controlado pode usar os Dispositivos de Salto para saltar por distâncias maiores ou alcançar lugares altos inacessíveis por saltos normais.\nBasta ficar de pé em cima de um Dispositivo de Salto energizado e pular para usá-lo."
+  },
+  "adv.powerTerminal": {
+    "name": "Nexus Elétrico",
+    "desc": "Um nexus elétrico normalmente é implantado no final de uma linha de transmissão de energia. Conecte-o à rede elétrica para fornecer energia para as instalações nas proximidades. Os Nexus Elétricos são usados frequentemente para energizar portões e interruptores. Forneça energia para os Nexus Elétricos com Torres de Transmissão. Isso garante controle de acesso a portões ou interruptores vinculados a ele."
+  },
+  "ba.absorb": {
+    "name": "Absorver",
+    "desc": "Uma forma de encerrar antecipadamente uma penalidade Física ou de Artes. <@ba.key>Absorver</> não é o mesmo que <#ba.consume>consumir</>."
+  },
+  "ba.airborne": {
+    "name": "Status Físico: Levantar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidade</> a um inimigo. Se o inimigo já estiver <#ba.noguard>Vulnerável</>, então adiciona 1 acúmulo de <#ba.noguard>Vulnerabilidade</> e causa <@ba.phy>DNO Físico</> e <@ba.poise>Desorientação</>."
+  },
+  "ba.burning": {
+    "name": "Reação de Artes: Combustão",
+    "desc": "Um inimigo com <@ba.burning>Combustão</> recebe <@ba.fire>DNO Térmico</> ao longo do tempo.\n<@ba.burning>Combustão</> = Uma <#ba.spellinflict>Inflição Não Térmica</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Inflição Térmica</>"
+  },
+  "ba.burningonchar": {
+    "name": "Penalidade do Operador: Combustão",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.fireinflict>Inflição Térmica</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.burning>Combustado</>: recebe continuamente <@ba.fire>DNO Térmico</> que ignora seu DEF."
+  },
+  "ba.combo": {
+    "name": "Conexão",
+    "desc": "A próxima habilidade de batalha ou habilidade suprema conjurada pela equipe consome o benefício de Conexão e causa mais DNO, enquanto as habilidades de batalha recebem um aumento maior. Efeitos do mesmo tipo podem se acumular, mas com retornos cada vez menores."
+  },
+  "ba.conduct": {
+    "name": "Reação de Artes: Eletrificação",
+    "desc": "Um inimigo com <@ba.conduct>Eletrificação</> recebe mais <#ba.spelldmg>DNO Artes</>.\n<@ba.conduct>Eletrificação</> = Uma <#ba.spellinflict>Inflição Não Elétrica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Inflição Elétrica</>"
+  },
+  "ba.conductonchar": {
+    "name": "Penalidade do Operador: Eletrificação",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.pulseinflict>Inflição Elétrica</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.conduct>Eletrificado</>: atordoamento temporário e recebe mais <#ba.spelldmg>DNO Artes</> por uma certa duração."
+  },
+  "ba.consume": {
+    "name": "Consumo de Penalidades",
+    "desc": "Diversas penalidades Físicas e de Artes podem ser encerradas mais cedo. Por exemplo, <#ba.crush>Esmagar</> consome penalidades de <#ba.noguard>Vulnerabilidade</>, enquanto <#ba.burning>Combustão</> consome penalidades de <#ba.spellinflict>Inflição de Artes</>."
+  },
+  "ba.corrupt": {
+    "name": "Reação de Artes: Corrosão",
+    "desc": "Um inimigo com <@ba.corrupt>Corrosão</> perde gradualmente resistência contra todos os elementos. \n<@ba.corrupt>Corrosão</> = Uma <#ba.spellinflict>Inflição Não da Natureza</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Inflição da Natureza</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Penalidade do Operador: Corrosão",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.naturalinflict>Inflição da Natureza</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.corrupt>Corroído</>: ele não consegue correr e sua velocidade de movimento é reduzida por uma certa duração."
+  },
+  "ba.crush": {
+    "name": "Status Físico: Esmagar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidade</> a um inimigo. Se o inimigo já estiver <#ba.noguard>Vulnerável</>, <#ba.consume>consome</> todos os acúmulos de <#ba.noguard>Vulnerabilidade</> e causa <@ba.phy>DNO Físico</> significativo."
+  },
+  "ba.crystbreak": {
+    "name": "Fragmentar",
+    "desc": "Em um inimigo com <#ba.frozen>Solidificação</> ativa, aplicar <#ba.noguard>Vulnerabilidade</> ou efeitos de <#ba.physicalstatus>Status Físico</> irá <#ba.consume>consumir</> a <#ba.frozen>Solidificação</> para acionar Fragmentar e causar <@ba.pd>DNO Físico</> significativo."
+  },
+  "ba.crystburst": {
+    "name": "Explosão de Artes: Crio",
+    "desc": "<#ba.crystinflict>Inflição Crio</> + <#ba.crystinflict>Inflição Crio</> acionará uma <@ba.cryst>Explosão Crio</> que causa <@ba.cryst>DNO Crio</> aos inimigos."
+  },
+  "ba.crystenhance": {
+    "name": "Amp Crio",
+    "desc": "Alvos com Amplificação Crio causam temporariamente mais <@ba.cryst>DNO Crio</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.crystinflict": {
+    "name": "Inflição de Artes: Crio",
+    "desc": "<@ba.crystinflict>Inflição Crio</> é um tipo de <#ba.spellinflict>Inflição de Artes</>. \nAté 4 acúmulos de <@ba.crystinflict>Inflição Crio</> podem ser aplicados, e o acúmulo aciona <#ba.crystburst>Explosão Crio</>. \nUma <#ba.spellinflict>Inflição Não Crio</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Inflição Crio</> = <#ba.frozen>Solidificação</>"
+  },
+  "ba.crystonchar": {
+    "name": "Penalidade do Operador: Inflição Crio",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.crystinflict>Inflição Crio</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.frozen>Solidificado</>: ele não consegue se mover por uma certa duração."
+  },
+  "ba.crystvul": {
+    "name": "Suscetibilidade Crio",
+    "desc": "Alvos suscetíveis a baixas temperaturas sofrem temporariamente mais <@ba.cryst>DNO Crio</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.dispel": {
+    "name": "Dissipar",
+    "desc": "Isso remove penalizações específicas do operador."
+  },
+  "ba.dot": {
+    "name": "DNO ao Longo do Tempo",
+    "desc": "O DNO ao longo do tempo não pode desencadear acertos críticos."
+  },
+  "ba.enhance": {
+    "name": "Amp",
+    "desc": "Alvos amplificados causam mais DNO do elemento para o qual são amplificados. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.fireburst": {
+    "name": "Explosão de Artes: Térmica",
+    "desc": "<#ba.fireinflict>Inflição Térmica</> + <#ba.fireinflict>Inflição Térmica</> acionará uma <@ba.fire>Explosão Térmica</> que causa <@ba.fire>DNO Térmico</> aos inimigos."
+  },
+  "ba.fireenhance": {
+    "name": "Amp Térmica",
+    "desc": "Alvos com Amplificação Térmica causam temporariamente mais <@ba.fire>DNO Térmico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.fireinflict": {
+    "name": "Inflição de Artes: Térmica",
+    "desc": "<@ba.fireinflict>Inflição Térmica</> é um tipo de <#ba.spellinflict>Inflição de Artes</>. \nAté 4 acúmulos de <@ba.fireinflict>Inflição Térmica</> podem ser aplicados, e o acúmulo aciona <#ba.fireburst>Explosão Térmica</>. \nUma <#ba.spellinflict>Inflição Não Térmica</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Inflição Térmica</> = <#ba.burning>Combustão</>"
+  },
+  "ba.fireonchar": {
+    "name": "Penalidade do Operador: Inflição Térmica",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.fireinflict>Inflição Térmica</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.burning>Combustado</>: recebe continuamente <@ba.fire>DNO Térmico</> que ignora seu DEF."
+  },
+  "ba.firevul": {
+    "name": "Suscetibilidade Térmica",
+    "desc": "Alvos suscetíveis ao calor sofrem temporariamente mais <@ba.fire>DNO Térmico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.fracture": {
+    "name": "Status Físico: Romper",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidade</> a um inimigo. Se o inimigo já estiver <#ba.noguard>Vulnerável</>, <#ba.consume>consome</> todos os acúmulos de <#ba.noguard>Vulnerabilidade</>, causa <@ba.phy>DNO Físico</> e aumenta temporariamente o <@ba.pd>DNO Físico</> recebido pelo inimigo."
+  },
+  "ba.frozen": {
+    "name": "Reação de Artes: Solidificação",
+    "desc": "Um inimigo com <@ba.frozen>Solidificação</> não pode se mover, e aplicar <#ba.noguard>Vulnerabilidade</> ou um <#ba.physicalstatus>Status Físico</> ao inimigo aciona o efeito <#ba.crystbreak>Fragmentar</>. \n<@ba.frozen>Solidificação</> = Uma <#ba.spellinflict>Inflição Não Crio</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Inflição Crio</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Penalidade do Operador: Solidificação",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.crystinflict>Inflição Crio</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.frozen>Solidificado</>: ele não consegue se mover por uma certa duração."
+  },
+  "ba.guard": {
+    "name": "Proteger",
+    "desc": "Alvos protegidos sofrem temporariamente DNO reduzido. O número representa o grau de redução. Quando há vários efeitos do mesmo tipo, apenas o mais poderoso é aplicado."
+  },
+  "ba.knockdown": {
+    "name": "Status Físico: Derrubar",
+    "desc": "Aplica <#ba.noguard>Vulnerabilidade</> a um inimigo. Se o inimigo já estiver <#ba.noguard>Vulnerável</>, então adiciona 1 acúmulo de <#ba.noguard>Vulnerabilidade</> e causa <@ba.phy>DNO Físico</> e <@ba.poise>Desorientação</>."
+  },
+  "ba.lastcombo": {
+    "name": "Golpe Final",
+    "desc": "O Golpe Final é a última sequência do ataque básico. Quando o Golpe Final do operador controlado atinge o inimigo, ele também causa <@ba.poise>Desorientação</> e restaura alguns Pontos de Habilidade (PH)."
+  },
+  "ba.naturalburst": {
+    "name": "Explosão de Artes: Natureza",
+    "desc": "<#ba.naturalinflict>Inflição da Natureza</> + <#ba.naturalinflict>Inflição da Natureza</> acionará uma <@ba.natur>Explosão da Natureza</> que causa <@ba.natur>DNO Natureza</> aos inimigos."
+  },
+  "ba.naturalenhance": {
+    "name": "Amp Natureza",
+    "desc": "Alvos com Amplificação da Natureza causam temporariamente mais <@ba.natur>DNO Natureza</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.naturalinflict": {
+    "name": "Inflição de Artes: Natureza",
+    "desc": "<@ba.naturalinflict>Inflição da Natureza</> é um tipo de <#ba.spellinflict>Inflição de Artes</>. \nAté 4 acúmulos de <@ba.naturalinflict>Inflição da Natureza</> podem ser aplicados, e o acúmulo aciona <#ba.naturalburst>Explosão da Natureza</>. \nUma <#ba.spellinflict>Inflição Não da Natureza</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Inflição da Natureza</> = <#ba.corrupt>Corrosão</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Penalidade do Operador: Inflição da Natureza",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.naturalinflict>Inflição da Natureza</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.corrupt>Corroído</>: ele não consegue correr e sua velocidade de movimento é reduzida por uma certa duração."
+  },
+  "ba.naturalvul": {
+    "name": "Suscetibilidade à Natureza",
+    "desc": "Alvos suscetíveis à natureza sofrem temporariamente mais <@ba.natur>DNO Natureza</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.noguard": {
+    "name": "Vulnerável",
+    "desc": "Atingir um inimigo pela primeira vez com uma habilidade com <#ba.physicalstatus>Status Físico</> aplica <@ba.noguard>Vulnerabilidade</> em vez do Status Físico em si.\nUm inimigo <@ba.phy>Vulnerável</> pode ser <#ba.airborne>Levantado</> e <#ba.knockdown>Derrubado</> para adicionar mais acúmulos de Vulnerabilidade (até 4). Atingir um inimigo Vulnerável com <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</> irá <#ba.consume>consumir</> os acúmulos de Vulnerabilidade."
+  },
+  "ba.originium": {
+    "name": "Cristal de Originium",
+    "desc": "O combo de habilidades de Endministrator anexa Cristais de Originium aos inimigos e os imobiliza."
+  },
+  "ba.physicalenhance": {
+    "name": "Amp Física",
+    "desc": "Alvos com Amplificação Física causam temporariamente mais <@ba.pd>DNO Físico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.physicalstatus": {
+    "name": "Status Físico",
+    "desc": "Status Físicos são penalidades físicas aplicadas ao inimigo. Eles incluem: <#ba.airborne>Levantado</>, <#ba.knockdown>Derrubado</>, <#ba.crush>Esmagado</> e <#ba.fracture>Rompido</>."
+  },
+  "ba.physicalvul": {
+    "name": "Suscetibilidade Física",
+    "desc": "Alvos suscetíveis a elementos físicos sofrem temporariamente mais <@ba.pd>DNO Físico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.poiseknot": {
+    "name": "Nó de Desorientação",
+    "desc": "Alguns inimigos poderosos têm <@ba.poise>Nós de Desorientação</>. Aplique <@ba.poise>Desorientação</> suficiente para alcançar o <@ba.poise>Nó de Desorientação</> e interromper esses inimigos e fazê-los tropeçar."
+  },
+  "ba.pulseburst": {
+    "name": "Explosão de Artes: Elétrica",
+    "desc": "<#ba.pulseinflict>Inflição Elétrica</> + <#ba.pulseinflict>Inflição Elétrica</> acionará uma <@ba.pulse>Explosão Elétrica</> que causa <@ba.pulse>DNO Elétrico</> aos inimigos."
+  },
+  "ba.pulseenhance": {
+    "name": "Amp Elétrica",
+    "desc": "Alvos com Amplificação Elétrica causam temporariamente mais <@ba.pulse>DNO Elétrico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.pulseinflict": {
+    "name": "Inflição de Artes: Elétrica",
+    "desc": "<@ba.pulseinflict>Inflição Elétrica</> é um tipo de <#ba.spellinflict>Inflição de Artes</>. \nAté 4 acúmulos de <@ba.pulseinflict>Inflição Elétrica</> pode ser aplicado e o acúmulo aciona <#ba.pulseburst>Explosão Elétrica</>. \nUma <#ba.spellinflict>Inflição Não Elétrica</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Inflição Elétrica</> = <#ba.conduct>Eletrificação</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Penalidade do Operador: Inflição Elétrica",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <@ba.pulseinflict>Inflição Elétrica</> aos operadores. \nCom 4 acúmulos, o operador se torna <@ba.conduct>Eletrificado</>: atordoamento temporário e recebe mais <#ba.spelldmg>DNO Artes</> por uma certa duração."
+  },
+  "ba.pulsevul": {
+    "name": "Suscetibilidade Elétrica",
+    "desc": "Alvos suscetíveis à eletricidade sofrem temporariamente mais <@ba.pulse>DNO Elétrico</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.return": {
+    "name": "Devolução de PH",
+    "desc": "Após gastar PH e determinados critérios serem atendidos, parte dos PH gastos será devolvida. \nA Devolução de PH não significa \"Recuperação de PH\" e não ativa os efeitos acionados por Recuperação de PH. Gastar os PH devolvidos também não fornece Energia Suprema."
+  },
+  "ba.rossi": {
+    "name": "Marca de Garra de Navalha",
+    "desc": "A habilidade de batalha de Rossi aplica um status especial no inimigo. O alvo afetado sofrerá <@ba.pd>DNO Físico</> ao longo do tempo e sofrerá valores maiores de DNO Físico Recebido e DNO Térmico Recebido."
+  },
+  "ba.shield": {
+    "name": "Escudo",
+    "desc": "O escudo pode absorver dano enquanto estiver ativo. Alguns escudos podem absorver apenas tipos específicos de DNO."
+  },
+  "ba.slow": {
+    "name": "Lentidão",
+    "desc": "Alvos desacelerados sofrem redução temporária da velocidade de movimento. O número representa o grau de redução. Quando há vários efeitos do mesmo tipo, apenas o mais poderoso é aplicado."
+  },
+  "ba.speedup": {
+    "name": "Rapidez",
+    "desc": "Aumenta temporariamente a velocidade de movimento de um alvo. O número representa o grau do aumento de velocidade. Efeitos do mesmo tipo podem se acumular até atingir o limite de velocidade."
+  },
+  "ba.spellburst": {
+    "name": "Explosão de Artes",
+    "desc": "As <@ba.key>Explosões de Artes</> são acionadas pelo acúmulo de <#ba.spellinflict>Inflições de Artes</> dos mesmos elementos. Elas incluem <#ba.fireburst>Explosão Térmica</>, <#ba.pulseburst>Explosão Elétrica</>, <#ba.crystburst>Explosão Crio</> e <#ba.naturalburst>Explosão da Natureza</>."
+  },
+  "ba.spelldmg": {
+    "name": "Tipo DNO",
+    "desc": "Os danos podem ser divididos em <@ba.pd>DNO Físico</>, <@ba.key>DNO Artes</> e <@ba.ether>DNO Æther</>.\nO <@ba.key>DNO Artes</> pode ser adicionalmente dividido em <@ba.fire>DNO Térmico</>, <@ba.pulse>DNO Elétrico</>, <@ba.cryst>DNO Crio</> e <@ba.natur>DNO Natureza</>."
+  },
+  "ba.spellenhance": {
+    "name": "Amp Artes",
+    "desc": "Alvos com Amplificação de Artes causam temporariamente mais <#ba.spelldmg>DNO Artes</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.spellinflict": {
+    "name": "Inflição de Artes",
+    "desc": "As <@ba.key>Inflições de Artes</> são penalidades de Artes especiais infligidas no inimigo. Existem 4 elementos de Inflição de Artes: <#ba.fireinflict>Inflição Térmica</>, <#ba.pulseinflict>Inflição Elétrica</>, <#ba.crystinflict>Inflição Crio</> e <#ba.naturalinflict>Inflição da Natureza</>. \nAté 4 acúmulos de <@ba.key>Inflição de Artes</> do mesmo elemento podem ser aplicados."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Inflições de Artes/Reações de Artes nos Operadores",
+    "desc": "Algumas habilidades de inimigos podem aplicar acúmulos de <#ba.burningonchar>Inflição Térmica</>, <#ba.conductonchar>Inflição Elétrica</>, <#ba.frozenonchar>Inflição Crio</> ou <#ba.corruptonchar>Inflição da Natureza</>.\nCom 4 acúmulos de Inflições de Artes, o operador fica <#ba.burningonchar>Combustado</>, <#ba.conductonchar>Eletrificado</>, <#ba.frozenonchar>Solidificado</> ou <#ba.corruptonchar>Corroído</>, respectivamente."
+  },
+  "ba.spellstatus": {
+    "name": "Reação de Artes",
+    "desc": "<@ba.key>Reações de Artes</> são penalidades de Artes que podem ser aplicadas ao inimigo. Elas incluem: <#ba.burning>Combustão</>, <#ba.conduct>Eletrificação</>, <#ba.frozen>Solidificação</> e <#ba.corrupt>Corrosão</>."
+  },
+  "ba.spellvul": {
+    "name": "Suscetibilidade a Artes",
+    "desc": "Alvos suscetíveis a Artes sofrem temporariamente mais <#ba.spelldmg>DNO Artes</>. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.statuslevel": {
+    "name": "Nível de Status",
+    "desc": "O Nível de Status é o número de acúmulos de <#ba.noguard>Vulnerabilidade</> ou <#ba.spellinflict>Inflição de Artes</> (máx. 4) <#ba.consume>consumidos</> ao acionar um <#ba.physicalstatus>Status Físico</> ou <#ba.spellstatus>Reação de Artes</>. Quanto maior o <#ba.statuslevel>Nível de Status</>, mais forte será o <#ba.physicalstatus>Status Físico</> ou a <#ba.spellstatus>Reação de Artes</> resultante."
+  },
+  "ba.vulnerable": {
+    "name": "Suscetível",
+    "desc": "Alvos suscetíveis sofrem temporariamente mais DNO do elemento ao qual são suscetíveis. O número representa o grau de aumento. Efeitos do mesmo tipo podem se acumular."
+  },
+  "ba.weak": {
+    "name": "Enfraquecer",
+    "desc": "Alvos enfraquecidos causam temporariamente DNO reduzido. O número representa o grau de redução. Efeitos do mesmo tipo podem se acumular de forma não linear."
+  },
+  "fac.hub": {
+    "name": "Núcleo de Automação do Protocolo",
+    "desc": "O Núcleo de Automação do Protocolo (NAP) é a instalação central da Fábrica do Complexo Automatizado Industrial (CAI). O gerenciamento de armazenamento se torna disponível na Área Central do CAI do NAP."
+  },
+  "item.bbflower": {
+    "name": "Aketina",
+    "desc": "Uma planta que contém substâncias inflamáveis e explosivas. Pode ser colhida na natureza.\nA planta pode ser cultivada nas instalações da Fábrica do CAI ou em <#item.portSoilBbflower>Lotes de Aketina</>.\nEla também pode ser processada nas instalações da Fábrica do CAI. Por exemplo, ela pode ser triturada para produzir <#item.bbflowerPowder>Pó de Aketina</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Pó de Aketina",
+    "desc": "Um pó produzido pela trituração de <#item.bbflower>Aketina</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais."
+  },
+  "item.bbflowerSeed": {
+    "name": "Semente de Aketina",
+    "desc": "Sementes colhidas de <#item.bbflower>Aketina</> pelas instalações da Fábrica do CAI.\nAs Sementes de Aketina podem então ser plantadas e cultivadas nas instalações da Fábrica do CAI para produzir Aketina.\nOpcionalmente, é possível usar Sementes de Aketina e <#item.carbonMtl>Carbono</> na tela <#sys.manualCraftField>Plantio</> para confeccionar <#item.portSoilBbflower>Lotes de Aketina</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Cápsula de Cervina [C]",
+    "desc": "Uma cápsula feita pela <#sys.manualCraft>confecção</> ou o enchimento de <#item.plantMossPowder1>Pó de Flor de Cervina</> em uma <#item.glassBottle>Garrafa de Ametista</> nas instalações da Fábrica do CAI.\nUse para restaurar o PV de um operador. Ela também pode ser usada como um <#sys.tacticalItem>item tático</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbono",
+    "desc": "Um material produzido pelo refino de <#item.plantMoss1>Flores de Cervina</> com instalações da Fábrica do CAI.\nO Carbono é essencial para confecção de lotes <#sys.manualCraftField>agrícolas</> e também pode ser usado para produzir outros materiais."
+  },
+  "item.crystalShell": {
+    "name": "Origocrosta",
+    "desc": "Uma crosta cristalina produzida pelo refino de <#item.originium>Minério de Originium</> nas instalações da Fábrica do CAI.\nEla pode ser usada para produzir outros materiais."
+  },
+  "item.glassBottle": {
+    "name": "Garrafa de Ametista",
+    "desc": "Uma garrafa produzida pela moldagem de <#item.quartzGlass>Fibras de Ametista</> nas instalações da Fábrica do CAI.\nEla pode ser usada para produzir outros materiais."
+  },
+  "item.glassCmpt": {
+    "name": "Peça de Ametista",
+    "desc": "Uma peça produzida pela montagem de <#item.quartzGlass>Fibras de Ametista</> nas instalações da Fábrica do CAI.\nEla pode ser usada para produzir outros materiais."
+  },
+  "item.ironEnrPowder": {
+    "name": "Pó de Ferrium Denso",
+    "desc": "Um pó fino e denso produzido pela moagem de <#item.ironPowder>Pó de Ferrium</> e <#item.plantMossPowder3>Pó de Folha Rugosa</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "Um lingote de metal produzido pelo refino de <#item.ironOre>Minério de Ferrium</> nas instalações da Fábrica do CAI. Ele pode ser usado para produzir outros materiais."
+  },
+  "item.ironOre": {
+    "name": "Minério de Ferrium",
+    "desc": "Um minério que pode ser coletado em pontos de mineração de Minério de Ferrium na natureza.\nEle também pode ser processado nas instalações da Fábrica do CAI. Por exemplo, ele pode ser refinado para produzir <#item.ironNugget>Ferrium</>."
+  },
+  "item.ironPowder": {
+    "name": "Pó de Ferrium",
+    "desc": "Um pó produzido pela trituração de <#item.ironNugget>Ferrium</> nas instalações da Fábrica do CAI. Ele pode ser usado para produzir outros materiais."
+  },
+  "item.originium": {
+    "name": "Minério de Originium",
+    "desc": "Um minério que pode ser coletado em pontos de mineração de Minério de Originium na natureza. Ele pode ser usado para a geração de energia na Fábrica do CAI.\nEle também pode ser processado nas instalações da Fábrica do CAI. Por exemplo, ele pode ser refinado para produzir <#item.crystalShell>Origocrosta</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Pó de Originium Denso",
+    "desc": "Um pó fino e denso produzido pela moagem de <#item.originiumPowder>Pó de Originium</> e <#item.plantMossPowder3>Pó de Folha Rugosa</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais."
+  },
+  "item.originiumPowder": {
+    "name": "Pó de Originium",
+    "desc": "Um pó produzido pela trituração de <#item.originium>Minério de Originium</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais."
+  },
+  "item.plantMoss1": {
+    "name": "Flor de Cervina",
+    "desc": "A Flor de Cervina é uma planta que cresce na natureza e é conhecida por suas flores de cores vibrantes.\nA planta também pode ser cultivada em instalações da Fábrica do CAI ou em <#item.portSoilMoss1>Lotes de Flor de Cervina</>.\nEla pode ser usada para confeccionar <#sys.tacticalItem>itens táticos</> ou outros materiais."
+  },
+  "item.plantMoss3": {
+    "name": "Folha Rugosa",
+    "desc": "Uma planta caracterizada por folhas ásperas e granuladas. Pode ser colhida na natureza.\nA planta pode ser cultivada nas instalações da Fábrica do CAI ou em <#item.portSoilMoss3>Lotes de Folha Rugosa</>.\nEla também pode ser processada nas instalações da Fábrica do CAI. Por exemplo, ela pode ser triturada para produzir <#item.plantMossPowder3>Pó de Folha Rugosa</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Pó de Flor de Cervina",
+    "desc": "Um pó feito pela <#sys.manualCraft>confecção</> ou trituração de <#item.plantMoss1>Flores de Cervina</> nas instalações da Fábrica do CAI.\nUse para restaurar o PV de um operador. Ele também pode ser usado como um <#sys.tacticalItem>item tático</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Pó de Folha Rugosa",
+    "desc": "Um pó produzido pela trituração de <#item.plantMoss3>Folha Rugosa</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais, em geral por moagem."
+  },
+  "item.plantMossSeed1": {
+    "name": "Semente de Flor de Cervina",
+    "desc": "Sementes colhidas de <#item.plantMoss1>Flores de Cervina</> pelas instalações da Fábrica do CAI.\nAs Sementes de Flor de Cervina podem então ser plantadas e cultivadas nas instalações da Fábrica do CAI para produzir Flores de Cervina. Opcionalmente, é possível usar Sementes de Flor de Cervina e <#item.carbonMtl>Carbono</> na tela <#sys.manualCraftField>Plantio</> para confeccionar <#item.portSoilMoss1>Lotes de Flor de Cervina</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Semente de Folha Rugosa",
+    "desc": "Sementes colhidas de <#item.plantMoss3>Folha Rugosa</> pelas instalações da Fábrica do CAI.\nAs Sementes de Folha Rugosa podem então ser plantadas e cultivadas nas instalações da Fábrica do CAI para produzir Folha Rugosa.\nOpcionalmente, é possível usar Sementes de Folha Rugosa e <#item.carbonMtl>Carbono</> na tela <#sys.manualCraftField>Plantio</> para confeccionar <#item.portSoilMoss3>Lotes de Folha Rugosa</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Cervina Vermelha",
+    "desc": "A Cervina Vermelha é uma planta que cresce na natureza selvagem e é conhecida por suas flores excepcionalmente brilhantes.\nExiste uma chance de encontrar Cervina Vermelha ao colher <#item.plantMoss1>Flor de Cervina</> na natureza.\nElas podem ser usadas para confeccionar <#sys.tacticalItem>itens táticos</>."
+  },
+  "item.plantSp1": {
+    "name": "Centeio de Junco",
+    "desc": "O Centeio de Junco é um tipo de cultura plantável que pode ser coletada na natureza. Ele também pode ser obtido por meio de cultivo de <#item.portSoilSp1>Lotes de Centeio de Junco</>.\nEle pode ser usado diretamente na confecção de <#sys.manualCraftDish>Alimentos e Medicamentos Finos</> (A&M Finos)."
+  },
+  "item.plantSpSeed1": {
+    "name": "Semente de Centeio de Junco",
+    "desc": "Sementes produzidas pela coleta de sementes de plantas de <#item.plantSp1>Centeio de Junco</> nas instalações da Fábrica do CAI.\nPegue Sementes de Centeio de Junco e <#item.carbonMtl>Carbono</> e, em seguida, vá até a tela <#sys.manualCraftField>Plantio</> para confeccioná-los em <#item.portSoilSp1>Lotes de Centeio de Junco</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Lote de Aketina",
+    "desc": "Os Lotes de Aketina podem ser cultivados na Fazenda Ecológica para produzir <#item.bbflower>Aketina</>.\nEsses lotes podem ser confeccionados com o uso de <#item.bbflowerSeed>Sementes de Aketina</> e <#item.carbonMtl>Carbono</> na tela Plantio.\nColher um lote totalmente cultivado fornece uma grande quantidade de Aketina."
+  },
+  "item.portSoilMoss1": {
+    "name": "Lote de Flor de Cervina",
+    "desc": "Os Lotes de Flor de Cervina podem ser cultivados na Fazenda Ecológica para produzir <#item.plantMoss1>Flor de Cervina</>.\nEsses lotes podem ser confeccionados com o uso de <#item.plantMossSeed1>Sementes de Flor de Cervina</> e <#item.carbonMtl>Carbono</> na tela <#sys.manualCraftField>Plantio</>.\nColher um lote totalmente cultivado oferece uma chance maior de obter um bônus de <#item.plantMossSpc1>Cervina Vermelha</>."
+  },
+  "item.portSoilMoss3": {
+    "name": "Lote de Folha Rugosa",
+    "desc": "Os Lotes de Folha Rugosa podem ser cultivados na Fazenda Ecológica para produzir <#item.plantMoss3>Folha Rugosa</>.\nEsses lotes podem ser confeccionados com o uso de <#item.plantMossSeed3>Sementes de Folha Rugosa</> e <#item.carbonMtl>Carbono</> na tela Plantio.\nColher um lote totalmente cultivado fornece uma grande quantidade de Folha Rugosa."
+  },
+  "item.portSoilSp1": {
+    "name": "Lote de Centeio de Junco",
+    "desc": "Os Lotes de Centeio de Junco podem ser cultivados na Fazenda Ecológica para produzir <#item.plantSp1>Centeio de Junco</>.\nEsses lotes podem ser confeccionados com o uso de <#item.plantSpSeed1>Sementes de Centeio de Junco</> e <#item.carbonMtl>Carbono</> na tela Plantio.\nColher um lote totalmente cultivado fornece uma grande quantidade de Centeio de Junco."
+  },
+  "item.procBattery1": {
+    "name": "Bateria CB do Vale",
+    "desc": "Uma bateria produzida pelo empacotamento de <#item.glassCmpt>Peças de Ametista</> e <#item.originiumPowder>Pó de Originium</> nas instalações da Fábrica do CAI.\nEla pode ser usada para fornecer energia, carregar instalações ou ser comercializada em diversos postos avançados."
+  },
+  "item.procBomb": {
+    "name": "Explosivo Industrial",
+    "desc": "Explosivos industriais são um tipo de explosivo que pode ser produzido.\nEles são fabricados utilizando a Unidade de Embalagem, uma instalação da Fábrica do CAI. Os materiais necessários são: <#item.glassCmpt>Peças de Ametista</> e <#item.bbflowerPowder>Pó de Aketina</>.\nUse Explosivos Industriais para causar DNO aos inimigos ou destruir objetos dentro do raio da explosão."
+  },
+  "item.quartzGlass": {
+    "name": "Fibra de Ametista",
+    "desc": "Uma fibra produzida pelo refino de <#item.quartzSand>Minério de Ametista</> nas instalações da Fábrica do CAI.\nEla pode ser usada para produzir outros materiais."
+  },
+  "item.quartzPowder": {
+    "name": "Pó de Ametista",
+    "desc": "Um pó produzido pela trituração de <#item.quartzGlass>Fibra de Ametista</> nas instalações da Fábrica do CAI.\nEle pode ser usado para produzir outros materiais."
+  },
+  "item.quartzSand": {
+    "name": "Minério de Ametista",
+    "desc": "Um minério que pode ser coletado em pontos de mineração de Ametista na natureza.\nEle também pode ser processado nas instalações da Fábrica do CAI. Por exemplo, ele pode ser refinado para produzir <#item.quartzGlass>Fibras de Ametista</>."
+  },
+  "sys.manualCraft": {
+    "name": "Confecção",
+    "desc": "Abra o painel da Mochila para acessar a tela Confecção. É possível confeccionar matérias-primas diferentes em itens úteis.\nPor exemplo, <#item.plantMoss1>Flor de Cervina</> pode ser usada para produzir <#item.plantMossSeed1>Pó de Flor de Cervina</> para restaurar PV."
+  },
+  "sys.manualCraftDish": {
+    "name": "Alimentos e Medicamentos Finos",
+    "desc": "Os Alimentos e Medicamentos Finos (A&M Finos) podem ser usados como <#sys.tacticalItem>itens táticos</>. \nAo contrário dos <#sys.manualCraftTonic>Alimentos e Medicamentos de Emergência</>, eles só podem ser feitos por meio de <#sys.manualCraft>Confecção</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Plantio",
+    "desc": "A <#sys.manualCraft>Confecção</> permite preparar lotes agrícolas com sementes e <#item.carbonMtl>Carbono</>.Os lotes agrícolas podem ser colocados e cultivados na Fazenda Ecológica."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Alimentos e Medicamentos de Emergência",
+    "desc": "Os Alimentos e Medicamentos de Emergência (A&M EMS) podem ser usados como <#sys.tacticalItem>itens táticos</>.\nEles podem ser obtidos por meio de <#sys.manualCraft>Confecção</> ou usando instalações da Fábrica do CAI."
+  },
+  "sys.tacticalItem": {
+    "name": "Itens Táticos",
+    "desc": "Itens táticos são itens que podem ser usados durante o combate para fornecer diversos benefícios e melhorias. Cada item tático possui critérios de ativação e limites de uso diferentes.\nCada operador pode ser equipado com 1 habilidade tática. Durante a batalha, sempre que os critérios de ativação da habilidade tática forem atendidos, o operador a utilizará automaticamente.\nApós esgotar todas as tentativas de uso tático em uma única batalha, um uso adicional será restaurado após algum tempo."
+  }
+}

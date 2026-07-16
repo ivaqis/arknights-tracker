@@ -9,16 +9,26 @@
     import { currencies } from "$lib/data/items/currencies.js";
     import { weapons } from "$lib/data/weapons.js";
     import { manualPotentials } from "$lib/stores/potentials";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
     import { accountStore } from "$lib/stores/accounts";
     import { levels as weaponLevelUpTable } from "$lib/data/weaponLevelUpTable.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import NotFound from "$lib/components/NotFound.svelte";
+    import TableModal from "$lib/components/modals/TableModal.svelte";
+    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     let showPotHint = false;
+
+    function formatNumberForSelection(num) {
+        if (num === undefined || num === null) return '0';
+        const formatted = num.toLocaleString("ru-RU");
+        return formatted.replace(/[\s\u00A0\u202F]/g, '<span class="select-none"> </span>');
+    }
 
     onMount(() => {
         if (browser) {
@@ -73,6 +83,44 @@
     let copiedImageId = null;
     let selectedImageVariant = null;
     let isDraggingRank = false;
+    let activeDraggingSkill = null;
+    let draggingContainerRect = null;
+
+    function startDraggingRank(e, skillKey) {
+        if (e.button === 0 || e.button === 2) {
+            isDraggingRank = true;
+            activeDraggingSkill = skillKey;
+            const container = e.currentTarget;
+            draggingContainerRect = container.getBoundingClientRect();
+            if (browser) document.body.classList.add('dragging-rank');
+            updateRankFromX(e.clientX, skillKey);
+        }
+    }
+
+    function updateRankFromX(clientX, skillKey) {
+        if (!draggingContainerRect) return;
+        const rect = draggingContainerRect;
+        const relativeX = clientX - rect.left;
+        const percentage = Math.min(1, Math.max(0, relativeX / rect.width));
+        const rank = Math.min(9, Math.max(1, Math.ceil(percentage * 9)));
+        manualSkillRanks = {
+            ...manualSkillRanks,
+            [skillKey]: rank
+        };
+    }
+
+    function handleWindowMouseMove(e) {
+        if (isDraggingRank && activeDraggingSkill) {
+            updateRankFromX(e.clientX, activeDraggingSkill);
+        }
+    }
+
+    function stopDraggingRank() {
+        isDraggingRank = false;
+        activeDraggingSkill = null;
+        draggingContainerRect = null;
+        if (browser) document.body.classList.remove('dragging-rank');
+    }
 
     $: loadWeaponData(id, $currentLocale);
 
@@ -146,6 +194,42 @@
     $: currentPot = accountPots[id] !== undefined ? accountPots[id] : basePot;
     $: isOwned = currentPot >= 0;
 
+    $: accountEssences = $weaponEssences[currentAccountId] || {};
+    $: currentEssence = accountEssences[id] || 0;
+
+    let showEssenceDropdown = false;
+
+    function selectEssence(value) {
+        weaponEssences.update((ess) => {
+            const currentAccEss = ess[currentAccountId] || {};
+            const newAccEss = { ...currentAccEss };
+            if (value === 0) {
+                delete newAccEss[id];
+            } else {
+                newAccEss[id] = value;
+            }
+            return {
+                ...ess,
+                [currentAccountId]: newAccEss,
+            };
+        });
+        showEssenceDropdown = false;
+    }
+
+    function getEssenceColor(level) {
+        if (level === 1) return "#EF4444";
+        if (level === 2) return "#F97316";
+        if (level === 3) return "#22C55E";
+        return "";
+    }
+
+    $: essenceOptions = [
+        { value: 0, label: $t("stats.none") || "No Essence", textColor: "text-gray-400 dark:text-gray-500", iconColor: "text-gray-400 dark:text-gray-500" },
+        { value: 1, label: ($t("stats.essence") || "Essence") + " (1/3)", textColor: "text-red-500 dark:text-red-400", iconColor: "text-red-500" },
+        { value: 2, label: ($t("stats.essence") || "Essence") + " (2/3)", textColor: "text-orange-500 dark:text-orange-400", iconColor: "text-orange-500" },
+        { value: 3, label: ($t("stats.essence") || "Essence") + " (3/3)", textColor: "text-green-500 dark:text-green-400", iconColor: "text-green-500" },
+    ];
+
     let isEditingPot = false;
     let draftPot = 0;
 
@@ -216,8 +300,55 @@
     let lastEffectivePot = -1;
     let isPotDropdownOpen = false;
 
+    let loadedId = null;
+    let loadedLevelParam = null;
+    let loadedRefineParam = null;
+    let loadedSkillsParam = null;
+
+    $: if (browser && ($page.url.searchParams || $page.params.id)) {
+        const paramId = $page.params.id;
+        const urlParams = $page.url.searchParams;
+        const pLevel = urlParams.get("level");
+        const pRefine = urlParams.get("refine");
+        const pSkills = urlParams.get("skills");
+        if (paramId !== loadedId || pLevel !== loadedLevelParam || pRefine !== loadedRefineParam || pSkills !== loadedSkillsParam) {
+            loadedId = paramId;
+            loadedLevelParam = pLevel;
+            loadedRefineParam = pRefine;
+            loadedSkillsParam = pSkills;
+            if (pLevel !== null) {
+                const parsedLevel = parseInt(pLevel);
+                if (!isNaN(parsedLevel) && parsedLevel >= 1 && parsedLevel <= maxLevel) {
+                    level = parsedLevel;
+                }
+            }
+            if (pRefine !== null) {
+                const parsedRefine = parseInt(pRefine);
+                if (!isNaN(parsedRefine) && parsedRefine >= 0 && parsedRefine <= 5) {
+                    previewPot = parsedRefine;
+                }
+            }
+            if (pSkills !== null) {
+                const parsedSkills = pSkills.split(",").map(s => parseInt(s));
+                const ranks = {};
+                parsedSkills.forEach((val, idx) => {
+                    if (!isNaN(val) && val >= 1 && val <= 9) {
+                        ranks[`skill${idx + 1}`] = val;
+                    }
+                });
+                manualSkillRanks = ranks;
+            }
+            lastLevel = level;
+            lastPreviewPot = previewPot;
+        }
+    }
+
     $: if (effectivePot !== lastEffectivePot) {
-        previewPot = effectivePot;
+        const urlParams = browser ? $page.url.searchParams : null;
+        const hasUrlRefine = urlParams && urlParams.has("refine");
+        if (!hasUrlRefine) {
+            previewPot = effectivePot;
+        }
         lastEffectivePot = effectivePot;
     }
 
@@ -390,36 +521,12 @@
     }
     $: rarityColor = getRarityColors(weaponBase.rarity);
 
-    function parseRichText(text) {
-        if (!text) return "";
-        const styles = {
-            "ba.natur": "text-[#4ADE80] font-bold",
-            "ba.fire": "text-[#F87171] font-bold",
-            "ba.vup": "text-[#38BDF8] font-bold",
-            "ba.info":
-                "text-gray-500 dark:text-[#A0A0A0] italic font-normal text-[13px]",
-            "ba.heal": "text-[#4ADE80] font-bold",
-            "ba.consume": "text-[#E3BC55] font-bold",
-            "ba.noguard": "text-[#F87171] font-bold",
-        };
-        let html = text.replace(/<([@#])([^>]+)>/g, (match, type, tag) => {
-            let styleClass = styles[tag] || "text-[#38BDF8] font-bold";
-            if (type === "#") {
-                styleClass +=
-                    " underline decoration-dashed decoration-current underline-offset-4 font-bold";
-            }
-            return `<span class="${styleClass}">`;
-        });
-        html = html.replace(/<\/>/g, "</span>");
-        html = html.replace(/\n/g, "<br>");
-        return html;
-    }
 
     function interpolateBlackboard(text, bb) {
         if (!text || !bb) return text;
         return text.replace(/\{([^}]+)\}/g, (match, content) => {
             let [expr, format] = content.split(":");
-            let mathStr = expr;
+            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
             for (const key in bb) {
                 const regex = new RegExp(`\\b${key}\\b`, "g");
                 mathStr = mathStr.replace(regex, `(${bb[key]})`);
@@ -523,26 +630,19 @@
         if (!e.target.closest(".pot-dropdown-container"))
             isPotDropdownOpen = false;
     }}
-    on:mouseup={() => (isDraggingRank = false)}
+    on:mouseup={stopDraggingRank}
+    on:mousemove={handleWindowMouseMove}
     on:keydown={handleKeydown}
     on:keyup={handleKeyup}
 />
 
+{#if !weapons[id]}
+    <NotFound />
+{:else}
 <div class="min-h-screen md:px-8 md:py-3 font-sans transition-colors ">
     <div class="w-full max-w-[1500px] mx-auto mb-6">
-        <Button
-            variant="roundSmall"
-            color="white"
-            onClick={() => history.back()}
-        >
-            <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"><path d="M15 18l-6-6 6-6" /></svg
-            >
+        <Button variant="roundSmall" color="white" onClick={() => history.back()}>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -550,7 +650,7 @@
         class="w-full max-w-[1500px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-8 items-start"
     >
         <div
-            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors"
+            class="col-span-1 xl:col-span-7 bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors md:min-w-[500px]"
         >
             <div
                 class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]"
@@ -561,9 +661,9 @@
                 ></div>
 
                 <div
-                    class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
+                    class="absolute right-[-50px] md:right-[0px] top-1/2 -translate-y-1/2 w-[300px] h-[300px] pt-10 z-10 pointer-events-none"
                 >
-                    <Images
+                    <Image
                         {id}
                         variant="weapon-icon"
                         interactive={true}
@@ -584,15 +684,15 @@
                             </h1>
 
                             <div
-                                class="flex items-center shrink-0 mt-1 relative"
+                                class="flex items-center shrink-0 mt-2 relative"
                             >
                                 {#if !isEditingPot}
                                     <div
-                                        class="flex items-center gap-3 transition-opacity"
+                                        class="flex items-center gap-1 transition-opacity"
                                     >
                                         {#if isOwned}
                                             <div
-                                                class="bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
+                                                class="mr-1 bg-gradient-to-br from-[#F9B90C] to-[#E3A000] text-white text-[13px] font-black px-2 py-0.5 rounded shadow-sm border border-white/20 leading-none"
                                             >
                                                 P{currentPot}
                                             </div>
@@ -615,6 +715,50 @@
                                                 />
                                             </button>
                                         </Tooltip>
+
+                                        <div class="relative">
+                                            <Tooltip
+                                                text={$t("stats.addEssence") || "Add essence"}
+                                            >
+                                                <button
+                                                    on:click={() => showEssenceDropdown = !showEssenceDropdown}
+                                                    class="w-7 h-7 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#383838] text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-[#444] hover:bg-gray-200 dark:hover:bg-[#444] transition-all"
+                                                >
+                                                    <Icon
+                                                        name="essence"
+                                                        class="w-4 h-4 opacity-80"
+                                                        style="color: {getEssenceColor(currentEssence) || 'currentColor'}"
+                                                    />
+                                                </button>
+                                            </Tooltip>
+
+                                            {#if showEssenceDropdown}
+                                                <!-- svelte-ignore a11y_click_events_have_key_events -->
+                                                <!-- svelte-ignore a11y_no_static_element_interactions -->
+                                                <div 
+                                                    class="absolute top-full mt-2 left-0 w-44 bg-white dark:bg-[#383838] border border-gray-200 dark:border-[#444] rounded-lg shadow-xl py-1 z-[150] animate-fadeIn text-xs"
+                                                >
+                                                    {#each essenceOptions as opt}
+                                                        <button
+                                                            on:click={() => selectEssence(opt.value)}
+                                                            class="w-full text-left px-3 py-2 hover:bg-gray-100 dark:hover:bg-[#444] font-bold flex items-center gap-2 transition-colors {opt.textColor}"
+                                                        >
+                                                            <Icon name="essence" class="w-3.5 h-3.5" style="color: {getEssenceColor(opt.value) || 'currentColor'}" />
+                                                            <span>{opt.label}</span>
+                                                            {#if currentEssence === opt.value}
+                                                                <Icon name="check" class="w-3.5 h-3.5 text-green-500 ml-auto" />
+                                                            {/if}
+                                                        </button>
+                                                    {/each}
+                                                </div>
+                                                <button 
+                                                    type="button"
+                                                    class="fixed inset-0 z-[140] cursor-default bg-transparent w-full h-full border-none p-0 m-0 outline-none block"
+                                                    aria-label="Close menu"
+                                                    on:click={() => showEssenceDropdown = false}
+                                                ></button>
+                                            {/if}
+                                        </div>
 
                                         {#if showPotHint}
                                             <div
@@ -689,7 +833,7 @@
                                 <span
                                     class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
                                 >
-                                    {draftPot === -1 ? "" : `P${draftPot}`}
+                                    {draftPot === -1 ? "" : `R${draftPot + 1}`}
                                 </span>
 
                                 <button
@@ -765,11 +909,12 @@
                         </div>
                         <span
                             class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]"
-                            >{tOrFallback("stats.baseAtk", "Базовая АТК")}</span
+                            >{tOrFallback("stats.baseAtk", "Base ATK")}</span
                         >
                         <span
                             class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-2 drop-shadow-sm"
-                            >{baseAtk}</span
+                            style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);"
+                            >{@html formatNumberForSelection(baseAtk)}</span
                         >
                     </div>
                 </div>
@@ -814,19 +959,9 @@
                         <button
                             on:click={() =>
                                 (isPotDropdownOpen = !isPotDropdownOpen)}
-                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[13px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
+                            class="flex h-[40px] items-center gap-3 bg-gray-200 dark:bg-[#4A4A4A] text-[16px] font-bold rounded-md px-3 py-1.5 outline-none border border-gray-200 dark:border-transparent cursor-pointer hover:bg-gray-300 dark:hover:bg-[#555] transition-colors shadow-sm"
                         >
-                            <span
-                                class="font-medium text-gray-500 dark:text-gray-300 font-sans"
-                                >{tOrFallback(
-                                    "menu.potentials",
-                                    "Потенциал",
-                                )}</span
-                            >
-                            <span
-                                class="font-medium text-[#21272C] dark:text-white"
-                                >{previewPot}</span
-                            >
+                            <span class="text-[#21272C] dark:text-white">R{previewPot}</span>
                             <Icon
                                 name="arrowDown"
                                 class="pt-0.5 w-3 h-3 text-[#21272C] dark:text-white transition-transform {isPotDropdownOpen
@@ -834,7 +969,7 @@
                                     : ''}"
                             />
                         </button>
-
+ 
                         {#if isPotDropdownOpen}
                             <div
                                 class="absolute top-full right-0 md:left-0 mt-1 w-full min-w-[120px] bg-white dark:bg-[#2C2C2C] border border-gray-200 dark:border-[#444] rounded-md shadow-[0_8px_20px_rgba(0,0,0,0.3)] overflow-hidden z-[60] animate-fadeIn"
@@ -850,7 +985,7 @@
                                             isPotDropdownOpen = false;
                                         }}
                                     >
-                                        {i}
+                                        R{i}
                                     </button>
                                 {/each}
                             </div>
@@ -876,7 +1011,7 @@
                         class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm"
                     >
                         <Icon name="table" class="w-4 h-4" />
-                        <span>{tOrFallback("stats.table", "Таблица")}</span>
+                        <span>{tOrFallback("stats.table", "Table")}</span>
                     </button>
                 </div>
             </div>
@@ -901,22 +1036,7 @@
                                 class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 items-start w-full"
                             >
                                 <div class="flex items-center gap-2 shrink-0">
-                                    <svg
-                                        width="12"
-                                        height="12"
-                                        viewBox="0 0 12 12"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="shrink-0 mt-0.5"
-                                    >
-                                        <circle
-                                            cx="6"
-                                            cy="6"
-                                            r="5"
-                                            stroke="#888"
-                                            stroke-width="2"
-                                        />
-                                    </svg>
+                                    <Icon name="circle" class="w-3 h-3 text-[#888888]" />
                                     <div class="flex gap-1 items-center">
                                         <h3
                                             class="font-medium text-[#21272C] dark:text-[#E4E4E4] text-[15px] leading-tight"
@@ -936,8 +1056,11 @@
                                 <div
                                     class="flex items-center gap-3 w-full sm:w-auto pl-5 sm:pl-0 mt-1 sm:mt-0"
                                 >
+                                    <!-- svelte-ignore a11y_no_static_element_interactions -->
                                     <div
-                                        class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444]"
+                                        class="hidden sm:flex gap-[4px] bg-gray-100 dark:bg-[#2b2b2b] px-3 py-1.5 rounded-full border border-gray-200 dark:border-[#444] select-none"
+                                        on:mousedown={(e) => startDraggingRank(e, skillKey)}
+                                        on:contextmenu|preventDefault
                                     >
                                         {#each Array(9) as _, i}
                                             <button
@@ -950,21 +1073,6 @@
                                                     : i < state.upper
                                                       ? 'bg-gray-300 border-gray-300 dark:bg-[#555] dark:border-[#555]'
                                                       : 'bg-transparent border-gray-400 dark:border-[#666] hover:bg-gray-200 dark:hover:bg-[#444]'}"
-                                                on:mousedown={() => {
-                                                    isDraggingRank = true;
-                                                    manualSkillRanks = {
-                                                        ...manualSkillRanks,
-                                                        [skillKey]: i + 1,
-                                                    };
-                                                }}
-                                                on:mouseenter={() => {
-                                                    if (isDraggingRank) {
-                                                        manualSkillRanks = {
-                                                            ...manualSkillRanks,
-                                                            [skillKey]: i + 1,
-                                                        };
-                                                    }
-                                                }}
                                                 on:click={() =>
                                                     (manualSkillRanks = {
                                                         ...manualSkillRanks,
@@ -1010,6 +1118,7 @@
 
                             <div
                                 class="text-[14px] text-gray-700 dark:text-[#A0A0A0] leading-relaxed pl-[20px] whitespace-pre-wrap"
+                                use:hyperlinkAction
                             >
                                 {@html parseRichText(
                                     interpolateBlackboard(
@@ -1097,7 +1206,7 @@
                                 (e.key === "Enter" || e.key === " ") &&
                                 (selectedImageVariant = "weapon-icon")}
                         >
-                            <Images
+                            <Image
                                 {id}
                                 variant="weapon-icon"
                                 interactive={true}
@@ -1140,24 +1249,9 @@
                                 }}
                             >
                                 {#if copiedImageId === "icon"}
-                                    <svg
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
+                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                 {:else}
-                                    <Icon
-                                        name="copy"
-                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                    />
+                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                 {/if}
                             </button>
 
@@ -1173,10 +1267,7 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon
-                                    name="import"
-                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                />
+                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                             </button>
                         </div>
                     </div>
@@ -1197,7 +1288,7 @@
                             <div
                                 class="absolute inset-4 flex items-center justify-center [&_img]:max-w-full [&_img]:max-h-full [&_img]:object-contain [&_img]:w-auto [&_img]:h-auto"
                             >
-                                <Images
+                                <Image
                                     {id}
                                     interactive={true}
                                     variant="weapons-big"
@@ -1241,24 +1332,9 @@
                                 }}
                             >
                                 {#if copiedImageId === "big"}
-                                    <svg
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="3"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                        ><polyline points="20 6 9 17 4 12"
-                                        ></polyline></svg
-                                    >
+                                    <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                                 {:else}
-                                    <Icon
-                                        name="copy"
-                                        class="w-4 h-4 transition-transform group-hover/copy:scale-110"
-                                    />
+                                    <Icon name="copy" class="w-4 h-4 transition-transform group-hover/copy:scale-110" />
                                 {/if}
                             </button>
 
@@ -1274,10 +1350,7 @@
                                     document.body.removeChild(link);
                                 }}
                             >
-                                <Icon
-                                    name="import"
-                                    class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                                />
+                                <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                             </button>
                         </div>
                     </div>
@@ -1302,107 +1375,54 @@
     </div>
 </div>
 
-{#if showStatsTable}
-    <div
-        role="dialog"
-        tabindex="-1"
-        aria-modal="true"
-        class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 dark:bg-black/80 backdrop-blur-sm p-4 animate-fadeIn outline-none"
-        on:click|self={() => (showStatsTable = false)}
-        on:keydown|self={(e) => {
-            if (e.key === "Escape" || e.key === "Enter" || e.key === " ")
-                showStatsTable = false;
-        }}
-    >
-        <div
-            class="bg-white rounded-xl w-full max-w-sm max-h-[85vh] flex flex-col shadow-2xl overflow-hidden"
+<TableModal
+    bind:isOpen={showStatsTable}
+    title={tOrFallback("stats.attributesTable", "Attributes Table")}
+    isTableCopied={isTableCopied}
+    maxWidthClass="max-w-sm"
+    on:copy={copyStatsTable}
+>
+    <table class="w-full text-center border-collapse">
+        <thead
+            class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
         >
-            <div
-                class="flex items-center justify-between px-6 py-4 bg-[#21272C] text-white dark:bg-[#2C2C2C] shrink-0"
-            >
-                <h3 class="font-bold text-lg">
-                    {tOrFallback("stats.attributesTable", "Attributes Table")}
-                </h3>
-                <div class="flex gap-2">
-                    <button
-                        on:click={copyStatsTable}
-                        class="p-1.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none"
+            <tr>
+                <th
+                    class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.level", "Уровень")}</th
+                >
+                <th
+                    class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback(
+                        "stats.baseAtk",
+                        "Base ATK",
+                    )}</th
+                >
+            </tr>
+        </thead>
+        <tbody
+            class="text-sm font-nums text-gray-800 dark:text-gray-300"
+        >
+            {#each Array(90) as _, i}
+                <tr
+                    class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                >
+                    <td
+                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                        >{i + 1}</td
                     >
-                        {#if isTableCopied}
-                            <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#FACC15"
-                                stroke-width="3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="animate-fadeIn"
-                            >
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        {:else}
-                            <Icon name="copy" class="w-4 h-4" />
-                        {/if}
-                        <span>{tOrFallback("common.copy", "Copy")}</span>
-                    </button>
-                    <button
-                        on:click={() => (showStatsTable = false)}
-                        class="p-1.5 rounded-full hover:bg-gray-200 dark:hover:bg-white/10 text-gray-500 dark:text-gray-400 transition-colors"
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
                     >
-                        <Icon name="close" class="w-6 h-6" />
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="overflow-auto custom-scrollbar bg-white dark:bg-[#2b2b2b] p-0"
-            >
-                <table class="w-full text-center border-collapse">
-                    <thead
-                        class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
-                    >
-                        <tr>
-                            <th
-                                class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback("stats.level", "Уровень")}</th
-                            >
-                            <th
-                                class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
-                                >{tOrFallback(
-                                    "stats.baseAtk",
-                                    "Базовая АТК",
-                                )}</th
-                            >
-                        </tr>
-                    </thead>
-                    <tbody
-                        class="text-sm font-nums text-gray-800 dark:text-gray-300"
-                    >
-                        {#each Array(90) as _, i}
-                            <tr
-                                class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
-                            >
-                                <td
-                                    class="py-2 px-4 text-gray-500 dark:text-gray-400"
-                                    >{i + 1}</td
-                                >
-                                <td
-                                    class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
-                                >
-                                    {weaponData.levels?.baseAtk
-                                        ? weaponData.levels.baseAtk[i]
-                                        : 0}
-                                </td>
-                            </tr>
-                        {/each}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-{/if}
+                        {weaponData.levels?.baseAtk
+                            ? weaponData.levels.baseAtk[i]
+                            : 0}
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</TableModal>
 {#if selectedImageVariant}
     <div
         role="dialog"
@@ -1420,7 +1440,7 @@
             on:click|stopPropagation
             on:keydown|stopPropagation
         >
-            <Images
+            <Image
                 {id}
                 variant={selectedImageVariant}
                 interactive={true}
@@ -1438,19 +1458,13 @@
     </div>
 {/if}
 
+{/if}
+
 <style>
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 6px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #cbd5e1;
-        border-radius: 10px;
-    }
-    :global(.dark) .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #555;
+    :global(body.dragging-rank), :global(body.dragging-rank *) {
+        cursor: pointer !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
     }
     .card-gradient {
         background: linear-gradient(

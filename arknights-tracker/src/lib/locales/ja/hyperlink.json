@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "レーザーフェンス",
+    "desc": "レーザーフェンスが作動している間は通行できない。\n配線を辿って起動装置を見つけ、レーザーフェンスを解除すれば、封鎖されていた道が通行できるようになる。"
+  },
+  "adv.eswitch": {
+    "name": "切替装置",
+    "desc": "切替装置は、攻撃や爆発による衝撃で状態が変化する。\n<#adv.electricFence>レーザーフェンス</>をオフにしたり<#adv.jumpMachine>発射装置</>を起動するために使う。"
+  },
+  "adv.jumpMachine": {
+    "name": "発射装置",
+    "desc": "操作中のオペレーターは発射装置を利用することで、通常のジャンプでは届かない高所へ到達できる。\n電力が通じた発射装置の上でジャンプすると、高く跳び上がることができる。"
+  },
+  "adv.powerTerminal": {
+    "name": "給電端末",
+    "desc": "電気回路の末端に使用される設備。電力システムに接続して他の設備に電力を供給することができる。\n給電端末は、主にゲートや装置などの設備に電力を供給する。中継タワーを通って給電端末に電力を供給することで、ゲートや装置の操作ができるようになる。"
+  },
+  "ba.absorb": {
+    "name": "吸収",
+    "desc": "特定の状況下で状態を持続時間よりも早く解除する。<@ba.key>吸収</>は<#ba.consume>消費</>とは別の効果である。"
+  },
+  "ba.airborne": {
+    "name": "物理異常 - 浮遊",
+    "desc": "敵に<#ba.noguard>クラッシュ</>を付与する。敵がすでに<#ba.noguard>クラッシュ</>状態の場合、<#ba.noguard>クラッシュ</>段階が1増加し、<@ba.phy>物理ダメージ</>と<@ba.poise>ブレイク値</>を与える。"
+  },
+  "ba.burning": {
+    "name": "アーツ異常 - 燃焼",
+    "desc": "<@ba.burning>燃焼</>状態の敵は、持続的に<@ba.fire>灼熱ダメージ</>を受ける。\n<@ba.burning>燃焼</>=他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.fireinflict>灼熱付着</>"
+  },
+  "ba.burningonchar": {
+    "name": "オペレーターの燃焼状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.fireinflict>灼熱付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.burning>燃焼</>状態になる。燃焼状態のオペレーターは、一定時間持続的に防御力を無視する<@ba.fire>灼熱ダメージ</>を受ける。"
+  },
+  "ba.combo": {
+    "name": "リンク",
+    "desc": "次に発動する戦技または必殺技のダメージがアップする。特に戦技に対する上昇効果が大きい。効果は発動と同時に解除される。同じ効果は重ね掛け可能だが、その場合の上昇幅は減少する。"
+  },
+  "ba.conduct": {
+    "name": "アーツ異常 - 感電",
+    "desc": "<@ba.conduct>感電</>状態の敵は、受ける<#ba.spelldmg>アーツダメージ</>がアップする。\n<@ba.conduct>感電</>=他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.pulseinflict>電磁付着</>"
+  },
+  "ba.conductonchar": {
+    "name": "オペレーターの感電状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.pulseinflict>電磁付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.conduct>感電</>状態になる。感電状態のオペレーターは、しばらくスタンし、一定時間受ける<#ba.spelldmg>アーツダメージ</>がアップする。"
+  },
+  "ba.consume": {
+    "name": "状態消費",
+    "desc": "状態は、特定の状況下で持続時間よりも早く解除されることがある。（例：<#ba.crush>猛撃</>によって<#ba.noguard>クラッシュ</>状態が消費される。<#ba.burning>燃焼</>によって<#ba.spellinflict>アーツ付着</>状態が消費される。）"
+  },
+  "ba.corrupt": {
+    "name": "アーツ異常 - 腐食",
+    "desc": "<@ba.corrupt>腐食</>状態の敵は、すべての耐性が徐々にダウンする。\n<@ba.corrupt>腐食</>=他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>）+<@ba.naturalinflict>自然付着</>"
+  },
+  "ba.corruptonchar": {
+    "name": "オペレーターの腐食状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.naturalinflict>自然付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.corrupt>腐食</>状態になる。腐食状態のオペレーターは、一定時間ダッシュできなくなり、移動速度が低下する。"
+  },
+  "ba.crush": {
+    "name": "物理異常 - 猛撃",
+    "desc": "敵に<#ba.noguard>クラッシュ</>を付与する。敵がすでに<#ba.noguard>クラッシュ</>状態の場合、すべての<#ba.noguard>クラッシュ</>段階を<#ba.consume>消費</>し、高い<@ba.phy>物理ダメージ</>を与える。"
+  },
+  "ba.crystbreak": {
+    "name": "粉砕",
+    "desc": "<#ba.frozen>凍結</>状態の敵に<#ba.noguard>クラッシュ</>または<#ba.physicalstatus>物理異常</>を付与すると発動する。敵の<#ba.frozen>凍結</>状態を<#ba.consume>消費</>し、高い<@ba.pd>物理ダメージ</>を与える。"
+  },
+  "ba.crystburst": {
+    "name": "アーツ爆発 - 寒冷",
+    "desc": "<#ba.crystinflict>寒冷付着</>+<#ba.crystinflict>寒冷付着</>で<@ba.cryst>寒冷爆発</>が発動し、敵に一定量の<@ba.cryst>寒冷ダメージ</>を与える。"
+  },
+  "ba.crystenhance": {
+    "name": "寒冷増幅",
+    "desc": "一定時間与える<@ba.cryst>寒冷ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.crystinflict": {
+    "name": "アーツ付着 - 寒冷",
+    "desc": "<@ba.crystinflict>寒冷付着</>は<#ba.spellinflict>アーツ付着</>の一種である。\n<@ba.crystinflict>寒冷付着</>は最大4段階まで重ね掛けでき、重ね掛けると<#ba.crystburst>寒冷爆発</>が発動する。\n他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.crystinflict>寒冷付着</>=<#ba.frozen>凍結</>"
+  },
+  "ba.crystonchar": {
+    "name": "オペレーターの寒冷付着状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.crystinflict>寒冷付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.frozen>凍結</>状態になる。凍結状態のオペレーターは、一定時間行動不能になる。"
+  },
+  "ba.crystvul": {
+    "name": "寒冷脆弱",
+    "desc": "一定時間受ける<@ba.cryst>寒冷ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.dispel": {
+    "name": "浄化",
+    "desc": "オペレーターにかかった特定の異常状態を解除する。"
+  },
+  "ba.dot": {
+    "name": "持続ダメージ",
+    "desc": "持続ダメージは会心が発生しない。"
+  },
+  "ba.enhance": {
+    "name": "増幅",
+    "desc": "一定時間与える特定の属性ダメージがアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.fireburst": {
+    "name": "アーツ爆発 - 灼熱",
+    "desc": "<#ba.fireinflict>灼熱付着</>+<#ba.fireinflict>灼熱付着</>で<@ba.fire>灼熱爆発</>が発動し、敵に一定量の<@ba.fire>灼熱ダメージ</>を与える。"
+  },
+  "ba.fireenhance": {
+    "name": "灼熱増幅",
+    "desc": "一定時間与える<@ba.fire>灼熱ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.fireinflict": {
+    "name": "アーツ付着 - 灼熱",
+    "desc": "<@ba.fireinflict>灼熱付着</>は<#ba.spellinflict>アーツ付着</>の一種である。\n<@ba.fireinflict>灼熱付着</>は最大4段階まで重ね掛けでき、重ね掛けると<#ba.fireburst>灼熱爆発</>が発動する。\n他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.fireinflict>灼熱付着</>=<#ba.burning>燃焼</>"
+  },
+  "ba.fireonchar": {
+    "name": "オペレーターの灼熱付着状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.fireinflict>灼熱付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.burning>燃焼</>状態になる。燃焼状態のオペレーターは、一定時間持続的に防御力を無視する<@ba.fire>灼熱ダメージ</>を受ける。"
+  },
+  "ba.firevul": {
+    "name": "灼熱脆弱",
+    "desc": "一定時間受ける<@ba.fire>灼熱ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.fracture": {
+    "name": "物理異常 - 破砕",
+    "desc": "敵に<#ba.noguard>クラッシュ</>を付与する。敵がすでに<#ba.noguard>クラッシュ</>状態の場合、すべての<#ba.noguard>クラッシュ</>段階を<#ba.consume>消費</>して<@ba.phy>物理ダメージ</>を与え、一定時間受ける<@ba.pd>物理ダメージ</>をアップさせる。"
+  },
+  "ba.frozen": {
+    "name": "アーツ異常 - 凍結",
+    "desc": "<@ba.frozen>凍結</>状態の敵は行動不能になる。この状態で<#ba.noguard>クラッシュ</>または<#ba.physicalstatus>物理異常</>を受けると、<#ba.crystbreak>粉砕</>が発動する。\n<@ba.frozen>凍結</>=他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.crystinflict>寒冷付着</>"
+  },
+  "ba.frozenonchar": {
+    "name": "オペレーターの凍結状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.crystinflict>寒冷付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.frozen>凍結</>状態になる。凍結状態のオペレーターは、一定時間行動不能になる。"
+  },
+  "ba.guard": {
+    "name": "加護",
+    "desc": "一定時間受けるダメージがダウンする（数値は低下幅を示す）。同じ効果は最大値が適用される。"
+  },
+  "ba.knockdown": {
+    "name": "物理異常 - 転倒",
+    "desc": "敵に<#ba.noguard>クラッシュ</>を付与する。敵がすでに<#ba.noguard>クラッシュ</>状態の場合、<#ba.noguard>クラッシュ</>段階が1増加し、<@ba.phy>物理ダメージ</>と<@ba.poise>ブレイク値</>を与える。"
+  },
+  "ba.lastcombo": {
+    "name": "重攻撃",
+    "desc": "重攻撃は、オペレーターによる通常攻撃の最後の一撃である。操作中のオペレーターが重攻撃を敵に命中させた場合、追加で<@ba.poise>ブレイク値</>を与え、戦技ポイント（SP）を回復する。"
+  },
+  "ba.naturalburst": {
+    "name": "アーツ爆発 - 自然",
+    "desc": "<#ba.naturalinflict>自然付着</>+<#ba.naturalinflict>自然付着</>で<@ba.natur>自然爆発</>が発動し、敵に一定量の<@ba.natur>自然ダメージ</>を与える。"
+  },
+  "ba.naturalenhance": {
+    "name": "自然増幅",
+    "desc": "一定時間与える<@ba.natur>自然ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.naturalinflict": {
+    "name": "アーツ付着 - 自然",
+    "desc": "<@ba.naturalinflict>自然付着</>は<#ba.spellinflict>アーツ付着</>の一種である。\n<@ba.naturalinflict>自然付着</>は最大4段階まで重ね掛けでき、重ね掛けると<#ba.naturalburst>自然爆発</>が発動する。\n他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>）+<@ba.naturalinflict>自然付着</>=<#ba.corrupt>腐食</>"
+  },
+  "ba.naturalonchar": {
+    "name": "オペレーターの自然付着状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.naturalinflict>自然付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.corrupt>腐食</>状態になる。腐食状態のオペレーターは、一定時間ダッシュできなくなり、移動速度が低下する。"
+  },
+  "ba.naturalvul": {
+    "name": "自然脆弱",
+    "desc": "一定時間受ける<@ba.natur>自然ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.noguard": {
+    "name": "クラッシュ",
+    "desc": "敵が1回目の<#ba.physicalstatus>物理異常</>を受けたとき、効果は直ちに発動せず、<@ba.noguard>クラッシュ</>状態になる。\n<@ba.phy>クラッシュ</>状態は<#ba.airborne>浮遊</>と<#ba.knockdown>転倒</>によって最大4段階まで増加し、<#ba.crush>猛撃</>と<#ba.fracture>破砕</>によって<#ba.consume>消費</>される。"
+  },
+  "ba.originium": {
+    "name": "源石結晶",
+    "desc": "管理人の連携技は敵の体に源石結晶を付与し、その敵を行動不能にする。"
+  },
+  "ba.physicalenhance": {
+    "name": "物理増幅",
+    "desc": "一定時間与える<@ba.pd>物理ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.physicalstatus": {
+    "name": "物理異常",
+    "desc": "物理異常は、物理的な手段によって敵に付与する異常効果である。<#ba.airborne>浮遊</>、<#ba.knockdown>転倒</>、<#ba.crush>猛撃</>、<#ba.fracture>破砕</>の4種類ある。"
+  },
+  "ba.physicalvul": {
+    "name": "物理脆弱",
+    "desc": "一定時間受ける<@ba.pd>物理ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.poiseknot": {
+    "name": "ブレイク点",
+    "desc": "一部の強い敵には、<@ba.poise>ブレイク点</>がある。<@ba.poise>ブレイク値</>が<@ba.poise>ブレイク点</>まで溜まると、敵の行動が中断される。"
+  },
+  "ba.pulseburst": {
+    "name": "アーツ爆発 - 電磁",
+    "desc": "<#ba.pulseinflict>電磁付着</>+<#ba.pulseinflict>電磁付着</>で<@ba.pulse>電磁爆発</>が発動し、敵に一定量の<@ba.pulse>電磁ダメージ</>を与える。"
+  },
+  "ba.pulseenhance": {
+    "name": "電磁増幅",
+    "desc": "一定時間与える<@ba.pulse>電磁ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.pulseinflict": {
+    "name": "アーツ付着 - 電磁",
+    "desc": "<@ba.pulseinflict>電磁付着</>は<#ba.spellinflict>アーツ付着</>の一種である。\n<@ba.pulseinflict>電磁付着</>は最大4段階まで重ね掛けでき、重ね掛けると<#ba.pulseburst>電磁爆発</>が発動する。\n他の<#ba.spellinflict>アーツ付着</>（<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>）+<@ba.pulseinflict>電磁付着</>=<#ba.conduct>感電</>"
+  },
+  "ba.pulseonchar": {
+    "name": "オペレーターの電磁付着状態",
+    "desc": "一部の敵は、スキルでオペレーターに<@ba.pulseinflict>電磁付着</>を付与することがある。\n付着段階が4になると、オペレーターは<@ba.conduct>感電</>状態になる。感電状態のオペレーターは、しばらくスタンし、一定時間受ける<#ba.spelldmg>アーツダメージ</>がアップする。"
+  },
+  "ba.pulsevul": {
+    "name": "電磁脆弱",
+    "desc": "一定時間受ける<@ba.pulse>電磁ダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.return": {
+    "name": "戦技ポイント（SP）の返還",
+    "desc": "戦技ポイントを消費したあと、一定条件を満たすと一部のSPが返還される。\nSP返還は「SP回復」とは別の効果であり、SP回復で発動する効果はSP返還では発動しない。また、返還されたSPを消費しても必殺チャージは回復しない。"
+  },
+  "ba.rossi": {
+    "name": "染まる爪痕",
+    "desc": "ロッシの戦技は敵に特殊な効果を付与する。効果を受けた目標は、持続的に<@ba.pd>物理ダメージ</>を受け、さらに受ける物理ダメージと灼熱ダメージがアップする。"
+  },
+  "ba.shield": {
+    "name": "シールド",
+    "desc": "シールドは持続時間中にダメージを吸収できる。一部のシールドは特定種類のダメージのみ吸収する。"
+  },
+  "ba.slow": {
+    "name": "スロー",
+    "desc": "一定時間移動速度がダウンする（数値は低下幅を示す）。同じ効果は最大値が適用される。"
+  },
+  "ba.speedup": {
+    "name": "加速",
+    "desc": "一定時間目標の移動速度がアップする（数値は増加幅を示す）。同じ効果は上限に達するまで重ね掛け可能。"
+  },
+  "ba.spellburst": {
+    "name": "アーツ爆発",
+    "desc": "<@ba.key>アーツ爆発</>は、同属性の<#ba.spellinflict>アーツ付着</>を重ね掛けることで発生するダメージ効果である。<#ba.fireburst>灼熱爆発</>、<#ba.pulseburst>電磁爆発</>、<#ba.crystburst>寒冷爆発</>、<#ba.naturalburst>自然爆発</>の4種類ある。"
+  },
+  "ba.spelldmg": {
+    "name": "ダメージ種類",
+    "desc": "ダメージの種類には、<@ba.pd>物理ダメージ</>、<@ba.key>アーツダメージ</>、<@ba.ether>超域ダメージ</>がある。\n<@ba.key>アーツダメージ</>はさらに<@ba.fire>灼熱ダメージ</>、<@ba.pulse>電磁ダメージ</>、<@ba.cryst>寒冷ダメージ</>、<@ba.natur>自然ダメージ</>に細分化される。"
+  },
+  "ba.spellenhance": {
+    "name": "アーツ増幅",
+    "desc": "一定時間与える<#ba.spelldmg>アーツダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.spellinflict": {
+    "name": "アーツ付着",
+    "desc": "<@ba.key>アーツ付着</>は、敵に付与するアーツ効果である。<#ba.fireinflict>灼熱付着</>、<#ba.pulseinflict>電磁付着</>、<#ba.crystinflict>寒冷付着</>、<#ba.naturalinflict>自然付着</>の4種類ある。\n同じ種類の<@ba.key>アーツ付着</>は最大4段階まで重ね掛け可能。"
+  },
+  "ba.spellinflictonchar": {
+    "name": "オペレーターのアーツ付着／異常状態",
+    "desc": "一部の敵は、スキルでオペレーターに<#ba.burningonchar>灼熱付着</>、<#ba.conductonchar>電磁付着</>、<#ba.frozenonchar>寒冷付着</>、<#ba.corruptonchar>自然付着</>を付与することがある。\n付着段階が4になると、オペレーターはそれぞれ<#ba.burningonchar>燃焼</>、<#ba.conductonchar>感電</>、<#ba.frozenonchar>凍結</>、<#ba.corruptonchar>腐食</>状態になる。"
+  },
+  "ba.spellstatus": {
+    "name": "アーツ異常",
+    "desc": "<@ba.key>アーツ異常</>は、アーツによって敵に付与する異常効果である。<#ba.burning>燃焼</>、<#ba.conduct>感電</>、<#ba.frozen>凍結</>、<#ba.corrupt>腐食</>の4種類ある。"
+  },
+  "ba.spellvul": {
+    "name": "アーツ脆弱",
+    "desc": "一定時間受ける<#ba.spelldmg>アーツダメージ</>がアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.statuslevel": {
+    "name": "異常段階",
+    "desc": "異常段階は、<#ba.physicalstatus>物理異常</>または<#ba.spellstatus>アーツ異常</>を発動させたときに<#ba.consume>消費</>する<#ba.noguard>クラッシュ</>段階または<#ba.spellinflict>アーツ付着</>段階を指す（最大4段階）。<#ba.statuslevel>異常段階</>が高いほど、発動する<#ba.physicalstatus>物理異常</>と<#ba.spellstatus>アーツ異常</>の効果も強くなる。"
+  },
+  "ba.vulnerable": {
+    "name": "脆弱",
+    "desc": "一定時間受ける特定の属性ダメージがアップする（数値は増加幅を示す）。同じ効果は重ね掛け可能。"
+  },
+  "ba.weak": {
+    "name": "弱体化",
+    "desc": "一定時間与えるダメージがダウンする（数値は低下幅を示す）。同じ効果は非線形で重ね掛けられる。"
+  },
+  "fac.hub": {
+    "name": "協約核心",
+    "desc": "協約核心は集成工業システムの中枢設備で、多くの機能を備え、工業建設の要となる。\n協約核心を備えた集成工業エリアでは、倉庫管理も可能である。"
+  },
+  "item.bbflower": {
+    "name": "アケトン樹木",
+    "desc": "野外で採集できる植物。可燃性と爆発性の成分がある。\n工業設備や<#item.portSoilBbflower>アケトン樹木畑</>で栽培して収穫できる。\n工業設備で加工できる。例えば、粉砕して<#item.bbflowerPowder>アケトン粉末</>にすることができる。"
+  },
+  "item.bbflowerPowder": {
+    "name": "アケトン粉末",
+    "desc": "工業設備で<#item.bbflower>アケトン樹木</>を粉砕して入手できる粉末。\n素材の合成に使用できる。"
+  },
+  "item.bbflowerSeed": {
+    "name": "アケトンの種",
+    "desc": "工業設備で<#item.bbflower>アケトン樹木</>から採種すると入手できる種。\n工業設備で栽培すればアケトン樹木を収穫できる。\n<#item.carbonMtl>炭塊</>と<#sys.manualCraftField>調合</>することで<#item.portSoilBbflower>アケトン樹木畑</>を作ることができる。"
+  },
+  "item.bottledRecHp1": {
+    "name": "蕎花カプセルⅠ",
+    "desc": "<#item.plantMossPowder1>蕎花粉末</>と<#item.glassBottle>紫晶製ボトル</>を<#sys.manualCraft>道具製作</>または工業設備で充填すると入手できるカプセル。\n使用すると、オペレーターのHPを回復でき、<#sys.tacticalItem>戦闘補助アイテム</>として装備できる。"
+  },
+  "item.carbonMtl": {
+    "name": "炭塊",
+    "desc": "工業設備で<#item.plantMoss1>蕎花</>を精錬して入手できる炭素材。\n畑の<#sys.manualCraftField>調合</>に必要な素材であり、素材の合成に使用できる。"
+  },
+  "item.crystalShell": {
+    "name": "結晶外殻",
+    "desc": "工業設備で<#item.originium>源石鉱物</>を精錬して入手できる外殻。\n素材の合成に使用できる。"
+  },
+  "item.glassBottle": {
+    "name": "紫晶製ボトル",
+    "desc": "工業設備で<#item.quartzGlass>紫晶繊維</>を成形して入手できるボトル。\n素材の合成に使用できる。"
+  },
+  "item.glassCmpt": {
+    "name": "紫晶部品",
+    "desc": "工業設備で<#item.quartzGlass>紫晶繊維</>を組立して入手できる部品。\n素材の合成に使用できる。"
+  },
+  "item.ironEnrPowder": {
+    "name": "高密度青鉄粉末",
+    "desc": "工業設備で<#item.ironPowder>青鉄粉末</>と<#item.plantMossPowder3>サンドリーフ粉末</>を研磨して入手できる高密度粉末。\n素材の合成に使用できる。"
+  },
+  "item.ironNugget": {
+    "name": "青鉄塊",
+    "desc": "工業設備で<#item.ironOre>青鉄鉱物</>を精錬して入手できる金属の塊。\n素材の合成に使用できる。"
+  },
+  "item.ironOre": {
+    "name": "青鉄鉱物",
+    "desc": "野外の青鉄鉱物スポットで採集できる鉱物。\n工業設備で加工できる。例えば、精錬して<#item.ironNugget>青鉄塊</>にすることができる。"
+  },
+  "item.ironPowder": {
+    "name": "青鉄粉末",
+    "desc": "工業設備で<#item.ironNugget>青鉄塊</>を粉砕して入手できる粉末。\n素材の合成に使用できる。"
+  },
+  "item.originium": {
+    "name": "源石鉱物",
+    "desc": "野外の源石鉱物スポットで採集できる鉱物。集成工業システムの発電に使用できる。\n工業設備で加工できる。例えば、精錬して<#item.crystalShell>結晶外殻</>にすることができる。"
+  },
+  "item.originiumEnrPowder": {
+    "name": "高密度源石粉末",
+    "desc": "工業設備で<#item.originiumPowder>源石粉末</>と<#item.plantMossPowder3>サンドリーフ粉末</>を研磨して入手できる高密度粉末。\n素材の合成に使用できる。"
+  },
+  "item.originiumPowder": {
+    "name": "源石粉末",
+    "desc": "工業設備で<#item.originium>源石鉱物</>を粉砕して入手できる粉末。\n素材の合成に使用できる。"
+  },
+  "item.plantMoss1": {
+    "name": "蕎花",
+    "desc": "野外で採集する色鮮やかな花。\n工業設備や<#item.portSoilMoss1>蕎花畑</>で栽培して収穫できる。\n<#sys.tacticalItem>戦闘補助アイテム</>の生産や製作、各種素材の合成に使用される。"
+  },
+  "item.plantMoss3": {
+    "name": "サンドリーフ",
+    "desc": "野外で採集できる粗い葉を持つ植物。\n工業設備や<#item.portSoilMoss3>サンドリーフ畑</>で栽培して収穫できる。\n工業設備で加工できる。例えば、粉砕して<#item.plantMossPowder3>サンドリーフ粉末</>にすることができる。"
+  },
+  "item.plantMossPowder1": {
+    "name": "蕎花粉末",
+    "desc": "<#item.plantMoss1>蕎花</>を<#sys.manualCraft>道具製作</>または工業設備で粉砕して入手できる粉末。\n使用すると、オペレーターのHPを回復でき、<#sys.tacticalItem>戦闘補助アイテム</>として装備できる。"
+  },
+  "item.plantMossPowder3": {
+    "name": "サンドリーフ粉末",
+    "desc": "工業設備で<#item.plantMoss3>サンドリーフ</>を粉砕して入手できる粉末。\n素材の合成に使用でき、よく研磨に使われる。"
+  },
+  "item.plantMossSeed1": {
+    "name": "蕎花の種",
+    "desc": "工業設備で<#item.plantMoss1>蕎花</>を採種すると入手できる種。\n工業設備で栽培すれば蕎花を収穫でき、また<#item.carbonMtl>炭塊</>と<#sys.manualCraftField>調合</>することで<#item.portSoilMoss1>蕎花畑</>を作ることができる。"
+  },
+  "item.plantMossSeed3": {
+    "name": "サンドリーフの種",
+    "desc": "工業設備で<#item.plantMoss3>サンドリーフ</>を採種すると入手できる種。\n工業設備で栽培すればサンドリーフを収穫できる。\n<#item.carbonMtl>炭塊</>と<#sys.manualCraftField>調合</>することで<#item.portSoilMoss3>サンドリーフ畑</>を作ることができる。"
+  },
+  "item.plantMossSpc1": {
+    "name": "火映蕎花",
+    "desc": "野外で採集する色鮮やかな特殊な花。\n<#item.plantMoss1>蕎花</>を採集するときに確率で追加の火映蕎花を入手できる。\n<#sys.tacticalItem>戦闘補助アイテム</>の製作に使用される。"
+  },
+  "item.plantSp1": {
+    "name": "灰麦",
+    "desc": "野外で採集できる作物。<#item.portSoilSp1>灰麦畑</>で栽培して収穫できる。\n<#sys.manualCraftDish>精製食品・薬</>を作る素材として使用できる。"
+  },
+  "item.plantSpSeed1": {
+    "name": "灰麦の種",
+    "desc": "工業設備で<#item.plantSp1>灰麦</>を採種すると入手できる種。\n<#item.carbonMtl>炭塊</>と<#sys.manualCraftField>調合</>することで<#item.portSoilSp1>灰麦畑</>を作ることができる。"
+  },
+  "item.portSoilBbflower": {
+    "name": "アケトン樹木畑",
+    "desc": "栽培場でこまめに育てると<#item.bbflower>アケトン樹木</>を収穫できる畑。\n<#item.bbflowerSeed>アケトンの種</>を<#item.carbonMtl>炭塊</>と調合することで作れる。\n収穫時に大量のアケトン樹木を入手できる。"
+  },
+  "item.portSoilMoss1": {
+    "name": "蕎花畑",
+    "desc": "栽培場でこまめに育てると<#item.plantMoss1>蕎花</>を収穫できる畑。\n<#item.plantMossSeed1>蕎花の種</>を<#item.carbonMtl>炭塊</>と<#sys.manualCraftField>調合</>することで作れる。\n収穫時に大量の蕎花に加え、高確率で<#item.plantMossSpc1>火映蕎花</>を入手できる。"
+  },
+  "item.portSoilMoss3": {
+    "name": "サンドリーフ畑",
+    "desc": "栽培場でこまめに育てると<#item.plantMoss3>サンドリーフ</>を収穫できる畑。\n<#item.plantMossSeed3>サンドリーフの種</>を<#item.carbonMtl>炭塊</>と調合することで作れる。\n収穫時に大量のサンドリーフを入手できる。"
+  },
+  "item.portSoilSp1": {
+    "name": "灰麦畑",
+    "desc": "栽培場でこまめに育てると<#item.plantSp1>灰麦</>を収穫できる畑。\n<#item.plantSpSeed1>灰麦の種</>を<#item.carbonMtl>炭塊</>と調合することで作れる。\n収穫時に大量の灰麦を入手できる。"
+  },
+  "item.procBattery1": {
+    "name": "小容量谷地バッテリー",
+    "desc": "工業設備で<#item.glassCmpt>紫晶部品</>や<#item.originiumPowder>源石粉末</>を包装して生産するバッテリー。\n発電、設備の電力チャージや拠点取引に使用される。"
+  },
+  "item.procBomb": {
+    "name": "工業爆弾",
+    "desc": "生産で入手できる爆発物。\n工業設備で<#item.glassCmpt>紫晶部品</>や<#item.bbflowerPowder>アケトン粉末</>を包装することで生産できる。\n使用すると、爆発範囲内の敵にダメージを与え、爆破可能な物を破壊できる。"
+  },
+  "item.quartzGlass": {
+    "name": "紫晶繊維",
+    "desc": "工業設備で<#item.quartzSand>紫晶鉱物</>を精錬して入手できる繊維。\n素材の合成に使用できる。"
+  },
+  "item.quartzPowder": {
+    "name": "紫晶粉末",
+    "desc": "工業設備で<#item.quartzGlass>紫晶繊維</>を粉砕して入手できる粉末。\n素材の合成に使用できる。"
+  },
+  "item.quartzSand": {
+    "name": "紫晶鉱物",
+    "desc": "野外の紫晶鉱物スポットで採集できる鉱物。\n工業設備で加工できる。例えば、精錬して<#item.quartzGlass>紫晶繊維</>にすることができる。"
+  },
+  "sys.manualCraft": {
+    "name": "道具製作",
+    "desc": "道具箱では、素材を使ってアイテムを作ることができる。\n例えば、道具製作で<#item.plantMoss1>蕎花</>を使って、HPを回復できる<#item.plantMossSeed1>蕎花粉末</>を製作できる。"
+  },
+  "sys.manualCraftDish": {
+    "name": "精製食品・薬",
+    "desc": "精製食品・薬は<#sys.tacticalItem>戦闘補助アイテム</>として使用できる。\n<#sys.manualCraftTonic>応急食品・薬</>と異なり、<#sys.manualCraft>道具製作</>でのみ入手可能である。"
+  },
+  "sys.manualCraftField": {
+    "name": "栽培用",
+    "desc": "<#sys.manualCraft>道具製作</>では、植物の種と<#item.carbonMtl>炭塊</>を調合して対応する植物の畑を作成できる。\n作成した畑は栽培場に配置し、栽培を行うことができる。"
+  },
+  "sys.manualCraftTonic": {
+    "name": "応急食品・薬",
+    "desc": "応急食品・薬は<#sys.tacticalItem>戦闘補助アイテム</>として使用できる。\n<#sys.manualCraft>道具製作</>や工業設備の生産から入手できる。"
+  },
+  "sys.tacticalItem": {
+    "name": "戦闘補助アイテム",
+    "desc": "戦闘補助アイテムは戦闘を有利に進める効果を持つ。各アイテムにはそれぞれの使用条件と回数上限がある。\n戦闘前に、すべてのオペレーターに戦闘補助アイテムを1種類装備させられる。戦闘中、条件を満たすとオペレーターは自動で装備したアイテムを使用する。\n1回の戦闘で使用回数を使い切った場合でも、一定時間後に1回分回復する。"
+  }
+}

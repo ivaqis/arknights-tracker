@@ -10,15 +10,20 @@
     import { currentUid } from "$lib/stores/auth";
     import { fade } from "svelte/transition";
     import { onDestroy } from "svelte";
-    import { disableDarkening } from "$lib/stores/settings";
+    import { disableDarkening, preferredSkillMode } from "$lib/stores/settings";
     import { addNotification } from "$lib/stores/notifications";
+    import { currentLocale, currentUiLocale } from "$lib/stores/locale";
+    import { ctrlForZoom } from "$lib/stores/dragPlateSettings.js";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { weaponEssences } from "$lib/stores/weaponEssences";
 
     import Select from "$lib/components/Select.svelte";
-    import Icon from "$lib/components/Icons.svelte";
+    import Checkbox from "$lib/components/Checkbox.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
     import Button from "$lib/components/Button.svelte";
-    import ConfirmationModal from "$lib/components/ConfirmationModal.svelte";
-    import SyncModal from "$lib/components/SyncModal.svelte";
+    import ConfirmationModal from "$lib/components/modals/ConfirmationModal.svelte";
+    import SyncModal from "$lib/components/modals/SyncModal.svelte";
 
     let isEmailVisible = false;
     let emailTimer;
@@ -50,6 +55,10 @@
         disableDarkening.update((v) => !v);
     }
 
+    function toggleDragPlateMode() {
+        ctrlForZoom.update((v) => !v);
+    }
+
     import {
         user,
         login,
@@ -78,6 +87,11 @@
     const serverOptions = [
         { value: "3", label: "Americas/Europe" },
         { value: "2", label: "Asia" },
+    ];
+
+    $: skillModeOptions = [
+        { value: "list", label: $t("settings.preferredSkillModeList") || "List" },
+        { value: "table", label: $t("settings.preferredSkillModeTable") || "Table" }
     ];
 
     let showServerTime = false;
@@ -115,6 +129,10 @@
         }
     }
 
+    function handleSkillModeChange(e) {
+        preferredSkillMode.set(e.detail);
+    }
+
     function handleSync() {
         if ($syncStatus === "synced" || $syncStatus === "local_newer") {
             uploadLocalData();
@@ -124,9 +142,26 @@
     }
 
     let lastSyncDate = "";
-    $: if ($syncStatus && typeof window !== "undefined") {
+    $: if ($syncStatus && $currentUiLocale && typeof window !== "undefined") {
         const ts = parseInt(localStorage.getItem("ark_last_sync") || "0");
-        lastSyncDate = ts > 0 ? new Date(ts).toLocaleString() : "-";
+        if (ts > 0) {
+            try {
+                let loc = $currentUiLocale;
+                if (loc === "my") loc = "ms-MY";
+                lastSyncDate = new Intl.DateTimeFormat(loc, {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                }).format(new Date(ts));
+            } catch (e) {
+                lastSyncDate = new Date(ts).toLocaleString();
+            }
+        } else {
+            lastSyncDate = "-";
+        }
     }
 
     $: maskedName = $user?.displayName
@@ -155,6 +190,8 @@
                     selectedId: currentSelectedId,
                 },
                 data: {},
+                potentials: get(manualPotentials),
+                essences: get(weaponEssences)
             };
 
             currentAccounts.forEach((acc) => {
@@ -272,6 +309,21 @@
             accountStore.accounts.set(importedJsonData.meta.accounts);
             if (importedJsonData.meta.selectedId)
                 accountStore.selectAccount(importedJsonData.meta.selectedId);
+
+            if (importedJsonData.potentials) {
+                localStorage.setItem(
+                    "operatorPotentialsByAccount",
+                    JSON.stringify(importedJsonData.potentials),
+                );
+                try { manualPotentials.set(importedJsonData.potentials); } catch (err) { }
+            }
+            if (importedJsonData.essences) {
+                localStorage.setItem(
+                    "weaponEssencesByAccount",
+                    JSON.stringify(importedJsonData.essences),
+                );
+                try { weaponEssences.set(importedJsonData.essences); } catch (err) { }
+            }
 
             addNotification("success", $t("settings.backup.success_import_full"));
             setTimeout(() => {
@@ -499,27 +551,7 @@
                     "Changing the server affects import links and data fetching."}
             </p>
 
-            <label
-                class="flex items-start gap-3 select-none group cursor-pointer w-fit"
-            >
-                <div class="relative flex items-center mt-0.5">
-                    <input
-                        type="checkbox"
-                        bind:checked={showServerTime}
-                        class="peer w-5 h-5 cursor-pointer appearance-none rounded border-2 border-line bg-surface checked:border-accent checked:bg-accent transition-all"
-                    />
-                    <svg
-                        class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-[#21272C] opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    >
-                        <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                </div>
+            <Checkbox bind:checked={showServerTime} variant="accent" align="start">
                 <div>
                     <span
                         class="text-gray-600 dark:text-[#E0E0E0] group-hover:dark:text-[#FDFDFD] group-hover:text-black transition-colors cursor-pointer font-medium text-base"
@@ -527,7 +559,7 @@
                         {$t("settings.server.show_server_time")}
                     </span>
                 </div>
-            </label>
+            </Checkbox>
 
             <p class="text-xs text-gray-500 dark:text-[#787878] max-w-md">
                 {$t("settings.server.show_server_time_desc")}
@@ -571,7 +603,7 @@
                         <div
                             class="flex items-center dark:text-[#FDFDFD] gap-2 font-bold text-[#21272C]"
                         >
-                            <Icon name="google" class="w-10 h-10 text-white" />
+                            <Icon name="google" class="w-6 h-6 text-white" />
                             {$t("settings.cloud.integration")}
                         </div>
 
@@ -622,12 +654,12 @@
 
                     {#if !$user}
                         <div
-                            class="flex items-start dark:text-[#B7B6B3] gap-4 text-gray-600 text-sm leading-relaxed mb-3"
+                            class="flex items-start dark:text-[#B7B6B3] gap-3 text-gray-600 text-sm leading-relaxed mb-3"
                         >
                             <div class="mt-0.5 flex-shrink-0">
                                 <Icon
                                     name="info"
-                                    class="w-5 h-5 text-gray-400"
+                                    class="w-4.5 h-4.5 text-gray-400"
                                 />
                             </div>
                             <p>{$t("settings.cloud.description")}</p>
@@ -651,11 +683,11 @@
                                     <img
                                         src={$user.photoURL}
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full dark:border-[#7A7A7A] border border-white shadow-sm shrink-0"
+                                        class="w-10 h-10 rounded-xl dark:border-[#7A7A7A] border border-white shadow-sm shrink-0"
                                     />
                                 {:else}
                                     <div
-                                        class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
+                                        class="w-10 h-10 rounded-xl bg-gray-300 flex items-center justify-center text-white font-bold text-lg shrink-0"
                                     >
                                         {$user.displayName
                                             ? $user.displayName[0]
@@ -716,7 +748,7 @@
                                     {:else}
                                         <Icon name="refresh" class="w-4 h-4" />
                                         {$t("settings.cloud.syncBtn") ||
-                                            "Синхронизировать"}
+                                            "Sync"}
                                     {/if}
                                 </button>
                             {/if}
@@ -742,17 +774,17 @@
             {$t("settings.backup.title")}
         </h2>
         <div
-            class="bg-gray-200 rounded-xl p-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] mb-3 flex items-start gap-4 text-gray-600 text-sm leading-relaxed"
+            class="bg-gray-200 rounded-xl p-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] mb-3 flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-5 h-5 text-gray-400" />
+                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
             </div>
             <p>{$t("settings.backup.description")}</p>
         </div>
 
         <input
             type="file"
-            accept=".json"
+            accept=".json,application/json"
             class="hidden"
             bind:this={fileInputJson}
             on:change={handleFileChangeJson}
@@ -768,13 +800,6 @@
         </div>
     </section>
 
-    <!--<section class="mb-10 ml-2">
-        <h2 class="font-sdk text-2xl dark:text-[#FDFDFD] font-bold text-[#21272C] mb-4">
-            {$t("settings.sources.title")}
-        </h2>
-        <div class="text-gray-400 italic">wip</div>
-    </section>-->
-
     <section class="mb-3 ml-2">
         <h2
             class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-4"
@@ -782,24 +807,24 @@
             {$t("settings.feedback.title")}
         </h2>
         <div
-            class="bg-gray-200 rounded-xl p-5 mb-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] flex items-start gap-4 text-gray-600 text-sm leading-relaxed"
+            class="bg-gray-200 rounded-xl p-5 mb-5 dark:bg-[#383838] dark:border-[#444444] dark:text-[#B7B6B3] flex items-start gap-3 text-gray-600 text-sm leading-relaxed"
         >
             <div class="mt-0.5 flex-shrink-0">
-                <Icon name="info" class="w-5 h-5 text-gray-400" />
+                <Icon name="info" class="w-4.5 h-4.5 text-gray-400" />
             </div>
             <p>{$t("settings.feedback.text")}</p>
         </div>
 
-        <div class="w-48 flex gap-3">
+        <div class="flex flex-wrap gap-3">
             <a
                 href="https://t.me/ivawa73"
                 target="_blank"
                 rel="noreferrer"
-                class="no-underline"
+                class="no-underline w-48"
             >
                 <Button variant="black2">
                     <div slot="icon">
-                        <Icon name="telegram" class="w-6 h-6" />
+                        <Icon name="telegram" class="w-10 h-10" />
                     </div>
                     {$t("settings.feedback.telegram")}
                 </Button>
@@ -808,7 +833,7 @@
                 href="https://discord.gg/nqfuaRbWWn"
                 target="_blank"
                 rel="noreferrer"
-                class="no-underline"
+                class="no-underline w-48"
             >
                 <Button variant="black2">
                     <div slot="icon">
@@ -826,16 +851,16 @@
         >
             {$t("settings.donate.title")}
         </h2>
-        <div class="w-48 flex gap-3">
+        <div class="flex flex-wrap gap-3">
             <a
                 href="https://boosty.to/ivawa/donate"
                 target="_blank"
                 rel="noreferrer"
-                class="no-underline"
+                class="no-underline w-48"
             >
                 <Button variant="black2">
                     <div slot="icon">
-                        <Icon name="boosty" class="w-6 h-6" />
+                        <Icon name="boosty" class="w-7 h-7" />
                     </div>
                     Boosty
                 </Button>
@@ -844,13 +869,29 @@
                 href="https://t.me/tribute/app?startapp=dFlw"
                 target="_blank"
                 rel="noreferrer"
-                class="no-underline"
+                class="no-underline w-48"
             >
                 <Button variant="black2">
                     <div slot="icon">
-                        <Icon name="tribute" class="w-6 h-6" />
+                        <Icon name="tribute" class="w-7 h-7" />
                     </div>
                     Tribute
+                </Button>
+            </a>
+            <a
+                href="https://patreon.com/ivawa?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+                target="_blank"
+                rel="noreferrer"
+                class="no-underline w-48"
+            >
+                <Button
+                    variant="black2"
+                    className="w-full justify-center"
+                >
+                    <div slot="icon">
+                        <Icon name="patreon" class="w-7 h-7" />
+                    </div>
+                    Patreon
                 </Button>
             </a>
         </div>
@@ -861,13 +902,13 @@
         >
             {$t("settings.other")}
         </h2>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 mb-4">
         <button
                 type="button"
                 role="switch"
                 aria-label="switch"
                 aria-checked={$disableDarkening}
-                class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$disableDarkening
+                class="shrink-0 relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$disableDarkening
                     ? 'bg-[#F9B90C]'
                     : 'bg-gray-200 dark:bg-[#555]'}"
                 on:click={toggleDarkening}
@@ -882,6 +923,45 @@
                 {$t("settings.disableDarkening") || "Disable darkening"}
             </span>
             
+        </div>
+
+        <div class="flex items-center gap-3">
+
+            <button
+                type="button"
+                role="switch"
+                aria-label="switch"
+                aria-checked={$ctrlForZoom}
+                class="shrink-0 relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none {$ctrlForZoom
+                    ? 'bg-[#F9B90C]'
+                    : 'bg-gray-200 dark:bg-[#555]'}"
+                on:click={toggleDragPlateMode}
+            >
+                    <span
+                        class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform {$ctrlForZoom
+                    ? 'translate-x-6'
+                    : 'translate-x-1'} shadow-sm"
+                    ></span>
+            </button>
+
+            <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
+                    {$t("settings.toggleCtrlForZoom")}
+                </span>
+
+        </div>
+
+        <div class="mt-4 flex flex-col items-start gap-2">
+            <span class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800">
+                {$t("settings.preferredSkillMode") || "Preferred display mode for combat skills"}
+            </span>
+            <div class="w-80">
+                <Select
+                    options={skillModeOptions}
+                    value={$preferredSkillMode}
+                    on:change={handleSkillModeChange}
+                    variant="black"
+                />
+            </div>
         </div>
     </section>
 </div>

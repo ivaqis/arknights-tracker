@@ -96,14 +96,13 @@ body {
 
 html {
     scrollbar-width: auto; 
+    scrollbar-gutter: stable;
   }
 
-  /* Для Chrome/Safari: делаем скролл окна шире (14px) */
   html::-webkit-scrollbar {
     width: 14px;
   }
 
-  /* Делаем сам ползунок чуть толще, чтобы было удобно хватать */
   html::-webkit-scrollbar-thumb {
     border: 3px solid transparent; 
   }

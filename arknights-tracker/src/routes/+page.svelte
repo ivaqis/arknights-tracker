@@ -1,7 +1,7 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
   import { t } from "$lib/i18n";
-  import { currentLocale } from "$lib/stores/locale";
+  import { onMount, onDestroy } from "svelte";
+  import { currentLocale, currentUiLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
   import { promocodes } from "$lib/data/promocodes.js";
@@ -10,10 +10,11 @@
   import { progression } from "$lib/data/items/progression";
   import { fade } from "svelte/transition";
 
-  import Icon from "$lib/components/Icons.svelte";
-  import Images from "$lib/components/Images.svelte";
+  import Icon from "$lib/components/Icon.svelte";
+  import Image from "$lib/components/Image.svelte";
   import Button from "$lib/components/Button.svelte";
-  import BannerModal from "$lib/components/BannerModal.svelte";
+  import BannerModal from "$lib/components/modals/BannerModal.svelte";
+  import SupportModal from "$lib/components/modals/SupportModal.svelte";
   import Tooltip from "$lib/components/Tooltip.svelte";
 
   let now = new Date();
@@ -86,22 +87,20 @@
     });
 
   $: activeEvents = rawEvents
-    .filter((e) => {
-      const start = parseWithServerOffset(e.startTime);
-      const end = e.endTime
-        ? parseWithServerOffset(e.endTime)
-        : new Date(9999, 11, 31);
-      return now >= start && now <= end;
+    .map((e) => {
+      const isAsia = currentServerId === "2";
+      const displayStartTime = isAsia && e.startTimeAsia ? e.startTimeAsia : e.startTime;
+      const displayEndTime = isAsia && e.endTimeAsia ? e.endTimeAsia : e.endTime;
+      return {
+        ...e,
+        displayStartTime,
+        displayEndTime,
+        startTimeMs: parseWithServerOffset(displayStartTime).getTime(),
+        endTimeMs: displayEndTime ? parseWithServerOffset(displayEndTime).getTime() : Infinity,
+      };
     })
-    .sort((a, b) => {
-      const endA = a.endTime
-        ? parseWithServerOffset(a.endTime).getTime()
-        : Infinity;
-      const endB = b.endTime
-        ? parseWithServerOffset(b.endTime).getTime()
-        : Infinity;
-      return endA - endB;
-    });
+    .filter((e) => now.getTime() >= e.startTimeMs && now.getTime() <= e.endTimeMs)
+    .sort((a, b) => a.endTimeMs - b.endTimeMs);
 
   let currentBannerIndex = 0;
   let bannerInterval;
@@ -152,12 +151,14 @@
   function getFormattedDate(dateStr) {
     const end = parseWithServerOffset(dateStr);
     const dateOptions = { month: "short", day: "numeric" };
+    let loc = $currentUiLocale || "en";
+    if (loc === "my") loc = "ms-MY";
     if (showServerTime) {
       const timeZone =
         currentServerId === "2" ? "Asia/Shanghai" : "America/New_York";
-      return end.toLocaleString($currentLocale, { ...dateOptions, timeZone });
+      return end.toLocaleString(loc, { ...dateOptions, timeZone });
     }
-    return end.toLocaleString($currentLocale, dateOptions);
+    return end.toLocaleString(loc, dateOptions);
   }
 
   function getPromoTimeLabel(dateStr) {
@@ -250,7 +251,7 @@
       if (!isAPerm && isBPerm) return -1;
 
       if (!isAPerm && !isBPerm) {
-        return new Date(a.endTime).getTime() - new Date(b.endTime).getTime();
+        return a.endTimeMs - b.endTimeMs;
       }
 
       return 0;
@@ -310,7 +311,7 @@
                 in:fade={{ duration: 200 }}
                 out:fade={{ duration: 200 }}
               >
-                <Images
+                <Image
                   id={activeBanners[currentBannerIndex].icon}
                   interactive={true}
                   variant="banner-icon"
@@ -347,7 +348,7 @@
                   activeBanners.length;
               }}
             >
-              <Icon name="chevronLeft" style="width: 24px; height: 24px;" />
+              <Icon name="chevronLeft" className="w-6 h-6" />
             </button>
             <button
               type="button"
@@ -357,7 +358,7 @@
                   (currentBannerIndex + 1) % activeBanners.length;
               }}
             >
-              <Icon name="chevronRight" style="width: 24px; height: 24px;" />
+              <Icon name="chevronRight" className="w-6 h-6" />
             </button>
           {:else}
             <div
@@ -410,7 +411,7 @@
                   (selectedBanner = event)}
               >
                 <div class="absolute top-0 right-0 bottom-0 w-[200px] z-0">
-                  <Images
+                  <Image
                     id={event.icon || event.id}
                     variant="event-icon"
                     className="w-full h-full  object-cover"
@@ -454,8 +455,8 @@
                       {$t(event.title) || event.title}
                     </div>
                   </div>
-                  {#if event.endTime && event.type !== "inGamePermanent"}
-                    {@const diff = parseWithServerOffset(event.endTime) - now}
+                  {#if event.displayEndTime && event.type !== "inGamePermanent"}
+                    {@const diff = parseWithServerOffset(event.displayEndTime) - now}
                     {@const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24))}
                     {@const isEndingSoon = daysLeft <= 3 && daysLeft >= 0}
 
@@ -474,7 +475,7 @@
                           ? 'text-orange-300'
                           : 'text-white'} font-nums leading-none"
                       >
-                        {formatTimeLeft(event.endTime)}
+                        {formatTimeLeft(event.displayEndTime)}
                       </span>
                     </div>
                   {/if}
@@ -520,7 +521,7 @@
                 class="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 py-3 px-3 border-b border-gray-50 dark:border-[#444444]/30 last:border-0 hover:bg-gray-50 hover:dark:bg-[#343434] transition-colors rounded-lg group"
               >
                 <div class="w-full md:w-auto md:max-w-[50%] shrink-0">
-                  <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-1.5">
                     <div class="min-w-0 shrink-1">
                       {#if promo.url}
                         <a
@@ -541,17 +542,7 @@
                       class="flex items-center justify-center p-1.5 rounded-md hover:bg-gray-200 hover:dark:bg-[#373737] text-gray-400 hover:text-[#21272C] hover:dark:text-[#B7B6B3] transition-colors shrink-0"
                     >
                       {#if copiedCode === promo.code}
-                        <svg
-                          width="12"
-                          height="12"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="#FACC15"
-                          stroke-width="3"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          ><polyline points="20 6 9 17 4 12"></polyline></svg
-                        >
+                        <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                       {:else}
                         <Icon name="copy" class="w-3.5 h-3.5" />
                       {/if}
@@ -561,7 +552,7 @@
                         <div
                           class="text-[#FACC15] hover:text-yellow-600 transition-colors flex items-center justify-center p-1 shrink-0"
                         >
-                          <Icon name="info" class="w-3 h-3" />
+                          <Icon name="info" class="w-3.5 h-3.5" />
                         </div>
                       </Tooltip>
                     {/if}
@@ -579,7 +570,7 @@
                         )}"
                       >
                         <span class="font-bold mr-1">{reward.count}</span>
-                        <Images
+                        <Image
                           id={reward.id}
                           variant="item"
                           size={16}
@@ -612,12 +603,12 @@
                   {:else}
                     <span
                       class="text-[11px] font-bold text-gray-600 dark:text-[#E0E0E0] whitespace-nowrap leading-tight"
-                      >{getFormattedDate(promo.displayEndTime)}</span
-                    >
+                      >{getFormattedDate(promo.displayEndTime)}
+                    </span>
                     <span
                       class="text-[9px] font-medium text-gray-400 dark:text-[#9CA3AF] whitespace-nowrap leading-tight"
-                      >{getPromoTimeLabel(promo.displayEndTime)}</span
-                    >
+                      >{getPromoTimeLabel(promo.displayEndTime)}
+                    </span>
                   {/if}
                 </div>
               </div>
@@ -680,7 +671,7 @@
           class="w-full flex items-center justify-between p-3 bg-white dark:bg-[#383838] border border-gray-100 dark:border-[#444444] hover:border-amber-400 dark:hover:border-amber-500 rounded-xl shadow-sm transition-colors group"
         >
           <div class="flex items-center gap-2">
-            <Images
+            <Image
               id="origeometry"
               variant="item"
               size={32}
@@ -723,98 +714,4 @@
 
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />
 
-{#if isSupportOpen}
-  <div
-    class="fixed inset-0 md:ml-[var(--sb-w)] z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm transition-opacity"
-    on:click={() => (isSupportOpen = false)}
-    on:keydown={(e) => e.key === "Escape" && (isSupportOpen = false)}
-    role="button"
-    tabindex="0"
-  >
-    <div
-      class="bg-white dark:bg-[#383838] dark:border-[#444444] rounded-2xl p-8 max-w-sm w-full mx-4 shadow-2xl relative cursor-default"
-      on:click|stopPropagation
-      on:keydown|stopPropagation
-      role="dialog"
-      aria-modal="true"
-      tabindex="-1"
-    >
-      <button
-        class="absolute top-4 right-4 text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors"
-        on:click={() => (isSupportOpen = false)}
-      >
-        <Icon name="close" class="w-6 h-6" />
-      </button>
-
-      <h2
-        class="font-sdk dark:text-[#FDFDFD] text-2xl font-bold text-[#21272C] mb-2 text-center"
-      >
-        {$t("settings.donate.title")}
-      </h2>
-
-      <p
-        class="text-sm text-gray-500 dark:text-gray-400 mb-6 text-center leading-relaxed"
-      >
-        {$t("settings.donate.description")}
-      </p>
-
-      <div class="flex flex-col gap-3">
-        <a
-          href="https://boosty.to/ivawa/donate"
-          target="_blank"
-          rel="noreferrer"
-          class="no-underline block"
-        >
-          <Button variant="black2" className="w-full justify-center shadow-sm">
-            <div slot="icon">
-              <Icon name="boosty" class="w-5 h-5" />
-            </div>
-            Boosty
-          </Button>
-        </a>
-        <a
-          href="https://t.me/tribute/app?startapp=dFlw"
-          target="_blank"
-          rel="noreferrer"
-          class="no-underline block"
-        >
-          <Button variant="black2" className="w-full justify-center shadow-sm">
-            <div slot="icon">
-              <Icon name="tribute" class="w-5 h-5" />
-            </div>
-            Tribute
-          </Button>
-        </a>
-        <a
-          href="https://patreon.com/ivawa?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
-          target="_blank"
-          rel="noreferrer"
-          class="no-underline block"
-      >
-          <Button
-              variant="black2"
-              className="w-full justify-center"
-          >
-              <div slot="icon">
-                  <Icon name="patreon" class="w-5 h-5" />
-              </div>
-              Patreon
-          </Button>
-        </a>
-      </div>
-    </div>
-  </div>
-{/if}
-
-<style>
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 5px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-  }
-</style>
+<SupportModal isOpen={isSupportOpen} on:close={() => (isSupportOpen = false)} />

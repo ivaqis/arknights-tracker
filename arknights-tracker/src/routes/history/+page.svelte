@@ -6,8 +6,8 @@
     import { characters } from "$lib/data/characters.js";
     import { weapons } from "$lib/data/weapons.js";
 
-    import Images from "$lib/components/Images.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
     import Select from "$lib/components/Select.svelte";
 
     let now = new Date();
@@ -54,11 +54,11 @@
     const sortOptions = [
         {
             value: "max_wait",
-            label: $t("systemNames.sortByWait") || "По числу дней без рерана",
+            label: $t("systemNames.sortByWait") || "By days without rerun",
         },
         {
             value: "release",
-            label: $t("systemNames.sortByRelease") || "По релизам",
+            label: $t("systemNames.sortByRelease") || "By release date",
         },
     ];
 
@@ -232,7 +232,9 @@
         if (browser) {
             timerInterval = setInterval(() => (now = new Date()), 60000);
             setTimeout(() => {
-                if (bodyContainer) bodyContainer.scrollLeft = totalWidth;
+                if (bodyContainer) {
+                    bodyContainer.scrollLeft = Math.max(0, timelineEnd - bodyContainer.clientWidth + 220);
+                }
             }, 100);
         }
     });
@@ -243,10 +245,10 @@
 </script>
 
 <div class="relative flex flex-col w-full text-[#21272C] dark:text-[#FDFDFD]">
-    <div class="flex items-center gap-4 mb-1 shrink-0">
+    <div class="flex items-center gap-4 mb-1 shrink-0 font-sdk">
         <h2
-            class="font-sdk dark:text-[#FDFDFD] text-5xl tracking-wide text-[#21272C] flex items-center gap-3 mb-3"
-        >
+                class="text-3xl md:text-5xl tracking-wide text-[#21272C] dark:text-[#FDFDFD]"
+            >
             {$t("pages.bannerHistory") || "Banners History"}
         </h2>
     </div>
@@ -311,9 +313,8 @@
             <div class="relative w-full pb-8 pt-7 pl-4">
                 {#each sortedItems as item}
                     {@const lastBanner = item.banners[item.banners.length - 1]}
-                    {@const isLastExpanded =
-                        currentTab === "weapons" &&
-                        lastBanner.endVIndex > lastBanner.startVIndex}
+                    {@const isLastExpanded = item.isCurrentlyActive}
+                    {@const rightColumnX = timelineEnd}
                     <div
                         class="relative flex items-center group"
                         style="height: {ROW_HEIGHT}px;"
@@ -321,129 +322,94 @@
                         <div
                             class="absolute h-[32px] opacity-40 dark:opacity-30 rounded-full"
                             style="left: {getX(item.banners[0].startMs) -
-                                16}px; width: {timelineEnd -
+                                16}px; width: {rightColumnX -
                                 getX(item.banners[0].startMs) +
-                                30}px; background-color: {item.banners[0]
+                                100}px; background-color: {item.banners[0]
                                 .color || '#555555'};"
                         ></div>
 
                         {#each item.banners as banner, i}
                             {@const isExpanded =
-                                currentTab === "weapons" &&
-                                banner.endVIndex > banner.startVIndex}
+                                (currentTab === "weapons" && banner.endMs > banner.startMs) ||
+                                (i === item.banners.length - 1 && item.isCurrentlyActive)}
                             {@const pillWidth = isExpanded
-                                ? getX(banner.endMs) - getX(banner.startMs) + 32
+                                ? (i === item.banners.length - 1 && item.isCurrentlyActive
+                                    ? timelineEnd - getX(banner.startMs) + 210
+                                    : getX(banner.endMs) - getX(banner.startMs) + 8)
                                 : null}
-                            {@const showPill =
-                                i === 0 ||
-                                i < item.banners.length - 1 ||
-                                isExpanded}
 
-                            {#if showPill}
-                                <button
-                                    on:click={() => (selectedBanner = banner)}
-                                    class="absolute z-20 flex items-center bg-[#21272C] dark:bg-[#1E1E1E] rounded-full h-8 shadow-md outline outline-gray-400 dark:outline-[#444] pr-3 hover:outline-white dark:hover:outline-white transition-all overflow-hidden"
-                                    style="left: {getX(
-                                        banner.startMs,
-                                    )}px; transform: translateX(-16px); {pillWidth
-                                        ? `width: ${pillWidth}px;`
-                                        : ''}"
+                            <button
+                                on:click={() => (selectedBanner = banner)}
+                                class="absolute z-20 flex items-center bg-[#21272C] dark:bg-[#1E1E1E] rounded-full h-8 shadow-md outline outline-gray-400 dark:outline-[#444] pr-3 hover:outline-white dark:hover:outline-white transition-all overflow-hidden"
+                                style="left: {getX(
+                                    banner.startMs,
+                                )}px; transform: translateX(-16px); {pillWidth
+                                    ? `width: ${pillWidth}px;`
+                                    : ''}"
+                            >
+                                <div
+                                    class="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0"
                                 >
-                                    <div
-                                        class="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0"
-                                    >
-                                        <Images
-                                            id={item.id}
-                                            variant={currentTab === "weapons"
-                                                ? "weapon-icon"
-                                                : "operator-preview"}
-                                            className="scale-[1.35] w-full h-full object-cover"
-                                        />
-                                    </div>
-
-                                    {#if i < item.banners.length - 1}
-                                        <div
-                                            class="ml-2 flex flex-col justify-center text-white dark:text-gray-200 leading-none text-left gap-0.5"
-                                        >
-                                            <span
-                                                class="text-[10px] font-bold whitespace-nowrap"
-                                            >
-                                                {banner.version}
-                                            </span>
-                                            <span
-                                                class="text-[8px] opacity-75 font-semibold whitespace-nowrap"
-                                            >
-                                                {banner.gapDays}{$t(
-                                                    "systemNames.d",
-                                                ) || "d"}
-                                            </span>
-                                        </div>
-                                    {:else if isLastExpanded && i === item.banners.length - 1}
-                                        <div
-                                            class="ml-2 flex flex-col justify-center text-white dark:text-gray-200 leading-none text-left gap-0.5"
-                                        >
-                                            <span
-                                                class="text-[10px] font-bold whitespace-nowrap"
-                                            >
-                                                {banner.version}
-                                            </span>
-                                            <span
-                                                class="text-[8px] opacity-75 font-semibold whitespace-nowrap pr-2"
-                                            >
-                                                {#if item.isCurrentlyActive}
-                                                    <span class="text-green-400"
-                                                        >{$t("status.active") ||
-                                                            "Активен"}</span
-                                                    >
-                                                    ({$t(
-                                                        "timer.ongoing_active",
-                                                        { n: item.daysOngoing },
-                                                    )})
-                                                {:else}
-                                                    {$t("systemNames.versions")}
-                                                    {item.versionsWaiting} • {$t(
-                                                        "timer.days_ago",
-                                                        { n: item.daysWaiting },
-                                                    )}
-                                                {/if}
-                                            </span>
-                                        </div>
-                                    {:else}
-                                        <span
-                                            class="ml-2 text-[10px] font-bold text-white dark:text-gray-200 whitespace-nowrap"
-                                        >
-                                            {banner.version}
-                                        </span>
-                                    {/if}
-                                </button>
-                            {:else}
-                                <button
-                                    on:click={() => (selectedBanner = banner)}
-                                    class="absolute z-20 flex items-center bg-[#21272C] dark:bg-[#1E1E1E] rounded-full h-8 w-8 shadow-md outline outline-gray-400 dark:outline-[#444] hover:outline-white dark:hover:outline-white transition-all overflow-hidden"
-                                    style="left: {getX(
-                                        banner.startMs,
-                                    )}px; transform: translateX(-16px);"
-                                >
-                                    <Images
+                                    <Image
                                         id={item.id}
                                         variant={currentTab === "weapons"
                                             ? "weapon-icon"
                                             : "operator-preview"}
-                                        className="w-full h-full object-cover"
+                                        className="scale-[1.35] w-full h-full object-cover"
                                     />
-                                </button>
+                                </div>
+
+                                {#if i === item.banners.length - 1 && item.isCurrentlyActive}
+                                    <div
+                                        class="ml-2 flex flex-col justify-center text-white dark:text-gray-200 leading-none text-left gap-0.5"
+                                    >
+                                        <span
+                                            class="text-[10px] font-bold whitespace-nowrap pr-2"
+                                        >
+                                            {banner.version}
+                                            • <span class="text-green-400"
+                                                >{$t("status.active") ||
+                                                    "Active"}</span
+                                            >
+                                        </span>
+                                        <span
+                                            class="text-[8px] opacity-75 font-semibold whitespace-nowrap pr-2"
+                                        >
+                                            {$t("timer.ongoing_active", {
+                                                n: item.daysOngoing,
+                                            })}
+                                        </span>
+                                    </div>
+                                {:else}
+                                    <span
+                                        class="ml-2 text-[10px] font-bold text-white dark:text-gray-200 whitespace-nowrap"
+                                    >
+                                        {banner.version}
+                                    </span>
+                                {/if}
+                            </button>
+
+                            {#if i < item.banners.length - 1}
+                                {@const nextBanner = item.banners[i + 1]}
+                                {@const endOfFirstPill = isExpanded ? getX(banner.endMs) + 16 : getX(banner.startMs) + 16}
+                                {@const startOfNextPill = getX(nextBanner.startMs) - 16}
+                                {@const centerX = (endOfFirstPill + startOfNextPill) / 2}
+                                <div
+                                    class="absolute z-30 px-2 py-0.5 bg-gray-200/80 dark:bg-[#383838]/85 backdrop-blur-sm rounded-full text-[9px] font-bold text-gray-600 dark:text-gray-300 pointer-events-none shadow-sm border border-gray-300 dark:border-[#4c4c4c]"
+                                    style="left: {centerX}px; transform: translateX(-50%);"
+                                >
+                                    {banner.gapDays}{$t("systemNames.d") || "d"}
+                                </div>
                             {/if}
                         {/each}
 
                         <div
-                            class="absolute z-20 flex items-center"
-                            style="left: {isLastExpanded
-                                ? getX(lastBanner.endMs)
-                                : timelineEnd}px; transform: translateX(-16px);"
+                            class="absolute z-20 flex items-center pointer-events-none"
+                            style="left: {rightColumnX + 80}px; transform: translateX(-16px);"
                         >
                             {#if !isLastExpanded}
                                 <button
-                                    class="flex items-center bg-[#21272C] dark:bg-[#1E1E1E] rounded-full h-8 pr-3 outline outline-gray-400 min-w-[90px] dark:outline-[#444] shadow-md transition-all {item.isCurrentlyActive ||
+                                    class="pointer-events-auto flex items-center bg-[#21272C] dark:bg-[#1E1E1E] rounded-full h-8 pr-3 outline outline-gray-400 w-[130px] dark:outline-[#444] shadow-md transition-all {item.isCurrentlyActive ||
                                     item.isCurrentVersion
                                         ? 'cursor-pointer hover:outline-white dark:hover:outline-white'
                                         : 'cursor-default'}"
@@ -462,7 +428,7 @@
                                     <div
                                         class="w-8 h-8 rounded-full overflow-hidden bg-gradient-to-t from-[#591C00] to-[#CA774C] shrink-0"
                                     >
-                                        <Images
+                                        <Image
                                             id={item.id}
                                             variant={currentTab === "weapons"
                                                 ? "weapon-icon"
@@ -475,38 +441,38 @@
                                     >
                                         {#if item.isCurrentlyActive}
                                             <span
-                                                class="text-[10px] font-bold text-green-400 whitespace-nowrap"
-                                                >{$t("status.active") ||
-                                                    "Активен"}</span
+                                                class="text-[9px] font-bold text-green-400 whitespace-nowrap"
                                             >
+                                                {lastBanner.version} • {$t("status.active") || "Активен"}
+                                            </span>
                                             <span
                                                 class="text-[9px] font-bold whitespace-nowrap"
-                                                >{$t("timer.ongoing_active", {
-                                                    n: item.daysOngoing,
-                                                })}</span
                                             >
+                                                {$t("timer.ongoing_active", {
+                                                    n: item.daysOngoing,
+                                                })}
+                                            </span>
                                         {:else}
                                             <span
                                                 class="text-[9px] font-bold whitespace-nowrap"
-                                                >{$t("systemNames.versions")}
-                                                {item.versionsWaiting}</span
                                             >
+                                                {lastBanner.version} • {$t("systemNames.versions")} {item.versionsWaiting}
+                                            </span>
                                             <span
                                                 class="text-[9px] font-bold whitespace-nowrap"
-                                                >{$t("timer.days_ago", {
-                                                    n: item.daysWaiting,
-                                                })}</span
                                             >
+                                                {$t("timer.days_ago", {
+                                                    n: item.daysWaiting,
+                                                })}
+                                            </span>
                                         {/if}
                                     </div>
                                 </button>
+                            {:else}
+                                <div class="w-[130px] shrink-0"></div>
                             {/if}
 
-                            <span
-                                class="text-sm font-bold whitespace-nowrap text-[#21272C] dark:text-[#FDFDFD] {isLastExpanded
-                                    ? 'ml-12'
-                                    : 'ml-3'}"
-                            >
+                            <span class="text-sm font-bold whitespace-nowrap text-[#21272C] dark:text-[#FDFDFD] ml-3">
                                 {currentTab === "operators"
                                     ? $t(`characters.${item.id}`) !==
                                       `characters.${item.id}`
@@ -526,24 +492,3 @@
 </div>
 
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />
-
-<style>
-    .custom-scrollbar {
-        scrollbar-width: auto;
-        scrollbar-color: #a1a1aa transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #d4d4d8;
-        border-radius: 10px;
-    }
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background-color: #a1a1aa;
-    }
-</style>

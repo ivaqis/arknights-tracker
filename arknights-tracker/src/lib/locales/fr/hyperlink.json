@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Clôture haute tension",
+    "desc": "La clôture haute tension ne peut pas être franchie. Suivez le câble, trouvez l'interrupteur et désactivez-la pour la franchir en toute sécurité."
+  },
+  "adv.eswitch": {
+    "name": "Dispositif de réaction",
+    "desc": "Les dispositifs de réaction changent de mode de fonctionnement lorsqu'ils sont attaqués ou touchés par une explosion. Ils sont généralement utilisés pour désactiver les <#adv.electricFence>clôtures haute tension</> ou activer les <#adv.jumpMachine>dispositifs de rebond</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Dispositif de rebond",
+    "desc": "L'opérateur contrôlé peut utiliser des dispositifs de rebond pour sauter sur de plus longues distances ou accéder aux zones qu'un saut normal ne lui permettrait pas d'atteindre.\nPour ce faire, placez-vous sur un dispositif de rebond en état de marche et sautez."
+  },
+  "adv.powerTerminal": {
+    "name": "Nœud électrique",
+    "desc": "Un nœud électrique est souvent installé en bout de ligne de transmission électrique. Connectez-le au réseau électrique pour alimenter les installations à proximité. Les nœuds électriques servent souvent à alimenter les portes et les interrupteurs. Alimentez le nœud électrique à l'aide de tours relais. Cela vous permettra de contrôler les portes et les interrupteurs associés."
+  },
+  "ba.absorb": {
+    "name": "Absorption",
+    "desc": "Permet de mettre fin prématurément aux malus physiques ou des Arts. L'<@ba.key>absorption</> n'est pas la même chose que la <#ba.consume>consommation</>."
+  },
+  "ba.airborne": {
+    "name": "Statut physique : Soulèvement",
+    "desc": "Rend l'ennemi <#ba.noguard>vulnérable</>. S'il est déjà <#ba.noguard>vulnérable</>, ajoute 1 cumul de <#ba.noguard>Vulnérabilité</> et inflige des <@ba.phy>DÉG physiques</> ainsi que <@ba.poise>Déséquilibre</>."
+  },
+  "ba.burning": {
+    "name": "Réaction aux Arts : Combustion",
+    "desc": "Un ennemi victime de <@ba.burning>Combustion</> subit des <@ba.fire>DÉG thermiques</> continus.\n<@ba.burning>Combustion</> = une <#ba.spellinflict>altération non thermique</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>altération thermique</>"
+  },
+  "ba.burningonchar": {
+    "name": "Malus d'opérateur : Combustion",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.fireinflict>altération thermique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.burning>Combustion</> : il encaisse temporairement des <@ba.fire>DÉG thermiques</> en continu qui ignorent sa DÉF."
+  },
+  "ba.combo": {
+    "name": "Lien",
+    "desc": "La prochaine compétence de combat ou le prochain ultime lancés par l'équipe consomment le bonus de Lien et infligent davantage de DÉG, notamment s'il s'agit de compétences de combat. Les effets du même type sont cumulables, mais avec des effets dégressifs."
+  },
+  "ba.conduct": {
+    "name": "Réaction aux Arts : Électrification",
+    "desc": "Un ennemi victime d'<@ba.conduct>Électrification</> subit davantage de <#ba.spelldmg>DÉG des Arts</>.\n<@ba.conduct>Électrification</> = une <#ba.spellinflict>altération non électrique</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>altération électrique</>"
+  },
+  "ba.conductonchar": {
+    "name": "Malus d'opérateur : Électrification",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.pulseinflict>altération électrique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état d'<@ba.conduct>Électrification</> : il est temporairement étourdi et encaisse davantage de <#ba.spelldmg>DÉG des Arts</> pendant un certain temps."
+  },
+  "ba.consume": {
+    "name": "Consommation de malus",
+    "desc": "Plusieurs malus physiques et des Arts peuvent être interrompus prématurément. Par exemple, <#ba.crush>Broyage</> consomme des malus de <#ba.noguard>Vulnérabilité</>, alors que <#ba.burning>Combustion</> consomme des malus d'<#ba.spellinflict>altération des Arts</>."
+  },
+  "ba.corrupt": {
+    "name": "Réaction aux Arts : Corrosion",
+    "desc": "Un ennemi victime de <@ba.corrupt>Corrosion</> voit sa résistance à tous les éléments diminuer peu à peu.\n<@ba.corrupt>Corrosion</> = une <#ba.spellinflict>altération non naturelle</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>altération naturelle</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Malus d'opérateur : Corrosion",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.naturalinflict>altération naturelle</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.corrupt>Corrosion</> : il ne peut plus effectuer de ruée et sa vitesse de déplacement est réduite pendant un certain temps."
+  },
+  "ba.crush": {
+    "name": "Statut physique : Broyage",
+    "desc": "Rend l'ennemi <#ba.noguard>vulnérable</>. S'il est déjà <#ba.noguard>vulnérable</>, <#ba.consume>consomme</> tous les cumuls de <#ba.noguard>Vulnérabilité</> et inflige de lourds <@ba.phy>DÉG physiques</>."
+  },
+  "ba.crystbreak": {
+    "name": "Éclatement",
+    "desc": "Sur un ennemi victime d'une <#ba.frozen>Solidification</>, appliquer une <#ba.noguard>Vulnérabilité</> ou d'autres <#ba.physicalstatus>statuts physiques</> <#ba.consume>consomme</> la <#ba.frozen>Solidification</> pour déclencher Éclatement, qui inflige de lourds <@ba.pd>DÉG physiques</>."
+  },
+  "ba.crystburst": {
+    "name": "Explosion des Arts cryogénique",
+    "desc": "Utiliser <#ba.crystinflict>Altération cryogénique</> + <#ba.crystinflict>Altération cryogénique</> déclenche une <@ba.cryst>Explosion cryogénique</> qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis."
+  },
+  "ba.crystenhance": {
+    "name": "Amplification cryogénique",
+    "desc": "Les cibles cryogéniquement amplifiées infligent temporairement plus de <@ba.cryst>DÉG cryogéniques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.crystinflict": {
+    "name": "Altération des Arts cryogénique",
+    "desc": "L'<@ba.crystinflict>altération cryogénique</> est un type d'<#ba.spellinflict>altération des Arts</>. \nVous pouvez appliquer jusqu'à 4 cumuls d'<@ba.crystinflict>altération cryogénique</> pour déclencher une <#ba.crystburst>explosion cryogénique</>. \n<#ba.spellinflict>Altération non cryogénique</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>altération cryogénique</> = <#ba.frozen>Solidification</>"
+  },
+  "ba.crystonchar": {
+    "name": "Malus d'opérateur : altération cryogénique",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.crystinflict>altération cryogénique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.frozen>Solidification</> : il est immobilisé pendant un certain temps."
+  },
+  "ba.crystvul": {
+    "name": "Sensibilité cryogénique",
+    "desc": "Les cibles sensibles à la cryogénie subissent temporairement plus de <@ba.cryst>DÉG cryogéniques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.dispel": {
+    "name": "Dissipation",
+    "desc": "Ceci retire des malus spécifiques de l'opérateur."
+  },
+  "ba.dot": {
+    "name": "DÉG continus",
+    "desc": "Les DÉG continus ne peuvent pas déclencher de coups critiques."
+  },
+  "ba.enhance": {
+    "name": "Amplification",
+    "desc": "Les cibles amplifiées infligent plus de DÉG de l'élément dans lequel elles sont amplifiées. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.fireburst": {
+    "name": "Explosion des Arts thermique",
+    "desc": "Utiliser <#ba.fireinflict>Altération thermique</> + <#ba.fireinflict>Altération thermique</> déclenche une <@ba.fire>Explosion thermique</> qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis."
+  },
+  "ba.fireenhance": {
+    "name": "Amplification thermique",
+    "desc": "Les cibles thermiquement amplifiées infligent temporairement plus de <@ba.fire>DÉG thermiques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.fireinflict": {
+    "name": "Altération des Arts thermique",
+    "desc": "L'<@ba.fireinflict>altération thermique</> est un type d'<#ba.spellinflict>altération des Arts</>. \nVous pouvez appliquer jusqu'à 4 cumuls d'<@ba.fireinflict>altération thermique</> pour déclencher une <#ba.fireburst>explosion thermique</>. \n<#ba.spellinflict>Altération non thermique</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>altération thermique</> = <#ba.burning>Combustion</>"
+  },
+  "ba.fireonchar": {
+    "name": "Malus d'opérateur : altération thermique",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.fireinflict>altération thermique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.burning>Combustion</> : il encaisse temporairement des <@ba.fire>DÉG thermiques</> en continu qui ignorent sa DÉF."
+  },
+  "ba.firevul": {
+    "name": "Sensibilité thermique",
+    "desc": "Les cibles sensibles à la chaleur subissent temporairement plus de <@ba.fire>DÉG thermiques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.fracture": {
+    "name": "Statut physique : Brèche",
+    "desc": "Rend l'ennemi <#ba.noguard>vulnérable</>. S'il est déjà <#ba.noguard>vulnérable</>, <#ba.consume>consomme</> tous les cumuls de <#ba.noguard>Vulnérabilité</>, inflige des <@ba.phy>DÉG physiques</> et augmente temporairement les <@ba.pd>DÉG physiques</> subis par l'ennemi."
+  },
+  "ba.frozen": {
+    "name": "Réaction aux Arts : Solidification",
+    "desc": "Un ennemi victime de <@ba.frozen>Solidification</> ne peut plus bouger, et lui appliquer une <#ba.noguard>Vulnérabilité</> ou un <#ba.physicalstatus>statut physique</> déclenche un <#ba.crystbreak>Éclatement</>. \n<@ba.frozen>Solidification</> = une <#ba.spellinflict>altération non cryogénique</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>altération cryogénique</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Malus d'opérateur : Solidification",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.crystinflict>altération cryogénique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.frozen>Solidification</> : il est immobilisé pendant un certain temps."
+  },
+  "ba.guard": {
+    "name": "Protection",
+    "desc": "Les cibles protégées subissent temporairement des DÉG réduits. Le numéro indique le degré de réduction. Lorsque vous avez plusieurs effets du même type, seul le plus puissant s'applique."
+  },
+  "ba.knockdown": {
+    "name": "Statut physique : Renversement",
+    "desc": "Rend l'ennemi <#ba.noguard>vulnérable</>. S'il est déjà <#ba.noguard>vulnérable</>, ajoute 1 cumul de <#ba.noguard>Vulnérabilité</> et inflige des <@ba.phy>DÉG physiques</> ainsi que <@ba.poise>Déséquilibre</>."
+  },
+  "ba.lastcombo": {
+    "name": "Coup final",
+    "desc": "Le Coup final est la dernière séquence d'une attaque de base. Lorsque le Coup final de l'opérateur que vous contrôlez frappe l'ennemi, il inflige aussi l'effet <@ba.poise>Déséquilibre</> et restaure des points de compétence (PC)."
+  },
+  "ba.naturalburst": {
+    "name": "Explosion des Arts naturelle",
+    "desc": "Utiliser <#ba.naturalinflict>Altération naturelle</> + <#ba.naturalinflict>Altération naturelle</> déclenche une <@ba.natur>Explosion naturelle</> qui inflige des <@ba.natur>DÉG naturels</> aux ennemis."
+  },
+  "ba.naturalenhance": {
+    "name": "Amplification naturelle",
+    "desc": "Les cibles naturellement amplifiées infligent temporairement plus de <@ba.natur>DÉG naturels</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.naturalinflict": {
+    "name": "Altération des Arts naturelle",
+    "desc": "L'<@ba.naturalinflict>altération naturelle</> est un type d'<#ba.spellinflict>altération des Arts</>. \nVous pouvez appliquer jusqu'à 4 cumuls d'<@ba.naturalinflict>altération naturelle</> pour déclencher une <#ba.naturalburst>explosion naturelle</>. \n<#ba.spellinflict>Altération non naturelle</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>altération naturelle</> = <#ba.corrupt>Corrosion</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Malus d'opérateur : altération naturelle",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.naturalinflict>altération naturelle</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état de <@ba.corrupt>Corrosion</> : il ne peut plus effectuer de ruée et sa vitesse de déplacement est réduite pendant un certain temps."
+  },
+  "ba.naturalvul": {
+    "name": "Sensibilité naturelle",
+    "desc": "Les cibles sensibles à la nature subissent temporairement plus de <@ba.natur>DÉG naturels</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.noguard": {
+    "name": "Vulnérable",
+    "desc": "Frapper l'ennemi une première fois avec une compétence dotée d'un <#ba.physicalstatus>statut physique</> applique une <@ba.noguard>Vulnérabilité</> au lieu du statut physique annoncé.\nUn ennemi <@ba.phy>vulnérable</> peut être <#ba.airborne>soulevé</> et <#ba.knockdown>renversé</> pour ajouter des cumuls de Vulnérabilité (cumuls max. : 4). Frapper un ennemi vulnérable avec les effets <#ba.crush>Broyage</> ou <#ba.fracture>Brèche</> <#ba.consume>consomme</> les cumuls de Vulnérabilité."
+  },
+  "ba.originium": {
+    "name": "Cristal d'originium",
+    "desc": "La compétence de combo de l'Endministrator applique des cristaux d'originium sur les ennemis et les immobilise."
+  },
+  "ba.physicalenhance": {
+    "name": "Amplification physique",
+    "desc": "Les cibles physiquement amplifiées infligent temporairement plus de <@ba.pd>DÉG physiques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.physicalstatus": {
+    "name": "Statut physique",
+    "desc": "Les statuts physiques font référence aux malus appliqués à l'ennemi. Parmi eux : <#ba.airborne>soulevé</>, <#ba.knockdown>renversé</>, <#ba.crush>broyé</> et <#ba.fracture>brisé</>."
+  },
+  "ba.physicalvul": {
+    "name": "Sensibilité physique",
+    "desc": "Les cibles sensibles au physique subissent temporairement plus de <@ba.pd>DÉG physiques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.poiseknot": {
+    "name": "Nœud de déséquilibre",
+    "desc": "Certains ennemis puissants possèdent des <@ba.poise>nœuds de déséquilibre</>. Infligez suffisamment d'effets de <@ba.poise>Déséquilibre</> pour atteindre le <@ba.poise>nœud de déséquilibre</>, ce qui vous permet d'interrompre ces ennemis et de les faire trébucher."
+  },
+  "ba.pulseburst": {
+    "name": "Explosion des Arts électrique",
+    "desc": "Utiliser <#ba.pulseinflict>Altération électrique</> + <#ba.pulseinflict>Altération électrique</> déclenche une <@ba.pulse>Explosion électrique</> qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis."
+  },
+  "ba.pulseenhance": {
+    "name": "Amplification électrique",
+    "desc": "Les cibles électriquement amplifiées infligent temporairement plus de <@ba.pulse>DÉG électriques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.pulseinflict": {
+    "name": "Altération des Arts électrique",
+    "desc": "L'<@ba.pulseinflict>altération électrique</> est un type d'<#ba.spellinflict>altération des Arts</>. \nVous pouvez appliquer jusqu'à 4 cumuls d'<@ba.pulseinflict>altération électrique</> pour déclencher une <#ba.pulseburst>explosion électrique</>. \n<#ba.spellinflict>Altération non électrique</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>altération électrique</> = <#ba.conduct>Électrification</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Malus d'opérateur : altération électrique",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<@ba.pulseinflict>altération électrique</> aux opérateurs. \nEn atteignant 4 cumuls, l'opérateur entre en état d'<@ba.conduct>Électrification</> : il est temporairement étourdi et encaisse davantage de <#ba.spelldmg>DÉG des Arts</> pendant un certain temps."
+  },
+  "ba.pulsevul": {
+    "name": "Sensibilité électrique",
+    "desc": "Les cibles sensibles à l'électricité subissent temporairement plus de <@ba.pulse>DÉG électriques</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.return": {
+    "name": "Restitution de PC",
+    "desc": "Lorsque vous dépensez des PC sous certaines conditions, certains des PC dépensés peuvent vous être restitués. \nLa restitution de PC n'équivaut pas à une « récupération de PC » et n'active pas les effets déclenchés par cette dernière. Quand vous dépensez des PC restitués, vous ne gagnez par ailleurs pas d'énergie d'ultime."
+  },
+  "ba.rossi": {
+    "name": "Tranche-griffure",
+    "desc": "La compétence de combat de Rossi applique un statut spécial à l'ennemi. Ce dernier subit des <@ba.pd>DÉG physiques</> continus et augmente les DÉG physiques et thermiques subis."
+  },
+  "ba.shield": {
+    "name": "Bouclier",
+    "desc": "Le bouclier peut absorber des dégâts tant qu'il est actif. Certains boucliers ne peuvent absorber que certains types de DÉG."
+  },
+  "ba.slow": {
+    "name": "Lenteur",
+    "desc": "Les cibles ralenties subissent temporairement une réduction de leur vitesse de déplacement. Le numéro indique le degré de réduction. Lorsque vous avez plusieurs effets du même type, seul le plus puissant s'applique."
+  },
+  "ba.speedup": {
+    "name": "Vitesse",
+    "desc": "Augmente temporairement la vitesse de déplacement d'une cible. Le numéro représente le degré d'augmentation de la vitesse. Les effets du même type sont cumulables jusqu'à la vitesse max."
+  },
+  "ba.spellburst": {
+    "name": "Explosion des Arts",
+    "desc": "Les <@ba.key>explosions des Arts</> se déclenchent par le cumul d'<#ba.spellinflict>altérations des Arts</> du même élément. Elles comprennent : <#ba.fireburst>explosion thermique</>, <#ba.pulseburst>explosion électrique</>, <#ba.crystburst>explosion cryogénique</> et <#ba.naturalburst>explosion naturelle</>."
+  },
+  "ba.spelldmg": {
+    "name": "Type DÉG",
+    "desc": "Les dégâts se divisent en <@ba.pd>DÉG physiques</>, <@ba.key>DÉG des Arts</> et <@ba.ether>DÉG æthériques</>.\nLes <@ba.key>DÉG des Arts</>, quant à eux, se divisent en <@ba.fire>DÉG thermiques</>, <@ba.pulse>DÉG électriques</>, <@ba.cryst>DÉG cryogéniques</> et <@ba.natur>DÉG naturels</>."
+  },
+  "ba.spellenhance": {
+    "name": "Amplification des Arts",
+    "desc": "Les cibles amplifiées par les Arts infligent temporairement plus de <#ba.spelldmg>DÉG des Arts</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.spellinflict": {
+    "name": "Altération des Arts",
+    "desc": "Les <@ba.key>altérations des Arts</> sont des malus spéciaux infligés à l'ennemi. Elles se déclinent en 4 éléments : <#ba.fireinflict>thermiques</>, <#ba.pulseinflict>électriques</>, <#ba.crystinflict>cryogéniques</> et <#ba.naturalinflict>naturelles</>.\nVous pouvez appliquer jusqu'à 4 cumuls d'<@ba.key>altération des Arts</> du même élément."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Altération des Arts / réaction aux Arts sur les opérateurs",
+    "desc": "Certaines compétences ennemies peuvent appliquer des cumuls d'<#ba.burningonchar>altération thermique</>, d'<#ba.conductonchar>altération électrique</>, d'<#ba.frozenonchar>altération cryogénique</> ou d'<#ba.corruptonchar>altération naturelle</>.\nÀ 4 cumuls d'altération des Arts, les opérateurs subissent respectivement les effets <#ba.burningonchar>Combustion</>, <#ba.conductonchar>Électrification</>, <#ba.frozenonchar>Solidification</> ou <#ba.corruptonchar>Corrosion</>."
+  },
+  "ba.spellstatus": {
+    "name": "Réaction aux Arts",
+    "desc": "Les <@ba.key>réactions aux Arts</> sont des malus des Arts que vous pouvez appliquer à l'ennemi. Elles comprennent : <#ba.burning>Combustion</>, <#ba.conduct>Électrification</>, <#ba.frozen>Solidification</> et <#ba.corrupt>Corrosion</>."
+  },
+  "ba.spellvul": {
+    "name": "Sensibilité aux Arts",
+    "desc": "Les cibles sensibles aux Arts subissent temporairement plus de <#ba.spelldmg>DÉG des Arts</>. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.statuslevel": {
+    "name": "Niveau du statut",
+    "desc": "Le niveau du statut correspond au nombre de cumuls de <#ba.noguard>Vulnérabilité</> ou d'<#ba.spellinflict>altérations des Arts</> (cumuls max. : 4) <#ba.consume>consommés</> lors du déclenchement du <#ba.physicalstatus>statut physique</> ou de la <#ba.spellstatus>réaction aux Arts</>. Plus le <#ba.statuslevel>niveau du statut</> est élevé, plus le <#ba.physicalstatus>statut physique</> ou la <#ba.spellstatus>réaction aux Arts</> est puissant."
+  },
+  "ba.vulnerable": {
+    "name": "Sensible",
+    "desc": "Les cibles sensibles subissent temporairement plus de DÉG de l'élément auquel elles sont sensibles. Le numéro représente le degré d'augmentation. Les effets du même type sont cumulables."
+  },
+  "ba.weak": {
+    "name": "Affaiblissement",
+    "desc": "Les cibles affaiblies infligent temporairement des DÉG réduits. Le numéro indique le degré de réduction. Les effets du même type peuvent être cumulés de façon non linéaire."
+  },
+  "fac.hub": {
+    "name": "Noyau d'automatisation du Protocole",
+    "desc": "Le Noyau d'automatisation du Protocole (NAP) est l'installation centrale de l'usine du Groupe industriel automatisé (GIA). La gestion du stockage devient disponible lorsque vous êtes dans la zone principale du GIA du NAP."
+  },
+  "item.bbflower": {
+    "name": "Aképine",
+    "desc": "Riche en substances explosives et inflammables, l'aképine est une plante que l'on trouve à l'état naturel.\nElle peut être cultivée grâce aux installations de l'usine du GIA ou aux <#item.portSoilBbflower>parcelles d'aképine</>.\nVous pouvez également la transformer dans vos installations. Il est notamment possible de la concasser pour produire de la <#item.bbflowerPowder>poudre d'aképine</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Poudre d'aképine",
+    "desc": "Une poudre obtenue en concassant de l'<#item.bbflower>aképine</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.bbflowerSeed": {
+    "name": "Graine d'aképine",
+    "desc": "Des graines prélevées sur les <#item.bbflower>aképines</> grâce aux installations de l'usine du GIA.\nUne fois récoltées, elles peuvent être plantées et cultivées dans l'usine pour obtenir plus d'aképines.\nVous pouvez également les combiner à du <#item.carbonMtl>carbone</> sur l'écran <#sys.manualCraftField>Plantation</> pour fabriquer des <#item.portSoilBbflower>parcelles d'aképine</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Capsule Revigor [C]",
+    "desc": "Une capsule à <#sys.manualCraft>fabriquer</> soi-même ou à produire en remplissant des <#item.glassBottle>bouteilles en améthyste</> de <#item.plantMossPowder1>poudre de cabranthe</> à l'aide des installations de l'usine du GIA.\nServez-vous-en pour restaurer les PV de vos opérateurs. Elle peut également être équipée comme un <#sys.tacticalItem>objet tactique</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbone",
+    "desc": "Un matériau obtenu en raffinant des <#item.plantMoss1>cabranthes</> à l'aide des installations de l'usine du GIA.\nLe carbone est essentiel à la fabrication des parcelles de <#sys.manualCraftField>plantation</> et permet également de produire d'autres matériaux."
+  },
+  "item.crystalShell": {
+    "name": "Origécorce",
+    "desc": "De l'écorce cristalline obtenue en raffinant du <#item.originium>minerai d'originium</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.glassBottle": {
+    "name": "Bouteille en améthyste",
+    "desc": "Une bouteille obtenue en moulant des <#item.quartzGlass>fibres d'améthyste</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.glassCmpt": {
+    "name": "Pièce en améthyste",
+    "desc": "Une pièce obtenue en ajustant des <#item.quartzGlass>fibres d'améthyste</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.ironEnrPowder": {
+    "name": "Poudre de ferrium dense",
+    "desc": "Une poudre à la fois fine et dense, obtenue en broyant de la <#item.ironPowder>poudre de ferrium</> et de la <#item.plantMossPowder3>poudre de sablante</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "Un lingot de métal obtenu en raffinant du <#item.ironOre>minerai de ferrium</> à l'aide des installations de l'usine du GIA. Il permet de produire d'autres matériaux."
+  },
+  "item.ironOre": {
+    "name": "Minerai de ferrium",
+    "desc": "Du minerai de ferrium que l'on trouve dans des zones d'extraction naturelles.\nVous pouvez le transformer dans les installations de l'usine du GIA. Il est notamment possible de le raffiner pour produire du <#item.ironNugget>ferrium</>."
+  },
+  "item.ironPowder": {
+    "name": "Poudre de ferrium",
+    "desc": "Une poudre obtenue en concassant du <#item.ironNugget>ferrium</> à l'aide des installations de l'usine du GIA. Elle permet de produire d'autres matériaux."
+  },
+  "item.originium": {
+    "name": "Minerai d'originium",
+    "desc": "Du minerai d'originium que l'on trouve dans des zones d'extraction naturelles. Il permet d'alimenter l'usine du GIA en électricité.\nVous pouvez également le transformer dans vos installations. Il est notamment possible de le raffiner pour produire de l'<#item.crystalShell>origécorce</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Poudre d'originium dense",
+    "desc": "Une poudre à la fois fine et dense, obtenue en broyant de la <#item.originiumPowder>poudre d'originium</> et de la <#item.plantMossPowder3>poudre de sablante</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.originiumPowder": {
+    "name": "Poudre d'originium",
+    "desc": "Une poudre obtenue en concassant du <#item.originium>minerai d'originium</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.plantMoss1": {
+    "name": "Cabranthe",
+    "desc": "Connue pour ses fleurs colorées, la cabranthe est une plante que l'on trouve à l'état naturel.\nIl est cependant possible de la cultiver grâce aux installations de l'usine du GIA ou aux <#item.portSoilMoss1>parcelles de cabranthe</>.\nElle permet de fabriquer divers <#sys.tacticalItem>objets tactiques</> et autres matériaux."
+  },
+  "item.plantMoss3": {
+    "name": "Sablante",
+    "desc": "Reconnaissable à ses feuilles rugueuses et abrasives, la sablante est une plante que l'on trouve à l'état naturel.\nElle peut être cultivée grâce aux installations de l'usine du GIA ou aux <#item.portSoilMoss3>parcelles de sablantes</>.\nVous pouvez également la transformer dans vos installations. Il est notamment possible de la concasser pour produire de la <#item.plantMossPowder3>poudre de sablante</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Poudre de cabranthe",
+    "desc": "Une poudre à <#sys.manualCraft>fabriquer</> soi-même ou à produire en concassant des <#item.plantMoss1>cabranthes</> à l'aide des installations de l'usine du GIA.\nServez-vous-en pour restaurer les PV de vos opérateurs. Elle peut également être équipée comme un <#sys.tacticalItem>objet tactique</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Poudre de sablante",
+    "desc": "Une poudre obtenue en concassant des <#item.plantMoss3>sablantes</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux et est le plus souvent broyée."
+  },
+  "item.plantMossSeed1": {
+    "name": "Graine de cabranthe",
+    "desc": "Des graines prélevées sur les <#item.plantMoss1>cabranthes</> grâce aux installations de l'usine du GIA.\nUne fois récoltées, elles peuvent être plantées et cultivées dans l'usine pour obtenir plus de cabranthes. Vous pouvez également les combiner à du <#item.carbonMtl>carbone</> sur l'écran <#sys.manualCraftField>Plantation</> pour fabriquer des <#item.portSoilMoss1>parcelles de cabranthe</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Graine de sablante",
+    "desc": "Des graines prélevées sur les <#item.plantMoss3>sablantes</> grâce aux installations de l'usine du GIA.\nUne fois récoltées, elles peuvent être plantées et cultivées dans l'usine pour obtenir plus de sablantes.\nVous pouvez également les combiner à du <#item.carbonMtl>carbone</> sur l'écran <#sys.manualCraftField>Plantation</> pour fabriquer des <#item.portSoilMoss3>parcelles de sablante</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Flammélis",
+    "desc": "Connue pour ses fleurs éclatantes, la flammélis est une plante que l'on trouve à l'état naturel.\nIl est possible d'en cueillir en récoltant des <#item.plantMoss1>cabranthes</> dans la nature.\nElle permet de fabriquer divers <#sys.tacticalItem>objets tactiques</>."
+  },
+  "item.plantSp1": {
+    "name": "Seigle sauvage",
+    "desc": "Le seigle sauvage est une plante cultivable que l'on trouve à l'état naturel. Vous pouvez également le faire pousser sur des <#item.portSoilSp1>parcelles de seigle sauvage</>.\nIl peut être utilisé tel quel pour fabriquer des <#sys.manualCraftDish>plats et des médicaments de qualité</> (P&M de qualité)."
+  },
+  "item.plantSpSeed1": {
+    "name": "Graine de seigle sauvage",
+    "desc": "Des graines prélevées sur du <#item.plantSp1>seigle sauvage</> grâce aux installations de l'usine du GIA.\nSélectionnez ces graines ainsi que du <#item.carbonMtl>carbone</>, puis accédez à l'écran <#sys.manualCraftField>Plantation</> pour en faire des <#item.portSoilSp1>parcelles de seigle sauvage</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Parcelle d'aképine",
+    "desc": "Cultivez ces parcelles dans l'écoferme pour produire de l'<#item.bbflower>aképine</>.\nVous pouvez les fabriquer sur l'écran Plantation à l'aide de <#item.bbflowerSeed>graines d'aképine</> et de <#item.carbonMtl>carbone</>.\nSi vous attendez que toutes les plantes soient à maturité, vous récolterez de l'aképine en abondance."
+  },
+  "item.portSoilMoss1": {
+    "name": "Parcelle de cabranthe",
+    "desc": "Cultivez ces parcelles dans l'écoferme pour produire des <#item.plantMoss1>cabranthes</>.\nVous pouvez les fabriquer sur l'écran <#sys.manualCraftField>Plantation</> à l'aide de <#item.plantMossSeed1>graines de cabranthe</> et de <#item.carbonMtl>carbone</>.\nVous aurez plus de chances de récolter des <#item.plantMossSpc1>flammélis</> supplémentaires si vous attendez que toutes les plantes soient à maturité."
+  },
+  "item.portSoilMoss3": {
+    "name": "Parcelle de sablante",
+    "desc": "Cultivez ces parcelles dans l'écoferme pour produire des <#item.plantMoss3>sablantes</>.\nVous pouvez les fabriquer sur l'écran Plantation à l'aide de <#item.plantMossSeed3>graines de sablante</> et de <#item.carbonMtl>carbone</>.\nSi vous attendez que toutes les plantes soient à maturité, vous récolterez des sablantes en abondance."
+  },
+  "item.portSoilSp1": {
+    "name": "Parcelle de seigle sauvage",
+    "desc": "Cultivez ces parcelles dans l'écoferme pour produire du <#item.plantSp1>seigle sauvage</>.\nVous pouvez les fabriquer sur l'écran Plantation à l'aide de <#item.plantSpSeed1>graines de seigle sauvage</> et de <#item.carbonMtl>carbone</>.\nSi vous attendez que toutes les plantes soient à maturité, vous récolterez du seigle en abondance."
+  },
+  "item.procBattery1": {
+    "name": "Batterie de la Vallée FC",
+    "desc": "Une batterie obtenue en emballant des <#item.glassCmpt>pièces en améthyste</> et de la <#item.originiumPowder>poudre d'originium</> à l'aide des installations de l'usine du GIA.\nElle peut être utilisée pour fournir de l'électricité, charger les installations ou être échangée dans divers avant-postes."
+  },
+  "item.procBomb": {
+    "name": "Explosif industriel",
+    "desc": "Les explosifs industriels sont des objets que vous pouvez produire.\nPour ce faire, apportez des <#item.glassCmpt>pièces en améthyste</> et de la <#item.bbflowerPowder>poudre d'aképine</> aux unités d'emballage de l'usine du GIA.\nUtilisez ces explosifs pour infliger des dégâts aux ennemis ou pulvériser les objets destructibles à portée."
+  },
+  "item.quartzGlass": {
+    "name": "Fibre d'améthyste",
+    "desc": "De la fibre obtenue en raffinant du <#item.quartzSand>minerai d'améthyste</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.quartzPowder": {
+    "name": "Poudre d'améthyste",
+    "desc": "Une poudre obtenue en concassant des <#item.quartzGlass>fibres d'améthyste</> à l'aide des installations de l'usine du GIA.\nElle permet de produire d'autres matériaux."
+  },
+  "item.quartzSand": {
+    "name": "Minerai d'améthyste",
+    "desc": "Du minerai d'améthyste que l'on trouve dans des zones d'extraction naturelles.\nVous pouvez le transformer dans les installations de l'usine du GIA. Il est notamment possible de le raffiner pour produire de la <#item.quartzGlass>fibre d'améthyste</>."
+  },
+  "sys.manualCraft": {
+    "name": "Fabrication",
+    "desc": "Ouvrez le panneau Sac à dos pour accéder à l'écran Fabrication. Diverses matières premières peuvent être transformées en objets utiles.\nPar exemple, la <#item.plantMoss1>cabranthe</> peut être transformée en <#item.plantMossSeed1>poudre de cabranthe</>, qui permet de restaurer des PV."
+  },
+  "sys.manualCraftDish": {
+    "name": "Plats et médicaments de qualité",
+    "desc": "Les plats et les médicaments de qualité (P&M de qualité) peuvent être utilisés comme des <#sys.tacticalItem>objets tactiques</>. \nContrairement aux <#sys.manualCraftTonic>plats et médicaments d'urgence</>, vous ne pouvez en préparer que par l'intermédiaire de la <#sys.manualCraft>fabrication</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Plantation",
+    "desc": "Vous pouvez <#sys.manualCraft>fabriquer</> des parcelles de plantation à l'aide de graines et de <#item.carbonMtl>carbone</>. Ces parcelles peuvent ensuite être placées dans l'écoferme pour être cultivées."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Plats et médicaments d'urgence",
+    "desc": "Les plats et les médicaments d'urgence (P&M d'urgence) peuvent être utilisés comme des <#sys.tacticalItem>objets tactiques</>.\nVous pouvez en préparer par l'intermédiaire de la <#sys.manualCraft>fabrication</> ou des installations de l'usine du GIA."
+  },
+  "sys.tacticalItem": {
+    "name": "Objets tactiques",
+    "desc": "Utilisés en combat, les objets tactiques octroient divers bonus et effets bénéfiques. Chaque objet tactique est régi par différents critères d'activation et limites d'utilisation.\nLes opérateurs ne peuvent être équipés que d'un objet tactique. Lorsque les conditions sont réunies, ils l'utilisent automatiquement.\nSi vous atteignez la limite d'utilisation de l'un de ces objets au cours d'un même combat, vous aurez la possibilité de l'utiliser une fois de plus au bout d'un certain temps."
+  }
+}

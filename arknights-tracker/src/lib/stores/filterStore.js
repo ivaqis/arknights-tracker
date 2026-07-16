@@ -1,7 +1,6 @@
 // src/lib/stores/filterStore.js
 
 import { writable } from 'svelte/store';
-import {factoryEvents} from "$lib/data/events/factoryEvents.js";
 
 function createPersistentStore(key, startValue) {
     const isBrowser = typeof window !== 'undefined';
@@ -16,108 +15,241 @@ function createPersistentStore(key, startValue) {
     return store;
 }
 
-const attr1Skills = ["attr_agi", "attr_str", "attr_will", "attr_wisd", "attr_main"];
-const attr2Skills = [
-    "attr_atk", "attr_firedam", "attr_crirate", "attr_heal", "attr_hp", 
-    "attr_usp", "attr_icedam", "attr_magicdam", "attr_naturaldam", 
-    "attr_phydam", "attr_physpell", "attr_pulsedam"
-];
-const attr3Skills = [
-    "tacafter", "magabn", "burst", "spirit", "tactic", "ult", "break", 
-    "combo", "crit", "force", "heal", "keyword", "phyabn", "smash"
-];
+export function getOperatorFilters() {
+    return {
+        rarity: [6, 5, 4],
+        class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
+        element: ["cryo", "nature", "heat", "electric", "physical"],
+        weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        skillMaterialType: ["any", "basic_combo", "battle_ultimate", "ascension"],
+        skillMaterial: [
+            "d96SteelSample4",
+            "metadiastimaPhotoemissionTube",
+            "tachyonScreeningLattice",
+            "quadrantFittingFluid",
+            "triphasicNanoflake"
+        ],
+        baseSkill: [
+            "weaponMaterialEfficiency",
+            "operatorMaterialEfficiency",
+            "operatorClueCollectingEfficiency",
+            "fungiGrowthEfficiency",
+            "vitrosGrowthEfficiency",
+            "mineralGrowthEfficiency",
+            "moodRegen",
+            "clueEfficiencyBoost",
+            "moodDropHour_receptionRoom",
+            "moodDropHour_manufacturingCabin",
+            "moodDropHour_growthChamber"
+        ]
+    };
+}
 
-const itemSubGroups = [
-    "facility_battle",
-    "facility_crafter",
-    "facility_miner",
-    "facility_other",
-    "facility_powerStation",
-    "facility_pump",
-    "facility_soil",
-    "gatherable_drop",
-    "gatherable_muck",
-    "gatherable_plant",
-    "nature_flowerPlant",
-    "nature_grassPlant",
-    "nature_liquid",
-    "nature_ore",
-    "nature_soilPlant",
-    "nature_wood",
-    "product_activityXiranite",
-    "product_amethyst",
-    "product_battery",
-    "product_carbon",
-    "product_component",
-    "product_copper",
-    "product_fullBottle",
-    "product_iron",
-    "product_liquid",
-    "product_muck",
-    "product_originium",
-    "product_powder",
-    "product_xiranite",
-    "usable_bomb",
-    "usable_bottledProdFood",
-    "usable_other",
-    "usable_powder"
-];
+export function getWeaponFilters() {
+    return {
+        rarity: [6, 5, 4, 3],
+        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
+        essence: [0, 1, 2, 3],
+        attr1: [
+            "attr_agi",
+            "attr_str",
+            "attr_will",
+            "attr_wisd",
+            "attr_main"
+        ],
+        attr2: [
+            "attr_firedam",
+            "attr_icedam",
+            "attr_naturaldam",
+            "attr_pulsedam",
+            "attr_phydam",
+            "attr_atk",
+            "attr_crirate",
+            "attr_hp",
+            "attr_heal",
+            "attr_usp",
+            "attr_physpell",
+            "attr_magicdam",
+        ],
+        attr3: [
+            "tacafter",
+            "magabn",
+            "burst",
+            "spirit",
+            "tactic",
+            "ult",
+            "break",
+            "combo",
+            "crit",
+            "force",
+            "heal",
+            "keyword",
+            "phyabn",
+            "smash"
+        ]
+    };
+}
 
-const initialEquipmentFilters = {
-    rarity: [5, 4, 3, 2, 1],
-    partType: [0, 1, 2], 
-    pack: [],
-    stats: {
-        any: [],
-        1: [],
-        2: [],
-        3: []
-    }
-};
+export function getEquipmentFilters() {
+    return {
+        rarity: [5, 4, 3, 2, 1],
+        partType: ["body", "hand", "edc"],
+        pack: [],
+        stats: [
+            [
+                "Def",
+                "Str",
+                "Agi",
+                "Wisd",
+                "Will",
+                "Atk",
+                "CriticalRate",
+                "UltimateSpGainScalar",
+                "OriginiumArts",
+                "Sub",
+                "Main"
+            ], [
+                "NormalSkillEfficiency",
+                "ComboSkillEfficiency",
+                "UltimateSkillEfficiency",
+                "SpellDamageIncrease",
+                "AllSkillDamageIncrease"
+            ], [
+                "PhysicalDamageIncrease",
+                "AttrDamageToBrokenUnitIncrease",
+                "NormalAttackDamageIncrease",
+                "CrystAndPulseDamageIncrease",
+                "FireAndNaturalDamageIncrease"
+            ], [
+                "MaxHp",
+                "AllDamageTakenScalar",
+                "HealOutputIncrease"
+            ]
+        ],
+        stats_1: [],
+        stats_2: [],
+        stats_3: []
+    };
+}
 
-const initialWeaponFilters = {
-    rarity: [6, 5, 4, 3],
-    type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-    attr1: [...attr1Skills],
-    attr2: [...attr2Skills],
-    attr3: [...attr3Skills]
-};
+export function getEnemyFilters() {
+    return {
+        rarity: [6, 5, 4, 3]
+    };
+}
 
-const initialOperatorFilters = {
-    rarity: [6, 5, 4],
-    class: ["guard", "vanguard", "caster", "defender", "supporter", "striker"],
-    element: ["cryo", "physical", "nature", "heat", "electric"],
-    weapon: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-};
+export function getOperatorSortOptions() {
+    return ["rarity", "class", "element", "weapon"];
+}
 
-const initialEnemiesFilters = {
-    rarity: [6, 5, 4, 3]
-};
+export function getWeaponSortOptions() {
+    return ["rarity", "type"];
+}
 
-const initialItemFilters = {
-    rarity: [5, 4, 3, 2, 1],
-    itemSubGroups: itemSubGroups,
-    factoryEvents: ["nonEvent", ...Object.keys(factoryEvents)]
-};
+export function getEquipmentSortOptions() {
+    return ["rarity"];
+}
 
-const initialManualMode = {
-    rarity: false, partType: false, pack: false, stats: false,
-    class: false, element: false, weapon: false, type: false, attr1: false, attr2: false, attr3: false,
-    itemSubGroups: false
-};
+export function getEnemySortOptions() {
+    return ["rarity"];
+}
 
-export const equipmentFilters = writable({ ...initialEquipmentFilters });
-export const equipmentManual = writable({ ...initialManualMode });
+export function getDefaultItemSortParams() {
+    return {
+        sortFieldOrder: [
+            "itemGroups",
+            "itemTypes",
+            "events",
+            "rarity",
+            "itemMaterials",
+            "localeName"
+        ],
+        sortFieldParams: {
+            itemGroups: ["nature", "product", "usable", "gatherable", "facility"],
+            itemTypes: [
+                "ore",
+                "liquid",
+                "plant",
+                "plant_seed",
+                "plant_special",
+                "wood",
+                "ingot",
+                "powder",
+                "compressed_powder",
+                "part",
+                "component",
+                "battery",
+                "bottle",
+                "hulu",
+                "tool",
+                "muck",
+                "full_bottle",
+                "bomb",
+                "hp_recovery",
+                "food",
+                "special_food",
+                "insect",
+                "drop",
+                "miner",
+                "pump",
+                "crafter",
+                "power",
+                "soil",
+                "battle",
+                "other"
+            ],
+            itemMaterials: [
+                "water",
+                "acid",
+                "sewage",
+                "originium",
+                "amethyst",
+                "iron",
+                "originium_enr",
+                "amethyst_enr",
+                "iron_enr",
+                "xiranite",
+                "xiranite_enr",
+                "copper",
+                "copper_enr",
+                "carbon",
+                "carbon_enr",
+                "plant_flower_1",
+                "plant_flower_2",
+                "plant_flower_3",
+                "plant_grass_1",
+                "plant_grass_2",
+                "plant_flower_spc_1",
+                "plant_flower_spc_2",
+                "plant_grass_spc_1",
+                "plant_grass_spc_2",
+                "plant_bbflower_1",
+                "plant_sp_1",
+                "plant_sp_2",
+                "plant_sp_3",
+                "plant_sp_4",
+                "nonMaterial"
+            ],
+            rarity: [1, 2, 3, 4, 5],
+            events: ["nonEvent", "ev4-v1.2"],
+            localeName: "a-z"
+        }
+    };
+}
+
+export const equipmentFilters = writable({});
 export const equipmentSearch = writable("");
 export const equipmentGroupMode = createPersistentStore('equipmentGroupMode', true);
 
-export const weaponFilters = writable({ ...initialWeaponFilters });
-export const weaponManual = writable({ ...initialManualMode });
+export const weaponFilters = writable({});
 export const weaponSearch = writable("");
 export const weaponOwnedOnly = writable(false);
 
-export const operatorFilters = writable({ ...initialOperatorFilters });
-export const operatorManual = writable({ ...initialManualMode });
+export const essenceWeaponFilters = writable({});
+export const essenceWeaponSearch = writable("");
+export const essenceWeaponOwnedOnly = writable(false);
+
+export const operatorFilters = writable({});
 export const operatorSearch = writable("");
 export const operatorOwnedOnly = writable(false);
 
@@ -125,7 +257,16 @@ export const enemyFilters = writable({});
 export const enemySearch = writable("");
 export const enemyGroupMode = createPersistentStore('enemyGroupMode', true);
 
-export const itemFilters = writable({ ...initialItemFilters });
-export const itemManual = writable({ ...initialManualMode });
+export const itemFilters = writable({});
 export const itemSearch = writable("");
+export const itemSortParams = createPersistentStore("itemSortParams", getDefaultItemSortParams());
 export const itemGroupMode = createPersistentStore('itemGroupMode', true);
+
+export const recordsExcludedBannerTypes = createPersistentStore('recordsExcludedBannerTypes', []);
+export const recordsExcludedBanners = createPersistentStore('recordsExcludedBanners', []);
+export const recordsShowMonthlyChart = createPersistentStore('recordsShowMonthlyChart', true);
+export const recordsShowRating = createPersistentStore('recordsShowRating', true);
+export const recordsShowTotalCost = createPersistentStore('recordsShowTotalCost', true);
+export const recordsMaxCols = createPersistentStore('recordsMaxCols', 3);
+export const recordsEnableDragDrop = createPersistentStore('recordsEnableDragDrop', false);
+export const recordsCardsOrder = createPersistentStore('recordsCardsOrder', []);

@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "엔드필드 공업",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "미공개"
   },
   "skills": {
     "basicAttack": {
@@ -39,10 +43,11 @@
         "dmgMultiplier": "피해 배율",
         "crystalShatteringDmgMultiplier": "결정 파괴 피해 배율",
         "stagger": "불균형치",
-        "sealDurationS": "봉인 시간(초)"
+        "sealDurationS": "봉인 시간(초)",
+        "ultimateEnergyGain": "획득하는 궁극기 에너지"
       },
       "name": "봉인 시퀀스",
-      "description": "팀 내 다른 오퍼레이터의 연계 스킬이 피해를 줄 때 사용할 수 있습니다.\n적의 근처로 돌진하여 대상에게 <@ba.pd>물리 피해</>를 주고 <#ba.originium>오리지늄 결정</>을 부착하며 일정 시간 봉인합니다. <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.noguard>방어 불능</> 상태를 부여하면 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하고 추가 <@ba.pd>물리 피해</>를 줍니다."
+      "description": "팀 내 다른 오퍼레이터의 연계 스킬이 피해를 줄 때 사용할 수 있습니다.\n적의 근처로 돌진하여 대상에게 <@ba.pd>물리 피해</>를 주고 <#ba.originium>오리지늄 결정</>을 부착하며 일정 시간 봉인합니다. <#ba.physicalstatus>물리 이상</> 효과 혹은 <#ba.noguard>방어 불능</> 상태를 부여하면 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>하고 <@ba.pd>물리 피해</>를 추가로 줍니다."
     },
     "ultimate": {
       "ultimate": {
@@ -64,27 +69,29 @@
     },
     "talent1": {
       "levels": [
-        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다.",
-        "적에게 부착한 <#ba.originium>오리지늄 결정</>이 <#ba.consume>소모</>됐을 때, 자신의 공격력 <@ba.vup>+{atk_up:0%}</>, {duration:0}초 동안 지속. 해당 효과는 중첩되지 않습니다."
+        "배틀 스킬과 궁극기가 2개 이상의 목표에 명중한 후, 연계 스킬의 쿨타임이 {0,0:0.0}초 감소합니다.",
+        "배틀 스킬과 궁극기가 2개 이상의 목표에 명중한 후, 연계 스킬의 쿨타임이 {0,0:0.0}초 감소합니다."
       ],
       "name": "본질 붕괴"
     },
     "talent2": {
       "levels": [
-        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>",
-        "<#ba.originium>오리지늄 결정</>을 부착한 적에게 주는 물리 피해 <@ba.vup>+{dmg:0%}</>"
+        "<#ba.originium>오리지늄 결정</>에 의해 봉인된 적은 <@ba.vup>{0,0:0%}</>만큼의 추가 물리 피해를 받습니다.",
+        "<#ba.originium>오리지늄 결정</>에 의해 봉인된 적은 <@ba.vup>{0,0:0%}</>만큼의 추가 물리 피해를 받습니다."
       ],
       "name": "현실 정지"
     },
     "baseSkill1": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
     "baseSkill2": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>[코드네임] 관리자\n[성별] ■■\n[신분 인증] ■■\n[생일] ■■\n[종족] ■■\n\n아무것도 기억나지 않는다.\n기억은 마치 부서진 꿈처럼, 어느 순간 떠오르려는 찰나에 흔적도 없이 사라져 버린다.\n그로 인해 때때로 초조하고 불안하지만, 동시에 생각할 여유도 생긴다.\n하지만 대부분의 순간, 다른 생각을 할 겨를이 없다. 그저 눈앞의 사람들을 믿고, 앞으로 나아갈 뿐이다.\n어쩌면 기억은 잠시 뒤로 미뤄둔 것일지도 모른다...\n...그래서, 아무것도 기억해 내지 못한다.</>",
+      "humanResources": "<@profile.key>과거의 삶은 탈로스 II의 지금까지의 역사를 관통해 왔다...</>",
+      "file1": "<@profile.key>...그럼, 미래는?</>"
+    }
   },
   "potentials": {
     "potential1": {
@@ -96,8 +103,8 @@
       "name": "권능 반영"
     },
     "potential3": {
-      "description": "???",
-      "name": "???"
+      "description": "궁극기 <@ba.key>폭격 시퀀스</>가 <#ba.originium>오리지늄 결정</>을 <#ba.consume>소모</>한 후, <@ba.vup>{usp:0}</>포인트의 궁극기 에너지를 획득합니다.\n<@ba.info>해당 효과는 보너스를 받을 수 없습니다.</>",
+      "name": "길잡이"
     },
     "potential4": {
       "description": "???",
@@ -112,14 +119,14 @@
     "potential1": {
       "name": "기억의 매개체",
       "author": "狂zip",
-      "description": "마지막으로 기록된 것은 짧은 한마디, 혹은 어떤 의뢰였습니다. 실타래가 얽히듯 선들이 이어지고, 말은 소리 없이 놓입니다. 그리고 당신은 이미 이 모든 흐름을 깨닫고 있습니다."
+      "description": "결국 남겨진 건 짧은 기록 하나, 혹은 어떤 의뢰였어. 선율처럼 얽힌 선 위로 말이 고요히 내려앉았지. 넌 어쩌면... 이 모든 운명의 흐름을 이미 알고 있을지도 몰라."
     },
     "potential3": {
       "name": "사분면",
       "author": "廻轉",
       "description": "당신은 십자의 정중앙에 있습니다."
     },
-    "potential6": {
+    "potential5": {
       "name": "장악",
       "author": "수줍(Sjoop)",
       "description": "응축된 신뢰가 당신의 손안에 있습니다. 그 첫 번째 조각의 이름은 역사, 또 다른 이름은 문명과 생명입니다."

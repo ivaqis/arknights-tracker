@@ -10,11 +10,11 @@
     import { rawEvents } from "$lib/data/timeline.js";
 
     import Select from "$lib/components/Select.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import OperatorCard from "$lib/components/OperatorCard.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import BannerModal from "$lib/components/BannerModal.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import OperatorCard from "$lib/components/cards/OperatorCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import BannerModal from "$lib/components/modals/BannerModal.svelte";
 
     $: versionOptions = changelogData
         .map((v) => ({
@@ -122,6 +122,15 @@
                 : "Протопропуск",
     };
 
+    const typeIcons = {
+        signIn: "signIn",
+        inGame: "event",
+        inGamePermanent: "permanent",
+        web: "link",
+        mailEvent: "mail",
+        protoPass: "protoPass",
+    };
+
     $: equipmentByPack = displayEquipment.reduce((acc, eq) => {
         const packName = eq.pack || "none";
         if (!acc[packName]) acc[packName] = [];
@@ -138,7 +147,9 @@
             const [year, month, day] = onlyDate.split("-").map(Number);
             const dateObj = new Date(Date.UTC(year, month - 1, day));
             if (isNaN(dateObj.getTime())) return onlyDate;
-            return new Intl.DateTimeFormat(loc || "ru", {
+            let targetLoc = loc || "ru";
+            if (targetLoc === "my") targetLoc = "ms-MY";
+            return new Intl.DateTimeFormat(targetLoc, {
                 day: "numeric",
                 month: "long",
                 year: "numeric",
@@ -201,7 +212,7 @@
                                     (e.key === "Enter" || e.key === " ") &&
                                     (bannerForModal = banner)}
                             >
-                                <Images
+                                <Image
                                     id={banner.id}
                                     interactive={true}
                                     variant={banner.type === "web" ||
@@ -346,7 +357,7 @@
                 >
                     {#each displayEnemies as eny (eny.id)}
                         <div class="flex justify-center transition-transform">
-                            <WeaponCard weapon={eny} isNew={false} isEnemy={true} />
+                            <WeaponCard weapon={eny} isNew={false} hideDarkness={true} hidePot={false} isEnemy={true} />
                         </div>
                     {/each}
                 </div>
@@ -365,9 +376,12 @@
                     {#each sortedEventTypes as type}
                         <div class="flex flex-col gap-2">
                             <h4
-                                class="text-lg font-bold text-gray-600 dark:text-[#B7B6B3] font-sdk pb-1 border-b border-gray-300 dark:border-[#3b3b3b]"
+                                class="text-lg font-bold text-gray-600 dark:text-[#B7B6B3] font-sdk pb-1 border-b border-gray-300 dark:border-[#3b3b3b] flex items-center gap-2"
                             >
-                                {eventTypeLabels[type] || type}
+                                {#if typeIcons[type]}
+                                    <Icon name={typeIcons[type]} class="w-5 h-5 opacity-80 text-current" />
+                                {/if}
+                                <span>{eventTypeLabels[type] || type}</span>
                             </h4>
 
                             <div
@@ -386,7 +400,7 @@
                                                     e.key === " ") &&
                                                 (bannerForModal = ev)}
                                         >
-                                            <Images
+                                            <Image
                                                 id={ev.icon}
                                                 interactive={true}
                                                 variant="event-icon"

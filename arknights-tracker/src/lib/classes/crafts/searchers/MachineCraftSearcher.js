@@ -1,17 +1,17 @@
-import {MachineCraft} from "$lib/classes/crafts/MachineCraft.js";
-import {Crafter} from "$lib/classes/buildings/Crafter.js";
-import {MachineCraftSearchResult} from "$lib/classes/crafts/searchers/MachineCraftSearchResult.js";
-import {machineCraftItemAsIncome, machineCraftItemAsOutcome} from "$lib/data/crafts/craftMaps.js";
-import {CraftSearcher} from "$lib/classes/crafts/searchers/CraftSearcher.js";
-import {machineCraftGroups} from "$lib/data/crafts/machineCraftGroups.js";
+import { Crafter } from "$lib/classes/buildings/Crafter.js";
+import { MachineCraft } from "$lib/classes/crafts/MachineCraft.js";
+import { CraftSearcher } from "$lib/classes/crafts/searchers/CraftSearcher.js";
+import { MachineCraftSearchResult } from "$lib/classes/crafts/searchers/MachineCraftSearchResult.js";
+import { machineCraftItemAsIncome, machineCraftItemAsOutcome } from "$lib/data/crafts/craftMaps.js";
+import { machineCraftGroups } from "$lib/data/crafts/machineCraftGroups.js";
 
-export class MachineCraftSearcher extends CraftSearcher{
+export class MachineCraftSearcher extends CraftSearcher {
 
     constructor({
-        craftItemAsIncomeMap = machineCraftItemAsIncome,
-        craftItemAsOutcomeMap = machineCraftItemAsOutcome,
+                    craftItemAsIncomeMap = machineCraftItemAsIncome,
+                    craftItemAsOutcomeMap = machineCraftItemAsOutcome,
                 } = {}) {
-        super({craftItemAsIncomeMap, craftItemAsOutcomeMap});
+        super({ craftItemAsIncomeMap, craftItemAsOutcomeMap });
     }
 
     searchByItemAsIncome(itemId) {
@@ -61,12 +61,21 @@ export class MachineCraftSearcher extends CraftSearcher{
 
     searchByFormulaIds(formulaIdList) {
         let result = {};
+        let otherFormulaIdList = [];
+        let dismantlerFormulaIdList = [];
+        let purifierFormulaIdList = [];
+        let furnaceIdList = [];
 
         for (let formulaId of formulaIdList) {
             let formula = MachineCraft.getMachineCraft(formulaId);
             let crafterId = formula.crafterId;
             let crafterMode = Crafter.getCrafter(crafterId)
                 .getModeNameByGroupId(formula.formulaGroupId);
+
+            if (crafterId === "dismantler_1") dismantlerFormulaIdList.push(formulaId);
+            else if (crafterId === "liquid_purifier_1") purifierFormulaIdList.push(formulaId);
+            else if (crafterId === "furnance_1") furnaceIdList.push(formulaId);
+            else otherFormulaIdList.push(formulaId);
 
             if (!result.hasOwnProperty(crafterId))
                 result[crafterId] = {};
@@ -76,9 +85,27 @@ export class MachineCraftSearcher extends CraftSearcher{
             result[crafterId][crafterMode].push(formulaId);
         }
 
+        let purifierResult = result.liquid_purifier_1;
+        if (purifierResult) {
+            delete result.liquid_purifier_1;
+            result.liquid_purifier_1 = purifierResult;
+        }
+
+        let dismantlerResult = result.dismantler_1;
+        if (dismantlerResult) {
+            delete result.dismantler_1;
+            result.dismantler_1 = dismantlerResult;
+        }
+
+        let furnaceResult = result.furnance_1;
+        if (furnaceResult) {
+            delete result.furnance_1;
+            result = { furnance_1: furnaceResult, ...result };
+        }
+
         return new MachineCraftSearchResult({
-            craftList: formulaIdList,
+            craftList: [...furnaceIdList, ...otherFormulaIdList, ...purifierFormulaIdList, ...dismantlerFormulaIdList],
             resultMap: result
-        })
+        });
     }
 }

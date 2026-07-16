@@ -6,11 +6,15 @@
     ],
     "behaviourHateTags": [],
     "behaviourUnavailableTags": [],
-    "blocTag": "",
-    "expertTags": [],
+    "blocTag": "Endfield Industries",
+    "expertTags": [
+      "???"
+    ],
     "giftPreferTags": [],
-    "hobbyTags": [],
-    "raceTag": ""
+    "hobbyTags": [
+      "???"
+    ],
+    "raceTag": "Tidak Disebutkan"
   },
   "skills": {
     "basicAttack": {
@@ -39,7 +43,8 @@
         "dmgMultiplier": "Pengganda DMG",
         "crystalShatteringDmgMultiplier": "Pengganda DMG Pemecahan Kristal",
         "stagger": "Stagger",
-        "sealDurationS": "Durasi Seal (dtk)"
+        "sealDurationS": "Durasi Seal (dtk)",
+        "ultimateEnergyGain": "Perolehan Energi Ultimate"
       },
       "name": "Sealing Sequence",
       "description": "PEMICU KOMBO: Saat operator lain dalam tim menimbulkan DMG dengan skill kombo. \nBergegas lari ke arah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memasang <#ba.originium>Kristal Originium</> yang akan menyegelnya untuk sementara. <#ba.physicalstatus>Status Fisik</> atau <#ba.noguard>Vulnerability</> yang diakibatkan kepada musuh yang disegel akan <#ba.consume>memakai</> <#ba.originium>Kristal Originium</> itu dan menimbulkan <@ba.pd>Physical DMG</> tambahan."
@@ -64,27 +69,29 @@
     },
     "talent1": {
       "levels": [
-        "Saat <#ba.originium>Kristal Originium</> yang terpasang pada musuh <#ba.consume>dipakai</>, Endministrator akan mendapatkan ATK <@ba.vup>+{atk_up:0%}</> selama {duration:0} dtk. Efek ini tidak bisa ditumpuk.",
-        "Saat <#ba.originium>Kristal Originium</> yang terpasang pada musuh <#ba.consume>dipakai</>, Endministrator akan mendapatkan ATK <@ba.vup>+{atk_up:0%}</> selama {duration:0} dtk. Efek ini tidak bisa ditumpuk."
+        "Jika skill tarung atau ultimate berhasil menghantam sedikitnya 2 target, cooldown skill kombo akan dipersingkat sebanyak {0,0:0.0} dtk.",
+        "Jika skill tarung atau ultimate berhasil menghantam sedikitnya 2 target, cooldown skill kombo akan dipersingkat sebanyak {0,0:0.0} dtk."
       ],
       "name": "Essence Disintegration"
     },
     "talent2": {
       "levels": [
-        "Musuh yang dipasangi <#ba.originium>Kristal Originium</> akan terkena Physical DMG Taken <@ba.vup>+{dmg:0%}</>.",
-        "Musuh yang dipasangi <#ba.originium>Kristal Originium</> akan terkena Physical DMG Taken <@ba.vup>+{dmg:0%}</>."
+        "Musuh yang terkurung oleh <#ba.originium>kristal Originium</> akan terkena <@ba.vup>{0,0:0%}</> Physical DMG lebih besar.",
+        "Musuh yang terkurung oleh <#ba.originium>Kristal Originium</> akan terkena <@ba.vup>{0,0:0%}</> Physical DMG lebih besar."
       ],
       "name": "Realspace Stasis"
     },
     "baseSkill1": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
     "baseSkill2": {
-      "levels": [],
-      "name": ""
+      "levels": []
     },
-    "files": {}
+    "files": {
+      "main": "<@profile.key>NAMA SANDI: Endministrator \nGENDER: ■■ \nAUTENTIKASI: ■■ \nTANGGAL LAHIR: ■■ \nRAS: ■■ \n\nKau tak ingat apa pun. \nKenanganmu hanya berupa serpihan, bagaikan mimpi yang hancur menjadi debu, lenyap seketika. \nKadang itu membuatmu gelisah, kadang tak nyaman, tapi justru memberimu waktu yang sunyi untuk bernapas dan berpikir. \nTapi, sering kali, hampir tak ada jeda untuk ragu. Kau hanya perlu percaya apa yang ada di hadapanmu dan terus maju. \nMungkin kau memendam kenangan masa lalu walau hanya sebentar .... \n... dan kau tak ingat apa-apa. </>",
+      "humanResources": "<@profile.key>Kau sudah melewati seluruh sejarah Talos-II ....</>",
+      "file1": "<@profile.key>Tapi ... seperti apa masa depan yang akan kauwujudkan untuknya?</>"
+    }
   },
   "potentials": {
     "potential1": {
@@ -96,8 +103,8 @@
       "name": "Reflection of Authority"
     },
     "potential3": {
-      "description": "???",
-      "name": "???"
+      "description": "Ultimate <@ba.key>Bombardment Sequence</> meningkat: Setelah <#ba.consume>memakai</> <#ba.originium>Kristal Originium</>, Endministrator akan mendapatkan <@ba.vup>{usp:0}</> Energi Ultimate.\n<@ba.info>Efek ini tidak akan mendapatkan manfaat dari bonus lain.</>",
+      "name": "The Guide"
     },
     "potential4": {
       "description": "???",
@@ -119,7 +126,7 @@
       "author": "廻轉",
       "description": "Kamu berdiri tepat di tengah persimpangan."
     },
-    "potential6": {
+    "potential5": {
       "name": "Tergenggam Sepenuhnya",
       "author": "수줍(Sjoop)",
       "description": "Kepercayaan dan keyakinan menyatu dalam genggamanmu. Fragmen yang pertama bernama sejarah. Nama lainnya adalah Peradaban dan Kehidupan."

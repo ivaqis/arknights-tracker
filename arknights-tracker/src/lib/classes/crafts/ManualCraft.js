@@ -23,6 +23,26 @@ export class ManualCraft {
         return this._craftObj.outcomes;
     }
 
+    getIngredientItemIds() {
+        return this.ingredients.map((obj) => obj.itemId)
+    }
+
+    getIngredientItemCount(itemId) {
+        let result = this.ingredients.find((obj) => obj.itemId === itemId);
+
+        return result ?? null;
+    }
+
+    getOutcomeItemIds() {
+        return this.outcomes.map((obj) => obj.itemId);
+    }
+
+    getOutcomeItemCount(itemId) {
+        let result = this.outcomes.find((obj) => obj.itemId === itemId);
+
+        return result ?? null;
+    }
+
     static getManualCraft(formulaId) {
         let manualCraftObj = manualCrafts[formulaId];
 

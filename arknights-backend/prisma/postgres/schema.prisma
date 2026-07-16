@@ -89,3 +89,48 @@ model GlobalItemStats {
 
   @@id([bannerId, itemName])
 }
+
+model UserAccount {
+  id                Int                  @id @default(autoincrement())
+  firebase_uid      String               @unique
+  created_at        DateTime             @default(now())
+  updated_at        DateTime             @default(now()) @updatedAt
+  picture           String?              @unique
+  name              String?
+  avatar_strike     Int                  @default(0)
+  upload_count      Int                  @default(0)
+  last_upload_reset DateTime             @default(now())
+  is_private        Int                  @default(0)
+  background        String?
+  favorite_game_uid String?
+  
+  details           UserAccountDetails[]
+
+  @@map("user_account")
+}
+
+model UserAccountDetails {
+  id           Int               @id @default(autoincrement())
+  user_id      Int
+  game_uid     String            @unique
+  account_info String            // TEXT / JSON payload
+  records_uid  String?
+  
+  user         UserAccount       @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  leaderboards UserLeaderboard[]
+
+  @@map("user_account_details")
+}
+
+model UserLeaderboard {
+  id               Int                @id @default(autoincrement())
+  game_uid         String
+  event_type       String             // "contract" or "monument"
+  clear_time       Float
+  leaderboard_info String             // JSON data (characters used, levels, etc.)
+
+  account_detail   UserAccountDetails @relation(fields: [game_uid], references: [game_uid], onDelete: Cascade)
+
+  @@map("user_leaderboard")
+}
+

@@ -1,6 +1,7 @@
 import {Building} from "$lib/classes/buildings/Building.js";
 import {pumps} from "$lib/data/buildings/pumps.js";
 import {PumpingFormula} from "$lib/classes/crafts/PumpingFormula.js";
+import {ResourcePoint} from "$lib/classes/items/ResourcePoint.js";
 
 export class Pump extends Building {
     _pumpObj;
@@ -16,7 +17,8 @@ export class Pump extends Building {
     }
 
     get enableLiquidIds() {
-        return this._pumpObj.enableLiquidIds;
+        return this._pumpObj.enableLiquidIds
+            .filter((itemId) => ResourcePoint.isItemResourcePoint(itemId));
     }
 
     isLiquidEnable(liquidId) {
@@ -25,6 +27,7 @@ export class Pump extends Building {
 
     getPumpingFormula(liquidId) {
         if (!this.isLiquidEnable(liquidId)) return null;
+        if (!ResourcePoint.isItemResourcePoint(liquidId)) return null;
 
         return new PumpingFormula(this, liquidId);
     }

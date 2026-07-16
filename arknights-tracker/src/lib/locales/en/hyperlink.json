@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "High Voltage Fence",
+    "desc": "An active high voltage fence is impassable. Follow the cable, find the switch, and shut down the fence for safe passage."
+  },
+  "adv.eswitch": {
+    "name": "Reactive Device",
+    "desc": "A reactive device changes its operation mode when attacked or hit by an explosion. It is often used to switch off <#adv.electricFence>High Voltage Fences</> or activate <#adv.jumpMachine>Bounce Devices</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Bounce Device",
+    "desc": "The controlled operator can use Bounce Devices to jump across a longer distance or reach high places unreachable with normal jumping.\nSimply stand on a powered Bounce Device, then jump to use it."
+  },
+  "adv.powerTerminal": {
+    "name": "Electric Nexus",
+    "desc": "An electric nexus is usually placed at the end of a power transmission line. Connect it to the power grid to supply power to nearby facilities. Electric Nexuses are often used to power gates and switches. Supply power to Electric Nexuses with Relay Towers. This then grants control access to gates or switches linked to them."
+  },
+  "ba.absorb": {
+    "name": "Absorb",
+    "desc": "A way to end a Physical or Arts debuff early. <@ba.key>Absorb</> is not the same as <#ba.consume>consume</>."
+  },
+  "ba.airborne": {
+    "name": "Physical Status: Lift",
+    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then add 1 stack of <#ba.noguard>Vulnerability</>, and deal <@ba.phy>Physical DMG</> and <@ba.poise>Stagger</>."
+  },
+  "ba.burning": {
+    "name": "Arts Reaction: Combustion",
+    "desc": "An enemy with <@ba.burning>Combustion</> takes <@ba.fire>Heat DMG</> over time.\n<@ba.burning>Combustion</> = A <#ba.spellinflict>non-Heat Infliction</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</>"
+  },
+  "ba.burningonchar": {
+    "name": "Operator Debuff: Combustion",
+    "desc": "Certain enemy skills can apply stacks of <@ba.fireinflict>Heat Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.burning>Combusted</>: Temporarily take continuous <@ba.fire>Heat DMG</> that ignores their DEF."
+  },
+  "ba.combo": {
+    "name": "Link",
+    "desc": "Next battle skill or ultimate cast by the team consumes the Link buff and deals more DMG, with battle skills getting a higher increase. Effects of the same type can stack, but with diminishing returns."
+  },
+  "ba.conduct": {
+    "name": "Arts Reaction: Electrification",
+    "desc": "An enemy with <@ba.conduct>Electrification</> takes more <#ba.spelldmg>Arts DMG</>.\n<@ba.conduct>Electrification</> = A <#ba.spellinflict>non-Electric Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</>"
+  },
+  "ba.conductonchar": {
+    "name": "Operator Debuff: Electrification",
+    "desc": "Certain enemy skills can apply stacks of <@ba.pulseinflict>Electric Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.conduct>Electrified</>: Temporary stun and take more <#ba.spelldmg>Arts DMG</> for a certain duration."
+  },
+  "ba.consume": {
+    "name": "Debuff Consumption",
+    "desc": "Various Physical and Arts debuffs can be ended early. For example, <#ba.crush>Crush</> consumes <#ba.noguard>Vulnerability</> debuffs, while <#ba.burning>Combustion</> consumes <#ba.spellinflict>Arts Infliction</> debuffs."
+  },
+  "ba.corrupt": {
+    "name": "Arts Reaction: Corrosion",
+    "desc": "An enemy with <@ba.corrupt>Corrosion</> gradually loses resistance against all elements. \n<@ba.corrupt>Corrosion</> = A <#ba.spellinflict>non-Nature Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Operator Debuff: Corrosion",
+    "desc": "Certain enemy skills can apply stacks of <@ba.naturalinflict>Nature Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.corrupt>Corroded</>: Cannot dash and suffer movement speed reduction for a certain duration."
+  },
+  "ba.crush": {
+    "name": "Physical Status: Crush",
+    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then <#ba.consume>consume</> all <#ba.noguard>Vulnerability</> stacks and deal massive <@ba.phy>Physical DMG</>."
+  },
+  "ba.crystbreak": {
+    "name": "Shatter",
+    "desc": "To an enemy with active <#ba.frozen>Solidification</>, applying <#ba.noguard>Vulnerability</> or <#ba.physicalstatus>Physical Status</> effects will <#ba.consume>consume</> the <#ba.frozen>Solidification</> to trigger Shatter that deals massive <@ba.pd>Physical DMG</>."
+  },
+  "ba.crystburst": {
+    "name": "Arts Burst: Cryo",
+    "desc": "<#ba.crystinflict>Cryo Infliction</> + <#ba.crystinflict>Cryo Infliction</> will trigger <@ba.cryst>Cryo Burst</> that deals <@ba.cryst>Cryo DMG</> to enemies."
+  },
+  "ba.crystenhance": {
+    "name": "Cryo Amp",
+    "desc": "Cryo Amped targets temporarily deal more <@ba.cryst>Cryo DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.crystinflict": {
+    "name": "Arts Infliction: Cryo",
+    "desc": "<@ba.crystinflict>Cryo Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.crystinflict>Cryo Infliction</> can be applied and stacking triggers <#ba.crystburst>Cryo Burst</>. \nA <#ba.spellinflict>non-Cryo Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</> = <#ba.frozen>Solidification</>"
+  },
+  "ba.crystonchar": {
+    "name": "Operator Debuff: Cryo Infliction",
+    "desc": "Certain enemy skills can apply stacks of <@ba.crystinflict>Cryo Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.frozen>Solidified</>: Cannot move for a certain duration."
+  },
+  "ba.crystvul": {
+    "name": "Cryo Susceptibility",
+    "desc": "Cryo Susceptible targets temporarily take more <@ba.cryst>Cryo DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.dispel": {
+    "name": "Dispel",
+    "desc": "This removes specific debuffs from the operator."
+  },
+  "ba.dot": {
+    "name": "DMG Over Time",
+    "desc": "DMG over time cannot trigger critical hits."
+  },
+  "ba.enhance": {
+    "name": "Amp",
+    "desc": "Amped targets deal more DMG of the element it is Amped for. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.fireburst": {
+    "name": "Arts Burst: Heat",
+    "desc": "<#ba.fireinflict>Heat Infliction</> + <#ba.fireinflict>Heat Infliction</> will trigger <@ba.fire>Heat Burst</> that deals <@ba.fire>Heat DMG</> to enemies."
+  },
+  "ba.fireenhance": {
+    "name": "Heat Amp",
+    "desc": "Heat Amped targets temporarily deal more <@ba.fire>Heat DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.fireinflict": {
+    "name": "Arts Infliction: Heat",
+    "desc": "<@ba.fireinflict>Heat Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.fireinflict>Heat Infliction</> can be applied and stacking triggers <#ba.fireburst>Heat Burst</>. \nA <#ba.spellinflict>non-Heat Infliction</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Heat Infliction</> = <#ba.burning>Combustion</>"
+  },
+  "ba.fireonchar": {
+    "name": "Operator Debuff: Heat Infliction",
+    "desc": "Certain enemy skills can apply stacks of <@ba.fireinflict>Heat Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.burning>Combusted</>: Temporarily take continuous <@ba.fire>Heat DMG</> that ignores their DEF."
+  },
+  "ba.firevul": {
+    "name": "Heat Susceptibility",
+    "desc": "Heat Susceptible targets temporarily take more <@ba.fire>Heat DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.fracture": {
+    "name": "Physical Status: Breach",
+    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then <#ba.consume>consume</> all <#ba.noguard>Vulnerability</> stacks, deal <@ba.phy>Physical DMG</>, and temporarily increase the <@ba.pd>Physical DMG</> taken by the enemy."
+  },
+  "ba.frozen": {
+    "name": "Arts Reaction: Solidification",
+    "desc": "An enemy with <@ba.frozen>Solidification</> cannot move, and applying <#ba.noguard>Vulnerability</> or a <#ba.physicalstatus>Physical Status</> to the enemy triggers the <#ba.crystbreak>Shatter</> effect. \n<@ba.frozen>Solidification</> = A <#ba.spellinflict>non-Cryo Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Cryo Infliction</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Operator Debuff: Solidification",
+    "desc": "Certain enemy skills can apply stacks of <@ba.crystinflict>Cryo Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.frozen>Solidified</>: Cannot move for a certain duration."
+  },
+  "ba.guard": {
+    "name": "Protect",
+    "desc": "Protected targets temporarily take reduced DMG. The number represents the degree of reduction. When there are multiple effects of the same type, only the most powerful applies."
+  },
+  "ba.knockdown": {
+    "name": "Physical Status: Knock Down",
+    "desc": "Applies <#ba.noguard>Vulnerability</> on an enemy. If the enemy is already <#ba.noguard>Vulnerable</>, then add 1 stack of <#ba.noguard>Vulnerability</>, and deal <@ba.phy>Physical DMG</> and <@ba.poise>Stagger</>."
+  },
+  "ba.lastcombo": {
+    "name": "Final Strike",
+    "desc": "Final Strike is the last sequence of basic attack. When the controlled operator's Final Strike hits the enemy, it also deals <@ba.poise>Stagger</> and restores some Skill Points (SP)."
+  },
+  "ba.naturalburst": {
+    "name": "Arts Burst: Nature",
+    "desc": "<#ba.naturalinflict>Nature Infliction</> + <#ba.naturalinflict>Nature Infliction</> will trigger <@ba.natur>Nature Burst</> that deals <@ba.natur>Nature DMG</> to enemies."
+  },
+  "ba.naturalenhance": {
+    "name": "Nature Amp",
+    "desc": "Nature Amped targets temporarily deal more <@ba.natur>Nature DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.naturalinflict": {
+    "name": "Arts Infliction: Nature",
+    "desc": "<@ba.naturalinflict>Nature Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.naturalinflict>Nature Infliction</> can be applied and stacking triggers <#ba.naturalburst>Nature Burst</>. \nA <#ba.spellinflict>non-Nature Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nature Infliction</> = <#ba.corrupt>Corrosion</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Operator Debuff: Nature Infliction",
+    "desc": "Certain enemy skills can apply stacks of <@ba.naturalinflict>Nature Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.corrupt>Corroded</>: Cannot dash and suffer movement speed reduction for a certain duration."
+  },
+  "ba.naturalvul": {
+    "name": "Nature Susceptibility",
+    "desc": "Nature Susceptible targets temporarily take more <@ba.natur>Nature DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.noguard": {
+    "name": "Vulnerable",
+    "desc": "Hitting an enemy for the first time with a skill with <#ba.physicalstatus>Physical Status</> applies <@ba.noguard>Vulnerability</> instead of the actual Physical Status.\nA <@ba.phy>Vulnerable</> enemy can be <#ba.airborne>Lifted</> and <#ba.knockdown>Knocked Down</> to add more Vulnerability stacks (up to 4). Hitting a Vulnerable enemy with <#ba.crush>Crush</> or <#ba.fracture>Breach</> will <#ba.consume>consume</> the Vulnerability stacks."
+  },
+  "ba.originium": {
+    "name": "Originium Crystal",
+    "desc": "The Endministrator's combo skill attaches Originium Crystals to enemies and immobilizes them."
+  },
+  "ba.physicalenhance": {
+    "name": "Physical Amp",
+    "desc": "Physical Amped targets temporarily deal more <@ba.pd>Physical DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.physicalstatus": {
+    "name": "Physical Status",
+    "desc": "Physical Statuses refer to physical debuffs applied to the enemy. They include: <#ba.airborne>Lifted</>, <#ba.knockdown>Knocked Down</>, <#ba.crush>Crushed</>, and <#ba.fracture>Breached</>."
+  },
+  "ba.physicalvul": {
+    "name": "Physical Susceptibility",
+    "desc": "Physical Susceptible targets temporarily take more <@ba.pd>Physical DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.poiseknot": {
+    "name": "Stagger Node",
+    "desc": "Some powerful enemies have <@ba.poise>Stagger Nodes</>. Deal enough <@ba.poise>Stagger</> to reach the <@ba.poise>Stagger Node</> to interrupt such enemies and make them stumble."
+  },
+  "ba.pulseburst": {
+    "name": "Arts Burst: Electric",
+    "desc": "<#ba.pulseinflict>Electric Infliction</> + <#ba.pulseinflict>Electric Infliction</> will trigger <@ba.pulse>Electric Burst</> that deals <@ba.pulse>Electric DMG</> to enemies."
+  },
+  "ba.pulseenhance": {
+    "name": "Electric Amp",
+    "desc": "Electric Amped targets temporarily deal more <@ba.pulse>Electric DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.pulseinflict": {
+    "name": "Arts Infliction: Electric",
+    "desc": "<@ba.pulseinflict>Electric Infliction</> is a type of <#ba.spellinflict>Arts Infliction</>. \nUp to 4 stacks of <@ba.pulseinflict>Electric Infliction</> can be applied and stacking triggers <#ba.pulseburst>Electric Burst</>. \nA <#ba.spellinflict>non-Electric Infliction</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Electric Infliction</> = <#ba.conduct>Electrification</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Operator Debuff: Electric Infliction",
+    "desc": "Certain enemy skills can apply stacks of <@ba.pulseinflict>Electric Infliction</> to operators. \nAt 4 stacks, the operator becomes <@ba.conduct>Electrified</>: Temporary stun and take more <#ba.spelldmg>Arts DMG</> for a certain duration."
+  },
+  "ba.pulsevul": {
+    "name": "Electric Susceptibility",
+    "desc": "Electric Susceptible targets temporarily take more <@ba.pulse>Electric DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.return": {
+    "name": "SP Return",
+    "desc": "After spending SP and meeting certain criteria, some of the SP spent will be returned. \nSP Return is not \"SP Recovery\" and does not activate SP Recovery-triggered effects. Spending returned SP also does not give Ultimate Energy."
+  },
+  "ba.rossi": {
+    "name": "Razor Clawmark",
+    "desc": "Rossi's battle skill applies a special status on the enemy. The affected target will take <@ba.pd>Physical DMG</> over time, and suffers higher Physical DMG Taken and Heat DMG Taken."
+  },
+  "ba.shield": {
+    "name": "Shield",
+    "desc": "The shield can absorb damage while it is active. Some shields may only absorb specific type(s) of DMG."
+  },
+  "ba.slow": {
+    "name": "Slow",
+    "desc": "Slowed targets temporarily suffer movement speed reduction. The number represents the degree of reduction. When there are multiple effects of the same type, only the most powerful applies."
+  },
+  "ba.speedup": {
+    "name": "Haste",
+    "desc": "Temporarily raises the movement speed of a target. The number represents the degree of the speed increase. Effects of the same type can stack until hitting the speed cap."
+  },
+  "ba.spellburst": {
+    "name": "Arts Burst",
+    "desc": "<@ba.key>Arts Bursts</> are triggered by stacking <#ba.spellinflict>Arts Inflictions</> of the same elements. They include <#ba.fireburst>Heat Burst</>, <#ba.pulseburst>Electric Burst</>, <#ba.crystburst>Cryo Burst</>, and <#ba.naturalburst>Nature Burst</>."
+  },
+  "ba.spelldmg": {
+    "name": "DMG Type",
+    "desc": "Damage can be divided into <@ba.pd>Physical DMG</>, <@ba.key>Arts DMG</>, and <@ba.ether>Æther DMG</>.\n<@ba.key>Arts DMG</> can be further divided into <@ba.fire>Heat DMG</>, <@ba.pulse>Electric DMG</>, <@ba.cryst>Cryo DMG</>, and <@ba.natur>Nature DMG</>."
+  },
+  "ba.spellenhance": {
+    "name": "Arts Amp",
+    "desc": "Arts Amped targets temporarily deal more <#ba.spelldmg>Arts DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.spellinflict": {
+    "name": "Arts Infliction",
+    "desc": "<@ba.key>Arts Inflictions</> are special Arts debuff inflicted upon the enemy. There are 4 elements of Arts Inflictions: <#ba.fireinflict>Heat Infliction</>, <#ba.pulseinflict>Electric Infliction</>, <#ba.crystinflict>Cryo Infliction</>, and <#ba.naturalinflict>Nature Infliction</>. \nUp to 4 stacks of <@ba.key>Arts Infliction</> of the same element can be applied."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Arts Inflictions / Arts Reactions on Operators",
+    "desc": "Some enemy skills can apply stacks of <#ba.burningonchar>Heat Infliction</>, <#ba.conductonchar>Electric Infliction</>, <#ba.frozenonchar>Cryo Infliction</>, or <#ba.corruptonchar>Nature Infliction</>.\nAt 4 stacks of the Arts Inflictions, the operator becomes <#ba.burningonchar>Combusted</>, <#ba.conductonchar>Electrified</>, <#ba.frozenonchar>Solidified</>, or <#ba.corruptonchar>Corroded</> respectively."
+  },
+  "ba.spellstatus": {
+    "name": "Arts Reaction",
+    "desc": "<@ba.key>Arts Reactions</> are Arts debuffs that can be applied to the enemy. They include: <#ba.burning>Combustion</>, <#ba.conduct>Electrification</>, <#ba.frozen>Solidification</>, and <#ba.corrupt>Corrosion</>."
+  },
+  "ba.spellvul": {
+    "name": "Arts Susceptibility",
+    "desc": "Arts Susceptible targets temporarily take more <#ba.spelldmg>Arts DMG</>. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.statuslevel": {
+    "name": "Status Level",
+    "desc": "Status Level is the number of <#ba.noguard>Vulnerability</> or <#ba.spellinflict>Arts Infliction</> stacks (max 4) <#ba.consume>consumed</> when triggering a <#ba.physicalstatus>Physical Status</> or <#ba.spellstatus>Arts Reaction</>. The higher the <#ba.statuslevel>Status Level</>, the stronger the resulting <#ba.physicalstatus>Physical Status</> or <#ba.spellstatus>Arts Reaction</>."
+  },
+  "ba.vulnerable": {
+    "name": "Susceptible",
+    "desc": "Susceptible targets temporarily take more DMG of the element it is Susceptible to. The number represents the degree of increase. Effects of the same type can stack."
+  },
+  "ba.weak": {
+    "name": "Weaken",
+    "desc": "Weakened targets temporarily deal reduced DMG. The number represents the degree of reduction. Effects of the same type can stack non-linearly."
+  },
+  "fac.hub": {
+    "name": "Protocol Automation-Core",
+    "desc": "The Protocol Automation-Core (PAC) is the central facility of the Automated Industry Complex (AIC) Factory. Storage management becomes available when standing in the Core AIC Area of the PAC."
+  },
+  "item.bbflower": {
+    "name": "Aketine",
+    "desc": "A plant that contains flammable and explosive substances. It can be gathered from the wilderness.\nThe plant can be grown with AIC Factory facilities or cultivated with <#item.portSoilBbflower>Aketine Plots</>.\nIt can also be processed with AIC Factory facilities. For example, it can be shredded to produce <#item.bbflowerPowder>Aketine Powder</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Aketine Powder",
+    "desc": "A powder produced by shredding <#item.bbflower>Aketine</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.bbflowerSeed": {
+    "name": "Aketine Seed",
+    "desc": "Seeds picked from <#item.bbflower>Aketine</> with AIC Factory facilities.\nAketine Seeds can then be planted and grown at AIC Factory facilities to acquire Aketine.\nAlternatively, Aketine Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilBbflower>Aketine Plots</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Buck Capsule [C]",
+    "desc": "A capsule made by <#sys.manualCraft>crafting</> or filling <#item.plantMossPowder1>Buckflower Powder</> into an <#item.glassBottle>Amethyst Bottle</> with AIC Factory facilities.\nUse this to restore an operator's HP. It can also be equipped as a <#sys.tacticalItem>tactical</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbon",
+    "desc": "A material produced by refining <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nCarbon is essential for crafting <#sys.manualCraftField>planting</> plots, and can also be used for producing other materials."
+  },
+  "item.crystalShell": {
+    "name": "Origocrust",
+    "desc": "A crystalline crust produced by refining <#item.originium>Originium Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.glassBottle": {
+    "name": "Amethyst Bottle",
+    "desc": "A bottle produced by moulding <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.glassCmpt": {
+    "name": "Amethyst Part",
+    "desc": "A part produced by fitting <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.ironEnrPowder": {
+    "name": "Dense Ferrium Powder",
+    "desc": "A fine, dense powder produced by grinding <#item.ironPowder>Ferrium Powder</> and <#item.plantMossPowder3>Sandleaf Powder</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "A metal ingot produced by refining <#item.ironOre>Ferrium Ore</> with AIC Factory facilities. It can be used to produce other materials."
+  },
+  "item.ironOre": {
+    "name": "Ferrium Ore",
+    "desc": "An ore that can be gathered from Ferrium Ore mining spots in the wilderness.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.ironNugget>Ferrium</>."
+  },
+  "item.ironPowder": {
+    "name": "Ferrium Powder",
+    "desc": "A powder produced by shredding <#item.ironNugget>Ferrium</> with AIC Factory facilities. It can be used to produce other materials."
+  },
+  "item.originium": {
+    "name": "Originium Ore",
+    "desc": "An ore that can be gathered from Originium Ore mining spots in the wilderness. It can be used for power generation in the AIC Factory.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.crystalShell>Origocrust</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Dense Originium Powder",
+    "desc": "A fine, dense powder produced by grinding <#item.originiumPowder>Originium Powder</> and <#item.plantMossPowder3>Sandleaf Powder</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.originiumPowder": {
+    "name": "Originium Powder",
+    "desc": "A powder produced by shredding <#item.originium>Originium Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.plantMoss1": {
+    "name": "Buckflower",
+    "desc": "The Buckflower is a plant that grows in the wilderness and is known for its brightly colored flowers.\nThe plant can also be grown with AIC Factory facilities or <#item.portSoilMoss1>Buckflower Plots</>.\nThe plant can be used for crafting <#sys.tacticalItem>tacticals</> or other materials."
+  },
+  "item.plantMoss3": {
+    "name": "Sandleaf",
+    "desc": "A plant that is characterized by rough, gritty leaves. It can be gathered from the wilderness.\nThe plant can be grown with AIC Factory facilities or cultivated with <#item.portSoilMoss3>Sandleaf Plots</>.\nIt can also be processed with AIC Factory facilities. For example, it can be shredded to produce <#item.plantMossPowder3>Sandleaf Powder</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Buckflower Powder",
+    "desc": "A powder made by <#sys.manualCraft>crafting</> or shredding <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nUse this to restore an operator's HP. It can also be equipped as a <#sys.tacticalItem>tactical</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Sandleaf Powder",
+    "desc": "A powder produced by shredding <#item.plantMoss3>Sandleaves</> with AIC Factory facilities.\nIt can be used to produce other materials, usually by grinding."
+  },
+  "item.plantMossSeed1": {
+    "name": "Buckflower Seed",
+    "desc": "Seeds picked from <#item.plantMoss1>Buckflowers</> with AIC Factory facilities.\nBuckflower Seeds can then be planted and grown at AIC Factory facilities to acquire Buckflowers. Alternatively, Buckflower Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilMoss1>Buckflower Plots</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Sandleaf Seed",
+    "desc": "Seeds picked from <#item.plantMoss3>Sandleaves</> with AIC Factory facilities.\nSandleaf Seeds can then be planted and grown at AIC Factory facilities to acquire Sandleaves.\nAlternatively, Sandleaf Seed and <#item.carbonMtl>Carbon</> can be used in the <#sys.manualCraftField>Planting</> screen and crafted into <#item.portSoilMoss3>Sandleaf Plots</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Firebuckle",
+    "desc": "The Firebuckle is a plant that grows in the wilderness and is known for its exceptionally brilliant flowers.\nThere is a chance of getting Firebuckles when harvesting <#item.plantMoss1>Buckflowers</> in the wilderness.\nThey can be used for crafting <#sys.tacticalItem>tacticals</>."
+  },
+  "item.plantSp1": {
+    "name": "Reed Rye",
+    "desc": "The Reed Rye is a type of plantable crop gatherable from the wilderness. It can also be acquired by cultivating <#item.portSoilSp1>Reed Rye Plots</>.\nIt can be directly used for crafting <#sys.manualCraftDish>Fine Food & Meds</> (Fine F&M)."
+  },
+  "item.plantSpSeed1": {
+    "name": "Reed Rye Seed",
+    "desc": "Seeds produced by seed-picking <#item.plantSp1>Reed Rye</> plants with AIC Factory facilities.\nTake Reed Rye Seed and <#item.carbonMtl>Carbon</>, then go to the <#sys.manualCraftField>Planting</> screen to craft them into <#item.portSoilSp1>Reed Rye Plots</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Aketine Plot",
+    "desc": "Aketine Plots can be cultivated at the Eco-Farm to acquire <#item.bbflower>Aketine</>.\nThese plots can be crafted by using <#item.bbflowerSeed>Aketine Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Aketine."
+  },
+  "item.portSoilMoss1": {
+    "name": "Buckflower Plot",
+    "desc": "Buckflower Plots can be cultivated at the Eco-Farm to acquire <#item.plantMoss1>Buckflower</>.\nThese plots can be crafted by using <#item.plantMossSeed1>Buckflower Seed</> and <#item.carbonMtl>Carbon</> in the <#sys.manualCraftField>Planting</> screen.\nHarvesting a fully grown plot has a higher chance of getting bonus <#item.plantMossSpc1>Firebuckle</>."
+  },
+  "item.portSoilMoss3": {
+    "name": "Sandleaf Plot",
+    "desc": "Sandleaf Plots can be cultivated at the Eco-Farm to acquire <#item.plantMoss3>Sandleaf</>.\nThese plots can be crafted by using <#item.plantMossSeed3>Sandleaf Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Sandleaves."
+  },
+  "item.portSoilSp1": {
+    "name": "Reed Rye Plot",
+    "desc": "Reed Rye Plots can be cultivated at the Eco-Farm to acquire <#item.plantSp1>Reed Rye</>.\nThese plots can be crafted by using <#item.plantSpSeed1>Reed Rye Seed</> and <#item.carbonMtl>Carbon</> in the Planting screen.\nHarvesting a fully grown plot provides plenty of Reed Rye."
+  },
+  "item.procBattery1": {
+    "name": "LC Valley Battery",
+    "desc": "A battery produced by packaging <#item.glassCmpt>Amethyst Part</> and <#item.originiumPowder>Originium Powder</> with AIC Factory facilities.\nIt can be used to supply power, charge up facilities, or traded at various outposts."
+  },
+  "item.procBomb": {
+    "name": "Industrial Explosive",
+    "desc": "Industrial Explosives are a type of explosive that can be produced.\nThey are made by using the Packaging Unit, an AIC Factory facility. The materials required are <#item.glassCmpt>Amethyst Part</> and <#item.bbflowerPowder>Aketine Powder</>.\nUse Industrial Explosives to deal DMG to enemies or take down destructible objects within the blast radius."
+  },
+  "item.quartzGlass": {
+    "name": "Amethyst Fiber",
+    "desc": "A fiber produced by refining <#item.quartzSand>Amethyst Ore</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.quartzPowder": {
+    "name": "Amethyst Powder",
+    "desc": "A powder produced by shredding <#item.quartzGlass>Amethyst Fiber</> with AIC Factory facilities.\nIt can be used to produce other materials."
+  },
+  "item.quartzSand": {
+    "name": "Amethyst Ore",
+    "desc": "An ore that can be gathered from Amethyst mining spots in the wilderness.\nIt can also be processed with AIC Factory facilities. For example, it can be refined to produce <#item.quartzGlass>Amethyst Fiber</>."
+  },
+  "sys.manualCraft": {
+    "name": "Crafting",
+    "desc": "Open the Backpack panel to access the Crafting screen. Different raw materials can be crafted into useful items.\nFor example, <#item.plantMoss1>Buckflower</> can be crafted into <#item.plantMossSeed1>Buckflower Powder</> for restoring HP."
+  },
+  "sys.manualCraftDish": {
+    "name": "Fine Food & Meds",
+    "desc": "Fine Food & Meds (Fine F&M) can be used as <#sys.tacticalItem>tacticals</>. \nUnlike <#sys.manualCraftTonic>Emergency Food & Meds</>, they can only be made using <#sys.manualCraft>Crafting</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Planting",
+    "desc": "<#sys.manualCraft>Crafting</> lets you craft planting plots with plant seeds and <#item.carbonMtl>Carbon</>. Planting plots can be placed and grown at the Eco-Farm."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Emergency Food & Meds",
+    "desc": "Emergency Food & Meds (EMS F&M) can be used as <#sys.tacticalItem>tacticals</>.\nThey can be acquired by <#sys.manualCraft>Crafting</> or by using AIC Factory facilities."
+  },
+  "sys.tacticalItem": {
+    "name": "Tacticals",
+    "desc": "Tacticals are items that can be used during combat to provide various benefits and buffs. Every tactical has different activation criteria and usage limits.\nEvery operator can be equipped with 1 tactical. During battle, whenever the tactical activation criteria are met, the operator will auto-use their equipped tactical.\nAfter expending all tactical usage attempts in a single battle, one more use will be restored after a while."
+  }
+}

@@ -1,23 +1,37 @@
 <script>
-    import { t } from "$lib/i18n";
-    import { weapons } from "$lib/data/weapons.js";
-    import { essences } from "$lib/data/items/essences.js";
-    import { pullData } from "$lib/stores/pulls";
-    import { locations } from "$lib/data/locations.js";
-    import { manualPotentials } from "$lib/stores/potentials";
-    import { accountStore } from "$lib/stores/accounts";
-    import { weaponFilters, weaponSearch, weaponManual } from '$lib/stores/filterStore';
-
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
-    import DataToolbar from "$lib/components/DataToolbar.svelte";
-    import Icon from "$lib/components/Icons.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
-    import Button from "$lib/components/Button.svelte";
     import BottomSheet from "$lib/components/BottomSheet.svelte";
+    import Button from "$lib/components/Button.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
+    import SelectableParamList from "$lib/components/dataToolbarV2/filterDropdowns/SelectableParamList.svelte";
+    import WeaponFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/WeaponFilterDropdown.svelte";
+    import GroupTitle from "$lib/components/dataToolbarV2/GroupTitle.svelte";
+    import SkillParamBox from "$lib/components/dataToolbarV2/paramBoxes/SkillParamBox.svelte";
+    import SortSelectorDropdown from "$lib/components/dataToolbarV2/sortDropdowns/SortSelectorDropdown.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import Modal from "$lib/components/modals/Modal.svelte";
+    import { essences } from "$lib/data/items/essences.js";
+    import { locations } from "$lib/data/locations.js";
+    import { weapons } from "$lib/data/weapons.js";
+    import { t } from "$lib/i18n";
+    import { accountStore } from "$lib/stores/accounts";
+    import {
+        essenceWeaponFilters,
+        essenceWeaponOwnedOnly,
+        essenceWeaponSearch,
+        getWeaponFilters, getWeaponSortOptions
+    } from "$lib/stores/filterStore";
+    import { manualPotentials } from "$lib/stores/potentials";
+    import { pullData } from "$lib/stores/pulls";
+    import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { fade, scale } from "svelte/transition";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
 
-    $: filters = $weaponFilters;
-    $: searchQuery = $weaponSearch;
+    $: selectedFilters = $essenceWeaponFilters;
+    $: searchQuery = $essenceWeaponSearch;
+    $: showOwnedOnly = $essenceWeaponOwnedOnly;
 
     const allWeapons = Object.values(weapons || {}).filter((wp) => wp && wp.id);
 
@@ -90,15 +104,8 @@
         "smash",
     ];
 
-    let filters = {
-        rarity: [6, 5, 4, 3],
-        type: ["sword", "polearm", "artsUnit", "greatSword", "handcannon"],
-        attr1: [...attr1Skills],
-        attr2: [...attr2Skills],
-        attr3: [...attr3Skills],
-    };
-
     const { selectedId } = accountStore;
+    $: accountEssences = $weaponEssences[$selectedId] || {};
 
     $: filteredWeapons = allWeapons
         .filter((wp) => {
@@ -139,33 +146,16 @@
                 idName.includes(query);
             if (!matchesSearch) return false;
 
-            const matchesRarity =
-                filters.rarity.length === 0 ||
-                filters.rarity.includes(wp.rarity);
+            const matchesRarity = filterCheck(selectedFilters.rarity, wp.rarity);
             const wpType = wp.type || wp.weapon;
-            const matchesType =
-                filters.type.length === 0 ||
-                (wpType &&
-                    filters.type.some(
-                        (w) => w.toLowerCase() === wpType.toLowerCase(),
-                    ));
-            const passesAttr1 =
-                filters.attr1.length === attr1Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr1.includes(s)));
-            const passesAttr2 =
-                filters.attr2.length === attr2Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr2.includes(s)));
-            const passesAttr3 =
-                filters.attr3.length === attr3Skills.length ||
-                (wp.skills && wp.skills.some((s) => filters.attr3.includes(s)));
+            const matchesType = filterCheckLowerCase(selectedFilters.type, wpType);
+            const wpEssence = accountEssences[wp.id] || 0;
+            const matchesEssence = filterCheck(selectedFilters.essence, wpEssence);
+            const passesAttr1 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr1, skill));
+            const passesAttr2 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr2, skill));
+            const passesAttr3 = wp.skills?.some((skill) => filterCheck(selectedFilters.attr3, skill));
 
-            return (
-                matchesRarity &&
-                matchesType &&
-                passesAttr1 &&
-                passesAttr2 &&
-                passesAttr3
-            );
+            return matchesRarity && matchesType && matchesEssence && passesAttr1 && passesAttr2 && passesAttr3;
         })
         .sort((a, b) => {
             let valA = sortField === "type" ? a.type || a.weapon : a[sortField];
@@ -191,6 +181,15 @@
             }
             return compareResult;
         });
+
+    let isFilterActive = false;
+    $: isFilterActive = Object.values(selectedFilters).some((set) => set.size > 0)
+        || $essenceWeaponOwnedOnly;
+
+    function resetFilters() {
+        $essenceWeaponFilters = {};
+        $essenceWeaponOwnedOnly = false;
+    }
 
     let displayLimit = 40;
     $: if (
@@ -228,6 +227,28 @@
     let invAttr2 = null;
     let invAttr3 = null;
 
+    let invAttr1Set = new Set();
+    let invAttr2Set = new Set();
+    let invAttr3Set = new Set();
+
+    $: if (invAttr1Set) {
+        let skill = invAttr1Set.values().next().value ?? null;
+
+        setInvAttr(1, skill);
+    }
+
+    $: if (invAttr2Set) {
+        let skill = invAttr2Set.values().next().value ?? null;
+
+        setInvAttr(2, skill);
+    }
+
+    $: if (invAttr3Set) {
+        let skill = invAttr3Set.values().next().value ?? null;
+
+        setInvAttr(3, skill);
+    }
+
     const rarityColors = {
         6: "#F4700C", // Красный/Оранжевый
         5: "#F9B90C", // Золотой
@@ -254,6 +275,10 @@
         invAttr2 = null;
         invAttr3 = null;
         isBottomSheetOpen = false;
+
+        invAttr1Set = new Set();
+        invAttr2Set = new Set();
+        invAttr3Set = new Set();
     }
 
     $: invSelectedCount = [invAttr1, invAttr2, invAttr3].filter(Boolean).length;
@@ -412,6 +437,39 @@
         return wishlist;
     }
 
+    let isEssenceModalOpen = false;
+    let activeDungeonId = null;
+
+    function openEssencesModal(dungeonId) {
+        activeDungeonId = dungeonId;
+        isEssenceModalOpen = true;
+    }
+
+    function closeEssencesModal() {
+        isEssenceModalOpen = false;
+        activeDungeonId = null;
+    }
+
+    function getDungeonAttributes(dungeonId) {
+        if (!dungeonId) return { attr1: [], attr2: [], attr3: [] };
+        const dungeonEssences = Object.values(essences).filter(
+            (e) => e.obtain && e.obtain.includes(dungeonId)
+        );
+
+        const skills = new Set();
+        dungeonEssences.forEach((essence) => {
+            essence.skills.forEach((s) => {
+                skills.add(s.id);
+            });
+        });
+
+        const attr1 = Array.from(skills).filter((s) => attr1Skills.includes(s));
+        const attr2 = Array.from(skills).filter((s) => attr2Skills.includes(s));
+        const attr3 = Array.from(skills).filter((s) => attr3Skills.includes(s));
+
+        return { attr1, attr2, attr3 };
+    }
+
     $: optimizerResults = computeOptimizer(
         selectedWeaponIds,
         primaryWeaponId,
@@ -434,19 +492,27 @@
             .filter(Boolean);
         const dungeonMap = {};
 
+        const allDungeons = new Set();
         Object.values(essencesData).forEach((essence) => {
-            if (!essence.obtain || essence.obtain.length === 0) return;
-            const eSkillIds = essence.skills.map((s) => s.id);
-            const eLevelSum = essence.skills.reduce(
-                (sum, s) => sum + s.level,
-                0,
+            if (essence.obtain) {
+                essence.obtain.forEach((d) => allDungeons.add(d));
+            }
+        });
+
+        allDungeons.forEach((dungeonId) => {
+            const dungeonEssences = Object.values(essencesData).filter(
+                (essence) => essence.obtain && essence.obtain.includes(dungeonId)
             );
 
             selectedWeapons.forEach((wp) => {
-                const matchedSkills = wp.skills.filter((s) =>
-                    eSkillIds.includes(s),
+                const matchedSkills = wp.skills.filter((skillId) =>
+                    dungeonEssences.some((essence) =>
+                        essence.skills.some((s) => s.id === skillId)
+                    )
                 );
+
                 const matchCount = matchedSkills.length;
+                if (matchCount === 0) return;
 
                 let effectiveCount = matchCount;
                 if (wishlist && primaryId !== wp.id) {
@@ -463,36 +529,48 @@
                     }
                 }
 
-                if (matchCount > 0) {
-                    essence.obtain.forEach((dungeonId) => {
-                        if (!dungeonMap[dungeonId]) dungeonMap[dungeonId] = {};
+                let bestEssence = null;
+                let bestEssenceMatchCount = -1;
+                let bestEssenceRarity = -1;
+                let bestEssenceLevelSum = -1;
 
-                        const existing = dungeonMap[dungeonId][wp.id];
-                        const isBetter =
-                            !existing ||
-                            effectiveCount > existing.effectiveCount ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount > existing.matchCount) ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount === existing.matchCount &&
-                                essence.rarity > existing.bestEssence.rarity) ||
-                            (effectiveCount === existing.effectiveCount &&
-                                matchCount === existing.matchCount &&
-                                essence.rarity ===
-                                    existing.bestEssence.rarity &&
-                                eLevelSum > existing.eLevelSum);
+                dungeonEssences.forEach((essence) => {
+                    const essenceSkillIds = essence.skills.map((s) => s.id);
+                    const essenceMatchCount = wp.skills.filter((s) =>
+                        essenceSkillIds.includes(s)
+                    ).length;
+                    if (essenceMatchCount === 0) return;
 
-                        if (isBetter) {
-                            dungeonMap[dungeonId][wp.id] = {
-                                bestEssence: essence,
-                                matchCount,
-                                effectiveCount,
-                                matchedSkills,
-                                eLevelSum,
-                            };
-                        }
-                    });
-                }
+                    const essenceLevelSum = essence.skills.reduce(
+                        (sum, s) => sum + s.level,
+                        0,
+                    );
+
+                    const isBetter =
+                        !bestEssence ||
+                        essenceMatchCount > bestEssenceMatchCount ||
+                        (essenceMatchCount === bestEssenceMatchCount &&
+                            essence.rarity > bestEssenceRarity) ||
+                        (essenceMatchCount === bestEssenceMatchCount &&
+                            essence.rarity === bestEssenceRarity &&
+                            essenceLevelSum > bestEssenceLevelSum);
+
+                    if (isBetter) {
+                        bestEssence = essence;
+                        bestEssenceMatchCount = essenceMatchCount;
+                        bestEssenceRarity = essence.rarity;
+                        bestEssenceLevelSum = essenceLevelSum;
+                    }
+                });
+
+                if (!dungeonMap[dungeonId]) dungeonMap[dungeonId] = {};
+                dungeonMap[dungeonId][wp.id] = {
+                    bestEssence: bestEssence || dungeonEssences[0],
+                    matchCount,
+                    effectiveCount,
+                    matchedSkills,
+                    eLevelSum: bestEssenceLevelSum > -1 ? bestEssenceLevelSum : 0,
+                };
             });
         });
 
@@ -565,14 +643,11 @@
                             )
                                 return;
 
-                            const can3_3 = dungeonEssences.some((essence) => {
-                                const eSkillIds = essence.skills.map(
-                                    (s) => s.id,
-                                );
-                                return wp.skills.every((skill) =>
-                                    eSkillIds.includes(skill),
-                                );
-                            });
+                            const can3_3 = wp.skills.every((skill) =>
+                                dungeonEssences.some((essence) =>
+                                    essence.skills.some((s) => s.id === skill)
+                                )
+                            );
 
                             if (can3_3) {
                                 const wAttr1 = wp.skills.find((s) =>
@@ -688,11 +763,26 @@
                 let dSet = new Set();
                 const wp = allWeapons.find((w) => w.id === wpId);
                 if (wp) {
+                    // Find all unique dungeons
+                    const dungeons = new Set();
                     Object.values(essences).forEach((ess) => {
-                        if (!ess.obtain) return;
-                        const essSkillIds = ess.skills.map((s) => s.id);
-                        if (wp.skills.every((s) => essSkillIds.includes(s))) {
-                            ess.obtain.forEach((dId) => dSet.add(dId));
+                        if (ess.obtain) {
+                            ess.obtain.forEach((dId) => dungeons.add(dId));
+                        }
+                    });
+                    
+                    // Check if all 3 skills of the weapon are dropped in that dungeon
+                    dungeons.forEach((dId) => {
+                        const dungeonEssences = Object.values(essences).filter(
+                            (e) => e.obtain && e.obtain.includes(dId)
+                        );
+                        const allCovered = wp.skills.every((skillId) =>
+                            dungeonEssences.some((e) =>
+                                e.skills.some((es) => es.id === skillId)
+                            )
+                        );
+                        if (allCovered) {
+                            dSet.add(dId);
                         }
                     });
                 }
@@ -754,18 +844,20 @@
 
                 let canFarm3_3 = false;
                 if (!hasConflict && commonDungeons.size > 0) {
-                    Object.values(essences).forEach((ess) => {
-                        if (!ess.obtain || canFarm3_3) return;
-
-                        if (ess.obtain.some((dId) => commonDungeons.has(dId))) {
-                            const essSkillIds = ess.skills.map((s) => s.id);
-                            if (
-                                wp.skills.every((s) => essSkillIds.includes(s))
-                            ) {
-                                canFarm3_3 = true;
-                            }
+                    for (const dId of commonDungeons) {
+                        const dungeonEssences = Object.values(essences).filter(
+                            (e) => e.obtain && e.obtain.includes(dId)
+                        );
+                        const allCovered = wp.skills.every((skillId) =>
+                            dungeonEssences.some((e) =>
+                                e.skills.some((es) => es.id === skillId)
+                            )
+                        );
+                        if (allCovered) {
+                            canFarm3_3 = true;
+                            break;
                         }
-                    });
+                    }
                 }
 
                 if (hasConflict || !canFarm3_3) {
@@ -824,15 +916,34 @@
 
         {#if activeTab === "optimizer"}
             <div>
+
                 <DataToolbar
-                    bind:sortField
-                    bind:sortDirection
-                    bind:filters={$weaponFilters} 
-                    bind:searchQuery={$weaponSearch} 
-                    bind:manualMode={$weaponManual}
-                    bind:showOwnedOnly
-                    mode="weapons"
-                />
+                    showSortDropdownButton={true}
+                    showSortDirectionButton={true}
+                    showFilterDropdownButton={true}
+                    showSearchInput={true}
+                    isFilterActive={isFilterActive}
+                    onFilterReset={resetFilters}
+                    bind:searchString={$essenceWeaponSearch}
+                    bind:sortDirection={sortDirection}
+                >
+
+                    <SortSelectorDropdown
+                        slot="sortDropdown"
+                        optionList={getWeaponSortOptions()}
+                        bind:selectedOption={sortField}
+                    />
+
+                    <WeaponFilterDropdown
+                        slot="filterDropdown"
+                        filters={getWeaponFilters()}
+                        onFilterReset={resetFilters}
+                        bind:selectedFilters={$essenceWeaponFilters}
+                        bind:showOwnedOnly={$essenceWeaponOwnedOnly}
+                    />
+
+                </DataToolbar>
+
             </div>
 
             <div
@@ -901,118 +1012,51 @@
             {/if}
         {:else if activeTab === "inventory"}
             <div class="flex flex-col gap-6 pt-2 pb-8">
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr1")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr1Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr1 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(1, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    <div
-                                        class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
-                                    >
-                                        <Icon
-                                            name={skillIcons[skill]}
-                                            class="w-3 h-3 text-white pointer-events-none"
-                                        />
-                                    </div>
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none"
-                                    >{$t(`skills.${skill}`) || skill}</span
-                                >
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr1Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr1Set}
+                    />
+
                 </div>
 
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr2")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr2Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr2 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(2, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    {#if elementColors[skill]}
-                                        <Icon
-                                            name={skillIcons[skill]}
-                                            class="w-4 h-4 pointer-events-none {elementColors[
-                                                skill
-                                            ]}"
-                                        />
-                                    {:else}
-                                        <div
-                                            class="w-5 h-5 bg-[#2A2A2A] dark:bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center pointer-events-none"
-                                        >
-                                            <Icon
-                                                name={skillIcons[skill]}
-                                                class="w-3 h-3 text-white pointer-events-none"
-                                            />
-                                        </div>
-                                    {/if}
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none {elementColors[
-                                        skill
-                                    ] || 'text-current'}"
-                                >
-                                    {$t(`skills.${skill}`) || skill}
-                                </span>
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr2Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr2Set}
+                    />
+
                 </div>
 
-                <div>
-                    <h3
-                        class="text-sm font-bold dark:text-[#E0E0E0] text-gray-800 mb-3"
-                    >
+                <div class="flex flex-col gap-2">
+
+                    <GroupTitle>
                         {$t("essencesPage.attr3")}
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        {#each attr3Skills as skill}
-                            <button
-                                type="button"
-                                class="h-[32px] px-2 pr-3 rounded flex items-center justify-center gap-1.5 border transition-all cursor-pointer {invAttr3 ===
-                                skill
-                                    ? 'bg-[#F9B90C]/20 border-[#F9B90C] text-gray-900 dark:text-[#E0E0E0] dark:bg-[#FFB200]/50 dark:border-[#FFB200]'
-                                    : 'bg-white/50 dark:bg-[#383838]/50 border-gray-200 dark:border-[#444444] text-gray-700 dark:text-[#E0E0E0] hover:bg-white hover:dark:bg-[#424242]'}"
-                                on:click={() => setInvAttr(3, skill)}
-                            >
-                                {#if skillIcons[skill]}
-                                    <Icon
-                                        name={skillIcons[skill]}
-                                        class="w-4 h-4 text-current pointer-events-none"
-                                    />
-                                {/if}
-                                <span
-                                    class="text-xs font-bold pointer-events-none"
-                                    >{$t(`skills.${skill}`) || skill}</span
-                                >
-                            </button>
-                        {/each}
-                    </div>
+                    </GroupTitle>
+
+                    <SelectableParamList
+                        paramBox={SkillParamBox}
+                        paramList={attr3Skills}
+                        maxSelectedParams={1}
+                        bind:selectedParamSet={invAttr3Set}
+                    />
+
                 </div>
+
             </div>
         {/if}
     </div>
@@ -1064,7 +1108,7 @@
                             >
                                 <Icon
                                     name={regionId}
-                                    class="w-5 h-5"
+                                    class="w-5 h-5 shrink-0"
                                     style="color: {rColor};"
                                 />
                                 <h3
@@ -1144,25 +1188,36 @@
                                         </div>
                                     </div>
                                 </div>
-                                <Button
-                                    variant="roundSmall"
-                                    className="opacity-85 hover:opacity-100"
-                                    color="gray"
-                                    onClick={() => {
-                                        const mapUrl =
-                                            locData.url || locData.URL;
-                                        if (mapUrl)
-                                            window.open(mapUrl, "_blank");
-                                    }}
-                                >
-                                    <span class="flex items-center gap-2">
-                                        {$t("essencesPage.openInMap")}
-                                        <Icon
-                                            name="sendToLink"
-                                            class="w-3 h-3"
-                                        />
-                                    </span>
-                                </Button>
+                                <div class="flex items-center gap-2">
+                                    <Button
+                                        variant="roundSmall"
+                                        color="gray"
+                                        onClick={() => openEssencesModal(dungeon.dungeonId)}
+                                        title={$t("essencesPage.viewEssences") || "Essences"}
+                                    >
+                                        <span class="flex items-center justify-center">
+                                            <Icon name="essence" class="w-4 h-4 text-current" />
+                                        </span>
+                                    </Button>
+                                    <Button
+                                        variant="roundSmall"
+                                        color="gray"
+                                        onClick={() => {
+                                            const mapUrl =
+                                                locData.url || locData.URL;
+                                            if (mapUrl)
+                                                window.open(mapUrl, "_blank");
+                                        }}
+                                    >
+                                        <span class="flex items-center gap-2">
+                                            {$t("essencesPage.openInMap")}
+                                            <Icon
+                                                name="sendToLink"
+                                                class="w-3 h-3"
+                                            />
+                                        </span>
+                                    </Button>
+                                </div>
                             </div>
 
                             <div
@@ -1251,7 +1306,7 @@
                                                     match.weapon.rarity
                                                 ] || '#B7B6B3'};"
                                             >
-                                                <Images
+                                                <Image
                                                     id={match.weapon.id}
                                                     interactive={true}
                                                     variant="weapon-icon"
@@ -1266,14 +1321,7 @@
                                                         "essencesPage.primaryWeapon",
                                                     )}
                                                 >
-                                                    <svg
-                                                        class="w-3 h-3"
-                                                        fill="currentColor"
-                                                        viewBox="0 0 24 24"
-                                                        ><path
-                                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                                                        /></svg
-                                                    >
+                                                    <Icon name="favorite" class="w-3 h-3" />
                                                 </div>
                                             {/if}
                                         </div>
@@ -1370,27 +1418,15 @@
 
                                         <button
                                             type="button"
-                                            class="w-7 h-7 rounded-md bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors border border-red-500/30 flex-shrink-0 cursor-pointer ml-2"
+                                            class="w-7 h-7 rounded-md bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white flex items-center justify-center transition-colors border select-none border-red-500/30 flex-shrink-0 cursor-pointer ml-2"
                                             title={$t("common.remove") ||
-                                                "Убрать"}
+                                                "Remove"}
                                             on:click|preventDefault|stopPropagation={() =>
                                                 toggleWeaponSelection(
                                                     match.weapon.id,
                                                 )}
                                         >
-                                            <svg
-                                                class="w-4 h-4"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="3"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M20 12H4"
-                                                />
-                                            </svg>
+                                            −
                                         </button>
                                     </div>
                                 {/each}
@@ -1408,35 +1444,13 @@
                                             )}
                                     >
                                         <div class="flex items-center gap-2">
-                                            <Icon
-                                                name="sparkles"
-                                                class="w-4 h-4 text-[#F9B90C]"
-                                            />
-                                            <span
-                                                class="text-[12px] font-bold text-[#4ADE80] dark:text-[#4ADE80]"
-                                            >
-                                                {$t(
-                                                    "essencesPage.simultaneousFarming",
-                                                )}
+                                            <span class="text-[12px] font-bold text-[#3AC76D] dark:text-[#4ADE80]">
+                                                {$t("essencesPage.simultaneousFarming")}
                                             </span>
                                         </div>
-                                        <svg
-                                            class="w-4 h-4 text-[#F9B90C] transition-transform duration-300 {collapsedSuggestions[
-                                                dungeon.dungeonId
-                                            ]
+                                        <Icon name="arrowDown" class="w-3 h-3 text-[#F9B90C] transition-transform duration-300 {collapsedSuggestions[dungeon.dungeonId]
                                                 ? 'rotate-180'
-                                                : ''}"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                stroke-width="2"
-                                                d="M5 15l7-7 7 7"
-                                            />
-                                        </svg>
+                                                : ''}" />
                                     </button>
 
                                     {#if !collapsedSuggestions[dungeon.dungeonId]}
@@ -1524,7 +1538,7 @@
                                                                                     href={`/weapons/${wp.id}`}
                                                                                     class="hover:ring-2 hover:ring-white/70 ring-inset duration-300"
                                                                                 >
-                                                                                <Images
+                                                                                <Image
                                                                                     id={wp.id}
                                                                                     interactive={true}
                                                                                     variant="weapon-icon"
@@ -1544,7 +1558,7 @@
 
                                                                             <button
                                                                                 type="button"
-                                                                                class="w-5 h-5 rounded-md bg-[#4ADE80]/10 text-[#4ADE80] hover:bg-[#4ADE80] hover:text-white flex items-center justify-center transition-colors border border-[#4ADE80]/30 flex-shrink-0 cursor-pointer"
+                                                                                class="w-5 h-5 rounded-md bg-[#4ADE80]/10 text-[#4ADE80] hover:bg-[#4ADE80] hover:text-white flex items-center justify-center select-none transition-colors border border-[#4ADE80]/30 flex-shrink-0 cursor-pointer"
                                                                                 title={$t(
                                                                                     "common.add",
                                                                                 ) ||
@@ -1554,19 +1568,7 @@
                                                                                         wp.id,
                                                                                     )}
                                                                             >
-                                                                                <svg
-                                                                                    class="w-3 h-3"
-                                                                                    fill="none"
-                                                                                    viewBox="0 0 24 24"
-                                                                                    stroke="currentColor"
-                                                                                    stroke-width="3"
-                                                                                >
-                                                                                    <path
-                                                                                        stroke-linecap="round"
-                                                                                        stroke-linejoin="round"
-                                                                                        d="M12 4v16m8-8H4"
-                                                                                    />
-                                                                                </svg>
+                                                                                +
                                                                             </button>
                                                                         </div>
                                                                     {/each}
@@ -1716,4 +1718,109 @@
             <Icon name="inbox" class="w-6 h-6 text-black" />
         </button>
     {/if}
+{/if}
+
+{#if isEssenceModalOpen && activeDungeonId}
+  {@const dungeonAttrs = getDungeonAttributes(activeDungeonId)}
+  {@const regionId = getLocationIcon(activeDungeonId)}
+  {@const rColor = getRegionColor(regionId)}
+  <Modal isOpen={isEssenceModalOpen} on:close={closeEssencesModal}>
+    <div
+      class="relative bg-white rounded-2xl dark:bg-[#383838] dark:border-[#444444] p-6 md:p-8 w-full max-w-3xl shadow-2xl border border-gray-100 flex flex-col max-h-[90vh]"
+      transition:scale={{ duration: 200, start: 0.95 }}
+    >
+      <div class="flex justify-between items-start mb-6 shrink-0 border-b border-gray-100 dark:border-[#444444] pb-4">
+        <h3 class="text-xl md:text-2xl font-bold font-sdk dark:text-[#FDFDFD] text-[#21272C] flex items-start gap-2.5 pr-4 leading-tight">
+          <Icon name={regionId} class="w-7 h-7 shrink-0 mt-0.5" style="color: {rColor};" />
+          <span>{$t(`energyPoints.${activeDungeonId}`) || activeDungeonId}</span>
+        </h3>
+        <button 
+          on:click={closeEssencesModal}
+          class="text-gray-400 hover:text-gray-700 dark:hover:text-white transition-colors p-1 shrink-0"
+        >
+          <Icon name="close" class="w-6 h-6" />
+        </button>
+      </div>
+
+      <div class="overflow-y-auto custom-scrollbar pr-3 space-y-6 text-sm dark:text-[#B7B6B3] text-gray-600 leading-relaxed flex-1">
+        
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr1") || "Attribute 1"}
+          </h4>
+          {#if dungeonAttrs.attr1.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr1 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center shrink-0">
+                      <Icon name={skillIcons[skill]} class="w-3.5 h-3.5 text-white" />
+                    </div>
+                  {/if}
+                  <span class="text-xs font-bold">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr2") || "Attribute 2"}
+          </h4>
+          {#if dungeonAttrs.attr2.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr2 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    {#if elementColors[skill]}
+                      <Icon name={skillIcons[skill]} class="w-4 h-4 shrink-0 {elementColors[skill]}" />
+                    {:else}
+                      <div class="w-5 h-5 bg-[#2A2A2A] border border-[#3A3A3A] rounded-[4px] flex items-center justify-center shrink-0">
+                        <Icon name={skillIcons[skill]} class="w-3.5 h-3.5 text-white" />
+                      </div>
+                    {/if}
+                  {/if}
+                  <span class="text-xs font-bold {elementColors[skill] || ''}">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+        <section>
+          <h4 class="text-base font-bold text-gray-900 dark:text-[#E0E0E0] mb-3">
+            {$t("essencesPage.attr3") || "Attribute 3"}
+          </h4>
+          {#if dungeonAttrs.attr3.length > 0}
+            <div class="flex flex-wrap gap-2">
+              {#each dungeonAttrs.attr3 as skill}
+                <div class="h-[32px] px-3 rounded flex items-center justify-center gap-1.5 border border-gray-400/30 dark:border-[#444444] bg-gray-300/40 dark:bg-[#424242] text-black dark:text-[#E0E0E0] shadow-sm select-none">
+                  {#if skillIcons[skill]}
+                    <Icon name={skillIcons[skill]} class="w-4 h-4 shrink-0 text-current" />
+                  {/if}
+                  <span class="text-xs font-bold">{$t(`skills.${skill}`) || skill}</span>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <p class="text-xs text-gray-400 italic">{$t("emptyState.noData") || "No attributes"}</p>
+          {/if}
+        </section>
+
+      </div>
+
+      <div class="mt-6 pt-4 flex justify-end shrink-0 border-t border-gray-100 dark:border-[#444444]">
+        <div class="w-auto min-w-[120px]">
+          <Button variant="round" color="yellow" onClick={closeEssencesModal}>
+            {$t("privacy.close")}
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Modal>
 {/if}

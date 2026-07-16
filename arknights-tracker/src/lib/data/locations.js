@@ -152,7 +152,7 @@ export const locations = {
     "region": "wuling",
     "costStamina": 80,
     "enemyIds": [
-      "eny_0090_wgabyss_sluggish",
+      "eny_0090_wgabyss",
       "eny_0107_wgshoal2_sluggish",
       "eny_0089_wgreflec",
       "eny_0106_wgthorns2",

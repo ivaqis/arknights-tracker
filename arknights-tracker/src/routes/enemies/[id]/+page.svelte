@@ -4,14 +4,23 @@
     import { currentLocale } from "$lib/stores/locale";
     import { enemies } from "$lib/data/enemies.js";
 
-    import Icon from "$lib/components/Icons.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import NotFound from "$lib/components/NotFound.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import TableModal from "$lib/components/modals/TableModal.svelte";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
         return translated === key ? fallback : translated;
+    }
+
+    function formatNumberForSelection(num) {
+        if (num === undefined || num === null) return '0';
+        const formatted = num.toLocaleString("ru-RU");
+        return formatted.replace(/[\s\u00A0\u202F]/g, '<span class="select-none"> </span>');
     }
 
     const localeModules = {
@@ -32,6 +41,8 @@
     };
 
     let copiedImageId = null;
+    let showStatsTable = false;
+    let isTableCopied = false;
 
     $: resistances = [
         { key: "Physical", val: enemyData.PhysicalDamageTakenScalar, locKey: "physRez" },
@@ -83,6 +94,15 @@
         return "#888888";
     }
     $: rarityColor = getRarityColors(enemyData.rarity || 4);
+
+    function getResColorClass(val) {
+        const percent = Math.round(val * 100);
+        if (percent > 100) return "text-green-500"; // Green (>100)
+        if (percent === 100) return "text-[#21272C] dark:text-[#FDFDFD]"; // Default
+        if (percent <= 40) return "text-[#800020] dark:text-[#ff6b8b]"; // Burgundy red (A)
+        if (percent < 70) return "text-orange-500 dark:text-orange-400"; // Orange (B)
+        return "text-amber-500 dark:text-amber-300"; // Amber (C)
+    }
     $: advancedStats = [
         { key: "Stagger HP", val: enemyData.staggerHP },
         { key: "Stagger Rec.", val: enemyData.staggerRecovery },
@@ -137,16 +157,45 @@
     function setMaxAll() {
         level = maxLevel;
     }
+
+    async function copyStatsTable() {
+        let textData = `${tOrFallback("stats.level", "Level")}\tHP\tATK\tDEF\n`;
+        const count = maxLevel;
+        for (let i = 0; i < count; i++) {
+            const h = enemyData.hp ? enemyData.hp[i] : 0;
+            const a = enemyData.atk ? enemyData.atk[i] : 0;
+            const d = enemyData.def ? enemyData.def[i] : 0;
+            textData += `${i + 1}\t${h}\t${a}\t${d}\n`;
+        }
+        try {
+            await navigator.clipboard.writeText(textData);
+            isTableCopied = true;
+            setTimeout(() => {
+                isTableCopied = false;
+            }, 2000);
+        } catch (err) {
+            console.error("Failed to copy:", err);
+        }
+    }
+
 </script>
 
-<svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
+<svelte:window 
+    on:keydown={(e) => {
+        if (e.key === "Escape") showStatsTable = false;
+        handleKeydown(e);
+    }} 
+    on:keyup={handleKeyup} 
+/>
 
+
+{#if !enemies[id]}
+    <NotFound />
+{:else}
 <div class="min-h-screen md:px-8 md:py-3 font-sans transition-colors">
     <div class="w-full max-w-[1500px] mx-auto mb-6">
         <Button variant="roundSmall" color="white" onClick={() => history.back()}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -154,12 +203,12 @@
         
         <div class="col-span-1 xl:col-span-7 flex flex-col gap-6">
             
-            <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors">
+            <div class="bg-white dark:bg-[#2b2b2b] rounded-3xl flex flex-col overflow-hidden border border-gray-200 dark:border-[#444] transition-colors min-w-[400px]">
                 <div class="relative min-h-[210px] flex p-6 overflow-hidden bg-white dark:bg-[#2b2b2b]">
                     <div class="pointer-events-none absolute inset-0 z-0 pointer-events-none card-gradient" style="--rarity-color: {rarityColor};"></div>
 
-                    <div class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
-                        <Images {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
+                    <div class="absolute right-[-30px] md:right-[0px] top-1/2 -translate-y-1/2 w-[250px] h-[250px] z-10 pointer-events-none">
+                        <Image {id} variant="enemy-icon" className="w-full h-full object-contain drop-shadow-xl" interactive={true} alt={enemyName} />
                     </div>
 
                     <div class="absolute top-4 right-4 z-20 flex flex-col gap-2">
@@ -188,23 +237,9 @@
                             }}
                         >
                             {#if copiedImageId === "icon"}
-                                <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                ><polyline points="20 6 9 17 4 12"
-                                ></polyline></svg>
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
-                                <Icon
-                                    name="copy"
-                                    class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110"
-                                />
+                                <Icon name="copy" class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110" />
                             {/if}
                         </button>
 
@@ -220,10 +255,7 @@
                                 document.body.removeChild(link);
                             }}
                         >
-                            <Icon
-                                name="import"
-                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                            />
+                            <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                         </button>
                     </div>
 
@@ -259,8 +291,9 @@
                                 <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
                                     {tOrFallback("stats.hp", "HP")}
                                 </span>
-                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm">
-                                    {currentHp}
+                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm"
+                                    style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);">
+                                    {@html formatNumberForSelection(currentHp)}
                                 </span>
                             </div>
 
@@ -269,10 +302,11 @@
                                     <Icon name="atk" class="w-5 h-5 text-white" />
                                 </div>
                                 <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
-                                    {tOrFallback("stats.atk", "АТК")}
+                                    {tOrFallback("stats.atk", "ATK")}
                                 </span>
-                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm">
-                                    {currentAtk}
+                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm"
+                                    style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);">
+                                    {@html formatNumberForSelection(currentAtk)}
                                 </span>
                             </div>
 
@@ -281,10 +315,11 @@
                                     <Icon name="def" class="w-5 h-5 text-white" />
                                 </div>
                                 <span class="text-[15px] font-bold text-[#21272C] dark:text-[#E4E4E4]">
-                                    {tOrFallback("stats.def", "ЗАЩ")}
+                                    {tOrFallback("stats.def", "DEF")}
                                 </span>
-                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm">
-                                    {currentDef}
+                                <span class="text-3xl font-sdk font-bold text-[#21272C] dark:text-[#E4E4E4] leading-none ml-1 drop-shadow-sm"
+                                    style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);">
+                                    {@html formatNumberForSelection(currentDef)}
                                 </span>
                             </div>
                         </div>
@@ -312,22 +347,45 @@
                             </div>
                         </div>
                     </div>
-                    <input 
-                        type="range" min="1" max={maxLevel} step="1" value={targetLevel}
-                        on:input={handleInput}
-                        class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
-                    />
+                    <div class="flex items-center gap-4 w-full flex-1">
+                        <div class="flex-1 relative flex items-center md:px-4">
+                            <input 
+                                type="range" min="1" max={maxLevel} step="1" value={targetLevel}
+                                on:input={handleInput}
+                                class="touch-none w-full h-2 bg-gray-200 dark:bg-[#2C2C2C] rounded-lg appearance-none cursor-pointer accent-[#F9B90C] outline-none"
+                            />
+                        </div>
+
+                        <button
+                            on:click={() => (showStatsTable = true)}
+                            class="shrink-0 flex items-center gap-1.5 bg-gray-200 dark:bg-[#4A4A4A] hover:bg-gray-300 dark:hover:bg-[#555] px-4 py-2 rounded-md text-[13px] text-[#21272C] dark:text-gray-200 font-medium transition-colors shadow-sm cursor-pointer"
+                        >
+                            <Icon name="table" class="w-4 h-4" />
+                            <span>{tOrFallback("stats.table", "Table")}</span>
+                        </button>
+                    </div>
                 </div>
+
 
                 <div class="px-6 pb-6 bg-white dark:bg-[#383838] flex flex-col gap-3">
                     <div>
                         <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mb-2">
-                            {tOrFallback("stats.vulnerable", "Уязвимости")}
+                            {tOrFallback("stats.vulnerable", "Vulnerability")}
+                            <Tooltip
+                                text={$t("stats.enemiesResHint") ||
+                                    "Displays the coefficient of damage taken by the enemy according to the formula: Damage × Resistance (%). For example: 100% — no damage reduction, 50% — damage taken by the enemy is halved."}
+                            >
+                                <span
+                                    class="text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 mt-0.5 inline-flex items-center"
+                                >
+                                    <Icon name="info" class="m-0.5 w-4 h-4" />
+                                </span>
+                            </Tooltip>
                         </h2>
                         <div class="flex flex-wrap gap-x-8 gap-y-5">
                             {#each resistances as res}
                                 {@const resPercent = Math.round(res.val * 100)}
-                                {@const resLetter = resPercent >= 100 ? 'D' : (resPercent >= 70 ? 'C' : (resPercent >= 40 ? 'B' : 'A'))}
+                                {@const resLetter = resPercent >= 100 ? 'D' : (resPercent >= 70 ? 'C' : (resPercent > 40 ? 'B' : 'A'))}
                                 <div class="flex items-center gap-3">
                                     <Icon name={res.locKey} class="w-8 h-8 text-gray-700 dark:text-gray-300 shrink-0" />
                                     <div class="flex flex-col">
@@ -335,12 +393,14 @@
                                             {$t(`resitances.${res.locKey}`) || res.key}
                                         </span>
                                         <div class="flex items-baseline gap-1.5 mt-1.5">
-                                            <span class="text-[16px] font-black {res.val < 1 ? 'text-green-500' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
+                                            <span class="text-[16px] font-black {getResColorClass(res.val)} leading-none">
                                                 {resLetter}
                                             </span>
-                                            <span class="text-[16px] font-bold {res.val < 1 ? 'text-green-500' : (res.val > 1 ? 'text-red-500' : 'text-[#21272C] dark:text-[#FDFDFD]')} leading-none">
-                                                {resPercent}%
-                                            </span>
+                                            <Tooltip text={`${$t('stats.resistance')}: 100% - ${resPercent}% = ${100 - resPercent}%`}>
+                                                <span class="text-[16px] font-bold {getResColorClass(res.val)} leading-none">
+                                                    {resPercent}%
+                                                </span>
+                                            </Tooltip>
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +411,7 @@
                     {#if enemyAbilities.length > 0}
                         <div>
                             <h2 class="text-xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk pb-2 mt-2">
-                                {tOrFallback("stats.abilities", "Умения")}
+                                {tOrFallback("stats.abilities", "Abilities")}
                             </h2>
                             <ul class="flex flex-col gap-2">
                                 {#each enemyAbilities as ability}
@@ -376,19 +436,17 @@
             <div class="bg-white dark:bg-[#2b2b2b] p-6 rounded-3xl border border-gray-200 dark:border-[#444] flex flex-col gap-6 transition-colors">
                 <div>
                     <h2 class="text-2xl font-bold text-[#21272C] dark:text-[#FDFDFD] font-sdk border-b border-gray-100 dark:border-[#444] pb-3 mb-4">
-                        {tOrFallback("stats.properties", "Характеристики")}
+                        {tOrFallback("stats.properties", "Properties")}
                     </h2>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6">
                         {#each advancedStats as stat}
                             <div class="flex flex-col">
                                 <span class="text-xs text-gray-500 dark:text-[#A0A0A0] font-bold uppercase">{stat.key}</span>
-                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD]">{stat.val}</span>
+                                <span class="text-lg font-bold text-[#21272C] dark:text-[#FDFDFD] truncate">{stat.val}</span>
                             </div>
                         {/each}
                     </div>
                 </div>
-
-                
             </div>
         </div>
 
@@ -404,7 +462,7 @@
                 <div class="flex flex-wrap gap-2 pt-1">
                     {#if enemyData.drop && enemyData.drop.length > 0}
                         {#each enemyData.drop as dropId}
-                            <ItemCard item={{id: dropId}} customPath="itemNames" />
+                            <ItemCard item={{id: dropId}} hideAmount=true customPath="itemNames" />
                         {/each}
                     {:else}
                         <div class="w-full text-center text-gray-500 dark:text-[#B7B6B3] text-sm py-4 italic">
@@ -417,6 +475,65 @@
         </div>
     </div>
 </div>
+
+<TableModal
+    bind:isOpen={showStatsTable}
+    title={tOrFallback("stats.attributesTable", "Attributes Table")}
+    isTableCopied={isTableCopied}
+    maxWidthClass="max-w-sm"
+    on:copy={copyStatsTable}
+>
+    <table class="w-full text-center border-collapse">
+        <thead
+            class="bg-gray-50 dark:bg-[#383838] font-bold sticky top-0 shadow-sm text-sm text-gray-600 dark:text-[#E4E4E4]"
+        >
+            <tr>
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.level", "Уровень")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.hp", "HP")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.atk", "ATK")}</th
+                >
+                <th class="py-3 px-4 border-b border-gray-200 dark:border-[#444]"
+                    >{tOrFallback("stats.def", "DEF")}</th
+                >
+            </tr>
+        </thead>
+        <tbody
+            class="text-sm font-nums text-gray-800 dark:text-gray-300"
+        >
+            {#each Array(maxLevel) as _, i}
+                <tr
+                    class="hover:bg-gray-100 dark:hover:bg-[#3d3d3d] transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50"
+                >
+                    <td
+                        class="py-2 px-4 text-gray-500 dark:text-gray-400"
+                        >{i + 1}</td
+                    >
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                    >
+                        {@html formatNumberForSelection(enemyData.hp ? enemyData.hp[i] : 0)}
+                    </td>
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                    >
+                        {@html formatNumberForSelection(enemyData.atk ? enemyData.atk[i] : 0)}
+                    </td>
+                    <td
+                        class="py-2 px-4 font-bold text-[#21272C] dark:text-white"
+                    >
+                        {@html formatNumberForSelection(enemyData.def ? enemyData.def[i] : 0)}
+                    </td>
+                </tr>
+            {/each}
+        </tbody>
+    </table>
+</TableModal>
+{/if}
 <style>
     .card-gradient {
         background: linear-gradient(

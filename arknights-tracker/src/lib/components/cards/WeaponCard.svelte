@@ -1,0 +1,349 @@
+<script>
+    import { t } from "$lib/i18n.js";
+    import { goto } from "$app/navigation";
+    import { pullData } from "$lib/stores/pulls.js";
+    import { manualPotentials } from "$lib/stores/potentials.js";
+    import { weaponEssences } from "$lib/stores/weaponEssences.js";
+    import { accountStore } from "$lib/stores/accounts.js";
+    import { disableDarkening } from "$lib/stores/settings.js";
+    import { changelogData } from "$lib/data/versions.js";
+    import { getRarityColor } from "$lib/utils/colorUtils.js";
+
+    import Image from "$lib/components/Image.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
+    import Icon from "$lib/components/Icon.svelte";
+    import PotentialIcon from "$lib/components/operators/PotentialIcon.svelte";
+
+    export let weapon = {};
+    export let variant = "default"; // "default" | "small"
+    export let className = "";
+    export let isNew = undefined;
+    export let hideName = false;
+    export let hidePot = true;
+    export let hideDarkness = false;
+    export let asLink = true;
+    export let isEquipment = false;
+    export let isEnemy = false;
+    export let hideRarity = false;
+
+    $: computedIsNew =
+        isNew !== undefined
+            ? isNew
+            : (() => {
+                  if (!weapon || !weapon.id) return false;
+                  const latest = [...changelogData].sort((a, b) =>
+                      b.version.localeCompare(a.version, undefined, {
+                          numeric: true,
+                      }),
+                  )[0];
+                  if (isEquipment) {
+                      return latest?.equipment?.includes(weapon.id) || false;
+                  }
+                  if (isEnemy) {
+                      return latest?.enemies?.includes(weapon.id) || false;
+                  } else {
+                      return latest?.weapons?.includes(weapon.id) || false;
+                  }
+              })();
+
+    $: localeCategory = isEnemy
+        ? "enemies"
+        : isEquipment
+          ? "equipment"
+          : "weaponsList";
+    $: itemUrl = isEnemy
+        ? `/enemies/${weapon.id}`
+        : isEquipment
+          ? `/equipment/${weapon.id}`
+          : `/weapons/${weapon.id}`;
+    $: imageVariant = isEnemy
+        ? "enemy-icon"
+        : isEquipment
+          ? "equipment"
+          : "weapon-icon";
+
+    $: safeWeaponType = weapon.type || weapon.weapon;
+    $: equipType =
+        weapon.partType === 0
+            ? "body"
+            : weapon.partType === 1
+              ? "hand"
+              : weapon.partType === 2
+                ? "edc"
+                : null;
+    $: topLeftIcon = isEquipment ? equipType : safeWeaponType;
+    $: topLeftTooltip = isEquipment
+        ? $t(`equipmentTypes.${equipType}`) || equipType
+        : $t(`weapons.${safeWeaponType}`) || safeWeaponType;
+
+    $: extraAttrs = (() => {
+        if (!isEquipment || !weapon.displayAttr) return [];
+        return weapon.displayAttr.slice(1).map((a) => a.attrType);
+    })();
+
+    $: displayedAttrs = extraAttrs.slice(0, 3);
+    $: remainingAttrsCount = extraAttrs.length - 3;
+
+    let isHovered = false;
+
+
+    $: safeRarity = weapon?.rarity || 1;
+    $: rarityColor = getRarityColor(safeRarity);
+    $: nameKey = weapon.id || weapon.name?.toLowerCase().replace(/\s+/g, "");
+
+    $: rootClass =
+        variant === "small"
+            ? `relative flex flex-col cursor-pointer select-none group flex-shrink-0 ${className || "w-[80px] h-[80px]"}`
+            : `relative flex flex-col cursor-pointer select-none group flex-shrink-0 ${className || "w-[110px] h-[110px]"}`;
+
+    $: gachaPulls = (() => {
+        if (isEquipment || !$pullData) return 0;
+
+        let count = 0;
+        Object.entries($pullData).forEach(([_, banner]) => {
+            const pulls = banner?.pulls || [];
+            const matches = pulls.filter(
+                (p) =>
+                    p.id === weapon.id ||
+                    p.name === weapon.id ||
+                    p.itemId === weapon.id ||
+                    (p.name &&
+                        weapon.name &&
+                        p.name.toLowerCase() === weapon.name.toLowerCase()),
+            );
+            count += matches.length;
+        });
+        return count;
+    })();
+
+    const { selectedId } = accountStore;
+    $: currentAccountId = $selectedId;
+    $: basePot = gachaPulls > 0 ? gachaPulls - 1 : -1;
+
+    $: accountPots = $manualPotentials[currentAccountId] || {};
+    $: currentPot =
+        accountPots[weapon.id] !== undefined ? accountPots[weapon.id] : basePot;
+
+    $: hasWeapon = currentPot >= 0 || hideDarkness == true;
+
+    $: accountEssences = $weaponEssences[currentAccountId] || {};
+    $: currentEssence = accountEssences[weapon.id] || 0;
+
+    function getEssenceColor(level) {
+        if (level === 1) return "#EF4444";
+        if (level === 2) return "#F97316";
+        if (level === 3) return "#22C55E";
+        return "";
+    }
+
+    $: constCount = hasWeapon ? currentPot : 0;
+    $: isMaxPot = constCount >= 5;
+    $: isAccountEmpty = (() => {
+        if (!$pullData) return true;
+        for (const key in $pullData) {
+            if ($pullData[key]?.pulls?.length > 0) {
+                return false;
+            }
+        }
+        return true;
+    })();
+    $: shouldDarken =
+        !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
+
+    function tooltipOnlyOnOverflow(node, text) {
+        const checkOverflow = () => {
+            requestAnimationFrame(() => {
+                if (
+                    node.scrollHeight > node.clientHeight ||
+                    node.scrollWidth > node.clientWidth
+                ) {
+                    node.parentElement.style.pointerEvents = "auto";
+                } else {
+                    node.parentElement.style.pointerEvents = "none";
+                }
+            });
+        };
+
+        const observer = new ResizeObserver(checkOverflow);
+        observer.observe(node);
+        checkOverflow();
+
+        return {
+            update() {
+                checkOverflow();
+            },
+            destroy() {
+                observer.disconnect();
+            },
+        };
+    }
+</script>
+
+{#if weapon && weapon.id}
+    <svelte:element
+        this={asLink ? "a" : "div"}
+        href={asLink ? itemUrl : undefined}
+        role={asLink ? "link" : "presentation"}
+        class="{rootClass} no-underline focus:outline-none focus:ring-2 focus:ring-[#F9B90C] rounded-[6px]"
+        on:mouseenter={() => (isHovered = true)}
+        on:mouseleave={() => (isHovered = false)}
+    >
+        <div
+            class="absolute inset-0 border-[2px] border-white rounded-[6px] z-30 pointer-events-none transition-opacity duration-200 opacity-0 group-hover:opacity-100"
+        ></div>
+
+        <div
+            class="relative w-full h-full rounded-[6px] overflow-hidden bg-white dark:bg-[#2a2a2a]"
+        >
+            <div
+                class="
+                absolute inset-0 bg-gradient-to-br from-[#4F4F4F] to-[#323232] dark:from-[#3a3a3a] dark:to-[#1a1a1a] transition-all duration-200
+                group-hover:from-[#5E5E5E] group-hover:to-[#3E3E3E]
+                dark:group-hover:from-[#404040] dark:group-hover:to-[#2C2C2C]
+                "
+            ></div>
+
+            <div
+                class="absolute inset-0 flex items-center justify-center z-0 {hideRarity
+                    ? ''
+                    : 'bottom-[6px]'}"
+            >
+                <Image
+                    id={weapon.id}
+                    interactive={true}
+                    variant={imageVariant}
+                    className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300 {shouldDarken
+                        ? 'brightness-50 grayscale-[50%]'
+                        : ''}"
+                    alt={weapon.name}
+                />
+            </div>
+
+            {#if topLeftIcon && variant !== "small"}
+                <div
+                    class="absolute top-1 {isEquipment
+                        ? 'right-1'
+                        : 'left-1'} z-20 pointer-events-auto filter flex flex-col items-center gap-0.5"
+                >
+                    <Tooltip text={topLeftTooltip}>
+                        <div
+                            class="bg-[#1A1A1A] rounded-[4px] flex items-center justify-center cursor-pointer {variant ===
+                            'small'
+                                ? 'w-4 h-4 p-0.5'
+                                : 'w-5 h-5 p-0.5'} shadow-sm"
+                        >
+                            <Icon
+                                name={topLeftIcon}
+                                class="w-full h-full text-white/90"
+                            />
+                        </div>
+                    </Tooltip>
+
+                    {#if isEquipment && weapon.level !== undefined}
+                        <span
+                            class="text-[10px] font-black text-white leading-none tracking-tight font-nums mt-1"
+                            style="text-shadow: 1px 1px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 0 2px 2px rgba(0,0,0,0.8);"
+                        >
+                            {weapon.level}
+                        </span>
+                    {/if}
+
+                    {#if !isEquipment && !isEnemy && currentEssence > 0}
+                        <Tooltip text={currentEssence === 3 ? `${$t("stats.essence") || "Essence"} (3/3)` : currentEssence === 2 ? `${$t("stats.essence") || "Essence"} (2/3)` : `${$t("stats.essence") || "Essence"} (1/3)`}>
+                            <Icon
+                                name="essence"
+                                class="w-5 h-5 drop-shadow-sm cursor-pointer mt-1 filter"
+                                style="color: {getEssenceColor(currentEssence)}"
+                            />
+                        </Tooltip>
+                    {/if}
+                </div>
+            {/if}
+
+            {#if isEquipment && extraAttrs.length > 0 && variant !== "small"}
+                <div
+                    class="absolute top-1 left-1 z-20 flex flex-col gap-1 pointer-events-auto filter"
+                >
+                    {#each extraAttrs as attr}
+                        <Tooltip text={$t(`equipSkills.${attr}`) || attr}>
+                            <div
+                                class="bg-[#1A1A1A]/95 rounded-[4px] flex items-center justify-center shadow-inner cursor-pointer w-4 h-4 p-0.5"
+                            >
+                                <Icon
+                                    name={attr.toLowerCase() === "maxhp"
+                                        ? "hp"
+                                        : attr.toLowerCase()}
+                                    class="w-full h-full text-white/90"
+                                />
+                            </div>
+                        </Tooltip>
+                    {/each}
+                </div>
+            {/if}
+
+            {#if hasWeapon && variant !== "small" && hidePot && !isEquipment}
+                <div
+                    class="absolute z-20 right-1 top-1 pointer-events-auto blur-[0.2px] shadow-black"
+                >
+                    <Tooltip text={`P${currentPot}`} class="">
+                        <PotentialIcon pot={currentPot !== undefined ? currentPot : 0} size={30} />
+                    </Tooltip>
+                </div>
+            {/if}
+
+            {#if !hideRarity}
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[6px] z-20"
+                    style:background-color={rarityColor}
+                >
+                    <div
+                        class="absolute bottom-full left-0 w-full h-[30px] pointer-events-none opacity-60"
+                        style="--dot-color: {rarityColor}; background-image: radial-gradient(var(--dot-color) 30%, transparent 35%); background-size: 4px 4px; mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);"
+                    ></div>
+                </div>
+            {/if}
+
+            {#if !hideName}
+                <div
+                    class="absolute bottom-[8px] left-0 right-0 z-30 flex justify-center px-0.5"
+                >
+                    <span
+                        class="text-white text-[11px] mb-0.5 font-bold text-center leading-tight line-clamp-2 w-full block cursor-pointer"
+                        style="text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 1px 1px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,0.8);"
+                    >
+                        {$t(`${localeCategory}.${nameKey}`) || weapon.name}
+                    </span>
+                </div>
+            {/if}
+
+            {#if computedIsNew && variant !== "small"}
+                <div
+                    class="absolute right-0 mr-[-3px] top-[42px] h-[16px] flex items-stretch z-30 pointer-events-none"
+                >
+                    <div
+                        class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
+                    ></div>
+                    <div
+                        class="w-[3px] mr-[1.5px] bg-[#FFC107]/85 -skew-x-[24deg]"
+                    ></div>
+                    <div
+                        class="relative bg-[#FFC107]/85 pl-0.5 pr-1 -skew-x-[24deg] flex items-center justify-center"
+                    >
+                        <div
+                            class="absolute left-[-4px] w-[8px] top-0 bottom-0"
+                        ></div>
+                        <span
+                            class="relative z-10 text-[#111111] font-black text-[9px] -skew-x-[-24deg] tracking-widest leading-none uppercase"
+                            >NEW</span
+                        >
+                    </div>
+                </div>
+            {/if}
+            {#if !hideRarity}
+                <div
+                    class="absolute bottom-0 left-0 w-full h-[6px] z-10"
+                    style:background-color={rarityColor}
+                ></div>{/if}
+        </div>
+    </svelte:element>
+{/if}

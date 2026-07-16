@@ -4,12 +4,14 @@
     import { currentLocale } from "$lib/stores/locale";
     import { equipment } from "$lib/data/items/equipment.js";
 
-    import Icon from "$lib/components/Icons.svelte";
+    import Icon from "$lib/components/Icon.svelte";
     import Tooltip from "$lib/components/Tooltip.svelte";
-    import ItemCard from "$lib/components/ItemCard.svelte";
+    import ItemCard from "$lib/components/cards/ItemCard.svelte";
     import Button from "$lib/components/Button.svelte";
-    import Images from "$lib/components/Images.svelte";
-    import WeaponCard from "$lib/components/WeaponCard.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+    import NotFound from "$lib/components/NotFound.svelte";
+    import { parseRichText, hyperlinkAction } from "$lib/utils/richText.js";
 
     function tOrFallback(key, fallback) {
         const translated = $t(key);
@@ -90,38 +92,6 @@
     }
     $: rarityColor = getRarityColors(rarity);
 
-    function parseRichText(text) {
-        if (!text) return "";
-
-        const styles = {
-            "ba.natur": "text-[#4ADE80] font-bold", // Природный
-            "ba.fire": "text-[#F87171] font-bold", // Огненный
-            "ba.cryst": "text-[#67E8F9] font-bold", // Кристаллический
-            "ba.pulse": "text-[#C084FC] font-bold", // Электрический
-            "ba.phy": "text-[#A3A3A3] font-bold", // Физический
-            "ba.poise": "text-[#FBBF24] font-bold", // Ошеломление
-            "ba.vup": "text-[#38BDF8] font-bold", // Повышение
-            "ba.key": "text-[#E3BC55] font-bold", // Ключевые термины
-            "ba.conduct": "text-[#C084FC] font-bold", // Электризация
-            "ba.spelldmg": "text-[#E3BC55] font-bold", // Урон от искусств
-        };
-
-        return text.replace(
-            /<([@#])([^>]+)>([\s\S]*?)<\/>/g,
-            (match, type, tag, content) => {
-                if (tag === "profile.key") return content;
-
-                let styleClass = styles[tag] || "text-[#E3BC55] font-bold";
-
-                if (type === "#") {
-                    styleClass +=
-                        " underline decoration-dashed decoration-current underline-offset-4";
-                }
-
-                return `<span class="${styleClass}">${content}</span>`;
-            },
-        );
-    }
     $: currentBlackboard = equipData.blackboard || {};
     $: neededMaterials = (equipData.materials || []).map((m) => ({
         id: m.name,
@@ -135,7 +105,7 @@
 
         return text.replace(/\{([^}]+)\}/g, (match, content) => {
             let [expr, format] = content.split(":");
-            let mathStr = expr;
+            let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
 
             for (const key in bb) {
                 const regex = new RegExp(`\\b${key}\\b`, "g");
@@ -179,6 +149,7 @@
                     tOrFallback(`equipSkills.${attr.attrType}`, attr.attrType),
                 ];
                 const isDef = attr.attrType.toLowerCase() === "def";
+                const isAllDamage = attr.attrType.toLowerCase() === "alldamagetakenscalar";
 
                 tiers.forEach((valIndex) => {
                     let val = attr.values[valIndex];
@@ -187,7 +158,9 @@
                     } else if (val === 0 || !val) {
                         row.push("-");
                     } else if (Math.abs(val) > 0 && Math.abs(val) < 1) {
-                        row.push(`${val * 100}%`);
+                        const displayVal = isAllDamage ? (1 - val) : val;
+                        const pct = Math.round(displayVal * 1000) / 10;
+                        row.push(`${pct}%`);
                     } else {
                         row.push(`${val}`);
                     }
@@ -207,6 +180,61 @@
         }
     }
 
+    $: usefulnessMap = (() => {
+        if (equipData.rarity !== 5) return {};
+        const slotItems = Object.entries(equipment)
+            .filter(([_, data]) => data.rarity === 5 && data.partType === equipData.partType)
+            .map(([eId, data]) => ({ id: eId, ...data }));
+
+        const usefulness = {};
+        for (const food of slotItems) {
+            const foodAttrs = food.displayAttr || [];
+            const foodNonDefAttrs = foodAttrs.filter((a) => a.attrType.toLowerCase() !== "def");
+            if (foodNonDefAttrs.length === 0) {
+                usefulness[food.id] = 0;
+                continue;
+            }
+            const matchAttr = foodNonDefAttrs[0];
+            const attrType = matchAttr.attrType;
+            const isInverted = attrType.toLowerCase().includes("damagetakenscalar");
+            const foodValues = matchAttr.values.filter((v) => v !== undefined && v !== null);
+            const foodBest = foodValues.length > 0
+                ? (isInverted ? Math.min(...foodValues.map(Math.abs)) : Math.max(...foodValues.map(Math.abs)))
+                : 0;
+
+            let matchesCount = 0;
+            for (const target of slotItems) {
+                if (target.id === food.id) continue;
+                const targetAttrs = target.displayAttr || [];
+                const targetAttr = targetAttrs.find((a) => a.attrType === attrType);
+                if (!targetAttr) continue;
+                const targetValues = targetAttr.values.filter((v) => v !== undefined && v !== null);
+                const targetBest = targetValues.length > 0
+                    ? (isInverted ? Math.min(...targetValues.map(Math.abs)) : Math.max(...targetValues.map(Math.abs)))
+                    : 0;
+
+                const isBetter = isInverted ? foodBest < targetBest : foodBest > targetBest;
+                if (isBetter) {
+                    matchesCount++;
+                }
+            }
+            usefulness[food.id] = matchesCount;
+        }
+        return usefulness;
+    })();
+
+    function getUsefulnessClass(val) {
+        if (val < 10) {
+            return "text-yellow-600 bg-yellow-500/10 dark:text-yellow-200 dark:bg-yellow-400/10";
+        } else if (val < 20) {
+            return "text-yellow-700 bg-yellow-500/10 dark:text-yellow-300 dark:bg-yellow-400/10";
+        } else if (val < 30) {
+            return "text-yellow-800 bg-yellow-500/15 dark:text-yellow-400 dark:bg-yellow-400/15";
+        } else {
+            return "text-yellow-900 bg-yellow-500/20 dark:text-yellow-500 dark:bg-yellow-400/20";
+        }
+    }
+
     $: artificingMatches = (() => {
         if (equipData.rarity !== 5) return [];
         if (!equipData.displayAttr) return [];
@@ -218,12 +246,15 @@
             (a) => a.attrType.toLowerCase() !== "def",
         );
         return targetAttrs.map((targetAttr) => {
+            const isInverted = targetAttr.attrType.toLowerCase().includes("damagetakenscalar");
             const targetValues = targetAttr.values.filter(
                 (v) => v !== undefined && v !== null,
             );
-            const targetMax =
+            const targetBest =
                 targetValues.length > 0
-                    ? Math.max(...targetValues.map(Math.abs))
+                    ? (isInverted
+                        ? Math.min(...targetValues.map(Math.abs))
+                        : Math.max(...targetValues.map(Math.abs)))
                     : 0;
             const matchesMapped = pool
                 .filter((food) => {
@@ -239,12 +270,15 @@
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
-                    const foodMax =
+                    const foodBest =
                         foodValues.length > 0
-                            ? Math.max(...foodValues.map(Math.abs))
+                            ? (isInverted
+                                ? Math.min(...foodValues.map(Math.abs))
+                                : Math.max(...foodValues.map(Math.abs)))
                             : 0;
 
-                    if (foodMax < targetMax) return false;
+                    const isWorse = isInverted ? foodBest > targetBest : foodBest < targetBest;
+                    if (isWorse) return false;
 
                     return true;
                 })
@@ -257,12 +291,16 @@
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
-                    const foodMax =
+                    const foodBest =
                         foodValues.length > 0
-                            ? Math.max(...foodValues.map(Math.abs))
+                            ? (isInverted
+                                ? Math.min(...foodValues.map(Math.abs))
+                                : Math.max(...foodValues.map(Math.abs)))
                             : 0;
 
-                    const isHigherStat = foodMax > targetMax;
+                    const isHigherStat = isInverted
+                        ? foodBest < targetBest
+                        : foodBest > targetBest;
                     const foodNonDefAttrs = foodAttrs.filter(
                         (a) => a.attrType.toLowerCase() !== "def",
                     );
@@ -272,29 +310,36 @@
                     const isGoodMatch = isHigherStat && isFirstStat;
                     const craftCost = (food.materials && food.materials.length > 0) ? food.materials[0].amount : Infinity;
 
-                    return { ...food, isGoodMatch, foodMax, isHigherStat, craftCost };
+                    return { ...food, isGoodMatch, foodMax: foodBest, isHigherStat, craftCost };
                 });
 
-            const absoluteMaxStat =
+            const absoluteBestStat =
                 matchesMapped.length > 0
-                    ? Math.max(...matchesMapped.map((m) => m.foodMax))
+                    ? (isInverted
+                        ? Math.min(...matchesMapped.map((m) => m.foodMax))
+                        : Math.max(...matchesMapped.map((m) => m.foodMax)))
                     : 0;
-            const matchesAtAbsoluteMax = matchesMapped.filter(m => m.foodMax === absoluteMaxStat);
-            const minCraftCostAtMaxStat = matchesAtAbsoluteMax.length > 0 
-                ? Math.min(...matchesAtAbsoluteMax.map(m => m.craftCost))
+            const matchesAtAbsoluteBest = matchesMapped.filter(m => m.foodMax === absoluteBestStat);
+            const minCraftCostAtBestStat = matchesAtAbsoluteBest.length > 0 
+                ? Math.min(...matchesAtAbsoluteBest.map(m => m.craftCost))
                 : 0;
 
             const matches = matchesMapped
                 .map((match) => {
+                    const isBetterThanTarget = isInverted
+                        ? match.foodMax < targetBest
+                        : match.foodMax > targetBest;
                     const isRecommended =
-                        match.foodMax > targetMax &&
-                        match.foodMax === absoluteMaxStat &&
-                        match.craftCost === minCraftCostAtMaxStat;
+                        isBetterThanTarget &&
+                        match.foodMax === absoluteBestStat &&
+                        match.craftCost === minCraftCostAtBestStat;
 
                     return { ...match, isRecommended };
                 })
                 .sort((a, b) => {
-                    if (b.foodMax !== a.foodMax) return b.foodMax - a.foodMax;
+                    if (b.foodMax !== a.foodMax) {
+                        return isInverted ? a.foodMax - b.foodMax : b.foodMax - a.foodMax;
+                    }
                     if (a.isRecommended && !b.isRecommended) return -1;
                     if (!a.isRecommended && b.isRecommended) return 1;
                     if (a.isGoodMatch && !b.isGoodMatch) return -1;
@@ -311,6 +356,9 @@
     })();
 </script>
 
+{#if !equipment[id]}
+    <NotFound />
+{:else}
 <div class="min-h-screen md:px-8 md:py-3 font-sans transition-colors">
     <div class="w-full max-w-[1500px] mx-auto mb-6">
         <Button
@@ -318,16 +366,7 @@
             color="white"
             onClick={() => history.back()}
         >
-            <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-            >
-                <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <Icon name="arrowLeft" class="w-5 h-5" />
         </Button>
     </div>
 
@@ -347,9 +386,9 @@
                     ></div>
 
                     <div
-                        class="absolute right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
+                        class="absolute right-[-25px] md:right-[0px] top-1/2 -translate-y-1/2 w-[240px] h-[240px] md:w-[280px] md:h-[280px] z-10 pointer-events-none"
                     >
-                        <Images
+                        <Image
                             {id}
                             variant="equipment"
                             interactive={true}
@@ -386,24 +425,9 @@
                             }}
                         >
                             {#if copiedImageId === "icon"}
-                                <svg
-                                    width="14"
-                                    height="14"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn text-[#FACC15] group-hover/copy:text-black"
-                                    ><polyline points="20 6 9 17 4 12"
-                                    ></polyline></svg
-                                >
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
-                                <Icon
-                                    name="copy"
-                                    class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110"
-                                />
+                                <Icon name="copy" class="w-3.5 h-3.5 transition-transform group-hover/copy:scale-110" />
                             {/if}
                         </button>
 
@@ -419,10 +443,7 @@
                                 document.body.removeChild(link);
                             }}
                         >
-                            <Icon
-                                name="import"
-                                class="w-4 h-4 transition-transform group-hover/down:scale-110"
-                            />
+                            <Icon name="import" class="w-4 h-4 transition-transform group-hover/down:scale-110" />
                         </button>
                     </div>
 
@@ -437,25 +458,14 @@
 
                         <div class="flex items-center gap-3 mb-6">
                             <Tooltip text={partTypeLabel}>
-                                <div
-                                    class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm"
-                                >
-                                    <Icon
-                                        name={partTypeStr}
-                                        class="w-7 h-7 text-white"
-                                    />
+                                <div class="w-9 h-9 rounded bg-[#21272C] flex items-center justify-center shadow-sm">
+                                    <Icon name={partTypeStr} class="w-7 h-7 text-white" />
                                 </div>
                             </Tooltip>
-                            <div
-                                class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"
-                            ></div>
+                            <div class="w-[2px] h-5 bg-gray-300 dark:bg-[#555] rounded"></div>
                             <div class="flex -space-x-1">
                                 {#each Array(rarity || 1) as _}
-                                    <Icon
-                                        name="strokeStar"
-                                        class="w-9 h-9"
-                                        style="color: {rarityColor}; stroke-opacity: 100%;"
-                                    />
+                                    <Icon name="strokeStar" class="w-9 h-9" style="color: {rarityColor}; stroke-opacity: 100%;" />
                                 {/each}
                             </div>
                         </div>
@@ -612,19 +622,26 @@
                                             {#each tiers as valIndex}
                                                 {@const val =
                                                     attr.values[valIndex]}
+                                                {@const isAllDamage =
+                                                    attr.attrType.toLowerCase() ===
+                                                    "alldamagetakenscalar"}
+                                                {@const displayVal =
+                                                    isAllDamage && val !== undefined
+                                                        ? 1 - val
+                                                        : val}
                                                 <td
                                                     class="py-2 px-1 text-center font-nums text-[#21272C] dark:text-white"
                                                 >
                                                     {#if isDef && valIndex > 0}
                                                         -
-                                                    {:else if val === 0 || !val}
+                                                    {:else if displayVal === 0 || !displayVal}
                                                         -
-                                                    {:else if Math.abs(val) > 0 && Math.abs(val) < 1}
+                                                    {:else if Math.abs(displayVal) > 0 && Math.abs(displayVal) < 1}
                                                         {Math.round(
-                                                            val * 1000,
+                                                            displayVal * 1000,
                                                         ) / 10}%
                                                     {:else}
-                                                        {Math.round(val * 10) /
+                                                        {Math.round(displayVal * 10) /
                                                             10}
                                                     {/if}
                                                 </td>
@@ -654,20 +671,7 @@
                             class="p-0.5 rounded-md bg-white dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 text-gray-600 dark:text-white transition-colors flex items-center gap-2 px-3 text-sm font-bold border border-gray-200 dark:border-transparent shadow-sm dark:shadow-none cursor-pointer"
                         >
                             {#if isTableCopied}
-                                <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="#FACC15"
-                                    stroke-width="3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="animate-fadeIn"
-                                >
-                                    <polyline points="20 6 9 17 4 12"
-                                    ></polyline>
-                                </svg>
+                                <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
                             {:else}
                                 <Icon name="copy" class="w-4 h-4" />
                             {/if}
@@ -678,6 +682,7 @@
                     {#if equipLocale.setBonus && pack !== "none"}
                         <div
                             class="pl-1 text-gray-700 dark:text-[#E0E0E0] whitespace-pre-wrap text-[14px] leading-relaxed"
+                            use:hyperlinkAction
                         >
                             {@html parseRichText(
                                 interpolateBlackboard(
@@ -753,18 +758,31 @@
                                                   ? 'bg-[#F9B90C]/5 border-[#F9B90C]/30 hover:bg-[#F9B90C]/15 hover:border-[#F9B90C]/50 dark:bg-[#F9B90C]/10 dark:border-[#F9B90C]/30 dark:hover:bg-[#F9B90C]/20 dark:hover:border-[#F9B90C]/50'
                                                   : 'bg-white border-gray-200 hover:bg-gray-50 hover:border-gray-300 dark:bg-[#333]/30 dark:border-[#444] dark:hover:bg-[#333]/60 dark:hover:border-[#666]'}"
                                         >
-                                            <WeaponCard
-                                                weapon={match}
-                                                variant="small"
-                                                className="w-[42px] h-[42px]"
-                                                isEquipment={true}
-                                                hidePot={true}
-                                                hideName={true}
-                                                hideRarity={true}
-                                                disableHover={true}
-                                            />
+                                            <div class="relative w-[42px] h-[42px] shrink-0">
+                                                <WeaponCard
+                                                    weapon={match}
+                                                    variant="small"
+                                                    className="w-full h-full"
+                                                    isEquipment={true}
+                                                    hidePot={true}
+                                                    hideName={true}
+                                                    hideRarity={true}
+                                                    disableHover={true}
+                                                />
+                                                {#if match.id === id}
+                                                    <span
+                                                        class="absolute bottom-0 left-0 right-0 py-[1.5px] bg-[#26BAFB]/60 dark:bg-[#26BAFB]/45 text-white text-[8px] font-bold uppercase leading-none text-center pointer-events-none rounded-b-[6px] shadow-sm z-30"
+                                                    >
+                                                        {tOrFallback(
+                                                            "common.same",
+                                                            "Same",
+                                                        )}
+                                                    </span>
+                                                {/if}
 
-                                            <div class="flex flex-col gap-0.5 flex-1 min-w-0 pr-2">
+                                            </div>
+
+                                            <div class="flex flex-col flex-1 min-w-0 pr-2">
                                                 
                                                 <span
                                                     class="text-[13px] font-medium text-gray-800 dark:text-gray-200 leading-tight block whitespace-normal break-words"
@@ -810,35 +828,34 @@
                                                                 )}
                                                             </span>
                                                         {/if}
-
-                                                        {#if match.id === id}
-                                                            <span
-                                                                class="px-1.5 py-[2px] rounded bg-[#26BAFB]/10 border border-[#26BAFB]/20 text-[#26BAFB] text-[9px] font-bold uppercase leading-none shadow-sm"
-                                                            >
-                                                                {tOrFallback(
-                                                                    "common.same",
-                                                                    "Same",
-                                                                )}
-                                                            </span>
-                                                        {/if}
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            {#if match.craftCost !== Infinity && match.materials[0]}
-                                                <div class="absolute right-1 bottom-1 flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
-                                                    <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
-                                                        <Images
-                                                            id={match.materials[0].name}
-                                                            variant="item"
-                                                            className="max-w-full max-h-full object-contain drop-shadow-sm"
-                                                        />
+                                            <div class="absolute right-1 bottom-1 flex flex-col items-end gap-1">
+                                                {#if usefulnessMap[match.id] !== undefined}
+                                                    <Tooltip text={tOrFallback("stats.usefulnessTooltip", "Number of items of this type for which this gear is a Good Match")}>
+                                                        <span class="text-[10px] font-bold px-1 py-[1.5px] rounded-md select-none leading-none {getUsefulnessClass(usefulnessMap[match.id])}">
+                                                            {usefulnessMap[match.id]}
+                                                        </span>
+                                                    </Tooltip>
+                                                {/if}
+
+                                                {#if match.craftCost !== Infinity && match.materials[0]}
+                                                    <div class="flex items-center gap-0.5 bg-white/50 dark:bg-black/30 border border-black/5 dark:border-white/5 px-0.5 py-0.5 rounded-md pointer-events-none shadow-sm">
+                                                        <div class="w-3.5 h-3.5 flex items-center justify-center shrink-0">
+                                                            <Image
+                                                                id={match.materials[0].name}
+                                                                variant="item"
+                                                                className="max-w-full max-h-full object-contain drop-shadow-sm"
+                                                            />
+                                                        </div>
+                                                        <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px">
+                                                            {match.craftCost}
+                                                        </span>
                                                     </div>
-                                                    <span class="text-[11px] font-nums font-bold text-gray-600 dark:text-gray-300 leading-none mt-px">
-                                                        {match.craftCost}
-                                                    </span>
-                                                </div>
-                                            {/if}
+                                                {/if}
+                                            </div>
                                         </div>
                                     {/each}
 
@@ -872,7 +889,7 @@
                 <div class="flex flex-wrap gap-4 pt-1">
                     {#if neededMaterials.length > 0}
                         {#each neededMaterials as mat (mat.id)}
-                            <ItemCard item={mat} amount={mat.amount} />
+                            <ItemCard item={mat} amount={mat.amount} linkToRecipe={true} />
                         {/each}
                     {:else}
                         <div
@@ -889,6 +906,8 @@
         </div>
     </div>
 </div>
+
+{/if}
 
 <style>
     .card-gradient {

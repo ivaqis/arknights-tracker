@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Recinzione ad alta tensione",
+    "desc": "È impossibile passare attraverso le recinzioni ad alta tensione mentre sono attive. Segui il cavo, trova l'interruttore e disattiva la recinzione per passare in tutta sicurezza."
+  },
+  "adv.eswitch": {
+    "name": "Dispositivo a reazione",
+    "desc": "Se attaccati o colpiti da un'esplosione, i dispositivi a reazione cambiano modalità operativa. Sono spesso usati per disattivare le <#adv.electricFence>recinzioni ad alta tensione</> o attivare i <#adv.jumpMachine>dispositivi di rimbalzo</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Dispositivo di rimbalzo",
+    "desc": "L'operatore che stai controllando può usare i dispositivi di rimbalzo per coprire distanze maggiori nel salto o raggiungere luoghi altrimenti inaccessibili.\nPer utilizzarli, sali su un dispositivo di rimbalzo alimentato e salta."
+  },
+  "adv.powerTerminal": {
+    "name": "Nexus elettrico",
+    "desc": "Uno snodo elettrico normalmente posizionato al termine di una linea di trasmissione energetica. Collegalo alla rete elettrica per alimentare le strutture vicine. I Nexus elettrici vengono solitamente utilizzati per alimentare porte e interruttori. Fornisci corrente ai Nexus elettrici tramite i ripetitori, in modo da poter azionare le porte o gli interruttori a essi collegati."
+  },
+  "ba.absorb": {
+    "name": "Assorbimento",
+    "desc": "Un modo per far terminare prima gli effetti negativi fisici o delle Arti. <@ba.key>Assorbire</> è diverso da <#ba.consume>consumare</>."
+  },
+  "ba.airborne": {
+    "name": "Stato fisico: Sospensione",
+    "desc": "Applica <#ba.noguard>Vulnerabilità</> ai nemici. Se il nemico è già <#ba.noguard>Vulnerabile</>, aggiunge 1 accumulo di <#ba.noguard>Vulnerabilità</> e infligge <@ba.phy>danni fisici</> e <@ba.poise>Vacillamento</>."
+  },
+  "ba.burning": {
+    "name": "Reazione delle Arti: Combustione",
+    "desc": "Un nemico affetto da <@ba.burning>Combustione</> subisce progressivamente <@ba.fire>danni da fuoco</>.\n<@ba.burning>Combustione</>: un'<#ba.spellinflict>Afflizione non da fuoco</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Afflizione da fuoco</>."
+  },
+  "ba.burningonchar": {
+    "name": "Effetto negativo per gli operatori: Combustione",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.fireinflict>Afflizione da fuoco</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.burning>Combustione</>: subisce temporaneamente <@ba.fire>danni da fuoco</> continui che ignorano la DIF."
+  },
+  "ba.combo": {
+    "name": "Concatenamento",
+    "desc": "L'abilità di combattimento o l'abilità suprema successiva consuma il potenziamento Concatenamento e infligge più danni, con un incremento maggiore per le abilità di combattimento. Gli effetti dello stesso tipo possono accumularsi, ma con un livello di efficacia decrescente."
+  },
+  "ba.conduct": {
+    "name": "Reazione delle Arti: Elettrificazione",
+    "desc": "Un nemico affetto da <@ba.conduct>Elettrificazione</> subisce <#ba.spelldmg>danni da Arti</> maggiori.\n<@ba.conduct>Elettrificazione</>: un'<#ba.spellinflict>Afflizione non da elettricità</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Afflizione da elettricità</>."
+  },
+  "ba.conductonchar": {
+    "name": "Effetto negativo per gli operatori: Elettrificazione",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.pulseinflict>Afflizione da elettricità</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.conduct>Elettrificazione</>: viene temporaneamente stordito e subisce e <#ba.spelldmg>danni da Arti</> per un certo periodo di tempo."
+  },
+  "ba.consume": {
+    "name": "Consumo degli effetti negativi",
+    "desc": "È possibile far terminare in anticipo numerosi effetti negativi, sia fisici che delle Arti. Esempio: <#ba.crush>Distruzione</> consuma effetti negativi di <#ba.noguard>Vulnerabilità</>, mentre <#ba.burning>Combustione</> consuma effetti negativi di <#ba.spellinflict>Afflizione da Arti</>."
+  },
+  "ba.corrupt": {
+    "name": "Reazione delle Arti: Corrosione",
+    "desc": "Un nemico affetto da <@ba.corrupt>Corrosione</> perde progressivamente resistenza a tutti gli elementi. \n<@ba.corrupt>Corrosione</>: un'<#ba.spellinflict>Afflizione non da natura</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Afflizione da natura</>."
+  },
+  "ba.corruptonchar": {
+    "name": "Effetto negativo per gli operatori: Corrosione",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.naturalinflict>Afflizione da natura</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.corrupt>Corrosione</>: non può scattare e la sua velocità di movimento è ridotta per un certo periodo di tempo."
+  },
+  "ba.crush": {
+    "name": "Stato fisico: Distruzione",
+    "desc": "Applica <#ba.noguard>Vulnerabilità</> ai nemici. Se il nemico è già <#ba.noguard>Vulnerabile</>, <#ba.consume>consuma</> tutti gli accumuli di <#ba.noguard>Vulnerabilità</> e infligge <@ba.phy>danni fisici</> ingenti."
+  },
+  "ba.crystbreak": {
+    "name": "Infrangimento",
+    "desc": "Rendendo <#ba.noguard>Vulnerabile</> o applicando <#ba.physicalstatus>stati fisici</> a un nemico <#ba.frozen>Solidificato</> si <#ba.consume>consuma</> la <#ba.frozen>Solidificazione</> per attivare Infrangimento, che infligge <@ba.pd>danni fisici</> ingenti."
+  },
+  "ba.crystburst": {
+    "name": "Esplosione delle Arti: ghiaccio",
+    "desc": "<#ba.crystinflict>Afflizione da ghiaccio</> + <#ba.crystinflict>Afflizione da ghiaccio</> attiva <@ba.cryst>Esplosione di ghiaccio</> che infligge <@ba.cryst>danni da ghiaccio</> ai nemici."
+  },
+  "ba.crystenhance": {
+    "name": "Amplificazione di ghiaccio",
+    "desc": "I bersagli soggetti ad Amplificazione di ghiaccio infliggono temporaneamente più <@ba.cryst>danni da ghiaccio</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.crystinflict": {
+    "name": "Afflizione da Arti: ghiaccio",
+    "desc": "<@ba.crystinflict>Afflizione da ghiaccio</> è un tipo di <#ba.spellinflict>Afflizione da Arti</>. \nPuoi applicare fino a 4 accumuli di <@ba.crystinflict>Afflizione da ghiaccio</> e gli accumuli attivano <#ba.crystburst>Esplosione di ghiaccio</>. \nUn'<#ba.spellinflict>Afflizione non da ghiaccio</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Afflizione da ghiaccio</> genera <#ba.frozen>Solidificazione</>."
+  },
+  "ba.crystonchar": {
+    "name": "Effetto negativo per gli operatori: Afflizione da ghiaccio",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.crystinflict>Afflizione da ghiaccio</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.frozen>Solidificazione</>: non può muoversi per un certo periodo di tempo."
+  },
+  "ba.crystvul": {
+    "name": "Suscettibilità al ghiaccio",
+    "desc": "I bersagli Suscettibili al ghiaccio subiscono temporaneamente più <@ba.cryst>danni da ghiaccio</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.dispel": {
+    "name": "Dissoluzione",
+    "desc": "Rimuove degli effetti negativi specifici."
+  },
+  "ba.dot": {
+    "name": "Danni progressivi",
+    "desc": "I danni progressivi non possono attivare colpi critici."
+  },
+  "ba.enhance": {
+    "name": "Amplificazione",
+    "desc": "I bersagli soggetti ad Amplificazione infliggono temporaneamente più danni di un determinato elemento. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.fireburst": {
+    "name": "Esplosione delle Arti: fuoco",
+    "desc": "<#ba.fireinflict>Afflizione da fuoco</> + <#ba.fireinflict>Afflizione da fuoco</> attiva <@ba.fire>Esplosione di fuoco</> che infligge <@ba.fire>danni da fuoco</> ai nemici."
+  },
+  "ba.fireenhance": {
+    "name": "Amplificazione di fuoco",
+    "desc": "I bersagli soggetti ad Amplificazione di fuoco infliggono temporaneamente più <@ba.fire>danni da fuoco</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.fireinflict": {
+    "name": "Afflizione da Arti: fuoco",
+    "desc": "<@ba.fireinflict>Afflizione da fuoco</> è un tipo di <#ba.spellinflict>Afflizione da Arti</>. \nPuoi applicare fino a 4 accumuli di <@ba.fireinflict>Afflizione da fuoco</> e gli accumuli attivano <#ba.fireburst>Esplosione di fuoco</>. \nUn'<#ba.spellinflict>Afflizione non da fuoco</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Afflizione da fuoco</> genera <#ba.burning>Combustione</>."
+  },
+  "ba.fireonchar": {
+    "name": "Effetto negativo per gli operatori: Afflizione da fuoco",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.fireinflict>Afflizione da fuoco</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.burning>Combustione</>: subisce temporaneamente <@ba.fire>danni da fuoco</> continui che ignorano la DIF."
+  },
+  "ba.firevul": {
+    "name": "Suscettibilità al fuoco",
+    "desc": "I bersagli Suscettibili al fuoco subiscono temporaneamente più <@ba.fire>danni da fuoco</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.fracture": {
+    "name": "Stato fisico: Sfondamento",
+    "desc": "Applica <#ba.noguard>Vulnerabilità</> ai nemici. Se il nemico è già <#ba.noguard>Vulnerabile</>, <#ba.consume>consuma</> tutti gli accumuli di <#ba.noguard>Vulnerabilità</>, infligge <@ba.phy>danni fisici</> e aumenta temporaneamente i <@ba.pd>danni fisici</> subiti dal nemico."
+  },
+  "ba.frozen": {
+    "name": "Reazione delle Arti: Solidificazione",
+    "desc": "Un nemico affetto da <@ba.frozen>Solidificazione</> non può muoversi, e rendere <#ba.noguard>Vulnerabile</> o applicare uno <#ba.physicalstatus>stato fisico</> a un nemico attiva l'effetto <#ba.crystbreak>Infrangimento</>. \n<@ba.frozen>Solidificazione</>: un'<#ba.spellinflict>Afflizione non da ghiaccio</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Afflizione da ghiaccio</>."
+  },
+  "ba.frozenonchar": {
+    "name": "Effetto negativo per gli operatori: Solidificazione",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.crystinflict>Afflizione da ghiaccio</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.frozen>Solidificazione</>: non può muoversi per un certo periodo di tempo."
+  },
+  "ba.guard": {
+    "name": "Protezione",
+    "desc": "I bersagli soggetti a Protezione subiscono temporaneamente danni ridotti. Il numero visualizzato rappresenta il grado di riduzione. In presenza di più effetti dello stesso tipo, si applica solamente il più potente."
+  },
+  "ba.knockdown": {
+    "name": "Stato fisico: Abbattimento",
+    "desc": "Applica <#ba.noguard>Vulnerabilità</> ai nemici. Se il nemico è già <#ba.noguard>Vulnerabile</>, aggiunge 1 accumulo di <#ba.noguard>Vulnerabilità</> e infligge <@ba.phy>danni fisici</> e <@ba.poise>Vacillamento</>."
+  },
+  "ba.lastcombo": {
+    "name": "Colpo finale",
+    "desc": "Il colpo finale è l'ultima sequenza dell'attacco base. Quando il colpo finale dell'operatore controllato colpisce il nemico, infligge anche <@ba.poise>Vacillamento</> e ripristina alcuni punti abilità (PA)."
+  },
+  "ba.naturalburst": {
+    "name": "Esplosione delle Arti: natura",
+    "desc": "<#ba.naturalinflict>Afflizione da natura</> + <#ba.naturalinflict>Afflizione da natura</> attiva <@ba.natur>Esplosione di natura</> che infligge <@ba.natur>danni da natura</> ai nemici."
+  },
+  "ba.naturalenhance": {
+    "name": "Amplificazione naturale",
+    "desc": "I bersagli soggetti ad Amplificazione naturale infliggono temporaneamente più <@ba.natur>danni da natura</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.naturalinflict": {
+    "name": "Afflizioni da Arti: natura",
+    "desc": "<@ba.naturalinflict>Afflizione da natura</> è un tipo di <#ba.spellinflict>Afflizione da Arti</>. \nPuoi applicare fino a 4 accumuli di <@ba.naturalinflict>Afflizione da natura</> e gli accumuli attivano <#ba.naturalburst>Esplosione di natura</>. \nUn'<#ba.spellinflict>Afflizione non da natura</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Afflizione da natura</> genera <#ba.corrupt>Corrosione</>."
+  },
+  "ba.naturalonchar": {
+    "name": "Effetto negativo per gli operatori: Afflizione da natura",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.naturalinflict>Afflizione da natura</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.corrupt>Corrosione</>: non può scattare e la sua velocità di movimento è ridotta per un certo periodo di tempo."
+  },
+  "ba.naturalvul": {
+    "name": "Suscettibilità alla natura",
+    "desc": "I bersagli Suscettibili alla natura subiscono temporaneamente più <@ba.natur>danni da natura</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.noguard": {
+    "name": "Vulnerabilità",
+    "desc": "Quando vengono colpiti per la prima volta con abilità che applicano <#ba.physicalstatus>stati fisici</>, anziché subire lo stato fisico effettivo, i nemici diventano <@ba.noguard>Vulnerabili</>.\nUn nemico <@ba.phy>Vulnerabile</> può essere <#ba.airborne>Sospeso</> e <#ba.knockdown>Abbattuto</> per aggiungere ulteriori accumuli di Vulnerabilità (per un massimo di 4). Applicando <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</> a un nemico Vulnerabile si <#ba.consume>consumano</> invece tutti gli accumuli di Vulnerabilità."
+  },
+  "ba.originium": {
+    "name": "Cristallo di Originium",
+    "desc": "L'abilità combo dell'Endministrator applica cristalli di Originium ai nemici, immobilizzandoli."
+  },
+  "ba.physicalenhance": {
+    "name": "Amplificazione fisica",
+    "desc": "I bersagli soggetti ad Amplificazione fisica infliggono temporaneamente più <@ba.pd>danni fisici</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.physicalstatus": {
+    "name": "Stato fisico",
+    "desc": "Gli stati fisici sono effetti fisici negativi applicabili ai nemici, che includono: <#ba.airborne>Sospensione</>, <#ba.knockdown>Abbattimento</>, <#ba.crush>Distruzione</> e <#ba.fracture>Sfondamento</>."
+  },
+  "ba.physicalvul": {
+    "name": "Suscettibilità fisica",
+    "desc": "I bersagli Suscettibili ai danni fisici subiscono temporaneamente più <@ba.pd>danni fisici</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.poiseknot": {
+    "name": "Nodo di Vacillamento",
+    "desc": "Alcuni nemici particolarmente potenti hanno dei <@ba.poise>nodi di Vacillamento</>. Infliggi una quantità di <@ba.poise>Vacillamento</> sufficiente a raggiungere il <@ba.poise>nodo di Vacillamento</> per interromperli e farli inciampare."
+  },
+  "ba.pulseburst": {
+    "name": "Esplosione delle Arti: elettricità",
+    "desc": "<#ba.pulseinflict>Afflizione da elettricità</> + <#ba.pulseinflict>Afflizione da elettricità</> attiva <@ba.pulse>Esplosione di elettricità</> che infligge <@ba.pulse>danni da elettricità</> ai nemici."
+  },
+  "ba.pulseenhance": {
+    "name": "Amplificazione elettrica",
+    "desc": "I bersagli soggetti ad Amplificazione elettrica infliggono temporaneamente più <@ba.pulse>danni da elettricità</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.pulseinflict": {
+    "name": "Afflizione da Arti: elettricità",
+    "desc": "<@ba.pulseinflict>Afflizione da elettricità</> è un tipo di <#ba.spellinflict>Afflizione da Arti</>. \nPuoi applicare fino a 4 accumuli di <@ba.pulseinflict>Afflizione da elettricità</> e gli accumuli attivano <#ba.pulseburst>Esplosione di elettricità</>. \nUn'<#ba.spellinflict>Afflizione non da elettricità</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Afflizione da elettricità</> genera <#ba.conduct>Elettrificazione</>."
+  },
+  "ba.pulseonchar": {
+    "name": "Effetto negativo per gli operatori: Afflizione da elettricità",
+    "desc": "Le abilità di alcuni nemici possono applicare accumuli di <@ba.pulseinflict>Afflizione da elettricità</> agli operatori. \nDopo 4 accumuli, all'operatore viene applicata <@ba.conduct>Elettrificazione</>: viene temporaneamente stordito e subisce e <#ba.spelldmg>danni da Arti</> per un certo periodo di tempo."
+  },
+  "ba.pulsevul": {
+    "name": "Suscettibilità all'elettricità",
+    "desc": "I bersagli Suscettibili all'elettricità subiscono temporaneamente più <@ba.pulse>danni da elettricità</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.return": {
+    "name": "Restituzione PA",
+    "desc": "In determinate circostanze, alcuni dei PA spesi dagli operatori gli verranno restituiti. \nLa Restituzione PA non equivale al Recupero PA e non attiva alcun effetto associato al Recupero PA. Inoltre, l'utilizzo dei PA restituiti non contribuirà all'incremento dell'energia suprema."
+  },
+  "ba.rossi": {
+    "name": "Marchio dell'artiglio affilato",
+    "desc": "L'abilità di combattimento di Rossi applica uno stato speciale che infligge <@ba.pd>danni fisici</> progressivi e aumenta i danni fisici e i danni da fuoco subiti."
+  },
+  "ba.shield": {
+    "name": "Scudo",
+    "desc": "Finché è attivo, lo scudo può assorbire danni. Alcuni scudi assorbono soltanto una tipologia specifica di danni."
+  },
+  "ba.slow": {
+    "name": "Rallentamento",
+    "desc": "I bersagli soggetti a Rallentamento subiscono una riduzione temporanea della velocità di movimento. Il numero visualizzato rappresenta il grado di riduzione. In presenza di più effetti dello stesso tipo, si applica solamente il più potente."
+  },
+  "ba.speedup": {
+    "name": "Accelerazione",
+    "desc": "Aumenta la velocità di movimento del bersaglio temporaneamente. Il numero visualizzato rappresenta il grado di incremento della velocità. Gli effetti dello stesso tipo possono accumularsi fino a raggiungere il limite di velocità."
+  },
+  "ba.spellburst": {
+    "name": "Esplosione delle Arti",
+    "desc": "Le <@ba.key>Esplosioni delle Arti</> si attivano accumulando <#ba.spellinflict>Afflizioni da Arti</> dello stesso elemento. Queste includono <#ba.fireburst>Esplosione di fuoco</>, <#ba.pulseburst>Esplosione di elettricità</>, <#ba.crystburst>Esplosione di ghiaccio</> ed <#ba.naturalburst>Esplosione di natura</>."
+  },
+  "ba.spelldmg": {
+    "name": "Tipo danni",
+    "desc": "I danni possono suddividersi in <@ba.pd>danni fisici</>, <@ba.key>danni da Arti</> e <@ba.ether>danni da Æther</>.\nI <@ba.key>danni da Arti</> si dividono a loro volta in <@ba.fire>danni da fuoco</>, <@ba.pulse>danni da elettricità</>, <@ba.cryst>danni da ghiaccio</> e <@ba.natur>danni da natura</>."
+  },
+  "ba.spellenhance": {
+    "name": "Amplificazione delle Arti",
+    "desc": "I bersagli soggetti ad Amplificazione delle Arti infliggono temporaneamente più <#ba.spelldmg>danni da Arti</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.spellinflict": {
+    "name": "Afflizione da Arti",
+    "desc": "Le <@ba.key>Afflizioni da Arti</> sono effetti negativi delle Arti inflitti ai nemici. Ci sono 4 elementi di Afflizioni da Arti: <#ba.fireinflict>Afflizione da fuoco</>, <#ba.pulseinflict>Afflizione da elettricità</>, <#ba.crystinflict>Afflizione da ghiaccio</> e <#ba.naturalinflict>Afflizione da natura</>. \nPuoi applicare fino a 4 accumuli di <@ba.key>Afflizioni da Arti</> dello stesso elemento."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Afflizioni da Arti / Reazioni delle Arti sugli operatori",
+    "desc": "Alcune abilità dei nemici possono applicare accumuli di <#ba.burningonchar>Afflizione da fuoco</>, <#ba.conductonchar>Afflizione da elettricità</>, <#ba.frozenonchar>Afflizione da ghiaccio</> o <#ba.corruptonchar>Afflizione da natura</>.\nCon 4 accumuli di Afflizioni da Arti, gli operatori subiscono rispettivamente <#ba.burningonchar>Combustione</>, <#ba.conductonchar>Elettrificazione</>, <#ba.frozenonchar>Solidificazione</> o <#ba.corruptonchar>Corrosione</>."
+  },
+  "ba.spellstatus": {
+    "name": "Reazione delle Arti",
+    "desc": "Le <@ba.key>Reazioni delle Arti</> sono effetti negativi delle Arti applicabili ai nemici, che includono: <#ba.burning>Combustione</>, <#ba.conduct>Elettrificazione</>, <#ba.frozen>Solidificazione</> e <#ba.corrupt>Corrosione</>."
+  },
+  "ba.spellvul": {
+    "name": "Suscettibilità alle Arti",
+    "desc": "I bersagli Suscettibili alle Arti subiscono temporaneamente più <#ba.spelldmg>danni da Arti</>. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.statuslevel": {
+    "name": "Livello di stato",
+    "desc": "Il livello di stato corrisponde al numero di accumuli di <#ba.noguard>Vulnerabilità</> o <#ba.spellinflict>Afflizioni da Arti</> (massimo 4) <#ba.consume>consumati</> quando si attiva uno <#ba.physicalstatus>stato fisico</> o una <#ba.spellstatus>Reazione delle Arti</>. Maggiore è il <#ba.statuslevel>livello di stato</>, più forte sarà lo <#ba.physicalstatus>stato fisico</> o la <#ba.spellstatus>Reazione delle Arti</>."
+  },
+  "ba.vulnerable": {
+    "name": "Suscettibilità",
+    "desc": "I bersagli soggetti a Suscettibilità subiscono temporaneamente più danni di un determinato elemento. Il numero visualizzato rappresenta il grado di incremento. Gli effetti dello stesso tipo possono accumularsi."
+  },
+  "ba.weak": {
+    "name": "Indebolimento",
+    "desc": "I bersagli soggetti a Indebolimento infliggono temporaneamente danni ridotti. Il numero visualizzato rappresenta il grado di riduzione. Gli effetti dello stesso tipo possono accumularsi in maniera non lineare."
+  },
+  "fac.hub": {
+    "name": "Nucleo di automazione protocollare",
+    "desc": "Il nucleo di automazione protocollare (NAP) è la struttura centrale del sistema industriale automatizzato (SIA). Sostando nell'area centrale del SIA del NAP, potrai occuparti della gestione delle scorte."
+  },
+  "item.bbflower": {
+    "name": "Achetina",
+    "desc": "Una pianta che contiene sostanze infiammabili ed esplosive, raccoglibile nelle terre selvagge.\nPuò essere coltivata utilizzando le strutture della fabbrica del SIA o i <#item.portSoilBbflower>terreni per achetina</>.\nPuò anche essere lavorata utilizzando le strutture della fabbrica del SIA, ad esempio frantumandola per produrre <#item.bbflowerPowder>polvere di achetina</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Polvere di achetina",
+    "desc": "Una polvere prodotta frantumando <#item.bbflower>achetina</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.bbflowerSeed": {
+    "name": "Seme di achetina",
+    "desc": "I semi di achetina possono essere raccolti dall'<#item.bbflower>achetina</> utilizzando le strutture della fabbrica del SIA.\nSuccessivamente, i semi di achetina possono essere piantati e coltivali nelle strutture della fabbrica del SIA per ottenere achetina.\nIn alternativa, i semi di achetina e il <#item.carbonMtl>carbonio</> possono essere usati nella schermata <#sys.manualCraftField>Coltivazione</> per creare <#item.portSoilBbflower>terreni per achetina</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Capsula di arcofiore (C)",
+    "desc": "Una capsula ottenuta tramite <#sys.manualCraft>Creazione</> o riempiendo una <#item.glassBottle>bottiglia di ametista</> di <#item.plantMossPowder1>polvere di arcofiore</> tramite le strutture della fabbrica del SIA.\nUsala per ripristinare i PS di un operatore. Può anche essere assegnata come <#sys.tacticalItem>gadget</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbonio",
+    "desc": "Un materiale prodotto raffinando <#item.plantMoss1>arcofiori</> nelle strutture della fabbrica del SIA.\nIl carbonio è essenziale per la creazione di terreni <#sys.manualCraftField>coltivabili</> e può anche essere usato per produrre altri materiali."
+  },
+  "item.crystalShell": {
+    "name": "Oribasamento",
+    "desc": "Uno strato cristallino prodotto raffinando <#item.originium>minerale di Originium</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usato per produrre altri materiali."
+  },
+  "item.glassBottle": {
+    "name": "Bottiglia di ametista",
+    "desc": "Una bottiglia prodotta stampando <#item.quartzGlass>fibra di ametista</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.glassCmpt": {
+    "name": "Parte di ametista",
+    "desc": "Una parte prodotta adattando <#item.quartzGlass>fibra di ametista</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.ironEnrPowder": {
+    "name": "Polvere densa di ferrium",
+    "desc": "Una polvere fine e densa prodotta macinando <#item.ironPowder>polvere di ferrium</> e <#item.plantMossPowder3>polvere di fogliasabbia</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.ironNugget": {
+    "name": "Ferrium",
+    "desc": "Un lingotto metallico prodotto raffinando <#item.ironOre>minerale di ferrium</> utilizzando le strutture della fabbrica del SIA. Può essere usato per produrre altri materiali."
+  },
+  "item.ironOre": {
+    "name": "Minerale di ferrium",
+    "desc": "Un minerale che può essere raccolto nei punti di estrazione del minerale di ferrium nelle terre selvagge.\nPuò anche essere lavorato utilizzando le strutture della fabbrica del SIA, ad esempio raffinandolo per produrre <#item.ironNugget>ferrium</>."
+  },
+  "item.ironPowder": {
+    "name": "Polvere di ferrium",
+    "desc": "Una polvere prodotta frantumando <#item.ironNugget>ferrium</> utilizzando le strutture della fabbrica del SIA. Può essere usata per produrre altri materiali."
+  },
+  "item.originium": {
+    "name": "Minerale di Originium",
+    "desc": "Un minerale che può essere raccolto nei punti di estrazione del minerale di Originium nelle terre selvagge. Può essere usato per generare elettricità nella fabbrica del SIA.\nPuò anche essere lavorato utilizzando le strutture della fabbrica del SIA, ad esempio raffinandolo per produrre <#item.crystalShell>oribasamenti</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Polvere densa di Originium",
+    "desc": "Una polvere fine e densa prodotta macinando <#item.originiumPowder>polvere di Originium</> e <#item.plantMossPowder3>polvere di fogliasabbia</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.originiumPowder": {
+    "name": "Polvere di Originium",
+    "desc": "Una polvere prodotta frantumando <#item.originium>minerale di Originium</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.plantMoss1": {
+    "name": "Arcofiore",
+    "desc": "L'arcofiore è una pianta che cresce nelle terre selvagge, nota per i suoi fiori dai colori vivaci.\nPuò essere coltivata anche tramite le strutture della fabbrica del SIA o usando i <#item.portSoilMoss1>terreni per arcofiore</>.\nL'arcofiore può essere usato per creare <#sys.tacticalItem>gadget</> o altri materiali."
+  },
+  "item.plantMoss3": {
+    "name": "Fogliasabbia",
+    "desc": "Una pianta caratterizzata da foglie ruvide e granulose, raccoglibile nelle terre selvagge.\nPuò essere coltivata utilizzando le strutture della fabbrica del SIA o i <#item.portSoilMoss3>terreni per fogliasabbia</>.\nPuò anche essere lavorata utilizzando le strutture della fabbrica del SIA, ad esempio frantumandola per produrre <#item.plantMossPowder3>polvere di fogliasabbia</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Polvere di arcofiore",
+    "desc": "Una polvere ottenuta tramite <#sys.manualCraft>Creazione</> o frantumando <#item.plantMoss1>arcofiori</> utilizzando le strutture della fabbrica del SIA.\nUsala per ripristinare i PS di un operatore. Può anche essere assegnata come <#sys.tacticalItem>gadget</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Polvere di fogliasabbia",
+    "desc": "Una polvere prodotta frantumando <#item.plantMoss3>fogliesabbia</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali, solitamente tramite macinazione."
+  },
+  "item.plantMossSeed1": {
+    "name": "Seme di arcofiore",
+    "desc": "I semi di arcofiore possono essere raccolti dagli <#item.plantMoss1>arcofiori</> utilizzando le strutture della fabbrica del SIA.\nSuccessivamente, i semi di arcofiore possono essere piantati e coltivali nelle strutture della fabbrica del SIA per ottenere nuovi arcofiori. In alternativa, i semi di arcofiore e il <#item.carbonMtl>carbonio</> possono essere usati nella schermata <#sys.manualCraftField>Coltivazione</> per creare <#item.portSoilMoss1>terreni per arcofiore</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Seme di fogliasabbia",
+    "desc": "I semi di fogliasabbia possono essere raccolti dalle <#item.plantMoss3>fogliesabbia</> utilizzando le strutture della fabbrica del SIA.\nSuccessivamente, i semi di fogliasabbia possono essere piantati e coltivali nelle strutture della fabbrica del SIA per ottenere fogliesabbia.\nIn alternativa, i semi di fogliasabbia e il <#item.carbonMtl>carbonio</> possono essere usati nella schermata <#sys.manualCraftField>Coltivazione</> per creare <#item.portSoilMoss3>terreni per fogliasabbia</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Arcorubino",
+    "desc": "L'arcorubino è una pianta che cresce nelle terre selvagge, nota per i suoi fiori straordinariamente brillanti.\nRaccogliendo <#item.plantMoss1>arcofiori</> nelle terre selvagge, potresti ottenere degli arcorubini.\nPossono essere usati per creare <#sys.tacticalItem>gadget</>."
+  },
+  "item.plantSp1": {
+    "name": "Segale",
+    "desc": "La segale è un tipo di coltura piantabile che può essere raccolta nelle terre selvagge o ottenuta coltivando <#item.portSoilSp1>terreni per segale</>.\nPuò essere usata direttamente per creare <#sys.manualCraftDish>alimenti e farmaci lavorati</> (A&F lavorati)."
+  },
+  "item.plantSpSeed1": {
+    "name": "Semi di segale",
+    "desc": "Semi ottenuti dalle piante di <#item.plantSp1>segale</> tramite le strutture della fabbrica del SIA.\nUsa i semi di segale e il <#item.carbonMtl>carbonio</> per creare <#item.portSoilSp1>terreni per segale</> nella schermata <#sys.manualCraftField>Coltivazione</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Terreno per achetina",
+    "desc": "I terreni per achetina possono essere coltivati nell'Ecofattoria per ottenere <#item.bbflower>achetina</>.\nPossono essere creati usando <#item.bbflowerSeed>semi di achetina</> e <#item.carbonMtl>carbonio</> nella schermata Coltivazione.\nLa raccolta di piante completamente cresciute fornisce una grande quantità di achetina."
+  },
+  "item.portSoilMoss1": {
+    "name": "Terreno per arcofiore",
+    "desc": "I terreni per arcofiore possono essere coltivati nell'Ecofattoria per ottenere <#item.plantMoss1>arcofiori</>.\nPossono essere creati usando <#item.plantMossSeed1>semi di arcofiore</> e <#item.carbonMtl>carbonio</> nella schermata <#sys.manualCraftField>Coltivazione</>.\nLa raccolta di piante completamente cresciute offre una maggiore possibilità di ottenere <#item.plantMossSpc1>arcorubini</> bonus."
+  },
+  "item.portSoilMoss3": {
+    "name": "Terreno per fogliasabbia",
+    "desc": "I terreni per fogliasabbia possono essere coltivati nell'Ecofattoria per ottenere <#item.plantMoss3>fogliasabbia</>.\nPossono essere creati usando <#item.plantMossSeed3>semi di fogliasabbia</> e <#item.carbonMtl>carbonio</> nella schermata Coltivazione.\nLa raccolta di piante completamente cresciute fornisce una grande quantità di fogliesabbia."
+  },
+  "item.portSoilSp1": {
+    "name": "Terreno per segale",
+    "desc": "I terreni per segale possono essere coltivati nell'Ecofattoria per ottenere <#item.plantSp1>segale</>.\nPossono essere creati usando <#item.plantSpSeed1>semi di segale</> e <#item.carbonMtl>carbonio</> nella schermata Coltivazione.\nLa raccolta di piante completamente cresciute fornisce una grande quantità di segale."
+  },
+  "item.procBattery1": {
+    "name": "Batteria BC della Valle",
+    "desc": "Una batteria prodotta confezionando <#item.glassCmpt>parte di ametista</> e <#item.originiumPowder>polvere di Originium</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per fornire alimentazione, caricare le strutture o commerciare con gli avamposti."
+  },
+  "item.procBomb": {
+    "name": "Esplosivo industriale",
+    "desc": "Gli esplosivi industriali sono un tipo di esplosivo che può essere prodotto.\nVengono realizzati usando l'unità di confezionamento, una struttura della fabbrica del SIA. I materiali richiesti sono <#item.glassCmpt>parte di ametista</> e <#item.bbflowerPowder>polvere di achetina</>.\nUsa gli esplosivi industriali per infliggere danni ai nemici o distruggere oggetti all'interno del raggio di esplosione."
+  },
+  "item.quartzGlass": {
+    "name": "Fibra di ametista",
+    "desc": "Una fibra prodotta raffinando <#item.quartzSand>minerale di ametista</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.quartzPowder": {
+    "name": "Polvere di ametista",
+    "desc": "Una polvere prodotta frantumando <#item.quartzGlass>fibra di ametista</> utilizzando le strutture della fabbrica del SIA.\nPuò essere usata per produrre altri materiali."
+  },
+  "item.quartzSand": {
+    "name": "Minerale di ametista",
+    "desc": "Un minerale che può essere raccolto nei punti di estrazione di ametista nelle terre selvagge.\nPuò anche essere lavorato utilizzando le strutture della fabbrica del SIA, ad esempio raffinandolo per produrre <#item.quartzGlass>fibra di ametista</>."
+  },
+  "sys.manualCraft": {
+    "name": "Creazione",
+    "desc": "Apri il pannello dello zaino per accedere alla schermata Creazione. Puoi trasformare diverse materie prime in oggetti utili.\nAd esempio, l'<#item.plantMoss1>arcofiore</> può essere trasformato in <#item.plantMossSeed1>polvere di arcofiore</> per ripristinare PS."
+  },
+  "sys.manualCraftDish": {
+    "name": "Alimenti e farmaci lavorati",
+    "desc": "Alimenti e farmaci lavorati (A&F lavorati) possono essere utilizzati come <#sys.tacticalItem>gadget</>.\nA differenza di <#sys.manualCraftTonic>alimenti e farmaci di emergenza</>, puoi realizzarli solo usando <#sys.manualCraft>Creazione</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Coltivazione",
+    "desc": "<#sys.manualCraft>Creazione</> ti permette di realizzare terreni coltivabili con semi e <#item.carbonMtl>carbonio</>. I terreni coltivabili possono essere collocati e coltivati all'Ecofattoria."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Alimenti e farmaci di emergenza",
+    "desc": "Alimenti e farmaci di emergenza (A&F di emergenza) possono essere utilizzati come <#sys.tacticalItem>gadget</>.\nPuoi ottenerli usando <#sys.manualCraft>Creazione</> o le strutture della fabbrica del SIA."
+  },
+  "sys.tacticalItem": {
+    "name": "Gadget",
+    "desc": "I gadget sono oggetti utilizzabili in combattimento per ottenere vari benefici e potenziamenti. Ogni gadget ha criteri di attivazione e limiti di utilizzo.\nCiascun operatore può avere un solo gadget. Durante la battaglia, quando vengono soddisfatti i criteri di attivazione, l'operatore utilizzerà automaticamente il gadget equipaggiato.\nSe consumi tutti gli usi disponibili del gadget in una singola battaglia, verrà ripristinato un utilizzo aggiuntivo dopo un certo intervallo di tempo."
+  }
+}

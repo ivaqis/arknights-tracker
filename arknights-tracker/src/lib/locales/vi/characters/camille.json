@@ -1,0 +1,162 @@
+{
+  "baseInfo": {
+    "tags": [
+      "Hồi Điểm KN",
+      "Nhiễm Nhiệt",
+      "Liên Kết"
+    ],
+    "behaviourHateTags": [
+      "Tự Nhiên"
+    ],
+    "behaviourUnavailableTags": [
+      "Hướng Ngoại (CHỈ HIỂN THỊ TRONG HỆ THỐNG, không hiển thị trong game)"
+    ],
+    "blocTag": "Seš'qa",
+    "expertTags": [
+      "Phân Tích Tình Huống",
+      "Nhanh Nhẹn"
+    ],
+    "giftPreferTags": [
+      "Lựa Chọn của Kiếm Sĩ Võ Lăng"
+    ],
+    "hobbyTags": [
+      "Sáng Tạo",
+      "Công Nghệ"
+    ],
+    "raceTag": "Sarkaz"
+  },
+  "skills": {
+    "basicAttack": {
+      "basicAttack": {
+        "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+        "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+        "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+        "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+        "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
+      },
+      "name": "Sát Huyết Chi Tội",
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.fire>ST Nhiệt</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.fire>ST Nhiệt</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng."
+    },
+    "battleSkill": {
+      "battleSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "firefangVesperwingDurationS": "Hiệu Lực Dơi Quái Lửa",
+        "weaknessEffect": "Hiệu Ứng Suy Yếu",
+        "heatSusceptibility": "Yếu Hóa Nhiệt",
+        "explosionDmgMultiplier": "Hệ Số ST Nổ"
+      },
+      "name": "Lửa Dữ Tận Diệt",
+      "description": "Camille triệu hồi <@ba.key>Dơi Quái Lửa</> bay về phía kẻ địch, gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên kẻ địch trong phạm vi nhỏ. Sau đó, <@ba.key>Dơi Quái Lửa</> tạm thời <@ba.key>bay lơ lửng</> quanh mục tiêu, đồng thời áp dụng <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu đó trong suốt thời gian lơ lửng. Khi mục tiêu bị đánh bại, <@ba.key>Dơi Quái Lửa</> sẽ bay sang một kẻ địch gần đó, gây <@ba.fire>ST Nhiệt</>, đồng thời áp dụng <#ba.fireinflict>Nhiễm Nhiệt</>, <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu mới.\nKhi KN liên hoàn của Camille đánh trúng kẻ địch đang bị <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</> quanh người, một vụ nổ sẽ được kích hoạt sau một thoáng trì hoãn. Vụ nổ này gây thêm <@ba.fire>ST Nhiệt</>."
+    },
+    "comboSkill": {
+      "comboSkill": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "spRecovery": "Hồi Điểm KN",
+        "hunterPursuitDmgMultiplier": "Hệ Số ST Thợ Săn Truy Kích",
+        "hunterPursuitStagger": "Suy Sụp Thợ Săn Truy Kích",
+        "hunterPursuitSpRecovery": "Hồi Điểm KN Thợ Săn Truy Kích",
+        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+      },
+      "name": "Truy Tâm Kích",
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> hiệu ứng <#ba.fireinflict>Nhiễm Nhiệt</> của kẻ địch.\nLướt đánh rồi trở lại, gây <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng."
+    },
+    "ultimate": {
+      "ultimate": {
+        "dmgMultiplier": "Hệ Số ST",
+        "stagger": "Suy Sụp",
+        "spRecovery": "Hồi Điểm KN",
+        "hunterPursuitStateDurationS": "Hiệu Lực Trạng Thái Thợ Săn Truy Kích"
+      },
+      "name": "Tinh Hồng Huyết Vũ",
+      "description": "Camille bay lên trời, giáng xuống loạt thương kích, sau đó bồi thêm một đòn tấn công quét ngang. Gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên các mục tiêu trúng đòn, đồng thời hồi một lượng Điểm Kỹ Năng nhất định. \nSau khi thi triển tuyệt kỹ, KN chiến đấu của Camille sẽ tạm thời chuyển hóa thành <@ba.key>Thợ Săn Truy Kích</>.\n<@ba.key>Thợ Săn Truy Kích</>: được tính là KN liên hoàn và không tiêu hao Điểm Kỹ Năng khi thi triển. Đây là đòn tấn công lướt áp dụng <@ba.fire>ST Nhiệt</> và hồi vài Điểm Kỹ Năng."
+    },
+    "indicator": {
+      "levels": [
+        "Nhanh Nhẹn Cho Cán Viên +10.",
+        "Nhanh Nhẹn Cho Cán Viên +15.",
+        "Nhanh Nhẹn Cho Cán Viên +15.",
+        "Nhanh Nhẹn Cho Cán Viên +20."
+      ],
+      "name": "Kẻ Đánh Lén"
+    },
+    "talent1": {
+      "levels": [
+        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>.",
+        "KN liên hoàn <@ba.key>Truy Tâm Kích</> tăng cao hơn: Khi đánh trúng kẻ địch bằng <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</>, Camille hồi lại <@ba.heal>[{heal_base:0} + Trí Tuệ × {heal_sub_multi:0.##}]</> HP cho bản thân và nhận <#ba.combo>Liên Kết</> buff trong {combo_duration} giây. Khi thi triển <@ba.key>Thợ Săn Truy Kích</>, hiệu ứng này vẫn có thể kích hoạt ngay cả khi đánh trúng mục tiêu không có Dơi Quái <@ba.key>bay lơ lửng</>."
+      ],
+      "name": "Thợ Săn Tội Nghiệt"
+    },
+    "talent2": {
+      "levels": [
+        "Mỗi khi Camille hồi HP qua một kỹ năng, bản thân cậu sẽ nhận <@ba.fire>ST Nhiệt Gây Ra</> <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây (cộng dồn tối đa 5 tầng), đồng thời các cán viên khác trong đội sẽ nhận <@ba.vup>{teammate_rate:0%}</> của hiệu ứng này. Hiệu ứng này có thể cộng dồn tối đa 5 tầng. \n<@ba.info>Nếu Camille đã ở trạng thái HP tối đa, mỗi lần hiệu ứng được kích hoạt sẽ nhận 2 cộng dồn hiệu ứng.</>",
+        "Mỗi khi Camille hồi HP qua một kỹ năng, bản thân cậu sẽ nhận <@ba.fire>ST Nhiệt Gây Ra</> <@ba.vup>+{atk_up:0%}</> trong {duration:0} giây (cộng dồn tối đa 5 tầng), đồng thời các cán viên khác trong đội sẽ nhận <@ba.vup>{teammate_rate:0%}</> của hiệu ứng này. Hiệu ứng này có thể cộng dồn tối đa 5 tầng. \n<@ba.info>Nếu Camille đã ở trạng thái HP tối đa, mỗi lần hiệu ứng được kích hoạt sẽ nhận 2 cộng dồn hiệu ứng.</>"
+      ],
+      "name": "Huyết Tuyền Tái Sinh"
+    },
+    "baseSkill1": {
+      "levels": [
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 20%",
+        "Khi phân công vào Buồng Phát Triển, tăng tốc độ tăng trưởng cây trồng hóa đá thêm 30%"
+      ],
+      "name": "Huyết Tinh Đồ Ký"
+    },
+    "baseSkill2": {
+      "levels": [
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +20%",
+        "Khi phân công vào Khoang Sản Xuất, hiệu suất sản xuất nguyên liệu tăng EXP cán viên +30%"
+      ],
+      "name": "Sổ Tay Agaš'mekanaz"
+    },
+    "files": {
+      "main": "MẬT DANH: Camille \nGIỚI TÍNH: Nam \nXÁC MINH: Seš'qa \nNGÀY SINH: 20 tháng 11 \nCHỦNG TỘC: Sarkaz \n[TÌNH TRẠNG NHIỄM ORIPATHY] \nÂm tính với Oripathy, theo báo cáo kiểm tra y tế. \n\n[KHÁM SỨC KHỎE TỔNG HỢP] \nTHỂ CHẤT: Xuất Sắc \nKN CHIẾN ĐẤU: Cơ Bản \nTƯ DUY CHIẾN THUẬT: Cơ Bản \nĐỒNG HÓA THUẬT PHÁP ORIGINIUM: Xuất Chúng \n\nĐã tiến hành xác minh với Seš'qa. Tuy nhiên, chưa thể xác định ảnh hưởng rõ ràng từ việc chia sẻ huyết dịch lên quá trình đồng hóa Thuật Pháp Originium của Camille. \n— Một cán viên Sarkaz",
+      "humanResources": "Camille Arno, Agaš'mekanaz từ Seš'qa (Hộ Thần Trí Tuệ), đã chủ động tìm đến Tập Đoàn Endfield để đề xuất hợp tác dưới danh nghĩa cá nhân. Theo tiến cử của Endministrator, cậu đang đảm nhiệm một chức vụ trong Đội Chuyên Viên Kỹ Thuật. \n\nCha mẹ của cán viên Camille từng là thành viên của đoàn thám hiểm khoa học liên hợp đến từ Terra. Camille sinh ra và lớn lên tại Seš'qa, tuy nhiên, do yêu cầu công việc và những trải nghiệm trong quá khứ, Camille đã sống bên ngoài thành phố nổi trong một khoảng thời gian rất dài. \nDù tự nhận mình đang \"truy lùng\" một đồng tộc phạm tội, bản lý lịch dài đến bất thường nhưng gần như trống rỗng của cậu lại cho thấy cậu đã âm thầm hoán đổi hai vai trò \"thợ săn\" và \"con mồi\". Toàn bộ mạng lưới quan hệ xã hội, xuất thân cá nhân... hay thậm chí là \"cuộc đời\" của cậu, nói theo cách rộng hơn, đều đã bị xóa sổ trong suốt hàng chục năm qua. \nKhi tôi đề cập đến chi tiết này trong lúc trao đổi, Camille dời mắt lên trần nhà, nhìn chằm chằm vào một vệt ố. Sau đó, cậu phá vỡ im lặng bằng một chuỗi những câu ẩn dụ và lối diễn đạt bóng bẩy. Trong số đó, điều để lại ấn tượng sâu nhất với tôi là cách cậu tự ví mình như một \"con lắc dao động trong vô vọng\". \nCậu nói tiếp rằng, có một ngày nọ, thời gian của cậu đã ngừng chuyển động. \nKhi cuộc trò chuyện kết thúc, tôi rời đi với bài học quan trọng nhất khi tiếp xúc với cán viên này - nếu không muốn cảm xúc bị dâng trào quá mức, TUYỆT ĐỐI không được nhắc đến anh chị em của cậu ấy. \n- Martin Marvin Malen, Trợ lý, Bộ Phận HR, Tập Đoàn Endfield",
+      "file1": "TÀI LIỆU: Cẩm Nang Du Khách Talos-II: Seš'qa, Số 3 \nNgày Hội Mở Seš'qa đã tới! Một du khách sành sỏi nên bắt đầu từ đâu? Ghé qua cửa hàng biểu tượng của Witching Hour? Tự thưởng cho mình một món đồ phiên bản giới hạn chưa từng có trên kệ của các cửa hàng Phòng Thương Mại Tổng Hợp? Nhấp một ly men say tại Glasshouse Bar? Hay len sâu vào các con ngõ nhỏ tối tăm để tìm kiếm các công phường vu thuật bí mật? Thành phố nổi này có quá nhiều điều để khám phá. Trong cẩm nang mới nhất này, chúng tôi xin giới thiệu một lựa chọn bí mật nhưng đầy thú vị: đặt lịch ghé thăm nơi trú ẩn của một Agaš'mekanaz, hay còn được gọi là Hộ Thần Trí Tuệ. \nTrước đây, tôi vẫn luôn mặc định rằng các Hộ Thần là một nhóm những kẻ nguy hiểm, lạnh lùng và không chút khoan dung, chuyên hành sự trong bóng tối. Chắc hẳn không ít độc giả cũng từng có cùng suy nghĩ ấy. Do đó, những người tổ chức các kỳ Ngày Hội Mở gần đây đang muốn dần xoá nhòa định kiến đó, bởi họ đã đưa thêm nhiều hoạt động liên quan đến Hộ Thần vào chương trình, để công chúng có dịp hiểu hơn về những cống hiến bền bỉ cũng như những việc thiện ích mà họ vẫn âm thầm đảm đương suốt bao năm qua. \nNgười dẫn tôi tham quan hôm ấy là một Hộ Thần đã nghỉ hưu. Bà là một Goliath hiền hậu, điềm đạm và vô cùng nhẫn nại, hoàn toàn khác xa hình dung của tôi về một Agaš'mekanaz lạnh như thép. Bà kể rằng sau khi Jakub Meissen phản bội Seš'qa, cả thành phố đã rơi vào một khủng hoảng lòng tin sâu sắc, dù biến cố ấy đồng thời cũng gây tổn thất nặng nề cho các cộng đồng Sarkaz trên khắp Talos-II. Để ngăn những bi kịch tương tự tái diễn, những người đứng đầu Seš'qa đã triệu tập những cá nhân ưu tú nhất và thành lập cơ cấu Agaš'mekanaz. Trách nhiệm của họ là xử lý những tội ác mang ác ý do Sarkaz gây ra, hoặc nhắm vào Sarkaz. \nTrong suốt một giờ tiếp theo, chúng tôi thong thả đi qua những bức tường phủ kín chứng cứ, những dãy tủ hồ sơ và các tủ kính trưng bày đủ loại dụng cụ vu thuật chuyên dụng. Cuộc trò chuyện giữa chúng tôi đã để lộ đôi ba điều mà người ngoài hiếm khi có dịp biết đến. Thử thách lớn nhất mà một Hộ Thần có thể đối mặt, chính là những vụ án do một đồng tộc của mình gây ra. Thông thường, các chủng tộc khác hẳn sẽ e ngại chuyện giao vụ việc cho thân nhân của nghi phạm, nhưng người Sarkaz lại chọn con đường hoàn toàn trái ngược. Nhiều bộ tộc của họ được ban cho tuổi thọ dài lâu cùng sự tinh thông nhiều hệ Thuật Pháp Originium. Chính vì thế, một người cùng huyết hệ đôi khi lại là kẻ thích hợp nhất để truy xét hoặc đối đầu với tội phạm Sarkaz. \n\"Đó cũng là lý do vì sao rất nhiều Agaš'mekanaz phải chịu đựng những tổn thương tinh thần,\" vị Hộ Thần nói. \"Có người nghi ngờ liệu chúng tôi có thể giữ được sự chính trực và công bằng hay không, nhưng cho đến tận bây giờ, chưa một ai trong chúng tôi từng vì đồng tộc mà từ bỏ nguyên tắc.\" \n\"Bà đã từng bị buộc phải... đối đầu với chính người trong gia đình mình chưa?\". Tôi rốt cuộc vẫn không kìm được mà cất lời. \nTrong một thoáng ngắn ngủi, tôi ngỡ cảm xúc của bà sẽ nứt vỡ ngay trước mắt mình. Nhưng rồi bà chỉ ngước nhìn lên ô cửa trời duy nhất của ngôi nhà an toàn. Một khoảng lặng mỏng và sắc như tơ khẽ buông xuống giữa chúng tôi. Đến khi cất tiếng lần nữa, bà dường như đã thu xếp xong mọi dao động trong lòng, và vẻ bình thản quen thuộc cũng lặng lẽ trở lại. \"Tôi đã dùng súng lục. Khẩu súng là của chính người ấy\". \nQua ô cửa trời, tôi nhìn thấy những vệt sáng cuối cùng của hoàng hôn đang phản chiếu lên tầng mây. Pháo hoa bừng nở phía xa, những tạo tác bí thuật tinh xảo được dệt nên bởi bàn tay các nghệ nhân. Seš'qa lại vừa đi qua thêm một ngày bình yên.",
+      "file2": "TÀI LIỆU: Bản Ghi Giám Sát Thung Lũng IV \n1. Trung Tâm Xử Lý Sản Phẩm Phụ Của Originium (TTXLSPP Originium), Lối Vào: Hình ảnh rõ nét. Phát hiện cán viên Endfield. Không ghi nhận dấu hiệu bất thường. \n2. KTX Công Nhân, phía đông nam: Thành viên Công Đoàn đang sinh hoạt thường nhật. Không ghi nhận dấu hiệu bất thường. \n3. Căn Cứ Trung Tâm: Xác nhận danh tính Camille Arno. Camera phóng đại khung hình để tăng độ chính xác khi theo dõi. \n4. Mỏ Đá Aburrey: Mất tín hiệu. Nghi camera gắn trên Landbreaker đã bị hư hại; cá thể nói trên đã bị phe địch tập kích và tiêu diệt. \n5. Trại Đầu Cầu: Một số Landbreaker đã rời đi hoặc nhập vào đội hình đang rút lui. Chỉ thu được vài đoạn hình ảnh mờ nhòe. Vị trí cuối cùng đã bị bỏ trống. \n6. Bãi Đỗ Xe Công Đoàn, Nhà Máy Năng Lượng Originium: Điều toàn bộ camera tập trung vào Camille Arno và Endministrator của Tập Đoàn Endfield. Theo dõi mọi hoạt động của hai cá nhân này. \n... \nBản báo cáo này chứng minh rằng một thế lực chưa xác định đã triển khai hệ thống giám sát được che giấu vô cùng tinh vi trên khắp Thung Lũng IV. \n\nKhông ai ngờ được rằng Endministrator lại trở về từ chuyến đi ấy cùng với hàng nghìn giờ ghi hình. Phát hiện này, được tìm thấy trong một cơ sở ngầm bị bỏ hoang, đã khiến toàn bộ đội ngũ phân tích không khỏi bàng hoàng. Đây là minh chứng cho thấy có một tổ chức đang ngầm hoạt động tại Thung Lũng IV, lặng lẽ quan sát nhất cử nhất động của mọi người, đồng thời bí mật giật dây để thao túng toàn bộ cục diện khu vực. \nKhi các nhà phân tích nhận ra rằng camera đã được cấy vào bên trong Landbreaker để tránh bị phát hiện - Camille từng nhắc rằng thủ phạm đã vứt bỏ chúng mà không hề do dự - họ lập tức hiểu vì sao Seš'qa lại chỉ định một Agaš'mekanaz tiếp nhận vụ việc này. May mắn thay, kể từ khi Camille Arno đến Thung Lũng IV, toàn bộ camera dường như đều được điều sang tập trung theo dõi hành tung và mọi hoạt động của cậu. Khoảng thời gian bị giám sát ấy lại vừa khít với quãng thời gian Endfield hoạt động trong khu vực. Vì vậy, có thể tạm khẳng định rằng không một phần tin tình báo trọng yếu nào bị rò rỉ. Cũng chính vì không có bất kỳ dấu hiệu rò rỉ nào, không cán viên nào của chúng ta nhận ra sự giám sát vô căn cứ đến từ bên thứ ba ấy. \nSau khi tiếp nhận toàn bộ luồng dữ liệu hình ảnh, các cán viên thuộc ban kỹ thuật lần theo đầu mối trở về một lô hồ sơ cũ hơn nữa - nay đã bị tiêu hủy hoàn toàn - và từ đó phát hiện ra rằng tổ chức này đã bắt đầu theo dõi Camille từ nhiều thập kỷ trước. Bản thân vị Hộ Thần khi nghe đến kết quả ấy chỉ đáp lại bằng một phản ứng hết sức điềm nhiên, như thể từ lâu đã ngầm chờ đợi điều này. Dẫu vậy, các kỹ thuật viên vẫn không khỏi chạnh lòng trước cảnh ngộ của cậu, và đã hứa sẽ tiến hành nâng cấp toàn diện thiết bị cá nhân của cậu bằng một loạt cải tiến chuyên dùng để đối phó với các biện pháp giám sát ngầm. \nKhi các nhà phân tích báo lại toàn bộ phát hiện của mình cho Camille, cậu chỉ lặng lẽ tựa vào tường, nhìn màn hình thật lâu trong im lặng. Mãi về sau, mới ngẩng mắt lên và hỏi: \"Giả như các anh đứng ở phía bên kia những camera giám sát đó, nhìn chăm chú vào một người thân quen... thứ đầu tiên hiện lên trong đầu sẽ là gì?\" \nCác nhà phân tích đưa ra đủ loại câu trả lời. Camille không đáp lại lấy một lời, chỉ tiếp tục chìm trong khoảng lặng kéo dài. Cuối cùng, anh để lại một dòng viết tay trong bản báo cáo tổng kết sau buổi trao đổi. \n\"Giống nhau đến vậy, nhưng bản chất lại khác biệt đến thế. Tại sao?\". Cậu muốn biết và cần lời giải cho câu hỏi ấy.",
+      "file3": "Camille luôn cho rằng cảm xúc của mình đã được giấu kín đủ sâu. So với những cán viên khác chẳng hề biết kiềm chế, cậu quả thực đã làm rất tốt. Đáng tiếc, những cử động ngoài ý muốn cùng ngôn ngữ cơ thể mơ hồ vẫn luôn vô tình phản chủ. \nMỗi khi phiền muộn, Camille sẽ hạ mắt nhìn xuống đất, chăm chú vào một vết nứt nào đó, nếu có, hoặc vô thức đưa tay xoa phần bả vai. Khi muốn tránh tiếp xúc với người khác, cậu sẽ dồn trọng tâm sang chân phải, như để cơ thể có thể lập tức xoay người bỏ đi bất cứ lúc nào. Còn khi do dự hoặc cảm thấy không thoải mái, những ngón tay cậu sẽ vô thức miết nhẹ lên chiếc chìa khóa cũ kỹ, cổ xưa luôn đeo nơi thắt lưng. \nNhiều cán viên của Endfield đều có một món đồ hay vật lưu niệm thường để tâm đến. Chẳng hạn như Yvonne coi Băng Bé Bỏng như một người bạn thân thiết, Rossi luôn mang theo con dao găm của mình, còn Da Pan thì chẳng lúc nào rời chiếc chảo sắt đeo sau lưng. Nhưng Camille lại khác. Nếu có ai nhắc đến chiếc chìa khóa ấy, cậu sẽ lập tức rụt tay về, như thể vừa chạm phải một dấu sắt nung đỏ. Môi thì mím chặt, khước từ mọi câu hỏi liên quan đến nó. \nNhững người thợ cơ khí lành nghề có thể nhận ra chiếc chìa khóa ấy được chế tác thủ công từ một vật liệu trông tựa như trục quay của hộp nhạc, dù bản thân Camille hoàn toàn không biết gì về nghề thủ công. Cậu trai ấy không sở hữu lấy một tài sản nào mang tên mình, cũng không ai biết chiếc chìa khóa ấy có thể mở được thứ gì. \nDần dà, mọi người cũng hiểu ý và không còn hỏi thêm về món đồ ấy nữa. \nMãi về sau, trong một cuộc trò chuyện tưởng như rất đỗi tình cờ, Camille mới thừa nhận nguồn gốc của chiếc chìa khóa. Đó là món quà do chính em trai cậu làm ra - cũng chính là người đã cắt đứt mọi liên hệ với cậu. Nó từng là một phần của ngôi nhà họ ở Seš'qa, căn nhà mà Camille đã bán đi sau một tai nạn và từ đó không bao giờ trở lại nữa. Chiếc chìa khóa vốn chỉ mang ý nghĩa trang trí, còn thói quen chạm vào nó bắt nguồn từ nỗi nhớ... và có lẽ, từ cả một chút chán chường không sao gọi tên. Sau khi nói ra những lời ấy, Camille lặng lẽ cất chiếc chìa khóa vào túi áo. \nĐiều cậu nhớ đến là cơn đau bỏng rát, như thể một mảng thịt vừa bị xé phăng khỏi cơ thể, cùng một quá khứ tối tăm và mỏi mệt kéo dài tưởng chừng vô tận. Món quà ấy được trao đi khi sự chân thành vẫn còn nguyên vẹn. Nhưng vị Hộ Thần đã đứng trước một lựa chọn không lối thoát, và nay không còn muốn bị kéo trở lại những hồi ức ấy thêm nữa. \nVài ngày sau, Camille nhận được tin nhắn từ Baker rồi ghé đến văn phòng Endministrator. Endministrator đã đợi sẵn và mỉm cười, thả vào tay cậu một chiếc chìa khóa mới tinh. \n\"Loại chìa và ổ khóa như thế này khá hiếm, nên để làm ra chúng cũng mất không ít thời gian,\" người ấy nói. \"Tôi chỉ muốn bạn biết rằng Dijiang sẽ luôn có một cánh cửa chờ bạn mở.\" \nCamille hoàn toàn sững sờ. Cậu siết chặt chiếc chìa khóa trong lòng bàn tay rồi quay mặt đi. Cậu cố lên tiếng, nhưng những lời định nói ra lại chỉ bật thành thứ âm thanh nghèn nghẹn, như tiếng một con chim kiệt sức đang bị bàn tay sắt siết lấy cổ họng. Sau cùng, điều duy nhất có thể thốt thành lời chỉ là một câu cảm ơn nhỏ đến mức gần như không nghe thấy: \"...Cảm ơn.\" \nKhông phải ai cũng đủ quen thuộc với ngôn ngữ cơ thể của Camille để hiểu cậu đang nghĩ gì, nhưng tất cả đều biết rằng tiếng leng keng của chiếc chìa khóa mới va vào chiếc cũ nghe thật vui tai - hệt như chính tâm trạng của cậu trong khoảnh khắc ấy.",
+      "file4": "TÀI LIỆU: Một Bản Thảo Rách Nát \nTấm gương đầu tiên mà một đứa trẻ nhìn thấy thường là đôi mắt của mẹ. Người mẹ cúi nhìn con và khẽ thì thầm những lời ấy: \"Chào mừng con đến với thế giới này\". Đứa trẻ mở mắt, nhìn lại với sự chăm chú, chẳng khác nào đi theo kim chỉ nam để cố băng qua đại dương. Khi lớp nước long lanh dần tan đi, em sẽ thấy chính mình phản chiếu trong mắt mẹ. \nMạnh mẽ, yếu đuối, đáng ghét, đáng yêu, tinh khôi, vẩn đục... Em nhận ra hình bóng trong tấm gương ấy, hình bóng của chính mình. \nNhưng nếu tấm gương đầu tiên không phải là mẹ thì sao? Nếu em đã mở mắt từ trước cả khi cất tiếng khóc đầu đời thì sao? Đại dương quanh em đung đưa như một chiếc nôi khổng lồ, và có ai đó khẽ chạm vào những đầu ngón tay. Thật phiền nhiễu, mà cũng thật bình yên. Em không biết người ấy là ai, nhưng qua làn nước mờ đục, em vẫn cố nhìn, thấy một đôi mắt nhòe nhoẹt khác, rồi bắt gặp chính hình ảnh của mình trong đó. Ngay khoảnh khắc ấy, một điều gì đó còn nhanh hơn cả tia chớp đã xuyên thấu linh hồn. \nCậu ấy đã được sinh ra cùng em. Hai người là bằng hữu thân thiết nhất, vậy mà cũng không ngừng cãi vã, đối đầu. Em không tài nào ngăn mình nhìn vào mắt cậu để tìm lấy hình bóng của bản thân... Cậu ấy là thước đo, là khuôn phép để em tự đem mình đối chiếu, đồng thời cũng là chiếc cầu nối qua đó mà tiếp thu về thế giới này. Còn cậu ấy lại dựa vào em, kính trọng và cũng có phần ganh tị. Ngày tháng trôi qua, hình ảnh của em trong mắt cậu ấy ngày một trở nên hoàn chỉnh hơn. \nRồi đến một ngày, chuyện đó rốt cuộc cũng xảy ra. Vết rạn đầu tiên hiện lên trên mặt gương. Những vết nứt lan rộng, và tấm gương vỡ tan. Hình bóng của em biến mất. Bão tố đổ xuống, định mệnh cất tiếng rì rầm, và đại dương rút ngược về nơi vực sâu. Em mang lấy một vết thương không bao giờ lành, đánh mất một nửa linh hồn mình, và bị buộc phải nâng vũ khí chĩa về phía hắn. Đó là cách duy nhất để xuyên thủng hận ý cháy bỏng sâu hơn cả tình yêu, và trả phần tan vỡ kia về lại trạng thái nguyên vẹn. \nThế nhưng cho đến khoảnh khắc ấy, em vẫn chưa từng nhận ra — \n— rằng em mới chính là tấm gương đầu tiên của cậu ấy. \n\nTÀI LIỆU: Một Mẩu Báo Ố Vàng \nLandbreaker Tập Kích Các Thị Trấn - Seš'qa Lên Kế Hoạch Thành Lập Tổ Chức Chống Vu Thuật \nTên phản đồ của thành phố nổi, Jakub Meissen, cùng các toán cướp Landbreaker do hắn cầm đầu, gần đây đã trở thành một mối đe dọa an ninh nghiêm trọng đối với Vành Đai Văn Minh. Lực lượng của Jakub đã chiếm giữ và cải biến một nông trại Originium thành căn cứ hoạt động, từ đó liên tục điều động các nhóm cướp đi phát tán thêm Originium và tiến hành cướp phá. \nChỉ mới hai đêm trước, một thị trấn nằm tại vùng rìa Viền Vành Đai đã bị tập kích bởi một toán cướp do một Vampire dưới trướng Jakub chỉ huy. Thị trấn này tọa lạc tại khu vực vẫn chưa thuộc quyền kiểm soát của bất kỳ phe phái Talos nào, vì thế lực lượng phòng thủ vô cùng mỏng yếu. Tuy nhiên, một Vampire khác, xuất thân từ Seš'qa, đã đóng vai trò then chốt trong việc đẩy lùi cuộc tập kích ấy. Nhờ am hiểu vu thuật của Sarkaz, Vampire hộ vệ thị trấn đã phá hỏng khí tài quân sự của nhóm cướp, sau đó xuyên vũ khí qua ngực tên cầm đầu, buộc hắn phải hạ lệnh rút lui. Hiện tại, thủ lĩnh toán cướp đã ẩn mình, còn Seš'qa vẫn đang duy trì sự truy lùng chặt chẽ nhằm lần ra tung tích của hắn. \nSeš'qa xem sự phản bội của Jakub là trách nhiệm mà chính mình phải gánh vác. Theo những tin tức mới nhất, giới lãnh đạo của thành phố nổi đang lên kế hoạch thành lập một tổ chức chuyên trách việc trấn áp các loại tội ác liên quan đến vu thuật của Sarkaz, đồng thời truy bắt những kẻ phản bội."
+    }
+  },
+  "potentials": {
+    "potential1": {
+      "description": "KN chiến đấu <@ba.key>Lửa Dữ Tận Diệt</> được cường hóa: Kỹ năng áp dụng <#ba.weak>Suy Yếu</> <@ba.vup>+{0-weak_scale:0%}</> và <#ba.firevul>Yếu Hóa Nhiệt</> <@ba.vup>+{vulnerable_scale:0%}</>. Hiệu lực <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</> được <@ba.vup>+{bat_duration:0}</> giây.",
+      "name": "Thương Tẩm Hỏa"
+    },
+    "potential2": {
+      "description": "Nhanh Nhẹn <@ba.vup>+{Agi:0}</>, Trí Tuệ <@ba.vup>+{Wisd:0}</>.",
+      "name": "Kẻ Lần Theo Dấu Phù Thủy"
+    },
+    "potential3": {
+      "description": "KN liên hoàn <@ba.key>Truy Tâm Kích</> được cường hóa: Thời gian hồi chiêu hiện là <@ba.vup>{coolDown:0}</> giây. <@ba.key>Truy Tâm Kích</> và <@ba.key>Thợ Săn Truy Kích</> được cường hóa: Hệ Số ST tăng lên gấp <@ba.vup>{atk_scale_1_1:0.0}</> lần ban đầu; Hồi Điểm Kỹ Năng tăng lên gấp <@ba.vup>{atb:0.##}</> lần ban đầu.",
+      "name": "Bộ Ức Chế Gai Nhọn"
+    },
+    "potential4": {
+      "description": "Tuyệt kỹ <@ba.key>Tinh Hồng Huyết Vũ</> được cải thiện: Tiêu hao Năng Lượng Tuyệt Kỹ <@ba.vup>-{1-costvalue:0%}</>.",
+      "name": "Ấn Ký Của Agašlehem"
+    },
+    "potential5": {
+      "description": "Thiên Phú <@ba.key>Huyết Tuyền Tái Sinh</> được cường hóa: Mức tăng <@ba.fire>ST Nhiệt</> mỗi cộng dồn được <@ba.vup>+{atk_up:0%}</>.",
+      "name": "Huyết Ước"
+    }
+  },
+  "arts": {
+    "potential1": {
+      "name": "Trở Về Vĩnh Hằng",
+      "author": "およ",
+      "description": "Tiến bước qua vòng lặp bất tận cho đến khi tới ranh giới tận cùng đổ vỡ, rồi một lần nữa trở nên vẹn toàn."
+    },
+    "potential3": {
+      "name": "Khởi Đầu Kiêu Hãnh",
+      "author": "起ID无能",
+      "description": "Quá khứ tựa giọt mưa. Hãy ngẩng đầu đối diện để niềm đau không tuôn trào từ tận đáy lòng."
+    },
+    "potential5": {
+      "name": "Phá Ảnh",
+      "author": "se_eeeee",
+      "description": "Vùng thoát khỏi bóng đen bám riết lấy mình, tựa dây gai nhọn vươn lên mạnh mẽ từ lòng đất."
+    }
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "adv.electricFence": {
+    "name": "Hàng Rào Điện Áp Cao",
+    "desc": "Hàng Rào Điện Áp Cao đang hoạt động là hàng rào không thể vượt qua. Hãy đi theo dây cáp, tìm công tắc và đóng hàng rào để đi qua an toàn."
+  },
+  "adv.eswitch": {
+    "name": "Thiết Bị Phản Ứng",
+    "desc": "Một thiết bị phản ứng có thể tạm thời thay đổi chế độ vận hành khi bị tấn công hoặc trúng thuốc nổ. Thường được dùng để tắt <#adv.electricFence>Hàng Rào Điện Áp Cao</> hoặc kích hoạt <#adv.jumpMachine>Thiết Bị Bật Nhảy</>."
+  },
+  "adv.jumpMachine": {
+    "name": "Thiết Bị Bật Nhảy",
+    "desc": "Cán viên đang điều khiển có thể sử dụng Thiết Bị Bật Nhảy để nhảy qua khoảng cách xa hoặc lên các vị trí cao không thể tiếp cận bằng cú nhảy thường.\nĐể sử dụng, chỉ cần đứng trên Thiết Bị Bật Nhảy đang hoạt động và nhảy."
+  },
+  "adv.powerTerminal": {
+    "name": "Trạm Điện Đầu Cuối",
+    "desc": "Hợp Cáp Điện thường được triển khai ở cuối đường dây truyền tải điện. Kết nối nó với lưới điện để cung cấp điện cho các công trình gần đó. Trạm Điện Đầu Cuối thường dùng để cấp điện cho cổng và công tắc. Hãy cung cấp điện cho Trạm Điện Đầu Cuối bằng các Tháp Tiếp Điện, qua đó có thể điều khiển cổng hoặc công tắc đã kết nối với trạm."
+  },
+  "ba.absorb": {
+    "name": "Hấp Thụ",
+    "desc": "Một phương thức để chấm dứt sớm hiệu ứng suy yếu Vật Lý hoặc Thuật Pháp. <@ba.key>Hấp thụ</> không giống với <#ba.consume>tiêu hao</>."
+  },
+  "ba.airborne": {
+    "name": "Trạng Thái Vật Lý: Hất Tung",
+    "desc": "Thi triển <#ba.noguard>Trừ Giáp</> lên kẻ địch. Nếu kẻ địch đã ở trạng thái <#ba.noguard>Yếu Đuối</> thì sẽ cộng thêm 1 lần <#ba.noguard>Trừ Giáp</> cũng như gây <@ba.phy>ST Vật Lý</> và <@ba.poise>Suy Sụp</>."
+  },
+  "ba.burning": {
+    "name": "Phản Ứng Thuật Pháp: Thiêu Đốt",
+    "desc": "Kẻ địch bị <@ba.burning>Thiêu Đốt</> phải chịu <@ba.fire>ST Nhiệt</> theo thời gian.\n<@ba.burning>Thiêu Đốt</> = <#ba.spellinflict>Không Nhiễm Nhiệt</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Nhiễm Nhiệt</>"
+  },
+  "ba.burningonchar": {
+    "name": "Debuff Cán Viên: Thiêu Đốt",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.fireinflict>Nhiễm Nhiệt</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.burning>Thiêu Đốt</>: Tạm thời chịu <@ba.fire>ST Nhiệt</> liên tục trong thời gian ngắn và không thể phòng thủ."
+  },
+  "ba.combo": {
+    "name": "Liên Kết",
+    "desc": "KN chiến đấu tiếp theo hoặc Tuyệt Kỹ của đội sẽ tiêu thụ buff Liên Kết và gây thêm ST, trong khi KN chiến đấu được tăng thêm ST. Hiệu ứng cùng loại có thể cộng dồn, nhưng hiệu quả giảm dần."
+  },
+  "ba.conduct": {
+    "name": "Phản Ứng Thuật Pháp: Điện Hóa",
+    "desc": "Kẻ địch bị <@ba.conduct>Điện Hóa</> sẽ phải chịu thêm <#ba.spelldmg>ST Thuật Pháp</>.\n<@ba.conduct>Điện Hóa</> = <#ba.spellinflict>Không Nhiễm Điện</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Nhiễm Điện</>"
+  },
+  "ba.conductonchar": {
+    "name": "Debuff Cán Viên: Điện Hóa",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.pulseinflict>Nhiễm Điện</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.conduct>Điện Hóa</>: Tạm thời bị choáng và chịu nhiều <#ba.spelldmg>ST Thuật Pháp</> hơn trong một khoảng thời gian nhất định."
+  },
+  "ba.consume": {
+    "name": "Tiêu Hao Debuff",
+    "desc": "Các loại debuff Vật Lý và Thuật Pháp có thể kết thúc sớm. Ví dụ: <#ba.crush>Nghiền</> tiêu hao debuff <#ba.noguard>Trừ Giáp</>, trong khi <#ba.burning>Thiêu Đốt</> tiêu hao debuff <#ba.spellinflict>Nhiễm Thuật Pháp</>."
+  },
+  "ba.corrupt": {
+    "name": "Phản Ứng Thuật Pháp: Ăn Mòn",
+    "desc": "Kẻ địch bị <@ba.corrupt>Ăn Mòn</> dần mất đi sức kháng với tất cả nguyên tố. \n<@ba.corrupt>Ăn Mòn</> = <#ba.spellinflict>Không Nhiễm Tự Nhiên</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nhiễm Tự Nhiên</>"
+  },
+  "ba.corruptonchar": {
+    "name": "Debuff Cán Viên: Ăn Mòn",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.naturalinflict>Nhiễm Tự Nhiên</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.corrupt>Ăn Mòn</>: Không thể lướt và bị giảm Tốc Chạy trong một khoảng thời gian nhất định."
+  },
+  "ba.crush": {
+    "name": "Trạng Thái Vật Lý: Nghiền",
+    "desc": "Thi triển <#ba.noguard>Trừ Giáp</> lên kẻ địch. Nếu kẻ địch đã ở trạng thái <#ba.noguard>Yếu Đuối</> thì sẽ <#ba.consume>tiêu hao</> hết số lần <#ba.noguard>Trừ Giáp</> và gây <@ba.phy>ST Vật Lý</> cực lớn."
+  },
+  "ba.crystbreak": {
+    "name": "Tan Vỡ",
+    "desc": "Khi kẻ địch đang ở trạng thái <#ba.frozen>Đông Cứng</>, áp dụng <#ba.noguard>Trừ Giáp</> hoặc <#ba.physicalstatus>Trạng Thái Vật Lý</> sẽ <#ba.consume>tiêu hao</> <#ba.frozen>Đông Cứng</> để kích hoạt Tan Vỡ gây <@ba.pd>ST Vật Lý</> cực lớn."
+  },
+  "ba.crystburst": {
+    "name": "Bùng Nổ Thuật Pháp: Băng",
+    "desc": "<#ba.crystinflict>Nhiễm Băng</> + <#ba.crystinflict>Nhiễm Băng</> sẽ kích hoạt <@ba.cryst>Bùng Nổ Băng</> để gây <@ba.cryst>ST Băng</> cho kẻ địch."
+  },
+  "ba.crystenhance": {
+    "name": "Tăng ST Băng",
+    "desc": "Các mục tiêu được Tăng ST Băng sẽ tạm thời gây thêm <@ba.cryst>ST Băng</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.crystinflict": {
+    "name": "Nhiễm Thuật Pháp: Băng",
+    "desc": "<@ba.crystinflict>Nhiễm Băng</> là một loại <#ba.spellinflict>Nhiễm Thuật Pháp</>. Có thể thi triển \ntối đa 4 lần <@ba.crystinflict>Nhiễm Băng</> để cộng dồn kích hoạt <#ba.crystburst>Bùng Nổ Băng</>. \n<#ba.spellinflict>Không Nhiễm Băng</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Nhiễm Băng</> = <#ba.frozen>Đông Cứng</>"
+  },
+  "ba.crystonchar": {
+    "name": "Debuff Cán Viên: Nhiễm Băng",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.crystinflict>Nhiễm Băng</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.frozen>Đông Cứng</>: Không thể di chuyển trong một khoảng thời gian nhất định."
+  },
+  "ba.crystvul": {
+    "name": "Yếu Hóa Băng",
+    "desc": "Các mục tiêu Dễ Bị Thương Băng sẽ tạm thời chịu nhiều <@ba.cryst>ST Băng</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.dispel": {
+    "name": "Xua Tan",
+    "desc": "Xóa bỏ các debuff đặc biệt cho cán viên."
+  },
+  "ba.dot": {
+    "name": "ST Theo Thời Gian",
+    "desc": "ST Theo Thời Gian không thể kích hoạt đòn bạo kích."
+  },
+  "ba.enhance": {
+    "name": "Tăng ST",
+    "desc": "Các mục tiêu được Tăng ST sẽ gây thêm ST thuộc nguyên tố được dùng. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.fireburst": {
+    "name": "Bùng Nổ Thuật Pháp: Nhiệt",
+    "desc": "<#ba.fireinflict>Nhiễm Nhiệt</> + <#ba.fireinflict>Nhiễm Nhiệt</> sẽ kích hoạt <@ba.fire>Bùng Nổ Nhiệt</> để gây <@ba.fire>ST Nhiệt</> cho kẻ địch."
+  },
+  "ba.fireenhance": {
+    "name": "Tăng ST Nhiệt",
+    "desc": "Các mục tiêu được Tăng ST Nhiệt sẽ tạm thời gây thêm <@ba.fire>ST Nhiệt</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.fireinflict": {
+    "name": "Nhiễm Thuật Pháp: Nhiệt",
+    "desc": "<@ba.fireinflict>Nhiễm Nhiệt</> là một loại <#ba.spellinflict>Nhiễm Thuật Pháp</>. Có thể thi triển \ntối đa 4 lần <@ba.fireinflict>Nhiễm Nhiệt</> để cộng dồn kích hoạt <#ba.fireburst>Bùng Nổ Nhiệt</>. \n<#ba.spellinflict>Không Nhiễm Nhiệt</> (<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.fireinflict>Nhiễm Nhiệt</> = <#ba.burning>Thiêu Đốt</>"
+  },
+  "ba.fireonchar": {
+    "name": "Debuff Cán Viên: Nhiễm Nhiệt",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.fireinflict>Nhiễm Nhiệt</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.burning>Thiêu Đốt</>: Tạm thời chịu <@ba.fire>ST Nhiệt</> liên tục trong thời gian ngắn và không thể phòng thủ."
+  },
+  "ba.firevul": {
+    "name": "Yếu Hóa Nhiệt",
+    "desc": "Các mục tiêu Dễ Bị Thương Nhiệt sẽ tạm thời chịu nhiều <@ba.fire>ST Nhiệt</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.fracture": {
+    "name": "Trạng Thái Vật Lý: Phá Giáp",
+    "desc": "Thi triển <#ba.noguard>Trừ Giáp</> lên kẻ địch. Nếu kẻ địch đã ở trạng thái <#ba.noguard>Yếu Đuối</> thì sẽ <#ba.consume>tiêu hao</> hết số lần <#ba.noguard>Trừ Giáp</>, gây <@ba.phy>ST Vật Lý</> và tạm thời tăng <@ba.pd>ST Vật Lý</> mà kẻ địch phải chịu."
+  },
+  "ba.frozen": {
+    "name": "Phản Ứng Thuật Pháp: Đông Cứng",
+    "desc": "Kẻ địch bị <@ba.frozen>Đông Cứng</> không thể di chuyển và việc gây <#ba.noguard>Trừ Giáp</> hoặc <#ba.physicalstatus>Trạng Thái Vật Lý</> lên kẻ địch sẽ kích hoạt hiệu ứng <#ba.crystbreak>Tan Vỡ</>. \n<@ba.frozen>Đông Cứng</> = <#ba.spellinflict>Không Nhiễm Băng</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.crystinflict>Nhiễm Băng</>"
+  },
+  "ba.frozenonchar": {
+    "name": "Debuff Cán Viên: Đông Cứng",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.crystinflict>Nhiễm Băng</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.frozen>Đông Cứng</>: Không thể di chuyển trong một khoảng thời gian nhất định."
+  },
+  "ba.guard": {
+    "name": "Bảo Hộ",
+    "desc": "Các mục tiêu được Bảo Hộ tạm thời nhận giảm ST. Con số hiển thị mức giảm ST. Khi có nhiều hiệu ứng cùng loại, chỉ hiệu ứng mạnh nhất mới có hiệu lực."
+  },
+  "ba.knockdown": {
+    "name": "Trạng Thái Vật Lý: Quật Ngã",
+    "desc": "Thi triển <#ba.noguard>Trừ Giáp</> lên kẻ địch. Nếu kẻ địch đã ở trạng thái <#ba.noguard>Yếu Đuối</> thì sẽ cộng thêm 1 lần <#ba.noguard>Trừ Giáp</> cũng như gây <@ba.phy>ST Vật Lý</> và <@ba.poise>Suy Sụp</>."
+  },
+  "ba.lastcombo": {
+    "name": "Đòn Dứt Điểm",
+    "desc": "Đòn Dứt Điểm là chuỗi tấn đòn đánh thường cuối cùng. Khi Đòn Dứt Điểm của cán viên đánh trúng kẻ địch, nó đồng thời gây <@ba.poise>Suy Sụp</> và hồi một phần Điểm Kỹ Năng."
+  },
+  "ba.naturalburst": {
+    "name": "Bùng Nổ Thuật Pháp: Tự Nhiên",
+    "desc": "<#ba.naturalinflict>Nhiễm Tự Nhiên</> + <#ba.naturalinflict>Nhiễm Tự Nhiên</> sẽ kích hoạt <@ba.natur>Bùng Nổ Tự Nhiên</> để gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch."
+  },
+  "ba.naturalenhance": {
+    "name": "Tăng ST Tự Nhiên",
+    "desc": "Các mục tiêu được Tăng ST Tự Nhiên sẽ tạm thời gây thêm <@ba.natur>ST Tự Nhiên</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.naturalinflict": {
+    "name": "Nhiễm Thuật Pháp: Tự Nhiên",
+    "desc": "<@ba.naturalinflict>Nhiễm Tự Nhiên</> là một loại  <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nTối đa 4 tầng <@ba.naturalinflict>Nhiễm Tự Nhiên</> có thể được thi triển và cộng dồn kích hoạt <#ba.naturalburst>Bùng Nổ Tự Nhiên</>. \n<#ba.spellinflict>Không Nhiễm Tự Nhiên</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_pulse\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>) + <@ba.naturalinflict>Nhiễm Tự Nhiên</> = <#ba.corrupt>Ăn Mòn</>"
+  },
+  "ba.naturalonchar": {
+    "name": "Debuff Cán Viên: Nhiễm Tự Nhiên",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.naturalinflict>Nhiễm Tự Nhiên</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.corrupt>Ăn Mòn</>: Không thể lướt và bị giảm Tốc Chạy trong một khoảng thời gian nhất định."
+  },
+  "ba.naturalvul": {
+    "name": "Yếu Hóa Tự Nhiên",
+    "desc": "Các mục tiêu Dễ Bị Thương Tự Nhiên sẽ tạm thời chịu nhiều <@ba.natur>ST Tự Nhiên</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.noguard": {
+    "name": "Yếu Đuối",
+    "desc": "Đánh trúng kẻ địch lần đầu bằng kỹ năng có <#ba.physicalstatus>Trạng Thái Vật Lý</> sẽ áp dụng <@ba.noguard>Trừ Giáp</> thay vì Trạng Thái Vật Lý thực tế.\nKẻ địch trúng <@ba.phy>Yếu Đuối</> có thể bị <#ba.airborne>Hất Tung</> và <#ba.knockdown>Gục Ngã</> để cộng thêm số lần Trừ Giáp (tối đa 4). Đánh trúng kẻ địch dính Yếu Đuối bằng <#ba.crush>Nghiền</> hoặc <#ba.fracture>Phá Giáp</> sẽ <#ba.consume>tiêu hao</> số lần Trừ Giáp."
+  },
+  "ba.originium": {
+    "name": "Tinh Thể Originium",
+    "desc": "KN liên hoàn của Endministrator gắn Tinh Thể Originium vào kẻ địch và làm chúng bất động."
+  },
+  "ba.physicalenhance": {
+    "name": "Tăng ST Vật Lý",
+    "desc": "Các mục tiêu được Tăng ST Vật Lý sẽ tạm thời gây thêm <@ba.pd>ST Vật Lý</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.physicalstatus": {
+    "name": "Trạng Thái Vật Lý",
+    "desc": "Trạng Thái Vật Lý là các hiệu ứng debuff vật lý thi triển lên kẻ địch. Bao gồm: <#ba.airborne>Hất Tung</>, <#ba.knockdown>Gục Ngã</>, <#ba.crush>Nghiền</> và <#ba.fracture>Phá Giáp</>."
+  },
+  "ba.physicalvul": {
+    "name": "Yếu Hóa Vật Lý",
+    "desc": "Các mục tiêu Yếu Hóa Vật Lý sẽ tạm thời chịu nhiều <@ba.pd>ST Vật Lý</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.poiseknot": {
+    "name": "Điểm Suy Sụp",
+    "desc": "Một số kẻ địch mạnh có <@ba.poise>Điểm Suy Sụp</>. Gây đủ <@ba.poise>Suy Sụp</> chạm đến <@ba.poise>Điểm Suy Sụp</> sẽ làm kẻ địch bị gián đoạn và khiến chúng loạng choạng."
+  },
+  "ba.pulseburst": {
+    "name": "Bùng Nổ Thuật Pháp: Điện",
+    "desc": "<#ba.pulseinflict>Nhiễm Điện</> + <#ba.pulseinflict>Nhiễm Điện</> sẽ kích hoạt <@ba.pulse>Bùng Nổ Điện</> để gây <@ba.pulse>ST Điện</> cho kẻ địch."
+  },
+  "ba.pulseenhance": {
+    "name": "Tăng ST Điện",
+    "desc": "Các mục tiêu được Tăng ST Điện sẽ tạm thời gây thêm <@ba.pulse>ST Điện</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.pulseinflict": {
+    "name": "Nhiễm Thuật Pháp: Điện",
+    "desc": "<@ba.pulseinflict>Nhiễm Điện</> là một loại <#ba.spellinflict>Nhiễm Thuật Pháp</>. Có thể thi triển \ntối đa 4 lần <@ba.pulseinflict>Nhiễm Điện</> để cộng dồn kích hoạt <#ba.pulseburst>Bùng Nổ Điện</>. \n<#ba.spellinflict>Không Nhiễm Điện</> (<image=\"BuffIcon/icon_energy_fusion_fire\" scale=1.25>/<image=\"BuffIcon/icon_energy_fusion_cryst\" scale=1.25>/<image=\"BuffIcon/icon_infliction_nature\" scale=1.25>) + <@ba.pulseinflict>Nhiễm Điện</> = <#ba.conduct>Điện Hóa</>"
+  },
+  "ba.pulseonchar": {
+    "name": "Debuff Cán Viên: Nhiễm Điện",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <@ba.pulseinflict>Nhiễm Điện</> lên cán viên. \nKhi đủ 4 điểm cộng dồn, cán viên sẽ bị <@ba.conduct>Điện Hóa</>: Tạm thời bị choáng và chịu nhiều <#ba.spelldmg>ST Thuật Pháp</> hơn trong một khoảng thời gian nhất định."
+  },
+  "ba.pulsevul": {
+    "name": "Yếu Hóa Điện",
+    "desc": "Các mục tiêu Dễ Bị Thương Điện sẽ tạm thời chịu nhiều <@ba.pulse>ST Điện</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.return": {
+    "name": "Điểm KN Hoàn Trả",
+    "desc": "Sau khi sử dụng Điểm KN và đáp ứng những điều kiện cụ thể, một lượng điểm KN đã dùng sẽ được hoàn trả. \nHoàn Trả Điểm KN không phải là \"Hồi Điểm KN\" và sẽ không kích hoạt những hiệu ứng của Hồi Điểm KN. Sử dụng Điểm KN được hoàn trả cũng sẽ không hồi Năng Lượng Tuyệt Kỹ."
+  },
+  "ba.rossi": {
+    "name": "Dấu Cào",
+    "desc": "KN chiến đấu của Rossi khiến kẻ địch rơi vào trạng thái đặc biệt. Mục tiêu bị ảnh hưởng sẽ chịu <@ba.pd>ST Vật Lý</> theo thời gian, đồng thời nhận ST Vật Lý và ST Nhiệt cao hơn."
+  },
+  "ba.shield": {
+    "name": "Khiên",
+    "desc": "Khiên có thể hấp thu ST khi được kích hoạt. Một số khiên chỉ có thể hấp thu loại ST nhất định."
+  },
+  "ba.slow": {
+    "name": "Chậm Chạp",
+    "desc": "Các mục tiêu bị Chậm Chạp tạm thời chịu giảm Tốc Chạy. Con số hiển thị mức giảm. Khi có nhiều hiệu ứng cùng loại, chỉ hiệu ứng mạnh nhất mới có hiệu lực."
+  },
+  "ba.speedup": {
+    "name": "Tăng Tốc",
+    "desc": "Tạm thời tăng tốc chạy cho mục tiêu. Con số thể hiện mức độ tăng tốc. Các hiệu ứng cùng loại được cộng dồn đến khi đạt giới hạn tối đa."
+  },
+  "ba.spellburst": {
+    "name": "Bùng Nổ Thuật Pháp",
+    "desc": "<@ba.key>Bùng Nổ Thuật Pháp</> được kích hoạt khi cộng dồn số lần <#ba.spellinflict>Nhiễm Thuật Pháp</> của cùng nguyên tố. Bao gồm <#ba.fireburst>Bùng Nổ Nhiệt</>, <#ba.pulseburst>Bùng Nổ Điện</>, <#ba.crystburst>Bùng Nổ Băng</> và <#ba.naturalburst>Bùng Nổ Tự Nhiên</>."
+  },
+  "ba.spelldmg": {
+    "name": "Loại ST",
+    "desc": "Sát Thương có thể chia thành <@ba.pd>ST Vật Lý</>, <@ba.key>ST Thuật Pháp</> và <@ba.ether>ST Æther</>.\n<@ba.key>ST Thuật Pháp</> lại có thể chia thành <@ba.fire>ST Nhiệt</>, <@ba.pulse>ST Điện</>, <@ba.cryst>ST Băng</> và <@ba.natur>ST Tự Nhiên</>."
+  },
+  "ba.spellenhance": {
+    "name": "Tăng ST Thuật Pháp",
+    "desc": "Các mục tiêu được Tăng ST Thuật Pháp sẽ tạm thời gây thêm <#ba.spelldmg>ST Thuật Pháp</>. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.spellinflict": {
+    "name": "Nhiễm Thuật Pháp",
+    "desc": "<@ba.key>Nhiễm Thuật Pháp</> là debuff Thuật Pháp đặc biệt gây ra cho kẻ địch. Có 4 nguyên tố Nhiễm Thuật Pháp: <#ba.fireinflict>Nhiễm Nhiệt</>, <#ba.pulseinflict>Nhiễm Điện</>, <#ba.crystinflict>Nhiễm Băng</> và <#ba.naturalinflict>Nhiễm Tự Nhiên</>. \nCó thể thi triển tối đa 4 lần <@ba.key>Nhiễm Thuật Pháp</> của cùng một nguyên tố."
+  },
+  "ba.spellinflictonchar": {
+    "name": "Nhiễm Thuật Pháp/Phản Ứng Thuật Pháp thi triển lên Cán Viên",
+    "desc": "Một số kỹ năng của kẻ địch có thể cộng dồn <#ba.burningonchar>Nhiễm Nhiệt</>, <#ba.conductonchar>Nhiễm Điện</>, <#ba.frozenonchar>Nhiễm Băng</> hoặc <#ba.corruptonchar>Nhiễm Tự Nhiên</>.\nKhi đủ 4 điểm cộng dồn Nhiễm Thuật Pháp, cán viên sẽ bị <#ba.burningonchar>Thiêu Đốt</>, <#ba.conductonchar>Điện Hóa</>, <#ba.frozenonchar>Đông Cứng</> hoặc <#ba.corruptonchar>Ăn Mòn</> tương ứng."
+  },
+  "ba.spellstatus": {
+    "name": "Phản Ứng Thuật Pháp",
+    "desc": "<@ba.key>Phản Ứng Thuật Pháp</> là debuff Thuật Pháp có thể thi triển lên kẻ địch. Bao gồm: <#ba.burning>Thiêu Đốt</>, <#ba.conduct>Điện Hóa</>, <#ba.frozen>Đông Cứng</> và <#ba.corrupt>Ăn Mòn</>."
+  },
+  "ba.spellvul": {
+    "name": "Yếu Hóa Thuật Pháp",
+    "desc": "Các mục tiêu Yếu Hóa Thuật Pháp sẽ tạm thời chịu nhiều <#ba.spelldmg>ST Thuật Pháp</> hơn. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.statuslevel": {
+    "name": "Cấp Trạng Thái",
+    "desc": "Cấp Trạng Thái là số lần cộng dồn <#ba.noguard>Trừ Giáp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> (tối đa 4 lần) <#ba.consume>bị tiêu hao</> khi kích hoạt một <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellstatus>Phản Ứng Thuật Pháp</>. <#ba.statuslevel>Cấp Trạng Thái</> càng cao thì <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellstatus>Phản Ứng Thuật Pháp</> tạo ra sẽ càng mạnh."
+  },
+  "ba.vulnerable": {
+    "name": "Dễ Bị Thương",
+    "desc": "Mục tiêu bị Yếu Hóa sẽ tạm thời chịu nhiều ST hơn từ nguyên tố mà mục tiêu Dễ Bị Thương. Con số hiển thị mức tăng. Các hiệu ứng cùng loại được cộng dồn."
+  },
+  "ba.weak": {
+    "name": "Suy Yếu",
+    "desc": "Các mục tiêu bị Suy Yếu tạm thời giảm ST nhận. Con số hiển thị mức giảm ST. Các hiệu ứng cùng loại có thể cộng dồn phi tuyến tính."
+  },
+  "fac.hub": {
+    "name": "Lõi Tự Động Hóa Giao Thức",
+    "desc": "Lõi Tự Động Hóa Giao Thức (Lõi Giao Thức) là công trình trung tâm của Nhà Máy Khu Phức Hợp Công Nghiệp Tự Động (Khu Phức Hợp). Bạn có thể quản lý lưu trữ khi đứng trong Khu Phức Hợp Trung Tâm của Lõi Giao Thức."
+  },
+  "item.bbflower": {
+    "name": "Diêm Thảo",
+    "desc": "Một loại cây chứa các chất dễ cháy nổ. Có thể thu thập trong khu hoang vu.\nCây có thể được trồng tại các cơ sở của Nhà Máy Khu Phức Hợp hoặc được canh tác trên các <#item.portSoilBbflower>Ô Đất Diêm Thảo</>.\nCũng có thể được xử lý tại các cơ sở của Nhà Máy Khu Phức Hợp. Ví dụ: cây này có thể được nghiền nhỏ để sản xuất <#item.bbflowerPowder>Bột Diêm Thảo</>."
+  },
+  "item.bbflowerPowder": {
+    "name": "Bột Diêm Thảo",
+    "desc": "Một loại bột được sản xuất bằng cách nghiền nhỏ <#item.bbflower>Diêm Thảo</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.bbflowerSeed": {
+    "name": "Hạt Diêm Thảo",
+    "desc": "Hạt giống thu thập từ <#item.bbflower>Diêm Thảo</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nHạt Diêm Thảo có thể được trồng và phát triển tại các cơ sở của Nhà Máy Khu Phức Hợp để thu thập Diêm Thảo.\nNgoài ra, Hạt Diêm Thảo và <#item.carbonMtl>Carbon</> có thể được sử dụng tại giao diện <#sys.manualCraftField>Trồng Cây</> để tạo thành <#item.portSoilBbflower>Ô Đất Diêm Thảo</>."
+  },
+  "item.bottledRecHp1": {
+    "name": "Thuốc Kiều Mạch [C]",
+    "desc": "Một viên nang được tạo ra bằng cách <#sys.manualCraft>chế tác</> hoặc đổ <#item.plantMossPowder1>Bột Hoa Kiều Mạch</> vào <#item.glassBottle>Chai Thạch Anh Tím</> với cơ sở của Nhà Máy Khu Phức Hợp.\nSử dụng viên nang này để phục hồi HP cho cán viên. Nó cũng có thể được trang bị làm vật phẩm <#sys.tacticalItem>chiến thuật</>."
+  },
+  "item.carbonMtl": {
+    "name": "Carbon",
+    "desc": "Một loại vật liệu được sản xuất bằng cách tinh luyện <#item.plantMoss1>Hoa Kiều Mạch</> tại công trình Nhà Máy Khu Phức Hợp.\nCarbon rất cần thiết để chế tạo các ô đất <#sys.manualCraftField>trồng trọt</> và cũng có thể dùng trong sản xuất các vật liệu khác."
+  },
+  "item.crystalShell": {
+    "name": "Vỏ Originium",
+    "desc": "Lớp vỏ tinh thể được sản xuất bằng cách tinh luyện <#item.originium>Quặng Originium</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.glassBottle": {
+    "name": "Chai Thạch Anh Tím",
+    "desc": "Một loại chai được sản xuất bằng cách đúc <#item.quartzGlass>Sợi Thạch Anh Tím</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.glassCmpt": {
+    "name": "Mảnh Thạch Anh Tím",
+    "desc": "Một loại mảnh được sản xuất bằng cách ghép nhiều <#item.quartzGlass>Sợi Thạch Anh Tím</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.ironEnrPowder": {
+    "name": "Bột Sắt Đặc",
+    "desc": "Một loại bột mịn, đặc được sản xuất bằng cách nghiền <#item.ironPowder>Bột Sắt</> và <#item.plantMossPowder3>Bột Lá Cát</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.ironNugget": {
+    "name": "Sắt",
+    "desc": "Một thỏi kim loại được sản xuất bằng cách tinh luyện <#item.ironOre>Quặng Sắt</> tại công trình Nhà Máy Khu Phức Hợp và dùng để sản xuất các vật liệu khác."
+  },
+  "item.ironOre": {
+    "name": "Quặng Sắt",
+    "desc": "Một loại quặng có thể được thu thập từ các điểm khai thác Quặng Sắt trong khu hoang vu.\nCũng có thể được xử lý tại các cơ sở của Nhà Máy Khu Phức Hợp. Ví dụ: quặng này có thể được tinh chế để sản xuất <#item.ironNugget>Sắt</>."
+  },
+  "item.ironPowder": {
+    "name": "Bột Sắt",
+    "desc": "Một loại bột được sản xuất bằng cách nghiền nhỏ <#item.ironNugget>Sắt</> tại công trình Nhà Máy Khu Phức Hợp và dùng để sản xuất các vật liệu khác."
+  },
+  "item.originium": {
+    "name": "Quặng Originium",
+    "desc": "Một loại quặng có thể được thu thập từ các điểm khai thác Quặng Originium trong khu hoang vu. Có thể dùng để phát điện tại Nhà Máy Khu Phức Hợp.\nCũng có thể được xử lý tại các cơ sở của Nhà Máy Khu Phức Hợp. Ví dụ: quặng này có thể được tinh chế để sản xuất <#item.crystalShell>Vỏ Originium</>."
+  },
+  "item.originiumEnrPowder": {
+    "name": "Bột Originium Đặc",
+    "desc": "Một loại bột mịn, đặc được sản xuất bằng cách nghiền <#item.originiumPowder>Bột Originium</> và <#item.plantMossPowder3>Bột Lá Cát</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.originiumPowder": {
+    "name": "Bột Originium",
+    "desc": "Một loại bột được sản xuất bằng cách nghiền nhỏ <#item.originium>Quặng Originium</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.plantMoss1": {
+    "name": "Hoa Kiều Mạch",
+    "desc": "Hoa Kiều Mạch là một loại cây mọc trong khu hoang vu và nổi tiếng là loài hoa có màu sắc rực rỡ.\nLoại cây này cũng có thể được trồng tại các cơ sở của Nhà Máy Khu Phức Hợp hoặc <#item.portSoilMoss1>Ô Đất Hoa Kiều Mạch</>.\nLoại cây này có thể được sử dụng để chế tạo <#sys.tacticalItem>vật phẩm chiến thuật</> hoặc các vật liệu khác."
+  },
+  "item.plantMoss3": {
+    "name": "Lá Cát",
+    "desc": "Một loại cây có đặc điểm là lá thô ráp, sần sùi và mọc ngoài khu hoang vu.\nBạn có thể trồng cây này tại công trình Nhà Máy Khu Phức Hợp hoặc canh tác trên <#item.portSoilMoss3>Ô Đất Lá Cát</>.\nNgoài ra, cây còn có thể được chế biến tại các công trình Nhà Máy Khu Phức Hợp như nghiền nhỏ thành <#item.plantMossPowder3>Bột Lá Cát</>."
+  },
+  "item.plantMossPowder1": {
+    "name": "Bột Hoa Kiều Mạch",
+    "desc": "Một loại bột được tạo ra bằng cách <#sys.manualCraft>chế tạo</> hoặc cắt nhỏ <#item.plantMoss1>Hoa Kiều Mạch</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nSử dụng bột này để hồi HP cho cán viên. Nó cũng có thể được trang bị như <#sys.tacticalItem>vật phẩm chiến thuật</>."
+  },
+  "item.plantMossPowder3": {
+    "name": "Bột Lá Cát",
+    "desc": "Một loại bột được sản xuất bằng cách nghiền nhỏ <#item.plantMoss3>Lá Cát</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác, thường là bằng cách nghiền."
+  },
+  "item.plantMossSeed1": {
+    "name": "Hạt Hoa Kiều Mạch",
+    "desc": "Hạt giống được thu hoạch từ <#item.plantMoss1>Hoa Kiều Mạch</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nHạt Hoa Kiều Mạch sau đó có thể được trồng và chăm sóc tại các cơ sở của Nhà Máy Khu Phức Hợp để thu thập Hoa Kiều Mạch. Ngoài ra, Hạt Hoa Kiều Mạch và <#item.carbonMtl>Carbon</> có thể được sử dụng tại giao diện <#sys.manualCraftField>Trồng Cây</> để tạo thành các <#item.portSoilMoss1>Ô Đất Hoa Kiều Mạch</>."
+  },
+  "item.plantMossSeed3": {
+    "name": "Hạt Lá Cát",
+    "desc": "Hạt giống được thu hái được từ <#item.plantMoss3>Lá Cát</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nHạt Lá Cát sau đó có thể được trồng và phát triển tại các cơ sở của Nhà Máy Khu Phức Hợp để thu thập Lá Cát.\nNgoài ra, có thể sử dụng Hạt Lá Cát và <#item.carbonMtl>Carbon</> tại giao diện <#sys.manualCraftField>Trồng Cây</> để tạo thành <#item.portSoilMoss3>Ô Đất Lá Cát</>."
+  },
+  "item.plantMossSpc1": {
+    "name": "Kiều Mạch Lửa",
+    "desc": "Kiều Mạch Lửa là một loại cây mọc trong khu hoang vu và nổi tiếng với những bông hoa rực rỡ đặc biệt.\nCó khả năng thu được Kiều Mạch Lửa khi thu hoạch <#item.plantMoss1>Hoa Kiều Mạch</> trong khu hoang vu.\nChúng có thể được sử dụng để chế tạo <#sys.tacticalItem>vật phẩm chiến thuật</>."
+  },
+  "item.plantSp1": {
+    "name": "Hắc Mạch",
+    "desc": "Hắc Mạch là một loại cây trồng có thể thu thập được trong khu hoang vu. Nó cũng có thể được thu thập bằng cách canh tác <#item.portSoilSp1>Ô Đất Hắc Mạch</>.\nCó thể sử dụng trực tiếp để chế tạo <#sys.manualCraftDish>Linh Dược & Mỹ Vị</>."
+  },
+  "item.plantSpSeed1": {
+    "name": "Hạt Hắc Mạch",
+    "desc": "Hạt giống được tạo ra bằng cách thu hoạch hạt giống <#item.plantSp1>Hắc Mạch</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nSử dụng Hạt Hắc Mạch và <#item.carbonMtl>Carbon</>, sau đó chuyển đến giao diện <#sys.manualCraftField>Trồng Cây</> để chế tạo thành <#item.portSoilSp1>Ô Đất Hắc Mạch</>."
+  },
+  "item.portSoilBbflower": {
+    "name": "Ô Đất Diêm Thảo",
+    "desc": "Có thể canh tác Ô Đất Diêm Thảo tại Nông Trại Sinh Thái để thu thập <#item.bbflower>Diêm Thảo</>.\nNhững ô đất này có thể được chế tạo bằng cách sử dụng <#item.bbflowerSeed>Hạt Diêm Thảo</> và <#item.carbonMtl>Carbon</> tại giao diện Trồng Cây.\nThu hoạch một ô đất đã trưởng thành sẽ cung cấp rất nhiều Diêm Thảo."
+  },
+  "item.portSoilMoss1": {
+    "name": "Ô Đất Hoa Kiều Mạch",
+    "desc": "Có thể canh tác Ô Đất Hoa Kiều Mạch tại Nông Trại Sinh Thái để thu thập <#item.plantMoss1>Hoa Kiều Mạch</>.\nNhững ô đất này có thể được chế tạo bằng cách sử dụng <#item.plantMossSeed1>Hạt Hoa Kiều Mạch</> và <#item.carbonMtl>Carbon</> tại giao diện <#sys.manualCraftField>Trồng Cây</>.\nKhi thu hoạch một ô đất đã trưởng thành, bạn sẽ có cơ hội nhận được phần thưởng <#item.plantMossSpc1>Kiều Mạch Lửa</> cao hơn."
+  },
+  "item.portSoilMoss3": {
+    "name": "Ô Đất Lá Cát",
+    "desc": "Có thể canh tác Ô Đất Lá Cát tại Nông Trại Sinh Thái để thu thập <#item.plantMoss3>Lá Cát</>.\nNhững ô đất này có thể được chế tạo bằng cách sử dụng <#item.plantMossSeed3>Hạt Lá Cát</> và <#item.carbonMtl>Carbon</> tại giao diện Trồng Cây.\nThu hoạch một ô đất đã trưởng thành sẽ cung cấp rất nhiều Lá Cát."
+  },
+  "item.portSoilSp1": {
+    "name": "Ô Đất Hắc Mạch",
+    "desc": "Có thể canh tác các Ô Đất Hắc Mạch tại Nông Trại Sinh Thái để thu hoạch <#item.plantSp1>Hắc Mạch</>.\nNhững ô đất này có thể được chế tạo bằng cách sử dụng <#item.plantSpSeed1>Hạt Hắc Mạch</> và <#item.carbonMtl>Carbon</> tại giao diện Trồng Cây.\nThu hoạch một ô đất đã trưởng thành sẽ cung cấp rất nhiều Hắc Mạch."
+  },
+  "item.procBattery1": {
+    "name": "Pin Thung Lũng Dung Lượng Thấp",
+    "desc": "Một loại pin được sản xuất bằng cách đóng gói <#item.glassCmpt>Mảnh Thạch Anh Tím</> và <#item.originiumPowder>Bột Originium</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nPin có thể được sử dụng để cung cấp điện, sạc cho các cơ sở hoặc giao dịch tại nhiều tiền đồn."
+  },
+  "item.procBomb": {
+    "name": "Thuốc Nổ Công Nghiệp",
+    "desc": "Thuốc Nổ Công Nghiệp là một loại thuốc nổ có thể sản xuất.\nChúng được chế tạo bằng cách sử dụng Máy Đóng Gói, một trang thiết bị của Nhà Máy Khu Phức Hợp. Nguyên liệu cần thiết là <#item.glassCmpt>Mảnh Thạch Anh Tím</> và <#item.bbflowerPowder>Bột Diêm Thảo</>.\nSử dụng Thuốc Nổ Công Nghiệp để gây ST lên kẻ địch hoặc phá hủy các vật thể có thể phá hủy trong phạm vi nổ."
+  },
+  "item.quartzGlass": {
+    "name": "Sợi Thạch Anh Tím",
+    "desc": "Một loại sợi được sản xuất bằng cách tinh luyện <#item.quartzSand>Quặng Thạch Anh Tím</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.quartzPowder": {
+    "name": "Bột Thạch Anh Tím",
+    "desc": "Một loại bột được sản xuất bằng cách nghiền nhỏ <#item.quartzGlass>Sợi Thạch Anh Tím</> tại các cơ sở của Nhà Máy Khu Phức Hợp.\nCó thể dùng để sản xuất các vật liệu khác."
+  },
+  "item.quartzSand": {
+    "name": "Quặng Thạch Anh Tím",
+    "desc": "Một loại quặng có thể được thu thập từ các điểm khai thác Thạch Anh Tím trong khu hoang vu.\nCũng có thể được xử lý tại các cơ sở của Nhà Máy Khu Phức Hợp. Ví dụ: quặng này có thể được tinh chế để sản xuất <#item.quartzGlass>Sợi Thạch Anh Tím</>."
+  },
+  "sys.manualCraft": {
+    "name": "Chế Tạo",
+    "desc": "Mở bảng Túi để truy cập giao diện Chế Tạo. Nhiều nguyên liệu thô có thể được chế tạo thành các vật phẩm hữu ích.\nVí dụ: <#item.plantMoss1>Hoa Kiều Mạch</> có thể được chế tạo thành <#item.plantMossSeed1>Bột Hoa Kiều Mạch</> để hồi phục HP."
+  },
+  "sys.manualCraftDish": {
+    "name": "Linh Dược & Mỹ Vị",
+    "desc": "Linh Dược & Mỹ Vị có thể được sử dụng như <#sys.tacticalItem>vật phẩm chiến thuật</>. \nKhông giống như <#sys.manualCraftTonic>Linh Dược & Mỹ Vị Khẩn Cấp</>, chúng chỉ có thể được chế tạo bằng kỹ năng <#sys.manualCraft>Chế Tạo</>."
+  },
+  "sys.manualCraftField": {
+    "name": "Trồng Cây",
+    "desc": "Tính năng <#sys.manualCraft>Chế tạo</> cho phép bạn tạo ra ô đất trồng cây bằng hạt giống và <#item.carbonMtl>Carbon</>. Bạn có thể đặt và gieo trồng ô đó ở Nông Trại Sinh Thái."
+  },
+  "sys.manualCraftTonic": {
+    "name": "Linh Dược & Mỹ Vị Khẩn Cấp",
+    "desc": "Linh Dược & Mỹ Vị khẩn cấp có thể dùng làm <#sys.tacticalItem>vật phẩm chiến thuật</>.\nThu thập vật phẩm này bằng cách <#sys.manualCraft>Chế Tạo</> hoặc sử dụng công trình Nhà Máy Khu Phức Hợp."
+  },
+  "sys.tacticalItem": {
+    "name": "Vật Phẩm Chiến Thuật",
+    "desc": "Vật Phẩm Chiến Thuật là các vật phẩm có thể sử dụng khi chiến đấu để nhận nhiều lợi ích và buff. Mỗi vật phẩm chiến thuật có tiêu chí kích hoạt và giới hạn sử dụng riêng.\nMỗi cán viên có thể trang bị 1 vật phẩm chiến thuật. Trong trận chiến, bất cứ khi nào tiêu chí kích hoạt vật phẩm chiến thuật được đáp ứng, cán viên sẽ tự động sử dụng vật phẩm chiến thuật đã trang bị.\nSau khi hết số lần sử dụng vật phẩm chiến thuật trong một trận chiến, cần chờ một khoảng thời gian để có thêm lần sử dụng nữa."
+  }
+}

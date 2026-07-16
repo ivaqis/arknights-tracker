@@ -1,9 +1,11 @@
 // src/lib/i18n.js
 
 import { derived, writable } from 'svelte/store';
-import { currentLocale } from '$lib/stores/locale';
+import { currentLocale, currentUiLocale } from '$lib/stores/locale';
 
 const localeModules = import.meta.glob('./locales/*.json');
+const uiLocaleModules = import.meta.glob('./uiLocales/*.json');
+const hyperlinkModules = import.meta.glob('./locales/*/hyperlink.json');
 const loadedTranslations = writable({});
 
 export const isI18nReady = writable(false);
@@ -26,9 +28,12 @@ const getFileName = (code) => {
     return code;
 };
 
-const loadLocale = async (locale) => {
-    isI18nReady.set(false);
+const isUiOnly = (code) => {
+    const fileName = getFileName(code);
+    return `./uiLocales/${fileName}.json` in uiLocaleModules;
+};
 
+const loadLocale = async (locale) => {
     const fileName = getFileName(locale);
     let isAlreadyLoaded = false;
 
@@ -37,51 +42,91 @@ const loadLocale = async (locale) => {
     })();
 
     if (!isAlreadyLoaded) {
-        const loaders = [];
-
-        const loader = localeModules[`./locales/${fileName}.json`];
-        if (loader) loaders.push(loader().then(mod => ({ locale, data: mod.default || mod })));
-
-        let hasEnglish = false;
-        loadedTranslations.subscribe(current => { if (current['en']) hasEnglish = true; })();
-        
-        if (!hasEnglish && locale !== 'en') {
-            const enLoader = localeModules[`./locales/en.json`];
-            if (enLoader) loaders.push(enLoader().then(mod => ({ locale: 'en', data: mod.default || mod })));
+        let loader;
+        if (isUiOnly(locale)) {
+            loader = uiLocaleModules[`./uiLocales/${fileName}.json`];
+        } else {
+            loader = localeModules[`./locales/${fileName}.json`];
         }
 
-        if (loaders.length > 0) {
-            const results = await Promise.all(loaders);
-            loadedTranslations.update(current => {
-                const next = { ...current };
-                results.forEach(res => { next[res.locale] = res.data; });
-                return next;
-            });
+        if (loader) {
+            try {
+                const mod = await loader();
+                const data = mod.default || mod;
+
+                let hyperlinkData = {};
+                const hyperLinkLoader = hyperlinkModules[`./locales/${fileName}/hyperlink.json`];
+                if (hyperLinkLoader) {
+                    try {
+                        const hlMod = await hyperLinkLoader();
+                        const rawHlData = hlMod.default || hlMod;
+                        for (const [key, value] of Object.entries(rawHlData)) {
+                            const parts = key.split('.');
+                            let current = hyperlinkData;
+                            for (let i = 0; i < parts.length - 1; i++) {
+                                const part = parts[i];
+                                if (!current[part]) current[part] = {};
+                                current = current[part];
+                            }
+                            current[parts[parts.length - 1]] = value;
+                        }
+                    } catch (hlErr) {
+                        console.error(`Failed to load hyperlink data for ${locale}`, hlErr);
+                    }
+                }
+
+                loadedTranslations.update(current => ({
+                    ...current,
+                    [locale]: {
+                        ...data,
+                        hyperlink: hyperlinkData
+                    }
+                }));
+            } catch (err) {
+                console.error(`Failed to load translation for locale: ${locale}`, err);
+            }
         }
     }
-
-    if (typeof document !== 'undefined') {
-        document.documentElement.lang = locale;
-    }
-
-    isI18nReady.set(true);
 };
 
-currentLocale.subscribe(locale => {
-    loadLocale(locale);
-});
+derived([currentLocale, currentUiLocale], ([$main, $ui]) => [$main, $ui])
+    .subscribe(async ([$main, $ui]) => {
+        if ($main && $ui) {
+            isI18nReady.set(false);
+            
+            await Promise.all([
+                loadLocale($main),
+                loadLocale($ui),
+                loadLocale('en')
+            ]);
+            
+            if (typeof document !== 'undefined') {
+                document.documentElement.lang = $ui;
+            }
+            
+            isI18nReady.set(true);
+        }
+    });
 
-export const t = derived([loadedTranslations, currentLocale], ([$translations, $locale]) => (key, vars = {}) => {
-    const localeData = $translations[$locale] || {};
-    const enData = $translations['en'] || {};
-    
-    let text = getNestedValue(localeData, key);
-    
-    if (!text && $locale !== 'en') {
-        text = getNestedValue(enData, key);
+export const t = derived(
+    [loadedTranslations, currentLocale, currentUiLocale],
+    ([$translations, $locale, $uiLocale]) => (key, vars = {}) => {
+        const uiData = $translations[$uiLocale] || {};
+        const mainData = $translations[$locale] || {};
+        const enData = $translations['en'] || {};
+        
+        let text = getNestedValue(uiData, key);
+        
+        if (!text && $uiLocale !== $locale) {
+            text = getNestedValue(mainData, key);
+        }
+        
+        if (!text && $locale !== 'en' && $uiLocale !== 'en') {
+            text = getNestedValue(enData, key);
+        }
+
+        if (!text) return key;
+
+        return formatString(text, vars);
     }
-
-    if (!text) return key;
-
-    return formatString(text, vars);
-});
+);
