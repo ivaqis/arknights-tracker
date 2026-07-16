@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
 import { GameServerId } from "@models/GameServerId";
 import { ListValidationRule } from "@models/validation/ListValidationRule";
@@ -23,7 +24,7 @@ export class SyncProfileBodyValidator extends Validator<SyncProfileRequest> {
         const rule = new ListValidationRule(itemRule);
 
         return new ValidationRule(
-            item => Array.isArray(item) && 0 < item.serverIds.length && item.serverIds.length <= 2 && new Set(item).size === item.length && rule.isValid(item.serverIds),
+            item => Array.isArray(item.serverIds) && 0 < item.serverIds.length && item.serverIds.length <= 2 && new Set(item.serverIds).size === item.serverIds.length && rule.isValid(item.serverIds),
             "serverIds must be an array of unique valid server ids; 0 < serverIds.length <= 2"
         );
     }
