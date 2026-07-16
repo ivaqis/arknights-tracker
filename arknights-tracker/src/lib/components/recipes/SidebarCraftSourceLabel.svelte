@@ -10,9 +10,20 @@
     $: svgIconName =
         iconVariant === "manualCraft" ? "recepies"
         : iconVariant === "hubCraft" ? "pba"
-        : buildingModeName === "normal" ? "boxes"
-        : buildingModeName === "liquid" ? "liquid"
-        : "";
+        : getIconName(buildingModeName);
+
+    function getIconName(buildingModeName) {
+        switch (buildingModeName) {
+            case "normal": return "boxes";
+            case "liquid": return "liquid";
+            case "gas": return "port_gas";
+            case "gasliquid": return "port_gasliquid";
+            case "gastrans": return "port_gastrans";
+            case "liquidtrans": return "port_liquidtrans";
+            case "solidtrans": return "port_solidtrans";
+            default: return "";
+        }
+    }
 
 </script>
 
