@@ -60,11 +60,14 @@ export class MachineCraftSearcher extends CraftSearcher {
     }
 
     searchByFormulaIds(formulaIdList) {
+        // todo сделать возможнось установки формулы по умолчанию
         let result = {};
         let otherFormulaIdList = [];
         let dismantlerFormulaIdList = [];
         let purifierFormulaIdList = [];
         let furnaceIdList = [];
+        let transmuter1FormulaIdList = [];
+        let transmuter2FormulaIdList = [];
 
         for (let formulaId of formulaIdList) {
             let formula = MachineCraft.getMachineCraft(formulaId);
@@ -75,6 +78,8 @@ export class MachineCraftSearcher extends CraftSearcher {
             if (crafterId === "dismantler_1") dismantlerFormulaIdList.push(formulaId);
             else if (crafterId === "liquid_purifier_1") purifierFormulaIdList.push(formulaId);
             else if (crafterId === "furnance_1") furnaceIdList.push(formulaId);
+            else if (crafterId === "transmuter_1") transmuter1FormulaIdList.push(formulaId);
+            else if (crafterId === "transmuter_2") transmuter2FormulaIdList.push(formulaId);
             else otherFormulaIdList.push(formulaId);
 
             if (!result.hasOwnProperty(crafterId))
@@ -103,8 +108,20 @@ export class MachineCraftSearcher extends CraftSearcher {
             result = { furnance_1: furnaceResult, ...result };
         }
 
+        let transmuter1Result = result.transmuter_1;
+        if (transmuter1Result) {
+            delete result.transmuter_1;
+            result = { transmuter_1: transmuter1Result, ...result };
+        }
+
+        let transmuter2Result = result.transmuter_2;
+        if (transmuter2Result) {
+            delete result.transmuter_2;
+            result = { transmuter_2: transmuter2Result, ...result };
+        }
+
         return new MachineCraftSearchResult({
-            craftList: [...furnaceIdList, ...otherFormulaIdList, ...purifierFormulaIdList, ...dismantlerFormulaIdList],
+            craftList: [...transmuter2FormulaIdList, ...transmuter1FormulaIdList, ...furnaceIdList, ...otherFormulaIdList, ...purifierFormulaIdList, ...dismantlerFormulaIdList],
             resultMap: result
         });
     }

@@ -1991,6 +1991,28 @@ export const machineCrafts = {
         ],
         "craftTimeMs": 2000
     },
+    "xiranite_oven_xiranite_powder_2": {
+        "id": "xiranite_oven_xiranite_powder_2",
+        "formulaGroupId": "group_xiranite_oven_gasliquid",
+        "buildingId": "xiranite_oven_1",
+        "ingredients": [
+            {
+                "count": 1,
+                "itemId": "item_carbon_mtl"
+            },
+            {
+                "count": 1,
+                "itemId": "item_liquid_water"
+            }
+        ],
+        "outcomes": [
+            {
+                "count": 1,
+                "itemId": "item_xiranite_powder"
+            }
+        ],
+        "craftTimeMs": 2000
+    },
     "xiranite_oven_xiranite_powder_1": {
         "id": "xiranite_oven_xiranite_powder_1",
         "formulaGroupId": "group_xiranite_oven_liquid",
@@ -6354,27 +6376,5 @@ export const machineCrafts = {
             }
         ],
         "craftTimeMs": 10000
-    },
-    "xiranite_oven_xiranite_powder_2": {
-        "id": "xiranite_oven_xiranite_powder_2",
-        "formulaGroupId": "group_xiranite_oven_gasliquid",
-        "buildingId": "xiranite_oven_1",
-        "ingredients": [
-            {
-                "count": 1,
-                "itemId": "item_carbon_mtl"
-            },
-            {
-                "count": 1,
-                "itemId": "item_liquid_water"
-            }
-        ],
-        "outcomes": [
-            {
-                "count": 1,
-                "itemId": "item_xiranite_powder"
-            }
-        ],
-        "craftTimeMs": 2000
     }
 };

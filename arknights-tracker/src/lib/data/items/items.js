@@ -2997,7 +2997,7 @@ export const items = {
         "rarity": 4,
         "groupId": "product",
         "type": "component",
-        "material": "amethyst_enr"
+        "material": "copper_enr"
     },
     "item_filter_core": {
         "id": "item_filter_core",
