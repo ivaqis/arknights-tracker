@@ -536,10 +536,12 @@
     "itemGroup": "Nhóm vật phẩm",
     "itemGroups": {
       "nature": "Tài Nguyên Tự Nhiên",
-      "gatherable": "Có Thể Thu Thập",
+      "gatherable": "Vật Liệu Thu Thập",
       "product": "Sản Phẩm Khu Phức Hợp",
       "usable": "Vật Phẩm Có Thể Dùng",
-      "facility": "Sản xuất"
+      "facility": "Sản xuất",
+      "device": "Thiết Bị Cá Nhân",
+      "nurturance": "Vật Liệu Hiếm"
     },
     "itemSubGroups": {
       "facility_battle": "Chiến đấu",

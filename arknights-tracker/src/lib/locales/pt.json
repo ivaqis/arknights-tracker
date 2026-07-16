@@ -531,7 +531,9 @@
       "gatherable": "Coletáveis",
       "product": "Produtos do CAI",
       "usable": "Itens Utilizáveis",
-      "facility": "Produção"
+      "facility": "Produção",
+      "device": "Dispositivo Pessoal",
+      "nurturance": "Materiais Raros"
     }
   },
   "menu": {

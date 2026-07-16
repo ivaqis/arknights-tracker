@@ -531,7 +531,9 @@
       "gatherable": "Sammelobjekte",
       "product": "AIK-Produkte",
       "usable": "Verwendbare Gegenstände",
-      "facility": "Produktion"
+      "facility": "Produktion",
+      "device": "Persönliches Gerät",
+      "nurturance": "Seltene Materialien"
     }
   },
   "menu": {

@@ -540,7 +540,10 @@
       "gatherable": "Трофеи",
       "product": "Изделия АПК",
       "usable": "Используемые предметы",
-      "facility": "Производство"
+      "facility": "Производство",
+      "device": "Личное устройство",
+      "nurturance": "Редкие материалы",
+      "other": "Другое"
     },
     "itemSubGroups": {
       "facility_battle": "Вооружение",
@@ -614,7 +617,18 @@
       "power": "Энергия",
       "soil": "Плантация",
       "battle": "Бой",
-      "other": "Другое"
+      "other": "Другое",
+      "spcstone": "Минерал",
+      "mushroom": "Гриб",
+      "crylplant": "Кристальное растение",
+      "gas": "Газ",
+      "jar": "Контейнер",
+      "balloon_recycle": "Аэроэвакуатор",
+      "xiranite_radar": "Сканнер",
+      "xiranite_nexus": "Нексус",
+      "full_gas_jar": "Наполненный контейнер",
+      "gas_miner": "Газовый экстрактор",
+      "sanity": "Рассудок"
     },
     "itemMaterials": {
       "water": "Вода",
@@ -646,7 +660,8 @@
       "plant_sp_2": "Терпкий перец",
       "plant_sp_3": "Нефритовый женьшень",
       "plant_sp_4": "Янтарный рис",
-      "nonMaterial": "Без материала"
+      "nonMaterial": "Без материала",
+      "inert": "Инерген"
     },
     "localeName": {
       "a-z": "А - Я",

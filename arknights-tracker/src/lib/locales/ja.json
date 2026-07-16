@@ -531,7 +531,9 @@
       "gatherable": "採集素材",
       "product": "工業製品",
       "usable": "消費アイテム",
-      "facility": "工具"
+      "facility": "工具",
+      "device": "携帯アイテム",
+      "nurturance": "貴重素材"
     }
   },
   "menu": {

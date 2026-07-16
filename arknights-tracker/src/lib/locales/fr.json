@@ -531,7 +531,9 @@
       "gatherable": "Récoltables",
       "product": "Produits du GIA",
       "usable": "Objets utilisables",
-      "facility": "Production"
+      "facility": "Production",
+      "device": "Dispositif personnel",
+      "nurturance": "Matériaux rares"
     }
   },
   "menu": {

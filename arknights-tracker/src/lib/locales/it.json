@@ -531,7 +531,9 @@
       "gatherable": "Risorse da raccogliere",
       "product": "Prodotti del SIA",
       "usable": "Oggetti utilizzabili",
-      "facility": "Produzione"
+      "facility": "Produzione",
+      "device": "Dispositivo personale",
+      "nurturance": "Materiali rari"
     }
   },
   "menu": {

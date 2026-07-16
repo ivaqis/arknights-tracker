@@ -539,7 +539,9 @@
       "gatherable": "採集材料",
       "product": "工業產物",
       "usable": "可用道具",
-      "facility": "生產工具"
+      "facility": "生產工具",
+      "device": "隨身裝置",
+      "nurturance": "珍貴材料"
     },
     "itemSubGroups": {
       "facility_battle": "戰鬥",

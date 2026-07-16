@@ -531,7 +531,9 @@
       "gatherable": "Bisa Dikumpulkan",
       "product": "Produk AIC",
       "usable": "Item Berdaya Guna",
-      "facility": "Produksi"
+      "facility": "Produksi",
+      "device": "Perangkat Pribadi",
+      "nurturance": "Material Langka"
     }
   },
   "menu": {

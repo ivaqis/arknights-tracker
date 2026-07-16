@@ -541,7 +541,10 @@
       "gatherable": "Gatherables",
       "product": "AIC Products",
       "usable": "Usable Items",
-      "facility": "Production"
+      "facility": "Production",
+      "device": "Personal Device",
+      "nurturance": "Rare Materials",
+      "other": "Other"
     },
     "itemSubGroups": {
       "facility_battle": "Battle",
@@ -615,7 +618,18 @@
       "power": "Power",
       "soil": "Soil",
       "battle": "Battle",
-      "other": "Other"
+      "other": "Other",
+      "spcstone": "Mineral",
+      "mushroom": "Mushroom",
+      "crylplant": "Crystal Plant",
+      "gas": "Gas",
+      "jar": "Canister",
+      "balloon_recycle": "Aero-Salvager",
+      "xiranite_radar": "Scanner",
+      "xiranite_nexus": "Nexus",
+      "full_gas_jar": "Full Canister",
+      "gas_miner": "Gas Extractor",
+      "sanity": "Sanity"
     },
     "itemMaterials": {
       "water": "Water",
@@ -647,7 +661,8 @@
       "plant_sp_2": "Tartpepper",
       "plant_sp_3": "Redjade Ginseng",
       "plant_sp_4": "Amber Rice",
-      "nonMaterial": "No Material"
+      "nonMaterial": "No Material",
+      "inert": "Inergen"
     },
     "localeName": {
       "a-z": "A - Z",

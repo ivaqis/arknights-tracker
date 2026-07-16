@@ -531,7 +531,9 @@
       "gatherable": "채집 재료",
       "product": "공업 생산품",
       "usable": "사용할 수 있는 아이템",
-      "facility": "생산 도구"
+      "facility": "생산 도구",
+      "device": "휴대 장치",
+      "nurturance": "희귀 재료"
     }
   },
   "menu": {

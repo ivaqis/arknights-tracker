@@ -539,7 +539,9 @@
       "gatherable": "采集材料",
       "product": "工业产物",
       "usable": "可用道具",
-      "facility": "生产工具"
+      "facility": "生产工具",
+      "device": "随身装置",
+      "nurturance": "珍贵材料"
     },
     "itemSubGroups": {
       "facility_battle": "战斗",
