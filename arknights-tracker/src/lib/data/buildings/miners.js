@@ -4,7 +4,8 @@ export const miners = {
         "mineable": {
             "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             }
         }
     },
@@ -13,11 +14,13 @@ export const miners = {
         "mineable": {
             "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             },
             "item_quartz_sand": {
                 "miningItemId": "item_quartz_sand",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             }
         }
     },
@@ -26,15 +29,18 @@ export const miners = {
         "mineable": {
             "item_originium_ore": {
                 "miningItemId": "item_originium_ore",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             },
             "item_quartz_sand": {
                 "miningItemId": "item_quartz_sand",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             },
             "item_iron_ore": {
                 "miningItemId": "item_iron_ore",
-                "miningTimeMs": 3000
+                "miningTimeMs": 3000,
+                "consumeItem": null
             }
         }
     },
