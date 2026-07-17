@@ -65,9 +65,9 @@
     function getCategoryLocale(category) {
         switch (category) {
             case "any": return $t("essencesPage.anyAttr");
-            case 1: return $t("essencesPage.attr1");
-            case 2: return $t("essencesPage.attr2");
-            case 3: return $t("essencesPage.attr3");
+            case 1: return $t("sort.mainAttribute");
+            case 2: return $t("sort.subAttribute");
+            case 3: return $t("sort.specialAttribute");
         }
     }
 
