@@ -85,17 +85,26 @@
 
             if (!passesAny) return false;
 
-            for (let i = 1; i <= 3; i++) {
-                const required = selectedFilters[`stats_${i}`];
+            // for (let i = 1; i <= 3; i++) { // todo
+            //     const required = selectedFilters[`stats_${i}`];
+            //
+            //     if (required && required.size > 0) {
+            //         const statAtThisPos = allItemAttributes[i];
+            //
+            //         if (!statAtThisPos || !filterCheckLowerCase(required, statAtThisPos)) {
+            //             return false;
+            //         }
+            //     }
+            // }
 
-                if (required && required.size > 0) {
-                    const statAtThisPos = allItemAttributes[i];
+            const passesMain = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
+            const passesSub = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
+            const passesSpecial = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
 
-                    if (!statAtThisPos || !filterCheckLowerCase(required, statAtThisPos)) {
-                        return false;
-                    }
-                }
+            if (!(passesMain && passesSub && passesSpecial)) {
+                return false;
             }
+
             return matchesRarity && matchesPart && matchesPack;
         });
 
@@ -141,28 +150,28 @@
     })();
 
     $: equipmentFilteredByAttr12 = allEquipment.filter((eq) => {
-        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
+        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1] ?? "");
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2] ?? "");
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
 
         return passesAttr1 && passesAttr2;
     });
 
     $: equipmentFilteredByAttr23 = allEquipment.filter((eq) => {
-        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
+        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, allItemAttributes[2] ?? "");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
 
         return passesAttr2 && passesAttr3;
     });
 
     $: equipmentFilteredByAttr13 = allEquipment.filter((eq) => {
-        const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
+        // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, allItemAttributes[1] ?? "");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, allItemAttributes[3] ?? "");
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
 
         return passesAttr1 && passesAttr3;
     });
@@ -177,6 +186,35 @@
         allFilters.stats_3 = getFilteredAttrGroupList(allFilters.stats, attrFilters3);
 
         forceUpdateFilterList();
+    }
+
+    const mainStats = new Set([
+        "Str",
+        "Agi",
+        "Wisd",
+        "Will"
+    ]);
+
+    function getMainStat(displayAttrList) {
+        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType));
+
+        candidates.sort((a, b) => b.values[0] - a.values[0]);
+
+        return candidates[0];
+    }
+
+    function getSubStat(displayAttrList) {
+        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType));
+
+        candidates.sort((a, b) => a.values[0] - b.values[0]);
+
+        return candidates[0];
+    }
+
+    function getSpecialStat(displayAttrList) {
+        const candidates = displayAttrList.filter(a => !mainStats.has(a.attrType) && a.attrType !== "Def");
+
+        return candidates[0];
     }
 
     function getFilteredAttrGroupList(allAttrGroupList, attrSet) {
@@ -202,7 +240,10 @@
         let set = new Set();
 
         for (let eq of equipmentList) {
-            let attr = eq.displayAttr[attrIndex]?.attrType;
+            let attr = attrIndex === 1 ? getMainStat(eq.displayAttr)?.attrType
+                : attrIndex === 2 ? getSubStat(eq.displayAttr)?.attrType
+                : attrIndex === 3 ? getSpecialStat(eq.displayAttr)?.attrType
+                : undefined;
 
             if (attr) {
                 set.add(attr);
