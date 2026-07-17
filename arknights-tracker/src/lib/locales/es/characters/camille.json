@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Absolución sanguínea",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "firefangVesperwingsDurationS": "Duración de Vesperalas de colmillo ígneo (s)",
-        "weaknessEffect": "Efecto de debilidad",
-        "heatSusceptibility": "Susceptibilidad al calor",
-        "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión"
-      },
       "name": "Exorcismo ardiente",
-      "description": "Camille invoca <@ba.key>Vesperalas de colmillo ígneo</> que vuelan hacia el enemigo para infligir <@ba.fire>DAÑ por calor</> y aplicar <#ba.fireinflict>Imposición de calor</> a los enemigos en una pequeña área de efecto. Las <@ba.key>Vesperalas de colmillo ígneo</> luego <@ba.key>flotan</> temporalmente alrededor del objetivo y aplican <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> a dicho objetivo mientras floten. Cuando el objetivo es derrotado, las <@ba.key>Vesperalas de colmillo ígneo</> vuelan hacia otro enemigo cercano, infligen <@ba.fire>DAÑ por calor</> y aplican <#ba.fireinflict>Imposición de calor</>, <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> al nuevo objetivo.\nGolpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</> <@ba.key>flotantes</> con la habilidad de combo de Camille provoca una explosión tras un breve retraso. Esta explosión inflige <@ba.fire>DAÑ por calor</> adicional."
+      "description": "Camille invoca <@ba.key>Vesperalas de colmillo ígneo</> que vuelan hacia el enemigo para infligir <@ba.fire>DAÑ por calor</> y aplicar <#ba.fireinflict>Imposición de calor</> a los enemigos en una pequeña área de efecto. Las <@ba.key>Vesperalas de colmillo ígneo</> luego <@ba.key>flotan</> temporalmente alrededor del objetivo y aplican <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> a dicho objetivo mientras floten. Cuando el objetivo es derrotado, las <@ba.key>Vesperalas de colmillo ígneo</> vuelan hacia otro enemigo cercano, infligen <@ba.fire>DAÑ por calor</> y aplican <#ba.fireinflict>Imposición de calor</>, <#ba.weak>Debilidad</> y <#ba.firevul>Susceptibilidad al calor</> al nuevo objetivo.\nGolpear a un enemigo con <@ba.key>Vesperalas de colmillo ígneo</> <@ba.key>flotantes</> con la habilidad de combo de Camille provoca una explosión tras un breve retraso. Esta explosión inflige <@ba.fire>DAÑ por calor</> adicional.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "firefangVesperwingsDurationS": "Duración de Vesperalas de colmillo ígneo (s)",
+      "weaknessEffect": "Efecto de debilidad",
+      "heatSusceptibility": "Susceptibilidad al calor",
+      "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "spRecovery": "Recuperación de PH",
-        "hunterPursuitDmgMultiplier": "Multiplicador de DAÑ de Persecución del cazador",
-        "hunterPursuitStagger": "Tambaleo por Persecución del cazador",
-        "hunterPursuitSpRecovery": "Recuperación de PH. por Persecución del cazador",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Espina clavacorazones",
-      "description": "ACTIVADOR DE COMBO: Cuando la <#ba.fireinflict>Imposición de calor</> del enemigo se <#ba.consume>consume</> o es <#ba.absorb>absorbida</>.\nRealiza un desplazamiento de regreso que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH."
+      "description": "ACTIVADOR DE COMBO: Cuando la <#ba.fireinflict>Imposición de calor</> del enemigo se <#ba.consume>consume</> o es <#ba.absorb>absorbida</>.\nRealiza un desplazamiento de regreso que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "spRecovery": "Recuperación de PH",
+      "hunterPursuitDmgMultiplier": "Multiplicador de DAÑ de Persecución del cazador",
+      "hunterPursuitStagger": "Tambaleo por Persecución del cazador",
+      "hunterPursuitSpRecovery": "Recuperación de PH. por Persecución del cazador",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "spRecovery": "Recuperación de PH",
-        "hunterPursuitStateDurationS": "Duración del Estado de Persecución del cazador (s)"
-      },
       "name": "Lluvia sanguínea",
-      "description": "Camille vuela hacia el cielo, desata una lluvia de lanzas y remata con un ataque de barrido. Esto inflige <@ba.fire>DAÑ por calor</> y aplica <#ba.fireinflict>Imposición de calor</> a los objetivos golpeados mientras recupera algo de PH. \nDespués de lanzar la máxima, la habilidad de batalla de Camille se transforma temporalmente en <@ba.key>Persecución del cazador</>.\n<@ba.key>Persecución del cazador</>: Se considera una habilidad de combo y no cuesta PH. Es un ataque de desplazamiento que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH."
+      "description": "Camille vuela hacia el cielo, desata una lluvia de lanzas y remata con un ataque de barrido. Esto inflige <@ba.fire>DAÑ por calor</> y aplica <#ba.fireinflict>Imposición de calor</> a los objetivos golpeados mientras recupera algo de PH. \nDespués de lanzar la máxima, la habilidad de batalla de Camille se transforma temporalmente en <@ba.key>Persecución del cazador</>.\n<@ba.key>Persecución del cazador</>: Se considera una habilidad de combo y no cuesta PH. Es un ataque de desplazamiento que inflige <@ba.fire>DAÑ por calor</> y recupera algo de PH.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "spRecovery": "Recuperación de PH",
+      "hunterPursuitStateDurationS": "Duración del Estado de Persecución del cazador (s)"
     },
     "indicator": {
       "levels": [

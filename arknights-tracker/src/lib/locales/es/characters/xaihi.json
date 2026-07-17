@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Enfriamiento",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "Tratamiento base",
-        "treatmentIncreasePerWill": "Incremento de tratamiento por Voluntad",
-        "auxiliaryCrystalDurationS": "Duración (s) de Cristal auxiliar",
-        "artsAmp": "Amp de artes",
-        "artsAmpDurationS": "Duración (s) Amp de artes"
-      },
       "name": "Ataque DoS Distribuido",
-      "description": "Invoca un <@ba.key>Cristal auxiliar</> que orbita alrededor del operador controlado por un momento. \nDespués de que el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre el enemigo, el <@ba.key>Cristal auxiliar</> restaurará los PV de dicho operador. Este efecto puede activarse 2 veces. El atributo de Voluntad aumenta la cantidad de tratamiento de PV. \nCuando el operador controlado ya tiene los PV Máx. al activar la recuperación de los PV, también se le otorga una <#ba.spellenhance>Amp de artes</> temporal. Este efecto no se puede acumular."
+      "description": "Invoca un <@ba.key>Cristal auxiliar</> que orbita alrededor del operador controlado por un momento. \nDespués de que el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre el enemigo, el <@ba.key>Cristal auxiliar</> restaurará los PV de dicho operador. Este efecto puede activarse 2 veces. El atributo de Voluntad aumenta la cantidad de tratamiento de PV. \nCuando el operador controlado ya tiene los PV Máx. al activar la recuperación de los PV, también se le otorga una <#ba.spellenhance>Amp de artes</> temporal. Este efecto no se puede acumular.",
+      "baseTreatment": "Tratamiento base",
+      "treatmentIncreasePerWill": "Incremento de tratamiento por Voluntad",
+      "auxiliaryCrystalDurationS": "Duración (s) de Cristal auxiliar",
+      "artsAmp": "Amp de artes",
+      "artsAmpDurationS": "Duración (s) Amp de artes"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Prueba de estrés",
-      "description": "ACTIVADOR DE COMBO: Cuando el <@ba.key>Cristal auxiliar</> agota sus tratamientos de PV. \nCarga rápidamente el <@ba.key>Cristal auxiliar</> y lo lanza al enemigo para infligir <@ba.cryst>DAÑ criogénico</> e <#ba.crystinflict>Imposición criogénica</>."
+      "description": "ACTIVADOR DE COMBO: Cuando el <@ba.key>Cristal auxiliar</> agota sus tratamientos de PV. \nCarga rápidamente el <@ba.key>Cristal auxiliar</> y lo lanza al enemigo para infligir <@ba.cryst>DAÑ criogénico</> e <#ba.crystinflict>Imposición criogénica</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "Amp criogénica inicial",
-        "baseNatureAmp": "Amp-Nat inicial",
-        "ampIncreasePerIntellect": "Amp incrementa por Intelecto",
-        "intellectRaisesAmpLimit": "Amp MÁX de Intelecto",
-        "durationS": "Duración (s)"
-      },
       "name": "Sobreacumulación",
-      "description": "Aplica <#ba.crystenhance>Amp criogénica</> y <#ba.naturalenhance>Amplificación de naturaleza</> temporales a todo el equipo. El atributo Intelecto incrementa el efecto Amplific."
+      "description": "Aplica <#ba.crystenhance>Amp criogénica</> y <#ba.naturalenhance>Amplificación de naturaleza</> temporales a todo el equipo. El atributo Intelecto incrementa el efecto Amplific.",
+      "baseCryoAmp": "Amp criogénica inicial",
+      "baseNatureAmp": "Amp-Nat inicial",
+      "ampIncreasePerIntellect": "Amp incrementa por Intelecto",
+      "intellectRaisesAmpLimit": "Amp MÁX de Intelecto",
+      "durationS": "Duración (s)"
     },
     "indicator": {
       "levels": [

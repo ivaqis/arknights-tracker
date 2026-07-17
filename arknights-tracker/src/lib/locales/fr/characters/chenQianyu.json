@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Essor fracassant",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "liftDurationS": "Durée de Soulèvement (s)"
-      },
       "name": "Frappe ascendante",
-      "description": "Assène une entaille verticale à l'ennemi ciblé, lui infligeant des <@ba.pd>DÉG physiques</> et le <#ba.airborne>soulevant</>."
+      "description": "Assène une entaille verticale à l'ennemi ciblé, lui infligeant des <@ba.pd>DÉG physiques</> et le <#ba.airborne>soulevant</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "liftDurationS": "Durée de Soulèvement (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Ruée vers les étoiles",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.noguard>vulnérable</>. \nLance une ruée tranchante qui traverse l'ennemi ciblé, lui inflige des <@ba.pd>DÉG physiques</> et <#ba.airborne>soulève</> tous les ennemis sur sa trajectoire."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.noguard>vulnérable</>. \nLance une ruée tranchante qui traverse l'ennemi ciblé, lui inflige des <@ba.pd>DÉG physiques</> et <#ba.airborne>soulève</> tous les ennemis sur sa trajectoire.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Multiplicateur d'Entaille",
-        "firstStrikeStagger": "Déséquilibre de Premier coup",
-        "finalStrikeDmgMultiplier": "Multiplicateur de DÉG de Coup final",
-        "finalStrikeStagger": "Déséquilibre de Coup final"
-      },
       "name": "Tempête de lames",
-      "description": "Une attaque tranchante à 7 séquences qui inflige des <@ba.pd>DÉG physiques</> à la cible ennemie à chaque séquence. La séquence d'entaille finale inflige encore plus de DÉG."
+      "description": "Une attaque tranchante à 7 séquences qui inflige des <@ba.pd>DÉG physiques</> à la cible ennemie à chaque séquence. La séquence d'entaille finale inflige encore plus de DÉG.",
+      "slashMultiplier": "Multiplicateur d'Entaille",
+      "firstStrikeStagger": "Déséquilibre de Premier coup",
+      "finalStrikeDmgMultiplier": "Multiplicateur de DÉG de Coup final",
+      "finalStrikeStagger": "Déséquilibre de Coup final"
     },
     "indicator": {
       "levels": [

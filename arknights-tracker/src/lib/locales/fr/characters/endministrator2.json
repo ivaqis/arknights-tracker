@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Séquence destructrice",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Séquence constructive",
-      "description": "Une puissante explosion d'Arts de l'originium qui attaque les ennemis dans la zone d'effet. Inflige des <@ba.pd>DÉG physiques</> et applique <#ba.crush>Broyage</>."
+      "description": "Une puissante explosion d'Arts de l'originium qui attaque les ennemis dans la zone d'effet. Inflige des <@ba.pd>DÉG physiques</> et applique <#ba.crush>Broyage</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "crystalShatteringDmgMultiplier": "Multiplicateur de DÉG d'éclatement de cristal",
-        "stagger": "Déséquilibre",
-        "sealDurationS": "Durée du sceau (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Séquence de scellement",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un autre opérateur de l'équipe inflige des DÉG grâce à une compétence de combo. \nSe précipite vers l'ennemi pour lui infliger des <@ba.pd>DÉG physiques</> et attacher des <#ba.originium>cristaux d'originium</> qui le scellent temporairement. Appliquer un <#ba.physicalstatus>statut physique</> ou <#ba.noguard>Vulnérabilité</> à l'ennemi scellé <#ba.consume>consomme</> les <#ba.originium>cristaux d'originium</> et inflige des <@ba.pd>DÉG physiques</> supplémentaires."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un autre opérateur de l'équipe inflige des DÉG grâce à une compétence de combo. \nSe précipite vers l'ennemi pour lui infliger des <@ba.pd>DÉG physiques</> et attacher des <#ba.originium>cristaux d'originium</> qui le scellent temporairement. Appliquer un <#ba.physicalstatus>statut physique</> ou <#ba.noguard>Vulnérabilité</> à l'ennemi scellé <#ba.consume>consomme</> les <#ba.originium>cristaux d'originium</> et inflige des <@ba.pd>DÉG physiques</> supplémentaires.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "crystalShatteringDmgMultiplier": "Multiplicateur de DÉG d'éclatement de cristal",
+      "stagger": "Déséquilibre",
+      "sealDurationS": "Durée du sceau (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "bonusDmgMultiplier": "Multiplicateur de DÉG bonus",
-        "stagger": "Déséquilibre"
-      },
       "name": "Séquence de bombardement",
-      "description": "Bombarde le sol d'Arts de l'originium, infligeant de lourds <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone en éventail. Si l'ennemi a des <#ba.originium>cristaux d'originium</> attachés, cette compétence les <#ba.consume>consomme</> et inflige des <@ba.pd>DÉG physiques</> une fois de plus."
+      "description": "Bombarde le sol d'Arts de l'originium, infligeant de lourds <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone en éventail. Si l'ennemi a des <#ba.originium>cristaux d'originium</> attachés, cette compétence les <#ba.consume>consomme</> et inflige des <@ba.pd>DÉG physiques</> une fois de plus.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "bonusDmgMultiplier": "Multiplicateur de DÉG bonus",
+      "stagger": "Déséquilibre"
     },
     "indicator": {
       "levels": [

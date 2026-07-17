@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Seek and Hunt",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
-        "additionalAtkStagger": "Tambahan ATK Stagger",
-        "spRecovery": "Pemulihan SP"
-      },
       "name": "Tempestuous Arc",
-      "description": "Langsung memelesat ke samping musuh dan melancarkan tebasan 2 kali sehingga akan menimbulkan sejumlah <@ba.pd>Physical DMG</>. Jika musuh sedang terkena <#ba.conduct>Electrification</>, <#ba.conduct>Electrification</> tersebut akan <#ba.consume>dipakai</> untuk melancarkan serangan tambahan yang akan menimbulkan <@ba.pulse>Electric DMG</> dan memulihkan sebagian SP."
+      "description": "Langsung memelesat ke samping musuh dan melancarkan tebasan 2 kali sehingga akan menimbulkan sejumlah <@ba.pd>Physical DMG</>. Jika musuh sedang terkena <#ba.conduct>Electrification</>, <#ba.conduct>Electrification</> tersebut akan <#ba.consume>dipakai</> untuk melancarkan serangan tambahan yang akan menimbulkan <@ba.pulse>Electric DMG</> dan memulihkan sebagian SP.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "additionalAtkStagger": "Tambahan ATK Stagger",
+      "spRecovery": "Pemulihan SP"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "spRecovery": "Pemulihan SP",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Peal of Thunder",
-      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.conduct>Electrification</> atau setelah <#ba.conduct>Electrification</> musuh <#ba.consume>dipakai</>. \nMemelesat ke samping musuh untuk melepaskan serangkaian tebasan sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP."
+      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.conduct>Electrification</> atau setelah <#ba.conduct>Electrification</> musuh <#ba.consume>dipakai</>. \nMemelesat ke samping musuh untuk melepaskan serangkaian tebasan sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP.",
+      "dmgMultiplier": "Pengganda DMG",
+      "spRecovery": "Pemulihan SP",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger"
-      },
       "name": "Exploding Blitz",
-      "description": "Melejit pendek ke depan sambil membawa busur listrik sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada semua musuh yang ada di lintasannya. Sisa energi akan meledak setelah beberapa saat sehingga akan menimbulkan <@ba.pulse>Electric DMG</> lagi. Jika musuh sedang terkena <#ba.pulseinflict>Electric Infliction</>, <#ba.pulseinflict>Electric Infliction</> tersebut akan <#ba.consume>dipakai</> dan secara paksa mengakibatkan <#ba.conduct>Electrification</>."
+      "description": "Melejit pendek ke depan sambil membawa busur listrik sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada semua musuh yang ada di lintasannya. Sisa energi akan meledak setelah beberapa saat sehingga akan menimbulkan <@ba.pulse>Electric DMG</> lagi. Jika musuh sedang terkena <#ba.pulseinflict>Electric Infliction</>, <#ba.pulseinflict>Electric Infliction</> tersebut akan <#ba.consume>dipakai</> dan secara paksa mengakibatkan <#ba.conduct>Electrification</>.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger"
     },
     "indicator": {
       "levels": [

@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "ICH HAU DICH AUS DEN LATSCHEN!",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Schießen-SDN-Multiplikator",
-        "shotStagger": "Schuss-Taumeln",
-        "dmgMultiplier1Waterspout": "SDN-Multiplikator (1 Wasserhose)",
-        "waterspoutDurationS": "Dauer: Wasserhose (Sek.)",
-        "spReturnPerWhirlpool": "FP-Rückerstattung pro Strudel",
-        "artsSusceptibility2Waterspouts": "Technik-Empfänglichkeit (2 Wasserhosen)",
-        "artsSusceptibility3Waterspouts": "Technik-Empfänglichkeit (3 Wasserhosen)",
-        "artsSusceptibilityDurationS": "Dauer der Technik-Empfänglichkeit (Sek.)"
-      },
       "name": "ICH REITE DIE WELLEEEN!",
-      "description": "Tangtang springt aus dem Wasser und feuert aus nächster Nähe einen Schuss ab, der dem Gegner <@ba.cryst>Kryo-SDN</> zufügt und eine <@ba.key>Wasserhose</> erzeugt.\nDas Wirken der Kampffertigkeit verbraucht auch alle <@ba.key>Strudel</> in der Nähe, um zusätzliche <@ba.key>Wasserhosen</> zu erzeugen und auf Basis der Anzahl der erzeugten Wasserhosen FP zu <#ba.return>erstatten</>.\n<@ba.key>Wasserhose</>: Belegt Gegner in Reichweite mit 1 Kumulierung <#ba.crystinflict>Kryo</> und verursacht kontinuierlichen <@ba.cryst>Kryo-SDN</>. Wenn die Kampffertigkeit mehrere <@ba.key>Wasserhosen</> erzeugt, wenden diese auf Gegner zusätzlich <#ba.spellvul>Technik-Empfänglichkeit</> an (allerdings keine weitere Kumulierung <#ba.crystinflict>Kryo</>).\n<@ba.info>Von der Wasserhose verursachter SDN wird als Kampffertigkeits-SDN gewertet.</>"
+      "description": "Tangtang springt aus dem Wasser und feuert aus nächster Nähe einen Schuss ab, der dem Gegner <@ba.cryst>Kryo-SDN</> zufügt und eine <@ba.key>Wasserhose</> erzeugt.\nDas Wirken der Kampffertigkeit verbraucht auch alle <@ba.key>Strudel</> in der Nähe, um zusätzliche <@ba.key>Wasserhosen</> zu erzeugen und auf Basis der Anzahl der erzeugten Wasserhosen FP zu <#ba.return>erstatten</>.\n<@ba.key>Wasserhose</>: Belegt Gegner in Reichweite mit 1 Kumulierung <#ba.crystinflict>Kryo</> und verursacht kontinuierlichen <@ba.cryst>Kryo-SDN</>. Wenn die Kampffertigkeit mehrere <@ba.key>Wasserhosen</> erzeugt, wenden diese auf Gegner zusätzlich <#ba.spellvul>Technik-Empfänglichkeit</> an (allerdings keine weitere Kumulierung <#ba.crystinflict>Kryo</>).\n<@ba.info>Von der Wasserhose verursachter SDN wird als Kampffertigkeits-SDN gewertet.</>",
+      "shootingDmgMultiplier": "Schießen-SDN-Multiplikator",
+      "shotStagger": "Schuss-Taumeln",
+      "dmgMultiplier1Waterspout": "SDN-Multiplikator (1 Wasserhose)",
+      "waterspoutDurationS": "Dauer: Wasserhose (Sek.)",
+      "spReturnPerWhirlpool": "FP-Rückerstattung pro Strudel",
+      "artsSusceptibility2Waterspouts": "Technik-Empfänglichkeit (2 Wasserhosen)",
+      "artsSusceptibility3Waterspouts": "Technik-Empfänglichkeit (3 Wasserhosen)",
+      "artsSusceptibilityDurationS": "Dauer der Technik-Empfänglichkeit (Sek.)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "whirlpoolDurationS": "Dauer: Strudel (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "FLUSS, ZU MIR!",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.crystinflict>Kryo</> belegt ist oder ihm <#ba.spellburst>Technikexplosion-SDN</> zugefügt wird.\nTangtang verschießt einen mächtigen Strahl, der alle Gegner in seinem Pfad durchdringt, ihnen <@ba.cryst>Kryo-SDN</> zufügt und einen <@ba.key>Strudel</> erzeugt.\n<@ba.info>Es können bis zu 2 Strudel gleichzeitig auf dem Schlachtfeld existieren.</>"
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.crystinflict>Kryo</> belegt ist oder ihm <#ba.spellburst>Technikexplosion-SDN</> zugefügt wird.\nTangtang verschießt einen mächtigen Strahl, der alle Gegner in seinem Pfad durchdringt, ihnen <@ba.cryst>Kryo-SDN</> zufügt und einen <@ba.key>Strudel</> erzeugt.\n<@ba.info>Es können bis zu 2 Strudel gleichzeitig auf dem Schlachtfeld existieren.</>",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "whirlpoolDurationS": "Dauer: Strudel (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Gesamtmultiplikator für Kontinuierlichen SDN",
-        "oldenStareDurationS": "Dauer: ALTES STARREN (Sek.)",
-        "rogueWaveDmgMultiplier": "Kaventsmann-SDN-Multiplikator",
-        "earlyRogueWaveDmgMultiplier": "Früher Kaventsmann-SDN-Multiplikator",
-        "rogueWaveStagger": "Kaventsmann-Taumeln",
-        "earlyRogueWaveStagger": "Frühes Kaventsmann-Taumeln"
-      },
       "name": "DER HÄUPTLING SIEHT DICH!",
-      "description": "Tangtang hebt ihre Augenklappe und verschießt aus ihrem Auge ein <@ba.key>ALTES STARREN</>, das Gegner im Wirkungsbereich bewegungsunfähig macht und ihnen kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt.\nEndet die Entwicklung des <@ba.key>ALTEN STARRENS</>, bricht ein Kaventsmann über den Wirkungsbereich herein und fügt allen Gegnern innerhalb des Bereichs massiven <@ba.cryst>Kryo-SDN</> zu.\nWenn der gesteuerte Operator innerhalb des <@ba.key>ALTES STARREN</>-Musters einen Sturzangriff ausführt, endet die Entwicklung vorzeitig und der Kaventsmann wird sofort heraufbeschworen, damit sie noch mehr <@ba.cryst>Kryo-SDN</> verursacht."
+      "description": "Tangtang hebt ihre Augenklappe und verschießt aus ihrem Auge ein <@ba.key>ALTES STARREN</>, das Gegner im Wirkungsbereich bewegungsunfähig macht und ihnen kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt.\nEndet die Entwicklung des <@ba.key>ALTEN STARRENS</>, bricht ein Kaventsmann über den Wirkungsbereich herein und fügt allen Gegnern innerhalb des Bereichs massiven <@ba.cryst>Kryo-SDN</> zu.\nWenn der gesteuerte Operator innerhalb des <@ba.key>ALTES STARREN</>-Musters einen Sturzangriff ausführt, endet die Entwicklung vorzeitig und der Kaventsmann wird sofort heraufbeschworen, damit sie noch mehr <@ba.cryst>Kryo-SDN</> verursacht.",
+      "dmgOverTimeTotalMultiplier": "Gesamtmultiplikator für Kontinuierlichen SDN",
+      "oldenStareDurationS": "Dauer: ALTES STARREN (Sek.)",
+      "rogueWaveDmgMultiplier": "Kaventsmann-SDN-Multiplikator",
+      "earlyRogueWaveDmgMultiplier": "Früher Kaventsmann-SDN-Multiplikator",
+      "rogueWaveStagger": "Kaventsmann-Taumeln",
+      "earlyRogueWaveStagger": "Frühes Kaventsmann-Taumeln"
     },
     "indicator": {
       "levels": [

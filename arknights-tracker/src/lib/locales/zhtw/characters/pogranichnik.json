@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "全面攻勢",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq1Stagger": "第一段失衡值",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "spRecoveryByConsuming1VulnerabilityStack": "消耗一層破防時技力回復",
-        "spRecoveryByConsuming2VulnerabilityStacks": "消耗二層破防時技力回復",
-        "spRecoveryByConsuming3VulnerabilityStacks": "消耗三層破防時技力回復",
-        "spRecoveryByConsuming4VulnerabilityStacks": "消耗四層破防時技力回復"
-      },
       "name": "粉碎陣線",
-      "description": "對前方範圍的敵人進行兩段斬擊，造成<@ba.pd>物理傷害</>並施加<#ba.fracture>碎甲</>，同時基於<#ba.consume>消耗</>的破防層數回復技力，命中多名目標時僅回復1次。"
+      "description": "對前方範圍的敵人進行兩段斬擊，造成<@ba.pd>物理傷害</>並施加<#ba.fracture>碎甲</>，同時基於<#ba.consume>消耗</>的破防層數回復技力，命中多名目標時僅回復1次。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq1Stagger": "第一段失衡值",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "spRecoveryByConsuming1VulnerabilityStack": "消耗一層破防時技力回復",
+      "spRecoveryByConsuming2VulnerabilityStacks": "消耗二層破防時技力回復",
+      "spRecoveryByConsuming3VulnerabilityStacks": "消耗三層破防時技力回復",
+      "spRecoveryByConsuming4VulnerabilityStacks": "消耗四層破防時技力回復"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq1Stagger": "第一段失衡值",
-        "seq1SpRecovery": "第一段技力回復",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "seq2SpRecovery": "第二段技力回復",
-        "seq3DmgMultiplier": "第三段傷害倍率",
-        "seq3Stagger": "第三段失衡值",
-        "seq3SpRecovery": "第三段技力回復",
-        "enhancedSeq3DmgMultiplier": "強化第三段傷害倍率",
-        "enhancedSeq3Stagger": "強化第三段失衡值",
-        "enhancedSeq3SpRecovery": "強化第三段技力回復",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "盈月邀擊",
-      "description": "當有敵人被<#ba.crush>猛擊</>或者<#ba.fracture>碎甲</><#ba.consume>消耗</><#ba.noguard>破防</>層數後可以發動。\n根據<#ba.consume>消耗</>的最高<#ba.noguard>破防</>層數，對敵人進行相同段數的斬擊（最多3段），造成<@ba.pd>物理傷害</>並回復一定技力，每一擊的傷害和技力回復效果都更強。\n<@ba.info>若消耗4層破防，第3段斬擊將獲得強化。</>"
+      "description": "當有敵人被<#ba.crush>猛擊</>或者<#ba.fracture>碎甲</><#ba.consume>消耗</><#ba.noguard>破防</>層數後可以發動。\n根據<#ba.consume>消耗</>的最高<#ba.noguard>破防</>層數，對敵人進行相同段數的斬擊（最多3段），造成<@ba.pd>物理傷害</>並回復一定技力，每一擊的傷害和技力回復效果都更強。\n<@ba.info>若消耗4層破防，第3段斬擊將獲得強化。</>",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq1Stagger": "第一段失衡值",
+      "seq1SpRecovery": "第一段技力回復",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "seq2SpRecovery": "第二段技力回復",
+      "seq3DmgMultiplier": "第三段傷害倍率",
+      "seq3Stagger": "第三段失衡值",
+      "seq3SpRecovery": "第三段技力回復",
+      "enhancedSeq3DmgMultiplier": "強化第三段傷害倍率",
+      "enhancedSeq3Stagger": "強化第三段失衡值",
+      "enhancedSeq3SpRecovery": "強化第三段技力回復",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "鐵誓持續時間",
-        "advanceDmgMultiplier": "進軍傷害倍率",
-        "advanceStagger": "進軍失衡值",
-        "harassDmgMultiplier": "襲擾傷害倍率",
-        "harassSpRecovery": "襲擾回復技力",
-        "decisiveAssaultDmgMultiplier": "決勝傷害倍率",
-        "decisiveAssaultStagger": "決勝失衡值",
-        "decisiveAssaultSpRecovery": "決勝回復技力"
-      },
       "name": "盾衛旗隊，上前",
-      "description": "以目標為中心，召喚四名盾衛向目標進軍，並將進軍途中的敵人往目標方向推動，造成<@ba.pd>物理傷害</>的同時生成5點<@ba.key>鐵誓</>。當有敵人受到<#ba.physicalstatus>物理異常</>效果或駿衛的連攜技傷害後，消耗1點<@ba.key>鐵誓</>召喚一名盾衛對其發動襲擾，造成<@ba.pd>物理傷害</>並回復一定技力。當消耗的<@ba.key>鐵誓</>是最後一點時，四名盾衛發動決勝，對其造成大量<@ba.pd>物理傷害</>並回復大量技力。"
+      "description": "以目標為中心，召喚四名盾衛向目標進軍，並將進軍途中的敵人往目標方向推動，造成<@ba.pd>物理傷害</>的同時生成5點<@ba.key>鐵誓</>。當有敵人受到<#ba.physicalstatus>物理異常</>效果或駿衛的連攜技傷害後，消耗1點<@ba.key>鐵誓</>召喚一名盾衛對其發動襲擾，造成<@ba.pd>物理傷害</>並回復一定技力。當消耗的<@ba.key>鐵誓</>是最後一點時，四名盾衛發動決勝，對其造成大量<@ba.pd>物理傷害</>並回復大量技力。",
+      "steelOathDuration": "鐵誓持續時間",
+      "advanceDmgMultiplier": "進軍傷害倍率",
+      "advanceStagger": "進軍失衡值",
+      "harassDmgMultiplier": "襲擾傷害倍率",
+      "harassSpRecovery": "襲擾回復技力",
+      "decisiveAssaultDmgMultiplier": "決勝傷害倍率",
+      "decisiveAssaultStagger": "決勝失衡值",
+      "decisiveAssaultSpRecovery": "決勝回復技力"
     },
     "indicator": {
       "levels": [

@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "ROLLING CUT!",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "liftDurationS": "Lift Duration (s)"
-      },
       "name": "FLIP DA WOK!",
-      "description": "Takes out a wok, quickly charges it up, and performs a powerful wok flip that deals <@ba.pd>Physical DMG</> and <#ba.airborne>Lift</> to the enemy."
+      "description": "Takes out a wok, quickly charges it up, and performs a powerful wok flip that deals <@ba.pd>Physical DMG</> and <#ba.airborne>Lift</> to the enemy.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "liftDurationS": "Lift Duration (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "crushDmgBonus": "Crush DMG Bonus",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "MORE SPICE!",
-      "description": "COMBO TRIGGER: When an enemy reaches 4 stacks of <#ba.noguard>Vulnerability</>. \nSwings the wok at the enemy to deal massive <@ba.pd>Physical DMG</> and <#ba.crush>Crush</>. This <#ba.crush>Crush</> also deals more DMG."
+      "description": "COMBO TRIGGER: When an enemy reaches 4 stacks of <#ba.noguard>Vulnerability</>. \nSwings the wok at the enemy to deal massive <@ba.pd>Physical DMG</> and <#ba.crush>Crush</>. This <#ba.crush>Crush</> also deals more DMG.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "crushDmgBonus": "Crush DMG Bonus",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "Aerial Flurry DMG Multiplier",
-        "ultimateDmgMultiplier": "Ultimate DMG Multiplier"
-      },
       "name": "CHOP 'N DUNK!",
-      "description": "Da Pan slams the chopping board to forcibly <#ba.airborne>Lift</> all enemies in the area of effect in front of him. This is followed by a 6-sequence flurry of slashes that deals <@ba.pd>Physical DMG</>. The final step is to bash every enemy to the ground to forcibly <#ba.knockdown>Knock Down</> and deal massive <@ba.pd>Physical DMG</> to them."
+      "description": "Da Pan slams the chopping board to forcibly <#ba.airborne>Lift</> all enemies in the area of effect in front of him. This is followed by a 6-sequence flurry of slashes that deals <@ba.pd>Physical DMG</>. The final step is to bash every enemy to the ground to forcibly <#ba.knockdown>Knock Down</> and deal massive <@ba.pd>Physical DMG</> to them.",
+      "aerialFlurryDmgMultiplier": "Aerial Flurry DMG Multiplier",
+      "ultimateDmgMultiplier": "Ultimate DMG Multiplier"
     },
     "indicator": {
       "levels": [

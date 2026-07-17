@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "協約α：突破",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pulse>電磁ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pulse>電磁ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pulse>電磁ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pulse>電磁ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pulse>電磁ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pulse>電磁ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "協約ω：雷撃",
-      "description": "放出した電磁エネルギーを空中から落とし、一定範囲内の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。"
+      "description": "放出した電磁エネルギーを空中から落とし、一定範囲内の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "electrifyDurationS": "感電時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "即時協約：閃光鎖",
-      "description": "操作中のオペレーターが敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n蓄積された電磁エネルギーを放出して敵を攻撃し、<@ba.pulse>電磁ダメージ</>を与え、強制的に短時間<#ba.conduct>感電</>状態にする。"
+      "description": "操作中のオペレーターが敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n蓄積された電磁エネルギーを放出して敵を攻撃し、<@ba.pulse>電磁ダメージ</>を与え、強制的に短時間<#ba.conduct>感電</>状態にする。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "electrifyDurationS": "感電時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "協約ε：70.41κ",
-      "description": "巨大な軌道浮遊物を転送し、目標エリアに壊滅的な攻撃を行う。範囲内の敵に高い<@ba.pulse>電磁ダメージ</>を与える。"
+      "description": "巨大な軌道浮遊物を転送し、目標エリアに壊滅的な攻撃を行う。範囲内の敵に高い<@ba.pulse>電磁ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "indicator": {
       "levels": [

@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率"
-      },
       "name": "劍行拳意",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "斷雲傷害倍率",
-        "trailAndMangleDmgMultiplier": "追形傷害倍率",
-        "trailAndMangleStagger": "追形失衡值",
-        "worldSplitterDmgMultiplier": "開天傷害倍率",
-        "worldSplitterStagger": "開天失衡值"
-      },
       "name": "清波三藝",
-      "description": "連續施放可最多施放3段不同招式，初始戰技為<@ba.key>斷雲</>。\n<@ba.key>斷雲</>：消耗<@ba.vup>100</>技力，施放後<#ba.return>返還</><@ba.vup>50</>技力。從拳套中發射出拘束索，對目標及其附近敵人造成<@ba.pd>物理傷害</>並嘗試將其拉至自身附近。施放後戰技在一段時間內替換為<@ba.key>追形</>。\n<@ba.key>追形</>：消耗<@ba.vup>50</>技力。朝前方連續揮拳造成<@ba.pd>物理傷害</>，最後一拳額外造成<#ba.crush>猛擊</>。如果本次猛擊<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數不少於3層，戰技在一段時間內替換為<@ba.key>開天</>。\n<@ba.key>開天</>：消耗<@ba.vup>50</>技力，朝前方範圍造成大量<@ba.pd>物理傷害</>。本次傷害類型不屬於戰技傷害，而是視為<#ba.crush>猛擊</>傷害。"
+      "description": "連續施放可最多施放3段不同招式，初始戰技為<@ba.key>斷雲</>。\n<@ba.key>斷雲</>：消耗<@ba.vup>100</>技力，施放後<#ba.return>返還</><@ba.vup>50</>技力。從拳套中發射出拘束索，對目標及其附近敵人造成<@ba.pd>物理傷害</>並嘗試將其拉至自身附近。施放後戰技在一段時間內替換為<@ba.key>追形</>。\n<@ba.key>追形</>：消耗<@ba.vup>50</>技力。朝前方連續揮拳造成<@ba.pd>物理傷害</>，最後一拳額外造成<#ba.crush>猛擊</>。如果本次猛擊<#ba.consume>消耗</>的最大<#ba.noguard>破防</>層數不少於3層，戰技在一段時間內替換為<@ba.key>開天</>。\n<@ba.key>開天</>：消耗<@ba.vup>50</>技力，朝前方範圍造成大量<@ba.pd>物理傷害</>。本次傷害類型不屬於戰技傷害，而是視為<#ba.crush>猛擊</>傷害。",
+      "cloudtrapperDmgMultiplier": "斷雲傷害倍率",
+      "trailAndMangleDmgMultiplier": "追形傷害倍率",
+      "trailAndMangleStagger": "追形失衡值",
+      "worldSplitterDmgMultiplier": "開天傷害倍率",
+      "worldSplitterStagger": "開天失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "physicalSusceptibility": "物理脆弱效果",
-        "physicalSusceptibilityDurationS": "物理脆弱持續時間（秒）",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "拳出無悔",
-      "description": "當有敵人達到3層及以上<#ba.noguard>破防</>時可以發動。\n使用上勾拳痛擊前方的敵人，對其造成<@ba.pd>物理傷害</>，同時施加一定時間的<#ba.physicalvul>物理脆弱</>。施放後戰技在一段時間內替換為<@ba.key>追形</>。"
+      "description": "當有敵人達到3層及以上<#ba.noguard>破防</>時可以發動。\n使用上勾拳痛擊前方的敵人，對其造成<@ba.pd>物理傷害</>，同時施加一定時間的<#ba.physicalvul>物理脆弱</>。施放後戰技在一段時間內替換為<@ba.key>追形</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "physicalSusceptibility": "物理脆弱效果",
+      "physicalSusceptibilityDurationS": "物理脆弱持續時間（秒）",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值"
-      },
       "name": "絕心",
-      "description": "短暫蓄力後朝前方衝刺，對身前目標強制造成<#ba.airborne>擊飛</>，隨後將其砸向地面造成<@ba.pd>物理傷害</>。施放後戰技在一段時間內替換為<@ba.key>追形</>。"
+      "description": "短暫蓄力後朝前方衝刺，對身前目標強制造成<#ba.airborne>擊飛</>，隨後將其砸向地面造成<@ba.pd>物理傷害</>。施放後戰技在一段時間內替換為<@ba.key>追形</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值"
     },
     "indicator": {
       "levels": [

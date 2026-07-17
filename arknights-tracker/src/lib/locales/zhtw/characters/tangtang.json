@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "崩你腦袋！",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "射擊傷害倍率",
-        "shotStagger": "射擊失衡值",
-        "dmgMultiplier1Waterspout": "單個水龍捲傷害倍率",
-        "waterspoutDurationS": "水龍捲持續時間（秒）",
-        "spReturnPerWhirlpool": "每處渦流技力返還",
-        "artsSusceptibility2Waterspouts": "兩個水龍捲法術脆弱",
-        "artsSusceptibility3Waterspouts": "三個水龍捲法術脆弱",
-        "artsSusceptibilityDurationS": "法術脆弱持續時間（秒）"
-      },
       "name": "踏潮捲浪！",
-      "description": "從水中躍出，逼近敵人進行射擊，造成<@ba.cryst>寒冷傷害</>，並掀起一個<@ba.key>水龍捲</>。\n同時消耗附近所有<@ba.key>渦流</>使其形成額外的<@ba.key>水龍捲</>，並根據形成數量<#ba.return>返還</>一定技力。\n<@ba.key>水龍捲</>：對範圍內敵人施加1層<#ba.crystinflict>寒冷附著</>，並持續造成<@ba.cryst>寒冷傷害</>。若本次形成多個<@ba.key>水龍捲</>，將對敵人額外施加<#ba.spellvul>法術脆弱</>，但無法重複施加<#ba.crystinflict>寒冷附著</>。\n<@ba.info>水龍捲傷害視為戰技傷害。</>"
+      "description": "從水中躍出，逼近敵人進行射擊，造成<@ba.cryst>寒冷傷害</>，並掀起一個<@ba.key>水龍捲</>。\n同時消耗附近所有<@ba.key>渦流</>使其形成額外的<@ba.key>水龍捲</>，並根據形成數量<#ba.return>返還</>一定技力。\n<@ba.key>水龍捲</>：對範圍內敵人施加1層<#ba.crystinflict>寒冷附著</>，並持續造成<@ba.cryst>寒冷傷害</>。若本次形成多個<@ba.key>水龍捲</>，將對敵人額外施加<#ba.spellvul>法術脆弱</>，但無法重複施加<#ba.crystinflict>寒冷附著</>。\n<@ba.info>水龍捲傷害視為戰技傷害。</>",
+      "shootingDmgMultiplier": "射擊傷害倍率",
+      "shotStagger": "射擊失衡值",
+      "dmgMultiplier1Waterspout": "單個水龍捲傷害倍率",
+      "waterspoutDurationS": "水龍捲持續時間（秒）",
+      "spReturnPerWhirlpool": "每處渦流技力返還",
+      "artsSusceptibility2Waterspouts": "兩個水龍捲法術脆弱",
+      "artsSusceptibility3Waterspouts": "三個水龍捲法術脆弱",
+      "artsSusceptibilityDurationS": "法術脆弱持續時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "whirlpoolDurationS": "渦流持續時間（秒）",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "河水，助我！",
-      "description": "當有敵人被施加<#ba.crystinflict>寒冷附著</>或受到<#ba.spellburst>法術爆發</>傷害時可以發動。\n釋放一道強力的水流，貫穿前方敵人造成<@ba.cryst>寒冷傷害</>，並迸射出一處<@ba.key>渦流</>。\n<@ba.info>場上最多存在2處渦流。</>"
+      "description": "當有敵人被施加<#ba.crystinflict>寒冷附著</>或受到<#ba.spellburst>法術爆發</>傷害時可以發動。\n釋放一道強力的水流，貫穿前方敵人造成<@ba.cryst>寒冷傷害</>，並迸射出一處<@ba.key>渦流</>。\n<@ba.info>場上最多存在2處渦流。</>",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "whirlpoolDurationS": "渦流持續時間（秒）",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "持續傷害總倍率",
-        "oldenStareDurationS": "古老圖形持續時間（秒）",
-        "rogueWaveDmgMultiplier": "巨浪傷害倍率",
-        "earlyRogueWaveDmgMultiplier": "提前降下巨浪傷害倍率",
-        "rogueWaveStagger": "巨浪失衡值",
-        "earlyRogueWaveStagger": "提前降下巨浪失衡值"
-      },
       "name": "大當家盯著呢！",
-      "description": "湯湯揭開眼罩，釋放眼中的<@ba.key>古老圖形</>封鎖範圍內的敵人，使其暫停行動一段時間，並造成持續的<@ba.cryst>寒冷傷害</>。\n<@ba.key>古老圖形</>演化結束時降下巨浪，對範圍內敵人造成大量<@ba.cryst>寒冷傷害</>。\n若主控幹員在<@ba.key>古老圖形</>中下墜攻擊，會提前結束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷傷害</>提升。"
+      "description": "湯湯揭開眼罩，釋放眼中的<@ba.key>古老圖形</>封鎖範圍內的敵人，使其暫停行動一段時間，並造成持續的<@ba.cryst>寒冷傷害</>。\n<@ba.key>古老圖形</>演化結束時降下巨浪，對範圍內敵人造成大量<@ba.cryst>寒冷傷害</>。\n若主控幹員在<@ba.key>古老圖形</>中下墜攻擊，會提前結束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷傷害</>提升。",
+      "dmgOverTimeTotalMultiplier": "持續傷害總倍率",
+      "oldenStareDurationS": "古老圖形持續時間（秒）",
+      "rogueWaveDmgMultiplier": "巨浪傷害倍率",
+      "earlyRogueWaveDmgMultiplier": "提前降下巨浪傷害倍率",
+      "rogueWaveStagger": "巨浪失衡值",
+      "earlyRogueWaveStagger": "提前降下巨浪失衡值"
     },
     "indicator": {
       "levels": [

@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "重火力截擊",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值"
-      },
       "name": "摧玉網格",
-      "description": "在目標腳下建立<@ba.key>摧玉網格</>，對範圍內敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。"
+      "description": {
+        "main": "在目標腳下建立<@ba.key>摧玉網格</>，對範圍內敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。",
+        "conditionName1": "陣訣·智",
+        "conditionDesc1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ≥ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>生效中。*/",
+        "conditionPostDesc1": "<@ba.key>陣訣·智</>：\n- 造成的傷害更高。",
+        "conditionDescInactive1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ＜ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>未生效。*/",
+        "conditionName2": "陣訣·意",
+        "conditionDesc2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ＞ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>生效中。*/",
+        "conditionPostDesc2": "<@ba.key>陣訣·意</>：\n- 造成傷害時會向中心<@ba.key>牽引</>範圍內的敵人。",
+        "conditionDescInactive2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ≤ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>未生效。*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "傷害倍率"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "傷害倍率"
+      },
+      "stagger": "失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "基礎傷害倍率",
-        "baseStagger": "基礎失衡值",
+      "name": "應龍四式",
+      "description": {
+        "conditionName1": "陣訣·智",
+        "conditionDesc1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ≥ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>生效中。*/",
+        "conditionPostDesc1": "當有敵人被施加<#ba.naturalinflict>自然附著</>或進入2層及以上其他<#ba.spellinflict>法術附著</>時可以發動。\n衝向目標，設置四個<@ba.key>戰術分身</>對其及周圍的敵人施加<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，造成<@ba.natur>自然傷害</>，並使該目標進入<@ba.key>囹圄</>狀態。<@ba.key>囹圄</>狀態結束時，<@ba.key>戰術分身</>向其攻擊，並造成爆炸傷害。\n<@ba.key>囹圄</>狀態：所有行動減緩。\n<@ba.key>陣訣·智</>：\n- 當自身戰技命中處於<@ba.key>囹圄</>狀態的敵人時，<#ba.return>返還</>一定技力，提前結束<@ba.key>囹圄</>狀態，造成爆炸傷害，並再次施加<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，短暫延遲後，造成多段額外傷害。\n- 連攜技冷卻時間更短。",
+        "conditionDescInactive1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ＜ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>未生效。*/",
+        "conditionName2": "陣訣·意",
+        "conditionDesc2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ＞ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>生效中。*/",
+        "conditionPostDesc2": "當有敵人被施加<#ba.spellinflict>法術附著</>時可以發動。\n衝向目標，設置四個<@ba.key>戰術分身</>對其及周圍的敵人再次施加該<#ba.spellinflict>法術附著</>、<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>，造成<@ba.natur>自然傷害</>，並使該目標進入<@ba.key>囹圄</>狀態。<@ba.key>囹圄</>狀態結束時，<@ba.key>戰術分身</>向其攻擊，並造成爆炸傷害。\n<@ba.key>囹圄</>狀態：所有行動減緩。\n<@ba.key>陣訣·意</>：\n- 施放連攜技使敵人進入<@ba.key>囹圄</>狀態時，會小幅<@ba.key>牽引</>範圍內的敵人。\n- 意志可以額外提升連攜技施加的<#ba.naturalvul>自然脆弱</>和<#ba.crystvul>寒冷脆弱</>效果。",
+        "conditionDescInactive2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ≤ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>未生效。*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "囹圄及脆弱持續時間（秒）",
         "susceptibility": "脆弱效果",
-        "baseSusceptibility": "基礎脆弱效果",
-        "maxBonusSusceptibilityFromWill": "意志提供最大額外脆弱效果",
-        "willRequiredForMaxBonusSusceptibility": "最大額外脆弱效果所需意志值",
-        "explosionDmgMultiplier": "爆炸傷害倍率",
-        "explosionStagger": "爆炸失衡值",
         "bonusDmgMultiplier": "額外傷害倍率",
         "bonusSusceptibilityDurationS": "額外脆弱持續時間（秒）",
-        "spReturn": "技力返還",
-        "ultimateEnergyGain": "獲得終結技能量"
+        "spReturn": "技力返還"
       },
-      "name": "應龍四式",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "囹圄及脆弱持續時間（秒）",
+        "baseSusceptibility": "基礎脆弱效果",
+        "maxBonusSusceptibilityFromWill": "意志提供最大額外脆弱效果",
+        "willRequiredForMaxBonusSusceptibility": "最大額外脆弱效果所需意志值"
+      },
+      "baseDmgMultiplier": "基礎傷害倍率",
+      "baseStagger": "基礎失衡值",
+      "explosionDmgMultiplier": "爆炸傷害倍率",
+      "explosionStagger": "爆炸失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "生成破晦陣傷害倍率",
-        "gloompurgerArrayCreationStagger": "生成破晦陣失衡值",
-        "gloompurgerArrayDurationS": "破晦陣持續時間（秒）",
+      "name": "破晦",
+      "description": {
+        "main": "生成<@ba.key>破晦陣</>，對區域內的敵人立即造成<@ba.natur>自然傷害</>。\n處於<@ba.key>破晦陣</>中的敵人被處決或受到主控幹員<#ba.lastcombo>重擊</>時，<@ba.key>破晦陣</>將對其發動<@ba.key>集束打擊</>，造成範圍傷害，最多發動2次。\n當發動2次<@ba.key>集束打擊</>後，終結技切換為<@ba.key>破晦訣明</>。\n<@ba.key>破晦訣明</>：對前方大範圍內敵人造成<@ba.natur>自然傷害</>。",
+        "conditionName1": "陣訣·智",
+        "conditionDesc1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ≥ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>生效中。*/",
+        "conditionPostDesc1": "<@ba.key>陣訣·智</>：\n- <@ba.key>破晦陣</>生成時，還會對區域內的敵人強制施加<#ba.corrupt>腐蝕</>。",
+        "conditionDescInactive1": "/*智識值（<@ba.vup>{floor:deck_wisd:0}</>） ＜ 意志值（<@ba.vup>{floor:deck_will:0}</>），<@ba.key>陣訣·智</>未生效。*/",
+        "conditionName2": "陣訣·意",
+        "conditionDesc2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ＞ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>生效中。*/",
+        "conditionPostDesc2": "<@ba.key>陣訣·意</>：\n- <@ba.key>破晦陣</>生成時，還會對區域內處於<#ba.spellinflict>法術附著</>狀態的敵人再次施加該<#ba.spellinflict>法術附著</>。",
+        "conditionDescInactive2": "/*意志值（<@ba.vup>{floor:deck_will:0}</>） ≤ 智識值（<@ba.vup>{floor:deck_wisd:0}</>），<@ba.key>陣訣·意</>未生效。*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "強制腐蝕持續時間（秒）",
         "clusterStrikeTotalDmgMultiplier": "集束打擊總傷害倍率",
-        "gloompurgeArcanaDmgMultiplier": "破晦訣明傷害倍率",
-        "gloompurgeArcanaStagger": "破晦訣明失衡值"
+        "gloompurgeArcanaDmgMultiplier": "破晦訣明傷害倍率"
       },
-      "name": "破晦",
-      "description": "生成<@ba.key>破晦陣</>，對區域內的敵人立即造成<@ba.natur>自然傷害</>。\n處於<@ba.key>破晦陣</>中的敵人被處決或受到主控幹員<#ba.lastcombo>重擊</>時，<@ba.key>破晦陣</>將對其發動<@ba.key>集束打擊</>，造成範圍傷害，最多發動2次。\n當發動2次<@ba.key>集束打擊</>後，終結技切換為<@ba.key>破晦訣明</>。\n<@ba.key>破晦訣明</>：對前方大範圍內敵人造成<@ba.natur>自然傷害</>。"
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "集束打擊總傷害倍率",
+        "gloompurgeArcanaDmgMultiplier": "破晦訣明傷害倍率"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "生成破晦陣傷害倍率",
+      "gloompurgerArrayCreationStagger": "生成破晦陣失衡值",
+      "gloompurgerArrayDurationS": "破晦陣持續時間（秒）",
+      "gloompurgeArcanaStagger": "破晦訣明失衡值"
     },
     "indicator": {
       "levels": [

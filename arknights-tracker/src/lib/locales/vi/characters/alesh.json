@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Kỹ Thuật Quăng Câu Cơ Bản",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "spRecoveryByConsuming1InflictionStack": "Hồi Điểm KN khi Giải Trừ 1 Tầng Nhiễm",
-        "spRecoveryByConsuming2InflictionStacks": "Hồi Điểm KN khi Giải Trừ 2 Tầng Nhiễm",
-        "spRecoveryByConsuming3InflictionStacks": "Hồi Điểm KN khi Giải Trừ 3 Tầng Nhiễm",
-        "spRecoveryByConsuming4InflictionStacks": "Hồi Điểm KN khi Giải Trừ 4 Tầng Nhiễm",
-        "stagger": "Suy Sụp"
-      },
       "name": "Mồi Nhử Phi Thường",
-      "description": "Móc một khối băng rồi quật xuống gây <@ba.pd>ST Vật Lý</> lên kẻ địch mục tiêu. Khi trúng mục tiêu bị <#ba.crystinflict>Nhiễm Băng</>, Alesh sẽ <#ba.consume>tiêu hao</> toàn bộ tầng <#ba.crystinflict>Nhiễm Băng</> của mục tiêu, ép buộc mục tiêu chịu hiệu ứng <#ba.frozen>Đông Cứng</> và hồi một lượng điểm KN nhất định dựa trên số tầng hiệu ứng đã <#ba.consume>tiêu hao</>. Hiệu ứng hồi điểm KN này chỉ có thể kích hoạt 1 lần, ngay cả khi kỹ năng trúng nhiều mục tiêu."
+      "description": "Móc một khối băng rồi quật xuống gây <@ba.pd>ST Vật Lý</> lên kẻ địch mục tiêu. Khi trúng mục tiêu bị <#ba.crystinflict>Nhiễm Băng</>, Alesh sẽ <#ba.consume>tiêu hao</> toàn bộ tầng <#ba.crystinflict>Nhiễm Băng</> của mục tiêu, ép buộc mục tiêu chịu hiệu ứng <#ba.frozen>Đông Cứng</> và hồi một lượng điểm KN nhất định dựa trên số tầng hiệu ứng đã <#ba.consume>tiêu hao</>. Hiệu ứng hồi điểm KN này chỉ có thể kích hoạt 1 lần, ngay cả khi kỹ năng trúng nhiều mục tiêu.",
+      "dmgMultiplier": "Hệ Số ST",
+      "spRecoveryByConsuming1InflictionStack": "Hồi Điểm KN khi Giải Trừ 1 Tầng Nhiễm",
+      "spRecoveryByConsuming2InflictionStacks": "Hồi Điểm KN khi Giải Trừ 2 Tầng Nhiễm",
+      "spRecoveryByConsuming3InflictionStacks": "Hồi Điểm KN khi Giải Trừ 3 Tầng Nhiễm",
+      "spRecoveryByConsuming4InflictionStacks": "Hồi Điểm KN khi Giải Trừ 4 Tầng Nhiễm",
+      "stagger": "Suy Sụp"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "chanceToCatchTheRareFin": "Cơ Hội Bắt Cá Quý Hiếm",
-        "enhancedDmgMultiplier": "Hệ Số ST Cường Hóa",
-        "spRecovery": "Hồi Điểm KN",
-        "bonusSpRecovery": "Tăng Hồi Điểm KN",
-        "stagger": "Suy Sụp",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Góc Khoan Auger",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.spellstatus>Phản Ứng Thuật Pháp</> hoặc <#ba.originium>Tinh Thể Originium</> của mục tiêu gần đó bị <#ba.consume>tiêu hao</>. \nMở hố khoan ngay dưới kẻ địch, gây <@ba.pd>ST Vật Lý</> và hồi một phần KN. Kỹ năng có tỉ lệ \"câu\" được một <@ba.key>Cá Quý Hiếm</> giúp tăng mạnh ST gây ra và hồi thêm KN."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.spellstatus>Phản Ứng Thuật Pháp</> hoặc <#ba.originium>Tinh Thể Originium</> của mục tiêu gần đó bị <#ba.consume>tiêu hao</>. \nMở hố khoan ngay dưới kẻ địch, gây <@ba.pd>ST Vật Lý</> và hồi một phần KN. Kỹ năng có tỉ lệ \"câu\" được một <@ba.key>Cá Quý Hiếm</> giúp tăng mạnh ST gây ra và hồi thêm KN.",
+      "dmgMultiplier": "Hệ Số ST",
+      "chanceToCatchTheRareFin": "Cơ Hội Bắt Cá Quý Hiếm",
+      "enhancedDmgMultiplier": "Hệ Số ST Cường Hóa",
+      "spRecovery": "Hồi Điểm KN",
+      "bonusSpRecovery": "Tăng Hồi Điểm KN",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "Hệ Số ST Tuyệt Kỹ",
-        "baseSpRecovery": "Hồi Điểm KN Cơ Bản",
-        "bonusSpRecoveryPerTargetDefeated": "Tăng Hồi Điểm KN Khi Hạ Gục Mục Tiêu",
-        "spRecoveryLimit": "Giới Hạn Hồi Điểm KN",
-        "stagger": "Suy Sụp"
-      },
       "name": "Bắt Một Quái Vật!",
-      "description": "Alesh móc một chiếc vây khổng lồ không tưởng rồi quật xuống gây <@ba.cryst>ST Băng</> và gây hiệu ứng <#ba.crystinflict>Nhiễm Băng</> lên kẻ địch trong vùng rộng phía trước. Anh hồi một phần Điểm KN khi đánh trúng, và nhận thêm Điểm KN cho mỗi mục tiêu bị đánh bại."
+      "description": "Alesh móc một chiếc vây khổng lồ không tưởng rồi quật xuống gây <@ba.cryst>ST Băng</> và gây hiệu ứng <#ba.crystinflict>Nhiễm Băng</> lên kẻ địch trong vùng rộng phía trước. Anh hồi một phần Điểm KN khi đánh trúng, và nhận thêm Điểm KN cho mỗi mục tiêu bị đánh bại.",
+      "ultimateDmgMultiplier": "Hệ Số ST Tuyệt Kỹ",
+      "baseSpRecovery": "Hồi Điểm KN Cơ Bản",
+      "bonusSpRecoveryPerTargetDefeated": "Tăng Hồi Điểm KN Khi Hạ Gục Mục Tiêu",
+      "spRecoveryLimit": "Giới Hạn Hồi Điểm KN",
+      "stagger": "Suy Sụp"
     },
     "indicator": {
       "levels": [

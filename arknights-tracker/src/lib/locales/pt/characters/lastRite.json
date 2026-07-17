@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Dança da Gélida",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional de Miragem",
-        "spReturn": "Devolução de PH",
-        "durationS": "Duração (s)",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Legado Esotérico de Seš'qa",
-      "description": "Executa uma <@ba.key>Perfusão Hipotérmica</> na arma do operador controlado e <#ba.return>devolve</> algum PH. \nO próximo <#ba.lastcombo>Golpe Final</> desferido pelo operador controlado atual dentro de uma certa duração cria Miragens de Last Rite, as quais desencadeiam um ataque adicional contra o alvo. Esse ataque causa <@ba.cryst>DNO Crio</> e aplica <#ba.crystinflict>Inflição Crio</>. \nQuando Last Rite é a operadora controlada, conjurar essa habilidade de batalha não redefine sua respectiva sequência de ataque básico."
+      "description": "Executa uma <@ba.key>Perfusão Hipotérmica</> na arma do operador controlado e <#ba.return>devolve</> algum PH. \nO próximo <#ba.lastcombo>Golpe Final</> desferido pelo operador controlado atual dentro de uma certa duração cria Miragens de Last Rite, as quais desencadeiam um ataque adicional contra o alvo. Esse ataque causa <@ba.cryst>DNO Crio</> e aplica <#ba.crystinflict>Inflição Crio</>. \nQuando Last Rite é a operadora controlada, conjurar essa habilidade de batalha não redefine sua respectiva sequência de ataque básico.",
+      "mirageAdditionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional de Miragem",
+      "spReturn": "Devolução de PH",
+      "durationS": "Duração (s)",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Multiplicador DNO Fragmento de Gelo",
-        "slashBaseDmgMultiplier": "Multiplicador DNO Base de Corte",
-        "slashStagger": "Desorientação de Corte",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicador DNO Bônus por Acúmulo de Inflição",
-        "baseUltimateEnergyGain": "Ganho de Energia Suprema Base",
-        "additionalUltimateEnergyGainPerInflictionStack": "Ganho de Energia Suprema Adicional por Acúmulo de Inflição"
-      },
       "name": "Devoradora Invernal",
-      "description": "ACIONADOR DO COMBO: Quando um inimigo tem {count:0} ou mais acúmulos de <#ba.crystinflict>Inflição Crio</>. \nEnvolve o inimigo alvo em estalactites de gelo e os fragmenta para <#ba.consume>consumir</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do inimigo em questão. O número de acúmulos de <#ba.crystinflict>Inflição Crio</> <#ba.consume>consumidos</> determina a quantidade de <@ba.cryst>DNO Crio</> causado ao inimigo e a Energia Suprema ganha por Last Rite."
+      "description": "ACIONADOR DO COMBO: Quando um inimigo tem {count:0} ou mais acúmulos de <#ba.crystinflict>Inflição Crio</>. \nEnvolve o inimigo alvo em estalactites de gelo e os fragmenta para <#ba.consume>consumir</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do inimigo em questão. O número de acúmulos de <#ba.crystinflict>Inflição Crio</> <#ba.consume>consumidos</> determina a quantidade de <@ba.cryst>DNO Crio</> causado ao inimigo e a Energia Suprema ganha por Last Rite.",
+      "iceShardDmgMultiplier": "Multiplicador DNO Fragmento de Gelo",
+      "slashBaseDmgMultiplier": "Multiplicador DNO Base de Corte",
+      "slashStagger": "Desorientação de Corte",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicador DNO Bônus por Acúmulo de Inflição",
+      "baseUltimateEnergyGain": "Ganho de Energia Suprema Base",
+      "additionalUltimateEnergyGainPerInflictionStack": "Ganho de Energia Suprema Adicional por Acúmulo de Inflição"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
-        "seq1Stagger": "Desorientação SEQ 1",
-        "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
-        "seq2Stagger": "Desorientação SEQ 2",
-        "seq3DmgMultiplier": "Multiplicador DNO SEQ 3",
-        "seq3Stagger": "Desorientação SEQ 3"
-      },
       "name": "Ritual de Despedida",
-      "description": "Last Rite se envolve em uma armadura de gelo, cria uma foice de gelo para desferir 3 golpes cortantes, tornando-se imune a todos os tipos de dano enquanto esse estado permanece ativo. \nCada golpe cortante causa <@ba.cryst>DNO Crio</> significativo. \n<@ba.info>Last Rite só pode obter Energia Suprema através de sua própria habilidade de batalha e seu próprio combo de habilidades.</>"
+      "description": "Last Rite se envolve em uma armadura de gelo, cria uma foice de gelo para desferir 3 golpes cortantes, tornando-se imune a todos os tipos de dano enquanto esse estado permanece ativo. \nCada golpe cortante causa <@ba.cryst>DNO Crio</> significativo. \n<@ba.info>Last Rite só pode obter Energia Suprema através de sua própria habilidade de batalha e seu próprio combo de habilidades.</>",
+      "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
+      "seq1Stagger": "Desorientação SEQ 1",
+      "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
+      "seq2Stagger": "Desorientação SEQ 2",
+      "seq3DmgMultiplier": "Multiplicador DNO SEQ 3",
+      "seq3Stagger": "Desorientação SEQ 3"
     },
     "indicator": {
       "levels": [

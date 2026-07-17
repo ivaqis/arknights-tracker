@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Schwert des Strebens",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Explosion der Leidenschaft",
-      "description": "Ein Hieb nach vorn, der <@ba.fire>Hitze-SDN</> und <#ba.fireinflict>Hitze</> verursacht."
+      "description": "Ein Hieb nach vorn, der <@ba.fire>Hitze-SDN</> und <#ba.fireinflict>Hitze</> verursacht.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "SDN-Multiplikator pro SEQ",
-        "staggerPerSeq": "Taumeln pro SEQ",
-        "spRecoveryPerSeq": "FP-Wiederherstellung pro SEQ",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Blitz und Flitz",
-      "description": "KOMBOAUSLÖSER: Wenn sich ein Gegner im Taumelnd-Zustand befindet oder ein <#ba.poiseknot>Taumel-Knoten</> getroffen wird. \nSprintet nach vorn und wieder zurück und führt dabei 2 Stoßsequenzen aus, die jeweils <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen."
+      "description": "KOMBOAUSLÖSER: Wenn sich ein Gegner im Taumelnd-Zustand befindet oder ein <#ba.poiseknot>Taumel-Knoten</> getroffen wird. \nSprintet nach vorn und wieder zurück und führt dabei 2 Stoßsequenzen aus, die jeweils <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen.",
+      "dmgMultiplierPerSeq": "SDN-Multiplikator pro SEQ",
+      "staggerPerSeq": "Taumeln pro SEQ",
+      "spRecoveryPerSeq": "FP-Wiederherstellung pro SEQ",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "FP-Wiederherstellung"
-      },
       "name": "TRUPP! ZU MIR!",
-      "description": "Versetzt sich in einen Kanalisierungszustand und feuert 3 Inspirierende Leuchtgeschosse ab. Jedes Leuchtgeschoss stellt einige FP wieder her."
+      "description": "Versetzt sich in einen Kanalisierungszustand und feuert 3 Inspirierende Leuchtgeschosse ab. Jedes Leuchtgeschoss stellt einige FP wieder her.",
+      "spRecovery": "FP-Wiederherstellung"
     },
     "indicator": {
       "levels": [

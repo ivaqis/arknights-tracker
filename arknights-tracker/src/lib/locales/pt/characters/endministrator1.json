@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Sequência Destrutiva",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação"
-      },
       "name": "Sequência Construtiva",
-      "description": "Uma poderosa explosão de Artes de Originium que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>."
+      "description": "Uma poderosa explosão de Artes de Originium que ataca inimigos dentro da área de efeito. Causa <@ba.pd>DNO Físico</> e aplica <#ba.crush>Esmagar</>.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "crystalShatteringDmgMultiplier": "Multiplicador DNO Fragmentação de Cristal",
-        "stagger": "Desorientação",
-        "sealDurationS": "Duração do Selo (s)",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Sequência de Vedação",
-      "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <#ba.originium>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado <#ba.consume>consome</> os <#ba.originium>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional."
+      "description": "ACIONADOR DO COMBO: Quando outro operador na equipe causa DNO com combos de habilidades. \nCorre para o lado do inimigo para causar <@ba.pd>DNO Físico</> e anexar <#ba.originium>Cristais de Originium</> que selam os inimigos temporariamente. Aplicar <#ba.physicalstatus>Status Físico</> ou <#ba.noguard>Vulnerabilidade</> ao inimigo selado <#ba.consume>consome</> os <#ba.originium>Cristais de Originium</> e causa <@ba.pd>DNO Físico</> adicional.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "crystalShatteringDmgMultiplier": "Multiplicador DNO Fragmentação de Cristal",
+      "stagger": "Desorientação",
+      "sealDurationS": "Duração do Selo (s)",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "bonusDmgMultiplier": "Multiplicador DNO Bônus",
-        "stagger": "Desorientação"
-      },
       "name": "Sequência de Bombardeio",
-      "description": "Bombardeia o solo com Artes de Originium, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo tiver <#ba.originium>Cristais de Originium</>, essa habilidade <#ba.consume>consumirá</> os <#ba.originium>Cristais de Originium</> e causará mais um acerto de <@ba.pd>DNO Físico</>."
+      "description": "Bombardeia o solo com Artes de Originium, causando <@ba.pd>DNO Físico</> significativo a todos os inimigos dentro de uma área em forma de leque. Se o inimigo tiver <#ba.originium>Cristais de Originium</>, essa habilidade <#ba.consume>consumirá</> os <#ba.originium>Cristais de Originium</> e causará mais um acerto de <@ba.pd>DNO Físico</>.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "bonusDmgMultiplier": "Multiplicador DNO Bônus",
+      "stagger": "Desorientação"
     },
     "indicator": {
       "levels": [

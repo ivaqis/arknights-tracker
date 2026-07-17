@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Basic Rod Casting",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "spRecoveryByConsuming1InflictionStack": "Pemulihan SP dengan Memakai 1 Tumpuk Infliction",
-        "spRecoveryByConsuming2InflictionStacks": "Pemulihan SP dengan Memakai 2 Tumpuk Infliction",
-        "spRecoveryByConsuming3InflictionStacks": "Pemulihan SP dengan Memakai 3 Tumpuk Infliction",
-        "spRecoveryByConsuming4InflictionStacks": "Pemulihan SP dengan Memakai 4 Tumpuk Infliction",
-        "stagger": "Stagger"
-      },
       "name": "Unconventional Lure",
-      "description": "Mengait sebongkah es lalu membantingnya sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh tertarget. Saat berhasil menghantam target yang sedang terkena <#ba.crystinflict>Cryo Infliction</>, Alesh akan <#ba.consume>memakai</> semua tumpukan <#ba.crystinflict>Cryo Infliction</> pada target, mengakibatkan <#ba.frozen>Solidification</> secara paksa kepada target, dan sebagian SP-nya akan pulih berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>. Efek pemulihan SP ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh."
+      "description": "Mengait sebongkah es lalu membantingnya sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh tertarget. Saat berhasil menghantam target yang sedang terkena <#ba.crystinflict>Cryo Infliction</>, Alesh akan <#ba.consume>memakai</> semua tumpukan <#ba.crystinflict>Cryo Infliction</> pada target, mengakibatkan <#ba.frozen>Solidification</> secara paksa kepada target, dan sebagian SP-nya akan pulih berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>. Efek pemulihan SP ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh.",
+      "dmgMultiplier": "Pengganda DMG",
+      "spRecoveryByConsuming1InflictionStack": "Pemulihan SP dengan Memakai 1 Tumpuk Infliction",
+      "spRecoveryByConsuming2InflictionStacks": "Pemulihan SP dengan Memakai 2 Tumpuk Infliction",
+      "spRecoveryByConsuming3InflictionStacks": "Pemulihan SP dengan Memakai 3 Tumpuk Infliction",
+      "spRecoveryByConsuming4InflictionStacks": "Pemulihan SP dengan Memakai 4 Tumpuk Infliction",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "chanceToCatchTheRareFin": "Peluang Mendapatkan Ikan Langka",
-        "enhancedDmgMultiplier": "Penambahan Pengganda DMG",
-        "spRecovery": "Pemulihan SP",
-        "bonusSpRecovery": "Pemulihan SP Bonus",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Auger Angling",
-      "description": "PEMICU KOMBO: Saat <#ba.spellstatus>Arts Reaction</> atau <#ba.originium>Kristal Originium</> target di sekitar sudah <#ba.consume>dipakai</>. \nMembuka lubang pancing di bawah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP. Skill ini punya peluang untuk mengail <@ba.key>Ikan Langka</> yang akan secara drastis meningkatkan DMG yang ditimbulkan dan memulihkan sejumlah SP lagi."
+      "description": "PEMICU KOMBO: Saat <#ba.spellstatus>Arts Reaction</> atau <#ba.originium>Kristal Originium</> target di sekitar sudah <#ba.consume>dipakai</>. \nMembuka lubang pancing di bawah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP. Skill ini punya peluang untuk mengail <@ba.key>Ikan Langka</> yang akan secara drastis meningkatkan DMG yang ditimbulkan dan memulihkan sejumlah SP lagi.",
+      "dmgMultiplier": "Pengganda DMG",
+      "chanceToCatchTheRareFin": "Peluang Mendapatkan Ikan Langka",
+      "enhancedDmgMultiplier": "Penambahan Pengganda DMG",
+      "spRecovery": "Pemulihan SP",
+      "bonusSpRecovery": "Pemulihan SP Bonus",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "Pengganda Ultimate DMG",
-        "baseSpRecovery": "Pemulihan SP Dasar",
-        "bonusSpRecoveryPerTargetDefeated": "Bonus Pemulihan SP per Target yang Dikalahkan",
-        "spRecoveryLimit": "Batas Pemulihan SP",
-        "stagger": "Stagger"
-      },
       "name": "One Monster Catch!",
-      "description": "Alesh akan mengail seekor ikan raksasa dan membantingnya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada musuh di area efek besar di depannya. Sebagian SP-nya akan pulih saat menghantam musuh, dan akan mendapatkan tambahan SP setiap kali berhasil mengalahkan musuh."
+      "description": "Alesh akan mengail seekor ikan raksasa dan membantingnya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada musuh di area efek besar di depannya. Sebagian SP-nya akan pulih saat menghantam musuh, dan akan mendapatkan tambahan SP setiap kali berhasil mengalahkan musuh.",
+      "ultimateDmgMultiplier": "Pengganda Ultimate DMG",
+      "baseSpRecovery": "Pemulihan SP Dasar",
+      "bonusSpRecoveryPerTargetDefeated": "Bonus Pemulihan SP per Target yang Dikalahkan",
+      "spRecoveryLimit": "Batas Pemulihan SP",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

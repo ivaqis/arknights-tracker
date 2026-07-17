@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Assoluzione di sangue",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.fire>danni da fuoco</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.fire>danni da fuoco</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.fire>danni da fuoco</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.fire>danni da fuoco</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.fire>danni da fuoco</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.fire>danni da fuoco</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "firefangVesperwingsDurationS": "Durata vesprivoli zannafuoco (s)",
-        "weaknessEffect": "Effetto Debolezza",
-        "heatSusceptibility": "Suscettibilità al fuoco",
-        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione"
-      },
       "name": "Esorcismo ardente",
-      "description": "Camille evoca <@ba.key>vesprivoli zannafuoco</> che volano verso il nemico per infliggere <@ba.fire>danni da fuoco</> e applicare <#ba.fireinflict>Afflizione da fuoco</> entro un raggio d'azione ridotto. I <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitano</> temporaneamente intorno al bersaglio e applicano <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</>. Quando il bersaglio viene sconfitto, i <@ba.key>vesprivoli zannafuoco</> volano verso un altro nemico nelle vicinanze, infliggono <@ba.fire>danni da fuoco</> e applicano <#ba.fireinflict>Afflizione da fuoco</>, <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</> al nuovo bersaglio.\nColpire un nemico attorno a cui <@ba.key>orbitano</> i <@ba.key>vesprivoli zannafuoco</> con l'abilità combo di Camille innesca un'esplosione dopo un breve intervallo. L'esplosione infligge ulteriori <@ba.fire>danni da fuoco</>."
+      "description": "Camille evoca <@ba.key>vesprivoli zannafuoco</> che volano verso il nemico per infliggere <@ba.fire>danni da fuoco</> e applicare <#ba.fireinflict>Afflizione da fuoco</> entro un raggio d'azione ridotto. I <@ba.key>vesprivoli zannafuoco</> <@ba.key>orbitano</> temporaneamente intorno al bersaglio e applicano <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</>. Quando il bersaglio viene sconfitto, i <@ba.key>vesprivoli zannafuoco</> volano verso un altro nemico nelle vicinanze, infliggono <@ba.fire>danni da fuoco</> e applicano <#ba.fireinflict>Afflizione da fuoco</>, <#ba.weak>Debolezza</> e <#ba.firevul>Suscettibilità al fuoco</> al nuovo bersaglio.\nColpire un nemico attorno a cui <@ba.key>orbitano</> i <@ba.key>vesprivoli zannafuoco</> con l'abilità combo di Camille innesca un'esplosione dopo un breve intervallo. L'esplosione infligge ulteriori <@ba.fire>danni da fuoco</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "firefangVesperwingsDurationS": "Durata vesprivoli zannafuoco (s)",
+      "weaknessEffect": "Effetto Debolezza",
+      "heatSusceptibility": "Suscettibilità al fuoco",
+      "explosionDmgMultiplier": "Moltiplicatore danni Esplosione"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "spRecovery": "Recupero PA",
-        "hunterPursuitDmgMultiplier": "Moltiplicatore danni Caccia spietata",
-        "hunterPursuitStagger": "Vacillamento Caccia spietata",
-        "hunterPursuitSpRecovery": "Recupero PA Caccia spietata",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Spina trafiggicuore",
-      "description": "ATTIVAZIONE COMBO: quando l'<#ba.fireinflict>Afflizione da fuoco</> di un nemico viene <#ba.consume>consumata</> o <#ba.absorb>assorbita</>.\nEsegue uno scatto all'indietro che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA."
+      "description": "ATTIVAZIONE COMBO: quando l'<#ba.fireinflict>Afflizione da fuoco</> di un nemico viene <#ba.consume>consumata</> o <#ba.absorb>assorbita</>.\nEsegue uno scatto all'indietro che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "spRecovery": "Recupero PA",
+      "hunterPursuitDmgMultiplier": "Moltiplicatore danni Caccia spietata",
+      "hunterPursuitStagger": "Vacillamento Caccia spietata",
+      "hunterPursuitSpRecovery": "Recupero PA Caccia spietata",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "spRecovery": "Recupero PA",
-        "hunterPursuitStateDurationS": "Durata stato Caccia spietata (s)"
-      },
       "name": "Diluvio di sangue",
-      "description": "Camille vola in cielo, fa piovere una raffica di lance e prosegue con un attacco che infligge <@ba.fire>danni da fuoco</>, applica <#ba.fireinflict>Afflizione da fuoco</> ai bersagli colpiti e ripristina parzialmente i PA. \nDopo aver usato l'abilità suprema, l'abilità di combattimento di Camille si trasforma temporaneamente in <@ba.key>Caccia spietata</>.\n<@ba.key>Caccia spietata</> è considerata un'abilità combo e il suo utilizzo non costa PA. Si tratta di un attacco sferzante che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA."
+      "description": "Camille vola in cielo, fa piovere una raffica di lance e prosegue con un attacco che infligge <@ba.fire>danni da fuoco</>, applica <#ba.fireinflict>Afflizione da fuoco</> ai bersagli colpiti e ripristina parzialmente i PA. \nDopo aver usato l'abilità suprema, l'abilità di combattimento di Camille si trasforma temporaneamente in <@ba.key>Caccia spietata</>.\n<@ba.key>Caccia spietata</> è considerata un'abilità combo e il suo utilizzo non costa PA. Si tratta di un attacco sferzante che infligge <@ba.fire>danni da fuoco</> e ripristina parzialmente i PA.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "spRecovery": "Recupero PA",
+      "hunterPursuitStateDurationS": "Durata stato Caccia spietata (s)"
     },
     "indicator": {
       "levels": [

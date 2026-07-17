@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Đột Kích Hạ Nhiệt",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 3 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 3 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "protection": "Bảo Hộ",
-        "spReturn": "Điểm KN Hoàn Trả"
-      },
       "name": "Phòng Thủ Bão Hòa",
-      "description": "Dựng khiên chặn đòn, ban <#ba.guard>Bảo Hộ</> cho bản thân và cán viên lân cận, đồng thời lập tức <#ba.return>hoàn trả</> một lượng KN. \nKhi bị tấn công trong lúc khiên đã được dựng, tung phản kích húc gây <@ba.cryst>ST Băng</> và áp dụng hiệu ứng <#ba.crystinflict>Nhiễm Băng</> lên kẻ tấn công."
+      "description": "Dựng khiên chặn đòn, ban <#ba.guard>Bảo Hộ</> cho bản thân và cán viên lân cận, đồng thời lập tức <#ba.return>hoàn trả</> một lượng KN. \nKhi bị tấn công trong lúc khiên đã được dựng, tung phản kích húc gây <@ba.cryst>ST Băng</> và áp dụng hiệu ứng <#ba.crystinflict>Nhiễm Băng</> lên kẻ tấn công.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "protection": "Bảo Hộ",
+      "spReturn": "Điểm KN Hoàn Trả"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Hồi Phục Căn Cứ Ban Đầu",
-        "initialTreatmentIncreasePerWill": "Tăng Hồi Phục Ban Đầu Theo Ý Chí",
-        "baseTreatmentOverTime": "Hồi Phục Căn Cứ Theo Thời Gian",
-        "treatmentOverTimeIncreasePerWill": "Tăng Hồi Phục Theo Thời Gian Theo Ý Chí",
-        "treatmentOverTimeIntervalS": "Thời Gian Giữa Các Lần Hồi Phục (giây)",
-        "durationS": "Thời Gian Hiệu Lực (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Giải Cứu Vùng Cực",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Sau khi cán viên đang điều khiển bị tấn công và HP giảm xuống dưới {trigger_hp_ratio:0%}. \nSnowshine ném một Trợ Thủ Cứu Nạn Đồng Tuyết về phía cán viên đang điều khiển. Khi đến chỗ mục tiêu, Trợ Thủ lập tức <@ba.heal>Hồi Phục HP</> với lượng cực lớn cho cán viên gần đó và liên tục <@ba.heal>Hồi Phục HP</> cho cán viên trong vùng ảnh hưởng. \nThuộc tính Ý Chí sẽ làm tăng lượng hồi phục HP."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Sau khi cán viên đang điều khiển bị tấn công và HP giảm xuống dưới {trigger_hp_ratio:0%}. \nSnowshine ném một Trợ Thủ Cứu Nạn Đồng Tuyết về phía cán viên đang điều khiển. Khi đến chỗ mục tiêu, Trợ Thủ lập tức <@ba.heal>Hồi Phục HP</> với lượng cực lớn cho cán viên gần đó và liên tục <@ba.heal>Hồi Phục HP</> cho cán viên trong vùng ảnh hưởng. \nThuộc tính Ý Chí sẽ làm tăng lượng hồi phục HP.",
+      "initialBaseTreatment": "Hồi Phục Căn Cứ Ban Đầu",
+      "initialTreatmentIncreasePerWill": "Tăng Hồi Phục Ban Đầu Theo Ý Chí",
+      "baseTreatmentOverTime": "Hồi Phục Căn Cứ Theo Thời Gian",
+      "treatmentOverTimeIncreasePerWill": "Tăng Hồi Phục Theo Thời Gian Theo Ý Chí",
+      "treatmentOverTimeIntervalS": "Thời Gian Giữa Các Lần Hồi Phục (giây)",
+      "durationS": "Thời Gian Hiệu Lực (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Hệ Số ST Nổ",
-        "stagger": "Suy Sụp",
-        "dmgOverTimeMultiplier": "Hệ Số ST Theo Thời Gian",
-        "dmgOverTimeIntervalS": "Thời Gian Giữa Các Lần ST (giây)",
-        "durationS": "Thời Gian Hiệu Lực (giây)"
-      },
       "name": "Đồng Tuyết Băng Giá",
-      "description": "Nhảy lên không trung bằng động cơ phản lực rồi lao xuống bằng khiên, gây lượng lớn <@ba.cryst>ST Băng</> lên kẻ địch trong phạm vi ảnh hưởng. Đồng thời tạo một <@ba.key>Vùng Tuyết</> (duy trì vài giây) gây <@ba.cryst>ST Băng</> liên tục lên kẻ địch. <@ba.key>Vùng Tuyết</> sẽ gây hiệu ứng <#ba.frozen>Đông Cứng</> lên kẻ địch bị kẹt trong đó trong một khoảng thời gian nhất định."
+      "description": "Nhảy lên không trung bằng động cơ phản lực rồi lao xuống bằng khiên, gây lượng lớn <@ba.cryst>ST Băng</> lên kẻ địch trong phạm vi ảnh hưởng. Đồng thời tạo một <@ba.key>Vùng Tuyết</> (duy trì vài giây) gây <@ba.cryst>ST Băng</> liên tục lên kẻ địch. <@ba.key>Vùng Tuyết</> sẽ gây hiệu ứng <#ba.frozen>Đông Cứng</> lên kẻ địch bị kẹt trong đó trong một khoảng thời gian nhất định.",
+      "explosionDmgMultiplier": "Hệ Số ST Nổ",
+      "stagger": "Suy Sụp",
+      "dmgOverTimeMultiplier": "Hệ Số ST Theo Thời Gian",
+      "dmgOverTimeIntervalS": "Thời Gian Giữa Các Lần ST (giây)",
+      "durationS": "Thời Gian Hiệu Lực (giây)"
     },
     "indicator": {
       "levels": [

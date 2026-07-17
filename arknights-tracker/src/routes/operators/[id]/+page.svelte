@@ -1110,6 +1110,8 @@
                                                 key,
                                             )}
                                             {itemsDb}
+                                            charLevel={level}
+                                            {charDetails}
                                         />
                                     {/if}
                                 {/each}

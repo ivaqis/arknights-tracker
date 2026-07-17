@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "極低温猛撃",
-      "description": "通常攻撃：\n最大3段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大3段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "protection": "加護効果",
-        "spReturn": "SP返還量"
-      },
       "name": "限界防御",
-      "description": "盾を構えて攻撃をブロックし、自身と周囲のオペレーターに<#ba.guard>加護</>を与え、即座にSPが一定量<#ba.return>返還</>される。\n盾を構えている間に攻撃を受けると、反撃が1回発動する。攻撃者に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。"
+      "description": "盾を構えて攻撃をブロックし、自身と周囲のオペレーターに<#ba.guard>加護</>を与え、即座にSPが一定量<#ba.return>返還</>される。\n盾を構えている間に攻撃を受けると、反撃が1回発動する。攻撃者に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "protection": "加護効果",
+      "spReturn": "SP返還量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "基礎回復値（初回）",
-        "initialTreatmentIncreasePerWill": "意志1ごとの初回回復値UP",
-        "baseTreatmentOverTime": "基礎回復値（持続）",
-        "treatmentOverTimeIncreasePerWill": "意志1ごとの持続回復値UP",
-        "treatmentOverTimeIntervalS": "持続回復間隔（秒）",
-        "durationS": "持続時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "極地救援",
-      "description": "操作中のオペレーターが攻撃を受け、HPが{trigger_hp_ratio:0%}未満になると発動可能。\nスノーシャインはそのオペレーターに救援アシスタントを投げ、命中するときに周囲のオペレーターを大きく<@ba.heal>回復</>させる。さらに一定時間、範囲内のオペレーターを継続的に<@ba.heal>治療</>する。\n回復量は意志の値に応じて追加でアップする。"
+      "description": "操作中のオペレーターが攻撃を受け、HPが{trigger_hp_ratio:0%}未満になると発動可能。\nスノーシャインはそのオペレーターに救援アシスタントを投げ、命中するときに周囲のオペレーターを大きく<@ba.heal>回復</>させる。さらに一定時間、範囲内のオペレーターを継続的に<@ba.heal>治療</>する。\n回復量は意志の値に応じて追加でアップする。",
+      "initialBaseTreatment": "基礎回復値（初回）",
+      "initialTreatmentIncreasePerWill": "意志1ごとの初回回復値UP",
+      "baseTreatmentOverTime": "基礎回復値（持続）",
+      "treatmentOverTimeIncreasePerWill": "意志1ごとの持続回復値UP",
+      "treatmentOverTimeIntervalS": "持続回復間隔（秒）",
+      "durationS": "持続時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "爆発ダメージ倍率",
-        "stagger": "ブレイク値",
-        "dmgOverTimeMultiplier": "持続ダメージ倍率",
-        "dmgOverTimeIntervalS": "持続ダメージ間隔（秒）",
-        "durationS": "持続時間（秒）"
-      },
       "name": "凍てつく寒霜",
-      "description": "ジェット装置を使ってジャンプし、盾を振り下ろして範囲内の敵に高い<@ba.cryst>寒冷ダメージ</>を与える。着地地点に数秒間持続する<@ba.key>氷雪地帯</>を生成し、敵に<@ba.cryst>寒冷ダメージ</>を与え続ける。敵は<@ba.key>氷雪地帯</>内に一定時間滞在すると、強制的に<#ba.frozen>凍結</>状態になる。"
+      "description": "ジェット装置を使ってジャンプし、盾を振り下ろして範囲内の敵に高い<@ba.cryst>寒冷ダメージ</>を与える。着地地点に数秒間持続する<@ba.key>氷雪地帯</>を生成し、敵に<@ba.cryst>寒冷ダメージ</>を与え続ける。敵は<@ba.key>氷雪地帯</>内に一定時間滞在すると、強制的に<#ba.frozen>凍結</>状態になる。",
+      "explosionDmgMultiplier": "爆発ダメージ倍率",
+      "stagger": "ブレイク値",
+      "dmgOverTimeMultiplier": "持続ダメージ倍率",
+      "dmgOverTimeIntervalS": "持続ダメージ間隔（秒）",
+      "durationS": "持続時間（秒）"
     },
     "indicator": {
       "levels": [

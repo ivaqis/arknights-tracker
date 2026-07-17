@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Chuỗi Phá Hủy",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Chuỗi Kiến Tạo",
-      "description": "Một vụ nổ mạnh mẽ của Thuật Pháp Originium tấn công kẻ địch trong phạm vi ảnh hưởng. Gây <@ba.pd>ST Vật Lý</> và áp dụng hiệu ứng <#ba.crush>Nghiền</>."
+      "description": "Một vụ nổ mạnh mẽ của Thuật Pháp Originium tấn công kẻ địch trong phạm vi ảnh hưởng. Gây <@ba.pd>ST Vật Lý</> và áp dụng hiệu ứng <#ba.crush>Nghiền</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "crystalShatteringDmgMultiplier": "Hệ Số ST Pha Lê Tan Vỡ",
-        "stagger": "Suy Sụp",
-        "sealDurationS": "Thời Gian Phong Ấn (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Chuỗi Phong Ấn",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên khác trong đội gây ST bằng KN liên hoàn. \nLao tới bên cạnh kẻ địch để gây <@ba.pd>ST Vật Lý</> và gắn <#ba.originium>Tinh Thể Originium</> để tạm thời phong ấn chúng. Áp dụng <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.noguard>Trừ Giáp</> lên kẻ địch bị phong ấn sẽ <#ba.consume>tiêu hao</> <#ba.originium>Tinh Thể Originium</> và gây thêm <@ba.pd>ST Vật Lý</>."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên khác trong đội gây ST bằng KN liên hoàn. \nLao tới bên cạnh kẻ địch để gây <@ba.pd>ST Vật Lý</> và gắn <#ba.originium>Tinh Thể Originium</> để tạm thời phong ấn chúng. Áp dụng <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.noguard>Trừ Giáp</> lên kẻ địch bị phong ấn sẽ <#ba.consume>tiêu hao</> <#ba.originium>Tinh Thể Originium</> và gây thêm <@ba.pd>ST Vật Lý</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "crystalShatteringDmgMultiplier": "Hệ Số ST Pha Lê Tan Vỡ",
+      "stagger": "Suy Sụp",
+      "sealDurationS": "Thời Gian Phong Ấn (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "bonusDmgMultiplier": "Hệ Số ST Cộng Thêm",
-        "stagger": "Suy Sụp"
-      },
       "name": "Chuỗi Oanh Kích",
-      "description": "Bắn phá mặt đất bằng Thuật Pháp Originium, gây <@ba.pd>ST Vật Lý</> cực lớn lên tất cả kẻ địch trong khu vực hình quạt. Nếu kẻ địch có <#ba.originium>Tinh Thể Originium</> trên người, kỹ năng này <#ba.consume>tiêu thụ</> <#ba.originium>Tinh Thể Originium</> và gây thêm 1 đòn <@ba.pd>ST Vật Lý</>."
+      "description": "Bắn phá mặt đất bằng Thuật Pháp Originium, gây <@ba.pd>ST Vật Lý</> cực lớn lên tất cả kẻ địch trong khu vực hình quạt. Nếu kẻ địch có <#ba.originium>Tinh Thể Originium</> trên người, kỹ năng này <#ba.consume>tiêu thụ</> <#ba.originium>Tinh Thể Originium</> và gây thêm 1 đòn <@ba.pd>ST Vật Lý</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "bonusDmgMultiplier": "Hệ Số ST Cộng Thêm",
+      "stagger": "Suy Sụp"
     },
     "indicator": {
       "levels": [

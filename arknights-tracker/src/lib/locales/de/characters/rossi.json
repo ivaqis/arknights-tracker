@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Kochendes Wolfsblut",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1Stagger": "SEQ 1 – Taumeln",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln"
-      },
       "name": "Blutroter Schatten",
-      "description": "Stürmt auf das Ziel zu, um <@ba.pd>Physischen SDN</> zu verursachen und den Gegner mit <#ba.airborne>Anheben</> zu belegen.\nWenn ein Ziel bereits mit einer oder mehr Kumulierungen <#ba.noguard>Anfälligkeit</> belegt wurde, wird zusätzlich ein <@ba.key>Wolfsansturm</> auf das Ziel entfesselt, der <@ba.fire>Hitze-SDN</> verursacht."
+      "description": "Stürmt auf das Ziel zu, um <@ba.pd>Physischen SDN</> zu verursachen und den Gegner mit <#ba.airborne>Anheben</> zu belegen.\nWenn ein Ziel bereits mit einer oder mehr Kumulierungen <#ba.noguard>Anfälligkeit</> belegt wurde, wird zusätzlich ein <@ba.key>Wolfsansturm</> auf das Ziel entfesselt, der <@ba.fire>Hitze-SDN</> verursacht.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1Stagger": "SEQ 1 – Taumeln",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1UltimateEnergyGain": "SEQ 1 – Ultimative-Energie-Erhalt",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "criticalRateBoost": "Kritische-Rate-Boost",
-        "criticalDmgBoost": "Kritischer-SDN-Boost",
-        "buffDurationS": "Buffdauer (Sek.)",
-        "seq2UltimateEnergyGain": "SEQ 2 – Ultimative-Energie-Erhalt"
-      },
       "name": "Augenblick des flammenden Schattens",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner sowohl mit <#ba.noguard>Anfälligkeit</> als auch mit <#ba.spellinflict>Technikkumulierung</> belegt ist.\nRossis Kombofertigkeit hat 2 aufeinanderfolgende Sequenzen. KOMBOSEQUENZ 1 fügt dem Ziel <@ba.pd>Physischen SDN</> zu.\nKOMBOSEQUENZ 2 <#ba.consume>verbraucht</> alle <#ba.spellinflict>Technikkumulierungen</> des Ziels, fügt ihm basierend auf der Anzahl der <#ba.consume>verbrauchten</> Technikkumulierungen <@ba.pd>Physischen SDN</> zu, fügt 1 Kumulierung <#ba.airborne>Anheben</> zu und gewährt gleichzeitig einen Buff auf Rossis Kritische Rate und ihren Verursachten Kritischen Schaden.\nWenn KOMBOSEQUENZ 2 mit <@ba.key>perfektem Timing</> ausgeführt wird, bewirkt sie 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner sowohl mit <#ba.noguard>Anfälligkeit</> als auch mit <#ba.spellinflict>Technikkumulierung</> belegt ist.\nRossis Kombofertigkeit hat 2 aufeinanderfolgende Sequenzen. KOMBOSEQUENZ 1 fügt dem Ziel <@ba.pd>Physischen SDN</> zu.\nKOMBOSEQUENZ 2 <#ba.consume>verbraucht</> alle <#ba.spellinflict>Technikkumulierungen</> des Ziels, fügt ihm basierend auf der Anzahl der <#ba.consume>verbrauchten</> Technikkumulierungen <@ba.pd>Physischen SDN</> zu, fügt 1 Kumulierung <#ba.airborne>Anheben</> zu und gewährt gleichzeitig einen Buff auf Rossis Kritische Rate und ihren Verursachten Kritischen Schaden.\nWenn KOMBOSEQUENZ 2 mit <@ba.key>perfektem Timing</> ausgeführt wird, bewirkt sie 1 weitere Kumulierung <#ba.noguard>Anfälligkeit</>.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1UltimateEnergyGain": "SEQ 1 – Ultimative-Energie-Erhalt",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "criticalRateBoost": "Kritische-Rate-Boost",
+      "criticalDmgBoost": "Kritischer-SDN-Boost",
+      "buffDurationS": "Buffdauer (Sek.)",
+      "seq2UltimateEnergyGain": "SEQ 2 – Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Stichangriff-SDN-Multiplikator (Gesamt)",
-        "seq1SlashDmgMultiplier": "SEQ-1-Hieb-SDN-Multiplikator",
-        "seq2SlashDmgMultiplier": "SEQ-2-Hieb-SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "criticalDmgBoost": "Kritischer-SDN-Boost"
-      },
       "name": "Rasierkrallen-Hinterhalt",
-      "description": "Rossi lässt ihren Umhang flattern und führt eine schnelle Folge von Stichangriffen aus, die dem Ziel in mehreren Sequenzen schnell <@ba.fire>Hitze-SDN</> zufügt. Anschließend führt sie mit ihrem Dolch einen Hiebangriff aus 2 Sequenzen aus, der massiven <@ba.fire>Hitze-SDN</> bewirkt und den Gegner mit <#ba.fireinflict>Hitze</> belegt.\n<@ba.info>Wenn diese Fertigkeit erfolgreich einen kritischen Treffer erzielt, wird der Kritische SDN erhöht.</>"
+      "description": "Rossi lässt ihren Umhang flattern und führt eine schnelle Folge von Stichangriffen aus, die dem Ziel in mehreren Sequenzen schnell <@ba.fire>Hitze-SDN</> zufügt. Anschließend führt sie mit ihrem Dolch einen Hiebangriff aus 2 Sequenzen aus, der massiven <@ba.fire>Hitze-SDN</> bewirkt und den Gegner mit <#ba.fireinflict>Hitze</> belegt.\n<@ba.info>Wenn diese Fertigkeit erfolgreich einen kritischen Treffer erzielt, wird der Kritische SDN erhöht.</>",
+      "stabAttackTotalDmgMultiplier": "Stichangriff-SDN-Multiplikator (Gesamt)",
+      "seq1SlashDmgMultiplier": "SEQ-1-Hieb-SDN-Multiplikator",
+      "seq2SlashDmgMultiplier": "SEQ-2-Hieb-SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "criticalDmgBoost": "Kritischer-SDN-Boost"
     },
     "indicator": {
       "levels": [

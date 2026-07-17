@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "All-Out Offensive",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "spRecoveryByConsuming1VulnerabilityStack": "SP Recovery by Consuming 1 Vulnerability Stack",
-        "spRecoveryByConsuming2VulnerabilityStacks": "SP Recovery by Consuming 2 Vulnerability Stacks",
-        "spRecoveryByConsuming3VulnerabilityStacks": "SP Recovery by Consuming 3 Vulnerability Stacks",
-        "spRecoveryByConsuming4VulnerabilityStacks": "SP Recovery by Consuming 4 Vulnerability Stacks"
-      },
       "name": "The Pulverizing Front",
-      "description": "Pogranichnik performs a 2-sequence slash attack at enemies in front of him, dealing <@ba.pd>Physical DMG</>, applying <#ba.fracture>Breach</>, and recovering SP based on the number of Vulnerability stacks <#ba.consume>consumed</>. The SP recovery effect can only trigger 1 time, even if the skill hits multiple targets."
+      "description": "Pogranichnik performs a 2-sequence slash attack at enemies in front of him, dealing <@ba.pd>Physical DMG</>, applying <#ba.fracture>Breach</>, and recovering SP based on the number of Vulnerability stacks <#ba.consume>consumed</>. The SP recovery effect can only trigger 1 time, even if the skill hits multiple targets.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "spRecoveryByConsuming1VulnerabilityStack": "SP Recovery by Consuming 1 Vulnerability Stack",
+      "spRecoveryByConsuming2VulnerabilityStacks": "SP Recovery by Consuming 2 Vulnerability Stacks",
+      "spRecoveryByConsuming3VulnerabilityStacks": "SP Recovery by Consuming 3 Vulnerability Stacks",
+      "spRecoveryByConsuming4VulnerabilityStacks": "SP Recovery by Consuming 4 Vulnerability Stacks"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq1SpRecovery": "SEQ 1 SP Recovery",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "seq2SpRecovery": "SEQ 2 SP Recovery",
-        "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
-        "seq3Stagger": "SEQ 3 Stagger",
-        "seq3SpRecovery": "SEQ 3 SP Recovery",
-        "enhancedSeq3DmgMultiplier": "Enhanced SEQ 3 DMG Multiplier",
-        "enhancedSeq3Stagger": "Enhanced SEQ 3 Stagger",
-        "enhancedSeq3SpRecovery": "Enhanced SEQ 3 SP Recovery",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Full Moon Slash",
-      "description": "COMBO TRIGGER: When <#ba.crush>Crush</> or <#ba.fracture>Breach</> <#ba.consume>consumes</> the enemy's <#ba.noguard>Vulnerability</> stack(s). \nPerforms a number of slash sequences (up to 3) based on the max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy, dealing <@ba.pd>Physical DMG</> and recovering some SP. Each slash deals more DMG and gives better SP recovery. \n<@ba.info>Consuming 4 stacks of Vulnerability enhances the 3rd slash sequence.</>"
+      "description": "COMBO TRIGGER: When <#ba.crush>Crush</> or <#ba.fracture>Breach</> <#ba.consume>consumes</> the enemy's <#ba.noguard>Vulnerability</> stack(s). \nPerforms a number of slash sequences (up to 3) based on the max number of <#ba.noguard>Vulnerability</> stacks <#ba.consume>consumed</> from one enemy, dealing <@ba.pd>Physical DMG</> and recovering some SP. Each slash deals more DMG and gives better SP recovery. \n<@ba.info>Consuming 4 stacks of Vulnerability enhances the 3rd slash sequence.</>",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq1SpRecovery": "SEQ 1 SP Recovery",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "seq2SpRecovery": "SEQ 2 SP Recovery",
+      "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
+      "seq3Stagger": "SEQ 3 Stagger",
+      "seq3SpRecovery": "SEQ 3 SP Recovery",
+      "enhancedSeq3DmgMultiplier": "Enhanced SEQ 3 DMG Multiplier",
+      "enhancedSeq3Stagger": "Enhanced SEQ 3 Stagger",
+      "enhancedSeq3SpRecovery": "Enhanced SEQ 3 SP Recovery",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "Steel Oath Duration",
-        "advanceDmgMultiplier": "Advance DMG Multiplier",
-        "advanceStagger": "Advance Stagger",
-        "harassDmgMultiplier": "Harass DMG Multiplier",
-        "harassSpRecovery": "Harass SP Recovery",
-        "decisiveAssaultDmgMultiplier": "Decisive Assault DMG Multiplier",
-        "decisiveAssaultStagger": "Decisive Assault Stagger",
-        "decisiveAssaultSpRecovery": "Decisive Assault SP Recovery"
-      },
       "name": "Shieldguard Banner, Forward",
-      "description": "Summons 4 Shieldguards to advance and push all enemies along the way towards the target, dealing <@ba.pd>Physical DMG</> while generating 5 points of <@ba.key>Steel Oath</>. After an enemy suffers a <#ba.physicalstatus>Physical Status</> or takes DMG from Pogranichnik's combo skill, Pogranichnik consumes 1 point of <@ba.key>Steel Oath</> and summons 1 Shieldguard to harass the said enemy, dealing <@ba.pd>Physical DMG</> and recovering some SP. When the last <@ba.key>Steel Oath</> point is consumed, all 4 Shieldguards will initiate a Decisive Assault that deals massive <@ba.pd>Physical DMG</> to the target while recovering plenty of SP."
+      "description": "Summons 4 Shieldguards to advance and push all enemies along the way towards the target, dealing <@ba.pd>Physical DMG</> while generating 5 points of <@ba.key>Steel Oath</>. After an enemy suffers a <#ba.physicalstatus>Physical Status</> or takes DMG from Pogranichnik's combo skill, Pogranichnik consumes 1 point of <@ba.key>Steel Oath</> and summons 1 Shieldguard to harass the said enemy, dealing <@ba.pd>Physical DMG</> and recovering some SP. When the last <@ba.key>Steel Oath</> point is consumed, all 4 Shieldguards will initiate a Decisive Assault that deals massive <@ba.pd>Physical DMG</> to the target while recovering plenty of SP.",
+      "steelOathDuration": "Steel Oath Duration",
+      "advanceDmgMultiplier": "Advance DMG Multiplier",
+      "advanceStagger": "Advance Stagger",
+      "harassDmgMultiplier": "Harass DMG Multiplier",
+      "harassSpRecovery": "Harass SP Recovery",
+      "decisiveAssaultDmgMultiplier": "Decisive Assault DMG Multiplier",
+      "decisiveAssaultStagger": "Decisive Assault Stagger",
+      "decisiveAssaultSpRecovery": "Decisive Assault SP Recovery"
     },
     "indicator": {
       "levels": [

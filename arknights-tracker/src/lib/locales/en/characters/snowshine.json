@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Hypothermic Assault",
-      "description": "BASIC ATTACK: \nAn attack with up to 3 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 3 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "protection": "Protection",
-        "spReturn": "SP Return"
-      },
       "name": "Saturated Defense",
-      "description": "Raises a shield that can block attacks, grants <#ba.guard>Protection</> to self and nearby operators, and immediately <#ba.return>returns</> some SP. \nWhen attacked while the said shield is raised, perform a retaliation bash that deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</> on the attacker."
+      "description": "Raises a shield that can block attacks, grants <#ba.guard>Protection</> to self and nearby operators, and immediately <#ba.return>returns</> some SP. \nWhen attacked while the said shield is raised, perform a retaliation bash that deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</> on the attacker.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "protection": "Protection",
+      "spReturn": "SP Return"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Initial Base Treatment",
-        "initialTreatmentIncreasePerWill": "Initial Treatment Increase per Will",
-        "baseTreatmentOverTime": "Base Treatment Over Time",
-        "treatmentOverTimeIncreasePerWill": "Treatment Over Time Increase per Will",
-        "treatmentOverTimeIntervalS": "Treatment Over Time Interval (s)",
-        "durationS": "Duration (s)",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Polar Rescue",
-      "description": "COMBO TRIGGER: After controlled operator gets attacked and drops below {trigger_hp_ratio:0%} HP. \nSnowshine throws a Snowfield SAR Assistant at the controlled operator. Upon target contact, the Assistant gives massive instant <@ba.heal>HP Treatment</> to nearby operators as well as continuous <@ba.heal>HP Treatment</> to operators in the area of effect. \nThe attribute of Will increases the amount of HP treatment."
+      "description": "COMBO TRIGGER: After controlled operator gets attacked and drops below {trigger_hp_ratio:0%} HP. \nSnowshine throws a Snowfield SAR Assistant at the controlled operator. Upon target contact, the Assistant gives massive instant <@ba.heal>HP Treatment</> to nearby operators as well as continuous <@ba.heal>HP Treatment</> to operators in the area of effect. \nThe attribute of Will increases the amount of HP treatment.",
+      "initialBaseTreatment": "Initial Base Treatment",
+      "initialTreatmentIncreasePerWill": "Initial Treatment Increase per Will",
+      "baseTreatmentOverTime": "Base Treatment Over Time",
+      "treatmentOverTimeIncreasePerWill": "Treatment Over Time Increase per Will",
+      "treatmentOverTimeIntervalS": "Treatment Over Time Interval (s)",
+      "durationS": "Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Explosion DMG Multiplier",
-        "stagger": "Stagger",
-        "dmgOverTimeMultiplier": "DMG Over Time Multiplier",
-        "dmgOverTimeIntervalS": "DMG Over Time Interval (s)",
-        "durationS": "Duration (s)"
-      },
       "name": "Frigid Snowfield",
-      "description": "Leaps into mid-air with a jetpack before slamming down with her shield to deal massive <@ba.cryst>Cryo DMG</> to enemies in the area of effect. Also generates a <@ba.key>Snow Zone</> (lasting several seconds) that deals <@ba.cryst>Cryo DMG</> over time to enemies. The <@ba.key>Snow Zone</> forcibly applies <#ba.frozen>Solidification</> to enemies caught within it for a certain duration."
+      "description": "Leaps into mid-air with a jetpack before slamming down with her shield to deal massive <@ba.cryst>Cryo DMG</> to enemies in the area of effect. Also generates a <@ba.key>Snow Zone</> (lasting several seconds) that deals <@ba.cryst>Cryo DMG</> over time to enemies. The <@ba.key>Snow Zone</> forcibly applies <#ba.frozen>Solidification</> to enemies caught within it for a certain duration.",
+      "explosionDmgMultiplier": "Explosion DMG Multiplier",
+      "stagger": "Stagger",
+      "dmgOverTimeMultiplier": "DMG Over Time Multiplier",
+      "dmgOverTimeIntervalS": "DMG Over Time Interval (s)",
+      "durationS": "Duration (s)"
     },
     "indicator": {
       "levels": [

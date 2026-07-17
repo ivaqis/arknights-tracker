@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "陷陣劍術",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普攻，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普攻，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "additionalStaggerDealtWhenHit": "受擊後額外造成失衡值"
-      },
       "name": "進軍",
-      "description": "向前方躍起隨後重砸，對扇形範圍內的所有敵人造成<@ba.fire>灼熱傷害</>並<#ba.knockdown>倒地</>。\n施放過程中若受到過來自敵人的傷害，命中時額外造成一定失衡。"
+      "description": "向前方躍起隨後重砸，對扇形範圍內的所有敵人造成<@ba.fire>灼熱傷害</>並<#ba.knockdown>倒地</>。\n施放過程中若受到過來自敵人的傷害，命中時額外造成一定失衡。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "additionalStaggerDealtWhenHit": "受擊後額外造成失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "baseTreatment": "基礎治療值",
-        "treatmentIncreasePerWill": "每點意志增加的治療值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "前線援護",
-      "description": "主控幹員受到攻擊後可以發動。\n向目標敵人跳起並重砸，造成<@ba.pd>物理傷害</>和<#ba.knockdown>倒地</>，同時治療主控幹員。意志可以額外提高治療量。"
+      "description": "主控幹員受到攻擊後可以發動。\n向目標敵人跳起並重砸，造成<@ba.pd>物理傷害</>和<#ba.knockdown>倒地</>，同時治療主控幹員。意志可以額外提高治療量。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "baseTreatment": "基礎治療值",
+      "treatmentIncreasePerWill": "每點意志增加的治療值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "shieldConversionRatioHp": "護盾轉化比例（生命值）",
-        "shieldDurationS": "護盾持續時間（秒）"
-      },
       "name": "重燃誓約",
-      "description": "猛擊地面，對附近敵人造成<@ba.fire>灼熱傷害</>，同時使全隊獲得基於餘燼最大生命值的<#ba.shield>護盾</>。"
+      "description": "猛擊地面，對附近敵人造成<@ba.fire>灼熱傷害</>，同時使全隊獲得基於餘燼最大生命值的<#ba.shield>護盾</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "shieldConversionRatioHp": "護盾轉化比例（生命值）",
+      "shieldDurationS": "護盾持續時間（秒）"
     },
     "indicator": {
       "levels": [

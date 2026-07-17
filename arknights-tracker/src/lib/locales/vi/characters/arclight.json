@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Tìm và Săn",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2",
-        "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
-        "additionalAtkStagger": "Suy Sụp Tấn Công Bổ Sung",
-        "spRecovery": "Hồi Điểm KN"
-      },
       "name": "Vòng Cung Bão Táp",
-      "description": "Lập tức dịch chuyển đến bên cạnh kẻ địch để thi triển 2 nhát chém gây một phần <@ba.pd>ST Vật Lý</>. Nếu kẻ địch đang bị <#ba.conduct>Điện Hóa</>, <#ba.consume>giải trừ</> phản ứng <#ba.conduct>Điện Hóa</> để tung đòn tấn công bổ sung gây <@ba.pulse>ST Điện</> và hồi một phần Điểm KN."
+      "description": "Lập tức dịch chuyển đến bên cạnh kẻ địch để thi triển 2 nhát chém gây một phần <@ba.pd>ST Vật Lý</>. Nếu kẻ địch đang bị <#ba.conduct>Điện Hóa</>, <#ba.consume>giải trừ</> phản ứng <#ba.conduct>Điện Hóa</> để tung đòn tấn công bổ sung gây <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2",
+      "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
+      "additionalAtkStagger": "Suy Sụp Tấn Công Bổ Sung",
+      "spRecovery": "Hồi Điểm KN"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "spRecovery": "Hồi Điểm KN",
-        "stagger": "Suy Sụp",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Tiếng Sấm Dồn",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.conduct>Điện Hóa</> hoặc sau khi <#ba.conduct>Điện Hóa</> của kẻ địch bị <#ba.consume>tiêu hao</>. \nDịch chuyển tức thời về phía kẻ địch và tung ra một loạt đòn chém, gây <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.conduct>Điện Hóa</> hoặc sau khi <#ba.conduct>Điện Hóa</> của kẻ địch bị <#ba.consume>tiêu hao</>. \nDịch chuyển tức thời về phía kẻ địch và tung ra một loạt đòn chém, gây <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "dmgMultiplier": "Hệ Số ST",
+      "spRecovery": "Hồi Điểm KN",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq1Stagger": "Suy Sụp Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2"
-      },
       "name": "Đột Kích Nổ",
-      "description": "Thực hiện một bước lướt ngắn về phía trước, bao quanh bởi điện, gây <@ba.pulse>ST Điện</> và gây hiệu ứng <#ba.pulseinflict>Nhiễm Điện</> lên tất cả kẻ địch trên đường đi. Vòng điện phát nổ sau một lúc, gây thêm <@ba.pulse>ST Điện</>. Nếu kẻ địch đang bị <#ba.pulseinflict>Nhiễm Điện</>, sẽ <#ba.consume>tiêu hao</> <#ba.pulseinflict>Nhiễm Điện</> buộc áp hiệu ứng <#ba.conduct>Điện Hóa</>."
+      "description": "Thực hiện một bước lướt ngắn về phía trước, bao quanh bởi điện, gây <@ba.pulse>ST Điện</> và gây hiệu ứng <#ba.pulseinflict>Nhiễm Điện</> lên tất cả kẻ địch trên đường đi. Vòng điện phát nổ sau một lúc, gây thêm <@ba.pulse>ST Điện</>. Nếu kẻ địch đang bị <#ba.pulseinflict>Nhiễm Điện</>, sẽ <#ba.consume>tiêu hao</> <#ba.pulseinflict>Nhiễm Điện</> buộc áp hiệu ứng <#ba.conduct>Điện Hóa</>.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq1Stagger": "Suy Sụp Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2"
     },
     "indicator": {
       "levels": [

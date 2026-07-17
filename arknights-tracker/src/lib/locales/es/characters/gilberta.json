@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Báculo arcano: artes de cohesión de rayos",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige <@ba.natur>DAÑ por naturaleza</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige <@ba.natur>DAÑ por naturaleza</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Multiplicador de DAÑ atracción gravedad",
-        "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
-        "explosionStagger": "Tambaleo por Explosión"
-      },
       "name": "Báculo arcano: modo gravedad",
-      "description": "Inicia una canalización de Artes que crea un <@ba.key>pozo de gravedad</>. El <@ba.key>pozo de gravedad</> atrae a los enemigos cercanos e inflige <@ba.natur>DAÑ por naturaleza</>. Al terminar la canalización, el <@ba.key>pozo de gravedad</> implosiona para infligir <@ba.natur>DAÑ por naturaleza</> e <#ba.naturalinflict>Imp. de nat.</> a los enemigos en el área de efecto."
+      "description": "Inicia una canalización de Artes que crea un <@ba.key>pozo de gravedad</>. El <@ba.key>pozo de gravedad</> atrae a los enemigos cercanos e inflige <@ba.natur>DAÑ por naturaleza</>. Al terminar la canalización, el <@ba.key>pozo de gravedad</> implosiona para infligir <@ba.natur>DAÑ por naturaleza</> e <#ba.naturalinflict>Imp. de nat.</> a los enemigos en el área de efecto.",
+      "gravityPullDmgMultiplier": "Multiplicador de DAÑ atracción gravedad",
+      "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
+      "explosionStagger": "Tambaleo por Explosión"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Báculo arcano: reubicación de la matriz",
-      "description": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellstatus>Reacción a Artes</> a un enemigo. \nUn lanzamiento rápido de Artes que genera una atracción gravitacional, la cual inflige <@ba.natur>DAÑ por naturaleza</> y fuerza <#ba.airborne>Levantar</> del objetivo y de los enemigos cercanos."
+      "description": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellstatus>Reacción a Artes</> a un enemigo. \nUn lanzamiento rápido de Artes que genera una atracción gravitacional, la cual inflige <@ba.natur>DAÑ por naturaleza</> y fuerza <#ba.airborne>Levantar</> del objetivo y de los enemigos cercanos.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "fieldDurationS": "Duración de campo (s)",
-        "slowEffect": "Efecto de Ralentizar",
-        "baseArtsSusceptibility": "Suscep. a art. básica",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento de susceptibilidad a artes por acumulación de Vulnerabilidad"
-      },
       "name": "Báculo arcano: campo gravitacional",
-      "description": "Crea un <@ba.key>Campo gravitacional anómalo</> que inflige de inmediato 1 golpe de <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos atrapados en el campo. Los objetivos en el <@ba.key>Campo gravitatorio anómalo</> también sufren <#ba.slow>Ralentizar</> y <#ba.spellvul>Susceptibilidad a Artes</>. El efecto de <#ba.spellvul>Susceptibilidad a Artes</> aumenta según la cantidad de acumulaciones activas de <#ba.noguard>Vulnerabilidad</> en el objetivo. \n<@ba.info>Si un objetivo en el campo está Levantado, el estado de Levantado persistirá hasta que el campo se disipe.</>"
+      "description": "Crea un <@ba.key>Campo gravitacional anómalo</> que inflige de inmediato 1 golpe de <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos atrapados en el campo. Los objetivos en el <@ba.key>Campo gravitatorio anómalo</> también sufren <#ba.slow>Ralentizar</> y <#ba.spellvul>Susceptibilidad a Artes</>. El efecto de <#ba.spellvul>Susceptibilidad a Artes</> aumenta según la cantidad de acumulaciones activas de <#ba.noguard>Vulnerabilidad</> en el objetivo. \n<@ba.info>Si un objetivo en el campo está Levantado, el estado de Levantado persistirá hasta que el campo se disipe.</>",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "fieldDurationS": "Duración de campo (s)",
+      "slowEffect": "Efecto de Ralentizar",
+      "baseArtsSusceptibility": "Suscep. a art. básica",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento de susceptibilidad a artes por acumulación de Vulnerabilidad"
     },
     "indicator": {
       "levels": [

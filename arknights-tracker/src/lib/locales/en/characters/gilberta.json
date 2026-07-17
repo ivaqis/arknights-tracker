@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Arcane Staff: Beam Cohesion Arts",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Gravity Pull DMG Multiplier",
-        "explosionDmgMultiplier": "Explosion DMG Multiplier",
-        "explosionStagger": "Explosion Stagger"
-      },
       "name": "Arcane Staff: Gravity Mode",
-      "description": "Initiates Arts channeling that creates a <@ba.key>gravity well</>. The <@ba.key>gravity well</> pulls in nearby enemies and deals <@ba.natur>Nature DMG</> to them. When channeling ends, the <@ba.key>gravity well</> implodes to deal <@ba.natur>Nature DMG</> and <#ba.naturalinflict>Nature Infliction</> to enemies in the area of effect."
+      "description": "Initiates Arts channeling that creates a <@ba.key>gravity well</>. The <@ba.key>gravity well</> pulls in nearby enemies and deals <@ba.natur>Nature DMG</> to them. When channeling ends, the <@ba.key>gravity well</> implodes to deal <@ba.natur>Nature DMG</> and <#ba.naturalinflict>Nature Infliction</> to enemies in the area of effect.",
+      "gravityPullDmgMultiplier": "Gravity Pull DMG Multiplier",
+      "explosionDmgMultiplier": "Explosion DMG Multiplier",
+      "explosionStagger": "Explosion Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Arcane Staff: Matrix Displacement",
-      "description": "COMBO TRIGGER: When an <#ba.spellstatus>Arts Reaction</> is applied to an enemy. \nA quick casting of the Arts that generates a gravity pull, which then deals <@ba.natur>Nature DMG</> and forcibly <#ba.airborne>Lifts</> the target and nearby enemies."
+      "description": "COMBO TRIGGER: When an <#ba.spellstatus>Arts Reaction</> is applied to an enemy. \nA quick casting of the Arts that generates a gravity pull, which then deals <@ba.natur>Nature DMG</> and forcibly <#ba.airborne>Lifts</> the target and nearby enemies.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "fieldDurationS": "Field Duration (s)",
-        "slowEffect": "Slow Effect",
-        "baseArtsSusceptibility": "Base Arts Susceptibility",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Arts Susceptibility Increase per Vulnerability Stack"
-      },
       "name": "Arcane Staff: Gravity Field",
-      "description": "Creates an <@ba.key>Anomalous Gravity Field</> that instantly deals 1 hit of <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies caught in the field. Targets in the <@ba.key>Anomalous Gravity Field</> also suffer from <#ba.slow>Slow</> and <#ba.spellvul>Arts Susceptibility</>. The effect of <#ba.spellvul>Arts Susceptibility</> is further increased based on the number of active <#ba.noguard>Vulnerability</> stacks on the target. \n<@ba.info>If a target in the field is Lifted, the Lifted status will persist until the field wears off.</>"
+      "description": "Creates an <@ba.key>Anomalous Gravity Field</> that instantly deals 1 hit of <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies caught in the field. Targets in the <@ba.key>Anomalous Gravity Field</> also suffer from <#ba.slow>Slow</> and <#ba.spellvul>Arts Susceptibility</>. The effect of <#ba.spellvul>Arts Susceptibility</> is further increased based on the number of active <#ba.noguard>Vulnerability</> stacks on the target. \n<@ba.info>If a target in the field is Lifted, the Lifted status will persist until the field wears off.</>",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "fieldDurationS": "Field Duration (s)",
+      "slowEffect": "Slow Effect",
+      "baseArtsSusceptibility": "Base Arts Susceptibility",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Arts Susceptibility Increase per Vulnerability Stack"
     },
     "indicator": {
       "levels": [

@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Thương Sấm Sét-Càn Quét",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "thunderlanceDmgMultiplier": "Hệ Số ST Thương Sấm Sét",
-        "thunderlanceStagger": "Suy Sụp Do Thương Sấm Sét",
-        "thunderlanceExDmgMultiplier": "Hệ Số ST Thương Sấm Sét Cường Hóa",
-        "thunderlanceExStagger": "Suy Sụp Do Thương Sấm Sét Cường Hóa"
-      },
       "name": "Thương Sấm Sét-Trấn Áp",
-      "description": "Bật nhảy lên không trung và xoáy giáo tạo vòi lốc, gây <@ba.pulse>ST Điện</> quanh kẻ địch lân cận đồng thời thu hồi toàn bộ <@ba.key>Thương Sấm Sét</> và <@ba.key>Thương Sấm Sét Cường Hóa</> trên chiến trường về phía mình. \nCác <@ba.key>Thương Sấm Sét</> quay về sẽ xuyên qua toàn bộ kẻ địch trên đường và gây <@ba.pulse>ST Điện</>, còn <@ba.key>Thương Sấm Sét</> quay về gây nhiều <@ba.pulse>ST Điện</> hơn đồng thời áp dụng <#ba.pulseinflict>Nhiễm Điện</>."
+      "description": "Bật nhảy lên không trung và xoáy giáo tạo vòi lốc, gây <@ba.pulse>ST Điện</> quanh kẻ địch lân cận đồng thời thu hồi toàn bộ <@ba.key>Thương Sấm Sét</> và <@ba.key>Thương Sấm Sét Cường Hóa</> trên chiến trường về phía mình. \nCác <@ba.key>Thương Sấm Sét</> quay về sẽ xuyên qua toàn bộ kẻ địch trên đường và gây <@ba.pulse>ST Điện</>, còn <@ba.key>Thương Sấm Sét</> quay về gây nhiều <@ba.pulse>ST Điện</> hơn đồng thời áp dụng <#ba.pulseinflict>Nhiễm Điện</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "thunderlanceDmgMultiplier": "Hệ Số ST Thương Sấm Sét",
+      "thunderlanceStagger": "Suy Sụp Do Thương Sấm Sét",
+      "thunderlanceExDmgMultiplier": "Hệ Số ST Thương Sấm Sét Cường Hóa",
+      "thunderlanceExStagger": "Suy Sụp Do Thương Sấm Sét Cường Hóa"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "thunderlanceDurationS": "Thời Gian Hiệu Lực Của Thương Sấm Sét (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Thương Sấm Sét-Đột Kích",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển <#ba.lastcombo>Đòn Dứt Điểm</> lên mục tiêu đang <#ba.pulseinflict>Nhiễm Điện</> hoặc bị <#ba.conduct>Điện Hóa</>. \nNhảy lên không trung và ném 3 <@ba.key>Thương Sấm Sét</> vào mục tiêu, gây 1 đòn <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi ảnh hưởng."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển <#ba.lastcombo>Đòn Dứt Điểm</> lên mục tiêu đang <#ba.pulseinflict>Nhiễm Điện</> hoặc bị <#ba.conduct>Điện Hóa</>. \nNhảy lên không trung và ném 3 <@ba.key>Thương Sấm Sét</> vào mục tiêu, gây 1 đòn <@ba.pulse>ST Điện</> lên kẻ địch trong phạm vi ảnh hưởng.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "thunderlanceDurationS": "Thời Gian Hiệu Lực Của Thương Sấm Sét (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "thunderlanceExDurationS": "Thời Gian Hiệu Lực Của Thương Sấm Sét Cường Hóa (giây)"
-      },
       "name": "Thương Sấm Sét-Quyết Chiến",
-      "description": "Ném <@ba.key>Thương Sấm Sét Cường Hóa</> vào khu vực mục tiêu, gây <@ba.pulse>ST Điện</> cực lớn cho kẻ địch lân cận."
+      "description": "Ném <@ba.key>Thương Sấm Sét Cường Hóa</> vào khu vực mục tiêu, gây <@ba.pulse>ST Điện</> cực lớn cho kẻ địch lân cận.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "thunderlanceExDurationS": "Thời Gian Hiệu Lực Của Thương Sấm Sét Cường Hóa (giây)"
     },
     "indicator": {
       "levels": [

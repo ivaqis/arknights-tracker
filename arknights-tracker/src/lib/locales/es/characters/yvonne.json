@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Desatar euforia",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Multiplicador de DAÑ base",
-        "dmgMultiplierOfSolidificationApplied": "Multiplicador de DAÑ de Solidificación Aplicado",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicador de DAÑ adicional por Acumulación de imposición",
-        "stagger": "Tambaleo",
-        "ultimateEnergyFromSolidificationApplied": "Energía máxima por Solidificación aplicada",
-        "additionalUltimateEnergyGainPerInflictionStack": "Ganancia adicional de Energía máxima por Acumulación de imposición"
-      },
       "name": "Brr-Brr-Bomba β",
-      "description": "Lanza una bomba congelante. La bomba explota al impactar contra el enemigo e inflige <@ba.cryst>DAÑ criogénico</>. Si impacta a un enemigo con <#ba.crystinflict>Imposición criogénica</> o <#ba.naturalinflict>Imposición de naturaleza</>, entonces <#ba.consume>consume</> todas las acumulaciones de <#ba.spellinflict>Imposición de artes</>, aplica <#ba.frozen>Solidificación</> forzada e inflige <@ba.cryst>DAÑ criogénico</> al objetivo según la cantidad de acumulaciones <#ba.consume>consumidas</>.\nDespués de que la habilidad de batalla aplica <#ba.frozen>Solidificación</> con éxito, Yvonne obtiene Energía máxima adicional según la cantidad de acumulaciones <#ba.consume>consumidas</>. Este efecto de obtención de Energía máxima solo puede activarse 1 vez, incluso si la habilidad golpea a varios enemigos."
+      "description": "Lanza una bomba congelante. La bomba explota al impactar contra el enemigo e inflige <@ba.cryst>DAÑ criogénico</>. Si impacta a un enemigo con <#ba.crystinflict>Imposición criogénica</> o <#ba.naturalinflict>Imposición de naturaleza</>, entonces <#ba.consume>consume</> todas las acumulaciones de <#ba.spellinflict>Imposición de artes</>, aplica <#ba.frozen>Solidificación</> forzada e inflige <@ba.cryst>DAÑ criogénico</> al objetivo según la cantidad de acumulaciones <#ba.consume>consumidas</>.\nDespués de que la habilidad de batalla aplica <#ba.frozen>Solidificación</> con éxito, Yvonne obtiene Energía máxima adicional según la cantidad de acumulaciones <#ba.consume>consumidas</>. Este efecto de obtención de Energía máxima solo puede activarse 1 vez, incluso si la habilidad golpea a varios enemigos.",
+      "baseDmgMultiplier": "Multiplicador de DAÑ base",
+      "dmgMultiplierOfSolidificationApplied": "Multiplicador de DAÑ de Solidificación Aplicado",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicador de DAÑ adicional por Acumulación de imposición",
+      "stagger": "Tambaleo",
+      "ultimateEnergyFromSolidificationApplied": "Energía máxima por Solidificación aplicada",
+      "additionalUltimateEnergyGainPerInflictionStack": "Ganancia adicional de Energía máxima por Acumulación de imposición"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Duración (s)",
-        "numberOfEnergyReleases": "Número de liberaciones de energía",
-        "energyDmgMultiplier": "Multiplicador de DAÑ de energía",
-        "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
-        "explosionStagger": "Tambaleo por Explosión",
-        "ultimateEnergyGain": "Ganancia de Energía máxima",
-        "additionalUltimateEnergyGain": "Ganancia adicional de Energía máxima"
-      },
       "name": "Supercongelador υ37",
-      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre un enemigo con <#ba.frozen>Solidificación</>.\nDespliega de inmediato a Frost-e-Bytee junto al enemigo. Mientras está activo, Frost-e-Bytee libera energía constantemente para atacar a los enemigos cercanos, les inflige <@ba.cryst>DAÑ criogénico</> y los <@ba.key>atrae</>. Cuando Frost-e-Bytee expira, explota para aplicar <#ba.frozen>Solidificación</> forzada e infligir <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos.\nDespués de que la habilidad de combo golpea al enemigo con éxito, Yvonne obtiene Energía máxima adicional. Este efecto de obtención de Energía máxima solo puede activarse 1 vez, aunque la habilidad golpee a varios enemigos."
+      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre un enemigo con <#ba.frozen>Solidificación</>.\nDespliega de inmediato a Frost-e-Bytee junto al enemigo. Mientras está activo, Frost-e-Bytee libera energía constantemente para atacar a los enemigos cercanos, les inflige <@ba.cryst>DAÑ criogénico</> y los <@ba.key>atrae</>. Cuando Frost-e-Bytee expira, explota para aplicar <#ba.frozen>Solidificación</> forzada e infligir <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos.\nDespués de que la habilidad de combo golpea al enemigo con éxito, Yvonne obtiene Energía máxima adicional. Este efecto de obtención de Energía máxima solo puede activarse 1 vez, aunque la habilidad golpee a varios enemigos.",
+      "durationS": "Duración (s)",
+      "numberOfEnergyReleases": "Número de liberaciones de energía",
+      "energyDmgMultiplier": "Multiplicador de DAÑ de energía",
+      "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
+      "explosionStagger": "Tambaleo por Explosión",
+      "ultimateEnergyGain": "Ganancia de Energía máxima",
+      "additionalUltimateEnergyGain": "Ganancia adicional de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duración (s)",
-        "batkDmgMultiplier": "Multiplicador de DAÑ ATQB",
-        "enhancedFinalStrikeDmgMultiplier": "Multiplicador de DAÑ de Golpe final mejorado",
-        "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
-        "enhancedFinalStrikeStagger": "Tambaleo de Golpe final mejorado",
-        "maxStacks": "Acumulaciones Max.",
-        "criticalRateBoostPerStack": "Refuerzo de Índice crítico por Acumulación",
-        "criticalDmgBoostAtMaxStacks": "Refuerzo de DAÑ crítico con Acumulaciones Máx."
-      },
       "name": "Pistolera criodetonante",
-      "description": "Despliega de inmediato el bot de apoyo Tink-a-Bella y convierte a Yvonne en la operadora controlada.\nTemporalmente <@ba.key>mejora</> el ataque básico (ATQB) de Yvonne. Cada secuencia de ATQB realizada otorga una acumulación de incremento de Índice crítico. Al alcanzar las acumulaciones máximas, Yvonne también obtiene un incremento de DAÑ crítico. Cuando la habilidad está por terminar, el último ATQB de Yvonne se convierte en un <#ba.lastcombo>Golpe final</> que inflige <@ba.cryst>DAÑ criogénico</> masivo.\nSi el enemigo está <#ba.frozen>Solidificado</>, Yvonne realiza un ataque adicional que inflige <@ba.cryst>DAÑ criogénico</> y luego <#ba.consume>consume</> la <#ba.frozen>Solidificación</> del enemigo."
+      "description": "Despliega de inmediato el bot de apoyo Tink-a-Bella y convierte a Yvonne en la operadora controlada.\nTemporalmente <@ba.key>mejora</> el ataque básico (ATQB) de Yvonne. Cada secuencia de ATQB realizada otorga una acumulación de incremento de Índice crítico. Al alcanzar las acumulaciones máximas, Yvonne también obtiene un incremento de DAÑ crítico. Cuando la habilidad está por terminar, el último ATQB de Yvonne se convierte en un <#ba.lastcombo>Golpe final</> que inflige <@ba.cryst>DAÑ criogénico</> masivo.\nSi el enemigo está <#ba.frozen>Solidificado</>, Yvonne realiza un ataque adicional que inflige <@ba.cryst>DAÑ criogénico</> y luego <#ba.consume>consume</> la <#ba.frozen>Solidificación</> del enemigo.",
+      "durationS": "Duración (s)",
+      "batkDmgMultiplier": "Multiplicador de DAÑ ATQB",
+      "enhancedFinalStrikeDmgMultiplier": "Multiplicador de DAÑ de Golpe final mejorado",
+      "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
+      "enhancedFinalStrikeStagger": "Tambaleo de Golpe final mejorado",
+      "maxStacks": "Acumulaciones Max.",
+      "criticalRateBoostPerStack": "Refuerzo de Índice crítico por Acumulación",
+      "criticalDmgBoostAtMaxStacks": "Refuerzo de DAÑ crítico con Acumulaciones Máx."
     },
     "indicator": {
       "levels": [

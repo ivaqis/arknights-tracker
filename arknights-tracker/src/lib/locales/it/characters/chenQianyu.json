@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Sferzata volante",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "liftDurationS": "Durata Sospensione (s)"
-      },
       "name": "Colpo ascendente",
-      "description": "Colpisce il bersaglio con un fendente verticale, infliggendo <@ba.pd>danni fisici</> e <#ba.airborne>Sospensione</>."
+      "description": "Colpisce il bersaglio con un fendente verticale, infliggendo <@ba.pd>danni fisici</> e <#ba.airborne>Sospensione</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "liftDurationS": "Durata Sospensione (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Volo verso le stelle",
-      "description": "ATTIVAZIONE COMBO: quando un nemico diventa <#ba.noguard>Vulnerabile</>. \nEsegue un attacco sferzante che attraversa il bersaglio nemico e infligge <@ba.pd>danni fisici</> e <#ba.airborne>Sospensione</> a tutti i nemici sul suo percorso."
+      "description": "ATTIVAZIONE COMBO: quando un nemico diventa <#ba.noguard>Vulnerabile</>. \nEsegue un attacco sferzante che attraversa il bersaglio nemico e infligge <@ba.pd>danni fisici</> e <#ba.airborne>Sospensione</> a tutti i nemici sul suo percorso.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Moltiplicatore sferzata",
-        "firstStrikeStagger": "Vacillamento primo colpo",
-        "finalStrikeDmgMultiplier": "Moltiplicatore danni colpo finale",
-        "finalStrikeStagger": "Vacillamento colpo finale"
-      },
       "name": "Burrasca tagliente",
-      "description": "Una sequenza di sette attacchi sferzanti che infliggono <@ba.pd>danni fisici</> al nemico preso di mira. L'attacco finale infligge danni extra."
+      "description": "Una sequenza di sette attacchi sferzanti che infliggono <@ba.pd>danni fisici</> al nemico preso di mira. L'attacco finale infligge danni extra.",
+      "slashMultiplier": "Moltiplicatore sferzata",
+      "firstStrikeStagger": "Vacillamento primo colpo",
+      "finalStrikeDmgMultiplier": "Moltiplicatore danni colpo finale",
+      "finalStrikeStagger": "Vacillamento colpo finale"
     },
     "indicator": {
       "levels": [

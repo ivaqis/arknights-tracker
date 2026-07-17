@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Sussurros Rochosos",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "susceptibility": "Suscetibilidade",
-        "susceptibilityDurationS": "Duração da Suscetibilidade (s)"
-      },
       "name": "Corrida de Dolly",
-      "description": "Sobe em Sr. Dolly e arranca rumo ao alvo para causar <@ba.natur>DNO Natureza</>. Se o alvo estiver com <#ba.corrupt>Corrosão</>, <#ba.consume>consome</> a <#ba.corrupt>Corrosão</> e aplica <#ba.physicalvul>Suscetibilidade Física</> e <#ba.spellvul>Suscetibilidade de Artes</> ao alvo."
+      "description": "Sobe em Sr. Dolly e arranca rumo ao alvo para causar <@ba.natur>DNO Natureza</>. Se o alvo estiver com <#ba.corrupt>Corrosão</>, <#ba.consume>consome</> a <#ba.corrupt>Corrosão</> e aplica <#ba.physicalvul>Suscetibilidade Física</> e <#ba.spellvul>Suscetibilidade de Artes</> ao alvo.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "susceptibility": "Suscetibilidade",
+      "susceptibilityDurationS": "Duração da Suscetibilidade (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "explosionDmgMultiplier": "Multiplicador DNO Explosão",
-        "stagger": "Desorientação",
-        "corrodeDurationS": "Duração de Corroer (s)",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Coluna da Erupção",
-      "description": "ACIONADOR DO COMBO: Quando o operador controlado aplica um <#ba.lastcombo>Golpe Final</> em um inimigo <@ba.key>sem</> acúmulos de <#ba.noguard>Vulnerabilidade</> ou <#ba.spellinflict>Inflição de Artes</>. \nLança uma Nuvem Vulcânica teleguiada contra um inimigo alvo que causa <@ba.natur>DNO Natureza</> ao se aproximar o suficiente do alvo. A Nuvem Vulcânica explode após um curto período, causando metade do <@ba.natur>DNO Natureza</> e aplicando temporariamente o efeito de <#ba.corrupt>Corrosão</> à força a inimigos próximos."
+      "description": "ACIONADOR DO COMBO: Quando o operador controlado aplica um <#ba.lastcombo>Golpe Final</> em um inimigo <@ba.key>sem</> acúmulos de <#ba.noguard>Vulnerabilidade</> ou <#ba.spellinflict>Inflição de Artes</>. \nLança uma Nuvem Vulcânica teleguiada contra um inimigo alvo que causa <@ba.natur>DNO Natureza</> ao se aproximar o suficiente do alvo. A Nuvem Vulcânica explode após um curto período, causando metade do <@ba.natur>DNO Natureza</> e aplicando temporariamente o efeito de <#ba.corrupt>Corrosão</> à força a inimigos próximos.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "explosionDmgMultiplier": "Multiplicador DNO Explosão",
+      "stagger": "Desorientação",
+      "corrodeDurationS": "Duração de Corroer (s)",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "durationS": "Duração (s)"
-      },
       "name": "Festa da Lã",
-      "description": "Ardelia entra em um estado de canalização móvel e invoca a ajuda do Sr. Dolly. Várias cópias do Sr. Dolly são arremessadas em direções aleatórias. Cada cópia causa <@ba.natur>DNO Natureza</>. Cada inimigo só pode receber 1 golpe causador de danos a cada {interval:0.0}s."
+      "description": "Ardelia entra em um estado de canalização móvel e invoca a ajuda do Sr. Dolly. Várias cópias do Sr. Dolly são arremessadas em direções aleatórias. Cada cópia causa <@ba.natur>DNO Natureza</>. Cada inimigo só pode receber 1 golpe causador de danos a cada {interval:0.0}s.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "durationS": "Duração (s)"
     },
     "indicator": {
       "levels": [

@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "基礎戦術",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "protection": "加護効果",
-        "spReturn": "SP返還量"
-      },
       "name": "強制ブロック",
-      "description": "盾を構えて敵の攻撃をブロックし、自身と周囲のオペレーターに<#ba.guard>加護</>を与え、即座にSPが一定量<#ba.return>返還</>される。\n盾を構えている間に攻撃を受けると、反撃が1回発動する。敵に<@ba.pd>物理ダメージ</>を与え、<#ba.noguard>クラッシュ</>段階を1増加させる。"
+      "description": "盾を構えて敵の攻撃をブロックし、自身と周囲のオペレーターに<#ba.guard>加護</>を与え、即座にSPが一定量<#ba.return>返還</>される。\n盾を構えている間に攻撃を受けると、反撃が1回発動する。敵に<@ba.pd>物理ダメージ</>を与え、<#ba.noguard>クラッシュ</>段階を1増加させる。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "protection": "加護効果",
+      "spReturn": "SP返還量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "stagger": "ブレイク値",
-        "baseShield": "シールド基礎値",
-        "shieldIncreasePerDefense": "防御力1ごとのシールド値UP",
-        "shieldDurationS": "シールド持続時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "即時制圧",
-      "description": "敵がチャージを開始するか、操作中のオペレーターが攻撃を受けてHPが{trigger_hp_ratio:0%}未満になると発動可能。\n拳で前方を強く叩きつけ、敵に<@ba.pd>物理ダメージ</>を与える。同時に、自身と味方オペレーター1人（操作中のオペレーターを優先）に<#ba.shield>シールド</>を付与する。\nシールドの最大値は防御力に応じて追加でアップする。"
+      "description": "敵がチャージを開始するか、操作中のオペレーターが攻撃を受けてHPが{trigger_hp_ratio:0%}未満になると発動可能。\n拳で前方を強く叩きつけ、敵に<@ba.pd>物理ダメージ</>を与える。同時に、自身と味方オペレーター1人（操作中のオペレーターを優先）に<#ba.shield>シールド</>を付与する。\nシールドの最大値は防御力に応じて追加でアップする。",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "stagger": "ブレイク値",
+      "baseShield": "シールド基礎値",
+      "shieldIncreasePerDefense": "防御力1ごとのシールド値UP",
+      "shieldDurationS": "シールド持続時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq1Stagger": "1段目ブレイク値",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値",
-        "seq3DmgMultiplier": "3段目ダメージ倍率",
-        "seq3Stagger": "3段目ブレイク値",
-        "weaknessEffect": "弱体化効果",
-        "weaknessDurationS": "弱体化持続時間（秒）"
-      },
       "name": "教科書通り",
-      "description": "大剣を振り回して前方へすばやく斬撃を2回放ち、敵に<@ba.pd>物理ダメージ</>を与え、<#ba.weak>弱体化</>を付与する。さらに、地面を強く叩き付け、範囲内のすべての敵に高い<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。"
+      "description": "大剣を振り回して前方へすばやく斬撃を2回放ち、敵に<@ba.pd>物理ダメージ</>を与え、<#ba.weak>弱体化</>を付与する。さらに、地面を強く叩き付け、範囲内のすべての敵に高い<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq1Stagger": "1段目ブレイク値",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値",
+      "seq3DmgMultiplier": "3段目ダメージ倍率",
+      "seq3Stagger": "3段目ブレイク値",
+      "weaknessEffect": "弱体化効果",
+      "weaknessDurationS": "弱体化持続時間（秒）"
     },
     "indicator": {
       "levels": [

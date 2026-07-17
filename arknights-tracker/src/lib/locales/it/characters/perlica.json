@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Protocollo α: sfondamento",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Protocollo ω: impatto",
-      "description": "Scaglia un dardo di energia elettromagnetica che infligge <@ba.pulse>danni da elettricità</> e <#ba.pulseinflict>Afflizione da elettricità</> ai nemici in un piccola area."
+      "description": "Scaglia un dardo di energia elettromagnetica che infligge <@ba.pulse>danni da elettricità</> e <#ba.pulseinflict>Afflizione da elettricità</> ai nemici in un piccola area.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "electrifyDurationS": "Durata Elettrificazione (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Protocollo istantaneo: concatenazione",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore che controlli esegue un <#ba.lastcombo>colpo finale</> su qualsiasi nemico. \nScatena l'energia elettromagnetica immagazzinata per bombardare il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e causando forzatamente <#ba.conduct>Elettrificazione</> temporanea."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore che controlli esegue un <#ba.lastcombo>colpo finale</> su qualsiasi nemico. \nScatena l'energia elettromagnetica immagazzinata per bombardare il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e causando forzatamente <#ba.conduct>Elettrificazione</> temporanea.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "electrifyDurationS": "Durata Elettrificazione (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Protocollo ε: 70,41K",
-      "description": "Fa comparire sul campo di battaglia un enorme detrito orbitale con un impatto devastante. Tutti i nemici nel raggio d'azione subiscono ingenti <@ba.pulse>danni da elettricità</>."
+      "description": "Fa comparire sul campo di battaglia un enorme detrito orbitale con un impatto devastante. Tutti i nemici nel raggio d'azione subiscono ingenti <@ba.pulse>danni da elettricità</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "indicator": {
       "levels": [

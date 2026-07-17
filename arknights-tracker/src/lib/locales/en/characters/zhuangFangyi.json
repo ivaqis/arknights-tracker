@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Jolting Arts",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Thunder Strike DMG Multiplier",
-        "totalStagger": "Total Stagger",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus DMG Multiplier per Status Level of Electrification Consumed",
-        "bonusUltimateEnergyPerThunderStrike": "Bonus Ultimate Energy per Thunder Strike",
-        "sunderbladeLimit": "Sunderblade Limit",
-        "sunderbladeDurationS": "Sunderblade Duration (s)",
-        "duringUltimateThunderStrikeDmgMultiplier": "During Ultimate: Thunder Strike DMG Multiplier",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "During Ultimate: Bonus DMG Multiplier per Status Level of Electrification Consumed"
-      },
       "name": "Mantra of Sundering",
-      "description": "<#ba.consume>Consumes</> the target's <#ba.conduct>Electrification</> to increase the DMG multiplier of this battle skill and create [<#ba.statuslevel>Status Level</> of <#ba.conduct>Electrification</> <#ba.consume>consumed</> <@ba.key>+1</>] <@ba.key>Sunderblades</>. If the battlefield has fewer than {free_sword_limit:0} <@ba.key>Sunderblades</>, Mantra of Sundering can still create 1 <@ba.key>Sunderblade</>, even if it does not <#ba.consume>consume</> any target's <#ba.conduct>Electrification</>.\nZhuang Fangyi then channels all <@ba.key>Sunderblades</> nearby to successively unleash Thunder Strikes on the target, dealing <@ba.pulse>Electric DMG</> and giving bonus Ultimate Energy, with the final Thunder Strike dealing {final_rate:0} times the DMG.\n<@ba.info>A single battle skill casting can only create a max of {max_conduct_sword:0} Sunderblades.</>"
+      "description": "<#ba.consume>Consumes</> the target's <#ba.conduct>Electrification</> to increase the DMG multiplier of this battle skill and create [<#ba.statuslevel>Status Level</> of <#ba.conduct>Electrification</> <#ba.consume>consumed</> <@ba.key>+1</>] <@ba.key>Sunderblades</>. If the battlefield has fewer than {free_sword_limit:0} <@ba.key>Sunderblades</>, Mantra of Sundering can still create 1 <@ba.key>Sunderblade</>, even if it does not <#ba.consume>consume</> any target's <#ba.conduct>Electrification</>.\nZhuang Fangyi then channels all <@ba.key>Sunderblades</> nearby to successively unleash Thunder Strikes on the target, dealing <@ba.pulse>Electric DMG</> and giving bonus Ultimate Energy, with the final Thunder Strike dealing {final_rate:0} times the DMG.\n<@ba.info>A single battle skill casting can only create a max of {max_conduct_sword:0} Sunderblades.</>",
+      "thunderStrikeDmgMultiplier": "Thunder Strike DMG Multiplier",
+      "totalStagger": "Total Stagger",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus DMG Multiplier per Status Level of Electrification Consumed",
+      "bonusUltimateEnergyPerThunderStrike": "Bonus Ultimate Energy per Thunder Strike",
+      "sunderbladeLimit": "Sunderblade Limit",
+      "sunderbladeDurationS": "Sunderblade Duration (s)",
+      "duringUltimateThunderStrikeDmgMultiplier": "During Ultimate: Thunder Strike DMG Multiplier",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "During Ultimate: Bonus DMG Multiplier per Status Level of Electrification Consumed"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain",
-        "additionalUltimateEnergyPerInflictionStack": "Additional Ultimate Energy per Infliction Stack",
-        "duringUltimateDmgMultiplier": "During Ultimate: DMG Multiplier"
-      },
       "name": "Breath of Transformation",
-      "description": "COMBO TRIGGER: When the controlled operator's <#ba.lastcombo>Final Strike</> or Finisher hits an enemy with <#ba.pulseinflict>Electric Infliction</>.\nZhuang Fangyi creates a Xiranblitz Array that attacks the enemy and deals <@ba.pulse>Electric DMG</>. If the Array hits an enemy that has <#ba.pulseinflict>Electric Infliction</> stack(s), then it will <#ba.consume>consume</> the said <#ba.pulseinflict>Electric Infliction</> stack(s), forcibly apply <#ba.conduct>Electrification</>, and give Ultimate Energy based on the number of stacks <#ba.consume>consumed</>.\nIf <#ba.conduct>Electrification</> is forcibly applied to an enemy that already has <#ba.conduct>Electrification</>, then apply <#ba.statuslevel>Status Level</> +1 to the enemy's <#ba.conduct>Electrification</>."
+      "description": "COMBO TRIGGER: When the controlled operator's <#ba.lastcombo>Final Strike</> or Finisher hits an enemy with <#ba.pulseinflict>Electric Infliction</>.\nZhuang Fangyi creates a Xiranblitz Array that attacks the enemy and deals <@ba.pulse>Electric DMG</>. If the Array hits an enemy that has <#ba.pulseinflict>Electric Infliction</> stack(s), then it will <#ba.consume>consume</> the said <#ba.pulseinflict>Electric Infliction</> stack(s), forcibly apply <#ba.conduct>Electrification</>, and give Ultimate Energy based on the number of stacks <#ba.consume>consumed</>.\nIf <#ba.conduct>Electrification</> is forcibly applied to an enemy that already has <#ba.conduct>Electrification</>, then apply <#ba.statuslevel>Status Level</> +1 to the enemy's <#ba.conduct>Electrification</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "additionalUltimateEnergyPerInflictionStack": "Additional Ultimate Energy per Infliction Stack",
+      "duringUltimateDmgMultiplier": "During Ultimate: DMG Multiplier"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duration (s)",
-        "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
-        "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
-        "duringUltimateBatkSeq3Multiplier": "During Ultimate: BATK SEQ 3 Multiplier"
-      },
       "name": "Smiting Tempest",
-      "description": "Transforms into the <@ba.key>Empyrean of Truth</> that grants these enhancements:\nZhuang Fangyi's basic attacks are enhanced and her actions are harder to interrupt;\nBattle skill <@ba.key>Mantra of Sundering</> gains a higher DMG multiplier and an increased effect range, and the final Thunder Strike also applies <#ba.pulseinflict>Electric Infliction</> to the target hit.\nCombo skill <@ba.key>Breath of Transformation</> gains a higher DMG multiplier, cooldown becomes {combo_cd_rate:0} times faster, and effects are applied to enemies within a small area.\nThe first casting of the battle skill <@ba.key>Mantra of Sundering</> does not consume SP nor <#ba.conduct>Electrification</>, and if a target is available, the battle skill is guaranteed to create 3 <@ba.key>Sunderblades</> even if the target has no <#ba.conduct>Electrification</>."
+      "description": "Transforms into the <@ba.key>Empyrean of Truth</> that grants these enhancements:\nZhuang Fangyi's basic attacks are enhanced and her actions are harder to interrupt;\nBattle skill <@ba.key>Mantra of Sundering</> gains a higher DMG multiplier and an increased effect range, and the final Thunder Strike also applies <#ba.pulseinflict>Electric Infliction</> to the target hit.\nCombo skill <@ba.key>Breath of Transformation</> gains a higher DMG multiplier, cooldown becomes {combo_cd_rate:0} times faster, and effects are applied to enemies within a small area.\nThe first casting of the battle skill <@ba.key>Mantra of Sundering</> does not consume SP nor <#ba.conduct>Electrification</>, and if a target is available, the battle skill is guaranteed to create 3 <@ba.key>Sunderblades</> even if the target has no <#ba.conduct>Electrification</>.",
+      "durationS": "Duration (s)",
+      "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
+      "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
+      "duringUltimateBatkSeq3Multiplier": "During Ultimate: BATK SEQ 3 Multiplier"
     },
     "indicator": {
       "levels": [

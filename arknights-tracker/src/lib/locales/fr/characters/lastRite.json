@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Danse du givre",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire du mirage",
-        "spReturn": "Restitution de PC",
-        "durationS": "Durée (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Héritage ésotérique de Seš'qa",
-      "description": "Effectue une <@ba.key>Perfusion hypothermique</> sur l'arme de l'opérateur contrôlé et lui permet de <#ba.return>récupérer</> quelques PC. \nS'il survient dans un certain délai, le <#ba.lastcombo>Coup final</> suivant de l'opérateur actuellement contrôlé génère les mirages de Last Rite, qui lancent une attaque supplémentaire sur la cible. Cette attaque inflige des <@ba.cryst>DÉG cryogéniques</> et applique une <#ba.crystinflict>altération cryogénique</>. \nLorsque l'opérateur contrôlé est Last Rite, l'utilisation de cette compétence de combat ne réinitialise pas sa séquence d'attaque de base."
+      "description": "Effectue une <@ba.key>Perfusion hypothermique</> sur l'arme de l'opérateur contrôlé et lui permet de <#ba.return>récupérer</> quelques PC. \nS'il survient dans un certain délai, le <#ba.lastcombo>Coup final</> suivant de l'opérateur actuellement contrôlé génère les mirages de Last Rite, qui lancent une attaque supplémentaire sur la cible. Cette attaque inflige des <@ba.cryst>DÉG cryogéniques</> et applique une <#ba.crystinflict>altération cryogénique</>. \nLorsque l'opérateur contrôlé est Last Rite, l'utilisation de cette compétence de combat ne réinitialise pas sa séquence d'attaque de base.",
+      "mirageAdditionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire du mirage",
+      "spReturn": "Restitution de PC",
+      "durationS": "Durée (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Multiplicateur de DÉG d'éclat de glace",
-        "slashBaseDmgMultiplier": "Multiplicateur de DÉG d'entaille de base",
-        "slashStagger": "Déséquilibre après entaille",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
-        "baseUltimateEnergyGain": "Gain d'énergie d'ultime de base",
-        "additionalUltimateEnergyGainPerInflictionStack": "Gain d'énergie d'ultime supplémentaire par cumul d'altération"
-      },
       "name": "Dévoration de l'hiver",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi a {count:0} cumuls ou plus d'<#ba.crystinflict>altération cryogénique</>. \nEnferme l'ennemi ciblé dans des stalactites et les brise, <#ba.consume>consommant</> tous ses cumuls d'<#ba.crystinflict>altération cryogénique</>. La quantité de cumuls d'<#ba.crystinflict>altération cryogénique</> <#ba.consume>consommés</> détermine la quantité de <@ba.cryst>DÉG cryogéniques</> infligée à cet ennemi ainsi que l'énergie d'ultime obtenue par Last Rite."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi a {count:0} cumuls ou plus d'<#ba.crystinflict>altération cryogénique</>. \nEnferme l'ennemi ciblé dans des stalactites et les brise, <#ba.consume>consommant</> tous ses cumuls d'<#ba.crystinflict>altération cryogénique</>. La quantité de cumuls d'<#ba.crystinflict>altération cryogénique</> <#ba.consume>consommés</> détermine la quantité de <@ba.cryst>DÉG cryogéniques</> infligée à cet ennemi ainsi que l'énergie d'ultime obtenue par Last Rite.",
+      "iceShardDmgMultiplier": "Multiplicateur de DÉG d'éclat de glace",
+      "slashBaseDmgMultiplier": "Multiplicateur de DÉG d'entaille de base",
+      "slashStagger": "Déséquilibre après entaille",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
+      "baseUltimateEnergyGain": "Gain d'énergie d'ultime de base",
+      "additionalUltimateEnergyGainPerInflictionStack": "Gain d'énergie d'ultime supplémentaire par cumul d'altération"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
-        "seq3Stagger": "Déséquilibre de SÉQ 3"
-      },
       "name": "Veillée",
-      "description": "Last Rite s'enferme dans une armure de givre et génère une faux de glace pour exécuter 3 entailles. Tant que cet état est actif, elle est immunisée contre tous les dégâts. \nChaque entaille inflige de lourds <@ba.cryst>DÉG cryogéniques</>. \n<@ba.info>Last Rite ne peut gagner de l'énergie d'ultime qu'à l'aide de ses propres compétences de combat et de combo.</>"
+      "description": "Last Rite s'enferme dans une armure de givre et génère une faux de glace pour exécuter 3 entailles. Tant que cet état est actif, elle est immunisée contre tous les dégâts. \nChaque entaille inflige de lourds <@ba.cryst>DÉG cryogéniques</>. \n<@ba.info>Last Rite ne peut gagner de l'énergie d'ultime qu'à l'aide de ses propres compétences de combat et de combo.</>",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
+      "seq3Stagger": "Déséquilibre de SÉQ 3"
     },
     "indicator": {
       "levels": [

@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "滾刀切！",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "liftDurationS": "浮空時間（秒）"
-      },
       "name": "翻鍋！",
-      "description": "拿出鐵鍋短暫蓄力後，用力向上翻鍋，對敵人造成<@ba.pd>物理傷害</>與<#ba.airborne>擊飛</>。"
+      "description": "拿出鐵鍋短暫蓄力後，用力向上翻鍋，對敵人造成<@ba.pd>物理傷害</>與<#ba.airborne>擊飛</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "liftDurationS": "浮空時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "crushDmgBonus": "猛擊傷害額外提升",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "加料！",
-      "description": "當有敵人達到4層<#ba.noguard>破防</>時可以發動。\n拿起鐵鍋對敵人造成大量<@ba.pd>物理傷害</>並<#ba.crush>猛擊</>，本次<#ba.crush>猛擊</>的傷害獲得額外提升。"
+      "description": "當有敵人達到4層<#ba.noguard>破防</>時可以發動。\n拿起鐵鍋對敵人造成大量<@ba.pd>物理傷害</>並<#ba.crush>猛擊</>，本次<#ba.crush>猛擊</>的傷害獲得額外提升。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "crushDmgBonus": "猛擊傷害額外提升",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "空中連斬傷害倍率",
-        "ultimateDmgMultiplier": "終結傷害倍率"
-      },
       "name": "切絲入鍋！",
-      "description": "猛拍砧板，立即對前方範圍內的敵人強制造成<#ba.airborne>擊飛</>。隨後發動6段連續斬擊，造成<@ba.pd>物理傷害</>，最後將所有敵人一併擊墜，強制使其<#ba.knockdown>倒地</>，造成大量<@ba.pd>物理傷害</>。"
+      "description": "猛拍砧板，立即對前方範圍內的敵人強制造成<#ba.airborne>擊飛</>。隨後發動6段連續斬擊，造成<@ba.pd>物理傷害</>，最後將所有敵人一併擊墜，強制使其<#ba.knockdown>倒地</>，造成大量<@ba.pd>物理傷害</>。",
+      "aerialFlurryDmgMultiplier": "空中連斬傷害倍率",
+      "ultimateDmgMultiplier": "終結傷害倍率"
     },
     "indicator": {
       "levels": [

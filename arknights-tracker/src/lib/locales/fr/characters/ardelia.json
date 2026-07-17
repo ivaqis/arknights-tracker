@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Murmures rocheux",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "susceptibility": "Sensibilité",
-        "susceptibilityDurationS": "Durée de sensibilité (s)"
-      },
       "name": "Charge de Dolly",
-      "description": "Saute sur M. Dolly et percute la cible pour lui infliger des <@ba.natur>DÉG naturels</>. Si la cible est victime de <#ba.corrupt>Corrosion</>, <#ba.consume>consomme</> la <#ba.corrupt>Corrosion</> et applique une <#ba.physicalvul>sensibilité physique</> et une <#ba.spellvul>sensibilité aux Arts</> à la cible."
+      "description": "Saute sur M. Dolly et percute la cible pour lui infliger des <@ba.natur>DÉG naturels</>. Si la cible est victime de <#ba.corrupt>Corrosion</>, <#ba.consume>consomme</> la <#ba.corrupt>Corrosion</> et applique une <#ba.physicalvul>sensibilité physique</> et une <#ba.spellvul>sensibilité aux Arts</> à la cible.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "susceptibility": "Sensibilité",
+      "susceptibilityDurationS": "Durée de sensibilité (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
-        "stagger": "Déséquilibre",
-        "corrodeDurationS": "Durée de Corrosion (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Colonne éruptive",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi sans <@ba.key>aucun</> cumul de <#ba.noguard>Vulnérabilité</> ou d'<#ba.spellinflict>altération des Arts</>. \nProjette un nuage volcanique autoguidé sur un ennemi ciblé, qui inflige des <@ba.natur>DÉG naturels</> lorsqu'il est assez proche de la cible. Le nuage volcanique explose après un court instant, infligeant la moitié des <@ba.natur>DÉG naturels</> et <#ba.corrupt>corrode</> temporairement les ennemis à proximité."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi sans <@ba.key>aucun</> cumul de <#ba.noguard>Vulnérabilité</> ou d'<#ba.spellinflict>altération des Arts</>. \nProjette un nuage volcanique autoguidé sur un ennemi ciblé, qui inflige des <@ba.natur>DÉG naturels</> lorsqu'il est assez proche de la cible. Le nuage volcanique explose après un court instant, infligeant la moitié des <@ba.natur>DÉG naturels</> et <#ba.corrupt>corrode</> temporairement les ennemis à proximité.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+      "stagger": "Déséquilibre",
+      "corrodeDurationS": "Durée de Corrosion (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "durationS": "Durée (s)"
-      },
       "name": "Assemblée laineuse",
-      "description": "Ardelia entre dans un état de canalisation mobile et invoque l'aide de M. Dolly. Plusieurs doubles de M. Dolly sont jetés dans des directions aléatoires. Chaque double inflige des <@ba.natur>DÉG naturels</> en frappant l'ennemi. Chaque ennemi ne peut subir qu'un coup toutes les {interval:0.0} seconde(s)."
+      "description": "Ardelia entre dans un état de canalisation mobile et invoque l'aide de M. Dolly. Plusieurs doubles de M. Dolly sont jetés dans des directions aléatoires. Chaque double inflige des <@ba.natur>DÉG naturels</> en frappant l'ennemi. Chaque ennemi ne peut subir qu'un coup toutes les {interval:0.0} seconde(s).",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "durationS": "Durée (s)"
     },
     "indicator": {
       "levels": [

@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Épée des arts offensifs",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "additionalStaggerDealtWhenHit": "Déséquilibre supplémentaire infligé en cas de coup"
-      },
       "name": "Marche en avant",
-      "description": "Un bond suivi d'un écrasement puissant qui inflige des <@ba.fire>DÉG thermiques</>, et applique <#ba.knockdown>Renversement</> et Déséquilibre à tous les ennemis dans une zone en éventail. \nSi Ember subit des DÉG d'ennemis pendant le lancement, l'écrasement inflige un plus grand Déséquilibre au contact."
+      "description": "Un bond suivi d'un écrasement puissant qui inflige des <@ba.fire>DÉG thermiques</>, et applique <#ba.knockdown>Renversement</> et Déséquilibre à tous les ennemis dans une zone en éventail. \nSi Ember subit des DÉG d'ennemis pendant le lancement, l'écrasement inflige un plus grand Déséquilibre au contact.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "additionalStaggerDealtWhenHit": "Déséquilibre supplémentaire infligé en cas de coup"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "baseTreatment": "Soins de base",
-        "treatmentIncreasePerWill": "Augmentation des soins par Volonté",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Soutien du front",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur que vous contrôlez est attaqué.\nBondit sur l'ennemi ciblé, et libère un puissant écrasement qui inflige des <@ba.pd>DÉG physiques</> et le <#ba.knockdown>renverse</> tout en restaurant des PV de l'opérateur contrôlé. Le trait Volonté augmente la quantité de PV soignés."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur que vous contrôlez est attaqué.\nBondit sur l'ennemi ciblé, et libère un puissant écrasement qui inflige des <@ba.pd>DÉG physiques</> et le <#ba.knockdown>renverse</> tout en restaurant des PV de l'opérateur contrôlé. Le trait Volonté augmente la quantité de PV soignés.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "baseTreatment": "Soins de base",
+      "treatmentIncreasePerWill": "Augmentation des soins par Volonté",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "shieldConversionRatioHp": "Ratio de conversion de bouclier (PV)",
-        "shieldDurationS": "Durée de bouclier (s)"
-      },
       "name": "Serment ravivé",
-      "description": "Frappe le sol pour infliger des <@ba.fire>DÉG thermiques</> aux ennemis à proximité tout en octroyant à tous les coéquipiers un <#ba.shield>bouclier</> qui dépend des PV max. d'Ember."
+      "description": "Frappe le sol pour infliger des <@ba.fire>DÉG thermiques</> aux ennemis à proximité tout en octroyant à tous les coéquipiers un <#ba.shield>bouclier</> qui dépend des PV max. d'Ember.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "shieldConversionRatioHp": "Ratio de conversion de bouclier (PV)",
+      "shieldDurationS": "Durée de bouclier (s)"
     },
     "indicator": {
       "levels": [

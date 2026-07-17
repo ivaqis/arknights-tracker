@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Tuonolancia: assalto",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "thunderlanceDmgMultiplier": "Moltiplicatore danni Tuonolancia",
-        "thunderlanceStagger": "Vacillamento Tuonolancia",
-        "thunderlanceExDmgMultiplier": "Moltiplicatore danni Tuonolancia EX",
-        "thunderlanceExStagger": "Vacillamento Tuonolancia EX"
-      },
       "name": "Tuonolancia: interdizione",
-      "description": "Balza in aria per scatenare un vortice con la sua lancia, infliggendo <@ba.pulse>danni da elettricità</> ai nemici vicini e attirando verso di sé tutte le <@ba.key>Tuonolance</> e <@ba.key>Tuonolance EX</> presenti sul campo di battaglia. \nLe <@ba.key>Tuonolance</> che ritornano trafiggono tutti i nemici lungo il loro percorso e infliggono <@ba.pulse>danni da elettricità</>, mentre le <@ba.key>Tuonolance EX</> che ritornano infliggono più <@ba.pulse>danni da elettricità</> e applicano anche <#ba.pulseinflict>Afflizione da elettricità</>."
+      "description": "Balza in aria per scatenare un vortice con la sua lancia, infliggendo <@ba.pulse>danni da elettricità</> ai nemici vicini e attirando verso di sé tutte le <@ba.key>Tuonolance</> e <@ba.key>Tuonolance EX</> presenti sul campo di battaglia. \nLe <@ba.key>Tuonolance</> che ritornano trafiggono tutti i nemici lungo il loro percorso e infliggono <@ba.pulse>danni da elettricità</>, mentre le <@ba.key>Tuonolance EX</> che ritornano infliggono più <@ba.pulse>danni da elettricità</> e applicano anche <#ba.pulseinflict>Afflizione da elettricità</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "thunderlanceDmgMultiplier": "Moltiplicatore danni Tuonolancia",
+      "thunderlanceStagger": "Vacillamento Tuonolancia",
+      "thunderlanceExDmgMultiplier": "Moltiplicatore danni Tuonolancia EX",
+      "thunderlanceExStagger": "Vacillamento Tuonolancia EX"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "thunderlanceDurationS": "Durata Tuonolancia (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Tuonolancia: impatto",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un bersaglio già sottoposto ad <#ba.pulseinflict>Afflizione da elettricità</> o <#ba.conduct>Elettrificazione</>. \nSalta a mezz'aria e lancia tre <@ba.key>Tuonolance</> al bersaglio, per poi sferrare un colpo che infligge <@ba.pulse>danni da elettricità</> ai nemici nell'area d'effetto."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un bersaglio già sottoposto ad <#ba.pulseinflict>Afflizione da elettricità</> o <#ba.conduct>Elettrificazione</>. \nSalta a mezz'aria e lancia tre <@ba.key>Tuonolance</> al bersaglio, per poi sferrare un colpo che infligge <@ba.pulse>danni da elettricità</> ai nemici nell'area d'effetto.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "thunderlanceDurationS": "Durata Tuonolancia (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "thunderlanceExDurationS": "Durata Tuonolancia EX (s)"
-      },
       "name": "Tuonolancia: scossa finale",
-      "description": "Scaglia una <@ba.key>Tuonolancia EX</> verso il bersaglio, infliggendo ingenti <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze."
+      "description": "Scaglia una <@ba.key>Tuonolancia EX</> verso il bersaglio, infliggendo ingenti <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "thunderlanceExDurationS": "Durata Tuonolancia EX (s)"
     },
     "indicator": {
       "levels": [

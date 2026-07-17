@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Seething Wolfblood",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger"
-      },
       "name": "Crimson Shadow",
-      "description": "Charges to the target to deal <@ba.pd>Physical DMG</> and apply <#ba.airborne>Lift</>.\nIf the target already has <#ba.noguard>Vulnerability</> stack(s), the skill also unleashes a <@ba.key>Wolven Ambrage</> that charges at the target to deal <@ba.fire>Heat DMG</>."
+      "description": "Charges to the target to deal <@ba.pd>Physical DMG</> and apply <#ba.airborne>Lift</>.\nIf the target already has <#ba.noguard>Vulnerability</> stack(s), the skill also unleashes a <@ba.key>Wolven Ambrage</> that charges at the target to deal <@ba.fire>Heat DMG</>.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1UltimateEnergyGain": "SEQ 1 Ultimate Energy Gain",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "criticalRateBoost": "Critical Rate Boost",
-        "criticalDmgBoost": "Critical DMG Boost",
-        "buffDurationS": "Buff Duration (s)",
-        "seq2UltimateEnergyGain": "SEQ 2 Ultimate Energy Gain"
-      },
       "name": "Moment of Blazing Shadow",
-      "description": "COMBO TRIGGER: When an enemy has both <#ba.noguard>Vulnerability</> and <#ba.spellinflict>Arts Infliction</> stacks.\nRossi's combo skill has 2 consecutive sequences. COMBO SEQUENCE 1 deals <@ba.pd>Physical DMG</> to the target.\nCOMBO SEQUENCE 2 <#ba.consume>consumes</> all <#ba.spellinflict>Arts Infliction</> stacks from the target, deals <@ba.pd>Physical DMG</> based on the number of Arts Infliction stacks <#ba.consume>consumed</>, applies 1 instance of <#ba.airborne>Lift</>, and buffs Rossi's Critical Rate and Critical DMG Dealt at the same time.\nIf COMBO SEQUENCE 2 is cast with <@ba.key>perfect timing</>, it applies 1 more stack of <#ba.noguard>Vulnerability</>."
+      "description": "COMBO TRIGGER: When an enemy has both <#ba.noguard>Vulnerability</> and <#ba.spellinflict>Arts Infliction</> stacks.\nRossi's combo skill has 2 consecutive sequences. COMBO SEQUENCE 1 deals <@ba.pd>Physical DMG</> to the target.\nCOMBO SEQUENCE 2 <#ba.consume>consumes</> all <#ba.spellinflict>Arts Infliction</> stacks from the target, deals <@ba.pd>Physical DMG</> based on the number of Arts Infliction stacks <#ba.consume>consumed</>, applies 1 instance of <#ba.airborne>Lift</>, and buffs Rossi's Critical Rate and Critical DMG Dealt at the same time.\nIf COMBO SEQUENCE 2 is cast with <@ba.key>perfect timing</>, it applies 1 more stack of <#ba.noguard>Vulnerability</>.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1UltimateEnergyGain": "SEQ 1 Ultimate Energy Gain",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "criticalRateBoost": "Critical Rate Boost",
+      "criticalDmgBoost": "Critical DMG Boost",
+      "buffDurationS": "Buff Duration (s)",
+      "seq2UltimateEnergyGain": "SEQ 2 Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Stab Attack Total DMG Multiplier",
-        "seq1SlashDmgMultiplier": "SEQ 1 Slash DMG Multiplier",
-        "seq2SlashDmgMultiplier": "SEQ 2 Slash DMG Multiplier",
-        "stagger": "Stagger",
-        "criticalDmgBoost": "Critical DMG Boost"
-      },
       "name": "\"Razorclaw\" Ambuscade",
-      "description": "Rossi flutters her cape and unleashes a flurry of stabs that quickly deals multiple sequences of <@ba.fire>Heat DMG</> to the target. She then performs a two-sequence slash attack with her dagger that deals massive <@ba.fire>Heat DMG</> and applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>When this skill successfully scores a critical hit, it deals higher Critical DMG.</>"
+      "description": "Rossi flutters her cape and unleashes a flurry of stabs that quickly deals multiple sequences of <@ba.fire>Heat DMG</> to the target. She then performs a two-sequence slash attack with her dagger that deals massive <@ba.fire>Heat DMG</> and applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>When this skill successfully scores a critical hit, it deals higher Critical DMG.</>",
+      "stabAttackTotalDmgMultiplier": "Stab Attack Total DMG Multiplier",
+      "seq1SlashDmgMultiplier": "SEQ 1 Slash DMG Multiplier",
+      "seq2SlashDmgMultiplier": "SEQ 2 Slash DMG Multiplier",
+      "stagger": "Stagger",
+      "criticalDmgBoost": "Critical DMG Boost"
     },
     "indicator": {
       "levels": [

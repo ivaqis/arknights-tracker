@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "基本揮竿法",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "spRecoveryByConsuming1InflictionStack": "消耗一層附著時回復技力",
-        "spRecoveryByConsuming2InflictionStacks": "消耗二層附著時回復技力",
-        "spRecoveryByConsuming3InflictionStacks": "消耗三層附著時回復技力",
-        "spRecoveryByConsuming4InflictionStacks": "消耗四層附著時回復技力",
-        "stagger": "失衡值"
-      },
       "name": "非普通路亞",
-      "description": "勾起冰塊砸擊面前的敵人，對目標造成<@ba.pd>物理傷害</>。命中處於<#ba.crystinflict>寒冷附著</>狀態的目標時，<#ba.consume>消耗</>掉目標身上所有<#ba.crystinflict>寒冷附著</>，對其強制施加<#ba.frozen>凍結</>，並基於<#ba.consume>消耗</>層數回復技力，命中多名目標時僅回復1次。"
+      "description": "勾起冰塊砸擊面前的敵人，對目標造成<@ba.pd>物理傷害</>。命中處於<#ba.crystinflict>寒冷附著</>狀態的目標時，<#ba.consume>消耗</>掉目標身上所有<#ba.crystinflict>寒冷附著</>，對其強制施加<#ba.frozen>凍結</>，並基於<#ba.consume>消耗</>層數回復技力，命中多名目標時僅回復1次。",
+      "dmgMultiplier": "傷害倍率",
+      "spRecoveryByConsuming1InflictionStack": "消耗一層附著時回復技力",
+      "spRecoveryByConsuming2InflictionStacks": "消耗二層附著時回復技力",
+      "spRecoveryByConsuming3InflictionStacks": "消耗三層附著時回復技力",
+      "spRecoveryByConsuming4InflictionStacks": "消耗四層附著時回復技力",
+      "stagger": "失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "chanceToCatchTheRareFin": "釣起珍鱗機率",
-        "enhancedDmgMultiplier": "強化傷害倍率",
-        "spRecovery": "技力回復",
-        "bonusSpRecovery": "額外技力回復",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "鑿孔底釣術",
-      "description": "當附近目標的<#ba.spellstatus>法術異常</>或<#ba.originium>源石結晶</>被<#ba.consume>消耗</>時可以發動。\n在敵人腳下開洞垂釣，造成<@ba.pd>物理傷害</>，並回復一定技力，有一定機率能釣出<@ba.key>珍鱗</>，大幅增加傷害並額外回復技力。"
+      "description": "當附近目標的<#ba.spellstatus>法術異常</>或<#ba.originium>源石結晶</>被<#ba.consume>消耗</>時可以發動。\n在敵人腳下開洞垂釣，造成<@ba.pd>物理傷害</>，並回復一定技力，有一定機率能釣出<@ba.key>珍鱗</>，大幅增加傷害並額外回復技力。",
+      "dmgMultiplier": "傷害倍率",
+      "chanceToCatchTheRareFin": "釣起珍鱗機率",
+      "enhancedDmgMultiplier": "強化傷害倍率",
+      "spRecovery": "技力回復",
+      "bonusSpRecovery": "額外技力回復",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "終結傷害倍率",
-        "baseSpRecovery": "基礎回復技力",
-        "bonusSpRecoveryPerTargetDefeated": "擊敗目標時額外回復技力",
-        "spRecoveryLimit": "技力回復上限",
-        "stagger": "失衡值"
-      },
       "name": "大鱗，上鉤！",
-      "description": "釣起超乎想像的大鱗砸擊面前的所有敵人，造成大範圍的<@ba.cryst>寒冷傷害</>，施加<#ba.crystinflict>寒冷附著</>並回復一定技力，每擊敗一個目標將額外回復一定技力。"
+      "description": "釣起超乎想像的大鱗砸擊面前的所有敵人，造成大範圍的<@ba.cryst>寒冷傷害</>，施加<#ba.crystinflict>寒冷附著</>並回復一定技力，每擊敗一個目標將額外回復一定技力。",
+      "ultimateDmgMultiplier": "終結傷害倍率",
+      "baseSpRecovery": "基礎回復技力",
+      "bonusSpRecoveryPerTargetDefeated": "擊敗目標時額外回復技力",
+      "spRecoveryLimit": "技力回復上限",
+      "stagger": "失衡值"
     },
     "indicator": {
       "levels": [

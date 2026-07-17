@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "岩の囁き",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.natur>自然ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.natur>自然ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.natur>自然ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.natur>自然ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.natur>自然ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.natur>自然ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "susceptibility": "脆弱効果",
-        "susceptibilityDurationS": "脆弱持続時間（秒）"
-      },
       "name": "ドリーラッシュ",
-      "description": "ドリーさんに乗って敵に突進し、<@ba.natur>自然ダメージ</>を与える。<#ba.corrupt>腐食</>状態の敵に命中した場合、<#ba.corrupt>腐食</>状態を<#ba.consume>消費</>し、<#ba.physicalvul>物理脆弱</>と<#ba.spellvul>アーツ脆弱</>を付与する。"
+      "description": "ドリーさんに乗って敵に突進し、<@ba.natur>自然ダメージ</>を与える。<#ba.corrupt>腐食</>状態の敵に命中した場合、<#ba.corrupt>腐食</>状態を<#ba.consume>消費</>し、<#ba.physicalvul>物理脆弱</>と<#ba.spellvul>アーツ脆弱</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "susceptibility": "脆弱効果",
+      "susceptibilityDurationS": "脆弱持続時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "explosionDmgMultiplier": "爆発ダメージ倍率",
-        "stagger": "ブレイク値",
-        "corrodeDurationS": "腐食持続時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "イラプション・コラム",
-      "description": "操作中のオペレーターが<#ba.noguard>クラッシュ</>または<#ba.spellinflict>アーツ付着</>状態<@ba.key>でない</>敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n敵に火山雲を放ち、接近後に<@ba.natur>自然ダメージ</>を与える。火山雲は敵を追尾し、一定時間後に爆発する。周囲の他の敵には、そのダメージの半分の<@ba.natur>自然ダメージ</>を与え、強制的に短時間<#ba.corrupt>腐食</>状態にする。"
+      "description": "操作中のオペレーターが<#ba.noguard>クラッシュ</>または<#ba.spellinflict>アーツ付着</>状態<@ba.key>でない</>敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\n敵に火山雲を放ち、接近後に<@ba.natur>自然ダメージ</>を与える。火山雲は敵を追尾し、一定時間後に爆発する。周囲の他の敵には、そのダメージの半分の<@ba.natur>自然ダメージ</>を与え、強制的に短時間<#ba.corrupt>腐食</>状態にする。",
+      "dmgMultiplier": "ダメージ倍率",
+      "explosionDmgMultiplier": "爆発ダメージ倍率",
+      "stagger": "ブレイク値",
+      "corrodeDurationS": "腐食持続時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "durationS": "持続時間（秒）"
-      },
       "name": "もふもふパーティー",
-      "description": "アルデリアは移動できる状態で持続的にアーツを放つ。ドリーさんの助けを呼び、周囲にドリーさんの分身を放つ。分身が敵に命中するたびに、<@ba.natur>自然ダメージ</>を与える。同じ敵は{interval:0.0}秒に1回までダメージを受ける。"
+      "description": "アルデリアは移動できる状態で持続的にアーツを放つ。ドリーさんの助けを呼び、周囲にドリーさんの分身を放つ。分身が敵に命中するたびに、<@ba.natur>自然ダメージ</>を与える。同じ敵は{interval:0.0}秒に1回までダメージを受ける。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "durationS": "持続時間（秒）"
     },
     "indicator": {
       "levels": [

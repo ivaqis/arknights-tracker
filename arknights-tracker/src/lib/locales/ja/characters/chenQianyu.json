@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "飛霞破り",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "liftDurationS": "浮遊時間（秒）"
-      },
       "name": "蒼穹返し",
-      "description": "敵を下から突き上げて攻撃し、<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。"
+      "description": "敵を下から突き上げて攻撃し、<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "liftDurationS": "浮遊時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "天河昇",
-      "description": "敵が<#ba.noguard>クラッシュ</>状態になったときに発動可能。\n駆け抜けながら連続斬撃を行い、進路上のすべての敵に<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。"
+      "description": "敵が<#ba.noguard>クラッシュ</>状態になったときに発動可能。\n駆け抜けながら連続斬撃を行い、進路上のすべての敵に<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "斬撃ダメージ倍率",
-        "firstStrikeStagger": "1撃目ブレイク値",
-        "finalStrikeDmgMultiplier": "必殺一撃ダメージ倍率",
-        "finalStrikeStagger": "必殺一撃ブレイク値"
-      },
       "name": "凍風斬り",
-      "description": "7段の斬撃を繰り出し、毎回<@ba.pd>物理ダメージ</>を与える。最後の斬撃はより高いダメージになる。"
+      "description": "7段の斬撃を繰り出し、毎回<@ba.pd>物理ダメージ</>を与える。最後の斬撃はより高いダメージになる。",
+      "slashMultiplier": "斬撃ダメージ倍率",
+      "firstStrikeStagger": "1撃目ブレイク値",
+      "finalStrikeDmgMultiplier": "必殺一撃ダメージ倍率",
+      "finalStrikeStagger": "必殺一撃ブレイク値"
     },
     "indicator": {
       "levels": [

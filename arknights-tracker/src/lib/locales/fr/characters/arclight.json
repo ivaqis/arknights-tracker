@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Recherche et chasse",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
-        "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire",
-        "spRecovery": "Récupération de PC"
-      },
       "name": "Arc orageux",
-      "description": "Apparaît instantanément près de l'ennemi pour lâcher 2 entailles qui infligent des <@ba.pd>DÉG physiques</>. Si l'ennemi est <#ba.conduct>électrifié</>, <#ba.consume>consomme</> l'effet d'<#ba.conduct>Électrification</> pour lancer une attaque supplémentaire qui inflige des <@ba.pulse>DÉG électriques</> et restaure quelques PC."
+      "description": "Apparaît instantanément près de l'ennemi pour lâcher 2 entailles qui infligent des <@ba.pd>DÉG physiques</>. Si l'ennemi est <#ba.conduct>électrifié</>, <#ba.consume>consomme</> l'effet d'<#ba.conduct>Électrification</> pour lancer une attaque supplémentaire qui inflige des <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
+      "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire",
+      "spRecovery": "Récupération de PC"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "spRecovery": "Récupération de PC",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Fracas du tonnerre",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.conduct>électrifié</> ou lorsque l'<#ba.conduct>Électrification</> d'un ennemi est <#ba.consume>consommée</>. \nApparaît instantanément près de l'ennemi pour déclencher une tempête d'entailles qui inflige des <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.conduct>électrifié</> ou lorsque l'<#ba.conduct>Électrification</> d'un ennemi est <#ba.consume>consommée</>. \nApparaît instantanément près de l'ennemi pour déclencher une tempête d'entailles qui inflige des <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "spRecovery": "Récupération de PC",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2"
-      },
       "name": "Blitz explosif",
-      "description": "Effectue une brève ruée en avant tout en s'enveloppant d'arcs électriques, ce qui inflige des <@ba.pulse>DÉG électriques</> et applique une <#ba.pulseinflict>altération électrique</> à tous les ennemis sur sa trajectoire. Les arcs persistants explosent peu après, infligeant de nouveaux <@ba.pulse>DÉG électriques</>. Si l'ennemi est victime d'une <#ba.pulseinflict>altération électrique</>, <#ba.consume>consomme</> l'<#ba.pulseinflict>altération électrique</> et applique une <#ba.conduct>Électrification</>."
+      "description": "Effectue une brève ruée en avant tout en s'enveloppant d'arcs électriques, ce qui inflige des <@ba.pulse>DÉG électriques</> et applique une <#ba.pulseinflict>altération électrique</> à tous les ennemis sur sa trajectoire. Les arcs persistants explosent peu après, infligeant de nouveaux <@ba.pulse>DÉG électriques</>. Si l'ennemi est victime d'une <#ba.pulseinflict>altération électrique</>, <#ba.consume>consomme</> l'<#ba.pulseinflict>altération électrique</> et applique une <#ba.conduct>Électrification</>.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2"
     },
     "indicator": {
       "levels": [

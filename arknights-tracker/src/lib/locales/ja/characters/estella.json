@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "ノイズ",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "オノマトペ",
-      "description": "前方に槍を突き出し、氷の音波を放つ。直線上の敵に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。"
+      "description": "前方に槍を突き出し、氷の音波を放つ。直線上の敵に<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "非凍結状態の敵へのダメージ倍率",
-        "dmgMultiplierAgainstSolidifiedEnemies": "凍結状態の敵へのダメージ倍率",
-        "stagger": "ブレイク値",
-        "physicalSusceptibilityMultiplier": "物理脆弱倍率",
-        "physicalSusceptibilityDuration": "物理脆弱持続時間",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "ディストーション",
-      "description": "敵が<#ba.frozen>凍結</>状態になったときに発動可能。\nすばやく敵の近くに移動し、一定範囲内の敵に<@ba.pd>物理ダメージ</>を与え、強制的に<#ba.airborne>浮遊</>させる。<#ba.frozen>凍結</>状態の敵に命中した場合、追加でダメージを与え、<#ba.physicalvul>物理脆弱</>を付与する。"
+      "description": "敵が<#ba.frozen>凍結</>状態になったときに発動可能。\nすばやく敵の近くに移動し、一定範囲内の敵に<@ba.pd>物理ダメージ</>を与え、強制的に<#ba.airborne>浮遊</>させる。<#ba.frozen>凍結</>状態の敵に命中した場合、追加でダメージを与え、<#ba.physicalvul>物理脆弱</>を付与する。",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "非凍結状態の敵へのダメージ倍率",
+      "dmgMultiplierAgainstSolidifiedEnemies": "凍結状態の敵へのダメージ倍率",
+      "stagger": "ブレイク値",
+      "physicalSusceptibilityMultiplier": "物理脆弱倍率",
+      "physicalSusceptibilityDuration": "物理脆弱持続時間",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "トレモロ",
-      "description": "全力で槍の柄を地面に叩きつけ、周囲の敵に<@ba.pd>物理ダメージ</>を与える。<#ba.physicalvul>物理脆弱</>状態の敵を強制的に<#ba.airborne>浮遊</>させる。"
+      "description": "全力で槍の柄を地面に叩きつけ、周囲の敵に<@ba.pd>物理ダメージ</>を与える。<#ba.physicalvul>物理脆弱</>状態の敵を強制的に<#ba.airborne>浮遊</>させる。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "indicator": {
       "levels": [

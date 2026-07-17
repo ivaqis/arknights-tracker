@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Courant d'échange",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pulse>DÉG électriques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pulse>DÉG électriques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pulse>DÉG électriques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "durationS": "Durée (s)",
-        "electricSusceptibility": "Sensibilité électrique",
-        "heatSusceptibility": "Sensibilité thermique"
-      },
       "name": "Sujet de recherche spécifié",
-      "description": "Applique un effet de <@ba.key>Concentration</> longue durée sur l'ennemi et lui inflige des <@ba.pulse>DÉG électriques</>. Un ennemi avec <@ba.key>Concentration</> souffre également de <#ba.pulsevul>sensibilité électrique</> et de <#ba.firevul>sensibilité thermique</>. L'effet de <@ba.key>Concentration</> ne peut être appliqué qu'à 1 ennemi à la fois."
+      "description": "Applique un effet de <@ba.key>Concentration</> longue durée sur l'ennemi et lui inflige des <@ba.pulse>DÉG électriques</>. Un ennemi avec <@ba.key>Concentration</> souffre également de <#ba.pulsevul>sensibilité électrique</> et de <#ba.firevul>sensibilité thermique</>. L'effet de <@ba.key>Concentration</> ne peut être appliqué qu'à 1 ennemi à la fois.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "durationS": "Durée (s)",
+      "electricSusceptibility": "Sensibilité électrique",
+      "heatSusceptibility": "Sensibilité thermique"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Site d'essais d'IEM",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi doté d'une <@ba.key>Concentration</> active subit un <#ba.physicalstatus>statut physique</> ou une <#ba.spellinflict>altération des Arts</>. \nDéclenche 1 explosion d'énergie sur l'ennemi, qui lui inflige des <@ba.pulse>DÉG électriques</> et applique un cumul supplémentaire du même <#ba.physicalstatus>statut physique</> ou de la même <#ba.spellinflict>altération des Arts</>."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi doté d'une <@ba.key>Concentration</> active subit un <#ba.physicalstatus>statut physique</> ou une <#ba.spellinflict>altération des Arts</>. \nDéclenche 1 explosion d'énergie sur l'ennemi, qui lui inflige des <@ba.pulse>DÉG électriques</> et applique un cumul supplémentaire du même <#ba.physicalstatus>statut physique</> ou de la même <#ba.spellinflict>altération des Arts</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Amplification électrique",
-        "heatAmp": "Amplification thermique",
-        "durationS": "Durée (s)"
-      },
       "name": "Surcadençage",
-      "description": "Octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.fireenhance>amplification thermique</> temporaires à toute l'équipe."
+      "description": "Octroie une <#ba.pulseenhance>amplification électrique</> et une <#ba.fireenhance>amplification thermique</> temporaires à toute l'équipe.",
+      "electricAmp": "Amplification électrique",
+      "heatAmp": "Amplification thermique",
+      "durationS": "Durée (s)"
     },
     "indicator": {
       "levels": [

@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Grilletto facile",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Moltiplicatore danni base",
-        "dmgMultiplierOfSolidificationApplied": "Moltiplicatore danni di Solidificazione applicato",
-        "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
-        "stagger": "Vacillamento",
-        "ultimateEnergyFromSolidificationApplied": "Energia suprema da Solidificazione applicata",
-        "additionalUltimateEnergyGainPerInflictionStack": "Incremento energia suprema per accumulo di Afflizione aggiuntivo"
-      },
       "name": "Bomba Brr-Brr β",
-      "description": "Lancia una bomba congelante che esplode quando colpisce il nemico, infliggendo <@ba.cryst>danni da ghiaccio</>. Se si colpisce un nemico soggetto ad <#ba.crystinflict>Afflizione da ghiaccio</> o <#ba.naturalinflict>Afflizione da natura</>, si <#ba.consume>consumano</> tutti gli accumuli di <#ba.spellinflict>Afflizioni da Arti</>, si applica forzatamente <#ba.frozen>Solidificazione</> e si infliggono <@ba.cryst>danni da ghiaccio</> al bersaglio in base al numero di accumuli <#ba.consume>consumati</>.\nDopo che l'abilità di combattimento applica con successo <#ba.frozen>Solidificazione</>, Yvonne ottiene energia suprema aggiuntiva in base al numero di accumuli <#ba.consume>consumati</>. L'effetto di aumento di energia suprema può attivarsi solo una volta, anche se l'abilità colpisce più nemici."
+      "description": "Lancia una bomba congelante che esplode quando colpisce il nemico, infliggendo <@ba.cryst>danni da ghiaccio</>. Se si colpisce un nemico soggetto ad <#ba.crystinflict>Afflizione da ghiaccio</> o <#ba.naturalinflict>Afflizione da natura</>, si <#ba.consume>consumano</> tutti gli accumuli di <#ba.spellinflict>Afflizioni da Arti</>, si applica forzatamente <#ba.frozen>Solidificazione</> e si infliggono <@ba.cryst>danni da ghiaccio</> al bersaglio in base al numero di accumuli <#ba.consume>consumati</>.\nDopo che l'abilità di combattimento applica con successo <#ba.frozen>Solidificazione</>, Yvonne ottiene energia suprema aggiuntiva in base al numero di accumuli <#ba.consume>consumati</>. L'effetto di aumento di energia suprema può attivarsi solo una volta, anche se l'abilità colpisce più nemici.",
+      "baseDmgMultiplier": "Moltiplicatore danni base",
+      "dmgMultiplierOfSolidificationApplied": "Moltiplicatore danni di Solidificazione applicato",
+      "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
+      "stagger": "Vacillamento",
+      "ultimateEnergyFromSolidificationApplied": "Energia suprema da Solidificazione applicata",
+      "additionalUltimateEnergyGainPerInflictionStack": "Incremento energia suprema per accumulo di Afflizione aggiuntivo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Durata (s)",
-        "numberOfEnergyReleases": "Numero di rilasci di Energia",
-        "energyDmgMultiplier": "Moltiplicatore danni Energia",
-        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
-        "explosionStagger": "Vacillamento Esplosione",
-        "ultimateEnergyGain": "Incremento energia suprema",
-        "additionalUltimateEnergyGain": "Incremento energia suprema aggiuntivo"
-      },
       "name": "Congelamento rapido υ37",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un nemico con <#ba.frozen>Solidificazione</>.\nSchiera immediatamente Gelobyte accanto al nemico. Mentre è attivo, Gelobyte rilascia costantemente energia per attaccare i nemici vicini, infliggendo loro <@ba.cryst>danni da ghiaccio</> e <@ba.key>attirandoli</> verso di sé. Dopo che Gelobyte termina, esplode applicando forzatamente <#ba.frozen>Solidificazione</> e infligge <@ba.cryst>danni da ghiaccio</> ai nemici vicini.\nDopo che l'abilità combo colpisce con successo il nemico, Yvonne ottiene energia suprema aggiuntiva. L'effetto di aumento di energia suprema può attivarsi solo una volta, anche se l'abilità colpisce più nemici."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un nemico con <#ba.frozen>Solidificazione</>.\nSchiera immediatamente Gelobyte accanto al nemico. Mentre è attivo, Gelobyte rilascia costantemente energia per attaccare i nemici vicini, infliggendo loro <@ba.cryst>danni da ghiaccio</> e <@ba.key>attirandoli</> verso di sé. Dopo che Gelobyte termina, esplode applicando forzatamente <#ba.frozen>Solidificazione</> e infligge <@ba.cryst>danni da ghiaccio</> ai nemici vicini.\nDopo che l'abilità combo colpisce con successo il nemico, Yvonne ottiene energia suprema aggiuntiva. L'effetto di aumento di energia suprema può attivarsi solo una volta, anche se l'abilità colpisce più nemici.",
+      "durationS": "Durata (s)",
+      "numberOfEnergyReleases": "Numero di rilasci di Energia",
+      "energyDmgMultiplier": "Moltiplicatore danni Energia",
+      "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
+      "explosionStagger": "Vacillamento Esplosione",
+      "ultimateEnergyGain": "Incremento energia suprema",
+      "additionalUltimateEnergyGain": "Incremento energia suprema aggiuntivo"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durata (s)",
-        "batkDmgMultiplier": "Moltiplicatore danni ATTB",
-        "enhancedFinalStrikeDmgMultiplier": "Moltiplicatore danni colpo finale amplificato",
-        "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
-        "enhancedFinalStrikeStagger": "Vacillamento colpo finale amplificato",
-        "maxStacks": "Accumuli massimi",
-        "criticalRateBoostPerStack": "Potenziamento probabilità di critico per accumulo",
-        "criticalDmgBoostAtMaxStacks": "Potenziamento danni critici ad accumuli massimi"
-      },
       "name": "Pistola criogenica",
-      "description": "Chiama il robot di supporto Campanellina e rende Yvonne l'operatore controllato.\nGli attacchi base di Yvonne diventano temporaneamente <@ba.key>amplificati</> e ogni sequenza di questi attacchi base amplificati conferisce un accumulo che aumenta la probabilità di critico. Dopo aver raggiunto gli accumuli massimi, Yvonne ottiene un potenziamento ai danni critici. Quando l'abilità sta per terminare, il suo ultimo attacco base amplificato diventa un <#ba.lastcombo>colpo finale</> amplificato che infligge ingenti <@ba.cryst>danni da ghiaccio</>.\nSe il nemico è <#ba.frozen>Solidificato</>, Yvonne sferra un attacco aggiuntivo che infligge <@ba.cryst>danni da ghiaccio</> e poi <#ba.consume>consuma</> la <#ba.frozen>Solidificazione</> del nemico."
+      "description": "Chiama il robot di supporto Campanellina e rende Yvonne l'operatore controllato.\nGli attacchi base di Yvonne diventano temporaneamente <@ba.key>amplificati</> e ogni sequenza di questi attacchi base amplificati conferisce un accumulo che aumenta la probabilità di critico. Dopo aver raggiunto gli accumuli massimi, Yvonne ottiene un potenziamento ai danni critici. Quando l'abilità sta per terminare, il suo ultimo attacco base amplificato diventa un <#ba.lastcombo>colpo finale</> amplificato che infligge ingenti <@ba.cryst>danni da ghiaccio</>.\nSe il nemico è <#ba.frozen>Solidificato</>, Yvonne sferra un attacco aggiuntivo che infligge <@ba.cryst>danni da ghiaccio</> e poi <#ba.consume>consuma</> la <#ba.frozen>Solidificazione</> del nemico.",
+      "durationS": "Durata (s)",
+      "batkDmgMultiplier": "Moltiplicatore danni ATTB",
+      "enhancedFinalStrikeDmgMultiplier": "Moltiplicatore danni colpo finale amplificato",
+      "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
+      "enhancedFinalStrikeStagger": "Vacillamento colpo finale amplificato",
+      "maxStacks": "Accumuli massimi",
+      "criticalRateBoostPerStack": "Potenziamento probabilità di critico per accumulo",
+      "criticalDmgBoostAtMaxStacks": "Potenziamento danni critici ad accumuli massimi"
     },
     "indicator": {
       "levels": [

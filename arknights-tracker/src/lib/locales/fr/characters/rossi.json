@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Sang de loup bouillonnant",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2"
-      },
       "name": "Ombre pourpre",
-      "description": "Charge la cible pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.airborne>Soulèvement</>.\nSi la cible a déjà un ou plusieurs cumuls de <#ba.noguard>Vulnérabilité</>, cette compétence libère aussi un <@ba.key>Ambre du loup</> qui charge la cible pour lui infliger des <@ba.fire>DÉG thermiques</>."
+      "description": "Charge la cible pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.airborne>Soulèvement</>.\nSi la cible a déjà un ou plusieurs cumuls de <#ba.noguard>Vulnérabilité</>, cette compétence libère aussi un <@ba.key>Ambre du loup</> qui charge la cible pour lui infliger des <@ba.fire>DÉG thermiques</>.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1UltimateEnergyGain": "Gain d'énergie d'ultime avec SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "criticalRateBoost": "Taux de coups critiques accru",
-        "criticalDmgBoost": "DÉG critiques accrus",
-        "buffDurationS": "Durée de bonus (s)",
-        "seq2UltimateEnergyGain": "Gain d'énergie d'ultime avec SÉQ 2"
-      },
       "name": "Moment d'ombre ardente",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime à la fois de cumuls de <#ba.noguard>Vulnérabilité</> et d'<#ba.spellinflict>altération des Arts</>.\nLa compétence de combo de Rossi possède 2 séquences consécutives. SÉQ DE COMBO 1 : inflige des <@ba.pd>DÉG physiques</> à la cible.\nSÉQ DE COMBO 2 : <#ba.consume>consomme</> tous les cumuls d'<#ba.spellinflict>altération des Arts</> de la cible, lui inflige des <@ba.pd>DÉG physiques</> en fonction du nombre de cumuls d'altération des Arts <#ba.consume>consommés</>, applique <#ba.airborne>Soulèvement</> 1 fois et améliore à la fois le taux de coups critiques de Rossi et les DÉG critiques qu'elle inflige.\nLancer la SÉQ DE COMBO 2 selon un <@ba.key>timing parfait</> permet d'appliquer 1 cumul de <#ba.noguard>Vulnérabilité</> supplémentaire."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime à la fois de cumuls de <#ba.noguard>Vulnérabilité</> et d'<#ba.spellinflict>altération des Arts</>.\nLa compétence de combo de Rossi possède 2 séquences consécutives. SÉQ DE COMBO 1 : inflige des <@ba.pd>DÉG physiques</> à la cible.\nSÉQ DE COMBO 2 : <#ba.consume>consomme</> tous les cumuls d'<#ba.spellinflict>altération des Arts</> de la cible, lui inflige des <@ba.pd>DÉG physiques</> en fonction du nombre de cumuls d'altération des Arts <#ba.consume>consommés</>, applique <#ba.airborne>Soulèvement</> 1 fois et améliore à la fois le taux de coups critiques de Rossi et les DÉG critiques qu'elle inflige.\nLancer la SÉQ DE COMBO 2 selon un <@ba.key>timing parfait</> permet d'appliquer 1 cumul de <#ba.noguard>Vulnérabilité</> supplémentaire.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1UltimateEnergyGain": "Gain d'énergie d'ultime avec SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "criticalRateBoost": "Taux de coups critiques accru",
+      "criticalDmgBoost": "DÉG critiques accrus",
+      "buffDurationS": "Durée de bonus (s)",
+      "seq2UltimateEnergyGain": "Gain d'énergie d'ultime avec SÉQ 2"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Multiplicateur de DÉG totaux d'attaque perforante",
-        "seq1SlashDmgMultiplier": "Multiplicateur de DÉG d'entaille SÉQ 1",
-        "seq2SlashDmgMultiplier": "Multiplicateur de DÉG d'entaille SÉQ 2",
-        "stagger": "Déséquilibre",
-        "criticalDmgBoost": "DÉG critiques accrus"
-      },
       "name": "Embuscade « Griffe acérée »",
-      "description": "Rossi agite sa cape et déclenche une tempête de coups qui inflige rapidement plusieurs séquences de <@ba.fire>DÉG thermiques</> à la cible. Elle exécute ensuite une attaque à deux séquences avec sa dague, qui inflige de lourds <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>.\n<@ba.info>Lorsque cette compétence inflige un coup critique, ses DÉG critiques sont augmentés.</>"
+      "description": "Rossi agite sa cape et déclenche une tempête de coups qui inflige rapidement plusieurs séquences de <@ba.fire>DÉG thermiques</> à la cible. Elle exécute ensuite une attaque à deux séquences avec sa dague, qui inflige de lourds <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>.\n<@ba.info>Lorsque cette compétence inflige un coup critique, ses DÉG critiques sont augmentés.</>",
+      "stabAttackTotalDmgMultiplier": "Multiplicateur de DÉG totaux d'attaque perforante",
+      "seq1SlashDmgMultiplier": "Multiplicateur de DÉG d'entaille SÉQ 1",
+      "seq2SlashDmgMultiplier": "Multiplicateur de DÉG d'entaille SÉQ 2",
+      "stagger": "Déséquilibre",
+      "criticalDmgBoost": "DÉG critiques accrus"
     },
     "indicator": {
       "levels": [

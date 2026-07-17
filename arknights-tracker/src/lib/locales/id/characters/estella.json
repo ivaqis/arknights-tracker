@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Audio Noise",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Onomatopoeia",
-      "description": "Tusukan tombak yang menembakkan gelombang suara beku sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada semua musuh yang berada di lintasan lurusnya."
+      "description": "Tusukan tombak yang menembakkan gelombang suara beku sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada semua musuh yang berada di lintasan lurusnya.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "Pengganda DMG terhadap Musuh yang Tidak Terkena Solidified",
-        "dmgMultiplierAgainstSolidifiedEnemies": "Pengganda DMG terhadap Musuh yang Terkena Solidified",
-        "stagger": "Stagger",
-        "physicalSusceptibilityMultiplier": "Pengganda Physical Susceptibility",
-        "physicalSusceptibilityDuration": "Durasi Physical Susceptibility",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Distortion",
-      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.frozen>Solidification</>. \nBerpindah cepat ke samping musuh dan menimbulkan <@ba.pd>Physical DMG</> serta secara paksa mengakibatkan <#ba.airborne>Lift</> kepada musuh di area kecil. Jika mengenai target yang sedang terkena <#ba.frozen>Solidification</>, skill ini akan menimbulkan DMG tambahan dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</>."
+      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.frozen>Solidification</>. \nBerpindah cepat ke samping musuh dan menimbulkan <@ba.pd>Physical DMG</> serta secara paksa mengakibatkan <#ba.airborne>Lift</> kepada musuh di area kecil. Jika mengenai target yang sedang terkena <#ba.frozen>Solidification</>, skill ini akan menimbulkan DMG tambahan dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "Pengganda DMG terhadap Musuh yang Tidak Terkena Solidified",
+      "dmgMultiplierAgainstSolidifiedEnemies": "Pengganda DMG terhadap Musuh yang Terkena Solidified",
+      "stagger": "Stagger",
+      "physicalSusceptibilityMultiplier": "Pengganda Physical Susceptibility",
+      "physicalSusceptibilityDuration": "Durasi Physical Susceptibility",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Tremolo",
-      "description": "Estella akan mengerahkan seluruh kekuatannya untuk menghantamkan batang tombaknya dengan kuat sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada semua musuh di area melingkar di sekitarnya. Skill ini secara paksa akan mengakibatkan <#ba.airborne>Lift</> kepada musuh yang sedang terkena <#ba.physicalvul>Physical Susceptibility</>."
+      "description": "Estella akan mengerahkan seluruh kekuatannya untuk menghantamkan batang tombaknya dengan kuat sehingga akan menimbulkan <@ba.pd>Physical DMG</> kepada semua musuh di area melingkar di sekitarnya. Skill ini secara paksa akan mengakibatkan <#ba.airborne>Lift</> kepada musuh yang sedang terkena <#ba.physicalvul>Physical Susceptibility</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

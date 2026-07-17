@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Hypothermischer Sturmangriff",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 3 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 3 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "protection": "Schutz",
-        "spReturn": "FP-Rückerstattung"
-      },
       "name": "Gesättigte Verteidigung",
-      "description": "Aktiviert einen Schild, der Angriffe abwehren kann, dem Operator und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.cryst>Kryo-SDN</> verursacht und den angreifenden Gegner mit <#ba.crystinflict>Kryo</> belegt."
+      "description": "Aktiviert einen Schild, der Angriffe abwehren kann, dem Operator und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.cryst>Kryo-SDN</> verursacht und den angreifenden Gegner mit <#ba.crystinflict>Kryo</> belegt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "protection": "Schutz",
+      "spReturn": "FP-Rückerstattung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Ausgangs-Grundbehandlung",
-        "initialTreatmentIncreasePerWill": "Grund-Behandlungssteigerung pro Wille",
-        "baseTreatmentOverTime": "Kontinuierliche Grundbehandlung",
-        "treatmentOverTimeIncreasePerWill": "Behandlungssteigerung über Zeit pro Wille",
-        "treatmentOverTimeIntervalS": "Zeitintervall für Kontinuierliche Behandlung (Sek.)",
-        "durationS": "Dauer (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Polarrettung",
-      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator angegriffen wird und auf weniger als {trigger_hp_ratio:0%} LP fällt. \nSnowshine wirft einen Schneefeld-R-Team-Assistenten zum gesteuerten Operator. Bei Kontakt bewirkt der Assistent bei nahen Operatoren sofort eine umfangreiche <@ba.heal>LP-Behandlung</> und bei Operatoren im Wirkungsbereich eine kontinuierliche <@ba.heal>LP-Behandlung</>. \nDie Wirksamkeit der LP-Behandlung erhöht sich durch das Wille-Attribut."
+      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator angegriffen wird und auf weniger als {trigger_hp_ratio:0%} LP fällt. \nSnowshine wirft einen Schneefeld-R-Team-Assistenten zum gesteuerten Operator. Bei Kontakt bewirkt der Assistent bei nahen Operatoren sofort eine umfangreiche <@ba.heal>LP-Behandlung</> und bei Operatoren im Wirkungsbereich eine kontinuierliche <@ba.heal>LP-Behandlung</>. \nDie Wirksamkeit der LP-Behandlung erhöht sich durch das Wille-Attribut.",
+      "initialBaseTreatment": "Ausgangs-Grundbehandlung",
+      "initialTreatmentIncreasePerWill": "Grund-Behandlungssteigerung pro Wille",
+      "baseTreatmentOverTime": "Kontinuierliche Grundbehandlung",
+      "treatmentOverTimeIncreasePerWill": "Behandlungssteigerung über Zeit pro Wille",
+      "treatmentOverTimeIntervalS": "Zeitintervall für Kontinuierliche Behandlung (Sek.)",
+      "durationS": "Dauer (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "dmgOverTimeMultiplier": "Multiplikator für Kontinuierlichen SDN",
-        "dmgOverTimeIntervalS": "Zeitintervall für Kontinuierlichen SDN (Sek.)",
-        "durationS": "Dauer (Sek.)"
-      },
       "name": "Eisiges Schneefeld",
-      "description": "Springt mit einem Raketenrucksack in die Luft und schlägt dann mit ihrem Schild auf, um Gegnern im Wirkungsbereich massiven <@ba.cryst>Kryo-SDN</> zuzufügen. Erzeugt außerdem eine <@ba.key>Schneezone</> (die mehrere Sekunden lang anhält), die Gegnern kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt. Die <@ba.key>Schneezone</> belegt Gegner, die darin gefangen sind, für einen bestimmten Zeitraum mit <#ba.frozen>Erstarrung</>."
+      "description": "Springt mit einem Raketenrucksack in die Luft und schlägt dann mit ihrem Schild auf, um Gegnern im Wirkungsbereich massiven <@ba.cryst>Kryo-SDN</> zuzufügen. Erzeugt außerdem eine <@ba.key>Schneezone</> (die mehrere Sekunden lang anhält), die Gegnern kontinuierlichen <@ba.cryst>Kryo-SDN</> zufügt. Die <@ba.key>Schneezone</> belegt Gegner, die darin gefangen sind, für einen bestimmten Zeitraum mit <#ba.frozen>Erstarrung</>.",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "dmgOverTimeMultiplier": "Multiplikator für Kontinuierlichen SDN",
+      "dmgOverTimeIntervalS": "Zeitintervall für Kontinuierlichen SDN (Sek.)",
+      "durationS": "Dauer (Sek.)"
     },
     "indicator": {
       "levels": [

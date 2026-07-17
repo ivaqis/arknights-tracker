@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Höhenflugbruch",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "liftDurationS": "Dauer: Anheben (Sek.)"
-      },
       "name": "Aufsteigender Schlag",
-      "description": "Führt einen Aufwärtshieb beim gegnerischen Ziel durch, der <@ba.pd>Physischen SDN</> verursacht und das Ziel <#ba.airborne>anhebt</>."
+      "description": "Führt einen Aufwärtshieb beim gegnerischen Ziel durch, der <@ba.pd>Physischen SDN</> verursacht und das Ziel <#ba.airborne>anhebt</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "liftDurationS": "Dauer: Anheben (Sek.)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Flug zu den Sternen",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.noguard>Anfällig</> erleidet. \nEin Schlitzersprint, der durch einen Gegner sprintet und allen Gegnern im Weg <@ba.pd>Physischen SDN</> zufügt und diese <#ba.airborne>Anhebt</>."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.noguard>Anfällig</> erleidet. \nEin Schlitzersprint, der durch einen Gegner sprintet und allen Gegnern im Weg <@ba.pd>Physischen SDN</> zufügt und diese <#ba.airborne>Anhebt</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Hieb-Multiplikator",
-        "firstStrikeStagger": "Taumeln bei erstem Angriff",
-        "finalStrikeDmgMultiplier": "SDN-Multiplikator bei Abschlussangriff",
-        "finalStrikeStagger": "Taumeln bei Abschlussangriff"
-      },
       "name": "Klingensturm",
-      "description": "Ein 7-Sequenz-Hiebangriff, der dem gegnerischen Ziel <@ba.pd>Physischen SDN</> pro Sequenz zufügt. Die Sequenz des finalen Hiebs fügt noch mehr SDN zu."
+      "description": "Ein 7-Sequenz-Hiebangriff, der dem gegnerischen Ziel <@ba.pd>Physischen SDN</> pro Sequenz zufügt. Die Sequenz des finalen Hiebs fügt noch mehr SDN zu.",
+      "slashMultiplier": "Hieb-Multiplikator",
+      "firstStrikeStagger": "Taumeln bei erstem Angriff",
+      "finalStrikeDmgMultiplier": "SDN-Multiplikator bei Abschlussangriff",
+      "finalStrikeStagger": "Taumeln bei Abschlussangriff"
     },
     "indicator": {
       "levels": [

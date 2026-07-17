@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "破壊配列",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "構成配列",
-      "description": "アーツを発動して前方の一定範囲内の敵を攻撃する。<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。"
+      "description": "アーツを発動して前方の一定範囲内の敵を攻撃する。<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "crystalShatteringDmgMultiplier": "結晶粉砕ダメージ倍率",
-        "stagger": "ブレイク値",
-        "sealDurationS": "封印時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "封印配列",
-      "description": "チーム内の他のオペレーターの連携技でダメージを与えたときに発動可能。\n敵の近くに突進し、<@ba.pd>物理ダメージ</>を与え、<#ba.originium>源石結晶</>を付与して一定時間封印する。<#ba.physicalstatus>物理異常</>を与えるか<#ba.noguard>クラッシュ</>を付与すると、<#ba.originium>源石結晶</>が<#ba.consume>消費</>され、追加の<@ba.pd>物理ダメージ</>を与える。"
+      "description": "チーム内の他のオペレーターの連携技でダメージを与えたときに発動可能。\n敵の近くに突進し、<@ba.pd>物理ダメージ</>を与え、<#ba.originium>源石結晶</>を付与して一定時間封印する。<#ba.physicalstatus>物理異常</>を与えるか<#ba.noguard>クラッシュ</>を付与すると、<#ba.originium>源石結晶</>が<#ba.consume>消費</>され、追加の<@ba.pd>物理ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "crystalShatteringDmgMultiplier": "結晶粉砕ダメージ倍率",
+      "stagger": "ブレイク値",
+      "sealDurationS": "封印時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "bonusDmgMultiplier": "追加ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "攻撃配列",
-      "description": "アーツを発動して地面を攻撃し、前方の扇形範囲内の敵に高い<@ba.pd>物理ダメージ</>を与える。敵に<#ba.originium>源石結晶</>がある場合、<#ba.originium>源石結晶</>が<#ba.consume>消費</>され、追加でもう1回<@ba.pd>物理ダメージ</>を与える。"
+      "description": "アーツを発動して地面を攻撃し、前方の扇形範囲内の敵に高い<@ba.pd>物理ダメージ</>を与える。敵に<#ba.originium>源石結晶</>がある場合、<#ba.originium>源石結晶</>が<#ba.consume>消費</>され、追加でもう1回<@ba.pd>物理ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "bonusDmgMultiplier": "追加ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "indicator": {
       "levels": [

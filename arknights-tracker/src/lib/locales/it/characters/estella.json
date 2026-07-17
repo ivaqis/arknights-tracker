@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Rumore audio",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Onomatopea",
-      "description": "Una stoccata con la lancia che scaglia un flusso di onde sonore gelide, che infliggono <@ba.cryst>danni da ghiaccio</> e applicano <#ba.crystinflict>Afflizione da ghiaccio</> a tutti i nemici lungo il suo percorso rettilineo."
+      "description": "Una stoccata con la lancia che scaglia un flusso di onde sonore gelide, che infliggono <@ba.cryst>danni da ghiaccio</> e applicano <#ba.crystinflict>Afflizione da ghiaccio</> a tutti i nemici lungo il suo percorso rettilineo.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "Moltiplicatore danni contro nemici non Solidificati",
-        "dmgMultiplierAgainstSolidifiedEnemies": "Moltiplicatore danni contro nemici Solidificati",
-        "stagger": "Vacillamento",
-        "physicalSusceptibilityMultiplier": "Moltiplicatore Suscettibilità fisica",
-        "physicalSusceptibilityDuration": "Durata Suscettibilità fisica",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Distorsione",
-      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.frozen>Solidificazione</>. \nSi sposta rapidamente al fianco del nemico per infliggere <@ba.pd>danni fisici</> e usa forzatamente <#ba.airborne>Sospensione</> contro i nemici in una piccola area. Se l'abilità colpisce un bersaglio con <#ba.frozen>Solidificazione</>, infligge danni aggiuntivi e applica <#ba.physicalvul>Suscettibilità fisica</>."
+      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.frozen>Solidificazione</>. \nSi sposta rapidamente al fianco del nemico per infliggere <@ba.pd>danni fisici</> e usa forzatamente <#ba.airborne>Sospensione</> contro i nemici in una piccola area. Se l'abilità colpisce un bersaglio con <#ba.frozen>Solidificazione</>, infligge danni aggiuntivi e applica <#ba.physicalvul>Suscettibilità fisica</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "Moltiplicatore danni contro nemici non Solidificati",
+      "dmgMultiplierAgainstSolidifiedEnemies": "Moltiplicatore danni contro nemici Solidificati",
+      "stagger": "Vacillamento",
+      "physicalSusceptibilityMultiplier": "Moltiplicatore Suscettibilità fisica",
+      "physicalSusceptibilityDuration": "Durata Suscettibilità fisica",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Tremolio",
-      "description": "Estella usa tutta la sua forza per sferrare un potente colpo con l'asta della lancia, infliggendo <@ba.pd>danni fisici</> a tutti i nemici in un'area circolare attorno a sé. Ai nemici con <#ba.physicalvul>Suscettibilità fisica</>, l'abilità applica forzatamente <#ba.airborne>Sospensione</>."
+      "description": "Estella usa tutta la sua forza per sferrare un potente colpo con l'asta della lancia, infliggendo <@ba.pd>danni fisici</> a tutti i nemici in un'area circolare attorno a sé. Ai nemici con <#ba.physicalvul>Suscettibilità fisica</>, l'abilità applica forzatamente <#ba.airborne>Sospensione</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "indicator": {
       "levels": [

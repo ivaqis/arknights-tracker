@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "切磋琢磨",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "ほとばしる情熱",
-      "description": "前方に斬りかかり、<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。"
+      "description": "前方に斬りかかり、<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "1段ごとのダメージ倍率",
-        "staggerPerSeq": "1段ごとのブレイク値",
-        "spRecoveryPerSeq": "1段ごとのSP回復量",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "突撃一閃",
-      "description": "敵がブレイク状態になるか<#ba.poiseknot>ブレイク点</>に到達したときに発動可能。\n往復移動の突撃で<@ba.pd>物理ダメージ</>を2回与え、SPを一定量回復する。"
+      "description": "敵がブレイク状態になるか<#ba.poiseknot>ブレイク点</>に到達したときに発動可能。\n往復移動の突撃で<@ba.pd>物理ダメージ</>を2回与え、SPを一定量回復する。",
+      "dmgMultiplierPerSeq": "1段ごとのダメージ倍率",
+      "staggerPerSeq": "1段ごとのブレイク値",
+      "spRecoveryPerSeq": "1段ごとのSP回復量",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "SP回復量"
-      },
       "name": "全員、集合！",
-      "description": "持続的にアーツを放ち、集結信号弾を3回発射する。発射するたびにSPを一定量回復する。"
+      "description": "持続的にアーツを放ち、集結信号弾を3回発射する。発射するたびにSPを一定量回復する。",
+      "spRecovery": "SP回復量"
     },
     "indicator": {
       "levels": [

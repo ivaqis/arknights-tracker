@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Cajado Arcano: Artes de Coesão dos Feixes",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Multiplicador DNO Atração por Gravidade",
-        "explosionDmgMultiplier": "Multiplicador DNO Explosão",
-        "explosionStagger": "Desorientação por Explosão"
-      },
       "name": "Cajado Arcano: Modo de Gravidade",
-      "description": "Inicia uma canalização de artes que cria um <@ba.key>poço de gravidade</>. O <@ba.key>poço de gravidade</> atrai os inimigos próximos e causa <@ba.natur>DNO Natureza</> a eles. Quando a canalização termina, o <@ba.key>poço de gravidade</> implode para causar <@ba.natur>DNO Natureza</> e <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito."
+      "description": "Inicia uma canalização de artes que cria um <@ba.key>poço de gravidade</>. O <@ba.key>poço de gravidade</> atrai os inimigos próximos e causa <@ba.natur>DNO Natureza</> a eles. Quando a canalização termina, o <@ba.key>poço de gravidade</> implode para causar <@ba.natur>DNO Natureza</> e <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito.",
+      "gravityPullDmgMultiplier": "Multiplicador DNO Atração por Gravidade",
+      "explosionDmgMultiplier": "Multiplicador DNO Explosão",
+      "explosionStagger": "Desorientação por Explosão"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Cajado Arcano: Deslocamento da Matriz",
-      "description": "ACIONADOR DO COMBO: Quando uma <#ba.spellstatus>Reação de Artes</> é aplicada a um inimigo. \nUma conjuração rápida das Artes que gera tração gravitacional que, por sua vez, causa <@ba.natur>DNO Natureza</> e <#ba.airborne>Levanta</> o alvo e os inimigos nas proximidades à força."
+      "description": "ACIONADOR DO COMBO: Quando uma <#ba.spellstatus>Reação de Artes</> é aplicada a um inimigo. \nUma conjuração rápida das Artes que gera tração gravitacional que, por sua vez, causa <@ba.natur>DNO Natureza</> e <#ba.airborne>Levanta</> o alvo e os inimigos nas proximidades à força.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "fieldDurationS": "Duração do Campo (s)",
-        "slowEffect": "Efeito de Desacelerar",
-        "baseArtsSusceptibility": "Suscetibilidade a Artes Básica",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento de Suscetibilidade a Artes por Acúmulo de Vulnerabilidade"
-      },
       "name": "Cajado Arcano: Campo de Gravidade",
-      "description": "Cria um <@ba.key>Campo de Gravidade Anômalo</> que causa instantaneamente 1 acerto de <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos apanhados pelo campo. Os alvos no <@ba.key>Campo de Gravidade Anômalo</> também sofrem <#ba.slow>Desacelerar</> e <#ba.spellvul>Suscetibilidade a Artes</>. O efeito de <#ba.spellvul>Suscetibilidade a Artes</> aumenta ainda mais com base no número de acúmulos de <#ba.noguard>Vulnerabilidade</> ativos no alvo. \n<@ba.info>Se um alvo no campo for Levantado, o status Levantado persistirá até o campo desaparecer.</>"
+      "description": "Cria um <@ba.key>Campo de Gravidade Anômalo</> que causa instantaneamente 1 acerto de <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos apanhados pelo campo. Os alvos no <@ba.key>Campo de Gravidade Anômalo</> também sofrem <#ba.slow>Desacelerar</> e <#ba.spellvul>Suscetibilidade a Artes</>. O efeito de <#ba.spellvul>Suscetibilidade a Artes</> aumenta ainda mais com base no número de acúmulos de <#ba.noguard>Vulnerabilidade</> ativos no alvo. \n<@ba.info>Se um alvo no campo for Levantado, o status Levantado persistirá até o campo desaparecer.</>",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "fieldDurationS": "Duração do Campo (s)",
+      "slowEffect": "Efeito de Desacelerar",
+      "baseArtsSusceptibility": "Suscetibilidade a Artes Básica",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento de Suscetibilidade a Artes por Acúmulo de Vulnerabilidade"
     },
     "indicator": {
       "levels": [

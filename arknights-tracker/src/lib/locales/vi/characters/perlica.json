@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Giao Thức α: Phá Giáp",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Giao Thức ω: Tấn Công",
-      "description": "Phóng một luồng năng lượng điện từ gây <@ba.pulse>ST Điện</> và <#ba.pulseinflict>Nhiễm Điện</> lên kẻ địch trong khu vực nhỏ."
+      "description": "Phóng một luồng năng lượng điện từ gây <@ba.pulse>ST Điện</> và <#ba.pulseinflict>Nhiễm Điện</> lên kẻ địch trong khu vực nhỏ.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "electrifyDurationS": "Thời Gian Hiệu Lực Điện Hóa (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Giao Thức Tức Thời: Chuỗi",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển tung <#ba.lastcombo>Đòn Dứt Điểm</> vào bất kỳ kẻ địch nào. \nGiải phóng năng lượng điện từ tích trữ oanh tạc mục tiêu, gây <@ba.pulse>ST Điện</> và cưỡng bức gây hiệu ứng <#ba.conduct>Điện Hóa</> tạm thời."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển tung <#ba.lastcombo>Đòn Dứt Điểm</> vào bất kỳ kẻ địch nào. \nGiải phóng năng lượng điện từ tích trữ oanh tạc mục tiêu, gây <@ba.pulse>ST Điện</> và cưỡng bức gây hiệu ứng <#ba.conduct>Điện Hóa</> tạm thời.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "electrifyDurationS": "Thời Gian Hiệu Lực Điện Hóa (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Giao Thức ε: 70.41K",
-      "description": "Giao thức dịch chuyển các mảnh vỡ vệ tinh từ quỹ đạo xuống chiến trường với ảnh hưởng hủy diệt. Toàn bộ kẻ địch trúng phải chịu <@ba.pulse>ST Điện</> cực đại."
+      "description": "Giao thức dịch chuyển các mảnh vỡ vệ tinh từ quỹ đạo xuống chiến trường với ảnh hưởng hủy diệt. Toàn bộ kẻ địch trúng phải chịu <@ba.pulse>ST Điện</> cực đại.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp"
     },
     "indicator": {
       "levels": [

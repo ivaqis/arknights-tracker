@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Schnellfeuer-Akimbo",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.fire>Hitze-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.fire>Hitze-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.fire>Hitze-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.fire>Hitze-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
-        "additionalAtkStagger": "Zusätzliches ANG-Taumeln"
-      },
       "name": "Thermitsucher",
-      "description": "Feuert mehrere Schüsse auf das Ziel ab, die etwas <@ba.fire>Hitze-SDN</> verursachen. Der letzte Schuss verursacht auch <#ba.fireinflict>Hitze</>. Falls auf dem Ziel <#ba.burning>Verbrannt</> oder <#ba.conduct>Elektrifizierung</> aktiv ist, wird keine <#ba.fireinflict>Hitze</> verursacht, sondern stattdessen die Technikreaktion <#ba.consume>verbraucht</>, um einen zusätzlichen Schuss abzufeuern, der massiven <@ba.fire>Hitze-SDN</> verursacht."
+      "description": "Feuert mehrere Schüsse auf das Ziel ab, die etwas <@ba.fire>Hitze-SDN</> verursachen. Der letzte Schuss verursacht auch <#ba.fireinflict>Hitze</>. Falls auf dem Ziel <#ba.burning>Verbrannt</> oder <#ba.conduct>Elektrifizierung</> aktiv ist, wird keine <#ba.fireinflict>Hitze</> verursacht, sondern stattdessen die Technikreaktion <#ba.consume>verbraucht</>, um einen zusätzlichen Schuss abzufeuern, der massiven <@ba.fire>Hitze-SDN</> verursacht.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
+      "additionalAtkStagger": "Zusätzliches ANG-Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Splittergranate β",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellinflict>Technikkumulierung</> belegt wird. \nWirft eine Splittergranate an die Position des Ziels, die explodiert und Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügt und sie mit <#ba.fireinflict>Hitze</> belegt."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellinflict>Technikkumulierung</> belegt wird. \nWirft eine Splittergranate an die Position des Ziels, die explodiert und Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügt und sie mit <#ba.fireinflict>Hitze</> belegt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "SDN-Multiplikator pro SEQ",
-        "stagger": "Taumeln"
-      },
       "name": "Wolfsrage",
-      "description": "Verschießt ein schnelles Sperrfeuer und entfesselt <@ba.key>Wolfsrage</>, um Gegner in der Nähe anzugreifen, 5 Treffer mit <@ba.fire>Hitze-SDN</> zu verursachen und sie mit <#ba.burning>Verbrannt</> zu belegen."
+      "description": "Verschießt ein schnelles Sperrfeuer und entfesselt <@ba.key>Wolfsrage</>, um Gegner in der Nähe anzugreifen, 5 Treffer mit <@ba.fire>Hitze-SDN</> zu verursachen und sie mit <#ba.burning>Verbrannt</> zu belegen.",
+      "dmgMultiplierPerSeq": "SDN-Multiplikator pro SEQ",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "キャストの基本",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "spRecoveryByConsuming1InflictionStack": "付着1段階消費時のSP回復量",
-        "spRecoveryByConsuming2InflictionStacks": "付着2段階消費時のSP回復量",
-        "spRecoveryByConsuming3InflictionStacks": "付着3段階消費時のSP回復量",
-        "spRecoveryByConsuming4InflictionStacks": "付着4段階消費時のSP回復量",
-        "stagger": "ブレイク値"
-      },
       "name": "型破りのルアー",
-      "description": "引っ掛けた氷で前方の敵を叩き付け、<@ba.pd>物理ダメージ</>を与える。<#ba.crystinflict>寒冷付着</>状態の敵に命中すると、敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>して強制的に<#ba.frozen>凍結</>状態にする。さらに、<#ba.consume>消費</>した段階数に応じてSPを回復する（複数の敵に命中しても回復は1回のみ）。"
+      "description": "引っ掛けた氷で前方の敵を叩き付け、<@ba.pd>物理ダメージ</>を与える。<#ba.crystinflict>寒冷付着</>状態の敵に命中すると、敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>して強制的に<#ba.frozen>凍結</>状態にする。さらに、<#ba.consume>消費</>した段階数に応じてSPを回復する（複数の敵に命中しても回復は1回のみ）。",
+      "dmgMultiplier": "ダメージ倍率",
+      "spRecoveryByConsuming1InflictionStack": "付着1段階消費時のSP回復量",
+      "spRecoveryByConsuming2InflictionStacks": "付着2段階消費時のSP回復量",
+      "spRecoveryByConsuming3InflictionStacks": "付着3段階消費時のSP回復量",
+      "spRecoveryByConsuming4InflictionStacks": "付着4段階消費時のSP回復量",
+      "stagger": "ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "chanceToCatchTheRareFin": "珍鱗釣上確率",
-        "enhancedDmgMultiplier": "強化ダメージ倍率",
-        "spRecovery": "SP回復量",
-        "bonusSpRecovery": "SP追加回復量",
-        "stagger": "ブレイク値",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "穴釣り術",
-      "description": "周囲の目標の<#ba.spellstatus>アーツ異常</>または<#ba.originium>源石結晶</>が<#ba.consume>消費</>されたときに発動可能。\n敵の足元に穴を開けて鱗獣を釣り上げる。<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。一定確率で<@ba.key>珍鱗</>を釣り上げ、ダメージが大幅にアップし、SPをさらに回復する。"
+      "description": "周囲の目標の<#ba.spellstatus>アーツ異常</>または<#ba.originium>源石結晶</>が<#ba.consume>消費</>されたときに発動可能。\n敵の足元に穴を開けて鱗獣を釣り上げる。<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。一定確率で<@ba.key>珍鱗</>を釣り上げ、ダメージが大幅にアップし、SPをさらに回復する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "chanceToCatchTheRareFin": "珍鱗釣上確率",
+      "enhancedDmgMultiplier": "強化ダメージ倍率",
+      "spRecovery": "SP回復量",
+      "bonusSpRecovery": "SP追加回復量",
+      "stagger": "ブレイク値",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "必殺技ダメージ倍率",
-        "baseSpRecovery": "基礎SP回復量",
-        "bonusSpRecoveryPerTargetDefeated": "敵撃破時のSP追加回復量",
-        "spRecoveryLimit": "SP回復上限",
-        "stagger": "ブレイク値"
-      },
       "name": "大物、ヒット！",
-      "description": "超巨大鱗獣を釣り上げ、前方の敵に投げ付ける。広範囲の<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与し、SPを一定量回復する。倒した敵1体につき、SPを追加で回復する。"
+      "description": "超巨大鱗獣を釣り上げ、前方の敵に投げ付ける。広範囲の<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与し、SPを一定量回復する。倒した敵1体につき、SPを追加で回復する。",
+      "ultimateDmgMultiplier": "必殺技ダメージ倍率",
+      "baseSpRecovery": "基礎SP回復量",
+      "bonusSpRecoveryPerTargetDefeated": "敵撃破時のSP追加回復量",
+      "spRecoveryLimit": "SP回復上限",
+      "stagger": "ブレイク値"
     },
     "indicator": {
       "levels": [

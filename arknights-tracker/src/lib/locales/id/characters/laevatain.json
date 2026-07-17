@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Flaming Cinders",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "Pengganda DMG Ledakan Dasar",
-        "baseExplosionStagger": "Stagger Ledakan Dasar",
-        "dmgOverTimeMultiplierPerSeq": "Pengganda DMG Over Time per SEQ",
-        "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
-        "additionalAtkStagger": "Tambahan ATK Stagger",
-        "combustionDurationS": "Durasi Combustion (dtk)",
-        "additionalAtkUltimateEnergyGain": "Tambahan Perolehan Energi Ultimate ATK",
-        "duringUltimateBatkSeq1Multiplier": "Saat Ultimate: Pengganda BATK SEQ 1",
-        "duringUltimateBatkSeq1Stagger": "Saat Ultimate: BATK SEQ 1 Stagger",
-        "duringUltimateBatkSeq2Multiplier": "Saat Ultimate: Pengganda BATK SEQ 2",
-        "duringUltimateBatkSeq2Stagger": "Saat Ultimate: BATK SEQ 2 Stagger",
-        "duringUltimateAdditionalAtkMultiplier": "Saat Ultimate: Tambahan Pengganda ATK",
-        "duringUltimateAdditionalAtkStagger": "Saat Ultimate: Tambahan ATK Stagger",
-        "duringUltimateCombustionDurationS": "Saat Ultimate: Durasi Combustion (dtk)"
-      },
       "name": "Smouldering Fire",
-      "description": "Memanggil Serpihan Magma yang akan terus-menerus menyerang musuh dan menimbulkan <@ba.fire>Heat DMG</>. Jika berhasil menghantam musuh, skill ini akan memberikan 1 tumpuk <@ba.key>Melting Flame</>. \nJika Laevatain sudah punya {count:0} tumpuk <@ba.key>Melting Flame</> saat menggunakan skill ini, dia akan memakai semua tumpukan itu dan melancarkan satu serangan lagi sehingga akan menimbulkan <@ba.fire>Heat DMG</>, lalu secara paksa mengaktifkan efek <#ba.burning>Combustion</> untuk sementara kepada semua musuh di area besar.\nJika serangan tambahan ini berhasil menghantam musuh, Energi Ultimate akan dipulihkan lagi.\n<@ba.info>Efek skill tarung akan diperkuat selagi ultimate Laevatain masih aktif.</>"
+      "description": "Memanggil Serpihan Magma yang akan terus-menerus menyerang musuh dan menimbulkan <@ba.fire>Heat DMG</>. Jika berhasil menghantam musuh, skill ini akan memberikan 1 tumpuk <@ba.key>Melting Flame</>. \nJika Laevatain sudah punya {count:0} tumpuk <@ba.key>Melting Flame</> saat menggunakan skill ini, dia akan memakai semua tumpukan itu dan melancarkan satu serangan lagi sehingga akan menimbulkan <@ba.fire>Heat DMG</>, lalu secara paksa mengaktifkan efek <#ba.burning>Combustion</> untuk sementara kepada semua musuh di area besar.\nJika serangan tambahan ini berhasil menghantam musuh, Energi Ultimate akan dipulihkan lagi.\n<@ba.info>Efek skill tarung akan diperkuat selagi ultimate Laevatain masih aktif.</>",
+      "baseExplosionDmgMultiplier": "Pengganda DMG Ledakan Dasar",
+      "baseExplosionStagger": "Stagger Ledakan Dasar",
+      "dmgOverTimeMultiplierPerSeq": "Pengganda DMG Over Time per SEQ",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "additionalAtkStagger": "Tambahan ATK Stagger",
+      "combustionDurationS": "Durasi Combustion (dtk)",
+      "additionalAtkUltimateEnergyGain": "Tambahan Perolehan Energi Ultimate ATK",
+      "duringUltimateBatkSeq1Multiplier": "Saat Ultimate: Pengganda BATK SEQ 1",
+      "duringUltimateBatkSeq1Stagger": "Saat Ultimate: BATK SEQ 1 Stagger",
+      "duringUltimateBatkSeq2Multiplier": "Saat Ultimate: Pengganda BATK SEQ 2",
+      "duringUltimateBatkSeq2Stagger": "Saat Ultimate: BATK SEQ 2 Stagger",
+      "duringUltimateAdditionalAtkMultiplier": "Saat Ultimate: Tambahan Pengganda ATK",
+      "duringUltimateAdditionalAtkStagger": "Saat Ultimate: Tambahan ATK Stagger",
+      "duringUltimateCombustionDurationS": "Saat Ultimate: Durasi Combustion (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGainWhenHitting1Enemy": "Perolehan Energi Ultimate saat Menghantam 1 Musuh",
-        "ultimateEnergyGainWhenHitting2Enemies": "Perolehan Energi Ultimate saat Menghantam 2 Musuh",
-        "ultimateEnergyGainWhenHitting3Enemies": "Perolehan Energi Ultimate saat Menghantam 3 Musuh"
-      },
       "name": "Seethe",
-      "description": "PEMICU KOMBO: Saat satu musuh terkena <#ba.burning>Combustion</> atau <#ba.corrupt>Corrosion</>. \nApi akan muncul dari bawah kaki musuh yang terkena <#ba.burning>Combustion</> atau <#ba.corrupt>Corrosion</> sehingga akan menimbulkan <@ba.fire>Heat DMG</> kepada mereka. \nJika skill berhasil menghantam musuh, Laevatain akan mendapatkan 1 tumpuk <@ba.key>Melting Flame</> dan Energi Ultimate lagi setiap kali ada musuh yang terhantam."
+      "description": "PEMICU KOMBO: Saat satu musuh terkena <#ba.burning>Combustion</> atau <#ba.corrupt>Corrosion</>. \nApi akan muncul dari bawah kaki musuh yang terkena <#ba.burning>Combustion</> atau <#ba.corrupt>Corrosion</> sehingga akan menimbulkan <@ba.fire>Heat DMG</> kepada mereka. \nJika skill berhasil menghantam musuh, Laevatain akan mendapatkan 1 tumpuk <@ba.key>Melting Flame</> dan Energi Ultimate lagi setiap kali ada musuh yang terhantam.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGainWhenHitting1Enemy": "Perolehan Energi Ultimate saat Menghantam 1 Musuh",
+      "ultimateEnergyGainWhenHitting2Enemies": "Perolehan Energi Ultimate saat Menghantam 2 Musuh",
+      "ultimateEnergyGainWhenHitting3Enemies": "Perolehan Energi Ultimate saat Menghantam 3 Musuh"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durasi (dtk)",
-        "enhancedBatkSeq1Multiplier": "Penambahan Pengganda BATK SEQ 1",
-        "enhancedBatkSeq2Multiplier": "Penambahan Pengganda BATK SEQ 2",
-        "enhancedBatkSeq3Multiplier": "Penambahan Pengganda BATK SEQ 3",
-        "enhancedBatkSeq4Multiplier": "Penambahan Pengganda BATK SEQ 4"
-      },
       "name": "Twilight",
-      "description": "Laevatain akan memanggil Sviga Lævi dan menjadi operator terkontrol. \nSelama durasi tertentu, serangan dasarnya (BATK) akan diperkuat dan Sviga Lævi akan menyerang serentak bersama Laevatain. Setiap serangan akan menimbulkan <@ba.fire>Heat DMG</>. Tahap 3 BATK juga akan mengakibatkan <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Penggunaan skill tarungnya (Smouldering Fire) atau skill kombonya (Seethe) tidak akan mengurangi durasi ultimate-nya (Twilight).</>"
+      "description": "Laevatain akan memanggil Sviga Lævi dan menjadi operator terkontrol. \nSelama durasi tertentu, serangan dasarnya (BATK) akan diperkuat dan Sviga Lævi akan menyerang serentak bersama Laevatain. Setiap serangan akan menimbulkan <@ba.fire>Heat DMG</>. Tahap 3 BATK juga akan mengakibatkan <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Penggunaan skill tarungnya (Smouldering Fire) atau skill kombonya (Seethe) tidak akan mengurangi durasi ultimate-nya (Twilight).</>",
+      "durationS": "Durasi (dtk)",
+      "enhancedBatkSeq1Multiplier": "Penambahan Pengganda BATK SEQ 1",
+      "enhancedBatkSeq2Multiplier": "Penambahan Pengganda BATK SEQ 2",
+      "enhancedBatkSeq3Multiplier": "Penambahan Pengganda BATK SEQ 3",
+      "enhancedBatkSeq4Multiplier": "Penambahan Pengganda BATK SEQ 4"
     },
     "indicator": {
       "levels": [

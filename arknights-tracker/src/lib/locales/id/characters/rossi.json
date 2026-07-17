@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Seething Wolfblood",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger"
-      },
       "name": "Crimson Shadow",
-      "description": "Menerjang target sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.airborne>Lift</>.\nJika target sudah terkena tumpukan <#ba.noguard>Vulnerability</>, skill ini juga akan melepaskan <@ba.key>Bayangan Serigala</> yang akan menerjang target sehingga akan menimbulkan <@ba.fire>Heat DMG</>."
+      "description": "Menerjang target sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.airborne>Lift</>.\nJika target sudah terkena tumpukan <#ba.noguard>Vulnerability</>, skill ini juga akan melepaskan <@ba.key>Bayangan Serigala</> yang akan menerjang target sehingga akan menimbulkan <@ba.fire>Heat DMG</>.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1UltimateEnergyGain": "Perolehan Energi Ultimate SEQ 1",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "criticalRateBoost": "Critical Rate Boost",
-        "criticalDmgBoost": "Critical DMG Boost",
-        "buffDurationS": "Durasi Buff (dtk)",
-        "seq2UltimateEnergyGain": "Perolehan Energi Ultimate SEQ 2"
-      },
       "name": "Moment of Blazing Shadow",
-      "description": "PEMICU KOMBO: Saat musuh terkena tumpukan <#ba.noguard>Vulnerability</> dan <#ba.spellinflict>Arts Infliction</> sekaligus.\nSkill kombo Rossi punya 2 tahap berurutan. TAHAP KOMBO 1 akan menimbulkan <@ba.pd>Physical DMG</> kepada target.\nTAHAP KOMBO 2 akan <#ba.consume>memakai</> semua tumpukan <#ba.spellinflict>Arts Infliction</> dari target, menimbulkan <@ba.pd>Physical DMG</> berdasarkan jumlah tumpukan Arts Infliction yang <#ba.consume>dipakai</>, mengakibatkan 1 hantaman <#ba.airborne>Lift</>, dan akan memberikan buff untuk Critical Rate dan Critical DMG Dealt sekaligus untuk Rossi.\nJika TAHAP KOMBO 2 digunakan dengan <@ba.key>penentuan waktu yang tepat</>, tahap ini akan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> lagi."
+      "description": "PEMICU KOMBO: Saat musuh terkena tumpukan <#ba.noguard>Vulnerability</> dan <#ba.spellinflict>Arts Infliction</> sekaligus.\nSkill kombo Rossi punya 2 tahap berurutan. TAHAP KOMBO 1 akan menimbulkan <@ba.pd>Physical DMG</> kepada target.\nTAHAP KOMBO 2 akan <#ba.consume>memakai</> semua tumpukan <#ba.spellinflict>Arts Infliction</> dari target, menimbulkan <@ba.pd>Physical DMG</> berdasarkan jumlah tumpukan Arts Infliction yang <#ba.consume>dipakai</>, mengakibatkan 1 hantaman <#ba.airborne>Lift</>, dan akan memberikan buff untuk Critical Rate dan Critical DMG Dealt sekaligus untuk Rossi.\nJika TAHAP KOMBO 2 digunakan dengan <@ba.key>penentuan waktu yang tepat</>, tahap ini akan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> lagi.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1UltimateEnergyGain": "Perolehan Energi Ultimate SEQ 1",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "criticalRateBoost": "Critical Rate Boost",
+      "criticalDmgBoost": "Critical DMG Boost",
+      "buffDurationS": "Durasi Buff (dtk)",
+      "seq2UltimateEnergyGain": "Perolehan Energi Ultimate SEQ 2"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Pengganda DMG Total Serangan Tusuk",
-        "seq1SlashDmgMultiplier": "Pengganda DMG Tebasan SEQ 1",
-        "seq2SlashDmgMultiplier": "Pengganda DMG Tebasan SEQ 2",
-        "stagger": "Stagger",
-        "criticalDmgBoost": "Critical DMG Boost"
-      },
       "name": "“Razorclaw” Ambuscade",
-      "description": "Rossi akan mengibaskan jubahnya dan melepaskan rentetan tusukan yang akan menimbulkan beberapa tahap <@ba.fire>Heat DMG</> dengan cepat kepada target. Kemudian, dia akan melancarkan serangan tebas dua tahap dengan belatinya dan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan mengakibatkan <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Jika menghasilkan critical hit, skill ini akan menimbulkan Critical DMG lebih besar.</>"
+      "description": "Rossi akan mengibaskan jubahnya dan melepaskan rentetan tusukan yang akan menimbulkan beberapa tahap <@ba.fire>Heat DMG</> dengan cepat kepada target. Kemudian, dia akan melancarkan serangan tebas dua tahap dengan belatinya dan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan mengakibatkan <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Jika menghasilkan critical hit, skill ini akan menimbulkan Critical DMG lebih besar.</>",
+      "stabAttackTotalDmgMultiplier": "Pengganda DMG Total Serangan Tusuk",
+      "seq1SlashDmgMultiplier": "Pengganda DMG Tebasan SEQ 1",
+      "seq2SlashDmgMultiplier": "Pengganda DMG Tebasan SEQ 2",
+      "stagger": "Stagger",
+      "criticalDmgBoost": "Critical DMG Boost"
     },
     "indicator": {
       "levels": [

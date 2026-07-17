@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Abkühlung",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "Grundbehandlung",
-        "treatmentIncreasePerWill": "Behandlungssteigerung pro Wille",
-        "auxiliaryCrystalDurationS": "Dauer: Hilfskristall (Sek.)",
-        "artsAmp": "Technik-Verstärkung",
-        "artsAmpDurationS": "Dauer: Technik-Verstärkung (Sek.)"
-      },
       "name": "Distributed DoS",
-      "description": "Beschwört einen <@ba.key>Hilfskristall</>, der eine Weile beim gesteuerten Operator bleibt. \nWenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> gegen den Gegner ausgeführt hat, stellt der <@ba.key>Hilfskristall</> die LP dieses Operators wieder her. Dieser Effekt kann 2 Mal ausgelöst werden. Die Wirksamkeit der LP-Behandlung erhöht sich mit dem Wille-Attribut. \nWenn der gesteuerte Operator bereits bei voller Gesundheit ist, wenn die LP-Behandlung ausgelöst wird, erhält dieser außerdem vorübergehend <#ba.spellenhance>Technik-Verstärkung</>. Dieser Effekt ist nicht kumulierbar."
+      "description": "Beschwört einen <@ba.key>Hilfskristall</>, der eine Weile beim gesteuerten Operator bleibt. \nWenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> gegen den Gegner ausgeführt hat, stellt der <@ba.key>Hilfskristall</> die LP dieses Operators wieder her. Dieser Effekt kann 2 Mal ausgelöst werden. Die Wirksamkeit der LP-Behandlung erhöht sich mit dem Wille-Attribut. \nWenn der gesteuerte Operator bereits bei voller Gesundheit ist, wenn die LP-Behandlung ausgelöst wird, erhält dieser außerdem vorübergehend <#ba.spellenhance>Technik-Verstärkung</>. Dieser Effekt ist nicht kumulierbar.",
+      "baseTreatment": "Grundbehandlung",
+      "treatmentIncreasePerWill": "Behandlungssteigerung pro Wille",
+      "auxiliaryCrystalDurationS": "Dauer: Hilfskristall (Sek.)",
+      "artsAmp": "Technik-Verstärkung",
+      "artsAmpDurationS": "Dauer: Technik-Verstärkung (Sek.)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Stresstest",
-      "description": "KOMBOAUSLÖSER: Der <@ba.key>Hilfskristall</> verbraucht seine LP-Behandlungen. \nLädt den <@ba.key>Hilfskristall</> schnell auf und wirft ihn auf den Gegner, um <@ba.cryst>Kryo-SDN</> und <#ba.crystinflict>Kryo</> zu verursachen."
+      "description": "KOMBOAUSLÖSER: Der <@ba.key>Hilfskristall</> verbraucht seine LP-Behandlungen. \nLädt den <@ba.key>Hilfskristall</> schnell auf und wirft ihn auf den Gegner, um <@ba.cryst>Kryo-SDN</> und <#ba.crystinflict>Kryo</> zu verursachen.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "Grund-Kryo-Verstärkung",
-        "baseNatureAmp": "Grund-Natur-Verstärkung",
-        "ampIncreasePerIntellect": "Verstärkungssteigerung pro Intellekt",
-        "intellectRaisesAmpLimit": "Intellekt erhöht Verstärkungs-Limit",
-        "durationS": "Dauer (Sek.)"
-      },
       "name": "Kumulierungs-\nüberschuss",
-      "description": "Das gesamte Team erhält vorübergehend <#ba.crystenhance>Kryo-Verstärkung</> und <#ba.naturalenhance>Natur-Verstärkung</>. Der Verstärker-Effekt erhöht sich mit dem Intellekt-Attribut."
+      "description": "Das gesamte Team erhält vorübergehend <#ba.crystenhance>Kryo-Verstärkung</> und <#ba.naturalenhance>Natur-Verstärkung</>. Der Verstärker-Effekt erhöht sich mit dem Intellekt-Attribut.",
+      "baseCryoAmp": "Grund-Kryo-Verstärkung",
+      "baseNatureAmp": "Grund-Natur-Verstärkung",
+      "ampIncreasePerIntellect": "Verstärkungssteigerung pro Intellekt",
+      "intellectRaisesAmpLimit": "Intellekt erhöht Verstärkungs-Limit",
+      "durationS": "Dauer (Sek.)"
     },
     "indicator": {
       "levels": [

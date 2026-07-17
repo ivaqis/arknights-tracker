@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Exuberant Trigger",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Base DMG Multiplier",
-        "dmgMultiplierOfSolidificationApplied": "DMG Multiplier of Solidification Applied",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
-        "stagger": "Stagger",
-        "ultimateEnergyFromSolidificationApplied": "Ultimate Energy from Solidification Applied",
-        "additionalUltimateEnergyGainPerInflictionStack": "Additional Ultimate Energy Gain per Infliction Stack"
-      },
       "name": "Brr-Brr-Bomb β",
-      "description": "Throws a freezing bomb. The bomb explodes when it hits the enemy to deal <@ba.cryst>Cryo DMG</>. If hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.naturalinflict>Nature Infliction</>, then <#ba.consume>consume</> all <#ba.spellinflict>Arts Infliction</> stacks, forcibly apply <#ba.frozen>Solidification</>, and deal <@ba.cryst>Cryo DMG</> to the target based on the number of stacks <#ba.consume>consumed</>.\nAfter the battle skill successfully applies <#ba.frozen>Solidification</>, Yvonne gains additional Ultimate Energy based on the number of stacks <#ba.consume>consumed</>. This Ultimate Energy Gain effect can only trigger 1 time, even if the skill hits multiple enemies."
+      "description": "Throws a freezing bomb. The bomb explodes when it hits the enemy to deal <@ba.cryst>Cryo DMG</>. If hitting an enemy with <#ba.crystinflict>Cryo Infliction</> or <#ba.naturalinflict>Nature Infliction</>, then <#ba.consume>consume</> all <#ba.spellinflict>Arts Infliction</> stacks, forcibly apply <#ba.frozen>Solidification</>, and deal <@ba.cryst>Cryo DMG</> to the target based on the number of stacks <#ba.consume>consumed</>.\nAfter the battle skill successfully applies <#ba.frozen>Solidification</>, Yvonne gains additional Ultimate Energy based on the number of stacks <#ba.consume>consumed</>. This Ultimate Energy Gain effect can only trigger 1 time, even if the skill hits multiple enemies.",
+      "baseDmgMultiplier": "Base DMG Multiplier",
+      "dmgMultiplierOfSolidificationApplied": "DMG Multiplier of Solidification Applied",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
+      "stagger": "Stagger",
+      "ultimateEnergyFromSolidificationApplied": "Ultimate Energy from Solidification Applied",
+      "additionalUltimateEnergyGainPerInflictionStack": "Additional Ultimate Energy Gain per Infliction Stack"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Duration (s)",
-        "numberOfEnergyReleases": "Number of Energy Releases",
-        "energyDmgMultiplier": "Energy DMG Multiplier",
-        "explosionDmgMultiplier": "Explosion DMG Multiplier",
-        "explosionStagger": "Explosion Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain",
-        "additionalUltimateEnergyGain": "Additional Ultimate Energy Gain"
-      },
       "name": "Flashfreezer υ37",
-      "description": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.frozen>Solidification</>.\nImmediately deploys Frost-e-Bytee next to the enemy. While active, Frost-e-Bytee constantly releases energy to attack nearby enemies, deals <@ba.cryst>Cryo DMG</> to them, and <@ba.key>pulls</> them towards itself. After Frost-e-Bytee expires, it explodes to forcibly apply <#ba.frozen>Solidification</> and deal <@ba.cryst>Cryo DMG</> to nearby enemies.\nAfter the combo skill successfully hits the enemy, Yvonne gains additional Ultimate Energy. This Ultimate Energy Gain effect can only trigger 1 time, even if the skill hits multiple enemies."
+      "description": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.frozen>Solidification</>.\nImmediately deploys Frost-e-Bytee next to the enemy. While active, Frost-e-Bytee constantly releases energy to attack nearby enemies, deals <@ba.cryst>Cryo DMG</> to them, and <@ba.key>pulls</> them towards itself. After Frost-e-Bytee expires, it explodes to forcibly apply <#ba.frozen>Solidification</> and deal <@ba.cryst>Cryo DMG</> to nearby enemies.\nAfter the combo skill successfully hits the enemy, Yvonne gains additional Ultimate Energy. This Ultimate Energy Gain effect can only trigger 1 time, even if the skill hits multiple enemies.",
+      "durationS": "Duration (s)",
+      "numberOfEnergyReleases": "Number of Energy Releases",
+      "energyDmgMultiplier": "Energy DMG Multiplier",
+      "explosionDmgMultiplier": "Explosion DMG Multiplier",
+      "explosionStagger": "Explosion Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain",
+      "additionalUltimateEnergyGain": "Additional Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duration (s)",
-        "batkDmgMultiplier": "BATK DMG Multiplier",
-        "enhancedFinalStrikeDmgMultiplier": "Enhanced Final Strike DMG Multiplier",
-        "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
-        "enhancedFinalStrikeStagger": "Enhanced Final Strike Stagger",
-        "maxStacks": "Max Stacks",
-        "criticalRateBoostPerStack": "Critical Rate Boost per Stack",
-        "criticalDmgBoostAtMaxStacks": "Critical DMG Boost at Max Stacks"
-      },
       "name": "Cryoblasting Pistolier",
-      "description": "Immediately deploys the support bot Tink-a-Bella and makes Yvonne the controlled operator.\nTemporarily <@ba.key>enhances</> Yvonne's basic attack (BATK). Each enhanced BATK sequence performed grants a stack of Critical Rate buff. After reaching max stacks, Yvonne also gains a Critical DMG buff. When the skill is about to end, Yvonne's last enhanced BATK becomes an enhanced <#ba.lastcombo>Final Strike</> that deals massive <@ba.cryst>Cryo DMG</>.\nIf the enemy is <#ba.frozen>Solidified</>, Yvonne performs an additional attack that deals <@ba.cryst>Cryo DMG</> and then <#ba.consume>consumes</> the enemy's <#ba.frozen>Solidification</>."
+      "description": "Immediately deploys the support bot Tink-a-Bella and makes Yvonne the controlled operator.\nTemporarily <@ba.key>enhances</> Yvonne's basic attack (BATK). Each enhanced BATK sequence performed grants a stack of Critical Rate buff. After reaching max stacks, Yvonne also gains a Critical DMG buff. When the skill is about to end, Yvonne's last enhanced BATK becomes an enhanced <#ba.lastcombo>Final Strike</> that deals massive <@ba.cryst>Cryo DMG</>.\nIf the enemy is <#ba.frozen>Solidified</>, Yvonne performs an additional attack that deals <@ba.cryst>Cryo DMG</> and then <#ba.consume>consumes</> the enemy's <#ba.frozen>Solidification</>.",
+      "durationS": "Duration (s)",
+      "batkDmgMultiplier": "BATK DMG Multiplier",
+      "enhancedFinalStrikeDmgMultiplier": "Enhanced Final Strike DMG Multiplier",
+      "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
+      "enhancedFinalStrikeStagger": "Enhanced Final Strike Stagger",
+      "maxStacks": "Max Stacks",
+      "criticalRateBoostPerStack": "Critical Rate Boost per Stack",
+      "criticalDmgBoostAtMaxStacks": "Critical DMG Boost at Max Stacks"
     },
     "indicator": {
       "levels": [

@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Phá Không Kích",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "liftDurationS": "Thời Gian Hiệu Lực Hất Tung (giây)"
-      },
       "name": "Thăng Long Kích",
-      "description": "Thi triển một nhát chém ngược lên mục tiêu, gây <@ba.pd>ST Vật Lý</> và <#ba.airborne>Hất Tung</>."
+      "description": "Thi triển một nhát chém ngược lên mục tiêu, gây <@ba.pd>ST Vật Lý</> và <#ba.airborne>Hất Tung</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "liftDurationS": "Thời Gian Hiệu Lực Hất Tung (giây)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Bay Vút Tới Tinh Đồ",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch phải chịu <#ba.noguard>Yếu Đuối</>. \nMột cú lướt chém qua kẻ địch, gây <@ba.pd>ST Vật Lý</> và <#ba.airborne>Hất Tung</> tất cả kẻ địch trên đường đi."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch phải chịu <#ba.noguard>Yếu Đuối</>. \nMột cú lướt chém qua kẻ địch, gây <@ba.pd>ST Vật Lý</> và <#ba.airborne>Hất Tung</> tất cả kẻ địch trên đường đi.",
+      "dmgMultiplier": "Hệ Số ST",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Hệ Số Nhân Đòn Chém",
-        "firstStrikeStagger": "Suy Sụp Do Đòn Phủ Đầu",
-        "finalStrikeDmgMultiplier": "Hệ Số ST Đòn Dứt Điểm",
-        "finalStrikeStagger": "Suy Sụp Do Đòn Dứt Điểm"
-      },
       "name": "Cuồng Phong Đao Vũ",
-      "description": "Một chuỗi 7 đòn chém liên hoàn, mỗi đòn gây <@ba.pd>ST Vật Lý</>. Đòn chém cuối cùng trong chuỗi gây thêm ST."
+      "description": "Một chuỗi 7 đòn chém liên hoàn, mỗi đòn gây <@ba.pd>ST Vật Lý</>. Đòn chém cuối cùng trong chuỗi gây thêm ST.",
+      "slashMultiplier": "Hệ Số Nhân Đòn Chém",
+      "firstStrikeStagger": "Suy Sụp Do Đòn Phủ Đầu",
+      "finalStrikeDmgMultiplier": "Hệ Số ST Đòn Dứt Điểm",
+      "finalStrikeStagger": "Suy Sụp Do Đòn Dứt Điểm"
     },
     "indicator": {
       "levels": [

@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Protokoll α: Durchbruch",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Protokoll ω: Schlag",
-      "description": "Entfesselt einen Blitz aus elektromagnetischer Energie, der Gegnern in einem kleinen Bereich <@ba.pulse>Elektrischen SDN</> zufügt und sie mit <#ba.pulseinflict>Elektrik</> belegt."
+      "description": "Entfesselt einen Blitz aus elektromagnetischer Energie, der Gegnern in einem kleinen Bereich <@ba.pulse>Elektrischen SDN</> zufügt und sie mit <#ba.pulseinflict>Elektrik</> belegt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "electrifyDurationS": "Dauer: Elektrifizieren (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Sofortprotokoll: Kette",
-      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen beliebigen Gegner ausführt. \nEntfesselt gespeicherte elektromagnetische Energie, um das Ziel zu bombardieren, <@ba.pulse>Elektrischen SDN</> zu verursachen und es vorübergehend mit <#ba.conduct>Elektrifizierung</> zu belegen."
+      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen beliebigen Gegner ausführt. \nEntfesselt gespeicherte elektromagnetische Energie, um das Ziel zu bombardieren, <@ba.pulse>Elektrischen SDN</> zu verursachen und es vorübergehend mit <#ba.conduct>Elektrifizierung</> zu belegen.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "electrifyDurationS": "Dauer: Elektrifizieren (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Protokoll ε: 70,41 Tsd.",
-      "description": "Tele-protokolliert ein massives Stück Weltraumschrott auf das Zielgebiet, was einen verheerenden Aufschlag auslöst. Alle Gegner im Wirkungsbereich erleiden massiven <@ba.pulse>Elektrischen SDN</>."
+      "description": "Tele-protokolliert ein massives Stück Weltraumschrott auf das Zielgebiet, was einen verheerenden Aufschlag auslöst. Alle Gegner im Wirkungsbereich erleiden massiven <@ba.pulse>Elektrischen SDN</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

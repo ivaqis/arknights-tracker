@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Protocol α: Breach",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Protocol ω: Strike",
-      "description": "Melepaskan kilatan energi elektromagnetis yang akan menimbulkan <@ba.pulse>Electric DMG</> dan <#ba.pulseinflict>Electric Infliction</> kepada musuh dalam area kecil."
+      "description": "Melepaskan kilatan energi elektromagnetis yang akan menimbulkan <@ba.pulse>Electric DMG</> dan <#ba.pulseinflict>Electric Infliction</> kepada musuh dalam area kecil.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "electrifyDurationS": "Durasi Electrify (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Instant Protocol: Chain",
-      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh mana pun. \nMelepaskan energi elektromagnetis yang tersimpan untuk membombardir target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa untuk sementara."
+      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh mana pun. \nMelepaskan energi elektromagnetis yang tersimpan untuk membombardir target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan <#ba.conduct>Electrification</> secara paksa untuk sementara.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "electrifyDurationS": "Durasi Electrify (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Protocol ε: 70.41K",
-      "description": "Melontarkan pecahan orbit sangat besar dengan daya hancur luar biasa melalui teleprotokol ke medan pertarungan. Semua musuh yang berada dalam area efek akan terkena <@ba.pulse>Electric DMG</> sangat besar."
+      "description": "Melontarkan pecahan orbit sangat besar dengan daya hancur luar biasa melalui teleprotokol ke medan pertarungan. Semua musuh yang berada dalam area efek akan terkena <@ba.pulse>Electric DMG</> sangat besar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

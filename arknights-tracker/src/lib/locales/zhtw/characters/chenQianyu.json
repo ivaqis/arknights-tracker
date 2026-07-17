@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "破飛霞",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "liftDurationS": "浮空時間（秒）"
-      },
       "name": "歸穹宇",
-      "description": "對目標敵人進行上挑攻擊，造成<@ba.pd>物理傷害</>和<#ba.airborne>擊飛</>。"
+      "description": "對目標敵人進行上挑攻擊，造成<@ba.pd>物理傷害</>和<#ba.airborne>擊飛</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "liftDurationS": "浮空時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "見天河",
-      "description": "當有敵人進入<#ba.noguard>破防</>狀態時可以發動。\n進行穿梭斬擊，對路徑上的所有敵人造成<@ba.pd>物理傷害</>和<#ba.airborne>擊飛</>。"
+      "description": "當有敵人進入<#ba.noguard>破防</>狀態時可以發動。\n進行穿梭斬擊，對路徑上的所有敵人造成<@ba.pd>物理傷害</>和<#ba.airborne>擊飛</>。",
+      "dmgMultiplier": "傷害倍率",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "斬擊傷害倍率",
-        "firstStrikeStagger": "第一擊失衡值",
-        "finalStrikeDmgMultiplier": "終結一擊傷害倍率",
-        "finalStrikeStagger": "終結一擊失衡值"
-      },
       "name": "冽風霜",
-      "description": "對目標敵人進行7段斬擊，每次造成<@ba.pd>物理傷害</>。最後一段斬擊造成的傷害更高。"
+      "description": "對目標敵人進行7段斬擊，每次造成<@ba.pd>物理傷害</>。最後一段斬擊造成的傷害更高。",
+      "slashMultiplier": "斬擊傷害倍率",
+      "firstStrikeStagger": "第一擊失衡值",
+      "finalStrikeDmgMultiplier": "終結一擊傷害倍率",
+      "finalStrikeStagger": "終結一擊失衡值"
     },
     "indicator": {
       "levels": [

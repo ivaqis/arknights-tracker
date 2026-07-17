@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "乱切り！",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "liftDurationS": "浮遊時間（秒）"
-      },
       "name": "鍋振り！",
-      "description": "鍋を取り出して短時間チャージすると、鍋を振り上げて攻撃する。敵に<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。"
+      "description": "鍋を取り出して短時間チャージすると、鍋を振り上げて攻撃する。敵に<@ba.pd>物理ダメージ</>と<#ba.airborne>浮遊</>効果を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "liftDurationS": "浮遊時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "crushDmgBonus": "猛撃ダメージ追加UP",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "調味料！",
-      "description": "敵の<#ba.noguard>クラッシュ</>段階が4になったときに発動可能。\n鍋を振り回して敵に高い<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。この<#ba.crush>猛撃</>のダメージは追加でアップする。"
+      "description": "敵の<#ba.noguard>クラッシュ</>段階が4になったときに発動可能。\n鍋を振り回して敵に高い<@ba.pd>物理ダメージ</>と<#ba.crush>猛撃</>を与える。この<#ba.crush>猛撃</>のダメージは追加でアップする。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "crushDmgBonus": "猛撃ダメージ追加UP",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "空中斬撃ダメージ倍率",
-        "ultimateDmgMultiplier": "必殺技ダメージ倍率"
-      },
       "name": "具材投入！",
-      "description": "まな板を強く叩き、前方範囲内の敵に強制的に<#ba.airborne>浮遊</>させる。その後、6段の連続斬撃を放ち、敵に<@ba.pd>物理ダメージ</>を与える。最後にすべての敵を叩き落とし、強制的に<#ba.knockdown>転倒</>させ、高い<@ba.pd>物理ダメージ</>を与える。"
+      "description": "まな板を強く叩き、前方範囲内の敵に強制的に<#ba.airborne>浮遊</>させる。その後、6段の連続斬撃を放ち、敵に<@ba.pd>物理ダメージ</>を与える。最後にすべての敵を叩き落とし、強制的に<#ba.knockdown>転倒</>させ、高い<@ba.pd>物理ダメージ</>を与える。",
+      "aerialFlurryDmgMultiplier": "空中斬撃ダメージ倍率",
+      "ultimateDmgMultiplier": "必殺技ダメージ倍率"
     },
     "indicator": {
       "levels": [

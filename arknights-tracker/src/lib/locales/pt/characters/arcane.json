@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Interdição de Artilharia",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.natur>DNO Natureza</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.natur>DNO Natureza</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.natur>DNO Natureza</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientar"
-      },
       "name": "Grade Esmagadora de Jade",
-      "description": "Cria uma <@ba.key>Grade Esmagadora de Jade</> que causa <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito."
+      "description": {
+        "main": "Cria uma <@ba.key>Grade Esmagadora de Jade</> que causa <@ba.natur>DNO Natureza</> e aplica <#ba.naturalinflict>Inflição da Natureza</> aos inimigos na área de efeito.",
+        "conditionName1": "Conjunto Arcane: INT",
+        "conditionDesc1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> está ATIVO.*/",
+        "conditionPostDesc1": "<@ba.key>Conjunto Arcane: INT</>:\n- Causa mais DNO.",
+        "conditionDescInactive1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) < Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> NÃO está ATIVO.*/",
+        "conditionName2": "Conjunto Arcane: VON",
+        "conditionDesc2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) > Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> está ATIVO.*/",
+        "conditionPostDesc2": "<@ba.key>Conjunto Arcane: VON</>:\n- Ao causar DNO, o conjunto também <@ba.key>atrai</> inimigos na área de efeito.",
+        "conditionDescInactive2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) ≤ Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> NÃO está ATIVO.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "Multiplicador DNO"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "Multiplicador DNO"
+      },
+      "stagger": "Desorientar"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Multiplicador DNO Base",
-        "baseStagger": "Desorientação Base",
+      "name": "Postura Yinglung IV",
+      "description": {
+        "conditionName1": "Conjunto Arcane: INT",
+        "conditionDesc1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> está ATIVO.*/",
+        "conditionPostDesc1": "ACIONADOR DO COMBO: Quando <#ba.naturalinflict>Inflição da Natureza</> ou pelo menos 2 acúmulos de <#ba.spellinflict>Inflição de Artes do tipo não Natureza</> são aplicados ao inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que aplicam <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causam <@ba.natur>DNO Natureza</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalidade que deixa todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: INT</>:\n- Atingir um inimigo sob <@ba.key>Aprisionamento</> com a habilidade de batalha de Arcane <#ba.return>devolve</> PH, encerra o <@ba.key>Aprisionamento</> mais cedo, causa DNO Explosão, aplica outra instância de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> e causa vários acertos de DNO de bônus após um curto atraso.\n- O tempo de recarga do Combo de Habilidades é menor.",
+        "conditionDescInactive1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) < Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> NÃO está ATIVO.*/",
+        "conditionName2": "Conjunto Arcane: VON",
+        "conditionDesc2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) > Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> está ATIVO.*/",
+        "conditionPostDesc2": "ACIONADOR DO COMBO: Quando uma <#ba.spellinflict>Inflição de Artes</> é aplicada a um inimigo.\nArcane ataca o alvo e prepara 4 <@ba.key>Dublês Táticos</> que causam <@ba.natur>DNO Natureza</> e aplicam outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento, <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> ao alvo e aos inimigos próximos. Além disso, aplica <@ba.key>Aprisionamento</> ao alvo em questão. Quando o <@ba.key>Aprisionamento</> terminar, os <@ba.key>Dublês Táticos</> atacarão o alvo em questão para causar DNO Explosão.\n<@ba.key>Aprisionamento</>: uma penalização que torna todas as ações mais lentas.\n<@ba.key>Conjunto Arcane: VON</>:\n- Aplicar <@ba.key>Aprisionamento</> via conjuração de um combo de habilidades também irá <@ba.key>atrair</> inimigos próximo ao alvo.\n- O atributo de Vontade pode aumentar ainda mais os efeitos de <#ba.naturalvul>Suscetibilidade à Natureza</> e <#ba.crystvul>Suscetibilidade Crio</> aplicados pelo combo de habilidades.",
+        "conditionDescInactive2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) ≤ Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> NÃO está ATIVO.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Duração do Aprisionamento e da Suscetibilidade (s)",
         "susceptibility": "Suscetibilidade",
-        "baseSusceptibility": "Suscetibilidade Base",
-        "maxBonusSusceptibilityFromWill": "Suscetibilidade de Bônus Máxima por Vontade",
-        "willRequiredForMaxBonusSusceptibility": "Vontade Necessária para Suscetibilidade de Bônus Máxima",
-        "explosionDmgMultiplier": "Multiplicador DNO Explosão",
-        "explosionStagger": "Desorientação por Explosão",
         "bonusDmgMultiplier": "Multiplicador DNO Bônus",
         "bonusSusceptibilityDurationS": "Duração da Suscetibilidade de Bônus (s)",
-        "spReturn": "Devolução de PH",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
+        "spReturn": "Devolução de PH"
       },
-      "name": "Postura Yinglung IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Duração do Aprisionamento e da Suscetibilidade (s)",
+        "baseSusceptibility": "Suscetibilidade Base",
+        "maxBonusSusceptibilityFromWill": "Suscetibilidade de Bônus Máxima por Vontade",
+        "willRequiredForMaxBonusSusceptibility": "Vontade Necessária para Suscetibilidade de Bônus Máxima"
+      },
+      "baseDmgMultiplier": "Multiplicador DNO Base",
+      "baseStagger": "Desorientação Base",
+      "explosionDmgMultiplier": "Multiplicador DNO Explosão",
+      "explosionStagger": "Desorientação por Explosão",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Multiplicador DNO Criação do Conjunto Expurgador da Melancolia",
-        "gloompurgerArrayCreationStagger": "Desorientação Criação do Conjunto Expurgador da Melancolia",
-        "gloompurgerArrayDurationS": "Duração do Conjunto Expurgador da Melancolia (s)",
+      "name": "Expurgo da Melancolia",
+      "description": {
+        "main": "Arcane cria um <@ba.key>Conjunto Expurgador da Melancolia</> que causa <@ba.natur>DNO Natureza</> imediatamente aos inimigos na área de efeito (ADE).\nAo atingir um inimigo dentro do <@ba.key>Conjunto Expurgador da Melancolia</> com um Finalizador ou <#ba.lastcombo>Golpe Final</> realizado pelo operador controlado, o <@ba.key>Conjunto Expurgador da Melancolia</> libera um <@ba.key>Ataque em Área</> que causa DNO em Área ao inimigo em questão. Esse efeito pode ser acionado até 2 vezes.\nApós acionar <@ba.key>Ataque em Área</> 2 vezes, a habilidade suprema é alternada para <@ba.key>Expurgo da Melancolia Arcane</>.\n<@ba.key>Expurgo da Melancolia Arcane</>: causa <@ba.natur>DNO Natureza</> a inimigos em uma grande ADE.",
+        "conditionName1": "Conjunto Arcane: INT",
+        "conditionDesc1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> está ATIVO.*/",
+        "conditionPostDesc1": "<@ba.key>Conjunto Arcane: INT</>:\n- Quando criado, o <@ba.key>Conjunto Expurgador da Melancolia</> também aplica <#ba.corrupt>Corrosão</> à força aos inimigos na ADE.",
+        "conditionDescInactive1": "/*Inteligência (<@ba.vup>{floor:deck_wisd:0}</>) < Vontade (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Conjunto Arcane: INT</> NÃO está ATIVO.*/",
+        "conditionName2": "Conjunto Arcane: VON",
+        "conditionDesc2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) > Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> está ATIVO.*/",
+        "conditionPostDesc2": "<@ba.key>Conjunto Arcane: VON</>:\n- Quando criado, o <@ba.key>Conjunto Expurgador da Melancolia</> também tem como alvo inimigos com <#ba.spellinflict>Inflição de Artes</> em sua ADE e aplica outro acúmulo de <#ba.spellinflict>Inflição de Artes</> do mesmo elemento a esses inimigos.",
+        "conditionDescInactive2": "/*Vontade (<@ba.vup>{floor:deck_will:0}</>) ≤ Inteligência (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Conjunto Arcane: VON</> NÃO está ATIVO.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Duração da Corrosão Forçada (s)",
         "clusterStrikeTotalDmgMultiplier": "Multiplicador DNO Total de Ataque em Área",
-        "gloompurgeArcanaDmgMultiplier": "Multiplicador DNO Expurgo da Melancolia Arcane",
-        "gloompurgeArcanaStagger": "Desorientação Expurgo da Melancolia Arcane"
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador DNO Expurgo da Melancolia Arcane"
       },
-      "name": "Expurgo da Melancolia",
-      "description": "Arcane cria um <@ba.key>Conjunto Expurgador da Melancolia</> que causa <@ba.natur>DNO Natureza</> imediatamente aos inimigos na área de efeito (ADE).\nAo atingir um inimigo dentro do <@ba.key>Conjunto Expurgador da Melancolia</> com um Finalizador ou <#ba.lastcombo>Golpe Final</> realizado pelo operador controlado, o <@ba.key>Conjunto Expurgador da Melancolia</> libera um <@ba.key>Ataque em Área</> que causa DNO em Área ao inimigo em questão. Esse efeito pode ser acionado até 2 vezes.\nApós acionar <@ba.key>Ataque em Área</> 2 vezes, a habilidade suprema é alternada para <@ba.key>Expurgo da Melancolia Arcane</>.\n<@ba.key>Expurgo da Melancolia Arcane</>: causa <@ba.natur>DNO Natureza</> a inimigos em uma grande ADE."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicador DNO Total de Ataque em Área",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador DNO Expurgo da Melancolia Arcane"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Multiplicador DNO Criação do Conjunto Expurgador da Melancolia",
+      "gloompurgerArrayCreationStagger": "Desorientação Criação do Conjunto Expurgador da Melancolia",
+      "gloompurgerArrayDurationS": "Duração do Conjunto Expurgador da Melancolia (s)",
+      "gloompurgeArcanaStagger": "Desorientação Expurgo da Melancolia Arcane"
     },
     "indicator": {
       "levels": [

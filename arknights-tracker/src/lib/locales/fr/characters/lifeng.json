@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Dévastation",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
-        "seq3Stagger": "Déséquilibre de SÉQ 3",
-        "physicalSusceptibility": "Sensibilité physique",
-        "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)"
-      },
       "name": "Avatar trouble",
-      "description": "Frappe plusieurs fois avec l'arme d'hast pour infliger 2 fois des <@ba.pd>DÉG physiques</>, puis frappe le sol pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.knockdown>Renversement</> à tous les ennemis dans la zone d'effet. \nSi l'ennemi touché par la dernière frappe de sa compétence n'a pas de cumul de <#ba.noguard>Vulnérabilité</>, applique également une <#ba.physicalvul>sensibilité physique</> à cet ennemi."
+      "description": "Frappe plusieurs fois avec l'arme d'hast pour infliger 2 fois des <@ba.pd>DÉG physiques</>, puis frappe le sol pour infliger des <@ba.pd>DÉG physiques</> et appliquer un <#ba.knockdown>Renversement</> à tous les ennemis dans la zone d'effet. \nSi l'ennemi touché par la dernière frappe de sa compétence n'a pas de cumul de <#ba.noguard>Vulnérabilité</>, applique également une <#ba.physicalvul>sensibilité physique</> à cet ennemi.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
+      "seq3Stagger": "Déséquilibre de SÉQ 3",
+      "physicalSusceptibility": "Sensibilité physique",
+      "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "comboDurationS": "Durée de combo (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Forme de fureur",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi victime de <#ba.physicalvul>sensibilité physique</> ou de l'effet de <#ba.fracture>Brèche</>. \nInvoque une forme qui projette une lance infligeant des <@ba.pd>DÉG physiques</> et octroie un <#ba.combo>Lien</>."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi victime de <#ba.physicalvul>sensibilité physique</> ou de l'effet de <#ba.fracture>Brèche</>. \nInvoque une forme qui projette une lance infligeant des <@ba.pd>DÉG physiques</> et octroie un <#ba.combo>Lien</>.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "comboDurationS": "Durée de combo (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
-        "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire"
-      },
       "name": "Cœur inébranlable",
-      "description": "Invoque une forme qui lance une frappe Vajra immuable. Cette frappe inflige des <@ba.pd>DÉG physiques</> et applique <#ba.knockdown>Renversement</> à tous les ennemis dans une large zone d'effet, puis attire les ennemis vers le centre de cette zone. Au bout d'un moment, la frappe s'abat une nouvelle fois pour infliger de lourds <@ba.pd>DÉG physiques</> et appliquer un nouveau <#ba.knockdown>Renversement</> aux ennemis présents dans cette zone.\nSi la compétence <#ba.consume>consomme</> un <#ba.combo>Lien</>, la frappe s'abat encore une fois pour infliger de lourds <@ba.pd>DÉG physiques</>."
+      "description": "Invoque une forme qui lance une frappe Vajra immuable. Cette frappe inflige des <@ba.pd>DÉG physiques</> et applique <#ba.knockdown>Renversement</> à tous les ennemis dans une large zone d'effet, puis attire les ennemis vers le centre de cette zone. Au bout d'un moment, la frappe s'abat une nouvelle fois pour infliger de lourds <@ba.pd>DÉG physiques</> et appliquer un nouveau <#ba.knockdown>Renversement</> aux ennemis présents dans cette zone.\nSi la compétence <#ba.consume>consomme</> un <#ba.combo>Lien</>, la frappe s'abat encore une fois pour infliger de lourds <@ba.pd>DÉG physiques</>.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
+      "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire"
     },
     "indicator": {
       "levels": [

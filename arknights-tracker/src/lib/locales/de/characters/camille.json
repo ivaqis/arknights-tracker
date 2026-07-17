@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Blutabsolution",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.fire>Hitze-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.fire>Hitze-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.fire>Hitze-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.fire>Hitze-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.fire>Hitze-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "firefangVesperwingsDurationS": "Dauer der Feuerzahn-Vesperflügel (Sek.)",
-        "weaknessEffect": "Schwäche-Effekt",
-        "heatSusceptibility": "Hitze-Empfänglichkeit",
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator"
-      },
       "name": "Flammender Exorzismus",
-      "description": "Camille beschwört <@ba.key>Feuerzahn-Vesperflügel</>, die auf den Gegner zufliegen, um diesem <@ba.fire>Hitze-SDN</> zuzufügen und Gegner innerhalb eines kleinen Wirkungsbereichs mit <#ba.fireinflict>Hitze</> zu belegen. Anschließend <@ba.key>schweben</> die <@ba.key>Feuerzahn-Vesperflügel</> vorübergehend um das Ziel und belegen es für die Dauer ihres Schwebens mit <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>. Wird das Ziel besiegt, fliegen die <@ba.key>Feuerzahn-Vesperflügel</> zu einem anderen Gegner in der Nähe, fügen diesem <@ba.fire>Hitze-SDN</> zu und belegen ihr neues Ziel mit <#ba.fireinflict>Hitze</>, <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>.\nWird ein Gegner mit <@ba.key>schwebenden</> <@ba.key>Feuerzahn-Vesperflügeln</> von Camilles Kombofertigkeit getroffen, wird nach einer kurzen Verzögerung eine Explosion ausgelöst. Diese Explosion verursacht zusätzlichen <@ba.fire>Hitze-SDN</>."
+      "description": "Camille beschwört <@ba.key>Feuerzahn-Vesperflügel</>, die auf den Gegner zufliegen, um diesem <@ba.fire>Hitze-SDN</> zuzufügen und Gegner innerhalb eines kleinen Wirkungsbereichs mit <#ba.fireinflict>Hitze</> zu belegen. Anschließend <@ba.key>schweben</> die <@ba.key>Feuerzahn-Vesperflügel</> vorübergehend um das Ziel und belegen es für die Dauer ihres Schwebens mit <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>. Wird das Ziel besiegt, fliegen die <@ba.key>Feuerzahn-Vesperflügel</> zu einem anderen Gegner in der Nähe, fügen diesem <@ba.fire>Hitze-SDN</> zu und belegen ihr neues Ziel mit <#ba.fireinflict>Hitze</>, <#ba.weak>Schwäche</> und <#ba.firevul>Hitze-Empfänglichkeit</>.\nWird ein Gegner mit <@ba.key>schwebenden</> <@ba.key>Feuerzahn-Vesperflügeln</> von Camilles Kombofertigkeit getroffen, wird nach einer kurzen Verzögerung eine Explosion ausgelöst. Diese Explosion verursacht zusätzlichen <@ba.fire>Hitze-SDN</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "firefangVesperwingsDurationS": "Dauer der Feuerzahn-Vesperflügel (Sek.)",
+      "weaknessEffect": "Schwäche-Effekt",
+      "heatSusceptibility": "Hitze-Empfänglichkeit",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "spRecovery": "FP-Wiederherstellung",
-        "hunterPursuitDmgMultiplier": "Jägerverfolgungs-SDN-Multiplikator",
-        "hunterPursuitStagger": "Jägerverfolgungs-Taumeln",
-        "hunterPursuitSpRecovery": "Jägerverfolgungs-FP-Wiederherstellung",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Herzpfähler",
-      "description": "KOMBOAUSLÖSER: Wenn die <#ba.fireinflict>Hitzekumulierung</> eines Gegners <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wird.\nSprintet nach vorn und wieder zurück, verursacht <@ba.fire>Hitze-SDN</> und stellt einige FP wieder her."
+      "description": "KOMBOAUSLÖSER: Wenn die <#ba.fireinflict>Hitzekumulierung</> eines Gegners <#ba.consume>verbraucht</> oder <#ba.absorb>absorbiert</> wird.\nSprintet nach vorn und wieder zurück, verursacht <@ba.fire>Hitze-SDN</> und stellt einige FP wieder her.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "spRecovery": "FP-Wiederherstellung",
+      "hunterPursuitDmgMultiplier": "Jägerverfolgungs-SDN-Multiplikator",
+      "hunterPursuitStagger": "Jägerverfolgungs-Taumeln",
+      "hunterPursuitSpRecovery": "Jägerverfolgungs-FP-Wiederherstellung",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "spRecovery": "FP-Wiederherstellung",
-        "hunterPursuitStateDurationS": "Jägerverfolgungs-Dauer (Sek.)"
-      },
       "name": "Blutregenguss",
-      "description": "Camille fliegt hoch in den Himmel und lässt Speere auf seine Gegner herabregnen, ehe er einen Sturzangriff ausführt. Dieser fügt Zielen <@ba.fire>Hitze-SDN</> zu, belegt sie mit <#ba.fireinflict>Hitze</> und stellt gleichzeitig einige FP wieder her.\nNach dem Wirken der Ultimativen Fertigkeit wird Camilles Kampffertigkeit vorübergehend durch <@ba.key>Jägerverfolgung</> ersetzt.\n<@ba.key>Jägerverfolgung</>: Wird als Kombofertigkeit behandelt und kostet keine FP. Hierbei handelt es sich um einen Sprintangriff, der <@ba.fire>Hitze-SDN</> verursacht und einige FP wiederherstellt."
+      "description": "Camille fliegt hoch in den Himmel und lässt Speere auf seine Gegner herabregnen, ehe er einen Sturzangriff ausführt. Dieser fügt Zielen <@ba.fire>Hitze-SDN</> zu, belegt sie mit <#ba.fireinflict>Hitze</> und stellt gleichzeitig einige FP wieder her.\nNach dem Wirken der Ultimativen Fertigkeit wird Camilles Kampffertigkeit vorübergehend durch <@ba.key>Jägerverfolgung</> ersetzt.\n<@ba.key>Jägerverfolgung</>: Wird als Kombofertigkeit behandelt und kostet keine FP. Hierbei handelt es sich um einen Sprintangriff, der <@ba.fire>Hitze-SDN</> verursacht und einige FP wiederherstellt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "spRecovery": "FP-Wiederherstellung",
+      "hunterPursuitStateDurationS": "Jägerverfolgungs-Dauer (Sek.)"
     },
     "indicator": {
       "levels": [

@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Arkanstab: Strahlenkohäsions-\ntechnik",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Gravitationszug-SDN-Multiplikator",
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
-        "explosionStagger": "Explosions-Taumeln"
-      },
       "name": "Arkanstab: Schwerkraftmodus",
-      "description": "Löst eine Technik-Kanalisierung aus, die einen <@ba.key>Gravitationsbrunnen</> beschwört. Der <@ba.key>Gravitationsbrunnen</> zieht Gegner in der Nähe an und fügt ihnen <@ba.natur>Natur-SDN</> zu. Wenn die Kanalisierung endet, löst der <@ba.key>Gravitationsbrunnen</> eine Explosion aus, die den Gegnern im Wirkungsbereich <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt."
+      "description": "Löst eine Technik-Kanalisierung aus, die einen <@ba.key>Gravitationsbrunnen</> beschwört. Der <@ba.key>Gravitationsbrunnen</> zieht Gegner in der Nähe an und fügt ihnen <@ba.natur>Natur-SDN</> zu. Wenn die Kanalisierung endet, löst der <@ba.key>Gravitationsbrunnen</> eine Explosion aus, die den Gegnern im Wirkungsbereich <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt.",
+      "gravityPullDmgMultiplier": "Gravitationszug-SDN-Multiplikator",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+      "explosionStagger": "Explosions-Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Arkanstab: Matrixverschiebung",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellstatus>Technikreaktion</> belegt wird. \nEin schnelles Wirken der Technik, die einen Gravitationszug erzeugt, der dann <@ba.natur>Natur-SDN</> verursacht und das Ziel sowie nahe Gegner <#ba.airborne>anhebt</>."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellstatus>Technikreaktion</> belegt wird. \nEin schnelles Wirken der Technik, die einen Gravitationszug erzeugt, der dann <@ba.natur>Natur-SDN</> verursacht und das Ziel sowie nahe Gegner <#ba.airborne>anhebt</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "fieldDurationS": "Felddauer (Sek.)",
-        "slowEffect": "Verlangsamen-Effekt",
-        "baseArtsSusceptibility": "Grundlegende Technik-Empfänglichkeit",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Anstieg der Technik-Empfänglichkeit pro Anfälligkeit-Kumulierung"
-      },
       "name": "Arkanstab: Schwerkraftfeld",
-      "description": "Erzeugt ein <@ba.key>Anomales Schwerkraftfeld</>, das 1 Treffer <@ba.natur>Natur-SDN</> verursacht und Gegner, die sich in diesem Feld befinden, mit <#ba.naturalinflict>Natur belegt</>. Gegner im <@ba.key>Anomalen Schwerkraftfeld</> erleiden außerdem <#ba.slow>Verlangsamung</> und <#ba.spellvul>Technik-Empfänglichkeit</>. Der Effekt von <#ba.spellvul>Technik-Empfänglichkeit</> erhöht sich mit jeder aktiven <#ba.noguard>Anfälligkeit</>-Kumulierung des Ziels. \n<@ba.info>Wenn ein Ziel im Schwerkraftfeld Angehoben wird, bleibt dieser Zustand bestehen, solange das Schwerkraftfeld existiert.</>"
+      "description": "Erzeugt ein <@ba.key>Anomales Schwerkraftfeld</>, das 1 Treffer <@ba.natur>Natur-SDN</> verursacht und Gegner, die sich in diesem Feld befinden, mit <#ba.naturalinflict>Natur belegt</>. Gegner im <@ba.key>Anomalen Schwerkraftfeld</> erleiden außerdem <#ba.slow>Verlangsamung</> und <#ba.spellvul>Technik-Empfänglichkeit</>. Der Effekt von <#ba.spellvul>Technik-Empfänglichkeit</> erhöht sich mit jeder aktiven <#ba.noguard>Anfälligkeit</>-Kumulierung des Ziels. \n<@ba.info>Wenn ein Ziel im Schwerkraftfeld Angehoben wird, bleibt dieser Zustand bestehen, solange das Schwerkraftfeld existiert.</>",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "fieldDurationS": "Felddauer (Sek.)",
+      "slowEffect": "Verlangsamen-Effekt",
+      "baseArtsSusceptibility": "Grundlegende Technik-Empfänglichkeit",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Anstieg der Technik-Empfänglichkeit pro Anfälligkeit-Kumulierung"
     },
     "indicator": {
       "levels": [

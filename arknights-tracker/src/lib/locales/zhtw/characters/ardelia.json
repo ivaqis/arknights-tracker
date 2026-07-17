@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "岩石的輕語",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "susceptibility": "脆弱效果",
-        "susceptibilityDurationS": "脆弱持續時間（秒）"
-      },
       "name": "奔騰的多利",
-      "description": "騎上多利先生衝撞目標，對目標造成<@ba.natur>自然傷害</>，若目標處於<#ba.corrupt>腐蝕</>狀態，<#ba.consume>消耗</>其<#ba.corrupt>腐蝕</>狀態，並對其施加<#ba.physicalvul>物理脆弱</>與<#ba.spellvul>法術脆弱</>。"
+      "description": "騎上多利先生衝撞目標，對目標造成<@ba.natur>自然傷害</>，若目標處於<#ba.corrupt>腐蝕</>狀態，<#ba.consume>消耗</>其<#ba.corrupt>腐蝕</>狀態，並對其施加<#ba.physicalvul>物理脆弱</>與<#ba.spellvul>法術脆弱</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "susceptibility": "脆弱效果",
+      "susceptibilityDurationS": "脆弱持續時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "explosionDmgMultiplier": "爆炸傷害倍率",
-        "stagger": "失衡值",
-        "corrodeDurationS": "腐蝕持續時間（秒）",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "火山蘑菇雲",
-      "description": "當主控幹員對<@ba.key>不處於</><#ba.noguard>破防</>或<#ba.spellinflict>法術附著</>狀態的敵人造成<#ba.lastcombo>重擊</>後可以發動。\n發射一團火山雲拋向目標敵人，到達目標身邊後對目標造成<@ba.natur>自然傷害</>。火山雲會跟蹤目標，短暫延遲後爆炸，對周圍其他敵人造成一半的<@ba.natur>自然傷害</>，並強制施加短暫的<#ba.corrupt>腐蝕</>。"
+      "description": "當主控幹員對<@ba.key>不處於</><#ba.noguard>破防</>或<#ba.spellinflict>法術附著</>狀態的敵人造成<#ba.lastcombo>重擊</>後可以發動。\n發射一團火山雲拋向目標敵人，到達目標身邊後對目標造成<@ba.natur>自然傷害</>。火山雲會跟蹤目標，短暫延遲後爆炸，對周圍其他敵人造成一半的<@ba.natur>自然傷害</>，並強制施加短暫的<#ba.corrupt>腐蝕</>。",
+      "dmgMultiplier": "傷害倍率",
+      "explosionDmgMultiplier": "爆炸傷害倍率",
+      "stagger": "失衡值",
+      "corrodeDurationS": "腐蝕持續時間（秒）",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "durationS": "持續時間（秒）"
-      },
       "name": "毛茸茸派對",
-      "description": "艾爾黛拉進入可移動的持續施法狀態，召喚多利先生的幫助，隨機向四周散射多利先生的分身。每個分身命中敵人時對其造成<@ba.natur>自然傷害</>，每個敵人每{interval:0.0}秒最多受到一次傷害。"
+      "description": "艾爾黛拉進入可移動的持續施法狀態，召喚多利先生的幫助，隨機向四周散射多利先生的分身。每個分身命中敵人時對其造成<@ba.natur>自然傷害</>，每個敵人每{interval:0.0}秒最多受到一次傷害。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "durationS": "持續時間（秒）"
     },
     "indicator": {
       "levels": [

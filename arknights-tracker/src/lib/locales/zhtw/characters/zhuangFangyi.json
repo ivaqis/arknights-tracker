@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "疾電法",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pulse>電磁傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pulse>電磁傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pulse>電磁傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pulse>電磁傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pulse>電磁傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pulse>電磁傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "雷擊傷害倍率",
-        "totalStagger": "總失衡值",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "消耗每級導電額外傷害倍率",
-        "bonusUltimateEnergyPerThunderStrike": "每次雷擊額外終結技能量",
-        "sunderbladeLimit": "青霆劍數量限制",
-        "sunderbladeDurationS": "青霆劍存在時間（秒）",
-        "duringUltimateThunderStrikeDmgMultiplier": "終結技期間雷擊傷害倍率",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "終結技期間消耗每級導電額外傷害倍率"
-      },
       "name": "驚霆訣",
-      "description": "<#ba.consume>消耗</>目標的<#ba.conduct>導電</>狀態，使本次戰技傷害倍率提高，並生成相當於所<#ba.consume>消耗</><#ba.conduct>導電</>的<#ba.statuslevel>異常等級</><@ba.key>+1</>柄<@ba.key>青霆劍</>，若現存的<@ba.key>青霆劍</>少於{free_sword_limit:0}柄，即使未<#ba.consume>消耗</>目標的<#ba.conduct>導電</>狀態仍能生成1柄<@ba.key>青霆劍</>。\n隨後引導附近的<@ba.key>青霆劍</>依次雷擊目標，造成<@ba.pulse>電磁傷害</>並額外獲得終結技能量，最後一次雷擊造成{final_rate:0}倍傷害。\n<@ba.info>一次戰技最多生成{max_conduct_sword:0}柄青霆劍。</>"
+      "description": "<#ba.consume>消耗</>目標的<#ba.conduct>導電</>狀態，使本次戰技傷害倍率提高，並生成相當於所<#ba.consume>消耗</><#ba.conduct>導電</>的<#ba.statuslevel>異常等級</><@ba.key>+1</>柄<@ba.key>青霆劍</>，若現存的<@ba.key>青霆劍</>少於{free_sword_limit:0}柄，即使未<#ba.consume>消耗</>目標的<#ba.conduct>導電</>狀態仍能生成1柄<@ba.key>青霆劍</>。\n隨後引導附近的<@ba.key>青霆劍</>依次雷擊目標，造成<@ba.pulse>電磁傷害</>並額外獲得終結技能量，最後一次雷擊造成{final_rate:0}倍傷害。\n<@ba.info>一次戰技最多生成{max_conduct_sword:0}柄青霆劍。</>",
+      "thunderStrikeDmgMultiplier": "雷擊傷害倍率",
+      "totalStagger": "總失衡值",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "消耗每級導電額外傷害倍率",
+      "bonusUltimateEnergyPerThunderStrike": "每次雷擊額外終結技能量",
+      "sunderbladeLimit": "青霆劍數量限制",
+      "sunderbladeDurationS": "青霆劍存在時間（秒）",
+      "duringUltimateThunderStrikeDmgMultiplier": "終結技期間雷擊傷害倍率",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "終結技期間消耗每級導電額外傷害倍率"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量",
-        "additionalUltimateEnergyPerInflictionStack": "消耗每層附著額外終結技能量",
-        "duringUltimateDmgMultiplier": "終結技期間傷害倍率"
-      },
       "name": "一息萬變",
-      "description": "主控幹員的<#ba.lastcombo>重擊</>或處決，命中處於<#ba.pulseinflict>電磁附著</>狀態的敵人後可以發動。\n構建出息雷陣法攻擊敵人，造成<@ba.pulse>電磁傷害</>。命中處於<#ba.pulseinflict>電磁附著</>的敵人時，<#ba.consume>消耗</>其<#ba.pulseinflict>電磁附著</>，強制施加<#ba.conduct>導電</>，並基於<#ba.consume>消耗</>的層數額外獲得終結技能量。\n若強制施加<#ba.conduct>導電</>時，敵人已處於<#ba.conduct>導電</>狀態，則所施加<#ba.conduct>導電</>的<#ba.statuslevel>異常等級</>+1。"
+      "description": "主控幹員的<#ba.lastcombo>重擊</>或處決，命中處於<#ba.pulseinflict>電磁附著</>狀態的敵人後可以發動。\n構建出息雷陣法攻擊敵人，造成<@ba.pulse>電磁傷害</>。命中處於<#ba.pulseinflict>電磁附著</>的敵人時，<#ba.consume>消耗</>其<#ba.pulseinflict>電磁附著</>，強制施加<#ba.conduct>導電</>，並基於<#ba.consume>消耗</>的層數額外獲得終結技能量。\n若強制施加<#ba.conduct>導電</>時，敵人已處於<#ba.conduct>導電</>狀態，則所施加<#ba.conduct>導電</>的<#ba.statuslevel>異常等級</>+1。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量",
+      "additionalUltimateEnergyPerInflictionStack": "消耗每層附著額外終結技能量",
+      "duringUltimateDmgMultiplier": "終結技期間傷害倍率"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "持續時間（秒）",
-        "duringUltimateBatkSeq1Multiplier": "終結技期間普攻第一段倍率",
-        "duringUltimateBatkSeq2Multiplier": "終結技期間普攻第二段倍率",
-        "duringUltimateBatkSeq3Multiplier": "終結技期間普攻第三段倍率"
-      },
       "name": "萬鈞風雷",
-      "description": "進入<@ba.key>天理合真</>狀態：\n普通攻擊得到強化。自身行動更不容易被打斷。\n戰技<@ba.key>驚霆訣</>傷害倍率提高，傷害範圍擴大，最後一次雷擊命中時施加<#ba.pulseinflict>電磁附著</>。\n連攜技<@ba.key>一息萬變</>對一定範圍內的敵人生效，傷害倍率提高，冷卻回復速度提升至原本的{combo_cd_rate:0}倍。\n首次施放戰技<@ba.key>驚霆訣</>不消耗技力與<#ba.conduct>導電</>，若存在目標，則無論其是否處於<#ba.conduct>導電</>狀態，必定生成3柄<@ba.key>青霆劍</>。"
+      "description": "進入<@ba.key>天理合真</>狀態：\n普通攻擊得到強化。自身行動更不容易被打斷。\n戰技<@ba.key>驚霆訣</>傷害倍率提高，傷害範圍擴大，最後一次雷擊命中時施加<#ba.pulseinflict>電磁附著</>。\n連攜技<@ba.key>一息萬變</>對一定範圍內的敵人生效，傷害倍率提高，冷卻回復速度提升至原本的{combo_cd_rate:0}倍。\n首次施放戰技<@ba.key>驚霆訣</>不消耗技力與<#ba.conduct>導電</>，若存在目標，則無論其是否處於<#ba.conduct>導電</>狀態，必定生成3柄<@ba.key>青霆劍</>。",
+      "durationS": "持續時間（秒）",
+      "duringUltimateBatkSeq1Multiplier": "終結技期間普攻第一段倍率",
+      "duringUltimateBatkSeq2Multiplier": "終結技期間普攻第二段倍率",
+      "duringUltimateBatkSeq3Multiplier": "終結技期間普攻第三段倍率"
     },
     "indicator": {
       "levels": [

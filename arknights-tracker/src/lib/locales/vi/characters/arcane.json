@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Pháo Kích Trấn Áp",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Trận Nghiền Ngọc",
-      "description": "Tạo một <@ba.key>Trận Nghiền Ngọc</> gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong phạm vi hiệu ứng."
+      "description": {
+        "main": "Tạo một <@ba.key>Trận Nghiền Ngọc</> gây <@ba.natur>ST Tự Nhiên</> và áp dụng <#ba.naturalinflict>Nhiễm Tự Nhiên</> lên kẻ địch trong phạm vi hiệu ứng.",
+        "conditionName1": "Trận Huyền Thuật: TRÍ TUỆ",
+        "conditionDesc1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc1": "<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Gây thêm ST.",
+        "conditionDescInactive1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/",
+        "conditionName2": "Trận Huyền Thuật: Ý CHÍ",
+        "conditionDesc2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ＞ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc2": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Gây nhiều ST hơn, đồng thời trận huyền thuật còn <@ba.key>kéo</> các kẻ địch vào trong khu vực ảnh hưởng.",
+        "conditionDescInactive2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ≤ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "Hệ Số ST"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "Hệ Số ST"
+      },
+      "stagger": "Suy Sụp"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
-        "baseStagger": "Suy Sụp Cơ Bản",
+      "name": "Tư Thế Đặc Nhiệm IV",
+      "description": {
+        "conditionName1": "Trận Huyền Thuật: TRÍ TUỆ",
+        "conditionDesc1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc1": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.naturalinflict>Nhiễm Tự Nhiên</> hoặc ít nhất 2 cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp Phi Tự Nhiên</> được áp dụng lên kẻ địch.\nArcane lao tới mục tiêu và thiết lập 4 <@ba.key>Ảnh Chiến Thuật</>, áp dụng <#ba.naturalvul>Yếu Hóa Tự Nhiên</>, áp dụng <#ba.crystvul>Yếu Hóa Băng</> và <@ba.natur>ST Tự Nhiên</> lên mục tiêu cùng kẻ địch ở gần, đồng thời áp dụng <@ba.key>Giam Cầm</> lên mục tiêu đó. Khi <@ba.key>Giam Cầm</> kết thúc, các <@ba.key>Ảnh Chiến Thuật</> sẽ tấn công mục tiêu đó để gây ST Nổ.\n<@ba.key>Giam Cầm</>: Debuff làm chậm mọi hành động.\n<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Dùng KN chiến đấu của Arcane đánh trúng kẻ địch đang chịu <@ba.key>Giam Cầm</> sẽ <#ba.return>hoàn trả</> một ít Điểm Kỹ Năng, kết thúc <@ba.key>Giam Cầm</> sớm, gây ST Nổ, áp dụng thêm một lần <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</>, đồng thời sau một khoảng trễ ngắn sẽ gây nhiều lần ST cộng thêm.\n- Thời gian hồi KN liên hoàn được rút ngắn.",
+        "conditionDescInactive1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/",
+        "conditionName2": "Trận Huyền Thuật: Ý CHÍ",
+        "conditionDesc2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ＞ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc2": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.spellinflict>Nhiễm Thuật Pháp</> được áp dụng lên kẻ địch.\nArcane lao tới mục tiêu và thiết lập 4 <@ba.key>Ảnh Chiến Thuật</>, gây <@ba.natur>ST Tự Nhiên</>, áp dụng thêm một cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp</> cùng nguyên tố, <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> lên mục tiêu cùng kẻ địch ở gần, đồng thời áp dụng <@ba.key>Giam Cầm</> lên mục tiêu đó. Khi <@ba.key>Giam Cầm</> kết thúc, các <@ba.key>Ảnh Chiến Thuật</> sẽ tấn công mục tiêu đó để gây ST Nổ.\n<@ba.key>Giam Cầm</>: Debuff làm chậm mọi hành động.\n<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Áp dụng <@ba.key>Giam Cầm</> bằng cách thi triển KN liên hoàn cũng sẽ <@ba.key>kéo nhẹ</> các kẻ địch ở gần mục tiêu vào trong.\n- Thuộc tính Ý Chí có thể tăng thêm hiệu quả của <#ba.naturalvul>Yếu Hóa Tự Nhiên</> và <#ba.crystvul>Yếu Hóa Băng</> do KN liên hoàn áp dụng.",
+        "conditionDescInactive2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ≤ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
         "susceptibility": "Yếu Hóa",
-        "baseSusceptibility": "Yếu Hóa Cơ Bản",
-        "maxBonusSusceptibilityFromWill": "Thưởng Tối Đa Yếu Hóa từ Ý Chí",
-        "willRequiredForMaxBonusSusceptibility": "Yêu Cầu Ý Chí để nhận Thưởng Tối Đa Yếu Hóa",
-        "explosionDmgMultiplier": "Hệ Số ST Nổ",
-        "explosionStagger": "Suy Sụp Do Nổ",
         "bonusDmgMultiplier": "Hệ Số ST Cộng Thêm",
         "bonusSusceptibilityDurationS": "Hiệu Lực Thời Gian Yếu Hóa (giây)",
-        "spReturn": "Điểm KN Hoàn Trả",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
+        "spReturn": "Điểm KN Hoàn Trả"
       },
-      "name": "Tư Thế Đặc Nhiệm IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Thời Gian Giam Cầm và Yếu Hóa (giây)",
+        "baseSusceptibility": "Yếu Hóa Cơ Bản",
+        "maxBonusSusceptibilityFromWill": "Thưởng Tối Đa Yếu Hóa từ Ý Chí",
+        "willRequiredForMaxBonusSusceptibility": "Yêu Cầu Ý Chí để nhận Thưởng Tối Đa Yếu Hóa"
+      },
+      "baseDmgMultiplier": "Hệ Số ST Cơ Bản",
+      "baseStagger": "Suy Sụp Cơ Bản",
+      "explosionDmgMultiplier": "Hệ Số ST Nổ",
+      "explosionStagger": "Suy Sụp Do Nổ",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Hệ Số ST Kiến Tạo Trận Pháp Trừ Ám",
-        "gloompurgerArrayCreationStagger": "Suy Sụp Kiến Tạo Trận Pháp Trừ Ám",
-        "gloompurgerArrayDurationS": "Hiệu Lực Trận Pháp Trừ Ám (giây)",
+      "name": "Trừ Ám",
+      "description": {
+        "main": "Arcane tạo ra <@ba.key>Trận Pháp Trừ Ám</>, lập tức gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng (AOE).\nKhi cán viên đang điều khiển dùng Đòn Kết Liễu hoặc <@ba.key>Đòn Dứt Điểm</> đánh trúng kẻ địch trong <#ba.lastcombo>Trận Pháp Trừ Ám</>, <@ba.key>Trận Pháp Trừ Ám</> sẽ tung ra <@ba.key>Tập Kích Cụm</>, gây ST Diện Rộng lên kẻ địch đó. Hiệu ứng này kích hoạt tối đa 2 lần.\nSau khi kích hoạt <@ba.key>Tập Kích Cụm</> 2 lần, Tuyệt Kỹ sẽ chuyển thành <@ba.key>Bí Thuật Trừ Ám</>.\n<@ba.key>Bí Thuật Trừ Ám</>: Gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng lớn.",
+        "conditionName1": "Trận Huyền Thuật: TRÍ TUỆ",
+        "conditionDesc1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc1": "<@ba.key>Trận Huyền Thuật: TRÍ TUỆ</>:\n- Khi được tạo ra, <@ba.key>Trận Pháp Trừ Ám</> cũng cưỡng chế áp dụng <#ba.corrupt>Ăn Mòn</> lên kẻ địch trong phạm vi hiệu ứng lớn.",
+        "conditionDescInactive1": "/*Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Ý Chí (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Trận Huyền Thuật: TRÍ TUỆ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/",
+        "conditionName2": "Trận Huyền Thuật: Ý CHÍ",
+        "conditionDesc2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ＞ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ được KÍCH HOẠT.*/",
+        "conditionPostDesc2": "<@ba.key>Trận Huyền Thuật: Ý CHÍ</>:\n- Khi được tạo ra, <@ba.key>Trận Pháp Trừ Ám</> cũng chọn làm mục tiêu các kẻ địch đang chịu <#ba.spellinflict>Nhiễm Thuật Pháp</> trong phạm vi hiệu ứng lớn của nó, đồng thời áp dụng thêm một cộng dồn <#ba.spellinflict>Nhiễm Thuật Pháp</> cùng nguyên tố lên chúng.",
+        "conditionDescInactive2": "/*Ý Chí (<@ba.vup>{floor:deck_will:0}</>) ≤ Trí Tuệ (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Trận Huyền Thuật: Ý CHÍ</> sẽ KHÔNG ĐƯỢC KÍCH HOẠT.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Hiệu Lực Ăn Mòn Cưỡng Bức (giây)",
         "clusterStrikeTotalDmgMultiplier": "Tổng Hệ Số ST Tập Kích Cụm",
-        "gloompurgeArcanaDmgMultiplier": "Hệ Số ST Bí Thuật Trừ Ám",
-        "gloompurgeArcanaStagger": "Suy Sụp Bí Thuật Trừ Ám"
+        "gloompurgeArcanaDmgMultiplier": "Hệ Số ST Bí Thuật Trừ Ám"
       },
-      "name": "Trừ Ám",
-      "description": "Arcane tạo ra <@ba.key>Trận Pháp Trừ Ám</>, lập tức gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng (AOE).\nKhi cán viên đang điều khiển dùng Đòn Kết Liễu hoặc <@ba.key>Đòn Dứt Điểm</> đánh trúng kẻ địch trong <#ba.lastcombo>Trận Pháp Trừ Ám</>, <@ba.key>Trận Pháp Trừ Ám</> sẽ tung ra <@ba.key>Tập Kích Cụm</>, gây ST Diện Rộng lên kẻ địch đó. Hiệu ứng này kích hoạt tối đa 2 lần.\nSau khi kích hoạt <@ba.key>Tập Kích Cụm</> 2 lần, Tuyệt Kỹ sẽ chuyển thành <@ba.key>Bí Thuật Trừ Ám</>.\n<@ba.key>Bí Thuật Trừ Ám</>: Gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch trong phạm vi hiệu ứng lớn."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Tổng Hệ Số ST Tập Kích Cụm",
+        "gloompurgeArcanaDmgMultiplier": "Hệ Số ST Bí Thuật Trừ Ám"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Hệ Số ST Kiến Tạo Trận Pháp Trừ Ám",
+      "gloompurgerArrayCreationStagger": "Suy Sụp Kiến Tạo Trận Pháp Trừ Ám",
+      "gloompurgerArrayDurationS": "Hiệu Lực Trận Pháp Trừ Ám (giây)",
+      "gloompurgeArcanaStagger": "Suy Sụp Bí Thuật Trừ Ám"
     },
     "indicator": {
       "levels": [

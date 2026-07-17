@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Lanzatrueno: Bombardeo",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como de operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como de operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "thunderlanceDmgMultiplier": "Multiplicador de DAÑ Lanzatrueno",
-        "thunderlanceStagger": "Tambaleo de Lanzatrueno",
-        "thunderlanceExDmgMultiplier": "Multiplicador de DAÑ Lanzatrueno EX",
-        "thunderlanceExStagger": "Tambaleo de Lanzatrueno EX"
-      },
       "name": "Lanzatrueno: Interdicción",
-      "description": "Salta al aire para agitar un torbellino con su lanza, infligiendo algo de <@ba.pulse>DAÑ eléctrico</> a enemigos cercanos mientras atrae hacia sí todas las <@ba.key>Lanzatrueno</> y <@ba.key>Lanzatrueno EX</> en el campo de batalla. \nLas <@ba.key>Lanzatrueno</> que regresan perforan a todos los enemigos en su trayectoria e infligen <@ba.pulse>DAÑ eléctrico</>, mientras que las <@ba.key>Lanzatrueno EX</> que regresan infligen más <@ba.pulse>DAÑ eléctrico</> y además aplican <#ba.pulseinflict>Imposición eléctrica</>."
+      "description": "Salta al aire para agitar un torbellino con su lanza, infligiendo algo de <@ba.pulse>DAÑ eléctrico</> a enemigos cercanos mientras atrae hacia sí todas las <@ba.key>Lanzatrueno</> y <@ba.key>Lanzatrueno EX</> en el campo de batalla. \nLas <@ba.key>Lanzatrueno</> que regresan perforan a todos los enemigos en su trayectoria e infligen <@ba.pulse>DAÑ eléctrico</>, mientras que las <@ba.key>Lanzatrueno EX</> que regresan infligen más <@ba.pulse>DAÑ eléctrico</> y además aplican <#ba.pulseinflict>Imposición eléctrica</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "thunderlanceDmgMultiplier": "Multiplicador de DAÑ Lanzatrueno",
+      "thunderlanceStagger": "Tambaleo de Lanzatrueno",
+      "thunderlanceExDmgMultiplier": "Multiplicador de DAÑ Lanzatrueno EX",
+      "thunderlanceExStagger": "Tambaleo de Lanzatrueno EX"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "thunderlanceDurationS": "Duración (s) de Lanzatrueno",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Lanzatrueno: ataque",
-      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre un objetivo con <#ba.pulseinflict>Imposición eléctrica</> activa o <#ba.conduct>Electrificación</>. \nSalta al aire y lanza 3 <@ba.key>Lanzatrueno</> al objetivo, luego inflige 1 golpe de <@ba.pulse>DAÑ eléctrico</> a los enemigos en el área de efecto."
+      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre un objetivo con <#ba.pulseinflict>Imposición eléctrica</> activa o <#ba.conduct>Electrificación</>. \nSalta al aire y lanza 3 <@ba.key>Lanzatrueno</> al objetivo, luego inflige 1 golpe de <@ba.pulse>DAÑ eléctrico</> a los enemigos en el área de efecto.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "thunderlanceDurationS": "Duración (s) de Lanzatrueno",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "thunderlanceExDurationS": "Duración (s) de Lanzatrueno EX"
-      },
       "name": "Lanzatrueno: Impacto final",
-      "description": "Lanza un <@ba.key>Lanzatrueno EX</> al área objetivo que inflige un gran <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos."
+      "description": "Lanza un <@ba.key>Lanzatrueno EX</> al área objetivo que inflige un gran <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "thunderlanceExDurationS": "Duración (s) de Lanzatrueno EX"
     },
     "indicator": {
       "levels": [

@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "全面攻勢",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq1Stagger": "1段目ブレイク値",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値",
-        "spRecoveryByConsuming1VulnerabilityStack": "クラッシュ1段階消費時のSP回復量",
-        "spRecoveryByConsuming2VulnerabilityStacks": "クラッシュ2段階消費時のSP回復量",
-        "spRecoveryByConsuming3VulnerabilityStacks": "クラッシュ3段階消費時のSP回復量",
-        "spRecoveryByConsuming4VulnerabilityStacks": "クラッシュ4段階消費時のSP回復量"
-      },
       "name": "戦線粉砕",
-      "description": "前方範囲の敵に斬撃を2段放ち、<@ba.pd>物理ダメージ</>と<#ba.fracture>破砕</>を与える。同時に、<#ba.consume>消費</>したクラッシュ段階に応じてSPを回復する（複数の敵に命中しても回復は1回のみ）。"
+      "description": "前方範囲の敵に斬撃を2段放ち、<@ba.pd>物理ダメージ</>と<#ba.fracture>破砕</>を与える。同時に、<#ba.consume>消費</>したクラッシュ段階に応じてSPを回復する（複数の敵に命中しても回復は1回のみ）。",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq1Stagger": "1段目ブレイク値",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値",
+      "spRecoveryByConsuming1VulnerabilityStack": "クラッシュ1段階消費時のSP回復量",
+      "spRecoveryByConsuming2VulnerabilityStacks": "クラッシュ2段階消費時のSP回復量",
+      "spRecoveryByConsuming3VulnerabilityStacks": "クラッシュ3段階消費時のSP回復量",
+      "spRecoveryByConsuming4VulnerabilityStacks": "クラッシュ4段階消費時のSP回復量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq1Stagger": "1段目ブレイク値",
-        "seq1SpRecovery": "1段目のSP回復量",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値",
-        "seq2SpRecovery": "2段目のSP回復量",
-        "seq3DmgMultiplier": "3段目ダメージ倍率",
-        "seq3Stagger": "3段目ブレイク値",
-        "seq3SpRecovery": "3段目のSP回復量",
-        "enhancedSeq3DmgMultiplier": "強化3段目ダメージ倍率",
-        "enhancedSeq3Stagger": "強化3段目ブレイク値",
-        "enhancedSeq3SpRecovery": "強化3段目のSP回復量",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "満月迎撃",
-      "description": "敵が<#ba.crush>猛撃</>または<#ba.fracture>破砕</>によって<#ba.noguard>クラッシュ</>段階が<#ba.consume>消費</>されると発動可能。\n<#ba.consume>消費</>した最大<#ba.noguard>クラッシュ</>段階と同じ回数、敵に斬撃を放つ（最大3段）。斬撃ごとに<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。斬撃数が多いほど、ダメージとSP回復量がアップする。\n<@ba.info>4段階のクラッシュを消費した場合、3段目の斬撃が強化される。</>"
+      "description": "敵が<#ba.crush>猛撃</>または<#ba.fracture>破砕</>によって<#ba.noguard>クラッシュ</>段階が<#ba.consume>消費</>されると発動可能。\n<#ba.consume>消費</>した最大<#ba.noguard>クラッシュ</>段階と同じ回数、敵に斬撃を放つ（最大3段）。斬撃ごとに<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。斬撃数が多いほど、ダメージとSP回復量がアップする。\n<@ba.info>4段階のクラッシュを消費した場合、3段目の斬撃が強化される。</>",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq1Stagger": "1段目ブレイク値",
+      "seq1SpRecovery": "1段目のSP回復量",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値",
+      "seq2SpRecovery": "2段目のSP回復量",
+      "seq3DmgMultiplier": "3段目ダメージ倍率",
+      "seq3Stagger": "3段目ブレイク値",
+      "seq3SpRecovery": "3段目のSP回復量",
+      "enhancedSeq3DmgMultiplier": "強化3段目ダメージ倍率",
+      "enhancedSeq3Stagger": "強化3段目ブレイク値",
+      "enhancedSeq3SpRecovery": "強化3段目のSP回復量",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "鉄誓持続時間",
-        "advanceDmgMultiplier": "進軍ダメージ倍率",
-        "advanceStagger": "進軍ブレイク値",
-        "harassDmgMultiplier": "撹乱ダメージ倍率",
-        "harassSpRecovery": "撹乱のSP回復量",
-        "decisiveAssaultDmgMultiplier": "勝決ダメージ倍率",
-        "decisiveAssaultStagger": "勝決ブレイク値",
-        "decisiveAssaultSpRecovery": "勝決のSP回復量"
-      },
       "name": "盾兵旗隊、進め",
-      "description": "目標の敵を中心に、4体の盾兵を召喚する。盾兵は目標に向かって進軍し、進軍途中の敵を押し出して<@ba.pd>物理ダメージ</>を与え、同時に<@ba.key>鉄誓</>を5回分獲得する。敵が<#ba.physicalstatus>物理異常</>またはポグラニチニクの連携技ダメージを受けると、<@ba.key>鉄誓</>を1回消費して盾兵を1体召喚する。盾兵は敵を撹乱し、<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。消費した<@ba.key>鉄誓</>が最後の1回の場合、盾兵4体が勝決を発動し、高い<@ba.pd>物理ダメージ</>を与え、SPを大量に回復する。"
+      "description": "目標の敵を中心に、4体の盾兵を召喚する。盾兵は目標に向かって進軍し、進軍途中の敵を押し出して<@ba.pd>物理ダメージ</>を与え、同時に<@ba.key>鉄誓</>を5回分獲得する。敵が<#ba.physicalstatus>物理異常</>またはポグラニチニクの連携技ダメージを受けると、<@ba.key>鉄誓</>を1回消費して盾兵を1体召喚する。盾兵は敵を撹乱し、<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。消費した<@ba.key>鉄誓</>が最後の1回の場合、盾兵4体が勝決を発動し、高い<@ba.pd>物理ダメージ</>を与え、SPを大量に回復する。",
+      "steelOathDuration": "鉄誓持続時間",
+      "advanceDmgMultiplier": "進軍ダメージ倍率",
+      "advanceStagger": "進軍ブレイク値",
+      "harassDmgMultiplier": "撹乱ダメージ倍率",
+      "harassSpRecovery": "撹乱のSP回復量",
+      "decisiveAssaultDmgMultiplier": "勝決ダメージ倍率",
+      "decisiveAssaultStagger": "勝決ブレイク値",
+      "decisiveAssaultSpRecovery": "勝決のSP回復量"
     },
     "indicator": {
       "levels": [

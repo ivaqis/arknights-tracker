@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "追跡捕獲",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値",
-        "additionalAtkDmgMultiplier": "追加ダメージ倍率",
-        "additionalAtkStagger": "追加ブレイク値",
-        "spRecovery": "SP回復量"
-      },
       "name": "疾風迅雷",
-      "description": "敵の近くに瞬間移動して2回斬撃を放ち、わずかな<@ba.pd>物理ダメージ</>を与える。敵が<#ba.conduct>感電</>状態の場合、<#ba.conduct>感電</>状態を<#ba.consume>消費</>して追加で1回攻撃し、<@ba.pulse>電磁ダメージ</>を与え、SPを一定量回復する。"
+      "description": "敵の近くに瞬間移動して2回斬撃を放ち、わずかな<@ba.pd>物理ダメージ</>を与える。敵が<#ba.conduct>感電</>状態の場合、<#ba.conduct>感電</>状態を<#ba.consume>消費</>して追加で1回攻撃し、<@ba.pulse>電磁ダメージ</>を与え、SPを一定量回復する。",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値",
+      "additionalAtkDmgMultiplier": "追加ダメージ倍率",
+      "additionalAtkStagger": "追加ブレイク値",
+      "spRecovery": "SP回復量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "spRecovery": "SP回復量",
-        "stagger": "ブレイク値",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "雷鳴",
-      "description": "敵が<#ba.conduct>感電</>状態になるか<#ba.conduct>感電</>状態が<#ba.consume>消費</>されると発動可能。\n敵の近くに瞬間移動して複数回斬撃を放ち、<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。"
+      "description": "敵が<#ba.conduct>感電</>状態になるか<#ba.conduct>感電</>状態が<#ba.consume>消費</>されると発動可能。\n敵の近くに瞬間移動して複数回斬撃を放ち、<@ba.pd>物理ダメージ</>を与え、SPを一定量回復する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "spRecovery": "SP回復量",
+      "stagger": "ブレイク値",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq1Stagger": "1段目ブレイク値",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値"
-      },
       "name": "轟雷裂電",
-      "description": "電光を纏いながら前方に向かって突進し、軌道上の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。一定時間後、残っている電光を爆発させ、再度<@ba.pulse>電磁ダメージ</>を与える。敵が<#ba.pulseinflict>電磁付着</>状態の場合、<#ba.pulseinflict>電磁付着</>状態を<#ba.consume>消費して</>、敵を強制的に<#ba.conduct>感電</>状態にする。"
+      "description": "電光を纏いながら前方に向かって突進し、軌道上の敵に<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。一定時間後、残っている電光を爆発させ、再度<@ba.pulse>電磁ダメージ</>を与える。敵が<#ba.pulseinflict>電磁付着</>状態の場合、<#ba.pulseinflict>電磁付着</>状態を<#ba.consume>消費して</>、敵を強制的に<#ba.conduct>感電</>状態にする。",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq1Stagger": "1段目ブレイク値",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値"
     },
     "indicator": {
       "levels": [

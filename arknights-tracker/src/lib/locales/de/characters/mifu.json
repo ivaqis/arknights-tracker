@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator"
-      },
       "name": "Faustkämpferin der Klingen",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Wolkenfänger-SDN-Multiplikator",
-        "trailAndMangleDmgMultiplier": "Pfad-des-Fetzens-SDN-Multiplikator",
-        "trailAndMangleStagger": "Pfad-des-Fetzens-Taumeln",
-        "worldSplitterDmgMultiplier": "Weltenspalter-SDN-Multiplikator",
-        "worldSplitterStagger": "Weltenspalter-Taumeln"
-      },
       "name": "Qingbo-Triplex",
-      "description": "Wirke Mi Fus Kampffertigkeit mehrmals, um 3 verschiedene Moves zu entfesseln. Zuerst wird die Kampffertigkeit <@ba.key>Wolkenfänger</> gewirkt.\n<@ba.key>MOVE 1 – Wolkenfänger</>: Kostet <@ba.vup>100</> FP und <#ba.return>gewährt</><@ba.vup> 50</> FP nach dem Wirken. Mi Fu feuert eine Greifkette aus ihren Fingerhandschuhen ab, die dem Ziel und Gegnern in seiner Nähe <@ba.pd>Physischen SDN</> zufügt und dann versucht, diese Ziele in ihre Richtung zu ziehen. Nach dem Wirken von MOVE 1 wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.\n<@ba.key>MOVE 2 – Pfad des Fetzens</>: Kostet <@ba.vup>50</> FP. Mi Fu entfesselt eine Salve aus Schlägen, die <@ba.pd>Physischen SDN</> verursachen, wobei der letzte Schlag das Ziel mit <#ba.crush>Zertrümmern</> belegt. <#ba.consume>Verbraucht</> dieses Zertrümmern mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> eines Ziels, wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Weltenspalter</> ersetzt.\n<@ba.key>MOVE 3 – Weltenspalter</>: Kostet <@ba.vup>50</> FP. Mi Fu verursacht innerhalb des angegebenen Bereichs massiven <@ba.pd>Physischen SDN</>, wobei der verursachte SDN nicht als Kampffertigkeits-SDN, sondern als <#ba.crush>Zertrümmern</>-SDN behandelt wird."
+      "description": "Wirke Mi Fus Kampffertigkeit mehrmals, um 3 verschiedene Moves zu entfesseln. Zuerst wird die Kampffertigkeit <@ba.key>Wolkenfänger</> gewirkt.\n<@ba.key>MOVE 1 – Wolkenfänger</>: Kostet <@ba.vup>100</> FP und <#ba.return>gewährt</><@ba.vup> 50</> FP nach dem Wirken. Mi Fu feuert eine Greifkette aus ihren Fingerhandschuhen ab, die dem Ziel und Gegnern in seiner Nähe <@ba.pd>Physischen SDN</> zufügt und dann versucht, diese Ziele in ihre Richtung zu ziehen. Nach dem Wirken von MOVE 1 wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.\n<@ba.key>MOVE 2 – Pfad des Fetzens</>: Kostet <@ba.vup>50</> FP. Mi Fu entfesselt eine Salve aus Schlägen, die <@ba.pd>Physischen SDN</> verursachen, wobei der letzte Schlag das Ziel mit <#ba.crush>Zertrümmern</> belegt. <#ba.consume>Verbraucht</> dieses Zertrümmern mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> eines Ziels, wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Weltenspalter</> ersetzt.\n<@ba.key>MOVE 3 – Weltenspalter</>: Kostet <@ba.vup>50</> FP. Mi Fu verursacht innerhalb des angegebenen Bereichs massiven <@ba.pd>Physischen SDN</>, wobei der verursachte SDN nicht als Kampffertigkeits-SDN, sondern als <#ba.crush>Zertrümmern</>-SDN behandelt wird.",
+      "cloudtrapperDmgMultiplier": "Wolkenfänger-SDN-Multiplikator",
+      "trailAndMangleDmgMultiplier": "Pfad-des-Fetzens-SDN-Multiplikator",
+      "trailAndMangleStagger": "Pfad-des-Fetzens-Taumeln",
+      "worldSplitterDmgMultiplier": "Weltenspalter-SDN-Multiplikator",
+      "worldSplitterStagger": "Weltenspalter-Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "physicalSusceptibility": "Physisch-Empfänglichkeit",
-        "physicalSusceptibilityDurationS": "Dauer der Physisch-Empfänglichkeit (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Fäuste ohne Reue",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> hat.\nMi Fu führt einen zerstörerischen Aufwärtshieb gegen den Gegner durch, fügt ihm <@ba.pd>Physischen SDN</> zu und belegt ihn vorübergehend mit <#ba.physicalvul>Physisch-Empfänglichkeit</>. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mindestens 3 Kumulierungen <#ba.noguard>Anfälligkeit</> hat.\nMi Fu führt einen zerstörerischen Aufwärtshieb gegen den Gegner durch, fügt ihm <@ba.pd>Physischen SDN</> zu und belegt ihn vorübergehend mit <#ba.physicalvul>Physisch-Empfänglichkeit</>. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "physicalSusceptibility": "Physisch-Empfänglichkeit",
+      "physicalSusceptibilityDurationS": "Dauer der Physisch-Empfänglichkeit (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Wirbelbrecher",
-      "description": "Nach einer kurzen Aufladung sprintet Mi Fu auf ein Ziel zu, <#ba.airborne>Hebt</> es gewaltsam <#ba.airborne>an</> und rammt es dann in den Boden, um ihm <@ba.pd>Physischen SDN</> zuzufügen. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt."
+      "description": "Nach einer kurzen Aufladung sprintet Mi Fu auf ein Ziel zu, <#ba.airborne>Hebt</> es gewaltsam <#ba.airborne>an</> und rammt es dann in den Boden, um ihm <@ba.pd>Physischen SDN</> zuzufügen. Nach dem Wirken dieser Fertigkeit wird die nächste Kampffertigkeit vorübergehend durch <@ba.key>Pfad des Fetzens</> ersetzt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

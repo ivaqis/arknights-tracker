@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Cenizas ardientes",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "Multiplicador de DAÑ de explosión base",
-        "baseExplosionStagger": "Tambaleo por Explosión base",
-        "dmgOverTimeMultiplierPerSeq": "Multiplicador de DAÑ continuo por SEQ",
-        "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
-        "additionalAtkStagger": "Tambaleo de ATQ adicional",
-        "combustionDurationS": "Duración (s) de Combustión",
-        "additionalAtkUltimateEnergyGain": "Ganancia de Energía máxima por ATQ adicional",
-        "duringUltimateBatkSeq1Multiplier": "Durante la máxima: Multiplicador de SEC 1 de ATQB",
-        "duringUltimateBatkSeq1Stagger": "Durante la máxima: Tambaleo de SEC 1 de ATQB",
-        "duringUltimateBatkSeq2Multiplier": "Durante la máxima: Multiplicador de SEC 2 de ATQB",
-        "duringUltimateBatkSeq2Stagger": "Durante la máxima: Tambaleo de SEC 2 de ATQB",
-        "duringUltimateAdditionalAtkMultiplier": "Durante la máxima: Multiplicador de ATQ adicional",
-        "duringUltimateAdditionalAtkStagger": "Durante la máxima: Tambaleo de ATQ adicional",
-        "duringUltimateCombustionDurationS": "Durante la máxima: Duración (s) de Combustión"
-      },
       "name": "Fuego humeante",
-      "description": "Invoca un Fragmento de magma que ataca continuamente a los enemigos e inflige <@ba.fire>DAÑ por calor</>. Golpear al enemigo otorga 1 acumulación de <@ba.key>Fusión de llamas</>. \nSi Laevatain ya tiene {count:0} acumulación(es) de <@ba.key>Fusión de llamas</> al lanzar la habilidad, consume todas las acumulaciones y realiza 1 ataque adicional que inflige <@ba.fire>DAÑ por calor</> y activa forzosamente <#ba.burning>Combustión</> temporal a todos los enemigos en un área amplia.\nCuando el ataque adicional impacta al enemigo, restaura Energía máxima adicional.\n<@ba.info>Los efectos de la habilidad de batalla se potencian mientras la máxima de Laevatain está activa.</>"
+      "description": "Invoca un Fragmento de magma que ataca continuamente a los enemigos e inflige <@ba.fire>DAÑ por calor</>. Golpear al enemigo otorga 1 acumulación de <@ba.key>Fusión de llamas</>. \nSi Laevatain ya tiene {count:0} acumulación(es) de <@ba.key>Fusión de llamas</> al lanzar la habilidad, consume todas las acumulaciones y realiza 1 ataque adicional que inflige <@ba.fire>DAÑ por calor</> y activa forzosamente <#ba.burning>Combustión</> temporal a todos los enemigos en un área amplia.\nCuando el ataque adicional impacta al enemigo, restaura Energía máxima adicional.\n<@ba.info>Los efectos de la habilidad de batalla se potencian mientras la máxima de Laevatain está activa.</>",
+      "baseExplosionDmgMultiplier": "Multiplicador de DAÑ de explosión base",
+      "baseExplosionStagger": "Tambaleo por Explosión base",
+      "dmgOverTimeMultiplierPerSeq": "Multiplicador de DAÑ continuo por SEQ",
+      "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
+      "additionalAtkStagger": "Tambaleo de ATQ adicional",
+      "combustionDurationS": "Duración (s) de Combustión",
+      "additionalAtkUltimateEnergyGain": "Ganancia de Energía máxima por ATQ adicional",
+      "duringUltimateBatkSeq1Multiplier": "Durante la máxima: Multiplicador de SEC 1 de ATQB",
+      "duringUltimateBatkSeq1Stagger": "Durante la máxima: Tambaleo de SEC 1 de ATQB",
+      "duringUltimateBatkSeq2Multiplier": "Durante la máxima: Multiplicador de SEC 2 de ATQB",
+      "duringUltimateBatkSeq2Stagger": "Durante la máxima: Tambaleo de SEC 2 de ATQB",
+      "duringUltimateAdditionalAtkMultiplier": "Durante la máxima: Multiplicador de ATQ adicional",
+      "duringUltimateAdditionalAtkStagger": "Durante la máxima: Tambaleo de ATQ adicional",
+      "duringUltimateCombustionDurationS": "Durante la máxima: Duración (s) de Combustión"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGainWhenHitting1Enemy": "Ganancia de Energía máxima al golpear a 1 enemigo",
-        "ultimateEnergyGainWhenHitting2Enemies": "Ganancia de Energía máxima al golpear a 2 enemigos",
-        "ultimateEnergyGainWhenHitting3Enemies": "Ganancia de Energía máxima al golpear a 3 enemigos"
-      },
       "name": "Hervir",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>. \nEl fuego irrumpe bajo los pies de cualquier enemigo con <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>, infligiéndoles <@ba.fire>DAÑ por calor</>. \nSi la habilidad impacta al enemigo, Laevatain obtiene 1 acumulación de <@ba.key>Fusión de llamas</> y además gana Energía máxima por cada enemigo golpeado."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>. \nEl fuego irrumpe bajo los pies de cualquier enemigo con <#ba.burning>Combustión</> o <#ba.corrupt>Corrosión</>, infligiéndoles <@ba.fire>DAÑ por calor</>. \nSi la habilidad impacta al enemigo, Laevatain obtiene 1 acumulación de <@ba.key>Fusión de llamas</> y además gana Energía máxima por cada enemigo golpeado.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGainWhenHitting1Enemy": "Ganancia de Energía máxima al golpear a 1 enemigo",
+      "ultimateEnergyGainWhenHitting2Enemies": "Ganancia de Energía máxima al golpear a 2 enemigos",
+      "ultimateEnergyGainWhenHitting3Enemies": "Ganancia de Energía máxima al golpear a 3 enemigos"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duración (s)",
-        "enhancedBatkSeq1Multiplier": "Multiplicador ATQB SEC 1 mejorado",
-        "enhancedBatkSeq2Multiplier": "Multiplicador ATQB SEC 2 mejorado",
-        "enhancedBatkSeq3Multiplier": "Multiplicador ATQB SEC 3 mejorado",
-        "enhancedBatkSeq4Multiplier": "Multiplicador ATQB SEC 4 mejorado"
-      },
       "name": "Crepúsculo",
-      "description": "Laevatain llama a su Sviga Lævi y se convierte en la operadora controlada. \nDurante un tiempo, sus ataques básicos (ATQB) se mejoran y la Sviga Lævi golpea junto con Laevatain, infligiendo <@ba.fire>DAÑ por calor</> con cada ataque. La secuencia 3 de ATQB también aplica <#ba.fireinflict>Imposición de calor</>.\n<@ba.info>Lanzar la habilidad de batalla, Fuego humeante, o la habilidad de combo, Hervir, no acorta la duración de la máxima, Crepúsculo.</>"
+      "description": "Laevatain llama a su Sviga Lævi y se convierte en la operadora controlada. \nDurante un tiempo, sus ataques básicos (ATQB) se mejoran y la Sviga Lævi golpea junto con Laevatain, infligiendo <@ba.fire>DAÑ por calor</> con cada ataque. La secuencia 3 de ATQB también aplica <#ba.fireinflict>Imposición de calor</>.\n<@ba.info>Lanzar la habilidad de batalla, Fuego humeante, o la habilidad de combo, Hervir, no acorta la duración de la máxima, Crepúsculo.</>",
+      "durationS": "Duración (s)",
+      "enhancedBatkSeq1Multiplier": "Multiplicador ATQB SEC 1 mejorado",
+      "enhancedBatkSeq2Multiplier": "Multiplicador ATQB SEC 2 mejorado",
+      "enhancedBatkSeq3Multiplier": "Multiplicador ATQB SEC 3 mejorado",
+      "enhancedBatkSeq4Multiplier": "Multiplicador ATQB SEC 4 mejorado"
     },
     "indicator": {
       "levels": [

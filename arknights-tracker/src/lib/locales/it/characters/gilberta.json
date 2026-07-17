@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Bastone arcano: coesione energetica",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.natur>danni da natura</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.natur>danni da natura</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.natur>danni da natura</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.natur>danni da natura</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.natur>danni da natura</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.natur>danni da natura</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Moltiplicatore danni Attrazione gravitazionale",
-        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
-        "explosionStagger": "Vacillamento Esplosione"
-      },
       "name": "Bastone arcano: attrazione gravitazionale",
-      "description": "Attiva la canalizzazione delle Arti, creando un <@ba.key>pozzo gravitazionale</> che attira i nemici nelle vicinanze e infligge loro <@ba.natur>danni da natura</>. Quando la canalizzazione termina, il <@ba.key>pozzo gravitazionale</> implode e infligge <@ba.natur>danni da natura</> e <#ba.naturalinflict>Afflizione da natura</> ai nemici nel raggio d'azione."
+      "description": "Attiva la canalizzazione delle Arti, creando un <@ba.key>pozzo gravitazionale</> che attira i nemici nelle vicinanze e infligge loro <@ba.natur>danni da natura</>. Quando la canalizzazione termina, il <@ba.key>pozzo gravitazionale</> implode e infligge <@ba.natur>danni da natura</> e <#ba.naturalinflict>Afflizione da natura</> ai nemici nel raggio d'azione.",
+      "gravityPullDmgMultiplier": "Moltiplicatore danni Attrazione gravitazionale",
+      "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
+      "explosionStagger": "Vacillamento Esplosione"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Bastone arcano: distorsione quantica",
-      "description": "ATTIVAZIONE COMBO: quando viene applicata una <#ba.spellstatus>Reazione delle Arti</> a un nemico. \nUn utilizzo rapido delle Arti che genera una trazione gravitazionale, la quale poi infligge <@ba.natur>danni da natura</> e applica <#ba.airborne>Sospensione forzata</> al bersaglio e ai nemici vicini."
+      "description": "ATTIVAZIONE COMBO: quando viene applicata una <#ba.spellstatus>Reazione delle Arti</> a un nemico. \nUn utilizzo rapido delle Arti che genera una trazione gravitazionale, la quale poi infligge <@ba.natur>danni da natura</> e applica <#ba.airborne>Sospensione forzata</> al bersaglio e ai nemici vicini.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "fieldDurationS": "Durata campo (s)",
-        "slowEffect": "Effetto Rallentamento",
-        "baseArtsSusceptibility": "Suscettibilità base alle Arti",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento Suscettibilità alle Arti per accumulo di Vulnerabilità"
-      },
       "name": "Bastone arcano: campo gravitazionale",
-      "description": "Crea un <@ba.key>campo gravitazionale anomalo</> che infligge istantaneamente un colpo di <@ba.natur>danni da natura</> e applica <#ba.naturalinflict>Afflizione da natura</> ai nemici intrappolati nel campo. I bersagli nel <@ba.key>campo gravitazionale anomalo</> subiscono anche <#ba.slow>Rallentamento</> e <#ba.spellvul>Suscettibilità alle Arti</>. L'effetto della <#ba.spellvul>Suscettibilità alle Arti</> è ulteriormente aumentato in base al numero di accumuli attivi di <#ba.noguard>Vulnerabilità</> sul bersaglio. \n<@ba.info>Se un bersaglio nel campo viene Sospeso, lo stato di Sospensione persisterà fino a quando il campo non svanirà.</>"
+      "description": "Crea un <@ba.key>campo gravitazionale anomalo</> che infligge istantaneamente un colpo di <@ba.natur>danni da natura</> e applica <#ba.naturalinflict>Afflizione da natura</> ai nemici intrappolati nel campo. I bersagli nel <@ba.key>campo gravitazionale anomalo</> subiscono anche <#ba.slow>Rallentamento</> e <#ba.spellvul>Suscettibilità alle Arti</>. L'effetto della <#ba.spellvul>Suscettibilità alle Arti</> è ulteriormente aumentato in base al numero di accumuli attivi di <#ba.noguard>Vulnerabilità</> sul bersaglio. \n<@ba.info>Se un bersaglio nel campo viene Sospeso, lo stato di Sospensione persisterà fino a quando il campo non svanirà.</>",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "fieldDurationS": "Durata campo (s)",
+      "slowEffect": "Effetto Rallentamento",
+      "baseArtsSusceptibility": "Suscettibilità base alle Arti",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Aumento Suscettibilità alle Arti per accumulo di Vulnerabilità"
     },
     "indicator": {
       "levels": [

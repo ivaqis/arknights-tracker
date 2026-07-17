@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Arte do Assalto com Espada",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "additionalStaggerDealtWhenHit": "Desorientação Adicional Causada Quando Atingido"
-      },
       "name": "Marcha à Frente",
-      "description": "Um salto seguido por uma pancada poderosa que causa <@ba.fire>DNO Térmico</>, <#ba.knockdown>Derrubar</> e Desorientação a todos os inimigos em uma área em forma de leque. \nSe Ember receber DNO de inimigos durante a conjuração, a pancada também causará mais Desorientação ao acertar."
+      "description": "Um salto seguido por uma pancada poderosa que causa <@ba.fire>DNO Térmico</>, <#ba.knockdown>Derrubar</> e Desorientação a todos os inimigos em uma área em forma de leque. \nSe Ember receber DNO de inimigos durante a conjuração, a pancada também causará mais Desorientação ao acertar.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "additionalStaggerDealtWhenHit": "Desorientação Adicional Causada Quando Atingido"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "baseTreatment": "Tratamento Base",
-        "treatmentIncreasePerWill": "Aumento do Tratamento por Vontade",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Apoio na Linha de Frente",
-      "description": "ACIONADOR DO COMBO: Quando o controlador da habilidade é atacado. \nSalta no inimigo alvo e desfere uma pancada forte que causa <@ba.pd>DNO Físico</> e <#ba.knockdown>Derrubar</> enquanto fornece tratamento de PV ao operador controlado. O atributo Vontade aumenta a quantidade de tratamento de PV."
+      "description": "ACIONADOR DO COMBO: Quando o controlador da habilidade é atacado. \nSalta no inimigo alvo e desfere uma pancada forte que causa <@ba.pd>DNO Físico</> e <#ba.knockdown>Derrubar</> enquanto fornece tratamento de PV ao operador controlado. O atributo Vontade aumenta a quantidade de tratamento de PV.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "baseTreatment": "Tratamento Base",
+      "treatmentIncreasePerWill": "Aumento do Tratamento por Vontade",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "shieldConversionRatioHp": "Taxa de Conversão de Escudo (PV)",
-        "shieldDurationS": "Duração do Escudo (s)"
-      },
       "name": "Juramento Reacendido",
-      "description": "Bate com força no chão para causar <@ba.fire>DNO Térmico</> aos inimigos próximos enquanto fornece a cada companheiro da equipe um <#ba.shield>Escudo</> baseado no PV máximo de Ember."
+      "description": "Bate com força no chão para causar <@ba.fire>DNO Térmico</> aos inimigos próximos enquanto fornece a cada companheiro da equipe um <#ba.shield>Escudo</> baseado no PV máximo de Ember.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "shieldConversionRatioHp": "Taxa de Conversão de Escudo (PV)",
+      "shieldDurationS": "Duração do Escudo (s)"
     },
     "indicator": {
       "levels": [

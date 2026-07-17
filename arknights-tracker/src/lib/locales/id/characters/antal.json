@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Exchange Current",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "durationS": "Durasi (dtk)",
-        "electricSusceptibility": "Electric Susceptibility",
-        "heatSusceptibility": "Heat Susceptibility"
-      },
       "name": "Specified Research Subject",
-      "description": "Mengakibatkan <@ba.key>Focus</> berdurasi panjang kepada musuh dan menimbulkan <@ba.pulse>Electric DMG</>. Musuh yang sedang terkena <@ba.key>Focus</> juga akan terkena <#ba.pulsevul>Electric Susceptibility</> dan <#ba.firevul>Heat Susceptibility</>. <@ba.key>Focus</> hanya bisa diakibatkan kepada 1 musuh setiap kalinya."
+      "description": "Mengakibatkan <@ba.key>Focus</> berdurasi panjang kepada musuh dan menimbulkan <@ba.pulse>Electric DMG</>. Musuh yang sedang terkena <@ba.key>Focus</> juga akan terkena <#ba.pulsevul>Electric Susceptibility</> dan <#ba.firevul>Heat Susceptibility</>. <@ba.key>Focus</> hanya bisa diakibatkan kepada 1 musuh setiap kalinya.",
+      "dmgMultiplier": "Pengganda DMG",
+      "durationS": "Durasi (dtk)",
+      "electricSusceptibility": "Electric Susceptibility",
+      "heatSusceptibility": "Heat Susceptibility"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "EMP Test Site",
-      "description": "PEMICU KOMBO: Saat musuh yang sedang terkena <@ba.key>Focus</> terkena <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</>. \nMengaktifkan 1 ledakan energi kepada musuh yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan tumpukan <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</> yang sama lagi."
+      "description": "PEMICU KOMBO: Saat musuh yang sedang terkena <@ba.key>Focus</> terkena <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</>. \nMengaktifkan 1 ledakan energi kepada musuh yang akan menimbulkan <@ba.pulse>Electric DMG</> dan mengakibatkan tumpukan <#ba.physicalstatus>Status Fisik</> atau <#ba.spellinflict>Arts Infliction</> yang sama lagi.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Electric Amp",
-        "heatAmp": "Heat Amp",
-        "durationS": "Durasi (dtk)"
-      },
       "name": "Overclocked Moment",
-      "description": "Memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.fireenhance>Heat Amp</> untuk sementara kepada seluruh tim."
+      "description": "Memberikan <#ba.pulseenhance>Electric Amp</> dan <#ba.fireenhance>Heat Amp</> untuk sementara kepada seluruh tim.",
+      "electricAmp": "Electric Amp",
+      "heatAmp": "Heat Amp",
+      "durationS": "Durasi (dtk)"
     },
     "indicator": {
       "levels": [

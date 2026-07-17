@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Épée d'aspiration",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Explosion passionnelle",
-      "description": "Une entaille frontale qui inflige des <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>."
+      "description": "Une entaille frontale qui inflige des <@ba.fire>DÉG thermiques</> et applique une <#ba.fireinflict>altération thermique</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "Multiplicateur de DÉG par SÉQ",
-        "staggerPerSeq": "Déséquilibre par SÉQ",
-        "spRecoveryPerSeq": "Récupération de PC par SÉQ",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Ruée éclair",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est déséquilibré ou touche un <#ba.poiseknot>nœud de déséquilibre</>. \nPermet d'effectuer une ruée de contre avec 2 séquences de poussée. Chaque séquence inflige des <@ba.pd>DÉG physiques</> et restaure des PC."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est déséquilibré ou touche un <#ba.poiseknot>nœud de déséquilibre</>. \nPermet d'effectuer une ruée de contre avec 2 séquences de poussée. Chaque séquence inflige des <@ba.pd>DÉG physiques</> et restaure des PC.",
+      "dmgMultiplierPerSeq": "Multiplicateur de DÉG par SÉQ",
+      "staggerPerSeq": "Déséquilibre par SÉQ",
+      "spRecoveryPerSeq": "Récupération de PC par SÉQ",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "Récupération de PC"
-      },
       "name": "ESCOUADE ! AVEC MOI !",
-      "description": "Entre dans un état de canalisation et tire 3 fusées de ralliement. Chaque tir restaure quelques PC."
+      "description": "Entre dans un état de canalisation et tire 3 fusées de ralliement. Chaque tir restaure quelques PC.",
+      "spRecovery": "Récupération de PC"
     },
     "indicator": {
       "levels": [

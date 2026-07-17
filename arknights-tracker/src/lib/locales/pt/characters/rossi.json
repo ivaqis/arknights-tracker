@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Sangue de Lobo Fervente",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
-        "seq1Stagger": "Desorientação SEQ 1",
-        "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
-        "seq2Stagger": "Desorientação SEQ 2"
-      },
       "name": "Sombra Carmesim",
-      "description": "Ataca o alvo para causar <@ba.pd>DNO físico</> e aplicar <#ba.airborne>Levantar</>.\nSe o alvo já tiver acúmulos de <#ba.noguard>Vulnerabilidade</>, a habilidade também libera uma <@ba.key>Sombra Lupina</> que ataca o alvo para causar <@ba.fire>DNO Térmico</>."
+      "description": "Ataca o alvo para causar <@ba.pd>DNO físico</> e aplicar <#ba.airborne>Levantar</>.\nSe o alvo já tiver acúmulos de <#ba.noguard>Vulnerabilidade</>, a habilidade também libera uma <@ba.key>Sombra Lupina</> que ataca o alvo para causar <@ba.fire>DNO Térmico</>.",
+      "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
+      "seq1Stagger": "Desorientação SEQ 1",
+      "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
+      "seq2Stagger": "Desorientação SEQ 2"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
-        "seq1UltimateEnergyGain": "Ganho de Energia Suprema SEQ 1",
-        "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicador DNO Bônus por Acúmulo de Inflição",
-        "seq2Stagger": "Desorientação SEQ 2",
-        "criticalRateBoost": "Potencialização de Taxa de Críticos",
-        "criticalDmgBoost": "Potencialização de DNO Crítico",
-        "buffDurationS": "Duração (s) de Benefício",
-        "seq2UltimateEnergyGain": "Ganho de Energia Suprema SEQ 2"
-      },
       "name": "Momento de Sombra Incandescente",
-      "description": "ACIONADOR DO COMBO: Quando um inimigo tem acúmulos de <#ba.noguard>Vulnerabilidade</> e <#ba.spellinflict>Inflição de Artes</>.\nO combo de habilidades de Rossi tem 2 sequências consecutivas. A SEQUÊNCIA DE COMBO 1 causa <@ba.pd>DNO Físico</> ao alvo.\nA SEQUÊNCIA DE COMBO 2 <#ba.consume>consome</> todos os acúmulos de <#ba.spellinflict>Inflição de Artes</> do alvo, causa <@ba.pd>DNO Físico</> com base no número de pilhas de Inflição de Artes <#ba.consume>consumidas</>, aplica 1 instância de <#ba.airborne>Levantar</> e melhora ao mesmo tempo a Taxa de Críticos e o DNO Crítico Causado de Rossi.\nSe a SEQUÊNCIA DE COMBO 2 for lançada com <@ba.key>tempo perfeito</>, aplica mais 1 acúmulo de <#ba.noguard>Vulnerabilidade</>."
+      "description": "ACIONADOR DO COMBO: Quando um inimigo tem acúmulos de <#ba.noguard>Vulnerabilidade</> e <#ba.spellinflict>Inflição de Artes</>.\nO combo de habilidades de Rossi tem 2 sequências consecutivas. A SEQUÊNCIA DE COMBO 1 causa <@ba.pd>DNO Físico</> ao alvo.\nA SEQUÊNCIA DE COMBO 2 <#ba.consume>consome</> todos os acúmulos de <#ba.spellinflict>Inflição de Artes</> do alvo, causa <@ba.pd>DNO Físico</> com base no número de pilhas de Inflição de Artes <#ba.consume>consumidas</>, aplica 1 instância de <#ba.airborne>Levantar</> e melhora ao mesmo tempo a Taxa de Críticos e o DNO Crítico Causado de Rossi.\nSe a SEQUÊNCIA DE COMBO 2 for lançada com <@ba.key>tempo perfeito</>, aplica mais 1 acúmulo de <#ba.noguard>Vulnerabilidade</>.",
+      "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
+      "seq1UltimateEnergyGain": "Ganho de Energia Suprema SEQ 1",
+      "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicador DNO Bônus por Acúmulo de Inflição",
+      "seq2Stagger": "Desorientação SEQ 2",
+      "criticalRateBoost": "Potencialização de Taxa de Críticos",
+      "criticalDmgBoost": "Potencialização de DNO Crítico",
+      "buffDurationS": "Duração (s) de Benefício",
+      "seq2UltimateEnergyGain": "Ganho de Energia Suprema SEQ 2"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Multiplicador DNO Total Ataque Apunhalar",
-        "seq1SlashDmgMultiplier": "Multiplicador DNO Corte SEQ 1",
-        "seq2SlashDmgMultiplier": "Multiplicador DNO Corte SEQ 2",
-        "stagger": "Desorientação",
-        "criticalDmgBoost": "Potencialização de DNO Crítico"
-      },
       "name": "Emboscada da \"Garra de Navalha\"",
-      "description": "Rossi agita sua capa e desfere uma série de punhaladas que causam rapidamente múltiplas sequências de <@ba.fire>DNO Térmico</> no alvo. Ela então realiza um ataque cortante em duas sequências com sua adaga que causa <@ba.fire>DNO Térmico</> significativo e aplica <#ba.fireinflict>Inflição Térmica</>.\n<@ba.info>Quando essa habilidade marca com êxito um acerto crítico, causa DNO Crítico mais intenso.</>"
+      "description": "Rossi agita sua capa e desfere uma série de punhaladas que causam rapidamente múltiplas sequências de <@ba.fire>DNO Térmico</> no alvo. Ela então realiza um ataque cortante em duas sequências com sua adaga que causa <@ba.fire>DNO Térmico</> significativo e aplica <#ba.fireinflict>Inflição Térmica</>.\n<@ba.info>Quando essa habilidade marca com êxito um acerto crítico, causa DNO Crítico mais intenso.</>",
+      "stabAttackTotalDmgMultiplier": "Multiplicador DNO Total Ataque Apunhalar",
+      "seq1SlashDmgMultiplier": "Multiplicador DNO Corte SEQ 1",
+      "seq2SlashDmgMultiplier": "Multiplicador DNO Corte SEQ 2",
+      "stagger": "Desorientação",
+      "criticalDmgBoost": "Potencialização de DNO Crítico"
     },
     "indicator": {
       "levels": [

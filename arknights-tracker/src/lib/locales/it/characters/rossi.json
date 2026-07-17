@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Ferinità incontenibile",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2"
-      },
       "name": "Ombra cremisi",
-      "description": "Si lancia alla carica contro il bersaglio per infliggere <@ba.pd>danni fisici</> e applicare <#ba.airborne>Sospensione</>.\nSe il bersaglio ha già uno o più accumuli di <#ba.noguard>Vulnerabilità</>, l'abilità scatena anche un <@ba.key>Balzo di lupo</> sul bersaglio che infligge <@ba.fire>danni da fuoco</>."
+      "description": "Si lancia alla carica contro il bersaglio per infliggere <@ba.pd>danni fisici</> e applicare <#ba.airborne>Sospensione</>.\nSe il bersaglio ha già uno o più accumuli di <#ba.noguard>Vulnerabilità</>, l'abilità scatena anche un <@ba.key>Balzo di lupo</> sul bersaglio che infligge <@ba.fire>danni da fuoco</>.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1UltimateEnergyGain": "Incremento energia suprema SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "criticalRateBoost": "Potenziamento probabilità di critico",
-        "criticalDmgBoost": "Potenziamento danni critici",
-        "buffDurationS": "Durata potenziamento (s)",
-        "seq2UltimateEnergyGain": "Incremento energia suprema SEQ 2"
-      },
       "name": "Momento dell'ombra ardente",
-      "description": "ATTIVAZIONE COMBO: quando un nemico ha sia <#ba.noguard>Vulnerabilità</> sia accumuli di <#ba.spellinflict>Afflizione da Arti</>.\nL'abilità combo di Rossi ha due sequenze consecutive. SEQUENZA COMBO 1: infligge <@ba.pd>danni fisici</> al bersaglio.\nSEQUENZA COMBO 2: <#ba.consume>consuma</> tutti gli accumuli di <#ba.spellinflict>Afflizione da Arti</> del bersaglio, infligge <@ba.pd>danni fisici</> in base al numero di accumuli di Afflizione da Arti <#ba.consume>consumati</>, applica 1 unità di <#ba.airborne>Sospensione</> e potenzia le probabilità di critico e i danni critici inflitti di Rossi contemporaneamente.\nEseguire la SEQUENZA COMBO 2 con <@ba.key>tempismo perfetto</> applica un ulteriore accumulo di <#ba.noguard>Vulnerabilità</>."
+      "description": "ATTIVAZIONE COMBO: quando un nemico ha sia <#ba.noguard>Vulnerabilità</> sia accumuli di <#ba.spellinflict>Afflizione da Arti</>.\nL'abilità combo di Rossi ha due sequenze consecutive. SEQUENZA COMBO 1: infligge <@ba.pd>danni fisici</> al bersaglio.\nSEQUENZA COMBO 2: <#ba.consume>consuma</> tutti gli accumuli di <#ba.spellinflict>Afflizione da Arti</> del bersaglio, infligge <@ba.pd>danni fisici</> in base al numero di accumuli di Afflizione da Arti <#ba.consume>consumati</>, applica 1 unità di <#ba.airborne>Sospensione</> e potenzia le probabilità di critico e i danni critici inflitti di Rossi contemporaneamente.\nEseguire la SEQUENZA COMBO 2 con <@ba.key>tempismo perfetto</> applica un ulteriore accumulo di <#ba.noguard>Vulnerabilità</>.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1UltimateEnergyGain": "Incremento energia suprema SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "criticalRateBoost": "Potenziamento probabilità di critico",
+      "criticalDmgBoost": "Potenziamento danni critici",
+      "buffDurationS": "Durata potenziamento (s)",
+      "seq2UltimateEnergyGain": "Incremento energia suprema SEQ 2"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Moltiplicatore danni totali pugnalata",
-        "seq1SlashDmgMultiplier": "Moltiplicatore danni fendente SEQ 1",
-        "seq2SlashDmgMultiplier": "Moltiplicatore danni fendente SEQ 2",
-        "stagger": "Vacillamento",
-        "criticalDmgBoost": "Potenziamento danni critici"
-      },
       "name": "Agguato \"Artiglio affilato\"",
-      "description": "Rossi fa svolazzare il mantello e scatena una raffica di colpi che infliggono rapidamente una serie di <@ba.fire>danni da fuoco</> al bersaglio, quindi esegue una sequenza di due attacchi con il suo pugnale, infliggendo ingenti <@ba.fire>danni da fuoco</> e applicando <#ba.fireinflict>Afflizione da fuoco</>.\n<@ba.info>Se l'abilità mette a segno un colpo critico, infligge danni critici maggiori.</>"
+      "description": "Rossi fa svolazzare il mantello e scatena una raffica di colpi che infliggono rapidamente una serie di <@ba.fire>danni da fuoco</> al bersaglio, quindi esegue una sequenza di due attacchi con il suo pugnale, infliggendo ingenti <@ba.fire>danni da fuoco</> e applicando <#ba.fireinflict>Afflizione da fuoco</>.\n<@ba.info>Se l'abilità mette a segno un colpo critico, infligge danni critici maggiori.</>",
+      "stabAttackTotalDmgMultiplier": "Moltiplicatore danni totali pugnalata",
+      "seq1SlashDmgMultiplier": "Moltiplicatore danni fendente SEQ 1",
+      "seq2SlashDmgMultiplier": "Moltiplicatore danni fendente SEQ 2",
+      "stagger": "Vacillamento",
+      "criticalDmgBoost": "Potenziamento danni critici"
     },
     "indicator": {
       "levels": [

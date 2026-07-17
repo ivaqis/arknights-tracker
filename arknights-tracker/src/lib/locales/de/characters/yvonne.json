@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Überschwänglicher Auslöser",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Standard-SDN-Multiplikator",
-        "dmgMultiplierOfSolidificationApplied": "SDN-Multiplikator von Erstarrung angewendet",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
-        "stagger": "Taumeln",
-        "ultimateEnergyFromSolidificationApplied": "Ultimative Energie von Erstarrung angewendet",
-        "additionalUltimateEnergyGainPerInflictionStack": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung"
-      },
       "name": "Bibber-Bombe β",
-      "description": "Wirft eine Gefrierbombe. Die Bombe explodiert, wenn sie den Gegner trifft, und fügt ihm dabei <@ba.cryst>Kryo-SDN</> zu. Wird ein Gegner von <#ba.crystinflict>Kryo</>- oder <#ba.naturalinflict>Natur-Kumulierungen</> getroffen, werden alle <#ba.spellinflict>Technikkumulierungen</> <#ba.consume>verbraucht</>, er wird mit <#ba.frozen>Erstarrung</> belegt und ihm wird basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen <@ba.cryst>Kryo-SDN</> zugefügt.\nWenn die Kampffertigkeit erfolgreich <#ba.frozen>Erstarrung</> angewandt hat, erhält Yvonne basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen zusätzliche Ultimative Energie. Dieser Erhalt zusätzlicher Energie kann nur ein einziges Mal ausgelöst werden, auch wenn die Fertigkeit mehrere Gegner trifft."
+      "description": "Wirft eine Gefrierbombe. Die Bombe explodiert, wenn sie den Gegner trifft, und fügt ihm dabei <@ba.cryst>Kryo-SDN</> zu. Wird ein Gegner von <#ba.crystinflict>Kryo</>- oder <#ba.naturalinflict>Natur-Kumulierungen</> getroffen, werden alle <#ba.spellinflict>Technikkumulierungen</> <#ba.consume>verbraucht</>, er wird mit <#ba.frozen>Erstarrung</> belegt und ihm wird basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen <@ba.cryst>Kryo-SDN</> zugefügt.\nWenn die Kampffertigkeit erfolgreich <#ba.frozen>Erstarrung</> angewandt hat, erhält Yvonne basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen zusätzliche Ultimative Energie. Dieser Erhalt zusätzlicher Energie kann nur ein einziges Mal ausgelöst werden, auch wenn die Fertigkeit mehrere Gegner trifft.",
+      "baseDmgMultiplier": "Standard-SDN-Multiplikator",
+      "dmgMultiplierOfSolidificationApplied": "SDN-Multiplikator von Erstarrung angewendet",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
+      "stagger": "Taumeln",
+      "ultimateEnergyFromSolidificationApplied": "Ultimative Energie von Erstarrung angewendet",
+      "additionalUltimateEnergyGainPerInflictionStack": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Dauer (Sek.)",
-        "numberOfEnergyReleases": "Anzahl der Energiefreisetzungen",
-        "energyDmgMultiplier": "SDN-Multiplikator bei Energie",
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
-        "explosionStagger": "Explosions-Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
-        "additionalUltimateEnergyGain": "Zusätzlicher Ultimative-Energie-Erhalt"
-      },
       "name": "Schockfroster υ37",
-      "description": "KOMBOAUSLÖSER: Der von dir gesteuerte Operator führt einen <#ba.lastcombo>Abschlussangriff</> gegen einen mit <#ba.frozen>Erstarrung</> belegten Gegner aus. \nSetzt sofort Frost-Bytee neben dem Gegner ein. Solange er aktiv ist, setzt Frost-Bytee ständig Energie frei, um Gegner in der Nähe anzugreifen, ihnen <@ba.cryst>Kryo-SDN</> zuzufügen und sie zu sich zu <@ba.key>ziehen</>. Wenn der Einsatz von Frost-Bytee abläuft, explodiert er und belegt Gegner in der Nähe mit <#ba.frozen>Erstarrung</> und fügt ihnen <@ba.cryst>Kryo-SDN</> zu.\nWenn die Kombofertigkeit den Gegner erfolgreich getroffen hat, erhält Yvonne zusätzliche Ultimative Energie. Dieser Erhalt zusätzlicher Energie kann nur ein einziges Mal ausgelöst werden, auch wenn die Fertigkeit mehrere Gegner trifft."
+      "description": "KOMBOAUSLÖSER: Der von dir gesteuerte Operator führt einen <#ba.lastcombo>Abschlussangriff</> gegen einen mit <#ba.frozen>Erstarrung</> belegten Gegner aus. \nSetzt sofort Frost-Bytee neben dem Gegner ein. Solange er aktiv ist, setzt Frost-Bytee ständig Energie frei, um Gegner in der Nähe anzugreifen, ihnen <@ba.cryst>Kryo-SDN</> zuzufügen und sie zu sich zu <@ba.key>ziehen</>. Wenn der Einsatz von Frost-Bytee abläuft, explodiert er und belegt Gegner in der Nähe mit <#ba.frozen>Erstarrung</> und fügt ihnen <@ba.cryst>Kryo-SDN</> zu.\nWenn die Kombofertigkeit den Gegner erfolgreich getroffen hat, erhält Yvonne zusätzliche Ultimative Energie. Dieser Erhalt zusätzlicher Energie kann nur ein einziges Mal ausgelöst werden, auch wenn die Fertigkeit mehrere Gegner trifft.",
+      "durationS": "Dauer (Sek.)",
+      "numberOfEnergyReleases": "Anzahl der Energiefreisetzungen",
+      "energyDmgMultiplier": "SDN-Multiplikator bei Energie",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+      "explosionStagger": "Explosions-Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
+      "additionalUltimateEnergyGain": "Zusätzlicher Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Dauer (Sek.)",
-        "batkDmgMultiplier": "STD-ANG-SDN-Multiplikator",
-        "enhancedFinalStrikeDmgMultiplier": "Verbesserter SDN-Multiplikator bei Abschlussangriff",
-        "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
-        "enhancedFinalStrikeStagger": "Verbessertes Taumeln bei Abschlussangriff",
-        "maxStacks": "Max. Kumulierungen",
-        "criticalRateBoostPerStack": "Kritische-Rate-Boost pro Kumulierung",
-        "criticalDmgBoostAtMaxStacks": "Kritischer-SDN-Boost bei max. Kumulierungen"
-      },
       "name": "Kryo-Pistolero",
-      "description": "Setzt sofort den Unterstützungsbot Nas-E-Weis ein und macht Yvonne zur gesteuerten Operatorin.\n<@ba.key>Verbessert</> für kurze Zeit Yvonnes Standardangriff (STD-ANG). Jede verbesserte STD-ANG-Sequenz gewährt eine Kumulierung des Kritische-Rate-Buffs. Mit max. Kumulierungen erhält Yvonne außerdem einen Buff für ihren Kritischen SDN. Wenn die Fertigkeit fast abläuft, wird Yvonnes letzter verbesserter STD-ANG zu einem verbesserten <#ba.lastcombo>Abschlussangriff</>, der massiven <@ba.cryst>Kryo-SDN</> zufügt.\nWenn der Gegner <#ba.frozen>Erstarrt</> ist, führt Yvonne einen zusätzlichen Angriff aus, der <@ba.cryst>Kryo-SDN</> verursacht und dann die <#ba.frozen>Erstarrung</> des Gegners <#ba.consume>verbraucht</>."
+      "description": "Setzt sofort den Unterstützungsbot Nas-E-Weis ein und macht Yvonne zur gesteuerten Operatorin.\n<@ba.key>Verbessert</> für kurze Zeit Yvonnes Standardangriff (STD-ANG). Jede verbesserte STD-ANG-Sequenz gewährt eine Kumulierung des Kritische-Rate-Buffs. Mit max. Kumulierungen erhält Yvonne außerdem einen Buff für ihren Kritischen SDN. Wenn die Fertigkeit fast abläuft, wird Yvonnes letzter verbesserter STD-ANG zu einem verbesserten <#ba.lastcombo>Abschlussangriff</>, der massiven <@ba.cryst>Kryo-SDN</> zufügt.\nWenn der Gegner <#ba.frozen>Erstarrt</> ist, führt Yvonne einen zusätzlichen Angriff aus, der <@ba.cryst>Kryo-SDN</> verursacht und dann die <#ba.frozen>Erstarrung</> des Gegners <#ba.consume>verbraucht</>.",
+      "durationS": "Dauer (Sek.)",
+      "batkDmgMultiplier": "STD-ANG-SDN-Multiplikator",
+      "enhancedFinalStrikeDmgMultiplier": "Verbesserter SDN-Multiplikator bei Abschlussangriff",
+      "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
+      "enhancedFinalStrikeStagger": "Verbessertes Taumeln bei Abschlussangriff",
+      "maxStacks": "Max. Kumulierungen",
+      "criticalRateBoostPerStack": "Kritische-Rate-Boost pro Kumulierung",
+      "criticalDmgBoostAtMaxStacks": "Kritischer-SDN-Boost bei max. Kumulierungen"
     },
     "indicator": {
       "levels": [

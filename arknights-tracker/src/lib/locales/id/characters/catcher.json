@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Basic Tactics",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "protection": "Protection",
-        "spReturn": "Pengembalian SP"
-      },
       "name": "Rigid Interdiction",
-      "description": "Mengangkat perisai yang bisa menahan serangan, memberikan <#ba.guard>Protection</> kepada diri sendiri dan operator di sekitar, lalu langsung <#ba.return>mengembalikan</> sebagian SP. \nSaat diserang selagi perisai diangkat, dia akan melancarkan hantaman balasan yang akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> kepada musuh yang menyerang."
+      "description": "Mengangkat perisai yang bisa menahan serangan, memberikan <#ba.guard>Protection</> kepada diri sendiri dan operator di sekitar, lalu langsung <#ba.return>mengembalikan</> sebagian SP. \nSaat diserang selagi perisai diangkat, dia akan melancarkan hantaman balasan yang akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan 1 tumpuk <#ba.noguard>Vulnerability</> kepada musuh yang menyerang.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "protection": "Protection",
+      "spReturn": "Pengembalian SP"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "stagger": "Stagger",
-        "baseShield": "Perisai Dasar",
-        "shieldIncreasePerDefense": "Peningkatan Perisai per Pertahanan",
-        "shieldDurationS": "Durasi Perisai (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Timely Suppression",
-      "description": "PEMICU KOMBO: Saat musuh mulai mengisi kekuatan skill, atau saat operator terkontrol diserang dan HP turun hingga kurang dari {trigger_hp_ratio:0%}. \nPukulan keras ke bawah yang menimbulkan <@ba.pd>Physical DMG</> akan dilancarkan kepada musuh, serta memberikan <#ba.shield>perisai</> kepada diri sendiri dan satu rekan tim lain (prioritas kepada operator terkontrol).\nDEF bisa makin meningkatkan poin Perisai."
+      "description": "PEMICU KOMBO: Saat musuh mulai mengisi kekuatan skill, atau saat operator terkontrol diserang dan HP turun hingga kurang dari {trigger_hp_ratio:0%}. \nPukulan keras ke bawah yang menimbulkan <@ba.pd>Physical DMG</> akan dilancarkan kepada musuh, serta memberikan <#ba.shield>perisai</> kepada diri sendiri dan satu rekan tim lain (prioritas kepada operator terkontrol).\nDEF bisa makin meningkatkan poin Perisai.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "stagger": "Stagger",
+      "baseShield": "Perisai Dasar",
+      "shieldIncreasePerDefense": "Peningkatan Perisai per Pertahanan",
+      "shieldDurationS": "Durasi Perisai (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
-        "seq3Stagger": "SEQ 3 Stagger",
-        "weaknessEffect": "Efek Weakness",
-        "weaknessDurationS": "Durasi Weakness (dtk)"
-      },
       "name": "Textbook Assault",
-      "description": "Mengayunkan pedang besar untuk melancarkan 2 tebasan beruntun sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.weak>Weakness</>, lalu menghantam kuat ke bawah sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek."
+      "description": "Mengayunkan pedang besar untuk melancarkan 2 tebasan beruntun sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.weak>Weakness</>, lalu menghantam kuat ke bawah sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
+      "seq3Stagger": "SEQ 3 Stagger",
+      "weaknessEffect": "Efek Weakness",
+      "weaknessDurationS": "Durasi Weakness (dtk)"
     },
     "indicator": {
       "levels": [

@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Cooldown",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "Treatment Dasar",
-        "treatmentIncreasePerWill": "Peningkatan Treatment per Will",
-        "auxiliaryCrystalDurationS": "Durasi Kristal Bantuan (dtk)",
-        "artsAmp": "Arts Amp",
-        "artsAmpDurationS": "Durasi Arts Amp (dtk)"
-      },
       "name": "Distributed DoS",
-      "description": "Memanggil <@ba.key>Kristal Bantuan</> yang akan mengitari operator terkontrol untuk sementara waktu. \nSetelah operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh, <@ba.key>Kristal Bantuan</> akan memulihkan HP operator yang bersangkutan. Efek ini bisa diaktifkan 2 kali. Atribut Will akan meningkatkan jumlah HP treatment. \nJika operator terkontrol sudah mencapai HP Maks saat pemulihan HP diaktifkan, operator yang bersangkutan juga akan mendapatkan <#ba.spellenhance>Arts Amp</> untuk sementara. Efek ini tidak bisa ditumpuk."
+      "description": "Memanggil <@ba.key>Kristal Bantuan</> yang akan mengitari operator terkontrol untuk sementara waktu. \nSetelah operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh, <@ba.key>Kristal Bantuan</> akan memulihkan HP operator yang bersangkutan. Efek ini bisa diaktifkan 2 kali. Atribut Will akan meningkatkan jumlah HP treatment. \nJika operator terkontrol sudah mencapai HP Maks saat pemulihan HP diaktifkan, operator yang bersangkutan juga akan mendapatkan <#ba.spellenhance>Arts Amp</> untuk sementara. Efek ini tidak bisa ditumpuk.",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerWill": "Peningkatan Treatment per Will",
+      "auxiliaryCrystalDurationS": "Durasi Kristal Bantuan (dtk)",
+      "artsAmp": "Arts Amp",
+      "artsAmpDurationS": "Durasi Arts Amp (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Stress Testing",
-      "description": "PEMICU KOMBO: Saat <@ba.key>Kristal Bantuan</> memakai HP treatment hingga habis. \nKekuatan <@ba.key>Kristal Bantuan</> akan terisi dengan cepat, lalu dilontarkan ke arah musuh sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan <#ba.crystinflict>Cryo Infliction</>."
+      "description": "PEMICU KOMBO: Saat <@ba.key>Kristal Bantuan</> memakai HP treatment hingga habis. \nKekuatan <@ba.key>Kristal Bantuan</> akan terisi dengan cepat, lalu dilontarkan ke arah musuh sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> dan <#ba.crystinflict>Cryo Infliction</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "Cryo Amp Dasar",
-        "baseNatureAmp": "Nature Amp Dasar",
-        "ampIncreasePerIntellect": "Peningkatan Amp per Intellect",
-        "intellectRaisesAmpLimit": "Intellect menaikkan batas Amp",
-        "durationS": "Durasi (dtk)"
-      },
       "name": "Stack Overflow",
-      "description": "Memberikan <#ba.crystenhance>Cryo Amp</> dan <#ba.naturalenhance>Nature Amp</> untuk sementara kepada seluruh tim. Atribut Intellect akan meningkatkan efek Amp."
+      "description": "Memberikan <#ba.crystenhance>Cryo Amp</> dan <#ba.naturalenhance>Nature Amp</> untuk sementara kepada seluruh tim. Atribut Intellect akan meningkatkan efek Amp.",
+      "baseCryoAmp": "Cryo Amp Dasar",
+      "baseNatureAmp": "Nature Amp Dasar",
+      "ampIncreasePerIntellect": "Peningkatan Amp per Intellect",
+      "intellectRaisesAmpLimit": "Intellect menaikkan batas Amp",
+      "durationS": "Durasi (dtk)"
     },
     "indicator": {
       "levels": [

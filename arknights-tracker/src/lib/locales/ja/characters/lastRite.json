@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "氷霜の舞",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.cryst>寒冷ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.cryst>寒冷ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.cryst>寒冷ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.cryst>寒冷ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.cryst>寒冷ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.cryst>寒冷ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "幻影追撃ダメージ倍率",
-        "spReturn": "SP返還量",
-        "durationS": "持続時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "セシュカの秘伝",
-      "description": "操作中のオペレーターの武器に<@ba.key>低温注入</>を行い、SPが一定量<#ba.return>返還</>される。\n一定時間内、操作中のオペレーターの次の<#ba.lastcombo>重攻撃</>はラストライトの幻影を生成し、目標を追撃して<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。\n操作中のオペレーターがラストライトの場合、戦技を発動しても通常攻撃は中断されない。"
+      "description": "操作中のオペレーターの武器に<@ba.key>低温注入</>を行い、SPが一定量<#ba.return>返還</>される。\n一定時間内、操作中のオペレーターの次の<#ba.lastcombo>重攻撃</>はラストライトの幻影を生成し、目標を追撃して<@ba.cryst>寒冷ダメージ</>を与え、<#ba.crystinflict>寒冷付着</>を付与する。\n操作中のオペレーターがラストライトの場合、戦技を発動しても通常攻撃は中断されない。",
+      "mirageAdditionalAtkDmgMultiplier": "幻影追撃ダメージ倍率",
+      "spReturn": "SP返還量",
+      "durationS": "持続時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "氷柱ダメージ倍率",
-        "slashBaseDmgMultiplier": "斬撃基礎ダメージ倍率",
-        "slashStagger": "斬撃ブレイク値",
-        "bonusDmgMultiplierPerInflictionStack": "付着消費1段階ごとの追加ダメージ倍率",
-        "baseUltimateEnergyGain": "必殺チャージ基礎回復量",
-        "additionalUltimateEnergyGainPerInflictionStack": "付着消費1段階ごとの必殺チャージ追加回復量"
-      },
       "name": "冬喰",
-      "description": "敵の<#ba.crystinflict>寒冷付着</>状態が{count:0}段階以上になったときに発動可能。\n敵に氷柱を生成し、斬撃で砕く。敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>し、<#ba.consume>消費</>した<#ba.crystinflict>寒冷付着</>段階に応じて<@ba.cryst>寒冷ダメージ</>を与え、必殺チャージを回復する。"
+      "description": "敵の<#ba.crystinflict>寒冷付着</>状態が{count:0}段階以上になったときに発動可能。\n敵に氷柱を生成し、斬撃で砕く。敵の<#ba.crystinflict>寒冷付着</>をすべて<#ba.consume>消費</>し、<#ba.consume>消費</>した<#ba.crystinflict>寒冷付着</>段階に応じて<@ba.cryst>寒冷ダメージ</>を与え、必殺チャージを回復する。",
+      "iceShardDmgMultiplier": "氷柱ダメージ倍率",
+      "slashBaseDmgMultiplier": "斬撃基礎ダメージ倍率",
+      "slashStagger": "斬撃ブレイク値",
+      "bonusDmgMultiplierPerInflictionStack": "付着消費1段階ごとの追加ダメージ倍率",
+      "baseUltimateEnergyGain": "必殺チャージ基礎回復量",
+      "additionalUltimateEnergyGainPerInflictionStack": "付着消費1段階ごとの必殺チャージ追加回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "1段目ダメージ倍率",
-        "seq1Stagger": "1段目ブレイク値",
-        "seq2DmgMultiplier": "2段目ダメージ倍率",
-        "seq2Stagger": "2段目ブレイク値",
-        "seq3DmgMultiplier": "3段目ダメージ倍率",
-        "seq3Stagger": "3段目ブレイク値"
-      },
       "name": "終の別れ",
-      "description": "霜の鎧を纏い、氷の鎌を生成して前方に斬撃を3回放つ。この状態で受けるダメージはすべて無効になる。\nそれぞれの斬撃で高い<@ba.cryst>寒冷ダメージ</>を与える。\n<@ba.info>ラストライトの必殺チャージは、自身の戦技および連携技でのみ回復可能。</>"
+      "description": "霜の鎧を纏い、氷の鎌を生成して前方に斬撃を3回放つ。この状態で受けるダメージはすべて無効になる。\nそれぞれの斬撃で高い<@ba.cryst>寒冷ダメージ</>を与える。\n<@ba.info>ラストライトの必殺チャージは、自身の戦技および連携技でのみ回復可能。</>",
+      "seq1DmgMultiplier": "1段目ダメージ倍率",
+      "seq1Stagger": "1段目ブレイク値",
+      "seq2DmgMultiplier": "2段目ダメージ倍率",
+      "seq2Stagger": "2段目ブレイク値",
+      "seq3DmgMultiplier": "3段目ダメージ倍率",
+      "seq3Stagger": "3段目ブレイク値"
     },
     "indicator": {
       "levels": [

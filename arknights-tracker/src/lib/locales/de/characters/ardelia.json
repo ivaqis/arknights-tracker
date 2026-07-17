@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Felsgeflüster",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "susceptibility": "Empfänglichkeit",
-        "susceptibilityDurationS": "Dauer der Empfänglichkeit (Sek.)"
-      },
       "name": "Dolly-Rausch",
-      "description": "Steigt auf Herrn Dolly und rammt das Ziel, um <@ba.natur>Natur-SDN</> zu verursachen. Wenn das Ziel mit <#ba.corrupt>Korrosion</> belegt ist, wird seine <#ba.corrupt>Korrosion</> <#ba.consume>verbraucht</> und das Ziel wird mit <#ba.physicalvul>Physisch-Empfänglichkeit</> und <#ba.spellvul>Technik-Empfänglichkeit</> belegt."
+      "description": "Steigt auf Herrn Dolly und rammt das Ziel, um <@ba.natur>Natur-SDN</> zu verursachen. Wenn das Ziel mit <#ba.corrupt>Korrosion</> belegt ist, wird seine <#ba.corrupt>Korrosion</> <#ba.consume>verbraucht</> und das Ziel wird mit <#ba.physicalvul>Physisch-Empfänglichkeit</> und <#ba.spellvul>Technik-Empfänglichkeit</> belegt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "susceptibility": "Empfänglichkeit",
+      "susceptibilityDurationS": "Dauer der Empfänglichkeit (Sek.)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "corrodeDurationS": "Dauer: Korrodieren (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Eruptionssäule",
-      "description": "KOMBOAUSLÖSER: Wenn der von dir gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> gegen einen Gegner ausführt, der <@ba.key>nicht</> mit einer <#ba.noguard>Anfälligkeit-</> oder <#ba.spellinflict>Technikkumulierung</> belegt wurde. \nSchleudert eine Vulkanwolke auf den Zielgegner, die <@ba.natur>Natur-SDN</> verursacht. Die Wolke explodiert nach einer kurzen Verzögerung, fügt Gegnern in der Nähe die Hälfte des <@ba.natur>Natur-SDN</> zu und belegt sie vorübergehend mit <#ba.corrupt>Korrosion</>."
+      "description": "KOMBOAUSLÖSER: Wenn der von dir gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> gegen einen Gegner ausführt, der <@ba.key>nicht</> mit einer <#ba.noguard>Anfälligkeit-</> oder <#ba.spellinflict>Technikkumulierung</> belegt wurde. \nSchleudert eine Vulkanwolke auf den Zielgegner, die <@ba.natur>Natur-SDN</> verursacht. Die Wolke explodiert nach einer kurzen Verzögerung, fügt Gegnern in der Nähe die Hälfte des <@ba.natur>Natur-SDN</> zu und belegt sie vorübergehend mit <#ba.corrupt>Korrosion</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "corrodeDurationS": "Dauer: Korrodieren (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "durationS": "Dauer (Sek.)"
-      },
       "name": "Wollparty",
-      "description": "Ardelia versetzt sich in einen Kanalisierungszustand, ruft Herrn Dolly zu Hilfe und schleudert mehrere Kopien von Herrn Dolly in willkürliche Richtungen. Jede Kopie verursacht <@ba.natur>Natur-SDN</>, wenn sie den Gegner trifft. Jeder Gegner kann nur alle {interval:0.0} Sek. 1-mal von einer Kopie getroffen werden."
+      "description": "Ardelia versetzt sich in einen Kanalisierungszustand, ruft Herrn Dolly zu Hilfe und schleudert mehrere Kopien von Herrn Dolly in willkürliche Richtungen. Jede Kopie verursacht <@ba.natur>Natur-SDN</>, wenn sie den Gegner trifft. Jeder Gegner kann nur alle {interval:0.0} Sek. 1-mal von einer Kopie getroffen werden.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "durationS": "Dauer (Sek.)"
     },
     "indicator": {
       "levels": [

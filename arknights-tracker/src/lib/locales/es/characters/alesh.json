@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Lanzamiento con caña básico",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "spRecoveryByConsuming1InflictionStack": "Rec. de PH al Consumir 1 Acumulación de imposición.",
-        "spRecoveryByConsuming2InflictionStacks": "Rec. de PH al Consumir 2 acumulaciones de imposición.",
-        "spRecoveryByConsuming3InflictionStacks": "Rec. de PH al Consumir 3 acumulaciones de imposición.",
-        "spRecoveryByConsuming4InflictionStacks": "Rec. de PH al Consumir 4 acumulaciones de imposición.",
-        "stagger": "Tambaleo"
-      },
       "name": "Anzuelo poco convencional",
-      "description": "Engancha un bloque de hielo y lo azota para infligir <@ba.pd>DAÑ físico</> al enemigo objetivo. Al golpear a un objetivo con <#ba.crystinflict>Imposición criogénica</>, Alesh <#ba.consume>consume</> todas las acumulaciones de <#ba.crystinflict>Imposición criogénica</> del objetivo, aplica <#ba.frozen>Solidificación</> forzada y recupera algunos PH según la cantidad de acumulaciones <#ba.consume>consumidas</>. Este efecto de recuperación de PH solo puede activarse 1 vez, aunque la habilidad golpee a varios enemigos."
+      "description": "Engancha un bloque de hielo y lo azota para infligir <@ba.pd>DAÑ físico</> al enemigo objetivo. Al golpear a un objetivo con <#ba.crystinflict>Imposición criogénica</>, Alesh <#ba.consume>consume</> todas las acumulaciones de <#ba.crystinflict>Imposición criogénica</> del objetivo, aplica <#ba.frozen>Solidificación</> forzada y recupera algunos PH según la cantidad de acumulaciones <#ba.consume>consumidas</>. Este efecto de recuperación de PH solo puede activarse 1 vez, aunque la habilidad golpee a varios enemigos.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "spRecoveryByConsuming1InflictionStack": "Rec. de PH al Consumir 1 Acumulación de imposición.",
+      "spRecoveryByConsuming2InflictionStacks": "Rec. de PH al Consumir 2 acumulaciones de imposición.",
+      "spRecoveryByConsuming3InflictionStacks": "Rec. de PH al Consumir 3 acumulaciones de imposición.",
+      "spRecoveryByConsuming4InflictionStacks": "Rec. de PH al Consumir 4 acumulaciones de imposición.",
+      "stagger": "Tambaleo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "chanceToCatchTheRareFin": "Probabilidad de atrapar la Aleta rara",
-        "enhancedDmgMultiplier": "Multiplicador de DAÑ potenciado",
-        "spRecovery": "Rec. de PH",
-        "bonusSpRecovery": "Recuperación adicional de PH",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Pesca con barrena",
-      "description": "ACTIVADOR DE COMBO: Cuando la <#ba.spellstatus>Reacción a Artes</> o los <#ba.originium>Cristales de Originio</> de un objetivo cercano se <#ba.consume>consumen</>. \nAbre un agujero de pesca bajo el enemigo que inflige <@ba.pd>DAÑ físico</> y recupera algo de PH. La habilidad tiene probabilidad de enganchar una <@ba.key>Aleta rara</> que aumenta enormemente el DAÑ infligido y recupera algo más de PH."
+      "description": "ACTIVADOR DE COMBO: Cuando la <#ba.spellstatus>Reacción a Artes</> o los <#ba.originium>Cristales de Originio</> de un objetivo cercano se <#ba.consume>consumen</>. \nAbre un agujero de pesca bajo el enemigo que inflige <@ba.pd>DAÑ físico</> y recupera algo de PH. La habilidad tiene probabilidad de enganchar una <@ba.key>Aleta rara</> que aumenta enormemente el DAÑ infligido y recupera algo más de PH.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "chanceToCatchTheRareFin": "Probabilidad de atrapar la Aleta rara",
+      "enhancedDmgMultiplier": "Multiplicador de DAÑ potenciado",
+      "spRecovery": "Rec. de PH",
+      "bonusSpRecovery": "Recuperación adicional de PH",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "Multiplicador de DAÑ de Máxima",
-        "baseSpRecovery": "Recuperación de PH de base",
-        "bonusSpRecoveryPerTargetDefeated": "Recuperación de PH adicional por Objetivo derrotado",
-        "spRecoveryLimit": "Límite de Recuperación de PH",
-        "stagger": "Tambaleo"
-      },
       "name": "¡Una captura monstruosa!",
-      "description": "Alesh engancha una aleta de tamaño increíble y la azota para infligir <@ba.cryst>DAÑ criogénico</> y aplicar <#ba.crystinflict>Imposición criogénica</> a los enemigos en un área de efecto grande frente a él. Recupera algo de PH al impactar y obtiene PH adicional por cada objetivo derrotado."
+      "description": "Alesh engancha una aleta de tamaño increíble y la azota para infligir <@ba.cryst>DAÑ criogénico</> y aplicar <#ba.crystinflict>Imposición criogénica</> a los enemigos en un área de efecto grande frente a él. Recupera algo de PH al impactar y obtiene PH adicional por cada objetivo derrotado.",
+      "ultimateDmgMultiplier": "Multiplicador de DAÑ de Máxima",
+      "baseSpRecovery": "Recuperación de PH de base",
+      "bonusSpRecoveryPerTargetDefeated": "Recuperación de PH adicional por Objetivo derrotado",
+      "spRecoveryLimit": "Límite de Recuperación de PH",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

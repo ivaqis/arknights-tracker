@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Interdicción de artillería",
-      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.natur>DAÑ por naturaleza</> masivo y recupera algo de PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nUn ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige <@ba.natur>DAÑ por naturaleza</> masivo y recupera algo de PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador de ATQ de Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Red triturajade",
-      "description": "Crea una <@ba.key>Red triturajade</> que inflige <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos dentro del área de efecto."
+      "description": {
+        "main": "Crea una <@ba.key>Red triturajade</> que inflige <@ba.natur>DAÑ por naturaleza</> y aplica <#ba.naturalinflict>Imposición de naturaleza</> a los enemigos dentro del área de efecto.",
+        "conditionName1": "Arcano de matriz: INT",
+        "conditionDesc1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> está ACTIVA.*/",
+        "conditionPostDesc1": "<@ba.key>Arcano de matriz: INT</>:\n- Inflige más DAÑ.",
+        "conditionDescInactive1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) < Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> NO está ACTIVO.*/",
+        "conditionName2": "Arcano de matriz: VOL",
+        "conditionDesc2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) > Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> está ACTIVA.*/",
+        "conditionPostDesc2": "<@ba.key>Arcano de matriz: VOL</>:\n- Al infligir DAÑ, la matriz también <@ba.key>atrae</> a los enemigos dentro del área de efecto.",
+        "conditionDescInactive2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) ≤ Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> NO está ACTIVA.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "Multiplicador de DAÑ"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "Multiplicador de DAÑ"
+      },
+      "stagger": "Tambaleo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Multiplicador de DAÑ base",
-        "baseStagger": "Tambaleo base",
+      "name": "Postura de Yinglung IV",
+      "description": {
+        "conditionName1": "Arcano de matriz: INT",
+        "conditionDesc1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> está ACTIVA.*/",
+        "conditionPostDesc1": "ACTIVADOR DE COMBO: Cuando se aplica <#ba.naturalinflict>Imposición de naturaleza</> o al menos 2 acumulaciones de <#ba.spellinflict>Imposición de artes que no sea de naturaleza</> a un enemigo.\nArcane arremete contra el objetivo y despliega 4 <@ba.key>Dobles tácticos</> que aplican <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> infligen <@ba.natur>DAÑ por naturaleza</> al objetivo y a los enemigos cercanos, y también aplican <@ba.key>Aprisionamiento</> al objetivo. Cuando <@ba.key>Aprisionamiento</> termina, los <@ba.key>Dobles tácticos</> atacarán a dicho objetivo para infligir DAÑ de explosión.\n<@ba.key>Aprisionamiento</>: Una penalización que ralentiza todas las acciones.\n<@ba.key>Arcano de matriz: INT</>:\n- Golpear con la habilidad de batalla de Arcane a un enemigo bajo los efectos de <@ba.key>Aprisionamiento</> <#ba.return>devuelve</> cierta cantidad de PH, finaliza el <@ba.key>Aprisionamiento</> antes de tiempo, inflige DAÑ de explosión, aplica otra acumulación de <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</>, e inflige varios golpes de DAÑ adicional tras un breve intervalo.\n- El tiempo de reutilización de la habilidad de combo es más corto.",
+        "conditionDescInactive1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) < Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> NO está ACTIVO.*/",
+        "conditionName2": "Arcano de matriz: VOL",
+        "conditionDesc2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) > Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> está ACTIVA.*/",
+        "conditionPostDesc2": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellinflict>Imposición de artes</> a un enemigo.\nArcane carga contra el objetivo y despliega 4 <@ba.key>Dobles tácticos</> que infligen <@ba.natur>DAÑ por naturaleza</> y aplican otra acumulación de <#ba.spellinflict>Imposición de artes</> del mismo elemento, <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> al objetivo y a los enemigos cercanos, y también aplican <@ba.key>Aprisionamiento</> a dicho objetivo. Cuando <@ba.key>Aprisionamiento</> termina, los <@ba.key>Dobles tácticos</> atacarán a dicho objetivo para infligir DAÑ de explosión.\n<@ba.key>Aprisionamiento</>: Una penalización que ralentiza todas las acciones.\n<@ba.key>Arcano de matriz: VOL</>:\n- Aplicar <@ba.key>Aprisionamiento</> al lanzar una habilidad de combo también <@ba.key>atrae</> ligeramente a los enemigos cercanos al objetivo.\n- El atributo Voluntad puede aumentar aún más los efectos de <#ba.naturalvul>Susceptibilidad a la naturaleza</> y <#ba.crystvul>Susceptibilidad criogénica</> aplicados por la habilidad de combo.",
+        "conditionDescInactive2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) ≤ Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> NO está ACTIVA.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Duración de Aprisionamiento y Susceptibilidad (s)",
         "susceptibility": "Susceptibilidad",
-        "baseSusceptibility": "Susceptibilidad base",
-        "maxBonusSusceptibilityFromWill": "Susceptibilidad adicional Máx. por Voluntad",
-        "willRequiredForMaxBonusSusceptibility": "Voluntad requerida para la Susceptibilidad adicional Máx.",
-        "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión",
-        "explosionStagger": "Tambaleo por Explosión",
         "bonusDmgMultiplier": "Multiplicador de DAÑ adicional",
         "bonusSusceptibilityDurationS": "Duración de Susceptibilidad adicional (s)",
-        "spReturn": "Retorno de PH",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
+        "spReturn": "Retorno de PH"
       },
-      "name": "Postura de Yinglung IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Duración de Aprisionamiento y Susceptibilidad (s)",
+        "baseSusceptibility": "Susceptibilidad base",
+        "maxBonusSusceptibilityFromWill": "Susceptibilidad adicional Máx. por Voluntad",
+        "willRequiredForMaxBonusSusceptibility": "Voluntad requerida para la Susceptibilidad adicional Máx."
+      },
+      "baseDmgMultiplier": "Multiplicador de DAÑ base",
+      "baseStagger": "Tambaleo base",
+      "explosionDmgMultiplier": "Multiplicador de DAÑ por explosión",
+      "explosionStagger": "Tambaleo por Explosión",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Multiplicador de DAÑ por Creación de Matriz de purgasombras",
-        "gloompurgerArrayCreationStagger": "Tambaleo por Creación de Matriz de purgasombras",
-        "gloompurgerArrayDurationS": "Duración de la Matriz de purgasombras (s)",
+      "name": "Purgasombras",
+      "description": {
+        "main": "Arcane crea una <@ba.key>Matriz de purgasombras</> que inflige inmediatamente <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro del área de efecto (ADE).\nAl golpear a un enemigo dentro de la <@ba.key>Matriz de purgasombras</> con un Remate o un <#ba.lastcombo>Golpe final</> ejecutado por el operador controlado, la <@ba.key>Matriz de purgasombras</> desata un <@ba.key>Ataque de racimo</> que inflige DAÑ de área a dicho enemigo. Este efecto se activa hasta 2 veces.\nDespués de activar <@ba.key>Ataque de racimo</> 2 veces, la máxima cambia a <@ba.key>Arcano de purgasombras</>.\n<@ba.key>Arcano de purgasombras</>: Inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro de un ADE grande.",
+        "conditionName1": "Arcano de matriz: INT",
+        "conditionDesc1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> está ACTIVA.*/",
+        "conditionPostDesc1": "<@ba.key>Arcano de matriz: INT</>:\nAl crearse, la <@ba.key>Matriz de purgasombras</> también aplica <#ba.corrupt>Corrosión</> forzada a los enemigos en el ADE.",
+        "conditionDescInactive1": "/*Intelecto (<@ba.vup>{floor:deck_wisd:0}</>) < Voluntad (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Arcano de matriz: INT</> NO está ACTIVO.*/",
+        "conditionName2": "Arcano de matriz: VOL",
+        "conditionDesc2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) > Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> está ACTIVA.*/",
+        "conditionPostDesc2": "<@ba.key>Arcano de matriz: VOL</>:\nAl crearse, la <@ba.key>Matriz de purgasombras</> también selecciona como objetivo a los enemigos con <#ba.spellinflict>Imposición de artes</> dentro de su ADE y les aplica otra acumulación de <#ba.spellinflict>Imposición de artes</> del mismo elemento.",
+        "conditionDescInactive2": "/*Voluntad (<@ba.vup>{floor:deck_will:0}</>) ≤ Intelecto (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcano de matriz: VOL</> NO está ACTIVA.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Duración de Corrosión forzada (s)",
         "clusterStrikeTotalDmgMultiplier": "Multiplicador de DAÑ total de Ataque de racimo",
-        "gloompurgeArcanaDmgMultiplier": "Multiplicador de DAÑ de Arcano de purgasombras",
-        "gloompurgeArcanaStagger": "Tambaleo por Arcano de purgasombras"
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador de DAÑ de Arcano de purgasombras"
       },
-      "name": "Purgasombras",
-      "description": "Arcane crea una <@ba.key>Matriz de purgasombras</> que inflige inmediatamente <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro del área de efecto (ADE).\nAl golpear a un enemigo dentro de la <@ba.key>Matriz de purgasombras</> con un Remate o un <#ba.lastcombo>Golpe final</> ejecutado por el operador controlado, la <@ba.key>Matriz de purgasombras</> desata un <@ba.key>Ataque de racimo</> que inflige DAÑ de área a dicho enemigo. Este efecto se activa hasta 2 veces.\nDespués de activar <@ba.key>Ataque de racimo</> 2 veces, la máxima cambia a <@ba.key>Arcano de purgasombras</>.\n<@ba.key>Arcano de purgasombras</>: Inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos dentro de un ADE grande."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicador de DAÑ total de Ataque de racimo",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicador de DAÑ de Arcano de purgasombras"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Multiplicador de DAÑ por Creación de Matriz de purgasombras",
+      "gloompurgerArrayCreationStagger": "Tambaleo por Creación de Matriz de purgasombras",
+      "gloompurgerArrayDurationS": "Duración de la Matriz de purgasombras (s)",
+      "gloompurgeArcanaStagger": "Tambaleo por Arcano de purgasombras"
     },
     "indicator": {
       "levels": [

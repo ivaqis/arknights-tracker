@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Corriente de intercambio",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "durationS": "Duración (s)",
-        "electricSusceptibility": "Susceptibilidad eléctrica",
-        "heatSusceptibility": "Susceptibilidad al calor"
-      },
       "name": "Sujeto de investigación especificado",
-      "description": "Aplica <@ba.key>Enfoque</> de larga duración al enemigo e inflige <@ba.pulse>DAÑ eléctrico</>. Un enemigo con <@ba.key>Enfoque</> activo también sufre <#ba.pulsevul>Susceptibilidad eléctrica</> y <#ba.firevul>Susceptibilidad de calor</>. El <@ba.key>Enfoque</> solo puede aplicarse a 1 enemigo a la vez."
+      "description": "Aplica <@ba.key>Enfoque</> de larga duración al enemigo e inflige <@ba.pulse>DAÑ eléctrico</>. Un enemigo con <@ba.key>Enfoque</> activo también sufre <#ba.pulsevul>Susceptibilidad eléctrica</> y <#ba.firevul>Susceptibilidad de calor</>. El <@ba.key>Enfoque</> solo puede aplicarse a 1 enemigo a la vez.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "durationS": "Duración (s)",
+      "electricSusceptibility": "Susceptibilidad eléctrica",
+      "heatSusceptibility": "Susceptibilidad al calor"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Zona de pruebas EMP",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo con <@ba.key>enfoque activo</> sufre un <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>. \nDesencadena una explosión de energía en el enemigo que inflige <@ba.pulse>DAÑ eléctrico</> y aplica una acumulación adicional del mismo <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo con <@ba.key>enfoque activo</> sufre un <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>. \nDesencadena una explosión de energía en el enemigo que inflige <@ba.pulse>DAÑ eléctrico</> y aplica una acumulación adicional del mismo <#ba.physicalstatus>Estado físico</> o <#ba.spellinflict>Imposición de artes</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Amp eléctrico",
-        "heatAmp": "Amp de calor",
-        "durationS": "Duración (s)"
-      },
       "name": "Momento sobreacelerado",
-      "description": "Aplica <#ba.pulseenhance>Amp eléctrica</> temporal y <#ba.fireenhance>Amp de calor</> temporal a todo el equipo."
+      "description": "Aplica <#ba.pulseenhance>Amp eléctrica</> temporal y <#ba.fireenhance>Amp de calor</> temporal a todo el equipo.",
+      "electricAmp": "Amp eléctrico",
+      "heatAmp": "Amp de calor",
+      "durationS": "Duración (s)"
     },
     "indicator": {
       "levels": [

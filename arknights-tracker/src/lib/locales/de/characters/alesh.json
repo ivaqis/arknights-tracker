@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Grundlegender Angelwurf",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "spRecoveryByConsuming1InflictionStack": "FP-Wiederherstellung durch Verbrauch von 1 Zufügungskumulierung",
-        "spRecoveryByConsuming2InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 2 Zufügungskumulierung",
-        "spRecoveryByConsuming3InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 3 Zufügungskumulierung",
-        "spRecoveryByConsuming4InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 4 Zufügungskumulierung",
-        "stagger": "Taumeln"
-      },
       "name": "Unkonventioneller Köder",
-      "description": "Hakt sich in einem Eisblock ein und schlägt diesen auf das gegnerische Ziel, um <@ba.pd>Physischen SDN</> zu verursachen. Wenn das getroffene Ziel aktiv mit <#ba.crystinflict>Kryo</> belegt ist, <#ba.consume>verbraucht</> Alesh alle <#ba.crystinflict>Kryo</>-Kumulierungen des Ziels, belegt es mit <#ba.frozen>Erstarrung</> und stellt einige FP wieder her, basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen. Die FP-Wiederherstellung wird nur ein einziges Mal ausgelöst, auch wenn die Fertigkeit mehrere Gegner trifft."
+      "description": "Hakt sich in einem Eisblock ein und schlägt diesen auf das gegnerische Ziel, um <@ba.pd>Physischen SDN</> zu verursachen. Wenn das getroffene Ziel aktiv mit <#ba.crystinflict>Kryo</> belegt ist, <#ba.consume>verbraucht</> Alesh alle <#ba.crystinflict>Kryo</>-Kumulierungen des Ziels, belegt es mit <#ba.frozen>Erstarrung</> und stellt einige FP wieder her, basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen. Die FP-Wiederherstellung wird nur ein einziges Mal ausgelöst, auch wenn die Fertigkeit mehrere Gegner trifft.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "spRecoveryByConsuming1InflictionStack": "FP-Wiederherstellung durch Verbrauch von 1 Zufügungskumulierung",
+      "spRecoveryByConsuming2InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 2 Zufügungskumulierung",
+      "spRecoveryByConsuming3InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 3 Zufügungskumulierung",
+      "spRecoveryByConsuming4InflictionStacks": "FP-Wiederherstellung durch Verbrauch von 4 Zufügungskumulierung",
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "chanceToCatchTheRareFin": "Chance auf Fangen des seltenen Flösslers",
-        "enhancedDmgMultiplier": "Verbesserter SDN-Multiplikator",
-        "spRecovery": "FP-Wiederherstellung",
-        "bonusSpRecovery": "Bonus-FP-Wiederherstellung",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Schneckenangeln",
-      "description": "KOMBOAUSLÖSER: Wenn die <#ba.spellstatus>Technikreaktion</> oder die <#ba.originium>Originium-Kristalle</> eines Ziels in der Nähe <#ba.consume>verbraucht</> wird bzw. werden. \nÖffnet ein Angelloch unter dem Gegner, das <@ba.pd>Physischen SDN</> verursacht und einige FP wiederherstellt. Die Fertigkeit hat die Chance, einen <@ba.key>Seltenen Flössler</> zu fangen, der den verursachten SDN deutlich erhöht und noch mehr FP wiederherstellt."
+      "description": "KOMBOAUSLÖSER: Wenn die <#ba.spellstatus>Technikreaktion</> oder die <#ba.originium>Originium-Kristalle</> eines Ziels in der Nähe <#ba.consume>verbraucht</> wird bzw. werden. \nÖffnet ein Angelloch unter dem Gegner, das <@ba.pd>Physischen SDN</> verursacht und einige FP wiederherstellt. Die Fertigkeit hat die Chance, einen <@ba.key>Seltenen Flössler</> zu fangen, der den verursachten SDN deutlich erhöht und noch mehr FP wiederherstellt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "chanceToCatchTheRareFin": "Chance auf Fangen des seltenen Flösslers",
+      "enhancedDmgMultiplier": "Verbesserter SDN-Multiplikator",
+      "spRecovery": "FP-Wiederherstellung",
+      "bonusSpRecovery": "Bonus-FP-Wiederherstellung",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "Ultimativer SDN-Multiplikator",
-        "baseSpRecovery": "Grund-FP-Wiederherstellung",
-        "bonusSpRecoveryPerTargetDefeated": "Bonus-FP-Wiederherstellung pro besiegtes Ziel",
-        "spRecoveryLimit": "FP-Wiederherstellung-Limit",
-        "stagger": "Taumeln"
-      },
       "name": "Ein Monsterfang!",
-      "description": "Alesh hakt sich in einen Flössler unglaublicher Größe und schlägt damit zu, wodurch alle Gegner in einem großen Wirkungsbereich vor ihm <@ba.cryst>Kryo-SDN</> erleiden und mit <#ba.crystinflict>Kryo</> belegt werden. Bei einem Treffer stellt er einige FP wieder her, wobei für jeden besiegten Gegner zusätzliche FP wiederhergestellt werden."
+      "description": "Alesh hakt sich in einen Flössler unglaublicher Größe und schlägt damit zu, wodurch alle Gegner in einem großen Wirkungsbereich vor ihm <@ba.cryst>Kryo-SDN</> erleiden und mit <#ba.crystinflict>Kryo</> belegt werden. Bei einem Treffer stellt er einige FP wieder her, wobei für jeden besiegten Gegner zusätzliche FP wiederhergestellt werden.",
+      "ultimateDmgMultiplier": "Ultimativer SDN-Multiplikator",
+      "baseSpRecovery": "Grund-FP-Wiederherstellung",
+      "bonusSpRecoveryPerTargetDefeated": "Bonus-FP-Wiederherstellung pro besiegtes Ziel",
+      "spRecoveryLimit": "FP-Wiederherstellung-Limit",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Attaque totale",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "spRecoveryByConsuming1VulnerabilityStack": "Récupération de PC en consommant 1 cumul de Vulnérabilité",
-        "spRecoveryByConsuming2VulnerabilityStacks": "Récupération de PC en consommant 2 cumuls de Vulnérabilité",
-        "spRecoveryByConsuming3VulnerabilityStacks": "Récupération de PC en consommant 3 cumuls de Vulnérabilité",
-        "spRecoveryByConsuming4VulnerabilityStacks": "Récupération de PC en consommant 4 cumuls de Vulnérabilité"
-      },
       "name": "Front pulvérisant",
-      "description": "Pogranichnik exécute une attaque tranchante à 2 séquences sur les ennemis devant lui, leur infligeant des <@ba.pd>DÉG physiques</> ainsi qu'un effet de <#ba.fracture>Brèche</>. Il récupère également des PC en fonction du nombre de cumuls de Vulnérabilité <#ba.consume>consommés</>. L'effet de récupération de PC ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs cibles."
+      "description": "Pogranichnik exécute une attaque tranchante à 2 séquences sur les ennemis devant lui, leur infligeant des <@ba.pd>DÉG physiques</> ainsi qu'un effet de <#ba.fracture>Brèche</>. Il récupère également des PC en fonction du nombre de cumuls de Vulnérabilité <#ba.consume>consommés</>. L'effet de récupération de PC ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs cibles.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "spRecoveryByConsuming1VulnerabilityStack": "Récupération de PC en consommant 1 cumul de Vulnérabilité",
+      "spRecoveryByConsuming2VulnerabilityStacks": "Récupération de PC en consommant 2 cumuls de Vulnérabilité",
+      "spRecoveryByConsuming3VulnerabilityStacks": "Récupération de PC en consommant 3 cumuls de Vulnérabilité",
+      "spRecoveryByConsuming4VulnerabilityStacks": "Récupération de PC en consommant 4 cumuls de Vulnérabilité"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq1SpRecovery": "Récupération de PC SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "seq2SpRecovery": "Récupération de PC SÉQ 2",
-        "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
-        "seq3Stagger": "Déséquilibre de SÉQ 3",
-        "seq3SpRecovery": "Récupération de PC SÉQ 3",
-        "enhancedSeq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3 amélioré",
-        "enhancedSeq3Stagger": "Déséquilibre de SÉQ 3 amélioré",
-        "enhancedSeq3SpRecovery": "Récupération de PC SÉQ 3 améliorée",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Entaille lunaire",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'effet de <#ba.crush>Broyage</> ou de <#ba.fracture>Brèche</> <#ba.consume>consomme</> les cumuls de <#ba.noguard>Vulnérabilité</> de l'ennemi. \nExécute plusieurs séquences d'entailles (jusqu'à un maximum de 3) en fonction de la quantité maximale de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommée</> sur un ennemi. Celles-ci infligent des <@ba.pd>DÉG physiques</> et restaurent quelques PC. Chaque entaille inflige davantage de DÉG et permet de récupérer plus de PC. \n<@ba.info>Consommer 4 cumuls de Vulnérabilité augmente les effets de la 3e séquence d'entailles.</>"
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'effet de <#ba.crush>Broyage</> ou de <#ba.fracture>Brèche</> <#ba.consume>consomme</> les cumuls de <#ba.noguard>Vulnérabilité</> de l'ennemi. \nExécute plusieurs séquences d'entailles (jusqu'à un maximum de 3) en fonction de la quantité maximale de cumuls de <#ba.noguard>Vulnérabilité</> <#ba.consume>consommée</> sur un ennemi. Celles-ci infligent des <@ba.pd>DÉG physiques</> et restaurent quelques PC. Chaque entaille inflige davantage de DÉG et permet de récupérer plus de PC. \n<@ba.info>Consommer 4 cumuls de Vulnérabilité augmente les effets de la 3e séquence d'entailles.</>",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq1SpRecovery": "Récupération de PC SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "seq2SpRecovery": "Récupération de PC SÉQ 2",
+      "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
+      "seq3Stagger": "Déséquilibre de SÉQ 3",
+      "seq3SpRecovery": "Récupération de PC SÉQ 3",
+      "enhancedSeq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3 amélioré",
+      "enhancedSeq3Stagger": "Déséquilibre de SÉQ 3 amélioré",
+      "enhancedSeq3SpRecovery": "Récupération de PC SÉQ 3 améliorée",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "Durée du serment d'acier",
-        "advanceDmgMultiplier": "Multiplicateur de DÉG avancés",
-        "advanceStagger": "Déséquilibre avancé",
-        "harassDmgMultiplier": "Multiplicateur de DÉG de Harcèlement",
-        "harassSpRecovery": "Récupération de PC avec le Harcèlement",
-        "decisiveAssaultDmgMultiplier": "Multiplicateur de DÉG de l'attaque décisive",
-        "decisiveAssaultStagger": "Déséquilibre après l'attaque décisive",
-        "decisiveAssaultSpRecovery": "Récupération de PC avec l'attaque décisive"
-      },
       "name": "Bannière de l'égide, en avant",
-      "description": "Invoque 4 égides qui permettent d'avancer et de repousser tous les ennemis qui se trouvent sur le chemin, leur infligeant des <@ba.pd>DÉG physiques</> tout en générant 5 points de <@ba.key>Serment d'acier</>. Lorsqu'un ennemi est victime d'un <#ba.physicalstatus>statut physique</> ou se voit infliger des DÉG par la compétence de combo de Pogranichnik, ce dernier consomme 1 point de <@ba.key>Serment d'acier</> et invoque 1 égide pour harceler l'ennemi en question, lui infligeant des <@ba.pd>DÉG physiques</> et restaurant quelques PC. Lorsque le dernier point de <@ba.key>Serment d'acier</> est consommé, les 4 égides initient une attaque décisive qui inflige d'importants <@ba.pd>DÉG physiques</> à la cible tout en restaurant une grande quantité de PC."
+      "description": "Invoque 4 égides qui permettent d'avancer et de repousser tous les ennemis qui se trouvent sur le chemin, leur infligeant des <@ba.pd>DÉG physiques</> tout en générant 5 points de <@ba.key>Serment d'acier</>. Lorsqu'un ennemi est victime d'un <#ba.physicalstatus>statut physique</> ou se voit infliger des DÉG par la compétence de combo de Pogranichnik, ce dernier consomme 1 point de <@ba.key>Serment d'acier</> et invoque 1 égide pour harceler l'ennemi en question, lui infligeant des <@ba.pd>DÉG physiques</> et restaurant quelques PC. Lorsque le dernier point de <@ba.key>Serment d'acier</> est consommé, les 4 égides initient une attaque décisive qui inflige d'importants <@ba.pd>DÉG physiques</> à la cible tout en restaurant une grande quantité de PC.",
+      "steelOathDuration": "Durée du serment d'acier",
+      "advanceDmgMultiplier": "Multiplicateur de DÉG avancés",
+      "advanceStagger": "Déséquilibre avancé",
+      "harassDmgMultiplier": "Multiplicateur de DÉG de Harcèlement",
+      "harassSpRecovery": "Récupération de PC avec le Harcèlement",
+      "decisiveAssaultDmgMultiplier": "Multiplicateur de DÉG de l'attaque décisive",
+      "decisiveAssaultStagger": "Déséquilibre après l'attaque décisive",
+      "decisiveAssaultSpRecovery": "Récupération de PC avec l'attaque décisive"
     },
     "indicator": {
       "levels": [

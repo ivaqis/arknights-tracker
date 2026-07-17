@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Sword of Aspiration",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Burst of Passion",
-      "description": "Tebasan ke depan yang akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</>."
+      "description": "Tebasan ke depan yang akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "Pengganda DMG per SEQ",
-        "staggerPerSeq": "Stagger per SEQ",
-        "spRecoveryPerSeq": "Pemulihan SP per SEQ",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Flash and Dash",
-      "description": "PEMICU KOMBO: Saat musuh terkena Staggered atau mencapai <#ba.poiseknot>Nodus Stagger</>. \nMelejit kembali dengan 2 tahap tusukan, dan setiap tahapnya akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP."
+      "description": "PEMICU KOMBO: Saat musuh terkena Staggered atau mencapai <#ba.poiseknot>Nodus Stagger</>. \nMelejit kembali dengan 2 tahap tusukan, dan setiap tahapnya akan menimbulkan <@ba.pd>Physical DMG</> dan memulihkan sebagian SP.",
+      "dmgMultiplierPerSeq": "Pengganda DMG per SEQ",
+      "staggerPerSeq": "Stagger per SEQ",
+      "spRecoveryPerSeq": "Pemulihan SP per SEQ",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "Pemulihan SP"
-      },
       "name": "SQUAD! ON ME!",
-      "description": "Memasuki status penyaluran dan menembakkan 3 Rentetan Suar. Setiap kali menembak, sebagian SP akan pulih."
+      "description": "Memasuki status penyaluran dan menembakkan 3 Rentetan Suar. Setiap kali menembak, sebagian SP akan pulih.",
+      "spRecovery": "Pemulihan SP"
     },
     "indicator": {
       "levels": [

@@ -24,53 +24,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Arremesso de Varas Básico",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "spRecoveryByConsuming1InflictionStack": "Recuperação de PH via Consumo de 1 Acúmulo de Inflição",
-        "spRecoveryByConsuming2InflictionStacks": "Recuperação de PH via Consumo de 2 Acúmulos de Inflição",
-        "spRecoveryByConsuming3InflictionStacks": "Recuperação de PH via Consumo de 3 Acúmulos de Inflição",
-        "spRecoveryByConsuming4InflictionStacks": "Recuperação de PH via Consumo de 4 Acúmulos de Inflição",
-        "stagger": "Desorientação"
-      },
       "name": "Isca Incomum",
-      "description": "Fisga um bloco de gelo e atinge o alvo inimigo com ele para causar <@ba.pd>DNO Físico</>. Ao atingir um alvo com <#ba.crystinflict>Inflição Crio</>, Alesh <#ba.consume>consome</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do alvo, aplica <#ba.frozen>Solidificação</> à força ao alvo e recupera PH com base no número de acúmulos <#ba.consume>consumidos</>. Esse efeito de recuperação de PH só poderá ser acionado 1 vez, mesmo que a habilidade atinja vários inimigos."
+      "description": "Fisga um bloco de gelo e atinge o alvo inimigo com ele para causar <@ba.pd>DNO Físico</>. Ao atingir um alvo com <#ba.crystinflict>Inflição Crio</>, Alesh <#ba.consume>consome</> todos os acúmulos de <#ba.crystinflict>Inflição Crio</> do alvo, aplica <#ba.frozen>Solidificação</> à força ao alvo e recupera PH com base no número de acúmulos <#ba.consume>consumidos</>. Esse efeito de recuperação de PH só poderá ser acionado 1 vez, mesmo que a habilidade atinja vários inimigos.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "spRecoveryByConsuming1InflictionStack": "Recuperação de PH via Consumo de 1 Acúmulo de Inflição",
+      "spRecoveryByConsuming2InflictionStacks": "Recuperação de PH via Consumo de 2 Acúmulos de Inflição",
+      "spRecoveryByConsuming3InflictionStacks": "Recuperação de PH via Consumo de 3 Acúmulos de Inflição",
+      "spRecoveryByConsuming4InflictionStacks": "Recuperação de PH via Consumo de 4 Acúmulos de Inflição",
+      "stagger": "Desorientação"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "chanceToCatchTheRareFin": "Chance de Capturar a Barbatana Rara",
-        "enhancedDmgMultiplier": "Multiplicador DNO Aprimorado",
-        "spRecovery": "Recuperação de PH",
-        "bonusSpRecovery": "Recuperação de PH Bônus",
-        "stagger": "Desorientação",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Pesca com Broca",
-      "description": "ACIONADOR DO COMBO: Quando a <#ba.spellstatus>Reação de Artes</> ou os <#ba.originium>Cristais de Originium</> de um alvo próximo são <#ba.consume>consumidos</>. \nAbre um buraco de pesca embaixo do inimigo que causa <@ba.pd>DNO Físico</> e recupera PH. A habilidade tem uma chance de fisgar uma <@ba.key>Barbatana Rara</> que aumenta consideravelmente o DNO causado e recupera um pouco mais de PH."
+      "description": "ACIONADOR DO COMBO: Quando a <#ba.spellstatus>Reação de Artes</> ou os <#ba.originium>Cristais de Originium</> de um alvo próximo são <#ba.consume>consumidos</>. \nAbre um buraco de pesca embaixo do inimigo que causa <@ba.pd>DNO Físico</> e recupera PH. A habilidade tem uma chance de fisgar uma <@ba.key>Barbatana Rara</> que aumenta consideravelmente o DNO causado e recupera um pouco mais de PH.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "chanceToCatchTheRareFin": "Chance de Capturar a Barbatana Rara",
+      "enhancedDmgMultiplier": "Multiplicador DNO Aprimorado",
+      "spRecovery": "Recuperação de PH",
+      "bonusSpRecovery": "Recuperação de PH Bônus",
+      "stagger": "Desorientação",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "ultimateDmgMultiplier": "Multiplicador DNO Supremo",
-        "baseSpRecovery": "Recuperação de PH Base",
-        "bonusSpRecoveryPerTargetDefeated": "Recuperação de PH Bônus por Alvo Derrotado",
-        "spRecoveryLimit": "Limite de Recuperação de PH",
-        "stagger": "Desorientação"
-      },
       "name": "Uma Captura Monstruosa!",
-      "description": "Alesh fisga uma barbatana de tamanho inacreditável e dá uma pancada com ela para causar <@ba.cryst>DNO Crio</> e aplicar <#ba.crystinflict>Inflição Crio</> a inimigos em uma grande área de efeito na frente dele. Ele recupera PH, e PH adicional é ganho para cada alvo derrotado."
+      "description": "Alesh fisga uma barbatana de tamanho inacreditável e dá uma pancada com ela para causar <@ba.cryst>DNO Crio</> e aplicar <#ba.crystinflict>Inflição Crio</> a inimigos em uma grande área de efeito na frente dele. Ele recupera PH, e PH adicional é ganho para cada alvo derrotado.",
+      "ultimateDmgMultiplier": "Multiplicador DNO Supremo",
+      "baseSpRecovery": "Recuperação de PH Base",
+      "bonusSpRecoveryPerTargetDefeated": "Recuperação de PH Bônus por Alvo Derrotado",
+      "spRecoveryLimit": "Limite de Recuperação de PH",
+      "stagger": "Desorientação"
     },
     "indicator": {
       "levels": [

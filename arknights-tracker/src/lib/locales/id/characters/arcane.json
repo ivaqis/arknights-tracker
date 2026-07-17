@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Artillery Interdiction",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Jadecrushing Grid",
-      "description": "Memunculkan <@ba.key>Jadecrushing Grid</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di dalam area efek."
+      "description": {
+        "main": "Memunculkan <@ba.key>Jadecrushing Grid</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Infliction</> kepada musuh di dalam area efek.",
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> AKTIF.*/",
+        "conditionPostDesc1": "<@ba.key>Array Arcana: INT</>:\n- Menimbulkan DMG lebih besar.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> TIDAK AKTIF.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> AKTIF.*/",
+        "conditionPostDesc2": "<@ba.key>Array Arcana: WILL</>:\n- Saat menimbulkan DMG, susunan ini juga akan <@ba.key>menarik</> musuh di dalam area efek.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> TIDAK AKTIF.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "Pengganda DMG"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "Pengganda DMG"
+      },
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Pengganda DMG Dasar",
-        "baseStagger": "Stagger Dasar",
+      "name": "Yinglung Stance IV",
+      "description": {
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> AKTIF.*/",
+        "conditionPostDesc1": "PEMICU KOMBO: Saat <#ba.naturalinflict>Nature Infliction</> atau sedikitnya 2 tumpuk <#ba.spellinflict>Arts Infliction selain Nature</> diakibatkan kepada musuh.\nArcane akan menerjang ke arah target dan mengeluarkan 4 <@ba.key>Tactical Double</> yang mengakibatkan <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> serta menimbulkan <@ba.natur>Nature DMG</> kepada target dan musuh di sekitarnya, serta mengakibatkan <@ba.key>Imprisonment</> kepada target yang bersangkutan. Saat <@ba.key>Imprisonment</> berakhir, <@ba.key>Tactical Double</> akan menyerang target tersebut untuk menimbulkan DMG Ledakan.\n<@ba.key>Imprisonment</>: Debuff yang akan memperlambat semua aksi.\n<@ba.key>Array Arcana: INT</>:\n- Menghantam musuh yang sedang terkena <@ba.key>Imprisonment</> menggunakan skill tarung Arcane akan <#ba.return>mengembalikan</> sebagian SP, mengakhiri <@ba.key>Imprisonment</> lebih awal, menimbulkan DMG Ledakan, mengakibatkan <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> lagi, serta menimbulkan beberapa hantaman bonus DMG setelah beberapa saat.\n- Cooldown skill kombo menjadi lebih singkat.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> TIDAK AKTIF.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> AKTIF.*/",
+        "conditionPostDesc2": "PEMICU KOMBO: Saat <#ba.spellinflict>Arts Infliction</> diakibatkan kepada musuh.\nArcane akan menerjang ke arah musuh dan mengeluarkan 4 <@ba.key>Tactical Double</> yang akan menimbulkan <@ba.natur>Nature DMG</> dan mengakibatkan satu tumpuk <#ba.spellinflict>Arts Infliction</> lagi dari elemen yang sama, <#ba.naturalvul>Nature Susceptibility</>, dan <#ba.crystvul>Cryo Susceptibility</> kepada target dan musuh di sekitarnya, serta mengakibatkan <@ba.key>Imprisonment</> kepada target yang bersangkutan. Saat <@ba.key>Imprisonment</> berakhir, <@ba.key>Tactical Double</> akan menyerang target tersebut untuk menimbulkan DMG Ledakan.\n<@ba.key>Imprisonment</>: Debuff yang akan memperlambat semua aksi.\n<@ba.key>Array Arcana: WILL</>:\n- Jika mengakibatkan <@ba.key>Imprisonment</> melalui penggunaan skill kombo, musuh di dekat target juga akan sedikit <@ba.key>ditarik</>.\n- Atribut Will bisa lebih lanjut meningkatkan efek <#ba.naturalvul>Nature Susceptibility</> dan <#ba.crystvul>Cryo Susceptibility</> yang diakibatkan oleh skill kombo.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> TIDAK AKTIF.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Durasi Imprisonment dan Susceptibility (dtk)",
         "susceptibility": "Susceptibility",
-        "baseSusceptibility": "Susceptibility Dasar",
-        "maxBonusSusceptibilityFromWill": "Bonus Maks Susceptibility dari Will",
-        "willRequiredForMaxBonusSusceptibility": "Will yang Dibutuhkan untuk Bonus Maks Susceptibility",
-        "explosionDmgMultiplier": "Pengganda DMG Ledakan",
-        "explosionStagger": "Stagger Ledakan",
         "bonusDmgMultiplier": "Pengganda Bonus DMG",
         "bonusSusceptibilityDurationS": "Durasi Bonus Susceptibility (dtk)",
-        "spReturn": "Pengembalian SP",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
+        "spReturn": "Pengembalian SP"
       },
-      "name": "Yinglung Stance IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Durasi Imprisonment dan Susceptibility (dtk)",
+        "baseSusceptibility": "Susceptibility Dasar",
+        "maxBonusSusceptibilityFromWill": "Bonus Maks Susceptibility dari Will",
+        "willRequiredForMaxBonusSusceptibility": "Will yang Dibutuhkan untuk Bonus Maks Susceptibility"
+      },
+      "baseDmgMultiplier": "Pengganda DMG Dasar",
+      "baseStagger": "Stagger Dasar",
+      "explosionDmgMultiplier": "Pengganda DMG Ledakan",
+      "explosionStagger": "Stagger Ledakan",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Pengganda DMG Gloompurger Array Creation",
-        "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
-        "gloompurgerArrayDurationS": "Durasi Gloompurger Array (dtk)",
+      "name": "Gloompurge",
+      "description": {
+        "main": "Arcane akan memunculkan <@ba.key>Gloompurger Array</> yang akan langsung menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam area efek (AOE).\nSaat musuh di dalam <@ba.key>Gloompurger Array</> terkena serangan Penuntas atau <#ba.lastcombo>Final Strike</> yang dilancarkan oleh operator terkontrol, <@ba.key>Gloompurger Array</> akan melepaskan <@ba.key>Cluster Strike</> yang akan menimbulkan Area DMG kepada musuh yang bersangkutan. Efek ini bisa diaktifkan maks 2 kali.\nSetelah mengaktifkan <@ba.key>Cluster Strike</> sebanyak 2 kali, ultimate akan beralih ke <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam AOE luas.",
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> AKTIF.*/",
+        "conditionPostDesc1": "<@ba.key>Array Arcana: INT</>:\n- Saat muncul, <@ba.key>Gloompurger Array</> juga mengakibatkan <#ba.corrupt>Corrosion</> kepada musuh di AOE secara paksa.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> TIDAK AKTIF.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> AKTIF.*/",
+        "conditionPostDesc2": "<@ba.key>Array Arcana: WILL</>:\n- Saat muncul, <@ba.key>Gloompurger Array</> juga mengincar musuh yang terkena <#ba.spellinflict>Arts Infliction</> di dalam AOE-nya, dan mengakibatkan satu tumpuk <#ba.spellinflict>Arts Infliction</> lagi dari elemen yang sama kepada mereka.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> TIDAK AKTIF.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Durasi Forced Corrosion (dtk)",
         "clusterStrikeTotalDmgMultiplier": "Pengganda DMG Total Cluster Strike",
-        "gloompurgeArcanaDmgMultiplier": "Pengganda DMG Gloompurge Arcana",
-        "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
+        "gloompurgeArcanaDmgMultiplier": "Pengganda DMG Gloompurge Arcana"
       },
-      "name": "Gloompurge",
-      "description": "Arcane akan memunculkan <@ba.key>Gloompurger Array</> yang akan langsung menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam area efek (AOE).\nSaat musuh di dalam <@ba.key>Gloompurger Array</> terkena serangan Penuntas atau <#ba.lastcombo>Final Strike</> yang dilancarkan oleh operator terkontrol, <@ba.key>Gloompurger Array</> akan melepaskan <@ba.key>Cluster Strike</> yang akan menimbulkan Area DMG kepada musuh yang bersangkutan. Efek ini bisa diaktifkan maks 2 kali.\nSetelah mengaktifkan <@ba.key>Cluster Strike</> sebanyak 2 kali, ultimate akan beralih ke <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Menimbulkan <@ba.natur>Nature DMG</> kepada musuh di dalam AOE luas."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Pengganda DMG Total Cluster Strike",
+        "gloompurgeArcanaDmgMultiplier": "Pengganda DMG Gloompurge Arcana"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Pengganda DMG Gloompurger Array Creation",
+      "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
+      "gloompurgerArrayDurationS": "Durasi Gloompurger Array (dtk)",
+      "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
     },
     "indicator": {
       "levels": [

@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Sword Art of Assault",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "additionalStaggerDealtWhenHit": "Tambahan Stagger yang Ditimbulkan saat Menghantam"
-      },
       "name": "Forward March",
-      "description": "Lompatan yang diikuti dengan bantingan keras yang akan menimbulkan <@ba.fire>Heat DMG</>, <#ba.knockdown>Knock Down</>, dan Stagger kepada semua musuh dalam area berbentuk kipas. \nJika Ember terkena DMG dari musuh saat menggunakannya, bantingan akan menimbulkan lebih banyak Stagger saat menghantam."
+      "description": "Lompatan yang diikuti dengan bantingan keras yang akan menimbulkan <@ba.fire>Heat DMG</>, <#ba.knockdown>Knock Down</>, dan Stagger kepada semua musuh dalam area berbentuk kipas. \nJika Ember terkena DMG dari musuh saat menggunakannya, bantingan akan menimbulkan lebih banyak Stagger saat menghantam.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "additionalStaggerDealtWhenHit": "Tambahan Stagger yang Ditimbulkan saat Menghantam"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "baseTreatment": "Treatment Dasar",
-        "treatmentIncreasePerWill": "Peningkatan Treatment per Will",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Frontline Support",
-      "description": "PEMICU KOMBO: Saat operator terkontrol diserang. \nMelompat ke arah musuh tertarget dan melancarkan bantingan keras yang akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> sekaligus memberikan HP treatment kepada operator terkontrol. Atribut Will akan meningkatkan jumlah HP treatment."
+      "description": "PEMICU KOMBO: Saat operator terkontrol diserang. \nMelompat ke arah musuh tertarget dan melancarkan bantingan keras yang akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> sekaligus memberikan HP treatment kepada operator terkontrol. Atribut Will akan meningkatkan jumlah HP treatment.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "baseTreatment": "Treatment Dasar",
+      "treatmentIncreasePerWill": "Peningkatan Treatment per Will",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "shieldConversionRatioHp": "Rasio Konversi Perisai (HP)",
-        "shieldDurationS": "Durasi Perisai (dtk)"
-      },
       "name": "Re-Ignited Oath",
-      "description": "Menghantam tanah sehingga akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar sekaligus memberikan <#ba.shield>Perisai</> kepada setiap rekan tim berdasarkan HP Maks Ember."
+      "description": "Menghantam tanah sehingga akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar sekaligus memberikan <#ba.shield>Perisai</> kepada setiap rekan tim berdasarkan HP Maks Ember.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "shieldConversionRatioHp": "Rasio Konversi Perisai (HP)",
+      "shieldDurationS": "Durasi Perisai (dtk)"
     },
     "indicator": {
       "levels": [

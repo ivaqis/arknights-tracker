@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Lance de foudre : Attaque-éclair",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "thunderlanceDmgMultiplier": "Multiplicateur de DÉG de lance de foudre",
-        "thunderlanceStagger": "Déséquilibre de lance de foudre",
-        "thunderlanceExDmgMultiplier": "Multiplicateur de DÉG de lance de foudre EX",
-        "thunderlanceExStagger": "Déséquilibre de lance de foudre EX"
-      },
       "name": "Lance de foudre : Interdiction",
-      "description": "Saute à mi-hauteur et génère un tourbillon avec sa lance, infligeant des <@ba.pulse>DÉG électriques</> aux ennemis à proximité tout en rappelant à elle toutes les <@ba.key>lances de foudre</> ainsi que les <@ba.key>lances de foudre EX</> sur le champ de bataille. \nLes <@ba.key>lances de foudre</> rappelées transpercent tous les ennemis sur leur trajectoire et leur infligent des <@ba.pulse>DÉG électriques</>, tandis que les <@ba.key>lances de foudre EX</> infligent davantage de <@ba.pulse>DÉG électriques</> ainsi qu'une <#ba.pulseinflict>altération électrique</>."
+      "description": "Saute à mi-hauteur et génère un tourbillon avec sa lance, infligeant des <@ba.pulse>DÉG électriques</> aux ennemis à proximité tout en rappelant à elle toutes les <@ba.key>lances de foudre</> ainsi que les <@ba.key>lances de foudre EX</> sur le champ de bataille. \nLes <@ba.key>lances de foudre</> rappelées transpercent tous les ennemis sur leur trajectoire et leur infligent des <@ba.pulse>DÉG électriques</>, tandis que les <@ba.key>lances de foudre EX</> infligent davantage de <@ba.pulse>DÉG électriques</> ainsi qu'une <#ba.pulseinflict>altération électrique</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "thunderlanceDmgMultiplier": "Multiplicateur de DÉG de lance de foudre",
+      "thunderlanceStagger": "Déséquilibre de lance de foudre",
+      "thunderlanceExDmgMultiplier": "Multiplicateur de DÉG de lance de foudre EX",
+      "thunderlanceExStagger": "Déséquilibre de lance de foudre EX"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "thunderlanceDurationS": "Durée de la lance de foudre (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Lance de foudre : Frappe",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un opérateur que vous contrôlez lance un <#ba.lastcombo>Coup final</> sur une cible victime d'une <#ba.pulseinflict>altération électrique</> ou de l'effet d'<#ba.conduct>Électrification</>. \nSaute à mi-hauteur et projette 3 <@ba.key>lances de foudre</> sur la cible, avant d'infliger 1 salve de <@ba.pulse>DÉG électriques</> aux ennemis dans la zone d'effet."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un opérateur que vous contrôlez lance un <#ba.lastcombo>Coup final</> sur une cible victime d'une <#ba.pulseinflict>altération électrique</> ou de l'effet d'<#ba.conduct>Électrification</>. \nSaute à mi-hauteur et projette 3 <@ba.key>lances de foudre</> sur la cible, avant d'infliger 1 salve de <@ba.pulse>DÉG électriques</> aux ennemis dans la zone d'effet.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "thunderlanceDurationS": "Durée de la lance de foudre (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "thunderlanceExDurationS": "Durée de la lance de foudre EX (s)"
-      },
       "name": "Lance de foudre : Choc final",
-      "description": "Projette une <@ba.key>lance de foudre EX</> dans la zone cible, infligeant de lourds <@ba.pulse>DÉG électriques</> aux ennemis à proximité."
+      "description": "Projette une <@ba.key>lance de foudre EX</> dans la zone cible, infligeant de lourds <@ba.pulse>DÉG électriques</> aux ennemis à proximité.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "thunderlanceExDurationS": "Durée de la lance de foudre EX (s)"
     },
     "indicator": {
       "levels": [

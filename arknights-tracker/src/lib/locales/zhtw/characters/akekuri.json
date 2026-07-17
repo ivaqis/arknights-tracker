@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "進取劍鋒",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值"
-      },
       "name": "熱情迸發",
-      "description": "向前方揮斬，造成<@ba.fire>灼熱傷害</>並施加<#ba.fireinflict>灼熱附著</>。"
+      "description": "向前方揮斬，造成<@ba.fire>灼熱傷害</>並施加<#ba.fireinflict>灼熱附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "每段傷害倍率",
-        "staggerPerSeq": "每段失衡值",
-        "spRecoveryPerSeq": "每段回復技力",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "快閃衝擊",
-      "description": "當有敵人失衡，或觸發<#ba.poiseknot>失衡節點</>時可以發動。\n進行來回2段突刺，每段造成<@ba.pd>物理傷害</>，並回復一定技力。"
+      "description": "當有敵人失衡，或觸發<#ba.poiseknot>失衡節點</>時可以發動。\n進行來回2段突刺，每段造成<@ba.pd>物理傷害</>，並回復一定技力。",
+      "dmgMultiplierPerSeq": "每段傷害倍率",
+      "staggerPerSeq": "每段失衡值",
+      "spRecoveryPerSeq": "每段回復技力",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "回復技力"
-      },
       "name": "小隊，集結！",
-      "description": "進入持續施法狀態，發射3枚集結信號彈，每次發射回復一定技力。"
+      "description": "進入持續施法狀態，發射3枚集結信號彈，每次發射回復一定技力。",
+      "spRecovery": "回復技力"
     },
     "indicator": {
       "levels": [

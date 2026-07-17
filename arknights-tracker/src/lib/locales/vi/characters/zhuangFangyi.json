@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Thuật Rung Chuyển",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Hệ Số ST Lôi Kích",
-        "totalStagger": "Tổng Suy Sụp",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ",
-        "bonusUltimateEnergyPerThunderStrike": "Năng Lượng Tuyệt Kỹ Cộng Thêm/ Lôi Kích",
-        "sunderbladeLimit": "Giới hạn Lưỡi Kiếm Phân Tách",
-        "sunderbladeDurationS": "Hiệu Lực Lưỡi Kiếm Phân Tách (giây)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Lôi Kích",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ"
-      },
       "name": "Chú Thuật Phân Tách",
-      "description": "<#ba.consume>Tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu để tăng Hệ Số ST của KN chiến đấu này và tạo ra [<#ba.statuslevel>Cấp Trạng Thái</> của <#ba.conduct>Điện Hóa</> <#ba.consume>đã tiêu hao</> <@ba.key>+1</>] <@ba.key>Lưỡi Kiếm Phân Tách</>. Nếu chiến trường có ít hơn {free_sword_limit:0} <@ba.key>Lưỡi Kiếm Phân Tách</>, Chú Thuật Phân Tách vẫn có thể tạo ra 1 <@ba.key>Lưỡi Kiếm Phân Tách</>, ngay cả khi nó không <#ba.consume>tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu nào.\nZhuang Fangyi sau đó sẽ hội tụ tất cả <@ba.key>Lưỡi Kiếm Phân Tách</> gần đó để liên tiếp tung Lôi Kích vào mục tiêu, gây <@ba.pulse>ST Điện</> và cấp Năng Lượng Tuyệt Kỹ Cộng Thêm, với đòn Lôi Kích cuối cùng gây ST gấp {final_rate:0} lần.\n<@ba.info>Mỗi lần thi triển KN chiến đấu chỉ có thể tạo ra tối đa {max_conduct_sword:0} Lưỡi Kiếm Phân Tách.</>"
+      "description": "<#ba.consume>Tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu để tăng Hệ Số ST của KN chiến đấu này và tạo ra [<#ba.statuslevel>Cấp Trạng Thái</> của <#ba.conduct>Điện Hóa</> <#ba.consume>đã tiêu hao</> <@ba.key>+1</>] <@ba.key>Lưỡi Kiếm Phân Tách</>. Nếu chiến trường có ít hơn {free_sword_limit:0} <@ba.key>Lưỡi Kiếm Phân Tách</>, Chú Thuật Phân Tách vẫn có thể tạo ra 1 <@ba.key>Lưỡi Kiếm Phân Tách</>, ngay cả khi nó không <#ba.consume>tiêu hao</> <#ba.conduct>Điện Hóa</> của mục tiêu nào.\nZhuang Fangyi sau đó sẽ hội tụ tất cả <@ba.key>Lưỡi Kiếm Phân Tách</> gần đó để liên tiếp tung Lôi Kích vào mục tiêu, gây <@ba.pulse>ST Điện</> và cấp Năng Lượng Tuyệt Kỹ Cộng Thêm, với đòn Lôi Kích cuối cùng gây ST gấp {final_rate:0} lần.\n<@ba.info>Mỗi lần thi triển KN chiến đấu chỉ có thể tạo ra tối đa {max_conduct_sword:0} Lưỡi Kiếm Phân Tách.</>",
+      "thunderStrikeDmgMultiplier": "Hệ Số ST Lôi Kích",
+      "totalStagger": "Tổng Suy Sụp",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ",
+      "bonusUltimateEnergyPerThunderStrike": "Năng Lượng Tuyệt Kỹ Cộng Thêm/ Lôi Kích",
+      "sunderbladeLimit": "Giới hạn Lưỡi Kiếm Phân Tách",
+      "sunderbladeDurationS": "Hiệu Lực Lưỡi Kiếm Phân Tách (giây)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Lôi Kích",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST Cộng Thêm/Cấp Trạng Thái của Hiệu Ứng Điện Hóa Đã Giải Trừ"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
-        "additionalUltimateEnergyPerInflictionStack": "Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm",
-        "duringUltimateDmgMultiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST"
-      },
       "name": "Nhất Tức Hóa Vạn",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.lastcombo>Đòn Dứt Điểm</> hoặc Kết Liễu của cán viên đang điều khiển trúng mục tiêu bị <#ba.pulseinflict>Nhiễm Điện</>.\nZhuang Fangyi tạo một Trận Pháp Lôi Tức tấn công kẻ địch và gây <@ba.pulse>ST Điện</>. Nếu đánh trúng kẻ địch có tầng <#ba.pulseinflict>Nhiễm Điện</>, Trận Pháp sẽ <#ba.consume>hấp thụ</> tầng <#ba.pulseinflict>Nhiễm Điện</> này, buộc áp dụng <#ba.conduct>Điện Hóa</> và tăng Năng Lượng Tuyệt Kỹ tùy vào số tầng <#ba.consume>hấp thụ</>.\nNếu buộc áp dụng <#ba.conduct>Điện Hóa</> lên kẻ địch đã bị <#ba.conduct>Điện Hóa</> thì tăng <#ba.statuslevel>Cấp Trạng Thái</> thêm 1 cho hiệu ứng <#ba.conduct>Điện Hóa</> của kẻ địch."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.lastcombo>Đòn Dứt Điểm</> hoặc Kết Liễu của cán viên đang điều khiển trúng mục tiêu bị <#ba.pulseinflict>Nhiễm Điện</>.\nZhuang Fangyi tạo một Trận Pháp Lôi Tức tấn công kẻ địch và gây <@ba.pulse>ST Điện</>. Nếu đánh trúng kẻ địch có tầng <#ba.pulseinflict>Nhiễm Điện</>, Trận Pháp sẽ <#ba.consume>hấp thụ</> tầng <#ba.pulseinflict>Nhiễm Điện</> này, buộc áp dụng <#ba.conduct>Điện Hóa</> và tăng Năng Lượng Tuyệt Kỹ tùy vào số tầng <#ba.consume>hấp thụ</>.\nNếu buộc áp dụng <#ba.conduct>Điện Hóa</> lên kẻ địch đã bị <#ba.conduct>Điện Hóa</> thì tăng <#ba.statuslevel>Cấp Trạng Thái</> thêm 1 cho hiệu ứng <#ba.conduct>Điện Hóa</> của kẻ địch.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ",
+      "additionalUltimateEnergyPerInflictionStack": "Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm",
+      "duringUltimateDmgMultiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số ST"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Hiệu Lực (giây)",
-        "duringUltimateBatkSeq1Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "duringUltimateBatkSeq2Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "duringUltimateBatkSeq3Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 3"
-      },
       "name": "Nộ Tức Trừng Phạt",
-      "description": "Biến thành <@ba.key>Chân Lý Tối Thượng</> giúp cường hóa những khả năng sau:\nĐòn đánh thường của Zhuang Fangyi được cường hóa và hành động của cô khó bị gián đoạn hơn;\nKN chiến đấu <@ba.key>Chú Thuật Phân Tách</> nhận Hệ Số ST cao hơn và tăng phạm vi hiệu ứng, còn đòn Lôi Kích cuối cùng cũng gây <#ba.pulseinflict>Nhiễm Điện</> cho mục tiêu dính đòn.\nKN liên hoàn <@ba.key>Nhất Tức Hóa Vạn</> nhận Hệ Số ST cao hơn, thời gian hồi chiêu nhanh hơn {combo_cd_rate:0} lần và hiệu ứng được áp dụng cho kẻ địch trong một khu vực nhỏ.\nLần tung KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> đầu tiên không tốn Điểm KN hay hấp thụ <#ba.conduct>Điện Hóa</> và nếu có mục tiêu thì KN chiến đấu này vẫn đảm bảo tạo 3 <@ba.key>Lưỡi Kiếm Phân Tách</> ngay cả khi mục tiêu không bị nhiễm <#ba.conduct>Điện Hóa</>."
+      "description": "Biến thành <@ba.key>Chân Lý Tối Thượng</> giúp cường hóa những khả năng sau:\nĐòn đánh thường của Zhuang Fangyi được cường hóa và hành động của cô khó bị gián đoạn hơn;\nKN chiến đấu <@ba.key>Chú Thuật Phân Tách</> nhận Hệ Số ST cao hơn và tăng phạm vi hiệu ứng, còn đòn Lôi Kích cuối cùng cũng gây <#ba.pulseinflict>Nhiễm Điện</> cho mục tiêu dính đòn.\nKN liên hoàn <@ba.key>Nhất Tức Hóa Vạn</> nhận Hệ Số ST cao hơn, thời gian hồi chiêu nhanh hơn {combo_cd_rate:0} lần và hiệu ứng được áp dụng cho kẻ địch trong một khu vực nhỏ.\nLần tung KN chiến đấu <@ba.key>Chú Thuật Phân Tách</> đầu tiên không tốn Điểm KN hay hấp thụ <#ba.conduct>Điện Hóa</> và nếu có mục tiêu thì KN chiến đấu này vẫn đảm bảo tạo 3 <@ba.key>Lưỡi Kiếm Phân Tách</> ngay cả khi mục tiêu không bị nhiễm <#ba.conduct>Điện Hóa</>.",
+      "durationS": "Hiệu Lực (giây)",
+      "duringUltimateBatkSeq1Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "duringUltimateBatkSeq2Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "duringUltimateBatkSeq3Multiplier": "Trong Khi Dùng Tuyệt Kỹ: Hệ Số Chuỗi Đòn Đánh Thường 3"
     },
     "indicator": {
       "levels": [

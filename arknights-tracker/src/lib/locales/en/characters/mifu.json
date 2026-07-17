@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier"
-      },
       "name": "Fistmancer of Blades",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Cloudtrapper DMG Multiplier",
-        "trailAndMangleDmgMultiplier": "Trail and Mangle DMG Multiplier",
-        "trailAndMangleStagger": "Trail and Mangle Stagger",
-        "worldSplitterDmgMultiplier": "World Splitter DMG Multiplier",
-        "worldSplitterStagger": "World Splitter Stagger"
-      },
       "name": "Qingbo Triplex",
-      "description": "Keep casting Mi Fu's battle skill to unleash 3 different moves. The first battle skill cast is <@ba.key>Cloudtrapper</>.\n<@ba.key>MOVE 1 - Cloudtrapper</>: Costs <@ba.vup>100</> SP and <#ba.return>returns</><@ba.vup> 50</> SP after casting; Mi Fu fires a grappling chain from her gauntlets that deals <@ba.pd>Physical DMG</> to the target and nearby enemies, then attempts to pull the target and nearby enemies towards her. After casting MOVE 1, the next battle skill will be temporarily replaced with <@ba.key>Trail and Mangle</>.\n<@ba.key>MOVE 2 - Trail and Mangle</>: Costs <@ba.vup>50</> SP; Mi Fu unleashes a flurry of punches that deals <@ba.pd>Physical DMG</> with the final punch applying <#ba.crush>Crush</>. If this Crush <#ba.consume>consumes</> at least 3 <#ba.noguard>Vulnerability</> stacks from a single target, then the next battle skill will be temporarily replaced with <@ba.key>World Splitter</>.\n<@ba.key>MOVE 3 - World Splitter</>: Costs <@ba.vup>50</> SP; Mi Fu deals massive <@ba.pd>Physical DMG</> to a specified area; this DMG is not treated as Battle Skill DMG, but as <#ba.crush>Crush</> DMG."
+      "description": "Keep casting Mi Fu's battle skill to unleash 3 different moves. The first battle skill cast is <@ba.key>Cloudtrapper</>.\n<@ba.key>MOVE 1 - Cloudtrapper</>: Costs <@ba.vup>100</> SP and <#ba.return>returns</><@ba.vup> 50</> SP after casting; Mi Fu fires a grappling chain from her gauntlets that deals <@ba.pd>Physical DMG</> to the target and nearby enemies, then attempts to pull the target and nearby enemies towards her. After casting MOVE 1, the next battle skill will be temporarily replaced with <@ba.key>Trail and Mangle</>.\n<@ba.key>MOVE 2 - Trail and Mangle</>: Costs <@ba.vup>50</> SP; Mi Fu unleashes a flurry of punches that deals <@ba.pd>Physical DMG</> with the final punch applying <#ba.crush>Crush</>. If this Crush <#ba.consume>consumes</> at least 3 <#ba.noguard>Vulnerability</> stacks from a single target, then the next battle skill will be temporarily replaced with <@ba.key>World Splitter</>.\n<@ba.key>MOVE 3 - World Splitter</>: Costs <@ba.vup>50</> SP; Mi Fu deals massive <@ba.pd>Physical DMG</> to a specified area; this DMG is not treated as Battle Skill DMG, but as <#ba.crush>Crush</> DMG.",
+      "cloudtrapperDmgMultiplier": "Cloudtrapper DMG Multiplier",
+      "trailAndMangleDmgMultiplier": "Trail and Mangle DMG Multiplier",
+      "trailAndMangleStagger": "Trail and Mangle Stagger",
+      "worldSplitterDmgMultiplier": "World Splitter DMG Multiplier",
+      "worldSplitterStagger": "World Splitter Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "physicalSusceptibility": "Physical Susceptibility",
-        "physicalSusceptibilityDurationS": "Physical Susceptibility Duration (s)",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Fists of No Regrets",
-      "description": "COMBO TRIGGER: When an enemy has 3 or more <#ba.noguard>Vulnerability</> stacks.\nMi Fu unleashes a devastating uppercut at the enemy, dealing <@ba.pd>Physical DMG</> and applying temporary <#ba.physicalvul>Physical Susceptibility</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>."
+      "description": "COMBO TRIGGER: When an enemy has 3 or more <#ba.noguard>Vulnerability</> stacks.\nMi Fu unleashes a devastating uppercut at the enemy, dealing <@ba.pd>Physical DMG</> and applying temporary <#ba.physicalvul>Physical Susceptibility</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "physicalSusceptibility": "Physical Susceptibility",
+      "physicalSusceptibilityDurationS": "Physical Susceptibility Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger"
-      },
       "name": "Pile of No Mercy",
-      "description": "After a short power up, Mi Fu dashes forward to forcibly <#ba.airborne>Lift</> a target into mid-air, then slams the said target to deal <@ba.pd>Physical DMG</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>."
+      "description": "After a short power up, Mi Fu dashes forward to forcibly <#ba.airborne>Lift</> a target into mid-air, then slams the said target to deal <@ba.pd>Physical DMG</>. After casting this skill, the next battle skill is temporarily replaced with <@ba.key>Trail and Mangle</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

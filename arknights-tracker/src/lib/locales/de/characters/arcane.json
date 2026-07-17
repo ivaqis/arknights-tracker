@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Abriegelungsartillerie",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Jadebrecher-Netz",
-      "description": "Erzeugt ein <@ba.key>Jadebrecher-Netz</>, das Gegnern im Wirkungsbereich mit <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt."
+      "description": {
+        "main": "Erzeugt ein <@ba.key>Jadebrecher-Netz</>, das Gegnern im Wirkungsbereich mit <@ba.natur>Natur-SDN</> zufügt und sie mit <#ba.naturalinflict>Natur</> belegt.",
+        "conditionName1": "Säulenreihen-Arkana: INT",
+        "conditionDesc1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist AKTIV.*/",
+        "conditionPostDesc1": "<@ba.key>Säulenreihen-Arkana: INT</>:\n– Verursacht mehr SDN.",
+        "conditionDescInactive1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) < Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist INAKTIV.*/",
+        "conditionName2": "Säulenreihen-Arkana: WILLE",
+        "conditionDesc2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) > Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist AKTIV.*/",
+        "conditionPostDesc2": "<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wird SDN verursacht, <@ba.key>zieht die Säulenreihe zudem Gegner heran</>, die sich im Wirkungsbereich aufhalten.",
+        "conditionDescInactive2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist INAKTIV.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "SDN-Multiplikator"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "SDN-Multiplikator"
+      },
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Standard-SDN-Multiplikator",
-        "baseStagger": "Standard-Taumeln",
+      "name": "Yinglung-Haltung IV",
+      "description": {
+        "conditionName1": "Säulenreihen-Arkana: INT",
+        "conditionDesc1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist AKTIV.*/",
+        "conditionPostDesc1": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.naturalinflict>Natur</> oder mindestens 2 Kumulierungen einer <#ba.spellinflict>anderen Technikkumulierung als Natur</> belegt wird.\nArkan stürmt auf das Ziel zu und stellt 4 <@ba.key>Taktische Doppelgänger</> auf, die das Ziel und Gegner in der Nähe mit <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegen und <@ba.natur>Natur-SDN</> verursachen sowie das Ziel zusätzlich mit <@ba.key>Gefangenschaft</> belegen. Wenn <@ba.key>Gefangenschaft</> endet, greifen die <@ba.key>Taktischen Doppelgänger</> das Ziel an und verursachen Explosions-SDN.\n<@ba.key>Gefangenschaft</>: Ein Debuff, der alle Aktionen verlangsamt.\n<@ba.key>Säulenreihen-Arkana: INT</>:\n– Trifft Arkans Kampffertigkeit einen von <@ba.key>Gefangenschaft</> betroffenen Gegner, werden einige FP <#ba.return>wiederhergestellt</>, der Zustand <@ba.key>Gefangenschaft</> vorzeitig beendet, Explosions-SDN verursacht sowie der Gegner mit einer weiteren Kumulierung <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegt. Außerdem verursachen nach einer kurzen Verzögerung mehrere Treffer Bonus-SDN.\n– Kombofertigkeit-Abklingzeit ist kürzer.",
+        "conditionDescInactive1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) < Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist INAKTIV.*/",
+        "conditionName2": "Säulenreihen-Arkana: WILLE",
+        "conditionDesc2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) > Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist AKTIV.*/",
+        "conditionPostDesc2": "KOMBOAUSLÖSER: Wenn ein Gegner mit einer <#ba.spellinflict>Technikkumulierung</> belegt wird.\nArkan stürmt auf das Ziel zu und stellt 4 <@ba.key>Taktische Doppelgänger</> auf, die <@ba.natur>Natur-SDN</> verursachen und das Ziel und Gegner in der Nähe mit einer zusätzlichen <#ba.spellinflict>Technikkumulierung</> desselben Elements sowie <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> belegen sowie das Ziel zusätzlich mit <@ba.key>Gefangenschaft</>. Wenn <@ba.key>Gefangenschaft</> endet, greifen die <@ba.key>Taktischen Doppelgänger</> das Ziel an und verursachen Explosions-SDN.\n<@ba.key>Gefangenschaft</>: Ein Debuff, der alle Aktionen verlangsamt.\n<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Wenn du eine Kombofertigkeit wirkst und das Ziel dabei mit <@ba.key>Gefangenschaft</> belegst, werden außerdem Gegner in dessen Nähe leicht <@ba.key>herangezogen</>.\n– Das Attribut Wille kann die durch die Kombofertigkeit angewendeten Effekte von <#ba.naturalvul>Natur-Empfänglichkeit</> und <#ba.crystvul>Kryo-Empfänglichkeit</> weiter steigern.",
+        "conditionDescInactive2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist INAKTIV.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
         "susceptibility": "Empfänglichkeit",
-        "baseSusceptibility": "Standard-Empfänglichkeit",
-        "maxBonusSusceptibilityFromWill": "Max. Bonus-Empfänglichkeit durch Wille",
-        "willRequiredForMaxBonusSusceptibility": "Der für eine max. Bonus-Empfänglichkeit erforderliche Wille",
-        "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
-        "explosionStagger": "Explosions-Taumeln",
         "bonusDmgMultiplier": "Bonus-SDN-Multiplikator",
         "bonusSusceptibilityDurationS": "Dauer der Bonus-Empfänglichkeit (Sek.)",
-        "spReturn": "FP-Rückerstattung",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
+        "spReturn": "FP-Rückerstattung"
       },
-      "name": "Yinglung-Haltung IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Dauer von Gefangenschaft und Empfänglichkeit (Sek.)",
+        "baseSusceptibility": "Standard-Empfänglichkeit",
+        "maxBonusSusceptibilityFromWill": "Max. Bonus-Empfänglichkeit durch Wille",
+        "willRequiredForMaxBonusSusceptibility": "Der für eine max. Bonus-Empfänglichkeit erforderliche Wille"
+      },
+      "baseDmgMultiplier": "Standard-SDN-Multiplikator",
+      "baseStagger": "Standard-Taumeln",
+      "explosionDmgMultiplier": "Explosions-SDN-Multiplikator",
+      "explosionStagger": "Explosions-Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Finsternisvertreiber-Säulenreihenerrichtung-SDN-Multiplikator",
-        "gloompurgerArrayCreationStagger": "Finsternisvertreiber-Säulenreihenerrichtung-Taumeln",
-        "gloompurgerArrayDurationS": "Dauer von Finsternisvertreiber-Säulenreihe (Sek.)",
+      "name": "Finsternisvertreiber",
+      "description": {
+        "main": "Arkan erzeugt eine <@ba.key>Finsternisvertreiber-Säulenreihe</>, die Gegnern im Wirkungsbereich sofort <@ba.natur>Natur-SDN</> zufügt.\nErleidet ein Gegner innerhalb der <@ba.key>Finsternisvertreiber-Säulenreihe</> einen Wuchtschlag oder einen <#ba.lastcombo>Abschlussangriff</> durch den gesteuerten Operator, entfesselt die <@ba.key>Finsternisvertreiber-Säulenreihe</> einen <@ba.key>Gewittersturm</>, der ebenjenem Gegner Flächen-SDN zufügt. Dieser Effekt kann bis zu zweimal ausgelöst werden.\nWurde <@ba.key>Gewittersturm</> zweimal ausgelöst, wechselt die Ultimative Fertigkeit zu <@ba.key>Finsternisvertreiber-Arkana</>.\n<@ba.key>Finsternisvertreiber-Arkana</>: Fügt Gegnern innerhalb eines großen Wirkungsbereichs <@ba.natur>Natur-SDN</> zu.",
+        "conditionName1": "Säulenreihen-Arkana: INT",
+        "conditionDesc1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist AKTIV.*/",
+        "conditionPostDesc1": "<@ba.key>Säulenreihen-Arkana: INT</>:\n– Bei Erschaffung belegt die <@ba.key>Finsternisvertreiber-Säulenreihe</> Gegner im Wirkungsbereich außerdem mit <#ba.corrupt>Korrosion</>.",
+        "conditionDescInactive1": "/*Intellekt (<@ba.vup>{floor:deck_wisd:0}</>) < Wille (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Säulenreihen-Arkana: INT</> ist INAKTIV.*/",
+        "conditionName2": "Säulenreihen-Arkana: WILLE",
+        "conditionDesc2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) > Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist AKTIV.*/",
+        "conditionPostDesc2": "<@ba.key>Säulenreihen-Arkana: WILLE</>:\n– Bei Erschaffung visiert die <@ba.key>Finsternisvertreiber-Säulenreihe</> außerdem Gegner mit <#ba.spellinflict>Technikkumulierung</> im Wirkungsbereich an und belegt sie mit einer weiteren <#ba.spellinflict>Technikkumulierung</> desselben Elements.",
+        "conditionDescInactive2": "/*Wille (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellekt (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Säulenreihen-Arkana: WILLE</> ist INAKTIV.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Dauer von Erzwungene Korrosion (Sek.)",
         "clusterStrikeTotalDmgMultiplier": "Gewittersturm-SDN-Multiplikator (Gesamt)",
-        "gloompurgeArcanaDmgMultiplier": "Finsternisvertreiber-Arkana-SDN-Multiplikator",
-        "gloompurgeArcanaStagger": "Finsternisvertreiber-Arkana-Taumeln"
+        "gloompurgeArcanaDmgMultiplier": "Finsternisvertreiber-Arkana-SDN-Multiplikator"
       },
-      "name": "Finsternisvertreiber",
-      "description": "Arkan erzeugt eine <@ba.key>Finsternisvertreiber-Säulenreihe</>, die Gegnern im Wirkungsbereich sofort <@ba.natur>Natur-SDN</> zufügt.\nErleidet ein Gegner innerhalb der <@ba.key>Finsternisvertreiber-Säulenreihe</> einen Wuchtschlag oder einen <#ba.lastcombo>Abschlussangriff</> durch den gesteuerten Operator, entfesselt die <@ba.key>Finsternisvertreiber-Säulenreihe</> einen <@ba.key>Gewittersturm</>, der ebenjenem Gegner Flächen-SDN zufügt. Dieser Effekt kann bis zu zweimal ausgelöst werden.\nWurde <@ba.key>Gewittersturm</> zweimal ausgelöst, wechselt die Ultimative Fertigkeit zu <@ba.key>Finsternisvertreiber-Arkana</>.\n<@ba.key>Finsternisvertreiber-Arkana</>: Fügt Gegnern innerhalb eines großen Wirkungsbereichs <@ba.natur>Natur-SDN</> zu."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Gewittersturm-SDN-Multiplikator (Gesamt)",
+        "gloompurgeArcanaDmgMultiplier": "Finsternisvertreiber-Arkana-SDN-Multiplikator"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Finsternisvertreiber-Säulenreihenerrichtung-SDN-Multiplikator",
+      "gloompurgerArrayCreationStagger": "Finsternisvertreiber-Säulenreihenerrichtung-Taumeln",
+      "gloompurgerArrayDurationS": "Dauer von Finsternisvertreiber-Säulenreihe (Sek.)",
+      "gloompurgeArcanaStagger": "Finsternisvertreiber-Arkana-Taumeln"
     },
     "indicator": {
       "levels": [

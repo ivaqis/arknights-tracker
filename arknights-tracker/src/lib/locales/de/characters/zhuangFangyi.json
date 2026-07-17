@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Schockierende Techniken",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pulse>Elektrischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pulse>Elektrischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pulse>Elektrischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Donnerwetter-SDN-Multiplikator",
-        "totalStagger": "Gesamt-Taumeln",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
-        "bonusUltimateEnergyPerThunderStrike": "Ultimative-Energie-Bonus durch Donnerwetter",
-        "sunderbladeLimit": "Spaltklinge-Limit",
-        "sunderbladeDurationS": "Spaltklinge-Dauer (Sek.)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Während Ultimativer Fertigkeit: Donnerwetter-SDN-Multiplikator",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Während Ultimativer Fertigkeit: Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung"
-      },
       "name": "Mantra des Reißens",
-      "description": "<#ba.consume>Verbraucht</> <#ba.conduct>Elektrifizierung</> des Ziels, um den SDN-Multiplikator dieser Kampffertigkeit zu erhöhen und erschafft [<#ba.statuslevel>Zustandslevel</> von <#ba.consume>verbrauchter</> <#ba.conduct>Elektrifizierung</> <@ba.key>+1</>] <@ba.key>Spaltklingen</>. Befinden sich auf dem Schlachtfeld weniger als {free_sword_limit:0} <@ba.key>Spaltklingen</>, kann Mantra des Reißens weiterhin 1 <@ba.key>Spaltklinge</> erschaffen, auch wenn diese keine <#ba.conduct>Elektrifizierung</> bei einem Ziel <#ba.consume>verbraucht</>.\nZhuang Fangyi lenkt dann alle <@ba.key>Spaltklingen</> in Reichweite, um nacheinander Donnerwetter auf das Ziel zu entfesseln, die <@ba.pulse>Elektrischen SDN</> verursachen und zusätzliche Ultimative Energie verleihen, wobei das letzte Donnerwetter {final_rate:0}-fachen SDN verursacht.\n<@ba.info>Das Wirken einer einzelnen Kampffertigkeit erzeugt nur bis zu {max_conduct_sword:0} Spaltklingen.</>"
+      "description": "<#ba.consume>Verbraucht</> <#ba.conduct>Elektrifizierung</> des Ziels, um den SDN-Multiplikator dieser Kampffertigkeit zu erhöhen und erschafft [<#ba.statuslevel>Zustandslevel</> von <#ba.consume>verbrauchter</> <#ba.conduct>Elektrifizierung</> <@ba.key>+1</>] <@ba.key>Spaltklingen</>. Befinden sich auf dem Schlachtfeld weniger als {free_sword_limit:0} <@ba.key>Spaltklingen</>, kann Mantra des Reißens weiterhin 1 <@ba.key>Spaltklinge</> erschaffen, auch wenn diese keine <#ba.conduct>Elektrifizierung</> bei einem Ziel <#ba.consume>verbraucht</>.\nZhuang Fangyi lenkt dann alle <@ba.key>Spaltklingen</> in Reichweite, um nacheinander Donnerwetter auf das Ziel zu entfesseln, die <@ba.pulse>Elektrischen SDN</> verursachen und zusätzliche Ultimative Energie verleihen, wobei das letzte Donnerwetter {final_rate:0}-fachen SDN verursacht.\n<@ba.info>Das Wirken einer einzelnen Kampffertigkeit erzeugt nur bis zu {max_conduct_sword:0} Spaltklingen.</>",
+      "thunderStrikeDmgMultiplier": "Donnerwetter-SDN-Multiplikator",
+      "totalStagger": "Gesamt-Taumeln",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung",
+      "bonusUltimateEnergyPerThunderStrike": "Ultimative-Energie-Bonus durch Donnerwetter",
+      "sunderbladeLimit": "Spaltklinge-Limit",
+      "sunderbladeDurationS": "Spaltklinge-Dauer (Sek.)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Während Ultimativer Fertigkeit: Donnerwetter-SDN-Multiplikator",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Während Ultimativer Fertigkeit: Bonus-SDN-Multiplikator pro Zustandslevel von verbrauchter Elektrifizierung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
-        "additionalUltimateEnergyPerInflictionStack": "Zusätzliche Ultimative Energie pro Zufügungskumulierung",
-        "duringUltimateDmgMultiplier": "Während Ultimativer Fertigkeit: SDN-Multiplikator"
-      },
       "name": "Hauch der Wandlung",
-      "description": "KOMBOAUSLÖSER: Der <#ba.lastcombo>Abschlussangriff</> oder Wuchtschlag des gesteuerten Operators trifft ein Ziel mit <#ba.pulseinflict>Elektrik</>.\nZhuang Fangyi erschafft eine Xiranblitz-Reihe, die den Gegner angreift und <@ba.pulse>Elektrischen SDN</> verursacht. Trifft die Reihe einen Gegner mit <#ba.pulseinflict>Elektrik</>kumulierung(en), werden diese <#ba.pulseinflict>Elektrik</>kumulierungen <#ba.consume>verbraucht</>, das Ziel wird mit <#ba.conduct>Elektrifizierung</> belegt und Zhuang Fangyi erhält Ultimative Energie basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen.\nWird ein Gegner mit <#ba.conduct>Elektrifizierung</> belegt, der bereits von <#ba.conduct>Elektrifizierung</> betroffen ist, steigt der <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> auf dem Gegner um +1."
+      "description": "KOMBOAUSLÖSER: Der <#ba.lastcombo>Abschlussangriff</> oder Wuchtschlag des gesteuerten Operators trifft ein Ziel mit <#ba.pulseinflict>Elektrik</>.\nZhuang Fangyi erschafft eine Xiranblitz-Reihe, die den Gegner angreift und <@ba.pulse>Elektrischen SDN</> verursacht. Trifft die Reihe einen Gegner mit <#ba.pulseinflict>Elektrik</>kumulierung(en), werden diese <#ba.pulseinflict>Elektrik</>kumulierungen <#ba.consume>verbraucht</>, das Ziel wird mit <#ba.conduct>Elektrifizierung</> belegt und Zhuang Fangyi erhält Ultimative Energie basierend auf der Anzahl der <#ba.consume>verbrauchten</> Kumulierungen.\nWird ein Gegner mit <#ba.conduct>Elektrifizierung</> belegt, der bereits von <#ba.conduct>Elektrifizierung</> betroffen ist, steigt der <#ba.statuslevel>Zustandslevel</> der <#ba.conduct>Elektrifizierung</> auf dem Gegner um +1.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt",
+      "additionalUltimateEnergyPerInflictionStack": "Zusätzliche Ultimative Energie pro Zufügungskumulierung",
+      "duringUltimateDmgMultiplier": "Während Ultimativer Fertigkeit: SDN-Multiplikator"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Dauer (Sek.)",
-        "duringUltimateBatkSeq1Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-1-Multiplikator",
-        "duringUltimateBatkSeq2Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-2-Multiplikator",
-        "duringUltimateBatkSeq3Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-3-Multiplikator"
-      },
       "name": "Zerstörerisches Unwetter",
-      "description": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie kann schwerer unterbrochen werden;\nDie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das {combo_cd_rate:0}-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erschafft, sofern es ein Ziel gibt, garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist)."
+      "description": "Verwandelt sich in den <@ba.key>Avatar der Wahrheit</> und erhält die folgenden Verbesserungen:\nZhuang Fangyis Standardangriffe werden verstärkt und sie kann schwerer unterbrochen werden;\nDie Kampffertigkeit <@ba.key>Mantra des Reißens</> erhält einen höheren SDN-Multiplikator sowie eine höhere Effektreichweite und das letzte Donnerwetter verursacht beim getroffenen Ziel <#ba.pulseinflict>Elektrik</>.\nDie Kombofertigkeit <@ba.key>Hauch der Wandlung</> erhält einen höheren SDN-Multiplikator, die Abklingzeit beschleunigt sich um das {combo_cd_rate:0}-fache und die Effekte betreffen Gegner in einem kleinen Bereich.\nDas erste Wirken der Kampffertigkeit <@ba.key>Mantra des Reißens</> verbraucht weder FP noch <#ba.conduct>Elektrifizierung</> und erschafft, sofern es ein Ziel gibt, garantiert 3 <@ba.key>Spaltklingen</> (auch dann, wenn das Ziel nicht von <#ba.conduct>Elektrifizierung</> betroffen ist).",
+      "durationS": "Dauer (Sek.)",
+      "duringUltimateBatkSeq1Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-1-Multiplikator",
+      "duringUltimateBatkSeq2Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-2-Multiplikator",
+      "duringUltimateBatkSeq3Multiplier": "Während Ultimativer Fertigkeit: STD-ANG-SEQ-3-Multiplikator"
     },
     "indicator": {
       "levels": [

@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Interdiction de l'artillerie",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opératrice, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Grille de broyage de jade",
-      "description": "Crée une <@ba.key>grille de broyage de jade</> qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis situés dans la zone d'effet."
+      "description": {
+        "main": "Crée une <@ba.key>grille de broyage de jade</> qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis situés dans la zone d'effet.",
+        "conditionName1": "Arcane de matrice : INT",
+        "conditionDesc1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est supérieure ou égale à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est ACTIVE.*/",
+        "conditionPostDesc1": "<@ba.key>Arcane de matrice : INT</> :\n- Inflige plus de DÉG.",
+        "conditionDescInactive1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est inférieure à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est INACTIVE.*/",
+        "conditionName2": "Arcane de matrice : VOL",
+        "conditionDesc2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est supérieure à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), la compétence <@ba.key>Arcane de matrice : VOL</> est ACTIVE.*/",
+        "conditionPostDesc2": "<@ba.key>Arcane de matrice : VOL</> :\n- Lorsque la matrice inflige des DÉG, elle <@ba.key>attire</> également les ennemis dans la zone d'effet.",
+        "conditionDescInactive2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est inférieure ou égale à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcane de matrice : VOL</> est INACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "Multiplicateur de DÉG"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "Multiplicateur de DÉG"
+      },
+      "stagger": "Déséquilibre"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Multiplicateur de DÉG de base",
-        "baseStagger": "Déséquilibre de base",
+      "name": "Posture de Yinglung IV",
+      "description": {
+        "conditionName1": "Arcane de matrice : INT",
+        "conditionDesc1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est supérieure ou égale à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est ACTIVE.*/",
+        "conditionPostDesc1": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.naturalinflict>altération naturelle</> est appliquée à un ennemi ou qu'il est victime d'au moins 2 cumuls d'une <#ba.spellinflict>altération des Arts non naturelle</>.\nArcane charge la cible et crée 4 <@ba.key>doubles tactiques</> qui appliquent une <#ba.naturalvul>sensibilité naturelle</>, une <#ba.crystvul>sensibilité cryogénique</> et infligent des <@ba.natur>DÉG naturels</> à la cible et aux ennemis à proximité, tout en appliquant un <@ba.key>Emprisonnement</> à la cible. Lorsque l'<@ba.key>Emprisonnement</> prend fin, les <@ba.key>doubles tactiques</> attaquent la cible et lui infligent des DÉG d'explosion.\n<@ba.key>Emprisonnement</> : malus qui ralentit toutes les actions.\n<@ba.key>Arcane de matrice : INT</> :\n- Toucher un ennemi victime d'un <@ba.key>Emprisonnement</> avec la compétence de combat d'Arcane <#ba.return>restitue</> quelques PC, met fin prématurément à l'<@ba.key>Emprisonnement</>, inflige des DÉG d'explosion, applique une nouvelle fois une <#ba.naturalvul>sensibilité naturelle</> et une <#ba.crystvul>sensibilité cryogénique</> et inflige plusieurs fois des DÉG bonus après un court instant.\n- Le temps de recharge de la compétence de combo est réduit.",
+        "conditionDescInactive1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est inférieure à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est INACTIVE.*/",
+        "conditionName2": "Arcane de matrice : VOL",
+        "conditionDesc2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est supérieure à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), la compétence <@ba.key>Arcane de matrice : VOL</> est ACTIVE.*/",
+        "conditionPostDesc2": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.spellinflict>altération des Arts</> est appliquée à un ennemi.\nArcane charge la cible et crée 4 <@ba.key>doubles tactiques</> qui infligent des <@ba.natur>DÉG naturels</> et appliquent un autre cumul d'<#ba.spellinflict>altération des Arts</> du même élément, ainsi qu'une <#ba.naturalvul>sensibilité naturelle</> et une <#ba.crystvul>sensibilité cryogénique</> à la cible et aux ennemis à proximité, tout en appliquant un <@ba.key>Emprisonnement</> à la cible. Lorsque l'<@ba.key>Emprisonnement</> prend fin, les <@ba.key>doubles tactiques</> attaquent la cible et lui infligent des DÉG d'explosion.\n<@ba.key>Emprisonnement</> : malus qui ralentit toutes les actions.\n<@ba.key>Arcane de matrice : VOL</> :\n- Lorsqu'un <@ba.key>Emprisonnement</> est appliqué en lançant une compétence de combo, les ennemis sont également légèrement <@ba.key>attirés</> vers la cible.\n- Le trait Volonté peut renforcer les effets de la <#ba.naturalvul>sensibilité naturelle</> et de la <#ba.crystvul>sensibilité cryogénique</> appliquées par la compétence de combo.",
+        "conditionDescInactive2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est inférieure ou égale à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcane de matrice : VOL</> est INACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Durée de sensibilité et d'Emprisonnement (s)",
         "susceptibility": "Sensibilité",
-        "baseSusceptibility": "Sensibilité de base",
-        "maxBonusSusceptibilityFromWill": "Bonus max. de sensibilité par Volonté",
-        "willRequiredForMaxBonusSusceptibility": "Volonté requise pour le bonus max. de sensibilité",
-        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
-        "explosionStagger": "Déséquilibre par explosion",
         "bonusDmgMultiplier": "Multiplicateur de DÉG bonus",
         "bonusSusceptibilityDurationS": "Durée du bonus de sensibilité (s)",
-        "spReturn": "Restitution de PC",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
+        "spReturn": "Restitution de PC"
       },
-      "name": "Posture de Yinglung IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Durée de sensibilité et d'Emprisonnement (s)",
+        "baseSusceptibility": "Sensibilité de base",
+        "maxBonusSusceptibilityFromWill": "Bonus max. de sensibilité par Volonté",
+        "willRequiredForMaxBonusSusceptibility": "Volonté requise pour le bonus max. de sensibilité"
+      },
+      "baseDmgMultiplier": "Multiplicateur de DÉG de base",
+      "baseStagger": "Déséquilibre de base",
+      "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+      "explosionStagger": "Déséquilibre par explosion",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Multiplicateur de DÉG de création de Matrice purificatrice",
-        "gloompurgerArrayCreationStagger": "Déséquilibre de création de Matrice purificatrice",
-        "gloompurgerArrayDurationS": "Durée de Matrice purificatrice (s)",
+      "name": "Purification",
+      "description": {
+        "main": "Arcane crée une <@ba.key>Matrice purificatrice</> qui inflige immédiatement des <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet.\nLorsque l'opérateur contrôlé inflige un coup fatal ou un <#ba.lastcombo>Coup final</> à un ennemi situé dans la <@ba.key>Matrice purificatrice</>, celle-ci déclenche une <@ba.key>Frappe d'amas</> qui inflige des DÉG de zone à cet ennemi. Cet effet peut se déclencher 2 fois.\nAprès avoir déclenché la <@ba.key>Frappe d'amas</> 2 fois, l'ultime évolue en <@ba.key>Arcane purificateur</>.\n<@ba.key>Arcane purificateur</> : inflige des <@ba.natur>DÉG naturels</> aux ennemis dans une large zone d'effet.",
+        "conditionName1": "Arcane de matrice : INT",
+        "conditionDesc1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est supérieure ou égale à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est ACTIVE.*/",
+        "conditionPostDesc1": "<@ba.key>Arcane de matrice : INT</> :\n- Lors de son apparition, la <@ba.key>Matrice purificatrice</> applique également de force une <#ba.corrupt>Corrosion</> aux ennemis dans la zone d'effet.",
+        "conditionDescInactive1": "/*Lorsque son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>) est inférieure à sa Volonté (<@ba.vup>{floor:deck_will:0}</>), la compétence <@ba.key>Arcane de matrice : INT</> est INACTIVE.*/",
+        "conditionName2": "Arcane de matrice : VOL",
+        "conditionDesc2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est supérieure à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), la compétence <@ba.key>Arcane de matrice : VOL</> est ACTIVE.*/",
+        "conditionPostDesc2": "<@ba.key>Arcane de matrice : VOL</> :\n- Lors de son apparition, la <@ba.key>Matrice purificatrice</> vise également les ennemis victimes d'une <#ba.spellinflict>altération des Arts</> dans la zone d'effet et leur applique un cumul d'<#ba.spellinflict>altération des Arts</> supplémentaire du même élément.",
+        "conditionDescInactive2": "/*Lorsque sa Volonté (<@ba.vup>{floor:deck_will:0}</>) est inférieure ou égale à son Intelligence (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Arcane de matrice : VOL</> est INACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Durée de Corrosion forcée (s)",
         "clusterStrikeTotalDmgMultiplier": "Multiplicateur de DÉG totaux de Frappe d'amas",
-        "gloompurgeArcanaDmgMultiplier": "Multiplicateur de DÉG d'Arcane purificateur",
-        "gloompurgeArcanaStagger": "Déséquilibre d'Arcane purificateur"
+        "gloompurgeArcanaDmgMultiplier": "Multiplicateur de DÉG d'Arcane purificateur"
       },
-      "name": "Purification",
-      "description": "Arcane crée une <@ba.key>Matrice purificatrice</> qui inflige immédiatement des <@ba.natur>DÉG naturels</> aux ennemis dans la zone d'effet.\nLorsque l'opérateur contrôlé inflige un coup fatal ou un <#ba.lastcombo>Coup final</> à un ennemi situé dans la <@ba.key>Matrice purificatrice</>, celle-ci déclenche une <@ba.key>Frappe d'amas</> qui inflige des DÉG de zone à cet ennemi. Cet effet peut se déclencher 2 fois.\nAprès avoir déclenché la <@ba.key>Frappe d'amas</> 2 fois, l'ultime évolue en <@ba.key>Arcane purificateur</>.\n<@ba.key>Arcane purificateur</> : inflige des <@ba.natur>DÉG naturels</> aux ennemis dans une large zone d'effet."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Multiplicateur de DÉG totaux de Frappe d'amas",
+        "gloompurgeArcanaDmgMultiplier": "Multiplicateur de DÉG d'Arcane purificateur"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Multiplicateur de DÉG de création de Matrice purificatrice",
+      "gloompurgerArrayCreationStagger": "Déséquilibre de création de Matrice purificatrice",
+      "gloompurgerArrayDurationS": "Durée de Matrice purificatrice (s)",
+      "gloompurgeArcanaStagger": "Déséquilibre d'Arcane purificateur"
     },
     "indicator": {
       "levels": [

@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal"
-      },
       "name": "Manumancienne aux épées",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Multiplicateur de DÉG d'Attrape-nuages",
-        "trailAndMangleDmgMultiplier": "Multiplicateur de DÉG de Piste broyante",
-        "trailAndMangleStagger": "Déséquilibre de Piste broyante",
-        "worldSplitterDmgMultiplier": "Multiplicateur de DÉG de Fissure planétaire",
-        "worldSplitterStagger": "Déséquilibre de Fissure planétaire"
-      },
       "name": "Triplex de Qingbo",
-      "description": "Continuez à utiliser la compétence de combat de Mi Fu afin qu'elle libère 3 attaques différentes. La première compétence de combat est <@ba.key>Attrape-nuages</>.\n<@ba.key>ATTAQUE 1 - Attrape-nuages</> : coûte <@ba.vup>100</> PC et <#ba.return>restaure</><@ba.vup> 50</> PC après le lancement. Mi Fu lance un grappin avec ses gants de boxe, qui inflige des <@ba.pd>DÉG physiques</> à la cible et aux ennemis à proximité, puis tente de les attirer à elle. Après avoir lancé l'ATTAQUE 1, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.\n<@ba.key>ATTAQUE 2 - Piste broyante</> : coûte <@ba.vup>50</> PC. Mi Fu lance une tempête de coups qui infligent des <@ba.pd>DÉG physiques</>. Le dernier coup applique <#ba.crush>Broyage</>. Si ce Broyage <#ba.consume>consomme</> au moins 3 cumuls de <#ba.noguard>Vulnérabilité</> d'une cible unique, alors la compétence de combat suivante est temporairement remplacée par <@ba.key>Fissure planétaire</>.\n<@ba.key>ATTAQUE 3 - Fissure planétaire</> : coûte <@ba.vup>50</> PC. Mi Fu inflige de gros <@ba.pd>DÉG physiques</> sur une zone donnée. Ces DÉG ne comptent pas comme des DÉG de compétence de combat, mais comme des DÉG de <#ba.crush>Broyage</>."
+      "description": "Continuez à utiliser la compétence de combat de Mi Fu afin qu'elle libère 3 attaques différentes. La première compétence de combat est <@ba.key>Attrape-nuages</>.\n<@ba.key>ATTAQUE 1 - Attrape-nuages</> : coûte <@ba.vup>100</> PC et <#ba.return>restaure</><@ba.vup> 50</> PC après le lancement. Mi Fu lance un grappin avec ses gants de boxe, qui inflige des <@ba.pd>DÉG physiques</> à la cible et aux ennemis à proximité, puis tente de les attirer à elle. Après avoir lancé l'ATTAQUE 1, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.\n<@ba.key>ATTAQUE 2 - Piste broyante</> : coûte <@ba.vup>50</> PC. Mi Fu lance une tempête de coups qui infligent des <@ba.pd>DÉG physiques</>. Le dernier coup applique <#ba.crush>Broyage</>. Si ce Broyage <#ba.consume>consomme</> au moins 3 cumuls de <#ba.noguard>Vulnérabilité</> d'une cible unique, alors la compétence de combat suivante est temporairement remplacée par <@ba.key>Fissure planétaire</>.\n<@ba.key>ATTAQUE 3 - Fissure planétaire</> : coûte <@ba.vup>50</> PC. Mi Fu inflige de gros <@ba.pd>DÉG physiques</> sur une zone donnée. Ces DÉG ne comptent pas comme des DÉG de compétence de combat, mais comme des DÉG de <#ba.crush>Broyage</>.",
+      "cloudtrapperDmgMultiplier": "Multiplicateur de DÉG d'Attrape-nuages",
+      "trailAndMangleDmgMultiplier": "Multiplicateur de DÉG de Piste broyante",
+      "trailAndMangleStagger": "Déséquilibre de Piste broyante",
+      "worldSplitterDmgMultiplier": "Multiplicateur de DÉG de Fissure planétaire",
+      "worldSplitterStagger": "Déséquilibre de Fissure planétaire"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "physicalSusceptibility": "Sensibilité physique",
-        "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Poings sans regrets",
-      "description": "DÉCLENCHEMENT DE COMBO : quand un ennemi possède un minimum de 3 cumuls de <#ba.noguard>Vulnérabilité</>.\nMi Fu lance un uppercut dévastateur qui inflige des <@ba.pd>DÉG physiques</> et applique une <#ba.physicalvul>sensibilité physique</> temporaire à l'ennemi. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>."
+      "description": "DÉCLENCHEMENT DE COMBO : quand un ennemi possède un minimum de 3 cumuls de <#ba.noguard>Vulnérabilité</>.\nMi Fu lance un uppercut dévastateur qui inflige des <@ba.pd>DÉG physiques</> et applique une <#ba.physicalvul>sensibilité physique</> temporaire à l'ennemi. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "physicalSusceptibility": "Sensibilité physique",
+      "physicalSusceptibilityDurationS": "Durée de sensibilité physique (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Pas la moindre pitié",
-      "description": "Après une courte montée en puissance, Mi Fu se propulse vers l'avant pour <#ba.airborne>soulever</> une cible dans les airs avant de l'écraser pour lui infliger des <@ba.pd>DÉG physiques</>. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>."
+      "description": "Après une courte montée en puissance, Mi Fu se propulse vers l'avant pour <#ba.airborne>soulever</> une cible dans les airs avant de l'écraser pour lui infliger des <@ba.pd>DÉG physiques</>. Une fois cette compétence lancée, la compétence de combat suivante est temporairement remplacée par <@ba.key>Piste broyante</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre"
     },
     "indicator": {
       "levels": [

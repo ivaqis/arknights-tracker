@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Absolvição Sanguínea",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.fire>DNO Térmico</>. Como o operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.fire>DNO Térmico</> aos inimigos próximos. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado se torna um finalizador que causa uma enorme quantidade de <@ba.fire>DNO Térmico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.fire>DNO Térmico</>. Como o operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.fire>DNO Térmico</> aos inimigos próximos. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado se torna um finalizador que causa uma enorme quantidade de <@ba.fire>DNO Térmico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientar",
-        "firefangVesperwingsDurationS": "Duração das Vesperferas Presas de Fogo (s)",
-        "weaknessEffect": "Efeito de Fraqueza",
-        "heatSusceptibility": "Suscetibilidade Térmica",
-        "explosionDmgMultiplier": "Multiplicador DNO Explosão"
-      },
       "name": "Exorcismo Flamejante",
-      "description": "Camille invoca <@ba.key>Vesperferas Presas de Fogo</> que voam na direção do inimigo para causar <@ba.fire>DNO Térmico</> e aplicar <#ba.fireinflict>Inflição Térmica</> nos inimigos em uma pequena área de efeito. As <@ba.key>Vesperferas Presas de Fogo</> então <@ba.key>pairam</> temporariamente ao redor do alvo e aplicam <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao alvo em questão durante a pairagem. Quando o inimigo é derrotado, as <@ba.key>Vesperferas Presas de Fogo</> voam para outro inimigo próximo, causam <@ba.fire>DNO Térmico</> e aplicam <#ba.fireinflict>Inflição Térmica</>, <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao novo alvo.\nAtingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele usando o combo de habilidades de Camille aciona uma explosão após um breve atraso. Essa explosão causa <@ba.fire>DNO Térmico</> adicional."
+      "description": "Camille invoca <@ba.key>Vesperferas Presas de Fogo</> que voam na direção do inimigo para causar <@ba.fire>DNO Térmico</> e aplicar <#ba.fireinflict>Inflição Térmica</> nos inimigos em uma pequena área de efeito. As <@ba.key>Vesperferas Presas de Fogo</> então <@ba.key>pairam</> temporariamente ao redor do alvo e aplicam <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao alvo em questão durante a pairagem. Quando o inimigo é derrotado, as <@ba.key>Vesperferas Presas de Fogo</> voam para outro inimigo próximo, causam <@ba.fire>DNO Térmico</> e aplicam <#ba.fireinflict>Inflição Térmica</>, <#ba.weak>Fraqueza</> e <#ba.firevul>Suscetibilidade Térmica</> ao novo alvo.\nAtingir um inimigo com <@ba.key>Vesperferas Presas de Fogo</> <@ba.key>pairando</> sobre ele usando o combo de habilidades de Camille aciona uma explosão após um breve atraso. Essa explosão causa <@ba.fire>DNO Térmico</> adicional.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientar",
+      "firefangVesperwingsDurationS": "Duração das Vesperferas Presas de Fogo (s)",
+      "weaknessEffect": "Efeito de Fraqueza",
+      "heatSusceptibility": "Suscetibilidade Térmica",
+      "explosionDmgMultiplier": "Multiplicador DNO Explosão"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientar",
-        "spRecovery": "Recuperação de PH",
-        "hunterPursuitDmgMultiplier": "Multiplicador DNO Perseguição do Caçador",
-        "hunterPursuitStagger": "Desorientação Perseguição do Caçador",
-        "hunterPursuitSpRecovery": "Recuperação de PH Perseguição do Caçador",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Espinho no Coração",
-      "description": "ACIONADOR DO COMBO: quando <#ba.fireinflict>Inflição Térmica</> de um inimigo é <#ba.consume>consumida</> ou <#ba.absorb>absorvida</>.\nRealiza um avanço de retorno que causa <@ba.fire>DNO Térmico</> e recupera algum PH."
+      "description": "ACIONADOR DO COMBO: quando <#ba.fireinflict>Inflição Térmica</> de um inimigo é <#ba.consume>consumida</> ou <#ba.absorb>absorvida</>.\nRealiza um avanço de retorno que causa <@ba.fire>DNO Térmico</> e recupera algum PH.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientar",
+      "spRecovery": "Recuperação de PH",
+      "hunterPursuitDmgMultiplier": "Multiplicador DNO Perseguição do Caçador",
+      "hunterPursuitStagger": "Desorientação Perseguição do Caçador",
+      "hunterPursuitSpRecovery": "Recuperação de PH Perseguição do Caçador",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientar",
-        "spRecovery": "Recuperação de PH",
-        "hunterPursuitStateDurationS": "Duração do Estado de Perseguição do Caçador (s)"
-      },
       "name": "Derrame Sanguíneo",
-      "description": "Camille voa até o céu, dispara uma saraivada de lanças e continua com um ataque de varredura. Isso causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</> aos alvos atingidos e, ao mesmo tempo, recupera PH. \nApós a conjuração da habilidade suprema, a habilidade de batalha de Camille é transformada temporariamente em <@ba.key>Perseguição do Caçador</>.\n<@ba.key>Perseguição do Caçador</> é tratado como um combo de habilidades e não gera custos de PH. É um ataque de investida que causa <@ba.fire>DNO Térmico</> e recupera PH."
+      "description": "Camille voa até o céu, dispara uma saraivada de lanças e continua com um ataque de varredura. Isso causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</> aos alvos atingidos e, ao mesmo tempo, recupera PH. \nApós a conjuração da habilidade suprema, a habilidade de batalha de Camille é transformada temporariamente em <@ba.key>Perseguição do Caçador</>.\n<@ba.key>Perseguição do Caçador</> é tratado como um combo de habilidades e não gera custos de PH. É um ataque de investida que causa <@ba.fire>DNO Térmico</> e recupera PH.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientar",
+      "spRecovery": "Recuperação de PH",
+      "hunterPursuitStateDurationS": "Duração do Estado de Perseguição do Caçador (s)"
     },
     "indicator": {
       "levels": [
