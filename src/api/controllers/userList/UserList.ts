@@ -27,6 +27,21 @@ export class UserList extends Controller<
     }
 
     protected async execute(): Promise<void> {
-        return Promise.resolve(undefined);
+        const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
+
+        if (!firebaseUid) {
+            this.status = 401;
+            this.message = "Unauthorized";
+
+            return;
+        }
+
+        const profiles = await this._database.users.findUsersByFirebaseUid(firebaseUid);
+
+        const uids = profiles.map(profile => profile.publicUid.initValue);
+
+        this.data = {
+            list: uids,
+        };
     }
 }

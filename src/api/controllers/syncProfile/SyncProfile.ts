@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { lastGameProfileSyncCache } from "@api/cache/lastGameProfileSyncCache";
 import { ResponseBody } from "@api/contracts/ResponseBody";
