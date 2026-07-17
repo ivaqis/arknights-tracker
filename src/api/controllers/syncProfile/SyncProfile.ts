@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { lastGameProfileSyncCache } from "@api/cache/lastGameProfileSyncCache";
 import { ResponseBody } from "@api/contracts/ResponseBody";
@@ -67,7 +68,7 @@ export class SyncProfile extends Controller<
         const cachedDate = this._cache.get(firebaseUid);
         if (cachedDate) {
             const now = Date.now();
-            if (cachedDate.getTime() + SyncProfile.SYNC_COOLDOWN < now) {
+            if (cachedDate.getTime() + SyncProfile.SYNC_COOLDOWN > now) {
                 this.status = 429;
                 this.message = "Sync on cooldown";
 

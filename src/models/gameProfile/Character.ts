@@ -60,7 +60,7 @@ export class Character implements IEntityClass<CharacterEntity> {
         let id = charNameRecords.getId(data.charData.name);
 
         if (!id) {
-            throw new Error(`charId not found:\n${data}`);
+            throw new Error(`charId not found:\n${JSON.stringify(data, undefined, 2)}`);
         }
 
         return new Character(

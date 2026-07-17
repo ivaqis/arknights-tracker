@@ -19,7 +19,7 @@ export const logger = winston.createLogger({
                 spacing = " ".repeat(5 - level.length);
             }
 
-            const formattedMessage = `${message}`.replace("\n", newLineSpaced);
+            const formattedMessage = `${message}`.replaceAll("\n", newLineSpaced);
 
             return `${coloredTimestamp} ${spacing}${coloredLevel} ${formattedMessage}`;
         })
