@@ -31,6 +31,21 @@ export abstract class RequestValidator<
         this._queryValidatorConstructor = validators.queryValidatorConstructor;
     }
 
+    public static with<
+        T extends RequestValidator<Params, ReqBody, ReqQuery>,
+        Params extends core.ParamsDictionary,
+        ReqBody,
+        ReqQuery
+    >(
+        ctor: new (req: e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => T
+    ): (req: e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => Promise<void> {
+        return async (req: e.Request<Params, ResponseBody<unknown>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) => {
+            const validator = new ctor(req, res, next);
+
+            await validator.safeExecute();
+        };
+    }
+
     protected async execute(): Promise<void> {
         const params = this.paramsValidate();
 

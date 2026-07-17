@@ -12,10 +12,4 @@ export class UserExistRequestValidator extends RequestValidator<{}, undefined, U
             queryValidatorConstructor: UserExistQueryValidator,
         });
     }
-
-    public static async validate(req: e.Request<{}, ResponseBody<unknown>, undefined, UserExistQuery>, res: e.Response<ResponseBody<unknown>>, next: e.NextFunction) {
-        const validator = new UserExistRequestValidator(req, res, next);
-
-        await validator.safeExecute();
-    }
 }

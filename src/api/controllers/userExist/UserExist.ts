@@ -22,10 +22,6 @@ export class UserExist extends Controller<
         this._uid = req.query.uid;
     }
 
-    public static async get(req: e.Request<{}, ResponseBody<UserExistResponse>, undefined, UserExistQuery>, res: e.Response<ResponseBody<UserExistResponse>>) {
-        return await Controller.execute(UserExist, req, res);
-    }
-
     public get name(): string {
         return "UserExist";
     }

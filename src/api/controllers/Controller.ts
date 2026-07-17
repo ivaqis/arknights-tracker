@@ -37,6 +37,22 @@ export abstract class Controller<
         await controller.safeExecute();
     }
 
+    public static with<
+        T extends Controller<Params, ResBody, ReqBody, ReqQuery>,
+        Params extends core.ParamsDictionary,
+        ResBody,
+        ReqBody,
+        ReqQuery
+    >(
+        ctor: new (req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<ResBody>>) => T
+    ): (req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<ResBody>>) => Promise<void> {
+        return async (req: e.Request<Params, ResponseBody<ResBody>, ReqBody, ReqQuery>, res: e.Response<ResponseBody<ResBody>>) => {
+            const controller = new ctor(req, res);
+
+            await controller.safeExecute();
+        };
+    }
+
     public get message(): string {
         return this._message;
     }
