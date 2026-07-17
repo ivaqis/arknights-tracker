@@ -40,6 +40,31 @@ export class GetContractRun extends Controller<
 
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
+        const gameProfile = await this._database.gameProfiles.gameProfilesTable.find(record.gameUid);
 
+        if (!gameProfile) {
+            throw new Error(`Cannot find game profile for ${JSON.stringify(record, null, 2)}`);
+        }
+
+        const profile = await this._database.users.findUser(gameProfile.uid);
+
+        if (!profile) {
+            throw new Error(`Cannot find user profile for ${JSON.stringify(gameProfile, null, 2)}`);
+        }
+
+        if (profile.isPrivate && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
+            this.status = 403;
+            this.message = "No access";
+
+            return;
+        }
+
+        this.data = {
+            uid: profile.publicUid.initValue,
+            avatarId: profile.avatarId.initValue,
+            level: gameProfile.data.base.level,
+            serverId: gameProfile.serverId,
+            recordData: record.data.getEntity()
+        };
     }
 }
