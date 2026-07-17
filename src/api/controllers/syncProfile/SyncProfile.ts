@@ -1,4 +1,5 @@
 import { database, firebase } from "@/serviceInstances";
+import { lastGameProfileSyncCache } from "@api/cache/lastGameProfileSyncCache";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { SyncProfileQuery } from "@api/contracts/syncProfile/SyncProfileQuery";
 import { SyncProfileRequest } from "@api/contracts/syncProfile/SyncProfileRequest";
@@ -17,6 +18,7 @@ import { MonumentRecord } from "@models/monument/MonumentRecord";
 import { EndfieldDataFetcher } from "@services/endfieldDataFetcher/EndfieldDataFetcher";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
+import { LRUCache } from "lru-cache";
 
 export class SyncProfile extends Controller<
     {},
@@ -24,10 +26,13 @@ export class SyncProfile extends Controller<
     SyncProfileRequest,
     SyncProfileQuery
 > {
+    public static readonly SYNC_COOLDOWN = 7 * 60 * 1000;
+
     public readonly name = "SyncProfile";
 
     private readonly _database: Database = database;
     private readonly _firebase: FirebaseAuthenticator = firebase;
+    private readonly _cache: LRUCache<string, Date, unknown> = lastGameProfileSyncCache;
 
     private readonly _uid: string;
     private readonly _firebaseToken: string;
@@ -49,7 +54,6 @@ export class SyncProfile extends Controller<
         await controller.safeExecute();
     }
 
-    // todo сделать ограничение на загрузку по времени
     protected async execute(): Promise<void> {
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
@@ -58,6 +62,17 @@ export class SyncProfile extends Controller<
             this.message = "Unauthorized";
 
             return;
+        }
+
+        const cachedDate = this._cache.get(firebaseUid);
+        if (cachedDate) {
+            const now = Date.now();
+            if (cachedDate.getTime() + SyncProfile.SYNC_COOLDOWN < now) {
+                this.status = 429;
+                this.message = "Sync on cooldown";
+
+                return;
+            }
         }
 
         const profile = await this._database.users.findUserByPublicUid(this._uid);
@@ -94,6 +109,7 @@ export class SyncProfile extends Controller<
         }
 
         this.data = result;
+        this._cache.set(firebaseUid, new Date());
     }
 
     private async updateData(fetcher: EndfieldDataFetcher, serverId: string, uid: bigint): Promise<boolean> {
