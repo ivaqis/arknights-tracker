@@ -844,7 +844,8 @@ const ruCharMapping = {
     "росси": "rossi",
     "чжуань фаньи": "zhuangfy",
     "ми фу": "mifu",
-    "камиль": "camille"
+    "камиль": "camille",
+    "премудрость": "arcane"
 };
 
 const apiIdToCharId = {
@@ -870,7 +871,8 @@ const apiIdToCharId = {
     "ee3bf7197a05580397b45ba2fb1de28e": "tangtang",
     "0b199a0eaae5a9b37a5d3c990b6c8bca": "laevatain",
     "05047b063867199b953b30ac8df9a853": "yvonne",
-    "c2fa8a588cab489795166bed5161fefc": "zhuangfy"
+    "c2fa8a588cab489795166bed5161fefc": "zhuangfy",
+    "989411af662b6e9b3f0cef53e9d32f1a": "arcane",
 };
 
 function getMappedCharId(c) {

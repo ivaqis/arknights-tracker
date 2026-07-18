@@ -916,11 +916,11 @@ export const rawEvents = [
     startTimeAsia: "2026-07-16 11:00:00",
     endTime: "2026-08-09 12:00:00",
     icon: "ev1-v1.4.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2077354993649099098?s=20",
     color: "#FEFDCF",
     layer: 11,
     type: "inGame",
-    iconPosition: 40,
+    iconPosition: 48,
     version: "1.4"
   },
   {
@@ -931,11 +931,11 @@ export const rawEvents = [
     startTimeAsia: "2026-07-16 11:00:00",
     endTime: "2026-07-31 04:00:00",
     icon: "ev2-v1.4.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2077354993649099098?s=20",
     color: "#DB3E15",
     layer: 10,
     type: "inGame",
-    iconPosition: 40,
+    iconPosition: 50,
     version: "1.4"
   },
   {
@@ -946,7 +946,7 @@ export const rawEvents = [
     startTimeAsia: "2026-07-16 11:00:00",
     endTime: "2026-08-09 12:00:00",
     icon: "ev3-v1.4.jpg",
-    url: "",
+    url: "https://x.com/AKEndfield/status/2076909557314465984?s=20",
     color: "#D405B8",
     layer: 9,
     type: "inGame",
@@ -980,7 +980,7 @@ export const rawEvents = [
     color: "#9A3D3E",
     layer: 7,
     type: "inGame",
-    iconPosition: 40,
+    iconPosition: 45,
     version: "1.4"
   },
   {
@@ -1101,6 +1101,23 @@ export const rawEvents = [
     color: "#73a8ddff",
     layer: 1,
     type: "signIn",
+    iconPosition: 30,
+    version: "1.4"
+  },
+  {
+    id: "ev14-v1.4",
+    title: "events.protocolInvitationTheReturn",
+    name: "Protocol Invitation: The Return",
+    startTime: "2026-07-15 22:00:00",
+    startTimeAsia: "2026-07-16 11:00:00",
+    endTime: "2026-09-01 17:00:00",
+    endTimeAsia: "2026-09-02 04:00:00",
+    icon: "ev14-v1.4.jpg",
+    url: "https://endfield.gryphline.com/en-us/news/3832",
+    webUrl: "https://endfield.gryphline.com/activity/relinkcall202607-qyhYCQ0O/index.html?source_from=official",
+    color: "#E1D12A",
+    layer: 0,
+    type: "web",
     iconPosition: 30,
     version: "1.4"
   }

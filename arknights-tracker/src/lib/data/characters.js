@@ -328,7 +328,7 @@ export const characters = {
     class: "caster",
     weapon: "artsUnit",
     birthDate: "07-07",
-    apiId: "chr_0032_lizhiyan",
-    gameId: "chr_0034_arcane"
+    apiId: "989411af662b6e9b3f0cef53e9d32f1a",
+    gameId: "chr_0032_lizhiyan"
   }
 };
