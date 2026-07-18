@@ -18,6 +18,7 @@
     <div
         slot="left"
         class="w-5 h-5 bg-[#2A2A2A] rounded-[4px] flex items-center justify-center pointer-events-none"
+        class:hidden={paramId === "NoAttr"}
     >
 
         <Icon

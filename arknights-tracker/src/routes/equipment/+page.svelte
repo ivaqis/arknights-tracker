@@ -85,21 +85,9 @@
 
             if (!passesAny) return false;
 
-            // for (let i = 1; i <= 3; i++) { // todo
-            //     const required = selectedFilters[`stats_${i}`];
-            //
-            //     if (required && required.size > 0) {
-            //         const statAtThisPos = allItemAttributes[i];
-            //
-            //         if (!statAtThisPos || !filterCheckLowerCase(required, statAtThisPos)) {
-            //             return false;
-            //         }
-            //     }
-            // }
-
-            const passesMain = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
-            const passesSub = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
-            const passesSpecial = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
+            const passesMain = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
+            const passesSub = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
+            const passesSpecial = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
 
             if (!(passesMain && passesSub && passesSpecial)) {
                 return false;
@@ -152,8 +140,8 @@
     $: equipmentFilteredByAttr12 = allEquipment.filter((eq) => {
         // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
 
         return passesAttr1 && passesAttr2;
     });
@@ -161,8 +149,8 @@
     $: equipmentFilteredByAttr23 = allEquipment.filter((eq) => {
         // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr2 = filterCheckLowerCase(selectedFilters.stats_2, getSubStat(eq.displayAttr)?.attrType ?? "NoAttr");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
 
         return passesAttr2 && passesAttr3;
     });
@@ -170,8 +158,8 @@
     $: equipmentFilteredByAttr13 = allEquipment.filter((eq) => {
         // const allItemAttributes = (eq.displayAttr || []).map((a) => a.attrType || "");
 
-        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "");
-        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "");
+        const passesAttr1 = filterCheckLowerCase(selectedFilters.stats_1, getMainStat(eq.displayAttr)?.attrType ?? "NoAttr");
+        const passesAttr3 = filterCheckLowerCase(selectedFilters.stats_3, getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr");
 
         return passesAttr1 && passesAttr3;
     });
@@ -192,29 +180,46 @@
         "Str",
         "Agi",
         "Wisd",
-        "Will"
+        "Will",
+        "Main",
+        "Sub"
     ]);
 
     function getMainStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType));
+        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType) && Number.isInteger(a.values[0]));
+
+        if (candidates.length > 2) {
+            console.log(candidates);
+            throw new Error(`2 or less candidates expected: ${candidates.length}`);
+        }
 
         candidates.sort((a, b) => b.values[0] - a.values[0]);
 
-        return candidates[0];
+        return candidates[0] ?? null;
     }
 
     function getSubStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType));
+        const candidates = displayAttrList.filter(a => mainStats.has(a.attrType) && Number.isInteger(a.values[0]));
 
-        candidates.sort((a, b) => a.values[0] - b.values[0]);
+        if (candidates.length > 2) {
+            console.log(candidates);
+            throw new Error(`2 or less candidates expected: ${candidates.length}`);
+        }
 
-        return candidates[0];
+        candidates.sort((a, b) => b.values[0] - a.values[0]);
+
+        return candidates[1] ?? null;
     }
 
     function getSpecialStat(displayAttrList) {
-        const candidates = displayAttrList.filter(a => !mainStats.has(a.attrType) && a.attrType !== "Def");
+        const candidates = displayAttrList.filter(a => (!mainStats.has(a.attrType) || a.values.some(v => !Number.isInteger(v))) && a.attrType !== "Def");
 
-        return candidates[0];
+        if (candidates.length > 1) {
+            console.log(candidates);
+            throw new Error(`Only 1 candidate expected: ${candidates.length}`)
+        }
+
+        return candidates[0] ?? null;
     }
 
     function getFilteredAttrGroupList(allAttrGroupList, attrSet) {
@@ -240,10 +245,10 @@
         let set = new Set();
 
         for (let eq of equipmentList) {
-            let attr = attrIndex === 1 ? getMainStat(eq.displayAttr)?.attrType
-                : attrIndex === 2 ? getSubStat(eq.displayAttr)?.attrType
-                : attrIndex === 3 ? getSpecialStat(eq.displayAttr)?.attrType
-                : undefined;
+            let attr = attrIndex === 1 ? getMainStat(eq.displayAttr)?.attrType ?? "NoAttr"
+                : attrIndex === 2 ? getSubStat(eq.displayAttr)?.attrType ?? "NoAttr"
+                : attrIndex === 3 ? getSpecialStat(eq.displayAttr)?.attrType ?? "NoAttr"
+                : null;
 
             if (attr) {
                 set.add(attr);

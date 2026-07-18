@@ -554,7 +554,7 @@
     "reset": "Reset",
     "type": "Type",
     "mainAttribute": "Main",
-    "subAttribute": "Sub",
+    "subAttribute": "Secondary",
     "specialAttribute": "Special",
     "ownedOnly": "Owned Only",
     "attribute1": "Attribute 1",
@@ -1808,6 +1808,7 @@
     "hand": "Gloves"
   },
   "equipSkills": {
+    "NoAttr": "No attribute",
     "MaxHp": "HP",
     "CriticalDamageIncrease": "Critical DMG",
     "NormalAttackDamageIncrease": "Basic Attack DMG Bonus",
