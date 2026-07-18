@@ -552,7 +552,7 @@
     "search": "Поиск...",
     "reset": "Сбросить",
     "type": "Тип",
-    "mainAttribute": "Главный",
+    "mainAttribute": "Основной",
     "subAttribute": "Побочный",
     "specialAttribute": "Специальный",
     "ownedOnly": "Только имеющиеся",
@@ -1810,6 +1810,7 @@
     "hand": "Перчатки"
   },
   "equipSkills": {
+    "NoAttr": "Без атрибута",
     "MaxHp": "ОЗ",
     "CriticalDamageIncrease": "Крит. УРН",
     "NormalAttackDamageIncrease": "УРН от базовой атаки",

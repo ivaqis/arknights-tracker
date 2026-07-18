@@ -95,6 +95,37 @@ export function getEquipmentFilters() {
         rarity: [5, 4, 3, 2, 1],
         partType: ["body", "hand", "edc"],
         pack: [],
+        stats_any: [
+            [
+                "Def",
+                "Str",
+                "Agi",
+                "Wisd",
+                "Will",
+                "Atk",
+                "CriticalRate",
+                "UltimateSpGainScalar",
+                "OriginiumArts",
+                "Main",
+                "Sub",
+            ], [
+                "NormalSkillEfficiency",
+                "ComboSkillEfficiency",
+                "UltimateSkillEfficiency",
+                "SpellDamageIncrease",
+                "AllSkillDamageIncrease"
+            ], [
+                "PhysicalDamageIncrease",
+                "AttrDamageToBrokenUnitIncrease",
+                "NormalAttackDamageIncrease",
+                "CrystAndPulseDamageIncrease",
+                "FireAndNaturalDamageIncrease"
+            ], [
+                "MaxHp",
+                "AllDamageTakenScalar",
+                "HealOutputIncrease"
+            ]
+        ],
         stats: [
             [
                 "Def",
@@ -106,8 +137,9 @@ export function getEquipmentFilters() {
                 "CriticalRate",
                 "UltimateSpGainScalar",
                 "OriginiumArts",
+                "Main",
                 "Sub",
-                "Main"
+                "NoAttr",
             ], [
                 "NormalSkillEfficiency",
                 "ComboSkillEfficiency",
