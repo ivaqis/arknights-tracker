@@ -1,4 +1,6 @@
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
+import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
 import { Prisma, PrismaClient } from "@prisma/client";
 
@@ -22,6 +24,38 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         }
 
         return UserMonumentLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async findIncludeGameProfileAndUser(gameUid: string, dungeonId: string): Promise<{
+        record: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    } | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                gameUid_dungeonId: {
+                    dungeonId,
+                    gameUid
+                }
+            },
+            include: {
+                userGameProfile: {
+                    include: {
+                        user: true
+                    }
+                }
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return {
+            record: UserMonumentLeaderboardRecord.createFromEntity(entity),
+            gameProfile: UserGameProfileRecord.createFromEntity(entity.userGameProfile),
+            user: new UserRecord(entity.userGameProfile.user)
+        };
     }
 
     public async findByGameUid(gameUid: string, dungeonId?: string): Promise<UserMonumentLeaderboardRecord[]> {

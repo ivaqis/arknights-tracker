@@ -79,7 +79,7 @@ model UserMonumentLeaderboard {
 
     @@id([gameUid, dungeonId])
     @@index([dungeonId])
-    @@index([groupId, isHard])
+    @@index([groupId, isHard, gameUid])
 }
 
 model UserBannerProfile {
