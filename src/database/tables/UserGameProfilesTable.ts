@@ -41,6 +41,7 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
                 gameUid: record.gameUid,
                 serverId: record.serverId,
                 uid: record.uid,
+                level: record.level.value,
                 data: JSON.stringify(record.data.getEntity())
             },
             update: {

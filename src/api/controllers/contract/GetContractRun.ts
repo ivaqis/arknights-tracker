@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
 import { GetContractRunResponse } from "@api/contracts/contract/GetContractRunResponse";
@@ -52,7 +53,7 @@ export class GetContractRun extends Controller<
             throw new Error(`Cannot find user profile for ${JSON.stringify(gameProfile, null, 2)}`);
         }
 
-        if (profile.isPrivate && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
+        if (profile.isPrivate.initValue && (!firebaseUid || firebaseUid !== profile.firebaseUid.initValue)) {
             this.status = 403;
             this.message = "No access";
 

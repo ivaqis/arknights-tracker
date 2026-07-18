@@ -1,17 +1,20 @@
 import { UserGameProfileEntity } from "@database/entities/UserGameProfileEntity";
+import { NumberRecordField } from "@database/records/recordFields/NumberRecordField";
 import { GameProfile } from "@models/gameProfile/GameProfile";
 
 export class UserGameProfileRecord {
     private readonly _gameUid: string;
     private readonly _serverId: string;
     private readonly _uid: bigint;
+    private readonly _level: NumberRecordField;
 
     private _data: GameProfile;
 
-    private constructor(gameUid: string, serverId: string, uid: bigint, data: GameProfile) {
+    private constructor(gameUid: string, serverId: string, uid: bigint, level: NumberRecordField, data: GameProfile) {
         this._gameUid = gameUid;
         this._serverId = serverId;
         this._uid = uid;
+        this._level = level;
         this._data = data;
     }
 
@@ -20,6 +23,7 @@ export class UserGameProfileRecord {
             gameUid,
             serverId,
             uid,
+            new NumberRecordField(data.base.level),
             data
         );
     }
@@ -29,6 +33,7 @@ export class UserGameProfileRecord {
             entity.gameUid,
             entity.serverId,
             entity.uid,
+            new NumberRecordField(entity.level),
             GameProfile.getFromEntity(JSON.parse(entity.data))
         );
     }
@@ -43,6 +48,10 @@ export class UserGameProfileRecord {
 
     public get uid(): bigint {
         return this._uid;
+    }
+
+    public get level(): NumberRecordField {
+        return this._level;
     }
 
     public get data(): GameProfile {

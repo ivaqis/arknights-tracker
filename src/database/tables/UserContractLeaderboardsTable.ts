@@ -1,10 +1,50 @@
 import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
+import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
+import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
+import { SortOrder } from "@models/SortOrder";
 import { Prisma, PrismaClient } from "@prisma/client";
 
 export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLeaderboardDelegate> {
     public constructor(prisma: PrismaClient) {
         super(prisma, prisma.userContractLeaderboard);
+    }
+
+    private static getOrderOptions(sortField: ContractLeaderboardSortField, sortOrder: SortOrder) {
+        switch (sortField) {
+            case ContractLeaderboardSortField.TIME:
+                return {
+                    clearTimeSec: sortOrder
+                };
+            case ContractLeaderboardSortField.INDICATOR_COUNT:
+                return {
+                    indicatorCount: sortOrder
+                };
+            case ContractLeaderboardSortField.LEVEL:
+                return {
+                    userGameProfile: {
+                        level: sortOrder
+                    }
+                };
+        }
+    }
+
+    private static getWhereCondition(contractId: string, publicOnly: boolean) {
+        if (publicOnly) {
+            return {
+                contractId,
+                userGameProfile: {
+                    user: {
+                        isPrivate: false
+                    }
+                }
+            };
+        }
+
+        return {
+            contractId
+        };
     }
 
     public async find(recordId: string): Promise<UserContractLeaderboardRecord | null> {
@@ -21,14 +61,26 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         return UserContractLeaderboardRecord.createFromEntity(entity);
     }
 
-    public async findByContractId(contractId: string): Promise<UserContractLeaderboardRecord[]> {
+    public async findByContractId(contractId: string, publicOnly: boolean): Promise<UserContractLeaderboardRecord[]>;
+    public async findByContractId(contractId: string, publicOnly: boolean, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<UserContractLeaderboardRecord[]>;
+
+    public async findByContractId(contractId: string, publicOnly: boolean, sortField?: ContractLeaderboardSortField, sortOrder?: SortOrder, take?: number, skip?: number): Promise<UserContractLeaderboardRecord[]> {
         const entities = await this.table.findMany({
-            where: {
-                contractId
-            }
+            take,
+            skip,
+            where: UserContractLeaderboardsTable.getWhereCondition(contractId, publicOnly),
+            orderBy: sortField && sortOrder
+                ? UserContractLeaderboardsTable.getOrderOptions(sortField, sortOrder)
+                : undefined
         });
 
         return entities.map(UserContractLeaderboardRecord.createFromEntity);
+    }
+
+    public async countByContractId(contractId: string, publicOnly: boolean): Promise<number> {
+        return this.table.count({
+            where: UserContractLeaderboardsTable.getWhereCondition(contractId, publicOnly)
+        });
     }
 
     public async findByGameUid(gameUid: string, contractId?: string): Promise<UserContractLeaderboardRecord[]> {
@@ -59,6 +111,53 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         }
 
         return UserContractLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean): Promise<{
+        contractRecord: UserContractLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]>;
+    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<{
+        contractRecord: UserContractLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]>;
+
+    public async findContractRecordsIncludeGameProfileAndUser(contractId: string,
+                                                              publicOnly: boolean,
+                                                              sortField?: ContractLeaderboardSortField,
+                                                              sortOrder?: SortOrder,
+                                                              take?: number,
+                                                              skip?: number
+    ): Promise<{
+        contractRecord: UserContractLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]> {
+        const entities = await this.table.findMany({
+            take,
+            skip,
+            where: UserContractLeaderboardsTable.getWhereCondition(contractId, publicOnly),
+            orderBy : sortField && sortOrder
+                ? UserContractLeaderboardsTable.getOrderOptions(sortField, sortOrder)
+                : undefined,
+            include: {
+                userGameProfile: {
+                    include: {
+                        user: true
+                    }
+                }
+            }
+        });
+
+        return entities.map(entity => {
+            return {
+                contractRecord: UserContractLeaderboardRecord.createFromEntity(entity),
+                gameProfile: UserGameProfileRecord.createFromEntity(entity.userGameProfile),
+                user: new UserRecord(entity.userGameProfile.user)
+            };
+        });
     }
 
     public async create(record: UserContractLeaderboardRecord) {

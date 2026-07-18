@@ -39,6 +39,7 @@ model UserGameProfile {
     gameUid  String @id
     serverId String
     uid      BigInt
+    level    Int
     data     String // json
 
     user User @relation(fields: [uid], references: [uid], onDelete: Cascade)
