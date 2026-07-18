@@ -36,6 +36,7 @@
 
     const availablePacks = [
         ...new Set( allEquipment.map((eq) => eq.pack).filter((pack) => pack) ),
+        "none"
     ];
 
     let allFilters = getEquipmentFilters();
