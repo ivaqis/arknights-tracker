@@ -79,11 +79,12 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return entities.map(UserMonumentLeaderboardRecord.createFromEntity);
     }
 
-    public async findByGroupId(groupId: string, isHard?: boolean): Promise<UserMonumentLeaderboardRecord[]> {
+    public async findByGroupId(groupId: string, isHard?: boolean, gameUid?: string): Promise<UserMonumentLeaderboardRecord[]> {
         const entities = await this.table.findMany({
             where: {
                 groupId,
-                isHard
+                isHard,
+                gameUid
             }
         });
 

@@ -1,6 +1,5 @@
 import { GetMonumentRunQuery } from "@api/contracts/monument/GetMonumentRunQuery";
 import { StringValidationRule } from "@models/validation/StringValidationRule";
-import { UsernameValidationRule } from "@models/validation/UsernameValidationRule";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
@@ -28,11 +27,11 @@ export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery>
     }
 
     private static getGameUidRule(): ValidationRule<GetMonumentRunQuery> {
-        const rule = new UsernameValidationRule(true);
+        const rule = new StringValidationRule(true);
 
         return new ValidationRule(
             item => rule.isValid(item.gameUid),
-            "gameUid must be a string matches \\w",
+            "gameUid must be a string",
         );
     }
 
