@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "VOU EXPLODIR SUA MENTE!",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.cryst>DNO Crio</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.cryst>DNO Crio</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.cryst>DNO Crio</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Multiplicador DNO Disparo",
-        "shotStagger": "Desorientação de Disparo",
-        "dmgMultiplier1Waterspout": "Multiplicador DNO (1 Tromba d'Água)",
-        "waterspoutDurationS": "Duração (s) de Tromba d'Água",
-        "spReturnPerWhirlpool": "Devolução de PH por Redemoinho",
-        "artsSusceptibility2Waterspouts": "Suscetibilidade a Artes (2 Trombas d'Água)",
-        "artsSusceptibility3Waterspouts": "Suscetibilidade a Artes (3 Trombas d'Água)",
-        "artsSusceptibilityDurationS": "Duração da Suscetibilidade a Artes (s)"
-      },
       "name": "SOU A DOMADORA DAS ONDAS!",
-      "description": "Tangtang salta da água e dispara um tiro à queima-roupa que causa <@ba.cryst>DNO Crio</> ao inimigo e cria uma <@ba.key>Tromba d'Água</>.\nLançar a habilidade de batalha também consome todos os <@ba.key>Redemoinhos</> próximos para criar <@ba.key>Trombas d'Água</> adicionais e <#ba.return>devolver</> PH com base no número de Redemoinhos criados.\n<@ba.key>Redemoinho</>: aplica 1 acúmulo de <#ba.crystinflict>Inflição Crio</> aos inimigos dentro do alcance e causa <@ba.cryst>DNO Crio</> ao longo do tempo. Se a habilidade de batalha criar várias <@ba.key>Trombas d'Água</>, elas também aplicam <#ba.spellvul>Suscetibilidade a Artes</> aos inimigos (mas não outro acúmulo de <#ba.crystinflict>Inflição Crio</>).\n<@ba.info>O DNO causado pela Tromba d'Água é tratado como DNO Habilidade de Batalha.</>"
+      "description": "Tangtang salta da água e dispara um tiro à queima-roupa que causa <@ba.cryst>DNO Crio</> ao inimigo e cria uma <@ba.key>Tromba d'Água</>.\nLançar a habilidade de batalha também consome todos os <@ba.key>Redemoinhos</> próximos para criar <@ba.key>Trombas d'Água</> adicionais e <#ba.return>devolver</> PH com base no número de Redemoinhos criados.\n<@ba.key>Redemoinho</>: aplica 1 acúmulo de <#ba.crystinflict>Inflição Crio</> aos inimigos dentro do alcance e causa <@ba.cryst>DNO Crio</> ao longo do tempo. Se a habilidade de batalha criar várias <@ba.key>Trombas d'Água</>, elas também aplicam <#ba.spellvul>Suscetibilidade a Artes</> aos inimigos (mas não outro acúmulo de <#ba.crystinflict>Inflição Crio</>).\n<@ba.info>O DNO causado pela Tromba d'Água é tratado como DNO Habilidade de Batalha.</>",
+      "shootingDmgMultiplier": "Multiplicador DNO Disparo",
+      "shotStagger": "Desorientação de Disparo",
+      "dmgMultiplier1Waterspout": "Multiplicador DNO (1 Tromba d'Água)",
+      "waterspoutDurationS": "Duração (s) de Tromba d'Água",
+      "spReturnPerWhirlpool": "Devolução de PH por Redemoinho",
+      "artsSusceptibility2Waterspouts": "Suscetibilidade a Artes (2 Trombas d'Água)",
+      "artsSusceptibility3Waterspouts": "Suscetibilidade a Artes (3 Trombas d'Água)",
+      "artsSusceptibilityDurationS": "Duração da Suscetibilidade a Artes (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "whirlpoolDurationS": "Duração (s) do Redemoinho",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "DEIXE O RIO COMIGO!",
-      "description": "ACIONADOR DO COMBO: Ao aplicar <#ba.crystinflict>Inflição Crio</> ou causar <#ba.spellburst>DNO Explosão de Artes</> a um inimigo. \nTangtang libera um poderoso jato que penetra todos os inimigos em seu caminho, causa <@ba.cryst>DNO Crio</> a eles e cria um <@ba.key>Redemoinho</>.\n<@ba.info>Podem existir até 2 Redemoinhos no campo de batalha a qualquer momento.</>"
+      "description": "ACIONADOR DO COMBO: Ao aplicar <#ba.crystinflict>Inflição Crio</> ou causar <#ba.spellburst>DNO Explosão de Artes</> a um inimigo. \nTangtang libera um poderoso jato que penetra todos os inimigos em seu caminho, causa <@ba.cryst>DNO Crio</> a eles e cria um <@ba.key>Redemoinho</>.\n<@ba.info>Podem existir até 2 Redemoinhos no campo de batalha a qualquer momento.</>",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "whirlpoolDurationS": "Duração (s) do Redemoinho",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Multiplicador Total de DNO ao longo do tempo",
-        "oldenStareDurationS": "Duração de OLHAR ANCESTRAL (s)",
-        "rogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante",
-        "earlyRogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante inicial",
-        "rogueWaveStagger": "Desorientação de Onda Gigante",
-        "earlyRogueWaveStagger": "Desorientação de Onda Gigante inicial"
-      },
       "name": "A CHEFE ESTÁ VENDO!",
-      "description": "Tangtang abre seu tapa-olho e lança um <@ba.key>OLHAR ANCESTRAL</> que temporariamente bloqueia, imobiliza e causa <@ba.cryst>DNO Crio</> ao longo do tempo aos inimigos dentro de sua área de efeito.\nQuando o <@ba.key>OLHAR ANCESTRAL</> para de evoluir, uma onda gigante desaba para causar <@ba.cryst>DNO Crio</> significativo aos inimigos em sua área de efeito.\nSe o operador controlado realizar um ataque de mergulho no padrão <@ba.key>OLHAR ANCESTRAL</>, sua evolução termina e a onda gigante é invocada imediatamente para causar ainda mais <@ba.cryst>DNO CRIO</>."
+      "description": "Tangtang abre seu tapa-olho e lança um <@ba.key>OLHAR ANCESTRAL</> que temporariamente bloqueia, imobiliza e causa <@ba.cryst>DNO Crio</> ao longo do tempo aos inimigos dentro de sua área de efeito.\nQuando o <@ba.key>OLHAR ANCESTRAL</> para de evoluir, uma onda gigante desaba para causar <@ba.cryst>DNO Crio</> significativo aos inimigos em sua área de efeito.\nSe o operador controlado realizar um ataque de mergulho no padrão <@ba.key>OLHAR ANCESTRAL</>, sua evolução termina e a onda gigante é invocada imediatamente para causar ainda mais <@ba.cryst>DNO CRIO</>.",
+      "dmgOverTimeTotalMultiplier": "Multiplicador Total de DNO ao longo do tempo",
+      "oldenStareDurationS": "Duração de OLHAR ANCESTRAL (s)",
+      "rogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante",
+      "earlyRogueWaveDmgMultiplier": "Multiplicador DNO Onda Gigante inicial",
+      "rogueWaveStagger": "Desorientação de Onda Gigante",
+      "earlyRogueWaveStagger": "Desorientação de Onda Gigante inicial"
     },
     "indicator": {
       "levels": [

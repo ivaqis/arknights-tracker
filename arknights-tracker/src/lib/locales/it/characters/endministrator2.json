@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Sequenza distruttiva",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Sequenza costruttiva",
-      "description": "Una potente esplosione di Arti di Originium che colpisce i nemici nel raggio d'azione. Infligge <@ba.pd>danni fisici</> e applica <#ba.crush>Distruzione</>."
+      "description": "Una potente esplosione di Arti di Originium che colpisce i nemici nel raggio d'azione. Infligge <@ba.pd>danni fisici</> e applica <#ba.crush>Distruzione</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "crystalShatteringDmgMultiplier": "Moltiplicatore danni Infrangimento dei cristalli",
-        "stagger": "Vacillamento",
-        "sealDurationS": "Durata sigillo (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Sequenza sigillante",
-      "description": "ATTIVAZIONE COMBO: quando un altro operatore nella squadra infligge danni con abilità combo. \nSi precipita accanto al nemico per infliggere <@ba.pd>danni fisici</> e applica <#ba.originium>cristalli di Originium</> che attivano un sigillo temporaneo. L'applicazione di uno <#ba.physicalstatus>stato fisico</> o di <#ba.noguard>Vulnerabilità</> al nemico sigillato <#ba.consume>consuma</> i <#ba.originium>cristalli di Originium</> infliggendo <@ba.pd>danni fisici</> aggiuntivi."
+      "description": "ATTIVAZIONE COMBO: quando un altro operatore nella squadra infligge danni con abilità combo. \nSi precipita accanto al nemico per infliggere <@ba.pd>danni fisici</> e applica <#ba.originium>cristalli di Originium</> che attivano un sigillo temporaneo. L'applicazione di uno <#ba.physicalstatus>stato fisico</> o di <#ba.noguard>Vulnerabilità</> al nemico sigillato <#ba.consume>consuma</> i <#ba.originium>cristalli di Originium</> infliggendo <@ba.pd>danni fisici</> aggiuntivi.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "crystalShatteringDmgMultiplier": "Moltiplicatore danni Infrangimento dei cristalli",
+      "stagger": "Vacillamento",
+      "sealDurationS": "Durata sigillo (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "bonusDmgMultiplier": "Moltiplicatore danni bonus",
-        "stagger": "Vacillamento"
-      },
       "name": "Sequenza di bombardamento",
-      "description": "Bombarda il suolo con le Arti di Originium, infliggendo ingenti <@ba.pd>danni fisici</> a tutti i nemici compresi in un'area a ventaglio. Se al nemico sono stati applicati <#ba.originium>cristalli di Originium</>, l'abilità li <#ba.consume>consuma</> e infligge un colpo aggiuntivo che provoca ulteriori <@ba.pd>danni fisici</>."
+      "description": "Bombarda il suolo con le Arti di Originium, infliggendo ingenti <@ba.pd>danni fisici</> a tutti i nemici compresi in un'area a ventaglio. Se al nemico sono stati applicati <#ba.originium>cristalli di Originium</>, l'abilità li <#ba.consume>consuma</> e infligge un colpo aggiuntivo che provoca ulteriori <@ba.pd>danni fisici</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "bonusDmgMultiplier": "Moltiplicatore danni bonus",
+      "stagger": "Vacillamento"
     },
     "indicator": {
       "levels": [

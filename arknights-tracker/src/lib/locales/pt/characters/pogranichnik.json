@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Ofensiva Total",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um ataque finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
-        "seq1Stagger": "Desorientação SEQ 1",
-        "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
-        "seq2Stagger": "Desorientação SEQ 2",
-        "spRecoveryByConsuming1VulnerabilityStack": "Recuperação de PH com Consumo de 1 Acúmulo de Vulnerabilidade",
-        "spRecoveryByConsuming2VulnerabilityStacks": "Recuperação de PH com Consumo de 2 Acúmulos de Vulnerabilidade",
-        "spRecoveryByConsuming3VulnerabilityStacks": "Recuperação de PH com Consumo de 3 Acúmulos de Vulnerabilidade",
-        "spRecoveryByConsuming4VulnerabilityStacks": "Recuperação de PH com Consumo de 4 Acúmulos de Vulnerabilidade"
-      },
       "name": "A Frente Pulverizadora",
-      "description": "Pogranichnik desfere um ataque cortante em sequência de 2 contra os inimigos à sua frente, causando <@ba.pd>DNO Físico</>, aplicando <#ba.fracture>Romper</> e recuperando PH com base no número de acúmulos de Vulnerabilidade <#ba.consume>consumidos</>. O efeito de recuperação de PH só pode ser acionado 1 vez, mesmo que a habilidade atinja vários alvos."
+      "description": "Pogranichnik desfere um ataque cortante em sequência de 2 contra os inimigos à sua frente, causando <@ba.pd>DNO Físico</>, aplicando <#ba.fracture>Romper</> e recuperando PH com base no número de acúmulos de Vulnerabilidade <#ba.consume>consumidos</>. O efeito de recuperação de PH só pode ser acionado 1 vez, mesmo que a habilidade atinja vários alvos.",
+      "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
+      "seq1Stagger": "Desorientação SEQ 1",
+      "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
+      "seq2Stagger": "Desorientação SEQ 2",
+      "spRecoveryByConsuming1VulnerabilityStack": "Recuperação de PH com Consumo de 1 Acúmulo de Vulnerabilidade",
+      "spRecoveryByConsuming2VulnerabilityStacks": "Recuperação de PH com Consumo de 2 Acúmulos de Vulnerabilidade",
+      "spRecoveryByConsuming3VulnerabilityStacks": "Recuperação de PH com Consumo de 3 Acúmulos de Vulnerabilidade",
+      "spRecoveryByConsuming4VulnerabilityStacks": "Recuperação de PH com Consumo de 4 Acúmulos de Vulnerabilidade"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
-        "seq1Stagger": "Desorientação SEQ 1",
-        "seq1SpRecovery": "Recuperação de PH SEQ 1",
-        "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
-        "seq2Stagger": "Desorientação SEQ 2",
-        "seq2SpRecovery": "Recuperação de PH SEQ 2",
-        "seq3DmgMultiplier": "Multiplicador DNO SEQ 3",
-        "seq3Stagger": "Desorientação SEQ 3",
-        "seq3SpRecovery": "Recuperação de PH SEQ 3",
-        "enhancedSeq3DmgMultiplier": "Multiplicador DNO SEQ 3 Aperfeiçoado",
-        "enhancedSeq3Stagger": "Desorientação SEQ 3 Aperfeiçoada",
-        "enhancedSeq3SpRecovery": "Recuperação de PH SEQ 3 Aperfeiçoada",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Corte da Lua Cheia",
-      "description": "ACIONADOR DO COMBO: Quando <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</> <#ba.consume>consome</> os acúmulos de <#ba.noguard>Vulnerabilidade</> do inimigo. \nDesfere várias sequências de golpes cortantes (até 3) com base no número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo, causando <@ba.pd>DNO Físico</> e recuperando PH. Cada golpe cortante causa mais DNO e fornece uma recuperação de PH melhor. \n<@ba.info>Consumir 4 acúmulos de Vulnerabilidade aprimora a 3ª sequência cortante.</>"
+      "description": "ACIONADOR DO COMBO: Quando <#ba.crush>Esmagar</> ou <#ba.fracture>Romper</> <#ba.consume>consome</> os acúmulos de <#ba.noguard>Vulnerabilidade</> do inimigo. \nDesfere várias sequências de golpes cortantes (até 3) com base no número máximo de acúmulos de <#ba.noguard>Vulnerabilidade</> <#ba.consume>consumidos</> de um inimigo, causando <@ba.pd>DNO Físico</> e recuperando PH. Cada golpe cortante causa mais DNO e fornece uma recuperação de PH melhor. \n<@ba.info>Consumir 4 acúmulos de Vulnerabilidade aprimora a 3ª sequência cortante.</>",
+      "seq1DmgMultiplier": "Multiplicador DNO SEQ 1",
+      "seq1Stagger": "Desorientação SEQ 1",
+      "seq1SpRecovery": "Recuperação de PH SEQ 1",
+      "seq2DmgMultiplier": "Multiplicador DNO SEQ 2",
+      "seq2Stagger": "Desorientação SEQ 2",
+      "seq2SpRecovery": "Recuperação de PH SEQ 2",
+      "seq3DmgMultiplier": "Multiplicador DNO SEQ 3",
+      "seq3Stagger": "Desorientação SEQ 3",
+      "seq3SpRecovery": "Recuperação de PH SEQ 3",
+      "enhancedSeq3DmgMultiplier": "Multiplicador DNO SEQ 3 Aperfeiçoado",
+      "enhancedSeq3Stagger": "Desorientação SEQ 3 Aperfeiçoada",
+      "enhancedSeq3SpRecovery": "Recuperação de PH SEQ 3 Aperfeiçoada",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "Duração do Juramento de Aço",
-        "advanceDmgMultiplier": "Multiplicador DNO Avançar",
-        "advanceStagger": "Desorientação Avançar",
-        "harassDmgMultiplier": "Multiplicador DNO Assédio",
-        "harassSpRecovery": "Recuperação de PH Assédio",
-        "decisiveAssaultDmgMultiplier": "Multiplicador DNO Assalto Decisivo",
-        "decisiveAssaultStagger": "Desorientação Assalto Decisivo",
-        "decisiveAssaultSpRecovery": "Recuperação de PH Assalto Decisivo"
-      },
       "name": "Estandarte dos Escudeiros, Avançar",
-      "description": "Invoca 4 Escudeiros para avançar em direção ao alvo e empurrar todos os inimigos ao longo do caminho, empurrando todos os inimigos ao longo do caminho até ele e causando <@ba.pd>DNO Físico</> enquanto gera 5 pontos de <@ba.key>Juramento de Aço</>. Após um inimigo sofrer um <#ba.physicalstatus>Status Físico</> ou receber DNO causado pelo combo de habilidades de Pogranichnik, Pogranichnik consome 1 ponto de <@ba.key>Juramento de Aço</> e invoca 1 Escudeiro para hostilizar o inimigo em questão, causando <@ba.pd>DNO Físico</> e recuperando um pouco de PH. Quando o último ponto de <@ba.key>Juramento de Aço</> for consumido, todos os 4 Escudeiros iniciarão um Assalto Decisivo que causará <@ba.pd>DNO Físico</> ao alvo ao mesmo tempo que recupera uma quantidade significativa de PH."
+      "description": "Invoca 4 Escudeiros para avançar em direção ao alvo e empurrar todos os inimigos ao longo do caminho, empurrando todos os inimigos ao longo do caminho até ele e causando <@ba.pd>DNO Físico</> enquanto gera 5 pontos de <@ba.key>Juramento de Aço</>. Após um inimigo sofrer um <#ba.physicalstatus>Status Físico</> ou receber DNO causado pelo combo de habilidades de Pogranichnik, Pogranichnik consome 1 ponto de <@ba.key>Juramento de Aço</> e invoca 1 Escudeiro para hostilizar o inimigo em questão, causando <@ba.pd>DNO Físico</> e recuperando um pouco de PH. Quando o último ponto de <@ba.key>Juramento de Aço</> for consumido, todos os 4 Escudeiros iniciarão um Assalto Decisivo que causará <@ba.pd>DNO Físico</> ao alvo ao mesmo tempo que recupera uma quantidade significativa de PH.",
+      "steelOathDuration": "Duração do Juramento de Aço",
+      "advanceDmgMultiplier": "Multiplicador DNO Avançar",
+      "advanceStagger": "Desorientação Avançar",
+      "harassDmgMultiplier": "Multiplicador DNO Assédio",
+      "harassSpRecovery": "Recuperação de PH Assédio",
+      "decisiveAssaultDmgMultiplier": "Multiplicador DNO Assalto Decisivo",
+      "decisiveAssaultStagger": "Desorientação Assalto Decisivo",
+      "decisiveAssaultSpRecovery": "Recuperação de PH Assalto Decisivo"
     },
     "indicator": {
       "levels": [

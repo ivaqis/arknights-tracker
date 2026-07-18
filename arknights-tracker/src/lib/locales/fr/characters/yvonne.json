@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Gâchette exubérante",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Multiplicateur de DÉG de base",
-        "dmgMultiplierOfSolidificationApplied": "Multiplicateur de DÉG de Solidification appliqué",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyFromSolidificationApplied": "Énergie d'ultime de Solidification appliquée",
-        "additionalUltimateEnergyGainPerInflictionStack": "Gain d'énergie d'ultime supplémentaire par cumul d'altération"
-      },
       "name": "Bombe brr-brr β",
-      "description": "Lance une bombe givrante. La bombe explose en touchant l'ennemi, lui infligeant des <@ba.cryst>DÉG cryogéniques</>. Si elle touche un ennemi victime d'une <#ba.crystinflict>altération cryogénique</> ou d'une <#ba.naturalinflict>altération naturelle</>, <#ba.consume>consomme</> tous les cumuls d'<#ba.spellinflict>altération des Arts</>, applique une <#ba.frozen>Solidification</> et inflige des <@ba.cryst>DÉG cryogéniques</> à la cible en fonction du nombre de cumuls <#ba.consume>consommés</>.\nLorsque la compétence de combat applique une <#ba.frozen>Solidification</>, Yvonne gagne de l'énergie d'ultime supplémentaire en fonction du nombre de cumuls <#ba.consume>consommés</>. Cet effet de gain d'énergie d'ultime ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs ennemis."
+      "description": "Lance une bombe givrante. La bombe explose en touchant l'ennemi, lui infligeant des <@ba.cryst>DÉG cryogéniques</>. Si elle touche un ennemi victime d'une <#ba.crystinflict>altération cryogénique</> ou d'une <#ba.naturalinflict>altération naturelle</>, <#ba.consume>consomme</> tous les cumuls d'<#ba.spellinflict>altération des Arts</>, applique une <#ba.frozen>Solidification</> et inflige des <@ba.cryst>DÉG cryogéniques</> à la cible en fonction du nombre de cumuls <#ba.consume>consommés</>.\nLorsque la compétence de combat applique une <#ba.frozen>Solidification</>, Yvonne gagne de l'énergie d'ultime supplémentaire en fonction du nombre de cumuls <#ba.consume>consommés</>. Cet effet de gain d'énergie d'ultime ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs ennemis.",
+      "baseDmgMultiplier": "Multiplicateur de DÉG de base",
+      "dmgMultiplierOfSolidificationApplied": "Multiplicateur de DÉG de Solidification appliqué",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicateur de DÉG bonus par cumul d'altération",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyFromSolidificationApplied": "Énergie d'ultime de Solidification appliquée",
+      "additionalUltimateEnergyGainPerInflictionStack": "Gain d'énergie d'ultime supplémentaire par cumul d'altération"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Durée (s)",
-        "numberOfEnergyReleases": "Nombre d'émissions d'énergie",
-        "energyDmgMultiplier": "Multiplicateur de DÉG d'énergie",
-        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
-        "explosionStagger": "Déséquilibre par explosion",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime",
-        "additionalUltimateEnergyGain": "Gain d'énergie d'ultime supplémentaire"
-      },
       "name": "Surgélateur express υ37",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi <#ba.frozen>solidifié</>.\nDéploie immédiatement Givr-O-max près de l'ennemi. Tant qu'il est actif, Givr-O-max projette en continu de l'énergie qui attaque les ennemis à proximité, leur inflige des <@ba.cryst>DÉG cryogéniques</> et les <@ba.key>attire</> dans sa direction. Lorsque Givr-O-max expire, il explose pour appliquer une <#ba.frozen>Solidification</> et infliger des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité.\nLorsque la compétence de combo touche l'ennemi, Yvonne gagne de l'énergie d'ultime supplémentaire. Cet effet de gain d'énergie d'ultime ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs ennemis."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur un ennemi <#ba.frozen>solidifié</>.\nDéploie immédiatement Givr-O-max près de l'ennemi. Tant qu'il est actif, Givr-O-max projette en continu de l'énergie qui attaque les ennemis à proximité, leur inflige des <@ba.cryst>DÉG cryogéniques</> et les <@ba.key>attire</> dans sa direction. Lorsque Givr-O-max expire, il explose pour appliquer une <#ba.frozen>Solidification</> et infliger des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité.\nLorsque la compétence de combo touche l'ennemi, Yvonne gagne de l'énergie d'ultime supplémentaire. Cet effet de gain d'énergie d'ultime ne peut se déclencher qu'une seule fois, même si la compétence touche plusieurs ennemis.",
+      "durationS": "Durée (s)",
+      "numberOfEnergyReleases": "Nombre d'émissions d'énergie",
+      "energyDmgMultiplier": "Multiplicateur de DÉG d'énergie",
+      "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+      "explosionStagger": "Déséquilibre par explosion",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime",
+      "additionalUltimateEnergyGain": "Gain d'énergie d'ultime supplémentaire"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durée (s)",
-        "batkDmgMultiplier": "Multiplicateur de DÉG d'ATQ-B",
-        "enhancedFinalStrikeDmgMultiplier": "Multiplicateur de DÉG de Coup final amélioré",
-        "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
-        "enhancedFinalStrikeStagger": "Déséquilibre de Coup final amélioré",
-        "maxStacks": "Cumuls max.",
-        "criticalRateBoostPerStack": "Taux de coups critiques accru par cumul",
-        "criticalDmgBoostAtMaxStacks": "DÉG critiques accrus aux cumuls max."
-      },
       "name": "Pistolet à cryodécharge",
-      "description": "Déploie immédiatement le robot de soutien Clochette et fait d'Yvonne l'opératrice contrôlée.\n<@ba.key>Améliore</> temporairement l'attaque de base (ATQ-B) d'Yvonne. Chaque séquence d'ATQ-B améliorée exécutée confère un cumul de bonus de taux de coups critiques. Une fois la quantité maximale de cumuls atteinte, Yvonne gagne également un bonus de DÉG critiques. Lorsque la compétence est sur le point de s'achever, la dernière ATQ-B améliorée d'Yvonne devient un <#ba.lastcombo>Coup final</> amélioré qui inflige de lourds <@ba.cryst>DÉG cryogéniques</>.\nSi l'ennemi est <#ba.frozen>solidifié</>, Yvonne exécute une attaque supplémentaire qui inflige des <@ba.cryst>DÉG cryogéniques</>, puis <#ba.consume>consomme</> la <#ba.frozen>Solidification</> de l'ennemi."
+      "description": "Déploie immédiatement le robot de soutien Clochette et fait d'Yvonne l'opératrice contrôlée.\n<@ba.key>Améliore</> temporairement l'attaque de base (ATQ-B) d'Yvonne. Chaque séquence d'ATQ-B améliorée exécutée confère un cumul de bonus de taux de coups critiques. Une fois la quantité maximale de cumuls atteinte, Yvonne gagne également un bonus de DÉG critiques. Lorsque la compétence est sur le point de s'achever, la dernière ATQ-B améliorée d'Yvonne devient un <#ba.lastcombo>Coup final</> amélioré qui inflige de lourds <@ba.cryst>DÉG cryogéniques</>.\nSi l'ennemi est <#ba.frozen>solidifié</>, Yvonne exécute une attaque supplémentaire qui inflige des <@ba.cryst>DÉG cryogéniques</>, puis <#ba.consume>consomme</> la <#ba.frozen>Solidification</> de l'ennemi.",
+      "durationS": "Durée (s)",
+      "batkDmgMultiplier": "Multiplicateur de DÉG d'ATQ-B",
+      "enhancedFinalStrikeDmgMultiplier": "Multiplicateur de DÉG de Coup final amélioré",
+      "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
+      "enhancedFinalStrikeStagger": "Déséquilibre de Coup final amélioré",
+      "maxStacks": "Cumuls max.",
+      "criticalRateBoostPerStack": "Taux de coups critiques accru par cumul",
+      "criticalDmgBoostAtMaxStacks": "DÉG critiques accrus aux cumuls max."
     },
     "indicator": {
       "levels": [

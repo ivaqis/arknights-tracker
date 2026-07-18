@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "TI FARÒ PERDERE LA TESTA!",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Moltiplicatore danni colpo di pistola",
-        "shotStagger": "Vacillamento da tiro",
-        "dmgMultiplier1Waterspout": "Moltiplicatore danni (1 tromba d'acqua)",
-        "waterspoutDurationS": "Durata tromba d'acqua (s)",
-        "spReturnPerWhirlpool": "Restituzione PA per vortice",
-        "artsSusceptibility2Waterspouts": "Suscettibilità alle Arti (2 trombe d'acqua)",
-        "artsSusceptibility3Waterspouts": "Suscettibilità alle Arti (3 trombe d'acqua)",
-        "artsSusceptibilityDurationS": "Durata Suscettibilità alle Arti (s)"
-      },
       "name": "SULLA CRESTA DELL'ONDA!",
-      "description": "Tangtang salta fuori dall'acqua e attacca il nemico a distanza ravvicinata, infliggendo <@ba.cryst>danni da ghiaccio</> e creando una <@ba.key>tromba d'acqua</>.\nUtilizzare l'abilità di combattimento consuma anche tutti i <@ba.key>vortici</> nelle vicinanze per creare ulteriori <@ba.key>trombe d'acqua</> e <#ba.return>ripristinare</> una parte di PA, in base al numero di trombe d'acqua generate.\n<@ba.key>Tromba d'acqua</>: applica 1 accumulo di <#ba.crystinflict>Afflizione da ghiaccio</> ai nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi. Se l'abilità di combattimento genera molteplici <@ba.key>trombe d'acqua</>, queste applicano anche <#ba.spellvul>Suscettibilità alle Arti</> ai nemici (ma non un ulteriore accumulo di <#ba.crystinflict>Afflizione da ghiaccio</>).\n<@ba.info>I danni inflitti dalla tromba d'acqua sono considerati danni da abilità di combattimento.</>"
+      "description": "Tangtang salta fuori dall'acqua e attacca il nemico a distanza ravvicinata, infliggendo <@ba.cryst>danni da ghiaccio</> e creando una <@ba.key>tromba d'acqua</>.\nUtilizzare l'abilità di combattimento consuma anche tutti i <@ba.key>vortici</> nelle vicinanze per creare ulteriori <@ba.key>trombe d'acqua</> e <#ba.return>ripristinare</> una parte di PA, in base al numero di trombe d'acqua generate.\n<@ba.key>Tromba d'acqua</>: applica 1 accumulo di <#ba.crystinflict>Afflizione da ghiaccio</> ai nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi. Se l'abilità di combattimento genera molteplici <@ba.key>trombe d'acqua</>, queste applicano anche <#ba.spellvul>Suscettibilità alle Arti</> ai nemici (ma non un ulteriore accumulo di <#ba.crystinflict>Afflizione da ghiaccio</>).\n<@ba.info>I danni inflitti dalla tromba d'acqua sono considerati danni da abilità di combattimento.</>",
+      "shootingDmgMultiplier": "Moltiplicatore danni colpo di pistola",
+      "shotStagger": "Vacillamento da tiro",
+      "dmgMultiplier1Waterspout": "Moltiplicatore danni (1 tromba d'acqua)",
+      "waterspoutDurationS": "Durata tromba d'acqua (s)",
+      "spReturnPerWhirlpool": "Restituzione PA per vortice",
+      "artsSusceptibility2Waterspouts": "Suscettibilità alle Arti (2 trombe d'acqua)",
+      "artsSusceptibility3Waterspouts": "Suscettibilità alle Arti (3 trombe d'acqua)",
+      "artsSusceptibilityDurationS": "Durata Suscettibilità alle Arti (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "whirlpoolDurationS": "Durata vortice (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "FIUME, A ME!",
-      "description": "ATTIVAZIONE COMBO: quando si applica <#ba.crystinflict>Afflizione da ghiaccio</> o si infliggono <#ba.spellburst>danni da Esplosione delle Arti</> a un nemico.\nTangtang scatena un getto potente che attraversa tutti i nemici nel suo percorso, infligge <@ba.cryst>danni da ghiaccio</> e crea un <@ba.key>vortice</>.\n<@ba.info>Possono esserci fino a 2 vortici in contemporanea sul campo di battaglia.</>"
+      "description": "ATTIVAZIONE COMBO: quando si applica <#ba.crystinflict>Afflizione da ghiaccio</> o si infliggono <#ba.spellburst>danni da Esplosione delle Arti</> a un nemico.\nTangtang scatena un getto potente che attraversa tutti i nemici nel suo percorso, infligge <@ba.cryst>danni da ghiaccio</> e crea un <@ba.key>vortice</>.\n<@ba.info>Possono esserci fino a 2 vortici in contemporanea sul campo di battaglia.</>",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "whirlpoolDurationS": "Durata vortice (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Moltiplicatore totale danni progressivi",
-        "oldenStareDurationS": "Durata SGUARDO ANTICO (s)",
-        "rogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala",
-        "earlyRogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala precoce",
-        "rogueWaveStagger": "Vacillamento da onda anomala",
-        "earlyRogueWaveStagger": "Vacillamento da onda anomala precoce"
-      },
       "name": "LA CAPA TI VEDE!",
-      "description": "Tangtang solleva la benda e scatena dall'occhio uno <@ba.key>SGUARDO ANTICO</>, che blocca e immobilizza temporaneamente i nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi.\nQuando lo <@ba.key>SGUARDO ANTICO</> termina la sua evoluzione, un'onda anomala si abbatte sui nemici nel raggio d'azione, infliggendo ingenti <@ba.cryst>danni da ghiaccio</>.\nSe l'operatore controllato esegue un attacco dall'alto all'interno dello schema dello <@ba.key>SGUARDO ANTICO</>, l'evoluzione viene interrotta e compare subito l'onda anomala, che infligge <@ba.cryst>danni da ghiaccio</> ancora più ingenti."
+      "description": "Tangtang solleva la benda e scatena dall'occhio uno <@ba.key>SGUARDO ANTICO</>, che blocca e immobilizza temporaneamente i nemici nel raggio d'azione e infligge <@ba.cryst>danni da ghiaccio</> progressivi.\nQuando lo <@ba.key>SGUARDO ANTICO</> termina la sua evoluzione, un'onda anomala si abbatte sui nemici nel raggio d'azione, infliggendo ingenti <@ba.cryst>danni da ghiaccio</>.\nSe l'operatore controllato esegue un attacco dall'alto all'interno dello schema dello <@ba.key>SGUARDO ANTICO</>, l'evoluzione viene interrotta e compare subito l'onda anomala, che infligge <@ba.cryst>danni da ghiaccio</> ancora più ingenti.",
+      "dmgOverTimeTotalMultiplier": "Moltiplicatore totale danni progressivi",
+      "oldenStareDurationS": "Durata SGUARDO ANTICO (s)",
+      "rogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala",
+      "earlyRogueWaveDmgMultiplier": "Moltiplicatore danni onda anomala precoce",
+      "rogueWaveStagger": "Vacillamento da onda anomala",
+      "earlyRogueWaveStagger": "Vacillamento da onda anomala precoce"
     },
     "indicator": {
       "levels": [

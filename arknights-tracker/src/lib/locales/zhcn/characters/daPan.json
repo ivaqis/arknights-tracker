@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "处决攻击倍率",
-        "diveAtkMultiplier": "下落攻击倍率"
-      },
       "name": "滚刀切！",
-      "description": "普通攻击：\n对敌人进行至多4段攻击，造成<@ba.pd>物理伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pd>物理伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pd>物理伤害</>并恢复一定技力。"
+      "description": "普通攻击：\n对敌人进行至多4段攻击，造成<@ba.pd>物理伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.pd>物理伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.pd>物理伤害</>并恢复一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "处决攻击倍率",
+      "diveAtkMultiplier": "下落攻击倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "伤害倍率",
-        "stagger": "失衡值",
-        "liftDurationS": "浮空时间（秒）"
-      },
       "name": "颠勺！",
-      "description": "掏出铁锅进行短暂蓄力后，用力向上颠勺，对敌人造成<@ba.pd>物理伤害</>与<#ba.airborne>击飞</>。"
+      "description": "掏出铁锅进行短暂蓄力后，用力向上颠勺，对敌人造成<@ba.pd>物理伤害</>与<#ba.airborne>击飞</>。",
+      "dmgMultiplier": "伤害倍率",
+      "stagger": "失衡值",
+      "liftDurationS": "浮空时间（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "伤害倍率",
-        "stagger": "失衡值",
-        "crushDmgBonus": "猛击伤害额外提升",
-        "ultimateEnergyGain": "获得终结技能量"
-      },
       "name": "加料！",
-      "description": "当有敌人达到4层<#ba.noguard>破防</>时可以发动。\n抡起铁锅对敌人造成大量<@ba.pd>物理伤害</>并<#ba.crush>猛击</>，本次<#ba.crush>猛击</>的伤害获得额外提升。"
+      "description": "当有敌人达到4层<#ba.noguard>破防</>时可以发动。\n抡起铁锅对敌人造成大量<@ba.pd>物理伤害</>并<#ba.crush>猛击</>，本次<#ba.crush>猛击</>的伤害获得额外提升。",
+      "dmgMultiplier": "伤害倍率",
+      "stagger": "失衡值",
+      "crushDmgBonus": "猛击伤害额外提升",
+      "ultimateEnergyGain": "获得终结技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "空中连斩伤害倍率",
-        "ultimateDmgMultiplier": "终结伤害倍率"
-      },
       "name": "切丝入锅！",
-      "description": "猛拍砧板，立即对前方范围内的敌人强制造成<#ba.airborne>击飞</>。随后发动6段连续斩击，造成<@ba.pd>物理伤害</>，最后将所有敌人一并击坠，强制造成<#ba.knockdown>倒地</>，造成大量<@ba.pd>物理伤害</>。"
+      "description": "猛拍砧板，立即对前方范围内的敌人强制造成<#ba.airborne>击飞</>。随后发动6段连续斩击，造成<@ba.pd>物理伤害</>，最后将所有敌人一并击坠，强制造成<#ba.knockdown>倒地</>，造成大量<@ba.pd>物理伤害</>。",
+      "aerialFlurryDmgMultiplier": "空中连斩伤害倍率",
+      "ultimateDmgMultiplier": "终结伤害倍率"
     },
     "indicator": {
       "levels": [

@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Exchange Current",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pulse>Electric DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pulse>Electric DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pulse>Electric DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "durationS": "Duration (s)",
-        "electricSusceptibility": "Electric Susceptibility",
-        "heatSusceptibility": "Heat Susceptibility"
-      },
       "name": "Specified Research Subject",
-      "description": "Applies <@ba.key>Focus</> with a long duration on the enemy and deals <@ba.pulse>Electric DMG</>. An enemy with an active <@ba.key>Focus</> also suffers <#ba.pulsevul>Electric Susceptibility</> and <#ba.firevul>Heat Susceptibility</>. <@ba.key>Focus</> can only be applied to 1 enemy at any given time."
+      "description": "Applies <@ba.key>Focus</> with a long duration on the enemy and deals <@ba.pulse>Electric DMG</>. An enemy with an active <@ba.key>Focus</> also suffers <#ba.pulsevul>Electric Susceptibility</> and <#ba.firevul>Heat Susceptibility</>. <@ba.key>Focus</> can only be applied to 1 enemy at any given time.",
+      "dmgMultiplier": "DMG Multiplier",
+      "durationS": "Duration (s)",
+      "electricSusceptibility": "Electric Susceptibility",
+      "heatSusceptibility": "Heat Susceptibility"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "EMP Test Site",
-      "description": "COMBO TRIGGER: When an enemy with active <@ba.key>Focus</> suffers a <#ba.physicalstatus>Physical Status</> or <#ba.spellinflict>Arts Infliction</>. \nTriggers 1 energy explosion on the enemy that deals <@ba.pulse>Electric DMG</> and applies another stack of the same <#ba.physicalstatus>Physical Status</> or <#ba.spellinflict>Arts Infliction</>."
+      "description": "COMBO TRIGGER: When an enemy with active <@ba.key>Focus</> suffers a <#ba.physicalstatus>Physical Status</> or <#ba.spellinflict>Arts Infliction</>. \nTriggers 1 energy explosion on the enemy that deals <@ba.pulse>Electric DMG</> and applies another stack of the same <#ba.physicalstatus>Physical Status</> or <#ba.spellinflict>Arts Infliction</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Electric Amp",
-        "heatAmp": "Heat Amp",
-        "durationS": "Duration (s)"
-      },
       "name": "Overclocked Moment",
-      "description": "Applies temporary <#ba.pulseenhance>Electric Amp</> and <#ba.fireenhance>Heat Amp</> to the entire team."
+      "description": "Applies temporary <#ba.pulseenhance>Electric Amp</> and <#ba.fireenhance>Heat Amp</> to the entire team.",
+      "electricAmp": "Electric Amp",
+      "heatAmp": "Heat Amp",
+      "durationS": "Duration (s)"
     },
     "indicator": {
       "levels": [

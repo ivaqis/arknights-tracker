@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "秘杖·束能技藝",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "牽引傷害倍率",
-        "explosionDmgMultiplier": "爆炸傷害倍率",
-        "explosionStagger": "爆炸失衡值"
-      },
       "name": "秘杖·引力模式",
-      "description": "進入持續施法狀態，在前方產生<@ba.key>重力奇異點</>。<@ba.key>重力奇異點</>會持續吸引附近的敵人並對其造成<@ba.natur>自然傷害</>。施法結束時<@ba.key>重力奇異點</>會爆炸，對範圍內的敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。"
+      "description": "進入持續施法狀態，在前方產生<@ba.key>重力奇異點</>。<@ba.key>重力奇異點</>會持續吸引附近的敵人並對其造成<@ba.natur>自然傷害</>。施法結束時<@ba.key>重力奇異點</>會爆炸，對範圍內的敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。",
+      "gravityPullDmgMultiplier": "牽引傷害倍率",
+      "explosionDmgMultiplier": "爆炸傷害倍率",
+      "explosionStagger": "爆炸失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "秘杖·矩陣位移",
-      "description": "當有敵人被施加<#ba.spellstatus>法術異常</>時可以發動。\n短暫施法後使目標及附近敵人全部受到重力牽引，對其造成<@ba.natur>自然傷害</>並強制造成<#ba.airborne>擊飛</>。"
+      "description": "當有敵人被施加<#ba.spellstatus>法術異常</>時可以發動。\n短暫施法後使目標及附近敵人全部受到重力牽引，對其造成<@ba.natur>自然傷害</>並強制造成<#ba.airborne>擊飛</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "fieldDurationS": "力場持續時間（秒）",
-        "slowEffect": "緩速效果",
-        "baseArtsSusceptibility": "基礎法術脆弱效果",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "每層破防提升法術脆弱"
-      },
       "name": "秘杖·重力場",
-      "description": "創造一個<@ba.key>重力紊亂區域</>，對區域內的敵人立即造成一次<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。處於<@ba.key>重力紊亂區域</>中的目標被施加<#ba.slow>緩速</>和<#ba.spellvul>法術脆弱</>。目標處於<#ba.noguard>破防</>狀態時，<#ba.spellvul>法術脆弱</>效果會隨<#ba.noguard>破防</>層數額外提升。\n<@ba.info>區域內的目標若處於擊飛狀態，將保持擊飛狀態直到區域效果結束。</>"
+      "description": "創造一個<@ba.key>重力紊亂區域</>，對區域內的敵人立即造成一次<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。處於<@ba.key>重力紊亂區域</>中的目標被施加<#ba.slow>緩速</>和<#ba.spellvul>法術脆弱</>。目標處於<#ba.noguard>破防</>狀態時，<#ba.spellvul>法術脆弱</>效果會隨<#ba.noguard>破防</>層數額外提升。\n<@ba.info>區域內的目標若處於擊飛狀態，將保持擊飛狀態直到區域效果結束。</>",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "fieldDurationS": "力場持續時間（秒）",
+      "slowEffect": "緩速效果",
+      "baseArtsSusceptibility": "基礎法術脆弱效果",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "每層破防提升法術脆弱"
     },
     "indicator": {
       "levels": [

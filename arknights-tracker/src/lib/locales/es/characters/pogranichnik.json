@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Ofensiva total",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
-        "seq1Stagger": "Tambaleo de SEC 1",
-        "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
-        "seq2Stagger": "Tambaleo de SEC 2",
-        "spRecoveryByConsuming1VulnerabilityStack": "Recuperación de PH al consumir 1 acumulación de Vulnerabilidad",
-        "spRecoveryByConsuming2VulnerabilityStacks": "Recuperación de PH al consumir 2 acumulaciones de Vulnerabilidad",
-        "spRecoveryByConsuming3VulnerabilityStacks": "Recuperación de PH al consumir 3 acumulaciones de Vulnerabilidad",
-        "spRecoveryByConsuming4VulnerabilityStacks": "Recuperación de PH al consumir 4 acumulaciones de Vulnerabilidad"
-      },
       "name": "El frente pulverizador",
-      "description": "Pogranichnik realiza un ataque de corte de 2 secuencias a los enemigos frente a él, inflige <@ba.pd>DAÑ físico</>, aplica <#ba.fracture>Brecha</> y recupera PH según la cantidad de acumulaciones de Vulnerabilidad <#ba.consume>consumidas</>. El efecto de recuperación de PH solo puede activarse 1 vez, incluso si la habilidad golpea a varios objetivos."
+      "description": "Pogranichnik realiza un ataque de corte de 2 secuencias a los enemigos frente a él, inflige <@ba.pd>DAÑ físico</>, aplica <#ba.fracture>Brecha</> y recupera PH según la cantidad de acumulaciones de Vulnerabilidad <#ba.consume>consumidas</>. El efecto de recuperación de PH solo puede activarse 1 vez, incluso si la habilidad golpea a varios objetivos.",
+      "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
+      "seq1Stagger": "Tambaleo de SEC 1",
+      "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
+      "seq2Stagger": "Tambaleo de SEC 2",
+      "spRecoveryByConsuming1VulnerabilityStack": "Recuperación de PH al consumir 1 acumulación de Vulnerabilidad",
+      "spRecoveryByConsuming2VulnerabilityStacks": "Recuperación de PH al consumir 2 acumulaciones de Vulnerabilidad",
+      "spRecoveryByConsuming3VulnerabilityStacks": "Recuperación de PH al consumir 3 acumulaciones de Vulnerabilidad",
+      "spRecoveryByConsuming4VulnerabilityStacks": "Recuperación de PH al consumir 4 acumulaciones de Vulnerabilidad"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
-        "seq1Stagger": "Tambaleo de SEC 1",
-        "seq1SpRecovery": "Rec. de PH de SEC 1",
-        "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
-        "seq2Stagger": "Tambaleo de SEC 2",
-        "seq2SpRecovery": "Rec. de PH de SEC 2",
-        "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
-        "seq3Stagger": "Tambaleo de SEC 3",
-        "seq3SpRecovery": "Rec. de PH de SEC 3",
-        "enhancedSeq3DmgMultiplier": "Multiplicador de DAÑ de SEC 3 mejorado",
-        "enhancedSeq3Stagger": "Tambaleo de SEC 3 mejorada",
-        "enhancedSeq3SpRecovery": "Rec. de PH de SEC 3 mejorada",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Corte de luna llena",
-      "description": "ACTIVADOR DE COMBO: Cuando <#ba.crush>Triturar</> o <#ba.fracture>Brecha</> <#ba.consume>consume</> acumulación(es) de <#ba.noguard>Vulnerabilidad</> del enemigo. \nRealiza una cantidad de secuencias de cortes (hasta 3) según la cantidad Máx. de acumulaciones de <#ba.noguard>Vulnerabilidad</> <#ba.consume>consumidas</> de un enemigo, inflige <@ba.pd>DAÑ físico</> y recupera algunos PH. Cada tajo inflige más DAÑ y otorga mejor recuperación de PH. \n<@ba.info>Consumir 4 acumulaciones de Vulnerabilidad mejora la tercera secuencia de cortes.</>"
+      "description": "ACTIVADOR DE COMBO: Cuando <#ba.crush>Triturar</> o <#ba.fracture>Brecha</> <#ba.consume>consume</> acumulación(es) de <#ba.noguard>Vulnerabilidad</> del enemigo. \nRealiza una cantidad de secuencias de cortes (hasta 3) según la cantidad Máx. de acumulaciones de <#ba.noguard>Vulnerabilidad</> <#ba.consume>consumidas</> de un enemigo, inflige <@ba.pd>DAÑ físico</> y recupera algunos PH. Cada tajo inflige más DAÑ y otorga mejor recuperación de PH. \n<@ba.info>Consumir 4 acumulaciones de Vulnerabilidad mejora la tercera secuencia de cortes.</>",
+      "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
+      "seq1Stagger": "Tambaleo de SEC 1",
+      "seq1SpRecovery": "Rec. de PH de SEC 1",
+      "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
+      "seq2Stagger": "Tambaleo de SEC 2",
+      "seq2SpRecovery": "Rec. de PH de SEC 2",
+      "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
+      "seq3Stagger": "Tambaleo de SEC 3",
+      "seq3SpRecovery": "Rec. de PH de SEC 3",
+      "enhancedSeq3DmgMultiplier": "Multiplicador de DAÑ de SEC 3 mejorado",
+      "enhancedSeq3Stagger": "Tambaleo de SEC 3 mejorada",
+      "enhancedSeq3SpRecovery": "Rec. de PH de SEC 3 mejorada",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "Duración del Juramento de acero",
-        "advanceDmgMultiplier": "Multiplicador de DAÑ por Avanzar",
-        "advanceStagger": "Tambaleo por Avanzar",
-        "harassDmgMultiplier": "Multiplicador de DAÑ de Acoso",
-        "harassSpRecovery": "Rec. de PH de Acoso",
-        "decisiveAssaultDmgMultiplier": "Multiplicador de DAÑ de Asalto decisivo",
-        "decisiveAssaultStagger": "Tambaleo por Asalto decisivo",
-        "decisiveAssaultSpRecovery": "Rec. de PH de Asalto decisivo"
-      },
       "name": "Estandarte de Guardia del escudo, adelante",
-      "description": "Invoca 4 Guardias del escudo para avanzar y empujar a todos los enemigos en el camino hacia el objetivo, infligiendo <@ba.pd>DAÑ físico</> mientras genera 5 puntos de <@ba.key>Juramento de Acero</>. Después de que un enemigo sufre un <#ba.physicalstatus>Estado físico</> o recibe DAÑ de la habilidad de combo de Pogranichnik, Pogranichnik consume 1 punto de <@ba.key>Juramento de acero</> e invoca 1 Guardia del escudo para hostigar a ese enemigo, infligiendo <@ba.pd>DAÑ físico</> y recuperando algunos PH. Cuando se consume el último punto de <@ba.key>Juramento de acero</>, los 4 Guardias del escudo iniciarán un Asalto decisivo que inflige <@ba.pd>DAÑ físico</> masivo al objetivo mientras recupera muchos PH."
+      "description": "Invoca 4 Guardias del escudo para avanzar y empujar a todos los enemigos en el camino hacia el objetivo, infligiendo <@ba.pd>DAÑ físico</> mientras genera 5 puntos de <@ba.key>Juramento de Acero</>. Después de que un enemigo sufre un <#ba.physicalstatus>Estado físico</> o recibe DAÑ de la habilidad de combo de Pogranichnik, Pogranichnik consume 1 punto de <@ba.key>Juramento de acero</> e invoca 1 Guardia del escudo para hostigar a ese enemigo, infligiendo <@ba.pd>DAÑ físico</> y recuperando algunos PH. Cuando se consume el último punto de <@ba.key>Juramento de acero</>, los 4 Guardias del escudo iniciarán un Asalto decisivo que inflige <@ba.pd>DAÑ físico</> masivo al objetivo mientras recupera muchos PH.",
+      "steelOathDuration": "Duración del Juramento de acero",
+      "advanceDmgMultiplier": "Multiplicador de DAÑ por Avanzar",
+      "advanceStagger": "Tambaleo por Avanzar",
+      "harassDmgMultiplier": "Multiplicador de DAÑ de Acoso",
+      "harassSpRecovery": "Rec. de PH de Acoso",
+      "decisiveAssaultDmgMultiplier": "Multiplicador de DAÑ de Asalto decisivo",
+      "decisiveAssaultStagger": "Tambaleo por Asalto decisivo",
+      "decisiveAssaultSpRecovery": "Rec. de PH de Asalto decisivo"
     },
     "indicator": {
       "levels": [

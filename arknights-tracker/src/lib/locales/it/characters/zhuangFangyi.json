@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Arti dirompenti",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Moltiplicatore danni Colpo di tuono",
-        "totalStagger": "Vacillamento totale",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Moltiplicatore danni bonus per livello di stato di Elettrificazione consumato",
-        "bonusUltimateEnergyPerThunderStrike": "Energia suprema bonus per Colpo di tuono",
-        "sunderbladeLimit": "Limite di Lame fendenti",
-        "sunderbladeDurationS": "Durata Lama fendente (s)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Durante abilità suprema: moltiplicatore danni Colpo di tuono",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante abilità suprema: moltiplicatore danni bonus per livello di stato di Elettrificazione consumato"
-      },
       "name": "Mantra della separazione",
-      "description": "<#ba.consume>Consuma</> l'<#ba.conduct>Elettrificazione</> del bersaglio per aumentare il moltiplicatore danni di questa abilità di combattimento e creare <@ba.key>Lame fendenti</> pari al <#ba.statuslevel>livello di stato</> dell'<#ba.conduct>Elettrificazione</> <#ba.consume>consumata</> <@ba.key>+1</>. Se sul campo di battaglia sono presenti meno di {free_sword_limit:0} <@ba.key>Lame fendenti</>, Mantra della separazione può comunque creare 1 <@ba.key>Lama fendente</> anche se non <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> dei bersagli.\nSuccessivamente, Zhuang Fangyi convoglia tutte le <@ba.key>Lame fendenti</> nelle vicinanze e scatena Colpi di tuono contro il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e conferendo energia suprema bonus. Il Colpo di tuono finale infligge {final_rate:0} volte i danni.\n<@ba.info>Un solo uso dell'abilità di combattimento crea al massimo {max_conduct_sword:0} Lame fendenti.</>"
+      "description": "<#ba.consume>Consuma</> l'<#ba.conduct>Elettrificazione</> del bersaglio per aumentare il moltiplicatore danni di questa abilità di combattimento e creare <@ba.key>Lame fendenti</> pari al <#ba.statuslevel>livello di stato</> dell'<#ba.conduct>Elettrificazione</> <#ba.consume>consumata</> <@ba.key>+1</>. Se sul campo di battaglia sono presenti meno di {free_sword_limit:0} <@ba.key>Lame fendenti</>, Mantra della separazione può comunque creare 1 <@ba.key>Lama fendente</> anche se non <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> dei bersagli.\nSuccessivamente, Zhuang Fangyi convoglia tutte le <@ba.key>Lame fendenti</> nelle vicinanze e scatena Colpi di tuono contro il bersaglio, infliggendo <@ba.pulse>danni da elettricità</> e conferendo energia suprema bonus. Il Colpo di tuono finale infligge {final_rate:0} volte i danni.\n<@ba.info>Un solo uso dell'abilità di combattimento crea al massimo {max_conduct_sword:0} Lame fendenti.</>",
+      "thunderStrikeDmgMultiplier": "Moltiplicatore danni Colpo di tuono",
+      "totalStagger": "Vacillamento totale",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Moltiplicatore danni bonus per livello di stato di Elettrificazione consumato",
+      "bonusUltimateEnergyPerThunderStrike": "Energia suprema bonus per Colpo di tuono",
+      "sunderbladeLimit": "Limite di Lame fendenti",
+      "sunderbladeDurationS": "Durata Lama fendente (s)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Durante abilità suprema: moltiplicatore danni Colpo di tuono",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante abilità suprema: moltiplicatore danni bonus per livello di stato di Elettrificazione consumato"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGain": "Incremento energia suprema",
-        "additionalUltimateEnergyPerInflictionStack": "Energia suprema aggiuntiva per accumulo di Afflizione",
-        "duringUltimateDmgMultiplier": "Durante abilità suprema: moltiplicatore danni"
-      },
       "name": "Soffio della trasformazione",
-      "description": "ATTIVAZIONE COMBO: quando il <#ba.lastcombo>colpo finale</> o una mossa letale dell'operatore controllato colpisce un nemico affetto da <#ba.pulseinflict>Afflizione da elettricità</>.\nZhuang Fangyi crea una raffica di lampi di xiranite con cui attacca il nemico e infligge <@ba.pulse>danni da elettricità</>. Se la raffica colpisce un nemico già sottoposto ad accumuli di <#ba.pulseinflict>Afflizione da elettricità</>, allora <#ba.consume>consumerà</> i suddetti accumuli di <#ba.pulseinflict>Afflizione da elettricità</>, applicando forzatamente <#ba.conduct>Elettrificazione</> e conferendo energia suprema in base al numero di accumuli <#ba.consume>consumati</>.\nSe <#ba.conduct>Elettrificazione</> viene applicata forzatamente a un nemico che ne è già affetto, applica un <#ba.statuslevel>livello di stato</> +1 all'<#ba.conduct>Elettrificazione</> del nemico."
+      "description": "ATTIVAZIONE COMBO: quando il <#ba.lastcombo>colpo finale</> o una mossa letale dell'operatore controllato colpisce un nemico affetto da <#ba.pulseinflict>Afflizione da elettricità</>.\nZhuang Fangyi crea una raffica di lampi di xiranite con cui attacca il nemico e infligge <@ba.pulse>danni da elettricità</>. Se la raffica colpisce un nemico già sottoposto ad accumuli di <#ba.pulseinflict>Afflizione da elettricità</>, allora <#ba.consume>consumerà</> i suddetti accumuli di <#ba.pulseinflict>Afflizione da elettricità</>, applicando forzatamente <#ba.conduct>Elettrificazione</> e conferendo energia suprema in base al numero di accumuli <#ba.consume>consumati</>.\nSe <#ba.conduct>Elettrificazione</> viene applicata forzatamente a un nemico che ne è già affetto, applica un <#ba.statuslevel>livello di stato</> +1 all'<#ba.conduct>Elettrificazione</> del nemico.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema",
+      "additionalUltimateEnergyPerInflictionStack": "Energia suprema aggiuntiva per accumulo di Afflizione",
+      "duringUltimateDmgMultiplier": "Durante abilità suprema: moltiplicatore danni"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durata (s)",
-        "duringUltimateBatkSeq1Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 1",
-        "duringUltimateBatkSeq2Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 2",
-        "duringUltimateBatkSeq3Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 3"
-      },
       "name": "Tempesta devastante",
-      "description": "Si trasforma nell'<@ba.key>Empireo della verità</>, che fornisce i seguenti potenziamenti.\nGli attacchi base di Zhuang Fangyi vengono potenziati ed è più difficile interrompere le sue azioni.\nL'abilità di combattimento <@ba.key>Mantra della separazione</> ottiene un moltiplicatore danni più alto e un raggio d'azione maggiore, e il Colpo di tuono finale applica anche <#ba.pulseinflict>Afflizione da elettricità</> al bersaglio colpito.\nL'abilità combo <@ba.key>Soffio della trasformazione</> ottiene un moltiplicatore danni più alto, il tempo di recupero diventa {combo_cd_rate:0} volte più veloce e gli effetti vengono applicati ai nemici in un piccolo raggio d'azione.\nIl primo uso dell'abilità di combattimento <@ba.key>Mantra della separazione</> non consuma PA né <#ba.conduct>Elettrificazione</> e, se c'è un bersaglio disponibile, l'abilità di combattimento crea 3 <@ba.key>Lame fendenti</> anche se il bersaglio non è affetto da <#ba.conduct>Elettrificazione</>."
+      "description": "Si trasforma nell'<@ba.key>Empireo della verità</>, che fornisce i seguenti potenziamenti.\nGli attacchi base di Zhuang Fangyi vengono potenziati ed è più difficile interrompere le sue azioni.\nL'abilità di combattimento <@ba.key>Mantra della separazione</> ottiene un moltiplicatore danni più alto e un raggio d'azione maggiore, e il Colpo di tuono finale applica anche <#ba.pulseinflict>Afflizione da elettricità</> al bersaglio colpito.\nL'abilità combo <@ba.key>Soffio della trasformazione</> ottiene un moltiplicatore danni più alto, il tempo di recupero diventa {combo_cd_rate:0} volte più veloce e gli effetti vengono applicati ai nemici in un piccolo raggio d'azione.\nIl primo uso dell'abilità di combattimento <@ba.key>Mantra della separazione</> non consuma PA né <#ba.conduct>Elettrificazione</> e, se c'è un bersaglio disponibile, l'abilità di combattimento crea 3 <@ba.key>Lame fendenti</> anche se il bersaglio non è affetto da <#ba.conduct>Elettrificazione</>.",
+      "durationS": "Durata (s)",
+      "duringUltimateBatkSeq1Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 1",
+      "duringUltimateBatkSeq2Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 2",
+      "duringUltimateBatkSeq3Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 3"
     },
     "indicator": {
       "levels": [

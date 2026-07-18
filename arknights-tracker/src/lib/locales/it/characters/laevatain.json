@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Ceneri infuocate",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.fire>danni da fuoco</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.fire>danni da fuoco</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.fire>danni da fuoco</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.fire>danni da fuoco</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.fire>danni da fuoco</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.fire>danni da fuoco</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "Moltiplicatore danni Esplosione base",
-        "baseExplosionStagger": "Vacillamento Esplosione base",
-        "dmgOverTimeMultiplierPerSeq": "Moltiplicatore danni progressivi per SEQ",
-        "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
-        "additionalAtkStagger": "Vacillamento ATT aggiuntivo",
-        "combustionDurationS": "Durata Combustione (s)",
-        "additionalAtkUltimateEnergyGain": "Incremento energia suprema ATT aggiuntivo",
-        "duringUltimateBatkSeq1Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 1",
-        "duringUltimateBatkSeq1Stagger": "Durante abilità suprema: Vacillamento SEQ ATTB 1",
-        "duringUltimateBatkSeq2Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 2",
-        "duringUltimateBatkSeq2Stagger": "Durante abilità suprema: Vacillamento SEQ ATTB 2",
-        "duringUltimateAdditionalAtkMultiplier": "Durante abilità suprema: moltiplicatore ATT aggiuntivo",
-        "duringUltimateAdditionalAtkStagger": "Durante abilità suprema: Vacillamento ATT aggiuntivo",
-        "duringUltimateCombustionDurationS": "Durante abilità suprema: durata Combustione (s)"
-      },
       "name": "Fuoco quiescente",
-      "description": "Evoca un frammento di magma che attacca continuamente i nemici e infligge <@ba.fire>danni da fuoco</>. Colpire il nemico conferisce un accumulo di <@ba.key>Fiamma di scioglimento</>. \nSe Laevatain ha già {count:0} accumulo/i di <@ba.key>Fiamma di scioglimento</> quando usa l'abilità, consuma tutti gli accumuli ed esegue un attacco aggiuntivo che infligge <@ba.fire>danni da fuoco</> e attiva forzatamente <#ba.burning>Combustione</> temporanea a tutti i nemici in un'ampia area.\nQuando l'attacco aggiuntivo colpisce il nemico, ripristina ulteriore energia suprema.\n<@ba.info>Mentre l'abilità suprema di Laevatain è attiva, gli effetti delle abilità di combattimento sono potenziati.</>"
+      "description": "Evoca un frammento di magma che attacca continuamente i nemici e infligge <@ba.fire>danni da fuoco</>. Colpire il nemico conferisce un accumulo di <@ba.key>Fiamma di scioglimento</>. \nSe Laevatain ha già {count:0} accumulo/i di <@ba.key>Fiamma di scioglimento</> quando usa l'abilità, consuma tutti gli accumuli ed esegue un attacco aggiuntivo che infligge <@ba.fire>danni da fuoco</> e attiva forzatamente <#ba.burning>Combustione</> temporanea a tutti i nemici in un'ampia area.\nQuando l'attacco aggiuntivo colpisce il nemico, ripristina ulteriore energia suprema.\n<@ba.info>Mentre l'abilità suprema di Laevatain è attiva, gli effetti delle abilità di combattimento sono potenziati.</>",
+      "baseExplosionDmgMultiplier": "Moltiplicatore danni Esplosione base",
+      "baseExplosionStagger": "Vacillamento Esplosione base",
+      "dmgOverTimeMultiplierPerSeq": "Moltiplicatore danni progressivi per SEQ",
+      "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
+      "additionalAtkStagger": "Vacillamento ATT aggiuntivo",
+      "combustionDurationS": "Durata Combustione (s)",
+      "additionalAtkUltimateEnergyGain": "Incremento energia suprema ATT aggiuntivo",
+      "duringUltimateBatkSeq1Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 1",
+      "duringUltimateBatkSeq1Stagger": "Durante abilità suprema: Vacillamento SEQ ATTB 1",
+      "duringUltimateBatkSeq2Multiplier": "Durante abilità suprema: moltiplicatore SEQ ATTB 2",
+      "duringUltimateBatkSeq2Stagger": "Durante abilità suprema: Vacillamento SEQ ATTB 2",
+      "duringUltimateAdditionalAtkMultiplier": "Durante abilità suprema: moltiplicatore ATT aggiuntivo",
+      "duringUltimateAdditionalAtkStagger": "Durante abilità suprema: Vacillamento ATT aggiuntivo",
+      "duringUltimateCombustionDurationS": "Durante abilità suprema: durata Combustione (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGainWhenHitting1Enemy": "Incremento energia suprema quando viene colpito 1 nemico",
-        "ultimateEnergyGainWhenHitting2Enemies": "Incremento energia suprema quando vengono colpiti 2 nemici",
-        "ultimateEnergyGainWhenHitting3Enemies": "Incremento energia suprema quando vengono colpiti 3 nemici"
-      },
       "name": "Ribollire",
-      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.burning>Combustione</> o <#ba.corrupt>Corrosione</>. \nIl fuoco divampa sotto i piedi di qualsiasi nemico con <#ba.burning>Combustione</> o <#ba.corrupt>Corrosione</>, infliggendo loro <@ba.fire>danni da fuoco</>. \nSe l'abilità colpisce il nemico, Laevatain ottiene un accumulo di <@ba.key>Fiamma di scioglimento</> e ulteriore energia suprema per ogni nemico colpito."
+      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.burning>Combustione</> o <#ba.corrupt>Corrosione</>. \nIl fuoco divampa sotto i piedi di qualsiasi nemico con <#ba.burning>Combustione</> o <#ba.corrupt>Corrosione</>, infliggendo loro <@ba.fire>danni da fuoco</>. \nSe l'abilità colpisce il nemico, Laevatain ottiene un accumulo di <@ba.key>Fiamma di scioglimento</> e ulteriore energia suprema per ogni nemico colpito.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGainWhenHitting1Enemy": "Incremento energia suprema quando viene colpito 1 nemico",
+      "ultimateEnergyGainWhenHitting2Enemies": "Incremento energia suprema quando vengono colpiti 2 nemici",
+      "ultimateEnergyGainWhenHitting3Enemies": "Incremento energia suprema quando vengono colpiti 3 nemici"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durata (s)",
-        "enhancedBatkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1 amplificato",
-        "enhancedBatkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2 amplificato",
-        "enhancedBatkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3 amplificato",
-        "enhancedBatkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4 amplificato"
-      },
       "name": "Crepuscolo",
-      "description": "Laevatain evoca il suo Sviga Lævi e diventa l'operatore controllato. \nPer un certo periodo di tempo, i suoi attacchi base (ATTB) vengono potenziati e lo Sviga Lævi attacca insieme a Laevatain, infliggendo <@ba.fire>danni da fuoco</>. La sequenza di attacchi base 3 applica anche <#ba.fireinflict>Afflizione da fuoco</>.\n<@ba.info>Usare l'abilità di combattimento Fuoco quiescente o l'abilità combo Ribollire non accorcia la durata dell'abilità suprema Crepuscolo.</>"
+      "description": "Laevatain evoca il suo Sviga Lævi e diventa l'operatore controllato. \nPer un certo periodo di tempo, i suoi attacchi base (ATTB) vengono potenziati e lo Sviga Lævi attacca insieme a Laevatain, infliggendo <@ba.fire>danni da fuoco</>. La sequenza di attacchi base 3 applica anche <#ba.fireinflict>Afflizione da fuoco</>.\n<@ba.info>Usare l'abilità di combattimento Fuoco quiescente o l'abilità combo Ribollire non accorcia la durata dell'abilità suprema Crepuscolo.</>",
+      "durationS": "Durata (s)",
+      "enhancedBatkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1 amplificato",
+      "enhancedBatkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2 amplificato",
+      "enhancedBatkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3 amplificato",
+      "enhancedBatkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4 amplificato"
     },
     "indicator": {
       "levels": [

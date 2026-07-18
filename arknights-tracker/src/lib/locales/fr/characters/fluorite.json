@@ -26,47 +26,39 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Kata de pistolet signature",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{attack_poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{attack_poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "slowEffect": "Effet Lenteur"
-      },
       "name": "Petite surprise",
-      "description": "Envoie un <@ba.key>explosif improvisé</> qui s'accroche à la cible et la <#ba.slow>ralentit</>, puis explose après un court instant. L'explosion inflige des <@ba.natur>DÉG naturels</> ainsi qu'une <#ba.naturalinflict>altération naturelle</> aux ennemis qui se trouvent dans la zone d'effet. Vaincre la cible déclenche immédiatement l'<@ba.key>explosif improvisé</>.\n<@ba.info>Seul 1 explosif improvisé peut être présent sur le champ de bataille.</>"
+      "description": "Envoie un <@ba.key>explosif improvisé</> qui s'accroche à la cible et la <#ba.slow>ralentit</>, puis explose après un court instant. L'explosion inflige des <@ba.natur>DÉG naturels</> ainsi qu'une <#ba.naturalinflict>altération naturelle</> aux ennemis qui se trouvent dans la zone d'effet. Vaincre la cible déclenche immédiatement l'<@ba.key>explosif improvisé</>.\n<@ba.info>Seul 1 explosif improvisé peut être présent sur le champ de bataille.</>",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "slowEffect": "Effet Lenteur"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Cadeaux offerts",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime de 2 cumuls ou plus d'<#ba.crystinflict>altération cryogénique</> ou <#ba.naturalinflict>naturelle</>.\nTire sur l'ennemi ciblé pour déclencher une explosion spéciale qui inflige des <@ba.natur>DÉG naturels</> et applique une autre <#ba.spellinflict>altération des Arts</> de l'élément dont souffre déjà l'ennemi."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est victime de 2 cumuls ou plus d'<#ba.crystinflict>altération cryogénique</> ou <#ba.naturalinflict>naturelle</>.\nTire sur l'ennemi ciblé pour déclencher une explosion spéciale qui inflige des <@ba.natur>DÉG naturels</> et applique une autre <#ba.spellinflict>altération des Arts</> de l'élément dont souffre déjà l'ennemi.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
-        "seq4DmgMultiplier": "Multiplicateur de DÉG SÉQ 4",
-        "battleSkillAoeBoost": "Zone d'effet de compétence de combat accrue",
-        "battleSkillDmgBoost": "DÉG de compétence de combat accrus",
-        "stagger": "Déséquilibre"
-      },
       "name": "Maîtrise de la farce",
-      "description": "Fluorite se déplace rapidement en arc de cercle et tire sur les ennemis pris dans cet arc, leur infligeant ainsi 4 séquences de <@ba.natur>DÉG naturels</>. Si un <@ba.key>explosif improvisé</> est collé à la cible, la compétence le fait détoner immédiatement et augmente les DÉG et la portée de l'explosion.\nSi la séquence finale de DÉG touche une cible avec au moins 2 cumuls d'<#ba.crystinflict>altération cryogénique</> ou <#ba.naturalinflict>naturelle</>, la même <#ba.spellinflict>altération des Arts</> s'applique une nouvelle fois."
+      "description": "Fluorite se déplace rapidement en arc de cercle et tire sur les ennemis pris dans cet arc, leur infligeant ainsi 4 séquences de <@ba.natur>DÉG naturels</>. Si un <@ba.key>explosif improvisé</> est collé à la cible, la compétence le fait détoner immédiatement et augmente les DÉG et la portée de l'explosion.\nSi la séquence finale de DÉG touche une cible avec au moins 2 cumuls d'<#ba.crystinflict>altération cryogénique</> ou <#ba.naturalinflict>naturelle</>, la même <#ba.spellinflict>altération des Arts</> s'applique une nouvelle fois.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
+      "seq4DmgMultiplier": "Multiplicateur de DÉG SÉQ 4",
+      "battleSkillAoeBoost": "Zone d'effet de compétence de combat accrue",
+      "battleSkillDmgBoost": "DÉG de compétence de combat accrus",
+      "stagger": "Déséquilibre"
     },
     "indicator": {
       "levels": [

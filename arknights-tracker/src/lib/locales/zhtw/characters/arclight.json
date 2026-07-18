@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "循跡逐獵",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "additionalAtkDmgMultiplier": "追加傷害倍率",
-        "additionalAtkStagger": "追加失衡值",
-        "spRecovery": "回復技力"
-      },
       "name": "疾風迅雷",
-      "description": "瞬閃至敵人身邊進行2次斬擊，造成少量<@ba.pd>物理傷害</>。若敵人處於<#ba.conduct>導電</>狀態，<#ba.consume>消耗</>其<#ba.conduct>導電</>狀態並追加1次攻擊，造成<@ba.pulse>電磁傷害</>，然後回復一定技力。"
+      "description": "瞬閃至敵人身邊進行2次斬擊，造成少量<@ba.pd>物理傷害</>。若敵人處於<#ba.conduct>導電</>狀態，<#ba.consume>消耗</>其<#ba.conduct>導電</>狀態並追加1次攻擊，造成<@ba.pulse>電磁傷害</>，然後回復一定技力。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "additionalAtkDmgMultiplier": "追加傷害倍率",
+      "additionalAtkStagger": "追加失衡值",
+      "spRecovery": "回復技力"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "spRecovery": "回復技力",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "鳴雷",
-      "description": "當有敵人進入<#ba.conduct>導電</>狀態或<#ba.conduct>導電</>狀態被<#ba.consume>消耗</>後可以發動。\n瞬閃至敵人身邊進行多次斬擊，造成<@ba.pd>物理傷害</>，並回復一定技力。"
+      "description": "當有敵人進入<#ba.conduct>導電</>狀態或<#ba.conduct>導電</>狀態被<#ba.consume>消耗</>後可以發動。\n瞬閃至敵人身邊進行多次斬擊，造成<@ba.pd>物理傷害</>，並回復一定技力。",
+      "dmgMultiplier": "傷害倍率",
+      "spRecovery": "回復技力",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq1Stagger": "第一段失衡值",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值"
-      },
       "name": "轟雷掣電",
-      "description": "用電弧包裹自身後向前方衝刺一段距離，對路徑上的敵人造成<@ba.pulse>電磁傷害</>並施加<#ba.pulseinflict>電磁附著</>。一段時間後，引爆留下的電弧，再次造成<@ba.pulse>電磁傷害</>，若敵人處於<#ba.pulseinflict>電磁附著</>狀態，則會<#ba.consume>消耗</>其<#ba.pulseinflict>電磁附著</>並強制施加<#ba.conduct>導電</>。"
+      "description": "用電弧包裹自身後向前方衝刺一段距離，對路徑上的敵人造成<@ba.pulse>電磁傷害</>並施加<#ba.pulseinflict>電磁附著</>。一段時間後，引爆留下的電弧，再次造成<@ba.pulse>電磁傷害</>，若敵人處於<#ba.pulseinflict>電磁附著</>狀態，則會<#ba.consume>消耗</>其<#ba.pulseinflict>電磁附著</>並強制施加<#ba.conduct>導電</>。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq1Stagger": "第一段失衡值",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值"
     },
     "indicator": {
       "levels": [

@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Audiogeräusch",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Onomatopoesie",
-      "description": "Ein Lanzenstoß, der eisige Schallwellen entlang eines geraden Pfades ausstößt, die <@ba.cryst>Kryo-SDN</> verursachen und alle getroffenen Gegner mit <#ba.crystinflict>Kryo</> belegen."
+      "description": "Ein Lanzenstoß, der eisige Schallwellen entlang eines geraden Pfades ausstößt, die <@ba.cryst>Kryo-SDN</> verursachen und alle getroffenen Gegner mit <#ba.crystinflict>Kryo</> belegen.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "SDN-Multiplikator gegen nicht erstarrte Gegner",
-        "dmgMultiplierAgainstSolidifiedEnemies": "SDN-Multiplikator gegen erstarrte Gegner",
-        "stagger": "Taumeln",
-        "physicalSusceptibilityMultiplier": "Multiplikator für Physisch-Empfänglichkeit",
-        "physicalSusceptibilityDuration": "Dauer der Physisch-Empfänglichkeit",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Verzerrung",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.frozen>Erstarrung</> belegt wird. \nBewegt sich schnell zum betreffenden Gegner, fügt <@ba.pd>Physischen SDN</> zu und <#ba.airborne>hebt</> Gegner in einem kleinen Bereich <#ba.airborne>an</>. Wenn die Fertigkeit einen Gegner mit <#ba.frozen>Erstarrung</> trifft, verursacht er zusätzlichen SDN und belegt den Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</>."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner mit <#ba.frozen>Erstarrung</> belegt wird. \nBewegt sich schnell zum betreffenden Gegner, fügt <@ba.pd>Physischen SDN</> zu und <#ba.airborne>hebt</> Gegner in einem kleinen Bereich <#ba.airborne>an</>. Wenn die Fertigkeit einen Gegner mit <#ba.frozen>Erstarrung</> trifft, verursacht er zusätzlichen SDN und belegt den Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "SDN-Multiplikator gegen nicht erstarrte Gegner",
+      "dmgMultiplierAgainstSolidifiedEnemies": "SDN-Multiplikator gegen erstarrte Gegner",
+      "stagger": "Taumeln",
+      "physicalSusceptibilityMultiplier": "Multiplikator für Physisch-Empfänglichkeit",
+      "physicalSusceptibilityDuration": "Dauer der Physisch-Empfänglichkeit",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Tremolo",
-      "description": "Estella schlägt mit all ihrer Kraft mit ihrem Speerschaft zu und fügt so allen Gegnern in einem kreisförmigen Bereich um sie herum <@ba.pd>Physischen SDN</> zu. Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> werden durch diesen Schlag <#ba.airborne>Angehoben</>."
+      "description": "Estella schlägt mit all ihrer Kraft mit ihrem Speerschaft zu und fügt so allen Gegnern in einem kreisförmigen Bereich um sie herum <@ba.pd>Physischen SDN</> zu. Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> werden durch diesen Schlag <#ba.airborne>Angehoben</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Ruination",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
-        "seq3Stagger": "SEQ 3 Stagger",
-        "physicalSusceptibility": "Phy Suscept",
-        "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)"
-      },
       "name": "Turbid Avatar",
-      "description": "Mengayunkan senjata galah beberapa kali untuk menimbulkan 2 hantaman <@ba.pd>Physical DMG</>, lalu menghantam tanah untuk menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh di area efek. \nJika musuh yang terkena serangan terakhir dari skill ini tidak terkena tumpukan <#ba.noguard>Vulnerability</>, <#ba.physicalvul>Physical Susceptibility</> juga akan diakibatkan kepada musuh yang bersangkutan."
+      "description": "Mengayunkan senjata galah beberapa kali untuk menimbulkan 2 hantaman <@ba.pd>Physical DMG</>, lalu menghantam tanah untuk menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh di area efek. \nJika musuh yang terkena serangan terakhir dari skill ini tidak terkena tumpukan <#ba.noguard>Vulnerability</>, <#ba.physicalvul>Physical Susceptibility</> juga akan diakibatkan kepada musuh yang bersangkutan.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
+      "seq3Stagger": "SEQ 3 Stagger",
+      "physicalSusceptibility": "Phy Suscept",
+      "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "comboDurationS": "Durasi Kombo (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Aspect of Wrath",
-      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada satu musuh yang terkena <#ba.physicalvul>Physical Susceptibility</> atau <#ba.fracture>Breach</>. \nMengeluarkan aspek yang akan menusukkan tombak sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memberikan <#ba.combo>Link</>."
+      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada satu musuh yang terkena <#ba.physicalvul>Physical Susceptibility</> atau <#ba.fracture>Breach</>. \nMengeluarkan aspek yang akan menusukkan tombak sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memberikan <#ba.combo>Link</>.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "comboDurationS": "Durasi Kombo (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
-        "additionalAtkStagger": "Tambahan ATK Stagger"
-      },
       "name": "Heart of the Unmoving",
-      "description": "Melepaskan aspek yang akan melancarkan Immovable Vajra Slam sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek (AOE) yang besar, dan musuh akan ditarik ke arah tengah AOE. Setelah beberapa saat, Slam itu akan melepaskan satu hantaman lagi yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> lagi kepada musuh yang masih berada di dalam AOE.\nJika skill <#ba.consume>memakai</> <#ba.combo>Link</>, <@ba.pd>Physical DMG</> sangat besar akan ditimbulkan lagi."
+      "description": "Melepaskan aspek yang akan melancarkan Immovable Vajra Slam sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.knockdown>Knock Down</> kepada semua musuh dalam area efek (AOE) yang besar, dan musuh akan ditarik ke arah tengah AOE. Setelah beberapa saat, Slam itu akan melepaskan satu hantaman lagi yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan mengakibatkan <#ba.knockdown>Knock Down</> lagi kepada musuh yang masih berada di dalam AOE.\nJika skill <#ba.consume>memakai</> <#ba.combo>Link</>, <@ba.pd>Physical DMG</> sangat besar akan ditimbulkan lagi.",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "additionalAtkStagger": "Tambahan ATK Stagger"
     },
     "indicator": {
       "levels": [

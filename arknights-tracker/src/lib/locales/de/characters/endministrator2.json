@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Destruktive Sequenz",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Konstruktive Sequenz",
-      "description": "Eine kraftvolle Originium-Technikexplosion, die Gegner innerhalb des Wirkungsbereichs angreift. Fügt <@ba.pd>Physischen SDN</> und <#ba.crush>Zertrümmern</> zu."
+      "description": "Eine kraftvolle Originium-Technikexplosion, die Gegner innerhalb des Wirkungsbereichs angreift. Fügt <@ba.pd>Physischen SDN</> und <#ba.crush>Zertrümmern</> zu.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "crystalShatteringDmgMultiplier": "SDN-Multiplikator bei Kristallzersplitterung",
-        "stagger": "Taumeln",
-        "sealDurationS": "Siegeldauer (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Siegel-Sequenz",
-      "description": "KOMBOAUSLÖSER: Wenn ein anderer Operator im Team SDN mit Kombofertigkeiten verursacht. \nStürmt an die Seite des Gegners, um <@ba.pd>Physischen SDN</> zu verursachen und ihn mit <#ba.originium>Originium-Kristallen</> zu versehen, durch die er temporär versiegelt wird. Wenn dem versiegelten Gegner ein <#ba.physicalstatus>Physischer Zustand</> oder <#ba.noguard>Anfälligkeit</> zugefügt wird, werden die <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> und es wird zusätzlicher <@ba.pd>Physischer SDN</> verursacht."
+      "description": "KOMBOAUSLÖSER: Wenn ein anderer Operator im Team SDN mit Kombofertigkeiten verursacht. \nStürmt an die Seite des Gegners, um <@ba.pd>Physischen SDN</> zu verursachen und ihn mit <#ba.originium>Originium-Kristallen</> zu versehen, durch die er temporär versiegelt wird. Wenn dem versiegelten Gegner ein <#ba.physicalstatus>Physischer Zustand</> oder <#ba.noguard>Anfälligkeit</> zugefügt wird, werden die <#ba.originium>Originium-Kristalle</> <#ba.consume>verbraucht</> und es wird zusätzlicher <@ba.pd>Physischer SDN</> verursacht.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "crystalShatteringDmgMultiplier": "SDN-Multiplikator bei Kristallzersplitterung",
+      "stagger": "Taumeln",
+      "sealDurationS": "Siegeldauer (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "bonusDmgMultiplier": "Bonus-SDN-Multiplikator",
-        "stagger": "Taumeln"
-      },
       "name": "Bombardement-Sequenz",
-      "description": "Bombardiert den Boden mit Originium-Techniken und verursacht massiven <@ba.pd>Physischen SDN</> bei allen Gegnern in einem fächerförmigen Bereich. Wenn der Gegner mit <#ba.originium>Originium-Kristallen</> besetzt ist, <#ba.consume>verbraucht</> diese Fertigkeit diese <#ba.originium>Originium-Kristalle</> und verursacht einen weiteren Treffer mit <@ba.pd>Physischem SDN</>."
+      "description": "Bombardiert den Boden mit Originium-Techniken und verursacht massiven <@ba.pd>Physischen SDN</> bei allen Gegnern in einem fächerförmigen Bereich. Wenn der Gegner mit <#ba.originium>Originium-Kristallen</> besetzt ist, <#ba.consume>verbraucht</> diese Fertigkeit diese <#ba.originium>Originium-Kristalle</> und verursacht einen weiteren Treffer mit <@ba.pd>Physischem SDN</>.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "bonusDmgMultiplier": "Bonus-SDN-Multiplikator",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

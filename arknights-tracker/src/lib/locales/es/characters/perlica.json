@@ -26,42 +26,34 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Protocolo α: brecha",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pulse>DAÑ eléctrico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pulse>DAÑ eléctrico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pulse>DAÑ eléctrico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Protocolo ω: ataque",
-      "description": "Invoca un rayo de energía electromagnética que inflige <@ba.pulse>DAÑ eléctrico</> e <#ba.pulseinflict>Imp. elec.</> a los enemigos en un área pequeña."
+      "description": "Invoca un rayo de energía electromagnética que inflige <@ba.pulse>DAÑ eléctrico</> e <#ba.pulseinflict>Imp. elec.</> a los enemigos en un área pequeña.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "electrifyDurationS": "Duración Electrificación (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Protocolo instantáneo: cadena",
-      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre cualquier enemigo. \nLibera la energía electromagnética almacenada para bombardear al objetivo, infligiendo <@ba.pulse>DAÑ eléctrico</> e imponiendo <#ba.conduct>Electrificación</> forzada temporal."
+      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado realiza un <#ba.lastcombo>Golpe final</> sobre cualquier enemigo. \nLibera la energía electromagnética almacenada para bombardear al objetivo, infligiendo <@ba.pulse>DAÑ eléctrico</> e imponiendo <#ba.conduct>Electrificación</> forzada temporal.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "electrifyDurationS": "Duración Electrificación (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Protocolo ε: 70.41 K",
-      "description": "Teleprotocola un enorme fragmento de escombro orbital al campo de batalla con un impacto devastador. Todos los enemigos alcanzados sufren gran <@ba.pulse>DAÑ eléctrico</>."
+      "description": "Teleprotocola un enorme fragmento de escombro orbital al campo de batalla con un impacto devastador. Todos los enemigos alcanzados sufren gran <@ba.pulse>DAÑ eléctrico</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

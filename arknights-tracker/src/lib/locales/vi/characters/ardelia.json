@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Sơn Thạch Thầm Thì",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.natur>ST Tự Nhiên</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.natur>ST Tự Nhiên</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.natur>ST Tự Nhiên</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "susceptibility": "Yếu Hóa",
-        "susceptibilityDurationS": "Thời Gian Yếu Hóa (giây)"
-      },
       "name": "Dolly Xung Phong",
-      "description": "Cưỡi Ngài Dolly húc thẳng vào mục tiêu gây <@ba.natur>ST Tự Nhiên</>. Nếu mục tiêu đang có <#ba.corrupt>Ăn Mòn</>, thì <#ba.consume>tiêu hao</> <#ba.corrupt>Ăn Mòn</> và gây hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</> và <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên mục tiêu."
+      "description": "Cưỡi Ngài Dolly húc thẳng vào mục tiêu gây <@ba.natur>ST Tự Nhiên</>. Nếu mục tiêu đang có <#ba.corrupt>Ăn Mòn</>, thì <#ba.consume>tiêu hao</> <#ba.corrupt>Ăn Mòn</> và gây hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</> và <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên mục tiêu.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "susceptibility": "Yếu Hóa",
+      "susceptibilityDurationS": "Thời Gian Yếu Hóa (giây)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "explosionDmgMultiplier": "Hệ Số ST Nổ",
-        "stagger": "Suy Sụp",
-        "corrodeDurationS": "Thời Gian Hiệu Lực Ăn Mòn (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Cột Bộc Phát",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển tung <#ba.lastcombo>Đòn Dứt Điểm</> vào kẻ địch đang <@ba.key>không có</> điểm cộng dồn <#ba.noguard>Trừ Giáp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> nào. \nBắn một Đám Mây Núi Lửa tự dẫn vào mục tiêu, gây <@ba.natur>ST Tự Nhiên</> khi áp sát. Đám Mây Núi Lửa phát nổ trễ, gây một nửa <@ba.natur>ST Tự Nhiên</> và cưỡng bức gây <#ba.corrupt>Ăn Mòn</> tạm thời lên kẻ địch lân cận."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển tung <#ba.lastcombo>Đòn Dứt Điểm</> vào kẻ địch đang <@ba.key>không có</> điểm cộng dồn <#ba.noguard>Trừ Giáp</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</> nào. \nBắn một Đám Mây Núi Lửa tự dẫn vào mục tiêu, gây <@ba.natur>ST Tự Nhiên</> khi áp sát. Đám Mây Núi Lửa phát nổ trễ, gây một nửa <@ba.natur>ST Tự Nhiên</> và cưỡng bức gây <#ba.corrupt>Ăn Mòn</> tạm thời lên kẻ địch lân cận.",
+      "dmgMultiplier": "Hệ Số ST",
+      "explosionDmgMultiplier": "Hệ Số ST Nổ",
+      "stagger": "Suy Sụp",
+      "corrodeDurationS": "Thời Gian Hiệu Lực Ăn Mòn (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "durationS": "Thời Gian Hiệu Lực (giây)"
-      },
       "name": "Tiệc Len",
-      "description": "Ardelia nhập trạng thái tụ lực di động và gọi Ngài Dolly trợ chiến. Nhiều bản sao Ngài Dolly được ném ngẫu nhiên, mỗi bản sao gây <@ba.natur>ST Tự Nhiên</> khi trúng kẻ địch. Mỗi kẻ địch chỉ nhận 1 lần ST mỗi {interval:0.0} giây."
+      "description": "Ardelia nhập trạng thái tụ lực di động và gọi Ngài Dolly trợ chiến. Nhiều bản sao Ngài Dolly được ném ngẫu nhiên, mỗi bản sao gây <@ba.natur>ST Tự Nhiên</> khi trúng kẻ địch. Mỗi kẻ địch chỉ nhận 1 lần ST mỗi {interval:0.0} giây.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "durationS": "Thời Gian Hiệu Lực (giây)"
     },
     "indicator": {
       "levels": [

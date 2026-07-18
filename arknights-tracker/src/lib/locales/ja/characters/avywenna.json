@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "雷槍・迅撃",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "thunderlanceDmgMultiplier": "雷槍ダメージ倍率",
-        "thunderlanceStagger": "雷槍ブレイク値",
-        "thunderlanceExDmgMultiplier": "強雷槍ダメージ倍率",
-        "thunderlanceExStagger": "強雷槍ブレイク値"
-      },
       "name": "雷槍・逆襲",
-      "description": "ジャンプしてから槍で旋風を起こし、周囲の敵にわずかな<@ba.pulse>電磁ダメージ</>を与える。同時に、すべての<@ba.key>雷槍</>、<@ba.key>強雷槍</>を回収する。\n回収するときに<@ba.key>雷槍</>が敵を貫通すると、その敵に<@ba.pulse>電磁ダメージ</>を与える。<@ba.key>強雷槍</>はより高い<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。"
+      "description": "ジャンプしてから槍で旋風を起こし、周囲の敵にわずかな<@ba.pulse>電磁ダメージ</>を与える。同時に、すべての<@ba.key>雷槍</>、<@ba.key>強雷槍</>を回収する。\n回収するときに<@ba.key>雷槍</>が敵を貫通すると、その敵に<@ba.pulse>電磁ダメージ</>を与える。<@ba.key>強雷槍</>はより高い<@ba.pulse>電磁ダメージ</>を与え、<#ba.pulseinflict>電磁付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "thunderlanceDmgMultiplier": "雷槍ダメージ倍率",
+      "thunderlanceStagger": "雷槍ブレイク値",
+      "thunderlanceExDmgMultiplier": "強雷槍ダメージ倍率",
+      "thunderlanceExStagger": "強雷槍ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "thunderlanceDurationS": "雷槍の存在する時間（秒）",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "雷槍・閃撃",
-      "description": "操作中のオペレーターが<#ba.pulseinflict>電磁付着</>または<#ba.conduct>感電</>状態の敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\nジャンプしながら敵に3本の<@ba.key>雷槍</>を投げ、範囲内の敵に1回<@ba.pulse>電磁ダメージ</>を与える。"
+      "description": "操作中のオペレーターが<#ba.pulseinflict>電磁付着</>または<#ba.conduct>感電</>状態の敵に<#ba.lastcombo>重攻撃</>を与えると発動可能。\nジャンプしながら敵に3本の<@ba.key>雷槍</>を投げ、範囲内の敵に1回<@ba.pulse>電磁ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "thunderlanceDurationS": "雷槍の存在する時間（秒）",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "thunderlanceExDurationS": "強雷槍の存在する時間（秒）"
-      },
       "name": "雷槍・決震",
-      "description": "目標エリアに<@ba.key>強雷槍</>を投げ、周囲の敵に高い<@ba.pulse>電磁ダメージ</>を与える。"
+      "description": "目標エリアに<@ba.key>強雷槍</>を投げ、周囲の敵に高い<@ba.pulse>電磁ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "thunderlanceExDurationS": "強雷槍の存在する時間（秒）"
     },
     "indicator": {
       "levels": [

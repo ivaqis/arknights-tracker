@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Dance of Rime",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.cryst>Cryo DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.cryst>Cryo DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.cryst>Cryo DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Mirage Additional ATK DMG Multiplier",
-        "spReturn": "SP Return",
-        "durationS": "Duration (s)",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Esoteric Legacy of Seš'qa",
-      "description": "Performs a <@ba.key>Hypothermic Perfusion</> on the controlled operator's weapon and <#ba.return>returns</> some SP. \nThe next <#ba.lastcombo>Final Strike</> performed by the currently controlled operator within a certain duration creates Last Rite's Mirages that unleash an additional attack at the target. This attack deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</>. \nWhen the controlled operator is Last Rite herself, casting this battle skill does not reset her basic attack sequence."
+      "description": "Performs a <@ba.key>Hypothermic Perfusion</> on the controlled operator's weapon and <#ba.return>returns</> some SP. \nThe next <#ba.lastcombo>Final Strike</> performed by the currently controlled operator within a certain duration creates Last Rite's Mirages that unleash an additional attack at the target. This attack deals <@ba.cryst>Cryo DMG</> and applies <#ba.crystinflict>Cryo Infliction</>. \nWhen the controlled operator is Last Rite herself, casting this battle skill does not reset her basic attack sequence.",
+      "mirageAdditionalAtkDmgMultiplier": "Mirage Additional ATK DMG Multiplier",
+      "spReturn": "SP Return",
+      "durationS": "Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Ice Shard DMG Multiplier",
-        "slashBaseDmgMultiplier": "Slash Base DMG Multiplier",
-        "slashStagger": "Slash Stagger",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
-        "baseUltimateEnergyGain": "Base Ultimate Energy Gain",
-        "additionalUltimateEnergyGainPerInflictionStack": "Additional Ultimate Energy Gain per Infliction Stack"
-      },
       "name": "Winter's Devourer",
-      "description": "COMBO TRIGGER: When an enemy has {count:0} or more <#ba.crystinflict>Cryo Infliction</> stacks. \nEncases the target enemy in icicles and shatters them to <#ba.consume>consume</> all <#ba.crystinflict>Cryo Infliction</> stacks of the said enemy. The number of <#ba.crystinflict>Cryo Infliction</> stacks <#ba.consume>consumed</> determines the amount of <@ba.cryst>Cryo DMG</> dealt to the said enemy and Ultimate Energy gained by Last Rite."
+      "description": "COMBO TRIGGER: When an enemy has {count:0} or more <#ba.crystinflict>Cryo Infliction</> stacks. \nEncases the target enemy in icicles and shatters them to <#ba.consume>consume</> all <#ba.crystinflict>Cryo Infliction</> stacks of the said enemy. The number of <#ba.crystinflict>Cryo Infliction</> stacks <#ba.consume>consumed</> determines the amount of <@ba.cryst>Cryo DMG</> dealt to the said enemy and Ultimate Energy gained by Last Rite.",
+      "iceShardDmgMultiplier": "Ice Shard DMG Multiplier",
+      "slashBaseDmgMultiplier": "Slash Base DMG Multiplier",
+      "slashStagger": "Slash Stagger",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus DMG Multiplier per Infliction Stack",
+      "baseUltimateEnergyGain": "Base Ultimate Energy Gain",
+      "additionalUltimateEnergyGainPerInflictionStack": "Additional Ultimate Energy Gain per Infliction Stack"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
-        "seq3Stagger": "SEQ 3 Stagger"
-      },
       "name": "Vigil Services",
-      "description": "Last Rite encases herself in frost armor, creates an ice scythe to perform 3 slashes, and gains immunity to all damages while this state is active. \nEach slash deals massive <@ba.cryst>Cryo DMG</>. \n<@ba.info>Last Rite can only gain Ultimate Energy from her own battle skills and combo skills.</>"
+      "description": "Last Rite encases herself in frost armor, creates an ice scythe to perform 3 slashes, and gains immunity to all damages while this state is active. \nEach slash deals massive <@ba.cryst>Cryo DMG</>. \n<@ba.info>Last Rite can only gain Ultimate Energy from her own battle skills and combo skills.</>",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
+      "seq3Stagger": "SEQ 3 Stagger"
     },
     "indicator": {
       "levels": [

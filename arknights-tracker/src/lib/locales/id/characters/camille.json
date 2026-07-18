@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Sanguine Absolution",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "firefangVesperwingsDurationS": "Durasi Firefang Vesperwing (dtk)",
-        "weaknessEffect": "Efek Weakness",
-        "heatSusceptibility": "Heat Susceptibility",
-        "explosionDmgMultiplier": "Pengganda DMG Ledakan"
-      },
       "name": "Blazing Exorcism",
-      "description": "Camille memanggil <@ba.key>Firefang Vesperwing</> yang akan terbang ke arah musuh sehingga akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada musuh di area efek yang kecil. Lalu, <@ba.key>Firefang Vesperwing</> itu untuk sementara akan <@ba.key>terbang mengitari</> target dan mengakibatkan <#ba.weak>Weakness</> serta <#ba.firevul>Heat Susceptibility</> kepada target tersebut selama masih terbang. Saat target kalah, <@ba.key>Firefang Vesperwing</> akan terbang ke musuh lain di dekatnya, menimbulkan <@ba.fire>Heat DMG</>, dan mengakibatkan <#ba.fireinflict>Heat Infliction</>, <#ba.weak>Weakness</>, serta <#ba.firevul>Heat Susceptibility</> kepada target yang baru.\nJika <@ba.key>Firefang Vesperwing</> <@ba.key>terbang mengitari</> musuh dan musuh itu terkena skill kombo Camille, ledakan akan terpicu setelah beberapa saat. Ledakan ini akan menimbulkan <@ba.fire>Heat DMG</> tambahan."
+      "description": "Camille memanggil <@ba.key>Firefang Vesperwing</> yang akan terbang ke arah musuh sehingga akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada musuh di area efek yang kecil. Lalu, <@ba.key>Firefang Vesperwing</> itu untuk sementara akan <@ba.key>terbang mengitari</> target dan mengakibatkan <#ba.weak>Weakness</> serta <#ba.firevul>Heat Susceptibility</> kepada target tersebut selama masih terbang. Saat target kalah, <@ba.key>Firefang Vesperwing</> akan terbang ke musuh lain di dekatnya, menimbulkan <@ba.fire>Heat DMG</>, dan mengakibatkan <#ba.fireinflict>Heat Infliction</>, <#ba.weak>Weakness</>, serta <#ba.firevul>Heat Susceptibility</> kepada target yang baru.\nJika <@ba.key>Firefang Vesperwing</> <@ba.key>terbang mengitari</> musuh dan musuh itu terkena skill kombo Camille, ledakan akan terpicu setelah beberapa saat. Ledakan ini akan menimbulkan <@ba.fire>Heat DMG</> tambahan.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "firefangVesperwingsDurationS": "Durasi Firefang Vesperwing (dtk)",
+      "weaknessEffect": "Efek Weakness",
+      "heatSusceptibility": "Heat Susceptibility",
+      "explosionDmgMultiplier": "Pengganda DMG Ledakan"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "spRecovery": "Pemulihan SP",
-        "hunterPursuitDmgMultiplier": "Pengganda Hunter Pursuit DMG",
-        "hunterPursuitStagger": "Hunter Pursuit Stagger",
-        "hunterPursuitSpRecovery": "Pemulihan SP Hunter Pursuit",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Heartstake Thorn",
-      "description": "PEMICU KOMBO: Saat <#ba.fireinflict>Heat Infliction</> musuh <#ba.consume>dipakai</> atau <#ba.absorb>diserap</>.\nMelancarkan gerakan melejit ke belakang yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP."
+      "description": "PEMICU KOMBO: Saat <#ba.fireinflict>Heat Infliction</> musuh <#ba.consume>dipakai</> atau <#ba.absorb>diserap</>.\nMelancarkan gerakan melejit ke belakang yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "spRecovery": "Pemulihan SP",
+      "hunterPursuitDmgMultiplier": "Pengganda Hunter Pursuit DMG",
+      "hunterPursuitStagger": "Hunter Pursuit Stagger",
+      "hunterPursuitSpRecovery": "Pemulihan SP Hunter Pursuit",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "spRecovery": "Pemulihan SP",
-        "hunterPursuitStateDurationS": "Durasi Kondisi Hunter Pursuit (dtk)"
-      },
       "name": "Sanguine Downpour",
-      "description": "Camille terbang ke langit, menghujani target dengan rentetan tombak, dan melanjutkannya dengan serangan sapuan. Serangan ini akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada target yang terhantam serta memulihkan sejumlah SP. \nSetelah menggunakan ultimate, skill tarung Camille untuk sementara akan berubah menjadi <@ba.key>Hunter Pursuit</>.\n<@ba.key>Hunter Pursuit</>: Dianggap sebagai skill kombo dan penggunaannya tidak butuh SP. Skill ini adalah serangan melejit yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP."
+      "description": "Camille terbang ke langit, menghujani target dengan rentetan tombak, dan melanjutkannya dengan serangan sapuan. Serangan ini akan menimbulkan <@ba.fire>Heat DMG</> dan mengakibatkan <#ba.fireinflict>Heat Infliction</> kepada target yang terhantam serta memulihkan sejumlah SP. \nSetelah menggunakan ultimate, skill tarung Camille untuk sementara akan berubah menjadi <@ba.key>Hunter Pursuit</>.\n<@ba.key>Hunter Pursuit</>: Dianggap sebagai skill kombo dan penggunaannya tidak butuh SP. Skill ini adalah serangan melejit yang akan menimbulkan <@ba.fire>Heat DMG</> dan memulihkan sejumlah SP.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "spRecovery": "Pemulihan SP",
+      "hunterPursuitStateDurationS": "Durasi Kondisi Hunter Pursuit (dtk)"
     },
     "indicator": {
       "levels": [

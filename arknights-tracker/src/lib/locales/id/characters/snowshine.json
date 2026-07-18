@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Hypothermic Assault",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 3 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 3 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "protection": "Protection",
-        "spReturn": "Pengembalian SP"
-      },
       "name": "Saturated Defense",
-      "description": "Mengangkat perisai yang bisa menahan serangan, memberikan <#ba.guard>Protection</> kepada diri sendiri dan operator di sekitar, lalu <#ba.return>langsung mengembalikan</> sebagian SP. \nSaat diserang selagi perisai diangkat, dia akan melancarkan hantaman balasan yang akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada si penyerang."
+      "description": "Mengangkat perisai yang bisa menahan serangan, memberikan <#ba.guard>Protection</> kepada diri sendiri dan operator di sekitar, lalu <#ba.return>langsung mengembalikan</> sebagian SP. \nSaat diserang selagi perisai diangkat, dia akan melancarkan hantaman balasan yang akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</> kepada si penyerang.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "protection": "Protection",
+      "spReturn": "Pengembalian SP"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Treatment Dasar Awal",
-        "initialTreatmentIncreasePerWill": "Peningkatan Treatment Awal per Will",
-        "baseTreatmentOverTime": "Treatment Over Time Dasar",
-        "treatmentOverTimeIncreasePerWill": "Peningkatan Treatment Over Time per Will",
-        "treatmentOverTimeIntervalS": "Interval Treatment Over Time (dtk)",
-        "durationS": "Durasi (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Polar Rescue",
-      "description": "PEMICU KOMBO: Setelah operator terkontrol diserang dan HP-nya turun hingga kurang dari {trigger_hp_ratio:0%}. \nSnowshine akan melemparkan Asisten SAR Padang Salju ke arah operator terkontrol. Setelah membentur target, Asisten ini akan langsung memberikan <@ba.heal>HP Treatment</> dalam jumlah sangat besar kepada operator di sekitar serta <@ba.heal>HP Treatment</> terus-menerus kepada operator terkontrol di area efek. \nAtribut Will akan meningkatkan jumlah HP treatment."
+      "description": "PEMICU KOMBO: Setelah operator terkontrol diserang dan HP-nya turun hingga kurang dari {trigger_hp_ratio:0%}. \nSnowshine akan melemparkan Asisten SAR Padang Salju ke arah operator terkontrol. Setelah membentur target, Asisten ini akan langsung memberikan <@ba.heal>HP Treatment</> dalam jumlah sangat besar kepada operator di sekitar serta <@ba.heal>HP Treatment</> terus-menerus kepada operator terkontrol di area efek. \nAtribut Will akan meningkatkan jumlah HP treatment.",
+      "initialBaseTreatment": "Treatment Dasar Awal",
+      "initialTreatmentIncreasePerWill": "Peningkatan Treatment Awal per Will",
+      "baseTreatmentOverTime": "Treatment Over Time Dasar",
+      "treatmentOverTimeIncreasePerWill": "Peningkatan Treatment Over Time per Will",
+      "treatmentOverTimeIntervalS": "Interval Treatment Over Time (dtk)",
+      "durationS": "Durasi (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Pengganda DMG Ledakan",
-        "stagger": "Stagger",
-        "dmgOverTimeMultiplier": "Pengganda DMG Over Time",
-        "dmgOverTimeIntervalS": "Interval DMG Over Time (dtk)",
-        "durationS": "Durasi (dtk)"
-      },
       "name": "Frigid Snowfield",
-      "description": "Melompat ke udara dengan jetpack lalu menghantamkan perisainya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh dalam area efek. Lalu, <@ba.key>Zona Salju</> (bertahan selama beberapa detik) juga akan muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> secara bertahap kepada musuh. <@ba.key>Zona Salju</> akan secara paksa mengakibatkan <#ba.frozen>Solidification</> kepada musuh di dalamnya selama durasi tertentu."
+      "description": "Melompat ke udara dengan jetpack lalu menghantamkan perisainya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh dalam area efek. Lalu, <@ba.key>Zona Salju</> (bertahan selama beberapa detik) juga akan muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> secara bertahap kepada musuh. <@ba.key>Zona Salju</> akan secara paksa mengakibatkan <#ba.frozen>Solidification</> kepada musuh di dalamnya selama durasi tertentu.",
+      "explosionDmgMultiplier": "Pengganda DMG Ledakan",
+      "stagger": "Stagger",
+      "dmgOverTimeMultiplier": "Pengganda DMG Over Time",
+      "dmgOverTimeIntervalS": "Interval DMG Over Time (dtk)",
+      "durationS": "Durasi (dtk)"
     },
     "indicator": {
       "levels": [

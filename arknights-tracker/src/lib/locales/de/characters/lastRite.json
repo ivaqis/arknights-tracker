@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Tanz des Reims",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.cryst>Kryo-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.cryst>Kryo-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.cryst>Kryo-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Zusätzlicher Trugbild-ANG-SDN-Multiplikator",
-        "spReturn": "FP-Rückerstattung",
-        "durationS": "Dauer (Sek.)",
-        "ultimateEnergyGain": "Ultimativer Energieerhalt"
-      },
       "name": "Esoterisches Erbe von Seš’qa",
-      "description": "Führt eine <@ba.key>Hypothermische Durchblutung</> an der Waffe des gesteuerten Operators durch und <#ba.return>stellt einige FP wieder her</>. \nWenn der gesteuerte Operator innerhalb eines bestimmten Zeitraums einen <#ba.lastcombo>Abschlussangriff</> ausführt, ruft Last Rite Trugbilder herbei, die einen zusätzlichen Angriff auf das Ziel ausführen. Dieser Angriff verursacht <@ba.cryst>Kryo-SDN</> und belegt das Ziel mit <#ba.crystinflict>Kryo</>. \nWenn der gesteuerte Operator Last Rite selbst ist, wird ihre Standardangriffssequenz durch diese Kampffertigkeit nicht zurückgesetzt."
+      "description": "Führt eine <@ba.key>Hypothermische Durchblutung</> an der Waffe des gesteuerten Operators durch und <#ba.return>stellt einige FP wieder her</>. \nWenn der gesteuerte Operator innerhalb eines bestimmten Zeitraums einen <#ba.lastcombo>Abschlussangriff</> ausführt, ruft Last Rite Trugbilder herbei, die einen zusätzlichen Angriff auf das Ziel ausführen. Dieser Angriff verursacht <@ba.cryst>Kryo-SDN</> und belegt das Ziel mit <#ba.crystinflict>Kryo</>. \nWenn der gesteuerte Operator Last Rite selbst ist, wird ihre Standardangriffssequenz durch diese Kampffertigkeit nicht zurückgesetzt.",
+      "mirageAdditionalAtkDmgMultiplier": "Zusätzlicher Trugbild-ANG-SDN-Multiplikator",
+      "spReturn": "FP-Rückerstattung",
+      "durationS": "Dauer (Sek.)",
+      "ultimateEnergyGain": "Ultimativer Energieerhalt"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Eissplitter-SDN-Multiplikator",
-        "slashBaseDmgMultiplier": "Hieb-Standard-SDN-Multiplikator",
-        "slashStagger": "Hieb-Taumeln",
-        "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
-        "baseUltimateEnergyGain": "Ultimativer Grund-Energieerhalt",
-        "additionalUltimateEnergyGainPerInflictionStack": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung"
-      },
       "name": "Verschlinger des Winters",
-      "description": "KOMBOAUSLÖSER: Ein Gegner hat {count:0} aktive <#ba.crystinflict>Kryo</>-Kumulierungen. \nUmhüllt den Zielgegner mit Eiszapfen und zersplittert sie. Dabei werden alle <#ba.crystinflict>Kryo</>-Kumulierungen des Gegners <#ba.consume>verbraucht</>. Je mehr <#ba.crystinflict>Kryo</>-Kumulierungen <#ba.consume>verbraucht</> werden, desto mehr <@ba.cryst>Kryo-SDN</> erleidet der Gegner und desto mehr Ultimative Energie erhält Last Rite."
+      "description": "KOMBOAUSLÖSER: Ein Gegner hat {count:0} aktive <#ba.crystinflict>Kryo</>-Kumulierungen. \nUmhüllt den Zielgegner mit Eiszapfen und zersplittert sie. Dabei werden alle <#ba.crystinflict>Kryo</>-Kumulierungen des Gegners <#ba.consume>verbraucht</>. Je mehr <#ba.crystinflict>Kryo</>-Kumulierungen <#ba.consume>verbraucht</> werden, desto mehr <@ba.cryst>Kryo-SDN</> erleidet der Gegner und desto mehr Ultimative Energie erhält Last Rite.",
+      "iceShardDmgMultiplier": "Eissplitter-SDN-Multiplikator",
+      "slashBaseDmgMultiplier": "Hieb-Standard-SDN-Multiplikator",
+      "slashStagger": "Hieb-Taumeln",
+      "bonusDmgMultiplierPerInflictionStack": "Bonus-SDN-Multiplikator pro Zufügungskumulierung",
+      "baseUltimateEnergyGain": "Ultimativer Grund-Energieerhalt",
+      "additionalUltimateEnergyGainPerInflictionStack": "Zusätzlicher Ultimativer-Energieerhalt pro Zufügungskumulierung"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1Stagger": "SEQ 1 – Taumeln",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
-        "seq3Stagger": "SEQ 3 – Taumeln"
-      },
       "name": "Wachdienst",
-      "description": "Last Rite hüllt sich in eine Frostrüstung und erschafft eine Eissense, mit der sie drei Hiebe ausführt. Solange dieser Zustand aktiv ist, ist sie immun gegen alle Arten von Schaden. \nJeder Hieb verursacht massiven <@ba.cryst>Kryo-SDN</>. \n<@ba.info>Last Rite erhält Ultimative Energie ausschließlich durch ihre eigenen Kampf- und Kombofertigkeiten.</>"
+      "description": "Last Rite hüllt sich in eine Frostrüstung und erschafft eine Eissense, mit der sie drei Hiebe ausführt. Solange dieser Zustand aktiv ist, ist sie immun gegen alle Arten von Schaden. \nJeder Hieb verursacht massiven <@ba.cryst>Kryo-SDN</>. \n<@ba.info>Last Rite erhält Ultimative Energie ausschließlich durch ihre eigenen Kampf- und Kombofertigkeiten.</>",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1Stagger": "SEQ 1 – Taumeln",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
+      "seq3Stagger": "SEQ 3 – Taumeln"
     },
     "indicator": {
       "levels": [

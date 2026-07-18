@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "突陣の剣技",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.pd>物理ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.pd>物理ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.pd>物理ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "additionalStaggerDealtWhenHit": "被攻撃による追加ブレイク値"
-      },
       "name": "出征",
-      "description": "跳び上がって前方の地面に重い打撃を放ち、扇形範囲内の敵に<@ba.fire>灼熱ダメージ</>と<#ba.knockdown>転倒</>効果を与える。\n発動中に敵からダメージを受けた場合、命中するときに追加で一定量のブレイク値を与える。"
+      "description": "跳び上がって前方の地面に重い打撃を放ち、扇形範囲内の敵に<@ba.fire>灼熱ダメージ</>と<#ba.knockdown>転倒</>効果を与える。\n発動中に敵からダメージを受けた場合、命中するときに追加で一定量のブレイク値を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "additionalStaggerDealtWhenHit": "被攻撃による追加ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "baseTreatment": "基礎回復値",
-        "treatmentIncreasePerWill": "意志1ごとの回復値UP",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "前線支援",
-      "description": "操作中のオペレーターが攻撃を受けると発動可能。\n敵に向かって跳び上がり、重い打撃を放つ。<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。操作中のオペレーターのHPを回復し、回復量は意志の値に応じて追加でアップする。"
+      "description": "操作中のオペレーターが攻撃を受けると発動可能。\n敵に向かって跳び上がり、重い打撃を放つ。<@ba.pd>物理ダメージ</>と<#ba.knockdown>転倒</>効果を与える。操作中のオペレーターのHPを回復し、回復量は意志の値に応じて追加でアップする。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "baseTreatment": "基礎回復値",
+      "treatmentIncreasePerWill": "意志1ごとの回復値UP",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "shieldConversionRatioHp": "シールド変換割合（HP）",
-        "shieldDurationS": "シールド持続時間（秒）"
-      },
       "name": "誓約の炎",
-      "description": "地面を強く叩き付け、周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。同時に、チーム全員はエンバーの最大HPに基づく<#ba.shield>シールド</>を獲得する。"
+      "description": "地面を強く叩き付け、周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。同時に、チーム全員はエンバーの最大HPに基づく<#ba.shield>シールド</>を獲得する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "shieldConversionRatioHp": "シールド変換割合（HP）",
+      "shieldDurationS": "シールド持続時間（秒）"
     },
     "indicator": {
       "levels": [

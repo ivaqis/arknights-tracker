@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Jolting Arts",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pulse>Electric DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pulse>Electric DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Pengganda DMG Sambaran Guntur",
-        "totalStagger": "Total Stagger",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Pengganda Bonus DMG per Level Status Electrification yang Dipakai",
-        "bonusUltimateEnergyPerThunderStrike": "Bonus Energi Ultimate per Sambaran Guntur",
-        "sunderbladeLimit": "Batas Sunderblade",
-        "sunderbladeDurationS": "Durasi Sunderblade (dtk)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Saat Ultimate: Pengganda DMG Sambaran Guntur",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Saat Ultimate: Pengganda Bonus DMG per Level Status Electrification yang Dipakai"
-      },
       "name": "Mantra of Sundering",
-      "description": "<#ba.consume>Memakai</> <#ba.conduct>Electrification</> pada target untuk meningkatkan pengganda DMG skill tarung ini dan menghasilkan [<#ba.statuslevel>Level Status</> <#ba.conduct>Electrification</> <#ba.consume>yang dipakai</> <@ba.key>+1</>] <@ba.key>Sunderblade</>. Jika di medan pertarungan hanya ada kurang dari {free_sword_limit:0} <@ba.key>Sunderblade</>, Mantra of Sundering tetap bisa memunculkan 1 <@ba.key>Sunderblade</> walau tidak <#ba.consume>memakai</> <#ba.conduct>Electrification</> pada target mana pun.\nZhuang Fangyi akan menyalurkan semua <@ba.key>Sunderblade</> di sekitar agar berhasil menggunakan Sambaran Guntur kepada target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan memberikan bonus Energi Ultimate, sedangkan Sambaran Guntur terakhir akan menimbulkan {final_rate:0} kali DMG.\n<@ba.info>Penggunaan satu skill tarung hanya bisa memunculkan maks {max_conduct_sword:0} Sunderblade.</>"
+      "description": "<#ba.consume>Memakai</> <#ba.conduct>Electrification</> pada target untuk meningkatkan pengganda DMG skill tarung ini dan menghasilkan [<#ba.statuslevel>Level Status</> <#ba.conduct>Electrification</> <#ba.consume>yang dipakai</> <@ba.key>+1</>] <@ba.key>Sunderblade</>. Jika di medan pertarungan hanya ada kurang dari {free_sword_limit:0} <@ba.key>Sunderblade</>, Mantra of Sundering tetap bisa memunculkan 1 <@ba.key>Sunderblade</> walau tidak <#ba.consume>memakai</> <#ba.conduct>Electrification</> pada target mana pun.\nZhuang Fangyi akan menyalurkan semua <@ba.key>Sunderblade</> di sekitar agar berhasil menggunakan Sambaran Guntur kepada target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> dan memberikan bonus Energi Ultimate, sedangkan Sambaran Guntur terakhir akan menimbulkan {final_rate:0} kali DMG.\n<@ba.info>Penggunaan satu skill tarung hanya bisa memunculkan maks {max_conduct_sword:0} Sunderblade.</>",
+      "thunderStrikeDmgMultiplier": "Pengganda DMG Sambaran Guntur",
+      "totalStagger": "Total Stagger",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Pengganda Bonus DMG per Level Status Electrification yang Dipakai",
+      "bonusUltimateEnergyPerThunderStrike": "Bonus Energi Ultimate per Sambaran Guntur",
+      "sunderbladeLimit": "Batas Sunderblade",
+      "sunderbladeDurationS": "Durasi Sunderblade (dtk)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Saat Ultimate: Pengganda DMG Sambaran Guntur",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Saat Ultimate: Pengganda Bonus DMG per Level Status Electrification yang Dipakai"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate",
-        "additionalUltimateEnergyPerInflictionStack": "Tambahan Energi Ultimate per Tumpuk Infliction",
-        "duringUltimateDmgMultiplier": "Saat Ultimate: Pengganda DMG"
-      },
       "name": "Breath of Transformation",
-      "description": "PEMICU KOMBO: Saat <#ba.lastcombo>Final Strike</> atau Penuntas operator terkontrol menghantam musuh yang terkena <#ba.pulseinflict>Electric Infliction</>,\nZhuang Fangyi akan memunculkan Susunan Xiranblitz yang akan menyerang dan menimbulkan <@ba.pulse>Electric DMG</>. Jika Susunan ini berhasil menghantam musuh yang sedang terkena tumpukan <#ba.pulseinflict>Electric Infliction</>, tumpukan <#ba.pulseinflict>Electric Infliction</> itu akan <#ba.consume>dipakai</> sehingga akan mengakibatkan <#ba.conduct>Electrification</> secara paksa dan memberikan Energi Ultimate berdasarkan jumlah tumpukan <#ba.consume>yang dipakai</>.\nJika <#ba.conduct>Electrification</> berhasil diakibatkan secara paksa kepada musuh yang terkena <#ba.conduct>Electrification</>, <#ba.statuslevel>Level Status</> +1 akan diakibatkan pada <#ba.conduct>Electrification</> musuh."
+      "description": "PEMICU KOMBO: Saat <#ba.lastcombo>Final Strike</> atau Penuntas operator terkontrol menghantam musuh yang terkena <#ba.pulseinflict>Electric Infliction</>,\nZhuang Fangyi akan memunculkan Susunan Xiranblitz yang akan menyerang dan menimbulkan <@ba.pulse>Electric DMG</>. Jika Susunan ini berhasil menghantam musuh yang sedang terkena tumpukan <#ba.pulseinflict>Electric Infliction</>, tumpukan <#ba.pulseinflict>Electric Infliction</> itu akan <#ba.consume>dipakai</> sehingga akan mengakibatkan <#ba.conduct>Electrification</> secara paksa dan memberikan Energi Ultimate berdasarkan jumlah tumpukan <#ba.consume>yang dipakai</>.\nJika <#ba.conduct>Electrification</> berhasil diakibatkan secara paksa kepada musuh yang terkena <#ba.conduct>Electrification</>, <#ba.statuslevel>Level Status</> +1 akan diakibatkan pada <#ba.conduct>Electrification</> musuh.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate",
+      "additionalUltimateEnergyPerInflictionStack": "Tambahan Energi Ultimate per Tumpuk Infliction",
+      "duringUltimateDmgMultiplier": "Saat Ultimate: Pengganda DMG"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durasi (dtk)",
-        "duringUltimateBatkSeq1Multiplier": "Saat Ultimate: Pengganda BATK SEQ 1",
-        "duringUltimateBatkSeq2Multiplier": "Saat Ultimate: Pengganda BATK SEQ 2",
-        "duringUltimateBatkSeq3Multiplier": "Saat Ultimate: Pengganda BATK SEQ 3"
-      },
       "name": "Smiting Tempest",
-      "description": "Berubah menjadi <@ba.key>Empyrean of Truth</> yang memberikan penguatan ini:\nserangan dasar Zhuang Fangyi akan diperkuat dan aksinya akan lebih sulit disela;\nSkill tarung <@ba.key>Mantra of Sundering</> akan mendapatkan pengganda DMG yang lebih besar dan jangkauan efek yang lebih tinggi, dan Sambaran Guntur terakhir juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada target yang terkena.\nSkill kombo <@ba.key>Breath of Transformation</> akan mendapatkan pengganda DMG yang lebih besar, cooldown akan menjadi {combo_cd_rate:0} kali lebih cepat, dan efek akan diakibatkan kepada musuh dalam area kecil.\nPenggunaan pertama skill tarung <@ba.key>Mantra of Sundering</> tidak akan memakai SP atau <#ba.conduct>Electrification</>, dan jika ada target yang tersedia, dijamin akan memunculkan 3 <@ba.key>Sunderblade</> walau target tidak terkena <#ba.conduct>Electrification</>."
+      "description": "Berubah menjadi <@ba.key>Empyrean of Truth</> yang memberikan penguatan ini:\nserangan dasar Zhuang Fangyi akan diperkuat dan aksinya akan lebih sulit disela;\nSkill tarung <@ba.key>Mantra of Sundering</> akan mendapatkan pengganda DMG yang lebih besar dan jangkauan efek yang lebih tinggi, dan Sambaran Guntur terakhir juga akan mengakibatkan <#ba.pulseinflict>Electric Infliction</> kepada target yang terkena.\nSkill kombo <@ba.key>Breath of Transformation</> akan mendapatkan pengganda DMG yang lebih besar, cooldown akan menjadi {combo_cd_rate:0} kali lebih cepat, dan efek akan diakibatkan kepada musuh dalam area kecil.\nPenggunaan pertama skill tarung <@ba.key>Mantra of Sundering</> tidak akan memakai SP atau <#ba.conduct>Electrification</>, dan jika ada target yang tersedia, dijamin akan memunculkan 3 <@ba.key>Sunderblade</> walau target tidak terkena <#ba.conduct>Electrification</>.",
+      "durationS": "Durasi (dtk)",
+      "duringUltimateBatkSeq1Multiplier": "Saat Ultimate: Pengganda BATK SEQ 1",
+      "duringUltimateBatkSeq2Multiplier": "Saat Ultimate: Pengganda BATK SEQ 2",
+      "duringUltimateBatkSeq3Multiplier": "Saat Ultimate: Pengganda BATK SEQ 3"
     },
     "indicator": {
       "levels": [

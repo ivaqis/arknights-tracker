@@ -26,47 +26,39 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Arma distintiva Kata",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{attack_poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige <@ba.natur>DAÑ por naturaleza</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.natur>DAÑ por naturaleza</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{attack_poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.natur>DAÑ por naturaleza</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige <@ba.natur>DAÑ por naturaleza</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "slowEffect": "Efecto de ralentizar"
-      },
       "name": "Pequeña sorpresa",
-      "description": "Patea un <@ba.key>Explosivo improvisado</> que se adhiere al objetivo, aplicando <#ba.slow>Ralentizar</> y explotando tras un breve lapso. La explosión inflige <@ba.natur>DAÑ por naturaleza</> y <#ba.naturalinflict>Imp. de nat.</> a los enemigos en el área de efecto. Derrotar al objetivo también detona de inmediato el <@ba.key>Explosivo improvisado</>.\n<@ba.info>Solo puede haber 1 Explosivo improvisado presente en el campo de batalla.</>"
+      "description": "Patea un <@ba.key>Explosivo improvisado</> que se adhiere al objetivo, aplicando <#ba.slow>Ralentizar</> y explotando tras un breve lapso. La explosión inflige <@ba.natur>DAÑ por naturaleza</> y <#ba.naturalinflict>Imp. de nat.</> a los enemigos en el área de efecto. Derrotar al objetivo también detona de inmediato el <@ba.key>Explosivo improvisado</>.\n<@ba.info>Solo puede haber 1 Explosivo improvisado presente en el campo de batalla.</>",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "slowEffect": "Efecto de ralentizar"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Sorteo gratuito",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo tiene 2 o más acumulaciones de <#ba.crystinflict>Imp. crio.</> o <#ba.naturalinflict>Imp. de nat.</>. \nDispara al enemigo objetivo para detonar una explosión especial que inflige <@ba.natur>DAÑ por naturaleza</> y aplica otra <#ba.spellinflict>Imposición de artes</> del elemento que ya afecta al enemigo."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo tiene 2 o más acumulaciones de <#ba.crystinflict>Imp. crio.</> o <#ba.naturalinflict>Imp. de nat.</>. \nDispara al enemigo objetivo para detonar una explosión especial que inflige <@ba.natur>DAÑ por naturaleza</> y aplica otra <#ba.spellinflict>Imposición de artes</> del elemento que ya afecta al enemigo.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
-        "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
-        "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
-        "seq4DmgMultiplier": "Multiplicador de DAÑ SEC 4",
-        "battleSkillAoeBoost": "Potenciador AE de habilidad de batalla",
-        "battleSkillDmgBoost": "Potenciador de DAÑ de habilidad de batalla",
-        "stagger": "Tambaleo"
-      },
       "name": "Bromista suprema",
-      "description": "Fluorite se mueve rápidamente en un arco y dispara velozmente al objetivo dentro del arco para infligir 4 secuencias de <@ba.natur>DAÑ por naturaleza</>. Si se adhirió un <@ba.key>Explosivo improvisado</> al objetivo, la habilidad lo detona de inmediato y aumenta el DAÑ y el tamaño de la explosión.\nSi la secuencia de DAÑ final golpea a un objetivo con al menos 2 acumulaciones de <#ba.crystinflict>Imposición criogénica</> o <#ba.naturalinflict>Imposición de naturaleza</>, entonces aplica la misma <#ba.spellinflict>Imposición de artes</> otra vez."
+      "description": "Fluorite se mueve rápidamente en un arco y dispara velozmente al objetivo dentro del arco para infligir 4 secuencias de <@ba.natur>DAÑ por naturaleza</>. Si se adhirió un <@ba.key>Explosivo improvisado</> al objetivo, la habilidad lo detona de inmediato y aumenta el DAÑ y el tamaño de la explosión.\nSi la secuencia de DAÑ final golpea a un objetivo con al menos 2 acumulaciones de <#ba.crystinflict>Imposición criogénica</> o <#ba.naturalinflict>Imposición de naturaleza</>, entonces aplica la misma <#ba.spellinflict>Imposición de artes</> otra vez.",
+      "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
+      "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
+      "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
+      "seq4DmgMultiplier": "Multiplicador de DAÑ SEC 4",
+      "battleSkillAoeBoost": "Potenciador AE de habilidad de batalla",
+      "battleSkillDmgBoost": "Potenciador de DAÑ de habilidad de batalla",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

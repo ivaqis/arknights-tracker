@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Assalto ipotermico",
-      "description": "ATTACCO BASE: \nsequenza di massimo tre attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo tre attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "protection": "Protezione",
-        "spReturn": "Restituzione PA"
-      },
       "name": "Difesa saturata",
-      "description": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</> all'attaccante."
+      "description": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</> all'attaccante.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "protection": "Protezione",
+      "spReturn": "Restituzione PA"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Cura base iniziale",
-        "initialTreatmentIncreasePerWill": "Aumento Cura iniziale basato su Volontà",
-        "baseTreatmentOverTime": "Cura progressiva base",
-        "treatmentOverTimeIncreasePerWill": "Aumento Cura progressiva basato su Volontà",
-        "treatmentOverTimeIntervalS": "Intervallo Cura progressiva (s)",
-        "durationS": "Durata (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Soccorso polare",
-      "description": "ATTIVAZIONE COMBO: dopo che l'operatore controllato viene attaccato e ha meno di un {trigger_hp_ratio:0%} di PS. \nSnowshine lancia un assistente della squadra di soccorso delle nevi all'operatore controllato. Al contatto con il bersaglio, l'assistente conferisce un'ingente quantità di <@ba.heal>Cura PS</> agli operatori vicini e <@ba.heal>Cura PS</> progressiva agli operatori nel raggio d'azione. \nL'attributo Volontà aumenta la quantità di PS ripristinati."
+      "description": "ATTIVAZIONE COMBO: dopo che l'operatore controllato viene attaccato e ha meno di un {trigger_hp_ratio:0%} di PS. \nSnowshine lancia un assistente della squadra di soccorso delle nevi all'operatore controllato. Al contatto con il bersaglio, l'assistente conferisce un'ingente quantità di <@ba.heal>Cura PS</> agli operatori vicini e <@ba.heal>Cura PS</> progressiva agli operatori nel raggio d'azione. \nL'attributo Volontà aumenta la quantità di PS ripristinati.",
+      "initialBaseTreatment": "Cura base iniziale",
+      "initialTreatmentIncreasePerWill": "Aumento Cura iniziale basato su Volontà",
+      "baseTreatmentOverTime": "Cura progressiva base",
+      "treatmentOverTimeIncreasePerWill": "Aumento Cura progressiva basato su Volontà",
+      "treatmentOverTimeIntervalS": "Intervallo Cura progressiva (s)",
+      "durationS": "Durata (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
-        "stagger": "Vacillamento",
-        "dmgOverTimeMultiplier": "Moltiplicatore danni progressivi",
-        "dmgOverTimeIntervalS": "Intervallo danni progressivi (s)",
-        "durationS": "Durata (s)"
-      },
       "name": "Campo innevato gelido",
-      "description": "Si lancia in aria con un jetpack per poi colpire dall'alto con lo scudo, infliggendo ingenti <@ba.cryst>danni da ghiaccio</> ai nemici nel raggio d'azione. Inoltre, genera una <@ba.key>zona innevata</> della durata di qualche secondo che infligge <@ba.cryst>danni da ghiaccio</> nel tempo ai nemici. La <@ba.key>zona innevata</> applica forzatamente <#ba.frozen>Solidificazione</> ai nemici che vi rimangono intrappolati per un certo periodo di tempo."
+      "description": "Si lancia in aria con un jetpack per poi colpire dall'alto con lo scudo, infliggendo ingenti <@ba.cryst>danni da ghiaccio</> ai nemici nel raggio d'azione. Inoltre, genera una <@ba.key>zona innevata</> della durata di qualche secondo che infligge <@ba.cryst>danni da ghiaccio</> nel tempo ai nemici. La <@ba.key>zona innevata</> applica forzatamente <#ba.frozen>Solidificazione</> ai nemici che vi rimangono intrappolati per un certo periodo di tempo.",
+      "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
+      "stagger": "Vacillamento",
+      "dmgOverTimeMultiplier": "Moltiplicatore danni progressivi",
+      "dmgOverTimeIntervalS": "Intervallo danni progressivi (s)",
+      "durationS": "Durata (s)"
     },
     "indicator": {
       "levels": [

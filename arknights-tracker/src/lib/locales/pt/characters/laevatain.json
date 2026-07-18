@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Brasas Flamejantes",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.fire>DNO Térmico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.fire>DNO Térmico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa <@ba.fire>DNO Térmico</> significativo e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.fire>DNO Térmico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.fire>DNO Térmico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa <@ba.fire>DNO Térmico</> significativo e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "Multiplicador DNO Explosão Base",
-        "baseExplosionStagger": "Desorientação Explosão Base",
-        "dmgOverTimeMultiplierPerSeq": "Multiplicador DNO ao Longo do Tempo por SEQ",
-        "additionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional",
-        "additionalAtkStagger": "Desorientação ATQ Adicional",
-        "combustionDurationS": "Duração da Combustão (s)",
-        "additionalAtkUltimateEnergyGain": "Ganho de Energia Suprema ATQ Adicional",
-        "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
-        "duringUltimateBatkSeq1Stagger": "Durante a Habilidade Suprema: Desorientação SEQ 1 ATQB",
-        "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
-        "duringUltimateBatkSeq2Stagger": "Durante a Habilidade Suprema: Desorientação SEQ 2 ATQB",
-        "duringUltimateAdditionalAtkMultiplier": "Durante a Habilidade Suprema: Multiplicador ATQ Adicional",
-        "duringUltimateAdditionalAtkStagger": "Durante a Habilidade Suprema: Desorientação ATQ Adicional",
-        "duringUltimateCombustionDurationS": "Durante a Habilidade suprema: Duração da Combustão (s)"
-      },
       "name": "Fogo Fumegante",
-      "description": "Invoca um Fragmento de Magma que ataca continuamente os inimigos e causa <@ba.fire>DNO Térmico</>. Atingir o inimigo concede 1 acúmulo de <@ba.key>Chama da Fusão</>. \nSe Laevatain já tiver {count:0} acúmulo(s) de <@ba.key>Chama da Fusão</> ao conjurar habilidade, então consome todos os acúmulos e realiza 1 ataque adicional que causa <@ba.fire>DNO Térmico</> e aciona <#ba.burning>Combustão</> temporária a força a todos os inimigos em uma grande área.\nQuando o ataque adicional atinge o inimigo, restaura Energia Suprema adicional.\n<@ba.info>Os efeitos da habilidade de batalha são aperfeiçoados quando a habilidade suprema de Laevatain está ativa.</>"
+      "description": "Invoca um Fragmento de Magma que ataca continuamente os inimigos e causa <@ba.fire>DNO Térmico</>. Atingir o inimigo concede 1 acúmulo de <@ba.key>Chama da Fusão</>. \nSe Laevatain já tiver {count:0} acúmulo(s) de <@ba.key>Chama da Fusão</> ao conjurar habilidade, então consome todos os acúmulos e realiza 1 ataque adicional que causa <@ba.fire>DNO Térmico</> e aciona <#ba.burning>Combustão</> temporária a força a todos os inimigos em uma grande área.\nQuando o ataque adicional atinge o inimigo, restaura Energia Suprema adicional.\n<@ba.info>Os efeitos da habilidade de batalha são aperfeiçoados quando a habilidade suprema de Laevatain está ativa.</>",
+      "baseExplosionDmgMultiplier": "Multiplicador DNO Explosão Base",
+      "baseExplosionStagger": "Desorientação Explosão Base",
+      "dmgOverTimeMultiplierPerSeq": "Multiplicador DNO ao Longo do Tempo por SEQ",
+      "additionalAtkDmgMultiplier": "Multiplicador DNO ATQ Adicional",
+      "additionalAtkStagger": "Desorientação ATQ Adicional",
+      "combustionDurationS": "Duração da Combustão (s)",
+      "additionalAtkUltimateEnergyGain": "Ganho de Energia Suprema ATQ Adicional",
+      "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
+      "duringUltimateBatkSeq1Stagger": "Durante a Habilidade Suprema: Desorientação SEQ 1 ATQB",
+      "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
+      "duringUltimateBatkSeq2Stagger": "Durante a Habilidade Suprema: Desorientação SEQ 2 ATQB",
+      "duringUltimateAdditionalAtkMultiplier": "Durante a Habilidade Suprema: Multiplicador ATQ Adicional",
+      "duringUltimateAdditionalAtkStagger": "Durante a Habilidade Suprema: Desorientação ATQ Adicional",
+      "duringUltimateCombustionDurationS": "Durante a Habilidade suprema: Duração da Combustão (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "ultimateEnergyGainWhenHitting1Enemy": "Ganho de Energia Suprema ao Atingir 1 Inimigo",
-        "ultimateEnergyGainWhenHitting2Enemies": "Ganho de Energia Suprema ao Atingir 2 Inimigos",
-        "ultimateEnergyGainWhenHitting3Enemies": "Ganho de Energia Suprema ao Atingir 3 Inimigos"
-      },
       "name": "Ferver",
-      "description": "ACIONADOR DO COMBO: Quando um inimigo sofre <#ba.burning>Combustão</> ou <#ba.corrupt>Corrosão</>. \nFogo surge por baixo dos pés de qualquer inimigo com <#ba.burning>Combustão</> ou <#ba.corrupt>Corrosão</>, causando <@ba.fire>DNO Térmico</> a eles. \nSe a habilidade atinge o inimigo, Laevatain ganha 1 acúmulo de <@ba.key>Chama da Fusão</> e também Energia Suprema por cada acerto no inimigo."
+      "description": "ACIONADOR DO COMBO: Quando um inimigo sofre <#ba.burning>Combustão</> ou <#ba.corrupt>Corrosão</>. \nFogo surge por baixo dos pés de qualquer inimigo com <#ba.burning>Combustão</> ou <#ba.corrupt>Corrosão</>, causando <@ba.fire>DNO Térmico</> a eles. \nSe a habilidade atinge o inimigo, Laevatain ganha 1 acúmulo de <@ba.key>Chama da Fusão</> e também Energia Suprema por cada acerto no inimigo.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "ultimateEnergyGainWhenHitting1Enemy": "Ganho de Energia Suprema ao Atingir 1 Inimigo",
+      "ultimateEnergyGainWhenHitting2Enemies": "Ganho de Energia Suprema ao Atingir 2 Inimigos",
+      "ultimateEnergyGainWhenHitting3Enemies": "Ganho de Energia Suprema ao Atingir 3 Inimigos"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duração (s)",
-        "enhancedBatkSeq1Multiplier": "Multiplicador SEQ 1 ATQB Aprimorado",
-        "enhancedBatkSeq2Multiplier": "Multiplicador SEQ 2 ATQB Aprimorado",
-        "enhancedBatkSeq3Multiplier": "Multiplicador SEQ 3 ATQB Aprimorado",
-        "enhancedBatkSeq4Multiplier": "Multiplicador SEQ 4 ATQB Aprimorado"
-      },
       "name": "Crepúsculo",
-      "description": "Laevatain invoca sua Sviga Lævi e se torna a operadora controlada. \nDurante um certo período, seus ataques básicos (ATQB) são aprimorados e Sviga Lævi ataca em conjunto com Laevatain, com cada ataque causando <@ba.fire>DNO Térmico</>. A sequência de ATQB 3 também aplica <#ba.fireinflict>Inflição Térmica</>.\n<@ba.info>Conjurar a habilidade de batalha, Fogo Fumegante, ou o combo de habilidades, Ferver, não reduz a duração da habilidade suprema, Crepúsculo.</>"
+      "description": "Laevatain invoca sua Sviga Lævi e se torna a operadora controlada. \nDurante um certo período, seus ataques básicos (ATQB) são aprimorados e Sviga Lævi ataca em conjunto com Laevatain, com cada ataque causando <@ba.fire>DNO Térmico</>. A sequência de ATQB 3 também aplica <#ba.fireinflict>Inflição Térmica</>.\n<@ba.info>Conjurar a habilidade de batalha, Fogo Fumegante, ou o combo de habilidades, Ferver, não reduz a duração da habilidade suprema, Crepúsculo.</>",
+      "durationS": "Duração (s)",
+      "enhancedBatkSeq1Multiplier": "Multiplicador SEQ 1 ATQB Aprimorado",
+      "enhancedBatkSeq2Multiplier": "Multiplicador SEQ 2 ATQB Aprimorado",
+      "enhancedBatkSeq3Multiplier": "Multiplicador SEQ 3 ATQB Aprimorado",
+      "enhancedBatkSeq4Multiplier": "Multiplicador SEQ 4 ATQB Aprimorado"
     },
     "indicator": {
       "levels": [

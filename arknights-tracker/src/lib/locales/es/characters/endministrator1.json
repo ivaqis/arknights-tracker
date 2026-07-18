@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Secuencia destructiva",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Secuencia constructiva",
-      "description": "Una ráfaga contundente de Artes de Originio que ataca a los enemigos dentro del área de efecto. Inflige <@ba.pd>DAÑ físico</> y aplica <#ba.crush>Triturar</>."
+      "description": "Una ráfaga contundente de Artes de Originio que ataca a los enemigos dentro del área de efecto. Inflige <@ba.pd>DAÑ físico</> y aplica <#ba.crush>Triturar</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "crystalShatteringDmgMultiplier": "Multiplicador de DAÑ Quebrar cristales",
-        "stagger": "Tambaleo",
-        "sealDurationS": "Duración Sello (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Secuencia de sellado",
-      "description": "ACTIVADOR DE COMBO: Cuando otro operador del equipo inflige DAÑ con habilidades de combo. \nSe lanza hacia el enemigo para infligir <@ba.pd>DAÑ físico</> y adherir <#ba.originium>Cristales de Originio</> que lo sellan temporalmente. Aplicar un <#ba.physicalstatus>estado físico</> o <#ba.noguard>Vulnerabilidad</> al enemigo sellado <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige <@ba.pd>DAÑ físico</> adicional."
+      "description": "ACTIVADOR DE COMBO: Cuando otro operador del equipo inflige DAÑ con habilidades de combo. \nSe lanza hacia el enemigo para infligir <@ba.pd>DAÑ físico</> y adherir <#ba.originium>Cristales de Originio</> que lo sellan temporalmente. Aplicar un <#ba.physicalstatus>estado físico</> o <#ba.noguard>Vulnerabilidad</> al enemigo sellado <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige <@ba.pd>DAÑ físico</> adicional.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "crystalShatteringDmgMultiplier": "Multiplicador de DAÑ Quebrar cristales",
+      "stagger": "Tambaleo",
+      "sealDurationS": "Duración Sello (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "bonusDmgMultiplier": "Multiplicador de DAÑ adicional",
-        "stagger": "Tambaleo"
-      },
       "name": "Secuencia de bombardeo",
-      "description": "Bombardea el suelo con Artes de Originio, inflige <@ba.pd>DAÑ físico</> masivo a todos los enemigos dentro de un área en forma de abanico. Si el enemigo tiene <#ba.originium>Cristales de Originio</> encima, esta habilidad <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige un golpe más de <@ba.pd>DAÑ físico</>."
+      "description": "Bombardea el suelo con Artes de Originio, inflige <@ba.pd>DAÑ físico</> masivo a todos los enemigos dentro de un área en forma de abanico. Si el enemigo tiene <#ba.originium>Cristales de Originio</> encima, esta habilidad <#ba.consume>consume</> los <#ba.originium>Cristales de Originio</> e inflige un golpe más de <@ba.pd>DAÑ físico</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "bonusDmgMultiplier": "Multiplicador de DAÑ adicional",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

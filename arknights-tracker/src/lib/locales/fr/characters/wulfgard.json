@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Tir rapide stable",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.fire>DÉG thermiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.fire>DÉG thermiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.fire>DÉG thermiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
-        "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire"
-      },
       "name": "Traque-thermite",
-      "description": "Tire plusieurs fois sur la cible, lui infligeant des <@ba.fire>DÉG thermiques</>. Le Coup final inflige aussi une <#ba.fireinflict>altération thermique</>. Si la cible est <#ba.burning>en combustion</> ou <#ba.conduct>électrifiée</>, n'applique pas d'<#ba.fireinflict>altération thermique</>, mais <#ba.consume>consomme</> la réaction aux Arts et effectue un tir supplémentaire qui lui inflige de lourds <@ba.fire>DÉG thermiques</>."
+      "description": "Tire plusieurs fois sur la cible, lui infligeant des <@ba.fire>DÉG thermiques</>. Le Coup final inflige aussi une <#ba.fireinflict>altération thermique</>. Si la cible est <#ba.burning>en combustion</> ou <#ba.conduct>électrifiée</>, n'applique pas d'<#ba.fireinflict>altération thermique</>, mais <#ba.consume>consomme</> la réaction aux Arts et effectue un tir supplémentaire qui lui inflige de lourds <@ba.fire>DÉG thermiques</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "additionalAtkDmgMultiplier": "Multiplicateur de DÉG d'ATQ supplémentaire",
+      "additionalAtkStagger": "Déséquilibre après l'ATQ supplémentaire"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Grenade à fragmentation β",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi souffre d'une <#ba.spellinflict>altération des Arts</>.\nLance une grenade à fragmentation à l'emplacement de la cible. La grenade explose en touchant le sol, infligeant des <@ba.fire>DÉG thermiques</> et appliquant une <#ba.fireinflict>altération thermique</> aux ennemis à proximité."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi souffre d'une <#ba.spellinflict>altération des Arts</>.\nLance une grenade à fragmentation à l'emplacement de la cible. La grenade explose en touchant le sol, infligeant des <@ba.fire>DÉG thermiques</> et appliquant une <#ba.fireinflict>altération thermique</> aux ennemis à proximité.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "Multiplicateur de DÉG par SÉQ",
-        "stagger": "Déséquilibre"
-      },
       "name": "Fureur lupine",
-      "description": "Lâche une volée de tirs de barrage et libère une <@ba.key>Fureur lupine</> qui attaque les cibles à proximité, infligeant 5 salves de <@ba.fire>DÉG thermiques</> et appliquant l'effet de <#ba.burning>Combustion</>."
+      "description": "Lâche une volée de tirs de barrage et libère une <@ba.key>Fureur lupine</> qui attaque les cibles à proximité, infligeant 5 salves de <@ba.fire>DÉG thermiques</> et appliquant l'effet de <#ba.burning>Combustion</>.",
+      "dmgMultiplierPerSeq": "Multiplicateur de DÉG par SÉQ",
+      "stagger": "Déséquilibre"
     },
     "indicator": {
       "levels": [

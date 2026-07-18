@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Bâton arcanique : Arts de cohésion des faisceaux",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.natur>DÉG naturels</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.natur>DÉG naturels</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.natur>DÉG naturels</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Multiplicateur de DÉG de Force de gravité",
-        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
-        "explosionStagger": "Déséquilibre par explosion"
-      },
       "name": "Bâton arcanique : Mode gravité",
-      "description": "Lance une canalisation des Arts qui crée un <@ba.key>puits gravitationnel</>. Le <@ba.key>puits gravitationnel</> attire tous les ennemis à proximité et leur inflige des <@ba.natur>DÉG naturels</>. Lorsque la canalisation prend fin, le <@ba.key>puits gravitationnel</> implose, ce qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis dans la zone d'effet."
+      "description": "Lance une canalisation des Arts qui crée un <@ba.key>puits gravitationnel</>. Le <@ba.key>puits gravitationnel</> attire tous les ennemis à proximité et leur inflige des <@ba.natur>DÉG naturels</>. Lorsque la canalisation prend fin, le <@ba.key>puits gravitationnel</> implose, ce qui inflige des <@ba.natur>DÉG naturels</> et applique une <#ba.naturalinflict>altération naturelle</> aux ennemis dans la zone d'effet.",
+      "gravityPullDmgMultiplier": "Multiplicateur de DÉG de Force de gravité",
+      "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+      "explosionStagger": "Déséquilibre par explosion"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Bâton arcanique : Déplacement de matrice",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.spellstatus>réaction aux Arts</> est appliquée à un ennemi. \nUn lancement rapide des Arts qui génère une force de gravité, qui inflige des <@ba.natur>DÉG naturels</> et <#ba.airborne>soulève</> la cible et les ennemis à proximité."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'une <#ba.spellstatus>réaction aux Arts</> est appliquée à un ennemi. \nUn lancement rapide des Arts qui génère une force de gravité, qui inflige des <@ba.natur>DÉG naturels</> et <#ba.airborne>soulève</> la cible et les ennemis à proximité.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "fieldDurationS": "Durée du champ (s)",
-        "slowEffect": "Effet Lenteur",
-        "baseArtsSusceptibility": "Sensibilité aux Arts de base",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Augmentation de la sensibilité aux Arts par cumul de Vulnérabilité"
-      },
       "name": "Bâton arcanique : Champ gravitationnel",
-      "description": "Crée un <@ba.key>champ gravitationnel anormal</>, qui inflige immédiatement une unique salve de <@ba.natur>DÉG naturels</> et une <#ba.naturalinflict>altération naturelle</> à tous les ennemis pris dans le champ. Les cibles prises dans le <@ba.key>champ de gravité anormal</> sont également victimes de <#ba.slow>Lenteur</> et de <#ba.spellvul>sensibilité aux Arts</>. L'effet de la <#ba.spellvul>sensibilité aux Arts</> augmente en fonction du nombre de cumuls de <#ba.noguard>Vulnérabilité</> dont est victime la cible. \n<@ba.info>Si une cible est soulevée, le statut de Soulèvement persiste jusqu'à la disparition du champ.</>"
+      "description": "Crée un <@ba.key>champ gravitationnel anormal</>, qui inflige immédiatement une unique salve de <@ba.natur>DÉG naturels</> et une <#ba.naturalinflict>altération naturelle</> à tous les ennemis pris dans le champ. Les cibles prises dans le <@ba.key>champ de gravité anormal</> sont également victimes de <#ba.slow>Lenteur</> et de <#ba.spellvul>sensibilité aux Arts</>. L'effet de la <#ba.spellvul>sensibilité aux Arts</> augmente en fonction du nombre de cumuls de <#ba.noguard>Vulnérabilité</> dont est victime la cible. \n<@ba.info>Si une cible est soulevée, le statut de Soulèvement persiste jusqu'à la disparition du champ.</>",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "fieldDurationS": "Durée du champ (s)",
+      "slowEffect": "Effet Lenteur",
+      "baseArtsSusceptibility": "Sensibilité aux Arts de base",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Augmentation de la sensibilité aux Arts par cumul de Vulnérabilité"
     },
     "indicator": {
       "levels": [

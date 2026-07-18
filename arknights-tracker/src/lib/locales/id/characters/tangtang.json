@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "I’LL BLOW YOUR MIND!",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Pengganda DMG Tembakan",
-        "shotStagger": "Stagger Tembakan",
-        "dmgMultiplier1Waterspout": "Pengganda DMG (1 Topan Air)",
-        "waterspoutDurationS": "Durasi Topan Air (dtk)",
-        "spReturnPerWhirlpool": "Pengembalian SP per Pusaran Air",
-        "artsSusceptibility2Waterspouts": "Arts Susceptibility (2 Topan Air)",
-        "artsSusceptibility3Waterspouts": "Arts Susceptibility (3 Topan Air)",
-        "artsSusceptibilityDurationS": "Durasi Arts Susceptibility (dtk)"
-      },
       "name": "IMA WAVERIDAAH!",
-      "description": "Tangtang akan melompat keluar dari air dan menembak dari jarak dekat sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh dan memunculkan <@ba.key>Topan Air</>.\nPenggunaan skill tarung ini juga akan memakai semua <@ba.key>Pusaran Air</> di sekitar untuk memunculkan <@ba.key>Topan Air</> lagi dan <#ba.return>mengembalikan</> sejumlah SP berdasarkan jumlah Topan Air yang muncul.\n<@ba.key>Topan Air</>: Mengakibatkan 1 tumpuk <#ba.crystinflict>Cryo Infliction</> kepada musuh dalam jangkauan dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time. Jika skill tarung ini memunculkan beberapa <@ba.key>Topan Air</>, topan itu juga akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> kepada musuh (tapi tidak mengakibatkan tumpukan <#ba.crystinflict>Cryo Infliction</> lagi).\n<@ba.info>DMG yang ditimbulkan oleh Topan Air akan dianggap sebagai DMG Skill Tarung.</>"
+      "description": "Tangtang akan melompat keluar dari air dan menembak dari jarak dekat sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh dan memunculkan <@ba.key>Topan Air</>.\nPenggunaan skill tarung ini juga akan memakai semua <@ba.key>Pusaran Air</> di sekitar untuk memunculkan <@ba.key>Topan Air</> lagi dan <#ba.return>mengembalikan</> sejumlah SP berdasarkan jumlah Topan Air yang muncul.\n<@ba.key>Topan Air</>: Mengakibatkan 1 tumpuk <#ba.crystinflict>Cryo Infliction</> kepada musuh dalam jangkauan dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time. Jika skill tarung ini memunculkan beberapa <@ba.key>Topan Air</>, topan itu juga akan mengakibatkan <#ba.spellvul>Arts Susceptibility</> kepada musuh (tapi tidak mengakibatkan tumpukan <#ba.crystinflict>Cryo Infliction</> lagi).\n<@ba.info>DMG yang ditimbulkan oleh Topan Air akan dianggap sebagai DMG Skill Tarung.</>",
+      "shootingDmgMultiplier": "Pengganda DMG Tembakan",
+      "shotStagger": "Stagger Tembakan",
+      "dmgMultiplier1Waterspout": "Pengganda DMG (1 Topan Air)",
+      "waterspoutDurationS": "Durasi Topan Air (dtk)",
+      "spReturnPerWhirlpool": "Pengembalian SP per Pusaran Air",
+      "artsSusceptibility2Waterspouts": "Arts Susceptibility (2 Topan Air)",
+      "artsSusceptibility3Waterspouts": "Arts Susceptibility (3 Topan Air)",
+      "artsSusceptibilityDurationS": "Durasi Arts Susceptibility (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "whirlpoolDurationS": "Durasi Pusaran Air (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "RIVER, TO ME!",
-      "description": "PEMICU KOMBO: Saat mengakibatkan <#ba.crystinflict>Cryo Infliction</> atau menimbulkan <#ba.spellburst>Arts Burst DMG</> kepada musuh.\nTangtang akan melepaskan arus semburan kuat yang akan menembus semua musuh di lintasannya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka dan memunculkan <@ba.key>Pusaran Air</>.\n<@ba.info>Maksimum 2 Pusaran Air bisa ada sekaligus di medan pertarungan.</>"
+      "description": "PEMICU KOMBO: Saat mengakibatkan <#ba.crystinflict>Cryo Infliction</> atau menimbulkan <#ba.spellburst>Arts Burst DMG</> kepada musuh.\nTangtang akan melepaskan arus semburan kuat yang akan menembus semua musuh di lintasannya sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka dan memunculkan <@ba.key>Pusaran Air</>.\n<@ba.info>Maksimum 2 Pusaran Air bisa ada sekaligus di medan pertarungan.</>",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "whirlpoolDurationS": "Durasi Pusaran Air (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Pengganda Total DMG Over Time",
-        "oldenStareDurationS": "Durasi TATAPAN MASA LALU (dtk)",
-        "rogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas",
-        "earlyRogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas Dini",
-        "rogueWaveStagger": "Stagger Gelombang Ganas",
-        "earlyRogueWaveStagger": "Stagger Gelombang Ganas Dini"
-      },
       "name": "DA CHIEF SEES YOU!",
-      "description": "Tangtang akan membuka penutup matanya dan melepaskan <@ba.key>TATAPAN MASA LALU</> dari matanya, yang akan mengunci, melumpuhkan, dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time untuk sementara kepada musuh dalam area efeknya.\nSaat <@ba.key>TATAPAN MASA LALU</> berhenti berubah, gelombang ganas akan muncul dan menghantam sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh di area efeknya.\nJika operator terkontrol melancarkan serangan menukik dalam pola <@ba.key>TATAPAN MASA LALU</>, evolusinya akan berakhir, dan gelombang ganas akan langsung muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> yang lebih besar lagi."
+      "description": "Tangtang akan membuka penutup matanya dan melepaskan <@ba.key>TATAPAN MASA LALU</> dari matanya, yang akan mengunci, melumpuhkan, dan menimbulkan <@ba.cryst>Cryo DMG</> Over Time untuk sementara kepada musuh dalam area efeknya.\nSaat <@ba.key>TATAPAN MASA LALU</> berhenti berubah, gelombang ganas akan muncul dan menghantam sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar kepada musuh di area efeknya.\nJika operator terkontrol melancarkan serangan menukik dalam pola <@ba.key>TATAPAN MASA LALU</>, evolusinya akan berakhir, dan gelombang ganas akan langsung muncul sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> yang lebih besar lagi.",
+      "dmgOverTimeTotalMultiplier": "Pengganda Total DMG Over Time",
+      "oldenStareDurationS": "Durasi TATAPAN MASA LALU (dtk)",
+      "rogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas",
+      "earlyRogueWaveDmgMultiplier": "Pengganda DMG Gelombang Ganas Dini",
+      "rogueWaveStagger": "Stagger Gelombang Ganas",
+      "earlyRogueWaveStagger": "Stagger Gelombang Ganas Dini"
     },
     "indicator": {
       "levels": [

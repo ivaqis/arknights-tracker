@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Bắn Nhanh Song Song",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.fire>ST Nhiệt</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.fire>ST Nhiệt</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.fire>ST Nhiệt</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.fire>ST Nhiệt</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.fire>ST Nhiệt</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.fire>ST Nhiệt</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
-        "additionalAtkStagger": "Suy Sụp Tấn Công Bổ Sung"
-      },
       "name": "Đạn Dò Nhiệt",
-      "description": "Bắn liên tục lên mục tiêu gây ít <@ba.fire>ST Nhiệt</>. Đòn cuối cùng gây hiệu ứng <#ba.fireinflict>Nhiễm Nhiệt</>. Nếu mục tiêu đang ở trạng thái <#ba.burning>Thiêu Đốt</> hoặc <#ba.conduct>Điện Hóa</>, không áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> mà thay vào đó <#ba.consume>tiêu hao</> Phản Ứng Thuật Pháp để bắn thêm một phát gây <@ba.fire>ST Nhiệt</>."
+      "description": "Bắn liên tục lên mục tiêu gây ít <@ba.fire>ST Nhiệt</>. Đòn cuối cùng gây hiệu ứng <#ba.fireinflict>Nhiễm Nhiệt</>. Nếu mục tiêu đang ở trạng thái <#ba.burning>Thiêu Đốt</> hoặc <#ba.conduct>Điện Hóa</>, không áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> mà thay vào đó <#ba.consume>tiêu hao</> Phản Ứng Thuật Pháp để bắn thêm một phát gây <@ba.fire>ST Nhiệt</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "additionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung",
+      "additionalAtkStagger": "Suy Sụp Tấn Công Bổ Sung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Lựu Đạn Phá Mảnh·β",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nNém một quả lựu đạn phá mảnh đến vị trí của kẻ địch, lựu đạn sẽ phát nổ ngay khi chạm đất, gây <@ba.fire>ST Nhiệt</> và <#ba.fireinflict>Nhiễm Nhiệt</> lên kẻ địch lân cận."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch phải chịu <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nNém một quả lựu đạn phá mảnh đến vị trí của kẻ địch, lựu đạn sẽ phát nổ ngay khi chạm đất, gây <@ba.fire>ST Nhiệt</> và <#ba.fireinflict>Nhiễm Nhiệt</> lên kẻ địch lân cận.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "Hệ Số ST Mỗi Chuỗi Công",
-        "stagger": "Suy Sụp"
-      },
       "name": "Sói Cuồng Nộ",
-      "description": "Bắn ra một loạt đạn oanh kích nhanh và giải phóng <@ba.key>Sói Cuồng Nộ</> tấn công kẻ địch xung quanh, gây 5 lần <@ba.fire>ST Nhiệt</> và cưỡng chế kích hoạt hiệu ứng <#ba.burning>Thiêu Đốt</>."
+      "description": "Bắn ra một loạt đạn oanh kích nhanh và giải phóng <@ba.key>Sói Cuồng Nộ</> tấn công kẻ địch xung quanh, gây 5 lần <@ba.fire>ST Nhiệt</> và cưỡng chế kích hoạt hiệu ứng <#ba.burning>Thiêu Đốt</>.",
+      "dmgMultiplierPerSeq": "Hệ Số ST Mỗi Chuỗi Công",
+      "stagger": "Suy Sụp"
     },
     "indicator": {
       "levels": [

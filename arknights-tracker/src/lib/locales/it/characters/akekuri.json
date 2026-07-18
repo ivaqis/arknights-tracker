@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Spada dell'aspirazione",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Esplosione di passione",
-      "description": "Un fendente frontale che infligge <@ba.fire>danni da fuoco</> e applica <#ba.fireinflict>Afflizione da fuoco</>."
+      "description": "Un fendente frontale che infligge <@ba.fire>danni da fuoco</> e applica <#ba.fireinflict>Afflizione da fuoco</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "Moltiplicatore danni per SEQ",
-        "staggerPerSeq": "Vacillamento per SEQ",
-        "spRecoveryPerSeq": "Recupero PA per SEQ",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Bagliore e scintillio",
-      "description": "ATTIVAZIONE COMBO: quando il nemico diventa Vacillante o raggiunge un <#ba.poiseknot>nodo di Vacillamento</>. \nEsegue uno scatto all'indietro seguito da due sequenze di affondo, ciascuna delle quali infligge <@ba.pd>danni fisici</> e ripristina parzialmente i PA."
+      "description": "ATTIVAZIONE COMBO: quando il nemico diventa Vacillante o raggiunge un <#ba.poiseknot>nodo di Vacillamento</>. \nEsegue uno scatto all'indietro seguito da due sequenze di affondo, ciascuna delle quali infligge <@ba.pd>danni fisici</> e ripristina parzialmente i PA.",
+      "dmgMultiplierPerSeq": "Moltiplicatore danni per SEQ",
+      "staggerPerSeq": "Vacillamento per SEQ",
+      "spRecoveryPerSeq": "Recupero PA per SEQ",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "Recupero PA"
-      },
       "name": "SQUADRA! ADUNATA!",
-      "description": "Entra in uno stato di canalizzazione e lancia tre razzi di segnalazione. Ogni lancio ripristina parzialmente i PA."
+      "description": "Entra in uno stato di canalizzazione e lancia tre razzi di segnalazione. Ogni lancio ripristina parzialmente i PA.",
+      "spRecovery": "Recupero PA"
     },
     "indicator": {
       "levels": [

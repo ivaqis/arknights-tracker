@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Ruination",
-      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 4 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
-        "seq3Stagger": "SEQ 3 Stagger",
-        "physicalSusceptibility": "Physical Susceptibility",
-        "physicalSusceptibilityDurationS": "Physical Susceptibility Duration (s)"
-      },
       "name": "Turbid Avatar",
-      "description": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well."
+      "description": "Swings the polearm multiple times to deal 2 hits of <@ba.pd>Physical DMG</>, then slams the ground to deal <@ba.pd>Physical DMG</> and <#ba.knockdown>Knock Down</> to all enemies in the area of effect. \nIf the enemy struck by the last hit of this skill has no <#ba.noguard>Vulnerability</> stacks, apply <#ba.physicalvul>Physical Susceptibility</> to the said enemy as well.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq3DmgMultiplier": "SEQ 3 DMG Multiplier",
+      "seq3Stagger": "SEQ 3 Stagger",
+      "physicalSusceptibility": "Physical Susceptibility",
+      "physicalSusceptibilityDurationS": "Physical Susceptibility Duration (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "comboDurationS": "Combo Duration (s)",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Aspect of Wrath",
-      "description": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.physicalvul>Physical Susceptibility</> or <#ba.fracture>Breach</>. \nUnleashes an aspect that performs a spear thrust to deal <@ba.pd>Physical DMG</> and grants <#ba.combo>Link</>."
+      "description": "COMBO TRIGGER: When the controlled operator performs a <#ba.lastcombo>Final Strike</> on an enemy with <#ba.physicalvul>Physical Susceptibility</> or <#ba.fracture>Breach</>. \nUnleashes an aspect that performs a spear thrust to deal <@ba.pd>Physical DMG</> and grants <#ba.combo>Link</>.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "comboDurationS": "Combo Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
-        "additionalAtkStagger": "Additional ATK Stagger"
-      },
       "name": "Heart of the Unmoving",
-      "description": "Unleashes an aspect that performs an Immovable Vajra Slam. The Slam deals <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies in a large area of effect (AOE), and pulls enemies towards the center of the AOE. After a while, the Slam unleashes one more hit that deals massive <@ba.pd>Physical DMG</> and applies another <#ba.knockdown>Knock Down</> to enemies still within its AOE.\nIf the skill <#ba.consume>consumes</> a <#ba.combo>Link</>, then it deals an additional hit of massive <@ba.pd>Physical DMG</>."
+      "description": "Unleashes an aspect that performs an Immovable Vajra Slam. The Slam deals <@ba.pd>Physical DMG</> and applies <#ba.knockdown>Knock Down</> to all enemies in a large area of effect (AOE), and pulls enemies towards the center of the AOE. After a while, the Slam unleashes one more hit that deals massive <@ba.pd>Physical DMG</> and applies another <#ba.knockdown>Knock Down</> to enemies still within its AOE.\nIf the skill <#ba.consume>consumes</> a <#ba.combo>Link</>, then it deals an additional hit of massive <@ba.pd>Physical DMG</>.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
+      "additionalAtkStagger": "Additional ATK Stagger"
     },
     "indicator": {
       "levels": [

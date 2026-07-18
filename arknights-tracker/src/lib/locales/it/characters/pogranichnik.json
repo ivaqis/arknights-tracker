@@ -24,64 +24,56 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Offensiva totale",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "spRecoveryByConsuming1VulnerabilityStack": "Recupero PA consumando 1 accumulo di Vulnerabilità",
-        "spRecoveryByConsuming2VulnerabilityStacks": "Recupero PA consumando 2 accumuli di Vulnerabilità",
-        "spRecoveryByConsuming3VulnerabilityStacks": "Recupero PA consumando 3 accumuli di Vulnerabilità",
-        "spRecoveryByConsuming4VulnerabilityStacks": "Recupero PA consumando 4 accumuli di Vulnerabilità"
-      },
       "name": "Fronte polverizzante",
-      "description": "Pogranichnik sferra un attacco composto da due fendenti ai nemici davanti a sé, infliggendo <@ba.pd>danni fisici</>, applicando <#ba.fracture>Sfondamento</> e ripristinando PA in base al numero di accumuli di Vulnerabilità <#ba.consume>consumati</>. L'effetto di recupero dei PA può attivarsi solo una volta, anche se l'abilità colpisce più bersagli."
+      "description": "Pogranichnik sferra un attacco composto da due fendenti ai nemici davanti a sé, infliggendo <@ba.pd>danni fisici</>, applicando <#ba.fracture>Sfondamento</> e ripristinando PA in base al numero di accumuli di Vulnerabilità <#ba.consume>consumati</>. L'effetto di recupero dei PA può attivarsi solo una volta, anche se l'abilità colpisce più bersagli.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "spRecoveryByConsuming1VulnerabilityStack": "Recupero PA consumando 1 accumulo di Vulnerabilità",
+      "spRecoveryByConsuming2VulnerabilityStacks": "Recupero PA consumando 2 accumuli di Vulnerabilità",
+      "spRecoveryByConsuming3VulnerabilityStacks": "Recupero PA consumando 3 accumuli di Vulnerabilità",
+      "spRecoveryByConsuming4VulnerabilityStacks": "Recupero PA consumando 4 accumuli di Vulnerabilità"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq1SpRecovery": "Recupero PA SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "seq2SpRecovery": "Recupero PA SEQ 2",
-        "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
-        "seq3Stagger": "Vacillamento SEQ 3",
-        "seq3SpRecovery": "Recupero PA SEQ 3",
-        "enhancedSeq3DmgMultiplier": "Moltiplicatore danni SEQ 3 amplificato",
-        "enhancedSeq3Stagger": "Vacillamento SEQ 3 amplificato",
-        "enhancedSeq3SpRecovery": "Recupero PA SEQ 3 amplificato",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Fendente della luna piena",
-      "description": "ATTIVAZIONE COMBO: quando <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</> <#ba.consume>consumano</> gli accumuli di <#ba.noguard>Vulnerabilità</> del nemico. \nEsegue sequenze di fendenti (fino a 3) in base al numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Ogni fendente infligge più danni e ripristina più PA. \n<@ba.info>Consumare 4 accumuli di Vulnerabilità potenzia la terza sequenza di fendenti.</>"
+      "description": "ATTIVAZIONE COMBO: quando <#ba.crush>Distruzione</> o <#ba.fracture>Sfondamento</> <#ba.consume>consumano</> gli accumuli di <#ba.noguard>Vulnerabilità</> del nemico. \nEsegue sequenze di fendenti (fino a 3) in base al numero massimo di accumuli di <#ba.noguard>Vulnerabilità</> <#ba.consume>consumati</> da un nemico, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Ogni fendente infligge più danni e ripristina più PA. \n<@ba.info>Consumare 4 accumuli di Vulnerabilità potenzia la terza sequenza di fendenti.</>",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq1SpRecovery": "Recupero PA SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "seq2SpRecovery": "Recupero PA SEQ 2",
+      "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
+      "seq3Stagger": "Vacillamento SEQ 3",
+      "seq3SpRecovery": "Recupero PA SEQ 3",
+      "enhancedSeq3DmgMultiplier": "Moltiplicatore danni SEQ 3 amplificato",
+      "enhancedSeq3Stagger": "Vacillamento SEQ 3 amplificato",
+      "enhancedSeq3SpRecovery": "Recupero PA SEQ 3 amplificato",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "steelOathDuration": "Durata Giuramento d'acciaio",
-        "advanceDmgMultiplier": "Moltiplicatore danni avanzato",
-        "advanceStagger": "Vacillamento avanzato",
-        "harassDmgMultiplier": "Moltiplicatore danni Tormento",
-        "harassSpRecovery": "Recupero PA Tormento",
-        "decisiveAssaultDmgMultiplier": "Moltiplicatore danni Assalto decisivo",
-        "decisiveAssaultStagger": "Vacillamento Assalto decisivo",
-        "decisiveAssaultSpRecovery": "Recupero PA Assalto decisivo"
-      },
       "name": "Avanzamento del baluardo",
-      "description": "Evoca quattro Baluardi che avanzano e spingono tutti i nemici lungo il percorso, infliggendo <@ba.pd>danni fisici</> e generando 5 punti di <@ba.key>Giuramento d'acciaio</>. Dopo che un nemico subisce uno <#ba.physicalstatus>stato fisico</> o danni dall'abilità combo di Pogranichnik, Pogranichnik consuma 1 punto di <@ba.key>Giuramento d'acciaio</> per evocare un Baluardo che lo assale, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Quando l'ultimo punto di <@ba.key>Giuramento d'acciaio</> viene consumato, tutti e quattro i Baluardi eseguono un Assalto decisivo che infligge ingenti <@ba.pd>danni fisici</> al bersaglio e ripristina molti PA."
+      "description": "Evoca quattro Baluardi che avanzano e spingono tutti i nemici lungo il percorso, infliggendo <@ba.pd>danni fisici</> e generando 5 punti di <@ba.key>Giuramento d'acciaio</>. Dopo che un nemico subisce uno <#ba.physicalstatus>stato fisico</> o danni dall'abilità combo di Pogranichnik, Pogranichnik consuma 1 punto di <@ba.key>Giuramento d'acciaio</> per evocare un Baluardo che lo assale, infliggendo <@ba.pd>danni fisici</> e ripristinando parzialmente PA. Quando l'ultimo punto di <@ba.key>Giuramento d'acciaio</> viene consumato, tutti e quattro i Baluardi eseguono un Assalto decisivo che infligge ingenti <@ba.pd>danni fisici</> al bersaglio e ripristina molti PA.",
+      "steelOathDuration": "Durata Giuramento d'acciaio",
+      "advanceDmgMultiplier": "Moltiplicatore danni avanzato",
+      "advanceStagger": "Vacillamento avanzato",
+      "harassDmgMultiplier": "Moltiplicatore danni Tormento",
+      "harassSpRecovery": "Recupero PA Tormento",
+      "decisiveAssaultDmgMultiplier": "Moltiplicatore danni Assalto decisivo",
+      "decisiveAssaultStagger": "Vacillamento Assalto decisivo",
+      "decisiveAssaultSpRecovery": "Recupero PA Assalto decisivo"
     },
     "indicator": {
       "levels": [

@@ -27,56 +27,48 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Exuberant Trigger",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseDmgMultiplier": "Pengganda DMG Dasar",
-        "dmgMultiplierOfSolidificationApplied": "Pengganda DMG untuk Solidification yang Diakibatkan",
-        "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
-        "stagger": "Stagger",
-        "ultimateEnergyFromSolidificationApplied": "Energi Ultimate dari Solidification yang Diakibatkan",
-        "additionalUltimateEnergyGainPerInflictionStack": "Tambahan Perolehan Energi Ultimate per Tumpuk Infliction"
-      },
       "name": "Brr-Brr-Bomb β",
-      "description": "Melemparkan bom pembeku. Bom akan meledak saat menghantam musuh sehingga akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika <#ba.crystinflict>Cryo Infliction</> atau <#ba.naturalinflict>Nature Infliction</> berhasil menghantam musuh, semua tumpukan <#ba.spellinflict>Arts Infliction</> akan <#ba.consume>dipakai</> sehingga akan mengakibatkan <#ba.frozen>Solidification</> secara paksa, dan menimbulkan <@ba.cryst>Cryo DMG</> kepada target berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>.\nSetelah skill tarung berhasil mengakibatkan <#ba.frozen>Solidification</>, Yvonne akan mendapatkan tambahan Energi Ultimate berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>. Efek Perolehan Energi Ultimate ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh."
+      "description": "Melemparkan bom pembeku. Bom akan meledak saat menghantam musuh sehingga akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika <#ba.crystinflict>Cryo Infliction</> atau <#ba.naturalinflict>Nature Infliction</> berhasil menghantam musuh, semua tumpukan <#ba.spellinflict>Arts Infliction</> akan <#ba.consume>dipakai</> sehingga akan mengakibatkan <#ba.frozen>Solidification</> secara paksa, dan menimbulkan <@ba.cryst>Cryo DMG</> kepada target berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>.\nSetelah skill tarung berhasil mengakibatkan <#ba.frozen>Solidification</>, Yvonne akan mendapatkan tambahan Energi Ultimate berdasarkan jumlah tumpukan yang <#ba.consume>dipakai</>. Efek Perolehan Energi Ultimate ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh.",
+      "baseDmgMultiplier": "Pengganda DMG Dasar",
+      "dmgMultiplierOfSolidificationApplied": "Pengganda DMG untuk Solidification yang Diakibatkan",
+      "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
+      "stagger": "Stagger",
+      "ultimateEnergyFromSolidificationApplied": "Energi Ultimate dari Solidification yang Diakibatkan",
+      "additionalUltimateEnergyGainPerInflictionStack": "Tambahan Perolehan Energi Ultimate per Tumpuk Infliction"
     },
     "comboSkill": {
-      "comboSkill": {
-        "durationS": "Durasi (dtk)",
-        "numberOfEnergyReleases": "Jumlah Pelepasan Energi",
-        "energyDmgMultiplier": "Pengganda DMG Energi",
-        "explosionDmgMultiplier": "Pengganda DMG Ledakan",
-        "explosionStagger": "Stagger Ledakan",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate",
-        "additionalUltimateEnergyGain": "Tambahan Perolehan Energi Ultimate"
-      },
       "name": "Flashfreezer υ37",
-      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh yang terkena <#ba.frozen>Solidification</>.\nFrost-e-Bytee akan langsung dikerahkan ke samping musuh. Selagi masih aktif, Frost-e-Bytee akan terus-menerus melepaskan energi untuk menyerang musuh di sekitar sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka serta <@ba.key>menarik</> mereka ke arahnya. Saat durasi Frost-e-Bytee berakhir, dia akan meledak sehingga akan mengakibatkan <#ba.frozen>Solidification</> secara paksa dan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar.\nSetelah skill kombo berhasil menghantam musuh, Yvonne akan mendapatkan tambahan Energi Ultimate. Efek Perolehan Energi Ultimate ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh."
+      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada musuh yang terkena <#ba.frozen>Solidification</>.\nFrost-e-Bytee akan langsung dikerahkan ke samping musuh. Selagi masih aktif, Frost-e-Bytee akan terus-menerus melepaskan energi untuk menyerang musuh di sekitar sehingga akan menimbulkan <@ba.cryst>Cryo DMG</> kepada mereka serta <@ba.key>menarik</> mereka ke arahnya. Saat durasi Frost-e-Bytee berakhir, dia akan meledak sehingga akan mengakibatkan <#ba.frozen>Solidification</> secara paksa dan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar.\nSetelah skill kombo berhasil menghantam musuh, Yvonne akan mendapatkan tambahan Energi Ultimate. Efek Perolehan Energi Ultimate ini hanya bisa diaktifkan satu kali, bahkan walau skill ini berhasil menghantam beberapa musuh.",
+      "durationS": "Durasi (dtk)",
+      "numberOfEnergyReleases": "Jumlah Pelepasan Energi",
+      "energyDmgMultiplier": "Pengganda DMG Energi",
+      "explosionDmgMultiplier": "Pengganda DMG Ledakan",
+      "explosionStagger": "Stagger Ledakan",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate",
+      "additionalUltimateEnergyGain": "Tambahan Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Durasi (dtk)",
-        "batkDmgMultiplier": "Pengganda BATK DMG",
-        "enhancedFinalStrikeDmgMultiplier": "Penambahan Pengganda Final Strike DMG",
-        "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
-        "enhancedFinalStrikeStagger": "Penambahan Final Strike Stagger",
-        "maxStacks": "Tumpukan Maks",
-        "criticalRateBoostPerStack": "Critical Rate Boost per Tumpuk",
-        "criticalDmgBoostAtMaxStacks": "Critical DMG Boost saat Tumpukan Mencapai Maks"
-      },
       "name": "Cryoblasting Pistolier",
-      "description": "Bot pendukung Tink-a-Bella akan langsung dikerahkan dan Yvonne akan menjadi operator terkontrol.\nSerangan dasar (BATK) Yvonne akan <@ba.key>diperkuat</> untuk sementara. Setiap tahap BATK diperkuat yang dilancarkan akan memberikan satu tumpuk buff Critical Rate. Setelah mencapai tumpukan maks, Yvonne juga akan mendapatkan buff Critical DMG. Menjelang akhir durasi skill, BATK diperkuat yang terakhir dari Yvonne akan menjadi <#ba.lastcombo>Final Strike</> diperkuat yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar.\nJika musuh terkena <#ba.frozen>Solidified</>, Yvonne akan melancarkan serangan tambahan yang akan menimbulkan <@ba.cryst>Cryo DMG</>, lalu <#ba.consume>memakai</> <#ba.frozen>Solidification</> pada musuh."
+      "description": "Bot pendukung Tink-a-Bella akan langsung dikerahkan dan Yvonne akan menjadi operator terkontrol.\nSerangan dasar (BATK) Yvonne akan <@ba.key>diperkuat</> untuk sementara. Setiap tahap BATK diperkuat yang dilancarkan akan memberikan satu tumpuk buff Critical Rate. Setelah mencapai tumpukan maks, Yvonne juga akan mendapatkan buff Critical DMG. Menjelang akhir durasi skill, BATK diperkuat yang terakhir dari Yvonne akan menjadi <#ba.lastcombo>Final Strike</> diperkuat yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar.\nJika musuh terkena <#ba.frozen>Solidified</>, Yvonne akan melancarkan serangan tambahan yang akan menimbulkan <@ba.cryst>Cryo DMG</>, lalu <#ba.consume>memakai</> <#ba.frozen>Solidification</> pada musuh.",
+      "durationS": "Durasi (dtk)",
+      "batkDmgMultiplier": "Pengganda BATK DMG",
+      "enhancedFinalStrikeDmgMultiplier": "Penambahan Pengganda Final Strike DMG",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "enhancedFinalStrikeStagger": "Penambahan Final Strike Stagger",
+      "maxStacks": "Tumpukan Maks",
+      "criticalRateBoostPerStack": "Critical Rate Boost per Tumpuk",
+      "criticalDmgBoostAtMaxStacks": "Critical DMG Boost saat Tumpukan Mencapai Maks"
     },
     "indicator": {
       "levels": [

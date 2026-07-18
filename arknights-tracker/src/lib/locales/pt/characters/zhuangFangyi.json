@@ -24,52 +24,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Artes Chocantes",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 5 sequências que causa <@ba.pulse>DNO Elétrico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pulse>DNO Elétrico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pulse>DNO Elétrico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "batkSeq5Multiplier": "Multiplicador SEQ 5 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "thunderStrikeDmgMultiplier": "Multiplicador DNO do Golpe do Trovão",
-        "totalStagger": "Desorientação Total",
-        "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
-        "bonusUltimateEnergyPerThunderStrike": "Energia Suprema de Bônus por Golpe do Trovão",
-        "sunderbladeLimit": "Limite da Lâmina Relampejante",
-        "sunderbladeDurationS": "Duração da Lâmina Relampejante (s)",
-        "duringUltimateThunderStrikeDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
-        "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida"
-      },
       "name": "Mantra da Ruptura",
-      "description": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de {free_sword_limit:0} <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause {final_rate:0} vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo {max_conduct_sword:0} Lâminas Relampejantes.</>"
+      "description": "<#ba.consume>Consome</> a <#ba.conduct>Eletrificação</> do alvo para aumentar o Multiplicador DNO desta habilidade de batalha e criar <@ba.key>Lâminas Relampejantes</> [<#ba.statuslevel>Nível de Status</> de <#ba.conduct>Eletrificação</> <#ba.consume>consumida</> <@ba.key>+ 1</>]. Se o campo de batalha tiver menos de {free_sword_limit:0} <@ba.key>Lâminas Relampejantes</>, o Mantra da Ruptura ainda poderá criar 1 <@ba.key>Lâmina Relampejante</>, mesmo se ele não <#ba.consume>consumir</> a <#ba.conduct>Eletrificação</> de nenhum alvo.\nZhuang Fangyi então canaliza todas as <@ba.key>Lâminas Relampejantes</> por perto para desferir Golpes do Trovão sucessivos no alvo, causando <@ba.pulse>DNO Elétrico</> e concedendo Energia Suprema de bônus, além de fazer com que o Golpe do Trovão final cause {final_rate:0} vezes o DNO.\n<@ba.info>Uma única conjuração de habilidade de batalha pode criar no máximo {max_conduct_sword:0} Lâminas Relampejantes.</>",
+      "thunderStrikeDmgMultiplier": "Multiplicador DNO do Golpe do Trovão",
+      "totalStagger": "Desorientação Total",
+      "bonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida",
+      "bonusUltimateEnergyPerThunderStrike": "Energia Suprema de Bônus por Golpe do Trovão",
+      "sunderbladeLimit": "Limite da Lâmina Relampejante",
+      "sunderbladeDurationS": "Duração da Lâmina Relampejante (s)",
+      "duringUltimateThunderStrikeDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO do Golpe do Trovão",
+      "duringUltimateBonusDmgMultiplierPerStatusLevelOfElectrificationConsumed": "Durante a Habilidade Suprema: Multiplicador DNO Bônus por Nível de Status de Eletrificação Consumida"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação",
-        "ultimateEnergyGain": "Ganho de Energia Suprema",
-        "additionalUltimateEnergyPerInflictionStack": "Energia Suprema Adicional por Acúmulo de Inflição",
-        "duringUltimateDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO"
-      },
       "name": "Sopro da Transformação",
-      "description": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo."
+      "description": "ACIONADOR DO COMBO: Quando o <#ba.lastcombo>Golpe Final</> ou Finalizador do operador controlado atinge um inimigo com <#ba.pulseinflict>Inflição Elétrica</>.\nZhuang Fangyi cria Relâmpagos de Xiranita que atacam o inimigo e causam <@ba.pulse>DNO Elétrico</>. Se o Conjunto atingir um inimigo com acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, ele <#ba.consume>consumirá</> esses acúmulos de <#ba.pulseinflict>Inflição Elétrica</>, aplicará <#ba.conduct>Eletrificação</> à força e concederá Energia Suprema com base no número de acúmulos <#ba.consume>consumidos</>.\nSe a <#ba.conduct>Eletrificação</> for aplicada à força a um inimigo que já tem <#ba.conduct>Eletrificação</>, então aplicará <#ba.statuslevel>Nível de Status</> + 1 à <#ba.conduct>Eletrificação</> do inimigo.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação",
+      "ultimateEnergyGain": "Ganho de Energia Suprema",
+      "additionalUltimateEnergyPerInflictionStack": "Energia Suprema Adicional por Acúmulo de Inflição",
+      "duringUltimateDmgMultiplier": "Durante a Habilidade Suprema: Multiplicador DNO"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duração (s)",
-        "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
-        "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
-        "duringUltimateBatkSeq3Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB"
-      },
       "name": "Tempestade Devastadora",
-      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> não consome PH nem <#ba.conduct>Eletrificação</> e, se houver um alvo disponível, a habilidade de batalha tem a garantia de criar 3 <@ba.key>Lâminas Relampejantes</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>."
+      "description": "Transforma-se no <@ba.key>Empíreo da Verdade</> que concede estas melhorias:\nOs ataques básicos de Zhuang Fangyi são aprimorados e suas ações são mais difíceis de interromper.\nA habilidade de batalha <@ba.key>Mantra da Ruptura</> ganha um Multiplicador DNO maior e maior alcance de efeito. O Golpe do Trovão final também aplica <#ba.pulseinflict>Inflição Elétrica</> ao alvo atingido.\nO combo de habilidades <@ba.key>Sopro da Transformação</> ganha um Multiplicador DNO maior, o tempo de recarga torna-se {combo_cd_rate:0} vezes mais rápido e os efeitos são aplicados a inimigos dentro de uma pequena área.\nA primeira conjuração da habilidade de batalha <@ba.key>Mantra da Ruptura</> não consome PH nem <#ba.conduct>Eletrificação</> e, se houver um alvo disponível, a habilidade de batalha tem a garantia de criar 3 <@ba.key>Lâminas Relampejantes</> mesmo se o alvo não tiver <#ba.conduct>Eletrificação</>.",
+      "durationS": "Duração (s)",
+      "duringUltimateBatkSeq1Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 1 ATQB",
+      "duringUltimateBatkSeq2Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 2 ATQB",
+      "duringUltimateBatkSeq3Multiplier": "Durante a Habilidade Suprema: Multiplicador SEQ 3 ATQB"
     },
     "indicator": {
       "levels": [

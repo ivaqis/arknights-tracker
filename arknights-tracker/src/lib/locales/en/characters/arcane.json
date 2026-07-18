@@ -27,57 +27,100 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Artillery Interdiction",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.natur>Nature DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.natur>Nature DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.natur>Nature DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger"
-      },
       "name": "Jadecrushing Grid",
-      "description": "Creates a <@ba.key>Jadecrushing Grid</> that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies within the area of effect."
+      "description": {
+        "main": "Creates a <@ba.key>Jadecrushing Grid</> that deals <@ba.natur>Nature DMG</> and applies <#ba.naturalinflict>Nature Infliction</> to enemies within the area of effect.",
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is ACTIVE.*/",
+        "conditionPostDesc1": "<@ba.key>Array Arcana: INT</>:\n- Deals more DMG.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is NOT ACTIVE.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is ACTIVE.*/",
+        "conditionPostDesc2": "<@ba.key>Array Arcana: WILL</>:\n- When dealing DMG, the array also <@ba.key>pulls in</> enemies within the area of effect.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is NOT ACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_skill_lizhiyan_01",
+        "dmgMultiplier": "DMG Multiplier"
+      },
+      "condition2": {
+        "icon": "icon_skill_lizhiyan_02",
+        "dmgMultiplier": "DMG Multiplier"
+      },
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "baseDmgMultiplier": "Base DMG Multiplier",
-        "baseStagger": "Base Stagger",
+      "name": "Yinglung Stance IV",
+      "description": {
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is ACTIVE.*/",
+        "conditionPostDesc1": "COMBO TRIGGER: When <#ba.naturalinflict>Nature Infliction</> or at least 2 stacks of <#ba.spellinflict>non-Nature Arts Infliction</> are applied on an enemy.\nArcane charges at the target and sets up 4 <@ba.key>Tactical Doubles</> that apply <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> and deal <@ba.natur>Nature DMG</> to the target and nearby enemies, and also apply <@ba.key>Imprisonment</> on the said target. When <@ba.key>Imprisonment</> ends, the <@ba.key>Tactical Doubles</> will attack the said target to deal Explosion DMG.\n<@ba.key>Imprisonment</>: A debuff that slows all actions.\n<@ba.key>Array Arcana: INT</>:\n- Hitting an enemy under <@ba.key>Imprisonment</> with Arcane's battle skill <#ba.return>returns</> some SP, ends the <@ba.key>Imprisonment</> early, deals Explosion DMG, applies another instance of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</>, and deals multiple hits of bonus DMG after a short delay.\n- Combo skill cooldown is shorter.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is NOT ACTIVE.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is ACTIVE.*/",
+        "conditionPostDesc2": "COMBO TRIGGER: When an <#ba.spellinflict>Arts Infliction</> is applied on an enemy.\nArcane charges at the target and sets up 4 <@ba.key>Tactical Doubles</> that deal <@ba.natur>Nature DMG</> and apply another stack of <#ba.spellinflict>Arts Infliction</> of the same element, <#ba.naturalvul>Nature Susceptibility</>, and <#ba.crystvul>Cryo Susceptibility</> to the target and nearby enemies, and also apply <@ba.key>Imprisonment</> on the said target. When <@ba.key>Imprisonment</> ends, the <@ba.key>Tactical Doubles</> will attack the said target to deal Explosion DMG.\n<@ba.key>Imprisonment</>: A debuff that slows all actions.\n<@ba.key>Array Arcana: WILL</>:\n- Applying <@ba.key>Imprisonment</> by casting a combo skill will also slightly <@ba.key>pull in</> enemies near the target.\n- The attribute of Will can further increase the effects of <#ba.naturalvul>Nature Susceptibility</> and <#ba.crystvul>Cryo Susceptibility</> applied by the combo skill.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is NOT ACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_combo_skill_lizhiyan_01",
         "imprisonmentAndSusceptibilityDurationS": "Imprisonment and Susceptibility Duration (s)",
         "susceptibility": "Susceptibility",
-        "baseSusceptibility": "Base Susceptibility",
-        "maxBonusSusceptibilityFromWill": "Max Bonus Susceptibility from Will",
-        "willRequiredForMaxBonusSusceptibility": "Will Required for Max Bonus Susceptibility",
-        "explosionDmgMultiplier": "Explosion DMG Multiplier",
-        "explosionStagger": "Explosion Stagger",
         "bonusDmgMultiplier": "Bonus DMG Multiplier",
         "bonusSusceptibilityDurationS": "Bonus Susceptibility Duration (s)",
-        "spReturn": "SP Return",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
+        "spReturn": "SP Return"
       },
-      "name": "Yinglung Stance IV",
-      "description": ""
+      "condition2": {
+        "icon": "icon_combo_skill_lizhiyan_02",
+        "imprisonmentAndSusceptibilityDurationS": "Imprisonment and Susceptibility Duration (s)",
+        "baseSusceptibility": "Base Susceptibility",
+        "maxBonusSusceptibilityFromWill": "Max Bonus Susceptibility from Will",
+        "willRequiredForMaxBonusSusceptibility": "Will Required for Max Bonus Susceptibility"
+      },
+      "baseDmgMultiplier": "Base DMG Multiplier",
+      "baseStagger": "Base Stagger",
+      "explosionDmgMultiplier": "Explosion DMG Multiplier",
+      "explosionStagger": "Explosion Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "gloompurgerArrayCreationDmgMultiplier": "Gloompurger Array Creation DMG Multiplier",
-        "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
-        "gloompurgerArrayDurationS": "Gloompurger Array Duration (s)",
+      "name": "Gloompurge",
+      "description": {
+        "main": "Arcane creates a <@ba.key>Gloompurger Array</> that immediately deals <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE).\nWhen hitting an enemy within the <@ba.key>Gloompurger Array</> with a Finisher or a <#ba.lastcombo>Final Strike</> performed by the controlled operator, the <@ba.key>Gloompurger Array</> unleashes a <@ba.key>Cluster Strike</> that deals Area DMG to the said enemy. This effect triggers up to 2 times.\nAfter triggering <@ba.key>Cluster Strike</> 2 times, the ultimate is switched to <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Deals <@ba.natur>Nature DMG</> to enemies within a large AOE.",
+        "conditionName1": "Array Arcana: INT",
+        "conditionDesc1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ≥ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is ACTIVE.*/",
+        "conditionPostDesc1": "<@ba.key>Array Arcana: INT</>:\n- When created, the <@ba.key>Gloompurger Array</> also forcibly applies <#ba.corrupt>Corrosion</> to enemies in the AOE.",
+        "conditionDescInactive1": "/*Intellect (<@ba.vup>{floor:deck_wisd:0}</>) ＜ Will (<@ba.vup>{floor:deck_will:0}</>), <@ba.key>Array Arcana: INT</> is NOT ACTIVE.*/",
+        "conditionName2": "Array Arcana: WILL",
+        "conditionDesc2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ＞ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is ACTIVE.*/",
+        "conditionPostDesc2": "<@ba.key>Array Arcana: WILL</>:\n- When created, the <@ba.key>Gloompurger Array</> also targets enemies with <#ba.spellinflict>Arts Infliction</> within its AOE, and applies another <#ba.spellinflict>Arts Infliction</> stack of the same element to them.",
+        "conditionDescInactive2": "/*Will (<@ba.vup>{floor:deck_will:0}</>) ≤ Intellect (<@ba.vup>{floor:deck_wisd:0}</>), <@ba.key>Array Arcana: WILL</> is NOT ACTIVE.*/"
+      },
+      "condition1": {
+        "icon": "icon_ultimate_skill_lizhiyan_01",
         "forcedCorrosionDurationS": "Forced Corrosion Duration (s)",
         "clusterStrikeTotalDmgMultiplier": "Cluster Strike Total DMG Multiplier",
-        "gloompurgeArcanaDmgMultiplier": "Gloompurge Arcana DMG Multiplier",
-        "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
+        "gloompurgeArcanaDmgMultiplier": "Gloompurge Arcana DMG Multiplier"
       },
-      "name": "Gloompurge",
-      "description": "Arcane creates a <@ba.key>Gloompurger Array</> that immediately deals <@ba.natur>Nature DMG</> to enemies within the area of effect (AOE).\nWhen hitting an enemy within the <@ba.key>Gloompurger Array</> with a Finisher or a <#ba.lastcombo>Final Strike</> performed by the controlled operator, the <@ba.key>Gloompurger Array</> unleashes a <@ba.key>Cluster Strike</> that deals Area DMG to the said enemy. This effect triggers up to 2 times.\nAfter triggering <@ba.key>Cluster Strike</> 2 times, the ultimate is switched to <@ba.key>Gloompurge Arcana</>.\n<@ba.key>Gloompurge Arcana</>: Deals <@ba.natur>Nature DMG</> to enemies within a large AOE."
+      "condition2": {
+        "icon": "icon_ultimate_skill_lizhiyan_02",
+        "clusterStrikeTotalDmgMultiplier": "Cluster Strike Total DMG Multiplier",
+        "gloompurgeArcanaDmgMultiplier": "Gloompurge Arcana DMG Multiplier"
+      },
+      "gloompurgerArrayCreationDmgMultiplier": "Gloompurger Array Creation DMG Multiplier",
+      "gloompurgerArrayCreationStagger": "Gloompurger Array Creation Stagger",
+      "gloompurgerArrayDurationS": "Gloompurger Array Duration (s)",
+      "gloompurgeArcanaStagger": "Gloompurge Arcana Stagger"
     },
     "indicator": {
       "levels": [

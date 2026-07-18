@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Seek and Hunt",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
-        "additionalAtkStagger": "Additional ATK Stagger",
-        "spRecovery": "SP Recovery"
-      },
       "name": "Tempestuous Arc",
-      "description": "Instantly blinks to the enemy's side to deal 2 slashes that deal some <@ba.pd>Physical DMG</>. If the enemy has active <#ba.conduct>Electrification</>, <#ba.consume>consume</> the <#ba.conduct>Electrification</> to unleash an additional attack that deals <@ba.pulse>Electric DMG</> and recovers some SP."
+      "description": "Instantly blinks to the enemy's side to deal 2 slashes that deal some <@ba.pd>Physical DMG</>. If the enemy has active <#ba.conduct>Electrification</>, <#ba.consume>consume</> the <#ba.conduct>Electrification</> to unleash an additional attack that deals <@ba.pulse>Electric DMG</> and recovers some SP.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
+      "additionalAtkStagger": "Additional ATK Stagger",
+      "spRecovery": "SP Recovery"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "spRecovery": "SP Recovery",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Peal of Thunder",
-      "description": "COMBO TRIGGER: When an enemy suffers <#ba.conduct>Electrification</> or after an enemy's <#ba.conduct>Electrification</> is <#ba.consume>consumed</>. \nBlinks to the enemy's side to unleash a flurry of slashes that deals <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "COMBO TRIGGER: When an enemy suffers <#ba.conduct>Electrification</> or after an enemy's <#ba.conduct>Electrification</> is <#ba.consume>consumed</>. \nBlinks to the enemy's side to unleash a flurry of slashes that deals <@ba.pd>Physical DMG</> and recovers some SP.",
+      "dmgMultiplier": "DMG Multiplier",
+      "spRecovery": "SP Recovery",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
-        "seq2Stagger": "SEQ 2 Stagger"
-      },
       "name": "Exploding Blitz",
-      "description": "Performs a short forward dash while wreathed in arcs of electricity to deal <@ba.pulse>Electric DMG</> and apply <#ba.pulseinflict>Electric Infliction</> to all enemies in the path. The lingering arcs explode after a short while, dealing another hit of <@ba.pulse>Electric DMG</>. If the enemy has active <#ba.pulseinflict>Electric Infliction</>, <#ba.consume>consume</> the <#ba.pulseinflict>Electric Infliction</> and forcibly apply <#ba.conduct>Electrification</>."
+      "description": "Performs a short forward dash while wreathed in arcs of electricity to deal <@ba.pulse>Electric DMG</> and apply <#ba.pulseinflict>Electric Infliction</> to all enemies in the path. The lingering arcs explode after a short while, dealing another hit of <@ba.pulse>Electric DMG</>. If the enemy has active <#ba.pulseinflict>Electric Infliction</>, <#ba.consume>consume</> the <#ba.pulseinflict>Electric Infliction</> and forcibly apply <#ba.conduct>Electrification</>.",
+      "seq1DmgMultiplier": "SEQ 1 DMG Multiplier",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "SEQ 2 DMG Multiplier",
+      "seq2Stagger": "SEQ 2 Stagger"
     },
     "indicator": {
       "levels": [

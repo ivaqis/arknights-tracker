@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Rovina",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
-        "seq3Stagger": "Vacillamento SEQ 3",
-        "physicalSusceptibility": "Suscettibilità fisica",
-        "physicalSusceptibilityDurationS": "Durata Suscettibilità fisica (s)"
-      },
       "name": "Maledizione torbida",
-      "description": "Agita l'arma ad asta più volte per sferrare 2 colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica anche <#ba.physicalvul>Suscettibilità fisica</> a quel nemico."
+      "description": "Agita l'arma ad asta più volte per sferrare 2 colpi che infliggono <@ba.pd>danni fisici</>, poi colpisce con forza il suolo per infliggere <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici nel raggio d'azione. \nSe il nemico che subisce l'ultimo colpo di questa abilità non ha accumuli di <#ba.noguard>Vulnerabilità</>, applica anche <#ba.physicalvul>Suscettibilità fisica</> a quel nemico.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
+      "seq3Stagger": "Vacillamento SEQ 3",
+      "physicalSusceptibility": "Suscettibilità fisica",
+      "physicalSusceptibilityDurationS": "Durata Suscettibilità fisica (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "comboDurationS": "Durata combo (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Furia dell'avatar",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato sferra un <#ba.lastcombo>colpo finale</> contro un nemico con <#ba.physicalvul>Suscettibilità fisica</> o <#ba.fracture>Sfondamento</>. \nSguinzaglia un avatar che sferra una stoccata con la lancia per infliggere <@ba.pd>danni fisici</> e conferisce <#ba.combo>Concatenamento</>."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato sferra un <#ba.lastcombo>colpo finale</> contro un nemico con <#ba.physicalvul>Suscettibilità fisica</> o <#ba.fracture>Sfondamento</>. \nSguinzaglia un avatar che sferra una stoccata con la lancia per infliggere <@ba.pd>danni fisici</> e conferisce <#ba.combo>Concatenamento</>.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "comboDurationS": "Durata combo (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
-        "additionalAtkStagger": "Vacillamento ATT aggiuntivo"
-      },
       "name": "Cuore inamovibile",
-      "description": "Sguinzaglia un avatar che esegue un colpo di Vajra l'Inamovibile. Il colpo infligge <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici in un grande raggio d'azione e li spinge verso il centro dell'area. Dopo un po' di tempo, il colpo infligge nuovamente ingenti <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> ai nemici ancora all'interno dell'area.\nSe l'abilità <#ba.consume>consuma</> un <#ba.combo>Concatenamento</>, sferra un altro colpo che infligge ulteriori <@ba.pd>danni fisici</>."
+      "description": "Sguinzaglia un avatar che esegue un colpo di Vajra l'Inamovibile. Il colpo infligge <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> a tutti i nemici in un grande raggio d'azione e li spinge verso il centro dell'area. Dopo un po' di tempo, il colpo infligge nuovamente ingenti <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</> ai nemici ancora all'interno dell'area.\nSe l'abilità <#ba.consume>consuma</> un <#ba.combo>Concatenamento</>, sferra un altro colpo che infligge ulteriori <@ba.pd>danni fisici</>.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
+      "additionalAtkStagger": "Vacillamento ATT aggiuntivo"
     },
     "indicator": {
       "levels": [

@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "摧破",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq3DmgMultiplier": "第三段傷害倍率",
-        "seq3Stagger": "第三段失衡值",
-        "physicalSusceptibility": "物理脆弱效果",
-        "physicalSusceptibilityDurationS": "物理脆弱持續時間（秒）"
-      },
       "name": "蕩濁身",
-      "description": "連續向前揮槍，造成2次<@ba.pd>物理傷害</>，之後重砸地面，再次對前方所有敵人造成<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>。\n最後一擊命中的敵人若不處於<#ba.noguard>破防</>狀態，則額外對其施加<#ba.physicalvul>物理脆弱</>。"
+      "description": "連續向前揮槍，造成2次<@ba.pd>物理傷害</>，之後重砸地面，再次對前方所有敵人造成<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>。\n最後一擊命中的敵人若不處於<#ba.noguard>破防</>狀態，則額外對其施加<#ba.physicalvul>物理脆弱</>。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq3DmgMultiplier": "第三段傷害倍率",
+      "seq3Stagger": "第三段失衡值",
+      "physicalSusceptibility": "物理脆弱效果",
+      "physicalSusceptibilityDurationS": "物理脆弱持續時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "comboDurationS": "連擊持續時間（秒）",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "忿怒相",
-      "description": "當處於<#ba.physicalvul>物理脆弱</>或<#ba.fracture>碎甲</>狀態的敵人受到主控幹員<#ba.lastcombo>重擊</>後可以發動。\n施放身外身以長槍突刺，造成<@ba.pd>物理傷害</>，並且獲得<#ba.combo>連擊</>。"
+      "description": "當處於<#ba.physicalvul>物理脆弱</>或<#ba.fracture>碎甲</>狀態的敵人受到主控幹員<#ba.lastcombo>重擊</>後可以發動。\n施放身外身以長槍突刺，造成<@ba.pd>物理傷害</>，並且獲得<#ba.combo>連擊</>。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "comboDurationS": "連擊持續時間（秒）",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq1Stagger": "第一段失衡值",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "additionalAtkDmgMultiplier": "追加傷害倍率",
-        "additionalAtkStagger": "追加失衡值"
-      },
       "name": "不動心",
-      "description": "施放身外身，使用不動杵重砸前方地面，對大範圍內的所有敵人造成<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>，然後將所有敵人聚集至中心。一段時間後，對仍然留在砸地範圍內的所有敵人再次造成大量<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>。\n若該技能<#ba.consume>消耗</>了<#ba.combo>連擊</>，則會追加大量<@ba.pd>物理傷害</>。"
+      "description": "施放身外身，使用不動杵重砸前方地面，對大範圍內的所有敵人造成<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>，然後將所有敵人聚集至中心。一段時間後，對仍然留在砸地範圍內的所有敵人再次造成大量<@ba.pd>物理傷害</>並造成<#ba.knockdown>倒地</>。\n若該技能<#ba.consume>消耗</>了<#ba.combo>連擊</>，則會追加大量<@ba.pd>物理傷害</>。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq1Stagger": "第一段失衡值",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "additionalAtkDmgMultiplier": "追加傷害倍率",
+      "additionalAtkStagger": "追加失衡值"
     },
     "indicator": {
       "levels": [

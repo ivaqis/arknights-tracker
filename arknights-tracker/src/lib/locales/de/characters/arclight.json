@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Suche und Jagd",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 5 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlagangriffen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "batkSeq5Multiplier": "STD-ANG-SEQ-5-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
-        "additionalAtkStagger": "Zusätzliches ANG-Taumeln",
-        "spRecovery": "FP-Wiederherstellung"
-      },
       "name": "Stürmischer Bogen",
-      "description": "Springt sofort an die Seite des Gegners, um 2 Hiebe zu entfesseln, die etwas <@ba.pd>Physischen SDN</> verursachen. Wenn der Gegner mit einer aktiven <#ba.conduct>Elektrifizierung</> belegt ist, wird seine <#ba.conduct>Elektrifizierung</> <#ba.consume>verbraucht</>, um einen zusätzlichen Angriff auszuführen, der <@ba.pulse>Elektrischen SDN</> verursacht und einige FP wiederherstellt."
+      "description": "Springt sofort an die Seite des Gegners, um 2 Hiebe zu entfesseln, die etwas <@ba.pd>Physischen SDN</> verursachen. Wenn der Gegner mit einer aktiven <#ba.conduct>Elektrifizierung</> belegt ist, wird seine <#ba.conduct>Elektrifizierung</> <#ba.consume>verbraucht</>, um einen zusätzlichen Angriff auszuführen, der <@ba.pulse>Elektrischen SDN</> verursacht und einige FP wiederherstellt.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
+      "additionalAtkStagger": "Zusätzliches ANG-Taumeln",
+      "spRecovery": "FP-Wiederherstellung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "spRecovery": "FP-Wiederherstellung",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Donnerschlag",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.conduct>Elektrifizierung</> erleidet oder nachdem ein aktiver <#ba.conduct>Elektrifizierungs</>-Zustand eines Gegners <#ba.consume>verbraucht</> wird. \nSpringt an die Seite des Gegners und führt eine Reihe von Hieben aus, die <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner <#ba.conduct>Elektrifizierung</> erleidet oder nachdem ein aktiver <#ba.conduct>Elektrifizierungs</>-Zustand eines Gegners <#ba.consume>verbraucht</> wird. \nSpringt an die Seite des Gegners und führt eine Reihe von Hieben aus, die <@ba.pd>Physischen SDN</> verursachen und einige FP wiederherstellen.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "spRecovery": "FP-Wiederherstellung",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1Stagger": "SEQ 1 – Taumeln",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln"
-      },
       "name": "Explodierender Blitz",
-      "description": "Führt einen kurzen Vorwärtssprint aus, während er von Elektrizitätsbögen umhüllt ist, um <@ba.pulse>Elektrischen SDN</> zu verursachen und allen getroffenen Gegnern <#ba.pulseinflict>Elektrik</> zuzufügen. Die Bögen explodieren nach kurzer Zeit und verursachen einen weiteren Treffer mit <@ba.pulse>Elektrischem SDN</>. Falls <#ba.pulseinflict>Elektrik</> auf dem Gegner aktiv ist, wird <#ba.pulseinflict>Elektrik</> <#ba.consume>verbraucht</> und <#ba.conduct>Elektrifizieren</> verursacht."
+      "description": "Führt einen kurzen Vorwärtssprint aus, während er von Elektrizitätsbögen umhüllt ist, um <@ba.pulse>Elektrischen SDN</> zu verursachen und allen getroffenen Gegnern <#ba.pulseinflict>Elektrik</> zuzufügen. Die Bögen explodieren nach kurzer Zeit und verursachen einen weiteren Treffer mit <@ba.pulse>Elektrischem SDN</>. Falls <#ba.pulseinflict>Elektrik</> auf dem Gegner aktiv ist, wird <#ba.pulseinflict>Elektrik</> <#ba.consume>verbraucht</> und <#ba.conduct>Elektrifizieren</> verursacht.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1Stagger": "SEQ 1 – Taumeln",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln"
     },
     "indicator": {
       "levels": [

@@ -25,41 +25,33 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
-        "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
-        "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
-        "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
-        "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
-        "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
-      },
       "name": "Espada da Aspiração",
-      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ATAQUE BÁSICO: \nAtaque em até 4 sequências que causa <@ba.pd>DNO Físico</>. Como operador controlado, o <#ba.lastcombo>Golpe Final</> também causa <@ba.poise>{poise:0}</> de Desorientação. \n\nATAQUE DE MERGULHO: \nO ataque básico realizado no ar se torna um ataque de mergulho que causa <@ba.pd>DNO Físico</> aos inimigos nas proximidades. \n\nFINALIZADOR: \nO ataque básico realizado próximo a um inimigo Desorientado torna-se um finalizador que causa uma enorme quantidade de <@ba.pd>DNO Físico</> e recupera PH.",
+      "batkSeq1Multiplier": "Multiplicador SEQ 1 ATQB",
+      "batkSeq2Multiplier": "Multiplicador SEQ 2 ATQB",
+      "batkSeq3Multiplier": "Multiplicador SEQ 3 ATQB",
+      "batkSeq4Multiplier": "Multiplicador SEQ 4 ATQB",
+      "finisherAtkMultiplier": "Multiplicador ATQ Finalizador",
+      "diveAtkMultiplier": "Multiplicador ATQ Mergulho"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador DNO",
-        "stagger": "Desorientação"
-      },
       "name": "Explosão de Paixão",
-      "description": "Um golpe frontal que causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</>."
+      "description": "Um golpe frontal que causa <@ba.fire>DNO Térmico</> e aplica <#ba.fireinflict>Inflição Térmica</>.",
+      "dmgMultiplier": "Multiplicador DNO",
+      "stagger": "Desorientação"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierPerSeq": "Multiplicador DNO por SEQ",
-        "staggerPerSeq": "Desorientação por SEQ",
-        "spRecoveryPerSeq": "Recuperação de PH por SEQ",
-        "ultimateEnergyGain": "Ganho de Energia Suprema"
-      },
       "name": "Piscar e Correr",
-      "description": "ACIONADOR DO COMBO: Quando um inimigo fica Desorientado ou atinge um <#ba.poiseknot>Nó de Desorientação</>. \nExecuta uma corrida de retorno com 2 sequências de impulso, e cada sequência causa <@ba.pd>DNO Físico</> e recupera PH."
+      "description": "ACIONADOR DO COMBO: Quando um inimigo fica Desorientado ou atinge um <#ba.poiseknot>Nó de Desorientação</>. \nExecuta uma corrida de retorno com 2 sequências de impulso, e cada sequência causa <@ba.pd>DNO Físico</> e recupera PH.",
+      "dmgMultiplierPerSeq": "Multiplicador DNO por SEQ",
+      "staggerPerSeq": "Desorientação por SEQ",
+      "spRecoveryPerSeq": "Recuperação de PH por SEQ",
+      "ultimateEnergyGain": "Ganho de Energia Suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "spRecovery": "Recuperação de PH"
-      },
       "name": "ESQUADRÃO! VENHAM COMIGO!",
-      "description": "Entra em estado de canalização e dispara 3 Sinalizadores de Encontro. Cada disparo recupera um pouco de PH."
+      "description": "Entra em estado de canalização e dispara 3 Sinalizadores de Encontro. Cada disparo recupera um pouco de PH.",
+      "spRecovery": "Recuperação de PH"
     },
     "indicator": {
       "levels": [

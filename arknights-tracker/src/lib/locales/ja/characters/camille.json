@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "血の償い",
-      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.fire>灼熱ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.fire>灼熱ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大5段の攻撃で敵に<@ba.fire>灼熱ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.fire>灼熱ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "batkSeq5Multiplier": "通常攻撃5段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "firefangVesperwingsDurationS": "燃える血の翼持続時間（秒）",
-        "weaknessEffect": "弱体化効果",
-        "heatSusceptibility": "灼熱脆弱効果",
-        "explosionDmgMultiplier": "爆発ダメージ倍率"
-      },
       "name": "影祓う",
-      "description": "<@ba.key>燃える血の翼</>を召喚して敵へ飛ばし、一定範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。その後、<@ba.key>燃える血の翼</>は目標の周囲を一定時間<@ba.key>包囲</>し、目標に<#ba.weak>弱体化</>と<#ba.firevul>灼熱脆弱</>を付与する。目標が倒されたとき、<@ba.key>燃える血の翼</>は近くの敵に飛び、その目標に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>、<#ba.weak>弱体化</>、<#ba.firevul>灼熱脆弱</>を付与する。\n<@ba.key>燃える血の翼</>に<@ba.key>包囲</>されている敵は、カミーユの連携技が命中したとき、一定時間後に爆発が発生し、追加で<@ba.fire>灼熱ダメージ</>を受ける。"
+      "description": "<@ba.key>燃える血の翼</>を召喚して敵へ飛ばし、一定範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。その後、<@ba.key>燃える血の翼</>は目標の周囲を一定時間<@ba.key>包囲</>し、目標に<#ba.weak>弱体化</>と<#ba.firevul>灼熱脆弱</>を付与する。目標が倒されたとき、<@ba.key>燃える血の翼</>は近くの敵に飛び、その目標に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>、<#ba.weak>弱体化</>、<#ba.firevul>灼熱脆弱</>を付与する。\n<@ba.key>燃える血の翼</>に<@ba.key>包囲</>されている敵は、カミーユの連携技が命中したとき、一定時間後に爆発が発生し、追加で<@ba.fire>灼熱ダメージ</>を受ける。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "firefangVesperwingsDurationS": "燃える血の翼持続時間（秒）",
+      "weaknessEffect": "弱体化効果",
+      "heatSusceptibility": "灼熱脆弱効果",
+      "explosionDmgMultiplier": "爆発ダメージ倍率"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "spRecovery": "SP回復量",
-        "hunterPursuitDmgMultiplier": "追及ダメージ倍率",
-        "hunterPursuitStagger": "追及ブレイク値",
-        "hunterPursuitSpRecovery": "追及SP回復量",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "心抉る棘",
-      "description": "敵の<#ba.fireinflict>灼熱付着</>が<#ba.consume>消費</>または<#ba.absorb>吸収</>されると発動可能。\n高速で駆け抜けて<@ba.fire>灼熱ダメージ</>を与え、SPを一定量回復する。"
+      "description": "敵の<#ba.fireinflict>灼熱付着</>が<#ba.consume>消費</>または<#ba.absorb>吸収</>されると発動可能。\n高速で駆け抜けて<@ba.fire>灼熱ダメージ</>を与え、SPを一定量回復する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "spRecovery": "SP回復量",
+      "hunterPursuitDmgMultiplier": "追及ダメージ倍率",
+      "hunterPursuitStagger": "追及ブレイク値",
+      "hunterPursuitSpRecovery": "追及SP回復量",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "spRecovery": "SP回復量",
-        "hunterPursuitStateDurationS": "追及状態持続時間（秒）"
-      },
       "name": "降り注ぐ深紅",
-      "description": "カミーユが空中へ飛び上がり、槍の雨を降らせ、続けざまに横方向への攻撃を繰り出す。命中した目標に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与し、同時にSPを一定量回復する。\n発動後、一定時間次の戦技が<@ba.key>追及</>に替わる。<@ba.key>追及</>は連携技と見なされ、SPは消費しない。\n<@ba.key>追及</>：高速で駆け抜けて<@ba.fire>灼熱ダメージ</>を与え、SPを一定量回復する。"
+      "description": "カミーユが空中へ飛び上がり、槍の雨を降らせ、続けざまに横方向への攻撃を繰り出す。命中した目標に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与し、同時にSPを一定量回復する。\n発動後、一定時間次の戦技が<@ba.key>追及</>に替わる。<@ba.key>追及</>は連携技と見なされ、SPは消費しない。\n<@ba.key>追及</>：高速で駆け抜けて<@ba.fire>灼熱ダメージ</>を与え、SPを一定量回復する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "spRecovery": "SP回復量",
+      "hunterPursuitStateDurationS": "追及状態持続時間（秒）"
     },
     "indicator": {
       "levels": [

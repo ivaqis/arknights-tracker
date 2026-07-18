@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Dòng Điện Trao Đổi",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pulse>ST Điện</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pulse>ST Điện</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pulse>ST Điện</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "durationS": "Thời Gian Hiệu Lực (giây)",
-        "electricSusceptibility": "Yếu Hóa Điện",
-        "heatSusceptibility": "Yếu Hóa Nhiệt"
-      },
       "name": "Đối Tượng Nghiên Cứu Cụ Thể",
-      "description": "Gây hiệu ứng <@ba.key>Tập Trung</> lên kẻ địch và gây <@ba.pulse>ST Điện</>. Kẻ địch đang chịu <@ba.key>Tập Trung</> sẽ chịu thêm <#ba.pulsevul>Yếu Hóa Điện</> và <#ba.firevul>Yếu Hóa Nhiệt</>. <@ba.key>Tập Trung</> chỉ có thể áp lên 1 mục tiêu tại một thời điểm."
+      "description": "Gây hiệu ứng <@ba.key>Tập Trung</> lên kẻ địch và gây <@ba.pulse>ST Điện</>. Kẻ địch đang chịu <@ba.key>Tập Trung</> sẽ chịu thêm <#ba.pulsevul>Yếu Hóa Điện</> và <#ba.firevul>Yếu Hóa Nhiệt</>. <@ba.key>Tập Trung</> chỉ có thể áp lên 1 mục tiêu tại một thời điểm.",
+      "dmgMultiplier": "Hệ Số ST",
+      "durationS": "Thời Gian Hiệu Lực (giây)",
+      "electricSusceptibility": "Yếu Hóa Điện",
+      "heatSusceptibility": "Yếu Hóa Nhiệt"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Khu Thử Nghiệm EMP",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch đang có <@ba.key>Tập Trung</> chịu một <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nKích hoạt một vụ nổ năng lượng trên kẻ địch, gây <@ba.pulse>ST Điện</> áp thêm một tích điểm cùng loại <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi một kẻ địch đang có <@ba.key>Tập Trung</> chịu một <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>. \nKích hoạt một vụ nổ năng lượng trên kẻ địch, gây <@ba.pulse>ST Điện</> áp thêm một tích điểm cùng loại <#ba.physicalstatus>Trạng Thái Vật Lý</> hoặc <#ba.spellinflict>Nhiễm Thuật Pháp</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Tăng ST Điện",
-        "heatAmp": "Tăng ST Nhiệt",
-        "durationS": "Thời Gian Hiệu Lực (giây)"
-      },
       "name": "Khoảnh Khắc Tăng Tốc",
-      "description": "Áp dụng tạm thời <#ba.pulseenhance>Tăng ST Điện</> và <#ba.fireenhance>Tăng ST Nhiệt</> cho toàn đội."
+      "description": "Áp dụng tạm thời <#ba.pulseenhance>Tăng ST Điện</> và <#ba.fireenhance>Tăng ST Nhiệt</> cho toàn đội.",
+      "electricAmp": "Tăng ST Điện",
+      "heatAmp": "Tăng ST Nhiệt",
+      "durationS": "Thời Gian Hiệu Lực (giây)"
     },
     "indicator": {
       "levels": [

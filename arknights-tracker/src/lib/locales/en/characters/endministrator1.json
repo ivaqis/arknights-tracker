@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Destructive Sequence",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.pd>Physical DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.pd>Physical DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher attack that deals massive <@ba.pd>Physical DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger"
-      },
       "name": "Constructive Sequence",
-      "description": "A forceful burst of Originium Arts that attacks enemies within the area of effect. Deals <@ba.pd>Physical DMG</> and applies <#ba.crush>Crush</>."
+      "description": "A forceful burst of Originium Arts that attacks enemies within the area of effect. Deals <@ba.pd>Physical DMG</> and applies <#ba.crush>Crush</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "crystalShatteringDmgMultiplier": "Crystal Shattering DMG Multiplier",
-        "stagger": "Stagger",
-        "sealDurationS": "Seal Duration (s)",
-        "ultimateEnergyGain": "Ultimate Energy Gain"
-      },
       "name": "Sealing Sequence",
-      "description": "COMBO TRIGGER: When another operator in the team deals DMG with combo skills. \nRushes to the enemy's side to deal <@ba.pd>Physical DMG</> and attach <#ba.originium>Originium Crystals</> that temporarily seal them. Applying <#ba.physicalstatus>Physical Status</> or <#ba.noguard>Vulnerability</> to the sealed enemy <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals additional <@ba.pd>Physical DMG</>."
+      "description": "COMBO TRIGGER: When another operator in the team deals DMG with combo skills. \nRushes to the enemy's side to deal <@ba.pd>Physical DMG</> and attach <#ba.originium>Originium Crystals</> that temporarily seal them. Applying <#ba.physicalstatus>Physical Status</> or <#ba.noguard>Vulnerability</> to the sealed enemy <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals additional <@ba.pd>Physical DMG</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "crystalShatteringDmgMultiplier": "Crystal Shattering DMG Multiplier",
+      "stagger": "Stagger",
+      "sealDurationS": "Seal Duration (s)",
+      "ultimateEnergyGain": "Ultimate Energy Gain"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "DMG Multiplier",
-        "bonusDmgMultiplier": "Bonus DMG Multiplier",
-        "stagger": "Stagger"
-      },
       "name": "Bombardment Sequence",
-      "description": "Bombards the ground with Originium Arts, dealing massive <@ba.pd>Physical DMG</> to all enemies within a fan-shaped area. If the enemy has <#ba.originium>Originium Crystals</> on them, this skill <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals one more hit of <@ba.pd>Physical DMG</>."
+      "description": "Bombards the ground with Originium Arts, dealing massive <@ba.pd>Physical DMG</> to all enemies within a fan-shaped area. If the enemy has <#ba.originium>Originium Crystals</> on them, this skill <#ba.consume>consumes</> the <#ba.originium>Originium Crystals</> and deals one more hit of <@ba.pd>Physical DMG</>.",
+      "dmgMultiplier": "DMG Multiplier",
+      "bonusDmgMultiplier": "Bonus DMG Multiplier",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

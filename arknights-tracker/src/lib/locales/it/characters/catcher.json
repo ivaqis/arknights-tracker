@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Strategia di base",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "protection": "Protezione",
-        "spReturn": "Restituzione PA"
-      },
       "name": "Interdizione rigorosa",
-      "description": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.pd>danni fisici</> e applica 1 accumulo di <#ba.noguard>Vulnerabilità</> al nemico attaccante."
+      "description": "Solleva uno scudo in grado di bloccare gli attacchi, conferisce <#ba.guard>Protezione</> a sé e agli operatori vicini e <#ba.return>ripristina</> immediatamente parte dei PA. \nSe riceve un attacco mentre lo scudo è sollevato, sferra un contrattacco che infligge <@ba.pd>danni fisici</> e applica 1 accumulo di <#ba.noguard>Vulnerabilità</> al nemico attaccante.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "protection": "Protezione",
+      "spReturn": "Restituzione PA"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "stagger": "Vacillamento",
-        "baseShield": "Scudo base",
-        "shieldIncreasePerDefense": "Aumento scudo basato su Difesa",
-        "shieldDurationS": "Durata scudo (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Soppressione tempestiva",
-      "description": "ATTIVAZIONE COMBO: quando un nemico inizia a caricare un'abilità, o quando l'operatore controllato viene attaccato e i suoi PS scendono sotto un {trigger_hp_ratio:0%}. \nEsegue un potente pugno verso il basso che infligge <@ba.pd>danni fisici</> al nemico, conferendo <#ba.shield>scudi</> a sé e a un altro compagno di squadra (con priorità all'operatore controllato).\nLa DIF può aumentare ulteriormente i punti scudo."
+      "description": "ATTIVAZIONE COMBO: quando un nemico inizia a caricare un'abilità, o quando l'operatore controllato viene attaccato e i suoi PS scendono sotto un {trigger_hp_ratio:0%}. \nEsegue un potente pugno verso il basso che infligge <@ba.pd>danni fisici</> al nemico, conferendo <#ba.shield>scudi</> a sé e a un altro compagno di squadra (con priorità all'operatore controllato).\nLa DIF può aumentare ulteriormente i punti scudo.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "stagger": "Vacillamento",
+      "baseShield": "Scudo base",
+      "shieldIncreasePerDefense": "Aumento scudo basato su Difesa",
+      "shieldDurationS": "Durata scudo (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
-        "seq3Stagger": "Vacillamento SEQ 3",
-        "weaknessEffect": "Effetto Debolezza",
-        "weaknessDurationS": "Durata Debolezza (s)"
-      },
       "name": "Aggressione da manuale",
-      "description": "Brandisce lo spadone per eseguire due fendenti consecutivi che infliggono <@ba.pd>danni fisici</> e applicano <#ba.weak>Debolezza</>, seguiti da un potente colpo dall'alto che infligge ingenti <@ba.pd>danni fisici</> e applica <#ba.knockdown>Abbattimento</> a tutti i nemici nell'area d'effetto."
+      "description": "Brandisce lo spadone per eseguire due fendenti consecutivi che infliggono <@ba.pd>danni fisici</> e applicano <#ba.weak>Debolezza</>, seguiti da un potente colpo dall'alto che infligge ingenti <@ba.pd>danni fisici</> e applica <#ba.knockdown>Abbattimento</> a tutti i nemici nell'area d'effetto.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
+      "seq3Stagger": "Vacillamento SEQ 3",
+      "weaknessEffect": "Effetto Debolezza",
+      "weaknessDurationS": "Durata Debolezza (s)"
     },
     "indicator": {
       "levels": [

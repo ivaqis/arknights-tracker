@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Arte de espada de asalto",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "additionalStaggerDealtWhenHit": "Tambaleo adicional infligido al recibir un golpe"
-      },
       "name": "Marcha hacia adelante",
-      "description": "Un salto seguido de un fuerte impacto que inflige <@ba.fire>DAÑ por calor</>, <#ba.knockdown>Derribar</> y Tambaleo a todos los enemigos en un área en forma de abanico. \nSi Ember recibe DAÑ de los enemigos durante el lanzamiento, el impacto inflige más Tambaleo al golpear."
+      "description": "Un salto seguido de un fuerte impacto que inflige <@ba.fire>DAÑ por calor</>, <#ba.knockdown>Derribar</> y Tambaleo a todos los enemigos en un área en forma de abanico. \nSi Ember recibe DAÑ de los enemigos durante el lanzamiento, el impacto inflige más Tambaleo al golpear.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "additionalStaggerDealtWhenHit": "Tambaleo adicional infligido al recibir un golpe"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "baseTreatment": "Tratamiento base",
-        "treatmentIncreasePerWill": "Incremento de tratamiento por Voluntad",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Apoyo en primera línea",
-      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado es atacado. \nSalta hacia el enemigo objetivo y desata un golpe pesado que inflige <@ba.pd>DAÑ físico</> y <#ba.knockdown>Derribar</> mientras otorga tratamiento de PV al operador controlado. El atributo de Voluntad aumenta la cantidad de tratamiento de PV."
+      "description": "ACTIVADOR DE COMBO: Cuando el operador controlado es atacado. \nSalta hacia el enemigo objetivo y desata un golpe pesado que inflige <@ba.pd>DAÑ físico</> y <#ba.knockdown>Derribar</> mientras otorga tratamiento de PV al operador controlado. El atributo de Voluntad aumenta la cantidad de tratamiento de PV.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "baseTreatment": "Tratamiento base",
+      "treatmentIncreasePerWill": "Incremento de tratamiento por Voluntad",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "shieldConversionRatioHp": "Radio de conversión de escudo (PV)",
-        "shieldDurationS": "Duración de escudo (s)"
-      },
       "name": "Juramento reavivado",
-      "description": "Golpea el suelo para infligir <@ba.fire>DAÑ por calor</> a los enemigos cercanos, a la vez que otorga a todo el equipo un <#ba.shield>Escudo</> basado en los PV Máx. de Ember."
+      "description": "Golpea el suelo para infligir <@ba.fire>DAÑ por calor</> a los enemigos cercanos, a la vez que otorga a todo el equipo un <#ba.shield>Escudo</> basado en los PV Máx. de Ember.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "shieldConversionRatioHp": "Radio de conversión de escudo (PV)",
+      "shieldDurationS": "Duración de escudo (s)"
     },
     "indicator": {
       "levels": [

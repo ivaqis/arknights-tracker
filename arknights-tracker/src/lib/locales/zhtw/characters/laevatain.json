@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "燃燼",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.fire>灼熱傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.fire>灼熱傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.fire>灼熱傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.fire>灼熱傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.fire>灼熱傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.fire>灼熱傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "初始爆炸傷害倍率",
-        "baseExplosionStagger": "初始爆炸失衡值",
-        "dmgOverTimeMultiplierPerSeq": "持續傷害每段倍率",
-        "additionalAtkDmgMultiplier": "追加傷害倍率",
-        "additionalAtkStagger": "追加失衡值",
-        "combustionDurationS": "燃燒時長（秒）",
-        "additionalAtkUltimateEnergyGain": "追加攻擊獲得終結技能量",
-        "duringUltimateBatkSeq1Multiplier": "終結技期間第一段倍率",
-        "duringUltimateBatkSeq1Stagger": "終結技期間第一段失衡值",
-        "duringUltimateBatkSeq2Multiplier": "終結技期間第二段倍率",
-        "duringUltimateBatkSeq2Stagger": "終結技期間第二段失衡值",
-        "duringUltimateAdditionalAtkMultiplier": "終結技期間追加攻擊倍率",
-        "duringUltimateAdditionalAtkStagger": "終結技期間追加攻擊失衡值",
-        "duringUltimateCombustionDurationS": "終結技期間燃燒時長（秒）"
-      },
       "name": "焚滅",
-      "description": "召喚熔核碎片持續攻擊前方敵人，造成<@ba.fire>灼熱傷害</>。如果命中敵人，會獲得1層<@ba.key>熔火</>。 \n如果施放時已擁有{count:0}層<@ba.key>熔火</>，則最後會消耗所有層數，對大範圍內敵人追加1次攻擊，造成<@ba.fire>灼熱傷害</>並強制施加短暫的<#ba.burning>燃燒</>。 \n追加攻擊命中敵人會額外獲得終結技能量。\n<@ba.info>終結技期間，戰技效果增強。</>"
+      "description": "召喚熔核碎片持續攻擊前方敵人，造成<@ba.fire>灼熱傷害</>。如果命中敵人，會獲得1層<@ba.key>熔火</>。 \n如果施放時已擁有{count:0}層<@ba.key>熔火</>，則最後會消耗所有層數，對大範圍內敵人追加1次攻擊，造成<@ba.fire>灼熱傷害</>並強制施加短暫的<#ba.burning>燃燒</>。 \n追加攻擊命中敵人會額外獲得終結技能量。\n<@ba.info>終結技期間，戰技效果增強。</>",
+      "baseExplosionDmgMultiplier": "初始爆炸傷害倍率",
+      "baseExplosionStagger": "初始爆炸失衡值",
+      "dmgOverTimeMultiplierPerSeq": "持續傷害每段倍率",
+      "additionalAtkDmgMultiplier": "追加傷害倍率",
+      "additionalAtkStagger": "追加失衡值",
+      "combustionDurationS": "燃燒時長（秒）",
+      "additionalAtkUltimateEnergyGain": "追加攻擊獲得終結技能量",
+      "duringUltimateBatkSeq1Multiplier": "終結技期間第一段倍率",
+      "duringUltimateBatkSeq1Stagger": "終結技期間第一段失衡值",
+      "duringUltimateBatkSeq2Multiplier": "終結技期間第二段倍率",
+      "duringUltimateBatkSeq2Stagger": "終結技期間第二段失衡值",
+      "duringUltimateAdditionalAtkMultiplier": "終結技期間追加攻擊倍率",
+      "duringUltimateAdditionalAtkStagger": "終結技期間追加攻擊失衡值",
+      "duringUltimateCombustionDurationS": "終結技期間燃燒時長（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGainWhenHitting1Enemy": "命中1個敵人獲得終結技能量",
-        "ultimateEnergyGainWhenHitting2Enemies": "命中2個敵人獲得終結技能量",
-        "ultimateEnergyGainWhenHitting3Enemies": "命中3個或以上敵人獲得終結技能量"
-      },
       "name": "沸騰",
-      "description": "當有敵人進入<#ba.burning>燃燒</>或<#ba.corrupt>腐蝕</>狀態時可以發動。\n讓所有處於<#ba.burning>燃燒</>或<#ba.corrupt>腐蝕</>狀態的敵人腳下噴出火焰，對其造成<@ba.fire>灼熱傷害</>。\n如果命中敵人，會獲得1層<@ba.key>熔火</>。每命中1個敵人，還會額外獲得終結技能量。"
+      "description": "當有敵人進入<#ba.burning>燃燒</>或<#ba.corrupt>腐蝕</>狀態時可以發動。\n讓所有處於<#ba.burning>燃燒</>或<#ba.corrupt>腐蝕</>狀態的敵人腳下噴出火焰，對其造成<@ba.fire>灼熱傷害</>。\n如果命中敵人，會獲得1層<@ba.key>熔火</>。每命中1個敵人，還會額外獲得終結技能量。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGainWhenHitting1Enemy": "命中1個敵人獲得終結技能量",
+      "ultimateEnergyGainWhenHitting2Enemies": "命中2個敵人獲得終結技能量",
+      "ultimateEnergyGainWhenHitting3Enemies": "命中3個或以上敵人獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "持續時間（秒）",
-        "enhancedBatkSeq1Multiplier": "強化普攻第一段倍率",
-        "enhancedBatkSeq2Multiplier": "強化普攻第二段倍率",
-        "enhancedBatkSeq3Multiplier": "強化普攻第三段倍率",
-        "enhancedBatkSeq4Multiplier": "強化普攻第四段倍率"
-      },
       "name": "黃昏",
-      "description": "召喚烈焰魔劍並切換為主控角色。\n一段時間內，普通攻擊得到強化，烈焰魔劍會協同萊萬汀發動攻擊，每次攻擊造成<@ba.fire>灼熱傷害</>。此外，普通攻擊第3段會施加<#ba.fireinflict>灼熱附著</>。\n<@ba.info>施放戰技焚滅或連攜技沸騰期間，終結技黃昏的持續時間不會減少。</>"
+      "description": "召喚烈焰魔劍並切換為主控角色。\n一段時間內，普通攻擊得到強化，烈焰魔劍會協同萊萬汀發動攻擊，每次攻擊造成<@ba.fire>灼熱傷害</>。此外，普通攻擊第3段會施加<#ba.fireinflict>灼熱附著</>。\n<@ba.info>施放戰技焚滅或連攜技沸騰期間，終結技黃昏的持續時間不會減少。</>",
+      "durationS": "持續時間（秒）",
+      "enhancedBatkSeq1Multiplier": "強化普攻第一段倍率",
+      "enhancedBatkSeq2Multiplier": "強化普攻第二段倍率",
+      "enhancedBatkSeq3Multiplier": "強化普攻第三段倍率",
+      "enhancedBatkSeq4Multiplier": "強化普攻第四段倍率"
     },
     "indicator": {
       "levels": [

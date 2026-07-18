@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "일반 공격 제1단계 배율",
-        "batkSeq2Multiplier": "일반 공격 제2단계 배율",
-        "batkSeq3Multiplier": "일반 공격 제3단계 배율",
-        "batkSeq4Multiplier": "일반 공격 제4단계 배율",
-        "batkSeq5Multiplier": "일반 공격 제5단계 배율",
-        "finisherAtkMultiplier": "처형 공격 배율",
-        "diveAtkMultiplier": "낙하 공격 배율"
-      },
       "name": "피의 속죄",
-      "description": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.fire>열기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>{poise:0}</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.fire>열기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.fire>열기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다."
+      "description": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.fire>열기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>{poise:0}</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.fire>열기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.fire>열기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
+      "batkSeq1Multiplier": "일반 공격 제1단계 배율",
+      "batkSeq2Multiplier": "일반 공격 제2단계 배율",
+      "batkSeq3Multiplier": "일반 공격 제3단계 배율",
+      "batkSeq4Multiplier": "일반 공격 제4단계 배율",
+      "batkSeq5Multiplier": "일반 공격 제5단계 배율",
+      "finisherAtkMultiplier": "처형 공격 배율",
+      "diveAtkMultiplier": "낙하 공격 배율"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "피해 배율",
-        "stagger": "불균형치",
-        "firefangVesperwingsDurationS": "타오르는 핏빛 날개 지속 시간(초)",
-        "weaknessEffect": "허약 효과",
-        "heatSusceptibility": "열기 취약 효과",
-        "explosionDmgMultiplier": "폭발 피해 배율"
-      },
       "name": "사르는 불꽃",
-      "description": "<@ba.key>타오르는 핏빛 날개</>를 소환하여 적에게 보냅니다. 작은 범위 내의 적에게 <@ba.fire>열기 피해</>를 주고 <#ba.fireinflict>열기 부착</>을 부여합니다. 이후 <@ba.key>타오르는 핏빛 날개</>는 목표의 주변에서 <@ba.key>배회</>하며 목표에 <#ba.weak>허약</>과 <#ba.firevul>열기 취약</>을 부여합니다. 목표가 처치될 때, <@ba.key>타오르는 핏빛 날개</>는 주변의 다른 적에게 날아가 <@ba.fire>열기 피해</>를 주고, <#ba.fireinflict>열기 부착</>을 부여하며, <#ba.weak>허약</>과 <#ba.firevul>열기 취약</>을 부여합니다.\n<@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</> 중인 적이 카뮤의 연계 스킬에 명중될 때, 짧은 지연 후 한 차례 폭발이 발생하며 추가로 <@ba.fire>열기 피해</>를 받습니다."
+      "description": "<@ba.key>타오르는 핏빛 날개</>를 소환하여 적에게 보냅니다. 작은 범위 내의 적에게 <@ba.fire>열기 피해</>를 주고 <#ba.fireinflict>열기 부착</>을 부여합니다. 이후 <@ba.key>타오르는 핏빛 날개</>는 목표의 주변에서 <@ba.key>배회</>하며 목표에 <#ba.weak>허약</>과 <#ba.firevul>열기 취약</>을 부여합니다. 목표가 처치될 때, <@ba.key>타오르는 핏빛 날개</>는 주변의 다른 적에게 날아가 <@ba.fire>열기 피해</>를 주고, <#ba.fireinflict>열기 부착</>을 부여하며, <#ba.weak>허약</>과 <#ba.firevul>열기 취약</>을 부여합니다.\n<@ba.key>타오르는 핏빛 날개</>가 <@ba.key>배회</> 중인 적이 카뮤의 연계 스킬에 명중될 때, 짧은 지연 후 한 차례 폭발이 발생하며 추가로 <@ba.fire>열기 피해</>를 받습니다.",
+      "dmgMultiplier": "피해 배율",
+      "stagger": "불균형치",
+      "firefangVesperwingsDurationS": "타오르는 핏빛 날개 지속 시간(초)",
+      "weaknessEffect": "허약 효과",
+      "heatSusceptibility": "열기 취약 효과",
+      "explosionDmgMultiplier": "폭발 피해 배율"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "피해 배율",
-        "stagger": "불균형치",
-        "spRecovery": "스킬 게이지 회복",
-        "hunterPursuitDmgMultiplier": "추적 피해 배율",
-        "hunterPursuitStagger": "추적 불균형치",
-        "hunterPursuitSpRecovery": "추적 스킬 게이지 회복",
-        "ultimateEnergyGain": "획득하는 궁극기 에너지"
-      },
       "name": "영혼의 가시",
-      "description": "적의 <#ba.fireinflict>열기 부착</>이 <#ba.consume>소모</>되거나 <#ba.absorb>흡수</>된 후 사용할 수 있습니다.\n해당 위치를 이리저리 가로지르며 <@ba.fire>열기 피해</>를 주고, 일정량의 스킬 게이지를 회복합니다."
+      "description": "적의 <#ba.fireinflict>열기 부착</>이 <#ba.consume>소모</>되거나 <#ba.absorb>흡수</>된 후 사용할 수 있습니다.\n해당 위치를 이리저리 가로지르며 <@ba.fire>열기 피해</>를 주고, 일정량의 스킬 게이지를 회복합니다.",
+      "dmgMultiplier": "피해 배율",
+      "stagger": "불균형치",
+      "spRecovery": "스킬 게이지 회복",
+      "hunterPursuitDmgMultiplier": "추적 피해 배율",
+      "hunterPursuitStagger": "추적 불균형치",
+      "hunterPursuitSpRecovery": "추적 스킬 게이지 회복",
+      "ultimateEnergyGain": "획득하는 궁극기 에너지"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "피해 배율",
-        "stagger": "불균형치",
-        "spRecovery": "스킬 게이지 회복",
-        "hunterPursuitStateDurationS": "추적 상태 지속 시간(초)"
-      },
       "name": "선혈의 비",
-      "description": "카뮤가 공중으로 날아올라 창의 비를 퍼붓고 가로 베기 공격을 시전하며, 명중한 목표에 <@ba.fire>열기 피해</>를 주고 <#ba.fireinflict>열기 부착</>을 부여하며, 동시에 일정 스킬 게이지를 회복합니다.\n사용 후, 일정 시간 내에 다음 배틀 스킬이 <@ba.key>추적</>으로 교체됩니다. <@ba.key>추적</>은 연계 스킬로 간주되며, 스킬 게이지를 소모하지 않습니다.\n<@ba.key>추적</>: 해당 위치를 이리저리 가로지르며 <@ba.fire>열기 피해</>를 주고, 일정량의 스킬 게이지를 회복합니다."
+      "description": "카뮤가 공중으로 날아올라 창의 비를 퍼붓고 가로 베기 공격을 시전하며, 명중한 목표에 <@ba.fire>열기 피해</>를 주고 <#ba.fireinflict>열기 부착</>을 부여하며, 동시에 일정 스킬 게이지를 회복합니다.\n사용 후, 일정 시간 내에 다음 배틀 스킬이 <@ba.key>추적</>으로 교체됩니다. <@ba.key>추적</>은 연계 스킬로 간주되며, 스킬 게이지를 소모하지 않습니다.\n<@ba.key>추적</>: 해당 위치를 이리저리 가로지르며 <@ba.fire>열기 피해</>를 주고, 일정량의 스킬 게이지를 회복합니다.",
+      "dmgMultiplier": "피해 배율",
+      "stagger": "불균형치",
+      "spRecovery": "스킬 게이지 회복",
+      "hunterPursuitStateDurationS": "추적 상태 지속 시간(초)"
     },
     "indicator": {
       "levels": [

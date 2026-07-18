@@ -27,52 +27,44 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Sát Huyết Chi Tội",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.fire>ST Nhiệt</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.fire>ST Nhiệt</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.fire>ST Nhiệt</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.fire>ST Nhiệt</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng.",
+      "batkSeq1Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Trình Tự Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "firefangVesperwingsDurationS": "Hiệu Lực Dơi Quái Lửa (giây)",
-        "weaknessEffect": "Hiệu Ứng Suy Yếu",
-        "heatSusceptibility": "Yếu Hóa Nhiệt",
-        "explosionDmgMultiplier": "Hệ Số ST Nổ"
-      },
       "name": "Lửa Dữ Tận Diệt",
-      "description": "Camille triệu hồi <@ba.key>Dơi Quái Lửa</> bay về phía kẻ địch, gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên kẻ địch trong phạm vi nhỏ. Sau đó, <@ba.key>Dơi Quái Lửa</> tạm thời <@ba.key>bay lơ lửng</> quanh mục tiêu, đồng thời áp dụng <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu đó trong suốt thời gian lơ lửng. Khi mục tiêu bị đánh bại, <@ba.key>Dơi Quái Lửa</> sẽ bay sang một kẻ địch gần đó, gây <@ba.fire>ST Nhiệt</>, đồng thời áp dụng <#ba.fireinflict>Nhiễm Nhiệt</>, <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu mới.\nKhi KN liên hoàn của Camille đánh trúng kẻ địch đang bị <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</> quanh người, một vụ nổ sẽ được kích hoạt sau một thoáng trì hoãn. Vụ nổ này gây thêm <@ba.fire>ST Nhiệt</>."
+      "description": "Camille triệu hồi <@ba.key>Dơi Quái Lửa</> bay về phía kẻ địch, gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên kẻ địch trong phạm vi nhỏ. Sau đó, <@ba.key>Dơi Quái Lửa</> tạm thời <@ba.key>bay lơ lửng</> quanh mục tiêu, đồng thời áp dụng <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu đó trong suốt thời gian lơ lửng. Khi mục tiêu bị đánh bại, <@ba.key>Dơi Quái Lửa</> sẽ bay sang một kẻ địch gần đó, gây <@ba.fire>ST Nhiệt</>, đồng thời áp dụng <#ba.fireinflict>Nhiễm Nhiệt</>, <#ba.weak>Suy Yếu</> và <#ba.firevul>Yếu Hóa Nhiệt</> lên mục tiêu mới.\nKhi KN liên hoàn của Camille đánh trúng kẻ địch đang bị <@ba.key>Dơi Quái Lửa</> <@ba.key>bay lơ lửng</> quanh người, một vụ nổ sẽ được kích hoạt sau một thoáng trì hoãn. Vụ nổ này gây thêm <@ba.fire>ST Nhiệt</>.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "firefangVesperwingsDurationS": "Hiệu Lực Dơi Quái Lửa (giây)",
+      "weaknessEffect": "Hiệu Ứng Suy Yếu",
+      "heatSusceptibility": "Yếu Hóa Nhiệt",
+      "explosionDmgMultiplier": "Hệ Số ST Nổ"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "spRecovery": "Hồi Điểm KN",
-        "hunterPursuitDmgMultiplier": "Hệ Số ST Thợ Săn Truy Kích",
-        "hunterPursuitStagger": "Suy Sụp Thợ Săn Truy Kích",
-        "hunterPursuitSpRecovery": "Hồi Điểm KN Thợ Săn Truy Kích",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Truy Tâm Kích",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> hiệu ứng <#ba.fireinflict>Nhiễm Nhiệt</> của kẻ địch.\nLướt đánh rồi trở lại, gây <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi <#ba.consume>tiêu hao</> hoặc <#ba.absorb>hấp thụ</> hiệu ứng <#ba.fireinflict>Nhiễm Nhiệt</> của kẻ địch.\nLướt đánh rồi trở lại, gây <@ba.fire>ST Nhiệt</> và hồi một phần Điểm Kỹ Năng.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "spRecovery": "Hồi Điểm KN",
+      "hunterPursuitDmgMultiplier": "Hệ Số ST Thợ Săn Truy Kích",
+      "hunterPursuitStagger": "Suy Sụp Thợ Săn Truy Kích",
+      "hunterPursuitSpRecovery": "Hồi Điểm KN Thợ Săn Truy Kích",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "spRecovery": "Hồi Điểm KN",
-        "hunterPursuitStateDurationS": "Hiệu Lực Trạng Thái Thợ Săn Truy Kích"
-      },
       "name": "Tinh Hồng Huyết Vũ",
-      "description": "Camille bay lên trời, giáng xuống loạt thương kích, sau đó bồi thêm một đòn tấn công quét ngang. Gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên các mục tiêu trúng đòn, đồng thời hồi một lượng Điểm Kỹ Năng nhất định. \nSau khi thi triển tuyệt kỹ, KN chiến đấu của Camille sẽ tạm thời chuyển hóa thành <@ba.key>Thợ Săn Truy Kích</>.\n<@ba.key>Thợ Săn Truy Kích</>: được tính là KN liên hoàn và không tiêu hao Điểm Kỹ Năng khi thi triển. Đây là đòn tấn công lướt áp dụng <@ba.fire>ST Nhiệt</> và hồi vài Điểm Kỹ Năng."
+      "description": "Camille bay lên trời, giáng xuống loạt thương kích, sau đó bồi thêm một đòn tấn công quét ngang. Gây <@ba.fire>ST Nhiệt</> và áp dụng <#ba.fireinflict>Nhiễm Nhiệt</> lên các mục tiêu trúng đòn, đồng thời hồi một lượng Điểm Kỹ Năng nhất định. \nSau khi thi triển tuyệt kỹ, KN chiến đấu của Camille sẽ tạm thời chuyển hóa thành <@ba.key>Thợ Săn Truy Kích</>.\n<@ba.key>Thợ Săn Truy Kích</>: được tính là KN liên hoàn và không tiêu hao Điểm Kỹ Năng khi thi triển. Đây là đòn tấn công lướt áp dụng <@ba.fire>ST Nhiệt</> và hồi vài Điểm Kỹ Năng.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "spRecovery": "Hồi Điểm KN",
+      "hunterPursuitStateDurationS": "Hiệu Lực Trạng Thái Thợ Săn Truy Kích"
     },
     "indicator": {
       "levels": [

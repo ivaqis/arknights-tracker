@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Ruptura creciente",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 5 secuencias que inflige <@ba.pd>DAÑ físico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "liftDurationS": "Duración Levantar (s)"
-      },
       "name": "Golpe ascendente",
-      "description": "Realiza un corte ascendente al enemigo objetivo, infligiendo <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</>."
+      "description": "Realiza un corte ascendente al enemigo objetivo, infligiendo <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "liftDurationS": "Duración Levantar (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Remontar a las estrellas",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo se vuelve <#ba.noguard>Vulnerable</>. \nUn desplazamiento afilado que atraviesa al enemigo objetivo e inflige <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</> a todos los enemigos en el trayecto."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo se vuelve <#ba.noguard>Vulnerable</>. \nUn desplazamiento afilado que atraviesa al enemigo objetivo e inflige <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</> a todos los enemigos en el trayecto.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Multiplicador corte",
-        "firstStrikeStagger": "Tambaleo de primer golpe",
-        "finalStrikeDmgMultiplier": "Multiplicador de DAÑ de golpe final",
-        "finalStrikeStagger": "Tambaleo de Golpe final"
-      },
       "name": "Vendaval de cuchillas",
-      "description": "Un ataque de 7 secuencias de cortes que inflige <@ba.pd>DAÑ físico</> con cada secuencia al enemigo objetivo. La secuencia final de corte inflige aún más DAÑ."
+      "description": "Un ataque de 7 secuencias de cortes que inflige <@ba.pd>DAÑ físico</> con cada secuencia al enemigo objetivo. La secuencia final de corte inflige aún más DAÑ.",
+      "slashMultiplier": "Multiplicador corte",
+      "firstStrikeStagger": "Tambaleo de primer golpe",
+      "finalStrikeDmgMultiplier": "Multiplicador de DAÑ de golpe final",
+      "finalStrikeStagger": "Tambaleo de Golpe final"
     },
     "indicator": {
       "levels": [

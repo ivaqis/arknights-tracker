@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Thunderlance: Blitz",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "thunderlanceDmgMultiplier": "Pengganda Thunderlance DMG",
-        "thunderlanceStagger": "Thunderlance Stagger",
-        "thunderlanceExDmgMultiplier": "Pengganda Thunderlance EX DMG",
-        "thunderlanceExStagger": "Thunderlance EX Stagger"
-      },
       "name": "Thunderlance: Interdiction",
-      "description": "Melompat ke udara dan menciptakan pusaran api dengan tombaknya sehingga akan menimbulkan sejumlah <@ba.pulse>Electric DMG</> kepada musuh di sekitar sambil mengambil kembali semua <@ba.key>Thunderlance</> dan <@ba.key>Thunderlance EX</> di medan pertarungan ke arahnya. \n<@ba.key>Thunderlance</> yang kembali akan menembus semua musuh di lintasannya dan menimbulkan <@ba.pulse>Electric DMG</>, sedangkan <@ba.key>Thunderlance EX</> yang kembali akan menimbulkan <@ba.pulse>Electric DMG</> lebih besar dan mengakibatkan <#ba.pulseinflict>Elec Inflict</>."
+      "description": "Melompat ke udara dan menciptakan pusaran api dengan tombaknya sehingga akan menimbulkan sejumlah <@ba.pulse>Electric DMG</> kepada musuh di sekitar sambil mengambil kembali semua <@ba.key>Thunderlance</> dan <@ba.key>Thunderlance EX</> di medan pertarungan ke arahnya. \n<@ba.key>Thunderlance</> yang kembali akan menembus semua musuh di lintasannya dan menimbulkan <@ba.pulse>Electric DMG</>, sedangkan <@ba.key>Thunderlance EX</> yang kembali akan menimbulkan <@ba.pulse>Electric DMG</> lebih besar dan mengakibatkan <#ba.pulseinflict>Elec Inflict</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "thunderlanceDmgMultiplier": "Pengganda Thunderlance DMG",
+      "thunderlanceStagger": "Thunderlance Stagger",
+      "thunderlanceExDmgMultiplier": "Pengganda Thunderlance EX DMG",
+      "thunderlanceExStagger": "Thunderlance EX Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "thunderlanceDurationS": "Durasi Thunderlance (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Thunderlance: Strike",
-      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada target yang sedang terkena <#ba.pulseinflict>Elec Inflict</> atau <#ba.conduct>Electrification</>. \nMelompat ke udara dan melemparkan 3 <@ba.key>Thunderlance</> kepada target, lalu menimbulkan 1 hantaman <@ba.pulse>Electric DMG</> kepada musuh dalam area efek."
+      "description": "PEMICU KOMBO: Saat operator terkontrol melancarkan <#ba.lastcombo>Final Strike</> kepada target yang sedang terkena <#ba.pulseinflict>Elec Inflict</> atau <#ba.conduct>Electrification</>. \nMelompat ke udara dan melemparkan 3 <@ba.key>Thunderlance</> kepada target, lalu menimbulkan 1 hantaman <@ba.pulse>Electric DMG</> kepada musuh dalam area efek.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "thunderlanceDurationS": "Durasi Thunderlance (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "thunderlanceExDurationS": "Durasi Thunderlance EX (dtk)"
-      },
       "name": "Thunderlance: Final Shock",
-      "description": "Melemparkan <@ba.key>Thunderlance EX</> ke area target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar kepada musuh di sekitar."
+      "description": "Melemparkan <@ba.key>Thunderlance EX</> ke area target sehingga akan menimbulkan <@ba.pulse>Electric DMG</> sangat besar kepada musuh di sekitar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "thunderlanceExDurationS": "Durasi Thunderlance EX (dtk)"
     },
     "indicator": {
       "levels": [

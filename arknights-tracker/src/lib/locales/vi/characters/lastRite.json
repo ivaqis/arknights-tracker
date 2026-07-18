@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Vũ Điệu Băng Giá",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung Ảo Ảnh",
-        "spReturn": "Điểm KN Hoàn Trả",
-        "durationS": "Thời Gian Hiệu Lực (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Di Sản Huyền Bí của Seš'qa",
-      "description": "Thực hiện <@ba.key>Truyền Dịch Hạ Nhiệt</> trên vũ khí của cán viên đang điều khiển và <#ba.return>hoàn trả</> một phần Điểm KN. \n<#ba.lastcombo>Đòn Dứt Điểm</> kế tiếp mà cán viên thực hiện trong thời gian nhất định sẽ tạo Ảnh Ảo Last Rite để thực hiện đòn tấn công bổ sung vào mục tiêu, gây <@ba.cryst>ST Băng</> và gây hiệu ứng <#ba.crystinflict>Nhiễm Băng</>. \nKhi cán viên đang điều khiển là chính Last Rite thì kích hoạt KN chiến đấu này sẽ không đặt lại chuỗi đòn đánh thường của cô."
+      "description": "Thực hiện <@ba.key>Truyền Dịch Hạ Nhiệt</> trên vũ khí của cán viên đang điều khiển và <#ba.return>hoàn trả</> một phần Điểm KN. \n<#ba.lastcombo>Đòn Dứt Điểm</> kế tiếp mà cán viên thực hiện trong thời gian nhất định sẽ tạo Ảnh Ảo Last Rite để thực hiện đòn tấn công bổ sung vào mục tiêu, gây <@ba.cryst>ST Băng</> và gây hiệu ứng <#ba.crystinflict>Nhiễm Băng</>. \nKhi cán viên đang điều khiển là chính Last Rite thì kích hoạt KN chiến đấu này sẽ không đặt lại chuỗi đòn đánh thường của cô.",
+      "mirageAdditionalAtkDmgMultiplier": "Hệ Số ST Tấn Công Bổ Sung Ảo Ảnh",
+      "spReturn": "Điểm KN Hoàn Trả",
+      "durationS": "Thời Gian Hiệu Lực (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Hệ Số ST Mảnh Băng",
-        "slashBaseDmgMultiplier": "Hệ Số ST Cơ Bản Của Đòn Chém",
-        "slashStagger": "Suy Sụp Do Đòn Chém",
-        "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm/Tầng Nhiễm",
-        "baseUltimateEnergyGain": "Năng Lượng Tuyệt Kỹ Cơ Bản Nhận Được",
-        "additionalUltimateEnergyGainPerInflictionStack": "Tăng Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm"
-      },
       "name": "Kẻ Nuốt Chửng Mùa Đông",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch có {count:0} tầng <#ba.crystinflict>Nhiễm Băng</> trở lên. \nTạo trụ băng để bọc lấy kẻ địch rồi đập tan để <#ba.consume>tiêu hao</> toàn bộ số tầng <#ba.crystinflict>Nhiễm Băng</> của mục tiêu đó. Số tầng <#ba.crystinflict>Nhiễm Băng</> bị <#ba.consume>tiêu hao</> sẽ quyết định lượng <@ba.cryst>ST Băng</> gây ra cho kẻ địch đó và lượng Năng Lượng Tuyệt Kỹ mà Last Rite nhận được."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch có {count:0} tầng <#ba.crystinflict>Nhiễm Băng</> trở lên. \nTạo trụ băng để bọc lấy kẻ địch rồi đập tan để <#ba.consume>tiêu hao</> toàn bộ số tầng <#ba.crystinflict>Nhiễm Băng</> của mục tiêu đó. Số tầng <#ba.crystinflict>Nhiễm Băng</> bị <#ba.consume>tiêu hao</> sẽ quyết định lượng <@ba.cryst>ST Băng</> gây ra cho kẻ địch đó và lượng Năng Lượng Tuyệt Kỹ mà Last Rite nhận được.",
+      "iceShardDmgMultiplier": "Hệ Số ST Mảnh Băng",
+      "slashBaseDmgMultiplier": "Hệ Số ST Cơ Bản Của Đòn Chém",
+      "slashStagger": "Suy Sụp Do Đòn Chém",
+      "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm/Tầng Nhiễm",
+      "baseUltimateEnergyGain": "Năng Lượng Tuyệt Kỹ Cơ Bản Nhận Được",
+      "additionalUltimateEnergyGainPerInflictionStack": "Tăng Năng Lượng Tuyệt Kỹ Bổ Sung/Tầng Hiệu Ứng Gây Nhiễm"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq1Stagger": "Suy Sụp Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2",
-        "seq3DmgMultiplier": "Hệ Số ST Chuỗi Công 3",
-        "seq3Stagger": "Suy Sụp Chuỗi Công 3"
-      },
       "name": "Lễ Canh Thức",
-      "description": "Last Rite thi triển giáp băng bao quanh mình, tạo lưỡi liềm băng chém 3 nhát và miễn nhiễm mọi ST trong thời gian trạng thái này có hiệu lực. \nMỗi nhát chém gây <@ba.cryst>ST Băng</> cực lớn. \n<@ba.info>Last Rite chỉ có thể nhận Năng Lượng Tuyệt Kỹ từ KN chiến đấu và KN liên hoàn của chính cô.</>"
+      "description": "Last Rite thi triển giáp băng bao quanh mình, tạo lưỡi liềm băng chém 3 nhát và miễn nhiễm mọi ST trong thời gian trạng thái này có hiệu lực. \nMỗi nhát chém gây <@ba.cryst>ST Băng</> cực lớn. \n<@ba.info>Last Rite chỉ có thể nhận Năng Lượng Tuyệt Kỹ từ KN chiến đấu và KN liên hoàn của chính cô.</>",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq1Stagger": "Suy Sụp Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2",
+      "seq3DmgMultiplier": "Hệ Số ST Chuỗi Công 3",
+      "seq3Stagger": "Suy Sụp Chuỗi Công 3"
     },
     "indicator": {
       "levels": [

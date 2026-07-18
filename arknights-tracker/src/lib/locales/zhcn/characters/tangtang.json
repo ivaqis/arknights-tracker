@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "处决攻击倍率",
-        "diveAtkMultiplier": "下落攻击倍率"
-      },
       "name": "崩你脑壳！",
-      "description": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.cryst>寒冷伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n \n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.cryst>寒冷伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.cryst>寒冷伤害</>并恢复一定技力。"
+      "description": "普通攻击：\n对敌人进行至多5段攻击，造成<@ba.cryst>寒冷伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n \n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.cryst>寒冷伤害</>。\n \n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.cryst>寒冷伤害</>并恢复一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "处决攻击倍率",
+      "diveAtkMultiplier": "下落攻击倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "射击伤害倍率",
-        "shotStagger": "射击失衡值",
-        "dmgMultiplier1Waterspout": "单个水龙卷伤害倍率",
-        "waterspoutDurationS": "水龙卷持续时间（秒）",
-        "spReturnPerWhirlpool": "每处涡流技力返还",
-        "artsSusceptibility2Waterspouts": "两个水龙卷法术脆弱",
-        "artsSusceptibility3Waterspouts": "三个水龙卷法术脆弱",
-        "artsSusceptibilityDurationS": "法术脆弱持续时间（秒）"
-      },
       "name": "踏潮卷浪！",
-      "description": "从水中跃出，对敌人抵近射击，造成<@ba.cryst>寒冷伤害</>，并掀起一个<@ba.key>水龙卷</>。\n同时消耗附近所有<@ba.key>涡流</>使其形成额外的<@ba.key>水龙卷</>，并根据形成数量<#ba.return>返还</>一定技力。\n<@ba.key>水龙卷</>：对范围内敌人施加1层<#ba.crystinflict>寒冷附着</>，并持续造成<@ba.cryst>寒冷伤害</>。若本次形成多个<@ba.key>水龙卷</>，将对敌人额外施加<#ba.spellvul>法术脆弱</>，但无法重复施加<#ba.crystinflict>寒冷附着</>。\n<@ba.info>水龙卷伤害视为战技伤害。</>"
+      "description": "从水中跃出，对敌人抵近射击，造成<@ba.cryst>寒冷伤害</>，并掀起一个<@ba.key>水龙卷</>。\n同时消耗附近所有<@ba.key>涡流</>使其形成额外的<@ba.key>水龙卷</>，并根据形成数量<#ba.return>返还</>一定技力。\n<@ba.key>水龙卷</>：对范围内敌人施加1层<#ba.crystinflict>寒冷附着</>，并持续造成<@ba.cryst>寒冷伤害</>。若本次形成多个<@ba.key>水龙卷</>，将对敌人额外施加<#ba.spellvul>法术脆弱</>，但无法重复施加<#ba.crystinflict>寒冷附着</>。\n<@ba.info>水龙卷伤害视为战技伤害。</>",
+      "shootingDmgMultiplier": "射击伤害倍率",
+      "shotStagger": "射击失衡值",
+      "dmgMultiplier1Waterspout": "单个水龙卷伤害倍率",
+      "waterspoutDurationS": "水龙卷持续时间（秒）",
+      "spReturnPerWhirlpool": "每处涡流技力返还",
+      "artsSusceptibility2Waterspouts": "两个水龙卷法术脆弱",
+      "artsSusceptibility3Waterspouts": "三个水龙卷法术脆弱",
+      "artsSusceptibilityDurationS": "法术脆弱持续时间（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "伤害倍率",
-        "stagger": "失衡值",
-        "whirlpoolDurationS": "涡流持续时间（秒）",
-        "ultimateEnergyGain": "获得终结技能量"
-      },
       "name": "河水，助我！",
-      "description": "当有敌人被施加<#ba.crystinflict>寒冷附着</>或受到<#ba.spellburst>法术爆发</>伤害时可以发动。\n释放一道强力的水流，贯穿前方敌人造成<@ba.cryst>寒冷伤害</>，并迸射出一处<@ba.key>涡流</>。\n<@ba.info>场上最多存在2处涡流。</>"
+      "description": "当有敌人被施加<#ba.crystinflict>寒冷附着</>或受到<#ba.spellburst>法术爆发</>伤害时可以发动。\n释放一道强力的水流，贯穿前方敌人造成<@ba.cryst>寒冷伤害</>，并迸射出一处<@ba.key>涡流</>。\n<@ba.info>场上最多存在2处涡流。</>",
+      "dmgMultiplier": "伤害倍率",
+      "stagger": "失衡值",
+      "whirlpoolDurationS": "涡流持续时间（秒）",
+      "ultimateEnergyGain": "获得终结技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "持续伤害总倍率",
-        "oldenStareDurationS": "古老图形持续时间（秒）",
-        "rogueWaveDmgMultiplier": "巨浪伤害倍率",
-        "earlyRogueWaveDmgMultiplier": "提前降下巨浪伤害倍率",
-        "rogueWaveStagger": "巨浪失衡值",
-        "earlyRogueWaveStagger": "提前降下巨浪失衡值"
-      },
       "name": "大当家盯着呢！",
-      "description": "汤汤揭开眼罩，释放眼中的<@ba.key>古老图形</>封锁范围内的敌人，使其暂停行动一段时间，并造成持续的<@ba.cryst>寒冷伤害</>。\n<@ba.key>古老图形</>演化结束时降下巨浪，对范围内敌人造成大量<@ba.cryst>寒冷伤害</>。\n若主控干员在<@ba.key>古老图形</>中下落攻击，会提前结束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷伤害</>提升。"
+      "description": "汤汤揭开眼罩，释放眼中的<@ba.key>古老图形</>封锁范围内的敌人，使其暂停行动一段时间，并造成持续的<@ba.cryst>寒冷伤害</>。\n<@ba.key>古老图形</>演化结束时降下巨浪，对范围内敌人造成大量<@ba.cryst>寒冷伤害</>。\n若主控干员在<@ba.key>古老图形</>中下落攻击，会提前结束演化降下巨浪，巨浪造成的<@ba.cryst>寒冷伤害</>提升。",
+      "dmgOverTimeTotalMultiplier": "持续伤害总倍率",
+      "oldenStareDurationS": "古老图形持续时间（秒）",
+      "rogueWaveDmgMultiplier": "巨浪伤害倍率",
+      "earlyRogueWaveDmgMultiplier": "提前降下巨浪伤害倍率",
+      "rogueWaveStagger": "巨浪失衡值",
+      "earlyRogueWaveStagger": "提前降下巨浪失衡值"
     },
     "indicator": {
       "levels": [

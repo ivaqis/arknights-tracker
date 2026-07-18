@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Tactiques de base",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "protection": "Protection",
-        "spReturn": "Restitution de PC"
-      },
       "name": "Interdiction formelle",
-      "description": "Lève un bouclier qui peut bloquer des attaques, offrir une <#ba.guard>protection</> à soi-même et aux opérateurs à proximité et <#ba.return>restaurer</> immédiatement quelques PC. \nEn cas d'attaque lorsque le bouclier est levé, permet d'effectuer une contre-attaque qui inflige des <@ba.pd>DÉG physiques</> et applique 1 cumul de <#ba.noguard>Vulnérabilité</> à l'ennemi ciblé."
+      "description": "Lève un bouclier qui peut bloquer des attaques, offrir une <#ba.guard>protection</> à soi-même et aux opérateurs à proximité et <#ba.return>restaurer</> immédiatement quelques PC. \nEn cas d'attaque lorsque le bouclier est levé, permet d'effectuer une contre-attaque qui inflige des <@ba.pd>DÉG physiques</> et applique 1 cumul de <#ba.noguard>Vulnérabilité</> à l'ennemi ciblé.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "protection": "Protection",
+      "spReturn": "Restitution de PC"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "stagger": "Déséquilibre",
-        "baseShield": "Bouclier de base",
-        "shieldIncreasePerDefense": "Augmentation du bouclier par Défense",
-        "shieldDurationS": "Durée de bouclier (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Suppression providentielle",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi commence à charger une compétence ou lorsque l'opérateur contrôlé est attaqué alors que ses PV sont inférieurs à {trigger_hp_ratio:0%}.\nUn puissant coup de poing descendant qui inflige des <@ba.pd>DÉG physiques</> à l'ennemi tout en octroyant des <#ba.shield>boucliers</> à soi-même et à un autre coéquipier (l'opérateur contrôlé est prioritaire).\nLa DÉF peut augmenter davantage les points de bouclier."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi commence à charger une compétence ou lorsque l'opérateur contrôlé est attaqué alors que ses PV sont inférieurs à {trigger_hp_ratio:0%}.\nUn puissant coup de poing descendant qui inflige des <@ba.pd>DÉG physiques</> à l'ennemi tout en octroyant des <#ba.shield>boucliers</> à soi-même et à un autre coéquipier (l'opérateur contrôlé est prioritaire).\nLa DÉF peut augmenter davantage les points de bouclier.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "stagger": "Déséquilibre",
+      "baseShield": "Bouclier de base",
+      "shieldIncreasePerDefense": "Augmentation du bouclier par Défense",
+      "shieldDurationS": "Durée de bouclier (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
-        "seq1Stagger": "Déséquilibre de SÉQ 1",
-        "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
-        "seq2Stagger": "Déséquilibre de SÉQ 2",
-        "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
-        "seq3Stagger": "Déséquilibre de SÉQ 3",
-        "weaknessEffect": "Effet Faiblesse",
-        "weaknessDurationS": "Durée de Faiblesse (s)"
-      },
       "name": "Assaut classique",
-      "description": "Manie l'espadon pour assener 2 coups consécutifs afin d'infliger des <@ba.pd>DÉG physiques</> et d'appliquer <#ba.weak>Faiblesse</>, puis effectue un puissant écrasement qui inflige d'importants <@ba.pd>DÉG physiques</> et <#ba.knockdown>renverse</> tous les ennemis qui se trouvent dans la zone d'effet."
+      "description": "Manie l'espadon pour assener 2 coups consécutifs afin d'infliger des <@ba.pd>DÉG physiques</> et d'appliquer <#ba.weak>Faiblesse</>, puis effectue un puissant écrasement qui inflige d'importants <@ba.pd>DÉG physiques</> et <#ba.knockdown>renverse</> tous les ennemis qui se trouvent dans la zone d'effet.",
+      "seq1DmgMultiplier": "Multiplicateur de DÉG SÉQ 1",
+      "seq1Stagger": "Déséquilibre de SÉQ 1",
+      "seq2DmgMultiplier": "Multiplicateur de DÉG SÉQ 2",
+      "seq2Stagger": "Déséquilibre de SÉQ 2",
+      "seq3DmgMultiplier": "Multiplicateur de DÉG SÉQ 3",
+      "seq3Stagger": "Déséquilibre de SÉQ 3",
+      "weaknessEffect": "Effet Faiblesse",
+      "weaknessDurationS": "Durée de Faiblesse (s)"
     },
     "indicator": {
       "levels": [

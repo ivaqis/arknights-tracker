@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "일반 공격 제1단계 배율",
-        "batkSeq2Multiplier": "일반 공격 제2단계 배율",
-        "batkSeq3Multiplier": "일반 공격 제3단계 배율",
-        "batkSeq4Multiplier": "일반 공격 제4단계 배율",
-        "batkSeq5Multiplier": "일반 공격 제5단계 배율",
-        "finisherAtkMultiplier": "처형 공격 배율",
-        "diveAtkMultiplier": "낙하 공격 배율"
-      },
       "name": "정신 똑바로 차려!",
-      "description": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.cryst>냉기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>{poise:0}</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.cryst>냉기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.cryst>냉기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다."
+      "description": "일반 공격:\n적에게 최대 5단 공격을 하여 <@ba.cryst>냉기 피해</>를 줍니다. 메인 컨트롤 오퍼레이터라면 <#ba.lastcombo>강력한 일격</>이 <@ba.poise>{poise:0}</>포인트의 불균형 피해를 줍니다.\n\n낙하 공격:\n공중에 떴을 때, 일반 공격을 사용하면 낙하하며 주변의 적을 공격하고 <@ba.cryst>냉기 피해</>를 줍니다.\n\n처형 공격:\n주변에 불균형 상태의 적이 있을 때, 일반 공격을 사용하면 해당 적을 처형하여 대량의 <@ba.cryst>냉기 피해</>를 주고 일정량의 스킬 게이지를 회복합니다.",
+      "batkSeq1Multiplier": "일반 공격 제1단계 배율",
+      "batkSeq2Multiplier": "일반 공격 제2단계 배율",
+      "batkSeq3Multiplier": "일반 공격 제3단계 배율",
+      "batkSeq4Multiplier": "일반 공격 제4단계 배율",
+      "batkSeq5Multiplier": "일반 공격 제5단계 배율",
+      "finisherAtkMultiplier": "처형 공격 배율",
+      "diveAtkMultiplier": "낙하 공격 배율"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "사격 피해 배율",
-        "shotStagger": "사격 불균형치",
-        "dmgMultiplier1Waterspout": "단일 용오름 피해 배율",
-        "waterspoutDurationS": "용오름 지속 시간(초)",
-        "spReturnPerWhirlpool": "와류마다 스킬 게이지 반환",
-        "artsSusceptibility2Waterspouts": "용오름 2개일 시 부여하는 아츠 취약",
-        "artsSusceptibility3Waterspouts": "용오름 3개일 시 부여하는 아츠 취약",
-        "artsSusceptibilityDurationS": "아츠 취약 지속 시간(초)"
-      },
       "name": "우당탕탕 파도!",
-      "description": "물속에서 뛰어올라 적에게 근접하여 사격하며 <@ba.cryst>냉기 피해</>를 주고, <@ba.key>용오름</>을 생성합니다.\n동시에 근처의 모든 <@ba.key>와류</>를 소모하여 추가로 <@ba.key>용오름</>을 생성하고, 생성된 개수에 따라 일정량의 스킬 게이지를 <#ba.return>반환</>합니다.\n<@ba.key>용오름</>: 범위 내의 적에게 <#ba.crystinflict>냉기 부착</> 1스택을 부여하고, 지속적으로 <@ba.cryst>냉기 피해</>를 줍니다. 만약 여러 개의 <@ba.key>용오름</>이 생성됐다면 적에게 추가로 <#ba.spellvul>아츠 취약</>을 부여하지만, <#ba.crystinflict>냉기 부착</>이 중복으로 부여되진 않습니다.\n<@ba.info>용오름이 주는 피해는 배틀 스킬의 피해로 간주됩니다.</>"
+      "description": "물속에서 뛰어올라 적에게 근접하여 사격하며 <@ba.cryst>냉기 피해</>를 주고, <@ba.key>용오름</>을 생성합니다.\n동시에 근처의 모든 <@ba.key>와류</>를 소모하여 추가로 <@ba.key>용오름</>을 생성하고, 생성된 개수에 따라 일정량의 스킬 게이지를 <#ba.return>반환</>합니다.\n<@ba.key>용오름</>: 범위 내의 적에게 <#ba.crystinflict>냉기 부착</> 1스택을 부여하고, 지속적으로 <@ba.cryst>냉기 피해</>를 줍니다. 만약 여러 개의 <@ba.key>용오름</>이 생성됐다면 적에게 추가로 <#ba.spellvul>아츠 취약</>을 부여하지만, <#ba.crystinflict>냉기 부착</>이 중복으로 부여되진 않습니다.\n<@ba.info>용오름이 주는 피해는 배틀 스킬의 피해로 간주됩니다.</>",
+      "shootingDmgMultiplier": "사격 피해 배율",
+      "shotStagger": "사격 불균형치",
+      "dmgMultiplier1Waterspout": "단일 용오름 피해 배율",
+      "waterspoutDurationS": "용오름 지속 시간(초)",
+      "spReturnPerWhirlpool": "와류마다 스킬 게이지 반환",
+      "artsSusceptibility2Waterspouts": "용오름 2개일 시 부여하는 아츠 취약",
+      "artsSusceptibility3Waterspouts": "용오름 3개일 시 부여하는 아츠 취약",
+      "artsSusceptibilityDurationS": "아츠 취약 지속 시간(초)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "피해 배율",
-        "stagger": "불균형치",
-        "whirlpoolDurationS": "와류 지속 시간(초)",
-        "ultimateEnergyGain": "획득하는 궁극기 에너지"
-      },
       "name": "야, 강물! 도와줘!",
-      "description": "적이 <#ba.crystinflict>냉기 부착</>을 부여받았거나 <#ba.spellburst>아츠 폭발</> 피해를 받았을 때 사용할 수 있습니다.\n강력한 물줄기를 방출해 전방의 적을 관통하며 <@ba.cryst>냉기 피해</>를 주고, <@ba.key>와류</> 하나를 생성합니다.\n<@ba.info>필드에는 최대 두 개의 와류만 존재할 수 있습니다.</>"
+      "description": "적이 <#ba.crystinflict>냉기 부착</>을 부여받았거나 <#ba.spellburst>아츠 폭발</> 피해를 받았을 때 사용할 수 있습니다.\n강력한 물줄기를 방출해 전방의 적을 관통하며 <@ba.cryst>냉기 피해</>를 주고, <@ba.key>와류</> 하나를 생성합니다.\n<@ba.info>필드에는 최대 두 개의 와류만 존재할 수 있습니다.</>",
+      "dmgMultiplier": "피해 배율",
+      "stagger": "불균형치",
+      "whirlpoolDurationS": "와류 지속 시간(초)",
+      "ultimateEnergyGain": "획득하는 궁극기 에너지"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "지속 피해 총 배율",
-        "oldenStareDurationS": "고대의 진 지속 시간(초)",
-        "rogueWaveDmgMultiplier": "거대한 파도 피해 배율",
-        "earlyRogueWaveDmgMultiplier": "일찍 일으킨 거대한 파도의 피해 배율",
-        "rogueWaveStagger": "거대한 파도의 불균형치",
-        "earlyRogueWaveStagger": "일찍 일으킨 거대한 파도의 불균형치"
-      },
       "name": "대당가께서 지켜보고 계신다!",
-      "description": "탕탕이 안대를 벗어 던지고 눈 속에 깃든 <@ba.key>고대의 진</>을 발동합니다. 범위 내의 적은 일정 시간 동안 움직일 수 없으며, 지속적으로 <@ba.cryst>냉기 피해</>를 받습니다.\n<@ba.key>고대의 진</>은 나타난 직후부터 서서히 변화를 시작해 변화가 끝날 때 거대한 파도를 일으키고 범위 내의 적에게 대량의 <@ba.cryst>냉기 피해</>를 줍니다.\n메인 컨트롤 오퍼레이터가 <@ba.key>고대의 진</> 내에서 낙하 공격을 사용하면, 변화하던 고대의 진이 그 변화를 중단합니다. 이어서 예정보다 일찍 거대한 파도를 일으키고, 이때 파도가 주는 <@ba.cryst>냉기 피해</>가 증가합니다."
+      "description": "탕탕이 안대를 벗어 던지고 눈 속에 깃든 <@ba.key>고대의 진</>을 발동합니다. 범위 내의 적은 일정 시간 동안 움직일 수 없으며, 지속적으로 <@ba.cryst>냉기 피해</>를 받습니다.\n<@ba.key>고대의 진</>은 나타난 직후부터 서서히 변화를 시작해 변화가 끝날 때 거대한 파도를 일으키고 범위 내의 적에게 대량의 <@ba.cryst>냉기 피해</>를 줍니다.\n메인 컨트롤 오퍼레이터가 <@ba.key>고대의 진</> 내에서 낙하 공격을 사용하면, 변화하던 고대의 진이 그 변화를 중단합니다. 이어서 예정보다 일찍 거대한 파도를 일으키고, 이때 파도가 주는 <@ba.cryst>냉기 피해</>가 증가합니다.",
+      "dmgOverTimeTotalMultiplier": "지속 피해 총 배율",
+      "oldenStareDurationS": "고대의 진 지속 시간(초)",
+      "rogueWaveDmgMultiplier": "거대한 파도 피해 배율",
+      "earlyRogueWaveDmgMultiplier": "일찍 일으킨 거대한 파도의 피해 배율",
+      "rogueWaveStagger": "거대한 파도의 불균형치",
+      "earlyRogueWaveStagger": "일찍 일으킨 거대한 파도의 불균형치"
     },
     "indicator": {
       "levels": [

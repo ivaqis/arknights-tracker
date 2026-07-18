@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Schwerttechnik des Sturmangriffs",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "additionalStaggerDealtWhenHit": "Bei Treffer verursachtes zusätzliches Taumeln"
-      },
       "name": "Vorwärts, marsch",
-      "description": "Ein Sprung gefolgt von einem schweren Schlag, der an allen Gegnern in einem fächerförmigen Bereich <@ba.fire>Hitze-SDN</>, <#ba.knockdown>Niederschlag</> und Taumeln verursacht. \nFalls Ember während des Wirkens SDN von Gegnern erleidet, verursacht der Schlag bei einem Treffer mehr Taumeln."
+      "description": "Ein Sprung gefolgt von einem schweren Schlag, der an allen Gegnern in einem fächerförmigen Bereich <@ba.fire>Hitze-SDN</>, <#ba.knockdown>Niederschlag</> und Taumeln verursacht. \nFalls Ember während des Wirkens SDN von Gegnern erleidet, verursacht der Schlag bei einem Treffer mehr Taumeln.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "additionalStaggerDealtWhenHit": "Bei Treffer verursachtes zusätzliches Taumeln"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "baseTreatment": "Grundbehandlung",
-        "treatmentIncreasePerWill": "Behandlungssteigerung pro Wille",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Frontlinien-Unterstützung",
-      "description": "KOMBOAUSLÖSER: Der gesteuerte Operator wird angegriffen. \nSpringt zum Ziel und führt einen schweren Schlag aus, der <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> verursacht und gleichzeitig eine LP-Behandlung beim gesteuerten Operator durchführt. Die Wirksamkeit der LP-Behandlung erhöht sich mit dem Wille-Attribut."
+      "description": "KOMBOAUSLÖSER: Der gesteuerte Operator wird angegriffen. \nSpringt zum Ziel und führt einen schweren Schlag aus, der <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> verursacht und gleichzeitig eine LP-Behandlung beim gesteuerten Operator durchführt. Die Wirksamkeit der LP-Behandlung erhöht sich mit dem Wille-Attribut.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "baseTreatment": "Grundbehandlung",
+      "treatmentIncreasePerWill": "Behandlungssteigerung pro Wille",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "shieldConversionRatioHp": "Schildumwandlungsrate (LP)",
-        "shieldDurationS": "Schilddauer (Sek.)"
-      },
       "name": "Neu entzündeter Eid",
-      "description": "Schlägt auf den Boden und verursacht bei Gegnern in der Nähe <@ba.fire>Hitze-SDN</>. Gleichzeitig erhalten alle Teammitglieder einen <#ba.shield>Schild</>, dessen Wert von den max. LP von Ember abhängig ist."
+      "description": "Schlägt auf den Boden und verursacht bei Gegnern in der Nähe <@ba.fire>Hitze-SDN</>. Gleichzeitig erhalten alle Teammitglieder einen <#ba.shield>Schild</>, dessen Wert von den max. LP von Ember abhängig ist.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "shieldConversionRatioHp": "Schildumwandlungsrate (LP)",
+      "shieldDurationS": "Schilddauer (Sek.)"
     },
     "indicator": {
       "levels": [

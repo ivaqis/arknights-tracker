@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Ruido auditivo",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Onomatopeya",
-      "description": "Una estocada de lanza que dispara una ráfaga de ondas sonoras heladas que infligen <@ba.cryst>DAÑ criogénico</> y aplican <#ba.crystinflict>Imp. crio.</> a todos los enemigos en su trayectoria recta."
+      "description": "Una estocada de lanza que dispara una ráfaga de ondas sonoras heladas que infligen <@ba.cryst>DAÑ criogénico</> y aplican <#ba.crystinflict>Imp. crio.</> a todos los enemigos en su trayectoria recta.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "Multiplicador de DAÑ contra enemigos No solidificados",
-        "dmgMultiplierAgainstSolidifiedEnemies": "Multiplicador de DAÑ contra enemigos Solidificados",
-        "stagger": "Tambaleo",
-        "physicalSusceptibilityMultiplier": "Multiplicador de Suscep. fís.",
-        "physicalSusceptibilityDuration": "Duración de Suscep. fís.",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Distorsión",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.frozen>Solidificación</>. \nSe mueve rápidamente al lado del enemigo para infligir <@ba.pd>DAÑ físico</> y forzar <#ba.airborne>Levantar</> a los enemigos en un área pequeña. Si la habilidad impacta a un objetivo con <#ba.frozen>Solidificación</>, la habilidad inflige DAÑ adicional y aplica <#ba.physicalvul>Suscep. fís.</>."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo sufre <#ba.frozen>Solidificación</>. \nSe mueve rápidamente al lado del enemigo para infligir <@ba.pd>DAÑ físico</> y forzar <#ba.airborne>Levantar</> a los enemigos en un área pequeña. Si la habilidad impacta a un objetivo con <#ba.frozen>Solidificación</>, la habilidad inflige DAÑ adicional y aplica <#ba.physicalvul>Suscep. fís.</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "Multiplicador de DAÑ contra enemigos No solidificados",
+      "dmgMultiplierAgainstSolidifiedEnemies": "Multiplicador de DAÑ contra enemigos Solidificados",
+      "stagger": "Tambaleo",
+      "physicalSusceptibilityMultiplier": "Multiplicador de Suscep. fís.",
+      "physicalSusceptibilityDuration": "Duración de Suscep. fís.",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Trémolo",
-      "description": "Estella gasta todas sus fuerzas para desatar un potente golpe con el asta de la lanza, infligiendo <@ba.pd>DAÑ físico</> a todos los enemigos en un área circular a su alrededor. A los enemigos con <#ba.physicalvul>Suscep. fís.</>, la habilidad les aplica forzosamente <#ba.airborne>Levantar</>."
+      "description": "Estella gasta todas sus fuerzas para desatar un potente golpe con el asta de la lanza, infligiendo <@ba.pd>DAÑ físico</> a todos los enemigos en un área circular a su alrededor. A los enemigos con <#ba.physicalvul>Suscep. fís.</>, la habilidad les aplica forzosamente <#ba.airborne>Levantar</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

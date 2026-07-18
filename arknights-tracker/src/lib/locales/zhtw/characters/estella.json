@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "噪點",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值"
-      },
       "name": "凝聲",
-      "description": "向前刺出長槍，激發出一道製冷聲波，對一條直線上的敵人造成<@ba.cryst>寒冷傷害</>並施加<#ba.crystinflict>寒冷附著</>。"
+      "description": "向前刺出長槍，激發出一道製冷聲波，對一條直線上的敵人造成<@ba.cryst>寒冷傷害</>並施加<#ba.crystinflict>寒冷附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "對非凍結敵人的傷害倍率",
-        "dmgMultiplierAgainstSolidifiedEnemies": "對凍結敵人的傷害倍率",
-        "stagger": "失衡值",
-        "physicalSusceptibilityMultiplier": "物理脆弱倍率",
-        "physicalSusceptibilityDuration": "物理脆弱持續時間",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "失真",
-      "description": "當有敵人進入<#ba.frozen>凍結</>狀態時可以發動。\n迅速移動到敵人身邊，對小範圍內的敵人造成<@ba.pd>物理傷害</>並強制造成<#ba.airborne>擊飛</>。如果命中處於<#ba.frozen>凍結</>狀態的敵人，還會造成額外傷害並施加<#ba.physicalvul>物理脆弱</>。"
+      "description": "當有敵人進入<#ba.frozen>凍結</>狀態時可以發動。\n迅速移動到敵人身邊，對小範圍內的敵人造成<@ba.pd>物理傷害</>並強制造成<#ba.airborne>擊飛</>。如果命中處於<#ba.frozen>凍結</>狀態的敵人，還會造成額外傷害並施加<#ba.physicalvul>物理脆弱</>。",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "對非凍結敵人的傷害倍率",
+      "dmgMultiplierAgainstSolidifiedEnemies": "對凍結敵人的傷害倍率",
+      "stagger": "失衡值",
+      "physicalSusceptibilityMultiplier": "物理脆弱倍率",
+      "physicalSusceptibilityDuration": "物理脆弱持續時間",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值"
-      },
       "name": "震音",
-      "description": "耗盡全身力氣，用力下砸槍柄，對自身附近圓形範圍的敵人造成<@ba.pd>物理傷害</>。如果敵人處於<#ba.physicalvul>物理脆弱</>狀態，則對其強制造成<#ba.airborne>擊飛</>。"
+      "description": "耗盡全身力氣，用力下砸槍柄，對自身附近圓形範圍的敵人造成<@ba.pd>物理傷害</>。如果敵人處於<#ba.physicalvul>物理脆弱</>狀態，則對其強制造成<#ba.airborne>擊飛</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值"
     },
     "indicator": {
       "levels": [

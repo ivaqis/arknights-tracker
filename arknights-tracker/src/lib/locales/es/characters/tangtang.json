@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "¡TE VOY A VOLAR LA CABEZA!",
-      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nEl ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo en estado Tambaleado se convierte en un remate que inflige <@ba.cryst>DAÑ criogénico</> masivo y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque de hasta 5 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como el operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> de Tambaleo. \n\nATAQUE DE INMERSIÓN: \nEl ataque básico realizado en el aire se convierte en un ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo en estado Tambaleado se convierte en un remate que inflige <@ba.cryst>DAÑ criogénico</> masivo y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "batkSeq5Multiplier": "Multiplicador ATQB SEC 5",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Multiplicador de DAÑ de disparo",
-        "shotStagger": "Tambaleo por disparo",
-        "dmgMultiplier1Waterspout": "Multiplicador de DAÑ (1 Tromba marina)",
-        "waterspoutDurationS": "Duración de Tromba marina (s)",
-        "spReturnPerWhirlpool": "Retorno de PH por Remolino",
-        "artsSusceptibility2Waterspouts": "Susceptibilidad a Artes (2 Trombas marinas)",
-        "artsSusceptibility3Waterspouts": "Susceptibilidad a Artes (3 Trombas marinas)",
-        "artsSusceptibilityDurationS": "Duración de Susceptibilidad a Artes (s)"
-      },
       "name": "¡SOY UNA JINETE DE LAS OLAS!",
-      "description": "Tangtang salta fuera del agua y dispara a quemarropa, lo que inflige <@ba.cryst>DAÑ criogénico</> al enemigo y crea una <@ba.key>Tromba marina</>.\nAl lanzar la habilidad de batalla, también consume todos los <@ba.key>Remolinos</> cercanos para crear <@ba.key>Trombas marinas</> adicionales y <#ba.return>regresa</> cierta cantidad de PH según el número de Trombas marinas creadas.\n<@ba.key>Tromba marina</>: aplica 1 acumulación de <#ba.crystinflict>Imposición criogénica</> a los enemigos dentro del alcance e inflige <@ba.cryst>DAÑ criogénico</> continuo. Si la habilidad de batalla crea varias <@ba.key>Trombas marinas</>, estos también aplican <#ba.spellvul>Susceptibilidad a Artes</> a los enemigos (pero no otra acumulación de <#ba.crystinflict>Imposición criogénica</>).\n<@ba.info>El DAÑ infligido por la Tromba marina se considera DAÑ de habilidad de batalla.</>"
+      "description": "Tangtang salta fuera del agua y dispara a quemarropa, lo que inflige <@ba.cryst>DAÑ criogénico</> al enemigo y crea una <@ba.key>Tromba marina</>.\nAl lanzar la habilidad de batalla, también consume todos los <@ba.key>Remolinos</> cercanos para crear <@ba.key>Trombas marinas</> adicionales y <#ba.return>regresa</> cierta cantidad de PH según el número de Trombas marinas creadas.\n<@ba.key>Tromba marina</>: aplica 1 acumulación de <#ba.crystinflict>Imposición criogénica</> a los enemigos dentro del alcance e inflige <@ba.cryst>DAÑ criogénico</> continuo. Si la habilidad de batalla crea varias <@ba.key>Trombas marinas</>, estos también aplican <#ba.spellvul>Susceptibilidad a Artes</> a los enemigos (pero no otra acumulación de <#ba.crystinflict>Imposición criogénica</>).\n<@ba.info>El DAÑ infligido por la Tromba marina se considera DAÑ de habilidad de batalla.</>",
+      "shootingDmgMultiplier": "Multiplicador de DAÑ de disparo",
+      "shotStagger": "Tambaleo por disparo",
+      "dmgMultiplier1Waterspout": "Multiplicador de DAÑ (1 Tromba marina)",
+      "waterspoutDurationS": "Duración de Tromba marina (s)",
+      "spReturnPerWhirlpool": "Retorno de PH por Remolino",
+      "artsSusceptibility2Waterspouts": "Susceptibilidad a Artes (2 Trombas marinas)",
+      "artsSusceptibility3Waterspouts": "Susceptibilidad a Artes (3 Trombas marinas)",
+      "artsSusceptibilityDurationS": "Duración de Susceptibilidad a Artes (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "whirlpoolDurationS": "Duración de Remolino (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "¡RÍO, VEN A MÍ!",
-      "description": "ACTIVADOR DE COMBO: Al aplicar <#ba.crystinflict>Imposición criogénica</> o infligir <#ba.spellburst>DAÑ por Ráfaga de artes</> a un enemigo.\nTangtang desata un potente chorro que atraviesa a todos los enemigos en su trayectoria, les inflige <@ba.cryst>DAÑ criogénico</> y crea un <@ba.key>Remolino</>.\n<@ba.info>Pueden existir hasta 2 Remolinos en el campo de batalla al mismo tiempo.</>"
+      "description": "ACTIVADOR DE COMBO: Al aplicar <#ba.crystinflict>Imposición criogénica</> o infligir <#ba.spellburst>DAÑ por Ráfaga de artes</> a un enemigo.\nTangtang desata un potente chorro que atraviesa a todos los enemigos en su trayectoria, les inflige <@ba.cryst>DAÑ criogénico</> y crea un <@ba.key>Remolino</>.\n<@ba.info>Pueden existir hasta 2 Remolinos en el campo de batalla al mismo tiempo.</>",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "whirlpoolDurationS": "Duración de Remolino (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Multiplicador total de tiempo de DAÑ continuo",
-        "oldenStareDurationS": "Duración de MIRADA ANCESTRAL (s)",
-        "rogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera",
-        "earlyRogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera temprana",
-        "rogueWaveStagger": "Tambaleo por Ola traicionera",
-        "earlyRogueWaveStagger": "Tambaleo por Ola traicionera temprana"
-      },
       "name": "¡LA JEFA TE TIENE EN LA MIRA!",
-      "description": "Tangtang abre su parche y desata una <@ba.key>MIRADA ANCESTRAL</> desde su ojo que bloquea temporalmente, inmoviliza e inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos dentro de su área de efecto.\nCuando <@ba.key>MIRADA ANCESTRAL</> deja de evolucionar, una ola traicionera se desploma para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en su área de efecto.\nSi el operador controlado realiza un ataque de inmersión en el patrón de <@ba.key>MIRADA ANCESTRAL</>, su evolución termina y la ola traicionera se invoca de inmediato para infligir todavía más <@ba.cryst>DAÑ criogénico</>."
+      "description": "Tangtang abre su parche y desata una <@ba.key>MIRADA ANCESTRAL</> desde su ojo que bloquea temporalmente, inmoviliza e inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos dentro de su área de efecto.\nCuando <@ba.key>MIRADA ANCESTRAL</> deja de evolucionar, una ola traicionera se desploma para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en su área de efecto.\nSi el operador controlado realiza un ataque de inmersión en el patrón de <@ba.key>MIRADA ANCESTRAL</>, su evolución termina y la ola traicionera se invoca de inmediato para infligir todavía más <@ba.cryst>DAÑ criogénico</>.",
+      "dmgOverTimeTotalMultiplier": "Multiplicador total de tiempo de DAÑ continuo",
+      "oldenStareDurationS": "Duración de MIRADA ANCESTRAL (s)",
+      "rogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera",
+      "earlyRogueWaveDmgMultiplier": "Multiplicador de DAÑ de Ola traicionera temprana",
+      "rogueWaveStagger": "Tambaleo por Ola traicionera",
+      "earlyRogueWaveStagger": "Tambaleo por Ola traicionera temprana"
     },
     "indicator": {
       "levels": [

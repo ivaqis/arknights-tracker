@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Son audio",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 4 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Onomatopée",
-      "description": "Un coup de lance qui tire des ondes sonores cryogéniques. Celles-ci infligent des <@ba.cryst>DÉG cryogéniques</> et appliquent une <#ba.crystinflict>altération cryogénique</> à tous les ennemis qui se trouvent droit devant."
+      "description": "Un coup de lance qui tire des ondes sonores cryogéniques. Celles-ci infligent des <@ba.cryst>DÉG cryogéniques</> et appliquent une <#ba.crystinflict>altération cryogénique</> à tous les ennemis qui se trouvent droit devant.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "Multiplicateur de DÉG contre les ennemis non solidifiés",
-        "dmgMultiplierAgainstSolidifiedEnemies": "Multiplicateur de DÉG contre les ennemis solidifiés",
-        "stagger": "Déséquilibre",
-        "physicalSusceptibilityMultiplier": "Multiplicateur de sensibilité physique",
-        "physicalSusceptibilityDuration": "Durée de sensibilité physique",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Distorsion",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.frozen>solidifié</>.\nPermet de se placer rapidement aux côtés de l'ennemi pour infliger des <@ba.pd>DÉG physiques</> et <#ba.airborne>soulever</> de force les ennemis dans une petite zone. Si la compétence touche une cible <#ba.frozen>solidifiée</>, elle inflige des DÉG supplémentaires et applique une <#ba.physicalvul>sensibilité physique</>."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un ennemi est <#ba.frozen>solidifié</>.\nPermet de se placer rapidement aux côtés de l'ennemi pour infliger des <@ba.pd>DÉG physiques</> et <#ba.airborne>soulever</> de force les ennemis dans une petite zone. Si la compétence touche une cible <#ba.frozen>solidifiée</>, elle inflige des DÉG supplémentaires et applique une <#ba.physicalvul>sensibilité physique</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "Multiplicateur de DÉG contre les ennemis non solidifiés",
+      "dmgMultiplierAgainstSolidifiedEnemies": "Multiplicateur de DÉG contre les ennemis solidifiés",
+      "stagger": "Déséquilibre",
+      "physicalSusceptibilityMultiplier": "Multiplicateur de sensibilité physique",
+      "physicalSusceptibilityDuration": "Durée de sensibilité physique",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre"
-      },
       "name": "Trémolo",
-      "description": "Estella déchaîne toute sa puissance pour effectuer une puissante attaque écrasante à l'aide du manche de sa lance, infligeant des <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone circulaire autour d'elle. La compétence <#ba.airborne>soulève</> de force tous les ennemis victimes de <#ba.physicalvul>sensibilité physique</>."
+      "description": "Estella déchaîne toute sa puissance pour effectuer une puissante attaque écrasante à l'aide du manche de sa lance, infligeant des <@ba.pd>DÉG physiques</> à tous les ennemis dans une zone circulaire autour d'elle. La compétence <#ba.airborne>soulève</> de force tous les ennemis victimes de <#ba.physicalvul>sensibilité physique</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre"
     },
     "indicator": {
       "levels": [

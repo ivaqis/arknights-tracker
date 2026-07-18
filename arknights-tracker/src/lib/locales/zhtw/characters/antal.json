@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "交換電流",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pulse>電磁傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pulse>電磁傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pulse>電磁傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.pulse>電磁傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pulse>電磁傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pulse>電磁傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "durationS": "持續時間（秒）",
-        "electricSusceptibility": "電磁脆弱效果",
-        "heatSusceptibility": "灼熱脆弱效果"
-      },
       "name": "指定研究對象",
-      "description": "對敵人施加長時間<@ba.key>聚焦</>，造成<@ba.pulse>電磁傷害</>，被<@ba.key>聚焦</>的敵人受到<#ba.pulsevul>電磁脆弱</>和<#ba.firevul>灼熱脆弱</>，同時最多<@ba.key>聚焦</>1個敵人。"
+      "description": "對敵人施加長時間<@ba.key>聚焦</>，造成<@ba.pulse>電磁傷害</>，被<@ba.key>聚焦</>的敵人受到<#ba.pulsevul>電磁脆弱</>和<#ba.firevul>灼熱脆弱</>，同時最多<@ba.key>聚焦</>1個敵人。",
+      "dmgMultiplier": "傷害倍率",
+      "durationS": "持續時間（秒）",
+      "electricSusceptibility": "電磁脆弱效果",
+      "heatSusceptibility": "灼熱脆弱效果"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "磁暴實驗場",
-      "description": "當被<@ba.key>聚焦</>的敵人進入<#ba.physicalstatus>物理異常</>或<#ba.spellinflict>法術附著</>狀態時可以發動。\n在該敵人身上引發1次能量爆炸，造成<@ba.pulse>電磁傷害</>並再次對其施加該<#ba.physicalstatus>物理異常</>或<#ba.spellinflict>法術附著</>。"
+      "description": "當被<@ba.key>聚焦</>的敵人進入<#ba.physicalstatus>物理異常</>或<#ba.spellinflict>法術附著</>狀態時可以發動。\n在該敵人身上引發1次能量爆炸，造成<@ba.pulse>電磁傷害</>並再次對其施加該<#ba.physicalstatus>物理異常</>或<#ba.spellinflict>法術附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "電磁增幅效果",
-        "heatAmp": "灼熱增幅效果",
-        "durationS": "持續時間（秒）"
-      },
       "name": "超頻時刻",
-      "description": "對全隊施加一段時間的<#ba.pulseenhance>電磁增幅</>和<#ba.fireenhance>灼熱增幅</>。"
+      "description": "對全隊施加一段時間的<#ba.pulseenhance>電磁增幅</>和<#ba.fireenhance>灼熱增幅</>。",
+      "electricAmp": "電磁增幅效果",
+      "heatAmp": "灼熱增幅效果",
+      "durationS": "持續時間（秒）"
     },
     "indicator": {
       "levels": [

@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
-        "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
-        "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
-        "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
-        "finisherAtkMultiplier": "終撃ダメージ倍率",
-        "diveAtkMultiplier": "落下攻撃ダメージ倍率"
-      },
       "name": "多重連射",
-      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.fire>灼熱ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.fire>灼熱ダメージ</>を与えてSPを一定量回復する。"
+      "description": "通常攻撃：\n最大4段の攻撃で敵に<@ba.fire>灼熱ダメージ</>を与える。操作中のオペレーターの場合、<#ba.lastcombo>重攻撃</>はブレイク値<@ba.poise>{poise:0}</>を与える。\n\n落下攻撃：\n空中で通常攻撃を使用すると、落下して周囲の敵に<@ba.fire>灼熱ダメージ</>を与える。\n\n終撃：\n近くにブレイク状態の敵がいるときに通常攻撃を使用すると、その敵に終撃を行い、高い<@ba.fire>灼熱ダメージ</>を与えてSPを一定量回復する。",
+      "batkSeq1Multiplier": "通常攻撃1段目ダメージ倍率",
+      "batkSeq2Multiplier": "通常攻撃2段目ダメージ倍率",
+      "batkSeq3Multiplier": "通常攻撃3段目ダメージ倍率",
+      "batkSeq4Multiplier": "通常攻撃4段目ダメージ倍率",
+      "finisherAtkMultiplier": "終撃ダメージ倍率",
+      "diveAtkMultiplier": "落下攻撃ダメージ倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "additionalAtkDmgMultiplier": "追加ダメージ倍率",
-        "additionalAtkStagger": "追加ブレイク値"
-      },
       "name": "灼熱の弾痕",
-      "description": "連射攻撃により、わずかな<@ba.fire>灼熱ダメージ</>を与え、最後の一撃で<#ba.fireinflict>灼熱付着</>を付与する。ただし、敵が<#ba.burning>燃焼</>または<#ba.conduct>感電</>状態の場合、<#ba.fireinflict>灼熱付着</>は付与されず、その状態を<#ba.consume>消費</>して追加で1回射撃を行い、高い<@ba.fire>灼熱ダメージ</>を与える。"
+      "description": "連射攻撃により、わずかな<@ba.fire>灼熱ダメージ</>を与え、最後の一撃で<#ba.fireinflict>灼熱付着</>を付与する。ただし、敵が<#ba.burning>燃焼</>または<#ba.conduct>感電</>状態の場合、<#ba.fireinflict>灼熱付着</>は付与されず、その状態を<#ba.consume>消費</>して追加で1回射撃を行い、高い<@ba.fire>灼熱ダメージ</>を与える。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "additionalAtkDmgMultiplier": "追加ダメージ倍率",
+      "additionalAtkStagger": "追加ブレイク値"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "ダメージ倍率",
-        "stagger": "ブレイク値",
-        "ultimateEnergyGain": "必殺チャージ回復量"
-      },
       "name": "フラググレネード・β",
-      "description": "敵に<#ba.spellinflict>アーツ付着</>が付与されたときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。"
+      "description": "敵に<#ba.spellinflict>アーツ付着</>が付与されたときに発動可能。\n目標位置にフラググレネードを投げ、地面に落下すると爆発する。範囲内の敵に<@ba.fire>灼熱ダメージ</>を与え、<#ba.fireinflict>灼熱付着</>を付与する。",
+      "dmgMultiplier": "ダメージ倍率",
+      "stagger": "ブレイク値",
+      "ultimateEnergyGain": "必殺チャージ回復量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "1段ごとのダメージ倍率",
-        "stagger": "ブレイク値"
-      },
       "name": "狼の怒り",
-      "description": "すばやく射撃し、<@ba.key>狼の怒り</>を放って周囲の敵を攻撃する。5回の<@ba.fire>灼熱ダメージ</>を与え、強制的に<#ba.burning>燃焼</>状態にする。"
+      "description": "すばやく射撃し、<@ba.key>狼の怒り</>を放って周囲の敵を攻撃する。5回の<@ba.fire>灼熱ダメージ</>を与え、強制的に<#ba.burning>燃焼</>状態にする。",
+      "dmgMultiplierPerSeq": "1段ごとのダメージ倍率",
+      "stagger": "ブレイク値"
     },
     "indicator": {
       "levels": [

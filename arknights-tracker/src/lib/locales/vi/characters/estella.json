@@ -27,44 +27,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Nhiễu Âm",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Tượng Thanh",
-      "description": "Một cú đâm giáo phóng luồng sóng âm băng giá theo đường thẳng, gây <@ba.cryst>ST Băng</> và gây <#ba.crystinflict>Nhiễm Băng</> cho mọi kẻ địch trên quỹ đạo."
+      "description": "Một cú đâm giáo phóng luồng sóng âm băng giá theo đường thẳng, gây <@ba.cryst>ST Băng</> và gây <#ba.crystinflict>Nhiễm Băng</> cho mọi kẻ địch trên quỹ đạo.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplierAgainstNonsolidifiedEnemies": "Hệ Số ST Đối Với Kẻ Địch Chưa Dính Đông Cứng",
-        "dmgMultiplierAgainstSolidifiedEnemies": "Hệ Số ST Đối Với Kẻ Địch Dính Đông Cứng",
-        "stagger": "Suy Sụp",
-        "physicalSusceptibilityMultiplier": "Hệ Số Nhân Yếu Hóa Vật Lý",
-        "physicalSusceptibilityDuration": "Thời Gian Hiệu Lực Yếu Hóa Vật Lý",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Nhiễu Dạng",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch chịu <#ba.frozen>Đông Cứng</>. \nLướt áp sát mục tiêu gây <@ba.pd>ST Vật Lý</> và cưỡng bức <#ba.airborne>Hất Tung</> kẻ địch trong một vùng nhỏ. Nếu đánh trúng mục tiêu đang có <#ba.frozen>Đông Cứng</>, kỹ năng gây thêm ST và áp dụng hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</>."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch chịu <#ba.frozen>Đông Cứng</>. \nLướt áp sát mục tiêu gây <@ba.pd>ST Vật Lý</> và cưỡng bức <#ba.airborne>Hất Tung</> kẻ địch trong một vùng nhỏ. Nếu đánh trúng mục tiêu đang có <#ba.frozen>Đông Cứng</>, kỹ năng gây thêm ST và áp dụng hiệu ứng <#ba.physicalvul>Yếu Hóa Vật Lý</>.",
+      "dmgMultiplierAgainstNonsolidifiedEnemies": "Hệ Số ST Đối Với Kẻ Địch Chưa Dính Đông Cứng",
+      "dmgMultiplierAgainstSolidifiedEnemies": "Hệ Số ST Đối Với Kẻ Địch Dính Đông Cứng",
+      "stagger": "Suy Sụp",
+      "physicalSusceptibilityMultiplier": "Hệ Số Nhân Yếu Hóa Vật Lý",
+      "physicalSusceptibilityDuration": "Thời Gian Hiệu Lực Yếu Hóa Vật Lý",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp"
-      },
       "name": "Ngân Rung",
-      "description": "Estella dồn toàn lực nện mạnh bằng cán thương, gây <@ba.pd>ST Vật Lý</> theo vòng tròn quanh bản thân. Với kẻ địch đang có <#ba.physicalvul>Yếu Hóa Vật Lý</>, kỹ năng sẽ cưỡng bức áp dụng hiệu ứng <#ba.airborne>Hất Tung</> lên kẻ địch đó."
+      "description": "Estella dồn toàn lực nện mạnh bằng cán thương, gây <@ba.pd>ST Vật Lý</> theo vòng tròn quanh bản thân. Với kẻ địch đang có <#ba.physicalvul>Yếu Hóa Vật Lý</>, kỹ năng sẽ cưỡng bức áp dụng hiệu ứng <#ba.airborne>Hất Tung</> lên kẻ địch đó.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp"
     },
     "indicator": {
       "levels": [

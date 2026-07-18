@@ -18,45 +18,37 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Destructive Sequence",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Constructive Sequence",
-      "description": "Serangan beruntun kuat dengan Originium Arts yang akan menyerang musuh dalam area efek. Menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.crush>Crush</>."
+      "description": "Serangan beruntun kuat dengan Originium Arts yang akan menyerang musuh dalam area efek. Menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.crush>Crush</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "crystalShatteringDmgMultiplier": "Pengganda DMG Pemecahan Kristal",
-        "stagger": "Stagger",
-        "sealDurationS": "Durasi Seal (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Sealing Sequence",
-      "description": "PEMICU KOMBO: Saat operator lain dalam tim menimbulkan DMG dengan skill kombo. \nBergegas lari ke arah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memasang <#ba.originium>Kristal Originium</> yang akan menyegelnya untuk sementara. <#ba.physicalstatus>Status Fisik</> atau <#ba.noguard>Vulnerability</> yang diakibatkan kepada musuh yang disegel akan <#ba.consume>memakai</> <#ba.originium>Kristal Originium</> itu dan menimbulkan <@ba.pd>Physical DMG</> tambahan."
+      "description": "PEMICU KOMBO: Saat operator lain dalam tim menimbulkan DMG dengan skill kombo. \nBergegas lari ke arah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan memasang <#ba.originium>Kristal Originium</> yang akan menyegelnya untuk sementara. <#ba.physicalstatus>Status Fisik</> atau <#ba.noguard>Vulnerability</> yang diakibatkan kepada musuh yang disegel akan <#ba.consume>memakai</> <#ba.originium>Kristal Originium</> itu dan menimbulkan <@ba.pd>Physical DMG</> tambahan.",
+      "dmgMultiplier": "Pengganda DMG",
+      "crystalShatteringDmgMultiplier": "Pengganda DMG Pemecahan Kristal",
+      "stagger": "Stagger",
+      "sealDurationS": "Durasi Seal (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "bonusDmgMultiplier": "Pengganda Bonus DMG",
-        "stagger": "Stagger"
-      },
       "name": "Bombardment Sequence",
-      "description": "Membombardir tanah dengan Originium Arts sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar kepada semua musuh dalam area berbentuk kipas. Jika ada <#ba.originium>Kristal Originium</> pada musuh, skill ini akan <#ba.consume>memakai</> <#ba.originium>Kristal Originium</> itu dan menimbulkan satu hantaman <@ba.pd>Physical DMG</> lagi."
+      "description": "Membombardir tanah dengan Originium Arts sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar kepada semua musuh dalam area berbentuk kipas. Jika ada <#ba.originium>Kristal Originium</> pada musuh, skill ini akan <#ba.consume>memakai</> <#ba.originium>Kristal Originium</> itu dan menimbulkan satu hantaman <@ba.pd>Physical DMG</> lagi.",
+      "dmgMultiplier": "Pengganda DMG",
+      "bonusDmgMultiplier": "Pengganda Bonus DMG",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

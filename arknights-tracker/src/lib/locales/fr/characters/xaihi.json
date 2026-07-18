@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
-        "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Refroidissement",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 5 séquences qui inflige des <@ba.cryst>DÉG cryogéniques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois.\n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.cryst>DÉG cryogéniques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.cryst>DÉG cryogéniques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "batkSeq4Multiplier": "Multiplicateur d'ATQ-B SÉQ 4",
+      "batkSeq5Multiplier": "Multiplicateur d'ATQ-B SÉQ 5",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "Soins de base",
-        "treatmentIncreasePerWill": "Augmentation des soins par Volonté",
-        "auxiliaryCrystalDurationS": "Durée du cristal auxiliaire (s)",
-        "artsAmp": "Amplification des Arts",
-        "artsAmpDurationS": "Durée de l'amplification des Arts (s)"
-      },
       "name": "Déni de service",
-      "description": "Invoque un <@ba.key>cristal auxiliaire</> qui tourne autour de l'opérateur contrôlé pendant un moment. \nLorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur l'ennemi, le <@ba.key>cristal auxiliaire</> lui permet de récupérer des PV. Cet effet peut se déclencher 2 fois. Le trait Volonté augmente la quantité de PV soignés. \nLorsque les PV de l'opérateur contrôlé sont déjà au max. lors du déclenchement de l'effet de régénération de PV, celui-ci se voit également octroyer une <#ba.spellenhance>amplification des Arts</> temporaire. L'effet ne peut pas être cumulé."
+      "description": "Invoque un <@ba.key>cristal auxiliaire</> qui tourne autour de l'opérateur contrôlé pendant un moment. \nLorsque l'opérateur contrôlé exécute un <#ba.lastcombo>Coup final</> sur l'ennemi, le <@ba.key>cristal auxiliaire</> lui permet de récupérer des PV. Cet effet peut se déclencher 2 fois. Le trait Volonté augmente la quantité de PV soignés. \nLorsque les PV de l'opérateur contrôlé sont déjà au max. lors du déclenchement de l'effet de régénération de PV, celui-ci se voit également octroyer une <#ba.spellenhance>amplification des Arts</> temporaire. L'effet ne peut pas être cumulé.",
+      "baseTreatment": "Soins de base",
+      "treatmentIncreasePerWill": "Augmentation des soins par Volonté",
+      "auxiliaryCrystalDurationS": "Durée du cristal auxiliaire (s)",
+      "artsAmp": "Amplification des Arts",
+      "artsAmpDurationS": "Durée de l'amplification des Arts (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Mise à l'épreuve",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsque le <@ba.key>cristal auxiliaire</> a épuisé ses soins. \nCharge rapidement le <@ba.key>cristal auxiliaire</> et le projette sur l'ennemi pour lui infliger des <@ba.cryst>DÉG cryogéniques</> et appliquer une <#ba.crystinflict>altération cryogénique</>."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsque le <@ba.key>cristal auxiliaire</> a épuisé ses soins. \nCharge rapidement le <@ba.key>cristal auxiliaire</> et le projette sur l'ennemi pour lui infliger des <@ba.cryst>DÉG cryogéniques</> et appliquer une <#ba.crystinflict>altération cryogénique</>.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "Amplification cryogénique de base",
-        "baseNatureAmp": "Amplification naturelle de base",
-        "ampIncreasePerIntellect": "Augmentation de l'amplification par Intelligence",
-        "intellectRaisesAmpLimit": "L'Intelligence augmente la limite d'amplification.",
-        "durationS": "Durée (s)"
-      },
       "name": "Dépassement de pile",
-      "description": "Octroie une <#ba.crystenhance>amplification cryogénique</> et une <#ba.naturalenhance>amplification naturelle</> à l'équipe tout entière. Le trait Intelligence augmente l'effet de l'amplification."
+      "description": "Octroie une <#ba.crystenhance>amplification cryogénique</> et une <#ba.naturalenhance>amplification naturelle</> à l'équipe tout entière. Le trait Intelligence augmente l'effet de l'amplification.",
+      "baseCryoAmp": "Amplification cryogénique de base",
+      "baseNatureAmp": "Amplification naturelle de base",
+      "ampIncreasePerIntellect": "Augmentation de l'amplification par Intelligence",
+      "intellectRaisesAmpLimit": "L'Intelligence augmente la limite d'amplification.",
+      "durationS": "Durée (s)"
     },
     "indicator": {
       "levels": [

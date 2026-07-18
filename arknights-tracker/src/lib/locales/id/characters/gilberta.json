@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Arcane Staff: Beam Cohesion Arts",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.natur>Nature DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.natur>Nature DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.natur>Nature DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "gravityPullDmgMultiplier": "Pengganda DMG Tarikan Gravitasi",
-        "explosionDmgMultiplier": "Pengganda DMG Ledakan",
-        "explosionStagger": "Stagger Ledakan"
-      },
       "name": "Arcane Staff: Gravity Mode",
-      "description": "Memulai penyaluran Arts yang akan memunculkan <@ba.key>sumur gravitasi</>. <@ba.key>Sumur gravitasi</> ini akan menarik musuh di sekitar dan menimbulkan <@ba.natur>Nature DMG</> kepada mereka. Setelah penyaluran, <@ba.key>sumur gravitasi</> akan melesak ke dalam dan menimbulkan <@ba.natur>Nature DMG</> serta <#ba.naturalinflict>Nature Inflict</> kepada musuh dalam area efek."
+      "description": "Memulai penyaluran Arts yang akan memunculkan <@ba.key>sumur gravitasi</>. <@ba.key>Sumur gravitasi</> ini akan menarik musuh di sekitar dan menimbulkan <@ba.natur>Nature DMG</> kepada mereka. Setelah penyaluran, <@ba.key>sumur gravitasi</> akan melesak ke dalam dan menimbulkan <@ba.natur>Nature DMG</> serta <#ba.naturalinflict>Nature Inflict</> kepada musuh dalam area efek.",
+      "gravityPullDmgMultiplier": "Pengganda DMG Tarikan Gravitasi",
+      "explosionDmgMultiplier": "Pengganda DMG Ledakan",
+      "explosionStagger": "Stagger Ledakan"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Arcane Staff: Matrix Displacement",
-      "description": "PEMICU KOMBO: Saat mengakibatkan <#ba.spellstatus>Arts Reaction</> kepada musuh. \nMenggunakan Arts secara cepat yang akan menghasilkan tarikan gravitasi, lalu menimbulkan <@ba.natur>Nature DMG</> dan secara paksa mengakibatkan <#ba.airborne>Lift</> kepada target dan musuh di sekitar."
+      "description": "PEMICU KOMBO: Saat mengakibatkan <#ba.spellstatus>Arts Reaction</> kepada musuh. \nMenggunakan Arts secara cepat yang akan menghasilkan tarikan gravitasi, lalu menimbulkan <@ba.natur>Nature DMG</> dan secara paksa mengakibatkan <#ba.airborne>Lift</> kepada target dan musuh di sekitar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "fieldDurationS": "Durasi Medan (dtk)",
-        "slowEffect": "Efek Slow",
-        "baseArtsSusceptibility": "Arts Susceptibility Dasar",
-        "artsSusceptibilityIncreasePerVulnerabilityStack": "Peningkatan Arts Susceptibility per Tumpuk Vulnerability"
-      },
       "name": "Arcane Staff: Gravity Field",
-      "description": "Memunculkan <@ba.key>Medan Gravitasi Anomali</> yang akan langsung menimbulkan 1 hantaman <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Inflict</> kepada musuh yang terperangkap di dalam medan itu. Target di dalam <@ba.key>Medan Gravitasi Anomali</> juga akan terkena efek <#ba.slow>Slow</> dan <#ba.spellvul>Arts Suscept</>. Efek <#ba.spellvul>Arts Suscept</> akan makin meningkat sesuai dengan jumlah tumpukan <#ba.noguard>Vulnerability</> yang aktif pada target. \n<@ba.info>Jika target di dalam medan terkena Lifted, status Lifted akan tetap bertahan hingga medan itu habis.</>"
+      "description": "Memunculkan <@ba.key>Medan Gravitasi Anomali</> yang akan langsung menimbulkan 1 hantaman <@ba.natur>Nature DMG</> dan mengakibatkan <#ba.naturalinflict>Nature Inflict</> kepada musuh yang terperangkap di dalam medan itu. Target di dalam <@ba.key>Medan Gravitasi Anomali</> juga akan terkena efek <#ba.slow>Slow</> dan <#ba.spellvul>Arts Suscept</>. Efek <#ba.spellvul>Arts Suscept</> akan makin meningkat sesuai dengan jumlah tumpukan <#ba.noguard>Vulnerability</> yang aktif pada target. \n<@ba.info>Jika target di dalam medan terkena Lifted, status Lifted akan tetap bertahan hingga medan itu habis.</>",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "fieldDurationS": "Durasi Medan (dtk)",
+      "slowEffect": "Efek Slow",
+      "baseArtsSusceptibility": "Arts Susceptibility Dasar",
+      "artsSusceptibilityIncreasePerVulnerabilityStack": "Peningkatan Arts Susceptibility per Tumpuk Vulnerability"
     },
     "indicator": {
       "levels": [

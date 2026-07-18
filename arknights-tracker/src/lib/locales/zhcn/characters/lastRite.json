@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "处决攻击倍率",
-        "diveAtkMultiplier": "下落攻击倍率"
-      },
       "name": "严霜之舞",
-      "description": "普通攻击：\n对敌人进行至多4段攻击，造成<@ba.cryst>寒冷伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.cryst>寒冷伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.cryst>寒冷伤害</>并恢复一定技力。"
+      "description": "普通攻击：\n对敌人进行至多4段攻击，造成<@ba.cryst>寒冷伤害</>。作为主控干员时，<#ba.lastcombo>重击</>会造成<@ba.poise>{poise:0}</>点失衡。\n\n下落攻击：\n处于空中时使用普通攻击，会下落并攻击附近敌人，造成<@ba.cryst>寒冷伤害</>。\n\n处决攻击：\n附近有敌人处于失衡状态时使用普通攻击，将处决该敌人，造成大量<@ba.cryst>寒冷伤害</>并恢复一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "处决攻击倍率",
+      "diveAtkMultiplier": "下落攻击倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "幻影追击伤害倍率",
-        "spReturn": "返还技力",
-        "durationS": "持续时间（秒）",
-        "ultimateEnergyGain": "获得终结技能量"
-      },
       "name": "塞什卡的秘传",
-      "description": "对主控干员的武器进行<@ba.key>低温灌注</>，并<#ba.return>返还</>一定技力。\n一段时间内，当前主控干员接下来的1次<#ba.lastcombo>重击</>会生成别礼的幻影，对目标进行追击，造成<@ba.cryst>寒冷伤害</>，施加<#ba.crystinflict>寒冷附着</>。\n主控干员为别礼时，施放该战技不会中断普通攻击。"
+      "description": "对主控干员的武器进行<@ba.key>低温灌注</>，并<#ba.return>返还</>一定技力。\n一段时间内，当前主控干员接下来的1次<#ba.lastcombo>重击</>会生成别礼的幻影，对目标进行追击，造成<@ba.cryst>寒冷伤害</>，施加<#ba.crystinflict>寒冷附着</>。\n主控干员为别礼时，施放该战技不会中断普通攻击。",
+      "mirageAdditionalAtkDmgMultiplier": "幻影追击伤害倍率",
+      "spReturn": "返还技力",
+      "durationS": "持续时间（秒）",
+      "ultimateEnergyGain": "获得终结技能量"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "冰刺伤害倍率",
-        "slashBaseDmgMultiplier": "斩击基础伤害倍率",
-        "slashStagger": "斩击失衡值",
-        "bonusDmgMultiplierPerInflictionStack": "消耗每层附着额外伤害倍率",
-        "baseUltimateEnergyGain": "基础获得终结技能量",
-        "additionalUltimateEnergyGainPerInflictionStack": "消耗每层附着额外获得终结技能量"
-      },
       "name": "噬冬",
-      "description": "当有敌人进入{count:0}层及以上<#ba.crystinflict>寒冷附着</>状态时可以发动。\n在目标敌人身上凝结冰锥，随后将其斩碎，<#ba.consume>消耗</>敌人身上的所有<#ba.crystinflict>寒冷附着</>，对其造成基于其<#ba.crystinflict>寒冷附着</>层数的<@ba.cryst>寒冷伤害</>，并且根据<#ba.consume>消耗</>的层数获得终结技能量。"
+      "description": "当有敌人进入{count:0}层及以上<#ba.crystinflict>寒冷附着</>状态时可以发动。\n在目标敌人身上凝结冰锥，随后将其斩碎，<#ba.consume>消耗</>敌人身上的所有<#ba.crystinflict>寒冷附着</>，对其造成基于其<#ba.crystinflict>寒冷附着</>层数的<@ba.cryst>寒冷伤害</>，并且根据<#ba.consume>消耗</>的层数获得终结技能量。",
+      "iceShardDmgMultiplier": "冰刺伤害倍率",
+      "slashBaseDmgMultiplier": "斩击基础伤害倍率",
+      "slashStagger": "斩击失衡值",
+      "bonusDmgMultiplierPerInflictionStack": "消耗每层附着额外伤害倍率",
+      "baseUltimateEnergyGain": "基础获得终结技能量",
+      "additionalUltimateEnergyGainPerInflictionStack": "消耗每层附着额外获得终结技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "第一段伤害倍率",
-        "seq1Stagger": "第一段失衡值",
-        "seq2DmgMultiplier": "第二段伤害倍率",
-        "seq2Stagger": "第二段失衡值",
-        "seq3DmgMultiplier": "第三段伤害倍率",
-        "seq3Stagger": "第三段失衡值"
-      },
       "name": "临终别礼",
-      "description": "披着霜铠，凝结冰镰，对前方进行三次斩击，该状态下免疫所有伤害。\n每次斩击造成大量<@ba.cryst>寒冷伤害</>。\n<@ba.info>别礼只能从自身的战技、连携技中获得终结技能量。</>"
+      "description": "披着霜铠，凝结冰镰，对前方进行三次斩击，该状态下免疫所有伤害。\n每次斩击造成大量<@ba.cryst>寒冷伤害</>。\n<@ba.info>别礼只能从自身的战技、连携技中获得终结技能量。</>",
+      "seq1DmgMultiplier": "第一段伤害倍率",
+      "seq1Stagger": "第一段失衡值",
+      "seq2DmgMultiplier": "第二段伤害倍率",
+      "seq2Stagger": "第二段失衡值",
+      "seq3DmgMultiplier": "第三段伤害倍率",
+      "seq3Stagger": "第三段失衡值"
     },
     "indicator": {
       "levels": [

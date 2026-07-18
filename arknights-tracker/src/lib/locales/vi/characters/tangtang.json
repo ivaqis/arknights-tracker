@@ -26,53 +26,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "CHOÁNG VÁNG",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.cryst>ST Băng</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.cryst>ST Băng</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.cryst>ST Băng</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "shootingDmgMultiplier": "Hệ Số ST Đòn Bắn",
-        "shotStagger": "Suy Sụp Do Cú Bắn",
-        "dmgMultiplier1Waterspout": "Hệ Số ST (1 Lốc Nước)",
-        "waterspoutDurationS": "Hiệu Lực Lốc Nước (giây)",
-        "spReturnPerWhirlpool": "Hồi Điểm KN mỗi Xoáy Nước",
-        "artsSusceptibility2Waterspouts": "Yếu Hóa Thuật Pháp (2 Lốc Nước)",
-        "artsSusceptibility3Waterspouts": "Yếu Hóa Thuật Pháp (3 Lốc Nước)",
-        "artsSusceptibilityDurationS": "Hiệu Lực Yếu Hóa TP (giây)"
-      },
       "name": "CƯỠI SÓNG CUỐN TRIỀU",
-      "description": "Tangtang nhảy lên từ mặt nước và bắn một phát trực diện gây <@ba.cryst>ST Băng</> lên kẻ địch và tạo ra <@ba.key>Lốc Nước</>.\nThi triển KN chiến đấu cũng tiêu thụ toàn bộ <@ba.key>Xoáy Nước</> lân cận để tạo thêm các <@ba.key>Lốc Nước</> bổ sung và <#ba.return>hồi lại</> một lượng điểm KN dựa trên số lượng Lốc Nước được tạo ra.\n<@ba.key>Lốc Nước</>: Áp dụng 1 cộng dồn <#ba.crystinflict>Nhiễm Băng</> lên kẻ địch trong phạm vi và gây <@ba.cryst>ST Băng</> theo thời gian. Nếu kỹ năng tạo ra nhiều <@ba.key>Lốc Nước</>, chúng cũng sẽ áp dụng <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên kẻ địch (nhưng không thêm cộng dồn <#ba.crystinflict>Nhiễm Băng</>).\n<@ba.info>ST Gây Ra bởi Lốc Nước được tính là ST Kỹ Năng Chiến Đấu.</>"
+      "description": "Tangtang nhảy lên từ mặt nước và bắn một phát trực diện gây <@ba.cryst>ST Băng</> lên kẻ địch và tạo ra <@ba.key>Lốc Nước</>.\nThi triển KN chiến đấu cũng tiêu thụ toàn bộ <@ba.key>Xoáy Nước</> lân cận để tạo thêm các <@ba.key>Lốc Nước</> bổ sung và <#ba.return>hồi lại</> một lượng điểm KN dựa trên số lượng Lốc Nước được tạo ra.\n<@ba.key>Lốc Nước</>: Áp dụng 1 cộng dồn <#ba.crystinflict>Nhiễm Băng</> lên kẻ địch trong phạm vi và gây <@ba.cryst>ST Băng</> theo thời gian. Nếu kỹ năng tạo ra nhiều <@ba.key>Lốc Nước</>, chúng cũng sẽ áp dụng <#ba.spellvul>Yếu Hóa Thuật Pháp</> lên kẻ địch (nhưng không thêm cộng dồn <#ba.crystinflict>Nhiễm Băng</>).\n<@ba.info>ST Gây Ra bởi Lốc Nước được tính là ST Kỹ Năng Chiến Đấu.</>",
+      "shootingDmgMultiplier": "Hệ Số ST Đòn Bắn",
+      "shotStagger": "Suy Sụp Do Cú Bắn",
+      "dmgMultiplier1Waterspout": "Hệ Số ST (1 Lốc Nước)",
+      "waterspoutDurationS": "Hiệu Lực Lốc Nước (giây)",
+      "spReturnPerWhirlpool": "Hồi Điểm KN mỗi Xoáy Nước",
+      "artsSusceptibility2Waterspouts": "Yếu Hóa Thuật Pháp (2 Lốc Nước)",
+      "artsSusceptibility3Waterspouts": "Yếu Hóa Thuật Pháp (3 Lốc Nước)",
+      "artsSusceptibilityDurationS": "Hiệu Lực Yếu Hóa TP (giây)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "whirlpoolDurationS": "Hiệu Lực Xoáy Nước (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "DÒNG NƯỚC TRỢ SỨC",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi gây <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.spellburst>ST Bùng Nổ Thuật Pháp</> lên kẻ địch.\nTangtang phóng một luồng khí phản lực mạnh mẽ, xuyên qua mọi kẻ địch trên đường đi, gây <@ba.cryst>ST Băng</> và tạo ra một <@ba.key>Xoáy Nước</>.\n<@ba.info>Có thể tồn tại tối đa 2 Xoáy Nước trên chiến trường cùng lúc.</>"
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi gây <#ba.crystinflict>Nhiễm Băng</> hoặc <#ba.spellburst>ST Bùng Nổ Thuật Pháp</> lên kẻ địch.\nTangtang phóng một luồng khí phản lực mạnh mẽ, xuyên qua mọi kẻ địch trên đường đi, gây <@ba.cryst>ST Băng</> và tạo ra một <@ba.key>Xoáy Nước</>.\n<@ba.info>Có thể tồn tại tối đa 2 Xoáy Nước trên chiến trường cùng lúc.</>",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "whirlpoolDurationS": "Hiệu Lực Xoáy Nước (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgOverTimeTotalMultiplier": "Tổng Hệ Số ST Theo Thời Gian",
-        "oldenStareDurationS": "Hiệu Lực CỔ VĂN CHI NHÃN (giây)",
-        "rogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ",
-        "earlyRogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ Sơ Khai",
-        "rogueWaveStagger": "Suy Sụp do Sóng Dữ",
-        "earlyRogueWaveStagger": "Suy Sụp do Sóng Dữ Sơ Khai"
-      },
       "name": "THỦ LĨNH TRỪNG MẮT",
-      "description": "Tangtang mở miếng che mắt và phóng <@ba.key>CỔ VĂN CHI NHÃN</> từ mắt mình để tạm thời khóa, làm bất động và gây <@ba.cryst>ST Băng</> theo thời gian cho kẻ địch trong khu vực ảnh hưởng.\nKhi <@ba.key>CỔ VĂN CHI NHÃN</> ngừng biến hóa, sóng dữ sập xuống và gây một lượng lớn <@ba.cryst>ST Băng</> cho kẻ địch trong khu vực ảnh hưởng.\nNếu cán viên đang điều khiển thực hiện đòn bổ nhào theo hoa văn <@ba.key>CỔ VĂN CHI NHÃN</> thì kỹ năng sẽ ngừng biến hóa và lập tức tung sóng dữ để gây thêm nhiều <@ba.cryst>ST Băng</> hơn nữa."
+      "description": "Tangtang mở miếng che mắt và phóng <@ba.key>CỔ VĂN CHI NHÃN</> từ mắt mình để tạm thời khóa, làm bất động và gây <@ba.cryst>ST Băng</> theo thời gian cho kẻ địch trong khu vực ảnh hưởng.\nKhi <@ba.key>CỔ VĂN CHI NHÃN</> ngừng biến hóa, sóng dữ sập xuống và gây một lượng lớn <@ba.cryst>ST Băng</> cho kẻ địch trong khu vực ảnh hưởng.\nNếu cán viên đang điều khiển thực hiện đòn bổ nhào theo hoa văn <@ba.key>CỔ VĂN CHI NHÃN</> thì kỹ năng sẽ ngừng biến hóa và lập tức tung sóng dữ để gây thêm nhiều <@ba.cryst>ST Băng</> hơn nữa.",
+      "dmgOverTimeTotalMultiplier": "Tổng Hệ Số ST Theo Thời Gian",
+      "oldenStareDurationS": "Hiệu Lực CỔ VĂN CHI NHÃN (giây)",
+      "rogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ",
+      "earlyRogueWaveDmgMultiplier": "Hệ Số ST Sóng Dữ Sơ Khai",
+      "rogueWaveStagger": "Suy Sụp do Sóng Dữ",
+      "earlyRogueWaveStagger": "Suy Sụp do Sóng Dữ Sơ Khai"
     },
     "indicator": {
       "levels": [

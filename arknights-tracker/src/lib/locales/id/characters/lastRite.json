@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Dance of Rime",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.cryst>Cryo DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.cryst>Cryo DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG untuk Fatamorgana",
-        "spReturn": "Pengembalian SP",
-        "durationS": "Durasi (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Esoteric Legacy of Seš’qa",
-      "description": "Melakukan <@ba.key>Hypothermic Perfusion</> pada senjata operator terkontrol dan <#ba.return>mengembalikan</> sebagian SP. \n<#ba.lastcombo>Final Strike</> berikutnya yang dilancarkan operator terkontrol saat ini dalam durasi tertentu akan menghasilkan Fatamorgana Last Rite yang akan melancarkan serangan tambahan ke arah target. Serangan ini akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</>. \nJika operator terkontrol adalah Last Rite sendiri, penggunaan skill tarung ini tidak akan mereset tahap serangan dasarnya."
+      "description": "Melakukan <@ba.key>Hypothermic Perfusion</> pada senjata operator terkontrol dan <#ba.return>mengembalikan</> sebagian SP. \n<#ba.lastcombo>Final Strike</> berikutnya yang dilancarkan operator terkontrol saat ini dalam durasi tertentu akan menghasilkan Fatamorgana Last Rite yang akan melancarkan serangan tambahan ke arah target. Serangan ini akan menimbulkan <@ba.cryst>Cryo DMG</> dan mengakibatkan <#ba.crystinflict>Cryo Infliction</>. \nJika operator terkontrol adalah Last Rite sendiri, penggunaan skill tarung ini tidak akan mereset tahap serangan dasarnya.",
+      "mirageAdditionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG untuk Fatamorgana",
+      "spReturn": "Pengembalian SP",
+      "durationS": "Durasi (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Pengganda DMG Serpihan Es",
-        "slashBaseDmgMultiplier": "Pengganda DMG Tebasan Dasar",
-        "slashStagger": "Stagger Tebasan",
-        "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
-        "baseUltimateEnergyGain": "Perolehan Energi Ultimate Dasar",
-        "additionalUltimateEnergyGainPerInflictionStack": "Tambahan Perolehan Energi Ultimate per Tumpuk Infliction"
-      },
       "name": "Winter’s Devourer",
-      "description": "PEMICU KOMBO: Saat musuh terkena {count:0} tumpuk <#ba.crystinflict>Cryo Infliction</> atau lebih. \nMenyelubungi musuh tertarget dengan es runcing lalu menghancurkannya sehingga akan <#ba.consume>memakai</> semua tumpukan <#ba.crystinflict>Cryo Infliction</> pada musuh yang bersangkutan. Jumlah tumpukan <#ba.crystinflict>Cryo Infliction</> yang <#ba.consume>dipakai</> menentukan besaran <@ba.cryst>Cryo DMG</> yang akan ditimbulkan kepada musuh yang bersangkutan dan banyaknya Energi Ultimate yang didapatkan Last Rite."
+      "description": "PEMICU KOMBO: Saat musuh terkena {count:0} tumpuk <#ba.crystinflict>Cryo Infliction</> atau lebih. \nMenyelubungi musuh tertarget dengan es runcing lalu menghancurkannya sehingga akan <#ba.consume>memakai</> semua tumpukan <#ba.crystinflict>Cryo Infliction</> pada musuh yang bersangkutan. Jumlah tumpukan <#ba.crystinflict>Cryo Infliction</> yang <#ba.consume>dipakai</> menentukan besaran <@ba.cryst>Cryo DMG</> yang akan ditimbulkan kepada musuh yang bersangkutan dan banyaknya Energi Ultimate yang didapatkan Last Rite.",
+      "iceShardDmgMultiplier": "Pengganda DMG Serpihan Es",
+      "slashBaseDmgMultiplier": "Pengganda DMG Tebasan Dasar",
+      "slashStagger": "Stagger Tebasan",
+      "bonusDmgMultiplierPerInflictionStack": "Pengganda Bonus DMG per Tumpuk Infliction",
+      "baseUltimateEnergyGain": "Perolehan Energi Ultimate Dasar",
+      "additionalUltimateEnergyGainPerInflictionStack": "Tambahan Perolehan Energi Ultimate per Tumpuk Infliction"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
-        "seq1Stagger": "SEQ 1 Stagger",
-        "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
-        "seq2Stagger": "SEQ 2 Stagger",
-        "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
-        "seq3Stagger": "SEQ 3 Stagger"
-      },
       "name": "Vigil Services",
-      "description": "Last Rite akan menyelubungi dirinya dengan armor es, menciptakan sabit es untuk melancarkan 3 tebasan, dan memperoleh kekebalan terhadap semua damage selagi status ini masih aktif. \nSetiap tebasan akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar. \n<@ba.info>Last Rite hanya bisa mendapatkan Energi Ultimate dari skill tarung dan skill kombonya sendiri.</>"
+      "description": "Last Rite akan menyelubungi dirinya dengan armor es, menciptakan sabit es untuk melancarkan 3 tebasan, dan memperoleh kekebalan terhadap semua damage selagi status ini masih aktif. \nSetiap tebasan akan menimbulkan <@ba.cryst>Cryo DMG</> sangat besar. \n<@ba.info>Last Rite hanya bisa mendapatkan Energi Ultimate dari skill tarung dan skill kombonya sendiri.</>",
+      "seq1DmgMultiplier": "Pengganda SEQ 1 DMG",
+      "seq1Stagger": "SEQ 1 Stagger",
+      "seq2DmgMultiplier": "Pengganda SEQ 2 DMG",
+      "seq2Stagger": "SEQ 2 Stagger",
+      "seq3DmgMultiplier": "Pengganda SEQ 3 DMG",
+      "seq3Stagger": "SEQ 3 Stagger"
     },
     "indicator": {
       "levels": [

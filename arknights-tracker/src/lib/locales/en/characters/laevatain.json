@@ -24,59 +24,51 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
-        "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
-        "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
-        "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
-        "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
-        "finisherAtkMultiplier": "Finisher ATK Multiplier",
-        "diveAtkMultiplier": "Dive ATK Multiplier"
-      },
       "name": "Flaming Cinders",
-      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.fire>Heat DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.fire>Heat DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.fire>Heat DMG</> and recovers some SP."
+      "description": "BASIC ATTACK: \nAn attack with up to 5 sequences that deals <@ba.fire>Heat DMG</>. As the controlled operator, <#ba.lastcombo>Final Strike</> also deals <@ba.poise>{poise:0}</> Stagger. \n\nDIVE ATTACK: \nBasic attack performed in mid-air becomes a dive attack that deals <@ba.fire>Heat DMG</> to nearby enemies. \n\nFINISHER: \nBasic attack performed near a Staggered enemy becomes a finisher that deals massive <@ba.fire>Heat DMG</> and recovers some SP.",
+      "batkSeq1Multiplier": "BATK SEQ 1 Multiplier",
+      "batkSeq2Multiplier": "BATK SEQ 2 Multiplier",
+      "batkSeq3Multiplier": "BATK SEQ 3 Multiplier",
+      "batkSeq4Multiplier": "BATK SEQ 4 Multiplier",
+      "batkSeq5Multiplier": "BATK SEQ 5 Multiplier",
+      "finisherAtkMultiplier": "Finisher ATK Multiplier",
+      "diveAtkMultiplier": "Dive ATK Multiplier"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseExplosionDmgMultiplier": "Base Explosion DMG Multiplier",
-        "baseExplosionStagger": "Base Explosion Stagger",
-        "dmgOverTimeMultiplierPerSeq": "DMG Over Time Multiplier per SEQ",
-        "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
-        "additionalAtkStagger": "Additional ATK Stagger",
-        "combustionDurationS": "Combustion Duration (s)",
-        "additionalAtkUltimateEnergyGain": "Additional ATK Ultimate Energy Gain",
-        "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
-        "duringUltimateBatkSeq1Stagger": "During Ultimate: BATK SEQ 1 Stagger",
-        "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
-        "duringUltimateBatkSeq2Stagger": "During Ultimate: BATK SEQ 2 Stagger",
-        "duringUltimateAdditionalAtkMultiplier": "During Ultimate: Additional ATK Multiplier",
-        "duringUltimateAdditionalAtkStagger": "During Ultimate: Additional ATK Stagger",
-        "duringUltimateCombustionDurationS": "During Ultimate: Combustion Duration (s)"
-      },
       "name": "Smouldering Fire",
-      "description": "Summons a Magma Fragment to continuously attack enemies and deal <@ba.fire>Heat DMG</>. Hitting the enemy grants 1 stack of <@ba.key>Melting Flame</>. \nIf Laevatain already has {count:0} stack(s) of <@ba.key>Melting Flame</> when casting the skill, then consume all the stacks and perform 1 additional attack that deals <@ba.fire>Heat DMG</> and forcibly trigger temporary <#ba.burning>Combustion</> to all enemies in a large area.\nWhen the additional attack hits the enemy, restore additional Ultimate Energy.\n<@ba.info>Battle skill effects are enhanced while Laevatain's ultimate is active.</>"
+      "description": "Summons a Magma Fragment to continuously attack enemies and deal <@ba.fire>Heat DMG</>. Hitting the enemy grants 1 stack of <@ba.key>Melting Flame</>. \nIf Laevatain already has {count:0} stack(s) of <@ba.key>Melting Flame</> when casting the skill, then consume all the stacks and perform 1 additional attack that deals <@ba.fire>Heat DMG</> and forcibly trigger temporary <#ba.burning>Combustion</> to all enemies in a large area.\nWhen the additional attack hits the enemy, restore additional Ultimate Energy.\n<@ba.info>Battle skill effects are enhanced while Laevatain's ultimate is active.</>",
+      "baseExplosionDmgMultiplier": "Base Explosion DMG Multiplier",
+      "baseExplosionStagger": "Base Explosion Stagger",
+      "dmgOverTimeMultiplierPerSeq": "DMG Over Time Multiplier per SEQ",
+      "additionalAtkDmgMultiplier": "Additional ATK DMG Multiplier",
+      "additionalAtkStagger": "Additional ATK Stagger",
+      "combustionDurationS": "Combustion Duration (s)",
+      "additionalAtkUltimateEnergyGain": "Additional ATK Ultimate Energy Gain",
+      "duringUltimateBatkSeq1Multiplier": "During Ultimate: BATK SEQ 1 Multiplier",
+      "duringUltimateBatkSeq1Stagger": "During Ultimate: BATK SEQ 1 Stagger",
+      "duringUltimateBatkSeq2Multiplier": "During Ultimate: BATK SEQ 2 Multiplier",
+      "duringUltimateBatkSeq2Stagger": "During Ultimate: BATK SEQ 2 Stagger",
+      "duringUltimateAdditionalAtkMultiplier": "During Ultimate: Additional ATK Multiplier",
+      "duringUltimateAdditionalAtkStagger": "During Ultimate: Additional ATK Stagger",
+      "duringUltimateCombustionDurationS": "During Ultimate: Combustion Duration (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "DMG Multiplier",
-        "stagger": "Stagger",
-        "ultimateEnergyGainWhenHitting1Enemy": "Ultimate Energy Gain when Hitting 1 Enemy",
-        "ultimateEnergyGainWhenHitting2Enemies": "Ultimate Energy Gain when Hitting 2 Enemies",
-        "ultimateEnergyGainWhenHitting3Enemies": "Ultimate Energy Gain when Hitting 3 Enemies"
-      },
       "name": "Seethe",
-      "description": "COMBO TRIGGER: When an enemy suffers <#ba.burning>Combustion</> or <#ba.corrupt>Corrosion</>. \nFire erupts beneath the feet of any enemy with <#ba.burning>Combustion</> or <#ba.corrupt>Corrosion</>, dealing <@ba.fire>Heat DMG</> to them. \nIf the skill hits the enemy, Laevatain gains 1 stack of <@ba.key>Melting Flame</> and further gains Ultimate Energy per enemy hit."
+      "description": "COMBO TRIGGER: When an enemy suffers <#ba.burning>Combustion</> or <#ba.corrupt>Corrosion</>. \nFire erupts beneath the feet of any enemy with <#ba.burning>Combustion</> or <#ba.corrupt>Corrosion</>, dealing <@ba.fire>Heat DMG</> to them. \nIf the skill hits the enemy, Laevatain gains 1 stack of <@ba.key>Melting Flame</> and further gains Ultimate Energy per enemy hit.",
+      "dmgMultiplier": "DMG Multiplier",
+      "stagger": "Stagger",
+      "ultimateEnergyGainWhenHitting1Enemy": "Ultimate Energy Gain when Hitting 1 Enemy",
+      "ultimateEnergyGainWhenHitting2Enemies": "Ultimate Energy Gain when Hitting 2 Enemies",
+      "ultimateEnergyGainWhenHitting3Enemies": "Ultimate Energy Gain when Hitting 3 Enemies"
     },
     "ultimate": {
-      "ultimate": {
-        "durationS": "Duration (s)",
-        "enhancedBatkSeq1Multiplier": "Enhanced BATK SEQ 1 Multiplier",
-        "enhancedBatkSeq2Multiplier": "Enhanced BATK SEQ 2 Multiplier",
-        "enhancedBatkSeq3Multiplier": "Enhanced BATK SEQ 3 Multiplier",
-        "enhancedBatkSeq4Multiplier": "Enhanced BATK SEQ 4 Multiplier"
-      },
       "name": "Twilight",
-      "description": "Laevatain summons her Sviga Lævi and becomes the controlled operator. \nFor a certain duration, her basic attacks (BATK) are enhanced and the Sviga Lævi strikes together with Laevatain, with each attack dealing <@ba.fire>Heat DMG</>. BATK sequence 3 also applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Casting the battle skill, Smouldering Fire, or the combo skill, Seethe, does not shorten the duration of the ultimate, Twilight.</>"
+      "description": "Laevatain summons her Sviga Lævi and becomes the controlled operator. \nFor a certain duration, her basic attacks (BATK) are enhanced and the Sviga Lævi strikes together with Laevatain, with each attack dealing <@ba.fire>Heat DMG</>. BATK sequence 3 also applies <#ba.fireinflict>Heat Infliction</>.\n<@ba.info>Casting the battle skill, Smouldering Fire, or the combo skill, Seethe, does not shorten the duration of the ultimate, Twilight.</>",
+      "durationS": "Duration (s)",
+      "enhancedBatkSeq1Multiplier": "Enhanced BATK SEQ 1 Multiplier",
+      "enhancedBatkSeq2Multiplier": "Enhanced BATK SEQ 2 Multiplier",
+      "enhancedBatkSeq3Multiplier": "Enhanced BATK SEQ 3 Multiplier",
+      "enhancedBatkSeq4Multiplier": "Enhanced BATK SEQ 4 Multiplier"
     },
     "indicator": {
       "levels": [

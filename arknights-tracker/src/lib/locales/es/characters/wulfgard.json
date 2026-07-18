@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Disparo rápido a dos manos",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.fire>DAÑ por calor</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.fire>DAÑ por calor</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.fire>DAÑ por calor</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
-        "additionalAtkStagger": "Tambaleo de ATQ adicional"
-      },
       "name": "Rastreadores de termitas",
-      "description": "Dispara múltiples tiros al objetivo que infligen algo de <@ba.fire>DAÑ por calor</>. El disparo final también aplica <#ba.fireinflict>Imp. de cal.</>. Si el objetivo tiene <#ba.burning>Combustión</> o <#ba.conduct>Electrificación</> activas, no aplica <#ba.fireinflict>Imp. de cal.</>, sino que <#ba.consume>consume</> la Reacción a Artes para disparar un tiro adicional que inflige <@ba.fire>DAÑ por calor</> masivo."
+      "description": "Dispara múltiples tiros al objetivo que infligen algo de <@ba.fire>DAÑ por calor</>. El disparo final también aplica <#ba.fireinflict>Imp. de cal.</>. Si el objetivo tiene <#ba.burning>Combustión</> o <#ba.conduct>Electrificación</> activas, no aplica <#ba.fireinflict>Imp. de cal.</>, sino que <#ba.consume>consume</> la Reacción a Artes para disparar un tiro adicional que inflige <@ba.fire>DAÑ por calor</> masivo.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "additionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional",
+      "additionalAtkStagger": "Tambaleo de ATQ adicional"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Granada de fragmentación·β",
-      "description": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellinflict>Imposición de artes</> a un enemigo. \nLanza una granada de fragmentación a la ubicación del objetivo que explota al tocar el suelo, infligiendo <@ba.fire>DAÑ por calor</> y <#ba.fireinflict>Imp. de cal.</> a los enemigos cercanos."
+      "description": "ACTIVADOR DE COMBO: Cuando se aplica una <#ba.spellinflict>Imposición de artes</> a un enemigo. \nLanza una granada de fragmentación a la ubicación del objetivo que explota al tocar el suelo, infligiendo <@ba.fire>DAÑ por calor</> y <#ba.fireinflict>Imp. de cal.</> a los enemigos cercanos.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "Multiplicador de DAÑ por SEC",
-        "stagger": "Tambaleo"
-      },
       "name": "Furia de los lobos",
-      "description": "Dispara una descarga rápida de disparos y libera la <@ba.key>Furia de los lobos</> para atacar a los enemigos cercanos, infligiendo 5 golpes de <@ba.fire>DAÑ por calor</> y aplicando <#ba.burning>Combustión</> forzada."
+      "description": "Dispara una descarga rápida de disparos y libera la <@ba.key>Furia de los lobos</> para atacar a los enemigos cercanos, infligiendo 5 golpes de <@ba.fire>DAÑ por calor</> y aplicando <#ba.burning>Combustión</> forzada.",
+      "dmgMultiplierPerSeq": "Multiplicador de DAÑ por SEC",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

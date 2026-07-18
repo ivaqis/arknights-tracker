@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Raffreddamento",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "Cura base",
-        "treatmentIncreasePerWill": "Aumento Cura basato su Volontà",
-        "auxiliaryCrystalDurationS": "Durata cristallo ausiliario (s)",
-        "artsAmp": "Amplificazione delle Arti",
-        "artsAmpDurationS": "Durata Amplificazione delle Arti (s)"
-      },
       "name": "Sovraccarico distribuito",
-      "description": "Evoca un <@ba.key>cristallo ausiliario</> che orbita temporaneamente attorno all'operatore controllato. \nDopo che l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> sul nemico, il <@ba.key>cristallo ausiliario</> ripristina i PS dell'operatore. L'effetto si può attivare 2 volte. L'attributo Volontà aumenta la quantità di PS ripristinati. \nQuando l'operatore controllato ha già raggiunto i PS massimi al momento dell'attivazione del ripristino PS, fornisce a tale operatore anche un'<#ba.spellenhance>Amplificazione delle Arti</> temporanea. Questo effetto non si accumula."
+      "description": "Evoca un <@ba.key>cristallo ausiliario</> che orbita temporaneamente attorno all'operatore controllato. \nDopo che l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> sul nemico, il <@ba.key>cristallo ausiliario</> ripristina i PS dell'operatore. L'effetto si può attivare 2 volte. L'attributo Volontà aumenta la quantità di PS ripristinati. \nQuando l'operatore controllato ha già raggiunto i PS massimi al momento dell'attivazione del ripristino PS, fornisce a tale operatore anche un'<#ba.spellenhance>Amplificazione delle Arti</> temporanea. Questo effetto non si accumula.",
+      "baseTreatment": "Cura base",
+      "treatmentIncreasePerWill": "Aumento Cura basato su Volontà",
+      "auxiliaryCrystalDurationS": "Durata cristallo ausiliario (s)",
+      "artsAmp": "Amplificazione delle Arti",
+      "artsAmpDurationS": "Durata Amplificazione delle Arti (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Limite di resistenza",
-      "description": "ATTIVAZIONE COMBO: quando il <@ba.key>cristallo ausiliario</> esaurisce la Cura PS. \nCarica velocemente il <@ba.key>cristallo ausiliario</> e lo lancia al nemico per infliggere <@ba.cryst>danni da ghiaccio</> e <#ba.crystinflict>Afflizione da ghiaccio</>."
+      "description": "ATTIVAZIONE COMBO: quando il <@ba.key>cristallo ausiliario</> esaurisce la Cura PS. \nCarica velocemente il <@ba.key>cristallo ausiliario</> e lo lancia al nemico per infliggere <@ba.cryst>danni da ghiaccio</> e <#ba.crystinflict>Afflizione da ghiaccio</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "Amplificazione di ghiaccio base",
-        "baseNatureAmp": "Amplificazione naturale base",
-        "ampIncreasePerIntellect": "Aumento amplificazione basato su Intelletto",
-        "intellectRaisesAmpLimit": "Intelletto aumenta il limite dell'amplificazione",
-        "durationS": "Durata (s)"
-      },
       "name": "Sovraccarico energetico",
-      "description": "Applica temporaneamente <#ba.crystenhance>Amplificazione di ghiaccio</> e <#ba.naturalenhance>Amplificazione naturale</> all'intera squadra. L'attributo Intelletto aumenta l'effetto Amplificazione."
+      "description": "Applica temporaneamente <#ba.crystenhance>Amplificazione di ghiaccio</> e <#ba.naturalenhance>Amplificazione naturale</> all'intera squadra. L'attributo Intelletto aumenta l'effetto Amplificazione.",
+      "baseCryoAmp": "Amplificazione di ghiaccio base",
+      "baseNatureAmp": "Amplificazione naturale base",
+      "ampIncreasePerIntellect": "Aumento amplificazione basato su Intelletto",
+      "intellectRaisesAmpLimit": "Intelletto aumenta il limite dell'amplificazione",
+      "durationS": "Durata (s)"
     },
     "indicator": {
       "levels": [

@@ -26,47 +26,39 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "獨門射擊法",
-      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{attack_poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多4段攻擊，造成<@ba.natur>自然傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{attack_poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.natur>自然傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.natur>自然傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "slowEffect": "緩速效果"
-      },
       "name": "小驚喜",
-      "description": "踢出<@ba.key>自製炸彈</>將其黏附在目標身上，並施加<#ba.slow>緩速</>，短暫延遲後爆炸對範圍內的敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。若黏附目標被擊敗則<@ba.key>自製炸彈</>提前爆炸。\n<@ba.info>場上同時只能存在一個自製炸彈。</>"
+      "description": "踢出<@ba.key>自製炸彈</>將其黏附在目標身上，並施加<#ba.slow>緩速</>，短暫延遲後爆炸對範圍內的敵人造成<@ba.natur>自然傷害</>並施加<#ba.naturalinflict>自然附著</>。若黏附目標被擊敗則<@ba.key>自製炸彈</>提前爆炸。\n<@ba.info>場上同時只能存在一個自製炸彈。</>",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "slowEffect": "緩速效果"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "免費贈禮",
-      "description": "當敵人進入2層及以上<#ba.crystinflict>寒冷附著</>或<#ba.naturalinflict>自然附著</>時可以發動。\n射擊目標敵人，引發一次特殊爆炸，造成<@ba.natur>自然傷害</>並施加該<#ba.spellinflict>法術附著</>。"
+      "description": "當敵人進入2層及以上<#ba.crystinflict>寒冷附著</>或<#ba.naturalinflict>自然附著</>時可以發動。\n射擊目標敵人，引發一次特殊爆炸，造成<@ba.natur>自然傷害</>並施加該<#ba.spellinflict>法術附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "第一段傷害倍率",
-        "seq2DmgMultiplier": "第二段傷害倍率",
-        "seq3DmgMultiplier": "第三段傷害倍率",
-        "seq4DmgMultiplier": "第四段傷害倍率",
-        "battleSkillAoeBoost": "戰技範圍提升",
-        "battleSkillDmgBoost": "戰技傷害提升",
-        "stagger": "失衡值"
-      },
       "name": "巔峰鬧劇",
-      "description": "螢石以弧形軌跡高速運動並向弧內目標快速射擊，造成4段<@ba.natur>自然傷害</>，若命中目標身上黏有<@ba.key>自製炸彈</>，則立刻將其引爆並提升爆炸傷害及範圍。\n若最後一段傷害命中處於2層及以上<#ba.crystinflict>寒冷附著</>或<#ba.naturalinflict>自然附著</>的目標，則再次施加該<#ba.spellinflict>法術附著</>。"
+      "description": "螢石以弧形軌跡高速運動並向弧內目標快速射擊，造成4段<@ba.natur>自然傷害</>，若命中目標身上黏有<@ba.key>自製炸彈</>，則立刻將其引爆並提升爆炸傷害及範圍。\n若最後一段傷害命中處於2層及以上<#ba.crystinflict>寒冷附著</>或<#ba.naturalinflict>自然附著</>的目標，則再次施加該<#ba.spellinflict>法術附著</>。",
+      "seq1DmgMultiplier": "第一段傷害倍率",
+      "seq2DmgMultiplier": "第二段傷害倍率",
+      "seq3DmgMultiplier": "第三段傷害倍率",
+      "seq4DmgMultiplier": "第四段傷害倍率",
+      "battleSkillAoeBoost": "戰技範圍提升",
+      "battleSkillDmgBoost": "戰技傷害提升",
+      "stagger": "失衡值"
     },
     "indicator": {
       "levels": [

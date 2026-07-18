@@ -26,47 +26,39 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Signaturwaffen-Kata",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{attack_poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.natur>Natur-SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{attack_poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.natur>Natur-SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.natur>Natur-SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "slowEffect": "Verlangsamen-Effekt"
-      },
       "name": "Winzige Überraschung",
-      "description": "Befördert <@ba.key>Improvisierten Sprengstoff</> mit einem Tritt zum Ziel. Der Sprengstoff haftet am Gegner, belegt diesen mit <#ba.slow>Verlangsamung</> und explodiert nach kurzer Zeit. Die Explosion verursacht <@ba.natur>Natur-SDN</> und belegt Gegner im Wirkungsbereich mit <#ba.naturalinflict>Natur</>. Der <@ba.key>improvisierte Sprengstoff</> explodiert unverzüglich, wenn der betreffende Gegner bezwungen wird.\n<@ba.info>Auf dem Schlachtfeld kann immer nur 1 improvisierter Sprengstoff anwesend sein.</>"
+      "description": "Befördert <@ba.key>Improvisierten Sprengstoff</> mit einem Tritt zum Ziel. Der Sprengstoff haftet am Gegner, belegt diesen mit <#ba.slow>Verlangsamung</> und explodiert nach kurzer Zeit. Die Explosion verursacht <@ba.natur>Natur-SDN</> und belegt Gegner im Wirkungsbereich mit <#ba.naturalinflict>Natur</>. Der <@ba.key>improvisierte Sprengstoff</> explodiert unverzüglich, wenn der betreffende Gegner bezwungen wird.\n<@ba.info>Auf dem Schlachtfeld kann immer nur 1 improvisierter Sprengstoff anwesend sein.</>",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "slowEffect": "Verlangsamen-Effekt"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Gratis-Geschenk",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner über 2 oder mehr <#ba.crystinflict>Kryo</>- oder <#ba.naturalinflict>Natur-Kumulierungen</> verfügt. \nFührt einen Schuss auf den Gegner aus, um eine spezielle Explosion auszulösen, die <@ba.natur>Natur-SDN</> verursacht und diesem eine weitere <#ba.spellinflict>Technikkumulierung</> des Elements zufügt, mit dem er bereits belegt ist."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner über 2 oder mehr <#ba.crystinflict>Kryo</>- oder <#ba.naturalinflict>Natur-Kumulierungen</> verfügt. \nFührt einen Schuss auf den Gegner aus, um eine spezielle Explosion auszulösen, die <@ba.natur>Natur-SDN</> verursacht und diesem eine weitere <#ba.spellinflict>Technikkumulierung</> des Elements zufügt, mit dem er bereits belegt ist.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
-        "seq4DmgMultiplier": "SEQ-4-SDN-Multiplikator",
-        "battleSkillAoeBoost": "Wirkungsbereich-Bonus: Kampffertigkeit",
-        "battleSkillDmgBoost": "SDN-Bonus: Kampffertigkeit",
-        "stagger": "Taumeln"
-      },
       "name": "Spitzenscherzbold",
-      "description": "Fluorite bewegt sich flink in einem Bogen, feuert schnell auf die Ziele innerhalb des Bogens und verursacht dabei <@ba.natur>Natur-SDN</> in 4 Sequenzen. Wenn ein <@ba.key>improvisierter Sprengstoff</> an einem Gegner klebt, explodiert er sofort, wobei SDN und Größe der Explosion erhöht sind.\nWenn die letzte SDN-Sequenz ein Ziel mit mindestens 2 Kumulierungen <#ba.crystinflict>Kryo</> oder <#ba.naturalinflict>Natur</> trifft, wird dieselbe <#ba.spellinflict>Technikkumulierung</> erneut angewendet."
+      "description": "Fluorite bewegt sich flink in einem Bogen, feuert schnell auf die Ziele innerhalb des Bogens und verursacht dabei <@ba.natur>Natur-SDN</> in 4 Sequenzen. Wenn ein <@ba.key>improvisierter Sprengstoff</> an einem Gegner klebt, explodiert er sofort, wobei SDN und Größe der Explosion erhöht sind.\nWenn die letzte SDN-Sequenz ein Ziel mit mindestens 2 Kumulierungen <#ba.crystinflict>Kryo</> oder <#ba.naturalinflict>Natur</> trifft, wird dieselbe <#ba.spellinflict>Technikkumulierung</> erneut angewendet.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
+      "seq4DmgMultiplier": "SEQ-4-SDN-Multiplikator",
+      "battleSkillAoeBoost": "Wirkungsbereich-Bonus: Kampffertigkeit",
+      "battleSkillDmgBoost": "SDN-Bonus: Kampffertigkeit",
+      "stagger": "Taumeln"
     },
     "indicator": {
       "levels": [

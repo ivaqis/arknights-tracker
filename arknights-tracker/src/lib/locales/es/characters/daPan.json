@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "¡CORTE GIRATORIO!",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "liftDurationS": "Duración Levantar (s)"
-      },
       "name": "¡GIRA EL WOK!",
-      "description": "Saca un wok, lo carga rápidamente y realiza un potente giro de wok que inflige <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</> al enemigo."
+      "description": "Saca un wok, lo carga rápidamente y realiza un potente giro de wok que inflige <@ba.pd>DAÑ físico</> y <#ba.airborne>Levantar</> al enemigo.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "liftDurationS": "Duración Levantar (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "crushDmgBonus": "Bonificación de DAÑ por Triturar",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "¡MÁS PICANTE!",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo alcanza 4 acumulaciones de <#ba.noguard>Vulnerabilidad</>. \nSacude wok contra el enemigo para infligir <@ba.pd>DAÑ físico</> masivo y <#ba.crush>Triturar</>. Este <#ba.crush>Triturar</> también inflige más DAÑ."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo alcanza 4 acumulaciones de <#ba.noguard>Vulnerabilidad</>. \nSacude wok contra el enemigo para infligir <@ba.pd>DAÑ físico</> masivo y <#ba.crush>Triturar</>. Este <#ba.crush>Triturar</> también inflige más DAÑ.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "crushDmgBonus": "Bonificación de DAÑ por Triturar",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "Multiplicador de DAÑ de Ráfaga aérea",
-        "ultimateDmgMultiplier": "Multiplicador de DAÑ de Máxima"
-      },
       "name": "¡PICA Y MACHACA!",
-      "description": "Da Pan golpea la tabla de cortar para <#ba.airborne>Levantar</> con fuerza a todos los enemigos en el área de efecto. Luego, realiza una ráfaga de 6 secuencias de cortes que infligen <@ba.pd>DAÑ físico</>. El último paso consiste en golpear a cada enemigo contra el suelo para <#ba.knockdown>Derribar</> a la fuerza e infligir un gran <@ba.pd>DAÑ físico</>."
+      "description": "Da Pan golpea la tabla de cortar para <#ba.airborne>Levantar</> con fuerza a todos los enemigos en el área de efecto. Luego, realiza una ráfaga de 6 secuencias de cortes que infligen <@ba.pd>DAÑ físico</>. El último paso consiste en golpear a cada enemigo contra el suelo para <#ba.knockdown>Derribar</> a la fuerza e infligir un gran <@ba.pd>DAÑ físico</>.",
+      "aerialFlurryDmgMultiplier": "Multiplicador de DAÑ de Ráfaga aérea",
+      "ultimateDmgMultiplier": "Multiplicador de DAÑ de Máxima"
     },
     "indicator": {
       "levels": [

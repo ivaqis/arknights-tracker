@@ -26,44 +26,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Soaring Break",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 5 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi serangan penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "batkSeq5Multiplier": "Pengganda BATK SEQ 5",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "liftDurationS": "Durasi Lift (dtk)"
-      },
       "name": "Ascending Strike",
-      "description": "Melancarkan tebasan ke atas kepada musuh tertarget sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</>."
+      "description": "Melancarkan tebasan ke atas kepada musuh tertarget sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "liftDurationS": "Durasi Lift (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Soar to the Stars",
-      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.noguard>Vulnerable</>. \nSlashing Dash yang melewati musuh tertarget dan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</> kepada semua musuh di sepanjang jalan."
+      "description": "PEMICU KOMBO: Saat musuh terkena <#ba.noguard>Vulnerable</>. \nSlashing Dash yang melewati musuh tertarget dan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</> kepada semua musuh di sepanjang jalan.",
+      "dmgMultiplier": "Pengganda DMG",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "slashMultiplier": "Pengganda Tebasan",
-        "firstStrikeStagger": "First Strike Stagger",
-        "finalStrikeDmgMultiplier": "Pengganda Final Strike DMG",
-        "finalStrikeStagger": "Final Strike Stagger"
-      },
       "name": "Blade Gale",
-      "description": "Serangan tebas 7 tahap yang setiap tahapnya akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh tertarget. Tahap tebasan terakhir akan menimbulkan DMG lebih besar lagi."
+      "description": "Serangan tebas 7 tahap yang setiap tahapnya akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh tertarget. Tahap tebasan terakhir akan menimbulkan DMG lebih besar lagi.",
+      "slashMultiplier": "Pengganda Tebasan",
+      "firstStrikeStagger": "First Strike Stagger",
+      "finalStrikeDmgMultiplier": "Pengganda Final Strike DMG",
+      "finalStrikeStagger": "Final Strike Stagger"
     },
     "indicator": {
       "levels": [

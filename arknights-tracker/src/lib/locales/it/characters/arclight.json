@@ -24,49 +24,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Ricerca e caccia",
-      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo cinque attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "batkSeq5Multiplier": "Moltiplicatore SEQ ATTB 5",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
-        "additionalAtkStagger": "Vacillamento ATT aggiuntivo",
-        "spRecovery": "Recupero PA"
-      },
       "name": "Arco tempestoso",
-      "description": "Si teletrasporta accanto al nemico e lo colpisce con due sferzate che infliggono <@ba.pd>danni fisici</>. Se il nemico ha <#ba.conduct>Elettrificazione</> attiva, <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> per scatenare un attacco aggiuntivo che infligge <@ba.pulse>danni da elettricità</> e ripristina parzialmente i PA."
+      "description": "Si teletrasporta accanto al nemico e lo colpisce con due sferzate che infliggono <@ba.pd>danni fisici</>. Se il nemico ha <#ba.conduct>Elettrificazione</> attiva, <#ba.consume>consuma</> l'<#ba.conduct>Elettrificazione</> per scatenare un attacco aggiuntivo che infligge <@ba.pulse>danni da elettricità</> e ripristina parzialmente i PA.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "additionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo",
+      "additionalAtkStagger": "Vacillamento ATT aggiuntivo",
+      "spRecovery": "Recupero PA"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "spRecovery": "Recupero PA",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Fragore di tuono",
-      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.conduct>Elettrificazione</> o dopo che un'<#ba.conduct>Elettrificazione</> di un nemico viene <#ba.consume>consumata</>. \nSi teletrasporta accanto al nemico ed esegue una serie di sferzate che infliggono <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTIVAZIONE COMBO: quando un nemico subisce <#ba.conduct>Elettrificazione</> o dopo che un'<#ba.conduct>Elettrificazione</> di un nemico viene <#ba.consume>consumata</>. \nSi teletrasporta accanto al nemico ed esegue una serie di sferzate che infliggono <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "spRecovery": "Recupero PA",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2"
-      },
       "name": "Blitz esplosivo",
-      "description": "Esegue un breve scatto in avanti mentre è avvolta da archi elettrici per infliggere <@ba.pulse>danni da elettricità</> e applicare <#ba.pulseinflict>Afflizione da elettricità</> a tutti i nemici sul percorso. Gli archi fluttuanti esplodono poco dopo, infliggendo altri <@ba.pulse>danni da elettricità</>. Se il nemico ha un'<#ba.pulseinflict>Afflizione da elettricità</> attiva, <#ba.consume>consuma</> l'<#ba.pulseinflict>Afflizione da elettricità</> e applica <#ba.conduct>Elettrificazione forzata</>."
+      "description": "Esegue un breve scatto in avanti mentre è avvolta da archi elettrici per infliggere <@ba.pulse>danni da elettricità</> e applicare <#ba.pulseinflict>Afflizione da elettricità</> a tutti i nemici sul percorso. Gli archi fluttuanti esplodono poco dopo, infliggendo altri <@ba.pulse>danni da elettricità</>. Se il nemico ha un'<#ba.pulseinflict>Afflizione da elettricità</> attiva, <#ba.consume>consuma</> l'<#ba.pulseinflict>Afflizione da elettricità</> e applica <#ba.conduct>Elettrificazione forzata</>.",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2"
     },
     "indicator": {
       "levels": [

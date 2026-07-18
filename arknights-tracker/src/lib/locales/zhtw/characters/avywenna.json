@@ -26,48 +26,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "雷槍·疾襲",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.pd>物理傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.pd>物理傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.pd>物理傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "thunderlanceDmgMultiplier": "雷槍傷害倍率",
-        "thunderlanceStagger": "雷槍失衡值",
-        "thunderlanceExDmgMultiplier": "強雷槍傷害倍率",
-        "thunderlanceExStagger": "強雷槍失衡值"
-      },
       "name": "雷槍·截回",
-      "description": "躍起後用槍颳起旋風，對周圍的敵人造成少量<@ba.pulse>電磁傷害</>。同時召回全部<@ba.key>雷槍</>、<@ba.key>強雷槍</>。\n<@ba.key>雷槍</>被召回時若穿過敵人則對其造成<@ba.pulse>電磁傷害</>。<@ba.key>強雷槍</>造成更高的<@ba.pulse>電磁傷害</>，還會施加<#ba.pulseinflict>電磁附著</>。"
+      "description": "躍起後用槍颳起旋風，對周圍的敵人造成少量<@ba.pulse>電磁傷害</>。同時召回全部<@ba.key>雷槍</>、<@ba.key>強雷槍</>。\n<@ba.key>雷槍</>被召回時若穿過敵人則對其造成<@ba.pulse>電磁傷害</>。<@ba.key>強雷槍</>造成更高的<@ba.pulse>電磁傷害</>，還會施加<#ba.pulseinflict>電磁附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "thunderlanceDmgMultiplier": "雷槍傷害倍率",
+      "thunderlanceStagger": "雷槍失衡值",
+      "thunderlanceExDmgMultiplier": "強雷槍傷害倍率",
+      "thunderlanceExStagger": "強雷槍失衡值"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "thunderlanceDurationS": "雷槍存在時間（秒）",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "雷槍·掣擊",
-      "description": "主控幹員對處於<#ba.pulseinflict>電磁附著</>或<#ba.conduct>導電</>狀態的目標<#ba.lastcombo>重擊</>後可以發動。\n躍起並向目標投擲出3支<@ba.key>雷槍</>，並對前方範圍內的敵人造成1次<@ba.pulse>電磁傷害</>。"
+      "description": "主控幹員對處於<#ba.pulseinflict>電磁附著</>或<#ba.conduct>導電</>狀態的目標<#ba.lastcombo>重擊</>後可以發動。\n躍起並向目標投擲出3支<@ba.key>雷槍</>，並對前方範圍內的敵人造成1次<@ba.pulse>電磁傷害</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "thunderlanceDurationS": "雷槍存在時間（秒）",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "thunderlanceExDurationS": "強雷槍存在時間（秒）"
-      },
       "name": "雷槍·決顫",
-      "description": "向目標區域投下一支<@ba.key>強雷槍</>，對附近敵人造成大量<@ba.pulse>電磁傷害</>。"
+      "description": "向目標區域投下一支<@ba.key>強雷槍</>，對附近敵人造成大量<@ba.pulse>電磁傷害</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "thunderlanceExDurationS": "強雷槍存在時間（秒）"
     },
     "indicator": {
       "levels": [

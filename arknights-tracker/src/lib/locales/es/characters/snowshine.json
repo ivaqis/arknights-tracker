@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Asalto hipotérmico",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 3 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 3 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige mucho <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "protection": "Protección",
-        "spReturn": "Retorno de PH"
-      },
       "name": "Defensa saturada",
-      "description": "Alza un escudo que puede bloquear ataques, otorga <#ba.guard>Protección</> a sí mismo y a operadores cercanos y <#ba.return>devuelve</> de inmediato algunos PH. \nCuando es atacada con dicho escudo elevado, realiza un golpe de represalia que inflige <@ba.cryst>DAÑ criogénico</> y aplica <#ba.crystinflict>Imposición criogénica</> al atacante."
+      "description": "Alza un escudo que puede bloquear ataques, otorga <#ba.guard>Protección</> a sí mismo y a operadores cercanos y <#ba.return>devuelve</> de inmediato algunos PH. \nCuando es atacada con dicho escudo elevado, realiza un golpe de represalia que inflige <@ba.cryst>DAÑ criogénico</> y aplica <#ba.crystinflict>Imposición criogénica</> al atacante.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "protection": "Protección",
+      "spReturn": "Retorno de PH"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Tratamiento base inicial",
-        "initialTreatmentIncreasePerWill": "Incremento de tratamiento inicial por Voluntad",
-        "baseTreatmentOverTime": "Tratamiento base continuo",
-        "treatmentOverTimeIncreasePerWill": "Incremento continuo de tratamiento por Voluntad",
-        "treatmentOverTimeIntervalS": "Intervalo de tratamiento base continuo (s)",
-        "durationS": "Duración (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Rescate polar",
-      "description": "ACTIVADOR DE COMBO: Después de que el operador controlado es atacado y cae por debajo de {trigger_hp_ratio:0%} PV. \nSnowshine lanza un Asistente de B&R en campos nevados al operador controlado. Al entrar en contacto con el objetivo, el Asistente proporciona un gran <@ba.heal>Tratamiento de PV</> instantáneo a los operadores cercanos, así como <@ba.heal>Tratamiento de PV</> continuo a los operadores en el área de efecto. \nEl atributo de Voluntad aumenta la cantidad de tratamiento de PV."
+      "description": "ACTIVADOR DE COMBO: Después de que el operador controlado es atacado y cae por debajo de {trigger_hp_ratio:0%} PV. \nSnowshine lanza un Asistente de B&R en campos nevados al operador controlado. Al entrar en contacto con el objetivo, el Asistente proporciona un gran <@ba.heal>Tratamiento de PV</> instantáneo a los operadores cercanos, así como <@ba.heal>Tratamiento de PV</> continuo a los operadores en el área de efecto. \nEl atributo de Voluntad aumenta la cantidad de tratamiento de PV.",
+      "initialBaseTreatment": "Tratamiento base inicial",
+      "initialTreatmentIncreasePerWill": "Incremento de tratamiento inicial por Voluntad",
+      "baseTreatmentOverTime": "Tratamiento base continuo",
+      "treatmentOverTimeIncreasePerWill": "Incremento continuo de tratamiento por Voluntad",
+      "treatmentOverTimeIntervalS": "Intervalo de tratamiento base continuo (s)",
+      "durationS": "Duración (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
-        "stagger": "Tambaleo",
-        "dmgOverTimeMultiplier": "Multiplicador de DAÑ continuo",
-        "dmgOverTimeIntervalS": "Intervalo de DAÑ continuo (s)",
-        "durationS": "Duración (s)"
-      },
       "name": "Campo nevado gélido",
-      "description": "Salta al aire con un jetpack y luego cae en picada con su escudo para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en el área de efecto. También genera una <@ba.key>Zona de nieve</> (que dura varios segundos) que inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos. La <@ba.key>Zona de nieve</> aplica forzosamente <#ba.frozen>Solidificación</> a los enemigos atrapados en ella por cierta duración."
+      "description": "Salta al aire con un jetpack y luego cae en picada con su escudo para infligir <@ba.cryst>DAÑ criogénico</> masivo a los enemigos en el área de efecto. También genera una <@ba.key>Zona de nieve</> (que dura varios segundos) que inflige <@ba.cryst>DAÑ criogénico</> con el tiempo a los enemigos. La <@ba.key>Zona de nieve</> aplica forzosamente <#ba.frozen>Solidificación</> a los enemigos atrapados en ella por cierta duración.",
+      "explosionDmgMultiplier": "Multiplicador de DAÑ Explosión",
+      "stagger": "Tambaleo",
+      "dmgOverTimeMultiplier": "Multiplicador de DAÑ continuo",
+      "dmgOverTimeIntervalS": "Intervalo de DAÑ continuo (s)",
+      "durationS": "Duración (s)"
     },
     "indicator": {
       "levels": [

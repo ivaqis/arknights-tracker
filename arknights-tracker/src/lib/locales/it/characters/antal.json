@@ -24,44 +24,36 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Scambio di correnti",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pulse>danni da elettricità</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pulse>danni da elettricità</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pulse>danni da elettricità</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "durationS": "Durata (s)",
-        "electricSusceptibility": "Suscettibilità all'elettricità",
-        "heatSusceptibility": "Suscettibilità al fuoco"
-      },
       "name": "Ricerca specifica",
-      "description": "Applica <@ba.key>Concentrazione</> con una durata prolungata al nemico e infligge <@ba.pulse>danni da elettricità</>. Un nemico con <@ba.key>Concentrazione</> attiva subisce anche <#ba.pulsevul>Suscettibilità all'elettricità</> e <#ba.firevul>Suscettibilità al fuoco</>. <@ba.key>Concentrazione</> può essere applicata solo a un nemico per volta."
+      "description": "Applica <@ba.key>Concentrazione</> con una durata prolungata al nemico e infligge <@ba.pulse>danni da elettricità</>. Un nemico con <@ba.key>Concentrazione</> attiva subisce anche <#ba.pulsevul>Suscettibilità all'elettricità</> e <#ba.firevul>Suscettibilità al fuoco</>. <@ba.key>Concentrazione</> può essere applicata solo a un nemico per volta.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "durationS": "Durata (s)",
+      "electricSusceptibility": "Suscettibilità all'elettricità",
+      "heatSusceptibility": "Suscettibilità al fuoco"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Area test EMP",
-      "description": "ATTIVAZIONE COMBO: quando un nemico con <@ba.key>Concentrazione</> attiva subisce uno <#ba.physicalstatus>stato fisico</> o un'<#ba.spellinflict>Afflizione da Arti</>. \nAttiva 1 esplosione di energia sul nemico che infligge <@ba.pulse>danni da elettricità</> e applica un altro accumulo del medesimo <#ba.physicalstatus>stato fisico</> o <#ba.spellinflict>Afflizione da Arti</>."
+      "description": "ATTIVAZIONE COMBO: quando un nemico con <@ba.key>Concentrazione</> attiva subisce uno <#ba.physicalstatus>stato fisico</> o un'<#ba.spellinflict>Afflizione da Arti</>. \nAttiva 1 esplosione di energia sul nemico che infligge <@ba.pulse>danni da elettricità</> e applica un altro accumulo del medesimo <#ba.physicalstatus>stato fisico</> o <#ba.spellinflict>Afflizione da Arti</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "electricAmp": "Amplificazione elettrica",
-        "heatAmp": "Amplificazione di fuoco",
-        "durationS": "Durata (s)"
-      },
       "name": "Momento ultraperformante",
-      "description": "Applica temporaneamente <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> all'intera squadra."
+      "description": "Applica temporaneamente <#ba.pulseenhance>Amplificazione elettrica</> e <#ba.fireenhance>Amplificazione di fuoco</> all'intera squadra.",
+      "electricAmp": "Amplificazione elettrica",
+      "heatAmp": "Amplificazione di fuoco",
+      "durationS": "Durata (s)"
     },
     "indicator": {
       "levels": [

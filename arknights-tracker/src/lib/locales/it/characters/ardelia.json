@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Sussurri rocciosi",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.natur>danni da natura</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.natur>danni da natura</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.natur>danni da natura</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.natur>danni da natura</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.natur>danni da natura</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.natur>danni da natura</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "susceptibility": "Suscettibilità",
-        "susceptibilityDurationS": "Durata Suscettibilità (s)"
-      },
       "name": "Impeto di Dolly",
-      "description": "Salta sul signor Dolly e colpisce il bersaglio infliggendo <@ba.natur>danni da natura</>. Se il bersaglio ha <#ba.corrupt>Corrosione</>, allora <#ba.consume>consuma</> la <#ba.corrupt>Corrosione</> e applica <#ba.physicalvul>Suscettibilità fisica</> e <#ba.spellvul>Suscettibilità alle Arti</> al bersaglio."
+      "description": "Salta sul signor Dolly e colpisce il bersaglio infliggendo <@ba.natur>danni da natura</>. Se il bersaglio ha <#ba.corrupt>Corrosione</>, allora <#ba.consume>consuma</> la <#ba.corrupt>Corrosione</> e applica <#ba.physicalvul>Suscettibilità fisica</> e <#ba.spellvul>Suscettibilità alle Arti</> al bersaglio.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "susceptibility": "Suscettibilità",
+      "susceptibilityDurationS": "Durata Suscettibilità (s)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
-        "stagger": "Vacillamento",
-        "corrodeDurationS": "Durata Corrosione (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Pilastro eruttivo",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un nemico che <@ba.key>non</> ha accumuli di <#ba.noguard>Vulnerabilità</> o <#ba.spellinflict>Afflizione da Arti</>. \nLancia una nube vulcanica a ricerca contro un bersaglio nemico, infliggendo <@ba.natur>danni da natura</> quando è abbastanza vicina al bersaglio. La nube vulcanica esplode dopo un breve intervallo, infliggendo metà dei <@ba.natur>danni da natura</> e applicando forzatamente <#ba.corrupt>Corrosione</> temporanea ai nemici vicini."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore controllato esegue un <#ba.lastcombo>colpo finale</> su un nemico che <@ba.key>non</> ha accumuli di <#ba.noguard>Vulnerabilità</> o <#ba.spellinflict>Afflizione da Arti</>. \nLancia una nube vulcanica a ricerca contro un bersaglio nemico, infliggendo <@ba.natur>danni da natura</> quando è abbastanza vicina al bersaglio. La nube vulcanica esplode dopo un breve intervallo, infliggendo metà dei <@ba.natur>danni da natura</> e applicando forzatamente <#ba.corrupt>Corrosione</> temporanea ai nemici vicini.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "explosionDmgMultiplier": "Moltiplicatore danni Esplosione",
+      "stagger": "Vacillamento",
+      "corrodeDurationS": "Durata Corrosione (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "durationS": "Durata (s)"
-      },
       "name": "Party lanoso",
-      "description": "Ardelia entra in uno stato di canalizzazione mobile e invoca l'aiuto del signor Dolly. Diverse copie del signor Dolly vengono scagliate in direzioni casuali. Ogni copia infligge <@ba.natur>danni da natura</> quando colpisce un nemico e ciascun nemico può subire un solo colpo ogni {interval:0.0} s."
+      "description": "Ardelia entra in uno stato di canalizzazione mobile e invoca l'aiuto del signor Dolly. Diverse copie del signor Dolly vengono scagliate in direzioni casuali. Ogni copia infligge <@ba.natur>danni da natura</> quando colpisce un nemico e ciascun nemico può subire un solo colpo ogni {interval:0.0} s.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "durationS": "Durata (s)"
     },
     "indicator": {
       "levels": [

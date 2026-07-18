@@ -25,43 +25,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "ROLLING CUT!",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "liftDurationS": "Durasi Lift (dtk)"
-      },
       "name": "FLIP DA WOK!",
-      "description": "Mengeluarkan wajan, dengan cepat mengisi kekuatannya, dan melancarkan lemparan wajan dengan kuat yang akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</> kepada musuh."
+      "description": "Mengeluarkan wajan, dengan cepat mengisi kekuatannya, dan melancarkan lemparan wajan dengan kuat yang akan menimbulkan <@ba.pd>Physical DMG</> dan <#ba.airborne>Lift</> kepada musuh.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "liftDurationS": "Durasi Lift (dtk)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "crushDmgBonus": "Bonus Crush DMG",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "MORE SPICE!",
-      "description": "PEMICU KOMBO: Saat tumpukan <#ba.noguard>Vulnerability</> pada musuh mencapai 4 tumpuk. \nMengayunkan wajan ke arah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan <#ba.crush>Crush</>. Efek <#ba.crush>Crush</> ini juga menimbulkan DMG lebih besar."
+      "description": "PEMICU KOMBO: Saat tumpukan <#ba.noguard>Vulnerability</> pada musuh mencapai 4 tumpuk. \nMengayunkan wajan ke arah musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan <#ba.crush>Crush</>. Efek <#ba.crush>Crush</> ini juga menimbulkan DMG lebih besar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "crushDmgBonus": "Bonus Crush DMG",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "aerialFlurryDmgMultiplier": "Pengganda DMG Rentetan Melayang",
-        "ultimateDmgMultiplier": "Pengganda Ultimate DMG"
-      },
       "name": "CHOP ’N DUNK!",
-      "description": "Da Pan akan menghantamkan talenan sehingga akan mengakibatkan <#ba.airborne>Lifted</> secara paksa kepada semua musuh dalam area efek di depannya. Lalu, serangannya akan disusul dengan rentetan tebasan enam tahap yang menimbulkan <@ba.pd>Physical DMG</>. Tahap terakhirnya adalah menghantamkan setiap musuh ke tanah sehingga akan mengakibatkan <#ba.knockdown>Knock Down</> secara paksa dan menimbulkan <@ba.pd>Physical DMG</> sangat besar kepada mereka."
+      "description": "Da Pan akan menghantamkan talenan sehingga akan mengakibatkan <#ba.airborne>Lifted</> secara paksa kepada semua musuh dalam area efek di depannya. Lalu, serangannya akan disusul dengan rentetan tebasan enam tahap yang menimbulkan <@ba.pd>Physical DMG</>. Tahap terakhirnya adalah menghantamkan setiap musuh ke tanah sehingga akan mengakibatkan <#ba.knockdown>Knock Down</> secara paksa dan menimbulkan <@ba.pd>Physical DMG</> sangat besar kepada mereka.",
+      "aerialFlurryDmgMultiplier": "Pengganda DMG Rentetan Melayang",
+      "ultimateDmgMultiplier": "Pengganda Ultimate DMG"
     },
     "indicator": {
       "levels": [

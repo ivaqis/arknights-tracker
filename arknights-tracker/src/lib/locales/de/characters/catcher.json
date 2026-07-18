@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Grundlegende Taktiken",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "protection": "Schutz",
-        "spReturn": "FP-Rückerstattung"
-      },
       "name": "Strenges Verbot",
-      "description": "Aktiviert einen Schild, der Angriffe blockieren kann, sich selbst und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.pd>Physischen SDN</> verursacht und den angreifenden Gegner mit 1 <#ba.noguard>Anfälligkeit</>-Kumulierung belegt."
+      "description": "Aktiviert einen Schild, der Angriffe blockieren kann, sich selbst und Operatoren in der Nähe <#ba.guard>Schutz</> gewährt und sofort einige FP <#ba.return>wiederherstellt</>. \nWenn du angegriffen wirst, während der Schild aktiv ist, führst du einen Vergeltungsschlag aus, der <@ba.pd>Physischen SDN</> verursacht und den angreifenden Gegner mit 1 <#ba.noguard>Anfälligkeit</>-Kumulierung belegt.",
+      "dmgMultiplier": "SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "protection": "Schutz",
+      "spReturn": "FP-Rückerstattung"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "stagger": "Taumeln",
-        "baseShield": "Grund-Schild",
-        "shieldIncreasePerDefense": "Schild-Steigerung pro Verteidigung",
-        "shieldDurationS": "Schilddauer (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Rechtzeitige Unterdrückung",
-      "description": "KOMBOAUSLÖSER: Wenn ein Gegner beginnt, eine Fertigkeit aufzuladen, oder der gesteuerte Operator angegriffen wird und seine Gesundheit sinkt unter {trigger_hp_ratio:0%} LP. \nFührt einen mächtigen Schlag nach unten aus, der dem Gegner <@ba.pd>Physischen SDN</> zufügt, und gewährt sich selbst und einem anderen Teammitglied <#ba.shield>Schilde</> gewährt (der gesteuerte Operator erhält Priorität).\nDie Schildpunkte erhöhen sich mit dem VERT-Wert."
+      "description": "KOMBOAUSLÖSER: Wenn ein Gegner beginnt, eine Fertigkeit aufzuladen, oder der gesteuerte Operator angegriffen wird und seine Gesundheit sinkt unter {trigger_hp_ratio:0%} LP. \nFührt einen mächtigen Schlag nach unten aus, der dem Gegner <@ba.pd>Physischen SDN</> zufügt, und gewährt sich selbst und einem anderen Teammitglied <#ba.shield>Schilde</> gewährt (der gesteuerte Operator erhält Priorität).\nDie Schildpunkte erhöhen sich mit dem VERT-Wert.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "stagger": "Taumeln",
+      "baseShield": "Grund-Schild",
+      "shieldIncreasePerDefense": "Schild-Steigerung pro Verteidigung",
+      "shieldDurationS": "Schilddauer (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1Stagger": "SEQ 1 – Taumeln",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
-        "seq3Stagger": "SEQ 3 – Taumeln",
-        "weaknessEffect": "Schwäche-Effekt",
-        "weaknessDurationS": "Schwäche-Dauer (Sek.)"
-      },
       "name": "Lehrbuchangriff",
-      "description": "Der Operator schwingt das Großschwert und führt 2 aufeinanderfolgende Hiebe aus, die <@ba.pd>Physischen SDN</> verursachen und getroffene Gegner mit <#ba.weak>Schwäche</> belegen. Anschließend führt der Operator einen schweren Schlag aus, der massiven <@ba.pd>Physischen SDN</> verursacht und alle Gegner im Wirkungsbereich mit <#ba.knockdown>Niederschlag</> belegt."
+      "description": "Der Operator schwingt das Großschwert und führt 2 aufeinanderfolgende Hiebe aus, die <@ba.pd>Physischen SDN</> verursachen und getroffene Gegner mit <#ba.weak>Schwäche</> belegen. Anschließend führt der Operator einen schweren Schlag aus, der massiven <@ba.pd>Physischen SDN</> verursacht und alle Gegner im Wirkungsbereich mit <#ba.knockdown>Niederschlag</> belegt.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1Stagger": "SEQ 1 – Taumeln",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
+      "seq3Stagger": "SEQ 3 – Taumeln",
+      "weaknessEffect": "Schwäche-Effekt",
+      "weaknessDurationS": "Schwäche-Dauer (Sek.)"
     },
     "indicator": {
       "levels": [

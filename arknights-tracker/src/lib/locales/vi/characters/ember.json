@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Kiếm Thuật Tấn Công",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "additionalStaggerDealtWhenHit": "Suy Sụp Gây Thêm Khi Đánh Trúng"
-      },
       "name": "Tiến Lên",
-      "description": "Nhảy lên rồi chém mạnh xuống, gây <@ba.fire>ST Nhiệt</>, <#ba.knockdown>Quật Ngã</> và Suy Sụp cho tất cả kẻ địch trong khu vực hình quạt. \nNếu Ember nhận ST từ kẻ địch trong lúc thi triển, cú chém sẽ gây thêm Suy Sụp khi trúng mục tiêu."
+      "description": "Nhảy lên rồi chém mạnh xuống, gây <@ba.fire>ST Nhiệt</>, <#ba.knockdown>Quật Ngã</> và Suy Sụp cho tất cả kẻ địch trong khu vực hình quạt. \nNếu Ember nhận ST từ kẻ địch trong lúc thi triển, cú chém sẽ gây thêm Suy Sụp khi trúng mục tiêu.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "additionalStaggerDealtWhenHit": "Suy Sụp Gây Thêm Khi Đánh Trúng"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "baseTreatment": "Hồi Phục Căn Cứ",
-        "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Hỗ Trợ Tiền Tuyến",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển bị tấn công. \nNhảy tới kẻ địch mục tiêu và tung một cú chém mạnh, gây <@ba.pd>ST Vật Lý</> và <#ba.knockdown>Quật Ngã</> đồng thời hồi HP cho cán viên đang điều khiển. Thuộc tính của Ý Chí tăng lượng HP hồi phục."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi cán viên đang điều khiển bị tấn công. \nNhảy tới kẻ địch mục tiêu và tung một cú chém mạnh, gây <@ba.pd>ST Vật Lý</> và <#ba.knockdown>Quật Ngã</> đồng thời hồi HP cho cán viên đang điều khiển. Thuộc tính của Ý Chí tăng lượng HP hồi phục.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "baseTreatment": "Hồi Phục Căn Cứ",
+      "treatmentIncreasePerWill": "Tăng Hồi Phục Theo Ý Chí",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "shieldConversionRatioHp": "Tỷ Lệ Chuyển Đổi Của Khiên (HP)",
-        "shieldDurationS": "Thời Gian Hiệu Lực Của Khiên (giây)"
-      },
       "name": "Lời Thề Được Thắp Lại",
-      "description": "Nện đất gây <@ba.fire>ST Nhiệt</> lên kẻ địch gần đó, đồng thời cấp <#ba.shield>Khiên</> cho toàn bộ đồng đội dựa trên HP Tối Đa của Ember."
+      "description": "Nện đất gây <@ba.fire>ST Nhiệt</> lên kẻ địch gần đó, đồng thời cấp <#ba.shield>Khiên</> cho toàn bộ đồng đội dựa trên HP Tối Đa của Ember.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "shieldConversionRatioHp": "Tỷ Lệ Chuyển Đổi Của Khiên (HP)",
+      "shieldDurationS": "Thời Gian Hiệu Lực Của Khiên (giây)"
     },
     "indicator": {
       "levels": [

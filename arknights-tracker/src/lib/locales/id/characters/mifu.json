@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "diveAtkMultiplier": "Pengganda ATK Menukik",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas"
-      },
       "name": "Fistmancer of Blades",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.pd>Physical DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.pd>Physical DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.pd>Physical DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "diveAtkMultiplier": "Pengganda ATK Menukik",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Pengganda DMG Cloudtrapper",
-        "trailAndMangleDmgMultiplier": "Pengganda DMG Trail and Mangle",
-        "trailAndMangleStagger": "Trail and Mangle Stagger",
-        "worldSplitterDmgMultiplier": "Pengganda DMG World Splitter",
-        "worldSplitterStagger": "World Splitter Stagger"
-      },
       "name": "Qingbo Triplex",
-      "description": "Terus gunakan skill tarung Mi Fu untuk mengeluarkan 3 gerakan berbeda. Skill tarung yang digunakan pertama adalah <@ba.key>Cloudtrapper</>.\n<@ba.key>GERAKAN 1 - Cloudtrapper</>: Butuh <@ba.vup>100</> SP dan akan <#ba.return>mengembalikan</><@ba.vup> 50</> Poin Skill setelah digunakan; Mi Fu akan menembakkan rantai pengait dari gauntlet miliknya yang akan menimbulkan <@ba.pd>Physical DMG</> kepada target dan musuh di sekitarnya, lalu berusaha menarik target dan musuh di sekitar ke arahnya. Setelah melancarkan GERAKAN 1, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>.\n<@ba.key>GERAKAN 2 - Trail and Mangle</>: Butuh <@ba.vup>50</> SP; Mi Fu akan melepaskan rentetan pukulan yang akan menimbulkan <@ba.pd>Physical DMG</>, sedangkan pukulan terakhir akan mengakibatkan <#ba.crush>Crush</>. Jika Crush ini <#ba.consume>memakai</> setidaknya 3 tumpuk <#ba.noguard>Vulnerability</> dari satu target, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>World Splitter</>.\n<@ba.key>GERAKAN 3 - World Splitter</>: Butuh <@ba.vup>50</> SP; Mi Fu akan menimbulkan <@ba.pd>Physical DMG</> yang sangat besar ke area tertentu; DMG ini tidak dianggap sebagai DMG skill tarung, melainkan sebagai <#ba.crush>Crush</> DMG."
+      "description": "Terus gunakan skill tarung Mi Fu untuk mengeluarkan 3 gerakan berbeda. Skill tarung yang digunakan pertama adalah <@ba.key>Cloudtrapper</>.\n<@ba.key>GERAKAN 1 - Cloudtrapper</>: Butuh <@ba.vup>100</> SP dan akan <#ba.return>mengembalikan</><@ba.vup> 50</> Poin Skill setelah digunakan; Mi Fu akan menembakkan rantai pengait dari gauntlet miliknya yang akan menimbulkan <@ba.pd>Physical DMG</> kepada target dan musuh di sekitarnya, lalu berusaha menarik target dan musuh di sekitar ke arahnya. Setelah melancarkan GERAKAN 1, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>.\n<@ba.key>GERAKAN 2 - Trail and Mangle</>: Butuh <@ba.vup>50</> SP; Mi Fu akan melepaskan rentetan pukulan yang akan menimbulkan <@ba.pd>Physical DMG</>, sedangkan pukulan terakhir akan mengakibatkan <#ba.crush>Crush</>. Jika Crush ini <#ba.consume>memakai</> setidaknya 3 tumpuk <#ba.noguard>Vulnerability</> dari satu target, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>World Splitter</>.\n<@ba.key>GERAKAN 3 - World Splitter</>: Butuh <@ba.vup>50</> SP; Mi Fu akan menimbulkan <@ba.pd>Physical DMG</> yang sangat besar ke area tertentu; DMG ini tidak dianggap sebagai DMG skill tarung, melainkan sebagai <#ba.crush>Crush</> DMG.",
+      "cloudtrapperDmgMultiplier": "Pengganda DMG Cloudtrapper",
+      "trailAndMangleDmgMultiplier": "Pengganda DMG Trail and Mangle",
+      "trailAndMangleStagger": "Trail and Mangle Stagger",
+      "worldSplitterDmgMultiplier": "Pengganda DMG World Splitter",
+      "worldSplitterStagger": "World Splitter Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "physicalSusceptibility": "Phy Suscept",
-        "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Fists of No Regrets",
-      "description": "PEMICU KOMBO: Saat musuh terkena 3 tumpuk <#ba.noguard>Vulnerability</> atau lebih.\nMi Fu akan melepaskan pukulan uppercut kuat kepada musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</> untuk sementara. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>."
+      "description": "PEMICU KOMBO: Saat musuh terkena 3 tumpuk <#ba.noguard>Vulnerability</> atau lebih.\nMi Fu akan melepaskan pukulan uppercut kuat kepada musuh sehingga akan menimbulkan <@ba.pd>Physical DMG</> dan mengakibatkan <#ba.physicalvul>Physical Susceptibility</> untuk sementara. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "physicalSusceptibility": "Phy Suscept",
+      "physicalSusceptibilityDurationS": "Durasi Physical Susceptibility (dtk)",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger"
-      },
       "name": "Pile of No Mercy",
-      "description": "Setelah peningkatan kekuatan sesaat, Mi Fu akan melejit ke depan untuk mengakibatkan <#ba.airborne>Lift</> secara paksa kepada target hingga melayang, lalu membanting target itu sehingga akan menimbulkan <@ba.pd>Physical DMG</>. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>."
+      "description": "Setelah peningkatan kekuatan sesaat, Mi Fu akan melejit ke depan untuk mengakibatkan <#ba.airborne>Lift</> secara paksa kepada target hingga melayang, lalu membanting target itu sehingga akan menimbulkan <@ba.pd>Physical DMG</>. Setelah menggunakan skill ini, skill tarung berikutnya untuk sementara akan digantikan dengan <@ba.key>Trail and Mangle</>.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [

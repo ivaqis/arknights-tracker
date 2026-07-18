@@ -25,49 +25,41 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
-        "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
-        "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
-        "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
-        "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
-      },
       "name": "Assaut hypothermique",
-      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 3 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC."
+      "description": "ATTAQUE DE BASE : \nUne attaque comprenant jusqu'à 3 séquences qui inflige des <@ba.pd>DÉG physiques</>. Si vous contrôlez l'opérateur, le <#ba.lastcombo>Coup final</> inflige également Déséquilibre <@ba.poise>{poise:0}</> fois. \n\nATTAQUE PLONGEANTE : \nUne attaque de base lancée depuis les airs devient une attaque plongeante, qui inflige des <@ba.pd>DÉG physiques</> aux ennemis à proximité. \n\nCOUP FATAL : \nUne attaque de base lancée près d'un ennemi déséquilibré devient un coup fatal, qui inflige de lourds <@ba.pd>DÉG physiques</> et restaure quelques PC.",
+      "batkSeq1Multiplier": "Multiplicateur d'ATQ-B SÉQ 1",
+      "batkSeq2Multiplier": "Multiplicateur d'ATQ-B SÉQ 2",
+      "batkSeq3Multiplier": "Multiplicateur d'ATQ-B SÉQ 3",
+      "finisherAtkMultiplier": "Multiplicateur d'ATQ de coup fatal",
+      "diveAtkMultiplier": "Multiplicateur d'ATQ plongeante"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Multiplicateur de DÉG",
-        "stagger": "Déséquilibre",
-        "protection": "Protection",
-        "spReturn": "Restitution de PC"
-      },
       "name": "Défense saturée",
-      "description": "Lève un bouclier qui peut bloquer des attaques, offrir une <#ba.guard>protection</> à soi-même et aux opérateurs à proximité et <#ba.return>restaurer</> immédiatement quelques PC.\nEn cas d'attaque lorsque le bouclier est levé, permet d'effectuer une contre-attaque qui inflige des <@ba.cryst>DÉG cryogéniques</> et applique une <#ba.crystinflict>altération cryogénique</> à l'assaillant."
+      "description": "Lève un bouclier qui peut bloquer des attaques, offrir une <#ba.guard>protection</> à soi-même et aux opérateurs à proximité et <#ba.return>restaurer</> immédiatement quelques PC.\nEn cas d'attaque lorsque le bouclier est levé, permet d'effectuer une contre-attaque qui inflige des <@ba.cryst>DÉG cryogéniques</> et applique une <#ba.crystinflict>altération cryogénique</> à l'assaillant.",
+      "dmgMultiplier": "Multiplicateur de DÉG",
+      "stagger": "Déséquilibre",
+      "protection": "Protection",
+      "spReturn": "Restitution de PC"
     },
     "comboSkill": {
-      "comboSkill": {
-        "initialBaseTreatment": "Soins de base initiaux",
-        "initialTreatmentIncreasePerWill": "Augmentation des soins initiaux par Volonté",
-        "baseTreatmentOverTime": "Soins de base continus",
-        "treatmentOverTimeIncreasePerWill": "Augmentation des soins continus par Volonté",
-        "treatmentOverTimeIntervalS": "Intervalle de soins continus (s)",
-        "durationS": "Durée (s)",
-        "ultimateEnergyGain": "Gain d'énergie d'ultime"
-      },
       "name": "Sauvetage polaire",
-      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un opérateur que vous contrôlez est attaqué et que ses PV sont inférieurs à {trigger_hp_ratio:0%}. \nSnowshine lance un assistant R&S de champ de neige sur l'opérateur contrôlé. À son contact, l'assistant octroie immédiatement d'énormes <@ba.heal>soins</> aux opérateurs à proximité ainsi que des <@ba.heal>soins</> en continu aux opérateurs dans la zone d'effet. \nLe trait Volonté augmente la quantité de PV soignés."
+      "description": "DÉCLENCHEMENT DE COMBO : lorsqu'un opérateur que vous contrôlez est attaqué et que ses PV sont inférieurs à {trigger_hp_ratio:0%}. \nSnowshine lance un assistant R&S de champ de neige sur l'opérateur contrôlé. À son contact, l'assistant octroie immédiatement d'énormes <@ba.heal>soins</> aux opérateurs à proximité ainsi que des <@ba.heal>soins</> en continu aux opérateurs dans la zone d'effet. \nLe trait Volonté augmente la quantité de PV soignés.",
+      "initialBaseTreatment": "Soins de base initiaux",
+      "initialTreatmentIncreasePerWill": "Augmentation des soins initiaux par Volonté",
+      "baseTreatmentOverTime": "Soins de base continus",
+      "treatmentOverTimeIncreasePerWill": "Augmentation des soins continus par Volonté",
+      "treatmentOverTimeIntervalS": "Intervalle de soins continus (s)",
+      "durationS": "Durée (s)",
+      "ultimateEnergyGain": "Gain d'énergie d'ultime"
     },
     "ultimate": {
-      "ultimate": {
-        "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
-        "stagger": "Déséquilibre",
-        "dmgOverTimeMultiplier": "Multiplicateur de DÉG continus",
-        "dmgOverTimeIntervalS": "Intervalle de DÉG continus (s)",
-        "durationS": "Durée (s)"
-      },
       "name": "Terrain glacial",
-      "description": "Saute à mi-hauteur avec un jetpack avant d'abattre son bouclier pour infliger de lourds <@ba.cryst>DÉG cryogéniques</> aux ennemis dans la zone d'effet. Génère aussi une <@ba.key>zone de neige</> (qui dure plusieurs secondes) et inflige des <@ba.cryst>DÉG cryogéniques</> continus aux ennemis. La <@ba.key>zone de neige</> <#ba.frozen>solidifie</> de force les ennemis qui y sont pris au piège pendant un certain temps."
+      "description": "Saute à mi-hauteur avec un jetpack avant d'abattre son bouclier pour infliger de lourds <@ba.cryst>DÉG cryogéniques</> aux ennemis dans la zone d'effet. Génère aussi une <@ba.key>zone de neige</> (qui dure plusieurs secondes) et inflige des <@ba.cryst>DÉG cryogéniques</> continus aux ennemis. La <@ba.key>zone de neige</> <#ba.frozen>solidifie</> de force les ennemis qui y sont pris au piège pendant un certain temps.",
+      "explosionDmgMultiplier": "Multiplicateur de DÉG d'explosion",
+      "stagger": "Déséquilibre",
+      "dmgOverTimeMultiplier": "Multiplicateur de DÉG continus",
+      "dmgOverTimeIntervalS": "Intervalle de DÉG continus (s)",
+      "durationS": "Durée (s)"
     },
     "indicator": {
       "levels": [

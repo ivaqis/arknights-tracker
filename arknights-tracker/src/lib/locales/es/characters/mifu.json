@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión",
-        "finisherAtkMultiplier": "Multiplicador de ATQ de Remate"
-      },
       "name": "Puñomante de cuchillas",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.pd>DAÑ físico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN: \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.pd>DAÑ físico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un remate que inflige mucho <@ba.pd>DAÑ físico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión",
+      "finisherAtkMultiplier": "Multiplicador de ATQ de Remate"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Multiplicador de DAÑ de Atrapanubes",
-        "trailAndMangleDmgMultiplier": "Multiplicador de DAÑ de Rastrear y destrozar",
-        "trailAndMangleStagger": "Tambaleo por Rastrear y destrozar",
-        "worldSplitterDmgMultiplier": "Multiplicador de DAÑ de Divisora de mundos",
-        "worldSplitterStagger": "Tambaleo por Divisora de mundos"
-      },
       "name": "Tríplex de Qingbo",
-      "description": "Sigue lanzando la habilidad de batalla de Mi Fu para desatar 3 movimientos diferentes. El primer lanzamiento de habilidad de batalla es <@ba.key>Atrapanubes</>.\n<@ba.key>MOVIMIENTO 1: - Atrapanubes</>: Cuesta <@ba.vup>100</> PH y <#ba.return>devuelve</><@ba.vup> 50</> PH después de lanzarse; Mi Fu dispara una cadena de agarre desde sus guanteletes que inflige <@ba.pd>DAÑ físico</> al objetivo y a los enemigos cercanos, luego intenta atraer al objetivo y a los enemigos cercanos hacia ella. Después de lanzar el MOVIMIENTO 1, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Rastrear y destrozar</>.\n<@ba.key>MOVIMIENTO 2: - Rastrear y destrozar</>: Cuesta <@ba.vup>50</> PH; Mi Fu desata una ráfaga de puñetazos que inflige <@ba.pd>DAÑ físico</>, y el golpe final aplica <#ba.crush>Triturar</>. Si este Triturar <#ba.consume>consume</> al menos 3 acumulaciones de <#ba.noguard>Vulnerabilidad</> de un solo objetivo, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Divisora de mundos</>.\n<@ba.key>MOVIMIENTO 3: - Divisora de mundos</>: Cuesta <@ba.vup>50</> PH; Mi Fu inflige <@ba.pd>DAÑ físico</> masivo en un área especificada; este DAÑ no se considera DAÑ de habilidad de batalla, sino DAÑ de <#ba.crush>Triturar</>."
+      "description": "Sigue lanzando la habilidad de batalla de Mi Fu para desatar 3 movimientos diferentes. El primer lanzamiento de habilidad de batalla es <@ba.key>Atrapanubes</>.\n<@ba.key>MOVIMIENTO 1: - Atrapanubes</>: Cuesta <@ba.vup>100</> PH y <#ba.return>devuelve</><@ba.vup> 50</> PH después de lanzarse; Mi Fu dispara una cadena de agarre desde sus guanteletes que inflige <@ba.pd>DAÑ físico</> al objetivo y a los enemigos cercanos, luego intenta atraer al objetivo y a los enemigos cercanos hacia ella. Después de lanzar el MOVIMIENTO 1, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Rastrear y destrozar</>.\n<@ba.key>MOVIMIENTO 2: - Rastrear y destrozar</>: Cuesta <@ba.vup>50</> PH; Mi Fu desata una ráfaga de puñetazos que inflige <@ba.pd>DAÑ físico</>, y el golpe final aplica <#ba.crush>Triturar</>. Si este Triturar <#ba.consume>consume</> al menos 3 acumulaciones de <#ba.noguard>Vulnerabilidad</> de un solo objetivo, la siguiente habilidad de batalla se sustituirá temporalmente por <@ba.key>Divisora de mundos</>.\n<@ba.key>MOVIMIENTO 3: - Divisora de mundos</>: Cuesta <@ba.vup>50</> PH; Mi Fu inflige <@ba.pd>DAÑ físico</> masivo en un área especificada; este DAÑ no se considera DAÑ de habilidad de batalla, sino DAÑ de <#ba.crush>Triturar</>.",
+      "cloudtrapperDmgMultiplier": "Multiplicador de DAÑ de Atrapanubes",
+      "trailAndMangleDmgMultiplier": "Multiplicador de DAÑ de Rastrear y destrozar",
+      "trailAndMangleStagger": "Tambaleo por Rastrear y destrozar",
+      "worldSplitterDmgMultiplier": "Multiplicador de DAÑ de Divisora de mundos",
+      "worldSplitterStagger": "Tambaleo por Divisora de mundos"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo",
-        "physicalSusceptibility": "Susceptibilidad física",
-        "physicalSusceptibilityDurationS": "Duración de Susceptibilidad física (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Puños sin arrepentimientos",
-      "description": "ACTIVACIÓN DE COMBO: Cuando un enemigo tiene 3 o más acumulaciones de <#ba.noguard>Vulnerabilidad</>.\nMi Fu desata un devastador gancho contra el enemigo, inflige <@ba.pd>DAÑ físico</> y aplica <#ba.physicalvul>Susceptibilidad física</> temporal. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>."
+      "description": "ACTIVACIÓN DE COMBO: Cuando un enemigo tiene 3 o más acumulaciones de <#ba.noguard>Vulnerabilidad</>.\nMi Fu desata un devastador gancho contra el enemigo, inflige <@ba.pd>DAÑ físico</> y aplica <#ba.physicalvul>Susceptibilidad física</> temporal. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo",
+      "physicalSusceptibility": "Susceptibilidad física",
+      "physicalSusceptibilityDurationS": "Duración de Susceptibilidad física (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Multiplicador de DAÑ",
-        "stagger": "Tambaleo"
-      },
       "name": "Pila del desalmado",
-      "description": "Tras una breve carga de poder, Mi Fu se desplaza hacia adelante para <#ba.airborne>Levantar</> a un objetivo por la fuerza en el aire, luego azota a dicho objetivo para infligir <@ba.pd>DAÑ físico</>. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>."
+      "description": "Tras una breve carga de poder, Mi Fu se desplaza hacia adelante para <#ba.airborne>Levantar</> a un objetivo por la fuerza en el aire, luego azota a dicho objetivo para infligir <@ba.pd>DAÑ físico</>. Tras lanzar esta habilidad, la siguiente habilidad de batalla se reemplaza temporalmente por <@ba.key>Rastrear y destrozar</>.",
+      "dmgMultiplier": "Multiplicador de DAÑ",
+      "stagger": "Tambaleo"
     },
     "indicator": {
       "levels": [

@@ -27,51 +27,43 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
-        "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
-        "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
-        "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
-        "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
-        "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
-      },
       "name": "Zerstörung",
-      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen."
+      "description": "STANDARDANGRIFF: \nEin Angriff mit bis zu 4 Sequenzen, der <@ba.pd>Physischen SDN</> zufügt. Mit dem gesteuerten Operator fügt der <#ba.lastcombo>Abschlussangriff</> außerdem <@ba.poise>{poise:0}</> Taumeln zu. \n\nSTURZANGRIFF: \nStandardangriffe, die in der Luft durchgeführt werden, werden zu Sturzangriffen, die Gegnern in der Nähe <@ba.pd>Physischen SDN</> zufügen. \n\nWUCHTSCHLAG: \nStandardangriffe, die nahe einem Taumelnden Gegner durchgeführt werden, werden zu Wuchtschlägen, die massiven <@ba.pd>Physischen SDN</> zufügen und ein wenig FP wiederherstellen.",
+      "batkSeq1Multiplier": "STD-ANG-SEQ-1-Multiplikator",
+      "batkSeq2Multiplier": "STD-ANG-SEQ-2-Multiplikator",
+      "batkSeq3Multiplier": "STD-ANG-SEQ-3-Multiplikator",
+      "batkSeq4Multiplier": "STD-ANG-SEQ-4-Multiplikator",
+      "finisherAtkMultiplier": "Wuchtschlag-ANG-Multiplikator",
+      "diveAtkMultiplier": "Sturz-ANG-Multiplikator"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
-        "seq3Stagger": "SEQ 3 – Taumeln",
-        "physicalSusceptibility": "Physisch-Empfänglichkeit",
-        "physicalSusceptibilityDurationS": "Dauer der Physisch-Empfänglichkeit (Sek.)"
-      },
       "name": "Trüber Avatar",
-      "description": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner außerdem mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt."
+      "description": "Schwingt mehrfach die Stangenwaffe, um zwei Treffer mit <@ba.pd>Physischem SDN</> zu verursachen. Schlägt dann auf den Boden, um allen Gegnern im Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zuzufügen. \nWenn der vom letzten Treffer dieser Fertigkeit getroffene Gegner keine <#ba.noguard>Anfälligkeit</>-Kumulierungen hat, wird dieser Gegner außerdem mit <#ba.physicalvul>Physisch-Empfänglichkeit</> belegt.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq3DmgMultiplier": "SEQ-3-SDN-Multiplikator",
+      "seq3Stagger": "SEQ 3 – Taumeln",
+      "physicalSusceptibility": "Physisch-Empfänglichkeit",
+      "physicalSusceptibilityDurationS": "Dauer der Physisch-Empfänglichkeit (Sek.)"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "comboDurationS": "Kombodauer (Sek.)",
-        "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
-      },
       "name": "Aspekt des Zorns",
-      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <#ba.fracture>Brechen</> durchführt. \nEntfesselt einen Aspekt, der einen Speerstoß ausführt, der <@ba.pd>Physischen SDN</> verursacht und <#ba.combo>Verbunden</> gewährt."
+      "description": "KOMBOAUSLÖSER: Wenn der gesteuerte Operator einen <#ba.lastcombo>Abschlussangriff</> auf einen Gegner mit <#ba.physicalvul>Physisch-Empfänglichkeit</> oder <#ba.fracture>Brechen</> durchführt. \nEntfesselt einen Aspekt, der einen Speerstoß ausführt, der <@ba.pd>Physischen SDN</> verursacht und <#ba.combo>Verbunden</> gewährt.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "comboDurationS": "Kombodauer (Sek.)",
+      "ultimateEnergyGain": "Ultimative-Energie-Erhalt"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
-        "seq1Stagger": "SEQ 1 – Taumeln",
-        "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
-        "seq2Stagger": "SEQ 2 – Taumeln",
-        "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
-        "additionalAtkStagger": "Zusätzliches ANG-Taumeln"
-      },
       "name": "Herz des Regungslosen",
-      "description": "Entfesselt einen Aspekt, der einen Unbeweglicher-Vajra-Schlag ausführt. Der Schlag fügt allen Gegnern in einem großen Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zu und zieht dann alle Gegner in die Mitte des Bereichs. Nach einer Weile entfesselt der Schlag bei Gegnern im Wirkungsbereich erneut massiven <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</>.\nFalls die Fertigkeit eine <#ba.combo>Verbunden</>-Kumulierung <#ba.consume>verbraucht</>, wird ein weiterer Treffer ausgeführt, der massiven <@ba.pd>Physischen SDN</> verursacht."
+      "description": "Entfesselt einen Aspekt, der einen Unbeweglicher-Vajra-Schlag ausführt. Der Schlag fügt allen Gegnern in einem großen Wirkungsbereich <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</> zu und zieht dann alle Gegner in die Mitte des Bereichs. Nach einer Weile entfesselt der Schlag bei Gegnern im Wirkungsbereich erneut massiven <@ba.pd>Physischen SDN</> und <#ba.knockdown>Niederschlag</>.\nFalls die Fertigkeit eine <#ba.combo>Verbunden</>-Kumulierung <#ba.consume>verbraucht</>, wird ein weiterer Treffer ausgeführt, der massiven <@ba.pd>Physischen SDN</> verursacht.",
+      "seq1DmgMultiplier": "SEQ-1-SDN-Multiplikator",
+      "seq1Stagger": "SEQ 1 – Taumeln",
+      "seq2DmgMultiplier": "SEQ-2-SDN-Multiplikator",
+      "seq2Stagger": "SEQ 2 – Taumeln",
+      "additionalAtkDmgMultiplier": "Zusätzlicher ANG-SDN-Multiplikator",
+      "additionalAtkStagger": "Zusätzliches ANG-Taumeln"
     },
     "indicator": {
       "levels": [

@@ -27,53 +27,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Máu Sói Sôi Sục",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 5 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nĐòn Đánh Thường thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nĐòn Đánh Thường thi triển lên kẻ địch bị Suy Sụp trở thành tấn công kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "batkSeq5Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 5",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq1Stagger": "Suy Sụp Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2"
-      },
       "name": "Huyết Ảnh",
-      "description": "Lao đến mục tiêu để gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.airborne>Hất Tung</>.\nNếu mục tiêu đã có một hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>, kỹ năng sẽ giải phóng thêm <@ba.key>Hổ Phách Sói</> lao đến mục tiêu để gây <@ba.fire>ST Nhiệt</>."
+      "description": "Lao đến mục tiêu để gây <@ba.pd>ST Vật Lý</> và áp dụng <#ba.airborne>Hất Tung</>.\nNếu mục tiêu đã có một hoặc nhiều cộng dồn <#ba.noguard>Trừ Giáp</>, kỹ năng sẽ giải phóng thêm <@ba.key>Hổ Phách Sói</> lao đến mục tiêu để gây <@ba.fire>ST Nhiệt</>.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq1Stagger": "Suy Sụp Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq1UltimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm/Tầng Nhiễm",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2",
-        "criticalRateBoost": "Tăng Cường Tỷ Lệ Bạo Kích",
-        "criticalDmgBoost": "Tăng Cường ST Bạo Kích",
-        "buffDurationS": "Hiệu Lực Buff (giây)",
-        "seq2UltimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ Chuỗi Công 2"
-      },
       "name": "Khoảnh Khắc Liệt Ảnh",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch trúng cả tầng <#ba.noguard>Trừ Giáp</> và <#ba.spellinflict>Nhiễm Thuật Pháp</>.\nKN liên hoàn của Rossi sẽ có 2 chuỗi đòn liên tiếp. CHUỖI LIÊN HOÀN 1 gây <@ba.pd>ST Vật Lý</> lên mục tiêu.\nCHUỖI LIÊN HOÀN 2 <#ba.consume>giải trừ</> hết số tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> cho mục tiêu, gây <@ba.pd>ST Vật Lý</> tương ứng với số tầng Nhiễm Thuật Pháp <#ba.consume>đã giải trừ</>, gây 1 lần <#ba.airborne>Hất Tung</>, đồng thời cùng lúc buff Tỷ Lệ Bạo Kích và ST Bạo Kích của Rossi.\nNếu thi triển CHUỖI LIÊN HOÀN 2 bằng cách <@ba.key>căn chuẩn</> thì áp dụng thêm 1 tầng <#ba.noguard>Trừ Giáp</>."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch trúng cả tầng <#ba.noguard>Trừ Giáp</> và <#ba.spellinflict>Nhiễm Thuật Pháp</>.\nKN liên hoàn của Rossi sẽ có 2 chuỗi đòn liên tiếp. CHUỖI LIÊN HOÀN 1 gây <@ba.pd>ST Vật Lý</> lên mục tiêu.\nCHUỖI LIÊN HOÀN 2 <#ba.consume>giải trừ</> hết số tầng <#ba.spellinflict>Nhiễm Thuật Pháp</> cho mục tiêu, gây <@ba.pd>ST Vật Lý</> tương ứng với số tầng Nhiễm Thuật Pháp <#ba.consume>đã giải trừ</>, gây 1 lần <#ba.airborne>Hất Tung</>, đồng thời cùng lúc buff Tỷ Lệ Bạo Kích và ST Bạo Kích của Rossi.\nNếu thi triển CHUỖI LIÊN HOÀN 2 bằng cách <@ba.key>căn chuẩn</> thì áp dụng thêm 1 tầng <#ba.noguard>Trừ Giáp</>.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq1UltimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "bonusDmgMultiplierPerInflictionStack": "Hệ Số ST Cộng Thêm/Tầng Nhiễm",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2",
+      "criticalRateBoost": "Tăng Cường Tỷ Lệ Bạo Kích",
+      "criticalDmgBoost": "Tăng Cường ST Bạo Kích",
+      "buffDurationS": "Hiệu Lực Buff (giây)",
+      "seq2UltimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ Chuỗi Công 2"
     },
     "ultimate": {
-      "ultimate": {
-        "stabAttackTotalDmgMultiplier": "Tổng Hệ Số ST Đòn Đâm",
-        "seq1SlashDmgMultiplier": "Hệ Số ST Chém Chuỗi Công 1",
-        "seq2SlashDmgMultiplier": "Hệ Số ST Chém Chuỗi Công 2",
-        "stagger": "Suy Sụp",
-        "criticalDmgBoost": "Tăng Cường ST Bạo Kích"
-      },
       "name": "Lợi Trảo Tập Kích",
-      "description": "Rossi tung áo choàng và phóng một loạt đòn đâm liên tiếp trong thời gian ngắn để gây nhiều chuỗi <@ba.fire>ST Nhiệt</> lên kẻ địch. Sau đó thi triển một đòn tấn công hai chuỗi bằng dao găm, gây <@ba.fire>ST Nhiệt</> lớn và <#ba.fireinflict>Nhiễm Nhiệt</>.\n<@ba.info>Khi kỹ năng này thành công đạt bạo kích sẽ gây ST Bạo Kích cao hơn.</>"
+      "description": "Rossi tung áo choàng và phóng một loạt đòn đâm liên tiếp trong thời gian ngắn để gây nhiều chuỗi <@ba.fire>ST Nhiệt</> lên kẻ địch. Sau đó thi triển một đòn tấn công hai chuỗi bằng dao găm, gây <@ba.fire>ST Nhiệt</> lớn và <#ba.fireinflict>Nhiễm Nhiệt</>.\n<@ba.info>Khi kỹ năng này thành công đạt bạo kích sẽ gây ST Bạo Kích cao hơn.</>",
+      "stabAttackTotalDmgMultiplier": "Tổng Hệ Số ST Đòn Đâm",
+      "seq1SlashDmgMultiplier": "Hệ Số ST Chém Chuỗi Công 1",
+      "seq2SlashDmgMultiplier": "Hệ Số ST Chém Chuỗi Công 2",
+      "stagger": "Suy Sụp",
+      "criticalDmgBoost": "Tăng Cường ST Bạo Kích"
     },
     "indicator": {
       "levels": [

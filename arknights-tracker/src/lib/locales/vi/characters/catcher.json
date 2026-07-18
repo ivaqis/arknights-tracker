@@ -25,53 +25,45 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
-        "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
-        "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
-        "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
-        "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
-        "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
-      },
       "name": "Chiến Thuật Cơ Bản",
-      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN."
+      "description": "ĐÒN ĐÁNH THƯỜNG: \nMột đòn tấn công gồm tối đa 4 chuỗi gây <@ba.pd>ST Vật Lý</>. Với cán viên đang điều khiển, <#ba.lastcombo>Đòn Dứt Điểm</> cũng gây <@ba.poise>{poise:0}</> Suy Sụp. \n\nĐÒN BỔ NHÀO: \nTấn Công Cơ Bản thi triển trên không trở thành đòn bổ nhào gây <@ba.pd>ST Vật Lý</> cho kẻ địch gần đó. \n\nKẾT LIỄU: \nTấn Công Cơ Bản thi triển lên kẻ địch bị Suy Sụp trở thành kết liễu gây lượng lớn <@ba.pd>ST Vật Lý</> và hồi một phần Điểm KN.",
+      "batkSeq1Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 1",
+      "batkSeq2Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 2",
+      "batkSeq3Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 3",
+      "batkSeq4Multiplier": "Hệ Số Chuỗi Đòn Đánh Thường 4",
+      "finisherAtkMultiplier": "Hệ Số Đòn Kết Liễu",
+      "diveAtkMultiplier": "Hệ Số Đòn Bổ Nhào"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Hệ Số ST",
-        "stagger": "Suy Sụp",
-        "protection": "Bảo Hộ",
-        "spReturn": "Điểm KN Hoàn Trả"
-      },
       "name": "Trấn Áp Cứng",
-      "description": "Dựng khiên chặn đòn, tự thêm <#ba.guard>Bảo Hộ</> cho bản thân và cán viên lân cận, đồng thời lập tức <#ba.return>hồi</> một lượng KN. \nKhi bị tấn công trong lúc khiên đã được dựng, tung phản kích húc gây <@ba.pd>ST Vật Lý</> và cộng 1 điểm cộng dồn <#ba.noguard>Trừ Giáp</> lên kẻ tấn công."
+      "description": "Dựng khiên chặn đòn, tự thêm <#ba.guard>Bảo Hộ</> cho bản thân và cán viên lân cận, đồng thời lập tức <#ba.return>hồi</> một lượng KN. \nKhi bị tấn công trong lúc khiên đã được dựng, tung phản kích húc gây <@ba.pd>ST Vật Lý</> và cộng 1 điểm cộng dồn <#ba.noguard>Trừ Giáp</> lên kẻ tấn công.",
+      "dmgMultiplier": "Hệ Số ST",
+      "stagger": "Suy Sụp",
+      "protection": "Bảo Hộ",
+      "spReturn": "Điểm KN Hoàn Trả"
     },
     "comboSkill": {
-      "comboSkill": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "stagger": "Suy Sụp",
-        "baseShield": "Khiên Cơ Bản",
-        "shieldIncreasePerDefense": "Tăng Khiên Theo Điểm Thủ",
-        "shieldDurationS": "Thời Gian Hiệu Lực Của Khiên (giây)",
-        "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
-      },
       "name": "Áp Chế Đúng Thời Điểm",
-      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch bắt đầu tụ kỹ, hoặc khi cán viên đang điều khiển bị tấn công còn dưới {trigger_hp_ratio:0%} HP. \nTung cú đấm từ trên xuống gây <@ba.pd>ST Vật Lý</> cho kẻ địch, đồng thời tạo <#ba.shield>khiên</> bảo vệ cho bản thân và một đồng đội (ưu tiên cán viên đang điều khiển).\nPhòng Thủ tăng thêm lượng khiên nhận được."
+      "description": "KÍCH HOẠT LIÊN HOÀN: Khi kẻ địch bắt đầu tụ kỹ, hoặc khi cán viên đang điều khiển bị tấn công còn dưới {trigger_hp_ratio:0%} HP. \nTung cú đấm từ trên xuống gây <@ba.pd>ST Vật Lý</> cho kẻ địch, đồng thời tạo <#ba.shield>khiên</> bảo vệ cho bản thân và một đồng đội (ưu tiên cán viên đang điều khiển).\nPhòng Thủ tăng thêm lượng khiên nhận được.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "stagger": "Suy Sụp",
+      "baseShield": "Khiên Cơ Bản",
+      "shieldIncreasePerDefense": "Tăng Khiên Theo Điểm Thủ",
+      "shieldDurationS": "Thời Gian Hiệu Lực Của Khiên (giây)",
+      "ultimateEnergyGain": "Tăng Năng Lượng Tuyệt Kỹ"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
-        "seq1Stagger": "Suy Sụp Chuỗi Công 1",
-        "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
-        "seq2Stagger": "Suy Sụp Chuỗi Công 2",
-        "seq3DmgMultiplier": "Hệ Số ST Chuỗi Công 3",
-        "seq3Stagger": "Suy Sụp Chuỗi Công 3",
-        "weaknessEffect": "Hiệu Ứng Suy Yếu",
-        "weaknessDurationS": "Thời Gian Suy Yếu (giây)"
-      },
       "name": "Đột Kích Chuẩn Giáo Trình",
-      "description": "Vung thanh đại kiếm, chém liên tiếp 2 nhát gây <@ba.pd>ST Vật Lý</> và gây hiệu ứng <#ba.weak>Suy Yếu</>, sau đó đâm mạnh kiếm từ trên xuống gây lượng lớn <@ba.pd>ST Vật Lý</> và gây hiệu ứng <#ba.knockdown>Quật Ngã</> lên mọi kẻ địch trong vùng ảnh hưởng."
+      "description": "Vung thanh đại kiếm, chém liên tiếp 2 nhát gây <@ba.pd>ST Vật Lý</> và gây hiệu ứng <#ba.weak>Suy Yếu</>, sau đó đâm mạnh kiếm từ trên xuống gây lượng lớn <@ba.pd>ST Vật Lý</> và gây hiệu ứng <#ba.knockdown>Quật Ngã</> lên mọi kẻ địch trong vùng ảnh hưởng.",
+      "seq1DmgMultiplier": "Hệ Số ST Chuỗi Công 1",
+      "seq1Stagger": "Suy Sụp Chuỗi Công 1",
+      "seq2DmgMultiplier": "Hệ Số ST Chuỗi Công 2",
+      "seq2Stagger": "Suy Sụp Chuỗi Công 2",
+      "seq3DmgMultiplier": "Hệ Số ST Chuỗi Công 3",
+      "seq3Stagger": "Suy Sụp Chuỗi Công 3",
+      "weaknessEffect": "Hiệu Ứng Suy Yếu",
+      "weaknessDurationS": "Thời Gian Suy Yếu (giây)"
     },
     "indicator": {
       "levels": [

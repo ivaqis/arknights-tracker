@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Danza della brina",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.cryst>danni da ghiaccio</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.cryst>danni da ghiaccio</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.cryst>danni da ghiaccio</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo miraggio",
-        "spReturn": "Restituzione PA",
-        "durationS": "Durata (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Lascito esoterico di Seš'qa",
-      "description": "Esegue una <@ba.key>Perfusione ipotermica</> sull'arma dell'operatore controllato e <#ba.return>restituisce</> parte dei PA. \nIl successivo <#ba.lastcombo>Colpo finale</> eseguito dall'operatore controllato, entro un certo periodo di tempo, evoca i Miraggi di Last Rite, scatenando un attacco aggiuntivo contro il bersaglio. Questo attacco infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</>. \nQuando l'operatore controllato è Last Rite stessa, l'uso di questa abilità di combattimento non ripristina la sequenza dei suoi attacchi base."
+      "description": "Esegue una <@ba.key>Perfusione ipotermica</> sull'arma dell'operatore controllato e <#ba.return>restituisce</> parte dei PA. \nIl successivo <#ba.lastcombo>Colpo finale</> eseguito dall'operatore controllato, entro un certo periodo di tempo, evoca i Miraggi di Last Rite, scatenando un attacco aggiuntivo contro il bersaglio. Questo attacco infligge <@ba.cryst>danni da ghiaccio</> e applica <#ba.crystinflict>Afflizione da ghiaccio</>. \nQuando l'operatore controllato è Last Rite stessa, l'uso di questa abilità di combattimento non ripristina la sequenza dei suoi attacchi base.",
+      "mirageAdditionalAtkDmgMultiplier": "Moltiplicatore danni ATT aggiuntivo miraggio",
+      "spReturn": "Restituzione PA",
+      "durationS": "Durata (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Moltiplicatore danni Frammento di ghiaccio",
-        "slashBaseDmgMultiplier": "Moltiplicatore danni fendente base",
-        "slashStagger": "Vacillamento fendente",
-        "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
-        "baseUltimateEnergyGain": "Incremento energia suprema base",
-        "additionalUltimateEnergyGainPerInflictionStack": "Incremento energia suprema per accumulo di Afflizione aggiuntivo"
-      },
       "name": "Divoratrice dell'inverno",
-      "description": "ATTIVAZIONE COMBO: quando un nemico ha {count:0} o più accumuli di <#ba.crystinflict>Afflizione da ghiaccio</>. \nIntrappola il nemico bersaglio in uno spuntone di ghiaccio e lo frantuma, <#ba.consume>consumando</> tutti gli accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> di quel nemico. Il numero di accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> <#ba.consume>consumati</> determina la quantità di <@ba.cryst>danni da ghiaccio</> inflitta al nemico e l'energia suprema che ottiene Last Rite."
+      "description": "ATTIVAZIONE COMBO: quando un nemico ha {count:0} o più accumuli di <#ba.crystinflict>Afflizione da ghiaccio</>. \nIntrappola il nemico bersaglio in uno spuntone di ghiaccio e lo frantuma, <#ba.consume>consumando</> tutti gli accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> di quel nemico. Il numero di accumuli di <#ba.crystinflict>Afflizione da ghiaccio</> <#ba.consume>consumati</> determina la quantità di <@ba.cryst>danni da ghiaccio</> inflitta al nemico e l'energia suprema che ottiene Last Rite.",
+      "iceShardDmgMultiplier": "Moltiplicatore danni Frammento di ghiaccio",
+      "slashBaseDmgMultiplier": "Moltiplicatore danni fendente base",
+      "slashStagger": "Vacillamento fendente",
+      "bonusDmgMultiplierPerInflictionStack": "Moltiplicatore danni bonus per accumulo di Afflizione",
+      "baseUltimateEnergyGain": "Incremento energia suprema base",
+      "additionalUltimateEnergyGainPerInflictionStack": "Incremento energia suprema per accumulo di Afflizione aggiuntivo"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
-        "seq1Stagger": "Vacillamento SEQ 1",
-        "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
-        "seq2Stagger": "Vacillamento SEQ 2",
-        "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
-        "seq3Stagger": "Vacillamento SEQ 3"
-      },
       "name": "Servizi di sorveglianza",
-      "description": "Last Rite indossa un'armatura di ghiaccio e crea una falce ghiacciata per eseguire 3 sferzate. Mentre questo stato è attivo, ottiene l'immunità a tutti i danni. \nOgni sferzata infligge ingenti <@ba.cryst>danni da ghiaccio</>. \n<@ba.info>Last Rite può ottenere energia suprema solo grazie alle proprie abilità di combattimento e abilità combo.</>"
+      "description": "Last Rite indossa un'armatura di ghiaccio e crea una falce ghiacciata per eseguire 3 sferzate. Mentre questo stato è attivo, ottiene l'immunità a tutti i danni. \nOgni sferzata infligge ingenti <@ba.cryst>danni da ghiaccio</>. \n<@ba.info>Last Rite può ottenere energia suprema solo grazie alle proprie abilità di combattimento e abilità combo.</>",
+      "seq1DmgMultiplier": "Moltiplicatore danni SEQ 1",
+      "seq1Stagger": "Vacillamento SEQ 1",
+      "seq2DmgMultiplier": "Moltiplicatore danni SEQ 2",
+      "seq2Stagger": "Vacillamento SEQ 2",
+      "seq3DmgMultiplier": "Moltiplicatore danni SEQ 3",
+      "seq3Stagger": "Vacillamento SEQ 3"
     },
     "indicator": {
       "levels": [

@@ -27,48 +27,40 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "普攻第一段倍率",
-        "batkSeq2Multiplier": "普攻第二段倍率",
-        "batkSeq3Multiplier": "普攻第三段倍率",
-        "batkSeq4Multiplier": "普攻第四段倍率",
-        "batkSeq5Multiplier": "普攻第五段倍率",
-        "finisherAtkMultiplier": "處決攻擊倍率",
-        "diveAtkMultiplier": "下墜攻擊倍率"
-      },
       "name": "冷卻",
-      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。"
+      "description": "普通攻擊：\n對敵人進行最多5段攻擊，造成<@ba.cryst>寒冷傷害</>。作為主控幹員時，<#ba.lastcombo>重擊</>會造成<@ba.poise>{poise:0}</>點失衡。\n\n下墜攻擊：\n處於空中時使用普通攻擊，會下落並攻擊附近敵人，造成<@ba.cryst>寒冷傷害</>。\n\n處決攻擊：\n附近有敵人處於失衡狀態時使用普通攻擊，將處決該敵人，造成大量<@ba.cryst>寒冷傷害</>並回復一定技力。",
+      "batkSeq1Multiplier": "普攻第一段倍率",
+      "batkSeq2Multiplier": "普攻第二段倍率",
+      "batkSeq3Multiplier": "普攻第三段倍率",
+      "batkSeq4Multiplier": "普攻第四段倍率",
+      "batkSeq5Multiplier": "普攻第五段倍率",
+      "finisherAtkMultiplier": "處決攻擊倍率",
+      "diveAtkMultiplier": "下墜攻擊倍率"
     },
     "battleSkill": {
-      "battleSkill": {
-        "baseTreatment": "基礎治療值",
-        "treatmentIncreasePerWill": "每點意志增加的治療值",
-        "auxiliaryCrystalDurationS": "支援晶體持續時間（秒）",
-        "artsAmp": "法術增幅效果",
-        "artsAmpDurationS": "法術增幅持續時間（秒）"
-      },
       "name": "分散式阻斷服務",
-      "description": "召喚<@ba.key>支援晶體</>在一段時間內環繞主控幹員。\n當主控幹員對敵人造成<#ba.lastcombo>重擊</>後<@ba.key>支援晶體</>為其回復生命值，該效果最多可觸發2次。意志可以額外提高治療量。\n若觸發回復時主控幹員生命值已滿，則額外對其施加一段時間的<#ba.spellenhance>法術增幅</>，該效果無法疊加。"
+      "description": "召喚<@ba.key>支援晶體</>在一段時間內環繞主控幹員。\n當主控幹員對敵人造成<#ba.lastcombo>重擊</>後<@ba.key>支援晶體</>為其回復生命值，該效果最多可觸發2次。意志可以額外提高治療量。\n若觸發回復時主控幹員生命值已滿，則額外對其施加一段時間的<#ba.spellenhance>法術增幅</>，該效果無法疊加。",
+      "baseTreatment": "基礎治療值",
+      "treatmentIncreasePerWill": "每點意志增加的治療值",
+      "auxiliaryCrystalDurationS": "支援晶體持續時間（秒）",
+      "artsAmp": "法術增幅效果",
+      "artsAmpDurationS": "法術增幅持續時間（秒）"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "傷害倍率",
-        "stagger": "失衡值",
-        "ultimateEnergyGain": "獲得終結技能量"
-      },
       "name": "壓力測試",
-      "description": "當<@ba.key>支援晶體</>的生命回復次數耗盡後可以發動。\n短暫蓄力後將<@ba.key>支援晶體</>丟向敵人，造成<@ba.cryst>寒冷傷害</>並施加<#ba.crystinflict>寒冷附著</>。"
+      "description": "當<@ba.key>支援晶體</>的生命回復次數耗盡後可以發動。\n短暫蓄力後將<@ba.key>支援晶體</>丟向敵人，造成<@ba.cryst>寒冷傷害</>並施加<#ba.crystinflict>寒冷附著</>。",
+      "dmgMultiplier": "傷害倍率",
+      "stagger": "失衡值",
+      "ultimateEnergyGain": "獲得終結技能量"
     },
     "ultimate": {
-      "ultimate": {
-        "baseCryoAmp": "基礎寒冷增幅效果",
-        "baseNatureAmp": "基礎自然增幅效果",
-        "ampIncreasePerIntellect": "每點智識提升的增幅效果",
-        "intellectRaisesAmpLimit": "智識提升增幅上限",
-        "durationS": "持續時間（秒）"
-      },
       "name": "堆疊溢位",
-      "description": "對全隊施加一段時間的<#ba.crystenhance>寒冷增幅</>和<#ba.naturalenhance>自然增幅</>，智識可以額外提高該增幅效果。"
+      "description": "對全隊施加一段時間的<#ba.crystenhance>寒冷增幅</>和<#ba.naturalenhance>自然增幅</>，智識可以額外提高該增幅效果。",
+      "baseCryoAmp": "基礎寒冷增幅效果",
+      "baseNatureAmp": "基礎自然增幅效果",
+      "ampIncreasePerIntellect": "每點智識提升的增幅效果",
+      "intellectRaisesAmpLimit": "智識提升增幅上限",
+      "durationS": "持續時間（秒）"
     },
     "indicator": {
       "levels": [

@@ -24,46 +24,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale"
-      },
       "name": "Pugnomante delle lame",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale"
     },
     "battleSkill": {
-      "battleSkill": {
-        "cloudtrapperDmgMultiplier": "Moltiplicatore danni Catturanubi",
-        "trailAndMangleDmgMultiplier": "Moltiplicatore danni Inseguimento dilaniante",
-        "trailAndMangleStagger": "Vacillamento Inseguimento dilaniante",
-        "worldSplitterDmgMultiplier": "Moltiplicatore danni Fendimondo",
-        "worldSplitterStagger": "Vacillamento Fendimondo"
-      },
       "name": "Triade di Qingbo",
-      "description": "Continua a usare l'abilità di combattimento di Mi Fu per scatenare tre mosse diverse. La prima abilità di combattimento usata è <@ba.key>Catturanubi</>.\n<@ba.key>MOSSA 1 - Catturanubi</>: costa <@ba.vup>100</> PA e <#ba.return>ripristina</><@ba.vup> 50</> PA dopo l'uso. Mi Fu lancia una catena uncinata dai suoi coprimani, infliggendo <@ba.pd>danni fisici</> al bersaglio e ai nemici nelle vicinanze e tentando di trascinare il bersaglio e i nemici vicini verso di sé. Dopo l'uso della MOSSA 1, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>.\n<@ba.key>MOSSA 2 - Inseguimento dilaniante</>: costa <@ba.vup>50</> PA; Mi Fu sferra una raffica di pugni che infligge <@ba.pd>danni fisici</>, applicando <#ba.crush>Distruzione</> con il pugno finale. Se Distruzione <#ba.consume>consuma</> almeno 3 accumuli di <#ba.noguard>Vulnerabilità</> da un singolo bersaglio, l'abilità di combattimento successiva viene sostituita da <@ba.key>Fendimondo</>.\n<@ba.key>MOSSA 3 - Fendimondo</>: costa <@ba.vup>50</> PA; Mi Fu infligge <@ba.pd>danni fisici</> ingenti in uno specifico raggio d'azione. Questi danni non sono considerati danni da abilità di combattimento, ma danni da <#ba.crush>Distruzione</>."
+      "description": "Continua a usare l'abilità di combattimento di Mi Fu per scatenare tre mosse diverse. La prima abilità di combattimento usata è <@ba.key>Catturanubi</>.\n<@ba.key>MOSSA 1 - Catturanubi</>: costa <@ba.vup>100</> PA e <#ba.return>ripristina</><@ba.vup> 50</> PA dopo l'uso. Mi Fu lancia una catena uncinata dai suoi coprimani, infliggendo <@ba.pd>danni fisici</> al bersaglio e ai nemici nelle vicinanze e tentando di trascinare il bersaglio e i nemici vicini verso di sé. Dopo l'uso della MOSSA 1, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>.\n<@ba.key>MOSSA 2 - Inseguimento dilaniante</>: costa <@ba.vup>50</> PA; Mi Fu sferra una raffica di pugni che infligge <@ba.pd>danni fisici</>, applicando <#ba.crush>Distruzione</> con il pugno finale. Se Distruzione <#ba.consume>consuma</> almeno 3 accumuli di <#ba.noguard>Vulnerabilità</> da un singolo bersaglio, l'abilità di combattimento successiva viene sostituita da <@ba.key>Fendimondo</>.\n<@ba.key>MOSSA 3 - Fendimondo</>: costa <@ba.vup>50</> PA; Mi Fu infligge <@ba.pd>danni fisici</> ingenti in uno specifico raggio d'azione. Questi danni non sono considerati danni da abilità di combattimento, ma danni da <#ba.crush>Distruzione</>.",
+      "cloudtrapperDmgMultiplier": "Moltiplicatore danni Catturanubi",
+      "trailAndMangleDmgMultiplier": "Moltiplicatore danni Inseguimento dilaniante",
+      "trailAndMangleStagger": "Vacillamento Inseguimento dilaniante",
+      "worldSplitterDmgMultiplier": "Moltiplicatore danni Fendimondo",
+      "worldSplitterStagger": "Vacillamento Fendimondo"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "physicalSusceptibility": "Suscettibilità fisica",
-        "physicalSusceptibilityDurationS": "Durata Suscettibilità fisica (s)",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Pugni senza rimorsi",
-      "description": "ATTIVAZIONE COMBO: quando un nemico ha 3 o più accumuli di <#ba.noguard>Vulnerabilità</>.\nMi Fu colpisce il nemico con un fendente devastante, infliggendo <@ba.pd>danni fisici</> e applicando temporaneamente <#ba.physicalvul>Suscettibilità fisica</>. Dopo aver usato questa abilità, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>."
+      "description": "ATTIVAZIONE COMBO: quando un nemico ha 3 o più accumuli di <#ba.noguard>Vulnerabilità</>.\nMi Fu colpisce il nemico con un fendente devastante, infliggendo <@ba.pd>danni fisici</> e applicando temporaneamente <#ba.physicalvul>Suscettibilità fisica</>. Dopo aver usato questa abilità, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "physicalSusceptibility": "Suscettibilità fisica",
+      "physicalSusceptibilityDurationS": "Durata Suscettibilità fisica (s)",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento"
-      },
       "name": "Schianto spietato",
-      "description": "Dopo un breve potenziamento, Mi Fu scatta in avanti per applicare forzatamente <#ba.airborne>Sospensione</> a un bersaglio scagliandolo in aria, per poi scaraventarlo con violenza infliggendo <@ba.pd>danni fisici</>. Dopo l'uso di questa abilità, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>."
+      "description": "Dopo un breve potenziamento, Mi Fu scatta in avanti per applicare forzatamente <#ba.airborne>Sospensione</> a un bersaglio scagliandolo in aria, per poi scaraventarlo con violenza infliggendo <@ba.pd>danni fisici</>. Dopo l'uso di questa abilità, l'abilità di combattimento successiva viene temporaneamente sostituita da <@ba.key>Inseguimento dilaniante</>.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento"
     },
     "indicator": {
       "levels": [

@@ -26,50 +26,42 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
-        "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
-        "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
-        "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
-        "finisherAtkMultiplier": "Multiplicador ATQ Remate",
-        "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
-      },
       "name": "Baile de la escarcha",
-      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH."
+      "description": "ATAQUE BÁSICO: \nUn ataque con hasta 4 secuencias que inflige <@ba.cryst>DAÑ criogénico</>. Como operador controlado, el <#ba.lastcombo>Golpe final</> también inflige <@ba.poise>{poise:0}</> Tambaleo. \n\nATAQUE DE INMERSIÓN \nUn ataque básico ejecutado en el aire se convierte en un Ataque de inmersión que inflige <@ba.cryst>DAÑ criogénico</> a los enemigos cercanos. \n\nREMATE: \nEl ataque básico realizado cerca de un enemigo Tambaleado se convierte en un ataque de remate que inflige mucho <@ba.cryst>DAÑ criogénico</> y recupera algunos PH.",
+      "batkSeq1Multiplier": "Multiplicador ATQB SEC 1",
+      "batkSeq2Multiplier": "Multiplicador ATQB SEC 2",
+      "batkSeq3Multiplier": "Multiplicador ATQB SEC 3",
+      "batkSeq4Multiplier": "Multiplicador ATQB SEC 4",
+      "finisherAtkMultiplier": "Multiplicador ATQ Remate",
+      "diveAtkMultiplier": "Multiplicador ATQ de Inmersión"
     },
     "battleSkill": {
-      "battleSkill": {
-        "mirageAdditionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional de Espejismo",
-        "spReturn": "Retorno de PH",
-        "durationS": "Duración (s)",
-        "ultimateEnergyGain": "Ganancia de Energía máxima"
-      },
       "name": "Legado esotérico de Seš'qa",
-      "description": "Realiza una <@ba.key>Perfusión hipotérmica</> en el arma del operador controlado y <#ba.return>devuelve</> algunos PH. \nEl siguiente <#ba.lastcombo>Golpe final</> que realice el operador controlado actual dentro de cierta duración crea los Espejismos de Last Rite, que desatan un ataque adicional contra el objetivo. Este ataque inflige <@ba.cryst>DAÑ criogénico</> y aplica <#ba.crystinflict>Imposición criogénica</>. \nCuando la operadora controlada es la propia Last Rite, lanzar esta habilidad de batalla no reinicia su secuencia de ataque básico."
+      "description": "Realiza una <@ba.key>Perfusión hipotérmica</> en el arma del operador controlado y <#ba.return>devuelve</> algunos PH. \nEl siguiente <#ba.lastcombo>Golpe final</> que realice el operador controlado actual dentro de cierta duración crea los Espejismos de Last Rite, que desatan un ataque adicional contra el objetivo. Este ataque inflige <@ba.cryst>DAÑ criogénico</> y aplica <#ba.crystinflict>Imposición criogénica</>. \nCuando la operadora controlada es la propia Last Rite, lanzar esta habilidad de batalla no reinicia su secuencia de ataque básico.",
+      "mirageAdditionalAtkDmgMultiplier": "Multiplicador de DAÑ de ATQ adicional de Espejismo",
+      "spReturn": "Retorno de PH",
+      "durationS": "Duración (s)",
+      "ultimateEnergyGain": "Ganancia de Energía máxima"
     },
     "comboSkill": {
-      "comboSkill": {
-        "iceShardDmgMultiplier": "Multiplicador de DAÑ de fragmento de hielo",
-        "slashBaseDmgMultiplier": "Multiplicador de DAÑ base por corte",
-        "slashStagger": "Tambaleo por corte",
-        "bonusDmgMultiplierPerInflictionStack": "Multiplicador de DAÑ adicional por Acumulación de imposición",
-        "baseUltimateEnergyGain": "Ganancia de energía máxima base",
-        "additionalUltimateEnergyGainPerInflictionStack": "Ganancia adicional de Energía máxima por Acumulación de imposición"
-      },
       "name": "Devoradora invernal",
-      "description": "ACTIVADOR DE COMBO: Cuando un enemigo tiene {count:0} o más acumulaciones de <#ba.crystinflict>Imposición criogénica</>. \nEncierra al enemigo objetivo en carámbanos y los hace añicos para <#ba.consume>consumir</> todas las acumulaciones de <#ba.crystinflict>Imposición criogénica</> de ese enemigo. La cantidad de acumulaciones de <#ba.crystinflict>Imposición criogénica</> <#ba.consume>consumidas</> determina el <@ba.cryst>DAÑ criogénico</> infligido a ese enemigo y la Energía máxima que obtiene Last Rite."
+      "description": "ACTIVADOR DE COMBO: Cuando un enemigo tiene {count:0} o más acumulaciones de <#ba.crystinflict>Imposición criogénica</>. \nEncierra al enemigo objetivo en carámbanos y los hace añicos para <#ba.consume>consumir</> todas las acumulaciones de <#ba.crystinflict>Imposición criogénica</> de ese enemigo. La cantidad de acumulaciones de <#ba.crystinflict>Imposición criogénica</> <#ba.consume>consumidas</> determina el <@ba.cryst>DAÑ criogénico</> infligido a ese enemigo y la Energía máxima que obtiene Last Rite.",
+      "iceShardDmgMultiplier": "Multiplicador de DAÑ de fragmento de hielo",
+      "slashBaseDmgMultiplier": "Multiplicador de DAÑ base por corte",
+      "slashStagger": "Tambaleo por corte",
+      "bonusDmgMultiplierPerInflictionStack": "Multiplicador de DAÑ adicional por Acumulación de imposición",
+      "baseUltimateEnergyGain": "Ganancia de energía máxima base",
+      "additionalUltimateEnergyGainPerInflictionStack": "Ganancia adicional de Energía máxima por Acumulación de imposición"
     },
     "ultimate": {
-      "ultimate": {
-        "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
-        "seq1Stagger": "Tambaleo de SEC 1",
-        "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
-        "seq2Stagger": "Tambaleo de SEC 2",
-        "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
-        "seq3Stagger": "Tambaleo de SEC 3"
-      },
       "name": "Servicios de vigilancia",
-      "description": "Last Rite se recubre con una armadura de escarcha, crea una guadaña de hielo para realizar 3 cortes y obtiene inmunidad a todo tipo de DAÑ mientras este estado esté activo. \nCada corte inflige <@ba.cryst>DAÑ criogénico</> masivo. \n<@ba.info>Last Rite solo puede obtener Energía máxima de sus propias habilidades de batalla y habilidades de combo.</>"
+      "description": "Last Rite se recubre con una armadura de escarcha, crea una guadaña de hielo para realizar 3 cortes y obtiene inmunidad a todo tipo de DAÑ mientras este estado esté activo. \nCada corte inflige <@ba.cryst>DAÑ criogénico</> masivo. \n<@ba.info>Last Rite solo puede obtener Energía máxima de sus propias habilidades de batalla y habilidades de combo.</>",
+      "seq1DmgMultiplier": "Multiplicador de DAÑ SEC 1",
+      "seq1Stagger": "Tambaleo de SEC 1",
+      "seq2DmgMultiplier": "Multiplicador de DAÑ SEC 2",
+      "seq2Stagger": "Tambaleo de SEC 2",
+      "seq3DmgMultiplier": "Multiplicador de DAÑ SEC 3",
+      "seq3Stagger": "Tambaleo de SEC 3"
     },
     "indicator": {
       "levels": [

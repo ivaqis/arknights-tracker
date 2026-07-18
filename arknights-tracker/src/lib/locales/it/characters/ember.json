@@ -25,46 +25,38 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
-        "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
-        "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
-        "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
-        "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
-        "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
-      },
       "name": "Arte della spada d'assalto",
-      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA."
+      "description": "ATTACCO BASE: \nsequenza di massimo quattro attacchi che infliggono <@ba.pd>danni fisici</>. Quando controlli l'operatore, il <#ba.lastcombo>colpo finale</> infligge anche <@ba.poise>{poise:0}</> di Vacillamento. \n\nATTACCO DALL'ALTO: \ngli attacchi base eseguiti a mezz'aria diventano attacchi dall'alto che infliggono <@ba.pd>danni fisici</> ai nemici nelle vicinanze. \n\nMOSSA LETALE: \ngli attacchi base eseguiti vicino a un nemico Vacillante diventano mosse letali che infliggono ingenti <@ba.pd>danni fisici</> e ripristinano parzialmente i PA.",
+      "batkSeq1Multiplier": "Moltiplicatore SEQ ATTB 1",
+      "batkSeq2Multiplier": "Moltiplicatore SEQ ATTB 2",
+      "batkSeq3Multiplier": "Moltiplicatore SEQ ATTB 3",
+      "batkSeq4Multiplier": "Moltiplicatore SEQ ATTB 4",
+      "finisherAtkMultiplier": "Moltiplicatore ATT mossa letale",
+      "diveAtkMultiplier": "Moltiplicatore ATT dall'alto"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "additionalStaggerDealtWhenHit": "Vacillamento aggiuntivo colpo a segno"
-      },
       "name": "Marcia in avanti",
-      "description": "Un balzo seguito da un pesante colpo a terra che infligge <@ba.fire>danni da fuoco</>, <#ba.knockdown>Abbattimento</> e Vacillamento a tutti i nemici in un'area a ventaglio. \nSe Ember subisce danni dai nemici durante l'esecuzione dell'abilità, il colpo infligge più punti Vacillamento quando va a segno."
+      "description": "Un balzo seguito da un pesante colpo a terra che infligge <@ba.fire>danni da fuoco</>, <#ba.knockdown>Abbattimento</> e Vacillamento a tutti i nemici in un'area a ventaglio. \nSe Ember subisce danni dai nemici durante l'esecuzione dell'abilità, il colpo infligge più punti Vacillamento quando va a segno.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "additionalStaggerDealtWhenHit": "Vacillamento aggiuntivo colpo a segno"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "baseTreatment": "Cura base",
-        "treatmentIncreasePerWill": "Aumento Cura basato su Volontà",
-        "ultimateEnergyGain": "Incremento energia suprema"
-      },
       "name": "Supporto in prima linea",
-      "description": "ATTIVAZIONE COMBO: quando l'operatore che controlli viene attaccato. \nBalza accanto al bersaglio nemico e sferra un pesante colpo a terra che infligge <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</>, e conferisce Cura PS all'operatore che controlli. L'attributo Volontà aumenta la quantità di PS ripristinati."
+      "description": "ATTIVAZIONE COMBO: quando l'operatore che controlli viene attaccato. \nBalza accanto al bersaglio nemico e sferra un pesante colpo a terra che infligge <@ba.pd>danni fisici</> e <#ba.knockdown>Abbattimento</>, e conferisce Cura PS all'operatore che controlli. L'attributo Volontà aumenta la quantità di PS ripristinati.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "baseTreatment": "Cura base",
+      "treatmentIncreasePerWill": "Aumento Cura basato su Volontà",
+      "ultimateEnergyGain": "Incremento energia suprema"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplier": "Moltiplicatore danni",
-        "stagger": "Vacillamento",
-        "shieldConversionRatioHp": "Tasso di conversione scudo (PS)",
-        "shieldDurationS": "Durata scudo (s)"
-      },
       "name": "Promessa riaccesa",
-      "description": "Colpisce il terreno per infliggere <@ba.fire>danni da fuoco</> ai nemici vicini, mentre conferisce a tutti i compagni di squadra uno <#ba.shield>Scudo</> basato sui PS massimi di Ember."
+      "description": "Colpisce il terreno per infliggere <@ba.fire>danni da fuoco</> ai nemici vicini, mentre conferisce a tutti i compagni di squadra uno <#ba.shield>Scudo</> basato sui PS massimi di Ember.",
+      "dmgMultiplier": "Moltiplicatore danni",
+      "stagger": "Vacillamento",
+      "shieldConversionRatioHp": "Tasso di conversione scudo (PS)",
+      "shieldDurationS": "Durata scudo (s)"
     },
     "indicator": {
       "levels": [

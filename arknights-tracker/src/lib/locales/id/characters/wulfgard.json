@@ -26,43 +26,35 @@
   },
   "skills": {
     "basicAttack": {
-      "basicAttack": {
-        "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
-        "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
-        "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
-        "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
-        "finisherAtkMultiplier": "Pengganda ATK Penuntas",
-        "diveAtkMultiplier": "Pengganda ATK Menukik"
-      },
       "name": "Rapid Fire Akimbo",
-      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP."
+      "description": "SERANGAN DASAR: \nSerangan dengan maksimum 4 tahap yang akan menimbulkan <@ba.fire>Heat DMG</>. Jika digunakan oleh operator terkontrol, <#ba.lastcombo>Final Strike</> juga akan menimbulkan <@ba.poise>{poise:0}</> Stagger. \n\nSERANGAN MENUKIK: \nSerangan dasar yang dilancarkan sambil melayang akan menjadi serangan menukik yang akan menimbulkan <@ba.fire>Heat DMG</> kepada musuh di sekitar. \n\nPENUNTAS: \nSerangan dasar yang dilancarkan di dekat musuh yang terkena Staggered akan menjadi penuntas yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar dan memulihkan sebagian SP.",
+      "batkSeq1Multiplier": "Pengganda BATK SEQ 1",
+      "batkSeq2Multiplier": "Pengganda BATK SEQ 2",
+      "batkSeq3Multiplier": "Pengganda BATK SEQ 3",
+      "batkSeq4Multiplier": "Pengganda BATK SEQ 4",
+      "finisherAtkMultiplier": "Pengganda ATK Penuntas",
+      "diveAtkMultiplier": "Pengganda ATK Menukik"
     },
     "battleSkill": {
-      "battleSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
-        "additionalAtkStagger": "Tambahan ATK Stagger"
-      },
       "name": "Thermite Tracers",
-      "description": "Melepaskan sejumlah tembakan kepada target sehingga akan menimbulkan <@ba.fire>Heat DMG</>. Tembakan terakhir juga akan mengakibatkan <#ba.fireinflict>Heat Infliction</>. Jika target sedang terkena <#ba.burning>Combustion</> atau <#ba.conduct>Electrification</>, jangan akibatkan <#ba.fireinflict>Heat Infliction</> tapi <#ba.consume>pakai</> Arts Reaction untuk melepaskan satu tembakan lagi yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar."
+      "description": "Melepaskan sejumlah tembakan kepada target sehingga akan menimbulkan <@ba.fire>Heat DMG</>. Tembakan terakhir juga akan mengakibatkan <#ba.fireinflict>Heat Infliction</>. Jika target sedang terkena <#ba.burning>Combustion</> atau <#ba.conduct>Electrification</>, jangan akibatkan <#ba.fireinflict>Heat Infliction</> tapi <#ba.consume>pakai</> Arts Reaction untuk melepaskan satu tembakan lagi yang akan menimbulkan <@ba.fire>Heat DMG</> sangat besar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "additionalAtkDmgMultiplier": "Tambahan Pengganda ATK DMG",
+      "additionalAtkStagger": "Tambahan ATK Stagger"
     },
     "comboSkill": {
-      "comboSkill": {
-        "dmgMultiplier": "Pengganda DMG",
-        "stagger": "Stagger",
-        "ultimateEnergyGain": "Perolehan Energi Ultimate"
-      },
       "name": "Frag Grenade·β",
-      "description": "PEMICU KOMBO: Saat satu musuh terkena <#ba.spellinflict>Arts Infliction</>. \nMelemparkan granat api ke lokasi target. Granat akan meledak saat menghantam tanah sehingga akan menimbulkan <@ba.fire>Heat DMG</> dan <#ba.fireinflict>Heat Infliction</> kepada musuh di sekitar."
+      "description": "PEMICU KOMBO: Saat satu musuh terkena <#ba.spellinflict>Arts Infliction</>. \nMelemparkan granat api ke lokasi target. Granat akan meledak saat menghantam tanah sehingga akan menimbulkan <@ba.fire>Heat DMG</> dan <#ba.fireinflict>Heat Infliction</> kepada musuh di sekitar.",
+      "dmgMultiplier": "Pengganda DMG",
+      "stagger": "Stagger",
+      "ultimateEnergyGain": "Perolehan Energi Ultimate"
     },
     "ultimate": {
-      "ultimate": {
-        "dmgMultiplierPerSeq": "Pengganda DMG per SEQ",
-        "stagger": "Stagger"
-      },
       "name": "Wolven Fury",
-      "description": "Melepaskan rentetan tembakan cepat dan melepaskan <@ba.key>Wolven Fury</> untuk menyerang musuh di sekitar sehingga akan menimbulkan 5 hantaman <@ba.fire>Heat DMG</> dan secara paksa mengakibatkan <#ba.burning>Combustion</>."
+      "description": "Melepaskan rentetan tembakan cepat dan melepaskan <@ba.key>Wolven Fury</> untuk menyerang musuh di sekitar sehingga akan menimbulkan 5 hantaman <@ba.fire>Heat DMG</> dan secara paksa mengakibatkan <#ba.burning>Combustion</>.",
+      "dmgMultiplierPerSeq": "Pengganda DMG per SEQ",
+      "stagger": "Stagger"
     },
     "indicator": {
       "levels": [
