@@ -759,36 +759,20 @@
                     <div
                         class="absolute group"
                         style="
-        left: {getPositionX(event.realStartTime, selectedTimezone)}px;
-        width: {getWidth(
-                            event.realStartTime,
-                            event.realEndTime,
-                            selectedTimezone,
-                        )}px;
-        top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) +
-                            HEADER_HEIGHT_PX +
-                            EVENT_TOP_OFFSET}px; 
-        height: {ROW_HEIGHT}px;
-        z-index: 20;
-        transition: left 200ms ease, width 200ms ease;
-    "
-                    >
+                            left: {getPositionX(event.realStartTime, selectedTimezone)}px;
+                            width: {getWidth(event.realStartTime, event.realEndTime, selectedTimezone,)}px;
+                            top: {event.layer * (ROW_HEIGHT + GAP_HEIGHT) + HEADER_HEIGHT_PX + EVENT_TOP_OFFSET}px; 
+                            height: {ROW_HEIGHT}px;
+                            z-index: 20;
+                            transition: left 200ms ease, width 200ms ease;">
                         <button
                             on:click={() => openEvent(event)}
-                            class="relative block w-full h-full text-left focus:outline-none"
-                        >
+                            class="relative block w-full h-full text-left focus:outline-none">
                             <div
                                 class="absolute inset-0 overflow-hidden shadow-sm transition-all duration-300 outline outline-[2px] outline-transparent group-hover:[outline-color:var(--hover-outline-color)]
                                 {event.connectLeft ? 'rounded-l-none border-l-0' : 'rounded-l'} 
-                                {event.connectRight
-                                                    ? 'rounded-r-none border-r-0'
-                                                    : 'rounded-r'}"
-                                style="
-                                    background-color: {event.color};
-                                    --hover-outline-color: color-mix(in srgb, {event.color}, white 20%);
-                                    border-right: {event.connectRight ? 'none' : `4px solid ${event.color}`};
-                                "
-                            >
+                                {event.connectRight ? 'rounded-r-none border-r-0' : 'rounded-r'}"
+                                style="background-color: {event.color}; --hover-outline-color: color-mix(in srgb, {event.color}, white 20%); border-right: {event.connectRight ? 'none' : `4px solid ${event.color}`};">
                                 <div
                                     class="absolute top-0 right-0 bottom-0 w-[250px] z-0 transition-transform"
                                 >
@@ -853,14 +837,23 @@
                                         </span>
 
                                         <span class="text-white/95 text-[10px] uppercase font-bold tracking-wider whitespace-nowrap truncate [text-shadow:_0_0_1px_rgba(0,0,0,1),_0_0_2px_rgba(0,0,0,0.5)]">
-                                            {#if !isShortEvent(event)}
-                                                {event.realStartTime.getDate()}
-                                                {$t(`months_gen.${event.realStartTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)} -
-                                                {event.realEndTime.getDate()}
-                                                {$t(`months_gen.${event.realEndTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)}
+                                            {#if event.isPermanent}
+                                                {#if !isShortEvent(event)}
+                                                    {event.realStartTime.getDate()}
+                                                    {$t(`months_gen.${event.realStartTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)} - ∞
+                                                {:else}
+                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - ∞
+                                                {/if}
                                             {:else}
-                                                {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - 
-                                                {event.realEndTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })}
+                                                {#if !isShortEvent(event)}
+                                                    {event.realStartTime.getDate()}
+                                                    {$t(`months_gen.${event.realStartTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)} -
+                                                    {event.realEndTime.getDate()}
+                                                    {$t(`months_gen.${event.realEndTime.toLocaleString("en-US", { month: "long" }).toLowerCase()}`)}
+                                                {:else}
+                                                    {event.realStartTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })} - 
+                                                    {event.realEndTime.toLocaleDateString($currentUiLocale === 'my' ? 'ms-MY' : ($currentUiLocale || 'en-US'), { day: '2-digit', month: '2-digit' })}
+                                                {/if}
                                             {/if}
                                         </span>
                                     </div>

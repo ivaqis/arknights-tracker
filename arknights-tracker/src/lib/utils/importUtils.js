@@ -127,38 +127,44 @@ export function getWeaponCategory(bannerId) {
 export function parseGachaLog(list) {
     if (!Array.isArray(list)) throw new Error("Invalid data array");
     const timeCounters = {};
-    return list.map((item, i) => {
-        const rawName = item.name || item.charName || item.weaponName || item.character || item.item_name;
-        const rarity = Number(item.rarity || item.rank || item.rank_type);
-        const seqId = Number(item.seqId || item.sequence || 0);
-        const isNew = item.isNew === true || String(item.isNew) === "true" || item.is_new === true;
-        const isFree = item.isFree === true || String(item.isFree) === "true";
-        let dateObj;
-        if (item.gachaTs) dateObj = new Date(Number(item.gachaTs)); 
-        else if (item.ts) dateObj = new Date(Number(item.ts) * 1000);
-        else if (item.time) dateObj = new Date(item.time);
-        else dateObj = new Date(0);
-        
-        const rawBannerId = item.bannerId || item.poolId || item.gacha_type;
-        const internalId = getInternalBannerType(rawBannerId);
-        const itemType = item.weaponName ? 'weapon' : 'character';
-        const tsStr = dateObj.getTime().toString();
-        if (timeCounters[tsStr] === undefined) timeCounters[tsStr] = 0;
-        const localIdx = timeCounters[tsStr]++;
-        let uniqueId = item.id || (seqId !== 0 ? `${dateObj.getTime()}_${rawName}_${seqId}` : `${dateObj.getTime()}_${rawName}_loc${localIdx}`);
-        return { 
-            id: uniqueId, 
-            time: dateObj, 
-            name: rawName, 
-            rarity, 
-            bannerId: internalId, 
-            seqId, 
-            isNew, 
-            isFree, 
-            type: itemType, 
-            rawPoolId: rawBannerId 
-        };
-    }).sort(sortPulls);
+    return list
+        .filter(item => {
+            if (!item) return false;
+            const rawName = item.name || item.charName || item.weaponName || item.character || item.item_name;
+            return rawName && rawName !== 'undefined' && rawName !== 'null';
+        })
+        .map((item, i) => {
+            const rawName = item.name || item.charName || item.weaponName || item.character || item.item_name;
+            const rarity = Number(item.rarity || item.rank || item.rank_type);
+            const seqId = Number(item.seqId || item.sequence || 0);
+            const isNew = item.isNew === true || String(item.isNew) === "true" || item.is_new === true;
+            const isFree = item.isFree === true || String(item.isFree) === "true";
+            let dateObj;
+            if (item.gachaTs) dateObj = new Date(Number(item.gachaTs)); 
+            else if (item.ts) dateObj = new Date(Number(item.ts) * 1000);
+            else if (item.time) dateObj = new Date(item.time);
+            else dateObj = new Date(0);
+            
+            const rawBannerId = item.bannerId || item.poolId || item.gacha_type;
+            const internalId = getInternalBannerType(rawBannerId);
+            const itemType = item.weaponName ? 'weapon' : 'character';
+            const tsStr = dateObj.getTime().toString();
+            if (timeCounters[tsStr] === undefined) timeCounters[tsStr] = 0;
+            const localIdx = timeCounters[tsStr]++;
+            let uniqueId = item.id || (seqId !== 0 ? `${dateObj.getTime()}_${rawName}_${seqId}` : `${dateObj.getTime()}_${rawName}_loc${localIdx}`);
+            return { 
+                id: uniqueId, 
+                time: dateObj, 
+                name: rawName, 
+                rarity, 
+                bannerId: internalId, 
+                seqId, 
+                isNew, 
+                isFree, 
+                type: itemType, 
+                rawPoolId: rawBannerId 
+            };
+        }).sort(sortPulls);
 }
 
 export function mergePulls(oldList, newList) {

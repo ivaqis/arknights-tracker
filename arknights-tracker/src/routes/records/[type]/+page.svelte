@@ -979,8 +979,9 @@
             </div>
             <div
                 class="w-full bg-white rounded-xl dark:border-[#444444] dark:bg-[#383838] shadow-sm border border-gray-100 overflow-hidden order-2 xl:order-1"
+                style="transform: translate3d(0, 0, 0); backface-visibility: hidden; -webkit-backface-visibility: hidden;"
             >
-                <div class="overflow-x-auto w-full">
+                <div class="overflow-x-auto w-full" style="transform: translate3d(0, 0, 0); backface-visibility: hidden; -webkit-backface-visibility: hidden;">
                     <div class="min-w-[340px] sm:min-w-[600px]">
                         <div
                             class="records-grid px-2 sm:px-4 py-2 sm:py-3 border-b border-gray-100 bg-white dark:border-[#444444] dark:bg-[#424242] dark:text-[#FDFDFD] text-xs sm:text-sm font-bold text-gray-700 pl-4 sm:pl-6"
@@ -1075,7 +1076,7 @@
 
                                             {#if row.showBatchLabel}
                                                 <div
-                                                    class="absolute z-30 font-bold text-[10px] tracking-wider select-none pointer-events-none flex items-center justify-center whitespace-nowrap bg-transparent backdrop-blur-[1px] py-1"
+                                                    class="absolute z-30 font-bold text-[10px] tracking-wider select-none pointer-events-none flex items-center justify-center whitespace-nowrap bg-transparent py-1"
                                                     style="
                                             left: 2px;
                                             top: 50%; 
@@ -1145,7 +1146,7 @@
                                                         </div>
                                                         {#if row.isNew}
                                                             <div
-                                                                class="absolute -top-1 -right-1 bg-[#D84C38]/85 text-white text-[7px] sm:text-[8px] leading-none font-bold px-1 sm:px-1.5 py-0.5 rounded sm:rounded-md z-20 pointer-events-none backdrop-blur-[1px]"
+                                                                class="absolute -top-1 -right-1 bg-[#D84C38]/85 text-white text-[7px] sm:text-[8px] leading-none font-bold px-1 sm:px-1.5 py-0.5 rounded sm:rounded-md z-20 pointer-events-none"
                                                             >
                                                                 NEW
                                                             </div>

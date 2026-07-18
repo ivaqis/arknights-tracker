@@ -31,6 +31,10 @@ function createPullStore() {
 
         Object.keys(data).forEach(key => {
             if (data[key] && Array.isArray(data[key].pulls)) {
+                data[key].pulls = data[key].pulls.filter(p => {
+                    return p && p.name && p.name !== 'undefined' && p.name !== 'null';
+                });
+
                 data[key].pulls.forEach(p => {
                     if (p.time) p.time = new Date(p.time);
 

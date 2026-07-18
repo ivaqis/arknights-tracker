@@ -404,10 +404,10 @@
                         class="flex gap-3 mb-8 max-w-[550px] xl:max-w-[1600px]"
                     >
                         <div
-                            class="w-[2px] shrink-0 bg-gray-400 dark:bg-gray-300 rounded-full"
+                            class="w-[2px] shrink-0 bg-[#21272C]/80 dark:bg-gray-300 rounded-full"
                         ></div>
                         <p
-                            class="text-sm text-gray-400 dark:text-[#B7B6B3] leading-snug"
+                            class="text-sm text-[#21272C]/80 dark:text-[#B7B6B3] leading-snug"
                         >
                             {$t("home.disclaimer")}
                         </p>
@@ -418,7 +418,7 @@
                     >
                         <div class="flex flex-col gap-3 min-w-[180px]">
                             <span
-                                class="text-gray-400 dark:text-[#B7B6B3] text-[15px] font-medium"
+                                class="text-[#21272C]/80 dark:text-[#B7B6B3] text-[15px] font-medium"
                             >
                                 {$t("footer.devResources")}
                             </span>
@@ -456,7 +456,7 @@
 
                         <div class="flex flex-col gap-3 min-w-[200px]">
                             <span
-                                class="text-gray-400 dark:text-[#B7B6B3] text-[15px] font-medium"
+                                class="text-[#21272C]/80 dark:text-[#B7B6B3] text-[15px] font-medium"
                             >
                                 {$t("footer.officialResources")}
                             </span>
@@ -519,7 +519,7 @@
                         <div class="flex flex-col gap-3 min-w-[200px]">
                             <button
                                 on:click={() => (isPrivacyModalOpen = true)}
-                                class="text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
+                                class="text-left text-[15px] text-[#21272C]/80 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("footer.privacyPolicy")}
                             </button>
@@ -541,7 +541,7 @@
                                 href="https://goyfield-developers.github.io/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
+                                class="flex items-center gap-1 text-left text-[15px] text-[#21272C]/80 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("home.docsTitle")}
                                 <Icon name="sendToLink" class="w-4 h-4" />
@@ -550,7 +550,7 @@
                                 href="https://opendfieldmap.org/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="flex items-center gap-1 text-left text-[15px] text-gray-400 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
+                                class="flex items-center gap-1 text-left text-[15px] text-[#21272C]/80 dark:text-[#B7B6B3] hover:text-black dark:hover:text-white transition-colors"
                             >
                                 {$t("footer.interactiveMap")}
                                 <Icon name="sendToLink" class="w-4 h-4" />

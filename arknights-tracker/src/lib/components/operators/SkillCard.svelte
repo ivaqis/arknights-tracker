@@ -570,7 +570,7 @@
             <div class="flex flex-col gap-3 pt-2 border-t border-gray-100 dark:border-[#444444]/50">
                 {#each subDescriptions as sub}
                     <div class="flex items-start gap-3 bg-gray-200/55 dark:bg-white/[0.02] p-3.5 rounded-xl border border-gray-100/80 dark:border-[#444444]/40">
-                        <div class="flex items-center justify-center shrink-0 w-8 h-8 rounded-lg overflow-hidden mt-0.5 border border-gray-200 dark:border-[#444444]/60 bg-gray-100 dark:bg-[#2C2C2C]">
+                        <div class="flex items-center justify-center shrink-0 w-8 h-8 rounded-lg overflow-hidden mt-0.5 border border-gray-200 dark:border-[#444444]/60 bg-black/20 dark:bg-[#2C2C2C]">
                             {#if sub.icon}
                                 <Image
                                     id={sub.icon}
