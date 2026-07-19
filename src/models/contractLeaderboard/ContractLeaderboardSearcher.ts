@@ -10,8 +10,8 @@ export class ContractLeaderboardSearcher {
         this._database = database;
     }
 
-    public async findPublic(contractId: string, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<ContractLeaderboardRecord[]> {
-        const records = await this._database.gameProfiles.contractTable.findContractRecordsIncludeGameProfileAndUser(contractId, true, sortField, sortOrder, take, skip);
+    public async findPublic(contractId: string, serverId: string | null, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<ContractLeaderboardRecord[]> {
+        const records = await this._database.gameProfiles.contractTable.findContractRecordsIncludeGameProfileAndUser(contractId, true, serverId, sortField, sortOrder, take, skip);
 
         return records.map(record => {
             const user = {
@@ -27,7 +27,7 @@ export class ContractLeaderboardSearcher {
         });
     }
 
-    public async countPublic(contractId: string): Promise<number> {
-        return await this._database.gameProfiles.contractTable.countByContractId(contractId, true);
+    public async countPublic(contractId: string, serverId: string | null): Promise<number> {
+        return await this._database.gameProfiles.contractTable.countByContractId(contractId, true, serverId);
     }
 }
