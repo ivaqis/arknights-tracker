@@ -1,4 +1,5 @@
 import { logger } from "@/logger";
+import { CharacterGender } from "@models/CharacterGender";
 import { CharSkill } from "@models/gameProfile/CharSkill";
 import { CharacterEntity } from "@models/gameProfile/entities/CharacterEntity";
 import { CharSkillEntity } from "@models/gameProfile/entities/CharSkillEntity";
@@ -56,11 +57,21 @@ export class Character implements IEntityClass<CharacterEntity> {
         this._apiId = apiId;
     }
 
-    public static getFromData(data: CharData): Character {
+    public static getFromData(data: CharData, gender: number): Character {
         let id = charNameRecords.getId(data.charData.name);
 
         if (!id) {
             throw new Error(`charId not found:\n${JSON.stringify(data, undefined, 2)}`);
+        }
+
+        if (id === "chr_0002_endminm") {
+            const charGender = CharacterGender.get(gender);
+
+            if (!charGender) {
+                logger.warn(`charGender not found: ${gender}`);
+            } else {
+                id = CharacterGender.getEndminCharId(charGender);
+            }
         }
 
         return new Character(

@@ -10,7 +10,7 @@ import { Router } from "express";
 
 export const monumentRouter = Router();
 
-monumentRouter.get("/list"); // todo
-monumentRouter.get("/groupList"); // todo
+// monumentRouter.get("/list"); // todo
+// monumentRouter.get("/groupList"); // todo
 monumentRouter.get("/run", RequestValidator.with(GetMonumentRunRequestValidator), Controller.with(GetMonumentRun));
 monumentRouter.get("/groupRun", RequestValidator.with(GetMonumentGroupRunResponseValidator), Controller.with(GetMonumentGroupRun));

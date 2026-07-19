@@ -46,7 +46,7 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
             DailyMission.getFromData(data.dailyMission),
             WeeklyMission.getFromData(data.weeklyMission),
             SeekSuspicion.getFromData(data.seekSuspicion),
-            this.getChars(data.chars)
+            this.getChars(data.chars, data.base.gender)
         );
     }
 
@@ -66,14 +66,14 @@ export class GameProfile implements IEntityClass<GameProfileEntity> {
         return chars.map((char) => Character.getFromEntity(char));
     }
 
-    private static getChars(chars: CharData[]): Character[] {
+    private static getChars(chars: CharData[], gender: number): Character[] {
         const result: Character[] = [];
 
         for (const char of chars) {
             let character: Character;
 
             try {
-                character = Character.getFromData(char);
+                character = Character.getFromData(char, gender);
             } catch (e) {
                 logger.warn(e);
                 continue;
