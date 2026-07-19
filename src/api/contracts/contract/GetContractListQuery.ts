@@ -5,7 +5,7 @@ import { SortOrder } from "@models/SortOrder";
 export interface GetContractListQuery {
     contractId: string;
     sortField: ContractLeaderboardSortField;
-    sortOrder: SortOrder; // todo фильтр по serverId
+    sortOrder: SortOrder;
     serverId: GameServerId | "all";
     page: string;
     recordsOnPage: "40" | "60" | "80" | "100";

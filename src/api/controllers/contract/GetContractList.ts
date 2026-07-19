@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { GetContractListQuery } from "@api/contracts/contract/GetContractListQuery";
 import { GetContractListResponse } from "@api/contracts/contract/GetContractListResponse";
