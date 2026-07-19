@@ -166,5 +166,37 @@
     {
         "id": "indie_hard021_s",
         "name": "Wading in Raker Turf: Agony"
+    },
+    {
+        "id": "indie_hard022",
+        "name": "Earthshaking Hazefyre"
+    },
+    {
+        "id": "indie_hard022_s",
+        "name": "Earthshaking Hazefyre: Agony"
+    },
+    {
+        "id": "indie_hard023",
+        "name": "Mangler and Friends"
+    },
+    {
+        "id": "indie_hard023_s",
+        "name": "Mangler and Friends: Agony"
+    },
+    {
+        "id": "indie_hard024",
+        "name": "King of the Crag"
+    },
+    {
+        "id": "indie_hard024_s",
+        "name": "King of the Crag: Agony"
+    },
+    {
+        "id": "indie_hard025",
+        "name": "Visitors of Qingbo"
+    },
+    {
+        "id": "indie_hard025_s",
+        "name": "Visitors of Qingbo: Agony"
     }
 ]

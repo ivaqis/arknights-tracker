@@ -364,6 +364,42 @@
     "name": "Mordvolt Insulation Gloves T1"
   },
   {
+    "id": "item_equip_t4_parts_wuling00_body_01",
+    "name": "AIC Fieldwork Armor"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_body_02",
+    "name": "AIC Fieldwork Plate"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_body_03",
+    "name": "AIC Fieldwork Vest"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_edc_01",
+    "name": "AIC Fieldwork Machete"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_edc_02",
+    "name": "AIC Fieldwork Ember"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_edc_03",
+    "name": "AIC Fieldwork Flashlight"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_01",
+    "name": "AIC Fieldwork Gloves"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_02",
+    "name": "AIC Fieldwork Hands"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_hand_03",
+    "name": "AIC Fieldwork Wraps"
+  },
+  {
     "id": "item_equip_t4_parts_wuling01_body_01",
     "name": "Redeemer Plates"
   },
@@ -394,6 +430,26 @@
   {
     "id": "item_equip_t4_parts_wuling01_hand_02",
     "name": "Redeemer Hands"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_body_01",
+    "name": "Rift Trekker Heavy Armor"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_body_02",
+    "name": "Rift Trekker Light Armor"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_edc_01",
+    "name": "Rift Trekker Armor Slab"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_01",
+    "name": "Rift Trekker Gloves"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_02",
+    "name": "Rift Trekker Hands"
   },
   {
     "id": "item_equip_t4_suit_atb01_body_01",
@@ -716,6 +772,10 @@
     "name": "Hot Work Power Cartridge"
   },
   {
+    "id": "item_equip_t4_suit_fire_natr01_edc_04",
+    "name": "Hot Work Insulation Slab"
+  },
+  {
     "id": "item_equip_t4_suit_fire_natr01_hand_01",
     "name": "Hot Work Gloves"
   },
@@ -728,12 +788,20 @@
     "name": "Hot Work Gauntlets T1"
   },
   {
+    "id": "item_equip_t4_suit_fire_natr01_hand_04",
+    "name": "Hot Work Hands PPE"
+  },
+  {
     "id": "item_equip_t4_suit_heal01_body_01",
     "name": "LYNX Heavy Armor"
   },
   {
     "id": "item_equip_t4_suit_heal01_body_02",
     "name": "LYNX Cuirass"
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_body_03",
+    "name": "LYNX Cuirass T1"
   },
   {
     "id": "item_equip_t4_suit_heal01_edc_01",
@@ -762,6 +830,10 @@
   {
     "id": "item_equip_t4_suit_heal01_hand_02",
     "name": "LYNX Gauntlets"
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_hand_03",
+    "name": "LYNX Gauntlets T1"
   },
   {
     "id": "item_equip_t4_suit_phy01_body_01",
@@ -860,6 +932,14 @@
     "name": "Eternal Xiranite Armor"
   },
   {
+    "id": "item_equip_t4_suit_usp02_body_03",
+    "name": "Eternal Xiranite Light Armor"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_body_04",
+    "name": "Eternal Xiranite Light Armor T1"
+  },
+  {
     "id": "item_equip_t4_suit_usp02_edc_01",
     "name": "Eternal Xiranite Power Core"
   },
@@ -872,11 +952,23 @@
     "name": "Eternal Xiranite Auxiliary Arm"
   },
   {
+    "id": "item_equip_t4_suit_usp02_edc_04",
+    "name": "Eternal Xiranite Bracing Slab"
+  },
+  {
     "id": "item_equip_t4_suit_usp02_hand_01",
     "name": "Eternal Xiranite Gloves"
   },
   {
     "id": "item_equip_t4_suit_usp02_hand_02",
     "name": "Eternal Xiranite Gloves T1"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_03",
+    "name": "Eternal Xiranite Wraps"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_04",
+    "name": "Eternal Xiranite Hands"
   }
 ]

@@ -116,8 +116,16 @@
     "name": "Lone Barge"
   },
   {
+    "id": "wpn_funnel_0016",
+    "name": "Type 42: Solemn Phalanx"
+  },
+  {
     "id": "wpn_funnel_0017",
     "name": "Flickers in the Mist"
+  },
+  {
+    "id": "wpn_funnel_0018",
+    "name": "Junction Point"
   },
   {
     "id": "wpn_lance_0003",
@@ -162,6 +170,10 @@
   {
     "id": "wpn_lance_0015",
     "name": "Blessing of Lustrous Carmine"
+  },
+  {
+    "id": "wpn_lance_0016",
+    "name": "Golden Age"
   },
   {
     "id": "wpn_pistol_0001",
@@ -286,5 +298,9 @@
   {
     "id": "wpn_sword_0022",
     "name": "Lupine Scarlet"
+  },
+  {
+    "id": "wpn_sword_0026",
+    "name": "Farsight"
   }
 ]
