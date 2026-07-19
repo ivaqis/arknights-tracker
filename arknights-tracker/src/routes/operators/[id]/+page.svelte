@@ -510,17 +510,35 @@
     }
 
 
+    const BLACKBOARD_FALLBACKS = {
+        PhysicalAndSpellInflictionEnhance: ["OriginiumArts"],
+        NormalSkillDamageIncrease: ["NormalSkillEfficiency"]
+    };
+
     function interpolateBlackboard(text, bb) {
         if (!text) return "";
         if (!bb || Object.keys(bb).length === 0) return text;
 
         return text.replace(/\{([^}]+)\}/g, (match, content) => {
             let [expr, format] = content.split(":");
+            
+            let localBb = { ...bb };
+            for (const [key, fallbacks] of Object.entries(BLACKBOARD_FALLBACKS)) {
+                if (localBb[key] === undefined) {
+                    for (const fallbackKey of fallbacks) {
+                        if (localBb[fallbackKey] !== undefined) {
+                            localBb[key] = localBb[fallbackKey];
+                            break;
+                        }
+                    }
+                }
+            }
+
             let mathStr = expr.replace(/\b(\d+),(\d+)\b/g, (m, f) => Object.keys(bb)[f] || m);
 
-            for (const key in bb) {
+            for (const key in localBb) {
                 const regex = new RegExp(`\\b${key}\\b`, "gi");
-                mathStr = mathStr.replace(regex, `(${bb[key]})`);
+                mathStr = mathStr.replace(regex, `(${localBb[key]})`);
             }
 
             if (/[a-z_]/i.test(mathStr)) return match;
@@ -676,7 +694,7 @@
                                 <span
                                     class="font-nums font-bold px-2 text-center text-[#21272C] dark:text-white uppercase tracking-wider"
                                 >
-                                    {draftPot === -1 ? "" : `P${draftPot + 1}`}
+                                    {draftPot === -1 ? "" : `P${draftPot}`}
                                 </span>
 
                                 <button
