@@ -39,7 +39,11 @@ export class MonumentLeaderboardRepository extends Repository {
     }
 
     public async findByGroupId(groupId: string, isHard?: boolean, gameUid?: string): Promise<UserMonumentLeaderboardRecord[]> {
-        return this._monumentTable.findByGroupId(groupId, isHard);
+        return this._monumentTable.findByGroupId(groupId, isHard, gameUid);
+    }
+
+    public async findByUserGroupId(userGroupId: string): Promise<UserMonumentLeaderboardRecord[]> {
+        return this._monumentTable.findByUserGroupId(userGroupId);
     }
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {

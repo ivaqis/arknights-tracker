@@ -23,7 +23,7 @@ export class ContractLeaderboardSearcher {
                 serverId: record.gameProfile.serverId
             };
 
-            return ContractLeaderboardRecord.createFromRecord(user, gameProfile, record.contractRecord.data); // todo publicId
+            return ContractLeaderboardRecord.createFromRecord(user, gameProfile, record.contractRecord);
         });
     }
 

@@ -4,6 +4,7 @@ import { GetMonumentRunResponse } from "@api/contracts/monument/GetMonumentRunRe
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { MonumentLeaderboardRun } from "@models/monumentLeaderboard/MonumentLeaderboardRun";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
@@ -19,7 +20,7 @@ export class GetMonumentRun extends Controller<
     private readonly _firebase: FirebaseAuthenticator = firebase;
 
     private readonly _firebaseToken: string;
-    private readonly _gameUid: string;
+    private readonly _gameUid: string; // todo переделать контракты
     private readonly _dungeonId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentRunResponse>, undefined, GetMonumentRunQuery>, res: e.Response<ResponseBody<GetMonumentRunResponse>>) {
@@ -58,7 +59,7 @@ export class GetMonumentRun extends Controller<
             avatarId: profile.avatarId.initValue,
             level: gameProfile.level.initValue,
             serverId: gameProfile.serverId,
-            recordData: record.data.getEntity()
+            recordData: MonumentLeaderboardRun.createFromRecord(record.id, record.data).getEntity()
         };
     }
 }

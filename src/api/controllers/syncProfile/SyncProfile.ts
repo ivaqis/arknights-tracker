@@ -156,7 +156,9 @@ export class SyncProfile extends Controller<
             return;
         }
 
-        await this._database.monumentLeaderboard.delete(existedRecord.id);
+        if (existedRecord) {
+            await this._database.monumentLeaderboard.delete(existedRecord.id);
+        }
 
         await this._database.monumentLeaderboard.create(gameUid, record);
     }

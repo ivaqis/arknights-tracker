@@ -1,9 +1,10 @@
-import { MonumentRecordEntity } from "@models/monument/entities/MonumentRecordEntity";
+import { MonumentLeaderboardRunEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunEntity";
 
 export interface GetMonumentGroupRunResponse {
     uid: string;
     avatarId: string | null;
     level: number;
     serverId: string;
-    recordsData: MonumentRecordEntity[];
+    groupId: string;
+    recordsData: MonumentLeaderboardRunEntity[];
 }

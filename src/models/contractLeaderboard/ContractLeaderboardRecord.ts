@@ -1,4 +1,4 @@
-import { ContractRecord } from "@models/contingencyContract/ContractRecord";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
 import { ContractLeaderboardChar } from "@models/contractLeaderboard/ContractLeaderboardChar";
 import { ContractLeaderboardRecordEntity } from "@models/contractLeaderboard/entities/ContractLeaderboardRecordEntity";
 import { IEntityClass } from "@models/IEntityClass";
@@ -42,7 +42,7 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
 
     public static createFromRecord(profile: { uid: string; avatarId: string | null },
                                    gameProfile: { level: number, serverId: string },
-                                   record: ContractRecord
+                                   record: UserContractLeaderboardRecord
     ): ContractLeaderboardRecord {
         return new ContractLeaderboardRecord(
             record.id,
@@ -51,9 +51,9 @@ export class ContractLeaderboardRecord implements IEntityClass<ContractLeaderboa
             gameProfile.level,
             gameProfile.serverId,
             record.indicatorCount,
-            record.ts,
-            record.passTs,
-            record.chars.map(ContractLeaderboardChar.createFromRecord)
+            record.data.ts,
+            record.data.passTs,
+            record.data.chars.map(ContractLeaderboardChar.createFromRecord)
         );
     }
 

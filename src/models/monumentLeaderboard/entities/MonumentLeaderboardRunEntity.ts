@@ -1,9 +1,9 @@
 import { MonumentLeaderboardCharEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardCharEntity";
 
 export interface MonumentLeaderboardRunEntity {
-    gameUid: string;
+    recordId: string;
     dungeonId: string;
-    ts: number;
-    passTs: string;
+    ts: string;
+    passTs: number;
     chars: MonumentLeaderboardCharEntity[];
 }

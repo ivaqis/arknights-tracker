@@ -1,10 +1,11 @@
-import { logger } from "@/logger";
 import { database, firebase } from "@/serviceInstances";
 import { GetContractRunQuery } from "@api/contracts/contract/GetContractRunQuery";
 import { GetContractRunResponse } from "@api/contracts/contract/GetContractRunResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
+import { ContractRecordEntity } from "@models/contingencyContract/entities/ContractRecordEntity";
 import { FirebaseAuthenticator } from "@services/firebaseAuth/FirebaseAuthenticator";
 import e from "express";
 
@@ -29,8 +30,14 @@ export class GetContractRun extends Controller<
         this._recordId = req.query.recordId;
     }
 
+    public static getRecordData(record: UserContractLeaderboardRecord): ContractRecordEntity {
+        const data = record.data.getEntity();
+        data.recordId = record.id;
+        return data;
+    }
+
     protected async execute(): Promise<void> {
-        const record = await this._database.contractLeaderboard.findByRecordId(this._recordId);
+        const record = await this._database.contractLeaderboard.find(this._recordId);
 
         if (!record) {
             this.status = 404;
@@ -65,7 +72,7 @@ export class GetContractRun extends Controller<
             avatarId: profile.avatarId.initValue,
             level: gameProfile.data.base.level,
             serverId: gameProfile.serverId,
-            recordData: record.data.getEntity()
+            recordData: GetContractRun.getRecordData(record)
         };
     }
 }
