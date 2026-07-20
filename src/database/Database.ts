@@ -1,7 +1,9 @@
 import { config } from "@/config";
+import { ContractLeaderboardRepository } from "@database/repositories/ContractLeaderboardRepository";
 import { ErrorsRepository } from "@database/repositories/ErrorsRepository";
 import { GlobalBannerStatsRepository } from "@database/repositories/GlobalBannerStatsRepository";
 import { GameProfilesRepository } from "@database/repositories/GameProfilesRepository";
+import { MonumentLeaderboardRepository } from "@database/repositories/MonumentLeaderboardRepository";
 import { UserBannerProfilesRepository } from "@database/repositories/UserBannerProfilesRepository";
 import { UserBannerStatsRepository } from "@database/repositories/UserBannerStatsRepository";
 import { UsersRepository } from "@database/repositories/UsersRepository";
@@ -16,6 +18,8 @@ export class Database implements IService {
     private readonly _errorsRepository: ErrorsRepository;
     private readonly _usersRepository: UsersRepository;
     private readonly _userGameProfilesRepository: GameProfilesRepository;
+    private readonly _monumentLeaderboardRepository: MonumentLeaderboardRepository;
+    private readonly _contractLeaderboardRepository: ContractLeaderboardRepository;
     private readonly _userBannerProfilesRepository: UserBannerProfilesRepository;
     private readonly _userBannerStatsRepository: UserBannerStatsRepository;
     private readonly _globalBannerStatsRepository: GlobalBannerStatsRepository;
@@ -26,6 +30,8 @@ export class Database implements IService {
         this._errorsRepository = new ErrorsRepository(prisma);
         this._usersRepository = new UsersRepository(prisma);
         this._userGameProfilesRepository = new GameProfilesRepository(prisma);
+        this._monumentLeaderboardRepository = new MonumentLeaderboardRepository(prisma);
+        this._contractLeaderboardRepository = new ContractLeaderboardRepository(prisma);
         this._userBannerProfilesRepository = new UserBannerProfilesRepository(prisma);
         this._userBannerStatsRepository = new UserBannerStatsRepository(prisma);
         this._globalBannerStatsRepository = new GlobalBannerStatsRepository(prisma);
@@ -55,12 +61,20 @@ export class Database implements IService {
         return this._userGameProfilesRepository;
     }
 
+    public get monumentLeaderboard(): MonumentLeaderboardRepository {
+        return this._monumentLeaderboardRepository;
+    }
+
+    public get contractLeaderboard(): ContractLeaderboardRepository {
+        return this._contractLeaderboardRepository;
+    }
+
     public isActive(): boolean {
         return !!config.databaseUrl;
     }
 
     public async deleteUser(uid: bigint): Promise<void> {
-        const gameProfiles = await this.gameProfiles.gameProfilesTable.findByUid(uid);
+        const gameProfiles = await this.gameProfiles.findByUid(uid);
 
         for (const gameProfile of gameProfiles) {
             let gameUid = gameProfile.gameUid;

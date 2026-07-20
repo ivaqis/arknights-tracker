@@ -11,7 +11,7 @@ export class ContractLeaderboardSearcher {
     }
 
     public async findPublic(contractId: string, serverId: string | null, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<ContractLeaderboardRecord[]> {
-        const records = await this._database.gameProfiles.contractTable.findContractRecordsIncludeGameProfileAndUser(contractId, true, serverId, sortField, sortOrder, take, skip);
+        const records = await this._database.contractLeaderboard.findContractRecordsIncludeGameProfileAndUser(contractId, true, serverId, sortField, sortOrder, take, skip);
 
         return records.map(record => {
             const user = {
@@ -23,11 +23,11 @@ export class ContractLeaderboardSearcher {
                 serverId: record.gameProfile.serverId
             };
 
-            return ContractLeaderboardRecord.createFromRecord(user, gameProfile, record.contractRecord.data);
+            return ContractLeaderboardRecord.createFromRecord(user, gameProfile, record.contractRecord.data); // todo publicId
         });
     }
 
     public async countPublic(contractId: string, serverId: string | null): Promise<number> {
-        return await this._database.gameProfiles.contractTable.countByContractId(contractId, true, serverId);
+        return await this._database.contractLeaderboard.countByContractId(contractId, true, serverId);
     }
 }

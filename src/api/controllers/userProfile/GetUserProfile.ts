@@ -107,7 +107,7 @@ export class GetUserProfile extends Controller<
         const records: Record<string, ContractRecord | null> = {};
 
         for (const uid of gameUids) {
-            const record = await this._database.gameProfiles.contractTable.findBestByGameUid(uid, currentContractId);
+            const record = await this._database.contractLeaderboard.findBestByGameUid(uid, currentContractId);
 
             records[uid] = record?.data ?? null;
         }
@@ -120,7 +120,7 @@ export class GetUserProfile extends Controller<
     }
 
     private async getGameProfiles(uid: bigint): Promise<GameProfileEntity[]> {
-        const profiles = await this._database.gameProfiles.gameProfilesTable.findByUid(uid);
+        const profiles = await this._database.gameProfiles.findByUid(uid);
 
         return profiles.map(profile => profile.data.getEntity());
     }

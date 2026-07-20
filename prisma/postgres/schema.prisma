@@ -52,7 +52,8 @@ model UserGameProfile {
 }
 
 model UserContractLeaderboard {
-    recordId       String   @id
+    id             String   @id @default(uuid())
+    recordId       String   @unique
     gameUid        String
     contractId     String
     indicatorCount Int
@@ -64,9 +65,12 @@ model UserContractLeaderboard {
 
     @@index([gameUid, contractId])
     @@index([contractId])
+    @@index([recordId])
 }
 
 model UserMonumentLeaderboard {
+    id           String   @id @default(uuid())
+    userGroupId  String
     gameUid      String
     dungeonId    String
     groupId      String
@@ -75,10 +79,25 @@ model UserMonumentLeaderboard {
     data         String // json
     updatedAt    DateTime @updatedAt
 
-    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+    userGameProfile   UserGameProfile   @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+    userMonumentGroup UserMonumentGroup @relation(fields: [userGroupId], references: [id])
 
-    @@id([gameUid, dungeonId])
+    @@unique([gameUid, dungeonId])
+    @@index([gameUid, dungeonId])
     @@index([dungeonId])
+    @@index([groupId, isHard])
+    @@index([userGroupId])
+}
+
+model UserMonumentGroup {
+    id      String  @id @default(uuid())
+    gameUid String
+    groupId String
+    isHard  Boolean
+
+    userMonumentLeaderboards UserMonumentLeaderboard[]
+
+    @@unique([gameUid, groupId, isHard])
     @@index([groupId, isHard, gameUid])
 }
 

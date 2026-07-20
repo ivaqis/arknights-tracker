@@ -2,6 +2,7 @@ import { UserContractLeaderboardEntity } from "@database/entities/UserContractLe
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 
 export class UserContractLeaderboardRecord {
+    private readonly _id: string;
     private readonly _gameUid: string;
     private readonly _contractId: string;
     private readonly _recordId: string;
@@ -10,7 +11,8 @@ export class UserContractLeaderboardRecord {
     private readonly _updatedAt: Date;
     private readonly _data: ContractRecord;
 
-    private constructor(gameUid: string, contractId: string, recordId: string, indicatorCount: number, clearTimeSec: number, updatedAt: Date, data: ContractRecord) {
+    private constructor(id: string, gameUid: string, contractId: string, recordId: string, indicatorCount: number, clearTimeSec: number, updatedAt: Date, data: ContractRecord) {
+        this._id = id;
         this._gameUid = gameUid;
         this._contractId = contractId;
         this._recordId = recordId;
@@ -22,6 +24,7 @@ export class UserContractLeaderboardRecord {
 
     public static createFromEntity(entity: UserContractLeaderboardEntity): UserContractLeaderboardRecord {
         return new UserContractLeaderboardRecord(
+            entity.id,
             entity.gameUid,
             entity.contractId,
             entity.recordId,
@@ -32,16 +35,8 @@ export class UserContractLeaderboardRecord {
         );
     }
 
-    public static createFromData(data: ContractRecord, gameUid: string): UserContractLeaderboardRecord {
-        return new UserContractLeaderboardRecord(
-            gameUid,
-            data.contractId,
-            data.id,
-            data.indicatorCount,
-            data.passTs,
-            new Date(),
-            data
-        );
+    public get id(): string {
+        return this._id;
     }
 
     public get data(): ContractRecord {

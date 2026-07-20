@@ -31,7 +31,7 @@ export class GetMonumentRun extends Controller<
     }
 
     protected async execute(): Promise<void> {
-        const records = await this._database.gameProfiles.monumentTable.findIncludeGameProfileAndUser(this._gameUid, this._dungeonId);
+        const records = await this._database.monumentLeaderboard.findByGameUidIncludeGameProfileAndUser(this._gameUid, this._dungeonId);
 
         if (!records) {
             this.status = 404;

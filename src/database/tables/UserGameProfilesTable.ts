@@ -32,7 +32,7 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
         return entities.map(UserGameProfileRecord.createFromEntity);
     }
 
-    public async upsert(record: UserGameProfileRecord) {
+    public async upsert(record: UserGameProfileRecord): Promise<void> {
         await this.table.upsert({
             where: {
                 gameUid: record.gameUid

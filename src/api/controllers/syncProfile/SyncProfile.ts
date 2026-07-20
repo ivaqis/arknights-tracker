@@ -123,7 +123,7 @@ export class SyncProfile extends Controller<
 
         const gameProfileRecord = UserGameProfileRecord.createFromData(gameProfile.base.roleId, serverId, uid, gameProfile);
 
-        await this._database.gameProfiles.gameProfilesTable.upsert(gameProfileRecord);
+        await this._database.gameProfiles.upsert(gameProfileRecord);
 
         const contractStatuses = ContractStatus.getList(profileData.crisisContract);
 
@@ -149,16 +149,16 @@ export class SyncProfile extends Controller<
     }
 
     private async updateMonumentRecord(record: MonumentRecord, gameUid: string): Promise<void> {
-        const existedRecord = await this._database.gameProfiles.monumentTable.find(gameUid, record.dungeonId);
+        const existedRecord = (await this._database.monumentLeaderboard.findByGameUid(gameUid, record.dungeonId))[0] ?? null;
         const existedRecordData = existedRecord ? existedRecord.data : null;
 
         if (existedRecordData && existedRecordData.ts === record.ts) {
             return;
         }
 
-        const dbRecord = UserMonumentLeaderboardRecord.createFromData(record, gameUid);
+        await this._database.monumentLeaderboard.delete(existedRecord.id);
 
-        await this._database.gameProfiles.monumentTable.upsert(dbRecord);
+        await this._database.monumentLeaderboard.create(gameUid, record);
     }
 
     private async updateContractDataList(fetcher: EndfieldDataFetcher, serverId: string, gameUid: string, contractStatuses: ContractStatus[], profileChars: Character[]): Promise<void> {
@@ -182,19 +182,17 @@ export class SyncProfile extends Controller<
 
         const bestRecord = ContractRecord.getFromData(bestRecordData, profileChars, contractStatus.id);
 
-        const exists = await this._database.gameProfiles.contractTable.find(bestRecord.id) !== null;
+        const exists = await this._database.contractLeaderboard.findByRecordId(bestRecord.id) !== null;
 
         if (exists) {
             return;
         }
 
-        const dbRecord = UserContractLeaderboardRecord.createFromData(bestRecord, gameUid);
-
-        const oldRecords = await this._database.gameProfiles.contractTable.findByGameUid(gameUid, contractStatus.id);
+        const oldRecords = await this._database.contractLeaderboard.findByGameUid(gameUid, contractStatus.id);
         for (const record of oldRecords) {
-            await this._database.gameProfiles.contractTable.delete(record.recordId);
+            await this._database.contractLeaderboard.delete(record.recordId);
         }
 
-        await this._database.gameProfiles.contractTable.create(dbRecord);
+        await this._database.contractLeaderboard.create(gameUid, bestRecord);
     }
 }

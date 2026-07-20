@@ -2,6 +2,8 @@ import { UserMonumentLeaderboardEntity } from "@database/entities/UserMonumentLe
 import { MonumentRecord } from "@models/monument/MonumentRecord";
 
 export class UserMonumentLeaderboardRecord {
+    private readonly _id: string;
+    private readonly _userGroupId: string;
     private readonly _gameUid: string;
     private readonly _dungeonId: string;
     private readonly _groupId: string;
@@ -10,7 +12,10 @@ export class UserMonumentLeaderboardRecord {
     private readonly _updatedAt: Date;
     private readonly _data: MonumentRecord;
 
-    private constructor(gameUid: string, dungeonId: string, groupId: string, isHard: boolean, clearTimeSec: number, updatedAt: Date, data: MonumentRecord) {
+
+    private constructor(id: string, userGroupId: string, gameUid: string, dungeonId: string, groupId: string, isHard: boolean, clearTimeSec: number, updatedAt: Date, data: MonumentRecord) {
+        this._id = id;
+        this._userGroupId = userGroupId;
         this._gameUid = gameUid;
         this._dungeonId = dungeonId;
         this._groupId = groupId;
@@ -22,6 +27,8 @@ export class UserMonumentLeaderboardRecord {
 
     public static createFromEntity(entity: UserMonumentLeaderboardEntity): UserMonumentLeaderboardRecord {
         return new UserMonumentLeaderboardRecord(
+            entity.id,
+            entity.userGroupId,
             entity.gameUid,
             entity.dungeonId,
             entity.groupId,
@@ -32,16 +39,12 @@ export class UserMonumentLeaderboardRecord {
         );
     }
 
-    public static createFromData(data: MonumentRecord, gameUid: string): UserMonumentLeaderboardRecord {
-        return new UserMonumentLeaderboardRecord(
-            gameUid,
-            data.dungeonId,
-            data.groupId,
-            data.isHard,
-            data.passTS,
-            new Date(),
-            data
-        );
+    public get id(): string {
+        return this._id;
+    }
+
+    public get userGroupId(): string {
+        return this._userGroupId;
     }
 
     public get gameUid(): string {

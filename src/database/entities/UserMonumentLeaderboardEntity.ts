@@ -1,4 +1,6 @@
 export interface UserMonumentLeaderboardEntity {
+    id: string,
+    userGroupId: string,
     gameUid: string,
     dungeonId: string,
     groupId: string,

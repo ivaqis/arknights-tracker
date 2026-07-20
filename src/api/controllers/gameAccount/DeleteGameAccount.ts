@@ -60,7 +60,7 @@ export class DeleteGameAccount extends Controller<
             return;
         }
 
-        const gameProfile = await this._database.gameProfiles.gameProfilesTable.find(this._gameUid);
+        const gameProfile = await this._database.gameProfiles.find(this._gameUid);
 
         if (!gameProfile) {
             this.status = 404;
@@ -76,7 +76,7 @@ export class DeleteGameAccount extends Controller<
             return;
         }
 
-        await this._database.gameProfiles.gameProfilesTable.delete(gameProfile.gameUid);
+        await this._database.gameProfiles.delete(gameProfile.gameUid);
 
         this.status = 200;
         this.data = { code: 0 };

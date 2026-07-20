@@ -30,7 +30,7 @@ export class GetContractRun extends Controller<
     }
 
     protected async execute(): Promise<void> {
-        const record = await this._database.gameProfiles.contractTable.find(this._recordId);
+        const record = await this._database.contractLeaderboard.findByRecordId(this._recordId);
 
         if (!record) {
             this.status = 404;
@@ -41,7 +41,7 @@ export class GetContractRun extends Controller<
 
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
-        const gameProfile = await this._database.gameProfiles.gameProfilesTable.find(record.gameUid);
+        const gameProfile = await this._database.gameProfiles.find(record.gameUid);
 
         if (!gameProfile) {
             throw new Error(`Cannot find game profile for ${JSON.stringify(record, null, 2)}`);

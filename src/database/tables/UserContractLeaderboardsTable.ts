@@ -2,6 +2,7 @@ import { UserContractLeaderboardRecord } from "@database/records/UserContractLea
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
+import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
 import { Prisma, PrismaClient } from "@prisma/client";
@@ -51,7 +52,21 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         };
     }
 
-    public async find(recordId: string): Promise<UserContractLeaderboardRecord | null> {
+    public async find(id: string): Promise<UserContractLeaderboardRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                id
+            }
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return UserContractLeaderboardRecord.createFromEntity(entity);
+    }
+
+    public async findByRecordId(recordId: string): Promise<UserContractLeaderboardRecord | null> {
         const entity = await this.table.findUnique({
             where: {
                 recordId: recordId
@@ -109,17 +124,6 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         return UserContractLeaderboardRecord.createFromEntity(entity);
     }
 
-    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean, serverId: string | null): Promise<{
-        contractRecord: UserContractLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
-    public async findContractRecordsIncludeGameProfileAndUser(contractId: string, publicOnly: boolean, serverId: string | null, sortField: ContractLeaderboardSortField, sortOrder: SortOrder, take?: number, skip?: number): Promise<{
-        contractRecord: UserContractLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
-
     public async findContractRecordsIncludeGameProfileAndUser(contractId: string,
                                                               publicOnly: boolean,
                                                               serverId: string | null,
@@ -157,17 +161,19 @@ export class UserContractLeaderboardsTable extends Table<Prisma.UserContractLead
         });
     }
 
-    public async create(record: UserContractLeaderboardRecord) {
-        await this.table.create({
+    public async create(gameUid: string, data: ContractRecord): Promise<UserContractLeaderboardRecord> {
+        const entity = await this.table.create({
             data: {
-                recordId: record.recordId,
-                gameUid: record.gameUid,
-                contractId: record.contractId,
-                indicatorCount: record.indicatorCount,
-                clearTimeSec: record.clearTimeSec,
-                data: record.getStringData()
+               gameUid,
+               recordId: data.id,
+               contractId: data.contractId,
+               indicatorCount: data.indicatorCount,
+               clearTimeSec: data.passTs,
+               data: JSON.stringify(data.getEntity())
             }
         });
+
+        return UserContractLeaderboardRecord.createFromEntity(entity);
     }
 
     public async delete(recordId: string): Promise<void> {

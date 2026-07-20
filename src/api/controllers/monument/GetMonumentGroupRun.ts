@@ -33,7 +33,7 @@ export class GetMonumentGroupRun extends Controller<
     }
 
     protected async execute(): Promise<void> {
-        const records = await this._database.gameProfiles.monumentTable.findByGroupId(this._groupId, this._isHard, this._gameUid);
+        const records = await this._database.monumentLeaderboard.findByGroupId(this._groupId, this._isHard, this._gameUid);
 
         if (records.length === 0) {
             this.status = 404;
@@ -44,7 +44,7 @@ export class GetMonumentGroupRun extends Controller<
 
         const firebaseUid = await this._firebase.getFirebaseUid(this._firebaseToken);
 
-        const gameProfile = await this._database.gameProfiles.gameProfilesTable.find(this._gameUid);
+        const gameProfile = await this._database.gameProfiles.find(this._gameUid);
 
         if (!gameProfile) {
             throw new Error(`Found records but not found game profile: ${this._gameUid}`);
@@ -68,7 +68,7 @@ export class GetMonumentGroupRun extends Controller<
             avatarId: profile.avatarId.initValue,
             level: gameProfile.level.initValue,
             serverId: gameProfile.serverId,
-            recordsData: records.map(record => record.data.getEntity())
+            recordsData: records.map(record => record.data.getEntity()) // todo publicId
         };
     }
 }
