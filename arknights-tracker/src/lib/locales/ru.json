@@ -155,7 +155,10 @@
     "weapon-all": "Оружейные баннеры",
     "joint": "Сияние славы",
     "weponbox_1_3_1": "Поставка «Алый узел»",
-    "weponbox_1_3_2": "Поставка «В багровых тонах»"
+    "weponbox_1_3_2": "Поставка «В багровых тонах»",
+    "weponbox_1_4_1": "Поставка «Военный стандарт»",
+    "weponbox_1_2_2": "Поставка «Плавильная печь»",
+    "weponbox_1_2_3": "Поставка «Резвый путник»"
   },
   "import": {
     "title": "Импорт записей о найме",
@@ -271,7 +274,7 @@
     "error_invalid_token": "Токен недействителен или устарел. Пожалуйста, зайдите в игру и сгенерируйте новую ссылку.",
     "error_account_mismatch": "Несовпадение аккаунта! У вас уже есть история с {start} по {end}, но новые данные полностью отличаются. Убедитесь, что выбрали правильный аккаунт.",
     "recoveryStats": "Восстановление записей",
-    "recoveryTooltip": "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках",
+    "recoveryTooltip": "При нажатии данного чекбокса история круток принудительно восстановиться если данная процедура приминима, может помочь при частичной потере записей о крутках или наложенных друг на друга данных",
     "error_account_mismatch_recovery": "Несовпадение аккаунтов! Не найдено подходящих записей даже в режиме восстановления. Пожалуйста, убедитесь, что выбран правильный аккаунт.",
     "endmin_step1": "Зайдите на сайт <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, перейдите в раздел <strong>&ldquo;Settings &rarr; Data&rdquo;</strong>",
     "endmin_step2": "Экспортируйте данные нажатием на кнопку <strong>&ldquo;Export Data&rdquo;</strong>",
@@ -283,6 +286,12 @@
     "endmin_no_pulls_error": "В выбранном профиле не найдено записей о крутках",
     "endmin_read_error": "Ошибка при чтении файла с диска",
     "endmin_unknown_error": "Неизвестная ошибка при чтении файла",
+    "protorig_step1": "Зайдите на сайт <a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>, перейдите в настройки (кнопка <strong>&ldquo;Settings&rdquo;</strong>)",
+    "protorig_step2": "В блоке <strong>&ldquo;Data Export&rdquo;</strong> нажмите кнопку <strong>&ldquo;Export EGF&rdquo;</strong>",
+    "protorig_step3": "Полученный файл с расширением .json приложите в поле ниже",
+    "protorig_files_label": "Файлы Endfield_EGF_*.json",
+    "protorig_parse_error": "Не удалось прочитать JSON-файл. Убедитесь, что выбрали правильный файл экспорта EGF.",
+    "protorig_no_pulls_error": "В выбранном файле не найдено записей о крутках",
     "toolsdev_step1": "Перейдите на сайт <a href='https://endfieldtools.dev' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endfieldtools.dev</a>.",
     "toolsdev_step2": "На панели закладок (чтобы отобразить панель закладок нажмите Ctrl + Shift + B) нажмите 'Добавить страницу', назовите ее любым именем и вставьте этот код в поле URL:",
     "toolsdev_step3": "Находясь на сайте, нажмите на эту закладку — данные скопируются в буфер обмена. Вставьте их ниже.",

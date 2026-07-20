@@ -153,7 +153,10 @@
     "weapon-all": "무기 배너",
     "joint": "찬란한 빛의 축제",
     "weponbox_1_3_1": "붉은 결속 신청",
-    "weponbox_1_3_2": "적색화 신청"
+    "weponbox_1_3_2": "적색화 신청",
+    "weponbox_1_4_1": "제대 신청",
+    "weponbox_1_2_2": "용작 신청",
+    "weponbox_1_2_3": "질풍 신청"
   },
   "import": {
     "title": "헤드헌팅 기록 가져오기",
@@ -267,7 +270,13 @@
     "error_network": "Bad Gateway (네트워크 오류)",
     "error_account_mismatch": "계정 불일치! {start}와 {end} 사이의 기록이 있지만, 가져온 데이터가 완전히 다릅니다. 올바른 계정을 선택했는지 확인해주세요.",
     "recoveryStats": "기록 복구",
-    "recoveryTooltip": "이 상자를 선택하면 해당되는 경우 소환 기록 복구를 강제합니다. 이는 소환 기록의 일부가 유실된 경우에 도움이 될 수 있습니다.",
+    "recoveryTooltip": "이 확인란을 선택하면 가능한 경우 뽑기 내역 복구를 강제합니다. 이는 뽑기 기록이 일부 손실되거나 데이터가 겹치는 경우에 도움이 될 수 있습니다.",
+    "protorig_step1": "<a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>으로 이동하여 <strong>&ldquo;설정&rdquo;</strong> 섹션을 엽니다.",
+    "protorig_step2": "<strong>&ldquo;데이터 내보내기&rdquo;</strong> 블록에서 <strong>&ldquo;EGF 내보내기&rdquo;</strong> 버튼을 클릭하여 데이터를 내보냅니다.",
+    "protorig_step3": "아래 필드에서 다운로드한 .json 파일을 선택합니다.",
+    "protorig_files_label": "파일 Endfield_EGF_*.json",
+    "protorig_parse_error": "JSON 파일을 파싱하는 데 실패했습니다. 올바른 EGF 내보내기 파일인지 확인하세요.",
+    "protorig_no_pulls_error": "선택한 파일에서 뽑기 내역을 찾을 수 없습니다.",
     "error_account_mismatch_recovery": "계정 불일치! 복구 모드에서도 일치하는 기록을 찾을 수 없습니다. 올바른 계정을 선택했는지 확인해 주세요.",
     "endmin_step1": "<a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>로 이동하여 <strong>&ldquo;설정 &rarr; 데이터&rdquo;</strong> 섹션을 엽니다.",
     "endmin_step2": "<strong>&ldquo;데이터 내보내기&rdquo;</strong> 버튼을 클릭하여 데이터를 내보냅니다.",

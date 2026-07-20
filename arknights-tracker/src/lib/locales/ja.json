@@ -153,7 +153,10 @@
     "weapon-all": "武器バナー",
     "joint": "輝きの祝典",
     "weponbox_1_3_1": "赫結・申請",
-    "weponbox_1_3_2": "染紅・申請"
+    "weponbox_1_3_2": "染紅・申請",
+    "weponbox_1_4_1": "戦列・申請",
+    "weponbox_1_2_2": "溶融・申請",
+    "weponbox_1_2_3": "早駆・申請"
   },
   "import": {
     "title": "発掘履歴のインポート",
@@ -267,7 +270,13 @@
     "error_network": "Bad Gateway（通信エラー）",
     "error_account_mismatch": "アカウント不一致！ {start} から {end} までの履歴がありますが、インポートされたデータと完全に異なります。正しいアカウントを選択しているか確認してください。",
     "recoveryStats": "記録の復元",
-    "recoveryTooltip": "このチェックボックスをオンにすると、適用可能な場合にガチャ履歴の復元を強制します。ガチャ記録が一部紛失している場合に役立ちます。",
+    "recoveryTooltip": "このチェックボックスをオンにすると、可能であればガチャ履歴の復元が強制されます。これは、ガチャ記録の部分的な損失やデータの重複が発生した場合に役立ちます。",
+    "protorig_step1": "<a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>にアクセスし、<strong>&ldquo;設定&rdquo;</strong>セクションを開きます。",
+    "protorig_step2": "<strong>&ldquo;データエクスポート&rdquo;</strong>ブロックの<strong>&ldquo;EGFをエクスポート&rdquo;</strong>ボタンをクリックしてデータをエクスポートします。",
+    "protorig_step3": "下のフィールドでダウンロードした .json ファイルを選択します。",
+    "protorig_files_label": "ファイル Endfield_EGF_*.json",
+    "protorig_parse_error": "JSONファイルの解析に失敗しました。有効なEGFエクスポートファイルであることを確認してください。",
+    "protorig_no_pulls_error": "選択したファイルにガチャ履歴が見つかりません。",
     "error_account_mismatch_recovery": "アカンウト不一致！復元モードでも一致する記録が見つかりませんでした。正しいアカウントを選択しているか確認してください。",
     "endmin_step1": "<a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>にアクセスし、<strong>&ldquo;設定 &rarr; データ&rdquo;</strong>セクションを開きます。",
     "endmin_step2": "<strong>&ldquo;データエクスポート&rdquo;</strong>ボタンをクリックしてデータをエクスポートします。",

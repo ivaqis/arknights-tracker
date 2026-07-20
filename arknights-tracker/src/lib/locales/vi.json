@@ -154,7 +154,10 @@
     "weap-special": "Vũ khí Sự kiện",
     "weapon-all": "Banner Vũ khí",
     "joint": "Lễ Hội Rực Rỡ",
-    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc"
+    "weponbox_1_3_2": "Gói Rút Nhuộm Huyết Sắc",
+    "weponbox_1_4_1": "Gói Rút Cấp Quân Dụng",
+    "weponbox_1_2_2": "Gói Rút Luyện Hỏa",
+    "weponbox_1_2_3": "Gói Rút Hành Tốc"
   },
   "import": {
     "title": "Nhập Hồ sơ Chiêu mộ",
@@ -272,7 +275,13 @@
     "error_invalid_token": "Token không hợp lệ hoặc đã hết hạn. Vui lòng đăng nhập vào game và tạo một liên kết mới.",
     "error_account_mismatch": "Tài khoản không khớp! Bạn đã có lịch sử giữa {start} và {end}, nhưng dữ liệu nhập vào khác hoàn toàn. Vui lòng kiểm tra lại tài khoản đã chọn.",
     "recoveryStats": "Khôi phục hồ sơ",
-    "recoveryTooltip": "Chọn hộp này sẽ bắt buộc khôi phục lịch sử chiêu mộ nếu có thể. Điều này có thể giúp ích trong trường hợp mất một phần hồ sơ chiêu mộ.",
+    "recoveryTooltip": "Chọn hộp này sẽ buộc khôi phục lịch sử gacha nếu có thể. Điều này có thể giúp ích trong trường hợp mất một phần hồ sơ gacha và dữ liệu bị trùng lặp.",
+    "protorig_step1": "Truy cập <a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>, mở phần <strong>&ldquo;Cài đặt&rdquo;</strong>.",
+    "protorig_step2": "Xuất dữ liệu bằng cách nhấp vào nút <strong>&ldquo;Xuất EGF&rdquo;</strong> trong khối <strong>&ldquo;Xuất dữ liệu&rdquo;</strong>.",
+    "protorig_step3": "Chọn tệp .json đã tải xuống ở trường bên dưới.",
+    "protorig_files_label": "Tệp Endfield_EGF_*.json",
+    "protorig_parse_error": "Không thể phân tích cú pháp tệp JSON. Đảm bảo đây là tệp xuất EGF hợp lệ.",
+    "protorig_no_pulls_error": "Không tìm thấy lượt quay nào trong tệp đã chọn.",
     "error_account_mismatch_recovery": "Tài khoản không khớp! Không tìm thấy hồ sơ khớp ngay cả trong chế độ khôi phục. Vui lòng kiểm tra xem bạn đã chọn đúng tài khoản chưa.",
     "endmin_step1": "Truy cập <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, mở phần <strong>&ldquo;Cài đặt &rarr; Dữ liệu&rdquo;</strong>.",
     "endmin_step2": "Xuất dữ liệu bằng cách nhấp vào nút <strong>&ldquo;Xuất dữ liệu&rdquo;</strong>.",

@@ -153,7 +153,10 @@
     "weapon-all": "Waffenbanner",
     "joint": "Feier der Exzellenz",
     "weponbox_1_3_1": "Scharlachknoten-Ausgabe",
-    "weponbox_1_3_2": "„Blutrot“-Ausgabe"
+    "weponbox_1_3_2": "„Blutrot“-Ausgabe",
+    "weponbox_1_4_1": "Militär-Standard-Ausgabe",
+    "weponbox_1_2_2": "Hüttenfeuer-Ausgabe",
+    "weponbox_1_2_3": "Schnellschreiter-Ausgabe"
   },
   "import": {
     "title": "Rekrutierungsverlauf importieren",
@@ -267,7 +270,13 @@
     "error_network": "Bad Gateway (Verbindungsfehler)",
     "error_account_mismatch": "Konto stimmt nicht überein! Du hast bereits einen Verlauf zwischen {start} und {end}, aber die importierten Daten unterscheiden sich komplett. Bitte überprüfe, ob du das richtige Konto gewählt hast.",
     "recoveryStats": "Verlaufswiederherstellung",
-    "recoveryTooltip": "Das Aktivieren dieses Kontrollkästchens erzwingt die Wiederherstellung des Rekrutierungsverlaufs, falls zutreffend. Dies kann bei partiellem Verlust von Rekrutierungsdaten helfen.",
+    "recoveryTooltip": "Wenn Sie dieses Kontrollkästchen aktivieren, wird die Wiederherstellung des Ziehungsverlaufs erzwungen, falls anwendbar. Dies kann bei partiellem Verlust von Ziehungsaufzeichnungen und überlappenden Daten helfen.",
+    "protorig_step1": "Gehe zu <a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>, öffne den Bereich <strong>&ldquo;Einstellungen&rdquo;</strong>.",
+    "protorig_step2": "Exportiere die Daten, indem du auf die Schaltfläche <strong>&ldquo;EGF exportieren&rdquo;</strong> im Block <strong>&ldquo;Datenexport&rdquo;</strong> klickst.",
+    "protorig_step3": "Wähle die heruntergeladene .json-Datei im Feld unten aus.",
+    "protorig_files_label": "Dateien Endfield_EGF_*.json",
+    "protorig_parse_error": "JSON-Datei konnte nicht verarbeitet werden. Stelle sicher, dass dies eine gültige EGF-Exportdatei ist.",
+    "protorig_no_pulls_error": "Keine Ziehungen in der ausgewählten Datei gefunden.",
     "error_account_mismatch_recovery": "Konto-Mismatch! Selbst im Wiederherstellungsmodus wurden keine übereinstimmenden Daten gefunden. Bitte überprüfe, ob das richtige Konto ausgewählt ist.",
     "endmin_step1": "Gehe zu <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, öffne den Bereich <strong>&ldquo;Einstellungen &rarr; Daten&rdquo;</strong>.",
     "endmin_step2": "Exportiere die Daten, indem du auf die Schaltfläche <strong>&ldquo;Daten exportieren&rdquo;</strong> klickst.",

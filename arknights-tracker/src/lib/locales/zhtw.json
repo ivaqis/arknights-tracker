@@ -154,7 +154,10 @@
     "weap-special": "活動武器",
     "weapon-all": "武器卡池",
     "joint": "輝光慶典",
-    "weponbox_1_3_2": "染赤申領"
+    "weponbox_1_3_2": "染赤申領",
+    "weponbox_1_4_1": "軍列申領",
+    "weponbox_1_2_2": "熔灼申領",
+    "weponbox_1_2_3": "疾行申領"
   },
   "import": {
     "title": "匯入尋訪記錄",
@@ -272,7 +275,13 @@
     "error_invalid_token": "Token無效或已過期。請登入遊戲重新產生連結。",
     "error_account_mismatch": "帳號不符！您已經擁有 {start} 至 {end} 的記錄，但匯入的資料完全不同。請檢查是否選擇了正確的帳號。",
     "recoveryStats": "記錄恢復",
-    "recoveryTooltip": "勾選此框將強制恢復尋訪記錄（如果適用）。這有助於解決部分尋訪記錄丟失的問題。",
+    "recoveryTooltip": "勾選此方塊將強制恢復抽卡歷史紀錄（如果適用）。這在抽卡紀錄部分遺失或數據重疊的情況下會有所幫助。",
+    "protorig_step1": "前往 <a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>，打開 <strong>&ldquo;設定&rdquo;</strong> 區塊。",
+    "protorig_step2": "在 <strong>&ldquo;數據匯出&rdquo;</strong> 區塊中點擊 <strong>&ldquo;匯出 EGF&rdquo;</strong> 按鈕來匯出數據。",
+    "protorig_step3": "在下方欄位中選擇下載的 .json 檔案。",
+    "protorig_files_label": "檔案 Endfield_EGF_*.json",
+    "protorig_parse_error": "解析 JSON 檔案失敗。請確保這是有效的 EGF 匯出檔案。",
+    "protorig_no_pulls_error": "在所選檔案中未找到抽卡紀錄。",
     "error_account_mismatch_recovery": "帳號不匹配！即使在恢復模式下也找不到匹配的的記錄。請檢查是否選擇了正確的帳號。",
     "endmin_step1": "前往 <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>，打開 <strong>&ldquo;設定 &rarr; 數據&rdquo;</strong> 區塊。",
     "endmin_step2": "點擊 <strong>&ldquo;匯出數據&rdquo;</strong> 按鈕來匯出數據。",

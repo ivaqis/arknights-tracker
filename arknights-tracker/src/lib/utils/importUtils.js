@@ -456,10 +456,14 @@ export function validateAccountConsistency(existingPulls, newPulls, isRecoveryEn
         return;
     }
     
-    const sortedNew = [...newPulls].sort((a, b) => a.time - b.time);
+    const validNew = newPulls.filter(p => p && p.time && typeof p.time.getTime === 'function' && !Number.isNaN(p.time.getTime()));
+    if (validNew.length === 0) return;
+
+    const sortedNew = [...validNew].sort(sortPulls);
     const minNewTime = sortedNew[0].time.getTime();
     const maxNewTime = sortedNew[sortedNew.length - 1].time.getTime();
     const overlaps = existingPulls.filter(p => {
+        if (!p || !p.time || typeof p.time.getTime !== 'function' || Number.isNaN(p.time.getTime())) return false;
         const t = p.time.getTime();
         return t >= minNewTime && t <= maxNewTime;
     });

@@ -439,7 +439,7 @@
                 pendingData,
                 sId,
                 true,
-                (platformTab === 'endmin' || platformTab === 'toolsdev') ? false : isRecoveryEnabled,
+                isRecoveryEnabled,
             );
 
             if (uid) {
@@ -547,97 +547,195 @@
         reader.onload = async (event) => {
             try {
                 const fileContent = event.target.result;
-                let decompressed = "";
-                try {
-                    decompressed = LZString.decompressFromUTF16(fileContent) || LZString.decompress(fileContent);
-                } catch (decErr) {
-                    console.error("LZString decompress error:", decErr);
+                let parsedData;
+
+                if (platformTab === 'protorig') {
+                    try {
+                        parsedData = JSON.parse(fileContent);
+                    } catch (parseErr) {
+                        throw new Error($t("import.protorig_parse_error") || "Invalid JSON format");
+                    }
+                } else {
+                    let decompressed = "";
+                    try {
+                        decompressed = LZString.decompressFromUTF16(fileContent) || LZString.decompress(fileContent);
+                    } catch (decErr) {
+                        console.error("LZString decompress error:", decErr);
+                    }
+
+                    if (!decompressed) {
+                        throw new Error($t("import.endmin_decompress_error"));
+                    }
+                    parsedData = JSON.parse(decompressed);
                 }
 
-                if (!decompressed) {
-                    throw new Error($t("import.endmin_decompress_error"));
-                }
-
-                const parsedData = JSON.parse(decompressed);
-                const profilesObj = parsedData.profileData || {};
-                const profileKeys = Object.keys(profilesObj);
-                let selectedProfileKey = profileKeys.find(k => k === 'main') || profileKeys[0];
-
-                if (!selectedProfileKey || !profilesObj[selectedProfileKey]) {
-                    throw new Error($t("import.endmin_no_profiles_error"));
-                }
-
-                const profile = profilesObj[selectedProfileKey];
                 const allPulls = [];
-                if (profile && profile.pulls) {
-                    Object.entries(profile.pulls).forEach(([poolKey, pullsList]) => {
-                        if (Array.isArray(pullsList)) {
-                            pullsList.forEach(item => {
-                                allPulls.push(item);
-                            });
-                        }
+                if (platformTab === 'protorig') {
+                    const chars = parsedData.characters || [];
+                    const weaponsList = parsedData.weapons || [];
+                    chars.forEach(item => {
+                        allPulls.push({ ...item, recordType: 'character' });
                     });
-                }
+                    weaponsList.forEach(item => {
+                        allPulls.push({ ...item, recordType: 'weapon' });
+                    });
 
-                if (allPulls.length === 0) {
-                    throw new Error($t("import.endmin_no_pulls_error"));
+                    if (allPulls.length === 0) {
+                        throw new Error($t("import.protorig_no_pulls_error") || "No pulls found in the file");
+                    }
+                } else {
+                    const profilesObj = parsedData.profileData || {};
+                    const profileKeys = Object.keys(profilesObj);
+                    let selectedProfileKey = profileKeys.find(k => k === 'main') || profileKeys[0];
+
+                    if (!selectedProfileKey || !profilesObj[selectedProfileKey]) {
+                        throw new Error($t("import.endmin_no_profiles_error"));
+                    }
+
+                    const profile = profilesObj[selectedProfileKey];
+                    if (profile && profile.pulls) {
+                        Object.entries(profile.pulls).forEach(([poolKey, pullsList]) => {
+                            if (Array.isArray(pullsList)) {
+                                pullsList.forEach(item => {
+                                    allPulls.push(item);
+                                });
+                            }
+                        });
+                    }
+
+                    if (allPulls.length === 0) {
+                        throw new Error($t("import.endmin_no_pulls_error"));
+                    }
                 }
 
                 const pullsMapped = allPulls.map((item) => {
-                    const itemId = item.item_id || "";
-                    let rawName = itemId;
-                    let type = "character";
-                    let rarity = Number(item.rarity || 4);
+                    if (platformTab === 'protorig') {
+                        const itemId = item.charId || item.weaponId || "";
+                        let rawName = item.charName || item.weaponName || itemId;
+                        const type = item.recordType;
+                        let rarity = Number(item.rarity || 4);
 
-                    if (itemId.startsWith("chr_")) {
-                        const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
-                        if (characterKey && characters[characterKey]) {
-                            rawName = characters[characterKey].name;
-                            type = "character";
-                            rarity = characters[characterKey].rarity;
+                        if (type === "character") {
+                            const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
+                            if (characterKey && characters[characterKey]) {
+                                rawName = characters[characterKey].name;
+                                rarity = characters[characterKey].rarity;
+                            }
+                        } else {
+                            const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
+                            if (weaponKey && weapons[weaponKey]) {
+                                rawName = weapons[weaponKey].name;
+                                rarity = weapons[weaponKey].rarity;
+                            }
                         }
-                    } else if (itemId.startsWith("wpn_")) {
-                        const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
-                        if (weaponKey && weapons[weaponKey]) {
-                            rawName = weapons[weaponKey].name;
-                            type = "weapon";
-                            rarity = weapons[weaponKey].rarity;
+
+                        const seqId = Number(item.seqId || 0);
+                        const rawTime = item.gachaTs;
+                        let dateObj;
+                        if (rawTime) {
+                            const numTime = Number(rawTime);
+                            if (!Number.isNaN(numTime) && numTime > 0) {
+                                if (numTime < 32503680000) {
+                                    dateObj = new Date(numTime * 1000);
+                                } else {
+                                    dateObj = new Date(numTime);
+                                }
+                            } else {
+                                dateObj = new Date(rawTime);
+                            }
                         }
+                        if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                            dateObj = new Date(0);
+                        }
+                        const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                        const rawBannerId = item.poolId || "standard";
+                        const internalId = getInternalBannerType(rawBannerId);
+
+                        return {
+                            id: uniqueId,
+                            time: dateObj,
+                            name: rawName,
+                            rarity,
+                            bannerId: internalId,
+                            seqId,
+                            isNew: item.isNew === true,
+                            isFree: item.isFree === true || false,
+                            type,
+                            rawPoolId: rawBannerId
+                        };
+                    } else {
+                        const itemId = item.item_id || "";
+                        let rawName = itemId;
+                        let type = "character";
+                        let rarity = Number(item.rarity || 4);
+
+                        if (itemId.startsWith("chr_")) {
+                            const characterKey = Object.keys(characters).find(k => characters[k].gameId === itemId);
+                            if (characterKey && characters[characterKey]) {
+                                rawName = characters[characterKey].name;
+                                type = "character";
+                                rarity = characters[characterKey].rarity;
+                            }
+                        } else if (itemId.startsWith("wpn_")) {
+                            const weaponKey = Object.keys(weapons).find(k => weapons[k].gameId === itemId);
+                            if (weaponKey && weapons[weaponKey]) {
+                                rawName = weapons[weaponKey].name;
+                                type = "weapon";
+                                rarity = weapons[weaponKey].rarity;
+                            }
+                        }
+
+                        const seqId = Number(item.sequence_id || item.sequence || 0);
+                        const rawTime = item.timestamp || item.gachaTs || item.ts;
+                        let dateObj;
+                        if (rawTime) {
+                            const numTime = Number(rawTime);
+                            if (!Number.isNaN(numTime) && numTime > 0) {
+                                if (numTime < 32503680000) {
+                                    dateObj = new Date(numTime * 1000);
+                                } else {
+                                    dateObj = new Date(numTime);
+                                }
+                            } else {
+                                dateObj = new Date(rawTime);
+                            }
+                        }
+                        if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                            dateObj = new Date(0);
+                        }
+                        const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
+
+                        const rawBannerId = item.poolId || item.cardPoolType || "standard";
+                        const internalId = getInternalBannerType(rawBannerId);
+
+                        return {
+                            id: uniqueId,
+                            time: dateObj,
+                            name: rawName,
+                            rarity,
+                            bannerId: internalId,
+                            seqId,
+                            isNew: item.is_new === true || item.isNew === true,
+                            isFree: item.is_free === true || item.isFree === true,
+                            type,
+                            rawPoolId: rawBannerId
+                        };
                     }
-
-                    const seqId = Number(item.sequence_id || item.sequence || 0);
-                    const dateObj = new Date(Number(item.timestamp || item.gachaTs || item.ts || 0));
-                    const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
-
-                    const rawBannerId = item.poolId || item.cardPoolType || "standard";
-                    const internalId = getInternalBannerType(rawBannerId);
-
-                    return {
-                        id: uniqueId,
-                        time: dateObj,
-                        name: rawName,
-                        rarity,
-                        bannerId: internalId,
-                        seqId,
-                        isNew: item.is_new === true || item.isNew === true,
-                        isFree: item.is_free === true || item.isFree === true,
-                        type,
-                        rawPoolId: rawBannerId
-                    };
-                }).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+                }).filter(p => p.time.getFullYear() >= 2000).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
 
                 lastParsedPulls = pullsMapped;
 
             } catch (err) {
                 console.error("Error processing backup file:", err);
-                errorMsg = err.message || $t("import.endmin_unknown_error");
+                errorMsg = err.message || (platformTab === 'protorig' ? ($t("import.protorig_parse_error") || "Error parsing file") : $t("import.endmin_unknown_error"));
             } finally {
                 isLoading = false;
             }
         };
 
         reader.onerror = () => {
-            errorMsg = $t("import.endmin_read_error");
+            errorMsg = platformTab === 'protorig' ? ($t("import.protorig_parse_error") || "Error parsing file") : $t("import.endmin_read_error");
             isLoading = false;
         };
 
@@ -685,7 +783,23 @@
                 }
 
                 const seqId = Number(item.seqId || 0);
-                const dateObj = new Date(Number(item.gachaTs || 0));
+                const rawTime = item.gachaTs || item.timestamp || item.ts;
+                let dateObj;
+                if (rawTime) {
+                    const numTime = Number(rawTime);
+                    if (!Number.isNaN(numTime) && numTime > 0) {
+                        if (numTime < 32503680000) {
+                            dateObj = new Date(numTime * 1000);
+                        } else {
+                            dateObj = new Date(numTime);
+                        }
+                    } else {
+                        dateObj = new Date(rawTime);
+                    }
+                }
+                if (!dateObj || Number.isNaN(dateObj.getTime())) {
+                    dateObj = new Date(0);
+                }
                 const uniqueId = `${dateObj.getTime()}_${rawName}_${seqId}`;
 
                 const rawBannerId = item.poolId || "standard";
@@ -703,7 +817,7 @@
                     type,
                     rawPoolId: rawBannerId
                 };
-            }).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
+            }).filter(p => p.time.getFullYear() >= 2000).sort((a, b) => a.time.getTime() - b.time.getTime() || a.seqId - b.seqId);
 
             lastParsedPulls = pullsMapped;
 
@@ -715,7 +829,7 @@
         }
     }
 
-    $: if (lastParsedPulls && (platformTab === 'endmin' || platformTab === 'toolsdev') && isRecoveryEnabled !== undefined) {
+    $: if (lastParsedPulls && (platformTab === 'endmin' || platformTab === 'toolsdev' || platformTab === 'protorig') && isRecoveryEnabled !== undefined) {
         runSmartImportPreview(lastParsedPulls);
     }
 </script>
@@ -801,7 +915,7 @@
             <div
                 class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full mb-5 mt-5 overflow-x-auto custom-tab-scroll"
             >
-                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }] as tab}
+                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }] as tab}
                     <button
                         class="px-6 py-3 text-sm font-bold transition-all relative border-b-2 whitespace-nowrap
             {platformTab === tab.id
@@ -1080,6 +1194,32 @@
                             {/if}
                         </div>
                     {/each}
+                {:else if platformTab === "protorig"}
+                    <div
+                        class="mb-6 p-3 bg-orange-50/70 dark:bg-orange-600/10 border-l-2 border-orange-500 rounded-r-lg max-w-4xl text-sm text-gray-600 dark:text-[#B7B6B3]"
+                    >
+                        <span class="font-bold text-orange-600 dark:text-orange-400">
+                            {$t("import.warning") || "Warning"}:
+                        </span>
+                        {@html $t("import.tracker_backup_warning")}
+                    </div>
+
+                    {#each [{ text: $t("import.protorig_step1") }, { text: $t("import.protorig_step2") }, { text: $t("import.protorig_step3") }] as step, i}
+                        <div
+                            class="relative border-l-2 pl-10 {i === 2 ? 'border-transparent pb-4' : 'border-gray-200 dark:border-[#FDFD1F]/50 pb-6'}"
+                        >
+                            <div
+                                class="absolute -left-[21px] top-0 w-10 h-10 rounded-full bg-[#FFE145] border-2 border-[#FFE145] shadow-sm flex items-center justify-center font-sdk font-bold text-xl text-[#21272C] z-10"
+                            >
+                                {i + 1}
+                            </div>
+                            <div
+                                class="text-lg text-[#21272C] dark:text-[#E0E0E0] pt-1 font-medium leading-relaxed max-w-4xl pb-3"
+                            >
+                                {@html step.text}
+                            </div>
+                        </div>
+                    {/each}
                 {:else}
                     <div
                         class="relative border-l-2 dark:border-[#FDFD1F]/50 border-gray-200 pb-10 pl-10"
@@ -1230,6 +1370,40 @@
                                     </span>
                                 </Button>
                             </div>
+                        </div>
+                    {:else if platformTab === 'protorig'}
+                        <div class="max-w-4xl mb-6 relative group">
+                            <label
+                                for="protorig-file-input"
+                                class="flex flex-col items-center justify-center w-full min-h-[160px] p-6 border-2 border-dashed rounded-lg cursor-pointer transition-all text-center
+                                {isDragging
+                                    ? 'bg-white border-[#FFE145] dark:bg-[#424242] dark:border-[#FFE145]'
+                                    : 'bg-gray-50 border-gray-300 dark:bg-[#343434] dark:border-[#444444] hover:bg-white hover:border-[#FFE145] hover:dark:border-[#FFE145]'
+                                }"
+                                on:dragover|preventDefault={() => (isDragging = true)}
+                                on:dragenter|preventDefault={() => (isDragging = true)}
+                                on:dragleave|preventDefault={() => (isDragging = false)}
+                                on:drop|preventDefault={handleFileDrop}
+                            >
+                                <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                    <div class="text-[#FFE145] mb-3">
+                                        <Icon name="import" style="width: 48px; height: 48px;" />
+                                    </div>
+                                    <p class="mb-2 text-sm text-gray-500 dark:text-gray-400 font-semibold">
+                                        {$t("import.endmin_drag_drop")}
+                                    </p>
+                                    <p class="text-xs text-gray-400 dark:text-gray-500">
+                                        {selectedFileName || $t("import.protorig_files_label")}
+                                    </p>
+                                </div>
+                                <input
+                                    id="protorig-file-input"
+                                    type="file"
+                                    accept=".json"
+                                    class="hidden"
+                                    on:change={handleFileSelect}
+                                />
+                            </label>
                         </div>
                     {:else}
                         <div
@@ -1412,7 +1586,7 @@
                     {/if}
 
                     <div class="flex flex-col gap-4 mt-2 max-w-4xl items-start">
-                        {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev'}
+                        {#if activeTab === "new" && platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
                             <div
                                 class="flex flex-col gap-2 transition-all w-full"
                             >
@@ -1478,7 +1652,7 @@
                             </div>
                         {/if}
 
-                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev'}
+                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
                             <Checkbox bind:checked={isGlobalStatsEnabled} variant="yellow" align="center">
                                 <span
                                     class="text-gray-600 dark:text-[#E0E0E0] group-hover:text-black group-hover:dark:text-[#FDFDFD] transition-colors cursor-pointer font-medium text-sm"
@@ -1507,7 +1681,7 @@
                             </span>
                         </Checkbox>
 
-                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev'}
+                        {#if platformTab !== 'endmin' && platformTab !== 'toolsdev' && platformTab !== 'protorig'}
                             <div
                                 class="w-fit mt-4 {isLoading
                                     ? 'opacity-60 pointer-events-none cursor-not-allowed'

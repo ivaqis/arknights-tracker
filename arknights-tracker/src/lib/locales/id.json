@@ -153,7 +153,10 @@
     "weapon-all": "Banner Senjata",
     "joint": "Festival Kegemilangan",
     "weponbox_1_3_1": "Edisi Simpul Merah",
-    "weponbox_1_3_2": "Edisi Rona Merah Darah"
+    "weponbox_1_3_2": "Edisi Rona Merah Darah",
+    "weponbox_1_4_1": "Edisi Standar Militer",
+    "weponbox_1_2_2": "Edisi Api Pelebur",
+    "weponbox_1_2_3": "Edisi Pengembara Gesit"
   },
   "import": {
     "title": "Impor Catatan Headhunting",
@@ -267,7 +270,13 @@
     "error_network": "Bad Gateway (Masalah Jaringan)",
     "error_account_mismatch": "Akun Tidak Cocok! Anda sudah memiliki riwayat antara {start} dan {end}, tetapi data yang diimpor berbeda total. Mohon periksa apakah Anda memilih akun yang benar.",
     "recoveryStats": "Pemulihan Catatan",
-    "recoveryTooltip": "Mencentang kotak ini akan memaksa pemulihan riwayat tarikan jika memungkinkan. Ini dapat membantu jika sebagian catatan tarikan hilang.",
+    "recoveryTooltip": "Mencentang kotak ini akan memaksa pemulihan riwayat tarikan jika memungkinkan. Ini dapat membantu jika terjadi kehilangan sebagian catatan tarikan dan data yang tumpang tindih.",
+    "protorig_step1": "Buka <a href='https://protorig.app' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>protorig.app</a>, buka bagian <strong>&ldquo;Pengaturan&rdquo;</strong>.",
+    "protorig_step2": "Ekspor data dengan mengklik tombol <strong>&ldquo;Ekspor EGF&rdquo;</strong> di blok <strong>&ldquo;Ekspor Data&rdquo;</strong>.",
+    "protorig_step3": "Pilih file .json yang diunduh pada kolom di bawah.",
+    "protorig_files_label": "File Endfield_EGF_*.json",
+    "protorig_parse_error": "Gagal mengurai file JSON. Pastikan ini adalah file ekspor EGF yang valid.",
+    "protorig_no_pulls_error": "Tidak ada tarikan yang ditemukan dalam file yang dipilih.",
     "error_account_mismatch_recovery": "Ketidakcocokan Akun! Tidak ada catatan yang cocok ditemukan bahkan dalam mode pemulihan. Silakan periksa apakah Anda memilih akun yang benar.",
     "endmin_step1": "Buka <a href='https://endmin.moe' target='_blank' rel='noopener noreferrer' class='text-blue-600 underline'>endmin.moe</a>, buka bagian <strong>&ldquo;Pengaturan &rarr; Data&rdquo;</strong>.",
     "endmin_step2": "Ekspor data dengan mengklik tombol <strong>&ldquo;Ekspor Data&rdquo;</strong>.",

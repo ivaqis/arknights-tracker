@@ -32,11 +32,15 @@ function createPullStore() {
         Object.keys(data).forEach(key => {
             if (data[key] && Array.isArray(data[key].pulls)) {
                 data[key].pulls = data[key].pulls.filter(p => {
-                    return p && p.name && p.name !== 'undefined' && p.name !== 'null';
+                    if (!p || !p.name || p.name === 'undefined' || p.name === 'null') return false;
+                    if (!p.time) return false;
+                    const d = new Date(p.time);
+                    if (Number.isNaN(d.getTime()) || d.getFullYear() < 2000) return false;
+                    return true;
                 });
 
                 data[key].pulls.forEach(p => {
-                    if (p.time) p.time = new Date(p.time);
+                    p.time = new Date(p.time);
 
                     if (p.name === "Contingent Measure") {
                         p.name = "Prominent Edge";
@@ -199,13 +203,15 @@ function createPullStore() {
 
                             const oldCounts = {};
                             oldList.forEach(p => {
-                                const sig = `${p.time.getTime()}_${p.name}`;
+                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : 0;
+                                const sig = `${timeVal}_${p.name}`;
                                 oldCounts[sig] = (oldCounts[sig] || 0) + 1;
                             });
                             const reallyNew = [];
                             const newCounts = {};
                             incomeList.forEach(p => {
-                                const sig = `${p.time.getTime()}_${p.name}`;
+                                const timeVal = (p && p.time && typeof p.time.getTime === 'function') ? p.time.getTime() : 0;
+                                const sig = `${timeVal}_${p.name}`;
                                 newCounts[sig] = (newCounts[sig] || 0) + 1;
                                 if (newCounts[sig] > (oldCounts[sig] || 0)) {
                                     reallyNew.push(p);
