@@ -1,8 +1,11 @@
+import { MonumentLeaderboardRunEntity } from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunEntity";
+
 export interface MonumentLeaderboardGroupRunRecordEntity {
     uid: string;
     avatarId: string | null;
     level: number;
     serverId: string;
     groupId: string;
-    gameUid: string; // todo публичный id группы
+    totalPassTs: number;
+    records: MonumentLeaderboardRunEntity[];
 }

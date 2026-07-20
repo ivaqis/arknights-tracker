@@ -34,8 +34,8 @@ export class GetContractList extends Controller<
         this._sortField = req.query.sortField;
         this._sortOrder = req.query.sortOrder;
         this._serverId = req.query.serverId;
-        this._page = parseInt(req.query.page);
-        this._recordsOnPage = parseInt(req.query.recordsOnPage);
+        this._page = parseInt(req.query.page, 10);
+        this._recordsOnPage = parseInt(req.query.recordsOnPage, 10);
     }
 
     protected async execute(): Promise<void> {

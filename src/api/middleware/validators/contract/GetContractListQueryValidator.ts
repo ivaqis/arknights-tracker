@@ -64,7 +64,7 @@ export class GetContractListQueryValidator extends Validator<GetContractListQuer
         const rule = new StringValidationRule(true);
 
         return new ValidationRule(
-            item => rule.isValid(item.page) && !isNaN(parseInt(item.page)) && parseInt(item.page) > 0,
+            item => rule.isValid(item.page) && !isNaN(parseInt(item.page, 10)) && parseInt(item.page, 10) > 0,
             "page must be a natural number"
         );
     }

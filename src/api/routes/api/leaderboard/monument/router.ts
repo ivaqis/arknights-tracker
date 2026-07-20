@@ -4,13 +4,14 @@ import { GetMonumentRun } from "@api/controllers/monument/GetMonumentRun";
 import {
     GetMonumentGroupRunResponseValidator
 } from "@api/middleware/validators/monument/GetMonumentGroupRunResponseValidator";
+import { GetMonumentListRequestValidator } from "@api/middleware/validators/monument/GetMonumentListRequestValidator";
 import { GetMonumentRunRequestValidator } from "@api/middleware/validators/monument/GetMonumentRunRequestValidator";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { Router } from "express";
 
 export const monumentRouter = Router();
 
-// monumentRouter.get("/list"); // todo
+monumentRouter.get("/list", RequestValidator.with(GetMonumentListRequestValidator)); // todo
 // monumentRouter.get("/groupList"); // todo
 monumentRouter.get("/run", RequestValidator.with(GetMonumentRunRequestValidator), Controller.with(GetMonumentRun));
 monumentRouter.get("/groupRun", RequestValidator.with(GetMonumentGroupRunResponseValidator), Controller.with(GetMonumentGroupRun));

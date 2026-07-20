@@ -5,6 +5,8 @@ import { Repository } from "@database/repositories/Repository";
 import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable";
 import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
+import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
+import { SortOrder } from "@models/SortOrder";
 import { PrismaClient } from "@prisma/client";
 
 export class MonumentLeaderboardRepository extends Repository {
@@ -44,6 +46,112 @@ export class MonumentLeaderboardRepository extends Repository {
 
     public async findByUserGroupId(userGroupId: string): Promise<UserMonumentLeaderboardRecord[]> {
         return this._monumentTable.findByUserGroupId(userGroupId);
+    }
+
+    public async findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds: string[]): Promise<{
+        monumentRecord: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]> {
+        return this._monumentTable.findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds);
+    }
+
+    public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<{
+        monumentRecord: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]>;
+    public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
+                                                          publicOnly: boolean,
+                                                          serverId: string | null,
+                                                          sortField?: MonumentLeaderboardSortField,
+                                                          sortOrder?: SortOrder,
+                                                          take?: number,
+                                                          skip?: number
+    ): Promise<{
+        monumentRecord: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]>;
+
+    public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
+                                                          publicOnly: boolean,
+                                                          serverId: string | null,
+                                                          sortField?: MonumentLeaderboardSortField,
+                                                          sortOrder?: SortOrder,
+                                                          take?: number,
+                                                          skip?: number
+    ): Promise<{
+        monumentRecord: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]> {
+        return this._monumentTable.findByDungeonIdIncludeGameProfileAndUser(dungeonId, publicOnly, serverId, sortField, sortOrder, take, skip);
+    }
+
+    public async findManyByUserGroupId(userGroupIds: string[]): Promise<UserMonumentLeaderboardRecord[]> {
+        return this._monumentTable.findManyByUserGroupId(userGroupIds);
+    }
+
+    public async sumClearTimeByUserGroupIdSorted(groupId: string,
+                                                 isHard: boolean,
+                                                 publicOnly: boolean,
+                                                 serverId: string | null,
+                                                 sortOrder: SortOrder,
+                                                 minCountInGroup: number = 0,
+                                                 take?: number,
+                                                 skip?: number
+    ): Promise<{
+        userGroupId: string,
+        clearTimeSec: number
+    }[]> {
+        return this._monumentTable.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+    }
+
+    public async findUserGroupsByGroupIdSortedByLevel(groupId: string,
+                                                      isHard: boolean,
+                                                      publicOnly: boolean,
+                                                      serverId: string | null,
+                                                      sortOrder: SortOrder,
+                                                      minCountInGroup: number = 0,
+                                                      take: number,
+                                                      skip: number
+    ): Promise<string[]> {
+        return this._monumentGroupsTable.findByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+    }
+
+    public async findByGroupIdIncludeGameProfileAndUser(groupId: string,
+                                                        isHard: boolean,
+                                                        publicOnly: boolean,
+                                                        serverId: string | null,
+                                                        sortField: MonumentLeaderboardSortField,
+                                                        sortOrder: SortOrder,
+                                                        minCountInGroup: number,
+                                                        take: number,
+                                                        skip: number
+    ): Promise<{
+        monumentRecord: UserMonumentLeaderboardRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]> {
+        let groups: string[];
+
+        switch (sortField) {
+            case MonumentLeaderboardSortField.LEVEL:
+                groups = await this.findUserGroupsByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+                break;
+
+            case MonumentLeaderboardSortField.TIME:
+                const times = await this.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+
+                groups = times.map(item => item.userGroupId);
+        }
+
+        return await this.findManyByUserGroupIdIncludeGameProfileAndUser(groups);
+    }
+
+    public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null): Promise<number> {
+        return this._monumentTable.countByGroupId(groupId, isHard, publicOnly, serverId);
     }
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {

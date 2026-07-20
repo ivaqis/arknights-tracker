@@ -47,6 +47,7 @@ model UserGameProfile {
     userBannerProfile        UserBannerProfile?
     userContractLeaderboards UserContractLeaderboard[]
     userMonumentLeaderboards UserMonumentLeaderboard[]
+    userMonumentGroups       UserMonumentGroup[]
 
     @@index([uid, serverId])
 }
@@ -96,6 +97,7 @@ model UserMonumentGroup {
     isHard  Boolean
 
     userMonumentLeaderboards UserMonumentLeaderboard[]
+    userGameProfile          UserGameProfile           @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
     @@unique([gameUid, groupId, isHard])
     @@index([groupId, isHard, gameUid])
