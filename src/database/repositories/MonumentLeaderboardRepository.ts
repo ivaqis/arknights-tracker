@@ -22,12 +22,12 @@ export class MonumentLeaderboardRepository extends Repository {
         return this._monumentTable.find(id);
     }
 
-    public async findByGameUidIncludeGameProfileAndUser(gameUid: string, dungeonId: string): Promise<{
+    public async findIncludeGameProfileAndUser(id: string): Promise<{
         record: UserMonumentLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     } | null> {
-        return this._monumentTable.findByGameUidIncludeGameProfileAndUser(gameUid, dungeonId);
+        return this._monumentTable.findIncludeGameProfileAndUser(id);
     }
 
     public async findByGameUid(gameUid: string, dungeonId?: string): Promise<UserMonumentLeaderboardRecord[]> {

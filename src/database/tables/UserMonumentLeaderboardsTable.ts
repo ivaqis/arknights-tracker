@@ -24,17 +24,14 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return UserMonumentLeaderboardRecord.createFromEntity(entity);
     }
 
-    public async findByGameUidIncludeGameProfileAndUser(gameUid: string, dungeonId: string): Promise<{
+    public async findIncludeGameProfileAndUser(id: string): Promise<{
         record: UserMonumentLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     } | null> {
         const entity = await this.table.findUnique({
             where: {
-                gameUid_dungeonId: {
-                    dungeonId,
-                    gameUid
-                }
+                id
             },
             include: {
                 userGameProfile: {

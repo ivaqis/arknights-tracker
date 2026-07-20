@@ -20,19 +20,17 @@ export class GetMonumentRun extends Controller<
     private readonly _firebase: FirebaseAuthenticator = firebase;
 
     private readonly _firebaseToken: string;
-    private readonly _gameUid: string; // todo переделать контракты
-    private readonly _dungeonId: string;
+    private readonly _recordId: string;
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentRunResponse>, undefined, GetMonumentRunQuery>, res: e.Response<ResponseBody<GetMonumentRunResponse>>) {
         super(req, res);
 
         this._firebaseToken = req.query.firebaseToken;
-        this._gameUid = req.query.gameUid;
-        this._dungeonId = req.query.dungeonId;
+        this._recordId = req.query.recordId;
     }
 
     protected async execute(): Promise<void> {
-        const records = await this._database.monumentLeaderboard.findByGameUidIncludeGameProfileAndUser(this._gameUid, this._dungeonId);
+        const records = await this._database.monumentLeaderboard.findIncludeGameProfileAndUser(this._recordId);
 
         if (!records) {
             this.status = 404;

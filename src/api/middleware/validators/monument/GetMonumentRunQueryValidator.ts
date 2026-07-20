@@ -12,8 +12,7 @@ export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery>
     private static getRules(): ValidationRule<GetMonumentRunQuery>[] {
         return [
             this.getFirebaseTokenRule(),
-            this.getGameUidRule(),
-            this.getDungeonIdRule()
+
         ];
     }
 
@@ -26,21 +25,12 @@ export class GetMonumentRunQueryValidator extends Validator<GetMonumentRunQuery>
         );
     }
 
-    private static getGameUidRule(): ValidationRule<GetMonumentRunQuery> {
+    private static getRecordIdRule(): ValidationRule<GetMonumentRunQuery> {
         const rule = new StringValidationRule(true);
 
         return new ValidationRule(
-            item => rule.isValid(item.gameUid),
-            "gameUid must be a string",
-        );
-    }
-
-    private static getDungeonIdRule(): ValidationRule<GetMonumentRunQuery> {
-        const rule = new StringValidationRule(true);
-
-        return new ValidationRule(
-            item => rule.isValid(item.dungeonId),
-            "dungeonId must be a string",
-        );
+            item => rule.isValid(item.recordId),
+            "recordId must be a string",
+        )
     }
 }
