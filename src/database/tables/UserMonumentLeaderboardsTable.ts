@@ -298,6 +298,12 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return entities[0].group_count;
     }
 
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<number> {
+        return await this.table.count({
+            where: UserMonumentLeaderboardsTable.getDungeonWhereCondition(dungeonId, publicOnly, serverId)
+        });
+    }
+
     public async create(userGroupId: string, gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {
         const entity = await this.table.create({
             data: {

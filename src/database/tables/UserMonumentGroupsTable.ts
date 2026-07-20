@@ -23,6 +23,18 @@ export class UserMonumentGroupsTable extends Table<Prisma.UserMonumentGroupDeleg
         return new UserMonumentGroupRecord(entity);
     }
 
+    public async findMany(ids: string[]): Promise<UserMonumentGroupRecord[]> {
+        const entities = await this.table.findMany({
+            where: {
+                id: {
+                    in: ids
+                }
+            }
+        });
+
+        return entities.map(entity => new UserMonumentGroupRecord(entity));
+    }
+
     public async findManyByGroupId(groupId: string, isHard?: boolean, gameUid?: string): Promise<UserMonumentGroupRecord[]> {
         const entities = await this.table.findMany({
             where: {

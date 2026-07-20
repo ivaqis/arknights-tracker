@@ -30,6 +30,18 @@ export class UsersTable extends Table<Prisma.UserDelegate> {
         return new UserRecord(entity);
     }
 
+    public async findMany(uids: bigint[]): Promise<UserRecord[]> {
+        const entities = await this.table.findMany({
+            where: {
+                uid: {
+                    in: uids
+                }
+            }
+        });
+
+        return entities.map(entity => new UserRecord(entity));
+    }
+
     public async findByPublicUid(publicUid: string): Promise<UserRecord | null> {
         const entity = await this.table.findUnique({
             where: { publicUid: publicUid },

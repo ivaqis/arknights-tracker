@@ -16,6 +16,10 @@ export class GameProfilesRepository extends Repository {
         return this._gameProfilesTable.find(gameUid);
     }
 
+    public async findMany(gameUids: string[]): Promise<UserGameProfileRecord[]> {
+        return this._gameProfilesTable.findMany(gameUids);
+    }
+
     public async findByUid(uid: bigint, serverId?: string): Promise<UserGameProfileRecord[]> {
         return this._gameProfilesTable.findByUid(uid, serverId);
     }

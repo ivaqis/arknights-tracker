@@ -21,6 +21,18 @@ export class UserGameProfilesTable extends Table<Prisma.UserGameProfileDelegate>
         return UserGameProfileRecord.createFromEntity(entity);
     }
 
+    public async findMany(gameUids: string[]): Promise<UserGameProfileRecord[]> {
+        const entities = await this.table.findMany({
+            where: {
+                gameUid: {
+                    in: gameUids
+                }
+            }
+        });
+
+        return entities.map(UserGameProfileRecord.createFromEntity);
+    }
+
     public async findByUid(uid: bigint, serverId?: string): Promise<UserGameProfileRecord[]> {
         const entities = await this.table.findMany({
             where: {

@@ -30,6 +30,10 @@ export class UsersRepository extends Repository {
         return this._usersTable.find(uid);
     }
 
+    public async findManyUsers(uids: bigint[]): Promise<UserRecord[]> {
+        return this._usersTable.findMany(uids);
+    }
+
     public async findUserByPublicUid(publicUid: string): Promise<UserRecord | null> {
         return this._usersTable.findByPublicUid(publicUid);
     }

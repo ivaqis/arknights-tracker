@@ -1,4 +1,5 @@
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
+import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
@@ -150,8 +151,35 @@ export class MonumentLeaderboardRepository extends Repository {
         return await this.findManyByUserGroupIdIncludeGameProfileAndUser(groups);
     }
 
+    public async findUserGroupsByGroupId(groupId: string,
+                                         isHard: boolean,
+                                         publicOnly: boolean,
+                                         serverId: string | null,
+                                         sortField: MonumentLeaderboardSortField,
+                                         sortOrder: SortOrder,
+                                         minCountInGroup: number,
+                                         take: number,
+                                         skip: number
+    ): Promise<string[]> {
+        switch (sortField) {
+            case MonumentLeaderboardSortField.LEVEL:
+                return await this.findUserGroupsByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+            case MonumentLeaderboardSortField.TIME:
+                const times = await this.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
+                return times.map(item => item.userGroupId);
+        }
+    }
+
+    public async findManyUserGroups(ids: string[]): Promise<UserMonumentGroupRecord[]> {
+        return this._monumentGroupsTable.findMany(ids);
+    }
+
     public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null): Promise<number> {
         return this._monumentTable.countByGroupId(groupId, isHard, publicOnly, serverId);
+    }
+
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<number> {
+        return this._monumentTable.countByDungeonId(dungeonId, publicOnly, serverId);
     }
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {
