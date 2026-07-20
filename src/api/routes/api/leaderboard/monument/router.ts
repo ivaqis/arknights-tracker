@@ -1,5 +1,6 @@
 import { Controller } from "@api/controllers/Controller";
 import { GetMonumentGroupRun } from "@api/controllers/monument/GetMonumentGroupRun";
+import { GetMonumentList } from "@api/controllers/monument/GetMonumentList";
 import { GetMonumentRun } from "@api/controllers/monument/GetMonumentRun";
 import {
     GetMonumentGroupRunResponseValidator
@@ -11,7 +12,7 @@ import { Router } from "express";
 
 export const monumentRouter = Router();
 
-monumentRouter.get("/list", RequestValidator.with(GetMonumentListRequestValidator)); // todo
+monumentRouter.get("/list", RequestValidator.with(GetMonumentListRequestValidator), Controller.with(GetMonumentList));
 // monumentRouter.get("/groupList"); // todo
 monumentRouter.get("/run", RequestValidator.with(GetMonumentRunRequestValidator), Controller.with(GetMonumentRun));
 monumentRouter.get("/groupRun", RequestValidator.with(GetMonumentGroupRunResponseValidator), Controller.with(GetMonumentGroupRun));

@@ -1,4 +1,8 @@
+import {
+    MonumentLeaderboardRunRecordEntity
+} from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunRecordEntity";
+
 export interface GetMonumentListResponse {
-    list: [];
+    list: MonumentLeaderboardRunRecordEntity[];
     totalCount: number;
 }
