@@ -829,6 +829,20 @@
         }
     }
 
+    function getBannerName(bannerId) {
+        const bannersKey = `banners.${bannerId}`;
+        const bannersTrans = $t(bannersKey);
+        if (bannersTrans !== bannersKey) {
+            return bannersTrans;
+        }
+        const typesKey = `bannerTypes.${bannerId}`;
+        const typesTrans = $t(typesKey);
+        if (typesTrans !== typesKey) {
+            return typesTrans;
+        }
+        return bannerId;
+    }
+
     $: if (lastParsedPulls && (platformTab === 'endmin' || platformTab === 'toolsdev' || platformTab === 'protorig') && isRecoveryEnabled !== undefined) {
         runSmartImportPreview(lastParsedPulls);
     }
@@ -1781,8 +1795,7 @@
                                         <span
                                             class="text-gray-700 dark:text-[#E0E0E0] font-medium flex items-center gap-2"
                                         >
-                                            {$t(`bannerTypes.${bannerId}`) ||
-                                                bannerId}
+                                            {getBannerName(bannerId)}
                                         </span>
                                         <span
                                             class="bg-[#FFE145] text-[#21272C] text-xs font-bold px-2 py-1 rounded-md transition-all"
