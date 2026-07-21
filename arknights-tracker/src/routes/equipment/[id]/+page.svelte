@@ -207,6 +207,11 @@
         }
     }
 
+    // ponytail: isPct checks if attribute values represent a percentage based on any value between 0 and 1 exclusive.
+    // Ceiling: assumes percentage attributes always have values strictly between 0 and 1, and flat attributes are >= 1.
+    // Upgrade path: check actual data schema or metadata for percentage flag if attributes ever have overlapping ranges.
+    const isPct = (vals) => (vals || []).some(v => v !== 0 && Math.abs(v) > 0 && Math.abs(v) < 1);
+
     $: usefulnessMap = (() => {
         if (equipData.rarity !== 5) return {};
         const slotItems = Object.entries(equipment)
@@ -223,6 +228,7 @@
             }
             const matchAttr = foodNonDefAttrs[0];
             const attrType = matchAttr.attrType;
+            const matchIsPercent = isPct(matchAttr.values);
             const isInverted = attrType.toLowerCase().includes("damagetakenscalar");
             const foodValues = matchAttr.values.filter((v) => v !== undefined && v !== null);
             const foodBest = foodValues.length > 0
@@ -233,7 +239,7 @@
             for (const target of slotItems) {
                 if (target.id === food.id) continue;
                 const targetAttrs = target.displayAttr || [];
-                const targetAttr = targetAttrs.find((a) => a.attrType === attrType);
+                const targetAttr = targetAttrs.find((a) => a.attrType === attrType && isPct(a.values) === matchIsPercent);
                 if (!targetAttr) continue;
                 const targetValues = targetAttr.values.filter((v) => v !== undefined && v !== null);
                 const targetBest = targetValues.length > 0
@@ -283,17 +289,20 @@
                         ? Math.min(...targetValues.map(Math.abs))
                         : Math.max(...targetValues.map(Math.abs)))
                     : 0;
+            const targetIsPercent = isPct(targetValues);
+            const matchesTargetAttr = (a) => {
+                if (a.attrType !== targetAttr.attrType) return false;
+                return isPct(a.values) === targetIsPercent;
+            };
+
             const matchesMapped = pool
                 .filter((food) => {
                     if (food.partType !== equipData.partType) return false;
                     if (food.rarity !== 5) return false;
 
                     const foodAttrs = food.displayAttr || [];
-                    const foodAttrIndex = foodAttrs.findIndex(
-                        (a) => a.attrType === targetAttr.attrType,
-                    );
-                    if (foodAttrIndex === -1) return false;
-                    const foodAttr = foodAttrs[foodAttrIndex];
+                    const foodAttr = foodAttrs.find(matchesTargetAttr);
+                    if (!foodAttr) return false;
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
@@ -312,9 +321,7 @@
                 .map((food) => {
                     const foodAttrs = food.displayAttr || [];
 
-                    const foodAttr = foodAttrs.find(
-                        (a) => a.attrType === targetAttr.attrType,
-                    );
+                    const foodAttr = foodAttrs.find(matchesTargetAttr);
                     const foodValues = foodAttr.values.filter(
                         (v) => v !== undefined && v !== null,
                     );
@@ -333,11 +340,10 @@
                     );
                     const isFirstStat =
                         foodNonDefAttrs.length > 0 &&
-                        foodNonDefAttrs[0].attrType === targetAttr.attrType;
-                    const isGoodMatch = isHigherStat && isFirstStat;
+                        matchesTargetAttr(foodNonDefAttrs[0]);
                     const craftCost = (food.materials && food.materials.length > 0 && food.materials[0].length > 0) ? food.materials[0][0].amount : Infinity;
 
-                    return { ...food, isGoodMatch, foodMax: foodBest, isHigherStat, craftCost };
+                    return { ...food, isGoodMatch: isHigherStat && isFirstStat, foodMax: foodBest, isHigherStat, craftCost };
                 });
 
             const absoluteBestStat =

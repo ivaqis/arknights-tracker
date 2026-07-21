@@ -926,20 +926,22 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="flex items-end gap-0 border-b border-gray-200 dark:border-[#444444] w-full mb-5 mt-5 overflow-x-auto custom-tab-scroll"
-            >
-                {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }] as tab}
-                    <button
-                        class="px-6 py-3 text-sm font-bold transition-all relative border-b-2 whitespace-nowrap
-            {platformTab === tab.id
-                            ? 'text-[#21272C] border-[#FFE145] dark:text-[#FDFDFD]'
-                            : 'text-gray-400 hover:text-gray-600 border-transparent hover:bg-gray-50 hover:dark:bg-[#424242] dark:text-[#B7B6B3]'}"
-                        on:click={() => (platformTab = tab.id)}
-                    >
-                        {tab.label}
-                    </button>
-                {/each}
+            <div class="w-full mb-4 mt-4 sm:mb-6 sm:mt-6 overflow-hidden">
+                <div
+                    class="flex w-full overflow-x-auto no-scrollbar max-[719px]:bg-gray-100 max-[719px]:dark:bg-[#2b2b2b] max-[719px]:p-1 max-[719px]:rounded-xl max-[719px]:border max-[719px]:border-gray-200/50 max-[719px]:dark:border-gray-800/50 max-[719px]:gap-1 max-[719px]:items-center min-[720px]:border-b min-[720px]:border-gray-200 min-[720px]:dark:border-[#444444] min-[720px]:gap-0 min-[720px]:items-end min-[720px]:pb-1"
+                >
+                    {#each [{ id: "pc-web", label: $t("import.tab_pc") }, { id: "pc1", label: $t("import.tab_pc1") }, { id: "pc2", label: $t("import.tab_pc2") }, { id: "pc3", label: $t("import.tab_pc3") }, { id: "pc-manual", label: $t("import.tab_pc_manual") }, { id: "android", label: $t("import.tab_android") }, { id: "ios", label: $t("import.tab_ios") }, { id: "endmin", label: "endmin.moe" }, { id: "toolsdev", label: "endfieldtools.dev" }, { id: "protorig", label: "PROTORIG.app" }] as tab}
+                        <button
+                            class="font-bold transition-all whitespace-nowrap select-none
+                                {platformTab === tab.id
+                                    ? 'text-[#21272C] dark:text-[#FDFDFD] max-[719px]:bg-white max-[719px]:dark:bg-[#383838] max-[719px]:shadow-sm max-[719px]:rounded-lg max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-[#FFE145] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'
+                                    : 'text-gray-400 dark:text-[#B7B6B3] hover:text-gray-600 max-[719px]:text-gray-500 max-[719px]:dark:text-[#B7B6B3] max-[719px]:px-4 max-[719px]:py-2 max-[719px]:text-xs min-[720px]:border-b-2 min-[720px]:border-transparent min-[720px]:hover:bg-gray-50 min-[720px]:hover:dark:bg-[#424242] min-[720px]:px-6 min-[720px]:py-3 min-[720px]:text-sm'}"
+                            on:click={() => (platformTab = tab.id)}
+                        >
+                            {tab.label}
+                        </button>
+                    {/each}
+                </div>
             </div>
             {#if platformTab === "android"}
                 <div
@@ -1886,3 +1888,39 @@
     on:confirm={confirmDeleteToken}
     on:close={cancelDeleteToken}
 />
+
+<style>
+    /* Hide scrollbar on mobile devices (< 720px) */
+    @media (max-width: 719px) {
+        .no-scrollbar {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    /* Styled thin scrollbar for PC/Tablet (>= 720px) to scroll if tabs overflow */
+    @media (min-width: 720px) {
+        .no-scrollbar::-webkit-scrollbar {
+            height: 5px;
+        }
+        .no-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .no-scrollbar::-webkit-scrollbar-thumb {
+            background: #d1d5db; /* gray-300 */
+            border-radius: 9999px;
+        }
+        :global(.dark) .no-scrollbar::-webkit-scrollbar-thumb {
+            background: #4b5563; /* gray-600 */
+        }
+        .no-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; /* gray-400 */
+        }
+        :global(.dark) .no-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+    }
+</style>
