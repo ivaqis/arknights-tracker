@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
 import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse";
@@ -6,6 +5,9 @@ import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { GameServerId } from "@models/GameServerId";
+import {
+    MonumentLeaderboardGroupRunRecordEntity
+} from "@models/monumentLeaderboard/entities/MonumentLeaderboardGroupRunRecordEntity";
 import { MonumentLeaderboardSearcher } from "@models/monumentLeaderboard/MonumentLeaderboardSearcher";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
@@ -60,10 +62,21 @@ export class GetMonumentGroupList extends Controller<
         }
 
         const list = await searcher.findPublicGroups(this._groupId, this._isHard, serverId, this._sortField, this._sortOrder, take, skip);
+        const entities = list.map(item => item.getEntity());
+        entities.sort((a, b) => this.sort(a, b));
 
         this.data = {
             list: list.map(item => item.getEntity()),
             totalCount: count
         };
+    }
+
+    private sort(a: MonumentLeaderboardGroupRunRecordEntity, b: MonumentLeaderboardGroupRunRecordEntity): number {
+        switch (this._sortField) {
+            case MonumentLeaderboardSortField.TIME:
+                return (b.totalPassTs - a.totalPassTs) * (this._sortOrder === SortOrder.DESC ? 1 : -1);
+            case MonumentLeaderboardSortField.LEVEL:
+                return (b.level - a.level) * (this._sortOrder === SortOrder.DESC ? 1 : -1);
+        }
     }
 }
