@@ -65,8 +65,12 @@ export class GetMonumentGroupList extends Controller<
         const entities = list.map(item => item.getEntity());
         entities.sort((a, b) => this.sort(a, b));
 
+        for (const entity of entities) {
+            entity.records.sort((a, b) => a.dungeonId.localeCompare(b.dungeonId));
+        }
+
         this.data = {
-            list: list.map(item => item.getEntity()),
+            list: entities,
             totalCount: count
         };
     }
