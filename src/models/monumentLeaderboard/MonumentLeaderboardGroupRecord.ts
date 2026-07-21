@@ -40,7 +40,7 @@ export class MonumentLeaderboardGroupRecord implements IEntityClass<MonumentLead
                                    gameProfile: { level: number, serverId: string },
                                    records: UserMonumentLeaderboardRecord[]
     ): MonumentLeaderboardGroupRecord {
-        const groupId = records[0].groupId;
+        const groupId = records[0].userGroupId;
         const totalPassTs = records.reduce((total, cur) => total += cur.clearTimeSec, 0);
 
         return new MonumentLeaderboardGroupRecord(

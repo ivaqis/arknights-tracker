@@ -1,6 +1,7 @@
+import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
-import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
-import { GetMonumentListResponse } from "@api/contracts/monument/GetMonumentListResponse";
+import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
+import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
@@ -10,27 +11,29 @@ import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/Monume
 import { SortOrder } from "@models/SortOrder";
 import e from "express";
 
-export class GetMonumentList extends Controller<
+export class GetMonumentGroupList extends Controller<
     {},
-    GetMonumentListResponse,
+    GetMonumentGroupListResponse,
     undefined,
-    GetMonumentListQuery
+    GetMonumentGroupListQuery
 > {
-    public readonly name = "GetMonumentList";
+    public readonly name = "GetMonumentGroupList";
 
     private readonly _database: Database = database;
 
-    private readonly _dungeonId: string;
+    private readonly _groupId: string;
+    private readonly _isHard: boolean;
     private readonly _sortField: MonumentLeaderboardSortField;
     private readonly _sortOrder: SortOrder;
     private readonly _serverId: GameServerId | "all";
     private readonly _page: number;
     private readonly _recordsOnPage: number;
 
-    public constructor(req: e.Request<{}, ResponseBody<GetMonumentListResponse>, undefined, GetMonumentListQuery>, res: e.Response<ResponseBody<GetMonumentListResponse>>) {
+    public constructor(req: e.Request<{}, ResponseBody<GetMonumentGroupListResponse>, undefined, GetMonumentGroupListQuery>, res: e.Response<ResponseBody<GetMonumentGroupListResponse>>) {
         super(req, res);
 
-        this._dungeonId = req.query.dungeonId;
+        this._groupId = req.query.groupId;
+        this._isHard = req.query.isHard === "true";
         this._sortField = req.query.sortField;
         this._sortOrder = req.query.sortOrder;
         this._serverId = req.query.serverId;
@@ -45,7 +48,7 @@ export class GetMonumentList extends Controller<
         const take = this._recordsOnPage;
         const skip = this._recordsOnPage * (this._page - 1);
 
-        const count = await searcher.countPublicRuns(this._dungeonId, serverId);
+        const count = await searcher.countPublicGroupRuns(this._groupId, this._isHard, serverId);
 
         if (count <= skip) {
             this.data = {
@@ -56,7 +59,7 @@ export class GetMonumentList extends Controller<
             return;
         }
 
-        const list = await searcher.findPublicRuns(this._dungeonId, serverId, this._sortField, this._sortOrder, take, skip);
+        const list = await searcher.findPublicGroups(this._groupId, this._isHard, serverId, this._sortField, this._sortOrder, take, skip);
 
         this.data = {
             list: list.map(item => item.getEntity()),

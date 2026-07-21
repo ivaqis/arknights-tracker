@@ -291,11 +291,13 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
                            LEFT JOIN "UserGameProfile" game ON game."gameUid" = l."gameUid"
                            LEFT JOIN public."User" U ON U.uid = game.uid
                   WHERE l."groupId" = ${groupId}
-                    AND l."isHard" = ${isHard} ${serverId ? `AND game."serverId" = ${serverId}` : ""} ${publicOnly ? "AND U.\"isPrivate\" = false" : ""}
+                    AND l."isHard" = ${isHard}
+                      ${serverId ? Prisma.sql`AND game."serverId" = ${serverId}` : Prisma.sql``} 
+                      ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
                   GROUP BY l."userGroupId"
                   HAVING count (l.id) >= 6) a`;
 
-        return entities[0].group_count;
+        return Number(entities[0].group_count);
     }
 
     public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<number> {

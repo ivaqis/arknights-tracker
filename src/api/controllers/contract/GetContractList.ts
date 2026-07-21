@@ -47,7 +47,7 @@ export class GetContractList extends Controller<
 
         const count = await searcher.countPublic(this._contractId, serverId);
 
-        if (count < skip) {
+        if (count <= skip) {
             this.data = {
                 list: [],
                 totalCount: count

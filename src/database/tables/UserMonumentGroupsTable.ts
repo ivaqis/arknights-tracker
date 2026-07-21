@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
 import { Table } from "@database/tables/Table";
 import { SortOrder } from "@models/SortOrder";
@@ -56,23 +57,25 @@ export class UserMonumentGroupsTable extends Table<Prisma.UserMonumentGroupDeleg
                                             take: number,
                                             skip: number
     ): Promise<string[]> {
-        const entities = await this.prisma.$queryRaw<{
-            id: string;
-        }[]>`
+        const query = Prisma.sql`
             SELECT gr.id
             FROM "UserMonumentGroup" gr
                      LEFT JOIN "UserGameProfile" game ON game."gameUid" = gr."gameUid"
-                     LEFT JOIN public."User" U ON U.uid = game.uid
+                     LEFT JOIN "User" U ON U.uid = game.uid
             WHERE gr."groupId" = ${groupId}
               AND gr."isHard" = ${isHard}
-              ${serverId ? `AND game."serverId" = ${serverId}` : ""}
-              ${publicOnly ? "AND U.\"isPrivate\" = false" : ""}
+              ${serverId ? Prisma.sql`AND game."serverId" = ${serverId}` : Prisma.sql``}
+              ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
               AND (SELECT count(l.id)
                    FROM "UserMonumentLeaderboard" l
                    WHERE l."userGroupId" = gr.id) >= ${minCountInGroup}
-            ORDER BY game.level ${sortOrder}
+            ${sortOrder === "asc" ? Prisma.sql`ORDER BY game.level asc` : Prisma.sql`ORDER BY game.level desc`}
             LIMIT ${take}
             OFFSET ${skip}`;
+
+        const entities = await this.prisma.$queryRaw<{
+            id: string;
+        }[]>(query);
 
         return entities.map(entity => entity.id);
     }
