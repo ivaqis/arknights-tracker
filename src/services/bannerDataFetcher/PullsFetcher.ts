@@ -1,5 +1,7 @@
 import { logger } from "@/logger";
+import { BannerType } from "@models/banners/BannerType";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
+import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
 import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
 import { sleep } from "@utils/globalUtils";
@@ -13,12 +15,15 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
     private readonly _url: string;
     private readonly _urlParams: U;
     private readonly _lastPullTimeMs: bigint;
+    private readonly _callbackFn?: (count: number) => void;
 
-    constructor(url: string, urlParams: U, lastPullTimeMs: bigint = 0n) {
+    constructor(url: string, urlParams: U, lastPullTimeMs: bigint = 0n, callbackFn?: (count: number) => void) {
         this._url = url;
         this._urlParams = urlParams;
 
         this._lastPullTimeMs = lastPullTimeMs;
+
+        this._callbackFn = callbackFn;
     }
 
     private get safeLastPullTimeMs() {
@@ -70,12 +75,18 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
             }
 
             hasMore = resolvedData.hasMore;
-            this._urlParams.seqId = list[list.length - 1].seqId;
+
             let isEnded = this.addPullsToList(list, resolvedData.list);
+            let temp = list.at(-1);
+            if (temp) {
+                this._urlParams.seqId = temp.seqId;
+            }
+
+            this._callbackFn?.(list.length);
 
             if (isEnded) {
                 hasMore = false;
-                logger.info("[Optimization] Reached known history")
+                logger.info("[Optimization] Reached known history");
                 break;
             }
 
@@ -137,7 +148,7 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
     }
 
     private async getResponseData(url: string) {
-        logger.info(`PullsFetcher: Getting response data: ${this._urlParams.seqId}`);
+        logger.info(`PullsFetcher: Getting response data: ${this._urlParams.seqId} ${this.getBannerType()}`);
 
         let resp: AxiosResponse<BannerResponse<T>>;
 
@@ -150,5 +161,13 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
         logger.info("PullsFetcher: Response data received");
 
         return resp.data;
+    }
+
+    private getBannerType(): string {
+        if (this._urlParams instanceof CharBannerRequestParams) {
+            return this._urlParams.poolType;
+        }
+
+        return BannerType.WEAPON;
     }
 }

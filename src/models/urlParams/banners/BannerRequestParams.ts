@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { URLRequestParams } from "@models/urlParams/URLRequestParams";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 
@@ -47,7 +48,7 @@ export class BannerRequestParams extends URLRequestParams {
             token: this.token,
             lang: this.lang,
             server_id: this.serverIdString,
-        }
+        };
 
         if (this.seqId) {
             params.seq_id = this.seqId;

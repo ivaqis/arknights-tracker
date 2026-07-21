@@ -41,4 +41,12 @@ export namespace BannerType {
             case DbBannerType.WEAPON_STANDARD: return BannerType.WEAPON
         }
     }
+
+    export function isBannerType(str: string): str is BannerType {
+        return str === BannerType.CHAR_BEGINNER
+            || str === BannerType.CHAR_STANDARD
+            || str === BannerType.CHAR_SPECIAL
+            || str === BannerType.CHAR_JOINT
+            || str === BannerType.WEAPON;
+    }
 }

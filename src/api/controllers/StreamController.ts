@@ -56,7 +56,17 @@ export abstract class StreamController<
         try {
             logger.debug(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] PROCESSING (${this._req.method} ${this._req.originalUrl})`);
 
+            this._res.writeHead(200, {
+                "Content-Type": "text/event-stream; charset=utf-8",
+                "Cache-Control": "no-cache, no-transform",
+                "Connection": "keep-alive",
+                "X-Accel-Buffering": "no",
+                "Transfer-Encoding": "chunked"
+            });
+
             await this.execute();
+
+            this._res.end();
 
             logger.info(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] ENDED SUCCESSFUL ${this._req.method} ${this._req.originalUrl}`);
         } catch (e) {
