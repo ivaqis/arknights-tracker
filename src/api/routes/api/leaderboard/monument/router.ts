@@ -17,6 +17,6 @@ import { Router } from "express";
 export const monumentRouter = Router();
 
 monumentRouter.get("/list", RequestValidator.with(GetMonumentListRequestValidator), Controller.with(GetMonumentList));
-monumentRouter.get("/groupList", RequestValidator.with(GetMonumentGroupListRequestValidator), Controller.with(GetMonumentGroupList));
+monumentRouter.get("/group-list", RequestValidator.with(GetMonumentGroupListRequestValidator), Controller.with(GetMonumentGroupList));
 monumentRouter.get("/run", RequestValidator.with(GetMonumentRunRequestValidator), Controller.with(GetMonumentRun));
-monumentRouter.get("/groupRun", RequestValidator.with(GetMonumentGroupRunResponseValidator), Controller.with(GetMonumentGroupRun));
+monumentRouter.get("/group-run", RequestValidator.with(GetMonumentGroupRunResponseValidator), Controller.with(GetMonumentGroupRun));
