@@ -32,7 +32,11 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
     }
 
     public async create(): Promise<UserBannerProfileRecord> {
-        const entity = await this.table.create({});
+        const entity = await this.table.create({
+            data: {
+
+            }
+        });
 
         return new UserBannerProfileRecord(entity);
     }
