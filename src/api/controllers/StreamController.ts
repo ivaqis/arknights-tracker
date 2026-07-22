@@ -33,7 +33,7 @@ export abstract class StreamController<
     protected send(data: StreamResponse<ResBody>): void {
         const res = this._res;
 
-        res.write(JSON.stringify(data) + "\n");
+        res.write(`data: ${JSON.stringify(data)}\n\n`);
 
         if ("flush" in res && typeof res.flush === "function") {
             res.flush();
