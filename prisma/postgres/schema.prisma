@@ -73,14 +73,12 @@ model UserContractLeaderboard {
 
 model UserContractCharacters {
     userRecordId String
-    contractId   String
     charId       String
     weaponId     String?
 
     userContractLeaderboard UserContractLeaderboard @relation(fields: [userRecordId], references: [id], onDelete: Cascade)
 
     @@id([userRecordId, charId])
-    @@index([contractId])
 }
 
 model UserMonumentLeaderboard {
@@ -124,8 +122,6 @@ model UserMonumentGroup {
 model UserMonumentCharacters {
     recordId    String
     userGroupId String
-    dungeonId   String
-    groupId     String
     charId      String
     weaponId    String
 
@@ -134,8 +130,6 @@ model UserMonumentCharacters {
 
     @@id([recordId, charId])
     @@index([userGroupId])
-    @@index([dungeonId])
-    @@index([groupId])
 }
 
 model UserBannerProfile {
