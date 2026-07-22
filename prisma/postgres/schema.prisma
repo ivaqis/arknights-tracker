@@ -64,9 +64,23 @@ model UserContractLeaderboard {
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
+    userContractCharacters UserContractCharacters[]
+
     @@index([gameUid, contractId])
     @@index([contractId])
     @@index([recordId])
+}
+
+model UserContractCharacters {
+    userRecordId String
+    contractId   String
+    charId       String
+    weaponId     String?
+
+    userContractLeaderboard UserContractLeaderboard @relation(fields: [userRecordId], references: [id], onDelete: Cascade)
+
+    @@id([userRecordId, charId])
+    @@index([contractId])
 }
 
 model UserMonumentLeaderboard {
@@ -83,6 +97,8 @@ model UserMonumentLeaderboard {
     userGameProfile   UserGameProfile   @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
     userMonumentGroup UserMonumentGroup @relation(fields: [userGroupId], references: [id])
 
+    userMonumentCharacters UserMonumentCharacters[]
+
     @@unique([gameUid, dungeonId])
     @@index([gameUid, dungeonId])
     @@index([dungeonId])
@@ -96,17 +112,37 @@ model UserMonumentGroup {
     groupId String
     isHard  Boolean
 
+    userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+
     userMonumentLeaderboards UserMonumentLeaderboard[]
-    userGameProfile          UserGameProfile           @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
+    userMonumentCharacters   UserMonumentCharacters[]
 
     @@unique([gameUid, groupId, isHard])
     @@index([groupId, isHard, gameUid])
+}
+
+model UserMonumentCharacters {
+    recordId    String
+    userGroupId String
+    dungeonId   String
+    groupId     String
+    charId      String
+    weaponId    String
+
+    userMonumentLeaderboard UserMonumentLeaderboard @relation(fields: [recordId], references: [id], onDelete: Cascade)
+    userMonumentGroup       UserMonumentGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
+
+    @@id([recordId, charId])
+    @@index([userGroupId])
+    @@index([dungeonId])
+    @@index([groupId])
 }
 
 model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
     gameUid   String?  @unique
     createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 
     userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
 
@@ -121,8 +157,9 @@ model UserBannerProfile {
 }
 
 model GeneratedToken {
-    token     String @id
+    token     String   @id
     profileId BigInt
+    createdAt DateTime @default(now())
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 }
