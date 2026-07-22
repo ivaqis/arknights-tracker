@@ -74,7 +74,6 @@ model UserContractLeaderboard {
 model UserContractCharacter {
     userRecordId String
     charId       String
-    weaponId     String?
 
     userContractLeaderboard UserContractLeaderboard @relation(fields: [userRecordId], references: [id], onDelete: Cascade)
 
@@ -123,7 +122,6 @@ model UserMonumentCharacter {
     recordId    String
     userGroupId String
     charId      String
-    weaponId    String
 
     userMonumentLeaderboard UserMonumentLeaderboard @relation(fields: [recordId], references: [id], onDelete: Cascade)
     userMonumentGroup       UserMonumentGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
