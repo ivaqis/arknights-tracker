@@ -64,14 +64,14 @@ model UserContractLeaderboard {
 
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
-    userContractCharacters UserContractCharacters[]
+    userContractCharacters UserContractCharacter[]
 
     @@index([gameUid, contractId])
     @@index([contractId])
     @@index([recordId])
 }
 
-model UserContractCharacters {
+model UserContractCharacter {
     userRecordId String
     charId       String
     weaponId     String?
@@ -95,7 +95,7 @@ model UserMonumentLeaderboard {
     userGameProfile   UserGameProfile   @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
     userMonumentGroup UserMonumentGroup @relation(fields: [userGroupId], references: [id])
 
-    userMonumentCharacters UserMonumentCharacters[]
+    userMonumentCharacters UserMonumentCharacter[]
 
     @@unique([gameUid, dungeonId])
     @@index([gameUid, dungeonId])
@@ -113,13 +113,13 @@ model UserMonumentGroup {
     userGameProfile UserGameProfile @relation(fields: [gameUid], references: [gameUid], onDelete: Cascade)
 
     userMonumentLeaderboards UserMonumentLeaderboard[]
-    userMonumentCharacters   UserMonumentCharacters[]
+    userMonumentCharacters   UserMonumentCharacter[]
 
     @@unique([gameUid, groupId, isHard])
     @@index([groupId, isHard, gameUid])
 }
 
-model UserMonumentCharacters {
+model UserMonumentCharacter {
     recordId    String
     userGroupId String
     charId      String
