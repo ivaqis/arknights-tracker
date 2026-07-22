@@ -127,7 +127,7 @@ model UserMonumentCharacter {
     userMonumentGroup       UserMonumentGroup       @relation(fields: [userGroupId], references: [id], onDelete: Cascade)
 
     @@id([recordId, charId])
-    @@index([userGroupId])
+    @@index([userGroupId, charId])
 }
 
 model UserBannerProfile {

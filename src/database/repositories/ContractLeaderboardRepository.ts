@@ -1,7 +1,10 @@
+import { UserContractCharacterEntity } from "@database/entities/UserContractCharacterEntity";
+import { UserContractCharacterRecord } from "@database/records/UserContractCharacterRecord";
 import { UserContractLeaderboardRecord } from "@database/records/UserContractLeaderboardRecord";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
+import { UserContractCharactersTable } from "@database/tables/UserContractCharactersTable";
 import { UserContractLeaderboardsTable } from "@database/tables/UserContractLeaderboardsTable";
 import { ContractRecord } from "@models/contingencyContract/ContractRecord";
 import { ContractLeaderboardSortField } from "@models/contractLeaderboard/ContractLeaderboardSortField";
@@ -10,11 +13,13 @@ import { PrismaClient } from "@prisma/client";
 
 export class ContractLeaderboardRepository extends Repository {
     private readonly _userContractLeaderboardsTable: UserContractLeaderboardsTable;
+    private readonly _characterTable: UserContractCharactersTable;
 
     public constructor(prisma: PrismaClient) {
         super(prisma);
 
         this._userContractLeaderboardsTable = new UserContractLeaderboardsTable(prisma);
+        this._characterTable = new UserContractCharactersTable(prisma);
     }
 
     public async find(id: string): Promise<UserContractLeaderboardRecord | null> {
@@ -68,7 +73,18 @@ export class ContractLeaderboardRepository extends Repository {
     }
 
     public async create(gameUid: string, data: ContractRecord): Promise<UserContractLeaderboardRecord> {
-        return this._userContractLeaderboardsTable.create(gameUid, data);
+        const record = await this._userContractLeaderboardsTable.create(gameUid, data);
+
+        const entities: UserContractCharacterEntity[] = data.chars.map(char => {
+            return {
+                userRecordId: record.id,
+                charId: char.id
+            };
+        });
+
+        await this._characterTable.createMany(entities);
+
+        return record;
     }
 
     public async delete(recordId: string): Promise<void> {
@@ -78,4 +94,10 @@ export class ContractLeaderboardRepository extends Repository {
     public async deleteByGameUid(gameUid: string): Promise<void> {
         return this._userContractLeaderboardsTable.deleteByGameUid(gameUid);
     }
+
+    public async findCharactersByUserRecordId(userRecordId: string, charId?: string): Promise<UserContractCharacterRecord[]> {
+        return this._characterTable.findByUserRecordId(userRecordId, charId);
+    }
+
+    // public async countCharactersByContractId() // todo
 }

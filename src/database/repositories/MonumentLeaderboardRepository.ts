@@ -1,8 +1,11 @@
+import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
+import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord";
 import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { UserRecord } from "@database/records/UserRecord";
 import { Repository } from "@database/repositories/Repository";
+import { UserMonumentCharactersTable } from "@database/tables/UserMonumentCharactersTable";
 import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable";
 import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
@@ -13,12 +16,14 @@ import { PrismaClient } from "@prisma/client";
 export class MonumentLeaderboardRepository extends Repository {
     private readonly _monumentGroupsTable: UserMonumentGroupsTable;
     private readonly _monumentTable: UserMonumentLeaderboardsTable;
+    private readonly _characterTable: UserMonumentCharactersTable;
 
     public constructor(prisma: PrismaClient) {
         super(prisma);
 
         this._monumentGroupsTable = new UserMonumentGroupsTable(prisma);
         this._monumentTable = new UserMonumentLeaderboardsTable(prisma);
+        this._characterTable = new UserMonumentCharactersTable(prisma);
     }
 
     public async find(id: string): Promise<UserMonumentLeaderboardRecord | null> {
@@ -184,8 +189,19 @@ export class MonumentLeaderboardRepository extends Repository {
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {
         const group = await this._monumentGroupsTable.getByGroupId(data.groupId, data.isHard, gameUid);
+        const record = await this._monumentTable.create(group.id, gameUid, data)
 
-        return await this._monumentTable.create(group.id, gameUid, data);
+        const entities: UserMonumentCharacterEntity[] = data.chars.map(char => {
+            return {
+                charId: char.id,
+                recordId: record.id,
+                userGroupId: group.id
+            };
+        });
+
+        await this._characterTable.createMany(entities);
+
+        return record;
     }
 
     public async delete(id: string): Promise<void> {
@@ -195,4 +211,16 @@ export class MonumentLeaderboardRepository extends Repository {
     public async deleteByGameUid(gameUid: string, dungeonId?: string): Promise<void> {
         return this._monumentTable.deleteByGameUid(gameUid, dungeonId);
     }
+
+    public async findCharactersByRecordId(recordId: string, charId?: string): Promise<UserMonumentCharacterRecord[]> {
+        return this._characterTable.findByRecordId(recordId, charId);
+    }
+
+    public async findCharactersByUserGroupId(userGroupId: string): Promise<UserMonumentCharacterRecord[]> {
+        return this._characterTable.findByUserGroupId(userGroupId);
+    }
+
+    // public async countCharactersByDungeonId // todo
+
+    // public async countCharactersByGroupId() // todo
 }
