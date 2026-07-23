@@ -1,4 +1,5 @@
 import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
+import { GetMonumentListQuery } from "@api/contracts/monument/GetMonumentListQuery";
 import { GetMonumentListQueryValidator } from "@api/middleware/validators/monument/GetMonumentListQueryValidator";
 import { GameServerId } from "@models/GameServerId";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
@@ -23,8 +24,24 @@ export class GetMonumentGroupListQueryValidator extends Validator<GetMonumentGro
             this.getSortOrderRule(),
             this.getServerIdRule(),
             this.getRecordsOnPageRule(),
-            this.getPageRule()
+            this.getPageRule(),
+            this.getCharsFilterRule(),
+            this.getCharCountFilterRule()
         ];
+    }
+
+    private static getCharsFilterRule(): ValidationRule<GetMonumentGroupListQuery> {
+        return new ValidationRule(
+            item => typeof item.charsFilter === "string" && (item.charsFilter === "" || GetMonumentListQueryValidator.FILTER_LIST_REGEX.test(item.charsFilter)),
+            "charsFilter must be list of char ids separated by commas"
+        );
+    }
+
+    private static getCharCountFilterRule(): ValidationRule<GetMonumentGroupListQuery> {
+        return new ValidationRule(
+            item => typeof item.charCountFilter === "string" && (item.charCountFilter === "" || GetMonumentListQueryValidator.COUNT_FILTER_LIST_REGEX.test(item.charCountFilter)),
+            "charCountFilter must be list of numbers separated by commas"
+        );
     }
 
     private static getGroupIdRule(): ValidationRule<GetMonumentGroupListQuery> {

@@ -8,6 +8,9 @@ import { Validator } from "@models/validation/Validator";
 
 export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuery> {
     public static readonly recordsOnPage = ["40", "60", "80", "100"] as const;
+    public static readonly FILTER_LIST_REGEX = /^[a-zA-Z0-9_,]+$/;
+    public static readonly COUNT_FILTER_LIST_REGEX = /^[0-9,]+$/;
+
     private static readonly recordsOnPageSet = new Set(this.recordsOnPage);
 
     public constructor(item: GetMonumentListQuery) {
@@ -21,8 +24,24 @@ export class GetMonumentListQueryValidator extends Validator<GetMonumentListQuer
             this.getSortOrderRule(),
             this.getServerIdRule(),
             this.getPageRule(),
-            this.getRecordsOnPageRule()
+            this.getRecordsOnPageRule(),
+            this.getCharsFilterRule(),
+            this.getCharCountFilterRule()
         ];
+    }
+
+    private static getCharsFilterRule(): ValidationRule<GetMonumentListQuery> {
+        return new ValidationRule(
+            item => typeof item.charsFilter === "string" && (item.charsFilter === "" || this.FILTER_LIST_REGEX.test(item.charsFilter)),
+            "charsFilter must be list of char ids separated by commas"
+        );
+    }
+
+    private static getCharCountFilterRule(): ValidationRule<GetMonumentListQuery> {
+        return new ValidationRule(
+            item => typeof item.charCountFilter === "string" && (item.charCountFilter === "" || this.COUNT_FILTER_LIST_REGEX.test(item.charCountFilter)),
+            "charCountFilter must be list of numbers separated by commas"
+        );
     }
 
     private static getDungeonIdRule(): ValidationRule<GetMonumentListQuery> {

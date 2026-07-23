@@ -1,3 +1,4 @@
+import { MonumentFilters } from "@database/MonumentFilters";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { UserRecord } from "@database/records/UserRecord";
@@ -283,27 +284,50 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         });
     }
 
-    public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null): Promise<number> {
+    public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null, minCount: number, filters: MonumentFilters): Promise<number> {
         const entities = await this.prisma.$queryRaw<{ group_count: number }[]>`
             SELECT count(*) as group_count
             FROM (SELECT l."userGroupId"
                   FROM "UserMonumentLeaderboard" l
                            LEFT JOIN "UserGameProfile" game ON game."gameUid" = l."gameUid"
-                           LEFT JOIN public."User" U ON U.uid = game.uid
+                           LEFT JOIN "User" U ON U.uid = game.uid
+                           LEFT JOIN "UserMonumentCharacter" C ON L.id = C."recordId"
                   WHERE l."groupId" = ${groupId}
                     AND l."isHard" = ${isHard}
                       ${serverId ? Prisma.sql`AND game."serverId" = ${serverId}` : Prisma.sql``} 
                       ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+                      ${filters.chars ? Prisma.sql`AND C."charId" IN (${Prisma.join(filters.chars, ', ')})` : Prisma.sql``}
+                      ${filters.charCount
+                      ? Prisma.sql`AND (SELECT count(DISTINCT C2."charId")
+                           FROM "UserMonumentCharacter" C2
+                           WHERE C2."recordId" = L.id) IN (${Prisma.join(filters.charCount, ', ')})`
+                      : Prisma.sql``}
                   GROUP BY l."userGroupId"
-                  HAVING count (l.id) >= 6) a`;
+                  HAVING count (l.id) >= ${minCount}) a`;
 
         return Number(entities[0].group_count);
     }
 
-    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<number> {
-        return await this.table.count({
-            where: UserMonumentLeaderboardsTable.getDungeonWhereCondition(dungeonId, publicOnly, serverId)
-        });
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
+        const query = Prisma.sql`
+            SELECT count(*)
+            FROM "UserMonumentLeaderboard" L
+                     LEFT JOIN "UserGameProfile" Game ON Game."gameUid" = l."gameUid"
+                     LEFT JOIN "User" U ON U.uid = Game.uid
+                     LEFT JOIN "UserMonumentCharacter" C ON L.id = C."recordId"
+            WHERE L."dungeonId" = ${dungeonId}
+                ${serverId ? Prisma.sql`AND Game."serverId" = ${serverId}` : Prisma.sql``}
+                ${publicOnly ? Prisma.sql`AND U."isPrivate" = false` : Prisma.sql``}
+                ${filters.chars ? Prisma.sql`AND C."charId" IN (${filters.chars})` : Prisma.sql``}
+                ${filters.charCount
+                ? Prisma.sql`AND (SELECT count(DISTINCT C2."charId")
+                       FROM "UserMonumentCharacter" C2
+                       WHERE C2."recordId" = L.id) IN (${filters.charCount})`
+                : Prisma.sql``}`;
+
+        const result = await this.prisma.$queryRaw<{ count: bigint }[]>(query);
+
+        return Number(result[0].count);
     }
 
     public async create(userGroupId: string, gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {

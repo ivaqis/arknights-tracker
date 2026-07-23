@@ -1,9 +1,11 @@
+import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
 import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { MonumentFilters } from "@database/MonumentFilters";
 import { GameServerId } from "@models/GameServerId";
 import {
     MonumentLeaderboardGroupRunRecordEntity
@@ -30,6 +32,8 @@ export class GetMonumentGroupList extends Controller<
     private readonly _serverId: GameServerId | "all";
     private readonly _page: number;
     private readonly _recordsOnPage: number;
+    private readonly _charsFilter: string[];
+    private readonly _charCountFilter: number[];
 
     public constructor(req: e.Request<{}, ResponseBody<GetMonumentGroupListResponse>, undefined, GetMonumentGroupListQuery>, res: e.Response<ResponseBody<GetMonumentGroupListResponse>>) {
         super(req, res);
@@ -41,6 +45,8 @@ export class GetMonumentGroupList extends Controller<
         this._serverId = req.query.serverId;
         this._page = parseInt(req.query.page, 10);
         this._recordsOnPage = parseInt(req.query.recordsOnPage, 10);
+        this._charsFilter = req.query.charsFilter.split(",").filter(Boolean);
+        this._charCountFilter = req.query.charCountFilter.split(",").filter(Boolean).map(Number);
     }
 
     protected async execute(): Promise<void> {
@@ -50,18 +56,12 @@ export class GetMonumentGroupList extends Controller<
         const take = this._recordsOnPage;
         const skip = this._recordsOnPage * (this._page - 1);
 
-        const count = await searcher.countPublicGroupRuns(this._groupId, this._isHard, serverId);
+        const monumentFilters: MonumentFilters = {
+            chars: this._charsFilter.length === 0 ? null : this._charsFilter,
+            charCount: this._charCountFilter.length === 0 ? null : this._charCountFilter
+        };
 
-        if (count === 0) {
-            this.data = {
-                list: [],
-                totalCount: count,
-                filters: {
-                    charCount: [],
-                    chars: []
-                }
-            };
-        }
+        const count = await searcher.countPublicGroupRuns(this._groupId, this._isHard, serverId, monumentFilters);
 
         const charFilters = await this._database.monumentLeaderboard.getCharactersUsageByGroupId(this._groupId, this._isHard);
         const charCountFilters = await this._database.monumentLeaderboard.getCharactersNumberInRecordByGroupId(this._groupId, this._isHard);

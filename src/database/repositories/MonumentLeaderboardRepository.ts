@@ -1,4 +1,5 @@
 import { UserMonumentCharacterEntity } from "@database/entities/UserMonumentCharacterEntity";
+import { MonumentFilters } from "@database/MonumentFilters";
 import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserMonumentCharacterRecord } from "@database/records/UserMonumentCharacterRecord";
 import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
@@ -180,12 +181,12 @@ export class MonumentLeaderboardRepository extends Repository {
         return this._monumentGroupsTable.findMany(ids);
     }
 
-    public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null): Promise<number> {
-        return this._monumentTable.countByGroupId(groupId, isHard, publicOnly, serverId);
+    public async countByGroupId(groupId: string, isHard: boolean, publicOnly: boolean, serverId: string | null, minCount: number, filters: MonumentFilters): Promise<number> {
+        return this._monumentTable.countByGroupId(groupId, isHard, publicOnly, serverId, minCount, filters);
     }
 
-    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<number> {
-        return this._monumentTable.countByDungeonId(dungeonId, publicOnly, serverId);
+    public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
+        return this._monumentTable.countByDungeonId(dungeonId, publicOnly, serverId, filters);
     }
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {

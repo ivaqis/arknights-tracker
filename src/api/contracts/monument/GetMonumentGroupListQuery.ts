@@ -11,4 +11,6 @@ export interface GetMonumentGroupListQuery {
     serverId: GameServerId | "all";
     page: string;
     recordsOnPage: "40" | "60" | "80" | "100";
+    charsFilter: string;
+    charCountFilter: string;
 }

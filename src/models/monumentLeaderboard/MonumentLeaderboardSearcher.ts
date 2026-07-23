@@ -1,5 +1,6 @@
 import { database } from "@/serviceInstances";
 import { Database } from "@database/Database";
+import { MonumentFilters } from "@database/MonumentFilters";
 import { UserMonumentLeaderboardRecord } from "@database/records/UserMonumentLeaderboardRecord";
 import { MonumentLeaderboardGroupRecord } from "@models/monumentLeaderboard/MonumentLeaderboardGroupRecord";
 import { MonumentLeaderboardRecord } from "@models/monumentLeaderboard/MonumentLeaderboardRecord";
@@ -34,10 +35,14 @@ export class MonumentLeaderboardSearcher {
         return map;
     }
 
-    public async findPublicGroups(groupId: string, isHard: boolean, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, take: number, skip: number): Promise<MonumentLeaderboardGroupRecord[]> {
-        const minCount = isHard
+    private static getMinCount(groupId: string, isHard: boolean): number {
+        return isHard
             ? monumentGroupRecords.getHardDungeons(groupId)?.length ?? 0
             : monumentGroupRecords.getNormalDungeons(groupId)?.length ?? 0;
+    }
+
+    public async findPublicGroups(groupId: string, isHard: boolean, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, take: number, skip: number): Promise<MonumentLeaderboardGroupRecord[]> {
+        const minCount = MonumentLeaderboardSearcher.getMinCount(groupId, isHard);
 
         const groupIds = await this._database.monumentLeaderboard.findUserGroupsByGroupId(groupId, isHard, true, serverId, sortField, sortOrder, minCount, take, skip);
         const groups = await this._database.monumentLeaderboard.findManyUserGroups(groupIds);
@@ -108,11 +113,13 @@ export class MonumentLeaderboardSearcher {
         });
     }
 
-    public async countPublicGroupRuns(groupId: string, isHard: boolean, serverId: string | null): Promise<number> {
-        return await this._database.monumentLeaderboard.countByGroupId(groupId, isHard, true, serverId);
+    public async countPublicGroupRuns(groupId: string, isHard: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
+        const minCount = MonumentLeaderboardSearcher.getMinCount(groupId, isHard);
+
+        return await this._database.monumentLeaderboard.countByGroupId(groupId, isHard, true, serverId, minCount, filters);
     }
 
-    public async countPublicRuns(dungeonId: string, serverId: string | null): Promise<number> {
-        return await this._database.monumentLeaderboard.countByDungeonId(dungeonId, true, serverId);
+    public async countPublicRuns(dungeonId: string, serverId: string | null, filters: MonumentFilters): Promise<number> {
+        return await this._database.monumentLeaderboard.countByDungeonId(dungeonId, true, serverId, filters);
     }
 }
