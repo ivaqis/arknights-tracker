@@ -310,7 +310,7 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
 
     public async countByDungeonId(dungeonId: string, publicOnly: boolean, serverId: string | null, filters: MonumentFilters): Promise<number> {
         const query = Prisma.sql`
-            SELECT count(*)
+            SELECT count(DISTINCT L.id)
             FROM "UserMonumentLeaderboard" L
                      LEFT JOIN "UserGameProfile" Game ON Game."gameUid" = l."gameUid"
                      LEFT JOIN "User" U ON U.uid = Game.uid
