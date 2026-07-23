@@ -56,7 +56,7 @@ export class UserMonumentCharactersTable extends Table<Prisma.UserMonumentCharac
 
     public async getCharactersUsageByGroupId(groupId: string, isHard: boolean): Promise<Amount[]> {
         const query = Prisma.sql`
-            SELECT C."charId", count(DISTINCT C."userGroupId") n
+            SELECT C."charId" char_id, count(DISTINCT C."userGroupId") n
             FROM "UserMonumentCharacter" C
             WHERE C."userGroupId" IN (SELECT G.id
                                       FROM "UserMonumentGroup" G

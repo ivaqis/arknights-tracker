@@ -1,3 +1,4 @@
+import { Amount } from "@models/Amount";
 import {
     MonumentLeaderboardRunRecordEntity
 } from "@models/monumentLeaderboard/entities/MonumentLeaderboardRunRecordEntity";
@@ -5,4 +6,8 @@ import {
 export interface GetMonumentListResponse {
     list: MonumentLeaderboardRunRecordEntity[];
     totalCount: number;
+    filters: {
+        chars: Amount[];
+        charCount: Amount[];
+    }
 }

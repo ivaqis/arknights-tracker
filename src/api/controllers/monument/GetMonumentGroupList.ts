@@ -52,10 +52,30 @@ export class GetMonumentGroupList extends Controller<
 
         const count = await searcher.countPublicGroupRuns(this._groupId, this._isHard, serverId);
 
+        if (count === 0) {
+            this.data = {
+                list: [],
+                totalCount: count,
+                filters: {
+                    charCount: [],
+                    chars: []
+                }
+            };
+        }
+
+        const charFilters = await this._database.monumentLeaderboard.getCharactersUsageByGroupId(this._groupId, this._isHard);
+        const charCountFilters = await this._database.monumentLeaderboard.getCharactersNumberInRecordByGroupId(this._groupId, this._isHard);
+
+        const filters = {
+            charCount: charCountFilters,
+            chars: charFilters
+        };
+
         if (count <= skip) {
             this.data = {
                 list: [],
-                totalCount: count
+                totalCount: count,
+                filters
             };
 
             return;
@@ -71,7 +91,8 @@ export class GetMonumentGroupList extends Controller<
 
         this.data = {
             list: entities,
-            totalCount: count
+            totalCount: count,
+            filters
         };
     }
 

@@ -47,10 +47,30 @@ export class GetMonumentList extends Controller<
 
         const count = await searcher.countPublicRuns(this._dungeonId, serverId);
 
+        if (count === 0) {
+            this.data = {
+                list: [],
+                totalCount: count,
+                filters: {
+                    charCount: [],
+                    chars: []
+                }
+            };
+        }
+
+        const charFilters = await this._database.monumentLeaderboard.getCharactersUsageByDungeonId(this._dungeonId);
+        const charCountFilters = await this._database.monumentLeaderboard.getCharactersNumberInRecordByDungeonId(this._dungeonId);
+
+        const filters = {
+            charCount: charCountFilters,
+            chars: charFilters
+        };
+
         if (count <= skip) {
             this.data = {
                 list: [],
-                totalCount: count
+                totalCount: count,
+                filters
             };
 
             return;
@@ -60,7 +80,8 @@ export class GetMonumentList extends Controller<
 
         this.data = {
             list: list.map(item => item.getEntity()),
-            totalCount: count
+            totalCount: count,
+            filters
         };
     }
 }
