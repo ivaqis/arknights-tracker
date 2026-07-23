@@ -641,6 +641,12 @@
     "goToTimeline": "მოვლენებზე გადასვლა",
     "fullSupportLanguages": "სრულად მხარდაჭერილი ენები",
     "uiLanguages": "ინტერფეისის ენები",
+    "today": "დღეს",
+    "tomorrow": "ხვალ",
+    "currentWeek": "მიმდინარე კვირა",
+    "nextWeek": "შემდეგი კვირა",
+    "fullCalendar": "სრული კალენდარი",
+    "arsenalExchangeWarning": "მონაცემები ეფუძნება იარაღის როტაციის ჩინურ ფაილს და შეიძლება არ იყოს ზუსტი",
     "uiLanguagesDesc": "ენები, რომლებიც მხარს უჭერენ ვებსაიტის ინტერფეისის თარგმნას. თამაშის აღნიშვნებისთვის გამოყენებული იქნება თამაშის სრულად მხარდაჭერილი თარგმანი. თარგმნაში დასახმარებლად შეგიძლიათ ეწვიოთ <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield-ის Discord სერვერს</a>"
   },
   "cookies": {

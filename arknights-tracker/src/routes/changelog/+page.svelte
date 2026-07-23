@@ -1,3 +1,8 @@
+<script module>
+    import { writable } from "svelte/store";
+    const selectedVersionStore = writable("");
+</script>
+
 <script>
     import { t } from "$lib/i18n";
     import { currentLocale } from "$lib/stores/locale";
@@ -25,15 +30,14 @@
             b.value.localeCompare(a.value, undefined, { numeric: true }),
         );
 
-    let selectedVersion = "";
     let bannerForModal = null;
 
-    $: if (!selectedVersion && versionOptions.length > 0) {
-        selectedVersion = versionOptions[0].value;
+    $: if (!$selectedVersionStore && versionOptions.length > 0) {
+        $selectedVersionStore = versionOptions[0].value;
     }
 
     $: currentVersionData = changelogData.find(
-        (v) => v.version === selectedVersion,
+        (v) => v.version === $selectedVersionStore,
     ) || {
         characters: [],
         weapons: [],
@@ -62,14 +66,14 @@
     }));
 
     $: displayBanners = banners
-        .filter((b) => b.version === selectedVersion)
+        .filter((b) => b.version === $selectedVersionStore)
         .sort(
             (a, b) =>
                 new Date(a.startTime).getTime() -
                 new Date(b.startTime).getTime(),
         );
 
-    $: displayEvents = rawEvents.filter((ev) => ev.version === selectedVersion);
+    $: displayEvents = rawEvents.filter((ev) => ev.version === $selectedVersionStore);
 
     $: eventsByType = displayEvents.reduce((acc, ev) => {
         const type = ev.type || "other";
@@ -183,7 +187,7 @@
     <div class="flex max-w-[800px] z-50 mb-4">
         <Select
             options={versionOptions}
-            bind:value={selectedVersion}
+            bind:value={$selectedVersionStore}
             placeholder="Select version"
             variant="black"
         />

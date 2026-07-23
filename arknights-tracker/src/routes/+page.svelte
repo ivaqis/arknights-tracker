@@ -1,6 +1,6 @@
 <script>
   import { t } from "$lib/i18n";
-  import { onMount, onDestroy } from "svelte";
+  import { onMount, onDestroy, tick } from "svelte";
   import { currentLocale, currentUiLocale } from "$lib/stores/locale";
   import { goto } from "$app/navigation";
   import { banners } from "$lib/data/banners.js";
@@ -9,7 +9,11 @@
   import { currencies } from "$lib/data/items/currencies";
   import { progression } from "$lib/data/items/progression";
   import { fade } from "svelte/transition";
+  import { weaponRotations } from "$lib/data/weaponRotations.js";
+  import { weapons } from "$lib/data/weapons.js";
 
+  import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
+  import TableModal from "$lib/components/modals/TableModal.svelte";
   import Icon from "$lib/components/Icon.svelte";
   import Image from "$lib/components/Image.svelte";
   import Button from "$lib/components/Button.svelte";
@@ -199,7 +203,7 @@
 
     timer = setInterval(() => {
       now = new Date();
-    }, 1000 * 60);
+    }, 1000);
     startBannerRotation();
   });
 
@@ -256,6 +260,131 @@
 
       return 0;
     });
+
+  let showCalendarModal = false;
+
+  function getServerDate(date) {
+    const utc = date.getTime() + date.getTimezoneOffset() * 60000;
+    const offset = currentServerId === "2" ? 8 : -5;
+    return new Date(utc + offset * 3600000);
+  }
+
+  function getWeekForDate(date) {
+    return weaponRotations.weeklyRotations.find((w) => {
+      const start = new Date(w.startDate);
+      const end = new Date(w.endDate);
+      return date >= start && date < end;
+    });
+  }
+
+  function getDailyWeaponsForDate(date) {
+    const weekConfig = getWeekForDate(date);
+    if (!weekConfig) return [];
+    const template = weaponRotations.dailyTemplates[weekConfig.dailyTemplate];
+    if (!template) return [];
+    
+    const dayKeys = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+    const key = dayKeys[date.getDay()];
+    const weaponIds = template[key] || [];
+    return weaponIds.map(id => weapons[id] ? { id, ...weapons[id] } : { id, name: id, rarity: 5 });
+  }
+
+  function getNextDailyResetTimeUTC(nowDate) {
+    const serverResetHourUTC = currentServerId === "2" ? 20 : 9;
+    const resetDate = new Date(nowDate);
+    resetDate.setUTCHours(serverResetHourUTC, 0, 0, 0);
+    
+    if (nowDate >= resetDate) {
+      resetDate.setUTCDate(resetDate.getUTCDate() + 1);
+    }
+    return resetDate;
+  }
+
+  function getDailyResetCountdown(currentNow) {
+    const resetTime = getNextDailyResetTimeUTC(currentNow);
+    const diff = resetTime - currentNow;
+    if (diff <= 0) return "00:00:00";
+    const hours = Math.floor(diff / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+    const pad = (num) => String(num).padStart(2, "0");
+    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+  }
+
+  function getNextWeeklyResetTimeUTC(nowDate) {
+    const isAsia = currentServerId === "2";
+    const targetDay = isAsia ? 3 : 4;
+    const targetHour = isAsia ? 20 : 9;
+    
+    const resetDate = new Date(nowDate);
+    resetDate.setUTCHours(targetHour, 0, 0, 0);
+    
+    let daysUntilTarget = (targetDay - resetDate.getUTCDay() + 7) % 7;
+    if (daysUntilTarget === 0) {
+      if (nowDate >= resetDate) {
+        daysUntilTarget = 7;
+      }
+    }
+    
+    resetDate.setUTCDate(resetDate.getUTCDate() + daysUntilTarget);
+    return resetDate;
+  }
+
+  function getWeeklyResetCountdown(currentNow) {
+    const resetTime = getNextWeeklyResetTimeUTC(currentNow);
+    const diff = resetTime - currentNow;
+    if (diff <= 0) return "00:00:00";
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+    const pad = (num) => String(num).padStart(2, "0");
+    if (days > 0) {
+      return `${days}d ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+    }
+    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+  }
+
+  function formatWeekLabel(weekConfig, locale) {
+    if (!weekConfig) return "";
+    const start = new Date(weekConfig.startDate);
+    const end = new Date(weekConfig.endDate);
+    let loc = locale || "ru";
+    if (loc === "my") loc = "ms-MY";
+    const options = { month: "2-digit", day: "2-digit" };
+    return `${start.toLocaleDateString(loc, options)} - ${end.toLocaleDateString(loc, options)}`;
+  }
+
+  $: serverNow = getServerDate(now);
+  $: gameServerNow = new Date(serverNow.getTime() - 4 * 3600000);
+  $: todayWeapons = getDailyWeaponsForDate(gameServerNow);
+  $: tomorrowDate = new Date(gameServerNow.getTime() + 24 * 60 * 60 * 1000);
+  $: tomorrowWeapons = getDailyWeaponsForDate(tomorrowDate);
+
+  $: currentDayKey = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][gameServerNow.getDay()];
+
+  $: currentWeekConfig = getWeekForDate(gameServerNow);
+  $: currentWeekIndex = currentWeekConfig
+    ? weaponRotations.weeklyRotations.findIndex(w => w.week === currentWeekConfig.week)
+    : -1;
+  $: nextWeekConfig = currentWeekIndex !== -1 && currentWeekIndex + 1 < weaponRotations.weeklyRotations.length
+    ? weaponRotations.weeklyRotations[currentWeekIndex + 1]
+    : null;
+
+  $: currentWeekly6 = currentWeekConfig && weapons[currentWeekConfig.weekly6] ? { id: currentWeekConfig.weekly6, ...weapons[currentWeekConfig.weekly6] } : null;
+  $: currentWeekly5 = currentWeekConfig && weapons[currentWeekConfig.weekly5] ? { id: currentWeekConfig.weekly5, ...weapons[currentWeekConfig.weekly5] } : null;
+
+  $: nextWeekly6 = nextWeekConfig && weapons[nextWeekConfig.weekly6] ? { id: nextWeekConfig.weekly6, ...weapons[nextWeekConfig.weekly6] } : null;
+  $: nextWeekly5 = nextWeekConfig && weapons[nextWeekConfig.weekly5] ? { id: nextWeekConfig.weekly5, ...weapons[nextWeekConfig.weekly5] } : null;
+
+  $: if (showCalendarModal) {
+    tick().then(() => {
+      const activeRow = document.querySelector(".active-week-row");
+      if (activeRow) {
+        activeRow.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+    });
+  }
 </script>
 
 <div
@@ -371,7 +500,7 @@
       </div>
 
       <div
-        class="bg-white dark:bg-[#383838] rounded-xl gap-1 p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col min-h-[250px]"
+        class="bg-white dark:bg-[#383838] rounded-xl gap-1 p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col"
       >
         <div class="flex items-center justify-between mb-2">
           <h3
@@ -390,7 +519,7 @@
         </div>
 
         <div
-          class="flex flex-col gap-1.5 overflow-y-auto max-h-[400px] pr-1 py-1 custom-scrollbar"
+          class="flex flex-col gap-1.5 overflow-y-auto max-h-[500px] pr-1 py-1 custom-scrollbar"
         >
           {#if activeEvents.length === 0}
             <div
@@ -616,6 +745,137 @@
           {/if}
         </div>
       </div>
+
+      <div
+        class="bg-white dark:bg-[#383838] rounded-xl gap-4 p-4 shadow-sm border border-gray-100 dark:border-[#444444] flex flex-col w-full"
+      >
+        <div class="flex items-center justify-between mb-1">
+          <h3
+            class="text-sm font-bold text-[#21272C] dark:text-[#FDFDFD] flex items-center gap-1.5 flex-wrap"
+          >
+            <span>{$t("home.arsenalExchange")}</span>
+            <Tooltip text={$t("home.arsenalExchangeWarning")}>
+              <div class="flex items-center text-[#FACC15] hover:text-yellow-600 transition-colors">
+                <Icon name="info" class="w-3.5 h-3.5" />
+              </div>
+            </Tooltip>
+          </h3>
+          <button
+            on:click={() => (showCalendarModal = true)}
+            class="text-[11px] font-bold text-gray-500 hover:text-[#FACC15] dark:text-gray-400 dark:hover:text-[#FACC15] transition-colors flex items-center gap-1 group mr-2 cursor-pointer select-none"
+          >
+            {$t("home.fullCalendar")}
+            →
+          </button>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                {$t("home.currentWeek") || "Текущая неделя"}
+              </span>
+              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+                {getWeeklyResetCountdown(now)}
+              </span>
+            </div>
+            <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+              ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
+            </span>
+            <div class="flex gap-2.5 flex-wrap mt-2">
+              {#if currentWeekly6}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>2480</span>
+                  </div>
+                </div>
+              {/if}
+              {#if currentWeekly5}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={currentWeekly5} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>400</span>
+                  </div>
+                </div>
+              {/if}
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+              {$t("home.nextWeek") || "Следующая неделя"}
+            </span>
+            <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+              ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
+            </span>
+            <div class="flex gap-2.5 flex-wrap mt-2">
+              {#if nextWeekly6}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>2480</span>
+                  </div>
+                </div>
+              {/if}
+              {#if nextWeekly5}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={nextWeekly5} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>400</span>
+                  </div>
+                </div>
+              {/if}
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 pt-3 border-t border-gray-100 dark:border-[#444444]/40">
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                {$t("home.today") || "Сегодня"}
+              </span>
+              <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
+                {getDailyResetCountdown(now)}
+              </span>
+            </div>
+            <div class="flex gap-2.5 flex-wrap mt-2">
+              {#each todayWeapons as wpn}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                  </div>
+                </div>
+              {/each}
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-1">
+            <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+              {$t("home.tomorrow") || "Завтра"}
+            </span>
+            <div class="flex gap-2.5 flex-wrap mt-2">
+              {#each tomorrowWeapons as wpn}
+                <div class="flex flex-col items-center gap-1.5 shrink-0">
+                  <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
+                  <div class="flex items-center gap-0.5 text-[10px] font-black text-gray-800 dark:text-white leading-none font-nums">
+                    <Icon name="arsenalTicket" class="w-3.5 h-3.5 text-white" style="filter: drop-shadow(0 0 2px #3b82f6) drop-shadow(0 0 4px #3b82f6);" />
+                    <span>{wpn.rarity === 6 ? 2480 : 400}</span>
+                  </div>
+                </div>
+              {/each}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="grid gap-3">
         <a
           href="https://discord.gg/nqfuaRbWWn"
@@ -730,3 +990,95 @@
 <BannerModal banner={selectedBanner} on:close={() => (selectedBanner = null)} />
 
 <SupportModal isOpen={isSupportOpen} on:close={() => (isSupportOpen = false)} />
+
+<TableModal
+    bind:isOpen={showCalendarModal}
+    title={$t("home.arsenalExchange")}
+    showCopyButton={false}
+    maxWidthClass="max-w-7xl"
+>
+    <div class="p-4 pb-0 select-none">
+        <div class="p-4 bg-yellow-50 dark:bg-yellow-600/20 border border-yellow-100 dark:border-yellow-500/10 rounded-lg flex items-start gap-3 transition-colors">
+            <div class="text-yellow-600 dark:text-yellow-400 mt-0.5 flex-shrink-0">
+                <Icon name="info" style="width: 20px; height: 20px;" />
+            </div>
+            <div class="text-sm text-yellow-850 dark:text-yellow-200 leading-relaxed font-medium">
+                {$t("home.arsenalExchangeWarning")}
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <table class="w-full text-center border-collapse min-w-[1000px]">
+            <thead class="sticky top-0 shadow-sm text-xs font-bold text-gray-600 dark:text-[#E4E4E4] z-40">
+                <tr>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">№</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("home.duration") || "Dates"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838]">
+                        <div class="flex items-center justify-center gap-0.5 select-none">
+                            <span class="font-nums font-black text-amber-500 text-[11px]">6</span>
+                            <Icon name="star" class="w-3 h-3 fill-amber-500 text-amber-500" />
+                        </div>
+                    </th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838]">
+                        <div class="flex items-center justify-center gap-0.5 select-none">
+                            <span class="font-nums font-black text-yellow-500 text-[11px]">5</span>
+                            <Icon name="star" class="w-3 h-3 fill-yellow-500 text-yellow-500" />
+                        </div>
+                    </th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.mon") || "Mon"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.tue") || "Tue"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.wed") || "Wed"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.thu") || "Thu"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.fri") || "Fri"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sat") || "Sat"}</th>
+                    <th class="sticky top-0 z-40 py-3 px-2 border-b dark:border-[#444] bg-gray-50 dark:bg-[#383838] text-[11px] font-bold">{$t("weekdays.sun") || "Sun"}</th>
+                </tr>
+            </thead>
+            <tbody class="text-[11px] font-nums text-gray-800 dark:text-gray-300">
+                {#each weaponRotations.weeklyRotations as w (w.week)}
+                    {@const isCurrentWeek = currentWeekConfig && currentWeekConfig.week === w.week}
+                    <tr class="transition-colors border-b border-gray-100 dark:border-[#333] even:bg-gray-50/50 dark:even:bg-[#383838]/50 {isCurrentWeek ? 'active-week-row bg-yellow-500/10 dark:bg-yellow-500/10 font-bold' : ''}">
+                        <td class="py-4 px-2 border-r dark:border-[#444]">{w.week}</td>
+                        <td class="py-4 px-2 border-r dark:border-[#444] text-[10px] whitespace-nowrap">
+                            {formatWeekLabel(w, $currentUiLocale)}
+                        </td>
+                        <td class="py-4 px-2 border-r dark:border-[#444]">
+                            <div class="flex justify-center">
+                                {#if weapons[w.weekly6]}
+                                    <WeaponCard weapon={{ id: w.weekly6, ...weapons[w.weekly6] }} variant="small" isEquipment={false} isStatic={true} />
+                                {:else}
+                                    <span class="text-xs">{w.weekly6}</span>
+                                  {/if}
+                            </div>
+                        </td>
+                        <td class="py-4 px-2 border-r dark:border-[#444]">
+                            <div class="flex justify-center">
+                                {#if weapons[w.weekly5]}
+                                    <WeaponCard weapon={{ id: w.weekly5, ...weapons[w.weekly5] }} variant="small" isEquipment={false} isStatic={true} />
+                                {:else}
+                                    <span class="text-xs">{w.weekly5}</span>
+                                {/if}
+                            </div>
+                        </td>
+                        {#each ["mon", "tue", "wed", "thu", "fri", "sat", "sun"] as day}
+                            {@const dayWeaponIds = weaponRotations.dailyTemplates[w.dailyTemplate][day] || []}
+                            {@const isCurrentDay = isCurrentWeek && day === currentDayKey}
+                            <td class="py-4 px-2 border-r dark:border-[#444] last:border-r-0 {isCurrentDay ? 'bg-yellow-500/25 dark:bg-yellow-500/25 font-bold' : ''}">
+                                <div class="flex flex-col gap-1.5 items-center justify-center">
+                                    {#each dayWeaponIds as id}
+                                        {#if weapons[id]}
+                                            <WeaponCard weapon={{ id, ...weapons[id] }} variant="small" isEquipment={false} isStatic={true} />
+                                        {:else}
+                                            <span class="text-[10px]">{id}</span>
+                                        {/if}
+                                    {/each}
+                                </div>
+                            </td>
+                        {/each}
+                    </tr>
+                {/each}
+            </tbody>
+        </table>
+    </div>
+</TableModal>

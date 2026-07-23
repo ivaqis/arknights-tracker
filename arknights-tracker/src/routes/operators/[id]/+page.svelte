@@ -509,7 +509,6 @@
         }
     }
 
-
     const BLACKBOARD_FALLBACKS = {
         PhysicalAndSpellInflictionEnhance: ["OriginiumArts"],
         NormalSkillDamageIncrease: ["NormalSkillEfficiency"]

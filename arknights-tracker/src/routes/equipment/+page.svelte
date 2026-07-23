@@ -1,3 +1,11 @@
+<script module>
+    let savedDisplayLimit = 4;
+    let savedFlatDisplayLimit = 60;
+    let savedSortField = "rarity";
+    let savedSortDirection = "desc";
+    let savedSelectedAttrType = "any";
+</script>
+
 <script>
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
@@ -17,6 +25,7 @@
     import { currentLocale } from "$lib/stores/locale";
     import { manualPotentials } from "$lib/stores/potentials";
     import { filterCheck, filterCheckLowerCase } from "$lib/utils/filterUtils.js";
+    import { onDestroy } from "svelte";
 
     $: selectedFilters = $equipmentFilters;
     $: searchQuery = $equipmentSearch;
@@ -27,12 +36,12 @@
         ...data,
     }));
 
-    let sortField = "rarity";
-    let sortDirection = "desc";
+    let sortField = savedSortField;
+    let sortDirection = savedSortDirection;
     let searchQuery = "";
     let showOwnedOnly = false;
 
-    let selectedAttrType = "any";
+    let selectedAttrType = savedSelectedAttrType;
 
     const availablePacks = [
         ...new Set( allEquipment.map((eq) => eq.pack).filter((pack) => pack) ),
@@ -307,8 +316,10 @@
             return a.maxRarity - b.maxRarity || a.pack.localeCompare(b.pack);
         });
 
-    let displayLimit = 4;
-    let flatDisplayLimit = 60;
+    let displayLimit = savedDisplayLimit;
+    let flatDisplayLimit = savedFlatDisplayLimit;
+
+    let initialRender = true;
 
     $: {
         const _trigger = [
@@ -319,10 +330,22 @@
             showOwnedOnly,
             isGrouped,
         ];
-        displayLimit = 4;
-        flatDisplayLimit = 60;
+        if (initialRender) {
+            initialRender = false;
+        } else {
+            displayLimit = 4;
+            flatDisplayLimit = 60;
+        }
         setTimeout(checkScroll, 50);
     }
+
+    onDestroy(() => {
+        savedSortField = sortField;
+        savedSortDirection = sortDirection;
+        savedSelectedAttrType = selectedAttrType;
+        savedDisplayLimit = displayLimit;
+        savedFlatDisplayLimit = flatDisplayLimit;
+    });
 
     $: displayedGroups = groupedArray.slice(0, displayLimit);
     $: displayedFlat = filteredEquipment.slice(0, flatDisplayLimit);

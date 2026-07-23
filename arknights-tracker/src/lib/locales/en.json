@@ -1148,7 +1148,14 @@
     "docsTitle": "Goyfield DEV Documentation",
     "docsAuthor": "by @beetwooo_",
     "goToTimeline": "Go to events",
-    "fullSupportLanguages": "Fully Supported Languages"
+    "fullSupportLanguages": "Fully Supported Languages",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "currentWeek": "Current Week",
+    "nextWeek": "Next Week",
+    "fullCalendar": "Full Calendar",
+    "arsenalExchange": "Arsenal Exchange",
+    "arsenalExchangeWarning": "Data is based on the Chinese weapon rotation file and may be inaccurate"
   },
   "characters": {
     "catcher": "Catcher",

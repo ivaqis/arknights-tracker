@@ -640,6 +640,12 @@
     "docsAuthor": "oleh @beetwooo_",
     "goToTimeline": "Pergi ke acara",
     "uiLanguages": "Bahasa Antara Muka",
+    "today": "Hari ini",
+    "tomorrow": "Esok",
+    "currentWeek": "Minggu ini",
+    "nextWeek": "Minggu hadapan",
+    "fullCalendar": "Kalendar penuh",
+    "arsenalExchangeWarning": "Data ini berdasarkan fail putaran senjata pelayan China dan mungkin tidak tepat",
     "uiLanguagesDesc": "Bahasa yang menyokong terjemahan antara muka tapak web. Untuk istilah permainan, bahasa terjemahan permainan dengan sokongan penuh yang dipilih akan digunakan. Anda boleh membantu dengan terjemahan di <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">pelayan Discord Goyfield</a>",
     "fullSupportLanguages": "Bahasa yang Disokong Penuh"
   },

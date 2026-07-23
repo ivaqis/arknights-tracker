@@ -1011,7 +1011,14 @@
     "goToTimeline": "Ke Event",
     "fullSupportLanguages": "Bahasa dengan Dukungan Penuh",
     "uiLanguages": "Bahasa Antarmuka",
-    "uiLanguagesDesc": "Bahasa yang mendukung terjemahan antarmuka situs web. Untuk sebutan game, bahasa terjemahan game yang didukung penuh yang dipilih akan digunakan. Anda dapat membantu menerjemahkan di <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">server Discord Goyfield</a>"
+    "uiLanguagesDesc": "Bahasa yang mendukung terjemahan antarmuka situs web. Untuk sebutan game, bahasa terjemahan game yang didukung penuh yang dipilih akan digunakan. Anda dapat membantu menerjemahkan di <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">server Discord Goyfield</a>",
+    "arsenalExchange": "Bursa Senjata",
+    "today": "Hari ini",
+    "tomorrow": "Besok",
+    "currentWeek": "Minggu ini",
+    "nextWeek": "Minggu depan",
+    "fullCalendar": "Kalender lengkap",
+    "arsenalExchangeWarning": "Data didasarkan pada file rotasi senjata server Tiongkok dan mungkin tidak akurat"
   },
   "characters": {
     "catcher": "Catcher",

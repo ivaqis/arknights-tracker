@@ -8,6 +8,7 @@
   export let title = "";
   export let isTableCopied = false;
   export let maxWidthClass = "max-w-sm";
+  export let showCopyButton = true;
 
   const dispatch = createEventDispatcher();
 
@@ -32,17 +33,19 @@
         {title}
       </h3>
       <div class="flex items-center gap-2.5">
-        <button
-          on:click={handleCopy}
-          class="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 active:scale-95 text-white transition-all flex items-center gap-2 px-3 text-sm font-bold border border-white/10 shadow-sm cursor-pointer select-none"
-        >
-          {#if isTableCopied}
-            <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
-          {:else}
-            <Icon name="copy" class="w-4 h-4" />
-          {/if}
-          <span>{$t("common.copy") || "Copy"}</span>
-        </button>
+        {#if showCopyButton}
+          <button
+            on:click={handleCopy}
+            class="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 active:scale-95 text-white transition-all flex items-center gap-2 px-3 text-sm font-bold border border-white/10 shadow-sm cursor-pointer select-none"
+          >
+            {#if isTableCopied}
+              <Icon name="success" class="w-3.5 h-3.5 text-yellow-400" />
+            {:else}
+              <Icon name="copy" class="w-4 h-4" />
+            {/if}
+            <span>{$t("common.copy") || "Copy"}</span>
+          </button>
+        {/if}
         <button
           on:click={handleClose}
           class="p-1.5 rounded-full hover:bg-white/10 text-white/80 hover:text-white transition-all duration-200 cursor-pointer select-none"

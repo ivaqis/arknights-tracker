@@ -25,6 +25,7 @@
     export let isEquipment = false;
     export let isEnemy = false;
     export let hideRarity = false;
+    export let isStatic = false;
 
     $: computedIsNew =
         isNew !== undefined
@@ -97,7 +98,7 @@
             : `relative flex flex-col cursor-pointer select-none group flex-shrink-0 ${className || "w-[110px] h-[110px]"}`;
 
     $: gachaPulls = (() => {
-        if (isEquipment || !$pullData) return 0;
+        if (isStatic || isEquipment || !$pullData) return 0;
 
         let count = 0;
         Object.entries($pullData).forEach(([_, banner]) => {
@@ -117,17 +118,18 @@
     })();
 
     const { selectedId } = accountStore;
-    $: currentAccountId = $selectedId;
+    $: currentAccountId = isStatic ? null : $selectedId;
     $: basePot = gachaPulls > 0 ? gachaPulls - 1 : -1;
 
-    $: accountPots = $manualPotentials[currentAccountId] || {};
-    $: currentPot =
-        accountPots[weapon.id] !== undefined ? accountPots[weapon.id] : basePot;
+    $: accountPots = isStatic ? {} : ($manualPotentials[currentAccountId] || {});
+    $: currentPot = isStatic
+        ? -1
+        : (accountPots[weapon.id] !== undefined ? accountPots[weapon.id] : basePot);
 
-    $: hasWeapon = currentPot >= 0 || hideDarkness == true;
+    $: hasWeapon = isStatic ? true : (currentPot >= 0 || hideDarkness == true);
 
-    $: accountEssences = $weaponEssences[currentAccountId] || {};
-    $: currentEssence = accountEssences[weapon.id] || 0;
+    $: accountEssences = isStatic ? {} : ($weaponEssences[currentAccountId] || {});
+    $: currentEssence = isStatic ? 0 : (accountEssences[weapon.id] || 0);
 
     function getEssenceColor(level) {
         if (level === 1) return "#EF4444";
@@ -139,7 +141,7 @@
     $: constCount = hasWeapon ? currentPot : 0;
     $: isMaxPot = constCount >= 5;
     $: isAccountEmpty = (() => {
-        if (!$pullData) return true;
+        if (isStatic || !$pullData) return true;
         for (const key in $pullData) {
             if ($pullData[key]?.pulls?.length > 0) {
                 return false;
@@ -148,9 +150,10 @@
         return true;
     })();
     $: shouldDarken =
-        !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
+        !isStatic && !hasWeapon && !isEquipment && !isAccountEmpty && !$disableDarkening;
 
     function tooltipOnlyOnOverflow(node, text) {
+        if (isStatic) return;
         const checkOverflow = () => {
             requestAnimationFrame(() => {
                 if (

@@ -44,6 +44,12 @@
         "height": "18",
         "fill": "none"
     },
+    "arsenalTicket": {
+        "viewBox": "0 0 35 31",
+        "width": "35",
+        "height": "31",
+        "fill": "none"
+    },
     "import": {
         "viewBox": "0 0 24 24",
         "width": "30",

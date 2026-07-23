@@ -1011,7 +1011,14 @@
     "goToTimeline": "イベントへ",
     "fullSupportLanguages": "完全対応の言語",
     "uiLanguages": "インターフェースの言語",
-    "uiLanguagesDesc": "ウェブサイトのインターフェース翻訳に対応している言語です。ゲーム内の表記については、選択された完全対応のゲーム翻訳言語が使用されます。翻訳のお手伝いは、<a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">GoyfieldのDiscordサーバー</a>で受け付けています"
+    "uiLanguagesDesc": "ウェブサイトのインターフェース翻訳に対応している言語です。ゲーム内の表記については、選択された完全対応のゲーム翻訳言語が使用されます。翻訳のお手伝いは、<a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">GoyfieldのDiscordサーバー</a>で受け付けています",
+    "arsenalExchange": "武庫交換所",
+    "today": "今日",
+    "tomorrow": "明日",
+    "currentWeek": "今週",
+    "nextWeek": "来週",
+    "fullCalendar": "フルカレンダー",
+    "arsenalExchangeWarning": "データは中国サーバーの武器ローテーションファイルに基づいており、正確ではない場合があります"
   },
   "characters": {
     "catcher": "キャッチャー",

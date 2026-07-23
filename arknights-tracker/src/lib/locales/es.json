@@ -1013,7 +1013,14 @@
     "goToTimeline": "Ir a Eventos",
     "fullSupportLanguages": "Idiomas con soporte completo",
     "uiLanguages": "Idiomas de la interfaz",
-    "uiLanguagesDesc": "Idiomas que admiten la traducción de la interfaz del sitio web. Para las designaciones del juego, se utilizará el idioma de traducción del juego totalmente compatible seleccionado. Puedes ayudar con la traducción en el <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">servidor de Discord de Goyfield</a>"
+    "uiLanguagesDesc": "Idiomas que admiten la traducción de la interfaz del sitio web. Para las designaciones del juego, se utilizará el idioma de traducción del juego totalmente compatible seleccionado. Puedes ayudar con la traducción en el <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">servidor de Discord de Goyfield</a>",
+    "arsenalExchange": "Intercambio de Arsenal",
+    "today": "Hoy",
+    "tomorrow": "Mañana",
+    "currentWeek": "Semana actual",
+    "nextWeek": "Próxima semana",
+    "fullCalendar": "Calendario completo",
+    "arsenalExchangeWarning": "Los datos se basan en el archivo de rotación de armas chino y pueden no ser precisos"
   },
   "characters": {
     "catcher": "Catcher",

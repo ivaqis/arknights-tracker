@@ -641,7 +641,13 @@
     "goToTimeline": "الذهاب إلى الفعاليات",
     "fullSupportLanguages": "اللغات المدعومة بالكامل",
     "uiLanguages": "لغات الواجهة",
-    "uiLanguagesDesc": "اللغات التي تدعم ترجمة واجهة الموقع. بالنسبة لمصطلحات اللعبة، سيتم استخدام لغة ترجمة اللعبة المدعومة بالكامل والمحددة. يمكنك المساعدة في الترجمة على <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">خادم Discord لـ Goyfield</a>"
+    "uiLanguagesDesc": "اللغات التي تدعم ترجمة واجهة الموقع. بالنسبة لمصطلحات اللعبة، سيتم استخدام لغة ترجمة اللعبة المدعومة بالكامل والمحددة. يمكنك المساعدة في الترجمة على <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">خادم Discord لـ Goyfield</a>",
+    "today": "اليوم",
+    "tomorrow": "غدًا",
+    "currentWeek": "الأسبوع الحالي",
+    "nextWeek": "الأسبوع القادم",
+    "fullCalendar": "التقويم الكامل",
+    "arsenalExchangeWarning": "تستند البيانات إلى ملف التدوير الصيني للأسلحة وقد لا تكون دقيقة"
   },
   "cookies": {
     "title": "نحن نستخدم ملفات تعريف الارتباط",

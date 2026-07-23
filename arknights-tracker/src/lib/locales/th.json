@@ -1011,7 +1011,14 @@
     "goToTimeline": "ไปที่กิจกรรม",
     "fullSupportLanguages": "ภาษาที่สนับสนุนอย่างเต็มที่",
     "uiLanguages": "ภาษาอินเทอร์เฟซ",
-    "uiLanguagesDesc": "ภาษาที่รองรับการแปลอินเทอร์เฟซของเว็บไซต์ สำหรับการระบุในเกม จะใช้ภาษาแปลในเกมที่รองรับอย่างเต็มรูปแบบที่เลือก คุณสามารถช่วยแปลได้ใน <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">เซิร์ฟเวอร์ Discord ของ Goyfield</a>"
+    "uiLanguagesDesc": "ภาษาที่รองรับการแปลอินเทอร์เฟซของเว็บไซต์ สำหรับการระบุในเกม จะใช้ภาษาแปลในเกมที่รองรับอย่างเต็มรูปแบบที่เลือก คุณสามารถช่วยแปลได้ใน <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">เซิร์ฟเวอร์ Discord ของ Goyfield</a>",
+    "arsenalExchange": "แลกเปลี่ยน​คลังแสง",
+    "today": "วันนี้",
+    "tomorrow": "พรุ่งนี้",
+    "currentWeek": "สัปดาห์นี้",
+    "nextWeek": "สัปดาห์หน้า",
+    "fullCalendar": "ปฏิทินแบบเต็ม",
+    "arsenalExchangeWarning": "ข้อมูลอ้างอิงจากไฟล์โรเทชันอาวุธของจีนและอาจไม่ถูกต้องทั้งหมด"
   },
   "characters": {
     "catcher": "แคท​เชอร์",

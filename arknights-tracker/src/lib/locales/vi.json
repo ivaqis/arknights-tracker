@@ -1054,7 +1054,14 @@
     "goToTimeline": "Đến sự kiện",
     "fullSupportLanguages": "Ngôn ngữ được hỗ trợ đầy đủ",
     "uiLanguages": "Ngôn ngữ giao diện",
-    "uiLanguagesDesc": "Các ngôn ngữ hỗ trợ dịch giao diện trang web. Đối với các danh hiệu trong game, ngôn ngữ dịch game được hỗ trợ đầy đủ đã chọn sẽ được sử dụng. Bạn có thể hỗ trợ dịch thuật tại <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">máy chủ Discord của Goyfield</a>"
+    "uiLanguagesDesc": "Các ngôn ngữ hỗ trợ dịch giao diện trang web. Đối với các danh hiệu trong game, ngôn ngữ dịch game được hỗ trợ đầy đủ đã chọn sẽ được sử dụng. Bạn có thể hỗ trợ dịch thuật tại <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">máy chủ Discord của Goyfield</a>",
+    "arsenalExchange": "Sàn Vũ Khí",
+    "today": "Hôm nay",
+    "tomorrow": "Ngày mai",
+    "currentWeek": "Tuần này",
+    "nextWeek": "Tuần tới",
+    "fullCalendar": "Lịch đầy đủ",
+    "arsenalExchangeWarning": "Dữ liệu dựa trên tệp xoay tua vũ khí của Trung Quốc và có thể không chính xác"
   },
   "characters": {
     "catcher": "Catcher",

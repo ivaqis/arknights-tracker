@@ -1151,7 +1151,14 @@
     "docsTitle": "Документация Goyfield DEV",
     "docsAuthor": "by @beetwooo_",
     "goToTimeline": "Перейти к событиям",
-    "fullSupportLanguages": "Языки с полной поддержкой"
+    "fullSupportLanguages": "Языки с полной поддержкой",
+    "today": "Сегодня",
+    "tomorrow": "Завтра",
+    "currentWeek": "Текущая неделя",
+    "nextWeek": "Следующая неделя",
+    "fullCalendar": "Полный календарь",
+    "arsenalExchange": "Обменник арсенала",
+    "arsenalExchangeWarning": "Данные основаны на китайском файле ротации оружия и могут быть не точными"
   },
   "characters": {
     "catcher": "Кэтчер",

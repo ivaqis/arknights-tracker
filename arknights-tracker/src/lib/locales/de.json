@@ -1011,7 +1011,14 @@
     "goToTimeline": "Zu den Events",
     "fullSupportLanguages": "Vollständig unterstützte Sprachen",
     "uiLanguages": "Oberflächensprachen",
-    "uiLanguagesDesc": "Sprachen, die die Übersetzung der Website-Oberfläche unterstützen. Für Spielbezeichnungen wird die ausgewählte, vollständig unterstützte Spielübersetzungssprache verwendet. Sie können bei der Übersetzung auf dem <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord-Server</a> helfen"
+    "uiLanguagesDesc": "Sprachen, die die Übersetzung der Website-Oberfläche unterstützen. Für Spielbezeichnungen wird die ausgewählte, vollständig unterstützte Spielübersetzungssprache verwendet. Sie können bei der Übersetzung auf dem <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord-Server</a> helfen",
+    "arsenalExchange": "Arsenal-Tauschbörse",
+    "today": "Heute",
+    "tomorrow": "Morgen",
+    "currentWeek": "Diese Woche",
+    "nextWeek": "Nächste Woche",
+    "fullCalendar": "Vollständiger Kalender",
+    "arsenalExchangeWarning": "Die Daten basieren auf der chinesischen Waffenrotationsdatei und sind möglicherweise nicht genau"
   },
   "characters": {
     "catcher": "Catcher",

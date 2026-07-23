@@ -641,6 +641,12 @@
     "goToTimeline": "Przejdź do wydarzeń",
     "fullSupportLanguages": "Języki z pełnym wsparciem",
     "uiLanguages": "Języki interfejsu",
+    "today": "Dzisiaj",
+    "tomorrow": "Jutro",
+    "currentWeek": "Bieżący tydzień",
+    "nextWeek": "Następny tydzień",
+    "fullCalendar": "Pełny kalendarz",
+    "arsenalExchangeWarning": "Dane opierają się na chińskim pliku rotacji broni i mogą nie być dokładne",
     "uiLanguagesDesc": "Języki wspierające tłumaczenie interfejsu strony. Do oznaczeń w grze używany będzie wybrany język w pełni wspierający tłumaczenie gry. Możesz pomóc w tłumaczeniu na <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">serwerze Discord Goyfield</a>"
   },
   "cookies": {

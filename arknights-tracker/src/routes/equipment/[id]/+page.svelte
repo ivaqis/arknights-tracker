@@ -207,9 +207,6 @@
         }
     }
 
-    // ponytail: isPct checks if attribute values represent a percentage based on any value between 0 and 1 exclusive.
-    // Ceiling: assumes percentage attributes always have values strictly between 0 and 1, and flat attributes are >= 1.
-    // Upgrade path: check actual data schema or metadata for percentage flag if attributes ever have overlapping ranges.
     const isPct = (vals) => (vals || []).some(v => v !== 0 && Math.abs(v) > 0 && Math.abs(v) < 1);
 
     $: usefulnessMap = (() => {
@@ -1023,7 +1020,7 @@
                                 <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white pointer-events-none">
                                     <div class="flex items-start gap-2.5">
                                         <div class="w-[3px] bg-white rounded self-stretch"></div>
-                                        <span class="text-md group-hover:underline font-bold tracking-wide drop-shadow-md max-w-[250px]">
+                                        <span class="text-md font-bold tracking-wide drop-shadow-md max-w-[250px] group-hover:text-[#FFD800]">
                                             {$t("systemNames.gearTemplate")} - Open Endfield Map<Icon name="sendToLink" class="w-4 h-4 inline-block align-middle ml-1.5 text-current group-hover:text-[#FFD800]" />
                                         </span>
                                     </div>

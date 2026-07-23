@@ -1011,7 +1011,14 @@
     "goToTimeline": "Vai agli Eventi",
     "fullSupportLanguages": "Lingue completamente supportate",
     "uiLanguages": "Lingue dell'interfaccia",
-    "uiLanguagesDesc": "Lingue che supportano la traduzione dell'interfaccia del sito web. Per le designazioni di gioco, verrà utilizzata la lingua di traduzione del gioco completamente supportata selezionata. Puoi aiutare con la traduzione sul <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">server Discord di Goyfield</a>"
+    "uiLanguagesDesc": "Lingue che supportano la traduzione dell'interfaccia del sito web. Per le designazioni di gioco, verrà utilizzata la lingua di traduzione del gioco completamente supportata selezionata. Puoi aiutare con la traduzione sul <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">server Discord di Goyfield</a>",
+    "arsenalExchange": "Scambio arsenale",
+    "today": "Oggi",
+    "tomorrow": "Domani",
+    "currentWeek": "Settimana corrente",
+    "nextWeek": "Settimana prossima",
+    "fullCalendar": "Calendario completo",
+    "arsenalExchangeWarning": "I dati si basano sul file di rotazione delle armi cinese e potrebbero non essere accurati"
   },
   "characters": {
     "catcher": "Catcher",

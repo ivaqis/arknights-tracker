@@ -641,6 +641,12 @@
     "goToTimeline": "Перейти до подій",
     "fullSupportLanguages": "Мови з повною підтримкою",
     "uiLanguages": "Мови інтерфейсу",
+    "today": "Сьогодні",
+    "tomorrow": "Завтра",
+    "currentWeek": "Поточний тиждень",
+    "nextWeek": "Наступний тиждень",
+    "fullCalendar": "Повний календар",
+    "arsenalExchangeWarning": "Дані базуються на китайському файлі ротації зброї і можуть бути неточними",
     "uiLanguagesDesc": "Мови, які підтримують переклад інтерфейсу сайту. Для перекладу ігрових позначень буде використано вибрану мову, яка повністю підтримує переклад гри. Допомогти з перекладом ви можете в <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Discord сервері Goyfield</a>"
   },
   "cookies": {

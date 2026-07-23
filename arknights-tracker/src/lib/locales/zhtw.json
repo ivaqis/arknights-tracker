@@ -1054,7 +1054,14 @@
     "goToTimeline": "前往活動",
     "fullSupportLanguages": "完全支援的語言",
     "uiLanguages": "介面語言",
-    "uiLanguagesDesc": "支援網站介面翻譯的語言。對於遊戲內名稱，將使用所選的完全支援的遊戲翻譯語言。您可以在 <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord 伺服器</a>中協助翻譯"
+    "uiLanguagesDesc": "支援網站介面翻譯的語言。對於遊戲內名稱，將使用所選的完全支援的遊戲翻譯語言。您可以在 <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord 伺服器</a>中協助翻譯",
+    "arsenalExchange": "武庫交易所",
+    "today": "今天",
+    "tomorrow": "明天",
+    "currentWeek": "本週",
+    "nextWeek": "下週",
+    "fullCalendar": "完整日曆",
+    "arsenalExchangeWarning": "數據基於陸服武器輪換文件，可能不完全準確"
   },
   "characters": {
     "catcher": "卡契爾",

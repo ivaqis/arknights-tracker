@@ -641,6 +641,12 @@
     "goToTimeline": "Оқиғаларға өту",
     "fullSupportLanguages": "Толық қолдауы бар тілдер",
     "uiLanguages": "Интерфейс тілдері",
+    "today": "Бүгін",
+    "tomorrow": "Ертең",
+    "currentWeek": "Ағымдағы апта",
+    "nextWeek": "Келесі апта",
+    "fullCalendar": "Толық күнтізбе",
+    "arsenalExchangeWarning": "Деректер қару-жарақ ротациясының қытайлық файлына негізделген және дәл болмауы мүмкін",
     "uiLanguagesDesc": "Сайт интерфейсінің аудармасын қолдайтын тілдер. Ойын атаулары үшін ойын аудармасын толық қолдайтын таңдалған тіл қолданылады. Аудармаға <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord серверінде</a> көмектесе аласыз"
   },
   "cookies": {

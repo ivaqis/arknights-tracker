@@ -641,7 +641,13 @@
     "goToTimeline": "Siirry tapahtumiin",
     "uiLanguages": "Käyttöliittymän kielet",
     "uiLanguagesDesc": "Kielet, jotka tukevat verkkosivuston käyttöliittymän kääntämistä. Pelitermeissä käytetään valittua täysin tuettua pelin käännöskieltä. Voit auttaa kääntämisessä <a href=\"{discordLink}\" target=\"_blank\" class=\"text-yellow-400 hover:underline\">Goyfield Discord -palvelimella</a>",
-    "fullSupportLanguages": "Täysin tuetut kielet"
+    "fullSupportLanguages": "Täysin tuetut kielet",
+    "today": "Tänään",
+    "tomorrow": "Huomenna",
+    "currentWeek": "Tällä viikolla",
+    "nextWeek": "Ensi viikolla",
+    "fullCalendar": "Koko kalenteri",
+    "arsenalExchangeWarning": "Tiedot perustuvat kiinalaiseen asekiertotiedostoon eivätkä välttämättä ole tarkkoja"
   },
   "cookies": {
     "title": "Käytämme evästeitä",

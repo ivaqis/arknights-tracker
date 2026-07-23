@@ -1,3 +1,10 @@
+<script module>
+    let savedDisplayLimit = 4;
+    let savedFlatDisplayLimit = 60;
+    let savedSortField = "rarity";
+    let savedSortDirection = "desc";
+</script>
+
 <script>
     import DataToolbar from "$lib/components/dataToolbarV2/DataToolbar.svelte";
     import EnemyFilterDropdown from "$lib/components/dataToolbarV2/filterDropdowns/EnemyFilterDropdown.svelte";
@@ -9,6 +16,7 @@
     import WeaponCard from "$lib/components/cards/WeaponCard.svelte";
     import Icon from "$lib/components/Icon.svelte";
     import { filterCheck } from "$lib/utils/filterUtils.js";
+    import { onDestroy } from "svelte";
 
     $: searchQuery = $enemySearch || "";
     $: isGrouped = $enemyGroupMode || false;
@@ -19,8 +27,8 @@
     );
 
     let sortFieldList = ["rarity"];
-    let sortField = "rarity";
-    let sortDirection = "desc";
+    let sortField = savedSortField;
+    let sortDirection = savedSortDirection;
     let filters = getEnemyFilters();
 
     $: filteredEnemies = (() => {
@@ -95,13 +103,19 @@
             return a.maxRarity - b.maxRarity || a.groupId.localeCompare(b.groupId);
         });
 
-    let displayLimit = 4;
-    let flatDisplayLimit = 60;
+    let displayLimit = savedDisplayLimit;
+    let flatDisplayLimit = savedFlatDisplayLimit;
+
+    let initialRender = true;
 
     $: {
         const _trigger = [searchQuery, sortField, sortDirection, isGrouped, selectedFilters];
-        displayLimit = 4;
-        flatDisplayLimit = 60;
+        if (initialRender) {
+            initialRender = false;
+        } else {
+            displayLimit = 4;
+            flatDisplayLimit = 60;
+        }
         setTimeout(checkScroll, 50);
     }
 
@@ -130,6 +144,12 @@
             loadMore();
         }
     }
+    onDestroy(() => {
+        savedSortField = sortField;
+        savedSortDirection = sortDirection;
+        savedDisplayLimit = displayLimit;
+        savedFlatDisplayLimit = flatDisplayLimit;
+    });
 </script>
 
 <svelte:window on:scroll={checkScroll} on:resize={checkScroll} />
