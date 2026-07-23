@@ -8,6 +8,7 @@ import { Repository } from "@database/repositories/Repository";
 import { UserMonumentCharactersTable } from "@database/tables/UserMonumentCharactersTable";
 import { UserMonumentGroupsTable } from "@database/tables/UserMonumentGroupsTable";
 import { UserMonumentLeaderboardsTable } from "@database/tables/UserMonumentLeaderboardsTable";
+import { Amount } from "@models/Amount";
 import { MonumentRecord } from "@models/monument/MonumentRecord";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
@@ -220,7 +221,19 @@ export class MonumentLeaderboardRepository extends Repository {
         return this._characterTable.findByUserGroupId(userGroupId);
     }
 
-    // public async countCharactersByDungeonId // todo
+    public async getCharactersUsageByDungeonId(dungeonId: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersUsageByDungeonId(dungeonId);
+    }
 
-    // public async countCharactersByGroupId() // todo
+    public async getCharactersUsageByGroupId(groupId: string, isHard: boolean): Promise<Amount[]> {
+        return this._characterTable.getCharactersUsageByGroupId(groupId, isHard);
+    }
+
+    public async getCharactersNumberInRecordByDungeonId(dungeonId: string): Promise<Amount[]> {
+        return this._characterTable.getCharactersNumberInRecordByDungeonId(dungeonId);
+    }
+
+    public async getCharactersNumberInRecordByGroupId(groupId: string, isHard: boolean): Promise<Amount[]> {
+        return this._characterTable.getCharactersNumberInRecordByGroupId(groupId, isHard);
+    }
 }
