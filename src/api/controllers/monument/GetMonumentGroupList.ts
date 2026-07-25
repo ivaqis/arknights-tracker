@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { GetMonumentGroupListQuery } from "@api/contracts/monument/GetMonumentGroupListQuery";
 import { GetMonumentGroupListResponse } from "@api/contracts/monument/GetMonumentGroupListResponse";
@@ -81,7 +80,7 @@ export class GetMonumentGroupList extends Controller<
             return;
         }
 
-        const list = await searcher.findPublicGroups(this._groupId, this._isHard, serverId, this._sortField, this._sortOrder, take, skip);
+        const list = await searcher.findPublicGroups(this._groupId, this._isHard, serverId, this._sortField, this._sortOrder, monumentFilters, take, skip);
         const entities = list.map(item => item.getEntity());
         entities.sort((a, b) => this.sort(a, b));
 

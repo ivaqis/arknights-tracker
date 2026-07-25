@@ -41,10 +41,10 @@ export class MonumentLeaderboardSearcher {
             : monumentGroupRecords.getNormalDungeons(groupId)?.length ?? 0;
     }
 
-    public async findPublicGroups(groupId: string, isHard: boolean, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, take: number, skip: number): Promise<MonumentLeaderboardGroupRecord[]> {
+    public async findPublicGroups(groupId: string, isHard: boolean, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, monumentFilters: MonumentFilters, take: number, skip: number): Promise<MonumentLeaderboardGroupRecord[]> {
         const minCount = MonumentLeaderboardSearcher.getMinCount(groupId, isHard);
 
-        const groupIds = await this._database.monumentLeaderboard.findUserGroupsByGroupId(groupId, isHard, true, serverId, sortField, sortOrder, minCount, take, skip);
+        const groupIds = await this._database.monumentLeaderboard.findUserGroupsByGroupId(groupId, isHard, true, serverId, sortField, sortOrder, minCount, monumentFilters, take, skip);
         const groups = await this._database.monumentLeaderboard.findManyUserGroups(groupIds);
         const runs = await this._database.monumentLeaderboard.findManyByUserGroupId(groupIds);
 

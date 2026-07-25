@@ -86,33 +86,6 @@ export class MonumentLeaderboardRepository extends Repository {
         return this._monumentTable.findManyByUserGroupId(userGroupIds);
     }
 
-    public async sumClearTimeByUserGroupIdSorted(groupId: string,
-                                                 isHard: boolean,
-                                                 publicOnly: boolean,
-                                                 serverId: string | null,
-                                                 sortOrder: SortOrder,
-                                                 minCountInGroup: number = 0,
-                                                 take?: number,
-                                                 skip?: number
-    ): Promise<{
-        userGroupId: string,
-        clearTimeSec: number
-    }[]> {
-        return this._monumentTable.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-    }
-
-    public async findUserGroupsByGroupIdSortedByLevel(groupId: string,
-                                                      isHard: boolean,
-                                                      publicOnly: boolean,
-                                                      serverId: string | null,
-                                                      sortOrder: SortOrder,
-                                                      minCountInGroup: number = 0,
-                                                      take: number,
-                                                      skip: number
-    ): Promise<string[]> {
-        return this._monumentGroupsTable.findByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-    }
-
     public async findByGroupIdIncludeGameProfileAndUser(groupId: string,
                                                         isHard: boolean,
                                                         publicOnly: boolean,
@@ -120,6 +93,7 @@ export class MonumentLeaderboardRepository extends Repository {
                                                         sortField: MonumentLeaderboardSortField,
                                                         sortOrder: SortOrder,
                                                         minCountInGroup: number,
+                                                        filters: MonumentFilters,
                                                         take: number,
                                                         skip: number
     ): Promise<{
@@ -127,18 +101,7 @@ export class MonumentLeaderboardRepository extends Repository {
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
-        let groups: string[];
-
-        switch (sortField) {
-            case MonumentLeaderboardSortField.LEVEL:
-                groups = await this.findUserGroupsByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-                break;
-
-            case MonumentLeaderboardSortField.TIME:
-                const times = await this.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-
-                groups = times.map(item => item.userGroupId);
-        }
+        let groups: string[] = await this._monumentGroupsTable.findIdsByGroupId(groupId, isHard, publicOnly, serverId, sortField, sortOrder, minCountInGroup, filters, take, skip);
 
         return await this.findManyByUserGroupIdIncludeGameProfileAndUser(groups);
     }
@@ -150,16 +113,11 @@ export class MonumentLeaderboardRepository extends Repository {
                                          sortField: MonumentLeaderboardSortField,
                                          sortOrder: SortOrder,
                                          minCountInGroup: number,
+                                         filters: MonumentFilters,
                                          take: number,
                                          skip: number
     ): Promise<string[]> {
-        switch (sortField) {
-            case MonumentLeaderboardSortField.LEVEL:
-                return await this.findUserGroupsByGroupIdSortedByLevel(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-            case MonumentLeaderboardSortField.TIME:
-                const times = await this.sumClearTimeByUserGroupIdSorted(groupId, isHard, publicOnly, serverId, sortOrder, minCountInGroup, take, skip);
-                return times.map(item => item.userGroupId);
-        }
+        return this._monumentGroupsTable.findIdsByGroupId(groupId, isHard, publicOnly, serverId, sortField, sortOrder, minCountInGroup, filters, take, skip);
     }
 
     public async findManyUserGroups(ids: string[]): Promise<UserMonumentGroupRecord[]> {
@@ -176,7 +134,7 @@ export class MonumentLeaderboardRepository extends Repository {
 
     public async create(gameUid: string, data: MonumentRecord): Promise<UserMonumentLeaderboardRecord> {
         const group = await this._monumentGroupsTable.getByGroupId(data.groupId, data.isHard, gameUid);
-        const record = await this._monumentTable.create(group.id, gameUid, data)
+        const record = await this._monumentTable.create(group.id, gameUid, data);
 
         const entities: UserMonumentCharacterEntity[] = data.chars.map(char => {
             return {
