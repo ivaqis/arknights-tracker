@@ -95,8 +95,8 @@ export class MonumentLeaderboardSearcher {
         })
     }
 
-    public async findPublicRuns(dungeonId: string, serverId: string | null, sortField?: MonumentLeaderboardSortField, sortOrder?: SortOrder, take?: number, skip?: number): Promise<MonumentLeaderboardRecord[]> {
-        const records = await this._database.monumentLeaderboard.findByDungeonIdIncludeGameProfileAndUser(dungeonId, true, serverId, sortField, sortOrder, take, skip);
+    public async findPublicRuns(dungeonId: string, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, monumentFilters: MonumentFilters, take?: number, skip?: number): Promise<MonumentLeaderboardRecord[]> {
+        const records = await this._database.monumentLeaderboard.findByDungeonIdIncludeGameProfileAndUser(dungeonId, true, serverId, sortField, sortOrder, monumentFilters, take, skip);
 
         return records.map(record => {
             const profile = {
@@ -109,7 +109,7 @@ export class MonumentLeaderboardSearcher {
                 serverId: record.gameProfile.serverId,
             };
 
-            return MonumentLeaderboardRecord.createFromRecord(profile, gameProfile, record.monumentRecord);
+            return MonumentLeaderboardRecord.createFromRecord(profile, gameProfile, record.record);
         });
     }
 

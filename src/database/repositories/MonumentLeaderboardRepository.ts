@@ -57,44 +57,29 @@ export class MonumentLeaderboardRepository extends Repository {
     }
 
     public async findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds: string[]): Promise<{
-        monumentRecord: UserMonumentLeaderboardRecord,
+        record: UserMonumentLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
         return this._monumentTable.findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds);
     }
 
-    public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string, publicOnly: boolean, serverId: string | null): Promise<{
-        monumentRecord: UserMonumentLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
     public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
                                                           publicOnly: boolean,
                                                           serverId: string | null,
-                                                          sortField?: MonumentLeaderboardSortField,
-                                                          sortOrder?: SortOrder,
+                                                          sortField: MonumentLeaderboardSortField,
+                                                          sortOrder: SortOrder,
+                                                          filters: MonumentFilters,
                                                           take?: number,
                                                           skip?: number
     ): Promise<{
-        monumentRecord: UserMonumentLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]>;
-
-    public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
-                                                          publicOnly: boolean,
-                                                          serverId: string | null,
-                                                          sortField?: MonumentLeaderboardSortField,
-                                                          sortOrder?: SortOrder,
-                                                          take?: number,
-                                                          skip?: number
-    ): Promise<{
-        monumentRecord: UserMonumentLeaderboardRecord,
+        record: UserMonumentLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
-        return this._monumentTable.findByDungeonIdIncludeGameProfileAndUser(dungeonId, publicOnly, serverId, sortField, sortOrder, take, skip);
+        const ids = await this._monumentTable.findIdsByDungeonId(dungeonId, publicOnly, serverId, sortField, sortOrder, filters, take, skip);
+
+        return await this._monumentTable.findManyIncludeGameProfileAndUser(ids);
     }
 
     public async findManyByUserGroupId(userGroupIds: string[]): Promise<UserMonumentLeaderboardRecord[]> {
@@ -138,7 +123,7 @@ export class MonumentLeaderboardRepository extends Repository {
                                                         take: number,
                                                         skip: number
     ): Promise<{
-        monumentRecord: UserMonumentLeaderboardRecord,
+        record: UserMonumentLeaderboardRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {

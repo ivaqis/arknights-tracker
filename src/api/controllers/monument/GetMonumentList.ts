@@ -75,7 +75,7 @@ export class GetMonumentList extends Controller<
             return;
         }
 
-        const list = await searcher.findPublicRuns(this._dungeonId, serverId, this._sortField, this._sortOrder, take, skip);
+        const list = await searcher.findPublicRuns(this._dungeonId, serverId, this._sortField, this._sortOrder, monumentFilters, take, skip);
 
         this.data = {
             list: list.map(item => item.getEntity()),
