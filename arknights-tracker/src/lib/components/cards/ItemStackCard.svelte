@@ -1,12 +1,12 @@
 <script>
+    import { FullBottle } from "$lib/classes/items/FullBottle.js";
+    import { FullGasJar } from "$lib/classes/items/FullGasJar.js";
+    import { Item } from "$lib/classes/items/Item.js";
+    import Icon from "$lib/components/Icon.svelte";
+    import Image from "$lib/components/Image.svelte";
+    import Tooltip from "$lib/components/Tooltip.svelte";
     import { t } from "$lib/i18n.js";
     import { getRarityColor } from "$lib/utils/colorUtils.js";
-    import { FullBottle } from "$lib/classes/items/FullBottle.js";
-    import { Item } from "$lib/classes/items/Item.js";
-
-    import Image from "$lib/components/Image.svelte";
-    import Icon from "$lib/components/Icon.svelte";
-    import Tooltip from "$lib/components/Tooltip.svelte";
 
     export let itemId = "";
     export let amount = 0;
@@ -36,13 +36,21 @@
     let isFullBottle;
     let fullBottle;
     let liquid;
+
+    let isFullJar;
+    let fullJar;
+    let gas;
+
     let isEventItem;
 
     $: if (item) {
         isFullBottle = FullBottle.isFullBottle(item.id);
-
         fullBottle = FullBottle.getFullBottleFromItem(item);
         liquid = fullBottle?.liquidItem;
+
+        isFullJar = FullGasJar.isFullGasJar(item.id);
+        fullJar = FullGasJar.getFullGasJarFromItem(item);
+        gas = fullJar?.gasItem;
 
         isEventItem = item.isEventItem();
     }
@@ -120,6 +128,7 @@
                 </div>
 
                 {#if isFullBottle}
+
                     <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
                         <div class="w-2/3 h-2/3">
                             <Image
@@ -130,6 +139,20 @@
                             />
                         </div>
                     </div>
+
+                {:else if isFullJar}
+
+                    <div class="absolute inset-0 flex items-center justify-center z-0 bottom-[6px]">
+                        <div class="w-2/3 h-2/3">
+                            <Image
+                                id={gas.iconId}
+                                interactive={interactiveImages}
+                                variant="item-icon"
+                                className="w-full h-full object-contain blur-[0.3px] rotate-[0.01deg] backface-hidden transform-gpu transition-all duration-300"
+                            />
+                        </div>
+                    </div>
+
                 {/if}
 
             {:else}
