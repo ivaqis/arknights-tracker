@@ -23,6 +23,9 @@ export class RequestLogger extends Middleware<
     }
 
     protected async execute(): Promise<void> {
-        logger.info(`[REQUEST RECEIVED] ${this.req.method.toUpperCase()} ${this.req.originalUrl}`);
+        logger.http(`[REQUEST RECEIVED] ${this.req.method.toUpperCase()} ${this.fullPath}`);
+        logger.debug(`[REQUEST PARAMS] ${JSON.stringify(this.req.params, null, 2)}`);
+        logger.debug(`[REQUEST QUERY] ${JSON.stringify(this.req.query, null, 2)}`);
+        logger.debug(`[REQUEST BODY] ${JSON.stringify(this.req.body, null, 2)}`);
     }
 }

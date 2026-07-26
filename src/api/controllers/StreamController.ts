@@ -13,9 +13,13 @@ export abstract class StreamController<
     private readonly _req: e.Request<Params, {}, ReqBody, ReqQuery>;
     private readonly _res: e.Response<{}>;
 
+    private readonly _url: URL;
+
     protected constructor(req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>) {
         this._req = req;
         this._res = res;
+
+        this._url = new URL(`http://localhost${this._req.originalUrl}`);
     }
 
     public abstract get name(): string;
@@ -26,6 +30,18 @@ export abstract class StreamController<
 
     public get res(): e.Response<{}> {
         return this._res;
+    }
+
+    protected get fullPath(): string {
+        return this._url.pathname || "/";
+    }
+
+    protected get baseUrl(): string {
+        return this._req.baseUrl || "root";
+    }
+
+    protected get routePath(): string {
+        return this.getRoutePath();
     }
 
     protected abstract execute(): Promise<void>;
@@ -39,7 +55,7 @@ export abstract class StreamController<
             res.flush();
         }
 
-        logger.info(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] SENT ${data.type} ${this._req.method} ${this._req.originalUrl}`)
+        logger.http(`[${this.name}] [${this.baseUrl}${this.routePath}] SENT ${data.type} ${this._req.method} ${this.fullPath}`)
     }
 
     protected sendError(message: string) {
@@ -53,8 +69,11 @@ export abstract class StreamController<
     }
 
     protected async safeExecute(): Promise<void> {
+        const pathname = this.fullPath;
+        const routePath = `${this.baseUrl}${this.routePath}`;
+
         try {
-            logger.debug(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] PROCESSING (${this._req.method} ${this._req.originalUrl})`);
+            logger.debug(`[${this.name}] [${routePath}] PROCESSING (${this._req.method} ${pathname})`);
 
             this._res.writeHead(200, {
                 "Content-Type": "text/event-stream; charset=utf-8",
@@ -68,9 +87,9 @@ export abstract class StreamController<
 
             this._res.end();
 
-            logger.info(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] ENDED SUCCESSFUL ${this._req.method} ${this._req.originalUrl}`);
+            logger.http(`[${this.name}] [${routePath}] ENDED SUCCESSFUL ${this._req.method} ${pathname}`);
         } catch (e) {
-            logger.error(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] ${this._req.method} ${this._req.originalUrl}\n${e}`);
+            logger.error(`[${this.name}] [${routePath}] ${this._req.method} ${pathname}\n${e}`);
 
             if (e instanceof Error) {
                 logger.error(e.stack);
@@ -79,11 +98,11 @@ export abstract class StreamController<
             this.sendError("Internal Server Error");
             this.res.end();
 
-            logger.warn(`[${this.name}] [${this._req.baseUrl || "root"}${this.getRoutePath()}] ENDED WITH ERROR ${this._req.method} ${this._req.originalUrl}`);
+            logger.warn(`[${this.name}] [${routePath}] ENDED WITH ERROR ${this._req.method} ${pathname}`);
         }
     }
 
-    protected getRoutePath(): string {
+    private getRoutePath(): string {
         const path = this._req?.route?.path as string;
 
         if (!path || typeof path !== "string") {
