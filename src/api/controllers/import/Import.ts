@@ -30,7 +30,7 @@ export class Import extends StreamController<
         super(req, res);
 
         this._id = req.body.id;
-        this._tokenCandidates = [req.body.token, decodeURIComponent(req.body.token)];
+        this._tokenCandidates = [decodeURIComponent(req.body.token), req.body.token];
         this._serverIds = req.body.serverIds;
         this._lastPullTimes = Import.getLastPullsMap(req.body.lastPullTimes);
     }
@@ -64,8 +64,8 @@ export class Import extends StreamController<
         };
 
         let pulls: BannersPulls | null = null;
-        for (const serverId of this._serverIds) {
-            for (const token of this._tokenCandidates) {
+        for (const token of this._tokenCandidates) {
+            for (const serverId of this._serverIds) {
                 const tempPulls = await this.fetch(token, serverId, callback);
 
                 if (tempPulls === null) {
