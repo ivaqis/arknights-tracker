@@ -22,7 +22,7 @@ export class Import extends StreamController<
     private readonly _database: Database = database;
 
     private readonly _id: string | null;
-    private readonly _token: string;
+    private readonly _tokenCandidates: string[];
     private readonly _serverIds: string[];
     private readonly _lastPullTimes: LastPullsMap;
 
@@ -30,7 +30,7 @@ export class Import extends StreamController<
         super(req, res);
 
         this._id = req.body.id;
-        this._token = decodeURIComponent(req.body.token);
+        this._tokenCandidates = [req.body.token, decodeURIComponent(req.body.token)];
         this._serverIds = req.body.serverIds;
         this._lastPullTimes = Import.getLastPullsMap(req.body.lastPullTimes);
     }
@@ -63,20 +63,23 @@ export class Import extends StreamController<
             });
         };
 
-        const callback2 = (n: number) => {
-            logger.debug(`Callback ${n}`);
-
-            return callback;
-        };
-
         let pulls: BannersPulls | null = null;
-        let n = 0;
         for (const serverId of this._serverIds) {
-            const tempPulls = await this.fetch(serverId, callback2(n));
+            for (const token of this._tokenCandidates) {
+                const tempPulls = await this.fetch(token, serverId, callback);
 
-            pulls = tempPulls; // todo
+                if (tempPulls === null) {
+                    continue;
+                }
 
-            n++;
+                pulls = tempPulls; // todo
+
+                break;
+            }
+
+            if (pulls !== null) {
+                break;
+            }
         }
 
         if (!pulls) {
@@ -98,8 +101,8 @@ export class Import extends StreamController<
         })
     }
 
-    private async fetch(serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls> {
-        const fetcher = new BannerDataFetcher(this._token, serverId, this._lastPullTimes, callbackFn);
+    private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {
+        const fetcher = new BannerDataFetcher(token, serverId, this._lastPullTimes, callbackFn);
 
         return await fetcher.getAllBannersData();
     }

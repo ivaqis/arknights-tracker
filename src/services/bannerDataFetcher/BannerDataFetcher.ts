@@ -32,7 +32,13 @@ export class BannerDataFetcher {
         this._callbackFn = callbackFn;
     }
 
-    public async getAllBannersData(): Promise<BannersPulls> {
+    public async getAllBannersData(): Promise<BannersPulls | null> {
+        const isTokenValid = await this.testToken();
+
+        if (!isTokenValid) {
+            return null;
+        }
+
         const [standardPulls, beginnerPulls, specialPulls, jointPulls, weaponPulls] = await Promise.all([
             this.getCharPulls(BannerType.CHAR_STANDARD),
             this.getCharPulls(BannerType.CHAR_BEGINNER),
@@ -74,6 +80,16 @@ export class BannerDataFetcher {
             token: this._token,
             serverId: this._serverId
         };
+    }
+
+    private async testToken(): Promise<boolean> {
+        const fetcher = new PullsFetcher(
+            BannerDataFetcher.CHAR_API_URL,
+            this.getCharRequestParams(BannerType.CHAR_SPECIAL),
+            0n
+        );
+
+        return await fetcher.test();
     }
 
     private async getCharPulls(bannerType: BannerType): Promise<CharPull[]> {

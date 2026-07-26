@@ -40,7 +40,36 @@ export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
         };
     }
 
-    public async getPullsList() {
+    public async test(): Promise<boolean> {
+        let url = this.getFullUrl();
+        let resp: BannerResponse<T>;
+
+        try {
+            resp = await this.getResponseData(url);
+        } catch (e) {
+            logger.error(`Error while fetching pulls: ${e}`);
+
+            if (e instanceof Error) {
+                logger.error(e.stack);
+            }
+
+            return false;
+        }
+
+        const code = resp.code;
+
+        if (code === 0) {
+            logger.debug(`Token approved ${this._urlParams.serverId} ${this._urlParams.token}`);
+
+            return true;
+        }
+
+        logger.debug(`Token test failed ${this._urlParams.serverId} ${this._urlParams.token}`);
+
+        return false;
+    }
+
+    public async getPullsList(): Promise<{ list: T[]; error: null | string }> {
         const list: T[] = [];
         let errorMsg: string | null = null;
 
