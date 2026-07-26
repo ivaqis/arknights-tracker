@@ -9,9 +9,9 @@ import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
 import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
-import { CharPullEntity } from "@services/bannerDataFetcher/entities/CharPullEntity";
-import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
-import { WeaponPullEntity } from "@services/bannerDataFetcher/entities/WeaponPullEntity";
+import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData";
+import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
 import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
 import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher";
 
@@ -93,7 +93,7 @@ export class BannerDataFetcher {
     }
 
     private async getCharPulls(bannerType: BannerType): Promise<CharPull[]> {
-        const bannerData = await BannerDataFetcher.getBannerData<CharPullEntity, CharBannerRequestParams>(
+        const bannerData = await BannerDataFetcher.getBannerData<CharPullData, CharBannerRequestParams>(
             BannerDataFetcher.CHAR_API_URL,
             this.getCharRequestParams(bannerType),
             this._lastPullsMap[bannerType] ?? 0n,
@@ -110,7 +110,7 @@ export class BannerDataFetcher {
     }
 
     private async getWeaponPulls(): Promise<WeaponPull[]> {
-        const bannerData = await BannerDataFetcher.getBannerData<WeaponPullEntity, WeaponBannerRequestParams>(
+        const bannerData = await BannerDataFetcher.getBannerData<WeaponPullData, WeaponBannerRequestParams>(
             BannerDataFetcher.WEAPON_API_URL,
             this.getWeaponRequestParams(),
             this._lastPullsMap[BannerType.WEAPON] ?? 0n,
@@ -126,7 +126,7 @@ export class BannerDataFetcher {
             .map((entity) => new WeaponPull(entity));
     }
 
-    private static getBannerData<T extends PullEntity, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: bigint, callbackFn?: (count: number) => void) {
+    private static getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: bigint, callbackFn?: (count: number) => void) {
         const fetcher = new PullsFetcher<T, U>(url, urlParams, lastPullTimeMs, callbackFn);
 
         return fetcher.getPullsList();

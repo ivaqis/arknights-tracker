@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { ImportCompleteResponse } from "@api/contracts/import/ImportCompleteResponse";
 import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
@@ -6,6 +5,7 @@ import { ImportRequest } from "@api/contracts/import/ImportRequest";
 import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
 import { BannerType } from "@models/banners/BannerType";
+import { BannersPullsEntity } from "@models/pulls/BannersPullsEntity";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
 import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
@@ -92,13 +92,15 @@ export class Import extends StreamController<
             return;
         }
 
+        const pullsEntity = BannersPullsEntity.createFromBannersPulls(pulls);
+
         this.send({
             type: "complete",
             message: "",
             data: {
-                pulls
+                pulls: pullsEntity
             }
-        })
+        });
     }
 
     private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {

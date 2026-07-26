@@ -3,11 +3,11 @@ import { BannerType } from "@models/banners/BannerType";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
-import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData";
 import { sleep } from "@utils/globalUtils";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
-export class PullsFetcher<T extends PullEntity, U extends BannerRequestParams> {
+export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
     public static readonly INVALID_TOKEN_CODE = 40100;
     public static readonly PAGE_COUNT_LIMIT = 2000;
     public static readonly LAST_PULL_TIME_CUTOFF = 7200000n;

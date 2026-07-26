@@ -1,6 +1,6 @@
-import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData";
 
-export interface BannerResponse<T extends PullEntity> {
+export interface BannerResponse<T extends PullData> {
     code: number,
     data: {
         list: T[],

@@ -1,4 +1,4 @@
-export interface PullEntity {
+export interface PullData {
     "poolId": string,
     "poolName": string,
     "rarity": number,

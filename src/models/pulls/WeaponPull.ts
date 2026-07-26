@@ -1,12 +1,14 @@
+import { IEntityClass } from "@models/IEntityClass";
+import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity";
 import { Pull } from "@models/pulls/Pull";
-import { WeaponPullEntity } from "@services/bannerDataFetcher/entities/WeaponPullEntity";
+import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
 
-export class WeaponPull extends Pull {
+export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
     private readonly _weaponId: string;
     private readonly _weaponName: string;
     private readonly _weaponType: string;
 
-    public constructor(weaponPullEntity: WeaponPullEntity) {
+    public constructor(weaponPullEntity: WeaponPullData) {
         super(weaponPullEntity);
 
         this._weaponId = weaponPullEntity.weaponId;
@@ -24,5 +26,17 @@ export class WeaponPull extends Pull {
 
     public get weaponType(): string {
         return this._weaponType;
+    }
+
+    public getEntity(): WeaponPullEntity {
+        return {
+            weaponId: this._weaponId,
+            weaponType: this._weaponType,
+            rarity: this.rarity,
+            isNew: this.isNew,
+            bannerId: this.bannerId,
+            gachaTs: this.gachaTs,
+            seqId: this.seqId
+        };
     }
 }

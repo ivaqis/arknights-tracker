@@ -1,4 +1,4 @@
-import { PullEntity } from "@services/bannerDataFetcher/entities/PullEntity";
+import { PullData } from "@services/bannerDataFetcher/entities/PullData";
 
 export class Pull {
     private readonly _bannerId: string;
@@ -8,7 +8,7 @@ export class Pull {
     private readonly _gachaTs: string;
     private readonly _seqId: string;
 
-    public constructor(pullEntity: PullEntity) {
+    public constructor(pullEntity: PullData) {
         this._bannerId = pullEntity.poolId;
         this._bannerName = pullEntity.poolName;
         this._rarity = pullEntity.rarity;

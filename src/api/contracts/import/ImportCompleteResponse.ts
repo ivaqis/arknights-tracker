@@ -1,5 +1,5 @@
-import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
+import { BannersPullsEntity } from "@models/pulls/BannersPullsEntity";
 
 export interface ImportCompleteResponse {
-    pulls: BannersPulls;
+    pulls: BannersPullsEntity;
 }
