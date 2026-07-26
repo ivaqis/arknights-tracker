@@ -198,35 +198,6 @@ export class UserMonumentLeaderboardsTable extends Table<Prisma.UserMonumentLead
         return entities.map(UserMonumentLeaderboardRecord.createFromEntity);
     }
 
-    public async findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds: string[]): Promise<{
-        record: UserMonumentLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]> {
-        const entities = await this.table.findMany({
-            where: {
-                userGroupId: {
-                    in: userGroupIds
-                }
-            },
-            include: {
-                userGameProfile: {
-                    include: {
-                        user: true
-                    }
-                }
-            }
-        });
-
-        return entities.map(entity => {
-            return {
-                record: UserMonumentLeaderboardRecord.createFromEntity(entity),
-                gameProfile: UserGameProfileRecord.createFromEntity(entity.userGameProfile),
-                user: new UserRecord(entity.userGameProfile.user)
-            };
-        });
-    }
-
     public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
                                                           publicOnly: boolean,
                                                           serverId: string | null,

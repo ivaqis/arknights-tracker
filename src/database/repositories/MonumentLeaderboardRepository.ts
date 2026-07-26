@@ -56,12 +56,12 @@ export class MonumentLeaderboardRepository extends Repository {
         return this._monumentTable.findByUserGroupId(userGroupId);
     }
 
-    public async findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds: string[]): Promise<{
-        record: UserMonumentLeaderboardRecord,
+    public async findManyGroupsIncludeGameProfileAndUser(userGroupIds: string[]): Promise<{
+        group: UserMonumentGroupRecord,
         gameProfile: UserGameProfileRecord,
         user: UserRecord
     }[]> {
-        return this._monumentTable.findManyByUserGroupIdIncludeGameProfileAndUser(userGroupIds);
+        return this._monumentGroupsTable.findManyIncludeGameProfileAndUser(userGroupIds);
     }
 
     public async findByDungeonIdIncludeGameProfileAndUser(dungeonId: string,
@@ -84,26 +84,6 @@ export class MonumentLeaderboardRepository extends Repository {
 
     public async findManyByUserGroupId(userGroupIds: string[]): Promise<UserMonumentLeaderboardRecord[]> {
         return this._monumentTable.findManyByUserGroupId(userGroupIds);
-    }
-
-    public async findByGroupIdIncludeGameProfileAndUser(groupId: string,
-                                                        isHard: boolean,
-                                                        publicOnly: boolean,
-                                                        serverId: string | null,
-                                                        sortField: MonumentLeaderboardSortField,
-                                                        sortOrder: SortOrder,
-                                                        minCountInGroup: number,
-                                                        filters: MonumentFilters,
-                                                        take: number,
-                                                        skip: number
-    ): Promise<{
-        record: UserMonumentLeaderboardRecord,
-        gameProfile: UserGameProfileRecord,
-        user: UserRecord
-    }[]> {
-        let groups: string[] = await this._monumentGroupsTable.findIdsByGroupId(groupId, isHard, publicOnly, serverId, sortField, sortOrder, minCountInGroup, filters, take, skip);
-
-        return await this.findManyByUserGroupIdIncludeGameProfileAndUser(groups);
     }
 
     public async findUserGroupsByGroupId(groupId: string,

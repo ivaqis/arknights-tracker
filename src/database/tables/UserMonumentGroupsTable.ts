@@ -1,5 +1,7 @@
 import { MonumentFilters } from "@database/MonumentFilters";
+import { UserGameProfileRecord } from "@database/records/UserGameProfileRecord";
 import { UserMonumentGroupRecord } from "@database/records/UserMonumentGroupRecord";
+import { UserRecord } from "@database/records/UserRecord";
 import { Table } from "@database/tables/Table";
 import { MonumentLeaderboardSortField } from "@models/monumentLeaderboard/MonumentLeaderboardSortField";
 import { SortOrder } from "@models/SortOrder";
@@ -35,6 +37,35 @@ export class UserMonumentGroupsTable extends Table<Prisma.UserMonumentGroupDeleg
         });
 
         return entities.map(entity => new UserMonumentGroupRecord(entity));
+    }
+
+    public async findManyIncludeGameProfileAndUser(ids: string[]): Promise<{
+        group: UserMonumentGroupRecord,
+        gameProfile: UserGameProfileRecord,
+        user: UserRecord
+    }[]> {
+        const entities = await this.table.findMany({
+            where: {
+                id: {
+                    in: ids
+                }
+            },
+            include: {
+                userGameProfile: {
+                    include: {
+                        user: true
+                    }
+                }
+            }
+        });
+
+        return entities.map(e => {
+            return {
+                group: new UserMonumentGroupRecord(e),
+                gameProfile: UserGameProfileRecord.createFromEntity(e.userGameProfile),
+                user: new UserRecord(e.userGameProfile.user)
+            };
+        });
     }
 
     public async findManyByGroupId(groupId: string, isHard?: boolean, gameUid?: string): Promise<UserMonumentGroupRecord[]> {

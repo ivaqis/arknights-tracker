@@ -45,17 +45,9 @@ export class MonumentLeaderboardSearcher {
         const minCount = MonumentLeaderboardSearcher.getMinCount(groupId, isHard);
 
         const groupIds = await this._database.monumentLeaderboard.findUserGroupsByGroupId(groupId, isHard, true, serverId, sortField, sortOrder, minCount, monumentFilters, take, skip);
-        const groups = await this._database.monumentLeaderboard.findManyUserGroups(groupIds);
+        const records = await this._database.monumentLeaderboard.findManyGroupsIncludeGameProfileAndUser(groupIds);
+
         const runs = await this._database.monumentLeaderboard.findManyByUserGroupId(groupIds);
-
-        const gameUids = groups.map(group => group.gameUid);
-        const gameProfiles = await this._database.gameProfiles.findMany(gameUids);
-
-        const uids = gameProfiles.map(g => g.uid);
-        const users = await this._database.users.findManyUsers(uids);
-
-        const usersMap = MonumentLeaderboardSearcher.createMap(users, user => user.uid);
-        const gameProfilesMap = MonumentLeaderboardSearcher.createMap(gameProfiles, profile => profile.gameUid);
 
         const groupedRuns = MonumentLeaderboardSearcher.createListMap<UserMonumentLeaderboardRecord, string>(groupIds);
         for (const run of runs) {
@@ -68,31 +60,29 @@ export class MonumentLeaderboardSearcher {
             list.push(run);
         }
 
-        return groups.map(group => {
-            const gameProfile = gameProfilesMap.get(group.gameUid);
+        return records.map(r => {
+            const groupRuns = groupedRuns.get(r.group.id);
 
-            if (!gameProfile) {
-                throw new Error(`No gameProfile for group:\ngameUid: ${group.gameUid}\ngroupId: ${group.groupId}\nisHard: ${group.isHard}\nid: ${group.id}`);
+            if (!groupRuns) {
+                throw new Error(`No runs for group: ${r.group.id} (${r.group.groupId} ${r.group.isHard} ${r.group.gameUid})`);
             }
 
-            const profile = usersMap.get(gameProfile.uid);
+            const profile = {
+                uid: r.user.publicUid.initValue,
+                avatarId: r.user.avatarId.initValue
+            };
 
-            if (!profile) {
-                throw new Error(`No profile for gameProfile:\ngameUid: ${group.gameUid}\ngroupId: ${group.groupId}\nisHard: ${group.isHard}\nid: ${group.id}`);
-            }
-
-            const records = groupedRuns.get(group.id);
-
-            if (!records) {
-                throw new Error(`No records for group:\ngameUid: ${group.gameUid}\ngroupId: ${group.groupId}\nisHard: ${group.isHard}\nid: ${group.id}`)
-            }
+            const gameProfile = {
+                level: r.gameProfile.level.initValue,
+                serverId: r.gameProfile.serverId
+            };
 
             return MonumentLeaderboardGroupRecord.createFromRecord(
-                { uid: profile.publicUid.initValue, avatarId: profile.avatarId.initValue },
-                { level: gameProfile.level.initValue, serverId: gameProfile.serverId },
-                records
+                profile,
+                gameProfile,
+                groupRuns
             );
-        })
+        });
     }
 
     public async findPublicRuns(dungeonId: string, serverId: string | null, sortField: MonumentLeaderboardSortField, sortOrder: SortOrder, monumentFilters: MonumentFilters, take?: number, skip?: number): Promise<MonumentLeaderboardRecord[]> {
