@@ -770,10 +770,10 @@
         </div>
 
         <div class="grid grid-cols-2 gap-4">
-          <div class="flex flex-col gap-1">
-            <div class="flex items-center gap-1.5 flex-wrap">
+          <div class="flex flex-col gap-1 items-center md:items-left justify-between">
+            <div class="flex items-center justify-center gap-1.5 flex-wrap">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.currentWeek") || "Текущая неделя"}
+                {$t("home.currentWeek") || "Current Week"}
               </span>
               <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
                 {getWeeklyResetCountdown(now)}
@@ -782,7 +782,7 @@
             <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
               ({formatWeekLabel(currentWeekConfig, $currentUiLocale)})
             </span>
-            <div class="flex gap-2.5 flex-wrap mt-2">
+            <div class="flex gap-2.5 justify-center md:justify-left flex-wrap mt-2">
               {#if currentWeekly6}
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                   <WeaponCard weapon={currentWeekly6} variant="small" isEquipment={false} />
@@ -804,14 +804,16 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-1">
-            <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-              {$t("home.nextWeek") || "Следующая неделя"}
-            </span>
-            <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
-              ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
-            </span>
-            <div class="flex gap-2.5 flex-wrap mt-2">
+          <div class="flex flex-col gap-1 items-center md:items-left justify-between">
+            <div class="flex flex-col gap-1 items-center">
+              <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
+                {$t("home.nextWeek") || "Next Week"}
+              </span>
+              <span class="text-[9px] text-gray-400 dark:text-[#9CA3AF] font-medium font-nums leading-none select-none mt-1">
+                ({formatWeekLabel(nextWeekConfig, $currentUiLocale)})
+              </span>
+            </div>
+            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
               {#if nextWeekly6}
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                   <WeaponCard weapon={nextWeekly6} variant="small" isEquipment={false} />
@@ -835,16 +837,16 @@
         </div>
 
         <div class="grid grid-cols-2 gap-4 pt-3 border-t border-gray-100 dark:border-[#444444]/40">
-          <div class="flex flex-col gap-1">
-            <div class="flex items-center gap-1.5 flex-wrap">
+          <div class="flex flex-col gap-1 items-center md:items-left justify-between">
+            <div class="flex items-center justify-center gap-1.5 flex-wrap">
               <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-                {$t("home.today") || "Сегодня"}
+                {$t("home.today") || "Today"}
               </span>
               <span class="px-1.5 py-0.5 rounded text-[9px] font-bold font-nums bg-[#05D774]/15 text-[#05D774] border border-[#05D774]/10 select-none inline-block leading-none">
                 {getDailyResetCountdown(now)}
               </span>
             </div>
-            <div class="flex gap-2.5 flex-wrap mt-2">
+            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
               {#each todayWeapons as wpn}
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                   <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
@@ -857,11 +859,11 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-1">
+          <div class="flex flex-col gap-1 items-center md:items-left justify-between">
             <span class="text-xs font-bold text-gray-800 dark:text-gray-100 select-none leading-none">
-              {$t("home.tomorrow") || "Завтра"}
+              {$t("home.tomorrow") || "Tomorrow"}
             </span>
-            <div class="flex gap-2.5 flex-wrap mt-2">
+            <div class="flex gap-2.5 flex-wrap justify-center md:justify-left mt-2">
               {#each tomorrowWeapons as wpn}
                 <div class="flex flex-col items-center gap-1.5 shrink-0">
                   <WeaponCard weapon={wpn} variant="small" isEquipment={false} />
