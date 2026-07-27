@@ -5,7 +5,7 @@ import { WeaponPull } from "@models/pulls/WeaponPull";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams";
-import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
+import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
 import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
@@ -31,7 +31,7 @@ export class BannerDataFetcher {
         this._callbackFn = callbackFn;
     }
 
-    public async getAllBannersData(): Promise<BannersPulls | null> {
+    public async getAllBannersData(): Promise<BannersPullsData | null> {
         const isTokenValid = await this.testToken();
 
         if (!isTokenValid) {

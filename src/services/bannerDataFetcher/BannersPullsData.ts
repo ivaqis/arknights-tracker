@@ -2,7 +2,7 @@ import { BannerType } from "@models/banners/BannerType";
 import { CharPull } from "@models/pulls/CharPull";
 import { WeaponPull } from "@models/pulls/WeaponPull";
 
-export interface BannersPulls {
+export interface BannersPullsData {
     [BannerType.CHAR_STANDARD]: CharPull[],
     [BannerType.CHAR_BEGINNER]: CharPull[],
     [BannerType.CHAR_SPECIAL]: CharPull[],

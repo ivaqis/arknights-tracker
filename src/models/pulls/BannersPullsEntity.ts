@@ -1,7 +1,7 @@
 import { BannerType } from "@models/banners/BannerType";
 import { CharPullEntity } from "@models/pulls/entities/CharPullEntity";
 import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity";
-import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
+import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 
 export interface BannersPullsEntity {
     [BannerType.CHAR_STANDARD]: CharPullEntity[],
@@ -12,7 +12,7 @@ export interface BannersPullsEntity {
 }
 
 export namespace BannersPullsEntity {
-    export function createFromBannersPulls(pulls: BannersPulls): BannersPullsEntity {
+    export function createFromBannersPulls(pulls: BannersPullsData): BannersPullsEntity {
         return {
             [BannerType.CHAR_STANDARD]: pulls[BannerType.CHAR_STANDARD].map(p => p.getEntity()),
             [BannerType.CHAR_BEGINNER]: pulls[BannerType.CHAR_BEGINNER].map(p => p.getEntity()),

@@ -7,7 +7,7 @@ import { Database } from "@database/Database";
 import { BannerType } from "@models/banners/BannerType";
 import { BannersPullsEntity } from "@models/pulls/BannersPullsEntity";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
-import { BannersPulls } from "@services/bannerDataFetcher/BannersPulls";
+import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
 import e from "express";
 
@@ -63,7 +63,7 @@ export class Import extends StreamController<
             });
         };
 
-        let pulls: BannersPulls | null = null;
+        let pulls: BannersPullsData | null = null;
         for (const token of this._tokenCandidates) {
             for (const serverId of this._serverIds) {
                 const tempPulls = await this.fetch(token, serverId, callback);
@@ -103,7 +103,7 @@ export class Import extends StreamController<
         });
     }
 
-    private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {
+    private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPullsData | null> {
         const fetcher = new BannerDataFetcher(token, serverId, this._lastPullTs, callbackFn);
 
         return await fetcher.getAllBannersData();
