@@ -13,7 +13,7 @@ import e from "express";
 
 export class Import extends StreamController<
     {},
-    ImportProgressResponse | ImportCompleteResponse, // todo
+    ImportProgressResponse | ImportCompleteResponse,
     ImportRequest,
     {}
 > {
@@ -24,7 +24,7 @@ export class Import extends StreamController<
     private readonly _id: string | null;
     private readonly _tokenCandidates: string[];
     private readonly _serverIds: string[];
-    private readonly _lastPullTimes: LastPullsMap;
+    private readonly _lastPullTs: number;
 
     public constructor(req: e.Request<{}, {}, ImportRequest, {}>, res: e.Response<{}>) {
         super(req, res);
@@ -32,7 +32,7 @@ export class Import extends StreamController<
         this._id = req.body.id;
         this._tokenCandidates = [decodeURIComponent(req.body.token), req.body.token];
         this._serverIds = req.body.serverIds;
-        this._lastPullTimes = Import.getLastPullsMap(req.body.lastPullTimes);
+        this._lastPullTs = req.body.lastPullTs;
     }
 
     public static async post(req: e.Request<{}, {}, ImportRequest, {}>, res: e.Response<{}>): Promise<void> {
@@ -72,7 +72,7 @@ export class Import extends StreamController<
                     continue;
                 }
 
-                pulls = tempPulls; // todo
+                pulls = tempPulls;
 
                 break;
             }
@@ -104,7 +104,7 @@ export class Import extends StreamController<
     }
 
     private async fetch(token: string, serverId: string, callbackFn: (type: BannerType, count: number) => void): Promise<BannersPulls | null> {
-        const fetcher = new BannerDataFetcher(token, serverId, this._lastPullTimes, callbackFn);
+        const fetcher = new BannerDataFetcher(token, serverId, this._lastPullTs, callbackFn);
 
         return await fetcher.getAllBannersData();
     }

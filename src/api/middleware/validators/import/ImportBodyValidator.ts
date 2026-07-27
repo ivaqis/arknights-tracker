@@ -17,7 +17,7 @@ export class ImportBodyValidator extends Validator<ImportRequest> {
             this.getIdRule(),
             this.getTokenRule(),
             this.getServerIdsRule(),
-            this.getLastPullTimesRule()
+            this.getLastPullTsRule()
         ];
     }
 
@@ -49,14 +49,10 @@ export class ImportBodyValidator extends Validator<ImportRequest> {
         );
     }
 
-    private static getLastPullTimesRule(): ValidationRule<ImportRequest> {
+    private static getLastPullTsRule(): ValidationRule<ImportRequest> {
         return new ValidationRule(
-            item => typeof item.lastPullTimes === "object"
-                && item.lastPullTimes !== null
-                && !Array.isArray(item.lastPullTimes)
-                && Object.keys(item.lastPullTimes).every(i => typeof i === "string" && BannerType.isBannerType(i))
-                && Object.values(item.lastPullTimes).every(i => typeof i === "string" && this.NUMBER_REGEX.test(i)),
-            "lastPullTimes must be a Partial<Record<BannerType, string of digits>>"
+            item => typeof item.lastPullTs === "number" && item.lastPullTs >= 0,
+            "lastPullTs must be a number >= 0"
         );
     }
 }

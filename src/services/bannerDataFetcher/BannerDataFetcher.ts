@@ -12,7 +12,6 @@ import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/Wea
 import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
 import { PullData } from "@services/bannerDataFetcher/entities/PullData";
 import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
-import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
 import { PullsFetcher } from "@services/bannerDataFetcher/PullsFetcher";
 
 export class BannerDataFetcher {
@@ -22,13 +21,13 @@ export class BannerDataFetcher {
 
     private readonly _token: string;
     private readonly _serverId: string;
-    private readonly _lastPullsMap: LastPullsMap;
+    private readonly _lastPullTs: number;
     private readonly _callbackFn?: (type: BannerType, count: number) => void;
 
-    public constructor(token: string, serverId: string, lastPullsMap: LastPullsMap, callbackFn?: (type: BannerType, count: number) => void) {
+    public constructor(token: string, serverId: string, lastPullTs: number, callbackFn?: (type: BannerType, count: number) => void) {
         this._token = token;
         this._serverId = serverId;
-        this._lastPullsMap = lastPullsMap;
+        this._lastPullTs = lastPullTs;
         this._callbackFn = callbackFn;
     }
 
@@ -96,7 +95,7 @@ export class BannerDataFetcher {
         const bannerData = await BannerDataFetcher.getBannerData<CharPullData, CharBannerRequestParams>(
             BannerDataFetcher.CHAR_API_URL,
             this.getCharRequestParams(bannerType),
-            this._lastPullsMap[bannerType] ?? 0n,
+            BigInt(this._lastPullTs),
             (count) => this._callbackFn?.(bannerType, count)
         );
 
@@ -113,7 +112,7 @@ export class BannerDataFetcher {
         const bannerData = await BannerDataFetcher.getBannerData<WeaponPullData, WeaponBannerRequestParams>(
             BannerDataFetcher.WEAPON_API_URL,
             this.getWeaponRequestParams(),
-            this._lastPullsMap[BannerType.WEAPON] ?? 0n,
+            BigInt(this._lastPullTs),
             (count) => this._callbackFn?.(BannerType.WEAPON, count)
         );
 
