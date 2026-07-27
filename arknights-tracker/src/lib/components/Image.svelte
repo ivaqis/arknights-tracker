@@ -13,26 +13,58 @@
     export let interactive = false;
 
     $: rawId = id || (item?.icon) || (item?.id) || (item?.name);
-    $: src = getImagePath(rawId, variant);
+    $: initialSrc = getImagePath(rawId, variant);
 
+    const FALLBACK_EXTS = ['.webp', '.png', '.jpg', '.jpeg', '.gif'];
+
+    function getCandidates(url) {
+        if (!url || url.startsWith("data:") || url.startsWith("http://") || url.startsWith("https://")) {
+            return [url];
+        }
+        const lastDot = url.lastIndexOf('.');
+        if (lastDot === -1) return [url];
+
+        const base = url.substring(0, lastDot);
+        const currentExt = url.substring(lastDot).toLowerCase();
+
+        const list = [url];
+        for (const ext of FALLBACK_EXTS) {
+            if (ext !== currentExt) {
+                list.push(base + ext);
+            }
+        }
+        return list;
+    }
+
+    let candidates = [];
+    let candidateIndex = 0;
+    let currentSrc = "";
     let hasError = false;
     let isVisible = false;
 
     $: {
-        src;
+        candidates = getCandidates(initialSrc);
+        candidateIndex = 0;
+        currentSrc = candidates[0] || "";
         hasError = false;
         isVisible = false;
     }
 
-    function imageHandler(node, currentSrc) {
+    function imageHandler(node) {
         function handleLoad() {
             isVisible = true;
             hasError = false;
         }
 
         function handleErr() {
-            isVisible = true;
-            hasError = true;
+            if (candidateIndex < candidates.length - 1) {
+                candidateIndex += 1;
+                currentSrc = candidates[candidateIndex];
+                node.src = currentSrc;
+            } else {
+                isVisible = true;
+                hasError = true;
+            }
         }
 
         node.addEventListener('load', handleLoad);
@@ -43,12 +75,6 @@
         }
 
         return {
-            update(newSrc) {
-                if (newSrc !== currentSrc) {
-                    isVisible = false;
-                    hasError = false;
-                }
-            },
             destroy() {
                 node.removeEventListener('load', handleLoad);
                 node.removeEventListener('error', handleErr);
@@ -75,8 +101,8 @@
     </div>
 {:else}
     <img
-        {src}
-        use:imageHandler={src}
+        src={currentSrc}
+        use:imageHandler
         alt={alt || rawId}
         loading="lazy"
         decoding="async"

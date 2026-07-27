@@ -19,6 +19,8 @@ const apiIdToCharId = Object.values(characters || {}).reduce((acc, char) => {
 const CURRENCY_IDS = new Set(extractIds(currencies));
 const PROGRESSION_IDS = new Set(extractIds(progression));
 
+const IMAGE_EXT_REGEX = /\.(png|jpg|jpeg|webp|gif|svg)$/i;
+
 export function normalizeId(str) {
     if (!str) return "";
     if (str.toString().startsWith("http")) return str;
@@ -34,9 +36,7 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
     if (idOrName.toString().startsWith("http")) return idOrName;
 
     const name = normalizeId(idOrName);
-    const withExt = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.png`;
-
-    const withWebp = (n) => /\.(png|jpg|jpeg|webp|gif)$/i.test(n) ? n : `${n}.webp`;
+    const withExt = (n, defaultExt = 'png') => IMAGE_EXT_REGEX.test(n) ? n : `${n}.${defaultExt}`;
 
     switch (variant) {
         case 'operator-splash':
@@ -69,10 +69,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/banners/icon/${withExt(name)}`;
 
         case 'banner-mini':
-            return `/images/banners/miniIcon/${withExt(name)}`;
+            return `/images/banners/miniIcon/${withExt(name, 'webp')}`;
 
         case 'event-icon':
-            return `/images/events/icon/${withExt(name)}`; 
+            return `/images/events/icon/${withExt(name, 'webp')}`; 
 
         case 'skill-icon':
             return `/images/operators/skills/${withExt(name)}`;
@@ -108,10 +108,10 @@ export function getImagePath(idOrName, variant = 'operator-icon') {
             return `/images/crisisContract/tags/icon_${withExt(name)}`;
 
         case 'essence-icon':
-            return `/images/essences/${withWebp(name)}`;
+            return `/images/essences/${withExt(name, 'webp')}`;
 
         case 'essence-type-icon':
-            return `/images/essencesTypes/${withWebp(name)}`;
+            return `/images/essencesTypes/${withExt(name, 'webp')}`;
 
         case 'operator-icon':
         default:
