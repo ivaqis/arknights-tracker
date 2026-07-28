@@ -3,6 +3,7 @@ import { IEntityClass } from "@models/IEntityClass";
 import { CharPull } from "@models/pulls/CharPull";
 import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
 import { WeaponPull } from "@models/pulls/WeaponPull";
+import { StablePullPeriod } from "@models/stablePullId/StablePullPeriod";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 
 export class BannersPulls implements IEntityClass<BannersPullsEntity> {
@@ -37,6 +38,16 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             entity[BannerType.CHAR_STANDARD].map(CharPull.createFromEntity),
             entity[BannerType.CHAR_BEGINNER].map(CharPull.createFromEntity),
             entity[BannerType.WEAPON].map(WeaponPull.createFromEntity)
+        );
+    }
+
+    public getStablePullPeriods(): StablePullPeriod[] {
+        return StablePullPeriod.create(
+            this._specialPulls,
+            this._jointPulls,
+            this._standardPulls,
+            this._beginnerPulls,
+            this._weaponPulls
         );
     }
 

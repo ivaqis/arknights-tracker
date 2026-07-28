@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { Pull } from "@models/pulls/Pull";
 import { createHash } from "node:crypto";
 
@@ -10,6 +11,8 @@ export class StablePullId {
     private constructor(id: string, period: number) {
         this._id = id;
         this._period = period;
+
+        logger.debug(`[StablePullId] Created id: period: ${period} id: ${id}`);
     }
 
     public static create(periodNumber: number, pulls: Pull[]): StablePullId {

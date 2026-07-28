@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { ImportCompleteResponse } from "@api/contracts/import/ImportCompleteResponse";
 import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
@@ -94,6 +95,14 @@ export class Import extends StreamController<
         }
 
         const pulls = BannersPulls.createFromData(pullsData);
+
+        const periods = pulls.getStablePullPeriods();
+
+        const ids = periods
+            .map(p => p.getId()?.id)
+            .filter(i => i !== undefined);
+
+        // logger.debug(JSON.stringify(ids, null, 2));
 
         const pullsEntity = pulls.getEntity();
 

@@ -1,5 +1,7 @@
 import { BannerType } from "@models/banners/BannerType";
+import { IEntityClass } from "@models/IEntityClass";
 import { CharPull } from "@models/pulls/CharPull";
+import { PullEntity } from "@models/pulls/entities/PullEntity";
 import { Pull } from "@models/pulls/Pull";
 import { WeaponPull } from "@models/pulls/WeaponPull";
 import { GroupedPullsByDate } from "@models/stablePullId/GroupedPullsByDate";
