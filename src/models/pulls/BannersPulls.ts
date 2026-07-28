@@ -2,7 +2,6 @@ import { BannerType } from "@models/banners/BannerType";
 import { IEntityClass } from "@models/IEntityClass";
 import { CharPull } from "@models/pulls/CharPull";
 import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
-import { Pull } from "@models/pulls/Pull";
 import { WeaponPull } from "@models/pulls/WeaponPull";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 
