@@ -5,6 +5,7 @@ import { WeaponPull } from "@models/pulls/WeaponPull";
 import { GroupedPullsByDate } from "@models/stablePullId/GroupedPullsByDate";
 import { GroupedPullsByPeriod } from "@models/stablePullId/GroupedPullsByPeriod";
 import { PeriodPulls } from "@models/stablePullId/PeriodPulls";
+import { StablePullId } from "@models/stablePullId/StablePullId";
 import { getDayOfWeekStartsWithMonday, getWeek } from "@utils/dateUtils";
 
 export class StablePullPeriod {
@@ -53,6 +54,10 @@ export class StablePullPeriod {
         result.sort((a, b) => b._periodNumber - a._periodNumber);
 
         return result;
+    }
+
+    public static getCurrentPeriodNumber(): number {
+        return getWeek(Date.now());
     }
 
     private static groupByDate<T extends Pull>(pulls: T[]): Map<Date, T[]> {
@@ -114,5 +119,31 @@ export class StablePullPeriod {
         }
 
         return map;
+    }
+
+    private static getFirstDayWithPulls<T extends Pull>(periodPulls: PeriodPulls<T>): T[] | null {
+        for (let i = 6; i >= 0; i--) {
+            const pulls = periodPulls[i as keyof PeriodPulls<T>];
+
+            if (pulls.length > 0) {
+                return pulls;
+            }
+        }
+
+        return null;
+    }
+
+    public getId(): StablePullId | null {
+        const pulls = StablePullPeriod.getFirstDayWithPulls(this._specialPulls)
+            ?? StablePullPeriod.getFirstDayWithPulls(this._weaponPulls)
+            ?? StablePullPeriod.getFirstDayWithPulls(this._jointPulls)
+            ?? StablePullPeriod.getFirstDayWithPulls(this._standardPulls)
+            ?? StablePullPeriod.getFirstDayWithPulls(this._beginnerPulls);
+
+        if (!pulls) {
+            return null;
+        }
+
+        return StablePullId.create(this._periodNumber, pulls);
     }
 }
