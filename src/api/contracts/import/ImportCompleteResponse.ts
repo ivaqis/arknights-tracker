@@ -1,4 +1,4 @@
-import { BannersPullsEntity } from "@models/pulls/BannersPullsEntity";
+import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
 
 export interface ImportCompleteResponse {
     pulls: BannersPullsEntity;

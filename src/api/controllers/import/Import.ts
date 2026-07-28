@@ -5,7 +5,7 @@ import { ImportRequest } from "@api/contracts/import/ImportRequest";
 import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
 import { BannerType } from "@models/banners/BannerType";
-import { BannersPullsEntity } from "@models/pulls/BannersPullsEntity";
+import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
