@@ -1,4 +1,3 @@
-import { logger } from "@/logger";
 import { database } from "@/serviceInstances";
 import { ImportCompleteResponse } from "@api/contracts/import/ImportCompleteResponse";
 import { ImportProgressResponse } from "@api/contracts/import/ImportProgressResponse";
@@ -6,8 +5,8 @@ import { ImportRequest } from "@api/contracts/import/ImportRequest";
 import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
 import { BannerType } from "@models/banners/BannerType";
+import { BannerTokenId } from "@models/bannerTokenId/BannerTokenId";
 import { BannersPulls } from "@models/pulls/BannersPulls";
-import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 import { LastPullsMap } from "@services/bannerDataFetcher/LastPullsMap";
@@ -66,15 +65,17 @@ export class Import extends StreamController<
         };
 
         let pullsData: BannersPullsData | null = null;
-        for (const token of this._tokenCandidates) {
+        let token: string | null = null;
+        for (const tokenCandidate of this._tokenCandidates) {
             for (const serverId of this._serverIds) {
-                const tempPulls = await this.fetch(token, serverId, callback);
+                const tempPulls = await this.fetch(tokenCandidate, serverId, callback);
 
                 if (tempPulls === null) {
                     continue;
                 }
 
                 pullsData = tempPulls;
+                token = tokenCandidate;
 
                 break;
             }
@@ -84,7 +85,7 @@ export class Import extends StreamController<
             }
         }
 
-        if (!pullsData) {
+        if (!pullsData || !token) {
             this.send({
                 type: "error",
                 message: "Invalid token",
@@ -101,6 +102,8 @@ export class Import extends StreamController<
         const ids = periods
             .map(p => p.getId()?.id)
             .filter(i => i !== undefined);
+
+        const tokenId = BannerTokenId.create(token);
 
         // logger.debug(JSON.stringify(ids, null, 2));
 
