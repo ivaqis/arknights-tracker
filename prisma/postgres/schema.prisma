@@ -152,20 +152,18 @@ model UserBannerProfile {
 }
 
 model BannerTokenId {
-    id         String   @id
-    profileId  BigInt
-    createdAt  DateTime @default(now())
-    lastUsedAt DateTime @default(now())
+    id        String   @id
+    profileId BigInt
+    createdAt DateTime @default(now())
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 }
 
 model BannerPullsId {
-    id         String   @id
-    period     Int
-    profileId  BigInt
-    createdAt  DateTime @default(now())
-    lastUsedAt DateTime @default(now())
+    id        String   @id
+    period    Int
+    profileId BigInt
+    createdAt DateTime @default(now())
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 }
