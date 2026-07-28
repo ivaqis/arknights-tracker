@@ -1,28 +1,20 @@
-import { PullData } from "@services/bannerDataFetcher/entities/PullData";
-
-export class Pull {
+export abstract class Pull {
     private readonly _bannerId: string;
-    private readonly _bannerName: string;
     private readonly _rarity: number;
     private readonly _isNew: boolean;
     private readonly _gachaTs: string;
     private readonly _seqId: string;
 
-    public constructor(pullEntity: PullData) {
-        this._bannerId = pullEntity.poolId;
-        this._bannerName = pullEntity.poolName;
-        this._rarity = pullEntity.rarity;
-        this._isNew = pullEntity.isNew;
-        this._gachaTs = pullEntity.gachaTs;
-        this._seqId = pullEntity.seqId;
+    protected constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string) {
+        this._bannerId = poolId;
+        this._rarity = rarity;
+        this._isNew = isNew;
+        this._gachaTs = gachaTs;
+        this._seqId = seqId;
     }
 
     public get bannerId(): string {
         return this._bannerId;
-    }
-
-    public get bannerName(): string {
-        return this._bannerName;
     }
 
     public get rarity(): number {

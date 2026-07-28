@@ -1,7 +1,5 @@
 import { logger } from "@/logger";
 import { BannerType } from "@models/banners/BannerType";
-import { CharPull } from "@models/pulls/CharPull";
-import { WeaponPull } from "@models/pulls/WeaponPull";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams";
@@ -91,7 +89,7 @@ export class BannerDataFetcher {
         return await fetcher.test();
     }
 
-    private async getCharPulls(bannerType: BannerType): Promise<CharPull[]> {
+    private async getCharPulls(bannerType: BannerType): Promise<CharPullData[]> {
         const bannerData = await BannerDataFetcher.getBannerData<CharPullData, CharBannerRequestParams>(
             BannerDataFetcher.CHAR_API_URL,
             this.getCharRequestParams(bannerType),
@@ -104,11 +102,10 @@ export class BannerDataFetcher {
             return [];
         }
 
-        return bannerData.list
-            .map((entity) => new CharPull(entity));
+        return bannerData.list;
     }
 
-    private async getWeaponPulls(): Promise<WeaponPull[]> {
+    private async getWeaponPulls(): Promise<WeaponPullData[]> {
         const bannerData = await BannerDataFetcher.getBannerData<WeaponPullData, WeaponBannerRequestParams>(
             BannerDataFetcher.WEAPON_API_URL,
             this.getWeaponRequestParams(),
@@ -121,8 +118,7 @@ export class BannerDataFetcher {
             return [];
         }
 
-        return bannerData.list
-            .map((entity) => new WeaponPull(entity));
+        return bannerData.list;
     }
 
     private static getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: bigint, callbackFn?: (count: number) => void) {

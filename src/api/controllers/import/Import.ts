@@ -5,6 +5,7 @@ import { ImportRequest } from "@api/contracts/import/ImportRequest";
 import { StreamController } from "@api/controllers/StreamController";
 import { Database } from "@database/Database";
 import { BannerType } from "@models/banners/BannerType";
+import { BannersPulls } from "@models/pulls/BannersPulls";
 import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
 import { BannerDataFetcher } from "@services/bannerDataFetcher/BannerDataFetcher";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
@@ -63,7 +64,7 @@ export class Import extends StreamController<
             });
         };
 
-        let pulls: BannersPullsData | null = null;
+        let pullsData: BannersPullsData | null = null;
         for (const token of this._tokenCandidates) {
             for (const serverId of this._serverIds) {
                 const tempPulls = await this.fetch(token, serverId, callback);
@@ -72,17 +73,17 @@ export class Import extends StreamController<
                     continue;
                 }
 
-                pulls = tempPulls;
+                pullsData = tempPulls;
 
                 break;
             }
 
-            if (pulls !== null) {
+            if (pullsData !== null) {
                 break;
             }
         }
 
-        if (!pulls) {
+        if (!pullsData) {
             this.send({
                 type: "error",
                 message: "Invalid token",
@@ -92,7 +93,9 @@ export class Import extends StreamController<
             return;
         }
 
-        const pullsEntity = BannersPullsEntity.createFromBannersPulls(pulls);
+        const pulls = BannersPulls.createFromData(pullsData);
+
+        const pullsEntity = pulls.getEntity();
 
         this.send({
             type: "complete",

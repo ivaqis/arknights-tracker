@@ -8,12 +8,37 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
     private readonly _weaponName: string;
     private readonly _weaponType: string;
 
-    public constructor(weaponPullEntity: WeaponPullData) {
-        super(weaponPullEntity);
+    private constructor(poolId: string, rarity: number, isNew: boolean, gachaTs: string, seqId: string, weaponId: string, weaponName: string, weaponType: string) {
+        super(poolId, rarity, isNew, gachaTs, seqId);
+        this._weaponId = weaponId;
+        this._weaponName = weaponName;
+        this._weaponType = weaponType;
+    }
 
-        this._weaponId = weaponPullEntity.weaponId;
-        this._weaponName = weaponPullEntity.weaponName;
-        this._weaponType = weaponPullEntity.weaponType;
+    public static createFromData(data: WeaponPullData): WeaponPull {
+        return new WeaponPull(
+            data.poolId,
+            data.rarity,
+            data.isNew,
+            data.gachaTs,
+            data.seqId,
+            data.weaponId,
+            data.weaponName,
+            data.weaponType
+        );
+    }
+
+    public static createFromEntity(entity: WeaponPullEntity): WeaponPull {
+        return new WeaponPull(
+            entity.bannerId,
+            entity.rarity,
+            entity.isNew,
+            entity.gachaTs,
+            entity.seqId,
+            entity.weaponId,
+            entity.weaponName,
+            entity.weaponType
+        );
     }
 
     public get weaponId(): string {
@@ -31,6 +56,7 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
     public getEntity(): WeaponPullEntity {
         return {
             weaponId: this._weaponId,
+            weaponName: this._weaponName,
             weaponType: this._weaponType,
             rarity: this.rarity,
             isNew: this.isNew,
