@@ -1,3 +1,5 @@
+import { StablePull } from "@models/stablePullId/StablePull";
+
 export abstract class Pull {
     private readonly _bannerId: string;
     private readonly _rarity: number;
@@ -56,4 +58,6 @@ export abstract class Pull {
             return 0;
         }
     }
+
+    public abstract getStablePull(): StablePull;
 }

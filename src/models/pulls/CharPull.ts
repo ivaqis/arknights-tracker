@@ -1,6 +1,7 @@
 import { IEntityClass } from "@models/IEntityClass";
 import { CharPullEntity } from "@models/pulls/entities/CharPullEntity";
 import { Pull } from "@models/pulls/Pull";
+import { StablePull } from "@models/stablePullId/StablePull";
 import { CharPullData } from "@services/bannerDataFetcher/entities/CharPullData";
 
 export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
@@ -64,5 +65,17 @@ export class CharPull extends Pull implements IEntityClass<CharPullEntity> {
             gachaTs: this.gachaTs,
             seqId: this.seqId
         };
+    }
+
+    public getStablePull(): StablePull {
+        return new StablePull(
+            this._charId,
+            this._isFree,
+            this.bannerId,
+            this.rarity,
+            this.isNew,
+            this.gachaTs,
+            this.seqId
+        );
     }
 }

@@ -1,6 +1,7 @@
 import { IEntityClass } from "@models/IEntityClass";
 import { WeaponPullEntity } from "@models/pulls/entities/WeaponPullEntity";
 import { Pull } from "@models/pulls/Pull";
+import { StablePull } from "@models/stablePullId/StablePull";
 import { WeaponPullData } from "@services/bannerDataFetcher/entities/WeaponPullData";
 
 export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
@@ -64,5 +65,17 @@ export class WeaponPull extends Pull implements IEntityClass<WeaponPullEntity> {
             gachaTs: this.gachaTs,
             seqId: this.seqId
         };
+    }
+
+    public getStablePull(): StablePull {
+        return new StablePull(
+            this.weaponId,
+            false,
+            this.bannerId,
+            this.rarity,
+            this.isNew,
+            this.gachaTs,
+            this.seqId
+        );
     }
 }

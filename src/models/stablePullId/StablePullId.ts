@@ -1,5 +1,6 @@
 import { logger } from "@/logger";
 import { Pull } from "@models/pulls/Pull";
+import { StablePull } from "@models/stablePullId/StablePull";
 import { createHash } from "node:crypto";
 
 export class StablePullId {
@@ -17,12 +18,12 @@ export class StablePullId {
 
     public static create(periodNumber: number, pulls: Pull[]): StablePullId {
         return new StablePullId(
-            this.createId(pulls),
+            this.createId(pulls.map(p => p.getStablePull())),
             periodNumber,
         );
     }
 
-    private static createId(pulls: Pull[]): string {
+    private static createId(pulls: StablePull[]): string {
         const str = JSON.stringify(pulls);
 
         const hash = createHash("sha256").update(str).digest("hex");

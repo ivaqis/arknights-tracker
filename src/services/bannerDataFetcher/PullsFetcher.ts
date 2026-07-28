@@ -4,7 +4,7 @@ import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestPara
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { BannerResponse } from "@services/bannerDataFetcher/contracts/BannerResponse";
 import { PullData } from "@services/bannerDataFetcher/entities/PullData";
-import { sleep } from "@utils/globalUtils";
+import { sleep } from "@utils/asyncUtils";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 export class PullsFetcher<T extends PullData, U extends BannerRequestParams> {
