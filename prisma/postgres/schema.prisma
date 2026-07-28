@@ -132,26 +132,40 @@ model UserMonumentCharacter {
 
 model UserBannerProfile {
     profileId BigInt   @id @default(autoincrement())
+    publicId  String   @unique @default(uuid())
     gameUid   String?  @unique
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
     userGameProfile UserGameProfile? @relation(fields: [gameUid], references: [gameUid], onDelete: SetNull)
 
-    generatedTokens         GeneratedToken[]
     userBannerStats         UserBannerStat[]
     userBannerTypeStats     UserBannerTypeStat[]
     userCharBannerTypePulls UserCharBannerTypePulls[]
     userCharBannerPulls     UserCharBannerPulls[]
     userWeaponBannerPulls   UserWeaponBannerPulls[]
+    bannerTokenIds          BannerTokenId[]
+    bannerPullsIds          BannerPullsId[]
 
     @@index([gameUid])
+    @@index([publicId])
 }
 
-model GeneratedToken {
-    token     String   @id
-    profileId BigInt
-    createdAt DateTime @default(now())
+model BannerTokenId {
+    id         String   @id
+    profileId  BigInt
+    createdAt  DateTime @default(now())
+    lastUsedAt DateTime @default(now())
+
+    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
+}
+
+model BannerPullsId {
+    id         String   @id
+    period     Int
+    profileId  BigInt
+    createdAt  DateTime @default(now())
+    lastUsedAt DateTime @default(now())
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 }
