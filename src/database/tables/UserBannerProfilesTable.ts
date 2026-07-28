@@ -9,7 +9,7 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
         super(prisma, prisma.userBannerProfile);
     }
 
-    public async get(profileId: bigint): Promise<UserBannerProfileRecord | null> {
+    public async find(profileId: bigint): Promise<UserBannerProfileRecord | null> {
         const entity = await this.getEntity(profileId);
 
         if (!entity) {
@@ -22,6 +22,20 @@ export class UserBannerProfilesTable extends Table<Prisma.UserBannerProfileDeleg
     public async findByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
         const entity = await this.table.findUnique({
             where: { gameUid: gameUid },
+        });
+
+        if (!entity) {
+            return null;
+        }
+
+        return new UserBannerProfileRecord(entity);
+    }
+
+    public async findByPublicId(publicId: string): Promise<UserBannerProfileRecord | null> {
+        const entity = await this.table.findUnique({
+            where: {
+                publicId
+            }
         });
 
         if (!entity) {

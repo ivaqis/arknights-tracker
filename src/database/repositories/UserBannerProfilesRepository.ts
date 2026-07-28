@@ -20,12 +20,16 @@ export class UserBannerProfilesRepository extends Repository {
         this._pullsIdsTable = new BannerPullsIdsTable(prisma);
     }
 
-    public async getUserBannerProfile(profileId: bigint): Promise<UserBannerProfileRecord | null> {
-        return this._userBannerProfilesTable.get(profileId);
+    public async findUserBannerProfile(profileId: bigint): Promise<UserBannerProfileRecord | null> {
+        return this._userBannerProfilesTable.find(profileId);
     }
 
-    public async getUserBannerProfileByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
+    public async findUserBannerProfileByGameUid(gameUid: string): Promise<UserBannerProfileRecord | null> {
         return this._userBannerProfilesTable.findByGameUid(gameUid);
+    }
+
+    public async findUserBannerProfileByPublicId(publicId: string): Promise<UserBannerProfileRecord | null> {
+        return this._userBannerProfilesTable.findByPublicId(publicId);
     }
 
     /**
@@ -34,7 +38,7 @@ export class UserBannerProfilesRepository extends Repository {
      * @param gameUid
      */
     public async removeGameUidLink(gameUid: string): Promise<boolean> {
-        const record = await this.getUserBannerProfileByGameUid(gameUid);
+        const record = await this.findUserBannerProfileByGameUid(gameUid);
 
         if (!record) {
             return false;
