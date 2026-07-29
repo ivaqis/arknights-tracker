@@ -10,4 +10,5 @@ export const importRouter = Router();
 
 importRouter.use(RequireService.require(database));
 
-importRouter.post("/", JsonRequestValidator.isJson, RequestValidator.with(ImportRequestValidator), Import.post); // todo
+importRouter.post("/", JsonRequestValidator.isJson, RequestValidator.with(ImportRequestValidator), Import.post);
+// importRouter.post("/sync"); // todo

@@ -9,6 +9,7 @@ import { GroupedPullsByPeriod } from "@models/stablePullId/GroupedPullsByPeriod"
 import { PeriodPulls } from "@models/stablePullId/PeriodPulls";
 import { StablePullId } from "@models/stablePullId/StablePullId";
 import { getDayOfWeekStartsWithMonday, getWeek } from "@utils/dateUtils";
+import { pull } from "node:stream/iter";
 
 export class StablePullPeriod {
     private readonly _periodNumber: number;
@@ -27,6 +28,7 @@ export class StablePullPeriod {
         this._weaponPulls = weaponPulls;
     }
 
+    // todo тут где то должен быть баг что не обработан случай неполного периода когда он в конце
     public static create(specialPulls: CharPull[], jointPulls: CharPull[], standardPulls: CharPull[], beginnerPulls: CharPull[], weaponPulls: WeaponPull[]): StablePullPeriod[] {
         const groupedPulls: GroupedPullsByDate = {
             E_CharacterGachaPoolType_Special: this.groupByDate(specialPulls),
@@ -37,6 +39,10 @@ export class StablePullPeriod {
         };
 
         const periods = this.groupByPeriod(groupedPulls);
+
+        const current = this.getCurrentPeriodNumber();
+
+        periods.delete(current);
 
         const result: StablePullPeriod[] = [];
 
@@ -133,6 +139,10 @@ export class StablePullPeriod {
         }
 
         return null;
+    }
+
+    public get periodNumber(): number {
+        return this._periodNumber;
     }
 
     public getId(): StablePullId | null {

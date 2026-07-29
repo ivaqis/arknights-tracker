@@ -3,4 +3,5 @@ export interface ImportRequest {
     token: string;
     serverIds: string[];
     lastPullTs: number;
+    share: boolean;
 }

@@ -17,7 +17,8 @@ export class ImportBodyValidator extends Validator<ImportRequest> {
             this.getIdRule(),
             this.getTokenRule(),
             this.getServerIdsRule(),
-            this.getLastPullTsRule()
+            this.getLastPullTsRule(),
+            this.getShareRule()
         ];
     }
 
@@ -53,6 +54,13 @@ export class ImportBodyValidator extends Validator<ImportRequest> {
         return new ValidationRule(
             item => typeof item.lastPullTs === "number" && item.lastPullTs >= 0,
             "lastPullTs must be a number >= 0"
+        );
+    }
+
+    private static getShareRule(): ValidationRule<ImportRequest> {
+        return new ValidationRule(
+            item => typeof item.share === "boolean",
+            "share must be a boolean"
         );
     }
 }

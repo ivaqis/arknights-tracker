@@ -1,5 +1,5 @@
-const DAY_MS = 24 * 60 * 60 * 1000;
-const WEEK_MS = 7 * DAY_MS;
+export const DAY_MS = 24 * 60 * 60 * 1000;
+export const WEEK_MS = 7 * DAY_MS;
 
 export function getDayOfWeekStartsWithMonday(ts: number): 0 | 1 | 2 | 3 | 4 | 5 | 6 {
     const date = new Date(ts);
@@ -9,11 +9,17 @@ export function getDayOfWeekStartsWithMonday(ts: number): 0 | 1 | 2 | 3 | 4 | 5 
 }
 
 export function getWeek(ts: number): number {
+    const mondayTs = getMondayTs(ts);
+
+    return Math.floor(mondayTs / WEEK_MS);
+}
+
+export function getMondayTs(ts: number): number {
     const date = new Date(ts);
     const weekDay = getDayOfWeekStartsWithMonday(ts);
     const dayTs = date.setUTCHours(0, 0, 0, 0);
 
-    const mondayTs = dayTs - weekDay * DAY_MS;
+    const result = dayTs - weekDay * DAY_MS;
 
-    return Math.floor(mondayTs / WEEK_MS);
+    return Math.max(result, 0);
 }
