@@ -26,6 +26,8 @@ export const config = {
     skportMonumentUrl: getSkportMonumentUrl(),
     sightengineUser: process.env.SIGHTENGINE_USER || null,
     sightengineSecret: process.env.SIGHTENGINE_SECRET || null,
+    signSecret: process.env.SIGN_SECRET || "super_secret_key_123",
+    signIssuer: process.env.SIGN_ISSUER || "admin",
 } as const;
 
 function loadEnv(): void {
