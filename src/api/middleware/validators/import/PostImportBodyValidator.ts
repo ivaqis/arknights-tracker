@@ -10,7 +10,9 @@ export class PostImportBodyValidator extends Validator<PostImportRequest> {
     }
 
     private static getRules(): ValidationRule<PostImportRequest>[] {
-        return [];
+        return [
+            this.getProfileIdRule()
+        ];
     }
 
     private static getProfileIdRule(): ValidationRule<PostImportRequest> {
