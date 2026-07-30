@@ -7,4 +7,9 @@ export namespace GameServerId {
     export function isServerId(str: string): str is GameServerId {
         return str === GameServerId.EUROPE || str === GameServerId.ASIA;
     }
+
+    export function getAll(): GameServerId[] {
+        return Object.values(GameServerId)
+            .filter(i => typeof i === "string");
+    }
 }

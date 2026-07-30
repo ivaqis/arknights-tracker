@@ -1,8 +1,8 @@
 import { database } from "@/serviceInstances";
-import { Import } from "@api/controllers/import/Import";
+import { GetImport } from "@api/controllers/import/GetImport";
+import { StreamController } from "@api/controllers/StreamController";
 import { RequireService } from "@api/middleware/RequireService";
-import { ImportRequestValidator } from "@api/middleware/validators/import/ImportRequestValidator";
-import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
+import { GetImportRequestValidator } from "@api/middleware/validators/import/GetImportRequestValidator";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { Router } from "express";
 
@@ -10,5 +10,6 @@ export const importRouter = Router();
 
 importRouter.use(RequireService.require(database));
 
-importRouter.post("/", JsonRequestValidator.isJson, RequestValidator.with(ImportRequestValidator), Import.post);
+importRouter.get("/", RequestValidator.with(GetImportRequestValidator), StreamController.with(GetImport));
+// importRouter.post("/"); // todo
 // importRouter.post("/sync"); // todo

@@ -1,9 +1,9 @@
 import { logger } from "@/logger";
 import { BannerType } from "@models/banners/BannerType";
+import { BannersPulls } from "@models/pulls/BannersPulls";
 import { BannerRequestParams } from "@models/urlParams/banners/BannerRequestParams";
 import { CharBannerRequestParams } from "@models/urlParams/banners/CharBannerRequestParams";
 import { WeaponBannerRequestParams } from "@models/urlParams/banners/WeaponBannerRequestParams";
-import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
 import { BannerURLParams } from "@services/bannerDataFetcher/contracts/BannerURLParams";
 import { CharBannerURLParams } from "@services/bannerDataFetcher/contracts/CharBannerURLParams";
 import { WeaponBannerURLParams } from "@services/bannerDataFetcher/contracts/WeaponBannerURLParams";
@@ -29,7 +29,7 @@ export class BannerDataFetcher {
         this._callbackFn = callbackFn;
     }
 
-    public async getAllBannersData(): Promise<BannersPullsData | null> {
+    public async getAllBannersData(): Promise<BannersPulls | null> {
         const isTokenValid = await this.testToken();
 
         if (!isTokenValid) {
@@ -44,13 +44,13 @@ export class BannerDataFetcher {
             this.getWeaponPulls()
         ]);
 
-        return {
+        return BannersPulls.createFromData({
             [BannerType.CHAR_STANDARD]: standardPulls,
             [BannerType.CHAR_BEGINNER]: beginnerPulls,
             [BannerType.CHAR_SPECIAL]: specialPulls,
             [BannerType.CHAR_JOINT]: jointPulls,
             [BannerType.WEAPON]: weaponPulls
-        };
+        });
     }
 
     private getCharRequestParams(bannerType: BannerType): CharBannerRequestParams {

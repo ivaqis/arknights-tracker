@@ -21,6 +21,21 @@ export abstract class StreamController<
 
         this._url = new URL(`http://localhost${this._req.originalUrl}`);
     }
+    public static with<
+        T extends StreamController<Params, ResBody, ReqBody, ReqQuery>,
+        Params extends core.ParamsDictionary,
+        ResBody,
+        ReqBody,
+        ReqQuery
+    >(
+        ctor: new (req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>) => T
+    ): (req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>) => Promise<void> {
+        return async (req: e.Request<Params, {}, ReqBody, ReqQuery>, res: e.Response<{}>) => {
+            const controller = new ctor(req, res);
+
+            await controller.safeExecute();
+        }
+    }
 
     public abstract get name(): string;
 
