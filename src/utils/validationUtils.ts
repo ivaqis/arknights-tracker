@@ -13,3 +13,5 @@ export function isOptionalString(field: any): boolean {
 export function isValidList<T extends any>(list: T[], validationFunc: (item: T) => boolean): boolean {
     return list.every(validationFunc);
 }
+
+export const JWT_REGEX: RegExp = /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$/;

@@ -1,10 +1,13 @@
 import { database } from "@/serviceInstances";
+import { Controller } from "@api/controllers/Controller";
 import { GetImport } from "@api/controllers/import/GetImport";
 import { PostImport } from "@api/controllers/import/PostImport";
+import { SyncImport } from "@api/controllers/import/SyncImport";
 import { StreamController } from "@api/controllers/StreamController";
 import { RequireService } from "@api/middleware/RequireService";
 import { GetImportRequestValidator } from "@api/middleware/validators/import/GetImportRequestValidator";
 import { PostImportRequestValidator } from "@api/middleware/validators/import/PostImportRequestValidator";
+import { SyncImportRequestValidator } from "@api/middleware/validators/import/SyncImportRequestValidator";
 import { JsonRequestValidator } from "@api/middleware/validators/JsonRequestValidator";
 import { RequestValidator } from "@api/middleware/validators/RequestValidator";
 import { Router } from "express";
@@ -23,5 +26,7 @@ importRouter.post("/",
 );
 importRouter.post("/sync",
     RequireService.require(database),
-    JsonRequestValidator.isJson
-); // todo
+    JsonRequestValidator.isJson,
+    RequestValidator.with(SyncImportRequestValidator),
+    Controller.with(SyncImport)
+);
