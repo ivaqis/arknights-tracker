@@ -9,6 +9,12 @@ export enum BannerType {
 }
 
 export namespace BannerType {
+    export type CHAR =
+        | BannerType.CHAR_BEGINNER
+        | BannerType.CHAR_STANDARD
+        | BannerType.CHAR_SPECIAL
+        | BannerType.CHAR_JOINT;
+
     export function getShortBannerTypeName(bannerType: BannerType): string {
         switch (bannerType) {
             case BannerType.CHAR_BEGINNER: return "new-player";
@@ -37,8 +43,8 @@ export namespace BannerType {
             case DbBannerType.CHAR_STANDARD: return BannerType.CHAR_STANDARD;
             case DbBannerType.CHAR_SPECIAL: return BannerType.CHAR_SPECIAL;
             case DbBannerType.CHAR_JOINT: return BannerType.CHAR_JOINT;
-            case DbBannerType.WEAPON_SPECIAL: return BannerType.WEAPON
-            case DbBannerType.WEAPON_STANDARD: return BannerType.WEAPON
+            case DbBannerType.WEAPON_SPECIAL: return BannerType.WEAPON;
+            case DbBannerType.WEAPON_STANDARD: return BannerType.WEAPON;
         }
     }
 

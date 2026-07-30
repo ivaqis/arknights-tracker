@@ -43,11 +43,7 @@ export class UserBannerStatsRepository extends Repository {
     }
 
     public async getCharBannerTypeData(profileId: bigint,
-                                       bannerType:
-                                           | DbBannerType.CHAR_BEGINNER
-                                           | DbBannerType.CHAR_STANDARD
-                                           | DbBannerType.CHAR_SPECIAL
-                                           | DbBannerType.CHAR_JOINT
+                                       bannerType: DbBannerType.CHAR
     ): Promise<UserCharBannerTypeData> {
         const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
         const bannerTypePulls = await this._userCharBannerTypePullsTable.get(profileId, bannerType);
@@ -83,9 +79,7 @@ export class UserBannerStatsRepository extends Repository {
     }
 
     public async getWeaponBannerTypeData(profileId: bigint,
-                                         bannerType:
-                                             | DbBannerType.WEAPON_SPECIAL
-                                             | DbBannerType.WEAPON_STANDARD
+                                         bannerType: DbBannerType.WEAPON
     ): Promise<UserWeaponBannerTypeData> {
         const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
 

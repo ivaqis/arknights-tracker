@@ -2,6 +2,7 @@ import { BannerType } from "@models/banners/BannerType";
 import { IEntityClass } from "@models/IEntityClass";
 import { CharPull } from "@models/pulls/CharPull";
 import { BannersPullsEntity } from "@models/pulls/entities/BannersPullsEntity";
+import { Pull } from "@models/pulls/Pull";
 import { WeaponPull } from "@models/pulls/WeaponPull";
 import { StablePullPeriod } from "@models/stablePullId/StablePullPeriod";
 import { BannersPullsData } from "@services/bannerDataFetcher/BannersPullsData";
@@ -19,6 +20,12 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
         this._standardPulls = standardPulls;
         this._beginnerPulls = beginnerPulls;
         this._weaponPulls = weaponPulls;
+
+        BannersPulls.sort(this._specialPulls);
+        BannersPulls.sort(this._jointPulls);
+        BannersPulls.sort(this._standardPulls);
+        BannersPulls.sort(this._beginnerPulls);
+        BannersPulls.sort(this._weaponPulls);
     }
 
     public static createFromData(data: BannersPullsData): BannersPulls {
@@ -39,6 +46,10 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
             entity[BannerType.CHAR_BEGINNER].map(CharPull.createFromEntity),
             entity[BannerType.WEAPON].map(WeaponPull.createFromEntity)
         );
+    }
+
+    private static sort(pulls: Pull[]): void {
+        pulls.sort((a, b) => a.seqIdNumber - b.seqIdNumber);
     }
 
     public getStablePullPeriods(): StablePullPeriod[] {

@@ -8,6 +8,16 @@ export enum DbBannerType {
 }
 
 export namespace DbBannerType {
+    export type CHAR =
+        | DbBannerType.CHAR_BEGINNER
+        | DbBannerType.CHAR_STANDARD
+        | DbBannerType.CHAR_SPECIAL
+        | DbBannerType.CHAR_JOINT;
+
+    export type WEAPON =
+        | DbBannerType.WEAPON_SPECIAL
+        | DbBannerType.WEAPON_STANDARD;
+
     export function isDbBannerType(str: string): str is DbBannerType {
         return getValues()
             .includes(str);
