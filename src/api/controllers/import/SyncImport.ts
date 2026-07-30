@@ -7,6 +7,7 @@ import { SyncImportResponse } from "@api/contracts/import/SyncImportResponse";
 import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
+import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
 import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner";
 import e from "express";
 
@@ -52,9 +53,9 @@ export class SyncImport extends Controller<
             return;
         }
 
-        const pulls = this._signCache.get(this._token);
+        const cacheRecord = this._signCache.get(this._token);
 
-        if (!pulls) {
+        if (!cacheRecord) {
             this.status = 500;
             this.message = "Token approved but pulls not found. Try to import again.";
 
@@ -71,6 +72,24 @@ export class SyncImport extends Controller<
 
             return;
         }
+
+        let profile: UserBannerProfileRecord;
+
+        if (cacheRecord.profileId) {
+            const tempProfile = await this._database.userBannerProfiles.findUserBannerProfileByPublicId(cacheRecord.profileId);
+
+            if (!tempProfile) {
+                throw new Error(`Expected banner profile but not found: ${cacheRecord.profileId}`);
+            }
+
+            profile = tempProfile;
+        } else {
+            profile = await this._database.userBannerProfiles.createUserBannerProfile();
+        }
+
+        const pulls = cacheRecord.pulls;
+        const tokenId = cacheRecord.tokenId;
+        const pullIds = cacheRecord.pullIds;
 
         this.setTokenAsUsed();
 

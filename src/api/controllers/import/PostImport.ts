@@ -149,6 +149,8 @@ export class PostImport extends StreamController<
 
         const cacheRecord: SyncPullsCacheRecord = {
             profileId: writeOn,
+            pullIds,
+            tokenId,
             pulls
         };
 
