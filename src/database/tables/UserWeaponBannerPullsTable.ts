@@ -15,6 +15,19 @@ export class UserWeaponBannerPullsTable extends Table<Prisma.UserWeaponBannerPul
         return new UserWeaponBannerPullsRecord(entity);
     }
 
+    public async getLastPullTimeTs(profileId: bigint): Promise<bigint | null> {
+        const entity = await this.table.aggregate({
+            where: {
+                profileId: profileId
+            },
+            _max: {
+                lastPullTimeTs: true
+            }
+        });
+
+        return entity._max.lastPullTimeTs;
+    }
+
     public async update(record: UserWeaponBannerPullsRecord) {
         await this.table.update({
             where: {

@@ -35,6 +35,7 @@ export class UserBannerStatsRepository extends Repository {
             return null;
         }
 
+        // todo оптимизировать
         const bannerStat = await this._userBannerStatsTable.get(profileId, bannerId);
         const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
         const bannerPulls = await this._userCharBannerPullsTable.get(profileId, bannerId);
@@ -85,5 +86,24 @@ export class UserBannerStatsRepository extends Repository {
 
     public async getBannerTypeStats(bannerType: string): Promise<UserBannerTypeStatRecord[]> {
         return this._userBannerTypeStatsTable.getAllByBannerId(bannerType);
+    }
+
+    public async getLastPullTimeTs(profileId: bigint): Promise<bigint | null> {
+        const lastChar = await this._userCharBannerTypePullsTable.getLastPullTs(profileId);
+        const lastWeapon = await this._userWeaponBannerPullsTable.getLastPullTimeTs(profileId);
+
+        if (lastChar === null && lastWeapon === null) {
+            return null;
+        }
+
+        if (lastChar === null) {
+            return lastWeapon;
+        }
+
+        if (lastWeapon === null) {
+            return lastChar;
+        }
+
+        return lastChar > lastWeapon ? lastChar : lastWeapon;
     }
 }

@@ -15,6 +15,19 @@ export class UserCharBannerTypePullsTable extends Table<Prisma.UserCharBannerTyp
         return new UserCharBannerTypePullsRecord(entity);
     }
 
+    public async getLastPullTs(profileId: bigint): Promise<bigint | null> {
+        const entity = await this.table.aggregate({
+            where: {
+                profileId: profileId
+            },
+            _max: {
+                lastPullTimeTs: true
+            }
+        });
+
+        return entity._max.lastPullTimeTs
+    }
+
     public async update(record: UserCharBannerTypePullsRecord) {
         await this.table.update({
             where: {
