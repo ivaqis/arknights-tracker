@@ -25,7 +25,7 @@ export class GetImport extends StreamController<
 
         this._token = req.query.token;
         this._serverIds = getUniqueElements(req.query.serverIds, ",");
-        this._lastPullTs = parseInt(req.query.lastPullTs) ?? 0;
+        this._lastPullTs = req.query.lastPullTs ? parseInt(req.query.lastPullTs) : 0;
     }
 
     protected async execute(): Promise<void> {
