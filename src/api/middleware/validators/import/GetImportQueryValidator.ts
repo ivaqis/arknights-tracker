@@ -15,7 +15,11 @@ export class GetImportQueryValidator extends Validator<GetImportQuery> {
     }
 
     private static getRules(): ValidationRule<GetImportQuery>[] {
-        return []
+        return [
+            this.getTokenRule(),
+            this.getServerIdsRule(),
+            this.getLastPullTsRule()
+        ];
     }
 
     private static getTokenRule(): ValidationRule<GetImportQuery> {
