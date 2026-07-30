@@ -184,8 +184,8 @@ model UserBannerStat {
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
 
-    userCharBannerPulls   UserCharBannerPulls[]
-    userWeaponBannerPulls UserWeaponBannerPulls[]
+    userCharBannerPulls   UserCharBannerPulls?
+    userWeaponBannerPulls UserWeaponBannerPulls?
 
     @@id([profileId, bannerId])
     @@index([bannerId])
@@ -205,9 +205,8 @@ model UserBannerTypeStat {
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
 
-    bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
-
-    userCharBannerTypePulls UserCharBannerTypePulls[]
+    bannerProfile           UserBannerProfile        @relation(fields: [profileId], references: [profileId])
+    userCharBannerTypePulls UserCharBannerTypePulls?
 
     @@id([profileId, bannerType])
     @@index([bannerType])
