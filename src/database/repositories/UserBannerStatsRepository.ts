@@ -1,14 +1,16 @@
 import { UserBannerStatRecord } from "@database/records/UserBannerStatRecord";
 import { UserBannerTypeStatRecord } from "@database/records/UserBannerTypeStatRecord";
 import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBannerData";
+import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
 import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData";
+import { UserWeaponBannerTypeData } from "@database/repositories/interfaces/UserWeaponBannerTypeData";
 import { Repository } from "@database/repositories/Repository";
 import { UserBannerStatsTable } from "@database/tables/UserBannerStatsTable";
 import { UserBannerTypeStatsTable } from "@database/tables/UserBannerTypeStatsTable";
 import { UserCharBannerPullsTable } from "@database/tables/UserCharBannerPullsTable";
 import { UserCharBannerTypePullsTable } from "@database/tables/UserCharBannerTypePullsTable";
 import { UserWeaponBannerPullsTable } from "@database/tables/UserWeaponBannerPullsTable";
-import { Banner } from "@models/banners/Banner";
+import { DbBannerType } from "@models/banners/DbBannerType";
 import { PrismaClient } from "@prisma/client";
 
 export class UserBannerStatsRepository extends Repository {
@@ -28,56 +30,75 @@ export class UserBannerStatsRepository extends Repository {
         this._userWeaponBannerPullsTable = new UserWeaponBannerPullsTable(prisma);
     }
 
-    public async getCharBannerData(profileId: bigint, bannerId: string): Promise<UserCharBannerData | null> {
-        const bannerType = Banner.get(bannerId)?.dbType;
-
-        if (!bannerType) {
-            return null;
-        }
-
-        // todo оптимизировать
+    public async getCharBannerData(profileId: bigint, bannerId: string): Promise<UserCharBannerData> {
         const bannerStat = await this._userBannerStatsTable.get(profileId, bannerId);
-        const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
         const bannerPulls = await this._userCharBannerPullsTable.get(profileId, bannerId);
+
+        return {
+            profileId,
+            bannerId,
+            stat: bannerStat,
+            pulls: bannerPulls,
+        };
+    }
+
+    public async getCharBannerTypeData(profileId: bigint,
+                                       bannerType:
+                                           | DbBannerType.CHAR_BEGINNER
+                                           | DbBannerType.CHAR_STANDARD
+                                           | DbBannerType.CHAR_SPECIAL
+                                           | DbBannerType.CHAR_JOINT
+    ): Promise<UserCharBannerTypeData> {
+        const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
         const bannerTypePulls = await this._userCharBannerTypePullsTable.get(profileId, bannerType);
 
         return {
-            bannerStat,
-            bannerTypeStat,
-            bannerPulls,
-            bannerTypePulls
+            profileId,
+            bannerType,
+            stat: bannerTypeStat,
+            pulls: bannerTypePulls
         };
     }
 
     public async updateCharBannerData(bannerData: UserCharBannerData) {
-        await this._userBannerStatsTable.update(bannerData.bannerStat);
-        await this._userBannerTypeStatsTable.update(bannerData.bannerTypeStat);
-        await this._userCharBannerPullsTable.update(bannerData.bannerPulls);
-        await this._userCharBannerTypePullsTable.update(bannerData.bannerTypePulls);
+        await this._userBannerStatsTable.update(bannerData.stat);
+        await this._userCharBannerPullsTable.update(bannerData.pulls);
+    }
+
+    public async updateCharBannerTypeData(data: UserCharBannerTypeData) {
+        await this._userBannerTypeStatsTable.update(data.stat);
+        await this._userCharBannerTypePullsTable.update(data.pulls);
     }
 
     public async getWeaponBannerData(profileId: bigint, bannerId: string): Promise<UserWeaponBannerData | null> {
-        const bannerType = Banner.get(bannerId)?.dbType;
-
-        if (!bannerType) {
-            return null;
-        }
-
         const bannerStat = await this._userBannerStatsTable.get(profileId, bannerId);
-        const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
         const bannerPulls = await this._userWeaponBannerPullsTable.get(profileId, bannerId);
 
         return {
-            bannerStat,
-            bannerTypeStat,
-            bannerPulls
+            profileId,
+            bannerId,
+            stat: bannerStat,
+            pulls: bannerPulls
+        };
+    }
+
+    public async getWeaponBannerTypeData(profileId: bigint, bannerType: DbBannerType.WEAPON_SPECIAL | DbBannerType.WEAPON_STANDARD): Promise<UserWeaponBannerTypeData> {
+        const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
+
+        return {
+            profileId,
+            bannerType,
+            stat: bannerTypeStat
         };
     }
 
     public async updateWeaponBannerData(bannerData: UserWeaponBannerData) {
-        await this._userBannerStatsTable.update(bannerData.bannerStat);
-        await this._userBannerTypeStatsTable.update(bannerData.bannerTypeStat);
-        await this._userWeaponBannerPullsTable.update(bannerData.bannerPulls);
+        await this._userBannerStatsTable.update(bannerData.stat);
+        await this._userWeaponBannerPullsTable.update(bannerData.pulls);
+    }
+
+    public async updateWeaponBannerTypeData(data: UserWeaponBannerTypeData) {
+        await this._userBannerTypeStatsTable.update(data.stat);
     }
 
     public async getBannersStats(bannerId: string): Promise<UserBannerStatRecord[]> {

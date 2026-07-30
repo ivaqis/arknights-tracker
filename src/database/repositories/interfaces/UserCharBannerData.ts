@@ -4,8 +4,8 @@ import { UserCharBannerPullsRecord } from "@database/records/UserCharBannerPulls
 import { UserCharBannerTypePullsRecord } from "@database/records/UserCharBannerTypePullsRecord";
 
 export interface UserCharBannerData {
-    bannerStat: UserBannerStatRecord,
-    bannerTypeStat: UserBannerTypeStatRecord,
-    bannerPulls: UserCharBannerPullsRecord,
-    bannerTypePulls: UserCharBannerTypePullsRecord
+    profileId: bigint;
+    bannerId: string;
+    stat: UserBannerStatRecord;
+    pulls: UserCharBannerPullsRecord;
 }
