@@ -41,7 +41,7 @@ export class GetImportQueryValidator extends Validator<GetImportQuery> {
     private static getLastPullTsRule(): ValidationRule<GetImportQuery> {
         return new ValidationRule(
             item => item.lastPullTs === "" || (typeof item.lastPullTs === "string" && this.LAST_PULL_TS_REGEX.test(item.lastPullTs)),
-            "lastPullTs must be a string of digits"
+            "lastPullTs must be a string of digits or empty"
         );
     }
 }
