@@ -70,7 +70,7 @@ export class UserBannerStatsRepository extends Repository {
         await this._userCharBannerTypePullsTable.update(data.pulls);
     }
 
-    public async getWeaponBannerData(profileId: bigint, bannerId: string): Promise<UserWeaponBannerData | null> {
+    public async getWeaponBannerData(profileId: bigint, bannerId: string): Promise<UserWeaponBannerData> {
         const bannerStat = await this._userBannerStatsTable.get(profileId, bannerId);
         const bannerPulls = await this._userWeaponBannerPullsTable.get(profileId, bannerId);
 
@@ -82,7 +82,11 @@ export class UserBannerStatsRepository extends Repository {
         };
     }
 
-    public async getWeaponBannerTypeData(profileId: bigint, bannerType: DbBannerType.WEAPON_SPECIAL | DbBannerType.WEAPON_STANDARD): Promise<UserWeaponBannerTypeData> {
+    public async getWeaponBannerTypeData(profileId: bigint,
+                                         bannerType:
+                                             | DbBannerType.WEAPON_SPECIAL
+                                             | DbBannerType.WEAPON_STANDARD
+    ): Promise<UserWeaponBannerTypeData> {
         const bannerTypeStat = await this._userBannerTypeStatsTable.get(profileId, bannerType);
 
         return {
