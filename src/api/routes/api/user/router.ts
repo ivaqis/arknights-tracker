@@ -14,12 +14,18 @@ import { Router } from "express";
 
 export const userRouter = Router();
 
-profileRouter.use(RequireService.require(database, firebase));
+userRouter.use(RequireService.require(database, firebase));
 
 userRouter.use("/game-account", gameAccountRouter);
 userRouter.use("/profile", profileRouter);
 userRouter.use("/sync", syncRouter);
 userRouter.use("/avatar", avatarRouter);
 
-userRouter.get("/exist", RequestValidator.with(UserExistRequestValidator), Controller.with(UserExist));
-userRouter.get("/list", RequestValidator.with(UserListRequestValidator), Controller.with(UserList));
+userRouter.get("/exist",
+    RequestValidator.with(UserExistRequestValidator),
+    Controller.with(UserExist)
+);
+userRouter.get("/list",
+    RequestValidator.with(UserListRequestValidator),
+    Controller.with(UserList)
+);

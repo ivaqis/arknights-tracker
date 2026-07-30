@@ -8,5 +8,11 @@ import { Router } from "express";
 
 export const contractRouter = Router();
 
-contractRouter.get("/list", RequestValidator.with(GetContractListRequestValidator), Controller.with(GetContractList));
-contractRouter.get("/run", RequestValidator.with(GetContractRunRequestValidator), Controller.with(GetContractRun));
+contractRouter.get("/list",
+    RequestValidator.with(GetContractListRequestValidator),
+    Controller.with(GetContractList)
+);
+contractRouter.get("/run",
+    RequestValidator.with(GetContractRunRequestValidator),
+    Controller.with(GetContractRun)
+);

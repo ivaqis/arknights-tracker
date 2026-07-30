@@ -6,4 +6,7 @@ import { Router } from "express";
 
 export const gameAccountRouter = Router();
 
-gameAccountRouter.delete("/delete", DeleteGameAccountRequestValidator.validate, DeleteGameAccount.delete);
+gameAccountRouter.delete("/delete",
+    DeleteGameAccountRequestValidator.validate,
+    DeleteGameAccount.delete
+);

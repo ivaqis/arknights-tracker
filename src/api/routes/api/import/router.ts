@@ -13,12 +13,15 @@ export const importRouter = Router();
 
 importRouter.get("/",
     RequestValidator.with(GetImportRequestValidator),
-    StreamController.with(GetImport));
+    StreamController.with(GetImport)
+);
 importRouter.post("/",
     RequireService.require(database),
     JsonRequestValidator.isJson,
     RequestValidator.with(PostImportRequestValidator),
-    StreamController.with(PostImport));
+    StreamController.with(PostImport)
+);
 importRouter.post("/sync",
     RequireService.require(database),
-    JsonRequestValidator.isJson); // todo
+    JsonRequestValidator.isJson
+); // todo

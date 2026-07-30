@@ -11,5 +11,12 @@ export const avatarRouter = Router();
 
 avatarRouter.use(RequireService.require(avatarUploader, sightengine));
 
-avatarRouter.post("/upload", JsonRequestValidator.isJson, UploadAvatarRequestValidator.validate, UploadAvatar.post);
-avatarRouter.delete("/delete", DeleteAvatarRequestValidator.validate, DeleteAvatar.delete);
+avatarRouter.post("/upload",
+    JsonRequestValidator.isJson,
+    UploadAvatarRequestValidator.validate,
+    UploadAvatar.post
+);
+avatarRouter.delete("/delete",
+    DeleteAvatarRequestValidator.validate,
+    DeleteAvatar.delete
+);
