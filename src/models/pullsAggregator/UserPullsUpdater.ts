@@ -243,7 +243,7 @@ export class UserPullsUpdater {
             const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.weaponId);
             const isGuaranteed = isFeatured
                 ? (bannerData.pulls.lastWin5050Pull.value === 0
-                    && 70 <= bannerData.stat.unfreePulls.value && bannerData.stat.unfreePulls.value <= 80)
+                    && bannerData.stat.unfreePulls.value === 80)
                 : false;
 
             if (isFeatured) {
