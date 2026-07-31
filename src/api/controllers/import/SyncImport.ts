@@ -8,7 +8,9 @@ import { ResponseBody } from "@api/contracts/ResponseBody";
 import { Controller } from "@api/controllers/Controller";
 import { Database } from "@database/Database";
 import { UserBannerProfileRecord } from "@database/records/UserBannerProfileRecord";
+import { PullsAggregator } from "@models/pullsAggregator/PullsAggregator";
 import { SyncPullsSigner } from "@models/signers/syncPullsSigner/SyncPullsSigner";
+import { StablePullId } from "@models/stablePullId/StablePullId";
 import e from "express";
 
 export class SyncImport extends Controller<
@@ -90,6 +92,16 @@ export class SyncImport extends Controller<
         const pulls = cacheRecord.pulls;
         const tokenId = cacheRecord.tokenId;
         const pullIds = cacheRecord.pullIds;
+        const lastId: StablePullId | null = pullIds.reduce(SyncImport.getMaxPullId, null);
+
+        const aggregator = new PullsAggregator(this._database);
+
+        await aggregator.update(profile.profileId, pulls);
+
+        await this._database.userBannerProfiles.setTokenId(tokenId.id, profile.profileId);
+        if (lastId) {
+            await this._database.userBannerProfiles.setPullsId(lastId.id, lastId.period, profile.profileId);
+        }
 
         this.setTokenAsUsed();
 
@@ -101,5 +113,13 @@ export class SyncImport extends Controller<
 
     private setTokenAsUsed(): void {
         this._usedSignCache.set(this._token, new Date());
+    }
+
+    private static getMaxPullId(prev: StablePullId | null, curr: StablePullId): StablePullId | null {
+        if (!prev) {
+            return curr;
+        }
+
+        return prev.period > curr.period ? prev : curr;
     }
 }

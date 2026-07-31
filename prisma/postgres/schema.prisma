@@ -267,10 +267,6 @@ model GlobalBannerStats {
     free5       Int      @default(0)
     freeWin5050 Int      @default(0)
     updatedAt   DateTime @updatedAt
-
-    globalBannerTimelines   GlobalBannerTimeline[]
-    globalPityDistributions GlobalPityDistribution[]
-    globalItemStats         GlobalItemStats[]
 }
 
 model GlobalBannerTimeline {
@@ -278,8 +274,6 @@ model GlobalBannerTimeline {
     date            String // "YYYY-MM-DD"
     totalPullsCount Int    @default(0)
     freePullsCount  Int    @default(0)
-
-    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
     @@id([bannerId, date])
 }
@@ -290,8 +284,6 @@ model GlobalPityDistribution {
     rarity   Int
     count    Int    @default(0)
 
-    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
-
     @@id([bannerId, pity, rarity])
 }
 
@@ -300,8 +292,6 @@ model GlobalItemStats {
     itemId   String
     rarity   Int
     count    Int    @default(0)
-
-    globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
     @@id([bannerId, itemId])
     @@index([bannerId, rarity])

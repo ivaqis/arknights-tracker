@@ -99,6 +99,25 @@ export class BannerPullsIdsTable extends Table<Prisma.BannerPullsIdDelegate> {
         return BannerPullsIdRecord.createFromEntity(entity);
     }
 
+    public async set(id: string, period: number, profileId: bigint): Promise<BannerPullsIdRecord> {
+        const entity = await this.table.upsert({
+            where: {
+                id
+            },
+            update: {
+                period,
+                profileId
+            },
+            create: {
+                id,
+                period,
+                profileId
+            }
+        });
+
+        return BannerPullsIdRecord.createFromEntity(entity);
+    }
+
     public async delete(id: string): Promise<void> {
         await this.table.delete({
             where: {

@@ -1,3 +1,4 @@
+import { logger } from "@/logger";
 import { Database } from "@database/Database";
 import { GlobalBannerStatsRecord } from "@database/records/GlobalBannerStatsRecord";
 import { GlobalBannerTimelineRecord } from "@database/records/GlobalBannerTimelineRecord";
@@ -78,6 +79,11 @@ export class UserPullsUpdater {
         const bannerData = await this.getCharBannerData(bannerId);
         // const globalStats = await this.getGlobalBannerStats(bannerId);
         const timeline = await this.getTimelineRecord(bannerId, TimelineDate.createFromTs(ts));
+
+        if (!pull.charId) {
+            logger.error(JSON.stringify(pull, null, 2));
+        }
+
         const item = await this.getItemStatRecord(bannerId, pull.charId, pull.rarity);
 
         bannerTypeData.pulls.lastPullTimeTs.value = pull.gachaTsBigint;

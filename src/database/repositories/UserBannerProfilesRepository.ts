@@ -59,6 +59,10 @@ export class UserBannerProfilesRepository extends Repository {
         return this._tokenIdsTable.create(id, profileId);
     }
 
+    public async setTokenId(id: string, profileId: bigint): Promise<BannerTokenIdRecord> {
+        return this._tokenIdsTable.set(id, profileId);
+    }
+
     public async findTokenId(id: string): Promise<BannerTokenIdRecord | null> {
         return this._tokenIdsTable.find(id);
     }
@@ -72,6 +76,10 @@ export class UserBannerProfilesRepository extends Repository {
 
     public async createPullsId(id: string, period: number, profileId: bigint): Promise<BannerPullsIdRecord> {
         return this._pullsIdsTable.create(id, period, profileId);
+    }
+
+    public async setPullsId(id: string, period: number, profileId: bigint): Promise<BannerPullsIdRecord> {
+        return this._pullsIdsTable.set(id, period, profileId);
     }
 
     public async findPullsId(id: string): Promise<BannerPullsIdRecord | null> {

@@ -57,6 +57,23 @@ export class BannerTokenIdsTable extends Table<Prisma.BannerTokenIdDelegate> {
         return BannerTokenIdRecord.createFromEntity(entity);
     }
 
+    public async set(id: string, profileId: bigint): Promise<BannerTokenIdRecord> {
+        const entity = await this.table.upsert({
+            where: {
+                id
+            },
+            update: {
+                profileId
+            },
+            create: {
+                id,
+                profileId
+            }
+        });
+
+        return BannerTokenIdRecord.createFromEntity(entity);
+    }
+
     public async delete(id: string): Promise<void> {
         await this.table.delete({
             where: {
