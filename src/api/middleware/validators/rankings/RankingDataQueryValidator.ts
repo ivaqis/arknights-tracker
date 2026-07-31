@@ -16,6 +16,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
             this.getTotalPullsRule(),
             this.getTotal5050Rule(),
             this.getWon5050Rule(),
+            this.get5050Rule(),
             this.getTotal5PullsRule(),
             this.getTotal6PullsRule()
         ];
