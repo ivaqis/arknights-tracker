@@ -125,4 +125,20 @@ export class UserBannerStatsRepository extends Repository {
 
         return lastChar > lastWeapon ? lastChar : lastWeapon;
     }
+
+    public async countTotalPullsByBannerType(bannerType: DbBannerType | null, minPullsCount: number = 1): Promise<number> {
+        return this._userBannerTypeStatsTable.countTotalPullsByBannerType(bannerType, minPullsCount);
+    }
+
+    public async countWinRateByBannerType(bannerType: DbBannerType | null, minWinRate: number = 0): Promise<number> {
+        return this._userBannerTypeStatsTable.countWinRateByBannerType(bannerType, minWinRate);
+    }
+
+    public async countLuck6ByBannerType(bannerType: DbBannerType | null, minLuckRate: number = 0): Promise<number> {
+        return this._userBannerTypeStatsTable.countLuck6ByBannerType(bannerType, minLuckRate);
+    }
+
+    public async countLuck5ByBannerType(bannerType: DbBannerType | null, minLuckRate: number = 0): Promise<number> {
+        return this._userBannerTypeStatsTable.countLuck5ByBannerType(bannerType, minLuckRate);
+    }
 }
