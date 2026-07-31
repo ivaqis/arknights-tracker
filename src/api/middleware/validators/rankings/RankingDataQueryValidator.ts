@@ -53,6 +53,14 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
+    private static get5050Rule(): ValidationRule<RankingDataQuery> {
+        return new ValidationRule(
+            item => item.total5050 === "null" && item.won5050 === "null"
+                || item.total5050 !== "null" && item.won5050 !== "null",
+            "if total5050 or won5050 provided, won5050 and total5050 both must be provided"
+        );
+    }
+
     private static getTotal5PullsRule(): ValidationRule<RankingDataQuery> {
         return new ValidationRule(
             item => typeof item.total5Pulls === "string"
