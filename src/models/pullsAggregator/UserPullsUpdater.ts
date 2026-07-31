@@ -50,7 +50,13 @@ export class UserPullsUpdater {
 
 
     public async execute(): Promise<void> {
+        await this.updateCharPulls(DbBannerType.CHAR_SPECIAL, this._pulls.specialPulls);
+        await this.updateCharPulls(DbBannerType.CHAR_JOINT, this._pulls.jointPulls);
+        await this.updateCharPulls(DbBannerType.CHAR_BEGINNER, this._pulls.beginnerPulls);
+        await this.updateCharPulls(DbBannerType.CHAR_STANDARD, this._pulls.standardPulls);
+        await this.updateWeaponPulls(this._pulls.weaponPulls);
 
+        await this.writeData();
     }
 
     private async updateCharPulls(bannerType: DbBannerType.CHAR, pulls: CharPull[]): Promise<void> {
@@ -363,5 +369,57 @@ export class UserPullsUpdater {
         }
 
         return result;
+    }
+
+    private async writeData(): Promise<void> {
+        await this.writeCharBannerData();
+        await this.writeCharBannerTypeData();
+        await this.writeWeaponBannerData();
+        await this.writeWeaponBannerTypeData();
+        await this.writeTimelineData();
+        await this.writePityDistributionData();
+        await this.writeItemStatData();
+    }
+
+    private async writeCharBannerData() {
+        for (const data of this._charBannerMap.values()) {
+            await this._database.userBannerStats.updateCharBannerData(data);
+        }
+    }
+
+    private async writeCharBannerTypeData() {
+        for (const data of this._charBannerTypeMap.values()) {
+            await this._database.userBannerStats.updateCharBannerTypeData(data);
+        }
+    }
+
+    private async writeWeaponBannerData() {
+        for (const data of this._weaponBannerMap.values()) {
+            await this._database.userBannerStats.updateWeaponBannerData(data);
+        }
+    }
+
+    private async writeWeaponBannerTypeData() {
+        for (const data of this._weaponBannerTypeMap.values()) {
+            await this._database.userBannerStats.updateWeaponBannerTypeData(data);
+        }
+    }
+
+    private async writeTimelineData() {
+        for (const data of this._timelineMap.values()) {
+            await this._database.globalBannerStats.updateBannerTimelineRecord(data);
+        }
+    }
+
+    private async writePityDistributionData() {
+        for (const data of this._pityDistributionMap.values()) {
+            await this._database.globalBannerStats.updatePityDistributionRecord(data);
+        }
+    }
+
+    private async writeItemStatData() {
+        for (const data of this._itemStatMap.values()) {
+            await this._database.globalBannerStats.updateItemStatsRecord(data);
+        }
     }
 }

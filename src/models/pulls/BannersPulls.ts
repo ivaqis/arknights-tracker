@@ -52,6 +52,26 @@ export class BannersPulls implements IEntityClass<BannersPullsEntity> {
         pulls.sort((a, b) => a.seqIdNumber - b.seqIdNumber);
     }
 
+    public get specialPulls(): CharPull[] {
+        return this._specialPulls;
+    }
+
+    public get jointPulls(): CharPull[] {
+        return this._jointPulls;
+    }
+
+    public get standardPulls(): CharPull[] {
+        return this._standardPulls;
+    }
+
+    public get beginnerPulls(): CharPull[] {
+        return this._beginnerPulls;
+    }
+
+    public get weaponPulls(): WeaponPull[] {
+        return this._weaponPulls;
+    }
+
     public getStablePullPeriods(): StablePullPeriod[] {
         return StablePullPeriod.create(
             this._specialPulls,
