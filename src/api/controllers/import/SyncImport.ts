@@ -107,7 +107,7 @@ export class SyncImport extends Controller<
 
         this.status = 200;
         this.data = {
-            profileId: null // todo
+            profileId: profile.publicId
         };
     }
 

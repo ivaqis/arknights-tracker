@@ -102,7 +102,7 @@ export class BannerDataFetcher {
             return [];
         }
 
-        return bannerData.list;
+        return bannerData.list.filter(p => p.charId);
     }
 
     private async getWeaponPulls(): Promise<WeaponPullData[]> {
@@ -118,7 +118,7 @@ export class BannerDataFetcher {
             return [];
         }
 
-        return bannerData.list;
+        return bannerData.list.filter(p => p.weaponId);
     }
 
     private static getBannerData<T extends PullData, U extends BannerRequestParams>(url: string, urlParams: U, lastPullTimeMs: bigint, callbackFn?: (count: number) => void) {
