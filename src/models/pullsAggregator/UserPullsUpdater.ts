@@ -53,13 +53,11 @@ export class UserPullsUpdater {
 
     }
 
-    private async updateCharPulls(bannerType: DbBannerType.CHAR, pulls: CharPull[]) {
+    private async updateCharPulls(bannerType: DbBannerType.CHAR, pulls: CharPull[]): Promise<void> {
         for (const pull of pulls) {
             await this.updateCharPull(bannerType, pull);
         }
     }
-
-    private async updateWeaponPull(bannerType: DbBannerType.WEAPON, pull: WeaponPull): Promise<void> {}
 
     private async updateCharPull(bannerType: DbBannerType.CHAR, pull: CharPull): Promise<void> {
         const bannerId = pull.bannerId;
@@ -162,6 +160,89 @@ export class UserPullsUpdater {
                     bannerTypeData.stat.won5050.value++;
 
                     bannerTypeData.pulls.lastWin5050Pull.value = bannerTypeData.stat.unfreePulls.value;
+                }
+            } else {
+                bannerData.stat.total5050.value++;
+
+                bannerTypeData.stat.total5050.value++;
+            }
+        }
+    }
+
+    private async updateWeaponPulls(pulls: WeaponPull[]) {
+        for (const pull of pulls) {
+            await this.updateWeaponPull(pull);
+        }
+    }
+
+    private async updateWeaponPull(pull: WeaponPull): Promise<void> {
+        const bannerId = pull.bannerId;
+        const ts = pull.gachaTsNumber;
+
+        const bannerData = await this.getWeaponBannerData(bannerId);
+
+        if (ts <= bannerData.pulls.lastPullTimeTs.initValue) {
+            return;
+        }
+
+        const banner = Banner.get(bannerId);
+
+        if (!banner) {
+            throw new Error(`Banner id not found: ${bannerId}`);
+        }
+
+        const bannerType = banner.dbType as DbBannerType.WEAPON;
+
+        const bannerTypeData = await this.getWeaponBannerTypeData(bannerType);
+        const timeline = await this.getTimelineRecord(bannerId, TimelineDate.createFromTs(ts));
+        const item = await this.getItemStatRecord(bannerId, pull.weaponId, pull.rarity);
+
+        bannerData.pulls.lastPullTimeTs.value = pull.gachaTsBigint;
+
+        timeline.totalPullsCount.value++;
+
+        item.count.value++;
+
+        bannerData.stat.unfreePulls.value++;
+        bannerTypeData.stat.unfreePulls.value++;
+
+        if (pull.rarity === 5) {
+            bannerData.stat.total5.value++;
+
+            bannerTypeData.stat.total5.value++;
+
+            const pity = bannerData.stat.unfreePulls.value - bannerData.pulls.last5Pull.value;
+            const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 5);
+            pityRecord.count.value++;
+
+            bannerData.pulls.last5Pull.value = bannerData.stat.unfreePulls.value;
+
+        } else if (pull.rarity === 6) {
+            bannerData.stat.total6.value++;
+
+            bannerTypeData.stat.total6.value++;
+
+            const pity = bannerData.stat.unfreePulls.value - bannerData.pulls.last6Pull.value;
+            const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 6);
+            pityRecord.count.value++;
+
+            bannerData.pulls.last6Pull.value = bannerData.stat.unfreePulls.value;
+
+            const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.weaponId);
+            const isGuaranteed = isFeatured
+                ? (bannerData.pulls.lastWin5050Pull.value === 0
+                    && 70 <= bannerData.stat.unfreePulls.value && bannerData.stat.unfreePulls.value <= 80)
+                : false;
+
+            if (isFeatured) {
+                bannerData.pulls.lastWin5050Pull.value = bannerData.stat.unfreePulls.value;
+
+                if (!isGuaranteed) {
+                    bannerData.stat.total5050.value++;
+                    bannerData.stat.won5050.value++;
+
+                    bannerTypeData.stat.total5050.value++;
+                    bannerTypeData.stat.won5050.value++;
                 }
             } else {
                 bannerData.stat.total5050.value++;

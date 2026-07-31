@@ -244,7 +244,7 @@ model UserWeaponBannerPulls {
     bannerId        String
     last6Pull       Int      @default(0)
     last5Pull       Int      @default(0)
-    lastWin5050Pull Int      @default(0)
+    lastWin5050Pull Int      @default(0) // фактически используется как last6LimitedPull
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
