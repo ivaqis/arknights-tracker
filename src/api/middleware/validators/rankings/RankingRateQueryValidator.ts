@@ -1,16 +1,16 @@
-import { RankingDataQuery } from "@api/contracts/rankings/RankingDataQuery";
+import { RankingRateQuery } from "@api/contracts/rankings/RankingRateQuery";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { ValidationRule } from "@models/validation/ValidationRule";
 import { Validator } from "@models/validation/Validator";
 
-export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
+export class RankingRateQueryValidator extends Validator<RankingRateQuery> {
     private static readonly NUMBER_REGEX = /^\d+$/;
 
-    public constructor(item: RankingDataQuery) {
-        super(item, RankingDataQueryValidator.getRules());
+    public constructor(item: RankingRateQuery) {
+        super(item, RankingRateQueryValidator.getRules());
     }
 
-    private static getRules(): ValidationRule<RankingDataQuery>[] {
+    private static getRules(): ValidationRule<RankingRateQuery>[] {
         return [
             this.getBannerTypeRule(),
             this.getTotalPullsRule(),
@@ -22,7 +22,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         ];
     }
 
-    private static getBannerTypeRule(): ValidationRule<RankingDataQuery> {
+    private static getBannerTypeRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.bannerType === "string"
                 && (DbBannerType.isDbBannerType(item.bannerType) || item.bannerType === "all"),
@@ -30,7 +30,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static getTotalPullsRule(): ValidationRule<RankingDataQuery> {
+    private static getTotalPullsRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.totalPulls === "string"
                 && this.NUMBER_REGEX.test(item.totalPulls),
@@ -38,7 +38,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static getTotal5050Rule(): ValidationRule<RankingDataQuery> {
+    private static getTotal5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total5050 === "string"
                 && (item.total5050 === "null" || this.NUMBER_REGEX.test(item.total5050)),
@@ -46,7 +46,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static getWon5050Rule(): ValidationRule<RankingDataQuery> {
+    private static getWon5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.won5050 === "string"
                 && (item.won5050 === "null" || this.NUMBER_REGEX.test(item.won5050)),
@@ -54,7 +54,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static get5050Rule(): ValidationRule<RankingDataQuery> {
+    private static get5050Rule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => item.total5050 === "null" && item.won5050 === "null"
                 || item.total5050 !== "null" && item.won5050 !== "null",
@@ -62,7 +62,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static getTotal5PullsRule(): ValidationRule<RankingDataQuery> {
+    private static getTotal5PullsRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total5Pulls === "string"
                 && (item.total5Pulls === "null" || this.NUMBER_REGEX.test(item.total5Pulls)),
@@ -70,7 +70,7 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
         );
     }
 
-    private static getTotal6PullsRule(): ValidationRule<RankingDataQuery> {
+    private static getTotal6PullsRule(): ValidationRule<RankingRateQuery> {
         return new ValidationRule(
             item => typeof item.total6Pulls === "string"
                 && (item.total6Pulls === "null" || this.NUMBER_REGEX.test(item.total6Pulls)),

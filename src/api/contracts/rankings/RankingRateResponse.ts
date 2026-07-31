@@ -1,4 +1,4 @@
-export interface RankingDataResponse {
+export interface RankingRateResponse {
     totalPullsRate: number;
     win5050Rate: number | null;
     luck6Rate: number | null;

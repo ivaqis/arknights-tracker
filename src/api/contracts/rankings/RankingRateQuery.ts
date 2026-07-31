@@ -1,6 +1,6 @@
 import { DbBannerType } from "@models/banners/DbBannerType";
 
-export interface RankingDataQuery {
+export interface RankingRateQuery {
     bannerType: DbBannerType | "all";
     totalPulls: string;
     total5050: string | "null";
