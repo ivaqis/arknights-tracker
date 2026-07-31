@@ -14,6 +14,8 @@ export class Banner {
     private readonly _endTimeAsia?: string | null;
     private readonly _featured6List: string[];
 
+    private readonly _featured6Set: Set<string>;
+
     constructor(bannerEntity: BannerEntity) {
         this._id = bannerEntity.id;
         this._name = bannerEntity.name;
@@ -24,6 +26,7 @@ export class Banner {
         this._startTimeAsia = bannerEntity.startTimeAsia;
         this._endTimeAsia = bannerEntity.endTimeAsia;
         this._featured6List = bannerEntity.featured6;
+        this._featured6Set = new Set(bannerEntity.featured6);
     }
 
     public static get(bannerId: string): Banner | null {
@@ -64,6 +67,10 @@ export class Banner {
 
     public get featured6List(): string[] {
         return this._featured6List ?? null;
+    }
+
+    public isFeatured(itemId: string): boolean {
+        return this._featured6Set.has(itemId);
     }
 
     private getBannerType(str: string): BannerType {

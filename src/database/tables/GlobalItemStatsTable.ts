@@ -9,8 +9,21 @@ export class GlobalItemStatsTable extends Table<Prisma.GlobalItemStatsDelegate> 
         super(prisma, prisma.globalItemStats);
     }
 
-    public async get(bannerId: string, itemId: string): Promise<GlobalItemStatsRecord> {
-        const entity = await this.getEntity(bannerId, itemId);
+    public async get(bannerId: string, itemId: string, rarity: number): Promise<GlobalItemStatsRecord> {
+        const entity = await this.table.upsert({
+            where: {
+                bannerId_itemId: {
+                    bannerId,
+                    itemId
+                }
+            },
+            create: {
+                bannerId,
+                itemId,
+                rarity
+            },
+            update: {}
+        });
 
         return new GlobalItemStatsRecord(entity);
     }
@@ -38,21 +51,5 @@ export class GlobalItemStatsTable extends Table<Prisma.GlobalItemStatsDelegate> 
             });
 
         return entities.map(entity => new GlobalItemStatsRecord(entity));
-    }
-
-    private async getEntity(bannerId: string, itemId: string): Promise<GlobalItemStatsEntity> {
-        return this.table.upsert({
-            where: {
-                bannerId_itemId: {
-                    bannerId,
-                    itemId
-                }
-            },
-            create: {
-                bannerId,
-                itemId
-            },
-            update: {}
-        });
     }
 }

@@ -24,7 +24,8 @@ export class GlobalBannerTimelinesTable extends Table<Prisma.GlobalBannerTimelin
                 }
             },
             data: {
-                pullsCount: { increment: record.pullsCount.delta }
+                totalPullsCount: { increment: record.totalPullsCount.delta },
+                freePullsCount: { increment: record.freePullsCount.delta },
             }
         });
     }

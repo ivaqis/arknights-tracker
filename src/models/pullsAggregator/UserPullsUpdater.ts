@@ -7,9 +7,11 @@ import { UserCharBannerData } from "@database/repositories/interfaces/UserCharBa
 import { UserCharBannerTypeData } from "@database/repositories/interfaces/UserCharBannerTypeData";
 import { UserWeaponBannerData } from "@database/repositories/interfaces/UserWeaponBannerData";
 import { UserWeaponBannerTypeData } from "@database/repositories/interfaces/UserWeaponBannerTypeData";
+import { Banner } from "@models/banners/Banner";
 import { DbBannerType } from "@models/banners/DbBannerType";
 import { BannersPulls } from "@models/pulls/BannersPulls";
 import { CharPull } from "@models/pulls/CharPull";
+import { WeaponPull } from "@models/pulls/WeaponPull";
 import { ItemStatIndex } from "@models/pullsAggregator/ItemStatIndex";
 import { PityDistributionIndex } from "@models/pullsAggregator/PityDistributionIndex";
 import { TimelineIndex } from "@models/pullsAggregator/TimelineIndex";
@@ -36,27 +38,137 @@ export class UserPullsUpdater {
         this._pulls = pulls;
     }
 
+    private static isFeatured(bannerId: string, itemId: string): boolean {
+        const banner = Banner.get(bannerId);
+
+        if (!banner) {
+            throw new Error(`Banner id not found: ${bannerId}`);
+        }
+
+        return banner.isFeatured(itemId);
+    }
+
+
     public async execute(): Promise<void> {
 
     }
 
     private async updateCharPulls(bannerType: DbBannerType.CHAR, pulls: CharPull[]) {
         for (const pull of pulls) {
-
+            await this.updateCharPull(bannerType, pull);
         }
     }
+
+    private async updateWeaponPull(bannerType: DbBannerType.WEAPON, pull: WeaponPull): Promise<void> {}
 
     private async updateCharPull(bannerType: DbBannerType.CHAR, pull: CharPull): Promise<void> {
         const bannerId = pull.bannerId;
         const ts = pull.gachaTsNumber;
 
-        const bannerData = await this.getCharBannerData(bannerId);
         const bannerTypeData = await this.getCharBannerTypeData(bannerType);
-        const globalStats = await this.getGlobalBannerStats(bannerId);
+
+        if (ts <= bannerTypeData.pulls.lastPullTimeTs.initValue) {
+            return;
+        }
+
+        const bannerData = await this.getCharBannerData(bannerId);
+        // const globalStats = await this.getGlobalBannerStats(bannerId);
         const timeline = await this.getTimelineRecord(bannerId, TimelineDate.createFromTs(ts));
-        const item = await this.getItemStatRecord(bannerId, pull.charId);
+        const item = await this.getItemStatRecord(bannerId, pull.charId, pull.rarity);
 
+        bannerTypeData.pulls.lastPullTimeTs.value = pull.gachaTsBigint;
 
+        timeline.totalPullsCount.value++;
+
+        item.count.value++;
+
+        if (pull.isFree) {
+            bannerData.stat.freePulls.value++;
+            bannerTypeData.stat.freePulls.value++;
+            timeline.freePullsCount.value++;
+
+            if (pull.rarity === 5 || pull.rarity === 6) {
+                const pityRecord = await this.getPityDistributionRecord(bannerId, 0, pull.rarity);
+                pityRecord.count.value++;
+            }
+
+            if (pull.rarity === 5) {
+                bannerData.stat.free5.value++;
+                bannerData.stat.total5.value++;
+
+                bannerTypeData.stat.free5.value++;
+                bannerTypeData.stat.total5.value++;
+
+            } else if (pull.rarity === 6) {
+                bannerData.stat.free6.value++;
+                bannerData.stat.total6.value++;
+                bannerData.stat.total5050.value++;
+
+                bannerTypeData.stat.free6.value++;
+                bannerTypeData.stat.total6.value++;
+                bannerTypeData.stat.total5050.value++;
+
+                if (UserPullsUpdater.isFeatured(bannerId, pull.charId)) {
+                    bannerData.stat.freeWin5050.value++;
+                    bannerData.stat.won5050.value++;
+
+                    bannerTypeData.stat.freeWin5050.value++;
+                    bannerTypeData.stat.won5050.value++;
+                }
+            }
+
+            return;
+        }
+
+        bannerData.stat.unfreePulls.value++;
+        bannerTypeData.stat.unfreePulls.value++;
+
+        if (pull.rarity === 5) {
+            bannerData.stat.total5.value++;
+
+            bannerTypeData.stat.total5.value++;
+
+            const pity = bannerTypeData.stat.unfreePulls.value - bannerTypeData.pulls.last5Pull.value;
+            const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 5);
+            pityRecord.count.value++;
+
+            bannerTypeData.pulls.last5Pull.value = bannerTypeData.stat.unfreePulls.value;
+
+        } else if (pull.rarity === 6) {
+            bannerData.stat.total6.value++;
+
+            bannerTypeData.stat.total6.value++;
+
+            const pity = bannerTypeData.stat.unfreePulls.value - bannerTypeData.pulls.last6Pull.value;
+            const pityRecord = await this.getPityDistributionRecord(bannerId, pity, 6);
+            pityRecord.count.value++;
+
+            bannerTypeData.pulls.last6Pull.value = bannerTypeData.stat.unfreePulls.value;
+
+            const isFeatured = UserPullsUpdater.isFeatured(bannerId, pull.charId);
+            const isGuaranteed = isFeatured
+                ? (bannerData.pulls.last6LimitedPull.value === 0
+                    && bannerData.stat.unfreePulls.value === 120)
+                : false;
+
+            if (isFeatured) {
+                bannerData.pulls.last6LimitedPull.value = bannerData.stat.unfreePulls.value;
+
+                if (!isGuaranteed) {
+                    bannerData.stat.total5050.value++;
+                    bannerData.stat.won5050.value++;
+
+                    bannerTypeData.stat.total5050.value++;
+                    bannerTypeData.stat.won5050.value++;
+
+                    bannerTypeData.pulls.lastWin5050Pull.value = bannerTypeData.stat.unfreePulls.value;
+                }
+            } else {
+                bannerData.stat.total5050.value++;
+
+                bannerTypeData.stat.total5050.value++;
+            }
+        }
     }
 
     private async getCharBannerData(bannerId: string): Promise<UserCharBannerData> {
@@ -155,7 +267,7 @@ export class UserPullsUpdater {
         return result;
     }
 
-    private async getItemStatRecord(bannerId: string, itemId: string): Promise<GlobalItemStatsRecord> {
+    private async getItemStatRecord(bannerId: string, itemId: string, rarity: number): Promise<GlobalItemStatsRecord> {
         const index: ItemStatIndex = {
             bannerId,
             itemId
@@ -164,7 +276,7 @@ export class UserPullsUpdater {
         let result = this._itemStatMap.get(index);
 
         if (!result) {
-            result = await this._database.globalBannerStats.getItemStatsRecord(bannerId, itemId);
+            result = await this._database.globalBannerStats.getItemStatsRecord(bannerId, itemId, rarity);
 
             this._itemStatMap.set(index, result);
         }

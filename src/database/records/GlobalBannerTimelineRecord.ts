@@ -5,13 +5,15 @@ export class GlobalBannerTimelineRecord {
     private readonly _bannerId: string;
     private readonly _date: string;
 
-    private readonly _pullsCount: NumberRecordField;
+    private readonly _totalPullsCount: NumberRecordField;
+    private readonly _freePullsCount: NumberRecordField;
 
     public constructor(entity: GlobalBannerTimelineEntity) {
         this._bannerId = entity.bannerId;
         this._date = entity.date;
 
-        this._pullsCount = new NumberRecordField(entity.pullsCount);
+        this._totalPullsCount = new NumberRecordField(entity.totalPullsCount);
+        this._freePullsCount = new NumberRecordField(entity.freePullsCount);
     }
 
     public get bannerId(): string {
@@ -22,7 +24,11 @@ export class GlobalBannerTimelineRecord {
         return this._date;
     }
 
-    public get pullsCount(): NumberRecordField {
-        return this._pullsCount;
+    public get totalPullsCount(): NumberRecordField {
+        return this._totalPullsCount;
+    }
+
+    public get freePullsCount(): NumberRecordField {
+        return this._freePullsCount;
     }
 }

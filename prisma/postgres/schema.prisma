@@ -215,9 +215,9 @@ model UserBannerTypeStat {
 model UserCharBannerTypePulls {
     profileId       BigInt
     bannerType      String
-    last6Pull       Int      @default(0)
-    last5Pull       Int      @default(0)
-    lastWin5050Pull Int      @default(0)
+    last6Pull       Int      @default(0) // unfree
+    last5Pull       Int      @default(0) // unfree
+    lastWin5050Pull Int      @default(0) // unfree
     lastPullTimeTs  BigInt   @default(0)
     updatedAt       DateTime @updatedAt
 
@@ -230,7 +230,7 @@ model UserCharBannerTypePulls {
 model UserCharBannerPulls {
     profileId        BigInt
     bannerId         String
-    last6LimitedPull Int      @default(0)
+    last6LimitedPull Int      @default(0) // unfree
     updatedAt        DateTime @updatedAt
 
     bannerProfile UserBannerProfile @relation(fields: [profileId], references: [profileId])
@@ -274,9 +274,10 @@ model GlobalBannerStats {
 }
 
 model GlobalBannerTimeline {
-    bannerId   String
-    date       String // "YYYY-MM-DD"
-    pullsCount Int    @default(0)
+    bannerId        String
+    date            String // "YYYY-MM-DD"
+    totalPullsCount Int    @default(0)
+    freePullsCount  Int    @default(0)
 
     globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
@@ -297,11 +298,13 @@ model GlobalPityDistribution {
 model GlobalItemStats {
     bannerId String
     itemId   String
+    rarity   Int
     count    Int    @default(0)
 
     globalBannerStats GlobalBannerStats @relation(fields: [bannerId], references: [bannerId])
 
     @@id([bannerId, itemId])
+    @@index([bannerId, rarity])
 }
 
 model ImportError {

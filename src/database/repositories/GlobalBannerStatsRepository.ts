@@ -57,8 +57,8 @@ export class GlobalBannerStatsRepository extends Repository {
         return this._globalPityDistributionsTable.getAllByBannerId(bannerId);
     }
 
-    public async getItemStatsRecord(bannerId: string, itemId: string): Promise<GlobalItemStatsRecord> {
-        return this._globalItemStatsTable.get(bannerId, itemId);
+    public async getItemStatsRecord(bannerId: string, itemId: string, rarity: number): Promise<GlobalItemStatsRecord> {
+        return this._globalItemStatsTable.get(bannerId, itemId, rarity);
     }
 
     public async updateItemStatsRecord(record: GlobalItemStatsRecord) {
