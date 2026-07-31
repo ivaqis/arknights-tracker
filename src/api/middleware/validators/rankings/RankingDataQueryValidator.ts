@@ -40,32 +40,32 @@ export class RankingDataQueryValidator extends Validator<RankingDataQuery> {
     private static getTotal5050Rule(): ValidationRule<RankingDataQuery> {
         return new ValidationRule(
             item => typeof item.total5050 === "string"
-                && (item.total5050 === "" || this.NUMBER_REGEX.test(item.total5050)),
-            "total5050 must be a number or empty"
+                && (item.total5050 === "null" || this.NUMBER_REGEX.test(item.total5050)),
+            "total5050 must be a number or null"
         );
     }
 
     private static getWon5050Rule(): ValidationRule<RankingDataQuery> {
         return new ValidationRule(
             item => typeof item.won5050 === "string"
-                && (item.won5050 === "" || this.NUMBER_REGEX.test(item.won5050)),
-            "won5050 must be a number or empty"
+                && (item.won5050 === "null" || this.NUMBER_REGEX.test(item.won5050)),
+            "won5050 must be a number or null"
         );
     }
 
     private static getTotal5PullsRule(): ValidationRule<RankingDataQuery> {
         return new ValidationRule(
             item => typeof item.total5Pulls === "string"
-                && (item.total5Pulls === "" || this.NUMBER_REGEX.test(item.total5Pulls)),
-            "total5Pulls must be a number or empty"
+                && (item.total5Pulls === "null" || this.NUMBER_REGEX.test(item.total5Pulls)),
+            "total5Pulls must be a number or null"
         );
     }
 
     private static getTotal6PullsRule(): ValidationRule<RankingDataQuery> {
         return new ValidationRule(
             item => typeof item.total6Pulls === "string"
-                && (item.total6Pulls === "" || this.NUMBER_REGEX.test(item.total6Pulls)),
-            "total5Pulls must be a number or empty"
+                && (item.total6Pulls === "null" || this.NUMBER_REGEX.test(item.total6Pulls)),
+            "total5Pulls must be a number or null"
         );
     }
 }
